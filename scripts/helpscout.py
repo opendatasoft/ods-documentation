@@ -18,9 +18,20 @@ def api_get(entrypoint, params=None):
     res.raise_for_status()
     return res.json()
 
-def api_post(entrypoint, payload, params=None):
+def api_post_json(entrypoint, payload, params=None):
     json_payload = json.dumps(payload)
     res = session.post('%s/%s' % (BASE_URL, entrypoint), params=params, data=json_payload, auth=HTTP_AUTH, headers={'Content-Type': 'application/json'})
+    res.raise_for_status()
+    return res
+
+def api_put_json(entrypoint, payload, params=None):
+    json_payload = json.dumps(payload)
+    res = session.put('%s/%s' % (BASE_URL, entrypoint), params=params, data=json_payload, auth=HTTP_AUTH, headers={'Content-Type': 'application/json'})
+    res.raise_for_status()
+    return res
+
+def api_post_file(entrypoint, file, payload, params=None):
+    res = session.post('%s/%s' % (BASE_URL, entrypoint), files=file, data=payload, params=params, auth=HTTP_AUTH)
     res.raise_for_status()
     return res
 
@@ -40,24 +51,46 @@ def push_documentation():
     print 'Wiped the previous documentation on Help Scout'
 
     # Step 2: Recreate the documentation (collections, categories, articles)
-    print CONTENT_ROOT
+
+    # Collections
     for collection_name in os.listdir(CONTENT_ROOT):
         collection_path = os.path.join(CONTENT_ROOT, collection_name)
         if os.path.isdir(collection_path):
             print 'Creating collection %s' % collection_name
-            collection_id = api_post('collections', {
+            collection_id = api_post_json('collections', {
                 'siteId': SITE_ID,
                 'name': collection_name
             }, params={'reload': 'true'}).json()['collection']['id']
 
+            # Categories
             for category_name in os.listdir(collection_path):
                 category_path = os.path.join(collection_path, category_name)
                 if os.path.isdir(category_path):
                     print '\tCreating category %s' % category_name
-                    category_id = api_post('categories', {
+                    category_id = api_post_json('categories', {
                         'collectionId': collection_id,
                         'name': category_name
                     }, params={'reload': 'true'}).json()['category']['id']
+
+                    # Articles
+                    for article_name in os.listdir(category_path):
+                        article_path = os.path.join(category_path, article_name)
+                        print '\t\tCreating article %s' % article_name
+                        # TODO : Post image using Assets entrypoint
+                        with open(os.path.join(article_path, 'article.md')) as article_file:
+                            article_content = article_file.read()
+                        article_id = api_post_file('articles/upload', {
+                            "file": ('article.md', article_content)
+                        }, {
+                            "key": API_KEY,
+                            "collectionId": collection_id,
+                            "categoryId": category_id,
+                            "name": article_name,
+                            "type": "markdown",
+                        }, params={'reload': 'true'}).json()['article']['id']
+                        api_put_json('articles/%s' % article_id, {
+                            'status': 'published'
+                        })
 
 
 import sys
