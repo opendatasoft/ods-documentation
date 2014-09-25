@@ -1,5 +1,3 @@
-## Disqus Configuration
-
 ### For OpenDataSoft domain administrators
 
 If you have a custom domain name for accessing the OpenDataSoft platform, replace in the below \<YOURDOMAIN\>.opendatasoft.com with your custom domain name.

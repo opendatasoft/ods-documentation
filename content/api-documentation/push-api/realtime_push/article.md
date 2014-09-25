@@ -1,5 +1,3 @@
-## Real Time Push API
-
 This API is designed to make it possible to build datasets out of **real time data**. The expected latency (time for a record to be processed and made available to the search API enpoints) shall be **less than 2 second**.
 
 This API is especially useful for building crowd-sourced datasets.

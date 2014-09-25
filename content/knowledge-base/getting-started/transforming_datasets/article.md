@@ -1,5 +1,3 @@
-## Transforming Datasets
-
 The OpenDataSoft platform comes with handy data transformation features. Some of them are extensively described below (and more are coming soon).
 
 ### Geographical Mapping

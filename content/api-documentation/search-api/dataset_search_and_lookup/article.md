@@ -1,5 +1,3 @@
-## Dataset Search and Lookup APIs
-
 ### Dataset Search API
 
 This API provides a search facility in the dataset catalog. Full text search as well as multi-criteria field queries are made possible and results facetting is provided as well.

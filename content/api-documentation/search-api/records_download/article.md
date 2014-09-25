@@ -1,5 +1,3 @@
-## Records Download API
-
 This API provides a performant way to download a large set of records out of one or serveral datasets at once. The HTTP answer is streamed which makes it possible to optimize the memory consumption client side.
 
 **API endpoint**: `/api/records/1.0/download`

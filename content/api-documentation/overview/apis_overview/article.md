@@ -1,5 +1,3 @@
-## APIs Overview
-
 OpenDataSoft datasets can be accessed by developers through HTTP REST APIs. 
 
 The domain <http://public.opendatasoft.com> will be use to illustrate examples given in this forum.

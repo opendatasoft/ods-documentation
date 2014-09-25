@@ -1,5 +1,3 @@
-## Records Analysis API
-
 This API provides powerfull analytics features over a set of selected records. It returns analyzed results in light and easy to parse format which can used as an input of modern charting libraries such as **Highchart.js** or **D3.js**.
 
 **API endpoint**: `/api/records/1.0/analyze`

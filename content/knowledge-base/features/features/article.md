@@ -1,5 +1,3 @@
-## OpenDataSoft Platform Features
-
 The OpenDataSoft platform includes a wide range of features from data integration to data analysis and publishing.
 
 The below table lists the major features of the platform.

@@ -1,5 +1,3 @@
-## Record Search API
-
 This API makes it possible to perform complex queries on the records of a dataset, such as full-text search or geo search. It also provides faceted search features on dataset records.
 
 **API endpoint**: `/api/records/1.0/search`

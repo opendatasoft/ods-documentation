@@ -1,5 +1,3 @@
-## FAQ
-
 ### What is OpenDataSoft ?
 OpenDataSoft is a turnkey SaaS platform developed for business users to easily share, publish and reuse structured datasets. Look at this [article](/entries/84740363-Why-OpenDataSoft-) for a more detailed presentation.
 

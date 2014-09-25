@@ -1,5 +1,3 @@
-## Query Language and Geo Filtering
-
 Filtering features are built in the core of OpenDataSoft API engine. Many of the previously listed APIs can take as a parameter filters for constraining the list of returned datasets or records.
 
 Note that a given filtering context can simply be copied from one API to another. For example, you can easily build a user interface which first allows the user to visually select the records their are interested in, using full text search, facets and geo filtering, and then allowing them to download these records with the same filtering context.

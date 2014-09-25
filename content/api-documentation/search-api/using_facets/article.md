@@ -1,5 +1,3 @@
-## Using Facets
-
 A facet can be considered as a valued tag associated with a record. For instance, let's say a dataset has a facet "City". A record in this dataset could have the value "Paris" for the "City" facet.
 
 Facets are for instance used for building the left navigation colonne, both for dataset catalog exploration page and dataset records exploration page.

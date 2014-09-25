@@ -1,5 +1,3 @@
-## Records Geo Clustering API
-
 This API provides powerfull geo clustering features over a set of selected records. It returns results under a format which can easily be used to build comprehensive data visualizations on a map, using a very large number of records.
 
 This API takes as an input the cluster precision and a polygon representing the current view (on a map) and returns a list of clusters with the number of points contained in each cluster and the polygon of the cluster envelope (along with computed analytical series when required).

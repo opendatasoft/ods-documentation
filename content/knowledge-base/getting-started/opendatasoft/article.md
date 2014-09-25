@@ -1,5 +1,3 @@
-## Why OpenDataSoft ?
-
 OpenDataSoft is a platform that has been specifically designed for non-technical business users to share, publish and reuse structured data.
 
 SaaS-based and with a cost-effective approach, it is the perfect solution to get the best out of data collection, transformation and sharing.
