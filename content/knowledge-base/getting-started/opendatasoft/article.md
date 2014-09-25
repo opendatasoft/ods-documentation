@@ -14,7 +14,7 @@ The OpenDataSoft platform can be used to build public Open Data portals, interna
 
 The graph below displays the platform architecture in a simple way.
 
-![Architecture](/attachments/token/9daV5uY9YvVD7vehuN1z70lFp/?name=simple-architecture-model.jpg)
+![Architecture](simple-architecture-model.jpg)
 
 The OpenDataSoft platform is unique because it gathers in one single software all the features business users need to make value out of their data.
 

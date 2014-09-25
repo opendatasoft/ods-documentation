@@ -14,6 +14,12 @@ HTTP_AUTH = (API_KEY, 'X')
 
 session = requests.session()
 
+CONTENT_TYPES = {
+    '.jpg': 'image/jpeg',
+    '.jpeg': 'image/jpeg',
+    '.png': 'image/png'
+}
+
 def api_get(entrypoint, params=None):
     res = session.get('%s/%s' % (BASE_URL, entrypoint), params=params, auth=HTTP_AUTH)
     res.raise_for_status()
@@ -91,18 +97,30 @@ def push_documentation():
                         article_metadata = load_metadata(article_path)
                         if os.path.isdir(article_path):
                             print '\t\tCreating article %s' % article_name
-                            # TODO : Post image using Assets entrypoint
                             with open(os.path.join(article_path, 'article.md')) as article_file:
                                 article_content = article_file.read()
+                            # Upload the markdown source
                             article_id = api_post_file('articles/upload', {
-                                "file": ('article.md', article_content)
+                                'file': ('article.md', article_content)
                             }, {
-                                "key": API_KEY,
-                                "collectionId": collection_id,
-                                "categoryId": category_id,
-                                "name": article_metadata.get('title', article_name),
-                                "type": "markdown",
+                                'key': API_KEY,
+                                'collectionId': collection_id,
+                                'categoryId': category_id,
+                                'name': article_metadata.get('title', article_name),
+                                'type': 'markdown',
                             }, params={'reload': 'true'}).json()['article']['id']
+                            # Upload the assets
+                            # images_path = os.path.join(article_path, 'images')
+                            # if os.path.exists(images_path) and os.path.isdir(images_path):
+                            #     for image in os.listdir(images_path):
+                            #         api_post_file('assets/article', {
+                            #             'file': (image, open(os.path.join(images_path, image), 'rb'), CONTENT_TYPES.get(os.path.splitext(image)[1], None))
+                            #         }, {
+                            #             'key': API_KEY,
+                            #             'articleId': article_id,
+                            #             'assetType': 'image'
+                            #         })
+                            # Publish the article
                             api_put_json('articles/%s' % article_id, {
                                 'status': 'published'
                             })
