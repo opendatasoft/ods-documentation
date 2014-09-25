@@ -1,6 +1,7 @@
 import os
 import requests
 import json
+import yaml
 
 BASE_URL = 'https://docsapi.helpscout.net/v1'
 API_KEY = '39a5b61a92cb79bf5fab5a44421daa42c896b1f9'
@@ -40,6 +41,16 @@ def api_delete(entrypoint):
     res.raise_for_status()
     return res
 
+def load_metadata(path):
+    """
+    Loads the metadata from the metadata.yaml file in the folder
+    """
+    metadata_path = os.path.join(path, 'metadata.yaml')
+    if os.path.exists(metadata_path):
+        return yaml.load(open(metadata_path))
+    else:
+        return {}
+
 
 def push_documentation():
     # Step 1: Wipe clean the documentation
@@ -55,42 +66,46 @@ def push_documentation():
     # Collections
     for collection_name in os.listdir(CONTENT_ROOT):
         collection_path = os.path.join(CONTENT_ROOT, collection_name)
+        collection_metadata = load_metadata(collection_path)
         if os.path.isdir(collection_path):
             print 'Creating collection %s' % collection_name
             collection_id = api_post_json('collections', {
                 'siteId': SITE_ID,
-                'name': collection_name
+                'name': collection_metadata.get('title', collection_name)
             }, params={'reload': 'true'}).json()['collection']['id']
 
             # Categories
             for category_name in os.listdir(collection_path):
                 category_path = os.path.join(collection_path, category_name)
+                category_metadata = load_metadata(category_path)
                 if os.path.isdir(category_path):
                     print '\tCreating category %s' % category_name
                     category_id = api_post_json('categories', {
                         'collectionId': collection_id,
-                        'name': category_name
+                        'name': category_metadata.get('title', category_name)
                     }, params={'reload': 'true'}).json()['category']['id']
 
                     # Articles
                     for article_name in os.listdir(category_path):
                         article_path = os.path.join(category_path, article_name)
-                        print '\t\tCreating article %s' % article_name
-                        # TODO : Post image using Assets entrypoint
-                        with open(os.path.join(article_path, 'article.md')) as article_file:
-                            article_content = article_file.read()
-                        article_id = api_post_file('articles/upload', {
-                            "file": ('article.md', article_content)
-                        }, {
-                            "key": API_KEY,
-                            "collectionId": collection_id,
-                            "categoryId": category_id,
-                            "name": article_name,
-                            "type": "markdown",
-                        }, params={'reload': 'true'}).json()['article']['id']
-                        api_put_json('articles/%s' % article_id, {
-                            'status': 'published'
-                        })
+                        article_metadata = load_metadata(article_path)
+                        if os.path.isdir(article_path):
+                            print '\t\tCreating article %s' % article_name
+                            # TODO : Post image using Assets entrypoint
+                            with open(os.path.join(article_path, 'article.md')) as article_file:
+                                article_content = article_file.read()
+                            article_id = api_post_file('articles/upload', {
+                                "file": ('article.md', article_content)
+                            }, {
+                                "key": API_KEY,
+                                "collectionId": collection_id,
+                                "categoryId": category_id,
+                                "name": article_metadata.get('title', article_name),
+                                "type": "markdown",
+                            }, params={'reload': 'true'}).json()['article']['id']
+                            api_put_json('articles/%s' % article_id, {
+                                'status': 'published'
+                            })
 
 
 import sys
