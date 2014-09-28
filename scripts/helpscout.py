@@ -2,6 +2,8 @@ import os
 import requests
 import json
 import yaml
+import markdown
+import codecs
 
 BASE_URL = 'https://docsapi.helpscout.net/v1'
 API_KEY = '39a5b61a92cb79bf5fab5a44421daa42c896b1f9'
@@ -99,33 +101,40 @@ def push_documentation():
                         article_metadata = load_metadata(article_path)
                         if os.path.isdir(article_path):
                             print '\t\tCreating article %s' % article_name
-                            with open(os.path.join(article_path, 'article.md')) as article_file:
+                            with codecs.open(os.path.join(article_path, 'article.md'), "r", "utf-8") as article_file:
                                 article_content = article_file.read()
-                            # Upload the markdown source
-                            article_id = api_post_file('articles/upload', {
-                                'file': ('article.md', article_content)
-                            }, {
-                                'key': API_KEY,
+
+                            article_content_html = markdown.markdown(article_content)
+                            article_id = api_post_json('articles', {
                                 'collectionId': collection_id,
-                                'categoryId': category_id,
+                                'categories': [category_id],
                                 'name': article_metadata.get('title', article_name),
-                                'type': 'markdown',
-                            }, params={'reload': 'true'}).json()['article']['id']
-                            # Upload the assets
-                            # images_path = os.path.join(article_path, 'images')
-                            # if os.path.exists(images_path) and os.path.isdir(images_path):
-                            #     for image in os.listdir(images_path):
-                            #         api_post_file('assets/article', {
-                            #             'file': (image, open(os.path.join(images_path, image), 'rb'), CONTENT_TYPES.get(os.path.splitext(image)[1], None))
-                            #         }, {
-                            #             'key': API_KEY,
-                            #             'articleId': article_id,
-                            #             'assetType': 'image'
-                            #         })
-                            # Publish the article
-                            api_put_json('articles/%s' % article_id, {
-                                'status': 'published'
-                            })
+                                'status': 'published',
+                                'text': article_content_html
+                                }, params={'reload': 'true'}).json()['article']['id']
+
+
+                            # Upload the assets if they exist
+                            images_path = os.path.join(article_path, 'images')
+                            if os.path.exists(images_path) and os.path.isdir(images_path):
+                                images = {}
+                                # Upload each image
+                                for image in os.listdir(images_path):
+                                    image_url = api_post_file('assets/article', {
+                                        'file': (image, open(os.path.join(images_path, image), 'rb'), CONTENT_TYPES.get(os.path.splitext(image)[1], None))
+                                    }, {
+                                        'key': API_KEY,
+                                        'articleId': article_id,
+                                        'assetType': 'image'
+                                    }).json()['filelink']
+                                    images[image] = image_url
+                                # Replace the occurences with the real URL
+                                for original_image, image_url in images.items():
+                                    article_content_html = article_content_html.replace(' src="%s" />' % original_image, ' src="%s" />' % image_url)
+                                # Update the article content with the new images
+                                api_put_json('articles/%s' % article_id, {
+                                    'text': article_content_html
+                                })
 
 
 import sys
