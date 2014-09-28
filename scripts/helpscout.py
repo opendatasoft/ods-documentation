@@ -22,28 +22,45 @@ CONTENT_TYPES = {
     '.png': 'image/png'
 }
 
+def handle_request_error(method):
+    def wrapper(*args, **kwargs):
+        try:
+            res = method(*args, **kwargs)
+            return res
+        except requests.exceptions.HTTPError as e:
+            print e
+            print e.response.content
+            exit(0)
+
+    return wrapper
+
+@handle_request_error
 def api_get(entrypoint, params=None):
     res = session.get('%s/%s' % (BASE_URL, entrypoint), params=params, auth=HTTP_AUTH)
     res.raise_for_status()
     return res.json()
 
+@handle_request_error
 def api_post_json(entrypoint, payload, params=None):
     json_payload = json.dumps(payload)
     res = session.post('%s/%s' % (BASE_URL, entrypoint), params=params, data=json_payload, auth=HTTP_AUTH, headers={'Content-Type': 'application/json'})
     res.raise_for_status()
     return res
 
+@handle_request_error
 def api_put_json(entrypoint, payload, params=None):
     json_payload = json.dumps(payload)
     res = session.put('%s/%s' % (BASE_URL, entrypoint), params=params, data=json_payload, auth=HTTP_AUTH, headers={'Content-Type': 'application/json'})
     res.raise_for_status()
     return res
 
+@handle_request_error
 def api_post_file(entrypoint, file, payload, params=None):
     res = session.post('%s/%s' % (BASE_URL, entrypoint), files=file, data=payload, params=params, auth=HTTP_AUTH)
     res.raise_for_status()
     return res
 
+@handle_request_error
 def api_delete(entrypoint):
     res = session.delete('%s/%s' % (BASE_URL, entrypoint), auth=HTTP_AUTH)
     res.raise_for_status()
@@ -59,60 +76,95 @@ def load_metadata(path):
     else:
         return {}
 
+def update_or_create(entrypoint, item_type, data, id=None):
+    if id:
+        # PUT
+        return api_put_json(entrypoint+'/'+id, data, params={'reload': 'true'}).json()[item_type]['id']
+    else:
+        # POST
+        return api_post_json(entrypoint, data, params={'reload': 'true'}).json()[item_type]['id']
+
+def retrieve_existing_items(entrypoint, params=None):
+    return {item['name']: item['id'] for item in api_get(entrypoint, params=params)[entrypoint.split('/')[-1]]['items']}
+
+def purge_obsolete(entrypoint, item_type, existing_remote_items, local_names):
+    for remote_item_name, remote_item_id in existing_remote_items.items():
+        if not remote_item_name in local_names:
+            print 'Deleting %s %s' % (item_type, remote_item_name)
+            api_delete('%s/%s' % (entrypoint, remote_item_id))
+
 
 def push_documentation():
-    # Step 1: Wipe clean the documentation
-    # Note: It seems that deleting every collection is enough
-    result = api_get('collections', params={'siteId': SITE_ID})
-    for collection in result['collections']['items']:
-        api_delete('collections/%s' % collection['id'])
+    # At each level we retrieve the list of existing items and create an associative array  (Name => HelpScout ID)
+    # This way we know if what we want to post already exists (in that case we update it)
+    # It also allows us to purge the existing items that don't exist anymore
+    existing_collections = retrieve_existing_items('collections', params={'siteId': SITE_ID})
+    local_collections = []
 
-    print 'Wiped the previous documentation on Help Scout'
-
-    # Step 2: Recreate the documentation (collections, categories, articles)
-
-    # Collections
     for collection_name in os.listdir(CONTENT_ROOT):
         collection_path = os.path.join(CONTENT_ROOT, collection_name)
         collection_metadata = load_metadata(collection_path)
+        collection_title = collection_metadata.get('title', collection_name)
         if os.path.isdir(collection_path):
-            print 'Creating collection %s' % collection_name
-            collection_id = api_post_json('collections', {
+            local_collections.append(collection_title)
+            existing_id = existing_collections.get(collection_title)
+            if existing_id:
+                print 'Updating collection %s' % collection_title
+            else:
+                print 'Creating collection %s' % collection_title
+            collection_id = update_or_create('collections', 'collection', {
                 'siteId': SITE_ID,
-                'name': collection_metadata.get('title', collection_name),
+                'name': collection_title,
                 'order': collection_metadata.get('order', 1)
-            }, params={'reload': 'true'}).json()['collection']['id']
+            }, id=existing_id)
+
+            existing_categories = retrieve_existing_items('collections/%s/categories' % collection_id)
+            local_categories = ['Uncategorized']
 
             # Categories
             for category_name in os.listdir(collection_path):
                 category_path = os.path.join(collection_path, category_name)
                 category_metadata = load_metadata(category_path)
+                category_title = category_metadata.get('title', category_name)
                 if os.path.isdir(category_path):
-                    print '\tCreating category %s' % category_name
-                    category_id = api_post_json('categories', {
+                    local_categories.append(category_title)
+                    existing_id = existing_categories.get(category_title)
+                    if existing_id:
+                        print '\tUpdating category %s' % category_title
+                    else:
+                        print '\tCreating category %s' % category_title
+                    category_id = update_or_create('categories', 'category', {
                         'collectionId': collection_id,
-                        'name': category_metadata.get('title', category_name),
+                        'name': category_title,
                         'order': category_metadata.get('order', 1)
-                    }, params={'reload': 'true'}).json()['category']['id']
+                    }, id=existing_id)
+
+                    existing_articles = retrieve_existing_items('categories/%s/articles' % category_id)
+                    local_articles = []
 
                     # Articles
                     for article_name in os.listdir(category_path):
                         article_path = os.path.join(category_path, article_name)
                         article_metadata = load_metadata(article_path)
+                        article_title = article_metadata.get('title', article_name)
                         if os.path.isdir(article_path):
-                            print '\t\tCreating article %s' % article_name
+                            local_articles.append(article_title)
+                            existing_id = existing_articles.get(article_title)
+                            if existing_id:
+                                print '\t\tUpdating article %s' % article_title
+                            else:
+                                print '\t\tCreating article %s' % article_title
                             with codecs.open(os.path.join(article_path, 'article.md'), "r", "utf-8") as article_file:
                                 article_content = article_file.read()
 
                             article_content_html = markdown.markdown(article_content)
-                            article_id = api_post_json('articles', {
+                            article_id = update_or_create('articles', 'article', {
                                 'collectionId': collection_id,
                                 'categories': [category_id],
-                                'name': article_metadata.get('title', article_name),
+                                'name': article_title,
                                 'status': 'published',
                                 'text': article_content_html
-                                }, params={'reload': 'true'}).json()['article']['id']
-
+                                }, id=existing_id)
 
                             # Upload the assets if they exist
                             images_path = os.path.join(article_path, 'images')
@@ -135,7 +187,9 @@ def push_documentation():
                                 api_put_json('articles/%s' % article_id, {
                                     'text': article_content_html
                                 })
-
+                    purge_obsolete('articles', 'article', existing_articles, local_articles)
+            purge_obsolete('categories', 'category', existing_categories, local_categories)
+    purge_obsolete('collections', 'collection', existing_collections, local_collections)
 
 import sys
 if __name__ == '__main__':
