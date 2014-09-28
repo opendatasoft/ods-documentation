@@ -77,7 +77,8 @@ def push_documentation():
             print 'Creating collection %s' % collection_name
             collection_id = api_post_json('collections', {
                 'siteId': SITE_ID,
-                'name': collection_metadata.get('title', collection_name)
+                'name': collection_metadata.get('title', collection_name),
+                'order': collection_metadata.get('order', 1)
             }, params={'reload': 'true'}).json()['collection']['id']
 
             # Categories
@@ -88,7 +89,8 @@ def push_documentation():
                     print '\tCreating category %s' % category_name
                     category_id = api_post_json('categories', {
                         'collectionId': collection_id,
-                        'name': category_metadata.get('title', category_name)
+                        'name': category_metadata.get('title', category_name),
+                        'order': category_metadata.get('order', 1)
                     }, params={'reload': 'true'}).json()['category']['id']
 
                     # Articles
