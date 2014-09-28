@@ -1,12 +1,17 @@
 import os
+import sys
 import requests
 import json
 import yaml
 import markdown
 import codecs
 
+if len(sys.argv) < 2:
+    print "Please pass an API key as argument"
+    exit()
+
+API_KEY = sys.argv[1]
 BASE_URL = 'https://docsapi.helpscout.net/v1'
-API_KEY = '39a5b61a92cb79bf5fab5a44421daa42c896b1f9'
 SITE_ID = '54140576e4b005ed2d117482' # This is taken for example from the URL in the management console
 
 CONTENT_ROOT = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', 'content')
@@ -191,6 +196,5 @@ def push_documentation():
             purge_obsolete('categories', 'category', existing_categories, local_categories)
     purge_obsolete('collections', 'collection', existing_collections, local_collections)
 
-import sys
 if __name__ == '__main__':
     push_documentation()

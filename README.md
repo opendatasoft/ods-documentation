@@ -25,7 +25,7 @@ First, set up your Python installation (a virtualenv is recommended).
 pip install -r requirements.txt
 ```
 
-Then build the documentation on HelpScout:
+Then build the documentation on HelpScout using your HelpScout API key:
 ```python
-python scripts/helpscout.py
+python scripts/helpscout.py <HelpScout API key>
 ```
