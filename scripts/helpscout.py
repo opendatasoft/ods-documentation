@@ -7,7 +7,7 @@ import codecs
 
 BASE_URL = 'https://docsapi.helpscout.net/v1'
 API_KEY = '39a5b61a92cb79bf5fab5a44421daa42c896b1f9'
-SITE_ID = '542430d2e4b0bea6e959368a' # This is taken for example from the URL in the management console
+SITE_ID = '54140576e4b005ed2d117482' # This is taken for example from the URL in the management console
 
 CONTENT_ROOT = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', 'content')
 
