@@ -1,5 +1,3 @@
-### For OpenDataSoft domain administrators
-
 If you have a custom domain name for accessing the OpenDataSoft platform, replace in the below \<YOURDOMAIN\>.opendatasoft.com with your custom domain name.
 
 To connect your Disqus account to the ODS Platform, follow the steps below:
@@ -27,46 +25,3 @@ In the disqus integration section, copy and paste your disqus shortname and the 
 Don't forget to check "Enable Disqus in Explore".
 
 Now, people can comments in the Disqus tab and you can manage all comments at this page: http://SHORTNAME.disqus.com/.
-
-### For developers
-The Disqus Web API is available here: http://disqus.com/api/docs/.  
-Currently, we are using the **[threads/details](http://disqus.com/api/docs/threads/details/)** API to display the number of comments for a specific dataset.
-
-#### Request
-https://disqus.com/api/3.0/threads/details.json?api_key=XXXX&forum=SHORTNAME&thread=ident:DATASET
-
-#### Output
-json
-
-    {    
-        code: 0,
-        response: {
-            feed: "http://odspublic.disqus.com/arbres_remarquables_donnees_geographiques/latest.rss",
-            canModerate: false,
-            identifiers: [
-            "arbres-remarquables-donnees-geographiques"
-            ],
-            dislikes: 0,
-            likes: 0,
-            message: "",
-            id: "2571117995",
-            createdAt: "2014-04-01T08:03:59",
-            category: "2461023",
-            author: "60044750",
-            userScore: 0,
-            isDeleted: false,
-            isClosed: false,
-            link: "http://public.ods.com:8000/explore/dataset/arbres-remarquables-donnees-geographiques/?tab=disqus",
-            slug: "arbres_remarquables_donnees_geographiques",
-            forum: "odspublic",
-            clean_title: "Arbres remarquables - Données Géographiques",
-            posts: 3,
-            userSubscription: false,
-            title: "Arbres remarquables - Données Géographiques",
-            canPost: false,
-            highlightedPost: null
-        }
-    }
-
-The number of comments corresponds to: **response.posts**.  
-Here there are 3 comments for the dataset "Arbres remarquables - Données Géographiques".
