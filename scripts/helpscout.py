@@ -16,6 +16,12 @@ SITE_ID = '54140576e4b005ed2d117482' # This is taken for example from the URL in
 
 CONTENT_ROOT = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', 'content')
 
+# https://pythonhosted.org/Markdown/extensions/index.html
+MARKDOWN_EXTENSIONS = [
+    'markdown.extensions.tables',
+    'markdown.extensions.fenced_code'
+]
+
 
 HTTP_AUTH = (API_KEY, 'X')
 
@@ -162,7 +168,7 @@ def push_documentation():
                             with codecs.open(os.path.join(article_path, 'article.md'), "r", "utf-8") as article_file:
                                 article_content = article_file.read()
 
-                            article_content_html = markdown.markdown(article_content)
+                            article_content_html = markdown.markdown(article_content, extensions=MARKDOWN_EXTENSIONS)
                             article_id = update_or_create('articles', 'article', {
                                 'collectionId': collection_id,
                                 'categories': [category_id],
