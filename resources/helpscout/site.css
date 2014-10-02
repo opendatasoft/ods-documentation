@@ -2,8 +2,8 @@ body {
 	font-family: 'Open Sans', arial, serif;
 }
 
-header, 
-.category-list .category, 
+header,
+.category-list .category,
 #sidebar,
 #content {
 	background-color: #fff;
@@ -106,4 +106,16 @@ header,
 #fullArticle pre {
 	/* Don't wrap code automatically: this is code! */
 	overflow-x: auto;
+}
+
+#fullArticle .printArticle {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+#fullArticle p img:only-child {
+	/* Center the image if it is alone in its paragraph */
+	margin-left: auto;
+	margin-right: auto;
 }

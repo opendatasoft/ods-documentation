@@ -17,10 +17,10 @@ order: 1
 ```
 
 Each article folder contains an `article.md` file containing the article content itself as Markdown.
-The article folder may also contain an `images` folder with images used by the article; for example `[My Image](my-image.png)` will refer to the file `my-image.png` inside the `images` folder.
+The article folder may also contain an `images` folder with images used by the article; for example `![My Image](my-image.png)` will refer to the file `my-image.png` inside the `images` folder.
 
 ### Building the documentation
-#### HelpScout 
+#### HelpScout
 First, set up your Python installation (a virtualenv is recommended).
 ```python
 pip install -r requirements.txt
