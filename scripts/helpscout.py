@@ -96,11 +96,13 @@ def update_or_create(entrypoint, item_type, data, id=None):
         return api_post_json(entrypoint, data, params={'reload': 'true'}).json()[item_type]['id']
 
 def retrieve_existing_items(entrypoint, params=None):
-    return {item['name']: item['id'] for item in api_get(entrypoint, params=params)[entrypoint.split('/')[-1]]['items']}
+    return {item['name'].lower(): item['id'] for item in api_get(entrypoint, params=params)[entrypoint.split('/')[-1]]['items']}
 
 def purge_obsolete(entrypoint, item_type, existing_remote_items, local_names):
+    # Item names need to be compared case-insensitively, because HelpScout considers them unique
+    local_names = [name.lower() for name in local_names]
     for remote_item_name, remote_item_id in existing_remote_items.items():
-        if not remote_item_name in local_names:
+        if not remote_item_name.lower() in local_names:
             print 'Deleting %s %s' % (item_type, remote_item_name)
             api_delete('%s/%s' % (entrypoint, remote_item_id))
 
@@ -118,7 +120,7 @@ def push_documentation():
         collection_title = collection_metadata.get('title', collection_name)
         if os.path.isdir(collection_path):
             local_collections.append(collection_title)
-            existing_id = existing_collections.get(collection_title)
+            existing_id = existing_collections.get(collection_title.lower())
             if existing_id:
                 print 'Updating collection %s' % collection_title
             else:
@@ -139,7 +141,7 @@ def push_documentation():
                 category_title = category_metadata.get('title', category_name)
                 if os.path.isdir(category_path):
                     local_categories.append(category_title)
-                    existing_id = existing_categories.get(category_title)
+                    existing_id = existing_categories.get(category_title.lower())
                     if existing_id:
                         print '\tUpdating category %s' % category_title
                     else:
@@ -160,7 +162,7 @@ def push_documentation():
                         article_title = article_metadata.get('title', article_name)
                         if os.path.isdir(article_path):
                             local_articles.append(article_title)
-                            existing_id = existing_articles.get(article_title)
+                            existing_id = existing_articles.get(article_title.lower())
                             if existing_id:
                                 print '\t\tUpdating article %s' % article_title
                             else:
