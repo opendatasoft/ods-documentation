@@ -67,8 +67,8 @@ A rich set of functions is also available
 
 Function type | Functions
 ------------- | ---------
-Single operand | sin, asin, asinh, cos, acos, acosh, tan, atan, atanh, ceil, abs, factorial, floor, exp, log, log10, sqrt, degrees, radians, sigmoid, gamma, round, trunc, touppercase, upper, tolowercase, lower, capitalize_all, capitalize, isupper, islower, isdecimal, isdigit, isnumeric, isalnum, isalpha, random, length, normalize (unicode)
-Two operands | pow, max, min, mod, div, gcd, round, random, contains
+Single operand | sin, asin, asinh, cos, acos, acosh, tan, atan, atanh, ceil, abs, factorial, floor, exp, log, log10, sqrt, degrees, radians, sigmoid, gamma, round, trunc, touppercase, upper, tolowercase, lower, capitalize_all, capitalize, isupper, islower, isdecimal, isdigit, isnumeric, isalnum, isalpha, random, length, normalize (unicode), dayofweek, year, month, hour, minute, second, microsecond
+Two operands | pow, max, min, mod, div, gcd, round, random, contains, dayofweek, year, month, hour, minute, second, microsecond
 Three operands | ljust, rjust, center
 
 Examples:
@@ -92,6 +92,9 @@ random(10, 11) | 10.7280438796
 ljust("4400", 5, "0") | 44000
 rjust("4400", 5, "0") | 04400
 center("4400", 6,"0") | 044000
+year("2014-06-07") | 2014
+hour("2014-06-07 17:00") | 17
+hour("2014-06-07 17:00", "Europe/Paris") | 19
 
 ### Text Transformations
 
