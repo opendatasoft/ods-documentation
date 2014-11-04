@@ -29,7 +29,7 @@ This API makes it possible to fetch an individual dataset information.
 
 Parameter Name | Description
 -------------- | -----------
-datasetid | Part o the URL path. Identifier of the dataset. Example: `http://<DOMAIN_ID>/api/dataset/1.0/arbresremarquablesparis2011?...`
+datasetid | Part of the URL path. Identifier of the dataset. Example: `http://<DOMAIN_ID>/api/dataset/1.0/arbresremarquablesparis2011?...`
 pretty_print | If set to true (default is false), pretty prints JSON and JSONP outputs.
 format | Format of the response output. One of JSON (default) and JSONP.
 callback | JSONP callback. Example: `format=jsonp&callback=myFunction`
