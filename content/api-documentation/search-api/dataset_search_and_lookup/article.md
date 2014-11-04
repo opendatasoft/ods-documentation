@@ -23,7 +23,7 @@ callback | JSONP callback. Example: `format=jsonp&callback=myFunction`
 
 This API makes it possible to fetch an individual dataset information.
 
-**API endpoint**: `/api/dataset/1.0/<DATASETID>`
+**API endpoint**: `/api/datasets/1.0/<DATASETID>`
 
 **Query**
 
@@ -33,4 +33,3 @@ datasetid | Part o the URL path. Identifier of the dataset. Example: `http://<DO
 pretty_print | If set to true (default is false), pretty prints JSON and JSONP outputs.
 format | Format of the response output. One of JSON (default) and JSONP.
 callback | JSONP callback. Example: `format=jsonp&callback=myFunction`
-
