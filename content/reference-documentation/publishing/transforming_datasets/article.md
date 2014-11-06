@@ -19,7 +19,7 @@ This processor uses a post code to produce a geo coordinate. It is currently onl
 This processor uses French INSEE code to produce a geo coordinate.
 
 #### Convert Degrees
-This processor converts a degrees, minutes, seconds geo coordinate to a WSG84 coordinate.
+This processor converts a degrees, minutes, seconds geo coordinate to a standard geo coordinate.
 
 The following formats can be converted:
 
