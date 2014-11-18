@@ -179,6 +179,9 @@ def push_documentation(lang):
                     # Articles
                     for article_name in os.listdir(category_path):
                         article_path = os.path.join(category_path, article_name, lang)
+                        if not os.path.exists(article_path):
+                            # If there is no localized version of the article, use the one from the default language
+                            article_path = os.path.join(category_path, article_name, DEFAULT_LANGUAGE)
                         article_metadata = load_metadata(article_path)
                         article_title = article_metadata.get('title', article_name)
                         if os.path.isdir(article_path):
