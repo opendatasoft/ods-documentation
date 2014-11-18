@@ -12,7 +12,14 @@ if len(sys.argv) < 2:
 
 API_KEY = sys.argv[1]
 BASE_URL = 'https://docsapi.helpscout.net/v1'
-SITE_ID = '54140576e4b005ed2d117482' # This is taken for example from the URL in the management console
+
+SITES = {
+    'en': {
+        'site_id': '54140576e4b005ed2d117482' # This is taken for example from the URL in the management console
+    }
+}
+# When a localized metadata or content is missing in a language, we'll fallback to that default language
+DEFAULT_LANGUAGE = 'en'
 
 CONTENT_ROOT = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', 'content')
 
@@ -77,13 +84,25 @@ def api_delete(entrypoint):
     res.raise_for_status()
     return res
 
-def load_metadata(path):
+def load_metadata(path, lang=None):
     """
     Loads the metadata from the metadata.yaml file in the folder
     """
+    # There are the properties that are separated per language, we'll remove
+    # that layr of abstraction on the fly and directly return the local value
+    localized_keys = ['title']
+
     metadata_path = os.path.join(path, 'metadata.yaml')
     if os.path.exists(metadata_path):
-        return yaml.load(open(metadata_path))
+        metadata = yaml.load(open(metadata_path))
+        if lang:
+            for localized_key in localized_keys:
+                # Removing the language hierarchy level
+                if metadata.get(localized_key, {}).get(lang):
+                    metadata[localized_key] = metadata[localized_key][lang]
+                else:
+                    metadata[localized_key] = metadata[localized_key][DEFAULT_LANGUAGE]
+        return metadata
     else:
         return {}
 
@@ -107,16 +126,18 @@ def purge_obsolete(entrypoint, item_type, existing_remote_items, local_names):
             api_delete('%s/%s' % (entrypoint, remote_item_id))
 
 
-def push_documentation():
+def push_documentation(lang):
+    site_id = SITES[lang]['site_id']
+
     # At each level we retrieve the list of existing items and create an associative array  (Name => HelpScout ID)
     # This way we know if what we want to post already exists (in that case we update it)
     # It also allows us to purge the existing items that don't exist anymore
-    existing_collections = retrieve_existing_items('collections', params={'siteId': SITE_ID})
+    existing_collections = retrieve_existing_items('collections', params={'siteId': site_id})
     local_collections = []
 
     for collection_name in os.listdir(CONTENT_ROOT):
         collection_path = os.path.join(CONTENT_ROOT, collection_name)
-        collection_metadata = load_metadata(collection_path)
+        collection_metadata = load_metadata(collection_path, lang)
         collection_title = collection_metadata.get('title', collection_name)
         if os.path.isdir(collection_path):
             local_collections.append(collection_title)
@@ -126,7 +147,7 @@ def push_documentation():
             else:
                 print 'Creating collection %s' % collection_title
             collection_id = update_or_create('collections', 'collection', {
-                'siteId': SITE_ID,
+                'siteId': site_id,
                 'name': collection_title,
                 'order': collection_metadata.get('order', 1)
             }, id=existing_id)
@@ -137,7 +158,7 @@ def push_documentation():
             # Categories
             for category_name in os.listdir(collection_path):
                 category_path = os.path.join(collection_path, category_name)
-                category_metadata = load_metadata(category_path)
+                category_metadata = load_metadata(category_path, lang)
                 category_title = category_metadata.get('title', category_name)
                 if os.path.isdir(category_path):
                     local_categories.append(category_title)
@@ -157,7 +178,7 @@ def push_documentation():
 
                     # Articles
                     for article_name in os.listdir(category_path):
-                        article_path = os.path.join(category_path, article_name)
+                        article_path = os.path.join(category_path, article_name, lang)
                         article_metadata = load_metadata(article_path)
                         article_title = article_metadata.get('title', article_name)
                         if os.path.isdir(article_path):
@@ -205,4 +226,6 @@ def push_documentation():
     purge_obsolete('collections', 'collection', existing_collections, local_collections)
 
 if __name__ == '__main__':
-    push_documentation()
+    for lang in SITES.keys():
+        print '* Publishing documentation - language %s' % lang.upper()
+        push_documentation(lang)
