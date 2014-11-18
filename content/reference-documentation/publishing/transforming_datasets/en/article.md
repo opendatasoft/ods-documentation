@@ -18,6 +18,31 @@ This processor uses a post code to produce a geo coordinate. It is currently onl
 #### INSEE Code to Geo Coordinates
 This processor uses French INSEE code to produce a geo coordinate.
 
+#### Convert Degrees
+This processor converts a degrees, minutes, seconds geo coordinate to a standard geo coordinate.
+
+The following formats can be converted:
+
+Format |
+---------- |
+48° 51′ 24″ Nord2° 21′ 07″ Est |
+48° 51′ 24″N 2° 21′ 07″ E |
+48° 51′ 24″ 2° 21′ 07″ |
++48° 51′ 24″ +2° 21′ 07″ |
+N48° 51′ 24″ E2° 21′ 07″ |
+48°;2° |
+
+The signs can be:
+
+Type | Signs
+---- | -----
+North/South | +, -, N, S, Nord, North, Sud, South
+East/West | +, -, E, O, W, Est, East, Ouest, West
+Coordinate separator | ' ', ';', '/'
+Degree mark | '°', '^', '*'
+Minute mark | "'", '′'
+Second mark | '"', '″'
+
 #### IP Address to Geo Coordinates
 
 #### Geocode with Google
