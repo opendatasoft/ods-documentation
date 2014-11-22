@@ -15,7 +15,10 @@ BASE_URL = 'https://docsapi.helpscout.net/v1'
 
 SITES = {
     'en': {
-        'site_id': '54140576e4b005ed2d117482' # This is taken for example from the URL in the management console
+        'site_id': '546f7647e4b0f6394183b2a4' # This is taken for example from the URL in the management console
+    },
+    'fr': {
+        'site_id': '546f7619e4b07e8a335a1480'
     }
 }
 # When a localized metadata or content is missing in a language, we'll fallback to that default language
