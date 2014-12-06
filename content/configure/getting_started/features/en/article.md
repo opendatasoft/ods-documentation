@@ -17,7 +17,7 @@ Data federation | This feature makes it possible for customers to share data in 
 Feature | Comments
 ------- | --------
 Geocoding | Requires for the customer to have a valid contract with Google or ESRI.
-Text transformations | See <https://opendatasoft.zendesk.com/entries/86052706-Transforming-Datasets> for an exhaustive list of available transformations.
+Text transformations | See <http://docs.opendatasoft.com/category/1376-category> for an exhaustive list of available transformations.
 Join | &nbsp;
 Numeric operations | &nbsp;
 Custom transformation | &nbsp;
