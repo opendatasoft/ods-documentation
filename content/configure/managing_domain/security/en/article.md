@@ -6,9 +6,7 @@ An OpenDataSoft domain can be kept private or can be made public. When set to pr
 
 The domain access list is made of users and groups of users to which permissions are attached. Two different set of permissions can be defined: permissions related to regular users and permissions related to admin users (those guys with super powers). The permissions make it possible to give simple read access to the dataset catalog, to create and publish new datasets and even to be able to visualize and modify any dataset of the domain. 
 
-Then, at the dataset level, it is possible to even further refine the security model by giving specific access to users or groups to either view or modify the dataset. It is also possible to define advanced filters so that a given user will only see some fields and/or a subset of the dataset records. 
-
-[TODO: We should make a schema out of this, I’ll give it a try ASAP] 
+Then, at the dataset level, it is possible to even further refine the security model by giving specific access to users or groups to either view or modify the dataset. It is also possible to define advanced filters so that a given user will only see some fields and/or a subset of the dataset records.
 
 ### Configuring your domain's security policy
 
@@ -35,16 +33,16 @@ The real permissions of a user are the union of the user's own permissions and o
 There are two categories of **permissions**: standard permissions and administative permissions. Permissions can be attributed to users and groups.
 
 * Standard permissions
-  * The user may create new datasets and edit them
-  * The user may publish their datasets
-  * The user may manage the security settings of their datasets
+    * The user may create new datasets and edit them
+    * The user may publish their datasets
+    * The user may manage the security settings of their datasets
 
 * Administative permissions
-  * The user may browse all the datasets on the domain
-  * The user may edit all the datasets on the domain
-  * The user may create and edit content pages on the domain
-  * The user may edit and moderate reuses on the domain
-  * The user may edit domain properties 
+    * The user may browse all the datasets on the domain
+    * The user may edit all the datasets on the domain
+    * The user may create and edit content pages on the domain
+    * The user may edit and moderate reuses on the domain
+    * The user may edit domain properties 
 
 #### Dataset access list
 
@@ -66,7 +64,7 @@ For non restricted datasets, filters defined in the **default security** section
 
 Filters of a user belonging to the access list of a dataset correspond to the union of the users's filters and of the filters of the groups the user belongs to. 
 
-#### Users management workflow
+### Users management workflow
 
 As an administrator, you can add users to your domain directly through your users management screen. You can also activate a registration workflow to let users initiate the registration process themselves.
 
