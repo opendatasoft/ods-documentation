@@ -37,7 +37,7 @@ There are two categories of **permissions**: standard permissions and administat
     * The user may publish their datasets
     * The user may manage the security settings of their datasets
 
-* Administative permissions
+* Administrative permissions
     * The user may browse all the datasets on the domain
     * The user may edit all the datasets on the domain
     * The user may create and edit content pages on the domain
@@ -53,6 +53,7 @@ As seen above, a **restricted** dataset can only be accessed by users defined in
 Users and groups can easily be added to the access list of a dataset.
 
 If a user belongs to the access list of a dataset (or to a group which belongs to the access list of a dataset), they may access this dataset in the exploration console or through APIs. Two additional permissions are also available:
+
 * The user may edit the dataset
 * The user may publish the dataset
 
