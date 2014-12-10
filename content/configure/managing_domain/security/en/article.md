@@ -4,7 +4,7 @@ OpenDataSoft provides a full stack security layer with users, groups and roles m
 
 An OpenDataSoft domain can be kept private or can be made public. When set to private, a domain can only be accessed by users defined in the access list of the domain. When set to public, a domain can be accessed by anyone (this however does not mean that any user will be able to browse the entire domain catalog).
 
-The domain access list is made of users and groups of users to which permissions are attached. Two different set of permissions can be defined: permissions related to regular users and permissions related to admin users (those guys with super powers). The permissions make it possible to give simple read access to the dataset catalog, to create and publish new datasets and even to be able to visualize and modify any dataset of the domain.
+The domain access list is made of users and groups of users to which permissions are attached. Two different set of permissions can be defined: permissions related to regular users and permissions related to admin users (those guys with super powers). The permissions make it possible to give the right to read the dataset catalog, create and publish new datasets or even visualize and modify any dataset of the domain.
 
 Then, at the dataset level, it is possible to even further refine the security model by giving specific access to users or groups to either view or modify the dataset. It is also possible to define advanced filters so that a given user will only see some fields and/or a subset of the dataset records.
 
@@ -18,7 +18,7 @@ Check the option **allow anonymous access** if you want to let people access you
 
 Datasets access can be set to be *restricted* or *not restricted*. A *restricted* dataset can only be accessed by authorized users (users who are in the access list of the dataset, see below). Check the option **restrict new datasets by default** if you want newly created datasets to be accessed only by authorized users.
 
-The **landing page for anonymous users** can be set to a given content page. It makes it possible to host a splash screen or to disclose content to anonymous users from a private domain.
+The **landing page for anonymous users** can be set to any content page created on the domain. It makes it possible to host a splash screen or to disclose content to anonymous users from a private domain.
 
 This section also allows you to define the **default permissions for new users** (see below for a detailed description of users permissions).
 
