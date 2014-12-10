@@ -6,7 +6,6 @@ The domain <http://public.opendatasoft.com> will be use to illustrate examples g
 
 The available APIs are listed below.
 
-
 API Name | API Short Description
 -------- | ---------------------
 Dataset search API | Search datasets
@@ -20,6 +19,10 @@ Multimedia Download API | Download multimedia content attached with datasets or 
 
 All these APIs (except the Multimedia download API) return JSON by default. Some of them can return alternate content.
 
+All these APIs (except the Real Time Push API) support cross-domain access from
+a browser, using CORS (<http://en.wikipedia.org/wiki/Cross-origin_resource_sharing>).
+For older browsers or other specific purposes, JSONP (<http://en.wikipedia.org/wiki/JSONP>) is supported when returning JSON content by adding a `callback` parameter.
+
 ### Finding the dataset identifier
 
 You are looking for specific data to build your application but you don't know yet in which dataset you can find these data?
@@ -28,7 +31,7 @@ You can simply use the exploration console by clicking on the "Explore" link in 
 
 ### HTTP Methods
 
-Except for the real time push API which respects more strictly RESTful concepts, all the APIs endpoints accept GET and POST HTTP methods. GET methods shall be prefered of course. The POST can be used to workaround browsers / libraries / proxies limitations regarding the size of the HTTP URL.
+Except for the Real Time Push API which respects more strictly RESTful concepts, all the APIs endpoints accept GET and POST HTTP methods. GET methods shall be prefered of course. The POST can be used to workaround browsers / libraries / proxies limitations regarding the size of the HTTP URL.
 
 ### Security
 
