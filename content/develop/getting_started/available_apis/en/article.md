@@ -1,4 +1,4 @@
-OpenDataSoft datasets can be accessed by developers through HTTP REST APIs. 
+OpenDataSoft datasets can be accessed by developers through HTTP REST APIs.
 
 The domain <http://public.opendatasoft.com> will be use to illustrate examples given in this forum.
 
@@ -22,24 +22,24 @@ All these APIs (except the Multimedia download API) return JSON by default. Some
 
 ### Finding the dataset identifier
 
-You are looking for specific data to build your application but you don't know yet in which dataset you can find these data ?
+You are looking for specific data to build your application but you don't know yet in which dataset you can find these data?
 
 You can simply use the exploration console by clicking on the "Explore" link in the top page menu. Once you have identified the dataset you need, just go to this dataset's "Information" tab where you'll find the dataset id.
 
 ### HTTP Methods
 
-Except for the real time push API which respects moer stricly RESTfullness concepts, all the APIs endpoints accept GET and POST HTTP methods. GET methods shall be prefered of course. The POST can be used to workaround browsers / libraries / proxies limitations regarding the size of the HTTP URL.
+Except for the real time push API which respects more strictly RESTful concepts, all the APIs endpoints accept GET and POST HTTP methods. GET methods shall be prefered of course. The POST can be used to workaround browsers / libraries / proxies limitations regarding the size of the HTTP URL.
 
 ### Security
 
-All the APIs are secured using the same authentication et authorization model.
+All the APIs are secured using the same authentication and authorization model.
 
 Users can only see what they are allowed to see:
 
  * Datasets in a domain
  * Records in a dataset
- 
-APIs link are available both in HTTP and HTTPS. We advise API users to always use the HTTPS endpoint.
+
+APIs are available both in HTTP and HTTPS. We advise API users to always use the HTTPS endpoint.
 
 The available authentication modes are listed below.
 
@@ -52,7 +52,7 @@ Note that when you are connected with a Browser session, API calls triggered fro
 
 ### Quotas
 
-APIs endpoints are subject to quotas based limitations. Contact the domain administrator or the dataset owner when you reach a limit.
+APIs endpoints are subject to quota-based limitations. Contact the domain administrator or the dataset owner when you reach a limit.
 
 ### Errors handling
 
@@ -60,14 +60,10 @@ When an error occurs, a JSON object describing the error is returned by the API.
 
 Example of an error occuring when you reach a quota limit:
 
-    HTTP return code: 
+    HTTP return code:
     	403
     HTTP response body:
 	    {
 	    	"errorcode": 10001,
 			"error"": "License Violation Exception : You have exceeded your quotas."
 		}
-
-
-
-
