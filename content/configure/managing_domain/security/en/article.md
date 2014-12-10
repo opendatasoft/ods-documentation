@@ -62,7 +62,7 @@ If a user belongs to the access list of a dataset (or to a group which belongs t
 
 For non restricted datasets, filters defined in the **default security** section apply to anonymous users or to authenticated users who do not belong to the access list.
 
-The filter of a user belonging to the access list of a dataset is the union of the users's filters and the filters of the groups the user belongs to.
+The effective filter of a user belonging to the access list of a dataset is the union of the users's filters and the filters of the groups the user belongs to.
 
 ### Users management workflow
 
