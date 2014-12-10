@@ -18,7 +18,7 @@ Geo clustering API | Build geo clusters using records of a specific dataset
 Real Time Push API | Real time data integration
 Multimedia Download API | Download multimedia content attached with datasets or records
 
-All these APIs (except the Multimedia download API) return JSON by default. Some of them can return alternate content. 
+All these APIs (except the Multimedia download API) return JSON by default. Some of them can return alternate content.
 
 ### Finding the dataset identifier
 
@@ -53,6 +53,12 @@ Note that when you are connected with a Browser session, API calls triggered fro
 ### Quotas
 
 APIs endpoints are subject to quota-based limitations. Contact the domain administrator or the dataset owner when you reach a limit.
+
+The API response contains three headers to indicate the current state of your quota:
+
+- **X-RateLimit-Limit** indicates the total number of API calls you can do in a single day (resets at midnight UTC)
+- **X-RateLimit-Remaining** indicates the number of API calls currently remaining
+- **X-RateLimit-Reset** indicates the [epoch](http://en.wikipedia.org/wiki/Unix_time) of the next reset time
 
 ### Errors handling
 
