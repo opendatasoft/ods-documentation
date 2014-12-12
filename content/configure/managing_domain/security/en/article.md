@@ -28,7 +28,7 @@ This section also allows you to define the **default permissions for new users**
 
 The domain access list are made of users and groups. Users' scope is platform wide (this means that a user can be associated with more than one domain) while groups' scope is domain wide (groups are not shared among domains).
 
-The real permissions of a user are the union of the user's own permissions and of the permissions of the groups the user belongs to. This means that if a user does not have administrative rights set while they belong to a group which has administrative rights, the user will effectively be given administrative rights.
+The effective permissions of a user are the union of the user's own permissions and of the permissions of the groups the user belongs to. This means that if a user does not have administrative rights set while they belong to a group which has administrative rights, the user will effectively be given administrative rights.
 
 There are two categories of **permissions**: standard permissions and administative permissions. Permissions can be attributed to users and groups.
 
