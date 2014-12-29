@@ -54,19 +54,15 @@ Le document de métadonnées spécifie d'abord les types complexes utilisés par
 
 ```xml
 <edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
-    <edmx:DataServices
-        xmlns:m="http://docs.oasis-open.org/odata/ns/metadata"
-        m:MaxDataServiceVersion="4.0"
-        m:DataServiceVersion="4.0">
-
+    <edmx:DataServices xmlns:m="http://docs.oasis-open.org/odata/ns/metadata"
+        m:MaxDataServiceVersion="4.0" m:DataServiceVersion="4.0">
         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm"
-            Alias="Ods"
-            Namespace="com.opendatasoft.odata.types">
-
-        <ComplexType Name="GeoPoint2D">
-            <Property Type="Edm.Double" Name="latitude"/>
-            <Property Type="Edm.Double" Name="longitude"/>
-        </ComplexType>
+            Alias="Ods" Namespace="com.opendatasoft.odata.types">
+            <ComplexType Name="GeoPoint2D">
+                <Property Type="Edm.Double" Name="latitude"/>
+                <Property Type="Edm.Double" Name="longitude"/>
+            </ComplexType>
+        </Schema>
         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm"
             Namespace="parisdata.detail_du_bati">
             <EntityType Name="detail_du_bati">
