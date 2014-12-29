@@ -13,7 +13,7 @@ Here are the steps that will allow you to import data through the Excel native O
 
 ![Data feed connection form.](data2.png)
 
-* In the address bar of the window that was opened, enter the service address. This address should be "http://platform.url/api/odata". Replace the platform.url by the actual platform URL.
+* In the address bar of the window that was opened, enter the service address. This address should be "http://platform.url/api/odata". Replace the platform.URL by the actual platform URL.
 
 ![Table selection window.](data3.png)
 
@@ -25,7 +25,7 @@ Here are the steps that will allow you to import data through the Excel native O
 
 ![The "Import Data" window.](data5.png)
 
-* Your data are now displyed in the Microsoft Excel cells.
+* Your data are now displayed in the Microsoft Excel cells.
  
 ![Imported data in Microsoft Excel.](data6.png)
 
