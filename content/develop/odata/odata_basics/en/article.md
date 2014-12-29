@@ -103,7 +103,7 @@ The metadata document is located on `/$metadata`. This documents determines the 
 
 The service supports ATOM and JSON formats. For the JSON formats, the "minimal" and "full" metadata levels are supported. Any request for a metadata level of "none" will be responded to with the "minimal" metadata level, as per the standard.
 
-There are two main ways of requesting a specific format: in the `Accept` header and in the `\$format` REST parameter.
+There are two main ways of requesting a specific format: in the `Accept` header and in the `$format` REST parameter.
 
 The format parameter, be it in the headers or in the query string, can be either the abbreviations JSON, XML or ATOM, or the exact MIME type requested. For the JSON format, different metadata levels can be requested by using the full MIME type followed by `;odata.metadata=<LEVEL>` for protocol version 4.0 and `;odata=<LEVEL>metadata` for protocol version 3.0.
 
@@ -202,7 +202,7 @@ The records of a dataset can be browsed on the `/<DATASET ID>` page. It is easy 
 
 ## Paging
 
-Client-driven paging can be requested with the `\$top` REST parameter to limit the size of the response, and the `\$skip` REST parameter to define the first result to display. The server will ignore `\$skip` results and then return the first `$top` items. When paging is applied, a link to the next results will be added at the end of the payload.
+Client-driven paging can be requested with the `$top` REST parameter to limit the size of the response, and the `$skip` REST parameter to define the first result to display. The server will ignore `$skip` results and then return the first `$top` items. When paging is applied, a link to the next results will be added at the end of the payload.
 
 > GET /liste_des_prenoms?$top=2
 
@@ -244,7 +244,7 @@ Client-driven paging can be requested with the `\$top` REST parameter to limit t
 
 ## Recherche
 
-The `\$search` parameter can be used to search data.
+The `$search` parameter can be used to search data.
 
 > GET /liste_des_prenoms?$search=lou
 
@@ -279,7 +279,7 @@ The `\$search` parameter can be used to search data.
 
 ## Restriction
 
-The `\$filter` parameter can be used to apply a restriction on results. Supported restriction operators are `eq` and `ne` for equality and inequality, `lt` and `gt` for strict inequalities and `le` and `ge` for non strict inequalities. Multiple restriction expessions can be combined into bigger expressions with the logical operators `and` and `or`. Expression can be negated with the `not` operator.
+The `$filter` parameter can be used to apply a restriction on results. Supported restriction operators are `eq` and `ne` for equality and inequality, `lt` and `gt` for strict inequalities and `le` and `ge` for non strict inequalities. Multiple restriction expessions can be combined into bigger expressions with the logical operators `and` and `or`. Expression can be negated with the `not` operator.
 
 > GET /liste_des_prenoms?$filter=prenom eq Lou
 
@@ -308,7 +308,7 @@ The `\$filter` parameter can be used to apply a restriction on results. Supporte
 
 ## Count
 
-There are two ways of obtaining the number of records in a dataset. The first way is to use the `\$count` REST parameter (`\$inlinecount` for protocol version 3.0). The other way is to navigate to the count document for a resource. This is achieved by querying `/<DATASET ID>/\$count`. These two methods have slightly different semantics: the first one returns the count relative to the payload, taking all operations into account, except for paging and is returned along with the payload, while the second one returns the absolute resource count, irrespective of anything other than the number of records present on the server and only returns the number, without any other information.
+There are two ways of obtaining the number of records in a dataset. The first way is to use the `$count` REST parameter (`$inlinecount` for protocol version 3.0). The other way is to navigate to the count document for a resource. This is achieved by querying `/<DATASET ID>/$count`. These two methods have slightly different semantics: the first one returns the count relative to the payload, taking all operations into account, except for paging and is returned along with the payload, while the second one returns the absolute resource count, irrespective of anything other than the number of records present on the server and only returns the number, without any other information.
 
 
 > GET /liste_des_prenoms?$filter=nombre lt 8\&$top=1\&$count=true
@@ -335,7 +335,7 @@ There are two ways of obtaining the number of records in a dataset. The first wa
 
 ## Sort
 
-Results returned by the service can be sorted by a field using the `\$orderby` parameter. The field name can be followed by the `asc` and `desc` keywords to specify the sort order (default is ascendant).
+Results returned by the service can be sorted by a field using the `$orderby` parameter. The field name can be followed by the `asc` and `desc` keywords to specify the sort order (default is ascendant).
 
 
 > GET /liste_des_prenoms?$search=lou\&$orderby=nombre
@@ -415,7 +415,7 @@ To access a specific record, its record id surrounded by parenthesis, can be app
 
 ## Projection
 
-Results can be projected over specific fields using the `\$select` parameter. For multiple fields to be subject of the projection, their names must be separated by a comma and an optional space. This parameter can be used with datasets and specific records.
+Results can be projected over specific fields using the `$select` parameter. For multiple fields to be subject of the projection, their names must be separated by a comma and an optional space. This parameter can be used with datasets and specific records.
 
 > GET /liste_des_prenoms?$search=lou\&$select=prenom, nombre
 

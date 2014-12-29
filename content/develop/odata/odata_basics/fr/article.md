@@ -203,7 +203,7 @@ Pour accéder aux enregistrements d'un jeu de données, il suffit de se rendre s
 
 ## Pagination
 
-Pour demander une pagination des résultats, on peut utiliser les paramètres REST `\$top`, représentant le nombre de résultats à retourner et `\$skip`, représentant le nombre de résultats à ignorer à partir du début. Lorsque les résultats sont paginés, et que le résultat partiel n'est pas le dernier, la réponse contient un lien vers les résultats suivants.
+Pour demander une pagination des résultats, on peut utiliser les paramètres REST `$top`, représentant le nombre de résultats à retourner et `$skip`, représentant le nombre de résultats à ignorer à partir du début. Lorsque les résultats sont paginés, et que le résultat partiel n'est pas le dernier, la réponse contient un lien vers les résultats suivants.
 
 > GET /liste_des_prenoms?$top=2
 
@@ -245,7 +245,7 @@ Pour demander une pagination des résultats, on peut utiliser les paramètres RE
 
 ## Recherche
 
-Pour faire une recherche dans les données, on peut spécifier le paramètre `\$search`.
+Pour faire une recherche dans les données, on peut spécifier le paramètre `$search`.
 
 > GET /liste_des_prenoms?$search=lou
 
@@ -309,7 +309,7 @@ Pour faire une sélection dans les champs retournés, on peut spécifier le para
 
 ## Compte
 
-Il existe deux façons d'obtenir le nombre d'enregistrements dans un jeu de données. La première est d'utiliser le paramètre REST `\$count` pour la version 4.0 et `\$inlinecount` pour la version 3.0. L'autre façon est de naviguer sur `/<JEU DE DONNEES>/$count`. La première méthode permet d'ajouter le compte au résultat de la requête, et peut être utilisé avec les autres paramètres. Le compte sera le nombre de résultats retournés en prenant en compte les filtres et recherches demandées. La seconde méthode ne permet pas d'ajouter des paramètres ni d'obtenir d'autres résultats.
+Il existe deux façons d'obtenir le nombre d'enregistrements dans un jeu de données. La première est d'utiliser le paramètre REST `$count` pour la version 4.0 et `$inlinecount` pour la version 3.0. L'autre façon est de naviguer sur `/<JEU DE DONNEES>/$count`. La première méthode permet d'ajouter le compte au résultat de la requête, et peut être utilisé avec les autres paramètres. Le compte sera le nombre de résultats retournés en prenant en compte les filtres et recherches demandées. La seconde méthode ne permet pas d'ajouter des paramètres ni d'obtenir d'autres résultats.
 
 
 > GET /liste_des_prenoms?$filter=nombre lt 8\&$top=1\&$count=true
@@ -336,7 +336,7 @@ Il existe deux façons d'obtenir le nombre d'enregistrements dans un jeu de donn
 
 ## Tri
 
-Il est possible de trier les résultats selon un champ en utilisant le paramètre `\$orderby`. On peut ajouter au nom du champ sur lequel faire le tri les mots clé `asc` et `desc` pour que le tri se fasse dans l'ordre ascendant (resp. descendant).
+Il est possible de trier les résultats selon un champ en utilisant le paramètre `$orderby`. On peut ajouter au nom du champ sur lequel faire le tri les mots clé `asc` et `desc` pour que le tri se fasse dans l'ordre ascendant (resp. descendant).
 
 > GET /liste_des_prenoms?$search=lou\&$orderby=nombre
 
@@ -415,7 +415,7 @@ Pour accéder à un enregistrement unique, il convient de naviguer sur l'adresse
 
 ## Projection
 
-On peut faire une projection pour n'obtenir que un ou plusieurs champs en utilisant le paramètre `\$select`. Lorsque l'on veut obtenir plusieurs champs, il convient de les séparer par une virgule et un espace optionnel. Ce paramètre est valide aussi bien pour les jeux de données que pour les enregistrements.
+On peut faire une projection pour n'obtenir que un ou plusieurs champs en utilisant le paramètre `$select`. Lorsque l'on veut obtenir plusieurs champs, il convient de les séparer par une virgule et un espace optionnel. Ce paramètre est valide aussi bien pour les jeux de données que pour les enregistrements.
 
 > GET /liste_des_prenoms?$search=lou\&$select=prenom, nombre
 
