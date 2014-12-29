@@ -68,7 +68,7 @@ Here are the steps that will allow you to import data through PowerPivot for Mic
 
 * You can now verify the integrity of your data om the data source management window.
 
-![La liste des types d'import de données de PowerPivot.](ppivot10.png)
+![The data import list in PowerPivot.](ppivot10.png)
 
 * In the Microsoft Excel main window, click "PivotTable", and in the popped up list, click "PivotTable".
 
