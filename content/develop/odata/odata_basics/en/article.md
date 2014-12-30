@@ -53,48 +53,55 @@ The metadata document is located on `/$metadata`. This documents determines the 
 
 ```xml
 <edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
-    <edmx:DataServices xmlns:m="http://docs.oasis-open.org/odata/ns/metadata"
-        m:MaxDataServiceVersion="4.0" m:DataServiceVersion="4.0">
-        <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm"
+  <edmx:DataServices xmlns:m="http://docs.oasis-open.org/odata/ns/metadata"
+                     m:MaxDataServiceVersion="4.0" m:DataServiceVersion="4.0">
+    <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm"
             Alias="Ods" Namespace="com.opendatasoft.odata.types">
-            <ComplexType Name="GeoPoint2D">
-                <Property Type="Edm.Double" Name="latitude"/>
-                <Property Type="Edm.Double" Name="longitude"/>
-            </ComplexType>
-        </Schema>>
-        <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm"
-            Namespace="parisdata.detail_du_bati">
-            <EntityType Name="detail_du_bati">
-                <Key>
-                    <PropertyRef Name="recordid"/>
-                </Key>
-                <Property Type="Edm.String" Name="recordid" Nullable="false"/>
-                <Property Type="com.opendatasoft.odata.types.GeoPoint2D
-                    Name="geom_x_y"/>
-                <Property Type="Edm.Geometry" Name="geom"/>
-                <Property Type="Edm.String" Name="info"/>
-                <Property Type="Edm.String" Name="libelle"/>
-            </EntityType>
-        </Schema>
-        <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm"
-            Namespace="parisdata.datasets">
-            <EntityContainer m:IsDefaultEntityContainer="true"
-                Name="parisdataContainer">
-                <EntitySet EntityType="parisdata.detail_du_bati.detail_du_bati"
-                    Name="detail_du_bati"/>
-            </EntityContainer>
-            <Annotations Target="parisdata.detail_du_bati.detail_du_bati">
-                <ValueAnnotation Term="Org.OData.Publication.V1.PublisherName"
-                    String="Ville de Paris"/>
-                <ValueAnnotation Term="Org.OData.Publication.V1.LastModified"
-                    String="2013-05-30T01:51:54+00:00"/>
-                <ValueAnnotation Term="Org.OData.Publication.V1.Keywords"
-                    String="bati, detail, acces, rampe, escalier exterieur, terrasse, marche, ascenseur"/>
-                <ValueAnnotation Term="Org.OData.Display.V1.DisplayName"
-                    String="Detail du Bati"/>
-            </Annotations>
-        </Schema>
-    </edmx:DataServices>
+      <ComplexType Name="GeoPoint2D">
+        <Property Type="Edm.Double" Name="latitude"/>
+        <Property Type="Edm.Double" Name="longitude"/>
+      </ComplexType>
+      <!-- ... -->
+    </Schema>
+    <!-- ... -->
+    <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm"
+            Namespace="public.baby_names_nc_2013">
+      <EntityType Name="baby_names_nc_2013">
+        <Key>
+          <PropertyRef Name="recordid"/>
+        </Key>
+        <Property Type="Edm.String" Name="recordid" Nullable="false"/>
+        <Property Type="Edm.String" Name="state"/>
+        <Property Type="Edm.String" Name="gender"/>
+        <Property Type="Edm.String" Name="year"/>
+        <Property Type="Edm.String" Name="name"/>
+        <Property Type="Edm.Int32" Name="number"/>
+      </EntityType>
+    </Schema>
+    <!-- ... -->
+    <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm"
+            Namespace="public.datasets">
+      <EntityContainer m:IsDefaultEntityContainer="true"
+                       Name="publicContainer">
+        <!-- ... -->
+        <EntitySet EntityType="public.baby_names_nc_2013.baby_names_nc_2013"
+                   Name="baby_names_nc_2013"/>
+      <!-- ... -->
+      </EntityContainer>
+      <!-- ... -->
+      <Annotations Target="public.baby_names_nc_2013.baby_names_nc_2013">
+        <ValueAnnotation Term="Org.OData.Publication.V1.PublisherName"
+                         String="Social Security Administration"/>
+        <ValueAnnotation Term="Org.OData.Publication.V1.LastModified"
+                         String="2013-07-10T14:42:42Z"/>
+        <ValueAnnotation Term="Org.OData.Publication.V1.Keywords"
+                         String="names, North Carolina, babies, birth"/>
+        <ValueAnnotation Term="Org.OData.Display.V1.DisplayName"
+                         String="Baby names in North Carolina (2013)"/>
+      </Annotations>
+      <!-- ... -->
+    </Schema>
+  </edmx:DataServices>
 </edmx:Edmx>
 ```
 
@@ -140,14 +147,21 @@ The service root document displays the catalog of all datasets available through
 
 ```json
 {
-    "@odata.context": "http://opendata.paris.fr/api/odata/$metadata",
-    "value": [{
-        "name": "detail_du_bati",
-        "url": "detail_du_bati"
-    }, {
-        "name": "liste_des_prenoms",
-        "url": "liste_des_prenoms"
-    }]
+    "@odata.context": "https://public.opendatasoft.com/api/odata/$metadata",
+    "value": [
+        {
+            "name": "baby_names_nc_2013",
+            "url": "baby_names_nc_2013"
+        },
+        {
+            "name": "boston-public-schools-map",
+            "url": "boston-public-schools-map"
+        },
+        {
+            "name": "nyc-parking-spots",
+            "url": "nyc-parking-spots"
+        }, ...
+    ]
 }
 ```
 
@@ -156,46 +170,37 @@ The service root document displays the catalog of all datasets available through
 
 The records of a dataset can be browsed on the `/<DATASET ID>` page. It is easy to navigate from the service root document to a dataset by following the URL attribute of the catalog items.
 
-> GET /liste_des_prenoms
+> GET /baby_names_nc_2013
 
 ```json
 {
-    "@odata.context": "http://opendata.paris.fr/api/odata/$metadata#liste_des_prenoms",
-    "value": [{
-        "recordid": "5bbe53204e72f7ab39feb5d354135248af48c63f",
-        "nombre": 6,
-        "prenom": "Dario"
-    },
-    {
-        "recordid": "ac7e71a5b2cec35fabfcd3d904bb50e9ee09401f",
-        "nombre": 6,
-        "prenom": "Demba"
-    },
-    {
-        "recordid": "c1f948009db0463c6819cda2cf6991f557a0032e",
-        "nombre": 6,
-        "prenom": "Fabio"
-    },
-    {
-        "recordid": "c0f71b08631403a93caba187d6059e98569f1a68",
-        "nombre": 6,
-        "prenom": "Hassan"
-    },
-    {
-        "recordid": "43c3f85ab76c458211240e086b80485228236ae9",
-        "nombre": 6,
-        "prenom": "Hedi"
-    },
-    {
-        "recordid": "e1b9187f3ea82a5b0b2c4e1090f955bc4262a3ff",
-        "nombre": 6,
-        "prenom": "Killian"
-    },
-    {
-        "recordid": "aa1eb2c092a965ffe76c450b2d194acb14f97c0e",
-        "nombre": 6,
-        "prenom": "Louison"
-    }, ... ]
+    "@odata.context": "https://public.opendatasoft.com/api/odata/$metadata#baby_names_nc_2013",
+    "value": [
+        {
+            "recordid": "6767d8330abd8b38d0207cef113dcb94e50ebfd6",
+            "gender": "F",
+            "state": "NC",
+            "number": 645,
+            "name": "Emma",
+            "year": "2013"
+        },
+        {
+            "recordid": "c7faeb25c4bfeb820c4e80864c7861192508d0d2",
+            "gender": "F",
+            "state": "NC",
+            "number": 272,
+            "name": "Ella",
+            "year": "2013"
+        },
+        {
+            "recordid": "d5fd82cf69691db575de6cfe207d105caa10f68c",
+            "gender": "F",
+            "state": "NC",
+            "number": 263,
+            "name": "Natalie",
+            "year": "2013"
+        }, ...
+    ]
 }
 ```
 
@@ -204,41 +209,58 @@ The records of a dataset can be browsed on the `/<DATASET ID>` page. It is easy 
 
 Client-driven paging can be requested with the `$top` REST parameter to limit the size of the response, and the `$skip` REST parameter to define the first result to display. The server will ignore `$skip` results and then return the first `$top` items. When paging is applied, a link to the next results will be added at the end of the payload.
 
-> GET /liste_des_prenoms?$top=2
+> GET /baby_names_nc_2013?$top=2
 
 ```json
 {
-    "@odata.context": "http://opendata.paris.fr/api/odata/$metadata#liste_des_prenoms",
-    "value": [{
-        "recordid": "5bbe53204e72f7ab39feb5d354135248af48c63f",
-        "nombre": 6,
-        "prenom": "Dario"
-    },
-    {
-        "recordid": "ac7e71a5b2cec35fabfcd3d904bb50e9ee09401f",
-        "nombre": 6,
-        "prenom": "Demba"
-    }],
-    "@odata.nextLink": "http://opendata.paris.fr/api/odata/liste_des_prenoms?$skiptoken=2"
+    "@odata.context": "https://public.opendatasoft.com/api/odata/$metadata#baby_names_nc_2013",
+    "value": [
+        {
+            "recordid": "6767d8330abd8b38d0207cef113dcb94e50ebfd6",
+            "gender": "F",
+            "state": "NC",
+            "number": 645,
+            "name": "Emma",
+            "year": "2013"
+        },
+        {
+            "recordid": "c7faeb25c4bfeb820c4e80864c7861192508d0d2",
+            "gender": "F",
+            "state": "NC",
+            "number": 272,
+            "name": "Ella",
+            "year": "2013"
+        }
+    ],
+    "@odata.nextLink": "https://public.opendatasoft.com/api/odata/baby_names_nc_2013?$skiptoken=2"
 }
 ```
 
 
-> GET /liste_des_prenoms?$skip=1\&$top=2
+> GET /baby_names_nc_2013?$skip=1&$top=2
 
 ```json
 {
-    "@odata.context": "http://opendata.paris.fr/api/odata/$metadata#liste_des_prenoms",
-    "value": [{
-        "recordid": "ac7e71a5b2cec35fabfcd3d904bb50e9ee09401f",
-        "nombre": 6,
-        "prenom": "Demba"
-    }, {
-        "recordid": "c1f948009db0463c6819cda2cf6991f557a0032e",
-        "nombre": 6,
-        "prenom": "Fabio"
-    }],
-    "@odata.nextLink": "http://opendata.paris.fr/api/odata/liste_des_prenoms?$skiptoken=3"
+    "@odata.context": "https://public.opendatasoft.com/api/odata/$metadata#baby_names_nc_2013",
+    "value": [
+        {
+            "recordid": "c7faeb25c4bfeb820c4e80864c7861192508d0d2",
+            "gender": "F",
+            "state": "NC",
+            "number": 272,
+            "name": "Ella",
+            "year": "2013"
+        },
+        {
+            "recordid": "d5fd82cf69691db575de6cfe207d105caa10f68c",
+            "gender": "F",
+            "state": "NC",
+            "number": 263,
+            "name": "Natalie",
+            "year": "2013"
+        }
+    ],
+    "@odata.nextLink": "https://public.opendatasoft.com/api/odata/baby_names_nc_2013?$skiptoken=3"
 }
 ```
 
@@ -246,32 +268,45 @@ Client-driven paging can be requested with the `$top` REST parameter to limit th
 
 The `$search` parameter can be used to search data.
 
-> GET /liste_des_prenoms?$search=lou
+> GET /baby_names_nc_2013?$search=Cad
 
 ```json
 {
-    "@odata.context": "http://opendata.paris.fr/api/odata/$metadata#liste_des_prenoms",
-    "value": [{
-        "recordid": "aa1eb2c092a965ffe76c450b2d194acb14f97c0e",
-        "nombre": 6,
-        "prenom": "Louison"
-    }, {
-        "recordid": "63ee0fce665b84e81f04a4a67e00125023e4c46e",
-        "nombre": 8,
-        "prenom": "Lou"
-    }, {
-        "recordid": "0ad427154db2a250d6f8be8881e9276157a5736e",
-        "nombre": 6,
-        "prenom": "Loup"
-    }, {
-        "recordid": "8b33bcd6a2f141d4e6dd09c619d65df6a1fdb717",
-        "nombre": 277,
-        "prenom": "Louis"
-    }, {
-        "recordid": "3043e9238dd2117934a6b248a9a4d6ef7814fd68",
-        "nombre": 6,
-        "prenom": "Louka"
-    }]
+    "@odata.context": "https://public.opendatasoft.com/api/odata/$metadata#baby_names_nc_2013",
+    "value": [
+        {
+            "recordid": "d060a6452d427b6e56ec0ed12307bda1a65ade4d",
+            "gender": "F",
+            "state": "NC",
+            "number": 5,
+            "name": "Cadance",
+            "year": "2013"
+        },
+        {
+            "recordid": "efc3e55da1dd591ba0c2bd42f0b0719e330f738f",
+            "gender": "M",
+            "state": "NC",
+            "number": 79,
+            "name": "Caden",
+            "year": "2013"
+        },
+        {
+            "recordid": "025f3eb0e7443f7ab7809f06685a06064cade230",
+            "gender": "F",
+            "state": "NC",
+            "number": 41,
+            "name": "Cadence",
+            "year": "2013"
+        },
+        {
+            "recordid": "67eab51bfaf034d88b5a98819bef98961084e449",
+            "gender": "M",
+            "state": "NC",
+            "number": 30,
+            "name": "Cade",
+            "year": "2013"
+        }
+    ]
 }
 ```
 
@@ -281,28 +316,46 @@ The `$search` parameter can be used to search data.
 
 The `$filter` parameter can be used to apply a restriction on results. Supported restriction operators are `eq` and `ne` for equality and inequality, `lt` and `gt` for strict inequalities and `le` and `ge` for non strict inequalities. Multiple restriction expessions can be combined into bigger expressions with the logical operators `and` and `or`. Expression can be negated with the `not` operator.
 
-> GET /liste_des_prenoms?$filter=prenom eq Lou
+> GET /baby_names_nc_2013?$filter=name eq Caden
 
 ```json
 {
-    "@odata.context": "http://opendata.paris.fr/api/odata/$metadata#liste_des_prenoms",
-    "value": [{
-        "recordid": "63ee0fce665b84e81f04a4a67e00125023e4c46e",
-        "nombre": 8,
-        "prenom": "Lou"
-    }]
+    "@odata.context": "https://public.opendatasoft.com/api/odata/$metadata#baby_names_nc_2013",
+    "value": [
+        {
+            "recordid": "efc3e55da1dd591ba0c2bd42f0b0719e330f738f",
+            "gender": "M",
+            "state": "NC",
+            "number": 79,
+            "name": "Caden",
+            "year": "2013"
+        }
+    ]
 }
 ```
-> GET /liste_des_prenoms?$filter=nombre gt 277 and not nombre ge 340
+> GET /baby_names_nc_2013?$filter=number gt 280 and not number ge 285
 
 ```json
 {
-    "@odata.context": "http://opendata.paris.fr/api/odata/$metadata#liste_des_prenoms",
-    "value": [{
-        "recordid": "08685a079b47b08d4a9f37b694de06e235c3de55",
-        "nombre": 299,
-        "prenom": "Arthur"
-    }]
+    "@odata.context": "https://public.opendatasoft.com/api/odata/$metadata#baby_names_nc_2013",
+    "value": [
+        {
+            "recordid": "5842808cd7f07f1e1ca733457605dfaadfcbc0a4",
+            "gender": "M",
+            "state": "NC",
+            "number": 282,
+            "name": "Isaac",
+            "year": "2013"
+        },
+        {
+            "recordid": "27676f39b6282bca2ab52e5e00468a269aabfbd0",
+            "gender": "M",
+            "state": "NC",
+            "number": 281,
+            "name": "Dylan",
+            "year": "2013"
+        }
+    ]
 }
 ```
 
@@ -311,26 +364,30 @@ The `$filter` parameter can be used to apply a restriction on results. Supported
 There are two ways of obtaining the number of records in a dataset. The first way is to use the `$count` REST parameter (`$inlinecount` for protocol version 3.0). The other way is to navigate to the count document for a resource. This is achieved by querying `/<DATASET ID>/$count`. These two methods have slightly different semantics: the first one returns the count relative to the payload, taking all operations into account, except for paging and is returned along with the payload, while the second one returns the absolute resource count, irrespective of anything other than the number of records present on the server and only returns the number, without any other information.
 
 
-> GET /liste_des_prenoms?$filter=nombre lt 8\&$top=1\&$count=true
+> GET /baby_names_nc_2013?$filter=number lt 8&$top=1&$count=true
 
 ```json
 {
-    "@odata.context": "http://opendata.paris.fr/api/odata/$metadata#liste_des_prenoms",
-    "@odata.count": 218,
-    "value": [{
-        "recordid": "5bbe53204e72f7ab39feb5d354135248af48c63f",
-        "nombre": 6,
-        "prenom": "Dario"
-    }],
-    "@odata.nextLink": "http://opendata.paris.fr/api/odata/liste_des_prenoms?
-        $skiptoken=1&$filter=nombre%20lt%208&$count=true"
+    "@odata.context": "https://public.opendatasoft.com/api/odata/$metadata#baby_names_nc_2013",
+    "@odata.count": 966,
+    "value": [
+        {
+            "recordid": "9acf1ee923cdd25b61027056d3bbde9bfa4681dd",
+            "gender": "F",
+            "state": "NC",
+            "number": 7,
+            "name": "Adah",
+            "year": "2013"
+        }
+    ],
+    "@odata.nextLink": "https://public.opendatasoft.com/api/odata/baby_names_nc_2013?$skiptoken=1&$filter=number%20lt%208&$count=true"
 }
 ```
 
-> GET /liste_des_prenoms/$count
+> GET /baby_names_nc_2013/$count
 
 ```
-645
+2841
 ```
 
 ## Sort
@@ -338,61 +395,87 @@ There are two ways of obtaining the number of records in a dataset. The first wa
 Results returned by the service can be sorted by a field using the `$orderby` parameter. The field name can be followed by the `asc` and `desc` keywords to specify the sort order (default is ascendant).
 
 
-> GET /liste_des_prenoms?$search=lou\&$orderby=nombre
+> GET /baby_names_nc_2013?$search=Cad&$orderby=number
 
 ```json
 {
-    "@odata.context": "http://opendata.paris.fr/api/odata/$metadata#liste_des_prenoms",
-    "value": [{
-        "recordid": "aa1eb2c092a965ffe76c450b2d194acb14f97c0e",
-        "nombre": 6,
-        "prenom": "Louison"
-    }, {
-        "recordid": "0ad427154db2a250d6f8be8881e9276157a5736e",
-        "nombre": 6,
-        "prenom": "Loup"
-    }, {
-        "recordid": "3043e9238dd2117934a6b248a9a4d6ef7814fd68",
-        "nombre": 6,
-        "prenom": "Louka"
-    }, {
-        "recordid": "63ee0fce665b84e81f04a4a67e00125023e4c46e",
-        "nombre": 8,
-        "prenom": "Lou"
-    }, {
-        "recordid": "8b33bcd6a2f141d4e6dd09c619d65df6a1fdb717",
-        "nombre": 277,
-        "prenom": "Louis"
-    }]
+    "@odata.context": "https://public.opendatasoft.com/api/odata/$metadata#baby_names_nc_2013",
+    "value": [
+        {
+            "recordid": "d060a6452d427b6e56ec0ed12307bda1a65ade4d",
+            "gender": "F",
+            "state": "NC",
+            "number": 5,
+            "name": "Cadance",
+            "year": "2013"
+        },
+        {
+            "recordid": "67eab51bfaf034d88b5a98819bef98961084e449",
+            "gender": "M",
+            "state": "NC",
+            "number": 30,
+            "name": "Cade",
+            "year": "2013"
+        },
+        {
+            "recordid": "025f3eb0e7443f7ab7809f06685a06064cade230",
+            "gender": "F",
+            "state": "NC",
+            "number": 41,
+            "name": "Cadence",
+            "year": "2013"
+        },
+        {
+            "recordid": "efc3e55da1dd591ba0c2bd42f0b0719e330f738f",
+            "gender": "M",
+            "state": "NC",
+            "number": 79,
+            "name": "Caden",
+            "year": "2013"
+        }
+    ]
 }
 ```
 
-> GET /liste_des_prenoms?$search=lou\&$orderby=nombre desc
+> GET /baby_names_nc_2013?$search=Cad&$orderby=number desc
 
 ```json
 {
-    "@odata.context": "http://opendata.paris.fr/api/odata/$metadata#liste_des_prenoms",
-    "value": [{
-        "recordid": "8b33bcd6a2f141d4e6dd09c619d65df6a1fdb717",
-        "nombre": 277,
-        "prenom": "Louis"
-    }, {
-        "recordid": "63ee0fce665b84e81f04a4a67e00125023e4c46e",
-        "nombre": 8,
-        "prenom": "Lou"
-    }, {
-        "recordid": "aa1eb2c092a965ffe76c450b2d194acb14f97c0e",
-        "nombre": 6,
-        "prenom": "Louison"
-    }, {
-        "recordid": "0ad427154db2a250d6f8be8881e9276157a5736e",
-        "nombre": 6,
-        "prenom": "Loup"
-    }, {
-        "recordid": "3043e9238dd2117934a6b248a9a4d6ef7814fd68",
-        "nombre": 6,
-        "prenom": "Louka"
-    }]
+    "@odata.context": "https://public.opendatasoft.com/api/odata/$metadata#baby_names_nc_2013",
+    "value": [
+        {
+            "recordid": "efc3e55da1dd591ba0c2bd42f0b0719e330f738f",
+            "gender": "M",
+            "state": "NC",
+            "number": 79,
+            "name": "Caden",
+            "year": "2013"
+        },
+        {
+            "recordid": "025f3eb0e7443f7ab7809f06685a06064cade230",
+            "gender": "F",
+            "state": "NC",
+            "number": 41,
+            "name": "Cadence",
+            "year": "2013"
+        },
+        {
+            "recordid": "67eab51bfaf034d88b5a98819bef98961084e449",
+            "gender": "M",
+            "state": "NC",
+            "number": 30,
+            "name": "Cade",
+            "year": "2013"
+        },
+        {
+            "recordid": "d060a6452d427b6e56ec0ed12307bda1a65ade4d",
+            "gender": "F",
+            "state": "NC",
+            "number": 5,
+            "name": "Cadance",
+            "year": "2013"
+        }
+    ]
 }
 ```
 
@@ -401,15 +484,18 @@ Results returned by the service can be sorted by a field using the `$orderby` pa
 
 To access a specific record, its record id surrounded by parenthesis, can be appended to the dataset address.
 
-> GET /liste_des_prenoms(8b33bcd6a2f141d4e6dd09c619d65df6a1fdb717)
+> GET /baby_names_nc_2013(efc3e55da1dd591ba0c2bd42f0b0719e330f738f)
 
 
 ```json
 {
-    "@odata.context": "http://opendata.paris.fr/api/odata/$metadata#liste_des_prenoms/$entity",
-    "recordid": "8b33bcd6a2f141d4e6dd09c619d65df6a1fdb717",
-    "nombre": 277,
-    "prenom": "Louis"
+    "@odata.context": "https://public.opendatasoft.com/api/odata/$metadata#baby_names_nc_2013/$entity",
+    "recordid": "efc3e55da1dd591ba0c2bd42f0b0719e330f738f",
+    "gender": "M",
+    "state": "NC",
+    "number": 79,
+    "name": "Caden",
+    "year": "2013"
 }
 ```
 
@@ -417,39 +503,38 @@ To access a specific record, its record id surrounded by parenthesis, can be app
 
 Results can be projected over specific fields using the `$select` parameter. For multiple fields to be subject of the projection, their names must be separated by a comma and an optional space. This parameter can be used with datasets and specific records.
 
-> GET /liste_des_prenoms?$search=lou\&$select=prenom, nombre
-
+> GET /baby_names_nc_2013?$search=Cad&$select=name, number
 
 ```json
 {
-    "@odata.context": "http://opendata.paris.fr/api/odata/$metadata#
-        liste_des_prenoms_par_sexe_en_2012(prenom,nombre)",
-    "value": [{
-        "nombre": 6,
-        "prenom": "Louison"
-    }, {
-        "nombre": 8,
-        "prenom": "Lou"
-    }, {
-        "nombre": 277,
-        "prenom": "Louis"
-    }, {
-        "nombre": 6,
-        "prenom": "Loup"
-    }, {
-        "nombre": 6,
-        "prenom": "Louka"
-    }]
+    "@odata.context": "https://public.opendatasoft.com/api/odata/$metadata#baby_names_nc_2013(name,number)",
+    "value": [
+        {
+            "number": 5,
+            "name": "Cadance"
+        },
+        {
+            "number": 79,
+            "name": "Caden"
+        },
+        {
+            "number": 41,
+            "name": "Cadence"
+        },
+        {
+            "number": 30,
+            "name": "Cade"
+        }
+    ]
 }
 ```
 
-> GET /liste_des_prenoms(8b33bcd6a2f141d4e6dd09c619d65df6a1fdb717)?$select=prenom
+> GET /baby_names_nc_2013(efc3e55da1dd591ba0c2bd42f0b0719e330f738f)?$select=name
 
 
 ```json
 {
-    "@odata.context": "http://opendata.paris.fr/api/odata/$metadata#
-        liste_des_prenoms_par_sexe_en_2012(prenom)/$entity",
-    "prenom": "Louis"
+    "@odata.context": "https://public.opendatasoft.com/api/odata/$metadata#baby_names_nc_2013(name)/$entity",
+    "name": "Caden"
 }
 ```
