@@ -113,7 +113,7 @@ Il existe deux façons de demander un format de réponse : d'une part, on peut e
 
 Le paramètre décrivant le format peut être les abréviations JSON, XML, et ATOM, ou le type MIME précis. Pour obtenir différents niveaux de métadonnées en JSON, il faut utiliser le type MIME précis et y ajouter `;odata.metadata=<NIVEAU>` pour la version 4.0 du protocole et `odata=<NIVEAU>metadata` pour la version 3.0 du protocole.
 
-> GET [/error?$format=application/JSON](http://public.opendatasoft.com/api/odata/error?$format=application/JSON)
+> GET [/error?$format=json](http://public.opendatasoft.com/api/odata/error?$format=json)
 
 ```json
 {
@@ -124,7 +124,7 @@ Le paramètre décrivant le format peut être les abréviations JSON, XML, et AT
 }
 ```
 
-> GET [/error?$format=XML](http://public.opendatasoft.com/api/odata/error?$format=XML)
+> GET [/error?$format=xml](http://public.opendatasoft.com/api/odata/error?$format=xml)
 
 ```json
 <m:error xmlns:m="http://docs.oasis-open.org/odata/ns/metadata">
@@ -139,7 +139,7 @@ A partir du chapitre suivant, tous les exemples seront au format JSON, par souci
 
 Pour accéder au catalogue de jeux de données du service, il convient de se rendre sur la racine du service.
 
-> GET [/?$format=JSON](http://public.opendatasoft.com/api/odata/?$format=JSON)
+> GET [/?$format=json](http://public.opendatasoft.com/api/odata/?$format=json)
 
 ```json
 {

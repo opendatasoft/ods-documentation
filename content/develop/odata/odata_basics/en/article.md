@@ -111,7 +111,7 @@ There are two main ways of requesting a specific format: in the `Accept` header 
 
 The format parameter, be it in the headers or in the query string, can be either the abbreviations JSON, XML or ATOM, or the exact MIME type requested. For the JSON format, different metadata levels can be requested by using the full MIME type followed by `;odata.metadata=<LEVEL>` for protocol version 4.0 and `;odata=<LEVEL>metadata` for protocol version 3.0.
 
-> GET [/error?$format=application/JSON](http://public.opendatasoft.com/api/odata/error?$format=application/JSON)
+> GET [/error?$format=json](http://public.opendatasoft.com/api/odata/error?$format=json)
 
 ```json
 {
@@ -122,7 +122,7 @@ The format parameter, be it in the headers or in the query string, can be either
 }
 ```
 
-> GET [/error?$format=XML](http://public.opendatasoft.com/api/odata/error?$format=XML)
+> GET [/error?$format=xml](http://public.opendatasoft.com/api/odata/error?$format=xml)
 
 ```json
 <m:error xmlns:m="http://docs.oasis-open.org/odata/ns/metadata">
@@ -137,7 +137,7 @@ To keep things simple, the rest of this article will feature examples with the J
 
 The service root document displays the catalog of all datasets available through the service.
 
-> GET [/?$format=JSON](http://public.opendatasoft.com/api/odata/?$format=JSON)
+> GET [/?$format=json](http://public.opendatasoft.com/api/odata/?$format=json)
 
 ```json
 {
