@@ -14,7 +14,6 @@ The OpenDataSoft OData service currently is read only, hence the only allowed me
 
 ## Versions
 
-
 The OpenDataSoft platform supports versions 3.0 and 4.0 of the OData protocol. Versions requirements can be communicated to the service via the following six headers: 
 
 * OData-Version
@@ -43,13 +42,12 @@ The OpenDataSoft platform supports versions 3.0 and 4.0 of the OData protocol. V
 
 From the next paragraph on, in order to keep things simple and relevant, all examples will illustrate protocol version 4.0. Keep in mind however that all described features work in both supported version. If version 3.0 use a specific syntax or needs special attention, it shall be described. 
 
-
 ## Metadata
 
 The metadata document is located on `/$metadata`. This documents determines the complex types used by the service, then the entity types found on the platform, the entity sets offered, and finally a set of annotation about the entity sets.
 
     
-> GET /$metadata
+> GET [/$metadata](http://public.opendatasoft.com/api/odata/$metadata)
 
 ```xml
 <edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
@@ -105,7 +103,6 @@ The metadata document is located on `/$metadata`. This documents determines the 
 </edmx:Edmx>
 ```
 
-
 ## Formats
 
 The service supports ATOM and JSON formats. For the JSON formats, the "minimal" and "full" metadata levels are supported. Any request for a metadata level of "none" will be responded to with the "minimal" metadata level, as per the standard.
@@ -114,8 +111,7 @@ There are two main ways of requesting a specific format: in the `Accept` header 
 
 The format parameter, be it in the headers or in the query string, can be either the abbreviations JSON, XML or ATOM, or the exact MIME type requested. For the JSON format, different metadata levels can be requested by using the full MIME type followed by `;odata.metadata=<LEVEL>` for protocol version 4.0 and `;odata=<LEVEL>metadata` for protocol version 3.0.
 
-
-> GET /error?$format=application/JSON
+> GET [/error?$format=application/JSON](http://public.opendatasoft.com/api/odata/error?$format=application/JSON)
 
 ```json
 {
@@ -126,7 +122,7 @@ The format parameter, be it in the headers or in the query string, can be either
 }
 ```
 
-> GET /error?$format=XML
+> GET [/error?$format=XML](http://public.opendatasoft.com/api/odata/error?$format=XML)
 
 ```json
 <m:error xmlns:m="http://docs.oasis-open.org/odata/ns/metadata">
@@ -137,13 +133,11 @@ The format parameter, be it in the headers or in the query string, can be either
 
 To keep things simple, the rest of this article will feature examples with the JSON format, which is the default, but keep in mind that everything will work the same in the ATOM format.
 
-
 ## Catalog
 
 The service root document displays the catalog of all datasets available through the service.
 
-
-> GET /?$format=JSON
+> GET [/?$format=JSON](http://public.opendatasoft.com/api/odata/?$format=JSON)
 
 ```json
 {
@@ -165,12 +159,11 @@ The service root document displays the catalog of all datasets available through
 }
 ```
 
-
 ## Datasets
 
 The records of a dataset can be browsed on the `/<DATASET ID>` page. It is easy to navigate from the service root document to a dataset by following the URL attribute of the catalog items.
 
-> GET /baby_names_nc_2013
+> GET [/baby_names_nc_2013](http://public.opendatasoft.com/api/odata/baby_names_nc_2013)
 
 ```json
 {
@@ -204,12 +197,11 @@ The records of a dataset can be browsed on the `/<DATASET ID>` page. It is easy 
 }
 ```
 
-
 ## Paging
 
 Client-driven paging can be requested with the `$top` REST parameter to limit the size of the response, and the `$skip` REST parameter to define the first result to display. The server will ignore `$skip` results and then return the first `$top` items. When paging is applied, a link to the next results will be added at the end of the payload.
 
-> GET /baby_names_nc_2013?$top=2
+> GET [/baby_names_nc_2013?$top=2](http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$top=2)
 
 ```json
 {
@@ -236,8 +228,7 @@ Client-driven paging can be requested with the `$top` REST parameter to limit th
 }
 ```
 
-
-> GET /baby_names_nc_2013?$skip=1&$top=2
+> GET [/baby_names_nc_2013?$skip=1&$top=2](http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$skip=1&$top=2)
 
 ```json
 {
@@ -268,7 +259,7 @@ Client-driven paging can be requested with the `$top` REST parameter to limit th
 
 The `$search` parameter can be used to search data.
 
-> GET /baby_names_nc_2013?$search=Cad
+> GET [/baby_names_nc_2013?$search=Cad](http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$search=Cad)
 
 ```json
 {
@@ -311,12 +302,11 @@ The `$search` parameter can be used to search data.
 ```
 
 
-
 ## Restriction
 
 The `$filter` parameter can be used to apply a restriction on results. Supported restriction operators are `eq` and `ne` for equality and inequality, `lt` and `gt` for strict inequalities and `le` and `ge` for non strict inequalities. Multiple restriction expessions can be combined into bigger expressions with the logical operators `and` and `or`. Expression can be negated with the `not` operator.
 
-> GET /baby_names_nc_2013?$filter=name eq Caden
+> GET [/baby_names_nc_2013?$filter=name eq Caden](http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$filter=name eq Caden)
 
 ```json
 {
@@ -333,7 +323,7 @@ The `$filter` parameter can be used to apply a restriction on results. Supported
     ]
 }
 ```
-> GET /baby_names_nc_2013?$filter=number gt 280 and not number ge 285
+> GET [/baby_names_nc_2013?$filter=number gt 280 and not number ge 285](http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$filter=number gt 280 and not number ge 285)
 
 ```json
 {
@@ -364,7 +354,7 @@ The `$filter` parameter can be used to apply a restriction on results. Supported
 There are two ways of obtaining the number of records in a dataset. The first way is to use the `$count` REST parameter (`$inlinecount` for protocol version 3.0). The other way is to navigate to the count document for a resource. This is achieved by querying `/<DATASET ID>/$count`. These two methods have slightly different semantics: the first one returns the count relative to the payload, taking all operations into account, except for paging and is returned along with the payload, while the second one returns the absolute resource count, irrespective of anything other than the number of records present on the server and only returns the number, without any other information.
 
 
-> GET /baby_names_nc_2013?$filter=number lt 8&$top=1&$count=true
+> GET [/baby_names_nc_2013?$filter=number lt 8&$top=1&$count=true](http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$filter=number lt 8&$top=1&$count=true)
 
 ```json
 {
@@ -384,7 +374,7 @@ There are two ways of obtaining the number of records in a dataset. The first wa
 }
 ```
 
-> GET /baby_names_nc_2013/$count
+> GET [/baby_names_nc_2013/$count](http://public.opendatasoft.com/api/odata/baby_names_nc_2013/$count)
 
 ```
 2841
@@ -395,7 +385,7 @@ There are two ways of obtaining the number of records in a dataset. The first wa
 Results returned by the service can be sorted by a field using the `$orderby` parameter. The field name can be followed by the `asc` and `desc` keywords to specify the sort order (default is ascendant).
 
 
-> GET /baby_names_nc_2013?$search=Cad&$orderby=number
+> GET [/baby_names_nc_2013?$search=Cad&$orderby=number](http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$search=Cad&$orderby=number)
 
 ```json
 {
@@ -437,7 +427,7 @@ Results returned by the service can be sorted by a field using the `$orderby` pa
 }
 ```
 
-> GET /baby_names_nc_2013?$search=Cad&$orderby=number desc
+> GET [/baby_names_nc_2013?$search=Cad&$orderby=number desc](http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$search=Cad&$orderby=number desc)
 
 ```json
 {
@@ -478,14 +468,12 @@ Results returned by the service can be sorted by a field using the `$orderby` pa
     ]
 }
 ```
-
 
 ## Specific record
 
 To access a specific record, its record id surrounded by parenthesis, can be appended to the dataset address.
 
-> GET /baby_names_nc_2013(efc3e55da1dd591ba0c2bd42f0b0719e330f738f)
-
+> GET [/baby_names_nc_2013(efc3e55da1dd591ba0c2bd42f0b0719e330f738f)](http://public.opendatasoft.com/api/odata/baby_names_nc_2013(efc3e55da1dd591ba0c2bd42f0b0719e330f738f))
 
 ```json
 {
@@ -503,7 +491,7 @@ To access a specific record, its record id surrounded by parenthesis, can be app
 
 Results can be projected over specific fields using the `$select` parameter. For multiple fields to be subject of the projection, their names must be separated by a comma and an optional space. This parameter can be used with datasets and specific records.
 
-> GET /baby_names_nc_2013?$search=Cad&$select=name, number
+> GET [/baby_names_nc_2013?$search=Cad&$select=name, number](http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$search=Cad&$select=name, number)
 
 ```json
 {
@@ -529,8 +517,7 @@ Results can be projected over specific fields using the `$select` parameter. For
 }
 ```
 
-> GET /baby_names_nc_2013(efc3e55da1dd591ba0c2bd42f0b0719e330f738f)?$select=name
-
+> GET [/baby_names_nc_2013(efc3e55da1dd591ba0c2bd42f0b0719e330f738f)?$select=name](http://public.opendatasoft.com/api/odata/baby_names_nc_2013(efc3e55da1dd591ba0c2bd42f0b0719e330f738f)?$select=name)
 
 ```json
 {
