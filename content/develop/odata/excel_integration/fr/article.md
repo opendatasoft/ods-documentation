@@ -1,6 +1,3 @@
-
-# Intégration dans Microsoft Excel
-
 Dans le présent article, nous allons voir comment récupérer les données d'un service OData OpenDataSoft dans Microsoft Excel. Pour cela, il existe 3 façons de faire.
 Tout d'abord, pour la version 2013 de Microsoft Excel, il est possible d'utiliser l'intégration OData native pour récupérer les données. Ensuite, pour les versions 2010 et 2013, il est possible d'utiliser les extensions Microsoft PowerPivot et Microsoft PowerQuery pour récupérer ces données.
 

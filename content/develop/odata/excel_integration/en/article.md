@@ -1,6 +1,3 @@
-
-# Microsoft Excel integration
-
 The OpenDataSoft OData service makes it possible to gather data directly from Microsoft Excel, without any programming knowledge. There are 3 ways to proceed: first, for Microsoft Excel 2013, the OData native integration can be used. For Excel 2010 and Excel 2013, PowerPivot and PowerQuery extensions can be used. This article will give a detailed explanation on how to do it.
 
 ## Native Integration

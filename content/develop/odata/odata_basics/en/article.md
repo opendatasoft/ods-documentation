@@ -1,6 +1,4 @@
 
-# Using the OData API
-
 In this article, you will learn how to use the OData API to query data from the OpenDataSoft platform.
 
 ## General points

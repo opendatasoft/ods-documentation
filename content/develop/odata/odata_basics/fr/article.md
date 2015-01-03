@@ -1,6 +1,4 @@
 
-# Utilisation de l'API OData
-
 Dans cet article, nous allons voir comment utiliser les fonctionnalités offertes par l'API OData pour récupérer des données de la plateforme OpenDataSoft.
 
 ## Généralités
