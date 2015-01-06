@@ -207,7 +207,7 @@ def push_documentation(lang):
                                 }, id=existing_id)
 
                             # Upload the assets if they exist
-                            images_path = os.path.join(article_path, 'images')
+                            images_path = os.path.join(article_path, '..', 'images')
                             if os.path.exists(images_path) and os.path.isdir(images_path):
                                 images = {}
                                 # Upload each image

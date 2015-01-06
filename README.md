@@ -6,8 +6,9 @@ The `content` folder contains the following levels:
 - content (root)
 	- collection
 		- category
-			- language
-				- article
+			- article
+				- language
+					- localized article content
 ```
 
 Each collection, category and article folder can contain a `metadata.yaml` file containing a title for the element and optionally an `order` property to handle the ordering of this element among its siblings. For collections
@@ -19,7 +20,7 @@ title:
 order: 1
 ```
 
-Each article folder contains an `article.md` file containing the article content itself as Markdown.
+Each article folder contains one folder per language code, each containing an `article.md` file containing the localized article content as Markdown.
 The article folder may also contain an `images` folder with images used by the article; for example `![My Image](my-image.png)` will refer to the file `my-image.png` inside the `images` folder.
 
 
