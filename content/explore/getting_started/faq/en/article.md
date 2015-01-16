@@ -17,7 +17,9 @@ The image support feature is still in beta version. Contact the OpenDataSoft sup
 There are three ways to embed OpenDataSoft data visualizations on a website or any content management system:
 
 * Copy-paste the embed code that can directly be found on the OpenDataSoft platform (usually located under the data visualization itself).
-* Use [ODS Widgets, our open source widget library](https://github.com/opendatasoft/ods-widgets) to build content pages tailored to your needs with one or several data visualizations at once.
+* Use [ODS Widgets, our open source widget library](https://github.com/opendatasoft/ods-widgets)
+to build content pages tailored to your needs with one or several data visualizations at once.
+Complete documentation is available here: http://opendatasoft.github.io/ods-widgets/docs/
 * Use our HTTP/REST APIs to develop your own widgets.
 
 ### What is "Cartograph" ?
