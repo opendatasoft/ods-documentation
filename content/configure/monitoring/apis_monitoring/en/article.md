@@ -1,5 +1,3 @@
-### API Usage Monitoring
-
 OpenDataSoft users API calls are natively monitored by OpenDataSoft, giving to administrators a deep understanding of how their datasets are used.
 
 While the Google Analytics integration gives an overview of how the domain web site is used (viewed pages), API monitoring registers any API call, may it come from a web page or from a mobile application. 
