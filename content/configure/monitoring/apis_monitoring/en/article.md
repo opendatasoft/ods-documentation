@@ -2,11 +2,11 @@ OpenDataSoft users API calls are natively monitored by OpenDataSoft, giving to a
 
 While the Google Analytics integration gives an overview of how the domain web site is used (viewed pages), API monitoring registers any API call, may it come from a web page or from a mobile application. 
 
-A basic dasbhboard is then made available from the Domain > Monitoring > APIs Monitoring link.
+A basic dasbhboard is then made available from the *Domain > Monitoring > API* link.
 
 ![An API Monitoring Dashboard](api-monitoring-en.jpg)
 
-And monitoring data can be explored with the standard OpenDataSoft dataset exploration view by hitting the upper right link "See more".
+And monitoring data can be explored with the standard OpenDataSoft dataset exploration view by hitting the upper right link **See more**.
 
 You'll find below the list of fields available in the API monitoring dataset.
 

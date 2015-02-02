@@ -1,6 +1,6 @@
 You can monitoring the usage of your domain by configuring a Google Analytics integration.
 
-Simply go to the Domain > Integrations page and fill in you Google Analytics ID.
+Simply go to the *Domain > Portal > Integrations* page and fill in you Google Analytics ID.
 
 ![Google Analytics ID configuration](google-analytics-integration-en.jpg)
 
