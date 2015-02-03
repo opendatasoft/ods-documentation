@@ -1,3 +1,5 @@
+![Text Processors](processors-text-en.jpg)
+
 ### Replace Regexp
 This processor can be used to replace a random regular expression pattern by new content. See <http://en.wikipedia.org/wiki/Regular_expression> for more details on how to write a regular expressions.
 

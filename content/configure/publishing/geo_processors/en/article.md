@@ -1,3 +1,5 @@
+![Geo Processors](processors-geo-en.jpg)
+
 ### Normalize Projection Reference
 This processor can be used to handle a **Geo Point 2D** with a projection system different from [WGS84](http://en.wikipedia.org/wiki/WGS_84) field. It takes as a parameter the name of the field as well as the [EPSG](http://spatialreference.org/ref/epsg/) code of the source coordinates system. The field's value is replaced with its WGS84 representation.
 

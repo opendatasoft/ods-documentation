@@ -1,3 +1,5 @@
+![Fields Processors](processors-fields-en.jpg)
+
 ### Copy a Field
 
 ### Add a Field
