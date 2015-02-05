@@ -43,6 +43,10 @@ The ods-widgets library is an Open Source, AngularJS based framework developed a
 
 It can be used directly in your domain's content pages (without having to load / initialize the library as this is already done by the platform) or in third pary Web sites, as a standalone toolkit.
 
+### Embedding content pages
+
+It is possible to embed an OpenDataSoft content page as you would do with any OpenDataSoft data visualization. Just set the HTTP parameter **headless** to **true** in your page URL. For instance: http://mydomain.opendatasoft.com/page/mypage/?headless=true.
+
 ### Updating your domain's menu
 
 Once your page content has been fully defined, you might want to *plug* your page in your domain's menu. This can easily be done by editing the menu components in the *Domain > Portal > General settings* section.
