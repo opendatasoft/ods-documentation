@@ -26,9 +26,13 @@ And if you want to extract the street number in a field `street_number`, simply 
     (?P<street_number>[0-9]+) (?P<street_name>.*), .*, .*, .*
 
 ### Normalize URL
+This processor can be used to normalize a field value that should contain a valid URL. It can be used for instance when the field's value contains leading or trailing spaces, or does not have any scheme specification (in which case 'http://' is prepended to the field's value).
 
 ### Split Text
+This processor can be used to split a field's value and to extract the Nth element to a new field.
 
 ### Concatenate Text
+This processor can be used to concatenate two fields using a separator. You'll need to define the left and right hand sides of the concatenation, as well as the separator and the resulting field.
 
 ### Extract HTML
+This processor strips HTML tags from field values.

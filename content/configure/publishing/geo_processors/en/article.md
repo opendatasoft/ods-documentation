@@ -42,7 +42,10 @@ Minute mark | "'", '′'
 Second mark | '"', '″'
 
 ### IP Address to Geo Coordinates
+This processors allows you to geocode an IP address. It uses the [GeoIP](http://geolite.maxmind.com) database.
 
 ### Geocode with Google
+This processor allows you to geocode full text addresses by using the Google geocoding API. You need to possess a Google API key to do so. This processor is not activated by default. Please contact the OpenDataSoft support team if you plan to use it.
 
 ### Geocode with ArcGIS
+This processor allows you to geocode full text addresses by using the ArcGIS geocoding API. You need to possess an ArcGIS API key to do so. This processor is not activated by default. Please contact the OpenDataSoft support team if you plan to use it.
