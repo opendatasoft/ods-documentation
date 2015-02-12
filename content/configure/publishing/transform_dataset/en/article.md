@@ -29,11 +29,11 @@ Text | Anything
 
 Next to their type, any field has a set of action items, which can be used to further refine your dataset schema.
 
- * The **filter action** lets you define a **facet** for the field.
- * The **field configuration action** will be described in more details below.
- * The **reorder fields action** lets you reorder dataset fields at your convenience. This only affects the dataset API output.
- * The **hide fields action** lets you hide specific dataset fields. Hidden fields are displayed at the right hand side of the table view and can easily be recovered.
- 
+* The **filter action** lets you define a **facet** for the field.
+* The **field configuration action** will be described in more details below.
+* The **reorder fields action** lets you reorder dataset fields at your convenience. This only affects the dataset API output.
+* The **hide fields action** lets you hide specific dataset fields. Hidden fields are displayed at the right hand side of the table view and can easily be recovered.
+
 ### Configuring a field
 The **field configuration button** allows you to fine tune your field's configuration.
 
@@ -43,35 +43,38 @@ The generic option **ID** let's you define the record id computing policy. Each 
 
 You then have access to a wide range of options depending on the field type.
 
- * Text fields
-   * **Sortable**
-   
-     By default, textual fields are not sortable. This option lets you activate sorting on textual fields.
-   * **Multivalued**
-   
-     This option lets you define the separator that will be used to interpret multi-valued fields. This option is used for multi-value facetting. For instance, let's assume that a field named *countries* and defined as a facet contains values such as *France;UK;USA*. By setting this field as multivalued and defining the separator as being the ';' character, the values displayed in the facets widget will indeed be distinct (one entry for *France*, one entry for *UK*, one entry for *USA*).
-   * **Hierarchical**
-   
-     This property is used in conjunction with facetting. By default, facets are processed as a single, raw textual content. But sometimes, you may want to build hierarchical facets navigation. This option lets you choose the hierarchy path separator to be used.
-   
- * Date and DateTime fields
-   * **Precision**
-   
-     This option lets you choose the precision of a temporal field (year, month and day for a Date field, year, month, day, hour and minute for a DateTime field). 
- * Decimal and Integer fields
-   * **Unit**
-   
-     This option let's you define an optional unit associated with numerical fields. This option is used to complement the table view and is displayed next to the field's value.
+* Text fields
+    * **Sortable**
+
+        By default, textual fields are not sortable. This option lets you activate sorting on textual fields.
+
+    * **Multivalued**
+
+        This option lets you define the separator that will be used to interpret multi-valued fields. This option is used for multi-value facetting. For instance, let's assume that a field named *countries* and defined as a facet contains values such as *France;UK;USA*. By setting this field as multivalued and defining the separator as being the ';' character, the values displayed in the facets widget will indeed be distinct (one entry for *France*, one entry for *UK*, one entry for *USA*).
+
+    * **Hierarchical**
+
+        This property is used in conjunction with facetting. By default, facets are processed as a single, raw textual content. But sometimes, you may want to build hierarchical facets navigation. This option lets you choose the hierarchy path separator to be used.
+
+* Date and DateTime fields
+    * **Precision**
+
+        This option lets you choose the precision of a temporal field (year, month and day for a Date field, year, month, day, hour and minute for a DateTime field).
+
+* Decimal and Integer fields
+    * **Unit**
+
+        This option let's you define an optional unit associated with numerical fields. This option is used to complement the table view and is displayed next to the field's value.
 
 ### Transforming your dataset
 
 In the same screen, you also have accesss to the processors configuration. A processor is a component which lets you modify the content of your dataset: concatenate values, extract text matching a specific expression, perform numerical operations, geocode full text addresses...
- 
+
 ![Dataset Processors](publish_processors.jpg)
 The exhaustive list of processors and associated configuration parameters and features are described in dedicated articles in the same section.
 
 ### Impacts of changing the dataset schema or the processors configuration
 When you update the configuration of your dataset in a way that has an impact on the content (record values) of the published dataset, the full dataset content has to be republished. The only cases when changing a parameter in the processing tab doesn't require republishing are the following:
- 
- * Modifying a field's label
- * Reordering the fields
+
+* Modifying a field's label
+* Reordering the fields
