@@ -36,3 +36,6 @@ This processor can be used to concatenate two fields using a separator. You'll n
 
 ### Extract HTML
 This processor strips HTML tags from field values.
+
+### Extract URLs
+This processor extracts URLs from HTML or text content. It extracts http and https links into a field, the links are separated by a space.
