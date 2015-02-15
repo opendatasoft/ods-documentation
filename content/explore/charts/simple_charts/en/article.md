@@ -35,7 +35,25 @@ In the example above, we've defined two series:
 * The first serie represents the maximum number of inhabitants per country.
 * The second serie represents the sum of the number of inhabitants.
 
-As you can see, you can use a wide range of aggregation functions:
+![Chart Display](explore_charts_display.jpg)
+
+Series can be represented in various ways:
+
+* Line
+* Spline
+* Range
+* Range spline
+* Column range
+* Area
+* Area spline
+* Column chart
+* Bar chart
+* Pie chart
+* Scatter plot
+
+In the case of *range*, *range spline* and *column range* representations, you may configure the lower and upper boundaries with two different series.
+
+The following aggregation methods are available:
 
 * Count (simply counts the number of records)
 * Average
