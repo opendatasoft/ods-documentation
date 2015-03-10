@@ -37,9 +37,10 @@ A rich set of functions is also available
 
 Function type | Functions
 ------------- | ---------
+Without operand | now
 Single operand | sin, asin, asinh, cos, acos, acosh, tan, atan, atanh, ceil, abs, factorial, floor, exp, log, log10, sqrt, degrees, radians, sigmoid, gamma, round, trunc, touppercase, upper, tolowercase, lower, capitalize_all, capitalize, isupper, islower, isdecimal, isdigit, isnumeric, isalnum, isalpha, random, length, normalize (unicode), dayofweek, year, month, hour, minute, second, microsecond
 Two operands | pow, max, min, mod, div, gcd, round, random, contains, dayofweek, year, month, hour, minute, second, microsecond
-Three operands | ljust, rjust, center
+Three operands | ljust, rjust, center, replace, datediff
 
 Examples:
 
@@ -65,3 +66,10 @@ center("4400", 6,"0") | 044000
 year("2014-06-07") | 2014
 hour("2014-06-07 17:00") | 17
 hour("2014-06-07 17:00", "Europe/Paris") | 19
+replace("abcd", "b", "e") | aecd
+datediff("2014-02-28", "2015-02-28", "year") | 1
+datediff("2014-02-28", "2015-02-28", "month") | 12
+datediff("2014-02-28", "2015-02-28", "day") | 265
+datediff("2014-02-28T20:00:00Z", "2014-02-28T21:00:00Z", "hour") | 1
+datediff("2014-02-28T20:00:00Z", "2014-02-28T21:00:00Z", "minute") | 60
+datediff("2014-02-28T20:00:00Z", "2014-02-28T21:00:00Z", "second") | 3600
