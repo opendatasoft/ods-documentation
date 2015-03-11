@@ -1,8 +1,8 @@
 OpenDataSoft users API calls are natively monitored by OpenDataSoft, giving to administrators a deep understanding of how their datasets are used.
 
-While the Google Analytics integration gives an overview of how the domain web site is used (viewed pages), API monitoring registers any API call, may it come from a web page or from a mobile application. 
+While the Google Analytics integration gives an overview of how the domain web site is used (viewed pages), API monitoring registers any API call, may it come from a web page or from a mobile application.
 
-A basic dasbhboard is then made available from the *Domain > Monitoring > API* link.
+A basic dashboard is then made available from the *Domain > Monitoring > API* link.
 
 ![An API Monitoring Dashboard](api-monitoring-en.jpg)
 
@@ -67,7 +67,7 @@ lookup_record |
 
 A custom header **ODS-API-Analytics-App** can be sent along with the HTTP request. The header value is processed by our monitoring layer and made available in the field **custom_attributes**.
 
-The **embed type** field describes the type of embed which generated the query, when relevant. 
+The **embed type** field describes the type of embed which generated the query, when relevant.
 
 Embed type | Description
 ---------- | -----------
