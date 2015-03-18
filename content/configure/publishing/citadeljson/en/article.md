@@ -7,6 +7,7 @@ as a CitadelJSON file, if it contains geographical data.
 The CitadelJSON format is strongly structured, which
 means it requires very specific information in very specific places; as it can't
 really know by itself which field is what you consider the "description" of the "categories", you need to configure by yourself which field plays which role. The following information is expected for each record:
+
 - a title (the name of a school...)
 - a description (a longer description of the point of interest; can be left empty although it is not recommended)
 - one or more categories

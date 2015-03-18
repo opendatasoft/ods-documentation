@@ -12,6 +12,7 @@ Le format CitadelJSON est fortement structuré, ce qui signifie qu'il nécessite
 des informations spécifiques à des endroits spécifiques; étant donné qu'il est impossible de déduire automatiquement quel champ doit être considéré comme étant
 une "description" ou une "catégorie", vous devez configurer manuellement quel champ
 jouera quel rôle. Le format s'attend à déduire de chaque enregistrement les informations suivantes:
+
 - un titre (le nom d'une école...)
 - une description (une description plus longue du point d'intérêt; elle peut être vide
 mais ce n'est pas recommandé)
