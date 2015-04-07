@@ -39,7 +39,7 @@ Function type | Functions
 ------------- | ---------
 Without operand | now
 Single operand | sin, asin, asinh, cos, acos, acosh, tan, atan, atanh, ceil, abs, factorial, floor, exp, log, log10, sqrt, degrees, radians, sigmoid, gamma, round, trunc, touppercase, upper, tolowercase, lower, capitalize_all, capitalize, isupper, islower, isdecimal, isdigit, isnumeric, isalnum, isalpha, random, length, normalize (unicode), dayofweek, year, month, hour, minute, second, microsecond
-Two operands | pow, max, min, mod, div, gcd, round, random, contains, dayofweek, year, month, hour, minute, second, microsecond
+Two operands | pow, max, min, mod, div, gcd, round, random, contains, endswith, startswith, dayofweek, year, month, hour, minute, second, microsecond
 Three operands | ljust, rjust, center, replace, datediff
 
 Examples:
@@ -73,3 +73,7 @@ datediff("2014-02-28", "2015-02-28", "day") | 265
 datediff("2014-02-28T20:00:00Z", "2014-02-28T21:00:00Z", "hour") | 1
 datediff("2014-02-28T20:00:00Z", "2014-02-28T21:00:00Z", "minute") | 60
 datediff("2014-02-28T20:00:00Z", "2014-02-28T21:00:00Z", "second") | 3600
+startswith("hello', 'he') | True
+startswith("hello', 'lo') | False
+endswith("hello', 'he') | False
+endswith("hello', 'lo') | True
