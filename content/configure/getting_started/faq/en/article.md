@@ -17,7 +17,7 @@ No.
 
 OpenDataSoft sells a turnkey solution. Users manage their datasets themselves. Of course, the OpenDataSoft support team is more than willing to help them handling complex / specific data management issues.
 
-### I'm representing a public administration. My contry has already setup an Open Data initiative. Why should I have my own data portal?
+### I'm representing a public administration. My country has already setup an Open Data initiative. Why should I have my own data portal?
 Open Data is about making data that has been produced by public administrations available to citizens. But most of the time, one may want to go beyond simple delivery of raw files and:
 
 * Contextualize & increase the value of data
