@@ -39,7 +39,7 @@ Function type | Functions
 ------------- | ---------
 Without operand | now
 Single operand | sin, asin, asinh, cos, acos, acosh, tan, atan, atanh, ceil, abs, factorial, floor, exp, log, log10, sqrt, degrees, radians, sigmoid, gamma, round, trunc, touppercase, upper, tolowercase, lower, capitalize_all, capitalize, isupper, islower, isdecimal, isdigit, isnumeric, isalnum, isalpha, random, length, normalize (unicode), dayofweek, year, month, hour, minute, second, microsecond
-Two operands | pow, max, min, mod, div, gcd, round, random, contains, endswith, startswith, dayofweek, year, month, hour, minute, second, microsecond, distance
+Two operands | pow, max, min, mod, div, gcd, round, random, contains, endswith, startswith, dayofweek, year, month, hour, minute, second, microsecond
 Three operands | ljust, rjust, center, replace, datediff
 
 Examples:
@@ -51,7 +51,6 @@ log(e) | 1
 exp(log(e)) - e | 0
 round(2.3) | 2
 round(2.7) | 3
-round(132, -1) | 130
 ceil(2.3) | 3
 floor(2.3) | 2
 islower("aBc") | False
@@ -78,4 +77,3 @@ startswith("hello', 'he') | True
 startswith("hello', 'lo') | False
 endswith("hello', 'he') | False
 endswith("hello', 'lo') | True
-distance('48.8483514,2.3325136', '48.8455202,2.3324063') | 0.3149470893100896 (Km)
