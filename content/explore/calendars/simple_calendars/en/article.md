@@ -1,6 +1,7 @@
 The OpenDataSoft platform lets you easily create calendar views from your published datasets.
 
 ![A calendar built from a dataset containing all events from OpenAgenda](calendar_result.png)
+_A calendar built from a dataset containing all events from OpenAgenda_
 
 ## Datasets requirements
 
@@ -19,11 +20,15 @@ Though very simple, the "two datetime fields and a text field" requirement force
 Once you have configured two of your dataset's fields as datetimes and another field as text, you'll see the calendar tab become available.
 
 ![Calendar tab unavailable](calendar_tab_unavailable.png)
+_Calendar tab unavailable_
+
 ![Calendar tab available](calendar_tab_available.png)
+_Calendar tab available_
 
 It doesn't mean that your dataset is fully configured though. The view is available but not enabled by default. You'll have to manually enable it.
 
 ![This checkbox will enable the calendar view](calendar_checkbox.png)
+_This checkbox will enable the calendar view_
 
 ### Setting up events' fields
 
@@ -32,15 +37,20 @@ Once the calendar is enabled, you'll need to make sure the events' fields are we
 This is also where you'll be able to select the events' color.
 
 ![Default configuration for my calendar. The event's fields are pre-selected but not correct.](calendar_event_default_settings.png)
+_Default configuration for my calendar. The event's fields are pre-selected but not correct._
 
 ![Corrected settings](calendar_event_settings.png)
+_Corrected settings_
 
 ### Setting up the tooltip
 
 In the calendar view, a click on a event will bring forward a tooltip containing more information about the events. You can of course configure which fields will appear in the tooltip and their relative order. A live preview is available on the right side.
 
 ![Setting up the tooltip](calendar_tooltip_settings.png)
+_Setting up the tooltip_
+
 ![The associated live preview](calendar_tooltip_preview.png)
+_The associated live preview_
 
 ## Sharing
 
