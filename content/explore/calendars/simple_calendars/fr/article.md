@@ -5,7 +5,7 @@ _Un calendrier généré à partir d'un jeu de données contenant les événemen
 
 ## Pré-requis pour les jeux de données
 
-La vue calendrier considère chaque enregistrement du jeu de données comme un événement indépendant. Chacun de ces événements doit contenir une date et une heure de début comme de fin et un titre. Ce qui signifie que le jeu de données doit contenir deux champs datetime et un champ text pour que la vue calendrier soit disponible.
+La vue calendrier considère chaque enregistrement du jeu de données comme un événement indépendant. Chacun de ces événements doit contenir un horaire de début et de fin ainsi qu'un titre. Ce qui signifie que le jeu de données doit contenir deux champs datetime et un champ texte pour que la vue calendrier soit disponible.
 
 Les enregistrements sans titres seront affichés par le calendrier comme des événements vides, mais l'absence de l'horaire de début ou de celui de fin empêchera purement et simplement leur affichage.
 
@@ -48,6 +48,10 @@ Dans la vue calendrier, cliquer sur un événement fait apparaître une infobull
 
 ![Paramétrage de l'infobulle](calendar_tooltip_settings_fr.png)
 _Paramétrage de l'infobulle_
+
+* ![Ajouter champ à l'infobulle](calendar_tooltip_add_field.png) Cliquer pour ajouter le champ à l'infobulle
+* ![Retirer champ de l'infobulle](calendar_tooltip_remove_field.png) Cliquer pour retirer le champ de l'infobulle
+* ![Déplacer champ dans l'infobulle](calendar_tooltip_move_field.png) Cliquer/déposer pour changer la position de ce champ dans l'infobulle
 
 ![L'aperçu](calendar_tooltip_preview_fr.png)
 _L'aperçu_
