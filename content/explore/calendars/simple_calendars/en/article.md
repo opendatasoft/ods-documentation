@@ -1,6 +1,6 @@
 The OpenDataSoft platform lets you easily create calendar views from your published datasets.
 
-![A calendar built from a dataset containing all events from OpenAgenda](calendar_result.png)
+![A calendar built from a dataset containing all events from OpenAgenda](calendar_result_en.png)
 _A calendar built from a dataset containing all events from OpenAgenda_
 
 ## Datasets requirements
@@ -19,15 +19,15 @@ Though very simple, the "two datetime fields and a text field" requirement force
 
 Once you have configured two of your dataset's fields as datetimes and another field as text, you'll see the calendar tab become available.
 
-![Calendar tab unavailable](calendar_tab_unavailable.png)
+![Calendar tab unavailable](calendar_tab_unavailable_en.png)
 _Calendar tab unavailable_
 
-![Calendar tab available](calendar_tab_available.png)
+![Calendar tab available](calendar_tab_available_en.png)
 _Calendar tab available_
 
 It doesn't mean that your dataset is fully configured though. The view is available but not enabled by default. You'll have to manually enable it.
 
-![This checkbox will enable the calendar view](calendar_checkbox.png)
+![This checkbox will enable the calendar view](calendar_checkbox_en.png)
 _This checkbox will enable the calendar view_
 
 ### Setting up events' fields
@@ -36,20 +36,20 @@ Once the calendar is enabled, you'll need to make sure the events' fields are we
 
 This is also where you'll be able to select the events' color.
 
-![Default configuration for my calendar. The event's fields are pre-selected but not correct.](calendar_event_default_settings.png)
+![Default configuration for my calendar. The event's fields are pre-selected but not correct.](calendar_event_default_settings_en.png)
 _Default configuration for my calendar. The event's fields are pre-selected but not correct._
 
-![Corrected settings](calendar_event_settings.png)
+![Corrected settings](calendar_event_settings_en.png)
 _Corrected settings_
 
 ### Setting up the tooltip
 
 In the calendar view, a click on a event will bring forward a tooltip containing more information about the events. You can of course configure which fields will appear in the tooltip and their relative order. A live preview is available on the right side.
 
-![Setting up the tooltip](calendar_tooltip_settings.png)
+![Setting up the tooltip](calendar_tooltip_settings_en.png)
 _Setting up the tooltip_
 
-![The associated live preview](calendar_tooltip_preview.png)
+![The associated live preview](calendar_tooltip_preview_en.png)
 _The associated live preview_
 
 ## Sharing
@@ -59,8 +59,8 @@ Once your dataset is correctly setup and published, you can of course share this
 To do so, you can always copy/paste the url from your browser's address bar, but you can also use any of the 3 options offered below the calendar itself.
 
 1. Share the url
-![The 3 sharing options, with first and foremost the url](calendar_share.png)
+![The 3 sharing options, with first and foremost the url](calendar_share_en.png)
 2. Code snippet to embed the view inside any other website
-![Embed this code into any other page to display your calendar there](calendar_embed.png)
+![Embed this code into any other page to display your calendar there](calendar_embed_en.png)
 3. Code snippet to include in any of your dashboard or page on the platform.
-![Copy this code to one your dashboard on the platform](calendar_widget.png)
+![Copy this code to one your dashboard on the platform](calendar_widget_en.png)
