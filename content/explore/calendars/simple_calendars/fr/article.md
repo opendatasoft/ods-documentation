@@ -1,0 +1,1 @@
+La plateforme OpenDataSoft permet de créer simplement des calendriers à partir de jeux de données.
