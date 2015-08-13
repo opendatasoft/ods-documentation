@@ -49,9 +49,13 @@ In the calendar view, a click on a event will bring forward a tooltip containing
 ![Setting up the tooltip](calendar_tooltip_settings_en.png)
 _Setting up the tooltip_
 
-* ![Add to tooltip](calendar_tooltip_add_field.png) Click to add field to tooltip
-* ![Remove from tooltip](calendar_tooltip_remove_field.png) Click to remove field from tooltip
-* ![Move within tooltip](calendar_tooltip_move_field.png) Drag and drop to move field within tooltip
+For each of the tooltip's fields, the 3 following actions are available :
+
+![Tooltip's fields' actions](calendar_tooltip_actions.png)
+
+* Drag and drop to move field within tooltip
+* Click to remove field from tooltip
+* Click to add field to tooltip
 
 ![The associated live preview](calendar_tooltip_preview_en.png)
 _The associated live preview_

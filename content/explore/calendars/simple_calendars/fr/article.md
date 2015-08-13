@@ -49,9 +49,13 @@ Dans la vue calendrier, cliquer sur un événement fait apparaître une infobull
 ![Paramétrage de l'infobulle](calendar_tooltip_settings_fr.png)
 _Paramétrage de l'infobulle_
 
-* ![Ajouter champ à l'infobulle](calendar_tooltip_add_field.png) Cliquer pour ajouter le champ à l'infobulle
-* ![Retirer champ de l'infobulle](calendar_tooltip_remove_field.png) Cliquer pour retirer le champ de l'infobulle
-* ![Déplacer champ dans l'infobulle](calendar_tooltip_move_field.png) Glisser/déposer pour changer la position de ce champ dans l'infobulle
+Pour chacun des champs, les 3 actions suivantes sont disponibles et signifient :
+
+![Actions sur les champs](calendar_tooltip_actions.png)
+
+* Glisser/déposer pour changer la position de ce champ dans l'infobulle
+* Cliquer pour retirer le champ de l'infobulle
+* Cliquer pour ajouter le champ à l'infobulle
 
 ![L'aperçu](calendar_tooltip_preview_fr.png)
 _L'aperçu_
