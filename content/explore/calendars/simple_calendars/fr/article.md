@@ -51,7 +51,7 @@ _Paramétrage de l'infobulle_
 
 * ![Ajouter champ à l'infobulle](calendar_tooltip_add_field.png) Cliquer pour ajouter le champ à l'infobulle
 * ![Retirer champ de l'infobulle](calendar_tooltip_remove_field.png) Cliquer pour retirer le champ de l'infobulle
-* ![Déplacer champ dans l'infobulle](calendar_tooltip_move_field.png) Cliquer/déposer pour changer la position de ce champ dans l'infobulle
+* ![Déplacer champ dans l'infobulle](calendar_tooltip_move_field.png) Glisser/déposer pour changer la position de ce champ dans l'infobulle
 
 ![L'aperçu](calendar_tooltip_preview_fr.png)
 _L'aperçu_
