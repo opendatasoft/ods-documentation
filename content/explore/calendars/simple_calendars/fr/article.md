@@ -7,11 +7,14 @@ _Un calendrier généré à partir d'un jeu de données contenant les événemen
 
 La vue calendrier considère chaque enregistrement du jeu de données comme un événement indépendant. Chacun de ces événements doit contenir un horaire de début et de fin ainsi qu'un titre. Ce qui signifie que le jeu de données doit contenir deux champs datetime et un champ texte pour que la vue calendrier soit disponible.
 
+![Configuration de deux colonnes en datetime](calendar_processing_settings_fr.png)
+_Configuration de deux colonnes en datetime_
+
 Les enregistrements sans titres seront affichés par le calendrier comme des événements vides, mais l'absence de l'horaire de début ou de celui de fin empêchera purement et simplement leur affichage.
 
 ### Evénements sur un jour entier
 
-La règle des deux champs datetime et du champ texte est certe simple, mais elle ne permet pas de configurer un événement comme durant une journée entière. Ces événements doivent donc être paramétrés comme commençant à minuit et finissant à minuit moins une seconde à la fin de la journée (de 00h00m00s à 23h59m59s).
+La règle des deux champs datetime et du champ texte est certes simple, mais elle ne permet pas de configurer un événement comme durant une journée entière. Ces événements doivent donc être paramétrés comme commençant à minuit et finissant à minuit moins une seconde à la fin de la journée (de 00h00m00s à 23h59m59s).
 
 ## Configuration
 
@@ -20,7 +23,7 @@ La règle des deux champs datetime et du champ texte est certe simple, mais elle
 Après avoir configuré deux des champs du jeu de données comme datetime et un troisième champ en texte, l'onglet calendrier devient disponible.
 
 ![Onglet calendrier indisponible](calendar_tab_unavailable_fr.png)
-_Ongle calendrier indisponible_
+_Onglet calendrier indisponible_
 
 ![Onglet calendrier disponible](calendar_tab_available_fr.png)
 _Onglet calendrier disponible_
@@ -62,9 +65,9 @@ _L'aperçu_
 
 ## Partage
 
-Une fois le jeu de données correctement paramétré et publié, il est possible de partager la vue calendrier avec n'importe qui (sous réserve que celui ai les droits nécessaires à la vue du jeu de données).
+Une fois le jeu de données correctement paramétré et publié, il est possible de partager la vue calendrier avec n'importe qui (sous réserve que celui-ci ait les droits nécessaires à la vue du jeu de données).
 
-Il est bien évidemment toujours possible de copier/coller l'URL de la page depuis la barre d'adresse du navigateur, mais vous trouverez sous le calendrier 3 autre possibilités de partage.
+Il est bien évidemment toujours possible de copier/coller l'URL de la page depuis la barre d'adresse du navigateur, mais vous trouverez sous le calendrier 3 autres possibilités de partage.
 
 1. Partage de l'URL
 ![Les 3 options de partage, avec en premier lieu l'URL](calendar_share_fr.png)

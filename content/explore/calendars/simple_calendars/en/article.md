@@ -7,6 +7,9 @@ _A calendar built from a dataset containing all events from OpenAgenda_
 
 For the calendar view, each record of your dataset is a different event. These events must contain a start time, an end time and a title. Which means your dataset must have two datetime fields and a text field for the calendar view to be available.
 
+![2 fields set as datetime](calendar_processing_settings_en.png)
+_2 fields set as datetime_
+
 Records without titles will be displayed on the calendar as titleless events, but missing either the start or end time will cause the view to simply ignore the record.
 
 ### Full day events
