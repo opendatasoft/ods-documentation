@@ -44,6 +44,9 @@ Second mark | '"', '″'
 ### IP Address to Geo Coordinates
 This processors allows you to geocode an IP address. It uses the [GeoIP](http://geolite.maxmind.com) database.
 
+### Geo distance
+This processor allows you to compute the distance between two geometries. Geometries can be geojson format or coordinates. The input parameters must be in WGS 84 format. 
+
 ### Geocode with Google
 This processor allows you to geocode full text addresses by using the Google geocoding API. You need to possess a Google API key to do so. This processor is not activated by default. Please contact the OpenDataSoft support team if you plan to use it.
 
