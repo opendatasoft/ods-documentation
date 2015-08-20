@@ -4,7 +4,7 @@ For a geo data visualization to be available, your dataset needs to contain a **
 ### In the table view, I have not been able to sort the results using a specific field; what went wrong ?
 By default, only the numerical fields are sortable. That is **int**, **double**, **date** and **datetime**. **Text** fields are not sortable by default. The dataset owner may configure some text fields to be sortable. Sortable **text** fields can be identified through the API (`sortable` annotation).
 
-### I published a dataset, but no categorie is displayed in the left column. What shall I do ?
+### I published a dataset, but no category is displayed in the left column. What shall I do ?
 Categories (facets) are built out of fields which have been defined as a **facet**. To set a field as a facet, simply click on the **filter** icon, in the field definition header in the publishing console.
 
 ### When I go to the analyze view, the displayed chart doesn't make any sense. How could I change this ?

@@ -212,14 +212,15 @@ def push_documentation(lang):
                                 images = {}
                                 # Upload each image
                                 for image in os.listdir(images_path):
-                                    image_url = api_post_file('assets/article', {
-                                        'file': (image, open(os.path.join(images_path, image), 'rb'), CONTENT_TYPES.get(os.path.splitext(image)[1], None))
-                                    }, {
-                                        'key': API_KEY,
-                                        'articleId': article_id,
-                                        'assetType': 'image'
-                                    }).json()['filelink']
-                                    images[image] = image_url
+                                    if image != '.DS_Store':
+                                        image_url = api_post_file('assets/article', {
+                                            'file': (image, open(os.path.join(images_path, image), 'rb'), CONTENT_TYPES.get(os.path.splitext(image)[1], None))
+                                        }, {
+                                            'key': API_KEY,
+                                            'articleId': article_id,
+                                            'assetType': 'image'
+                                        }).json()['filelink']
+                                        images[image] = image_url
                                 # Replace the occurences with the real URL
                                 for original_image, image_url in images.items():
                                     article_content_html = article_content_html.replace(' src="%s" />' % original_image, ' src="%s" />' % image_url)

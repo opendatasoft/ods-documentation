@@ -12,7 +12,7 @@ Then, at the dataset level, it is possible to even further refine the security m
 
 #### Domain access and default security policy
 
-![Security Model](security-model.jpg)
+![Security Model](security-model.png)
 
 Check the option **allow anonymous access** if you want to let people access your domain without having to log in. Anonymous users will only be able to access non restricted datasets. This makes it possible to mix on the single domain a public facing catalog and a private catalog that can only be accessed by authorized users.
 
@@ -24,7 +24,7 @@ This section also allows you to define the **default permissions for new users**
 
 #### Domain access list
 
-![Security Users](security-users.jpg)
+![Security Users](security-users.png)
 
 The domain access list are made of users and groups. Users' scope is platform wide (this means that a user can be associated with more than one domain) while groups' scope is domain wide (groups are not shared among domains).
 
