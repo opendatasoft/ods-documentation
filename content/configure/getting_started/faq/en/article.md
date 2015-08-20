@@ -1,5 +1,5 @@
 ### What is OpenDataSoft?
-OpenDataSoft is a turnkey SaaS platform developed for business users to easily share, publish and reuse structured datasets. Look at this [article](/entries/84740363-Why-OpenDataSoft-) for a more detailed presentation.
+OpenDataSoft is a turnkey SaaS platform developed for business users to easily share, publish and reuse structured datasets.
 
 ### Is OpenDataSoft open source?
 OpenDataSoft is not open source. 
@@ -31,8 +31,8 @@ No.
 
 The OpenDataSoft platform can be used for both public and private data management projects. A given platform can even host public and private datasets. It is also possible to define the ACL of a records set at dataset level.
 
-### I used the free trial but could only load CSV and Excel files, are these the only file formats you support?
-OpenDataSoft playground (our free trial version) only supports CSV and Excel files. But the full-featured platform supports many more file formats:
+### Which file formats are supported by OpenDataSoft?
+The OpenDataSoft platform natively supports a wide range of data formats:
 
 * GeoJSON
 * KML
@@ -53,10 +53,10 @@ A full [INSPIRE](http://inspire.ec.europa.eu/index.cfm/pageid/101) template is a
 The creation of a fully custom metadata template can also be done.
 
 ### How many datasets can I create?
-There is virtually no limit in terms of number of datasets you can create as the business model is based on the number of records stored, not the number of datasets. There is a default limit, depending on the size of your plan, set for security reasons. If you ever reach this limit, please contact your OpenDataSoft support team to extend it.
+You can create as many datasets as you want within the limit set in your licensing plan.
 
 ### How could I modify the look & feel of my OpenDataSoft domain?
-As a domain administrator, you can modify the color palette of your portal. For more advanced customizations, for the time being, this has to go through OpenDataSoft. OpenDataSoft shall release new ways to customize a portal in the near future (upload logos and icons, customize CSS).
+As a domain administrator, you can modify the color palette of your portal. For more advanced customizations, for the time being, this has to go through OpenDataSoft. OpenDataSoft shall release new ways to customize a portal in the near future (CSS).
 
 ### How can other people collaborate on dataset configuration?
 Use the security tab to give other users or group of users a write access to the dataset. These users must also have access to the domain to access your dataset. If this is not the case already, contact your domain administrator.
