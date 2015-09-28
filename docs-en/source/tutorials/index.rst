@@ -1,5 +1,5 @@
 Tutorials
-_______________
+_________
 
 .. toctree::
    :titlesonly:
