@@ -2,7 +2,7 @@
 
 This section references video tutorials that have been published on the Web.
 
-* [OpenDataSoft - Data Publishing 101](https://www.youtube.com/watch?v=TddTqDmeERc OpenDataSoft)
+* [OpenDataSoft - Data Publishing 101](https://www.youtube.com/watch?v=TddTqDmeERc)
 
   Learn in a few steps how to publish your first dataset with OpenDataSoft.
   

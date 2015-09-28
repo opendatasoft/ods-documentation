@@ -4,9 +4,15 @@ ______________________________________
 .. toctree::
    :maxdepth: 2
 
-   Configuring OpenDataSoft <configure/index>
-   Using APIs <develop/index>
-   Exploring and Visualizing Datasets <explore/index>
+   About OpenDataSoft <about>
+   Getting Started <getting_started/index>
+   Tutorials <tutorials/index>
+   Publish Datasets <publish_datasets/index>
+   Explore and Visualize Datasets <explore/index>
+   Publish Web Content <publish_content/index>
+   Manage a Domain <manage_domain/index>
+   APIs <api/index>
+   FAQ <faq>
 
 Indices and tables
 ==================
