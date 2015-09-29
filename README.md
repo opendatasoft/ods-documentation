@@ -25,13 +25,24 @@ The article folder may also contain an `images` folder with images used by the a
 
 
 ### Building the documentation
-#### HelpScout
+
 First, set up your Python installation (a virtualenv is recommended).
 ```python
 pip install -r requirements.txt
 ```
 
-Then build the documentation on HelpScout using your HelpScout API key:
+#### Sphinx
+
+Move to the version of the doc you want to build(`/docs-fr` or `/docs-en`) and use `make`.
+```bash
+make html
+```
+
+The generated html will be available in `/docs-LANGUAGE/build/html`.
+
+#### HelpScout
+
+Build the documentation on HelpScout using your HelpScout API key:
 ```python
 python scripts/helpscout.py <HelpScout API key>
 ```
