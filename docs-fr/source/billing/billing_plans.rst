@@ -108,7 +108,7 @@ Ecrire aux abonnés
 
 Dans cet onglet, un petit formulaire vous permet d'envoyer des messages à vos abonnés. Ces messages seront envoyés par
 mail à vos abonnés et ceux-ci pourront y répondre. Vous recevrez alors ces réponses dans la boite mail correspondant à
-`l'adresse définie pour le compte marchant <merchant_accounts>`_ associé à la formule.
+:doc:`l'adresse définie pour le compte marchant <merchant_accounts>` associé à la formule.
 
 Gestion des abonnements
 ^^^^^^^^^^^^^^^^^^^^^^^
