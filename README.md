@@ -24,6 +24,12 @@ Each article folder contains one folder per language code, each containing an `a
 The article folder may also contain an `images` folder with images used by the article; for example `![My Image](my-image.png)` will refer to the file `my-image.png` inside the `images` folder.
 
 
+#### About RST
+
+Sphinx documentation can be written in either Markdown (md) or reStructuredText (rst). The latter isn't as popular as 
+the former and its syntax isn't as easy but it allows for richer pages. In order to learn the rudiments of rst, you can
+toy with the online rst editor available at http://rst.ninjs.org/
+
 ### Building the documentation
 
 First, set up your Python installation (a virtualenv is recommended).
