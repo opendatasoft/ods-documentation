@@ -4,6 +4,10 @@ Introduction à la facturation sur la plateforme
 La plateforme OpenDataSoft permet aux administrateurs du domaine de restreindre l'accès à certains jeux de données et de
 mettre en place des formules d'abonnement payantes pour accéder à ces données.
 
+
+**N.B.** La facturation n'est pas activée sur tous les domaines par défaut.
+`Rapprochez-vous de notre support <support@opendatasoft.com>`_ pour cela.
+
 Sécurité des transactions
 -------------------------
 
