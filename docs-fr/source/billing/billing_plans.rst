@@ -68,6 +68,10 @@ recherche) pour chacun des utilisateurs que vous avez ainsi explicitement autori
 l'utilisateur tant qu'il ne souscrit pas à un abonnement. Auquel cas les restrictions de l'abonnement sont celles qui
 s'appliquent.
 
+Abonnements multiples
+---------------------
+
+Todo: décrire ce qui se passe quand il y a plusieurs abonnement simultané (sur les quota, filtres de recherche et champs visibles)
 
 Modification d'une formule d'abonnement
 ---------------------------------------
