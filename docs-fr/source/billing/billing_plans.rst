@@ -35,10 +35,10 @@ restrictions :
 
 * Imposer un quota journalier/hebdomadaire/mensuel/annuel sur le nombre de requêtes.
 * Filtrer les enregistrements du jeu de données via une requête de recherche (voir
-`la documentation de l'API <query_language_and_geo_filtering>`_ relative à ce sujet). Une requête laissée vide n'impose
-aucune restriction. Pour ne rien lister, il suffit de rentrer une requête ne renvoyant aucun résultat.
+  `la documentation de l'API <query_language_and_geo_filtering>`_ relative à ce sujet). Une requête laissée vide n'impose
+  aucune restriction. Pour ne rien lister, il suffit de rentrer une requête ne renvoyant aucun résultat.
 * n'afficher qu'un sous ensemble des champs du jeu de données en listant les champs visibles (sous forme de noms
-séparés par des virgules)
+  séparés par des virgules)
 
 Utilisateurs non abonnés
 ------------------------
@@ -55,7 +55,7 @@ offertes par les formules d'abonnement mais elles s'appliquent à tous les utili
 Lorsqu'un utilisateur s'abonne, les restrictions "par défaut" sont alors remplacées par les restrictions liées à
 l'abonnement.
 
-Cas des jeu de données privés
+Cas des jeux de données privés
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Vous pouvez également décider de définir le jeu de données comme privé en cochant la case "Accès limité aux
@@ -77,7 +77,7 @@ Modification d'une formule d'abonnement
 ---------------------------------------
 
 Pour illustrer le fonctionnement des modifications de formules d'abonnements, nous avons mis en place 3 formules donnant
-toutes accès à toutes les données mais avec des quotas différents : 1000 requêtes par mois pour la formule Perso, 10000
+accès à toutes les données mais avec des quotas différents : 1000 requêtes par mois pour la formule Perso, 10000
 pour la formule Pro. Et nous offrons deux mode de paiement pour la formule Perso, 9€ par mois ou 99€ par an.
 
 Nous avons même déjà un premier abonnement sur la formule Perso mensuelle.
@@ -112,7 +112,7 @@ Ecrire aux abonnés
 
 Dans cet onglet, un petit formulaire vous permet d'envoyer des messages à vos abonnés. Ces messages seront envoyés par
 mail à vos abonnés et ceux-ci pourront y répondre. Vous recevrez alors ces réponses dans la boite mail correspondant à
-:doc:`l'adresse définie pour le compte marchant <merchant_accounts>` associé à la formule.
+:doc:`l'adresse définie pour le compte marchand <merchant_accounts>` associé à la formule.
 
 Gestion des abonnements
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -124,11 +124,11 @@ Dans cet onglet vous pourrez abonner et désabonner des utilisateurs.
 **Attention !** Ne désabonnez pas un utilisateur sans son consentement.
 
 Cette fonction est principalement disponible pour gérer des abonnements hors-plateforme. Nous ne gérons actuellement
-que des paiements par carte bancaire, mais des utilisateurs peuvent vouloir payer par prélévement bancaire. Dans ce cas
-vous pouvez mettre en place le prélévement de votre coté et abonner le (les) utilisateur(s) en question manuellement.
+que des paiements par carte bancaire, mais des utilisateurs peuvent vouloir payer par prélèvement bancaire. Dans ce cas
+vous pouvez mettre en place le prélèvement de votre coté et abonner le (les) utilisateur(s) en question manuellement.
 
-**Attention !** Les utilisateurs abonnés via ce formulaire ne seront pas facturés automatiquemenet par la plateforme,
-même s'ils ont un compte client avec une carte de crédit parametrée. C'est ce qui est notifié avec la mention "Moyen de
+**Attention !** Les utilisateurs abonnés via ce formulaire ne seront pas facturés automatiquement par la plateforme,
+même s'ils ont un compte client avec une carte de crédit paramétrée. Vous en êtes notifié avec la mention "Moyen de
 paiement : géré hors de la plateforme".
 
 
@@ -146,7 +146,3 @@ Impacts sur le cycle de vie d'un jeu de données
 
 Impossible de modifier ?
 Impossible de dépublier ?
-
-
-
-
