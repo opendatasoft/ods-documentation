@@ -12,7 +12,7 @@ sur les jeux de données.
 Confidentialité et sécurité
 ---------------------------
 
-Il se peut que vous ne voyez pas dans la barre d'adresse de votre navigateur le petit cadenas indiquant que la
+Il se peut que vous ne voyiez pas dans la barre d'adresse de votre navigateur le petit cadenas indiquant que la
 connexion avec le serveur est chiffrée. Cela n'impacte en rien la sécurité et la confidentialité de vos informations.
 En effet, celles-ci ne transitent jamais sur nos serveurs. Elles sont communiquées directement depuis votre machine à
 Stripe via une connexion hautement sécurisée. Stripe en retour ne nous communique qu'un token nous permettant d'utiliser
@@ -40,7 +40,3 @@ Les factures
 ------------
 
 .. todo
-
-
-
-

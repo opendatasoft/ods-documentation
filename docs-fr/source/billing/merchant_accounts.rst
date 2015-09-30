@@ -1,10 +1,10 @@
-Les comptes marchants
+Les comptes marchand
 =====================
 
 Avant de pouvoir mettre en place des formules d'abonnement sur vos jeux de données, vous devrez configurer au moins un
-compte marchant pour votre domaine.
+compte marchand pour votre domaine.
 
-Ce compte marchant est un compte Stripe totalement indépendant de notre plateforme sur lequel vous avez la main et
+Ce compte marchand est un compte Stripe totalement indépendant de notre plateforme sur lequel vous avez la main et
 pour lequel vous nous donnez l'autorisation de faire des actions en votre nom. Ces actions sont simples:
 
 * créer et supprimer des formules d'abonnement
@@ -20,17 +20,17 @@ la facturation.
 
 .. image:: merchant-account--domain-setup.png
 
-Nous vous demandons deux informations avant de vous permettre de connecter un compte stripe: un nom pour le compte
-marchant et un email de contact pour les abonnés.
+Nous vous demandons deux informations avant de vous permettre de connecter un compte Stripe: un nom pour le compte
+marchand et un email de contact pour les abonnés.
 
-Le nom sert uniquement à représenter le compte marchant dans notre interface. Il n'a pas besoin d'être le nom du compte
+Le nom sert uniquement à représenter le compte marchand dans notre interface. Il n'a pas besoin d'être le nom du compte
 Stripe que vous allez connecter ni d'être le nom du compte bancaire sous-jacent.
 
 Lorsque vous aurez des abonnés à vos formules d'abonnements, vous pourrez les contacter à travers notre interface. Ils
 recevront un email avec votre message. L'email de contact sert d'adresse de réponse à cet email, de sorte à ce que vos
 abonnés puissent entretenir une discussion avec vous à la suite de votre message.
 
-Une fois ces deux champs remplis, vous pouvez connecter un compte stripe.
+Une fois ces deux champs remplis, vous pouvez connecter un compte Stripe.
 
 .. image:: merchant-account--form-filled.png
 
@@ -46,7 +46,7 @@ Le long formulaire de création de compte vous permet de spécifier toutes les i
 fonctionnement de la facturation sur notre plateforme. N'hésitez pas à être le plus complet possible.
 
 Une fois le formulaire rempli, après validation, vous serez redirigés vers votre domain, où un message vous confirmera
-que votre compte marchant a bien été configuré. Vous pourrez d'ailleurs le voir dans la liste des comptes marchants
+que votre compte marchand a bien été configuré. Vous pourrez d'ailleurs le voir dans la liste des comptes marchand
 disponibles.
 
 .. image:: merchant-account--success.png
@@ -55,5 +55,3 @@ Notez que si vous tentez de connecter plusieurs fois le même compte, un message
 que celui-ci est déjà connecté.
 
 .. image:: merchant-account--duplicate.png
-
-
