@@ -5,7 +5,7 @@ En vous connectant à l'espace de publication d'un jeu de donnée en tant qu'adm
 d'un onglet facturation. C'est dans cet onglet que vous pourrez mettre en place vos formules d'abonnement. Vous verrez
 également un onglet sécurité dans lequel vous pourrez instaurer des restrictions pour les utilisateurs non abonnés.
 
-.. image:: billing-plan--home.png
+.. image:: billing-plans--home.png
 
 Création d'une formule d'abonnement
 -----------------------------------
@@ -46,7 +46,7 @@ Utilisateurs non abonnés
 Des utilisateurs non abonnés vont également vouloir accéder à votre jeu de données. Il faut définir pour eux des
 restrictions spécifiques dans l'onglet sécurité.
 
-.. image:: billing-plan--default-security.png
+.. image:: billing-plans--default-security.png
 
 En cliquant sur le bouton "Filtres" vous ferez apparaitre deux champs vous permettant de définir une requête de
 recherche (pour filtrer les enregistrements) et la liste des champs visibles. Ce sont les mêmes restrictions que celles
@@ -72,10 +72,70 @@ s'appliquent.
 Modification d'une formule d'abonnement
 ---------------------------------------
 
+Pour illustrer le fonctionnement des modifications de formules d'abonnements, nous avons mis en place 3 formules donnant
+toutes accès à toutes les données mais avec des quotas différents : 1000 requêtes par mois pour la formule Perso, 10000
+pour la formule Pro. Et nous offrons deux mode de paiement pour la formule Perso, 9€ par mois ou 99€ par an.
+
+Nous avons même déjà un premier abonnement sur la formule Perso mensuelle.
+
+.. image:: billing-plans--multiple-plans.png
+
+Supposons maintenant que nous voulons modifier cette formule "Perso (mensuel)". Un clic sur le bouton modifier nous
+informe que nous avons un abonné sur cette formule. Un message qui nous est rappelé dans l'interface d'administration
+de la formule.
+
+.. image:: billing-plans--plan-admin.png
+
+Dans cette interface d'administration, 3 onglets sont proposés:
+* Modifier la formule
+* Ecrire aux abonnés
+* Gestion des abonnements
+
+Modifier la formule
+^^^^^^^^^^^^^^^^^^^
+
+Comme le rappelle le message d'alerte, **il est très fortement déconseillé de modifier quoi que ce soit sur une formule
+dès que celle-ci a des abonnés**. En effet, une formule d'abonnement vous lie contractuellement à un abonné et vous ne
+pouvez pas modifier un plan sans son accord. Il n'est d'ailleurs pas possible de modifier la tarification d'une formule.
+
+Vous pouvez en revanche techniquement modifier les autres attributs de la formule, mais il est recommandé de mentionner
+tout changement à vos utilisateurs, ce qui peut être fait dans l'onglet suivant.
+
+Ecrire aux abonnés
+^^^^^^^^^^^^^^^^^^
+
+.. image:: billing-plans--write-to-subscribers.png
+
+Dans cet onglet, un petit formulaire vous permet d'envoyer des messages à vos abonnés. Ces messages seront envoyés par
+mail à vos abonnés et ceux-ci pourront y répondre. Vous recevrez alors ces réponses dans la boite mail correspondant à
+`l'adresse définie pour le compte marchant <merchant_accounts>`_ associé à la formule.
+
+Gestion des abonnements
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Dans cet onglet vous pourrez abonner et désabonner des utilisateurs.
+
+.. image:: billing-plans--manage-subscriptions.png
+
+**Attention !** Ne désabonnez pas un utilisateur sans son consentement.
+
+Cette fonction est principalement disponible pour gérer des abonnements hors-plateforme. Nous ne gérons actuellement
+que des paiements par carte bancaire, mais des utilisateurs peuvent vouloir payer par prélévement bancaire. Dans ce cas
+vous pouvez mettre en place le prélévement de votre coté et abonner le (les) utilisateur(s) en question manuellement.
+
+**Attention !** Les utilisateurs abonnés via ce formulaire ne seront pas facturés automatiquemenet par la plateforme,
+même s'ils ont un compte client avec une carte de crédit parametrée. C'est ce qui est notifié avec la mention "Moyen de
+paiement : géré hors de la plateforme".
+
+
+Pour abonner des utilisateurs, entrez leurs noms dans le formulaire, sélectionnez les et cliquez sur le bouton
+"abonner".
 
 
 Suppression d'une formule d'abonnement
 --------------------------------------
+
+Pas encore possible.
 
 Impacts sur le cycle de vie d'un jeu de données
 -----------------------------------------------
