@@ -56,7 +56,7 @@ Lorsqu'un utilisateur s'abonne, les restrictions "par défaut" sont alors rempla
 l'abonnement.
 
 Cas des jeux de données privés
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Vous pouvez également décider de définir le jeu de données comme privé en cochant la case "Accès limité aux
 utilisateurs et groupes autorisés". Ce faisant le jeu de données ne sera plus ni visible ni accessible que par les
