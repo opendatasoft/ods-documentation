@@ -139,10 +139,12 @@ Pour abonner des utilisateurs, entrez leurs noms dans le formulaire, sélectionn
 Suppression d'une formule d'abonnement
 --------------------------------------
 
-Pas encore possible.
+A la suite des trois onglets précédemment décrits vient un quatrième et dernier onglet permettant de supprimer une
+formule d'abonnement.
 
-Impacts sur le cycle de vie d'un jeu de données
------------------------------------------------
+.. image:: billing-plans--delete.png
 
-Impossible de modifier ?
-Impossible de dépublier ?
+Il est important de bien comprendre que supprimer une formule d'abonnement ne désabonne pas pour autant les
+utilisateurs abonnés. Cela empêche uniquement d'autres utilisateurs de s'abonner.
+
+**Attention !** Cette opération est irréversible.
