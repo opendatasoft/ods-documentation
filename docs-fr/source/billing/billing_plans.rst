@@ -1,6 +1,12 @@
 Les formules d'abonnement
 =========================
 
+Une formule d'abonnement est la conjonction de 3 éléments :
+
+1. Un **mode de facturation** (ex: 9€/mois)
+2. Un **quota d'utilisation** (ex: 1000 requêtes/semaine)
+3. Des **restrictions** sur les enregistrements et colonnes visibles
+
 En vous connectant à l'espace de publication d'un jeu de donnée en tant qu'administrateur, vous verrez l'apparition
 d'un onglet facturation. C'est dans cet onglet que vous pourrez mettre en place vos formules d'abonnement. Vous verrez
 également un onglet sécurité dans lequel vous pourrez instaurer des restrictions pour les utilisateurs non abonnés.
@@ -24,21 +30,30 @@ Facturation
 Le formulaire vous permet de définir pour chaque formule un tarif et une fréquence de facturation.
 
 Cela permet en particulier de gérer les cas où pour de mêmes restrictions on veut proposer plusieurs modes de
-facturation. Par exemple 9€ par mois / 99€ par ans, une manière classique d'encourager les utilisateurs à s'inscrire à
+facturation. Par exemple 9€ par mois / 99€ par an, une manière classique d'encourager les utilisateurs à s'inscrire à
 des formules les engageant sur un plus long terme.
+
+Quota
+^^^^^
+
+Il s'agit d'un quota d'utilisation en nombre de requêtes par jour/semaine/mois/année.
+
+Ce quota est une limitation supplémentaire en plus des quota déjà définis au niveau du domaine pour l'utilisateur. Si
+par exemple vous avez paramétré votre domaine pour que l'utilisateur n'ai qu'un quota hebdomadaire de 1000 requêtes et
+que celui-ci s'abonne à une formule spécifiant un quota de 2000 requêtes par semaine, il ne pourra au maximum faire que
+1000 requêtes par semaine sur le jeu de données associé à l'abonnement.
+
 
 Restrictions
 ^^^^^^^^^^^^
 
-Comme pour le reste de la sécurité sur la plateforme OpenDataSoft, il existe 3 leviers pour mettre en place des
+Comme pour le reste de la sécurité sur la plateforme OpenDataSoft, il existe 2 leviers pour mettre en place des
 restrictions :
 
-* Imposer un quota journalier/hebdomadaire/mensuel/annuel sur le nombre de requêtes.
 * Filtrer les enregistrements du jeu de données via une requête de recherche (voir
   `la documentation de l'API <query_language_and_geo_filtering>`_ relative à ce sujet). Une requête laissée vide n'impose
   aucune restriction. Pour ne rien lister, il suffit de rentrer une requête ne renvoyant aucun résultat.
-* N'afficher qu'un sous ensemble des champs du jeu de données en listant les champs visibles (sous forme de noms
-  séparés par des virgules)
+* N'afficher qu'un sous ensemble des champs du jeu de données en listant les champs visibles.
 
 Utilisateurs non abonnés
 ------------------------
@@ -60,18 +75,24 @@ Cas des jeux de données privés
 
 Vous pouvez également décider de définir le jeu de données comme privé en cochant la case "Accès limité aux
 utilisateurs et groupes autorisés". Ce faisant le jeu de données ne sera plus ni visible ni accessible que par les
-utilisateurs explicitement autorisés à le faire. Pour ces utilisateurs, les restrictions par défaut (celles définies
-pour les utilisateurs non abonnés) s'appliquent.
+utilisateurs explicitement autorisés à le faire.
 
 Il est également possible de définir des restrictions (toujours via les mêmes leviers : liste des champs et filtre de
 recherche) pour chacun des utilisateurs que vous avez ainsi explicitement autorisés. Celles-ci s'appliquent alors à
-l'utilisateur tant qu'il ne souscrit pas à un abonnement. Auquel cas les restrictions de l'abonnement sont celles qui
-s'appliquent.
+l'utilisateur tant qu'il ne souscrit pas à un abonnement. Auquel cas les restrictions de l'abonnement se combinent à
+celles de l'autorisation générale comme elles le font dans le cas d'abonnements multiples (voir ci dessous).
 
 Abonnements multiples
 ---------------------
 
-Todo: décrire ce qui se passe quand il y a plusieurs abonnement simultané (sur les quota, filtres de recherche et champs visibles)
+Lorsqu'un utilisateur s'abonne à deux (ou plus) formules d'abonnements sur un même jeu de données, les restrictions
+associées à chacune des formules d'abonnement se combinent de la façon suivante :
+
+* Les champs visibles sont l'union des champs visibles des différentes formules
+* Les enregistrements visibles sont l'union des enregistrements visibles dans les différentes formules
+
+C'est à dire l'ensemble des champs et des enregistrements visibles dans un moins une des formules auxquelles
+l'utilisateur est abonné.
 
 Modification d'une formule d'abonnement
 ---------------------------------------
