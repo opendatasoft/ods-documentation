@@ -20,7 +20,7 @@ par des liens invitant l'utilisateur à :doc:`ajouter une carte <billing_account
 
 .. image:: billing-subscriptions--dataset-page-no-card.png
 
-Abonnons nous maintenant à la formule Perso (mensuel). Le clic sur "s'abonner" nous fait rentrer dans un tunnel
+Abonnons-nous maintenant à la formule Perso (mensuel). Le clic sur "s'abonner" nous fait rentrer dans un tunnel
 d'abonnement. Celui commence par récapituler la formule d'abonnement à laquelle on compte s'abonner et le moyen de
 paiement avec lequel on compte le faire.
 
@@ -68,8 +68,7 @@ temps de chargement, des liens apparaissent vers toutes les factures.
 
 .. image:: billing-subscriptions--invoices.png
 
-Un clic sur le lien ouvrira dans un nouvel onglet
-la facture en question, prête a être imprimée.
+Un clic sur le lien ouvrira dans un nouvel onglet la facture en question, prête à être imprimée.
 
 .. image:: billing-subscriptions--invoice.png
 

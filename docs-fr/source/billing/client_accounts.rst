@@ -1,13 +1,13 @@
 Les comptes client
 ==================
 
-Tout utilisateur sur la plateforme dispose automatique d'un compte client. Celui-ci est accessible dans la page de
+Tout utilisateur sur la plateforme dispose automatiquement d'un compte client. Celui-ci est accessible dans la page de
 gestion du compte utilisateur, onglet facturation.
 
 .. image:: client-account--home.png
 
-Dans cet onglet vous pouvez configurer des cartes de crédit qui serviront à s'abonner aux différentes formules offertes
-sur les jeux de données.
+Dans cet onglet vous pouvez configurer des cartes de crédit qui serviront à vous abonner aux différentes formules
+offertes sur les jeux de données.
 
 Confidentialité et sécurité
 ---------------------------
@@ -30,7 +30,7 @@ Pour plus d'informations sur le fonctionnement des paiements sécurisés avec St
 La carte par défaut
 -------------------
 
-Bien qu'il soit possible de configurer dans votre compte plusieurs cartes bancaires pour vos abonnement, seule la carte
+Bien qu'il soit possible de configurer dans votre compte plusieurs cartes bancaires pour vos abonnements, seule la carte
 par défaut est utilisée pour payer les factures. Vous pouvez changer à tout moment votre carte par défaut en cliquant
 sur le bouton prévu à cet effet.
 

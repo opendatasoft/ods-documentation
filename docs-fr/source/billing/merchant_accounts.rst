@@ -27,7 +27,7 @@ Le nom sert uniquement à représenter le compte marchand dans notre interface. 
 Stripe que vous allez connecter ni d'être le nom du compte bancaire sous-jacent.
 
 Lorsque vous aurez des abonnés à vos formules d'abonnements, vous pourrez les contacter à travers notre interface. Ils
-recevront un email avec votre message. L'email de contact sert d'adresse de réponse à cet email, de sorte à ce que vos
+recevront un email avec votre message. L'email de contact sert d'adresse de réponse à cet email, de sorte que vos
 abonnés puissent entretenir une discussion avec vous à la suite de votre message.
 
 Une fois ces deux champs remplis, vous pouvez connecter un compte Stripe.
@@ -45,7 +45,7 @@ connecter avec un compte existant soit créer un nouveau compte.
 Le long formulaire de création de compte vous permet de spécifier toutes les informations nécessaires au bon
 fonctionnement de la facturation sur notre plateforme. N'hésitez pas à être le plus complet possible.
 
-Une fois le formulaire rempli, après validation, vous serez redirigés vers votre domain, où un message vous confirmera
+Une fois le formulaire rempli, après validation, vous serez redirigés vers votre domaine, où un message vous confirmera
 que votre compte marchand a bien été configuré. Vous pourrez d'ailleurs le voir dans la liste des comptes marchand
 disponibles.
 

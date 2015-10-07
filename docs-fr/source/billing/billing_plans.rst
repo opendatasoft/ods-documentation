@@ -10,7 +10,7 @@ d'un onglet facturation. C'est dans cet onglet que vous pourrez mettre en place 
 Création d'une formule d'abonnement
 -----------------------------------
 
-Pour chaque formule que vous créerez, vous pourrez définir des à la fois un mode de facturation et des restrictions
+Pour chaque formule que vous créerez, vous pourrez définir à la fois un mode de facturation et des restrictions
 associées à cette formule. Les futurs abonnés, s'ils ont bien accès à la tarification n'ont en revanche aucune vue sur
 les restrictions techniques associées à chaque formule. Il est donc impératif que vous mettiez en place un nom et une
 description les plus explicites possibles.
@@ -23,7 +23,7 @@ Facturation
 
 Le formulaire vous permet de définir pour chaque formule un tarif et une fréquence de facturation.
 
-Cela permet en particulier de gérer les cas ou pour des mêmes restrictions on veut proposer plusieurs mode de
+Cela permet en particulier de gérer les cas où pour de mêmes restrictions on veut proposer plusieurs modes de
 facturation. Par exemple 9€ par mois / 99€ par ans, une manière classique d'encourager les utilisateurs à s'inscrire à
 des formules les engageant sur un plus long terme.
 
@@ -37,7 +37,7 @@ restrictions :
 * Filtrer les enregistrements du jeu de données via une requête de recherche (voir
   `la documentation de l'API <query_language_and_geo_filtering>`_ relative à ce sujet). Une requête laissée vide n'impose
   aucune restriction. Pour ne rien lister, il suffit de rentrer une requête ne renvoyant aucun résultat.
-* n'afficher qu'un sous ensemble des champs du jeu de données en listant les champs visibles (sous forme de noms
+* N'afficher qu'un sous ensemble des champs du jeu de données en listant les champs visibles (sous forme de noms
   séparés par des virgules)
 
 Utilisateurs non abonnés
@@ -64,7 +64,7 @@ utilisateurs explicitement autorisés à le faire. Pour ces utilisateurs, les re
 pour les utilisateurs non abonnés) s'appliquent.
 
 Il est également possible de définir des restrictions (toujours via les mêmes leviers : liste des champs et filtre de
-recherche) pour chacun des utilisateurs que vous avez ainsi explicitement autorisé. Celles-ci s'appliquent alors à
+recherche) pour chacun des utilisateurs que vous avez ainsi explicitement autorisés. Celles-ci s'appliquent alors à
 l'utilisateur tant qu'il ne souscrit pas à un abonnement. Auquel cas les restrictions de l'abonnement sont celles qui
 s'appliquent.
 
@@ -111,7 +111,7 @@ Ecrire aux abonnés
 .. image:: billing-plans--write-to-subscribers.png
 
 Dans cet onglet, un petit formulaire vous permet d'envoyer des messages à vos abonnés. Ces messages seront envoyés par
-mail à vos abonnés et ceux-ci pourront y répondre. Vous recevrez alors ces réponses dans la boite mail correspondant à
+email à vos abonnés et ceux-ci pourront y répondre. Vous recevrez alors ces réponses dans la boite email correspondant à
 :doc:`l'adresse définie pour le compte marchand <merchant_accounts>` associé à la formule.
 
 Gestion des abonnements
@@ -125,7 +125,7 @@ Dans cet onglet vous pourrez abonner et désabonner des utilisateurs.
 
 Cette fonction est principalement disponible pour gérer des abonnements hors-plateforme. Nous ne gérons actuellement
 que des paiements par carte bancaire, mais des utilisateurs peuvent vouloir payer par prélèvement bancaire. Dans ce cas
-vous pouvez mettre en place le prélèvement de votre coté et abonner le (les) utilisateur(s) en question manuellement.
+vous pouvez mettre en place le prélèvement de votre côté et abonner le (les) utilisateur(s) en question manuellement.
 
 **Attention !** Les utilisateurs abonnés via ce formulaire ne seront pas facturés automatiquement par la plateforme,
 même s'ils ont un compte client avec une carte de crédit paramétrée. Vous en êtes notifié avec la mention "Moyen de
