@@ -36,13 +36,13 @@ des formules les engageant sur un plus long terme.
 Quota
 ^^^^^
 
-Il s'agit d'un quota d'utilisation en nombre de requêtes par jour/semaine/mois/année.
+Il s'agit d'un quota d'utilisation défini en nombre de requêtes pour une période donnée (jour, semaine, mois ou année).
+Une fois ce quota dépassé, les appels faits par les utilisateurs ayant souscrits à cette formule seront bloqués jusqu'à la
+fin de la période.
+Attention, un quota d'utilisation par défaut existe pour chaque utilisateur pour l'ensemble du domaine. Veillez à ce que les
+2 quotas soient cohérents, c’est à dire que le quota défini sur l’ensemble du domaine soit plus large que celui sur le jeu de donnée
 
-Ce quota est une limitation supplémentaire en plus des quota déjà définis au niveau du domaine pour l'utilisateur. Si
-par exemple vous avez paramétré votre domaine pour que l'utilisateur n'ai qu'un quota hebdomadaire de 1000 requêtes et
-que celui-ci s'abonne à une formule spécifiant un quota de 2000 requêtes par semaine, il ne pourra au maximum faire que
-1000 requêtes par semaine sur le jeu de données associé à l'abonnement.
-
+Si par exemple vous avez paramétré votre domaine pour que l’utilisateur n’ai qu’un quota hebdomadaire de 1000 requêtes et que celui-ci s’abonne à une formule spécifiant un quota de 2000 requêtes par semaine, il ne pourra au maximum faire que 1000 requêtes par semaine sur le jeu de données associé à l’abonnement.
 
 Restrictions
 ^^^^^^^^^^^^
