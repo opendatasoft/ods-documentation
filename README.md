@@ -49,6 +49,12 @@ Move to the version of the doc you want to build(`/docs-fr` or `/docs-en`) and u
 make html
 ```
 
+You may run into an error about an unknown locale UTF-8. In that case you need to use the following:
+```
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+```
+
 The generated html will be available in `/docs-LANGUAGE/build/html`.
 
 #### HelpScout
