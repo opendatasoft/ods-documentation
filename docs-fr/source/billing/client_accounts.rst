@@ -36,7 +36,8 @@ sur le bouton prévu à cet effet.
 
 .. image:: client-account--multiple-cards.png
 
-Les factures
-------------
+Abonnements et factures
+-----------------------
 
-.. todo
+La colonne de droite liste vos abonnements actifs et résiliés. Pour en savoir plus, rendez vous sur
+:doc:`la page de documentation dédiée aux abonnements<billing_subscriptions>`.

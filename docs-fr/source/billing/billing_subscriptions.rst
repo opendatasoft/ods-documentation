@@ -61,9 +61,15 @@ En allant sur la page "mon compte" sur la plateforme, nous voyons dans l'onglet 
 liste des abonnements en cours et passés. En tête de colonne, une ligne nous rappelle le coût annuel des abonnements en
 cours.
 
-.. image:: billing-subscriptions--invoices.png
+.. image:: billing-subscriptions--subscriptions.png
 
 Pour chacun de ces abonnement, il est possible de voir la liste des factures en cliquant sur "Factures". Après un petit
-temps de chargement, des liens apparaissent vers toutes les factures. Un clic sur le lien ouvrira dans un nouvel onglet
+temps de chargement, des liens apparaissent vers toutes les factures.
+
+.. image:: billing-subscriptions--invoices.png
+
+Un clic sur le lien ouvrira dans un nouvel onglet
 la facture en question, prête a être imprimée.
+
+.. image:: billing-subscriptions--invoice.png
 
