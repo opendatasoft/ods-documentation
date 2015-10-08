@@ -16,7 +16,7 @@ d'abonnement disponibles et propose pour chaque formule un bouton "s'abonner".
 .. image:: billing-subscriptions--dataset-page.png
 
 Dans le cas où l'utilisateur n'aurait pas encore de carte de crédit configurée, les boutons "s'abonner" sont remplacés
-par des liens invitant l'utilisateur à :doc:`ajouter une carte <client_account>`.
+par des liens invitant l'utilisateur à :doc:`ajouter une carte <client_accounts>`.
 
 .. image:: billing-subscriptions--dataset-page-no-card.png
 
