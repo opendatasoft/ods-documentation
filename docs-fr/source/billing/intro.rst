@@ -22,11 +22,11 @@ Concepts et vocabulaire
 
 La facturation tourne autour de 4 objets clés:
 
-* Les comptes marchand: liés au domaine, ils sont utilisés pour collecter l'argent des abonnements
-* Les comptes client: liés aux comptes utilisateurs, ils permettent de définir des moyens de paiement et de suivre
+* Les comptes marchands: liés au domaine, ils sont utilisés pour collecter l'argent des abonnements
+* Les comptes clients: liés aux comptes utilisateurs, ils permettent de définir des moyens de paiement et de suivre
   l'état de ses abonnements
 * Les formules d'abonnement: liées aux jeux de données, elles définissent un mode de facturation (tarif et fréquence)
   pour des restrictions de securité données
-* Les abonnements: liés aux comptes client et aux formules d'abonnement
+* Les abonnements: liés aux comptes clients et aux formules d'abonnement
 
 Le fonctionnement de chacun de ces objets est décrit plus en avant dans les pages suivantes.

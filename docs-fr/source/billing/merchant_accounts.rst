@@ -1,4 +1,4 @@
-Les comptes marchand
+Les comptes marchands
 =====================
 
 Avant de pouvoir mettre en place des formules d'abonnement sur vos jeux de données, vous devrez configurer au moins un
@@ -46,7 +46,7 @@ Le long formulaire de création de compte vous permet de spécifier toutes les i
 fonctionnement de la facturation sur notre plateforme. N'hésitez pas à être le plus complet possible.
 
 Une fois le formulaire rempli, après validation, vous serez redirigés vers votre domaine, où un message vous confirmera
-que votre compte marchand a bien été configuré. Vous pourrez d'ailleurs le voir dans la liste des comptes marchand
+que votre compte marchand a bien été configuré. Vous pourrez d'ailleurs le voir dans la liste des comptes marchands
 disponibles.
 
 .. image:: merchant-account--success.png

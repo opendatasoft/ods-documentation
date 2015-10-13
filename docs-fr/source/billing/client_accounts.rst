@@ -1,5 +1,5 @@
-Les comptes client
-==================
+Les comptes clients
+===================
 
 Tout utilisateur sur la plateforme dispose automatiquement d'un compte client. Celui-ci est accessible dans la page de
 gestion du compte utilisateur, onglet facturation.

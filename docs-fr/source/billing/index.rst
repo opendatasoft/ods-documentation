@@ -5,7 +5,7 @@ La facturation
    :maxdepth: 2
 
    Introduction <intro>
-   Comptes marchand <merchant_accounts>
-   Comptes client <client_accounts>
+   Comptes marchands <merchant_accounts>
+   Comptes clients <client_accounts>
    Formules d'abonnement <billing_plans>
    Abonnements <billing_subscriptions>
