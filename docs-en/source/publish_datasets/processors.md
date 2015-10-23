@@ -384,3 +384,33 @@ You'll need to define the following parameters:
 <tr><td>UK</td><td>2050;2020;2030</td><td>90 000 000;65 000 000;70 000 000</td></tr>
 <tr><td>USA</td><td>2050;2020;2030</td><td>450 000 000;350 000 000;400 000 000</td></tr>
 </table>
+### Extract from Json (Beta - Can be activated on demand)
+
+This processor can be used to extract values from a json object.
+
+It rely on ijson library and use the same syntax for rule extraction.
+
+For example, let's assume that you have this json object into a text field : 
+
+    { "metaA": "Joe", 
+      "bloc" : 
+          [ 
+            {"metaB" : "valueB"}, 
+            {"int": 5}, 
+            {"boolean": {} } 
+          ], 
+      "sub" : { "sub_sub" : "sub_value"} 
+    } 
+    
+* you will be able to extract the value `Joe` with this rule : `metaA`
+* you will be able to extract the value `valueB` with this rule : `bloc.item.metaB`
+* you will be able to extract the value `5` with this rule : `bloc.item.int`
+* you will be able to extract the value `sub_value` with this rule : `sub.sub_sub`
+* The rule `bloc.item` will extract the last object of the json list : `{boolean: {}}`
+* The rule `bloc` will extract the json list : 
+    
+    `[ 
+        {"metaB" : "valueB"}, 
+        {"int": 5}, 
+        {"boolean": {} } 
+    ]`
