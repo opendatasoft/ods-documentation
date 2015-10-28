@@ -39,18 +39,18 @@ The dataset creation workflow is very simple.
 
 The following table lists the supported format and describes configuration options for each format.
 
-Format | Extensions | Description
------- | ---------- | -----------
-CSV | .csv, .tsv, .txt, .dat | The platform lets you configure the file encoding, the field delimiter as well as a couple of other useful options.
-Microsoft Excel | .xls, .xlsx |
-OpenDocument SpreadSheet | .ods |
-GeoJSON | .json, .geojson |
-JSON | .json | Simple JSON documents are supported. The platform lets you choose the root path (path to the table of elements to be considered as rows) and the properties path (path to the dictionnary holding the list of fields for an element).
-KML | .kml |
-Shapefile |  .zip | A zip archive containing at least the following files: <NAME>.shp, <NAME>.dbf, <NAME>.prj
-MapInfo | .zip | A zip archive containing either <NAME>.mid and <NAME>.mif files or <NAME>.map, <NAME>.tab, <NAME>.id and <NAME>.dat
-OpenStreetMap | .osm |
-
+<table>
+<tr><th>Format</th><th>Extensions</th><th>Description</th></tr>
+<tr><td>CSV</td><td>.csv, .tsv, .txt, .dat</td><td>The platform lets you configure the file encoding, the field delimiter as well as a couple of other useful options.</td></tr>
+<tr><td>Microsoft Excel</td><td>.xls, .xlsx</td><td></td></tr>
+<tr><td>OpenDocument SpreadSheet</td><td>.ods</td><td></td></tr>
+<tr><td>GeoJSON</td><td>.json, .geojson</td><td></td></tr>
+<tr><td>JSON</td><td>.json</td><td>Simple JSON documents are supported. The platform lets you choose the root path (path to the table of elements to be considered as rows) and the properties path (path to the dictionary holding the list of fields for an element).</td></tr>
+<tr><td>KML</td><td>.kml</td><td></td></tr>
+<tr><td>Shapefile</td><td> .zip</td><td>A zip archive containing at least the following files: <NAME>.shp, <NAME>.dbf, <NAME>.prj</td></tr>
+<tr><td>MapInfo</td><td>.zip</td><td>A zip archive containing either <NAME>.mid and <NAME>.mif files or <NAME>.map, <NAME>.tab, <NAME>.id and <NAME>.dat</td></tr>
+<tr><td>OpenStreetMap</td><td>.osm</td><td></td></tr>
+</table>
 
 File formats support can be extented to match specific requirements (for instance, to support a complex XML DTD or a non standard flat file format). Contact your local support team if you need more information on file formats support extension.
 

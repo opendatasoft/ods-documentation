@@ -19,15 +19,16 @@ Whatever the original data source format is, the dataset content ends up as a fl
 
 Fields have a type. The following types are available:
 
-Type | Description
----- | -----------
-Date | Like 2015/02/11 or 2015-02-11 or 02/11/2015... . The platform will try to guess as accurately as possible the input date format. However, in case of bad detection or ambiguity, do not hesitate to use the **Date Normalizer** processor which lets you define precisely the parsing format of your date field.
-DateTime | Like 2015/02/11-08:09:10 or 2015-02-11T08:09:10 or 02/11/2015 08:09:10... . Timezone specifications are also processed. The platform will try to guess as accurately as possible the input datetime format. However, in case of bad detection or ambiguity, do not hesitate to use the **Date Normalizer** processor which lets you define precisely the parsing format of your datetime field.
-Decimal | A decimal number. Valid separators for the decimal part are '.' or ','. The space character can also be used as a thousands separator but not the ','.
-Geo&nbsp;Point | A single geographical location expressed in the format *\<LAT\>,\<LON\>*, for instance *45.8,2.5*. If your dataset contains two fields, latitude and longitude, you'll need to concatenate them with a **Concatenate Text** processor to form a valid geo point field.
-Geo&nbsp;Shape | A valid geo shape expessed in GeoJSON.
-Integer | Any valid integer value. If a floating point value is found, it is automatically cast to its integer part.
-Text | Anything
+<table>
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td>Date</td><td>Like 2015/02/11 or 2015-02-11 or 02/11/2015... . The platform will try to guess as accurately as possible the input date format. However, in case of bad detection or ambiguity, do not hesitate to use the <strong>Date Normalizer</strong> processor which lets you define precisely the parsing format of your date field.</td></tr>
+<tr><td>DateTime</td><td>Like 2015/02/11-08:09:10 or 2015-02-11T08:09:10 or 02/11/2015 08:09:10... . Timezone specifications are also processed. The platform will try to guess as accurately as possible the input datetime format. However, in case of bad detection or ambiguity, do not hesitate to use the <strong>Date Normalizer</strong> processor which lets you define precisely the parsing format of your datetime field.</td></tr>
+<tr><td>Decimal</td><td>A decimal number. Valid separators for the decimal part are '.' or ','. The space character can also be used as a thousands separator but not the ','.</td></tr>
+<tr><td>Geo&nbsp;Point</td><td>A single geographical location expressed in the format <em>&lt;LAT&gt;,&lt;LON&gt;</em>, for instance <em>45.8,2.5</em>. If your dataset contains two fields, latitude and longitude, you'll need to concatenate them with a <strong>Concatenate Text</strong> processor to form a valid geo point field.</td></tr>
+<tr><td>Geo&nbsp;Shape</td><td>A valid geo shape expessed in GeoJSON.</td></tr>
+<tr><td>Integer</td><td>Any valid integer value. If a floating point value is found, it is automatically cast to its integer part.</td></tr>
+<tr><td>Text</td><td>Anything</td></tr>
+</table>
 
 Next to their type, any field has a set of action items, which can be used to further refine your dataset schema.
 

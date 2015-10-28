@@ -65,7 +65,7 @@ The below table lists the major features of the platform.
             Text transformations
         </td>
         <td>
-            See </publish_datasets/processors.html> for an exhaustive list of available transformations.
+            See <a href="/publish_datasets/processors.html">an exhaustive list of available transformations</a>.
         </td>
     </tr>
     <tr>
@@ -114,7 +114,7 @@ The below table lists the major features of the platform.
     <tr><td>Data APIs</td><td>All the datasets are automatically made available through a standardized API entry point.</td></tr>
     <tr><td>Data export</td><td>CSV, JSON, XLS, SHP (when relevant), GeoJSON (when relevant)</td></tr>
     <tr><td>Customizable User Interface</td><td></td></tr>
-    <tr><td>Embeddable widgets</td><td>Note also that the widgets built by OpenDataSoft to display data have been released in Open Source. See <https://github.com/opendatasoft/ods-widgets>.</td></tr>
+    <tr><td>Embeddable widgets</td><td>Note also that the widgets built by OpenDataSoft to display data have been released in Open Source. See <a href="https://github.com/opendatasoft/ods-widgets" target="_blank">https://github.com/opendatasoft/ods-widgets</a>.</td></tr>
     <tr><td>Geo data visualization</td><td></td></tr>
     <tr><td>Analytics data visualization</td><td></td></tr>
     <tr><td>Image gallery</td><td></td></tr>
@@ -133,7 +133,7 @@ The below table lists the major features of the platform.
 
 <table>
     <tr><th>Feature</th><th>Comments</th></tr>
-    <tr><td>Forums</td><td>OpenDataSoft integrates with [Disqus](https://disqus.com/). Disqus threads can be integrated at an instance level or at a dataset level.</td></tr>
+    <tr><td>Forums</td><td>OpenDataSoft integrates with <a href="https://disqus.com/" target="_blank">Disqus</a>. Disqus threads can be integrated at an instance level or at a dataset level.</td></tr>
     <tr><td>Contact form</td><td></td></tr>
     <tr><td>Reuse management</td><td>Reusers can easily submit reuse proposals. A validation workflow let admins promote reuses on their OpenDataSoft instance.</td></tr>
 </table>
