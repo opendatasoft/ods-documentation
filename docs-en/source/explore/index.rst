@@ -7,4 +7,3 @@ __________________________________
    Getting Started <getting_started>
    Calendars <calendars>
    Building Charts <simple_charts>
-   Building Maps <maps/index>

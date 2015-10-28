@@ -7,4 +7,3 @@ __________________________________________
    Démarrage Rapide <getting_started>
    Calendriers <calendars>
    Construire des Graphiques <simple_charts>
-   Construire des Cartes <maps/index>
