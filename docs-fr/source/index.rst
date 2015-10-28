@@ -9,7 +9,7 @@ ________________________________________________
    Tutoriels <tutorials>
    Publier des Jeux de Données <publish_datasets/index>
    Explorer et Visualiser des Jeux de Données <explore/index>
-   Publier un Contenu Web <publish_content/index>
+   Publier un Contenu Web <publish_content>
    Gérer un Domaine <manage_domain/index>
    APIs <api/index>
    Facturation <billing/index>
