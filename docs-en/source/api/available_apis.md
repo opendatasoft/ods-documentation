@@ -8,16 +8,17 @@ The domain <http://public.opendatasoft.com> will be use to illustrate examples g
 
 The available APIs are listed below.
 
-API Name | API Short Description
--------- | ---------------------
-Dataset search API | Search datasets
-Dataset lookup API | Find a dataset based on its identifier
-Records search API | Search records within a specific dataset
-Analysis API | Build advanced aggregations using records of a specific dataset
-Download API | Efficiently download a large number of records from a specific dataset
-Geo clustering API | Build geo clusters using records of a specific dataset
-Real Time Push API | Real time data integration
-Multimedia Download API | Download multimedia content attached with datasets or records
+<table>
+<tr><th>API Name</th><th>API Short Description</th></tr>
+<tr><td>Dataset search API</td><td>Search datasets</td></tr>
+<tr><td>Dataset lookup API</td><td>Find a dataset based on its identifier</td></tr>
+<tr><td>Records search API</td><td>Search records within a specific dataset</td></tr>
+<tr><td>Analysis API</td><td>Build advanced aggregations using records of a specific dataset</td></tr>
+<tr><td>Download API</td><td>Efficiently download a large number of records from a specific dataset</td></tr>
+<tr><td>Geo clustering API</td><td>Build geo clusters using records of a specific dataset</td></tr>
+<tr><td>Real Time Push API</td><td>Real time data integration</td></tr>
+<tr><td>Multimedia Download API</td><td>Download multimedia content attached with datasets or records</td></tr>
+</table>
 
 All these APIs (except the Multimedia download API) return JSON by default. Some of them can return alternate content.
 
@@ -46,12 +47,10 @@ Users can only see what they are allowed to see:
 
 APIs are available both in HTTP and HTTPS. We advise API users to always use the HTTPS endpoint.
 
-The available authentication modes are listed below.
+The following authentication modes are available:
 
-Authentication Mode | Description
-------------------- | -----------
-Basic HTTP authentication | Provide your account's login and password: (<http://en.wikipedia.org/wiki/Basic_access_authentication>)
-Simple key authentication | Provide an API key you generated for your account (API keys work on any domain an OpenDataSoft user has access to)
+- **Basic HTTP authentication:** Provide your account's login and password (<http://en.wikipedia.org/wiki/Basic_access_authentication>)
+- **Simple key authentication:** Provide an API key you generated for your account (API keys work on any domain an OpenDataSoft user has access to)
 
 Note that when you are connected with a Browser session, API calls triggered from that browser will reuse your current credentials.
 
