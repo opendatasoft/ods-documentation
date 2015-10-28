@@ -6,13 +6,44 @@ The below table lists the major features of the platform.
 
 ### Data collection
 
-Feature | Comments
-------- | --------
-Data files upload | OpenDataSoft natively supports a wide range of structured file formats: CSV, XLS, XLSX, SHP, KML, GeoJSON, OSM, GTFS.
-Remote web services support | &nbsp;
-Custom connectivity | OpenDataSoft can integrate, on demand, custom data parsers or custom connectors.
-Data federation | This feature makes it possible for customers to share data in a simple way avoiding data duplication.
-
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Comments</th>
+    </tr>
+    <tr>
+        <td>
+            Data files upload
+        </td>
+        <td>
+            OpenDataSoft natively supports a wide range of structured file formats: CSV, XLS, XLSX, SHP, KML, GeoJSON, OSM, GTFS.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Remote web services support
+        </td>
+        <td>
+            &nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Custom connectivity
+        </td>
+        <td>
+            OpenDataSoft can integrate, on demand, custom data parsers or custom connectors.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Data federation
+        </td>
+        <td>
+            This feature makes it possible for customers to share data in a simple way avoiding data duplication.
+        </td>
+    </tr>
+</table>
 
 ### Data processing
 
