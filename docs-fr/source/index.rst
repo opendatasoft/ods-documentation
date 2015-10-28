@@ -6,7 +6,7 @@ ________________________________________________
 
    A propos d'OpenDataSoft <about>
    Démarrage Rapide <getting_started/index>
-   Tutoriels <tutorials/index>
+   Tutoriels <tutorials>
    Publier des Jeux de Données <publish_datasets/index>
    Explorer et Visualiser des Jeux de Données <explore/index>
    Publier un Contenu Web <publish_content/index>

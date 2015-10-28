@@ -6,7 +6,7 @@ ______________________________________
 
    About OpenDataSoft <about>
    Getting Started <getting_started/index>
-   Tutorials <tutorials/index>
+   Tutorials <tutorials>
    Publish Datasets <publish_datasets/index>
    Explore and Visualize Datasets <explore/index>
    Publish Web Content <publish_content/index>
