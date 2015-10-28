@@ -4,7 +4,7 @@ __________________________________
 .. toctree::
    :maxdepth: 2
 
-   Calendars <calendars/index>
+   Calendars <calendars>
    Building Charts <simple_charts>
    Getting Started <getting_started/index>
    Building Maps <maps/index>

@@ -4,7 +4,7 @@ __________________________________________
 .. toctree::
    :maxdepth: 2
 
-   Calendriers <calendars/index>
+   Calendriers <calendars>
    Construire des Graphiques <simple_charts>
    Démarrage Rapide <getting_started/index>
    Construire des Cartes <maps/index>
