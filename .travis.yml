@@ -1,9 +1,9 @@
 language: python
 env:
   global:
-  - secure: jURdaayKTiqqpo8tOBvOTmpGrDJSrilzdHOmYNhermQRyypFPr1u/8/tN7g2K48xijHhndx9pLJVe3TfoNBqmgzHBs3CUc4H/L+ywppMJJ6tFTf2y5Fc6yZGZzn3AqWFe0aS7upTkylim8K+LNcDIxUNTZEQZPDjlUt5YADYMgI=
-  - secure: AvXIiBjh3TNCcYm6ALE28alDZb3MxzHDPB8+fSQLQ2116ckeIzUGnM7eQ/pckKLT+X4QhzaWm1kuWZjLm66tqdaPyhSgATQ7Za6CEZ9tnTUbBN2tnaX5X0G/Xy73fMGx67MVbJuCm24q8C7DoT9MIyH8J3gZ/VlWFT6bCF7VUQY=
-  - secure: WYihNbsxa7VdbzD75AvMW7zbOGAz0MIdvZezRMAyjjZ0sNLAcXkfBI8JgN7FJ76riw6R4Hb+9iJyoP6XHZ6qOHgfvk7rqJhdoPZ4U7qK+bRoUerQt8Gf5zfhuUfS1nFo1V3vBnHDLWzZbcvZsZk38pjlT+VUjedX5u7KicsC554=
+    - secure: "bQPjiDjSbYfFHGdCZNFCZAJpoPlSu7IAAkkOEFrUzj4YhYwGn2w61zIWoAW4gkqqyLQI5oFv8Bu3kooL/IRGo5BX6GCoZFLTwq8basQppHSuR5GYldGk6iWIOoPSAHZ2cK/E5lTZvgcuoh1O+Il0gE/o4IW2UnSixLVk3l1Ul+U="
+    - secure: "YnQ/rBUSpl+zQjtn6YD9yNqEcOFYba9ML/XuHMojBfjQvs2WDXSpQ1cJfM82Bi+R6G+uXEFZ+yl4w9UDSl/V3pXLd/JUYNUHXbvfhwoRsbe2hWzaBIrOE8GXftFxwSbK+fUc3uWC5DKOQ59EpqGUoUat1S5yKhfEvX2mk4bZuzI="
+    - secure: "VRDkV99gkXu8eIiXJ1+Fmd68UL6gQAp6ycA8nP6QIiVurz9Xfn4A6n6gbx3yKjdOQ4CUxrJkdx7qouHsWcduMaiFAbQaSA4uafLhRECKLD/ZkeogWS+kVKbkT1IXQHZ1mThrpymovpiFbh4e4fwXcExAmpywcHODK5N0Gr2CfaY="
 python:
   - 2.7
 install:
@@ -17,6 +17,6 @@ after_success:
   - chmod 600 .travis.deploy
   - eval "$(ssh-agent -s)"
   - ssh-add .travis.deploy
-  - rsync -az --force --delete build/ "$USER"@"$IP":"$PATH"
+  - rsync -az --force --delete build/ "$DEPLOY_USER"@"$DEPLOY_IP":"$DEPLOY_PATH"
 sudo: false
 
