@@ -1,0 +1,10 @@
+language: python
+python:
+  - 2.7
+install:
+  - pip install -r requirements.txt
+script:
+  - rm -rf build/ tmp/
+  - sphinx-build -aE -nW -b html -d tmp docs-en/source/ build/en
+  - sphinx-build -aE -nW -b html -d tmp docs-fr/source/ build/fr
+
