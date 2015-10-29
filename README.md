@@ -1,7 +1,7 @@
 This repository contains documentation resources for OpenDataSoft platform, APIs and tools.
 
 ### Content structure
-Each language's documentation is entirely contained in a `docs-(language))`
+Each language's documentation is entirely contained in a `docs-(language)`
 (`docs-en`,  `docs-fr`) at the root of the repository; this includes the content
 itself, and all the tools necessary to build the documentation.
 
