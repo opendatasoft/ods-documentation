@@ -1,39 +1,33 @@
 This repository contains documentation resources for OpenDataSoft platform, APIs and tools.
 
 ### Content structure
-The `content` folder contains the following levels:
-```
-- content (root)
-	- collection
-		- category
-			- article
-				- language
-					- localized article content
-```
+Each language's documentation is entirely contained in a `docs-(language))`
+(`docs-en`,  `docs-fr`) at the root of the repository; this includes the content
+itself, and all the tools necessary to build the documentation.
 
-Each collection, category and article folder can contain a `metadata.yaml` file containing a title for the element and optionally an `order` property to handle the ordering of this element among its siblings. For collections
-and categories, the title is localized using a language key within the title property.
-For example the "knowledge-base" collection folder could contain the following `metadata.yaml` file:
-```yaml
-title:
-	en: Knowledge base
-order: 1
-```
-
-Each article folder contains one folder per language code, each containing an `article.md` file containing the localized article content as Markdown.
-The article folder may also contain an `images` folder with images used by the article; for example `![My Image](my-image.png)` will refer to the file `my-image.png` inside the `images` folder.
-
-
-#### About RST
-
-Sphinx documentation can be written in either Markdown (md) or reStructuredText (rst). The latter isn't as popular as 
+### Writing articles
+Documentation can be written in either Markdown (md) or reStructuredText (rst). The latter isn't as popular as
 the former and its syntax isn't as easy but it allows for richer pages. In order to learn the rudiments of rst, you can
 toy with the online rst editor available at http://rst.ninjs.org/
 
-### Images annotation
+The documentation supports a strict interpretation of Markdown, and doesn't support
+tables for example.
 
-If you need to annotate images (add circles, arrows, basic text), you can download Skitch 
+### Images
+If you need to add an image in an article, just put the image in the same folder
+as the article, and use this syntax:
+```
+![Refine on facets](facet-explore-en.jpg)
+```
+
+If you need to annotate images (add circles, arrows, basic text), you can download Skitch
 (https://evernote.com/skitch/). It is free and very handy for these basic edits.
+
+### Tables
+If you need to write tables in a Markdown article, for now you have to use HTML.
+Keep in mind that the content in a HTML table in Markdown isn't interpreted in
+Markdown, so for example you can't use `**this is bold**` inside a table cell,
+instead you'll have to use real HTML all the way (`<strong>this is bold</strong>`).
 
 ### Building the documentation
 
@@ -57,9 +51,14 @@ export LANG=en_US.UTF-8
 
 The generated html will be available in `/docs-LANGUAGE/build/html`.
 
-#### HelpScout
+#### Browsing locally the documentation
+You can just open `/docs-LANGUAGE/build/html/index.html` in your browser, it should
+work directly over the filesystem without having to run a local HTTP server.
 
-Build the documentation on HelpScout using your HelpScout API key:
-```python
-python scripts/helpscout.py <HelpScout API key>
-```
+### Writing guidelines
+- Write short sentences about simple concepts (as much as possible)
+- Keep a neutral tone; the content should be easy to reuse inside
+a blog post or a newsletter for example
+- Use present tense
+- When describing steps, use imperative. e.g. "Click on this button, then type in the title..."
+- When talking about OpenDataSoft as a company, use "us" or "OpenDataSoft"
