@@ -1,4 +1,9 @@
 language: python
+env:
+  global:
+  - secure: jURdaayKTiqqpo8tOBvOTmpGrDJSrilzdHOmYNhermQRyypFPr1u/8/tN7g2K48xijHhndx9pLJVe3TfoNBqmgzHBs3CUc4H/L+ywppMJJ6tFTf2y5Fc6yZGZzn3AqWFe0aS7upTkylim8K+LNcDIxUNTZEQZPDjlUt5YADYMgI=
+  - secure: AvXIiBjh3TNCcYm6ALE28alDZb3MxzHDPB8+fSQLQ2116ckeIzUGnM7eQ/pckKLT+X4QhzaWm1kuWZjLm66tqdaPyhSgATQ7Za6CEZ9tnTUbBN2tnaX5X0G/Xy73fMGx67MVbJuCm24q8C7DoT9MIyH8J3gZ/VlWFT6bCF7VUQY=
+  - secure: WYihNbsxa7VdbzD75AvMW7zbOGAz0MIdvZezRMAyjjZ0sNLAcXkfBI8JgN7FJ76riw6R4Hb+9iJyoP6XHZ6qOHgfvk7rqJhdoPZ4U7qK+bRoUerQt8Gf5zfhuUfS1nFo1V3vBnHDLWzZbcvZsZk38pjlT+VUjedX5u7KicsC554=
 python:
   - 2.7
 install:
@@ -7,5 +12,11 @@ script:
   - rm -rf build/ tmp/
   - sphinx-build -aE -nW -b html -d tmp docs-en/source/ build/en
   - sphinx-build -aE -nW -b html -d tmp docs-fr/source/ build/fr
+after_success:
+  - openssl aes-256-cbc -K $encrypted_9f7cba75ae55_key -iv $encrypted_9f7cba75ae55_iv -in .travis.deploy.enc -out .travis.deploy -d
+  - chmod 600 .travis.deploy
+  - eval "$(ssh-agent -s)"
+  - ssh-add .travis.deploy
+  - rsync -az --force --delete build/ "$USER"@"$IP":"$PATH"
 sudo: false
 
