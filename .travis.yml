@@ -17,6 +17,6 @@ after_success:
   - chmod 600 .travis.deploy
   - eval "$(ssh-agent -s)"
   - ssh-add .travis.deploy
-  - rsync -az --force --delete build/ "$DEPLOY_USER"@"$DEPLOY_IP":"$DEPLOY_PATH"
+  - rsync -e "ssh -o StrictHostKeyChecking=no" -az --force --delete build/ "$DEPLOY_USER"@"$DEPLOY_IP":"$DEPLOY_PATH"
 sudo: false
 
