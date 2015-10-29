@@ -8,7 +8,7 @@ Real time push entry points can be made available by dataset owners. Once the re
 
 ### Adding a record
 
-**API endpoint**: /api/push/1.0/&lt;DATASET&gt;/&lt;RESOURCE&gt;/push/
+**API endpoint**: `/api/push/1.0/<DATASET>/<RESOURCE>/push/`
 
 To add a record, simply send a POST request on the API endpoint with the request URL containing your API key and the request body containing a JSON document with all the fields you want to set.
 
@@ -18,12 +18,13 @@ Let's assume that a domain **realtime** contains a dataset named **realtime_data
 
 The dataset **realtime_dataset** contains the following fields:
 
-Field Name | Field Type
----------- | ----------
-identifier | text
-timestamp | date and time
-parameter | text
-value | double
+<table>
+<tr><th>Field Name</th><th>Field Type</th></tr>
+<tr><td>identifier</td><td>text</td></tr>
+<tr><td>timestamp</td><td>date and time</td></tr>
+<tr><td>parameter</td><td>ext</td></tr>
+<tr><td>value</td><td>double</td></tr>
+</table>
 
 And you have an API key which allows you to push records to this dataset: **dezn198329kkjnKJN290909**.
 

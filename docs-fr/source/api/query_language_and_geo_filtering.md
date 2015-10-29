@@ -40,17 +40,18 @@ One of the major feature of the query language is to allow per field filtering. 
 
 **For the dataset search API**, the list of available fields corresponds exactly to available metadata. By default:
 
-Field Name | Description
----------- | -----------
-publisher | The dataset publisher
-title | The dataset title
-description | The dataset description
-license | The dataset license
-records_count | The number of records in the dataset
-modified | The last modification date of the dataset
-language | The language of the dataset (iso code)
-theme | The theme of the dataset
-references | The references for the dataset
+<table>
+	<tr><th>Field Name</th><th>Description</th></tr>
+	<tr><td>publisher</td><td>The dataset publisher</td></tr>
+	<tr><td>title</td><td>The dataset title</td></tr>
+	<tr><td>description</td><td>The dataset description</td></tr>
+	<tr><td>license</td><td>The dataset license</td></tr>
+	<tr><td>records_count</td><td>The number of records in the dataset</td></tr>
+	<tr><td>modified</td><td>The last modification date of the dataset</td></tr>
+	<tr><td>language</td><td>The language of the dataset (iso code)</td></tr>
+	<tr><td>theme</td><td>The theme of the dataset</td></tr>
+	<tr><td>references</td><td>The references for the dataset</td></tr>
+</table>
 
 The domain administrator might define a richer metadata template, thus giving acces to a richer set of filtering fields.
 
@@ -82,12 +83,12 @@ Examples:
 
 Advanced functions can be used in the query language. Function names need to be prefixed with a sharp (`#`) sign.
 
-Function name | Description
-------------- | -----------
-now | Returns the current date. This function may be called as a query value for a field. When called without an argument, it will evaluate to the current datetime: `birthdate >= #now()` returns all Records containing a birth date greater or equal to the current datetime. This function can also accept parameters, see below for the `#now`function available parameters.
-null | This function may be called specifying a field name as a parameter. It returns the hits for which no value is defined for the specified field. For example `#null(birthdate)`
-exact | This function makes it possible to search for records with a field exactly matching a given value. For example, `#exact(firstname, "Marie")` will return records with a field `firstname` containing exactly "Marie" and nothing else.
-
+<table>
+<tr><th>Function name</th><th>Description</th></tr>
+<tr><td>now</td><td>Returns the current date. This function may be called as a query value for a field. When called without an argument, it will evaluate to the current datetime: <code>birthdate >= #now()</code> returns all Records containing a birth date greater or equal to the current datetime. This function can also accept parameters, see below for the <code>#now</code> function available parameters.</td></tr>
+<tr><td>null</td><td>This function may be called specifying a field name as a parameter. It returns the hits for which no value is defined for the specified field. For example <code>#null(birthdate)</code></td></tr>
+<tr><td>exact</td><td>This function makes it possible to search for records with a field exactly matching a given value. For example, <code>#exact(firstname, "Marie")</code> will return records with a field <code>firstname</code> containing exactly "Marie" and nothing else.</td></tr>
+</table>
 
 **Available parameters for the `#now` function**:Ò
 
@@ -111,7 +112,8 @@ Records search APIs accept geofilter parameters to filter in records which are l
 
 The following parameters may be used.
 
-Parameter Name | Description
--------------- | -----------
-geofilter.distance	| Limits the result set to a geographical area defined by a circle (coordinates of the center of the circle expressed in WGS84 and distance expressed in meters): latitude,longitude,distance: `geofilter.distance=48.8520930694,2.34738897685,1000`
-geofilter.polygon | Limits the result set to a geographical area defined by a polygon (coordinates of the points expressed in WGS84 as in ()lat1,lon1),(lat2,lon2),(lat3,lon3)): `geofilter.polygon=(48.883086,2.379072),(48.879022,2.379930),(48.883651,2.386968)`
+<table>
+<tr><th>Parameter Name</th><th>Description</th></tr>
+<tr><td>geofilter.distance</td><td>Limits the result set to a geographical area defined by a circle (coordinates of the center of the circle expressed in WGS84 and distance expressed in meters): latitude,longitude,distance: <code>geofilter.distance=48.8520930694,2.34738897685,1000</code></td></tr>
+<tr><td>geofilter.polygon</td><td>Limits the result set to a geographical area defined by a polygon (coordinates of the points expressed in WGS84 as in ((lat1,lon1),(lat2,lon2),(lat3,lon3)): <code>geofilter.polygon=(48.883086,2.379072),(48.879022,2.379930),(48.883651,2.386968)</code></td></tr>
+</table>
