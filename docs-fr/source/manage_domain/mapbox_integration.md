@@ -1,17 +1,29 @@
-# Mapbox integration
+# Intégration Mapbox
 
-[Mapbox](https://www.mapbox.com/) is a mapping platform that allows you to build and design your own maps; they also provide a dozen different map styles that you can directly use. If you have a Mapbox account, you can configure it into OpenDataSoft so that your users can display your data over these map styles.
+[Mapbox](https://www.mapbox.com/) est une plateforme de cartographie permettant de construire et dessiner ses propres 
+cartes. Cette plateforme met également à disposition de tous une dizaine de fonds de carte. Si vous avez un compte 
+Mapbox, vous pouvez configurer la plateforme OpenDataSoft afin que vos utilisateurs puissent utiliser ces fonds de carte
+dans leurs propres cartes.
 
-![Data over Mapbox](mapbox-newyork.png)
+![Mapbox en fond de carte](mapbox-newyork.png)
 
-If you don't have a Mapbox account, you can create one for free, although it is going to have a small number of allowed "map views". See [Mapbox plans](https://www.mapbox.com/plans/) for more information.
+Si vous n'avez pas de compte sur Mapbox, vous pouvez en créer un gratuitement. Attention, celui-ci ne permet qu'un 
+nombre limité de vues. Vous pouvez vous référer aux [abonnements Mapbox](https://www.mapbox.com/plans/) pour plus 
+d'information.
 
-Once you are logged on the Mapbox website with your account, you can go on [your account page](https://www.mapbox.com/account/apps/) and copy your Default Public Token or create a new Public access token; this is the key that will be used by OpenDataSoft to display maps on the behalf of your own Mapbox account.
+Une fois connecté sur le site de Mapbox avec votre compte, allez sur 
+[votre page profil](https://www.mapbox.com/account/apps/) et copiez-y une de vos clefs (Token) publiques 
+("Default Public Token" ou tout autre "Public acess token"). C'est ce token qui permettra à OpenDataSoft d'utiliser 
+les fonds de carte Mapbox.
 
-Go on your domain configuration page, in the *Integrations* tab; you will find a Mapbox configuration form where you can enter your Mapbox public access token. A message will confirm whether your access token is valid or not.
+Allez maintenant sur votre page de configuration de domaine, onglet *Intégrations*. Vous y trouverez un formulaire de 
+configuration Mapbox où vous pourrez entrer votre token. Un message vous confirmera alors que celui-ci 
+est valide (ou invalide le cas échéant).
 
-![Mapbox integration configuration](mapbox-integration.png)
+![Configuration de l'intégration Mapbox](mapbox-integration-fr.png)
 
-You can then go on the *Customization* tab and configure new *Custom tiles*: you will be able to select one of Mapbox's default styles, or choose "Custom" to enter the MapID of a map you created on Mapbox.
+En allant alors dans l'onglet *Personnalisation* vous pourrez configurer les *tuiles personnalisées*. Vous pourrez 
+sélectionner les fonds de carte Mapbox, ceux par défaut comme ceux que vous aurez créés (il faudra alors juste entrer 
+le code identifiant ce fond de carte).
 
-![Custom tiles configuration](custom_tiles.png)  
+![Configuration des tuiles personnalisées](mapbox-custom-tiles-fr.png)
