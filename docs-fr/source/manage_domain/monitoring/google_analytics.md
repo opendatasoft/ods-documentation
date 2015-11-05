@@ -1,13 +1,13 @@
 # Google Analytics
 
-You can monitoring the usage of your domain by configuring a Google Analytics integration.
+Vous pouvez suivre la fréquentation de votre domaine en y configurant un compte Google Analytics.
 
-Simply go to the *Domain > Portal > Integrations* page and fill in you Google Analytics ID.
+Il suffit pour cela d'aller sur *Domaine > Portail > Intégrations* et d'y renseigner votre ID Google Analytics.
 
-![Google Analytics ID configuration](google-analytics-integration-en.jpg)
+![Configuration de l'ID Google Analytics](google-analytics-integration-fr.png)
 
-OpenDataSoft's Google Analytics integration tracks the following views:
+L'intégration Google Analytics sur la plateforme OpenDataSoft permet de suivre la fréquentation des pages suivantes :
 
- * Datasets catalog page
- * Dataset explore page
+ * Page de catalogue des jeux de données,
+ * Pages d'exploration des jeux de données.
  
