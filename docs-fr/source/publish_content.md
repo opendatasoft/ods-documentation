@@ -1,56 +1,77 @@
-# Writing Content Pages
+# Les pages de contenu
 
-Not only the OpenDataSoft platform allows you to browse and explore configured datasets. You can also use it to build fully customized content pages, mixing editorial content as well as data visualizations built from your domain's datasets.
+Not only the OpenDataSoft platform allows you to browse and explore configured datasets. You can also use it to build 
+fully customized content pages, mixing editorial content as well as data visualizations built from your domain's datasets.
 
-Content pages can be used to:
+La plateforme OpenDataSoft ne se contente pas de vous permettre d'explorer des jeux de données préconfigurés. Elle vous 
+permet aussi de créer des pages de contenu totalement personnalisées mélangeant contenu éditorial et visualisations des 
+jeux de données de votre domaine.
 
-* Complement and organize your data portal by configuring a home page and by adding topic specific pages.
-* Build editorial content directly on the platform and publish it on the Web, as a direct link or through an embed.
-* Build dynamic dashboards
+Les pages de contenu peuvent servir à :
 
-### Creating a new content page
+* Compléter et organiser votre portail de données en configurant une page d'accueil et en ajoutant des pages dédiées à 
+des sujets spécifiques.
+* Construire et publier (en lien direct ou en embarqué au sein d'un autre site) des pages éditoriales riches.
+* Créer des tableau de bord dynamic
 
-To create a new content page, go to the *Domain > Portal > Pages* section.
+## Création d'une nouvelle page de contenu
 
-![Create a content page](page-list-en.jpg)
+Pour créer une nouvelle page de contenu, il vous faut aller sur *Domaine > Portail > Pages*.
 
-Simply hit the **New** button. Once created, the page edition window is displayed.
+![Créer une page de contenu](page-list-fr.png)
 
-![Edit a content page](page-edit-en.jpg)
+Cliquez ensuite sur le bouton "Nouveau". L'écran d'édition de page s'affiche alors.
 
-Before being able to save a page, you need to configure the page **slug** (*page1* in the example above).
+![Editer une page de contenu](page-edit-fr.png)
 
-Note that if your domain is configured for multiple user interface languages, you will have to configure your page content (title, description and page content itself) for all the configured languages.
+Avant de pouvoir sauvegarder une page, vous devrez configurer l'**URL de la page** (*page_1* dans l'exemple ci-dessus).
 
-The template selector lets you select ready to use templates. You can also choose to edit your page in expert mode, which gives you a very efficient and powerful way to define your page content.
+*Attention* : si votre domaine est configuré de manière à supporter plusieurs langages, vous devrez configurer votre 
+page (titre, description et contenu de la page) dans chacun de ces langages. 
 
-Note that you can switch to expert mode from any template. But once you've switched to expert mode, you cannot go back.
+Le sélecteur de templates vous permet de choisir entre plusieurs formats de pages prêt à l'emploi. Vous pouvez toutefois
+toujours choisir d'éditer la page en mode expert. Ce mode est beaucoup plus puissant car il permet de définir très 
+exactement le contenu de la page et sa mise en page.
 
-![Content page expert mode](page-expert-en.jpg)
+Vous pouvez passer en mode expert depuis tous les templates. En revanche une fois en mode expert, vous ne pouvez pas 
+revenir au mode précédent.
 
-In expert mode, you can independently work on your page content (HTML5) and style (CSS). Javascript code is stripped from HTML content but as the OpenDataSoft UI framework is based on AngularJS, you can leverage AngularJS bindings directly in your page's code.
+![Page de contenu en mode expert](page-expert-fr.png)
 
-The preview button allows you to visualize the current content of your page, even if you didn't save it.
+Le mode expert vous permet de travailler indépendemment sur le contenu de votre page (en HTML5) et son style (CSS). 
+Aucun code Javascript n'est permis, et la plateforme supprimera tout Javascript qu'elle trouverait dans une page. En 
+revanche, l'interface d'OpenDataSoft étant construite sur AngularJS, vous pouvez utiliser les **bindings** AngularJS 
+dans vos pages.
 
-### About the ods-widgets library
+Le bouton aperçu permet de visualiser l'état actuel de la page même si celle ci n'est pas sauvegardée.
 
-When editing your page content in expert mode, you may want to use the ods-widgets library, which is a high level abstraction allowing you to natively integrate data visualizations in your page code. 
+## A propos de la bibliothèque ods-widgets
 
-This overcomes classic IFrames limitations:
+Vous voudrez très certainement utiliser la bibliothèque ods-widgets dans le code de vos pages (en mode expert 
+uniquement) car celle-ci permet d'y intégrer nativement des visualisations de données.
 
-* IFrames generate a high load browser side
-* IFrames cannot interact together
+Cette bibliothèque remplace avantageusement les limitations des classiques IFrames:
 
-The ods-widgets library is an Open Source, AngularJS based framework developed and maintainted by OpenDataSoft on [GitHub](https://github.com/opendatasoft/ods-widgets). It comes with a complete and comprehenseive [online documentation](https://opendatasoft.github.io/ods-widgets/docs/).
+* Les IFrames génèrent une forte charge dans le navigateur
+* Les IFrames ne peuvent intéragir les unes avec les autres
 
-It can be used directly in your domain's content pages (without having to load / initialize the library as this is already done by the platform) or in third pary Web sites, as a standalone toolkit.
+Ods-widgets est une bibliothèque Open Source basée sur le framework AngularJS, développée et maintenue par OpenDataSoft 
+sur [GitHub](https://github.com/opendatasoft/ods-widgets). Elle s'accompagne d'une 
+[documentation en ligne](https://opendatasoft.github.io/ods-widgets/docs/) complète et exhaustive. 
 
-### Embedding content pages
+Vous pouvez l'utiliser directement dans les pages de contenu de votre domaine (nul besoin de charger/initialiser la
+bibliothèque, la plateforme s'en charge) comme dans des pages externes sur des sites tiers (en la traitant comme une 
+boite à outils indépendante).
 
-It is possible to embed an OpenDataSoft content page as you would do with any OpenDataSoft data visualization. Just set the HTTP parameter **headless** to **true** in your page URL. For instance: http://mydomain.opendatasoft.com/page/mypage/?headless=true.
+## Embarquer des pages de contenu
 
-### Updating your domain's menu
+Il est possible d'embarquer une page de contenu OpenDataSoft comme vous le feriez avec n'importe quelle visualisation 
+de données sur OpenDataSoft. Il vous faudra juste passer la paramètre HTTP `headless` à `true` dans l'URL de la page.
+Par exemple: `http://mydomain.opendatasoft.com/page/mypage/?headless=true`.
 
-Once your page content has been fully defined, you might want to *plug* your page in your domain's menu. This can easily be done by editing the menu components in the *Domain > Portal > General settings* section.
+## Mise à jour du menu sur le domaine
 
-![Domain menu](domain-menu-en.jpg)
+Une fois votre page de contenu finalisée, vous voudrez sans doute l'injecter dans le menu de votre domaine. Il suffit 
+pour cela de modifier la liste des éléments du menu dans la partie *Domaine > Portail > Paramètres globaux*.
+
+![Menu du domaine](domain-menu-fr.png)
