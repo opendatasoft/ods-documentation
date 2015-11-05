@@ -10,7 +10,7 @@ Documentation can be written in either Markdown (md) or reStructuredText (rst). 
 the former and its syntax isn't as easy but it allows for richer pages. In order to learn the rudiments of rst, you can
 toy with the online rst editor available at http://rst.ninjs.org/
 
-The documentation supports a strict interpretation of Markdown, and doesn't support
+The documentation supports a strict interpretation of Markdown ([CommonMark](http://commonmark.org/)), and doesn't support
 tables for example.
 
 ### Images

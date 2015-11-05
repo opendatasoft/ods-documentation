@@ -1,29 +1,30 @@
-# Configuring Disqus
+# Configurer Disqus
 
-If you have a custom domain name for accessing the OpenDataSoft platform, replace in the below \<YOURDOMAIN\>.opendatasoft.com with your custom domain name.
+Si vous possédez un nom de domaine personnalisé pour votre domaine OpenDataSoft, remplacez les références à \<VOTREDOMAINE\>.opendatasoft.com par votre nom de domaine.
 
-To connect your Disqus account to the ODS Platform, follow the steps below:
+Les étapes suivantes sont nécessaires pour connecter votre compte Disqus à votre domaine OpenDataSoft :
 
-1. Create a Disqus account at: https://disqus.com/admin/signup/.
+1. Créez un compte Disqus : <https://disqus.com/admin/signup/>
 
-2. Create a new site profile here: http://disqus.com/admin/create/.  
-    a. Enter a site name (as you want)  
-    b. Choose your Disqus URL (please keep in mind that this is your **shortname**)  
-    c. Select the right category
+2. Créez un nouveau profil de site ici : <http://disqus.com/admin/create/>
+    - Entrez un nom de site (celui de votre choix)
+    - Choisissez votre URL Disqus (notez la, celle-ci sera votre **shortname**)
+    - Choisissez la bonne catégorie
 
-2. Register a new application here: http://disqus.com/api/applications/register/.
+2. Enregistrez une nouvelle application ici : <http://disqus.com/api/applications/register/>
 
-3. Go to your application Dashboard: http://disqus.com/api/applications/.  
-   Please note that the "Public Key" is your **Disqus API key**.  
-   For security reasons, never share and never use the "Secret Key".
+3. Allez sur le Dashboard de votre application : <http://disqus.com/api/applications/>.
+   Notez la "Public Key" qui sera votre **Clé publique Disqus**.
+   Pour des raisons de sécurité, ne communiquez jamais votre "Secret key".
 
-4. Go to your application details:  
-    a. Now the URL looks like: http://disqus.com/api/applications/XXXX/ (XXXX is your application ID)  
-    b. Click on the "settings" link (http://disqus.com/api/applications/XXXX/update/)  
-    c. Add *\<YOURDOMAIN\>.opendatasoft.com* to the allowed domains
+4. Allez sur les détails de votre application :
+    - L'adresse de la page devrait ressembler à http://disqus.com/api/applications/\<XXXX\>/ (où XXXX est votre ID d'application)
+    - Cliquez sur le lien "settings" (http://disqus.com/api/applications/\<XXXX\>/update/)
+    - Ajoutez *\<VOTREDOMAINE\>.opendatasoft.com* dans la liste des "allowed domains"
 
-Once done, you can connect to the ODS Platform and look at the domain configuration: http://XXXX.opendatasoft.com/domain/.  
-In the disqus integration section, copy and paste your disqus shortname and the API key.  
-Don't forget to check "Enable Disqus in Explore".
+Une fois cela fait, vous pouvez vous connecter sur votre domaine OpenDataSoft et
+aller dans la page "Domaine", puis dans l'onglet "Intégrations". Vous pouvez ensuite
+activer Disqus et renseigner le **shortname** et la **clé publique**.
 
-Now, people can comments in the Disqus tab and you can manage all comments at this page: http://SHORTNAME.disqus.com/.
+Désormais, vos utilisateurs peuvent commenter les jeux de données dans un nouvel
+onglet Disqus, et vous pouvez modérer ces commentaires depuis la page http://\<SHORTNAME\>.disqus.com
