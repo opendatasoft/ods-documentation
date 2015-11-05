@@ -1,26 +1,29 @@
-# Configuring Twitter Cards
+# Configurer les Twitter Cards
 
-If you are a Twitter user, you may have seen a little summary appear below some links that you wrote
-in tweets; this summary is a **Twitter Card**, a feature provided by Twitter itself that allows website
-owners to configure how they want their content to be previewed in Twitter.
+Si vous êtes un utilisateur de Twitter, vous avez probablement déjà vu un petit
+résumé apparaitre sous certains liens que vous avez tweeté; ce résumé est
+une **Twitter Card**, une fonctionnalité de Twitter qui permet aux sites de
+configurer un aperçu de leur contenu dans les tweets.
 
-OpenDataSoft allows you to configure Twitter Cards for your datasets, so that if someone tweets a link
-to a dataset on your portal, a summary is displayed (title and description of your dataset), associated
-to a Twitter account of your choice.
+OpenDatasoft vous permet de configurer les Twitter Cards pour vos jeux de données,
+afin que si quelqu'un tweete un lien vers un de ceux-ci, un petit résumé apparait
+(titre et description), associé au compte Twitter de votre choix.
 
 ![A Twitter Card](twittercard.png)  
 
-#### How to configure
+#### Configuration
 
-First, if you want your Twitter Cards to be associated to a Twitter account, you can go on your **Domain**
-page, into the **Integrations** section, and fill in your Twitter account (don't forget to prefix it
-with a @).
+Tout d'abord, si vous souhaitez que les Twitter Cards soient associées à un
+compte Twitter, vous pouvez aller sur la page **Domaine**, puis dans l'onglet **Intégrations**,
+et remplir votre compte Twitter (sans oublier de le préfixer par un @).
 
-Go on the Twitter Card page available here: [https://cards-dev.twitter.com/validator](https://cards-dev.twitter.com/validator)
+Aller sur la page des Twitter Cards : <https://cards-dev.twitter.com/validator>
 
-You will be prompted to enter a "Card URL", which is the URL of the type of content you want a card for;
-in this case, this is the URL to a dataset page (such as [http://public.opendatasoft.com/explore/dataset/hurricane-tracks-1851-20071/](http://public.opendatasoft.com/explore/dataset/hurricane-tracks-1851-20071/)).
+Il vous sera demandé une "Card URL", qui est l'adresse de la page dont vous voudriez
+tester le résumé; dans ce cas, il s'agit de l'URL vers un jeu de données
+(par exemple <http://public.opendatasoft.com/explore/dataset/hurricane-tracks-1851-20071/>).
 
-You can then hit the "Preview card" button and see what the card will look like. If you are happy with the result,
-you can submit a "Request Approval" using the available button. Twitter will then review your application
-and approve or refuse your request.
+Cliquez ensuite sur **Preview card**, afin d'obtenir un aperçu du résumé. Si le résultat
+vous convient, vous pouvez ensuite soumettre une requête via le bouton **Request Approval**.
+Twitter effectuera ensuite quelques vérifications avant de valider votre demande,
+ce qui activera les Twitter Card sur chaque lien vers vos jeux de données.
