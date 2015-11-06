@@ -1,69 +1,69 @@
-# Creating a Dataset
+# Créer un jeu de données
 
-To create a new dataset, simply go to the publish console, accessible by hitting the **Publish** button (usually located at the right side of the header), while connected with an account that has publishing privileges.
+Pour créer un nouveau jeu de données, rendez vous sur la console de publication en appuyant sur le bouton "Publier", présent sur la droite du bandeau de navigation. Ce bouton n'apparaît pas pour les utilisateurs qui n'ont pas les droits de publication sur le domaine.
 
-You can also access the publish console through its direct link: https://<DOMAIN_NAME>.opendatasoft.com/publish.
+Vous pouvez aussi vous rendre sur la console de publication en vous rendant directement sur l'URL https://<NOM DE DOMAINE>.opendatasoft.com/publish.
 
-### Creating and publishing a new dataset
+### Créer et publier un nouveau jeu de données
 
-The dataset creation workflow is very simple.
+Le processus de création de jeux de données est très simple:
 
-1. Hit the **New** button
+1. Cliquez sur "Nouveau".
 
-    ![New Dataset](publish_newbutton.jpg)
+    ![Nouveau jeu de données](publish_newbutton.png)
 
-2. Add a new data source by hitting the **Add a source** button
+2. Ajouez une nouvelle source de données en cliquant sur le bouton "Ajouter une source".
 
-    ![New Data Source](publish_addsource.jpg)
+    ![Nouvelle source de données](publish_addsource.png)
 
-    Note that this step is optional as you can configure a dataset with no datasource, simply filling out the dataset metadata in the **Information** tab.
+    Cette étape n'est pas strictement nécessaire: vous pouvez créer un jeu de données sans source de données, en ajoutant simplement des métadonnées dans l'onglet "information".
 
-3. Define your data source
+3. Définissez votre source de données.
 
-    ![Configure Data Source](publish_source.jpg)
+    ![Configurer une source de données](publish_source.png)
 
-    You can either:
+    Vous avez plusieurs possibilités:
 
-    * **Upload a file** whose format is supported by the platform
-    * Specify a **remote URL** (HTTP, HTTPs or FTP) to a file whose format is supported by the platform
-    * Specify a **remote URL** to an **API endpoint** supported by the platform
-    * **Paste data**, for instance by copy / pasting Excel spreadsheet content
+    * **Ajouter un fichier** au format supporté par la plateforme.
+    * Spécifier une **URL** (HTTP, HTTPs ou FTP) qui pointe vers un fichier au format supporté par la plateforme.
+    * Spécifier une **URL** qui pointe vers un point d'entrée d'API supporté par la plateforme.
+    * **Collez de la données**, par exemple en effectuant un copier-coller depuis une feuille de calcul Excel.
 
-    Note that you can define multiple resources for a single dataset. However, all the resources shall have the same *schema* (for instance, a CSV file and an XLS file with the same column titles).
+    Il vous est possible de définir plusieurs ressources pour un jeu de données unique. Cependant, chacune de ses ressources doivent impérativement être organisées selon le même *schéma de données* (par exemple, en ajoutant un fichier CSV et un fichier XMLS, dont les noms des colonnes sont identiques).
 
-4. **Save** and **publish** your newly created dataset
+4. **Sauvegardez** et **Publiez** votre nouveau jeu de données.
 
-    ![Save and Publish](publish_saveandpublish.jpg)
+    ![Sauvegarder et publier](publish_saveandpublish.png)
 
-### Supported file formats
+### Types de fichiers supportés
 
-The following table lists the supported format and describes configuration options for each format.
+La table suivante reprend les formats supportés et décrit les options de configuration pour chacun de ceux-ci.
 
 <table>
 <tr><th>Format</th><th>Extensions</th><th>Description</th></tr>
-<tr><td>CSV</td><td>.csv, .tsv, .txt, .dat</td><td>The platform lets you configure the file encoding, the field delimiter as well as a couple of other useful options.</td></tr>
+<tr><td>CSV</td><td>.csv, .tsv, .txt, .dat</td><td>La plateforme vous permet de configurer l'encodage du fichier, le délimiteur ainsi que d'autres options utiles.</td></tr>
 <tr><td>Microsoft Excel</td><td>.xls, .xlsx</td><td></td></tr>
-<tr><td>OpenDocument SpreadSheet</td><td>.ods</td><td></td></tr>
+<tr><td>Feuilles de calcul OpenDocument</td><td>.ods</td><td></td></tr>
 <tr><td>GeoJSON</td><td>.json, .geojson</td><td></td></tr>
-<tr><td>JSON</td><td>.json</td><td>Simple JSON documents are supported. The platform lets you choose the root path (path to the table of elements to be considered as rows) and the properties path (path to the dictionary holding the list of fields for an element).</td></tr>
+<tr><td>JSON</td><td>.json</td><td>Les documents JSON simples sont supportés. La plateforme vous permet de spécifier le chemin vers la racine (contenant une liste d'objets à considérer comme des lignes distinctes) et le chemin des propriétés (vers l'objet qui détient l'ensemble des champ pour chaque ligne).</td></tr>
 <tr><td>KML</td><td>.kml</td><td></td></tr>
-<tr><td>Shapefile</td><td> .zip</td><td>A zip archive containing at least the following files: <NAME>.shp, <NAME>.dbf, <NAME>.prj</td></tr>
-<tr><td>MapInfo</td><td>.zip</td><td>A zip archive containing either <NAME>.mid and <NAME>.mif files or <NAME>.map, <NAME>.tab, <NAME>.id and <NAME>.dat</td></tr>
+<tr><td>Shapefile</td><td> .zip</td><td>Une archive zip contenant au moins les fichiers suivants: <NOM>.shp, <NOM>.dbf, <NOM>.prj</td></tr>
+<tr><td>MapInfo</td><td>.zip</td><td>Une archive zip contenant soit les fichiers <NOM>.mid et <NOM>.mif, soit les fichiers <NOM>.map, <NOM>.tab, <NOM>.id et <NOM>.dat</td></tr>
 <tr><td>OpenStreetMap</td><td>.osm</td><td></td></tr>
 </table>
 
-File formats support can be extented to match specific requirements (for instance, to support a complex XML DTD or a non standard flat file format). Contact your local support team if you need more information on file formats support extension.
+Le support des formats de fichiers peut être étendu pour répondre à des besoin spécifiques (par exemple pour supporter des DTD XML complexes ou des formats de données à plat non standard). N'hésitez pas à contacter l'équipe de support pour obtenir plus d'information sur l'extension du support des formats.
 
-OpenDataSoft supports compressed files (ZIP and BZ2).
+La plateforme OpenDataSoft supporte les fichiers compressés (zip et bzip2).
 
-### Connecting to a remote API endpoint
+### Connexion à un point d'entrée d'API distant
 
-Sometime, it might be proven convenient to *connect* a dataset to a remote data source exposing data records over an HTTP API.
+Dans certains cas il est utile de *connecter* un jeu de données à une source de données externe qui expose ses données sur une API HTTP.
 
-OpenDataSoft natively supports the following APIs (contact your local support team to get these activated on your domain):
+La plateforme OpenDataSoft supporte nativement les APIs suivants (contactez l'équipe de support pour les activer sur votre domaine):
 
- * [JCDecaux Developer API](https://developer.jcdecaux.com/)
- * [ArcGIS REST API](http://resources.arcgis.com/en/help/rest/apiref/)
- * [Netatmo HTTP API](https://dev.netatmo.com/doc)
+ * [L'API JCDecaux Developer](https://developer.jcdecaux.com/)
+ * [L'API REST ArcGIS](http://resources.arcgis.com/en/help/rest/apiref/)
+ * [L'API HTTP Netatmo](https://dev.netatmo.com/doc)
 
-OpenDataSoft can also develop and integrate customer specific Web APIs. OpenDataSoft connectivity toolkit makes it possible to develop performant and secured connectors supporting incremental data processing.
+OpenDataSoft peut également développer et intégrer des APIs web spécifiques. Notre toolkit dédié permet de développer des connecteurs performants et sécurisés supportant le traitement incrémental des fichiers.

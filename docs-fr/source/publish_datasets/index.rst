@@ -4,7 +4,7 @@ ___________________________
 .. toctree::
    :titlesonly:
 
-   Creating a Dataset <create_dataset>
+   Créer un jeu de données <create_dataset>
    Transforming a Dataset <transform_dataset>
    Available Processors <processors>
    Abonnements à un jeu de données <dataset_subscriptions>
