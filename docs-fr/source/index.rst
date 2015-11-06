@@ -12,7 +12,6 @@ ________________________________________________
    Publier un Contenu Web <publish_content>
    Gérer un Domaine <manage_domain/index>
    APIs <api/index>
-   Facturation <billing/index>
    FAQ <faq>
 
 Indices and tables
