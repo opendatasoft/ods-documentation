@@ -9,3 +9,4 @@ _________________
    Managing the Security of your Domain <security>
    Configuring Twitter Cards <twitter-cards>
    Monitoring <monitoring/index>
+   SAML integration <saml-integration>
