@@ -384,6 +384,7 @@ You'll need to define the following parameters:
 <tr><td>UK</td><td>2050;2020;2030</td><td>90 000 000;65 000 000;70 000 000</td></tr>
 <tr><td>USA</td><td>2050;2020;2030</td><td>450 000 000;350 000 000;400 000 000</td></tr>
 </table>
+
 ### Extract from Json (Beta - Can be activated on demand)
 
 This processor can be used to extract values from a json object.
