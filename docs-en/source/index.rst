@@ -11,6 +11,7 @@ ______________________________________
    Explore and Visualize Datasets <explore/index>
    Publish Web Content <publish_content>
    Manage a Domain <manage_domain/index>
+   Theme a Domain <theme/index>
    APIs <api/index>
    FAQ <faq>
 
