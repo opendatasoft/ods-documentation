@@ -46,17 +46,17 @@ instead you'll have to use real HTML all the way (`<strong>this is bold</strong>
 #### Titles
 
 ```
-1st level title
-===============
-
-2nd level title
----------------
-
-3rd level title
-~~~~~~~~~~~~~~~
-
-4th level title
-^^^^^^^^^^^^^^^
+    1st level title
+    ===============
+    
+    2nd level title
+    ---------------
+    
+    3rd level title
+    ~~~~~~~~~~~~~~~
+    
+    4th level title
+    ^^^^^^^^^^^^^^^
 ```
 
 #### Links
