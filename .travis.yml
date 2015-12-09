@@ -13,12 +13,10 @@ script:
   - sphinx-build -aE -nW -b html -d tmp docs-en/source/ build/en
   - sphinx-build -aE -nW -b html -d tmp docs-fr/source/ build/fr
 after_success:
-  - test $TRAVIS_PULL_REQUEST == "false" || exit 0
-  - test $TRAVIS_BRANCH == "master" || exit 0 
   - openssl aes-256-cbc -K $encrypted_9f7cba75ae55_key -iv $encrypted_9f7cba75ae55_iv -in .travis.deploy.enc -out .travis.deploy -d
   - chmod 600 .travis.deploy
   - eval "$(ssh-agent -s)"
   - ssh-add .travis.deploy
-  - rsync -e "ssh -o StrictHostKeyChecking=no" -az --force --delete build/ "$DEPLOY_USER"@"$DEPLOY_IP":"$DEPLOY_PATH" 2>/dev/null
+  - 'test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && rsync -e "ssh -o StrictHostKeyChecking=no" -az --force --delete build/ "$DEPLOY_USER"@"$DEPLOY_IP":"$DEPLOY_PATH" 2>/dev/null'
 sudo: false
 
