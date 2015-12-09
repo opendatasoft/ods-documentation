@@ -1,8 +1,8 @@
 Introduction to OpenDataSoft's theme management
 ===============================================
 
-OpenDataSoft's theme management interface can be found in the domain backoffice. You can access it either by clicking on
-the ``theme`` link in the header or the ``Update the portal's theme``button in the backoffice landing page.
+OpenDataSoft's theme management interface can be found in the domain back-office. You can access it either by clicking
+on the ``theme`` link in the header or the ``Update the portal's theme`` button in the back-office landing page.
 
 .. note::
     In order to access the theme page, you'll need to be able to edit domain properties.
@@ -10,8 +10,8 @@ the ``theme`` link in the header or the ``Update the portal's theme``button in t
 
 .. image:: intro__access-interface.png
 
-Using the various forms available in this page, you'll be able to customize every aspect of your portal, from the basic
-colors to major changes in the layout.
+Using the various forms available in this page, you'll be able to customize every aspect of your portal, from basic
+colors to making major changes in its layout.
 
 .. image:: intro__interface.png
 
@@ -19,27 +19,27 @@ colors to major changes in the layout.
 Versioning
 ----------
 
-Before diving in the many ways of customizing the portal's theme, it is very important to stress out that everything you
-will do on this page is versioned. That is to say your work has a version number assigned to it and you can at any
+Before diving into the many ways to customize the portal's theme, it is very important to stress that everything you
+will do on this page is versioned. This is to say that your work has a version number assigned to it and you can at any
 moment create a new version. You'll always be working on the latest version (think of it as your working draft), but can
 make any version live (that is, apply it to your portal). Were you to make the latest version live, a new one would be
-created and would become your new working draft. The latest version only is editable, all previous ones are read-only.
+created and would become your new working draft. Only the latest version can be edited; all previous ones are read-only.
 
 While working on the latest version, you can preview your changes by clicking the ``Preview`` button. This will open a
 new window containing your portal with the current version of the theme applied to it.
 
 .. note::
-    Only users able to edit domain properties are able to preview the latest theme version. If you were to share with
-    other users the URL of the preview, they wouldn't see any difference with the live version.
+    Only users able to edit the domain properties can preview the latest theme version. If you were to share the URL of
+    the preview with other users, they won't see any difference in the live version.
 
 .. note::
-    You can also preview the latest version of the theme at any moment and on any given page on the portal's
-    frontoffice by adding the ``stage_theme=true`` parameter to the URL.
+    You can preview the latest version of the theme at any moment and on any given page on the portal's
+    front-office by adding the ``stage_theme=true`` parameter to the URL.
 
 .. image:: intro__versioning.png
 
-The version selector will tell you explicitly if you're working on the latest version or rather simply viewing a
-previous one and which version is the live one.
+The version selector will tell you explicitly if you're working on the latest version or rather viewing a previous one,
+as well as which version is live.
 
 Customization options
 ---------------------
@@ -100,23 +100,23 @@ Offline development
 -------------------
 
 We've seen in the previous section that you can write detailed CSS rules that will override the portal's default theme.
-However writing it all in the browser can become tedious, especially for seasoned developers used to powerful text
+However, writing it all in the browser can become tedious, especially for seasoned developers used to powerful text
 editors. Since it only accepts pure CSS, you will have to manually ensure that your rules are correctly vendor-prefixed
 and won't be able to use the features frontend developers are accustomed to with pre-processors such as variables and
 nesting.
 
 For all these reasons, we've created an API enabling users with sufficient rights and the theme API key to locally
-write their style rules using all the tools they want and just push the resulting CSS code to the platform. We've
-packaged a client to this API alongside common tools (less preprocessor and autoprefixer) in the
+write their style rules using all the tools they want, and to just push the resulting CSS code to the platform. We've
+packaged a client to this API along with common tools (less preprocessor and autoprefixer) in the
 `OpenDataSoft Portal Development Kit <https://github.com/opendatasoft/ods-portal-devkit>`_.
 
-This ODS Portal DevKit is an open source project distributed freely on Github, feel free to download it and taylor it to
-your development workflow.
+This ODS Portal DevKit is an open source project distributed for free on Github, feel free to download it and taylor it
+to your development workflow.
 
 Theme API key
 ~~~~~~~~~~~~~
 
-You can find the theme API key on the portal theme customization page, just expand the *API key for offline development*
+You can find the theme API key on the portal theme customization page. Just expand the *API key for offline development*
 section and copy the key.
 
 .. image:: intro__offline-dev.png
