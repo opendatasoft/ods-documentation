@@ -85,16 +85,108 @@ your portal to your colors.
 Stylesheet
 ~~~~~~~~~~
 
-TODO: assets, BEM, avoid inheritance
+If changing colors is not enough and you'd like make deeper changes, you'll have to write your own CSS. Luckily this tab
+enables you to input you own style rules. These will be applied on top of OpenDataSoft's default rules and have
+precedence over them.
+
+.. image:: intro__stylesheet.png
+
+If your customization uses specific images and fonts, you can upload them to the platform using the
+`assets management page <assets>`_. You'll then be able to copy the assets URLs and paste them in your CSS code.
+
+.. important::
+    All of OpenDataSoft's CSS code is written following the `BEM methodology <http://getbem.com/introduction/>`_ and
+    prefixed with `ods-` so that they won't conflict with your own styles and can easily be overridden.
+    You'll find a great introduction to this methodology on the ever-useful
+    `CSS Tricks website <https://css-tricks.com/bem-101/>`_.
+
+    In short, class names are written as *block, element, modifier* (hence the BEM)
+    `.ods-block[--blockmodifier][__element][--elementmodifier]`. The hierarchy tree is at most 2 selectors deep. Also,
+    the relevant style is as close to the element as possible.
+
+    As a result, if you wanted to change the style of an element, you would only have to find the element's class and
+    change the desired CSS property. It won't have any side-effect (limited to this single class name) and is guaranteed
+    to work (since the hierarchy tree is mostly flat).
 
 
 Header and footer
 ~~~~~~~~~~~~~~~~~
 
+While both header and footer can already be branded using the domain's customization section and color selection panel,
+organisations usually want to further customize the layout and content of these areas.
+
+.. image:: intro__header.png
+
+Both header and footer are wrapped within independent AngularJS applications, which means you can use `ng-if`,
+`ng-class`, `ng-show`, `ng-hide` and all of Angular's standard directives to make the areas more dynamic. One common
+request is to collapse the header into a *click-to-expand* side menu below a certain viewport width. For this purpose we
+provide the `ods-responsive-menu` directive. See `the dedicated page <responsive-menus>`_ for more information.
+
+We also provide placeholders that will be replaced with the content specified in the domain customization options such
+as menu items, language selectors and logos. The full list is displayed right above the code area.
+
+.. note::
+    While you can take advantage of Angular within the header and footer, standard JS is still forbidden for security
+    reasons.
 
 Catalog card
 ~~~~~~~~~~~~
 
+On the catalog page of your domain, each dataset is represented by a single *catalog card*. This card elements features
+a few standard elements but you may want to radically change the way it looks, add new links or implement new
+behaviours.
+
+Here are a few examples of catalog cards:
+
+.. image:: intro__catalog-card-example--central.png
+.. image:: intro__catalog-card-example--datacorsica.png
+.. image:: intro__catalog-card-example--toulouse.png
+
+We provide handy directives to easily retrieve and include any information relative to a dataset. These directives also
+come with a standard style that you can override using the *Stylesheet* tab.
+
+.. image:: intro__catalog-card.png
+
+The directives are:
+
+* `ods-catalog-card` must wrap the whole catalog card for the other directives to work.
+* `ods-catalog-card-theme-icon` will retrieve the dataset's theme and include the relevant icon.
+* `ods-catalog-card-body` provides useful style and behaviour handling edge cases (datasets without records, API
+  proxy...).
+* `ods-catalog-card-title`, `ods-catalog-card-description` and `ods-catalog-card-keywords` are self-explanatory.
+* `ods-catalog-card-metadata-item` takes an `item-key` and an `item-title` attributes, retrieve a metadata
+  property matching the `item-key` from the dataset and includes in in the page using `item-title` as its label. It
+  should be wrapped by a `.ods-catalog-card__metadata` element for better styling but with no obligation.
+
+.. list-table:: Metadata item keys
+   :header-rows: 1
+
+   * * Item key
+     * Item title
+   * * License
+     * License (will be rendered as a link if possible)
+   * * Language
+     * Content language
+   * * Modified
+     * Date of last modification
+   * * Publisher
+     * Publisher's name
+   * * References
+     * Link to the original source of the data
+   * * odi_certificate_url
+     * Link to the ODI certificate
+   * * records_count
+     * Number of records in the dataset (regardless of filters)
+   * * Attributions
+     * Names of the data owner
+   * * source_domain
+     * For federated datasets only, the name of the domain the dataset comes from
+   * * source_domain_title
+     * For federated datasets only, the original title of the dataset on its source domain
+   * * source_dataset
+     * For federated datasets only, the original identifier of the dataset on its source domain
+   * * explore.download_count
+     * Number of data downloads for this dataset
 
 Offline development
 -------------------
