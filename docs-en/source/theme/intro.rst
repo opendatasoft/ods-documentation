@@ -44,6 +44,8 @@ as well as which version is live.
 Customization options
 ---------------------
 
+.. _theme__layout-options:
+
 Layout options
 ~~~~~~~~~~~~~~
 
@@ -51,14 +53,14 @@ The portal layout relies on a 12-column grid system largely inherited from the
 `Bootstrap CSS framework <http://getbootstrap.com/css/#grid>`_ and as such has a few internal variables used throughout
 its CSS. This tab allows you to set the value of some of these variables.
 
-The variables that can currently be overridden are the gutter width and the responsive breakpoints.
-
 .. image:: intro__layout-options.png
 
-The gutter width is the space between columns, rows and adjacent boxes.
+The variables that can currently be overridden are the *gutter width* and the *responsive breakpoints*.
 
-The responsive breakpoints are the screen widths (in pixels) at which the layout will change to better accommodate the
-available space. There are 4 modes available: extra-small , small , medium and large which means that there are 3
+The *gutter width* is the space between columns, rows and adjacent boxes.
+
+The *responsive breakpoints* are the screen widths (in pixels) at which the layout will change to better accommodate the
+available space. There are 4 modes available: extra-small , small , medium and large, which means that there are 3
 breakpoints: extra-small to small, small to medium and medium to large. The modes are also commonly referred to as
 *mobile*, *tablet*, *desktop* and *large desktop*.
 
@@ -88,7 +90,7 @@ Stylesheet
 ~~~~~~~~~~
 
 If changing colors is not enough and you'd like make deeper changes, you'll have to write your own CSS. Luckily this tab
-enables you to input you own style rules. These will be applied on top of OpenDataSoft's default rules and have
+enables you to input your own style rules. These will be applied on top of OpenDataSoft's default rules and have
 precedence over them.
 
 .. image:: intro__stylesheet.png
@@ -98,7 +100,7 @@ If your customization uses specific images and fonts, you can upload them to the
 
 .. important::
     To change the style of an element, you only have to find the element's class and change the desired CSS property.
-    It won't have any side-effect (limited to this single class name) and is guaranteed to work (since the hierarchy
+    It won't have any side-effects (limited to this single class name) and is guaranteed to work (since the hierarchy
     tree is mostly flat).
 
     This is possible because all of OpenDataSoft's CSS code is written following the
@@ -114,14 +116,14 @@ Header and footer
 ~~~~~~~~~~~~~~~~~
 
 While both header and footer can already be branded using the domain's customization section and color selection panel,
-organisations usually want to further customize the layout and content of these areas.
+organizations usually want to further customize the layout and content of these areas.
 
 .. image:: intro__header.png
 
 Both header and footer are wrapped within independent AngularJS applications, which means you can use `ng-if`,
 `ng-class`, `ng-show`, `ng-hide` and all of Angular's standard directives to make the areas more dynamic. One common
 request is to collapse the header into a *click-to-expand* side menu below a certain viewport width. For this purpose we
-provide the `ods-responsive-menu` directive. See :doc:`the dedicated page <responsive-menus>` for more information.
+provide the `ods-responsive-menu` directive. See :doc:`this dedicated page <responsive-menus>` for more information.
 
 We also provide placeholders that will be replaced with the content specified in the domain customization options such
 as menu items, language selectors and logos. The full list is displayed right above the code area.
@@ -133,7 +135,7 @@ as menu items, language selectors and logos. The full list is displayed right ab
 Catalog card
 ~~~~~~~~~~~~
 
-On the catalog page of your domain, each dataset is represented by a single *catalog card*. This card elements features
+On the catalog page of your domain, each dataset is represented by a single *catalog card*. These cards feature
 a few standard elements but you may want to radically change the way it looks, add new links or implement new
 behaviours.
 
