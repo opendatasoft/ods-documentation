@@ -6,7 +6,7 @@ on the ``theme`` link in the header or the ``Update the portal's theme`` button 
 
 .. note::
     In order to access the theme page, you'll need to be able to edit domain properties.
-    See `Managing the Security of your Domain <manage_domain/security>`_ for more details.
+    See :doc:`Managing the Security of your Domain </manage_domain/security>` for more details.
 
 .. image:: intro__access-interface.png
 
@@ -82,6 +82,8 @@ your portal to your colors.
     will however have precedence over these colors. Which means that your color choices may not be visible if you wrote
     more specific CSS rules.
 
+.. _theme__stylesheet:
+
 Stylesheet
 ~~~~~~~~~~
 
@@ -92,22 +94,21 @@ precedence over them.
 .. image:: intro__stylesheet.png
 
 If your customization uses specific images and fonts, you can upload them to the platform using the
-`assets management page <assets>`_. You'll then be able to copy the assets URLs and paste them in your CSS code.
+:doc:`assets management page <assets>`. You'll then be able to copy the assets URLs and paste them in your CSS code.
 
 .. important::
-    All of OpenDataSoft's CSS code is written following the `BEM methodology <http://getbem.com/introduction/>`_ and
-    prefixed with `ods-` so that they won't conflict with your own styles and can easily be overridden.
-    You'll find a great introduction to this methodology on the ever-useful
+    To change the style of an element, you only have to find the element's class and change the desired CSS property.
+    It won't have any side-effect (limited to this single class name) and is guaranteed to work (since the hierarchy
+    tree is mostly flat).
+
+    This is possible because all of OpenDataSoft's CSS code is written following the
+    `BEM methodology <http://getbem.com/introduction/>`_ and prefixed with `ods-` so that they won't conflict with your
+    own styles and can easily be overridden. You'll find a great introduction to this methodology on the ever-useful
     `CSS Tricks website <https://css-tricks.com/bem-101/>`_.
 
     In short, class names are written as *block, element, modifier* (hence the BEM)
     `.ods-block[--blockmodifier][__element][--elementmodifier]`. The hierarchy tree is at most 2 selectors deep. Also,
     the relevant style is as close to the element as possible.
-
-    As a result, if you wanted to change the style of an element, you would only have to find the element's class and
-    change the desired CSS property. It won't have any side-effect (limited to this single class name) and is guaranteed
-    to work (since the hierarchy tree is mostly flat).
-
 
 Header and footer
 ~~~~~~~~~~~~~~~~~
@@ -120,7 +121,7 @@ organisations usually want to further customize the layout and content of these 
 Both header and footer are wrapped within independent AngularJS applications, which means you can use `ng-if`,
 `ng-class`, `ng-show`, `ng-hide` and all of Angular's standard directives to make the areas more dynamic. One common
 request is to collapse the header into a *click-to-expand* side menu below a certain viewport width. For this purpose we
-provide the `ods-responsive-menu` directive. See `the dedicated page <responsive-menus>`_ for more information.
+provide the `ods-responsive-menu` directive. See :doc:`the dedicated page <responsive-menus>` for more information.
 
 We also provide placeholders that will be replaced with the content specified in the domain customization options such
 as menu items, language selectors and logos. The full list is displayed right above the code area.
@@ -163,21 +164,21 @@ The directives are:
 
    * * Item key
      * Item title
-   * * License
+   * * license
      * License (will be rendered as a link if possible)
-   * * Language
+   * * language
      * Content language
-   * * Modified
+   * * modified
      * Date of last modification
-   * * Publisher
+   * * publisher
      * Publisher's name
-   * * References
+   * * references
      * Link to the original source of the data
    * * odi_certificate_url
      * Link to the ODI certificate
    * * records_count
      * Number of records in the dataset (regardless of filters)
-   * * Attributions
+   * * attributions
      * Names of the data owner
    * * source_domain
      * For federated datasets only, the name of the domain the dataset comes from
@@ -197,9 +198,9 @@ editors. Since it only accepts pure CSS, you will have to manually ensure that y
 and won't be able to use the features frontend developers are accustomed to with pre-processors such as variables and
 nesting.
 
-For all these reasons, we've created an API enabling users with sufficient rights and the theme API key to locally
-write their style rules using all the tools they want, and to just push the resulting CSS code to the platform. We've
-packaged a client to this API along with common tools (less preprocessor and autoprefixer) in the
+For all these reasons, we've created an API enabling users with the theme API key to locally write their style rules
+using all the tools they want, and to just push the resulting CSS code to the platform. We've packaged a client to this
+API along with common tools (less preprocessor and autoprefixer) in the
 `OpenDataSoft Portal Development Kit <https://github.com/opendatasoft/ods-portal-devkit>`_.
 
 This ODS Portal DevKit is an open source project distributed for free on Github, feel free to download it and taylor it
