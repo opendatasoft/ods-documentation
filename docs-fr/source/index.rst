@@ -11,6 +11,7 @@ ________________________________________________
    Explorer et Visualiser des Jeux de Données <explore/index>
    Publier un Contenu Web <publish_content>
    Gérer un Domaine <manage_domain/index>
+   Modifier le thème du domaine <theme/index>
    APIs <api/index>
    FAQ <faq>
 
