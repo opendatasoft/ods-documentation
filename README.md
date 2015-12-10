@@ -120,6 +120,7 @@ sphinx-intl update-txconfig-resources --pot-dir build/locale --transifex-project
 ``` bash
 make gettext
 sphinx-intl update -p build/locale -l fr
+tx push -s
 ```
 
 ### Build translated documentation
