@@ -300,3 +300,7 @@ source_parsers = {
 }
 
 source_suffix = ['.rst', '.md']
+
+# i18n
+locale_dirs = ['locale/']
+gettext_compact = False

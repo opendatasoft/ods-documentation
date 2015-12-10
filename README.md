@@ -96,3 +96,36 @@ The generated html will be available in `/docs-LANGUAGE/build/html`.
 You can just open `/docs-LANGUAGE/build/html/index.html` in your browser, it should
 work directly over the filesystem without having to run a local HTTP server.
 
+## Translations
+
+Translations are managed through Transifex at https://www.transifex.com/opendatasoft/documentation-5/
+
+Main documentation resources:
+
+* http://sphinx-doc.org/intl.html
+* http://docs.transifex.com/client/
+
+### Setup
+
+``` bash
+pip install sphinx-intl
+pip install transifex-client
+
+tx init --user=<username> --pass=<password>
+sphinx-intl update-txconfig-resources --pot-dir build/locale --transifex-project-name documentation-5
+```
+
+### Build po files
+
+``` bash
+make gettext
+sphinx-intl update -p build/locale -l fr
+```
+
+### Build translated documentation
+
+```bash
+tx pull -l fr
+sphinx-intl build
+make -e SPHINXOPTS="-D language='fr'" html
+```
