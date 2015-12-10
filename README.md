@@ -105,6 +105,12 @@ Main documentation resources:
 * http://sphinx-doc.org/intl.html
 * http://docs.transifex.com/client/
 
+
+### Translating images
+
+* https://wiki.typo3.org/Localization_(reST):
+* https://groups.google.com/forum/#!topic/sphinx-users/CursdollSZo
+
 ### Setup
 
 ``` bash
