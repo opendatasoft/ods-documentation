@@ -1,5 +1,5 @@
 Exploring and Visualizing Datasets
-__________________________________
+==================================
 
 .. toctree::
    :maxdepth: 2
