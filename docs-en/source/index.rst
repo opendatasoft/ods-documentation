@@ -1,5 +1,5 @@
 Welcome to OpenDataSoft documentation!
-______________________________________
+======================================
 
 .. toctree::
    :maxdepth: 2
@@ -16,7 +16,7 @@ ______________________________________
    FAQ <faq>
 
 Indices and tables
-==================
+------------------
 
 * :ref:`genindex`
 * :ref:`search`
