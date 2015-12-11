@@ -1,5 +1,5 @@
 Managing a Domain
-_________________
+=================
 
 .. toctree::
    :titlesonly:

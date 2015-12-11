@@ -1,19 +1,21 @@
-# Configuring Disqus
+Configuring Disqus
+==================
 
-If you have a custom domain name for accessing the OpenDataSoft platform, replace in the below \<YOURDOMAIN\>.opendatasoft.com with your custom domain name.
+If you have a custom domain name for accessing the OpenDataSoft platform, replace in the below 
+\<YOURDOMAIN\>.opendatasoft.com with your custom domain name.
 
 To connect your Disqus account to the ODS Platform, follow the steps below:
 
-1. Create a Disqus account at: <https://disqus.com/admin/signup/>.
+1. Create a Disqus account at: `<https://disqus.com/admin/signup/>`_.
 
-2. Create a new site profile here: <http://disqus.com/admin/create/>.  
+2. Create a new site profile here: `<http://disqus.com/admin/create/>`_.  
     - Enter a site name (as you want)  
     - Choose your Disqus URL (please keep in mind that this is your **shortname**)  
     - Select the right category
 
-2. Register a new application here: <http://disqus.com/api/applications/register/>.
+2. Register a new application here: `<http://disqus.com/api/applications/register/>`_.
 
-3. Go to your application Dashboard: <http://disqus.com/api/applications/>.
+3. Go to your application Dashboard: `<http://disqus.com/api/applications/>`_.
    Please note that the "Public Key" is your **Disqus API key**.
    For security reasons, never share and never use the "Secret Key".
 
@@ -22,7 +24,8 @@ To connect your Disqus account to the ODS Platform, follow the steps below:
     - Click on the "settings" link (http://disqus.com/api/applications/XXXX/update/)  
     - Add *\<YOURDOMAIN\>.opendatasoft.com* to the allowed domains
 
-Once done, you can connect to the ODS Platform and look at the domain configuration: http://XXXX.opendatasoft.com/domain/.
+Once done, you can connect to the ODS Platform and look at the domain configuration: 
+http://XXXX.opendatasoft.com/domain/.
 In the Disqus integration section, copy and paste your disqus shortname and the API key.  
 Don't forget to check "Enable Disqus in Explore".
 
