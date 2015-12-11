@@ -1,5 +1,5 @@
 Getting Started
-_______________
+===============
 
 .. toctree::
    :titlesonly:
