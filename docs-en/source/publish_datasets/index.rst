@@ -1,5 +1,5 @@
 Publishing Datasets
-___________________
+===================
 
 .. toctree::
    :titlesonly:
