@@ -11,4 +11,4 @@ API
    Dataset Catalog APIs <catalog_api>
    Dataset Records APIs <records_api>
    OData API <odata/index>
-   Pushing Records <pushing_records/index>
+   Pushing Records <push_api>
