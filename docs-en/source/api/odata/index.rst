@@ -1,5 +1,5 @@
 OData API
-_________
+=========
 
 .. toctree::
    :titlesonly:
