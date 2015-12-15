@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Documentation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-15 11:48+0100\n"
+"PO-Revision-Date: 2015-12-11 09:44+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: French (http://www.transifex.com/opendatasoft/documentation-5/language/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/theme/responsive-menus.rst:2
+msgid "Responsive menus"
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:6
+msgid ""
+"This page explores in length the customization of the platform responsive "
+"menu directive. This entails a fair amount of HTML and CSS code to be "
+"written and explained. You'll need working knowledge of both these "
+"technologies to understand the content of this page."
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:10
+msgid ""
+"For basic customization needs, check out the :doc:`introduction to theme "
+"management for the portal <intro>`."
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:13
+msgid ""
+"One very common pattern in graphic design is to have the header menu hidden "
+"on small screens and replaced by a single toggle button, which usually "
+"features the famous *hamburger icon* |hamburger|."
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:18
+msgid ""
+"Clicking this button opens or closes a drawer containing all menu items. "
+"This behaviour can be seen on `OpenDataSoft's central data repository "
+"<https://data.opendatasoft.com/page/home/>`_ and on all new portals."
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:24
+msgid "Closed drawer"
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:29
+msgid "Open drawer"
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:32
+msgid "Implementation"
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:34
+msgid ""
+"Implementing this behaviour usually means resorting heavily to *media "
+"queries*, that is CSS rules applied only for a given screen width. To "
+"facilitate this work, OpenDataSoft's provides a handy directive called "
+"``ods-responsive-menu`` that you should use within the header as follow."
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:50
+msgid "This directive is actually an ensemble of 3 directives:"
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:52
+msgid ""
+"``ods-responsive-menu`` (attribute directive, used as an attribute of "
+"another html tag)"
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:54
+msgid ""
+"Used to specify (through the ``breakpoint`` attribute) the screen width (in "
+"px) under which the drawer should appear and over which things should be "
+"displayed normally."
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:57
+msgid ""
+"``ods-responsive-menu-placeholder`` (element directive used as an html tag)"
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:59
+msgid ""
+"Wraps the content that will be invisible unless we are below the breakpoint."
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:61
+msgid "``ods-responsive-menu-collapsible`` (element directive)"
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:63
+msgid ""
+"Wraps the content that will be displayed normally over the breakpoint but "
+"collapsed within the drawer below."
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:66
+msgid "Writing styles for the collapsed header content"
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:68
+msgid ""
+"Going from an horizontal layout to a vertical layouts entails quite a few "
+"graphical changes, as demonstrated by the platform's default header."
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:74
+msgid "Desktop header."
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:79
+msgid "Mobile header."
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:81
+msgid ""
+"In order for you to change the style accordingly, the ``ods-responsive-menu-"
+"collapsible`` element will wrap its content with the ``.ods-responsive-menu-"
+"collapsible--collapsed`` when (and only when) the screen is smaller than the"
+" breakpoint. This enables you to clearly separate the style for the two "
+"layout-styles (horizontal and vertical)."
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:96
+msgid "Writing styles for the drawer"
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:98
+msgid ""
+"If you'd like to customize the overall look of the drawer, you will need to "
+"now the name of the classes applied to elements created by the 3 directives."
+" The code sample we saw earlier will render as:"
+msgstr ""
+
+#: ../../source/theme/responsive-menus.rst:123
+msgid ""
+"On top of that, the ``.ods-responsive-menu-collapsible`` element will get "
+"the class ``.ods-responsive-menu-collapsible--collapsed`` as soon as the "
+"screen width falls below the breakpoint and the class ``.ods-responsive-"
+"menu-collapsible--expanded`` to mark whenever the user wants the menu to be "
+"displayed."
+msgstr ""

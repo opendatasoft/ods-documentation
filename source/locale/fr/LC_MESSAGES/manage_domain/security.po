@@ -1,0 +1,258 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Documentation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-15 11:48+0100\n"
+"PO-Revision-Date: 2015-12-15 09:44+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: French (http://www.transifex.com/opendatasoft/documentation-5/language/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/manage_domain/security.rst:2
+msgid "Managing the Security of your Domain"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:5
+msgid "OpenDataSoft's security model"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:7
+msgid ""
+"OpenDataSoft provides a full stack security layer with users, groups and "
+"roles management. Using this security layer, you can restrict the access to "
+"your dataset's catalog as well as to the content of a single dataset."
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:10
+msgid ""
+"An OpenDataSoft domain can be kept private or can be made public. When set "
+"to private, a domain can only be accessed by users defined in the access "
+"list of the domain. When set to public, a domain can be accessed by anyone "
+"(this however does not mean that any user will be able to browse the entire "
+"domain catalog)."
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:14
+msgid ""
+"The domain access list is made of users and groups of users to which "
+"permissions are attached. Two different set of permissions can be defined: "
+"permissions related to regular users and permissions related to admin users "
+"(those guys with super powers). The permissions make it possible to allow "
+"users to read the dataset catalog, create and publish new datasets or even "
+"visualize and modify any dataset of the domain."
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:19
+msgid ""
+"Then, at the dataset level, it is possible to even further refine the "
+"security model by giving specific access to users or groups to either view "
+"or modify the dataset. It is also possible to define advanced filters so "
+"that a given user will only see some fields and/or a subset of the dataset "
+"records."
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:24
+msgid "Configuring your domain's security policy"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:27
+msgid "Domain access and default security policy"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:32
+msgid ""
+"Check the option **allow anonymous access** if you want to let people access"
+" your domain without having to log in. Anonymous users will only be able to "
+"access non restricted datasets. This makes it possible to mix on the single "
+"domain a public facing catalog and a private catalog that can only be "
+"accessed by authorized users."
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:36
+msgid ""
+"Datasets access can be set to be *restricted* or *not restricted*. A "
+"*restricted* dataset can only be accessed by authorized users (users who are"
+" in the access list of the dataset, see below). Check the option **restrict "
+"new datasets by default** if you want newly created datasets to be accessed "
+"only by authorized users."
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:40
+msgid ""
+"The **landing page for anonymous users** can be set to any content page "
+"created on the domain. It makes it possible to host a splash screen or to "
+"disclose content to anonymous users from a private domain."
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:43
+msgid ""
+"This section also allows you to define the **default permissions for new "
+"users** (see below for a detailed description of users permissions)."
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:47
+msgid "Domain access list"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:52
+msgid ""
+"The domain access list are made of users and groups. Users' scope is "
+"platform wide (this means that a user can be associated with more than one "
+"domain) while groups' scope is domain wide (groups are not shared among "
+"domains)."
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:55
+msgid ""
+"The effective permissions of a user are the union of the user's own "
+"permissions and of the permissions of the groups the user belongs to. This "
+"means that if a user does not have administrative rights set while they "
+"belong to a group which has administrative rights, the user will effectively"
+" be given administrative rights."
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:59
+msgid ""
+"There are two categories of **permissions**: standard permissions and "
+"administative permissions. Permissions can be attributed to users and "
+"groups."
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:65
+msgid "Standard permissions"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:63
+msgid "The user may create new datasets and edit them"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:64
+msgid "The user may publish their datasets"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:65
+msgid "The user may manage the security settings of their datasets"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:72
+msgid "Administrative permissions"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:68
+msgid "The user may browse all the datasets on the domain"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:69
+msgid "The user may edit all the datasets on the domain"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:70
+msgid "The user may create and edit content pages on the domain"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:71
+msgid "The user may edit and moderate reuses on the domain"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:72
+msgid "The user may edit domain properties"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:75
+msgid "Dataset access list"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:80
+msgid ""
+"As seen above, a **restricted** dataset can only be accessed by users "
+"defined in the access list of the dataset, users belonging to a group "
+"defined in the access list of the dataset or users with special "
+"administrative permissions."
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:83
+msgid "Users and groups can easily be added to the access list of a dataset."
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:85
+msgid ""
+"If a user belongs to the access list of a dataset (or to a group which "
+"belongs to the access list of a dataset), they may access this dataset in "
+"the exploration console or through APIs. Two additional permissions are also"
+" available:"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:88
+msgid "The user may edit the dataset"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:89
+msgid "The user may publish the dataset"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:94
+msgid ""
+"**Filters** may be used to further refine the permissions of a given user on"
+" a dataset. It is possible to restrict the fields a user can see by using "
+"the **available fields** selector. And it is possible to restrict the set of"
+" records a user can see by using the **filter query** input. The filter "
+"query shall contain any valid query language expression."
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:98
+msgid ""
+"For non restricted datasets, filters defined in the **default security** "
+"section apply to anonymous users or to authenticated users who do not belong"
+" to the access list."
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:101
+msgid ""
+"The effective filter of a user belonging to the access list of a dataset is "
+"the union of the users's filters and the filters of the groups the user "
+"belongs to."
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:105
+msgid "Users management workflow"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:107
+msgid ""
+"As an administrator, you can add users to your domain directly through your "
+"users management screen. You can also activate a registration workflow to "
+"let users initiate the registration process themselves."
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:110
+msgid "#### Manually adding users to the domain"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:112
+msgid ""
+"To do so, simply hit the **add users** button. You can then either search "
+"for an existing user on the platform (remember that user management is "
+"platform wide) or simply invite new users by entering their email addresses."
+" New users will receive an email asking them to validate their account."
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:117
+msgid "Configuring the registration workflow"
+msgstr ""
+
+#: ../../source/manage_domain/security.rst:122
+msgid ""
+"It is also possible to configure the registration workflow. This workflow "
+"allows users to sign up by themselves. A registration can either be manually"
+" or automatically validated, depending on the configuration. A set of fields"
+" allows you to customize the signup page."
+msgstr ""

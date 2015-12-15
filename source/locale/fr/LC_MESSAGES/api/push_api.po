@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Documentation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-15 11:48+0100\n"
+"PO-Revision-Date: 2015-12-15 09:44+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: French (http://www.transifex.com/opendatasoft/documentation-5/language/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/api/push_api.rst:2
+msgid "Real Time Push API"
+msgstr ""
+
+#: ../../source/api/push_api.rst:4
+msgid ""
+"This API is designed to make it possible to build datasets out of **real "
+"time data**. The expected latency (time for a record to be processed and "
+"made available to the search API enpoints) shall be **less than 2 second**."
+msgstr ""
+
+#: ../../source/api/push_api.rst:7
+msgid "This API is especially useful for building crowd-sourced datasets."
+msgstr ""
+
+#: ../../source/api/push_api.rst:9
+msgid ""
+"Real time push entry points can be made available by dataset owners. Once "
+"the real time resource is ready, you can start sending data to it."
+msgstr ""
+
+#: ../../source/api/push_api.rst:13
+msgid "Adding a record"
+msgstr ""
+
+#: ../../source/api/push_api.rst:15
+msgid "**API endpoint**: ``/api/push/1.0/<DATASET>/<RESOURCE>/push/``"
+msgstr ""
+
+#: ../../source/api/push_api.rst:17
+msgid ""
+"To add a record, simply send a POST request on the API endpoint with the "
+"request URL containing your API key and the request body containing a JSON "
+"document with all the fields you want to set."
+msgstr ""
+
+#: ../../source/api/push_api.rst:20
+msgid "Example:"
+msgstr ""
+
+#: ../../source/api/push_api.rst:22
+msgid ""
+"Let's assume that a domain **realtime** contains a dataset named "
+"**realtime_dataset** and that this dataset contains a realtime resource "
+"named **realtime_resource**."
+msgstr ""
+
+#: ../../source/api/push_api.rst:25
+msgid "The dataset **realtime_dataset** contains the following fields:"
+msgstr ""
+
+#: ../../source/api/push_api.rst:30
+msgid "Field Name"
+msgstr ""
+
+#: ../../source/api/push_api.rst:31
+msgid "Field Type"
+msgstr ""
+
+#: ../../source/api/push_api.rst:32
+msgid "identifier"
+msgstr ""
+
+#: ../../source/api/push_api.rst:33
+msgid "text"
+msgstr ""
+
+#: ../../source/api/push_api.rst:34
+msgid "timestamp"
+msgstr ""
+
+#: ../../source/api/push_api.rst:35
+msgid "date and time"
+msgstr ""
+
+#: ../../source/api/push_api.rst:36
+msgid "parameter"
+msgstr ""
+
+#: ../../source/api/push_api.rst:37
+msgid "ext"
+msgstr ""
+
+#: ../../source/api/push_api.rst:38
+msgid "value"
+msgstr ""
+
+#: ../../source/api/push_api.rst:39
+msgid "double"
+msgstr ""
+
+#: ../../source/api/push_api.rst:41
+msgid ""
+"And you have an API key which allows you to push records to this dataset: "
+"**dezn198329kkjnKJN290909**."
+msgstr ""
+
+#: ../../source/api/push_api.rst:43
+msgid ""
+"To add a new record, post to this URL: "
+"``http://realtime.opendatasoft.com/api/push/1.0/realtime_dataset/realtime_resource/push/?apikey=dezn198329kkjnKJN290909``"
+" the folowing content:"
+msgstr ""
+
+#: ../../source/api/push_api.rst:56
+msgid "With curl, this would give:"
+msgstr ""
+
+#: ../../source/api/push_api.rst:62
+msgid "If everything is ok, the server shall respond:"
+msgstr ""
+
+#: ../../source/api/push_api.rst:68
+msgid "In case of error, it shall return an error message."
+msgstr ""
