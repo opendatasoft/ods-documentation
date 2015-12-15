@@ -4,8 +4,8 @@ Publishing Datasets
 .. toctree::
    :titlesonly:
 
-   Creating a Dataset <create_dataset>
-   Transforming a Dataset <transform_dataset>
-   Available Processors <processors>
-   Dataset subscriptions <dataset_subscriptions>
-   Configuring a dataset for Citadel JSON <citadeljson>
+   create_dataset
+   transform_dataset
+   processors
+   dataset_subscriptions
+   citadeljson
