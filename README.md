@@ -121,7 +121,9 @@ tx init --user=<username> --pass=<password>
 sphinx-intl update-txconfig-resources --pot-dir build/locale --transifex-project-name documentation-5
 ```
 
-### Build po files
+### Build po files and push them to transifex
+
+Shortcut: `make translations`
 
 ``` bash
 make gettext
@@ -129,7 +131,9 @@ sphinx-intl update -p build/locale -l fr
 tx push -s
 ```
 
-### Build translated documentation
+### Fetch translations from transifex and build translated documentation
+
+Shortcut: `make localizedhtml`
 
 ```bash
 tx pull -l fr
