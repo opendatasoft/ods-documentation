@@ -61,4 +61,4 @@ The configuration of the identity provider is implementation-dependant, but it a
 provider metadata document to enable a identity federation.
 
 You can download the metadata document for your OpenDataSoft domain on 
-`<https://\<YOUR DOMAIN\>.opendatasoft.com/saml2/metadata.xml>`_
+``<https://\<YOUR DOMAIN\>.opendatasoft.com/saml2/metadata.xml>``
