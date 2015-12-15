@@ -19,11 +19,26 @@ account.
 Go on your domain configuration page, in the *Integrations* tab; you will find a Mapbox configuration form where you can 
 enter your Mapbox public access token. A message will confirm whether your access token is valid or not.
 
-.. image:: mapbox-integration.png
-   :alt: Mapbox integration configuration
+.. ifconfig:: language == 'en'
+
+    .. image:: mapbox__integration--en.png
+       :alt: Mapbox integration configuration
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: mapbox__integration--fr.png
+       :alt: Configuration de l'intégration Mapbox
+
 
 You can then go on the *Customization* tab and configure new *Custom tiles*: you will be able to select one of Mapbox's 
 default styles, or choose "Custom" to enter the MapID of a map you created on Mapbox.
 
-.. image:: custom_tiles.png
-   :alt: Custom tiles configuration  
+.. ifconfig:: language == 'en'
+
+    .. image:: mapbox__custom-tiles--en.png
+       :alt: Custom tiles configuration
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: mapbox__custom-tiles--fr.png
+       :alt: Configuration des tuiles personnalisées

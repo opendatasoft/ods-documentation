@@ -9,15 +9,29 @@ Every user that is logged on your domain is able to subscribe to any dataset the
 anonymous users to register, then they will see a grayed-out button that will encourage them to sign up to be able to 
 subscribe; the button won't appear to anonymous users on domains that don't allow registration.
 
-.. image:: subscribe-button-en.png
-   :alt: Subscribe button
+.. ifconfig:: language == 'en'
+
+   .. image:: dataset_subscriptions__subscribe-button--en.png
+      :alt: Subscribe button
+
+.. ifconfig:: language == 'fr'
+
+   .. image:: dataset_subscriptions__subscribe-button--fr.png
+      :alt: Bouton abonnement
 
 When there is at least one subscriber on a dataset, then a new "Subscribers" tab is available to its publishers in the 
 dataset's publish console. This tab provides the list of users that are currently subscribed, and a form to directly 
 send them a notification by email.
 
-.. image:: publisher-tab-en.png
-   :alt: Publisher tab
+.. ifconfig:: language == 'en'
+
+   .. image:: dataset_subscriptions__publisher-tab--en.png
+      :alt: Publisher tab
+
+.. ifconfig:: language == 'fr'
+
+   .. image:: dataset_subscriptions__publisher-tab--fr.png
+      :alt: Onglet pour producteur
 
 It is recommended to send a notification when the structure of the dataset changes (e.g. a field disappears or changes 
 its name), or when the data changes in a significant way.

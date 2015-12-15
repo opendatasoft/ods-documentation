@@ -25,10 +25,24 @@ In the publish console of your dataset, at the bottom of the "Informations" tab,
 There, you will be able to configure the required information by filling the name (not the label!) of the field that 
 contains this information for each record.
 
-.. image:: configuration.png
-   :alt: Configuration
+.. ifconfig:: language == 'en'
+
+   .. image:: citadeljson__configuration--en.png
+      :alt: Configuration
+
+.. ifconfig:: language == 'fr'
+
+   .. image:: citadeljson__configuration--fr.png
+      :alt: Configuration
 
 Once saved and published, your users will be able to download the dataset as Citadel JSON.
 
-.. image:: download-en.png
-   :alt: Download
+.. ifconfig:: language == 'en'
+
+   .. image:: citadeljson__download--en.png
+      :alt: Download
+
+.. ifconfig:: language == 'fr'
+
+   .. image:: citadeljson__download--fr.png
+      :alt: Téléchargement

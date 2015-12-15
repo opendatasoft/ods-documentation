@@ -13,21 +13,42 @@ The dataset creation workflow is very simple.
 
 1. Hit the **New** button
 
-    .. image:: publish_newbutton.jpg
-       :alt: New Dataset
+   .. ifconfig:: language == 'en'
+
+      .. image:: publish__newbutton--en.jpg
+         :alt: New Dataset
+
+   .. ifconfig:: language == 'fr'
+
+      .. image:: publish__newbutton--fr.png
+         :alt: Nouveau jeu de données
 
 2. Add a new data source by hitting the **Add a source** button
 
-    .. image:: publish_addsource.jpg
-       :alt: New Data Source
+   .. ifconfig:: language == 'en'
+
+      .. image:: publish__addsource--en.jpg
+         :alt: New Data Source
+
+   .. ifconfig:: language == 'fr'
+
+      .. image:: publish__addsource--fr.png
+         :alt: Nouvelle source de données
 
     Note that this step is optional as you can configure a dataset with no datasource, simply filling out the dataset 
     metadata in the **Information** tab.
 
 3. Define your data source
 
-    .. image:: publish_source.jpg
-       :alt: Configure Data Source
+   .. ifconfig:: language == 'en'
+
+      .. image:: publish__source--en.jpg
+         :alt: Configure Data Source
+
+   .. ifconfig:: language == 'fr'
+
+      .. image:: publish__source--fr.png
+         :alt: Configurer une source de données
 
     You can either:
 
@@ -41,8 +62,15 @@ The dataset creation workflow is very simple.
 
 4. **Save** and **publish** your newly created dataset
 
-    .. image:: publish_saveandpublish.jpg
-       :alt: Save and Publish
+   .. ifconfig:: language == 'en'
+
+      .. image:: publish__saveandpublish--en.jpg
+         :alt: Save and Publish
+
+   .. ifconfig:: language == 'fr'
+
+      .. image:: publish__saveandpublish--fr.png
+         :alt: Sauvegarder et publier
 
 Supported file formats
 ----------------------

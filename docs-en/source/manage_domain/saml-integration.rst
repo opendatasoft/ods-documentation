@@ -14,13 +14,27 @@ Register and configure an identity provider
 
 1. Navigate to the integration page in the domain configuration interface.
 
-.. image:: saml-integrations.png
-   :alt: Integrations configuration page
+.. ifconfig:: language == 'en'
+
+    .. image:: saml__integrations--en.png
+       :alt: Integrations configuration page
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: saml__integrations--fr.png
+       :alt: Page de de configuration des intégrations du domaine
 
 2. Check "Allow access for SAML users"
 
-.. image:: saml-config.png
-   :alt: SAML IDP configuration interface
+.. ifconfig:: language == 'en'
+
+    .. image:: saml__config--en.png
+       :alt: SAML IDP configuration interface
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: saml__config--fr.png
+       :alt: Interface de configuration de fournisseur d'identité SAML
 
 3. Paste your identity provider metadata document in the "IDP metadata document" field.
 

@@ -3,9 +3,17 @@ Configuring a dataset for calendar view
 
 The OpenDataSoft platform lets you easily create calendar views from your published datasets.
 
-.. figure:: calendar_result_en.png
+.. ifconfig:: language == 'en'
 
-   A calendar built from a dataset containing all events from OpenAgenda
+    .. figure:: calendar__result--en.png
+
+       A calendar built from a dataset containing all events from OpenAgenda
+
+.. ifconfig:: language == 'fr'
+
+    .. figure:: calendar__result--fr.png
+
+       A calendar built from a dataset containing all events from OpenAgenda
 
 Datasets requirements
 ---------------------
@@ -14,9 +22,17 @@ For the calendar view, each record of your dataset is a different event. These e
 time and a title. Which means your dataset must have two datetime fields and a text field for the calendar view to be 
 available.
 
-.. figure:: calendar_processing_settings_en.png
+.. ifconfig:: language == 'en'
 
-   2 fields set as datetime
+    .. figure:: calendar__processing_settings--en.png
+
+       2 fields set as datetime
+
+.. ifconfig:: language == 'fr'
+
+    .. figure:: calendar__processing_settings--fr.png
+
+       2 fields set as datetime
 
 Records without titles will be displayed on the calendar as titleless events, but missing either the start or end time 
 will cause the view to simply ignore the record.
@@ -36,20 +52,40 @@ Enabling the calendar view
 Once you have configured two of your dataset's fields as datetimes and another field as text, you'll see the calendar 
 tab become available.
 
-.. figure:: calendar_tab_unavailable_en.png
+.. ifconfig:: language == 'en'
 
-   Calendar tab unavailable
+    .. figure:: calendar__tab_unavailable--en.png
 
-.. figure:: calendar_tab_available_en.png
+       Calendar tab unavailable
 
-   Calendar tab available
+    .. figure:: calendar__tab_available--en.png
+
+       Calendar tab available
+
+.. ifconfig:: language == 'fr'
+
+    .. figure:: calendar__tab_unavailable--fr.png
+
+       Calendar tab unavailable
+
+    .. figure:: calendar__tab_available--fr.png
+
+       Calendar tab available
 
 It doesn't mean that your dataset is fully configured though. The view is available but not enabled by default. You'll 
 have to manually enable it.
 
-.. figure:: calendar_checkbox_en.png
+.. ifconfig:: language == 'en'
 
-   This checkbox will enable the calendar view
+    .. figure:: calendar__checkbox--en.png
+
+       This checkbox will enable the calendar view
+
+.. ifconfig:: language == 'fr'
+
+    .. figure:: calendar__checkbox--fr.png
+
+       This checkbox will enable the calendar view
 
 Setting up events' fields
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -61,13 +97,25 @@ properties.
 
 This is also where you'll be able to select the events' color.
 
-.. figure:: calendar_event_default_settings_en.png
+.. ifconfig:: language == 'en'
 
-   Default configuration for my calendar. The event's fields are pre-selected but not correct.
+    .. figure:: calendar__event_default_settings--en.png
 
-.. figure:: calendar_event_settings_en.png
+       Default configuration for my calendar. The event's fields are pre-selected but not correct.
 
-   Corrected settings
+    .. figure:: calendar__event_settings--en.png
+
+       Corrected settings
+
+.. ifconfig:: language == 'fr'
+
+    .. figure:: calendar__event_default_settings--fr.png
+
+       Default configuration for my calendar. The event's fields are pre-selected but not correct.
+
+    .. figure:: calendar__event_settings--fr.png
+
+       Corrected settings
 
 Setting up the tooltip
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -76,13 +124,21 @@ In the calendar view, a click on a event will bring forward a tooltip containing
 can of course configure which fields will appear in the tooltip and their relative order. A live preview is available 
 on the right side.
 
-.. figure:: calendar_tooltip_settings_en.png
+.. ifconfig:: language == 'en'
 
-   Setting up the tooltip
+    .. figure:: calendar__tooltip_settings--en.png
+
+       Setting up the tooltip
+
+.. ifconfig:: language == 'fr'
+
+    .. figure:: calendar__tooltip_settings--fr.png
+
+       Setting up the tooltip
 
 For each of the tooltip's fields, the 3 following actions are available :
 
-.. figure:: calendar_tooltip_actions.png
+.. figure:: calendar__tooltip_actions.png
 
    Tooltip's fields' actions
 
@@ -90,9 +146,17 @@ For each of the tooltip's fields, the 3 following actions are available :
 * Click to remove field from tooltip
 * Click to add field to tooltip
 
-.. figure:: calendar_tooltip_preview_en.png
+.. ifconfig:: language == 'en'
 
-   The associated live preview
+    .. figure:: calendar__tooltip_preview--en.png
+
+       The associated live preview
+
+.. ifconfig:: language == 'fr'
+
+    .. figure:: calendar__tooltip_preview--fr.png
+
+       The associated live preview
 
 Sharing
 -------
@@ -105,18 +169,42 @@ offered below the calendar itself.
 
 1. Share the url
 
-.. figure:: calendar_share_en.png
-   
-   The 3 sharing options, with first and foremost the url
-   
+.. ifconfig:: language == 'en'
+
+    .. figure:: calendar__share--en.png
+
+       The 3 sharing options, with first and foremost the url
+
+.. ifconfig:: language == 'fr'
+
+    .. figure:: calendar__share--fr.png
+
+       The 3 sharing options, with first and foremost the url
+
 2. Code snippet to embed the view inside any other website
 
-.. figure:: calendar_embed_en.png
+.. ifconfig:: language == 'en'
 
-   Embed this code into any other page to display your calendar there
-   
+    .. figure:: calendar__embed--en.png
+
+       Embed this code into any other page to display your calendar there
+
+.. ifconfig:: language == 'fr'
+
+    .. figure:: calendar__embed--fr.png
+
+       Embed this code into any other page to display your calendar there
+
 3. Code snippet to include in any of your dashboard or page on the platform.
 
-.. figure:: calendar_widget_en.png
+.. ifconfig:: language == 'en'
 
-   Copy this code to one your dashboard on the platform
+    .. figure:: calendar__widget--en.png
+
+       Copy this code to one your dashboard on the platform
+
+.. ifconfig:: language == 'fr'
+
+    .. figure:: calendar__widget--fr.png
+
+       Copy this code to one your dashboard on the platform

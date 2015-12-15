@@ -19,7 +19,7 @@ As seen in a previous article, a dataset content can be seen as flat database ta
 
 Whatever the original data source format is, the dataset content ends up as a flat database table content.
 
-.. image:: publish_fields.jpg
+.. image:: publish__fields--en.jpg
    :alt: Dataset Fields
 
 Fields have a type. The following types are available:
@@ -66,7 +66,7 @@ Configuring a field
 
 The **field configuration button** allows you to fine tune your field's configuration.
 
-.. image:: publish_fieldannotations.jpg
+.. image:: publish__fieldannotations--en.jpg
    :alt: Dataset Processors
 
 The generic option **ID** let's you define the record id computing policy. Each record is uniquely identified by its 
@@ -114,7 +114,7 @@ In the same screen, you also have accesss to the processors configuration. A pro
 modify the content of your dataset: concatenate values, extract text matching a specific expression, perform numerical 
 operations, geocode full text addresses...
 
-.. image:: publish_processors.jpg
+.. image:: publish__processors--en.jpg
    :alt: Dataset Processors
 
 The exhaustive list of processors and associated configuration parameters and features are described in dedicated 

@@ -19,7 +19,7 @@ ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) sou
 # the i18n builder cannot share the environment and doctrees with the others
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
-.PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest coverage gettext translationfiles localizedhtml
+.PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest coverage gettext translations localizedhtml server
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
@@ -47,8 +47,9 @@ help:
 	@echo "  linkcheck          to check all external links for integrity"
 	@echo "  doctest            to run all doctests embedded in the documentation (if enabled)"
 	@echo "  coverage           to run coverage check of the documentation (if enabled)"
-	@echo "  translationfiles   to build .po files and upload them to transifex"
+	@echo "  translations       to build .po files and upload them to transifex"
 	@echo "  localizedhtml      to fetch translations and build localized html"
+	@echo "  server             to serve the documentation locally"
 
 clean:
 	rm -rf $(BUILDDIR)/*
@@ -193,7 +194,7 @@ pseudoxml:
 	@echo
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
 
-translationfiles: gettext
+translations: gettext
 	@echo "Building translation files"
 	sphinx-intl update -p $(BUILDDIR)/locale -l fr
 	sphinx-intl update-txconfig-resources --pot-dir $(BUILDDIR)/locale --transifex-project-name documentation-5
@@ -207,3 +208,7 @@ localizedhtml:
 	@echo "Building translated html"
 	make -e SPHINXOPTS="-D language='fr'" html
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+
+server:
+	@echo "Serving local files on port 9000: http://localhost:9000"
+	python -m SimpleHTTPServer 9000
