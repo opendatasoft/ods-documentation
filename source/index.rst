@@ -13,4 +13,5 @@ Welcome to OpenDataSoft documentation!
    manage_domain/index
    theme/index
    api/index
+   apiv2/index
    faq
