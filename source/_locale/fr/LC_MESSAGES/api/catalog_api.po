@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Documentation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 15:40+0100\n"
+"PO-Revision-Date: 2015-12-15 09:44+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: French (http://www.transifex.com/opendatasoft/documentation-5/language/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/api/catalog_api.rst:2
+msgid "Dataset Catalog APIs"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:5
+msgid "Dataset Lookup API"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:7
+msgid "This API makes it possible to fetch an individual dataset information."
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:9
+msgid "**API endpoint**: ``/api/datasets/1.0/<DATASETID>``"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:11 ../../source/api/catalog_api.rst:36
+msgid "**Query**"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:16 ../../source/api/catalog_api.rst:41
+msgid "Parameter Name"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:17 ../../source/api/catalog_api.rst:42
+msgid "Description"
+msgstr "Description"
+
+#: ../../source/api/catalog_api.rst:18
+msgid "``datasetid``"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:19
+msgid ""
+"Part of the URL path. Identifier of the dataset. Example: "
+"``http://<DOMAIN_ID>/api/dataset/1.0/arbresremarquablesparis2011?...``"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:21 ../../source/api/catalog_api.rst:68
+msgid "``pretty_print``"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:22 ../../source/api/catalog_api.rst:69
+msgid ""
+"If set to true (default is false), pretty prints JSON and JSONP outputs."
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:23 ../../source/api/catalog_api.rst:70
+msgid "``format``"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:24
+msgid "Format of the response output. One of JSON (default) and JSONP."
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:25 ../../source/api/catalog_api.rst:72
+msgid "``callback``"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:26 ../../source/api/catalog_api.rst:73
+msgid "JSONP callback. Example: ``format=jsonp&callback=myFunction``"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:29
+msgid "Dataset Search API"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:31
+msgid ""
+"This API provides a search facility in the dataset catalog. Full text search"
+" as well as multi-criteria field queries are made possible and results "
+"facetting is provided as well."
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:34
+msgid "**API endpoint**: ``/api/datasets/1.0/search``"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:43
+msgid "``q``"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:44
+msgid ""
+"The full-text query. This parameter can be left empty, in which case no "
+"full-text filtering on the result set occurs."
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:46
+msgid "``facet``"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:47
+msgid ""
+"Activates faceting on the specified field (see Appendices for the available "
+"list of facets on Datasets). This parameter can be used multiple times to "
+"simultaneously activate several facets. By default, faceting is disabled. "
+"Example: ``facet=modified``"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:50
+msgid "``refine.&lt;FACET&gt;``"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:51
+msgid ""
+"Facet based filtering. This parameter limits the result set to the results "
+"matching a facet value. It can be used several times for the same facet or "
+"for different facets. Examples: ``refine.modified=2012/02``, "
+"``refine.modified=2012/02&refine.publisher=Paris``"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:54
+msgid "``exclude.&lt;FACET&gt;``"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:55
+msgid ""
+"Facet based filtering. This parameter excludes the results matching a "
+"facet's value from the result set. It can be used several times for the same"
+" facet or for different facets. Examples: ``exclude.modified=2012/02``, "
+"``exclude.modified=2012/02&exclude.publisher=Paris``"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:58
+msgid "``sort``"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:59
+msgid ""
+"Sorts results according to the specified field (the sortable fields for the "
+"dataset search API are: ``modified``, ``issued``, ``created`` and "
+"``records_count``). By default, the sort is descending (from the highest "
+"value to the smallest value). A minus sign ('-') may be used to perform an "
+"ascending sort. Examples: ``sort=issued``, ``sort=-issued``"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:63
+msgid "``rows``"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:64
+msgid ""
+"Number of results to return in a single call. The maximum number of rows "
+"returned is 1000. By default, 10 results are returned."
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:66
+msgid "``start``"
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:67
+msgid ""
+"Index of the first result to return (starting at 0). To be used in "
+"conjunction with \"rows\" to implement paging."
+msgstr ""
+
+#: ../../source/api/catalog_api.rst:71
+msgid ""
+"Format of the response output. One of JSON (default), JSONP, CSV and RSS."
+msgstr ""

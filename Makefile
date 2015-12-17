@@ -200,11 +200,11 @@ translations: gettext
 	sphinx-intl update-txconfig-resources --pot-dir $(BUILDDIR)/locale --transifex-project-name documentation-5
 	@echo "Uploading translation files to Transifex"
 	tx push -s
-	@echo "Build finished. Translation files uploaded to transifex"
-
-localizedhtml:
 	@echo "Fetching translation files from transifex"
 	tx pull -f fr
+	@echo "Build finished. Translation templates (.pot) uploaded to transifex, translations (.po) retrieved from transifex"
+
+localizedhtml:
 	@echo "Building translated html"
 	make -e SPHINXOPTS="-D language='fr'" html
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
