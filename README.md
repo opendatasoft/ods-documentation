@@ -16,9 +16,6 @@ To be able to push to and retrieve from transifex the translation files (.po), y
 Once this is done, you'll have to configure your environment with:
 
 ``` bash
-pip install sphinx-intl
-pip install transifex-client
-
 tx init --user=<username> --pass=<password>
 sphinx-intl update-txconfig-resources --pot-dir build/locale --transifex-project-name documentation-5
 ```
