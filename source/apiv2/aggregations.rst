@@ -25,10 +25,10 @@ It also allows for more complex aggregations.
 
 > Example: the average price sale per country during the year: total sales amount / total sales count.
 
-You can also join to each group a finite list of fetched values, that is values extracted from the group rows according
-to a criteria:
+.. You can also join to each group a finite list of fetched values, that is values extracted from the group rows according
+    to a criteria:
 
-> Example: the best performing month (ie month with the most sales_amount) for each country.
+    > Example: the best performing month (ie month with the most sales_amount) for each country.
 
 All of the following would be summed up in the following request.
 
@@ -37,7 +37,6 @@ All of the following would be summed up in the following request.
     {
         virtual_fields: {
             daily_avg_sale_price: 'sales_amount/sales_count'
-            month: 'date_format(sales_date, "MM")'
         },
         aggregations: {
             my_aggregation: { // name of this aggregation, used to multiplex multiple aggregations
@@ -77,10 +76,6 @@ Which would then generate the following response
                     total_sales_amount: XY,
                     overall_average_sale_price: YY,
                     real_average_sale_price: YZ,
-                    best_performing_month: {
-                        month: 'may',
-                        sales_amount: ZZ,
-                    }
                 },
                 {
                     store_country: 'albania',
@@ -88,10 +83,6 @@ Which would then generate the following response
                     total_sales_amount: XY,
                     overall_average_sale_price: YY,
                     real_average_sale_price: YZ,
-                    best_performing_month: {
-                        month: 'may',
-                        sales_amount: ZZ,
-                    }
                 },
                 // etc...
             ]
@@ -112,8 +103,7 @@ little less sales each day and pocket the difference at the end of the year.
 
     {
         virtual_fields: {
-            reported_sales_amount: 'SUM([sales_amount, -20])'
-            // absolutely equivalent to "reported_sales_amount: 'sales_amount - 20'"
+            reported_sales_amount: 'sales_amount - 20'
         },
         aggregations: {
             my_aggregation: { // name of this aggregation, used to multiplex multiple aggregations
@@ -201,27 +191,68 @@ Group by functions
 ------------------
 
 Used to split ``aggregates`` results by field values.
+``group_by`` attribute takes a list of group_by expressions.
+The result will be sorted, depending of group_by field values.
+For instance ``group_by[store_country, store_name]`` will return :
+
+.. code-block:: json
+
+    ...
+    {
+        "store_country": "France",
+        "store_name": "Celio",
+        ...
+    },
+    {
+        "store_country": "France",
+        "store_name": "Naf-Naf",
+        ...
+    },
+    {
+        "store_country": "USA",
+        "store_name": "Nike",
+        ...
+    },
+    {
+        "store_country": "USA",
+        "store_name": "Reebok",
+        ...
+    }
+    ...
+
+A group_by name needs to be set for complex group_by expression (date or range).
+A valid name is composed of lower chars [a-z] and digit [0-9] and ``_``.
+The group_by expression becomes a dict containing aggregation name and aggregation expression:
+
+Example:
+
+.. code-block:: json
+
+    group_by=[{
+        "name": "year",
+        "expr": format_date(my_date_field, "YYYY")
+    }]
 
 Simple field
 ~~~~~~~~~~~~
 
 Group by all field values.
-For instance ``group_by:[field_name]`` group by ``aggregates`` function by every value of ``field_name`` field
+For instance ``group_by:[field_name]`` group by ``aggregates`` functions by every values of ``field_name`` field.
 
+..
+    Geo functions
+    ~~~~~~~~~~~~~
 
-Geo functions
-~~~~~~~~~~~~~
+    * ``cluster(geometries, zoom, distance, return_convex_hull)`` Build a cluster from a group of rows.
 
-* ``cluster(geometries, zoom, distance, return_convex_hull)`` Build a cluster from a group of rows.
+        Return value:
 
-    Return value:
+    .. code-block:: json
 
-.. code-block:: json
-
-        {
-            center: [latitude, longitude],
-            convex_hull: // a polygon geometry
-        }
+            {
+                center: [latitude, longitude],
+                convex_hull: // a polygon geometry
+            }
 
     Arguments:
 
@@ -231,31 +262,31 @@ Geo functions
     * ``return_convex_hull`` is a boolean (default: false) telling whether the cluster should include its convex hull, its
     polygon enveloppe, alongside the center.
 
-* ``convex_hull(geometries)`` Return the convex hull (ie the envelopping convex shape) of the geometries
+    * ``convex_hull(geometries)`` Return the convex hull (ie the envelopping convex shape) of the geometries
 
-    Arguments:
+        Arguments:
 
-    * ``geometries`` either the name of field containing geodata or litteral geodata
+        * ``geometries`` either the name of field containing geodata or litteral geodata
 
-* ``geodigest(geometry)`` Return the geodigest (ie the hash) of the geometry for easy matching.
+    * ``geodigest(geometry)`` Return the geodigest (ie the hash) of the geometry for easy matching.
 
-    Arguments:
-    * ``geometry`` a geo shape or a the name of a field containing geo shapes.
+        Arguments:
+        * ``geometry`` a geo shape or a the name of a field containing geo shapes.
 
-* ``geogrid(geometry)`` Return the geohash id of the grid the geometry falls in.
+    * ``geogrid(geometry)`` Return the geohash id of the grid the geometry falls in.
 
-    Arguments:
-    * ``geometry`` a geo point or a the name of a field containing geo points.
+        Arguments:
+        * ``geometry`` a geo point or a the name of a field containing geo points.
 
-* ``BBOX(geometries)`` return the bounding box of all of the geometries
+    * ``BBOX(geometries)`` return the bounding box of all of the geometries
 
-    Arguments:
-    * ``geometries`` can be either a litteral geometry list or the name of a field (in an aggregate)
+        Arguments:
+        * ``geometries`` can be either a litteral geometry list or the name of a field (in an aggregate)
 
 Date functions
 ~~~~~~~~~~~~~~
 
-* ``format_date(myfield, format)`` Format a date object
+* ``date(myfield, format)`` Format a date object
 
     Arguments:
 
@@ -268,7 +299,7 @@ Date functions
 
     Format options:
 
-    The ``format_date`` method is a wrapper for http://joda-time.sourceforge.net/apidocs/org/joda/time/format/DateTimeFormat.html and therefore accepts the same inputs.
+    The ``date`` method is a wrapper for http://joda-time.sourceforge.net/apidocs/org/joda/time/format/DateTimeFormat.html and therefore accepts the same inputs.
 
     * *G* era (text) example: AD
     * *C* century of era (>=0) (number) example: 20
@@ -305,14 +336,35 @@ Date functions
 
     Any characters in the pattern that are not in the ranges of ['a'..'z'] and ['A'..'Z'] will be treated as quoted text. For instance, characters like ':', '.', ' ', '#' and '?' will appear in the resulting time text even they are not embraced within single quotes.
 
+
+A full example:
+
+.. code-block:: json
+
+    {
+        aggregations: {
+            my_aggregation: { // name of this aggregation, used to multiplex multiple aggregations
+                group_by: [
+                    {
+                        "name": "year_month",
+                        "expr": "date(sales_date, 'YYYY-MM')"
+                    }
+                ],
+                aggregates: {
+                    total_sales_count: 'SUM(sales_count)',
+                }
+            }
+        }
+    }
+
 Range functions
 ~~~~~~~~~~~~~~~
 
 The following functions all perform discretization functions on the dataset's values.
 
-In all of them, `myfield` is an integer or decimal field.
+In all of them, ``myfield`` is an integer or decimal field.
 
-* ``range(myfield,equi(num_ranges, lowest_boundary, highest_boundary))``
+* ``range(myfield, equi(num_ranges, lowest_boundary, highest_boundary))``
 
     Divides the [lowest_boundary, highest_boundary] global value interval in num_ranges equally wide sub ranges.
 
@@ -406,6 +458,7 @@ In all of them, `myfield` is an integer or decimal field.
         * [10; 100[
         * [100; 1000]
 
-* ``range(myfield, percentile())`` Return the number of the percentile within which myfield's value lies. (1 to 100)
+* ``range(myfield, percentile())`` Return the number of the percentile within which myfield's value lies. (default: [1, 5, 25, 50, 75, 95, 99])
+* ``range(myfield, median())`` Return the number of the median within which myfield's value lies.
 * ``range(myfield, decile())`` Return the number of the decile within which myfield's value lies. (1 to 10)
 * ``range(myfield, quartile())`` Return the number of the quartile within which myfield's value lies. (1 to 4)
