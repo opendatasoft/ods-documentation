@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# 
+# Translators:
+# Jérémy Morel <morel.jeremy@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Documentation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 11:15+0100\n"
+"PO-Revision-Date: 2015-12-15 14:13+0000\n"
+"Last-Translator: Jérémy Morel <morel.jeremy@gmail.com>\n"
+"Language-Team: French (http://www.transifex.com/opendatasoft/documentation-5/language/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/manage_domain/saml-integration.rst:2
+msgid "SAML support"
+msgstr "Support SAML"
+
+#: ../../source/manage_domain/saml-integration.rst:4
+msgid "The OpenDataSoft platform supports the SAMLv2 standard."
+msgstr "La plateforme OpenDataSoft supporte le standard SAMLv2."
+
+#: ../../source/manage_domain/saml-integration.rst:6
+msgid ""
+"This allows to create identity federation between your domain, which will "
+"act as a service provider, and a identity provider that you can configure."
+msgstr "Ce support permet de créer une fédération d'identité entre votre domaine, qui joue le rôle de fournisseur de service, et un fournisseur d'identité que vous maîtrisez."
+
+#: ../../source/manage_domain/saml-integration.rst:9
+msgid ""
+"This federation allows users of your domain to connect to the platform using"
+" the identity provider, and if they have one, reuse their active security "
+"context to create a SSO mechanism."
+msgstr "Cette fédération permettra aux utilisateurs de votre domaine de se connecter auprès du fournisseur d'identité configuré, et, le cas échéant de réutiliser leur connexion active auprès de celui-ci afin de créer une authentification unique (SSO)."
+
+#: ../../source/manage_domain/saml-integration.rst:13
+msgid "Register and configure an identity provider"
+msgstr "Configurer son domaine avec un fournisseur d'identité"
+
+#: ../../source/manage_domain/saml-integration.rst:15
+msgid ""
+"Navigate to the integration page in the domain configuration interface."
+msgstr "Rendez vous sur la page de configuration des intégrations du domaine."
+
+#: ../../source/manage_domain/saml-integration.rst:27
+msgid "Check \"Allow access for SAML users\""
+msgstr "Activez l'option \"Autoriser l'accès aux utilisateurs SAML\"."
+
+#: ../../source/manage_domain/saml-integration.rst:39
+msgid ""
+"Paste your identity provider metadata document in the \"IDP metadata "
+"document\" field."
+msgstr "Collez le document de metadata de votre fournisseur d'identité dans le champ \"Document de metadata de l'IDP\"."
+
+#: ../../source/manage_domain/saml-integration.rst:41
+msgid ""
+"Input the attributes mappings for the username, last name, first name and "
+"email address."
+msgstr "Renseignez les mappings d'attributs pour le nom d'utilisateur, le nom de famille, le prénom et l'adresse email."
+
+#: ../../source/manage_domain/saml-integration.rst:43
+msgid ""
+"Here, you need to declare the fields names as they are sent by the identity "
+"provider."
+msgstr "Il s'agit ici de remplir les champs correspondant avec le nom de l'attribut tel qu'envoyé par le fournisseur d'identité."
+
+#: ../../source/manage_domain/saml-integration.rst:45
+msgid ""
+"For instance, if your identity provider transmits the connected user's first"
+" name in an attribute called \"GivenName\", this is what you will need to "
+"type in the \"First name\" field."
+msgstr "Par exemple, si votre fournisseur d'identité renseigne le prénom de l'utilisateur qui se connecte en appellant cet attribut \"FirstName\", c'est ce qu'il faudra écrire dans le champ \"prénom\"."
+
+#: ../../source/manage_domain/saml-integration.rst:48
+msgid ""
+"If for any reason your identity provider doesn't send all of these elements,"
+" let the corresponding fields blank. The platform will automatically "
+"generate them based on other available attributes."
+msgstr "Si certaines de ces informations ne sont pas fournies par votre fournisseur d'identité, laissez les champs vides. La plateforme les générera automatiquement sur base des autres attributs définis."
+
+#: ../../source/manage_domain/saml-integration.rst:51
+msgid ""
+"Optionally input the attributes mappings and types of other attributes that "
+"are sent by your identity provider."
+msgstr "Renseignez les mappings et types des autres attributs éventuellement renvoyés par votre fournisseur d'identité. "
+
+#: ../../source/manage_domain/saml-integration.rst:53
+msgid ""
+"For instance, if your identity provider sends a list of the user's "
+"allergies, under the field name \"Allergies\", you may add an attribute "
+"mapping with name \"Allergies\", and type \"list\". This allows for "
+"interesting dataset filters with the `attr` function."
+msgstr "Si par exemple votre fournisseur d'identité envoie en plus des éléments de base la liste des allergies des utilisateurs connectés sous le nom d'attribut \"Allergies\", vous pouvez déclarer un mapping d'attribut au nom \"Allergies\" et au type \"Liste\". Cela vous permettra de créer des filtres de données intéressant en combinaison avec la fonction ``attr``."
+
+#: ../../source/manage_domain/saml-integration.rst:58
+msgid "Configure your identity provider"
+msgstr "Configurer le fournisseur d'identité"
+
+#: ../../source/manage_domain/saml-integration.rst:60
+msgid ""
+"The configuration of the identity provider is implementation-dependant, but "
+"it always consist of importing the service provider metadata document to "
+"enable a identity federation."
+msgstr "La configuration du fournisseur d'identité dépend de l'implémentation de celui-ci, mais elle consiste toujours en l'import du document de metadata du fournisseur de service."
+
+#: ../../source/manage_domain/saml-integration.rst:63
+msgid ""
+"You can download the metadata document for your OpenDataSoft domain on "
+"``<https://\\<YOUR DOMAIN\\>.opendatasoft.com/saml2/metadata.xml>``"
+msgstr ""

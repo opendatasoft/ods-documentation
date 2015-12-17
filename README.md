@@ -60,7 +60,7 @@ Main documentation resources:
 * https://wiki.typo3.org/Localization_(reST):
 * https://groups.google.com/forum/#!topic/sphinx-users/CursdollSZo
 
-### Build .po files and push them to transifex
+### Build .pot files, push them to transifex and retrieve .po files
 
 Shortcut: `make translations`
 
@@ -68,14 +68,14 @@ Shortcut: `make translations`
 make gettext
 sphinx-intl update -p build/locale -l fr
 tx push -s
+tx pull -f fr
 ```
 
-### Fetch translations from transifex and build translated documentation
+### Build translated documentation
 
 Shortcut: `make localizedhtml`
 
 ```bash
-tx pull -l fr
 sphinx-intl build
 make -e SPHINXOPTS="-D language='fr'" html
 ```
