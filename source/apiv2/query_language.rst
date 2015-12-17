@@ -112,7 +112,7 @@ Numeric field
 ~~~~~~~~~~~~~
 
 .. list-table::
-:header-rows: 1
+   :header-rows: 1
 
    * * Operators
      * Description
@@ -120,15 +120,16 @@ Numeric field
      * Match a numeric value. For instance: ``age:18`` will filter rows with field ``age`` is equals to ``18``
    * * ``>``, ``<``, ``>=``, ``<=``
      * Return results whose field values are larger, smaller, larger or equal, smaller or equal to the given value.
-   * * ``[lower_numeric (TO|..) higher_numeric]``: Queries Records whose numeric value is between ``lower_numeric`` and ``higher_numeric``.
-      An inclusive or exclusive bound can be used. Example: ``]lower_numeric (TO|..) higher_numeric[`` will exclude ``lower_numeric`` and ``higher_numeric``.
+   * * ``[lower_numeric (TO|..) higher_numeric]``
+     * Queries Records whose numeric value is between ``lower_numeric`` and ``higher_numeric``.
+       An inclusive or exclusive bound can be used. Example: ``]lower_numeric (TO|..) higher_numeric[`` will exclude ``lower_numeric`` and ``higher_numeric``.
 
 
 Date field
 ~~~~~~~~~~
 
 .. list-table::
-:header-rows: 1
+   :header-rows: 1
 
    * * Operators
      * Description
@@ -136,8 +137,9 @@ Date field
      * Match a date value. For instance: ``film_date:1977`` will return films released in 1977.
    * * ``>``, ``<``, ``>=``, ``<=``
      * Return results whose field values are larger, smaller, larger or equal, smaller or equal to the given value.
-   * * ``[lower_date (TO|..) higher_date]``: Queries Records whose numeric value is between ``lower_date`` and ``higher_date``.
-      An inclusive or exclusive bound can be used. Example: ``]lower_numeric (TO|..) higher_numeric[`` will exclude ``lower_date`` and ``higher_date``.
+   * * ``[lower_date (TO|..) higher_date]``
+     * Queries Records whose numeric value is between ``lower_date`` and ``higher_date``.
+       An inclusive or exclusive bound can be used. Example: ``]lower_numeric (TO|..) higher_numeric[`` will exclude ``lower_date`` and ``higher_date``.
 
 
 
