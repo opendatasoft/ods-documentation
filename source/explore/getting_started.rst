@@ -13,6 +13,18 @@ your dataset must contain a *geo point* or a *geo shape* field.
 .. image:: explore_map.jpg
    :alt: Explore Map
 
+OpenDataSoft is compliant with Esri software!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Esri is the worldwide leader in Geographic Information Systems (GIS).
+
+Any OpenDataSoft customer can easily publish their Esri data and display geolocated information on Esri basemaps
+directly with the OpenData Soft platform.
+
+.. raw:: html
+
+   <iframe src="https://player.vimeo.com/video/75712496" width="500" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 Displaying dataset content on a chart
 -------------------------------------
 
@@ -57,6 +69,18 @@ visualization in various ways:
 * As an *Embed* code, to embed the visualization in an iframe on a remote web site
 * As a *Widget* code, to integrate the visualization as a widget in a content page using the OpenDataSoft ods-widgets 
   framework
+
+.. ifconfig:: language == 'en'
+
+   .. raw:: html
+
+      <iframe src="https://player.vimeo.com/video/72805856" width="500" height="256" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+.. ifconfig:: language == 'fr'
+
+   .. raw:: html
+
+      <iframe src="https://player.vimeo.com/video/72049167" width="500" height="256" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 Saving a visualization
 ----------------------

@@ -32,3 +32,19 @@ To sum up, if you have data, if you have applicative business use cases but no s
 data and your applications, you are at the right place!
 
 So, what about starting with our `free trial <http://playground.opendatasoft.com/signup>`_ version?
+
+.. ifconfig:: language == 'en'
+
+   .. raw:: html
+
+      <iframe src="https://player.vimeo.com/video/78830776" width="500" height="266" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+.. ifconfig:: language == 'fr'
+
+   .. raw:: html
+
+      <iframe src="https://player.vimeo.com/video/78710325" width="500" height="252" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+.. raw:: html
+
+   <iframe src="https://player.vimeo.com/video/73307250" width="500" height="256" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

@@ -40,9 +40,7 @@ Data processing
    * * Custom transformation
      * 
    * * Indexing
-     * 
-   * * OpenDataSoft's features are extensively based on the indexing of raw data of datasets.
-     * 
+     * OpenDataSoft's features are extensively based on the indexing of raw data of datasets.
 
 Data sharing
 ------------
@@ -99,13 +97,25 @@ Content
 User engagement
 ---------------
 
+.. ifconfig:: language == 'en'
+
+   .. raw:: html
+
+      <iframe src="https://player.vimeo.com/video/105767606" width="500" height="252" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+.. ifconfig:: language == 'fr'
+
+   .. raw:: html
+
+      <iframe src="https://player.vimeo.com/video/105767121" width="500" height="252" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 .. list-table::
    :header-rows: 1
 
    * * Feature
      * Comments
    * * Forums
-     * OpenDataSoft integrates with <a href="https://disqus.com/" target="_blank">Disqus</a>. Disqus threads can be 
+     * OpenDataSoft integrates with `Disqus <https://disqus.com/>`_. Disqus threads can be
        integrated at an instance level or at a dataset level.
    * * Contact form
      * 
@@ -118,7 +128,7 @@ Hosting & admin
 ---------------
 
 .. list-table::
-    :header-rows: 1
+   :header-rows: 1
 
    * * Feature
      * Comments

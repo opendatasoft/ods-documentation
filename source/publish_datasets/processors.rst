@@ -1,6 +1,18 @@
 Processors
 ==========
 
+.. ifconfig:: language == 'en'
+
+   .. raw:: html
+
+      <iframe src="https://player.vimeo.com/video/81835519" width="500" height="252" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+.. ifconfig:: language == 'fr'
+
+   .. raw:: html
+
+      <iframe src="https://player.vimeo.com/video/81891386" width="500" height="252" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 Geo Processors
 --------------
 
