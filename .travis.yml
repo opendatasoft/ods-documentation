@@ -19,4 +19,6 @@ after_success:
   - ssh-add .travis.deploy
   - 'test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && rsync -e "ssh -o StrictHostKeyChecking=no" -az --force --delete build/ "$DEPLOY_USER"@"$DEPLOY_IP":"$DEPLOY_PATH" 2>/dev/null'
 sudo: false
-
+notifications:
+  slack:
+    secure: APEJ/vt/8HAE8OWGR3DfL+XBQl4/Q35nN216+cFmuSHKuniV+XwLkvM3sEIC5OPABsxg/37oqoYr0a39PHyGQvBZ5ie9s9LpUsXUd76QgDZzR9BYxid9Atg2KXGqn2vrxJ8ZyKkQyd6VivJ8TtX8hlRsTZsx7fmbDqr9omzDldg=
