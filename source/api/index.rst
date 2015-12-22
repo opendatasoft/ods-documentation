@@ -12,3 +12,4 @@ API
    records_api
    odata/index
    push_api
+   csw/index
