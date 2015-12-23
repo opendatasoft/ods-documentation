@@ -2,7 +2,7 @@ Using the service
 =================
 
 OpenDataSoft records can be accessed through a Web Feature Service (WFS), which provides an interface allowing
-requests for geographical features. The OpenDataSoft platform implements the WFS specification version 1.1.0.
+requests for geographical features. The OpenDataSoft platform uses the WFS specification version 1.1.0.
 
 Operations supported
 --------------------
@@ -33,14 +33,14 @@ The WFS supports both ``GET`` and ``POST`` HTTP methods.
 
 Request Headers
 ---------------
-The only supported HTTP header is the ``Content-Type`` header, which must be set to ``text/xml`` when using a ``POST``
+The only supported HTTP header is the optional ``Content-Type`` header, which must be set to ``text/xml`` when using a ``POST``
 HTTP request.
 
 Parameters
 ----------
 When the HTTP ``GET`` method is used, the parameters are appended to the URL using a Keyword Value Pair (KVP)
 encoding.
-When the HTTP ``POST`` method, the operation request message are encoded as an XML document in the body
+When the HTTP ``POST`` method is used, the operation request message are encoded as an XML document in the body
 of the ``POST`` message.
 
 Here is the list of the common parameters, supported by all WFS operations :

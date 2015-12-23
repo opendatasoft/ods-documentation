@@ -1,8 +1,8 @@
 Using the service
 =================
 
-OpenDataSoft datasets can be accessed through a Catalog Service for the Web. This is a standard for exposing a
-catalogue of geospatial records in XML. The OpenDataSoft platform implements the CSW specification version 2.0.2.
+OpenDataSoft datasets can be accessed through a Catalog Service for the Web (CSW). This is a standard for exposing a
+catalogue of geospatial records in XML. The OpenDataSoft platform uses the CSW specification version 2.0.2.
 
 Operations supported
 --------------------
@@ -21,7 +21,7 @@ OpenDataSoft platform implements four operations defined by the CSW standard :
    * * GetRecords
      * Search for records and get their metadata and identifier.
    * * GetRecordById
-     * Search for a record with a specific identifier
+     * Search for a record with a specific identifier.
 
 Service address and methods
 ---------------------------
@@ -35,14 +35,14 @@ The CSW supports both ``GET`` and ``POST`` HTTP methods.
 
 Request Headers
 ---------------
-The only supported HTTP header is the ``Content-Type`` header, which must be set to ``text/xml`` when using a ``POST``
+The only supported HTTP header is the optional ``Content-Type`` header, which must be set to ``text/xml`` when using a ``POST``
 HTTP request.
 
 Parameters
 ----------
 When the HTTP ``GET`` method is used, the parameters are appended to the URL using a Keyword Value Pair (KVP)
 encoding.
-When the HTTP ``POST`` method, the operation request message are encoded as an XML document in the body
+When the HTTP ``POST`` method is used, the operation request message is encoded as an XML document in the body
 of the ``POST`` message.
 
 Here is the list of the common parameters, supported by all CSW operations :

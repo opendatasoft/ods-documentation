@@ -4,7 +4,7 @@ The ``DescribeFeatureType`` operation generates a schema description of features
 
 Parameters
 ----------
-This is the list of the supported parameters specific to the ``DescribeRecord`` operation. You should also take into
+This is the list of the supported parameters specific to the ``DescribeFeatureType`` operation. You should also take into
 consideration the common parameters. `See more </api/wfs/introduction.html#parameters>`_.
 
 The existing parameters in the CSW standard which are not listed in this table are currently not supported.
