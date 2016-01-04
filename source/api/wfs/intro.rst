@@ -27,7 +27,10 @@ The service can be reached at the following entry address :
 
 .. code-block:: http
 
-    GET [/api/wfs](http://public.opendatasoft.com/api/wfs)
+    GET http://public.opendatasoft.com/api/wfs
+
+For this documentation, we use the the domain ``http://public.opendatasoft.com`` as an example but you should replace it
+by your custom domain name.
 
 The WFS supports both ``GET`` and ``POST`` HTTP methods.
 

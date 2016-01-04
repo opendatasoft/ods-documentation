@@ -29,7 +29,10 @@ The service can be reached at the following entry address :
 
 .. code-block:: http
 
-    GET [/api/csw](http://public.opendatasoft.com/api/csw)
+    GET http://public.opendatasoft.com/api/csw
+
+For this documentation, we use the the domain ``http://public.opendatasoft.com`` as an example but you should replace it
+by your custom domain name.
 
 The CSW supports both ``GET`` and ``POST`` HTTP methods.
 
