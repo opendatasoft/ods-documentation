@@ -6,7 +6,7 @@ the output schema can be specified.
 Parameters
 ----------
 This is the list of the supported parameters specific to the ``GetRecords`` operation. You should also take into
-consideration the common parameters. `See more </api/csw/introduction.html#parameters>`_.
+consideration the common parameters. `See more <intro.html#parameters>`_.
 
 The existing parameters in the CSW standard which are not listed in this table are currently not supported.
 
