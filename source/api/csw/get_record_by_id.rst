@@ -17,7 +17,7 @@ The existing parameters in the CSW standard which are not listed in this table a
      * Description
      * Optionality and use
    * * ``outputSchema``
-     * Used to indicate the schema of the output that is generated in response to a ``GetRecords`` request.
+     * Used to indicate the schema of the output that is generated in response to a ``GetRecordById`` request.
      * Optional. Values can be ``http://www.opengis.net/cat/csw/2.0.2`` or ``http://www.isotc211.org/2005/gmd``.
        Default value is ``http://www.opengis.net/cat/csw/2.0.2``.
    * * ``ElementSetName``

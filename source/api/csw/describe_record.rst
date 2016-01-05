@@ -1,7 +1,7 @@
 DescribeRecord
 ==============
 The ``DescribeRecord`` operation allows clients to discover elements of the information model supported by the
-catalogue service
+catalogue service.
 
 Parameters
 ----------

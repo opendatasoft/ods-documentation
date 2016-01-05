@@ -83,16 +83,16 @@ When an error occurs, the service respond to the client using an Exception Repor
      * Multiplicity and use
    * * ``ExceptionText``
      * Text describing specific exception represented by the exceptionCode
-     * Character String type, not empty Value is exception description as defined by individual servers
+     * Character String type, not empty. Value is an exception description as defined by individual servers
      * Zero or more (optional). Omitted only when no more useful information available
    * * ``exceptionCode``
      * Code representing type of this exception
-     * Character String type, not empty Allowed values are specified by each Implementation Specification and server
+     * Character String type, not empty. Allowed values are specified by each implementation specification and server
        implementation
      * One (mandatory)
    * * ``locator``
      * Indicator of location in the client's operation request where this exception was encountered
-     * Character String type, not empty Contents defined for each allowed exceptionCode value for each operation
+     * Character String type, not empty. Contents defined for each allowed exceptionCode value for each operation
      * Zero or one (optional). Omitted when no useful value available
 
 Example :

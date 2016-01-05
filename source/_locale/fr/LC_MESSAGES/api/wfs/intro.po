@@ -1,0 +1,273 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# 
+# Translators:
+# Hugo Bost <hugo.bost@opendatasoft.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Documentation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-05 14:18+0100\n"
+"PO-Revision-Date: 2016-01-05 11:47+0000\n"
+"Last-Translator: Hugo Bost <hugo.bost@opendatasoft.com>\n"
+"Language-Team: French (http://www.transifex.com/opendatasoft/documentation-5/language/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/api/wfs/intro.rst:2
+msgid "Using the service"
+msgstr "Utilisation du service"
+
+#: ../../source/api/wfs/intro.rst:4
+msgid ""
+"OpenDataSoft records can be accessed through a Web Feature Service (WFS), "
+"which provides an interface allowing requests for geographical features. The"
+" OpenDataSoft platform uses the WFS specification version 1.1.0."
+msgstr "Les enregistrements des jeux de données OpenDataSoft sont accessibles grâce à un 'Web Feature Service' (WFS). Il s'agit d'une interface permettant d'executer des requêtes afin de récupérer des enregistrement géographiques ('features'). La plateforme OpenDataSoft utilise la version 1.1.0 de la spécification WFS."
+
+#: ../../source/api/wfs/intro.rst:8
+msgid "Operations supported"
+msgstr "Opérations supportées"
+
+#: ../../source/api/wfs/intro.rst:10
+msgid ""
+"OpenDataSoft platform implements three operations defined by the WFS "
+"standard :"
+msgstr "La plateforme OpenDataSoft implémente trois opérations définies par le standard WFS :"
+
+#: ../../source/api/wfs/intro.rst:0
+msgid "CSW Operations"
+msgstr "Opérations CSW"
+
+#: ../../source/api/wfs/intro.rst:15 ../../source/api/wfs/intro.rst:54
+msgid "Operation"
+msgstr "Opération"
+
+#: ../../source/api/wfs/intro.rst:16 ../../source/api/wfs/intro.rst:55
+msgid "Description"
+msgstr "Description"
+
+#: ../../source/api/wfs/intro.rst:17
+msgid "GetCapabilities"
+msgstr "GetCapabilities"
+
+#: ../../source/api/wfs/intro.rst:18
+msgid "Retrieve service metadata."
+msgstr "Récupère les métadonnées du service."
+
+#: ../../source/api/wfs/intro.rst:19
+msgid "DescribeFeatureType"
+msgstr "DescribeFeatureType"
+
+#: ../../source/api/wfs/intro.rst:20
+msgid ""
+"Generate a schema description of features types serviced by the service."
+msgstr "Génère un schéma décrivant les types de features pouvant être récupérées par le service."
+
+#: ../../source/api/wfs/intro.rst:21
+msgid "GetFeature"
+msgstr "GetFeature"
+
+#: ../../source/api/wfs/intro.rst:22
+msgid ""
+"Retrieve features from the service and output them using the GML "
+"representation."
+msgstr "Récupère les features et les affiche en utilisant la représentation GML."
+
+#: ../../source/api/wfs/intro.rst:25
+msgid "Service address and methods"
+msgstr "Adresse et méthodes du service"
+
+#: ../../source/api/wfs/intro.rst:26
+msgid "The service can be reached at the following entry address :"
+msgstr "Le service est accessible à l'adresse suivante :"
+
+#: ../../source/api/wfs/intro.rst:32
+msgid ""
+"For this documentation, we use the the domain "
+"``http://public.opendatasoft.com`` as an example but you should replace it "
+"by your custom domain name."
+msgstr "Pour cette documentation, nous utilisons le domaine ``http://public.opendatasoft.com`` à titre d'exemple, il convient de le remplacer par votre propre nom de domaine."
+
+#: ../../source/api/wfs/intro.rst:35
+msgid "The WFS supports both ``GET`` and ``POST`` HTTP methods."
+msgstr "Le service WFS supporte les méthodes HTTP ``GET`` et ``POST``."
+
+#: ../../source/api/wfs/intro.rst:38
+msgid "Request Headers"
+msgstr "En têtes des requêtes"
+
+#: ../../source/api/wfs/intro.rst:39
+msgid ""
+"The only supported HTTP header is the optional ``Content-Type`` header, "
+"which must be set to ``text/xml`` when using a ``POST`` HTTP request."
+msgstr "La seule en-tête HTTP supportée est l'en-tête  ``Content-Type`` . Elle est optionnelle et devrait avoir pour valeur  ``text/xml`` si elle est utilisée lors de requêtes HTTP ``POST``."
+
+#: ../../source/api/wfs/intro.rst:43
+msgid "Parameters"
+msgstr "Paramètres"
+
+#: ../../source/api/wfs/intro.rst:44
+msgid ""
+"When the HTTP ``GET`` method is used, the parameters are appended to the URL"
+" using a Keyword Value Pair (KVP) encoding. When the HTTP ``POST`` method is"
+" used, the operation request message are encoded as an XML document in the "
+"body of the ``POST`` message."
+msgstr "Lorsque la méthode HTTP ``GET`` est utilisée, les paramètres sont ajoutées à l'URL en utilisant un système de pairs clé/valeur. Lorsque la méthode HTTP ``POST`` est utilisée, les paramètres et l'opération doivent être renseignés au sein d'un document XML composant le corps (body) de la requête."
+
+#: ../../source/api/wfs/intro.rst:49
+msgid ""
+"Here is the list of the common parameters, supported by all WFS operations :"
+msgstr "Voici une liste des paramètres supportés par toutes les opérations WFS :"
+
+#: ../../source/api/wfs/intro.rst:0
+msgid "Request Parameters"
+msgstr "Paramètres des requêtes"
+
+#: ../../source/api/wfs/intro.rst:56
+msgid "Possible values"
+msgstr "Valeurs possibles"
+
+#: ../../source/api/wfs/intro.rst:57
+msgid "Optionality and use"
+msgstr "Utilisation et caractère optionnel"
+
+#: ../../source/api/wfs/intro.rst:58
+msgid "``service``"
+msgstr "``service``"
+
+#: ../../source/api/wfs/intro.rst:59
+msgid "The requested service"
+msgstr "Le service demandé"
+
+#: ../../source/api/wfs/intro.rst:60
+msgid "``WFS``"
+msgstr "``WFS``"
+
+#: ../../source/api/wfs/intro.rst:61 ../../source/api/wfs/intro.rst:65
+msgid "One (Mandatory)"
+msgstr "Un (obligatoire)"
+
+#: ../../source/api/wfs/intro.rst:62
+msgid "``request``"
+msgstr "``request``"
+
+#: ../../source/api/wfs/intro.rst:63
+msgid "The requested operation"
+msgstr "L'opération demandée"
+
+#: ../../source/api/wfs/intro.rst:64
+msgid "``GetCapabilities`` | ``DescribeFeatureType`` | ``GetFeature``"
+msgstr "``GetCapabilities`` | ``DescribeFeatureType`` | ``GetFeature``"
+
+#: ../../source/api/wfs/intro.rst:66
+msgid "``version``"
+msgstr "``version``"
+
+#: ../../source/api/wfs/intro.rst:67
+msgid "The requested version of the service."
+msgstr "La version demandée du service."
+
+#: ../../source/api/wfs/intro.rst:68
+msgid "``1.1.0``"
+msgstr "``1.1.0``"
+
+#: ../../source/api/wfs/intro.rst:69
+msgid "One (Optional)"
+msgstr "Un (Optionnel)"
+
+#: ../../source/api/wfs/intro.rst:72
+msgid "Exception reports"
+msgstr "Rapports d'erreurs"
+
+#: ../../source/api/wfs/intro.rst:73
+msgid ""
+"When an error occurs, the service respond to the client using an Exception "
+"Report message to describe the error."
+msgstr "Lorsqu'une erreur survient, le service répond au client en utilisant un 'Exception Report' message pour décrire l'erreur."
+
+#: ../../source/api/wfs/intro.rst:0
+msgid "Parameters in Exception element"
+msgstr "Paramètres de l'élément 'Exception'"
+
+#: ../../source/api/wfs/intro.rst:78
+msgid "Name"
+msgstr "Nom"
+
+#: ../../source/api/wfs/intro.rst:79
+msgid "Definition"
+msgstr "Définition"
+
+#: ../../source/api/wfs/intro.rst:80
+msgid "Data type and value"
+msgstr "Type de donnée et valeur"
+
+#: ../../source/api/wfs/intro.rst:81
+msgid "Multiplicity and use"
+msgstr "Multiplicité et utilisation"
+
+#: ../../source/api/wfs/intro.rst:82
+msgid "``ExceptionText``"
+msgstr "``ExceptionText``"
+
+#: ../../source/api/wfs/intro.rst:83
+msgid "Text describing specific exception represented by the exceptionCode"
+msgstr "Un texte décrivant l'erreur représentée par le code d'exception"
+
+#: ../../source/api/wfs/intro.rst:84
+msgid ""
+"Character String type, not empty. Value is an exception description as "
+"defined by individual servers"
+msgstr "Chaîne de caractères non vide. Sa valeur est une description de l'erreur définie par le serveur"
+
+#: ../../source/api/wfs/intro.rst:85
+msgid ""
+"Zero or more (optional). Omitted only when no more useful information "
+"available"
+msgstr "Zéro ou plus (optionnel). Omis lorsqu'aucune information utile n'est disponible."
+
+#: ../../source/api/wfs/intro.rst:86
+msgid "``exceptionCode``"
+msgstr "``exceptionCode``"
+
+#: ../../source/api/wfs/intro.rst:87
+msgid "Code representing type of this exception"
+msgstr "Code représentant le type de cette exception"
+
+#: ../../source/api/wfs/intro.rst:88
+msgid ""
+"Character String type, not empty. Allowed values are specified by each "
+"implementation specification and server implementation"
+msgstr "Chaine de caractères non vide. Les valeurs possibles sont dépendantes de l'implémentation du serveur et de la version utilisée"
+
+#: ../../source/api/wfs/intro.rst:90
+msgid "One (mandatory)"
+msgstr "Un (obligatoire)"
+
+#: ../../source/api/wfs/intro.rst:91
+msgid "``locator``"
+msgstr "``locator``"
+
+#: ../../source/api/wfs/intro.rst:92
+msgid ""
+"Indicator of location in the client's operation request where this exception"
+" was encountered"
+msgstr "Indication à propos de l'endroit où l'erreur s'est produite dans la requête du client."
+
+#: ../../source/api/wfs/intro.rst:93
+msgid ""
+"Character String type, not empty Contents defined for each allowed "
+"exceptionCode value for each operation"
+msgstr "Chaine de caractères non vide."
+
+#: ../../source/api/wfs/intro.rst:94
+msgid "Zero or one (optional). Omitted when no useful value available"
+msgstr "Zéro ou un (optionnel). Omis lorsqu'aucune information utile n'est disponible."
+
+#: ../../source/api/wfs/intro.rst:96
+msgid "Example :"
+msgstr "Exemple :"
