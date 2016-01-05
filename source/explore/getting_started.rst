@@ -19,7 +19,7 @@ OpenDataSoft is compliant with Esri software!
 Esri is the worldwide leader in Geographic Information Systems (GIS).
 
 Any OpenDataSoft customer can easily publish their Esri data and display geolocated information on Esri basemaps
-directly with the OpenData Soft platform.
+directly with the OpenDataSoft platform.
 
 .. raw:: html
 
