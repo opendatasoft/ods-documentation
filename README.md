@@ -12,7 +12,7 @@ First, set up your Python installation (a virtualenv is recommended).
 pip install -r requirements.txt
 ```
 
-To be able to push to and retrieve from transifex the translation files (.po), you'll need to be a maintainer on the project. 
+To be able to push to and retrieve from transifex the translation files (.po), you'll need to be a maintainer on the project.
 Once this is done, you'll have to configure your environment with:
 
 ``` bash
@@ -79,7 +79,7 @@ make -e SPHINXOPTS="-D language='fr'" html
 
 ## Writing articles
 
-Documentation is written in reStructuredText (rst). While not as popular as Markdown, it allows for richer pages. 
+Documentation is written in reStructuredText (rst). While not as popular as Markdown, it allows for richer pages.
 
 The syntax reference is available at http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html but you should really start with http://sphinx-doc.org/rest.html.
 
@@ -96,22 +96,22 @@ a blog post or a newsletter for example
 ```
     1st level title
     ===============
-    
+
     2nd level title
     ---------------
-    
+
     3rd level title
     ~~~~~~~~~~~~~~~
-    
+
     4th level title
     ^^^^^^^^^^^^^^^
 ```
 
 ### Links
 
-To reference an internal page
+To reference an internal page (here, the people.rst page in the company folder)
 ```
-    :doc:`Monty Python members </people>`
+    :doc:`Monty Python members </company/people>`
 ```
 To reference any external page (note the trailing `_`)
 ```
