@@ -43,7 +43,7 @@ Fields have a type. The following types are available:
        a thousands separator but not the ','.
    * * Geo&nbsp;Point
      * A single geographical location expressed in the format *&lt;LAT&gt;,&lt;LON&gt;*, for instance
-       *45.8,2.5*. If your dataset contains two fields, latitude and longitude, you'll need to concatenate them 
+       *45.8,2.5*. If your dataset contains two fields, latitude and longitude, you'll need to concatenate them
        with a **Concatenate Text** processor to form a valid geo point field.
    * * Geo&nbsp;Shape
      * A valid geo shape expressed in GeoJSON.
@@ -69,7 +69,7 @@ The **field configuration button** allows you to fine tune your field's configur
 .. image:: publish__fieldannotations--en.jpg
    :alt: Dataset Processors
 
-The generic option **ID** let's you define the record id computing policy. Each record is uniquely identified by its
+The generic option **ID** lets you define the record id computing policy. Each record is uniquely identified by its
 id, which is by default computed as the fingerprint of all the record fields values. The **ID** option lets you choose
 which fields are going to be used when computing the record id, making it possible to handle records deduplication at
 record fields level.
@@ -104,7 +104,7 @@ You then have access to a wide range of options depending on the field type.
 * Decimal and Integer fields
     * **Unit**
 
-        This option let's you define an optional unit associated with numerical fields. This option is used to
+        This option lets you define an unit associated with numerical fields. This option is used to
         complement the table view and is displayed next to the field's value.
 
 Transforming your dataset
