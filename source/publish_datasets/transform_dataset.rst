@@ -109,7 +109,7 @@ You then have access to a wide range of options depending on the field type.
 Transforming your dataset
 -------------------------
 
-In the same screen, you also have accesss to the processors configuration. A processor is a component which lets you
+In the same screen, you also have access to the processors configuration. A processor is a component which lets you
 modify the content of your dataset: concatenate values, extract text matching a specific expression, perform numerical
 operations, geocode full text addresses...
 
