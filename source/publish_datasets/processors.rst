@@ -84,7 +84,7 @@ The signs can be:
 IP Address to Geo Coordinates
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This processors allows you to geocode an IP address. It uses the `GeoIP <http://geolite.maxmind.com>`_ database.
+This processor allows you to geocode an IP address. It uses the `GeoIP <http://geolite.maxmind.com>`_ database.
 
 Geocode with Google
 ~~~~~~~~~~~~~~~~~~~
