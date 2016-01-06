@@ -26,8 +26,15 @@ Configuring your domain's security policy
 Domain access and default security policy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: security-model.png
-   :alt: Security Model
+.. ifconfig:: language == 'en'
+
+    .. image:: security-model.png
+       :alt: Security Model
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: security-model--fr.png
+       :alt: Modèle de sécurité
 
 Check the option **allow anonymous access** if you want to let people access your domain without having to log in. 
 Anonymous users will only be able to access non restricted datasets. This makes it possible to mix on the single domain 
@@ -46,8 +53,17 @@ of users permissions).
 Domain access list
 ~~~~~~~~~~~~~~~~~~
 
-.. image:: security-users.png
-   :alt: Security Users
+
+.. ifconfig:: language == 'en'
+
+    .. image:: security-users.png
+       :alt: Security Users
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: security-users--fr.png
+       :alt: Permissions des utilisateurs
+
 
 The domain access list are made of users and groups. Users' scope is platform wide (this means that a user can be 
 associated with more than one domain) while groups' scope is domain wide (groups are not shared among domains).
@@ -74,8 +90,15 @@ attributed to users and groups.
 Dataset access list
 ~~~~~~~~~~~~~~~~~~~
 
-.. image:: security-dataset.jpg
-   :alt: Security Users
+.. ifconfig:: language == 'en'
+
+    .. image:: security-dataset.jpg
+       :alt: Access list
+.. ifconfig:: language == 'fr'
+
+    .. image:: security-dataset--fr.png
+       :alt: Liste d'accès
+
 
 As seen above, a **restricted** dataset can only be accessed by users defined in the access list of the dataset, users 
 belonging to a group defined in the access list of the dataset or users with special administrative permissions.
@@ -88,8 +111,14 @@ may access this dataset in the exploration console or through APIs. Two addition
 * The user may edit the dataset
 * The user may publish the dataset
 
-.. image:: security-filters.jpg
-   :alt: Security Users
+.. ifconfig:: language == 'en'
+
+    .. image:: security-filters.jpg
+       :alt: Security filters
+.. ifconfig:: language == 'fr'
+
+    .. image:: security-filters--fr.png
+       :alt: Filtres de sécurité
 
 **Filters** may be used to further refine the permissions of a given user on a dataset. It is possible to restrict the 
 fields a user can see by using the **available fields** selector. And it is possible to restrict the set of records a 
@@ -116,8 +145,15 @@ users will receive an email asking them to validate their account.
 Configuring the registration workflow
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: security-signup.jpg
-   :alt: Security Users
+.. ifconfig:: language == 'en'
+
+    .. image:: security-signup.jpg
+       :alt: Registration workflow
+.. ifconfig:: language == 'fr'
+
+    .. image:: security-signup--fr.png
+       :alt: Processus d'enregistrement
+
 
 It is also possible to configure the registration workflow. This workflow allows users to sign up by themselves. A 
 registration can either be manually or automatically validated, depending on the configuration. A set of fields allows 

@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-05 17:58+0100\n"
-"PO-Revision-Date: 2016-01-05 16:52+0000\n"
-"Last-Translator: benrict <benoit.richter@opendatasoft.com>\n"
+"POT-Creation-Date: 2016-01-06 11:51+0100\n"
+"PO-Revision-Date: 2016-01-06 10:51+0000\n"
+"Last-Translator: Jérémy Autran <jeremy.autran@opendatasoft.com>\n"
 "Language-Team: French (http://www.transifex.com/opendatasoft/documentation-5/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,41 +39,41 @@ msgstr "Non seulement vous pouvez extraire et stocker la donnée brute provenant
 msgid ""
 "All these transformations take place in the **processing** tab of the "
 "dataset configuration pane."
-msgstr ""
+msgstr "Toutes ces transformations ont lieu dans l'onglet **Traitement** de l'interface de publication."
 
 #: ../../source/publish_datasets/transform_dataset.rst:13
 msgid "The dataset schema"
-msgstr ""
+msgstr "Le schéma du jeu de données"
 
 #: ../../source/publish_datasets/transform_dataset.rst:15
 msgid ""
 "As seen in a previous article, a dataset content can be seen as flat "
 "database table. That is:"
-msgstr ""
+msgstr "Comme vu dans un article précédent, un jeu de donnée peut être vu comme un tableau de donnée assez classique. C'est à dire :"
 
 #: ../../source/publish_datasets/transform_dataset.rst:17
 msgid ""
 "A schema (the list of fields along with their types and possibily some "
 "annotations)"
-msgstr ""
+msgstr "Un schéma (la liste des champs avec leur type et parfois des annotations)"
 
 #: ../../source/publish_datasets/transform_dataset.rst:18
 msgid "A set of records (rows or tuples) matching the schema"
-msgstr ""
+msgstr "Un ensemble d'enregistrements (lignes) correspondant au schéma"
 
 #: ../../source/publish_datasets/transform_dataset.rst:20
 msgid ""
 "Whatever the original data source format is, the dataset content ends up as "
 "a flat database table content."
-msgstr ""
+msgstr "Quel que soit le format de la source de donnée originale, le contenu finit toujours sous la forme d'une base de donnée structurée \"plate\" (un tableau)."
 
 #: ../../source/publish_datasets/transform_dataset.rst:25
 msgid "Fields have a type. The following types are available:"
-msgstr ""
+msgstr "Les champs ont un type associée. Les types suivants sont disponibles :"
 
 #: ../../source/publish_datasets/transform_dataset.rst:30
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #: ../../source/publish_datasets/transform_dataset.rst:31
 msgid "Description"
@@ -81,7 +81,7 @@ msgstr "Description"
 
 #: ../../source/publish_datasets/transform_dataset.rst:32
 msgid "Date"
-msgstr ""
+msgstr "Date"
 
 #: ../../source/publish_datasets/transform_dataset.rst:33
 msgid ""
@@ -90,11 +90,11 @@ msgid ""
 "bad detection or ambiguity, do not hesitate to use the **Date Normalizer** "
 "processor which lets you define precisely the parsing format of your date "
 "field."
-msgstr ""
+msgstr "Par exemple 2015/02/11 ou 2015-02-11 ou 11/02/2015... La plateforme va tenter de détecter le format de la date aussi précisément que possible. Cependant, si jamais la détection est fausse ou ambigüe, il est possible d'utiliser le processeur **Normaliser une date** qui vous permet de définir précisément le format à utiliser pour interpréter les valeurs de ce champ date."
 
 #: ../../source/publish_datasets/transform_dataset.rst:36
 msgid "DateTime"
-msgstr ""
+msgstr "DateTime"
 
 #: ../../source/publish_datasets/transform_dataset.rst:37
 msgid ""
@@ -104,21 +104,21 @@ msgid ""
 " detection or ambiguity, do not hesitate to use the **Date Normalizer** "
 "processor which lets you define precisely the parsing format of your "
 "datetime field."
-msgstr ""
+msgstr "Par exemple 2015/02/11-08:09:10 ou 2015-02-11T08:09:10 ou 11/02/2015 08:09:10... Les indications de fuseau horaire sont aussi utilisées. La plateforme va tenter de détecter le format de la date aussi précisément que possible. Cependant, si jamais la détection est fausse ou ambigüe, il est possible d'utiliser le processeur **Normaliser une date** qui vous permet de définir précisément le format à utiliser pour interpréter les valeurs de ce champ datetime."
 
 #: ../../source/publish_datasets/transform_dataset.rst:41
 msgid "Decimal"
-msgstr ""
+msgstr "Décimal"
 
 #: ../../source/publish_datasets/transform_dataset.rst:42
 msgid ""
 "A decimal number. Valid separators for the decimal part are '.' or ','. The "
 "space character can also be used as a thousands separator but not the ','."
-msgstr ""
+msgstr "Un nombre décimal. Le séparateur peut être un point ou une virgule. Le caractère espace peut également être utilisé comme séparateur des milliers, mais pas la virgule."
 
 #: ../../source/publish_datasets/transform_dataset.rst:44
 msgid "Geo&nbsp;Point"
-msgstr ""
+msgstr "Point géo"
 
 #: ../../source/publish_datasets/transform_dataset.rst:45
 msgid ""
@@ -126,11 +126,11 @@ msgid ""
 "*&lt;LAT&gt;,&lt;LON&gt;*, for instance *45.8,2.5*. If your dataset contains"
 " two fields, latitude and longitude, you'll need to concatenate them with a "
 "**Concatenate Text** processor to form a valid geo point field."
-msgstr ""
+msgstr "Un emplacement géographique exprimé dans le format *&lt;LATITUDE&gt;,&lt;LONGITUDE&gt;*, par exemple *45.8,2.5*. Si le jeu de données contient deux champs séparés pour la latitude et la longitude, vous devrez les concaténer avec un processeur **Concaténer du Texte** afin de créer un champ de type géo point valide."
 
 #: ../../source/publish_datasets/transform_dataset.rst:48
 msgid "Geo&nbsp;Shape"
-msgstr ""
+msgstr "Forme géo"
 
 #: ../../source/publish_datasets/transform_dataset.rst:49
 msgid "A valid geo shape expessed in GeoJSON."
@@ -138,21 +138,21 @@ msgstr ""
 
 #: ../../source/publish_datasets/transform_dataset.rst:50
 msgid "Integer"
-msgstr ""
+msgstr "Entier"
 
 #: ../../source/publish_datasets/transform_dataset.rst:51
 msgid ""
 "Any valid integer value. If a floating point value is found, it is "
 "automatically cast to its integer part."
-msgstr ""
+msgstr "N'importe quelle valeur entière valide. S'il existe une partie non-entière, la valeur est automatiquement transformée en sa valeur entière uniquement."
 
 #: ../../source/publish_datasets/transform_dataset.rst:52
 msgid "Text"
-msgstr ""
+msgstr "Texte"
 
 #: ../../source/publish_datasets/transform_dataset.rst:53
 msgid "Anything"
-msgstr ""
+msgstr "N'importe quelle valeur"
 
 #: ../../source/publish_datasets/transform_dataset.rst:55
 msgid ""
@@ -264,11 +264,11 @@ msgstr ""
 
 #: ../../source/publish_datasets/transform_dataset.rst:108
 msgid "Decimal and Integer fields"
-msgstr ""
+msgstr "Champs décimaux et entiers"
 
 #: ../../source/publish_datasets/transform_dataset.rst:105
 msgid "**Unit**"
-msgstr ""
+msgstr "**Unité**"
 
 #: ../../source/publish_datasets/transform_dataset.rst:107
 msgid ""
@@ -279,7 +279,7 @@ msgstr ""
 
 #: ../../source/publish_datasets/transform_dataset.rst:111
 msgid "Transforming your dataset"
-msgstr ""
+msgstr "Transformer votre jeu de données"
 
 #: ../../source/publish_datasets/transform_dataset.rst:113
 msgid ""
