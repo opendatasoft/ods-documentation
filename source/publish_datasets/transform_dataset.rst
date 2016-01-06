@@ -98,8 +98,7 @@ You then have access to a wide range of options depending on the field type.
 * Date and DateTime fields
     * **Precision**
 
-        This option lets you choose the precision of a temporal field (year, month and day for a Date field, year,
-        month, day, hour and minute for a DateTime field).
+        This option lets you choose the precision of a temporal field (year, month and day for a Date field, hour and minute for a DateTime field).
 
 * Decimal and Integer fields
     * **Unit**
