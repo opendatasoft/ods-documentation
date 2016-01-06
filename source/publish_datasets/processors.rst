@@ -510,7 +510,7 @@ It takes the following parameters:
 
 * **Case Sensitive**
 
-* **Collapse Duplicates**
+* **One line**
 
    In some specific cases, the remote dataset may contain more than one row matching the local key. In which case, you
    may want to either collapse duplicates (that is, generate a single row which will contain multi-valued fields) or
