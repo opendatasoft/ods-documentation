@@ -22,12 +22,12 @@ Geo Processors
 Normalize Projection Reference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This processor can be used to handle a **Geo Point 2D** with a projection system different from 
-`WGS84 <http://en.wikipedia.org/wiki/WGS_84>`_ field. It takes as a parameter the name of the field as well as the 
-`EPSG <http://spatialreference.org/ref/epsg/>`_ code of the source coordinates system. The field's value is replaced 
+This processor can be used to handle a **Geo Point 2D** with a projection system different from
+`WGS84 <http://en.wikipedia.org/wiki/WGS_84>`_ field. It takes as a parameter the name of the field as well as the
+`EPSG <http://spatialreference.org/ref/epsg/>`_ code of the source coordinates system. The field's value is replaced
 with its WGS84 representation.
 
-For instance, if you set the EPSG code to ``27572``, the processor will consider that the original geo field contains 
+For instance, if you set the EPSG code to ``27572``, the processor will consider that the original geo field contains
 coordinates expressed in `Lambert Zone II <http://spatialreference.org/ref/epsg/ntf-paris-lambert-zone-ii/>`_.
 
 Note that the input must be expressed with the same logic as a WGS84 geo coordinate: ``Y,X``.
@@ -65,7 +65,7 @@ The signs can be:
 
 .. list-table::
    :header-rows: 1
-   
+
    * * Type
      * Signs
    * * North/South
@@ -89,15 +89,15 @@ This processors allows you to geocode an IP address. It uses the `GeoIP <http://
 Geocode with Google
 ~~~~~~~~~~~~~~~~~~~
 
-This processor allows you to geocode full text addresses by using the Google geocoding API. You need to possess a 
-Google API key to do so. This processor is not activated by default. Please contact the OpenDataSoft support team if 
+This processor allows you to geocode full text addresses by using the Google geocoding API. You need to possess a
+Google API key to do so. This processor is not activated by default. Please contact the OpenDataSoft support team if
 you plan to use it.
 
 Geocode with ArcGIS
 ~~~~~~~~~~~~~~~~~~~
 
-This processor allows you to geocode full text addresses by using the ArcGIS geocoding API. You need to possess an 
-ArcGIS API key to do so. This processor is not activated by default. Please contact the OpenDataSoft support team if 
+This processor allows you to geocode full text addresses by using the ArcGIS geocoding API. You need to possess an
+ArcGIS API key to do so. This processor is not activated by default. Please contact the OpenDataSoft support team if
 you plan to use it.
 
 Dates Processors
@@ -109,13 +109,13 @@ Dates Processors
 Set Timezone
 ~~~~~~~~~~~~
 
-This processor can be used to force the timezone of a datetime field. This might be useful when, for instance, the 
+This processor can be used to force the timezone of a datetime field. This might be useful when, for instance, the
 source outputs timestamps with no timezone indication.
 
-Normalize Dates
+Normalize Date
 ~~~~~~~~~~~~~~~
 
-Date normalization is one of the most commonly used processors. It allows you to parse a date in a format that would 
+Date normalization is one of the most commonly used processors. It allows you to parse a date in a format that would
 otherwise not be understood by the platform.
 
 Simply specify the date format pattern to use in the **Date format** parameter.
@@ -124,7 +124,7 @@ A pattern is an arbitrary string containing one of the following directives.
 
 .. list-table::
    :header-rows: 1
-   
+
    * * Directive
      * Meaning
      * Example
@@ -144,7 +144,7 @@ A pattern is an arbitrary string containing one of the following directives.
      * Month as locale’s abbreviated name.
      * Jan, Feb, ..., Dec
    * * %B
-     * Month as locale’s full name.	
+     * Month as locale’s full name.
      * January, February, ..., December
    * * %m
      * Month as a zero-padded decimal number.
@@ -198,10 +198,10 @@ This processor makes it possible to write complex expression patterns using fiel
 
 The expression processor can work with both textual content and numerical content.
 
-Literal values can be either explicit literals, such as ``"this is some text"``, or ``2`` as well as field names, 
+Literal values can be either explicit literals, such as ``"this is some text"``, or ``2`` as well as field names,
 such as ``price``.
 
-To enter expression mode, tap a ``=`` in the expression field box. If you do not, the expression will be interpreted as 
+To enter expression mode, tap a ``=`` in the expression field box. If you do not, the expression will be interpreted as
 pure textual content.
 
 In expression mode, strings must be double quoted (``"foo"``).
@@ -210,13 +210,13 @@ The following unary, binary and ternary operators are available:
 
 .. list-table::
    :header-rows: 1
-   
+
    * * Operator type
      * Operators
    * * Unary operators
      * +, -, not, ! (not) , ! (factorial), ^ (power)
    * * Binary operators
-     * +, -, ``*``, /, % (euclidean division), and, &&, or, ||, >, <, >=, <=, == (evaluates to ``True`` or ``False``), & 
+     * +, -, ``*``, /, % (euclidean division), and, &&, or, ||, >, <, >=, <=, == (evaluates to ``True`` or ``False``), &
        (concatenation of strings, evaluates to a string)
    * * Ternary operators
      * op1 ? op2 : op3 (conditional statement)
@@ -225,7 +225,7 @@ Examples:
 
 .. list-table::
    :header-rows: 1
-   
+
    * * Expression
      * Result
    * * 1 + 1
@@ -251,7 +251,7 @@ A rich set of functions is also available
 
 .. list-table::
    :header-rows: 1
-   
+
    * * Function type
      * Functions
    * * Without operand
@@ -267,7 +267,7 @@ Examples:
 
 .. list-table::
    :header-rows: 1
-   
+
    * * Expression
      * Result
    * * cos(2 * pi)
@@ -344,13 +344,13 @@ Text Processors
 Replace Regexp
 ~~~~~~~~~~~~~~
 
-This processor can be used to replace a random regular expression pattern by new content. See 
+This processor can be used to replace a random regular expression pattern by new content. See
 `<http://en.wikipedia.org/wiki/Regular_expression>`_ for more details on how to write a regular expressions.
 
 Extract Text
 ~~~~~~~~~~~~
 
-This processor can be used to extract an arbitrary pattern expressed as a regular expression out of a string using sub 
+This processor can be used to extract an arbitrary pattern expressed as a regular expression out of a string using sub
 matching.
 
 The syntax of the sub-matching expression to specify is the following: ``(?P<NAME>REGEXP)``. Where:
@@ -381,8 +381,8 @@ And if you want to extract the street number in a field ``street_number``, simpl
 Normalize URL
 ~~~~~~~~~~~~~
 
-This processor can be used to normalize a field value that should contain a valid URL. It can be used for instance when 
-the field's value contains leading or trailing spaces, or does not have any scheme specification (in which case 
+This processor can be used to normalize a field value that should contain a valid URL. It can be used for instance when
+the field's value contains leading or trailing spaces, or does not have any scheme specification (in which case
 'http://' is prepended to the field's value).
 
 Split Text
@@ -393,7 +393,7 @@ This processor can be used to split a field's value and to extract the Nth eleme
 Concatenate Text
 ~~~~~~~~~~~~~~~~
 
-This processor can be used to concatenate two fields using a separator. You'll need to define the left and right hand 
+This processor can be used to concatenate two fields using a separator. You'll need to define the left and right hand
 sides of the concatenation, as well as the separator and the resulting field.
 
 Extract HTML
@@ -404,7 +404,7 @@ This processor strips HTML tags from field values.
 Extract URLs
 ~~~~~~~~~~~~
 
-This processor extracts URLs from HTML or text content. It extracts http and https links into a field, the links are 
+This processor extracts URLs from HTML or text content. It extracts http and https links into a field, the links are
 separated by a space.
 
 Field Processors
@@ -439,7 +439,7 @@ Let's take an example. You have two datasets:
 
 .. list-table::
    :header-rows: 1
-   
+
    * * station_id
      * station_name
      * station_address
@@ -456,7 +456,7 @@ The name of this dataset is **paris_taxis_stations**.
 
 .. list-table::
    :header-rows: 1
-   
+
    * * station_id
      * number
    * * 1
@@ -470,7 +470,7 @@ The Join processor allows you to enrich the second dataset with colums coming fr
 
 .. list-table::
    :header-rows: 1
-   
+
    * * station_id
      * number
      * station_name
@@ -488,12 +488,12 @@ It takes the following parameters:
 
 * **Dataset URL**
 
-   This parameter shall contain the URL of the dataset. Simple copy paste it from your web browser. Example of a valid 
+   This parameter shall contain the URL of the dataset. Simple copy paste it from your web browser. Example of a valid
    URL: `<http://opendata.paris.fr/explore/dataset/paris_taxis_stations/?tab=table>`_
 
 * **Local Key**
 
-   The local field that will be used to identify the corresponding records in the remote dataset. More than one key can 
+   The local field that will be used to identify the corresponding records in the remote dataset. More than one key can
    be specified.
 
 * **Remote Key**
@@ -512,19 +512,19 @@ It takes the following parameters:
 
 * **Collapse Duplicates**
 
-   In some specific cases, the remote dataset may contain more than one row matching the local key. In which case, you 
-   may want to either collapse duplicates (that is, generate a single row which will contain multi-valued fields) or 
-   not. If this parameter is set, you can specify the character to use to separate values in the generated field in 
+   In some specific cases, the remote dataset may contain more than one row matching the local key. In which case, you
+   may want to either collapse duplicates (that is, generate a single row which will contain multi-valued fields) or
+   not. If this parameter is set, you can specify the character to use to separate values in the generated field in
    the **Separator** parameter.
 
-Let's take an example and assume that the first dataset contains two rows for the first station:   
+Let's take an example and assume that the first dataset contains two rows for the first station:
 
 .. list-table::
    :header-rows: 1
-   
+
    * * station_id
      * station_name
-     * station_address 
+     * station_address
    * * 1
      * Tour Eiffel
      * 69 quai Branly, 75007 Paris
@@ -583,14 +583,14 @@ Transpose Fields
 
 This processor makes it possible to transform field names into field values.
 
-Let's take a simple example, with a dataset containing for a couple of countries the evolution of the number of 
+Let's take a simple example, with a dataset containing for a couple of countries the evolution of the number of
 inhabitants from 2020 to 2030.
 
 The dataset initially looks like this:
 
 .. list-table::
    :header-rows: 1
-   
+
    * * Country name
      * 2020
      * 2030
@@ -614,7 +614,7 @@ Let's have a look at an alternative way to represent this dataset.
 
 .. list-table::
    :header-rows: 1
-   
+
    * * Country Name
      * Year
      * Inhabitants
@@ -658,22 +658,22 @@ You'll need to define the following parameters:
 
 * **Label for title column**
 
-  Defines the label of the new column containing the names of the fields that have been transposed. In the above 
+  Defines the label of the new column containing the names of the fields that have been transposed. In the above
   sample, this would have been *Year*.
 
 * **Label for the value column**
 
-  Defines the label of the new column containing the former cell values. This would have been *Inhabitants* in the 
+  Defines the label of the new column containing the former cell values. This would have been *Inhabitants* in the
   above sample.
 
 * **One line**
 
-  Make it possible to group / concat transposal results, using a specific **Separator**. With the above sample, 
+  Make it possible to group / concat transposal results, using a specific **Separator**. With the above sample,
   activating the One line option and choosing ';' as a separator, th result would have been the following:
 
 .. list-table::
    :header-rows: 1
-   
+
    * * Country Name
      * Year
      * Inhabitants
@@ -694,31 +694,31 @@ This processor can be used to extract values from a json object.
 
 It rely on ijson library and use the same syntax for rule extraction.
 
-For example, let's assume that you have this json object into a text field : 
+For example, let's assume that you have this json object into a text field :
 
 .. code-block:: json
 
-    { "metaA": "Joe", 
-      "bloc" : 
-          [ 
-            {"metaB" : "valueB"}, 
-            {"int": 5}, 
-            {"boolean": {} } 
-          ], 
-      "sub" : { "sub_sub" : "sub_value"} 
-    } 
-    
+    { "metaA": "Joe",
+      "bloc" :
+          [
+            {"metaB" : "valueB"},
+            {"int": 5},
+            {"boolean": {} }
+          ],
+      "sub" : { "sub_sub" : "sub_value"}
+    }
+
 * you will be able to extract the value ``Joe`` with this rule : ``metaA``
 * you will be able to extract the value ``valueB`` with this rule : ``bloc.item.metaB``
 * you will be able to extract the value ``5`` with this rule : ``bloc.item.int``
 * you will be able to extract the value ``sub_value`` with this rule : ``sub.sub_sub``
 * The rule ``bloc.item`` will extract the last object of the json list : ``{boolean: {}}``
-* The rule ``bloc`` will extract the json list : 
-    
+* The rule ``bloc`` will extract the json list :
+
     .. code-block:: json
-    
-        [ 
-            {"metaB" : "valueB"}, 
-            {"int": 5}, 
-            {"boolean": {} } 
+
+        [
+            {"metaB" : "valueB"},
+            {"int": 5},
+            {"boolean": {} }
         ]
