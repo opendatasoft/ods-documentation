@@ -535,7 +535,7 @@ Let's take an example and assume that the first dataset contains two rows for th
      * Rennes - Montparnasse
      * 1 place du dix huit Juin 1940, 75006 Paris
 
-If **Collapse Duplicates** is set (with **Separator** set to `|`), the Join will result in:
+If **One line** is set (with **Separator** set to `|`), the Join will result in:
 
 .. list-table::
    :header-rows: 1
@@ -553,7 +553,7 @@ If **Collapse Duplicates** is set (with **Separator** set to `|`), the Join will
      * Rennes - Montparnasse
      * 1 place du dix huit Juin 1940, 75006 Paris
 
-If **Collapse Duplicates** is not set, the Join will result in:
+If **One line** is not set, the Join will result in:
 
 .. list-table::
    :header-rows: 1
