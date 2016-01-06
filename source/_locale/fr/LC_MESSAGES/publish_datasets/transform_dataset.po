@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-06 12:01+0100\n"
-"PO-Revision-Date: 2016-01-06 11:01+0000\n"
-"Last-Translator: Jérémy Autran <jeremy.autran@opendatasoft.com>\n"
+"POT-Creation-Date: 2016-01-06 14:16+0100\n"
+"PO-Revision-Date: 2016-01-06 13:12+0000\n"
+"Last-Translator: benrict <benoit.richter@opendatasoft.com>\n"
 "Language-Team: French (http://www.transifex.com/opendatasoft/documentation-5/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -134,7 +134,7 @@ msgstr "Forme géo"
 
 #: ../../source/publish_datasets/transform_dataset.rst:49
 msgid "A valid geo shape expressed in GeoJSON."
-msgstr ""
+msgstr "Une forme géographique exprimée en GeoJSON."
 
 #: ../../source/publish_datasets/transform_dataset.rst:50
 msgid "Integer"
@@ -158,39 +158,39 @@ msgstr "N'importe quelle valeur"
 msgid ""
 "Next to their type, any field has a set of action items, which can be used "
 "to further refine your dataset schema."
-msgstr ""
+msgstr "A côté de leur type, chaque champ propose un certain nombre de boutons pour affiner encore le schéma du jeu de données."
 
 #: ../../source/publish_datasets/transform_dataset.rst:57
 msgid "The **filter action** lets you define a **facet** for the field."
-msgstr ""
+msgstr "Le bouton **Facette** vous permet de définir une **facette** pour ce champ."
 
 #: ../../source/publish_datasets/transform_dataset.rst:58
 msgid ""
 "The **field configuration action** will be described in more details below."
-msgstr ""
+msgstr "Le bouton **Configuration** est détaillé ci-dessous."
 
 #: ../../source/publish_datasets/transform_dataset.rst:59
 msgid ""
 "The **reorder fields action** lets you reorder dataset fields at your "
 "convenience. This only affects the dataset API output."
-msgstr ""
+msgstr "Le bouton **Réordonner**  vous permet de changer l'ordre des champs du jeu de données.  Cela n'a d'effet que sur l'API."
 
 #: ../../source/publish_datasets/transform_dataset.rst:61
 msgid ""
 "The **hide fields action** lets you hide specific dataset fields. Hidden "
 "fields are displayed at the right hand side of the table view and can easily"
 " be recovered."
-msgstr ""
+msgstr "Le bouton **Rejeter** vous permet de cacher un ou plusieurs champs pour ne pas les publier. Les champs cachés sont toujours disponibles à la droite des champs visibles et peuvent facilement être restaurés."
 
 #: ../../source/publish_datasets/transform_dataset.rst:65
 msgid "Configuring a field"
-msgstr ""
+msgstr "Configurer un champ"
 
 #: ../../source/publish_datasets/transform_dataset.rst:67
 msgid ""
 "The **field configuration button** allows you to fine tune your field's "
 "configuration."
-msgstr ""
+msgstr "Le bouton **Configuration** vous permet de paramétrer plus finement le champ."
 
 #: ../../source/publish_datasets/transform_dataset.rst:72
 msgid ""
@@ -199,30 +199,30 @@ msgid ""
 "as the fingerprint of all the record fields values. The **ID** option lets "
 "you choose which fields are going to be used when computing the record id, "
 "making it possible to handle records deduplication at record fields level."
-msgstr ""
+msgstr "L'option **ID** vous permet de définir la façon dont l'identifiant de chaque enregistrement est généré. Chaque enregistrement est associé à un identifiant unique, qui par défaut est généré à partir d'une empreinte de l'ensemble de ses valeurs. L'option **ID** vous permet de choisir quel(s) champ(s) sont utilisés dans ce calcul, et ainsi de gérer un dédoublonnement directement en fonction des valeurs."
 
 #: ../../source/publish_datasets/transform_dataset.rst:77
 msgid ""
 "You then have access to a wide range of options depending on the field type."
-msgstr ""
+msgstr "Vous avez ensuite accès à de nombreuses options selon le type du champ."
 
 #: ../../source/publish_datasets/transform_dataset.rst:96
 msgid "Text fields"
-msgstr ""
+msgstr "Champs texte"
 
 #: ../../source/publish_datasets/transform_dataset.rst:80
 msgid "**Sortable**"
-msgstr ""
+msgstr "**Triable**"
 
 #: ../../source/publish_datasets/transform_dataset.rst:82
 msgid ""
 "By default, textual fields are not sortable. This option lets you activate "
 "sorting on textual fields."
-msgstr ""
+msgstr "Par défaut, les champs de type texte ne sont pas triables. Cette option vous permet d'activer le tri sur un champ texte précis."
 
 #: ../../source/publish_datasets/transform_dataset.rst:84
 msgid "**Multivalued**"
-msgstr ""
+msgstr "**Multi-valué**"
 
 #: ../../source/publish_datasets/transform_dataset.rst:86
 msgid ""
@@ -233,11 +233,11 @@ msgid ""
 "multivalued and defining the separator as being the ';' character, the "
 "values displayed in the facets widget will indeed be distinct (one entry for"
 " *France*, one entry for *UK*, one entry for *USA*)."
-msgstr ""
+msgstr "Cette option vous permet de configurer un séparateur qui sera utilisé pour interpréter une valeur comme étant en réalité une liste de plusieurs valeurs. Ceci peut être utilisé pour de la catégorisation multiple. Par exemple, supposons un champ *pays* défini comme une facette et contenant des valeurs telles que *France;UK;USA*. En réglant ce champ comme multi-valué avec un séparateur \";\", les valeurs affichées dans les facettes seront distinctes (\"France\", \"UK\", \"USA\")."
 
 #: ../../source/publish_datasets/transform_dataset.rst:92
 msgid "**Hierarchical**"
-msgstr ""
+msgstr "**Hiérarchique**"
 
 #: ../../source/publish_datasets/transform_dataset.rst:94
 msgid ""
@@ -245,73 +245,72 @@ msgid ""
 "processed as a single, raw textual content. But sometimes, you may want to "
 "build hierarchical facets navigation. This option lets you choose the "
 "hierarchy path separator to be used."
-msgstr ""
+msgstr "Cette propriété est utilisée conjointement avec l'option facette. Par défaut, les facettes sont traitées comme un seul contenu texte brut. Parfois, on souhaite construire une hiérarchie de valeurs pour la navigation. Cette option vous permet de choisir un séparateur pour les différents éléments du chemin."
 
-#: ../../source/publish_datasets/transform_dataset.rst:102
+#: ../../source/publish_datasets/transform_dataset.rst:101
 msgid "Date and DateTime fields"
-msgstr ""
+msgstr "Champs Date et DateTime"
 
 #: ../../source/publish_datasets/transform_dataset.rst:99
 msgid "**Precision**"
-msgstr ""
+msgstr "**Précision**"
 
 #: ../../source/publish_datasets/transform_dataset.rst:101
 msgid ""
 "This option lets you choose the precision of a temporal field (year, month "
-"and day for a Date field, year, month, day, hour and minute for a DateTime "
-"field)."
-msgstr ""
+"and day for a Date field, hour and minute for a DateTime field)."
+msgstr "Cette option vous permet de choisir la précision d'un champ temporel (année, mois ou jour pour un champ Date; heure ou minute pour un champ DateTime)."
 
-#: ../../source/publish_datasets/transform_dataset.rst:108
+#: ../../source/publish_datasets/transform_dataset.rst:107
 msgid "Decimal and Integer fields"
 msgstr "Champs décimaux et entiers"
 
-#: ../../source/publish_datasets/transform_dataset.rst:105
+#: ../../source/publish_datasets/transform_dataset.rst:104
 msgid "**Unit**"
 msgstr "**Unité**"
 
-#: ../../source/publish_datasets/transform_dataset.rst:107
+#: ../../source/publish_datasets/transform_dataset.rst:106
 msgid ""
 "This option lets you define an unit associated with numerical fields. This "
 "option is used to complement the table view and is displayed next to the "
 "field's value."
-msgstr ""
+msgstr "Cette option vous permet de définir une unité associée à un champ numérique. Cela permet l'affichage de l'unité à côté de la valeur dans certaines visualisations."
 
-#: ../../source/publish_datasets/transform_dataset.rst:111
+#: ../../source/publish_datasets/transform_dataset.rst:110
 msgid "Transforming your dataset"
 msgstr "Transformer votre jeu de données"
 
-#: ../../source/publish_datasets/transform_dataset.rst:113
+#: ../../source/publish_datasets/transform_dataset.rst:112
 msgid ""
-"In the same screen, you also have accesss to the processors configuration. A"
-" processor is a component which lets you modify the content of your dataset:"
-" concatenate values, extract text matching a specific expression, perform "
+"In the same screen, you also have access to the processors configuration. A "
+"processor is a component which lets you modify the content of your dataset: "
+"concatenate values, extract text matching a specific expression, perform "
 "numerical operations, geocode full text addresses..."
-msgstr ""
+msgstr "Dans la même interface, vous avez également accès à la configuration des processeurs. Un processeur est un composant qui vous permet de modifier le contenu de votre jeu de données: concaténer des valeurs, extraire du texte selon une expression, effectuer des opérations numériques, géocoder des adresses..."
 
-#: ../../source/publish_datasets/transform_dataset.rst:120
+#: ../../source/publish_datasets/transform_dataset.rst:119
 msgid ""
 "The exhaustive list of processors and associated configuration parameters "
 "and features are described in dedicated articles in the same section."
-msgstr ""
+msgstr "Les fonctionnalités des processeurs et leur configuration détaillée sont décrits dans d'autres articles présents dans la même rubrique. "
 
-#: ../../source/publish_datasets/transform_dataset.rst:124
+#: ../../source/publish_datasets/transform_dataset.rst:123
 msgid "Impacts of changing the dataset schema or the processors configuration"
-msgstr ""
+msgstr "Impacts d'un changement du schéma du jeu de données ou de la configuration des processeurs"
 
-#: ../../source/publish_datasets/transform_dataset.rst:126
+#: ../../source/publish_datasets/transform_dataset.rst:125
 msgid ""
 "When you update the configuration of your dataset in a way that has an "
 "impact on the content (record values) of the published dataset, the full "
 "dataset content has to be republished. The only cases when changing a "
 "parameter in the processing tab doesn't require republishing are the "
 "following:"
-msgstr ""
+msgstr "Lorsque vous effectuez des modifications sur la configuration du jeu de données qui ont un effet sur les données elle-même, le jeu de donnée complet doit repasser par l'étape de publication. Les seuls cas où un changement dans l'onglet **Traitement** ne nécessitent pas une republication sont :"
+
+#: ../../source/publish_datasets/transform_dataset.rst:129
+msgid "Modifying a field's label"
+msgstr "Modifier le label d'un champ"
 
 #: ../../source/publish_datasets/transform_dataset.rst:130
-msgid "Modifying a field's label"
-msgstr ""
-
-#: ../../source/publish_datasets/transform_dataset.rst:131
 msgid "Reordering the fields"
-msgstr ""
+msgstr "Réordonner les champs"
