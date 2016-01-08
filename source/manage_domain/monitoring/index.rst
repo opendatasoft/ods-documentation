@@ -56,8 +56,7 @@ OpenDataSoft's Google Analytics integration tracks the following views:
 APIs Monitoring
 ---------------
 
-OpenDataSoft users API calls are natively monitored by OpenDataSoft, giving to administrators a deep understanding of 
-how their datasets are used.
+OpenDataSoft users API calls are natively monitored by OpenDataSoft, giving to administrators a deep understanding of how their datasets are used.
 
 While the Google Analytics integration gives an overview of how the domain web site is used (viewed pages), API 
 monitoring registers any API call, may it come from a web page or from a mobile application.
@@ -99,8 +98,8 @@ You'll find below the list of fields available in the API monitoring dataset.
    * * api
      * API name (see below)
      * yes
-   * * api_version
-     * API version (v1 or v2)
+   * * api_type
+     * API type (ods_v1, ods_v2 or odata)
      * yes
    * * query_string
      * HTTP request query string
@@ -164,11 +163,10 @@ You'll find below the list of fields available in the API monitoring dataset.
      * yes
 
 
+API names for ods APIv1
+~~~~~~~~~~~~~~~~~~~~~~~
 
-**api** Fields v1
-~~~~~~~~~~~~~~~~~
-
-The **api** field for APIv1 contains one of the following values.
+The **api** field for OpenDataSoft APIv1 contains one of the following values.
 
 .. list-table::
    :header-rows: 1
@@ -176,66 +174,130 @@ The **api** field for APIv1 contains one of the following values.
    * * API name
      * Description
      * URL template
-   * * search_dataset_records
-     * Search query in dataset records
-     * ``api/datasets/1.0/search/``
-   * * get_bbox_clusters
-     * Bounding box query
-     * ``api/datasets/1.0/<dataset_id>/records/boundingbox/``
    * * search_datasets
-     * Search query in catalog
-     * ``api/datasets/1.0/search``
-   * * download_dataset_records
-     * Download dataset records with API call
-     * ``api/datasets/1.0/<dataset_id>/records/download/``
+     * Search catalog query
+     * api/datasets/1.0/search
    * * lookup_dataset
      * Lookup dataset query
-     * ``api/datasets/1.0/<dataset_id>``
-   * * get_geo_clusters
-     * Geo cluster query on dataset records
-     * ``api/datasets/1.0/<dataset_id>/records/geocluster/``
-   * * analyze_records
-     * Analyze records query
-     * ``api/datasets/1.0/<dataset_id>/records/analyze/``
+     * api/datasets/1.0/<dataset_id>
    * * dataset_list_snapshots
      * List dataset snapshots query
-     * ``api/datasets/1.0/<dataset_id>/snapshots/``
-   * * dowload_dataset
-     * Download dataset records from explore
-     *
-   * * get_geo_clusters_polygon
-     *
-     *
-   * * odata_entity
-     *
-     *
-   * * download_dataset_attachment
-     *
-     *
-   * * odata_property_value
-     *
-     *
-   * * odata_entity_key_predicate
-     *
-     *
-   * * odata_service_root_doc
-     *
-     *
-   * * record_with_id
-     *
-     *
-   * * odata_metadata_doc
-     *
-     *
-   * * odata_record_count
-     *
-     *
-   * * download_image
-     *
-     *
+     * api/datasets/1.0/<dataset_id>/snapshots/
+   * * search_dataset_records
+     * Search query on dataset records
+     * api/datasets/1.0/<dataset_id>/records/
    * * lookup_record
-     *
-     *
+     * Lookup record query
+     * api/datasets/1.0/<dataset_id>/records/<record_id>
+   * * dowload_dataset
+     * Download dataset records from explore tab in explore
+     * explore/dataset/<dataset_id>/download/
+   * * download_dataset_records
+     * Download dataset records from API (total dataset download count = dowload_dataset + download_dataset_records)
+     * api/datasets/1.0/<dataset_id>/records/download/
+   * * download_dataset_attachment
+     * Download dataset attachment
+     * api/datasets/1.0/<dataset_id>/attachments/<attachment_id>/
+   * * get_bbox_clusters
+     * Bounding box query.
+     * api/datasets/1.0/<dataset_id>/records/boundingbox/
+   * * analyze_records
+     * Analyze records query. Called by analyze tab in explore
+     * api/datasets/1.0/<dataset_id>/records/analyze/
+   * * get_geo_clusters
+     * Geo cluster query. Called by map tab in explore for geo_point
+     * api/datasets/1.0/<dataset_id>/records/geocluster/
+   * * get_geo_clusters_polygon
+     * Geo clusters polygon query. Called by map tab in explore for shapes
+     * api/datasets/1.0/<dataset_id>/records/geopolygon/
+   * * download_image
+     * Download image. Called by image tab in explore
+     * explore/dataset/<dataset_id>/images/<image_id>/download/
+
+
+API names for api odata
+~~~~~~~~~~~~~~~~~~~~~~~
+
+The **api** field for odata API contains one of the following values.
+
+.. list-table::
+   :header-rows: 1
+
+   * * API name
+     * Description
+     * URL template
+   * * odata_service_root_doc
+     * Root odata api
+     * api/odata/
+   * * odata_entity
+     * list of records in a dataset
+     * api/odata/<dataset_id>/
+   * * odata_property_value
+     * plain text value of a specific field of a specific record from a dataset
+     * api/odata/<dataset_id>('<record_id>')/<field>/$value
+   * * odata_entity_key_predicate
+     * specific record from a dataset
+     * api/odata/<dataset_id>('<record_id>')/
+   * * record_with_id
+     * specific record from a dataset (without quote in API call)
+     * api/odata/<dataset_id>(<record_id>)/
+   * * odata_metadata_doc
+     * metadata call
+     * api/odata/$metadata/
+   * * odata_record_count
+     * number of records in a dataset
+     * api/odata/<dataset_id>/$count/
+
+API names for ods APIv2
+~~~~~~~~~~~~~~~~~~~~~~~
+
+The **api** field for OpenDataSoft APIv2 contains one of the following values.
+
+.. list-table::
+  :header-rows: 1
+
+  * * API name
+    * Description
+    * URL template
+  * * api_root
+    * Call to api v2 root
+    * /v2
+  * * api_source
+    * Call to source path (catalog, monitoring, opendatasoft)
+    * /v2/<source>
+  * * datasets_index
+    * Search on datasets catalog (can be an export if ``export_as`` parameter is used)
+    * /v2/<source>/datasets
+  * * dataset_lookup
+    * Dataset lookup call
+    * /v2/<source>/datasets/<dataset_id>
+  * * aggregate_datasets
+    * Aggregation call on catalog
+    * /v2/<source>/aggregates
+  * * records_index
+    * Search on dataset records (can be an export if ``export_as`` parameter is used)
+    * /v2/<source>/datasets/<dataset_id>/records
+  * * record_lookup
+    * Record lookup call
+    * /v2/<source>/datasets/<dataset_id>/records/<record_id>
+  * * aggregate_records
+    * Aggregation call on dataset records
+    * /v2/<source>/datasets/<dataset_id>/aggregates
+  * * attachments_index
+    * Call to dataset attachments
+    * /v2/<source>/datasets/<dataset_id>/attachments
+  * * attachment_lookup
+    * Call to attachment lookup
+    * /v2/<source>/datasets/<dataset_id>/attachments/<attachment_id>
+  * * metadata_template_types_index
+    * Return metadata template types
+    * /v2/<source>/metadata_templates
+  * * metadata_template_type_lookup
+    * Metadata template type lookup
+    * /v2/<source>/metadata_templates/<template_type>
+  * * metadata_template_lookup
+    * Metadata template lookup
+    * /v2/<source>/metadata_templates/<template_type>/<template_name>
 
 **api** Fields v2
 ~~~~~~~~~~~~~~~~~
