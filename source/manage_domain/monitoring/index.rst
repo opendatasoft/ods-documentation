@@ -99,6 +99,9 @@ You'll find below the list of fields available in the API monitoring dataset.
    * * api
      * API name (see below)
      * yes
+   * * api_version
+     * API version (v1 or v2)
+     * yes
    * * query_string
      * HTTP request query string
      * no
@@ -161,7 +164,11 @@ You'll find below the list of fields available in the API monitoring dataset.
      * yes
 
 
-The **api** field contains one of the following values.
+
+**api** Fields v1
+~~~~~~~~~~~~~~~~~
+
+The **api** field for APIv1 contains one of the following values.
 
 .. list-table::
    :header-rows: 1
@@ -170,68 +177,124 @@ The **api** field contains one of the following values.
      * Description
      * URL template
    * * search_dataset_records
-     * 
-     * 
+     * Search query in dataset records
+     * ``api/datasets/1.0/search/``
    * * get_bbox_clusters
-     * 
-     * 
+     * Bounding box query
+     * ``api/datasets/1.0/<dataset_id>/records/boundingbox/``
    * * search_datasets
-     * 
-     * 
+     * Search query in catalog
+     * ``api/datasets/1.0/search``
    * * download_dataset_records
-     * 
-     * 
+     * Download dataset records with API call
+     * ``api/datasets/1.0/<dataset_id>/records/download/``
    * * lookup_dataset
-     * 
-     * 
+     * Lookup dataset query
+     * ``api/datasets/1.0/<dataset_id>``
    * * get_geo_clusters
-     * 
-     * 
+     * Geo cluster query on dataset records
+     * ``api/datasets/1.0/<dataset_id>/records/geocluster/``
    * * analyze_records
-     * 
-     * 
+     * Analyze records query
+     * ``api/datasets/1.0/<dataset_id>/records/analyze/``
    * * dataset_list_snapshots
-     * 
-     * 
+     * List dataset snapshots query
+     * ``api/datasets/1.0/<dataset_id>/snapshots/``
    * * dowload_dataset
-     * 
-     * 
+     * Download dataset records from explore
+     *
    * * get_geo_clusters_polygon
-     * 
-     * 
+     *
+     *
    * * odata_entity
-     * 
-     * 
+     *
+     *
    * * download_dataset_attachment
-     * 
-     * 
+     *
+     *
    * * odata_property_value
-     * 
-     * 
+     *
+     *
    * * odata_entity_key_predicate
-     * 
-     * 
+     *
+     *
    * * odata_service_root_doc
-     * 
-     * 
+     *
+     *
    * * record_with_id
-     * 
-     * 
+     *
+     *
    * * odata_metadata_doc
-     * 
-     * 
+     *
+     *
    * * odata_record_count
-     * 
-     * 
+     *
+     *
    * * download_image
-     * 
-     * 
+     *
+     *
    * * lookup_record
-     * 
-     * 
+     *
+     *
 
+**api** Fields v2
+~~~~~~~~~~~~~~~~~
 
-A custom header **ODS-API-Analytics-App** can be sent along with the HTTP request. The header value is processed by our 
+The **api** field for APIv2 contains one of the following values.
+
+.. list-table::
+  :header-rows: 1
+
+  * * API name
+    * Description
+    * URL template
+  * * api_root
+    * Call to api v2 root
+    * ``/``
+  * * api_source
+    * Call to source path (catalog, monitoring, opendatasoft)
+    * ``/v2/<source>``
+  * * datasets_index
+    * Search on datasets catalog (can be an export if `export_as` parameter is used)
+    * ``/v2/<source>/datasets``
+  * * dataset_lookup
+    * Dataset lookup call
+    * ``/v2/<source>/datasets/<dataset_id>``
+  * * aggregate_datasets
+    * Aggregation call on catalog
+    * ``/v2/<source>/aggregates``
+  * * records_index
+    * Search on dataset records (can be an export if `export_as` parameter is used)
+    * ``/v2/<source>/datasets/<dataset_id>/records``
+  * * record_lookup
+    * Record lookup call
+    * ``/v2/<source>/datasets/<dataset_id>/records/<record_id>``
+  * * aggregate_records
+    * Aggregation call on a dataset records
+    * ``/v2/<source>/datasets/<dataset_id>/aggregates``
+  * * attachments_index
+    * Call to dataset attachments
+    * ``/v2/<source>/datasets/<dataset_id>/attachments``
+  * * attachment_lookup
+    * Call to attachment lookup
+    * ``/v2/<source>/datasets/<dataset_id>/attachments/<attachment_id>``
+  * * feedback_index
+    *
+    *
+  * * reuses_index
+    *
+    *
+  * * metadata_template_types_index
+    *
+    * ``/v2/<source>/metadata_templates``
+  * * metadata_template_type_lookup
+    * Call to metadata template type lookup
+    * ``/v2/<source>/metadata_templates/<template_type>``
+  * * metadata_template_lookup
+    * Cal to metadata template lookup
+    * ``/v2/<source>/metadata_templates/<template_type>/<template_name>``
+
+A custom header **ODS-API-Analytics-App** can be sent along with the HTTP request. The header value is processed by our
 monitoring layer and made available in the field **custom_attributes**.
 
 The **embed type** field describes the type of embed which generated the query, when relevant.
