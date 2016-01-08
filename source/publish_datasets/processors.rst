@@ -486,10 +486,10 @@ The Join processor allows you to enrich the second dataset with colums coming fr
 
 It takes the following parameters:
 
-* **Dataset URL**
+* **Dataset**
 
-   This parameter shall contain the URL of the dataset. Simple copy paste it from your web browser. Example of a valid
-   URL: `<http://opendata.paris.fr/explore/dataset/paris_taxis_stations/?tab=table>`_
+   The dataset used for the join; you can select it from your own datasets,
+   or from OpenDataSoft's network of datasets.
 
 * **Local Key**
 
