@@ -194,15 +194,21 @@ pseudoxml:
 	@echo
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
 
-translations: gettext
+translations:
+ifeq ($(shell git symbolic-ref HEAD --short), develop)
 	@echo "Building translation files"
-	sphinx-intl update -p $(BUILDDIR)/locale -l fr
-	sphinx-intl update-txconfig-resources --pot-dir $(BUILDDIR)/locale --transifex-project-name documentation-5
+	@make gettext
+	@sphinx-intl update -p $(BUILDDIR)/locale -l fr
+	@sphinx-intl update-txconfig-resources --pot-dir $(BUILDDIR)/locale --transifex-project-name documentation-5
 	@echo "Uploading translation files to Transifex"
 	tx push -s
 	@echo "Fetching translation files from transifex"
 	tx pull -f fr
 	@echo "Build finished. Translation templates (.pot) uploaded to transifex, translations (.po) retrieved from transifex"
+else
+	@echo "You have to be on the develop branch to build translations"
+endif
+
 
 localizedhtml:
 	@echo "Building translated html"
@@ -210,5 +216,5 @@ localizedhtml:
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
 server:
-	@echo "Serving local files on port 9000: http://localhost:9000"
-	python -m SimpleHTTPServer 9000
+	@echo "Serving local files on port 9000: http://localhost:9000/build/html"
+	@python -m SimpleHTTPServer 9000

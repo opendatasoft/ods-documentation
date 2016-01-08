@@ -27,20 +27,37 @@ To build the documentation.
 make html
 ```
 
-To build the localized documentation (fetching translations from transifex):
+To list translatable strings and retrieve their translations from transifex:
+```bash
+make translations
+```
+
+To build the localized documentation (using translated strings from transifex):
 ```bash
 make localizedhtml
 ```
 
-The generated html will be available in `/build/html`. You can either open the index.html file in your browser or do a `make server`and go to `http://localhost:9000/build/html`.
+The generated html will be available in `/build/html`. You can either open the index.html file in your browser or do a
+`make server` and go to `http://localhost:9000/build/html`.
 
 ## Troubleshooting
 
-When building the documentation, you may run into an error about an unknown locale UTF-8. In that case you need to use the following:
+When building the documentation, you may run into an error about an unknown locale UTF-8. In that case you need to use
+the following:
 ```
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 ```
+
+## Workflow
+
+1. Create a new branch for your work
+2. Create a pull request to develop
+3. Once the pull request is merged, you can work on the translations using "make translations"
+
+The release works with a pull request into master and pushing the updated master branch to github.
+
+Travis will then build the html documentation in all languages and deploy it.
 
 ## Translations
 
