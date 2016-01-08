@@ -203,7 +203,7 @@ ifeq ($(shell git symbolic-ref HEAD --short), develop)
 	@echo "Uploading translation files to Transifex"
 	tx push -s
 	@echo "Fetching translation files from transifex"
-	tx pull -f fr
+	tx pull --mode=developer -l fr
 	@echo "Build finished. Translation templates (.pot) uploaded to transifex, translations (.po) retrieved from transifex"
 else
 	@echo "You have to be on the develop branch to build translations"
