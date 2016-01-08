@@ -163,10 +163,10 @@ You'll find below the list of fields available in the API monitoring dataset.
      * yes
 
 
-API names for ods APIv1
-~~~~~~~~~~~~~~~~~~~~~~~
+API names for OpenDataSoft APIv1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The **api** field for OpenDataSoft APIv1 contains one of the following values.
+The **api** field for OpenDataSoft APIv1 (ods_v1) contains one of the following values.
 
 .. list-table::
    :header-rows: 1
@@ -215,10 +215,10 @@ The **api** field for OpenDataSoft APIv1 contains one of the following values.
      * explore/dataset/<dataset_id>/images/<image_id>/download/
 
 
-API names for api odata
+API names for ODATA API
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-The **api** field for odata API contains one of the following values.
+The **api** field for ODATA API contains one of the following values.
 
 .. list-table::
    :header-rows: 1
@@ -248,10 +248,10 @@ The **api** field for odata API contains one of the following values.
      * number of records in a dataset
      * api/odata/<dataset_id>/$count/
 
-API names for ods APIv2
-~~~~~~~~~~~~~~~~~~~~~~~
+API names for OpenDataSoft APIv2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The **api** field for OpenDataSoft APIv2 contains one of the following values.
+The **api** field for OpenDataSoft APIv2 (ods_v2) contains one of the following values.
 
 .. list-table::
   :header-rows: 1
@@ -299,62 +299,6 @@ The **api** field for OpenDataSoft APIv2 contains one of the following values.
     * Metadata template lookup
     * /v2/<source>/metadata_templates/<template_type>/<template_name>
 
-**api** Fields v2
-~~~~~~~~~~~~~~~~~
-
-The **api** field for APIv2 contains one of the following values.
-
-.. list-table::
-  :header-rows: 1
-
-  * * API name
-    * Description
-    * URL template
-  * * api_root
-    * Call to api v2 root
-    * ``/``
-  * * api_source
-    * Call to source path (catalog, monitoring, opendatasoft)
-    * ``/v2/<source>``
-  * * datasets_index
-    * Search on datasets catalog (can be an export if `export_as` parameter is used)
-    * ``/v2/<source>/datasets``
-  * * dataset_lookup
-    * Dataset lookup call
-    * ``/v2/<source>/datasets/<dataset_id>``
-  * * aggregate_datasets
-    * Aggregation call on catalog
-    * ``/v2/<source>/aggregates``
-  * * records_index
-    * Search on dataset records (can be an export if `export_as` parameter is used)
-    * ``/v2/<source>/datasets/<dataset_id>/records``
-  * * record_lookup
-    * Record lookup call
-    * ``/v2/<source>/datasets/<dataset_id>/records/<record_id>``
-  * * aggregate_records
-    * Aggregation call on a dataset records
-    * ``/v2/<source>/datasets/<dataset_id>/aggregates``
-  * * attachments_index
-    * Call to dataset attachments
-    * ``/v2/<source>/datasets/<dataset_id>/attachments``
-  * * attachment_lookup
-    * Call to attachment lookup
-    * ``/v2/<source>/datasets/<dataset_id>/attachments/<attachment_id>``
-  * * feedback_index
-    *
-    *
-  * * reuses_index
-    *
-    *
-  * * metadata_template_types_index
-    *
-    * ``/v2/<source>/metadata_templates``
-  * * metadata_template_type_lookup
-    * Call to metadata template type lookup
-    * ``/v2/<source>/metadata_templates/<template_type>``
-  * * metadata_template_lookup
-    * Cal to metadata template lookup
-    * ``/v2/<source>/metadata_templates/<template_type>/<template_name>``
 
 A custom header **ODS-API-Analytics-App** can be sent along with the HTTP request. The header value is processed by our
 monitoring layer and made available in the field **custom_attributes**.
