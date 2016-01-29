@@ -104,3 +104,51 @@ be done by editing the menu components in the *Domain > Portal > General setting
 
   .. image:: publish_content__domain-menu--fr.png
      :alt: Domain menu
+
+Special directives
+------------------
+
+On top of all the widgets offered by the `ods-widgets <http://opendatasoft.github.io/ods-widgets/docs/#/api>`_ library,
+a few additional directives are available for use within the content pages on the platform. Contrary to the widgets,
+these cannot be used on third-party websites for they are tightly coupled with the platform.
+
+Contact form
+^^^^^^^^^^^^
+
+This directive inserts a form that users can use to contact the domain's administrators. It uses reCaptcha to make sure
+anonymous users cannot spam the administrators.
+
+.. ifconfig:: language == 'en'
+
+   .. image:: publish_content__contact-form--en.png
+      :alt: Contact form
+
+.. ifconfig:: language == 'fr'
+
+   .. image:: publish_content__contact-form--fr.png
+      :alt: Formulaire de contact
+
+.. list-table::
+   :header-rows: 1
+
+   * * Parameter
+     * Type
+     * Description
+   * * ``page-id`` **required**
+     * string
+     * The slug of the current page so that administrators know where the request came from.
+   * * ``form-disabled``
+     * boolean (default: false)
+     * Specify whether to disable (that is prevent data input and submission) the contact form or not.
+   * * ``logged-in``
+     * boolean (default: autodetected)
+     * Specify whether the current user is logged in or not. If true, the recaptcha is not displayed.
+   * * ``name-label``
+     * string (default: `Your name`)
+     * Specify the label displayed in front of the name field.
+   * * ``email-label``
+     * string (default: `Email`)
+     * Specify the label displayed in front of the email field.
+   * * ``message-label``
+     * string (default: `Message`)
+     * Specify the label displayed in front of the message field.

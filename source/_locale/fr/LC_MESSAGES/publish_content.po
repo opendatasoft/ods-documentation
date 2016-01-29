@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # 
 # Translators:
-# Jérémy Morel <morel.jeremy@gmail.com>, 2015
+# Jérémy Morel <morel.jeremy@gmail.com>, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-08 16:34+0100\n"
-"PO-Revision-Date: 2016-01-08 13:57+0000\n"
+"POT-Creation-Date: 2016-01-29 12:28+0100\n"
+"PO-Revision-Date: 2016-01-29 11:28+0000\n"
 "Last-Translator: Jérémy Morel <morel.jeremy@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/opendatasoft/documentation-5/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -166,3 +166,117 @@ msgid ""
 " page in your domain's menu. This can easily be done by editing the menu "
 "components in the *Domain > Portal > General settings* section."
 msgstr "Une fois votre page de contenu finalisée, vous voudrez sans doute l'injecter dans le menu de votre domaine. Il suffit pour cela de modifier la liste des éléments du menu dans la partie *Domaine > Portail > Paramètres globaux*."
+
+#: ../../source/publish_content.rst:109
+msgid "Special directives"
+msgstr "Directives spécifiques"
+
+#: ../../source/publish_content.rst:111
+msgid ""
+"On top of all the widgets offered by the `ods-widgets "
+"<http://opendatasoft.github.io/ods-widgets/docs/#/api>`_ library, a few "
+"additional directives are available for use within the content pages on the "
+"platform. Contrary to the widgets, these cannot be used on third-party "
+"websites for they are tightly coupled with the platform."
+msgstr "En plus des widgets offerts par la bibliothèque `ods-widgets <http://opendatasoft.github.io/ods-widgets/docs/#/api>`_, quelques directives supplémentaires qui peuvent être utilisés au sein des pages de contenu sur la plateforme. Contrairement aux widgets, elles ne peuvent en revanche pas être utilisées sur des sites tiers car elles sont intimement liées à la plateforme."
+
+#: ../../source/publish_content.rst:116
+msgid "Contact form"
+msgstr "Formulaire de contact"
+
+#: ../../source/publish_content.rst:118
+msgid ""
+"This directive inserts a form that users can use to contact the domain's "
+"administrators. It uses reCaptcha to make sure anonymous users cannot spam "
+"the administrators."
+msgstr "Cette directive insère dans la page un formulaire permettant aux utilisateurs de contacter les administrateurs du domaine. Ce formulaire incorpore le système reCaptcha pour empêcher les robots spameurs de l'utiliser."
+
+#: ../../source/publish_content.rst:134
+msgid "Parameter"
+msgstr "Paramètre"
+
+#: ../../source/publish_content.rst:135
+msgid "Type"
+msgstr "Type"
+
+#: ../../source/publish_content.rst:136
+msgid "Description"
+msgstr "Description"
+
+#: ../../source/publish_content.rst:137
+msgid "``page-id`` **required**"
+msgstr "``page-id`` **obligatoire**"
+
+#: ../../source/publish_content.rst:138
+msgid "string"
+msgstr "chaîne de caractères"
+
+#: ../../source/publish_content.rst:139
+msgid ""
+"The slug of the current page so that administrators know where the request "
+"came from."
+msgstr "Le slug de la page de contenu. Permet aux administrateurs destinataires du message de savoir d'où provient la requête."
+
+#: ../../source/publish_content.rst:140
+msgid "``form-disabled``"
+msgstr "``form-disabled``"
+
+#: ../../source/publish_content.rst:141
+msgid "boolean (default: false)"
+msgstr "booléen (valeur par défaut: false)"
+
+#: ../../source/publish_content.rst:142
+msgid ""
+"Specify whether to disable (that is prevent data input and submission) the "
+"contact form or not."
+msgstr "Permet de désactiver le formulaire, ce qui empêche la saisie de donnée et la validation pour envoi."
+
+#: ../../source/publish_content.rst:143
+msgid "``logged-in``"
+msgstr "``logged-in``"
+
+#: ../../source/publish_content.rst:144
+msgid "boolean (default: autodetected)"
+msgstr "booléen (valeur par défaut: détectée automatiquement)"
+
+#: ../../source/publish_content.rst:145
+msgid ""
+"Specify whether the current user is logged in or not. If true, the recaptcha"
+" is not displayed."
+msgstr "Permet d'indiquer si l'utilisateur est connecté à la plateforme ou non. Si cette valeur est à faux, le recaptcha ne sera pas affiché."
+
+#: ../../source/publish_content.rst:146
+msgid "``name-label``"
+msgstr "``name-label``"
+
+#: ../../source/publish_content.rst:147
+msgid "string (default: `Your name`)"
+msgstr "chaîne de caractères (valeur par défaut: `Votre nom`)"
+
+#: ../../source/publish_content.rst:148
+msgid "Specify the label displayed in front of the name field."
+msgstr "Permet de spécifier le texte à afficher en face du champ nom."
+
+#: ../../source/publish_content.rst:149
+msgid "``email-label``"
+msgstr "``email-label``"
+
+#: ../../source/publish_content.rst:150
+msgid "string (default: `Email`)"
+msgstr "chaîne de caractères (valeur par défaut : `Email`)"
+
+#: ../../source/publish_content.rst:151
+msgid "Specify the label displayed in front of the email field."
+msgstr "Permet de spécifier le texte à afficher en face du champ email."
+
+#: ../../source/publish_content.rst:152
+msgid "``message-label``"
+msgstr "``message-label``"
+
+#: ../../source/publish_content.rst:153
+msgid "string (default: `Message`)"
+msgstr "chaîne de caractères (valeur par défaut: `Message`)"
+
+#: ../../source/publish_content.rst:154
+msgid "Specify the label displayed in front of the message field."
+msgstr "Permet de spécifier le texte à afficher en face du champ message."
