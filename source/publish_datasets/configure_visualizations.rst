@@ -20,9 +20,9 @@ You can configure the appearance of the map itself:
 
 - The color of the shapes and points displayed on the map
 - If the data is represented as points, you can configure how it is displayed:
-a simple icon, little dots, or a familiar marker
+  a simple icon, little dots, or a familiar marker
 - If you have more than one basemap on your domain, you can set which one is
-selected by default for this dataset (otherwise it is the first one in the list)
+  selected by default for this dataset (otherwise it is the first one in the list)
 
 You can also configure the tooltips displayed when you click on a point or shape
 on the map. Tooltips can be either "standard" or "custom". Standard tooltips
