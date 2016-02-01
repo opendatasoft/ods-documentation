@@ -7,6 +7,7 @@ Publishing Datasets
    create_dataset
    transform_dataset
    processors
+   configure_visualizations
    dataset_subscriptions
    citadeljson
 
