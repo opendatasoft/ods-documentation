@@ -157,11 +157,18 @@ When the tooltip is displayed, it can access a specific ``record`` variable that
 Using these properties, you can display directly values in the tooltip, or even use
 them to display data from other datasets.
 
+If you want to display an image from one of your dataset's ``file`` fields, you can
+use the ``ods-record-image`` widget, as in the example below.
+
 .. code-block:: html
 
     <div class="my-tooltip">
         <!-- Display the name of the city directly from the point that the user selected -->
         <h1>City report : {{ record.fields.city_name }}</h1>
+
+        <!-- Display an image from the dataset -->
+        <ods-record-image field="city_logo" record="record"></ods-record-image>
+
         <!-- Create a context reading data from another dataset but filtered on
              the city that the user clicked on -->
         <ods-dataset-context context="alerts"
