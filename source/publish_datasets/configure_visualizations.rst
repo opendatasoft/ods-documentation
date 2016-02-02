@@ -10,13 +10,13 @@ define the right appearance for your data.
 
    .. figure:: configure_visualizations__tabs--en.png
 
-      Not all visualizations are available for all datasets. Here only *Table, **Map* and *Analyze* are available.
+      Not all visualizations are available for all datasets. Here only *Table*, *Map* and *Analyze* are available.
 
 .. ifconfig:: language == 'fr'
 
    .. figure:: configure_visualizations__tabs--fr.png
 
-      Not all visualizations are available for all datasets. Here only *Table, **Map* and *Analyze* are available.
+      Not all visualizations are available for all datasets. Here only *Table*, *Map* and *Analyze* are available.
 
 Table view
 ----------
@@ -70,8 +70,10 @@ Images view
 
 .. note::
 
-   The images view is only available when there is at least a *file* field.
-   If you specified a *file* field but the field doesn't link to any image, the image view will return errors.
+   The images view is only available when there is at least a *file* field, and
+   if at least one file contained in this field is an image, or a document that
+   can generate a thumbnail.
+
 
 You can configure the tooltip displayed when you click on each image. This is
 similar to the map view's tooltips: you can either keep a "standard" tooltip
@@ -84,7 +86,7 @@ Analyze view
 
 .. note::
 
-   The analyze view is available on all datasets having at least a datetime field or a facet.
+   The analyze view is available on all datasets having at least a date/datetime field or a facet.
 
 .. ifconfig:: language == 'en'
 
