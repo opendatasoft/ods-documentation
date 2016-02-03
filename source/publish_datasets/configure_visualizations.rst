@@ -150,7 +150,7 @@ This is very similar to writing "pages" in your domain; you have access to every
 even integrate other visualizations inside the tooltip.
 
 When the tooltip is displayed, it can access a specific ``record`` variable that is
-"injected" in the tooltip. This `record` object contains the following properties:
+"injected" in the tooltip. This ``record`` object contains the following properties:
 
 - ``record.fields``: object containing all the values (e.g. ``record.fields.tree_height``)
 - ``record.recordid``: unique identifier for the record
