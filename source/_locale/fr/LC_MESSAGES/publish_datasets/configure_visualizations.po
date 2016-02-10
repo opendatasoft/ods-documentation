@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-03 09:34+0100\n"
-"PO-Revision-Date: 2016-02-03 08:34+0000\n"
+"POT-Creation-Date: 2016-02-10 11:54+0100\n"
+"PO-Revision-Date: 2016-02-10 10:53+0000\n"
 "Last-Translator: benrict <benoit.richter@opendatasoft.com>\n"
 "Language-Team: French (http://www.transifex.com/opendatasoft/documentation-5/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -203,38 +203,46 @@ msgstr "Un exemple d'infobulle personnalisée."
 msgid ""
 "This is very similar to writing \"pages\" in your domain; you have access to"
 " every `ODS Widget <http://opendatasoft.github.io/ods-widgets/docs/>`_ and "
-"you can even integrate other visualizations inside the tooltip."
-msgstr "Le principe est très similaire à l'écriture de \"pages\" sur votre domaine; vous avez accès à l'ensemble des `ODS Widgets <http://opendatasoft.github.io/ods-widgets/docs/>`_ et pouvez même intégrer d'autres visualisations à l'intérieur de l'infobulle."
+"you can even integrate other visualizations inside the tooltip. You can even"
+" use the  :doc:`grid layout classes</theme/grid-layouts>`."
+msgstr "L'approche est similaire à l'écriture de \"pages\" sur votre domaine; vous pouvez utiliser n'importe quel `ODS Widget <http://opendatasoft.github.io/ods-widgets/docs/>`_ et même intégrer d'autres visualisations dans l'infobulle. Vous pouvez même utiliser les :doc:`classes de mise en page</theme/grid-layouts>`."
 
-#: ../../source/publish_datasets/configure_visualizations.rst:152
+#: ../../source/publish_datasets/configure_visualizations.rst:153
 msgid ""
 "When the tooltip is displayed, it can access a specific ``record`` variable "
 "that is \"injected\" in the tooltip. This ``record`` object contains the "
 "following properties:"
 msgstr "Lorsque l'infobulle s'affiche, une variable ``record`` est \"injectée\" et est disponible pour être utilisée. Cet objet ``record`` contient les propriétés suivantes :"
 
-#: ../../source/publish_datasets/configure_visualizations.rst:155
+#: ../../source/publish_datasets/configure_visualizations.rst:156
 msgid ""
 "``record.fields``: object containing all the values (e.g. "
 "``record.fields.tree_height``)"
 msgstr "``record.fields``: objet contenant toutes les valeurs de l'enregistrement (par ex. ``record.fields.tree_height``)"
 
-#: ../../source/publish_datasets/configure_visualizations.rst:156
+#: ../../source/publish_datasets/configure_visualizations.rst:157
 msgid "``record.recordid``: unique identifier for the record"
 msgstr "``record.recordid``: identifiant unique de cet enregistrement"
 
-#: ../../source/publish_datasets/configure_visualizations.rst:157
+#: ../../source/publish_datasets/configure_visualizations.rst:158
 msgid "``record.datasetid``: identifier of the dataset"
 msgstr "``record.datasetid``: identifiant du jeu de données"
 
-#: ../../source/publish_datasets/configure_visualizations.rst:159
+#: ../../source/publish_datasets/configure_visualizations.rst:160
 msgid ""
 "Using these properties, you can display directly values in the tooltip, or "
 "even use them to display data from other datasets."
 msgstr "Grâce à ces propriétés, vous pouvez afficher directement les valeurs dans l'infobulle, ou même les utiliser pour afficher des données depuis d'autres jeux de données."
 
-#: ../../source/publish_datasets/configure_visualizations.rst:162
+#: ../../source/publish_datasets/configure_visualizations.rst:163
 msgid ""
 "If you want to display an image from one of your dataset's ``file`` fields, "
 "you can use the ``ods-record-image`` widget, as in the example below."
 msgstr "Si vous souhaitez afficher une image depuis un des champs ``file`` de l'enregistrement, vous pouvez utiliser le widget ``ods-record-image`` comme dans l'exemple ci-dessous."
+
+#: ../../source/publish_datasets/configure_visualizations.rst:181
+msgid ""
+"You can use a ``<ods-dataset-context>`` to display a visualization from "
+"another dataset; in the following example, the data is taken from another "
+"dataset and filtered using one of the values of the selected record."
+msgstr "Vous pouvez utiliser un ``<ods-dataset-context>`` pour afficher une visualisation à partir d'un autre jeu de données; dans l'exemple suivant, les données sont récupérées à partir d'un autre jeu de donnée qui a été filtré à partir d'une des valeurs de l'enregistrement sélectionné."

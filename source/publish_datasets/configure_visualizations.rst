@@ -148,6 +148,7 @@ from the *tooltip type* dropdown menu.
 This is very similar to writing "pages" in your domain; you have access to every
 `ODS Widget <http://opendatasoft.github.io/ods-widgets/docs/>`_ and you can
 even integrate other visualizations inside the tooltip.
+You can even use the  :doc:`grid layout classes</theme/grid-layouts>`.
 
 When the tooltip is displayed, it can access a specific ``record`` variable that is
 "injected" in the tooltip. This ``record`` object contains the following properties:
@@ -161,6 +162,25 @@ them to display data from other datasets.
 
 If you want to display an image from one of your dataset's ``file`` fields, you can
 use the ``ods-record-image`` widget, as in the example below.
+
+.. code-block:: html
+
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Display the name of the city directly from the point that the user selected -->
+            <h1>The city of {{ record.fields.city_name }}</h1>
+            <!-- Display a longer description of the city -->
+            <p>{{record.fields.city_description}}</p>
+        </div>
+        <div class="col-md-6">
+            <!-- Display an image from the dataset -->
+            <ods-record-image field="city_logo" record="record"></ods-record-image>
+        </div>
+    </div>
+
+You can use a ``<ods-dataset-context>`` to display a visualization from another
+dataset; in the following example, the data is taken from another dataset and
+filtered using one of the values of the selected record.
 
 .. code-block:: html
 
