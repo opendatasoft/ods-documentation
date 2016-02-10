@@ -174,8 +174,8 @@ use the ``ods-record-image`` widget, as in the example below.
         <!-- Create a context reading data from another dataset but filtered on
              the city that the user clicked on -->
         <ods-dataset-context context="alerts"
-                             alert-dataset="city-alerts-realtime"
-                             alert-parameters="{'refine.city': city_name}">
+                             alerts-dataset="city-alerts-realtime"
+                             alerts-parameters="{'refine.city': city_name}">
             <ods-table context="alerts"></ods-table>
         </ods-dataset-context>
     </div>
