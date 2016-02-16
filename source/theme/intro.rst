@@ -1,6 +1,12 @@
 Introduction to OpenDataSoft's theme management
 ===============================================
 
+.. important::
+   The theme customization is not available on freemium domains (created through the
+   `Try it for free <https://www.opendatasoft.com/discover-opendatasoft-demo/>`_ page on
+   `OpenDataSoft's website <https://www.opendatasoft.com>`_).
+   If your domain is a freemium domain and would like to get this theme feature, `email us! <sales@opendatasoft.com>`_
+
 OpenDataSoft's theme management interface can be found in the domain back-office. You can access it either by clicking
 on the ``theme`` link in the header or the ``Update the portal's theme`` button in the back-office landing page.
 
