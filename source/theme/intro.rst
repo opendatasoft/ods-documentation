@@ -167,6 +167,11 @@ The directives are:
   property matching the `item-key` from the dataset and includes in in the page using `item-title` as its label. It
   should be wrapped by a `.ods-catalog-card__metadata` element for better styling but with no obligation.
 
+  .. code-block:: html
+
+     <ods-catalog-card-metadata-item item-title="Data" item-key="records_count"></ods-catalog-card-metadata-item>
+
+
 .. list-table:: Metadata item keys
    :header-rows: 1
 
