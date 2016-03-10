@@ -160,6 +160,15 @@ When the tooltip is displayed, it can access a specific ``record`` variable that
 Using these properties, you can display directly values in the tooltip, or even use
 them to display data from other datasets.
 
+The schema of the dataset is also injected as a ``fields`` variable, which is
+an array of field objects (you can use ``ng-repeat`` to loop over the fields).
+A field object contains the following properties:
+
+- ``field.name``: the identifier of the field, for example to find a value within ``record.fields``
+- ``field.type``: the type of the field (``text``, ``decimal``, ``integer``,
+  ``date``, ``datetime``, ``geo_point_2d``, ``geo_shape``)
+- ``field.label``: a human-friendly label
+
 If you want to display an image from one of your dataset's ``file`` fields, you can
 use the ``ods-record-image`` widget, as in the example below.
 
