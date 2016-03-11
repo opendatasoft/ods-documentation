@@ -355,9 +355,9 @@ matching.
 
 The syntax of the sub-matching expression to specify is the following: ``(?P<NAME>REGEXP)``. Where:
 
-* Name is the name of a new field which will receive the result of the extraction. This field name can only contain
+* ``NAME`` is the name of a new field which will receive the result of the extraction. This field name can only contain
   letters, numbers and underscores (special characters like accentuated letters or commas are not allowed).
-* REXGEXP is the submatch expression
+* ``REXGEXP`` is the submatch expression
 
 For example, let's assume that you want to extract a street name out of an address. That is, for the address
 
