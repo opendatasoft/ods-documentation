@@ -5,5 +5,6 @@ Exploring and Visualizing Datasets
    :maxdepth: 2
 
    getting_started
+   geographic_search
    calendars
    simple_charts
