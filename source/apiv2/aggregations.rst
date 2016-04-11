@@ -35,19 +35,19 @@ All of the following would be summed up in the following request.
 .. code-block:: json
 
     {
-        virtual_fields: {
-            daily_avg_sale_price: 'sales_amount/sales_count'
+        "virtual_fields": {
+            "daily_avg_sale_price": "sales_amount / sales_count"
         },
-        aggregations: {
-            my_aggregation: { // name of this aggregation, used to multiplex multiple aggregations
-                group_by: [
-                    'store_country'
+        "aggregations": {
+            "my_aggregation": { // name of this aggregation, used to multiplex multiple aggregations
+                "group_by": [
+                    "store_country"
                 ],
-                aggregates: {
-                    total_sales_count: 'SUM(sales_count)',
-                    total_sales_amount: 'SUM(sales_amount)',
-                    overall_average_sale_price: 'AVG(daily_avg_sale_price)',
-                    real_average_sale_price: 'SUM(sales_amount)/SUM(sales_count)'
+                "aggregates": {
+                    "total_sales_count": "SUM(sales_count)",
+                    "total_sales_amount": "SUM(sales_amount)",
+                    "overall_average_sale_price": "AVG(daily_avg_sale_price)",
+                    "real_average_sale_price": "SUM(sales_amount) / SUM(sales_count)""
                 }
             }
         }
@@ -58,31 +58,31 @@ Which would then generate the following response
 .. code-block:: json
 
     {
-        links: [ // HATEOAS navigation links
+        "links": [ // HATEOAS navigation links
             {
-                rel: 'self',
-                href: 'https://mydomain.opendatasoft.com/api/v2/datasets/sales/aggregate'
+                "rel": "self",
+                "href": "https://mydomain.opendatasoft.com/api/v2/datasets/sales/aggregate"
             },
             {
-                rel: 'dataset',
-                href: 'https://mydomain.opendatasoft.com/api/v2/datasets/sales'
+                "rel": "dataset",
+                "href": "https://mydomain.opendatasoft.com/api/v2/datasets/sales"
             }
         ],
-        aggregations: {
-            my_aggregation: [
+        "aggregations": {
+            "my_aggregation": [
                 {
-                    store_country: 'afghanistan', // first alphabetical country
-                    total_sales_count: XX,
-                    total_sales_amount: XY,
-                    overall_average_sale_price: YY,
-                    real_average_sale_price: YZ,
+                    "store_country": "afghanistan", // first alphabetical country
+                    "total_sales_count": "XX",
+                    "total_sales_amount": "XY",
+                    "overall_average_sale_price": "YY",
+                    "real_average_sale_price": "YZ",
                 },
                 {
-                    store_country: 'albania',
-                    total_sales_count: XX,
-                    total_sales_amount: XY,
-                    overall_average_sale_price: YY,
-                    real_average_sale_price: YZ,
+                    "store_country": "albania",
+                    "total_sales_count": "XX",
+                    "total_sales_amount": "XY",
+                    "overall_average_sale_price": "YY",
+                    "real_average_sale_price": "YZ",
                 },
                 // etc...
             ]
@@ -102,17 +102,17 @@ little less sales each day and pocket the difference at the end of the year.
 .. code-block:: json
 
     {
-        virtual_fields: {
-            reported_sales_amount: 'sales_amount - 20'
+        "virtual_fields": {
+            "reported_sales_amount": "sales_amount - 20"
         },
-        aggregations: {
-            my_aggregation: { // name of this aggregation, used to multiplex multiple aggregations
-                group_by: [
-                    'store_name'
+        "aggregations": {
+            "my_aggregation": { // name of this aggregation, used to multiplex multiple aggregations
+                "group_by": [
+                    "store_name"
                 ],
-                aggregates: {
-                    total_sales_amount: 'SUM(sales_amount)',
-                    reported_total_sales_amount: 'SUM(reported_sales_amount)'
+                "aggregates": {
+                    "total_sales_amount": "SUM(sales_amount)",
+                    "reported_total_sales_amount": "SUM(reported_sales_amount)""
                 }
             }
         }
@@ -228,9 +228,9 @@ Example:
 
 .. code-block:: json
 
-    group_by=[{
+    "group_by" = [{
         "name": "year",
-        "expr": format_date(my_date_field, "YYYY")
+        "expr": "format_date(my_date_field, 'YYYY')"
     }]
 
 Simple field
@@ -250,8 +250,8 @@ For instance ``group_by:[field_name]`` group by ``aggregates`` functions by ever
     .. code-block:: json
 
             {
-                center: [latitude, longitude],
-                convex_hull: // a polygon geometry
+                "center": [latitude, longitude],
+                "convex_hull": // a polygon geometry
             }
 
     Arguments:
@@ -342,16 +342,16 @@ A full example:
 .. code-block:: json
 
     {
-        aggregations: {
-            my_aggregation: { // name of this aggregation, used to multiplex multiple aggregations
-                group_by: [
+        "aggregations": {
+            "my_aggregation": { // name of this aggregation, used to multiplex multiple aggregations
+                "group_by": [
                     {
                         "name": "year_month",
                         "expr": "date(sales_date, 'YYYY-MM')"
                     }
                 ],
-                aggregates: {
-                    total_sales_count: 'SUM(sales_count)',
+                "aggregates": {
+                    "total_sales_count": "SUM(sales_count)"
                 }
             }
         }
