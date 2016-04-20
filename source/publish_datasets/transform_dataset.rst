@@ -41,8 +41,8 @@ Fields have a type. The following types are available:
    * * Decimal
      * A decimal number. Valid separators for the decimal part are '.' or ','. The space character can also be used as
        a thousands separator but not the ','.
-   * * Geo&nbsp;Point
-     * A single geographical location expressed in the format *&lt;LAT&gt;,&lt;LON&gt;*, for instance
+   * * Geo Point
+     * A single geographical location expressed in the format *<LAT>,<LON>*, for instance
        *45.8,2.5*. If your dataset contains two fields, latitude and longitude, you'll need to concatenate them
        with a **Concatenate Text** processor to form a valid geo point field.
    * * Geo&nbsp;Shape

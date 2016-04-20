@@ -21,11 +21,11 @@ This API makes it possible to fetch an individual record using its identifier (R
        ``http://opendata.paris.fr/api/v2/catalog/datasets/arbresremarquablesparis2011/``
    * * ``recordid``
      * Part of the URL path. Identifier of the record. Example:
-       ``http://opendata.paris.fr/api/v2/catalog/datasets/&lt;DATASETID&gt;/records/758885b5183fd28f14ecf39e44484fdccf/``
+       ``http://opendata.paris.fr/api/v2/catalog/datasets/<DATASETID>/records/758885b5183fd28f14ecf39e44484fdccf/``
    * * ``vf``
      * Define a virtual field. This field is returned in ``virtual_field`` section of the result.
    * * ``pretty_print``
-     * If set to true (default is false), pretty prints JSON and JSONP outputs. 
+     * If set to true (default is false), pretty prints JSON and JSONP outputs.
    * * ``export_as``
      * Export record to the specified format. One of json, csv, citadel, geojson, xls or shapefile.
    * * ``callback``
@@ -62,9 +62,9 @@ search. It also provides faceted search features on dataset records.
    * * ``rows``
      * Number of results to return in a single call. -1 returns all values. By default, 10 results are returned.
    * * ``start``
-     * Index of the first result to return (starting at 0). To be used in conjunction with "rows" to implement paging. 
+     * Index of the first result to return (starting at 0). To be used in conjunction with "rows" to implement paging.
    * * ``pretty_print``
-     * If set to true (default is false), pretty prints JSON and JSONP outputs. 
+     * If set to true (default is false), pretty prints JSON and JSONP outputs.
    * * ``export_as``
      * Export record to the specified format. One of json, csv, citadel, geojson, xls or shapefile.
    * * ``callback``
