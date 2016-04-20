@@ -47,11 +47,11 @@ are made possible and results facetting is provided as well.
      * Activates faceting on the specified field (see Appendices for the available list of facets on Datasets). This
        parameter can be used multiple times to simultaneously activate several facets. By default, faceting is disabled.
        Example: ``facet=modified``
-   * * ``refine.&lt;FACET&gt;``
+   * * ``refine.<FACET>``
      * Facet based filtering. This parameter limits the result set to the results matching a facet value. It can be used
        several times for the same facet or for different facets. Examples: ``refine.modified=2012/02``,
        ``refine.modified=2012/02&refine.publisher=Paris``
-   * * ``exclude.&lt;FACET&gt;``
+   * * ``exclude.<FACET>``
      * Facet based filtering. This parameter excludes the results matching a facet's value from the result set. It can
        be used several times for the same facet or for different facets. Examples: ``exclude.modified=2012/02``,
        ``exclude.modified=2012/02&exclude.publisher=Paris``

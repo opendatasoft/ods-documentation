@@ -50,7 +50,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'OpenDataSoft Documentation'
-copyright = u'2015, OpenDataSoft'
+copyright = u'2016, OpenDataSoft'
 author = u'OpenDataSoft'
 
 # The version info for the project you're documenting, acts as replacement for

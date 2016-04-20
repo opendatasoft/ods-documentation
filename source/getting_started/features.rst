@@ -10,13 +10,13 @@ Data collection
 
 .. list-table::
    :header-rows: 1
-   
+
    * * Feature
      * Comments
    * * Data files upload
      * OpenDataSoft natively supports a wide range of structured file formats: CSV, XLS, XLSX, SHP, KML, GeoJSON, OSM, GTFS.
    * * Remote web services support
-     *         
+     *
    * * Custom connectivity
      * OpenDataSoft can integrate, on demand, custom data parsers or custom connectors.
    * * Data federation
@@ -28,17 +28,17 @@ Data processing
 
 .. list-table::
    :header-rows: 1
-   
+
    * * Feature
      * Comments
    * * Geocoding
      * Requires for the customer to have a valid contract with Google or ESRI.
    * * Text transformations
-     * See `</publish_datasets/processors.html>`_.
+     * See :doc:`Processors </publish_datasets/processors>`.
    * * Join
      * Numeric operations
    * * Custom transformation
-     * 
+     *
    * * Indexing
      * OpenDataSoft's features are extensively based on the indexing of raw data of datasets.
 
@@ -51,11 +51,11 @@ Data sharing
    * * Feature
      * Comments
    * * Fuzzy text search
-     * 
+     *
    * * Multi-criteria search
-     * 
+     *
    * * Data catalog API
-     * 
+     *
    * * Data catalog export
      * The data catalog can be exported in CSV, RSS and RDF.
    * * Linked data capabilities
@@ -65,16 +65,16 @@ Data sharing
    * * Data export
      * CSV, JSON, XLS, SHP (when relevant), GeoJSON (when relevant)
    * * Customizable User Interface
-     * 
+     *
    * * Embeddable widgets
-     * Note also that the widgets built by OpenDataSoft to display data have been released in Open Source. See 
+     * Note also that the widgets built by OpenDataSoft to display data have been released in Open Source. See
        `<https://github.com/opendatasoft/ods-widgets>`_.
    * * Geo data visualization
-     * 
+     *
    * * Analytics data visualization
-     * 
+     *
    * * Image gallery
-     * 
+     *
 
 
 Content
@@ -86,12 +86,12 @@ Content
    * * Feature
      * Comments
    * * Hosting custom content
-     * The OpenDataSoft platform natively includes a simple CMS for customers to write custom content (home page, 
+     * The OpenDataSoft platform natively includes a simple CMS for customers to write custom content (home page,
        showcase page, apps page...)
    * * CMS style edition
-     * 
+     *
    * * Embed data visualization in content pages
-     * 
+     *
 
 
 User engagement
@@ -118,9 +118,9 @@ User engagement
      * OpenDataSoft integrates with `Disqus <https://disqus.com/>`_. Disqus threads can be
        integrated at an instance level or at a dataset level.
    * * Contact form
-     * 
+     *
    * * Reuse management
-     * Reusers can easily submit reuse proposals. A validation workflow let admins promote reuses on their OpenDataSoft 
+     * Reusers can easily submit reuse proposals. A validation workflow let admins promote reuses on their OpenDataSoft
        instance.
 
 
@@ -133,25 +133,24 @@ Hosting & admin
    * * Feature
      * Comments
    * * User management
-     * 
+     *
    * * User groups management
-     * 
+     *
    * * Self-subscription workflow
-     * 
+     *
    * * Data access control
-     * 
+     *
    * * Access quotas management
-     * 
+     *
    * * SSO support
-     * 
+     *
    * * Google Analytics integration
-     * 
+     *
    * * Native API monitoring
      * OpenDataSoft includes fine grained API monitoring features.
    * * Cloud hosting
-     * 
+     *
    * * Free test plan
-     * 
+     *
    * * Multi cloud support
-     * 
-     
+     *
