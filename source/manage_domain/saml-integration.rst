@@ -38,7 +38,13 @@ Register and configure an identity provider
 
 3. Paste your identity provider metadata document in the "IDP metadata document" field.
 
-4. Input the attributes mappings for the username, last name, first name and email address.
+4. Input the set of attributes sent by the IDP that uniquely define a user.
+
+   If the users are defined by their NameID and the NameID format used by your IdP is not transient, there is no need to fill anything.
+
+   For instance, if your users are defined by the attribute "FirstName" and "LastName" transmitted by your IdP, first input "FirstName" in the box and press enter, then "LastName" and press enter again.
+
+5. Input the attributes mappings for the username, last name, first name and email address.
 
    Here, you need to declare the fields names as they are sent by the identity provider.
 
@@ -48,11 +54,12 @@ Register and configure an identity provider
    If for any reason your identity provider doesn't send all of these elements, let the corresponding fields blank. The
    platform will automatically generate them based on other available attributes.
 
-5. Optionally input the attributes mappings and types of other attributes that are sent by your identity provider.
+6. Optionally input an access condition.
 
-   For instance, if your identity provider sends a list of the user's allergies, under the field name "Allergies", you
-   may add an attribute mapping with name "Allergies", and type "list". This allows for interesting dataset filters
-   with the `attr` function.
+   The first box is the name of the attribute to check for, and the second one the value of that attribute.
+   If you just want to check for the presence of an attribute, without value restriction, just leave the second box blank.
+
+   For instance, if your identity provider sends a list of "Roles" for the users and you want to make sure that only users that have a role can get access, input "Roles" in the first box under "Conditionnal access". If you only want users with the role "DataAccess" to be able to connect to the domain, input "DataAccess" in the second box. 
 
 Configure your identity provider
 --------------------------------
