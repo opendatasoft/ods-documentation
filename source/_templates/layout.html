@@ -60,6 +60,26 @@
         indexName: 'opendatasoft',
         inputSelector: '#rtd-search-form input[name="q"]',
         algoliaOptions: { 'facetFilters': ["language:{{ language }}"] },
+        /*
+        autocompleteOptions: {
+            templates: {
+                empty: '<div class="algolia-docsearch-suggestion">' +
+                    '   <div class="algolia-docsearch-suggestion--wrapper">' +
+                    '       <div class="algolia-docsearch-suggestion--content algolia-docsearch-suggestion--no-results">' +
+                    '           <div class="algolia-docsearch-suggestion--title">' +
+                    '               <div class="algolia-docsearch-suggestion--text">' +
+                    {% if language == 'fr' %}
+                    {% raw %}'                   Aucun résultat pour la recherche <b>"{{{query}}}"</b>' + {% endraw %}
+                    {% else %}
+                    {% raw %}'                   No results found for query <b>"{{{query}}}"</b>' +{% endraw %}
+                    {% endif %}
+                    '               </div>' +
+                    '           </div>' +
+                    '       </div>' +
+                    '   </div>' +
+                    '</div>'
+            }
+        },*/
         debug: false // Set debug to true if you want to inspect the dropdown
     });
 
