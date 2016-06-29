@@ -15,7 +15,12 @@
     .rst-content table.field-list td {
         vertical-align: top
     }
+
+    .algolia-autocomplete {
+        width: 100%;
+    }
 </style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
 {% endblock %}
 {% block sidebartitle %}
 
@@ -46,6 +51,48 @@
 
   ga('create', 'UA-41201218-6', 'auto');
   ga('send', 'pageview');
+</script>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
+<script type="text/javascript">
+    var search = docsearch({
+        apiKey: 'bb766758a6a056d3d0e6e8ae19f99984',
+        indexName: 'opendatasoft',
+        inputSelector: '#rtd-search-form input[name="q"]',
+        algoliaOptions: { 'facetFilters': ["language:{{ language }}"] },
+        /*
+        autocompleteOptions: {
+            templates: {
+                empty: '<div class="algolia-docsearch-suggestion">' +
+                    '   <div class="algolia-docsearch-suggestion--wrapper">' +
+                    '       <div class="algolia-docsearch-suggestion--content algolia-docsearch-suggestion--no-results">' +
+                    '           <div class="algolia-docsearch-suggestion--title">' +
+                    '               <div class="algolia-docsearch-suggestion--text">' +
+                    {% if language == 'fr' %}
+                    {% raw %}'                   Aucun résultat pour la recherche <b>"{{{query}}}"</b>' + {% endraw %}
+                    {% else %}
+                    {% raw %}'                   No results found for query <b>"{{{query}}}"</b>' +{% endraw %}
+                    {% endif %}
+                    '               </div>' +
+                    '           </div>' +
+                    '       </div>' +
+                    '   </div>' +
+                    '</div>'
+            }
+        },*/
+        debug: false // Set debug to true if you want to inspect the dropdown
+    });
+
+    search.autocomplete.on('autocomplete:opened', function(e) {
+        // Sphinx's magical side menu does voodoo stuff with overflows, we need
+        // to cut that for a moment.
+        $('.wy-nav-side').css('overflow', 'visible');
+        $('.wy-side-scroll').css('overflow', 'visible');
+    });
+    search.autocomplete.on('autocomplete:closed', function(e) {
+        $('.wy-nav-side').css('overflow', 'hidden');
+        $('.wy-side-scroll').css('overflow-x', 'hidden');
+        $('.wy-side-scroll').css('overflow-y', 'scroll');
+    });
 </script>
 {% endblock %}
