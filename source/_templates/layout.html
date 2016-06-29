@@ -59,6 +59,7 @@
         apiKey: 'bb766758a6a056d3d0e6e8ae19f99984',
         indexName: 'opendatasoft',
         inputSelector: '#rtd-search-form input[name="q"]',
+        algoliaOptions: { 'facetFilters': ["language:{{ language }}"] },
         debug: false // Set debug to true if you want to inspect the dropdown
     });
 
