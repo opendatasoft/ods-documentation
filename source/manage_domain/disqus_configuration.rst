@@ -1,6 +1,16 @@
 Configuring Disqus
 ==================
 
+.. ifconfig:: language == 'en'
+
+    .. image:: disqus__configuration--en.png
+       :alt: Disqus Configuration
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: disqus__configuration--fr.png
+       :alt: Configuration de Disqus
+
 If you have a custom domain name for accessing the OpenDataSoft platform, replace in the below 
 \<YOURDOMAIN\>.opendatasoft.com with your custom domain name.
 
