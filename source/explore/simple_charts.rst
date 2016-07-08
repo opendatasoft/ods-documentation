@@ -10,8 +10,15 @@ We will use as a sample a simple dataset containing 3 fields:
 * The **year** field, a *date* field with a *year* precision and defined as a *facet*
 * The **inhabitants** field, an *integer* field
 
-.. image:: explore_charts_dataset.jpg
-   :alt: Charts Dataset
+.. ifconfig:: language == 'en'
+
+    .. image:: explore__chartdataset--en.png
+       :alt: Graph dataset
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: explore__chartdataset--fr.png
+       :alt: Jeu de données du graphique
     
 Remember that without facets, you cannot do any data analysis! To access the charts section for you dataset, simply 
 go the **Analysis** tab.
