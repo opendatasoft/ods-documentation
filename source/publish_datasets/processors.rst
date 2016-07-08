@@ -346,6 +346,7 @@ Replace Regexp
 
 This processor can be used to replace a random regular expression pattern by new content. See
 `<http://en.wikipedia.org/wiki/Regular_expression>`_ for more details on how to write a regular expressions.
+You can test your regexp expressions with an online debugger tool like `Regex101 <https://regex101.com/>`_. 
 
 Extract Text
 ~~~~~~~~~~~~

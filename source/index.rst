@@ -11,7 +11,7 @@ Welcome to OpenDataSoft documentation!
    explore/index
    publish_content
    manage_domain/index
-   theme/index
+   look_and_feel/index
    api/index
    apiv2/index
    faq

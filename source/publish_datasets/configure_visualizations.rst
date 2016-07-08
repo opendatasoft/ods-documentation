@@ -148,7 +148,7 @@ from the *tooltip type* dropdown menu.
 This is very similar to writing "pages" in your domain; you have access to every
 `ODS Widget <http://opendatasoft.github.io/ods-widgets/docs/>`_ and you can
 even integrate other visualizations inside the tooltip.
-You can even use the  :doc:`grid layout classes</theme/grid-layouts>`.
+You can even use the  :doc:`grid layout classes</look_and_feel/grid-layouts>`.
 
 When the tooltip is displayed, it can access a specific ``record`` variable that is
 "injected" in the tooltip. This ``record`` object contains the following properties:
