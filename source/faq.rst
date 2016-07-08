@@ -148,12 +148,12 @@ Facets are then used in a couple of places.
 
 You can first use them to filter dataset records in the explore console.
 
-.. image:: faq__facet-explore--en.jpg
+.. image:: faq__facet-explore--en.png
     :alt: Refine on facets
 
 As dimensions, facets support aggregations. You can thus use them to build advanced charts, as in the example below.
 
-.. image:: faq__facet-chart--en.jpg
+.. image:: faq__facet-chart--en.png
     :alt: Build charts with facets
 
 
