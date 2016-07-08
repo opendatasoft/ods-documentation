@@ -1,4 +1,4 @@
-OAuth2 Support
+Using OAuth2 authorization
 ==============
 
 Overview
@@ -20,6 +20,19 @@ Currently, applications are registered on a specific domain and can only access 
 
 Getting started
 ---------------
+
+.. ifconfig:: language == 'en'
+
+    .. image:: oauth2__applications--en.png
+       :alt: OAuth2 applications management interface
+
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: oauth2__applications--fr.png
+       :alt: Interface de gestion des applications OAuth2
+
+
 
 The first step to use the OAuth2 authorization flow is to register your application first. To do so, go to your account 
 page on the domain you want to register the application on. There, you will find a form prompting you for the following:
