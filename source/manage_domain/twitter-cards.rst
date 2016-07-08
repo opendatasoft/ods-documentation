@@ -1,6 +1,17 @@
 Configuring Twitter Cards
 =========================
 
+.. ifconfig:: language == 'en'
+
+    .. image:: twittercard__configuration--en.png
+       :alt: Twitter cards Configuration
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: twittercard__configuration--fr.png
+       :alt: Configuration des cartes Twitter
+
+
 If you are a Twitter user, you may have seen a little summary appear below some links that you wrote
 in tweets; this summary is a **Twitter Card**, a feature provided by Twitter itself that allows website
 owners to configure how they want their content to be previewed in Twitter.
