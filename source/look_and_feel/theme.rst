@@ -1,5 +1,5 @@
-Introduction to OpenDataSoft's theme management
-===============================================
+Customizing your portal's theme
+===============================
 
 .. important::
    The theme customization is not available on freemium domains (created through the
@@ -7,19 +7,23 @@ Introduction to OpenDataSoft's theme management
    `OpenDataSoft's website <https://www.opendatasoft.com>`_).
    If your domain is a freemium domain and would like to get this theme feature, `email us! <sales@opendatasoft.com>`_
 
-OpenDataSoft's theme management interface can be found in the domain back-office. You can access it either by clicking
-on the ``theme`` link in the header or the ``Update the portal's theme`` button in the back-office landing page.
+OpenDataSoft's theme management interface can be found in the domain back-office. In order to access it, you'll have to
+click the ``Look & feel`` section in the navigation bar and then on the ``theme`` link.
 
 .. note::
     In order to access the theme page, you'll need to be able to edit domain properties.
     See :doc:`Managing the Security of your Domain </manage_domain/security>` for more details.
 
-.. image:: intro__access-interface.png
+.. ifconfig:: language == 'en'
+
+   .. image:: theme__interface--en.png
+
+.. ifconfig:: language == 'fr'
+
+   .. image:: theme__interface--fr.png
 
 Using the various forms available in this page, you'll be able to customize every aspect of your portal, from basic
 colors to making major changes in its layout.
-
-.. image:: intro__interface.png
 
 
 Versioning
@@ -42,7 +46,13 @@ new window containing your portal with the current version of the theme applied 
     You can preview the latest version of the theme at any moment and on any given page on the portal's
     front-office by adding the ``stage_theme=true`` parameter to the URL.
 
-.. image:: intro__versioning.png
+.. ifconfig:: language == 'en'
+
+   .. image:: theme__versioning--en.png
+
+.. ifconfig:: language == 'fr'
+
+   .. image:: theme__versioning--fr.png
 
 The version selector will tell you explicitly if you're working on the latest version or rather viewing a previous one,
 as well as which version is live.
@@ -59,7 +69,13 @@ The portal layout relies on a 12-column grid system largely inherited from the
 `Bootstrap CSS framework <http://getbootstrap.com/css/#grid>`_ and as such has a few internal variables used throughout
 its CSS. This tab allows you to set the value of some of these variables.
 
-.. image:: intro__layout-options.png
+.. ifconfig:: language == 'en'
+
+   .. image:: theme__layout-options--en.png
+
+.. ifconfig:: language == 'fr'
+
+   .. image:: theme__layout-options--fr.png
 
 The variables that can currently be overridden are the *gutter width* and the *responsive breakpoints*.
 
@@ -83,7 +99,13 @@ As with layout options, the OpenDataSoft platform relies on a handful of color v
 elements. You can use the color inputs on this tab to set some of theme. This way with just a few clicks you can brand
 your portal to your colors.
 
-.. image:: intro__colors.png
+.. ifconfig:: language == 'en'
+
+   .. image:: theme__colors--en.png
+
+.. ifconfig:: language == 'fr'
+
+   .. image:: theme__colors--fr.png
 
 .. note::
     These variables will override the default theme's colors. The custom style rules you can write in the stylesheet tab
@@ -99,7 +121,13 @@ If changing colors is not enough and you'd like make deeper changes, you'll have
 enables you to input your own style rules. These will be applied on top of OpenDataSoft's default rules and have
 precedence over them.
 
-.. image:: intro__stylesheet.png
+.. ifconfig:: language == 'en'
+
+   .. image:: theme__stylesheet--en.png
+
+.. ifconfig:: language == 'fr'
+
+   .. image:: theme__stylesheet--fr.png
 
 If your customization uses specific images and fonts, you can upload them to the platform using the
 :doc:`assets management page <assets>`. You'll then be able to copy the assets URLs and paste them in your CSS code.
@@ -124,7 +152,13 @@ Header and footer
 While both header and footer can already be branded using the domain's customization section and color selection panel,
 organizations usually want to further customize the layout and content of these areas.
 
-.. image:: intro__header.png
+.. ifconfig:: language == 'en'
+
+   .. image:: theme__header--en.png
+
+.. ifconfig:: language == 'fr'
+
+   .. image:: theme__header--fr.png
 
 Both header and footer are wrapped within independent AngularJS applications, which means you can use `ng-if`,
 `ng-class`, `ng-show`, `ng-hide` and all of Angular's standard directives to make the areas more dynamic. One common
@@ -147,14 +181,20 @@ behaviours.
 
 Here are a few examples of catalog cards:
 
-.. image:: intro__catalog-card-example--central.png
-.. image:: intro__catalog-card-example--datacorsica.png
-.. image:: intro__catalog-card-example--toulouse.png
+.. image:: theme__catalog-card-example-central.png
+.. image:: theme__catalog-card-example-datacorsica.png
+.. image:: theme__catalog-card-example-toulouse.png
 
 We provide handy directives to easily retrieve and include any information relative to a dataset. These directives also
 come with a standard style that you can override using the *Stylesheet* tab.
 
-.. image:: intro__catalog-card.png
+.. ifconfig:: language == 'en'
+
+   .. image:: theme__catalog-card--en.png
+
+.. ifconfig:: language == 'fr'
+
+   .. image:: theme__catalog-card--fr.png
 
 The directives are:
 
@@ -225,7 +265,13 @@ Theme API key
 You can find the theme API key on the portal theme customization page. Just expand the *API key for offline development*
 section and copy the key.
 
-.. image:: intro__offline-dev.png
+.. ifconfig:: language == 'en'
+
+   .. image:: theme__offline-dev--en.png
+
+.. ifconfig:: language == 'fr'
+
+   .. image:: theme__offline-dev--fr.png
 
 .. warning::
     By generating a new key, you'll also be revoking previous ones. As a result, developers using an old key won't be

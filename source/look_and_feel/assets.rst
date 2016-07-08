@@ -1,5 +1,5 @@
-Asset management
-================
+Managing assets
+===============
 
 When customizing your portal, you'll probably need static files (images, font files) to be available throughout the
 platform. This page will enable you to do just that: upload files to your platform so that you can link to them in the
