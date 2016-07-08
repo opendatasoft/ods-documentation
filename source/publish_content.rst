@@ -18,19 +18,19 @@ To create a new content page, go to the *Domain > Portal > Pages* section.
 
 .. ifconfig:: language == 'en'
 
-  .. image:: publish_content__page-list--en.jpg
+  .. image:: publish_content__page-list--en.png
      :alt: Create a content page
      
 .. ifconfig:: language == 'fr'
 
-  .. image:: publish_content__page-list--en.jpg
+  .. image:: publish_content__page-list--en.png
      :alt: Create a content page
 
 Simply hit the **New** button. Once created, the page edition window is displayed.
 
 .. ifconfig:: language == 'en'
 
-  .. image:: publish_content__page-edit--en.jpg
+  .. image:: publish_content__page-edit--en.png
      :alt: Edit a content page
      
 .. ifconfig:: language == 'fr'
@@ -50,7 +50,7 @@ Note that you can switch to expert mode from any template. But once you've switc
 
 .. ifconfig:: language == 'en'
 
-  .. image:: publish_content__page-expert--en.jpg
+  .. image:: publish_content__page-expert--en.png
      :alt: Content page expert mode
      
 .. ifconfig:: language == 'fr'
@@ -97,7 +97,7 @@ be done by editing the menu components in the *Domain > Portal > General setting
 
 .. ifconfig:: language == 'en'
 
-  .. image:: publish_content__domain-menu--en.jpg
+  .. image:: publish_content__domain-menu--en.png
      :alt: Domain menu
      
 .. ifconfig:: language == 'fr'
