@@ -167,39 +167,39 @@ We will be happy to discuss your needs and to propose you one of our plans.
 Exploration and Visualization FAQ
 ---------------------------------
 
-How can I display points on a map ?
+How can I display points on a map?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 For a geo data visualization to be available, your dataset needs to contain a **Geo Point 2D** field with content under
 the ``latitude,longitude`` form. For instance: ``48.2567,3.7689``.
 
-In the table view, I have not been able to sort the results using a specific field; what went wrong ?
+In the table view, I have not been able to sort the results using a specific field; what went wrong?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 By default, only the numerical fields are sortable. That is **int**, **double**, **date** and **datetime**. **Text**
 fields are not sortable by default. The dataset owner may configure some text fields to be sortable. Sortable **text**
 fields can be identified through the API (`sortable` annotation).
 
-I published a dataset, but no category is displayed in the left column. What shall I do ?
+I published a dataset, but no category is displayed in the left column. What shall I do?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Categories (facets) are built out of fields which have been defined as a **facet**. To set a field as a facet, simply
 click on the **filter** icon, in the field definition header in the publishing console.
 
-When I go to the analyze view, the displayed chart doesn't make any sense. How could I change this ?
+When I go to the analyze view, the displayed chart doesn't make any sense. How could I change this?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The dataset owner can easily define the default analytical representation of the dataset using the **analyze tab** of
 the publishing console. End-users can also simply choose different settings and build their own analytical data
 visualization using the available controls.
 
-On some portals powered by OpenDataSoft, I have seen nice image galleries displayed as data visualizations. How could I do the same ?
+On some portals powered by OpenDataSoft, I have seen nice image galleries displayed as data visualizations. How could I do the same?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The image support feature is still in beta version. Contact the OpenDataSoft support team if you would like to try it.
 This feature introduces a new data source which can handle compressed archives containing image files along with
 metadata.
 
-How can I embed a data visualization on my website ?
+How can I embed a data visualization on my website?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There are three ways to embed OpenDataSoft data visualizations on a website or any content management system:
@@ -211,25 +211,38 @@ There are three ways to embed OpenDataSoft data visualizations on a website or a
   Complete documentation is available here: `<http://opendatasoft.github.io/ods-widgets/docs/>`_
 * Use our HTTP/REST APIs to develop your own widgets.
 
-What is "Cartograph" ?
+What is "Cartograph"?
 ~~~~~~~~~~~~~~~~~~~~~~
+
 Cartograph is a tool developed by OpenDataSoft to make it possible to build geo mashups out of datasets stored on the
 OpenDataSoft platform.
 
 APIs FAQ
 --------
 
-What are APIs made for ?
-~~~~~~~~~~~~~~~~~~~~~~~~
+What does API mean?
+~~~~~~~~~~~~~~~~~~~
+
+API is an acronym for Applications Programming Interface. An API is an interface that allows to "plug" into an application to exchange data. For OpenDataSoft, APIs allow requests on datasets. 
+
+What's an API call? 
+~~~~~~~~~~~~~~~~~~~
+
+An API call is a request that is sent to the API in order to get information. An API call can be made either through an application or through the user interface. Displaying a dataset on the platform does count as an API call. 
+
+What are APIs made for?
+~~~~~~~~~~~~~~~~~~~~~~~
+
 APIs are a set of tools that developer can use to integrate data in their applications (Web applications, mobile
 applications, business applications...).
 
-How many API calls can I perform ?
+How many API calls can I perform?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 API endpoints are associated with quotas. OpenDataSoft customers can configure their own quotas policy. Contact your
 OpenDataSoft domain owner for more details.
 
-Does each dataset have its own APIs ?
+Does each dataset have its own APIs?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Yes and no.
