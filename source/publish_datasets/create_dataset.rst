@@ -42,7 +42,7 @@ The dataset creation workflow is very simple.
 
    .. ifconfig:: language == 'en'
 
-      .. image:: publish__source--en.jpg
+      .. image:: publish__source--en.png
          :alt: Configure Data Source
 
    .. ifconfig:: language == 'fr'

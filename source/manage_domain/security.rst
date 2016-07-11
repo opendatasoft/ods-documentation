@@ -56,7 +56,7 @@ Domain access list
 
 .. ifconfig:: language == 'en'
 
-    .. image:: security-users.png
+    .. image:: security-users--en.png
        :alt: Security Users
 
 .. ifconfig:: language == 'fr'
