@@ -7,6 +7,5 @@ Managing a Domain
    disqus_configuration
    mapbox_integration
    security
-   twitter-cards
    monitoring/index
    saml-integration

@@ -5,6 +5,9 @@ OpenDataSoft datasets can be accessed by developers through HTTP REST APIs.
 
 The domain `<http://public.opendatasoft.com>`_ will be use to illustrate examples given in this forum.
 
+.. image:: introduction__console--en.png
+   :alt: The API console V2
+
 Philosophy
 ----------
 
@@ -66,4 +69,3 @@ Virtual Fields
 Virtual field is a new concept in APIv2. A virtual field provides the possibility to work on a field that does not exist in the source dataset.
 It is a constructed as a result of an expression. Examples : ``my_virtual_field#2*3`` or an expression with an existing field ``my_virtual_field2#2*field``
 Then, a virtual field can be used in an aggregation query, or as a sort expression.
-
