@@ -1,0 +1,215 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-11 10:49+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2016\n"
+"Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/look_and_feel/responsive-menus.rst:2
+msgid "Designing responsive header menus"
+msgstr "Concevoir des menus responsives"
+
+#: ../../source/look_and_feel/responsive-menus.rst:5
+msgid ""
+"The theme customization is not available on freemium domains (created "
+"through the `Try it for free <https://www.opendatasoft.com/discover-"
+"opendatasoft-demo/>`_ page on `OpenDataSoft's website "
+"<https://www.opendatasoft.com>`_). If your domain is a freemium domain and "
+"would like to get this theme feature, `email us! <sales@opendatasoft.com>`_"
+msgstr ""
+"La personnalisation du thème du portail n'est pas disponible sur les "
+"domaines freemium (domaines créés via la page `Essayez ODS "
+"<https://www.opendatasoft.com/fr/decouvrez-opendatasoft-demo/>`_ du `site "
+"d'OpenDataSoft <https://www.opendatasoft.com/fr/>`_). Si votre domaine est "
+"un domaine freemium mais que vous voudriez tout de même avoir la "
+"fonctionnalité de personnalisation de thème activée, `écrivez nous ! "
+"<sales@opendatasoft.com>`_"
+
+#: ../../source/look_and_feel/responsive-menus.rst:12
+msgid ""
+"This page explores in length the customization of the platform responsive "
+"menu directive. This entails a fair amount of HTML and CSS code to be "
+"written and explained. You'll need working knowledge of both these "
+"technologies to understand the content of this page."
+msgstr ""
+"Cette page explore en détail la customisation des menus de la plateforme. "
+"Ceci implique d'écrire et d'expliquer une certaine quantité de code HTML et "
+"CSS. Vous aurez besoin de connaissances des ces deux langages pour "
+"comprendre le contenu de cette page. "
+
+#: ../../source/look_and_feel/responsive-menus.rst:16
+msgid ""
+"For basic customization needs, check out :doc:`customizing your portal's "
+"theme <theme>`."
+msgstr ""
+"Pour les besoins de customisation basique, vous pouvez consulter "
+":doc:`introduction à la gestion de thèmes pour le portail <theme>`."
+
+#: ../../source/look_and_feel/responsive-menus.rst:19
+msgid ""
+"One very common pattern in graphic design is to have the header menu hidden "
+"on small screens and replaced by a single toggle button, which usually "
+"features the famous *hamburger icon* |hamburger|."
+msgstr ""
+"Un motif très utilisé en design graphique est d'avoir le menu d'entête caché"
+" sur les petits écrans et remplacé par un seul bouton qui contient "
+"généralement la fameuse icône *hamburger* |hamburger|."
+
+#: ../../source/look_and_feel/responsive-menus.rst:24
+msgid ""
+"Clicking this button opens or closes a drawer containing all menu items. "
+"This behaviour can be seen on `OpenDataSoft's central data repository "
+"<https://data.opendatasoft.com/page/home/>`_ and on all new portals."
+msgstr ""
+"Un clic sur cette icône ouvre et ferme un tiroir contenant tous les éléments"
+" du menu. Ce comportement est visible sur `le portail central de données "
+"OpenDataSoft <https://data.opendatasoft.com/page/home/>`_ et sur tous les "
+"nouveaux portails."
+
+#: ../../source/look_and_feel/responsive-menus.rst:30
+msgid "Closed drawer"
+msgstr "Tiroir fermé"
+
+#: ../../source/look_and_feel/responsive-menus.rst:35
+msgid "Open drawer"
+msgstr "Tiroir ouvert"
+
+#: ../../source/look_and_feel/responsive-menus.rst:38
+msgid "Implementation"
+msgstr "Implémentation"
+
+#: ../../source/look_and_feel/responsive-menus.rst:40
+msgid ""
+"Implementing this behaviour usually means resorting heavily to *media "
+"queries*, that is CSS rules applied only for a given screen width. To "
+"facilitate this work, OpenDataSoft's provides a handy directive called "
+"``ods-responsive-menu`` that you should use within the header as follow."
+msgstr ""
+"Implémenter ce comportement implique d'implémenter les *media queries*, ce "
+"sont des règles CSS appliquées uniquement pour une largeur d'écran donnée. "
+"Pour faciliter ce travail, OpenDataSoft fournit une directive nommée ``ods-"
+"responsive-menu`` qu'il faut utiliser dans l'entête comme ceci. "
+
+#: ../../source/look_and_feel/responsive-menus.rst:56
+msgid "This directive is actually an ensemble of 3 directives:"
+msgstr "Cette directive est en fait un ensemble de 3 directives : "
+
+#: ../../source/look_and_feel/responsive-menus.rst:58
+msgid ""
+"``ods-responsive-menu`` (attribute directive, used as an attribute of "
+"another html tag)"
+msgstr ""
+"``ods-responsive-menu`` (attribute de directive, utilisé comme attribut d'un"
+" autre tag html)"
+
+#: ../../source/look_and_feel/responsive-menus.rst:60
+msgid ""
+"Used to specify (through the ``breakpoint`` attribute) the screen width (in "
+"px) under which the drawer should appear and over which things should be "
+"displayed normally."
+msgstr ""
+"Utilisé pour spécifier (à l'aide de l'attribut ``breakpoint``) la largeur "
+"d'écran (en px) sous laquelle le tiroir doit apparaître et au dessus de "
+"laquelle les éléments doivent être affichés normalement. "
+
+#: ../../source/look_and_feel/responsive-menus.rst:63
+msgid ""
+"``ods-responsive-menu-placeholder`` (element directive used as an html tag)"
+msgstr ""
+"``ods-responsive-menu-placeholder`` (directive d'élément utilisée comme un "
+"tag html)"
+
+#: ../../source/look_and_feel/responsive-menus.rst:65
+msgid ""
+"Wraps the content that will be invisible unless we are below the breakpoint."
+msgstr ""
+"Renvoie à la ligne le contenu qui sera invisible sauf si on est en dessous "
+"du ``breakpoint``."
+
+#: ../../source/look_and_feel/responsive-menus.rst:67
+msgid "``ods-responsive-menu-collapsible`` (element directive)"
+msgstr "``ods-responsive-menu-collapsible`` (directive d'élément)"
+
+#: ../../source/look_and_feel/responsive-menus.rst:69
+msgid ""
+"Wraps the content that will be displayed normally over the breakpoint but "
+"collapsed within the drawer below."
+msgstr ""
+"Entoure le contenu qui sera affiché normalement au delà du ``breakpoint`` "
+"mais caché à l'intérieur du tiroir en deçà."
+
+#: ../../source/look_and_feel/responsive-menus.rst:72
+msgid "Writing styles for the collapsed header content"
+msgstr "Styles d'écriture du contenu replié de l'entête "
+
+#: ../../source/look_and_feel/responsive-menus.rst:74
+msgid ""
+"Going from an horizontal layout to a vertical layouts entails quite a few "
+"graphical changes, as demonstrated by the platform's default header."
+msgstr ""
+"Passer d'une disposition horizontale à une disposition verticale nécessite "
+"quelques changements graphiques, comme démontré par l'entête par défaut de "
+"la plateforme. "
+
+#: ../../source/look_and_feel/responsive-menus.rst:80
+msgid "Desktop header."
+msgstr "Entête bureautique"
+
+#: ../../source/look_and_feel/responsive-menus.rst:85
+msgid "Mobile header."
+msgstr "Entête mobile"
+
+#: ../../source/look_and_feel/responsive-menus.rst:87
+msgid ""
+"In order for you to change the style accordingly, the ``ods-responsive-menu-"
+"collapsible`` element will wrap its content with the ``.ods-responsive-menu-"
+"collapsible--collapsed`` when (and only when) the screen is smaller than the"
+" breakpoint. This enables you to clearly separate the style for the two "
+"layout-styles (horizontal and vertical)."
+msgstr ""
+"Afin de pouvoir changer le style en conséquence, l'élément ``ods-responsive-"
+"menu-collapsible`` renvoie à la ligne son contenu avec  ``.ods-responsive-"
+"menu-collapsible--collapsed`` quand (et seulement quand) l'écran est plut "
+"petit que le ``breakpint``. Ceci vous permet de séparer précisement le style"
+" pour les deux styles de disposition (horizontal et vertical). "
+
+#: ../../source/look_and_feel/responsive-menus.rst:102
+msgid "Writing styles for the drawer"
+msgstr "Styles d'écriture pour le tiroir"
+
+#: ../../source/look_and_feel/responsive-menus.rst:104
+msgid ""
+"If you'd like to customize the overall look of the drawer, you will need to "
+"know the name of the classes applied to elements created by the 3 "
+"directives. The code sample we saw earlier will render as:"
+msgstr ""
+"Si vous voulez personnaliser le style du tiroir, vous allez avoir besoin de "
+"connaître le nom des classes appliquées sur les éléments créé par les 3 "
+"directives. L'échantillon de code vu précédemment sera affiché comme ceci : "
+
+#: ../../source/look_and_feel/responsive-menus.rst:129
+msgid ""
+"On top of that, the ``.ods-responsive-menu-collapsible`` element will get "
+"the class ``.ods-responsive-menu-collapsible--collapsed`` as soon as the "
+"screen width falls below the breakpoint and the class ``.ods-responsive-"
+"menu-collapsible--expanded`` to mark whenever the user wants the menu to be "
+"displayed."
+msgstr ""
+"De plus, l'élément ``.ods-responsive-menu-collapsible`` obtiendra la classe "
+"``.ods-responsive-menu-collapsible--collapsed`` dès que la largeur de "
+"l'écran passe en dessous du ``breakpoint`` et la classe ``.ods-responsive-"
+"menu-collapsible--expanded`` pour indiquer lorsque l'utilisateur veut "
+"afficher le menu. "
