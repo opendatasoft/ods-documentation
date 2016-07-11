@@ -5,6 +5,16 @@ OpenDataSoft datasets can be accessed by developers through HTTP REST APIs.
 
 The domain `<http://public.opendatasoft.com>`_ will be use to illustrate examples given in this forum.
 
+.. ifconfig:: language == 'en'
+
+    .. image:: available_apis__console--en.png
+       :alt: API Console
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: available_apis__console--fr.png
+       :alt: Console d'API
+
 Available APIs
 --------------
 

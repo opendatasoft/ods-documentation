@@ -1,5 +1,5 @@
-Grid layouts
-============
+Designing responsive pages
+==========================
 
 Like many websites, OpenDataSoft's portal uses a grid layout to position elements. A grid is the intersection of rows
 and columns of pre-defined width, which will be used to position elements within a layout. This very common design tool
