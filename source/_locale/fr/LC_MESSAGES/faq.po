@@ -1,17 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2015, OpenDataSoft
+# Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # 
 # Translators:
 # benrict <benoit.richter@opendatasoft.com>, 2016
-# Jérémy Morel <morel.jeremy@gmail.com>, 2015-2016
+# Jérémy Morel, 2016
+# Jérémy Morel, 2015-2016
+# Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-08 16:34+0100\n"
-"PO-Revision-Date: 2016-01-08 14:54+0000\n"
-"Last-Translator: Jérémy Morel <morel.jeremy@gmail.com>\n"
+"POT-Creation-Date: 2016-07-11 11:44+0200\n"
+"PO-Revision-Date: 2016-07-11 09:37+0000\n"
+"Last-Translator: Thibaut Dupré <thibaut.dupre@opendatasoft.com>\n"
 "Language-Team: French (http://www.transifex.com/opendatasoft/documentation-5/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -354,7 +356,7 @@ msgid "Exploration and Visualization FAQ"
 msgstr "FAQ Exploration et Visualisation"
 
 #: ../../source/faq.rst:171
-msgid "How can I display points on a map ?"
+msgid "How can I display points on a map?"
 msgstr "Comment puis-je afficher des points sur une carte ?"
 
 #: ../../source/faq.rst:172
@@ -367,7 +369,7 @@ msgstr "Pour que la vue carte soit disponible, votre jeu de données doit conten
 #: ../../source/faq.rst:176
 msgid ""
 "In the table view, I have not been able to sort the results using a specific"
-" field; what went wrong ?"
+" field; what went wrong?"
 msgstr "Dans la vue tableau, je n'ai pas pu trier les résultats en fonction du champ qui m'intéressait; que s'est-il passé ?"
 
 #: ../../source/faq.rst:178
@@ -382,7 +384,7 @@ msgstr "Par défaut, seuls les champs numériques sont triables. Cela inclut les
 #: ../../source/faq.rst:183
 msgid ""
 "I published a dataset, but no category is displayed in the left column. What"
-" shall I do ?"
+" shall I do?"
 msgstr "Je viens de publier un jeu de données, mais aucune catégorie n'est affichée dans la colonne de gauche. Que dois-je faire ?"
 
 #: ../../source/faq.rst:185
@@ -395,7 +397,7 @@ msgstr "Les catégories (facettes) sont construites à partir des champs qui ont
 #: ../../source/faq.rst:189
 msgid ""
 "When I go to the analyze view, the displayed chart doesn't make any sense. "
-"How could I change this ?"
+"How could I change this?"
 msgstr "Lorsque j'arrive sur la vue analyse, le graphique affichée n'a pas beaucoup de sens. Comment puis-je changer ce graphique affiché par défaut ?"
 
 #: ../../source/faq.rst:191
@@ -409,7 +411,7 @@ msgstr "Le propriétaire du jeu de données peut facilement choisir la représen
 #: ../../source/faq.rst:196
 msgid ""
 "On some portals powered by OpenDataSoft, I have seen nice image galleries "
-"displayed as data visualizations. How could I do the same ?"
+"displayed as data visualizations. How could I do the same?"
 msgstr "Sur certains portails OpenDataSoft, j'ai pu voir de belles galeries d'images affichées sous forme de visualisations. Comment puis-je obtenir le même résultat sur mon propre portail ?"
 
 #: ../../source/faq.rst:198
@@ -421,7 +423,7 @@ msgid ""
 msgstr "La fonctionnalité de support des images est encore en version beta. Contactez le support OpenDataSoft si vous souhaitez essayer la fonctionnalité. Cette fonctionnalité introduit un nouveau type de source de donnée qui peut traiter des archives compressées contenant des images associées à un fichier de métadonnées."
 
 #: ../../source/faq.rst:203
-msgid "How can I embed a data visualization on my website ?"
+msgid "How can I embed a data visualization on my website?"
 msgstr "Comment puis-je intégrer une visualisation sur mon site ?"
 
 #: ../../source/faq.rst:205
@@ -450,56 +452,79 @@ msgid "Use our HTTP/REST APIs to develop your own widgets."
 msgstr "Utiliser nos APIs HTTP/REST afin de développer vos propres composants."
 
 #: ../../source/faq.rst:215
-msgid "What is \"Cartograph\" ?"
+msgid "What is \"Cartograph\"?"
 msgstr "Qu'est-ce que \"Cartographe\" ?"
 
-#: ../../source/faq.rst:216
+#: ../../source/faq.rst:217
 msgid ""
 "Cartograph is a tool developed by OpenDataSoft to make it possible to build "
 "geo mashups out of datasets stored on the OpenDataSoft platform."
 msgstr "Cartographe est un outil développé par OpenDataSoft qui permet de créer des cartes avancées à partir de superpositions de jeux de données disponibles sur la plateforme OpenDataSoft."
 
-#: ../../source/faq.rst:220
+#: ../../source/faq.rst:221
 msgid "APIs FAQ"
 msgstr "FAQ APIs"
 
-#: ../../source/faq.rst:223
-msgid "What are APIs made for ?"
+#: ../../source/faq.rst:224
+msgid "What does API mean?"
+msgstr "Que signifie l'acronyme API ?"
+
+#: ../../source/faq.rst:226
+msgid ""
+"API is an acronym for Applications Programming Interface. An API is an "
+"interface that allows to \"plug\" into an application to exchange data. For "
+"OpenDataSoft, APIs allow requests on datasets."
+msgstr "API est un acronyme pour Applications Programming Interface. Une API est une interface qui permet de se brancher sur une application pour echanger des données. Pour OpenDataSoft, les APIs permettent de requêter sur des datasets. "
+
+#: ../../source/faq.rst:229
+msgid "What's an API call?"
+msgstr "Qu'est-ce qu'un appel API ?"
+
+#: ../../source/faq.rst:231
+msgid ""
+"An API call is a request that is sent to the API in order to get "
+"information. An API call can be made either through an application or "
+"through the user interface. Displaying a dataset on the platform does count "
+"as an API call."
+msgstr "Un appel API est une requête envoyée à l'API pour obtenir de l'information. Un appel API peut être fait soit par une application, soit par l'interface utilisateur. Afficher un jeu de données sur la plateforme compte comme un appel API. "
+
+#: ../../source/faq.rst:234
+msgid "What are APIs made for?"
 msgstr "A quoi servent les APIs ?"
 
-#: ../../source/faq.rst:224
+#: ../../source/faq.rst:236
 msgid ""
 "APIs are a set of tools that developer can use to integrate data in their "
 "applications (Web applications, mobile applications, business "
 "applications...)."
 msgstr "Les APIs sont un ensemble d'outils qu'un développeur peut utiliser pour intégrer des données dans ses applications (web, mobile, applications métier...)."
 
-#: ../../source/faq.rst:228
-msgid "How many API calls can I perform ?"
+#: ../../source/faq.rst:240
+msgid "How many API calls can I perform?"
 msgstr "Combien d'appels d'API puis-je faire ?"
 
-#: ../../source/faq.rst:229
+#: ../../source/faq.rst:242
 msgid ""
 "API endpoints are associated with quotas. OpenDataSoft customers can "
 "configure their own quotas policy. Contact your OpenDataSoft domain owner "
 "for more details."
 msgstr "Les points d'entrées d'APIs sont associés à des quotas. Les clients OpenDataSoft peuvent configurer leurs propres politiques de quotas. Contactez le propriétaire de votre domaine OpenDataSoft pour plus de détails."
 
-#: ../../source/faq.rst:233
-msgid "Does each dataset have its own APIs ?"
+#: ../../source/faq.rst:246
+msgid "Does each dataset have its own APIs?"
 msgstr "Est-ce que chaque jeu de donnée possède ses propres APIs ?"
 
-#: ../../source/faq.rst:235
+#: ../../source/faq.rst:248
 msgid "Yes and no."
 msgstr "Oui et non."
 
-#: ../../source/faq.rst:237
+#: ../../source/faq.rst:250
 msgid ""
 "No, because all our :doc:`APIs </api/available_apis>` can be used with any "
 "dataset."
 msgstr "Non, car toutes nos :doc:`APIs </api/available_apis>` peuvent être utilisées avec n'importe quel jeu de données."
 
-#: ../../source/faq.rst:239
+#: ../../source/faq.rst:252
 msgid ""
 "Yes, because giving the dataset, the filtering and facetting features will "
 "vary as the dataset defines the available fields for **querying**, "

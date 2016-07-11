@@ -58,7 +58,7 @@ APIs Monitoring
 
 OpenDataSoft users API calls are natively monitored by OpenDataSoft, giving to administrators a deep understanding of how their datasets are used.
 
-While the Google Analytics integration gives an overview of how the domain web site is used (viewed pages), API 
+While the Google Analytics integration gives an overview of how the domain web site is used (viewed pages), API
 monitoring registers any API call, may it come from a web page or from a mobile application.
 
 A basic dashboard is then made available from the *Domain > Monitoring > API* link.
@@ -66,7 +66,7 @@ A basic dashboard is then made available from the *Domain > Monitoring > API* li
 .. image:: api-monitoring-en.jpg
    :alt: An API Monitoring Dashboard
 
-And monitoring data can be explored with the standard OpenDataSoft dataset exploration view by hitting the upper right 
+And monitoring data can be explored with the standard OpenDataSoft dataset exploration view by hitting the upper right
 link **See more**.
 
 You'll find below the list of fields available in the API monitoring dataset.
@@ -227,7 +227,7 @@ The **api** field for ODATA API contains one of the following values.
      * Description
      * URL template
    * * odata_service_root_doc
-     * Root odata api
+     * Root ODATA API
      * api/odata/
    * * odata_entity
      * list of records in a dataset
@@ -260,7 +260,7 @@ The **api** field for OpenDataSoft APIv2 (ods_v2) contains one of the following 
     * Description
     * URL template
   * * api_root
-    * Call to api v2 root
+    * Call to API v2 root
     * /v2
   * * api_source
     * Call to source path (catalog, monitoring, opendatasoft)
