@@ -59,7 +59,7 @@ redirected to your application's redirection URL, with REST parameters describin
 The REST parameters you will need to supply when redirecting the user are the following:
 
 * **client_id**: The client ID you were given when you registered your application.
-* **redirect_uri**: The redirect uri you provided when you registered your application.
+* **redirect_uri**: The redirect URI you provided when you registered your application.
 * **response_type**: The response type you provided when you registered your application. This should be set to "code"
 * **scopes** *(optional)*: A list of requested scopes, space-separated (currently only "all" is supported)
 * **state** *(optional)*: A random string.
@@ -105,7 +105,7 @@ need to send a POST request to `/oauth2/token/` with the following parameters:
 * **code**: The 30-characters-long authorization code that was part of your authorization grant.
 * **scopes**: The list of scopes you require access to. Please note that the scopes should all be within the scopes that
   your authorization grant gives you access to.
-* **redirect_uri**: The redirect uri you provided when registering your application.
+* **redirect_uri**: The redirect URI you provided when registering your application.
 * **state** *(optional)*: A random string.
 
 Example:

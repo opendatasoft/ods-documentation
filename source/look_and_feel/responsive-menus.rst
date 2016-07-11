@@ -13,7 +13,7 @@ Designing responsive header menus
     of HTML and CSS code to be written and explained. You'll need working knowledge of both these technologies to
     understand the content of this page.
 
-    For basic customization needs, check out the :doc:`introduction to theme management for the portal <theme>`.
+    For basic customization needs, check out :doc:`customizing your portal's theme <theme>`.
 
 
 One very common pattern in graphic design is to have the header menu hidden on small screens and replaced by a single
@@ -101,7 +101,7 @@ This enables you to clearly separate the style for the two layout-styles (horizo
 Writing styles for the drawer
 -----------------------------
 
-If you'd like to customize the overall look of the drawer, you will need to now the name of the classes applied to
+If you'd like to customize the overall look of the drawer, you will need to know the name of the classes applied to
 elements created by the 3 directives. The code sample we saw earlier will render as:
 
 .. code-block:: html
