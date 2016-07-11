@@ -9,7 +9,7 @@ Philosophy
 ----------
 
 APIv2 is a HATEOAS API. It means that a client can interact with API via hypermedia links returned by each entry point.
-For instance a basic call to the api root entry point ``/api/v2`` will return all possible API calls from this specific path :
+For instance a basic call to the API root entry point ``/api/v2`` will return all possible API calls from this specific path :
 
 .. code-block:: json
 
