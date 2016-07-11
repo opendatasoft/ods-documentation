@@ -34,7 +34,7 @@ Getting started
 
 
 
-The first step to use the OAuth2 authorization flow is to register your application first. To do so, go to your account
+The first step to use the OAuth2 authorization flow is to register your application. To do so, go to your account
 page on the domain you want to register the application on. There, you will find a form prompting you for the following:
 
 * Application name: the name of the application
