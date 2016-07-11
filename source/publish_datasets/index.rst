@@ -9,7 +9,7 @@ Publishing Datasets
    processors
    configure_visualizations
    dataset_subscriptions
-   citadeljson
+
 
 Learn in a few steps how to publish your first dataset with OpenDataSoft.
 
