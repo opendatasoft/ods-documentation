@@ -16,7 +16,7 @@ To access the activity log, simply go to the *Domain > Monitoring > Activity log
 .. ifconfig:: language == 'fr'
 
     .. image:: activity-log-fr.png
-       :alt: Journal d'activité
+       :alt: Activity log
 
 As in the API monitoring page, you can access the full activity log dataset by hitting the upper right link
 **See more**.
@@ -53,7 +53,7 @@ Simply go to the *Domain > Portal > Integrations* page and fill in you Google An
 .. ifconfig:: language == 'fr'
 
     .. image:: monitoring__google-analytics-integration--fr.png
-       :alt: Configuration de l'ID Google Analytics
+       :alt: Google Analytics ID configuration
 
 OpenDataSoft's Google Analytics integration tracks the following views:
 
