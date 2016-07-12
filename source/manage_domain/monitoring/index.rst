@@ -8,8 +8,15 @@ The activity log allows the domain administrator to monitor domain configuration
 
 To access the activity log, simply go to the *Domain > Monitoring > Activity log* page.
 
-.. image:: activity-log-en.jpg
-   :alt: Activity log
+.. ifconfig:: language == 'en'
+
+    .. image:: activity-log-en.png
+       :alt: Activity log
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: activity-log-fr.png
+       :alt: Activity log
 
 As in the API monitoring page, you can access the full activity log dataset by hitting the upper right link
 **See more**.
@@ -40,13 +47,13 @@ Simply go to the *Domain > Portal > Integrations* page and fill in you Google An
 
 .. ifconfig:: language == 'en'
 
-    .. image:: monitoring__google-analytics-integration--en.jpg
+    .. image:: monitoring__google-analytics-integration--en.png
        :alt: Google Analytics ID configuration
 
 .. ifconfig:: language == 'fr'
 
     .. image:: monitoring__google-analytics-integration--fr.png
-       :alt: Configuration de l'ID Google Analytics
+       :alt: Google Analytics ID configuration
 
 OpenDataSoft's Google Analytics integration tracks the following views:
 
@@ -63,8 +70,15 @@ monitoring registers any API call, may it come from a web page or from a mobile 
 
 A basic dashboard is then made available from the *Domain > Monitoring > API* link.
 
-.. image:: api-monitoring-en.jpg
-   :alt: An API Monitoring Dashboard
+.. ifconfig:: language == 'en'
+
+   .. image:: api-monitoring-en.png
+      :alt: An API Monitoring Dashboard
+
+.. ifconfig:: language == 'fr'
+
+   .. image:: api-monitoring-fr.png
+      :alt: An API Monitoring Dashboard
 
 And monitoring data can be explored with the standard OpenDataSoft dataset exploration view by hitting the upper right
 link **See more**.
@@ -322,4 +336,3 @@ The **embed type** field describes the type of embed which generated the query, 
      * Explore tab embed
    * * explore-images
      * Images tab embed
-
