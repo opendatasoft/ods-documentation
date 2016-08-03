@@ -6,6 +6,6 @@ Using the API
 
    authentication
    query_language
-   v1
-   v2
+   v1/index
+   v2/index
    odata
