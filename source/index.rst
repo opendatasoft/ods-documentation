@@ -2,16 +2,17 @@ Welcome to OpenDataSoft documentation!
 ======================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
-   about
-   getting_started/index
-   tutorials
-   publish_datasets/index
-   explore/index
-   publish_content
-   manage_domain/index
-   look_and_feel/index
-   api/index
-   apiv2/index
+   sourcing_and_processing_data/index
+   exploring_catalog_and_datasets/index
+   editing_pages/index
+   creating_maps_charts/index
+   configuring_portal/index
+   managing_security/index
+   customizing_look_and_feel/index
+   monitoring_audience/index
+   managing_subdomains/index
+   using_api/index
    faq
+   glossary
