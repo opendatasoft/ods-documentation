@@ -8,14 +8,14 @@ There are three main views to analyze your domain, trying to answer three differ
  
 - Users: who are the people using your data and with which intensity?
 - Data: what is the distribution of the popularity among your datasets?
-- Actions: what people are looking to do with your data?
+- Actions: what are people looking to do with your data?
 
 In each view, you can select a period (default is the last month) and a dataset via a search bar. 
 
-If the default KPIs and analyzis are not enough for your needs, you can clic on the "See data" link. It allows you to get the whole dataset and do your own analyzis.
+If the default KPIs and analyzis are not enough for your needs, you can click on the "See data" link. It allows you to get the whole dataset and do your own analyzis.
 Note that the data will be filtered with the period and dataset you may have chosen.
 
-**API Call.** The key measure of the monitoring is the API call. An API call is one request to the data. It can be made directly via the API or when using one of our services like displaying a map or an analysis. For e.g. when you search for a keyword on a dataset, it generate one request, hence it count as one API call. 
+**API Call.** The key measure of the monitoring is the API call. An API call is one request to the data. It can be made directly via the API or when using one of our services like displaying a map or an analysis. For example when you search for a keyword on a dataset, it generate one request, hence it count as one API call. 
 
 Analyzing users usage
 ~~~~~~~~~~~~~~~~~~~~~
@@ -24,7 +24,7 @@ Go to the *Domain > Analytics > Users* page.
 
 There are seven indicators :
 
-1. **Activity**: daily API calls. It may allows you to understand better who are the people using your data (for e.g. if you mostly have calls during week days). You can also link your activity to some events (a new dataset, a new communication campaign).
+1. **Activity**: daily API calls. It may allow you to understand better who are the people using your data (for example if you mostly have calls during week days). You can also link your activity to some events (a new dataset, a new communication campaign).
 
 .. ifconfig:: language == 'en'
 
@@ -84,7 +84,7 @@ There are seven indicators :
     .. image:: usage__users-usage-5-fr.jpg
         :alt: Usage Utilisateur Indicateur Utilisateurs Mobiles
 
-6. **Top 5 Users**: The people who use your API or your data the most. Keep in mind that if somebody download a dataset and develop something on his laptop, you wont be able to know it and it won't appear here.
+6. **Top 5 Users**: The people who use your API or your data the most. Keep in mind that if somebody downloads a dataset and develops something on his laptop, you wont be able to know it and it won't appear here.
 
 .. ifconfig:: language == 'en'
 
@@ -317,7 +317,7 @@ In most cases you won't be able to do anything. Anyway we want to be transparent
    * * DatastoreError
      * This is a server error, we monitor it real time on our side to avoid it. 
    * * InvalidPolygon
-     * The defined polygon filter on a geo-query is malformed. For e.g. it can be a self-crossing polygon like an hourglass.
+     * The defined polygon filter on a geo-query is malformed. For example it can be a self-crossing polygon like an hourglass.
    * * HTTPError
      * It comes from a federated dataset. It may happen when you change the schema of a dataset when it is already federated on another portal. Always be careful when you update a dataset's schema.
    * * MissingParameters
