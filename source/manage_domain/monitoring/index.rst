@@ -602,7 +602,7 @@ Simply go to the *Domain > Configuration > Tracking* page and fill in you Google
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: usage__google-analytics-integration--fr.png
+    .. image:: usage__google-analytics-integration--fr.jpg
         :alt: Configuration de l'ID Google Analytics
 
 OpenDataSoft's Google Analytics integration tracks the following views:
