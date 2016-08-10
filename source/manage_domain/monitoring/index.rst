@@ -5,17 +5,17 @@ Analyzing audience
 ------------------
 
 There are three main views to analyze your domain, trying to answer three different questions:
- 
+
 - Users: who are the people using your data and with which intensity?
 - Data: what is the distribution of the popularity among your datasets?
 - Actions: what are people looking to do with your data?
 
-In each view, you can select a period (default is the last month) and a dataset via a search bar. 
+In each view, you can select a period (default is the last month) and a dataset via a search bar.
 
 If the default KPIs and analyzis are not enough for your needs, you can click on the "See data" link. It allows you to get the whole dataset and do your own analyzis.
 Note that the data will be filtered with the period and dataset you may have chosen.
 
-**API Call.** The key measure of the monitoring is the API call. An API call is one request to the data. It can be made directly via the API or when using one of our services like displaying a map or an analysis. For example when you search for a keyword on a dataset, it generate one request, hence it count as one API call. 
+**API Call.** The key measure of the monitoring is the API call. An API call is one request to the data. It can be made directly via the API or when using one of our services like displaying a map or an analysis. For example when you search for a keyword on a dataset, it generate one request, hence it count as one API call.
 
 Analyzing users usage
 ~~~~~~~~~~~~~~~~~~~~~
@@ -48,7 +48,7 @@ There are seven indicators :
     .. image:: usage__users-usage-2-fr.jpg
         :alt: Usage Utilisateur Indicateur Total Appels API
 
-3. **API Calls per User**: on average API calls per users. 
+3. **API Calls per User**: on average API calls per users.
 
 .. ifconfig:: language == 'en'
 
@@ -72,7 +72,7 @@ There are seven indicators :
     .. image:: usage__users-usage-4-fr.jpg
         :alt: Usage Utilisateur Indicateur Anonymes
 
-5. **Mobile Users**: Part of your activity coming from smartphones or tablets. 
+5. **Mobile Users**: Part of your activity coming from smartphones or tablets.
 
 .. ifconfig:: language == 'en'
 
@@ -116,88 +116,88 @@ Go to the *Domain > Analytics > Data* page.
 
 There are seven indicators :
 
-1. **Popularity**: Number of downloads and API calls per dataset during the period. 
+1. **Popularity**: Number of downloads and API calls per dataset during the period.
 
 .. ifconfig:: language == 'en'
 
-    .. image:: usage__users-usage-1-en.jpg
+    .. image:: usage__data-usage-1-en.jpg
         :alt: Data Usages Popularity Indicator
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: usage__users-usage-1-fr.jpg
+    .. image:: usage__data-usage-1-fr.jpg
         :alt: Usage Data Indicateur Popularité
 
 2. **Total Datasets**: Number of datasets created/updated.
 
 .. ifconfig:: language == 'en'
 
-    .. image:: usage__users-usage-2-en.jpg
+    .. image:: usage__data-usage-2-en.jpg
         :alt: Data Usages Total Datasets Indicator
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: usage__users-usage-2-fr.jpg
+    .. image:: usage__data-usage-2-fr.jpg
         :alt: Usage Data Indicateur Total Jeux de données
 
 3. **Total Records**: Number of records created/updated.
 
 .. ifconfig:: language == 'en'
 
-    .. image:: usage__users-usage-3-en.jpg
+    .. image:: usage__data-usage-3-en.jpg
         :alt: Data Usages Total Records Indicator
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: usage__users-usage-3-fr.jpg
+    .. image:: usage__data-usage-3-fr.jpg
         :alt: Usage Data Indicateur Total Enregistrements
 
 4. **Top Datasets**: The 3 datasets with most API calls. Those are the datasets that drive the usage on your portal.
 
 .. ifconfig:: language == 'en'
 
-    .. image:: usage__users-usage-4-en.jpg
+    .. image:: usage__data-usage-4-en.jpg
         :alt: Data Usages Top Datasets Indicator
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: usage__users-usage-4-fr.jpg
+    .. image:: usage__data-usage-4-fr.jpg
         :alt: Usage Data Indicateur Top Jeux de données
 
 5. **Down Datasets**: The 3 datasets with least API calls. Those datasets may have not met their audience yet.
 
 .. ifconfig:: language == 'en'
 
-    .. image:: usage__users-usage-5-en.jpg
+    .. image:: usage__data-usage-5-en.jpg
         :alt: Data Usages Down Datasets Indicator
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: usage__users-usage-5-fr.jpg
+    .. image:: usage__data-usage-5-fr.jpg
         :alt: Usage Data Indicateur Down Jeux de données
 
 6. **Themes**: Distribution of popularity among themes. Allows you to understand what data your users look for.
 
 .. ifconfig:: language == 'en'
 
-    .. image:: usage__users-usage-6-en.jpg
+    .. image:: usage__data-usage-6-en.jpg
         :alt: Data Usages Themes Indicator
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: usage__users-usage-6-fr.jpg
+    .. image:: usage__data-usage-6-fr.jpg
         :alt: Usage Data Indicateur Themes
 
 7. **Tags**: Distribution of popularity among tags. Allows you to understand what data your users look for.
 
 .. ifconfig:: language == 'en'
 
-    .. image:: usage__users-usage-7-en.jpg
+    .. image:: usage__data-usage-7-en.jpg
         :alt: Data Usages Tags Indicator
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: usage__users-usage-7-fr.jpg
+    .. image:: usage__data-usage-7-fr.jpg
         :alt: Usage Data Indicateur Tags
 
 Analyzing actions usage
@@ -243,7 +243,7 @@ There are eight indicators :
     .. image:: usage__actions-usage-3-fr.jpg
         :alt: Usage Actions Indicateur Recherches sans résultat
 
-4. **Actions per Page**: Distribution of where in your portal the actions are 
+4. **Actions per Page**: Distribution of where in your portal the actions are
 
 .. ifconfig:: language == 'en'
 
@@ -307,7 +307,7 @@ There are eight indicators :
 API calls Errors
 ~~~~~~~~~~~~~~~~
 
-In most cases you won't be able to do anything. Anyway we want to be transparent on your users' usage. 
+In most cases you won't be able to do anything. Anyway we want to be transparent on your users' usage.
 
 .. list-table::
    :header-rows: 1
@@ -315,7 +315,7 @@ In most cases you won't be able to do anything. Anyway we want to be transparent
    * * Error name
      * Error Description
    * * DatastoreError
-     * This is a server error, we monitor it real time on our side to avoid it. 
+     * This is a server error, we monitor it real time on our side to avoid it.
    * * InvalidPolygon
      * The defined polygon filter on a geo-query is malformed. For example it can be a self-crossing polygon like an hourglass.
    * * HTTPError
