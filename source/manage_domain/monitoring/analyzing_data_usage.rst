@@ -5,7 +5,7 @@ Go to the *Analytics > Data* page.
 
 There are seven indicators :
 
-1. **Dataset activity**: Download and API calls of most used datasets.
+1. **Dataset activity**: Download and API calls of most used datasets. Please note that there are two different scales for the download count and the number of API calls on each side of the chart.
 
 .. ifconfig:: language == 'en'
 

@@ -6,16 +6,16 @@ Backoffice
 
 The activity log allows the domain administrator to monitor domain configuration activity.
 
-To access the activity log, simply go to the *Domain > Monitoring > Activity log* page.
+To access the activity log, simply go to the *Analytics > Backoffice* page.
 
 .. ifconfig:: language == 'en'
 
-    .. image:: activity-log-en.jpg
+    .. image:: analyzing_domain_activity-en.jpg
         :alt: Backoffice
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: activity-log-fr.jpg
+    .. image:: analyzing_domain_activity-fr.jpg
         :alt: Backoffice
 
 As in the API monitoring page, you can access the full activity log dataset by hitting the upper right link
