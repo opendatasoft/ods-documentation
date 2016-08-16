@@ -41,7 +41,7 @@ There are seven indicators :
     .. image:: usage__users-usage-3-fr.jpg
         :alt: Usage Utilisateur Indicateur Appels API par Utilisateurs
 
-4. **Anonymous users**: Percentage of users without an account. If your domain is open, you may have a lot of anonymous users, that's normal, that's the whole thing about Open Data. Not anonymous people are those who have an OpenDataSoft account and that are logged when they use your data.
+4. **Anonymous users**: Percentage of users without an account. If your domain is open, you may have a lot of anonymous users, that's normal, that's the whole thing about Open Data. Not anonymous people are those who have an OpenDataSoft account and who are logged when they use your data.
 
 .. ifconfig:: language == 'en'
 

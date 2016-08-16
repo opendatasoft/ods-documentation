@@ -5,7 +5,7 @@ When OpenDataSoft allows you to monitor the data and API usage, the Google Analy
 
 You can monitor the usage of your domain by configuring a Google Analytics integration.
 
-Simply go to the *Domain > Configuration > Tracking* page and fill in you Google Analytics ID.
+Simply go to the *Domain > Configuration > Tracking* page and fill in your Google Analytics ID.
 
 .. ifconfig:: language == 'en'
 

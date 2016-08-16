@@ -5,7 +5,7 @@ Go to the *Analytics > Actions* page.
 
 There are eight indicators :
 
-1. **Actions**: Frequency and distribution of actions (analyze, geo, search) taken by users based on API calls. Gives you precious information about what your users do and how to better serve them. Also remember that like with every charts on OpenDataSoft you can filter the variables displayed (Analyse, Geo or Search) by clicking on the legend labels.
+1. **Actions**: Frequency and distribution of actions (analyze, geo, search) taken by users based on API calls. Gives you precious information about what your users do and how to better serve them. Also remember that like with every charts on OpenDataSoft you can filter the variables displayed (Analyze, Geo or Search) by clicking on the legend labels.
 
 .. ifconfig:: language == 'en'
 
@@ -17,7 +17,7 @@ There are eight indicators :
     .. image:: usage__actions-usage-1-fr.jpg
         :alt: Usage Actions Indicateur Activité par type
 
-2. **Total searches**: Number of time somebody search for a dataset from the catalog, or search into a dataset.
+2. **Total searches**: Number of times somebody searched for a dataset from the catalog, or search into a dataset.
 
 .. ifconfig:: language == 'en'
 
@@ -120,7 +120,7 @@ In most cases you won't be able to do anything. Anyway we want to be transparent
      * It comes from a federated dataset. It may happen when you change the schema of a dataset when it is already federated on another portal. Always be careful when you update a dataset's schema.
    * * MissingParameters
      * It may happen when you forget the dataset_id in the API console.
-   * * UnkownDataset
+   * * UnknownDataset
      * The dataset_id on the URL doesn't exist or someone has tried to access a dataset without having the right.
    * * ResultWindowTooHigh
      * The search API is paginated with an offset and a response size. You can't access more than ~10k results. If you want more than 10k results you'll probably want to use the download API.
