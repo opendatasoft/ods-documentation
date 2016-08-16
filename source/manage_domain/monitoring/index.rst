@@ -614,15 +614,22 @@ OpenDataSoft's Google Analytics integration tracks the following views:
 Analyzing domain activity
 =========================
 
-Domain Activity
----------------
+Backoffice
+----------
 
 The activity log allows the domain administrator to monitor domain configuration activity.
 
 To access the activity log, simply go to the *Domain > Monitoring > Activity log* page.
 
-.. image:: activity-log-en.jpg
-   :alt: Activity log
+.. ifconfig:: language == 'en'
+
+    .. image:: activity-log-en.jpg
+        :alt: Backoffice
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: activity-log-fr.jpg
+        :alt: Backoffice
 
 As in the API monitoring page, you can access the full activity log dataset by hitting the upper right link
 **See more**.
