@@ -1,9 +1,6 @@
 Monitoring a Domain
 ===================
 
-Analyzing audience
-------------------
-
 There are three main views to analyze your domain, trying to answer three different questions:
 
 - Users: who are the people using your data and with which intensity?
