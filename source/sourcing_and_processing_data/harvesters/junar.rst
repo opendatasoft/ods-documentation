@@ -1,8 +1,8 @@
 :orphan: true
 
-Ckan harvester
+Junar harvester
 ==============
-Get the dataset from an CKAN portal
+Get the dataset from a Junar portal
 Parameters
 ----------
 
