@@ -1,4 +1,4 @@
-Integrating Content
+Integrating content
 ===================
 
 Sharing content
