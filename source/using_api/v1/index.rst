@@ -1,5 +1,5 @@
-ODS API V1
-==========
+ODS API V1 (deprecated)
+=======================
 
 Search
 ------
