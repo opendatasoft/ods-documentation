@@ -1,2 +1,2 @@
-Styling a page with CSS
-=======================
+Customize a content page with CSS
+=================================

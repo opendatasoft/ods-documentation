@@ -1,15 +1,16 @@
 Editing pages
 =============
 
-Not only the OpenDataSoft platform allows you to browse and explore configured datasets. You can also use it to build
-fully customized content pages, mixing editorial content as well as data visualizations built from your domain's
+The OpenDataSoft platform allows you to publish and explore datasets, but you can also use it to build
+fully customized content pages, mixing editorial content as well as data visualizations built from your own
 datasets.
 
 Content pages can be used to:
 
-* Complement and organize your data portal by configuring a home page and by adding topic specific pages.
-* Build editorial content directly on the platform and publish it on the Web, as a direct link or through an embed.
-* Build dynamic dashboards
+* Complement and organize your data portal by configuring a home page and by creating pages on specific topics (your project,
+  the data license...).
+* Write editorial content directly on the platform and share it, as a direct link or through an embed.
+* Build advanced dashboards with dynamic visualizations on your portal, and share them.
 
 .. toctree::
    :maxdepth: 2
@@ -18,3 +19,4 @@ Content pages can be used to:
    style
    html
    integrate_content
+   dashboard

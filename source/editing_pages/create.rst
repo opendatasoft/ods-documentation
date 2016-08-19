@@ -1,4 +1,4 @@
-Creating a new page
+Creating a simple  content page
 ===================
 
 To create a new content page, go to the *Domain > Portal > Pages* section.
