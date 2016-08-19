@@ -5,6 +5,6 @@ Exploring the catalog and datasets
    :maxdepth: 2
 
    catalog
+   dataset
    dataset_updates
-   search
    export
