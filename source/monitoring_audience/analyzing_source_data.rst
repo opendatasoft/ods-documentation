@@ -1,57 +1,10 @@
-Reviewing admin log
-===================
-
-Activity Log
-------------
-
-The activity log allows the domain administrator to monitor domain configuration activity.
-
-To access the activity log, simply go to the *Domain > Monitoring > Activity log* page.
-
-.. image:: admin_log__activity-log--en.jpg
-    :alt: Activity log
-
-As in the API monitoring page, you can access the full activity log dataset by hitting the upper right link
-**See more**.
-
-The activity log dataset contains the following fields.
-
-.. list-table::
-    :header-rows: 1
-
-   * * Field name
-     * Description
-   * * timestamp
-     * Action timestamp
-   * * dataset_id
-     * Id of the dataset if the action is relative to a specific dataset
-   * * user_id
-     * Identifier of the event owner
-   * * action
-     * Action name (one of **publish_dataset**, **add_dataset**, **edit_dataset**, **delete_dataset**)
-
-
-
-APIs Monitoring
----------------
-
-OpenDataSoft users API calls are natively monitored by OpenDataSoft, giving to administrators a deep understanding of how their datasets are used.
-
-While the Google Analytics integration gives an overview of how the domain web site is used (viewed pages), API
-monitoring registers any API call, may it come from a web page or from a mobile application.
-
-A basic dashboard is then made available from the *Domain > Monitoring > API* link.
-
-.. image:: admin_log__api-monitoring--en.jpg
-    :alt: An API Monitoring Dashboard
-
-And monitoring data can be explored with the standard OpenDataSoft dataset exploration view by hitting the upper right
-link **See more**.
+Analyzing Source Data
+~~~~~~~~~~~~~~~~~~~~~
 
 You'll find below the list of fields available in the API monitoring dataset.
 
 .. list-table::
-    :header-rows: 1
+   :header-rows: 1
 
    * * Field name
      * Field Description
@@ -143,12 +96,13 @@ You'll find below the list of fields available in the API monitoring dataset.
 
 
 API names for OpenDataSoft APIv1
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 The **api** field for OpenDataSoft APIv1 (ods_v1) contains one of the following values.
 
 .. list-table::
-    :header-rows: 1
+   :header-rows: 1
 
    * * API name
      * Description
@@ -195,12 +149,12 @@ The **api** field for OpenDataSoft APIv1 (ods_v1) contains one of the following 
 
 
 API names for ODATA API
-~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^
 
 The **api** field for ODATA API contains one of the following values.
 
 .. list-table::
-    :header-rows: 1
+   :header-rows: 1
 
    * * API name
      * Description
@@ -228,12 +182,12 @@ The **api** field for ODATA API contains one of the following values.
      * api/odata/<dataset_id>/$count/
 
 API names for OpenDataSoft APIv2
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The **api** field for OpenDataSoft APIv2 (ods_v2) contains one of the following values.
 
 .. list-table::
-    :header-rows: 1
+  :header-rows: 1
 
   * * API name
     * Description
@@ -285,7 +239,7 @@ monitoring layer and made available in the field **custom_attributes**.
 The **embed type** field describes the type of embed which generated the query, when relevant.
 
 .. list-table::
-    :header-rows: 1
+   :header-rows: 1
 
    * * Embed type
      * Description
@@ -301,4 +255,3 @@ The **embed type** field describes the type of embed which generated the query, 
      * Explore tab embed
    * * explore-images
      * Images tab embed
-
