@@ -18,6 +18,8 @@ On this example, the card is split in two parts. On the left part, there is a th
 
 Like most of the catalog's elements, this card is fully customizable.
 
+.. _filtering-catalog:
+
 Filtering the catalog
 ---------------------
 
@@ -36,10 +38,22 @@ Type the searched text in the box and click on the magnifying glass pictogram to
 Geographic search
 ~~~~~~~~~~~~~~~~~
 
+Datasets are often closely related to a geographic area, be it a country, a city, a district, etc.
+
 The map filters the list by location. It will only show datasets that contain geographic data (geopoints or geoshapes mainly) inside the selected rectangle on the map.
 
-.. image:: img/filters_map.png
-   :alt: Geographic search
+.. ifconfig:: language == 'en'
+
+   .. figure:: img/geographic_search__explore--en.png
+
+      The mini-map used for filtering on the catalog page.
+
+.. ifconfig:: language == 'fr'
+
+   .. figure:: img/geographic_search__explore--fr.png
+
+      The mini-map used for filtering on the catalog page.
+
 
 Click on the little rectangle button on the top left of the map to select the drawing tool, and draw a rectangle on the area you want on the map to activate the filter. To cancel a selection, just click on the rectangle button again.
 
