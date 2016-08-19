@@ -1,14 +1,20 @@
 Creating new datasets
 =====================
 
-Uploading data
---------------
+.. ifconfig:: language == 'en'
 
-Harvesting data
----------------
+    .. image:: create_processing--en.png
+        :alt: Processing schema
 
-Pushing realtime data
----------------------
+.. ifconfig:: language == 'fr'
 
-Using CSW & WFS
----------------
+    .. image:: create_processing--fr.png
+        :alt: Schema
+
+
+.. toctree::
+   :maxdepth: 2
+
+   federation
+   uploading_data
+   harvesters
