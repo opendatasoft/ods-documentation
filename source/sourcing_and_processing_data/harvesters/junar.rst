@@ -1,7 +1,7 @@
 :orphan: true
 
 Junar harvester
-==============
+===============
 Get the dataset from a Junar portal
 Parameters
 ----------

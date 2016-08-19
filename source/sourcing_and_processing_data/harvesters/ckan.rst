@@ -1,7 +1,7 @@
 :orphan: true
 
 CKAN harvester
-================
+==============
 Get the dataset from a CKAN portal
 Parameters
 ----------
