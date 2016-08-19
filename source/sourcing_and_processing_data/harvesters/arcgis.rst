@@ -1,3 +1,5 @@
+:orphan: true
+
 Arcgis harvester
 ================
 Get the data from an Arcgis WebServer (FIXME).

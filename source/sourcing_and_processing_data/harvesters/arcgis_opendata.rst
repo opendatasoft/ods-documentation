@@ -1,3 +1,5 @@
+:orphan: true
+
 Arcgis OpenData harvester
 =========================
 Get the dataset from an Arcgis OpenData portal

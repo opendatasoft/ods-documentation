@@ -1,5 +1,7 @@
+:orphan: true
+
 CSW harvester
-================
+=============
 Synchronized an CSW catalogue with your portal
 
 The CSW server must provide the following capabilities:
