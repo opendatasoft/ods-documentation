@@ -8,9 +8,7 @@ Sourcing and processing data
    qualify
    processing
    metadata
-   visualizations
+   configuring_visualizations/index
    publish
    security
    feedback
-
-
