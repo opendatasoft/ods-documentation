@@ -8,7 +8,7 @@ Dim rCell As Range
 Dim rRng As Range
 
 Dim outputFilePath, outputFile, outputFilename As String
-outputFilename = "test.txt"
+outputFilename = "rst_table.txt"
 outputFilePath = Application.ActiveWorkbook.Path
 outputFile = FreeFile
 Open outputFilename For Output As #outputFile
