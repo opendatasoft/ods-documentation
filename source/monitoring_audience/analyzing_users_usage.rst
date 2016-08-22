@@ -1,5 +1,5 @@
 Analyzing users usage
-~~~~~~~~~~~~~~~~~~~~~
+=====================
 
 Go to the *Analytics > Users* page.
 

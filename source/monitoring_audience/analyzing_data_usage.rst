@@ -1,5 +1,5 @@
 Analyzing data usage
-~~~~~~~~~~~~~~~~~~~~
+====================
 
 Go to the *Analytics > Data* page.
 

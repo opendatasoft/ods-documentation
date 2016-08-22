@@ -1,5 +1,5 @@
 Analyzing Source Data
-~~~~~~~~~~~~~~~~~~~~~
+=====================
 
 You'll find below the list of fields available in the API monitoring dataset.
 
@@ -96,7 +96,7 @@ You'll find below the list of fields available in the API monitoring dataset.
 
 
 API names for OpenDataSoft APIv1
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------
 
 
 The **api** field for OpenDataSoft APIv1 (ods_v1) contains one of the following values.
@@ -182,7 +182,7 @@ The **api** field for ODATA API contains one of the following values.
      * api/odata/<dataset_id>/$count/
 
 API names for OpenDataSoft APIv2
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------
 
 The **api** field for OpenDataSoft APIv2 (ods_v2) contains one of the following values.
 

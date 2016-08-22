@@ -1,5 +1,5 @@
 Google Analytics
-----------------
+================
 
 When OpenDataSoft allows you to monitor the data and API usage, the Google Analytics integration allows you to track the visits on your domain.
 

@@ -1,5 +1,5 @@
 Quotas
-------
+======
 
 Go to the *Analytics > Quotas* page.
 

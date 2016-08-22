@@ -1,5 +1,5 @@
 Analyzing actions usage
-~~~~~~~~~~~~~~~~~~~~~~~
+=======================
 
 Go to the *Analytics > Actions* page.
 
@@ -103,7 +103,7 @@ There are eight indicators :
 
 
 API calls Errors
-^^^^^^^^^^^^^^^^
+----------------
 
 In most cases you won't be able to do anything. Anyway we want to be transparent on your users' usage.
 
