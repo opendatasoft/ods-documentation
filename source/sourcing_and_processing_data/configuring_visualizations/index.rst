@@ -4,7 +4,9 @@ Configuring visualizations
 .. toctree::
    :maxdepth: 2
 
+   table
    map
-   chart
+   image
+   analyze
    calendar
    tooltip

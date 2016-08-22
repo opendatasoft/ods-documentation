@@ -1,5 +1,5 @@
-Displaying data on a calendar
------------------------------
+Configuring the calendar
+========================
 
 The OpenDataSoft platform lets you easily create calendar views from your published datasets.
 
@@ -16,7 +16,7 @@ The OpenDataSoft platform lets you easily create calendar views from your publis
        A calendar built from a dataset containing all events from OpenAgenda
 
 Datasets requirements
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 For the calendar view, each record of your dataset is a different event. These events must contain a start time, an end
 time and a title. Which means your dataset must have two datetime fields and a text field for the calendar view to be
@@ -38,16 +38,16 @@ Records without titles will be displayed on the calendar as titleless events, bu
 will cause the view to simply ignore the record.
 
 Full day events
-^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~
 
 Though very simple, the "two datetime fields and a text field" requirement forces you to setup full day events as events ~
 starting at 12AM on the given day and finishing a second before midnight on the same day (00:00:00 to 23:59:59).
 
 Configuration
-~~~~~~~~~~~~~
+-------------
 
 Enabling the calendar view
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Once you have configured two of your dataset's fields as datetimes and another field as text, you'll see the calendar
 tab become available.
@@ -88,7 +88,7 @@ have to manually enable it.
        This checkbox will enable the calendar view
 
 Setting up events' fields
-~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------
 
 Once the calendar is enabled, you'll need to make sure the events' fields are well configured. You'll see that the first
 text field has been selected for the title, the first datetime for the start time and the second datetime for the end
@@ -118,17 +118,17 @@ This is also where you'll be able to select the events' color.
        Corrected settings
 
 Setting up the tooltip
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 In the calendar view, a click on a event will bring forward a tooltip containing more information about the events.
 
 .. image:: calendar__tooltip--en.jpg
-        :alt: Quotas
+        :alt: Calendar tooltip
 
 You can :doc:`configure the tooltip</sourcing_and_processing_data/configuring_visualizations/tooltip>` in exactly the same way than for the map or the images. 
 
 Sharing
-~~~~~~~
+-------
 
 Once your dataset is correctly setup and published, you can of course share this calendar with anyone having the rights
 to view the calendar.
