@@ -18,3 +18,4 @@ Creating new datasets
    federation
    uploading_data
    harvesters
+   realtime
