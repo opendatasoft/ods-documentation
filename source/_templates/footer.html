@@ -91,7 +91,6 @@
     <style>
         .emoji {
             margin-right: 0.33em;
-            content: attr('hex')
         }
         .slack-feedback {
             text-align: center;
@@ -135,7 +134,7 @@
 
             var sendMessage = function (message) {
                 var request = new XMLHttpRequest();
-                request.open('POST', 'http://public.ods.com:8000/slack_feedback/', true);
+                request.open('POST', 'https://data.opendatasoft.com/slack_feedback/', true);
                 request.send(JSON.stringify({
                     'origin': window.location.href,
                     'message': message,
