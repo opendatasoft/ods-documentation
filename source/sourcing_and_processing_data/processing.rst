@@ -1,345 +1,222 @@
 Processing datasets
 ===================
 
-.. ifconfig:: language == 'en'
+Field processors
+-----------------
 
-   .. raw:: html
+Add a Field
+~~~~~~~~~~~
 
-      <iframe src="https://player.vimeo.com/video/81835519" width="500" height="252" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-.. ifconfig:: language == 'fr'
-
-   .. raw:: html
-
-      <iframe src="https://player.vimeo.com/video/81891386" width="500" height="252" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-Geocoding positions
--------------------
-
-.. image:: processing__geo--en.jpg
-    :alt: Geo Processors
-
-Normalize Projection Reference
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This processor can be used to handle a **Geo Point 2D** with a projection system different from
-`WGS84 <http://en.wikipedia.org/wiki/WGS_84>`_ field. It takes as a parameter the name of the field as well as the
-`EPSG <http://spatialreference.org/ref/epsg/>`_ code of the source coordinates system. The field's value is replaced
-with its WGS84 representation.
-
-For instance, if you set the EPSG code to ``27572``, the processor will consider that the original geo field contains
-coordinates expressed in `Lambert Zone II <http://spatialreference.org/ref/epsg/ntf-paris-lambert-zone-ii/>`_.
-
-Note that the input must be expressed with the same logic as a WGS84 geo coordinate: ``Y,X``.
-
-Country Code to Geo Coordinates
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This processor uses a country `ISO code <http://en.wikipedia.org/wiki/ISO_3166-1>`_ to produce a geo coordinate.
-
-Zip Code to Geo Coordinates
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This processor uses a post code to produce a geo coordinate. It is currently only implemented for French post codes.
-
-INSEE Code to Geo Coordinates
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This processor uses French INSEE code to produce a geo coordinate.
-
-Convert Degrees
-~~~~~~~~~~~~~~~
-
-This processor converts a degrees, minutes, seconds geo coordinate to a standard geo coordinate.
-
-The following formats can be converted:
-
-- 48° 51′ 24″ Nord2° 21′ 07″ Est
-- 48° 51′ 24″N 2° 21′ 07″ E
-- 48° 51′ 24″ 2° 21′ 07″
-- +48° 51′ 24″ +2° 21′ 07″
-- N48° 51′ 24″ E2° 21′ 07″
-- 48°;2°
-
-The signs can be:
-
-.. list-table::
-    :header-rows: 1
-
-   * * Type
-     * Signs
-   * * North/South
-     * +, -, N, S, Nord, North, Sud, South
-   * * East/West
-     * +, -, E, O, W, Est, East, Ouest, West
-   * * Coordinate separator
-     * ' ', ';', '/'
-   * * Degree mark
-     * '°', '^', '*'
-   * * Minute mark
-     * "'", '′'
-   * * Second mark
-     * '"', '″'
-
-IP Address to Geo Coordinates
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This processor allows you to geocode an IP address. It uses the `GeoIP <http://geolite.maxmind.com>`_ database.
-
-Geocode with Google
-~~~~~~~~~~~~~~~~~~~
-
-This processor allows you to geocode full text addresses by using the Google geocoding API. You need to possess a
-Google API key to do so. This processor is not activated by default. Please contact the OpenDataSoft support team if
-you plan to use it.
-
-Geocode with ArcGIS
-~~~~~~~~~~~~~~~~~~~
-
-This processor allows you to geocode full text addresses by using the ArcGIS geocoding API. You need to possess an
-ArcGIS API key to do so. This processor is not activated by default. Please contact the OpenDataSoft support team if
-you plan to use it.
-
-Joining different datasets
---------------------------
-
-This processor allows to you to Join two datasets together. Think about the classical database join.
-
-Let's take an example. You have two datasets:
-
-**First dataset**: The list of taxi stations in Paris.
-
-.. list-table::
-    :header-rows: 1
-
-   * * station_id
-     * station_name
-     * station_address
-   * * 1
-     * Tour Eiffel
-     * 69 quai Branly, 75007 Paris
-   * * 2
-     * Rennes - Montparnasse
-     * 1 place du dix huit Juin 1940, 75006 Paris
-
-The name of this dataset is **paris_taxis_stations**.
-
-**Second dataset**: The number of taxis waiting per station in Paris.
-
-.. list-table::
-    :header-rows: 1
-
-   * * station_id
-     * number
-   * * 1
-     * 10
-   * * 2
-     * 15
-
-The Join processor allows you to enrich the second dataset with colums coming from the first dataset.
-
-**Resulting dataset after a Join**
-
-.. list-table::
-    :header-rows: 1
-
-   * * station_id
-     * number
-     * station_name
-     * station_address
-   * * 1
-     * 10
-     * Tour Eiffel
-     * 69 quai Branly, 75007 Paris
-   * * 2
-     * 15
-     * Rennes - Montparnasse
-     * 1 place du dix huit Juin 1940, 75006 Paris
+Manually add an empty field to the dataset. It can be filled by other processors.
 
 It takes the following parameters:
 
-* **Dataset**
-
-   The dataset used for the join; you can select it from your own datasets,
-   or from OpenDataSoft's network of datasets.
-
-* **Local Key**
-
-   The local field that will be used to identify the corresponding records in the remote dataset. More than one key can
-   be specified.
-
-* **Remote Key**
-
-   The remote field corresponding to the local key. This can be a list.
-
-* **Output Fields**
-
-   The list of fields to retrieve.
-
-* **Retrieve All Fields**
-
-   Set to retrieve all the fields of the remote dataset.
-
-* **Case Sensitive**
-
-* **One line**
-
-   In some specific cases, the remote dataset may contain more than one row matching the local key. In which case, you
-   may want to either collapse duplicates (that is, generate a single row which will contain multi-valued fields) or
-   not. If this parameter is set, you can specify the character to use to separate values in the generated field in
-   the **Separator** parameter.
-
-Let's take an example and assume that the first dataset contains two rows for the first station:
-
 .. list-table::
-    :header-rows: 1
+  :header-rows: 1
 
-   * * station_id
-     * station_name
-     * station_address
-   * * 1
-     * Tour Eiffel
-     * 69 quai Branly, 75007 Paris
-   * * 1
-     * Quai Branly
-     * 69 quai Branly, 75007 Paris
-   * * 2
-     * Rennes - Montparnasse
-     * 1 place du dix huit Juin 1940, 75006 Paris
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Field
+    * The field name
+    * String
+    * yes
 
-If **One line** is set (with **Separator** set to `|`), the Join will result in:
-
-.. list-table::
-    :header-rows: 1
-
-   * * station_id
-     * number
-     * station_name
-     * station_address
-   * * 1
-     * 10
-     * Tour Eiffel&#124;Quai Branly
-     * 69 quai Branly, 75007 Paris&#124;69 quai Branly, 75007 Paris
-   * * 2
-     * 15
-     * Rennes - Montparnasse
-     * 1 place du dix huit Juin 1940, 75006 Paris
-
-If **One line** is not set, the Join will result in:
-
-.. list-table::
-    :header-rows: 1
-
-   * * station_id
-     * number
-     * station_name
-     * station_address
-   * * 1
-     * 10
-     * Tour Eiffel
-     * 69 quai Branly, 75007 Paris
-   * * 1
-     * 10
-     * Quai Branly
-     * 69 quai Branly, 75007 Paris
-   * * 2
-     * 15
-     * Rennes - Montparnasse
-     * 1 place du dix huit Juin 1940, 75006 Paris
-
-This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will
-activate it for you.
-
-Modifying date format
----------------------
-
-.. image:: processing__date--en.jpg
-    :alt: Date Processors
-
-Set Timezone
+Copy a Field
 ~~~~~~~~~~~~
 
-This processor can be used to force the timezone of a datetime field. This might be useful when, for instance, the
-source outputs timestamps with no timezone indication.
+Copy a field value into another field.
 
-Normalize Date
-~~~~~~~~~~~~~~
-
-Date normalization is one of the most commonly used processors. It allows you to parse a date in a format that would
-otherwise not be understood by the platform.
-
-Simply specify the date format pattern to use in the **Date format** parameter.
-
-A pattern is an arbitrary string containing one of the following directives.
+It takes the following parameters:
 
 .. list-table::
-    :header-rows: 1
+  :header-rows: 1
 
-   * * Directive
-     * Meaning
-     * Example
-   * * %a
-     * Weekday as locale’s abbreviated name.
-     * Sun, Mon, ..., Sat
-   * * %A
-     * Weekday as locale’s full name.
-     * Sunday, Monday, ..., Saturday
-   * * %w
-     * Weekday as a decimal number, where 0 is Sunday and 6 is Saturday.
-     * 0, 1, ..., 6
-   * * %d
-     * Day of the month as a zero-padded decimal number.
-     * 01, 02, ..., 31
-   * * %b
-     * Month as locale’s abbreviated name.
-     * Jan, Feb, ..., Dec
-   * * %B
-     * Month as locale’s full name.
-     * January, February, ..., December
-   * * %m
-     * Month as a zero-padded decimal number.
-     * 01, 02, ..., 12
-   * * %y
-     * Year without century as a zero-padded decimal number.
-     * 00, 01, ..., 99
-   * * %Y
-     * Year with century as a decimal number.
-     * 1970, 1988, 2001, 2013
-   * * %H
-     * Hour (24-hour clock) as a zero-padded decimal number.
-     * 00, 01, ..., 23
-   * * %I
-     * Hour (12-hour clock) as a zero-padded decimal number.
-     * 01, 02, ..., 12
-   * * %p
-     * Locale’s equivalent of either AM or PM.
-     * AM, PM
-   * * %M
-     * Minute as a zero-padded decimal number.
-     * 00, 01, ..., 59
-   * * %S
-     * Second as a zero-padded decimal number.
-     * 00, 01, ..., 59
-   * * %f
-     * Microsecond as a decimal number, zero-padded on the left.
-     * 000000, 000001, ..., 999999
-   * * %j
-     * Day of the year as a zero-padded decimal number.
-     * 001, 002, ..., 366
-   * * %U
-     * Week number of the year (Sunday as the first day of the week) as a zero padded decimal number. All days in a new year preceding the first Sunday are considered to be in week 0.
-     * 00, 01, ..., 53
-   * * %W
-     * Week number of the year (Monday as the first day of the week) as a decimal number. All days in a new year preceding the first Monday are considered to be in week 0.
-     * 00, 01, ..., 53
+  * * Label
+    * Type
+    * Mandatory
+  * * Field to copy
+    * Field
+    * yes
+  * * New field
+    * Field
+    * yes
 
-For the directives %a, %A, %b, %B and %p, we only support representations of their values in the locale *en_US*.
+Delete record by ID
+~~~~~~~~~~~~~~~~~~~
 
-Numerical Processors
+Send a delete order to remove an existing record of the dataset based on the unique ID.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+    * Default value
+  * * Field
+    * Field that contains the value to test
+    * Field
+    * yes
+    *
+  * * Value to skip
+    * Value that means the record must be deleted
+    * Expression
+    * no
+    * None
+  * * Exact match
+    * Unchecked: the field must contain the value. Checked: must be an exact match.
+    * Boolean
+    * no
+    * True
+
+Skip Records
+~~~~~~~~~~~~
+
+Skip all records for which the specified field matches the specified value.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+    * Default value
+  * * Field
+    * Name of the field
+    * Field
+    * yes
+    *
+  * * Value to skip
+    *
+    * Expression
+    * no
+    * None
+  * * Exact match
+    * Unchecked: the field must contain the value. Checked: must be an exact match.
+    * Boolean
+    * no
+    * Checked
+
+Transpose Fields
+~~~~~~~~~~~~~~~~
+
+This processor makes it possible to transform field names into field values.
+
+Let's take a simple example, with a dataset containing for a couple of countries the evolution of the number of inhabitants from 2020 to 2030.
+
+The dataset initially looks like this:
+
+.. list-table::
+   :header-rows: 1
+
+   * * Country name
+     * 2020
+     * 2030
+     * 2050
+   * * France
+     * 70 000 000
+     * 80 000 000
+     * 100 000 000
+   * * UK
+     * 65 000 000
+     * 70 000 000
+     * 90 000 000
+   * * USA
+     * 350 000 000
+     * 400 000 000
+     * 450 000 000
+
+Publishing this dataset as is would make it difficult to draw meaningful visualizations for instance.
+
+Let's have a look at an alternative way to represent this dataset.
+
+.. list-table::
+   :header-rows: 1
+
+   * * Country Name
+     * Year
+     * Inhabitants
+   * * France
+     * 2020
+     * 70 000 000
+   * * UK
+     * 2020
+     * 65 000 000
+   * * USA
+     * 2020
+     * 350 000 000
+   * * France
+     * 2030
+     * 80 000 000
+   * * UK
+     * 2030
+     * 70 000 000
+   * * USA
+     * 2030
+     * 400 000 000
+   * * France
+     * 2050
+     * 100 000 000
+   * * UK
+     * 2050
+     * 90 000 000
+   * * USA
+     * 2050
+     * 450 000 000
+
+With this representation, it becomes easy to build subsets of the dataset using facets based filtering mechanism.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+    * Default value
+  * * Fixed fields
+    * List of fields that must be kept as is. (e.g *Country Name*)
+    * List
+    * yes
+    *
+  * * Invert fixed fields
+    *
+    * Boolean
+    * no
+    *
+  * * Label for title column
+    * Label of the new column containing the names of fields that have been transposed (e.g *Year*)
+    * String
+    * yes
+    *
+  * * Label for value column
+    * Label of the new column containing the former cell values (e.g *Inhabitants*)
+    * String
+    * yes
+    * value
+  * * One line
+    * Don't split records in several lines for each possible value, but use a separator to put all possible values in the value column.
+    * Boolean
+    * no
+    *
+  * * Separator
+    * The separator used by the "One line" option
+    * String
+    * no
+    * /
+
+Numerical processors
 --------------------
-
-.. image:: processing__num--en.jpg
-    :alt: Num Processors
 
 Expression
 ~~~~~~~~~~
@@ -359,7 +236,7 @@ In expression mode, strings must be double quoted (``"foo"``).
 The following unary, binary and ternary operators are available:
 
 .. list-table::
-    :header-rows: 1
+   :header-rows: 1
 
    * * Operator type
      * Operators
@@ -374,7 +251,7 @@ The following unary, binary and ternary operators are available:
 Examples:
 
 .. list-table::
-    :header-rows: 1
+   :header-rows: 1
 
    * * Expression
      * Result
@@ -400,7 +277,7 @@ Examples:
 A rich set of functions is also available
 
 .. list-table::
-    :header-rows: 1
+   :header-rows: 1
 
    * * Function type
      * Functions
@@ -416,7 +293,7 @@ A rich set of functions is also available
 Examples:
 
 .. list-table::
-    :header-rows: 1
+   :header-rows: 1
 
    * * Expression
      * Result
@@ -485,29 +362,579 @@ Examples:
    * * add_months("2014-11-14", "3")
      * 2015-02-14
 
-Text Processors
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Type
+    * Mandatory
+  * * Expression
+    * Expression
+    * yes
+  * * Output field
+    * Field
+    * yes
+
+Date processors
 ---------------
 
-.. image:: processing__text--en.jpg
-    :alt: Text Processors
+Normalize Date
+~~~~~~~~~~~~~~~
 
-Replace Regexp
-~~~~~~~~~~~~~~
+Date normalization is one of the most commonly used processors. It allows you to parse a date in a format that would otherwise not be understood by the platform.
+
+Simply specify the date format pattern to use in the **Date format** parameter.
+
+A pattern is an arbitrary string containing one of the following directives.
+
+.. list-table::
+   :header-rows: 1
+
+   * * Directive
+     * Meaning
+     * Example
+   * * %a
+     * Weekday as locale’s abbreviated name.
+     * Sun, Mon, ..., Sat
+   * * %A
+     * Weekday as locale’s full name.
+     * Sunday, Monday, ..., Saturday
+   * * %w
+     * Weekday as a decimal number, where 0 is Sunday and 6 is Saturday.
+     * 0, 1, ..., 6
+   * * %d
+     * Day of the month as a zero-padded decimal number.
+     * 01, 02, ..., 31
+   * * %b
+     * Month as locale’s abbreviated name.
+     * Jan, Feb, ..., Dec
+   * * %B
+     * Month as locale’s full name.
+     * January, February, ..., December
+   * * %m
+     * Month as a zero-padded decimal number.
+     * 01, 02, ..., 12
+   * * %y
+     * Year without century as a zero-padded decimal number.
+     * 00, 01, ..., 99
+   * * %Y
+     * Year with century as a decimal number.
+     * 1970, 1988, 2001, 2013
+   * * %H
+     * Hour (24-hour clock) as a zero-padded decimal number.
+     * 00, 01, ..., 23
+   * * %I
+     * Hour (12-hour clock) as a zero-padded decimal number.
+     * 01, 02, ..., 12
+   * * %p
+     * Locale’s equivalent of either AM or PM.
+     * AM, PM
+   * * %M
+     * Minute as a zero-padded decimal number.
+     * 00, 01, ..., 59
+   * * %S
+     * Second as a zero-padded decimal number.
+     * 00, 01, ..., 59
+   * * %f
+     * Microsecond as a decimal number, zero-padded on the left.
+     * 000000, 000001, ..., 999999
+   * * %j
+     * Day of the year as a zero-padded decimal number.
+     * 001, 002, ..., 366
+   * * %U
+     * Week number of the year (Sunday as the first day of the week) as a zero padded decimal number. All days in a new year preceding the first Sunday are considered to be in week 0.
+     * 00, 01, ..., 53
+   * * %W
+     * Week number of the year (Monday as the first day of the week) as a decimal number. All days in a new year preceding the first Monday are considered to be in week 0.
+     * 00, 01, ..., 53
+
+For the directives %a, %A, %b, %B and %p, we only support representations of their values in the locale *en_US*.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Field
+    * Field containing the date
+    * Field
+    * yes
+  * * Date format
+    *
+    * String
+    * yes
+
+Set Timezone
+~~~~~~~~~~~~
+
+This processor can be used to force the timezone of a datetime field. This might be useful when, for instance, the source outputs timestamps with no timezone indication.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+    * Default value
+  * * Field
+    * Field containing the date
+    * Field
+    * yes
+    *
+  * * Timezone
+    *
+    * String
+    * yes
+    *
+
+Geographical processors
+-----------------------
+
+Country Code to Geo Coordinates
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This processor uses a country ISO code to produce a geo coordinate.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Country iso code
+    * The field containing the country ISO code
+    * Field
+    * yes
+  * * Output field
+    * Name of the field that will contain the WGS84 coordinate
+    * Field
+    * yes
+
+Coordinates system conversion
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This processor converts a degrees, minutes, seconds geo coordinate to a standard geo coordinate.
+
+The following formats can be converted:
+
+- 48° 51′ 24″ Nord2° 21′ 07″ Est
+- 48° 51′ 24″N 2° 21′ 07″ E
+- 48° 51′ 24″ 2° 21′ 07″
+- +48° 51′ 24″ +2° 21′ 07″
+- N48° 51′ 24″ E2° 21′ 07″
+- 48°;2°
+
+The signs can be:
+
+.. list-table::
+   :header-rows: 1
+
+   * * Type
+     * Signs
+   * * North/South
+     * +, -, N, S, Nord, North, Sud, South
+   * * East/West
+     * +, -, E, O, W, Est, East, Ouest, West
+   * * Coordinate separator
+     * ' ', ';', '/'
+   * * Degree mark
+     * '°', '^', '*'
+   * * Minute mark
+     * "'", '′'
+   * * Second mark
+     * '"', '″'
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Coordinates
+    * Field that contains the coordinates
+    * Field
+    * yes
+  * * Output field
+    * Name of the field that will contain the WGS84 coordinates
+    * Field
+    * yes
+
+Compute Geo distance
+~~~~~~~~~~~~~~~~~~~~
+
+This processor computes the distance between two coordinates.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Coordinates A
+    *
+    * Field
+    * yes
+  * * Coordinates B
+    *
+    * Field
+    * yes
+  * * Output field
+    * Field that will contain the computed distance
+    * Field
+    * yes
+
+Geomasking
+~~~~~~~~~~
+
+Provides privacy protection by approximating a geographical location within a specific radius.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Field
+    * Field containing the coordinates you want to approximate
+    * Field
+    * yes
+  * * Minimum distance (in meters)
+    *
+    * Double
+    * no
+  * * Maximum distance (in meters)
+    *
+    * Double
+    * no
+
+INSEE Code to Geo Coordinates
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This processor uses a French INSEE code to produce a geo coordinate.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Insee code
+    * Field that contains an INSEE code
+    * Field
+    * yes
+  * * Output field
+    * Field that will contain the produced WSG84 coordinates
+    * Field
+    * yes
+
+IP Address to Geo Coordinates
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This processor allows you to geocode an IP address. It uses the `GeoIP <http://geolite.maxmind.com>`_ database.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * IP address
+    * Field that contains the IP address
+    * Field
+    * yes
+  * * Output field
+    * Field that will contain the produced WSG84 coordinates
+    * Field
+    * yes
+
+Zip Code to Geo Coordinates
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This processor uses a French postal code to produce a geo coordinate.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Postal code
+    * Field that contains a French postal code
+    * Field
+    * yes
+  * * output_field
+    * Field that will contain the produces WSG84 coordinates
+    * Field
+    * yes
+
+Simplify Geo Shape
+~~~~~~~~~~~~~~~~~~
+
+Simplify a geo shape to reduce processing time and dataset size.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Type
+    * Mandatory
+  * * Tolerance (simplification level)
+    * Double
+    * yes
+
+Normalize Projection Reference
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This processor can be used to handle a **Geo Point 2D** with a projection system different from `WGS84 <http://en.wikipedia.org/wiki/WGS_84>`_ field. It takes as a parameter the name of the field as well as the `EPSG <http://spatialreference.org/ref/epsg/>`_ code of the source coordinates system. The field's value is replaced with its WGS84 representation.
+
+For instance, if you set the EPSG code to ``27572``, the processor will consider that the original geo field contains coordinates expressed in `Lambert Zone II <http://spatialreference.org/ref/epsg/ntf-paris-lambert-zone-ii/>`_.
+
+Note that the input must be expressed with the same logic as a WGS84 geo coordinate: ``Y,X``.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+    * Default value
+  * * Field
+    * Field that will be normalized
+    * Field
+    * yes
+    *
+  * * Source epsg code
+    *
+    * String
+    * yes
+    * 4326
+
+Geocode with Google
+~~~~~~~~~~~~~~~~~~~
+
+This processor allows you to geocode full text addresses by using the Google geocoding API. You need to possess a Google API key to do so.
+
+Geocode with ArcGIS
+~~~~~~~~~~~~~~~~~~~
+
+This processor allows you to geocode full text addresses by using the ArcGIS geocoding API. You need to possess an ArcGIS API key to do so.
+
+Text processors
+---------------
+
+Concatenate Text
+~~~~~~~~~~~~~~~~
+
+This processor can be used to concatenate two fields using a separator. You'll need to define the left and right hand sides of the concatenation, as well as the separator and the resulting field.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Type
+    * Mandatory
+  * * Separator
+    * String
+    * no
+  * * Left value
+    * Field
+    * yes
+  * * Right value
+    * Field
+    * yes
+  * * Output field
+    * Field
+    * yes
+
+Normalize URL
+~~~~~~~~~~~~~
+
+This processor can be used to normalize a field value that should contain a valid URL. It can be used for instance when the field's value contains leading or trailing spaces, or does not have any scheme specification (in which case 'http://' is prepended to the field's value).
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Field
+    * Field that contains the URL to normalize
+    * Field
+    * yes
+
+Extract URLs
+~~~~~~~~~~~~
+
+This processor extracts URLs from HTML or text content. It extracts http and https links into a field, the links are separated by a space.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Field
+    * The field that contains HTML or text content
+    * Field
+    * yes
+  * * Output field
+    *
+    * Field
+    * yes
+
+Decode HTML entities
+~~~~~~~~~~~~~~~~~~~~
+
+Decode HTML entities from a text, to transform it into valid HTML.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+    * Default value
+  * * Field
+    *
+    * Field
+    * no
+    *
+  * * All fields
+    *
+    * Boolean
+    * no
+    * False
+
+Replace via Regexp
+~~~~~~~~~~~~~~~~~~
 
 This processor can be used to replace a random regular expression pattern by new content. See
 `<http://en.wikipedia.org/wiki/Regular_expression>`_ for more details on how to write a regular expressions.
 You can test your regexp expressions with an online debugger tool like `Regex101 <https://regex101.com/>`_.
 
-Extract Text
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Field
+    *
+    * Field
+    * no
+  * * All fields
+    *
+    * Boolean
+    * no
+  * * Regular expression
+    *
+    * String
+    * yes
+  * * New value
+    *
+    * String
+    * no
+  * * Case insensitive regular expression
+    *
+    * Boolean
+    * no
+  * * Multiline regular expression
+    *
+    * Boolean
+    * no
+  * * '.' character match newlines
+    *
+    * Boolean
+    * no
+
+Split Text
+~~~~~~~~~~
+
+This processor can be used to split a field's value and to extract the Nth element to a new field.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Field
+    * Field that contains the text to split
+    * Field
+    * yes
+  * * Separator
+    * String or character to split with
+    * String
+    * yes
+  * * Index
+    * Index of the element to extract in the new field
+    * Int
+    * yes
+  * * Output field
+    * Name of the field that will contain the extracted element
+    * Field
+    * yes
+
+Extract text
 ~~~~~~~~~~~~
 
-This processor can be used to extract an arbitrary pattern expressed as a regular expression out of a string using sub
-matching.
+This processor can be used to extract an arbitrary pattern expressed as a regular expression out of a string using sub matching.
 
 The syntax of the sub-matching expression to specify is the following: ``(?P<NAME>REGEXP)``. Where:
 
-* ``NAME`` is the name of a new field which will receive the result of the extraction. This field name can only contain
-  letters, numbers and underscores (special characters like accentuated letters or commas are not allowed).
+* ``NAME`` is the name of a new field which will receive the result of the extraction. This field name can only contain letters, numbers and underscores (special characters like accentuated letters or commas are not allowed).
 * ``REXGEXP`` is the submatch expression
 
 For example, let's assume that you want to extract a street name out of an address. That is, for the address
@@ -530,167 +957,101 @@ And if you want to extract the street number in a field ``street_number``, simpl
 
     (?P<street_number>[0-9]+) (?P<street_name>.*), .*, .*, .*
 
-Normalize URL
-~~~~~~~~~~~~~
+It takes the following parameters:
 
-This processor can be used to normalize a field value that should contain a valid URL. It can be used for instance when
-the field's value contains leading or trailing spaces, or does not have any scheme specification (in which case
-'http://' is prepended to the field's value).
+.. list-table::
+  :header-rows: 1
 
-Split Text
-~~~~~~~~~~
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Field
+    *
+    * Field
+    * yes
+  * * Regular expression
+    *
+    * String
+    * yes
 
-This processor can be used to split a field's value and to extract the Nth element to a new field.
+Replace Text
+~~~~~~~~~~~~
 
-Concatenate Text
-~~~~~~~~~~~~~~~~
+Replace text in a field by a new text.
 
-This processor can be used to concatenate two fields using a separator. You'll need to define the left and right hand
-sides of the concatenation, as well as the separator and the resulting field.
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Field
+    * Field that contains the text to replace
+    * Field
+    * no
+  * * All fields
+    * Checked: all the record's fields will be matched
+    * Boolean
+    * no
+  * * Old value
+    *
+    * String
+    * no
+  * * New value
+    *
+    * String
+    * no
 
 Extract HTML
 ~~~~~~~~~~~~
 
-This processor strips HTML tags from field values.
+This processor strips HTML tags from a field's values to only keep textual content.
 
-Extract URLs
-~~~~~~~~~~~~
-
-This processor extracts URLs from HTML or text content. It extracts http and https links into a field, the links are
-separated by a space.
-
-Field Processors
-----------------
-
-.. image:: processing__fields--en.jpg
-    :alt: Fields Processors
-
-Copy a Field
-~~~~~~~~~~~~
-
-Copy a field value into another field.
-
-Add a Field
-~~~~~~~~~~~
-
-Add a raw new field, that can be filled by other processors.
-
-Skip a Record
-~~~~~~~~~~~~~
-
-Skip a record if one of its fields matches a specific value.
-
-Transpose Fields
-~~~~~~~~~~~~~~~~
-
-This processor makes it possible to transform field names into field values.
-
-Let's take a simple example, with a dataset containing for a couple of countries the evolution of the number of
-inhabitants from 2020 to 2030.
-
-The dataset initially looks like this:
+It takes the following parameters:
 
 .. list-table::
-    :header-rows: 1
+  :header-rows: 1
 
-   * * Country name
-     * 2020
-     * 2030
-     * 2050
-   * * France
-     * 70 000 000
-     * 80 000 000
-     * 100 000 000
-   * * UK
-     * 65 000 000
-     * 70 000 000
-     * 90 000 000
-   * * USA
-     * 350 000 000
-     * 400 000 000
-     * 450 000 000
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+    * Default value
+  * * Field
+    *
+    * Field
+    * yes
+    *
 
-Publishing this dataset as is would make it difficult to draw meaningful visualizations for instance.
+Normalize Unicode values
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-Let's have a look at an alternative way to represent this dataset.
+Normalize unicode content using the Normalization Form Canonical Composition (NFC)
+
+It takes the following parameters:
 
 .. list-table::
-    :header-rows: 1
+  :header-rows: 1
 
-   * * Country Name
-     * Year
-     * Inhabitants
-   * * France
-     * 2020
-     * 70 000 000
-   * * UK
-     * 2020
-     * 65 000 000
-   * * USA
-     * 2020
-     * 350 000 000
-   * * France
-     * 2030
-     * 80 000 000
-   * * UK
-     * 2030
-     * 70 000 000
-   * * USA
-     * 2030
-     * 400 000 000
-   * * France
-     * 2050
-     * 100 000 000
-   * * UK
-     * 2050
-     * 90 000 000
-   * * USA
-     * 2050
-     * 450 000 000
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Fields
+    *
+    * List
+    * no
+  * * All fields
+    * Checked: all the record's fields will be normalized
+    * Boolean
+    * no
 
-With this representation, it becomes super easy to build subsets of the dataset using facets based filtering mechanism.
-
-The **Transpose Fields** processor makes it super easy to configure this kind of transformation.
-
-You'll need to define the following parameters:
-
-* **Fixed fields**
-
-  Defines the list of fields that shall be kept as is. In the above sample, this would have been *Country Name*
-
-* **Label for title column**
-
-  Defines the label of the new column containing the names of the fields that have been transposed. In the above
-  sample, this would have been *Year*.
-
-* **Label for the value column**
-
-  Defines the label of the new column containing the former cell values. This would have been *Inhabitants* in the
-  above sample.
-
-* **One line**
-
-  Make it possible to group / concat transposal results, using a specific **Separator**. With the above sample,
-  activating the One line option and choosing ';' as a separator, th result would have been the following:
-
-.. list-table::
-    :header-rows: 1
-
-   * * Country Name
-     * Year
-     * Inhabitants
-   * * France
-     * 2050;2020;2030
-     * 100 000 000;70 000 000;80 000 000
-   * * UK
-     * 2050;2020;2030
-     * 90 000 000;65 000 000;70 000 000
-   * * USA
-     * 2050;2020;2030
-     * 450 000 000;350 000 000;400 000 000
-
-Extract from Json (Beta - Can be activated on demand)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Extract from Json
+~~~~~~~~~~~~~~~~~
 
 This processor can be used to extract values from a json object.
 
@@ -724,3 +1085,156 @@ For example, let's assume that you have this json object into a text field :
             {"int": 5},
             {"boolean": {} }
         ]
+
+This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will
+activate it for you.
+
+Joining different datasets
+--------------------------
+
+This processor allows to you to join two datasets together the same way a classical database join would.
+
+Let's take an example. You have two datasets:
+
+**First dataset**: The list of taxi stations in Paris.
+
+.. list-table::
+   :header-rows: 1
+
+   * * station_id
+     * station_name
+     * station_address
+   * * 1
+     * Tour Eiffel
+     * 69 quai Branly, 75007 Paris
+   * * 2
+     * Rennes - Montparnasse
+     * 1 place du dix huit Juin 1940, 75006 Paris
+
+The name of this dataset is **paris_taxis_stations**.
+
+**Second dataset**: The number of taxis waiting per station in Paris.
+
+.. list-table::
+   :header-rows: 1
+
+   * * station_id
+     * number
+   * * 1
+     * 10
+   * * 2
+     * 15
+
+The Join processor allows you to enrich the second dataset with colums coming from the first dataset.
+
+**Resulting dataset after a Join**
+
+.. list-table::
+   :header-rows: 1
+
+   * * station_id
+     * number
+     * station_name
+     * station_address
+   * * 1
+     * 10
+     * Tour Eiffel
+     * 69 quai Branly, 75007 Paris
+   * * 2
+     * 15
+     * Rennes - Montparnasse
+     * 1 place du dix huit Juin 1940, 75006 Paris
+
+It takes the following parameters:
+
+* **Dataset**
+
+   The dataset used for the join; you can select it from your own datasets,
+   or from OpenDataSoft's network of datasets.
+
+* **Local Key**
+
+   The local field that will be used to identify the corresponding records in the remote dataset. More than one key can
+   be specified.
+
+* **Remote Key**
+
+   The remote field corresponding to the local key. This can be a list.
+
+* **Output Fields**
+
+   The list of fields to retrieve.
+
+* **Retrieve All Fields**
+
+   Set to retrieve all the fields of the remote dataset.
+
+* **Case Sensitive**
+
+* **One line**
+
+   In some specific cases, the remote dataset may contain more than one row matching the local key. In which case, you
+   may want to either collapse duplicates (that is, generate a single row which will contain multi-valued fields) or
+   not. If this parameter is set, you can specify the character to use to separate values in the generated field in
+   the **Separator** parameter.
+
+Let's take an example and assume that the first dataset contains two rows for the first station:
+
+.. list-table::
+   :header-rows: 1
+
+   * * station_id
+     * station_name
+     * station_address
+   * * 1
+     * Tour Eiffel
+     * 69 quai Branly, 75007 Paris
+   * * 1
+     * Quai Branly
+     * 69 quai Branly, 75007 Paris
+   * * 2
+     * Rennes - Montparnasse
+     * 1 place du dix huit Juin 1940, 75006 Paris
+
+If **One line** is set (with **Separator** set to `|`), the Join will result in:
+
+.. list-table::
+   :header-rows: 1
+
+   * * station_id
+     * number
+     * station_name
+     * station_address
+   * * 1
+     * 10
+     * Tour Eiffel&#124;Quai Branly
+     * 69 quai Branly, 75007 Paris&#124;69 quai Branly, 75007 Paris
+   * * 2
+     * 15
+     * Rennes - Montparnasse
+     * 1 place du dix huit Juin 1940, 75006 Paris
+
+If **One line** is not set, the Join will result in:
+
+.. list-table::
+   :header-rows: 1
+
+   * * station_id
+     * number
+     * station_name
+     * station_address
+   * * 1
+     * 10
+     * Tour Eiffel
+     * 69 quai Branly, 75007 Paris
+   * * 1
+     * 10
+     * Quai Branly
+     * 69 quai Branly, 75007 Paris
+   * * 2
+     * 15
+     * Rennes - Montparnasse
+     * 1 place du dix huit Juin 1940, 75006 Paris
+
+This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will
+activate it for you.
