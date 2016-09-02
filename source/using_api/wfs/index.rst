@@ -1,5 +1,5 @@
-WFS Standard
-============
+WFS API
+=======
 
 .. toctree::
 

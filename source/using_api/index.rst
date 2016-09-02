@@ -7,7 +7,8 @@ Using the API
    introduction
    objects
    authentication
-   query_language
    v1/index
-   v2
+   v2/index
    odata/index
+   csw/index
+   wfs/index

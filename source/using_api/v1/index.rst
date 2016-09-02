@@ -20,5 +20,3 @@ Push
    catalog_api
    records_api
    push_api
-   csw/index
-   wfs/index

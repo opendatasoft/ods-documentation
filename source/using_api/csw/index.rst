@@ -1,5 +1,5 @@
-CSW Standard
-============
+CSW API
+=======
 
 .. toctree::
 
