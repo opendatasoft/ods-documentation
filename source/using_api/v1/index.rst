@@ -1,15 +1,6 @@
 ODS API V1 (deprecated)
 =======================
 
-Search
-------
-
-Analyze
--------
-
-Push
-----
-
 .. toctree::
    :maxdepth: 2
 
