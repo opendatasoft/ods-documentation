@@ -1,2 +1,0 @@
-Structuring content with HTML
-=============================
