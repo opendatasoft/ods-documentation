@@ -21,6 +21,23 @@ data provided by the APIs.
 These APIs allow you to search for datasets, search for data, compute analysis, perform geographic aggregation and much
 more.
 
+Key concepts
+------------
+
+All APIs will provide you access to the same data, only in different ways. It is very important to be familiar with
+the nature of this data before diving the full specification of each API.
+
+Everything within the platform is related through a tree structure. Which means that you can think of OpenDataSoft as
+such:
+
+* The **OpenDataSoft platform** is a network of OpenDataSoft portals.
+* A **portal** provides a **catalog** of all of its **datasets**.
+* Each **dataset** is defined by a dictionary of **metadata**, a **data schema** (specifying fields names and types)
+  and a collection of **records**.
+* Each **record** provides values for each of the dataset's fields.
+
+There are of course many more types of data within the platform, but they are only relevant in very specific contexts.
+
 ODS API V1 or V2?
 -----------------
 

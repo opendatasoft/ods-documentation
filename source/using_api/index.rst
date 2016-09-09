@@ -5,7 +5,6 @@ Using the API
    :maxdepth: 2
 
    introduction
-   objects
    authentication
    v1/index
    v2/index
