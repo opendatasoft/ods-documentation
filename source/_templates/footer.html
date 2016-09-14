@@ -1,0 +1,168 @@
+<footer>
+    {% if next or prev %}
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        {% if next %}
+        <a href="{{ next.link|e }}" class="btn btn-neutral float-right" title="{{ next.title|striptags|e }}"
+           accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        {% endif %}
+        {% if prev %}
+        <a href="{{ prev.link|e }}" class="btn btn-neutral" title="{{ prev.title|striptags|e }}" accesskey="p"><span
+                class="fa fa-arrow-circle-left"></span> Previous</a>
+        {% endif %}
+    </div>
+    {% endif %}
+
+    <hr/>
+
+    <div class="slack-feedback">
+        <div class="slack-feedback__question">
+            <p><span class="emoji">&#x1F914;</span> Was this article helpful?</p>
+
+            <p class="slack-feedback__answers">
+                <button class="btn btn-neutral" id="yes">
+                    All good, thanks!
+                </button>
+                <button class="btn btn-neutral" id="no">
+                    Not really no
+                </button>
+            </p>
+        </div>
+
+        <div class="slack-feedback__thanks">
+            <span class="emoji">&#x1F60A;</span> Great ! Thanks for your feedback.
+        </div>
+
+        <div class="slack-feedback__message-form">
+            <p><span class="emoji">&#x1F61F;</span> Sorry to hear that. Tell us what needs improvement.</p>
+            <p>
+                <textarea placeholder="Write your comment here" class="slack-feedback__message"></textarea>
+            </p>
+            <p>
+                <button class="slack-feedback__send-message btn btn-neutral">
+                    Send feedback
+                </button>
+            </p>
+        </div>
+
+        <div class="slack-feedback__message-sent">
+            <span class="emoji">&#x1F44D;</span> Got it! Thanks for your feedback.
+        </div>
+    </div>
+
+    <hr/>
+
+    <div role="contentinfo">
+        <p>
+            {%- if show_copyright %}
+            {%- if hasdoc('copyright') %}
+            {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{
+            copyright }}.{% endtrans %}
+            {%- else %}
+            {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}
+            {%- endif %}
+            {%- endif %}
+
+            {%- if build_id and build_url %}
+            {% trans build_url=build_url, build_id=build_id %}
+        <span class="build">
+          Build
+          <a href="{{ build_url }}">{{ build_id }}</a>.
+        </span>
+            {% endtrans %}
+            {%- elif commit %}
+            {% trans commit=commit %}
+        <span class="commit">
+          Revision <code>{{ commit }}</code>.
+        </span>
+            {% endtrans %}
+            {%- elif last_updated %}
+            {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
+            {%- endif %}
+
+        </p>
+    </div>
+
+    {%- if show_sphinx %}
+    {% trans %}Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a
+        href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read
+    the Docs</a>{% endtrans %}.
+    {%- endif %}
+
+    <style>
+        .emoji {
+            margin-right: 0.33em;
+        }
+        .slack-feedback {
+            text-align: center;
+            color: #404040;
+        }
+
+        .slack-feedback__thanks,
+        .slack-feedback__message-form,
+        .slack-feedback__message-sent {
+            display: none;
+        }
+        .slack-feedback__thanks {
+            padding: 25px;
+        }
+
+        .slack-feedback__message-form {
+            margin-top: 36px;
+        }
+
+        .slack-feedback__message {
+            width: 100%;
+            height: 100px;
+            font-size: inherit;
+        }
+
+        .slack-feedback__message-sent {
+            padding: 130px 0;
+        }
+    </style>
+
+    <script>
+        (function () {
+            var yesButtonElement = document.getElementById('yes');
+            var noButtonElement = document.getElementById('no');
+            var questionElement = document.getElementsByClassName('slack-feedback__question')[0];
+            var thanksElement = document.getElementsByClassName('slack-feedback__thanks')[0];
+            var messageFormElement = document.getElementsByClassName('slack-feedback__message-form')[0];
+            var messageElement = document.getElementsByClassName('slack-feedback__message')[0];
+            var sendButtonElement = document.getElementsByClassName('slack-feedback__send-message')[0];
+            var messageSentElement = document.getElementsByClassName('slack-feedback__message-sent')[0];
+
+            var sendMessage = function (message) {
+                var request = new XMLHttpRequest();
+                request.open('POST', 'https://data.opendatasoft.com/slack_feedback/', true);
+                request.send(JSON.stringify({
+                    'origin': window.location.href,
+                    'message': message,
+                    'is_documentation': true
+                }));
+            };
+
+            yesButtonElement.onclick = function () {
+                questionElement.style.display = 'none';
+                thanksElement.style.display = 'block';
+                sendMessage('All good, thanks!');
+            };
+
+            noButtonElement.onclick = function () {
+                yesButtonElement.disabled = true;
+                noButtonElement.disabled = true;
+                noButtonElement.classList.remove('btn-neutral');
+                messageFormElement.style.display = 'block';
+
+                sendButtonElement.onclick = function () {
+                    messageFormElement.style.display = 'none';
+                    questionElement.style.display = 'none';
+                    messageSentElement.style.display = 'block';
+
+                    var message = messageElement.value;
+                    sendMessage(message);
+                };
+            };
+        }());
+    </script>
+</footer>
