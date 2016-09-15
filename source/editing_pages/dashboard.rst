@@ -424,5 +424,3 @@ Colorize your KPI - ng-class
 Refine-on-click widgets
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-
-```
