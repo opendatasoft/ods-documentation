@@ -111,7 +111,7 @@ It should looks like this (the map basemap should be different depending on your
 Add a table view
 ~~~~~~~~~~~~~~~~
 
-Now, go to the table view, ``widget``and simply copy and paste again below the map code.
+Now, go to the table view, ``widget`` and simply copy and paste again below the map code.
 
  .. code-block:: html
 
@@ -736,5 +736,3 @@ Colorize your KPI - ng-class
 Refine-on-click widgets
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-
-```
