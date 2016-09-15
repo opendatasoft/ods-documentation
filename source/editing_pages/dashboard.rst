@@ -14,8 +14,9 @@ Basics
  - add a text search form
  - add some filters
  - discover CSS classes for easy responsive development
- - have a deeper look to the "context" 
+ - have a deeper look to the "context"
  - add a record counter
+ - add a download link
  - create some KPIs
 
 Going further : AngularJS and advanced used of Widgets
@@ -398,11 +399,322 @@ Now we can easily search for sport club in Paris !
 Discover CSS classes for easy responsive development
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+This dashboard starts to be nice but every widgets are in the same column, one after another without any style tuning.
+
+.. note:: 
+
+	At this point you need to be aware of the platform possibilities about CSS and HTML Style.
+	Please read carrefully the `responsive grid layout managment /look_and_feel/grid-layouts.html` documentation. 
+
+
+We will split the screen into two main areas : on the left a navigation bar, on the right the main content.
+The navigation bar will carry the search bar and filters, the content will carry the table, map and chart.
+
+It will looks like this : 
+
+ .. image:: dashboard__css-responsive-layout-1.png
+
+Bootsrap (the grid layout managment tool) split the page into 12 columns.
+We will alloy 3 columns for the navigation bar and 9 for the content.
+We will split the screen for devices starting from medium size. The CSS class is ``col-md-3`` and ``col-md-9``
+
+Concerning the table and chart widget, we will split the area in two equal size, ie. 6 columns each. The CSS class is ``col-md-6``
+
+One last detail: to use ``col-xx-yy`` CSS classes, they always need to be inside a ``row`` element !
+So first, you define rows, then you split the rows !
+
+ .. image:: dashboard__css-responsive-layout-2.png
+
+
+The HTML block should then looks like this :
+
+ .. code-block:: html
+
+	<div class="container-fluid">
+
+	    <div class="ods-box">
+
+	        <ods-dataset-context  
+	                             context="entreprisesimmatriculeesen2016" 
+	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016" 
+	                             entreprisesimmatriculeesen2016-parameters="{'disjunctive.libelle':true,'disjunctive.code_postal':true,'disjunctive.ville':true,'disjunctive.region':true,'disjunctive.greffe':true,'sort':'date_d_immatriculation'}">
+	    
+	            <div class="row">
+
+	                <!-- NAVIGATION BAR -->
+	                <div class="col-md-3">
+	                        <ods-text-search />
+	                        <ods-facets />	                    
+	                </div>
+
+	                <!-- MAIN CONTENT -->            
+	                <div class="col-md-9">
+	                    
+	                    <!-- ROW 1 : The Map -->
+	                    <div class="row">
+                            <ods-map />    
+	                    </div>
+
+	                    <!-- ROW 2 : Chart and table -->
+	                    <div class="row">
+	                        <div class="col-md-6">
+                                <ods-table />
+	                        </div>
+
+	                        <div class="col-md-6">    
+                                <ods-chart />
+	                        </div>
+	                    </div>
+
+	                </div>
+	            </div>
+	        </ods-dataset-context>
+	    </div>
+	</div>
+
+We now have a real dashboard, last detail will be to give some air of every element, they are still all sticked together.
+It's a pure CSS aspect, and using ``margin`` and ``padding`` rules will easilly do the job.
+
+But the platform also provide a CSS class called ``ods-box``. It encapsulate any element into a box with a thin rounded border.
+We will use it to encapsulate the navigation bar, the map, the table and the chart.
+
+
+The full HTML code is now : 
+
+ .. code-block:: html
+
+	<div class="container-fluid">
+	    <div class="ods-box">
+	        <ods-dataset-context  
+	                             context="entreprisesimmatriculeesen2016" 
+	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016" 
+	                             entreprisesimmatriculeesen2016-parameters="{'disjunctive.libelle':true,'disjunctive.code_postal':true,'disjunctive.ville':true,'disjunctive.region':true,'disjunctive.greffe':true,'sort':'date_d_immatriculation'}">
+	            <div class="row">
+
+	                <!-- NAVIGATION BAR -->
+	                <div class="col-md-3">
+	                    <div class="ods-box">
+	                        <ods-text-search context="entreprisesimmatriculeesen2016"></ods-text-search>
+	                        <ods-facets context="entreprisesimmatriculeesen2016">
+	                            <h3>Activity</h3>
+	                            <ods-facet name="libelle"></ods-facet>
+	                            <h3>City</h3>
+	                            <ods-facet name="ville"></ods-facet>
+	                        </ods-facets>
+	                    </div>
+	                </div>
+
+	                <!-- MAIN CONTENT -->            
+	                <div class="col-md-9">
+
+	                    <!-- ROW 1 : The Map -->
+	                    <div class="row">
+	                        <div class="ods-box">
+	                            <ods-map context="entreprisesimmatriculeesen2016" location="2,18.59479,25.24143" basemap="mapbox.light">
+	                            </ods-map>
+	                        </div>
+	                    </div>
+
+	                    <!-- ROW 2 : Chart and table -->
+	                    <div class="row">
+	                        <div class="col-md-6">        
+	                            <div class="ods-box">
+	                                <ods-table context="entreprisesimmatriculeesen2016" 
+	                                           sort="date_d_immatriculation">
+	                                </ods-table>
+	                            </div>
+	                        </div>
+	                        <div class="col-md-6">
+	                            <div class="ods-box">
+	                                <ods-chart>
+	                                    <ods-chart-query context="entreprisesimmatriculeesen2016" field-x="region">
+	                                        <ods-chart-serie expression-y="siren" chart-type="line" function-y="COUNT" color="#66c2a5" scientific-display="true">
+	                                        </ods-chart-serie>
+	                                    </ods-chart-query>
+	                                </ods-chart>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    
+	                </div>
+	            </div>
+	        </ods-dataset-context>
+	    </div>
+	</div>
+
+
+ .. image:: dashboard__css-responsive-layout-3.png
+
+
 Have a deeper look to the "context" 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Add a record counter
-~~~~~~~~~~~~~~~~~~~~
+We now know that the context is the key between all widgets and the link between them and the data.
+Some widgets consume/read it : the odsTable widget will use it to get records and display them.
+Some widgets act/modify it : the odsTextSearch will query it by applying a search query or filter.
+Some widgets do both : the odsFacets get filters, display it, and then allow to apply a filter on the context.
+
+To go further it's now interresting to see how widget modify the context and what kind of information we can get from it.
+
+ .. note::
+
+	- As OpenDataSoft widgets library rely on **AngularJS** we will use it's syntax to read the **context**.
+	- The **context** is an **AngularJS variable**.
+	- The **context** can be seen like a simple **JSON object**, with brackets, key values lists etc...
+	- To evaluate an expression in AngularJS we use this syntax : ``{{ action1 or variable1 }}``
+
+To conclude this note, to read the context, simply add this bunch of code in an empty space :
+
+ .. code-block:: html
+
+ 	<div class="container-fluid">
+	    <div class="ods-box">
+	        <ods-dataset-context  
+	                             context="entreprisesimmatriculeesen2016" 
+	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016" 
+	                             entreprisesimmatriculeesen2016-parameters="{'disjunctive.libelle':true,'disjunctive.code_postal':true,'disjunctive.ville':true,'disjunctive.region':true,'disjunctive.greffe':true,'sort':'date_d_immatriculation'}">
+	            
+	            {{ entreprisesimmatriculeesen2016 }}
+	            
+	            <div class="row">
+
+	                <!-- NAVIGATION BAR -->
+	    			. . . .
+
+
+Save, refresh : you should see an ugly json at the top of your page, by pretty printing it in your favorite dev. environment (or with an online json pretty printer like the one from `CuriousConcept <https://jsonformatter.curiousconcept.com/>`_ ) you should see something like this :
+
+ .. code-block:: json
+
+	{  
+	   "name":"entreprisesimmatriculeesen2016",
+	   "type":"dataset",
+	   "domainUrl":"",
+	   "dataset":{  
+	      "datasetid":"entreprises-immatriculees-en-2016",
+	      "has_records":true,
+	      "metas":{  
+	         "publisher":"Infogreffe",
+	         "domain":"fpassaniti",
+	         "license":"Licence ouverte / Open Licence",
+	         "description":"<p><strong>RCS - Liste des entreprises immatriculées en 2016</strong></p><hr/>\n<p>Liste des sociétés commerciales immatriculées au registre du commerce et des sociétés en 2016.</p>",
+	         "language":"fr",
+	         "records_count":114129,
+	         "title":"Entreprises immatriculées en 2016",
+	         "attributions":"Infogreffe",
+	         "modified":"2016-09-14T15:16:33+02:00",
+	         "theme":"Immatriculations",
+	         "references":"Création, Immatriculation, Registre du commerce et des sociétés",
+	         "visibility":"restricted",
+	         "data_processed":"2016-09-14T10:30:30+02:00",
+	         "metadata_processed":"2016-09-14T15:16:47+02:00",
+	         "keyword":[  
+	            "création",
+	            "immatriculation",
+	            "sociétés",
+	            "entreprises"
+	         ]
+	      },
+	      "features":[  
+	         "geo",
+	         "analyze",
+	         "timeserie"
+	      ],
+	      . . .
+	      "fields":         . . .,
+	      "extra_metas":{  
+	         "visualization":{  
+	            "map_tooltip_fields": . . .
+	            "calendar_enabled":false,
+	            "map_tooltip_html_enabled":false,
+	            "image_tooltip_html_enabled":false,
+	            "map_tooltip_title":"denomination",
+	            "table_default_sort_field":"date_d_immatriculation",
+	            "table_fields": . . .
+	            "map_marker_hidemarkershape":false,
+	            "analyze_default":". . .",
+	            "calendar_tooltip_html_enabled":false
+	         },
+	         "explore":{  
+	            "download_count":0,
+	            "feedback_enabled":false
+	         },
+	         "processing":{  
+	            "processing_modified":"2016-06-14T12:25:59+02:00",
+	            "records_size":0,
+	            "security_last_modified":"2016-09-14T15:16:44+02:00"
+	         },
+	         "publishing":{  
+	            "status":"processing_all_dataset_data",
+	            "extractors":[  
+	               "csvfile"
+	            ],
+	            "properties":[  
+	               "scheduled"
+	            ],
+	            "last_modified_user":"olivier.ishacian",
+	            "published":true
+	         }
+	      },
+	      "billing_plans":[  
+
+	      ]
+	   },
+	   "parameters":{  
+	      "disjunctive.libelle":true,
+	      "disjunctive.code_postal":true,
+	      "disjunctive.ville":true,
+	      "disjunctive.region":true,
+	      "disjunctive.greffe":true,
+	      "sort":"date_d_immatriculation"
+	   },
+	   "nhits":114559
+	}
+
+As it's a json, we can with AngularJS expression navigate into it's structure go get the value of any key.
+For exemple, to get the dataset title, we go from the context, to the ``dataset`` list, then to the ``metas`` list, then we can reach the title value.
+Encapsulated in a bug header html tag, it looks like this :
+
+ .. code-block:: html
+
+	<div class="container-fluid">
+	    <div class="ods-box">
+	        <ods-dataset-context  
+	                             context="entreprisesimmatriculeesen2016" 
+	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016" 
+	                             entreprisesimmatriculeesen2016-parameters="{'disjunctive.libelle':true,'disjunctive.code_postal':true,'disjunctive.ville':true,'disjunctive.region':true,'disjunctive.greffe':true,'sort':'date_d_immatriculation'}">
+
+	            <h1>
+	                {{ entreprisesimmatriculeesen2016.dataset.metas.title }}
+	            </h1>
+
+	            <div class="row">
+
+	                <!-- NAVIGATION BAR -->
+
+
+ .. image:: dashboard__context
+
+
+Now that we saw what the context is, we must have a look to how we can iniate it.
+The `odsDatasetContext <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsDatasetContext>`_ is used to create a context, based on a datasetid and, optionnaly other parameters.
+
+.. code-block:: html
+
+    <ods-dataset-context  
+        context="entreprisesimmatriculeesen2016" 
+        entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016" 
+        entreprisesimmatriculeesen2016-parameters="{'disjunctive.libelle':true,'disjunctive.code_postal':true,'disjunctive.ville':true,'disjunctive.region':true,'disjunctive.greffe':true,'sort':'date_d_immatriculation'}">
+    </ods-dataset-context>
+
+
+Add a record counter and last processing date
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Add a download link
+~~~~~~~~~~~~~~~~~~~
 
 Create some KPIs
 ~~~~~~~~~~~~~~~~
