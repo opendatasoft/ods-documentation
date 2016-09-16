@@ -584,7 +584,7 @@ To conclude this note, to read the context, simply add this bunch of code in an 
 
 Save, refresh : you should see an ugly json at the top of your page, by pretty printing it in your favorite dev. environment (or with an online json pretty printer like the one from `CuriousConcept <https://jsonformatter.curiousconcept.com/>`_ ) you should see something like this :
 
- .. code-block:: json
+ .. code-block:: js
 
 	{  
 	   "name":"entreprisesimmatriculeesen2016",
@@ -693,7 +693,7 @@ Encapsulated in a bug header html tag, it looks like this :
 	                <!-- NAVIGATION BAR -->
 
 
- .. image:: dashboard__context
+ .. image:: dashboard__context-1.png
 
 
 Now that we saw what the context is, we must have a look to how we can iniate it.
@@ -707,11 +707,161 @@ The `odsDatasetContext <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods
         entreprisesimmatriculeesen2016-parameters="{'disjunctive.libelle':true,'disjunctive.code_postal':true,'disjunctive.ville':true,'disjunctive.region':true,'disjunctive.greffe':true,'sort':'date_d_immatriculation'}">
     </ods-dataset-context>
 
+As the documentation say, 2 parameters are mandatory : the context name, and the datasetid.
+In our case, 1 additionnal parameter has been copied. ``mycontext-parameters`` is used to defined specific filters or query to the context.
+Here, several disjunctive mode are set to true for 5 fields, and the last parameter is a sort on date_d_immatriculation.
+
+ .. note::
+
+ 	Disjunctive mode set to ``true`` on a facet field activate the multiple choise filter mode. It allows the user to apply a filter, and still be able to see and/or select  other values
+
+ We will remove this optional attribute and observe changes.
+
+ .. code-block:: html
+
+    <ods-dataset-context  
+        context="entreprisesimmatriculeesen2016" 
+        entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016">
+    </ods-dataset-context>
+
+First the context, if we display it, the json parameters block is now much smaller :
+
+In your code add :
+
+ .. code-block:: html
+
+	{{ entreprisesimmatriculeesen2016.parameters }}
+    
+Save, refresh, and see :
+
+ .. code-block:: js
+
+	"parameters":{  
+		"sort":"date_d_immatriculation"
+    }
+
+We still have a sort parameter, even if we deleted it from the context creation widget (odsDatasetContext), it's due to the dataset sort setting in the table view.
+
+Last test : apply a filter on any facet and observe how the ``context.parameters`` object is updated.
+
+ .. image:: dashboard__context-2.png
+
+ .. note::
+
+ 	Also observe the 'standard' behavior of facets : when a value is selected, all others are hidden.
+
 
 Add a record counter and last processing date
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Now that we know what is a **context**, how to access it, we will get two interresting information for a dashboard: 
 
+ - the total amount of records
+ - the total number of hits matching the user query and/or filters
+ - the last processing date of the dataset
+
+ .. code-block:: js
+
+	{  
+	   "name":"entreprisesimmatriculeesen2016",
+	   . . .
+	   "dataset":{  
+	      "datasetid":"entreprises-immatriculees-en-2016",
+	      "has_records":true,
+	      "metas":{  
+	         . . .
+	         "records_count":114129,
+	         . . .
+	         "data_processed":"2016-09-14T10:30:30+02:00",
+	         . . .
+	      },
+	      . . .
+	   },
+	   "nhits":115055
+	}
+
+Then :
+
+ - the total amount of records will be accessible by : ``{{  entreprisesimmatriculeesen2016.dataset.metas.records_count }}``
+ - the total number of hits : ``{{  entreprisesimmatriculeesen2016.nhits }}``
+ - the last processing date : ``{{  entreprisesimmatriculeesen2016.dataset.metas.data_processed }}``
+
+To finish, we include these blocs into our HTML code, surrounded by HTML and CSS code to have a nice rendering.
+
+Records and nhits on the top of the navigation bar, processing date at the bottom :
+
+ .. code-block:: html
+
+	<!-- NAVIGATION BAR -->
+        <div class="col-md-3">
+            <div class="ods-box">
+                                        
+                <h3>
+                    {{  entreprisesimmatriculeesen2016.nhits }} records
+                </h3>
+                <h5>
+                    <i>
+                        out of a total of {{  entreprisesimmatriculeesen2016.dataset.metas.records_count }} records in the dataset
+                    </i>
+                </h5>
+                
+                <ods-text-search context="entreprisesimmatriculeesen2016"></ods-text-search>
+                <ods-facets context="entreprisesimmatriculeesen2016">
+                    <h3>Activity</h3>
+                    <ods-facet name="libelle"></ods-facet>
+                    <h3>City</h3>
+                    <ods-facet name="ville"></ods-facet>
+                </ods-facets>
+                
+                <h5>
+                    <i>
+                        Last modified date : {{  entreprisesimmatriculeesen2016.dataset.metas.data_processed }}                            
+                    </i>
+                </h5>
+                
+            </div>
+        </div>	
+
+Save, refresh, and see :
+
+ .. image:: dashboard__add-counters.png
+
+It's nice but, the numerical and date format is a bit harsh.
+To fix that, we will introduce a pure **AngularJS** concept called **filters**. `Full documentation of AngularJS Filters here <https://docs.angularjs.org/api/ng/filter>`_
+
+A filter is a function or operation that can be applied on a variable or value in an AngularJS expression.
+
+In our case, we will use the ``number`` filter to pretty print numerical values (add a space or a comma every 3 digits depending on the country), and a ``date`` to transform the ISO technical format into an human readable format.
+
+ .. code-block:: html
+
+	<h3>
+	    {{  entreprisesimmatriculeesen2016.nhits | number }} records
+	</h3>
+	<h5>
+	    <i>
+	        out of a total of {{  entreprisesimmatriculeesen2016.dataset.metas.records_count | number }} records in the dataset
+	    </i>
+	</h5>
+
+	. . .
+
+	<h5>
+	    <i>
+	        Last modified date : {{  entreprisesimmatriculeesen2016.dataset.metas.data_processed | date : 'medium' }}                            
+	    </i>
+	</h5>
+
+ .. note::
+
+ 	To "call" a filter, use pipe '|' at the end of the expression.
+ 	Some filters accept specific parameters, date filter accept a date format or a date pattern.
+ 	Ex: ``expr. | date : 'M/d/yy'`` ``expr. | date : 'medium'``
+
+Save, refresh, see :
+
+ .. image:: dashboard__add-counters-ng-filter.png
+ 
 
 Add a download link
 ~~~~~~~~~~~~~~~~~~~
