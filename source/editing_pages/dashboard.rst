@@ -861,28 +861,352 @@ In our case, we will use the ``number`` filter to pretty print numerical values 
 Save, refresh, see :
 
  .. image:: dashboard__add-counters-ng-filter.png
- 
+
 
 Add a download link
 ~~~~~~~~~~~~~~~~~~~
 
-Create some KPIs
-~~~~~~~~~~~~~~~~
+As the export tab of each dataset, we can export only filtered records, it's interresting to have a link or button to do the same in some analytics dashboard for offline use of the data.
 
-test
+The `odsDatasetContext <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsDatasetContext>`_ documentation describes some function that can be directly called on the context. ``getdownloadURL`` accepts 2 parameters, the first one is the format extension, the second one the list of specific fields. 
+In our case, we will add a button (a link with a CSS class that gives any element a nice button style) to export records in CSV format.
 
-Going further - AngularJS and advanced used of Widgets
+ .. code-block:: html
+
+    <a 	href="{{ entreprisesimmatriculeesen2016.getDownloadURL('csv') }}" 
+    	class="ods-button ods-button--primary">
+        	Download this selection
+    </a>
+
+Save, refresh and test to apply some filters, and download the CSV export :
+
+ .. image:: dashboard__add-download-link.png
+
+
+Going further - AngularJS
 ------------------------------------------------------
 
-discover angular JS directives
+Discover angular JS directives
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Play with them by creating dynamic view - ng-if
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+And `AngularJS directive <https://docs.angularjs.org/guide/directive>`_ can be seen as an HTML attribute that can be added to any HTML elements.
+Lot's of them are available in the platform and can be used to add dynamic behavior to dashboards.
 
-Colorize your KPI - ng-class
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Here is a subset of most used directives :
 
-Refine-on-click widgets
-~~~~~~~~~~~~~~~~~~~~~~~
+ - ``ng-init`` : initialise a variable
+ - ``ng-click`` : evalute an expression when the user click on the element
+ - ``ng-class`` : apply a CSS class depending on a variable or condition
+ - ``ng-if`` : show or hide an element depending on a condition
+ - ``ng-repeat`` : iterate over a list or an array, repeat the HTML element for each iteration
+ - ``ng-change`` : evalute an expression when the user change the value in an HTML Select element
+
+
+ng-if : Show or Hide a widget depending on the user filter choice
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In our dashboard we have the region line chart, and also the city filter !
+When the user select a city to filter on it, the chart become useless as it only have one value to display.
+
+What could be interesting is to hide the region widget when an activity is selected, and show another chart instead !
+
+Let's go back to the explore dataset view, go to the analyse tab, and set-up a new chart, for exemple :
+
+	A pie chart with the number of recorded companies for each month of the year, sorted.
+	 - X axis : immatriculation date, month level
+	 - Y : pie chart, Y axis : count
+
+Copy and paste the widget code below the other chart. Remove the new pasted context declaration, change the context name if needed to plug the chart with the page context.
+
+We can now use the ``ng-if`` directive on each widget to display one or the other.
+
+The condition will be, if a refine is applied on the context, show one, or show another.
+We saw that the refine list is available in ``context.parameters``. As parameters is a key value dictionnary, to get the ``myfield`` refine parameter, we try to access : ``mycontext.parameters['refine.myfield']``
+
+Applied to our datasets it's looks like this :
+
+ .. code-block:: html
+
+    <div class="col-md-6">
+        <div class="ods-box">
+            <ods-chart ng-if="! entreprisesimmatriculeesen2016.parameters['refine.ville']">
+                <ods-chart-query context="entreprisesimmatriculeesen2016" field-x="region">
+                    <ods-chart-serie expression-y="siren" chart-type="line" function-y="COUNT" color="#66c2a5" scientific-display="true">
+                    </ods-chart-serie>
+                </ods-chart-query>
+            </ods-chart>
+
+            <ods-chart ng-if="entreprisesimmatriculeesen2016.parameters['refine.ville']">
+                <ods-chart-query context="entreprisesimmatriculeesen2016" field-x="date_d_immatriculation" maxpoints="20" timescale="month" sort="serie1-1">
+                    <ods-chart-serie expression-y="siren" chart-type="pie" function-y="COUNT" color="range-custom" scientific-display="true">
+                    </ods-chart-serie>
+                </ods-chart-query>
+            </ods-chart>
+        </div>
+    </div>
+
+ .. note::
+
+ 	- The region chart ng-if condition can be translated to `Show the chart if their is a refine on the **ville** facet`
+	- ``!`` character is to get the opposite, the condition can be translated to `Show the chart if their is NO refine on the **ville** facet`
+	- To easily understand how it works, do not hesitate to display the ``context.parameters`` value in your dashboard each time you use it !
+
+
+ng-if : display the download link only if the dashboard is filtered
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Same technique, if ``context.q`` or ``context.parameters['refine.myfilter']`` exists, show the download link.
+
+ .. code-block:: html
+
+    <a 
+    	ng-if="entreprisesimmatriculeesen2016.parameters['q'] || entreprisesimmatriculeesen2016.parameters['refine.ville'] || entreprisesimmatriculeesen2016.parameters['refine.libelle']"
+        href="{{ entreprisesimmatriculeesen2016.getDownloadURL('csv') }}" 
+        class="ods-button ods-button--primary">
+        	Download this selection
+    </a>
+
+
+ng-init / ng-click / ng-if /ng-class : Create tabs to switch views
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This exemple will use 4 differents directives.
+
+ * ng-init to declare a variable to keep track of witch tab to display !
+ * ng-if to display only one tab at a time, depending on the value of the variable
+ * ng-click to change de value of the variable to switch from a tab to another
+ * ng-class to change the color of the tab to show witch tab is selected
+
+So first, the HTML structure :
+
+ .. code-block:: html
+
+	<div class="row">
+        <ul>
+            <li>
+                FIRST TAB BUTTON
+            </li>
+            <li>
+                SECOND TAB BUTTON
+            </li>
+            <li>
+                THIRD TAB BUTTON
+            </li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div>
+            FIRST CONTENT
+        </div>
+        <div>
+            SECOND CONTENT
+        </div>
+        <div>
+            THIRD CONTENT
+        </div>
+    </div>
+
+Initialise a variable called ``tab`` with ``ng-init`` :
+
+ .. code-block:: html
+
+	<ul ng-init="tab='first'">
+
+On each tab button, add a ``ng-click`` to set the ``tab`` value :
+
+ .. code-block:: html
+
+	<li ng-click="tab='first'">
+        FIRST TAB BUTTON
+    </li>
+    <li ng-click="tab='second'">
+        SECOND TAB BUTTON
+    </li>
+    <li ng-click="tab='third'">
+        THIRD TAB BUTTON
+    </li>
+
+Then, on each content block, add a ``ng-if`` condition to display it :
+
+ .. code-block:: html
+
+	<div class="row">
+	    <div ng-if="tab=='first'">
+	        FIRST CONTENT   
+	    </div>
+	    <div ng-if="tab=='second'">
+	        SECOND CONTENT
+	    </div>
+	    <div ng-if="tab=='third'">
+	        THIRD CONTENT  
+	    </div>
+	</div>
+
+Save, refresh, and test, you should now see that, by clicking on the tab button, the content is changing !
+
+Now, it needs some CSS code to have :
+
+ - a tab buttons with a real button style, we already used it : ``ods-button ods-button--primary`` plus a ``item`` class
+ - all tab buttons on the same line : ``items`` class on the list (``ul``)
+
+This looks like : 
+
+ .. code-block:: html
+
+	<ul class="items" ng-init="tab='first'">
+	    <li class="item ods-button ods-button--primary" ng-click="tab='first'">
+	        FIRST TAB BUTTON
+	    </li>
+	    <li class="item ods-button ods-button--primary" ng-click="tab='second'">
+	        SECOND TAB BUTTON
+	    </li>
+	    <li class="item ods-button ods-button--primary" ng-click="tab='third'">
+	        THIRD TAB BUTTON
+	    </li>
+	</ul>
+
+Add in the CSS block this :
+
+ .. code-block:: css
+
+	.items {
+	    display: flex; /* Display in line */
+	    list-style-type: none; /* Remove the list bullet */
+	}
+
+	.item {
+	    margin: 0 20px; /* give some space left and right */
+	}
+
+Last thing, still with CSS, we want to highlight with a different color witch tab is selected. We will use a predefined button also : ``ods-button--danger`` (in red)
+This CSS class must be set only for a specific condition with ``ng-class``.
+The pattern is : ``ng-class="{'css-class': variable == value}" 
+
+The final HTML looks like this :
+
+ .. code-block:: html
+
+	<div class="row">
+	    <ul class="items" ng-init="tab='first'">
+	        <li class="item ods-button ods-button--primary" ng-class="{'ods-button--danger': tab == 'first'}" ng-click="tab='first'">
+	            FIRST TAB BUTTON
+	        </li>
+	        <li class="item ods-button ods-button--primary" ng-class="{'ods-button--danger': tab == 'second'}" ng-click="tab='second'">
+	            SECOND TAB BUTTON
+	        </li>
+	        <li class="item ods-button ods-button--primary" ng-class="{'ods-button--danger': tab == 'third'}" ng-click="tab='third'">
+	            THIRD TAB BUTTON
+	        </li>
+	    </ul>
+	</div>
+
+	<div class="row">
+	    <div ng-if="tab=='first'" class="block">
+	        FIRST CONTENT
+	    </div>
+	    <div ng-if="tab=='second'" class="block">
+	        SECOND CONTENT
+	    </div>
+	    <div ng-if="tab=='third'" class="block">
+	        THIRD CONTENT
+	    </div>
+	</div>
+
+
+Save, refresh, and try to switch tabs ! 
+
+ .. image:: dashboard__tab-view.png
+
+Then we can include it in our dashboard to add extra dataviz without having a too heavy dashboard (too heavy to load or to read).
+To give some space to the table and the chart that are too small we will include them in a tab, we will also add a third chart, based on another axis (the date for exemple).
+The second row will become the tabulated row, and each widget (table, charts) will be the content of each tab.
+
+The main content looks like this :
+
+ .. code-block:: html
+
+	<!-- MAIN CONTENT -->            
+	<div class="col-md-9">
+
+	    <!-- ROW 1 : The Map -->
+	    <div class="row">
+	        <div class="ods-box">
+	            <ods-map context="entreprisesimmatriculeesen2016" location="2,18.59479,25.24143" basemap="mapbox.light">
+	            </ods-map>
+	        </div>
+	    </div>
+
+	    <!-- ROW 2 : Chart and table -->
+	    <div class="row items-row">
+	        <ul class="items" ng-init="tab='first'">
+	            <li class="item ods-button ods-button--primary" ng-class="{'ods-button--danger': tab == 'first'}" ng-click="tab='first'">
+	                Table
+	            </li>
+	            <li class="item ods-button ods-button--primary" ng-class="{'ods-button--danger': tab == 'second'}" ng-click="tab='second'">
+	                Region chart
+	            </li>
+	            <li class="item ods-button ods-button--primary" ng-class="{'ods-button--danger': tab == 'third'}" ng-click="tab='third'">
+	                Time serie
+	            </li>
+	        </ul>
+	    </div>
+
+	    <div class="row">
+	        <div ng-if="tab=='first'" class="block">
+	            <div class="ods-box">
+	                <ods-table context="entreprisesimmatriculeesen2016">
+	                </ods-table>
+	            </div>
+	        </div>
+	        <div ng-if="tab=='second'" class="block">
+	            <div class="ods-box" ng-if="! entreprisesimmatriculeesen2016.parameters['refine.ville']">
+	                <ods-chart>
+	                    <ods-chart-query context="entreprisesimmatriculeesen2016" field-x="region">
+	                        <ods-chart-serie expression-y="siren" chart-type="line" function-y="COUNT" color="#66c2a5" scientific-display="true">
+	                        </ods-chart-serie>
+	                    </ods-chart-query>
+	                </ods-chart>
+	            </div>
+	            <div class="ods-box" ng-if="entreprisesimmatriculeesen2016.parameters['refine.ville']">
+	                <ods-chart>
+	                    <ods-chart-query context="entreprisesimmatriculeesen2016" field-x="date_d_immatriculation" maxpoints="20" timescale="month" sort="serie1-1">
+	                        <ods-chart-serie expression-y="siren" chart-type="pie" function-y="COUNT" color="range-custom" scientific-display="true">
+	                        </ods-chart-serie>
+	                    </ods-chart-query>
+	                </ods-chart>
+	            </div>
+	        </div>
+	        <div ng-if="tab=='third'" class="block">
+	            <ods-chart timescale="year">
+	                <ods-chart-query context="entreprisesimmatriculeesen2016" field-x="date_d_immatriculation" timescale="day">
+	                    <ods-chart-serie expression-y="siren" chart-type="spline" function-y="COUNT" color="#ff0000" scientific-display="true">
+	                    </ods-chart-serie>
+	                </ods-chart-query>
+	            </ods-chart>
+
+	        </div>
+	    </div>
+	</div>
+
+
+
+Center tab buttons :
+
+ .. code-block:: css
+
+ 	.items-row {
+	    text-align: center; /* center all buttons */
+	}
+
+	.items {
+	    display: inline-flex; /* Display in line */
+	    list-style-type: none; /* Remove the list bullet */
+	}
+
+And finally, save, refresh :
+
+ .. image:: dashboard__with-tab.png
+
+
 
