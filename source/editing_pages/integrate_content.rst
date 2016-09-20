@@ -26,7 +26,7 @@ integrated in other websites (like a blog). When you create a widget, Twitter pr
 HTML code. Due to security concerns, JavaScript is blocked in OpenDataSoft pages editor, so you can't directly use the code provided
 by Twitter. However, we provide an OpenDataSoft widget to achieve this instead. 
 
-First, you need to capture the "Widget ID", which is pressent in the first line of the code, in the ``data-widget-id`` attribute:
+First, you need to capture the "Widget ID", which is present in the first line of the code, in the ``data-widget-id`` attribute:
 
 .. code-block:: html
 
