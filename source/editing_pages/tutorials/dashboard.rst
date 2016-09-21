@@ -1,8 +1,7 @@
 Building a dynamic dashboard - step by step !
 =============================================
 
-The aim of this cookbook is to show how to create very easily a simple dashboard by playing with the following features :
-
+The aim of this tutorial is to create very easily a dashboard by using widgets, AngularJS and CSS tools provided by OpenDataSoft platform.
 
 Basics
  - pick up a dataset
@@ -26,18 +25,15 @@ Going further : AngularJS and advanced used of Widgets
  - Refine-on-click widgets
 
 
-Let's go !
-
-
 Basics
 ------
 
 Pick up a datasets
 ~~~~~~~~~~~~~~~~~~
 
-Let's work with company registrations in France (2016).
+This tutorial is based on the company registrations dataset in France (year 2016).
 
-First you need to add this list of datasets on your domain:
+First you need to add this dataset on your domain:
 
 * entreprises-immatriculees-en-2016
 
@@ -60,27 +56,31 @@ You should now view this HTML code in your page :
 	</div>
 
 
-From now, we will add all our code in the ``ods-box div`` like this :
+From now, all the code will be added in the ``ods-box div``, like this :
 
 .. code-block:: html
 
 	<div class="container-fluid">
 	    <div class="ods-box">
 	    
-	        OUR CODE HERE
+	        CODE HERE
 	    
 	    </div>
 	</div>
 
-Save and refresh your page if you don't see the **Open page** button in the top right part of the screen.
+Save and open your page.
+
+If you don't see the **Open page** button in the top right part of the screen, refresh your page.
+
+You can also go back to the **Pages** menu in the navigation bar, to see the list of pages and click on the eye to go directly to it.
 
 
 Add a map view
 ~~~~~~~~~~~~~~
 
-The simplest way to begin is to used share links and code bellow each data visualisation.
+The simplest way to begin is to use share links and code bellow each data visualisation.
 
-Go to your dataset, go to the map tab, then, below your map, click on ``widget`` and simply copy and paste your code in your custom page.
+Go to your dataset, go to the map tab, then, below your map, click on ``widget`` and simply copy and paste the code in the custom page.
 
  .. code-block:: html
 
@@ -99,9 +99,9 @@ Go to your dataset, go to the map tab, then, below your map, click on ``widget``
 	</div>
 
 
-We will explain each block later, for the moment, just preview your page by clicking on the **Preview** button on the center right part of your browser.
+Each block will be explained later, for the moment, just preview your page by clicking on the **Preview** button on the center right part of your browser.
 
-We advise you to open your page in a new tab of your browser for a faster loading.
+We advise you to open your page in a new tab of your browser for a faster loading (and refresh this tab any time you want to check see your new version).
 
 It should looks like this (the map basemap should be different depending on your domain settings) :
 
@@ -111,7 +111,7 @@ It should looks like this (the map basemap should be different depending on your
 Add a table view
 ~~~~~~~~~~~~~~~~
 
-Now, go to the table view, ``widget`` and simply copy and paste again below the map code.
+Now, still on the dataset explore screen, go to the table view (**Table** tab), ``widget`` share link, and simply copy and paste the code below the map.
 
  .. code-block:: html
 
@@ -138,19 +138,19 @@ Now, go to the table view, ``widget`` and simply copy and paste again below the 
 	    </div>
 	</div>
 
-Save, refresh, and see that we now have two data-vizualisation :
+Save, refresh, and see that the dashboard now have two data-vizualisation :
 
  .. image:: dashboard__add-a-table-view.png
 
 Add a chart
 ~~~~~~~~~~~
 
-Again, go to the chart view, select an X axis and Y axis, get the widget code, copy and paste.
+In the dataset again, go to the chart view, select an X axis and Y axis, get the widget code, copy and paste.
 
 An exemple of interesting chart for this documentation is to display the number of company by region.
 
 X axis : ``Région`` (administrative area)
-Y axis : count
+Y axis : ``count``
 
  .. image:: dashboard__add-a-chart-setup.png
 
@@ -198,9 +198,9 @@ Save, refresh, it should looks like this :
 Link them all together ! 
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-If we draw a circle, or polygon on the map, we can filter the list of displayed items, we unfortunatly see that only the map reacts and the table and chart just **ignores** our filter !
+If we draw a circle, or polygon on the map, we can filter the list of displayed items, we unfortunatly see that only the map reacts and the table or chart just **ignores** our filter !
 
-Most of the time, we want all widgets to be connected each others. To do this, the key is to use the same **context**.
+Most of the time, we want all widgets to be connected each others. To do this, the secret is to use the same **context**.
 The **context** is the pivot between each elements of your pages, all the widgets that should interact together must use the same **context**.
 
 On the other hand, it's also the link between your widgets and the **dataset**, it's the way to define on witch dataset your widgets should work (queries, filters and display records)
@@ -230,9 +230,9 @@ Let's have a look to our code, each time we copied and pasted a bloc, we got too
 	    </div>
 	</div>
 
-This cleaned version of the code highlight that the 3 widgets have, each time, their own context ! 3 contexts, for 3 widgets.
+This cleaned version of code highlight that the 3 widgets have, each time, their own context ! 3 contexts, for 3 widgets.
 
-The simple thing to do then is to keep only one, and move our widgets below this **unique** context !
+A simple thing to do then is to keep only one, and move our widgets below this **unique** context !
 
 	Here is the result :
 
@@ -290,7 +290,8 @@ Let's keep it simple for the moment and use it like this :
 where
 	``mycontext`` is the name of my context in my custom page.
 
-Let's add a search bar at the top of our dashboard now :
+
+Now, add a search bar at the top of the dashboard :
 
  .. code-block:: html
 
@@ -325,7 +326,7 @@ Let's add a search bar at the top of our dashboard now :
 
 Save, refresh, search !
 
-	Let's search for sport club in the south of france :
+	For exemple, search for 'sport club' in the south of France :
 
  .. image:: dashboard__add-search-bar.png
 
@@ -333,7 +334,7 @@ Save, refresh, search !
 Add some filters
 ~~~~~~~~~~~~~~~~
 
-Like in the explore view, it's very interresting to have the dataset filters to narrow your search.
+Like in the explore view, it's very interresting to have dataset filters to narrow your search.
 Ods filters widget is called `ods-facets <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsFacets>`_ 
 
 The simplest way is to display all facets :
@@ -357,11 +358,11 @@ The simplest way is to display all facets :
  .. note::
 
  	To get the field id you need to be aware of the dataset schema. It's available in the information tab of the dataset.
- 	The dataset schema shows every information on each field : name, description, id, type, and an exemple.
+ 	The dataset schema shows every information on each field : name, description, id, type, and a value exemple.
  	It's often convenient to know the type and the id of each field when using advanced widget parameters.
 
-In our dashboard exemple, we will use 2 filters of our company dataset, the company activity sector, and the city !
-Let's add this code near our search bar :
+In this dashboard exemple, we will use 2 filters : the company activity sector, and the city !
+Add this code near the search bar :
 
  .. code-block::html 
 
@@ -391,7 +392,7 @@ Let's add this code near our search bar :
 	    </div>
 	</div>
 
-Now we can easily search for sport club in Paris !
+It's now much simpler to search for sport club in Paris !
 
  .. image:: dashboard__add-filters.png
 
@@ -404,7 +405,7 @@ This dashboard starts to be nice but every widgets are in the same column, one a
 .. note:: 
 
 	At this point you need to be aware of the platform possibilities about CSS and HTML Style.
-	Please read carrefully the `responsive grid layout managment /look_and_feel/grid-layouts.html` documentation. 
+	Please read carrefully the `responsive grid layout managment :doc:`responsive grid layout managment </customizing_look_and_feel/responsive>` documentation. 
 
 
 We will split the screen into two main areas : on the left a navigation bar, on the right the main content.
@@ -552,7 +553,7 @@ Have a deeper look to the "context"
 We now know that the context is the key between all widgets and the link between them and the data.
 Some widgets consume/read it : the odsTable widget will use it to get records and display them.
 Some widgets act/modify it : the odsTextSearch will query it by applying a search query or filter.
-Some widgets do both : the odsFacets get filters, display it, and then allow to apply a filter on the context.
+Some widgets do both : the odsFacets get filters, display them, and allow to apply a filter on the context.
 
 To go further it's now interresting to see how widget modify the context and what kind of information we can get from it.
 
@@ -673,7 +674,7 @@ Save, refresh : you should see an ugly json at the top of your page, by pretty p
 
 As it's a json, we can with AngularJS expression navigate into it's structure go get the value of any key.
 For exemple, to get the dataset title, we go from the context, to the ``dataset`` list, then to the ``metas`` list, then we can reach the title value.
-Encapsulated in a bug header html tag, it looks like this :
+Encapsulated in a big header (h1 HTML tag), it looks like this :
 
  .. code-block:: html
 
@@ -696,7 +697,7 @@ Encapsulated in a bug header html tag, it looks like this :
  .. image:: dashboard__context-1.png
 
 
-Now that we saw what the context is, we must have a look to how we can iniate it.
+Now that we saw what the context is, we must have a look to it's creation.
 The `odsDatasetContext <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsDatasetContext>`_ is used to create a context, based on a datasetid and, optionnaly other parameters.
 
 .. code-block:: html
@@ -754,7 +755,7 @@ Last test : apply a filter on any facet and observe how the ``context.parameters
 Add a record counter and last processing date
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Now that we know what is a **context**, how to access it, we will get two interresting information for a dashboard: 
+It's time to get more interresting pieces of information from this context : 
 
  - the total amount of records
  - the total number of hits matching the user query and/or filters
@@ -855,7 +856,7 @@ In our case, we will use the ``number`` filter to pretty print numerical values 
  .. note::
 
  	To "call" a filter, use pipe '|' at the end of the expression.
- 	Some filters accept specific parameters, date filter accept a date format or a date pattern.
+ 	Some filters accept specific parameters, date filter accept a date format or pattern.
  	Ex: ``expr. | date : 'M/d/yy'`` ``expr. | date : 'medium'``
 
 Save, refresh, see :
@@ -866,7 +867,7 @@ Save, refresh, see :
 Add a download link
 ~~~~~~~~~~~~~~~~~~~
 
-As the export tab of each dataset, we can export only filtered records, it's interresting to have a link or button to do the same in some analytics dashboard for offline use of the data.
+As the export tab of each datasets in OpenDataSoft platform, we can export only filtered records, it's interresting to have a link or button to do the same (for offline use of the data for exemple).
 
 The `odsDatasetContext <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsDatasetContext>`_ documentation describes some function that can be directly called on the context. ``getdownloadURL`` accepts 2 parameters, the first one is the format extension, the second one the list of specific fields. 
 In our case, we will add a button (a link with a CSS class that gives any element a nice button style) to export records in CSV format.
@@ -878,7 +879,7 @@ In our case, we will add a button (a link with a CSS class that gives any elemen
         	Download this selection
     </a>
 
-Save, refresh and test to apply some filters, and download the CSV export :
+Save, refresh, test to apply some filters, then download the CSV export :
 
  .. image:: dashboard__add-download-link.png
 
@@ -916,14 +917,16 @@ Let's go back to the explore dataset view, go to the analyse tab, and set-up a n
 	 - X axis : immatriculation date, month level
 	 - Y : pie chart, Y axis : count
 
-Copy and paste the widget code below the other chart. Remove the new pasted context declaration, change the context name if needed to plug the chart with the page context.
+- Copy and paste the widget code below the chart. 
+- Remove the pasted context declaration
+- Change the context name used in this new chart (if needed).
 
 We can now use the ``ng-if`` directive on each widget to display one or the other.
 
-The condition will be, if a refine is applied on the context, show one, or show another.
+The condition will be, `if a refine is applied on the context`, show or hide.
 We saw that the refine list is available in ``context.parameters``. As parameters is a key value dictionnary, to get the ``myfield`` refine parameter, we try to access : ``mycontext.parameters['refine.myfield']``
 
-Applied to our datasets it's looks like this :
+Applied to our dataset it's looks like this :
 
  .. code-block:: html
 
@@ -947,7 +950,7 @@ Applied to our datasets it's looks like this :
 
  .. note::
 
- 	- The region chart ng-if condition can be translated to `Show the chart if their is a refine on the **ville** facet`
+ 	- The region chart ng-if condition can be translated to `Show the chart if there is a refine on the **ville** facet`
 	- ``!`` character is to get the opposite, the condition can be translated to `Show the chart if their is NO refine on the **ville** facet`
 	- To easily understand how it works, do not hesitate to display the ``context.parameters`` value in your dashboard each time you use it !
 
@@ -968,7 +971,7 @@ Same technique, if ``context.q`` or ``context.parameters['refine.myfilter']`` ex
 
 
 ng-init / ng-click / ng-if /ng-class : Create tabs to switch views
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This exemple will use 4 differents directives.
 
@@ -1045,10 +1048,7 @@ Then, on each content block, add a ``ng-if`` condition to display it :
 
 Save, refresh, and test, you should now see that, by clicking on the tab button, the content is changing !
 
-Now, it needs some CSS code to have :
-
- - a tab buttons with a real button style, we already used it : ``ods-button ods-button--primary`` plus a ``item`` class
- - all tab buttons on the same line : ``items`` class on the list (``ul``)
+Now, it needs some CSS to have a real button style, we already used it : ``ods-button ods-button--primary``. Let's also add a ``items`` and ``item`` class.
 
 This looks like : 
 
@@ -1191,7 +1191,7 @@ The main content looks like this :
 
 
 
-Center tab buttons :
+to center tab buttons, edit the CSS code with :
 
  .. code-block:: css
 
@@ -1207,6 +1207,3 @@ Center tab buttons :
 And finally, save, refresh :
 
  .. image:: dashboard__with-tab.png
-
-
-

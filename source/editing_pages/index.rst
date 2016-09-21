@@ -18,7 +18,7 @@ Content pages can be used to:
    create
    style
    integrate_content
-   dashboard
-   advanced_dashboard
+   tutorials
+   appendix_widget_list
 
 TODO: Integrate grid layout advanced documentation
