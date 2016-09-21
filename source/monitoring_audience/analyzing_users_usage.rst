@@ -65,7 +65,7 @@ There are seven indicators :
     .. image:: usage__users-usage-5-fr.jpg
         :alt: Usage Utilisateur Indicateur Utilisateurs Mobiles
 
-6. **Top 5 users**: The people who use your API or your data the most. Keep in mind that if somebody downloads a dataset and develops something on his laptop, you wont be able to know it and it won't appear here.
+6. **Top 5 users**: The people who use your API or your data the most. Keep in mind that if somebody downloads a dataset and develops something on his laptop, you won't be able to know it and it won't appear here.
 
 .. ifconfig:: language == 'en'
 
