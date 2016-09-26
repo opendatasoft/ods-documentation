@@ -1,4 +1,0 @@
-Appendix : Widget list
-======================
-
-Hello
