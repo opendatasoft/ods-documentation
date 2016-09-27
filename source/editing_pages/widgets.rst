@@ -361,5 +361,10 @@ It will regularely be enriched with new guides and use cases, so keep in touch !
 
    	widgets/contact_form
    	widgets/pages_list
-	widgets/dashboard
+	  widgets/dashboard
    	widgets/advanced_dashboard
+   	widgets/maps
+    widgets/charts
+    widgets/others_display
+
+

@@ -18,6 +18,3 @@ Content pages can be used to:
    create
    style
    integrate_content
-   widgets
-
-TODO: Integrate grid layout advanced documentation

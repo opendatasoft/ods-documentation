@@ -1,16 +1,11 @@
-Going further with advanced widgets
-===================================
+Metrics/KPI and Data tables
+================================
 
 Charts, Maps, tables, calendar are default views. Lot of additionnal parameters are waiting for you in the documentation. 
 In the mean time, a lot of other widgets are as insterested as the main ones.
 
+Please have a look to the `widget list </editing_pages/integrate_content.html#widgets-list>`_ for more information.
 
- - iterate over records : `odsResultEnumerator <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsResultEnumerator>`_
- - iterate over values in a filter : `odsFacetResults <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsFacetResults>`_
- - get computed values of a chart analysis : `odsAnalysis <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsAnalysis>`_
- - compute an aggregation (SUM, AVG, MIN, MAX of a field) : `odsAggregation <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsAggregation>`_ 
- - a gauge chart to display speed'o'meter like gauge : `odsGauge <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsGauge>`_ 
- - and more...
 
 Pick up a dataset
 ~~~~~~~~~~~~~~~~~
@@ -752,18 +747,4 @@ Some CSS to render the HTML table nicely :
 Save, refresh, play with filters :
 
  .. image:: advanced__data-table-2.png
-
-
-Custom map tooltip
-~~~~~~~~~~~~~~~~~~
-
-To write
-
-Refine-on-click widgets
-~~~~~~~~~~~~~~~~~~~~~~~
-
-To write
-
-Overright Facet look
-~~~~~~~~~~~~~~~~~~~~
 
