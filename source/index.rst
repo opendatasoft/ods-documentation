@@ -16,3 +16,4 @@ Welcome to OpenDataSoft documentation!
    using_api/index
    faq
    glossary
+   accessibility
