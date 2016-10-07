@@ -2,6 +2,7 @@
 
 FTP harvester
 =============
+
 Synchronized files and metadata stored on a ftp website
 
 Parameters

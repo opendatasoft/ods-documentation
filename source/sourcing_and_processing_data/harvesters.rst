@@ -16,8 +16,9 @@ Global overview:
 
 
 Through the harvesters, OpenDataSoft provides a solution to:
-1.	Bootstrap your domain with datasets from an existing portal
-2.	Keep your datasets synchronised with a service
+
+1. Bootstrap your domain with datasets from an existing portal
+2. Keep your datasets synchronised with a service
 
 A harvester is in charge to create, update and delete datasets.
 
@@ -37,6 +38,7 @@ Service
 ~~~~~~~
 * :doc:`CSW</sourcing_and_processing_data/harvesters/csw>`
 * :doc:`FTP</sourcing_and_processing_data/harvesters/ftp>`
+* :doc:`FTP with meta CSV</sourcing_and_processing_data/harvesters/ftp_with_meta_csv>`
 
 Harvest
 -------

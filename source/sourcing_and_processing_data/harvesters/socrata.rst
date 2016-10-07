@@ -2,7 +2,9 @@
 
 Ckan harvester
 ==============
+
 Get the dataset from an Socrata portal
+
 Parameters
 ----------
 
@@ -12,6 +14,6 @@ Parameters
    * * Name
      * Description
      * Example
-   * * url
-     * The base url of the portal
-     * FIXME
+   * * URL (url)
+     * The base URL of the portal
+     * https://data.cityofboston.gov
