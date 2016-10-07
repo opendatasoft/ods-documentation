@@ -7,13 +7,16 @@ This tool provides a nice interface to extract information from multiple dataset
 
 It is accessible on a top menu link under the codename `Cartograph`.
 
-You start with an empty layer, on which you can add a dataset. You can filter it beforehand using `Filter data`
+You start with an empty map, on which you can add a dataset. The dataset can be filtered beforehand using `Filter data`
 before selection.
+
 Then you have several options to customize types of points, icons, shapes, or even heat maps.
 
-You can add multiple layers, each layer containing one or more datasets.
+You can add multiple datasets: each dataset layer can be customized with its own parameters
 
-Then you can save and share your visualization.
+With the preview mode you can check the final result
+
+At all times you can save your map to continue editing later, or share it when you are finished.
 
 Let's create a layered map of Paris' transport network.
 
@@ -32,27 +35,42 @@ See the :doc:`Mapbox integration section </customizing_look_and_feel/basemaps>` 
 First layer
 -----------
 
-Cartograph creates a first default layer, named `Layer #1` with a default color and icon.
+Cartograph starts with an empty default map in edition mode.
 
-Click on ``Add a dataset to this layer`` to start importing some data to your map.
+Click on |add_dataset| ``Start by adding a dataset`` to start importing some data to your map.
+
+.. |add_dataset| image:: add_dataset_to_basemap.svg
+  :width: 30px
 
 The list of datasets available will appear: you can search or browse by category to find your datasets.
 As usual you can preview and filter the dataset before importing it.
+
 For this example, let's take the public dataset "`Les espaces verts`" from `Open Data Paris`
 
 Click on ``Select`` to conclude the import and see them in your map.
 
-.. tip:: You can filter after importing using the |edit| button. You can iteratively refine your filter!
-
-.. |edit| image:: edit.png
+.. tip:: You can filter after importing using ``Edit``, then ``Change filter``
 
 
+Under the layers panel, you can choose between different visualizations types.
 
-Stacking layers
----------------
+By default the selected layer view is `Dots and shapes`. Whether it's dots or shapes depends on the data: in the `Espaces verts` cases you will see shapes.
 
-To complete after Cartograph v2
+Try `Cluster` view: clusters or points will appear, depending on your zoom level.
 
+The dataset author can configure the default icon and color, but you're free to change it.
+
+See :ref:`customizing-icons` for an example.
+
+
+Stacking datasets
+-----------------
+
+
+
+
+
+.. _customizing-icons:
 
 Customizing icons
 -----------------
