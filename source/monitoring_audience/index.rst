@@ -20,6 +20,7 @@ Please note that the dataset includes usage data for **at least** the **3 last m
 
    analyzing_users_usage
    analyzing_data_usage
+   analyzing_dataset_usage
    analyzing_actions_usage
    analyzing_source_data
    google_analytics
