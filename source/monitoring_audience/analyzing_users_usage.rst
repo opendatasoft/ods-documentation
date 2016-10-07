@@ -17,17 +17,17 @@ There are seven indicators :
     .. image:: usage__users-usage-1-fr.jpg
         :alt: Usage Utilisateur Indicateur Activité
 
-2. **Total API calls**: Total number of API calls.
+2. **Total users**: Estimated number of unique users who interacted with the domain
 
 .. ifconfig:: language == 'en'
 
     .. image:: usage__users-usage-2-en.jpg
-        :alt: Users Usages Total API Calls Indicator
+        :alt: Users Usages Total Users Indicator
 
 .. ifconfig:: language == 'fr'
 
     .. image:: usage__users-usage-2-fr.jpg
-        :alt: Usage Utilisateur Indicateur Total Appels API
+        :alt: Usage Actions Indicateur Nombre total d'utilisateurs
 
 3. **API Calls per user**: on average API calls per users.
 

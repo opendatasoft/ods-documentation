@@ -12,38 +12,87 @@ There are seven indicators :
 
 1. **Actions**: Frequency and distribution of administrative actions (edit and publish datasets or pages, add users to the domain etc). Gives you precious information about what your users do and how they spend their time on the platform. Also remember that like with every charts on OpenDataSoft you can filter the variables displayed by clicking on the legend labels.
 
-.. image:: usage__backoffice-usage-1-en.jpg
-    :alt: Actions
+.. ifconfig:: language == 'en'
+
+    .. image:: usage__backoffice-usage-1-en.jpg
+        :alt: Actions
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: usage__backoffice-usage-1-fr.jpg
+          :alt: Usage Data Indicateur Popularité
 
 2. **Number of users**: Number of users that had an activity on the platform during the period.
 
-.. image:: usage__backoffice-usage-2-en.jpg
-    :alt: Number of users
+.. ifconfig:: language == 'en'
+
+    .. image:: usage__backoffice-usage-2-en.jpg
+        :alt: Number of users
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: usage__backoffice-usage-2-fr.jpg
+        :alt: Nombre d'utilisateurs
 
 3. **Actions by users**: Number of actions by users during the period.
 
-.. image:: usage__backoffice-usage-3-en.jpg
-    :alt: Actions by users
+.. ifconfig:: language == 'en'
+
+    .. image:: usage__backoffice-usage-3-en.jpg
+        :alt: Actions by users
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: usage__backoffice-usage-3-fr.jpg
+        :alt: Actions par utilisateurs
 
 4. **Top 5 users**: Most active users during the period. Note that every user activity is broke down by action type.
 
-.. image:: usage__backoffice-usage-4-en.jpg
-    :alt: Top 5 users
+.. ifconfig:: language == 'en'
+
+    .. image:: usage__backoffice-usage-4-en.jpg
+        :alt: Top 5 users
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: usage__backoffice-usage-4-fr.jpg
+        :alt: Top 5 utilisateurs
 
 5. **Top 5 modified datasets**: Most modified datasets. Those are the datasets that requested the more work.
 
-.. image:: usage__backoffice-usage-5-en.jpg
-    :alt: Top 5 modified datasets
+.. ifconfig:: language == 'en'
+
+    .. image:: usage__backoffice-usage-5-en.jpg
+        :alt: Top 5 modified datasets
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: usage__backoffice-usage-5-fr.jpg
+        :alt: Top 5 jeux de données modifiés
 
 6. **Top 5 pages**: Most modified pages. Those are the pages that requested the more work.
 
-.. image:: usage__backoffice-usage-6-en.jpg
-    :alt: Top 5 pages
+.. ifconfig:: language == 'en'
+
+    .. image:: usage__backoffice-usage-6-en.jpg
+        :alt: Top 5 pages
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: usage__backoffice-usage-6-fr.jpg
+        :alt: Top 5 pages
 
 7. **Distribution of actions**: Distribution of the activity based on the number of actions.
 
-.. image:: usage__backoffice-usage-7-en.jpg
-    :alt: Distribution of actions
+.. ifconfig:: language == 'en'
+
+    .. image:: usage__backoffice-usage-7-en.jpg
+        :alt: Distribution of actions
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: usage__backoffice-usage-7-fr.jpg
+        :alt: Répartition des actions
 
 
 
