@@ -30,18 +30,31 @@ Next to this selection menu, you click on the color box to pick another color fo
 In the `Configuration` settings, click on `Appearance`, then *display values on chart*. This adds a label with a numerical value on top of each column.
 Under `Y-Axis` you can set the scientific display for the *Y* scale.
 
-Finally, add a threshold color under `Color threshold: type *17000* next *Y >* and choose another color.
+Finally, add a threshold color under `Color threshold: type *17000* next *Y >*` and choose another color.
 You can add multiple thresholds with different colors.
 
 Here is what this layer looks like with these settings and two thresholds:
 
 .. image:: chart-onelayer.png
 
-In the next section we will add another layer to our chart.
+
+Adding a serie
+--------------
+
+You can add a data representation on the same dataset by clicking on ``Add a serie``.
+
+The `X-Axis` parameters will be the same, but you can customize the type of curve and tweak the appearance parameters on the new serie.
+
+Try changing the type from ``Line`` to ``Spline`` to see a nice curve on top of the initial column chart.
+
+You can reorder the series by clicking and dragging. The series order affects the chart legend and the serie in the top has priority on the `Y-Axis` parameter.
+
+In the next section we will add another dataset to our chart.
 
 
 Stacking layers
 ---------------
+
 
 
 
