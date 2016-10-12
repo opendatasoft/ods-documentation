@@ -24,7 +24,7 @@ Embedding a Twitter timeline
 If you have an account on Twitter, you can create Twitter "widgets" from your Twitter account page, which are designed to be
 integrated in other websites (like a blog). When you create a widget, Twitter provides you with a little "code" to paste in your
 HTML code. Due to security concerns, JavaScript is blocked in OpenDataSoft pages editor, so you can't directly use the code provided
-by Twitter. However, we provide an OpenDataSoft widget to achieve this instead. 
+by Twitter. However, we provide an OpenDataSoft widget to achieve this instead.
 
 First, you need to capture the "Widget ID", which is present in the first line of the code, in the ``data-widget-id`` attribute:
 
@@ -52,7 +52,7 @@ Vimeo, or Dailymotion.
 Using widgets
 -------------
 
-When editing your page content in expert mode, you may want to use the ODS-Widgets library, which is a set of components, 
+When editing your page content in expert mode, you may want to use the ODS-Widgets library, which is a set of components,
 available as HTML elements, allowing you to natively integrate data visualizations in your page code, and building interactive
 pages by combining widgets together.
 
@@ -78,8 +78,8 @@ Widgets list
 
 odsAggregation
 """"""""""""""
- 
- - This widget exposes the results of an aggregation function on a dataset field. Can be used for example to expose the average temperature of a weather dataset. The result is exposed into a new variable that you can use in other widgets or directly in your HTML. 
+
+ - This widget exposes the results of an aggregation function on a dataset field. Can be used for example to expose the average temperature of a weather dataset. The result is exposed into a new variable that you can use in other widgets or directly in your HTML.
  - `Full documentation <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsAggregation>`_
 
 odsAnalysis
@@ -148,7 +148,7 @@ odsDisqus
 
  - This widget shows a Disqus panel where users can comment the page.
  - `Full documentation <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsDisqus>`_
- - More information about `Configuring disqus <>`_ 
+ - More information about `Configuring disqus` /!\ to be written
 
 odsDomainStatistics
 """"""""""""""""""""""""""""""
@@ -323,7 +323,7 @@ odsSocialButtons
 odsSpinner
 """"""""""""""""""""""""""""""
 
- - This widget displays the custom OpenDataSoft spinner. Its size and color match the current font's. 
+ - This widget displays the custom OpenDataSoft spinner. Its size and color match the current font's.
  - `Full documentation <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsSpinner>`_
 
 
@@ -351,7 +351,7 @@ odsTextSearch
 odsThemeBoxes
 """"""""""""""""""""""""""""""
 
- - This widget enumerates the themes available on the domain, by showing their pictos and the number of datasets they contain. 
+ - This widget enumerates the themes available on the domain, by showing their pictos and the number of datasets they contain.
  - `Full documentation <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsThemeBoxes>`_
 
 
@@ -407,7 +407,7 @@ A step by step tutorial to create a simple dashboard with data visualization, fi
 	:maxdepth: 2
 
    	dashboard/dashboard
-   	
+
 
 Going further with advanced widgets
 ---------------------------------------

@@ -9,7 +9,7 @@ Basics
  - add a map view
  - add a table view
  - add a chart
- - link them all together ! 
+ - link them all together !
  - add a text search form
  - add some filters
  - discover CSS classes for easy responsive development
@@ -45,7 +45,7 @@ Create a page
 | Go to **Backoffice -> Pages -> New page**
 | Enter a **page url** suffix, optionnaly a **Title** and **description**, then **Save**
 | Click on ``Edit in expert mode`` to directly have access to CSS/HTML code of the page.
-| 
+|
 
 You should now view this HTML code in your page :
 
@@ -62,9 +62,9 @@ From now, all the code will be added in the ``ods-box div``, like this :
 
 	<div class="container-fluid">
 	    <div class="ods-box">
-	    
+
 	        CODE HERE
-	    
+
 	    </div>
 	</div>
 
@@ -87,9 +87,9 @@ Go to your dataset, go to the map tab, then, below your map, click on ``widget``
 	<div class="container-fluid">
 	    <div class="ods-box">
 
-	        <ods-dataset-context  
-	                             context="entreprisesimmatriculeesen2016" 
-	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016" 
+	        <ods-dataset-context
+	                             context="entreprisesimmatriculeesen2016"
+	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016"
 	                             entreprisesimmatriculeesen2016-parameters="{'disjunctive.libelle':true,'disjunctive.code_postal':true,'disjunctive.ville':true,'disjunctive.region':true,'disjunctive.greffe':true,'sort':'date_d_immatriculation'}">
 	            <ods-map context="entreprisesimmatriculeesen2016" location="3,18.59479,25.24143" basemap="mapbox.light">
 	            </ods-map>
@@ -118,19 +118,19 @@ Now, still on the dataset explore screen, go to the table view (**Table** tab), 
 	<div class="container-fluid">
 	    <div class="ods-box">
 
-	        <ods-dataset-context  
-	                             context="entreprisesimmatriculeesen2016" 
-	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016" 
+	        <ods-dataset-context
+	                             context="entreprisesimmatriculeesen2016"
+	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016"
 	                             entreprisesimmatriculeesen2016-parameters="{'disjunctive.libelle':true,'disjunctive.code_postal':true,'disjunctive.ville':true,'disjunctive.region':true,'disjunctive.greffe':true,'sort':'date_d_immatriculation'}">
 	            <ods-map context="entreprisesimmatriculeesen2016" location="3,18.59479,25.24143" basemap="mapbox.light">
 	            </ods-map>
 	        </ods-dataset-context>
 
-	        <ods-dataset-context  
-	                             context="entreprisesimmatriculeesen2016" 
-	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016" 
+	        <ods-dataset-context
+	                             context="entreprisesimmatriculeesen2016"
+	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016"
 	                             entreprisesimmatriculeesen2016-parameters="{'disjunctive.libelle':true,'disjunctive.code_postal':true,'disjunctive.ville':true,'disjunctive.region':true,'disjunctive.greffe':true,'sort':'date_d_immatriculation'}">
-	            <ods-table context="entreprisesimmatriculeesen2016" 
+	            <ods-table context="entreprisesimmatriculeesen2016"
 	                       sort="date_d_immatriculation">
 	            </ods-table>
 	        </ods-dataset-context>
@@ -154,33 +154,33 @@ Y axis : ``count``
 
  .. image:: dashboard__add-a-chart-setup.png
 
-Save, refresh, it should looks like this : 
+Save, refresh, it should looks like this :
 
  .. code-block:: html
 
 	<div class="container-fluid">
 	    <div class="ods-box">
 
-	        <ods-dataset-context  
-	                             context="entreprisesimmatriculeesen2016" 
-	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016" 
+	        <ods-dataset-context
+	                             context="entreprisesimmatriculeesen2016"
+	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016"
 	                             entreprisesimmatriculeesen2016-parameters="{'disjunctive.libelle':true,'disjunctive.code_postal':true,'disjunctive.ville':true,'disjunctive.region':true,'disjunctive.greffe':true,'sort':'date_d_immatriculation'}">
 	            <ods-map context="entreprisesimmatriculeesen2016" location="2,18.59479,25.24143" basemap="mapbox.light">
 	            </ods-map>
 	        </ods-dataset-context>
 
-	        <ods-dataset-context  
-	                             context="entreprisesimmatriculeesen2016" 
-	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016" 
+	        <ods-dataset-context
+	                             context="entreprisesimmatriculeesen2016"
+	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016"
 	                             entreprisesimmatriculeesen2016-parameters="{'disjunctive.libelle':true,'disjunctive.code_postal':true,'disjunctive.ville':true,'disjunctive.region':true,'disjunctive.greffe':true,'sort':'date_d_immatriculation'}">
-	            <ods-table context="entreprisesimmatriculeesen2016" 
+	            <ods-table context="entreprisesimmatriculeesen2016"
 	                       sort="date_d_immatriculation">
 	            </ods-table>
 	        </ods-dataset-context>
 
-	        <ods-dataset-context  
-	                             context="entreprisesimmatriculeesen2016" 
-	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016" 
+	        <ods-dataset-context
+	                             context="entreprisesimmatriculeesen2016"
+	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016"
 	                             entreprisesimmatriculeesen2016-parameters="{'disjunctive.libelle':true,'disjunctive.code_postal':true,'disjunctive.ville':true,'disjunctive.region':true,'disjunctive.greffe':true,'sort':'date_d_immatriculation'}">
 	            <ods-chart>
 	                <ods-chart-query context="entreprisesimmatriculeesen2016" field-x="region">
@@ -195,7 +195,7 @@ Save, refresh, it should looks like this :
 
  .. image:: dashboard__add-a-chart.png
 
-Link them all together ! 
+Link them all together !
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 If we draw a circle, or polygon on the map, we can filter the list of displayed items, we unfortunatly see that only the map reacts and the table or chart just **ignores** our filter !
@@ -241,15 +241,15 @@ A simple thing to do then is to keep only one, and move our widgets below this *
 	<div class="container-fluid">
 	    <div class="ods-box">
 
-	        <ods-dataset-context  
-	                             context="entreprisesimmatriculeesen2016" 
-	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016" 
+	        <ods-dataset-context
+	                             context="entreprisesimmatriculeesen2016"
+	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016"
 	                             entreprisesimmatriculeesen2016-parameters="{'disjunctive.libelle':true,'disjunctive.code_postal':true,'disjunctive.ville':true,'disjunctive.region':true,'disjunctive.greffe':true,'sort':'date_d_immatriculation'}">
 
 	            <ods-map context="entreprisesimmatriculeesen2016" location="2,18.59479,25.24143" basemap="mapbox.light">
 	            </ods-map>
 
-	            <ods-table context="entreprisesimmatriculeesen2016" 
+	            <ods-table context="entreprisesimmatriculeesen2016"
 	                       sort="date_d_immatriculation">
 	            </ods-table>
 
@@ -298,17 +298,17 @@ Now, add a search bar at the top of the dashboard :
 	<div class="container-fluid">
 	    <div class="ods-box">
 
-	        <ods-dataset-context  
-	                             context="entreprisesimmatriculeesen2016" 
-	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016" 
+	        <ods-dataset-context
+	                             context="entreprisesimmatriculeesen2016"
+	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016"
 	                             entreprisesimmatriculeesen2016-parameters="{'disjunctive.libelle':true,'disjunctive.code_postal':true,'disjunctive.ville':true,'disjunctive.region':true,'disjunctive.greffe':true,'sort':'date_d_immatriculation'}">
 
 	            <ods-text-search context="entreprisesimmatriculeesen2016"></ods-text-search>
-	            
+
 	            <ods-map context="entreprisesimmatriculeesen2016" location="2,18.59479,25.24143" basemap="mapbox.light">
 	            </ods-map>
 
-	            <ods-table context="entreprisesimmatriculeesen2016" 
+	            <ods-table context="entreprisesimmatriculeesen2016"
 	                       sort="date_d_immatriculation">
 	            </ods-table>
 
@@ -335,7 +335,7 @@ Add some filters
 ~~~~~~~~~~~~~~~~
 
 Like in the explore view, it's very interresting to have dataset filters to narrow your search.
-Ods filters widget is called `ods-facets <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsFacets>`_ 
+Ods filters widget is called `ods-facets <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsFacets>`_
 
 The simplest way is to display all facets :
 
@@ -350,7 +350,7 @@ The simplest way is to display all facets :
  	<ods-facets context="mycontext">
 	    <h3>First field</h3>
 	    <ods-facet name="myfield"></ods-facet>
-	 
+
 	    <h3>Second field</h3>
 	    <ods-facet name="mysecondfield"></ods-facet>
 	</ods-facets>
@@ -364,7 +364,7 @@ The simplest way is to display all facets :
 In this dashboard exemple, we will use 2 filters : the company activity sector, and the city !
 Add this code near the search bar :
 
- .. code-block::html 
+ .. code-block::html
 
 	<div class="container-fluid">
 	    <div class="ods-box">
@@ -402,16 +402,16 @@ Discover CSS classes for easy responsive development
 
 This dashboard starts to be nice but every widgets are in the same column, one after another without any style tuning.
 
-.. note:: 
+.. note::
 
 	At this point you need to be aware of the platform possibilities about CSS and HTML Style.
-	Please read carrefully the `responsive grid layout managment :doc:`responsive grid layout managment </customizing_look_and_feel/responsive>` documentation. 
+	Please read carrefully the `responsive grid layout managment :doc:`responsive grid layout managment </customizing_look_and_feel/responsive>` documentation.
 
 
 We will split the screen into two main areas : on the left a navigation bar, on the right the main content.
 The navigation bar will carry the search bar and filters, the content will carry the table, map and chart.
 
-It will looks like this : 
+It will looks like this :
 
  .. image:: dashboard__css-responsive-layout-1.png
 
@@ -435,25 +435,25 @@ The HTML block should then looks like this :
 
 	    <div class="ods-box">
 
-	        <ods-dataset-context  
-	                             context="entreprisesimmatriculeesen2016" 
-	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016" 
+	        <ods-dataset-context
+	                             context="entreprisesimmatriculeesen2016"
+	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016"
 	                             entreprisesimmatriculeesen2016-parameters="{'disjunctive.libelle':true,'disjunctive.code_postal':true,'disjunctive.ville':true,'disjunctive.region':true,'disjunctive.greffe':true,'sort':'date_d_immatriculation'}">
-	    
+
 	            <div class="row">
 
 	                <!-- NAVIGATION BAR -->
 	                <div class="col-md-3">
 	                        <ods-text-search />
-	                        <ods-facets />	                    
+	                        <ods-facets />
 	                </div>
 
-	                <!-- MAIN CONTENT -->            
+	                <!-- MAIN CONTENT -->
 	                <div class="col-md-9">
-	                    
+
 	                    <!-- ROW 1 : The Map -->
 	                    <div class="row">
-                            <ods-map />    
+                            <ods-map />
 	                    </div>
 
 	                    <!-- ROW 2 : Chart and table -->
@@ -462,7 +462,7 @@ The HTML block should then looks like this :
                                 <ods-table />
 	                        </div>
 
-	                        <div class="col-md-6">    
+	                        <div class="col-md-6">
                                 <ods-chart />
 	                        </div>
 	                    </div>
@@ -480,15 +480,15 @@ But the platform also provide a CSS class called ``ods-box``. It encapsulate any
 We will use it to encapsulate the navigation bar, the map, the table and the chart.
 
 
-The full HTML code is now : 
+The full HTML code is now :
 
  .. code-block:: html
 
 	<div class="container-fluid">
 	    <div class="ods-box">
-	        <ods-dataset-context  
-	                             context="entreprisesimmatriculeesen2016" 
-	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016" 
+	        <ods-dataset-context
+	                             context="entreprisesimmatriculeesen2016"
+	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016"
 	                             entreprisesimmatriculeesen2016-parameters="{'disjunctive.libelle':true,'disjunctive.code_postal':true,'disjunctive.ville':true,'disjunctive.region':true,'disjunctive.greffe':true,'sort':'date_d_immatriculation'}">
 	            <div class="row">
 
@@ -505,7 +505,7 @@ The full HTML code is now :
 	                    </div>
 	                </div>
 
-	                <!-- MAIN CONTENT -->            
+	                <!-- MAIN CONTENT -->
 	                <div class="col-md-9">
 
 	                    <!-- ROW 1 : The Map -->
@@ -518,9 +518,9 @@ The full HTML code is now :
 
 	                    <!-- ROW 2 : Chart and table -->
 	                    <div class="row">
-	                        <div class="col-md-6">        
+	                        <div class="col-md-6">
 	                            <div class="ods-box">
-	                                <ods-table context="entreprisesimmatriculeesen2016" 
+	                                <ods-table context="entreprisesimmatriculeesen2016"
 	                                           sort="date_d_immatriculation">
 	                                </ods-table>
 	                            </div>
@@ -536,7 +536,7 @@ The full HTML code is now :
 	                            </div>
 	                        </div>
 	                    </div>
-	                    
+
 	                </div>
 	            </div>
 	        </ods-dataset-context>
@@ -547,7 +547,7 @@ The full HTML code is now :
  .. image:: dashboard__css-responsive-layout-3.png
 
 
-Have a deeper look to the "context" 
+Have a deeper look to the "context"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We now know that the context is the key between all widgets and the link between them and the data.
@@ -570,13 +570,13 @@ To conclude this note, to read the context, simply add this bunch of code in an 
 
  	<div class="container-fluid">
 	    <div class="ods-box">
-	        <ods-dataset-context  
-	                             context="entreprisesimmatriculeesen2016" 
-	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016" 
+	        <ods-dataset-context
+	                             context="entreprisesimmatriculeesen2016"
+	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016"
 	                             entreprisesimmatriculeesen2016-parameters="{'disjunctive.libelle':true,'disjunctive.code_postal':true,'disjunctive.ville':true,'disjunctive.region':true,'disjunctive.greffe':true,'sort':'date_d_immatriculation'}">
-	            
+
 	            {{ entreprisesimmatriculeesen2016 }}
-	            
+
 	            <div class="row">
 
 	                <!-- NAVIGATION BAR -->
@@ -587,14 +587,14 @@ Save, refresh : you should see an ugly json at the top of your page, by pretty p
 
  .. code-block:: js
 
-	{  
+	{
 	   "name":"entreprisesimmatriculeesen2016",
 	   "type":"dataset",
 	   "domainUrl":"",
-	   "dataset":{  
+	   "dataset":{
 	      "datasetid":"entreprises-immatriculees-en-2016",
 	      "has_records":true,
-	      "metas":{  
+	      "metas":{
 	         "publisher":"Infogreffe",
 	         "domain":"fpassaniti",
 	         "license":"Licence ouverte / Open Licence",
@@ -609,22 +609,22 @@ Save, refresh : you should see an ugly json at the top of your page, by pretty p
 	         "visibility":"restricted",
 	         "data_processed":"2016-09-14T10:30:30+02:00",
 	         "metadata_processed":"2016-09-14T15:16:47+02:00",
-	         "keyword":[  
+	         "keyword":[
 	            "création",
 	            "immatriculation",
 	            "sociétés",
 	            "entreprises"
 	         ]
 	      },
-	      "features":[  
+	      "features":[
 	         "geo",
 	         "analyze",
 	         "timeserie"
 	      ],
 	      . . .
 	      "fields":         . . .,
-	      "extra_metas":{  
-	         "visualization":{  
+	      "extra_metas":{
+	         "visualization":{
 	            "map_tooltip_fields": . . .
 	            "calendar_enabled":false,
 	            "map_tooltip_html_enabled":false,
@@ -636,32 +636,32 @@ Save, refresh : you should see an ugly json at the top of your page, by pretty p
 	            "analyze_default":". . .",
 	            "calendar_tooltip_html_enabled":false
 	         },
-	         "explore":{  
+	         "explore":{
 	            "download_count":0,
 	            "feedback_enabled":false
 	         },
-	         "processing":{  
+	         "processing":{
 	            "processing_modified":"2016-06-14T12:25:59+02:00",
 	            "records_size":0,
 	            "security_last_modified":"2016-09-14T15:16:44+02:00"
 	         },
-	         "publishing":{  
+	         "publishing":{
 	            "status":"processing_all_dataset_data",
-	            "extractors":[  
+	            "extractors":[
 	               "csvfile"
 	            ],
-	            "properties":[  
+	            "properties":[
 	               "scheduled"
 	            ],
 	            "last_modified_user":"olivier.ishacian",
 	            "published":true
 	         }
 	      },
-	      "billing_plans":[  
+	      "billing_plans":[
 
 	      ]
 	   },
-	   "parameters":{  
+	   "parameters":{
 	      "disjunctive.libelle":true,
 	      "disjunctive.code_postal":true,
 	      "disjunctive.ville":true,
@@ -680,9 +680,9 @@ Encapsulated in a big header (h1 HTML tag), it looks like this :
 
 	<div class="container-fluid">
 	    <div class="ods-box">
-	        <ods-dataset-context  
-	                             context="entreprisesimmatriculeesen2016" 
-	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016" 
+	        <ods-dataset-context
+	                             context="entreprisesimmatriculeesen2016"
+	                             entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016"
 	                             entreprisesimmatriculeesen2016-parameters="{'disjunctive.libelle':true,'disjunctive.code_postal':true,'disjunctive.ville':true,'disjunctive.region':true,'disjunctive.greffe':true,'sort':'date_d_immatriculation'}">
 
 	            <h1>
@@ -702,9 +702,9 @@ The `odsDatasetContext <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods
 
 .. code-block:: html
 
-    <ods-dataset-context  
-        context="entreprisesimmatriculeesen2016" 
-        entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016" 
+    <ods-dataset-context
+        context="entreprisesimmatriculeesen2016"
+        entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016"
         entreprisesimmatriculeesen2016-parameters="{'disjunctive.libelle':true,'disjunctive.code_postal':true,'disjunctive.ville':true,'disjunctive.region':true,'disjunctive.greffe':true,'sort':'date_d_immatriculation'}">
     </ods-dataset-context>
 
@@ -720,8 +720,8 @@ Here, several disjunctive mode are set to true for 5 fields, and the last parame
 
  .. code-block:: html
 
-    <ods-dataset-context  
-        context="entreprisesimmatriculeesen2016" 
+    <ods-dataset-context
+        context="entreprisesimmatriculeesen2016"
         entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016">
     </ods-dataset-context>
 
@@ -732,12 +732,12 @@ In your code add :
  .. code-block:: html
 
 	{{ entreprisesimmatriculeesen2016.parameters }}
-    
+
 Save, refresh, and see :
 
  .. code-block:: js
 
-	"parameters":{  
+	"parameters":{
 		"sort":"date_d_immatriculation"
     }
 
@@ -755,7 +755,7 @@ Last test : apply a filter on any facet and observe how the ``context.parameters
 Add a record counter and last processing date
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-It's time to get more interresting pieces of information from this context : 
+It's time to get more interresting pieces of information from this context :
 
  - the total amount of records
  - the total number of hits matching the user query and/or filters
@@ -763,13 +763,13 @@ It's time to get more interresting pieces of information from this context :
 
  .. code-block:: js
 
-	{  
+	{
 	   "name":"entreprisesimmatriculeesen2016",
 	   . . .
-	   "dataset":{  
+	   "dataset":{
 	      "datasetid":"entreprises-immatriculees-en-2016",
 	      "has_records":true,
-	      "metas":{  
+	      "metas":{
 	         . . .
 	         "records_count":114129,
 	         . . .
@@ -796,7 +796,7 @@ Records and nhits on the top of the navigation bar, processing date at the botto
 	<!-- NAVIGATION BAR -->
         <div class="col-md-3">
             <div class="ods-box">
-                                        
+
                 <h3>
                     {{  entreprisesimmatriculeesen2016.nhits }} records
                 </h3>
@@ -805,7 +805,7 @@ Records and nhits on the top of the navigation bar, processing date at the botto
                         out of a total of {{  entreprisesimmatriculeesen2016.dataset.metas.records_count }} records in the dataset
                     </i>
                 </h5>
-                
+
                 <ods-text-search context="entreprisesimmatriculeesen2016"></ods-text-search>
                 <ods-facets context="entreprisesimmatriculeesen2016">
                     <h3>Activity</h3>
@@ -813,15 +813,15 @@ Records and nhits on the top of the navigation bar, processing date at the botto
                     <h3>City</h3>
                     <ods-facet name="ville"></ods-facet>
                 </ods-facets>
-                
+
                 <h5>
                     <i>
-                        Last modified date : {{  entreprisesimmatriculeesen2016.dataset.metas.data_processed }}                            
+                        Last modified date : {{  entreprisesimmatriculeesen2016.dataset.metas.data_processed }}
                     </i>
                 </h5>
-                
+
             </div>
-        </div>	
+        </div>
 
 Save, refresh, and see :
 
@@ -849,7 +849,7 @@ In our case, we will use the ``number`` filter to pretty print numerical values 
 
 	<h5>
 	    <i>
-	        Last modified date : {{  entreprisesimmatriculeesen2016.dataset.metas.data_processed | date : 'medium' }}                            
+	        Last modified date : {{  entreprisesimmatriculeesen2016.dataset.metas.data_processed | date : 'medium' }}
 	    </i>
 	</h5>
 
@@ -869,12 +869,12 @@ Add a download link
 
 As the export tab of each datasets in OpenDataSoft platform, we can export only filtered records, it's interresting to have a link or button to do the same (for offline use of the data for exemple).
 
-The `odsDatasetContext <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsDatasetContext>`_ documentation describes some function that can be directly called on the context. ``getdownloadURL`` accepts 2 parameters, the first one is the format extension, the second one the list of specific fields. 
+The `odsDatasetContext <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsDatasetContext>`_ documentation describes some function that can be directly called on the context. ``getdownloadURL`` accepts 2 parameters, the first one is the format extension, the second one the list of specific fields.
 In our case, we will add a button (a link with a CSS class that gives any element a nice button style) to export records in CSV format.
 
  .. code-block:: html
 
-    <a 	href="{{ entreprisesimmatriculeesen2016.getDownloadURL('csv') }}" 
+    <a 	href="{{ entreprisesimmatriculeesen2016.getDownloadURL('csv') }}"
     	class="ods-button ods-button--primary">
         	Download this selection
     </a>
@@ -917,7 +917,7 @@ Let's go back to the explore dataset view, go to the analyse tab, and set-up a n
 	 - X axis : immatriculation date, month level
 	 - Y : pie chart, Y axis : count
 
-- Copy and paste the widget code below the chart. 
+- Copy and paste the widget code below the chart.
 - Remove the pasted context declaration
 - Change the context name used in this new chart (if needed).
 
@@ -962,9 +962,9 @@ Same technique, if ``context.q`` or ``context.parameters['refine.myfilter']`` ex
 
  .. code-block:: html
 
-    <a 
+    <a
     	ng-if="entreprisesimmatriculeesen2016.parameters['q'] || entreprisesimmatriculeesen2016.parameters['refine.ville'] || entreprisesimmatriculeesen2016.parameters['refine.libelle']"
-        href="{{ entreprisesimmatriculeesen2016.getDownloadURL('csv') }}" 
+        href="{{ entreprisesimmatriculeesen2016.getDownloadURL('csv') }}"
         class="ods-button ods-button--primary">
         	Download this selection
     </a>
@@ -1036,13 +1036,13 @@ Then, on each content block, add a ``ng-if`` condition to display it :
 
 	<div class="row">
 	    <div ng-if="tab=='first'">
-	        FIRST CONTENT   
+	        FIRST CONTENT
 	    </div>
 	    <div ng-if="tab=='second'">
 	        SECOND CONTENT
 	    </div>
 	    <div ng-if="tab=='third'">
-	        THIRD CONTENT  
+	        THIRD CONTENT
 	    </div>
 	</div>
 
@@ -1050,7 +1050,7 @@ Save, refresh, and test, you should now see that, by clicking on the tab button,
 
 Now, it needs some CSS to have a real button style, we already used it : ``ods-button ods-button--primary``. Let's also add a ``items`` and ``item`` class.
 
-This looks like : 
+This looks like :
 
  .. code-block:: html
 
@@ -1081,7 +1081,7 @@ Add in the CSS block this :
 
 Last thing, still with CSS, we want to highlight with a different color witch tab is selected. We will use a predefined button also : ``ods-button--danger`` (in red)
 This CSS class must be set only for a specific condition with ``ng-class``.
-The pattern is : ``ng-class="{'css-class': variable == value}" 
+The pattern is : ``ng-class="{'css-class': variable == value}"``
 
 The final HTML looks like this :
 
@@ -1114,7 +1114,7 @@ The final HTML looks like this :
 	</div>
 
 
-Save, refresh, and try to switch tabs ! 
+Save, refresh, and try to switch tabs !
 
  .. image:: dashboard__tab-view.png
 
@@ -1126,7 +1126,7 @@ The main content looks like this :
 
  .. code-block:: html
 
-	<!-- MAIN CONTENT -->            
+	<!-- MAIN CONTENT -->
 	<div class="col-md-9">
 
 	    <!-- ROW 1 : The Map -->

@@ -99,7 +99,7 @@ odsDisqus
 
  - This widget shows a Disqus panel where users can comment the page.
  - `Full documentation <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsDisqus>`__
- - More information about `Configuring disqus <>`_
+ - More information about `Configuring disqus` /!\ to be written
 
 odsDomainStatistics
 -------------------
@@ -362,9 +362,4 @@ It will regularely be enriched with new guides and use cases, so keep in touch !
     dashboard/contact_form
     dashboard/pages_list
     dashboard/dashboard
-    widgets/advanced_dashboard
-    widgets/maps
-    widgets/charts
-    widgets/others_display
-
-
+    dashboard/advanced_dashboard
