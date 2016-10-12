@@ -412,9 +412,9 @@ A step by step tutorial to create a simple dashboard with data visualization, fi
 Going further with advanced widgets
 -----------------------------------
 
- .. toctree::
-	:maxdepth: 2
+.. toctree::
+    :maxdepth: 2
 
-   	dashboard/advanced_dashboard
+    dashboard/advanced_dashboard
     dashboard/contact_form
     dashboard/pages_list
