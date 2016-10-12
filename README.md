@@ -143,6 +143,14 @@ To reference any external page (note the trailing `_`)
     `Monty Python members <https://en.wikipedia.org/wiki/Monty_Python>`_
 ```
 
+In an array, add an empty line:
+```
+* * GeoJSON
+     * .json, .geojson
+     *
+     *
+       :doc:`Geojson </extractors/geojson>`
+```
 ### Images
 
 All images should be named following this norm:
@@ -158,3 +166,20 @@ Where:
 
 If you need to annotate images (add circles, arrows, basic text), you can download Skitch
 (https://evernote.com/skitch/). It is free and very handy for these basic edits.
+
+### Insert code
+Inlined:
+```
+``#`` or ``\``
+```
+
+Block:
+It needs double ':' and indentation
+```
+the json is::
+
+    {
+        "content": "BASE64 data",
+        "content_type": "image/jpg"
+    }
+```
