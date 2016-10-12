@@ -103,7 +103,7 @@ Glossary
    * * JSON (JavaScript Object Notation)
 
        `Source <https://en.wikipedia.org/wiki/JSON>`_
-     * JSON (JavaScript Object Notation) is an open-standard format that uses human-readable text to transmit data objects consisting of attribute–value pairs. It is the most common data format used for asynchronous browser/server communication (AJAJ), largely replacing XML which is used by AJAX.
+     * JSON (JavaScript Object Notation) is an open-standard format that uses human-readable text to transmit data objects consisting of attribute√êvalue pairs. It is the most common data format used for asynchronous browser/server communication (AJAJ), largely replacing XML which is used by AJAX.
    * * Keyword (dataset)
 
      * Keywords help understand the data content of the dataset. They are used to filter, search and browse datasets by content. Keywords are non constrained and can be typed freely.
