@@ -3,7 +3,7 @@
 CKAN harvester
 ==============
 
-Get the dataset from a CKAN portal
+Retrieve datasets from a CKAN portal.
 
 Parameters
 ----------

@@ -1,9 +1,9 @@
 :orphan: true
 
-Ckan harvester
-==============
+Socrata harvester
+=================
 
-Get the dataset from an Socrata portal
+Retrieve datasets from a Socrata portal.
 
 Parameters
 ----------

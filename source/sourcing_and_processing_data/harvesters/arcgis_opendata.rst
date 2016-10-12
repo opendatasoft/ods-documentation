@@ -1,9 +1,9 @@
 :orphan: true
 
-Arcgis OpenData harvester
+ArcGIS OpenData harvester
 =========================
 
-Get the dataset from an Arcgis OpenData portal
+Retrieve datasets from an ArcGIS OpenData portal.
 
 Parameters
 ----------

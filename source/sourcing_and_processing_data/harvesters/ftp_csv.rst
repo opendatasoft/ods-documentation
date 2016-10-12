@@ -1,7 +1,7 @@
 :orphan: true
 
-FTP harvester
-=============
+FTP CSV harvester
+=================
 
 Synchronized files and metadata stored on a ftp website
 

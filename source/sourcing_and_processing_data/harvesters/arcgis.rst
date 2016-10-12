@@ -1,9 +1,9 @@
 :orphan: true
 
-Arcgis harvester
+ArcGIS harvester
 ================
 
-Get the data from an Arcgis WebServer (FIXME).
+Retrieve datasets from an ArcGIS Server REST API.
 
 Parameters
 ----------

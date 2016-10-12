@@ -3,7 +3,7 @@
 CSW harvester
 =============
 
-Synchronized an CSW catalogue with your portal
+Retrieve datasets from a Catalog Service for the Web (CSW portal).
 
 The CSW server must provide the following capabilities:
 
