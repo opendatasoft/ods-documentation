@@ -37,7 +37,7 @@ Portal
 Service
 ~~~~~~~
 * :doc:`CSW</sourcing_and_processing_data/harvesters/csw>`
-* :doc:`FTP</sourcing_and_processing_data/harvesters/ftp>`
+* :doc:`FTP CSV</sourcing_and_processing_data/harvesters/ftp_csv>`
 * :doc:`FTP with meta CSV</sourcing_and_processing_data/harvesters/ftp_with_meta_csv>`
 
 Harvest
