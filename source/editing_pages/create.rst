@@ -42,7 +42,7 @@ The template selector shows predefined templates that you can directly use. Thes
 edit directly, to portal homepages presenting the content of the catalog.
 
 You can also choose to edit the page in **expert mode**,
-which gives you a direct access to the page's HTML and CSS, allowing you to :doc:`further customize the style of your page </editing_pages/style>`, or to :doc:`build very advanced pages using our OpenDataSoft widgets </editing_pages/dashboard>`.
+which gives you a direct access to the page's HTML and CSS, allowing you to :doc:`further customize the style of your page </editing_pages/style>`, or to :doc:`build very advanced pages using our OpenDataSoft widgets </editing_pages/dashboard/dashboard>`.
 You can switch to expert mode from any template, meaning you can use these templates as starting points for dashboards or advanced pages.
 But once you've switched to expert mode, you cannot go back.
 
