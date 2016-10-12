@@ -27,6 +27,11 @@ To build the documentation.
 make html
 ```
 
+Please be aware that Sphinx builds fully independant pages and that it only builds pages that have changed since the last build. Which means you may experience different menus on different pages unless you clean the build directory beforehand.
+```bash
+rm -r build && make html
+```
+
 To list translatable strings and retrieve their translations from transifex:
 ```bash
 make translations
