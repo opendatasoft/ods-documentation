@@ -27,7 +27,7 @@ Based on the context, the metric will update dynamically all along the user navi
 Starting from a new page, let's start by getting a context from this dataset.
 The simplest way is to go to the explore/catalog page, go to the dataset, then in the table view, copy and paste de widget code from the share links below :
 
- .. code-blocks:: html
+ .. code-block:: html
 
 	<ods-dataset-context  
 		context="regularitemensuelletgv" 
@@ -590,14 +590,15 @@ It can be seen exactly like a chart, but instead of displaying curves, columns o
 First, we will test the result by seting up the correct analysis in the analysis tab of the dataset.
 What could be interresting is to display the table of the top 10 regularity stations.
 To do so :
- - X axis : "départ" (origin station)
- - 4 series :
- 	- AVG Regularity (`Régularité`)
- 	- AVG Number of shceduled train (`nombre_de_trains_programmes`)
- 	- AVG Number of canceled train (`nombre_de_trains_annules`)
- 	- AVG Number of delayed train (`nombre_de_trains_en_retard_a_l_arrivee`)
- - sort by regularity serie
- - Number of point : 10 max
+
+- X axis : "départ" (origin station)
+    - 4 series :
+      - AVG Regularity (`Régularité`)
+      - AVG Number of shceduled train (`nombre_de_trains_programmes`)
+      - AVG Number of canceled train (`nombre_de_trains_annules`)
+      - AVG Number of delayed train (`nombre_de_trains_en_retard_a_l_arrivee`)
+- sort by regularity serie
+- Number of point : 10 max
 
  .. image:: advanced__data-table-1.png
 
@@ -652,7 +653,6 @@ Pretty print the json block :
 	         "delayed":16.135593220338983,
 	         "x":"NANCY"
 	      },
-	      . . . 7 others . . .
 	      {  
 	         "scheduled":160.64406779661016,
 	         "canceled":0.559322033898305,
