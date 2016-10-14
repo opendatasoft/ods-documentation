@@ -24,3 +24,4 @@ only see some fields and/or a subset of the dataset records.
    permissions
    groups
    access_requests
+   quotas

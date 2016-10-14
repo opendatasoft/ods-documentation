@@ -10,6 +10,7 @@ Welcome to OpenDataSoft documentation!
    creating_maps_charts/index
    configuring_portal/index
    managing_security/index
+   notifications/index
    customizing_look_and_feel/index
    monitoring_audience/index
    managing_subdomains/index
