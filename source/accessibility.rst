@@ -6,6 +6,7 @@ OpenDataSoft uses two referentials' guidelines at AA levels for Accessibility:
 *  |WCAG2|
 *  |RGAA|
 
+
 Here are a few examples of what the OpenDataSoft platform implements to improve accessibility: 
 
 * The decorative elements have WAI-ARIA attributes to avoid text-to-speech triggering
@@ -30,11 +31,11 @@ We will do our best to fix those issues in the forthcoming releases.
 
 .. |thismachine| raw:: html
 
-   <a href="http://www.thismachine.info" target="_blank">thismachine.info</a>
+   <a href="http://www.thismachine.info" target="_blank">this website</a>
 
 .. |whatismybrowser| raw:: html
 
-   <a href="https://www.whatismybrowser.com" target="_blank">whatismybrower.com</a>
+   <a href="https://www.whatismybrowser.com" target="_blank">this one</a>
 
 .. |WCAG2| raw:: html
 
