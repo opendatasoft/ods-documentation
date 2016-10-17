@@ -144,8 +144,32 @@ If you have multiple links with the same name, then you will need to transform y
     `link <http://google.com>`__
     `link <http://google.fr>`__
 ```
+To have a link send to a target="_blank", you need to use a substitution
+```
+Check this awesome |externalwebsite|
+```
+To a raw html with the target="_blank" parameter
+```
+.. |externalwebsite| raw:: html
+
+   <a href="http://www.externalwebsite.com/" target="_blank">external website</a>
+```
 
 ### Images
 
 If you need to annotate images (add circles, arrows, basic text), you can download Skitch
 (https://evernote.com/skitch/). It is free and very handy for these basic edits.
+
+### Icons from FontAwesome 
+To use an icon from FontAwesome, add a substitution between | (spaces are important)
+```
+Check this awesome |externalwebsite| |externallink|
+```
+
+To a raw html including the Font Awesome <i> link 
+```
+.. |externallink| raw:: html
+
+   <i class="fa fa-external-link" aria-hidden="true"></i>
+```
+Note that the external link decorator is added automatically. 
