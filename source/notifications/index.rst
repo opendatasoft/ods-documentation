@@ -17,7 +17,8 @@ Notification are sent on quotas when any of these conditions is reached:
 Recipients
 ~~~~~~~~~~
 
-The user with the expired quota and all users on the domain with an edit_dataset permission.
+- The user with the expired quota
+- All users on the domain with the "Edit all datasets" permission.
 
 
 Alert notifications
@@ -32,8 +33,8 @@ The following events trigger an alert notification:
 Recipients
 ~~~~~~~~~~
 
-- Users on the domain with an edit_dataset permission
-- Users on the dataset's security with an edit_dataset permission
+- Users on the domain with the "Edit all datasets" permission
+- Users on the dataset's security with the "Edit all datasets" permission
 
 
 Daily report
@@ -50,4 +51,4 @@ They are sent every day at 9AM (CET).
 Recipients
 ~~~~~~~~~~
 
-- Users on the domain with an edit_dataset permission
+- Users on the domain with the "Edit all datasets" permission
