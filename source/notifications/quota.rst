@@ -1,27 +1,26 @@
-Quota notifications
--------------------
+API calls quota notifications
+-----------------------------
 
-Notification are sent on quotas when any of these conditions is reached:
+The following API calls quotas are considered:
 
-- 80% of the authorized API calls have been reached
-- Maximum number of authorized API calls is reached
+- the number of API calls allowed in your OpenDataSoft license; this is a quota shared by all users (both authenticated and anonymous).
+- the quota allowed to a specific user; this can be configured in the back-office.
+- the quota allowed to all anonymous users; this is a quota shared by all anonymous users, and it can be configured in the back-office.
 
+A notification email is sent when any of these conditions is met:
 
-The following quota are protected:
-
-- global quota allowed in the license. A global value shared by all authenticated users and all anonymous users
-- quota allowed to an user. A custom value, can be setup via a group or specific to an user.
-- quota allowed to the anonymous user. A global value for all anonymous users.
+- 80% of the allowed API calls have been reached for a given quota
+- the maximum number of allowed API calls has been reached for a given quota
 
 
 Recipients
 ~~~~~~~~~~
 
-- The user with the expired quota
-- All users on the domain with the "Edit all datasets" permission.
+- the user with the expired quota, if the notification is triggered on the user's quota
+- all users on the domain with the "Edit all datasets" permission
 
 Sample
 ~~~~~~
 
 .. image:: quota__sample--en.png
-   :alt: Quota alert
+   :alt: API calls quota alert

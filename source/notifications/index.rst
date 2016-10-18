@@ -1,18 +1,23 @@
 Notifications
 =============
 
-Notifications are sent whenever an important event occur on the portal. They give realtime information about the health of the portal.
+Whenever an import event occurs on your portal, notification emails are sent. This gives you the opportunity to be informed in real time
+and take action if needed.
 
+Notifications are sent by email to your portal's users depending on the notification type and their permissions,
+but they are always sent by the support@opendatasoft.com address.
 
-They are sent by email, the default sender is support@opendatasoft.com, you can ask the support to change it.
+.. note::
+    If you'd like notifications to be sent from a different sender address, for example an address
+    of your own organization, please contact the support team.
 
-It’s possible for users to unsubscribe to the different notification type on their account page.
+Each user can manage their subscription to the different notification types on their account page.
 
 .. image:: user-account-notifications--en.png
    :alt: Daily report
 
 
-We found the following notifications:
+We currently provide the following notification types:
 
 .. toctree::
    :maxdepth: 1
