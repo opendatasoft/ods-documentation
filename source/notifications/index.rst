@@ -1,11 +1,10 @@
 Notifications
 =============
 
-Whenever an import event occurs on your portal, notification emails are sent. This gives you the opportunity to be informed in real time
+Whenever an important event occurs on your portal, notification emails are sent. This gives you the opportunity to be informed in real time
 and take action if needed.
 
-Notifications are sent by email to your portal's users depending on the notification type and their permissions,
-but they are always sent by the support@opendatasoft.com address.
+Notifications are sent by email to your portal's users depending on their permissions. They are always sent by the support@opendatasoft.com address.
 
 .. note::
     If you'd like notifications to be sent from a different sender address, for example an address
