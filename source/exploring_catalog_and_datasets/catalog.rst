@@ -57,6 +57,8 @@ The map filters the list by location. It will only show datasets that contain ge
 
 Click on the little rectangle button on the top left of the map to select the drawing tool, and draw a rectangle on the area you want on the map to activate the filter. To cancel a selection, just click on the rectangle button again.
 
+This feature can be enabled in the back office, in the ``Configuring`` section, under the ``Configure catalog & dataset pages`` link. See :doc:`Configure catalog & dataset pages </configuring_portal/tabs>` for more details.
+
 Filters
 ~~~~~~~
 

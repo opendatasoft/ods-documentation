@@ -53,8 +53,20 @@ At the bottom of the *Map* and *Chart* tabs, there is a widget that allows you t
 * as an **Embed** code, to embed the visualization in an iframe on a remote web site,
 * as a **Widget** code, to integrate the visualization as a widget in a content page using the OpenDataSoft ods-widgets framework.
 
+**Listing reuses**
+
+You can list reuses on the dataset page, to help promote both the reuse itself and your data. The reuses will be listed at the bottom of the information tab on each dataset page.
+You can learn more about this feature in the section :doc:`Encouraging reuses </configuring_portal/engaging>`.
+
+.. image:: img/explore__reuse--fr.png
+
 Filtering the records
 ---------------------
 
 On the left hand side of the dataset page, there is a filtering toolbar very similar to what is described in the paragraph :ref:`filtering-catalog`.
 
+
+Default tab
+-----------
+
+You can choose between the **table tab** and the **information tab** as the default tab on which a dataset is opened. See :doc:`Configure catalog & dataset pages </configuring_portal/tabs>` for more informations.

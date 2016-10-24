@@ -6,4 +6,5 @@ Configuring a portal
 
    tabs
    links
-   reuse
+   engaging
+   legals
