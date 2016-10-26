@@ -28,6 +28,8 @@ Available harvesters
 
 Portal
 ~~~~~~
+* :doc:`OpenDataSoft federation </sourcing_and_processing_data/harvesters/ods>`
+* :doc:`data.gouv.fr </sourcing_and_processing_data/harvesters/datagouv>`
 * :doc:`Arcgis </sourcing_and_processing_data/harvesters/arcgis>`
 * :doc:`Arcgis OpenData</sourcing_and_processing_data/harvesters/arcgis_opendata>`
 * :doc:`Ckan</sourcing_and_processing_data/harvesters/ckan>`

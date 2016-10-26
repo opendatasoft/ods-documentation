@@ -3,7 +3,7 @@
 FTP CSV harvester
 =================
 
-Synchronized files and metadata stored on a ftp website
+Synchronize files and metadata stored on an FTP server.
 
 Parameters
 ----------
@@ -14,21 +14,21 @@ Parameters
    * * Name
      * Description
      * Example
-   * * host
-     * The ftp host
-     * FIXME
-   * * user
-     * FIXME
-     * FIXME
-   * * password
-     * FIXME
-     * FIXME
-   * * subdir
-     * FIXME
-     * FIXME
-   * * metadata_file
-     * FIXME
-     * FIXME
-   * * metadata_joinkey
-     * FIXME
-     * FIXME
+   * * Host (host)
+     * URL of the FTP server
+     * ftp.opendatasoft.com
+   * * User (user)
+     * Your username
+     *
+   * * Password (passwd)
+     * Your password
+     *
+   * * Subdirectory (subdir)
+     * The directory containing the data you want to harvest.
+     * pub/documents
+   * * Metadata CSV filename (metadata_file)
+     * The file holding the metadata and filenames.
+     * index.csv
+   * * CSV file resource field (metadata_joinkey)
+     * This column holds a filename or an URL with the dataset resource.
+     * source_dataset
