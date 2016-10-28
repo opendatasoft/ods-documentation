@@ -33,9 +33,9 @@ Dataset information cards
 -------------------------
 
 When embedding visualizations, users have the option to display an additional information card on top of the embed.
-In the BO > Configuration > Embeds you can configure the position of this information card (top or bottom).
-[Screenshot explore embed]
-[Screenshot embedded viz (same as doc)]
 
-You can also force the display of the information card on every embed using the checkbox "Force embeds to have a dataset information card displayed at all times"
-[Screenshot]
+In the ``Embeds`` section in the ``Configuration`` menu, you can configure the position of this information card (top or bottom).
+
+.. image:: img/links__dataset-info-cards-en.png
+
+You can also force the display of the information card on every embed using the checkbox *Force embeds to have a dataset information card displayed at all times*
