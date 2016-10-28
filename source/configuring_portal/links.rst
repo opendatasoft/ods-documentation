@@ -17,7 +17,7 @@ You can enable these share buttons in the ``Social networks & sharing`` section,
 
 If a user tweets a link to a dataset on your portal, a summary can be displayed (the title and description of your dataset), associated with a Twitter account of your choice.
 
-.. image:: img/links__twittercard-en.png
+.. image:: img/links__twittercard-fr.png
 
 This is a feature provided by Twitter itself. It should works by default without additional configuration, except if your domain is not **whitelisted for summary card** by twitter.
 
