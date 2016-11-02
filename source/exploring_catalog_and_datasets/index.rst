@@ -6,5 +6,6 @@ Exploring the catalog and datasets
 
    catalog
    dataset
+   search
    dataset_updates
    export
