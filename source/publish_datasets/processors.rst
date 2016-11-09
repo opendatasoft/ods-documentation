@@ -100,6 +100,17 @@ This processor allows you to geocode full text addresses by using the ArcGIS geo
 ArcGIS API key to do so. This processor is not activated by default. Please contact the OpenDataSoft support team if
 you plan to use it.
 
+Geomasking
+~~~~~~~~~~
+
+This processor allows you to anonymize location data (**Geo Point 2D**).
+It gives a random displacement within a donut defined by an outer circle, and a smaller internal circle.
+
+The same coordinate anonymized several times:
+
+.. image:: processors-geomasking-en.jpg
+   :alt: Geomasking
+
 Dates Processors
 ----------------
 
@@ -113,7 +124,7 @@ This processor can be used to force the timezone of a datetime field. This might
 source outputs timestamps with no timezone indication.
 
 Normalize Date
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
 
 Date normalization is one of the most commonly used processors. It allows you to parse a date in a format that would otherwise not be understood by the platform.
 
