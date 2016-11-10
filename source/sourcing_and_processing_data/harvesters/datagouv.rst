@@ -1,5 +1,3 @@
-:orphan: true
-
 data.gouv.fr harvester
 ======================
 

@@ -64,16 +64,24 @@ Harvester types
 
 Portals
 ~~~~~~~
-* :doc:`OpenDataSoft federation </sourcing_and_processing_data/harvesters/ods>`
-* :doc:`data.gouv.fr </sourcing_and_processing_data/harvesters/datagouv>`
-* :doc:`Arcgis </sourcing_and_processing_data/harvesters/arcgis>`
-* :doc:`Arcgis OpenData</sourcing_and_processing_data/harvesters/arcgis_opendata>`
-* :doc:`Ckan</sourcing_and_processing_data/harvesters/ckan>`
-* :doc:`Junar</sourcing_and_processing_data/harvesters/junar>`
-* :doc:`Socrata</sourcing_and_processing_data/harvesters/socrata>`
+
+.. toctree::
+   :titlesonly:
+
+   harvesters/ods
+   harvesters/datagouv
+   harvesters/arcgis
+   harvesters/arcgis_opendata
+   harvesters/ckan
+   harvesters/junar
+   harvesters/socrata
 
 Services
 ~~~~~~~~
-* :doc:`CSW</sourcing_and_processing_data/harvesters/csw>`
-* :doc:`FTP CSV</sourcing_and_processing_data/harvesters/ftp_csv>`
-* :doc:`FTP with meta CSV</sourcing_and_processing_data/harvesters/ftp_with_meta_csv>`
+
+.. toctree::
+   :titlesonly:
+
+   harvesters/csw
+   harvesters/ftp_csv
+   harvesters/ftp_with_meta_csv
