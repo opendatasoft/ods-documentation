@@ -1,32 +1,44 @@
 Harvesters
 ==========
 
-Global overview:
-
-.. ifconfig:: language == 'en'
-
-    .. image:: harvesters_schema--en.png
-        :alt: Harvesters schema
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: harvesters_schema--fr.png
-        :alt: Schéma des moissoneurs
-
-
 Harvesters provide a way for administrators to easily create and update an important number of datasets by importing them from an external source such as a CSW catalog or an ArcGIS service, among many others.
 
 The two main usages of harvesters are:
 
-1. Bootstrap your domain with datasets from an existing portal
+1. Bootstrap your portal with datasets from an existing portal
 2. Keep your datasets synchronised with an external service
 
 The harvester will create datasets, update their metadata and resources, keep them synchronized, and publish them.
+
+.. ifconfig:: language == 'en'
+
+    .. figure:: harvesters_schema--en.png
+        :alt: Harvesters schema
+
+        Global overview
+
+.. ifconfig:: language == 'fr'
+
+    .. figure:: harvesters_schema--fr.png
+        :alt: Schéma des moissoneurs
+
+        Vue d'ensemble
+
 
 Creating a harvester
 --------------------
 
 To get started with harvesters, click on the **harvesters** menu in your backoffice, and then on **Add harvester**. You will be asked to choose the type of the portal you want to harvest, and a name for your harvester.
+
+.. ifconfig:: language == 'en'
+
+    .. image:: harvesters_page--en.png
+        :alt: Harvesters screen
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: harvesters_page--fr.png
+        :alt: Ecran des moissonneurs
 
 When you are done, click on **Create harvester** and you will be redirected to the configuration form of the harvester. As it depends on the harvester type, please refer to each harvester page below for detailed instructions.
 
@@ -34,7 +46,7 @@ Some options are available for every harvester type such as:
 
 - **Update on deletion**: if the source datasets are deleted on the harvested portal, delete them on this OpenDataSoft portal too. Otherwise, you may have datasets that are not available on the external service anymore (e.g: if they are deleted from the external service).
 - **Download resources**: download resources instead of attaching them via URL. This options allows you to detach your datasets from the remote portal by permanently copying all required data on the OpenDataSoft platform. Otherwise, your datasets will be linked to the external service and will access remote datasets via their URL for every publishing.
-- **Restrict visibility**: make the visibility of harvested datasets restricted. Otherwise, they will have the same visibility as your domain.
+- **Restrict visibility**: make the visibility of harvested datasets restricted. Otherwise, they will have the default visibility of your portal.
 - **Default metadata**, **inspire metadata**, **DCAT metadata**: allow you to override some metadata in every harvested dataset. Useful if you want to force the theme or publisher instead of using the one used on the external service.
 
 Once you are done configuring the harvester, you can click on the **Preview** button to test run it on a few datasets. If you see some titles and descriptions and they look correct, you are all set. Otherwise, please double check your configuration.

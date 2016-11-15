@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-10 16:46+0100\n"
+"POT-Creation-Date: 2016-11-15 11:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Julien Delbourgo <julien.delbourgo@opendatasoft.com>, 2016\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
@@ -23,10 +23,6 @@ msgid "Harvesters"
 msgstr "Moissonneurs"
 
 #: ../../source/publish_datasets/harvesters.rst:4
-msgid "Global overview:"
-msgstr "Vue d'ensemble :"
-
-#: ../../source/publish_datasets/harvesters.rst:17
 msgid ""
 "Harvesters provide a way for administrators to easily create and update an "
 "important number of datasets by importing them from an external source such "
@@ -37,21 +33,21 @@ msgstr ""
 " source externe telle que, par exemple, un catalogue CSW ou un service "
 "ArcGIS."
 
-#: ../../source/publish_datasets/harvesters.rst:19
+#: ../../source/publish_datasets/harvesters.rst:6
 msgid "The two main usages of harvesters are:"
 msgstr "Les deux principaux usages des moissonneurs sont :"
 
-#: ../../source/publish_datasets/harvesters.rst:21
-msgid "Bootstrap your domain with datasets from an existing portal"
+#: ../../source/publish_datasets/harvesters.rst:8
+msgid "Bootstrap your portal with datasets from an existing portal"
 msgstr ""
 "Amorcer votre domain avec des jeux de données provenant d'un portail "
 "existant"
 
-#: ../../source/publish_datasets/harvesters.rst:22
+#: ../../source/publish_datasets/harvesters.rst:9
 msgid "Keep your datasets synchronised with an external service"
 msgstr "Maintenir vos jeux de données synchronisés avec un service externe"
 
-#: ../../source/publish_datasets/harvesters.rst:24
+#: ../../source/publish_datasets/harvesters.rst:11
 msgid ""
 "The harvester will create datasets, update their metadata and resources, "
 "keep them synchronized, and publish them."
@@ -59,11 +55,15 @@ msgstr ""
 "Les moissonneurs créent les jeux de données, mettent à jour leurs "
 "métadonnées et ressources, les maintiennent à jour, et les publient."
 
-#: ../../source/publish_datasets/harvesters.rst:27
+#: ../../source/publish_datasets/harvesters.rst:18
+msgid "Global overview"
+msgstr "Vue d'ensemble"
+
+#: ../../source/publish_datasets/harvesters.rst:29
 msgid "Creating a harvester"
 msgstr "Créer un moissonneur"
 
-#: ../../source/publish_datasets/harvesters.rst:29
+#: ../../source/publish_datasets/harvesters.rst:31
 msgid ""
 "To get started with harvesters, click on the **harvesters** menu in your "
 "backoffice, and then on **Add harvester**. You will be asked to choose the "
@@ -74,7 +74,7 @@ msgstr ""
 "Choisissez ensuite le type de portail que vous souhaitez moissonner, et un "
 "nom pour votre moissonneur."
 
-#: ../../source/publish_datasets/harvesters.rst:31
+#: ../../source/publish_datasets/harvesters.rst:43
 msgid ""
 "When you are done, click on **Create harvester** and you will be redirected "
 "to the configuration form of the harvester. As it depends on the harvester "
@@ -85,11 +85,11 @@ msgstr ""
 "les différentes options spécifiques au type de moissonneur sélectionné sont "
 "disponibles ci-dessous."
 
-#: ../../source/publish_datasets/harvesters.rst:33
+#: ../../source/publish_datasets/harvesters.rst:45
 msgid "Some options are available for every harvester type such as:"
 msgstr "Certaines options sont disponibles pour tous les harvesters :"
 
-#: ../../source/publish_datasets/harvesters.rst:35
+#: ../../source/publish_datasets/harvesters.rst:47
 msgid ""
 "**Update on deletion**: if the source datasets are deleted on the harvested "
 "portal, delete them on this OpenDataSoft portal too. Otherwise, you may have"
@@ -102,7 +102,7 @@ msgstr ""
 "sont plus disponibles sur le service externe (si par exemple ils ont été "
 "supprimés de ce dernier)."
 
-#: ../../source/publish_datasets/harvesters.rst:36
+#: ../../source/publish_datasets/harvesters.rst:48
 msgid ""
 "**Download resources**: download resources instead of attaching them via "
 "URL. This options allows you to detach your datasets from the remote portal "
@@ -116,16 +116,16 @@ msgstr ""
 "plateforme OpenDataSoft. Autrement, vos jeux de données seront liées au "
 "service externe, et y accèderont via leur URL lors de chaque publication."
 
-#: ../../source/publish_datasets/harvesters.rst:37
+#: ../../source/publish_datasets/harvesters.rst:49
 msgid ""
 "**Restrict visibility**: make the visibility of harvested datasets "
-"restricted. Otherwise, they will have the same visibility as your domain."
+"restricted. Otherwise, they will have the default visibility of your portal."
 msgstr ""
 "**Limiter la visibilité** : l'accès aux jeux de données moissonnés sera "
 "limitée aux utilisateurs et groupes autorisés. Autrement, ils garderont la "
-"même visibilité que votre domaine."
+"même visibilité que votre portail."
 
-#: ../../source/publish_datasets/harvesters.rst:38
+#: ../../source/publish_datasets/harvesters.rst:50
 msgid ""
 "**Default metadata**, **inspire metadata**, **DCAT metadata**: allow you to "
 "override some metadata in every harvested dataset. Useful if you want to "
@@ -137,7 +137,7 @@ msgstr ""
 "données moissonné. Cela vous permet par exemple de forcer le thème ou le "
 "producteur au lieu de récupérer celui spécifié par le service externe."
 
-#: ../../source/publish_datasets/harvesters.rst:40
+#: ../../source/publish_datasets/harvesters.rst:52
 msgid ""
 "Once you are done configuring the harvester, you can click on the "
 "**Preview** button to test run it on a few datasets. If you see some titles "
@@ -150,11 +150,11 @@ msgstr ""
 "paraissent corrects, vous êtes prêt. Autrement, veuillez vérifier les "
 "options de configuration du moissonneur."
 
-#: ../../source/publish_datasets/harvesters.rst:43
+#: ../../source/publish_datasets/harvesters.rst:55
 msgid "Running a harvester"
 msgstr "Utiliser un moissonneur"
 
-#: ../../source/publish_datasets/harvesters.rst:45
+#: ../../source/publish_datasets/harvesters.rst:57
 msgid ""
 "The harvesting process can be quite long on external services with many "
 "datasets or with big ones, so it is split in two phases."
@@ -163,7 +163,7 @@ msgstr ""
 "externes qui contiennent de nombreux ou de gros jeux de données. Il est donc"
 " séparé en deux phases."
 
-#: ../../source/publish_datasets/harvesters.rst:47
+#: ../../source/publish_datasets/harvesters.rst:59
 msgid ""
 "First, the harvester will connect to the remote service and discover all the"
 " datasets it contains. It will then create an unpublished dataset for each "
@@ -178,7 +178,7 @@ msgstr ""
 "*Télécharger les ressources*). Cette opération a lieu lorsque vous cliquez "
 "sur le bouton **Démarrer le moissonneur**."
 
-#: ../../source/publish_datasets/harvesters.rst:48
+#: ../../source/publish_datasets/harvesters.rst:60
 msgid ""
 "Next, it will process and publish all the harvested datasets. This step can "
 "take a while. This happens when you click on the **Publish** button."
@@ -187,11 +187,11 @@ msgstr ""
 "moissonnés. Cette étape est la plus longue. Elle a lieu lorsque vous cliquez"
 " sur le bouton **Publier**."
 
-#: ../../source/publish_datasets/harvesters.rst:51
+#: ../../source/publish_datasets/harvesters.rst:63
 msgid "Editing harvested datasets"
 msgstr "Éditer les jeux de données moissonnés"
 
-#: ../../source/publish_datasets/harvesters.rst:53
+#: ../../source/publish_datasets/harvesters.rst:65
 msgid ""
 "Before publishing them, you can change the metadata of the harvested "
 "datasets. On the dataset page (information tab), you can manually override "
@@ -204,11 +204,11 @@ msgstr ""
 " votre valeur. Cette surcharge sera conservée même si vous relancez le "
 "moissonneur."
 
-#: ../../source/publish_datasets/harvesters.rst:56
+#: ../../source/publish_datasets/harvesters.rst:68
 msgid "Deleting a harvester"
 msgstr "Supprimer un moissonneur"
 
-#: ../../source/publish_datasets/harvesters.rst:58
+#: ../../source/publish_datasets/harvesters.rst:70
 msgid ""
 "When you delete a harvester by clicking the **Delete harvester** button, you"
 " can choose between keeping the harvested datasets (they will be kept as "
@@ -219,7 +219,7 @@ msgstr ""
 "moissonnées (ils deviendront des jeux de données classiques dans votre "
 "catalogue), ou les supprimer avec les moissonneur."
 
-#: ../../source/publish_datasets/harvesters.rst:60
+#: ../../source/publish_datasets/harvesters.rst:72
 msgid ""
 "If you choose to keep them, please keep in mind that you will have to handle"
 " them one by one to unpublish or delete them afterwards, and that they will "
@@ -230,14 +230,14 @@ msgstr ""
 "par un si vous le faites plus tard, et ils seront dupliqués si vous recréez "
 "un moissonneur pour le même service externe."
 
-#: ../../source/publish_datasets/harvesters.rst:63
+#: ../../source/publish_datasets/harvesters.rst:75
 msgid "Harvester types"
 msgstr "Types de moissonneurs"
 
-#: ../../source/publish_datasets/harvesters.rst:66
+#: ../../source/publish_datasets/harvesters.rst:78
 msgid "Portals"
 msgstr "Portails"
 
-#: ../../source/publish_datasets/harvesters.rst:80
+#: ../../source/publish_datasets/harvesters.rst:92
 msgid "Services"
 msgstr "Services"
