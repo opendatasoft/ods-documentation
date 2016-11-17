@@ -136,7 +136,8 @@ Users management workflow
 As an administrator, you can add users to your domain directly through your users management screen. You can also
 activate a registration workflow to let users initiate the registration process themselves.
 
-#### Manually adding users to the domain
+Manually adding users to the domain
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To do so, simply hit the **add users** button. You can then either search for an existing user on the platform
 (remember that user management is platform wide) or simply invite new users by entering their email addresses. New
