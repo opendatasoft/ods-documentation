@@ -234,6 +234,73 @@ Expression
 
 This processor makes it possible to write complex expression patterns using field values.
 
+It works similarly as formulas in a spreadsheet software, except instead of referencing cells (i.e. A1 + B2), you have to reference columns of the dataset (i.e. column_1 + column_2)
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__expression-sum-en.png
+    :alt: Expression Processor basic sum
+
+    Example of a basic sum with the Expression processor. The "Result" column contains the result of the sum (this column was not in the data source).
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__expression-sum-fr.png
+    :alt: Expression Processor basic sum
+
+    Example of a basic sum with the Expression processor. The "Result" column contains the result of the sum (this column was not in the data source).
+
+Be careful to use the **technical name** instead of the column label in the expression. This technical name can be found by clicking on the gears icon.
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__expression-technicalname-en.png
+    :alt: Expression Processor technical name
+
+    Technical name of a column
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__expression-technicalname-fr.png
+    :alt: Expression Processor technical name
+
+    Technical name of a column
+
+Here are some common use cases :
+
+- Numerical operations (like the sum example above)
+- Mathematical or text function (round, log, cosinus, change text to upper case, ...)
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__expression-function-en.png
+    :alt: Expression Processor function
+
+    Example of a mathematical function using the Expression processor
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__expression-function-fr.png
+    :alt: Expression Processor function
+
+    Example of a mathematical function using the Expression processor
+
+- Conditional expression : the idea is to create a new column (e.g for filtering) which values depends on condition on values of another column of the dataset. For example, a new column named "Anomaly Detected ?" containing YES/NO, depending of values of another column being in a certain range (see screenshot below)
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__expression-condition-en.png
+    :alt: Expression Processor conditional expression
+
+    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression if true : value if false``
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__expression-condition-fr.png
+    :alt: Expression Processor conditional expression
+
+    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression if true : value if false``
+
 The expression processor can work with both textual content and numerical content.
 
 Literal values can be either explicit literals, such as ``"this is some text"``, or ``2`` as well as field names,
@@ -257,7 +324,7 @@ The following unary, binary and ternary operators are available:
      * +, -, ``*``, /, % (euclidean division), and, &&, or, ||, >, <, >=, <=, == (evaluates to ``True`` or ``False``), &
        (concatenation of strings, evaluates to a string)
    * * Ternary operators
-     * op1 ? op2 : op3 (conditional statement)
+     * expression ? value if the expression is true : value if the expression is false (conditional statement, note that the value can be another expression)
 
 Examples:
 
