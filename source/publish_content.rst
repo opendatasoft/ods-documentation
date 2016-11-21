@@ -76,7 +76,7 @@ This overcomes classic IFrames limitations:
 * IFrames cannot interact together
 
 The ods-widgets library is an Open Source, AngularJS based framework developed and maintainted by OpenDataSoft on 
-`GitHub <https://github.com/opendatasoft/ods-widgets>`_. It comes with a complete and comprehenseive 
+`GitHub <https://github.com/opendatasoft/ods-widgets>`_. It comes with a complete and comprehensive 
 `online documentation <https://opendatasoft.github.io/ods-widgets/docs/>`_.
 
 It can be used directly in your domain's content pages (without having to load / initialize the library as this is 

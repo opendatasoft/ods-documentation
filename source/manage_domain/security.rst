@@ -120,9 +120,10 @@ may access this dataset in the exploration console or through APIs. Two addition
     .. image:: security-filters--fr.png
        :alt: Filtres de sécurité
 
-**Filters** may be used to further refine the permissions of a given user on a dataset. It is possible to restrict the
-fields a user can see by using the **available fields** selector. And it is possible to restrict the set of records a
-user can see by using the **filter query** input. The filter query shall contain any valid query language expression.
+**Filters** may be used to completely hide the data or further refine the permissions of a given user on a dataset.
+It is possible to restrict the fields a user can see by using the **available fields** selector. And it is possible
+to restrict the set of records a user can see by using the **filter query** input. The filter query shall contain
+any valid query language expression.
 
 For non restricted datasets, filters defined in the **default security** section apply to anonymous users or to
 authenticated users who do not belong to the access list.
