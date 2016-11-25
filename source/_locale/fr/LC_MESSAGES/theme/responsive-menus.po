@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-25 18:21+0100\n"
+"POT-Creation-Date: 2016-04-20 09:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2016\n"
+"Last-Translator: Jérémy Morel <jeremy.morel@opendatasoft.com>, 2016\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../../source/look_and_feel/responsive-menus.rst:2
-msgid "Designing responsive header menus"
-msgstr "Concevoir des menus responsives"
+#: ../../source/theme/responsive-menus.rst:2
+msgid "Responsive menus"
+msgstr ""
 
-#: ../../source/look_and_feel/responsive-menus.rst:5
+#: ../../source/theme/responsive-menus.rst:5
 msgid ""
 "The theme customization is not available on freemium domains (created "
 "through the `Try it for free <https://www.opendatasoft.com/discover-"
@@ -38,7 +38,7 @@ msgstr ""
 "fonctionnalité de personnalisation de thème activée, `écrivez nous ! "
 "<sales@opendatasoft.com>`_"
 
-#: ../../source/look_and_feel/responsive-menus.rst:12
+#: ../../source/theme/responsive-menus.rst:12
 msgid ""
 "This page explores in length the customization of the platform responsive "
 "menu directive. This entails a fair amount of HTML and CSS code to be "
@@ -50,15 +50,13 @@ msgstr ""
 "CSS. Vous aurez besoin de connaissances des ces deux langages pour "
 "comprendre le contenu de cette page. "
 
-#: ../../source/look_and_feel/responsive-menus.rst:16
+#: ../../source/theme/responsive-menus.rst:16
 msgid ""
-"For basic customization needs, check out :doc:`customizing your portal's "
-"theme <theme>`."
+"For basic customization needs, check out the :doc:`introduction to theme "
+"management for the portal <intro>`."
 msgstr ""
-"Pour les besoins de customisation basique, vous pouvez consulter "
-":doc:`introduction à la gestion de thèmes pour le portail <theme>`."
 
-#: ../../source/look_and_feel/responsive-menus.rst:19
+#: ../../source/theme/responsive-menus.rst:19
 msgid ""
 "One very common pattern in graphic design is to have the header menu hidden "
 "on small screens and replaced by a single toggle button, which usually "
@@ -68,7 +66,7 @@ msgstr ""
 " sur les petits écrans et remplacé par un seul bouton qui contient "
 "généralement la fameuse icône *hamburger* |hamburger|."
 
-#: ../../source/look_and_feel/responsive-menus.rst:24
+#: ../../source/theme/responsive-menus.rst:24
 msgid ""
 "Clicking this button opens or closes a drawer containing all menu items. "
 "This behaviour can be seen on `OpenDataSoft's central data repository "
@@ -79,19 +77,19 @@ msgstr ""
 "OpenDataSoft <https://data.opendatasoft.com/page/home/>`_ et sur tous les "
 "nouveaux portails."
 
-#: ../../source/look_and_feel/responsive-menus.rst:30
+#: ../../source/theme/responsive-menus.rst:30
 msgid "Closed drawer"
 msgstr "Tiroir fermé"
 
-#: ../../source/look_and_feel/responsive-menus.rst:35
+#: ../../source/theme/responsive-menus.rst:35
 msgid "Open drawer"
 msgstr "Tiroir ouvert"
 
-#: ../../source/look_and_feel/responsive-menus.rst:38
+#: ../../source/theme/responsive-menus.rst:38
 msgid "Implementation"
 msgstr "Implémentation"
 
-#: ../../source/look_and_feel/responsive-menus.rst:40
+#: ../../source/theme/responsive-menus.rst:40
 msgid ""
 "Implementing this behaviour usually means resorting heavily to *media "
 "queries*, that is CSS rules applied only for a given screen width. To "
@@ -103,11 +101,11 @@ msgstr ""
 "Pour faciliter ce travail, OpenDataSoft fournit une directive nommée ``ods-"
 "responsive-menu`` qu'il faut utiliser dans l'entête comme ceci. "
 
-#: ../../source/look_and_feel/responsive-menus.rst:56
+#: ../../source/theme/responsive-menus.rst:56
 msgid "This directive is actually an ensemble of 3 directives:"
 msgstr "Cette directive est en fait un ensemble de 3 directives : "
 
-#: ../../source/look_and_feel/responsive-menus.rst:58
+#: ../../source/theme/responsive-menus.rst:58
 msgid ""
 "``ods-responsive-menu`` (attribute directive, used as an attribute of "
 "another html tag)"
@@ -115,7 +113,7 @@ msgstr ""
 "``ods-responsive-menu`` (attribute de directive, utilisé comme attribut d'un"
 " autre tag html)"
 
-#: ../../source/look_and_feel/responsive-menus.rst:60
+#: ../../source/theme/responsive-menus.rst:60
 msgid ""
 "Used to specify (through the ``breakpoint`` attribute) the screen width (in "
 "px) under which the drawer should appear and over which things should be "
@@ -125,25 +123,25 @@ msgstr ""
 "d'écran (en px) sous laquelle le tiroir doit apparaître et au dessus de "
 "laquelle les éléments doivent être affichés normalement. "
 
-#: ../../source/look_and_feel/responsive-menus.rst:63
+#: ../../source/theme/responsive-menus.rst:63
 msgid ""
 "``ods-responsive-menu-placeholder`` (element directive used as an html tag)"
 msgstr ""
 "``ods-responsive-menu-placeholder`` (directive d'élément utilisée comme un "
 "tag html)"
 
-#: ../../source/look_and_feel/responsive-menus.rst:65
+#: ../../source/theme/responsive-menus.rst:65
 msgid ""
 "Wraps the content that will be invisible unless we are below the breakpoint."
 msgstr ""
 "Renvoie à la ligne le contenu qui sera invisible sauf si on est en dessous "
 "du ``breakpoint``."
 
-#: ../../source/look_and_feel/responsive-menus.rst:67
+#: ../../source/theme/responsive-menus.rst:67
 msgid "``ods-responsive-menu-collapsible`` (element directive)"
 msgstr "``ods-responsive-menu-collapsible`` (directive d'élément)"
 
-#: ../../source/look_and_feel/responsive-menus.rst:69
+#: ../../source/theme/responsive-menus.rst:69
 msgid ""
 "Wraps the content that will be displayed normally over the breakpoint but "
 "collapsed within the drawer below."
@@ -151,11 +149,11 @@ msgstr ""
 "Entoure le contenu qui sera affiché normalement au delà du ``breakpoint`` "
 "mais caché à l'intérieur du tiroir en deçà."
 
-#: ../../source/look_and_feel/responsive-menus.rst:72
+#: ../../source/theme/responsive-menus.rst:72
 msgid "Writing styles for the collapsed header content"
 msgstr "Styles d'écriture du contenu replié de l'entête "
 
-#: ../../source/look_and_feel/responsive-menus.rst:74
+#: ../../source/theme/responsive-menus.rst:74
 msgid ""
 "Going from an horizontal layout to a vertical layouts entails quite a few "
 "graphical changes, as demonstrated by the platform's default header."
@@ -164,15 +162,15 @@ msgstr ""
 "quelques changements graphiques, comme démontré par l'entête par défaut de "
 "la plateforme. "
 
-#: ../../source/look_and_feel/responsive-menus.rst:80
+#: ../../source/theme/responsive-menus.rst:80
 msgid "Desktop header."
 msgstr "Entête bureautique"
 
-#: ../../source/look_and_feel/responsive-menus.rst:85
+#: ../../source/theme/responsive-menus.rst:85
 msgid "Mobile header."
 msgstr "Entête mobile"
 
-#: ../../source/look_and_feel/responsive-menus.rst:87
+#: ../../source/theme/responsive-menus.rst:87
 msgid ""
 "In order for you to change the style accordingly, the ``ods-responsive-menu-"
 "collapsible`` element will wrap its content with the ``.ods-responsive-menu-"
@@ -186,21 +184,21 @@ msgstr ""
 "petit que le ``breakpint``. Ceci vous permet de séparer précisement le style"
 " pour les deux styles de disposition (horizontal et vertical). "
 
-#: ../../source/look_and_feel/responsive-menus.rst:102
+#: ../../source/theme/responsive-menus.rst:102
 msgid "Writing styles for the drawer"
 msgstr "Styles d'écriture pour le tiroir"
 
-#: ../../source/look_and_feel/responsive-menus.rst:104
+#: ../../source/theme/responsive-menus.rst:104
 msgid ""
 "If you'd like to customize the overall look of the drawer, you will need to "
-"know the name of the classes applied to elements created by the 3 "
-"directives. The code sample we saw earlier will render as:"
+"now the name of the classes applied to elements created by the 3 directives."
+" The code sample we saw earlier will render as:"
 msgstr ""
 "Si vous voulez personnaliser le style du tiroir, vous allez avoir besoin de "
 "connaître le nom des classes appliquées sur les éléments créé par les 3 "
 "directives. L'échantillon de code vu précédemment sera affiché comme ceci : "
 
-#: ../../source/look_and_feel/responsive-menus.rst:129
+#: ../../source/theme/responsive-menus.rst:129
 msgid ""
 "On top of that, the ``.ods-responsive-menu-collapsible`` element will get "
 "the class ``.ods-responsive-menu-collapsible--collapsed`` as soon as the "
