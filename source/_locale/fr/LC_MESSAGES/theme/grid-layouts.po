@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-25 18:21+0100\n"
+"POT-Creation-Date: 2016-04-20 09:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2016\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../../source/look_and_feel/grid-layouts.rst:2
-msgid "Designing responsive pages"
-msgstr "Concevoir des pages responsives"
+#: ../../source/theme/grid-layouts.rst:2
+msgid "Grid layouts"
+msgstr ""
 
-#: ../../source/look_and_feel/grid-layouts.rst:4
+#: ../../source/theme/grid-layouts.rst:4
 msgid ""
 "Like many websites, OpenDataSoft's portal uses a grid layout to position "
 "elements. A grid is the intersection of rows and columns of pre-defined "
@@ -36,7 +36,7 @@ msgstr ""
 "dans la grille. Cet outil de design a été adapté au design Web en utilisant "
 "en premier lieu des tableaux et ensuite en utilisant des éléments \"div\". "
 
-#: ../../source/look_and_feel/grid-layouts.rst:8
+#: ../../source/theme/grid-layouts.rst:8
 msgid ""
 "If you are already familiar with the whole concept of grid layouts, suffice-"
 "it to say that OpenDataSoft's grid system is largely based on `Bootstrap CSS"
@@ -48,11 +48,11 @@ msgstr ""
 "Bootstrap CSS <http://getbootstrap.com/css/#grid>`_. Vous pouvez voir la "
 "liste des `Classes disponibles`_ ci-dessous. "
 
-#: ../../source/look_and_feel/grid-layouts.rst:13
+#: ../../source/theme/grid-layouts.rst:13
 msgid "Concepts and terminology"
 msgstr "Concepts et terminologie"
 
-#: ../../source/look_and_feel/grid-layouts.rst:15
+#: ../../source/theme/grid-layouts.rst:15
 msgid ""
 "OpenDataSoft grid layout is a 12-column layout, which means that grid cells "
 "can span 1 to 12 columns at once."
@@ -61,7 +61,7 @@ msgstr ""
 "signifie que les cellules de la grille peuvent s'étendre de 1 à 12 colonnes "
 "à la fois. "
 
-#: ../../source/look_and_feel/grid-layouts.rst:17
+#: ../../source/theme/grid-layouts.rst:17
 msgid ""
 "A grid layout relies on 3 types of elements: containers, rows and columns. "
 "Containers define the overall width of the layout, rows group together cells"
@@ -76,11 +76,11 @@ msgstr ""
 "colonnes sur lesquelles elles s'étendent, sont contenues dans des lignes, "
 "qui sont elles-mêmes contenues dans des conteneurs. "
 
-#: ../../source/look_and_feel/grid-layouts.rst:21
+#: ../../source/theme/grid-layouts.rst:21
 msgid "Translated into html code:"
 msgstr "Soit en code html : "
 
-#: ../../source/look_and_feel/grid-layouts.rst:54
+#: ../../source/theme/grid-layouts.rst:54
 msgid ""
 "Will render as (colors and labels added via CSS specifically for these "
 "examples):"
@@ -88,7 +88,7 @@ msgstr ""
 "Sera affiché comme (les couleurs et les labels sont ajoutés spécifiquement "
 "par CSS pour ces exemples) :  "
 
-#: ../../source/look_and_feel/grid-layouts.rst:58
+#: ../../source/theme/grid-layouts.rst:58
 msgid ""
 "You can of course specify cells covering less than 12 columns, in which case"
 " there will be remaining white space at the end. In the case they cover more"
@@ -99,19 +99,19 @@ msgstr ""
 "couvrent plus de 12 colonnes, elle seront alors renvoyées à la ligne et "
 "crééront une nouvelle ligne. "
 
-#: ../../source/look_and_feel/grid-layouts.rst:61
+#: ../../source/theme/grid-layouts.rst:61
 msgid "Hence, this:"
 msgstr "Ainsi, ceci :"
 
-#: ../../source/look_and_feel/grid-layouts.rst:78
+#: ../../source/theme/grid-layouts.rst:78
 msgid "Will render as this:"
 msgstr "Sera affiché comme cela : "
 
-#: ../../source/look_and_feel/grid-layouts.rst:83
+#: ../../source/theme/grid-layouts.rst:83
 msgid "Responsive grid layouts"
 msgstr "Les dispositions en grille responsive."
 
-#: ../../source/look_and_feel/grid-layouts.rst:85
+#: ../../source/theme/grid-layouts.rst:85
 msgid ""
 "In webdesign, *responsive layout* means that the layout will adapt to the "
 "width of the screen it is displayed on. To be even more precise, it responds"
@@ -123,7 +123,7 @@ msgstr ""
 " la largeur du `viewport`, c'est à dire, l'espace disponible pour "
 "l'affichage qui est la largeur de la fenêtre du navigateur. "
 
-#: ../../source/look_and_feel/grid-layouts.rst:89
+#: ../../source/theme/grid-layouts.rst:89
 msgid ""
 "Responsive layouts work by defining *breakpoints*, widths in pixels marking "
 "levels at which the layout will change. Within the OpenDataSoft's platform, "
@@ -140,7 +140,7 @@ msgstr ""
 "*medium* et *large* (on utilise parfois *mobile*, *tablet*, *desktop* et "
 "*large desktop*)."
 
-#: ../../source/look_and_feel/grid-layouts.rst:94
+#: ../../source/theme/grid-layouts.rst:94
 msgid ""
 "A grid layout is designed for a given window width but can quite quickly "
 "become unsuited for other screen formats. For example, a very detailed 12 "
@@ -156,7 +156,7 @@ msgstr ""
 "disponible. On préfère ainsi avoir une disposition qui se réorganise au "
 "changement de mode."
 
-#: ../../source/look_and_feel/grid-layouts.rst:99
+#: ../../source/theme/grid-layouts.rst:99
 msgid ""
 "You may have noticed in the code snippets above that the class names for the"
 " cells ``<div class=\"col-xs-6\">col-6</div>`` include a little ``xs`` right"
@@ -173,7 +173,7 @@ msgstr ""
 "colonnes. Pour autant, on peut ajouter des classes spécifiques pour les "
 "autres modes. Par exemple : "
 
-#: ../../source/look_and_feel/grid-layouts.rst:108
+#: ../../source/theme/grid-layouts.rst:108
 msgid ""
 "This way the cell will span 6 columns in extra-small mode, 4 in small mode, "
 "2 in medium mode and only 1 in large mode."
@@ -181,7 +181,7 @@ msgstr ""
 "Ainsi, une cellule s'étendra sur 6 colonnes dans mode *extra-small*, sur 4 "
 "en mode *small*, sur 2 en mode *medium* et seulement sur 1 en mode *large*."
 
-#: ../../source/look_and_feel/grid-layouts.rst:110
+#: ../../source/theme/grid-layouts.rst:110
 msgid ""
 "You don't have to specify all 4 levels though. The classes default to a "
 "standard 12-columns span below there own display mode and keep their "
@@ -199,6 +199,6 @@ msgstr ""
 "lg-3\"></div>`` est équivalent à ``<div class=\"col-xs-12 col-sm-6 col-md-6 "
 "col-lg-3\"></div>``."
 
-#: ../../source/look_and_feel/grid-layouts.rst:117
+#: ../../source/theme/grid-layouts.rst:117
 msgid "Available classes"
 msgstr "Classes disponibles"
