@@ -209,17 +209,38 @@ If you enable user feedback on a dataset, you can use a special directive to dis
      Enabling user feedback on a dataset
 
 
-To use it, you need to have a ``context`` for the dataset and filtered on the specific record you want to display the feedback form.
+To use it, you need to have a ``context`` for the dataset filtered on the specific record you want to display the feedback form.
 
-Usage :
+Examples :
+
+- In a custom HTML tooltip :
 
   .. code-block:: html
 
-    <ods-dataset-context context="mycontext" mycontext-dataset="mydataset" mycontext-parameters="{'q': 'recordid:{{record.recordid}}'}">
+    <ods-dataset-context context="myrecordcontext" myrecordcontext-dataset="mydataset" myrecordcontext-parameters="{'q': 'recordid:{{record.recordid}}'}">
         <a href="#">
-            <span ods-dataset-feedback="" ods-dataset-feedback-dataset="mycontext.dataset" ods-dataset-feedback-record="record">
+            <span ods-dataset-feedback="" ods-dataset-feedback-dataset="myrecordcontext.dataset" ods-dataset-feedback-record="record">
                 Report a problem
             </span>
         </a>
+    </ods-dataset-context>
+
+
+- In a content page :
+
+  .. code-block:: html
+
+    <ods-dataset-context context="mycontext" mycontext-dataset="mydataset">
+        <ods-map>
+            <ods-map-layer context="mycontext">
+                <ods-dataset-context context="myrecordcontext" myrecordcontext-dataset="mydataset" myrecordcontext-parameters="{'q': 'recordid:{{record.recordid}}'}">
+                    <a href="#">
+                        <span ods-dataset-feedback="" ods-dataset-feedback-dataset="myrecordcontext.dataset" ods-dataset-feedback-record="record">
+                            Report a problem
+                        </span>
+                    </a>
+                </ods-dataset-context>                
+            </ods-map-layer>
+        </ods-map>
     </ods-dataset-context>
 
