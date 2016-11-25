@@ -187,3 +187,39 @@ description.
 
   .. image:: publish_content__ods-pages-list--en.png
      :alt: The list generated with the above use of odsPagesList
+
+
+User feedback
+^^^^^^^^^^^^^
+
+If you enable user feedback on a dataset, you can use a special directive to display a link to the feedback form to users on content pages or in map tooltips.
+
+.. ifconfig:: language == 'en'
+
+   .. figure:: publish_content__enable-feedback--en.png
+    :alt: Enable feedback
+
+    Enabling user feedback on a dataset
+
+.. ifconfig:: language == 'fr'
+
+   .. figure:: publish_content__enable-feedback--fr.png
+     :alt: Enable feedback
+
+     Enabling user feedback on a dataset
+
+
+To use it, you need to have a ``context`` for the dataset and filtered on the specific record you want to display the feedback form.
+
+Usage :
+
+  .. code-block:: html
+
+    <ods-dataset-context context="mycontext" mycontext-dataset="mydataset" mycontext-parameters="{'q': 'recordid:{{record.recordid}}'}">
+        <a href="#">
+            <span ods-dataset-feedback="" ods-dataset-feedback-dataset="mycontext.dataset" ods-dataset-feedback-record="record">
+                Report a problem
+            </span>
+        </a>
+    </ods-dataset-context>
+
