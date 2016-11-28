@@ -1,17 +1,18 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2015, OpenDataSoft
+# Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # 
 # Translators:
 # benrict <benoit.richter@opendatasoft.com>, 2016
-# Jérémy Morel <morel.jeremy@gmail.com>, 2015
+# Jérémy Morel, 2015
+# Vincent Barbaresi <vincent.barbaresi@opendatasoft.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-29 11:45+0100\n"
-"PO-Revision-Date: 2016-01-11 10:39+0000\n"
-"Last-Translator: benrict <benoit.richter@opendatasoft.com>\n"
+"POT-Creation-Date: 2016-11-17 17:13+0100\n"
+"PO-Revision-Date: 2016-10-24 08:53+0000\n"
+"Last-Translator: Vincent Barbaresi <vincent.barbaresi@opendatasoft.com>\n"
 "Language-Team: French (http://www.transifex.com/opendatasoft/documentation-5/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,10 +42,10 @@ msgstr "Adresse du service"
 msgid ""
 "In this article, we will use the words \"service root\" or \"service "
 "document\" to refer to the base address of the OData service. For the "
-"OpenDataSoft platform, this URL can be found on the `/api/odata` path, "
+"OpenDataSoft platform, this URL can be found on the ``/api/odata`` path, "
 "relative to the platform hostname. Unless stated otherwise, all addresses in"
 " the rest of this article are relative to the service root."
-msgstr "Dans le présent article, nous parlerons de \"root\", \"racine\", \"/\" ou \"adresse du service\" pour désigner l'adresse de base du service OData. Celle ci, pour la plateforme OpenDataSoft, peut se localiser en ajoutant à l'URL d'un domaine de la plateforme la chaîne de caractères `/api/odata/`."
+msgstr ""
 
 #: ../../source/api/odata/odata_basics.rst:17
 msgid "HTTP Method"
@@ -91,7 +92,7 @@ msgstr "OData-MinVersion"
 
 #: ../../source/api/odata/odata_basics.rst:37
 msgid "This header specifies the minimum version supported by the client."
-msgstr "Ce header spécifie la version  minimale du protocole comprise par le client."
+msgstr "Ce header spécifie la version minimale du protocole comprise par le client."
 
 #: ../../source/api/odata/odata_basics.rst:39
 msgid "minDataServiceVersion"
@@ -99,7 +100,7 @@ msgstr "minDataServiceVersion"
 
 #: ../../source/api/odata/odata_basics.rst:41
 msgid "This header specifies the minimum version the service should use."
-msgstr "Ce header spécifie la version  minimale du protocole à utiliser pour le service."
+msgstr "Ce header spécifie la version minimale du protocole à utiliser pour le service."
 
 #: ../../source/api/odata/odata_basics.rst:43
 msgid "OData-MaxVersion"
@@ -107,7 +108,7 @@ msgstr "OData-MaxVersion"
 
 #: ../../source/api/odata/odata_basics.rst:45
 msgid "This header specifies the maximum version supported by the client."
-msgstr "Ce header spécifie la version  maximale du protocole comprise par le client."
+msgstr "Ce header spécifie la version maximale du protocole comprise par le client."
 
 #: ../../source/api/odata/odata_basics.rst:47
 msgid "maxDataServiceVersion"
@@ -115,7 +116,7 @@ msgstr "maxDataServiceVersion"
 
 #: ../../source/api/odata/odata_basics.rst:49
 msgid "This header specifies the maximum version the service should use."
-msgstr "Ce header spécifie la version  maximale du protocole à utiliser pour le service."
+msgstr "Ce header spécifie la version maximale du protocole à utiliser pour le service."
 
 #: ../../source/api/odata/odata_basics.rst:51
 msgid ""
@@ -131,17 +132,21 @@ msgstr "Métadonnées"
 
 #: ../../source/api/odata/odata_basics.rst:58
 msgid ""
-"The metadata document is located on `/$metadata`. This documents determines "
-"the complex types used by the service, then the entity types found on the "
-"platform, the entity sets offered, and finally a set of annotation about the"
-" entity sets."
-msgstr "L'accès au document de métadonnées se fait en navigant à ``/$metadata`` suivi de n'importe quelle séquence de caractères arbitraires. Le document de métadonnées spécifie d'abord les types complexes utilisés par le service de données, puis les types d'entités existant, les ensembles d'entités proposés, et enfin des annotations sur les ensembles d'entités."
+"The metadata document is located on ``/$metadata``. This documents "
+"determines the complex types used by the service, then the entity types "
+"found on the platform, the entity sets offered, and finally a set of "
+"annotation about the entity sets."
+msgstr ""
 
-#: ../../source/api/odata/odata_basics.rst:121
+#: ../../source/api/odata/odata_basics.rst:62
+msgid "GET |url1|_"
+msgstr ""
+
+#: ../../source/api/odata/odata_basics.rst:123
 msgid "Formats"
 msgstr "Formats"
 
-#: ../../source/api/odata/odata_basics.rst:123
+#: ../../source/api/odata/odata_basics.rst:125
 msgid ""
 "The service supports ATOM and JSON formats. For the JSON formats, the "
 "\"minimal\" and \"full\" metadata levels are supported. Any request for a "
@@ -149,13 +154,13 @@ msgid ""
 "metadata level, as per the standard."
 msgstr "Le service supporte les formats ATOM et JSON. Pour le format JSON les niveaux de métadonnées minimal et full sont supportés. Une requête demandant le niveau de métadonnées none ne sera pas honorée, et le niveau minimal de métadonnées sera retourné à la place, en concordance avec la spécification en vigueur."
 
-#: ../../source/api/odata/odata_basics.rst:127
+#: ../../source/api/odata/odata_basics.rst:129
 msgid ""
 "There are two main ways of requesting a specific format: in the ``Accept`` "
 "header and in the ``$format`` REST parameter."
 msgstr "Il existe deux façons de demander un format de réponse : d'une part, on peut en faire la demande dans le header ``Accept``, et d'autre part, en tant que paramètre REST ``$format``."
 
-#: ../../source/api/odata/odata_basics.rst:129
+#: ../../source/api/odata/odata_basics.rst:131
 msgid ""
 "The format parameter, be it in the headers or in the query string, can be "
 "either the abbreviations JSON, XML or ATOM, or the exact MIME type "
@@ -165,39 +170,55 @@ msgid ""
 "3.0."
 msgstr "Le paramètre décrivant le format peut être les abréviations JSON, XML, et ATOM, ou le type MIME précis. Pour obtenir différents niveaux de métadonnées en JSON, il faut utiliser le type MIME précis et y ajouter ``;odata.metadata=<NIVEAU>`` pour la version 4.0 du protocole et ``odata=<NIVEAU>metadata`` pour la version 3.0 du protocole."
 
-#: ../../source/api/odata/odata_basics.rst:158
+#: ../../source/api/odata/odata_basics.rst:136
+msgid "GET |url2|_"
+msgstr ""
+
+#: ../../source/api/odata/odata_basics.rst:150
+msgid "GET |url3|_"
+msgstr ""
+
+#: ../../source/api/odata/odata_basics.rst:162
 msgid ""
 "To keep things simple, the rest of this article will feature examples with "
 "the JSON format, which is the default, but keep in mind that everything will"
 " work the same in the ATOM format."
 msgstr "A partir du chapitre suivant, tous les exemples seront au format JSON, par souci de simplicité, mais tous les points évoqués fonctionnent aussi bien en XML qu'en JSON."
 
-#: ../../source/api/odata/odata_basics.rst:162
+#: ../../source/api/odata/odata_basics.rst:166
 msgid "Catalog"
 msgstr "Catalogue"
 
-#: ../../source/api/odata/odata_basics.rst:164
+#: ../../source/api/odata/odata_basics.rst:168
 msgid ""
 "The service root document displays the catalog of all datasets available "
 "through the service."
 msgstr "Pour accéder au catalogue de jeux de données du service, il convient de se rendre sur la racine du service."
 
-#: ../../source/api/odata/odata_basics.rst:191
+#: ../../source/api/odata/odata_basics.rst:170
+msgid "GET |url4|_"
+msgstr ""
+
+#: ../../source/api/odata/odata_basics.rst:196
 msgid "Datasets"
 msgstr "Jeux de données"
 
-#: ../../source/api/odata/odata_basics.rst:193
+#: ../../source/api/odata/odata_basics.rst:198
 msgid ""
 "The records of a dataset can be browsed on the ``/<DATASET ID>`` page. It is"
 " easy to navigate from the service root document to a dataset by following "
 "the URL attribute of the catalog items."
 msgstr "Pour accéder aux enregistrements d'un jeu de données, il suffit de se rendre sur ``/<IDENTIFIANT DU JEU DE DONNÉES>``."
 
-#: ../../source/api/odata/odata_basics.rst:233
+#: ../../source/api/odata/odata_basics.rst:201
+msgid "GET |url5|_"
+msgstr ""
+
+#: ../../source/api/odata/odata_basics.rst:239
 msgid "Paging"
 msgstr "Pagination"
 
-#: ../../source/api/odata/odata_basics.rst:235
+#: ../../source/api/odata/odata_basics.rst:241
 msgid ""
 "Client-driven paging can be requested with the ``$top`` REST parameter to "
 "limit the size of the response, and the ``$skip`` REST parameter to define "
@@ -206,19 +227,31 @@ msgid ""
 " results will be added at the end of the payload."
 msgstr "Pour demander une pagination des résultats, on peut utiliser les paramètres REST ``$top``, représentant le nombre de résultats à retourner et ``$skip``, représentant le nombre de résultats à ignorer à partir du début. Lorsque les résultats sont paginés, et que le résultat partiel n'est pas le dernier, la réponse contient un lien vers les résultats suivants."
 
-#: ../../source/api/odata/odata_basics.rst:298
+#: ../../source/api/odata/odata_basics.rst:245
+msgid "GET |url6|_"
+msgstr ""
+
+#: ../../source/api/odata/odata_basics.rst:275
+msgid "GET |url7|_"
+msgstr ""
+
+#: ../../source/api/odata/odata_basics.rst:306
 msgid "Recherche"
 msgstr "Recherche"
 
-#: ../../source/api/odata/odata_basics.rst:300
+#: ../../source/api/odata/odata_basics.rst:308
 msgid "The ``$search`` parameter can be used to search data."
 msgstr "Pour faire une recherche dans les données, on peut spécifier le paramètre ``$search``."
 
-#: ../../source/api/odata/odata_basics.rst:348
+#: ../../source/api/odata/odata_basics.rst:310
+msgid "GET |url8|_"
+msgstr ""
+
+#: ../../source/api/odata/odata_basics.rst:357
 msgid "Restriction"
 msgstr "Selection"
 
-#: ../../source/api/odata/odata_basics.rst:350
+#: ../../source/api/odata/odata_basics.rst:359
 msgid ""
 "The ``$filter`` parameter can be used to apply a restriction on results. "
 "Supported restriction operators are ``eq`` and ``ne`` for equality and "
@@ -228,11 +261,19 @@ msgid ""
 "Expression can be negated with the ``not`` operator."
 msgstr "Pour faire une sélection dans les champs retournés, on peut spécifier le paramètre ``$filter``. Les opérateurs supportés par la plateforme OpenDataSoft sont ``eq`` et ``ne``, pour spécifier une égalité (resp. une inégalité), ``le`` et ``lt`` pour spécifier que le champ de gauche doit être inférieur (resp. strictement inférieur) au champ de droite, et enfin ``ge`` et ``gt`` pour spécifier que le champ de gauche doit être supérieur (resp. strictement supérieur) au champ de droite. Plusieurs sélections peuvent se combiner avec les opérateurs logiques ``and`` et ``or``, dans leurs sémantiques respectives habituelles. Une expression ainsi formée peut être niée en utilisant l'opérateur logique unaire ``not``."
 
-#: ../../source/api/odata/odata_basics.rst:404
+#: ../../source/api/odata/odata_basics.rst:364
+msgid "GET |url9|_"
+msgstr ""
+
+#: ../../source/api/odata/odata_basics.rst:385
+msgid "GET |url10|_"
+msgstr ""
+
+#: ../../source/api/odata/odata_basics.rst:415
 msgid "Count"
 msgstr "Compte"
 
-#: ../../source/api/odata/odata_basics.rst:406
+#: ../../source/api/odata/odata_basics.rst:417
 msgid ""
 "There are two ways of obtaining the number of records in a dataset. The "
 "first way is to use the ``$count`` REST parameter (``$inlinecount`` for "
@@ -246,35 +287,67 @@ msgid ""
 "without any other information."
 msgstr "Il existe deux façons d'obtenir le nombre d'enregistrements dans un jeu de données. La première est d'utiliser le paramètre REST ``$count`` pour la version 4.0 et ``$inlinecount`` pour la version 3.0. L'autre façon est de naviguer sur ``/<JEU DE DONNEES>/$count``. La première méthode permet d'ajouter le compte au résultat de la requête, et peut être utilisé avec les autres paramètres. Le compte sera le nombre de résultats retournés en prenant en compte les filtres et recherches demandées. La seconde méthode ne permet pas d'ajouter des paramètres ni d'obtenir d'autres résultats."
 
-#: ../../source/api/odata/odata_basics.rst:443
+#: ../../source/api/odata/odata_basics.rst:425
+msgid "GET |url11|_"
+msgstr ""
+
+#: ../../source/api/odata/odata_basics.rst:448
+msgid "GET |url12|_"
+msgstr ""
+
+#: ../../source/api/odata/odata_basics.rst:453
+msgid "2841"
+msgstr ""
+
+#: ../../source/api/odata/odata_basics.rst:456
 msgid "Sort"
 msgstr "Tri"
 
-#: ../../source/api/odata/odata_basics.rst:445
+#: ../../source/api/odata/odata_basics.rst:458
 msgid ""
 "Results returned by the service can be sorted by a field using the "
 "``$orderby`` parameter. The field name can be followed by the ``asc`` and "
 "``desc`` keywords to specify the sort order (default is ascendant)."
-msgstr "Il est possible de trier les résultats selon un champ en utilisant le paramètre ``$orderby``. On peut ajouter au nom du champ sur lequel faire le tri les mots clé ``asc`` et ``desc`` pour que le tri se fasse dans l'ordre ascendant (resp. descendant)."
+msgstr "Il est possible de trier les résultats selon un champ en utilisant le paramètre ``$orderby``. On peut ajouter au nom du champ sur lequel faire le tri les mots clé ``asc`` et ``desc`` pour que le tri se fasse dans l'ordre croissant (resp. décroissant)."
 
-#: ../../source/api/odata/odata_basics.rst:538
+#: ../../source/api/odata/odata_basics.rst:462
+msgid "GET |url13|_"
+msgstr ""
+
+#: ../../source/api/odata/odata_basics.rst:507
+msgid "GET |url14|_"
+msgstr ""
+
+#: ../../source/api/odata/odata_basics.rst:553
 msgid "Specific record"
 msgstr "Enregistrements"
 
-#: ../../source/api/odata/odata_basics.rst:540
+#: ../../source/api/odata/odata_basics.rst:555
 msgid ""
 "To access a specific record, its record id surrounded by parenthesis, can be"
 " appended to the dataset address."
 msgstr "Pour accéder à un enregistrement unique, il convient de naviguer sur l'adresse du jeu de données auquel il appartient et d'ajouter à l'adresse son recordid entre parenthèses."
 
-#: ../../source/api/odata/odata_basics.rst:559
+#: ../../source/api/odata/odata_basics.rst:557
+msgid "GET |url15|_"
+msgstr ""
+
+#: ../../source/api/odata/odata_basics.rst:575
 msgid "Projection"
 msgstr "Projection"
 
-#: ../../source/api/odata/odata_basics.rst:561
+#: ../../source/api/odata/odata_basics.rst:577
 msgid ""
 "Results can be projected over specific fields using the `$select` parameter."
 " For multiple fields to be subject of the projection, their names must be "
 "separated by a comma and an optional space. This parameter can be used with "
 "datasets and specific records."
 msgstr "On peut faire une projection pour n'obtenir que un ou plusieurs champs en utilisant le paramètre ``$select``. Lorsque l'on veut obtenir plusieurs champs, il convient de les séparer par une virgule et un espace optionnel. Ce paramètre est valide aussi bien pour les jeux de données que pour les enregistrements."
+
+#: ../../source/api/odata/odata_basics.rst:581
+msgid "GET |url16|_"
+msgstr ""
+
+#: ../../source/api/odata/odata_basics.rst:610
+msgid "GET |url17|_"
+msgstr ""

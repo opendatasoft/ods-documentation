@@ -25,9 +25,18 @@ When sending a report, please include these information:
 * **Your screenreader**
 * **A description of the issues you're encountering**
 
-\*Please include the version numbers, use |thismachine| or |whatismybrowser| to find out easily
 
+.. ifconfig:: language == 'en'
+
+ \*Please include the version numbers, use |thismachine| or |whatismybrowser| to find out easily
+
+.. ifconfig:: language == 'fr'
+  
+  \*Merci d'inclure les numéros de version, vous pouvez utiliser |thismachine_fr| ou |whatismybrowser_fr| pour trouver facilement
+  
 We will do our best to fix those issues in the forthcoming releases. 
+
+
 
 .. |thismachine| raw:: html
 
@@ -36,6 +45,14 @@ We will do our best to fix those issues in the forthcoming releases.
 .. |whatismybrowser| raw:: html
 
    <a href="https://www.whatismybrowser.com" target="_blank">this one</a>
+
+.. |thismachine_fr| raw:: html
+
+   <a href="http://www.thismachine.info" target="_blank">ce site</a>
+
+.. |whatismybrowser_fr| raw:: html
+
+   <a href="https://www.whatismybrowser.com" target="_blank">ce site</a>
 
 .. |WCAG2| raw:: html
 

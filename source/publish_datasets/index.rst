@@ -2,6 +2,7 @@ Publishing Datasets
 ===================
 
 .. toctree::
+   :maxdepth: 1
    :titlesonly:
 
    create_dataset
@@ -9,6 +10,7 @@ Publishing Datasets
    processors
    configure_visualizations
    dataset_subscriptions
+   harvesters
 
 
 Learn in a few steps how to publish your first dataset with OpenDataSoft.

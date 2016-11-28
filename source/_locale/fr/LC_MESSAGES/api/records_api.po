@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2015, OpenDataSoft
+# Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
-#
+# 
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-08 16:34+0100\n"
-"PO-Revision-Date: 2015-12-15 09:44+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2016-11-17 17:13+0100\n"
+"PO-Revision-Date: 2016-04-20 07:34+0000\n"
+"Last-Translator: benrict <benoit.richter@opendatasoft.com>\n"
 "Language-Team: French (http://www.transifex.com/opendatasoft/documentation-5/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -103,12 +103,22 @@ msgid ""
 "geofilter.polygon=(48.883086,2.379072),(48.879022,2.379930),(48.883651,2.386968)``"
 msgstr ""
 
+#: ../../source/api/records_api.rst:27 ../../source/api/records_api.rst:95
+#: ../../source/api/records_api.rst:144 ../../source/api/records_api.rst:230
+msgid "``refine.<FACET>``"
+msgstr ""
+
 #: ../../source/api/records_api.rst:28
 msgid ""
 "Facet based filtering. This parameter limits the result set to the results "
 "matching a facet value. It can be used several times for the same facet or "
 "for different facets. Examples: `` refine.city=Paris`` , `` "
 "refine.city=Paris&refine.year=2013``"
+msgstr ""
+
+#: ../../source/api/records_api.rst:29 ../../source/api/records_api.rst:99
+#: ../../source/api/records_api.rst:148 ../../source/api/records_api.rst:234
+msgid "``exclude.<FACET>``"
 msgstr ""
 
 #: ../../source/api/records_api.rst:30
@@ -153,6 +163,40 @@ msgid ""
 "the dates using the level of aggregation defined through the `` precision``"
 "  and `` periodic``  parameters. For other field types, the actual field "
 "values are used as x values."
+msgstr ""
+
+#: ../../source/api/records_api.rst:37
+msgid "``y.<SERIE>.func``"
+msgstr ""
+
+#: ../../source/api/records_api.rst:38
+msgid ""
+"The definition of the analysis aggregation function. Multiple series can be "
+"computed at once, simply name this parameter with an arbitrary serie name "
+"that you may reuse for specifying the associated aggregated expression. The "
+"list of available aggregation functions is: `` COUNT`` , `` AVG`` , `` SUM``"
+" , `` MIN`` , `` MAX`` , `` STDDEV`` , `` SUMSQUARES`` . These functions "
+"return the result of their execution on the expression provided in "
+"y.<SERIE>.expr (or simply the number of records for the `` COUNT``  "
+"function) for each value of x."
+msgstr ""
+
+#: ../../source/api/records_api.rst:39
+msgid "``y.<SERIE>.expr``"
+msgstr ""
+
+#: ../../source/api/records_api.rst:40
+msgid ""
+"Defines the value to be aggregated. This parameter is mandatory for every "
+"aggregation function but the `` COUNT``  function. The <SERIES> parameter "
+"must have the same name as the one used for the required corresponding "
+"aggregation function. The parameter may contain the name of a numeric field "
+"in the Dataset (**Int** or **Double**), or a mathematical expression (see "
+"below to get more details on the expression language)."
+msgstr ""
+
+#: ../../source/api/records_api.rst:41
+msgid "``y.<SERIE>.cumulative``"
 msgstr ""
 
 #: ../../source/api/records_api.rst:42
@@ -409,6 +453,10 @@ msgid ""
 "(default) and ``heatmap``."
 msgstr ""
 
+#: ../../source/api/records_api.rst:164
+msgid "``y.<SERIE>.fun and y.<SERIE>.expr``"
+msgstr ""
+
 #: ../../source/api/records_api.rst:165
 msgid ""
 "This API may also accept a serie definition as described in the records "
@@ -439,6 +487,12 @@ msgstr ""
 
 #: ../../source/api/records_api.rst:187
 msgid "``recordid``"
+msgstr ""
+
+#: ../../source/api/records_api.rst:188
+msgid ""
+"Part of the URL path. Identifier of the record. Example: "
+"``http://opendata.paris.fr/api/dataset/1.0/<DATASETID>/records/758885b5183fd28f14ecf39e44484fdccf/``"
 msgstr ""
 
 #: ../../source/api/records_api.rst:193
@@ -495,100 +549,3 @@ msgid ""
 "Format of the response output. One of JSON (default), JSONP, GeoJSON and "
 "GeoJSONP."
 msgstr ""
-
-#: ../../source/api/records_api.rst:27 ../../source/api/records_api.rst:95
-#: ../../source/api/records_api.rst:144 ../../source/api/records_api.rst:230
-msgid "``refine.<FACET>``"
-msgstr ""
-
-#: ../../source/api/records_api.rst:29 ../../source/api/records_api.rst:99
-#: ../../source/api/records_api.rst:148 ../../source/api/records_api.rst:234
-msgid "``exclude.<FACET>``"
-msgstr ""
-
-#: ../../source/api/records_api.rst:37
-msgid "``y.<SERIE>.func``"
-msgstr ""
-
-#: ../../source/api/records_api.rst:38
-msgid ""
-"The definition of the analysis aggregation function. Multiple series can be "
-"computed at once, simply name this parameter with an arbitrary serie name "
-"that you may reuse for specifying the associated aggregated expression. The "
-"list of available aggregation functions is: `` COUNT`` , `` AVG`` , `` SUM``"
-" , `` MIN`` , `` MAX`` , `` STDDEV`` , `` SUMSQUARES`` . These functions "
-"return the result of their execution on the expression provided in "
-"y.<SERIE>.expr (or simply the number of records for the `` COUNT``  "
-"function) for each value of x."
-msgstr ""
-
-#: ../../source/api/records_api.rst:39
-msgid "``y.<SERIE>.expr``"
-msgstr ""
-
-#: ../../source/api/records_api.rst:40
-msgid ""
-"Defines the value to be aggregated. This parameter is mandatory for every "
-"aggregation function but the `` COUNT``  function. The <SERIES> parameter "
-"must have the same name as the one used for the required corresponding "
-"aggregation function. The parameter may contain the name of a numeric field "
-"in the Dataset (**Int** or **Double**), or a mathematical expression (see "
-"below to get more details on the expression language)."
-msgstr ""
-
-#: ../../source/api/records_api.rst:41
-msgid "``y.<SERIE>.cumulative``"
-msgstr ""
-
-#: ../../source/api/records_api.rst:164
-msgid "``y.<SERIE>.fun and y.<SERIE>.expr``"
-msgstr ""
-
-#: ../../source/api/records_api.rst:188
-msgid ""
-"Part of the URL path. Identifier of the record. Example: "
-"``http://opendata.paris.fr/api/dataset/1.0/<DATASETID>/records/758885b5183fd28f14ecf39e44484fdccf/``"
-msgstr ""
-
-#~ msgid "``refine.&lt;FACET&gt;``"
-#~ msgstr ""
-
-#~ msgid "``exclude.&lt;FACET&gt;``"
-#~ msgstr ""
-
-#~ msgid "``y.&lt;SERIE&gt;.func``"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "The definition of the analysis aggregation function. Multiple series can be "
-#~ "computed at once, simply name this parameter with an arbitrary serie name "
-#~ "that you may reuse for specifying the associated aggregated expression. The "
-#~ "list of available aggregation functions is: `` COUNT`` , `` AVG`` , `` SUM``"
-#~ " , `` MIN`` , `` MAX`` , `` STDDEV`` , `` SUMSQUARES`` . These functions "
-#~ "return the result of their execution on the expression provided in "
-#~ "y.&lt;SERIE&gt;.expr (or simply the number of records for the `` COUNT``  "
-#~ "function) for each value of x."
-#~ msgstr ""
-
-#~ msgid "``y.&lt;SERIE&gt;.expr``"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Defines the value to be aggregated. This parameter is mandatory for every "
-#~ "aggregation function but the `` COUNT``  function. The &lt;SERIES&gt; "
-#~ "parameter must have the same name as the one used for the required "
-#~ "corresponding aggregation function. The parameter may contain the name of a "
-#~ "numeric field in the Dataset (**Int** or **Double**), or a mathematical "
-#~ "expression (see below to get more details on the expression language)."
-#~ msgstr ""
-
-#~ msgid "``y.&lt;SERIE&gt;.cumulative``"
-#~ msgstr ""
-
-#~ msgid "``y.&lt;SERIE&gt;.fun and y.&lt;SERIE&gt;.expr``"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Part of the URL path. Identifier of the record. Example: "
-#~ "``http://opendata.paris.fr/api/dataset/1.0/&lt;DATASETID&gt;/records/758885b5183fd28f14ecf39e44484fdccf/``"
-#~ msgstr ""

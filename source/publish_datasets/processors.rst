@@ -100,6 +100,17 @@ This processor allows you to geocode full text addresses by using the ArcGIS geo
 ArcGIS API key to do so. This processor is not activated by default. Please contact the OpenDataSoft support team if
 you plan to use it.
 
+Geomasking
+~~~~~~~~~~
+
+This processor allows you to anonymize location data (**Geo Point 2D**).
+It gives a random displacement within a donut defined by an outer circle, and a smaller internal circle.
+
+The same coordinate anonymized several times:
+
+.. image:: processors-geomasking-en.jpg
+   :alt: Geomasking
+
 Dates Processors
 ----------------
 
@@ -113,12 +124,39 @@ This processor can be used to force the timezone of a datetime field. This might
 source outputs timestamps with no timezone indication.
 
 Normalize Date
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
 
-Date normalization is one of the most commonly used processors. It allows you to parse a date in a format that would
-otherwise not be understood by the platform.
+Date normalization is one of the most commonly used processors. It allows you to parse a date in a format that would otherwise not be understood by the platform.
 
-Simply specify the date format pattern to use in the **Date format** parameter.
+The most common common case is when dates are in the DD/MM/YYYY format : by default the platform will parse dates using the MM/DD/YYYY format (US). For example January 10 2016 written 10/01/2016 (French format) will be interpreted as October 1 2016. 
+
+The Date Normalization processor can then be used to correct this problem, by simply specifying the date format pattern to use in the **Date format** parameter. In this case, the format we want is DD/MM/YYYY, which will be written **%d/%m/%Y** (see below for more details on patterns) :
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__date_norm-1--en.png
+    :alt: Date normalization processor 1/2
+
+    By default, 12/04/2016 and 03/10/2016 are interpreted respectively as December 4 2016 and March 10 2016
+
+  .. figure:: processing__date_norm-2--en.png
+    :alt: Date normalization processor 2/2
+
+    With the Date normalization processor and the pattern %d/%m/%Y (DD/MM/YYYY), the dates are interpreted as April 12 2016 and October 3 2016
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__date_norm-1--fr.png
+    :alt: Date normalization processor 1/2
+
+    By default, 12/04/2016 and 03/10/2016 are interpreted respectively as December 4 2016 and March 10 2016
+
+  .. figure:: processing__date_norm-2--fr.png
+    :alt: Date normalization processor 2/2
+
+    With the Date normalization processor and the pattern %d/%m/%Y (DD/MM/YYYY), the dates are interpreted as April 12 2016 and October 3 2016    
+
+In general, it is preferred to have date in the unambiguous format YYYY-MM-DD to avoid these problems (note that Excel files are usually not affected by these issues).
 
 A pattern is an arbitrary string containing one of the following directives.
 
@@ -196,6 +234,73 @@ Expression
 
 This processor makes it possible to write complex expression patterns using field values.
 
+It works similarly as formulas in a spreadsheet software, except instead of referencing cells (i.e. A1 + B2), you have to reference columns of the dataset (i.e. column_1 + column_2)
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__expression-sum-en.png
+    :alt: Expression Processor basic sum
+
+    Example of a basic sum with the Expression processor. The "Result" column contains the result of the sum (this column was not in the data source).
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__expression-sum-fr.png
+    :alt: Expression Processor basic sum
+
+    Example of a basic sum with the Expression processor. The "Result" column contains the result of the sum (this column was not in the data source).
+
+Be careful to use the **technical name** instead of the column label in the expression. This technical name can be found by clicking on the gears icon.
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__expression-technicalname-en.png
+    :alt: Expression Processor technical name
+
+    Technical name of a column
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__expression-technicalname-fr.png
+    :alt: Expression Processor technical name
+
+    Technical name of a column
+
+Here are some common use cases :
+
+- Numerical operations (like the sum example above)
+- Mathematical or text function (round, log, cosinus, change text to upper case, ...)
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__expression-function-en.png
+    :alt: Expression Processor function
+
+    Example of a mathematical function using the Expression processor
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__expression-function-fr.png
+    :alt: Expression Processor function
+
+    Example of a mathematical function using the Expression processor
+
+- Conditional expression : the idea is to create a new column (e.g for filtering) which values depends on condition on values of another column of the dataset. For example, a new column named "Anomaly Detected ?" containing YES/NO, depending of values of another column being in a certain range (see screenshot below)
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__expression-condition-en.png
+    :alt: Expression Processor conditional expression
+
+    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression if true : value if false``
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__expression-condition-fr.png
+    :alt: Expression Processor conditional expression
+
+    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression if true : value if false``
+
 The expression processor can work with both textual content and numerical content.
 
 Literal values can be either explicit literals, such as ``"this is some text"``, or ``2`` as well as field names,
@@ -219,7 +324,7 @@ The following unary, binary and ternary operators are available:
      * +, -, ``*``, /, % (euclidean division), and, &&, or, ||, >, <, >=, <=, == (evaluates to ``True`` or ``False``), &
        (concatenation of strings, evaluates to a string)
    * * Ternary operators
-     * op1 ? op2 : op3 (conditional statement)
+     * expression ? value if the expression is true : value if the expression is false (conditional statement, note that the value can be another expression)
 
 Examples:
 
