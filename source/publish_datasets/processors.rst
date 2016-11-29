@@ -548,7 +548,7 @@ The number of the part extracted is specified in the ``index`` parameter. Note t
 .. ifconfig:: language == 'fr'
 
   .. figure:: processing__split-text-fr.png
-    :alt: Replace Regexp
+    :alt: Split Text
 
 
 Concatenate Text
@@ -556,6 +556,23 @@ Concatenate Text
 
 This processor can be used to concatenate two fields using a separator. You'll need to define the left and right hand
 sides of the concatenation, as well as the separator and the resulting field.
+
+One common use case is to concatenate a X and Y coordinates columns in a new column with both separated by a comma, which can then be used as a ``geo point``.
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__concatenate-en.png
+    :alt: Concatenate Text
+
+    In this example, we concatenate the column X and Y in a new column Coordinates, which can then be used as a ``geo point``
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__concatenate-fr.png
+    :alt: Concatenate Text
+
+    In this example, we concatenate the column X and Y in a new column Coordinates, which can then be used as a ``geo point``
+
 
 Extract HTML
 ~~~~~~~~~~~~
