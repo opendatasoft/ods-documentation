@@ -16,5 +16,5 @@ Welcome to OpenDataSoft documentation!
    api/index
    apiv2/index
    faq
-   glossary
+   platform_glossary
    accessibility
