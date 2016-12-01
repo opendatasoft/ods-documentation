@@ -14,7 +14,7 @@ Parameters
      * Example
    * * Domain ID (domain_id)
      * The ID of the domain you want to harvest.
-     * 534fffa5a3a7292c64a7809e
+     * discovery
    * * Refines (refines)
      * The refines you want to pass to filter the query (URL encoded)
      * refine.destination=Asia&refine.origin=France
