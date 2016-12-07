@@ -3,11 +3,11 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         {% if next %}
         <a href="{{ next.link|e }}" class="btn btn-neutral float-right" title="{{ next.title|striptags|e }}"
-           accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+           accesskey="n">{{ gettext('Next') }} <span class="fa fa-arrow-circle-right"></span></a>
         {% endif %}
         {% if prev %}
         <a href="{{ prev.link|e }}" class="btn btn-neutral" title="{{ prev.title|striptags|e }}" accesskey="p"><span
-                class="fa fa-arrow-circle-left"></span> Previous</a>
+                class="fa fa-arrow-circle-left"></span> {{ gettext('Previous' ) }}</a>
         {% endif %}
     </div>
     {% endif %}
@@ -16,36 +16,36 @@
 
     <div class="slack-feedback">
         <div class="slack-feedback__question">
-            <p><span class="emoji">&#x1F914;</span> Was this article helpful?</p>
+            <p><span class="emoji">&#x1F914;</span> {{ gettext('Was this article helpful?') }}</p>
 
             <p class="slack-feedback__answers">
                 <button class="btn btn-neutral" id="yes">
-                    All good, thanks!
+                    {{ gettext('All good, thanks!') }}
                 </button>
                 <button class="btn btn-neutral" id="no">
-                    Not really no
+                    {{ gettext('Not really no') }}
                 </button>
             </p>
         </div>
 
         <div class="slack-feedback__thanks">
-            <span class="emoji">&#x1F60A;</span> Great ! Thanks for your feedback.
+            <span class="emoji">&#x1F60A;</span> {{ gettext('Great! Thanks for your feedback.') }}
         </div>
 
         <div class="slack-feedback__message-form">
-            <p><span class="emoji">&#x1F61F;</span> Sorry to hear that. Tell us what needs improvement.</p>
+            <p><span class="emoji">&#x1F61F;</span> {{ gettext('Sorry to hear that. Tell us what needs improvement.') }}</p>
             <p>
                 <textarea placeholder="Write your comment here" class="slack-feedback__message"></textarea>
             </p>
             <p>
                 <button class="slack-feedback__send-message btn btn-neutral">
-                    Send feedback
+                    {{ gettext('Send feedback') }}
                 </button>
             </p>
         </div>
 
         <div class="slack-feedback__message-sent">
-            <span class="emoji">&#x1F44D;</span> Got it! Thanks for your feedback.
+            <span class="emoji">&#x1F44D;</span> {{ gettext('Got it! Thanks for your feedback.') }}
         </div>
     </div>
 
