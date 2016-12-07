@@ -3,6 +3,8 @@ ArcGIS harvester
 
 Retrieve datasets from an ArcGIS Server REST API.
 
+This harvester is not available by default. If you need to use it, please contact OpenDataSoft support team.
+
 Parameters
 ----------
 
