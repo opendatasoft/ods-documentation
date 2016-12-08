@@ -6,7 +6,7 @@ Analyzing data
 With the `Charts` tool, you can visualize multiple datasets on a single customized chart.
 You can save your charts and easily share them, embed them, or display them as widgets.
 
-.. warning:: Charts currently takes temporal data only (i.e. X axis as dates)
+.. note:: You can also build charts with `Analyze` tab on a dataset page, but these are limited to the current dataset. With `Advanced Charts` you have much more possibilities, combining different sources from the OpenDataSoft network.
 
 
 First layer
@@ -55,7 +55,77 @@ In the next section we will add another dataset to our chart.
 Stacking layers
 ---------------
 
+Let's elaborate another data visualization, this time with multiple layers.
 
+**First Layer**
+
+We will start the same way as before, click on ``Add a dataset to this layer`` then search for "Oil Prices" to add the `Oil Prices <https://public-us.opendatasoft.com/explore/dataset/oil-prices>`_ dataset.
+
+No need to filter it, just note that the data start from year 1987. We will use 1987 as the starting point for the other layers.
+
+When you first import a dataset in Advanced Charts, the default visualization of this dataset is imported: in this case you can see two lines: `WTI Spot Price` and `Brent Spot Price`.
+
+**Second Layer**
+
+Let's add another dataset! Look for "Commodity Prices" to find `Commodity Prices since 1980 <https://public.opendatasoft.com/explore/dataset/commodity-prices-since-1980>`_ dataset from the OpenDataSoft public collection.
+
+This time, add the filter "`date>1987`" so that the X-axis will match with the first layer. Then import the ~20 000 records.
+
+The default visualization is a line with the average commodity price.
+
+You should see your query filter just under the dataset name: "`query: date>1987`".
+
+.. note:: You can click on the pencil icon |edit-pencil| of a layer to change the selected dataset or refine the query.
+
+.. |edit-pencil| image:: edit.png
+
+Under Configuration > Label, set "`Commodity Average Price`" as the alternate serie title (more accurate than the default title)
+
+This should look like this (you may have different colors): |second-layer|
+
+.. |second-layer| image:: second-layer.png
+
+**Third Layer**
+
+For the final layer, we are going to use `Global Financial Development` from WorldBank to see if there are some correlation between those.
+
+There are more than a million records: for the chart to make sense, we will limit the records to the USA. Like the previous layer, we will also keep only records after year 1987.
+
+These conditions translate to this query: "country_code: USA and year>1987`"
+
+As for the second layer, configure a more explicit label name for the legend: "Global Financial Development"
+
+
+**Last details**
+
+Let's finish with a few last details to polish the Chart appearance
+
+- Set ``Global Precision`` to `Year` instead of `Month` so that the legend reflects the data precision.
+
+- Delete `WTI Spot Price` serie (click on the X cross) and set the X-axis to a Year precision instead of Month
+
+- Choose ``Spline`` instead of ``Line`` in the Global Financi`al Development curve to smoothen the curve a bit.
+
+- Now you can type a name in ``Chart title`` and click ``Save this chart`` to save create a short URL that you can embed or share!
+
+Here are the resulting parameters:
+
+.. image:: layers-params.png
+
+And the final result of the chart:
+
+.. image:: layers-final.png
+
+Other charts examples
+---------------------
+
+**Column Chart**
+
+.. image:: column-chart.png
+
+**Polar Chart**
+
+.. image:: polar-chart-example.png
 
 
 Customizing icons
