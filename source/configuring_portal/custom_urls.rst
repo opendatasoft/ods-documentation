@@ -2,7 +2,7 @@ Customizing your domain URL
 ===========================
 
 
-When a domain is created it has one URL, in the form ``<domain>.opendatasoft.com``. As the domain URL is a very important tool for discoverability, branding and ease of access, there will often be a need to customize this URL. As such, the OpenDataSoft platform allows for adding URLs to a domain. These customization options are currently not exposed in the back office, and must be requested by sending an email to support@opendatasoft.com. The customization options are detailed below.
+When a domain is created it has one URL, in the form ``<domain>.opendatasoft.com``. As the domain URL is a very important tool for discoverability, branding and ease of access, there will often be a need to customize this URL. As such, the OpenDataSoft platform allows for adding URLs to a domain. These customization options are currently not exposed in the back office, and must be requested by using the support form in the back office. The customization options are detailed below.
 
 OpenDataSoft URLs
 -----------------
@@ -12,7 +12,7 @@ It is possible to add an additional opendatasoft URL that will be used to access
 Own subdomain
 -------------
 
-It is also possible to link your OpenDataSoft domain to a custom subdomain whose authoritative DNS server you control. For instance a company called "Example" might want to set up their domain in order to have ``data.example.com`` directing to it. This can be done in two steps: first create a DNS record of the ``CNAME`` type for your subdomain with the default URL as a value. ``A`` or ``AAAA`` types records are not supported by the platform as the IP address of your domain is susceptible to change. Then, please contact the OpenDataSoft support in order to have the URL corresponding to the subdomain registered as an alias. This step is necessary because the OpenDataSoft platform makes use of virtual hosts internally.
+It is also possible to link your OpenDataSoft domain to a custom subdomain whose authoritative DNS server you control. For instance a company called "Example" might want to set up their domain in order to have ``data.example.com`` directing to it. This can be done in two steps: first create a DNS record of the ``CNAME`` type for your subdomain with the default URL as a value. ``A`` or ``AAAA`` types records are not supported by the platform as the IP address of your domain is susceptible to change. Then, the URL corresponding to the subdomain must be registered as an alias. To do so, please contact the OpenDataSoft support by using the support form in the back office.
 
 HTTPS
 -----
