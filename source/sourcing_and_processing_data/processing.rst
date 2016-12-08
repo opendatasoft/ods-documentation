@@ -452,7 +452,7 @@ Normalize Date
 
 Date normalization is one of the most commonly used processors. It allows you to parse a date in a format that would otherwise not be understood by the platform.
 
-The most common common case is when dates are in the DD/MM/YYYY format : by default the platform will parse dates using the MM/DD/YYYY format (US). For example January 10 2016 written 10/01/2016 (French format) will be interpreted as October 1 2016. 
+The most common common case is when dates are in the DD/MM/YYYY format : by default the platform will parse dates using the MM/DD/YYYY format (US). For example January 10 2016 written 10/01/2016 (French format) will be interpreted as October 1 2016.
 
 The Date Normalization processor can then be used to correct this problem, by simply specifying the date format pattern to use in the **Date format** parameter. In this case, the format we want is DD/MM/YYYY, which will be written **%d/%m/%Y** (see below for more details on patterns) :
 
@@ -478,7 +478,7 @@ The Date Normalization processor can then be used to correct this problem, by si
   .. figure:: processing__date_norm-2--fr.png
     :alt: Date normalization processor 2/2
 
-    With the Date normalization processor and the pattern %d/%m/%Y (DD/MM/YYYY), the dates are interpreted as April 12 2016 and October 3 2016    
+    With the Date normalization processor and the pattern %d/%m/%Y (DD/MM/YYYY), the dates are interpreted as April 12 2016 and October 3 2016
 
 In general, it is preferred to have date in the unambiguous format YYYY-MM-DD to avoid these problems (note that Excel files are usually not affected by these issues).
 
@@ -569,6 +569,10 @@ Set Timezone
 ~~~~~~~~~~~~
 
 This processor can be used to force the timezone of a datetime field. This might be useful when, for instance, the source outputs timestamps with no timezone indication.
+
+For example, if a dataset contains a date field with an absent or incorrect timezone, this processor can force the timezone to "UTC", or "Europe/Paris".
+
+"2016-12-08T08:51:53Z" (timezone is incorrectly set to UTC) would become "2016-12-08T08:51:53+01:00" if you set "Europe/Paris" as a timezone, or "2016-12-08T08:51:53" (timezone is not set) would become "2016-12-08T08:51:53+00:00" if you set "UTC" as a timezone.
 
 It takes the following parameters:
 
