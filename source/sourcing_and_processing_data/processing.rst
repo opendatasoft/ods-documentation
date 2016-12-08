@@ -351,11 +351,11 @@ A rich set of functions is also available
    * * Without operand
      * now
    * * Single operand
-     * sin, asin, asinh, cos, acos, acosh, tan, atan, atanh, ceil, abs, factorial, floor, exp, log, log10, sqrt, degrees, radians, sigmoid, gamma, round, trunc, touppercase, upper, tolowercase, lower, capitalize_all, capitalize, isupper, islower, isdecimal, isdigit, isnumeric, isalnum, isalpha, random, length, normalize (unicode), dayofweek, year, month, hour, minute, second, microsecond, fromtimestamp
+     * abs, acos, acosh, asin, asinh, atan, atanh, capitalize, capitalize_all, ceil, cos, day, dayofweek, degrees, empty, exp, factorial, floor, fromtimestamp, gamma, hour, isalnum, isalpha, isdecimal, isdigit, islower, isnumeric, isupper, length, log, log10, lower, minute, month, normalize, radians, random, round, second, sigmoid, sin, sqrt, tan, tolowercase, touppercase, trunc, upper, year
    * * Two operands
-     * pow, max, min, mod, div, gcd, round, random, contains, endswith, startswith, dayofweek, year, month, hour, minute, second, microsecond, add_seconds, add_minutes, add_hours, add_days, add_months, add_years
+     * add_days, add_hours, add_minutes, add_months, add_seconds, add_years, contains, day, dayofweek, distance, div, endswith, gcd, geopoint2d_towgs84, geoshape_towgs84, hour, match, max, microsecond, min, minute, mod, month, pow, random, round, second, startswith, substring, year
    * * Three operands
-     * ljust, rjust, center, replace, datediff
+     * center, datediff, ljust, replace, rjust, substring
 
 Examples:
 
@@ -428,6 +428,14 @@ Examples:
      * True
    * * add_months("2014-11-14", "3")
      * 2015-02-14
+   * * contains("hello", "l")
+     * True
+   * * contains("hello", "A")
+     * False
+   * * empty("")
+     * True
+   * * empty("hello")
+     * False
 
 It takes the following parameters:
 
