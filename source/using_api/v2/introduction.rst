@@ -1,6 +1,13 @@
 Introduction
 ============
 
+.. important::
+
+   This API is currently in BETA and important changes can be made until finale release.
+
+   Don't hesitate to report any problem you encounter when using it.
+
+
 .. note::
 
    If you are already familiar with the structure of the data within the platform and are a seasoned developer or data

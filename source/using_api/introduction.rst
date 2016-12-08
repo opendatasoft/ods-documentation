@@ -38,17 +38,36 @@ such:
 
 There are of course many more types of data within the platform, but they are only relevant in very specific contexts.
 
-ODS API V1 or V2?
------------------
+The OpenDataSoft platform provides its own API (ODS API v1 and v2) and some standard API's implementations such as ODATA
+, WFS or CSW.
 
-IF you're new to the OpenDataSoft platform, then the V2 is the way to go. It is a more rational API build upon our
-experience with the V1, easier to use and navigate.
+ODS API
+-------
 
-There is only one good reason to be using the V1: if you are maintaining an application relying on it. If you aren't
-then you should ignore it and go for the :doc:`V2 </using_api/v2/index>`.
+This API is the one used internally by the OpenDataSoft platform and widgets.
+If you want to develop your own application, this is also the best way to go.
+
+Differences between ODS APIv1 and APIv2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This API is currently under development and will be officially available soon, but don't hesitate to give it a try :
+:doc:`V2 </using_api/v2/index>`.
+
+Here is the main differences and key changes between APIv1 and APIv2.
+
+* APIv2 introduces a better implementation of REST principles. Each API entry-point provides links to easily navigate
+  between linked resources (HATEOAS).
+* This API proposes a more complete query language with new functions and arithmetic expressions.
+* Special filters (geofilter or facet filters) are moved to the query language instead.
+  For instance ``geofilter.distance='42,1,100'`` is replaced by ``q=distance(geo_field,geom'Point(42 1)',100)``
+* Aggregation API (former analyze API) comes with a new ``SQL`` like language and is available on catalog in addition to
+  dataset records.
+* Exporters have their own entry-point under ``/api/catalog/exports`` and ``/api/catalog/datasets/<dataset_id>/exports``
+* Navigation search (former facet search) and standard search are completely splitted.
+
 
 Common aspects
---------------
+^^^^^^^^^^^^^^
 
 Both version of the API share one essential mechanism: the :doc:`authentification method </using_api/authentication>`
 which enables you to use the same credentials for both versions.
