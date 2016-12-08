@@ -1,54 +1,26 @@
 Notifications
 =============
 
-Notifications are sent whenever an important event occur on the portal. They give realtime information about the health of the portal.
+Whenever an important event occurs on your portal, notification emails are sent. This gives you the opportunity to be informed in real time
+and take action if needed.
 
-It’s possible for users to unsubscribe to the different notification type on their account page.
+Notifications are sent by email to your portal's users depending on their permissions. They are always sent by the support@opendatasoft.com address.
 
-Quota notifications
--------------------
+.. note::
+    If you'd like notifications to be sent from a different sender address, for example an address
+    of your own organization, please contact the support team.
 
-Notification are sent on quotas when any of these conditions is reached:
+Each user can manage their subscription to the different notification types on their account page.
 
-- 80% of the authorized requests have been reached
-- Maximum number of authorized requests is reached
-
-
-Recipients
-~~~~~~~~~~
-
-- The user with the expired quota
-- All users on the domain with the "Edit all datasets" permission.
+.. image:: user-account-notifications--en.png
+   :alt: Daily report
 
 
-Alert notifications
--------------------
+We currently provide the following notification types:
 
-The following events trigger an alert notification:
+.. toctree::
+   :maxdepth: 1
 
-- A realtime dataset did not receive data for a period of time
-- A dataset finished its processing with errors
-
-
-Recipients
-~~~~~~~~~~
-
-- Users on the domain with the "Edit all datasets" permission
-- Users on the dataset's security with the "Edit all datasets" permission
-
-
-Daily report
-------------
-
-The daily report contains a recap of the portal health:
-
-- Open alerts for realtime datasets ie not data received for a period of time
-- Datasets in error due to a processing (scheduled or trigger)
-
-They are sent every day at 9AM (CET).
-
-
-Recipients
-~~~~~~~~~~
-
-- Users on the domain with the "Edit all datasets" permission
+   quota
+   processing_alert
+   daily_report
