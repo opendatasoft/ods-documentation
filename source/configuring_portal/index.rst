@@ -8,3 +8,4 @@ Configuring a portal
    links
    engaging
    legals
+   custom_urls
