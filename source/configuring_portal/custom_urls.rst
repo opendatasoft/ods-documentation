@@ -2,7 +2,7 @@ Customizing your domain URL
 ===========================
 
 
-When a domain is created it has one URL, in the form ``<domain>.opendatasoft.com``. As the domain URL is a very important tool for discoverability, branding and ease of access, there will often be a need to customize this URL. As such, the OpenDataSoft platform allows for adding URLS to a domain. These customization options are currently not exposed in the back office, and must be requested by sending an email to support@opendatasoft.com. The customization options are detailed below.
+When a domain is created it has one URL, in the form ``<domain>.opendatasoft.com``. As the domain URL is a very important tool for discoverability, branding and ease of access, there will often be a need to customize this URL. As such, the OpenDataSoft platform allows for adding URLs to a domain. These customization options are currently not exposed in the back office, and must be requested by sending an email to support@opendatasoft.com. The customization options are detailed below.
 
 OpenDataSoft URLs
 -----------------
@@ -20,7 +20,7 @@ HTTPS
 .. image:: img/custom_urls__green-lock--en.png
     :alt: Connections to OpenDataSoft are private.
 
-The OpenDataSoft platform use HTTPS by default, and as such, requests made to OpenDataSoft URLs and custom subdomains are HTTPS enabled. If you opted to add an OpenDataSoft URL, the SSL configuration is the same as with the default URL. However, if you choose to use a custom subdomain, the SSL will be handled through `Let's Encrypt <https://letsencrypt.org/>`_. In both case no action is required from you to set it up.
+The OpenDataSoft platform uses HTTPS by default, and as such, requests made to OpenDataSoft URLs and custom subdomains are HTTPS enabled. If you opted to add an OpenDataSoft URL, the SSL configuration is the same as with the default URL. However, if you choose to use a custom subdomain, the SSL will be handled through `Let's Encrypt <https://letsencrypt.org/>`_. In both case no action is required from you to set it up.
 
 .. image:: img/custom_urls__letsencrypt-certificate--en.png
     :alt: Own subdomains use a letsencrypt certificate.
