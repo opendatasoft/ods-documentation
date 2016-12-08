@@ -1,42 +1,85 @@
 Managing quotas
 ===============
 
-A quota is an upper limit you put on a entity (your domain, group or user) to regulate its use of the platform.
+Your portal license
+-------------------
 
-There are 3 types of quotas:
+Before diving into what quotas exist on OpenDataSoft portals, it is important to know that for each portal there is a
+license that applies. A license is a contract between OpenDataSoft and the portal owners defining how much data can be
+injected into the portal and the consumption of this data.
 
-Maximum number of requests per day
-----------------------------------
-Limits the number of API calls (both direct and through browsing the portal) an user can make per day
+For example, freemium portals can have up to 5 datasets, each having at most 20000 records.
 
-Anonymous requests
-~~~~~~~~~~~~~~~~~~
-Anonymous (non authenticated) users are limited by quotas too.
-This is intended to be a security measure, to ensure that a sudden increase of anonymous users does not exhaust your entire quotas.
+Your license defines 3 global limits on your portal, the two first ones regulate the amount of data you can inject into
+the portal while the last one puts an upper limit on the consumption of this data.
 
-Two quotas apply:
+* The **number of datasets** quota constraints the total number of datasets currently within the portal (published or not),
+* the **number of records** quota limits to total number of records within published datasets, regardless of the actual content of these records.
+* lastly, the **number of API calls** quota limits the number of requests made to the data within a given timeframe (usually within a month).
 
-1. Max requests made by all anonymous users
-2. Max requests for a single anonymous user identified by their IP address
+.. important::
 
-These quotas can be configured in the portal's security configuration page.
+   The number of API calls measure can be a bit difficult to wrap his/her around since this is a very technical measure
+   of the activity. But it can be summarised as such: everytime somebody accesses your portal, for example the datasets
+   catalog page, the interface will make requests to the portal for the filters values, for the 10 first datasets then
+   the 10 next ones etc. Each of these requests is an API call and counted within the quota.
 
-Maximum number of datasets
---------------------------
-Limits the number of datasets the user can create (relevant only to the users with the 'Create datasets' permission)
+   API calls are therefore made by visitors on your portal, but also by developers using the API to retrieve the data
+   you published and dashboards hosted outside of your portal.
 
+You can see your license quotas and their current usage in your backoffice, under the **Analytics/Quotas** section.
 
-Maximum number of records per dataset
+.. ifconfig:: language == 'en'
+
+    .. image:: quotas__license--en.png
+        :alt: Current status of your licence quotas
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: quotas__license--fr.png
+        :alt: Current status of your licence quotas
+
+Setting defaults limitations on users
 -------------------------------------
 
-Limits the maximum size of each of the datasets the user can publish
+Since your portal has global upper limits set, you want to avoid having anybody use all of the license quota just by
+him/herself. You can therefore set general limits on users and if your portal is open to anonymous users, set a
+different limit for them. You can also set a global limit for all anonymous users to be sure that they won't eat up all
+of your usage quota.
 
+You'll be able to set these limits in the **Security** subsection of the **Configuration** section of your portal's
+backoffice.
 
-For a given user, a quota can be defined at several levels: a default value set for all users on the portal's security configuration page, values set on each of the user's groups and the value set directly on the user using the form below.
-The effective value is then defined as:
+When a user makes a request (be it an API call, a dataset creation of the publication of a dataset), we make sure
+he/she isn't running into the default limit set for him/her and isn't going over the global portal limit. Were it the
+case, a message would pop-up telling him/her so.
 
-1. If there is a user-level defined value: this value is used.
-2. If no user-level value is defined, but there is at least a group-level value: the maximum of all of the user's groups' values is used.
-3. If not user-level value is defined and no group-level value is defined: the default value for the portal is used.
+.. ifconfig:: language == 'en'
 
-NB: if the computed value is higher than what the license (i.e. the values defined in your OpenDataSoft contract) allows, then the license value is used.
+    .. image:: quotas__default-api-calls--en.png
+        :alt: General API calls limit
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: quotas__default-api-calls--fr.png
+        :alt: General API calls limit
+
+.. ifconfig:: language == 'en'
+
+    .. image:: quotas__default-data-volume--en.png
+        :alt: General data volume limits
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: quotas__default-data-volume--fr.png
+        :alt: General data volume limits
+
+Setting specific limitations for individual users and group of users
+--------------------------------------------------------------------
+
+Some of your users have specific roles within your organisation that justify their need for quotas larger than the
+default ones. For example, you may allow registered users to create only a couple of datasets each, but your Chief
+Data Office will need to be able to publish as many datasets as the license allows.
+
+In order to do so, you'll have to go to the :doc:`user's management page <users>` or his/her
+:doc:`group management page <groups>` to set a more appropriate limit for his/her use case.
