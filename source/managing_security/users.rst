@@ -1,95 +1,132 @@
-Authenticating users
-====================
+Managing users
+==============
 
-Configuring your domain's security policy
------------------------------------------
+Now that you've set up your :doc:`portal's security policy <portal>`, people are registering and becoming full-fledged
+users. Unless your portal is closed to anonymous users, this new status is not changing anything for them. They can
+still see the same data and a subject to the same quotas as before.
 
-Domain access and default security policy
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Permissions
+-----------
+
+What is changing is that you can now give them permissions extending what they can do. You can do so either on the
+users' index page or directly on the single user management page, both accessible through the
+**Users & groups / Users** section in your backoffice.
 
 .. ifconfig:: language == 'en'
 
-    .. image:: users__security-model--en.png
-        :alt: Security Model
+    .. image:: users__index--en.png
+        :alt: The list of your portal's users
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: users__security-model--fr.png
-        :alt: Modèle de sécurité
+    .. image:: users__index--fr.png
+        :alt: The list of your portal's users
 
-Check the option **allow anonymous access** if you want to let people access your domain without having to log in.
-Anonymous users will only be able to access non restricted datasets. This makes it possible to mix on the single domain
-a public facing catalog and a private catalog that can only be accessed by authorized users.
-
-Datasets access can be set to be *restricted* or *not restricted*. A *restricted* dataset can only be accessed by
-authorized users (users who are in the access list of the dataset, see below). Check the option
-**restrict new datasets by default** if you want newly created datasets to be accessed only by authorized users.
-
-The **landing page for anonymous users** can be set to any content page created on the domain. It makes it possible to
-host a splash screen or to disclose content to anonymous users from a private domain.
-
-This section also allows you to define the **default permissions for new users** (see below for a detailed description
-of users permissions).
-
-Domain access list
-~~~~~~~~~~~~~~~~~~
+Permissions each affect an independent part of your portal so that by looking at a user's permissions list you know
+exactly what he/she can do. Each permission has its own category, symbolized by an icon and a tag color.
 
 
 .. ifconfig:: language == 'en'
 
-    .. image:: users__security-users--en.png
-        :alt: Security Users
+    .. image:: users__permissions--en.png
+        :alt: All available permissions, each with a category icon and color
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: users__security-users--fr.png
-        :alt: Permissions des utilisateurs
+    .. image:: users__permissions--fr.png
+        :alt: All available permissions, each with a category icon and color
+
+Dataset permissions
+~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+   :header-rows: 1
+
+   * * Permission
+     * Description
+   * * Browse all datasets
+     * The user may access all data on all published datasets, regardless of any security parameters even specific
+       rules set just for this user.
+   * * Create new datasets
+     * The user may create new datasets (but not publish them), within the limits defined by the quotas.
+
+       **Grants access to the catalog section of the backoffice**
+   * * Edit all datasets
+     * The user may edit all existing datasets.
+
+       **Grants access to the catalog section of the backoffice**
+   * * Manage own datasets' security
+     * The user gets access to the security section of the dataset edition page and is able to set rules defining who
+       can access which records within the datasets he/she can edit.
+   * * Publish own datasets
+     * The user can publish or republish the datasets he/she can edit.
+
+These are general permissions that apply to a user with regard to the portal, but user can also get
+:doc:`permissions for individual datasets </sourcing_and_processing_data/security>`.
 
 
-The domain access list are made of users and groups. Users' scope is platform wide (this means that a user can be
-associated with more than one domain) while groups' scope is domain wide (groups are not shared among domains).
+Other permissions
+~~~~~~~~~~~~~~~~~
 
-The effective permissions of a user are the union of the user's own permissions and of the permissions of the groups
-the user belongs to. This means that if a user does not have administrative rights set while they belong to a group
-which has administrative rights, the user will effectively be given administrative rights.
+.. list-table::
+   :header-rows: 1
 
-There are two categories of **permissions**: standard permissions and administative permissions. Permissions can be
-attributed to users and groups.
+   * * Permission
+     * Description
+   * * Edit domain properties
+     * The user may edit all properties in the **Look & feel**, **Users & groups** and **Configuration** sections of
+       the backoffice. He/she also gets access to the **Analytics** and **Assets** sections.
 
-* Standard permissions
-    * The user may create new datasets and edit them
-    * The user may publish their datasets
-    * The user may manage the security settings of their datasets
+       **Grants access to the catalog section of the backoffice**
+   * * Edit all pages
+     * The user may create, edit and delete all pages. He/she can also manage assets.
 
-* Administrative permissions
-    * The user may browse all the datasets on the domain
-    * The user may edit all the datasets on the domain
-    * The user may create and edit content pages on the domain
-    * The user may edit and moderate reuses on the domain
-    * The user may edit domain properties
+       **Grants access to the catalog section of the backoffice**
+   * * Manage all reuses
+     * The user may see, approve, reject and delete all reuse submissions on the portal.
 
-Authenticating users with signup
---------------------------------
+       **Grants access to the catalog section of the backoffice**
+   * * Manage all subdomains
+     * :doc:`If subdomains are enabled on the portal </managing_subdomains/index>`, then the user may edit, create and
+       delete all subdomains.
 
-As an administrator, you can add users to your domain directly through your users management screen. You can also
-activate a registration workflow to let users initiate the registration process themselves.
+       **Grants access to the catalog section of the backoffice**
 
-#### Manually adding users to the domain
+Quotas
+------
 
-To do so, simply hit the **add users** button. You can then either search for an existing user on the platform
-(remember that user management is platform wide) or simply invite new users by entering their email addresses. New
-users will receive an email asking them to validate their account.
+In order to avoid having a user use up all of your license usage quotas, you can
+:doc:`set up default quotas for users <quotas>`. However you can override the general quotas given to everybody with
+specific values tailored to a single profile for each of the 3 quota types.
+
+Since quotas can also be defined at the group level, users are inheriting from 3 settings.
+
+* license quotas (for the whole portal)
+* default quotas (for each user indifferently)
+* group quotas (for each member)
+
+The value that applies to the given is calculated as such:
+
+* If there is a specific value for the user, this value applies.
+* If there is no specific value for the user, but the user is member of at least one group with a specific value, then
+  the maximum of all group values apply.
+* If there no specific value and no group value, then the default security value for non-anonymous users applies.
+
+The applied values is then of course capped at the license value.
+
+Since this is a bit difficult to remember, the interface includes a calculator showing you the license, default and
+group values and dynamically computes the effective quota depending on the specific value you're setting up.
 
 .. ifconfig:: language == 'en'
 
-    .. image:: users__signup--en.png
-        :alt: Registration workflow
+    .. image:: users__quotas--en.png
+        :alt: The override form for a quota
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: users__signup--fr.png
-        :alt: Processus d'enregistrement
+    .. image:: users__quotas--fr.png
+        :alt: The override form for a quota
 
-It is also possible to configure the registration workflow. This workflow allows users to sign up by themselves. A
-registration can either be manually or automatically validated, depending on the configuration. A set of fields allows
-you to customize the signup page.
+
+
+
