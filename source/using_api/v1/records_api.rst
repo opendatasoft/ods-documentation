@@ -102,6 +102,9 @@ answer is streamed which makes it possible to optimize the memory consumption cl
        ``exclude.city=Paris&exclude.year=2013``
    * * ``pretty_print``
      * If set to true (default is false), pretty prints JSON and JSONP outputs.
+   * * ``fields``
+     * Restricts fields to retrieve. This parameter accepts multiple field names separated by commas.
+       Example: ``fields=field1,field2,field3``
    * * ``format``
      * Format of the response output. One of CSV, JSON (default), JSONP, GeoJSON and GeoJSONP.
    * * ``callback``
@@ -245,6 +248,9 @@ search. It also provides faceted search features on dataset records.
        are returned.
    * * ``start``
      * Index of the first result to return (starting at 0). To be used in conjunction with "rows" to implement paging.
+   * * ``fields``
+     * Restricts fields to retrieve. This parameter accepts multiple field names separated by commas.
+       Example: ``fields=field1,field2,field3``
    * * ``pretty_print``
      * If set to true (default is false), pretty prints JSON and JSONP outputs.
    * * ``format``
