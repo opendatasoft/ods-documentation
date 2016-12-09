@@ -1,8 +1,8 @@
 Processing datasets
 ===================
 
-Field processors
------------------
+Generic processors
+------------------
 
 Add a Field
 ~~~~~~~~~~~
@@ -95,8 +95,8 @@ It takes the following parameters:
     * yes
     *
   * * Value to skip
-    *
-    * Expression
+    * Value that means the record must be deleted
+    * String or Expression (if the value starts with an '=')
     * no
     * None
   * * Exact match
@@ -104,6 +104,7 @@ It takes the following parameters:
     * Boolean
     * no
     * Checked
+
 
 Transpose Fields
 ~~~~~~~~~~~~~~~~
@@ -215,8 +216,6 @@ It takes the following parameters:
     * no
     * /
 
-Numerical processors
---------------------
 
 Expression
 ~~~~~~~~~~
