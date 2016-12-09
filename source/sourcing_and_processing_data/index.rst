@@ -5,7 +5,7 @@ Sourcing and processing data
    :maxdepth: 2
 
    create
-   qualify
+   dataset_schema
    processing
    metadata
    configuring_visualizations/index

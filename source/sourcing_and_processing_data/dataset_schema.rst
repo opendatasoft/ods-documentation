@@ -36,11 +36,15 @@ Fields have a type. The following types are available:
        *45.8,2.5*. If your dataset contains two fields, latitude and longitude, you'll need to concatenate them
        with a **Concatenate Text** processor to form a valid geo point field.
    * * GeoShape
-     * A valid geo shape expressed in `GeoJSON <http://geojson.org/geojson-spec.html>`_.
+     * A valid geo shape expressed in `GeoJSON <http://geojson.org/geojson-spec.html>`_. For example :
+       { "type": "LineString", "coordinates": [ [100.0, 0.0], [101.0, 1.0] ] }.
+       We do not support feature collections, only
    * * Integer
      * Any valid integer value. If a floating point value is found, it is automatically cast to its integer part.
    * * Text
      * Anything
+   * * File
+     * A file. Created from a File processor or a specific extractor.
 
 Next to their type, any field has a set of action items, which can be used to further refine your dataset schema.
 
@@ -95,3 +99,39 @@ You then have access to a wide range of options depending on the field type.
 
         This option lets you define an unit associated with numerical fields. This option is used to
         complement the table view and is displayed next to the field's value.
+
+Special fields
+==============
+
+
+Record_id
+---------
+
+
+We identify a record with an unique field named record_id.
+During the processing, if two records have the same record_id, the first one is replaced by the second.
+
+The record_id is compute at the end with the following rules:
+
+#. Filter the fields. Keep all the fields which are mark as 'ID' or all the fields if no field is mark as id.
+#. Sort the fields values.
+#. Concat the sorted values.
+#. Apply a hash function (sha1) to the string
+
+.. ifconfig:: language == 'en'
+
+    .. image:: dataset_schema__record_id--en.png
+        :alt: Record id schema
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: dataset_schema__record_id--fr.png
+        :alt: Record id schema
+
+
+Record_timestamp
+----------------
+
+A record_timestamp field is generated for all records, its is a timestamp giving information about the creation date of the record.
+The value depends on the extractor type.
+For example on a csv file, the record_timestamp is a last modified date. On a realtime dataset, the record_timestamp is the date when the record arrived on the platform.
