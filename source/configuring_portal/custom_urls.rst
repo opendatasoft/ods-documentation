@@ -20,10 +20,7 @@ HTTPS
 .. image:: img/custom_urls__green-lock--en.png
     :alt: Connections to OpenDataSoft are private.
 
-The OpenDataSoft platform uses HTTPS by default, and as such, requests made to OpenDataSoft URLs and custom subdomains are HTTPS enabled. If you opted to add an OpenDataSoft URL, the SSL configuration is the same as with the default URL. However, if you choose to use a custom subdomain, the SSL will be handled through `Let's Encrypt <https://letsencrypt.org/>`_. In both case no action is required from you to set it up.
-
-.. image:: img/custom_urls__letsencrypt-certificate--en.png
-    :alt: Own subdomains use a letsencrypt certificate.
+HTTPS is a widely used protocol which aims at insuring privacy and integrity of the exchanges between a website and its users by providing HTTP over a secure communication layer. For these safety and integrity reasons, the OpenDataSoft platform enforces the use of HTTPS throughout its services, and as such, requests made to OpenDataSoft URLs and custom subdomains are HTTPS enabled. If you opted to add an OpenDataSoft URL, the SSL configuration is the same as with the default URL. However, if you chose to use a custom subdomain, the SSL will be handled through `Let's Encrypt <https://letsencrypt.org/>`_.
 
 Language handling
 -----------------
