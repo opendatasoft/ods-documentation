@@ -1,2 +1,0 @@
-Administrating permissions
-==========================

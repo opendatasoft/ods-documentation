@@ -19,7 +19,7 @@ the portal while the last one puts an upper limit on the consumption of this dat
 
 .. important::
 
-   The number of API calls measure can be a bit difficult to wrap his/her around since this is a very technical measure
+   The number of API calls measure can be a bit difficult to wrap his/her head around since this is a very technical measure
    of the activity. But it can be summarised as such: everytime somebody accesses your portal, for example the datasets
    catalog page, the interface will make requests to the portal for the filters values, for the 10 first datasets then
    the 10 next ones etc. Each of these requests is an API call and counted within the quota.
