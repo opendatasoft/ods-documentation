@@ -1,138 +1,183 @@
-Realtime
-========
+Keeping data up to date
+=======================
 
-Two possibility exist to create realtime dataset:
+Some data is not subject to a lot of change, and only needs to be shared once, but in a lot of instances, this is not enough. Some data quickly becomes obsolete, and need to be updated regularly to accurately represent reality. In order address these ephemeral, always-evolving data, the OpenDataSoft platform offer two separate mechanisms. The first one is called scheduling and consist of having a dataset republish itself at fixed interval. This mode is most useful for datasets whose underlying resource is remote, and regularly updated. The second mechanism for publishing real time data is using a realtime datasets, that are fed by the push API. This mode is most useful when the data can be sent directly by the system that observe the data points, such as a computer program sending event metrics or a set of sensors sending their readings.
 
-1. A remote source (http or ftp) and a minute scheduling
-2. A realtime extractor/source and data push through the Push API
+Using scheduling to keep a dataset up to date
+---------------------------------------------
 
+This solution is the easiest to implement, it does not require any development, only a remote source and some settings in the dataset configuration.
 
-
-Remote source and scheduled datasets
-------------------------------------
-
-INCLUDE SCREENSHOOTS:
-
-SOURCE
-SCHEDULING
-
-A remote source, created from an url (http or ftp), enables the scheduling tab. It allows a dataset to be scheduled at given interval. A minute scheduling will process the dataset every minutes.
-The remote source will be fetched and the new data will be processed and append to the existing records.
-
-This solution is easy to implement, it does not need any development, only a scheduled export on an http/ftp server.
-
-
-Realtime datasets
------------------
-
-OpenDataSoft provides a Push API to build datasets out of real time data. The expected latency (time for a record to be processed and made available to the search API enpoints) shall be less than 2 second.
-
-This API is especially useful for building crowd-sourced datasets.
-
-Real time push entry points can be made available by dataset owners. Once the real time resource is ready, you can start sending data to it.
-
-The records go through our transformation stack as any other record, so a pushed record can be enriched with more information (geocoding, join ...).
-
-
-Configure the dataset
+Specifying a resource
 ~~~~~~~~~~~~~~~~~~~~~
 
-Create a realtime source by selecting 'Add a realtime source' in the 'Add a source' selector.
+.. image:: scheduling__resource--en.png
+    :alt: resource interface
 
-.. ifconfig:: language == 'en'
+To be able to schedule a dataset, its underlying resource must be a remote one, that is entered as a URL (http or ftp work well) and not a file. For best results, this resource must be regularly updated. To add such a resource, simply enter a URL in the URL bar of the resource interface.
 
-    .. image:: realtime__add--en.png
-        :alt: Realtime add
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: realtime__add--fr.png
-        :alt: Realtime add
-
-Until records are pushed to the dataset, the dataset is empty, to bootstrap the dataset schema (fields), you can paste json data inside the 'Bootstrap data' textbox.
-The dataset **realtime_dataset** contains the following fields:
-
-.. list-table::
-   :header-rows: 1
-
-   * * Field Name
-     * Field Type
-   * * identifier
-     * text
-   * * timestamp
-     * date and time
-   * * parameter
-     * ext
-   * * value
-     * double
-
-And you have an API pushkey which allows you to push records to this dataset: **6b35cbf5d3e4ded33177d3bb3c12feb40d2b558df4d164aae1844360**.
-
-.. ifconfig:: language == 'en'
-
-    .. image:: realtime__bootstrap--en.png
-        :alt: Realtime add
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: realtime__bootstrap--fr.png
-        :alt: Realtime add
-
-The recovery option enables possibility to reindex your data after a breaking change in the dataset configuration. Without recovery, if a realtime dataset is unpublish, all data are lost.
-The alerting option sends alerts by email if no data is received during X minutes.
-
-Image field
-^^^^^^^^^^^
-
-Image data has to be base64 encoded and wrapped inside the following json::
-
-    {
-        "content": "BASE64 data",
-        "content_type": "image/jpg"
-    }
+Specifying scheduling interval
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Push data
-~~~~~~~~~
+.. image:: scheduling__scheduling--en.png
+    :alt: scheduling tab
 
-To add a new record, post to this URL:
-``http://realtime.opendatasoft.com/api/push/1.0/realtime_dataset/realtime_resource/push/?pushkey=6b35cbf5d3e4ded33177d3bb3c12feb40d2b558df4d164aae1844360``
-the folowing content:
+Once a dataset is saved with a remote resource, the scheduling tab will be activated. The minimum interval is the minute, but it is not activated by default. Send us an email if you want to try it out! You can add as many schedule as you want. For instance, if it fits your needs, you could decide to schedule a dataset to be reprocessed every Monday morning and every Wednesday afternoon. At the recurrence that you specified, that platform will fetch the ressource and reprocess and republish it, leaving your dataset up to date.
 
-.. code-block:: json
+Pushing real time data
+----------------------
 
-    {
-    	"identifier": "ab1",
-    	"timestamp": "2014/01/27T04:15:00",
-    	"parameter": "speed",
-    	"value": 150
-    }
+For some types of data, it can be useful to push data instead of the more traditional model of having the data being pulled from a resource by the platform. To address this need, the OpenDataSoft platform offers a realtime push API. It is not to be confused with the ability to schedule a dataset processing. When scheduling, the dataset will periodically pull the resource and process the data that is inside of it, whereas with the push API, the dataset is fed by an application through a push API and records are processed one by one as soon as they are received. As this feature is still in beta, it is not activated by default and must be requested.
 
-With curl, this would give:
+Configuring the dataset schema
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: realtime__dropdown--en.png
+    :alt: source dropdown
+
+To create a realtime dataset, start by navigating to the dataset creation interface. Here, select "add a realtime source".
+
+.. image:: realtime__resource--en.png
+    :alt: realtime resource pane
+
+You will be prompted to enter some bootstrap data and to optionnally fill in additional options. The bootstrap data should have all the fields that will be sent through the API. Please note that the bootstrap data is not used in the dataset: its sole purpose is to allow setting up the dataset.
+
+Using the push url
+~~~~~~~~~~~~~~~~~~
+
+.. image:: realtime__pushurl--en.png
+    :scale: 100%
+    :alt: push url in the realtime resource
+
+Once your dataset is saved with the correct realtime resource settings, a URL path containing a push api key will appear. This path, appended to your domain base URL is where the platform will expect data to be sent after publication. As is the case with the bootstrap data, the data is expected to be sent in the JSON format, either as a single JSON object for a single record, or an array of JSON objects to push multiple records at once.
+
+.. image:: realtime__record--en.png
+    :alt: table view with a single record with value "Hello World!" in the "message" field
+
+A mimimal example of the api usage for a dataset with a single field named "message", using curl, would be 
 
 .. code-block:: bash
 
-    curl -v -d '{"identifier": "230361", "timestamp": "2014/01/27T04:15:00", "parameter": "speed", "value": 150}' http://realtime.opendatasoft.com/api/push/1.0/realtime_dataset/realtime_resource/push/?pushkey=6b35cbf5d3e4ded33177d3bb3c12feb40d2b558df4d164aae1844360
+    curl -XPOST <DOMAIN_URL>/api/push/1.0/realtime-dataset/<DATASET>/push/?pushkey=<PUSH_API_KEY> -d'{"message":"Hello World!"}'
 
-If everything is ok, the server shall respond:
+A minimal example with the same dataset, using the array form to send multiple records at once would be 
+
+.. code-block:: bash
+
+    curl -XPOST <DOMAIN_URL>/api/push/1.0/realtime-dataset/<DATASET>/push/?pushkey=<PUSH_API_KEY> -d'[{"message":"¡Hola Mundo!"},{"message":"Hallo Welt!"}]`
+
+If the records have been received correctly, the server will respond the following message.
 
 .. code-block:: json
 
-    {"status": "ok"}
+    {
+        "status": "OK"
+    }
 
-In case of error, it shall return an error message.
+If an error happened while trying to push a record, the response will specify the error. 
+
+Pushing a field of type file
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In order to push a field of type image, a json object containing the base64-encoded content and the mimetype of the file needs to be sent, as such.
+
+.. code-block:: json
+
+    {
+        "image_field": {
+            "content": "BASE64 data",
+            "content_type": "image/jpg"
+        }
+    }
+
+Update data by defining a unique key
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: realtime__library_before--en.png
+    :scale: 100%
+    :alt: table view with 2 records containing respectively 978-0060589462 and 978-2862744506 as isbn and 3 and 5 as number_of_copies
+
+In some instances it is useful to update the existing records instead of just pushing new ones. An example for this would be a dataset that tracks the number of copies available for each books in a public library. Suppose that we have such a dataset with two fields: ``isbn``, representing the `ISBN <https://en.wikipedia.org/wiki/International_Standard_Book_Number>`_ number of the book, and ``number_of_copies`` tracking the current number of copies available in the library. It would not make a lot of sense to add one record for each new value of ``number_of_copies``, instead, it would be better to set the new ``number_of_copies`` value to the record corresponding to the book ``isbn``.
+
+.. image:: realtime__unique_id--en.png
+    :alt: unique ID option in the field dropdown
+
+In order to set up such a system with the OpenDataSoft platform, the fields that will be used as a unique key must be marked as so. In our example, the unique key would be isbn, because the rest of the data is linked to individual books, and these books are identified by the ISBN. This can be done in the processing view, in the menu that pops when the cog button is pressed. It is possible to set multiple fields as unique keys. Then, after saving and publishing, if a new record whose key value is equal to an existing record is pushed, the new record will overwrite the old record. In our library case, if your dataset has ``isbn`` as the unique key, and contains these two records.
+
+.. code-block:: json
+
+    [
+        {
+            "isbn": "978-0060589462",
+            "number_of_copies": 3
+        }, {
+            "isbn": "978-2862744506",
+            "number_of_copies": 5
+        }
+    ]
+
+If somebody burrows a copy of Zen and the Art of Motorcycle Maintenance, and you push the following record, you will still have two records, the first one being updated with the new value.
+
+.. code-block:: json
+
+    {
+        "isbn": "978-0060589462",
+        "number_of_copies": 2
+    }
+
+.. image:: realtime__library_after--en.png
+    :scale: 100%
+    :alt: table view with 2 records containing respectively 978-0060589462 and 978-2862744506 as isbn and 2 and 5 as number_of_copies
 
 Delete data
 ~~~~~~~~~~~
 
-To delete a record, the exact record json can be POST to this URL:
-``http://realtime.opendatasoft.com/api/push/1.0/realtime_dataset/realtime_resource/delete/?pushkey=6b35cbf5d3e4ded33177d3bb3c12feb40d2b558df4d164aae1844360``
+There are two entrypoints that allow for deleting a pushed records. One that uses the records values and one that uses the record ID.
 
-or the following url can be GET, where **RECORD_ID** is the record id to delete (see record id doc)
+Using the record values
+^^^^^^^^^^^^^^^^^^^^^^^
 
-``http://realtime.opendatasoft.com/api/push/1.0/realtime_dataset/realtime_resource/RECORD_ID/delete/?pushkey=6b35cbf5d3e4ded33177d3bb3c12feb40d2b558df4d164aae1844360``
+To delete a record knowing the record fields values, POST the record as if to push it, but replace ``/push/`` with ``/delete/`` in the push URL. If your push URL path is ``/api/push/1.0/realtime-dataset/<DATASET>/push/?pushkey=<PUSH_API_KEY>``, then use instead ``/api/push/1.0/realtime-dataset/<DATASET>/push/delete/?pushkey=<PUSH_API_KEY>``. A minimal example to delete the record we pushed earlier follows.
 
-Disabling a resource
-~~~~~~~~~~~~~~~~~~~~
+.. code-block:: bash
 
-A PUSH entry point can be enable/disable. A disabled entry point returns an error if data is received.
+    curl -XPOST <DOMAIN_URL>/api/push/1.0/realtime-dataset/<DATASET>/delete/?pushkey=<PUSH_API_KEY> -d'{"message":"Hello World!"}'
+
+Using the record values
+^^^^^^^^^^^^^^^^^^^^^^^
+
+If you know the record ID of the record you want to delete, simply make a GET request to the URL you get by replacing ``/push/`` with ``/<RECORD_ID>/delete/`` in the push URL. A minimal example of this follows.
+
+.. code-block:: bash
+
+    curl -XGET <DOMAIN_URL>/api/push/1.0/realtime-dataset/<DATASET>/<RECORD_ID>/delete/?pushkey=<PUSH_API_KEY>
+
+Get notified in case of inactivity
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: realtime__alerting--en.png
+    :alt: inactivity alerting settings in RT resource view
+
+If you expect a system to push data to the platform often, you may want to be notified if no record has been received by the platform in a while. In order to get notified, you can enable the "Alerting" option in the source configuration, and setup a time threshold in minutes. If a time span greater than the threshold has occured during which no record has been received, you will receive an email. 
+
+Unpublishing and disabling the api
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: realtime__disable--en.png
+    :alt: "disable push" button in RT resource view
+
+Be wary of unpublishing your dataset, as this will not conserve existing records for the next time the dataset is published. If you desire to avoid getting new data, you should instead click the "disable push" button in the resource setting. This will prevent the usage of the push API but will have no effect on existing data. If data is pushed while push is disabled on the resource, no data will be added and an error will be sent.
+
+Recovery
+~~~~~~~~
+
+.. image:: realtime__recovery_option--en.png
+    :alt: recovery option in realtime resource view
+
+In the event of data loss, for instance from unpublishing or a unwise use of a processor, there is a possibility of recovering the lost records. To do so, the recovery option must have been activated prior to the records being pushed to the platform.
+
+.. image:: realtime__recovery_button--en.png
+    :alt: recover data button in realtime resource view
+
+When the recovery is activated each subsequent record received will be backed up, and will be elligible for recovery. In order to recover eligible records, the "recover data" button on the source configuration page can be used.
