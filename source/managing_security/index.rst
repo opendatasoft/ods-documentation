@@ -8,9 +8,8 @@ From general access to your portal to a single field on a single record on a dat
    :maxdepth: 2
 
    portal
+   quotas
    users
-   permissions
    groups
    access_requests
-   quotas
    saml
