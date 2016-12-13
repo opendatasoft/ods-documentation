@@ -76,7 +76,7 @@ This will bring up a list of all of your portal's users. Select the ones you're 
 
 .. ifconfig:: language == 'fr'
 
-    .. firgure:: groups__users--fr.png
+    .. figure:: groups__users--fr.png
 
         The *add members* popup window
 
