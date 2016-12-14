@@ -208,3 +208,35 @@ filtered using one of the values of the selected record.
             <ods-table context="alerts"></ods-table>
         </ods-dataset-context>
     </div>
+
+Custom view
+-----------
+
+Standard views allow your users to dive further into your datasets, but they are tools. They do not provide additional
+context and do not highlight what you think are the key facts to take away. And while the *description* metadata adds a
+bit of context, it is limited to pure text.
+
+The custom view is an additional tab that lives alongside the other tabs on the dataset's page. It is an empty space
+that you can use as you wish. An HTML and CSS editor enables you to write a dashboard as simple or as complex as you may
+want (for more information about writing beautiful dashboard, see the
+:doc:`dedicated documentation </publish_content>`) and you can even customize the title and icon of this additional tab.
+
+.. ifconfig:: language == 'en'
+
+   .. figure:: configure_visualizations__custom-view--en.png
+
+      The custom view editor
+
+.. ifconfig:: language == 'fr'
+
+   .. figure:: configure_visualizations__custom-view--fr.png
+
+      The custom view editor
+
+The custom title and icon will show up within your catalog page on the related dataset's card, and you'll be able to
+search for datasets having a custom view set up with the *View* filter (select the *Custom view* option).
+
+Icons are taken from the `Font awesome 4.7 icon set <http://fontawesome.io/icons/>`_ and must be specified through
+their name (omitting the ``fa-`` prefix). For example, to use the `bar chart <http://fontawesome.io/icon/bar-chart/>`_
+icon, whose name is ``fa-bar-chart``, you should input ``bar-chart`` in the icon field. You can also leave this field
+empty, in which case it will default to the `tachometer icon <http://fontawesome.io/icon/tachometer/>`_.

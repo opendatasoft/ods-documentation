@@ -8,6 +8,7 @@ The CSW server must provide the following capabilities:
 - CSW version: 2.0.2
 - output_shema: http://www.isotc211.org/2005/gmd
 
+This harvester is not available by default. If you need to use it, please contact OpenDataSoft support team.
 
 Parameters
 ----------

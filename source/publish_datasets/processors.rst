@@ -449,14 +449,55 @@ Text Processors
 Replace Regexp
 ~~~~~~~~~~~~~~
 
-This processor can be used to replace a random regular expression pattern by new content. See
-`<http://en.wikipedia.org/wiki/Regular_expression>`_ for more details on how to write a regular expressions.
+This processor can be used to replace or remove any part of a text or a number or a combination of both.
+
+One use case is keeping only a part of a number, for example from a french Zip code to keep only the area code, e.g from 44100 (Nantes city) keep only 44 (Loire-Atlantique area).
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__replace-regexp-en.png
+    :alt: Replace Regexp
+
+    In this example, the regular expression processor is configured with the pattern ``[0-9]{3}$``, and a replacement by nothing. The pattern means "select 3 digits from the end", with ``[0-9]`` meaning any digit, ``{3}`` meaning exactly 3 occurences, and ``$`` meaning the end of the text. These 3 digits from the end are then replaced by nothing, so only the first 2 digits will stay.
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__replace-regexp-fr.png
+    :alt: Replace Regexp
+
+    In this example, the regular expression processor is configured with the pattern ``[0-9]{3}$``, and a replacement by nothing. The pattern means "select 3 digits from the end", with ``[0-9]`` meaning any digit, ``{3}`` meaning exactly 3 occurences, and ``$`` meaning the end of the text. These 3 digits from the end are then replaced by nothing, so only the first 2 digits will stay.
+
+
+See `<http://en.wikipedia.org/wiki/Regular_expression>`_ for more details on how to write a regular expressions.
 You can test your regexp expressions with an online debugger tool like `Regex101 <https://regex101.com/>`_. 
+
 
 Extract Text
 ~~~~~~~~~~~~
 
-This processor can be used to extract an arbitrary pattern expressed as a regular expression out of a string using sub
+This processor can be used to extract any part of a text or a number or a combination of both into a new column. It's similar to the Replace Regexp processor, except instead of replacing the content in place the same column, a new column is created with the selected text.
+
+The idea is to put the part we want to extract in parenthesis. This part will then be extracted in a new column. 
+
+Using the same example as for the Replace Regexp processor (from a french zip code like 44100, keep only the area code 44), the Extract Text processor can be used to create another column with the area code selected, instead of replacing the content like with the Replace Regexp processor.
+
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__extract-text-en.png
+    :alt: Replace Regexp
+
+    In this example, we use the pattern ``(?P<area>[0-9]{2})[0-9]{3}``. ``[0-9]`` means any digit, and ``{2}`` or ``{3}`` means the number of digits we are looking for. In this case we want to extract the first two digits, so we put them in parenthesis, then after the parenthesis we put the rest of the sequence that we don't want to extract, here the remaining 3 digits. The special expression ``?P<area>`` is just for specifiying the new column name
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__extract-text-fr.png
+    :alt: Replace Regexp
+
+    In this example, we use the pattern ``(?P<area>[0-9]{2})[0-9]{3}``. ``[0-9]`` means any digit, and ``{2}`` or ``{3}`` means the number of digits we are looking for. In this case we want to extract the first two digits, so we put them in parenthesis, then after the parenthesis we put the rest of the sequence that we don't want to extract, here the remaining 3 digits. The special expression ``?P<area>`` is just for specifiying the new column name
+
+
+From a more technical point of view, this processor can be used to extract an arbitrary pattern expressed as a regular expression out of a string using sub
 matching.
 
 The syntax of the sub-matching expression to specify is the following: ``(?P<NAME>REGEXP)``. Where:
@@ -497,11 +538,41 @@ Split Text
 
 This processor can be used to split a field's value and to extract the Nth element to a new field.
 
+The number of the part extracted is specified in the ``index`` parameter. Note that the numbering starts at 0.
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__split-text-en.png
+    :alt: Split Text
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__split-text-fr.png
+    :alt: Split Text
+
+
 Concatenate Text
 ~~~~~~~~~~~~~~~~
 
 This processor can be used to concatenate two fields using a separator. You'll need to define the left and right hand
 sides of the concatenation, as well as the separator and the resulting field.
+
+One common use case is to concatenate a X and Y coordinates columns in a new column with both separated by a comma, which can then be used as a ``geo point``.
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__concatenate-en.png
+    :alt: Concatenate Text
+
+    In this example, we concatenate the column X and Y in a new column Coordinates, which can then be used as a ``geo point``
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__concatenate-fr.png
+    :alt: Concatenate Text
+
+    In this example, we concatenate the column X and Y in a new column Coordinates, which can then be used as a ``geo point``
+
 
 Extract HTML
 ~~~~~~~~~~~~
