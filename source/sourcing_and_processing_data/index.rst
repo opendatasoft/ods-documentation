@@ -11,4 +11,3 @@ Sourcing and processing data
    configuring_visualizations/index
    publish
    security
-   feedback
