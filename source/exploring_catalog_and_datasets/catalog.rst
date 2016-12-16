@@ -67,9 +67,18 @@ Under the geographic search map, there is a list of selectable filters sorted by
 .. image:: img/filters_facets.png
    :alt: Selectable filters
 
-Click on the values you want to use to filter the dataset list. For some categories like keywords and themes, it is possible to select multiple values, and for some others like modification date, the selection is hierarchical. For example, selecting a year will let you to choose the month.
+Click on the values you want to use to filter the dataset list. For some categories
+like keywords and themes, it is possible to select multiple values, and for some
+others like modification date, the selection is hierarchical. For example,
+selecting a year will let you to choose the month.
 
-Another way to select filters is to click on them directly on a dataset card. On the card above, you can click on "Airports", "Airfields" or "Public" to filter datasets that have the same tags or publisher.
+In the case of keywords, you can also click on them directly on a dataset card to
+filter the catalog on that keyword.
+
+.. note::
+    The catalog filters of a portal can be customized, including which filters
+    are proposed, the order of the filters, and how to order the suggested values.
+    Please contact us for more information.
 
 Exploring a dataset
 -------------------
