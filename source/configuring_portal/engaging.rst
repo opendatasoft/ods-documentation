@@ -95,7 +95,29 @@ messages in the ``Social networks & sharing`` section, in the ``Configure`` menu
 
 Dataset subscriptions
 ---------------------
+Users on your portal can subscribe to any dataset they can access; by doing so,
+they opt-in to receive notifications that the dataset publisher can decide to
+send at any time, for example an information about a future schema change, or
+to indicate that the data has been updated recently.
 
+.. note::
+    The button is only available to users who are logged on the portal using
+    an account. If you want to use this feature on an open data portal for
+    example, you may want to allow users to sign up on your portal.
+
+.. image:: img/subscription__button--en.png
+
+As a dataset publisher, you can see the list of users subscribed to your dataset
+from its back-office configuration page, using the "Subscribers" tab which appears
+if you have at least one subscriber on the dataset. From there,
+you can also send a message to all the users who subscribed to this dataset.
+
+.. image:: img/subscription__backoffice--en.png
+
+It is advised to warn your subscribers in advance for any change that may impact
+any of their reuse, such as a change in the schema (renaming an existing field,
+removing a field) that may cause issues with existing reuses, or an update of
+the data itself, if it is not updated very frequently.
 
 User feedback on datasets
 -------------------------
