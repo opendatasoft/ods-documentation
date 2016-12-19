@@ -63,8 +63,8 @@ Glossary
      * The data schema describes the properties attached to each fields of the records in a dataset. Data schema includes the field's name, type and example.
    * * Database
 
-       `Source <http://ise.gov/building-blocks/glossary/>`__
-     * A collection of data stored according to a schema and manipulated according to the rules set out in one Data Modelling Facility.
+       `Source <https://en.wikipedia.org/wiki/Database>`__
+     * A database is an organized collection of data. It is the collection of schemas, tables, queries, reports, views, and other objects.
    * * Dataset
 
        `Source <https://en.wikipedia.org/wiki/Data_set>`__
@@ -75,7 +75,7 @@ Glossary
    * * DKAN (Drupal based CKAN)
 
        `Source <http://www.nucivic.com/dkan/>`__
-     * DKAN was identified by U.S. Project Open Data as a 'ready-to-use' tool 'that will help agencies jump-start their open efforts' and a 'real, implementable' solution 'developed to significantly reduce the barrier to implementing open data at your agency.'
+     * DKAN is an open-source data management platform
    * * Document
 
        `Source <https://www.whitehouse.gov/sites/default/files/omb/assets/egov_docs/DRM_2_0_Final.pdf>`__
@@ -83,7 +83,7 @@ Glossary
    * * Endpoint
 
        `Source <http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/>`__
-     * An association between a binding and a network address, specified by a URI, that may be used to communicate with an instance of a service. An end point indicates a specific location for accessing a service using a specific protocol and data format.
+     * An end point indicates a specific location for accessing a service using a specific protocol and data format.
    * * EPSG (European Petroleum Survey Group)
 
        `Source <http://www.epsg-registry.org/>`__
