@@ -39,8 +39,7 @@ Cartograph starts with an empty default map in edition mode.
 
 Click on |add_dataset| ``Start by adding a dataset`` to start importing some data to your map.
 
-.. |add_dataset| image:: add_dataset_to_basemap.svg
-  :width: 30px
+.. |add_dataset| image:: add_dataset_to_basemap.png
 
 The list of datasets available will appear: you can search or browse by category to find your datasets.
 As usual you can preview and filter the dataset before importing it.
