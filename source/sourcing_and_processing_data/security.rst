@@ -55,7 +55,7 @@ For each category of person (anyone, listed user, user in a listed group) that c
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: security__filters--fr.png
+    .. image:: security__filters--en.png
         :alt: Options disponible pour le filtrage des données
 
 You have three different options available that you can combine.
