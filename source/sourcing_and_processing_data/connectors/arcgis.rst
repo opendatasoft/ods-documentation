@@ -1,20 +1,13 @@
 :orphan: true
 
-Salesforce extractor
-====================
+ArcGIS REST API connector
+=========================
 
-
-Configuration
--------------
-
+Data can be extracted from an ArcGIS server using their REST API.
 
 
 Creation
 ~~~~~~~~
 
-
-
-Parameters
-~~~~~~~~~~
-
+Enter the URL to the layer in the URL box. For example http://sampleserver3.arcgisonline.com/ArcGIS/rest/services/Hurricanes/NOAA_Tracks_1851_2007/MapServer/0
 

@@ -62,7 +62,7 @@ OpenDataSoft natively supports the following APIs (contact your local support te
 domain):
 
 * :doc:`WFS </sourcing_and_processing_data/connectors/wfs>`
-* :doc:`JCDecaux bike API </sourcing_and_processing_data/connectors/wfs>`
+* :doc:`JCDecaux Bike API </sourcing_and_processing_data/connectors/jcdecaux>`
 * :doc:`ArcGIS REST API </sourcing_and_processing_data/connectors/arcgis>`
 * :doc:`Salesforce </sourcing_and_processing_data/connectors/salesforce>`
 
