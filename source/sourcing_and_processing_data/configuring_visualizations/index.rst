@@ -10,3 +10,4 @@ Configuring visualizations
    analyze
    calendar
    tooltip
+   custom
