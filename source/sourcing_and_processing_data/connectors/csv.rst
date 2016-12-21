@@ -1,4 +1,4 @@
-CSV extractor
+CSV connector
 =============
 
 A CSV file is a list of fields separated by a fixed separator (usually a ',' in English and a ';' in French).
