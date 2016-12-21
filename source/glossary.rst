@@ -1,9 +1,9 @@
 Glossary
 ========
 
-
 Data glossary
-------------
+-------------
+
 .. list-table::
    :header-rows: 1
 
@@ -43,15 +43,16 @@ Data glossary
 
        |link_8|
 
-     * A collection of controlled vocabulary terms organized into a hierarchical structure. 
+     * A collection of controlled vocabulary terms organized into a hierarchical structure.
    * * Unstructured Data
 
        |link_9|
 
-     * Data that is more free-form, such as multimedia files, images, sound files, or unstructured text. Unstructured data does not necessarily follow any format or hierarchical sequence, nor does it follow any relational rules.  Unstructured data refers to masses of (usually) computerized information which do not have a data structure which is easily readable by a machine. 
+     * Data that is more free-form, such as multimedia files, images, sound files, or unstructured text. Unstructured data does not necessarily follow any format or hierarchical sequence, nor does it follow any relational rules.  Unstructured data refers to masses of (usually) computerized information which do not have a data structure which is easily readable by a machine.
 
 OpenDataSoft glossary
-------------
+---------------------
+
 .. list-table::
    :header-rows: 1
 
@@ -59,10 +60,10 @@ OpenDataSoft glossary
      * Definition
    * * Assets
 
-     * Assets are the graphical elements upoloaded to the plateform. Assets can be images or fonts, they can be used on custom pages. 
+     * Assets are the graphical elements upoloaded to the plateform. Assets can be images or fonts, they can be used on custom pages.
    * * Catalog
 
-     * The catalog is a register of all the dataset you have on your platform. The collection of datasets is organised and can be browsed by a full text search and filtered using the datasets' characteristics 
+     * The catalog is a register of all the dataset you have on your platform. The collection of datasets is organised and can be browsed by a full text search and filtered using the datasets' characteristics
    * * Chart
 
        |link_12|
@@ -78,10 +79,10 @@ OpenDataSoft glossary
      * A choropleth map is a thematic map in which areas are shaded or patterned in proportion to the measurement of the statistical variable being displayed on the map, such as population density or per-capita income.
    * * Console (API)
 
-     * The API console allows people to interact with the application programmable interface. The consoles offers a range of parameters to input to view the different API responses. 
+     * The API console allows people to interact with the application programmable interface. The consoles offers a range of parameters to input to view the different API responses.
    * * Data schema (dataset)
 
-     * The data schema describes the properties attached to each fields of the records in a dataset. Data schema includes the field's name, type and example. 
+     * The data schema describes the properties attached to each fields of the records in a dataset. Data schema includes the field's name, type and example.
    * * Dataset
 
        |link_17|
@@ -89,12 +90,12 @@ OpenDataSoft glossary
      * A dataset is an organized collection of data. The most basic representation of a dataset is data elements presented in tabular form. Each column represents a particular variable. Each row corresponds to a given value of that column's variable. A dataset may also present information in a variety of non-tabular formats, such as an extended mark-up language (XML) file, a geospatial data file, or an image file.
    * * Description (dataset)
 
-     * The description is a text attached to the dataset, it allows users to understand the data inside the dataset. A good description helps users find relevant information 
+     * The description is a text attached to the dataset, it allows users to understand the data inside the dataset. A good description helps users find relevant information
    * * Document
 
        |link_19|
 
-     * A file containing Unstructured and/or Semi-Structured Data Resources. A discrete and unique electronic aggregation of data produced with the intent of conveying information. All data within a document may be in the same format (e.g., text), or a document may be a composite that consists of sets of data in a variety of formats (e.g., MS Word files containing embedded graphics). 
+     * A file containing Unstructured and/or Semi-Structured Data Resources. A discrete and unique electronic aggregation of data produced with the intent of conveying information. All data within a document may be in the same format (e.g., text), or a document may be a composite that consists of sets of data in a variety of formats (e.g., MS Word files containing embedded graphics).
    * * File format
 
        |link_20|
@@ -102,7 +103,7 @@ OpenDataSoft glossary
      * A file format is a standard way that information is encoded for storage in a computer file. It specifies how bits are used to encode information in a digital storage medium. File formats may be either proprietary or free and may be either unpublished or open.
    * * Harvester
 
-     * A harvester is an automated process to fetch data on a remote portal. The harvester fetches the datasets on a remote portal and automatically copies them to the platform. The datasets fetched can be queried with parameters. 
+     * A harvester is an automated process to fetch data on a remote portal. The harvester fetches the datasets on a remote portal and automatically copies them to the platform. The datasets fetched can be queried with parameters.
    * * Keyword (dataset)
 
      * Keywords help understand the data content of the dataset. They are used to filter, search and browse datasets by content. Keywords are non constrained and can be typed freely.
@@ -119,27 +120,28 @@ OpenDataSoft glossary
      * Metadata are "data that provide information about other data". Two types of metadata exist: structural metadata and descriptive metadata. Structural metadata are data about the containers of data. Descriptive metadata use individual instances of application data or the data content.
    * * Publisher (dataset)
 
-     * The publisher is the entity responsible of the data dissemination either to the general public in Open Data or to targeted users 
+     * The publisher is the entity responsible of the data dissemination either to the general public in Open Data or to targeted users
    * * Record
 
        |link_27|
 
-     * A record (also called struct or compound data) is a basic data structure. A record is a collection of fields, possibly of different data types, typically in fixed number and sequence 
+     * A record (also called struct or compound data) is a basic data structure. A record is a collection of fields, possibly of different data types, typically in fixed number and sequence
    * * Reuse
 
      * A reuse is a volontary declaration of dataset use in another context (a map, an application, a website) by  anyone
    * * Subdomain
 
-     * A subdomain is a child domain of a parent domain. A parent domain can distribute or collect content to these child domains. 
+     * A subdomain is a child domain of a parent domain. A parent domain can distribute or collect content to these child domains.
    * * Tags
 
      * Tags (or keywords) help users discover your dataset and should include terms that would be used by technical and non-technical users.
    * * Theme (dataset)
 
-     * A theme is a dataset topic, it helps categorize dataset into bigger categories. Themes are constrained and are to be chosen in a list. 
+     * A theme is a dataset topic, it helps categorize dataset into bigger categories. Themes are constrained and are to be chosen in a list.
 
 Technical glossary
-------------
+------------------
+
 .. list-table::
    :header-rows: 1
 
@@ -167,7 +169,7 @@ Technical glossary
      * CKAN stands for Comprehensive Knowledge Archive Network, an open source data management system that is the basis of the Data.gov catalog, as well as the open data catalogs of approximately 50 data hubs around the world.
    * * Connector
 
-     * A connector is a computer program specifically designed to connect to a data source. A data source can be another Open Data portal or a FTP server. 
+     * A connector is a computer program specifically designed to connect to a data source. A data source can be another Open Data portal or a FTP server.
    * * CSV (comma separated value)
 
        |link_37|
@@ -188,7 +190,7 @@ Technical glossary
        |link_40|
 
      * DKAN is an open-source data management platform
-   * * DNS 
+   * * DNS
 
        |link_41|
 
@@ -268,9 +270,9 @@ Technical glossary
        |link_56|
 
      * Computer software that is available in source code form: the source code and certain other rights normally reserved for copyright holders are provided under an open-source license that permits users to study, change, improve and at times also to distribute the software.Open source software is very often developed in a public, collaborative manner.
-   * * Parser (or extractor) 
+   * * Parser (or extractor)
 
-     * A parser is a computer program that takes a file as input, processes and indexes it in order for the platform or people to perform complex operations on them. 
+     * A parser is a computer program that takes a file as input, processes and indexes it in order for the platform or people to perform complex operations on them.
    * * RDF (Resource Description Framework )
 
        |link_58|
@@ -293,7 +295,7 @@ Technical glossary
 
        |link_62|
 
-     * Security Assertion Markup Language (SAML) is an XML-based, open-standard data format for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider. 
+     * Security Assertion Markup Language (SAML) is an XML-based, open-standard data format for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider.
    * * Shapefile
 
        |link_63|
@@ -323,12 +325,12 @@ Technical glossary
 
        |link_68|
 
-     * Tiles are individually requested image files over the internetthat are seemlessly joined to create a map 
+     * Tiles are individually requested image files over the internetthat are seemlessly joined to create a map
    * * Token
 
        |link_69|
 
-     * A token is piece of data that is used in network communications (often over HTTP) to identify a session, a series of related message exchanges. On the platform, tokens allow you to connect to external services. 
+     * A token is piece of data that is used in network communications (often over HTTP) to identify a session, a series of related message exchanges. On the platform, tokens allow you to connect to external services.
    * * TSV (Tab Separated Values)
 
        |link_70|
