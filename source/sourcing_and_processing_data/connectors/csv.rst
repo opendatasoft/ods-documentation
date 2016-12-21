@@ -1,5 +1,3 @@
-:orphan: true
-
 CSV extractor
 =============
 

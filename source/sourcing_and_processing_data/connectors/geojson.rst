@@ -1,7 +1,5 @@
-:orphan: true
-
-CSV extractor
-====================
+GeoJSON extractor
+=================
 
 
 Configuration

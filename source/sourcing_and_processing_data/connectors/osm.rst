@@ -1,7 +1,5 @@
-:orphan: true
-
-Salesforce extractor
-====================
+OpenStreetMap extractor
+=======================
 
 
 Configuration

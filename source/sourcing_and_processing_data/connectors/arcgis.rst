@@ -1,5 +1,3 @@
-:orphan: true
-
 ArcGIS REST API connector
 =========================
 

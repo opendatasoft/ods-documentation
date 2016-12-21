@@ -1,7 +1,5 @@
-:orphan: true
-
-CSV extractor
-====================
+Spreadsheet extractor
+=====================
 
 
 Configuration

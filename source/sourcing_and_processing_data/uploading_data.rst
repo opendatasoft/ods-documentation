@@ -61,10 +61,13 @@ HTTP API.
 OpenDataSoft natively supports the following APIs (contact your local support team to get these activated on your
 domain):
 
-* :doc:`WFS </sourcing_and_processing_data/connectors/wfs>`
-* :doc:`JCDecaux Bike API </sourcing_and_processing_data/connectors/jcdecaux>`
-* :doc:`ArcGIS REST API </sourcing_and_processing_data/connectors/arcgis>`
-* :doc:`Salesforce </sourcing_and_processing_data/connectors/salesforce>`
+.. toctree::
+   :titlesonly:
+
+   connectors/arcgis
+   connectors/jcdecaux
+   connectors/salesforce
+   connectors/wfs
 
 
 OpenDataSoft can also develop and integrate customer specific Web APIs. OpenDataSoft connectivity toolkit makes it
@@ -72,6 +75,20 @@ possible to develop performant and secured connectors supporting incremental dat
 
 Supported formats
 -----------------
+
+.. toctree::
+   :hidden:
+
+   connectors/csv
+   connectors/geojson
+   connectors/json
+   connectors/kml
+   connectors/mapinfo
+   connectors/netatmo
+   connectors/osm
+   connectors/shapefile
+   connectors/spreadsheet
+   connectors/xml
 
 The following table lists the supported format and describes configuration options for each format.
 
@@ -86,55 +103,55 @@ The following table lists the supported format and describes configuration optio
      * .csv, .tsv, .txt, .dat
      * The classic Coma Separated Value file.
      *
-        :doc:`CSV </sourcing_and_processing_data/connectors/csv>`
+        :doc:`connectors/csv`
    * * Microsoft Excel
      * .xls, .xlsx
      *
      *
-       :doc:`Spreadsheet </sourcing_and_processing_data/connectors/spreadsheet>`
+       :doc:`connectors/spreadsheet`
    * * OpenDocument SpreadSheet
      * .ods
      *
      *
-       :doc:`Spreadsheet </sourcing_and_processing_data/connectors/spreadsheet>`
+       :doc:`connectors/spreadsheet`
    * * JSON
      * .json
      * Simple JSON documents are supported. The platform lets you choose the root path (path to the table of elements
        to be considered as rows) and the properties path (path to the dictionary holding the list of fields for an
        element).
      *
-       :doc:`JSON </sourcing_and_processing_data/connectors/json>`
+       :doc:`connectors/json`
    * * GeoJSON
      * .json, .geojson
      *
      *
-       :doc:`Geojson </sourcing_and_processing_data/connectors/geojson>`
+       :doc:`connectors/geojson`
    * * KML/KMZ
      * .kml, .kmz
      *
      *
-       :doc:`KML </sourcing_and_processing_data/connectors/kml>`
+       :doc:`connectors/kml`
    * * Shapefile
      *  .zip
      * A zip archive containing at least the following files: <NAME>.shp, <NAME>.dbf, <NAME>.prj
      *
-       :doc:`Shapefile </sourcing_and_processing_data/connectors/shapefile>`
+       :doc:`connectors/shapefile`
    * * MapInfo
      * .zip
      * A zip archive containing either <NAME>.mid and <NAME>.mif files or <NAME>.map, <NAME>.tab, <NAME>.id and
        <NAME>.dat
      *
-       :doc:`MapInfo </sourcing_and_processing_data/connectors/mapinfo>`
+       :doc:`connectors/mapinfo`
    * * OpenStreetMap
      * .osm
      *
      *
-       :doc:`OSM </sourcing_and_processing_data/connectors/osm>`
+       :doc:`connectors/osm`
    * * XML
      * .xml
      *
      *
-       :doc:`XML </sourcing_and_processing_data/connectors/xml>`
+       :doc:`connectors/xml`
 
 File formats support can be extended to match specific requirements (for instance, to support a complex XML DTD or a
 non standard flat file format). Contact your local support team if you need more information on file formats support
@@ -173,5 +190,3 @@ For example:
      * 2-20.png
 
 The CSV files and the images must be located at the root of the archive.
-
-
