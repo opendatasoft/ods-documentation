@@ -73,6 +73,16 @@ domain):
 OpenDataSoft can also develop and integrate customer specific Web APIs. OpenDataSoft connectivity toolkit makes it
 possible to develop performant and secured connectors supporting incremental data processing.
 
+.. ifconfig:: language == 'en'
+
+    .. image:: uploading_data__options--en.png
+        :alt: Connector options
+
+.. ifconfig:: language == 'fr'
+
+    .. image:: uploading_data__options--en.png
+        :alt: Options du connecteur
+
 Supported formats
 -----------------
 
