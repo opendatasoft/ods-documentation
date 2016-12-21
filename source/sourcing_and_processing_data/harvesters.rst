@@ -103,6 +103,10 @@ Scheduling
 
 From the configuration page of a harvester, it is possible to make it run periodically. To do this, scroll to the bottom of the page and click on "Set recurring runs". You can run the harvester every day, or choose the days of week or the days of month it will run on. However, you always have to choose the time of day when it will run because it can not run more than once a day.
 
+The periodic run will only trigger if the harvester has been run at least once.
+
+At the end of a scheduled run, all the harvester's already published datasets will be republished, but unpublished datasets or new datasets will not be automatically published.
+
 .. ifconfig:: language == 'en'
 
     .. figure:: harvesters_scheduling--en.png
