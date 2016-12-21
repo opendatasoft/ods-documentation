@@ -3,7 +3,7 @@ Glossary
 
 
 Data glossary
-------------
+-------------
 .. list-table::
    :header-rows: 1
 
@@ -51,7 +51,7 @@ Data glossary
      * Data that is more free-form, such as multimedia files, images, sound files, or unstructured text. Unstructured data does not necessarily follow any format or hierarchical sequence, nor does it follow any relational rules.  Unstructured data refers to masses of (usually) computerized information which do not have a data structure which is easily readable by a machine. 
 
 OpenDataSoft glossary
-------------
+---------------------
 .. list-table::
    :header-rows: 1
 
@@ -139,7 +139,7 @@ OpenDataSoft glossary
      * A theme is a dataset topic, it helps categorize dataset into bigger categories. Themes are constrained and are to be chosen in a list. 
 
 Technical glossary
-------------
+------------------
 .. list-table::
    :header-rows: 1
 
