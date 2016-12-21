@@ -1176,44 +1176,135 @@ It takes the following parameters:
     * Boolean
     * no
 
-Extract from Json
+Extract from JSON
 ~~~~~~~~~~~~~~~~~
 
-This processor can be used to extract values from a json object.
+This processor extracts values from a field containing a JSON object following a list of ijson rules.
 
-It rely on ijson library and use the same syntax for rule extraction.
+It creates target columns for the extracted data that are automatically named like the ijson rules but replacing dots with underscores. For each ijson rule, a column is created with the extracted value.
+
+The processor doesn't support ijson rules that lead to an array (containing a ``.item`` in the rule).
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Example
+  * * Field
+    * Name of the field that holds the JSON object
+    * Field
+    * data
+  * * ijson rules
+    * ijson rules to apply to extract data from the JSON object above. An ijson rule is built with the names of all the field from the JSON root to the data to extract, separated with a dot.
+    * List
+    * block.metaB
 
 For example, let's assume that you have this json object into a text field :
 
 .. code-block:: json
 
     { "metaA": "Joe",
-      "bloc" :
-          [
-            {"metaB" : "valueB"},
-            {"int": 5},
-            {"boolean": {} }
-          ],
+      "bloc" : {
+            "metaB" : "valueB",
+            "int": 5,
+            "boolean": false
+          },
       "sub" : { "sub_sub" : "sub_value"}
     }
 
 * you will be able to extract the value ``Joe`` with this rule : ``metaA``
-* you will be able to extract the value ``valueB`` with this rule : ``bloc.item.metaB``
-* you will be able to extract the value ``5`` with this rule : ``bloc.item.int``
+* you will be able to extract the value ``valueB`` with this rule : ``bloc.metaB``
+* you will be able to extract the value ``5`` with this rule : ``bloc.int``
 * you will be able to extract the value ``sub_value`` with this rule : ``sub.sub_sub``
-* The rule ``bloc.item`` will extract the last object of the json list : ``{boolean: {}}``
-* The rule ``bloc`` will extract the json list :
+* The rule ``bloc`` will extract the json object :
 
     .. code-block:: json
 
-        [
-            {"metaB" : "valueB"},
-            {"int": 5},
-            {"boolean": {} }
-        ]
+        {
+            "metaB" : "valueB",
+            "int": 5,
+            "boolean": false
+        }
 
 This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will
 activate it for you.
+
+Expand JSON array
+~~~~~~~~~~~~~~~~~
+
+This processor transposes rows containing a JSON array into several rows with a new column containing each value of the array.
+
+The parameter "ijson rule to array" works exactly like in the "Extract from JSON" processor and should contain the array to transpose (represented with the ijson rule ``.item``).
+
+- If the field contains the JSON array directly, just put ``item`` as an ijson rule.
+- If the final element is an array, the ijson rule must end with ``.item``, meaning that the reached object should be treated as an array of items in the ijson syntax.
+- If you want to keep going into the items inside the array, you can keep adding key names after the ``.item``, but be careful to check that this path is valid for every object in the array.
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Example
+  * * json array field
+    * Name of the field that holds the JSON array
+    * Field
+    * data
+  * * ijson rule to array
+    * ijson rule to iterate in the JSON array above. An ijson rule is built with the names of all the field from the JSON root to the data to extract, separated with a dot.
+    * List
+    * block.metaB
+  * * Output field
+    * Name of the field that will contain the extracted element
+    * Field
+    *
+
+Example of ijson rules to extract from the following JSON array field:
+
+.. code-block:: json
+
+    [
+        {
+          "metaB" : "value1",
+          "int": 5,
+          "boolean": false
+        },
+        {
+          "metaB" : "value2",
+          "int": 6,
+          "boolean": true
+        },
+    ]
+
+- ``item`` will transpose the record into two, one with each object of the array in the "Output field" column
+
+.. code-block:: json
+
+    { "metaA": "Joe",
+      "bloc" : [
+            {
+              "metaB" : "value1",
+              "int": 5,
+              "boolean": false,
+              "sub" : { "sub_sub" : "sub_value"}
+            },
+            {
+              "metaB" : "value2",
+              "int": 6,
+              "boolean": true,
+              "sub" : { "sub_sub" : "other_sub_value"}
+            },
+          ]
+    }
+
+- ``bloc.item`` will transpose the record into two, one with each object of the array in the "Output field" column
+- ``bloc.item.sub`` will transpose the record into two, one with each object inside the "sub" tag of each object of the array.
+
+
+This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will activate it for you.
 
 Joining different datasets
 --------------------------
