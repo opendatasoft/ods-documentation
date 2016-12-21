@@ -97,3 +97,18 @@ Services
    harvesters/csw
    harvesters/ftp_csv
    harvesters/ftp_with_meta_csv
+
+Scheduling
+----------
+
+From the configuration page of a harvester, it is possible to make it run periodically. To do this, scroll to the bottom of the page and click on "Set recurring runs". You can run the harvester every day, or choose the days of week or the days of month it will run on. However, you always have to choose the time of day when it will run because it can not run more than once a day.
+
+.. ifconfig:: language == 'en'
+
+    .. figure:: harvesters_scheduling--en.png
+        :alt: Harvester scheduling
+
+.. ifconfig:: language == 'fr'
+
+    .. figure:: harvesters_scheduling--fr.png
+        :alt: Planification d'un moissoneur
