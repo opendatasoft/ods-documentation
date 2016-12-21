@@ -55,6 +55,6 @@ In this example:
 - the tag of the objects is "item",
 - each object has a "name" and a "quantity attribute".
 
-The object path is /basket/item.
+The object path is "/basket/item".
 
 Please note that tags **id**, **description**, **itemCount** and **totalQuantity** (tag names are arbitrary) will be ignored because they are not in any object.
