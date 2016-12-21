@@ -860,6 +860,26 @@ Geocode with ArcGIS
 
 This processor allows you to geocode full text addresses by using the ArcGIS geocoding API. You need to possess an ArcGIS API key to do so.
 
+Retrieve Administrative Divisions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This processor uses a **Geo Point 2D** to retrieve information (name, code and **Geo Shapes**) of administrative divisions. You need to choose an administrative level between 1 and 7. The available administrative divisions are referenced in the table below.
+
+This processor is not activated by default. Please contact the OpenDataSoft support team if you plan to use it.
+
+===  =======  =====================  ============  ========  ==============  ================  ====
+.    1        2                      3             4         5               6                 7
+===  =======  =====================  ============  ========  ==============  ================  ====
+CA   Country  Provinces                            Counties
+DE   Country  Länder                                         Postleitzahlen
+ES   Country  Comunidades Autónomas  Provincias                              Municipios
+FR   Country  Nouvelles régions      Départements            Codes Postaux   Communes (INSEE)  IRIS
+MX   Country  Estados
+NL   Country                                                 Postcodes
+US   Country  States                               Counties  ZCTA
+===  =======  =====================  ============  ========  ==============  ================  ====
+
+
 Text processors
 ---------------
 
