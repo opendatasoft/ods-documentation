@@ -190,3 +190,7 @@ For example:
      * 2-20.png
 
 The CSV files and the images must be located at the root of the archive.
+
+.. note::
+
+    You can find a example of dataset images on `discovery <https://discovery.opendatasoft.com>`_. The source can be download.
