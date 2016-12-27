@@ -19,7 +19,7 @@ Introduction
 
 In the following section, we'll assume that you know what HTTP verbs (``GET``, ``POST``, ``PUT``...) are and that you
 are familiar with HTTP-related vocabulary such as *call*, *request*, *response* *body payload*, *query parameters* etc.
-If you are not then please refer to the :doc:`glossary </glossary>` whenever you find a term you do not understand.
+If you are not then please refer to the :doc:`glossary </platform_glossary>` whenever you find a term you do not understand.
 
 
 OpenDataSoft's API V2 is a full-REST, HATEOAS-enabled, JSON-first API designed to provide access in a coherent,
