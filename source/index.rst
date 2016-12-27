@@ -36,5 +36,5 @@ This documentation is OpenDataSoft's reference documentation. It complements inl
    managing_subdomains/index
    using_api/index
    faq
-   glossary
+   platform_glossary
    accessibility
