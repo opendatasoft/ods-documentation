@@ -13,7 +13,7 @@ Federation is a core feature of the data network we are building. Using it is a 
     .. image:: federation__introduction--fr.png
         :alt: Schema fédération simple
 
-Federation allows to redistribute, in full or in part, an open dataset from a domain on an other domain. It is a way to collect external sources of data on its own domain.
+Federation allows to redistribute, in full or in part, an open dataset from your domain (OpenDataSoft instance) or from another domain. It is a way to collect external sources of data on its own domain.
 
 Source
 ------
@@ -60,7 +60,7 @@ Different sources are available :
 - All open datasets from every OpenDataSoft domains
 - Domain's subdomains (optionnal)
 
-From there the next step is to either select a whole dataset or to select a part of it. The filters are same than in one dataset, there are pre-defined filters, a query box and, if available, the geofilter.
+From there the next step is to either select a whole dataset or to select a part of it. The filters are the same as in the dataset explore console, there are pre-defined filters, a query box and, if available, the geofilter.
 
 .. ifconfig:: language == 'en'
 
@@ -72,7 +72,7 @@ From there the next step is to either select a whole dataset or to select a part
     .. image:: federation__filter-source--fr.jpg
         :alt: Fédération filtrer source
 
-Once the data are selected the dataset appears in the backoffice like a normal one, except that there is no *Processing* tab. Indeed, the data are not duplicated and it is not possible to work on it. Only the metadata and visualization are duplicated, hence it is possible to override them.
+Once the data is selected the dataset appears in the backoffice like a normal one, except that there is no *Processing* tab. Indeed, the data is not duplicated and it is not possible to transform it. Only the metadata and visualization configuration can be overriden.
 
 .. ifconfig:: language == 'en'
 
@@ -87,7 +87,7 @@ Once the data are selected the dataset appears in the backoffice like a normal o
 Overriding metadata and visualizations
 --------------------------------------
 
-Both metadata and visualization can be overrided. Simply hit **Override** and fill the value you want.
+Both metadata and visualization can be overriden. Simply hit **Override** and fill the value you want.
 
 .. ifconfig:: language == 'en'
 
@@ -115,10 +115,10 @@ It is possible to come back to the original value by hitting **Return to origina
 Limitations
 -----------
 
-The federation does not duplicate the data. Only the metadata and visualizations are duplicated, hence can be overrided. There are two reasons for that:
+The federation does not duplicate the data. Only the metadata and visualizations are duplicated, hence can be overriden. There are two reasons for that:
 
 - It is then possible to redistribute data without impacting the size of the data defined in the contract,
-- When the data change, the federated dataset is always up-to-date.
+- When the data changes, the federated dataset is always up-to-date.
 
 .. ifconfig:: language == 'en'
 
@@ -130,4 +130,5 @@ The federation does not duplicate the data. Only the metadata and visualizations
     .. image:: federation__explanation--fr.png
         :alt: Schema fédération
 
-The consequences are that there is no *Processing* tab in the backoffice and that **the federated datasets are not automatically refreshed** when there are some changes in the data schema, the metadata or the visualizations of the source dataset. Unpublishing and republishing the federated dataset allows to retrieve all the changes.
+.. important::
+   Currently, when there is a modification in the original dataset related to the dataset schema, metadata or visualizations configuration, the federated dataset is not automatically updated. You'll then have to unpublish / republish your federated dataset to reflect the changes.
