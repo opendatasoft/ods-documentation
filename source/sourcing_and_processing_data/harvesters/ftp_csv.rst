@@ -1,5 +1,7 @@
-FTP CSV harvester
-=================
+:orphan: true
+
+FTP CSV harvester (deprecated)
+==============================
 
 Synchronize files and metadata stored on an FTP server.
 

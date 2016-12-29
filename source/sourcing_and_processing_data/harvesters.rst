@@ -95,7 +95,6 @@ Services
    :titlesonly:
 
    harvesters/csw
-   harvesters/ftp_csv
    harvesters/ftp_with_meta_csv
 
 Scheduling
