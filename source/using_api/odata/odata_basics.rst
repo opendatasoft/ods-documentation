@@ -10,7 +10,7 @@ Service address
 ~~~~~~~~~~~~~~~
 
 In this article, we will use the words "service root" or "service document" to refer to the base address of the OData 
-service. For the OpenDataSoft platform, this URL can be found on the `/api/odata` path, relative to the platform 
+service. For the OpenDataSoft platform, this URL can be found on the ``/api/odata`` path, relative to the platform 
 hostname. Unless stated otherwise, all addresses in the rest of this article are relative to the service root.
 
 HTTP Method
@@ -55,13 +55,15 @@ syntax or needs special attention, it shall be described.
 Metadata
 --------
 
-The metadata document is located on `/$metadata`. This documents determines the complex types used by the service, then 
+The metadata document is located on ``/$metadata``. This documents determines the complex types used by the service, then 
 the entity types found on the platform, the entity sets offered, and finally a set of annotation about the entity sets.
 
-    
-.. code-block:: http
 
-    GET [/$metadata](http://public.opendatasoft.com/api/odata/$metadata)
+GET |url1|_
+
+.. |url1| replace:: ``/$metadata``
+.. _url1: http://public.opendatasoft.com/api/odata/$metadata
+
 
 .. code-block:: xml
 
@@ -131,9 +133,10 @@ the exact MIME type requested. For the JSON format, different metadata levels ca
 type followed by ``;odata.metadata=<LEVEL>`` for protocol version 4.0 and ``;odata=<LEVEL>metadata`` for protocol 
 version 3.0.
 
-.. code-block:: http
+GET |url2|_
 
-    GET [/error?$format=json](http://public.opendatasoft.com/api/odata/error?$format=json)
+.. |url2| replace:: ``/error?$format=json``
+.. _url2: http://public.opendatasoft.com/api/odata/error?$format=json
 
 .. code-block:: json
 
@@ -144,9 +147,10 @@ version 3.0.
         }
     }
 
-.. code-block:: http
+GET |url3|_
 
-    GET [/error?$format=xml](http://public.opendatasoft.com/api/odata/error?$format=xml)
+.. |url3| replace:: ``/error?$format=xml``
+.. _url3: http://public.opendatasoft.com/api/odata/error?$format=xml
 
 .. code-block:: xml
 
@@ -163,9 +167,10 @@ Catalog
 
 The service root document displays the catalog of all datasets available through the service.
 
-.. code-block:: http
+GET |url4|_
 
-    GET [/?$format=json](http://public.opendatasoft.com/api/odata/?$format=json)
+.. |url4| replace:: ``/?$format=json``
+.. _url4: http://public.opendatasoft.com/api/odata/?$format=json
 
 .. code-block:: json
 
@@ -193,9 +198,10 @@ Datasets
 The records of a dataset can be browsed on the ``/<DATASET ID>`` page. It is easy to navigate from the service root 
 document to a dataset by following the URL attribute of the catalog items.
 
-.. code-block:: http
-    
-    GET [/baby_names_nc_2013](http://public.opendatasoft.com/api/odata/baby_names_nc_2013)
+GET |url5|_
+
+.. |url5| replace:: ``/baby_names_nc_2013``
+.. _url5: http://public.opendatasoft.com/api/odata/baby_names_nc_2013
 
 .. code-block:: json
 
@@ -236,9 +242,10 @@ Client-driven paging can be requested with the ``$top`` REST parameter to limit 
 ``$skip`` REST parameter to define the first result to display. The server will ignore `$skip` results and then return 
 the first ``$top`` items. When paging is applied, a link to the next results will be added at the end of the payload.
 
-.. code-block:: http
-    
-    GET [/baby_names_nc_2013?$top=2](http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$top=2)
+GET |url6|_
+
+.. |url6| replace:: ``/baby_names_nc_2013?$top=2``
+.. _url6: http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$top=2
 
 .. code-block:: json
         
@@ -265,9 +272,10 @@ the first ``$top`` items. When paging is applied, a link to the next results wil
         "@odata.nextLink": "https://public.opendatasoft.com/api/odata/baby_names_nc_2013?$skiptoken=2"
     }
 
-.. code-block:: http
+GET |url7|_
 
-    GET [/baby_names_nc_2013?$skip=1&$top=2](http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$skip=1&$top=2)
+.. |url7| replace:: ``/baby_names_nc_2013?$skip=1&$top=2``
+.. _url7: http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$skip=1&$top=2
 
 .. code-block:: json
 
@@ -299,9 +307,10 @@ Recherche
 
 The ``$search`` parameter can be used to search data.
 
-.. code-block:: http
+GET |url8|_
 
-    GET [/baby_names_nc_2013?$search=Cad](http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$search=Cad)
+.. |url8| replace:: ``/baby_names_nc_2013?$search=Cad``
+.. _url8: http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$search=Cad
 
 .. code-block:: json
 
@@ -352,9 +361,10 @@ The ``$filter`` parameter can be used to apply a restriction on results. Support
 inequalities. Multiple restriction expessions can be combined into bigger expressions with the logical operators 
 ``and`` and ``or``. Expression can be negated with the ``not`` operator.
 
-.. code-block:: http
+GET |url9|_
 
-    GET [/baby_names_nc_2013?$filter=name eq Caden](http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$filter=name eq Caden)
+.. |url9| replace:: ``/baby_names_nc_2013?$filter=name``
+.. _url9: e Caden <http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$filter=name eq Caden
 
 .. code-block:: json
 
@@ -371,10 +381,11 @@ inequalities. Multiple restriction expessions can be combined into bigger expres
             }
         ]
     }
-    
-.. code-block:: http
-    
-    GET [/baby_names_nc_2013?$filter=number gt 280 and not number ge 285](http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$filter=number gt 280 and not number ge 285)
+
+GET |url10|_
+
+.. |url10| replace:: ``/baby_names_nc_2013?$filter=number``
+.. _url10: g 280 and not number ge 285 <http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$filter=number gt 280 and not number ge 285
 
 .. code-block:: json
 
@@ -411,9 +422,10 @@ returned along with the payload, while the second one returns the absolute resou
 other than the number of records present on the server and only returns the number, without any other information.
 
 
-.. code-block:: http
+GET |url11|_
 
-    GET [/baby_names_nc_2013?$filter=number lt 8&$top=1&$count=true](http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$filter=number lt 8&$top=1&$count=true)
+.. |url11| replace:: ``/baby_names_nc_2013?$filter=number``
+.. _url11: l 8&$top=1&$count=true <http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$filter=number lt 8&$top=1&$count=true
 
 .. code-block:: json
 
@@ -433,9 +445,10 @@ other than the number of records present on the server and only returns the numb
         "@odata.nextLink": "https://public.opendatasoft.com/api/odata/baby_names_nc_2013?$skiptoken=1&$filter=number%20lt%208&$count=true"
     }
 
-.. code-block:: http
+GET |url12|_
 
-    GET [/baby_names_nc_2013/$count](http://public.opendatasoft.com/api/odata/baby_names_nc_2013/$count)
+.. |url12| replace:: ``/baby_names_nc_2013/$count``
+.. _url12: http://public.opendatasoft.com/api/odata/baby_names_nc_2013/$count
 
     2841
 
@@ -446,9 +459,10 @@ Results returned by the service can be sorted by a field using the ``$orderby`` 
 followed by the ``asc`` and ``desc`` keywords to specify the sort order (default is ascendant).
 
 
-.. code-block:: http
-    
-    GET [/baby_names_nc_2013?$search=Cad&$orderby=number](http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$search=Cad&$orderby=number)
+GET |url13|_
+
+.. |url13| replace:: ``/baby_names_nc_2013?$search=Cad&$orderby=number``
+.. _url13: http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$search=Cad&$orderby=number
 
 .. code-block:: json
 
@@ -489,10 +503,11 @@ followed by the ``asc`` and ``desc`` keywords to specify the sort order (default
             }
         ]
     }
-    
-.. code-block:: http
 
-    GET [/baby_names_nc_2013?$search=Cad&$orderby=number desc](http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$search=Cad&$orderby=number desc)
+GET |url14|_
+
+.. |url14| replace:: ``/baby_names_nc_2013?$search=Cad&$orderby=number``
+.. _url14: des <http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$search=Cad&$orderby=number desc
 
 .. code-block:: json
 
@@ -539,9 +554,10 @@ Specific record
 
 To access a specific record, its record id surrounded by parenthesis, can be appended to the dataset address.
 
-.. code-block:: http
+GET |url15|_
 
-    GET [/baby_names_nc_2013(efc3e55da1dd591ba0c2bd42f0b0719e330f738f)](http://public.opendatasoft.com/api/odata/baby_names_nc_2013(efc3e55da1dd591ba0c2bd42f0b0719e330f738f))
+.. |url15| replace:: ``/baby_names_nc_2013(efc3e55da1dd591ba0c2bd42f0b0719e330f738f)``
+.. _url15: http://public.opendatasoft.com/api/odata/baby_names_nc_2013(efc3e55da1dd591ba0c2bd42f0b0719e330f738f)
 
 .. code-block:: json
 
@@ -562,9 +578,10 @@ Results can be projected over specific fields using the `$select` parameter. For
 projection, their names must be separated by a comma and an optional space. This parameter can be used with datasets 
 and specific records.
 
-.. code-block:: http
-    
-    GET [/baby_names_nc_2013?$search=Cad&$select=name, number](http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$search=Cad&$select=name, number)
+GET |url16|_
+
+.. |url16| replace:: ``/baby_names_nc_2013?$search=Cad&$select=name,``
+.. _url16: numbe <http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$search=Cad&$select=name, number
 
 .. code-block:: json
 
@@ -590,9 +607,10 @@ and specific records.
         ]
     }
 
-.. code-block:: http
+GET |url17|_
 
-    GET [/baby_names_nc_2013(efc3e55da1dd591ba0c2bd42f0b0719e330f738f)?$select=name](http://public.opendatasoft.com/api/odata/baby_names_nc_2013(efc3e55da1dd591ba0c2bd42f0b0719e330f738f)?$select=name)
+.. |url17| replace:: ``/baby_names_nc_2013(efc3e55da1dd591ba0c2bd42f0b0719e330f738f)?$select=name``
+.. _url17: http://public.opendatasoft.com/api/odata/baby_names_nc_2013(efc3e55da1dd591ba0c2bd42f0b0719e330f738f)?$select=name
 
 .. code-block:: json
 

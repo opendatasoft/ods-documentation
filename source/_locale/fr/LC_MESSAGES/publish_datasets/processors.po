@@ -6,13 +6,16 @@
 # benrict <benoit.richter@opendatasoft.com>, 2016
 # Jérémy Morel, 2016
 # Jérémy Morel, 2016
+# Rémi Lejeune <remi.lejeune@opendatasoft.com>, 2016
+# Romain Beaudon <romain.beaudon@opendatasoft.com>, 2016
+# Vincent Barbaresi <vincent.barbaresi@opendatasoft.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-11 10:49+0200\n"
-"PO-Revision-Date: 2016-07-11 08:45+0000\n"
-"Last-Translator: Jérémy Morel\n"
+"POT-Creation-Date: 2016-12-14 10:15+0100\n"
+"PO-Revision-Date: 2016-11-29 16:06+0000\n"
+"Last-Translator: Romain Beaudon <romain.beaudon@opendatasoft.com>\n"
 "Language-Team: French (http://www.transifex.com/opendatasoft/documentation-5/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -216,468 +219,572 @@ msgid ""
 msgstr "Ce processeur vous permet de géocoder des adresses en format texte en utilisant l'API de géocodage ArcGIS. Vous devez posséder une clé d'API ArcGIS. Ce processeur n'est pas disponible par défaut. Vous pouvez contacter l'équipe support OpenDataSoft si vous souhaitez l'utiliser."
 
 #: ../../source/publish_datasets/processors.rst:104
+msgid "Geomasking"
+msgstr "Masquage géographique"
+
+#: ../../source/publish_datasets/processors.rst:106
+msgid ""
+"This processor allows you to anonymize location data (**Geo Point 2D**). It "
+"gives a random displacement within a donut defined by an outer circle, and a"
+" smaller internal circle."
+msgstr "Ce processeur vous permet d'anonymiser une coordonnée géographique (** point géo**). Il déplace le point aléatoirement dans un donut définit par un cercle extérieur et un cercle intérieur plus petit."
+
+#: ../../source/publish_datasets/processors.rst:109
+msgid "The same coordinate anonymized several times:"
+msgstr "La même coordonnée anonymisée plusieurs fois :"
+
+#: ../../source/publish_datasets/processors.rst:115
 msgid "Dates Processors"
 msgstr "Processeurs de dates"
 
-#: ../../source/publish_datasets/processors.rst:110
+#: ../../source/publish_datasets/processors.rst:121
 msgid "Set Timezone"
 msgstr "Définir le fuseau horaire"
 
-#: ../../source/publish_datasets/processors.rst:112
+#: ../../source/publish_datasets/processors.rst:123
 msgid ""
 "This processor can be used to force the timezone of a datetime field. This "
 "might be useful when, for instance, the source outputs timestamps with no "
 "timezone indication."
 msgstr "Ce processeur peut être utilisé pour forcer la définition du fuseau horaire d'un champ datetime. Ce peut être utile par exemple lorsque la donnée source n'a aucune indication de fuseau horaire."
 
-#: ../../source/publish_datasets/processors.rst:116
+#: ../../source/publish_datasets/processors.rst:127
 msgid "Normalize Date"
 msgstr "Normaliser une Date"
 
-#: ../../source/publish_datasets/processors.rst:118
+#: ../../source/publish_datasets/processors.rst:129
 msgid ""
 "Date normalization is one of the most commonly used processors. It allows "
 "you to parse a date in a format that would otherwise not be understood by "
 "the platform."
 msgstr "La normalisation de date est un des processeurs les plus utilisés. Il permet d'interpréter la date dans un format qui n'aurait autrement pas été détecté par la plateforme."
 
-#: ../../source/publish_datasets/processors.rst:121
+#: ../../source/publish_datasets/processors.rst:131
 msgid ""
-"Simply specify the date format pattern to use in the **Date format** "
-"parameter."
-msgstr "Spécifiez simplement le format à utiliser dans le paramètre **Format de date**."
+"The most common common case is when dates are in the DD/MM/YYYY format : by "
+"default the platform will parse dates using the MM/DD/YYYY format (US). For "
+"example January 10 2016 written 10/01/2016 (French format) will be "
+"interpreted as October 1 2016."
+msgstr "Le cas le plus courant est lorsque les dates sont dans le format JJ/MM/AAAA : par défaut, la plateforme interprétera les dates dans le format MM/JJ/AAAA (format américain). Par exemple, le 10 janvier 2016 écrit 10/01/2016 sera interprété comme le 1er octobre 2016. "
 
-#: ../../source/publish_datasets/processors.rst:123
+#: ../../source/publish_datasets/processors.rst:133
+msgid ""
+"The Date Normalization processor can then be used to correct this problem, "
+"by simply specifying the date format pattern to use in the **Date format** "
+"parameter. In this case, the format we want is DD/MM/YYYY, which will be "
+"written **%d/%m/%Y** (see below for more details on patterns) :"
+msgstr "Le processeur Normaliser une Date peut dans ce cas être utilisé pour corriger ce problème, en indiquant simplement le format de date à utiliser dans le champ **Date format**. Dans l'exemple précédent, le format voulu est JJ/MM/AAAA, qui s'écrira **%d/%m/%Y** dans le champ (voir ci-dessous pour plus de détails sur la syntaxe des différents formats) :"
+
+#: ../../source/publish_datasets/processors.rst:140
+msgid ""
+"By default, 12/04/2016 and 03/10/2016 are interpreted respectively as "
+"December 4 2016 and March 10 2016"
+msgstr "Par défaut, 12/04/2016 et 03/10/2016 sont interprétés respectivement en 4 décembre 2016 et 10 mars 2016"
+
+#: ../../source/publish_datasets/processors.rst:145
+msgid ""
+"With the Date normalization processor and the pattern %d/%m/%Y (DD/MM/YYYY),"
+" the dates are interpreted as April 12 2016 and October 3 2016"
+msgstr "Avec le processeur Normaliser une date et le format %d/%m/%Y (JJ/MM/AAAA), les dates sont interprétées en 12 avril 2016 et 3 octobre 2016"
+
+#: ../../source/publish_datasets/processors.rst:159
+msgid ""
+"In general, it is preferred to have date in the unambiguous format YYYY-MM-"
+"DD to avoid these problems (note that Excel files are usually not affected "
+"by these issues)."
+msgstr "De manière générale, il est préférable d'utiliser des dates dans le format AAAA-MM-JJ qui est sans ambiguïtés pour éviter ces problèmes (les fichiers Excel ne sont pas concernés)"
+
+#: ../../source/publish_datasets/processors.rst:161
 msgid ""
 "A pattern is an arbitrary string containing one of the following directives."
 msgstr "Un format est une chaine de caractère utilisant les directives suivantes."
 
-#: ../../source/publish_datasets/processors.rst:128
+#: ../../source/publish_datasets/processors.rst:166
 msgid "Directive"
 msgstr "Directive"
 
-#: ../../source/publish_datasets/processors.rst:129
+#: ../../source/publish_datasets/processors.rst:167
 msgid "Meaning"
 msgstr "Signification"
 
-#: ../../source/publish_datasets/processors.rst:130
+#: ../../source/publish_datasets/processors.rst:168
 msgid "Example"
 msgstr "Exemple"
 
-#: ../../source/publish_datasets/processors.rst:131
+#: ../../source/publish_datasets/processors.rst:169
 msgid "%a"
 msgstr "%a"
 
-#: ../../source/publish_datasets/processors.rst:132
+#: ../../source/publish_datasets/processors.rst:170
 msgid "Weekday as locale’s abbreviated name."
 msgstr "Jour de la semaine en abrégé et en anglais"
 
-#: ../../source/publish_datasets/processors.rst:133
+#: ../../source/publish_datasets/processors.rst:171
 msgid "Sun, Mon, ..., Sat"
 msgstr "Sun, Mon, ..., Sat"
 
-#: ../../source/publish_datasets/processors.rst:134
+#: ../../source/publish_datasets/processors.rst:172
 msgid "%A"
 msgstr "%A"
 
-#: ../../source/publish_datasets/processors.rst:135
+#: ../../source/publish_datasets/processors.rst:173
 msgid "Weekday as locale’s full name."
 msgstr "Jour de la semaine en entier et en anglais"
 
-#: ../../source/publish_datasets/processors.rst:136
+#: ../../source/publish_datasets/processors.rst:174
 msgid "Sunday, Monday, ..., Saturday"
 msgstr "Sunday, Monday, ..., Saturday"
 
-#: ../../source/publish_datasets/processors.rst:137
+#: ../../source/publish_datasets/processors.rst:175
 msgid "%w"
 msgstr "%w"
 
-#: ../../source/publish_datasets/processors.rst:138
+#: ../../source/publish_datasets/processors.rst:176
 msgid "Weekday as a decimal number, where 0 is Sunday and 6 is Saturday."
 msgstr "Jour de la semaine sous forme de numéro, sachant que 0 est dimanche et 6 est samedi."
 
-#: ../../source/publish_datasets/processors.rst:139
+#: ../../source/publish_datasets/processors.rst:177
 msgid "0, 1, ..., 6"
 msgstr "0, 1, ..., 6"
 
-#: ../../source/publish_datasets/processors.rst:140
+#: ../../source/publish_datasets/processors.rst:178
 msgid "%d"
 msgstr "%d"
 
-#: ../../source/publish_datasets/processors.rst:141
+#: ../../source/publish_datasets/processors.rst:179
 msgid "Day of the month as a zero-padded decimal number."
 msgstr "Jour du mois sous forme de nombre à 2 chiffres."
 
-#: ../../source/publish_datasets/processors.rst:142
+#: ../../source/publish_datasets/processors.rst:180
 msgid "01, 02, ..., 31"
 msgstr "01, 02, ..., 31"
 
-#: ../../source/publish_datasets/processors.rst:143
+#: ../../source/publish_datasets/processors.rst:181
 msgid "%b"
 msgstr "%b"
 
-#: ../../source/publish_datasets/processors.rst:144
+#: ../../source/publish_datasets/processors.rst:182
 msgid "Month as locale’s abbreviated name."
 msgstr "Mois en abrégé et en anglais"
 
-#: ../../source/publish_datasets/processors.rst:145
+#: ../../source/publish_datasets/processors.rst:183
 msgid "Jan, Feb, ..., Dec"
 msgstr "Jan, Feb, ..., Dec"
 
-#: ../../source/publish_datasets/processors.rst:146
+#: ../../source/publish_datasets/processors.rst:184
 msgid "%B"
 msgstr "%B"
 
-#: ../../source/publish_datasets/processors.rst:147
+#: ../../source/publish_datasets/processors.rst:185
 msgid "Month as locale’s full name."
 msgstr "Mois en entier et en anglais"
 
-#: ../../source/publish_datasets/processors.rst:148
+#: ../../source/publish_datasets/processors.rst:186
 msgid "January, February, ..., December"
 msgstr "January, February, ..., December"
 
-#: ../../source/publish_datasets/processors.rst:149
+#: ../../source/publish_datasets/processors.rst:187
 msgid "%m"
 msgstr "%m"
 
-#: ../../source/publish_datasets/processors.rst:150
+#: ../../source/publish_datasets/processors.rst:188
 msgid "Month as a zero-padded decimal number."
 msgstr "Mois sous forme de nombre à 2 chiffres."
 
-#: ../../source/publish_datasets/processors.rst:151
-#: ../../source/publish_datasets/processors.rst:163
+#: ../../source/publish_datasets/processors.rst:189
+#: ../../source/publish_datasets/processors.rst:201
 msgid "01, 02, ..., 12"
 msgstr "01, 02, ..., 12"
 
-#: ../../source/publish_datasets/processors.rst:152
+#: ../../source/publish_datasets/processors.rst:190
 msgid "%y"
 msgstr "%y"
 
-#: ../../source/publish_datasets/processors.rst:153
+#: ../../source/publish_datasets/processors.rst:191
 msgid "Year without century as a zero-padded decimal number."
 msgstr "Année sans le siècle sous forme de 2 chiffres."
 
-#: ../../source/publish_datasets/processors.rst:154
+#: ../../source/publish_datasets/processors.rst:192
 msgid "00, 01, ..., 99"
 msgstr "00, 01, ..., 99"
 
-#: ../../source/publish_datasets/processors.rst:155
+#: ../../source/publish_datasets/processors.rst:193
 msgid "%Y"
 msgstr "%Y"
 
-#: ../../source/publish_datasets/processors.rst:156
+#: ../../source/publish_datasets/processors.rst:194
 msgid "Year with century as a decimal number."
 msgstr "Année avec le siècle sous forme de nombre."
 
-#: ../../source/publish_datasets/processors.rst:157
+#: ../../source/publish_datasets/processors.rst:195
 msgid "1970, 1988, 2001, 2013"
 msgstr "1970, 1988, 2001, 2013"
 
-#: ../../source/publish_datasets/processors.rst:158
+#: ../../source/publish_datasets/processors.rst:196
 msgid "%H"
 msgstr "%H"
 
-#: ../../source/publish_datasets/processors.rst:159
+#: ../../source/publish_datasets/processors.rst:197
 msgid "Hour (24-hour clock) as a zero-padded decimal number."
 msgstr "Heure (en 24 heures) sous forme de nombre à 2 chiffres."
 
-#: ../../source/publish_datasets/processors.rst:160
+#: ../../source/publish_datasets/processors.rst:198
 msgid "00, 01, ..., 23"
 msgstr "00, 01, ..., 23"
 
-#: ../../source/publish_datasets/processors.rst:161
+#: ../../source/publish_datasets/processors.rst:199
 msgid "%I"
 msgstr "%I"
 
-#: ../../source/publish_datasets/processors.rst:162
+#: ../../source/publish_datasets/processors.rst:200
 msgid "Hour (12-hour clock) as a zero-padded decimal number."
 msgstr "Heure (en 12 heures) sous forme de nombre à 2 chiffres."
 
-#: ../../source/publish_datasets/processors.rst:164
+#: ../../source/publish_datasets/processors.rst:202
 msgid "%p"
 msgstr "%p"
 
-#: ../../source/publish_datasets/processors.rst:165
+#: ../../source/publish_datasets/processors.rst:203
 msgid "Locale’s equivalent of either AM or PM."
 msgstr "Indique AM ou PM selon le matin ou l'après-midi."
 
-#: ../../source/publish_datasets/processors.rst:166
+#: ../../source/publish_datasets/processors.rst:204
 msgid "AM, PM"
 msgstr "AM, PM"
 
-#: ../../source/publish_datasets/processors.rst:167
+#: ../../source/publish_datasets/processors.rst:205
 msgid "%M"
 msgstr "%M"
 
-#: ../../source/publish_datasets/processors.rst:168
+#: ../../source/publish_datasets/processors.rst:206
 msgid "Minute as a zero-padded decimal number."
 msgstr "Minute sous forme de nombre à 2 chiffres."
 
-#: ../../source/publish_datasets/processors.rst:169
-#: ../../source/publish_datasets/processors.rst:172
+#: ../../source/publish_datasets/processors.rst:207
+#: ../../source/publish_datasets/processors.rst:210
 msgid "00, 01, ..., 59"
 msgstr "00, 01, ..., 59"
 
-#: ../../source/publish_datasets/processors.rst:170
+#: ../../source/publish_datasets/processors.rst:208
 msgid "%S"
 msgstr "%S"
 
-#: ../../source/publish_datasets/processors.rst:171
+#: ../../source/publish_datasets/processors.rst:209
 msgid "Second as a zero-padded decimal number."
 msgstr "Secondes sous forme de nombre à 2 chiffres."
 
-#: ../../source/publish_datasets/processors.rst:173
+#: ../../source/publish_datasets/processors.rst:211
 msgid "%f"
 msgstr "%f"
 
-#: ../../source/publish_datasets/processors.rst:174
+#: ../../source/publish_datasets/processors.rst:212
 msgid "Microsecond as a decimal number, zero-padded on the left."
 msgstr "Microsecondes sous forme de nombre à 6 chiffres."
 
-#: ../../source/publish_datasets/processors.rst:175
+#: ../../source/publish_datasets/processors.rst:213
 msgid "000000, 000001, ..., 999999"
 msgstr "000000, 000001, ..., 999999"
 
-#: ../../source/publish_datasets/processors.rst:176
+#: ../../source/publish_datasets/processors.rst:214
 msgid "%j"
 msgstr "%j"
 
-#: ../../source/publish_datasets/processors.rst:177
+#: ../../source/publish_datasets/processors.rst:215
 msgid "Day of the year as a zero-padded decimal number."
 msgstr "Jour de l'année sous forme de nombre à 3 chiffres."
 
-#: ../../source/publish_datasets/processors.rst:178
+#: ../../source/publish_datasets/processors.rst:216
 msgid "001, 002, ..., 366"
 msgstr "001, 002, ..., 366"
 
-#: ../../source/publish_datasets/processors.rst:179
+#: ../../source/publish_datasets/processors.rst:217
 msgid "%U"
 msgstr "%U"
 
-#: ../../source/publish_datasets/processors.rst:180
+#: ../../source/publish_datasets/processors.rst:218
 msgid ""
 "Week number of the year (Sunday as the first day of the week) as a zero "
 "padded decimal number. All days in a new year preceding the first Sunday are"
 " considered to be in week 0."
 msgstr "Numero de semaine dans l'année sous forme de nombre à 2 chiffres (en considérant qu'une semaine démarre le dimanche). Tous les jours d'une nouvelle année précédant le premier dimanche sont considérés comme étant dans la semaine 0."
 
-#: ../../source/publish_datasets/processors.rst:181
-#: ../../source/publish_datasets/processors.rst:184
+#: ../../source/publish_datasets/processors.rst:219
+#: ../../source/publish_datasets/processors.rst:222
 msgid "00, 01, ..., 53"
 msgstr "00, 01, ..., 53"
 
-#: ../../source/publish_datasets/processors.rst:182
+#: ../../source/publish_datasets/processors.rst:220
 msgid "%W"
 msgstr "%W"
 
-#: ../../source/publish_datasets/processors.rst:183
+#: ../../source/publish_datasets/processors.rst:221
 msgid ""
 "Week number of the year (Monday as the first day of the week) as a decimal "
 "number. All days in a new year preceding the first Monday are considered to "
 "be in week 0."
 msgstr "Numero de semaine dans l'année sous forme de nombre à 2 chiffres (en considérant qu'une semaine démarre le lundi). Tous les jours d'une nouvelle année précédant le premier lundi sont considérés comme étant dans la semaine 0."
 
-#: ../../source/publish_datasets/processors.rst:186
+#: ../../source/publish_datasets/processors.rst:224
 msgid ""
 "For the directives %a, %A, %b, %B and %p, we only support representations of"
 " their values in the locale *en_US*."
 msgstr "Pour les directives %a, %A, %b, %B et %p, seules les représentations en anglais sont supportées (locale *en_US*)."
 
-#: ../../source/publish_datasets/processors.rst:189
+#: ../../source/publish_datasets/processors.rst:227
 msgid "Numerical Processors"
 msgstr "Processeurs numériques"
 
-#: ../../source/publish_datasets/processors.rst:195
-#: ../../source/publish_datasets/processors.rst:229
-#: ../../source/publish_datasets/processors.rst:271
+#: ../../source/publish_datasets/processors.rst:233
+#: ../../source/publish_datasets/processors.rst:334
+#: ../../source/publish_datasets/processors.rst:376
 msgid "Expression"
 msgstr "Expression"
 
-#: ../../source/publish_datasets/processors.rst:197
+#: ../../source/publish_datasets/processors.rst:235
 msgid ""
 "This processor makes it possible to write complex expression patterns using "
 "field values."
 msgstr "Ce processeur permet d'écrire des expressions complexes utilisant des valeurs de champs."
 
-#: ../../source/publish_datasets/processors.rst:199
+#: ../../source/publish_datasets/processors.rst:237
+msgid ""
+"It works similarly as formulas in a spreadsheet software, except instead of "
+"referencing cells (i.e. A1 + B2), you have to reference columns of the "
+"dataset (i.e. column_1 + column_2)"
+msgstr "Le fonctionnement est similaire à celui des formules dans un tableur type Excel, sauf qu'au lieu d'effectuer des opérations sur des cellules (ex. A1 + B2), on va ici travailler sur des colonnes du jeu de données (ex. colonne_1 + colonne_2)"
+
+#: ../../source/publish_datasets/processors.rst:244
+msgid ""
+"Example of a basic sum with the Expression processor. The \"Result\" column "
+"contains the result of the sum (this column was not in the data source)."
+msgstr "Exemple de d'expression simple d'addition avec le processeur \"Expression\". La colonne \"Résultat\" contient le résultat du calcul (elle est crée par le processeur, elle n'est pas présente initialement dans le jeu de données)"
+
+#: ../../source/publish_datasets/processors.rst:253
+msgid ""
+"Be careful to use the **technical name** instead of the column label in the "
+"expression. This technical name can be found by clicking on the gears icon."
+msgstr "Attention à bien utiliser le **nom technique** au lieu du libellé de colonne dans les expressions. Ce nom technique est accessible en cliquant sur l'icône avec les engrenages dans l'entête de colonne."
+
+#: ../../source/publish_datasets/processors.rst:260
+msgid "Technical name of a column"
+msgstr "Nom technique d'une colonne"
+
+#: ../../source/publish_datasets/processors.rst:269
+msgid "Here are some common use cases :"
+msgstr "Parmi les cas d'usages les plus courants on trouve :"
+
+#: ../../source/publish_datasets/processors.rst:271
+msgid "Numerical operations (like the sum example above)"
+msgstr "Calcul numérique (comme dans l'exemple ci-dessus)"
+
+#: ../../source/publish_datasets/processors.rst:272
+msgid ""
+"Mathematical or text function (round, log, cosinus, change text to upper "
+"case, ...)"
+msgstr "Application d'une fonction sur une colonne (arrondi, logarithme, cosinus, mettre en majuscule, etc...)"
+
+#: ../../source/publish_datasets/processors.rst:279
+msgid "Example of a mathematical function using the Expression processor"
+msgstr "Exemple de fonction mathématique avec le processeur Expression"
+
+#: ../../source/publish_datasets/processors.rst:288
+msgid ""
+"Conditional expression : the idea is to create a new column (e.g for "
+"filtering) which values depends on condition on values of another column of "
+"the dataset. For example, a new column named \"Anomaly Detected ?\" "
+"containing YES/NO, depending of values of another column being in a certain "
+"range (see screenshot below)"
+msgstr "Expression conditionnelle : l'idée est de créer une nouvelle colonne (par exemple pour filtrer) dont le contenu dépend de la valeur d'une autre colonne du jeu de données. Par exemple, une nouvelle colonne \"Anomalie détectée ?\" contenant OUI/NON en fonction de valeurs d'une autre colonne."
+
+#: ../../source/publish_datasets/processors.rst:295
+msgid ""
+"Example of a conditional expression using the Expression processor, with the"
+" creation of the \"Anomaly Detected ?\" (which was not initially present in "
+"the original data source). The syntax is ``=expression ? value if the "
+"expression if true : value if false``"
+msgstr "Exemple d'expression conditionnelle avec le processeur Expression, avec la création de la colonne \"Anomalie détectée ?\" (qui n'est pas présente initialement dans le jeu de données source). La syntaxe est ``=expression ? valeur si l'expression est vraie : valeur si l'expression est fausse``"
+
+#: ../../source/publish_datasets/processors.rst:304
 msgid ""
 "The expression processor can work with both textual content and numerical "
 "content."
 msgstr "Le processeur d'expression peut fonctionner à la fois avec des valeurs textuelles et des valeurs numériques."
 
-#: ../../source/publish_datasets/processors.rst:201
+#: ../../source/publish_datasets/processors.rst:306
 msgid ""
 "Literal values can be either explicit literals, such as ``\"this is some "
 "text\"``, or ``2`` as well as field names, such as ``price``."
 msgstr "Les valeurs peuvent être des valeurs littérales explicite, telles que `\"ceci est du texte\"``, ou ``2``, mais aussi des noms des champs, tels que  ``price``."
 
-#: ../../source/publish_datasets/processors.rst:204
+#: ../../source/publish_datasets/processors.rst:309
 msgid ""
 "To enter expression mode, tap a ``=`` in the expression field box. If you do"
 " not, the expression will be interpreted as pure textual content."
 msgstr "Pour entrer en mode expression, tapez ``=`` dans la boite d'expression du processeur. Si vous n'êtes pas en mode expression, le contenu de la boite sera interprété comme du texte brut."
 
-#: ../../source/publish_datasets/processors.rst:207
+#: ../../source/publish_datasets/processors.rst:312
 msgid "In expression mode, strings must be double quoted (``\"foo\"``)."
 msgstr "En mode expression, les chaines de caractères doivent être entourées de double-guillemets (``\"foo\"``)."
 
-#: ../../source/publish_datasets/processors.rst:209
+#: ../../source/publish_datasets/processors.rst:314
 msgid "The following unary, binary and ternary operators are available:"
 msgstr "Les opérateurs unaires, binaires et ternaires suivants sont disponibles :"
 
-#: ../../source/publish_datasets/processors.rst:214
+#: ../../source/publish_datasets/processors.rst:319
 msgid "Operator type"
 msgstr "Type d'opérateu"
 
-#: ../../source/publish_datasets/processors.rst:215
+#: ../../source/publish_datasets/processors.rst:320
 msgid "Operators"
 msgstr "Opérateurs"
 
-#: ../../source/publish_datasets/processors.rst:216
+#: ../../source/publish_datasets/processors.rst:321
 msgid "Unary operators"
 msgstr "Opérateurs unaires"
 
-#: ../../source/publish_datasets/processors.rst:217
+#: ../../source/publish_datasets/processors.rst:322
 msgid "+, -, not, ! (not) , ! (factorial), ^ (power)"
 msgstr "+, -, not, ! (not) , ! (factoriel), ^ (puissance)"
 
-#: ../../source/publish_datasets/processors.rst:218
+#: ../../source/publish_datasets/processors.rst:323
 msgid "Binary operators"
 msgstr "Opérateurs binaires"
 
-#: ../../source/publish_datasets/processors.rst:219
+#: ../../source/publish_datasets/processors.rst:324
 msgid ""
 "+, -, ``*``, /, % (euclidean division), and, &&, or, ||, >, <, >=, <=, == "
 "(evaluates to ``True`` or ``False``), & (concatenation of strings, evaluates"
 " to a string)"
 msgstr "+, -, ``*``, /, % (division euclidienne), and, &&, or, ||, >, <, >=, <=, == (évalue à ``True`` or ``False``), & (concaténation de chaines, évalue à une chaine)"
 
-#: ../../source/publish_datasets/processors.rst:221
+#: ../../source/publish_datasets/processors.rst:326
 msgid "Ternary operators"
 msgstr "Opérateurs ternaires"
 
-#: ../../source/publish_datasets/processors.rst:222
-msgid "op1 ? op2 : op3 (conditional statement)"
-msgstr "op1 ? op2 : op3 (expression conditionnelle)"
+#: ../../source/publish_datasets/processors.rst:327
+msgid ""
+"expression ? value if the expression is true : value if the expression is "
+"false (conditional statement, note that the value can be another expression)"
+msgstr "expression ? valeur si 'expression est vraie : valeur si l'expression est fausse (expression conditionnelle, la valeur peut être une autre expression)"
 
-#: ../../source/publish_datasets/processors.rst:224
-#: ../../source/publish_datasets/processors.rst:266
+#: ../../source/publish_datasets/processors.rst:329
+#: ../../source/publish_datasets/processors.rst:371
 msgid "Examples:"
 msgstr "Exemples :"
 
-#: ../../source/publish_datasets/processors.rst:230
-#: ../../source/publish_datasets/processors.rst:272
+#: ../../source/publish_datasets/processors.rst:335
+#: ../../source/publish_datasets/processors.rst:377
 msgid "Result"
 msgstr "Résultat"
 
-#: ../../source/publish_datasets/processors.rst:231
+#: ../../source/publish_datasets/processors.rst:336
 msgid "1 + 1"
 msgstr "1 + 1"
 
-#: ../../source/publish_datasets/processors.rst:232
-#: ../../source/publish_datasets/processors.rst:244
-#: ../../source/publish_datasets/processors.rst:280
-#: ../../source/publish_datasets/processors.rst:286
-#: ../../source/publish_datasets/processors.rst:451
-#: ../../source/publish_datasets/processors.rst:466
-#: ../../source/publish_datasets/processors.rst:484
-#: ../../source/publish_datasets/processors.rst:536
-#: ../../source/publish_datasets/processors.rst:553
-#: ../../source/publish_datasets/processors.rst:575
+#: ../../source/publish_datasets/processors.rst:337
+#: ../../source/publish_datasets/processors.rst:349
+#: ../../source/publish_datasets/processors.rst:385
+#: ../../source/publish_datasets/processors.rst:391
+#: ../../source/publish_datasets/processors.rst:627
+#: ../../source/publish_datasets/processors.rst:642
+#: ../../source/publish_datasets/processors.rst:660
+#: ../../source/publish_datasets/processors.rst:712
+#: ../../source/publish_datasets/processors.rst:729
+#: ../../source/publish_datasets/processors.rst:751
 msgid "2"
 msgstr "2"
 
-#: ../../source/publish_datasets/processors.rst:233
+#: ../../source/publish_datasets/processors.rst:338
 msgid "-3 + 1"
 msgstr "-3 + 1"
 
-#: ../../source/publish_datasets/processors.rst:234
+#: ../../source/publish_datasets/processors.rst:339
 msgid "-2"
 msgstr "-2"
 
-#: ../../source/publish_datasets/processors.rst:235
+#: ../../source/publish_datasets/processors.rst:340
 msgid "3!"
 msgstr "3!"
 
-#: ../../source/publish_datasets/processors.rst:236
+#: ../../source/publish_datasets/processors.rst:341
 msgid "6"
 msgstr "6"
 
-#: ../../source/publish_datasets/processors.rst:237
+#: ../../source/publish_datasets/processors.rst:342
 msgid "2^3"
 msgstr "2^3"
 
-#: ../../source/publish_datasets/processors.rst:238
+#: ../../source/publish_datasets/processors.rst:343
 msgid "8"
 msgstr "8"
 
-#: ../../source/publish_datasets/processors.rst:239
+#: ../../source/publish_datasets/processors.rst:344
 msgid "1 > 2"
 msgstr "1 > 2"
 
-#: ../../source/publish_datasets/processors.rst:240
-#: ../../source/publish_datasets/processors.rst:288
-#: ../../source/publish_datasets/processors.rst:330
-#: ../../source/publish_datasets/processors.rst:332
+#: ../../source/publish_datasets/processors.rst:345
+#: ../../source/publish_datasets/processors.rst:393
+#: ../../source/publish_datasets/processors.rst:435
+#: ../../source/publish_datasets/processors.rst:437
 msgid "False"
 msgstr "False"
 
-#: ../../source/publish_datasets/processors.rst:241
+#: ../../source/publish_datasets/processors.rst:346
 msgid "1 >= 1"
 msgstr "1 >= 1"
 
-#: ../../source/publish_datasets/processors.rst:242
-#: ../../source/publish_datasets/processors.rst:292
-#: ../../source/publish_datasets/processors.rst:328
-#: ../../source/publish_datasets/processors.rst:334
+#: ../../source/publish_datasets/processors.rst:347
+#: ../../source/publish_datasets/processors.rst:397
+#: ../../source/publish_datasets/processors.rst:433
+#: ../../source/publish_datasets/processors.rst:439
 msgid "True"
 msgstr "True"
 
-#: ../../source/publish_datasets/processors.rst:243
+#: ../../source/publish_datasets/processors.rst:348
 msgid "1 >= 1 ? 2 : 3"
 msgstr "1 >= 1 ? 2 : 3"
 
-#: ../../source/publish_datasets/processors.rst:245
+#: ../../source/publish_datasets/processors.rst:350
 msgid "price * 2"
 msgstr "price * 2"
 
-#: ../../source/publish_datasets/processors.rst:246
+#: ../../source/publish_datasets/processors.rst:351
 msgid "24 (if price is a field valued to 12)"
 msgstr "24 (si price est un champ de valeur 12)"
 
-#: ../../source/publish_datasets/processors.rst:247
+#: ../../source/publish_datasets/processors.rst:352
 msgid "\"foo\" & \",\" & \"bar\""
 msgstr "\"foo\" & \",\" & \"bar\""
 
-#: ../../source/publish_datasets/processors.rst:248
+#: ../../source/publish_datasets/processors.rst:353
 msgid "foo,bar"
 msgstr "foo,bar"
 
-#: ../../source/publish_datasets/processors.rst:250
+#: ../../source/publish_datasets/processors.rst:355
 msgid "A rich set of functions is also available"
 msgstr "Un ensemble complet de fonctions est également disponible"
 
-#: ../../source/publish_datasets/processors.rst:255
+#: ../../source/publish_datasets/processors.rst:360
 msgid "Function type"
 msgstr "Type de fonction"
 
-#: ../../source/publish_datasets/processors.rst:256
+#: ../../source/publish_datasets/processors.rst:361
 msgid "Functions"
 msgstr "Fonctions"
 
-#: ../../source/publish_datasets/processors.rst:257
+#: ../../source/publish_datasets/processors.rst:362
 msgid "Without operand"
 msgstr "Sans opérande"
 
-#: ../../source/publish_datasets/processors.rst:258
+#: ../../source/publish_datasets/processors.rst:363
 msgid "now"
 msgstr "now"
 
-#: ../../source/publish_datasets/processors.rst:259
+#: ../../source/publish_datasets/processors.rst:364
 msgid "Single operand"
 msgstr "Simple opérande"
 
-#: ../../source/publish_datasets/processors.rst:260
+#: ../../source/publish_datasets/processors.rst:365
 msgid ""
 "sin, asin, asinh, cos, acos, acosh, tan, atan, atanh, ceil, abs, factorial, "
 "floor, exp, log, log10, sqrt, degrees, radians, sigmoid, gamma, round, "
@@ -687,279 +794,334 @@ msgid ""
 "microsecond, fromtimestamp"
 msgstr "sin, asin, asinh, cos, acos, acosh, tan, atan, atanh, ceil, abs, factorial, floor, exp, log, log10, sqrt, degrees, radians, sigmoid, gamma, round, trunc, touppercase, upper, tolowercase, lower, capitalize_all, capitalize, isupper, islower, isdecimal, isdigit, isnumeric, isalnum, isalpha, random, length, normalize (unicode), dayofweek, year, month, hour, minute, second, microsecond, fromtimestamp"
 
-#: ../../source/publish_datasets/processors.rst:261
+#: ../../source/publish_datasets/processors.rst:366
 msgid "Two operands"
 msgstr "Deux opérandes"
 
-#: ../../source/publish_datasets/processors.rst:262
+#: ../../source/publish_datasets/processors.rst:367
 msgid ""
 "pow, max, min, mod, div, gcd, round, random, contains, endswith, startswith,"
 " dayofweek, year, month, hour, minute, second, microsecond, add_seconds, "
 "add_minutes, add_hours, add_days, add_months, add_years"
 msgstr "pow, max, min, mod, div, gcd, round, random, contains, endswith, startswith, dayofweek, year, month, hour, minute, second, microsecond, add_seconds, add_minutes, add_hours, add_days, add_months, add_years"
 
-#: ../../source/publish_datasets/processors.rst:263
+#: ../../source/publish_datasets/processors.rst:368
 msgid "Three operands"
 msgstr "Trois opérandes"
 
-#: ../../source/publish_datasets/processors.rst:264
+#: ../../source/publish_datasets/processors.rst:369
 msgid "ljust, rjust, center, replace, datediff"
 msgstr "ljust, rjust, center, replace, datediff"
 
-#: ../../source/publish_datasets/processors.rst:273
+#: ../../source/publish_datasets/processors.rst:378
 msgid "cos(2 * pi)"
 msgstr "cos(2 * pi)"
 
-#: ../../source/publish_datasets/processors.rst:274
-#: ../../source/publish_datasets/processors.rst:276
-#: ../../source/publish_datasets/processors.rst:316
-#: ../../source/publish_datasets/processors.rst:322
-#: ../../source/publish_datasets/processors.rst:448
-#: ../../source/publish_datasets/processors.rst:464
-#: ../../source/publish_datasets/processors.rst:480
-#: ../../source/publish_datasets/processors.rst:530
-#: ../../source/publish_datasets/processors.rst:533
-#: ../../source/publish_datasets/processors.rst:549
-#: ../../source/publish_datasets/processors.rst:567
-#: ../../source/publish_datasets/processors.rst:571
+#: ../../source/publish_datasets/processors.rst:379
+#: ../../source/publish_datasets/processors.rst:381
+#: ../../source/publish_datasets/processors.rst:421
+#: ../../source/publish_datasets/processors.rst:427
+#: ../../source/publish_datasets/processors.rst:624
+#: ../../source/publish_datasets/processors.rst:640
+#: ../../source/publish_datasets/processors.rst:656
+#: ../../source/publish_datasets/processors.rst:706
+#: ../../source/publish_datasets/processors.rst:709
+#: ../../source/publish_datasets/processors.rst:725
+#: ../../source/publish_datasets/processors.rst:743
+#: ../../source/publish_datasets/processors.rst:747
 msgid "1"
 msgstr "1"
 
-#: ../../source/publish_datasets/processors.rst:275
+#: ../../source/publish_datasets/processors.rst:380
 msgid "log(e)"
 msgstr "log(e)"
 
-#: ../../source/publish_datasets/processors.rst:277
+#: ../../source/publish_datasets/processors.rst:382
 msgid "exp(log(e)) - e"
 msgstr "exp(log(e)) - e"
 
-#: ../../source/publish_datasets/processors.rst:278
+#: ../../source/publish_datasets/processors.rst:383
 msgid "0"
 msgstr "0"
 
-#: ../../source/publish_datasets/processors.rst:279
+#: ../../source/publish_datasets/processors.rst:384
 msgid "round(2.3)"
 msgstr "round(2.3)"
 
-#: ../../source/publish_datasets/processors.rst:281
+#: ../../source/publish_datasets/processors.rst:386
 msgid "round(2.7)"
 msgstr "round(2.7)"
 
-#: ../../source/publish_datasets/processors.rst:282
-#: ../../source/publish_datasets/processors.rst:284
+#: ../../source/publish_datasets/processors.rst:387
+#: ../../source/publish_datasets/processors.rst:389
 msgid "3"
 msgstr "3"
 
-#: ../../source/publish_datasets/processors.rst:283
+#: ../../source/publish_datasets/processors.rst:388
 msgid "ceil(2.3)"
 msgstr "ceil(2.3)"
 
-#: ../../source/publish_datasets/processors.rst:285
+#: ../../source/publish_datasets/processors.rst:390
 msgid "floor(2.3)"
 msgstr "floor(2.3)"
 
-#: ../../source/publish_datasets/processors.rst:287
+#: ../../source/publish_datasets/processors.rst:392
 msgid "islower(\"aBc\")"
 msgstr "islower(\"aBc\")"
 
-#: ../../source/publish_datasets/processors.rst:289
+#: ../../source/publish_datasets/processors.rst:394
 msgid "lower(\"aBc\")"
 msgstr "lower(\"aBc\")"
 
-#: ../../source/publish_datasets/processors.rst:290
+#: ../../source/publish_datasets/processors.rst:395
 msgid "abc"
 msgstr "abc"
 
-#: ../../source/publish_datasets/processors.rst:291
+#: ../../source/publish_datasets/processors.rst:396
 msgid "isalnum(\"123\")"
 msgstr "isalnum(\"123\")"
 
-#: ../../source/publish_datasets/processors.rst:293
+#: ../../source/publish_datasets/processors.rst:398
 msgid "capitalize(\"foo bar\")"
 msgstr "capitalize(\"foo bar\")"
 
-#: ../../source/publish_datasets/processors.rst:294
+#: ../../source/publish_datasets/processors.rst:399
 msgid "Foo bar"
 msgstr "Foo bar"
 
-#: ../../source/publish_datasets/processors.rst:295
+#: ../../source/publish_datasets/processors.rst:400
 msgid "capitalize_all(\"foo bar\")"
 msgstr "capitalize_all(\"foo bar\")"
 
-#: ../../source/publish_datasets/processors.rst:296
+#: ../../source/publish_datasets/processors.rst:401
 msgid "Foo Bar"
 msgstr "Foo Bar"
 
-#: ../../source/publish_datasets/processors.rst:297
+#: ../../source/publish_datasets/processors.rst:402
 msgid "random(10)"
 msgstr "random(10)"
 
-#: ../../source/publish_datasets/processors.rst:298
+#: ../../source/publish_datasets/processors.rst:403
 msgid "1.80536931404"
 msgstr "1.80536931404"
 
-#: ../../source/publish_datasets/processors.rst:299
+#: ../../source/publish_datasets/processors.rst:404
 msgid "random(10, 11)"
 msgstr "random(10, 11)"
 
-#: ../../source/publish_datasets/processors.rst:300
+#: ../../source/publish_datasets/processors.rst:405
 msgid "10.7280438796"
 msgstr "10.7280438796"
 
-#: ../../source/publish_datasets/processors.rst:301
+#: ../../source/publish_datasets/processors.rst:406
 msgid "ljust(\"4400\", 5, \"0\")"
 msgstr "ljust(\"4400\", 5, \"0\")"
 
-#: ../../source/publish_datasets/processors.rst:302
+#: ../../source/publish_datasets/processors.rst:407
 msgid "44000"
 msgstr "44000"
 
-#: ../../source/publish_datasets/processors.rst:303
+#: ../../source/publish_datasets/processors.rst:408
 msgid "rjust(\"4400\", 5, \"0\")"
 msgstr "rjust(\"4400\", 5, \"0\")"
 
-#: ../../source/publish_datasets/processors.rst:304
+#: ../../source/publish_datasets/processors.rst:409
 msgid "04400"
 msgstr "04400"
 
-#: ../../source/publish_datasets/processors.rst:305
+#: ../../source/publish_datasets/processors.rst:410
 msgid "center(\"4400\", 6,\"0\")"
 msgstr "center(\"4400\", 6,\"0\")"
 
-#: ../../source/publish_datasets/processors.rst:306
+#: ../../source/publish_datasets/processors.rst:411
 msgid "044000"
 msgstr "044000"
 
-#: ../../source/publish_datasets/processors.rst:307
+#: ../../source/publish_datasets/processors.rst:412
 msgid "year(\"2014-06-07\")"
 msgstr "year(\"2014-06-07\")"
 
-#: ../../source/publish_datasets/processors.rst:308
+#: ../../source/publish_datasets/processors.rst:413
 msgid "2014"
 msgstr "2014"
 
-#: ../../source/publish_datasets/processors.rst:309
+#: ../../source/publish_datasets/processors.rst:414
 msgid "hour(\"2014-06-07 17:00\")"
 msgstr "hour(\"2014-06-07 17:00\")"
 
-#: ../../source/publish_datasets/processors.rst:310
+#: ../../source/publish_datasets/processors.rst:415
 msgid "17"
 msgstr "17"
 
-#: ../../source/publish_datasets/processors.rst:311
+#: ../../source/publish_datasets/processors.rst:416
 msgid "hour(\"2014-06-07 17:00\", \"Europe/Paris\")"
 msgstr "hour(\"2014-06-07 17:00\", \"Europe/Paris\")"
 
-#: ../../source/publish_datasets/processors.rst:312
+#: ../../source/publish_datasets/processors.rst:417
 msgid "19"
 msgstr "19"
 
-#: ../../source/publish_datasets/processors.rst:313
+#: ../../source/publish_datasets/processors.rst:418
 msgid "replace(\"abcd\", \"b\", \"e\")"
 msgstr "replace(\"abcd\", \"b\", \"e\")"
 
-#: ../../source/publish_datasets/processors.rst:314
+#: ../../source/publish_datasets/processors.rst:419
 msgid "aecd"
 msgstr "aecd"
 
-#: ../../source/publish_datasets/processors.rst:315
+#: ../../source/publish_datasets/processors.rst:420
 msgid "datediff(\"2014-02-28\", \"2015-02-28\", \"year\")"
 msgstr "datediff(\"2014-02-28\", \"2015-02-28\", \"year\")"
 
-#: ../../source/publish_datasets/processors.rst:317
+#: ../../source/publish_datasets/processors.rst:422
 msgid "datediff(\"2014-02-28\", \"2015-02-28\", \"month\")"
 msgstr "datediff(\"2014-02-28\", \"2015-02-28\", \"month\")"
 
-#: ../../source/publish_datasets/processors.rst:318
+#: ../../source/publish_datasets/processors.rst:423
 msgid "12"
 msgstr "12"
 
-#: ../../source/publish_datasets/processors.rst:319
+#: ../../source/publish_datasets/processors.rst:424
 msgid "datediff(\"2014-02-28\", \"2015-02-28\", \"day\")"
 msgstr "datediff(\"2014-02-28\", \"2015-02-28\", \"day\")"
 
-#: ../../source/publish_datasets/processors.rst:320
+#: ../../source/publish_datasets/processors.rst:425
 msgid "265"
 msgstr "265"
 
-#: ../../source/publish_datasets/processors.rst:321
+#: ../../source/publish_datasets/processors.rst:426
 msgid "datediff(\"2014-02-28T20:00:00Z\", \"2014-02-28T21:00:00Z\", \"hour\")"
 msgstr "datediff(\"2014-02-28T20:00:00Z\", \"2014-02-28T21:00:00Z\", \"hour\")"
 
-#: ../../source/publish_datasets/processors.rst:323
+#: ../../source/publish_datasets/processors.rst:428
 msgid "datediff(\"2014-02-28T20:00:00Z\", \"2014-02-28T21:00:00Z\", \"minute\")"
 msgstr "datediff(\"2014-02-28T20:00:00Z\", \"2014-02-28T21:00:00Z\", \"minute\")"
 
-#: ../../source/publish_datasets/processors.rst:324
+#: ../../source/publish_datasets/processors.rst:429
 msgid "60"
 msgstr "60"
 
-#: ../../source/publish_datasets/processors.rst:325
+#: ../../source/publish_datasets/processors.rst:430
 msgid "datediff(\"2014-02-28T20:00:00Z\", \"2014-02-28T21:00:00Z\", \"second\")"
 msgstr "datediff(\"2014-02-28T20:00:00Z\", \"2014-02-28T21:00:00Z\", \"second\")"
 
-#: ../../source/publish_datasets/processors.rst:326
+#: ../../source/publish_datasets/processors.rst:431
 msgid "3600"
 msgstr "3600"
 
-#: ../../source/publish_datasets/processors.rst:327
+#: ../../source/publish_datasets/processors.rst:432
 msgid "startswith(\"hello', 'he')"
 msgstr "startswith(\"hello', 'he')"
 
-#: ../../source/publish_datasets/processors.rst:329
+#: ../../source/publish_datasets/processors.rst:434
 msgid "startswith(\"hello', 'lo')"
 msgstr "startswith(\"hello', 'lo')"
 
-#: ../../source/publish_datasets/processors.rst:331
+#: ../../source/publish_datasets/processors.rst:436
 msgid "endswith(\"hello', 'he')"
 msgstr "endswith(\"hello', 'he')"
 
-#: ../../source/publish_datasets/processors.rst:333
+#: ../../source/publish_datasets/processors.rst:438
 msgid "endswith(\"hello', 'lo')"
 msgstr "endswith(\"hello', 'lo')"
 
-#: ../../source/publish_datasets/processors.rst:335
+#: ../../source/publish_datasets/processors.rst:440
 msgid "add_months(\"2014-11-14\", \"3\")"
 msgstr "add_months(\"2014-11-14\", \"3\")"
 
-#: ../../source/publish_datasets/processors.rst:336
+#: ../../source/publish_datasets/processors.rst:441
 msgid "2015-02-14"
 msgstr "2015-02-14"
 
-#: ../../source/publish_datasets/processors.rst:339
+#: ../../source/publish_datasets/processors.rst:444
 msgid "Text Processors"
 msgstr "Processeurs de texte"
 
-#: ../../source/publish_datasets/processors.rst:345
+#: ../../source/publish_datasets/processors.rst:450
 msgid "Replace Regexp"
 msgstr "Remplacer Expression Régulière"
 
-#: ../../source/publish_datasets/processors.rst:347
+#: ../../source/publish_datasets/processors.rst:452
 msgid ""
-"This processor can be used to replace a random regular expression pattern by"
-" new content. See `<http://en.wikipedia.org/wiki/Regular_expression>`_ for "
-"more details on how to write a regular expressions. You can test your regexp"
-" expressions with an online debugger tool like `Regex101 "
-"<https://regex101.com/>`_."
-msgstr "Ce processeur peut être utilisé pour remplacer une expression rationnelle (ou régulière) par du nouveau contenu. Voir `<https://fr.wikipedia.org/wiki/Expression_rationnelle>`_ pour plus d'informations sur l'utilisation des expressions rationnelles. Vous pouvez tester vos expressions rationnelles à l'aide d'un débogueur en ligne comme `Regex101 <https://regex101.com/>`_."
+"This processor can be used to replace or remove any part of a text or a "
+"number or a combination of both."
+msgstr ""
 
-#: ../../source/publish_datasets/processors.rst:352
+#: ../../source/publish_datasets/processors.rst:454
+msgid ""
+"One use case is keeping only a part of a number, for example from a french "
+"Zip code to keep only the area code, e.g from 44100 (Nantes city) keep only "
+"44 (Loire-Atlantique area)."
+msgstr ""
+
+#: ../../source/publish_datasets/processors.rst:461
+msgid ""
+"In this example, the regular expression processor is configured with the "
+"pattern ``[0-9]{3}$``, and a replacement by nothing. The pattern means "
+"\"select 3 digits from the end\", with ``[0-9]`` meaning any digit, ``{3}`` "
+"meaning exactly 3 occurences, and ``$`` meaning the end of the text. These 3"
+" digits from the end are then replaced by nothing, so only the first 2 "
+"digits will stay."
+msgstr ""
+
+#: ../../source/publish_datasets/processors.rst:471
+msgid ""
+"See `<http://en.wikipedia.org/wiki/Regular_expression>`_ for more details on"
+" how to write a regular expressions. You can test your regexp expressions "
+"with an online debugger tool like `Regex101 <https://regex101.com/>`_."
+msgstr ""
+
+#: ../../source/publish_datasets/processors.rst:476
 msgid "Extract Text"
 msgstr "Extraire du Texte"
 
-#: ../../source/publish_datasets/processors.rst:354
+#: ../../source/publish_datasets/processors.rst:478
 msgid ""
-"This processor can be used to extract an arbitrary pattern expressed as a "
-"regular expression out of a string using sub matching."
-msgstr "Ce processeur peut être utilisé pour extraire un certain motif exprimé sous forme d'expression régulière depuis une chaine de caractère."
+"This processor can be used to extract any part of a text or a number or a "
+"combination of both into a new column. It's similar to the Replace Regexp "
+"processor, except instead of replacing the content in place the same column,"
+" a new column is created with the selected text."
+msgstr ""
 
-#: ../../source/publish_datasets/processors.rst:357
+#: ../../source/publish_datasets/processors.rst:480
+msgid ""
+"The idea is to put the part we want to extract in parenthesis. This part "
+"will then be extracted in a new column."
+msgstr ""
+
+#: ../../source/publish_datasets/processors.rst:482
+msgid ""
+"Using the same example as for the Replace Regexp processor (from a french "
+"zip code like 44100, keep only the area code 44), the Extract Text processor"
+" can be used to create another column with the area code selected, instead "
+"of replacing the content like with the Replace Regexp processor."
+msgstr ""
+
+#: ../../source/publish_datasets/processors.rst:490
+msgid ""
+"In this example, we use the pattern ``(?P<area>[0-9]{2})[0-9]{3}``. "
+"``[0-9]`` means any digit, and ``{2}`` or ``{3}`` means the number of digits"
+" we are looking for. In this case we want to extract the first two digits, "
+"so we put them in parenthesis, then after the parenthesis we put the rest of"
+" the sequence that we don't want to extract, here the remaining 3 digits. "
+"The special expression ``?P<area>`` is just for specifiying the new column "
+"name"
+msgstr ""
+
+#: ../../source/publish_datasets/processors.rst:500
+msgid ""
+"From a more technical point of view, this processor can be used to extract "
+"an arbitrary pattern expressed as a regular expression out of a string using"
+" sub matching."
+msgstr ""
+
+#: ../../source/publish_datasets/processors.rst:503
 msgid ""
 "The syntax of the sub-matching expression to specify is the following: "
 "``(?P<NAME>REGEXP)``. Where:"
 msgstr "La syntaxe de l'expression d'extraction est la suivante: ``(?P<NOM>REGEXP)``. Où :"
 
-#: ../../source/publish_datasets/processors.rst:359
+#: ../../source/publish_datasets/processors.rst:505
 msgid ""
 "``NAME`` is the name of a new field which will receive the result of the "
 "extraction. This field name can only contain letters, numbers and "
@@ -967,37 +1129,37 @@ msgid ""
 "allowed)."
 msgstr "``NOM`` est le nom d’un nouveau champ qui recevra le résultat de l’extraction. Ce nom ne peut contenir que des lettres, des chiffres et des underscore (``_``). Les caractères spéciaux tels que les lettres accentuées ou les virgules ne sont pas autorisés."
 
-#: ../../source/publish_datasets/processors.rst:361
+#: ../../source/publish_datasets/processors.rst:507
 msgid "``REXGEXP`` is the submatch expression"
 msgstr "``REGEXP`` est l'expression servant à l'extraction."
 
-#: ../../source/publish_datasets/processors.rst:363
+#: ../../source/publish_datasets/processors.rst:509
 msgid ""
 "For example, let's assume that you want to extract a street name out of an "
 "address. That is, for the address"
 msgstr "Par exemple, supposons que vous voudriez extraire le nom de rue depuis une adresse. C'est à dire, pour l'adresse"
 
-#: ../../source/publish_datasets/processors.rst:369
+#: ../../source/publish_datasets/processors.rst:515
 msgid ""
 "you might want to extract the value ``Pennsylvania Ave NW`` in a field  "
 "``street_name``."
 msgstr "vous voudriez extraire la valeur ``Pennsylvania Ave NW`` dans un champ ``street_name``."
 
-#: ../../source/publish_datasets/processors.rst:371
+#: ../../source/publish_datasets/processors.rst:517
 msgid "You would have to write the following expression:"
 msgstr "Vous devriez écrire l'expression suivante :"
 
-#: ../../source/publish_datasets/processors.rst:377
+#: ../../source/publish_datasets/processors.rst:523
 msgid ""
 "And if you want to extract the street number in a field ``street_number``, "
 "simply extend the previous expression:"
 msgstr "Et si vous souhaitiez extraire le numéro depuis un champ ``street_number``, il suffirait d'étendre l'expression précédente :"
 
-#: ../../source/publish_datasets/processors.rst:384
+#: ../../source/publish_datasets/processors.rst:530
 msgid "Normalize URL"
 msgstr "Normaliser une URL"
 
-#: ../../source/publish_datasets/processors.rst:386
+#: ../../source/publish_datasets/processors.rst:532
 msgid ""
 "This processor can be used to normalize a field value that should contain a "
 "valid URL. It can be used for instance when the field's value contains "
@@ -1005,246 +1167,265 @@ msgid ""
 "which case 'http://' is prepended to the field's value)."
 msgstr "Ce processeur peut être utilisé pour normaliser les valeurs d'un champ qui est supposé contenir des URL valides. Il peut être utilisé par exemple quand les valeurs risquent de comprendre des espaces au début ou à la fin, ou quand l'URL ne contient pas le protocole au début (auquel cas 'http://' est préfixé à la valeur)."
 
-#: ../../source/publish_datasets/processors.rst:391
+#: ../../source/publish_datasets/processors.rst:537
 msgid "Split Text"
 msgstr "Séparer le Texte"
 
-#: ../../source/publish_datasets/processors.rst:393
+#: ../../source/publish_datasets/processors.rst:539
 msgid ""
 "This processor can be used to split a field's value and to extract the Nth "
 "element to a new field."
 msgstr "Ce processeur peut être utilisé pour séparer la valeur d'un champ et extraire le Nième élément issu de cette séparation vers un nouveau champ."
 
-#: ../../source/publish_datasets/processors.rst:396
+#: ../../source/publish_datasets/processors.rst:541
+msgid ""
+"The number of the part extracted is specified in the ``index`` parameter. "
+"Note that the numbering starts at 0."
+msgstr ""
+
+#: ../../source/publish_datasets/processors.rst:555
 msgid "Concatenate Text"
 msgstr "Concaténer du Texte"
 
-#: ../../source/publish_datasets/processors.rst:398
+#: ../../source/publish_datasets/processors.rst:557
 msgid ""
 "This processor can be used to concatenate two fields using a separator. "
 "You'll need to define the left and right hand sides of the concatenation, as"
 " well as the separator and the resulting field."
 msgstr "Ce processeur peut être utilisé pour concaténer les valeurs de deux champs en utilisant un séparateur. Vous devez définir les parties gauche et droite, ainsi que le séparateur, et le champ qui recevra le résultat."
 
-#: ../../source/publish_datasets/processors.rst:402
+#: ../../source/publish_datasets/processors.rst:560
+msgid ""
+"One common use case is to concatenate a X and Y coordinates columns in a new"
+" column with both separated by a comma, which can then be used as a ``geo "
+"point``."
+msgstr ""
+
+#: ../../source/publish_datasets/processors.rst:567
+msgid ""
+"In this example, we concatenate the column X and Y in a new column "
+"Coordinates, which can then be used as a ``geo point``"
+msgstr ""
+
+#: ../../source/publish_datasets/processors.rst:578
 msgid "Extract HTML"
 msgstr "Extraire du HTML"
 
-#: ../../source/publish_datasets/processors.rst:404
+#: ../../source/publish_datasets/processors.rst:580
 msgid "This processor strips HTML tags from field values."
 msgstr "Ce processeur retire les balises HTML à l'intérieur de la valeur du champ."
 
-#: ../../source/publish_datasets/processors.rst:407
+#: ../../source/publish_datasets/processors.rst:583
 msgid "Extract URLs"
 msgstr "Extrait les liens"
 
-#: ../../source/publish_datasets/processors.rst:409
+#: ../../source/publish_datasets/processors.rst:585
 msgid ""
 "This processor extracts URLs from HTML or text content. It extracts http and"
 " https links into a field, the links are separated by a space."
 msgstr "Ce processeur extrait les URLs depuis du contenu HTML ou texte. Les URLs extraites sont copiés dans un champ, et séparés par un espace lorsqu'il y en a plusieurs."
 
-#: ../../source/publish_datasets/processors.rst:413
+#: ../../source/publish_datasets/processors.rst:589
 msgid "Field Processors"
 msgstr "Processeurs de champs"
 
-#: ../../source/publish_datasets/processors.rst:419
+#: ../../source/publish_datasets/processors.rst:595
 msgid "Copy a Field"
 msgstr "Copier un Champ"
 
-#: ../../source/publish_datasets/processors.rst:421
+#: ../../source/publish_datasets/processors.rst:597
 msgid "Copy a field value into another field."
 msgstr "Ce processeur copie la valeur d'un champ vers un autre champ."
 
-#: ../../source/publish_datasets/processors.rst:424
+#: ../../source/publish_datasets/processors.rst:600
 msgid "Add a Field"
 msgstr "Ajouter un Champ"
 
-#: ../../source/publish_datasets/processors.rst:426
+#: ../../source/publish_datasets/processors.rst:602
 msgid "Add a raw new field, that can be filled by other processors."
 msgstr "Ajoute un nouveau champ qui peut ensuite être rempli par d'autres processeurs."
 
-#: ../../source/publish_datasets/processors.rst:429
+#: ../../source/publish_datasets/processors.rst:605
 msgid "Skip a Record"
 msgstr "Saut de lignes"
 
-#: ../../source/publish_datasets/processors.rst:431
+#: ../../source/publish_datasets/processors.rst:607
 msgid "Skip a record if one of its fields matches a specific value."
 msgstr "Saute un enregistrement si un de ses champs correspond à une certaine valeur."
 
-#: ../../source/publish_datasets/processors.rst:434
+#: ../../source/publish_datasets/processors.rst:610
 msgid "Join Dataset"
 msgstr "Joindre des Jeux de Données"
 
-#: ../../source/publish_datasets/processors.rst:436
+#: ../../source/publish_datasets/processors.rst:612
 msgid ""
 "This processor allows to you to Join two datasets together. Think about the "
 "classical database join."
 msgstr "Ce processeur vous permet de faire une jointure entre deux jeux de données. Il est assez similaire à une jointure de base de données classique."
 
-#: ../../source/publish_datasets/processors.rst:438
+#: ../../source/publish_datasets/processors.rst:614
 msgid "Let's take an example. You have two datasets:"
 msgstr "Prenons un exemple. Nous avons deux jeux de données :"
 
-#: ../../source/publish_datasets/processors.rst:440
+#: ../../source/publish_datasets/processors.rst:616
 msgid "**First dataset**: The list of taxi stations in Paris."
 msgstr "**Premier jeu de données** : La liste des stations de taxi à Paris"
 
-#: ../../source/publish_datasets/processors.rst:445
-#: ../../source/publish_datasets/processors.rst:462
-#: ../../source/publish_datasets/processors.rst:476
-#: ../../source/publish_datasets/processors.rst:527
-#: ../../source/publish_datasets/processors.rst:545
-#: ../../source/publish_datasets/processors.rst:563
+#: ../../source/publish_datasets/processors.rst:621
+#: ../../source/publish_datasets/processors.rst:638
+#: ../../source/publish_datasets/processors.rst:652
+#: ../../source/publish_datasets/processors.rst:703
+#: ../../source/publish_datasets/processors.rst:721
+#: ../../source/publish_datasets/processors.rst:739
 msgid "station_id"
 msgstr "station_id"
 
-#: ../../source/publish_datasets/processors.rst:446
-#: ../../source/publish_datasets/processors.rst:478
-#: ../../source/publish_datasets/processors.rst:528
-#: ../../source/publish_datasets/processors.rst:547
-#: ../../source/publish_datasets/processors.rst:565
+#: ../../source/publish_datasets/processors.rst:622
+#: ../../source/publish_datasets/processors.rst:654
+#: ../../source/publish_datasets/processors.rst:704
+#: ../../source/publish_datasets/processors.rst:723
+#: ../../source/publish_datasets/processors.rst:741
 msgid "station_name"
 msgstr "station_name"
 
-#: ../../source/publish_datasets/processors.rst:447
-#: ../../source/publish_datasets/processors.rst:479
-#: ../../source/publish_datasets/processors.rst:529
-#: ../../source/publish_datasets/processors.rst:548
-#: ../../source/publish_datasets/processors.rst:566
+#: ../../source/publish_datasets/processors.rst:623
+#: ../../source/publish_datasets/processors.rst:655
+#: ../../source/publish_datasets/processors.rst:705
+#: ../../source/publish_datasets/processors.rst:724
+#: ../../source/publish_datasets/processors.rst:742
 msgid "station_address"
 msgstr "station_address"
 
-#: ../../source/publish_datasets/processors.rst:449
-#: ../../source/publish_datasets/processors.rst:482
-#: ../../source/publish_datasets/processors.rst:531
-#: ../../source/publish_datasets/processors.rst:569
+#: ../../source/publish_datasets/processors.rst:625
+#: ../../source/publish_datasets/processors.rst:658
+#: ../../source/publish_datasets/processors.rst:707
+#: ../../source/publish_datasets/processors.rst:745
 msgid "Tour Eiffel"
 msgstr "Tour Eiffel"
 
-#: ../../source/publish_datasets/processors.rst:450
-#: ../../source/publish_datasets/processors.rst:483
-#: ../../source/publish_datasets/processors.rst:532
-#: ../../source/publish_datasets/processors.rst:535
-#: ../../source/publish_datasets/processors.rst:570
-#: ../../source/publish_datasets/processors.rst:574
+#: ../../source/publish_datasets/processors.rst:626
+#: ../../source/publish_datasets/processors.rst:659
+#: ../../source/publish_datasets/processors.rst:708
+#: ../../source/publish_datasets/processors.rst:711
+#: ../../source/publish_datasets/processors.rst:746
+#: ../../source/publish_datasets/processors.rst:750
 msgid "69 quai Branly, 75007 Paris"
 msgstr "69 quai Branly, 75007 Paris"
 
-#: ../../source/publish_datasets/processors.rst:452
-#: ../../source/publish_datasets/processors.rst:486
-#: ../../source/publish_datasets/processors.rst:537
-#: ../../source/publish_datasets/processors.rst:555
-#: ../../source/publish_datasets/processors.rst:577
+#: ../../source/publish_datasets/processors.rst:628
+#: ../../source/publish_datasets/processors.rst:662
+#: ../../source/publish_datasets/processors.rst:713
+#: ../../source/publish_datasets/processors.rst:731
+#: ../../source/publish_datasets/processors.rst:753
 msgid "Rennes - Montparnasse"
 msgstr "Rennes - Montparnasse"
 
-#: ../../source/publish_datasets/processors.rst:453
-#: ../../source/publish_datasets/processors.rst:487
-#: ../../source/publish_datasets/processors.rst:538
-#: ../../source/publish_datasets/processors.rst:556
-#: ../../source/publish_datasets/processors.rst:578
+#: ../../source/publish_datasets/processors.rst:629
+#: ../../source/publish_datasets/processors.rst:663
+#: ../../source/publish_datasets/processors.rst:714
+#: ../../source/publish_datasets/processors.rst:732
+#: ../../source/publish_datasets/processors.rst:754
 msgid "1 place du dix huit Juin 1940, 75006 Paris"
 msgstr "1 place du dix huit Juin 1940, 75006 Paris"
 
-#: ../../source/publish_datasets/processors.rst:455
+#: ../../source/publish_datasets/processors.rst:631
 msgid "The name of this dataset is **paris_taxis_stations**."
 msgstr "Le nom de ce jeu de données est **paris_taxis_stations**."
 
-#: ../../source/publish_datasets/processors.rst:457
+#: ../../source/publish_datasets/processors.rst:633
 msgid "**Second dataset**: The number of taxis waiting per station in Paris."
 msgstr "**Second jeu de données** : Le nombre de taxis en attente à chaque station dans Paris."
 
-#: ../../source/publish_datasets/processors.rst:463
-#: ../../source/publish_datasets/processors.rst:477
-#: ../../source/publish_datasets/processors.rst:546
-#: ../../source/publish_datasets/processors.rst:564
+#: ../../source/publish_datasets/processors.rst:639
+#: ../../source/publish_datasets/processors.rst:653
+#: ../../source/publish_datasets/processors.rst:722
+#: ../../source/publish_datasets/processors.rst:740
 msgid "number"
 msgstr "number"
 
-#: ../../source/publish_datasets/processors.rst:465
-#: ../../source/publish_datasets/processors.rst:481
-#: ../../source/publish_datasets/processors.rst:550
-#: ../../source/publish_datasets/processors.rst:568
-#: ../../source/publish_datasets/processors.rst:572
+#: ../../source/publish_datasets/processors.rst:641
+#: ../../source/publish_datasets/processors.rst:657
+#: ../../source/publish_datasets/processors.rst:726
+#: ../../source/publish_datasets/processors.rst:744
+#: ../../source/publish_datasets/processors.rst:748
 msgid "10"
 msgstr "10"
 
-#: ../../source/publish_datasets/processors.rst:467
-#: ../../source/publish_datasets/processors.rst:485
-#: ../../source/publish_datasets/processors.rst:554
-#: ../../source/publish_datasets/processors.rst:576
+#: ../../source/publish_datasets/processors.rst:643
+#: ../../source/publish_datasets/processors.rst:661
+#: ../../source/publish_datasets/processors.rst:730
+#: ../../source/publish_datasets/processors.rst:752
 msgid "15"
 msgstr "15"
 
-#: ../../source/publish_datasets/processors.rst:469
+#: ../../source/publish_datasets/processors.rst:645
 msgid ""
 "The Join processor allows you to enrich the second dataset with colums "
 "coming from the first dataset."
 msgstr "Le processeur Joindre vous permet d'enrichir le second jeu de données avec des colonnes issues du premier jeu de données."
 
-#: ../../source/publish_datasets/processors.rst:471
+#: ../../source/publish_datasets/processors.rst:647
 msgid "**Resulting dataset after a Join**"
 msgstr "**Jeu de données résultant d'une jointure**"
 
-#: ../../source/publish_datasets/processors.rst:489
+#: ../../source/publish_datasets/processors.rst:665
 msgid "It takes the following parameters:"
 msgstr "Il prend les paramètres suivants :"
 
-#: ../../source/publish_datasets/processors.rst:491
+#: ../../source/publish_datasets/processors.rst:667
 msgid "**Dataset**"
 msgstr "**Jeu de données**"
 
-#: ../../source/publish_datasets/processors.rst:493
+#: ../../source/publish_datasets/processors.rst:669
 msgid ""
 "The dataset used for the join; you can select it from your own datasets, or "
 "from OpenDataSoft's network of datasets."
 msgstr "Le jeu de données utilisé pour la jointure; vous pouvez le choisir parmi vos propres jeux de données, ou parmi les jeux de données du réseau OpenDataSoft."
 
-#: ../../source/publish_datasets/processors.rst:496
+#: ../../source/publish_datasets/processors.rst:672
 msgid "**Local Key**"
 msgstr "**Clé locale**"
 
-#: ../../source/publish_datasets/processors.rst:498
+#: ../../source/publish_datasets/processors.rst:674
 msgid ""
 "The local field that will be used to identify the corresponding records in "
 "the remote dataset. More than one key can be specified."
 msgstr "Le champ local qui sera utilisé pour identifier les enregistrements correspondants dans le jeu de données distant. Il est possible de spécifier plus d'une clé."
 
-#: ../../source/publish_datasets/processors.rst:501
+#: ../../source/publish_datasets/processors.rst:677
 msgid "**Remote Key**"
 msgstr "**Clé distante**"
 
-#: ../../source/publish_datasets/processors.rst:503
+#: ../../source/publish_datasets/processors.rst:679
 msgid "The remote field corresponding to the local key. This can be a list."
 msgstr "Le champ distant qui doit correspondant à la clé locale. Il est possible d'en avoir plusieurs."
 
-#: ../../source/publish_datasets/processors.rst:505
+#: ../../source/publish_datasets/processors.rst:681
 msgid "**Output Fields**"
 msgstr "**Champs de sortie**"
 
-#: ../../source/publish_datasets/processors.rst:507
+#: ../../source/publish_datasets/processors.rst:683
 msgid "The list of fields to retrieve."
 msgstr "La liste des champs à récupérer."
 
-#: ../../source/publish_datasets/processors.rst:509
+#: ../../source/publish_datasets/processors.rst:685
 msgid "**Retrieve All Fields**"
 msgstr "**Récupérer tous les champs**"
 
-#: ../../source/publish_datasets/processors.rst:511
+#: ../../source/publish_datasets/processors.rst:687
 msgid "Set to retrieve all the fields of the remote dataset."
 msgstr "Activer pour récupérer l'intégralité des champs du jeu de données distant."
 
-#: ../../source/publish_datasets/processors.rst:513
+#: ../../source/publish_datasets/processors.rst:689
 msgid "**Case Sensitive**"
 msgstr "**Sensible à la casse**"
 
-#: ../../source/publish_datasets/processors.rst:515
-#: ../../source/publish_datasets/processors.rst:671
+#: ../../source/publish_datasets/processors.rst:691
+#: ../../source/publish_datasets/processors.rst:847
 msgid "**One line**"
 msgstr "**Résultats sur une ligne**"
 
-#: ../../source/publish_datasets/processors.rst:517
+#: ../../source/publish_datasets/processors.rst:693
 msgid ""
 "In some specific cases, the remote dataset may contain more than one row "
 "matching the local key. In which case, you may want to either collapse "
@@ -1254,293 +1435,293 @@ msgid ""
 "parameter."
 msgstr "Dans certains cas, le jeu de données distant peut contenir plus d'une seule ligne correspondant à la clé locale. Dans ce cas, on peut souhaiter soit fusionner les doublons (générer un seul enregistrement contenant des champs multi-valués), ou conserver chaque enregistrement. Si ce paramètre est actif, vous pouvez spécifier le séparateur à utiliser dans les champs multi-valués issus d'une fusion via le paramètre **Séparateur**."
 
-#: ../../source/publish_datasets/processors.rst:522
+#: ../../source/publish_datasets/processors.rst:698
 msgid ""
 "Let's take an example and assume that the first dataset contains two rows "
 "for the first station:"
 msgstr "Prenons un exemple et supposons que le premier jeu de données contient deux lignes pour la première station :"
 
-#: ../../source/publish_datasets/processors.rst:534
-#: ../../source/publish_datasets/processors.rst:573
+#: ../../source/publish_datasets/processors.rst:710
+#: ../../source/publish_datasets/processors.rst:749
 msgid "Quai Branly"
 msgstr "Quai Branly"
 
-#: ../../source/publish_datasets/processors.rst:540
+#: ../../source/publish_datasets/processors.rst:716
 msgid ""
 "If **One line** is set (with **Separator** set to `|`), the Join will result"
 " in:"
 msgstr "Si **Résultats sur une ligne** est actif (avec **Séparateur** paramétré en `|`), la jointure donnera :"
 
-#: ../../source/publish_datasets/processors.rst:551
+#: ../../source/publish_datasets/processors.rst:727
 msgid "Tour Eiffel&#124;Quai Branly"
 msgstr "Tour Eiffel&#124;Quai Branly"
 
-#: ../../source/publish_datasets/processors.rst:552
+#: ../../source/publish_datasets/processors.rst:728
 msgid "69 quai Branly, 75007 Paris&#124;69 quai Branly, 75007 Paris"
 msgstr "69 quai Branly, 75007 Paris&#124;69 quai Branly, 75007 Paris"
 
-#: ../../source/publish_datasets/processors.rst:558
+#: ../../source/publish_datasets/processors.rst:734
 msgid "If **One line** is not set, the Join will result in:"
 msgstr "Si **Résultats sur une ligne** n'est pas actif, la jointure donnera :"
 
-#: ../../source/publish_datasets/processors.rst:580
+#: ../../source/publish_datasets/processors.rst:756
 msgid ""
 "This processor is not yet available by default. Please contact OpenDataSoft "
 "support team if you plan to use it, we will activate it for you."
 msgstr "Ce processeur n'est pas disponible par défaut. Vous pouvez contacter l'équipe support OpenDataSoft si vous souhaitez l'utiliser, et nous pourrons vous l'activer."
 
-#: ../../source/publish_datasets/processors.rst:584
+#: ../../source/publish_datasets/processors.rst:760
 msgid "Transpose Fields"
 msgstr "Transposition de Champs"
 
-#: ../../source/publish_datasets/processors.rst:586
+#: ../../source/publish_datasets/processors.rst:762
 msgid ""
 "This processor makes it possible to transform field names into field values."
 msgstr "Ce processeur permet de transformer des noms de champs en valeurs de champs."
 
-#: ../../source/publish_datasets/processors.rst:588
+#: ../../source/publish_datasets/processors.rst:764
 msgid ""
 "Let's take a simple example, with a dataset containing for a couple of "
 "countries the evolution of the number of inhabitants from 2020 to 2030."
 msgstr "Prenons un exemple simple, avec un jeu de données contenant pour quelques pays l'évolution du nombre d'habitants entre 2020 et 2030."
 
-#: ../../source/publish_datasets/processors.rst:591
+#: ../../source/publish_datasets/processors.rst:767
 msgid "The dataset initially looks like this:"
 msgstr "Le jeu de données ressemble initialement à ceci :"
 
-#: ../../source/publish_datasets/processors.rst:596
+#: ../../source/publish_datasets/processors.rst:772
 msgid "Country name"
 msgstr "Nom du pays"
 
-#: ../../source/publish_datasets/processors.rst:597
-#: ../../source/publish_datasets/processors.rst:624
-#: ../../source/publish_datasets/processors.rst:627
-#: ../../source/publish_datasets/processors.rst:630
+#: ../../source/publish_datasets/processors.rst:773
+#: ../../source/publish_datasets/processors.rst:800
+#: ../../source/publish_datasets/processors.rst:803
+#: ../../source/publish_datasets/processors.rst:806
 msgid "2020"
 msgstr "2020"
 
-#: ../../source/publish_datasets/processors.rst:598
-#: ../../source/publish_datasets/processors.rst:633
-#: ../../source/publish_datasets/processors.rst:636
-#: ../../source/publish_datasets/processors.rst:639
+#: ../../source/publish_datasets/processors.rst:774
+#: ../../source/publish_datasets/processors.rst:809
+#: ../../source/publish_datasets/processors.rst:812
+#: ../../source/publish_datasets/processors.rst:815
 msgid "2030"
 msgstr "2030"
 
-#: ../../source/publish_datasets/processors.rst:599
-#: ../../source/publish_datasets/processors.rst:642
-#: ../../source/publish_datasets/processors.rst:645
-#: ../../source/publish_datasets/processors.rst:648
+#: ../../source/publish_datasets/processors.rst:775
+#: ../../source/publish_datasets/processors.rst:818
+#: ../../source/publish_datasets/processors.rst:821
+#: ../../source/publish_datasets/processors.rst:824
 msgid "2050"
 msgstr "2050"
 
-#: ../../source/publish_datasets/processors.rst:600
-#: ../../source/publish_datasets/processors.rst:623
-#: ../../source/publish_datasets/processors.rst:632
-#: ../../source/publish_datasets/processors.rst:641
-#: ../../source/publish_datasets/processors.rst:682
+#: ../../source/publish_datasets/processors.rst:776
+#: ../../source/publish_datasets/processors.rst:799
+#: ../../source/publish_datasets/processors.rst:808
+#: ../../source/publish_datasets/processors.rst:817
+#: ../../source/publish_datasets/processors.rst:858
 msgid "France"
 msgstr "France"
 
-#: ../../source/publish_datasets/processors.rst:601
-#: ../../source/publish_datasets/processors.rst:606
-#: ../../source/publish_datasets/processors.rst:625
-#: ../../source/publish_datasets/processors.rst:637
+#: ../../source/publish_datasets/processors.rst:777
+#: ../../source/publish_datasets/processors.rst:782
+#: ../../source/publish_datasets/processors.rst:801
+#: ../../source/publish_datasets/processors.rst:813
 msgid "70 000 000"
 msgstr "70 000 000"
 
-#: ../../source/publish_datasets/processors.rst:602
-#: ../../source/publish_datasets/processors.rst:634
+#: ../../source/publish_datasets/processors.rst:778
+#: ../../source/publish_datasets/processors.rst:810
 msgid "80 000 000"
 msgstr "80 000 000"
 
-#: ../../source/publish_datasets/processors.rst:603
-#: ../../source/publish_datasets/processors.rst:643
+#: ../../source/publish_datasets/processors.rst:779
+#: ../../source/publish_datasets/processors.rst:819
 msgid "100 000 000"
 msgstr "100 000 000"
 
-#: ../../source/publish_datasets/processors.rst:604
-#: ../../source/publish_datasets/processors.rst:626
-#: ../../source/publish_datasets/processors.rst:635
-#: ../../source/publish_datasets/processors.rst:644
-#: ../../source/publish_datasets/processors.rst:685
+#: ../../source/publish_datasets/processors.rst:780
+#: ../../source/publish_datasets/processors.rst:802
+#: ../../source/publish_datasets/processors.rst:811
+#: ../../source/publish_datasets/processors.rst:820
+#: ../../source/publish_datasets/processors.rst:861
 msgid "UK"
 msgstr "UK"
 
-#: ../../source/publish_datasets/processors.rst:605
-#: ../../source/publish_datasets/processors.rst:628
+#: ../../source/publish_datasets/processors.rst:781
+#: ../../source/publish_datasets/processors.rst:804
 msgid "65 000 000"
 msgstr "65 000 000"
 
-#: ../../source/publish_datasets/processors.rst:607
-#: ../../source/publish_datasets/processors.rst:646
+#: ../../source/publish_datasets/processors.rst:783
+#: ../../source/publish_datasets/processors.rst:822
 msgid "90 000 000"
 msgstr "90 000 000"
 
-#: ../../source/publish_datasets/processors.rst:608
-#: ../../source/publish_datasets/processors.rst:629
-#: ../../source/publish_datasets/processors.rst:638
-#: ../../source/publish_datasets/processors.rst:647
-#: ../../source/publish_datasets/processors.rst:688
+#: ../../source/publish_datasets/processors.rst:784
+#: ../../source/publish_datasets/processors.rst:805
+#: ../../source/publish_datasets/processors.rst:814
+#: ../../source/publish_datasets/processors.rst:823
+#: ../../source/publish_datasets/processors.rst:864
 msgid "USA"
 msgstr "USA"
 
-#: ../../source/publish_datasets/processors.rst:609
-#: ../../source/publish_datasets/processors.rst:631
+#: ../../source/publish_datasets/processors.rst:785
+#: ../../source/publish_datasets/processors.rst:807
 msgid "350 000 000"
 msgstr "350 000 000"
 
-#: ../../source/publish_datasets/processors.rst:610
-#: ../../source/publish_datasets/processors.rst:640
+#: ../../source/publish_datasets/processors.rst:786
+#: ../../source/publish_datasets/processors.rst:816
 msgid "400 000 000"
 msgstr "400 000 000"
 
-#: ../../source/publish_datasets/processors.rst:611
-#: ../../source/publish_datasets/processors.rst:649
+#: ../../source/publish_datasets/processors.rst:787
+#: ../../source/publish_datasets/processors.rst:825
 msgid "450 000 000"
 msgstr "450 000 000"
 
-#: ../../source/publish_datasets/processors.rst:613
+#: ../../source/publish_datasets/processors.rst:789
 msgid ""
 "Publishing this dataset as is would make it difficult to draw meaningful "
 "visualizations for instance."
 msgstr "Publier ce jeu de données tel quel rendrait difficile la création de visualisations riches."
 
-#: ../../source/publish_datasets/processors.rst:615
+#: ../../source/publish_datasets/processors.rst:791
 msgid "Let's have a look at an alternative way to represent this dataset."
 msgstr "Penchons nous sur une façon différente de représenter ce jeu de données."
 
-#: ../../source/publish_datasets/processors.rst:620
-#: ../../source/publish_datasets/processors.rst:679
+#: ../../source/publish_datasets/processors.rst:796
+#: ../../source/publish_datasets/processors.rst:855
 msgid "Country Name"
 msgstr "Nom du pays"
 
-#: ../../source/publish_datasets/processors.rst:621
-#: ../../source/publish_datasets/processors.rst:680
+#: ../../source/publish_datasets/processors.rst:797
+#: ../../source/publish_datasets/processors.rst:856
 msgid "Year"
 msgstr "Année"
 
-#: ../../source/publish_datasets/processors.rst:622
-#: ../../source/publish_datasets/processors.rst:681
+#: ../../source/publish_datasets/processors.rst:798
+#: ../../source/publish_datasets/processors.rst:857
 msgid "Inhabitants"
 msgstr "Habitants"
 
-#: ../../source/publish_datasets/processors.rst:651
+#: ../../source/publish_datasets/processors.rst:827
 msgid ""
 "With this representation, it becomes super easy to build subsets of the "
 "dataset using facets based filtering mechanism."
 msgstr "Avec cette représentation, il devient très facile de filtrer ce jeu de données en utilisant les facettes, afin de travailler sur des sous-ensembles des données."
 
-#: ../../source/publish_datasets/processors.rst:653
+#: ../../source/publish_datasets/processors.rst:829
 msgid ""
 "The **Transpose Fields** processor makes it super easy to configure this "
 "kind of transformation."
 msgstr "Le processeur **Transposition de Champs** permet de configurer facilement ce type de transformation."
 
-#: ../../source/publish_datasets/processors.rst:655
+#: ../../source/publish_datasets/processors.rst:831
 msgid "You'll need to define the following parameters:"
 msgstr "Vous devez configurer les paramètres suivants :"
 
-#: ../../source/publish_datasets/processors.rst:657
+#: ../../source/publish_datasets/processors.rst:833
 msgid "**Fixed fields**"
 msgstr "**Champs fixes**"
 
-#: ../../source/publish_datasets/processors.rst:659
+#: ../../source/publish_datasets/processors.rst:835
 msgid ""
 "Defines the list of fields that shall be kept as is. In the above sample, "
 "this would have been *Country Name*"
 msgstr "Définit la liste des champs qui doivent être conservés tels quels. Dans l'exemple ci-dessus, nous aurions *Nom du pays*."
 
-#: ../../source/publish_datasets/processors.rst:661
+#: ../../source/publish_datasets/processors.rst:837
 msgid "**Label for title column**"
 msgstr "**Label du titre**"
 
-#: ../../source/publish_datasets/processors.rst:663
+#: ../../source/publish_datasets/processors.rst:839
 msgid ""
 "Defines the label of the new column containing the names of the fields that "
 "have been transposed. In the above sample, this would have been *Year*."
 msgstr "Défini le label de la nouvelle colonne contenant les noms des champs qui ont été transposés. Dans l'exemple ci-dessus, il s'agirait de *Année*."
 
-#: ../../source/publish_datasets/processors.rst:666
+#: ../../source/publish_datasets/processors.rst:842
 msgid "**Label for the value column**"
 msgstr "**Label de la valeur**"
 
-#: ../../source/publish_datasets/processors.rst:668
+#: ../../source/publish_datasets/processors.rst:844
 msgid ""
 "Defines the label of the new column containing the former cell values. This "
 "would have been *Inhabitants* in the above sample."
 msgstr "Définit le label de la nouvelle colonne contenant les valeurs des anciennes colonnes avant transposition. Dans l'exemple ci-dessus, il s'agirait de *Habitants*."
 
-#: ../../source/publish_datasets/processors.rst:673
+#: ../../source/publish_datasets/processors.rst:849
 msgid ""
 "Make it possible to group / concat transposal results, using a specific "
 "**Separator**. With the above sample, activating the One line option and "
 "choosing ';' as a separator, th result would have been the following:"
 msgstr "Rend possible de grouper / concaténer les résultats de la transposition, en utilisant un **Séparateur** spécifique. Dans l'exemple ci-dessus, en activant l'option Résultats sur une ligne et en choisissant ';' comme séparateur, le résultat aurait été le suivant :"
 
-#: ../../source/publish_datasets/processors.rst:683
-#: ../../source/publish_datasets/processors.rst:686
-#: ../../source/publish_datasets/processors.rst:689
+#: ../../source/publish_datasets/processors.rst:859
+#: ../../source/publish_datasets/processors.rst:862
+#: ../../source/publish_datasets/processors.rst:865
 msgid "2050;2020;2030"
 msgstr "2050;2020;2030"
 
-#: ../../source/publish_datasets/processors.rst:684
+#: ../../source/publish_datasets/processors.rst:860
 msgid "100 000 000;70 000 000;80 000 000"
 msgstr "100 000 000;70 000 000;80 000 000"
 
-#: ../../source/publish_datasets/processors.rst:687
+#: ../../source/publish_datasets/processors.rst:863
 msgid "90 000 000;65 000 000;70 000 000"
 msgstr "90 000 000;65 000 000;70 000 000"
 
-#: ../../source/publish_datasets/processors.rst:690
+#: ../../source/publish_datasets/processors.rst:866
 msgid "450 000 000;350 000 000;400 000 000"
 msgstr "450 000 000;350 000 000;400 000 000"
 
-#: ../../source/publish_datasets/processors.rst:693
+#: ../../source/publish_datasets/processors.rst:869
 msgid "Extract from Json (Beta - Can be activated on demand)"
 msgstr "Extraction depuis un objet JSON (Beta - peut être activé sur demande)"
 
-#: ../../source/publish_datasets/processors.rst:695
+#: ../../source/publish_datasets/processors.rst:871
 msgid "This processor can be used to extract values from a json object."
 msgstr "Ce processeur peut être utilisé pour extraire des valeurs depuis un objet JSON."
 
-#: ../../source/publish_datasets/processors.rst:697
+#: ../../source/publish_datasets/processors.rst:873
 msgid "It rely on ijson library and use the same syntax for rule extraction."
 msgstr "Il repose sur la bibliothèque logicielle ijson et utilise la même syntaxe pour les règles d'extraction."
 
-#: ../../source/publish_datasets/processors.rst:699
+#: ../../source/publish_datasets/processors.rst:875
 msgid ""
 "For example, let's assume that you have this json object into a text field :"
 msgstr "Par exemple, supposons que cet objet JSON est présent dans un champ texte :"
 
-#: ../../source/publish_datasets/processors.rst:713
+#: ../../source/publish_datasets/processors.rst:889
 msgid ""
 "you will be able to extract the value ``Joe`` with this rule : ``metaA``"
 msgstr "vous pouvez extraire la valeur ``Joe`` avec cette règle : ``metaA``"
 
-#: ../../source/publish_datasets/processors.rst:714
+#: ../../source/publish_datasets/processors.rst:890
 msgid ""
 "you will be able to extract the value ``valueB`` with this rule : "
 "``bloc.item.metaB``"
 msgstr "vous pouvez extraire la valeur ``valueB`` avec cette règle : ``bloc.item.metaB``"
 
-#: ../../source/publish_datasets/processors.rst:715
+#: ../../source/publish_datasets/processors.rst:891
 msgid ""
 "you will be able to extract the value ``5`` with this rule : "
 "``bloc.item.int``"
 msgstr "vous pouvez extraire la valeur ``5`` avec cette règle : ``bloc.item.int``"
 
-#: ../../source/publish_datasets/processors.rst:716
+#: ../../source/publish_datasets/processors.rst:892
 msgid ""
 "you will be able to extract the value ``sub_value`` with this rule : "
 "``sub.sub_sub``"
 msgstr "vous pouvez extraire la valeur ``sub_value`` avec cette règle : ``sub.sub_sub``"
 
-#: ../../source/publish_datasets/processors.rst:717
+#: ../../source/publish_datasets/processors.rst:893
 msgid ""
 "The rule ``bloc.item`` will extract the last object of the json list : "
 "``{boolean: {}}``"
 msgstr "La règle ``bloc.item`` extrait le dernier objet de la liste JSON : ``{boolean: {}}``"
 
-#: ../../source/publish_datasets/processors.rst:718
+#: ../../source/publish_datasets/processors.rst:894
 msgid "The rule ``bloc`` will extract the json list :"
 msgstr "La règle ``bloc`` extrait la liste JSON :"

@@ -105,7 +105,10 @@ Documentation is written in reStructuredText (rst). While not as popular as Mark
 
 The syntax reference is available at http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html but you should really start with http://sphinx-doc.org/rest.html.
 
+You should strive to constrain the topic of each page to a single topic. Related topics should be placed within a same folder but topics should all have their dedicated pages.
+
 ### Writing guidelines
+
 - Write short sentences about simple concepts (as much as possible)
 - Keep a neutral tone; the content should be easy to reuse inside
 a blog post or a newsletter for example
@@ -155,7 +158,26 @@ To a raw html with the target="_blank" parameter
    <a href="http://www.externalwebsite.com/" target="_blank">external website</a>
 ```
 
+In an array, add an empty line:
+```
+* * GeoJSON
+     * .json, .geojson
+     *
+     *
+       :doc:`Geojson </extractors/geojson>`
+```
 ### Images
+
+All images should be named following this norm:
+
+> <doc_page_name>__<image-name>--<language>.<ext>
+
+Where:
+ 
+* `<doc_page_name>` is the name of the `.rst` file the image is originally referenced from (using `_` as tokens separator)
+* `<image-name>` is the name of the image itself, it should describe its content (using `-` as tokens separator)
+* `<language>` is either `fr` or `en` (we do not support other languages in the documentation
+
 
 If you need to annotate images (add circles, arrows, basic text), you can download Skitch
 (https://evernote.com/skitch/). It is free and very handy for these basic edits.
@@ -173,3 +195,4 @@ To a raw html including the Font Awesome <i> link
    <i class="fa fa-external-link" aria-hidden="true"></i>
 ```
 Note that the external link decorator is added automatically. 
+

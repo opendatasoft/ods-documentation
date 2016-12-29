@@ -96,6 +96,7 @@
             text-align: center;
             color: #404040;
         }
+
         .slack-feedback__thanks,
         .slack-feedback__message-form,
         .slack-feedback__message-sent {
@@ -104,14 +105,17 @@
         .slack-feedback__thanks {
             padding: 25px;
         }
+
         .slack-feedback__message-form {
             margin-top: 36px;
         }
+
         .slack-feedback__message {
             width: 100%;
             height: 100px;
             font-size: inherit;
         }
+
         .slack-feedback__message-sent {
             padding: 130px 0;
         }
@@ -127,6 +131,7 @@
             var messageElement = document.getElementsByClassName('slack-feedback__message')[0];
             var sendButtonElement = document.getElementsByClassName('slack-feedback__send-message')[0];
             var messageSentElement = document.getElementsByClassName('slack-feedback__message-sent')[0];
+
             var sendMessage = function (message) {
                 var request = new XMLHttpRequest();
                 request.open('POST', 'https://data.opendatasoft.com/slack_feedback/', true);
@@ -136,20 +141,24 @@
                     'is_documentation': true
                 }));
             };
+
             yesButtonElement.onclick = function () {
                 questionElement.style.display = 'none';
                 thanksElement.style.display = 'block';
                 sendMessage('All good, thanks!');
             };
+
             noButtonElement.onclick = function () {
                 yesButtonElement.disabled = true;
                 noButtonElement.disabled = true;
                 noButtonElement.classList.remove('btn-neutral');
                 messageFormElement.style.display = 'block';
+
                 sendButtonElement.onclick = function () {
                     messageFormElement.style.display = 'none';
                     questionElement.style.display = 'none';
                     messageSentElement.style.display = 'block';
+
                     var message = messageElement.value;
                     sendMessage(message);
                 };

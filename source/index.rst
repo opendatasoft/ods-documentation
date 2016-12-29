@@ -59,6 +59,7 @@ This documentation is OpenDataSoft's reference documentation. It complements inl
    monitoring_audience/index
    managing_subdomains/index
    using_api/index
+
    faq
    platform_glossary
    accessibility
