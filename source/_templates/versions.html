@@ -1,24 +1,24 @@
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       <span class="fa fa-book"> OpenDataSoft</span>
-      lang: {{ language }}
+      {{ gettext("lang") }}: {{ language }}
       <span class="fa fa-caret-down"></span>
     </span>
 
     <div class="rst-other-versions">
         <dl>
-            <dt>Languages</dt>
+            <dt>{{ gettext("Languages") }}</dt>
             {% for lang in languages %}
-            <dd><a href="/{{ lang }}/{{ pagename }}.html">{{ lang }}</a></dd>
+            <dd><a href="/{{ lang }}/index.html">{{ lang }}</a></dd>
             {% endfor %}
         </dl>
         <dl>
-            <dt>On Github</dt>
+            <dt>{{ gettext('On Github') }}</dt>
             <dd>
-                <a href="https://github.com/opendatasoft/ods-documentation">View project's source</a>
+                <a href="https://github.com/opendatasoft/ods-documentation">{{ gettext("View project's source") }}</a>
             </dd>
         </dl>
         <hr>
-        <a href="http://opendatasoft.com">Make the most of your data and APIs with OpenDataSoft.</a>
+        <a href="http://opendatasoft.com">{{ gettext("Make the most of your data and APIs with OpenDataSoft.") }}</a>
     </div>
 </div>

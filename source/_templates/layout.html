@@ -19,7 +19,20 @@
     .algolia-autocomplete {
         width: 100%;
     }
+
+    /* Add a little icon next to external links */
+    .rst-content a[href^="http://"]:after,
+    .rst-content a[href^="https://"]:after {
+        font-family: 'FontAwesome';
+        content: " \f08e";
+        font-size: 0.8em;
+        vertical-align: middle;
+        margin-left: 0.15em;
+        margin-right: 0.2em;
+    }
 </style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://public.opendatasoft.com/static/pictos/odsui/odsui.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
 {% endblock %}
 {% block sidebartitle %}
@@ -41,7 +54,15 @@
 {% endif %}
 {% endif %}
 
-{% include "searchbox.html" %}
+{%- if builder != 'singlehtml' %}
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="{{ pathto('search') }}" method="get">
+    <input type="text" name="q" placeholder="{{ gettext("Search docs") }}" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+{%- endif %}
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
