@@ -12,7 +12,6 @@ But you can also get an access to your own OpenDataSoft's instance (called **dom
     .. figure:: setup__freemium-signup--en.jpg
         :alt: OpenDataSoft's free trial account subscription
         :width: 400px
-        :height: 300px
         :align: center
 
         Free trial account creation
@@ -33,7 +32,6 @@ You shall then be redirected to OpenDataSoft's back-office main screen.
     .. figure:: setup__backoffice-empty--en.jpg
         :alt: OpenDataSoft's free trial account subscription
         :width: 400px
-        :height: 300px
         :align: center
 
         Back-office after first connection

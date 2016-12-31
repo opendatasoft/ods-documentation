@@ -14,6 +14,7 @@ The harvester will create datasets, update their metadata and resources, keep th
 
     .. figure:: harvesters_schema--en.png
         :alt: Harvesters schema
+        :align: center
 
         Global overview
 
@@ -21,6 +22,7 @@ The harvester will create datasets, update their metadata and resources, keep th
 
     .. figure:: harvesters_schema--fr.png
         :alt: Schéma des moissoneurs
+        :align: center
 
         Vue d'ensemble
 

@@ -21,7 +21,6 @@ OpenDataSoft includes a unique set of integrated features:
     .. figure:: index__opendatasoft-data-network--en.jpg
         :alt: OpenDataSoft's network of data
         :width: 400px
-        :height: 300px
         :align: center
 
         OpenDataSoft's network of data
@@ -36,7 +35,6 @@ This documentation is OpenDataSoft's reference documentation. It complements inl
     .. figure:: index__opendatasoft-discovery--en.jpg
         :alt: OpenDataSoft's discovery portal
         :width: 400px
-        :height: 300px
         :align: center
 
         OpenDataSoft's discovery portal

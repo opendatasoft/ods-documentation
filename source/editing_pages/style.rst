@@ -13,7 +13,7 @@ changing the size of your text...
 In this article, we'll walk you through a few basic changes to a standard page template. We do not aim to teach HTML and CSS, as other resources
 will do this much better than us; however, these are examples that you can start from and expand upon.
 
-First, let's create a new page based on the "Main block + right column" template, as seen in the :doc:`"Creating a simple content page" article </editing_pages/create>`.
+First, let's create a new page based on the "Main block + right column" template, as seen in the :doc:`Creating a simple content page </editing_pages/create>` article.
 Then, switch to **expert mode** using the link in the top right of the interface. You now have two "CSS" and "HTML" tabs, containing the code behing the page.
 
 The CSS tab is empty for now, as there is no specific CSS code. However, the HTML of the page is here:
@@ -40,7 +40,7 @@ More precisely:
       The idea with the classes ``col-md-8`` and ``col-md-4`` is to think of the available space in each row as a grid of 12 "cells";
       your blocks inside this row can take a total amount of 12 cells, and each blocks uses ``col-md-X`` where X is the amount of cells it
       will take. So, here we wanted one blocks taking two thirds of the space, and another block taking one third, so we used 8 and 4 to divide
-      the available 12 cells. All this logic (named "grid" logic) is detailed in this article (TODO).
+      the available 12 cells. All this logic (named "grid" logic) is detailed in the :doc:`Designing a responsive portal </customizing_look_and_feel/responsive>` article.
     - ``<div class="ods-box">`` just creates a visual block with a border and a background, more suitable to contain text.
 
 Now we want to add a new line of three blocks, each taking a third of the space. Following our previous logic, we add a new row, and three
@@ -108,5 +108,3 @@ Then, we just need to add a rules in the CSS code, stating that the class "large
     }
 
 There are many CSS rules you can add, to any of your elements.
-
-TODO: Link to resources to learn CSS and HTML
