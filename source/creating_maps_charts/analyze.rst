@@ -127,6 +127,3 @@ Other charts examples
 
 .. image:: polar-chart-example.png
 
-
-Customizing icons
------------------
