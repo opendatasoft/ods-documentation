@@ -7,7 +7,6 @@ Using the API
    introduction
    authentication
    oauth2
-   push_api
    v1/index
    v2/index
    odata/index

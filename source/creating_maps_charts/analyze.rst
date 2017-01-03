@@ -1,12 +1,13 @@
-Analyzing data
-==============
+Analyzing with the Chart Builder
+================================
 
 .. note:: Read how to :doc:`configure visualizations </sourcing_and_processing_data/configuring_visualizations/analyze>` for a dataset beforehand.
 
-With the `Charts` tool, you can visualize multiple datasets on a single customized chart.
-You can save your charts and easily share them, embed them, or display them as widgets.
+With the Chart Builder tool, you can visualize multiple datasets on a single customized chart. You can save your chart and easily share it, embed it, or use it as a widget.
 
-.. note:: You can also build charts with `Analyze` tab on a dataset page, but these are limited to the current dataset. With `Advanced Charts` you have much more possibilities, combining different sources from the OpenDataSoft network.
+It is usually made available by the domain administrator in the top menu link under the codename `Charts`. The Map Builder can also be accessed using its URL: ``http://<DOMAIN ADDRESS>/chart``.
+
+.. note:: You can also build charts with `Analyze` tab on a dataset page, but these are limited to the current dataset. With the Chart Builder you have much more possibilities, combining different sources from your domain and from the OpenDataSoft network.
 
 
 First layer
@@ -14,10 +15,10 @@ First layer
 
 Click on ``Add a dataset to this layer`` to start importing data to your chart.
 
-The list of datasets available will appear: you can search or browse by category to find your datasets.
-As usual you can preview and filter the dataset before importing it.
+The list of available datasets is displayed: you can search or browse by category to find your datasets.
+As usual you can preview and filter a dataset before importing it.
 
-For this example, let's take the public dataset "`Entreprises immatriculées en 2015`" from `Data Infogreffe` domain.
+As an example, let's take the public dataset "`Entreprises immatriculées en 2015`" from `Data Infogreffe` domain.
 You can ``Filter data`` to refine the data, but in our case let's just ``✓ Select`` the dataset.
 
 In the configuration, you can choose the appropriate type of graph. Select ``Column chart``
@@ -127,6 +128,3 @@ Other charts examples
 
 .. image:: polar-chart-example.png
 
-
-Customizing icons
------------------

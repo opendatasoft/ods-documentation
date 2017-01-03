@@ -1,7 +1,7 @@
 Keeping data up to date
 =======================
 
-Some data is not subject to a lot of change, and only needs to be shared once, but in a lot of instances, this is not enough. Some data quickly becomes obsolete, and need to be updated regularly to accurately represent reality. In order address these ephemeral, always-evolving data, the OpenDataSoft platform offer two separate mechanisms. The first one is called scheduling and consist of having a dataset republish itself at fixed interval. This mode is most useful for datasets whose underlying resource is remote, and regularly updated. The second mechanism for publishing real time data is using a realtime datasets, that are fed by the push API. This mode is most useful when the data can be sent directly by the system that observe the data points, such as a computer program sending event metrics or a set of sensors sending their readings.
+Some data is not subject to a lot of change, and only needs to be shared once, but in many cases, this is not enough. Some data quickly become obsolete, and need to be updated regularly to accurately represent reality. In order to address these ephemeral, always-evolving data, the OpenDataSoft platform offers two separate mechanisms. The first one is called scheduling and consists of having a dataset being automatically republished at fixed intervals. This mode is most useful for datasets with a remote resource which is regularly updated. The second mechanism for publishing real time data is using a realtime dataset, that is fed by an API. This mode is most useful when the data can be sent directly by the system that produces the data points, such as a computer program sending event metrics or a set of sensors sending their readings.
 
 Using scheduling to keep a dataset up to date
 ---------------------------------------------
@@ -14,7 +14,7 @@ Specifying a resource
 .. image:: scheduling__resource--en.png
     :alt: resource interface
 
-To be able to schedule a dataset, its underlying resource must be a remote one, that is entered as a URL (http or ftp work well) and not a file. For best results, this resource must be regularly updated. To add such a resource, simply enter a URL in the URL bar of the resource interface.
+To be able to schedule a dataset, its underlying resource must be a remote one, specified as a URL (http or ftp work well) and not an uploaded file. To add such a resource, simply paste a URL in the URL input.
 
 Specifying scheduling interval
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -23,12 +23,12 @@ Specifying scheduling interval
 .. image:: scheduling__scheduling--en.png
     :alt: scheduling tab
 
-Once a dataset is saved with a remote resource, the scheduling tab will be activated. The minimum interval is the minute, but it is not activated by default. Send us an email if you want to try it out! You can add as many schedule as you want. For instance, if it fits your needs, you could decide to schedule a dataset to be reprocessed every Monday morning and every Wednesday afternoon. At the recurrence that you specified, that platform will fetch the ressource and reprocess and republish it, leaving your dataset up to date.
+Once a dataset is saved with a remote resource, the scheduling tab is activated. The minimum interval is the minute, but it is not activated by default. Please contact OpenDataSoft's support if you need minute level scheduling on your domain. You can add as many schedule as you want. For instance, if it fits your needs, you could decide to schedule a dataset to be reprocessed every Monday morning and every Wednesday afternoon.
 
 Pushing real time data
 ----------------------
 
-For some types of data, it can be useful to push data instead of the more traditional model of having the data being pulled from a resource by the platform. To address this need, the OpenDataSoft platform offers a realtime push API. It is not to be confused with the ability to schedule a dataset processing. When scheduling, the dataset will periodically pull the resource and process the data that is inside of it, whereas with the push API, the dataset is fed by an application through a push API and records are processed one by one as soon as they are received. As this feature is still in beta, it is not activated by default and must be requested.
+For some types of data, it can be useful to push data instead of the more traditional model of having the data being pulled from a resource by the platform. To address this need, the OpenDataSoft platform offers a realtime push API. It is not to be confused with the ability to schedule a dataset processing. When scheduling, the dataset will periodically pull the resource and process the data that is inside of it, whereas with the push API, the dataset is fed by an application through a push API and records are processed one by one as soon as they are received. As this feature is still in beta, it is not activated by default. Please contact OpenDataSoft's support to try it out.
 
 Configuring the dataset schema
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -98,7 +98,7 @@ Update data by defining a unique key
     :scale: 100%
     :alt: table view with 2 records containing respectively 978-0060589462 and 978-2862744506 as isbn and 3 and 5 as number_of_copies
 
-In some instances it is useful to update the existing records instead of just pushing new ones. An example for this would be a dataset that tracks the number of copies available for each books in a public library. Suppose that we have such a dataset with two fields: ``isbn``, representing the `ISBN <https://en.wikipedia.org/wiki/International_Standard_Book_Number>`_ number of the book, and ``number_of_copies`` tracking the current number of copies available in the library. It would not make a lot of sense to add one record for each new value of ``number_of_copies``, instead, it would be better to set the new ``number_of_copies`` value to the record corresponding to the book ``isbn``.
+Sometimes it is useful to update the existing records instead of just pushing new ones. An example for this would be a dataset that tracks the number of copies available for each books in a public library. Suppose that we have such a dataset with two fields: ``isbn``, representing the `ISBN <https://en.wikipedia.org/wiki/International_Standard_Book_Number>`_ number of the book, and ``number_of_copies`` tracking the current number of copies available in the library. It would not make a lot of sense to add one record for each new value of ``number_of_copies``, instead, it would be better to set the new ``number_of_copies`` value to the record corresponding to the book ``isbn``.
 
 .. image:: realtime__unique_id--en.png
     :alt: unique ID option in the field dropdown
@@ -138,7 +138,7 @@ There are two entrypoints that allow for deleting a pushed records. One that use
 Using the record values
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-To delete a record knowing the record fields values, POST the record as if to push it, but replace ``/push/`` with ``/delete/`` in the push URL. If your push URL path is ``/api/push/1.0/realtime-dataset/<DATASET>/push/?pushkey=<PUSH_API_KEY>``, then use instead ``/api/push/1.0/realtime-dataset/<DATASET>/push/delete/?pushkey=<PUSH_API_KEY>``. A minimal example to delete the record we pushed earlier follows.
+To delete a record knowing the record fields values, POST the record as if you were adding it for the first time, but replace ``/push/`` with ``/delete/`` in the push URL. If your push URL path is ``/api/push/1.0/realtime-dataset/<DATASET>/push/?pushkey=<PUSH_API_KEY>``, then use instead ``/api/push/1.0/realtime-dataset/<DATASET>/push/delete/?pushkey=<PUSH_API_KEY>``. A minimal example to delete the record we pushed earlier follows.
 
 .. code-block:: bash
 
@@ -167,7 +167,7 @@ Unpublishing and disabling the api
 .. image:: realtime__disable--en.png
     :alt: "disable push" button in RT resource view
 
-Be wary of unpublishing your dataset, as this will not conserve existing records for the next time the dataset is published. If you desire to avoid getting new data, you should instead click the "disable push" button in the resource setting. This will prevent the usage of the push API but will have no effect on existing data. If data is pushed while push is disabled on the resource, no data will be added and an error will be sent.
+Beware of unpublishing your dataset, as this will not keep existing records for the next time the dataset is published. If you desire to avoid getting new data, you should instead click the "disable push" button in the resource setting. This will prevent the usage of the push API but will have no effect on existing data. If data is pushed while push is disabled on the resource, no data will be added and an error will be sent.
 
 Recovery
 ~~~~~~~~
@@ -175,9 +175,9 @@ Recovery
 .. image:: realtime__recovery_option--en.png
     :alt: recovery option in realtime resource view
 
-In the event of data loss, for instance from unpublishing or a unwise use of a processor, there is a possibility of recovering the lost records. To do so, the recovery option must have been activated prior to the records being pushed to the platform.
+In the event of data loss, for instance when the dataset has been unpublished or when a processor has been misconfigured, there is a possibility of recovering the lost records. To do so, the recovery option must have been activated prior to the records being pushed to the platform.
 
 .. image:: realtime__recovery_button--en.png
     :alt: recover data button in realtime resource view
 
-When the recovery is activated each subsequent record received will be backed up, and will be elligible for recovery. In order to recover eligible records, the "recover data" button on the source configuration page can be used.
+When the recovery is activated every subsequent record received will be backed up, and will be elligible for recovery. In order to recover eligible records, the "recover data" button on the source configuration page can be used.
