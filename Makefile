@@ -195,7 +195,7 @@ pseudoxml:
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
 
 translations:
-ifeq ($(shell git symbolic-ref HEAD --short), develop-fr)
+ifeq ($(shell git symbolic-ref HEAD --short), develop)
 	@echo "Building translation files"
 	@make gettext
 	@sphinx-intl update -p $(BUILDDIR)/locale -l fr
