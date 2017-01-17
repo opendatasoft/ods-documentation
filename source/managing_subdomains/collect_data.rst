@@ -1,2 +1,0 @@
-Collecting data from subdomains
-===============================
