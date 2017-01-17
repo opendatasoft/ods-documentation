@@ -1,0 +1,456 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-17 16:28+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2017\n"
+"Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/using_api/oauth2.rst:2
+msgid "Using OAuth2 authorization"
+msgstr "Utiliser l'autorisation OAuth2"
+
+#: ../../source/using_api/oauth2.rst:5
+msgid "Overview"
+msgstr "Vue d'ensemble"
+
+#: ../../source/using_api/oauth2.rst:7
+msgid ""
+"OpenDataSoft implements the OAuth2 authorization flow, allowing third party "
+"application makers to access the data hosted on a OpenDataSoft platform on "
+"behalf of a user while never having to deal with a password, thus avoiding "
+"any user credential to be compromised."
+msgstr ""
+"OpenDataSoft implément le flux d'autorisation OAuth2, ce qui permet à des "
+"applications tierces d'accéder aux données hébergées sur une plateforme "
+"OpenDataSoft. L'utilisateur n'aura jamais à utiliser un mot de passe ce qui "
+"éviter les risques de compromission d'identité."
+
+#: ../../source/using_api/oauth2.rst:11
+msgid ""
+"The OpenDataSoft OAuth2 authorization flow is compliant with `RFC 6749 "
+"<http://tools.ietf.org/html/rfc6749>`_ and makes use of Bearer Tokens in "
+"compliance with `RFC 6750 <http://tools.ietf.org/html/rfc6750>`_."
+msgstr ""
+"Le flux d'autorisation OAuth2 d'OpenDataSoft est compatible `RFC 6749 "
+"<http://tools.ietf.org/html/rfc6749>`_ et utiliser les ``Bearer Tokens`` "
+"compatibles avec `RFC 6750 <http://tools.ietf.org/html/rfc6750>`_."
+
+#: ../../source/using_api/oauth2.rst:14
+msgid ""
+"Application developers who want to use the OpenDataSoft APIs with OAuth2 "
+"must go through the following steps, which will be explained in this "
+"article. They must first register their application with the OpenDataSoft "
+"platform. Secondly, they must request approval from users. With that "
+"approval, they can request a Bearer Token. This token allows them to query "
+"the OpenDataSoft platform APIs for a limited amount of time, after which "
+"they must refresh their Bearer Token."
+msgstr ""
+"Les développeurs d'application qui veulent utiliser les APIs OpenDataSoft "
+"avec OAuth2 doivent suivrent les étapes suivantes. Ils doivent d'abord "
+"enregistrer leur application sur la plateforme OpenDataSoft. Ensuite, ils "
+"doivent demander l'autorisation des utilisateurs. Avec cette autorisation, "
+"ils peuvent demander un ``Bearer Token``. Ce ``Bearer Token``leur permet de "
+"requêter les APIs d'OpenDataSoft pour un temps limité, quand ce temps est "
+"fini, ils doivent rafraîchir leur ``Bearer Token``."
+
+#: ../../source/using_api/oauth2.rst:19
+msgid ""
+"Currently, applications are registered on a specific domain and can only "
+"access data on this domain."
+msgstr ""
+"Actuellement, les applications sont enregistrées sur un domaine spécifique "
+"et peuvent uniquement accéder aux données sur ce domaine. "
+
+#: ../../source/using_api/oauth2.rst:22
+msgid "Getting started"
+msgstr "Démarrer"
+
+#: ../../source/using_api/oauth2.rst:37
+msgid ""
+"The first step to use the OAuth2 authorization flow is to register your "
+"application. To do so, go to your account page on the domain you want to "
+"register the application on. There, you will find a form prompting you for "
+"the following:"
+msgstr ""
+"La première etape pour utiliser le flux d'autorisation OAuth2 est "
+"d'enregister votre application. Pour ce faire, allez sur votre page de "
+"compte du domaine sur lequel vous voulez enregistrer l'application. Vous y "
+"trouverez un formulaire vous demandant les éléments suivants : "
+
+#: ../../source/using_api/oauth2.rst:40
+msgid "Application name: the name of the application"
+msgstr "Nom de l'application : le nom de l'application"
+
+#: ../../source/using_api/oauth2.rst:41
+msgid ""
+"Type: can be either confidential or public. An application is confidential "
+"if it can keep information from a user, other applications are public. "
+"Typically, a web application running on its own server is confidential. "
+"Conversely a smartphone application is public, because the user has control "
+"over the running environment of the application."
+msgstr ""
+"Type : confidentiel ou public. Une application est confidentielle si elle "
+"peut conserveur des information utilisateur, les autres applications sont "
+"publiques. Typiquement, une application Web qui fonctionne sur son propre "
+"serveur est confidentielle. Inversement, une application smartphone est "
+"publique car l'utilisateur a le contrôle de l'environnement de "
+"l'application. "
+
+#: ../../source/using_api/oauth2.rst:44
+msgid ""
+"Redirection URL: The URL users will be redirected to after they have granted"
+" you permission to access their data."
+msgstr ""
+"URL de redirection : l'URL vers laquelle les utilisateurs seront redirigés "
+"après avoir autorisé l'accès à leur données."
+
+#: ../../source/using_api/oauth2.rst:46
+msgid "You will then be awarded a client ID and a client secret."
+msgstr "Vous obtiendrez alors une ID client et un mot de passe client."
+
+#: ../../source/using_api/oauth2.rst:48
+msgid ""
+"Now that your application is registered, it is time to request an "
+"authorization grant from a user."
+msgstr ""
+"Maintenant que votre application est enregistrée, il est temps de demander "
+"une autorisation à un utilisateur. "
+
+#: ../../source/using_api/oauth2.rst:51
+msgid "Getting an authorization grant"
+msgstr "Obtenir une autorisation"
+
+#: ../../source/using_api/oauth2.rst:53
+msgid ""
+"To get an authorization grant from a user, you will need to redirect them to"
+" `/oauth2/authorize/` with a few REST parameters. The user will then be "
+"authenticated in the platform, and redirected to a page identifying your "
+"application with the info you provided when you registered it, the list of "
+"scopes your application would like to access and prompting them to grant "
+"your application to access their data. Once the user has accepted those "
+"terms, they will be redirected to your application's redirection URL, with "
+"REST parameters describing your authorization grant."
+msgstr ""
+"Pour obtenir une autorisation utilisateur, vous aurez besoin de les "
+"rediriger vers `/oauth2/authorize/` avec quelques paramètres REST. "
+"L'utilisateur sera alors authentifié sur la plateforme et redirigé vers une "
+"page identifiant votre application avec les informations fournies lors de "
+"l'enregistrement, le périmètre d'accès demandé et leur demandant d'autoriser"
+" l'accès aux données pour l'application. Dès que l'utilisateur a accepté, il"
+" sera redirigé vers l'adresse de votre application avec les paramètres REST "
+"indiquant l'autorisation. "
+
+#: ../../source/using_api/oauth2.rst:59
+msgid ""
+"The REST parameters you will need to supply when redirecting the user are "
+"the following:"
+msgstr ""
+"Les paramètres REST à fournir lors de la redirection de l'utilisateur sont "
+"les suivants : "
+
+#: ../../source/using_api/oauth2.rst:61 ../../source/using_api/oauth2.rst:102
+#: ../../source/using_api/oauth2.rst:210
+msgid ""
+"**client_id**: The client ID you were given when you registered your "
+"application."
+msgstr ""
+"**client_id** :  l'ID client fournie lors de l'enregistrement de votre "
+"application."
+
+#: ../../source/using_api/oauth2.rst:62
+msgid ""
+"**redirect_uri**: The redirect URI you provided when you registered your "
+"application."
+msgstr ""
+"**redirect_uri** : l'URI de redirection fournie lorsque vous avez enregistré"
+" votre application."
+
+#: ../../source/using_api/oauth2.rst:63
+msgid ""
+"**response_type**: The response type you provided when you registered your "
+"application. This should be set to \"code\""
+msgstr ""
+"**response_type**: le type de réponse que vous avez fourni lors de "
+"l'enregistrement de votre application. Ce paramètre devrait être à \"code\""
+
+#: ../../source/using_api/oauth2.rst:64
+msgid ""
+"**scopes** *(optional)*: A list of requested scopes, space-separated "
+"(currently only \"all\" is supported)"
+msgstr ""
+"**scopes** *(optionnel)* : une liste des scopes demandés, séparés par des "
+"espaces. (Actuellement seul \"all\" est supporté)"
+
+#: ../../source/using_api/oauth2.rst:65 ../../source/using_api/oauth2.rst:109
+#: ../../source/using_api/oauth2.rst:216
+msgid "**state** *(optional)*: A random string."
+msgstr ""
+"**state** *(optionnel)* : une chaîne de caractères aléatoires, utilisée pour"
+" vérification de la provenance des requêtes."
+
+#: ../../source/using_api/oauth2.rst:67
+msgid "Example (line breaks added for legibility):"
+msgstr "Exemple (sauts à la ligne ajoutés pour faciliter la lecture)"
+
+#: ../../source/using_api/oauth2.rst:78
+msgid ""
+"Please note that while the state parameter is not mandatory, we encourage "
+"you to provide one and check that it was given back you you when you receive"
+" your authorization grant, for security reasons."
+msgstr ""
+"Même si le paramètre \"state\" n'est pas obligatoire, nous vous recommandons"
+" d'en ajouter un et de vérifier qu'il vous a été rendu lors de la réception "
+"de l'autorisation, ceci pour des raisons de sécurité"
+
+#: ../../source/using_api/oauth2.rst:81
+msgid "Your authorization grant will have these values:"
+msgstr "Votre autorisation aura les valeurs suivantes : "
+
+#: ../../source/using_api/oauth2.rst:83
+msgid "**code**: the 30-characters-long authorization code"
+msgstr "**code** : le code d'autorisation de 30 caractères"
+
+#: ../../source/using_api/oauth2.rst:84 ../../source/using_api/oauth2.rst:144
+msgid "**state**: The random string you provided, that you can now check."
+msgstr ""
+"**state** : la chaîne au hasard que vous aviez fournie, que vous pouvez "
+"maintenant vérifier."
+
+#: ../../source/using_api/oauth2.rst:86 ../../source/using_api/oauth2.rst:111
+#: ../../source/using_api/oauth2.rst:149 ../../source/using_api/oauth2.rst:180
+#: ../../source/using_api/oauth2.rst:218
+msgid "Example:"
+msgstr "Exemple : "
+
+#: ../../source/using_api/oauth2.rst:93
+msgid ""
+"Now that you have an authorization grant, it is time to convert it into a "
+"bearer token. Please note that your authorization grant is only valid for an"
+" hour."
+msgstr ""
+"Maintenant que vous avez une autorisation, il est temps de la convertir en "
+"\"bearer token\". Votre autorisation ne sera valide que pour une heure. "
+
+#: ../../source/using_api/oauth2.rst:97
+msgid "Converting an authorization grant to a bearer token"
+msgstr "Convertir une autorisation en \"bearer token\""
+
+#: ../../source/using_api/oauth2.rst:99
+msgid ""
+"To receive your bearer token, you will need to convert your previously "
+"obtained authorization grant. To do so, you will need to send a POST request"
+" to `/oauth2/token/` with the following parameters:"
+msgstr ""
+"Pour recevoir votre \"bearer token\" vous aurez besoin de convertir "
+"l'autorisation reçue précédemment. Pour cela, vous aurez besoin d'envoyer "
+"une requête POST à `/oauth2/token/` avec les paramètres suivants : "
+
+#: ../../source/using_api/oauth2.rst:103 ../../source/using_api/oauth2.rst:211
+msgid ""
+"**client_secret**: The client secret you were given when you registered your"
+" application."
+msgstr ""
+"**client_secret** : le mot de passe qui vous a été donné lors de "
+"l'enregistrement de votre application."
+
+#: ../../source/using_api/oauth2.rst:104
+msgid ""
+"**grant_type**: The type of the authorization grant you were awarded. This "
+"should be set to \"authorization_code\"."
+msgstr ""
+"**grant_type** : le type d'autorisation qui vous a été donné. Ceci devrait "
+"être défini à \"authorization_code\"."
+
+#: ../../source/using_api/oauth2.rst:105
+msgid ""
+"**code**: The 30-characters-long authorization code that was part of your "
+"authorization grant."
+msgstr ""
+"**code**: le code d'autorisation de 30 caractères donné lors de votre "
+"autorisation."
+
+#: ../../source/using_api/oauth2.rst:106
+msgid ""
+"**scopes**: The list of scopes you require access to. Please note that the "
+"scopes should all be within the scopes that your authorization grant gives "
+"you access to."
+msgstr ""
+"**scopes**: la liste des scopes auxquels vous voulez accéder. Les scopes "
+"doivent être contenus dans le périmètre des scopes permis par votre "
+"autorisation. "
+
+#: ../../source/using_api/oauth2.rst:108
+msgid ""
+"**redirect_uri**: The redirect URI you provided when registering your "
+"application."
+msgstr ""
+"**redirect_uri** : l'URI de redirection fournie lorsque vous avez enregistré"
+" votre application."
+
+#: ../../source/using_api/oauth2.rst:125
+msgid ""
+"Alternatively, you can pass your client ID and client secret through the "
+"Authorization header"
+msgstr ""
+"Vous pouvez également décider de passer votre ID client et votre clé secrète"
+"  via l'en-tête de requête \"Authorization\"."
+
+#: ../../source/using_api/oauth2.rst:127
+msgid "example:"
+msgstr "exemple : "
+
+#: ../../source/using_api/oauth2.rst:139
+msgid ""
+"The response to this request will be the JSON representation of your bearer "
+"token, which contains the following values:"
+msgstr ""
+"La réponse à cette requête sera une représentation JSON de votre \"bearer "
+"token\" qui contient les valeurs suivantes : "
+
+#: ../../source/using_api/oauth2.rst:141
+msgid ""
+"**access_token**: the token that will authorize you to access the user's "
+"data."
+msgstr ""
+"**access_token** : le jeton qui vous permettra d'accéder aux données des "
+"utilistateurs. "
+
+#: ../../source/using_api/oauth2.rst:142
+msgid ""
+"**expires_in**: the amount of time in seconds after which the bearer token "
+"will be made invalid."
+msgstr ""
+"**expires_in**: le temps en secondes après lequel le \"bearer token\" sera "
+"invalide. "
+
+#: ../../source/using_api/oauth2.rst:143
+msgid "**token_type**: the type of the token. It will always be \"Bearer\""
+msgstr "**token_type** : le type du token. Ce paramètre sera toujours \"Bearer\""
+
+#: ../../source/using_api/oauth2.rst:145
+msgid ""
+"**scope**: the list of scopes this authorization code allows you to claim"
+msgstr ""
+"**scope** : la liste des scopes qu'il est possible de récupérer avec cette "
+"autorisation"
+
+#: ../../source/using_api/oauth2.rst:146
+msgid ""
+"**refresh_token**: the token that will allow you to obtain a new bearer "
+"token once this one expires"
+msgstr ""
+"**refresh_token** : le jeton qui vous permettra d'obtenir un nouveau "
+"\"bearer token\" lorsque celui-ci expire"
+
+#: ../../source/using_api/oauth2.rst:165
+msgid ""
+"Even though there is an expiration time on the bearer token, the refresh "
+"token contained in it stays valid until it is used once, which means that "
+"you can request a new bearer token at any time after the expiry of your "
+"current token."
+msgstr ""
+"Même s'il y a un temps d'expiration sur le \"bearer token\", le \"refresh "
+"token\" reste valide jusqu'à sa première utilisation, ce qui signifie que "
+"vous pouvez demander un nouveau \"bearer token\" à n'importe quel moment "
+"après l'expiration du jeton actuel. "
+
+#: ../../source/using_api/oauth2.rst:168
+msgid "You are now all set to use your newly awarded bearer token!"
+msgstr "Vous êtes maintenant prêt à utiliser votre \"bearer token\" ! "
+
+#: ../../source/using_api/oauth2.rst:171
+msgid "Using the bearer token"
+msgstr "Utiliser le \"bearer token\" "
+
+#: ../../source/using_api/oauth2.rst:173
+msgid ""
+"Once you have your bearer token, you can start using it to request data from"
+" our APIs. You can display your token in one of three ways:"
+msgstr ""
+"Maintenant que vous avez votre \"bearer token\", vous pouvez commencer à "
+"l'utiliser pour faire des requêtes d'API. Vous pouvez afficher votre jeton "
+"de trois manières : "
+
+#: ../../source/using_api/oauth2.rst:176
+msgid "In the API endpoint URL of your request, as a REST parameter"
+msgstr "Dans l'URL du point d'accès de votre API, comme paramètre REST"
+
+#: ../../source/using_api/oauth2.rst:177
+msgid "In the Authorization header of your request"
+msgstr "Dans l'entête d'autorisation de votre requête"
+
+#: ../../source/using_api/oauth2.rst:178
+msgid "In the body of your request"
+msgstr "Dans le corps de votre requête"
+
+#: ../../source/using_api/oauth2.rst:186 ../../source/using_api/oauth2.rst:193
+msgid "or"
+msgstr "ou"
+
+#: ../../source/using_api/oauth2.rst:201
+msgid ""
+"After using your token for a bit, it will expire, and to continue accessing "
+"the data that you need, you will have to refresh it."
+msgstr ""
+"Après avoir utilisé votre jeton pendant un moment, il va expirer, et pour "
+"continuer à avoir accès aux données, vous aurez besoin de le rafraîchir. "
+
+#: ../../source/using_api/oauth2.rst:205
+msgid "Refreshing a bearer token"
+msgstr "Rafraîchir un \"bearer token\""
+
+#: ../../source/using_api/oauth2.rst:207
+msgid ""
+"To refresh the bearer token, you must send a request to the "
+"``/oauth2/token/`` endpoint, with the following REST parameters:"
+msgstr ""
+"Pour rafraîchir votre \"bearer token\", vous devez envoyer une requête au "
+"point d'entrée ``/oauth2/token/``, avec les paramètres REST suivants : "
+
+#: ../../source/using_api/oauth2.rst:212
+msgid ""
+"**grant_type**: The type of the authorization grant you were awarded. This "
+"should be set to \"refresh_token\"."
+msgstr ""
+"**grant_type** : le type d'autorisation qui vous été donnée. La valeur "
+"devrait être \"refresh_token\"."
+
+#: ../../source/using_api/oauth2.rst:213
+msgid ""
+"**scopes**: The list of scopes you require access to. Please note that this "
+"list must match the one you provided when you converted your grant request "
+"to a bearer token."
+msgstr ""
+"**scopes**: la liste des scopes auxquels vous voulez accéder. Les scopes "
+"doivent correspondre à ceux fournis lorsque vous avez converti votre demande"
+" en \"bearer token\" ."
+
+#: ../../source/using_api/oauth2.rst:215
+msgid ""
+"**refresh_token**: The refresh token included in your last bearer token."
+msgstr ""
+"**refresh_token** : le \"refresh token\" contenu dans votre dernier \"bearer"
+" token\" "
+
+#: ../../source/using_api/oauth2.rst:232
+msgid ""
+"The response to this request will provide you with a new bearer token in the"
+" same way as when you obtained your first token from converting your "
+"authorization grant."
+msgstr ""
+"La réponse à cette requête vous fournira un nouveau \"bearer token\" de la "
+"même manière que lorsque vous avez obtenu votre premier jeton à partir de "
+"votre demande d'autorisation. "
