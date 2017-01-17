@@ -1,7 +1,8 @@
 ShapeFile connector
 ===================
 
-The Shapefile connector extracts data from a ZIP archive containing the following file:
+The Shapefile connector extracts data from a ZIP archive containing the following files:
+
 * ``.shp`` shape format; the feature geometry itself
 * ``.dbf`` attribute format; columnar attributes for each shape
 * ``.prj`` projection format; the coordinate system and projection information, a plain text file describing the projection using well-known text format

@@ -1,25 +1,22 @@
-Uploading data
-==============
+Loading data
+============
 
-OpenDataSoft provides different way to add data to a dataset.
-Each method solves a specific use case, you may want to upload a static referential, stay synchronized with a remote service, extract data from a geographical system, from an API...
+OpenDataSoft provides different ways to add data to a dataset.
+Each method solves a specific use case: you may want to upload a static referential, stay synchronized with a remote service, extract data from a geographical information system, from an API...
 
 
 Methods
 -------
 
-.. note::
-    The size limit for a file is 240Mo. If your file is to big you can try to compress it or contact us if you do not succeed in sending your file.
-
 
 .. ifconfig:: language == 'en'
 
-    .. image:: uploading_data__source--en.png
+    .. image:: loading_data__source--en.png
         :alt: Source upload
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: uploading_data__source--en.png
+    .. image:: loading_data__source--en.png
         :alt: Upload de source
 
 Static file
@@ -27,30 +24,38 @@ Static file
 
 You can attach a static file to your dataset by uploading a file from your computer via the *Upload a file* button.
 
+.. note::
+    The size limit for a file is 240Mo. If your file is too big you can compress it before uploading it on the platform.
+
 Pasted data
 ~~~~~~~~~~~
 
-The *Paste data* box can be used to directly paste data (in a CSV format) without passing by a file. It is useful for tests or the creating of a data referential.
+The *Paste data* box can be used to directly paste data (in a CSV format). It is useful for quick tests.
 
 Remote file (http, https, ftp and ftps)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 By writing an url in the *Enter an URL* box, you can import files stored on a remote server, we support the following protocols:
+
 * http
 * ftp
 
 And their secured versions:
+
 * https
 * ftps
 
 *http* links to a single file, for example http://example.org/mydata.csv
+
 *ftp* links to a single file or to a directory. For example ftp://example.org/my_dir/mydata.csv for a single file or ftp://example.org/my_dir/ for a directory.
-In case of a directory, the new and modified files are downloaded every time the dataset is published.
-Deleted files are not deleted from our filesystem, you can contact the support to delete them.
-See *record_id* documentation for more information about the incremental publish.
+
+Using a directory is often the prefered solution to automate incremental updates between a customer's information system and the OpenDataSoft platform. All the files in the directory need to have the same format and schema (for instance, CSV files with the same column titles). Whenever the dataset is published, new and updated files are fetched from the remote location and processed. Thanks to OpenDataSoft's native deduplication strategy, similar records are not processed twice (see :doc:`Special fields documentation</sourcing_and_processing_data/dataset_schema>`).
 
 .. note::
-    We do not support the sftp protocol which is completely different from ftp and ftps.
+    When synchronizing from a remote FTP location, OpenDataSoft keeps a persistent cache and does not automatically prune files missing from the remote directory. Please contact OpenDataSoft's support if you need some cleanup to be performed.
+
+.. note::
+    We do not support the sftp protocol which is completely different from the ftps protocol.
 
 API - Specific connector
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -75,13 +80,21 @@ possible to develop performant and secured connectors supporting incremental dat
 
 .. ifconfig:: language == 'en'
 
-    .. image:: uploading_data__options--en.png
+    .. figure:: loading_data__options--en.png
         :alt: Connector options
+        :width: 600px
+        :align: center
+
+        Available options when configuring a connector
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: uploading_data__options--en.png
+    .. figure:: loading_data__options--en.png
         :alt: Options du connecteur
+        :width: 600px
+        :align: center
+
+        Options disponibles pour la configuration d'un connecteur
 
 Supported formats
 -----------------
@@ -167,18 +180,17 @@ File formats support can be extended to match specific requirements (for instanc
 non standard flat file format). Contact your local support team if you need more information on file formats support
 extension.
 
-OpenDataSoft supports compressed files (zip, bz2, tar, gr, gzip, tar.gr, tgz, tar.bz2).
+OpenDataSoft supports compressed files (zip, bz2, tar, gz, gzip, tar.gr, tgz, tar.bz2).
 
 Files (images) with metadata
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To upload files (and images) on the platform, you have to upload all files within a ZIP archive. It must contain the following files:
+To upload files (and images) on the platform, you have to build first a ZIP archive. This archive shall contain the following files:
 
 - a CSV file which lists the files (images) and metadata
 - the files (images) at the same level (no subdirectory)
 
-The CSV file must contains a column with all the files (images) name, others columns will be extract as metadata.
-For example:
+The CSV file must contains a column with file (image) names, others columns will be considered as additional fields. For instance:
 
 .. list-table::
    :header-rows: 1
@@ -203,4 +215,4 @@ The CSV files and the images must be located at the root of the archive.
 
 .. note::
 
-    You can find a example of dataset images on `discovery <https://discovery.opendatasoft.com>`_. The source can be download.
+    You can find a example of dataset images on `discovery <https://discovery.opendatasoft.com>`_. The source can be downloaded.

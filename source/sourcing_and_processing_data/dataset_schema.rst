@@ -101,12 +101,11 @@ You then have access to a wide range of options depending on the field type.
         complement the table view and is displayed next to the field's value.
 
 Special fields
-==============
+--------------
 
 
 Record_id
----------
-
+~~~~~~~~~
 
 We identify a record with an unique field named record_id.
 During the processing, if two records have the same record_id, the first one is replaced by the second.
@@ -130,7 +129,7 @@ The record_id is compute at the end with the following rules:
 
 
 Record_timestamp
-----------------
+~~~~~~~~~~~~~~~~
 
 A record_timestamp field is generated for all records, its is a timestamp giving information about the creation date of the record.
 The value depends on the extractor type.

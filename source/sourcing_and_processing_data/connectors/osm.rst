@@ -1,7 +1,7 @@
 OSM connector
 =============
 
-The OpenStreetMap connector extracts data from OSM archives. The export should be compress (``zip`` or ``bz2``).
+The OpenStreetMap connector extracts data from OSM archives. The export can be compressed.
 
 .. note::
 
