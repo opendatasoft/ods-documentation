@@ -228,6 +228,7 @@ It works similarly as formulas in a spreadsheet software, except instead of refe
 
   .. figure:: processing__expression-sum-en.png
     :alt: Expression Processor basic sum
+    :align: center
 
     Example of a basic sum with the Expression processor. The "Result" column contains the result of the sum (this column was not in the data source).
 
@@ -235,6 +236,7 @@ It works similarly as formulas in a spreadsheet software, except instead of refe
 
   .. figure:: processing__expression-sum-fr.png
     :alt: Expression Processor basic sum
+    :align: center
 
     Example of a basic sum with the Expression processor. The "Result" column contains the result of the sum (this column was not in the data source).
 
@@ -244,6 +246,8 @@ Be careful to use the **technical name** instead of the column label in the expr
 
   .. figure:: processing__expression-technicalname-en.png
     :alt: Expression Processor technical name
+    :width: 400px
+    :align: center
 
     Technical name of a column
 
@@ -251,6 +255,7 @@ Be careful to use the **technical name** instead of the column label in the expr
 
   .. figure:: processing__expression-technicalname-fr.png
     :alt: Expression Processor technical name
+    :align: center
 
     Technical name of a column
 
@@ -263,6 +268,7 @@ Here are some common use cases :
 
   .. figure:: processing__expression-function-en.png
     :alt: Expression Processor function
+    :align: center
 
     Example of a mathematical function using the Expression processor
 
@@ -270,6 +276,7 @@ Here are some common use cases :
 
   .. figure:: processing__expression-function-fr.png
     :alt: Expression Processor function
+    :align: center
 
     Example of a mathematical function using the Expression processor
 
@@ -279,6 +286,7 @@ Here are some common use cases :
 
   .. figure:: processing__expression-condition-en.png
     :alt: Expression Processor conditional expression
+    :align: center
 
     Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression if true : value if false``
 
@@ -286,6 +294,7 @@ Here are some common use cases :
 
   .. figure:: processing__expression-condition-fr.png
     :alt: Expression Processor conditional expression
+    :align: center
 
     Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression if true : value if false``
 
@@ -451,6 +460,156 @@ It takes the following parameters:
     * Field
     * yes
 
+Join datasets
+~~~~~~~~~~~~~
+
+This processor allows to you to join two datasets together the same way a classical database join would.
+
+Let's take an example. You have two datasets:
+
+**First dataset**: The list of taxi stations in Paris.
+
+.. list-table::
+   :header-rows: 1
+
+   * * station_id
+     * station_name
+     * station_address
+   * * 1
+     * Tour Eiffel
+     * 69 quai Branly, 75007 Paris
+   * * 2
+     * Rennes - Montparnasse
+     * 1 place du dix huit Juin 1940, 75006 Paris
+
+The name of this dataset is **paris_taxis_stations**.
+
+**Second dataset**: The number of taxis waiting per station in Paris.
+
+.. list-table::
+   :header-rows: 1
+
+   * * station_id
+     * number
+   * * 1
+     * 10
+   * * 2
+     * 15
+
+The Join processor allows you to enrich the second dataset with colums coming from the first dataset.
+
+**Resulting dataset after a Join**
+
+.. list-table::
+   :header-rows: 1
+
+   * * station_id
+     * number
+     * station_name
+     * station_address
+   * * 1
+     * 10
+     * Tour Eiffel
+     * 69 quai Branly, 75007 Paris
+   * * 2
+     * 15
+     * Rennes - Montparnasse
+     * 1 place du dix huit Juin 1940, 75006 Paris
+
+It takes the following parameters:
+
+* **Dataset**
+
+   The dataset used for the join; you can select it from your own datasets,
+   or from OpenDataSoft's network of datasets.
+
+* **Local Key**
+
+   The local field that will be used to identify the corresponding records in the remote dataset. More than one key can
+   be specified.
+
+* **Remote Key**
+
+   The remote field corresponding to the local key. This can be a list.
+
+* **Output Fields**
+
+   The list of fields to retrieve.
+
+* **Retrieve All Fields**
+
+   Set to retrieve all the fields of the remote dataset.
+
+* **Case Sensitive**
+
+* **One line**
+
+   In some specific cases, the remote dataset may contain more than one row matching the local key. In which case, you
+   may want to either collapse duplicates (that is, generate a single row which will contain multi-valued fields) or
+   not. If this parameter is set, you can specify the character to use to separate values in the generated field in
+   the **Separator** parameter.
+
+Let's take an example and assume that the first dataset contains two rows for the first station:
+
+.. list-table::
+   :header-rows: 1
+
+   * * station_id
+     * station_name
+     * station_address
+   * * 1
+     * Tour Eiffel
+     * 69 quai Branly, 75007 Paris
+   * * 1
+     * Quai Branly
+     * 69 quai Branly, 75007 Paris
+   * * 2
+     * Rennes - Montparnasse
+     * 1 place du dix huit Juin 1940, 75006 Paris
+
+If **One line** is set (with **Separator** set to `|`), the Join will result in:
+
+.. list-table::
+   :header-rows: 1
+
+   * * station_id
+     * number
+     * station_name
+     * station_address
+   * * 1
+     * 10
+     * Tour Eiffel&#124;Quai Branly
+     * 69 quai Branly, 75007 Paris&#124;69 quai Branly, 75007 Paris
+   * * 2
+     * 15
+     * Rennes - Montparnasse
+     * 1 place du dix huit Juin 1940, 75006 Paris
+
+If **One line** is not set, the Join will result in:
+
+.. list-table::
+   :header-rows: 1
+
+   * * station_id
+     * number
+     * station_name
+     * station_address
+   * * 1
+     * 10
+     * Tour Eiffel
+     * 69 quai Branly, 75007 Paris
+   * * 1
+     * 10
+     * Quai Branly
+     * 69 quai Branly, 75007 Paris
+   * * 2
+     * 15
+     * Rennes - Montparnasse
+     * 1 place du dix huit Juin 1940, 75006 Paris
+
+This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will
+activate it for you.
+
 Date processors
 ---------------
 
@@ -467,11 +626,13 @@ The Date Normalization processor can then be used to correct this problem, by si
 
   .. figure:: processing__date_norm-1--en.png
     :alt: Date normalization processor 1/2
+    :align: center
 
     By default, 12/04/2016 and 03/10/2016 are interpreted respectively as December 4 2016 and March 10 2016
 
   .. figure:: processing__date_norm-2--en.png
     :alt: Date normalization processor 2/2
+    :align: center
 
     With the Date normalization processor and the pattern %d/%m/%Y (DD/MM/YYYY), the dates are interpreted as April 12 2016 and October 3 2016
 
@@ -479,11 +640,13 @@ The Date Normalization processor can then be used to correct this problem, by si
 
   .. figure:: processing__date_norm-1--fr.png
     :alt: Date normalization processor 1/2
+    :align: center
 
     By default, 12/04/2016 and 03/10/2016 are interpreted respectively as December 4 2016 and March 10 2016
 
   .. figure:: processing__date_norm-2--fr.png
     :alt: Date normalization processor 2/2
+    :align: center
 
     With the Date normalization processor and the pattern %d/%m/%Y (DD/MM/YYYY), the dates are interpreted as April 12 2016 and October 3 2016
 
@@ -1306,152 +1469,3 @@ Example of ijson rules to extract from the following JSON array field:
 
 This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will activate it for you.
 
-Joining different datasets
---------------------------
-
-This processor allows to you to join two datasets together the same way a classical database join would.
-
-Let's take an example. You have two datasets:
-
-**First dataset**: The list of taxi stations in Paris.
-
-.. list-table::
-   :header-rows: 1
-
-   * * station_id
-     * station_name
-     * station_address
-   * * 1
-     * Tour Eiffel
-     * 69 quai Branly, 75007 Paris
-   * * 2
-     * Rennes - Montparnasse
-     * 1 place du dix huit Juin 1940, 75006 Paris
-
-The name of this dataset is **paris_taxis_stations**.
-
-**Second dataset**: The number of taxis waiting per station in Paris.
-
-.. list-table::
-   :header-rows: 1
-
-   * * station_id
-     * number
-   * * 1
-     * 10
-   * * 2
-     * 15
-
-The Join processor allows you to enrich the second dataset with colums coming from the first dataset.
-
-**Resulting dataset after a Join**
-
-.. list-table::
-   :header-rows: 1
-
-   * * station_id
-     * number
-     * station_name
-     * station_address
-   * * 1
-     * 10
-     * Tour Eiffel
-     * 69 quai Branly, 75007 Paris
-   * * 2
-     * 15
-     * Rennes - Montparnasse
-     * 1 place du dix huit Juin 1940, 75006 Paris
-
-It takes the following parameters:
-
-* **Dataset**
-
-   The dataset used for the join; you can select it from your own datasets,
-   or from OpenDataSoft's network of datasets.
-
-* **Local Key**
-
-   The local field that will be used to identify the corresponding records in the remote dataset. More than one key can
-   be specified.
-
-* **Remote Key**
-
-   The remote field corresponding to the local key. This can be a list.
-
-* **Output Fields**
-
-   The list of fields to retrieve.
-
-* **Retrieve All Fields**
-
-   Set to retrieve all the fields of the remote dataset.
-
-* **Case Sensitive**
-
-* **One line**
-
-   In some specific cases, the remote dataset may contain more than one row matching the local key. In which case, you
-   may want to either collapse duplicates (that is, generate a single row which will contain multi-valued fields) or
-   not. If this parameter is set, you can specify the character to use to separate values in the generated field in
-   the **Separator** parameter.
-
-Let's take an example and assume that the first dataset contains two rows for the first station:
-
-.. list-table::
-   :header-rows: 1
-
-   * * station_id
-     * station_name
-     * station_address
-   * * 1
-     * Tour Eiffel
-     * 69 quai Branly, 75007 Paris
-   * * 1
-     * Quai Branly
-     * 69 quai Branly, 75007 Paris
-   * * 2
-     * Rennes - Montparnasse
-     * 1 place du dix huit Juin 1940, 75006 Paris
-
-If **One line** is set (with **Separator** set to `|`), the Join will result in:
-
-.. list-table::
-   :header-rows: 1
-
-   * * station_id
-     * number
-     * station_name
-     * station_address
-   * * 1
-     * 10
-     * Tour Eiffel&#124;Quai Branly
-     * 69 quai Branly, 75007 Paris&#124;69 quai Branly, 75007 Paris
-   * * 2
-     * 15
-     * Rennes - Montparnasse
-     * 1 place du dix huit Juin 1940, 75006 Paris
-
-If **One line** is not set, the Join will result in:
-
-.. list-table::
-   :header-rows: 1
-
-   * * station_id
-     * number
-     * station_name
-     * station_address
-   * * 1
-     * 10
-     * Tour Eiffel
-     * 69 quai Branly, 75007 Paris
-   * * 1
-     * 10
-     * Quai Branly
-     * 69 quai Branly, 75007 Paris
-   * * 2
-     * 15
-     * Rennes - Montparnasse
-     * 1 place du dix huit Juin 1940, 75006 Paris
-
-This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will
-activate it for you.
