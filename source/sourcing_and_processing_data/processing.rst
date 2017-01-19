@@ -1316,6 +1316,11 @@ It takes the following parameters:
     * yes
     *
 
+
+
+Technical processors
+--------------------
+
 Normalize Unicode values
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1338,6 +1343,7 @@ It takes the following parameters:
     * Checked: all the record's fields will be normalized
     * Boolean
     * no
+
 
 Extract from JSON
 ~~~~~~~~~~~~~~~~~
@@ -1469,3 +1475,102 @@ Example of ijson rules to extract from the following JSON array field:
 
 This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will activate it for you.
 
+
+Extract bit mask
+~~~~~~~~~~~~~~~~
+
+This processor takes an hexadecimal value and extracts the binary values to convert them into integer, float or boolean values. 
+
+
+Some sensors send information in hexadecimal values (a series of letters and numbers A-F 0-9 e.g. '2C09').
+
+Sometimes, in order to extract information you need to extract the binary value (bits, a series of '0' and '1' e.g. '00010110') and convert them.
+
+
+The processor will process the hexadecimal, extract bits and convert it into integer, float or boolean value. 
+It either creates a new field or update an existing one with the values converted. 
+
+The processor works with masks, it expects
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Example
+  * * start offset
+    * The starting offset corresponding of the position of the first bit
+    * Integer
+    * 0, 8, 16 ...
+  * * stop offset
+    * The ending offset corresponding of the position of the last bit
+    * Integer
+    * 7, 15, 31 ...
+  * * conversion format
+    * The wanted format to output and convert the data
+    * List
+    * int, float, bool
+
+
+For example, let's assume that you have a temperature sensor that sends and hexadecimal value.
+
+  .. code-block:: json
+    
+    hex value : 2C09  
+
+This hexadecimal value contains: 
+- a decimal value encoded on 2 bytes 
+- the sensor status on a bit. 
+
+  .. code-block:: json
+    
+    hex value : 2C09          <- information sent by the sensor in hexadecimal
+    bin value : 00010110 00000100 1   <- same information in binary 
+
+The first byte '00010110' is the integer part of the temperature, 
+the second byte '00000100' is the floating part of the temperature, 
+the last bit '1' is the boolean status, working or not.
+
+You will need to concatenante the integer and the floating part (after the comma) in order to get the temperature value.
+
+Therefore, the processing pipeline will contains 3 **Extract bit mask** processors, and 1 **Expression** processor to concatenate:
+
+* one **Extract bit mask** from 0 to 7 to convert into integer -> int_temperature
+* one **Extract bit mask** from 8 to 15 to convert into integer -> decimal_temperature
+* one **Extract bit mask** from 15 to 16 to convert into boolean -> status
+* one **Expression** to concatenate first from 8 to 16 to convert into integer
+
+**Extract bit mask 1**
+
+  .. code-block:: json
+    
+    00010110 -> 22
+
+**Extract bit mask 2**
+
+  .. code-block:: json
+
+    00000100 -> 4
+
+**Extract bit mask 3**
+
+  .. code-block:: json
+
+      1 -> OK 
+        
+**Expression** 
+
+  .. code-block:: json
+
+    Expression : integer_temp & "." & decimal_temp
+
+**Temperature** 
+
+  .. code-block:: json
+
+    Temperature : 22,4 °C
+    Sensor : OK
+
+This processor is not yet available by default. 
+Please contact OpenDataSoft support team if you plan to use it, we will activate it for you.
