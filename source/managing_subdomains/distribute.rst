@@ -124,6 +124,15 @@ If you have several subdomains, you may want to distribute pages and datasets sl
 to distribute a homepage containing "Welcome on [something]", or maybe you have a country-wide dataset but you want to distribute
 parts of it to regional subdomains.
 
+.. ifconfig:: language == 'en'
+
+    .. figure:: subdomains__distribution-schema--en.png
+        :alt: Distributing data based on a subdomain parameter
+        :width: 400px
+        :align: center
+
+        Distributing data based on a subdomain parameter
+
 As an administrator managing your subdomains, you can define "distribution parameters"; and then you can fill these parameters for each
 subdomain. These parameters will then be available to change the distributed content depending on the subdomain.
 
