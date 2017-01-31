@@ -133,6 +133,15 @@ parts of it to regional subdomains.
 
         Distributing data based on a subdomain parameter
 
+.. ifconfig:: language == 'fr'
+
+    .. figure:: subdomains__distribution-schema--fr.png
+        :alt: Distributing data based on a subdomain parameter
+        :width: 400px
+        :align: center
+
+        Distributing data based on a subdomain parameter
+
 As an administrator managing your subdomains, you can define "distribution parameters"; and then you can fill these parameters for each
 subdomain. These parameters will then be available to change the distributed content depending on the subdomain.
 
