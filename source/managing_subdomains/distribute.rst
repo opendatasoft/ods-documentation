@@ -39,7 +39,7 @@ As soon as you save, the dataset will be distributed and available on the subdom
 
 .. note::
     From the subdomain, a distributed dataset acts just like a federated dataset: you can't edit its data (e.g. you can't re-order fields, or add processors), but you
-    can manage the security settings, set the dataset as restricted, filter the data for specific users or groups. The dataset may also be deleted from the subdomain.
+    can override metadata, manage the security settings, set the dataset as restricted, filter the data for specific users or groups. The dataset may also be deleted from the subdomain.
 
 At any time, you can cancel the distribution using the little icon on the right in the distributed datasets list. This will remove the dataset from the subdomain's catalog,
 but it won't delete the dataset from the parent domain.
@@ -94,6 +94,106 @@ page on the parent domain.
 
 Distributing content to multiple subdomains
 -------------------------------------------
+From the subdomains list, you can select two or more subdomains, and click on the *Distribute* button; this will bring you
+to a dedicated content distribution page for these subdomains.
+
+.. ifconfig:: language == 'en'
+
+    .. figure:: subdomains__bulk-selection--en.png
+        :alt: Selecting subdomains for distribution
+        :width: 400px
+        :align: center
+
+        Selecting subdomains for distribution 
+
+This new page will remind you of the impacted subdomains, and will let you select pages and datasets in a interface similar to
+the one for individual subdomains.
+
+.. ifconfig:: language == 'en'
+
+    .. figure:: subdomains__bulk-content--en.png
+        :alt: Selecting content
+        :width: 400px
+        :align: center
+
+        Selecting content
 
 Organize your distribution using parameters
 -------------------------------------------
+If you have several subdomains, you may want to distribute pages and datasets slightly different for each: for example, maybe you want
+to distribute a homepage containing "Welcome on [something]", or maybe you have a country-wide dataset but you want to distribute
+parts of it to regional subdomains.
+
+As an administrator managing your subdomains, you can define "distribution parameters"; and then you can fill these parameters for each
+subdomain. These parameters will then be available to change the distributed content depending on the subdomain.
+
+For example, we'd like to prepare a homepage and a dataset for a few city portals. We want the homepage to contain the city
+name, and the dataset to be filtered on the ZIP Code. 
+
+First, we'll add two parameters for all our subdomains. This is managed from the subdomains' *Settings* page.
+
+.. ifconfig:: language == 'en'
+
+    .. figure:: subdomains__settings--en.png
+        :alt: Subdomains' settings
+        :width: 400px
+        :align: center
+
+        Subdomains' settings
+
+By clicking *Add a parameter*, we'll add two parameters, "zipcode" and "cityname".
+
+.. ifconfig:: language == 'en'
+
+    .. figure:: subdomains__add-parameter--en.png
+        :alt: Add a distribution parameter
+        :width: 400px
+        :align: center
+
+        Add a distribution parameter
+
+.. ifconfig:: language == 'en'
+
+    .. figure:: subdomains__parameters-list--en.png
+        :alt: Distribution parameters
+        :width: 400px
+        :align: center
+
+        Distribution parameters
+
+Now, we can fill these parameters for each of my subdomains, by clicking on the subdomain's name in the subdomains list to get to the
+subdomain configuration page.
+
+Then, we can create the content I want to distribute. First, we can do a homepage containing the city's name. In the page editor,
+we can use :code:`{domain.cityname}` as a placeholder for the city name filled for that subdomain.
+
+Now, we can distribute my homepage and my dataset, using for example the multiple domain distribution page.
+
+To distribute the homepage, we just add it to the list as usual.
+
+To distribute the dataset, we add it to the list, and then click *Match parameters*: this allows you to configure a filter on the
+data depending on one of the distribution parameters. In our case, our dataset has a :code:`zipcode` field, and we match it with
+the :code:`zipcode` parameter of our subdomains.
+
+.. ifconfig:: language == 'en'
+
+    .. figure:: subdomains__match-parameters--en.png
+        :alt: Matching parameters for a dataset
+        :width: 400px
+        :align: center
+
+        Matching parameters for a dataset
+
+Our content distribution is ready.
+
+.. ifconfig:: language == 'en'
+
+    .. figure:: subdomains__parametrized-distribution--en.png
+        :alt: Content distribution with parameters
+        :width: 400px
+        :align: center
+
+        Content distribution with parameters
+
+Now, we just have to *Save* it. Each of our subdomains now have a dedicated homepage that they can use, and the part of the dataset
+that matches their city!
