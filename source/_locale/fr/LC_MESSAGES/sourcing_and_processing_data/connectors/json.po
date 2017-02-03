@@ -1,0 +1,191 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-17 16:28+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: benrict <benoit.richter@opendatasoft.com>, 2017\n"
+"Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:2
+msgid "JSON connectors"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:4
+msgid ""
+"JSON is an open-standard format that uses human-readable text to transmit "
+"data objects consisting of key–value pairs. It is the most common data "
+"format to build web APIs."
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:6
+msgid ""
+"As JSON documents can have a lot of different forms, there are two JSON "
+"connectors you can choose to extract your data. If the connector did not "
+"manage to fully extract a document with a complex structure, you can use one"
+" of the platform's JSON processors to complete the extraction."
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:9
+msgid "JSON File"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:11
+msgid ""
+"This connector extracts a valid JSON document (array or object) into one "
+"dataset of several records."
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:13
+msgid ""
+"If the document is a JSON array, a record will be created for each object "
+"inside the array (the keys will be used as column names)."
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:14
+msgid ""
+"If the document is a JSON object, the parameter \"JSON root\" should contain"
+" a dot-separated path to the array inside your object. If not provided, the "
+"connector tries \"items\"."
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:16
+msgid ""
+"For each item inside the array, the connector can follow another path before"
+" extracting the records thanks to the parameter \"JSON object\"."
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:19
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:53
+msgid "Supported field types"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:21
+msgid "regular fields like decimal, bool, string"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:22
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:57
+msgid "JSON object: will be used as-is"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:25
+msgid "array:"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:24
+msgid "if the array contains JSON objects, it will be used as-is"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:25
+msgid ""
+"if it contains strings, a multivalued field will be created with all the "
+"strings separated by a semicolon (\";\")"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:28
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:60
+msgid "Configuration"
+msgstr "Configuration"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:33
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:65
+msgid "Name"
+msgstr "Nom"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:34
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:66
+msgid "Description"
+msgstr "Description"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:35
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:67
+msgid "Values"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:36
+msgid "JSON root"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:37
+msgid ""
+"Path to the json array on which the connector will iterate to get the "
+"records"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:38
+msgid "None if JSON array, \"items\" if JSON object"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:39
+msgid "JSON object"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:40
+msgid "Relative path of the json object you want to extract (from JSON root)"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:44
+msgid "JSON Line"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:46
+msgid ""
+"This connector expects a file in which each line is a one-line JSON "
+"documents. The whole file is not a valid JSON document but each line is."
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:50
+msgid "The connector supports two modes:"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:49
+msgid "One JSON array on each line (or one array altogether)"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:50
+msgid "One JSON object on each line"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:55
+msgid "regular fields like decimal, string"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:56
+msgid "array: will be used as-is"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:68
+msgid "First line number"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:69
+msgid "The connector will start processing the sheet at this line"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:70
+msgid "0"
+msgstr "0"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:71
+msgid "Headers"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:72
+msgid "Indicates first row contains field labels."
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:73
+msgid "Yes"
+msgstr ""

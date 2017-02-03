@@ -2,7 +2,7 @@ The dataset schema
 ==================
 
 
-As seen in a previous article, a dataset content can be seen as flat database table. That is:
+As seen in a previous article, a dataset content can be seen as a flat database table. That is:
 
 * A schema (the list of fields along with their types and possibily some annotations)
 * A set of records (rows or tuples) matching the schema
@@ -37,8 +37,7 @@ Fields have a type. The following types are available:
        with a **Concatenate Text** processor to form a valid geo point field.
    * * GeoShape
      * A valid geo shape expressed in `GeoJSON <http://geojson.org/geojson-spec.html>`_. For example :
-       { "type": "LineString", "coordinates": [ [100.0, 0.0], [101.0, 1.0] ] }.
-       We do not support feature collections, only
+       { "type": "LineString", "coordinates": [ [100.0, 0.0], [101.0, 1.0] ] }. Feature collections are not supported.
    * * Integer
      * Any valid integer value. If a floating point value is found, it is automatically cast to its integer part.
    * * Text
@@ -86,7 +85,7 @@ You then have access to a wide range of options depending on the field type.
     * **Hierarchical**
 
         This property is used in conjunction with facetting. By default, facets are processed as a single, raw textual
-        content. But sometimes, you may want to build hierarchical facets navigation. This option lets you choose the
+        content. But sometimes, you may want to build a hierarchical facets navigation. This option lets you choose the
         hierarchy path separator to be used.
 
 * Date and DateTime fields
@@ -101,22 +100,21 @@ You then have access to a wide range of options depending on the field type.
         complement the table view and is displayed next to the field's value.
 
 Special fields
-==============
+--------------
 
 
-Record_id
----------
+Record id
+~~~~~~~~~
 
+We identify a record with a unique built-in field named *record_id*.
+During the processing, if two records have the same *record_id*, the first one is replaced by the second.
 
-We identify a record with an unique field named record_id.
-During the processing, if two records have the same record_id, the first one is replaced by the second.
+The *record_id* is calculated at the end of the processing using the following principles:
 
-The record_id is compute at the end with the following rules:
-
-#. Filter the fields. Keep all the fields which are mark as 'ID' or all the fields if no field is mark as id.
+#. Filter the fields. Keep all the fields with the *ID* option or all the fields if no field has the *ID* option.
 #. Sort the fields values.
 #. Concat the sorted values.
-#. Apply a hash function (sha1) to the string
+#. Apply a hash function to the result
 
 .. ifconfig:: language == 'en'
 
@@ -129,9 +127,9 @@ The record_id is compute at the end with the following rules:
         :alt: Record id schema
 
 
-Record_timestamp
-----------------
+Record timestamp
+~~~~~~~~~~~~~~~~
 
-A record_timestamp field is generated for all records, its is a timestamp giving information about the creation date of the record.
+A *record_timestamp* field is generated for all records, it is a timestamp giving information about the creation date of the record.
 The value depends on the extractor type.
-For example on a csv file, the record_timestamp is a last modified date. On a realtime dataset, the record_timestamp is the date when the record arrived on the platform.
+For instance on a csv file, the *record_timestamp* is a last modified date. On a realtime dataset, the *record_timestamp* is the date when the record arrived on the platform.

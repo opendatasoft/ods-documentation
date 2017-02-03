@@ -17,11 +17,11 @@ Configuration
      * Description
      * Values
    * * Headers
-     * The first row contains the headers and will be used as field name
+     * Column titles will be used as field names.
      * ``true`` or ``false``
    * * First line number
-     * Skip a fix number of rows at the beginning of the file
+     * Skip a fix number of rows at the beginning of the file.
      * ``true`` or ``false``
    * * Sheet number
-     * The number of the sheet to work on. Can be a range with the ``[0-2]`` notation or a list of sheet separated by a ``,``
+     * The number of the sheet to work on. Can be a range with the ``[0-2]`` notation or a list of sheets separated by a ``,``.
      * ``0`` or ``[0-2]`` or ``0,1,2``
