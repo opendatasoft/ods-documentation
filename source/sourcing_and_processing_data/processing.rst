@@ -610,6 +610,231 @@ If **One line** is not set, the Join will result in:
 This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will
 activate it for you.
 
+Extract from JSON
+~~~~~~~~~~~~~~~~~
+
+This processor extracts values from a field containing a JSON object following a list of ijson rules.
+
+It creates target columns for the extracted data that are automatically named like the ijson rules but replacing dots with underscores. For each ijson rule, a column is created with the extracted value.
+
+The processor doesn't support ijson rules that lead to an array (containing a ``.item`` in the rule).
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Example
+  * * Field
+    * Name of the field that holds the JSON object
+    * Field
+    * data
+  * * ijson rules
+    * ijson rules to apply to extract data from the JSON object above. An ijson rule is built with the names of all the field from the JSON root to the data to extract, separated with a dot.
+    * List
+    * block.metaB
+
+For example, let's assume that you have this json object into a text field :
+
+.. code-block:: json
+
+    { "metaA": "Joe",
+      "bloc" : {
+            "metaB" : "valueB",
+            "int": 5,
+            "boolean": false
+          },
+      "sub" : { "sub_sub" : "sub_value"}
+    }
+
+* you will be able to extract the value ``Joe`` with this rule : ``metaA``
+* you will be able to extract the value ``valueB`` with this rule : ``bloc.metaB``
+* you will be able to extract the value ``5`` with this rule : ``bloc.int``
+* you will be able to extract the value ``sub_value`` with this rule : ``sub.sub_sub``
+* The rule ``bloc`` will extract the json object :
+
+    .. code-block:: json
+
+        {
+            "metaB" : "valueB",
+            "int": 5,
+            "boolean": false
+        }
+
+This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will
+activate it for you.
+
+Expand JSON array
+~~~~~~~~~~~~~~~~~
+
+This processor transposes rows containing a JSON array into several rows with a new column containing each value of the array.
+
+The parameter "ijson rule to array" works exactly like in the "Extract from JSON" processor and should contain the array to transpose (represented with the ijson rule ``.item``).
+
+- If the field contains the JSON array directly, just put ``item`` as an ijson rule.
+- If the final element is an array, the ijson rule must end with ``.item``, meaning that the reached object should be treated as an array of items in the ijson syntax.
+- If you want to keep going into the items inside the array, you can keep adding key names after the ``.item``, but be careful to check that this path is valid for every object in the array.
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Example
+  * * json array field
+    * Name of the field that holds the JSON array
+    * Field
+    * data
+  * * ijson rule to array
+    * ijson rule to iterate in the JSON array above. An ijson rule is built with the names of all the field from the JSON root to the data to extract, separated with a dot.
+    * List
+    * block.metaB
+  * * Output field
+    * Name of the field that will contain the extracted element
+    * Field
+    *
+
+Example of ijson rules to extract from the following JSON array field:
+
+.. code-block:: json
+
+    [
+        {
+          "metaB" : "value1",
+          "int": 5,
+          "boolean": false
+        },
+        {
+          "metaB" : "value2",
+          "int": 6,
+          "boolean": true
+        },
+    ]
+
+- ``item`` will transpose the record into two, one with each object of the array in the "Output field" column
+
+.. code-block:: json
+
+    { "metaA": "Joe",
+      "bloc" : [
+            {
+              "metaB" : "value1",
+              "int": 5,
+              "boolean": false,
+              "sub" : { "sub_sub" : "sub_value"}
+            },
+            {
+              "metaB" : "value2",
+              "int": 6,
+              "boolean": true,
+              "sub" : { "sub_sub" : "other_sub_value"}
+            },
+          ]
+    }
+
+- ``bloc.item`` will transpose the record into two, one with each object of the array in the "Output field" column
+- ``bloc.item.sub`` will transpose the record into two, one with each object inside the "sub" tag of each object of the array.
+
+
+This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will activate it for you.
+
+
+Extract bit range
+~~~~~~~~~~~~~~~~~
+
+This processor allows you to extract an arbitrary bit range from an hexadecimal content and to convert it into one of the following data types: integer, unsigned integer and float.
+
+This might be useful, for example, when processing data coming from a network of sensors as sensors often encode their payloads as hexadecimal content.
+
+This processor can either create a new field or update an existing field.
+
+The processor works with masks, it expects
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Example
+  * * Start bit offset
+    * The starting offset corresponding of the position of the first bit
+    * Integer
+    * 0, 8, 16 ...
+  * * Stop bit offset
+    * The ending offset corresponding of the position of the last bit
+    * Integer
+    * 7, 15, 31 ...
+  * * Convert to
+    * The wanted format to output and convert the data
+    * List
+    * int, uint, float
+
+
+For example, let's assume  you have a temperature sensor that sends and hexadecimal value.
+
+  .. code-block:: json
+
+    hex value : 2C09
+
+This hexadecimal value contains:
+- a decimal value encoded on 2 bytes
+- the sensor status on a bit.
+
+  .. code-block:: json
+
+    hex value : 2C09          <- information sent by the sensor in hexadecimal
+    bin value : 00010110 00000100 1   <- same information in binary
+
+The first byte '00010110' is the integer part of the temperature,
+the second byte '00000100' is the floating part of the temperature,
+the last bit '1' is the boolean status, working or not.
+
+You will need to concatenante the integer and the floating part (after the comma) in order to get the temperature value.
+
+Therefore, the processing pipeline will contains 3 **Extract bit mask** processors, and 1 **Expression** processor to concatenate:
+
+* one **Extract bit mask** from 0 to 7 to convert into integer -> int_temperature
+* one **Extract bit mask** from 8 to 15 to convert into integer -> decimal_temperature
+* one **Extract bit mask** from 15 to 16 to convert into boolean -> status
+* one **Expression** to concatenate first from 8 to 16 to convert into integer
+
+**Extract bit mask 1**
+
+  .. code-block:: json
+
+    00010110 -> 22
+
+**Extract bit mask 2**
+
+  .. code-block:: json
+
+    00000100 -> 4
+
+**Extract bit mask 3**
+
+  .. code-block:: json
+
+      1 -> OK
+
+**Expression**
+
+  .. code-block:: json
+
+    Expression : integer_temp & "." & decimal_temp
+
+**Temperature**
+
+  .. code-block:: json
+
+    Temperature : 22,4 °C
+    Sensor : OK
+
+This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will activate it for you.
+
+
 Date processors
 ---------------
 
@@ -1317,10 +1542,6 @@ It takes the following parameters:
     *
 
 
-
-Technical processors
---------------------
-
 Normalize Unicode values
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1343,234 +1564,3 @@ It takes the following parameters:
     * Checked: all the record's fields will be normalized
     * Boolean
     * no
-
-
-Extract from JSON
-~~~~~~~~~~~~~~~~~
-
-This processor extracts values from a field containing a JSON object following a list of ijson rules.
-
-It creates target columns for the extracted data that are automatically named like the ijson rules but replacing dots with underscores. For each ijson rule, a column is created with the extracted value.
-
-The processor doesn't support ijson rules that lead to an array (containing a ``.item`` in the rule).
-
-.. list-table::
-  :header-rows: 1
-
-  * * Label
-    * Description
-    * Type
-    * Example
-  * * Field
-    * Name of the field that holds the JSON object
-    * Field
-    * data
-  * * ijson rules
-    * ijson rules to apply to extract data from the JSON object above. An ijson rule is built with the names of all the field from the JSON root to the data to extract, separated with a dot.
-    * List
-    * block.metaB
-
-For example, let's assume that you have this json object into a text field :
-
-.. code-block:: json
-
-    { "metaA": "Joe",
-      "bloc" : {
-            "metaB" : "valueB",
-            "int": 5,
-            "boolean": false
-          },
-      "sub" : { "sub_sub" : "sub_value"}
-    }
-
-* you will be able to extract the value ``Joe`` with this rule : ``metaA``
-* you will be able to extract the value ``valueB`` with this rule : ``bloc.metaB``
-* you will be able to extract the value ``5`` with this rule : ``bloc.int``
-* you will be able to extract the value ``sub_value`` with this rule : ``sub.sub_sub``
-* The rule ``bloc`` will extract the json object :
-
-    .. code-block:: json
-
-        {
-            "metaB" : "valueB",
-            "int": 5,
-            "boolean": false
-        }
-
-This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will
-activate it for you.
-
-Expand JSON array
-~~~~~~~~~~~~~~~~~
-
-This processor transposes rows containing a JSON array into several rows with a new column containing each value of the array.
-
-The parameter "ijson rule to array" works exactly like in the "Extract from JSON" processor and should contain the array to transpose (represented with the ijson rule ``.item``).
-
-- If the field contains the JSON array directly, just put ``item`` as an ijson rule.
-- If the final element is an array, the ijson rule must end with ``.item``, meaning that the reached object should be treated as an array of items in the ijson syntax.
-- If you want to keep going into the items inside the array, you can keep adding key names after the ``.item``, but be careful to check that this path is valid for every object in the array.
-
-.. list-table::
-  :header-rows: 1
-
-  * * Label
-    * Description
-    * Type
-    * Example
-  * * json array field
-    * Name of the field that holds the JSON array
-    * Field
-    * data
-  * * ijson rule to array
-    * ijson rule to iterate in the JSON array above. An ijson rule is built with the names of all the field from the JSON root to the data to extract, separated with a dot.
-    * List
-    * block.metaB
-  * * Output field
-    * Name of the field that will contain the extracted element
-    * Field
-    *
-
-Example of ijson rules to extract from the following JSON array field:
-
-.. code-block:: json
-
-    [
-        {
-          "metaB" : "value1",
-          "int": 5,
-          "boolean": false
-        },
-        {
-          "metaB" : "value2",
-          "int": 6,
-          "boolean": true
-        },
-    ]
-
-- ``item`` will transpose the record into two, one with each object of the array in the "Output field" column
-
-.. code-block:: json
-
-    { "metaA": "Joe",
-      "bloc" : [
-            {
-              "metaB" : "value1",
-              "int": 5,
-              "boolean": false,
-              "sub" : { "sub_sub" : "sub_value"}
-            },
-            {
-              "metaB" : "value2",
-              "int": 6,
-              "boolean": true,
-              "sub" : { "sub_sub" : "other_sub_value"}
-            },
-          ]
-    }
-
-- ``bloc.item`` will transpose the record into two, one with each object of the array in the "Output field" column
-- ``bloc.item.sub`` will transpose the record into two, one with each object inside the "sub" tag of each object of the array.
-
-
-This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will activate it for you.
-
-
-Extract bit mask
-~~~~~~~~~~~~~~~~
-
-This processor takes an hexadecimal value and extracts the binary values to convert them into integer, float or boolean values. 
-
-
-Some sensors send information in hexadecimal values (a series of letters and numbers A-F 0-9 e.g. '2C09').
-
-Sometimes, in order to extract information you need to extract the binary value (bits, a series of '0' and '1' e.g. '00010110') and convert them.
-
-
-The processor will process the hexadecimal, extract bits and convert it into integer, float or boolean value. 
-It either creates a new field or update an existing one with the values converted. 
-
-The processor works with masks, it expects
-
-.. list-table::
-  :header-rows: 1
-
-  * * Label
-    * Description
-    * Type
-    * Example
-  * * start offset
-    * The starting offset corresponding of the position of the first bit
-    * Integer
-    * 0, 8, 16 ...
-  * * stop offset
-    * The ending offset corresponding of the position of the last bit
-    * Integer
-    * 7, 15, 31 ...
-  * * conversion format
-    * The wanted format to output and convert the data
-    * List
-    * int, float, bool
-
-
-For example, let's assume that you have a temperature sensor that sends and hexadecimal value.
-
-  .. code-block:: json
-    
-    hex value : 2C09  
-
-This hexadecimal value contains: 
-- a decimal value encoded on 2 bytes 
-- the sensor status on a bit. 
-
-  .. code-block:: json
-    
-    hex value : 2C09          <- information sent by the sensor in hexadecimal
-    bin value : 00010110 00000100 1   <- same information in binary 
-
-The first byte '00010110' is the integer part of the temperature, 
-the second byte '00000100' is the floating part of the temperature, 
-the last bit '1' is the boolean status, working or not.
-
-You will need to concatenante the integer and the floating part (after the comma) in order to get the temperature value.
-
-Therefore, the processing pipeline will contains 3 **Extract bit mask** processors, and 1 **Expression** processor to concatenate:
-
-* one **Extract bit mask** from 0 to 7 to convert into integer -> int_temperature
-* one **Extract bit mask** from 8 to 15 to convert into integer -> decimal_temperature
-* one **Extract bit mask** from 15 to 16 to convert into boolean -> status
-* one **Expression** to concatenate first from 8 to 16 to convert into integer
-
-**Extract bit mask 1**
-
-  .. code-block:: json
-    
-    00010110 -> 22
-
-**Extract bit mask 2**
-
-  .. code-block:: json
-
-    00000100 -> 4
-
-**Extract bit mask 3**
-
-  .. code-block:: json
-
-      1 -> OK 
-        
-**Expression** 
-
-  .. code-block:: json
-
-    Expression : integer_temp & "." & decimal_temp
-
-**Temperature** 
-
-  .. code-block:: json
-
-    Temperature : 22,4 °C
-    Sensor : OK
-
-This processor is not yet available by default. 
-Please contact OpenDataSoft support team if you plan to use it, we will activate it for you.
