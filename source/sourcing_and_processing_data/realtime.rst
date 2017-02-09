@@ -1,7 +1,11 @@
 Keeping data up to date
 =======================
 
-Some data is not subject to a lot of change, and only needs to be shared once, but in many cases, this is not enough. Some data quickly become obsolete, and need to be updated regularly to accurately represent reality. In order to address these ephemeral, always-evolving data, the OpenDataSoft platform offers two separate mechanisms. The first one is called scheduling and consists of having a dataset being automatically republished at fixed intervals. This mode is most useful for datasets with a remote resource which is regularly updated. The second mechanism for publishing real time data is using a realtime dataset, that is fed by an API. This mode is most useful when the data can be sent directly by the system that produces the data points, such as a computer program sending event metrics or a set of sensors sending their readings.
+The OpenDataSoft platform makes it possible, in the very same data catalog, to handle completely static datasets (which need to be published only once) and live datasets (which need to be regularly updated). Two different mechanisms are made available to handle datasets refresh.
+
+The first one is called **scheduling** and consists in having a dataset being automatically republished at fixed intervals. This mode is most useful for datasets with a remote resource which is regularly updated.
+
+The second one consists in pushing data on the OpenDataSoft platform using a dedicated API end point. This mode is most useful when the data can be sent directly by the system that produces the data points, such as a computer program sending event metrics or a set of sensors sending their readings.
 
 Using scheduling to keep a dataset up to date
 ---------------------------------------------
@@ -28,7 +32,10 @@ Once a dataset is saved with a remote resource, the scheduling tab is activated.
 Pushing real time data
 ----------------------
 
-For some types of data, it can be useful to push data instead of the more traditional model of having the data being pulled from a resource by the platform. To address this need, the OpenDataSoft platform offers a realtime push API. It is not to be confused with the ability to schedule a dataset processing. When scheduling, the dataset will periodically pull the resource and process the data that is inside of it, whereas with the push API, the dataset is fed by an application through a push API and records are processed one by one as soon as they are received. As this feature is still in beta, it is not activated by default. Please contact OpenDataSoft's support to try it out.
+For some types of data, it can be useful to push data instead of the more traditional model of having the data being pulled from a resource by the platform. To address this need, the OpenDataSoft platform offers a realtime push API. It is not to be confused with the ability to schedule a dataset processing. When scheduling, the dataset will periodically pull the resource and process the data that is inside of it, whereas with the push API, the dataset is fed by an application through a push API and records are processed one by one as soon as they are received.
+
+.. note::
+   As this feature is still in beta, it is not activated by default. Please contact OpenDataSoft's support to try it out.
 
 Configuring the dataset schema
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

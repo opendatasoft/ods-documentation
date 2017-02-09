@@ -1,0 +1,316 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-17 16:28+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Hugo Bost <hugo.bost@opendatasoft.com>, 2017\n"
+"Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/using_api/csw/intro.rst:2
+msgid "Using the service"
+msgstr "Utilisation du service"
+
+#: ../../source/using_api/csw/intro.rst:4
+msgid ""
+"OpenDataSoft datasets can be accessed through a Catalog Service for the Web "
+"(CSW). This is a standard for exposing a catalogue of geospatial records in "
+"XML. The OpenDataSoft platform uses the CSW specification version 2.0.2."
+msgstr ""
+"Les jeux de données OpenDataSoft sont accessibles grâce à un 'Catalog "
+"Service for the Web' (CSW). Il s'agit d'un standard permettant d'exposer des"
+" données géospatiales en XML. La plateforme OpenDataSoft utilise la version "
+"2.0.2 de la spécification CSW."
+
+#: ../../source/using_api/csw/intro.rst:8
+msgid "Operations supported"
+msgstr "Opérations supportées"
+
+#: ../../source/using_api/csw/intro.rst:10
+msgid ""
+"OpenDataSoft platform implements four operations defined by the CSW standard"
+" :"
+msgstr ""
+"La plateforme OpenDataSoft implémente quatre opérations définies par le "
+"standard CSW :"
+
+#: ../../source/using_api/csw/intro.rst:0
+msgid "CSW Operations"
+msgstr "Opérations CSW"
+
+#: ../../source/using_api/csw/intro.rst:15
+#: ../../source/using_api/csw/intro.rst:56
+msgid "Operation"
+msgstr "Opération"
+
+#: ../../source/using_api/csw/intro.rst:16
+#: ../../source/using_api/csw/intro.rst:57
+msgid "Description"
+msgstr "Description"
+
+#: ../../source/using_api/csw/intro.rst:17
+msgid "GetCapabilities"
+msgstr "GetCapabilities"
+
+#: ../../source/using_api/csw/intro.rst:18
+msgid "Retrieve service metadata."
+msgstr "Récupère les métadonnées du service."
+
+#: ../../source/using_api/csw/intro.rst:19
+msgid "DescribeRecord"
+msgstr "DescribeRecord"
+
+#: ../../source/using_api/csw/intro.rst:20
+msgid "Discover elements of the information model by the catalogue."
+msgstr "Permet de récupérer les éléments du modèle d'information."
+
+#: ../../source/using_api/csw/intro.rst:21
+msgid "GetRecords"
+msgstr "GetRecords"
+
+#: ../../source/using_api/csw/intro.rst:22
+msgid "Search for records and get their metadata and identifier."
+msgstr ""
+"Recherche des enregistrements et récupère leur identifiant et leurs "
+"métadonnées."
+
+#: ../../source/using_api/csw/intro.rst:23
+msgid "GetRecordById"
+msgstr "GetRecordById"
+
+#: ../../source/using_api/csw/intro.rst:24
+msgid "Search for a record with a specific identifier."
+msgstr "Recherche un enregistrement avec un identifiant donné."
+
+#: ../../source/using_api/csw/intro.rst:27
+msgid "Service address and methods"
+msgstr "Adresse et méthodes du service"
+
+#: ../../source/using_api/csw/intro.rst:28
+msgid "The service can be reached at the following entry address :"
+msgstr "Le service est accessible à l'adresse suivante :"
+
+#: ../../source/using_api/csw/intro.rst:34
+msgid ""
+"For this documentation, we use the the domain "
+"``http://public.opendatasoft.com`` as an example but you should replace it "
+"by your custom domain name."
+msgstr ""
+"Pour cette documentation, nous utilisons le domaine "
+"``http://public.opendatasoft.com`` à titre d'exemple, il convient de le "
+"remplacer par votre propre nom de domaine."
+
+#: ../../source/using_api/csw/intro.rst:37
+msgid "The CSW supports both ``GET`` and ``POST`` HTTP methods."
+msgstr "Le service CSW supporte les méthodes HTTP ``GET`` et ``POST``."
+
+#: ../../source/using_api/csw/intro.rst:40
+msgid "Request Headers"
+msgstr "En-têtes des requêtes"
+
+#: ../../source/using_api/csw/intro.rst:41
+msgid ""
+"The only supported HTTP header is the optional ``Content-Type`` header, "
+"which must be set to ``text/xml`` when using a ``POST`` HTTP request."
+msgstr ""
+"La seule en-tête HTTP supportée est l'en-tête  ``Content-Type`` . Elle est "
+"optionnelle et devrait avoir pour valeur  ``text/xml`` si elle est utilisée "
+"lors de requêtes HTTP ``POST``."
+
+#: ../../source/using_api/csw/intro.rst:45
+msgid "Parameters"
+msgstr "Paramètres"
+
+#: ../../source/using_api/csw/intro.rst:46
+msgid ""
+"When the HTTP ``GET`` method is used, the parameters are appended to the URL"
+" using a Keyword Value Pair (KVP) encoding. When the HTTP ``POST`` method is"
+" used, the operation request message is encoded as an XML document in the "
+"body of the ``POST`` message."
+msgstr ""
+"Lorsque la méthode HTTP ``GET`` est utilisée, les paramètres sont ajoutées à"
+" l'URL en utilisant un système de pairs clé/valeur. Lorsque la méthode HTTP "
+"``POST`` est utilisée, les paramètres et l'opération doivent être renseignés"
+" au sein d'un document XML composant le corps (body) de la requête."
+
+#: ../../source/using_api/csw/intro.rst:51
+msgid ""
+"Here is the list of the common parameters, supported by all CSW operations :"
+msgstr ""
+"Voici une liste des paramètres supportés par toutes les opérations CSW :"
+
+#: ../../source/using_api/csw/intro.rst:0
+msgid "Request Parameters"
+msgstr "Paramètres des requêtes"
+
+#: ../../source/using_api/csw/intro.rst:58
+msgid "Possible values"
+msgstr "Valeurs possibles"
+
+#: ../../source/using_api/csw/intro.rst:59
+msgid "Optionality and use"
+msgstr "Fréquence d'utilisation et caractère optionnel"
+
+#: ../../source/using_api/csw/intro.rst:60
+msgid "``service``"
+msgstr "``service``"
+
+#: ../../source/using_api/csw/intro.rst:61
+msgid "The requested service"
+msgstr "Le service demandé"
+
+#: ../../source/using_api/csw/intro.rst:62
+msgid "``CSW``"
+msgstr "``CSW``"
+
+#: ../../source/using_api/csw/intro.rst:63
+#: ../../source/using_api/csw/intro.rst:67
+msgid "One (Mandatory)"
+msgstr "Un (obligatoire)"
+
+#: ../../source/using_api/csw/intro.rst:64
+msgid "``request``"
+msgstr "``request``"
+
+#: ../../source/using_api/csw/intro.rst:65
+msgid "The requested operation"
+msgstr "L'opération demandée"
+
+#: ../../source/using_api/csw/intro.rst:66
+msgid ""
+"``GetCapabilities`` | ``DescribeRecord`` | ``GetRecords`` | "
+"``GetRecordById``"
+msgstr ""
+"``GetCapabilities`` | ``DescribeRecord`` | ``GetRecords`` | "
+"``GetRecordById``"
+
+#: ../../source/using_api/csw/intro.rst:68
+msgid "``version``"
+msgstr "``version``"
+
+#: ../../source/using_api/csw/intro.rst:69
+msgid "The requested version of the service."
+msgstr "La version demandée du service."
+
+#: ../../source/using_api/csw/intro.rst:70
+msgid "``2.0.2``"
+msgstr "``2.0.2``"
+
+#: ../../source/using_api/csw/intro.rst:71
+msgid "One (Optional)"
+msgstr "Un (Optionnel)"
+
+#: ../../source/using_api/csw/intro.rst:74
+msgid "Exception reports"
+msgstr "Rapports d'erreurs"
+
+#: ../../source/using_api/csw/intro.rst:75
+msgid ""
+"When an error occurs, the service respond to the client using an Exception "
+"Report message to describe the error."
+msgstr ""
+"Lorsqu'une erreur survient, le service répond au client en utilisant un "
+"'Exception Report' message pour décrire l'erreur."
+
+#: ../../source/using_api/csw/intro.rst:0
+msgid "Parameters in Exception element"
+msgstr "Paramètres de l'élément 'Exception'"
+
+#: ../../source/using_api/csw/intro.rst:80
+msgid "Name"
+msgstr "Nom"
+
+#: ../../source/using_api/csw/intro.rst:81
+msgid "Definition"
+msgstr "Définition"
+
+#: ../../source/using_api/csw/intro.rst:82
+msgid "Data type and value"
+msgstr "Type de donnée et valeur"
+
+#: ../../source/using_api/csw/intro.rst:83
+msgid "Multiplicity and use"
+msgstr "Multiplicité et utilisation"
+
+#: ../../source/using_api/csw/intro.rst:84
+msgid "``ExceptionText``"
+msgstr "``ExceptionText``"
+
+#: ../../source/using_api/csw/intro.rst:85
+msgid "Text describing specific exception represented by the exceptionCode"
+msgstr "Un texte décrivant l'erreur représentée par le code d'exception"
+
+#: ../../source/using_api/csw/intro.rst:86
+msgid ""
+"Character String type, not empty. Value is an exception description as "
+"defined by individual servers"
+msgstr ""
+"Chaîne de caractères non vide. Sa valeur est une description de l'erreur "
+"définie par le serveur"
+
+#: ../../source/using_api/csw/intro.rst:87
+msgid ""
+"Zero or more (optional). Omitted only when no more useful information "
+"available"
+msgstr ""
+"Zéro ou plus (optionnel). Omis lorsqu'aucune information utile n'est "
+"disponible."
+
+#: ../../source/using_api/csw/intro.rst:88
+msgid "``exceptionCode``"
+msgstr "``exceptionCode``"
+
+#: ../../source/using_api/csw/intro.rst:89
+msgid "Code representing type of this exception"
+msgstr "Code représentant le type de cette exception"
+
+#: ../../source/using_api/csw/intro.rst:90
+msgid ""
+"Character String type, not empty. Allowed values are specified by each "
+"implementation specification and server implementation"
+msgstr ""
+"Chaine de caractères non vide. Les valeurs possibles sont dépendantes de "
+"l'implémentation du serveur et de la version utilisée"
+
+#: ../../source/using_api/csw/intro.rst:92
+msgid "One (mandatory)"
+msgstr "Un (obligatoire)"
+
+#: ../../source/using_api/csw/intro.rst:93
+msgid "``locator``"
+msgstr "``locator``"
+
+#: ../../source/using_api/csw/intro.rst:94
+msgid ""
+"Indicator of location in the client's operation request where this exception"
+" was encountered"
+msgstr ""
+"Indication à propos de l'endroit où l'erreur s'est produite dans la requête "
+"du client."
+
+#: ../../source/using_api/csw/intro.rst:95
+msgid ""
+"Character String type, not empty. Contents defined for each allowed "
+"exceptionCode value for each operation"
+msgstr "Chaine de caractères non vide."
+
+#: ../../source/using_api/csw/intro.rst:96
+msgid "Zero or one (optional). Omitted when no useful value available"
+msgstr ""
+"Zéro ou un (optionnel). Omis lorsqu'aucune information utile n'est "
+"disponible."
+
+#: ../../source/using_api/csw/intro.rst:98
+msgid "Example :"
+msgstr "Exemple :"

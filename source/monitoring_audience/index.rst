@@ -1,4 +1,4 @@
-Monitoring a Domain
+Monitoring a domain
 ===================
 
 There are three main views to analyze your domain, trying to answer three different questions:

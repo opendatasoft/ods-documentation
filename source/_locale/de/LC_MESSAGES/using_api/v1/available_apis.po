@@ -1,0 +1,254 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-17 16:28+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/using_api/v1/available_apis.rst:2
+#: ../../source/using_api/v1/available_apis.rst:19
+msgid "Available APIs"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:4
+msgid ""
+"OpenDataSoft datasets can be accessed by developers through HTTP REST APIs."
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:6
+msgid ""
+"The domain `<http://public.opendatasoft.com>`_ will be use to illustrate "
+"examples given in this forum."
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:21
+msgid "The available APIs are listed below."
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:26
+msgid "API Name"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:27
+msgid "API Short Description"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:28
+msgid "Dataset search API"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:29
+msgid "Search datasets"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:30
+msgid "Dataset lookup API"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:31
+msgid "Find a dataset based on its identifier"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:32
+msgid "Records search API"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:33
+msgid "Search records within a specific dataset"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:34
+msgid "Analysis API"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:35
+msgid "Build advanced aggregations using records of a specific dataset"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:36
+msgid "Download API"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:37
+msgid "Efficiently download a large number of records from a specific dataset"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:38
+msgid "Geo clustering API"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:39
+msgid "Build geo clusters using records of a specific dataset"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:40
+msgid "Real Time Push API"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:41
+msgid "Real time data integration"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:42
+msgid "Multimedia Download API"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:43
+msgid "Download multimedia content attached with datasets or records"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:45
+msgid ""
+"All these APIs (except the Multimedia download API) return JSON by default. "
+"Some of them can return alternate content."
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:47
+msgid ""
+"All these APIs (except the Real Time Push API) support cross-domain access "
+"from a browser, using CORS (`<http://en.wikipedia.org/wiki/Cross-"
+"origin_resource_sharing>`_). For older browsers or other specific purposes, "
+"JSONP (`<http://en.wikipedia.org/wiki/JSONP>`_) is supported when returning "
+"JSON content by adding a ``callback`` parameter."
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:53
+msgid "Finding the dataset identifier"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:55
+msgid ""
+"You are looking for specific data to build your application but you don't "
+"know yet in which dataset you can find these data?"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:58
+msgid ""
+"You can simply use the exploration console by clicking on the \"Explore\" "
+"link in the top page menu. Once you have identified the dataset you need, "
+"just go to this dataset's \"Information\" tab where you'll find the dataset "
+"id."
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:62
+msgid "HTTP Methods"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:64
+msgid ""
+"Except for the Real Time Push API which respects more strictly RESTful "
+"concepts, all the APIs endpoints accept GET and POST HTTP methods. GET "
+"methods shall be prefered of course. The POST can be used to workaround "
+"browsers / libraries / proxies limitations regarding the size of the HTTP "
+"URL."
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:69
+msgid "Security"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:71
+msgid ""
+"All the APIs are secured using the same authentication and authorization "
+"model."
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:73
+msgid "Users can only see what they are allowed to see:"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:75
+msgid "Datasets in a domain"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:76
+msgid "Records in a dataset"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:78
+msgid ""
+"APIs are available both in HTTP and HTTPS. We advise API users to always use"
+" the HTTPS endpoint."
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:80
+msgid "The following authentication modes are available:"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:82
+msgid ""
+"**Basic HTTP authentication:** Provide your account's login and password "
+"(`<http://en.wikipedia.org/wiki/Basic_access_authentication>`_)"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:84
+msgid ""
+"**Simple key authentication:** Provide an API key you generated for your "
+"account (API keys work on any domain an OpenDataSoft user has access to)"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:87
+msgid ""
+"Note that when you are connected with a Browser session, API calls triggered"
+" from that browser will reuse your current credentials."
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:91
+msgid "Quotas"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:93
+msgid ""
+"APIs endpoints are subject to quota-based limitations. Contact the domain "
+"administrator or the dataset owner when you reach a limit."
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:96
+msgid ""
+"The API response contains three headers to indicate the current state of "
+"your quota:"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:98
+msgid ""
+"**X-RateLimit-Limit** indicates the total number of API calls you can do in "
+"a single day (resets at midnight UTC)"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:99
+msgid ""
+"**X-RateLimit-Remaining** indicates the number of API calls currently "
+"remaining"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:100
+msgid ""
+"**X-RateLimit-Reset** indicates the `epoch "
+"<http://en.wikipedia.org/wiki/Unix_time>`_ of the next reset time"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:103
+msgid "Errors handling"
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:105
+msgid ""
+"When an error occurs, a JSON object describing the error is returned by the "
+"API."
+msgstr ""
+
+#: ../../source/using_api/v1/available_apis.rst:107
+msgid "Example of an error occuring when you reach a quota limit:"
+msgstr ""

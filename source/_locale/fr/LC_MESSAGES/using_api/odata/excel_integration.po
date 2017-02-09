@@ -1,0 +1,341 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-17 16:28+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Jérémy Morel <jeremy.morel@opendatasoft.com>, 2017\n"
+"Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/using_api/odata/excel_integration.rst:2
+msgid "Microsoft Excel integration"
+msgstr "Intégration dans Microsoft Excel"
+
+#: ../../source/using_api/odata/excel_integration.rst:4
+msgid ""
+"The OpenDataSoft OData service makes it possible to gather data directly "
+"from Microsoft Excel, without any programming knowledge. There are 3 ways to"
+" proceed: first, for Microsoft Excel 2013, the OData native integration can "
+"be used. For Excel 2010 and Excel 2013, PowerPivot and PowerQuery extensions"
+" can be used. This article will give a detailed explanation on how to do it."
+msgstr ""
+"Dans le présent article, nous allons voir comment récupérer les données d'un"
+" service OData OpenDataSoft dans Microsoft Excel. Pour cela, il existe 3 "
+"façons de faire. Tout d'abord, pour la version 2013 de Microsoft Excel, il "
+"est possible d'utiliser l'intégration OData native pour récupérer les "
+"données. Ensuite, pour les versions 2010 et 2013, il est possible d'utiliser"
+" les extensions Microsoft PowerPivot et Microsoft PowerQuery pour récupérer "
+"ces données."
+
+#: ../../source/using_api/odata/excel_integration.rst:10
+msgid "Native Integration"
+msgstr "Intégration native"
+
+#: ../../source/using_api/odata/excel_integration.rst:12
+msgid ""
+"Here are the steps that will allow you to import data through the Excel "
+"native OData integration."
+msgstr ""
+"Voici les étapes permettant d'importer des données à partir de l'intégration"
+" OData native de Microsoft Excel."
+
+#: ../../source/using_api/odata/excel_integration.rst:16
+msgid "Data sources supported natively by Microsoft Excel."
+msgstr "La liste des sources de données supportées."
+
+#: ../../source/using_api/odata/excel_integration.rst:18
+msgid ""
+"To import data from OpenDataSoft OData service, open Microsoft Excel and "
+"click the \"DATA\" tab. Once done, click \"From Other Source\". This should "
+"let you see the list of supported data sources. Select \"From OData Feed\"."
+msgstr ""
+"Pour importer des données depuis le service OData, ouvrez Microsoft Excel, "
+"et cliquez sur l'onglet nommé \"DATA\". Ceci fait, cliquez sur le bouton "
+"\"From Other Source\" pour voir la liste des sources de données supportées. "
+"Choisissez \"From OData Feed\"."
+
+#: ../../source/using_api/odata/excel_integration.rst:23
+msgid "Data feed connection form."
+msgstr "Formulaire d'entrée de service."
+
+#: ../../source/using_api/odata/excel_integration.rst:25
+msgid ""
+"In the address bar of the window that was opened, enter the service address."
+" This address should be \"http://platform.url/api/odata\". Replace the "
+"platform.URL by the actual platform URL."
+msgstr ""
+"Entrez ensuite l'adresse du service dans la barre d'adresse de la fenêtre "
+"qui s'est ouverte. Dans la plateforme OpenDataSoft, l'adresse relative du "
+"service OData est \"/api/odata/\"."
+
+#: ../../source/using_api/odata/excel_integration.rst:30
+#: ../../source/using_api/odata/excel_integration.rst:93
+msgid "Table selection window."
+msgstr "Fenêtre de selection de table."
+
+#: ../../source/using_api/odata/excel_integration.rst:32
+msgid "Select the table(s) of your choosing by clicking their checkbox."
+msgstr ""
+"Choisissez ensuite la ou les tables qui serviront de source de données en "
+"cliquant sur le petit carré à gauche de l'identifiant du ou des jeu(x) de "
+"données qui vous intéresse(nt)."
+
+#: ../../source/using_api/odata/excel_integration.rst:36
+msgid "A table selected to become a data source."
+msgstr "Une table sélectionnée pour utilisation comme source de données."
+
+#: ../../source/using_api/odata/excel_integration.rst:38
+msgid "After validation, the \"Import Data\" window will open. Click \"OK\"."
+msgstr ""
+"Après validation, la fenêtre de sélection de destination s'ouvrira, cliquez "
+"sur \"Ok\"."
+
+#: ../../source/using_api/odata/excel_integration.rst:42
+msgid "The \"Import Data\" window."
+msgstr "La fenêtre de selection de destination."
+
+#: ../../source/using_api/odata/excel_integration.rst:44
+msgid "Your data are now displayed in the Microsoft Excel cells."
+msgstr ""
+"Vos données apparaissent maintenant dans les cellules de Microsoft Excel."
+
+#: ../../source/using_api/odata/excel_integration.rst:48
+msgid "Imported data in Microsoft Excel."
+msgstr "Exemple de données importées."
+
+#: ../../source/using_api/odata/excel_integration.rst:51
+msgid "PowerPivot"
+msgstr "PowerPivot"
+
+#: ../../source/using_api/odata/excel_integration.rst:53
+msgid ""
+"Here are the steps that will allow you to import data through PowerPivot for"
+" Microsoft Excel."
+msgstr ""
+"Voici les étapes permettant d'importer des données à partir de PowerPivot "
+"pour Microsoft Excel."
+
+#: ../../source/using_api/odata/excel_integration.rst:57
+msgid "\"Add-Ins\" tab in the Microsoft Excel settings window."
+msgstr "L'onglet \"Add-Ins\" de la fenêtre d'options de Microsoft Excel."
+
+#: ../../source/using_api/odata/excel_integration.rst:60
+msgid ""
+"Before you can use PowerPivot, you must activate it. To do so, open the "
+"\"Add-ins\" tab in the Microsoft Excel settings window. In the \"Manage\" "
+"drop down menu, select \"COM Add-ins\" and click \"Go...\"."
+msgstr ""
+"Avant d'utiliser PowerPivot, il est nécessaire de l'activer. Pour cela, "
+"rendez vous dans les options de Microsoft Excel, dans l'onglet \"Add-Ins\". "
+"Dans la boîte de sélection multiple nommée \"Manage\", choisissez \"COM Add-"
+"ins\" et cliquez sur \"Go...\"."
+
+#: ../../source/using_api/odata/excel_integration.rst:65
+msgid "The COM add ins selection window."
+msgstr "La fenêtre de selection d'add-ins COM."
+
+#: ../../source/using_api/odata/excel_integration.rst:68
+msgid ""
+"In the window that was just opened, select \"Microsoft PowerPivot for Excel "
+"2013\" or \"Microsoft PowerPivot for Excel 2010\", whichever applies."
+msgstr ""
+"Dans la fenêtre qui s'ouvre, sélectionnez \"Microsoft PowerPivot for Excel "
+"2013\" si vous utilisez Microsoft Excel 2013, ou \"Microsoft PowerPivot for "
+"Excel 2010\" si vous utilisez Microsoft Excel 2010."
+
+#: ../../source/using_api/odata/excel_integration.rst:73
+msgid "PowerPivot menu bar."
+msgstr "La barre de menu PowerPivot."
+
+#: ../../source/using_api/odata/excel_integration.rst:75
+msgid ""
+"Back in Microsoft Excel main window click the \"POWERPIVOT\" tab to display "
+"the PowerPivot menu bar. In it, click the \"Manage\" button. It will open a "
+"source management window."
+msgstr ""
+"De retour dans la fenêtre principale de Microsoft Excel, cliquez sur "
+"l'onglet \"POWERPIVOT\" pour afficher la barre de menu PowerPivot. Dans "
+"celui-ci, cliquez sur le bouton \"Manage\" pour afficher la fenêtre de "
+"gestion des sources de données PowerPivot."
+
+#: ../../source/using_api/odata/excel_integration.rst:80
+msgid "Data sources management window."
+msgstr "La fenêtre de gestion des sources de données PowerPivot."
+
+#: ../../source/using_api/odata/excel_integration.rst:82
+msgid ""
+"In this window, click \"Get External Data\", and in the menu that appears, "
+"click \"From Data Service\". In the second menu that appears, click \"From "
+"OData Data Feed\""
+msgstr ""
+"Dans la fenêtre de gestion des sources de données PowerPivot, cliquez sur "
+"\"Get External Data\", puis, dans le menu qui apparaît, sur \"From Data "
+"Service\", et dans le deuxième menu qui apparaît, sur \"From OData Data "
+"Feed\"."
+
+#: ../../source/using_api/odata/excel_integration.rst:87
+msgid "Data feed connection window."
+msgstr "Fenêtre d'import de tables de PowerPivot."
+
+#: ../../source/using_api/odata/excel_integration.rst:89
+msgid ""
+"In the import window that was opened, enter the OpenDataSoft OData service "
+"in the address bar."
+msgstr ""
+"Dans la fenêtre d'import qui s'ouvre, entrez l'adresse du service OData de "
+"OpenDataSoft dans la barre d'adresse."
+
+#: ../../source/using_api/odata/excel_integration.rst:95
+msgid ""
+"In the table selection window, select the dataset(s) of your choosing by "
+"clicking their checkbox. Once done, click \"Finish\"."
+msgstr ""
+"Dans la fenêtre de sélection de tables, sélectionnez la ou les jeu(x) de "
+"données qui vous intéressent en cliquant sur le carré à droite de "
+"l'identifiant de celle(s)-ci, et cliquez sur \"Finish\"."
+
+#: ../../source/using_api/odata/excel_integration.rst:100
+msgid "Data transfer window."
+msgstr "La fenêtre de transfert de données."
+
+#: ../../source/using_api/odata/excel_integration.rst:102
+msgid ""
+"When the transfer window shows a success indicator, close it with the "
+"\"Close\" button on the bottom right."
+msgstr ""
+"Lorsque la fenêtre de transfert montre un indicateur de succès, fermez la en"
+" cliquant sur le bouton \"Close\" en bas à droite."
+
+#: ../../source/using_api/odata/excel_integration.rst:106
+msgid "Data preview."
+msgstr ""
+"L'aperçu des données dans la fenêtre de gestion des sources de données."
+
+#: ../../source/using_api/odata/excel_integration.rst:108
+msgid ""
+"You can now verify the integrity of your data om the data source management "
+"window."
+msgstr ""
+"Vous pouvez vérifier l'intégrité de vos données dans la fenêtre de gestion "
+"des sources de données, qui montre maintenant les données importées du "
+"service OData OpenDataSoft."
+
+#: ../../source/using_api/odata/excel_integration.rst:112
+msgid "The data import list in PowerPivot."
+msgstr "La liste des types d'import de données de PowerPivot."
+
+#: ../../source/using_api/odata/excel_integration.rst:114
+msgid ""
+"In the Microsoft Excel main window, click \"PivotTable\", and in the popped "
+"up list, click \"PivotTable\"."
+msgstr ""
+"Cliquez sur \"PivotTable\", puis, dans la liste qui apparaît, sur "
+"\"PivotTable\" pour afficher vos données dans la fenêtre principale de "
+"Microsoft Excel."
+
+#: ../../source/using_api/odata/excel_integration.rst:118
+msgid "The destination selection window."
+msgstr "La fenêtre de selection de destination."
+
+#: ../../source/using_api/odata/excel_integration.rst:120
+msgid ""
+"In the destination selection window, select the worksheet of your choosing, "
+"and click \"OK\"."
+msgstr ""
+"Dans la fenêtre de sélection de destination qui apparaît, choisissez la "
+"feuille de calcul de destination dans laquelle importer vos données."
+
+#: ../../source/using_api/odata/excel_integration.rst:124
+msgid "Data aggregation using PowerPivot."
+msgstr ""
+"Exemple d'agrégation de données dans Microsoft Excel en utilisant "
+"l'intégration PowerPivot."
+
+#: ../../source/using_api/odata/excel_integration.rst:128
+msgid "Power Query"
+msgstr "Power Query"
+
+#: ../../source/using_api/odata/excel_integration.rst:130
+msgid ""
+"Here are the steps that will allow you to import data through Power Query "
+"for Microsoft Excel."
+msgstr ""
+"Voici les étapes permettant d'importer des données à partir de Power Query "
+"pour Microsoft Excel."
+
+#: ../../source/using_api/odata/excel_integration.rst:133
+msgid ""
+"Before you can use Power Query, you must download and activate it. To "
+"download it, visit `this link <http://www.microsoft.com/en-"
+"us/download/details.aspx?id=39379>`_. The activation process is similar to "
+"that of PowerPivot."
+msgstr ""
+"Avant de pouvoir utiliser Microsoft Power Query pour Microsoft Excel, il est"
+" nécessaire de le télécharger et de l'activer. Son téléchargement peut être "
+"fait sur le site officiel de Microsoft à `cette adresse "
+"<http://www.microsoft.com/en-us/download/details.aspx?id=39379>`_. Pour "
+"l'activation de l'add-in, veuillez suivre les instructions des points 1.2.1 "
+"et 1.2.2."
+
+#: ../../source/using_api/odata/excel_integration.rst:139
+msgid "Data sources supported by Microsoft Power Query."
+msgstr "La liste des sources de données supportées par Microsoft Power Query."
+
+#: ../../source/using_api/odata/excel_integration.rst:141
+msgid ""
+"Once done, return to Microsoft Excel main window, click \"POWER QUERY\" to "
+"display its menu bar. In the \"POWER QUERY\" menu bar, click \"From Other "
+"Sources\". You should see a list with all data sources supported by "
+"Microsoft Power Query."
+msgstr ""
+"Une fois l'add-in téléchargé et activé, retournez sur la fenêtre principale "
+"de Microsoft Excel, cliquez sur l'onglet \"POWER QUERY\" pour afficher la "
+"barre de menu Power Query. Dans celle-ci, cliquez sur le bouton \"From Other"
+" Sources\" pour afficher la liste des sources de données supportées dans "
+"Power Query."
+
+#: ../../source/using_api/odata/excel_integration.rst:147
+msgid "OData data source selection window."
+msgstr "La fenêtre de selection du service de données OData."
+
+#: ../../source/using_api/odata/excel_integration.rst:149
+msgid "In this window, enter the OpenDataSoft OData service URL and click \"OK\"."
+msgstr ""
+"Dans la fenêtre qui s'affiche, entrez l'adresse du service OData "
+"d'OpenDataSoft et cliquez sur \"OK\"."
+
+#: ../../source/using_api/odata/excel_integration.rst:153
+msgid "Power Query navigation window."
+msgstr "La fenêtre de navigation de Microsoft Power Query."
+
+#: ../../source/using_api/odata/excel_integration.rst:155
+msgid ""
+"Once done, a Power Query navigation window will be displayed on the right "
+"hand side of the main window. In it, click the IDs of the table of your "
+"choosing."
+msgstr ""
+"Ceci fait, une fenêtre de navigation Power Query s'affiche sur la droite de "
+"la fenêtre principale de Microsoft. Dans celle ci, cliquez sur l'identifiant"
+" de la table qui vous intéresse."
+
+#: ../../source/using_api/odata/excel_integration.rst:160
+msgid "Imported data through Power Query."
+msgstr ""
+"Exemple de données importées dans Microsoft Excel en utilisant Microsoft "
+"Power Query."
+
+#: ../../source/using_api/odata/excel_integration.rst:162
+msgid "Your data is now displayed in the Microsoft Excel cells."
+msgstr ""
+"Vos données apparaissent maintenant dans les cellules de Microsoft Excel."
