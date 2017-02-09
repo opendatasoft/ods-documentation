@@ -38,7 +38,7 @@ Fields have a type. The following types are available:
    * * GeoShape
      * A valid geo shape expressed in `GeoJSON <http://geojson.org/geojson-spec.html>`_. For example :
        { "type": "LineString", "coordinates": [ [100.0, 0.0], [101.0, 1.0] ] }.
-       We do not support feature collections, only
+       Feature collections are not supported.
    * * Integer
      * Any valid integer value. If a floating point value is found, it is automatically cast to its integer part.
    * * Text
