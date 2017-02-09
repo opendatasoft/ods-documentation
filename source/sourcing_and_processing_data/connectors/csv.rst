@@ -18,7 +18,7 @@ Configuration
      * Values
    * * Encoding
      * The file encoding
-     * OpenDataSoft uses an heuristic to guess the encoding and something the try is incorrect.
+     * OpenDataSoft uses an heuristic to guess the encoding and sometimes the try is incorrect.
 
        The encoding can be manually set, we provide a list of common value (csv generated on common software on different OS).
 
