@@ -36,8 +36,16 @@ Fields have a type. The following types are available:
        *45.8,2.5*. If your dataset contains two fields, latitude and longitude, you'll need to concatenate them
        with a **Concatenate Text** processor to form a valid geo point field.
    * * GeoShape
-     * A valid geo shape expressed in `GeoJSON <http://geojson.org/geojson-spec.html>`_. For example :
-       { "type": "LineString", "coordinates": [ [100.0, 0.0], [101.0, 1.0] ] }. Feature collections are not supported.
+     * A valid geo shape expressed in `GeoJSON <http://geojson.org/geojson-spec.html>`_. 
+       
+       For example :
+       
+       .. code-block:: json
+
+          {"type": "LineString", 
+           "coordinates": [ [100.0, 0.0], [101.0, 1.0] ]} 
+
+       Feature collections are not supported.
    * * Integer
      * Any valid integer value. If a floating point value is found, it is automatically cast to its integer part.
    * * Text
