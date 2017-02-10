@@ -37,12 +37,7 @@ Fields have a type. The following types are available:
        with a **Concatenate Text** processor to form a valid geo point field.
    * * GeoShape
      * A valid geo shape expressed in `GeoJSON <http://geojson.org/geojson-spec.html>`_. For example :
-<<<<<<< HEAD
-       { "type": "LineString", "coordinates": [ [100.0, 0.0], [101.0, 1.0] ] }.
-       Feature collections are not supported.
-=======
        { "type": "LineString", "coordinates": [ [100.0, 0.0], [101.0, 1.0] ] }. Feature collections are not supported.
->>>>>>> origin/develop
    * * Integer
      * Any valid integer value. If a floating point value is found, it is automatically cast to its integer part.
    * * Text
