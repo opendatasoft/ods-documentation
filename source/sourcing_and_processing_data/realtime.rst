@@ -124,7 +124,7 @@ In order to set up such a system with the OpenDataSoft platform, the fields that
         }
     ]
 
-If somebody burrows a copy of Zen and the Art of Motorcycle Maintenance, and you push the following record, you will still have two records, the first one being updated with the new value.
+If somebody borrows a copy of Zen and the Art of Motorcycle Maintenance, and you push the following record, you will still have two records, the first one being updated with the new value.
 
 .. code-block:: json
 
