@@ -3,7 +3,7 @@ Publishing datasets
 
 A dataset has a dedicated life cycle: It's start in the backoffice (not published), you configured the sources, the processors, the security and then you publish it.
 The dataset appears in the frontoffice (according to the security rules).
-When you make modifications on the dataset, they are pushed to the publish version when you click on the *publish¨ button.
+When you make modifications on the dataset, they are pushed to the publish version when you click on the *publish* button.
 At any time you can remove a dataset from the by the *unpublish* action,
 
 
