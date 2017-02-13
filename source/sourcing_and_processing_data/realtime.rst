@@ -66,13 +66,13 @@ A mimimal example of the api usage for a dataset with a single field named "mess
 
 .. code-block:: bash
 
-    curl -XPOST <DOMAIN_URL>/api/push/1.0/realtime-dataset/<DATASET>/push/?pushkey=<PUSH_API_KEY> -d'{"message":"Hello World!"}'
+    curl -XPOST <DOMAIN_URL>/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/push/?pushkey=<PUSH_API_KEY> -d'{"message":"Hello World!"}'
 
 A minimal example with the same dataset, using the array form to send multiple records at once would be 
 
 .. code-block:: bash
 
-    curl -XPOST <DOMAIN_URL>/api/push/1.0/realtime-dataset/<DATASET>/push/?pushkey=<PUSH_API_KEY> -d'[{"message":"¡Hola Mundo!"},{"message":"Hallo Welt!"}]`
+    curl -XPOST <DOMAIN_URL>/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/push/?pushkey=<PUSH_API_KEY> -d'[{"message":"¡Hola Mundo!"},{"message":"Hallo Welt!"}]`
 
 If the records have been received correctly, the server will respond the following message.
 
@@ -145,11 +145,11 @@ There are two entrypoints that allow for deleting a pushed records. One that use
 Using the record values
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-To delete a record knowing the record fields values, POST the record as if you were adding it for the first time, but replace ``/push/`` with ``/delete/`` in the push URL. If your push URL path is ``/api/push/1.0/realtime-dataset/<DATASET>/push/?pushkey=<PUSH_API_KEY>``, then use instead ``/api/push/1.0/realtime-dataset/<DATASET>/push/delete/?pushkey=<PUSH_API_KEY>``. A minimal example to delete the record we pushed earlier follows.
+To delete a record knowing the record fields values, POST the record as if you were adding it for the first time, but replace ``/push/`` with ``/delete/`` in the push URL. If your push URL path is ``/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/push/?pushkey=<PUSH_API_KEY>``, then use instead ``/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/delete/?pushkey=<PUSH_API_KEY>``. A minimal example to delete the record we pushed earlier follows.
 
 .. code-block:: bash
 
-    curl -XPOST <DOMAIN_URL>/api/push/1.0/realtime-dataset/<DATASET>/delete/?pushkey=<PUSH_API_KEY> -d'{"message":"Hello World!"}'
+    curl -XPOST <DOMAIN_URL>/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/delete/?pushkey=<PUSH_API_KEY> -d'{"message":"Hello World!"}'
 
 Using the record values
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -158,7 +158,7 @@ If you know the record ID of the record you want to delete, simply make a GET re
 
 .. code-block:: bash
 
-    curl -XGET <DOMAIN_URL>/api/push/1.0/realtime-dataset/<DATASET>/<RECORD_ID>/delete/?pushkey=<PUSH_API_KEY>
+    curl -XGET <DOMAIN_URL>/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/<RECORD_ID>/delete/?pushkey=<PUSH_API_KEY>
 
 Get notified in case of inactivity
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
