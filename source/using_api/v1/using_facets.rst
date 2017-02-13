@@ -142,7 +142,7 @@ It is possible to limit the result set by refining on a given facet value. To do
 
 For example: `<http://public.opendatasoft.com/api/datasets/1.0/search?refine.modified=2013>`_
 
-In the returned result set, only the datasets modified in 2011 will be returned.
+In the returned result set, only the datasets modified in 2013 will be returned.
 
 As the refinement occurs on the "year" and as the "modified" facet is hierarchical, the sub-level is returned; results 
 are dispatched in the "month" sub value:
