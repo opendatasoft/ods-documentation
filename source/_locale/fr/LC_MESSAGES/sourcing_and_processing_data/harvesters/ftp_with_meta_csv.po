@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-17 16:28+0100\n"
+"POT-Creation-Date: 2017-02-14 16:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: benrict <benoit.richter@opendatasoft.com>, 2017\n"
+"Last-Translator: Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2017\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,10 +27,14 @@ msgid ""
 "Harvester for FTP folders with one **metadata CSV file** (semicolon "
 "separated) for several **resources**."
 msgstr ""
+"Moissonneur pour dossiers FPT avec un **fichier CSV de métadonnées** (séparé"
+" par des points-virgules) pour plusieurs **ressources**."
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:6
 msgid "The CSV file must have a ``name`` column with the id of the dataset."
 msgstr ""
+"Le fichier CSV doit comporter une colonne ``name`` contenant l'id du jeu de "
+"données."
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:7
 msgid ""
@@ -57,23 +61,31 @@ msgid ""
 "filename must then be written in the resource schema column. This file has "
 "the following specifications:"
 msgstr ""
+"Pour chaque ressource, le dossier FTP peut contenir un **fichier de schéma "
+"CSV**, dont le nom doit ensuite être reporté dans la colonne du schéma de "
+"ressource. Ce fichier présente les spécifications suivantes :"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:12
 msgid ""
 "a ``name`` column holds each field name (e.g. on a CSV resource, this would "
 "be the column names),"
 msgstr ""
+"Une colonne ``name`` contient chaque nom de champ (par ex. sur une ressource"
+" CSV, ce serait les noms de colonne)."
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:13
 msgid ""
 "a ``label`` column (optional) holds the label of the corresponding field,"
 msgstr ""
+"Une colonne ``label`` (en option) contient le label du champ correspondant."
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:14
 msgid ""
 "a ``description`` column (optional) holds the description of the "
 "corresponding field."
 msgstr ""
+"Une colonne ``description`` (en option) contient la description du champ "
+"correspondant."
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:17
 msgid "Parameters"
@@ -93,7 +105,7 @@ msgstr "Exemple"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:25
 msgid "**Host** (host)"
-msgstr ""
+msgstr "**Hôte** (host)"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:26
 msgid "URL of the FTP server"
@@ -105,7 +117,7 @@ msgstr "ftp.opendatasoft.com"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:28
 msgid "**User** (user)"
-msgstr ""
+msgstr "**Utilisateur** (user)"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:29
 msgid "Your username"
@@ -113,7 +125,7 @@ msgstr "Votre nom d'utilisateur"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:31
 msgid "**Password** (password)"
-msgstr ""
+msgstr "**Mot de passe** (password)"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:32
 msgid "Your password"
@@ -133,7 +145,7 @@ msgstr "pub/documents"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:37
 msgid "**Metadata CSV filename** (metadata_file)"
-msgstr ""
+msgstr "**Nom du fichier CSV de métadonnées** (metadata_file)"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:38
 msgid ""
@@ -150,6 +162,7 @@ msgstr "index.csv"
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:40
 msgid "**Metadata CSV resource column** (resource_location_column)"
 msgstr ""
+"**Colonne des ressources CSV des métadonnées** (resource_location_column)"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:41
 msgid "This column holds a filename or an URL with the dataset resource."
@@ -163,10 +176,12 @@ msgstr "source_dataset"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:43
 msgid "Metadata CSV schema column (resource_schema_column)"
-msgstr ""
+msgstr "Colonne du schéma CSV des métadonnées (resource_schema_column)"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:44
 msgid ""
 "This column holds a filename with the resource schema (column labels and "
 "descriptions)."
 msgstr ""
+"Cette colonne contient un nom de fichier contenant le schéma des ressources "
+"(descriptions et labels des colonnes)."
