@@ -31,7 +31,7 @@ easy to parse format which can used as an input of modern charting libraries suc
    * * ``format``
      * Format of the response output. One of JSON (default), CSV and GeoJSONP.
    * * ``callback``
-     * JSONP callback. Example: ``format=jsonp&callback=myFunction<.
+     * JSONP callback. Example: ``format=jsonp&callback=myFunction`` 
    * * ``x``
      * The name of the field on which the data aggregation will be based. This is a mandatory parameter. It allows for analyzing a subset of data according to the different values of the fields. The behavior may vary according to the field type. For **Date** and **DateTime** fields, the slices are built from the dates using the level of aggregation defined through the ``precision``  and ``periodic``  parameters. For other field types, the actual field values are used as x values.
    * * ``y.<SERIE>.func``
@@ -47,7 +47,7 @@ easy to parse format which can used as an input of modern charting libraries suc
    * * ``precision``
      * Used only in cases in which X is of type **Date** or **DateTime**. It defines the precision of the aggregation. Possible values are ``year`` , ``month`` , ``week`` , ``day``  (default), ``hour`` , ``minute`` . If ``weekday``  is provided as a ``periodic``  parameter, the ``precision``  parameter is ignored. This parameter shall respect the ``precision``  annotation of the field. If the field is annotated with a precision set to ``day`` , the serie precision can at maximum be set to ``day`` . For Example: ``x=event_date&periodic=year&precision=month&y.series1.func=COUNT``  will output ``[{"x": {"year": 2002, "month":1},"series1": 3}, {"x": {"year": 2002, "month":1},"series1": 5}]``
    * * ``sort``
-     * sorts the aggregation values according to the specified series, or to the x parameter. By default, the values are sorted in descending order, according to the x parameter. A minus sign ('-') can however be prepended to the argument to make an ascending sort. Examples: ``x=city&y.series1.func=SUM&y.series1.expr=population&sort=-x`` , ``x=city&y.series1.func=SUM&y.series1.expr=population&sort=-series1``
+     * sorts the aggregation values according to the specified series, or to the x parameter. By default, the values are sorted in descending order, according to the x parameter. A minus sign ('-') can however be prepended to the argument to make an ascending sort. Examples: ``x=city&y.series1.func=SUM&y.series1.expr=population&sort=-x`` , `` x=city&y.series1.func=SUM&y.series1.expr=population&sort=-series1``
 
 **Expression language**
 
