@@ -195,7 +195,23 @@ pseudoxml:
 	@echo
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
 
-translations:
+
+translations: pull-translations push-translations
+	@echo "Build finished."
+
+
+pull-translations:
+ifeq ($(shell git symbolic-ref HEAD --short), develop)
+	@echo "Fetching translation files from transifex"
+	tx pull --mode=developer -l $(LANGUAGES)
+	find . -name '*.po'| xargs sed -i '.bak' $$'s/\xC2\xA0/ /g' && find . -name '*.po.bak' -delete
+	@echo "Translations (.po) retrieved from transifex."
+else
+	@echo "You have to be on the develop branch to build translations"
+endif
+
+
+push-translations:
 ifeq ($(shell git symbolic-ref HEAD --short), develop)
 	@echo "Building translation files"
 	@make gettext
@@ -203,9 +219,7 @@ ifeq ($(shell git symbolic-ref HEAD --short), develop)
 	@sphinx-intl update-txconfig-resources --pot-dir $(BUILDDIR)/locale --transifex-project-name documentation-5
 	@echo "Uploading translation files to Transifex"
 	tx push -s
-	@echo "Fetching translation files from transifex"
-	tx pull --mode=developer -l $(LANGUAGES)
-	@echo "Build finished. Translation templates (.pot) uploaded to transifex, translations (.po) retrieved from transifex"
+	@echo "Build finished. Translation templates (.pot) uploaded to transifex."
 else
 	@echo "You have to be on the develop branch to build translations"
 endif
