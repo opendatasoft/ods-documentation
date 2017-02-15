@@ -71,7 +71,7 @@ msgid ""
 "following:"
 msgstr ""
 "Dans les API des jeux de données, les facettes sont identiques pour tous les"
-" jeux de données. Elles sont répertoriées dans le tableau suivant :"
+" jeux de données. Elles sont répertoriées dans le tableau suivant :"
 
 #: ../../source/using_api/v1/using_facets.rst:23
 msgid "Facet Name"
@@ -196,7 +196,7 @@ msgstr ""
 "champs. La disponibilité de la facette d'un champ dépend des choix du "
 "producteur des données. Les champs (récupérés par exemple depuis l'API de "
 "récupération de jeux de données) pour lesquels le facettage est disponible "
-"sont aisément identifiables :"
+"sont aisément identifiables :"
 
 #: ../../source/using_api/v1/using_facets.rst:73
 msgid ""
@@ -226,11 +226,11 @@ msgstr ""
 
 #: ../../source/using_api/v1/using_facets.rst:81
 msgid "Example of a facet tree:"
-msgstr "Exemple d'arborescence de facette :"
+msgstr "Exemple d'arborescence de facette :"
 
 #: ../../source/using_api/v1/using_facets.rst:103
 msgid "Every facet contains two additional information:"
-msgstr "Chaque facette contient deux informations supplémentaires :"
+msgstr "Chaque facette contient deux informations supplémentaires :"
 
 #: ../../source/using_api/v1/using_facets.rst:105
 msgid ""
@@ -242,23 +242,23 @@ msgstr ""
 "L'attribut \"count\" contient le nombre de correspondances qui ont la même "
 "valeur de facette. L'attribut \"state\" définit si la facette est "
 "actuellement utilisée ou non dans un argument \"refine\" ou \"exclude\". Les"
-" valeurs possibles pour l'attribut \"state\" sont les suivantes :"
+" valeurs possibles pour l'attribut \"state\" sont les suivantes :"
 
 #: ../../source/using_api/v1/using_facets.rst:109
 msgid "**displayed**: no refine nor exclude"
-msgstr "**displayed** : dans aucun argument \"refine\" ni \"exclude\""
+msgstr "**displayed** : dans aucun argument \"refine\" ni \"exclude\""
 
 #: ../../source/using_api/v1/using_facets.rst:110
 msgid "**refined**: refine"
-msgstr "**refined** : dans un argument \"refine\""
+msgstr "**refined** : dans un argument \"refine\""
 
 #: ../../source/using_api/v1/using_facets.rst:111
 msgid "**excluded**: exclude"
-msgstr "**exclude** : dans un argument \"exclude\""
+msgstr "**exclude** : dans un argument \"exclude\""
 
 #: ../../source/using_api/v1/using_facets.rst:113
 msgid "Example of a facet with all its attributes:"
-msgstr "Exemple d'une facette avec tous ses attributs :"
+msgstr "Exemple d'une facette avec tous ses attributs :"
 
 #: ../../source/using_api/v1/using_facets.rst:138
 msgid "Refining"
@@ -270,7 +270,7 @@ msgid ""
 "To do so, use the following API parameter: ``refine.FACETNAME=FACETVALUE``."
 msgstr ""
 "Il est possible de limiter l'ensemble de résultats en affinant la valeur "
-"d'une facette spécifique. Pour cela, utilisez le paramètre d'API suivant : "
+"d'une facette spécifique. Pour cela, utilisez le paramètre d'API suivant : "
 "``refine.FACETNAME=FACETVALUE``."
 
 #: ../../source/using_api/v1/using_facets.rst:143
@@ -278,7 +278,7 @@ msgid ""
 "For example: "
 "`<http://public.opendatasoft.com/api/datasets/1.0/search?refine.modified=2013>`_"
 msgstr ""
-"Par exemple : "
+"Par exemple : "
 "`<http://public.opendatasoft.com/api/datasets/1.0/search?refine.modified=2013>`_"
 
 #: ../../source/using_api/v1/using_facets.rst:145
@@ -294,8 +294,8 @@ msgid ""
 "\"month\" sub value:"
 msgstr ""
 "Étant donné que l'affinage est réalisé sur le paramètre \"year\" et que la "
-"facette \"modified\" est hiérarchique, le sous-niveau est renvoyé ; les "
-"résultats sont répartis en fonction de la sous-valeur \"month\" :"
+"facette \"modified\" est hiérarchique, le sous-niveau est renvoyé ; les "
+"résultats sont répartis en fonction de la sous-valeur \"month\" :"
 
 #: ../../source/using_api/v1/using_facets.rst:171
 msgid "Excluding"
@@ -309,7 +309,7 @@ msgid ""
 msgstr ""
 "Sur la base du même principe, il est possible d'exclure de l'ensemble de "
 "résultats ceux qui correspondent à la valeur d'une facette spécifique. Pour "
-"cela, utilisez le paramètre d'API suivant : "
+"cela, utilisez le paramètre d'API suivant : "
 "``exclude.FACETNAME=FACETVALUE``."
 
 #: ../../source/using_api/v1/using_facets.rst:176
@@ -317,7 +317,7 @@ msgid ""
 "For example: "
 "`<http://public.opendatasoft.com/api/datasets/1.0/search?exclude.modified=2013>`_"
 msgstr ""
-"Par exemple : "
+"Par exemple : "
 "`<http://public.opendatasoft.com/api/datasets/1.0/search?exclude.modified=2013>`_"
 
 #: ../../source/using_api/v1/using_facets.rst:178
@@ -336,7 +336,7 @@ msgid ""
 "`<http://public.opendatasoft.com/api/datasets/1.0/search?refine.modified=2013&refine.modified=2014>`_."
 msgstr ""
 "Par défaut, le facettage est conjonctif. Cela signifie que le contexte "
-"suivant ne renverra aucun résultat : "
+"suivant ne renverra aucun résultat : "
 "`<http://public.opendatasoft.com/api/datasets/1.0/search?refine.modified=2013&refine.modified=2014>`_."
 
 #: ../../source/using_api/v1/using_facets.rst:186
@@ -345,12 +345,12 @@ msgid ""
 "``disjunctive.FACETNAME=true``."
 msgstr ""
 "Vous pouvez activer le facettage disjonctif à l'aide du paramètre d'API "
-"suivant : ``disjunctive.FACETNAME=true``."
+"suivant : ``disjunctive.FACETNAME=true``."
 
 #: ../../source/using_api/v1/using_facets.rst:188
 msgid ""
 "For example: "
 "`<http://public.opendatasoft.com/api/datasets/1.0/search?refine.modified=2013&refine.modified=2014&disjunctive.modified=true>`_"
 msgstr ""
-"Par exemple : "
+"Par exemple : "
 "`<http://public.opendatasoft.com/api/datasets/1.0/search?refine.modified=2013&refine.modified=2014&disjunctive.modified=true>`_"
