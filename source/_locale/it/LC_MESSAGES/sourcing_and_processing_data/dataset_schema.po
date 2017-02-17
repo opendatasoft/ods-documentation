@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-17 16:28+0100\n"
+"POT-Creation-Date: 2017-02-14 16:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:5
 msgid ""
-"As seen in a previous article, a dataset content can be seen as flat "
+"As seen in a previous article, a dataset content can be seen as a flat "
 "database table. That is:"
 msgstr ""
 
@@ -111,75 +111,82 @@ msgstr ""
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:39
 msgid ""
 "A valid geo shape expressed in `GeoJSON <http://geojson.org/geojson-"
-"spec.html>`_. For example : { \"type\": \"LineString\", \"coordinates\": [ "
-"[100.0, 0.0], [101.0, 1.0] ] }. We do not support feature collections, only"
+"spec.html>`_."
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:42
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:41
+msgid "For example :"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:48
+msgid "Feature collections are not supported."
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:49
 msgid "Integer"
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:43
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:50
 msgid ""
 "Any valid integer value. If a floating point value is found, it is "
 "automatically cast to its integer part."
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:44
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:51
 msgid "Text"
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:45
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:52
 msgid "Anything"
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:46
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:53
 msgid "File"
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:47
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:54
 msgid "A file. Created from a File processor or a specific extractor."
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:49
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:56
 msgid ""
 "Next to their type, any field has a set of action items, which can be used "
 "to further refine your dataset schema."
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:51
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:58
 msgid "The **filter action** lets you define a **facet** for the field."
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:52
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:59
 msgid ""
 "The **field configuration action** will be described in more details below."
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:53
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:60
 msgid ""
 "The **reorder fields action** lets you reorder dataset fields at your "
 "convenience. This only affects the dataset API output."
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:55
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:62
 msgid ""
 "The **hide fields action** lets you hide specific dataset fields. Hidden "
 "fields are displayed at the right hand side of the table view and can easily"
 " be recovered."
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:59
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:66
 msgid "Configuring a field"
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:61
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:68
 msgid ""
 "The **field configuration button** allows you to fine tune your field's "
 "configuration."
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:66
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:73
 msgid ""
 "The generic option **ID** lets you define the record id computing policy. "
 "Each record is uniquely identified by its id, which is by default computed "
@@ -188,30 +195,30 @@ msgid ""
 "making it possible to handle records deduplication at record fields level."
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:71
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:78
 msgid ""
 "You then have access to a wide range of options depending on the field type."
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:90
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:97
 msgid "Text fields"
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:74
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:81
 msgid "**Sortable**"
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:76
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:83
 msgid ""
 "By default, textual fields are not sortable. This option lets you activate "
 "sorting on textual fields."
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:78
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:85
 msgid "**Multivalued**"
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:80
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:87
 msgid ""
 "This option lets you define the separator that will be used to interpret "
 "multi-valued fields. This option is used for multi-value facetting. For "
@@ -222,93 +229,95 @@ msgid ""
 " *France*, one entry for *UK*, one entry for *USA*)."
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:86
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:93
 msgid "**Hierarchical**"
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:88
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:95
 msgid ""
 "This property is used in conjunction with facetting. By default, facets are "
 "processed as a single, raw textual content. But sometimes, you may want to "
-"build hierarchical facets navigation. This option lets you choose the "
+"build a hierarchical facets navigation. This option lets you choose the "
 "hierarchy path separator to be used."
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:95
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:102
 msgid "Date and DateTime fields"
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:93
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:100
 msgid "**Precision**"
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:95
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:102
 msgid ""
 "This option lets you choose the precision of a temporal field (year, month "
 "and day for a Date field, hour and minute for a DateTime field)."
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:101
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:108
 msgid "Decimal and Integer fields"
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:98
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:105
 msgid "**Unit**"
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:100
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:107
 msgid ""
 "This option lets you define an unit associated with numerical fields. This "
 "option is used to complement the table view and is displayed next to the "
 "field's value."
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:104
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:111
 msgid "Special fields"
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:108
-msgid "Record_id"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:110
-msgid ""
-"We identify a record with an unique field named record_id. During the "
-"processing, if two records have the same record_id, the first one is "
-"replaced by the second."
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:113
-msgid "The record_id is compute at the end with the following rules:"
-msgstr ""
-
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:115
-msgid ""
-"Filter the fields. Keep all the fields which are mark as 'ID' or all the "
-"fields if no field is mark as id."
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:116
-msgid "Sort the fields values."
+msgid "Record id"
 msgstr ""
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:117
+msgid ""
+"We identify a record with a unique built-in field named *record_id*. During "
+"the processing, if two records have the same *record_id*, the first one is "
+"replaced by the second."
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:120
+msgid ""
+"The *record_id* is calculated at the end of the processing using the "
+"following principles:"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:122
+msgid ""
+"Filter the fields. Keep all the fields with the *ID* option or all the "
+"fields if no field has the *ID* option."
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:123
+msgid "Sort the fields values."
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:124
 msgid "Concat the sorted values."
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:118
-msgid "Apply a hash function (sha1) to the string"
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:125
+msgid "Apply a hash function to the result"
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:132
-msgid "Record_timestamp"
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:139
+msgid "Record timestamp"
 msgstr ""
 
-#: ../../source/sourcing_and_processing_data/dataset_schema.rst:134
+#: ../../source/sourcing_and_processing_data/dataset_schema.rst:141
 msgid ""
-"A record_timestamp field is generated for all records, its is a timestamp "
+"A *record_timestamp* field is generated for all records, it is a timestamp "
 "giving information about the creation date of the record. The value depends "
-"on the extractor type. For example on a csv file, the record_timestamp is a "
-"last modified date. On a realtime dataset, the record_timestamp is the date "
-"when the record arrived on the platform."
+"on the extractor type. For instance on a csv file, the *record_timestamp* is"
+" a last modified date. On a realtime dataset, the *record_timestamp* is the "
+"date when the record arrived on the platform."
 msgstr ""

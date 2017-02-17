@@ -613,11 +613,11 @@ activate it for you.
 Extract from JSON
 ~~~~~~~~~~~~~~~~~
 
-This processor extracts values from a field containing a JSON object following a list of ijson rules.
+This processor extracts values from a field containing a JSON object following a list of iJSON rules.
 
-It creates target columns for the extracted data that are automatically named like the ijson rules but replacing dots with underscores. For each ijson rule, a column is created with the extracted value.
+It creates target columns for the extracted data that are automatically named like the iJSON rules but replacing dots with underscores. For each iJSON rule, a column is created with the extracted value.
 
-The processor doesn't support ijson rules that lead to an array (containing a ``.item`` in the rule).
+The processor doesn't support iJSON rules that lead to an array (containing a ``.item`` in the rule).
 
 .. list-table::
   :header-rows: 1
@@ -630,14 +630,14 @@ The processor doesn't support ijson rules that lead to an array (containing a ``
     * Name of the field that holds the JSON object
     * Field
     * data
-  * * ijson rules
-    * ijson rules to apply to extract data from the JSON object above. An ijson rule is built with the names of all the field from the JSON root to the data to extract, separated with a dot.
+  * * iJSON rules
+    * iJSON rules to apply to extract data from the JSON object above. An iJSON rule is built with the names of all the field from the JSON root to the data to extract, separated with a dot.
     * List
     * block.metaB
 
-For example, let's assume that you have this json object into a text field :
+For example, let's assume that you have this JSON object into a text field :
 
-.. code-block:: json
+.. code-block:: JSON
 
     { "metaA": "Joe",
       "bloc" : {
@@ -652,9 +652,9 @@ For example, let's assume that you have this json object into a text field :
 * you will be able to extract the value ``valueB`` with this rule : ``bloc.metaB``
 * you will be able to extract the value ``5`` with this rule : ``bloc.int``
 * you will be able to extract the value ``sub_value`` with this rule : ``sub.sub_sub``
-* The rule ``bloc`` will extract the json object :
+* The rule ``bloc`` will extract the JSON object :
 
-    .. code-block:: json
+    .. code-block:: JSON
 
         {
             "metaB" : "valueB",
@@ -670,10 +670,10 @@ Expand JSON array
 
 This processor transposes rows containing a JSON array into several rows with a new column containing each value of the array.
 
-The parameter "ijson rule to array" works exactly like in the "Extract from JSON" processor and should contain the array to transpose (represented with the ijson rule ``.item``).
+The parameter "iJSON rule to array" works exactly like in the "Extract from JSON" processor and should contain the array to transpose (represented with the iJSON rule ``.item``).
 
-- If the field contains the JSON array directly, just put ``item`` as an ijson rule.
-- If the final element is an array, the ijson rule must end with ``.item``, meaning that the reached object should be treated as an array of items in the ijson syntax.
+- If the field contains the JSON array directly, just put ``item`` as an iJSON rule.
+- If the final element is an array, the iJSON rule must end with ``.item``, meaning that the reached object should be treated as an array of items in the iJSON syntax.
 - If you want to keep going into the items inside the array, you can keep adding key names after the ``.item``, but be careful to check that this path is valid for every object in the array.
 
 .. list-table::
@@ -683,12 +683,12 @@ The parameter "ijson rule to array" works exactly like in the "Extract from JSON
     * Description
     * Type
     * Example
-  * * json array field
+  * * JSON array field
     * Name of the field that holds the JSON array
     * Field
     * data
-  * * ijson rule to array
-    * ijson rule to iterate in the JSON array above. An ijson rule is built with the names of all the field from the JSON root to the data to extract, separated with a dot.
+  * * iJSON rule to array
+    * iJSON rule to iterate in the JSON array above. An iJSON rule is built with the names of all the field from the JSON root to the data to extract, separated with a dot.
     * List
     * block.metaB
   * * Output field
@@ -696,9 +696,9 @@ The parameter "ijson rule to array" works exactly like in the "Extract from JSON
     * Field
     *
 
-Example of ijson rules to extract from the following JSON array field:
+Example of iJSON rules to extract from the following JSON array field:
 
-.. code-block:: json
+.. code-block:: JSON
 
     [
         {
@@ -715,7 +715,7 @@ Example of ijson rules to extract from the following JSON array field:
 
 - ``item`` will transpose the record into two, one with each object of the array in the "Output field" column
 
-.. code-block:: json
+.. code-block:: JSON
 
     { "metaA": "Joe",
       "bloc" : [
@@ -775,7 +775,7 @@ The processor works with masks, it expects
 
 For example, let's assume  you have a temperature sensor that sends and hexadecimal value.
 
-  .. code-block:: json
+  .. code-block:: JSON
 
     hex value : 2C09
 
@@ -783,7 +783,7 @@ This hexadecimal value contains:
 - a decimal value encoded on 2 bytes
 - the sensor status on a bit.
 
-  .. code-block:: json
+  .. code-block:: JSON
 
     hex value : 2C09          <- information sent by the sensor in hexadecimal
     bin value : 00010110 00000100 1   <- same information in binary
@@ -803,31 +803,31 @@ Therefore, the processing pipeline will contains 3 **Extract bit mask** processo
 
 **Extract bit mask 1**
 
-  .. code-block:: json
+  .. code-block:: JSON
 
     00010110 -> 22
 
 **Extract bit mask 2**
 
-  .. code-block:: json
+  .. code-block:: JSON
 
     00000100 -> 4
 
 **Extract bit mask 3**
 
-  .. code-block:: json
+  .. code-block:: JSON
 
       1 -> OK
 
 **Expression**
 
-  .. code-block:: json
+  .. code-block:: JSON
 
     Expression : integer_temp & "." & decimal_temp
 
 **Temperature**
 
-  .. code-block:: json
+  .. code-block:: JSON
 
     Temperature : 22,4 °C
     Sensor : OK
