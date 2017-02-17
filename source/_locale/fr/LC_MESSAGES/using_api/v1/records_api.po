@@ -2,15 +2,15 @@
 # Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 16:11+0100\n"
+"POT-Creation-Date: 2017-02-17 13:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Trad_FR2 <datawords.translator.fr2@gmail.com>, 2017\n"
+"Last-Translator: Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2017\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -207,6 +207,12 @@ msgstr "Format de la sortie de la réponse. JSON (par défaut) CSV ou GeoJSONP."
 msgid "``callback``"
 msgstr "``callback``"
 
+#: ../../source/using_api/v1/records_api.rst:34
+#: ../../source/using_api/v1/records_api.rst:158
+#: ../../source/using_api/v1/records_api.rst:198
+msgid "JSONP callback. Example: ``format=jsonp&callback=myFunction``"
+msgstr "Rappel JSONP. Exemple : ``format=jsonp&callback=myFunction``"
+
 #: ../../source/using_api/v1/records_api.rst:35
 msgid "``x``"
 msgstr "``x``"
@@ -221,6 +227,14 @@ msgid ""
 "and ``periodic``  parameters. For other field types, the actual field values"
 " are used as x values."
 msgstr ""
+"Nom du champ sur lequel l'agrégation des données sera basée. Ce paramètre "
+"est obligatoire. Il permet d'analyser un sous-ensemble de données en "
+"fonction des différentes valeurs des champs. Le comportement peut varier en "
+"fonction du type de champ. Pour les champs **Date** et **DateTime**, les "
+"tranches sont générées à partir des dates en utilisant le niveau "
+"d'agrégation défini dans les paramètres ``precision`` et ``periodic``. Pour "
+"les autres types de champs, les valeurs réelles des champs sont utilisées en"
+" tant que valeurs de x."
 
 #: ../../source/using_api/v1/records_api.rst:37
 msgid "``y.<SERIE>.func``"
@@ -237,6 +251,15 @@ msgid ""
 "simply the number of records for the ``COUNT``  function) for each value of "
 "x."
 msgstr ""
+"Définition de la fonction d'agrégation d'analyse. Plusieurs séries peuvent "
+"être calculées simultanément, il suffit pour cela de nommer ce paramètre "
+"avec un nom de série arbitraire que vous pouvez réutiliser pour spécifier "
+"l'expression agrégée associée. La liste des fonctions d'agrégation "
+"disponibles est la suivante : ``COUNT``, ``AVG``, ``SUM``, ``MIN``, ``MAX``,"
+" ``STDDEV``, ``SUMSQUARES``. Ces fonctions renvoient le résultat de leur "
+"exécution sur l'expression fournie dans le paramètre ``y.<SERIE>.expr`` (ou "
+"simplement le nombre d'enregistrements pour la fonction ``COUNT``) pour "
+"chaque valeur de x."
 
 #: ../../source/using_api/v1/records_api.rst:39
 msgid "``y.<SERIE>.expr``"
@@ -251,6 +274,13 @@ msgid ""
 "in the Dataset (**Int** or **Double**), or a mathematical expression (see "
 "below to get more details on the expression language)."
 msgstr ""
+"Définit la valeur à agréger. Ce paramètre est obligatoire pour chaque "
+"fonction d'agrégation à l'exception de la fonction ``COUNT``. Le paramètre "
+"<SERIES> doit avoir le même nom que celui utilisé pour la fonction "
+"d'agrégation correspondante requise. Ce paramètre peut contenir le nom d'un "
+"champ numérique du jeu de données (**Int** ou **Double**), ou une expression"
+" mathématique (vous trouverez davantage de détails sur le langage "
+"d'expression ci-dessous)."
 
 #: ../../source/using_api/v1/records_api.rst:41
 msgid "``y.<SERIE>.cumulative``"
@@ -262,6 +292,9 @@ msgid ""
 "parameter is set to true, the results of a series are recursively summed up "
 "(``serie(x) = serie(x) + serie(x-1)`` )."
 msgstr ""
+"Ce paramètre accepte les valeurs ``true`` et ``false``  (par défaut). Si le "
+"paramètre est défini sur true, les résultats d'une série sont additionnés de"
+" manière récursive (``serie(x) = serie(x) + serie(x-1)``)."
 
 #: ../../source/using_api/v1/records_api.rst:43
 msgid "``maxpoints``"
@@ -291,6 +324,15 @@ msgid ""
 "used, the generated value range from 0 to 6 where 0 corresponds to Monday "
 "and 6 to Sunday."
 msgstr ""
+"Utilisé uniquement dans les cas où le paramètre x est de type **Date** or "
+"**DateTime**. Il définit le niveau auquel est réalisée l'agrégation. Les "
+"valeurs possibles sont ``year`` (par défaut), ``month``, ``week``, "
+"``weekday``, ``day``, ``hour``, ``minute``. Ce paramètre vous permet, par "
+"exemple, de calculer des agrégations sur les mois de toutes les années. Par "
+"exemple, avec une valeur définie sur ``weekday``, la sortie sera : "
+"``[{\"x\": {\"weekday\":0},\"series1\": 12}, {\"x\": "
+"{\"weekday\":1},\"series1\": 30}]``. Lorsque ``weekday`` est utilisé, la "
+"valeur générée est comprise entre 0 et 6, 0 étant le lundi et 6 le dimanche."
 
 #: ../../source/using_api/v1/records_api.rst:47
 msgid "``precision``"
@@ -309,11 +351,38 @@ msgid ""
 "  will output ``[{\"x\": {\"year\": 2002, \"month\":1},\"series1\": 3}, "
 "{\"x\": {\"year\": 2002, \"month\":1},\"series1\": 5}]``"
 msgstr ""
+"Utilisé uniquement dans les cas où le paramètre x est de type **Date** ou "
+"**DateTime**. Il définit la précision de l'agrégation. Les valeurs possibles"
+" sont ``year``, ``month``, ``week``, ``day`` (par défaut), ``hour``, "
+"``minute``. Si le paramètre ``periodic`` est défini sur ``weekday``, le "
+"paramètre ``precision`` est alors ignoré. Ce paramètre doit respecter "
+"l'annotation ``precision`` du champ. Si l'annotation ``precision`` du champ "
+"est définie sur ``day``, la précision de la série peut au maximum être "
+"définie sur ``day``. Exemple : "
+"``x=event_date&periodic=year&precision=month&y.series1.func=COUNT`` renverra"
+" la sortie ``[{\"x\": {\"year\": 2002, \"month\":1},\"series1\": 3}, {\"x\":"
+" {\"year\": 2002, \"month\":1},\"series1\": 5}]``"
 
 #: ../../source/using_api/v1/records_api.rst:49
 #: ../../source/using_api/v1/records_api.rst:241
 msgid "``sort``"
 msgstr "``sort``"
+
+#: ../../source/using_api/v1/records_api.rst:50
+msgid ""
+"sorts the aggregation values according to the specified series, or to the x "
+"parameter. By default, the values are sorted in descending order, according "
+"to the x parameter. A minus sign ('-') can however be prepended to the "
+"argument to make an ascending sort. Examples: "
+"``x=city&y.series1.func=SUM&y.series1.expr=population&sort=-x`` , `` "
+"x=city&y.series1.func=SUM&y.series1.expr=population&sort=-series1``"
+msgstr ""
+"Trie les valeurs de l'agrégation en fonction de la série spécifiée, ou du "
+"paramètre x. Par défaut, les valeurs sont triées en ordre décroissant, en "
+"fonction du paramètre x. Le caractère moins ('-') peut cependant être "
+"préfixé à l'argument pour effectuer un tri en ordre croissant. Exemples : "
+"``x=city&y.series1.func=SUM&y.series1.expr=population&sort=-x``, "
+"``x=city&y.series1.func=SUM&y.series1.expr=population&sort=-series1``"
 
 #: ../../source/using_api/v1/records_api.rst:52
 msgid "**Expression language**"
@@ -346,16 +415,16 @@ msgid ""
 "ceil, floor, rint, atan2, pow, round, random, abs, max, min, ulp, signum, "
 "sinh, cosh, tanh, hypot"
 msgstr ""
-"Les fonctions suivantes sont disponibles : time, sin, cos, tan, asin, acos, "
-"atan, toRadians, toDegrees, exp, log, log10, sqrt, cbrt, IEEEremainder, "
-"ceil, floor, rint, atan2, pow, round, random, abs, max, min, ulp, signum, "
-"sinh, cosh, tanh, hypot"
+"Les fonctions suivantes sont également disponibles : time, sin, cos, tan, "
+"asin, acos, atan, toRadians, toDegrees, exp, log, log10, sqrt, cbrt, "
+"IEEEremainder, ceil, floor, rint, atan2, pow, round, random, abs, max, min, "
+"ulp, signum, sinh, cosh, tanh, hypot"
 
 #: ../../source/using_api/v1/records_api.rst:60
 msgid ""
 "Example: ``x=espece_arbre&y.series1.func=Min&y.series1.expr=sin(height)*2``"
 msgstr ""
-"Exemple: ``x=espece_arbre&y.series1.func=Min&y.series1.expr=sin(height)*2``"
+"Exemple : ``x=espece_arbre&y.series1.func=Min&y.series1.expr=sin(height)*2``"
 
 #: ../../source/using_api/v1/records_api.rst:63
 msgid "Records Download API"
@@ -484,17 +553,11 @@ msgstr ""
 #: ../../source/using_api/v1/records_api.rst:123
 msgid "The clustering results are returned in JSON."
 msgstr ""
-"Les résultats de la construction de clusters sont renvoyés au format JSON."
+"Les résultats du regroupement en cluster sont renvoyés au format JSON."
 
 #: ../../source/using_api/v1/records_api.rst:125
 msgid "**API endpoint**: ``/api/records/1.0/geocluster``"
 msgstr "**Point d'entrée de l'API** : ``/api/records/1.0/geocluster``"
-
-#: ../../source/using_api/v1/records_api.rst:34
-#: ../../source/using_api/v1/records_api.rst:158
-#: ../../source/using_api/v1/records_api.rst:198
-msgid "JSONP callback. Example: ``format=jsonp&callback=myFunction``"
-msgstr "Rappel JSONP. Exemple : ``format=jsonp&callback=myFunction``"
 
 #: ../../source/using_api/v1/records_api.rst:159
 msgid "``clusterprecision``"
@@ -520,7 +583,7 @@ msgid ""
 "clusterprecision and shapeprecision may not exceed 29."
 msgstr ""
 "Définit la précision de l'enveloppe du cluster renvoyé. La somme des "
-"paramètres ``clusterprecision`` and ``shapeprecision`` ne doit pas excéder "
+"paramètres ``clusterprecision`` et ``shapeprecision`` ne doit pas dépasser "
 "29."
 
 #: ../../source/using_api/v1/records_api.rst:165
@@ -532,8 +595,8 @@ msgid ""
 "Defines the desired clustering mode. Supported values are ``polygon``  "
 "(default) and ``heatmap``."
 msgstr ""
-"Définit le mode de création de cluster souhaité. Les valeurs supportées sont"
-" ``polygon`` (par défaut) et ``heatmap``."
+"Définit le mode de regroupement en cluster souhaité. Les valeurs prises en "
+"charge sont ``polygon`` (par défaut) et ``heatmap``."
 
 #: ../../source/using_api/v1/records_api.rst:167
 msgid "``y.<SERIE>.fun and y.<SERIE>.expr``"
@@ -560,7 +623,7 @@ msgid ""
 "This API makes it possible to fetch an individual record using its "
 "identifier (Record ID)."
 msgstr ""
-"Cette API permet de récupérer un jeu de données spécifique à l'aide de son "
+"Cette API permet de récupérer un enregistrement spécifique à l'aide de son "
 "identifiant (ID d'enregistrement)."
 
 #: ../../source/using_api/v1/records_api.rst:178
@@ -625,7 +688,7 @@ msgstr ""
 "réalisé en ordre décroissant (de la valeur la plus élevée à la valeur la "
 "plus basse). Le caractère moins ('-') peut être utilisé pour réaliser un tri"
 " en ordre croissant. Le tri est uniquement disponible sur les champs "
-"numériques (int, double, date and datetime) et sur les champs de texte "
+"numériques (int, double, date et datetime) et sur les champs de texte "
 "présentant l'annotation``sortable``. Exemples : ``sort=price`` , "
 "``sort=-width``"
 
@@ -639,7 +702,7 @@ msgid ""
 "returned is 1000. By default, 10 results are returned."
 msgstr ""
 "Nombre de résultats à renvoyer pour chaque appel. Le nombre maximum de "
-"lignes renvoyées est de 1000. Par défaut, 10 résultats sont renvoyés."
+"lignes renvoyées est de 1 000. Par défaut, 10 résultats sont renvoyés."
 
 #: ../../source/using_api/v1/records_api.rst:249
 msgid "``start``"
@@ -660,25 +723,3 @@ msgid ""
 msgstr ""
 "Format de la sortie de la réponse. JSON (par défaut), JSONP, GeoJSON ou "
 "GeoJSONP."
-
-#: ../../source/using_api/v1/records_api.rst:50
-msgid ""
-"sorts the aggregation values according to the specified series, or to the x "
-"parameter. By default, the values are sorted in descending order, according "
-"to the x parameter. A minus sign ('-') can however be prepended to the "
-"argument to make an ascending sort. Examples: "
-"``x=city&y.series1.func=SUM&y.series1.expr=population&sort=-x`` , `` "
-"x=city&y.series1.func=SUM&y.series1.expr=population&sort=-series1``"
-msgstr ""
-
-#~ msgid "JSONP callback. Example: ``format=jsonp&callback=myFunction<."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "sorts the aggregation values according to the specified series, or to the x "
-#~ "parameter. By default, the values are sorted in descending order, according "
-#~ "to the x parameter. A minus sign ('-') can however be prepended to the "
-#~ "argument to make an ascending sort. Examples: "
-#~ "``x=city&y.series1.func=SUM&y.series1.expr=population&sort=-x`` , "
-#~ "``x=city&y.series1.func=SUM&y.series1.expr=population&sort=-series1``"
-#~ msgstr ""

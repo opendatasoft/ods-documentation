@@ -2,13 +2,13 @@
 # Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 16:11+0100\n"
+"POT-Creation-Date: 2017-02-17 13:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -184,6 +184,12 @@ msgstr ""
 msgid "``callback``"
 msgstr ""
 
+#: ../../source/using_api/v1/records_api.rst:34
+#: ../../source/using_api/v1/records_api.rst:158
+#: ../../source/using_api/v1/records_api.rst:198
+msgid "JSONP callback. Example: ``format=jsonp&callback=myFunction``"
+msgstr ""
+
 #: ../../source/using_api/v1/records_api.rst:35
 msgid "``x``"
 msgstr ""
@@ -288,6 +294,16 @@ msgstr ""
 #: ../../source/using_api/v1/records_api.rst:49
 #: ../../source/using_api/v1/records_api.rst:241
 msgid "``sort``"
+msgstr ""
+
+#: ../../source/using_api/v1/records_api.rst:50
+msgid ""
+"sorts the aggregation values according to the specified series, or to the x "
+"parameter. By default, the values are sorted in descending order, according "
+"to the x parameter. A minus sign ('-') can however be prepended to the "
+"argument to make an ascending sort. Examples: "
+"``x=city&y.series1.func=SUM&y.series1.expr=population&sort=-x`` , `` "
+"x=city&y.series1.func=SUM&y.series1.expr=population&sort=-series1``"
 msgstr ""
 
 #: ../../source/using_api/v1/records_api.rst:52
@@ -424,12 +440,6 @@ msgstr ""
 msgid "**API endpoint**: ``/api/records/1.0/geocluster``"
 msgstr ""
 
-#: ../../source/using_api/v1/records_api.rst:34
-#: ../../source/using_api/v1/records_api.rst:158
-#: ../../source/using_api/v1/records_api.rst:198
-msgid "JSONP callback. Example: ``format=jsonp&callback=myFunction``"
-msgstr ""
-
 #: ../../source/using_api/v1/records_api.rst:159
 msgid "``clusterprecision``"
 msgstr ""
@@ -557,25 +567,3 @@ msgid ""
 "Format of the response output. One of JSON (default), JSONP, GeoJSON and "
 "GeoJSONP."
 msgstr ""
-
-#: ../../source/using_api/v1/records_api.rst:50
-msgid ""
-"sorts the aggregation values according to the specified series, or to the x "
-"parameter. By default, the values are sorted in descending order, according "
-"to the x parameter. A minus sign ('-') can however be prepended to the "
-"argument to make an ascending sort. Examples: "
-"``x=city&y.series1.func=SUM&y.series1.expr=population&sort=-x`` , `` "
-"x=city&y.series1.func=SUM&y.series1.expr=population&sort=-series1``"
-msgstr ""
-
-#~ msgid "JSONP callback. Example: ``format=jsonp&callback=myFunction<."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "sorts the aggregation values according to the specified series, or to the x "
-#~ "parameter. By default, the values are sorted in descending order, according "
-#~ "to the x parameter. A minus sign ('-') can however be prepended to the "
-#~ "argument to make an ascending sort. Examples: "
-#~ "``x=city&y.series1.func=SUM&y.series1.expr=population&sort=-x`` , "
-#~ "``x=city&y.series1.func=SUM&y.series1.expr=population&sort=-series1``"
-#~ msgstr ""
