@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 16:11+0100\n"
+"POT-Creation-Date: 2017-02-17 13:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -1412,19 +1412,19 @@ msgstr ""
 #: ../../source/sourcing_and_processing_data/processing.rst:616
 msgid ""
 "This processor extracts values from a field containing a JSON object "
-"following a list of ijson rules."
+"following a list of iJSON rules."
 msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:618
 msgid ""
 "It creates target columns for the extracted data that are automatically "
-"named like the ijson rules but replacing dots with underscores. For each "
-"ijson rule, a column is created with the extracted value."
+"named like the iJSON rules but replacing dots with underscores. For each "
+"iJSON rule, a column is created with the extracted value."
 msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:620
 msgid ""
-"The processor doesn't support ijson rules that lead to an array (containing "
+"The processor doesn't support iJSON rules that lead to an array (containing "
 "a ``.item`` in the rule)."
 msgstr ""
 
@@ -1445,12 +1445,12 @@ msgid "data"
 msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:633
-msgid "ijson rules"
+msgid "iJSON rules"
 msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:634
 msgid ""
-"ijson rules to apply to extract data from the JSON object above. An ijson "
+"iJSON rules to apply to extract data from the JSON object above. An iJSON "
 "rule is built with the names of all the field from the JSON root to the data"
 " to extract, separated with a dot."
 msgstr ""
@@ -1462,7 +1462,7 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:638
 msgid ""
-"For example, let's assume that you have this json object into a text field :"
+"For example, let's assume that you have this JSON object into a text field :"
 msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:651
@@ -1488,7 +1488,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:655
-msgid "The rule ``bloc`` will extract the json object :"
+msgid "The rule ``bloc`` will extract the JSON object :"
 msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:669
@@ -1503,22 +1503,22 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:673
 msgid ""
-"The parameter \"ijson rule to array\" works exactly like in the \"Extract "
+"The parameter \"iJSON rule to array\" works exactly like in the \"Extract "
 "from JSON\" processor and should contain the array to transpose (represented"
-" with the ijson rule ``.item``)."
+" with the iJSON rule ``.item``)."
 msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:675
 msgid ""
-"If the field contains the JSON array directly, just put ``item`` as an ijson"
+"If the field contains the JSON array directly, just put ``item`` as an iJSON"
 " rule."
 msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:676
 msgid ""
-"If the final element is an array, the ijson rule must end with ``.item``, "
+"If the final element is an array, the iJSON rule must end with ``.item``, "
 "meaning that the reached object should be treated as an array of items in "
-"the ijson syntax."
+"the iJSON syntax."
 msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:677
@@ -1529,7 +1529,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:686
-msgid "json array field"
+msgid "JSON array field"
 msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:687
@@ -1537,12 +1537,12 @@ msgid "Name of the field that holds the JSON array"
 msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:690
-msgid "ijson rule to array"
+msgid "iJSON rule to array"
 msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:691
 msgid ""
-"ijson rule to iterate in the JSON array above. An ijson rule is built with "
+"iJSON rule to iterate in the JSON array above. An iJSON rule is built with "
 "the names of all the field from the JSON root to the data to extract, "
 "separated with a dot."
 msgstr ""
@@ -1553,7 +1553,7 @@ msgid "Name of the field that will contain the extracted element"
 msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:699
-msgid "Example of ijson rules to extract from the following JSON array field:"
+msgid "Example of iJSON rules to extract from the following JSON array field:"
 msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:716

@@ -211,7 +211,7 @@ else
 endif
 
 
-push-translations:
+push-translations: clean html
 ifeq ($(shell git symbolic-ref HEAD --short), develop)
 	@echo "Building translation files"
 	@make gettext
