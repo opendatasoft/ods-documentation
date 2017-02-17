@@ -635,9 +635,9 @@ The processor doesn't support iJSON rules that lead to an array (containing a ``
     * List
     * block.metaB
 
-For example, let's assume that you have this json object into a text field :
+For example, let's assume that you have this JSON object into a text field :
 
-.. code-block:: json
+.. code-block:: JSON
 
     { "metaA": "Joe",
       "bloc" : {
@@ -652,9 +652,9 @@ For example, let's assume that you have this json object into a text field :
 * you will be able to extract the value ``valueB`` with this rule : ``bloc.metaB``
 * you will be able to extract the value ``5`` with this rule : ``bloc.int``
 * you will be able to extract the value ``sub_value`` with this rule : ``sub.sub_sub``
-* The rule ``bloc`` will extract the json object :
+* The rule ``bloc`` will extract the JSON object :
 
-    .. code-block:: json
+    .. code-block:: JSON
 
         {
             "metaB" : "valueB",
@@ -683,7 +683,7 @@ The parameter "iJSON rule to array" works exactly like in the "Extract from JSON
     * Description
     * Type
     * Example
-  * * json array field
+  * * JSON array field
     * Name of the field that holds the JSON array
     * Field
     * data
@@ -698,7 +698,7 @@ The parameter "iJSON rule to array" works exactly like in the "Extract from JSON
 
 Example of iJSON rules to extract from the following JSON array field:
 
-.. code-block:: json
+.. code-block:: JSON
 
     [
         {
@@ -715,7 +715,7 @@ Example of iJSON rules to extract from the following JSON array field:
 
 - ``item`` will transpose the record into two, one with each object of the array in the "Output field" column
 
-.. code-block:: json
+.. code-block:: JSON
 
     { "metaA": "Joe",
       "bloc" : [
@@ -775,7 +775,7 @@ The processor works with masks, it expects
 
 For example, let's assume  you have a temperature sensor that sends and hexadecimal value.
 
-  .. code-block:: json
+  .. code-block:: JSON
 
     hex value : 2C09
 
@@ -783,7 +783,7 @@ This hexadecimal value contains:
 - a decimal value encoded on 2 bytes
 - the sensor status on a bit.
 
-  .. code-block:: json
+  .. code-block:: JSON
 
     hex value : 2C09          <- information sent by the sensor in hexadecimal
     bin value : 00010110 00000100 1   <- same information in binary
@@ -803,31 +803,31 @@ Therefore, the processing pipeline will contains 3 **Extract bit mask** processo
 
 **Extract bit mask 1**
 
-  .. code-block:: json
+  .. code-block:: JSON
 
     00010110 -> 22
 
 **Extract bit mask 2**
 
-  .. code-block:: json
+  .. code-block:: JSON
 
     00000100 -> 4
 
 **Extract bit mask 3**
 
-  .. code-block:: json
+  .. code-block:: JSON
 
       1 -> OK
 
 **Expression**
 
-  .. code-block:: json
+  .. code-block:: JSON
 
     Expression : integer_temp & "." & decimal_temp
 
 **Temperature**
 
-  .. code-block:: json
+  .. code-block:: JSON
 
     Temperature : 22,4 °C
     Sensor : OK
