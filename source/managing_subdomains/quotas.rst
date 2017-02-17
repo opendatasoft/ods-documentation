@@ -1,16 +1,7 @@
 Managing subdomains quotas
 ==========================
 
-A subdomain's consumption (API calls, number of datasets...) is done directly from the parent domain's quotas. To prevent one of your subdomain to
-consume too much of your own quotas, you can assign individual limits to each subdomain. 
-
-.. note::
-    This will not *assign* a part of your quota for the subdomain's exclusive usage,
-    but will instead act as a limit. So if you have a quota of 1 million API calls per month, and have 5 subdomains each with 500 000 API calls per month,
-    all the quota of your own domain could be consumed entirely by subdomains, but it may also be a good solution if you just want to plan ahead for a
-    sudden API calls surge on your subdomains. Plan carefully!
-
-Quotas of subdomains are managed at the parent domain level. Administrators can thus:
+Quotas of subdomains are managed at the parent domain level. Subdomain administrators can thus:
 
 * Configure the number of API calls a subdomain can have
 * The maximum number of datasets that can be published on a subdomain
@@ -19,7 +10,7 @@ Quotas of subdomains are managed at the parent domain level. Administrators can 
 
 .. ifconfig:: language == 'en'
 
-    .. figure:: subdomains__quotas--en.png
+    .. figure:: subdomains__quotas--en.jpg
         :alt: Subdomains quotas
         :width: 600px
         :align: center

@@ -16,50 +16,41 @@ Users with this permission will see a *Subdomains* menu in the left control pane
 
 .. ifconfig:: language == 'en'
 
-    .. figure:: subdomains__menu--en.png
+    .. figure:: subdomains__menu--en.jpg
         :alt: Subdomains menu
         :width: 200px
         :align: center
 
         Access subdomains configuration screen
 
-The maximum number of subdomains you can create is limited and depends on your OpenDataSoft's contract. 
+The maximum number of subdomains you can create is limited and depends on your OpenDataSoft's contract. To create a new subdomain, simply hit the *Create a new subdomain* link and fill in the following information:
 
-To create a new subdomain, click the *Add subdomain* link in the menu, or click the *Create subdomain* button on the Subdomain's list page.
-
-.. ifconfig:: language == 'en'
-
-    .. figure:: subdomains__new-button--en.png
-        :alt: Button to create a subdomain
-        :width: 400px
-        :align: center
-
-        Button to create a subdomain
-
-You will be prompted a form to create your new subdomain, with the following fields:
-
-* **Subdomain name**: the name of the subdomain, which will appear for example in emails. This can be changed later by the subdomain's administrator.
-
-* **Subdomain identifier**: the identifier of your subdomain.
+* **Domain identifier**: the identifier of your subdomain.
 
   The real address of your domain will thus be: <Subdomain Identifier>-<Domain Identifier>.opendatasoft.com. For instance, if you own an OpenDataSoft domain named **mydomain** (that can be accessed at **mydomain.opendatasoft.com**) and if you create a subdomain named **test**, the subdomain full address will be: **test-mydomain.opendatasoft.com**.
 
   Of course, like with domains, you can contact the OpenDataSoft's support to get your subdomains DNS customized, see :doc:`Customizing your domain URL</configuring_portal/custom_urls>` for more details.
 
-* **Administrator's email address**: the email address of the subdomain administrator.
+* **Owner's email address**: the email address of the subdomain administrator.
 
   This email address does not have to belong to a user already having an OpenDataSoft account. In which case, the OpenDataSoft platform will automatically initiate the account creation procedure.
 
   The owner is granted full administrative privilege over the newly created subdomain. 
 
-You will also be able to pre-configure :doc:`distribution parameters, distributed content and datasets </managing_subdomains/distribute>`, 
-and :doc:`usage limits </managing_subdomains/quotas>`, as described in their respective documentation.
+.. ifconfig:: language == 'en'
 
-Once created, the subdomain appears in the subdomains list, along with some information related to its current quotas.
+    .. figure:: subdomains__creation--en.jpg
+        :alt: Subdomains creation
+        :width: 600px
+        :align: center
+
+        Create a subdomain
+
+Once created, the subdomain is displayed in the subdomains list, along with some information related to its current quotas.
 
 .. ifconfig:: language == 'en'
 
-    .. figure:: subdomains__created--en.png
+    .. figure:: subdomains__created--en.jpg
         :alt: Subdomains created
         :width: 600px
         :align: center
