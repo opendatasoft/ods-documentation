@@ -2,6 +2,7 @@ Distributing content to subdomains
 ==================================
 
 As a "parent" domain, you can choose to distribute specific pages and datasets to your subdomains. For example you could:
+
 - distribute a common homepage to your other business units
 - distribute a part of a large dataset to subdomains you created for each of your customers
 - distribute a dashboard, and at the same time the datasets used for the dashboard
