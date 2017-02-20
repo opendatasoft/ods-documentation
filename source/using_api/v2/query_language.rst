@@ -238,6 +238,33 @@ For example one can search in the dataset containing the history of the SuperBow
 
 Multiple operator fields can be used between the field name and the query depending of the type
 
+Select clause
+-------------
+
+The **select** clause can be used in the whole search API as the parameter ``select``. Its goal is to allow you to choose the fields that will be returned for each row, transform them using arithmetic, rename them, add computed virtual fields, include or exclude fields based on a pattern.
+
+A **select** clause can be a single expression or a list of comma-separated expressions.
+
+Select expression
+~~~~~~~~~~~~~~~~~
+
+.. code::
+
+  *
+  field1, field2, field3
+  field1 AS my_field, field2
+  field1 * 2 AS twice_field1
+
+These expressions are classic expressions showing multiple selection, field renaming and arithmetic select. The '*' (wildcard) means all the fields (if not in an arithmetic select where it is treated as the multiply sign). It is the default behavior when no select is specified in the search endpoint. In the aggregates endpoint, the default is to only display fields used for the aggregation.
+
+Include and exclude
+~~~~~~~~~~~~~~~~~~~
+
+.. code::
+
+  INCLUDE(pop) # will only include fields which name is pop
+  EXCLUDE(pop) # will exclude fields which name is pop
+
 Query language functions
 ------------------------
 
@@ -254,7 +281,7 @@ Advanced functions can be used in the query language.
        containing a birth date greater or equal to the current datetime. This function can also accept parameters, see
        below for the ``NOW()`` function available parameters.
 
-**Available parameters for the ``NOW()`` function**:
+Available parameters for the ``NOW()`` function:
 
 * years, months, weeks, days, hours, minutes, seconds, microseconds: These parameters add time to the current date.
 
