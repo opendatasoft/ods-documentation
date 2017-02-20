@@ -216,7 +216,7 @@ your queries to filter the results based on a specific field's value.
    * * references
      * The references for the dataset
 
-The domain administrator might define a richer metadata template, thus giving acces to a richer set of filtering fields.
+The domain administrator might define a richer metadata template, thus giving access to a richer set of filtering fields.
 
 For example, one can search on public.opendatasoft.com datasets which have ``Paris`` in their title or description and
 which contain at least 50 000 records:
