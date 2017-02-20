@@ -42,63 +42,150 @@ The **type** function returns rows where the field named *field_name* has some t
 
    TYPE(INT, field_name)
 
-The **distance** function limits the result set to a geographical area defined by a circle defined by its center and a distance. The coordinates of the center of the circle are expressed in WGS84 (GEOM'lat,long'). The distance is numeric and can have a unit in ``mi``, ``yd``, ``ft``, ``m``, ``cm``, ``km``, ``mm``.
+The **distance** function limits the result set to a geographical area defined by a circle defined by its center and a distance. The coordinates of the center of the circle are expressed in the `WKT format <https://en.wikipedia.org/wiki/Well-known_text>`_). The distance is numeric and can have a unit in ``mi``, ``yd``, ``ft``, ``m``, ``cm``, ``km``, ``mm``.
 
 .. code::
 
    DISTANCE(field_name, geometry, distance)
-   DISTANCE(field_name, GEOM'48.8520930694,2.34738897685', 1 km)
-   DISTANCE(field_name, GEOM'48.8520930694,2.34738897685', 100 yd)
+   DISTANCE(field_name, GEOM'wkt_point', 1 km)
+   DISTANCE(field_name, GEOM'wkt_point', 100 yd)
 
-The **geometry** function limits the result set to a geographical area defined by a polygon with coordinates expressed in WGS84 as in GEOM'(lat1,lon1),(lat2,lon2),(lat3,lon3)', and a mode in ``INTERSECT``, ``DISJOINT``, ``WITHIN``.
+The **geometry** function limits the result set to a geographical area defined by a polygon with coordinates expressed in the WKT format, and a mode in ``INTERSECT``, ``DISJOINT``, ``WITHIN``.
 
 .. code::
 
    GEOMETRY(field_name, geometry, mode)
-   GEOMETRY(field_name, GEOM'(48.883086,2.379072),(48.879022,2.379930),(48.883651,2.386968)', INTERSECT)
-   GEOMETRY(field_name, GEOM'(48.883086,2.379072),(48.879022,2.379930),(48.883651,2.386968)', DISJOINT)
-   GEOMETRY(field_name, GEOM'(48.883086,2.379072),(48.879022,2.379930),(48.883651,2.386968)', WITHIN)
+   GEOMETRY(field_name, GEOM'wkt_shape', INTERSECT)
+   GEOMETRY(field_name, GEOM'wkt_shape', DISJOINT)
+   GEOMETRY(field_name, GEOM'wkt_shape', WITHIN)
 
-The **bbox** function limits the result set to a rectangular box defined by its top left and its bottom right coordinates expressed in WGS84 as in GEOM'(lat,long)'.
+The **bbox** function limits the result set to a rectangular box defined by its top left and its bottom right coordinates expressed in the WKT format.
 
 .. code::
 
    BBOX(field_name, geometry, geometry)
-   BBOX(field_name, GEOM'48.8520930694,2.34738897685', GEOM'48.844967, 2.355798')
+   BBOX(field_name, GEOM'wkt_point', GEOM'wkt_point')
 
-Full-text search
-----------------
+Filter expressions
+~~~~~~~~~~~~~~~~~~
 
-The query language accepts full text queries.
+Filter expressions allow you to use arithmetic and comparisons to limit the result set to matching rows.
 
-This query returns all results that contain all words passed in the query.
-If a given word or compounds is surrounded with double quotes, it performs an ``AND`` query on each tokenized word.
+.. code::
 
-* ``q=film`` returns results that contain film
-* ``q="action movies"`` returns results that contain action and movies.
+  field_name > 5
+  field_name * 2 <= 10
+  field_name * 2 = (10 + 1) * 2
+  field_name != 0
+  field_name IS NOT NULL
+
+Filter expressions also work with dates and ranges of dates, as the following examples show.
+
+.. code::
+
+  field_name >= DATE'2008-12'
+  field_name:[ DATE'2007-11' TO DATE'2008-01' [
+  field_name IN ] DATE'2007-11-01' .. DATE'2008-01-22' [
+  field_name_1:[ DATE'2007-11' TO DATE'2008-01' ] AND NOT field_name_2 = 2
+
+As you can see in these examples, the syntax is flexible and you can combine several statements thanks to boolean expressions (``AND``, ``OR``, ``NOT``).
+
+For text searches, the matched string must be single or double quoted. The keyword "LIKE" is used to perform approximate searches, or prefixed searches.
+
+.. code::
+
+  field_name = "school"       # exact match
+  field_name: "school"        # will match "high school", "school", "school bus", but not "schoolbag"
+  field_name LIKE "school"    # will match "high school", "school", "school bus", but not "schoolbag"
+  field_name LIKE "school*"   # will match "school", "schoolbag", "schoolbook"
+
+Text field
+^^^^^^^^^^
+
+.. list-table::
+   :header-rows: 1
+
+   * * Operators
+     * Description
+   * * ``:``
+     * Perform a normalized query on provided token. Example: ``film_name:star`` will match ``star wars`` and ``Star Trek``
+       To match multi tokens, it is possible to use quotes. ``film_name:"star wars"`` will match fields containing ``star`` and ``wars``
+   * * ``=``
+     * Perform an exact query (not tokenized and not normalized) on the specified field.
+       Example: ``film_name=Star`` will not match ``Star Wars``. To match ``Star Wars`` it is possible to use quotes.
+       ``film_name="Star Wars``
+
+Numeric field
+^^^^^^^^^^^^^
+
+.. list-table::
+   :header-rows: 1
+
+   * * Operators
+     * Description
+   * * ``:``, ``=``
+     * Match a numeric value. For instance: ``age:18`` will filter rows with field ``age`` is equals to ``18``
+   * * ``>``, ``<``, ``>=``, ``<=``
+     * Return results whose field values are larger, smaller, larger or equal, smaller or equal to the given value.
+   * * ``[lower_numeric (TO|..) higher_numeric]``
+     * Queries Records whose numeric value is between ``lower_numeric`` and ``higher_numeric``.
+       An inclusive or exclusive bound can be used. Example: ``]lower_numeric (TO|..) higher_numeric[`` will exclude ``lower_numeric`` and ``higher_numeric``.
+
+
+Date field
+^^^^^^^^^^
+
+.. list-table::
+   :header-rows: 1
+
+   * * Operators
+     * Description
+   * * ``:``, ``=``
+     * Match a date value. For instance: ``film_date:1977`` will return films released in 1977.
+   * * ``>``, ``<``, ``>=``, ``<=``
+     * Return results whose field values are larger, smaller, larger or equal, smaller or equal to the given value.
+   * * ``[lower_date (TO|..) higher_date]``
+     * Queries Records whose numeric value is between ``lower_date`` and ``higher_date``.
+       An inclusive or exclusive bound can be used. Example: ``]lower_numeric (TO|..) higher_numeric[`` will exclude ``lower_date`` and ``higher_date``.
+
+Date formats can be specified in different formats: simple (YYYY[[/mm]/dd]) or ISO 8601 (YYYY-mm-DDTHH:MM:SS)
+
+Examples:
+
+* ``film_date >= 2002``
+* ``film_date >= 2013/02/11``
+* ``film_date: [1950 TO 2000]``
+* ``film_box_office > 10000 AND film_date < 1965``
+
+Filter search query
+~~~~~~~~~~~~~~~~~~~
+
+Filter search queries are queries that don't refer to fields, only containing quoted strings and boolean operators. They perform full-text searches on all visible fields of each record and return matching rows.
+
+.. code::
+
+  "tree"
+  "tree" AND "flower"
+  "tree" OR "car"
+  NOT "dog"
+  "dog" AND NOT "cat"
+
+If the string contains more than one word, the query will be an ``AND`` query on each tokenized word.
+
+.. code::
+
+  "film"           # returns results that contain film
+  "action movies"  # returns results that contain action and movies.
 
 It is possible to perform a greedy query by adding a wildcard `*` at the end of a word.
 
-* ``q=film*`` returns results that contain film, films, filmography...
+.. code::
 
-Boolean expressions
--------------------
+  "film*"      # returns results that contain film, films, filmography, etc.
 
-The query language supports the following boolean operators ``AND``, ``OR`` and ``NOT``.
-
-Parenthesis can be used to group together expressions and alter the default priority model:
-
-* ``NOT``
-* ``AND``
-* ``OR``
-
-Samples
-
-* ``film OR trees``
-* ``(film OR trees) AND paris``
 
 Field queries
--------------
+~~~~~~~~~~~~~
 
 One of the major feature of the query language is to allow per field filtering. You can use field names as a prefix to
 your queries to filter the results based on a specific field's value.
@@ -134,83 +221,27 @@ The domain administrator might define a richer metadata template, thus giving ac
 For example, one can search on public.opendatasoft.com datasets which have ``Paris`` in their title or description and
 which contain at least 50 000 records:
 
-``(title:paris OR decription:paris) AND records_count >= 50 000``
-http://public.opendatasoft.com/api/v2/catalog/datasets?q=(title:paris%20OR%20decription:paris)%20AND%20records_count%20\>=%2050000
+.. code::
+
+  (title:paris OR decription:paris) AND records_count >= 50 000
+  http://public.opendatasoft.com/api/v2/catalog/datasets?q=(title:paris%20OR%20description:paris)%20AND%20records_count%20>=%2050000
 
 **For the record search APIs**, the list of available fields depend on the schema of the dataset. To fetch the list of
 available fields for a given dataset, you may use the search dataset or lookup dataset APIs.
 
-For example one can search in the dataset containing the movies shooting spots in Paris in the last decade any film
-directed by Woody Allen:
-`<http://public.opendatasoft.com/api/v2/catalog/datasets/tournagesdefilmsparis2011/records?q=realisateur%3A%22woody+allen%22>`_.
+For example one can search in the dataset containing the history of the SuperBowl, the ones that happened in a stadium called "Bowl".
+
+.. code::
+
+  stadium: "bowl"
+  http://public.opendatasoft.com/api/v2/catalog/datasets/super-bowl/records?q=stadium:"bowl"
 
 Multiple operator fields can be used between the field name and the query depending of the type
-
-Text field
-~~~~~~~~~~
-
-.. list-table::
-   :header-rows: 1
-
-   * * Operators
-     * Description
-   * * ``:``
-     * Perform a normalized query on provided token. Example: ``film_name:star`` will match ``star wars`` and ``Star Trek``
-       To match multi tokens, it is possible to use quotes. ``film_name:"star wars"`` will match fields containing ``star`` and ``wars``
-   * * ``=``
-     * Perform an exact query (not tokenized and not normalized) on the specified field.
-       Example: ``film_name=Star`` will not match ``Star Wars``. To match ``Star Wars`` it is possible to use quotes.
-       ``film_name="Star Wars``
-
-Numeric field
-~~~~~~~~~~~~~
-
-.. list-table::
-   :header-rows: 1
-
-   * * Operators
-     * Description
-   * * ``:``, ``=``
-     * Match a numeric value. For instance: ``age:18`` will filter rows with field ``age`` is equals to ``18``
-   * * ``>``, ``<``, ``>=``, ``<=``
-     * Return results whose field values are larger, smaller, larger or equal, smaller or equal to the given value.
-   * * ``[lower_numeric (TO|..) higher_numeric]``
-     * Queries Records whose numeric value is between ``lower_numeric`` and ``higher_numeric``.
-       An inclusive or exclusive bound can be used. Example: ``]lower_numeric (TO|..) higher_numeric[`` will exclude ``lower_numeric`` and ``higher_numeric``.
-
-
-Date field
-~~~~~~~~~~
-
-.. list-table::
-   :header-rows: 1
-
-   * * Operators
-     * Description
-   * * ``:``, ``=``
-     * Match a date value. For instance: ``film_date:1977`` will return films released in 1977.
-   * * ``>``, ``<``, ``>=``, ``<=``
-     * Return results whose field values are larger, smaller, larger or equal, smaller or equal to the given value.
-   * * ``[lower_date (TO|..) higher_date]``
-     * Queries Records whose numeric value is between ``lower_date`` and ``higher_date``.
-       An inclusive or exclusive bound can be used. Example: ``]lower_numeric (TO|..) higher_numeric[`` will exclude ``lower_date`` and ``higher_date``.
-
-
-
-Date formats can be specified in different formats: simple (YYYY[[/mm]/dd]) or ISO 8601 (YYYY-mm-DDTHH:MM:SS)
-
-Examples:
-
-* ``film_date >= 2002``
-* ``film_date >= 2013/02/11``
-* ``film_date: [1950 TO 2000]``
-* ``film_box_office > 10000 AND film_date < 1965``
-
 
 Query language functions
 ------------------------
 
-Advanced functions can be used in the query language. Function names need to be prefixed with a sharp (``#``) sign.
+Advanced functions can be used in the query language.
 
 .. list-table::
    :header-rows: 1
@@ -219,27 +250,24 @@ Advanced functions can be used in the query language. Function names need to be 
      * Description
    * * now
      * Returns the current date. This function may be called as a query value for a field. When called without an
-       argument, it will evaluate to the current datetime: ``birthdate >= #now()`` returns all Records
+       argument, it will evaluate to the current datetime: ``birthdate >= NOW()`` returns all Records
        containing a birth date greater or equal to the current datetime. This function can also accept parameters, see
-       below for the ``#now`` function available parameters.
-   * * null
-     * This function may be called specifying a field name as a parameter. It returns the hits for which no value is
-       defined for the specified field. For example ``#null(birthdate)``
+       below for the ``NOW()`` function available parameters.
 
-**Available parameters for the ``#now`` function**:Ò
+**Available parameters for the ``NOW()`` function**:
 
 * years, months, weeks, days, hours, minutes, seconds, microseconds: These parameters add time to the current date.
 
-  For example: ``#now(years=-1, hours=-1)`` returns the current date minus a year and an hour
+  For example: ``NOW(years=-1, hours=-1)`` returns the current date minus a year and an hour
 
 * year, month, day, hour, minute, second, microsecond: can also be used to specify an absolute date.
 
-  For example: ``#now(year=2001)`` returns the current time, day and month for year 2001
+  For example: ``NOW(year=2001)`` returns the current time, day and month for year 2001
 
 * weekday: Specifies a day of the week. This parameter accepts either an integer between 0 and 6 (where 0 is Monday and
   6 is Sunday) or the first two letters of the day (in English) followed by the cardinal of the first week on which to
   start the query.
 
-  ``#now(weeks=-2, weekday=1)`` returns the Tuesday before last.
+  ``NOW(weeks=-2, weekday=1)`` returns the Tuesday before last.
 
-  ``#now(weekday=MO(2))`` returns Monday after next.
+  ``NOW(weekday=MO(2))`` returns Monday after next.
