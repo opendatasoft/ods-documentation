@@ -22,7 +22,7 @@ The ODSQL is split into five different kinds of clauses:
 
 These clauses are used as parameters in the Search API v2 for searching, aggregating and exporting datasets and records. Depending on the endpoint you use, some features of the query language will be available or not in the request.
 
-The whole query language is case insensitive but we will use upper case in the documentation language keywords for clarity. Spaces are optional.
+The whole query language is case insensitive but we will use upper case in the documentation for language keywords for clarity. Spaces are optional.
 
 Where clause
 ------------
@@ -264,6 +264,70 @@ Include and exclude
 
   INCLUDE(pop) # will only include fields which name is pop
   EXCLUDE(pop) # will exclude fields which name is pop
+
+Group by clause
+---------------
+
+The **group by** clause can be used in the whole search API as the parameter ``group_by``. It enables you to group a set of rows together by field value, or by numeric or date range.
+
+A **group by** clause can be a single expression or a list of comma-separated expressions. Like selects, group by expressions can have an ``AS`` statement to give them a label.
+
+Static range
+~~~~~~~~~~~~
+
+The static range function takes two parameters: a field name and an array of steps inside brackets. The side of brackets determines if values lower than the lower bound and higher than the higher bound should be grouped together or ignored.
+
+.. code::
+
+  RANGE(population, ]10, 50, 100[)
+
+This statement will create 4 buckets: ``*-10``, ``10-50``, ``50-100`` and ``100-*``.
+
+.. code::
+
+  RANGE(population, [20.5[)
+
+This statement will create one bucket: ``20.5-*``.
+
+.. code::
+
+  RANGE(population, [1,2,3])
+
+This statement will create two buckets: ``1-2`` and ``2-3``.
+
+Equi range
+~~~~~~~~~~
+
+The static range function takes four parameters: a field name, a step value, a lower bound and an higher bound.
+
+.. code::
+
+  RANGE(population, EQUI(5,10,30))
+
+This statement will create the following buckets:
+
+- ``*-10``
+- ``10-15``
+- ``15-20``
+- ``20-25``
+- ``25-30``
+- ``30-*``
+
+Order by clause
+---------------
+
+The order by (``order_by`` parameter) lets you choose how the results of your query will be sorted. It takes a list of field names, each of which have an optional ``ASC`` or ``DESC`` option to choose between ascending and descending order (default is ascending).
+
+.. code::
+
+  population, gdp DESC
+
+This statement will order the results by population (ascending), and results with the same population by descending GDP.
+
+Limit clause
+------------
+
+The limit clause (``limit`` parameter) is very straightforward. It is maximum number of rows you want to receive in the result of your query. The default limit is 10 records, and most of the requests except exports have a maximum limit of 10 000 records.
 
 Query language functions
 ------------------------
