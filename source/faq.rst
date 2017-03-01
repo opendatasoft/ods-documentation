@@ -236,3 +236,44 @@ OpenDataSoft domain owner for more details.
 Yes.
 
 Whenever you publish a dataset, a dedicated API is created. See :doc:`APIs documentation</using_api/index>` for more information.
+
+25. **What are the compatible browsers for OpenDataSoft's platform?**
+
+.. tabularcolumns:: |C|C|C|C|
+
++---------+--------------------+------------------+------------------+
+| OS      | Browser            | Front Office     | Back Office      |
++=========+====================+==================+==================+
+| Windows | Internet Explorer  |                  |                  |
+|         |    |iexplore|      | Version 9+       | Version 10+      |
+|         +--------------------+------------------+------------------+
+|         | Edge               |                  |                  |
+|         |    |iexplore|      | Latest version   | Latest version   |
+|         +--------------------+------------------+------------------+
+|         | Chrome             |                  |                  |
+|         |    |chrome|        | Latest version   | Latest version   |
+|         +--------------------+------------------+------------------+
+|         | Firefox            |                  |                  |
+|         |    |firefox|       | Latest version   | Latest version   |
++---------+--------------------+------------------+------------------+
+| Mac     | Safari             |                  |                  |
+|         |    |safari|        | Version 6+       | Version 6+       |
+|         +--------------------+------------------+------------------+
+|         | Chrome             |                  |                  |
+|         |    |chrome|        | Latest version   | Latest version   |
+|         +--------------------+------------------+------------------+
+|         | Firefox            |                  |                  |
+|         |    |firefox|       | Latest version   | Latest version   |
++---------+--------------------+------------------+------------------+
+
+.. |iexplore| image:: browser-logos-master/src/edge/edge_32x32.png  
+    :alt: Internet Explorer 
+
+.. |chrome| image:: browser-logos-master/src/chrome/chrome_32x32.png
+    :alt: Chrome
+
+.. |firefox| image:: browser-logos-master/src/firefox/firefox_32x32.png
+    :alt: Firefox
+
+.. |safari| image:: browser-logos-master/src/safari/safari_32x32.png
+    :alt: Safari
