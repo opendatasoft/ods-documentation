@@ -1,5 +1,5 @@
-Notifications
-=============
+Subscribing to notifications
+============================
 
 Whenever an important event occurs on your portal, notification emails are sent. This gives you the opportunity to be informed in real time
 and take action if needed.

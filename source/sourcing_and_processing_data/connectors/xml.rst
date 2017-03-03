@@ -30,31 +30,33 @@ Example file
     :linenos:
 
     <?xml version="1.0" encoding="UTF-8"?>
-    <id>abcdef123</id>
-    <description>A shopping list</description>
-    <basket>
-        <itemCount>3</itemCount>
-        <totalQuantity>19</totalQuantity>
-        <item>
-            <name>tomato</name>
-            <quantity>10</quantity>
-        </item>
-        <item>
-            <name>potato</name>
-            <quantity>5</quantity>
-        </item>
-        <item>
-            <name>banana</name>
-            <quantity>4</quantity>
-        </item>
-    </basket>
+    <shoppingList>
+        <id>abcdef123</id>
+        <description>A shopping list</description>
+        <basket>
+            <itemCount>3</itemCount>
+            <totalQuantity>19</totalQuantity>
+            <item>
+                <name>tomato</name>
+                <quantity>10</quantity>
+            </item>
+            <item>
+                <name>potato</name>
+                <quantity>5</quantity>
+            </item>
+            <item>
+                <name>banana</name>
+                <quantity>4</quantity>
+            </item>
+        </basket>
+    </shoppingList>
 
 In this example:
 
-- the root tag of the records is "basket" (line 4),
+- the root tag of the records is "shoppingList" (line 2), and the list of objects is in "basket" (line 5),
 - the tag of the objects is "item",
-- each object has a "name" and a "quantity attribute".
+- each object has a "name" and a "quantity" attribute.
 
-The object path is "/basket/item".
+The object path is "/shoppingList/basket/item".
 
 Please note that tags **id**, **description**, **itemCount** and **totalQuantity** (tag names are arbitrary) will be ignored because they are not in any object.

@@ -302,8 +302,8 @@ GET |url7|_
         "@odata.nextLink": "https://public.opendatasoft.com/api/odata/baby_names_nc_2013?$skiptoken=3"
     }
 
-Recherche
----------
+Search
+------
 
 The ``$search`` parameter can be used to search data.
 

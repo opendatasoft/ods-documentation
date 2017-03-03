@@ -1207,6 +1207,16 @@ It takes the following parameters:
   * * Tolerance (simplification level)
     * Double
     * yes
+      
+Tolerance indicates the value below which intermediate points will be suppressed. 
+
+Depending on the shape complexity, different tolerances can be tested. 
+
+You could start with a tolerance value of 0.0001. 
+To simplify more, use a power of ten e.g. 0.001, then 0.01.
+
+If you use a tolerance too high, your shapes will be overly simplified and unrecognizable. 
+Use the preview to find out which tolerance works best for you. 
 
 Normalize Projection Reference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
