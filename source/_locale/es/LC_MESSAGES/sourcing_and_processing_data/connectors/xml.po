@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-20 19:03+0100\n"
+"POT-Creation-Date: 2017-03-03 14:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
@@ -20,43 +20,54 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:2
 msgid "XML connector"
-msgstr ""
+msgstr "Conector de XML"
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:4
 msgid "This connector can create a dataset from an XML document."
 msgstr ""
+"Este conector puede crear un juego de datos a partir de un documento XML."
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:6
 msgid ""
 "The provided document can have tags with arbitrary names but there are some "
 "constraints on the structure :"
 msgstr ""
+"El documento proporcionado puede tener etiquetas con nombres arbitrarios, "
+"pero hay algunas restricciones en la estructura:"
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:8
 msgid ""
 "it must contain an array of objects, each object being used to create a "
 "record in the dataset,"
 msgstr ""
+"Debe contener una matriz de objetos, cada uno de los cuales se utiliza para "
+"crear un registro en el juego de datos."
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:9
 msgid "the array can be anywhere in the XML document and can have any name,"
 msgstr ""
+"La matriz puede estar en cualquier ubicación del documento XML y puede tener"
+" cualquier nombre."
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:10
 msgid ""
 "the objects must be flat, which means all their attributes must be at the "
 "root of the object,"
 msgstr ""
+"Los objetos deben ser planos, lo que significa que todos sus atributos deben"
+" estar en la raíz del objeto."
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:11
 msgid ""
 "the first few objects must have all the attributes present in the file so "
 "the dataset's columns are correctly discovered."
 msgstr ""
+"Los primeros objetos deben tener todos los atributos presentes en el archivo"
+" a fin de descubrir correctamente las columnas del juego de datos."
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:14
 msgid "Configuration"
-msgstr ""
+msgstr "Configuración"
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:19
 msgid "Name"
@@ -68,47 +79,52 @@ msgstr "Descripción"
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:21
 msgid "Values"
-msgstr ""
+msgstr "Valores"
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:22
 msgid "Object path"
-msgstr ""
+msgstr "Ruta de objeto"
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:23
 msgid "Path to the first object in the XML document"
-msgstr ""
+msgstr "Ruta del primer objeto en el documento XML"
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:24
 msgid "e.g. /{namespace}arrayTag/objectTag"
-msgstr ""
+msgstr "P. ej. /{Espacio_nombres}Etiqueta_matriz/Etiqueta_objeto"
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:27
 msgid "Example file"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/connectors/xml.rst:52
-msgid "In this example:"
-msgstr ""
+msgstr "Archivo de ejemplo"
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:54
-msgid "the root tag of the records is \"basket\" (line 4),"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/connectors/xml.rst:55
-msgid "the tag of the objects is \"item\","
-msgstr ""
+msgid "In this example:"
+msgstr "En este ejemplo:"
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:56
-msgid "each object has a \"name\" and a \"quantity attribute\"."
+msgid ""
+"the root tag of the records is \"shoppingList\" (line 2), and the list of "
+"objects is in \"basket\" (line 5),"
 msgstr ""
 
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:57
+msgid "the tag of the objects is \"item\","
+msgstr "La etiqueta de los objetos es \"item\"."
+
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:58
-msgid "The object path is \"/basket/item\"."
+msgid "each object has a \"name\" and a \"quantity\" attribute."
 msgstr ""
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:60
+msgid "The object path is \"/shoppingList/basket/item\"."
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:62
 msgid ""
 "Please note that tags **id**, **description**, **itemCount** and "
 "**totalQuantity** (tag names are arbitrary) will be ignored because they are"
 " not in any object."
 msgstr ""
+"Tenga en cuenta que las etiquetas **id**, **description**, **itemCount** y "
+"**totalQuantity** (los nombres de etiquetas son arbitrarios) se omitirán "
+"porque no están en ningún objeto."
