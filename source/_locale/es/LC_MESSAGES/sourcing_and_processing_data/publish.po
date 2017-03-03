@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-20 19:03+0100\n"
+"POT-Creation-Date: 2017-03-03 14:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/publish.rst:2
 msgid "Publishing datasets"
-msgstr ""
+msgstr "Publicar los juegos de datos"
 
 #: ../../source/sourcing_and_processing_data/publish.rst:4
 msgid ""
@@ -30,10 +31,17 @@ msgid ""
 "pushed to the publish version when you click on the *publish* button. At any"
 " time you can remove a dataset from the by the *unpublish* action,"
 msgstr ""
+"Un juego de datos tiene un ciclo de vida específico: empieza en el back "
+"office (sin publicar), donde se configuran los orígenes, los procesadores y "
+"la seguridad, y después se publica. El juego de datos aparece en el front "
+"office (conforme a las reglas de seguridad). Cuando se realizan "
+"modificaciones en el juego de datos, estas se insertan en la versión "
+"publicada al hacer clic en el botón *Publicar¨. En cualquier momento se "
+"puede eliminar un juego de datos mediante la acción *Cancelar publicación*."
 
 #: ../../source/sourcing_and_processing_data/publish.rst:21
 msgid "Actions"
-msgstr ""
+msgstr "Acciones"
 
 #: ../../source/sourcing_and_processing_data/publish.rst:23
 msgid ""
@@ -41,6 +49,9 @@ msgid ""
 "various, it depends if only metadata have changed or if the dataset schema "
 "changed."
 msgstr ""
+"Publicar: Activa las modificaciones del juego de datos. La duración de esta "
+"acción varía en función de si solo se han cambiado los metadatos o si se ha "
+"cambiado el esquema de juego de datos."
 
 #: ../../source/sourcing_and_processing_data/publish.rst:24
 msgid ""
@@ -48,6 +59,9 @@ msgid ""
 "deleted. In some case data can be lost (realtime without recovery, specific "
 "connectors)."
 msgstr ""
+"Cancelar publicación: Elimina el juego de datos del catálogo y suprime todos"
+" los registros. En algunos casos pueden perderse datos (en tiempo real sin "
+"recuperación, conectores específicos...)."
 
 #: ../../source/sourcing_and_processing_data/publish.rst:25
 msgid ""
@@ -55,10 +69,13 @@ msgid ""
 "the dataset in a clean but incomplete state (not all records have been "
 "processed)."
 msgstr ""
+"Anular: Envía la orden *Anular* al procesamiento en curso. Deja el juego de "
+"datos en estado limpio pero incompleto (no se han procesado todos los "
+"registros)."
 
 #: ../../source/sourcing_and_processing_data/publish.rst:28
 msgid "Statuses"
-msgstr ""
+msgstr "Estados"
 
 #: ../../source/sourcing_and_processing_data/publish.rst:30
 msgid ""
@@ -66,10 +83,14 @@ msgid ""
 "and no interference with others processing tasks. Different status are "
 "reachable by a dataset during the processing task."
 msgstr ""
+"El procesamiento del juego de datos se realiza asíncronamente para asegurar "
+"un rendimiento óptimo y no interferir en otras tareas de procesamiento. Un "
+"juego de datos pasa por diferentes estados a lo largo de la tarea de "
+"procesamiento."
 
 #: ../../source/sourcing_and_processing_data/publish.rst:33
 msgid "Queued: The processing task is waiting to be pick up."
-msgstr ""
+msgstr "En cola: La tarea de procesamiento está esperando a ser seleccionada."
 
 #: ../../source/sourcing_and_processing_data/publish.rst:34
 msgid ""
@@ -77,16 +98,24 @@ msgid ""
 " and the result is made available through the OpenDataSoft API. Records "
 "number increased during this step."
 msgstr ""
+"Proceso en curso: Se han extraído los registros del conector, se han "
+"aplicado los procesadores y el resultado está disponible a través de la API "
+"de OpenDataSoft. El número de registros ha aumentado en este paso."
 
 #: ../../source/sourcing_and_processing_data/publish.rst:35
 msgid "Unpublishing: Dataset is removed from the API."
 msgstr ""
+"Cancelación de publicación en curso: El juego de datos se ha eliminado de la"
+" API."
 
 #: ../../source/sourcing_and_processing_data/publish.rst:36
 msgid ""
 "Aborting processing: The *abort* order has been sent to the platform. The "
 "dataset processing will stop within the next minute."
 msgstr ""
+"Proceso de anulación en curso: Se ha enviado la orden *Anular* a la "
+"plataforma. El procesamiento del juego de datos se detendrá en el próximo "
+"minuto."
 
 #: ../../source/sourcing_and_processing_data/publish.rst:37
 msgid ""
@@ -94,3 +123,6 @@ msgid ""
 "quota. He overtakes one of the limit (from the domain, the group of the "
 "user)."
 msgstr ""
+"Límite alcanzado: El usuario que ha iniciado el trabajo de procesamiento ha "
+"alcanzado su cuota permitida. Supera en uno el límite (del dominio, grupo o "
+"usuario)."
