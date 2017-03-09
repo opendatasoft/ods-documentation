@@ -80,7 +80,7 @@ For example, one can search on public.opendatasoft.com datasets which have ``Par
 which contain at least 50 000 records:
  
 ``(title:paris OR decription:paris) AND records_count >= 50 000`` 
-http://public.opendatasoft.com/api/datasets/1.0/search?q=(title:paris%20OR%20decription:paris)%20AND%20records_count%20\>=%2050000
+http://public.opendatasoft.com/api/datasets/1.0/search?q=(title:paris%20OR%20decription:paris)%20AND%20records_count%20>=%2050000
 
 **For the record search APIs**, the list of available fields depend on the schema of the dataset. To fetch the list of 
 available fields for a given dataset, you may use the search dataset or lookup dataset APIs.
