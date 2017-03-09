@@ -1207,16 +1207,16 @@ It takes the following parameters:
   * * Tolerance (simplification level)
     * Double
     * yes
-      
-Tolerance indicates the value below which intermediate points will be suppressed. 
 
-Depending on the shape complexity, different tolerances can be tested. 
+Tolerance indicates the value below which intermediate points will be suppressed.
 
-You could start with a tolerance value of 0.0001. 
+Depending on the shape complexity, different tolerances can be tested.
+
+You could start with a tolerance value of 0.0001.
 To simplify more, use a power of ten e.g. 0.001, then 0.01.
 
-If you use a tolerance too high, your shapes will be overly simplified and unrecognizable. 
-Use the preview to find out which tolerance works best for you. 
+If you use a tolerance too high, your shapes will be overly simplified and unrecognizable.
+Use the preview to find out which tolerance works best for you.
 
 Normalize Projection Reference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1277,6 +1277,31 @@ NL   Country                                                 Postcodes
 US   Country  States                               Counties  ZCTA
 ===  =======  =====================  ============  ========  ==============  ================  ====
 
+Well-known text and binary to GeoJson
+~~~~~~~~~~~~~~~~~~~
+
+This processor can be used to convert vector geometry object represented in **Well-known text** (**WKT**) or **Well-known binary** (**WKB**) into **GeoJson** object.
+
+It supports the following objects:
+
+==================  ================================================
+ WKT and WKB Type                     Examples
+==================  ================================================
+Point               POINT (30 10)
+LineString          LINESTRING (30 10, 10 30, 40 40)
+Polygon             POLYGON ((30 10, 40 40, 20 40, 10 20, 30 10))
+MultiPoint          MULTIPOINT ((10 40), (40 30), (20 20), (30 10))
+MultiLineString     MULTILINESTRING ((10 10, 20 20, 10 40),
+                    (40 40, 30 30, 40 20, 30 10))
+MultiPolygon        MULTIPOLYGON (((30 20, 45 40, 10 40, 30 20)),
+                    ((15 5, 40 10, 10 20, 5 10, 15 5)))
+==================  ================================================
+
+Example of POINT(2.0 4.0) in **Well-known binary** format:
+
+.. code-block:: text
+
+    000000000140000000000000004010000000000000
 
 Text processors
 ---------------
