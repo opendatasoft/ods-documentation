@@ -26,20 +26,36 @@ The available APIs are listed below.
    * * API Name
      * API Short Description
    * * Dataset search API
+
+       ``Dataset search API``
      * Search datasets 
    * * Dataset lookup API
+
+       ``Dataset lookup API``
      * Find a dataset based on its identifier 
    * * Records search API
+
+       ``Records search API``
      * Search records within a specific dataset 
    * * Analysis API
+
+       ``Analysis API``
      * Build advanced aggregations using records of a specific dataset 
    * * Download API
+
+       ``Download API``
      * Efficiently download a large number of records from a specific dataset 
    * * Geo clustering API
+
+       ``Geo clustering API``
      * Build geo clusters using records of a specific dataset 
    * * Real Time Push API
+
+       ``Real Time Push API``
      * Real time data integration 
    * * Multimedia Download API
+
+       ``Multimedia Download API``
      * Download multimedia content attached with datasets or records 
 
 All these APIs (except the Multimedia download API) return JSON by default. Some of them can return alternate content.
