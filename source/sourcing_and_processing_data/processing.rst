@@ -1282,26 +1282,21 @@ Well-known text and binary to GeoJson
 
 This processor can be used to convert vector geometry object represented in **Well-known text** (**WKT**) or **Well-known binary** (**WKB**) into **GeoJson** object.
 
-It supports the following objects:
+For **Well-known binary** an hexadecimal input is expected.
 
-==================  ================================================
- WKT and WKB Type                     Examples
-==================  ================================================
-Point               POINT (30 10)
-LineString          LINESTRING (30 10, 10 30, 40 40)
-Polygon             POLYGON ((30 10, 40 40, 20 40, 10 20, 30 10))
-MultiPoint          MULTIPOINT ((10 40), (40 30), (20 20), (30 10))
-MultiLineString     MULTILINESTRING ((10 10, 20 20, 10 40),
-                    (40 40, 30 30, 40 20, 30 10))
-MultiPolygon        MULTIPOLYGON (((30 20, 45 40, 10 40, 30 20)),
-                    ((15 5, 40 10, 10 20, 5 10, 15 5)))
-==================  ================================================
-
-Example of POINT(2.0 4.0) in **Well-known binary** format:
+Examples of **Well-known binary** format:
 
 .. code-block:: text
 
     000000000140000000000000004010000000000000
+    0102000000030000000000000000003e4000000000000024400000000000002440000000...
+
+Examples of **Well-known text** format:
+
+.. code-block:: text
+
+    POINT (30 10)
+    POLYGON ((35 10, 45 45, 15 40, 10 20, 35 10),(20 30, 35 35, 30 20, 20 30))
 
 Text processors
 ---------------
