@@ -1207,16 +1207,16 @@ It takes the following parameters:
   * * Tolerance (simplification level)
     * Double
     * yes
-      
-Tolerance indicates the value below which intermediate points will be suppressed. 
 
-Depending on the shape complexity, different tolerances can be tested. 
+Tolerance indicates the value below which intermediate points will be suppressed.
 
-You could start with a tolerance value of 0.0001. 
+Depending on the shape complexity, different tolerances can be tested.
+
+You could start with a tolerance value of 0.0001.
 To simplify more, use a power of ten e.g. 0.001, then 0.01.
 
-If you use a tolerance too high, your shapes will be overly simplified and unrecognizable. 
-Use the preview to find out which tolerance works best for you. 
+If you use a tolerance too high, your shapes will be overly simplified and unrecognizable.
+Use the preview to find out which tolerance works best for you.
 
 Normalize Projection Reference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1257,6 +1257,37 @@ Geocode with ArcGIS
 ~~~~~~~~~~~~~~~~~~~
 
 This processor allows you to geocode full text addresses by using the ArcGIS geocoding API. You need to possess an ArcGIS API key to do so.
+
+Geocode with PDOK
+~~~~~~~~~~~~~~~~~~~
+
+This processor allows you to geocode addresses in Netherlands by using the PDOK service.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Address
+    * Field containing NL address
+    * Field
+    * yes
+  * * Postal code
+    * Field containing NL postal code
+    * Field
+    * No
+  * * City
+    * Field containing NL city
+    * Field
+    * No
+  * * Output field
+    * Field that will contain the produced WSG84 coordinates
+    * Field
+    * yes
 
 Retrieve Administrative Divisions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
