@@ -599,13 +599,13 @@ msgid ""
 "``clusterprecision=6&y.serie1.expr=height&y.series1.func=SUM``"
 msgstr ""
 "Questa API può inoltre accettare una definizione della serie come descritto "
-"records analysis API. Se si definisce una serie, l'aggregazione avverrà in "
-"base ai valori di quest'ultima. Ad esempio: "
+"per l'API di analisi dei record. Se si definisce una serie, l'aggregazione "
+"avverrà in base ai valori di quest'ultima. Ad esempio: "
 "``clusterprecision=6&y.serie1.expr=height&y.series1.func=SUM``"
 
 #: ../../source/using_api/v1/records_api.rst:174
 msgid "Record Lookup API"
-msgstr ""
+msgstr "API di ricerca di singoli record"
 
 #: ../../source/using_api/v1/records_api.rst:176
 msgid ""
@@ -637,14 +637,17 @@ msgid ""
 "Part of the URL path. Identifier of the record. Example: "
 "``http://opendata.paris.fr/api/dataset/1.0/<DATASETID>/records/758885b5183fd28f14ecf39e44484fdccf/``"
 msgstr ""
+"Parte del percorso dell'URL. Identificatore del record. Esempio: "
+"``http://opendata.paris.fr/api/dataset/1.0/<DATASETID>/records/758885b5183fd28f14ecf39e44484fdccf/``"
 
 #: ../../source/using_api/v1/records_api.rst:196
 msgid "Format of the response output. One of JSON (default) and JSONP."
 msgstr ""
+"Formato dell'output di risposta. Può essere JSON (predefinito) e JSONP."
 
 #: ../../source/using_api/v1/records_api.rst:201
 msgid "Record Search API"
-msgstr ""
+msgstr "API di ricerca dei record"
 
 #: ../../source/using_api/v1/records_api.rst:203
 msgid ""
@@ -652,10 +655,13 @@ msgid ""
 "dataset, such as full-text search or geo search. It also provides faceted "
 "search features on dataset records."
 msgstr ""
+"Questa API permette di eseguire query complesse sui record di un dataset, ad"
+" esempio ricerche full-text o ricerche geografiche. Offre inoltre "
+"funzionalità di ricerca di facet sui record del dataset."
 
 #: ../../source/using_api/v1/records_api.rst:206
 msgid "**API endpoint**: ``/api/records/1.0/search``"
-msgstr ""
+msgstr "**Endpoint API**: ``/api/records/1.0/search``"
 
 #: ../../source/using_api/v1/records_api.rst:242
 msgid ""
@@ -666,29 +672,42 @@ msgid ""
 "have the ``sortable``  annotation. Examples: ``sort=price`` , "
 "``sort=-width``"
 msgstr ""
+"Ordina i risultati in base al campo specificato. Per impostazione "
+"predefinita, l'ordinamento è decrescente (dal valore più alto al valore più "
+"basso). Aggiungendo il segno meno ('-') è possibile eseguire l'ordinamento "
+"in senso crescente. L'ordinamento è disponibile solo sui campi numerici "
+"(int, doppio, data e data/ora) e sui campi di testo con annotazione "
+"``sortable``. Esempi: ``sort=price``, ``sort=-width``"
 
 #: ../../source/using_api/v1/records_api.rst:246
 msgid "``rows``"
-msgstr ""
+msgstr "``rows``"
 
 #: ../../source/using_api/v1/records_api.rst:247
 msgid ""
 "Number of results to return in a single call. The maximum number of rows "
 "returned is 1000. By default, 10 results are returned."
 msgstr ""
+"Numero di risultati da restituire in una singola chiamata. Il numero massimo"
+" di righe restituito è 1000. Per impostazione predefinita, vengono "
+"restituiti 10 risultati."
 
 #: ../../source/using_api/v1/records_api.rst:249
 msgid "``start``"
-msgstr ""
+msgstr "``start``"
 
 #: ../../source/using_api/v1/records_api.rst:250
 msgid ""
 "Index of the first result to return (starting at 0). To be used in "
 "conjunction with \"rows\" to implement paging."
 msgstr ""
+"Indice del primo risultato da restituire, a partire da 0. Da utilizzare in "
+"combinazione con \"rows\" per il paging."
 
 #: ../../source/using_api/v1/records_api.rst:257
 msgid ""
 "Format of the response output. One of JSON (default), JSONP, GeoJSON and "
 "GeoJSONP."
 msgstr ""
+"Formato dell'output di risposta. Può essere JSON (predefinito), JSONP, "
+"GeoJSON e GeoJSONP."
