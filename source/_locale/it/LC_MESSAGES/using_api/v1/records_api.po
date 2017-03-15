@@ -248,10 +248,10 @@ msgid ""
 "x."
 msgstr ""
 "Definizione della funzione di aggregazione dell'analisi. È possibile "
-"calcolare più serie contemporaneamente. È sufficiente denominare questo "
-"parametro con il nome arbitrario di una serie che potrà essere riutilizzato "
-"per specificare l'espressione aggregata associata. L'elenco delle funzioni "
-"di aggregazione disponibili è il seguente: ``COUNT`` , ``AVG`` , ``SUM`` , "
+"calcolare più serie contemporaneamente. È sufficiente attribuire a questo "
+"parametro il nome di una serie arbitraria che potrà essere riutilizzato per "
+"specificare l'espressione aggregata associata. L'elenco delle funzioni di "
+"aggregazione disponibili è il seguente: ``COUNT`` , ``AVG`` , ``SUM`` , "
 "``MIN`` , ``MAX`` , ``STDDEV`` , ``SUMSQUARES`` . Queste funzioni "
 "restituiscono il risultato della loro esecuzione sull'espressione fornita in"
 " y.<SERIE>.expr (o semplicemente il numero di record della funzione "
@@ -275,8 +275,8 @@ msgstr ""
 "<SERIES> deve avere lo stesso nome di quello utilizzato per la funzione di "
 "aggregazione corrispondente richiesta. Il parametro può contenere il nome di"
 " un campo numerico del Dataset (**Int** o **Double**) o un'espressione "
-"matematica. Per ulteriori informazioni sul expression language, vedere più "
-"avanti."
+"matematica. Per ulteriori informazioni sul linguaggio dell'espressione, "
+"vedere più avanti."
 
 #: ../../source/using_api/v1/records_api.rst:41
 msgid "``y.<SERIE>.cumulative``"
@@ -324,9 +324,9 @@ msgstr ""
 "Definisce il livello a cui deve essere eseguita l'aggregazione. I possibili "
 "valori sono ``year``  (predefinito), ``month`` , ``week`` , ``weekday`` , "
 "``day`` , ``hour`` , ``minute`` . Questo parametro permette, ad esempio, di "
-"calcolare le aggregazioni sui mesi dell'anno. Impostando il valore su "
-"``weekday`` , l'output sarà: ``[{\"x\": {\"weekday\":0},\"series1\": 12}, "
-"{\"x\": {\"weekday\":1},\"series1\": 30}]`` . Quando si utilizza "
+"calcolare le aggregazioni sui mesi di tutti gli anni. Impostando il valore "
+"su ``weekday`` , l'output sarà: ``[{\"x\": {\"weekday\":0},\"series1\": 12},"
+" {\"x\": {\"weekday\":1},\"series1\": 30}]`` . Quando si utilizza "
 "``weekday``, il valore generato è compreso tra 0 e 6, dove 0 corrisponde a "
 "lunedì e 6 a domenica."
 
@@ -400,8 +400,7 @@ msgstr ""
 
 #: ../../source/using_api/v1/records_api.rst:57
 msgid "Parenthesis can be used to group sub expressions together"
-msgstr ""
-"È possibile utilizzare le parentesi per raggruppare le sotto-espressioni."
+msgstr "Le parentesi permettono di raggruppare le sotto-espressioni."
 
 #: ../../source/using_api/v1/records_api.rst:58
 msgid ""
@@ -423,7 +422,7 @@ msgstr ""
 
 #: ../../source/using_api/v1/records_api.rst:63
 msgid "Records Download API"
-msgstr ""
+msgstr "API peri l download dei record"
 
 #: ../../source/using_api/v1/records_api.rst:65
 msgid ""
@@ -448,8 +447,8 @@ msgid ""
 "dataset you need to query. This field is mandatory."
 msgstr ""
 "Identificatore del dataset. È possibile eseguire query contemporeaneamente "
-"sui dataset ospitati nello stesso dominio ripetendo il parametro del dataset"
-" per ogni dataset da interrogare. Questo campo è obbligatorio."
+"sui dataset ospitati nello stesso dominio, ripetendo il parametro del "
+"dataset per ogni dataset da interrogare. Questo campo è obbligatorio."
 
 #: ../../source/using_api/v1/records_api.rst:91
 #: ../../source/using_api/v1/records_api.rst:229
@@ -481,8 +480,8 @@ msgstr "``pretty_print``"
 msgid ""
 "If set to true (default is false), pretty prints JSON and JSONP outputs."
 msgstr ""
-"Se impostato su true (l'impostazione predefinita è false), pretty prints gli"
-" output JSON e JSONP."
+"Se impostato su true (l'impostazione predefinita è false), esegue il pretty "
+"print degli output JSON e JSONP."
 
 #: ../../source/using_api/v1/records_api.rst:105
 #: ../../source/using_api/v1/records_api.rst:251
@@ -515,7 +514,7 @@ msgstr ""
 
 #: ../../source/using_api/v1/records_api.rst:114
 msgid "Records Geo Clustering API"
-msgstr ""
+msgstr "API di geo-clustering dei record"
 
 #: ../../source/using_api/v1/records_api.rst:116
 msgid ""
@@ -526,8 +525,8 @@ msgid ""
 msgstr ""
 "Questa API offre potenti funzionalità di geoclustering su un set di record "
 "selezionati. Restituisce i risultati in un formato facilmente utilizzabile "
-"per creare ampie visualizzazioni di dati su una mappa utilizzando un numero "
-"molto elevato di record."
+"per creare ampie visualizzazioni di dati su una mappa, utilizzando un numero"
+" molto elevato di record."
 
 #: ../../source/using_api/v1/records_api.rst:119
 msgid ""
@@ -540,7 +539,7 @@ msgstr ""
 "rappresenta la visualizzazione corrente sulla mappa. Restituisce un elenco "
 "di cluster con il numero di punti contenuti in ognuno e il poligono "
 "dell'envelope del cluster, oltre, quando necessario, alle serie analitiche "
-"calcolat."
+"calcolate."
 
 #: ../../source/using_api/v1/records_api.rst:123
 msgid "The clustering results are returned in JSON."
