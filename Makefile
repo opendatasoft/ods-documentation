@@ -6,7 +6,8 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = build
-LANGUAGES     = fr,es,de,it,nl
+TRANSLATED_LANGUAGES = fr,es,de,it,nl
+LANGUAGES     = fr es de it nl en
 
 # User-friendly check for sphinx-build
 ifeq ($(shell which $(SPHINXBUILD) >/dev/null 2>&1; echo $$?), 1)
@@ -59,6 +60,11 @@ html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+
+html/%:
+	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/$@
+	@echo
+	@echo "Build finished. The HTML pages are in $(BUILDDIR)/$@."
 
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml
@@ -201,21 +207,22 @@ translations: pull-translations push-translations
 
 
 pull-translations:
-ifeq ($(shell git symbolic-ref HEAD --short), develop)
 	@echo "Fetching translation files from transifex"
-	tx pull --mode=developer -l $(LANGUAGES)
+	tx pull --mode=developer -l $(TRANSLATED_LANGUAGES)
 	find . -name '*.po'| xargs sed -i '.bak' $$'s/\xC2\xA0/ /g' && find . -name '*.po.bak' -delete
 	@echo "Translations (.po) retrieved from transifex."
-else
-	@echo "You have to be on the develop branch to build translations"
-endif
 
+pull-translations-%:
+	@echo "Fetching translation files for $* from transifex"
+	tx pull --mode=developer -l $*
+	find . -name '*.po'| xargs sed -i '.bak' $$'s/\xC2\xA0/ /g' && find . -name '*.po.bak' -delete
+	@echo "Translations (.po) for $* retrieved from transifex."
 
 push-translations: clean html
 ifeq ($(shell git symbolic-ref HEAD --short), develop)
 	@echo "Building translation files"
 	@make gettext
-	@sphinx-intl update -p $(BUILDDIR)/locale -l $(LANGUAGES)
+	@sphinx-intl update -p $(BUILDDIR)/locale -l $(TRANSLATED_LANGUAGES)
 	@sphinx-intl update-txconfig-resources --pot-dir $(BUILDDIR)/locale --transifex-project-name documentation-5
 	@echo "Uploading translation files to Transifex"
 	tx push -s
@@ -225,11 +232,14 @@ else
 endif
 
 
-localizedhtml-fr:
+localizedhtml: clean
 	@echo "Building translated html"
-	make -e SPHINXOPTS="-D language='fr'" html
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+	for LANGUAGE in $(LANGUAGES); do make -e SPHINXOPTS="-D language='$$LANGUAGE'" html/$$LANGUAGE; done
+
+localizedhtml-%:
+	make -e SPHINXOPTS="-D language='$*'" html/$*
+	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html/$*."
 
 server:
-	@echo "Serving local files on port 9000: http://localhost:9000/build/html"
-	@python -m SimpleHTTPServer 9000
+	@echo "Serving local files on port 9000: http://localhost:9000/en/"
+	@cd build/html && python -m SimpleHTTPServer 9000
