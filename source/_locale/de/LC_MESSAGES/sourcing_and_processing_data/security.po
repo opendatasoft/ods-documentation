@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-03 14:27+0100\n"
+"POT-Creation-Date: 2017-03-09 16:42+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2017\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/security.rst:2
 msgid "Managing Security"
-msgstr ""
+msgstr "Verwalten der Sicherheit"
 
 #: ../../source/sourcing_and_processing_data/security.rst:4
 msgid ""
@@ -28,14 +29,19 @@ msgid ""
 "condition for a user to able to access a dataset is to have access to the "
 "domain as a whole."
 msgstr ""
+"Den Zugriff, die Sichtbarkeit von Daten und die Bearbeitungsberechtigungen "
+"können Sie für jeden Datensatz über jede Schnittstelle zur "
+"Datensatzveröffentlichung verwalten. Die Grundvoraussetzung für den Zugriff "
+"eines Benutzers auf einen Datensatz ist natürlich der Zugriff auf die "
+"gesamte Domain."
 
 #: ../../source/sourcing_and_processing_data/security.rst:19
 msgid "Dataset exploration permissions"
-msgstr ""
+msgstr "Datensatzuntersuchungsberechtigungen"
 
 #: ../../source/sourcing_and_processing_data/security.rst:23
 msgid "Dataset access rights"
-msgstr ""
+msgstr "Datensatzzugriffsrechte"
 
 #: ../../source/sourcing_and_processing_data/security.rst:25
 msgid ""
@@ -43,6 +49,9 @@ msgid ""
 "dataset, you must uncheck the `Access restricted to allowed users and "
 "groups` option."
 msgstr ""
+"Wenn Sie möchten, dass jeder, der Zugriff auf die Domain hat, den Datensatz "
+"untersuchen kann, müssen Sie die Option `Zugriff auf zulässige Benutzer und "
+"Gruppen beschränkt` deaktivieren."
 
 #: ../../source/sourcing_and_processing_data/security.rst:41
 msgid ""
@@ -52,6 +61,12 @@ msgid ""
 "this dataset. If a user is matched in the specific list of users, the "
 "general filters **will not apply**."
 msgstr ""
+"In dem Fall können Sie allgemeine Filter für alle anwenden, die auf Ihren "
+"Datensatz zugreifen (Filterkonfiguration siehe weiter unten). Diese Filter "
+"gelten für alle, die nicht unter die explizit für diesen Datensatz "
+"aufgelisteten Benutzer oder Gruppen fallen. Die allgemeinen Filter **gelten "
+"nicht** bei Übereinstimmung eines Benutzers mit der spezifischen "
+"Benutzerliste."
 
 #: ../../source/sourcing_and_processing_data/security.rst:43
 msgid ""
@@ -61,10 +76,16 @@ msgid ""
 "users and groups that can access to the list accessible below in the "
 "interface."
 msgstr ""
+"Eventuell möchten Sie auch die Verfügbarkeit des Datensatzes auf eine "
+"bestimmte Personenliste beschränken, die explizit für diesen Datensatz "
+"festgelegt wurde. In dem Fall müssen Sie die Option `Zugriff auf zulässige "
+"Benutzer und Gruppen beschränkt` aktivieren und die Benutzer bzw. Gruppen "
+"zur unten in der Schnittstelle verfügbaren Liste hinzufügen, denen der "
+"Zugriff gewährt wird."
 
 #: ../../source/sourcing_and_processing_data/security.rst:47
 msgid "Data visibility filters"
-msgstr ""
+msgstr "Datensichtbarkeitsfilter"
 
 #: ../../source/sourcing_and_processing_data/security.rst:49
 msgid ""
@@ -72,6 +93,10 @@ msgid ""
 "that can see the dataset, you can set rules to restrict the data they really"
 " see."
 msgstr ""
+"Für jede Kategorie von Personen (jeder, aufgelisteter Benutzer, Benutzer in "
+"einer aufgelisteten Gruppe), die den Datensatz sehen können, können Sie "
+"Regeln zur Einschränkung der tatsächlich von Ihnen gesehenen Daten "
+"festlegen."
 
 #: ../../source/sourcing_and_processing_data/security.rst:61
 msgid ""
@@ -84,12 +109,24 @@ msgid ""
 "administrators or going to an external billing system or any other case you "
 "can think about."
 msgstr ""
+"Zur Verfügung stehen Ihnen drei verschiedene, kombinierbare Optionen. "
+"Zunächst können Sie mithilfe der Option `Daten sind sichtbar` festlegen, ob "
+"die Daten überhaupt zugänglich sind. Bei Deaktivierung dieser Option kann "
+"ein Benuzter nur auf den Informationsbereich (Metadaten)  des Datensatzes "
+"zugreifen, Felderliste eingeschlossen. Schränken Sie die Sichtbarkeit der "
+"Daten ein, sollten Sie Ihrem Benutzer erklären, wie er auf die Daten "
+"zugreifen kann: entweder durch Kontaktieren der Domainadministratoren, "
+"Inanspruchnahme eines externen Abrechnungssystems oder jeden anderen "
+"denkbaren Fall."
 
 #: ../../source/sourcing_and_processing_data/security.rst:79
 msgid ""
 "If you keep the data visible, the other two filters will apply. They allow "
 "you to define what fields and records that will be visible."
 msgstr ""
+"Lassen Sie die Daten sichtbar, kommen die beiden anderen Filter zur "
+"Anwendung. Mit ihnen können Sie definieren, welche Felder und Einträge "
+"sichtbar sein werden."
 
 #: ../../source/sourcing_and_processing_data/security.rst:81
 msgid ""
@@ -97,6 +134,9 @@ msgid ""
 "example for columns that are used for internal data management on an open "
 "data dataset."
 msgstr ""
+"Über die Felderliste können Sie Spalten einigen Benutzern vorbehalten, "
+"beispielsweise Spalten, die der internen Datenverwaltung eines offenen "
+"Datensatzes dienen."
 
 #: ../../source/sourcing_and_processing_data/security.rst:97
 msgid ""
@@ -105,10 +145,14 @@ msgid ""
 "applied before the user crafted queries and are not visible by the end-user "
 "that consumes the data."
 msgstr ""
+"Mit dem Anfragefilter können Sie die für Benutzer sichtbaren Zeilen "
+"einschränken. Er verwendet die gleiche Anfragesprache wie die Suche in einem"
+" Datensatz. Dieser Filter wird angewendet, bevor der Benutzer Anfragen "
+"stellt, und ist für den Endbenutzer der Daten nicht sichtbar."
 
 #: ../../source/sourcing_and_processing_data/security.rst:115
 msgid "Management rights on the dataset"
-msgstr ""
+msgstr "Verwaltungsrechte für einen Datensatz"
 
 #: ../../source/sourcing_and_processing_data/security.rst:117
 msgid ""
@@ -117,3 +161,8 @@ msgid ""
 "configuration of the dataset and that are given the edit or publish rights. "
 "Domain administrators also have the rights to edit all datasets."
 msgstr ""
+"Auf die Datensatzverwaltung (Bearbeitung und Veröffentlichung) können nur "
+"Benutzer zugreifen, die entweder explizit oder durch Gruppen in der "
+"Sicherheitskonfiguration eines Datensatzes aufgelistet sind und über "
+"Bearbeitungs- oder Veröffentlichungsrechte verfügen. Domainadministratoren "
+"verfügen ebenfalls über die Rechte zur Bearbeitung aller Datensätze."

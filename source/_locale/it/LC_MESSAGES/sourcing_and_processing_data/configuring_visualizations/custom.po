@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-03 14:27+0100\n"
+"POT-Creation-Date: 2017-03-09 16:42+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Datawords Rel2 <datawords.rel.2@gmail.com>, 2017\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/custom.rst:2
 msgid "Configuring the custom view"
-msgstr ""
+msgstr "Configurazione della visualizzazione personalizzata"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/custom.rst:4
 msgid ""
@@ -28,6 +29,11 @@ msgid ""
 " you think are the key facts to take away. And while the *description* "
 "metadata adds a bit of context, it is limited to pure text."
 msgstr ""
+"Le visualizzazioni standard permettono all'utente di esaminare in maggior "
+"dettagli i dataset ma sono solo strumenti. Non forniscono ulteriore contesto"
+" e non evidenziano gli elementi principali che desideri mettere in evidenza."
+" Se, d'altro canto, i metadati della *descrizione* aggiungono un certo "
+"contesto, si limitano però al solo testo."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/custom.rst:8
 msgid ""
@@ -38,14 +44,21 @@ msgid ""
 "see the :doc:`dedicated documentation </editing_pages/index>`) and you can "
 "even customize the title and icon of this additional tab."
 msgstr ""
+"La visualizzazione personalizzata è una scheda aggiuntiva che si trova "
+"accanto alle altre schede nella pagina del dataset. Si tratta di uno spazio "
+"vuoto che puoi gestire secondo le tue esigenze. Tramite un editor HTML e CSS"
+" potrai creare un dashboard semplice o più complesso, esattamente come "
+"desideri. Per ulteriori informazioni sulla creazione di un utile dashboard, "
+"leggi la :doc:`documentazione dedicata </editing_pages/index>`. È inoltre "
+"possibile personalizzare il titolo e l'icona di questa scheda aggiuntiva."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/custom.rst:17
 msgid "The custom view editor"
-msgstr ""
+msgstr "Editor della visualizzazione personalizzata"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/custom.rst:26
 msgid "Tab icon and title"
-msgstr ""
+msgstr "Icona e titolo della scheda"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/custom.rst:28
 msgid ""
@@ -53,6 +66,11 @@ msgid ""
 "related dataset's card, and you'll be able to search for datasets having a "
 "custom view set up with the *View* filter (select the *Custom view* option)."
 msgstr ""
+"Il titolo e l'icona personalizzati saranno riportati nella pagina del tuo "
+"catalogo, nella scheda del dataset, e potrai eseguire ricerche dei dataset "
+"per i quali è stata configurata una visualizzazione personalizzata mediante "
+"il filtro *Visualizza*, selezionando l'opzione *Visualizzazione "
+"personalizzata*."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/custom.rst:31
 msgid ""
@@ -64,10 +82,18 @@ msgid ""
 "leave this field empty, in which case it will default to the `tachometer "
 "icon <http://fontawesome.io/icon/tachometer/>`_."
 msgstr ""
+"Le icone sono tratte dal `set di icone Font awesome 4.7 "
+"<http://fontawesome.io/icons/>`_ e devono essere specificate inserendo il "
+"relativo nome, senza il prefisso ``fa-``. Ad esempio, per utilizzare l'icona"
+" `grafico a barre <http://fontawesome.io/icon/bar-chart/>`_ icon, il cui "
+"nome è ``fa-bar-chart``, dovrai inserire ``bar-chart`` nel campo dell'icona."
+" È anche possibile lasciare vuoto questo campo, in tal caso verrà impostato "
+"in modo predefinito sull'`icona del tachimetro "
+"<http://fontawesome.io/icon/tachometer/>`_."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/custom.rst:37
 msgid "Tab content"
-msgstr ""
+msgstr "Contenuto della scheda"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/custom.rst:39
 msgid ""
@@ -76,6 +102,9 @@ msgid ""
 " and can take advantage of the existing dataset context to interact with the"
 " filters."
 msgstr ""
+"Il codice HTML e CSS da scrivere per il contenuto della scheda non è isolato"
+" dal resto della pagina ma è integrato nella già ricca interfaccia e può "
+"sfruttare il contesto esistente dei dataset per interagire con i filtri."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/custom.rst:42
 msgid ""
@@ -85,6 +114,12 @@ msgid ""
 "alongside their respective power capacity, breaking them down by nature "
 "(nuclear, wind, solar...) and region."
 msgstr ""
+"Per illustrare le diverse possibilità, utilizzeremo un dataset che elenca "
+"tutte le `nuove installazioni di centrali di energia elettrica nel 2015 in "
+"Francia "
+"<https://rte.opendatasoft.com/explore/dataset/registre_parc_prod_rpt/>`_, "
+"completo della loro capacità energetica e suddiviso per tipologia (nucleare,"
+" eolica, solare...) e regione."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/custom.rst:46
 msgid ""
@@ -92,16 +127,21 @@ msgid ""
 "within these new installations, we'll build a treemap with the analyse tab "
 "and set this visualization in the custom tab."
 msgstr ""
+"Per descrivere l'importanza relativa delle varie fonti di energia di queste "
+"nuove installazioni, creeremo un treemap con la scheda Analisi e imposteremo"
+" questa visualizzazione nella scheda personalizzata."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/custom.rst:52
 msgid "The treemap we want to see."
-msgstr ""
+msgstr "Treemap da visualizzare"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/custom.rst:54
 msgid ""
 "The share panel at the bottom of the analyze tab gives us the following "
 "widget code for this treemap."
 msgstr ""
+"Il pannello Condividi in fondo alla scheda Analisi contiene il seguente "
+"codice widget per questo treemap."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/custom.rst:72
 msgid ""
@@ -111,6 +151,12 @@ msgid ""
 " case), this treemap will be independant from the rest of the dataset's "
 "page, and especially independant from the active filters."
 msgstr ""
+"Naturalmente, possiamo copiare e incollare questo codice nell'editor del "
+"codice HTML della visualizzazione personalizzata e ottenere il treemap "
+"desiderato. Poiché, tuttavia, stiamo creando un contesto di dataset "
+"indipendente (in questo caso denominato `registreparcprodrpt`), questo "
+"treemap dovrà essere indipendente dal resto della pagina del dataset e in "
+"particolare dai filtri che vi sono attivi."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/custom.rst:76
 msgid ""
@@ -118,10 +164,15 @@ msgid ""
 " refine the treemap and see what technology such and such company is more "
 "investing in."
 msgstr ""
+"Ciò significa che non è possibile utilizzare il filtro *producer* esistente "
+"per affinare il treemap e vedere in quale tecnologia sta investendo ogni "
+"azienda."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/custom.rst:81
 msgid "The treemap in the custom view is not affected by the active filter"
 msgstr ""
+"Il treemap nella visualizzazione personalizzata non è influenzato dal filtro"
+" attivo"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/custom.rst:83
 msgid ""
@@ -130,17 +181,25 @@ msgid ""
 " but directly on the global context set for the page, which is named "
 "``ctx``, as such."
 msgstr ""
+"Per lavorare con il contesto del dataset esistente, è sufficiente collegare "
+"il widget ``ods-chart`` non a un contesto personalizzato definito nella "
+"visualizzazione personalizzata ma direttamente al contesto globale impostato"
+" per la pagina, in questo caso denominato ``ctx``."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/custom.rst:101
 msgid ""
 "This time, the treemap will be actualized depending on the current filters, "
 "which allows for more in-depth exploring."
 msgstr ""
+"Questa volta, il treemap verrà attualizzato in base ai filtri correnti e "
+"permetterà un esame più approfondito."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/custom.rst:105
 msgid ""
 "The treemap in the custom view is now taking into account active filters"
 msgstr ""
+"Il treemap nella visualizzazione personalizzata tiene ora in considerazione "
+"i filtri attivi"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/custom.rst:107
 msgid ""
@@ -149,3 +208,7 @@ msgid ""
 "so. You'll just have to plug the dynamic ones onto the ``ctx`` context and "
 "define new ``ods-dataset-context`` for static ones."
 msgstr ""
+"A seconda dell'analisi, la visualizzazione personalizzata può includere, a "
+"seconda delle esigenze, viste sia statiche sia dinamiche. Per far ciò è "
+"necessario collegare le viste dinamiche al contesto ``ctx`` e definire un "
+"nuovo ``ods-dataset-context`` per quelle statiche."
