@@ -1472,7 +1472,27 @@ It takes the following parameters:
 Extract text
 ~~~~~~~~~~~~
 
-This processor can be used to extract an arbitrary pattern expressed as a regular expression out of a string using sub matching.
+This processor can be used to extract any part of a text or a number or a combination of both into a new column. It's similar to the Replace Regexp processor, except instead of replacing the content in place the same column, a new column is created with the selected text.
+
+The idea is to put the part we want to extract in parenthesis. This part will then be extracted in a new column. 
+
+Using the same example as for the Replace Regexp processor (from a french zip code like 44100, keep only the area code 44), the Extract Text processor can be used to create another column with the area code selected, instead of replacing the content like with the Replace Regexp processor.
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__extract-text-en.png
+    :alt: Replace Regexp
+
+    In this example, we use the pattern ``(?P<area>[0-9]{2})[0-9]{3}``. ``[0-9]`` means any digit, and ``{2}`` or ``{3}`` means the number of digits we are looking for. In this case we want to extract the first two digits, so we put them in parenthesis, then after the parenthesis we put the rest of the sequence that we don't want to extract, here the remaining 3 digits. The special expression ``?P<area>`` is just for specifiying the new column name
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__extract-text-fr.png
+    :alt: Replace Regexp
+
+    In this example, we use the pattern ``(?P<area>[0-9]{2})[0-9]{3}``. ``[0-9]`` means any digit, and ``{2}`` or ``{3}`` means the number of digits we are looking for. In this case we want to extract the first two digits, so we put them in parenthesis, then after the parenthesis we put the rest of the sequence that we don't want to extract, here the remaining 3 digits. The special expression ``?P<area>`` is just for specifiying the new column name
+
+From a more technical point of view, this processor can be used to extract an arbitrary pattern expressed as a regular expression out of a string using sub matching.
 
 The syntax of the sub-matching expression to specify is the following: ``(?P<NAME>REGEXP)``. Where:
 
