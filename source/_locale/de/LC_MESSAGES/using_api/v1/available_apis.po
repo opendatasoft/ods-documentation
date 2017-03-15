@@ -167,16 +167,24 @@ msgid ""
 "JSONP (`<http://en.wikipedia.org/wiki/JSONP>`_) is supported when returning "
 "JSON content by adding a ``callback`` parameter."
 msgstr ""
+"All diese APIs (mit Ausnahme der Echtzeit-Push-API) untersützen mithilfe von"
+" CORS (`<http://en.wikipedia.org/wiki/Cross-origin_resource_sharing>`_) "
+"einen domainübergreifenden Zugriff von einem Browser. Für ältere Browser "
+"oder andere spezifische Zwecke wird JSONP "
+"(`<http://en.wikipedia.org/wiki/JSONP>`_) unterstützt, wenn JSON-Inhalte "
+"durch Hinzufügen eines Parameters ``callback`` zurückgegeben werden."
 
 #: ../../source/using_api/v1/available_apis.rst:69
 msgid "Finding the dataset identifier"
-msgstr ""
+msgstr "Suchen des Datensatzbezeichners"
 
 #: ../../source/using_api/v1/available_apis.rst:71
 msgid ""
 "You are looking for specific data to build your application but you don't "
 "know yet in which dataset you can find these data?"
 msgstr ""
+"Sie suchen bestimmte Daten, um Ihre Anwendung zu erstellen, wissen aber noch"
+" nicht, in welchem Datensatz Sie diese Daten finden können?"
 
 #: ../../source/using_api/v1/available_apis.rst:74
 msgid ""
@@ -185,10 +193,14 @@ msgid ""
 "just go to this dataset's \"Information\" tab where you'll find the dataset "
 "id."
 msgstr ""
+"Nutzen Sie einfach die Untersuchungskonsole, indem Sie oben im Seitenmenü "
+"auf den Link \"Untersuchen\" klicken. Haben Sie den benötigten Datensatz "
+"identifiziert, wechseln Sie einfach ins Register \"Informationen\" dieses "
+"Datensatzes, wo Sie die Datensatz-ID finden."
 
 #: ../../source/using_api/v1/available_apis.rst:78
 msgid "HTTP Methods"
-msgstr ""
+msgstr "HTTP-Methoden"
 
 #: ../../source/using_api/v1/available_apis.rst:80
 msgid ""
@@ -198,44 +210,55 @@ msgid ""
 "browsers / libraries / proxies limitations regarding the size of the HTTP "
 "URL."
 msgstr ""
+"Mit Ausnahme der Echtzeit-Push-API, die strengere RESTful-Konzepte beachtet,"
+" akzeptieren alle API-Endpunkte die HTTP-Methoden GET und POST. GET-Methoden"
+" sind natürlich zu bevorzugen. POST kann verwendet werden, um "
+"Einschränkungen von Browsern / Bibliotheken / Proxys hinsichtlich der Größe "
+"der HTTP-URL zu umgehen."
 
 #: ../../source/using_api/v1/available_apis.rst:85
 msgid "Security"
-msgstr ""
+msgstr "Sicherheit"
 
 #: ../../source/using_api/v1/available_apis.rst:87
 msgid ""
 "All the APIs are secured using the same authentication and authorization "
 "model."
 msgstr ""
+"Alle APIs sind mithilfe des gleichen Authentifizierungs- und "
+"Autorisierungsmodells gesichert."
 
 #: ../../source/using_api/v1/available_apis.rst:89
 msgid "Users can only see what they are allowed to see:"
-msgstr ""
+msgstr "Benutzer können nur das sehen, was ihnen erlaubt wurde:"
 
 #: ../../source/using_api/v1/available_apis.rst:91
 msgid "Datasets in a domain"
-msgstr ""
+msgstr "Datensätze in einer Domain"
 
 #: ../../source/using_api/v1/available_apis.rst:92
 msgid "Records in a dataset"
-msgstr ""
+msgstr "Einträge in einem Datensatz"
 
 #: ../../source/using_api/v1/available_apis.rst:94
 msgid ""
 "APIs are available both in HTTP and HTTPS. We advise API users to always use"
 " the HTTPS endpoint."
 msgstr ""
+"APIs sind sowohl in HTTP wie auch HTTPS verfügbar. Wir raten API-Benutzern, "
+"stets den HTTPS-Endpunkt zu nutzen."
 
 #: ../../source/using_api/v1/available_apis.rst:96
 msgid "The following authentication modes are available:"
-msgstr ""
+msgstr "Folgende Authentifizierungsmodi stehen zur Verfügung:"
 
 #: ../../source/using_api/v1/available_apis.rst:98
 msgid ""
 "**Basic HTTP authentication:** Provide your account's login and password "
 "(`<http://en.wikipedia.org/wiki/Basic_access_authentication>`_)"
 msgstr ""
+"**HTTP-Standardauthentifizierung:** Angabe Ihrer Kontoanmeldung und Ihres "
+"Kennworts (`<http://en.wikipedia.org/wiki/Basic_access_authentication>`_)"
 
 #: ../../source/using_api/v1/available_apis.rst:100
 msgid ""
