@@ -1378,8 +1378,26 @@ It takes the following parameters:
 Replace via Regexp
 ~~~~~~~~~~~~~~~~~~
 
-This processor can be used to replace a random regular expression pattern by new content. See
-`<http://en.wikipedia.org/wiki/Regular_expression>`_ for more details on how to write a regular expressions.
+This processor can be used to replace or remove any part of a text or a number or a combination of both.
+
+One use case is keeping only a part of a number, for example from a french Zip code to keep only the area code, e.g from 44100 (Nantes city) keep only 44 (Loire-Atlantique area).
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__replace-regexp-en.png
+    :alt: Replace Regexp
+
+    In this example, the regular expression processor is configured with the pattern ``[0-9]{3}$``, and a replacement by nothing. The pattern means "select 3 digits from the end", with ``[0-9]`` meaning any digit, ``{3}`` meaning exactly 3 occurences, and ``$`` meaning the end of the text. These 3 digits from the end are then replaced by nothing, so only the first 2 digits will stay.
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__replace-regexp-fr.png
+    :alt: Replace Regexp
+
+    In this example, the regular expression processor is configured with the pattern ``[0-9]{3}$``, and a replacement by nothing. The pattern means "select 3 digits from the end", with ``[0-9]`` meaning any digit, ``{3}`` meaning exactly 3 occurences, and ``$`` meaning the end of the text. These 3 digits from the end are then replaced by nothing, so only the first 2 digits will stay.
+
+
+See `<http://en.wikipedia.org/wiki/Regular_expression>`_ for more details on how to write a regular expressions.
 You can test your regexp expressions with an online debugger tool like `Regex101 <https://regex101.com/>`_.
 
 It takes the following parameters:
