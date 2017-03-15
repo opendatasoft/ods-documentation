@@ -1443,6 +1443,18 @@ Split Text
 
 This processor can be used to split a field's value and to extract the Nth element to a new field.
 
+The number of the part extracted is specified in the ``index`` parameter. Note that the numbering starts at 0.
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__split-text-en.png
+    :alt: Split Text
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__split-text-fr.png
+    :alt: Split Text
+
 It takes the following parameters:
 
 .. list-table::
