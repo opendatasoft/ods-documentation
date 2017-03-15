@@ -28,9 +28,9 @@ msgid ""
 "dataset describing daily sales for a number of stores worldwide, that is "
 "with the following fields:"
 msgstr ""
-"Per illustrare il concetto generale dell'API di aggregazione, esamineremo un"
-" dataset che descrive le vendite giornaliere di un certo numero di negozi di"
-" tutto il mondo, comprendente i seguenti campi:"
+"Per illustrare il concetto generale delle API di aggregazione, esamineremo "
+"un dataset che descrive le vendite giornaliere di alcuni negozi di tutto il "
+"mondo, comprendente i seguenti campi:"
 
 #: ../../source/using_api/v2/aggregations.rst:7
 msgid "store_name (string)"
@@ -78,20 +78,20 @@ msgid ""
 "of fields and to return aggregated values for other fields."
 msgstr ""
 "La funzione principale dell'API consiste nel raggruppare i record dei "
-"dataset per un numero finito di campi e restituire i valori aggregati per "
-"altri campi."
+"dataset in base a un numero finito di campi e restituire i valori aggregati "
+"per altri campi."
 
 #: ../../source/using_api/v2/aggregations.rst:22
 msgid ""
 "> Example: the total sales count per country, the total sales amount and the"
 " average of daily average sale price."
 msgstr ""
-"> Esempio: numero totale di vendite per paese, importo totale delle vendite "
-"e prezzo medio di vendita giornaliero."
+"> Esempio: numero totale delle vendite per paese, importo totale delle "
+"vendite e prezzo medio di vendita giornaliero."
 
 #: ../../source/using_api/v2/aggregations.rst:24
 msgid "It also allows for more complex aggregations."
-msgstr "Permette inoltre aggregazioni più complesse."
+msgstr "Sono possibili, inoltre, aggregazioni più complesse."
 
 #: ../../source/using_api/v2/aggregations.rst:26
 msgid ""
@@ -107,8 +107,8 @@ msgid ""
 "values extracted from the group rows according to a criteria:"
 msgstr ""
 "È inoltre possibile unire a ogni gruppo un elenco finito di valori "
-"recuperati, cioè di valori estratti dalle righe del gruppo in base a un "
-"determinato criterio:"
+"recuperati, cioè estratti dalle righe del gruppo in base a un determinato "
+"criterio:"
 
 #: ../../source/using_api/v2/aggregations.rst:31
 msgid ""
@@ -151,8 +151,8 @@ msgid ""
 " the difference at the end of the year."
 msgstr ""
 "Esempio: utilizzando sempre il dataset descritto all'inizio, ipotizziamo di "
-"voler 'addomesticare' un po' la contabilità e di inserire nei rendiconti una"
-" quantità un po' minore di vendite ogni giorno, per intascare la differenza "
+"voler 'addomesticare' la contabilità e di inserire nei rendiconti una "
+"quantità un po' minore di vendite ogni giorno, per intascare la differenza "
 "alla fine dell'anno."
 
 #: ../../source/using_api/v2/aggregations.rst:122
@@ -271,6 +271,8 @@ msgstr "f_n è il risultato della funzione di aggregazione per il gruppo i"
 #: ../../source/using_api/v2/aggregations.rst:182
 msgid "g_n is the result of the incremental aggregation function for group i"
 msgstr ""
+"g_n è il risultato della funzione di aggregazione incrementale per il gruppo"
+" i"
 
 #: ../../source/using_api/v2/aggregations.rst:183
 msgid "g_n = sum of f_i for all values of i between 0 and n"
@@ -297,7 +299,7 @@ msgid ""
 msgstr ""
 "Permettono di dividere i risultati degli ``aggregates`` in base ai valori "
 "dei campi. L'attributo ``group_by`` considera un elenco di espressioni "
-"group_by. Il risultato viene ordinato a seconda dei valori dei campi "
+"group_by. Il risultato viene ordinato a seconda dei valori del campo "
 "group_by. Ad esempio, ``group_by[store_country, store_name]`` restituirà:"
 
 #: ../../source/using_api/v2/aggregations.rst:223
