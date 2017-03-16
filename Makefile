@@ -228,7 +228,12 @@ endif
 localizedhtml-fr:
 	@echo "Building translated html"
 	make -e SPHINXOPTS="-D language='fr'" html
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+	@echo "Build finished for French. The HTML pages are in $(BUILDDIR)/html."
+
+localizedhtml-es:
+	@echo "Building translated html"
+	make -e SPHINXOPTS="-D language='es'" html
+	@echo "Build finished for Spanish. The HTML pages are in $(BUILDDIR)/html."
 
 server:
 	@echo "Serving local files on port 9000: http://localhost:9000/build/html"
