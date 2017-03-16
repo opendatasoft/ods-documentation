@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-03 14:27+0100\n"
+"POT-Creation-Date: 2017-03-16 10:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Admin OpenDataSoft <admin@opendatasoft.com>, 2017\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:2
 msgid "Configuring the tooltip"
-msgstr ""
+msgstr "Konfigurieren der QuickInfo"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:4
 msgid ""
@@ -31,50 +32,62 @@ msgid ""
 "tooltip view, select Custom HTML template from the tooltip type dropdown "
 "menu."
 msgstr ""
+"Zum Anzeigen von Informationen auf einer Karte oder in einem Bild bzw. einem"
+" Kalender können Sie eine QuickInfo konfigurieren. Entweder können Sie dazu "
+"die Standard-QuickInfo verwenden und konfigurieren oder sie mithilfe einer "
+"benutzerdefinierten HTML-QuickInfo individueller gestalten. Eine "
+"benutzerdefinierte QuickInfo ist etwas zeitaufwendiger, aber ein guter Weg "
+"zur Nutzung Ihrer Daten. Wählen Sie zum Wechseln von der standardmäßigen "
+"QuickInfo-Konfigurationsschnittstelle zu dieser benutzerdefinierten "
+"QuickInfo-Ansicht im Dropdownmenü QuickInfo-Typ die Option "
+"Benutzerdefiniertes HTML."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:10
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:28
 msgid "Setting up the tooltip"
-msgstr ""
+msgstr "Einrichten der QuickInfo"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:19
 msgid "Standard tooltip"
-msgstr ""
+msgstr "Standard-QuickInfo"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:21
 msgid ""
 "You can of course configure which fields will appear in the tooltip and "
 "their relative order. A live preview is available on the right side."
 msgstr ""
+"Natürlich können Sie konfigurieren, welche Felder in welcher relativen "
+"Reihenfolge in der QuickInfo erscheinen werden. Auf der rechten Seite ist "
+"eine Livevorschau verfügbar."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:36
 msgid ""
 "For each of the tooltip's fields, the 3 following actions are available :"
-msgstr ""
+msgstr "Für jedes QuickInfo-Feld sind die folgenden 3 Aktionen verfügbar:"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:40
 msgid "Tooltip's fields' actions"
-msgstr ""
+msgstr "Aktionen für QuickInfo-Felder"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:42
 msgid "Drag and drop to move field within tooltip"
-msgstr ""
+msgstr "Drag & Drop zum Verschieben von Feldern in der QuickInfo"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:43
 msgid "Click to remove field from tooltip"
-msgstr ""
+msgstr "Klick zum Entfernen eines Felds aus der QuickInfo"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:44
 msgid "Click to add field to tooltip"
-msgstr ""
+msgstr "Klick zum Hinfügen eines Felds zur QuickInfo"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:50
 msgid "The associated live preview"
-msgstr ""
+msgstr "Die zugeordnete Livevorschau"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:59
 msgid "Custom HTML tooltip"
-msgstr ""
+msgstr "Benutzerdefinierte HTML-QuickInfo"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:61
 msgid ""
@@ -84,10 +97,17 @@ msgid ""
 "integrate other visualizations inside the tooltip. You can even use the  "
 ":doc:`grid layout classes</customizing_look_and_feel/responsive/>`."
 msgstr ""
+"Wenn Sie `Benutzerdefinierte HTML-QuickInfo` auswählen, erscheint ein HTML-"
+"Editor. Das ist eng mit dem Schreiben von \"Seiten\" in Ihrer Domain "
+"verwandt; Sie haben Zugriff auf jedes `ODS-Widget "
+"<http://opendatasoft.github.io/ods-widgets/docs/>`_ und können sogar andere "
+"Visualisierungen in Ihre QuickInfo integrieren. Selbst die "
+":doc:`Rasterauslegungsklassen</customizing_look_and_feel/responsive/>` "
+"können verwendet werden."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:67
 msgid "An example of a custom tooltip."
-msgstr ""
+msgstr "Beispiel einer benutzerdefinierten QuickInfo."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:75
 msgid ""
@@ -95,26 +115,34 @@ msgid ""
 "that is \"injected\" in the tooltip. This ``record`` object contains the "
 "following properties:"
 msgstr ""
+"Wird eine QuickInfo angezeigt, kann sie auf eine bestimmte ``Eintrag`` "
+"svariable zugreifen, die in die QuickInfo \"eingespeist\" wird. "
+"Dieses``Eintrag`` sobjekt hat folgende Eigenschaften:"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:78
 msgid ""
 "``record.fields``: object containing all the values (e.g. "
 "``record.fields.tree_height``)"
 msgstr ""
+"``record.fields``: alle Werte enthaltedes Objekt (z. B. "
+"``record.fields.tree_height``)"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:79
 msgid "``record.recordid``: unique identifier for the record"
-msgstr ""
+msgstr "``record.recordid``: eindeutiger Bezeichner für den Eintrag"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:80
 msgid "``record.datasetid``: identifier of the dataset"
-msgstr ""
+msgstr "``record.datasetid``: Bezeichner des Datensatzes"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:82
 msgid ""
 "Using these properties, you can display directly values in the tooltip, or "
 "even use them to display data from other datasets."
 msgstr ""
+"Durch die Verwendung dieser Eigenschaften können Sie direkt Werte in der "
+"QuickInfo anzeigen oder sie sogar zur Anzeige von Daten anderer Datensätze "
+"verwenden."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:85
 msgid ""
@@ -122,32 +150,42 @@ msgid ""
 "is an array of field objects (you can use ``ng-repeat`` to loop over the "
 "fields). A field object contains the following properties:"
 msgstr ""
+"Das Schema des Datensatzes wird ebenfalls als eine ``Feld``variable "
+"eingespeist, bei der es sich um ein Array von Feldobjekten handelt (Sie "
+"können ``ng-repeat`` verwenden, um eine Schleife über die Felder "
+"auszuführen). Ein Feldobjekt hat folgende Eigenschaften:"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:89
 msgid ""
 "``field.name``: the identifier of the field, for example to find a value "
 "within ``record.fields``"
 msgstr ""
+"``field.name``: der Bezeichner des Felds, um beispielsweise einen Wert in "
+"``record.fields`` zu finden"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:90
 msgid ""
 "``field.type``: the type of the field (``text``, ``decimal``, ``integer``, "
 "``date``, ``datetime``, ``geo_point_2d``, ``geo_shape``)"
 msgstr ""
+"``field.type``: der Typ des Felds (``Text``, ``Dezimalzahl``, ``Ganzzahl``, "
+"``Datum``, ``datetime``, ``geo_point_2d``, ``geo_shape``)"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:92
 msgid "``field.label``: a human-friendly label"
-msgstr ""
+msgstr "``field.label``: eine menschenfreundliche Beschriftung"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:94
 msgid "Here is the code from the example above:"
-msgstr ""
+msgstr "Hier ist der Code des obigen Beispiels:"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:113
 msgid ""
 "If you want to display an image from one of your dataset's ``file`` fields, "
 "you can use the ``ods-record-image`` widget."
 msgstr ""
+"Möchten Sie ein Bild von einem ``Datei``feld Ihres Datensatzes anzeigen, "
+"können Sie das Widget ``ods-record-image`` verwenden."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:116
 msgid ""
@@ -155,3 +193,7 @@ msgid ""
 "another dataset; in the following example, the data is taken from another "
 "dataset and filtered using one of the values of the selected record."
 msgstr ""
+"Zum Anzeigen einer Visualisierung eines anderen Datensatzes können Sie einen"
+" ``<ods-dataset-context>`` verwenden. Im folgenden Beispiel werden die Daten"
+" von einem anderen Datensatz genommen und mithilfe eines Wertes des "
+"ausgewählten Eintrags gefiltert."

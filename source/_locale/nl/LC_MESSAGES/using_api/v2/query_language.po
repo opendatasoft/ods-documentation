@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-03 14:27+0100\n"
+"POT-Creation-Date: 2017-03-16 10:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2017\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ../../source/using_api/v2/query_language.rst:2
 msgid "Query Language"
-msgstr ""
+msgstr "Taal van de zoekopdracht"
 
 #: ../../source/using_api/v2/query_language.rst:4
 msgid ""
@@ -27,6 +28,10 @@ msgid ""
 " the previously listed APIs can take as a parameter filters for constraining"
 " the list of returned datasets or records."
 msgstr ""
+"Filterkenmerken zijn ingebouwd in de kern van de OpenDataSoft API-motor. "
+"Vele van de vorig opgesomde API's kunnen gebruikt worden als "
+"parameterfilters voor het beperken van de lijst met opgeleverde datasets of "
+"records."
 
 #: ../../source/using_api/v2/query_language.rst:7
 msgid ""
@@ -36,26 +41,37 @@ msgid ""
 "using full text search, facets and geo filtering, and then allowing them to "
 "download these records with the same filtering context."
 msgstr ""
+"Gelieve te noteren dat een welbepaalde filteringcontext gewoon kan worden "
+"gekopieerd van de ene API naar de andere. Bijvoorbeeld: u kan heel eenvoudig"
+" een gebruikersinterface bouwen die de gebruiker eerst toelaat om visueel de"
+" records waarin ze geïnteresseerd zijn te selecteren, door gebruik te maken "
+"van een volledige tekstopzoeking, facetten en geo filtering en hen "
+"vervolgens toelaat om deze records met dezelfde filteringcontext te "
+"downloaden."
 
 #: ../../source/using_api/v2/query_language.rst:11
 msgid ""
 "The OpenDataSoft query language makes it possible to express complex boolean"
 " conditions as a filtering context."
 msgstr ""
+"De taal van de zoekopdracht in OpenDataSoft maakt het mogelijk om complexe "
+"booleaanse voorwaarden uit te drukken als een filteringcontext."
 
 #: ../../source/using_api/v2/query_language.rst:13
 msgid ""
 "The user query can most of the time be expressed through the ``q`` HTTP "
 "parameter."
 msgstr ""
+"De zoekopdracht van de gebruiker kan in de meeste gevallen uitgedrukt worden"
+" door middel van de \"q\" HTTP-parameter."
 
 #: ../../source/using_api/v2/query_language.rst:16
 msgid "Full-text search"
-msgstr ""
+msgstr "Volledige tekstzoekopdracht"
 
 #: ../../source/using_api/v2/query_language.rst:18
 msgid "The query language accepts full text queries."
-msgstr ""
+msgstr "De taal van de zoekopdracht aanvaardt volledige tekstzoekopdrachten."
 
 #: ../../source/using_api/v2/query_language.rst:20
 msgid ""
@@ -63,68 +79,82 @@ msgid ""
 "If a given word or compounds is surrounded with double quotes, it performs "
 "an ``AND`` query on each tokenized word."
 msgstr ""
+"Deze zoekopdracht levert alle resultaten op die alle woorden bevatten die "
+"doorgegeven worden in de zoekopdracht. Wanneer een welbepaald woord of een "
+"welbepaalde woordencombinatie tussen dubbele aanhalingstekens staat, voert "
+"ze een \"AND\"-zoekopdracht uit op elk woord in het token."
 
 #: ../../source/using_api/v2/query_language.rst:23
 msgid "``q=film`` returns results that contain film"
-msgstr ""
+msgstr "``q=film`` levert resultaten op die het woord \"film\" bevatten"
 
 #: ../../source/using_api/v2/query_language.rst:24
 msgid "``q=\"action movies\"`` returns results that contain action and movies."
 msgstr ""
+"``q=\"action movies\"`` levert resultaten op die \"action\" en \"movies\" "
+"bevatten."
 
 #: ../../source/using_api/v2/query_language.rst:26
 msgid ""
 "It is possible to perform a greedy query by adding a wildcard `*` at the end"
 " of a word."
 msgstr ""
+"Het is mogelijk om een geavanceerde zoekopdracht uit te voeren door een "
+"wildcard \"*\" toe te voegen op het einde van het woord."
 
 #: ../../source/using_api/v2/query_language.rst:28
 msgid "``q=film*`` returns results that contain film, films, filmography..."
 msgstr ""
+"``q=film*`` levert resultaten op die \"film\", \"films\", \"filmography\", "
+"... bevatten"
 
 #: ../../source/using_api/v2/query_language.rst:31
 msgid "Boolean expressions"
-msgstr ""
+msgstr "Booleaanse uitdrukkingen"
 
 #: ../../source/using_api/v2/query_language.rst:33
 msgid ""
 "The query language supports the following boolean operators ``AND``, ``OR`` "
 "and ``NOT``."
 msgstr ""
+"De taal van de zoekopdracht ondersteunt de volgende booleaanse operatoren "
+"``AND``, ``OR`` en ``NOT``."
 
 #: ../../source/using_api/v2/query_language.rst:35
 msgid ""
 "Parenthesis can be used to group together expressions and alter the default "
 "priority model:"
 msgstr ""
+"Parentheses kunnen gebruikt worden om uitdrukkingen te bundelen en het "
+"standaard prioriteitsmodel te wijzigen:"
 
 #: ../../source/using_api/v2/query_language.rst:37
 msgid "``NOT``"
-msgstr ""
+msgstr "``NOT``"
 
 #: ../../source/using_api/v2/query_language.rst:38
 msgid "``AND``"
-msgstr ""
+msgstr "``AND``"
 
 #: ../../source/using_api/v2/query_language.rst:39
 msgid "``OR``"
-msgstr ""
+msgstr "``OR``"
 
 #: ../../source/using_api/v2/query_language.rst:41
 msgid "Samples"
-msgstr ""
+msgstr "Voorbeelden"
 
 #: ../../source/using_api/v2/query_language.rst:43
 msgid "``film OR trees``"
-msgstr ""
+msgstr "``film OR bomen``"
 
 #: ../../source/using_api/v2/query_language.rst:44
 msgid "``(film OR trees) AND paris``"
-msgstr ""
+msgstr "``(film OR bomen) AND parijs``"
 
 #: ../../source/using_api/v2/query_language.rst:47
 msgid "Field queries"
-msgstr ""
+msgstr "Zoekopdrachten voor velden"
 
 #: ../../source/using_api/v2/query_language.rst:49
 msgid ""
@@ -132,16 +162,22 @@ msgid ""
 "filtering. You can use field names as a prefix to your queries to filter the"
 " results based on a specific field's value."
 msgstr ""
+"Een van de belangrijkste kenmerken van de taal van de zoekopdracht is een "
+"filtering per veld toe te laten. U kan veldnamen gebruiken als een prefix "
+"voor uw zoekopdrachten om de resultaten te filteren op basis van de waarde "
+"van een specifiek veld."
 
 #: ../../source/using_api/v2/query_language.rst:52
 msgid ""
 "**For the dataset search API**, the list of available fields corresponds "
 "exactly to available metadata. By default:"
 msgstr ""
+"**Voor de zoek-API van de dataset**, stemt de lijst met beschikbare velden "
+"precies overeen met de beschikbare metadata. Standaard:"
 
 #: ../../source/using_api/v2/query_language.rst:57
 msgid "Field Name"
-msgstr ""
+msgstr "Veldnaam"
 
 #: ../../source/using_api/v2/query_language.rst:58
 #: ../../source/using_api/v2/query_language.rst:102
@@ -150,85 +186,87 @@ msgstr ""
 #: ../../source/using_api/v2/query_language.rst:165
 #: ../../source/using_api/v2/query_language.rst:204
 msgid "Description"
-msgstr ""
+msgstr "Omschrijving"
 
 #: ../../source/using_api/v2/query_language.rst:59
 msgid "publisher"
-msgstr ""
+msgstr "uitgever"
 
 #: ../../source/using_api/v2/query_language.rst:60
 msgid "The dataset publisher"
-msgstr ""
+msgstr "De uitgever van de dataset"
 
 #: ../../source/using_api/v2/query_language.rst:61
 msgid "title"
-msgstr ""
+msgstr "titel"
 
 #: ../../source/using_api/v2/query_language.rst:62
 msgid "The dataset title"
-msgstr ""
+msgstr "De titel van de dataset"
 
 #: ../../source/using_api/v2/query_language.rst:63
 msgid "description"
-msgstr ""
+msgstr "omschrijving"
 
 #: ../../source/using_api/v2/query_language.rst:64
 msgid "The dataset description"
-msgstr ""
+msgstr "De omschrijving van de dataset"
 
 #: ../../source/using_api/v2/query_language.rst:65
 msgid "license"
-msgstr ""
+msgstr "licentie"
 
 #: ../../source/using_api/v2/query_language.rst:66
 msgid "The dataset license"
-msgstr ""
+msgstr "De licentie van de dataset"
 
 #: ../../source/using_api/v2/query_language.rst:67
 msgid "records_count"
-msgstr ""
+msgstr "records_count"
 
 #: ../../source/using_api/v2/query_language.rst:68
 msgid "The number of records in the dataset"
-msgstr ""
+msgstr "Het aantal records in de dataset"
 
 #: ../../source/using_api/v2/query_language.rst:69
 msgid "modified"
-msgstr ""
+msgstr "gewijzigd"
 
 #: ../../source/using_api/v2/query_language.rst:70
 msgid "The last modification date of the dataset"
-msgstr ""
+msgstr "De datum van laatste wijziging van de dataset"
 
 #: ../../source/using_api/v2/query_language.rst:71
 msgid "language"
-msgstr ""
+msgstr "taal"
 
 #: ../../source/using_api/v2/query_language.rst:72
 msgid "The language of the dataset (iso code)"
-msgstr ""
+msgstr "De taal van de dataset (ISO-code)"
 
 #: ../../source/using_api/v2/query_language.rst:73
 msgid "theme"
-msgstr ""
+msgstr "thema"
 
 #: ../../source/using_api/v2/query_language.rst:74
 msgid "The theme of the dataset"
-msgstr ""
+msgstr "Het thema van de dataset"
 
 #: ../../source/using_api/v2/query_language.rst:75
 msgid "references"
-msgstr ""
+msgstr "referenties"
 
 #: ../../source/using_api/v2/query_language.rst:76
 msgid "The references for the dataset"
-msgstr ""
+msgstr "De referenties voor de dataset"
 
 #: ../../source/using_api/v2/query_language.rst:78
 msgid ""
 "The domain administrator might define a richer metadata template, thus "
 "giving acces to a richer set of filtering fields."
 msgstr ""
+"De domeinbeheerder zou een rijkere metadata template kunnen definiëren "
+"waardoor toegang wordt verleend aan een rijkere reeks filteringvelden."
 
 #: ../../source/using_api/v2/query_language.rst:80
 msgid ""
@@ -236,12 +274,17 @@ msgid ""
 "``Paris`` in their title or description and which contain at least 50 000 "
 "records:"
 msgstr ""
+"Bijvoorbeeld: iemand kan op public.opendatasoft.com datasets zoeken die "
+"\"Parijs\" hebben staan in hun titel of omschrijving en die minstens 50.000 "
+"records bevatten:"
 
 #: ../../source/using_api/v2/query_language.rst:83
 msgid ""
 "``(title:paris OR decription:paris) AND records_count >= 50 000`` "
 "http://public.opendatasoft.com/api/v2/catalog/datasets?q=(title:paris%20OR%20decription:paris)%20AND%20records_count%20\\>=%2050000"
 msgstr ""
+"``(title:paris OR decription:paris) AND records_count >= 50 000`` "
+"http://public.opendatasoft.com/api/v2/catalog/datasets?q=(title:paris%20OR%20decription:paris)%20AND%20records_count%20\\>=%2050000"
 
 #: ../../source/using_api/v2/query_language.rst:86
 msgid ""
@@ -249,6 +292,10 @@ msgid ""
 "schema of the dataset. To fetch the list of available fields for a given "
 "dataset, you may use the search dataset or lookup dataset APIs."
 msgstr ""
+"**Voor de zoek-API's voor het record**, hangt de lijst met beschikbare "
+"velden af van het schema van de dataset. Om de lijst met beschikbare velden "
+"voor een welbepaalde dataset terug te vinden, kan u de zoek-API's voor de "
+"dataset of opzoek-API's voor de dataset gebruiken."
 
 #: ../../source/using_api/v2/query_language.rst:89
 msgid ""
@@ -256,26 +303,32 @@ msgid ""
 "spots in Paris in the last decade any film directed by Woody Allen: "
 "`<http://public.opendatasoft.com/api/v2/catalog/datasets/tournagesdefilmsparis2011/records?q=realisateur%3A%22woody+allen%22>`_."
 msgstr ""
+"Bijvoorbeeld: iemand kan in de dataset die de plaatsen in Parijs bevat waar "
+"het laatste decennium om het even welke film is opgenomen onder regie van "
+"Woody Allen zoeken: "
+"`<http://public.opendatasoft.com/api/v2/catalog/datasets/tournagesdefilmsparis2011/records?q=realisateur%3A%22woody+allen%22>`_."
 
 #: ../../source/using_api/v2/query_language.rst:93
 msgid ""
 "Multiple operator fields can be used between the field name and the query "
 "depending of the type"
 msgstr ""
+"Er kunnen meervoudige operatorvelden gebruikt worden tussen de veldnaam en "
+"de zoekopdracht, afhankelijk van het type"
 
 #: ../../source/using_api/v2/query_language.rst:96
 msgid "Text field"
-msgstr ""
+msgstr "Tekstveld"
 
 #: ../../source/using_api/v2/query_language.rst:101
 #: ../../source/using_api/v2/query_language.rst:117
 #: ../../source/using_api/v2/query_language.rst:134
 msgid "Operators"
-msgstr ""
+msgstr "Operatoren"
 
 #: ../../source/using_api/v2/query_language.rst:103
 msgid "``:``"
-msgstr ""
+msgstr "``:``"
 
 #: ../../source/using_api/v2/query_language.rst:104
 msgid ""
@@ -284,10 +337,15 @@ msgid ""
 "possible to use quotes. ``film_name:\"star wars\"`` will match fields "
 "containing ``star`` and ``wars``"
 msgstr ""
+"Voer een normale zoekopdracht uit op een aangeleverd token. Voorbeeld: "
+"``film_name:star`` zal overeenstemmen met ``star wars`` en ``Star Trek`` Om "
+"in overeenstemming te zijn met meerdere tokens, is het mogelijk om "
+"aanhalingstekens te gebruiken. ``film_name:\"star wars\"`` stemt overeen met"
+" velden die \"star\" en \"wars\" bevatten"
 
 #: ../../source/using_api/v2/query_language.rst:106
 msgid "``=``"
-msgstr ""
+msgstr "``=``"
 
 #: ../../source/using_api/v2/query_language.rst:107
 msgid ""
@@ -295,26 +353,32 @@ msgid ""
 "field. Example: ``film_name=Star`` will not match ``Star Wars``. To match "
 "``Star Wars`` it is possible to use quotes. ``film_name=\"Star Wars``"
 msgstr ""
+"Voert een exacte zoekopdracht (zonder token en niet genormaliseerd) uit op "
+"het gespecificeerde veld. Voorbeeld: ``film_name=Star`` zal niet "
+"overeenstemmen met ``Star Wars``. Om overeen te stemmen met ``Star Wars`` is"
+" het mogelijk om aanhalingstekens te gebruiken. ``film_name=\"Star Wars``"
 
 #: ../../source/using_api/v2/query_language.rst:112
 msgid "Numeric field"
-msgstr ""
+msgstr "Numeriek veld"
 
 #: ../../source/using_api/v2/query_language.rst:119
 #: ../../source/using_api/v2/query_language.rst:136
 msgid "``:``, ``=``"
-msgstr ""
+msgstr "``:``, ``=``"
 
 #: ../../source/using_api/v2/query_language.rst:120
 msgid ""
 "Match a numeric value. For instance: ``age:18`` will filter rows with field "
 "``age`` is equals to ``18``"
 msgstr ""
+"Stemt overeen met een numerieke waarde. Bijvoorbeeld: ``age:18`` zal rijen "
+"filteren waarbij het veld ``age`` gelijk is aan ``18``"
 
 #: ../../source/using_api/v2/query_language.rst:121
 #: ../../source/using_api/v2/query_language.rst:138
 msgid "``>``, ``<``, ``>=``, ``<=``"
-msgstr ""
+msgstr "``>``, ``<``, ``>=``, ``<=``"
 
 #: ../../source/using_api/v2/query_language.rst:122
 #: ../../source/using_api/v2/query_language.rst:139
@@ -322,10 +386,12 @@ msgid ""
 "Return results whose field values are larger, smaller, larger or equal, "
 "smaller or equal to the given value."
 msgstr ""
+"Levert resultaten op waarvan de veldwaarden groter, kleiner, groter of "
+"gelijk, kleiner of gelijk zijn aan de welbepaalde waarde."
 
 #: ../../source/using_api/v2/query_language.rst:123
 msgid "``[lower_numeric (TO|..) higher_numeric]``"
-msgstr ""
+msgstr "``[lower_numeric (TO|..) higher_numeric]``"
 
 #: ../../source/using_api/v2/query_language.rst:124
 msgid ""
@@ -334,20 +400,26 @@ msgid ""
 "``]lower_numeric (TO|..) higher_numeric[`` will exclude ``lower_numeric`` "
 "and ``higher_numeric``."
 msgstr ""
+"Records van zoekopdrachten waarvan de numerieke waarde ligt tussen "
+"``lower_numeric`` en ``higher_numeric``. Er kan een inclusieve of exclusieve"
+" betrouwbaarheidsgrens worden gebruikt. Voorbeeld: ``]lower_numeric (TO|..) "
+"higher_numeric[`` zal ``lower_numeric`` en ``higher_numeric`` uitsluiten."
 
 #: ../../source/using_api/v2/query_language.rst:129
 msgid "Date field"
-msgstr ""
+msgstr "Datumveld"
 
 #: ../../source/using_api/v2/query_language.rst:137
 msgid ""
 "Match a date value. For instance: ``film_date:1977`` will return films "
 "released in 1977."
 msgstr ""
+"Stemt overeen met een datumwaarde. Bijvoorbeeld: ``film_date:1977`` zal "
+"films opleveren die uitgekomen zijn in 1977."
 
 #: ../../source/using_api/v2/query_language.rst:140
 msgid "``[lower_date (TO|..) higher_date]``"
-msgstr ""
+msgstr "``[lower_date (TO|..) higher_date]``"
 
 #: ../../source/using_api/v2/query_language.rst:141
 msgid ""
@@ -356,50 +428,58 @@ msgid ""
 "``]lower_numeric (TO|..) higher_numeric[`` will exclude ``lower_date`` and "
 "``higher_date``."
 msgstr ""
+"Records van zoekopdrachten waarvan de numerieke waarde ligt tussen "
+"``lower_date`` en ``higher_date``. Er kan een inclusieve of exclusieve "
+"betrouwbaarheidsgrens worden gebruikt. Voorbeeld: ``]lower_numeric (TO|..) "
+"higher_numeric[`` zal ``lower_date`` en ``higher_date`` uitsluiten."
 
 #: ../../source/using_api/v2/query_language.rst:146
 msgid ""
 "Date formats can be specified in different formats: simple (YYYY[[/mm]/dd]) "
 "or ISO 8601 (YYYY-mm-DDTHH:MM:SS)"
 msgstr ""
+"Datumformaten kunnen gespecificeerd worden in verschillende formaten: gewoon"
+" (JJJJ[[/mm]/dd]) of ISO 8601 (JJJJ-mm-DDTUU:MM:SS)"
 
 #: ../../source/using_api/v2/query_language.rst:148
 msgid "Examples:"
-msgstr ""
+msgstr "Voorbeelden:"
 
 #: ../../source/using_api/v2/query_language.rst:150
 msgid "``film_date >= 2002``"
-msgstr ""
+msgstr "``film_date >= 2002``"
 
 #: ../../source/using_api/v2/query_language.rst:151
 msgid "``film_date >= 2013/02/11``"
-msgstr ""
+msgstr "``film_date >= 2013/02/11``"
 
 #: ../../source/using_api/v2/query_language.rst:152
 msgid "``film_date: [1950 TO 2000]``"
-msgstr ""
+msgstr "``film_date: [1950 TO 2000]``"
 
 #: ../../source/using_api/v2/query_language.rst:153
 msgid "``film_box_office > 10000 AND film_date < 1965``"
-msgstr ""
+msgstr "``film_box_office > 10000 AND film_date < 1965``"
 
 #: ../../source/using_api/v2/query_language.rst:157
 msgid "Query language functions"
-msgstr ""
+msgstr "Taalfuncties van de zoekopdracht"
 
 #: ../../source/using_api/v2/query_language.rst:159
 msgid ""
 "Advanced functions can be used in the query language. Function names need to"
 " be prefixed with a sharp (``#``) sign."
 msgstr ""
+"Geavanceerde functies kunnen gebruikt worden in de taal van de zoekopdracht."
+" Functienamen moeten het prefix van een scherp (``#``) teken krijgen."
 
 #: ../../source/using_api/v2/query_language.rst:164
 msgid "Function name"
-msgstr ""
+msgstr "Naam van de functie"
 
 #: ../../source/using_api/v2/query_language.rst:166
 msgid "now"
-msgstr ""
+msgstr "nu"
 
 #: ../../source/using_api/v2/query_language.rst:167
 msgid ""
@@ -409,10 +489,16 @@ msgid ""
 "date greater or equal to the current datetime. This function can also accept"
 " parameters, see below for the ``#now`` function available parameters."
 msgstr ""
+"Geeft de huidige datum. Deze functie kan een opgeroepen als een zoekwaarde "
+"voor een veld. Wanneer ze wordt opgeroepen zonder een argument, zal ze de "
+"huidige datumtijd evalueren: \"birthdate>=#now()\" levert alle records op "
+"die een geboortedatum bevatten die groter is dan of gelijk is aan de huidige"
+" datumtijd. Deze functie kan ook parameters aanvaarden, zie hieronder voor "
+"de parameters die beschikbaar zijn voor de \"#now\"-functie."
 
 #: ../../source/using_api/v2/query_language.rst:171
 msgid "null"
-msgstr ""
+msgstr "nul"
 
 #: ../../source/using_api/v2/query_language.rst:172
 msgid ""
@@ -420,34 +506,45 @@ msgid ""
 "returns the hits for which no value is defined for the specified field. For "
 "example ``#null(birthdate)``"
 msgstr ""
+"Deze functie kan opgeroepen worden om een veldnaam te specificeren als een "
+"parameter. Ze geeft de hits waarvoor geen waarde is gedefinieerd voor het "
+"gespecificeerde veld. Bijvoorbeeld \"#null(birthdate)\""
 
 #: ../../source/using_api/v2/query_language.rst:175
 msgid "**Available parameters for the ``#now`` function**:Ò"
-msgstr ""
+msgstr "**Beschikbare parameters voor de ``#now`` functie**:Ò"
 
 #: ../../source/using_api/v2/query_language.rst:177
 msgid ""
 "years, months, weeks, days, hours, minutes, seconds, microseconds: These "
 "parameters add time to the current date."
 msgstr ""
+"jaren, maanden, weken, dagen, uren, minuten, seconden, microseconden: Deze "
+"parameters voegen tijd toe aan de huidige datum."
 
 #: ../../source/using_api/v2/query_language.rst:179
 msgid ""
 "For example: ``#now(years=-1, hours=-1)`` returns the current date minus a "
 "year and an hour"
 msgstr ""
+"Bijvoorbeeld: ``#now(years=-1, hours=-1)`` levert de huidige datum op min "
+"een jaar en een uur"
 
 #: ../../source/using_api/v2/query_language.rst:181
 msgid ""
 "year, month, day, hour, minute, second, microsecond: can also be used to "
 "specify an absolute date."
 msgstr ""
+"jaar, maand, dag, uur, minuut, seconde, microseconde: kan ook gebruikt "
+"worden om een absolute datum te specificeren."
 
 #: ../../source/using_api/v2/query_language.rst:183
 msgid ""
 "For example: ``#now(year=2001)`` returns the current time, day and month for"
 " year 2001"
 msgstr ""
+"Bijvoorbeeld: ``#now(year=2001)`` levert de huidige tijd, dag en maand op "
+"voor het jaar 2001"
 
 #: ../../source/using_api/v2/query_language.rst:185
 msgid ""
@@ -456,36 +553,46 @@ msgid ""
 " letters of the day (in English) followed by the cardinal of the first week "
 "on which to start the query."
 msgstr ""
+"weekdag: specificeert een dag van de week. Deze parameter aanvaardt ofwel "
+"een geheel getal tussen 0 en 6 (waarbij 0 maandag is en 6 zondag) of de "
+"eerste twee letters van de dag (in het Engels) gevolgd door het "
+"kardinaalteken van de eerste week waarop de zoekopdracht moet worden "
+"gestart."
 
 #: ../../source/using_api/v2/query_language.rst:189
 msgid "``#now(weeks=-2, weekday=1)`` returns the Tuesday before last."
 msgstr ""
+"``#now(weeks=-2, weekday=1)`` levert de donderdag vóór de laatste donderdag "
+"op."
 
 #: ../../source/using_api/v2/query_language.rst:191
 msgid "``#now(weekday=MO(2))`` returns Monday after next."
 msgstr ""
+"``#now(weekday=MO(2))`` levert de maandag volgend op de volgende maandag op."
 
 #: ../../source/using_api/v2/query_language.rst:194
 msgid "Geo Filtering"
-msgstr ""
+msgstr "Geo Filtering"
 
 #: ../../source/using_api/v2/query_language.rst:196
 msgid ""
 "Records search APIs accept geofilter parameters to filter in records which "
 "are located in a specific geographical area."
 msgstr ""
+"Zoek-API's voor records aanvaarden geofilterparameters om te filteren in "
+"records die gelegen zijn in een specifiek geografisch gebied."
 
 #: ../../source/using_api/v2/query_language.rst:198
 msgid "The following parameters may be used."
-msgstr ""
+msgstr "De volgende parameters kunnen gebruikt worden."
 
 #: ../../source/using_api/v2/query_language.rst:203
 msgid "Parameter Name"
-msgstr ""
+msgstr "Naam van de parameter"
 
 #: ../../source/using_api/v2/query_language.rst:205
 msgid "distance"
-msgstr ""
+msgstr "distance"
 
 #: ../../source/using_api/v2/query_language.rst:206
 msgid ""
@@ -494,10 +601,14 @@ msgid ""
 "expressed in meters): latitude,longitude,distance: ``#distance(geo_field, "
 "\"48.8520930694,2.34738897685,1000\")``"
 msgstr ""
+"Beperkt de resultatenreeks tot een geografisch gebied dat gedefinieerd wordt"
+" door een cirkel (coördinaten van de cirkel uitgedrukt in WGS84 en afstand "
+"uitgedrukt in meter): latitude,longitude,distance: ``#distance(geo_field, "
+"\"48.8520930694,2.34738897685,1000\")``"
 
 #: ../../source/using_api/v2/query_language.rst:209
 msgid "polygon"
-msgstr ""
+msgstr "polygon"
 
 #: ../../source/using_api/v2/query_language.rst:210
 msgid ""
@@ -506,3 +617,7 @@ msgid ""
 "((lat1,lon1),(lat2,lon2),(lat3,lon3)): ``#polygon(geo_field, "
 "\"(48.883086,2.379072),(48.879022,2.379930),(48.883651,2.386968)\")``"
 msgstr ""
+"Beperkt de resultatenreeks tot een geografisch gebied gedefinieerd door een "
+"veelhoek (coördinaten van de punten uitgedrukt in WGS84 zoals in "
+"((lat1,lon1),(lat2,lon2),(lat3,lon3)): ``#polygon(geo_field, "
+"\"(48.883086,2.379072),(48.879022,2.379930),(48.883651,2.386968)\")``"
