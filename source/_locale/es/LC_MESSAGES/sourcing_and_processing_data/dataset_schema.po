@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-03 14:27+0100\n"
+"POT-Creation-Date: 2017-03-16 10:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:2
 msgid "Defining the dataset schema"
-msgstr ""
+msgstr "Definir el esquema de conjunto de datos"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:5
 msgid ""
@@ -150,7 +150,7 @@ msgstr "Por ejemplo: "
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:48
 msgid "Feature collections are not supported."
-msgstr ""
+msgstr "No se permiten las colecciones de funciones."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:49
 msgid "Integer"
@@ -355,18 +355,25 @@ msgid ""
 "the processing, if two records have the same *record_id*, the first one is "
 "replaced by the second."
 msgstr ""
+"Identificamos un registro con un campo exclusivo denominado *record_id*. "
+"Durante el proceso, si 2 registros tienen el campo mismo *record_id*, el "
+"primero se sustituye por el segundo."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:120
 msgid ""
 "The *record_id* is calculated at the end of the processing using the "
 "following principles:"
 msgstr ""
+"El campo *record_id* se calcula al final del procesamiento utilizando las "
+"reglas siguientes:"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:122
 msgid ""
 "Filter the fields. Keep all the fields with the *ID* option or all the "
 "fields if no field has the *ID* option."
 msgstr ""
+"Filtrar los campos. Conservar todos los campos con la opción *ID* o todos "
+"los campos si no  hay ningún campo con la opción *ID*."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:123
 msgid "Sort the fields values."
@@ -378,11 +385,11 @@ msgstr "Concatenar los valores ordenados."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:125
 msgid "Apply a hash function to the result"
-msgstr ""
+msgstr "Aplicar una función hash al resultado."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:139
 msgid "Record timestamp"
-msgstr ""
+msgstr "Marca de tiempo del registro"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:141
 msgid ""
@@ -392,3 +399,9 @@ msgid ""
 " a last modified date. On a realtime dataset, the *record_timestamp* is the "
 "date when the record arrived on the platform."
 msgstr ""
+"Para todos los registros se genera un campo *record_timestamp*, una marca de"
+" tiempo que informa de la fecha de creación del registro. El valor depende "
+"del tipo de extractor. Por ejemplo, en un archivo CSV el valor de "
+"*record_timestamp* es la fecha de la última modificación. En un conjunto de "
+"datos en tiempo real, el valor de *record_timestamp* es la fecha en que el "
+"registro ha llegado a la plataforma."
