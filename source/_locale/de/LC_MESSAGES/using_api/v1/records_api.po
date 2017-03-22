@@ -307,10 +307,12 @@ msgid ""
 "Limits the maximum number of results returned in the serie. By default there"
 " is no limit."
 msgstr ""
+"Begrenzt die maximale Anzahl an Ergebnissen, die in die Verbindunglinie "
+"zurückgegeben werden. Standardmaäßig ist keine Grenze eingestellt."
 
 #: ../../source/using_api/v1/records_api.rst:45
 msgid "``periodic``"
-msgstr ""
+msgstr "``periodisch``"
 
 #: ../../source/using_api/v1/records_api.rst:46
 msgid ""
@@ -324,10 +326,20 @@ msgid ""
 "used, the generated value range from 0 to 6 where 0 corresponds to Monday "
 "and 6 to Sunday."
 msgstr ""
+"Wird nur in Fällen verwendet, bei denen x vom Typ **Date** oder **DateTime**"
+" ist. Definiert die Ebene, bei der eine Aggegation durchgeführt wird. "
+"Mögliche Werte sind \"Jahr\" (Standard), \"Monat\", \"Woche\", "
+"\"Wochentag\", \"Tag\", \"Stunde\", \"Minute\". Dieser Parameter ermöglicht "
+"Ihnen beispielsweise, Aggegationen für Monate über alle Jahre hinweg zu "
+"berechnen. Beispielsweise ist die Ausgabe bei einem auf \"Wochentag\" "
+"eingerichteten Wert folgende: ``[{\"x\": {\"weekday\":0},\"series1\": 12}, "
+"{\"x\": {\"weekday\":1},\"series1\": 30}]`` . Wenn \"Wochentag\" verwendet "
+"wird, umfasst der generierte Wertebereich 0 bis 6, wobei 0 Montag entspricht"
+" und 6 Sonntag."
 
 #: ../../source/using_api/v1/records_api.rst:47
 msgid "``precision``"
-msgstr ""
+msgstr "\"Präzision\""
 
 #: ../../source/using_api/v1/records_api.rst:48
 msgid ""
@@ -342,6 +354,17 @@ msgid ""
 "  will output ``[{\"x\": {\"year\": 2002, \"month\":1},\"series1\": 3}, "
 "{\"x\": {\"year\": 2002, \"month\":1},\"series1\": 5}]``"
 msgstr ""
+"Wird nur in Fällen verwendet, in denen X vom Typ **Date** oder **DateTime** "
+"ist. Definiert die Präzision der Aggregation. Mögliche Werte sind \"Jahr\", "
+"\"Monat\", \"Woche\", \"Tag\" (Standard), \"Stunde\", \"Minute\". Falls "
+"\"Wochentag\" als ein \"periodischer\" Parameter angeboten wird, wird der "
+"Parameter \"Präzision\" ignoriert. Dieser Parameter muss die Anmerkung "
+"\"Präzision\" des Felds berücksichtigen. Falls das Feld mit einer Anmerkung "
+"versehen ist, die auf \"Tag\" eingestellt ist, kann die Präzision der "
+"Verbindungslinie maximal auf \"Tag\" gestellt werden. Beispiel: "
+"``x=event_date&periodic=year&precision=month&y.series1.func=COUNT`` ergibt "
+"``[{\"x\": {\"year\": 2002, \"month\":1},\"series1\": 3}, {\"x\": {\"year\":"
+" 2002, \"month\":1},\"series1\": 5}]``"
 
 #: ../../source/using_api/v1/records_api.rst:49
 #: ../../source/using_api/v1/records_api.rst:241
@@ -357,25 +380,34 @@ msgid ""
 "``x=city&y.series1.func=SUM&y.series1.expr=population&sort=-x`` , `` "
 "x=city&y.series1.func=SUM&y.series1.expr=population&sort=-series1``"
 msgstr ""
+"Sortiert die Aggregationswerte nach den spezifizierten Verbindungslinien "
+"oder dem x Parameter. Standardmäßig werden die Werte in absteigender "
+"Reihenfolge sortiert gemäß dem x Parameter. Um eine aufsteigende Sortierung "
+"zu erzielen, kann dem Argument jedoch ein Minuszeichen ('-')  vorangestellt "
+"werden."
 
 #: ../../source/using_api/v1/records_api.rst:52
 msgid "**Expression language**"
-msgstr ""
+msgstr "**Ausdruckssprache**"
 
 #: ../../source/using_api/v1/records_api.rst:54
 msgid ""
 "An arbitrary expression can be used as the value of the definition of an "
 "aggregated."
 msgstr ""
+"Ein beliebiger Ausdruck kann als Wert der Definition eines aggregierten "
+"verwendet werden."
 
 #: ../../source/using_api/v1/records_api.rst:56
 msgid ""
 "Classical numerical operators are available: ``+``, ``-``, ``*``, ``/``"
 msgstr ""
+"Folgende klassische numerische Operatoren stehen zur Verfügung:  ``+``, "
+"``-``, ``*``, ``/``"
 
 #: ../../source/using_api/v1/records_api.rst:57
 msgid "Parenthesis can be used to group sub expressions together"
-msgstr ""
+msgstr "Um Unterausdrücke zusammenzufassen, können Klammern gesetzt werden"
 
 #: ../../source/using_api/v1/records_api.rst:58
 msgid ""
@@ -384,11 +416,16 @@ msgid ""
 "ceil, floor, rint, atan2, pow, round, random, abs, max, min, ulp, signum, "
 "sinh, cosh, tanh, hypot"
 msgstr ""
+"Folgende Funktionen stehen ebenfalls zur Verfügung:  time, sin, cos, tan, "
+"asin, acos, atan, toRadians, toDegrees, exp, log, log10, sqrt, cbrt, "
+"IEEEremainder, ceil, floor, rint, atan2, pow, round, random, abs, max, min, "
+"ulp, signum, sinh, cosh, tanh, hypot"
 
 #: ../../source/using_api/v1/records_api.rst:60
 msgid ""
 "Example: ``x=espece_arbre&y.series1.func=Min&y.series1.expr=sin(height)*2``"
 msgstr ""
+"Beispiel: ``x=espece_arbre&y.series1.func=Min&y.series1.expr=sin(height)*2``"
 
 #: ../../source/using_api/v1/records_api.rst:63
 msgid "Records Download API"
