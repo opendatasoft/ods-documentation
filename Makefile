@@ -6,7 +6,8 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = build
-LANGUAGES     = fr,es,de,it,nl
+TRANSLATED_LANGUAGES = fr,es,de,it,nl
+LANGUAGES     = fr es de it nl en
 
 # User-friendly check for sphinx-build
 ifeq ($(shell which $(SPHINXBUILD) >/dev/null 2>&1; echo $$?), 1)
@@ -24,33 +25,36 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
-	@echo "  html               to make standalone HTML files"
-	@echo "  dirhtml            to make HTML files named index.html in directories"
-	@echo "  singlehtml         to make a single large HTML file"
-	@echo "  pickle             to make pickle files"
-	@echo "  json               to make JSON files"
-	@echo "  htmlhelp           to make HTML files and a HTML help project"
-	@echo "  qthelp             to make HTML files and a qthelp project"
-	@echo "  applehelp          to make an Apple Help Book"
-	@echo "  devhelp            to make HTML files and a Devhelp project"
-	@echo "  epub               to make an epub"
-	@echo "  latex              to make LaTeX files, you can set PAPER=a4 or PAPER=letter"
-	@echo "  latexpdf           to make LaTeX files and run them through pdflatex"
-	@echo "  latexpdfja         to make LaTeX files and run them through platex/dvipdfmx"
-	@echo "  text               to make text files"
-	@echo "  man                to make manual pages"
-	@echo "  texinfo            to make Texinfo files"
-	@echo "  info               to make Texinfo files and run them through makeinfo"
-	@echo "  gettext            to make PO message catalogs"
-	@echo "  changes            to make an overview of all changed/added/deprecated items"
-	@echo "  xml                to make Docutils-native XML files"
-	@echo "  pseudoxml          to make pseudoxml-XML files for display purposes"
-	@echo "  linkcheck          to check all external links for integrity"
-	@echo "  doctest            to run all doctests embedded in the documentation (if enabled)"
-	@echo "  coverage           to run coverage check of the documentation (if enabled)"
-	@echo "  translations       to build .po files and upload them to transifex"
-	@echo "  localizedhtml      to fetch translations and build localized html"
-	@echo "  server             to serve the documentation locally"
+#	@echo "  html                  to make standalone HTML files"
+#	@echo "  dirhtml               to make HTML files named index.html in directories"
+#	@echo "  singlehtml            to make a single large HTML file"
+#	@echo "  pickle                to make pickle files"
+#	@echo "  json                  to make JSON files"
+#	@echo "  htmlhelp              to make HTML files and a HTML help project"
+#	@echo "  qthelp                to make HTML files and a qthelp project"
+#	@echo "  applehelp             to make an Apple Help Book"
+#	@echo "  devhelp               to make HTML files and a Devhelp project"
+#	@echo "  epub                  to make an epub"
+#	@echo "  latex                 to make LaTeX files, you can set PAPER=a4 or PAPER=letter"
+#	@echo "  latexpdf              to make LaTeX files and run them through pdflatex"
+#	@echo "  latexpdfja            to make LaTeX files and run them through platex/dvipdfmx"
+#	@echo "  text                  to make text files"
+#	@echo "  man                   to make manual pages"
+#	@echo "  texinfo               to make Texinfo files"
+#	@echo "  info                  to make Texinfo files and run them through makeinfo"
+#	@echo "  gettext               to make PO message catalogs"
+#	@echo "  changes               to make an overview of all changed/added/deprecated items"
+#	@echo "  xml                   to make Docutils-native XML files"
+#	@echo "  pseudoxml             to make pseudoxml-XML files for display purposes"
+	@echo "  coverage              to run coverage check of the documentation (if enabled)"
+	@echo "  translations          to build .po files and upload them to transifex"
+	@echo "  pull-translations     to fetch translations form transifex for all languages"
+	@echo "  pull-translations-%   to fetch translations form transifex for a specific language"
+	@echo "  localizedhtml         to build localized html for all languages"
+	@echo "  localizedhtml-%       to build localized html for specific language (2 letter code)"
+	@echo "  server                to serve the documentation locally"
+	@echo "  linkcheck             to check all external links for integrity"
+	@echo "  doctest               to run all doctests embedded in the documentation (if enabled)"
 
 clean:
 	rm -rf $(BUILDDIR)/*
@@ -59,6 +63,11 @@ html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+
+html/%:
+	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/$@
+	@echo
+	@echo "Build finished. The HTML pages are in $(BUILDDIR)/$@."
 
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml
@@ -201,21 +210,22 @@ translations: pull-translations push-translations
 
 
 pull-translations:
-ifeq ($(shell git symbolic-ref HEAD --short), develop)
 	@echo "Fetching translation files from transifex"
-	tx pull --mode=developer -l $(LANGUAGES)
+	tx pull --mode=developer -l $(TRANSLATED_LANGUAGES)
 	find . -name '*.po'| xargs sed -i '.bak' $$'s/\xC2\xA0/ /g' && find . -name '*.po.bak' -delete
 	@echo "Translations (.po) retrieved from transifex."
-else
-	@echo "You have to be on the develop branch to build translations"
-endif
 
+pull-translations-%:
+	@echo "Fetching translation files for $* from transifex"
+	tx pull --mode=developer -l $*
+	find . -name '*.po'| xargs sed -i '.bak' $$'s/\xC2\xA0/ /g' && find . -name '*.po.bak' -delete
+	@echo "Translations (.po) for $* retrieved from transifex."
 
 push-translations: clean html
 ifeq ($(shell git symbolic-ref HEAD --short), develop)
 	@echo "Building translation files"
 	@make gettext
-	@sphinx-intl update -p $(BUILDDIR)/locale -l $(LANGUAGES)
+	@sphinx-intl update -p $(BUILDDIR)/locale -l $(TRANSLATED_LANGUAGES)
 	@sphinx-intl update-txconfig-resources --pot-dir $(BUILDDIR)/locale --transifex-project-name documentation-5
 	@echo "Uploading translation files to Transifex"
 	tx push -s
@@ -224,17 +234,14 @@ else
 	@echo "You have to be on the develop branch to build translations"
 endif
 
-
-localizedhtml-fr:
+localizedhtml: clean
 	@echo "Building translated html"
-	make -e SPHINXOPTS="-D language='fr'" html
-	@echo "Build finished for French. The HTML pages are in $(BUILDDIR)/html."
+	for LANGUAGE in $(LANGUAGES); do make -e SPHINXOPTS="-D language='$$LANGUAGE'" html/$$LANGUAGE; done
 
-localizedhtml-es:
-	@echo "Building translated html"
-	make -e SPHINXOPTS="-D language='es'" html
-	@echo "Build finished for Spanish. The HTML pages are in $(BUILDDIR)/html."
+localizedhtml-%:
+	make -e SPHINXOPTS="-D language='$*'" html/$*
+	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html/$*."
 
 server:
-	@echo "Serving local files on port 9000: http://localhost:9000/build/html"
-	@python -m SimpleHTTPServer 9000
+	@echo "Serving local files on port 9000: http://localhost:9000/en/"
+	@cd build/html && python -m SimpleHTTPServer 9000
