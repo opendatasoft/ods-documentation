@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-09 16:42+0100\n"
+"POT-Creation-Date: 2017-03-16 14:25+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2017\n"
+"Last-Translator: traducteur_DE2 <datawords.translator.de2@gmail.com>, 2017\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../source/using_api/v1/records_api.rst:2
 msgid "Dataset Records APIs"
-msgstr ""
+msgstr "Datensatzeintrag-APIs"
 
 #: ../../source/using_api/v1/records_api.rst:5
 msgid "Records Analysis API"
-msgstr ""
+msgstr "Eintragsanalyse-API"
 
 #: ../../source/using_api/v1/records_api.rst:7
 msgid ""
@@ -33,10 +33,15 @@ msgid ""
 " can used as an input of modern charting libraries such as **Highchart.js** "
 "or **D3.js**."
 msgstr ""
+"Diese API bietet leistungsstarke Analyse-Funktionen für einen Satz "
+"ausgewählter Einträge. Sie wandelt analysierte Ergebnisse in ein leichtes, "
+"einfach zu parsendes Format um, das als Eingabe moderner "
+"Diagrammbibliotheken wie **Highchart.js** or **D3.js** verwendet werden "
+"können."
 
 #: ../../source/using_api/v1/records_api.rst:10
 msgid "**API endpoint**: ``/api/records/1.0/analyze``"
-msgstr ""
+msgstr "**API Endpunkt**: ``/api/records/1.0/analyze``"
 
 #: ../../source/using_api/v1/records_api.rst:12
 #: ../../source/using_api/v1/records_api.rst:70
@@ -73,7 +78,7 @@ msgstr "``datasetid``"
 #: ../../source/using_api/v1/records_api.rst:20
 #: ../../source/using_api/v1/records_api.rst:135
 msgid "Identifier of the dataset. This field is mandatory."
-msgstr ""
+msgstr "Bezeichner des Datensatzes. Dies ist ein Pflichtfeld."
 
 #: ../../source/using_api/v1/records_api.rst:21
 #: ../../source/using_api/v1/records_api.rst:80
@@ -98,7 +103,7 @@ msgstr ""
 #: ../../source/using_api/v1/records_api.rst:139
 #: ../../source/using_api/v1/records_api.rst:221
 msgid "``geofilter.distance``"
-msgstr ""
+msgstr "``geofilter.distance``"
 
 #: ../../source/using_api/v1/records_api.rst:24
 #: ../../source/using_api/v1/records_api.rst:84
@@ -110,13 +115,17 @@ msgid ""
 "expressed in meters): ``latitude,longitude,distance`` . Example: "
 "``geofilter.distance=48.8520930694,2.34738897685,1000``"
 msgstr ""
+"Begrenzt das Ergebnis auf ein bestimmtes geografisches Gebiet, das durch "
+"einen Kreis definiert ist (Koordinaten der Kreismitte in WGS84 angegeben, "
+"Entfernung in Metern): ``Breitengrad, Längengrad, Entfernung`` . Beispiel: "
+"``geofilter.distance=48.8520930694,2.34738897685,1000``"
 
 #: ../../source/using_api/v1/records_api.rst:25
 #: ../../source/using_api/v1/records_api.rst:87
 #: ../../source/using_api/v1/records_api.rst:143
 #: ../../source/using_api/v1/records_api.rst:225
 msgid "``geofilter.polygon``"
-msgstr ""
+msgstr "``geofilter.polygon``"
 
 #: ../../source/using_api/v1/records_api.rst:26
 #: ../../source/using_api/v1/records_api.rst:88
@@ -128,6 +137,10 @@ msgid ""
 "``(lat1,lon1),(lat2,lon2),(lat3,lon3)`` . Example: "
 "``geofilter.polygon=(48.883086,2.379072),(48.879022,2.379930),(48.883651,2.386968)``"
 msgstr ""
+"Begrenzt das Ergebnis auf ein bestimmtes geografisches Gebiet, das durch ein"
+" Vieleck definiert ist (Koordinaten der Ecken in WGS84 angegeben):  "
+"``(lat1,lon1),(lat2,lon2),(lat3,lon3)`` . Beispiel: "
+"``geofilter.polygon=(48.883086,2.379072),(48.879022,2.379930),(48.883651,2.386968)``"
 
 #: ../../source/using_api/v1/records_api.rst:27
 #: ../../source/using_api/v1/records_api.rst:95
@@ -146,6 +159,10 @@ msgid ""
 "for different facets. Examples: ``refine.city=Paris`` , "
 "``refine.city=Paris&refine.year=2013``"
 msgstr ""
+"Facet-basiertes Filtern. Dieser Parameter beschränkt den Ergebnissatz auf "
+"die Ergebnisse, die einem Facet-Wert entsprechen. Er kann mehrfach für das "
+"gleiche Facet oder für verschiedene Facets verwendet werden. Beispiele: "
+"``refine.city=Paris`` , ``refine.city=Paris&refine.year=2013``"
 
 #: ../../source/using_api/v1/records_api.rst:29
 #: ../../source/using_api/v1/records_api.rst:99
@@ -164,6 +181,10 @@ msgid ""
 " facet or for different facets. Examples: ``exclude.city=Paris`` , "
 "``exclude.city=Paris&exclude.year=2013``"
 msgstr ""
+"Facet-basiertes Filtern. Dieser Parameter schließt die Ergebnisse vom "
+"Ergebnissatz aus, die einem Facet-Wert entsprechen. Er kann mehrfach für das"
+" gleiche Facet oder für verschiedene Facets verwendet werden. Beispiele: "
+"``exclude.city=Paris`` , ``exclude.city=Paris&exclude.year=2013``"
 
 #: ../../source/using_api/v1/records_api.rst:31
 #: ../../source/using_api/v1/records_api.rst:108
@@ -178,6 +199,7 @@ msgstr "``format``"
 msgid ""
 "Format of the response output. One of JSON (default), CSV and GeoJSONP."
 msgstr ""
+"Format der Antwortausgabe. Eines von JSON (Standard), CSV und GeoJSONP."
 
 #: ../../source/using_api/v1/records_api.rst:33
 #: ../../source/using_api/v1/records_api.rst:110
@@ -195,7 +217,7 @@ msgstr "JSONP-Rückrüf. Beispiel: ``format=jsonp&callback=myFunction``"
 
 #: ../../source/using_api/v1/records_api.rst:35
 msgid "``x``"
-msgstr ""
+msgstr "``x``"
 
 #: ../../source/using_api/v1/records_api.rst:36
 msgid ""
@@ -207,10 +229,16 @@ msgid ""
 "and ``periodic``  parameters. For other field types, the actual field values"
 " are used as x values."
 msgstr ""
+"Der Name des Feldes, auf dem die Datenaggregation beruht. Dies ist ein "
+"Pflichtparameter. Er ermöglicht die Analyse eines Datenuntersatzes gemäß den"
+" einzelnen Werten der Felder. Das Verhalten kann je nach Feldtyp "
+"unterschiedlich sein. Für **Date**- und **DateTime**-Felder werden die "
+"Sektoren mit den Daten erstellt. Dabei wird die anhand der  Parameter "
+"\"Präzision\" und \"periodisch\" definierte Aggegationsebene angewendet."
 
 #: ../../source/using_api/v1/records_api.rst:37
 msgid "``y.<SERIE>.func``"
-msgstr ""
+msgstr "``y.<SERIE>.func``"
 
 #: ../../source/using_api/v1/records_api.rst:38
 msgid ""
@@ -223,10 +251,20 @@ msgid ""
 "simply the number of records for the ``COUNT``  function) for each value of "
 "x."
 msgstr ""
+"Die Definition der Analyseaggegationsfunktion. Es können mehrere "
+"Verbindungslinien auf einmal berechnet werden. Dazu brauchen Sie diesen "
+"Parameter einfach nur mit einem beliebigen Verbindungsliniennamen zu "
+"benennen, den Sie zur Angabe des dazugehörigen aggregierten Ausdrucks "
+"wiederverwnden können. Die Liste der Ihnen zur Verfügung stehenden "
+"Aggegationsfunktionen lautet: ``COUNT`` , ``AVG`` , ``SUM`` , ``MIN`` , "
+"``MAX`` , ``STDDEV`` , ``SUMSQUARES`` . Diese Funktionen geben das Ergebnis "
+"ihrer Ausführung an den Ausdruck zurück, der in y.<SERIE>.expr (oder einfach"
+" die Anzahl der Einträge für die \"COUNT`` Funktion) für jeden Wert für x "
+"geliefert wird."
 
 #: ../../source/using_api/v1/records_api.rst:39
 msgid "``y.<SERIE>.expr``"
-msgstr ""
+msgstr "``y.<SERIE>.expr``"
 
 #: ../../source/using_api/v1/records_api.rst:40
 msgid ""
@@ -237,10 +275,17 @@ msgid ""
 "in the Dataset (**Int** or **Double**), or a mathematical expression (see "
 "below to get more details on the expression language)."
 msgstr ""
+"Definiert den zu aggregierenden Wert. Dies ist ein Pflichtparameter für jede"
+" Aggragationsfunktion, außer der ``COUNT`` Funktion. Der Parameter "
+"<VERBINDUNGSLINIEN> muss denselben Namen tragen wie derjenige, der für die "
+"erforderliche entsprechende Aggregationsfunktion verwendet wird. Der "
+"Parameter kann den Namen eines numerischen Felds im Datensatz tragen "
+"(**Int** oder **Doppelt**) bzw. einen mathematischen Ausdruck (weitere "
+"Einzelheiten zur Ausdruckssprache siehe unten)."
 
 #: ../../source/using_api/v1/records_api.rst:41
 msgid "``y.<SERIE>.cumulative``"
-msgstr ""
+msgstr "``y.<SERIE>.cumulative``"
 
 #: ../../source/using_api/v1/records_api.rst:42
 msgid ""
@@ -248,10 +293,14 @@ msgid ""
 "parameter is set to true, the results of a series are recursively summed up "
 "(``serie(x) = serie(x) + serie(x-1)`` )."
 msgstr ""
+"Dieser Parameter akzeptiert \"Wahr\"- und \"Flasch\"-Werte. Falls der "
+"Parameter nicht auf wahr eingerichtet ist, werden die Ergebnisse einer "
+"Verbindungslinie rekursiv zusammengefasst (``serie(x) = serie(x) + "
+"serie(x-1)`` )."
 
 #: ../../source/using_api/v1/records_api.rst:43
 msgid "``maxpoints``"
-msgstr ""
+msgstr "``maxpoints``"
 
 #: ../../source/using_api/v1/records_api.rst:44
 msgid ""

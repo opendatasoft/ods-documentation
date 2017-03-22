@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-09 16:42+0100\n"
+"POT-Creation-Date: 2017-03-16 14:25+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Datawords Rel2 <datawords.rel.2@gmail.com>, 2017\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
@@ -20,33 +20,39 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:2
 msgid "Defining the dataset schema"
-msgstr ""
+msgstr "Definizione dello schema del dataset"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:5
 msgid ""
 "As seen in a previous article, a dataset content can be seen as a flat "
 "database table. That is:"
 msgstr ""
+"Come descritto nell'articolo precedente, il contenuto di un dataset può "
+"essere considerato come una tabella di database flat, ovvero:"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:7
 msgid ""
 "A schema (the list of fields along with their types and possibily some "
 "annotations)"
 msgstr ""
+"uno schema, con l'elenco dei campi, i relativi tipi ed eventualmente alcune "
+"annotazioni;"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:8
 msgid "A set of records (rows or tuples) matching the schema"
-msgstr ""
+msgstr "una serie di record, come righe o tuple, corrispondenti allo schema."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:10
 msgid ""
 "Whatever the original data source format is, the dataset content ends up as "
 "a flat database table content."
 msgstr ""
+"Qualunque sia il formato dell'origine dei dati iniziale, il contenuto del "
+"dataset diventa il contenuto di una tabella di database flat."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:15
 msgid "Fields have a type. The following types are available:"
-msgstr ""
+msgstr "I campi sono definiti da un tipo, che può essere:"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:20
 msgid "Type"
@@ -58,7 +64,7 @@ msgstr "Descrizione"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:22
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:23
 msgid ""
@@ -68,10 +74,15 @@ msgid ""
 "Normalizer** processor which lets you define precisely the parsing format of"
 " your date field."
 msgstr ""
+"Ad esempio ``2015/02/11`` o ``2015-02-11`` o ``02/11/2015`` e così via. La "
+"piattaforma cerca di interpretare nel modo più accurato possibile il formato"
+" della data di input. In caso di ambiguità o di errore nella rilevazione "
+"della data, utilizza il processore **Normalizzazione della data**, che "
+"permette di definire con precisione il formato di analisi del campo di data."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:26
 msgid "DateTime"
-msgstr ""
+msgstr "Data/ora"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:27
 msgid ""
@@ -82,10 +93,17 @@ msgid ""
 "**Date Normalizer** processor which lets you define precisely the parsing "
 "format of your datetime field."
 msgstr ""
+"Ad esempio ``2015/02/11-08:09:10`` o ``2015-02-11T08:09:10`` o ``02/11/2015 "
+"08:09:10`` e così via. Vengono elaborate anche le specificazioni relative al"
+" fuso orario. La piattaforma tenta di interpretare nel modo più accurato "
+"possibile il formato di data/ora immesso. In caso di ambiguità o di errore, "
+"tuttavia, utilizza il processore **Normalizzazione della data**, che "
+"permette di definire con precisione il formato di analisi del campo di "
+"data/ora."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:31
 msgid "Decimal"
-msgstr ""
+msgstr "Decimale"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:32
 msgid ""
@@ -93,10 +111,13 @@ msgid ""
 "The space character can also be used as a thousands separator but not the "
 "``,``."
 msgstr ""
+"Numero decimale. Sono separatori validi della parte decimali ``.`` o ``,``. "
+"Come separatore delle migliaia è anche possibile utilizzare lo spazio ma non"
+" il carattere ``,``."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:34
 msgid "Geo Point"
-msgstr ""
+msgstr "Punto geografico"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:35
 msgid ""
@@ -105,24 +126,30 @@ msgid ""
 "longitude, you'll need to concatenate them with a **Concatenate Text** "
 "processor to form a valid geo point field."
 msgstr ""
+"Singola ubicazione geografica espressa nel formato ``<LAT>,<LON>``, ad "
+"esempio ``45.8,2.5``. Se il dataset contiene due campi, latitudine e "
+"longitudine, è necessario concatenarli con il processore **Testo "
+"concatenato** per ottenere un campo punto geografico valido."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:38
 msgid "GeoShape"
-msgstr ""
+msgstr "Forma geografica"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:39
 msgid ""
 "A valid geo shape expressed in `GeoJSON <http://geojson.org/geojson-"
 "spec.html>`_."
 msgstr ""
+"Forma geografica valida espressa in `GeoJSON <http://geojson.org/geojson-"
+"spec.html>`_."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:41
 msgid "For example :"
-msgstr ""
+msgstr "Ad esempio:"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:48
 msgid "Feature collections are not supported."
-msgstr ""
+msgstr "Le raccolte di caratteristiche non sono supportate."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:49
 msgid "Integer"
@@ -133,43 +160,51 @@ msgid ""
 "Any valid integer value. If a floating point value is found, it is "
 "automatically cast to its integer part."
 msgstr ""
+"Qualsiasi valore intero valido. Se viene rilevato un valore con virgola "
+"mobile, viene considerata automaticamente la parte intera."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:51
 msgid "Text"
-msgstr ""
+msgstr "Testo"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:52
 msgid "Anything"
-msgstr ""
+msgstr "Qualsiasi."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:53
 msgid "File"
-msgstr ""
+msgstr "File"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:54
 msgid "A file. Created from a File processor or a specific extractor."
-msgstr ""
+msgstr "Un file. Creato con un processore di file o un estrattore specifico."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:56
 msgid ""
 "Next to their type, any field has a set of action items, which can be used "
 "to further refine your dataset schema."
 msgstr ""
+"Accanto al tipo, per ogni campo è riportata una serie di azioni che "
+"permettono di perfezionare lo schema del dataset."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:58
 msgid "The **filter action** lets you define a **facet** for the field."
-msgstr ""
+msgstr "L'**azione Filtra** permette di definire un **facet** per il campo."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:59
 msgid ""
 "The **field configuration action** will be described in more details below."
 msgstr ""
+"L'**azione Configurazione del campo** è descritta in maggior dettaglio più "
+"avanti."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:60
 msgid ""
 "The **reorder fields action** lets you reorder dataset fields at your "
 "convenience. This only affects the dataset API output."
 msgstr ""
+"L'**azione Riordina i campi** permette di riordinare come desiderato i campi"
+" del dataset e influisce solo sull'output dell'API del dataset."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:62
 msgid ""
@@ -177,16 +212,21 @@ msgid ""
 "fields are displayed at the right hand side of the table view and can easily"
 " be recovered."
 msgstr ""
+"L'**azione Nascondi i campi** permette di nascondere campi specifici del "
+"dataset. I campi nascosti sono mostrati a della visualizzazione della "
+"tabella e possono essere facilmente recuperati."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:66
 msgid "Configuring a field"
-msgstr ""
+msgstr "Configurazione di un campo"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:68
 msgid ""
 "The **field configuration button** allows you to fine tune your field's "
 "configuration."
 msgstr ""
+"Il **pulsante Configurazione del campo** permette di perfezionare la "
+"configurazione del campo."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:73
 msgid ""
@@ -196,29 +236,37 @@ msgid ""
 "you choose which fields are going to be used when computing the record id, "
 "making it possible to handle records deduplication at record fields level."
 msgstr ""
+"L'opzione generica **ID** consente di definire la politica di calcolo "
+"dell'ID dei record. Ciascun record viene identificato in modo univoco dal "
+"proprio ID, che viene calcolato in modo predefinito come l'impronta digitale"
+" di tutti i valori dei campi del record. Con l'opzione **ID** puoi scegliere"
+" quali campi verranno utilizzati nel calcolo dell'ID dei record, gestendo "
+"così la deduplicazione dei record a livello dei relativi campi."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:78
 msgid ""
 "You then have access to a wide range of options depending on the field type."
-msgstr ""
+msgstr "A seconda del tipo di campo sono disponibili varie opzioni."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:97
 msgid "Text fields"
-msgstr ""
+msgstr "Campi di testo"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:81
 msgid "**Sortable**"
-msgstr ""
+msgstr "**Ordinabile**"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:83
 msgid ""
 "By default, textual fields are not sortable. This option lets you activate "
 "sorting on textual fields."
 msgstr ""
+"Per impostazione predefinita, i campi testuali non sono ordinabili. Questa "
+"opzione permette di attivare l'ordinamento sui campi testuali."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:85
 msgid "**Multivalued**"
-msgstr ""
+msgstr "**Multivalore**"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:87
 msgid ""
@@ -230,10 +278,17 @@ msgid ""
 "values displayed in the facets widget will indeed be distinct (one entry for"
 " *France*, one entry for *UK*, one entry for *USA*)."
 msgstr ""
+"Questa opzione permette di definire il separatore utilizzato per "
+"interpretare i campi multivalore e viene utilizzata per i facet multivalore."
+" Ipotizziamo, ad esempio, che un campo denominato *countries* e definito "
+"come facet contenga valori come *Italia;UK;USA*. Impostando questo campo "
+"come multivalore e definendo come separatore il carattere ';' i valori "
+"visualizzati nel widget dei facet saranno distinti, con una voce ciascuna "
+"per *Italia*, *UK* e *USA*."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:93
 msgid "**Hierarchical**"
-msgstr ""
+msgstr "**Gerarchico**"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:95
 msgid ""
@@ -242,28 +297,35 @@ msgid ""
 "build a hierarchical facets navigation. This option lets you choose the "
 "hierarchy path separator to be used."
 msgstr ""
+"Questa proprietà viene utilizzata insieme ai facet. Per impostazione "
+"predefinita, i facet sono elaborati come contenuto testuale grezzo e singolo"
+" ma talvolta può essere necessario creare una navigazione gerarchica dei "
+"facet. questa opzione permette di scegliere il separatore del percorso "
+"gerarchico che desideri utilizzare."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:102
 msgid "Date and DateTime fields"
-msgstr ""
+msgstr "Campi data e data/ora"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:100
 msgid "**Precision**"
-msgstr ""
+msgstr "**Precisione**"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:102
 msgid ""
 "This option lets you choose the precision of a temporal field (year, month "
 "and day for a Date field, hour and minute for a DateTime field)."
 msgstr ""
+"Questa opzione permette di scegliere la precisione di un campo temporale "
+"(anno, mese e giorno per il campo Data, ora e minuti per un campo data/ora)."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:108
 msgid "Decimal and Integer fields"
-msgstr ""
+msgstr "Campi decimali e interi"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:105
 msgid "**Unit**"
-msgstr ""
+msgstr "**Unità**"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:107
 msgid ""
@@ -271,14 +333,17 @@ msgid ""
 "option is used to complement the table view and is displayed next to the "
 "field's value."
 msgstr ""
+"Questa opzione permette di definire l'unità da associare ai campi numerici. "
+"Serve per completare la visualizzazione delle tabelle ed è riportata accanto"
+" al valore del campo."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:111
 msgid "Special fields"
-msgstr ""
+msgstr "Campi speciali"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:115
 msgid "Record id"
-msgstr ""
+msgstr "ID record"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:117
 msgid ""
@@ -286,34 +351,41 @@ msgid ""
 "the processing, if two records have the same *record_id*, the first one is "
 "replaced by the second."
 msgstr ""
+"Ogni record è identificato con un campo univoco e integrato denominato "
+"*record_id*. Se durante l'elaborazione due campi hanno lo stesso "
+"*record_id*, il primo viene sostituito con il secondo."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:120
 msgid ""
 "The *record_id* is calculated at the end of the processing using the "
 "following principles:"
 msgstr ""
+"Il *record_id* viene calcolato al termine dell'elaborazione in base ai "
+"seguenti principi:"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:122
 msgid ""
 "Filter the fields. Keep all the fields with the *ID* option or all the "
 "fields if no field has the *ID* option."
 msgstr ""
+"Filtro dei campi. Mantiene tutti i campi con l'opzione *ID* o tutti i campi "
+"se nessuno dispone dell'opzione *ID*."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:123
 msgid "Sort the fields values."
-msgstr ""
+msgstr "Ordinamento dei valori dei campi."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:124
 msgid "Concat the sorted values."
-msgstr ""
+msgstr "Concatenazione dei valori ordinati."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:125
 msgid "Apply a hash function to the result"
-msgstr ""
+msgstr "Applicazione della funzione hash al risultato."
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:139
 msgid "Record timestamp"
-msgstr ""
+msgstr "Marca temporale del record"
 
 #: ../../source/sourcing_and_processing_data/dataset_schema.rst:141
 msgid ""
@@ -323,3 +395,8 @@ msgid ""
 " a last modified date. On a realtime dataset, the *record_timestamp* is the "
 "date when the record arrived on the platform."
 msgstr ""
+"Per tutti i record viene generato un campo *record_timestamp* contenente la "
+"data della sua creazione. Il valore dipende dal tipo di estrattore. Ad "
+"esempio, su un file in formato csv il *record_timestamp* è la data "
+"dell'ultima modifica. Su un dataset in tempo reale, il *record_timestamp* è "
+"la data in cui il record è giunto sulla piattaforma."

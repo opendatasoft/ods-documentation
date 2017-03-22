@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-09 16:42+0100\n"
+"POT-Creation-Date: 2017-03-16 14:25+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Datawords Rel2 <datawords.rel.2@gmail.com>, 2017\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
@@ -350,7 +350,7 @@ msgstr "``format`` stringa (vedere sotto per i valori ammessi)"
 
 #: ../../source/using_api/v2/aggregations.rst:298
 msgid "format_date(myfield, 'yyyy-MM-dd HH:mm:ss')"
-msgstr "format_date(myfield, 'yyyy-MM-dd HH:mm:ss')"
+msgstr "format_date(miocampo, 'yyyy-MM-dd HH:mm:ss')"
 
 #: ../../source/using_api/v2/aggregations.rst:300
 msgid "Format options:"
@@ -420,7 +420,7 @@ msgstr "*K* ora della mezza giornata (0~11) (numero) esempio: 0"
 
 #: ../../source/using_api/v2/aggregations.rst:317
 msgid "*h* clockhour of halfday (1~12) (number) example: 12"
-msgstr ""
+msgstr "*h* ora di orologio della mezza giornata (1~12) (numero) esempio: 12"
 
 #: ../../source/using_api/v2/aggregations.rst:318
 msgid "*H* hour of day (0~23) (number) example: 0"
@@ -428,7 +428,7 @@ msgstr "*H* ora del giorno (0~23) (numero) esempio: 0"
 
 #: ../../source/using_api/v2/aggregations.rst:319
 msgid "*k* clockhour of day (1~24) (number) example: 24"
-msgstr ""
+msgstr "*k* ora di orologio del giorno (1~24) (numero) esempio: 24"
 
 #: ../../source/using_api/v2/aggregations.rst:320
 msgid "*m* minute of hour (number) example: 30"
@@ -450,6 +450,8 @@ msgstr "*z* fuso orario (testo) esempio: Pacific Standard Time; PST"
 msgid ""
 "*Z* time zone offset/id (zone) example: -0800; -08:00; America/Los_Angeles"
 msgstr ""
+"*Z* differenza fuso orario/ID (zona) esempio: -0800; -08:00; "
+"America/Los_Angeles"
 
 #: ../../source/using_api/v2/aggregations.rst:325
 msgid "*'* escape for text (delimiter)"
@@ -468,7 +470,7 @@ msgid ""
 "*Text* If the number of pattern letters is 4 or more, the full form is used;"
 " otherwise a short or abbreviated form is used if available."
 msgstr ""
-"*Text*: se il numero delle lettere del pattern è maggiore o uguale a 4, "
+"*Testo*: se il numero delle lettere del pattern è maggiore o uguale a 4, "
 "viene utilizzata la forma completa, altrimenti, se disponibile, si utilizza "
 "una forma breve o abbreviata."
 
@@ -477,7 +479,7 @@ msgid ""
 "*Number* The minimum number of digits. Shorter numbers are zero-padded to "
 "this amount."
 msgstr ""
-"*Number*: numero minimo di caratteri. Ai  numeri più corti  vengon aggiunti "
+"*Numero*: numero minimo di caratteri. Ai  numeri più corti vengono aggiunti "
 "gli zeri necessari per raggiungere questo numero di caratteri."
 
 #: ../../source/using_api/v2/aggregations.rst:332
@@ -486,23 +488,29 @@ msgid ""
 "specially. For example, if the count of 'y' is 2, the year will be displayed"
 " as the zero-based year of the century, which is two digits."
 msgstr ""
-"*Year*: la presentazione numerica dei campi year e weekyear viene gestita in"
+"*Anno*: la presentazione numerica dei campi year e weekyear viene gestita in"
 " modo speciale. Ad esempio, se il numero di 'y' è 2, l'anno verrà "
 "visualizzato come anno in base zero del secolo, con due cifre."
 
 #: ../../source/using_api/v2/aggregations.rst:333
 msgid "*Month* 3 or over, use text, otherwise use number."
 msgstr ""
+"*Mese* 3 o più, si utilizza il testo, altrimenti si utilizza il numero."
 
 #: ../../source/using_api/v2/aggregations.rst:334
 msgid ""
 "*Zone* 'Z' outputs offset without a colon, 'ZZ' outputs the offset with a "
 "colon, 'ZZZ' or more outputs the zone id."
 msgstr ""
+"*Fuso orario*: 'Z' dà come output la differenza senza i due punti, 'ZZ' dà "
+"come output la differenza con i due punti, 'ZZZ' o più dà come output l'ID "
+"zona."
 
 #: ../../source/using_api/v2/aggregations.rst:335
 msgid "*Zone names* Time zone names ('z') cannot be parsed."
 msgstr ""
+"*Nome fuso orario* I nomi dei fusi orari ('z') non possono essere "
+"analizzati."
 
 #: ../../source/using_api/v2/aggregations.rst:337
 msgid ""
@@ -522,7 +530,7 @@ msgstr "Esempio completo:"
 
 #: ../../source/using_api/v2/aggregations.rst:361
 msgid "Range functions"
-msgstr "Funzioni di intervall"
+msgstr "Funzioni di intervallo"
 
 #: ../../source/using_api/v2/aggregations.rst:363
 msgid ""
@@ -534,13 +542,14 @@ msgstr ""
 
 #: ../../source/using_api/v2/aggregations.rst:365
 msgid "In all of them, ``myfield`` is an integer or decimal field."
-msgstr "In tutte, ``myfield`` è un campo intero o decimale."
+msgstr ""
+"In tutte, ``miocampo`` indica un campo con un numero intero o decimale."
 
 #: ../../source/using_api/v2/aggregations.rst:367
 msgid ""
 "``range(myfield, equi(num_ranges, lowest_boundary, highest_boundary))``"
 msgstr ""
-"``range(myfield, equi(num_ranges, lowest_boundary, highest_boundary))``"
+"``range(miocampo, equi(num_ranges, lowest_boundary, highest_boundary))``"
 
 #: ../../source/using_api/v2/aggregations.rst:369
 msgid ""
@@ -548,7 +557,7 @@ msgid ""
 "num_ranges equally wide sub ranges."
 msgstr ""
 "Divide l'intervallo globale dei valori [lowest_boundary, highest_boundary] "
-"in un numero pari a num_ranges di sotto intervalli di uguali dimensioni."
+"in un numero pari a num_ranges di sotto-intervalli di uguali dimensioni."
 
 #: ../../source/using_api/v2/aggregations.rst:371
 msgid ""
@@ -568,14 +577,14 @@ msgid ""
 "added to the num_ranges sub-ranges."
 msgstr ""
 "Se lowest_boundary (o highest_boundary) è maggiore (o minore) del valore "
-"minimo (o maximum) del dataset, ai num_ranges sotto-intervalli verrà "
+"minimo (o massimo) del dataset, ai num_ranges sotto-intervalli verrà "
 "aggiunto un ulteriore sotto-intervallo [min_value; lowest_boundary[ (o "
 "[highest_boundary; max_value])."
 
 #: ../../source/using_api/v2/aggregations.rst:380
 #: ../../source/using_api/v2/aggregations.rst:433
 msgid "``myfield`` **required** a decimal field"
-msgstr "``myfield`` campo decimale **necessario**"
+msgstr "``miocampo`` campo decimale **necessario**"
 
 #: ../../source/using_api/v2/aggregations.rst:381
 msgid "``num_ranges`` **required** number of ranges to create from the values"
@@ -599,11 +608,11 @@ msgstr ""
 #: ../../source/using_api/v2/aggregations.rst:385
 #: ../../source/using_api/v2/aggregations.rst:436
 msgid "Example: myfield values are [ -5, -2, -1, 0, 3, 4, 5, 120]"
-msgstr "Esempio: i valori myfield sono [ -5, -2, -1, 0, 3, 4, 5, 120]"
+msgstr "Esempio: i valori di miocampo sono [ -5, -2, -1, 0, 3, 4, 5, 120]"
 
 #: ../../source/using_api/v2/aggregations.rst:388
 msgid "``range(myfield, equi(5))`` will create the subranges"
-msgstr "``range(myfield, equi(5))`` creerà i seguenti sotto-intervalli:"
+msgstr "``range(miocampo, equi(5))`` creerà i seguenti sotto-intervalli:"
 
 #: ../../source/using_api/v2/aggregations.rst:390
 msgid "[-5; 20[``"
@@ -629,7 +638,7 @@ msgstr "[95; 120]"
 msgid ""
 "``range(myfield, equi(5, lowest_boundary=0))`` will create the subranges"
 msgstr ""
-"``range(myfield, equi(5, lowest_boundary=0))`` creerà i seguenti sotto-"
+"``range(miocampo, equi(5, lowest_boundary=0))`` creerà i seguenti sotto-"
 "intervalli:"
 
 #: ../../source/using_api/v2/aggregations.rst:398
@@ -661,7 +670,7 @@ msgstr "[96; 120]"
 msgid ""
 "``range(myfield, equi(5, highest_boundary=10))`` will create the subranges"
 msgstr ""
-"``range(myfield, equi(5, highest_boundary=10))`` creerà i seguenti sotto-"
+"``range(miocampo, equi(5, highest_boundary=10))`` creerà i seguenti sotto-"
 "intervalli:"
 
 #: ../../source/using_api/v2/aggregations.rst:407
@@ -694,8 +703,8 @@ msgid ""
 "``range(myfield, equi(5, lowest_boundary=0, highest_boundary=10))`` will "
 "create the subranges"
 msgstr ""
-"``range(myfield, equi(5, lowest_boundary=0, highest_boundary=10))`` creerà i"
-" seguenti sotto-intervalli:"
+"``range(miocampo, equi(5, lowest_boundary=0, highest_boundary=10))`` creerà "
+"i seguenti sotto-intervalli:"
 
 #: ../../source/using_api/v2/aggregations.rst:417
 msgid "[0; 2["
@@ -719,15 +728,15 @@ msgstr "[8; 10["
 
 #: ../../source/using_api/v2/aggregations.rst:424
 msgid "``range(myfield, static(divisions))``"
-msgstr "``range(myfield, static(divisions))``"
+msgstr "``range(miocampo, static(divisions))``"
 
 #: ../../source/using_api/v2/aggregations.rst:426
 msgid ""
 "Divides the full range of myfield values in sub ranges delimited by the "
 "values set in divisions."
 msgstr ""
-"Divide l'intero intervallo dei valori myfield in sotto-intervalli delimitati"
-" dai valori impostati nelle divisioni."
+"Divide l'intero intervallo dei valori di miocampo in sotto-intervalli "
+"delimitati dai valori impostati nelle divisioni."
 
 #: ../../source/using_api/v2/aggregations.rst:428
 msgid ""
@@ -735,9 +744,9 @@ msgid ""
 "higher) than the lowest (resp. highest) division value, an additional range "
 "will be added so that all of myfield values are accounted for."
 msgstr ""
-"Se il valore minimo (o massimo) esistente di myfield è minore (o maggiore) "
+"Se il valore minimo (o massimo) esistente di miocampo è minore (o maggiore) "
 "del valore minimo (o massimo) di divisione, verrà aggiunto un ulteriore "
-"intervallo, in modo che tutti i valori myfield siano presenti."
+"intervallo, in modo che tutti i valori miocampo siano presenti."
 
 #: ../../source/using_api/v2/aggregations.rst:434
 msgid "``division`` **required** an ordered (ASC) list of decimal values"
@@ -749,7 +758,7 @@ msgid ""
 "``range(myfield, static([-1000, -10, -1, 0, 1, 10, 1000]))`` will create the"
 " sub ranges"
 msgstr ""
-"``range(myfield, static([-1000, -10, -1, 0, 1, 10, 1000]))`` creerà i "
+"``range(miocampo, static([-1000, -10, -1, 0, 1, 10, 1000]))`` creerà i "
 "seguenti sotto-intervalli:"
 
 #: ../../source/using_api/v2/aggregations.rst:441
@@ -779,7 +788,8 @@ msgstr "[10; 1000]"
 #: ../../source/using_api/v2/aggregations.rst:448
 msgid "``range(myfield, static([-10, 0, 10]))`` will create the sub ranges"
 msgstr ""
-"``range(myfield, static([-10, 0, 10]))`` creerà i seguenti sotto-intervalli:"
+"``range(miocampo, static([-10, 0, 10]))`` creerà i seguenti sotto-"
+"intervalli:"
 
 #: ../../source/using_api/v2/aggregations.rst:450
 #: ../../source/using_api/v2/aggregations.rst:456
@@ -799,7 +809,7 @@ msgstr "[10; 120["
 msgid ""
 "``range(myfield, static([0, 10, 100, 1000]))`` will create the sub ranges"
 msgstr ""
-"``range(myfield, static([0, 10, 100, 1000]))`` creerà i seguenti sotto-"
+"``range(miocampo, static([0, 10, 100, 1000]))`` creerà i seguenti sotto-"
 "intervalli:"
 
 #: ../../source/using_api/v2/aggregations.rst:458
@@ -815,8 +825,8 @@ msgid ""
 "``range(myfield, percentile())`` Return the number of the percentile within "
 "which myfield's value lies. (default: [1, 5, 25, 50, 75, 95, 99])"
 msgstr ""
-"``range(myfield, percentile())`` Restituisce il numero del percentile "
-"all'interno del quale si trova il valore myfield. (predefinito: [1, 5, 25, "
+"``range(miocampo, percentile())`` Restituisce il numero del percentile "
+"all'interno del quale si trova il valore miocampo. (predefinito: [1, 5, 25, "
 "50, 75, 95, 99])"
 
 #: ../../source/using_api/v2/aggregations.rst:462
@@ -824,21 +834,21 @@ msgid ""
 "``range(myfield, median())`` Return the number of the median within which "
 "myfield's value lies."
 msgstr ""
-"``range(myfield, median())`` Restituisce il numero della mediana all'interno"
-" del quale si trova il valore myfield."
+"``range(miocampo, median())`` Restituisce il numero della mediana "
+"all'interno del quale si trova il valore miocampo."
 
 #: ../../source/using_api/v2/aggregations.rst:463
 msgid ""
 "``range(myfield, decile())`` Return the number of the decile within which "
 "myfield's value lies. (1 to 10)"
 msgstr ""
-"``range(myfield, decile())`` Restituisce il numero del decile all'interno "
-"del quale si trova il valore myfield (da 1 a 10)."
+"``range(miocampo, decile())`` Restituisce il numero del decile all'interno "
+"del quale si trova il valore miocampo (da 1 a 10)."
 
 #: ../../source/using_api/v2/aggregations.rst:464
 msgid ""
 "``range(myfield, quartile())`` Return the number of the quartile within "
 "which myfield's value lies. (1 to 4)"
 msgstr ""
-"``range(myfield, quartile())`` Restituisce il numero del quartile "
-"all'interno del quale si trova il valore myfield (da 1 a 4)."
+"``range(miocampo, quartile())`` Restituisce il numero del quartile "
+"all'interno del quale si trova il valore miocampo (da 1 a 4)."

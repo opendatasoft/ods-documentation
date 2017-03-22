@@ -13,7 +13,7 @@ script:
   - rm -rf build/ tmp/
   - sphinx-build -aE -nW -Dlanguage='en' -b html -d tmp source/ build/en
   - sphinx-build -aE -nW -Dlanguage='fr' -b html -d tmp source/ build/fr
-  - test $TRAVIS_BRANCH == "betadoc" && sphinx-build -aE -nW -Dlanguage='es' -b html -d tmp source/ build/es
+  - sphinx-build -aE -nW -Dlanguage='es' -b html -d tmp source/ build/es
   - test $TRAVIS_BRANCH == "betadoc" && sphinx-build -aE -nW -Dlanguage='it' -b html -d tmp source/ build/it
   - test $TRAVIS_BRANCH == "betadoc" && sphinx-build -aE -nW -Dlanguage='de' -b html -d tmp source/ build/de
   - test $TRAVIS_BRANCH == "betadoc" && sphinx-build -aE -nW -Dlanguage='nl' -b html -d tmp source/ build/nl
