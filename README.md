@@ -142,6 +142,15 @@ To reference any external page (note the trailing `_`)
 ```
     `Monty Python members <https://en.wikipedia.org/wiki/Monty_Python>`_
 ```
+To make a reference to another part of the same document you can use internal links.
+In translations, the reference must be translated using the exact same wording as the referenced title section
+```
+    `Available classes`_
+```
+translated in french to
+```
+    `Classes disponibles`_
+```
 If you have multiple links with the same name, then you will need to transform your named references into anonymous references by adding an extra `_`
 ```
     `link <http://google.com>`__
