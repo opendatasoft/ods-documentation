@@ -249,8 +249,6 @@ server:
 pdf:
 	$(SPHINXBUILD) -b pdf $(ALLSPHINXOPTS) $(BUILDDIR)/pdf
 
-pdf-fr:
-	make -e SPHINXOPTS="-D language='fr'" pdf
+pdf-%:
+	make -e SPHINXOPTS="-D language='$*'" pdf
 
-pdf-es:
-	make -e SPHINXOPTS="-D language='es'" pdf
