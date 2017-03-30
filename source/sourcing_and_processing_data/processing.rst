@@ -567,7 +567,7 @@ Let's take an example and assume that the first dataset contains two rows for th
      * Rennes - Montparnasse
      * 1 place du dix huit Juin 1940, 75006 Paris
 
-If **One line** is set (with **Separator** set to `|`), the Join will result in:
+If **One line** is set (with **Separator** set to ``|``), the Join will result in:
 
 .. list-table::
    :header-rows: 1
@@ -578,8 +578,8 @@ If **One line** is set (with **Separator** set to `|`), the Join will result in:
      * station_address
    * * 1
      * 10
-     * Tour Eiffel&#124;Quai Branly
-     * 69 quai Branly, 75007 Paris&#124;69 quai Branly, 75007 Paris
+     * Tour Eiffel|Quai Branly
+     * 69 quai Branly, 75007 Paris|69 quai Branly, 75007 Paris
    * * 2
      * 15
      * Rennes - Montparnasse
