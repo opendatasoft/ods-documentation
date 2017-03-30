@@ -607,8 +607,79 @@ If **One line** is not set, the Join will result in:
      * Rennes - Montparnasse
      * 1 place du dix huit Juin 1940, 75006 Paris
 
-This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will
-activate it for you.
+Integers, decimals and text field containing numerical values can be joined together. For example the following dataset:
+
+.. list-table::
+   :header-rows: 1
+
+   * * insee_code (text)
+     * bloom_competition_result (decimal)
+   * * 01262
+     * 2.0
+   * * 90010
+     * 4.0
+   * * 57355
+     * 2.0
+
+can be used in a join dataset processor in the following dataset:
+
+.. list-table::
+   :header-rows: 1
+
+   * * bloom_ranks (integer)
+   * * 2
+
+to obtain the following result:
+
+.. list-table::
+   :header-rows: 1
+
+   * * insee_code (text)
+     * bloom_competition_result (decimal)
+   * * 01262
+     * 2
+   * * 57355
+     * 2
+
+The matching between values ``2`` and ``2.0`` was successful despite the type difference. We can go further and apply to it a second join dataset processor, in order to obtain values from the following dataset:
+
+.. list-table::
+   :header-rows: 1
+
+   * * city (text)
+     * insee_code (integer)
+     * postal_code (text)
+   * * Montluel
+     * 1262
+     * 01120
+   * * Belfort
+     * 90010
+     * 90000
+   * * Kalhausen
+     * 57355
+     * 57412
+
+to obtain this result:
+
+.. list-table::
+   :header-rows: 1
+
+   * * insee_code (text)
+     * bloom_competition_result (decimal)
+     * city (text)
+     * postal_code (text)
+   * * 01262
+     * 2
+     * Montluel
+     * 01120
+   * * 57355
+     * 2
+     * Kalhausen
+     * 57412
+
+Note that even though the insee_code was not in the same type, the matching happened. The matching worked even for the value ``1262`` in the first dataset (note the absence of leading 0, due to it being an integer value), that matched against the value ``01262`` in the second dataset.
+
+By default, this processor can only be used with remote datasets that have fewer than 100000 records.
 
 Extract from JSON
 ~~~~~~~~~~~~~~~~~
