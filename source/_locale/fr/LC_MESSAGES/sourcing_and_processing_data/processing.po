@@ -2,13 +2,13 @@
 # Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-16 14:25+0100\n"
+"POT-Creation-Date: 2017-04-04 15:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2017\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
@@ -1479,20 +1479,151 @@ msgstr ""
 msgid "Quai Branly"
 msgstr "Quai Branly"
 
+#: ../../source/sourcing_and_processing_data/processing.rst:570
+msgid ""
+"If **One line** is set (with **Separator** set to ``|``), the Join will "
+"result in:"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:581
+msgid "Tour Eiffel|Quai Branly"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:582
+msgid "69 quai Branly, 75007 Paris|69 quai Branly, 75007 Paris"
+msgstr ""
+
 #: ../../source/sourcing_and_processing_data/processing.rst:588
 msgid "If **One line** is not set, the Join will result in:"
 msgstr "Si **Résultats sur une ligne** n'est pas actif, la jointure donnera :"
 
-#: ../../source/sourcing_and_processing_data/processing.rst:736
-#: ../../source/sourcing_and_processing_data/processing.rst:812
-#: ../../source/sourcing_and_processing_data/processing.rst:906
+#: ../../source/sourcing_and_processing_data/processing.rst:610
 msgid ""
-"This processor is not yet available by default. Please contact OpenDataSoft "
-"support team if you plan to use it, we will activate it for you."
+"Integers, decimals and text field containing numerical values can be joined "
+"together. For example the following dataset:"
 msgstr ""
-"Ce processeur n'est pas disponible par défaut. Vous pouvez contacter "
-"l'équipe support OpenDataSoft si vous souhaitez l'utiliser, et nous pourrons"
-" vous l'activer."
+
+#: ../../source/sourcing_and_processing_data/processing.rst:615
+#: ../../source/sourcing_and_processing_data/processing.rst:637
+#: ../../source/sourcing_and_processing_data/processing.rst:667
+msgid "insee_code (text)"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:616
+#: ../../source/sourcing_and_processing_data/processing.rst:638
+#: ../../source/sourcing_and_processing_data/processing.rst:668
+msgid "bloom_competition_result (decimal)"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:617
+#: ../../source/sourcing_and_processing_data/processing.rst:639
+#: ../../source/sourcing_and_processing_data/processing.rst:671
+msgid "01262"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:618
+#: ../../source/sourcing_and_processing_data/processing.rst:622
+msgid "2.0"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:619
+#: ../../source/sourcing_and_processing_data/processing.rst:656
+msgid "90010"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:620
+msgid "4.0"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:621
+#: ../../source/sourcing_and_processing_data/processing.rst:641
+#: ../../source/sourcing_and_processing_data/processing.rst:659
+#: ../../source/sourcing_and_processing_data/processing.rst:675
+msgid "57355"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:624
+msgid "can be used in a join dataset processor in the following dataset:"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:629
+msgid "bloom_ranks (integer)"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:632
+msgid "to obtain the following result:"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:644
+msgid ""
+"The matching between values ``2`` and ``2.0`` was successful despite the "
+"type difference. We can go further and apply to it a second join dataset "
+"processor, in order to obtain values from the following dataset:"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:649
+#: ../../source/sourcing_and_processing_data/processing.rst:669
+msgid "city (text)"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:650
+msgid "insee_code (integer)"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:651
+#: ../../source/sourcing_and_processing_data/processing.rst:670
+msgid "postal_code (text)"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:652
+#: ../../source/sourcing_and_processing_data/processing.rst:673
+msgid "Montluel"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:653
+msgid "1262"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:654
+#: ../../source/sourcing_and_processing_data/processing.rst:674
+msgid "01120"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:655
+msgid "Belfort"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:657
+msgid "90000"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:658
+#: ../../source/sourcing_and_processing_data/processing.rst:677
+msgid "Kalhausen"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:660
+#: ../../source/sourcing_and_processing_data/processing.rst:678
+msgid "57412"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:662
+msgid "to obtain this result:"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:680
+msgid ""
+"Note that even though the insee_code was not in the same type, the matching "
+"happened. The matching worked even for the value ``1262`` in the first "
+"dataset (note the absence of leading 0, due to it being an integer value), "
+"that matched against the value ``01262`` in the second dataset."
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:682
+msgid ""
+"By default, this processor can only be used with remote datasets that have "
+"fewer than 100000 records."
+msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:685
 msgid "Extract from JSON"
@@ -1594,6 +1725,17 @@ msgstr ""
 #: ../../source/sourcing_and_processing_data/processing.rst:726
 msgid "The rule ``bloc`` will extract the JSON object :"
 msgstr "La règle ``bloc`` extrait l'objet JSON :"
+
+#: ../../source/sourcing_and_processing_data/processing.rst:736
+#: ../../source/sourcing_and_processing_data/processing.rst:812
+#: ../../source/sourcing_and_processing_data/processing.rst:906
+msgid ""
+"This processor is not yet available by default. Please contact OpenDataSoft "
+"support team if you plan to use it, we will activate it for you."
+msgstr ""
+"Ce processeur n'est pas disponible par défaut. Vous pouvez contacter "
+"l'équipe support OpenDataSoft si vous souhaitez l'utiliser, et nous pourrons"
+" vous l'activer."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:740
 msgid "Expand JSON array"
@@ -3135,163 +3277,3 @@ msgstr "Champs"
 #: ../../source/sourcing_and_processing_data/processing.rst:1711
 msgid "Checked: all the record's fields will be normalized"
 msgstr "Coché : tous les champs de l'enregistrement seront normalisés"
-
-#: ../../source/sourcing_and_processing_data/processing.rst:570
-#, fuzzy
-msgid ""
-"If **One line** is set (with **Separator** set to ``|``), the Join will "
-"result in:"
-msgstr ""
-"Si **Résultats sur une ligne** est actif (avec **Séparateur** paramétré en "
-"`|`), la jointure donnera :"
-
-#: ../../source/sourcing_and_processing_data/processing.rst:581
-#, fuzzy
-msgid "Tour Eiffel|Quai Branly"
-msgstr "Tour Eiffel&#124;Quai Branly"
-
-#: ../../source/sourcing_and_processing_data/processing.rst:582
-#, fuzzy
-msgid "69 quai Branly, 75007 Paris|69 quai Branly, 75007 Paris"
-msgstr "69 quai Branly, 75007 Paris&#124;69 quai Branly, 75007 Paris"
-
-#: ../../source/sourcing_and_processing_data/processing.rst:610
-msgid ""
-"Integers, decimals and text field containing numerical values can be joined "
-"together. For example the following dataset:"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:615
-#: ../../source/sourcing_and_processing_data/processing.rst:637
-#: ../../source/sourcing_and_processing_data/processing.rst:667
-msgid "insee_code (text)"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:616
-#: ../../source/sourcing_and_processing_data/processing.rst:638
-#: ../../source/sourcing_and_processing_data/processing.rst:668
-msgid "bloom_competition_result (decimal)"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:617
-#: ../../source/sourcing_and_processing_data/processing.rst:639
-#: ../../source/sourcing_and_processing_data/processing.rst:671
-msgid "01262"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:618
-#: ../../source/sourcing_and_processing_data/processing.rst:622
-msgid "2.0"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:619
-#: ../../source/sourcing_and_processing_data/processing.rst:656
-msgid "90010"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:620
-msgid "4.0"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:621
-#: ../../source/sourcing_and_processing_data/processing.rst:641
-#: ../../source/sourcing_and_processing_data/processing.rst:659
-#: ../../source/sourcing_and_processing_data/processing.rst:675
-msgid "57355"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:624
-msgid "can be used in a join dataset processor in the following dataset:"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:629
-msgid "bloom_ranks (integer)"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:632
-msgid "to obtain the following result:"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:644
-msgid ""
-"The matching between values ``2`` and ``2.0`` was successful despite the "
-"type difference. We can go further and apply to it a second join dataset "
-"processor, in order to obtain values from the following dataset:"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:649
-#: ../../source/sourcing_and_processing_data/processing.rst:669
-msgid "city (text)"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:650
-msgid "insee_code (integer)"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:651
-#: ../../source/sourcing_and_processing_data/processing.rst:670
-msgid "postal_code (text)"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:652
-#: ../../source/sourcing_and_processing_data/processing.rst:673
-msgid "Montluel"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:653
-msgid "1262"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:654
-#: ../../source/sourcing_and_processing_data/processing.rst:674
-msgid "01120"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:655
-msgid "Belfort"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:657
-msgid "90000"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:658
-#: ../../source/sourcing_and_processing_data/processing.rst:677
-msgid "Kalhausen"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:660
-#: ../../source/sourcing_and_processing_data/processing.rst:678
-msgid "57412"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:662
-msgid "to obtain this result:"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:680
-msgid ""
-"Note that even though the insee_code was not in the same type, the matching "
-"happened. The matching worked even for the value ``1262`` in the first "
-"dataset (note the absence of leading 0, due to it being an integer value), "
-"that matched against the value ``01262`` in the second dataset."
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:682
-msgid ""
-"By default, this processor can only be used with remote datasets that have "
-"fewer than 100000 records."
-msgstr ""
-
-#~ msgid ""
-#~ "If **One line** is set (with **Separator** set to `|`), the Join will result"
-#~ " in:"
-#~ msgstr ""
-#~ "Si **Résultats sur une ligne** est actif (avec **Séparateur** paramétré en "
-#~ "`|`), la jointure donnera :"
-
-#~ msgid "Tour Eiffel&#124;Quai Branly"
-#~ msgstr "Tour Eiffel&#124;Quai Branly"
-
-#~ msgid "69 quai Branly, 75007 Paris&#124;69 quai Branly, 75007 Paris"
-#~ msgstr "69 quai Branly, 75007 Paris&#124;69 quai Branly, 75007 Paris"

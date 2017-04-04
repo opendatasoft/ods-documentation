@@ -2,13 +2,13 @@
 # Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-16 14:25+0100\n"
+"POT-Creation-Date: 2017-04-04 15:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Datawords_trad_1 <datawords.translator.it1@gmail.com>, 2017\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
@@ -617,7 +617,7 @@ msgid ""
 "using facets based filtering mechanism."
 msgstr ""
 "Con questa rappresentazione è più facile filtrare il dataset con i facet e "
-"creare così dei sottoinsiemi."
+"creare così dei subset."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:188
 msgid "Fixed fields"
@@ -1474,20 +1474,151 @@ msgstr ""
 msgid "Quai Branly"
 msgstr "Quai Branly"
 
+#: ../../source/sourcing_and_processing_data/processing.rst:570
+msgid ""
+"If **One line** is set (with **Separator** set to ``|``), the Join will "
+"result in:"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:581
+msgid "Tour Eiffel|Quai Branly"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:582
+msgid "69 quai Branly, 75007 Paris|69 quai Branly, 75007 Paris"
+msgstr ""
+
 #: ../../source/sourcing_and_processing_data/processing.rst:588
 msgid "If **One line** is not set, the Join will result in:"
 msgstr "Se **Una riga** non è impostato, l'Unione darà il seguente risultato:"
 
-#: ../../source/sourcing_and_processing_data/processing.rst:736
-#: ../../source/sourcing_and_processing_data/processing.rst:812
-#: ../../source/sourcing_and_processing_data/processing.rst:906
+#: ../../source/sourcing_and_processing_data/processing.rst:610
 msgid ""
-"This processor is not yet available by default. Please contact OpenDataSoft "
-"support team if you plan to use it, we will activate it for you."
+"Integers, decimals and text field containing numerical values can be joined "
+"together. For example the following dataset:"
 msgstr ""
-"Questo processore non è ancora disponibile in modalità predefinita. Se "
-"desideri utilizzarlo, ti invitiamo a contattare il team di assistenza "
-"OpenDataSoft, che lo attiverà per te."
+
+#: ../../source/sourcing_and_processing_data/processing.rst:615
+#: ../../source/sourcing_and_processing_data/processing.rst:637
+#: ../../source/sourcing_and_processing_data/processing.rst:667
+msgid "insee_code (text)"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:616
+#: ../../source/sourcing_and_processing_data/processing.rst:638
+#: ../../source/sourcing_and_processing_data/processing.rst:668
+msgid "bloom_competition_result (decimal)"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:617
+#: ../../source/sourcing_and_processing_data/processing.rst:639
+#: ../../source/sourcing_and_processing_data/processing.rst:671
+msgid "01262"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:618
+#: ../../source/sourcing_and_processing_data/processing.rst:622
+msgid "2.0"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:619
+#: ../../source/sourcing_and_processing_data/processing.rst:656
+msgid "90010"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:620
+msgid "4.0"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:621
+#: ../../source/sourcing_and_processing_data/processing.rst:641
+#: ../../source/sourcing_and_processing_data/processing.rst:659
+#: ../../source/sourcing_and_processing_data/processing.rst:675
+msgid "57355"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:624
+msgid "can be used in a join dataset processor in the following dataset:"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:629
+msgid "bloom_ranks (integer)"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:632
+msgid "to obtain the following result:"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:644
+msgid ""
+"The matching between values ``2`` and ``2.0`` was successful despite the "
+"type difference. We can go further and apply to it a second join dataset "
+"processor, in order to obtain values from the following dataset:"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:649
+#: ../../source/sourcing_and_processing_data/processing.rst:669
+msgid "city (text)"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:650
+msgid "insee_code (integer)"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:651
+#: ../../source/sourcing_and_processing_data/processing.rst:670
+msgid "postal_code (text)"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:652
+#: ../../source/sourcing_and_processing_data/processing.rst:673
+msgid "Montluel"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:653
+msgid "1262"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:654
+#: ../../source/sourcing_and_processing_data/processing.rst:674
+msgid "01120"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:655
+msgid "Belfort"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:657
+msgid "90000"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:658
+#: ../../source/sourcing_and_processing_data/processing.rst:677
+msgid "Kalhausen"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:660
+#: ../../source/sourcing_and_processing_data/processing.rst:678
+msgid "57412"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:662
+msgid "to obtain this result:"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:680
+msgid ""
+"Note that even though the insee_code was not in the same type, the matching "
+"happened. The matching worked even for the value ``1262`` in the first "
+"dataset (note the absence of leading 0, due to it being an integer value), "
+"that matched against the value ``01262`` in the second dataset."
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processing.rst:682
+msgid ""
+"By default, this processor can only be used with remote datasets that have "
+"fewer than 100000 records."
+msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:685
 msgid "Extract from JSON"
@@ -1590,6 +1721,17 @@ msgstr ""
 #: ../../source/sourcing_and_processing_data/processing.rst:726
 msgid "The rule ``bloc`` will extract the JSON object :"
 msgstr "la regola ``bloc`` estrae l'oggetto JSON:"
+
+#: ../../source/sourcing_and_processing_data/processing.rst:736
+#: ../../source/sourcing_and_processing_data/processing.rst:812
+#: ../../source/sourcing_and_processing_data/processing.rst:906
+msgid ""
+"This processor is not yet available by default. Please contact OpenDataSoft "
+"support team if you plan to use it, we will activate it for you."
+msgstr ""
+"Questo processore non è ancora disponibile in modalità predefinita. Se "
+"desideri utilizzarlo, ti invitiamo a contattare il team di assistenza "
+"OpenDataSoft, che lo attiverà per te."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:740
 msgid "Expand JSON array"
@@ -2247,11 +2389,11 @@ msgstr "Codice ISO Paese"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1082
 msgid "The field containing the country ISO code"
-msgstr "Campo contenente il codice ISO del paese"
+msgstr "Campo contenente il codice ISO del paese."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1086
 msgid "Name of the field that will contain the WGS84 coordinate"
-msgstr "Nome del campo che conterrà la coordinata WGS84"
+msgstr "Nome del campo che conterrà la coordinata WGS84."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1091
 msgid "Coordinates system conversion"
@@ -2363,7 +2505,7 @@ msgstr "Nome del campo che conterrà le coordinate WGS84."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1143
 msgid "Compute Geo distance"
-msgstr "Calcola la distanza geografica"
+msgstr "Calcolo della distanza geografica"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1145
 msgid "This processor computes the distance between two coordinates."
@@ -2379,7 +2521,7 @@ msgstr "Coordinate B"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1165
 msgid "Field that will contain the computed distance"
-msgstr "Campo che contiene la distanza calcolata"
+msgstr "Campo che contiene la distanza calcolata."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1170
 msgid "Geomasking"
@@ -2395,7 +2537,7 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1184
 msgid "Field containing the coordinates you want to approximate"
-msgstr "Filtro contenente le coordinate da approssimare"
+msgstr "Filtro contenente le coordinate da approssimare."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1187
 msgid "Minimum distance (in meters)"
@@ -2418,7 +2560,7 @@ msgstr "Codice INSEE per le coordinate geografiche"
 #: ../../source/sourcing_and_processing_data/processing.rst:1199
 msgid "This processor uses a French INSEE code to produce a geo coordinate."
 msgstr ""
-"Questo processore utilizza il codice INSEE italiano per fornire le "
+"Questo processore utilizza il codice INSEE francese per fornire le "
 "coordinate geografiche."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1210
@@ -2427,16 +2569,16 @@ msgstr "Codice INSEE"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1211
 msgid "Field that contains an INSEE code"
-msgstr "Campo contenente il codice INSEE"
+msgstr "Campo contenente il codice INSEE."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1215
 #: ../../source/sourcing_and_processing_data/processing.rst:1238
 msgid "Field that will contain the produced WSG84 coordinates"
-msgstr "Campo contenente le coordinate WSG84 ottenute"
+msgstr "Campo contenente le coordinate WSG84 ottenute."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1220
 msgid "IP Address to Geo Coordinates"
-msgstr "Indirizzo IP per le coordinate geografiche"
+msgstr "Dall'indirizzo IP alle coordinate geografiche"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1222
 msgid ""
@@ -2452,7 +2594,7 @@ msgstr "Indirizzo IP"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1234
 msgid "Field that contains the IP address"
-msgstr "Campo contenente l'indirizzo IP"
+msgstr "Campo contenente l'indirizzo IP."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1243
 msgid "Zip Code to Geo Coordinates"
@@ -2461,7 +2603,7 @@ msgstr "Dal CAP alle coordinate geografiche"
 #: ../../source/sourcing_and_processing_data/processing.rst:1245
 msgid "This processor uses a French postal code to produce a geo coordinate."
 msgstr ""
-"Questo processore utilizza il codice postale italiano per calcolare le "
+"Questo processore utilizza il codice postale francese per calcolare le "
 "coordinate geografiche."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1256
@@ -2470,7 +2612,7 @@ msgstr "Codice postale"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1257
 msgid "Field that contains a French postal code"
-msgstr "Campo contenente un codice postale italiano"
+msgstr "Campo contenente un codice postale francese."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1260
 msgid "output_field"
@@ -2478,11 +2620,11 @@ msgstr "output_field"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1261
 msgid "Field that will contain the produces WSG84 coordinates"
-msgstr "Campo contenente le coordinate WSG84 ottenute"
+msgstr "Campo contenente le coordinate WSG84 ottenute."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1266
 msgid "Simplify Geo Shape"
-msgstr "Semplifica forma geografica"
+msgstr "Semplifica GeoShape"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1268
 msgid "Simplify a geo shape to reduce processing time and dataset size."
@@ -2524,7 +2666,7 @@ msgid ""
 msgstr ""
 "Se imposti un valore di tolleranza troppo elevato, le forme risulteranno "
 "troppo semplificate e irriconoscibili. Utilizza l'anteprima per vedere quale"
-" tolleranza risponde meglio alle tue esigenze."
+" grado di tolleranza risponde meglio alle tue esigenze."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1293
 msgid "Normalize Projection Reference"
@@ -2538,12 +2680,12 @@ msgid ""
 "<http://spatialreference.org/ref/epsg/>`_ code of the source coordinates "
 "system. The field's value is replaced with its WGS84 representation."
 msgstr ""
-"Questo processore permette di gestire un **Punto geografico 2D** con un "
-"sistema di proiezione diverso dal campo `WGS84 "
-"<http://en.wikipedia.org/wiki/WGS_84>`_. Come parametro viene utilizzato il "
-"nome del campo e il codice `EPSG <http://spatialreference.org/ref/epsg/>`_ "
-"del sistema di coordinate di origine. Il valore del campo viene sostituito "
-"con la relativa rappresentazione WGS84."
+"Questo processore permette di gestire un **Geopoint 2D** con un sistema di "
+"proiezione diverso dal campo `WGS84 <http://en.wikipedia.org/wiki/WGS_84>`_."
+" Come parametro viene utilizzato il nome del campo e il codice `EPSG "
+"<http://spatialreference.org/ref/epsg/>`_ del sistema di coordinate di "
+"origine. Il valore del campo viene sostituito con la relativa "
+"rappresentazione WGS84."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1297
 msgid ""
@@ -2553,9 +2695,9 @@ msgid ""
 "zone-ii/>`_."
 msgstr ""
 "Se, ad esempio, imposti il codice EPSG su ``27572``, il processore "
-"considererà il geo campo originale come contenente le coordinate espresse in"
-" `Lambert Zone II <http://spatialreference.org/ref/epsg/ntf-paris-lambert-"
-"zone-ii/>`_."
+"considererà che il geo campo originale contenga le coordinate della "
+"proiezione `Lambert Zone II <http://spatialreference.org/ref/epsg/ntf-paris-"
+"lambert-zone-ii/>`_."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1299
 msgid ""
@@ -2567,7 +2709,7 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1312
 msgid "Field that will be normalized"
-msgstr "Campo da normalizzare"
+msgstr "Campo da normalizzare."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1316
 msgid "Source epsg code"
@@ -2614,10 +2756,10 @@ msgid ""
 "administrative level between 1 and 7. The available administrative divisions"
 " are referenced in the table below."
 msgstr ""
-"Questo processore utilizza un **Punto geografico 2D** per recuperare le "
-"informazioni (nome, codice e **Forma geografica**) delle divisioni "
-"amministrative, scegliendo un livello amministrativo da 1 a 7. Le divisioni "
-"amministrative disponibili sono riportate nella tabella seguente."
+"Questo processore utilizza un **Geopoint 2D** per recuperare le informazioni"
+" (nome, codice e **geoshape**) delle divisioni amministrative, scegliendo un"
+" livello amministrativo da 1 a 7. Le divisioni amministrative disponibili "
+"sono riportate nella tabella seguente."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1337
 msgid ""
@@ -2760,9 +2902,9 @@ msgid ""
 "You'll need to define the left and right hand sides of the concatenation, as"
 " well as the separator and the resulting field."
 msgstr ""
-"Questo processore permette di concatenare due campi con un separatore. Per "
-"utilizzarlo, è necessario definire il lato sinistro e il lato destro della "
-"concatenazione, il separatore e il campo risultante."
+"Questo processore permette di concatenare due campi mediante un separatore. "
+"Per utilizzarlo, è necessario definire il lato sinistro e il lato destro "
+"della concatenazione, il separatore e il campo risultante."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1360
 msgid ""
@@ -2771,8 +2913,8 @@ msgid ""
 "point``."
 msgstr ""
 "Un caso che si verifica frequentemente è la concatenazione delle colonne "
-"delle coordinate X e Y in una nuova colonna, in cui i valori sono separati "
-"da una virgola e possono essere utilizzati come un ``punto geografico``."
+"delle coordinate X e Y in una nuova colonna, nella quale i valori sono "
+"separati da una virgola e possono essere utilizzati come un ``geopoint``."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1367
 msgid ""
@@ -2780,8 +2922,7 @@ msgid ""
 "Coordinates, which can then be used as a ``geo point``"
 msgstr ""
 "In questo esempio, abbiamo concatenato la colonna X e Y in una nuova colonna"
-" denominata Coordinates, che potrà essere utilizzata come ``punto "
-"geografico``."
+" denominata Coordinates, che potrà essere utilizzata come ``geopoint``."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1387
 msgid "Left value"
@@ -2810,7 +2951,7 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1412
 msgid "Field that contains the URL to normalize"
-msgstr "Campo contenente l'URL da normalizzare"
+msgstr "Campo contenente l'URL da normalizzare."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1417
 msgid "Extract URLs"
@@ -2826,7 +2967,7 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1431
 msgid "The field that contains HTML or text content"
-msgstr "Campo che include il contenuto HTML o di testo"
+msgstr "Campo che include il contenuto HTML o di testo."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1440
 msgid "Decode HTML entities"
@@ -2854,7 +2995,7 @@ msgid ""
 "number or a combination of both."
 msgstr ""
 "Questo processore permette di sostituire o rimuovere qualsiasi parte di un "
-"testo o di un numero o di una combinazione di entrambi."
+"testo o di un numero, o una combinazione di entrambi."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1470
 msgid ""
@@ -2862,10 +3003,10 @@ msgid ""
 "Zip code to keep only the area code, e.g from 44100 (Nantes city) keep only "
 "44 (Loire-Atlantique area)."
 msgstr ""
-"Questo caso si verifica ad esempio quando si desidera mantenere solo una "
-"parte di un numero, ad esempio di un CAP francese deve essere conservato "
-"solo il codice dell'area: del codice 44100 (città di Nantes) si mantiene "
-"solo 44 (area Loira-Atlantico)."
+"Un esempio potrebbe riguardare la necessità di mantenere solo una parte di "
+"un numero, come il codice d'area contenuto in un CAP francese. In questo "
+"caso, dal codice 44100 (città di Nantes) verrà conservato solo 44 (area "
+"Loira-Atlantico)."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1477
 msgid ""
@@ -2877,7 +3018,7 @@ msgid ""
 "digits will stay."
 msgstr ""
 "In questo esempio, il processore dell'espressione regolare è configurato con"
-" il pattern ``[0-9]{3}$`` e la sostituzione con nulla. Il pattern significa "
+" il pattern ``[0-9]{3}$`` e nessuna sostituzione. Il pattern significa "
 "\"seleziona 3 cifre a partire dalla fine\". ``[0-9]`` vuol dire qualsiasi "
 "cifra, ``{3}`` significa esattamente 3 occorrenze e ``$`` indica la fine del"
 " testo. Queste 3 cifre dalla fine non vengono sostituite con niente, quindi "
@@ -2889,10 +3030,10 @@ msgid ""
 " how to write a regular expressions. You can test your regexp expressions "
 "with an online debugger tool like `Regex101 <https://regex101.com/>`_."
 msgstr ""
-"Per ulteriori informazioni su come scrivere le espressioni regolari, vedere "
-"`<http://en.wikipedia.org/wiki/Regular_expression>`_. È possibile testare le"
-" espressioni regolari con uno strumento di debug online come ad esempio "
-"`Regex101 <https://regex101.com/>`_."
+"Per ulteriori informazioni su come scrivere le espressioni regolari, "
+"consulta la pagina `<http://en.wikipedia.org/wiki/Regular_expression>`_. È "
+"possibile testare le espressioni regolari con uno strumento di debug online,"
+" come ad esempio `Regex101 <https://regex101.com/>`_."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1507
 #: ../../source/sourcing_and_processing_data/processing.rst:1634
@@ -2938,11 +3079,11 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1555
 msgid "Field that contains the text to split"
-msgstr "Campo contenente il testo da dividere"
+msgstr "Campo contenente il testo da dividere."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1559
 msgid "String or character to split with"
-msgstr "Stringa o carattere con cui eseguire la divisione"
+msgstr "Stringa o carattere con cui eseguire la divisione."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1562
 msgid "Index"
@@ -2950,7 +3091,7 @@ msgstr "Indice"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1563
 msgid "Index of the element to extract in the new field"
-msgstr "Indice dell'elemento da estrarre nel nuovo campo"
+msgstr "Indice dell'elemento da estrarre nel nuovo campo."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1564
 msgid "Int"
@@ -2988,11 +3129,10 @@ msgid ""
 "of replacing the content like with the Replace Regexp processor."
 msgstr ""
 "Utilizzando lo stesso esempio impiegato per il processore Sostituisci "
-"tramite Regexp (da un codice CAP francese, ad esempio 44100, si desidera "
-"mantenere solo il codice di area 44), il processore Estrai testo permette di"
-" creare un'altra colonna con il codice di area selezionato, anziché "
-"sostituire il contenuto come avviene con il processore Sostituisci con "
-"Regexp."
+"tramite Regexp (dal codice CAP francese 44100, si desidera mantenere solo il"
+" codice di area 44), il processore Estrai testo permette di creare un'altra "
+"colonna con il codice di area selezionato, anziché sostituire il contenuto "
+"come nel caso del processore Sostituisci con Regexp."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1585
 msgid ""
@@ -3005,9 +3145,9 @@ msgid ""
 "name"
 msgstr ""
 "In questo esempio, utilizziamo il pattern ``(?P<area>[0-9]{2})[0-9]{3}``. "
-"``[0-9]`` significa qualsiasi cifra e ``{2}`` o ``{3}`` significa il numero "
+"``[0-9]`` significa qualsiasi cifra e ``{2}`` o ``{3}`` indicano il numero "
 "di cifre desiderate. In questo caso, intendiamo estrarre le prime due cifre,"
-" quindi è necessario racchiuderle tra parentesi e dopo la parentesi "
+" quindi è necessario racchiuderle tra parentesi; dopo la parentesi "
 "riportiamo il resto della sequenza che non deve essere estratta, in questo "
 "caso le 3 cifre restanti. L'espressione speciale ``?P<area>`` serve solo per"
 " specificare il nome della nuova colonna."
@@ -3018,16 +3158,16 @@ msgid ""
 "an arbitrary pattern expressed as a regular expression out of a string using"
 " sub matching."
 msgstr ""
-"Da un punto di vista più tecnico, questo processore può servire per estrare "
-"un pattern arbitrario espresso come espressione regolare da una stringa "
-"mediante il sub-matching."
+"Da un punto di vista più tecnico, questo processore può servire per estrarre"
+" un pattern arbitrario espresso da una stringa sotto forma di espressione "
+"regolare mediante il sub-matching."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1596
 msgid ""
 "The syntax of the sub-matching expression to specify is the following: "
 "``(?P<NAME>REGEXP)``. Where:"
 msgstr ""
-"La sintassi dell'espressione sub-matching da specificare è la seguente: "
+"La sintassi dell'espressione di sub-matching da specificare è la seguente: "
 "``(?P<NOME>REGEXP)``. Dove:"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1598
@@ -3084,13 +3224,13 @@ msgstr "Sostituisce il testo di un campo con un nuovo testo."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1654
 msgid "Field that contains the text to replace"
-msgstr "Campo contenente il testo da sostituire"
+msgstr "Campo contenente il testo da sostituire."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1658
 msgid "Checked: all the record's fields will be matched"
 msgstr ""
 "Selezionato: tutti i campi del record verranno confrontati per verificare se"
-" corrispondono"
+" corrispondono."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1661
 msgid "Old value"
@@ -3126,164 +3266,4 @@ msgstr "Campi"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1711
 msgid "Checked: all the record's fields will be normalized"
-msgstr "Selezionato: tutti i campi del record saranno normalizzati"
-
-#: ../../source/sourcing_and_processing_data/processing.rst:570
-#, fuzzy
-msgid ""
-"If **One line** is set (with **Separator** set to ``|``), the Join will "
-"result in:"
-msgstr ""
-"Se si imposta **Una riga**, specificando `|` come **Separatore**, l'unione "
-"darà il seguente risultato:"
-
-#: ../../source/sourcing_and_processing_data/processing.rst:581
-#, fuzzy
-msgid "Tour Eiffel|Quai Branly"
-msgstr "Tour Eiffel&#124;Quai Branly"
-
-#: ../../source/sourcing_and_processing_data/processing.rst:582
-#, fuzzy
-msgid "69 quai Branly, 75007 Paris|69 quai Branly, 75007 Paris"
-msgstr "69 quai Branly, 75007 Paris&#124;69 quai Branly, 75007 Paris"
-
-#: ../../source/sourcing_and_processing_data/processing.rst:610
-msgid ""
-"Integers, decimals and text field containing numerical values can be joined "
-"together. For example the following dataset:"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:615
-#: ../../source/sourcing_and_processing_data/processing.rst:637
-#: ../../source/sourcing_and_processing_data/processing.rst:667
-msgid "insee_code (text)"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:616
-#: ../../source/sourcing_and_processing_data/processing.rst:638
-#: ../../source/sourcing_and_processing_data/processing.rst:668
-msgid "bloom_competition_result (decimal)"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:617
-#: ../../source/sourcing_and_processing_data/processing.rst:639
-#: ../../source/sourcing_and_processing_data/processing.rst:671
-msgid "01262"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:618
-#: ../../source/sourcing_and_processing_data/processing.rst:622
-msgid "2.0"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:619
-#: ../../source/sourcing_and_processing_data/processing.rst:656
-msgid "90010"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:620
-msgid "4.0"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:621
-#: ../../source/sourcing_and_processing_data/processing.rst:641
-#: ../../source/sourcing_and_processing_data/processing.rst:659
-#: ../../source/sourcing_and_processing_data/processing.rst:675
-msgid "57355"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:624
-msgid "can be used in a join dataset processor in the following dataset:"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:629
-msgid "bloom_ranks (integer)"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:632
-msgid "to obtain the following result:"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:644
-msgid ""
-"The matching between values ``2`` and ``2.0`` was successful despite the "
-"type difference. We can go further and apply to it a second join dataset "
-"processor, in order to obtain values from the following dataset:"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:649
-#: ../../source/sourcing_and_processing_data/processing.rst:669
-msgid "city (text)"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:650
-msgid "insee_code (integer)"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:651
-#: ../../source/sourcing_and_processing_data/processing.rst:670
-msgid "postal_code (text)"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:652
-#: ../../source/sourcing_and_processing_data/processing.rst:673
-msgid "Montluel"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:653
-msgid "1262"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:654
-#: ../../source/sourcing_and_processing_data/processing.rst:674
-msgid "01120"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:655
-msgid "Belfort"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:657
-msgid "90000"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:658
-#: ../../source/sourcing_and_processing_data/processing.rst:677
-msgid "Kalhausen"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:660
-#: ../../source/sourcing_and_processing_data/processing.rst:678
-msgid "57412"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:662
-msgid "to obtain this result:"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:680
-msgid ""
-"Note that even though the insee_code was not in the same type, the matching "
-"happened. The matching worked even for the value ``1262`` in the first "
-"dataset (note the absence of leading 0, due to it being an integer value), "
-"that matched against the value ``01262`` in the second dataset."
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:682
-msgid ""
-"By default, this processor can only be used with remote datasets that have "
-"fewer than 100000 records."
-msgstr ""
-
-#~ msgid ""
-#~ "If **One line** is set (with **Separator** set to `|`), the Join will result"
-#~ " in:"
-#~ msgstr ""
-#~ "Se si imposta **Una riga**, specificando `|` come **Separatore**, l'unione "
-#~ "darà il seguente risultato:"
-
-#~ msgid "Tour Eiffel&#124;Quai Branly"
-#~ msgstr "Tour Eiffel&#124;Quai Branly"
-
-#~ msgid "69 quai Branly, 75007 Paris&#124;69 quai Branly, 75007 Paris"
-#~ msgstr "69 quai Branly, 75007 Paris&#124;69 quai Branly, 75007 Paris"
+msgstr "Selezionato: tutti i campi del record saranno normalizzati."

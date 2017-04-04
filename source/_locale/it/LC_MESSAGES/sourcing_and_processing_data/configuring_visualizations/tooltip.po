@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-16 14:25+0100\n"
+"POT-Creation-Date: 2017-04-04 17:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Datawords Rel2 <datawords.rel.2@gmail.com>, 2017\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
@@ -34,10 +34,10 @@ msgid ""
 msgstr ""
 "Per visualizzare le informazioni su una mappa, un'immagine o un calendario, "
 "è possibile configurare un tooltip. Puoi utilizzare e impostare un tooltip "
-"standard o scegliere un tooltip HTML personalizzato. La configurazione di un"
-" tooltip personalizzato richiede un po' più di tempo ma può ottimizzare "
+"standard o scegliere un tooltip HTML personalizzato. In questo caso, "
+"l'operazione può richiedere un po' più di tempo ma permette di ottimizzare "
 "l'utilizzo dei dati. Per passare dall'interfaccia di configurazione dei "
-"tootip standard alla personalizzazione, seleziona il modello Tootip HTML "
+"tooltip standard alla personalizzazione, seleziona il modello Tooltip HTML "
 "personalizzato dal menu a discesa Tipo di tooltip."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:10
@@ -69,7 +69,7 @@ msgstr "Azioni consentite sui campi del tooltip"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:42
 msgid "Drag and drop to move field within tooltip"
-msgstr "Transcina e rilascia per spostare un campo del tooltip"
+msgstr "Trascina e rilascia per spostare un campo del tooltip"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:43
 msgid "Click to remove field from tooltip"
@@ -104,7 +104,7 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:67
 msgid "An example of a custom tooltip."
-msgstr "Esempio di tooltip personalizzato."
+msgstr "Esempio di tooltip personalizzato"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:75
 msgid ""
@@ -113,8 +113,8 @@ msgid ""
 "following properties:"
 msgstr ""
 "Quando viene visualizzato, il tooltip può accedere a una specifica variabile"
-" ``record`` che viene inserita nel tooltip. Questo oggetto ``record`` "
-"include le seguenti proprietà:"
+" ``record`` inserita al suo interno. Questo oggetto ``record`` include le "
+"seguenti proprietà:"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:78
 msgid ""
@@ -122,11 +122,11 @@ msgid ""
 "``record.fields.tree_height``)"
 msgstr ""
 "``record.fields``: oggetto contenente tutti i valori, ad esempio "
-"``record.fields.tree_height``."
+"``record.fields.tree_height``;"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:79
 msgid "``record.recordid``: unique identifier for the record"
-msgstr "``record.recordid``: identificativo univoco del record."
+msgstr "``record.recordid``: identificativo univoco del record;"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:80
 msgid "``record.datasetid``: identifier of the dataset"
@@ -137,8 +137,8 @@ msgid ""
 "Using these properties, you can display directly values in the tooltip, or "
 "even use them to display data from other datasets."
 msgstr ""
-"Mediante queste proprietà è possibile visualizzare i valori direttamente "
-"tooltip o utilzzarli per mostrare i dati di altri dataset."
+"Grazie a queste proprietà è possibile visualizzare i valori direttamente nel"
+" tooltip o utilizzarli per mostrare i dati di altri dataset."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:85
 msgid ""
@@ -156,7 +156,7 @@ msgid ""
 "within ``record.fields``"
 msgstr ""
 "``field.name``: identificativo del campo, ad esempio per trovare un valore "
-"in ``record.fields``."
+"in ``record.fields``;"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:90
 msgid ""
@@ -164,7 +164,7 @@ msgid ""
 "``date``, ``datetime``, ``geo_point_2d``, ``geo_shape``)"
 msgstr ""
 "``field.type``: tipo del campo (``text``, ``decimal``, ``integer``, "
-"``date``, ``datetime``, ``geo_point_2d``, ``geo_shape``)."
+"``date``, ``datetime``, ``geo_point_2d``, ``geo_shape``);"
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:92
 msgid "``field.label``: a human-friendly label"
@@ -179,8 +179,8 @@ msgid ""
 "If you want to display an image from one of your dataset's ``file`` fields, "
 "you can use the ``ods-record-image`` widget."
 msgstr ""
-"Per visualizzare l'immagine di uno dei campi ``file``  del dataset è "
-"possibile utilizzare il widget ``ods-record-image``."
+"Per visualizzare l'immagine di uno dei campi ``file``  del dataset puoi "
+"utilizzare il widget ``ods-record-image``."
 
 #: ../../source/sourcing_and_processing_data/configuring_visualizations/tooltip.rst:116
 msgid ""
@@ -188,6 +188,6 @@ msgid ""
 "another dataset; in the following example, the data is taken from another "
 "dataset and filtered using one of the values of the selected record."
 msgstr ""
-"``<ods-dataset-context>`` permette fornisce la visualizzazione di un altro "
-"dataset. Nell'esempio seguente, i dati provengono da un altro dataset e sono"
-" filtrati in base a uno dei valori del record selezionato."
+"``<ods-dataset-context>`` fornisce la visualizzazione di un altro dataset. "
+"Nell'esempio seguente, i dati provengono da un altro dataset e sono filtrati"
+" in base a uno dei valori del record selezionato."
