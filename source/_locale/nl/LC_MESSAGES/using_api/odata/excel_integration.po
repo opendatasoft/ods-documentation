@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-16 14:25+0100\n"
+"POT-Creation-Date: 2017-04-04 15:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2017\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ../../source/using_api/odata/excel_integration.rst:2
 msgid "Microsoft Excel integration"
-msgstr ""
+msgstr "Integratie van Microsoft Excel"
 
 #: ../../source/using_api/odata/excel_integration.rst:4
 msgid ""
@@ -29,20 +30,29 @@ msgid ""
 "be used. For Excel 2010 and Excel 2013, PowerPivot and PowerQuery extensions"
 " can be used. This article will give a detailed explanation on how to do it."
 msgstr ""
+"De OpenDataSoft OData-service maakt het mogelijk om zonder kennis van "
+"programmeren rechtstreeks data te halen uit Microsoft Excel. Er zijn 3 "
+"manieren om te werk te gaan: allereerst kan voor Microsoft Excel 2013 de "
+"oorspronkelijke OData-integratie worden gebruikt. Voor Excel 2010 en Excel "
+"2013 kunnen PowerPivot- en PowerQuery-extensies worden gebruikt. In dit "
+"artikel wordt een gedetailleerde uitleg gegeven hoe u dit kan doen."
 
 #: ../../source/using_api/odata/excel_integration.rst:10
 msgid "Native Integration"
-msgstr ""
+msgstr "Oorspronkelijke integratie"
 
 #: ../../source/using_api/odata/excel_integration.rst:12
 msgid ""
 "Here are the steps that will allow you to import data through the Excel "
 "native OData integration."
 msgstr ""
+"Hierna volgen de stappen die u zullen toelaten data te importeren via de "
+"oorspronkelijke OData-integratie van Excel."
 
 #: ../../source/using_api/odata/excel_integration.rst:16
 msgid "Data sources supported natively by Microsoft Excel."
 msgstr ""
+"Databronnen die oorspronkelijk door Microsoft Excel worden ondersteund."
 
 #: ../../source/using_api/odata/excel_integration.rst:18
 msgid ""
@@ -50,10 +60,14 @@ msgid ""
 "click the \"DATA\" tab. Once done, click \"From Other Source\". This should "
 "let you see the list of supported data sources. Select \"From OData Feed\"."
 msgstr ""
+"Om data vanuit de OpenDataSoft OData-service te importeren, dient u "
+"Microsoft Excel te openen en te klikken op het tabblad *GEGEVENS*. Klik "
+"daarna om \"Externe gegevens ophalen\". U ziet een lijst met ondersteunde "
+"gegevensbronnen. Selecteer \"Uit OData Feed\". "
 
 #: ../../source/using_api/odata/excel_integration.rst:23
 msgid "Data feed connection form."
-msgstr ""
+msgstr "Data feed inlogformulier."
 
 #: ../../source/using_api/odata/excel_integration.rst:25
 msgid ""
@@ -61,49 +75,59 @@ msgid ""
 " This address should be \"http://platform.url/api/odata\". Replace the "
 "platform.URL by the actual platform URL."
 msgstr ""
+"Voer in de adresbalk van het venster dat geopend werd het adres van de "
+"service in. Dit adres is \"http://platform.url/api/odata\". Vervang de URL "
+"van het platform door de URL van het effectieve platform."
 
 #: ../../source/using_api/odata/excel_integration.rst:30
 #: ../../source/using_api/odata/excel_integration.rst:93
 msgid "Table selection window."
-msgstr ""
+msgstr "Venster voor het selecteren van de tabel."
 
 #: ../../source/using_api/odata/excel_integration.rst:32
 msgid "Select the table(s) of your choosing by clicking their checkbox."
 msgstr ""
+"Selecteer de tabel(len) van uw keuze door de klikken op het aanvinkvakje "
+"ervan."
 
 #: ../../source/using_api/odata/excel_integration.rst:36
 msgid "A table selected to become a data source."
-msgstr ""
+msgstr "Een tabel die geselecteerd worden om een databron te worden."
 
 #: ../../source/using_api/odata/excel_integration.rst:38
 msgid "After validation, the \"Import Data\" window will open. Click \"OK\"."
 msgstr ""
+"Na validatie wordt het venster \"Importeer gegevens\" geopend. Klik op "
+"\"OK\"."
 
 #: ../../source/using_api/odata/excel_integration.rst:42
 msgid "The \"Import Data\" window."
-msgstr ""
+msgstr "Het venster \"Importeer gegevens\"."
 
 #: ../../source/using_api/odata/excel_integration.rst:44
 msgid "Your data are now displayed in the Microsoft Excel cells."
-msgstr ""
+msgstr "Uw data worden nu weergeven in Microsoft Excel-cellen."
 
 #: ../../source/using_api/odata/excel_integration.rst:48
 msgid "Imported data in Microsoft Excel."
-msgstr ""
+msgstr "Geïmporteerde gegevens in Microsoft Excel."
 
 #: ../../source/using_api/odata/excel_integration.rst:51
 msgid "PowerPivot"
-msgstr ""
+msgstr "PowerPivot"
 
 #: ../../source/using_api/odata/excel_integration.rst:53
 msgid ""
 "Here are the steps that will allow you to import data through PowerPivot for"
 " Microsoft Excel."
 msgstr ""
+"Hierna volgen de stappen die u zullen toelaten data te importeren via "
+"PowerPivot voor Microsoft Excel."
 
 #: ../../source/using_api/odata/excel_integration.rst:57
 msgid "\"Add-Ins\" tab in the Microsoft Excel settings window."
 msgstr ""
+"Tabblad \"Add-Ins\" in het venster met de instellingen voor Microsoft Excel."
 
 #: ../../source/using_api/odata/excel_integration.rst:60
 msgid ""
@@ -111,20 +135,27 @@ msgid ""
 "\"Add-ins\" tab in the Microsoft Excel settings window. In the \"Manage\" "
 "drop down menu, select \"COM Add-ins\" and click \"Go...\"."
 msgstr ""
+"Alvorens u PowerPivot kan gebruiken, moet u dit eerst activeren. Open "
+"hiervoor het tabblad \"Add-Ins\" in het venster met de instellingen voor "
+"Microsoft Excel. In het dropdownmenu \"Beheren\", selecteer \"COM Add-Ins\" "
+"en klik op \"Ga ...\"."
 
 #: ../../source/using_api/odata/excel_integration.rst:65
 msgid "The COM add ins selection window."
-msgstr ""
+msgstr "Het venster voor het selecteren van de COM add ins."
 
 #: ../../source/using_api/odata/excel_integration.rst:68
 msgid ""
 "In the window that was just opened, select \"Microsoft PowerPivot for Excel "
 "2013\" or \"Microsoft PowerPivot for Excel 2010\", whichever applies."
 msgstr ""
+"Selecteer in het venster dat net werd geopend \"Microsoft PowerPivot voor "
+"Excel 2013\" of \"Microsof tPowerPivot voor Excel 2010\", afhankelijk van "
+"wat van toepassing is."
 
 #: ../../source/using_api/odata/excel_integration.rst:73
 msgid "PowerPivot menu bar."
-msgstr ""
+msgstr "Menubalk van PowerPivot."
 
 #: ../../source/using_api/odata/excel_integration.rst:75
 msgid ""
@@ -132,10 +163,13 @@ msgid ""
 "the PowerPivot menu bar. In it, click the \"Manage\" button. It will open a "
 "source management window."
 msgstr ""
+"Klik in het hoofdvenster van Microsoft Excel op het tabblad \"POWERPIVOT\" "
+"om de menubalk van PowerPivot weer te geven. Klik op de knop \"Beheren\". "
+"Hierdoor wordt een venster voor het beheer van bronnen geopend."
 
 #: ../../source/using_api/odata/excel_integration.rst:80
 msgid "Data sources management window."
-msgstr ""
+msgstr "Venster voor het beheer van databronnen."
 
 #: ../../source/using_api/odata/excel_integration.rst:82
 msgid ""
@@ -143,76 +177,94 @@ msgid ""
 "click \"From Data Service\". In the second menu that appears, click \"From "
 "OData Data Feed\""
 msgstr ""
+"Klik in dit venster op \"Externe gegevens ophalen\" en klik in het menu dat "
+"verschijnt op \"Uit Data Service\". Klik in het tweede menu dat verschijnt "
+"om \"Uit OData Data Feed\"."
 
 #: ../../source/using_api/odata/excel_integration.rst:87
 msgid "Data feed connection window."
-msgstr ""
+msgstr "Venster om verbinding te maken met Data feed."
 
 #: ../../source/using_api/odata/excel_integration.rst:89
 msgid ""
 "In the import window that was opened, enter the OpenDataSoft OData service "
 "in the address bar."
 msgstr ""
+"Voer in het importvenster dat werd geopend de OpenDataSoft OData service in "
+"de adresbalk in."
 
 #: ../../source/using_api/odata/excel_integration.rst:95
 msgid ""
 "In the table selection window, select the dataset(s) of your choosing by "
 "clicking their checkbox. Once done, click \"Finish\"."
 msgstr ""
+"Selecteer in het venster voor het selecteren van de tabel de dataset(s) van "
+"uw keuze door de klikken op het aanvinkvakje ervan. Eenmaal dit gebeurd is, "
+"klik op \"Voltooien\"."
 
 #: ../../source/using_api/odata/excel_integration.rst:100
 msgid "Data transfer window."
-msgstr ""
+msgstr "Datatransfervenster."
 
 #: ../../source/using_api/odata/excel_integration.rst:102
 msgid ""
 "When the transfer window shows a success indicator, close it with the "
 "\"Close\" button on the bottom right."
 msgstr ""
+"Wanneer het transfervenster een succesindicator toont, sluit deze met de "
+"knop \"Afsluiten\" onderaan rechts."
 
 #: ../../source/using_api/odata/excel_integration.rst:106
 msgid "Data preview."
-msgstr ""
+msgstr "Voorbeeldweergave van de data."
 
 #: ../../source/using_api/odata/excel_integration.rst:108
 msgid ""
 "You can now verify the integrity of your data om the data source management "
 "window."
 msgstr ""
+"U kan nu de integriteit van uw data controleren in het venster voor het "
+"beheer van databronnen."
 
 #: ../../source/using_api/odata/excel_integration.rst:112
 msgid "The data import list in PowerPivot."
-msgstr ""
+msgstr "De importlijst met data in PowerPivot."
 
 #: ../../source/using_api/odata/excel_integration.rst:114
 msgid ""
 "In the Microsoft Excel main window, click \"PivotTable\", and in the popped "
 "up list, click \"PivotTable\"."
 msgstr ""
+"Klik in het hoofdvenster van Microsoft Excel op \"PivotTable\" en in de "
+"lijst die verschenen is op \"PivotTable\"."
 
 #: ../../source/using_api/odata/excel_integration.rst:118
 msgid "The destination selection window."
-msgstr ""
+msgstr "Het venster voor het selecteren van de bestemming."
 
 #: ../../source/using_api/odata/excel_integration.rst:120
 msgid ""
 "In the destination selection window, select the worksheet of your choosing, "
 "and click \"OK\"."
 msgstr ""
+"Selecteer in het venster voor het selecteren van de bestemming het werkblad "
+"van uw keuze en klik op \"OK\"."
 
 #: ../../source/using_api/odata/excel_integration.rst:124
 msgid "Data aggregation using PowerPivot."
-msgstr ""
+msgstr "Aggregatie van data met behulp van PowerPivot."
 
 #: ../../source/using_api/odata/excel_integration.rst:128
 msgid "Power Query"
-msgstr ""
+msgstr "Power Query"
 
 #: ../../source/using_api/odata/excel_integration.rst:130
 msgid ""
 "Here are the steps that will allow you to import data through Power Query "
 "for Microsoft Excel."
 msgstr ""
+"Hierna volgen de stappen die u zullen toelaten data te importeren via "
+"PowerQuery voor Microsoft Excel."
 
 #: ../../source/using_api/odata/excel_integration.rst:133
 msgid ""
@@ -221,10 +273,14 @@ msgid ""
 "us/download/details.aspx?id=39379>`_. The activation process is similar to "
 "that of PowerPivot."
 msgstr ""
+"Alvorens u PowerQuery kan gebruiken, moet u dit eerste downloaden en "
+"activeren. Om te downloaden, ga naar  `deze koppeling link "
+"<http://www.microsoft.com/en-us/download/details.aspx?id=39379>`_. Het "
+"activatieproces is gelijkaardig aan dat van PowerPivot."
 
 #: ../../source/using_api/odata/excel_integration.rst:139
 msgid "Data sources supported by Microsoft Power Query."
-msgstr ""
+msgstr "Databronnen die ondersteund worden door Microsoft Power Query."
 
 #: ../../source/using_api/odata/excel_integration.rst:141
 msgid ""
@@ -233,18 +289,24 @@ msgid ""
 "Sources\". You should see a list with all data sources supported by "
 "Microsoft Power Query."
 msgstr ""
+"Eenmaal dit gedaan is, keer terug naar het hoofdvenster van Microsoft Excel."
+" Klik op \"POWER QUERY\" om de menubalk weer te geven. Klik in de menubalk "
+"\"POWER QUERY\" op \"Uit andere bronnen\". U zou een lijst moeten zien met "
+"alle databronnen die ondersteund worden door Microsoft Power Query."
 
 #: ../../source/using_api/odata/excel_integration.rst:147
 msgid "OData data source selection window."
-msgstr ""
+msgstr "Venster voor het selecteren van OData gegevensbronnen."
 
 #: ../../source/using_api/odata/excel_integration.rst:149
 msgid "In this window, enter the OpenDataSoft OData service URL and click \"OK\"."
 msgstr ""
+"Voer in dit venster URL van de OpenDataSoft OData service in en klik op "
+"\"OK\"."
 
 #: ../../source/using_api/odata/excel_integration.rst:153
 msgid "Power Query navigation window."
-msgstr ""
+msgstr "Power Query navigatievenster."
 
 #: ../../source/using_api/odata/excel_integration.rst:155
 msgid ""
@@ -252,11 +314,14 @@ msgid ""
 "hand side of the main window. In it, click the IDs of the table of your "
 "choosing."
 msgstr ""
+"Eenmaal dit gedaan is, wordt een Power Query navigatievenster weergeven aan "
+"de rechterzijde van het hoofdvenster. Klik in dit venster op de ID's van de "
+"tabel van uw keuze."
 
 #: ../../source/using_api/odata/excel_integration.rst:160
 msgid "Imported data through Power Query."
-msgstr ""
+msgstr "Geïmporteerde data via Power Query."
 
 #: ../../source/using_api/odata/excel_integration.rst:162
 msgid "Your data is now displayed in the Microsoft Excel cells."
-msgstr ""
+msgstr "Uw data worden nu weergegeven in de Microsoft Excel-cellen."

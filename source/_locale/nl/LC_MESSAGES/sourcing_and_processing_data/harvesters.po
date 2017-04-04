@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-16 14:25+0100\n"
+"POT-Creation-Date: 2017-04-04 15:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2017\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:2
 msgid "Harvesters"
-msgstr ""
+msgstr "Harvesters"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:4
 msgid ""
@@ -27,32 +28,37 @@ msgid ""
 "important number of datasets by importing them from an external source such "
 "as a CSW catalog or an ArcGIS service, among many others."
 msgstr ""
+"Harvesters bieden beheerders een manier om op gemakkelijke wijze een groot "
+"aantal datasets aan te maken en te updaten door deze vanuit een externe bron"
+" te importeren, zoals een CSW catalogus of een ArcGIS service."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:6
 msgid "The two main usages of harvesters are:"
-msgstr ""
+msgstr "De twee belangrijkste gebruiksvormen van harvesters zijn:"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:8
 msgid "Bootstrap your portal with datasets from an existing portal"
-msgstr ""
+msgstr "Bootstrap uw portaal met datasets uit een bestaand portaal"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:9
 msgid "Keep your datasets synchronised with an external service"
-msgstr ""
+msgstr "Houd uw datasets gesynchroniseerd met een externe service"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:11
 msgid ""
 "The harvester will create datasets, update their metadata and resources, "
 "keep them synchronized, and publish them."
 msgstr ""
+"De harvester zal datasets aanmaken, hun metadata en bronnen updaten, deze "
+"gesynchroniseerd houden en publiceren."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:19
 msgid "Global overview"
-msgstr ""
+msgstr "Globaal overzicht"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:31
 msgid "Creating a harvester"
-msgstr ""
+msgstr "Een harvester aanmaken"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:33
 msgid ""
@@ -60,6 +66,10 @@ msgid ""
 "backoffice, and then on **Add harvester**. You will be asked to choose the "
 "type of the portal you want to harvest, and a name for your harvester."
 msgstr ""
+"Om met harvesters te starten, klik op het menu **harvesters** in uw back-"
+"office en vervolgens op **Voeg harvester toe**. Er zal u worden gevraagd om "
+"het type portaal te kiezen dat u wil harvesten en een naam voor uw "
+"harvester."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:45
 msgid ""
@@ -67,10 +77,14 @@ msgid ""
 "to the configuration form of the harvester. As it depends on the harvester "
 "type, please refer to each harvester page below for detailed instructions."
 msgstr ""
+"Wanneer dit gebeurd is, klik op **Maak harvester aan** en u wordt "
+"doorgestuurd naar het configuratieformulier van de harvester. Aangezien dit "
+"afhangt van het type harvester, verwijzen we naar elke harvesterpagina "
+"onderaan voor meer gedetailleerde instructies."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:47
 msgid "Some options are available for every harvester type such as:"
-msgstr ""
+msgstr "Sommige opties zijn beschikbaar voor elke type harvester, zoals:"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:49
 msgid ""
@@ -79,6 +93,11 @@ msgid ""
 " datasets that are not available on the external service anymore (e.g: if "
 "they are deleted from the external service)."
 msgstr ""
+"**Update bij verwijdering**: wanneer de brondatasets worden verwijderd op "
+"het geharveste portaal, worden deze ook verwijderd op het OpenDataSoft-"
+"portaal. Zo niet is het mogelijk dat u datasets hebt die niet langer "
+"beschikbaar zijn op de externe service (bijv. wanneer ze verwijderd zijn uit"
+" de externe service)."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:50
 msgid ""
@@ -88,12 +107,21 @@ msgid ""
 "Otherwise, your datasets will be linked to the external service and will "
 "access remote datasets via their URL for every publishing."
 msgstr ""
+"**Download bronnen: download bronnen in plaats van deze via een URL te "
+"koppelen. Deze optie laat u toe uw datasets los te koppelen van het portaal "
+"op afstand door permanent alle vereiste data te kopiëren op het "
+"OpenDataSoft-platform. Zo niet zullen uw datasets gekoppeld zijn aan de "
+"externe service en zullen deze voor elke publicatie via hun URL toegang "
+"hebben tot datasets op afstand."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:51
 msgid ""
 "**Restrict visibility**: make the visibility of harvested datasets "
 "restricted. Otherwise, they will have the default visibility of your portal."
 msgstr ""
+"**Beperk zichtbaarheid**: zorgt ervoor dat de zichtbaarheid van geharveste "
+"datasets beperkt is. Zo niet zullen ze de standaard zichtbaarheid hebben van"
+" uw portaal."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:52
 msgid ""
@@ -102,6 +130,10 @@ msgid ""
 "force the theme or publisher instead of using the one used on the external "
 "service."
 msgstr ""
+"**Standaard metadata**, **Inspireer metadata**, **DCAT metadata**: laten u "
+"toe om sommige metadata in elke geharveste dataset op te heffen. Nuttig "
+"wanneer u het thema of uitgever wil forceren in plaats van diegene te "
+"gebruiken die gebruikt wordt op de externe dienst."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:54
 msgid ""
@@ -110,16 +142,22 @@ msgid ""
 "and descriptions and they look correct, you are all set. Otherwise, please "
 "double check your configuration."
 msgstr ""
+"Eenmaal u klaar bent met het configureren van de harvester, kan u klikken op"
+" de knop **Voorbeeldweergave** om deze op een aantal datasets te testen. "
+"Wanneer u enkele titels en omschrijvingen ziet die correct lijken, is alles "
+"goed ingesteld. Zo niet, controleer uw configuratie dan nog eens."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:57
 msgid "Running a harvester"
-msgstr ""
+msgstr "Een harvester runnen"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:59
 msgid ""
 "The harvesting process can be quite long on external services with many "
 "datasets or with big ones, so it is split in two phases."
 msgstr ""
+"Het harvestingproces kan vrij lang zijn op externe diensten met vele "
+"datasets of met grote datasets. Daarom wordt het opgesplitst in twee fasen."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:61
 msgid ""
@@ -129,16 +167,25 @@ msgid ""
 "and resources (as URLs or as files depending on the *download resources* "
 "option). This happens when you click on the **Start harvester** button."
 msgstr ""
+"Allereerst zal de harvester verbinding maken met de service op afstand en "
+"alle datasets ontdekken die deze bevat. Vervolgens zal voor elke dataset op "
+"afstand die hij vindt een niet-gepubliceerde dataset worden aangemaakt. Deze"
+" datasets zullen alle beschikbare metadata en bronnen bevatten (als URL's of"
+" als bestanden, afhankelijk van de optie \"download bronnen\"). Dit gebeurt "
+"wanneer u op de knop **Start harvester** klikt."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:62
 msgid ""
 "Next, it will process and publish all the harvested datasets. This step can "
 "take a while. This happens when you click on the **Publish** button."
 msgstr ""
+"Vervolgens zal hij alle geharveste datasets verwerken en publiceren. Deze "
+"stap kan enige tijd in beslag nemen. Dit gebeurt wanneer u klikt op de knop "
+"**Publiceer**."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:65
 msgid "Editing harvested datasets"
-msgstr ""
+msgstr "Geharveste datasets bewerken"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:67
 msgid ""
@@ -147,10 +194,14 @@ msgid ""
 "metadata by clicking on **Override** and adding your own value. This "
 "override will be kept even if you restart your harvester."
 msgstr ""
+"Alvorens deze te publiceren, kan u de metadata van de geharveste datasets "
+"wijzigen. Op de datasetpagina (informatietabblad) kan u metadata manueel "
+"opheffen door te klikken op **Opheffen** en uw eigen waarde toe te voegen. "
+"Deze opheffing wordt behouden, zelfs wanneer u uw harvester heropstart."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:70
 msgid "Deleting a harvester"
-msgstr ""
+msgstr "Een harvester verwijderen"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:72
 msgid ""
@@ -158,6 +209,10 @@ msgid ""
 " can choose between keeping the harvested datasets (they will be kept as "
 "regular datasets in your catalog), or by deleting them with the harvester."
 msgstr ""
+"Wanneer u een harvester verwijdert door op de knop **Verwijder harvester** "
+"te klikken, kan u kiezen tussen het behouden van de geharveste domeinen "
+"(deze zullen als regelmatige datasets behouden worden in uw catalogus) of "
+"deze te verwijderen met de harvester."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:74
 msgid ""
@@ -166,22 +221,26 @@ msgid ""
 "be duplicated if you recreate another harvester on the same external "
 "service."
 msgstr ""
+"Wanneer u ervoor kiest om deze te behouden, denk er dan aan dat u deze één "
+"voor één zal moeten behandelen om daarna de publicatie ervan ongedaan te "
+"kunnen maken of te kunnen verwijderen en dat ze zullen worden gedupliceerd "
+"wanneer u een andere harvester opnieuw aanmaakt op dezelfde externe service."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:77
 msgid "Harvester types"
-msgstr ""
+msgstr "Harvestertypes"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:80
 msgid "Portals"
-msgstr ""
+msgstr "Portalen"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:94
 msgid "Services"
-msgstr ""
+msgstr "Diensten"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:103
 msgid "Scheduling"
-msgstr ""
+msgstr "Planning"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:105
 msgid ""
@@ -192,12 +251,20 @@ msgid ""
 "to choose the time of day when it will run because it can not run more than "
 "once a day."
 msgstr ""
+"Vanuit de configuratiepagina van een harvester is het mogelijk om ervoor te "
+"zorgen dat deze op periodieke basis werkt. Scroll hiervoor naar beneden op "
+"de pagina en klik op *Stel terugkerende runs in*. U kan de harvester elke "
+"dag runnen of de dagen van de week of de dagen van de maand kiezen waarop "
+"deze zal runnen. Wel moet u altijd het tijdstip van de dag kiezen wanneer "
+"deze moet runnen omdat hij niet meer dan één keer per dag kan runnen."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:107
 msgid ""
 "The periodic run will only trigger if the harvester has been run at least "
 "once."
 msgstr ""
+"De periodieke run zal enkel worden geactiveerd wanneer de harvester minstens"
+" één keer heeft gerund."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:109
 msgid ""
@@ -205,3 +272,7 @@ msgid ""
 "datasets will be republished, but unpublished datasets or new datasets will "
 "not be automatically published."
 msgstr ""
+"Op het einde van een geplande run zal de publicatie van alle door de "
+"harvester reeds gepubliceerde datasets ongedaan worden gemaakt maar zullen "
+"niet-gepubliceerde datasets of nieuwe datasets niet automatische worden "
+"gepubliceerd."
