@@ -382,7 +382,7 @@ Once a filter is applied, if the metric is bigger or smaller that the full datas
 
 To do so, you will need :
  - a secondary context
- - plug ``ods-filters`` and ``ods-table`` on this secondary context
+ - plug ``ods-facets`` and ``ods-table`` on this secondary context
  - compute the same metrics for both contexts
  - add the secondary metric IF and ONLY IF a filter is selected
  - configure the ``ng-class`` to compare full and filtered metric
