@@ -66,7 +66,7 @@ The REST parameters you will need to supply when redirecting the user are the fo
 
 Example (line breaks added for legibility):
 
-.. code-block:: http
+.. code-block:: text
 
     GET /oauth2/authorize/?
         client_id=123456789&

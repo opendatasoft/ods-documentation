@@ -62,17 +62,17 @@ Once your dataset is saved with the correct realtime resource settings, a URL pa
 .. image:: realtime__record--en.png
     :alt: table view with a single record with value "Hello World!" in the "message" field
 
-A mimimal example of the api usage for a dataset with a single field named "message", using curl, would be 
+A mimimal example of the api usage for a dataset with a single field named "message", using curl, would be
 
 .. code-block:: bash
 
     curl -XPOST <DOMAIN_URL>/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/push/?pushkey=<PUSH_API_KEY> -d'{"message":"Hello World!"}'
 
-A minimal example with the same dataset, using the array form to send multiple records at once would be 
+A minimal example with the same dataset, using the array form to send multiple records at once would be
 
 .. code-block:: bash
 
-    curl -XPOST <DOMAIN_URL>/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/push/?pushkey=<PUSH_API_KEY> -d'[{"message":"¡Hola Mundo!"},{"message":"Hallo Welt!"}]`
+    curl -XPOST <DOMAIN_URL>/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/push/?pushkey=<PUSH_API_KEY> -d'[{"message":"¡Hola Mundo!"},{"message":"Hallo Welt!"}]'
 
 If the records have been received correctly, the server will respond the following message.
 
@@ -82,7 +82,7 @@ If the records have been received correctly, the server will respond the followi
         "status": "OK"
     }
 
-If an error happened while trying to push a record, the response will specify the error. 
+If an error happened while trying to push a record, the response will specify the error.
 
 Pushing a field of type file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -166,7 +166,7 @@ Get notified in case of inactivity
 .. image:: realtime__alerting--en.png
     :alt: inactivity alerting settings in RT resource view
 
-If you expect a system to push data to the platform often, you may want to be notified if no record has been received by the platform in a while. In order to get notified, you can enable the "Alerting" option in the source configuration, and setup a time threshold in minutes. If a time span greater than the threshold has occured during which no record has been received, you will receive an email. 
+If you expect a system to push data to the platform often, you may want to be notified if no record has been received by the platform in a while. In order to get notified, you can enable the "Alerting" option in the source configuration, and setup a time threshold in minutes. If a time span greater than the threshold has occured during which no record has been received, you will receive an email.
 
 Unpublishing and disabling the api
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

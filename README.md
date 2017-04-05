@@ -45,6 +45,21 @@ make localizedhtml
 The generated html will be available in `/build/html`. You can either open the index.html file in your browser or do a
 `make server` and go to `http://localhost:9000/build/html`.
 
+## Building the PDF documentation
+
+To build the documentation in pdf:
+```bash
+make pdf
+```
+
+To build the localised version:
+```bash
+make pdf-fr
+```
+
+**N.B.** The pdf generator fails when it encounters untranslated texts.
+You may have to comment not fully translated sections out of the root `index.rst` so that the build passes.
+
 ## Troubleshooting
 
 When building the documentation, you may run into an error about an unknown locale UTF-8. In that case you need to use
@@ -182,7 +197,7 @@ All images should be named following this norm:
 > <doc_page_name>__<image-name>--<language>.<ext>
 
 Where:
- 
+
 * `<doc_page_name>` is the name of the `.rst` file the image is originally referenced from (using `_` as tokens separator)
 * `<image-name>` is the name of the image itself, it should describe its content (using `-` as tokens separator)
 * `<language>` is either `fr` or `en` (we do not support other languages in the documentation
@@ -191,17 +206,17 @@ Where:
 If you need to annotate images (add circles, arrows, basic text), you can download Skitch
 (https://evernote.com/skitch/). It is free and very handy for these basic edits.
 
-### Icons from FontAwesome 
+### Icons from FontAwesome
 To use an icon from FontAwesome, add a substitution between | (spaces are important)
 ```
 Check this awesome |externalwebsite| |externallink|
 ```
 
-To a raw html including the Font Awesome <i> link 
+To a raw html including the Font Awesome <i> link
 ```
 .. |externallink| raw:: html
 
    <i class="fa fa-external-link" aria-hidden="true"></i>
 ```
-Note that the external link decorator is added automatically. 
+Note that the external link decorator is added automatically.
 

@@ -245,3 +245,10 @@ localizedhtml-%:
 server:
 	@echo "Serving local files on port 9000: http://localhost:9000/en/"
 	@cd build/html && python -m SimpleHTTPServer 9000
+
+pdf:
+	$(SPHINXBUILD) -b pdf $(ALLSPHINXOPTS) $(BUILDDIR)/pdf
+
+pdf-%:
+	make -e SPHINXOPTS="-D language='$*'" pdf
+
