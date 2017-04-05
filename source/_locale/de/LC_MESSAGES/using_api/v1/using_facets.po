@@ -2,7 +2,7 @@
 # Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -195,7 +195,7 @@ msgstr ""
 " Datensatznachschlag-API abgerufene) Felder, für welche die Anwendung von "
 "Facets verfügbar ist, sind einfach identifizierbar:"
 
-#: ../../source/using_api/v1/using_facets.rst:73
+#: ../../source/using_api/v1/using_facets.rst:78
 msgid ""
 "When faceting is enabled, facets are returned in the response after the "
 "result set."
@@ -203,7 +203,7 @@ msgstr ""
 "Ist die Anwendung von Facets aktiviert, werden Facets in der Antwort nach "
 "dem Ergebnissatz zurückgegeben."
 
-#: ../../source/using_api/v1/using_facets.rst:75
+#: ../../source/using_api/v1/using_facets.rst:80
 msgid ""
 "Every facet has a display value (\"name\" attribute) and a refine property "
 "(\"path\" attribute) which can be used to alter the query context."
@@ -212,7 +212,7 @@ msgstr ""
 "Verfeinerungseigenschaft (Attribut \"Pfad\"), die zum Ändern des "
 "Anfragekontexts verwendet werden kann."
 
-#: ../../source/using_api/v1/using_facets.rst:78
+#: ../../source/using_api/v1/using_facets.rst:83
 msgid ""
 "Facets are hierarchical, for instance, a year facet will contain months "
 "facets and a month facet will contain days facets."
@@ -220,15 +220,15 @@ msgstr ""
 "Facets sind hierarchisch. Zum Beispiel wird ein Jahresfacet Monatsfacets "
 "enthalten und ein Monatsfacet Tagesfacets."
 
-#: ../../source/using_api/v1/using_facets.rst:81
+#: ../../source/using_api/v1/using_facets.rst:86
 msgid "Example of a facet tree:"
 msgstr "Beispiel einer Facetstruktur:"
 
-#: ../../source/using_api/v1/using_facets.rst:103
+#: ../../source/using_api/v1/using_facets.rst:119
 msgid "Every facet contains two additional information:"
 msgstr "Jedes Facet enthält zwei weitere Informationen:"
 
-#: ../../source/using_api/v1/using_facets.rst:105
+#: ../../source/using_api/v1/using_facets.rst:121
 msgid ""
 "The \"count\" attribute contains the number of hits that have the same facet"
 " value. The \"state\" attribute defines whether the facet is currently used "
@@ -240,27 +240,27 @@ msgstr ""
 " in \"Verfeinern\" oder \"Ausschließen\" verwendet wird. Mögliche Werte für "
 "das Statusattribut sind:"
 
-#: ../../source/using_api/v1/using_facets.rst:109
+#: ../../source/using_api/v1/using_facets.rst:125
 msgid "**displayed**: no refine nor exclude"
 msgstr "**angezeigt**: weder Verfeinern noch Ausschließen"
 
-#: ../../source/using_api/v1/using_facets.rst:110
+#: ../../source/using_api/v1/using_facets.rst:126
 msgid "**refined**: refine"
 msgstr "**verfeinert**: verfeinern"
 
-#: ../../source/using_api/v1/using_facets.rst:111
+#: ../../source/using_api/v1/using_facets.rst:127
 msgid "**excluded**: exclude"
 msgstr "**ausgeschlossen**: ausschließen"
 
-#: ../../source/using_api/v1/using_facets.rst:113
+#: ../../source/using_api/v1/using_facets.rst:129
 msgid "Example of a facet with all its attributes:"
 msgstr "Beispiel eines Facets mit all seinen Attributen:"
 
-#: ../../source/using_api/v1/using_facets.rst:138
+#: ../../source/using_api/v1/using_facets.rst:157
 msgid "Refining"
 msgstr "Verfeinern"
 
-#: ../../source/using_api/v1/using_facets.rst:140
+#: ../../source/using_api/v1/using_facets.rst:159
 msgid ""
 "It is possible to limit the result set by refining on a given facet value. "
 "To do so, use the following API parameter: ``refine.FACETNAME=FACETVALUE``."
@@ -269,7 +269,7 @@ msgstr ""
 "Facetwert verfeinern. Verwenden Sie dazu den folgenden API-Parameter: "
 "``refine.FACETNAME=FACETVALUE``."
 
-#: ../../source/using_api/v1/using_facets.rst:143
+#: ../../source/using_api/v1/using_facets.rst:162
 msgid ""
 "For example: "
 "`<http://public.opendatasoft.com/api/datasets/1.0/search?refine.modified=2013>`_"
@@ -277,14 +277,14 @@ msgstr ""
 "Beispiel: "
 "`<http://public.opendatasoft.com/api/datasets/1.0/search?refine.modified=2013>`_"
 
-#: ../../source/using_api/v1/using_facets.rst:145
+#: ../../source/using_api/v1/using_facets.rst:164
 msgid ""
 "In the returned result set, only the datasets modified in 2013 will be "
 "returned."
 msgstr ""
 "Im Ergebnissatz werden nur die 2013 geänderten Datensätze zurückgegeben."
 
-#: ../../source/using_api/v1/using_facets.rst:147
+#: ../../source/using_api/v1/using_facets.rst:166
 msgid ""
 "As the refinement occurs on the \"year\" and as the \"modified\" facet is "
 "hierarchical, the sub-level is returned; results are dispatched in the "
@@ -294,11 +294,11 @@ msgstr ""
 "hierarchisch ist, wird die Unterebene zurückgegeben. Ergebnisse werden im "
 "Unterwert \"Monat\" versendet:"
 
-#: ../../source/using_api/v1/using_facets.rst:171
+#: ../../source/using_api/v1/using_facets.rst:198
 msgid "Excluding"
 msgstr "Ausschließen"
 
-#: ../../source/using_api/v1/using_facets.rst:173
+#: ../../source/using_api/v1/using_facets.rst:200
 msgid ""
 "Using the same principle as above, it is possible to exclude from the result"
 " set the hits matching a given value of a given facet. To do so, use the "
@@ -309,7 +309,7 @@ msgstr ""
 " entsprechen. Verwenden Sie dazu den folgenden API-Parameter: "
 "``exclude.FACETNAME=FACETVALUE``."
 
-#: ../../source/using_api/v1/using_facets.rst:176
+#: ../../source/using_api/v1/using_facets.rst:203
 msgid ""
 "For example: "
 "`<http://public.opendatasoft.com/api/datasets/1.0/search?exclude.modified=2013>`_"
@@ -317,15 +317,15 @@ msgstr ""
 "Beispiel: "
 "`<http://public.opendatasoft.com/api/datasets/1.0/search?exclude.modified=2013>`_"
 
-#: ../../source/using_api/v1/using_facets.rst:178
+#: ../../source/using_api/v1/using_facets.rst:205
 msgid "Only results that have not been modified in 2011 will be returned."
 msgstr "Zurückgegeben werden nur Ergebnisse, die 2011 nicht geändert wurden."
 
-#: ../../source/using_api/v1/using_facets.rst:181
+#: ../../source/using_api/v1/using_facets.rst:208
 msgid "Disjunctive faceting"
 msgstr "Trennende Anwendung von Facets"
 
-#: ../../source/using_api/v1/using_facets.rst:183
+#: ../../source/using_api/v1/using_facets.rst:210
 msgid ""
 "By default, faceting is conjunctive. This means that the following context "
 "will lead down to no results: "
@@ -335,7 +335,7 @@ msgstr ""
 "folgende Kontext zu keinen Ergebnissen führt: "
 "`<http://public.opendatasoft.com/api/datasets/1.0/search?refine.modified=2013&refine.modified=2014>`_."
 
-#: ../../source/using_api/v1/using_facets.rst:186
+#: ../../source/using_api/v1/using_facets.rst:213
 msgid ""
 "You can enable disjunctive faceting using the following API parameter: "
 "``disjunctive.FACETNAME=true``."
@@ -343,7 +343,7 @@ msgstr ""
 "Mithilfe des folgenden API-Paramters können Sie die trennende Anwendung von "
 "Facets aktivieren: ``disjunctive.FACETNAME=true``."
 
-#: ../../source/using_api/v1/using_facets.rst:188
+#: ../../source/using_api/v1/using_facets.rst:215
 msgid ""
 "For example: "
 "`<http://public.opendatasoft.com/api/datasets/1.0/search?refine.modified=2013&refine.modified=2014&disjunctive.modified=true>`_"
