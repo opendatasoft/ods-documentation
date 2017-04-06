@@ -1,9 +1,9 @@
 FTP with meta CSV harvester
 ===========================
 
-This harvester allows users to create datasets from an FTP folder containing:
+This harvester allows users to create datasets from an FTP folder. The FTP folder must contain:
 
-- one **metadata CSV file** (semicolon separated)
+- one **metadata CSV file** (separated with semicolons)
 - several **resources**
 - (optional) several **CSV schema files**
 
@@ -13,20 +13,21 @@ This harvester allows users to create datasets from an FTP folder containing:
         :alt: FTP folder layout
         :align: center
 
-        FTP folder layout
-
 .. ifconfig:: language == 'fr'
 
     .. figure:: img/ftp_folder--en.png
         :alt: Organisation du dossier FTP
         :align: center
 
-        Organisation du dossier FTP
-
 Metadata CSV file
 -----------------
 
-The **metadata CSV file** (named ``index.csv`` by default) is a semicolon separated file that contains one header row and one row per dataset to harvest.
+The **metadata CSV file** (named ``index.csv`` by default) is a semicolon separated file which contains:
+
+- one header row
+- several other rows, each one dedicated to a dataset to harvest
+
+**Example:**
 
 .. code-block:: text
   :linenos:
@@ -43,24 +44,20 @@ The **metadata CSV file** (named ``index.csv`` by default) is a semicolon separa
 | random-id      | Venture Capital Investments | Venture capital industry statistics. | Economy, Business | Venture capital;Investments;IPO;Acquisitions | investments.json |                      |
 +----------------+-----------------------------+--------------------------------------+-------------------+----------------------------------------------+------------------+----------------------+
 
-- The ``name`` column contains an identifier for each row, these identifiers can be anything as long as they only contain letters and numbers, are unique across the file, and don't change over time.
-
+- The ``name`` column contains an identifier for each row. These identifiers can be anything as long as they only contain letters and numbers, are unique across the file, and don't change over time.
 - The **CSV resource column** (``source_dataset`` by default) contains the resource for each row.
-
-- The optional **CSV shema column** (``schema_file`` on the example above) contains the schema file for each row.
-
-- Every other column is a metadata (e.g: ``title``, ``description``, ``theme``, ``keyword``, ``license``, ``language``, but there are other ones you can add). Please note the format for lists like ``keywords``, where you have to put a semicolon separated, double quoted list of words.
+- The optional **CSV shema column** (here, ``schema_file``) contains the schema file for each row.
+- Every other column is a metadata (e.g: ``title``, ``description``, ``theme``, ``keyword``, ``license``, ``language``, but there are other ones you can add). Note: use double quotes at the beginning and end of lists like ``keywords``, where you have to use semicolons to separate words.
 
 Resources
 ---------
 
-Resources can either be :
+Resources can either be:
 
-- files on the FTP server, in the same folder as the ``index.csv`` file or under a subdirectory by specifying the relative path to the file in the column (e.g "resources/chocolate.csv"),
+- files on the FTP server, in the same folder as the ``index.csv`` file, or under a subdirectory by specifying the relative path to the file in the column (e.g "resources/chocolate.csv")
+- any URL pointing towards a supported format
 
-- any URL pointing towards a supported format,
-
-- if the column is empty, the dataset will only contain metadata.
+If the column is empty, the dataset will only contain metadata.
 
 Resources in any format supported by the platform can be harvested. However, as the harvester heavily relies on automatic parameters detection for the connector's configuration, files must be simple enough to be correctly extracted.
 
@@ -71,9 +68,9 @@ For each resource, the FTP folder can contain a **CSV schema file** that defines
 
 The filename of each schema file must be written in the **CSV schema column**. This file has the following specifications:
 
-- a ``name`` column holds each field name in lowercase (e.g. on a CSV resource, this would be the column names in lowercase),
-- a ``label`` column (optional) holds the label of the corresponding field,
-- a ``description`` column (optional) holds the description of the corresponding field.
+- a ``name`` column holds each field name in lowercase (e.g. on a CSV resource, this would be the column names in lowercase)
+- a ``label`` column (optional) holds the label of the corresponding field
+- a ``description`` column (optional) holds the description of the corresponding field
 
 .. code-block:: text
   :linenos:
