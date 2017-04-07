@@ -55,6 +55,7 @@ help:
 	@echo "  server                to serve the documentation locally"
 	@echo "  linkcheck             to check all external links for integrity"
 	@echo "  doctest               to run all doctests embedded in the documentation (if enabled)"
+	@echo "  pdf-%                 to make a pdf for a specific language"
 
 clean:
 	rm -rf $(BUILDDIR)/*
@@ -245,3 +246,10 @@ localizedhtml-%:
 server:
 	@echo "Serving local files on port 9000: http://localhost:9000/en/"
 	@cd build/html && python -m SimpleHTTPServer 9000
+
+pdf:
+	$(SPHINXBUILD) -b pdf $(ALLSPHINXOPTS) $(BUILDDIR)/pdf
+
+pdf-%:
+	make -e SPHINXOPTS="-D language='$*'" pdf
+

@@ -679,6 +679,8 @@ to obtain this result:
 
 Note that even though the insee_code was not in the same type, the matching happened. The matching worked even for the value ``1262`` in the first dataset (note the absence of leading 0, due to it being an integer value), that matched against the value ``01262`` in the second dataset.
 
+While most column types can be retrieved by using the join datasets processor, file type columns do not yield the actual resource through the processor but instead yield the name of the underlying resource.
+
 By default, this processor can only be used with remote datasets that have fewer than 100000 records.
 
 Extract from JSON
@@ -846,7 +848,7 @@ The processor works with masks, it expects
 
 For example, let's assume  you have a temperature sensor that sends and hexadecimal value.
 
-  .. code-block:: JSON
+  .. code-block:: text
 
     hex value : 2C09
 
@@ -854,7 +856,7 @@ This hexadecimal value contains:
 - a decimal value encoded on 2 bytes
 - the sensor status on a bit.
 
-  .. code-block:: JSON
+  .. code-block:: text
 
     hex value : 2C09          <- information sent by the sensor in hexadecimal
     bin value : 00010110 00000100 1   <- same information in binary
@@ -874,31 +876,31 @@ Therefore, the processing pipeline will contains 3 **Extract bit mask** processo
 
 **Extract bit mask 1**
 
-  .. code-block:: JSON
+  .. code-block:: text
 
     00010110 -> 22
 
 **Extract bit mask 2**
 
-  .. code-block:: JSON
+  .. code-block:: text
 
     00000100 -> 4
 
 **Extract bit mask 3**
 
-  .. code-block:: JSON
+  .. code-block:: text
 
       1 -> OK
 
 **Expression**
 
-  .. code-block:: JSON
+  .. code-block:: text
 
     Expression : integer_temp & "." & decimal_temp
 
 **Temperature**
 
-  .. code-block:: JSON
+  .. code-block:: text
 
     Temperature : 22,4 °C
     Sensor : OK
@@ -1278,16 +1280,16 @@ It takes the following parameters:
   * * Tolerance (simplification level)
     * Double
     * yes
-      
-Tolerance indicates the value below which intermediate points will be suppressed. 
 
-Depending on the shape complexity, different tolerances can be tested. 
+Tolerance indicates the value below which intermediate points will be suppressed.
 
-You could start with a tolerance value of 0.0001. 
+Depending on the shape complexity, different tolerances can be tested.
+
+You could start with a tolerance value of 0.0001.
 To simplify more, use a power of ten e.g. 0.001, then 0.01.
 
-If you use a tolerance too high, your shapes will be overly simplified and unrecognizable. 
-Use the preview to find out which tolerance works best for you. 
+If you use a tolerance too high, your shapes will be overly simplified and unrecognizable.
+Use the preview to find out which tolerance works best for you.
 
 Normalize Projection Reference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1573,7 +1575,7 @@ Extract text
 
 This processor can be used to extract any part of a text or a number or a combination of both into a new column. It's similar to the Replace Regexp processor, except instead of replacing the content in place the same column, a new column is created with the selected text.
 
-The idea is to put the part we want to extract in parenthesis. This part will then be extracted in a new column. 
+The idea is to put the part we want to extract in parenthesis. This part will then be extracted in a new column.
 
 Using the same example as for the Replace Regexp processor (from a french zip code like 44100, keep only the area code 44), the Extract Text processor can be used to create another column with the area code selected, instead of replacing the content like with the Replace Regexp processor.
 

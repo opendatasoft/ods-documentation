@@ -44,13 +44,13 @@ Examples
 Here is an example of a ``GetRecords`` operation with the optional ``resultType``, ``outputSchema`` and
 ``ElementSetName`` parameters, using a ``GET`` HTTP method :
 
-.. code-block:: http
+.. code-block:: text
 
     GET http://public.opendatasoft.com/api/csw?service=CSW&request=GetRecords&resulttype=results&elementsetname=full&outputschema=http://www.isotc211.org/2005/gmd&typenames=csw:Record
 
 And the same request using a ``POST`` HTTP method :
 
-.. code-block:: http
+.. code-block:: text
 
     POST http://public.opendatasoft.com/api/csw
 

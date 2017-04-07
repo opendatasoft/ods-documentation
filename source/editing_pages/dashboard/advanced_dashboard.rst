@@ -1,7 +1,7 @@
 Metrics/KPI and Data tables
 ================================
 
-Charts, Maps, tables, calendar are default views. Lot of additionnal parameters are waiting for you in the documentation. 
+Charts, Maps, tables, calendar are default views. Lot of additionnal parameters are waiting for you in the documentation.
 In the mean time, a lot of other widgets are as insterested as the main ones.
 
 Please have a look to the `widget list </editing_pages/integrate_content.html#widgets-list>`_ for more information.
@@ -21,7 +21,7 @@ Then add this dataset to your domain (New dataset, Add a source from OpenDataSof
 Create some KPIs
 ~~~~~~~~~~~~~~~~
 
-To create metrics / KPI, we use **odsAggregation**, to compute the sum, average, min, max of a data field. 
+To create metrics / KPI, we use **odsAggregation**, to compute the sum, average, min, max of a data field.
 Based on the context, the metric will update dynamically all along the user navigation (queries, filters).
 
 Starting from a new page, let's start by getting a context from this dataset.
@@ -29,8 +29,8 @@ The simplest way is to go to the explore/catalog page, go to the dataset, then i
 
  .. code-block:: html
 
-	<ods-dataset-context  
-		context="regularitemensuelletgv" 
+	<ods-dataset-context
+		context="regularitemensuelletgv"
 		regularitemensuelletgv-dataset="regularite-mensuelle-tgv">
 
 	    	<ods-table context="regularitemensuelletgv"></ods-table>
@@ -52,8 +52,8 @@ With a ``number`` filter to display it correctly in an HTML ``span`` you should 
 
 	<div class="container">
 
-	    <ods-dataset-context 
-	                         context="regularitemensuelletgv" 
+	    <ods-dataset-context
+	                         context="regularitemensuelletgv"
 	                         regularitemensuelletgv-dataset="regularite-mensuelle-tgv">
 
 	        <div ods-aggregation="myvar"
@@ -133,7 +133,7 @@ Result :
 It works but all metrics are independant. We can add filters to make them become dynamic depending on user filters etc... but we can't compute any thing from it.
 It would be interesting to have the pourcentage of canceled or delayed train out of the total.
 
-To do this, you must chain ods-aggregation with different variable names. 
+To do this, you must chain ods-aggregation with different variable names.
 
 It must looks like that :
 
@@ -151,7 +151,7 @@ It must looks like that :
                  ods-aggregation-context="regularitemensuelletgv"
                  ods-aggregation-function="SUM"
                  ods-aggregation-expression="nombre_de_trains_en_retard_a_l_arrivee">
-                    
+
                     <span class="kpi">Scheduled : {{ total | number }}</span>
                     <span class="kpi">Canceled : {{ canceled | number }}</span>
                     <span class="kpi">Delayed : {{ delayed | number }}</span>
@@ -168,7 +168,7 @@ Then, it's now possible, with AngularJS expression, to compute pourcentages betw
     <span class="kpi">Delayed : {{ delayed | number }}</span>
     <span class="kpi">% Canceled : {{ canceled / total * 100 | number : 2 }}%</span>
     <span class="kpi">% Delayed : {{ delayed / total * 100 | number : 2 }}%</span>
- 
+
   .. note::
 
 	``| number : 2`` is the AngularJS filter to pretty print numerical values. The optional parameter ``2`` is to limit to only 2 decimals
@@ -256,7 +256,7 @@ And replace the CSS :
 	    padding: 5px 0px;
 	    margin-bottom: 10px;
 	    height: 70px;
-	    
+
 	    border: 1.5px solid #010201; /* the border */
 	    border-radius: 5px; /* rounded corners */
 	}
@@ -277,7 +277,7 @@ And replace the CSS :
 	}
 
 
-Save, refresh, see : 
+Save, refresh, see :
 
  .. image:: advanced__kpi-2.png
 
@@ -354,7 +354,7 @@ To clearly see the dynamic behavior, let's add some filters on the left of the t
 	    </div>
 	    <div class="col-md-9">
 	        <div class="ods-box">
-	            <ods-table context="regularitemensuelletgv"></ods-table>                
+	            <ods-table context="regularitemensuelletgv"></ods-table>
 	        </div>
 	    </div>
 	</div>
@@ -368,7 +368,7 @@ Save, refresh, and see how it behave when filters are selected, In 2013, Paris E
 
 	``ng-class`` syntax is, surround by brackets, the CSS class in quotes followed by ``:`` then the AngularJS expression :
 		``{ 'CSS class' : AngularJS expression, ... }``
-	
+
 	Several classes and expression can be specified, all the expressions will be tested, from left to right.
 
 
@@ -382,19 +382,19 @@ Once a filter is applied, if the metric is bigger or smaller that the full datas
 
 To do so, you will need :
  - a secondary context
- - plug ``ods-filters`` and ``ods-table`` on this secondary context
+ - plug ``ods-facets`` and ``ods-table`` on this secondary context
  - compute the same metrics for both contexts
  - add the secondary metric IF and ONLY IF a filter is selected
  - configure the ``ng-class`` to compare full and filtered metric
 
-Let's go. 
+Let's go.
 
 Two contexts, one dataset :
 
  .. code-block:: html
 
-    <ods-dataset-context 
-                         context="regularitemensuelletgv,regularitemensuelletgvfiltered" 
+    <ods-dataset-context
+                         context="regularitemensuelletgv,regularitemensuelletgvfiltered"
                          regularitemensuelletgv-dataset="regularite-mensuelle-tgv"
                          regularitemensuelletgvfiltered-dataset="regularite-mensuelle-tgv">
 
@@ -522,9 +522,8 @@ Adapt CSS by updating or adding these classes :
  .. code-block:: css
 
 	.kpi {
-	    ...
 	    height: 90px;
-	    ...
+	    /* ... */
 	}
 
 	.kpi-value-reference {
@@ -534,7 +533,7 @@ Adapt CSS by updating or adding these classes :
 
 	.kpi-value-unit {
 	    font-size: 0.7em; /* bigger font */
-	    ...
+	    /* ... */
 	}
 
 
@@ -637,23 +636,23 @@ Pretty print the json block :
 
  .. code-block:: json
 
-	{  
-	   "results":[  
-	      {  
+	{
+	   "results":[
+	      {
 	         "scheduled":97.37288135593221,
 	         "canceled":0.2033898305084746,
 	         "regularity":94.60508474576272,
 	         "delayed":5.288135593220339,
 	         "x":"ST MALO"
 	      },
-	      {  
+	      {
 	         "scheduled":283.728813559322,
 	         "canceled":1.2203389830508475,
 	         "regularity":94.28813559322033,
 	         "delayed":16.135593220338983,
 	         "x":"NANCY"
 	      },
-	      {  
+	      {
 	         "scheduled":160.64406779661016,
 	         "canceled":0.559322033898305,
 	         "regularity":92.61186440677963,
@@ -711,7 +710,7 @@ AngularJS directive ``ng-repeat`` allow to iterate over the ``results`` list. Fo
 	                    {{ result.delayed | number : 2 }}
 	                </td>
 	            </tr>
-	        </tbody>  
+	        </tbody>
 	    </table>
 	</div>
 
