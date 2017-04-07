@@ -2,15 +2,15 @@
 # Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-04 17:18+0200\n"
+"POT-Creation-Date: 2017-04-05 17:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Datawords Rel2 <datawords.rel.2@gmail.com>, 2017\n"
+"Last-Translator: Datawords_trad_1 <datawords.translator.it1@gmail.com>, 2017\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,25 +29,26 @@ msgid ""
 " could have the value \"Paris\" for the \"City\" facet."
 msgstr ""
 "Un facet può essere considerato come un tag di valore associato a un record."
-" Ad esempio, diciamo che un dataset ha il facet \"Città\". Per uno dei "
-"record del dataset in questione, esso potrebbe avere il valore \"Parigi\"."
+" Ipotizziamo, ad esempio, che un dataset includa il facet \"Città\". In tal "
+"caso, per uno dei record presenti nel dataset, potrebbe avere il valore "
+"\"Parigi\"."
 
 #: ../../source/using_api/v1/using_facets.rst:7
 msgid ""
 "Facets are for instance used for building the left navigation colonne, both "
 "for dataset catalog exploration page and dataset records exploration page."
 msgstr ""
-"I facet sono utilizzati, tra le altre cose, per creare la colonna di "
-"navigazione a sinistra, per la pagina di esplorazione del catalogo dei "
-"dataset e per la pagina di esplorazione dei record dei dataset."
+"Tra le altre cose, i facet sono utilizzati per creare la colonna di "
+"navigazione a sinistra nelle due pagine di esplorazione, quella del catalogo"
+" e quella dei record dei dataset."
 
 #: ../../source/using_api/v1/using_facets.rst:10
 msgid ""
 "Facets are especially useful to implement guided navigation in large result "
 "sets."
 msgstr ""
-"In particolare, i facet sono utili per implementare la navigazione guidata "
-"dei set di risultati di grandi dimensioni."
+"In particolare, sono utili per implementare una navigazione guidata in caso "
+"di set di risultati di grandi dimensioni."
 
 #: ../../source/using_api/v1/using_facets.rst:13
 msgid "Identifying facets"
@@ -60,16 +61,16 @@ msgid ""
 "facet to retrieve."
 msgstr ""
 "Per impostazione predefinita, nelle API dei dataset e dei record i facet "
-"sono disabilitati. Per attivarli, è disponibile il parametro \"facet\" "
-"dell'API, in cui puoi specificare il nome del facet da recuperare."
+"sono disabilitati. Puoi attivarli utilizzando il parametro \"facet\" "
+"dell'API, specificando di volta in volta il nome del facet desiderato."
 
 #: ../../source/using_api/v1/using_facets.rst:18
 msgid ""
 "In the dataset APIs, facets are the same for all datasets and are the "
 "following:"
 msgstr ""
-"Nelle API dei dataset, sono possibili i seguenti facet, uguali per tutti i "
-"dataset:"
+"Nelle API dei dataset, i facet disponibili sono gli stessi per tutti. Ecco "
+"l'elenco:"
 
 #: ../../source/using_api/v1/using_facets.rst:23
 msgid "Facet Name"
@@ -190,17 +191,17 @@ msgid ""
 "instance from the Dataset Lookup API) for which faceting is available can be"
 " easily identified:"
 msgstr ""
-"Nelle API dei record, i facet sono definiti a livello di campo. Il facet di "
-"un campo può essere disponibile a seconda delle scelte del produttore. I "
-"campi, richiamati ad esempio dalla Dataset Lookup API, per cui è disponibile"
-" il faceting sono facilmente identificabili:"
+"Nelle API dei record, i facet sono definiti a livello dei campi. La "
+"disponibilità del facet di un campo dipende dalle scelte del produttore dei "
+"dati. I campi (richiamati ad esempio dall'API Dataset Lookup) per i quali è "
+"possibile effettuare il faceting sono facilmente identificabili:"
 
 #: ../../source/using_api/v1/using_facets.rst:78
 msgid ""
 "When faceting is enabled, facets are returned in the response after the "
 "result set."
 msgstr ""
-"Quando il faceting è abilitato, nella risposta i facet vengono restituiti "
+"Quando il faceting è abilitato, i facet vengono restituiti nella risposta, "
 "dopo il set dei risultati."
 
 #: ../../source/using_api/v1/using_facets.rst:80
@@ -209,7 +210,7 @@ msgid ""
 "(\"path\" attribute) which can be used to alter the query context."
 msgstr ""
 "Ogni facet ha un valore visualizzato (attributo \"name\") e una proprietà di"
-" affinamento (attributo \"path\") utilizzabili per alterare il contesto "
+" affinamento (attributo \"path\"), utilizzabili per modificare il contesto "
 "della query."
 
 #: ../../source/using_api/v1/using_facets.rst:83
@@ -236,7 +237,7 @@ msgid ""
 "in a \"refine\" or in an \"exclude\". Possible values for the state "
 "attribute are:"
 msgstr ""
-"L'attributo \"count\" contiene il numero di occorrenze con lo stesso valore "
+"L'attributo \"count\" riporta il numero di occorrenze con lo stesso valore "
 "di facet. L'attributo \"state\" definisce se il facet è utilizzato "
 "attualmente in modalità \"refine\" o \"exclude\". I possibili valori "
 "dell'attributo \"state\" sono:"
@@ -255,7 +256,7 @@ msgstr "**excluded**: exclude"
 
 #: ../../source/using_api/v1/using_facets.rst:129
 msgid "Example of a facet with all its attributes:"
-msgstr "Esempli di un facet con tutti gli attributi:"
+msgstr "Esempi di un facet con tutti gli attributi:"
 
 #: ../../source/using_api/v1/using_facets.rst:157
 msgid "Refining"
@@ -266,7 +267,7 @@ msgid ""
 "It is possible to limit the result set by refining on a given facet value. "
 "To do so, use the following API parameter: ``refine.FACETNAME=FACETVALUE``."
 msgstr ""
-"Impostando l'affinamento su un determinato valore di un facet è possibile "
+"Impostando l'affinamento su un determinato valore di un facet, è possibile "
 "limitare il set dei risultati. A questo scopo, utilizza il seguente "
 "parametro dell'API: ``refine.FACETNAME=FACETVALUE``."
 
@@ -276,15 +277,15 @@ msgid ""
 "`<http://public.opendatasoft.com/api/datasets/1.0/search?refine.modified=2013>`_"
 msgstr ""
 "Ad esempio: "
-"`<http://public.opendatasoft.com/api/datasets/1.0/search?refine.modified=2013>`_"
+"`<http://public.opendatasoft.com/api/datasets/1.0/search?refine.modified=2013>`_."
 
 #: ../../source/using_api/v1/using_facets.rst:164
 msgid ""
 "In the returned result set, only the datasets modified in 2013 will be "
 "returned."
 msgstr ""
-"Nel set di risultati che viene restituito saranno inclusi solo i dataset "
-"modificati nel 2013."
+"Nel set di risultati restituito saranno inclusi solo i dataset modificati "
+"nel 2013."
 
 #: ../../source/using_api/v1/using_facets.rst:166
 msgid ""
@@ -292,7 +293,7 @@ msgid ""
 "hierarchical, the sub-level is returned; results are dispatched in the "
 "\"month\" sub value:"
 msgstr ""
-"Poiché l'affinamento si verifica su \"year\" e il facet \"modified\" è "
+"Poiché l'affinamento si applica a \"year\" e il facet \"modified\" è "
 "gerarchico, viene restituito il sotto-livello. I risultati sono inviati nel "
 "valore \"month\" sottostante:"
 
@@ -307,7 +308,7 @@ msgid ""
 "following API parameter: ``exclude.FACETNAME=FACETVALUE``."
 msgstr ""
 "Applicando lo stesso principio descritto in precedenza, è possibile anche "
-"esclusdere dal set dei risultati le occorrenze che corrispondono a un "
+"escludere dal set dei risultati le occorrenze che corrispondono a un "
 "determinato valore di un particolare facet. A questo scopo, utilizza il "
 "seguente parametro dell'API: ``exclude.FACETNAME=FACETVALUE``."
 

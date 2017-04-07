@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-04 15:55+0200\n"
+"POT-Creation-Date: 2017-04-05 17:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Datawords_trad_1 <datawords.translator.it1@gmail.com>, 2017\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
@@ -1397,8 +1397,8 @@ msgid ""
 "The dataset used for the join; you can select it from your own datasets, or "
 "from OpenDataSoft's network of datasets."
 msgstr ""
-"Dataset utilizzato per l'unione. È possibile selezionarlo dai tuoi dataset o"
-" dalla rete di dataset di OpenDataSoft."
+"Il dataset utilizzato per l'unione. È possibile selezionarlo dai tuoi "
+"dataset o dalla rete di dataset di OpenDataSoft."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:526
 msgid "**Local Key**"
@@ -1419,7 +1419,8 @@ msgstr "**Chiave remota**"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:533
 msgid "The remote field corresponding to the local key. This can be a list."
-msgstr "Campo remoto corrispondente alla chiave locale. Può essere un elenco."
+msgstr ""
+"Il campo remoto corrispondente alla chiave locale. Può essere un elenco."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:535
 msgid "**Output Fields**"
@@ -1427,7 +1428,7 @@ msgstr "**Campi di output**"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:537
 msgid "The list of fields to retrieve."
-msgstr "Elenco dei campi da recuperare."
+msgstr "L'elenco dei campi da recuperare."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:539
 msgid "**Retrieve All Fields**"
@@ -1479,75 +1480,83 @@ msgid ""
 "If **One line** is set (with **Separator** set to ``|``), the Join will "
 "result in:"
 msgstr ""
+"Se il parametro **Una riga** è configurato (con **Separatore** impostato su "
+"``|``), l'unione risulterà in:"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:581
 msgid "Tour Eiffel|Quai Branly"
-msgstr ""
+msgstr "Tour Eiffel|Quai Branly"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:582
 msgid "69 quai Branly, 75007 Paris|69 quai Branly, 75007 Paris"
-msgstr ""
+msgstr "69 quai Branly, 75007 Paris|69 quai Branly, 75007 Paris"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:588
 msgid "If **One line** is not set, the Join will result in:"
-msgstr "Se **Una riga** non è impostato, l'Unione darà il seguente risultato:"
+msgstr ""
+"Se il parametro **Una riga** non è impostato, l'unione darà il seguente "
+"risultato:"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:610
 msgid ""
 "Integers, decimals and text field containing numerical values can be joined "
 "together. For example the following dataset:"
 msgstr ""
+"È possibile unire numeri interi, numeri decimali e campi di testo contenenti"
+" valori numerici. Vediamo un esempio:"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:615
 #: ../../source/sourcing_and_processing_data/processing.rst:637
 #: ../../source/sourcing_and_processing_data/processing.rst:667
 msgid "insee_code (text)"
-msgstr ""
+msgstr "insee_code (testo)"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:616
 #: ../../source/sourcing_and_processing_data/processing.rst:638
 #: ../../source/sourcing_and_processing_data/processing.rst:668
 msgid "bloom_competition_result (decimal)"
-msgstr ""
+msgstr "bloom_competition_result (decimale)"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:617
 #: ../../source/sourcing_and_processing_data/processing.rst:639
 #: ../../source/sourcing_and_processing_data/processing.rst:671
 msgid "01262"
-msgstr ""
+msgstr "01262"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:618
 #: ../../source/sourcing_and_processing_data/processing.rst:622
 msgid "2.0"
-msgstr ""
+msgstr "2.0"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:619
 #: ../../source/sourcing_and_processing_data/processing.rst:656
 msgid "90010"
-msgstr ""
+msgstr "90010"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:620
 msgid "4.0"
-msgstr ""
+msgstr "4.0"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:621
 #: ../../source/sourcing_and_processing_data/processing.rst:641
 #: ../../source/sourcing_and_processing_data/processing.rst:659
 #: ../../source/sourcing_and_processing_data/processing.rst:675
 msgid "57355"
-msgstr ""
+msgstr "57355"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:624
 msgid "can be used in a join dataset processor in the following dataset:"
 msgstr ""
+"Questo dataset può essere utilizzato dal processore per un'unione con il "
+"seguente dataset:"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:629
 msgid "bloom_ranks (integer)"
-msgstr ""
+msgstr "bloom_ranks (intero)"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:632
 msgid "to obtain the following result:"
-msgstr ""
+msgstr "per ottenere il seguente risultato:"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:644
 msgid ""
@@ -1555,56 +1564,59 @@ msgid ""
 "type difference. We can go further and apply to it a second join dataset "
 "processor, in order to obtain values from the following dataset:"
 msgstr ""
+"La corrispondenza tra i valori ``2`` e ``2.0`` è riuscita, nonostante la "
+"differenza di tipo. Possiamo anche proseguire ed eseguire un secondo "
+"processore di unione, per ottenere i valori del seguente dataset:"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:649
 #: ../../source/sourcing_and_processing_data/processing.rst:669
 msgid "city (text)"
-msgstr ""
+msgstr "city (testo)"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:650
 msgid "insee_code (integer)"
-msgstr ""
+msgstr "insee_code (intero)"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:651
 #: ../../source/sourcing_and_processing_data/processing.rst:670
 msgid "postal_code (text)"
-msgstr ""
+msgstr "postal_code (testo)"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:652
 #: ../../source/sourcing_and_processing_data/processing.rst:673
 msgid "Montluel"
-msgstr ""
+msgstr "Montluel"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:653
 msgid "1262"
-msgstr ""
+msgstr "1262"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:654
 #: ../../source/sourcing_and_processing_data/processing.rst:674
 msgid "01120"
-msgstr ""
+msgstr "01120"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:655
 msgid "Belfort"
-msgstr ""
+msgstr "Belfort"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:657
 msgid "90000"
-msgstr ""
+msgstr "90000"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:658
 #: ../../source/sourcing_and_processing_data/processing.rst:677
 msgid "Kalhausen"
-msgstr ""
+msgstr "Kalhausen"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:660
 #: ../../source/sourcing_and_processing_data/processing.rst:678
 msgid "57412"
-msgstr ""
+msgstr "57412"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:662
 msgid "to obtain this result:"
-msgstr ""
+msgstr "Il risultato sarà il seguente:"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:680
 msgid ""
@@ -1613,12 +1625,18 @@ msgid ""
 "dataset (note the absence of leading 0, due to it being an integer value), "
 "that matched against the value ``01262`` in the second dataset."
 msgstr ""
+"Nota che, anche se insee_code non è dello stesso tipo, la corrispondenza è "
+"stata rilevata. Identico discorso per il valore ``1262`` del primo dataset "
+"(nota l'assenza dello 0 iniziale, poiché si tratta di un valore intero), che"
+" è stata associato al valore ``01262`` del secondo dataset."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:682
 msgid ""
 "By default, this processor can only be used with remote datasets that have "
 "fewer than 100000 records."
 msgstr ""
+"Per impostazione predefinita, questo processore può essere utilizzato solo "
+"con dataset remoti con meno di 100.000 record."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:685
 msgid "Extract from JSON"
@@ -3160,14 +3178,14 @@ msgid ""
 msgstr ""
 "Da un punto di vista più tecnico, questo processore può servire per estrarre"
 " un pattern arbitrario espresso da una stringa sotto forma di espressione "
-"regolare mediante il sub-matching."
+"regolare mediante il submatch."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1596
 msgid ""
 "The syntax of the sub-matching expression to specify is the following: "
 "``(?P<NAME>REGEXP)``. Where:"
 msgstr ""
-"La sintassi dell'espressione di sub-matching da specificare è la seguente: "
+"La sintassi dell'espressione di sub-match da specificare è la seguente: "
 "``(?P<NOME>REGEXP)``. Dove:"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1598
