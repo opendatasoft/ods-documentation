@@ -679,6 +679,8 @@ to obtain this result:
 
 Note that even though the insee_code was not in the same type, the matching happened. The matching worked even for the value ``1262`` in the first dataset (note the absence of leading 0, due to it being an integer value), that matched against the value ``01262`` in the second dataset.
 
+While most column types can be retrieved by using the join datasets processor, file type columns do not yield the actual resource through the processor but instead yield the name of the underlying resource.
+
 By default, this processor can only be used with remote datasets that have fewer than 100000 records.
 
 Extract from JSON
