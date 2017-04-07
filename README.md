@@ -196,9 +196,12 @@ Where:
 * `image-name` is the name of the image itself, it should describe its content (using `-` as tokens separator)
 * `language` is either `en`, `fr`, `de`, `es`, etc.
 
-If you abide by this convention, you can include images using the `localizedimage` directive as such:
+If you abide by this convention, you can include images using the `localizedimage` and `localizedfigure` directives
+as such:
 
 > .. localizedimage:: doc_page_name__image-name.ext
+
+> .. localizedfigure:: doc_page_name__image-name.ext
 
 This will include the image postfixed with the current build language, and if the image doesn't exists, il will
 fallback to the english version of the image.

@@ -42,18 +42,9 @@ Datasets are often closely related to a geographic area, be it a country, a city
 
 The map filters the list by location. It will only show datasets that contain geographic data (geopoints or geoshapes mainly) inside the selected rectangle on the map.
 
-.. ifconfig:: language == 'en'
+.. localizedfigure:: img/geographic_search__explore.png
 
-   .. figure:: img/geographic_search__explore--en.png
-
-      The mini-map used for filtering on the catalog page.
-
-.. ifconfig:: language == 'fr'
-
-   .. figure:: img/geographic_search__explore--fr.png
-
-      The mini-map used for filtering on the catalog page.
-
+   The mini-map used for filtering on the catalog page.
 
 Click on the little rectangle button on the top left of the map to select the drawing tool, and draw a rectangle on the area you want on the map to activate the filter. To cancel a selection, just click on the rectangle button again.
 

@@ -1,5 +1,5 @@
 import os
-from docutils.parsers.rst.directives.images import Image
+from docutils.parsers.rst.directives.images import Image, Figure
 
 
 def _localized_file_path(file_path, language):
@@ -12,22 +12,33 @@ def _localized_file_exists(env, file_path):
     return os.path.exists(path)
 
 
-class Localizedimage(Image):
+def _handle_localized_file(self):
+    # generate correct file path
+    base_file_path = self.arguments[0]
+    env = self.state.document.settings.env
+
+    # try in specified language
+    file_path = _localized_file_path(base_file_path, env.config.language)
+
+    # fallback to english
+    if not _localized_file_exists(env, file_path):
+        file_path = _localized_file_path(base_file_path, 'en')
+
+    self.arguments[0] = file_path
+
+
+class LocalizedImage(Image):
     def run(self):
-        # generate correct file path
-        base_file_path = self.arguments[0]
-        env = self.state.document.settings.env
+        _handle_localized_file(self)
+        return super(LocalizedImage, self).run()
 
-        # try in specified language
-        file_path = _localized_file_path(base_file_path, env.config.language)
 
-        # fallback to english
-        if not _localized_file_exists(env, file_path):
-            file_path = _localized_file_path(base_file_path, 'en')
-
-        self.arguments[0] = file_path
-        return super(Localizedimage, self).run()
+class LocalizedFigure(Figure):
+    def run(self):
+        _handle_localized_file(self)
+        return super(LocalizedFigure, self).run()
 
 
 def setup(app):
-    app.add_directive('localizedimage', Localizedimage)
+    app.add_directive('localizedimage', LocalizedImage)
+    app.add_directive('localizedfigure', LocalizedFigure)
