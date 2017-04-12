@@ -109,27 +109,27 @@ The activity log dataset contains the following fields.
 
    * * Field name
      * Description
-   * * timestamp
+   * * ``timestamp``
      * Action timestamp
-   * * domain_id
+   * * ``domain_id``
      * Domain ID
-   * * user_id
+   * * ``user_id``
      * Identifier of the event owner
-   * * dataset_id
+   * * ``dataset_id``
      * Id of the dataset if the action is relative to a specific dataset
-   * * username
+   * * ``username``
      * Name of the user the action has an effect on
-   * * action
+   * * ``action``
      * Action name (one of **publish_dataset**, **add_dataset**, **edit_dataset**, **delete_dataset**)
-   * * group_id
+   * * ``group_id``
      * Identifier of the group concerned by the action
-   * * page_id
+   * * ``page_id``
      * Identifier of the page concerned by the action
-   * * diff
+   * * ``diff``
      * Difference introduced by the action (for example a new permission added to a user)
-   * * map_id
+   * * ``map_id``
      * Identifier of the map
-   * * reuse_title
+   * * ``reuse_title``
      * Title of the reuse
-   * * subdomain_id
+   * * ``subdomain_id``
      * Identifier of the subdomain where the action was made

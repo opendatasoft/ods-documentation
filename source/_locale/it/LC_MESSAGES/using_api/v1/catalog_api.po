@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-16 14:25+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Datawords Rel2 <datawords.rel.2@gmail.com>, 2017\n"
+"Last-Translator: Datawords_trad_1 <datawords.translator.it1@gmail.com>, 2017\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,19 +20,19 @@ msgstr ""
 
 #: ../../source/using_api/v1/catalog_api.rst:2
 msgid "Dataset Catalog APIs"
-msgstr ""
+msgstr "API del catalogo dei dataset"
 
 #: ../../source/using_api/v1/catalog_api.rst:5
 msgid "Dataset Lookup API"
-msgstr ""
+msgstr "API Dataset Lookup"
 
 #: ../../source/using_api/v1/catalog_api.rst:7
 msgid "This API makes it possible to fetch an individual dataset information."
-msgstr ""
+msgstr "Questa API permette di ottenere le informazioni di singoli dataset."
 
 #: ../../source/using_api/v1/catalog_api.rst:9
 msgid "**API endpoint**: ``/api/datasets/1.0/<DATASETID>``"
-msgstr ""
+msgstr "**Endpoint API**: ``/api/datasets/1.0/<DATASETID>``"
 
 #: ../../source/using_api/v1/catalog_api.rst:11
 #: ../../source/using_api/v1/catalog_api.rst:36
@@ -42,7 +42,7 @@ msgstr "**Query**"
 #: ../../source/using_api/v1/catalog_api.rst:16
 #: ../../source/using_api/v1/catalog_api.rst:41
 msgid "Parameter Name"
-msgstr "Nome parametroarameter Name"
+msgstr "Nome parametro"
 
 #: ../../source/using_api/v1/catalog_api.rst:17
 #: ../../source/using_api/v1/catalog_api.rst:42
@@ -58,6 +58,8 @@ msgid ""
 "Part of the URL path. Identifier of the dataset. Example: "
 "``http://<DOMAIN_ID>/api/dataset/1.0/arbresremarquablesparis2011?...``"
 msgstr ""
+"Parte del percorso dell'URL. Identificatore del dataset. Esempio: "
+"``http://<DOMAIN_ID>/api/dataset/1.0/arbresremarquablesparis2011?...``"
 
 #: ../../source/using_api/v1/catalog_api.rst:21
 #: ../../source/using_api/v1/catalog_api.rst:68
@@ -69,8 +71,8 @@ msgstr "``pretty_print``"
 msgid ""
 "If set to true (default is false), pretty prints JSON and JSONP outputs."
 msgstr ""
-"Se impostato su true (l'impostazione predefinita è false), pretty prints gli"
-" output JSON e JSONP."
+"Se impostato su true (l'impostazione predefinita è false), esegue il pretty "
+"print degli output JSON e JSONP."
 
 #: ../../source/using_api/v1/catalog_api.rst:23
 #: ../../source/using_api/v1/catalog_api.rst:70
@@ -90,11 +92,11 @@ msgstr "``callback``"
 #: ../../source/using_api/v1/catalog_api.rst:26
 #: ../../source/using_api/v1/catalog_api.rst:73
 msgid "JSONP callback. Example: ``format=jsonp&callback=myFunction``"
-msgstr "Callback JSONP. Esempio: ``format=jsonp&callback=myFunction``"
+msgstr "Callback JSONP. Esempio: ``format=jsonp&callback=miaFunzione``"
 
 #: ../../source/using_api/v1/catalog_api.rst:29
 msgid "Dataset Search API"
-msgstr ""
+msgstr "API Dataset Search"
 
 #: ../../source/using_api/v1/catalog_api.rst:31
 msgid ""
@@ -102,10 +104,13 @@ msgid ""
 " as well as multi-criteria field queries are made possible and results "
 "facetting is provided as well."
 msgstr ""
+"Questa API offre una funzionalità di ricerca nel catalogo dei dataset. È "
+"possibile eseguire ricerche full-text e query dei campi basate su più "
+"criteri, nonché ottenere i facet dei risultati."
 
 #: ../../source/using_api/v1/catalog_api.rst:34
 msgid "**API endpoint**: ``/api/datasets/1.0/search``"
-msgstr ""
+msgstr "**Endpoint API**: ``/api/datasets/1.0/search``"
 
 #: ../../source/using_api/v1/catalog_api.rst:43
 msgid "``q``"
@@ -116,8 +121,8 @@ msgid ""
 "The full-text query. This parameter can be left empty, in which case no "
 "full-text filtering on the result set occurs."
 msgstr ""
-"Query a full-text. Questo parametro può essere lasciato vuoto, in tal caso "
-"al set dei risultati non verrà applicato alcun filtro full-text."
+"Query full-text. Questo parametro può essere lasciato vuoto. In tal caso al "
+"set dei risultati non verrà applicato alcun filtro full-text."
 
 #: ../../source/using_api/v1/catalog_api.rst:46
 msgid "``facet``"
@@ -130,6 +135,10 @@ msgid ""
 "simultaneously activate several facets. By default, faceting is disabled. "
 "Example: ``facet=modified``"
 msgstr ""
+"Attiva i facet sul campo specificato (per un elenco dei facet disponibili "
+"nei dataset, vedere le Appendici). Questo parametro può essere utilizzato "
+"più volte per attivare contemporaneamente vari facet. Per impostazione "
+"predefinita, i facet sono disabilitati. Esempio: ``facet=modified``."
 
 #: ../../source/using_api/v1/catalog_api.rst:50
 msgid "``refine.<FACET>``"
@@ -142,6 +151,10 @@ msgid ""
 "for different facets. Examples: ``refine.modified=2012/02``, "
 "``refine.modified=2012/02&refine.publisher=Paris``"
 msgstr ""
+"Filtro basato sui facet. Questo parametro limita il set ai risultati "
+"corrispondenti a un valore facet. Può essere utilizzato più volte per lo "
+"stesso facet o per più facet. Esempi: ``refine.modified=2012/02``, "
+"``refine.modified=2012/02&refine.publisher=Paris``."
 
 #: ../../source/using_api/v1/catalog_api.rst:54
 msgid "``exclude.<FACET>``"
@@ -154,6 +167,10 @@ msgid ""
 " facet or for different facets. Examples: ``exclude.modified=2012/02``, "
 "``exclude.modified=2012/02&exclude.publisher=Paris``"
 msgstr ""
+"Filtro basato sui facet. Questo parametro esclude dal set i risultati "
+"corrispondenti a un valore facet. Può essere utilizzato più volte per lo "
+"stesso facet o per più facet. Esempi: ``exclude.modified=2012/02``, "
+"``exclude.modified=2012/02&exclude.publisher=Paris``."
 
 #: ../../source/using_api/v1/catalog_api.rst:58
 msgid "``sort``"
@@ -167,6 +184,12 @@ msgid ""
 "value to the smallest value). A minus sign ('-') may be used to perform an "
 "ascending sort. Examples: ``sort=issued``, ``sort=-issued``"
 msgstr ""
+"Ordina i risultati in base al campo specificato. I campi ordinabili per "
+"l'API di ricerca del dataset sono: ``modified``, ``issued``, ``created`` e "
+"``records_count``. Per impostazione predefinita, l'ordine è decrescente, "
+"cioè dal valore più alto al valore più basso. Aggiungendo un segno meno "
+"('-') è possibile ottenere un ordine crescente. Esempi: ``sort=issued``, "
+"``sort=-issued``."
 
 #: ../../source/using_api/v1/catalog_api.rst:63
 msgid "``rows``"
@@ -178,7 +201,7 @@ msgid ""
 "returned is 1000. By default, 10 results are returned."
 msgstr ""
 "Numero di risultati da restituire in una singola chiamata. Il numero massimo"
-" di righe restituito è 1000. Per impostazione predefinita, vengono "
+" di righe restituito è 1.000. Per impostazione predefinita, vengono "
 "restituiti 10 risultati."
 
 #: ../../source/using_api/v1/catalog_api.rst:66
@@ -197,3 +220,5 @@ msgstr ""
 msgid ""
 "Format of the response output. One of JSON (default), JSONP, CSV and RSS."
 msgstr ""
+"Formato dell'output di risposta. Può essere JSON (predefinito), JSONP, CSV e"
+" RSS."

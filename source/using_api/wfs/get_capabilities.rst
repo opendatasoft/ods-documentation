@@ -48,13 +48,13 @@ Examples
 --------
 Here is an example of a ``GetCapabilities`` operation with the optional ``Sections`` parameter, using a ``GET`` HTTP method :
 
-.. code-block:: http
+.. code-block:: text
 
     GET http://public.opendatasoft.com/api/wfs?service=WFS&request=GetCapabilities&sections=OperationsMetadata,FeatureTypeList
 
 And the same request using a ``POST`` HTTP method :
 
-.. code-block:: http
+.. code-block:: text
 
     POST http://public.opendatasoft.com/api/wfs
 

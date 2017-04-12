@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-16 14:25+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2017\n"
+"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -167,8 +167,8 @@ msgid "Field Name"
 msgstr "Nombre de campo"
 
 #: ../../source/using_api/v1/query_language_and_geo_filtering.rst:57
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:119
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:162
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:114
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:157
 msgid "Description"
 msgstr "Descripción"
 
@@ -262,13 +262,12 @@ msgstr ""
 "de public.opendatasoft.com que tengan ``Paris`` en el título o la "
 "descripción y que contengan como mínimo 50.000 registros:"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:82
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:83
 msgid ""
-"``(title:paris OR decription:paris) AND records_count >= 50 000`` "
-"http://public.opendatasoft.com/api/datasets/1.0/search?q=(title:paris%20OR%20decription:paris)%20AND%20records_count%20>=%2050000"
+"For example this query: ``(title:paris OR decription:paris) AND "
+"records_count >= 50 000`` `returns this on the platform "
+"<http://public.opendatasoft.com/api/datasets/1.0/search?q=(title:paris%20OR%20decription:paris)%20AND%20records_count%20%3E%3D%2050000>`_"
 msgstr ""
-"``(title:paris OR decription:paris) AND records_count >= 50 000`` "
-"http://public.opendatasoft.com/api/datasets/1.0/search?q=(title:paris%20OR%20decription:paris)%20AND%20records_count%20>=%2050000"
 
 #: ../../source/using_api/v1/query_language_and_geo_filtering.rst:85
 msgid ""
@@ -283,83 +282,61 @@ msgstr ""
 
 #: ../../source/using_api/v1/query_language_and_geo_filtering.rst:88
 msgid ""
-"For example one can search in the dataset containing the movies shooting "
-"spots in Paris in the last decade any film directed by Woody Allen: "
-"`<http://public.opendatasoft.com/api/records/1.0/search?dataset=tournagesdefilmsparis2011&q=realisateur%3A%22woody+allen%22>`_."
-msgstr ""
-"Por ejemplo, se puede llevar a cabo una búsqueda en el conjunto de datos que"
-" incluye los escenarios de rodajes cinematográficos en París durante el "
-"último decenio las películas dirigidas por Woody Allen: "
-"`<http://public.opendatasoft.com/api/records/1.0/search?dataset=tournagesdefilmsparis2011&q=realisateur%3A%22woody+allen%22>`_."
-
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:92
-msgid ""
 "Multiple operator fields can be used between the field name and the query:"
 msgstr ""
 "Se pueden emplear varios campos de operadores entre el nombre de campo y la "
 "consulta:"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:94
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:90
 msgid ""
-"\":\", \"=\", \"==\": return results whose field exactly matches the given "
+"``:``, ``-``, ``==``: Return results whose field exactly matches the given "
 "value (granted the fields are of text or numeric type)"
 msgstr ""
-"\":\", \"=\", \"==\": Devuelven los resultados cuyo campo coincide "
-"exactamente con el valor especificado (siempre que el campo sea de tipo "
-"texto o numérico)."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:96
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:92
 msgid ""
-"\">\", \"<\", \">=\", \"<=\": Return results whose field values are larger, "
+"``>``, ``<``, ``>=``, ``<=``: Return results whose field values are larger, "
 "smaller, larger or equal, smaller or equal to the given value (granted the "
 "field is of date or numeric type)."
 msgstr ""
-"\">\", \"<\", \">=\", \"<=\": Devuelven los resultados cuyos valores de "
-"campo son superiores, inferiores, superiores o iguales, o inferiores o "
-"iguales que el valor especificado (siempre que los campos sean de tipo fecha"
-" o numérico)."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:98
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:93
 msgid ""
-"[start_date TO end_date]: Queries Records whose date is between start_date "
-"and and_date."
+"``[start_date TO end_date]``: Queries Records whose date is between "
+"``start_date`` and ``end_date``."
 msgstr ""
-"[fecha_inicio TO fecha_finalización]: Consulta los registros cuya fecha se "
-"encuentra entre fecha_inicio y fecha_finalización."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:100
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:95
 msgid ""
-"Date formats can be specified in different formats: simple (YYYY[[/mm]/dd]) "
-"or ISO 8601 (YYYY-mm-DDTHH:MM:SS)"
+"Date formats can be specified in different formats: simple "
+"(``YYYY[[/mm]/dd]``) or ISO 8601 (``YYYY-mm-DDTHH:MM:SS``)"
 msgstr ""
-"Las fechas se pueden especificar en diversos formatos: simple "
-"(AAAA[[/mm]/dd]) o ISO 8601 (AAAA-mm-DDTHH:MM:SS)."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:102
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:97
 msgid "Examples:"
 msgstr "Ejemplos:"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:104
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:99
 msgid "``film_date >= 2002``"
 msgstr "``film_date >= 2002``"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:105
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:100
 msgid "``film_date >= 2013/02/11``"
 msgstr "``film_date >= 2013/02/11``"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:106
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:101
 msgid "``film_date: [1950 TO 2000]``"
 msgstr "``film_date: [1950 TO 2000]``"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:107
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:102
 msgid "``film_box_office > 10000 AND film_date < 1965``"
 msgstr "``film_box_office > 10000 AND film_date < 1965``"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:111
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:106
 msgid "Query language functions"
 msgstr "Funciones del lenguaje de consulta"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:113
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:108
 msgid ""
 "Advanced functions can be used in the query language. Function names need to"
 " be prefixed with a sharp (``#``) sign."
@@ -367,15 +344,15 @@ msgstr ""
 "Se pueden usar funciones avanzadas en el lenguaje de consulta. Debe "
 "anteponerse como prefijo a los nombres de función un signo ``#``."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:118
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:113
 msgid "Function name"
 msgstr "Nombre de función"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:120
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:115
 msgid "now"
 msgstr "now"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:121
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:116
 msgid ""
 "Returns the current date. This function may be called as a query value for a"
 " field. When called without an argument, it will evaluate to the current "
@@ -390,11 +367,11 @@ msgstr ""
 "actual. Esta función también puede aceptar parámetros; consulte más adelante"
 " los parámetros de la función ``#now`` disponibles."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:125
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:120
 msgid "null"
 msgstr "null"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:126
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:121
 msgid ""
 "This function may be called specifying a field name as a parameter. It "
 "returns the hits for which no value is defined for the specified field. For "
@@ -404,11 +381,11 @@ msgstr ""
 "parámetro. Devuelve las coincidencias para las cuales no se ha definido "
 "ningún valor para el campo especificado. Por ejemplo ``#null(birthdate)``."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:128
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:123
 msgid "exact`"
 msgstr "exact"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:129
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:124
 msgid ""
 "This function makes it possible to search for records with a field exactly "
 "matching a given value. For example, ``#exact(firstname, \"Marie\")`` will "
@@ -420,11 +397,11 @@ msgstr ""
 "devuelve los registros cuyo campo ``firstname`` contiene exactamente "
 "\"Marie\" y nada más."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:133
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:128
 msgid "**Available parameters for the ``#now`` function**:Ò"
 msgstr "**Parámetros disponibles para la función ``#now``**:"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:135
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:130
 msgid ""
 "years, months, weeks, days, hours, minutes, seconds, microseconds: These "
 "parameters add time to the current date."
@@ -432,7 +409,7 @@ msgstr ""
 "years, months, weeks, days, hours, minutes, seconds, microseconds: Estos "
 "parámetros añaden tiempo a la fecha actual."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:137
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:132
 msgid ""
 "For example: ``#now(years=-1, hours=-1)`` returns the current date minus a "
 "year and an hour"
@@ -440,7 +417,7 @@ msgstr ""
 "Por ejemplo: ``#now(years=-1, hours=-1)`` devuelve la fecha actual menos un "
 "año y una hora."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:139
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:134
 msgid ""
 "year, month, day, hour, minute, second, microsecond: can also be used to "
 "specify an absolute date."
@@ -448,7 +425,7 @@ msgstr ""
 "year, month, day, hour, minute, second, microsecond: También se pueden "
 "utilizar para especificar una fecha absoluta."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:141
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:136
 msgid ""
 "For example: ``#now(year=2001)`` returns the current time, day and month for"
 " year 2001"
@@ -456,7 +433,7 @@ msgstr ""
 "Por ejemplo: ``#now(year=2001)`` devuelve la hora, el día y el mes actuales "
 "para el año 2001."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:143
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:138
 msgid ""
 "weekday: Specifies a day of the week. This parameter accepts either an "
 "integer between 0 and 6 (where 0 is Monday and 6 is Sunday) or the first two"
@@ -468,19 +445,19 @@ msgstr ""
 "letras del día (en inglés) seguidas del cardinal de la primera semana en que"
 " se debe iniciar la consulta."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:147
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:142
 msgid "``#now(weeks=-2, weekday=1)`` returns the Tuesday before last."
 msgstr "``#now(weeks=-2, weekday=1)`` devuelve el martes anterior al último."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:149
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:144
 msgid "``#now(weekday=MO(2))`` returns Monday after next."
 msgstr "``#now(weekday=MO(2))`` devuelve el lunes posterior al siguiente."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:152
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:147
 msgid "Geo Filtering"
 msgstr "Filtros geográficos"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:154
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:149
 msgid ""
 "Records search APIs accept geofilter parameters to filter in records which "
 "are located in a specific geographical area."
@@ -489,19 +466,19 @@ msgstr ""
 "para filtrar los registros que se encuentran en un área geográfica "
 "determinada."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:156
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:151
 msgid "The following parameters may be used."
 msgstr "Se pueden emplear los parámetros siguientes."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:161
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:156
 msgid "Parameter Name"
 msgstr "Nombre de parámetro"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:163
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:158
 msgid "geofilter.distance"
 msgstr "geofilter.distance"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:164
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:159
 msgid ""
 "Limits the result set to a geographical area defined by a circle "
 "(coordinates of the center of the circle expressed in WGS84 and distance "
@@ -513,11 +490,11 @@ msgstr ""
 "expresada en metros): latitud,longitud,distancia: "
 "``geofilter.distance=48.8520930694,2.34738897685,1000``"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:167
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:162
 msgid "geofilter.polygon"
 msgstr "geofilter.polygon"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:168
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:163
 msgid ""
 "Limits the result set to a geographical area defined by a polygon "
 "(coordinates of the points expressed in WGS84 as in "

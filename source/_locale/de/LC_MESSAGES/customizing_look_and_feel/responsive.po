@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-16 14:25+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: traducteur_DE2 <datawords.translator.de2@gmail.com>, 2017\n"
+"Last-Translator: Admin OpenDataSoft <admin@opendatasoft.com>, 2017\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../source/customizing_look_and_feel/responsive.rst:2
 msgid "Designing a responsive portal"
-msgstr "Entwicklung eines responsiven Portals"
+msgstr "Design eines responsiven Portals"
 
 #: ../../source/customizing_look_and_feel/responsive.rst:5
 msgid "A responsive portal header"
@@ -34,6 +34,12 @@ msgid ""
 "<https://www.opendatasoft.com>`_). If your domain is a freemium domain and "
 "would like to get this theme feature, `email us! <sales@opendatasoft.com>`_"
 msgstr ""
+"Die Themenanpassung ist nicht für Freemium-Domains verfügbar (erstellt mit "
+"Hilfe der Seite 'Kostenlos ausprobieren <https://www.opendatasoft.com"
+"/discover-opendatasoft-demo/>`_ auf der OpenDataSoft-Website "
+"<https://www.opendatasoft.com>`_). Falls Ihre Domain eine Freemium-Domain "
+"ist und Sie diese Themenfunktion haben möchten, mailen Sie uns einfach! "
+"<sales@opendatasoft.com>`_"
 
 #: ../../source/customizing_look_and_feel/responsive.rst:15
 msgid ""
@@ -42,12 +48,18 @@ msgid ""
 "written and explained. You'll need working knowledge of both these "
 "technologies to understand the content of this page."
 msgstr ""
+"Diese Seite untersucht die Anpassung der Plattform responsiven "
+"Menürichtlinie. Hierfür muss recht viel HTML- und CSS-Code geschrieben und "
+"erklärt werden. Sie werden für diese beiden Technologien Fachwissen "
+"benötigen, um den Inhalt dieser Seite verstehen zu können."
 
 #: ../../source/customizing_look_and_feel/responsive.rst:19
 msgid ""
 "For basic customization needs, check out :doc:`customizing your portal's "
 "theme <theme>`."
 msgstr ""
+"Für eine Basisanpassung lesen Sie bitte das Dokument :doc:`Anpassen Ihres "
+"Portalthemas <theme>`."
 
 #: ../../source/customizing_look_and_feel/responsive.rst:22
 msgid ""
@@ -55,6 +67,10 @@ msgid ""
 "on small screens and replaced by a single toggle button, which usually "
 "features the famous *hamburger icon* |hamburger|."
 msgstr ""
+"Ein sehr gängiges Muster im Grafikdesign ist das Verbergen des "
+"Kopfzeilenmenüs auf kleinen Bildschirmen und das Ersetzen durch eine "
+"einfache Schaltfläche, auf dem gewöhnlich das berühmte *Hamburger-Icon* "
+"|hamburger| zu sehen ist."
 
 #: ../../source/customizing_look_and_feel/responsive.rst:27
 msgid ""
@@ -62,18 +78,23 @@ msgid ""
 "This behaviour can be seen on `OpenDataSoft's central data repository "
 "<https://data.opendatasoft.com/page/home/>`_ and on all new portals."
 msgstr ""
+"Durch Klicken auf diese Schaltfläche wird eine Schublade geöffnet bzw. "
+"geschlossen, die sämtliche Menüpunkte enthält. Dieses Verhalten kann beim "
+"zentralen Datenspeicher von OpenDataSoft "
+"<https://data.opendatasoft.com/page/home/>`_ sowie bei allen neuen Portalen "
+"beobachtet werden."
 
 #: ../../source/customizing_look_and_feel/responsive.rst:33
 msgid "Closed drawer"
-msgstr ""
+msgstr "Geschlossene Schublade"
 
 #: ../../source/customizing_look_and_feel/responsive.rst:38
 msgid "Open drawer"
-msgstr ""
+msgstr "Geöffnete Schublade"
 
 #: ../../source/customizing_look_and_feel/responsive.rst:41
 msgid "Implementation"
-msgstr ""
+msgstr "Implementierung"
 
 #: ../../source/customizing_look_and_feel/responsive.rst:43
 msgid ""
@@ -82,16 +103,23 @@ msgid ""
 "facilitate this work, OpenDataSoft's provides a handy directive called "
 "``ods-responsive-menu`` that you should use within the header as follow."
 msgstr ""
+"Das Implementieren dieses Verhaltens bedeutet gewöhnlich ein intensives "
+"Zurückgreifen auf \"Media Queries\", d. h. CSS-Regeln werden nur für eine "
+"bestimmte Bildschirmbreite angewandt. Um diese Arbeit zu erleichtern, bietet"
+" OpenDataSoft eine praktische Richtlinie namens ``ods-responsive-menu``, die"
+" Sie in der Kopfzeile wie folgt anwenden sollten."
 
 #: ../../source/customizing_look_and_feel/responsive.rst:59
 msgid "This directive is actually an ensemble of 3 directives:"
-msgstr ""
+msgstr "Diese Richtlinie besteht aus insgesamt 3 Richtlinien:"
 
 #: ../../source/customizing_look_and_feel/responsive.rst:61
 msgid ""
 "``ods-responsive-menu`` (attribute directive, used as an attribute of "
 "another html tag)"
 msgstr ""
+"``ods-responsive-menu`` (Attribut-Richtlinie, als Attribut eines anderen "
+"HTML-Tags verwendet)"
 
 #: ../../source/customizing_look_and_feel/responsive.rst:63
 msgid ""
@@ -99,44 +127,56 @@ msgid ""
 "px) under which the drawer should appear and over which things should be "
 "displayed normally."
 msgstr ""
+"Zur Spezifizierung (mittels des \"Breakpoint\"-Attributs) der "
+"Bildschirmbreite (in px), unter der die Schublade erscheinen soll und über "
+"der die Dinge normal angezeigt werden."
 
 #: ../../source/customizing_look_and_feel/responsive.rst:66
 msgid ""
 "``ods-responsive-menu-placeholder`` (element directive used as an html tag)"
 msgstr ""
+"``ods-responsive-menu-placeholder`` (Element-Richtlinie, als HTML-Tag "
+"verwendet)"
 
 #: ../../source/customizing_look_and_feel/responsive.rst:68
 msgid ""
 "Wraps the content that will be invisible unless we are below the breakpoint."
 msgstr ""
+"Bricht den Content um. Dieser bleibt unsichtbar, solange wir unterhalb des "
+"Breakpoints sind."
 
 #: ../../source/customizing_look_and_feel/responsive.rst:70
 msgid "``ods-responsive-menu-collapsible`` (element directive)"
-msgstr ""
+msgstr "``ods-responsive-menu-collapsible`` (Element-Richtlinie)"
 
 #: ../../source/customizing_look_and_feel/responsive.rst:72
 msgid ""
 "Wraps the content that will be displayed normally over the breakpoint but "
 "collapsed within the drawer below."
 msgstr ""
+"Bricht den Content um, welcher oberhalb des Breakpoints normal angezeigt "
+"wird, in der Schublade unten jedoch nur minimiert."
 
 #: ../../source/customizing_look_and_feel/responsive.rst:75
 msgid "Writing styles for the collapsed header content"
-msgstr ""
+msgstr "Schriftarten für den minimiert angezeigten Kopfzeilen-Content"
 
 #: ../../source/customizing_look_and_feel/responsive.rst:77
 msgid ""
 "Going from an horizontal layout to a vertical layouts entails quite a few "
 "graphical changes, as demonstrated by the platform's default header."
 msgstr ""
+"Der Wechsel von einem waagerechten zu einem senkrechten Layout führt zu "
+"recht vielen grafischen Veränderungen, wie am Beispiel der Plattform-"
+"Standardkopfzeile gezeigt."
 
 #: ../../source/customizing_look_and_feel/responsive.rst:83
 msgid "Desktop header."
-msgstr ""
+msgstr "Desktop-Kopfzeile"
 
 #: ../../source/customizing_look_and_feel/responsive.rst:88
 msgid "Mobile header."
-msgstr ""
+msgstr "Mobile Kopfzeile."
 
 #: ../../source/customizing_look_and_feel/responsive.rst:90
 msgid ""
@@ -146,10 +186,15 @@ msgid ""
 " breakpoint. This enables you to clearly separate the style for the two "
 "layout-styles (horizontal and vertical)."
 msgstr ""
+"Um die Schriftart entsprechend anzupassen, bricht das Element ``ods-"
+"responsive-menu-collapsible`` den Content mit ``.ods-responsive-menu-"
+"collapsible--collapsed`` um, wenn (und nur wenn) der Bildschirm kleiner als "
+"der Breakpoint ist. Damit können Sie die Schriftart für die zwei Layout-"
+"Styles (Quer- und Hochformat) klar trennen."
 
 #: ../../source/customizing_look_and_feel/responsive.rst:105
 msgid "Writing styles for the drawer"
-msgstr ""
+msgstr "Schriftarten für die Schublade"
 
 #: ../../source/customizing_look_and_feel/responsive.rst:107
 msgid ""
@@ -157,6 +202,10 @@ msgid ""
 "know the name of the classes applied to elements created by the 3 "
 "directives. The code sample we saw earlier will render as:"
 msgstr ""
+"Wenn Sie das Gesamtbild der Schublade anpassen möchten, müssen Sie den Namen"
+" der Klassen kennen, die auf die Elemente angewendet werden, welche von den "
+"3 Richtlinien erstellt wurden. Das an früherer Stelle besprochene Code-"
+"Muster ergibt folgendes Rendering:"
 
 #: ../../source/customizing_look_and_feel/responsive.rst:132
 msgid ""
@@ -166,10 +215,15 @@ msgid ""
 "menu-collapsible--expanded`` to mark whenever the user wants the menu to be "
 "displayed."
 msgstr ""
+"An seinem Anfang bekommt das Element ``.ods-responsive-menu-collapsible``  "
+"die Klasse ``.ods-responsive-menu-collapsible--collapsed``, sobald die "
+"Bildschirmbreite unterhalb des Breakpoints fällt, und die Klasse ``.ods-"
+"responsive-menu-collapsible--expanded``, um zu kennzeichnen, wenn der Nutzer"
+" die Anzeige des Menüs wünscht."
 
 #: ../../source/customizing_look_and_feel/responsive.rst:137
 msgid "Responsive page layouts"
-msgstr ""
+msgstr "Responsive Seiten-Layouts"
 
 #: ../../source/customizing_look_and_feel/responsive.rst:139
 msgid ""
@@ -179,6 +233,12 @@ msgid ""
 "common design tool as been adapted to webdesign first using tables and soon "
 "thereafter using standard ``div`` elements."
 msgstr ""
+"Wie viele Websites nutzt auch das Portal OpenDataSoft eine Rasteranordnung, "
+"um Elemente zu positionieren. Unter einem Raster versteht man die "
+"Verknüpfung von Zeilen und Spalten mit vordefinierter Breite, die zum "
+"Positionieren von Elementen innerhalb eines Layouts verwendet wird. Dieses "
+"sehr gängige Entwicklungstool wurde für das Webdesign angepasst, indem es "
+"zunächst Tabellen nutzte und bald darauf Standard-\"div\"-Elemente."
 
 #: ../../source/customizing_look_and_feel/responsive.rst:143
 msgid ""
@@ -187,16 +247,23 @@ msgid ""
 " framework <http://getbootstrap.com/css/#grid>`_. You can see the list of "
 "`Available classes`_ below."
 msgstr ""
+"Falls Sie bereits mit dem gesamten Konzept der Rasteranordnungen vertraut "
+"sind, genügt an dieser Stelle der Hinweis, dass das Rastersystem von "
+"OpenDataSoft hauptsächlich auf dem `Bootstrap CSS Framework "
+"<http://getbootstrap.com/css/#grid>`_ basiert. Im Anschluss finden Sie die "
+"Liste der `Verfügbare Klassen`_."
 
 #: ../../source/customizing_look_and_feel/responsive.rst:148
 msgid "Concepts and terminology"
-msgstr ""
+msgstr "Konzepte und Terminologie"
 
 #: ../../source/customizing_look_and_feel/responsive.rst:150
 msgid ""
 "OpenDataSoft grid layout is a 12-column layout, which means that grid cells "
 "can span 1 to 12 columns at once."
 msgstr ""
+"Die OpenDataSoft-Rasteranordnung besteht aus einem 12-Spalten-Layout, d. h. "
+"die Rasterzellen können 1 bis 12 Spalten auf einmal umfassen."
 
 #: ../../source/customizing_look_and_feel/responsive.rst:152
 msgid ""
@@ -206,16 +273,24 @@ msgid ""
 "are defined by the number of columns they span and are nested within rows, "
 "which themselves are nested within containers."
 msgstr ""
+"Eine Rasteranordnung besteht aus 3 Element-Typen: Zellenkästen, Zeilen und "
+"Spalten. Die Zellenkästen bestimmen die Gesamtbreite des Layouts, die Zeilen"
+" ordnen die Zellen und die Spalten stellen ein Zwölftel der "
+"Zellenkastenbreite dar. Somit werden die Zellen über die Spaltenanzahl "
+"definiert, die sie umfassen, und sind in Zeilen verschachtelt, die wiederum "
+"in Zellenkästen verschachtelt sind."
 
 #: ../../source/customizing_look_and_feel/responsive.rst:156
 msgid "Translated into html code:"
-msgstr ""
+msgstr "In HTML-Code übersetzt:"
 
 #: ../../source/customizing_look_and_feel/responsive.rst:189
 msgid ""
 "Will render as (colors and labels added via CSS specifically for these "
 "examples):"
 msgstr ""
+"Folgendes Rendering (Farben und Beschriftungen speziell für diese Beispiele "
+"mit CSS hinzugefügt):"
 
 #: ../../source/customizing_look_and_feel/responsive.rst:193
 msgid ""
@@ -223,18 +298,22 @@ msgid ""
 " there will be remaining white space at the end. In the case they cover more"
 " than 12 columns, the cells would wrap and create a new line within the row."
 msgstr ""
+"Selbstverständlich können Sie auch Zellen definieren, die weniger als 12 "
+"Spalten abdecken. In diesem Fall bleibt Leerraum am Ende übrig. Wenn die "
+"Zellen mehr als 12 Spalten abdecken, werden sie umgebrochen und es wird eine"
+" neue Zeile in der Spalte erstellt. "
 
 #: ../../source/customizing_look_and_feel/responsive.rst:196
 msgid "Hence, this:"
-msgstr ""
+msgstr "Somit entsteht "
 
 #: ../../source/customizing_look_and_feel/responsive.rst:213
 msgid "Will render as this:"
-msgstr ""
+msgstr "folgendes Rendering:"
 
 #: ../../source/customizing_look_and_feel/responsive.rst:218
 msgid "Responsive grid layouts"
-msgstr ""
+msgstr "Responsive Rasteranordnungen"
 
 #: ../../source/customizing_look_and_feel/responsive.rst:220
 msgid ""
@@ -243,6 +322,11 @@ msgid ""
 " to the width of the viewport of the device, that is the space available for"
 " rendering, that is the width of the browser's window."
 msgstr ""
+"Im Webdesign bedeutet ein \"responsives Layout\", dass sich das Layout der "
+"Größe des Bildschirmes proportional anpassen kann, auf dem es angezeigt "
+"wird. Genauer genommen passt es sich der Breite des Anzeigebereichs des "
+"jeweiligen Geräts an. Der Anzeigebereich ist der für das Rendering zur "
+"Verfügung stehende Bereich, d. h. die Breite des Browserfensters."
 
 #: ../../source/customizing_look_and_feel/responsive.rst:224
 msgid ""
@@ -253,6 +337,12 @@ msgid ""
 "*small*, *medium* and *large* (also refered to as *mobile*, *tablet*, "
 "*desktop* and *large desktop*)."
 msgstr ""
+"Für responsive Layouts werden *Breakpoints* definiert, d. h. Breiten in "
+"Pixel, die Grenzen festlegen, ab denen das Layout sich ändert. Auf der "
+"OpenDataSoft-Plattform sind 3 Breakpoints (mit 4 definierten Modi) "
+"definiert: :ref:`customized through the theme <theme__layout-options>`. "
+"Diese Modi lauten *extra-klein*, *klein*, *mittel* und *groß* (entsprechend "
+"*Mobiles Endegerät*, Tablet*, *Desktop* und *großer Desktop*). "
 
 #: ../../source/customizing_look_and_feel/responsive.rst:229
 msgid ""
@@ -263,6 +353,12 @@ msgid ""
 "available. We'd like instead to have the layout reorganize itself when it "
 "changes mode."
 msgstr ""
+"Eine Rasteranordnung ist für eine bestimmte Bildschirmbreite ausgelegt, sie "
+"kann für andere Bildschirmformate jedoch schnell unpassend werden. So kann "
+"etwa ein genau detailliertes 12-Spalten-Layout auf einem kleinen Bildschirm "
+"sehr unübersichtlich wirken, da der gesamte Content in sehr kleine Zellen "
+"hineingezwängt wird, die jeweils ein Zwölftel des geringen zur Verfügung "
+"stehenden Raumes einnehmen."
 
 #: ../../source/customizing_look_and_feel/responsive.rst:234
 msgid ""
@@ -273,12 +369,21 @@ msgid ""
 "columns. We can however add classes specifying how we'd like the layout to "
 "behave in other modes. For example:"
 msgstr ""
+"Ihnen ist eventuell bei den oben genannten Codeschnipseln aufgefallen, dass "
+"in den Klassennamen für die Zellen ``<div class=\"col-xs-6\">col-6</div>`` "
+"ein kleines \"xs\" vor der Anzahl der Spalten steht, die die Zelle umfassen "
+"kann. In diesem Beispiel handelt es sich um eine Information an den Browser,"
+" dass die Zelle im *extra-kleinen* Modus 6 der 12 ganz kleinen Spalten "
+"umfassen kann. Wir können jedoch Klassen hinzufügen, die spezifizieren, wie "
+"sich das Layout in anderen Modi verhält. Ein Beispiel:"
 
 #: ../../source/customizing_look_and_feel/responsive.rst:243
 msgid ""
 "This way the cell will span 6 columns in extra-small mode, 4 in small mode, "
 "2 in medium mode and only 1 in large mode."
 msgstr ""
+"Hier umfasst die Zelle 6 Spalten im extra-kleinen Modus, 4 im kleinen Modus,"
+" 2 im mittleren Modus und nur 1 im großen Modus."
 
 #: ../../source/customizing_look_and_feel/responsive.rst:245
 msgid ""
@@ -290,7 +395,14 @@ msgid ""
 "lg-3\"></div>`` is equivalent to ``<div class=\"col-xs-12 col-sm-6 col-md-6 "
 "col-lg-3\"></div>``."
 msgstr ""
+"Dabei müssen Sie jedoch nicht alle 4 Stufen angeben. Die Klassen stellen "
+"sich automatisch auf die Standardbreite 12 Spalten unterhalb ihres eigenen "
+"Anzeigemodus ein und behalten ihre spezifisch eingestellte Spaltenbreite "
+"breiteren Anzeigemodi vor. ``<div class=\"col-md-4\"></div>`` entspricht "
+"also ``<div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\"></div>`` und "
+"``<div class=\"col-sm-6 col-lg-3\"></div>`` entspricht ``<div class=\"col-"
+"xs-12 col-sm-6 col-md-6 col-lg-3\"></div>``."
 
 #: ../../source/customizing_look_and_feel/responsive.rst:252
 msgid "Available classes"
-msgstr ""
+msgstr "Verfügbare Klassen"

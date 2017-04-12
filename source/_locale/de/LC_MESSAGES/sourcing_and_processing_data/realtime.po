@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-16 14:25+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2017\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:2
 msgid "Keeping data up to date"
-msgstr ""
+msgstr "Daten auf dem neuesten Stand halten"
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:4
 msgid ""
@@ -28,6 +29,11 @@ msgid ""
 "and live datasets (which need to be regularly updated). Two different "
 "mechanisms are made available to handle datasets refresh."
 msgstr ""
+"Mit der OpenDataSoft-Plattform ist es möglich, im selben Datenkatalog ganze "
+"statische Datensätze (die nur einmal veröffentlicht werden müssen) sowie "
+"Live-Datensätze (die regelmäßig aktualisiert werden müssen) zu bearbeiten. "
+"Es stehen zwei verschiedene Mechanismen zur Bearbeitung von "
+"Datensatzaktualisierungen zur Verfügung."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:6
 msgid ""
@@ -35,6 +41,10 @@ msgid ""
 "being automatically republished at fixed intervals. This mode is most useful"
 " for datasets with a remote resource which is regularly updated."
 msgstr ""
+"Der erste ist der **Zeitplan**. Er ermöglicht eine automatische "
+"Wiederveröffentlichung von Datensätzen in festgelegten Abständen. Dieser "
+"Modus ist sehr nützlich bei Datensätzen aus einer Remote-Quelle, die "
+"regelmäßig aktualisiert wird."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:8
 msgid ""
@@ -43,10 +53,17 @@ msgid ""
 " directly by the system that produces the data points, such as a computer "
 "program sending event metrics or a set of sensors sending their readings."
 msgstr ""
+"Der zweite Mechanismus besteht darin, Daten mit einem speziellen API-"
+"Endpunkt auf die OpenDataSoft-Plattform zu pushen. Dieser Modus ist sehr "
+"nützlich, wenn die Daten direkt vom System gesendet werden können, das die "
+"Datenpunkte generiert, wie etwa ein Computerprogramm, das eine "
+"Ereignismetrik sendet bzw. ein Sensorensatz, der seine Daten sendet."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:11
 msgid "Using scheduling to keep a dataset up to date"
 msgstr ""
+"Verwenden des Zeitplan-Modus, um einen Datensatz auf dem neuesten Stand zu "
+"halten"
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:13
 msgid ""
@@ -54,10 +71,13 @@ msgid ""
 "development, only a remote source and some settings in the dataset "
 "configuration."
 msgstr ""
+"Diese Lösung ist am einfachsten zu implementieren. Sie erfordert keinerlei "
+"Entwicklung, sondern lediglich eine Remote-Quelle und ein paar Einstellungen"
+" in der Datensatzkonfiguration."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:16
 msgid "Specifying a resource"
-msgstr ""
+msgstr "Festlegen einer Ressource"
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:21
 msgid ""
@@ -65,10 +85,14 @@ msgid ""
 "one, specified as a URL (http or ftp work well) and not an uploaded file. To"
 " add such a resource, simply paste a URL in the URL input."
 msgstr ""
+"Um einen Datensatz planen zu können, muss ihre hinterlegte Ressource remote "
+"und als URL angegeben sein (http oder ftp funktionieren gut), sie darf "
+"jedoch keine hochgeladene Datei sein. Zum Hinzufügen einer solchen Ressource"
+" einfach eine URL in die URL-Eingabe hineinkopieren ."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:24
 msgid "Specifying scheduling interval"
-msgstr ""
+msgstr "Festlegen des Zeitplanintervalls"
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:30
 msgid ""
@@ -79,10 +103,17 @@ msgid ""
 "instance, if it fits your needs, you could decide to schedule a dataset to "
 "be reprocessed every Monday morning and every Wednesday afternoon."
 msgstr ""
+"Sobald ein Datensatz mit einer Remote-Ressource gespeichert wurde, wird der "
+"Zeitplan-Tab aktiviert. Das kleinste Intervall ist die Minute, es ist jedoch"
+" nicht standardmäßig aktiviert. Bitte kontaktieren Sie den OpenDataSoft-"
+"Support, falls Sie eine Zeitplanung auf Minutenebene für Ihre Domain "
+"benötigen. Sie können beliebig viele Zeitpläne hinzufügen.  Sie können etwa "
+"bei Bedarf einen Datensatz so planen, dass er jeden Montagmorgen und jeden "
+"Mittwochnachmittag verarbeitet wird."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:33
 msgid "Pushing real time data"
-msgstr ""
+msgstr "Pushen von Echtzeitdaten"
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:35
 msgid ""
@@ -95,22 +126,38 @@ msgid ""
 "dataset is fed by an application through a push API and records are "
 "processed one by one as soon as they are received."
 msgstr ""
+"Bei manchen Datentypen kann es sinnvoll sein, die Daten zu pushen, anstatt "
+"nach dem eher traditionellen Modell vorzugehen, nach welchem die Daten von "
+"der Plattform aus einer Ressource gepullt werden. Um diese Anforderung zu "
+"erfüllen, bietet die OpenDataSoft-Plattform eine Echtzeit-Push-API. Sie "
+"besitzt jedoch nicht die Fähigkeit der Zeitplanung einer "
+"Datensatzverarbeitung. Bei der Zeitplanung pullt der Datensatz die Ressource"
+" in bestimmten Zeitabständen und verarbeitet die Daten, die diese enthält, "
+"wohingegen bei der Push-API der Datensatz von einer Anwendung durch eine "
+"Push-API eingespeist wird und die Einträge nacheinander verarbeitet werden, "
+"sobald sie empfangen werden."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:38
 msgid ""
 "As this feature is still in beta, it is not activated by default. Please "
 "contact OpenDataSoft's support to try it out."
 msgstr ""
+"Diese Funktion läuft gegenwärtig in der Beta-Version und steht nicht "
+"standardmäßig zur Verfügung. Bitte kontaktieren Sie den OpenDataSoft-"
+"Support, wenn Sie sie ausprobieren möchten."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:41
 msgid "Configuring the dataset schema"
-msgstr ""
+msgstr "Konfigurieren des Datensatz-Schemas"
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:46
 msgid ""
 "To create a realtime dataset, start by navigating to the dataset creation "
 "interface. Here, select \"add a realtime source\"."
 msgstr ""
+"Zur Erstellung eines Echtzeit-Datensatzes navigieren Sie zunächst zu der "
+"Datensatz-Erstellungsschnittstelle. Wählen Sie hier \"Echtzeit-Quelle "
+"hinzufügen\" aus."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:51
 msgid ""
@@ -119,10 +166,15 @@ msgid ""
 " be sent through the API. Please note that the bootstrap data is not used in"
 " the dataset: its sole purpose is to allow setting up the dataset."
 msgstr ""
+"Sie werden zur Eingabe einiger Bootstrapdaten sowie zum optionalen Ausfüllen"
+" zusätzlicher Optionen aufgefordert. Die Bootstrapdaten müssen alle Felder "
+"enthalten, die durch die API gesendet werden. Bitte beachten Sie, dass die "
+"Bootstrapdaten nicht im Datensatz verwendet werden: Ihr einziger Zweck "
+"besteht darin, den Datensatz einzurichten."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:54
 msgid "Using the push url"
-msgstr ""
+msgstr "Verwenden der Push-URL"
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:60
 msgid ""
@@ -133,34 +185,49 @@ msgid ""
 " be sent in the JSON format, either as a single JSON object for a single "
 "record, or an array of JSON objects to push multiple records at once."
 msgstr ""
+"Sobald Ihr Datensatz mit den korrekten Echtzeit-Ressourceneinstellungen "
+"gespeichert ist, erscheint ein URL-Pfad mit einem Push-API-Schlüssel. Dieser"
+" Pfad ist Ihrer Domain-Basis-URL angehängt. Die Plattform muss die Daten "
+"nach ihrer Veröffentlichung an diesen Pfad senden. Wie bei den "
+"Bootstrapdaten müssen die Daten im JSON-Format gesendet werden, entweder als"
+" einzelnes JSON-Objekt für einen einzelnen Eintrag, oder als Array aus JSON-"
+"Objekten, um mehrere Einträge auf einmal zu pushen."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:65
 msgid ""
 "A mimimal example of the api usage for a dataset with a single field named "
 "\"message\", using curl, would be"
 msgstr ""
+"Nachfolgend ein Minimalbeispiel einer API-Verwendung für einen Datensatz mit"
+" einem einzigen Feld namens \"Nachricht\", das Curl verwendet:"
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:71
 msgid ""
 "A minimal example with the same dataset, using the array form to send "
 "multiple records at once would be"
 msgstr ""
+"Nachfolgend ein Minimalbeispiel mit demselben Datensatz, den das Array-"
+"Formular zum gleichzeitigen Versenden mehrerer Einträge verwendet:"
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:77
 msgid ""
 "If the records have been received correctly, the server will respond the "
 "following message."
 msgstr ""
+"Wenn die Einträge korrekt empfangen wurden, antwortet der Server mit "
+"folgender Nachricht."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:85
 msgid ""
 "If an error happened while trying to push a record, the response will "
 "specify the error."
 msgstr ""
+"Falls bei dem Versuch einen Eintrag zu pushen ein Fehler auftritt, wird "
+"dieser Fehler in der Antwort angegeben."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:88
 msgid "Pushing a field of type file"
-msgstr ""
+msgstr "Pushen eines Felds oder einer Typ-Datei"
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:90
 msgid ""
@@ -168,10 +235,12 @@ msgid ""
 "base64-encoded content and the mimetype of the file needs to be sent, as "
 "such."
 msgstr ""
+"Um ein Feld vom Typ Bild zu pushen, muss ein JSON-Objekt mit dem "
+"Base64-kodierten Content und dem MIME-Typ der Datei gesendet werden."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:102
 msgid "Update data by defining a unique key"
-msgstr ""
+msgstr "Aktualisieren von Daten durch Definieren eines eindeutigen Schlüssels"
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:108
 msgid ""
@@ -186,6 +255,14 @@ msgid ""
 "set the new ``number_of_copies`` value to the record corresponding to the "
 "book ``isbn``."
 msgstr ""
+"In manchen Fällen ist es sinnvoll, die bestehenden Einträge zu "
+"aktualisieren, anstatt immer wieder neue zu pushen. Ein Beispiel hierfür ist"
+" etwa ein Datensatz, der die Anzahl der verfügbaren Ausgaben für jedes Buch "
+"in einer städtischen Bibliothek verfolgt. Angenommen, wir haben einen "
+"solchen Datensatz mit zwei Feldern: `isbn``, steht für `ISBN "
+"<https://en.wikipedia.org/wiki/International_Standard_Book_Number>`_ die "
+"Nummer des Buchs, und ``Anzahl_Ausgaben``, das die Anzahl der momentan in "
+"der Bibliothek verfügbaren Ausgaben verfolgt."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:113
 msgid ""
@@ -200,6 +277,17 @@ msgid ""
 "record. In our library case, if your dataset has ``isbn`` as the unique key,"
 " and contains these two records."
 msgstr ""
+"Zum Konfigurieren eines solchen Systems mit der OpenDataSoft-Plattform "
+"müssen die Felder, die als eindeutiger Schlüssel verwendet werden sollen, "
+"als solche gekennzeichnet sein. In unserem Beispiel wäre der eindeutige "
+"Schlüssel die ISBN, da die übrigen Daten mit einzelnen Büchern verbunden "
+"sind und diese Bücher durch die ISBN gekennzeichnet sind. Dies kann in der "
+"Bearbeitungsansicht in dem Menü durchgeführt werden, das aufgeht, wenn auf "
+"die Konfigurationsschaltfläche geklickt wird. Es können mehrere Felder als "
+"eindeutige Schlüssel eingerichtet werden. Dann, wenn nach dem Speichern und "
+"Veröffentlichen ein neuer Eintrag gepusht wird, dessen Schlüsselwert dem "
+"eines bestehenden Eintrags entspricht, überschreibt der neue Eintrag den "
+"alten Eintrag."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:127
 msgid ""
@@ -207,21 +295,26 @@ msgid ""
 " you push the following record, you will still have two records, the first "
 "one being updated with the new value."
 msgstr ""
+"Wenn nun jemand eine Ausgabe von \"Zen and the Art of Motorcycle "
+"Maintenance\" ausleiht und Sie den folgenden Eintrag pushen, haben Sie immer"
+" noch zwei Einträge, wobei der erste mit dem neuen Wert aktualisiert wurde."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:141
 msgid "Delete data"
-msgstr ""
+msgstr "Löschen von Daten"
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:143
 msgid ""
 "There are two entrypoints that allow for deleting a pushed records. One that"
 " uses the records values and one that uses the record ID."
 msgstr ""
+"Zwei verschiedene Einstiegspunkte ermöglichen das Löschen gepushter "
+"Einträge. Der eine verwendet Eintragswerte und der andere die Eintrags-ID."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:146
 #: ../../source/sourcing_and_processing_data/realtime.rst:155
 msgid "Using the record values"
-msgstr ""
+msgstr "Verwenden der Eintragswerte"
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:148
 msgid ""
@@ -233,6 +326,15 @@ msgid ""
 "``/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/delete/?pushkey=<PUSH_API_KEY>``."
 " A minimal example to delete the record we pushed earlier follows."
 msgstr ""
+"Zum Löschen eines Eintrags bei bekannten Eintragsfeldwerten POSTEN Sie den "
+"Eintrag, als würden Sie ihn zum ersten Mal hinzufügen, ersetzen Sie dabei "
+"jedoch ``/push/`` durch ``/delete/`` in der Push-URL. Falls Ihr Push-URL-"
+"Pfad "
+"``/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/push/?pushkey=<PUSH_API_KEY>`` "
+"lautet, verwenden Sie stattdessen "
+"``/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/delete/?pushkey=<PUSH_API_KEY>``."
+" Es folgt ein Minimalbeispiel der Löschung eines Eintrags, den wir zuvor "
+"gepusht hatten."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:157
 msgid ""
@@ -240,10 +342,14 @@ msgid ""
 "GET request to the URL you get by replacing ``/push/`` with "
 "``/<RECORD_ID>/delete/`` in the push URL. A minimal example of this follows."
 msgstr ""
+"Wenn Sie die Eintrags-ID des Eintrags kennen, den Sie löschen möchten, "
+"führen Sie einfach eine GET-Anfrage an die URL aus, die Sie beim Ersetzen "
+"von ``/push/`` durch ``/<RECORD_ID>/delete/`` in der Push-URL erhalten. Es "
+"folgt ein Minimalbeispiel hierfür."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:164
 msgid "Get notified in case of inactivity"
-msgstr ""
+msgstr "Benachrichtigung bei Inaktivität"
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:169
 msgid ""
@@ -254,10 +360,17 @@ msgid ""
 " than the threshold has occured during which no record has been received, "
 "you will receive an email."
 msgstr ""
+"Wenn ein System oft Daten zur Plattform pushen soll, möchten Sie eventuell "
+"benachrichtigt werden, wenn nach einer Weile kein Eintrag mehr von der "
+"Plattform empfangen wird. Um benachrichtigt zu werden, können Sie die "
+"\"Warn\"-Option in der Quell-Konfiguration aktivieren und einen "
+"Zeitschwellenwert in Minuten festlegen. Sobald die Zeitdauer, während der "
+"kein Eintrag empfangen wurde, den Schwellenwert überschreitet, erhalten Sie "
+"eine E-Mail."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:172
 msgid "Unpublishing and disabling the api"
-msgstr ""
+msgstr "Aufheben der Veröffentlichung und Deaktivierung der API"
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:177
 msgid ""
@@ -268,10 +381,19 @@ msgid ""
 "no effect on existing data. If data is pushed while push is disabled on the "
 "resource, no data will be added and an error will be sent."
 msgstr ""
+"Vorsicht beim Aufheben der Veröffentlichung Ihres Datensatzes. Dabei werden "
+"bestehende Einträge nicht für die nächste Veröffentlichung des Datensatzes "
+"gespeichert. Wenn Sie es vermeiden möchten, neue Daten zu erhalten, sollten "
+"Sie stattdessen auf die Schaltfläche \"Push deaktivieren\" in den "
+"Ressourceneinstellungen klicken. Damit wird die Verwendung der Push-API "
+"vermieden. Dies hat jedoch keinerlei Auswirkung auf die bestehenden Daten. "
+"Wenn Daten gepusht werden, während der Push in der Ressource deaktiviert "
+"ist, können keine Daten hinzugefügt werden, und Sie erhalten eine "
+"Fehlermeldung."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:180
 msgid "Recovery"
-msgstr ""
+msgstr "Wiederherstellung"
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:185
 msgid ""
@@ -280,6 +402,11 @@ msgid ""
 "possibility of recovering the lost records. To do so, the recovery option "
 "must have been activated prior to the records being pushed to the platform."
 msgstr ""
+"Bei Datenverlust, etwa wenn die Veröffentlichung des Datensatzes aufgehoben "
+"oder ein Prozessor falsch konfiguriert wurde, besteht die Möglichkeit, die "
+"verlorenen Einträge wiederherzustellen. Dafür muss die "
+"Wiederherstellungsoption vor dem Pushen der Einträge auf die Plattform "
+"aktiviert worden sein."
 
 #: ../../source/sourcing_and_processing_data/realtime.rst:190
 msgid ""
@@ -288,3 +415,7 @@ msgid ""
 "records, the \"recover data\" button on the source configuration page can be"
 " used."
 msgstr ""
+"Wenn die Wiederherstellung aktiviert ist, wird jeder darauf folgende Eintrag"
+" gesichert und lässt sich wiederherstellen. Um Backup-fähige Einträge "
+"wiederherzustellen, kann die Schaltfläche \"Daten wiederherstellen\" auf der"
+" Quell-Konfigurationsseite verwendet werden."

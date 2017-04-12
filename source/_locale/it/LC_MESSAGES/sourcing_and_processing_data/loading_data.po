@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-16 14:25+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Datawords Rel2 <datawords.rel.2@gmail.com>, 2017\n"
+"Last-Translator: Datawords_trad_1 <datawords.translator.it1@gmail.com>, 2017\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:2
 msgid "Loading data"
-msgstr ""
+msgstr "Caricamento dei dati"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:4
 msgid ""
@@ -29,71 +29,86 @@ msgid ""
 "stay synchronized with a remote service, extract data from a geographical "
 "information system, from an API..."
 msgstr ""
+"OpenDataSoft mette a disposizione varie modalità per l'aggiunta dei dati ai "
+"dataset. Ognuna di esse consente di effettuare un’operazione specifica, ad "
+"esempio caricare riferimenti statici, mantenere la sincronizzazione con un "
+"servizio remoto, estrarre i dati da un sistema di informazioni geografiche o"
+" da un'API, e così via."
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:9
 msgid "Methods"
-msgstr ""
+msgstr "Metodi"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:23
 msgid "Static file"
-msgstr ""
+msgstr "File statico"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:25
 msgid ""
 "You can attach a static file to your dataset by uploading a file from your "
 "computer via the *Upload a file* button."
 msgstr ""
+"Puoi allegare un file statico a un dataset caricandolo dal tuo computer "
+"mediante il pulsante *Carica un file*."
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:28
 msgid ""
 "The size limit for a file is 240Mo. If your file is too big you can compress"
 " it before uploading it on the platform."
 msgstr ""
+"Le dimensioni massime per il file sono 240 Mb. Se il file è troppo grande, è"
+" possibile comprimerlo prima di caricarlo sulla piattaforma."
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:31
 msgid "Pasted data"
-msgstr ""
+msgstr "Incollare i dati"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:33
 msgid ""
 "The *Paste data* box can be used to directly paste data (in a CSV format). "
 "It is useful for quick tests."
 msgstr ""
+"La casella *Incolla i dati* permette di incollare direttamente i dati in "
+"formato CSV ed è utile per eseguire rapidamente prove sul dataset."
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:36
 msgid "Remote file (http, https, ftp and ftps)"
-msgstr ""
+msgstr "File remoto (http, https, ftp e ftps)"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:38
 msgid ""
 "By writing an url in the *Enter an URL* box, you can import files stored on "
 "a remote server, we support the following protocols:"
 msgstr ""
+"Per importare file memorizzati su un server remoto, puoi inserire l'URL "
+"nella casella *Inserisci un URL*. Sono ammessi i seguenti protocolli:"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:40
 msgid "http"
-msgstr ""
+msgstr "http"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:41
 msgid "ftp"
-msgstr ""
+msgstr "ftp"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:43
 msgid "And their secured versions:"
-msgstr ""
+msgstr "E le relative versioni protette:"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:45
 msgid "https"
-msgstr ""
+msgstr "https"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:46
 msgid "ftps"
-msgstr ""
+msgstr "ftps"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:48
 msgid ""
 "*http* links to a single file, for example http://example.org/mydata.csv"
 msgstr ""
+"Il protocollo *http* crea un link a un singolo file, ad esempio "
+"http://esempio.org/mieidati.csv."
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:50
 msgid ""
@@ -101,6 +116,9 @@ msgid ""
 "ftp://example.org/my_dir/mydata.csv for a single file or "
 "ftp://example.org/my_dir/ for a directory."
 msgstr ""
+"Il protocollo *ftp* crea un link a un singolo file o a una directory. Ad "
+"esempio, ftp://esempio.org/mia_dir/mieidati.csv per un unico file o "
+"ftp://esempio.org/mia_dir/ per una directory."
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:52
 msgid ""
@@ -113,6 +131,17 @@ msgid ""
 "strategy, similar records are not processed twice (see :doc:`Special fields "
 "documentation</sourcing_and_processing_data/dataset_schema>`)."
 msgstr ""
+"La scelta di una directory è spesso la soluzione più adatta per eseguire "
+"automaticamente aggiornamenti incrementali tra il sistema informativo di un "
+"cliente e la piattaforma OpenDataSoft. Tutti i file della directory devono "
+"avere lo stesso formato e lo stesso schema: ad esempio, vari file CSV che "
+"presentino gli stessi titoli nelle rispettive colonne. Al momento della "
+"pubblicazione del dataset, i file nuovi e quelli aggiornati vengono "
+"recuperati dalla posizione remota ed elaborati. Inoltre, grazie alla "
+"metodologia di deduplicazione nativa di OpenDataSoft, viene evitata la "
+"doppia elaborazione dei record identici. Per ulteriori informazioni, "
+"consulta la :doc:`documentazione sui campi "
+"speciali</sourcing_and_processing_data/dataset_schema>`)."
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:55
 msgid ""
@@ -121,28 +150,39 @@ msgid ""
 "remote directory. Please contact OpenDataSoft's support if you need some "
 "cleanup to be performed."
 msgstr ""
+"Quando si esegue la sincronizzazione da una posizione FTP remota, "
+"OpenDataSoft mantiene una cache persistente e non elimina automaticamente i "
+"file mancanti dalla directory remota. Per richiedere l'eliminazione dei file"
+" non più necessari, ti invitiamo a contattare il servizio di assistenza "
+"OpenDataSoft."
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:58
 msgid ""
 "We do not support the sftp protocol which is completely different from the "
 "ftps protocol."
 msgstr ""
+"La piattaforma OpenDataSoft non supporta il protocollo SFTP, che è "
+"completamente diverso dal protocollo FTPS."
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:61
 msgid "API - Specific connector"
-msgstr ""
+msgstr "API - Connettore specifico"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:63
 msgid ""
 "Sometime, it might be proven convenient to *connect* a dataset to a remote "
 "data source exposing data records over an HTTP API."
 msgstr ""
+"A volte, può essere utile *collegare* un dataset a un'origine di dati remota"
+" trasferendo i record mediante un'API HTTP."
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:66
 msgid ""
 "OpenDataSoft natively supports the following APIs (contact your local "
 "support team to get these activated on your domain):"
 msgstr ""
+"OpenDataSoft supporta nativamente le seguenti API, che puoi attivare sul tuo"
+" dominio contattando il team di assistenza locale:"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:78
 msgid ""
@@ -150,28 +190,34 @@ msgid ""
 "OpenDataSoft connectivity toolkit makes it possible to develop performant "
 "and secured connectors supporting incremental data processing."
 msgstr ""
+"Su richiesta dei clienti, inoltre, OpenDataSoft può sviluppare e integrare "
+"API Web specifiche. Il toolkit di connettività OpenDataSoft permette di "
+"ottenere connettori performanti e protetti che supportano l'elaborazione di "
+"dati incrementali."
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:88
 msgid "Available options when configuring a connector"
-msgstr ""
+msgstr "Opzioni disponibili per la configurazione di un connettore"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:100
 msgid "Supported formats"
-msgstr ""
+msgstr "Formati supportati"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:116
 msgid ""
 "The following table lists the supported format and describes configuration "
 "options for each format."
 msgstr ""
+"La tabella seguente elenca i formati supportati e descrive le opzioni di "
+"configurazione disponibili per ciascuno di essi."
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:121
 msgid "Format"
-msgstr ""
+msgstr "Formato"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:122
 msgid "Extensions"
-msgstr ""
+msgstr "Estensioni"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:123
 msgid "Description"
@@ -179,52 +225,52 @@ msgstr "Descrizione"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:124
 msgid "Options"
-msgstr ""
+msgstr "Opzioni"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:125
 msgid "CSV"
-msgstr ""
+msgstr "CSV"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:126
 msgid ".csv, .tsv, .txt, .dat"
-msgstr ""
+msgstr ".csv, .tsv, .txt, .dat"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:127
 msgid "The classic Coma Separated Value file."
-msgstr ""
+msgstr "Classico file con valori separati da virgole"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:129
 msgid ":doc:`connectors/csv`"
-msgstr ""
+msgstr ":doc:`connectors/csv`"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:130
 msgid "Microsoft Excel"
-msgstr ""
+msgstr "Microsoft Excel"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:131
 msgid ".xls, .xlsx"
-msgstr ""
+msgstr ".xls, .xlsx"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:134
 #: ../../source/sourcing_and_processing_data/loading_data.rst:139
 msgid ":doc:`connectors/spreadsheet`"
-msgstr ""
+msgstr ":doc:`connectors/spreadsheet`"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:135
 msgid "OpenDocument SpreadSheet"
-msgstr ""
+msgstr "Foglio di calcolo OpenDocument"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:136
 msgid ".ods"
-msgstr ""
+msgstr ".ods"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:140
 msgid "JSON"
-msgstr ""
+msgstr "JSON"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:141
 msgid ".json"
-msgstr ""
+msgstr ".json"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:142
 msgid ""
@@ -233,91 +279,99 @@ msgid ""
 "properties path (path to the dictionary holding the list of fields for an "
 "element)."
 msgstr ""
+"Sono supportati documenti JSON semplici. La piattaforma permette di "
+"scegliere il percorso di radice, che conduce alla tabella degli elementi da "
+"considerare come righe, e il percorso delle proprietà, che porta al "
+"dizionario contenente l'elenco dei campi di un elemento."
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:146
 msgid ":doc:`connectors/json`"
-msgstr ""
+msgstr ":doc:`connectors/json`"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:147
 msgid "GeoJSON"
-msgstr ""
+msgstr "GeoJSON"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:148
 msgid ".json, .geojson"
-msgstr ""
+msgstr ".json, .geojson"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:151
 msgid ":doc:`connectors/geojson`"
-msgstr ""
+msgstr ":doc:`connectors/geojson`"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:152
 msgid "KML/KMZ"
-msgstr ""
+msgstr "KML/KMZ"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:153
 msgid ".kml, .kmz"
-msgstr ""
+msgstr ".kml, .kmz"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:156
 msgid ":doc:`connectors/kml`"
-msgstr ""
+msgstr ":doc:`connectors/kml`"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:157
 msgid "Shapefile"
-msgstr ""
+msgstr "Shapefile"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:158
 #: ../../source/sourcing_and_processing_data/loading_data.rst:163
 msgid ".zip"
-msgstr ""
+msgstr ".zip"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:159
 msgid ""
 "A zip archive containing at least the following files: <NAME>.shp, "
 "<NAME>.dbf, <NAME>.prj"
 msgstr ""
+"Archivio zip contenente almeno i seguenti file: <NAME>.shp, <NAME>.dbf, "
+"<NAME>.prj."
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:161
 msgid ":doc:`connectors/shapefile`"
-msgstr ""
+msgstr ":doc:`connectors/shapefile`"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:162
 msgid "MapInfo"
-msgstr ""
+msgstr "MapInfo"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:164
 msgid ""
 "A zip archive containing either <NAME>.mid and <NAME>.mif files or "
 "<NAME>.map, <NAME>.tab, <NAME>.id and <NAME>.dat"
 msgstr ""
+"Archivio zip contenente i file <NAME>.mid e <NAME>.mif o i file <NAME>.map, "
+"<NAME>.tab, <NAME>.id e <NAME>.dat."
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:167
 msgid ":doc:`connectors/mapinfo`"
-msgstr ""
+msgstr ":doc:`connectors/mapinfo`"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:168
 msgid "OpenStreetMap"
-msgstr ""
+msgstr "OpenStreetMap"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:169
 msgid ".osm"
-msgstr ""
+msgstr ".osm"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:172
 msgid ":doc:`connectors/osm`"
-msgstr ""
+msgstr ":doc:`connectors/osm`"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:173
 msgid "XML"
-msgstr ""
+msgstr "XML"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:174
 msgid ".xml"
-msgstr ""
+msgstr ".xml"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:177
 msgid ":doc:`connectors/xml`"
-msgstr ""
+msgstr ":doc:`connectors/xml`"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:179
 msgid ""
@@ -326,92 +380,107 @@ msgid ""
 "Contact your local support team if you need more information on file formats"
 " support extension."
 msgstr ""
+"Per esigenze specifiche, è possibile richiedere il supporto anche di altri "
+"formati di file, ad esempio in caso di XML DTD complessi o file flat non "
+"standard. Per ulteriori informazioni sull'estensione dei formati supportati,"
+" ti preghiamo di contattare il team di assistenza locale."
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:183
 msgid ""
 "OpenDataSoft supports compressed files (zip, bz2, tar, gz, gzip, tar.gr, "
 "tgz, tar.bz2)."
 msgstr ""
+"OpenDataSoft supporta i file compressi (zip, bz2, tar, gz, gzip, tar.gr, "
+"tgz, tar.bz2)."
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:186
 msgid "Files (images) with metadata"
-msgstr ""
+msgstr "File (di immagine) con metadati"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:188
 msgid ""
 "To upload files (and images) on the platform, you have to build first a ZIP "
 "archive. This archive shall contain the following files:"
 msgstr ""
+"Per caricare file e immagini sulla piattaforma, è prima necessario creare un"
+" archivio in formato ZIP che contenga:"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:190
 msgid "a CSV file which lists the files (images) and metadata"
-msgstr ""
+msgstr "un file CSV con l'elenco di file (immagini) e metadati;"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:191
 msgid "the files (images) at the same level (no subdirectory)"
 msgstr ""
+"i file (immagini) allo stesso livello, non organizzati in sottodirectory."
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:193
 msgid ""
 "The CSV file must contains a column with file (image) names, others columns "
 "will be considered as additional fields. For instance:"
 msgstr ""
+"Il file CSV deve contenere una colonna con i nomi dei file (immagini); le "
+"altre colonne sono considerate campi aggiuntivi. Ad esempio:"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:198
 msgid "Scale"
-msgstr ""
+msgstr "Scala"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:199
 msgid "Title"
-msgstr ""
+msgstr "Titolo"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:200
 msgid "File"
-msgstr ""
+msgstr "File"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:201
 #: ../../source/sourcing_and_processing_data/loading_data.rst:207
 msgid "1:10"
-msgstr ""
+msgstr "1:10"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:202
 #: ../../source/sourcing_and_processing_data/loading_data.rst:205
 msgid "Image 1"
-msgstr ""
+msgstr "Immagine 1"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:203
 msgid "1-10.png"
-msgstr ""
+msgstr "1-10.png"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:204
 #: ../../source/sourcing_and_processing_data/loading_data.rst:210
 msgid "1:20"
-msgstr ""
+msgstr "1:20"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:206
 msgid "1-20.png"
-msgstr ""
+msgstr "1-20.png"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:208
 #: ../../source/sourcing_and_processing_data/loading_data.rst:211
 msgid "Image 2"
-msgstr ""
+msgstr "Immagine 2"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:209
 msgid "2-10.png"
-msgstr ""
+msgstr "2-10.png"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:212
 msgid "2-20.png"
-msgstr ""
+msgstr "2-20.png"
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:214
 msgid ""
 "The CSV files and the images must be located at the root of the archive."
 msgstr ""
+"Le immagini e i file CSV devono trovarsi al livello radice dell'archivio."
 
 #: ../../source/sourcing_and_processing_data/loading_data.rst:218
 msgid ""
 "You can find a example of dataset images on `discovery "
 "<https://discovery.opendatasoft.com>`_. The source can be downloaded."
 msgstr ""
+"Puoi scaricare un esempio di immagini di dataset su `Discovery "
+"<https://discovery.opendatasoft.com>`_, dove è disponibile anche il "
+"sorgente."

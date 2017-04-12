@@ -79,25 +79,20 @@ The domain administrator might define a richer metadata template, thus giving ac
 For example, one can search on public.opendatasoft.com datasets which have ``Paris`` in their title or description and 
 which contain at least 50 000 records:
  
-``(title:paris OR decription:paris) AND records_count >= 50 000`` 
-http://public.opendatasoft.com/api/datasets/1.0/search?q=(title:paris%20OR%20decription:paris)%20AND%20records_count%20>=%2050000
+
+For example this query: ``(title:paris OR decription:paris) AND records_count >= 50 000`` `returns this on the platform <http://public.opendatasoft.com/api/datasets/1.0/search?q=(title:paris%20OR%20decription:paris)%20AND%20records_count%20%3E%3D%2050000>`_
 
 **For the record search APIs**, the list of available fields depend on the schema of the dataset. To fetch the list of 
 available fields for a given dataset, you may use the search dataset or lookup dataset APIs.
 
-For example one can search in the dataset containing the movies shooting spots in Paris in the last decade any film 
-directed by Woody Allen: 
-`<http://public.opendatasoft.com/api/records/1.0/search?dataset=tournagesdefilmsparis2011&q=realisateur%3A%22woody+allen%22>`_.
-
 Multiple operator fields can be used between the field name and the query:
 
-* ":", "=", "==": return results whose field exactly matches the given value (granted the fields are of text or numeric 
+* ``:``, ``-``, ``==``: Return results whose field exactly matches the given value (granted the fields are of text or numeric 
   type)
-* ">", "<", ">=", "<=": Return results whose field values are larger, smaller, larger or equal, smaller or equal to the 
-  given value (granted the field is of date or numeric type).
-* [start_date TO end_date]: Queries Records whose date is between start_date and and_date.
+* ``>``, ``<``, ``>=``, ``<=``: Return results whose field values are larger, smaller, larger or equal, smaller or equal to the given value (granted the field is of date or numeric type).
+* ``[start_date TO end_date]``: Queries Records whose date is between ``start_date`` and ``end_date``.
 
-Date formats can be specified in different formats: simple (YYYY[[/mm]/dd]) or ISO 8601 (YYYY-mm-DDTHH:MM:SS)
+Date formats can be specified in different formats: simple (``YYYY[[/mm]/dd]``) or ISO 8601 (``YYYY-mm-DDTHH:MM:SS``)
 
 Examples:
 

@@ -567,7 +567,7 @@ Let's take an example and assume that the first dataset contains two rows for th
      * Rennes - Montparnasse
      * 1 place du dix huit Juin 1940, 75006 Paris
 
-If **One line** is set (with **Separator** set to `|`), the Join will result in:
+If **One line** is set (with **Separator** set to ``|``), the Join will result in:
 
 .. list-table::
    :header-rows: 1
@@ -578,8 +578,8 @@ If **One line** is set (with **Separator** set to `|`), the Join will result in:
      * station_address
    * * 1
      * 10
-     * Tour Eiffel&#124;Quai Branly
-     * 69 quai Branly, 75007 Paris&#124;69 quai Branly, 75007 Paris
+     * Tour Eiffel|Quai Branly
+     * 69 quai Branly, 75007 Paris|69 quai Branly, 75007 Paris
    * * 2
      * 15
      * Rennes - Montparnasse
@@ -607,8 +607,81 @@ If **One line** is not set, the Join will result in:
      * Rennes - Montparnasse
      * 1 place du dix huit Juin 1940, 75006 Paris
 
-This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will
-activate it for you.
+Integers, decimals and text field containing numerical values can be joined together. For example the following dataset:
+
+.. list-table::
+   :header-rows: 1
+
+   * * insee_code (text)
+     * bloom_competition_result (decimal)
+   * * 01262
+     * 2.0
+   * * 90010
+     * 4.0
+   * * 57355
+     * 2.0
+
+can be used in a join dataset processor in the following dataset:
+
+.. list-table::
+   :header-rows: 1
+
+   * * bloom_ranks (integer)
+   * * 2
+
+to obtain the following result:
+
+.. list-table::
+   :header-rows: 1
+
+   * * insee_code (text)
+     * bloom_competition_result (decimal)
+   * * 01262
+     * 2
+   * * 57355
+     * 2
+
+The matching between values ``2`` and ``2.0`` was successful despite the type difference. We can go further and apply to it a second join dataset processor, in order to obtain values from the following dataset:
+
+.. list-table::
+   :header-rows: 1
+
+   * * city (text)
+     * insee_code (integer)
+     * postal_code (text)
+   * * Montluel
+     * 1262
+     * 01120
+   * * Belfort
+     * 90010
+     * 90000
+   * * Kalhausen
+     * 57355
+     * 57412
+
+to obtain this result:
+
+.. list-table::
+   :header-rows: 1
+
+   * * insee_code (text)
+     * bloom_competition_result (decimal)
+     * city (text)
+     * postal_code (text)
+   * * 01262
+     * 2
+     * Montluel
+     * 01120
+   * * 57355
+     * 2
+     * Kalhausen
+     * 57412
+
+Note that even though the insee_code was not in the same type, the matching happened. The matching worked even for the value ``1262`` in the first dataset (note the absence of leading 0, due to it being an integer value), that matched against the value ``01262`` in the second dataset.
+
+While most column types can be retrieved by using the join datasets processor, file type columns do not yield the actual resource through the processor but instead yield the name of the underlying resource.
+
+By default, this processor can only be used with remote datasets that have fewer than 100000 records.
 
 Extract from JSON
 ~~~~~~~~~~~~~~~~~
@@ -740,6 +813,91 @@ Example of iJSON rules to extract from the following JSON array field:
 
 This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will activate it for you.
 
+JSON array to multivalued
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This processor extracts multiple values from a field containing a JSON array and concatenates them into a multivalued field.
+
+Note: the ``multivalued`` property will not be set automatically in the field, so don't forget to enable it on the field's parameters, along with the same separator as in the processor.
+
++-------------------------+------------------+
+| Original value          | After processor  |
++-------------------------+------------------+
+| ``{"a":["b","c","d"]}`` | ``b,c,d``        |
++-------------------------+------------------+
+
+The parameter "iJSON rule to array" works exactly like in the "Extract from JSON" processor and should contain the array to concatenate (represented with the iJSON rule ``.item``).
+
+- If the field contains the JSON array directly, just put ``item`` as an iJSON rule.
+- If the final element is an array, the iJSON rule must end with ``.item``, meaning that the reached object should be treated as an array of items in the iJSON syntax.
+- If you want to keep going into the items inside the array, you can keep adding key names after the ``.item``, but be careful to check that this path is valid for every object in the array.
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Example
+  * * Field
+    * Name of the field that holds the JSON array
+    * Field
+    * data
+  * * iJSON rule to array
+    * iJSON rule to iterate in the JSON array above. An iJSON rule is built with the names of all the field from the JSON root to the data to extract, separated with a dot. The position of the array is indicated with the ``item`` keyword.
+    * String
+    * item.metaB
+  * * Separator
+    * Character or string used to separate the different values found
+    * String
+    * ,
+  * * Output field
+    * Name of the field that will contain the extracted element
+    * Field
+    *
+
+Example of iJSON rules to extract from the following JSON array field:
+
+.. code-block:: JSON
+
+    [
+        {
+          "metaB" : "value1",
+          "int": 5,
+          "boolean": false
+        },
+        {
+          "metaB" : "value2",
+          "int": 6,
+          "boolean": true
+        },
+    ]
+
+- ``item.metaB``: ``value1,value2``
+- ``item.int``: ``5,6``
+- ``item.boolean``: ``false,true``
+
+.. code-block:: JSON
+
+    { "metaA": "Joe",
+      "bloc" : [
+            {
+              "metaB" : "value1",
+              "int": 5,
+              "boolean": false,
+              "sub" : { "sub_sub" : "sub_value"}
+            },
+            {
+              "metaB" : "value2",
+              "int": 6,
+              "boolean": true,
+              "sub" : { "sub_sub" : "other_sub_value"}
+            },
+          ]
+    }
+
+- ``bloc.item.metaB``: ``value1,value2``
+- ``bloc.item.sub.sub_sub``: ``sub_value,other_sub_value``
 
 Extract bit range
 ~~~~~~~~~~~~~~~~~
@@ -775,7 +933,7 @@ The processor works with masks, it expects
 
 For example, let's assume  you have a temperature sensor that sends and hexadecimal value.
 
-  .. code-block:: JSON
+  .. code-block:: text
 
     hex value : 2C09
 
@@ -783,7 +941,7 @@ This hexadecimal value contains:
 - a decimal value encoded on 2 bytes
 - the sensor status on a bit.
 
-  .. code-block:: JSON
+  .. code-block:: text
 
     hex value : 2C09          <- information sent by the sensor in hexadecimal
     bin value : 00010110 00000100 1   <- same information in binary
@@ -803,31 +961,31 @@ Therefore, the processing pipeline will contains 3 **Extract bit mask** processo
 
 **Extract bit mask 1**
 
-  .. code-block:: JSON
+  .. code-block:: text
 
     00010110 -> 22
 
 **Extract bit mask 2**
 
-  .. code-block:: JSON
+  .. code-block:: text
 
     00000100 -> 4
 
 **Extract bit mask 3**
 
-  .. code-block:: JSON
+  .. code-block:: text
 
       1 -> OK
 
 **Expression**
 
-  .. code-block:: JSON
+  .. code-block:: text
 
     Expression : integer_temp & "." & decimal_temp
 
 **Temperature**
 
-  .. code-block:: JSON
+  .. code-block:: text
 
     Temperature : 22,4 °C
     Sensor : OK
@@ -1207,16 +1365,16 @@ It takes the following parameters:
   * * Tolerance (simplification level)
     * Double
     * yes
-      
-Tolerance indicates the value below which intermediate points will be suppressed. 
 
-Depending on the shape complexity, different tolerances can be tested. 
+Tolerance indicates the value below which intermediate points will be suppressed.
 
-You could start with a tolerance value of 0.0001. 
+Depending on the shape complexity, different tolerances can be tested.
+
+You could start with a tolerance value of 0.0001.
 To simplify more, use a power of ten e.g. 0.001, then 0.01.
 
-If you use a tolerance too high, your shapes will be overly simplified and unrecognizable. 
-Use the preview to find out which tolerance works best for you. 
+If you use a tolerance too high, your shapes will be overly simplified and unrecognizable.
+Use the preview to find out which tolerance works best for you.
 
 Normalize Projection Reference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1502,7 +1660,7 @@ Extract text
 
 This processor can be used to extract any part of a text or a number or a combination of both into a new column. It's similar to the Replace Regexp processor, except instead of replacing the content in place the same column, a new column is created with the selected text.
 
-The idea is to put the part we want to extract in parenthesis. This part will then be extracted in a new column. 
+The idea is to put the part we want to extract in parenthesis. This part will then be extracted in a new column.
 
 Using the same example as for the Replace Regexp processor (from a french zip code like 44100, keep only the area code 44), the Extract Text processor can be used to create another column with the area code selected, instead of replacing the content like with the Replace Regexp processor.
 
