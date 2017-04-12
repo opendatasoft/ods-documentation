@@ -22,31 +22,31 @@ In the dataset APIs, facets are the same for all datasets and are the following:
 
    * * Facet Name
      * Description
-   * * modified
+   * * ``modified``
      * Last modification date
-   * * publisher
+   * * ``publisher``
      * Producer
-   * * issued
+   * * ``issued``
      * First publication date
-   * * accrualperiodicity
+   * * ``accrualperiodicity``
      * Publication frequency
-   * * language
+   * * ``language``
      * Language
-   * * license
+   * * ``license``
      * Licence
-   * * granularity
+   * * ``granularity``
      * Data granularity
-   * * dataquality
+   * * ``dataquality``
      * Data quality
-   * * theme
+   * * ``theme``
      * Theme
-   * * keyword
+   * * ``keyword``
      * Keywords
-   * * created
+   * * ``created``
      * Creation date
-   * * creator
+   * * ``creator``
      * Creator
-   * * contributor
+   * * ``contributor``
      * Contributors
 
 In the records API, facets are defined at field level. A field facet can be available depending on the data producer
