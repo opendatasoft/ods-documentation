@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-05 17:03+0200\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2017\n"
+"Last-Translator: rocio aguero <raguero@datawords.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,104 +29,277 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:6
 msgid ""
-"The provided document can have tags with arbitrary names but there are some "
-"constraints on the structure :"
+"It creates records from an arbitrary XML structure by converting all "
+"elements at a specific depth (optionnally filtered by tag) to a set of "
+"records."
 msgstr ""
-"El documento proporcionado puede tener etiquetas con nombres arbitrarios, "
-"pero hay algunas restricciones en la estructura:"
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:7
+msgid ""
+"For each element converted to a record, both attributes, enclosed tags and "
+"content are converted to fields."
+msgstr ""
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:8
 msgid ""
-"it must contain an array of objects, each object being used to create a "
-"record in the dataset,"
+"Complex data inside fields is converted to a JSON representation containing "
+"both attributes and content."
 msgstr ""
-"Debe contener una matriz de objetos, cada uno de los cuales se utiliza para "
-"crear un registro en el conjunto de datos."
-
-#: ../../source/sourcing_and_processing_data/connectors/xml.rst:9
-msgid "the array can be anywhere in the XML document and can have any name,"
-msgstr ""
-"La matriz puede estar en cualquier ubicación del documento XML y puede tener"
-" cualquier nombre."
-
-#: ../../source/sourcing_and_processing_data/connectors/xml.rst:10
-msgid ""
-"the objects must be flat, which means all their attributes must be at the "
-"root of the object,"
-msgstr ""
-"Los objetos deben ser planos, lo que significa que todos sus atributos deben"
-" estar en la raíz del objeto."
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:11
-msgid ""
-"the first few objects must have all the attributes present in the file so "
-"the dataset's columns are correctly discovered."
-msgstr ""
-"Los primeros objetos deben tener todos los atributos presentes en el archivo"
-" a fin de descubrir correctamente las columnas del conjunto de datos."
-
-#: ../../source/sourcing_and_processing_data/connectors/xml.rst:14
 msgid "Configuration"
 msgstr "Configuración"
 
-#: ../../source/sourcing_and_processing_data/connectors/xml.rst:19
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:16
 msgid "Name"
 msgstr "Nombre"
 
-#: ../../source/sourcing_and_processing_data/connectors/xml.rst:20
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:17
 msgid "Description"
 msgstr "Descripción"
 
-#: ../../source/sourcing_and_processing_data/connectors/xml.rst:21
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:18
 msgid "Values"
 msgstr "Valores"
 
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:19
+msgid "Depth of extracted elements"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:20
+msgid "Depth of the tags that must be converted to records"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:21
+msgid "e.g. 3"
+msgstr ""
+
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:22
-msgid "Object path"
-msgstr "Ruta de objeto"
+msgid "Tag of extracted elements (optional)"
+msgstr ""
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:23
-msgid "Path to the first object in the XML document"
-msgstr "Ruta del primer objeto en el documento XML"
+msgid ""
+"If irrelevant tags are at the same depth as extracted elements, use this "
+"option to only filter relevant tags"
+msgstr ""
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:24
-msgid "e.g. /{namespace}arrayTag/objectTag"
-msgstr "P. ej. /{Espacio_nombres}Etiqueta_matriz/Etiqueta_objeto"
+msgid "e.g. item"
+msgstr ""
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:27
-msgid "Example file"
-msgstr "Archivo de ejemplo"
+msgid "Field creation"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:29
+msgid ""
+"The policy for creating fields from an item is defined as in the example "
+"below."
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:44
+msgid "**attribute**"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:44
+msgid "**other_attribute**"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:44
+msgid "**indicator**"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:44
+msgid "**country**"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:44
+msgid "**decimal**"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:44
+msgid "**content**"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:46
+msgid "attribute value"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:46
+msgid "other attribute value"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:46
+msgid "GDP per capita"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:46
+msgid "Andean Region"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:46
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:129
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:131
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:133
+msgid "0"
+msgstr "0"
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:48
+msgid "2nd data tag"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:48
+msgid "Text only"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:52
+msgid "JSON representation"
+msgstr ""
 
 #: ../../source/sourcing_and_processing_data/connectors/xml.rst:54
+msgid ""
+"Complex data inside fields is converted to JSON as per the example below."
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:89
+msgid "Example 1"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:119
+msgid "In this examples:"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:121
+msgid ""
+"depth=2 because ``wb:data`` is the 2nd tag in its path (``wb:rows/wb:data``)"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:122
+msgid ""
+"tag filtering is not necessary because all elements at this depth are "
+"records"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:124
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:171
+msgid "**Resulting dataset:**"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:127
+msgid "wb:indicator"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:127
+msgid "wb:country"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:127
+msgid "wb:date"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:127
+msgid "wb:value"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:127
+msgid "wb:decimal"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:129
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:131
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:133
+msgid "{\"#text\": \"GDP per capita (2005 USD)\", \"@id\": \"6.0.GDPpc\"}"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:129
+msgid "{\"#text\": \"Andean Region\", \"@id\": \"L5\"}"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:129
+msgid "2005"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:129
+msgid "8154.72913271721"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:131
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:133
+msgid "{\"#text\": \"Bolivia\", \"@id\": \"BO\"}"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:131
+msgid "2009"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:131
+msgid "5152.46337890625"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:133
+msgid "2006"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:133
+msgid "4715.9892578125"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:137
+msgid "Example 2"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:164
+msgid ""
+"Note: the XML structure of this document is complex so automatic parameters "
+"detection won't be able to guess the proper depth. The extractor must be "
+"manually configured."
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:166
 msgid "In this example:"
 msgstr "En este ejemplo:"
 
-#: ../../source/sourcing_and_processing_data/connectors/xml.rst:56
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:168
 msgid ""
-"the root tag of the records is \"shoppingList\" (line 2), and the list of "
-"objects is in \"basket\" (line 5),"
+"depth=3 because ``item`` is the 3rd tag in its path "
+"(``shoppingList/basket/item``)"
 msgstr ""
-"La etiqueta raíz de los registros es \"shoppingList\" (línea 2), y la lista "
-"de objetos está en \"basket\" (línea 5)."
 
-#: ../../source/sourcing_and_processing_data/connectors/xml.rst:57
-msgid "the tag of the objects is \"item\","
-msgstr "La etiqueta de los objetos es \"item\"."
-
-#: ../../source/sourcing_and_processing_data/connectors/xml.rst:58
-msgid "each object has a \"name\" and a \"quantity\" attribute."
-msgstr "Cada uno de los objetos tiene un atributo \"name\" y otro \"quantity\"."
-
-#: ../../source/sourcing_and_processing_data/connectors/xml.rst:60
-msgid "The object path is \"/shoppingList/basket/item\"."
-msgstr "La ruta del objeto es \"/shoppingList/basket/item\"."
-
-#: ../../source/sourcing_and_processing_data/connectors/xml.rst:62
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:169
 msgid ""
-"Please note that tags **id**, **description**, **itemCount** and "
-"**totalQuantity** (tag names are arbitrary) will be ignored because they are"
-" not in any object."
+"tag filtering on ``item`` is necessary because ``itemCount`` and "
+"``totalQuantity`` are also at depth=3 but not relevant"
 msgstr ""
-"Tenga en cuenta que las etiquetas **id**, **description**, **itemCount** y "
-"**totalQuantity** (los nombres de etiquetas son arbitrarios) se omitirán "
-"porque no están en ningún objeto."
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:174
+msgid "name"
+msgstr "nombre"
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:174
+msgid "quantity"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:176
+msgid "potato"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:176
+msgid "5"
+msgstr "5"
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:178
+msgid "banana"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:178
+msgid "4"
+msgstr "4"
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:180
+msgid "tomato"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:180
+msgid "10"
+msgstr "10"
