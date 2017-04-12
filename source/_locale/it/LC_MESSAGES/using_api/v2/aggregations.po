@@ -2,15 +2,15 @@
 # Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-16 14:25+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Datawords Rel2 <datawords.rel.2@gmail.com>, 2017\n"
+"Last-Translator: Datawords_trad_1 <datawords.translator.it1@gmail.com>, 2017\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -65,7 +65,7 @@ msgid ""
 "The aggregate API allows the creation of virtual fields, limited to the "
 "request and that can be used in aggregates."
 msgstr ""
-"L'API aggregata permette di creare campi virtuali limitati alla richiesta "
+"L'API aggregata permette di creare campi virtuali limitati alla richiesta, "
 "che possono essere utilizzati negli aggregati."
 
 #: ../../source/using_api/v2/aggregations.rst:17
@@ -78,7 +78,7 @@ msgid ""
 "of fields and to return aggregated values for other fields."
 msgstr ""
 "La funzione principale dell'API consiste nel raggruppare i record dei "
-"dataset in base a un numero finito di campi e restituire i valori aggregati "
+"dataset in base a un numero finito di campi, restituendo i valori aggregati "
 "per altri campi."
 
 #: ../../source/using_api/v2/aggregations.rst:22
@@ -99,7 +99,7 @@ msgid ""
 "amount / total sales count."
 msgstr ""
 "> Esempio: prezzo medio di vendita per paese nel corso dell'anno: importo "
-"totale delle vendite/numero delle vendite totali."
+"totale delle vendite / numero delle vendite totali."
 
 #: ../../source/using_api/v2/aggregations.rst:28
 msgid ""
@@ -141,8 +141,8 @@ msgid ""
 "These functions accept as argument a field name or a virtual field and "
 "perform an aggregation function on its values. l"
 msgstr ""
-"Queste funzioni accettano come argomento il nome di un campo o un campo "
-"virtuale ed eseguono una funzione di aggregazione sui relativi valori."
+"Queste funzioni accettano come argomento il nome di un campo o di un campo "
+"virtuale, ed eseguono una funzione di aggregazione sui relativi valori."
 
 #: ../../source/using_api/v2/aggregations.rst:99
 msgid ""
@@ -203,7 +203,7 @@ msgstr "``SUMSQUARES(field)`` somma dei quadrati"
 
 #: ../../source/using_api/v2/aggregations.rst:158
 msgid "```field`` a decimal/integer field"
-msgstr "```field`` campo con un numero decimale/intero"
+msgstr "``field`` campo con un numero decimale/intero"
 
 #: ../../source/using_api/v2/aggregations.rst:160
 msgid ""
@@ -211,7 +211,7 @@ msgid ""
 "by percent) within the current group."
 msgstr ""
 "``PERCENTILES(field, percents)`` mappa dei valori percentili (indicizzati "
-"per percentuale) nel gruppo corrente."
+"per percentuale) nel gruppo corrente"
 
 #: ../../source/using_api/v2/aggregations.rst:162
 #: ../../source/using_api/v2/aggregations.rst:295
@@ -310,9 +310,9 @@ msgid ""
 "and aggregation expression:"
 msgstr ""
 "Per le espressioni group_by complesse (data o intervallo) è necessario "
-"impostare un nome group_by. Un nome valido è composto da caratteri minuscoli"
-" [a-z] e da numeri [0-9] e dal carattere ``_``. L'espressione group_by "
-"diventa un dict contenente il nome e l'espressione di aggregazione:"
+"impostare un nome group_by. Un nome valido può contenere caratteri minuscoli"
+" [a-z], numeri [0-9] e il carattere ``_``. L'espressione group_by diventa un"
+" dict contenente il nome e l'espressione di aggregazione:"
 
 #: ../../source/using_api/v2/aggregations.rst:229
 #: ../../source/using_api/v2/aggregations.rst:300
@@ -328,8 +328,8 @@ msgid ""
 "Group by all field values. For instance ``group_by:[field_name]`` group by "
 "``aggregates`` functions by every values of ``field_name`` field."
 msgstr ""
-"Raggruppa per tutti i valori dei campi. Ad esempio, "
-"``group_by:[nome_campo]`` esegue il raggruppamento per funzioni "
+"Raggruppa in base a tutti i valori di un campo. Ad esempio, "
+"``group_by:[nome_campo]`` esegue il raggruppamento tramite le funzioni "
 "``aggregates`` per ogni valore del campo ``nome_campo``."
 
 #: ../../source/using_api/v2/aggregations.rst:291
@@ -392,7 +392,7 @@ msgstr "*e* giorno della settimana (numero) esempio: 2"
 
 #: ../../source/using_api/v2/aggregations.rst:314
 msgid "*E* day of week (text) example: Tuesday; Tue"
-msgstr "*E* giorno della settimana (testo) esempio: Martedì, Mar"
+msgstr "*E* giorno della settimana (testo) esempio: Tuesday; Tue"
 
 #: ../../source/using_api/v2/aggregations.rst:315
 msgid "*y* year (year) example: 1996"
@@ -479,8 +479,8 @@ msgid ""
 "*Number* The minimum number of digits. Shorter numbers are zero-padded to "
 "this amount."
 msgstr ""
-"*Numero*: numero minimo di caratteri. Ai  numeri più corti vengono aggiunti "
-"gli zeri necessari per raggiungere questo numero di caratteri."
+"*Numero*: numero minimo di caratteri. I numeri più corti vengono completati "
+"aggiungendo gli zeri necessari al raggiungimento del numero minimo."
 
 #: ../../source/using_api/v2/aggregations.rst:336
 msgid ""
@@ -489,13 +489,13 @@ msgid ""
 " as the zero-based year of the century, which is two digits."
 msgstr ""
 "*Anno*: la presentazione numerica dei campi year e weekyear viene gestita in"
-" modo speciale. Ad esempio, se il numero di 'y' è 2, l'anno verrà "
-"visualizzato come anno in base zero del secolo, con due cifre."
+" modo speciale. Ad esempio, se il numero di 'y' è 2, verranno visualizzate "
+"solo le ultime due cifre dell'anno, senza il riferimento del secolo."
 
 #: ../../source/using_api/v2/aggregations.rst:337
 msgid "*Month* 3 or over, use text, otherwise use number."
 msgstr ""
-"*Mese* 3 o più, si utilizza il testo, altrimenti si utilizza il numero."
+"*Mese* per 3 o più, si utilizza il testo, altrimenti si utilizza il numero."
 
 #: ../../source/using_api/v2/aggregations.rst:338
 msgid ""
@@ -503,7 +503,7 @@ msgid ""
 "colon, 'ZZZ' or more outputs the zone id."
 msgstr ""
 "*Fuso orario*: 'Z' dà come output la differenza senza i due punti, 'ZZ' dà "
-"come output la differenza con i due punti, 'ZZZ' o più dù come output l'ID "
+"come output la differenza con i due punti, 'ZZZ' o più dà come output l'ID "
 "zona."
 
 #: ../../source/using_api/v2/aggregations.rst:339
@@ -557,7 +557,7 @@ msgid ""
 "num_ranges equally wide sub ranges."
 msgstr ""
 "Divide l'intervallo globale dei valori [lowest_boundary, highest_boundary] "
-"in un numero pari a num_ranges di sotto-intervalli di uguali dimensioni."
+"in un numero (num_ranges) di sotto-intervalli di uguali dimensioni."
 
 #: ../../source/using_api/v2/aggregations.rst:375
 msgid ""
@@ -577,38 +577,38 @@ msgid ""
 "added to the num_ranges sub-ranges."
 msgstr ""
 "Se lowest_boundary (o highest_boundary) è maggiore (o minore) del valore "
-"minimo (o massimo) del dataset, ai num_ranges sotto-intervalli verrà "
-"aggiunto un ulteriore sotto-intervallo [min_value; lowest_boundary[ (o "
-"[highest_boundary; max_value])."
+"minimo (o massimo) del dataset, verrà aggiunto un ulteriore sotto-intervallo"
+" [min_value; lowest_boundary[ (o [highest_boundary; max_value]) al numero "
+"(num_ranges) di sotto-intervalli."
 
 #: ../../source/using_api/v2/aggregations.rst:384
 #: ../../source/using_api/v2/aggregations.rst:437
 msgid "``myfield`` **required** a decimal field"
-msgstr "``miocampo`` campo decimale **necessario**"
+msgstr "``miocampo`` campo decimale **obbligatorio**"
 
 #: ../../source/using_api/v2/aggregations.rst:385
 msgid "``num_ranges`` **required** number of ranges to create from the values"
 msgstr ""
-"``num_ranges`` numero **necessario** di intervalli da creare con i valori"
+"``num_ranges`` numero **obbligatorio** di intervalli da creare con i valori"
 
 #: ../../source/using_api/v2/aggregations.rst:386
 msgid ""
 "``lowest_boundary`` **optional** lowest boundary of the num_ranges ranges"
 msgstr ""
-"``lowest_boundary`` limite inferiore **facoltativo** dei num_ranges "
-"intervalli"
+"``lowest_boundary`` limite inferiore **facoltativo** al numero "
+"(\"num_ranges\") di intervalli"
 
 #: ../../source/using_api/v2/aggregations.rst:387
 msgid ""
 "``highest_boundary`` **optional** highest boundary of the num_ranges ranges"
 msgstr ""
-"``highest_boundary`` limite superiore **facoltativo** dei num_ranges "
-"intervalli"
+"``highest_boundary`` limite superiore **facoltativo** al numero "
+"(\"num_ranges\") di intervalli"
 
 #: ../../source/using_api/v2/aggregations.rst:389
 #: ../../source/using_api/v2/aggregations.rst:440
 msgid "Example: myfield values are [ -5, -2, -1, 0, 3, 4, 5, 120]"
-msgstr "Esempio: i valori di miocampo sono [ -5, -2, -1, 0, 3, 4, 5, 120]"
+msgstr "Esempio: i valori di \"miocampo\" sono [ -5, -2, -1, 0, 3, 4, 5, 120]"
 
 #: ../../source/using_api/v2/aggregations.rst:392
 msgid "``range(myfield, equi(5))`` will create the subranges"
@@ -735,7 +735,7 @@ msgid ""
 "Divides the full range of myfield values in sub ranges delimited by the "
 "values set in divisions."
 msgstr ""
-"Divide l'intero intervallo dei valori di miocampo in sotto-intervalli "
+"Divide l'intero intervallo dei valori di \"miocampo\" in sotto-intervalli "
 "delimitati dai valori impostati nelle divisioni."
 
 #: ../../source/using_api/v2/aggregations.rst:432
@@ -744,9 +744,10 @@ msgid ""
 "higher) than the lowest (resp. highest) division value, an additional range "
 "will be added so that all of myfield values are accounted for."
 msgstr ""
-"Se il valore minimo (o massimo) esistente di miocampo è minore (o maggiore) "
-"del valore minimo (o massimo) di divisione, verrà aggiunto un ulteriore "
-"intervallo, in modo che tutti i valori miocampo siano presenti."
+"Se il valore minimo (o massimo) esistente di \"miocampo\" è minore (o "
+"maggiore) del valore minimo (o massimo) di divisione, verrà aggiunto un "
+"ulteriore intervallo, in modo che tutti i valori di \"miocampo\" siano "
+"presenti."
 
 #: ../../source/using_api/v2/aggregations.rst:438
 msgid "``division`` **required** an ordered (ASC) list of decimal values"
@@ -826,8 +827,8 @@ msgid ""
 "which myfield's value lies. (default: [1, 5, 25, 50, 75, 95, 99])"
 msgstr ""
 "``range(miocampo, percentile())`` Restituisce il numero del percentile "
-"all'interno del quale si trova il valore miocampo. (predefinito: [1, 5, 25, "
-"50, 75, 95, 99])"
+"all'interno del quale si trova il valore di \"miocampo\" (predefinito: [1, "
+"5, 25, 50, 75, 95, 99])."
 
 #: ../../source/using_api/v2/aggregations.rst:466
 msgid ""
@@ -835,7 +836,7 @@ msgid ""
 "myfield's value lies."
 msgstr ""
 "``range(miocampo, median())`` Restituisce il numero della mediana "
-"all'interno del quale si trova il valore miocampo."
+"all'interno della quale si trova il valore di \"miocampo\"."
 
 #: ../../source/using_api/v2/aggregations.rst:467
 msgid ""
@@ -843,7 +844,7 @@ msgid ""
 "myfield's value lies. (1 to 10)"
 msgstr ""
 "``range(miocampo, decile())`` Restituisce il numero del decile all'interno "
-"del quale si trova il valore miocampo (da 1 a 10)."
+"del quale si trova il valore di \"miocampo\" (da 1 a 10)."
 
 #: ../../source/using_api/v2/aggregations.rst:468
 msgid ""
@@ -851,4 +852,4 @@ msgid ""
 "which myfield's value lies. (1 to 4)"
 msgstr ""
 "``range(miocampo, quartile())`` Restituisce il numero del quartile "
-"all'interno del quale si trova il valore miocampo (da 1 a 4)."
+"all'interno del quale si trova il valore di \"miocampo\" (da 1 a 4)."

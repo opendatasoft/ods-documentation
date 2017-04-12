@@ -2,13 +2,13 @@
 # Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-16 14:25+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2017\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../source/using_api/v2/aggregations.rst:2
 msgid "Aggregations"
-msgstr ""
+msgstr "Aggregaties"
 
 #: ../../source/using_api/v2/aggregations.rst:4
 msgid ""
@@ -28,100 +28,121 @@ msgid ""
 "dataset describing daily sales for a number of stores worldwide, that is "
 "with the following fields:"
 msgstr ""
+"Om het algemene concept van de aggregatie-API te illustreren, gebruiken we "
+"een dataset die een omschrijving geeft van de dagelijkse verkoopcijfers voor"
+" een aantal winkels wereldwijd, en dit met de volgende velden:"
 
 #: ../../source/using_api/v2/aggregations.rst:7
 msgid "store_name (string)"
-msgstr ""
+msgstr "store_name (string)"
 
 #: ../../source/using_api/v2/aggregations.rst:8
 msgid "store_address (string)"
-msgstr ""
+msgstr "store_address (string)"
 
 #: ../../source/using_api/v2/aggregations.rst:9
 msgid "store_country (string)"
-msgstr ""
+msgstr "store_country (string)"
 
 #: ../../source/using_api/v2/aggregations.rst:10
 msgid "store_coordinates (geo coordinates)"
-msgstr ""
+msgstr "store_coordinates (geo-coördinaten)"
 
 #: ../../source/using_api/v2/aggregations.rst:11
 msgid "sales_date (date)"
-msgstr ""
+msgstr "sales_date (datum)"
 
 #: ../../source/using_api/v2/aggregations.rst:12
 msgid "sales_count (integer)"
-msgstr ""
+msgstr "sales_count (geheel getal)"
 
 #: ../../source/using_api/v2/aggregations.rst:13
 msgid "sales_amount (decimal)"
-msgstr ""
+msgstr "sales_amount (decimaal)"
 
 #: ../../source/using_api/v2/aggregations.rst:15
 msgid ""
 "The aggregate API allows the creation of virtual fields, limited to the "
 "request and that can be used in aggregates."
 msgstr ""
+"Met de aggregatie-API kunnen virtuele velden worden aangemaakt, die beperkt "
+"zijn tot de aanvraag en die gebruikt kunnen worden in aggregaten."
 
 #: ../../source/using_api/v2/aggregations.rst:17
 msgid "> Example: The daily average sale price for each store."
-msgstr ""
+msgstr "> Voorbeeld: De gemiddelde dagelijkse verkoopprijs voor elke winkel."
 
 #: ../../source/using_api/v2/aggregations.rst:19
 msgid ""
 "The main function of the API is to group dataset records by a finite number "
 "of fields and to return aggregated values for other fields."
 msgstr ""
+"De belangrijkste functie van de API is om datasetrecords te groeperen door "
+"middel van een eindig aantal velden en geaggregeerde waarden voor andere "
+"velden te geven."
 
 #: ../../source/using_api/v2/aggregations.rst:22
 msgid ""
 "> Example: the total sales count per country, the total sales amount and the"
 " average of daily average sale price."
 msgstr ""
+"> Voorbeeld: de totale verkooptelling per land, het totale verkoopbedrag en "
+"het gemiddelde van de gemiddelde dagelijkse verkoopprijs."
 
 #: ../../source/using_api/v2/aggregations.rst:24
 msgid "It also allows for more complex aggregations."
-msgstr ""
+msgstr "Hij maakt ook complexere aggregaties mogelijk."
 
 #: ../../source/using_api/v2/aggregations.rst:26
 msgid ""
 "> Example: the average price sale per country during the year: total sales "
 "amount / total sales count."
 msgstr ""
+"> Voorbeeld: de gemiddelde verkoopprijs per land gedurende het jaar: totaal "
+"verkoopbedrag / totale verkooptelling."
 
 #: ../../source/using_api/v2/aggregations.rst:28
 msgid ""
 "You can also join to each group a finite list of fetched values, that is "
 "values extracted from the group rows according to a criteria:"
 msgstr ""
+"U kan ook een eindige lijst van opgehaalde waarden toevoegen aan elke groep,"
+" met andere woorden waarden die geëxtraheerd zijn uit rijen van de groep "
+"overeenkomstig een criterium:"
 
 #: ../../source/using_api/v2/aggregations.rst:31
 msgid ""
 "> Example: the best performing month (ie month with the most sales_amount) "
 "for each country."
 msgstr ""
+"> Voorbeeld: de best presterende maand (die is de maand met het hoogste "
+"sales_amount) voor elk land."
 
 #: ../../source/using_api/v2/aggregations.rst:33
 msgid "All of the following would be summed up in the following request."
-msgstr ""
+msgstr "Al het volgende zou worden opgesomd in de volgende aanvraag."
 
 #: ../../source/using_api/v2/aggregations.rst:56
 msgid "Which would then generate the following response"
-msgstr ""
+msgstr "Welke zou dan de volgende respons genereren"
 
 #: ../../source/using_api/v2/aggregations.rst:92
 msgid "See the API console for the full reference on the request's syntax."
 msgstr ""
+"Zie de API-console voor de volledige verwijzing naar de syntax van de "
+"aanvraag."
 
 #: ../../source/using_api/v2/aggregations.rst:95
 msgid "Aggregate functions"
-msgstr ""
+msgstr "Aggregatiefuncties"
 
 #: ../../source/using_api/v2/aggregations.rst:97
 msgid ""
 "These functions accept as argument a field name or a virtual field and "
 "perform an aggregation function on its values. l"
 msgstr ""
+"Deze functies aanvaarden als argument een veldnaam of een virtueel veld en "
+"voeren een aggregatiefunctie uit op de waarden ervan. I"
 
 #: ../../source/using_api/v2/aggregations.rst:99
 msgid ""
@@ -129,10 +150,14 @@ msgid ""
 " want to 'cook the books' and report a little less sales each day and pocket"
 " the difference at the end of the year."
 msgstr ""
+"Voorbeeld: we gebruiken nog steeds de dataset die bij het begin werd "
+"omschreven en gaan ervan uit dat we \"met cijfers willen sjoemelen\" en elke"
+" dag een iets kleinere omzet willen rapporteren en het verschil op het einde"
+" van het jaar in onze zak willen steken."
 
 #: ../../source/using_api/v2/aggregations.rst:122
 msgid "``MAX(field)``"
-msgstr ""
+msgstr "``MAX(field)``"
 
 #: ../../source/using_api/v2/aggregations.rst:124
 #: ../../source/using_api/v2/aggregations.rst:130
@@ -141,7 +166,7 @@ msgstr ""
 #: ../../source/using_api/v2/aggregations.rst:150
 #: ../../source/using_api/v2/aggregations.rst:156
 msgid "Arguments :"
-msgstr ""
+msgstr "Argumenten:"
 
 #: ../../source/using_api/v2/aggregations.rst:126
 #: ../../source/using_api/v2/aggregations.rst:132
@@ -150,54 +175,59 @@ msgstr ""
 #: ../../source/using_api/v2/aggregations.rst:152
 #: ../../source/using_api/v2/aggregations.rst:164
 msgid "``field`` a decimal/integer field"
-msgstr ""
+msgstr "``field`` een decimaal/geheel getal-veld"
 
 #: ../../source/using_api/v2/aggregations.rst:128
 msgid "``MIN(field)``"
-msgstr ""
+msgstr "``MIN(field)``"
 
 #: ../../source/using_api/v2/aggregations.rst:134
 msgid "``SUM(field)``"
-msgstr ""
+msgstr "``SUM(field)``"
 
 #: ../../source/using_api/v2/aggregations.rst:140
 msgid "``AVG(field)``"
-msgstr ""
+msgstr "``AVG(field)``"
 
 #: ../../source/using_api/v2/aggregations.rst:146
 msgid "``COUNT()``"
-msgstr ""
+msgstr "``COUNT()``"
 
 #: ../../source/using_api/v2/aggregations.rst:148
 msgid "``STDDEV(field)`` standard deviation"
-msgstr ""
+msgstr "``STDDEV(field)`` standaard afwijking"
 
 #: ../../source/using_api/v2/aggregations.rst:154
 msgid "``SUMSQUARES(field)`` sum of the squares"
-msgstr ""
+msgstr "``SUMSQUARES(field)`` som van de vierkanten"
 
 #: ../../source/using_api/v2/aggregations.rst:158
 msgid "```field`` a decimal/integer field"
-msgstr ""
+msgstr "``field`` een decimaal/geheel getal-veld"
 
 #: ../../source/using_api/v2/aggregations.rst:160
 msgid ""
 "``PERCENTILES(field, percents)`` a map of the  percentiles values (indexed "
 "by percent) within the current group."
 msgstr ""
+"``PERCENTILES(field, percents)`` een kaart van de waarde van de percentielen"
+" (geïndexeerd per procent) binnen de huidige groep."
 
 #: ../../source/using_api/v2/aggregations.rst:162
 #: ../../source/using_api/v2/aggregations.rst:295
 #: ../../source/using_api/v2/aggregations.rst:382
 #: ../../source/using_api/v2/aggregations.rst:435
 msgid "Arguments:"
-msgstr ""
+msgstr "Argumenten:"
 
 #: ../../source/using_api/v2/aggregations.rst:165
 msgid ""
 "``percents`` a list of percentages for which we want a percentile value. Can"
 " accept both integer and decimal percentages (ie both 99 and 99.9)"
 msgstr ""
+"``percents`` een lijst met percentages waarvoor we een percentielwaarde "
+"willen. Kan zowel percentages als geheel getal als getal met decimalen "
+"aanvaarden (zowel 99 als 99,9)"
 
 #: ../../source/using_api/v2/aggregations.rst:167
 msgid "Examples:"
@@ -208,16 +238,20 @@ msgid ""
 "``PERCENTILES(my_decimal_field)`` -> ``{0: XX, 1: XY, ..., 99: YZ, 100: "
 "ZZ}``"
 msgstr ""
+"``PERCENTILES(my_decimal_field)`` -> ``{0: XX, 1: XY, ..., 99: YZ, 100: "
+"ZZ}``"
 
 #: ../../source/using_api/v2/aggregations.rst:170
 msgid ""
 "``PERCENTILES(my_decimal_field, [0, 50, 90, 99, 99.9])`` -> ``{0: XX, 50: "
 "XY, 90: YY, 99: YZ, 99.9: ZZ}``"
 msgstr ""
+"``PERCENTILES(my_decimal_field, [0, 50, 90, 99, 99.9])`` -> ``{0: XX, 50: "
+"XY, 90: YY, 99: YZ, 99.9: ZZ}``"
 
 #: ../../source/using_api/v2/aggregations.rst:173
 msgid "Incremental functions for aggregates"
-msgstr ""
+msgstr "Incrementele functies voor aggregaten"
 
 #: ../../source/using_api/v2/aggregations.rst:176
 msgid ""
@@ -269,7 +303,7 @@ msgstr ""
 #: ../../source/using_api/v2/aggregations.rst:229
 #: ../../source/using_api/v2/aggregations.rst:300
 msgid "Example:"
-msgstr ""
+msgstr "Voorbeeld:"
 
 #: ../../source/using_api/v2/aggregations.rst:241
 msgid "Simple field"

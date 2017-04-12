@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-16 14:25+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Datawords Rel2 <datawords.rel.2@gmail.com>, 2017\n"
+"Last-Translator: Datawords_trad_1 <datawords.translator.it1@gmail.com>, 2017\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,19 +28,19 @@ msgid ""
 "important number of datasets by importing them from an external source such "
 "as a CSW catalog or an ArcGIS service, among many others."
 msgstr ""
-"Gl harvester permettono agli amministratori di creare e aggiornare "
+"Gli harvester permettono agli amministratori di creare e aggiornare "
 "facilmente grandi quantità di dataset, importandoli da origini esterne come "
 "un catalogo CSW o un servizio ArcGIS e molto altro."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:6
 msgid "The two main usages of harvesters are:"
-msgstr "Gli harvester permettono principalmente di:"
+msgstr "Vengono principalmente utilizzati per:"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:8
 msgid "Bootstrap your portal with datasets from an existing portal"
 msgstr ""
 "eseguire il bootstrap del portale con dataset provenienti da un portale "
-"esistente;l"
+"esistente;"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:9
 msgid "Keep your datasets synchronised with an external service"
@@ -68,8 +68,8 @@ msgid ""
 "backoffice, and then on **Add harvester**. You will be asked to choose the "
 "type of the portal you want to harvest, and a name for your harvester."
 msgstr ""
-"Prima di tutto, clicca sul menu **Harvester** e quindi su **Aggiungi "
-"harvester** nell'interfaccia di back-office. Il sistema chiederà di "
+"Per iniziare, nel menu dell'interfaccia di back-office, clicca su "
+"**Harvester** e quindi su **Aggiungi harvester**. Ti verrà chiesto di "
 "scegliere il tipo di portale su cui eseguire la raccolta e il nome "
 "dell'harvester."
 
@@ -79,14 +79,15 @@ msgid ""
 "to the configuration form of the harvester. As it depends on the harvester "
 "type, please refer to each harvester page below for detailed instructions."
 msgstr ""
-"Al termine, clicca su **Crea un harvester** per aprire il modulo di "
-"configurazione, che varia a seconda del tipo di harvester type. Di seguito "
-"sono riportate le relative pagine, con informazioni dettagliate in "
-"proposito."
+"In seguito, clicca su **Crea un harvester** per aprire il modulo di "
+"configurazione, il cui aspetto può variare in funzione del tipo di "
+"harvester. Per maggiori dettagli, consulta le pagine dei vari harvester "
+"riportate nella sezione più in basso."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:47
 msgid "Some options are available for every harvester type such as:"
-msgstr "Le seguenti opzioni sono disponibili per tutti i tipi di harvester:"
+msgstr ""
+"Alcune opzioni sono disponibili per tutti i tipi di harvester. Ad esempio:"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:49
 msgid ""
@@ -96,9 +97,9 @@ msgid ""
 "they are deleted from the external service)."
 msgstr ""
 "**Aggiorna in caso di eliminazione**: se i dataset di origine vengono "
-"eliminati sul portale su cui viene eseguito l'harvesting, verranno "
-"cancellati anche sul portale OpenDataSoft corrente. Altrimenti, quest'ultimo"
-" potrebbe includere dataset non più presenti sul servizio esterno."
+"eliminati sul portale su cui è stato eseguito l'harvesting, questi verranno "
+"cancellati anche sul portale OpenDataSoft. Altrimenti, il tuo portale "
+"potrebbe includere dataset non più presenti nel servizio esterno."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:50
 msgid ""
@@ -108,17 +109,21 @@ msgid ""
 "Otherwise, your datasets will be linked to the external service and will "
 "access remote datasets via their URL for every publishing."
 msgstr ""
-"**Scarica risorse**: scarica le risorse anziché allegarle tramite un URL. "
-"Questa opzione permette di separare i dataset dal portale remoto, copiando "
-"in modo permanente tutti i dati necessari sulla piattaforma OpenDataSoft. "
-"Altrimenti, i dataset resteranno collegati al servizio esterno e a ogni "
-"pubblicazioni accederanno ai dataset remoti tramite il relativo URL."
+"**Scarica risorse**: scarica le risorse, anziché allegarle tramite un URL. "
+"Questa opzione permette di rompere il legame esistente tra i tuoi dataset e "
+"il portale remoto, copiando in modo permanente tutti i dati necessari sulla "
+"piattaforma OpenDataSoft. In caso contrario, i tuoi dataset resteranno "
+"collegati al servizio esterno e, ad ogni pubblicazione, accederanno ai "
+"dataset remoti tramite il relativo URL."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:51
 msgid ""
 "**Restrict visibility**: make the visibility of harvested datasets "
 "restricted. Otherwise, they will have the default visibility of your portal."
 msgstr ""
+"**Limita visibilità**: limita la visibilità dei dataset su cui si esegue "
+"l'harvesting. In caso contrario, viene assegnato il livello di visibilità "
+"predefinito del portale."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:52
 msgid ""
@@ -127,6 +132,10 @@ msgid ""
 "force the theme or publisher instead of using the one used on the external "
 "service."
 msgstr ""
+"**Metadati predefiniti**, **Metadati INSPIRE**, **Metadati DCAT**: "
+"consentono di ignorare alcuni metadati presenti nei dataset raccolti. Sono "
+"utili per imporre il tema o l'entità di pubblicazione, al posto di quelli "
+"assegnati dal servizio esterno."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:54
 msgid ""
@@ -135,16 +144,23 @@ msgid ""
 "and descriptions and they look correct, you are all set. Otherwise, please "
 "double check your configuration."
 msgstr ""
+"Terminata la configurazione dell'harvester, clicca sul pulsante "
+"**Anteprima** per eseguire un test su alcuni dataset. Se i titoli e le "
+"descrizioni vengono visualizzati correttamente, la configurazione è andata a"
+" buon fine, altrimenti verifica le impostazioni inserite."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:57
 msgid "Running a harvester"
-msgstr ""
+msgstr "Esecuzione dell'harvester"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:59
 msgid ""
 "The harvesting process can be quite long on external services with many "
 "datasets or with big ones, so it is split in two phases."
 msgstr ""
+"Quando i dataset del servizio esterno sono numerosi o di grandi dimensioni, "
+"la procedura di harvesting può risultare piuttosto lunga, perciò viene "
+"suddivisa in due fasi."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:61
 msgid ""
@@ -154,16 +170,24 @@ msgid ""
 "and resources (as URLs or as files depending on the *download resources* "
 "option). This happens when you click on the **Start harvester** button."
 msgstr ""
+"Inizialmente, l'harvester si collega al servizio remoto e rileva tutti i "
+"dataset presenti. Per ciascuno di essi, crea quindi un dataset non "
+"pubblicato contenente tutti i metadati e le risorse disponibili (in formato "
+"URL o file, a seconda delle impostazioni definite in *Scarica risorse*). Per"
+" avviare questo processo, clicca su **Avvia harvester**."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:62
 msgid ""
 "Next, it will process and publish all the harvested datasets. This step can "
 "take a while. This happens when you click on the **Publish** button."
 msgstr ""
+"Successivamente, l'harvester elabora e pubblica tutti i dataset raccolti. "
+"Questo passo può richiedere un po' di tempo, e viene avviato cliccando su "
+"**Pubblica**."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:65
 msgid "Editing harvested datasets"
-msgstr ""
+msgstr "Modifica dei dataset raccolti dall'harvester"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:67
 msgid ""
@@ -172,10 +196,14 @@ msgid ""
 "metadata by clicking on **Override** and adding your own value. This "
 "override will be kept even if you restart your harvester."
 msgstr ""
+"Prima di pubblicarli, è possibile modificare i metadati dei dataset "
+"raccolti. Nella scheda Informazioni del dataset, puoi ignorare manualmente i"
+" metadati cliccando su **Ignora** e aggiungere il valore desiderato. "
+"L’impostazione verrà mantenuta anche dopo aver riavviato l'harvester."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:70
 msgid "Deleting a harvester"
-msgstr ""
+msgstr "Eliminazione di un harvester"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:72
 msgid ""
@@ -183,6 +211,9 @@ msgid ""
 " can choose between keeping the harvested datasets (they will be kept as "
 "regular datasets in your catalog), or by deleting them with the harvester."
 msgstr ""
+"Per eliminare un harvester, clicca sul pulsante **Elimina l'harvester** e "
+"scegli se mantenere i dataset raccolti, conservandoli tra quelli del tuo "
+"catalogo, o eliminarli insieme all'harvester."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:74
 msgid ""
@@ -191,22 +222,26 @@ msgid ""
 "be duplicated if you recreate another harvester on the same external "
 "service."
 msgstr ""
+"Se decidi di mantenerli, ricorda che in seguito dovrai intervenire "
+"singolarmente su ciascuno di essi per annullarne la pubblicazione o per "
+"eliminarli. Inoltre, se creerai un nuovo harvester sullo stesso servizio "
+"esterno, essi risulteranno duplicati."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:77
 msgid "Harvester types"
-msgstr ""
+msgstr "Tipi di harvester"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:80
 msgid "Portals"
-msgstr ""
+msgstr "Portali"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:94
 msgid "Services"
-msgstr ""
+msgstr "Servizi"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:103
 msgid "Scheduling"
-msgstr ""
+msgstr "Pianificazione"
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:105
 msgid ""
@@ -217,12 +252,20 @@ msgid ""
 "to choose the time of day when it will run because it can not run more than "
 "once a day."
 msgstr ""
+"Per impostare l'esecuzione periodica di un harvester, utilizza la relativa "
+"pagina di configurazione. Scorri in fondo alla pagina e clicca su \"Imposta "
+"esecuzioni ricorrenti\". La frequenza di esecuzione può essere giornaliera, "
+"oppure limitata ad alcuni specifici giorni della settimana o del mese. In "
+"ogni caso, è necessario selezionare l'orario di avvio dell’operazione, che "
+"può essere eseguita solo una volta al giorno."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:107
 msgid ""
 "The periodic run will only trigger if the harvester has been run at least "
 "once."
 msgstr ""
+"L’operazione verrà eseguita periodicamente solo se l'harvester è già stato "
+"avviato almeno una volta."
 
 #: ../../source/sourcing_and_processing_data/harvesters.rst:109
 msgid ""
@@ -230,3 +273,6 @@ msgid ""
 "datasets will be republished, but unpublished datasets or new datasets will "
 "not be automatically published."
 msgstr ""
+"Al termine dell'esecuzione pianificata, tutti i dataset raccolti che al "
+"momento sono già pubblicati verranno ripubblicati. Per quelli nuovi o non "
+"pubblicati, invece, la pubblicazione non è automatica."

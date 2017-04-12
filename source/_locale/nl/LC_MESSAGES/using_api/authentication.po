@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-16 14:25+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2017\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ../../source/using_api/authentication.rst:2
 msgid "Authenticating yourself"
-msgstr ""
+msgstr "Uzelf identificeren"
 
 #: ../../source/using_api/authentication.rst:4
 msgid ""
@@ -28,26 +29,34 @@ msgid ""
 " loosing special access privileges you may have obtained on either portals "
 "or datasets."
 msgstr ""
+"Het is zeer belangrijk dat u het platform vertelt wie u bent en wanneer u "
+"aanvragen doet aan de API of anders wordt u behandeld als een anonieme "
+"gebruiker en verliest u speciale toegangsprivileges die u hebt bekomen voor "
+"portalen of datasets."
 
 #: ../../source/using_api/authentication.rst:8
 msgid "In order for the platform to know who you are, you need to either:"
-msgstr ""
+msgstr "Opdat het platform weet wie u bent, moet u ofwel:"
 
 #: ../../source/using_api/authentication.rst:10
 msgid ""
 "be logged in a portal and make queries from the portal on the portal (using "
 "the console for example), or"
 msgstr ""
+"ingelogd zijn op een portaal en zoekopdrachten uitvoeren vanuit het portaal "
+"op het portaal (bijvoorbeeld door de console te gebruiken), of"
 
 #: ../../source/using_api/authentication.rst:11
 msgid ""
 "provide an **API key** along with your requests that will uniquely identify "
 "you."
 msgstr ""
+"een **API-sleutel** opgeven samen met uw aanvragen waarmee u op unieke wijze"
+" kan worden geïdentificeerd.d"
 
 #: ../../source/using_api/authentication.rst:14
 msgid "Finding and generating API keys"
-msgstr ""
+msgstr "API-sleutels genereren en terugvinden"
 
 #: ../../source/using_api/authentication.rst:16
 msgid ""
@@ -55,12 +64,18 @@ msgid ""
 "``http://<youropendatasoftportal>.com/account/`` (or by clicking on your "
 "name in the header)."
 msgstr ""
+"Om de lijst met API-sleutels te zien, ga naar uw profielpagina op  "
+"``http://<youropendatasoftportal>.com/account/`` (of klik op uw naam in de "
+"header)."
 
 #: ../../source/using_api/authentication.rst:29
 msgid ""
 "Once there, go to the tab entitled *My API keys* to see the list of your "
 "active keys, revoke them and create new ones."
 msgstr ""
+"Eenmaal u daar bent aangekomen, ga naar het tabblad met als titel *Mijn API-"
+"sleutels* om de lijst met uw actieve sleutels te zien, herroep deze en maak "
+"nieuwe aan."
 
 #: ../../source/using_api/authentication.rst:44
 msgid ""
@@ -68,16 +83,22 @@ msgid ""
 "identically. Which means that they all grant the same rights (yours) to any "
 "person using them. Therefore you shouldn't share your keys."
 msgstr ""
+"Hoewel u zoveel sleutels kan hebben als u wil, zullen ze u allemaal op "
+"identieke wijze identificeren. Dit betekent dat ze allemaal dezelfde rechten"
+" (die van u) verlenen aan elke persoon die ze gebruikt. Daarom mag u uw "
+"sleutels niet delen."
 
 #: ../../source/using_api/authentication.rst:49
 msgid "Providing API keys within your requests"
-msgstr ""
+msgstr "API-sleutels verschaffen in uw aanvragen"
 
 #: ../../source/using_api/authentication.rst:51
 msgid ""
 "Now that you have an API key, you can pass it along your request through the"
 " query parameter ``apikey``."
 msgstr ""
+"Nu u een API-sleutel heeft, kan u deze samen met uw aanvraag doorgeven via "
+"de zoekparameters ``apikey``."
 
 #: ../../source/using_api/authentication.rst:53
 msgid ""
@@ -85,20 +106,25 @@ msgid ""
 "would like to retrieve the list of datasets from an external application you"
 " are building."
 msgstr ""
+"Om dit te illustreren, laten we zeggen dat u een privaat portaal hebt "
+"opgemaakt en dat u de lijst met datasets uit een externe bron die u aan het "
+"bouwen bent, wil ophalen."
 
 #: ../../source/using_api/authentication.rst:56
 msgid "If your application calls::"
-msgstr ""
+msgstr "Indien uw applicatie belt:"
 
 #: ../../source/using_api/authentication.rst:60
 msgid "You'll receive a ``403 Forbidden`` error."
-msgstr ""
+msgstr "U krijgt een ``403 Forbidden`` fout."
 
 #: ../../source/using_api/authentication.rst:62
 msgid "Whereas if you call::"
-msgstr ""
+msgstr "Terwijl wanneer u belt:"
 
 #: ../../source/using_api/authentication.rst:66
 msgid ""
 "You'll get a JSON with the full list of datasets available on the portal."
 msgstr ""
+"U een JSON krijgt met de volledige lijst met datasets die beschikbaar zijn "
+"op het portaal."
