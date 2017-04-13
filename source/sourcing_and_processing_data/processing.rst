@@ -1438,8 +1438,8 @@ US   Country  States                               Counties  ZCTA
 GeoJoin
 ~~~~~~~
 
-These processor collection retrieves administrative divisions **Geo Shapes** from a key (postcode, county code ...). Each country have a dedicated processor and specific referentials.
-Datasets are available on https://public.opendatasoft.com and referenced in the table below.
+This processor collection retrieves administrative divisions **Geo Shapes** from a key (postcode, county code, etc.). Each country has a dedicated processor and specific referentials.
+These referentials, which are referenced in the tables below, can be found in datasets available on https://public.opendatasoft.com.
 
 France
 
