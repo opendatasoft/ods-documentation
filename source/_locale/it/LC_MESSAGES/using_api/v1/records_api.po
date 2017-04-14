@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-03 14:27+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Datawords_trad_1 <datawords.translator.it1@gmail.com>, 2017\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,11 +20,11 @@ msgstr ""
 
 #: ../../source/using_api/v1/records_api.rst:2
 msgid "Dataset Records APIs"
-msgstr ""
+msgstr "API per i record dei dataset"
 
 #: ../../source/using_api/v1/records_api.rst:5
 msgid "Records Analysis API"
-msgstr ""
+msgstr "API per l'analisi dei record"
 
 #: ../../source/using_api/v1/records_api.rst:7
 msgid ""
@@ -32,10 +33,14 @@ msgid ""
 " can used as an input of modern charting libraries such as **Highchart.js** "
 "or **D3.js**."
 msgstr ""
+"Questa API offre potenti funzionalità di analisi su un set di record "
+"selezionati, restituendo i risultati ottenuti in un formato leggero e facile"
+" da analizzare. Tale formato può essere utilizzato come input nelle moderne "
+"librerie di grafici come **Highchart.js** o **D3.js**."
 
 #: ../../source/using_api/v1/records_api.rst:10
 msgid "**API endpoint**: ``/api/records/1.0/analyze``"
-msgstr ""
+msgstr "**Endpoint API**: ``/api/records/1.0/analyze``"
 
 #: ../../source/using_api/v1/records_api.rst:12
 #: ../../source/using_api/v1/records_api.rst:70
@@ -43,7 +48,7 @@ msgstr ""
 #: ../../source/using_api/v1/records_api.rst:180
 #: ../../source/using_api/v1/records_api.rst:208
 msgid "**Query**"
-msgstr ""
+msgstr "**Query**"
 
 #: ../../source/using_api/v1/records_api.rst:17
 #: ../../source/using_api/v1/records_api.rst:75
@@ -51,7 +56,7 @@ msgstr ""
 #: ../../source/using_api/v1/records_api.rst:185
 #: ../../source/using_api/v1/records_api.rst:213
 msgid "Parameter Name"
-msgstr ""
+msgstr "Nome parametro"
 
 #: ../../source/using_api/v1/records_api.rst:18
 #: ../../source/using_api/v1/records_api.rst:76
@@ -59,7 +64,7 @@ msgstr ""
 #: ../../source/using_api/v1/records_api.rst:186
 #: ../../source/using_api/v1/records_api.rst:214
 msgid "Description"
-msgstr ""
+msgstr "Descrizione"
 
 #: ../../source/using_api/v1/records_api.rst:19
 #: ../../source/using_api/v1/records_api.rst:77
@@ -67,19 +72,19 @@ msgstr ""
 #: ../../source/using_api/v1/records_api.rst:187
 #: ../../source/using_api/v1/records_api.rst:215
 msgid "``datasetid``"
-msgstr ""
+msgstr "``datasetid``"
 
 #: ../../source/using_api/v1/records_api.rst:20
 #: ../../source/using_api/v1/records_api.rst:135
 msgid "Identifier of the dataset. This field is mandatory."
-msgstr ""
+msgstr "Identificatore del dataset. Questo campo è obbligatorio."
 
 #: ../../source/using_api/v1/records_api.rst:21
 #: ../../source/using_api/v1/records_api.rst:80
 #: ../../source/using_api/v1/records_api.rst:136
 #: ../../source/using_api/v1/records_api.rst:218
 msgid "``q``"
-msgstr ""
+msgstr "``q``"
 
 #: ../../source/using_api/v1/records_api.rst:22
 #: ../../source/using_api/v1/records_api.rst:81
@@ -89,13 +94,15 @@ msgid ""
 "The full-text query. This parameter can be left empty, in which case no "
 "full-text filtering on the result set occurs."
 msgstr ""
+"Query full-text. Questo parametro può essere lasciato vuoto; in tal caso, "
+"non verrà applicato alcun filtro full-text al set dei risultati."
 
 #: ../../source/using_api/v1/records_api.rst:23
 #: ../../source/using_api/v1/records_api.rst:83
 #: ../../source/using_api/v1/records_api.rst:139
 #: ../../source/using_api/v1/records_api.rst:221
 msgid "``geofilter.distance``"
-msgstr ""
+msgstr "``geofilter.distance``"
 
 #: ../../source/using_api/v1/records_api.rst:24
 #: ../../source/using_api/v1/records_api.rst:84
@@ -107,13 +114,17 @@ msgid ""
 "expressed in meters): ``latitude,longitude,distance`` . Example: "
 "``geofilter.distance=48.8520930694,2.34738897685,1000``"
 msgstr ""
+"Limita il set dei risultati a un'area geografica definita da un cerchio (le "
+"coordinate del centro del cerchio sono espresse in formato WGS84 e la "
+"distanza è espressa in metri): ``latitudine,longitudine,distanza``. Esempio:"
+" ``geofilter.distance=48.8520930694,2.34738897685,1000``."
 
 #: ../../source/using_api/v1/records_api.rst:25
 #: ../../source/using_api/v1/records_api.rst:87
 #: ../../source/using_api/v1/records_api.rst:143
 #: ../../source/using_api/v1/records_api.rst:225
 msgid "``geofilter.polygon``"
-msgstr ""
+msgstr "``geofilter.polygon``"
 
 #: ../../source/using_api/v1/records_api.rst:26
 #: ../../source/using_api/v1/records_api.rst:88
@@ -125,13 +136,17 @@ msgid ""
 "``(lat1,lon1),(lat2,lon2),(lat3,lon3)`` . Example: "
 "``geofilter.polygon=(48.883086,2.379072),(48.879022,2.379930),(48.883651,2.386968)``"
 msgstr ""
+"Limita il set di risultati a un'area geografica definita da un poligono (le "
+"coordinate dei punti sono espresse in formato WGS84): "
+"``(lat1,lon1),(lat2,lon2),(lat3,lon3)``. Esempio: "
+"``geofilter.polygon=(48.883086,2.379072),(48.879022,2.379930),(48.883651,2.386968)``."
 
 #: ../../source/using_api/v1/records_api.rst:27
 #: ../../source/using_api/v1/records_api.rst:95
 #: ../../source/using_api/v1/records_api.rst:147
 #: ../../source/using_api/v1/records_api.rst:233
 msgid "``refine.<FACET>``"
-msgstr ""
+msgstr "``refine.<FACET>``"
 
 #: ../../source/using_api/v1/records_api.rst:28
 #: ../../source/using_api/v1/records_api.rst:96
@@ -143,13 +158,17 @@ msgid ""
 "for different facets. Examples: ``refine.city=Paris`` , "
 "``refine.city=Paris&refine.year=2013``"
 msgstr ""
+"Filtro basato sui facet. Questo parametro limita il set ai risultati "
+"corrispondenti a un valore facet. Può essere utilizzato più volte per lo "
+"stesso facet o per più facet. Esempi: ``refine.city=Paris``, "
+"``refine.city=Paris&refine.year=2013``."
 
 #: ../../source/using_api/v1/records_api.rst:29
 #: ../../source/using_api/v1/records_api.rst:99
 #: ../../source/using_api/v1/records_api.rst:151
 #: ../../source/using_api/v1/records_api.rst:237
 msgid "``exclude.<FACET>``"
-msgstr ""
+msgstr "``exclude.<FACET>``"
 
 #: ../../source/using_api/v1/records_api.rst:30
 #: ../../source/using_api/v1/records_api.rst:100
@@ -161,6 +180,10 @@ msgid ""
 " facet or for different facets. Examples: ``exclude.city=Paris`` , "
 "``exclude.city=Paris&exclude.year=2013``"
 msgstr ""
+"Filtro basato sui facet. Questo parametro esclude dal set i risultati "
+"corrispondenti a un valore facet. Può essere utilizzato più volte lo stesso "
+"facet o per più facet. Esempi: ``exclude.city=Paris``, "
+"``exclude.city=Paris&exclude.year=2013``"
 
 #: ../../source/using_api/v1/records_api.rst:31
 #: ../../source/using_api/v1/records_api.rst:108
@@ -168,13 +191,15 @@ msgstr ""
 #: ../../source/using_api/v1/records_api.rst:195
 #: ../../source/using_api/v1/records_api.rst:256
 msgid "``format``"
-msgstr ""
+msgstr "``format``"
 
 #: ../../source/using_api/v1/records_api.rst:32
 #: ../../source/using_api/v1/records_api.rst:156
 msgid ""
 "Format of the response output. One of JSON (default), CSV and GeoJSONP."
 msgstr ""
+"Formato dell'output di risposta. Può essere JSON (predefinito), CSV o "
+"GeoJSONP."
 
 #: ../../source/using_api/v1/records_api.rst:33
 #: ../../source/using_api/v1/records_api.rst:110
@@ -182,17 +207,17 @@ msgstr ""
 #: ../../source/using_api/v1/records_api.rst:197
 #: ../../source/using_api/v1/records_api.rst:258
 msgid "``callback``"
-msgstr ""
+msgstr "``callback``"
 
 #: ../../source/using_api/v1/records_api.rst:34
 #: ../../source/using_api/v1/records_api.rst:158
 #: ../../source/using_api/v1/records_api.rst:198
 msgid "JSONP callback. Example: ``format=jsonp&callback=myFunction``"
-msgstr ""
+msgstr "Callback JSONP. Esempio: ``format=jsonp&callback=miaFunzione``"
 
 #: ../../source/using_api/v1/records_api.rst:35
 msgid "``x``"
-msgstr ""
+msgstr "``x``"
 
 #: ../../source/using_api/v1/records_api.rst:36
 msgid ""
@@ -204,10 +229,17 @@ msgid ""
 "and ``periodic``  parameters. For other field types, the actual field values"
 " are used as x values."
 msgstr ""
+"Nome del campo su cui sarà basata l'aggregazione dei dati. Questo parametro "
+"è obbligatorio. Permette di analizzare un subset di dati in base ai diversi "
+"valori dei campi. Il comportamento può variare a seconda del tipo di campo. "
+"Per i campi **Data** e **Data/ora**, le sezioni vengono create a partire "
+"dalle date in base al livello di aggregazione definito dai parametri "
+"``precision`` e ``periodic``. Per gli altri campi, i valori effettivi dei "
+"campi sono utilizzati come valori x."
 
 #: ../../source/using_api/v1/records_api.rst:37
 msgid "``y.<SERIE>.func``"
-msgstr ""
+msgstr "``y.<SERIE>.func``"
 
 #: ../../source/using_api/v1/records_api.rst:38
 msgid ""
@@ -220,10 +252,19 @@ msgid ""
 "simply the number of records for the ``COUNT``  function) for each value of "
 "x."
 msgstr ""
+"Definizione della funzione di aggregazione dell'analisi. È possibile "
+"calcolare più serie contemporaneamente. È sufficiente attribuire a questo "
+"parametro il nome di una serie arbitraria che potrà essere riutilizzato per "
+"specificare l'espressione aggregata associata. L'elenco delle funzioni di "
+"aggregazione disponibili è il seguente: ``COUNT``, ``AVG``, ``SUM``, "
+"``MIN``, ``MAX``, ``STDDEV``, ``SUMSQUARES``. Queste funzioni restituiscono "
+"il risultato della loro esecuzione sull'espressione fornita in "
+"y.<SERIE>.expr (o semplicemente il numero di record della funzione "
+"``COUNT``) per ogni valore di x."
 
 #: ../../source/using_api/v1/records_api.rst:39
 msgid "``y.<SERIE>.expr``"
-msgstr ""
+msgstr "``y.<SERIE>.expr``"
 
 #: ../../source/using_api/v1/records_api.rst:40
 msgid ""
@@ -234,10 +275,17 @@ msgid ""
 "in the Dataset (**Int** or **Double**), or a mathematical expression (see "
 "below to get more details on the expression language)."
 msgstr ""
+"Definisce il valore da aggregare. Questo parametro è obbligatorio per ogni "
+"funzione di aggregazione, esclusa la funzione ``COUNT``. Il parametro "
+"<SERIES> deve avere lo stesso nome di quello utilizzato per la funzione di "
+"aggregazione corrispondente richiesta. Il parametro può contenere il nome di"
+" un campo numerico del Dataset (**Int** o **Double**) o un'espressione "
+"matematica. Per ulteriori informazioni sul linguaggio dell'espressione, "
+"vedere più avanti."
 
 #: ../../source/using_api/v1/records_api.rst:41
 msgid "``y.<SERIE>.cumulative``"
-msgstr ""
+msgstr "``y.<SERIE>.cumulative``"
 
 #: ../../source/using_api/v1/records_api.rst:42
 msgid ""
@@ -245,20 +293,25 @@ msgid ""
 "parameter is set to true, the results of a series are recursively summed up "
 "(``serie(x) = serie(x) + serie(x-1)`` )."
 msgstr ""
+"Questo parametro accetta i valori ``true`` e ``false`` (predefinito). Se è "
+"impostato su true, i risultati di una serie vengono sommati in modo "
+"ricorsivo (``serie(x) = serie(x) + serie(x-1)``)."
 
 #: ../../source/using_api/v1/records_api.rst:43
 msgid "``maxpoints``"
-msgstr ""
+msgstr "``maxpoints``"
 
 #: ../../source/using_api/v1/records_api.rst:44
 msgid ""
 "Limits the maximum number of results returned in the serie. By default there"
 " is no limit."
 msgstr ""
+"Limita il numero massimo di risultati restituiti dalla serie. Per "
+"impostazione predefinita non è previsto alcun limite."
 
 #: ../../source/using_api/v1/records_api.rst:45
 msgid "``periodic``"
-msgstr ""
+msgstr "``periodic``"
 
 #: ../../source/using_api/v1/records_api.rst:46
 msgid ""
@@ -272,10 +325,19 @@ msgid ""
 "used, the generated value range from 0 to 6 where 0 corresponds to Monday "
 "and 6 to Sunday."
 msgstr ""
+"Utilizzato solo nei casi in cui x è del tipo **Data** o **Data/ora**. "
+"Definisce il livello a cui deve essere eseguita l'aggregazione. I possibili "
+"valori sono ``year`` (predefinito), ``month``, ``week``, ``weekday``, "
+"``day``, ``hour``, ``minute``. Questo parametro permette, ad esempio, di "
+"calcolare le aggregazioni sui mesi di tutti gli anni. Impostando il valore "
+"su ``weekday``, l'output sarà: ``[{\"x\": {\"weekday\":0},\"series1\": 12}, "
+"{\"x\": {\"weekday\":1},\"series1\": 30}]``. Quando si utilizza ``weekday``,"
+" il valore generato è compreso tra 0 e 6, dove 0 corrisponde a lunedì e 6 a "
+"domenica."
 
 #: ../../source/using_api/v1/records_api.rst:47
 msgid "``precision``"
-msgstr ""
+msgstr "``precision``"
 
 #: ../../source/using_api/v1/records_api.rst:48
 msgid ""
@@ -290,11 +352,22 @@ msgid ""
 "  will output ``[{\"x\": {\"year\": 2002, \"month\":1},\"series1\": 3}, "
 "{\"x\": {\"year\": 2002, \"month\":1},\"series1\": 5}]``"
 msgstr ""
+"Utilizzato solo nei casi in cui X è del tipo **Data** o **Data/ora**. "
+"Definisce la precisione dell'aggregazione. I possibili valori sono ``year``,"
+" ``month``, ``week``, ``day`` (predefinito), ``hour``, ``minute``. Se "
+"``weekday`` viene fornito come parametro di ``periodic``, il parametro "
+"``precision`` viene ignorato. Questo parametro deve rispettare l'annotazione"
+" ``precision`` del campo. Se il campo è annotato con una precisione "
+"impostata su ``day``, la precisione della serie può essere impostata al "
+"massimo su ``day``. Ad esempio: "
+"``x=event_date&periodic=year&precision=month&y.series1.func=COUNT``  fornirà"
+" come output ``[{\"x\": {\"year\": 2002, \"month\":1},\"series1\": 3}, "
+"{\"x\": {\"year\": 2002, \"month\":1},\"series1\": 5}]``."
 
 #: ../../source/using_api/v1/records_api.rst:49
 #: ../../source/using_api/v1/records_api.rst:241
 msgid "``sort``"
-msgstr ""
+msgstr "``sort``"
 
 #: ../../source/using_api/v1/records_api.rst:50
 msgid ""
@@ -305,25 +378,34 @@ msgid ""
 "``x=city&y.series1.func=SUM&y.series1.expr=population&sort=-x`` , `` "
 "x=city&y.series1.func=SUM&y.series1.expr=population&sort=-series1``"
 msgstr ""
+"Ordina i valori di aggregazione in base alle serie specificate o al "
+"parametro x. Per impostazione predefinita, i valori vengono ordinati in "
+"ordine decrescente secondo il parametro x. È comunque possibile anteporre il"
+" segno meno ('-') all'argomento per ottenere un ordine crescente. Esempi: "
+"``x=city&y.series1.func=SUM&y.series1.expr=population&sort=-x``, `` "
+"x=city&y.series1.func=SUM&y.series1.expr=population&sort=-series1``."
 
 #: ../../source/using_api/v1/records_api.rst:52
 msgid "**Expression language**"
-msgstr ""
+msgstr "**Linguaggio dell'espressione**"
 
 #: ../../source/using_api/v1/records_api.rst:54
 msgid ""
 "An arbitrary expression can be used as the value of the definition of an "
 "aggregated."
 msgstr ""
+"È possibile utilizzare un'espressione arbitraria come valore nella "
+"definizione di un aggregato."
 
 #: ../../source/using_api/v1/records_api.rst:56
 msgid ""
 "Classical numerical operators are available: ``+``, ``-``, ``*``, ``/``"
 msgstr ""
+"Sono disponibili i normali operatori numerici: ``+``, ``-``, ``*``, ``/``."
 
 #: ../../source/using_api/v1/records_api.rst:57
 msgid "Parenthesis can be used to group sub expressions together"
-msgstr ""
+msgstr "Le parentesi permettono di raggruppare le sotto-espressioni."
 
 #: ../../source/using_api/v1/records_api.rst:58
 msgid ""
@@ -332,15 +414,20 @@ msgid ""
 "ceil, floor, rint, atan2, pow, round, random, abs, max, min, ulp, signum, "
 "sinh, cosh, tanh, hypot"
 msgstr ""
+"Sono disponibili inoltre le seguenti funzioni: time, sin, cos, tan, asin, "
+"acos, atan, toRadians, toDegrees, exp, log, log10, sqrt, cbrt, "
+"IEEEremainder, ceil, floor, rint, atan2, pow, round, random, abs, max, min, "
+"ulp, signum, sinh, cosh, tanh, hypot."
 
 #: ../../source/using_api/v1/records_api.rst:60
 msgid ""
 "Example: ``x=espece_arbre&y.series1.func=Min&y.series1.expr=sin(height)*2``"
 msgstr ""
+"Esempio: ``x=espece_arbre&y.series1.func=Min&y.series1.expr=sin(height)*2``"
 
 #: ../../source/using_api/v1/records_api.rst:63
 msgid "Records Download API"
-msgstr ""
+msgstr "API per il download dei record"
 
 #: ../../source/using_api/v1/records_api.rst:65
 msgid ""
@@ -348,10 +435,14 @@ msgid ""
 " one or serveral datasets at once. The HTTP answer is streamed which makes "
 "it possible to optimize the memory consumption client side."
 msgstr ""
+"Questa potente API permette di scaricare set di record di grandi dimensioni "
+"da uno o più dataset contemporaneamente. La risposta HTTP avviene in "
+"streaming e permette quindi di ottimizzare il consumo di memoria lato "
+"client."
 
 #: ../../source/using_api/v1/records_api.rst:68
 msgid "**API endpoint**: ``/api/records/1.0/download``"
-msgstr ""
+msgstr "**Endpoint API**: ``/api/records/1.0/download``"
 
 #: ../../source/using_api/v1/records_api.rst:78
 #: ../../source/using_api/v1/records_api.rst:216
@@ -360,11 +451,14 @@ msgid ""
 "be queried simultaneously. Simply repeat the dataset parameter for each "
 "dataset you need to query. This field is mandatory."
 msgstr ""
+"Identificatore del dataset. È possibile eseguire query simultanee su più "
+"dataset in uno stesso dominio, ripetendo il parametro per ogni dataset da "
+"interrogare. Questo campo è obbligatorio."
 
 #: ../../source/using_api/v1/records_api.rst:91
 #: ../../source/using_api/v1/records_api.rst:229
 msgid "``facet``"
-msgstr ""
+msgstr "``facet``"
 
 #: ../../source/using_api/v1/records_api.rst:92
 #: ../../source/using_api/v1/records_api.rst:230
@@ -374,12 +468,16 @@ msgid ""
 "simultaneously activate several facets. By default, faceting is disabled. "
 "Example: ``facet=city``"
 msgstr ""
+"Attiva i facet sul campo specificato (per un elenco dei facet disponibili "
+"nei dataset, vedere le Appendici). Questo parametro può essere utilizzato "
+"più volte per attivare contemporaneamente vari facet. Per impostazione "
+"predefinita, i facet sono disabilitati. Esempio: ``facet=city``."
 
 #: ../../source/using_api/v1/records_api.rst:103
 #: ../../source/using_api/v1/records_api.rst:193
 #: ../../source/using_api/v1/records_api.rst:254
 msgid "``pretty_print``"
-msgstr ""
+msgstr "``pretty_print``"
 
 #: ../../source/using_api/v1/records_api.rst:104
 #: ../../source/using_api/v1/records_api.rst:194
@@ -387,11 +485,13 @@ msgstr ""
 msgid ""
 "If set to true (default is false), pretty prints JSON and JSONP outputs."
 msgstr ""
+"Se impostato su true (l'impostazione predefinita è false), esegue il pretty "
+"print degli output JSON e JSONP."
 
 #: ../../source/using_api/v1/records_api.rst:105
 #: ../../source/using_api/v1/records_api.rst:251
 msgid "``fields``"
-msgstr ""
+msgstr "``fields``"
 
 #: ../../source/using_api/v1/records_api.rst:106
 #: ../../source/using_api/v1/records_api.rst:252
@@ -399,22 +499,27 @@ msgid ""
 "Restricts fields to retrieve. This parameter accepts multiple field names "
 "separated by commas. Example: ``fields=field1,field2,field3``"
 msgstr ""
+"Limita i campi da richiamare. Il parametro può contenere più nomi di campi, "
+"separati da virgole. Esempio: ``fields=field1,field2,field3``."
 
 #: ../../source/using_api/v1/records_api.rst:109
 msgid ""
 "Format of the response output. One of CSV, JSON (default), JSONP, GeoJSON "
 "and GeoJSONP."
 msgstr ""
+"Formato dell'output di risposta. Può essere CSV, JSON (predefinito), JSONP, "
+"GeoJSON o GeoJSONP."
 
 #: ../../source/using_api/v1/records_api.rst:111
 #: ../../source/using_api/v1/records_api.rst:259
 msgid ""
 "JSONP or GeoJSONP callback. Example: ``format=jsonp&callback=myFunction``"
 msgstr ""
+"Callback JSONP o GeoJSONP. Esempio: ``format=jsonp&callback=myFunction``."
 
 #: ../../source/using_api/v1/records_api.rst:114
 msgid "Records Geo Clustering API"
-msgstr ""
+msgstr "API di geo-clustering dei record"
 
 #: ../../source/using_api/v1/records_api.rst:116
 msgid ""
@@ -423,6 +528,10 @@ msgid ""
 " comprehensive data visualizations on a map, using a very large number of "
 "records."
 msgstr ""
+"Questa API offre potenti funzionalità di geoclustering su un set di record "
+"selezionati. Restituisce i risultati in un pratico formato per creare "
+"visualizzazioni dettagliate di dati su una mappa, utilizzando un numero "
+"molto elevato di record."
 
 #: ../../source/using_api/v1/records_api.rst:119
 msgid ""
@@ -431,18 +540,23 @@ msgid ""
 "of points contained in each cluster and the polygon of the cluster envelope "
 "(along with computed analytical series when required)."
 msgstr ""
+"Questa API utilizza come input la precisione del cluster e un poligono per "
+"rappresentare la visualizzazione corrente sulla mappa. Restituisce un elenco"
+" di cluster con il numero di punti contenuti in ognuno e il poligono "
+"dell'envelope del cluster (nonché le serie analitiche calcolate, se "
+"necessario)."
 
 #: ../../source/using_api/v1/records_api.rst:123
 msgid "The clustering results are returned in JSON."
-msgstr ""
+msgstr "I risultati del clustering sono restituiti in JSON."
 
 #: ../../source/using_api/v1/records_api.rst:125
 msgid "**API endpoint**: ``/api/records/1.0/geocluster``"
-msgstr ""
+msgstr "**Endpoint API**: ``/api/records/1.0/geocluster``"
 
 #: ../../source/using_api/v1/records_api.rst:159
 msgid "``clusterprecision``"
-msgstr ""
+msgstr "``clusterprecision``"
 
 #: ../../source/using_api/v1/records_api.rst:160
 msgid ""
@@ -450,30 +564,37 @@ msgid ""
 "used through Leaflet, the Leaflet zoom level can be used). This parameter is"
 " mandatory."
 msgstr ""
+"Livello di precisione desiderato, a seconda del livello di zoom corrente "
+"della mappa. Se utilizzato con Leaflet, è possibile utilizzare il livello di"
+" zoom di Leaflet. Questo parametro è obbligatorio."
 
 #: ../../source/using_api/v1/records_api.rst:162
 msgid "``shapeprecision``"
-msgstr ""
+msgstr "``shapeprecision``"
 
 #: ../../source/using_api/v1/records_api.rst:163
 msgid ""
 "Defines the precision of the returned cluster envelope. The sum of "
 "clusterprecision and shapeprecision may not exceed 29."
 msgstr ""
+"Definisce la precisione dell'envelope del cluster restituito. La somma di "
+"clusterprecision e shapeprecision non può superare 29."
 
 #: ../../source/using_api/v1/records_api.rst:165
 msgid "``clustermode``"
-msgstr ""
+msgstr "``clustermode``"
 
 #: ../../source/using_api/v1/records_api.rst:166
 msgid ""
 "Defines the desired clustering mode. Supported values are ``polygon``  "
 "(default) and ``heatmap``."
 msgstr ""
+"Definisce la modalità di clustering desiderata. I valori supportati sono "
+"``polygon`` (predefinito) e ``heatmap``."
 
 #: ../../source/using_api/v1/records_api.rst:167
 msgid "``y.<SERIE>.fun and y.<SERIE>.expr``"
-msgstr ""
+msgstr "``y.<SERIE>.fun and y.<SERIE>.expr``"
 
 #: ../../source/using_api/v1/records_api.rst:168
 msgid ""
@@ -482,44 +603,56 @@ msgid ""
 " the values of the serie. For example: "
 "``clusterprecision=6&y.serie1.expr=height&y.series1.func=SUM``"
 msgstr ""
+"Questa API può inoltre accettare una definizione della serie, come descritto"
+" per l'API di analisi dei record. Se si definisce una serie, l'aggregazione "
+"avverrà in base ai valori di quest'ultima. Ad esempio: "
+"``clusterprecision=6&y.serie1.expr=height&y.series1.func=SUM``."
 
 #: ../../source/using_api/v1/records_api.rst:174
 msgid "Record Lookup API"
-msgstr ""
+msgstr "API di ricerca di singoli record"
 
 #: ../../source/using_api/v1/records_api.rst:176
 msgid ""
 "This API makes it possible to fetch an individual record using its "
 "identifier (Record ID)."
 msgstr ""
+"Questa API permette di recuperare un singolo record in base al relativo "
+"identificatore (Record ID)."
 
 #: ../../source/using_api/v1/records_api.rst:178
 msgid "**API endpoint**: ``/api/datasets/1.0/<DATASETID>/records/<RECORDID>``"
 msgstr ""
+"**Endpoint API**: ``/api/datasets/1.0/<DATASETID>/records/<RECORDID>``"
 
 #: ../../source/using_api/v1/records_api.rst:188
 msgid ""
 "Part of the URL path. Identifier of the dataset. Example: "
 "``http://opendata.paris.fr/api/dataset/1.0/arbresremarquablesparis2011/``"
 msgstr ""
+"Parte del percorso dell'URL. Identificatore del  dataset. Esempio: "
+"``http://opendata.paris.fr/api/dataset/1.0/arbresremarquablesparis2011/``."
 
 #: ../../source/using_api/v1/records_api.rst:190
 msgid "``recordid``"
-msgstr ""
+msgstr "``recordid``"
 
 #: ../../source/using_api/v1/records_api.rst:191
 msgid ""
 "Part of the URL path. Identifier of the record. Example: "
 "``http://opendata.paris.fr/api/dataset/1.0/<DATASETID>/records/758885b5183fd28f14ecf39e44484fdccf/``"
 msgstr ""
+"Parte del percorso dell'URL. Identificatore del record. Esempio: "
+"``http://opendata.paris.fr/api/dataset/1.0/<DATASETID>/records/758885b5183fd28f14ecf39e44484fdccf/``."
 
 #: ../../source/using_api/v1/records_api.rst:196
 msgid "Format of the response output. One of JSON (default) and JSONP."
 msgstr ""
+"Formato dell'output di risposta. Può essere JSON (predefinito) e JSONP."
 
 #: ../../source/using_api/v1/records_api.rst:201
 msgid "Record Search API"
-msgstr ""
+msgstr "API di ricerca dei record"
 
 #: ../../source/using_api/v1/records_api.rst:203
 msgid ""
@@ -527,10 +660,13 @@ msgid ""
 "dataset, such as full-text search or geo search. It also provides faceted "
 "search features on dataset records."
 msgstr ""
+"Questa API permette di eseguire query complesse sui record di un dataset, ad"
+" esempio ricerche full-text o ricerche geografiche. Offre inoltre "
+"funzionalità di ricerca facet sui record del dataset."
 
 #: ../../source/using_api/v1/records_api.rst:206
 msgid "**API endpoint**: ``/api/records/1.0/search``"
-msgstr ""
+msgstr "**Endpoint API**: ``/api/records/1.0/search``"
 
 #: ../../source/using_api/v1/records_api.rst:242
 msgid ""
@@ -541,29 +677,42 @@ msgid ""
 "have the ``sortable``  annotation. Examples: ``sort=price`` , "
 "``sort=-width``"
 msgstr ""
+"Ordina i risultati in base al campo specificato. Per impostazione "
+"predefinita, l'ordine è decrescente (dal valore più alto al valore più "
+"basso). Aggiungendo il segno meno ('-') è possibile ottenere un ordine in "
+"senso crescente. L'ordinamento è disponibile solo sui campi numerici (int, "
+"doppio, data e data/ora) e sui campi di testo con annotazione ``sortable``. "
+"Esempi: ``sort=price``, ``sort=-width``."
 
 #: ../../source/using_api/v1/records_api.rst:246
 msgid "``rows``"
-msgstr ""
+msgstr "``rows``"
 
 #: ../../source/using_api/v1/records_api.rst:247
 msgid ""
 "Number of results to return in a single call. The maximum number of rows "
 "returned is 1000. By default, 10 results are returned."
 msgstr ""
+"Numero di risultati da restituire in una singola chiamata. Il numero massimo"
+" di righe restituito è 1000. Per impostazione predefinita, vengono "
+"restituiti 10 risultati."
 
 #: ../../source/using_api/v1/records_api.rst:249
 msgid "``start``"
-msgstr ""
+msgstr "``start``"
 
 #: ../../source/using_api/v1/records_api.rst:250
 msgid ""
 "Index of the first result to return (starting at 0). To be used in "
 "conjunction with \"rows\" to implement paging."
 msgstr ""
+"Indice del primo risultato da restituire, a partire da 0. Da utilizzare "
+"insieme a \"rows\" per il paging."
 
 #: ../../source/using_api/v1/records_api.rst:257
 msgid ""
 "Format of the response output. One of JSON (default), JSONP, GeoJSON and "
 "GeoJSONP."
 msgstr ""
+"Formato dell'output di risposta. Può essere JSON (predefinito), JSONP, "
+"GeoJSON e GeoJSONP."

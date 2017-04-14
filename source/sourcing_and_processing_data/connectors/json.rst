@@ -11,7 +11,7 @@ JSON File
 This connector extracts a valid JSON document (array or object) into one dataset of several records.
 
 - If the document is a JSON array, a record will be created for each object inside the array (the keys will be used as column names).
-- If the document is a JSON object, the parameter "JSON root" should contain a dot-separated path to the array inside your object. If not provided, the connector tries "items".
+- If the document is a JSON object, the parameter "JSON root" should contain a dot-separated path to the array inside your object. If not provided, the connector tries ``items``.
 
 For each item inside the array, the connector can follow another path before extracting the records thanks to the parameter "JSON object".
 

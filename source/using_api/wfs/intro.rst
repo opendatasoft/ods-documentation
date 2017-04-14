@@ -25,7 +25,7 @@ Service address and methods
 ---------------------------
 The service can be reached at the following entry address :
 
-.. code-block:: http
+.. code-block:: text
 
     GET http://public.opendatasoft.com/api/wfs
 

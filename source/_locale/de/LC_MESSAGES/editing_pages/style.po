@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-03 14:27+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2017\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ../../source/editing_pages/style.rst:2
 msgid "Customize a content page with HTML and CSS"
-msgstr ""
+msgstr "Anpassen einer Content-Seite mit HTML und CSS"
 
 #: ../../source/editing_pages/style.rst:4
 msgid ""
@@ -27,12 +28,18 @@ msgid ""
 "you may want to go further. Maybe you want to add a new block below, or add "
 "a large centered header at the top?"
 msgstr ""
+"Sobald Sie eine einfache Seite mit einem der vordefinierten Templates "
+"erstellt haben, möchten Sie vielleicht einen Schritt weitergehen. Vielleicht"
+" möchten Sie einen neuen Block unten oder eine große zentrierte Kopfzeile "
+"oben anfügen. "
 
 #: ../../source/editing_pages/style.rst:7
 msgid ""
 "Switching to the **expert mode** lets you edit directly the underlying "
 "language behind the page, which is the HTML and CSS code."
 msgstr ""
+"Durch Umschalten auf den *Expert-Modus* können Sie direkt die hinterlegte "
+"Sprache hinter der Seite bearbeiten, d. h. den HTML- und CSS-Code."
 
 #: ../../source/editing_pages/style.rst:9
 msgid ""
@@ -42,6 +49,12 @@ msgid ""
 "do simple things like changing the layout of your page, changing the size of"
 " your text..."
 msgstr ""
+"HTML und CSS sind die beiden Sprachen, die hinter jeder Webseite stecken. "
+"Sie können sehr weit fortgeschrittene Dinge mit ihnen realisieren, doch im "
+"Grunde sind sie dafür entwickelt, expressiv und leicht zu erlernen zu sein. "
+"Wenn Sie sie einmal ein bisschen ausprobieren, können Sie schnell einfache "
+"Dinge realisieren, wie etwa das Layout Ihrer Seite, die Größe Ihres Textes "
+"etc. zu ändern."
 
 #: ../../source/editing_pages/style.rst:13
 msgid ""
@@ -50,6 +63,11 @@ msgid ""
 "do this much better than us; however, these are examples that you can start "
 "from and expand upon."
 msgstr ""
+"In diesem Artikel führen wir Sie anhand einiger grundlegender Änderungen an "
+"eine Standard-Seitenvorlage heran. Es ist nicht unser Ziel, Ihnen HTML und "
+"CSS beizubringen. Andere Ressourcen können dies sehr viel besser als wir; "
+"dennoch sind dies Beispiele, mit denen Sie starten und sich weiter "
+"entwickeln können."
 
 #: ../../source/editing_pages/style.rst:16
 msgid ""
@@ -59,32 +77,46 @@ msgid ""
 "link in the top right of the interface. You now have two \"CSS\" and "
 "\"HTML\" tabs, containing the code behing the page."
 msgstr ""
+"Lassen Sie uns zunächst eine neue Seite auf der Grundlage der Vorlage "
+"\"Hauptblock + rechte Spalte\" erstellen, wie im Artikel :doc:`Creating a "
+"simple content page </editing_pages/create>` gezeigt. Schalten Sie dann auf "
+"den *Expert-Modus* um, indem Sie den Link oben rechts auf der Schnittstelle "
+"verwenden. Nun haben Sie zwei \"CSS\"- und \"HTML\"-Tabs, die den Code "
+"hinter der Seite beinhalten."
 
 #: ../../source/editing_pages/style.rst:19
 msgid ""
 "The CSS tab is empty for now, as there is no specific CSS code. However, the"
 " HTML of the page is here:"
 msgstr ""
+"Der CSS Tab ist momentan leer, da kein spezifischer CSS-Code vorhanden ist. "
+"Die HTML der Seite ist jedoch da:"
 
 #: ../../source/editing_pages/style.rst:31
 msgid "Adding a new row"
-msgstr ""
+msgstr "Hinzufügen einer neuen Zeile"
 
 #: ../../source/editing_pages/style.rst:33
 msgid ""
 "Each ``<div>`` tag represents a block in the page; the class attached to "
 "each block defines its appearance, like its width."
 msgstr ""
+"Jeder  ``<div>`` Tag stellt einen Block auf der Seite dar; die zu jedem "
+"Block zugeordnete Klasse legt dessen Erscheinungsbild fest, wie etwa seine "
+"Breite."
 
 #: ../../source/editing_pages/style.rst:44
 msgid "More precisely:"
-msgstr ""
+msgstr "Genauer gesagt:"
 
 #: ../../source/editing_pages/style.rst:36
 msgid ""
 "``<div class=\"container-fluid\">`` is the block around the entire page, "
 "making sure it takes all the available width in the browser"
 msgstr ""
+"``<div class=\"container-fluid\">`` ist der Block rund um die ganze Seite, "
+"der sicherstellt, dass sie die gesamte im Browser zur Verfügung stehende "
+"Breite einnimmt"
 
 #: ../../source/editing_pages/style.rst:37
 msgid ""
@@ -92,6 +124,10 @@ msgid ""
 "blocks. By reasoning using \"rows\", we make sure our blocks don't mix up if"
 " one is larger than the others."
 msgstr ""
+"``<div class=\"row\">`` stellt eine Zeile dar, die abwechselnd verschiedene "
+"Blöcke enthält. Durch eine angemessene Verwendung der \"rows\" stellen wir "
+"sicher, dass unsere Blöcke nicht durcheinander geraten, wenn einer größer "
+"als der andere ist."
 
 #: ../../source/editing_pages/style.rst:39
 msgid ""
@@ -106,12 +142,26 @@ msgid ""
 "detailed in the :doc:`Designing a responsive portal "
 "</customizing_look_and_feel/responsive>` article."
 msgstr ""
+"``<div class=\"col-md-8\">`` und ``<div class=\"col-md-4\">`` sind zwei "
+"Blöcke, die den \"echten\" Content enthalten (z. B. Text). Ziel der Klassen "
+"``col-md-8`` und ``col-md-4`` ist es, sich den verfügbaren Raum in jeder "
+"Zeile als ein Raster aus 12 \"Zellen\" vorzustellen; Ihre Blöcke innerhalb "
+"dieser Zeile können maximal 12 Zellen enthalten, und jeder Block nutzt "
+"``col-md-X``, wobei X die Anzahl der belegten Zellen ist. In diesem Beispiel"
+" wollen wir, dass ein Block zwei Drittel des Raums einnimmt, und ein "
+"weiterer Block ein Drittel, daher haben wir 8 und 4 verwendet, um die "
+"verfügbaren 12 Zellen korrekt aufzuteilen. Diese gesamte Logik (genannt "
+"\"Raster\"-Logik) wird im Artikel :doc:`Designing a responsive portal "
+"</customizing_look_and_feel/responsive>` erklärt."
 
 #: ../../source/editing_pages/style.rst:44
 msgid ""
 "``<div class=\"ods-box\">`` just creates a visual block with a border and a "
 "background, more suitable to contain text."
 msgstr ""
+"``<div class=\"ods-box\">`` erstellt lediglich einen visuellen Block mit "
+"einem Rand und einem Hintergrund und ist damit eher für einen Text-Content "
+"geeignet."
 
 #: ../../source/editing_pages/style.rst:46
 msgid ""
@@ -119,14 +169,18 @@ msgid ""
 "space. Following our previous logic, we add a new row, and three blocks "
 "taking each 4 cells."
 msgstr ""
+"Nun möchten wir eine neue Zeile mit drei Blöcken hinzufügen, wobei jeder von"
+" ihnen ein Drittel des zur Verfügung stehenden Raums einnimmt. Entsprechend "
+"unserer vorher genannten Logik fügen wir eine neue Zeile hinzu sowie drei "
+"Blöcke, die je 4 Zellen belegen."
 
 #: ../../source/editing_pages/style.rst:63
 msgid "Our preview now looks like this:"
-msgstr ""
+msgstr "Unsere Vorschau sieht nun so aus:"
 
 #: ../../source/editing_pages/style.rst:74
 msgid "Setting a basic style"
-msgstr ""
+msgstr "Einrichten eines Grundstils"
 
 #: ../../source/editing_pages/style.rst:76
 msgid ""
@@ -134,6 +188,9 @@ msgid ""
 "change the size of the text, add a colored background, borders, change the "
 "color..."
 msgstr ""
+"Der CSS-Code kann zum Ändern Ihrer Content-Ansicht verwendet werden: Sie "
+"können die Textgröße ändern, einen farbigen Hintergrund und Ränder "
+"hinzufügen, die Farbe ändern etc."
 
 #: ../../source/editing_pages/style.rst:79
 msgid ""
@@ -144,19 +201,33 @@ msgid ""
 " This way, you can apply the same class to various elements, and if you "
 "change your page, the rules will still apply to your element."
 msgstr ""
+"Es gibt viele Möglichkeiten, die CCS-\"Regeln\" auf ein Element auf Ihrer "
+"Seite anzuwenden. Eine bewährte Verfahrensweise, an die Sie immer denken "
+"sollten, ist die Verwendung von \"Klassen\": Durch das Hinzufügen von "
+"`class=\"myclass\"` zu einem Element auf Ihrer Seite ordnen Sie Ihrem "
+"Element eine \"Klasse\" zu und können nun Regeln für diese Klasse in Ihrem "
+"CSS-Style schreiben. So können Sie eine Klasse auf verschiedene Elemente "
+"anwenden, und selbst wenn Sie Ihre Seite ändern, gelten die Regeln immer "
+"noch für Ihr Element."
 
 #: ../../source/editing_pages/style.rst:84
 msgid ""
 "Let's assume we want to make some text larger than usual. First, you need to"
 " add a class to the element containing the text, here, \"Hello world!\":"
 msgstr ""
+"Nehmen wir an, wir wollen einen Text größer als gewöhnlich gestalten. "
+"Zunächst müssen Sie dem Element, das den Text enthält, in diesem Fall "
+"\"Hallo Welt!\", eine Klasse zuordnen:"
 
 #: ../../source/editing_pages/style.rst:102
 msgid ""
 "Then, we just need to add a rules in the CSS code, stating that the class "
 "\"larger-text\" should have a bigger text size:"
 msgstr ""
+"Dann müssen wir nur noch dem CSS-Code eine Regel hinzufügen, die besagt, "
+"dass die Klasse \"larger-text\" eine größere Textgröße besitzen soll:"
 
 #: ../../source/editing_pages/style.rst:110
 msgid "There are many CSS rules you can add, to any of your elements."
 msgstr ""
+"Sie können jedem Ihrer Elemente viele verschiedene CSS-Regeln zuweisen."

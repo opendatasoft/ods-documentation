@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-03 14:27+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2017\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ../../source/managing_security/saml.rst:2
 msgid "Federate identity with SAML"
-msgstr ""
+msgstr "Identiteit samenvoegen met SAML"
 
 #: ../../source/managing_security/saml.rst:4
 msgid ""
@@ -38,10 +39,27 @@ msgid ""
 "properties known by the IdP. Those two modes can coexist on a domain, but a "
 "single user can only connect through one mode."
 msgstr ""
+"Sommige organisaties beschikken reeds over een user directory service die de"
+" identificatie en toelatingen van hun gebruikers beheert en weinig waarde "
+"zin in het gebruiken van de in OpenDataSoft ingebouwde "
+"gebruikersbeheerfuncties. Om dit aan te pakken, ondersteunt het "
+"OpenDataSoft-platform externe Identity Providers (IdP) via de SAMLv2 "
+"standaard. Hiermee kan een identiteitsfederatie worden opgezet tussen uw "
+"domein, dat zal optreden als dienstverlener, en deze IdP. Deze federatie "
+"laat gebruikers van uw domein toe om in te loggen op het platform door "
+"gebruik te maken van de identity provider en wanneer ze er één hebben, hun "
+"active veiligheidscontext te hergebruiken om een SSO-mechanisme aan te "
+"maken. Een dergelijke federatie laat gebruikerstoegang toe op 2 "
+"verschillende manieren: de overgangsmodus, waarbij gebruikers willekeurig "
+"worden aangemaakt wanneer ze gevalideerd zijn door de IdP, en de gekoppelde "
+"modus, waarbij een gebruikersaccount van OpenDataSoft gekoppeld wordt aan "
+"een SAML-identiteit via een aantal eigenschappen die gekend zijn door de "
+"IdP. Deze twee manieren kunnen naast elkaar bestaan op een domein, maar een "
+"enkele gebruiker kan op slechts één manier inloggen."
 
 #: ../../source/managing_security/saml.rst:7
 msgid "Transient mode"
-msgstr ""
+msgstr "Overgangsmodus"
 
 #: ../../source/managing_security/saml.rst:9
 msgid ""
@@ -57,10 +75,24 @@ msgid ""
 "assigned any special permissions on individual datasets or added to groups "
 "(other than the ``SAML users`` group, of which they are automatic members)."
 msgstr ""
+"In de overgangsmodus kan elke gebruiker die een gebruikersaccount heeft op "
+"de IdP die vertrouwd wordt door een domein en geen OpenDataSoft "
+"gebruikersaccount heeft, inloggen via SAML. Een overgangsgebruiker zal "
+"worden aangemaakt voor de gebruiker, op basis van de SAML-instellingen voor "
+"het domein. Deze instellingen zijn de account mapper (de reeds parameters "
+"die door de IdP zijn doorgestuurd en die een gebruiker op unieke wijze "
+"identificeren) en een attribute mapper (de parameters die overeenstemmen met"
+" de voornaam, de familienaam en het e-mailadres van de gebruiker). Deze "
+"overgangsgebruikers hebben de toestemming om de publieke datasets van het "
+"domein te exploreren. Aan deze gebruikers kunnen extra toestemmingen gegeven"
+" worden via de generische groep ``SAML-gebruikers``. Aan overgangsgebruikers"
+" kunnen geen speciale toestemmingen worden verleend voor individuele "
+"datasets of toegevoegd worden aan groepen (andere dan de groep ``SAML-"
+"gebruikers``, waar ze automatisch lid van zijn)."
 
 #: ../../source/managing_security/saml.rst:12
 msgid "Linked mode"
-msgstr ""
+msgstr "Gekoppelde modus"
 
 #: ../../source/managing_security/saml.rst:14
 msgid ""
@@ -78,6 +110,22 @@ msgid ""
 "account to a SAML account on this domain`` in the identity tab of the user "
 "account settings."
 msgstr ""
+"In de gekoppelde modus kunnen gebruikers die een OpenDataSoft "
+"gebruikersaccount hebben, dit account koppelen aan specifieke waarden van de"
+" reeks parameters die gedefinieerd staan in de account mapper-instelling. "
+"Nadat de koppeling werd gemaakt, zullen gebruikers die inloggen via SAML, "
+"ingelogd zijn op hun OpenDataSoft gebruikersaccount. Aan gekoppelde "
+"gebruikers kunnen dezelfde toestemmingen worden toegekend en zij kunnen "
+"worden toegevoegd aan groepen, net zoals normale gebruikers (aangezien het "
+"normale gebruikers zijn). Ze zijn ook automatisch lid van de groep ``SAML-"
+"gebruikers``. Deze modus laat een fijnmazigere controle van de toestemmingen"
+" mogelijk, terwijl de meeste voordelen van de overgangsmodus worden "
+"behouden. Het enige nadeel is dat gebruikers een account op het domein "
+"moeten aanmaken alvorens ze dit kunnen koppelen aan hun SAML-identiteit. Er "
+"zijn twee methodes om een OpenDataSoft gebruikersaccount te koppelen. De "
+"eerst is om te klikken op ``Koppel uw account aan een SAML-account op dit "
+"domein`` in het identiteitstabblad van de instellingen van het "
+"gebruikersaccount."
 
 #: ../../source/managing_security/saml.rst:19
 msgid ""
@@ -86,41 +134,54 @@ msgid ""
 "This actually speeds up the user account creation process and allows for a "
 "quick account linking."
 msgstr ""
+"De andere methode is om de koppeling aan te maken tijdens het aanmaakproces "
+"van het gebruikersaccount, door te klikken op de koppeling waarmee de "
+"registratie via SAML wordt voltooid. Hierdoor verloopt het aanmaakproces van"
+" het gebruikersaccount sneller en kan het account snel worden gekoppeld."
 
 #: ../../source/managing_security/saml.rst:25
 msgid "Register and configure an identity provider"
-msgstr ""
+msgstr "Een identiteitsprovider registreren en configureren"
 
 #: ../../source/managing_security/saml.rst:27
 msgid "Navigate to the signup page in the domain configuration interface."
-msgstr ""
+msgstr "Ga naar de intekenpagina in de configuratie-interface van het domein."
 
 #: ../../source/managing_security/saml.rst:32
 msgid "Check \"Allow access for SAML users\""
-msgstr ""
+msgstr "Vink het vakje \"Toegang verlenen voor SAML-gebruikers\""
 
 #: ../../source/managing_security/saml.rst:37
 msgid ""
 "Paste your identity provider metadata document in the \"IDP metadata "
 "document\" field."
 msgstr ""
+"Plak het metadatadocument van uw identiteitsprovider in het veld \"IDP "
+"metadatadocument\"."
 
 #: ../../source/managing_security/saml.rst:39
 msgid ""
 "If you are using Microsoft Azure Active Directory as an IDP, check the "
 "related checkbox."
 msgstr ""
+"Wanneer u Microsoft Azure Active Directory gebruikt als een IDP, vink dan "
+"het overeenkomstige vakje aan."
 
 #: ../../source/managing_security/saml.rst:41
 msgid ""
 "Input the set of attributes sent by the IDP that uniquely define a user."
 msgstr ""
+"Voer de reeks attributen in die door de IDP zijn doorgestuurd en waarmee een"
+" gebruiker op unieke wijze kan worden geïdentificeerd."
 
 #: ../../source/managing_security/saml.rst:43
 msgid ""
 "If the users are defined by their NameID and the NameID format used by your "
 "IdP is not transient, there is no need to fill anything."
 msgstr ""
+"Wanneer de gebruikers geïdentificeerd worden op basis van hun NameID en "
+"indien het NameID-formaat dat door uw IDP gebruikt wordt, niet overgankelijk"
+" is, hoeft u niets in te vullen."
 
 #: ../../source/managing_security/saml.rst:45
 msgid ""
@@ -128,18 +189,26 @@ msgid ""
 "\"LastName\" transmitted by your IdP, first input \"FirstName\" in the box "
 "and press enter, then \"LastName\" and press enter again."
 msgstr ""
+"Bijvoorbeeld, wanneer uw gebruikers worden geïdentificeerd worden door het "
+"attribuut \"FirstName\" en \"LastName\" dat wordt doorgestuurd door uw IdP, "
+"voer dan eerst \"FirstName\" in het vakje en druk op Enter, en vervolgens "
+"\"LastName\" en druk opnieuw op Enter."
 
 #: ../../source/managing_security/saml.rst:47
 msgid ""
 "Input the attributes mappings for the username, last name, first name and "
 "email address."
 msgstr ""
+"Voer de mappings van attributen voor de gebruikersnaam, familienaam, "
+"voornaam en e-mailadres in."
 
 #: ../../source/managing_security/saml.rst:49
 msgid ""
 "Here, you need to declare the fields names as they are sent by the identity "
 "provider."
 msgstr ""
+"Hier moet u de namen van de velden aangeven aangezien deze door de "
+"identiteitsprovider zijn opgestuurd."
 
 #: ../../source/managing_security/saml.rst:51
 msgid ""
@@ -147,6 +216,9 @@ msgid ""
 " name in an attribute called \"GivenName\", this is what you will need to "
 "type in the \"First name\" field."
 msgstr ""
+"Bijvoorbeeld, wanneer uw identiteitsprovider de aan de gebruiker verbonden "
+"voornaam overmaakt in een attribuut met de naam \"GivenName\", is het dit "
+"wat u moet invullen in het veld \"FirstName\"."
 
 #: ../../source/managing_security/saml.rst:54
 msgid ""
@@ -154,10 +226,13 @@ msgid ""
 " let the corresponding fields blank. The platform will automatically "
 "generate them based on other available attributes."
 msgstr ""
+"Wanneer uw identiteitsprovider om een of andere reden niet al deze elementen"
+" opstuurt, dient u de overeenkomstige velden leeg te laten. Het platform zal"
+" deze automatisch genereren op basis van andere beschikbare attributen."
 
 #: ../../source/managing_security/saml.rst:57
 msgid "Optionally input an access condition."
-msgstr ""
+msgstr "Voer optioneel een toegangsvoorwaarde in."
 
 #: ../../source/managing_security/saml.rst:59
 msgid ""
@@ -165,6 +240,10 @@ msgid ""
 "the value of that attribute. If you just want to check for the presence of "
 "an attribute, without value restriction, just leave the second box blank."
 msgstr ""
+"Het eerste vakje is de naam van het attribuut dat moet worden gecontroleerd "
+"en het tweede de waarde van dat attribuut. Indien u enkel de aanwezigheid "
+"van een attribuut wil controleren, zonder waardebeperking, dient u het twee "
+"vakje gewoon leeg te laten."
 
 #: ../../source/managing_security/saml.rst:62
 msgid ""
@@ -174,10 +253,16 @@ msgid ""
 "you only want users with the role \"DataAccess\" to be able to connect to "
 "the domain, input \"DataAccess\" in the second box."
 msgstr ""
+"Bijvoorbeeld, wanneer uw identiteitsprovider een lijst met \"Rollen\" voor "
+"de gebruikers opstuurt en u er zeker van wil zijn dat enkele gebruikers die "
+"een rol hebben, toegang kunnen krijgen, voer dan \"Rollen\" in in het eerste"
+" vakje onder \"Voorwaardelijke toegang\". Indien u enkel wil dat gebruikers "
+"met de rol \"DataAccess\" kunnen inloggen op het domein, voer dan "
+"\"DataAccess\" in het tweede vakje in."
 
 #: ../../source/managing_security/saml.rst:65
 msgid "Configure your identity provider"
-msgstr ""
+msgstr "Configureer uw identiteitsprovicder"
 
 #: ../../source/managing_security/saml.rst:67
 msgid ""
@@ -185,9 +270,14 @@ msgid ""
 "it always consist of importing the service provider metadata document to "
 "enable a identity federation."
 msgstr ""
+"De configuratie van de identiteitsprovider staat los van de implementatie "
+"maar bestaat altijd uit het importeren van het metadatadocument van de "
+"dienstverlener om een identiteitsfederatie mogelijk te maken."
 
 #: ../../source/managing_security/saml.rst:70
 msgid ""
 "You can download the metadata document for your OpenDataSoft domain on "
 "``https://<YOUR DOMAIN>.opendatasoft.com/saml2/metadata.xml``"
 msgstr ""
+"U kan het metadatadocument voor uw OpenDataSoft-domein downloaden op "
+"``https://<YOUR DOMAIN>.opendatasoft.com/saml2/metadata.xml``"

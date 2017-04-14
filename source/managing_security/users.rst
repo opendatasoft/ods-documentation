@@ -91,6 +91,11 @@ Other permissions
        delete all subdomains.
 
        **Grants access to the catalog section of the backoffice**
+   * * Browse analytics
+     * The user may access all analytics dashboards, both at the `domain level </monitoring_audience>`_ and at the
+       dataset level.
+
+       **Grants access to the analytics section of the backoffice**
 
 Quotas
 ------
