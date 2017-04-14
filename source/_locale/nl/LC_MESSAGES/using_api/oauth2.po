@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-03 14:27+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2017\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,11 +20,11 @@ msgstr ""
 
 #: ../../source/using_api/oauth2.rst:2
 msgid "Using OAuth2 authorization"
-msgstr ""
+msgstr "Gebruiken van OAuth2-autorisatie"
 
 #: ../../source/using_api/oauth2.rst:5
 msgid "Overview"
-msgstr ""
+msgstr "Overzicht"
 
 #: ../../source/using_api/oauth2.rst:7
 msgid ""
@@ -32,6 +33,11 @@ msgid ""
 "behalf of a user while never having to deal with a password, thus avoiding "
 "any user credential to be compromised."
 msgstr ""
+"OpenDataSoft implementeert de OAuth2-autorisatiestroom, waardoor makers van "
+"derde applicaties toegang krijgen tot de data die gehost worden op een "
+"OpenDataSoft-portaal namens een gebruiker, terwijl ze nooit te maken krijgen"
+" met een wachtwoord, waardoor vermeden wordt dat de geloofsbrieven van enige"
+" gebruiker in gevaar wordt gebracht."
 
 #: ../../source/using_api/oauth2.rst:11
 msgid ""
@@ -39,6 +45,10 @@ msgid ""
 "<http://tools.ietf.org/html/rfc6749>`_ and makes use of Bearer Tokens in "
 "compliance with `RFC 6750 <http://tools.ietf.org/html/rfc6750>`_."
 msgstr ""
+"De OAuth2-autorisatiestroom van OpenDataSoft is in overeenstemming met `RFC "
+"6749 <http://tools.ietf.org/html/rfc6749>`_ en maakt gebruik van Bearer "
+"Tokens in overeenstemming met `RFC 6750 "
+"<http://tools.ietf.org/html/rfc6750>`_."
 
 #: ../../source/using_api/oauth2.rst:14
 msgid ""
@@ -50,16 +60,26 @@ msgid ""
 "the OpenDataSoft platform APIs for a limited amount of time, after which "
 "they must refresh their Bearer Token."
 msgstr ""
+"Ontwikkelaars van applicaties die de API's van OpenDataSoft met OAuth2 "
+"willen gebruiken, moet de volgende stappen doorlopen die uitgelegd zullen "
+"worden in dit artikel. Ze moeten eerst hun applicatie registreren op het "
+"OpenDataSoft-platform. Ten tweede moeten ze de goedkeuring vragen vanwege "
+"gebruikers. Met die goedkeuring kunnen ze een Bearer Token aanvragen. Met "
+"dit token kunnen ze zoekopdrachten uitvoeren op de API's op het "
+"OpenDataSoft-platform, en dit gedurende een beperkte tijdsperiode. Na deze "
+"periode moeten ze hun Bearer Token hernieuwen."
 
 #: ../../source/using_api/oauth2.rst:19
 msgid ""
 "Currently, applications are registered on a specific domain and can only "
 "access data on this domain."
 msgstr ""
+"Momenteel worden applicaties geregistreerd op een specifiek domein en hebben"
+" ze enkel toegang tot de data op dit domein."
 
 #: ../../source/using_api/oauth2.rst:22
 msgid "Getting started"
-msgstr ""
+msgstr "Om te starten"
 
 #: ../../source/using_api/oauth2.rst:37
 msgid ""
@@ -68,10 +88,14 @@ msgid ""
 "register the application on. There, you will find a form prompting you for "
 "the following:"
 msgstr ""
+"De eerste stap om de OAuth2-autorisatiestroom te gebruiken bestaat erin om "
+"uw applicatie te registreren. Om dit te doen, gaat u naar uw accountpagina "
+"op het domein waarop u de applicatie wil registreren. Daar zal u een "
+"formulier terugvinden waarbij u het volgende wordt gevraagd:"
 
 #: ../../source/using_api/oauth2.rst:40
 msgid "Application name: the name of the application"
-msgstr ""
+msgstr "Applicatienaam: de naam van de applicatie"
 
 #: ../../source/using_api/oauth2.rst:41
 msgid ""
@@ -81,26 +105,36 @@ msgid ""
 "Conversely a smartphone application is public, because the user has control "
 "over the running environment of the application."
 msgstr ""
+"Type: kan ofwel vertrouwelijk ofwel publiek zijn. Een applicatie is "
+"vertrouwelijk wanneer deze informatie van een gebruiker kan tegenhouden, "
+"andere applicaties zijn publiek. Een internetapplicatie die op zijn eigen "
+"server werkt, is meestal vertrouwelijk. Daarentegen is een smartphone-"
+"applicatie publiek aangezien de gebruiker controle heeft over de omgeving "
+"waarin de applicatie werkt."
 
 #: ../../source/using_api/oauth2.rst:44
 msgid ""
 "Redirection URL: The URL users will be redirected to after they have granted"
 " you permission to access their data."
 msgstr ""
+"Doorstuur-URL: de URL waarnaar gebruikers worden doorgestuurd nadat ze u "
+"toestemming hebben verleend om toegang te hebben tot hun data."
 
 #: ../../source/using_api/oauth2.rst:46
 msgid "You will then be awarded a client ID and a client secret."
-msgstr ""
+msgstr "Vervolgens wordt u een klant-ID en een klantgeheim toegekend."
 
 #: ../../source/using_api/oauth2.rst:48
 msgid ""
 "Now that your application is registered, it is time to request an "
 "authorization grant from a user."
 msgstr ""
+"Nu uw applicatie is geregistreerd, is het tijd om een toelatingscode vanwege"
+" een gebruiker aan te vragen."
 
 #: ../../source/using_api/oauth2.rst:51
 msgid "Getting an authorization grant"
-msgstr ""
+msgstr "Een autorisatiecode bekomen"
 
 #: ../../source/using_api/oauth2.rst:53
 msgid ""
@@ -113,12 +147,25 @@ msgid ""
 "terms, they will be redirected to your application's redirection URL, with "
 "REST parameters describing your authorization grant."
 msgstr ""
+"Om een autorisatiecode van een gebruiker te bekomen, zal u deze moeten "
+"doorsturen naar `/oauth2/authorize/` met een aantal REST-parameters. De "
+"gebruiker zal vervolgens worden geïdentificeerd op het platform en "
+"doorgestuurd worden naar een pagina waarop uw applicatie wordt "
+"geïdentificeerd met de informatie die u hebt verschaft op het ogenblik van "
+"de registratie, de lijst van toepassingsgebieden waar uw applicatie graag "
+"toegang toe zou hebben en waarop gevraagd wordt om uw applicatie toelating "
+"te verlenen om toegang te hebben tot hun data. Eenmaal de gebruiker deze "
+"voorwaarden heeft aanvaard, zullen ze doorgestuurd worden naar de doorstuur-"
+"URL van uw applicatie, en dit met REST-parameters die uw toelatingscode "
+"omschrijven."
 
 #: ../../source/using_api/oauth2.rst:59
 msgid ""
 "The REST parameters you will need to supply when redirecting the user are "
 "the following:"
 msgstr ""
+"De REST-parameters die u zal moeten opgeven wanneer de gebruiker wordt "
+"doorgestuurd, zijn de volgende:"
 
 #: ../../source/using_api/oauth2.rst:61 ../../source/using_api/oauth2.rst:102
 #: ../../source/using_api/oauth2.rst:210
@@ -126,33 +173,43 @@ msgid ""
 "**client_id**: The client ID you were given when you registered your "
 "application."
 msgstr ""
+"**client_id**: het klant-ID dat u ontving op het ogenblik van registratie "
+"van uw applicatie."
 
 #: ../../source/using_api/oauth2.rst:62
 msgid ""
 "**redirect_uri**: The redirect URI you provided when you registered your "
 "application."
 msgstr ""
+"**redirect_uri**: de doorstuur-URL die u hebt opgegeven op het ogenblik van "
+"registratie van uw applicatie."
 
 #: ../../source/using_api/oauth2.rst:63
 msgid ""
 "**response_type**: The response type you provided when you registered your "
 "application. This should be set to \"code\""
 msgstr ""
+"**response_type**: het responstype dat u hebt opgegeven op het ogenblik van "
+"registratie van uw applicatie. Dit zou moeten zijn ingesteld op \"code\""
 
 #: ../../source/using_api/oauth2.rst:64
 msgid ""
 "**scopes** *(optional)*: A list of requested scopes, space-separated "
 "(currently only \"all\" is supported)"
 msgstr ""
+"**scopes** *(optioneel)*: een lijst met aangevraagde toepassingsgebieden, "
+"gescheiden door spaties (momenteel wordt enkel \"alle\" ondersteund)"
 
 #: ../../source/using_api/oauth2.rst:65 ../../source/using_api/oauth2.rst:109
 #: ../../source/using_api/oauth2.rst:216
 msgid "**state** *(optional)*: A random string."
-msgstr ""
+msgstr "**state** *(optioneel)*: een willekeurige string."
 
 #: ../../source/using_api/oauth2.rst:67
 msgid "Example (line breaks added for legibility):"
 msgstr ""
+"Voorbeeld (regelovergangen worden toegevoegd om de leesbaarheid te "
+"verhogen):"
 
 #: ../../source/using_api/oauth2.rst:78
 msgid ""
@@ -160,24 +217,30 @@ msgid ""
 "you to provide one and check that it was given back you you when you receive"
 " your authorization grant, for security reasons."
 msgstr ""
+"Gelieve te noteren dat, hoewel de parameter \"state\" niet verplicht is, we "
+"u aanraden om er een op te geven en te controleren of deze u werd "
+"teruggegeven toen u uw autorisatiecode ontving, en dit omwille van "
+"veiligheidsredenen."
 
 #: ../../source/using_api/oauth2.rst:81
 msgid "Your authorization grant will have these values:"
-msgstr ""
+msgstr "Uw autorisatiecode zal deze waarden hebben:"
 
 #: ../../source/using_api/oauth2.rst:83
 msgid "**code**: the 30-characters-long authorization code"
-msgstr ""
+msgstr "**code**: de toelatingscode van 30 karakters lang"
 
 #: ../../source/using_api/oauth2.rst:84 ../../source/using_api/oauth2.rst:144
 msgid "**state**: The random string you provided, that you can now check."
 msgstr ""
+"**state**: de willekeurige string die u hebt opgegeven en die u nu kan "
+"controleren."
 
 #: ../../source/using_api/oauth2.rst:86 ../../source/using_api/oauth2.rst:111
 #: ../../source/using_api/oauth2.rst:149 ../../source/using_api/oauth2.rst:180
 #: ../../source/using_api/oauth2.rst:218
 msgid "Example:"
-msgstr ""
+msgstr "Voorbeeld:"
 
 #: ../../source/using_api/oauth2.rst:93
 msgid ""
@@ -185,10 +248,13 @@ msgid ""
 "bearer token. Please note that your authorization grant is only valid for an"
 " hour."
 msgstr ""
+"Nu u een autorisatiecode hebt, is het tijd om deze te converteren naar een "
+"Bearer Token. Gelieve te noteren dat uw autorisatiecode slechts een uur "
+"geldig is."
 
 #: ../../source/using_api/oauth2.rst:97
 msgid "Converting an authorization grant to a bearer token"
-msgstr ""
+msgstr "Een autorisatiecode converteren naar een Bearer Token"
 
 #: ../../source/using_api/oauth2.rst:99
 msgid ""
@@ -196,24 +262,33 @@ msgid ""
 "obtained authorization grant. To do so, you will need to send a POST request"
 " to `/oauth2/token/` with the following parameters:"
 msgstr ""
+"Om uw Bearer Token te ontvangen, moet u de eerder bekomen autorisatiecode "
+"converteren. Om dit te doen, moet u een POST-aanvraag sturen naar "
+"`/oauth2/token/` met de volgende parameters:"
 
 #: ../../source/using_api/oauth2.rst:103 ../../source/using_api/oauth2.rst:211
 msgid ""
 "**client_secret**: The client secret you were given when you registered your"
 " application."
 msgstr ""
+"**client_secret**: het klantgeheim dat u ontving op het ogenblik van "
+"registratie van uw applicatie."
 
 #: ../../source/using_api/oauth2.rst:104
 msgid ""
 "**grant_type**: The type of the authorization grant you were awarded. This "
 "should be set to \"authorization_code\"."
 msgstr ""
+"**grant_type**: het type autorisatiecode dat u werd toegekend. Dit zou "
+"moeten zijn ingesteld op \"authorization_code\"."
 
 #: ../../source/using_api/oauth2.rst:105
 msgid ""
 "**code**: The 30-characters-long authorization code that was part of your "
 "authorization grant."
 msgstr ""
+"**code**: de toelatingscode van 30 karakters lang die onderdeel was van uw "
+"autorisatiecode."
 
 #: ../../source/using_api/oauth2.rst:106
 msgid ""
@@ -221,55 +296,72 @@ msgid ""
 "scopes should all be within the scopes that your authorization grant gives "
 "you access to."
 msgstr ""
+"**scopes**: de lijst met toepassingsgebieden waar u toegang moet toe hebben."
+" Gelieve te noteren dat alle toepassingsgebieden binnen de "
+"toepassingsgebieden moeten liggen waar uw autorisatiecode u toegang toe "
+"geeft."
 
 #: ../../source/using_api/oauth2.rst:108
 msgid ""
 "**redirect_uri**: The redirect URI you provided when registering your "
 "application."
 msgstr ""
+"**redirect_uri**: de doorstuur-URL die u hebt opgegeven op het ogenblik van "
+"registratie van uw applicatie."
 
 #: ../../source/using_api/oauth2.rst:125
 msgid ""
 "Alternatively, you can pass your client ID and client secret through the "
 "Authorization header"
 msgstr ""
+"Ook kan u uw klant-ID en klantgeheim doorgeven via de Autorisatieheader"
 
 #: ../../source/using_api/oauth2.rst:127
 msgid "example:"
-msgstr ""
+msgstr "voorbeeld:"
 
 #: ../../source/using_api/oauth2.rst:139
 msgid ""
 "The response to this request will be the JSON representation of your bearer "
 "token, which contains the following values:"
 msgstr ""
+"De respons op deze aanvraag zal de JSON-weergave van uw Bearer Token zijn, "
+"dat de volgende waarden bevat:"
 
 #: ../../source/using_api/oauth2.rst:141
 msgid ""
 "**access_token**: the token that will authorize you to access the user's "
 "data."
 msgstr ""
+"**access_token**: het token dat u zal machtigen om toegang te hebben tot de "
+"data van de gebruiker."
 
 #: ../../source/using_api/oauth2.rst:142
 msgid ""
 "**expires_in**: the amount of time in seconds after which the bearer token "
 "will be made invalid."
 msgstr ""
+"**expires_in**: de hoeveelheid tijd in seconden waarna het Bearer Token "
+"ongeldig wordt."
 
 #: ../../source/using_api/oauth2.rst:143
 msgid "**token_type**: the type of the token. It will always be \"Bearer\""
-msgstr ""
+msgstr "**token_type**: het type token. Dit zal altijd \"Bearer\" zijn"
 
 #: ../../source/using_api/oauth2.rst:145
 msgid ""
 "**scope**: the list of scopes this authorization code allows you to claim"
 msgstr ""
+"**scope**: de lijst met toepassingsgebieden die u met deze toelatingscode "
+"kan claimen"
 
 #: ../../source/using_api/oauth2.rst:146
 msgid ""
 "**refresh_token**: the token that will allow you to obtain a new bearer "
 "token once this one expires"
 msgstr ""
+"**refresh_token**: het token dat u zal toelaten om een nieuw Bearer Token te"
+" bekomen eenmaal dit is vervallen"
 
 #: ../../source/using_api/oauth2.rst:165
 msgid ""
@@ -278,58 +370,71 @@ msgid ""
 "you can request a new bearer token at any time after the expiry of your "
 "current token."
 msgstr ""
+"Hoewel er een vervaltijd bestaat voor het Bearer Token, blijft het "
+"hernieuwtoken dat hierin staat geldig tot het één keer is gebruikt. Dit "
+"betekent dat u op elk moment na het vervallen van uw huidige token een nieuw"
+" Bearer Token kan aanvragen."
 
 #: ../../source/using_api/oauth2.rst:168
 msgid "You are now all set to use your newly awarded bearer token!"
-msgstr ""
+msgstr "U bent nu klaar om uw nieuw toegekende Bearer Token te gebruiken!"
 
 #: ../../source/using_api/oauth2.rst:171
 msgid "Using the bearer token"
-msgstr ""
+msgstr "Het bearer token gebruiken"
 
 #: ../../source/using_api/oauth2.rst:173
 msgid ""
 "Once you have your bearer token, you can start using it to request data from"
 " our APIs. You can display your token in one of three ways:"
 msgstr ""
+"Eenmaal u uw Bearer Token hebt, kan u het beginnen te gebruiken om data van "
+"uw API's aan te vragen. U kan uw token op één van de drie volgende manieren "
+"weergeven:"
 
 #: ../../source/using_api/oauth2.rst:176
 msgid "In the API endpoint URL of your request, as a REST parameter"
-msgstr ""
+msgstr "In het API eindpunt-URL van uw aanvraag als een REST-parameter"
 
 #: ../../source/using_api/oauth2.rst:177
 msgid "In the Authorization header of your request"
-msgstr ""
+msgstr "In de Autorisatieheader van uw aanvraag"
 
 #: ../../source/using_api/oauth2.rst:178
 msgid "In the body of your request"
-msgstr ""
+msgstr "In de body van uw aanvraag"
 
 #: ../../source/using_api/oauth2.rst:186 ../../source/using_api/oauth2.rst:193
 msgid "or"
-msgstr ""
+msgstr "of"
 
 #: ../../source/using_api/oauth2.rst:201
 msgid ""
 "After using your token for a bit, it will expire, and to continue accessing "
 "the data that you need, you will have to refresh it."
 msgstr ""
+"Nadat u uw token enige tijd hebt gebruikt, zal dit vervallen en om toegang "
+"te blijven hebben tot de data die u nodig hebt, zal u het moeten hernieuwen."
 
 #: ../../source/using_api/oauth2.rst:205
 msgid "Refreshing a bearer token"
-msgstr ""
+msgstr "Een Bearer Token hernieuwen"
 
 #: ../../source/using_api/oauth2.rst:207
 msgid ""
 "To refresh the bearer token, you must send a request to the "
 "``/oauth2/token/`` endpoint, with the following REST parameters:"
 msgstr ""
+"Om het Bearer Token te hernieuwen, moet u een aanvraag sturen naar het "
+"``/oauth2/token/`` eindpunt met de volgende REST-parameters:"
 
 #: ../../source/using_api/oauth2.rst:212
 msgid ""
 "**grant_type**: The type of the authorization grant you were awarded. This "
 "should be set to \"refresh_token\"."
 msgstr ""
+"**grant_type**: het type autorisatiecode dat u werd toegekend. Dit zou "
+"moeten zijn ingesteld op \"refresh_token\"."
 
 #: ../../source/using_api/oauth2.rst:213
 msgid ""
@@ -337,11 +442,17 @@ msgid ""
 "list must match the one you provided when you converted your grant request "
 "to a bearer token."
 msgstr ""
+"**scopes**: de lijst met toepassingsgebieden waar u toegang moet toe hebben."
+" Gelieve te noteren dat deze lijst moet overeenstemmen met de lijst die u "
+"hebt opgegeven wanneer u uw codeaanvraag hebt geconverteerd naar een Bearer "
+"Token."
 
 #: ../../source/using_api/oauth2.rst:215
 msgid ""
 "**refresh_token**: The refresh token included in your last bearer token."
 msgstr ""
+"**refresh_token**: het hernieuwtoken dat opgenomen is in uw laatste Bearer "
+"Token."
 
 #: ../../source/using_api/oauth2.rst:232
 msgid ""
@@ -349,3 +460,6 @@ msgid ""
 " same way as when you obtained your first token from converting your "
 "authorization grant."
 msgstr ""
+"De respons op deze aanvraag zal u een nieuw Bearer Token opleveren op "
+"dezelfde manier waarop u uw eerste token hebt bekomen door het converteren "
+"van uw autorisatiecode."

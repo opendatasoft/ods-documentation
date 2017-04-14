@@ -24,13 +24,13 @@ Examples
 --------
 Here is an example of a ``DescribeRecord`` operation with the optional ``TypeName`` parameter, using a ``GET`` HTTP method :
 
-.. code-block:: http
+.. code-block:: text
 
     GET http://public.opendatasoft.com/api/csw?service=CSW&request=DescribeRecord&typename=csw:Record
 
 And the same request using a ``POST`` HTTP method :
 
-.. code-block:: http
+.. code-block:: text
 
     POST http://public.opendatasoft.com/api/csw
 

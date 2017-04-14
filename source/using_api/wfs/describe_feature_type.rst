@@ -24,13 +24,13 @@ Examples
 --------
 Here is an example of a ``DescribeFeatureType`` operation with the optional ``TypeName`` parameter, using a ``GET`` HTTP method :
 
-.. code-block:: http
+.. code-block:: text
 
     GET http://public.opendatasoft.com/api/wfs?service=WFS&request=DescribeFeatureType&typeName=ods:petits_marchands_sur_l_espace_public
 
 And the same request using a ``POST`` HTTP method :
 
-.. code-block:: http
+.. code-block:: text
 
     POST http://public.opendatasoft.com/api/wfs
 

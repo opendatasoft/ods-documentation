@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-03 14:27+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2017\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ../../source/using_api/csw/intro.rst:2
 msgid "Using the service"
-msgstr ""
+msgstr "Nutzen des Services"
 
 #: ../../source/using_api/csw/intro.rst:4
 msgid ""
@@ -27,70 +28,76 @@ msgid ""
 "(CSW). This is a standard for exposing a catalogue of geospatial records in "
 "XML. The OpenDataSoft platform uses the CSW specification version 2.0.2."
 msgstr ""
+"Auf OpenDataSoft-Einträge können Sie über einen Catalog Service for the Web "
+"(CSW) zugreifen. Das ist ein Standard, um einen Katalog von raumbezogenen "
+"Einträgen in XML verfügbar zu machen. Die OpenDataSoft-Plattform verwendet "
+"die CSW-Spezifikation Version 2.0.2."
 
 #: ../../source/using_api/csw/intro.rst:8
 msgid "Operations supported"
-msgstr ""
+msgstr "Unterstützte Vorgänge"
 
 #: ../../source/using_api/csw/intro.rst:10
 msgid ""
 "OpenDataSoft platform implements four operations defined by the CSW standard"
 " :"
 msgstr ""
+"Die OpenDataSoft-Plattform implementiert vier durch den CSW-Standard "
+"definierte Vorgänge:"
 
-#: ../../source/using_api/csw/intro.rst:0
+#: ../../source/using_api/csw/intro.rst:12
 msgid "CSW Operations"
-msgstr ""
+msgstr "CSW-Vorgänge"
 
 #: ../../source/using_api/csw/intro.rst:15
 #: ../../source/using_api/csw/intro.rst:56
 msgid "Operation"
-msgstr ""
+msgstr "Vorgang"
 
 #: ../../source/using_api/csw/intro.rst:16
 #: ../../source/using_api/csw/intro.rst:57
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: ../../source/using_api/csw/intro.rst:17
 msgid "GetCapabilities"
-msgstr ""
+msgstr "GetCapabilities"
 
 #: ../../source/using_api/csw/intro.rst:18
 msgid "Retrieve service metadata."
-msgstr ""
+msgstr "Service-Metadaten abrufen."
 
 #: ../../source/using_api/csw/intro.rst:19
 msgid "DescribeRecord"
-msgstr ""
+msgstr "BeschreibungEintrag"
 
 #: ../../source/using_api/csw/intro.rst:20
 msgid "Discover elements of the information model by the catalogue."
-msgstr ""
+msgstr "Elemente des Informationsmodells nach Katalog auffinden."
 
 #: ../../source/using_api/csw/intro.rst:21
 msgid "GetRecords"
-msgstr ""
+msgstr "GetRecords"
 
 #: ../../source/using_api/csw/intro.rst:22
 msgid "Search for records and get their metadata and identifier."
-msgstr ""
+msgstr "Nach Einträgen suchen und ihre Metadaten und Bezeichner erhalten."
 
 #: ../../source/using_api/csw/intro.rst:23
 msgid "GetRecordById"
-msgstr ""
+msgstr "GetRecordById"
 
 #: ../../source/using_api/csw/intro.rst:24
 msgid "Search for a record with a specific identifier."
-msgstr ""
+msgstr "Nach einem Eintrag mit einem spezifischen Bezeichner suchen."
 
 #: ../../source/using_api/csw/intro.rst:27
 msgid "Service address and methods"
-msgstr ""
+msgstr "Serviceadresse und -methoden"
 
 #: ../../source/using_api/csw/intro.rst:28
 msgid "The service can be reached at the following entry address :"
-msgstr ""
+msgstr "Sie erreichen den Service unter der folgenden Eingangsadresse:"
 
 #: ../../source/using_api/csw/intro.rst:34
 msgid ""
@@ -98,24 +105,30 @@ msgid ""
 "``http://public.opendatasoft.com`` as an example but you should replace it "
 "by your custom domain name."
 msgstr ""
+"Für diese Dokumentation verwenden wir als Beispiel die Domain "
+"``http://public.opendatasoft.com``, die Sie jedoch durch Ihren eigenen "
+"Domainnamen ersetzen sollten."
 
 #: ../../source/using_api/csw/intro.rst:37
 msgid "The CSW supports both ``GET`` and ``POST`` HTTP methods."
-msgstr ""
+msgstr "Der CSW unterstützt sowohl ``GET``- als auch ``POST``-HTTP-Methoden."
 
 #: ../../source/using_api/csw/intro.rst:40
 msgid "Request Headers"
-msgstr ""
+msgstr "Anfragekopfzeilen"
 
 #: ../../source/using_api/csw/intro.rst:41
 msgid ""
 "The only supported HTTP header is the optional ``Content-Type`` header, "
 "which must be set to ``text/xml`` when using a ``POST`` HTTP request."
 msgstr ""
+"Der einzige unterstützte HTTP-Header ist der optionale Header "
+"``Inhaltstyp``, der bei der Verwendung einer ``POST``-HTTP-Anfrage auf "
+"``text/xml`` eingestellt sein muss."
 
 #: ../../source/using_api/csw/intro.rst:45
 msgid "Parameters"
-msgstr ""
+msgstr "Parameter"
 
 #: ../../source/using_api/csw/intro.rst:46
 msgid ""
@@ -124,159 +137,182 @@ msgid ""
 " used, the operation request message is encoded as an XML document in the "
 "body of the ``POST`` message."
 msgstr ""
+"Bei Verwendung der HTTP-Methode ``GET`` werden die Parameter der URL mittels"
+" einer Keyword Value Pair-Codierung (KVP) angefügt. Bei Verwendung der HTTP-"
+"Methode ``POST`` wird die Vorgangsanforderungsnachricht als XML-Dokument im "
+"Körper der ``POST``-Nachricht codiert."
 
 #: ../../source/using_api/csw/intro.rst:51
 msgid ""
 "Here is the list of the common parameters, supported by all CSW operations :"
 msgstr ""
+"Hier ist die Liste der von allen CSW-Vorgängen unterstützten allgemeinen "
+"Parameter:"
 
-#: ../../source/using_api/csw/intro.rst:0
+#: ../../source/using_api/csw/intro.rst:53
 msgid "Request Parameters"
-msgstr ""
+msgstr "Anforderungsparameter"
 
 #: ../../source/using_api/csw/intro.rst:58
 msgid "Possible values"
-msgstr ""
+msgstr "Mögliche Werte"
 
 #: ../../source/using_api/csw/intro.rst:59
 msgid "Optionality and use"
-msgstr ""
+msgstr "Optionalität und Verwendung"
 
 #: ../../source/using_api/csw/intro.rst:60
 msgid "``service``"
-msgstr ""
+msgstr "``Service``"
 
 #: ../../source/using_api/csw/intro.rst:61
 msgid "The requested service"
-msgstr ""
+msgstr "Der angeforderte Service"
 
 #: ../../source/using_api/csw/intro.rst:62
 msgid "``CSW``"
-msgstr ""
+msgstr "``CSW``"
 
 #: ../../source/using_api/csw/intro.rst:63
 #: ../../source/using_api/csw/intro.rst:67
 msgid "One (Mandatory)"
-msgstr ""
+msgstr "Einer (Erforderlich)"
 
 #: ../../source/using_api/csw/intro.rst:64
 msgid "``request``"
-msgstr ""
+msgstr "``request``"
 
 #: ../../source/using_api/csw/intro.rst:65
 msgid "The requested operation"
-msgstr ""
+msgstr "Der angeforderte Vorgang"
 
 #: ../../source/using_api/csw/intro.rst:66
 msgid ""
 "``GetCapabilities`` | ``DescribeRecord`` | ``GetRecords`` | "
 "``GetRecordById``"
 msgstr ""
+"``GetCapabilities`` | ``DescribeRecord`` | ``GetRecords`` | "
+"``GetRecordById``"
 
 #: ../../source/using_api/csw/intro.rst:68
 msgid "``version``"
-msgstr ""
+msgstr "``Version``"
 
 #: ../../source/using_api/csw/intro.rst:69
 msgid "The requested version of the service."
-msgstr ""
+msgstr "Die angeforderte Version des Services."
 
 #: ../../source/using_api/csw/intro.rst:70
 msgid "``2.0.2``"
-msgstr ""
+msgstr "``2.0.2``"
 
 #: ../../source/using_api/csw/intro.rst:71
 msgid "One (Optional)"
-msgstr ""
+msgstr "Eins (Optional)"
 
 #: ../../source/using_api/csw/intro.rst:74
 msgid "Exception reports"
-msgstr ""
+msgstr "Ausnahmeberichte"
 
 #: ../../source/using_api/csw/intro.rst:75
 msgid ""
 "When an error occurs, the service respond to the client using an Exception "
 "Report message to describe the error."
 msgstr ""
+"Tritt ein Fehler auf, antwortet der Service dem Client mithilfe einer "
+"Ausnahmeberichtsnachricht, um den Fehler zu beschreiben. "
 
-#: ../../source/using_api/csw/intro.rst:0
+#: ../../source/using_api/csw/intro.rst:77
 msgid "Parameters in Exception element"
-msgstr ""
+msgstr "Parameter in Ausnahmeelement"
 
 #: ../../source/using_api/csw/intro.rst:80
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #: ../../source/using_api/csw/intro.rst:81
 msgid "Definition"
-msgstr ""
+msgstr "Definition"
 
 #: ../../source/using_api/csw/intro.rst:82
 msgid "Data type and value"
-msgstr ""
+msgstr "Datentyp und Wert"
 
 #: ../../source/using_api/csw/intro.rst:83
 msgid "Multiplicity and use"
-msgstr ""
+msgstr "Multiplizität und Verwendung"
 
 #: ../../source/using_api/csw/intro.rst:84
 msgid "``ExceptionText``"
-msgstr ""
+msgstr "``ExceptionText``"
 
 #: ../../source/using_api/csw/intro.rst:85
 msgid "Text describing specific exception represented by the exceptionCode"
 msgstr ""
+"Text, der die durch den exceptionCode dargestellte spezifische Ausnahme "
+"beschreibt"
 
 #: ../../source/using_api/csw/intro.rst:86
 msgid ""
 "Character String type, not empty. Value is an exception description as "
 "defined by individual servers"
 msgstr ""
+"Zeichenfolgentyp, nicht leer. Wert ist eine von individuellen Servern "
+"definierte Ausnahmebeschreibung"
 
 #: ../../source/using_api/csw/intro.rst:87
 msgid ""
 "Zero or more (optional). Omitted only when no more useful information "
 "available"
 msgstr ""
+"Null oder größer (optional). Nur ausgelassen, wenn keine hilfreichen "
+"Informationen mehr verfügbar"
 
 #: ../../source/using_api/csw/intro.rst:88
 msgid "``exceptionCode``"
-msgstr ""
+msgstr "``exceptionCode``"
 
 #: ../../source/using_api/csw/intro.rst:89
 msgid "Code representing type of this exception"
-msgstr ""
+msgstr "Code, der Typ dieser Ausnahme darstellt"
 
 #: ../../source/using_api/csw/intro.rst:90
 msgid ""
 "Character String type, not empty. Allowed values are specified by each "
 "implementation specification and server implementation"
 msgstr ""
+"Zeichenfolgentyp, nicht leer. Zulässige Werte werden durch jede "
+"Implementierungsspezifikation und Serverimplementierung spezifiziert"
 
 #: ../../source/using_api/csw/intro.rst:92
 msgid "One (mandatory)"
-msgstr ""
+msgstr "Eins (erforderlich)"
 
 #: ../../source/using_api/csw/intro.rst:93
 msgid "``locator``"
-msgstr ""
+msgstr "``locator``"
 
 #: ../../source/using_api/csw/intro.rst:94
 msgid ""
 "Indicator of location in the client's operation request where this exception"
 " was encountered"
 msgstr ""
+"Indikator des Ortes in der Vorgangsanfrage des Kunden, wo diese Ausnahme "
+"aufgetreten ist"
 
 #: ../../source/using_api/csw/intro.rst:95
 msgid ""
 "Character String type, not empty. Contents defined for each allowed "
 "exceptionCode value for each operation"
 msgstr ""
+"Zeichenfolgentyp, nicht leer. Für jeden Vorgang für jeden zulässigen "
+"exceptionCode-Wert definierte Inhalte"
 
 #: ../../source/using_api/csw/intro.rst:96
 msgid "Zero or one (optional). Omitted when no useful value available"
 msgstr ""
+"Null oder eins (optional). Ausgelassen, wenn kein brauchbarer Wert verfügbar"
 
 #: ../../source/using_api/csw/intro.rst:98
 msgid "Example :"
-msgstr ""
+msgstr "Beispiel:"

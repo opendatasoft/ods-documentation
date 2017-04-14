@@ -9,88 +9,88 @@ You'll find below the list of fields available in the API monitoring dataset.
    * * Field name
      * Field Description
      * Facet
-   * * timestamp
+   * * ``timestamp``
      * Timestamp of the event
      * no
-   * * user_ip_addr
+   * * ``user_ip_addr``
      * Remote IP address
      * no
-   * * hostname
+   * * ``hostname``
      * HTTP request host name
      * yes
-   * * user_id
-     *  User identifier
+   * * ``user_id``
+     * User identifier
      * yes
-   * * dataset_id
+   * * ``dataset_id``
      * Dataset identifier
      * yes
-   * * domain_id
+   * * ``domain_id``
      * Domain identifier
      * yes
-   * * api
+   * * ``api``
      * API name (see below)
      * yes
-   * * api_type
+   * * ``api_type``
      * API type (ods_v1, ods_v2 or odata)
      * yes
-   * * query_string
+   * * ``query_string``
      * HTTP request query string
      * no
-   * * custom_attributes
+   * * ``custom_attributes``
      * HTTP request custom headers (see below)
      * yes
-   * * format
+   * * ``format``
      * HTTP response format
      * yes
-   * * size_res
+   * * ``size_res``
      * Response content size
      * no
-   * * nhits
+   * * ``nhits``
      * Number of results
      * no
-   * * exec_time
+   * * ``exec_time``
      * Full processing time
      * no
-   * * request_aborted
+   * * ``request_aborted``
      * If the request was aborted
      * yes
-   * * facet
-     *  List of facets used
+   * * ``facet``
+     * List of facets used
      * yes
-   * * in_error
+   * * ``in_error``
      * If the request processing generated an error
      * yes
-   * * error
+   * * ``error``
      * Error message
      * no
-   * * attachment_id
+   * * ``attachment_id``
      * Attachment identifier
      * no
-   * * image_id
+   * * ``image_id``
      * Image identifier
      * no
-   * * user_agent
+   * * ``user_agent``
      * HTTP request user agent
      * no
-   * * referer
+   * * ``referer``
      * HTTP request referer
      * no
-   * * embed_type
+   * * ``embed_type``
      * Embed type (see below)
      * no
-   * * embed_referer
+   * * ``embed_referer``
      * Embed referer
      * no
-   * * geo_coordinates
+   * * ``geo_coordinates``
      * Geo coordinates (geoip on field user_ip_addr)
      * no
-   * * query_field
+   * * ``query_field``
      * List of fields used in a full text query
      * no
-   * * query_text
+   * * ``query_text``
      * Free text in a full text query
      * no
-   * * bot
+   * * ``bot``
      * If the query was used by a bot
      * yes
 
@@ -107,43 +107,43 @@ The **api** field for OpenDataSoft APIv1 (ods_v1) contains one of the following 
    * * API name
      * Description
      * URL template
-   * * search_datasets
+   * * ``search_datasets``
      * Search catalog query
      * api/datasets/1.0/search
-   * * lookup_dataset
+   * * ``lookup_dataset``
      * Lookup dataset query
      * api/datasets/1.0/<dataset_id>
-   * * dataset_list_snapshots
+   * * ``dataset_list_snapshots``
      * List dataset snapshots query
      * api/datasets/1.0/<dataset_id>/snapshots/
-   * * search_dataset_records
+   * * ``search_dataset_records``
      * Search query on dataset records
      * api/datasets/1.0/<dataset_id>/records/
-   * * lookup_record
+   * * ``lookup_record``
      * Lookup record query
      * api/datasets/1.0/<dataset_id>/records/<record_id>
-   * * dowload_dataset
+   * * ``download_dataset``
      * Download dataset records from explore tab in explore
      * explore/dataset/<dataset_id>/download/
-   * * download_dataset_records
+   * * ``download_dataset_records``
      * Download dataset records from API (total dataset download count = dowload_dataset + download_dataset_records)
      * api/datasets/1.0/<dataset_id>/records/download/
-   * * download_dataset_attachment
+   * * ``download_dataset_attachment``
      * Download dataset attachment
      * api/datasets/1.0/<dataset_id>/attachments/<attachment_id>/
-   * * get_bbox_clusters
+   * * ``get_bbox_clusters``
      * Bounding box query.
      * api/datasets/1.0/<dataset_id>/records/boundingbox/
-   * * analyze_records
+   * * ``analyze_records``
      * Analyze records query. Called by analyze tab in explore
      * api/datasets/1.0/<dataset_id>/records/analyze/
-   * * get_geo_clusters
+   * * ``get_geo_clusters``
      * Geo cluster query. Called by map tab in explore for geo_point
      * api/datasets/1.0/<dataset_id>/records/geocluster/
-   * * get_geo_clusters_polygon
+   * * ``get_geo_clusters_polygon``
      * Geo clusters polygon query. Called by map tab in explore for shapes
      * api/datasets/1.0/<dataset_id>/records/geopolygon/
-   * * download_image
+   * * ``download_image``
      * Download image. Called by image tab in explore
      * explore/dataset/<dataset_id>/images/<image_id>/download/
 
@@ -159,25 +159,25 @@ The **api** field for ODATA API contains one of the following values.
    * * API name
      * Description
      * URL template
-   * * odata_service_root_doc
+   * * ``odata_service_root_doc``
      * Root ODATA API
      * api/odata/
-   * * odata_entity
+   * * ``odata_entity``
      * list of records in a dataset
      * api/odata/<dataset_id>/
-   * * odata_property_value
+   * * ``odata_property_value``
      * plain text value of a specific field of a specific record from a dataset
      * api/odata/<dataset_id>('<record_id>')/<field>/$value
-   * * odata_entity_key_predicate
+   * * ``odata_entity_key_predicate``
      * specific record from a dataset
      * api/odata/<dataset_id>('<record_id>')/
-   * * record_with_id
+   * * ``record_with_id``
      * specific record from a dataset (without quote in API call)
      * api/odata/<dataset_id>(<record_id>)/
-   * * odata_metadata_doc
+   * * ``odata_metadata_doc``
      * metadata call
      * api/odata/$metadata/
-   * * odata_record_count
+   * * ``odata_record_count``
      * number of records in a dataset
      * api/odata/<dataset_id>/$count/
 
@@ -192,43 +192,43 @@ The **api** field for OpenDataSoft APIv2 (ods_v2) contains one of the following 
   * * API name
     * Description
     * URL template
-  * * api_root
+  * * ``api_root``
     * Call to API v2 root
     * /v2
-  * * api_source
+  * * ``api_source``
     * Call to source path (catalog, monitoring, opendatasoft)
     * /v2/<source>
-  * * datasets_index
+  * * ``datasets_index``
     * Search on datasets catalog (can be an export if ``export_as`` parameter is used)
     * /v2/<source>/datasets
-  * * dataset_lookup
+  * * ``dataset_lookup``
     * Dataset lookup call
     * /v2/<source>/datasets/<dataset_id>
-  * * aggregate_datasets
+  * * ``aggregate_datasets``
     * Aggregation call on catalog
     * /v2/<source>/aggregates
-  * * records_index
+  * * ``records_index``
     * Search on dataset records (can be an export if ``export_as`` parameter is used)
     * /v2/<source>/datasets/<dataset_id>/records
-  * * record_lookup
+  * * ``record_lookup``
     * Record lookup call
     * /v2/<source>/datasets/<dataset_id>/records/<record_id>
-  * * aggregate_records
+  * * ``aggregate_records``
     * Aggregation call on dataset records
     * /v2/<source>/datasets/<dataset_id>/aggregates
-  * * attachments_index
+  * * ``attachments_index``
     * Call to dataset attachments
     * /v2/<source>/datasets/<dataset_id>/attachments
-  * * attachment_lookup
+  * * ``attachment_lookup``
     * Call to attachment lookup
     * /v2/<source>/datasets/<dataset_id>/attachments/<attachment_id>
-  * * metadata_template_types_index
+  * * ``metadata_template_types_index``
     * Return metadata template types
     * /v2/<source>/metadata_templates
-  * * metadata_template_type_lookup
+  * * ``metadata_template_type_lookup``
     * Metadata template type lookup
     * /v2/<source>/metadata_templates/<template_type>
-  * * metadata_template_lookup
+  * * ``metadata_template_lookup``
     * Metadata template lookup
     * /v2/<source>/metadata_templates/<template_type>/<template_name>
 
@@ -243,15 +243,15 @@ The **embed type** field describes the type of embed which generated the query, 
 
    * * Embed type
      * Description
-   * * cartograph
+   * * ``cartograph``
      * Cartograph embed
-   * * chartbuilder
+   * * ``chartbuilder``
      * Advanced chart embed
-   * * explore-analyze
+   * * ``explore-analyze``
      * Analyze tab embed
-   * * explore-map
+   * * ``explore-map``
      * Map tab embed
-   * * explore-table
+   * * ``explore-table``
      * Explore tab embed
-   * * explore-images
+   * * ``explore-images``
      * Images tab embed
