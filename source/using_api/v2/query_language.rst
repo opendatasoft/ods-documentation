@@ -1,14 +1,13 @@
 Query Language
 ==============
 
-Filtering features are built in the core of OpenDataSoft API engine. Many of the previously listed APIs can take as a
-parameter filters for constraining the list of returned datasets or records.
+Filtering features are built in the core of OpenDataSoft API engine.
 
 The OpenDataSoft Query Language (ODSQL) makes it possible to express complex queries as a filtering context for datasets or records, but also to build aggregations or computed fields.
 
 Note that a given filtering context can simply be copied from one API to another. For example, you can easily build a
-user interface which first allows the user to visually select the records their are interested in, using full text
-search, facets and geo filtering, and then allowing them to download these records with the same filtering context.
+user interface which first allows the user to visually select the records they are are interested in, using full text
+search, facets and geo filtering ; and then allowing them to download these records with the same filtering context.
 
 Introduction
 ------------
@@ -24,12 +23,48 @@ These clauses are used as parameters in the Search API v2 for searching, aggrega
 
 The whole query language is case insensitive but we will use upper case in the documentation for language keywords for clarity. Spaces are optional.
 
+
+Select clause
+-------------
+
+The **select** clause can be used in the whole search API as the parameter ``select``. Its goal is to allow you to choose the fields that will be returned for each row, transform them using arithmetic, rename them, add computed virtual fields, include or exclude fields based on a pattern.
+
+A **select** clause can be:
+
+- a single expression
+- a list of comma-separated expressions
+
+Select expression
+~~~~~~~~~~~~~~~~~
+
+.. code::
+
+  *
+  field1, field2, field3
+  field1 AS my_field, field2
+  field1 * 2 AS twice_field1
+
+These expressions are classic expressions showing multiple selection, field renaming and arithmetic select. The '*' (wildcard) means all the fields (if not in an arithmetic select where it is treated as the multiply sign). It is the default behavior when no select is specified in the search endpoint. In the aggregates endpoint, the default is to only display fields used for the aggregation.
+
+Include and exclude
+~~~~~~~~~~~~~~~~~~~
+
+.. code::
+
+  INCLUDE(pop) # will only include fields which name is pop
+  EXCLUDE(pop) # will exclude fields which name is pop
+
+
 Where clause
 ------------
 
 The **where** clause can be used in the whole search API as the parameter ``q``. Its goal is to filter rows with a combination of boolean expressions, functions, expressions or search queries.
 
-A **where** clause can be a single expression, a list of comma-separated expressions that must all be satisfied at the same time, or empty.
+A **where** clause can be:
+
+- a single expression
+- a list of comma-separated expressions that must all be satisfied at the same time
+- empty
 
 Filter functions
 ~~~~~~~~~~~~~~~~
@@ -113,7 +148,7 @@ Text field
    * * ``=``
      * Perform an exact query (not tokenized and not normalized) on the specified field.
        Example: ``film_name=Star`` will not match ``Star Wars``. To match ``Star Wars`` it is possible to use quotes.
-       ``film_name="Star Wars``
+       ``film_name="Star Wars"``
 
 Numeric field
 ^^^^^^^^^^^^^
@@ -124,7 +159,7 @@ Numeric field
    * * Operators
      * Description
    * * ``:``, ``=``
-     * Match a numeric value. For instance: ``age:18`` will filter rows with field ``age`` is equals to ``18``
+     * Match a numeric value. For instance: ``age:18`` will filter rows with field ``age`` is equal to ``18``
    * * ``>``, ``<``, ``>=``, ``<=``
      * Return results whose field values are larger, smaller, larger or equal, smaller or equal to the given value.
    * * ``[lower_numeric (TO|..) higher_numeric]``
@@ -146,11 +181,11 @@ Date field
      * Return results whose field values are larger, smaller, larger or equal, smaller or equal to the given value.
    * * ``[lower_date (TO|..) higher_date]``
      * Queries Records whose numeric value is between ``lower_date`` and ``higher_date``.
-       An inclusive or exclusive bound can be used. Example: ``]lower_numeric (TO|..) higher_numeric[`` will exclude ``lower_date`` and ``higher_date``.
+       An inclusive or exclusive bound can be used. Example: ``]lower_date (TO|..) higher_date[`` will exclude ``lower_date`` and ``higher_date``.
 
 Date formats can be specified in different formats: simple (YYYY[[/mm]/dd]) or ISO 8601 (YYYY-mm-DDTHH:MM:SS)
 
-Examples:
+**Examples:**
 
 * ``film_date >= 2002``
 * ``film_date >= 2013/02/11``
@@ -187,7 +222,7 @@ It is possible to perform a greedy query by adding a wildcard `*` at the end of 
 Field queries
 ~~~~~~~~~~~~~
 
-One of the major feature of the query language is to allow per field filtering. You can use field names as a prefix to
+One of the major features of the query language is to allow per field filtering. You can use field names as a prefix to
 your queries to filter the results based on a specific field's value.
 
 **For the dataset search API**, the list of available fields corresponds exactly to available metadata. By default:
@@ -226,7 +261,7 @@ which contain at least 50 000 records:
   (title:paris OR decription:paris) AND records_count >= 50 000
   http://public.opendatasoft.com/api/v2/catalog/datasets?q=(title:paris%20OR%20description:paris)%20AND%20records_count%20>=%2050000
 
-**For the record search APIs**, the list of available fields depend on the schema of the dataset. To fetch the list of
+**For the record search APIs**, the list of available fields depends on the schema of the dataset. To fetch the list of
 available fields for a given dataset, you may use the search dataset or lookup dataset APIs.
 
 For example one can search in the dataset containing the history of the SuperBowl, the ones that happened in a stadium called "Bowl".
@@ -236,41 +271,18 @@ For example one can search in the dataset containing the history of the SuperBow
   stadium: "bowl"
   http://public.opendatasoft.com/api/v2/catalog/datasets/super-bowl/records?q=stadium:"bowl"
 
-Multiple operator fields can be used between the field name and the query depending of the type
+Multiple operator fields can be used between the field name and the query depending of the type.
 
-Select clause
--------------
-
-The **select** clause can be used in the whole search API as the parameter ``select``. Its goal is to allow you to choose the fields that will be returned for each row, transform them using arithmetic, rename them, add computed virtual fields, include or exclude fields based on a pattern.
-
-A **select** clause can be a single expression or a list of comma-separated expressions.
-
-Select expression
-~~~~~~~~~~~~~~~~~
-
-.. code::
-
-  *
-  field1, field2, field3
-  field1 AS my_field, field2
-  field1 * 2 AS twice_field1
-
-These expressions are classic expressions showing multiple selection, field renaming and arithmetic select. The '*' (wildcard) means all the fields (if not in an arithmetic select where it is treated as the multiply sign). It is the default behavior when no select is specified in the search endpoint. In the aggregates endpoint, the default is to only display fields used for the aggregation.
-
-Include and exclude
-~~~~~~~~~~~~~~~~~~~
-
-.. code::
-
-  INCLUDE(pop) # will only include fields which name is pop
-  EXCLUDE(pop) # will exclude fields which name is pop
 
 Group by clause
 ---------------
 
 The **group by** clause can be used in the whole search API as the parameter ``group_by``. It enables you to group a set of rows together by field value, or by numeric or date range.
 
-A **group by** clause can be a single expression or a list of comma-separated expressions. Like selects, group by expressions can have an ``AS`` statement to give them a label.
+A **group by** clause can be:
+
+- a single expression
+- a list of comma-separated expressions. Like selects, group by expressions can have an ``AS`` statement to give them a label
 
 Static range
 ~~~~~~~~~~~~
