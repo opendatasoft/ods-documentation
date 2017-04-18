@@ -1646,6 +1646,10 @@ msgid ""
 "processor, file type columns do not yield the actual resource through the "
 "processor but instead yield the name of the underlying resource."
 msgstr ""
+"Se da una parte quasi tutti i tipi di colonna possono essere recuperati "
+"tramite il processore di unione dei dataset, dall'altra con quest'ultimo le "
+"colonne del tipo di file non forniscono l'effettiva risorsa, ma il nome "
+"della risorsa primaria."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:684
 msgid ""
@@ -1885,13 +1889,15 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:817
 msgid "JSON array to multivalued"
-msgstr ""
+msgstr "Dall'array JSON al campo multivalore"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:819
 msgid ""
 "This processor extracts multiple values from a field containing a JSON array"
 " and concatenates them into a multivalued field."
 msgstr ""
+"Questo processore estrae valori multipli da un campo che contiene un array "
+"JSON e li concatena in un campo multivalore."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:821
 msgid ""
@@ -1899,22 +1905,25 @@ msgid ""
 "field, so don't forget to enable it on the field's parameters, along with "
 "the same separator as in the processor."
 msgstr ""
+"Nota bene: la proprietà ``multivalore`` non verrà impostata automaticamente "
+"nel campo, quindi non dimenticare di attivarla nei relativi parametri e di "
+"utilizzare lo stesso delimitatore del processore."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:824
 msgid "Original value"
-msgstr ""
+msgstr "Valore originale"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:824
 msgid "After processor"
-msgstr ""
+msgstr "Dopo il processore"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:826
 msgid "``{\"a\":[\"b\",\"c\",\"d\"]}``"
-msgstr ""
+msgstr "``{\"a\":[\"b\",\"c\",\"d\"]}``"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:826
 msgid "``b,c,d``"
-msgstr ""
+msgstr "``b,c,d``"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:829
 msgid ""
@@ -1922,6 +1931,9 @@ msgid ""
 "from JSON\" processor and should contain the array to concatenate "
 "(represented with the iJSON rule ``.item``)."
 msgstr ""
+"Il parametro \"regola iJSON per l'array\" funziona esattamente come il "
+"processore \"Estrai da JSON\" e deve contenere l'array da concatenare "
+"(rappresentato con la regola iJSON ``.item``)."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:847
 msgid ""
@@ -1930,38 +1942,43 @@ msgid ""
 "separated with a dot. The position of the array is indicated with the "
 "``item`` keyword."
 msgstr ""
+"Regola iJSON da iterare nel precedente array JSON. La regola iJSON viene "
+"creata con i nomi di tutti i campi dalla radice JSON fino ai dati da "
+"estrarre, separati da un punto. La posizione dell'array è indicata dalla "
+"parola chiave dell'``item``."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:849
 msgid "item.metaB"
-msgstr ""
+msgstr "item.metaB"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:851
 msgid "Character or string used to separate the different values found"
 msgstr ""
+"Il carattere o la stringa utilizzati per separare i diversi valori trovati"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:853
 msgid ","
-msgstr ""
+msgstr ","
 
 #: ../../source/sourcing_and_processing_data/processing.rst:876
 msgid "``item.metaB``: ``value1,value2``"
-msgstr ""
+msgstr "``item.metaB``: ``value1,value2``"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:877
 msgid "``item.int``: ``5,6``"
-msgstr ""
+msgstr "``item.int``: ``5,6``"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:878
 msgid "``item.boolean``: ``false,true``"
-msgstr ""
+msgstr "``item.boolean``: ``false,true``"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:899
 msgid "``bloc.item.metaB``: ``value1,value2``"
-msgstr ""
+msgstr "``bloc.item.metaB``: ``value1,value2``"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:900
 msgid "``bloc.item.sub.sub_sub``: ``sub_value,other_sub_value``"
-msgstr ""
+msgstr "``bloc.item.sub.sub_sub``: ``sub_value,other_sub_value``"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:903
 msgid "Extract bit range"
