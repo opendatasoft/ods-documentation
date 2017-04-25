@@ -304,6 +304,6 @@ locale_dirs = ['_locale/']
 gettext_compact = False
 
 html_context = {
-    'languages': ['en', 'fr', 'es', 'de'],
+    'languages': ['en', 'fr', 'es', 'de', 'nl'],
     'extra_css_styles': ['style.css'],
 }
