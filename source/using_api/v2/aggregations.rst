@@ -102,6 +102,7 @@ Still using the dataset described at the beginning, let's assume we want to 'coo
 little less sales each day and pocket the difference at the end of the year.
 
 Request:
+
 .. code-block:: js
 
     {
