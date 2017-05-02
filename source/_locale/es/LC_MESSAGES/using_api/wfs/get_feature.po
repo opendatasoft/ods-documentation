@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 16:11+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
@@ -20,17 +20,19 @@ msgstr ""
 
 #: ../../source/using_api/wfs/get_feature.rst:2
 msgid "GetFeature"
-msgstr ""
+msgstr "GetFeature"
 
 #: ../../source/using_api/wfs/get_feature.rst:3
 msgid ""
 "The ``GetFeature`` operation allows retrieval of features from the WFS, and "
 "output them using the GML 3.1.1 representation."
 msgstr ""
+"La operación ``GetFeature`` permite recuperar funciones del servicio WFS y "
+"enviarlas a la salida utilizando la representación GML 3.1.1."
 
 #: ../../source/using_api/wfs/get_feature.rst:7
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: ../../source/using_api/wfs/get_feature.rst:8
 msgid ""
@@ -38,16 +40,21 @@ msgid ""
 "operation. You should also take into consideration the common parameters. "
 "`See more <intro.html#parameters>`_."
 msgstr ""
+"Esta es la lista de los parámetros permitidos específicos de la operación "
+"``GetFeature``. Asimismo, debe tener en cuenta los parámetros comunes. "
+"`Consulte más información <intro.html#parameters>`_."
 
 #: ../../source/using_api/wfs/get_feature.rst:11
 msgid ""
 "The existing parameters in the WFS standard which are not listed in this "
 "table are currently not supported."
 msgstr ""
+"Los parámetros existentes en el estándar WFS que no figuran en esta tabla "
+"actualmente no están permitidos."
 
-#: ../../source/using_api/wfs/get_feature.rst:0
+#: ../../source/using_api/wfs/get_feature.rst:13
 msgid "Supported parameters for the GetFeature operation"
-msgstr ""
+msgstr "Parámetros permitidos para la operación GetFeature"
 
 #: ../../source/using_api/wfs/get_feature.rst:16
 msgid "Parameter"
@@ -59,11 +66,11 @@ msgstr "Descripción"
 
 #: ../../source/using_api/wfs/get_feature.rst:18
 msgid "Optionality and use"
-msgstr ""
+msgstr "Carácter opcional y uso"
 
 #: ../../source/using_api/wfs/get_feature.rst:19
 msgid "``resultType``"
-msgstr ""
+msgstr "``resultType``"
 
 #: ../../source/using_api/wfs/get_feature.rst:20
 msgid ""
@@ -71,81 +78,94 @@ msgid ""
 "of whether it should generate an empty response document indicating only the"
 " number of features that the query would return."
 msgstr ""
+"Se utiliza para indicar si un servicio WFS debería generar un documento de "
+"servicio completo o debería generar un documento de respuesta vacío "
+"indicando solo el número de funciones que devolvería la consulta."
 
 #: ../../source/using_api/wfs/get_feature.rst:22
 msgid ""
 "Optional. Values can be ``hits`` or ``results``. Default value is "
 "``results``."
 msgstr ""
+"Opcional. Los valores pueden ser ``hits`` y ``results``. El valor "
+"predeterminado es ``results``."
 
 #: ../../source/using_api/wfs/get_feature.rst:23
 msgid "``maxFeatures``"
-msgstr ""
+msgstr "``maxFeatures``"
 
 #: ../../source/using_api/wfs/get_feature.rst:24
 msgid ""
 "Used to define the maximum number of records that should be returned from "
 "the result set of a query."
 msgstr ""
+"Se utiliza para definir el número máximo de registros que debería devolverse"
+" del conjunto de resultados de una consulta."
 
 #: ../../source/using_api/wfs/get_feature.rst:25
 msgid "Optional. Value must be a positive integer."
-msgstr ""
+msgstr "Opcional. El valor debe ser un entero positivo."
 
 #: ../../source/using_api/wfs/get_feature.rst:26
 msgid "``TypeName``"
-msgstr ""
+msgstr "``TypeName``"
 
 #: ../../source/using_api/wfs/get_feature.rst:27
 msgid "A list of feature type names to query."
-msgstr ""
+msgstr "Una lista de los nombres de tipo de función para consultar."
 
 #: ../../source/using_api/wfs/get_feature.rst:28
 msgid "Mandatory."
-msgstr ""
+msgstr "Obligatorio."
 
 #: ../../source/using_api/wfs/get_feature.rst:29
 msgid "``PropertyName``"
-msgstr ""
+msgstr "``PropertyName``"
 
 #: ../../source/using_api/wfs/get_feature.rst:30
 msgid "A list of properties that should be returned."
-msgstr ""
+msgstr "Una lista de las propiedades que deberían devolverse."
 
 #: ../../source/using_api/wfs/get_feature.rst:31
 msgid ""
 "Optional. The absence of a value also indicates that all properties should "
 "be fetched."
 msgstr ""
+"Opcional. La ausencia de un valor también indica que deben capturarse todas "
+"las propiedades."
 
 #: ../../source/using_api/wfs/get_feature.rst:32
 msgid "``featureId``"
-msgstr ""
+msgstr "``featureId``"
 
 #: ../../source/using_api/wfs/get_feature.rst:33
 msgid ""
 "An enumerated list of feature instances to fetch identified by their feature"
 " identifiers."
 msgstr ""
+"Una lista enumerada de las instancias de función para capturar, "
+"identificadas por sus identificadores de función."
 
 #: ../../source/using_api/wfs/get_feature.rst:34
 msgid "Optional."
-msgstr ""
+msgstr "Opcional."
 
 #: ../../source/using_api/wfs/get_feature.rst:37
 msgid "Examples"
-msgstr ""
+msgstr "Ejemplos"
 
 #: ../../source/using_api/wfs/get_feature.rst:38
 msgid ""
 "Here is an example of a ``GetFeature`` operation with the optional "
 "``PropertyName`` parameter, using a ``GET`` HTTP method :"
 msgstr ""
+"A continuación se muestra un ejemplo de una operación ``GetFeature`` con el "
+"parámetro ``PropertyName`` opcional, utilizando un método HTTP ``GET``:"
 
 #: ../../source/using_api/wfs/get_feature.rst:44
 msgid "And the same request using a ``POST`` HTTP method :"
-msgstr ""
+msgstr "Y la misma solicitud utilizando un método HTTP ``POST``:"
 
 #: ../../source/using_api/wfs/get_feature.rst:50
 msgid "The request body :"
-msgstr ""
+msgstr "Cuerpo de la solicitud:"

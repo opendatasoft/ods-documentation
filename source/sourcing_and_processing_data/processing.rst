@@ -567,7 +567,7 @@ Let's take an example and assume that the first dataset contains two rows for th
      * Rennes - Montparnasse
      * 1 place du dix huit Juin 1940, 75006 Paris
 
-If **One line** is set (with **Separator** set to `|`), the Join will result in:
+If **One line** is set (with **Separator** set to ``|``), the Join will result in:
 
 .. list-table::
    :header-rows: 1
@@ -578,8 +578,8 @@ If **One line** is set (with **Separator** set to `|`), the Join will result in:
      * station_address
    * * 1
      * 10
-     * Tour Eiffel&#124;Quai Branly
-     * 69 quai Branly, 75007 Paris&#124;69 quai Branly, 75007 Paris
+     * Tour Eiffel|Quai Branly
+     * 69 quai Branly, 75007 Paris|69 quai Branly, 75007 Paris
    * * 2
      * 15
      * Rennes - Montparnasse
@@ -607,17 +607,90 @@ If **One line** is not set, the Join will result in:
      * Rennes - Montparnasse
      * 1 place du dix huit Juin 1940, 75006 Paris
 
-This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will
-activate it for you.
+Integers, decimals and text field containing numerical values can be joined together. For example the following dataset:
+
+.. list-table::
+   :header-rows: 1
+
+   * * insee_code (text)
+     * bloom_competition_result (decimal)
+   * * 01262
+     * 2.0
+   * * 90010
+     * 4.0
+   * * 57355
+     * 2.0
+
+can be used in a join dataset processor in the following dataset:
+
+.. list-table::
+   :header-rows: 1
+
+   * * bloom_ranks (integer)
+   * * 2
+
+to obtain the following result:
+
+.. list-table::
+   :header-rows: 1
+
+   * * insee_code (text)
+     * bloom_competition_result (decimal)
+   * * 01262
+     * 2
+   * * 57355
+     * 2
+
+The matching between values ``2`` and ``2.0`` was successful despite the type difference. We can go further and apply to it a second join dataset processor, in order to obtain values from the following dataset:
+
+.. list-table::
+   :header-rows: 1
+
+   * * city (text)
+     * insee_code (integer)
+     * postal_code (text)
+   * * Montluel
+     * 1262
+     * 01120
+   * * Belfort
+     * 90010
+     * 90000
+   * * Kalhausen
+     * 57355
+     * 57412
+
+to obtain this result:
+
+.. list-table::
+   :header-rows: 1
+
+   * * insee_code (text)
+     * bloom_competition_result (decimal)
+     * city (text)
+     * postal_code (text)
+   * * 01262
+     * 2
+     * Montluel
+     * 01120
+   * * 57355
+     * 2
+     * Kalhausen
+     * 57412
+
+Note that even though the insee_code was not in the same type, the matching happened. The matching worked even for the value ``1262`` in the first dataset (note the absence of leading 0, due to it being an integer value), that matched against the value ``01262`` in the second dataset.
+
+While most column types can be retrieved by using the join datasets processor, file type columns do not yield the actual resource through the processor but instead yield the name of the underlying resource.
+
+By default, this processor can only be used with remote datasets that have fewer than 100000 records.
 
 Extract from JSON
 ~~~~~~~~~~~~~~~~~
 
-This processor extracts values from a field containing a JSON object following a list of ijson rules.
+This processor extracts values from a field containing a JSON object following a list of iJSON rules.
 
-It creates target columns for the extracted data that are automatically named like the ijson rules but replacing dots with underscores. For each ijson rule, a column is created with the extracted value.
+It creates target columns for the extracted data that are automatically named like the iJSON rules but replacing dots with underscores. For each iJSON rule, a column is created with the extracted value.
 
-The processor doesn't support ijson rules that lead to an array (containing a ``.item`` in the rule).
+The processor doesn't support iJSON rules that lead to an array (containing a ``.item`` in the rule).
 
 .. list-table::
   :header-rows: 1
@@ -630,14 +703,14 @@ The processor doesn't support ijson rules that lead to an array (containing a ``
     * Name of the field that holds the JSON object
     * Field
     * data
-  * * ijson rules
-    * ijson rules to apply to extract data from the JSON object above. An ijson rule is built with the names of all the field from the JSON root to the data to extract, separated with a dot.
+  * * iJSON rules
+    * iJSON rules to apply to extract data from the JSON object above. An iJSON rule is built with the names of all the field from the JSON root to the data to extract, separated with a dot.
     * List
     * block.metaB
 
-For example, let's assume that you have this json object into a text field :
+For example, let's assume that you have this JSON object into a text field :
 
-.. code-block:: json
+.. code-block:: JSON
 
     { "metaA": "Joe",
       "bloc" : {
@@ -652,9 +725,9 @@ For example, let's assume that you have this json object into a text field :
 * you will be able to extract the value ``valueB`` with this rule : ``bloc.metaB``
 * you will be able to extract the value ``5`` with this rule : ``bloc.int``
 * you will be able to extract the value ``sub_value`` with this rule : ``sub.sub_sub``
-* The rule ``bloc`` will extract the json object :
+* The rule ``bloc`` will extract the JSON object :
 
-    .. code-block:: json
+    .. code-block:: JSON
 
         {
             "metaB" : "valueB",
@@ -670,10 +743,10 @@ Expand JSON array
 
 This processor transposes rows containing a JSON array into several rows with a new column containing each value of the array.
 
-The parameter "ijson rule to array" works exactly like in the "Extract from JSON" processor and should contain the array to transpose (represented with the ijson rule ``.item``).
+The parameter "iJSON rule to array" works exactly like in the "Extract from JSON" processor and should contain the array to transpose (represented with the iJSON rule ``.item``).
 
-- If the field contains the JSON array directly, just put ``item`` as an ijson rule.
-- If the final element is an array, the ijson rule must end with ``.item``, meaning that the reached object should be treated as an array of items in the ijson syntax.
+- If the field contains the JSON array directly, just put ``item`` as an iJSON rule.
+- If the final element is an array, the iJSON rule must end with ``.item``, meaning that the reached object should be treated as an array of items in the iJSON syntax.
 - If you want to keep going into the items inside the array, you can keep adding key names after the ``.item``, but be careful to check that this path is valid for every object in the array.
 
 .. list-table::
@@ -683,12 +756,12 @@ The parameter "ijson rule to array" works exactly like in the "Extract from JSON
     * Description
     * Type
     * Example
-  * * json array field
+  * * JSON array field
     * Name of the field that holds the JSON array
     * Field
     * data
-  * * ijson rule to array
-    * ijson rule to iterate in the JSON array above. An ijson rule is built with the names of all the field from the JSON root to the data to extract, separated with a dot.
+  * * iJSON rule to array
+    * iJSON rule to iterate in the JSON array above. An iJSON rule is built with the names of all the field from the JSON root to the data to extract, separated with a dot.
     * List
     * block.metaB
   * * Output field
@@ -696,9 +769,9 @@ The parameter "ijson rule to array" works exactly like in the "Extract from JSON
     * Field
     *
 
-Example of ijson rules to extract from the following JSON array field:
+Example of iJSON rules to extract from the following JSON array field:
 
-.. code-block:: json
+.. code-block:: JSON
 
     [
         {
@@ -715,7 +788,7 @@ Example of ijson rules to extract from the following JSON array field:
 
 - ``item`` will transpose the record into two, one with each object of the array in the "Output field" column
 
-.. code-block:: json
+.. code-block:: JSON
 
     { "metaA": "Joe",
       "bloc" : [
@@ -740,6 +813,91 @@ Example of ijson rules to extract from the following JSON array field:
 
 This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will activate it for you.
 
+JSON array to multivalued
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This processor extracts multiple values from a field containing a JSON array and concatenates them into a multivalued field.
+
+Note: the ``multivalued`` property will not be set automatically in the field, so don't forget to enable it on the field's parameters, along with the same separator as in the processor.
+
++-------------------------+------------------+
+| Original value          | After processor  |
++-------------------------+------------------+
+| ``{"a":["b","c","d"]}`` | ``b,c,d``        |
++-------------------------+------------------+
+
+The parameter "iJSON rule to array" works exactly like in the "Extract from JSON" processor and should contain the array to concatenate (represented with the iJSON rule ``.item``).
+
+- If the field contains the JSON array directly, just put ``item`` as an iJSON rule.
+- If the final element is an array, the iJSON rule must end with ``.item``, meaning that the reached object should be treated as an array of items in the iJSON syntax.
+- If you want to keep going into the items inside the array, you can keep adding key names after the ``.item``, but be careful to check that this path is valid for every object in the array.
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Example
+  * * Field
+    * Name of the field that holds the JSON array
+    * Field
+    * data
+  * * iJSON rule to array
+    * iJSON rule to iterate in the JSON array above. An iJSON rule is built with the names of all the field from the JSON root to the data to extract, separated with a dot. The position of the array is indicated with the ``item`` keyword.
+    * String
+    * item.metaB
+  * * Separator
+    * Character or string used to separate the different values found
+    * String
+    * ,
+  * * Output field
+    * Name of the field that will contain the extracted element
+    * Field
+    *
+
+Example of iJSON rules to extract from the following JSON array field:
+
+.. code-block:: JSON
+
+    [
+        {
+          "metaB" : "value1",
+          "int": 5,
+          "boolean": false
+        },
+        {
+          "metaB" : "value2",
+          "int": 6,
+          "boolean": true
+        },
+    ]
+
+- ``item.metaB``: ``value1,value2``
+- ``item.int``: ``5,6``
+- ``item.boolean``: ``false,true``
+
+.. code-block:: JSON
+
+    { "metaA": "Joe",
+      "bloc" : [
+            {
+              "metaB" : "value1",
+              "int": 5,
+              "boolean": false,
+              "sub" : { "sub_sub" : "sub_value"}
+            },
+            {
+              "metaB" : "value2",
+              "int": 6,
+              "boolean": true,
+              "sub" : { "sub_sub" : "other_sub_value"}
+            },
+          ]
+    }
+
+- ``bloc.item.metaB``: ``value1,value2``
+- ``bloc.item.sub.sub_sub``: ``sub_value,other_sub_value``
 
 Extract bit range
 ~~~~~~~~~~~~~~~~~
@@ -775,7 +933,7 @@ The processor works with masks, it expects
 
 For example, let's assume  you have a temperature sensor that sends and hexadecimal value.
 
-  .. code-block:: json
+  .. code-block:: text
 
     hex value : 2C09
 
@@ -783,7 +941,7 @@ This hexadecimal value contains:
 - a decimal value encoded on 2 bytes
 - the sensor status on a bit.
 
-  .. code-block:: json
+  .. code-block:: text
 
     hex value : 2C09          <- information sent by the sensor in hexadecimal
     bin value : 00010110 00000100 1   <- same information in binary
@@ -803,31 +961,31 @@ Therefore, the processing pipeline will contains 3 **Extract bit mask** processo
 
 **Extract bit mask 1**
 
-  .. code-block:: json
+  .. code-block:: text
 
     00010110 -> 22
 
 **Extract bit mask 2**
 
-  .. code-block:: json
+  .. code-block:: text
 
     00000100 -> 4
 
 **Extract bit mask 3**
 
-  .. code-block:: json
+  .. code-block:: text
 
       1 -> OK
 
 **Expression**
 
-  .. code-block:: json
+  .. code-block:: text
 
     Expression : integer_temp & "." & decimal_temp
 
 **Temperature**
 
-  .. code-block:: json
+  .. code-block:: text
 
     Temperature : 22,4 °C
     Sensor : OK
@@ -1208,6 +1366,16 @@ It takes the following parameters:
     * Double
     * yes
 
+Tolerance indicates the value below which intermediate points will be suppressed.
+
+Depending on the shape complexity, different tolerances can be tested.
+
+You could start with a tolerance value of 0.0001.
+To simplify more, use a power of ten e.g. 0.001, then 0.01.
+
+If you use a tolerance too high, your shapes will be overly simplified and unrecognizable.
+Use the preview to find out which tolerance works best for you.
+
 Normalize Projection Reference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1275,6 +1443,22 @@ Concatenate Text
 ~~~~~~~~~~~~~~~~
 
 This processor can be used to concatenate two fields using a separator. You'll need to define the left and right hand sides of the concatenation, as well as the separator and the resulting field.
+
+One common use case is to concatenate a X and Y coordinates columns in a new column with both separated by a comma, which can then be used as a ``geo point``.
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__concatenate-en.png
+    :alt: Concatenate Text
+
+    In this example, we concatenate the column X and Y in a new column Coordinates, which can then be used as a ``geo point``
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__concatenate-fr.png
+    :alt: Concatenate Text
+
+    In this example, we concatenate the column X and Y in a new column Coordinates, which can then be used as a ``geo point``
 
 It takes the following parameters:
 
@@ -1368,8 +1552,26 @@ It takes the following parameters:
 Replace via Regexp
 ~~~~~~~~~~~~~~~~~~
 
-This processor can be used to replace a random regular expression pattern by new content. See
-`<http://en.wikipedia.org/wiki/Regular_expression>`_ for more details on how to write a regular expressions.
+This processor can be used to replace or remove any part of a text or a number or a combination of both.
+
+One use case is keeping only a part of a number, for example from a french Zip code to keep only the area code, e.g from 44100 (Nantes city) keep only 44 (Loire-Atlantique area).
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__replace-regexp-en.png
+    :alt: Replace Regexp
+
+    In this example, the regular expression processor is configured with the pattern ``[0-9]{3}$``, and a replacement by nothing. The pattern means "select 3 digits from the end", with ``[0-9]`` meaning any digit, ``{3}`` meaning exactly 3 occurences, and ``$`` meaning the end of the text. These 3 digits from the end are then replaced by nothing, so only the first 2 digits will stay.
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__replace-regexp-fr.png
+    :alt: Replace Regexp
+
+    In this example, the regular expression processor is configured with the pattern ``[0-9]{3}$``, and a replacement by nothing. The pattern means "select 3 digits from the end", with ``[0-9]`` meaning any digit, ``{3}`` meaning exactly 3 occurences, and ``$`` meaning the end of the text. These 3 digits from the end are then replaced by nothing, so only the first 2 digits will stay.
+
+
+See `<http://en.wikipedia.org/wiki/Regular_expression>`_ for more details on how to write a regular expressions.
 You can test your regexp expressions with an online debugger tool like `Regex101 <https://regex101.com/>`_.
 
 It takes the following parameters:
@@ -1415,6 +1617,18 @@ Split Text
 
 This processor can be used to split a field's value and to extract the Nth element to a new field.
 
+The number of the part extracted is specified in the ``index`` parameter. Note that the numbering starts at 0.
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__split-text-en.png
+    :alt: Split Text
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__split-text-fr.png
+    :alt: Split Text
+
 It takes the following parameters:
 
 .. list-table::
@@ -1444,7 +1658,27 @@ It takes the following parameters:
 Extract text
 ~~~~~~~~~~~~
 
-This processor can be used to extract an arbitrary pattern expressed as a regular expression out of a string using sub matching.
+This processor can be used to extract any part of a text or a number or a combination of both into a new column. It's similar to the Replace Regexp processor, except instead of replacing the content in place the same column, a new column is created with the selected text.
+
+The idea is to put the part we want to extract in parenthesis. This part will then be extracted in a new column.
+
+Using the same example as for the Replace Regexp processor (from a french zip code like 44100, keep only the area code 44), the Extract Text processor can be used to create another column with the area code selected, instead of replacing the content like with the Replace Regexp processor.
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__extract-text-en.png
+    :alt: Replace Regexp
+
+    In this example, we use the pattern ``(?P<area>[0-9]{2})[0-9]{3}``. ``[0-9]`` means any digit, and ``{2}`` or ``{3}`` means the number of digits we are looking for. In this case we want to extract the first two digits, so we put them in parenthesis, then after the parenthesis we put the rest of the sequence that we don't want to extract, here the remaining 3 digits. The special expression ``?P<area>`` is just for specifiying the new column name
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__extract-text-fr.png
+    :alt: Replace Regexp
+
+    In this example, we use the pattern ``(?P<area>[0-9]{2})[0-9]{3}``. ``[0-9]`` means any digit, and ``{2}`` or ``{3}`` means the number of digits we are looking for. In this case we want to extract the first two digits, so we put them in parenthesis, then after the parenthesis we put the rest of the sequence that we don't want to extract, here the remaining 3 digits. The special expression ``?P<area>`` is just for specifiying the new column name
+
+From a more technical point of view, this processor can be used to extract an arbitrary pattern expressed as a regular expression out of a string using sub matching.
 
 The syntax of the sub-matching expression to specify is the following: ``(?P<NAME>REGEXP)``. Where:
 

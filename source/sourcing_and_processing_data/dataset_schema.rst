@@ -1,5 +1,5 @@
-The dataset schema
-==================
+Defining the dataset schema
+===========================
 
 
 As seen in a previous article, a dataset content can be seen as a flat database table. That is:
@@ -20,20 +20,20 @@ Fields have a type. The following types are available:
    * * Type
      * Description
    * * Date
-     * Like 2015/02/11 or 2015-02-11 or 02/11/2015... . The platform will try to guess as accurately as possible the
+     * Like ``2015/02/11`` or ``2015-02-11`` or ``02/11/2015``... . The platform will try to guess as accurately as possible the
        input date format. However, in case of bad detection or ambiguity, do not hesitate to use the
        **Date Normalizer** processor which lets you define precisely the parsing format of your date field.
    * * DateTime
-     * Like 2015/02/11-08:09:10 or 2015-02-11T08:09:10 or 02/11/2015 08:09:10... . Timezone specifications are also
+     * Like ``2015/02/11-08:09:10`` or ``2015-02-11T08:09:10`` or ``02/11/2015 08:09:10``... . Timezone specifications are also
        processed. The platform will try to guess as accurately as possible the input datetime format. However, in case
        of bad detection or ambiguity, do not hesitate to use the **Date Normalizer** processor which lets
        you define precisely the parsing format of your datetime field.
    * * Decimal
-     * A decimal number. Valid separators for the decimal part are '.' or ','. The space character can also be used as
-       a thousands separator but not the ','.
+     * A decimal number. Valid separators for the decimal part are ``.`` or ``,``. The space character can also be used as
+       a thousands separator but not the ``,``.
    * * Geo Point
-     * A single geographical location expressed in the format *<LAT>,<LON>*, for instance
-       *45.8,2.5*. If your dataset contains two fields, latitude and longitude, you'll need to concatenate them
+     * A single geographical location expressed in the format ``<LAT>,<LON>``, for instance
+       ``45.8,2.5``. If your dataset contains two fields, latitude and longitude, you'll need to concatenate them
        with a **Concatenate Text** processor to form a valid geo point field.
    * * GeoShape
      * A valid geo shape expressed in `GeoJSON <http://geojson.org/geojson-spec.html>`_. 

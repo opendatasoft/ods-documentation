@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 16:11+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2017\n"
+"Last-Translator: Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../source/using_api/v1/using_facets.rst:2
 msgid "Using facets"
-msgstr ""
+msgstr "Utilizar las facetas"
 
 #: ../../source/using_api/v1/using_facets.rst:4
 msgid ""
@@ -28,22 +28,32 @@ msgid ""
 "instance, let's say a dataset has a facet \"City\". A record in this dataset"
 " could have the value \"Paris\" for the \"City\" facet."
 msgstr ""
+"Una faceta se puede considerar una etiqueta de valor asociada a un registro."
+" Por ejemplo, supongamos que un conjunto de datos tiene una faceta \"City\"."
+" Un registro de este conjunto de datos podría tener el valor \"Paris\" para "
+"la faceta \"City\"."
 
 #: ../../source/using_api/v1/using_facets.rst:7
 msgid ""
 "Facets are for instance used for building the left navigation colonne, both "
 "for dataset catalog exploration page and dataset records exploration page."
 msgstr ""
+"Las facetas se utilizan, por ejemplo, para compilar el panel de navegación "
+"izquierdo, tanto en la página de exploración del catálogo de conjuntos de "
+"datos como en la página de exploración de los registros de conjuntos de "
+"datos."
 
 #: ../../source/using_api/v1/using_facets.rst:10
 msgid ""
 "Facets are especially useful to implement guided navigation in large result "
 "sets."
 msgstr ""
+"Las facetas resultan de especial utilidad para implementar la navegación "
+"guiada en conjuntos de resultados grandes."
 
 #: ../../source/using_api/v1/using_facets.rst:13
 msgid "Identifying facets"
-msgstr ""
+msgstr "Identificar las facetas"
 
 #: ../../source/using_api/v1/using_facets.rst:15
 msgid ""
@@ -51,124 +61,130 @@ msgid ""
 "be enabled by using the \"facet\" API parameter, specifying the name of the "
 "facet to retrieve."
 msgstr ""
+"De forma predeterminada, en las API de registros y conjuntos de datos, las "
+"facetas están inactivas. Se pueden activar las facetas por medio del "
+"parámetro de API \"facet\", especificando el nombre de la faceta que se debe"
+" recuperar."
 
 #: ../../source/using_api/v1/using_facets.rst:18
 msgid ""
 "In the dataset APIs, facets are the same for all datasets and are the "
 "following:"
 msgstr ""
+"En las API de conjuntos de datos, las facetas son las mismas para todos los "
+"conjuntos de datos y son las siguientes:"
 
 #: ../../source/using_api/v1/using_facets.rst:23
 msgid "Facet Name"
-msgstr ""
+msgstr "Nombre de faceta"
 
 #: ../../source/using_api/v1/using_facets.rst:24
 msgid "Description"
 msgstr "Descripción"
 
 #: ../../source/using_api/v1/using_facets.rst:25
-msgid "modified"
-msgstr ""
+msgid "``modified``"
+msgstr "``modified``"
 
 #: ../../source/using_api/v1/using_facets.rst:26
 msgid "Last modification date"
-msgstr ""
+msgstr "Fecha de la última modificación"
 
 #: ../../source/using_api/v1/using_facets.rst:27
-msgid "publisher"
-msgstr ""
+msgid "``publisher``"
+msgstr "``publisher``"
 
 #: ../../source/using_api/v1/using_facets.rst:28
 msgid "Producer"
-msgstr ""
+msgstr "Productor"
 
 #: ../../source/using_api/v1/using_facets.rst:29
-msgid "issued"
-msgstr ""
+msgid "``issued``"
+msgstr "``issued``"
 
 #: ../../source/using_api/v1/using_facets.rst:30
 msgid "First publication date"
-msgstr ""
+msgstr "Fecha de la primera publicación"
 
 #: ../../source/using_api/v1/using_facets.rst:31
-msgid "accrualperiodicity"
-msgstr ""
+msgid "``accrualperiodicity``"
+msgstr "``accrualperiodicity``"
 
 #: ../../source/using_api/v1/using_facets.rst:32
 msgid "Publication frequency"
-msgstr ""
+msgstr "Frecuencia de publicación"
 
 #: ../../source/using_api/v1/using_facets.rst:33
-msgid "language"
-msgstr ""
+msgid "``language``"
+msgstr "``language``"
 
 #: ../../source/using_api/v1/using_facets.rst:34
 msgid "Language"
-msgstr ""
+msgstr "Idioma"
 
 #: ../../source/using_api/v1/using_facets.rst:35
-msgid "license"
-msgstr ""
+msgid "``license``"
+msgstr "``license``"
 
 #: ../../source/using_api/v1/using_facets.rst:36
 msgid "Licence"
-msgstr ""
+msgstr "Licencia"
 
 #: ../../source/using_api/v1/using_facets.rst:37
-msgid "granularity"
-msgstr ""
+msgid "``granularity``"
+msgstr "``granularity``"
 
 #: ../../source/using_api/v1/using_facets.rst:38
 msgid "Data granularity"
-msgstr ""
+msgstr "Granularidad de los datos"
 
 #: ../../source/using_api/v1/using_facets.rst:39
-msgid "dataquality"
-msgstr ""
+msgid "``dataquality``"
+msgstr "``dataquality``"
 
 #: ../../source/using_api/v1/using_facets.rst:40
 msgid "Data quality"
-msgstr ""
+msgstr "Calidad de datos"
 
 #: ../../source/using_api/v1/using_facets.rst:41
-msgid "theme"
-msgstr ""
+msgid "``theme``"
+msgstr "``theme``"
 
 #: ../../source/using_api/v1/using_facets.rst:42
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: ../../source/using_api/v1/using_facets.rst:43
-msgid "keyword"
-msgstr ""
+msgid "``keyword``"
+msgstr "``keyword``"
 
 #: ../../source/using_api/v1/using_facets.rst:44
 msgid "Keywords"
-msgstr ""
+msgstr "Palabras claves"
 
 #: ../../source/using_api/v1/using_facets.rst:45
-msgid "created"
-msgstr ""
+msgid "``created``"
+msgstr "``created``"
 
 #: ../../source/using_api/v1/using_facets.rst:46
 msgid "Creation date"
-msgstr ""
+msgstr "Fecha de creación"
 
 #: ../../source/using_api/v1/using_facets.rst:47
-msgid "creator"
-msgstr ""
+msgid "``creator``"
+msgstr "``creator``"
 
 #: ../../source/using_api/v1/using_facets.rst:48
 msgid "Creator"
-msgstr ""
+msgstr "Creador"
 
 #: ../../source/using_api/v1/using_facets.rst:49
-msgid "contributor"
-msgstr ""
+msgid "``contributor``"
+msgstr "``contributor``"
 
 #: ../../source/using_api/v1/using_facets.rst:50
 msgid "Contributors"
-msgstr ""
+msgstr "Colaboradores"
 
 #: ../../source/using_api/v1/using_facets.rst:52
 msgid ""
@@ -177,126 +193,165 @@ msgid ""
 "instance from the Dataset Lookup API) for which faceting is available can be"
 " easily identified:"
 msgstr ""
+"En las API de registros, las facetas se definen a nivel de campo. Una faceta"
+" de campo puede estar disponible en función de las opciones seleccionadas "
+"por el productor de datos. Los campos (recuperados, por ejemplo, de la API "
+"de consulta de conjunto de datos) para los cuales están disponibles las "
+"facetas son fáciles de identificar:"
 
-#: ../../source/using_api/v1/using_facets.rst:73
+#: ../../source/using_api/v1/using_facets.rst:78
 msgid ""
 "When faceting is enabled, facets are returned in the response after the "
 "result set."
 msgstr ""
+"Cuando las facetas están activadas, estas se devuelven en la respuesta "
+"después del conjunto de resultados."
 
-#: ../../source/using_api/v1/using_facets.rst:75
+#: ../../source/using_api/v1/using_facets.rst:80
 msgid ""
 "Every facet has a display value (\"name\" attribute) and a refine property "
 "(\"path\" attribute) which can be used to alter the query context."
 msgstr ""
+"Cada una de las facetas tiene un valor de visualización (atributo \"name\") "
+"y una propiedad de refinamiento (atributo \"path\") que se pueden utilizar "
+"para alterar el contexto de consulta."
 
-#: ../../source/using_api/v1/using_facets.rst:78
+#: ../../source/using_api/v1/using_facets.rst:83
 msgid ""
 "Facets are hierarchical, for instance, a year facet will contain months "
 "facets and a month facet will contain days facets."
 msgstr ""
+"Las facetas son jerárquicas; por ejemplo, una faceta de año contendrá varias"
+" facetas de meses, y una faceta de mes contendrá varias facetas de días."
 
-#: ../../source/using_api/v1/using_facets.rst:81
+#: ../../source/using_api/v1/using_facets.rst:86
 msgid "Example of a facet tree:"
-msgstr ""
+msgstr "Ejemplo de un árbol de facetas:"
 
-#: ../../source/using_api/v1/using_facets.rst:103
+#: ../../source/using_api/v1/using_facets.rst:119
 msgid "Every facet contains two additional information:"
-msgstr ""
+msgstr "Todas las facetas contienen 2 datos adicionales:"
 
-#: ../../source/using_api/v1/using_facets.rst:105
+#: ../../source/using_api/v1/using_facets.rst:121
 msgid ""
 "The \"count\" attribute contains the number of hits that have the same facet"
 " value. The \"state\" attribute defines whether the facet is currently used "
 "in a \"refine\" or in an \"exclude\". Possible values for the state "
 "attribute are:"
 msgstr ""
+"El atributo \"count\" contiene el número de coincidencias que tienen el "
+"mismo valor de faceta. El atributo \"state\" define si la faceta se utiliza "
+"actualmente en un \"refinamiento\" o una \"exclusión\". Los valores posibles"
+" del atributo state son:"
 
-#: ../../source/using_api/v1/using_facets.rst:109
+#: ../../source/using_api/v1/using_facets.rst:125
 msgid "**displayed**: no refine nor exclude"
-msgstr ""
+msgstr "**displayed**: Ni refinamiento ni exclusión"
 
-#: ../../source/using_api/v1/using_facets.rst:110
+#: ../../source/using_api/v1/using_facets.rst:126
 msgid "**refined**: refine"
-msgstr ""
+msgstr "**refined**: Refinamiento"
 
-#: ../../source/using_api/v1/using_facets.rst:111
+#: ../../source/using_api/v1/using_facets.rst:127
 msgid "**excluded**: exclude"
-msgstr ""
+msgstr "**excluded**: Exclusión"
 
-#: ../../source/using_api/v1/using_facets.rst:113
+#: ../../source/using_api/v1/using_facets.rst:129
 msgid "Example of a facet with all its attributes:"
-msgstr ""
+msgstr "Ejemplo de una faceta con todos sus atributos:"
 
-#: ../../source/using_api/v1/using_facets.rst:138
+#: ../../source/using_api/v1/using_facets.rst:157
 msgid "Refining"
-msgstr ""
+msgstr "Refinamiento"
 
-#: ../../source/using_api/v1/using_facets.rst:140
+#: ../../source/using_api/v1/using_facets.rst:159
 msgid ""
 "It is possible to limit the result set by refining on a given facet value. "
 "To do so, use the following API parameter: ``refine.FACETNAME=FACETVALUE``."
 msgstr ""
+"Se puede limitar el conjunto de resultados efectuando un refinamiento a "
+"partir de un valor de faceta determinado. Para ello, use el parámetro de API"
+" siguiente: ``refine.NOMBRE_FACETA=VALOR_FACETA``."
 
-#: ../../source/using_api/v1/using_facets.rst:143
+#: ../../source/using_api/v1/using_facets.rst:162
 msgid ""
 "For example: "
 "`<http://public.opendatasoft.com/api/datasets/1.0/search?refine.modified=2013>`_"
 msgstr ""
+"Por ejemplo: "
+"`<http://public.opendatasoft.com/api/datasets/1.0/search?refine.modified=2013>`_"
 
-#: ../../source/using_api/v1/using_facets.rst:145
+#: ../../source/using_api/v1/using_facets.rst:164
 msgid ""
 "In the returned result set, only the datasets modified in 2013 will be "
 "returned."
 msgstr ""
+"En el conjunto de resultados devuelto, solo se mostrarán los conjuntos de "
+"datos modificados en 2013."
 
-#: ../../source/using_api/v1/using_facets.rst:147
+#: ../../source/using_api/v1/using_facets.rst:166
 msgid ""
 "As the refinement occurs on the \"year\" and as the \"modified\" facet is "
 "hierarchical, the sub-level is returned; results are dispatched in the "
 "\"month\" sub value:"
 msgstr ""
+"Como se produce el refinamiento a partir del valor de año y la faceta "
+"\"modified\" es jerárquica, se devuelve el subnivel; los resultados se "
+"distribuyen en el subvalor de mes:"
 
-#: ../../source/using_api/v1/using_facets.rst:171
+#: ../../source/using_api/v1/using_facets.rst:198
 msgid "Excluding"
-msgstr ""
+msgstr "Exclusión"
 
-#: ../../source/using_api/v1/using_facets.rst:173
+#: ../../source/using_api/v1/using_facets.rst:200
 msgid ""
 "Using the same principle as above, it is possible to exclude from the result"
 " set the hits matching a given value of a given facet. To do so, use the "
 "following API parameter: ``exclude.FACETNAME=FACETVALUE``."
 msgstr ""
+"Según el mismo principio anterior, se puede excluir del conjunto de "
+"resultados las coincidencias con un valor determinado de una faceta "
+"determinada. Para ello, use el parámetro de API siguiente: "
+"``exclude.NOMBRE_FACETA=VALOR_FACETA``."
 
-#: ../../source/using_api/v1/using_facets.rst:176
+#: ../../source/using_api/v1/using_facets.rst:203
 msgid ""
 "For example: "
 "`<http://public.opendatasoft.com/api/datasets/1.0/search?exclude.modified=2013>`_"
 msgstr ""
+"Por ejemplo: "
+"`<http://public.opendatasoft.com/api/datasets/1.0/search?exclude.modified=2013>`_"
 
-#: ../../source/using_api/v1/using_facets.rst:178
+#: ../../source/using_api/v1/using_facets.rst:205
 msgid "Only results that have not been modified in 2011 will be returned."
-msgstr ""
+msgstr "Solo se devolverán los resultados que no se hayan modificado en 2011."
 
-#: ../../source/using_api/v1/using_facets.rst:181
+#: ../../source/using_api/v1/using_facets.rst:208
 msgid "Disjunctive faceting"
-msgstr ""
+msgstr "Facetas disyuntivas"
 
-#: ../../source/using_api/v1/using_facets.rst:183
+#: ../../source/using_api/v1/using_facets.rst:210
 msgid ""
 "By default, faceting is conjunctive. This means that the following context "
 "will lead down to no results: "
 "`<http://public.opendatasoft.com/api/datasets/1.0/search?refine.modified=2013&refine.modified=2014>`_."
 msgstr ""
+"De forma predeterminada, las facetas son conjuntivas. Esto significa que el "
+"contexto siguiente no proporcionará ningún resultado: "
+"`<http://public.opendatasoft.com/api/datasets/1.0/search?refine.modified=2013&refine.modified=2014>`_."
 
-#: ../../source/using_api/v1/using_facets.rst:186
+#: ../../source/using_api/v1/using_facets.rst:213
 msgid ""
 "You can enable disjunctive faceting using the following API parameter: "
 "``disjunctive.FACETNAME=true``."
 msgstr ""
+"Puede activar las facetas disyuntivas con el parámetro de API siguiente: "
+"``disjunctive.NOMBRE_FACETA=true``."
 
-#: ../../source/using_api/v1/using_facets.rst:188
+#: ../../source/using_api/v1/using_facets.rst:215
 msgid ""
 "For example: "
 "`<http://public.opendatasoft.com/api/datasets/1.0/search?refine.modified=2013&refine.modified=2014&disjunctive.modified=true>`_"
 msgstr ""
+"Por ejemplo: "
+"`<http://public.opendatasoft.com/api/datasets/1.0/search?refine.modified=2013&refine.modified=2014&disjunctive.modified=true>`_"

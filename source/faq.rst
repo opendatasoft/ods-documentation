@@ -50,25 +50,25 @@ host public and private datasets. It is also possible to define the ACL of a rec
 
 The OpenDataSoft platform natively supports the following file formats:
 
-* CSV
-* GeoJSON
-* JSON
-* JSON lines
-* KML
-* OSM archives (OpenStreetMap)
-* Shapefile
-* MapInfo
-* Excel
-* OpenDocument Spreadsheet
-* Remotely stored files for any of the above formats (HTTP or FTP)
+* ``CSV````
+* ``GeoJSON``
+* ``JSON``
+* ``JSON lines``
+* ``KML``
+* ``OSM archives (OpenStreetMap)``
+* ``Shapefile``
+* ``MapInfo``
+* ``Excel``
+* ``OpenDocument Spreadsheet``
+* ``Remotely stored files for any of the above formats (HTTP or FTP)``
 
 Specific format parsers can also be made available by the OpenDataSoft team for specific requirements.
 
 The OpenDataSoft platform is also able to connect to remote Web services. OpenDataSoft supports the following services in its standard version:
 
-* ArcGIS REST API
-* RSS / Atom feeds
-* Salesforce / Force.com (you'll have to ask OpenDataSoft support to activate it on your domain)
+* ``ArcGIS REST API``
+* ``RSS / Atom feeds``
+* ``Salesforce / Force.com`` (you'll have to ask OpenDataSoft support to activate it on your domain)
 
 Custom connectivity capabilities can be added upon request.
 
@@ -77,26 +77,26 @@ Custom connectivity capabilities can be added upon request.
 OpenDataSoft natively uses a subset of `DCAT <http://www.w3.org/TR/vocab-dcat/>`_ to describe datasets. The following
 metadata are available by default: 
 
-* title
-* description
-* language
-* theme
-* keyword
-* license
-* publisher
-* reference
+* ``title``
+* ``description``
+* ``language``
+* ``theme``
+* ``keyword``
+* ``license``
+* ``publisher``
+* ``reference``
 
 It is possible to activate the full DCAT template, thus adding the following additional metadata:
 
-* created
-* issued
-* creator
-* contributor
-* accrual periodicity
-* spatial
-* temporal
-* granularity
-* data quality
+* ``created``
+* ``issued``
+* ``creator``
+* ``contributor``
+* ``accrual periodicity``
+* ``spatial``
+* ``temporal``
+* ``granularity``
+* ``data quality``
 
 A full `INSPIRE <http://inspire.ec.europa.eu/index.cfm/pageid/101>`_ template is also available and can be activated on
 demand.
@@ -146,11 +146,11 @@ the type select).
 
 Facets can be seen as dimensions of a dataset. Facets can be defined on the following field types: 
 
-* date
-* datetime
-* text
-* int 
-* decimal
+* ``date``
+* ``datetime``
+* ``text``
+* ``int``
+* ``decimal``
 
 Facets shall only be configured for fields that have a small number of different values compared to the number of
 records in a dataset. For instance, defining a facet on an field that would uniquely identify a record is useless as
@@ -184,10 +184,10 @@ the ``latitude,longitude`` format. For instance: ``48.2567,3.7689``.
 
 By default, only the numerical fields are sortable. That is, fields having one of the following types:
 
-* int
-* double
-* date
-* datetime
+* ``int``
+* ``double``
+* ``date``
+* ``datetime``
 
 **Text** fields are not sortable by default. The dataset owner may configure some text fields to be sortable. Sortable **text** fields can be identified through the API (``sortable`` annotation).
 
@@ -236,3 +236,44 @@ OpenDataSoft domain owner for more details.
 Yes.
 
 Whenever you publish a dataset, a dedicated API is created. See :doc:`APIs documentation</using_api/index>` for more information.
+
+25. **What are the compatible browsers for OpenDataSoft's platform?**
+
+.. tabularcolumns:: |C|C|C|C|
+
++---------+--------------------+------------------+------------------+
+| OS      | Browser            | Front Office     | Back Office      |
++=========+====================+==================+==================+
+| Windows | Internet Explorer  |                  |                  |
+|         |    |iexplore|      | Version 9+       | Version 10+      |
+|         +--------------------+------------------+------------------+
+|         | Edge               |                  |                  |
+|         |    |iexplore|      | Latest version   | Latest version   |
+|         +--------------------+------------------+------------------+
+|         | Chrome             |                  |                  |
+|         |    |chrome|        | Latest version   | Latest version   |
+|         +--------------------+------------------+------------------+
+|         | Firefox            |                  |                  |
+|         |    |firefox|       | Latest version   | Latest version   |
++---------+--------------------+------------------+------------------+
+| Mac     | Safari             |                  |                  |
+|         |    |safari|        | Version 6+       | Version 6+       |
+|         +--------------------+------------------+------------------+
+|         | Chrome             |                  |                  |
+|         |    |chrome|        | Latest version   | Latest version   |
+|         +--------------------+------------------+------------------+
+|         | Firefox            |                  |                  |
+|         |    |firefox|       | Latest version   | Latest version   |
++---------+--------------------+------------------+------------------+
+
+.. |iexplore| image:: browser-logos-master/src/edge/edge_32x32.png  
+    :alt: Internet Explorer 
+
+.. |chrome| image:: browser-logos-master/src/chrome/chrome_32x32.png
+    :alt: Chrome
+
+.. |firefox| image:: browser-logos-master/src/firefox/firefox_32x32.png
+    :alt: Firefox
+
+.. |safari| image:: browser-logos-master/src/safari/safari_32x32.png
+    :alt: Safari

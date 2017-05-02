@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 16:11+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2017\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ../../source/using_api/csw/get_record_by_id.rst:2
 msgid "GetRecordById"
-msgstr ""
+msgstr "GetRecordById"
 
 #: ../../source/using_api/csw/get_record_by_id.rst:3
 msgid ""
@@ -27,10 +28,13 @@ msgid ""
 "representation of catalogue records using their identifier. The response is "
 "a XML document and the output schema can be specified."
 msgstr ""
+"Mit dem Vorgang ``GetRecordById`` können Kunden die Darstellung von "
+"Katalogeinträgen unter Verwendung ihrer Bezeichner abrufen. Die Antwort ist "
+"ein XML-Dokument und das Ausgabeschema kann festgelegt werden."
 
 #: ../../source/using_api/csw/get_record_by_id.rst:7
 msgid "Parameters"
-msgstr ""
+msgstr "Parameter"
 
 #: ../../source/using_api/csw/get_record_by_id.rst:8
 msgid ""
@@ -38,38 +42,45 @@ msgid ""
 "``GetRecordById`` operation. You should also take into consideration the "
 "common parameters. `See more <intro.html#parameters>`_."
 msgstr ""
+"Das ist die für den Vorgang ``GetRecordById`` spezifische Liste der "
+"unterstützten Parameter. Sie sollten auch die allgemeinen Parameter "
+"berücksichtigen. `Weitere Details siehe <intro.html#parameters>`_."
 
 #: ../../source/using_api/csw/get_record_by_id.rst:11
 msgid ""
 "The existing parameters in the CSW standard which are not listed in this "
 "table are currently not supported."
 msgstr ""
+"Im CSW-Standard bestehende, aber in dieser Tabelle nicht aufgelistete "
+"Parameter werden gegenwärtig nicht unterstützt."
 
-#: ../../source/using_api/csw/get_record_by_id.rst:0
+#: ../../source/using_api/csw/get_record_by_id.rst:13
 msgid "Supported parameters for the GetRecordById operation"
-msgstr ""
+msgstr "Unterstützte Parameter für den Vorgang GetRecordById"
 
 #: ../../source/using_api/csw/get_record_by_id.rst:16
 msgid "Parameter"
-msgstr ""
+msgstr "Parameter"
 
 #: ../../source/using_api/csw/get_record_by_id.rst:17
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: ../../source/using_api/csw/get_record_by_id.rst:18
 msgid "Optionality and use"
-msgstr ""
+msgstr "Optionalität und Verwendung"
 
 #: ../../source/using_api/csw/get_record_by_id.rst:19
 msgid "``outputSchema``"
-msgstr ""
+msgstr "``outputSchema``"
 
 #: ../../source/using_api/csw/get_record_by_id.rst:20
 msgid ""
 "Used to indicate the schema of the output that is generated in response to a"
 " ``GetRecordById`` request."
 msgstr ""
+"Dient zur Festlegung des Schemas der als Antwort auf die Anfrage "
+"``GetRecordById`` generierten Ausgabe."
 
 #: ../../source/using_api/csw/get_record_by_id.rst:21
 msgid ""
@@ -77,51 +88,63 @@ msgid ""
 "``http://www.isotc211.org/2005/gmd``. Default value is "
 "``http://www.opengis.net/cat/csw/2.0.2``."
 msgstr ""
+"Optional. Mögliche Werte sind ``http://www.opengis.net/cat/csw/2.0.2`` oder "
+"``http://www.isotc211.org/2005/gmd``. Der Standardwert ist "
+"``http://www.opengis.net/cat/csw/2.0.2``."
 
 #: ../../source/using_api/csw/get_record_by_id.rst:23
 msgid "``ElementSetName``"
-msgstr ""
+msgstr "``ElementSetName``"
 
 #: ../../source/using_api/csw/get_record_by_id.rst:24
 msgid ""
 "Used to indicate which named set the service shall present to the client. It"
 " usually defines the level of details present in the result set."
 msgstr ""
+"Dient zur Angabe, welchen benannten Satz der Dienst dem Kunden präsentieren "
+"soll. Definiert normalerweise die Detailstufe im Ergebnissatz."
 
 #: ../../source/using_api/csw/get_record_by_id.rst:26
 msgid ""
 "Optional. Values can be ``full``, ``summary`` or ``brief``. Default value is"
 " ``summary``."
 msgstr ""
+"Optional. Mögliche Werte sind ``voll``, ``Übersicht`` oder ``kurz``. Der "
+"Standardwert ist ``Übersicht``."
 
 #: ../../source/using_api/csw/get_record_by_id.rst:27
 msgid "``Id``"
-msgstr ""
+msgstr "``Id``"
 
 #: ../../source/using_api/csw/get_record_by_id.rst:28
 msgid ""
 "A list of record identifiers for the records that a CSW shall return to the "
 "client."
 msgstr ""
+"Eine Liste von Eintragsbezeichnern für die Einträge, die ein CSW an den "
+"Kunden zurückgeben soll."
 
 #: ../../source/using_api/csw/get_record_by_id.rst:29
 msgid "Mandatory. List of resource identifier."
-msgstr ""
+msgstr "Erforderlich. Liste von Ressourcenbezeichnern."
 
 #: ../../source/using_api/csw/get_record_by_id.rst:32
 msgid "Examples"
-msgstr ""
+msgstr "Beispiele"
 
 #: ../../source/using_api/csw/get_record_by_id.rst:33
 msgid ""
 "Here is an example of a ``GetRecordById`` operation with the optional "
 "``outputSchema`` parameter, using a ``GET`` HTTP method :"
 msgstr ""
+"Hier ist ein Beispiel eines ``GetRecordById``-Vorgangs mit optionalem "
+"``outputSchema``-Parameter unter Verwendung einer ``GET`` HTTP-Methode:"
 
 #: ../../source/using_api/csw/get_record_by_id.rst:39
 msgid "And the same request using a ``POST`` HTTP method :"
 msgstr ""
+"Und die gleiche Anforderung unter Verwendung einer ``POST`` HTTP-Methode:"
 
 #: ../../source/using_api/csw/get_record_by_id.rst:45
 msgid "The request body :"
-msgstr ""
+msgstr "Der Anforderungskörper:"

@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 16:11+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Datawords Rel2 <datawords.rel.2@gmail.com>, 2017\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ../../source/editing_pages/style.rst:2
 msgid "Customize a content page with HTML and CSS"
-msgstr ""
+msgstr "Personalizzazione di una pagina di contenuto con i codici HTML e CSS"
 
 #: ../../source/editing_pages/style.rst:4
 msgid ""
@@ -27,12 +28,17 @@ msgid ""
 "you may want to go further. Maybe you want to add a new block below, or add "
 "a large centered header at the top?"
 msgstr ""
+"Dopo aver creato una pagina semplice utilizzando uno dei modelli "
+"predefiniti, è possibile personalizzarla, aggiungendo ad esempio un nuovo "
+"blocco in basso o un ampio header centrato in alto."
 
 #: ../../source/editing_pages/style.rst:7
 msgid ""
 "Switching to the **expert mode** lets you edit directly the underlying "
 "language behind the page, which is the HTML and CSS code."
 msgstr ""
+"Passando alla **modalità Esperto**, avrai modo di modificare direttamente il"
+" linguaggio della pagina, che è scritta in codice HTML e CSS."
 
 #: ../../source/editing_pages/style.rst:9
 msgid ""
@@ -42,6 +48,11 @@ msgid ""
 "do simple things like changing the layout of your page, changing the size of"
 " your text..."
 msgstr ""
+"Ogni pagina Web è creata in HTML e CSS. Puoi servirti di questi linguaggi "
+"per creare soluzioni anche molto complesse, ma alla base sono pensati per "
+"essere espressivi e facili da imparare. Dopo averli sperimentati un po', in "
+"genere si è subito in grado di effettuare semplici operazioni, come "
+"modificare il layout della pagina, cambiare le dimensioni del testo, ecc."
 
 #: ../../source/editing_pages/style.rst:13
 msgid ""
@@ -50,6 +61,11 @@ msgid ""
 "do this much better than us; however, these are examples that you can start "
 "from and expand upon."
 msgstr ""
+"Questo articolo offre alcune soluzioni di base utili a modificare il modello"
+" di una pagina standard. Lo scopo non è certo quello di insegnarti i "
+"linguaggi HTML e CSS – altre risorse sapranno farlo certamente in modo "
+"appropriato – ma gli esempi che seguono ti daranno senz'altro qualche spunto"
+" da cui partire per ulteriori approfondimenti."
 
 #: ../../source/editing_pages/style.rst:16
 msgid ""
@@ -59,32 +75,44 @@ msgid ""
 "link in the top right of the interface. You now have two \"CSS\" and "
 "\"HTML\" tabs, containing the code behing the page."
 msgstr ""
+"Per iniziare, crea una nuova pagina basata sul modello \"Blocco principale +"
+" colonna a destra\", come visto nell'articolo :doc:`Creazione di una "
+"semplice pagina di contenuto </editing_pages/create>`. In seguito, passa "
+"alla **modalità Esperto** tramite il collegamento presente nell'angolo in "
+"alto a destra dell'interfaccia. Vedrai così comparire le schede \"CSS\" e "
+"\"HTML\", che contengono il codice della pagina."
 
 #: ../../source/editing_pages/style.rst:19
 msgid ""
 "The CSS tab is empty for now, as there is no specific CSS code. However, the"
 " HTML of the page is here:"
 msgstr ""
+"Al momento la scheda CSS è vuota, mentre il codice HTML è il seguente:"
 
 #: ../../source/editing_pages/style.rst:31
 msgid "Adding a new row"
-msgstr ""
+msgstr "Aggiunta di una riga"
 
 #: ../../source/editing_pages/style.rst:33
 msgid ""
 "Each ``<div>`` tag represents a block in the page; the class attached to "
 "each block defines its appearance, like its width."
 msgstr ""
+"Ogni tag ``<div>`` racchiude un blocco all'interno della pagina, mentre le "
+"classi incluse in ogni blocco ne definiscono l'aspetto, come ad esempio la "
+"sua larghezza."
 
 #: ../../source/editing_pages/style.rst:44
 msgid "More precisely:"
-msgstr ""
+msgstr "In termini più precisi:"
 
 #: ../../source/editing_pages/style.rst:36
 msgid ""
 "``<div class=\"container-fluid\">`` is the block around the entire page, "
 "making sure it takes all the available width in the browser"
 msgstr ""
+"``<div class=\"container-fluid\">`` è il blocco che circoscrive la pagina "
+"intera, occupando l'intera larghezza disponibile nel browser."
 
 #: ../../source/editing_pages/style.rst:37
 msgid ""
@@ -92,6 +120,9 @@ msgid ""
 "blocks. By reasoning using \"rows\", we make sure our blocks don't mix up if"
 " one is larger than the others."
 msgstr ""
+"``<div class=\"row\">`` rappresenta una riga che contiene altri blocchi. "
+"Ragionare in termini di \"righe\", consente di evitare che i blocchi si "
+"sovrappongano nel caso in cui uno sia più grande degli altri."
 
 #: ../../source/editing_pages/style.rst:39
 msgid ""
@@ -106,12 +137,25 @@ msgid ""
 "detailed in the :doc:`Designing a responsive portal "
 "</customizing_look_and_feel/responsive>` article."
 msgstr ""
+"``<div class=\"col-md-8\">`` e ``<div class=\"col-md-4\">`` sono i due "
+"blocchi che racchiudono il contenuto \"reale\", ad esempio un testo. L'idea "
+"alla base delle classi ``col-md-8`` e ``col-md-4`` è quella di suddividere "
+"lo spazio di ogni riga in una griglia di 12 \"celle\". Visto che i blocchi "
+"di questa riga possono occupare al massimo 12 celle, ognuno di essi deve "
+"specificare la propria ampiezza utilizzando la classe ``col-md-X``, dove X "
+"sta per il numero di celle coperte. In questo caso, delle 12 disponibili, un"
+" blocco ne richiederà 8 e l'altro 4 (rispettivamente, due terzi e un terzo "
+"dello spazio). Questo modello logico, chiamato \"a griglia\", è illustrato "
+"in dettaglio nell'articolo :doc:`Progettazione di un portale responsivo "
+"</customizing_look_and_feel/responsive>`."
 
 #: ../../source/editing_pages/style.rst:44
 msgid ""
 "``<div class=\"ods-box\">`` just creates a visual block with a border and a "
 "background, more suitable to contain text."
 msgstr ""
+"``<div class=\"ods-box\">`` crea semplicemente un blocco visivo con un bordo"
+" e uno sfondo, ideale per accogliere i contenuti testuali."
 
 #: ../../source/editing_pages/style.rst:46
 msgid ""
@@ -119,14 +163,17 @@ msgid ""
 "space. Following our previous logic, we add a new row, and three blocks "
 "taking each 4 cells."
 msgstr ""
+"Se ora decidiamo di aggiungere una riga di tre blocchi, ciascuno equivalente"
+" a un terzo dello spazio, in base al nostro modello logico creeremo una riga"
+" con tre blocchi da 4 celle:"
 
 #: ../../source/editing_pages/style.rst:63
 msgid "Our preview now looks like this:"
-msgstr ""
+msgstr "Ecco l'anteprima della pagina:"
 
 #: ../../source/editing_pages/style.rst:74
 msgid "Setting a basic style"
-msgstr ""
+msgstr "Configurazione di uno stile di base"
 
 #: ../../source/editing_pages/style.rst:76
 msgid ""
@@ -134,6 +181,9 @@ msgid ""
 "change the size of the text, add a colored background, borders, change the "
 "color..."
 msgstr ""
+"Il codice CSS serve a modificare l'aspetto del contenuto da visualizzare: "
+"puoi cambiare la dimensione del testo, aggiungere uno sfondo colorato, "
+"inserire dei bordi, modificare il colore, ecc."
 
 #: ../../source/editing_pages/style.rst:79
 msgid ""
@@ -144,19 +194,32 @@ msgid ""
 " This way, you can apply the same class to various elements, and if you "
 "change your page, the rules will still apply to your element."
 msgstr ""
+"Esistono diversi modi per applicare le \"regole\" CSS a un elemento della "
+"pagina, ma è buona norma ricorrere sempre all'uso delle \"classi\". "
+"Aggiungendo `class=\"lamiaclasse\"` a un elemento della tua pagina, associ "
+"quest'ultimo alla classe creata: a questo punto, non ti resterà che scrivere"
+" le regole CSS che vuoi assegnare. In questo modo, potrai applicare la "
+"stessa classe a elementi diversi e, in caso di modifiche alla pagina, le "
+"regole resteranno sempre valide."
 
 #: ../../source/editing_pages/style.rst:84
 msgid ""
 "Let's assume we want to make some text larger than usual. First, you need to"
 " add a class to the element containing the text, here, \"Hello world!\":"
 msgstr ""
+"Immaginiamo di voler ingrandire le dimensioni del testo \"Hello world!\". "
+"Innanzitutto, devi aggiungere una classe all'elemento che contiene la frase:"
 
 #: ../../source/editing_pages/style.rst:102
 msgid ""
 "Then, we just need to add a rules in the CSS code, stating that the class "
 "\"larger-text\" should have a bigger text size:"
 msgstr ""
+"In seguito, aggiungerai una regola in codice CSS specificando che la classe "
+"\"larger-text\" deve possedere un testo dalle dimensioni più grandi:"
 
 #: ../../source/editing_pages/style.rst:110
 msgid "There are many CSS rules you can add, to any of your elements."
 msgstr ""
+"Per personalizzare la tua pagina, hai a disposizione una vasta gamma di "
+"regole CSS, che puoi associare a qualunque elemento."

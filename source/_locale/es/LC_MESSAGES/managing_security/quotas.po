@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 16:11+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,11 +20,11 @@ msgstr ""
 
 #: ../../source/managing_security/quotas.rst:2
 msgid "Managing quotas"
-msgstr ""
+msgstr "Administrar las cuotas"
 
 #: ../../source/managing_security/quotas.rst:5
 msgid "Your portal license"
-msgstr ""
+msgstr "Licencia del portal"
 
 #: ../../source/managing_security/quotas.rst:7
 msgid ""
@@ -33,12 +34,19 @@ msgid ""
 "how much data can be injected into the portal and the consumption of this "
 "data."
 msgstr ""
+"Antes de analizar las cuotas existentes en los portales OpenDataSoft, es "
+"importante saber que se aplica una licencia para cada portal. Una licencia "
+"es un contrato entre OpenDataSoft y los propietarios del portal que define "
+"la cantidad de datos que es posible insertar en el portal y el consumo de "
+"esos datos."
 
 #: ../../source/managing_security/quotas.rst:11
 msgid ""
 "For example, freemium portals can have up to 5 datasets, each having at most"
 " 20000 records."
 msgstr ""
+"Por ejemplo, los portales freemium pueden tener hasta 5 conjuntos de datos "
+"de hasta 20.000 registros cada uno."
 
 #: ../../source/managing_security/quotas.rst:13
 msgid ""
@@ -46,24 +54,35 @@ msgid ""
 "regulate the amount of data you can inject into the portal while the last "
 "one puts an upper limit on the consumption of this data."
 msgstr ""
+"Su licencia define 3 límites globales en el portal: los 2 primeros regulan "
+"la cantidad de datos que puede insertar en el portal, y el tercero establece"
+" un límite superior en el consumo de esos datos."
 
 #: ../../source/managing_security/quotas.rst:16
 msgid ""
 "The **number of datasets** quota constraints the total number of datasets "
 "currently within the portal (published or not),"
 msgstr ""
+"La cuota de **número de conjuntos de datos** restringe el número total de "
+"conjuntos de datos que existen actualmente en el portal (publicados o no)."
 
 #: ../../source/managing_security/quotas.rst:17
 msgid ""
 "the **number of records** quota limits to total number of records within "
 "published datasets, regardless of the actual content of these records."
 msgstr ""
+"La cuota de **número de registros** restringe el número total de registros "
+"dentro de los conjuntos de datos publicados, con independencia del contenido"
+" real de esos registros."
 
 #: ../../source/managing_security/quotas.rst:18
 msgid ""
 "lastly, the **number of API calls** quota limits the number of requests made"
 " to the data within a given timeframe (usually within a month)."
 msgstr ""
+"Por último, la cuota de **número de llamadas de API** restringe el número de"
+" solicitudes de datos efectuadas dentro de un período de tiempo determinado "
+"(normalmente, un mes)."
 
 #: ../../source/managing_security/quotas.rst:22
 msgid ""
@@ -74,6 +93,13 @@ msgid ""
 "for the filters values, for the 10 first datasets then the 10 next ones etc."
 " Each of these requests is an API call and counted within the quota."
 msgstr ""
+"El número de llamadas de API puede ser un poco difícil de entender ya que es"
+" una medida de la actividad muy técnica. Para resumir: cada vez que alguien "
+"accede al portal (por ejemplo, a la página de catálogo de conjuntos de "
+"datos), la interfaz efectúa solicitudes en el portal de los valores de "
+"filtros, de los 10 primeros conjuntos de datos, a continuación de los 10 "
+"siguientes, etc. Cada una de estas solicitudes es una llamada de API y se "
+"contabiliza en la cuota."
 
 #: ../../source/managing_security/quotas.rst:27
 msgid ""
@@ -81,16 +107,21 @@ msgid ""
 "developers using the API to retrieve the data you published and dashboards "
 "hosted outside of your portal."
 msgstr ""
+"Por consiguiente, las llamadas de API son realizadas por los visitantes del "
+"portal, pero también por los desarrolladores que usan la API para recuperar "
+"los datos publicados y los paneles que se alojan fuera del portal."
 
 #: ../../source/managing_security/quotas.rst:30
 msgid ""
 "You can see your license quotas and their current usage in your backoffice, "
 "under the **Analytics/Quotas** section."
 msgstr ""
+"Puede consultar las cuotas de licencia y su uso actual en el back office, "
+"bajo la sección **Análisis/Cuotas**."
 
 #: ../../source/managing_security/quotas.rst:43
 msgid "Setting defaults limitations on users"
-msgstr ""
+msgstr "Configurar límites predeterminados para los usuarios"
 
 #: ../../source/managing_security/quotas.rst:45
 msgid ""
@@ -100,12 +131,20 @@ msgid ""
 "set a different limit for them. You can also set a global limit for all "
 "anonymous users to be sure that they won't eat up all of your usage quota."
 msgstr ""
+"Como el portal tiene establecidos límites superiores globales, es necesario "
+"evitar que alguien acapare toda la cuota de licencia. En este sentido, puede"
+" establecer límites generales para los usuarios y, si el portal está abierto"
+" a los usuarios anónimos, definir un límite distinto para estos. También "
+"puede configurar un límite global para todos los usuarios anónimos a fin de "
+"asegurarse de que no consuman toda la cuota de uso."
 
 #: ../../source/managing_security/quotas.rst:50
 msgid ""
 "You'll be able to set these limits in the **Security** subsection of the "
 "**Configuration** section of your portal's backoffice."
 msgstr ""
+"Podrá establecer estos límites en la subsección **Seguridad** de la sección "
+"**Configuración** del back office del portal."
 
 #: ../../source/managing_security/quotas.rst:53
 msgid ""
@@ -114,10 +153,17 @@ msgid ""
 "default limit set for him/her and isn't going over the global portal limit. "
 "Were it the case, a message would pop-up telling him/her so."
 msgstr ""
+"Cuando un usuario efectúa una solicitud (que puede ser una llamada de API, "
+"la creación de un conjunto de datos o la publicación de un conjunto de "
+"datos), nos aseguramos de que no alcanza el límite predeterminado "
+"establecido para él ni el límite global del portal. Si es el caso, le "
+"aparecerá un mensaje informativo."
 
 #: ../../source/managing_security/quotas.rst:78
 msgid "Setting specific limitations for individual users and group of users"
 msgstr ""
+"Establecer límites específicos para usuarios individuales y grupos de "
+"usuarios"
 
 #: ../../source/managing_security/quotas.rst:80
 msgid ""
@@ -127,6 +173,11 @@ msgid ""
 "Chief Data Office will need to be able to publish as many datasets as the "
 "license allows."
 msgstr ""
+"Algunos usuarios tienen unos roles específicos en la organización que "
+"justifican su necesidad de cuotas superiores a las predeterminadas. Por "
+"ejemplo, puede permitir que cada uno de los usuarios registrados cree solo "
+"un par de conjuntos de datos, pero el director de datos deberá poder "
+"publicar todos los conjuntos de datos permitidos por la licencia."
 
 #: ../../source/managing_security/quotas.rst:84
 msgid ""
@@ -134,3 +185,6 @@ msgid ""
 "<users>` or his/her :doc:`group management page <groups>` to set a more "
 "appropriate limit for his/her use case."
 msgstr ""
+"Para ello, tendrá que ir a la :doc:`página de administración de usuarios "
+"<users>` o la :doc:`página de administración de grupos <groups>` con objeto "
+"de establecer un límite más adecuado para ese caso de uso."

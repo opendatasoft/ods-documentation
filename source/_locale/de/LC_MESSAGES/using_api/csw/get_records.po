@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 16:11+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2017\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ../../source/using_api/csw/get_records.rst:2
 msgid "GetRecords"
-msgstr ""
+msgstr "GetRecords"
 
 #: ../../source/using_api/csw/get_records.rst:3
 msgid ""
@@ -27,10 +28,13 @@ msgid ""
 "(datasets). The response is a XML document and the output schema can be "
 "specified."
 msgstr ""
+"Mit dem Vorgang ``GetRecords`` können Kunden Ressourcen (Datensätze) "
+"auffinden. Die Antwort ist ein XML-Dokument und das Ausgabeschema kann "
+"festgelegt werden."
 
 #: ../../source/using_api/csw/get_records.rst:7
 msgid "Parameters"
-msgstr ""
+msgstr "Parameter"
 
 #: ../../source/using_api/csw/get_records.rst:8
 msgid ""
@@ -38,53 +42,64 @@ msgid ""
 "operation. You should also take into consideration the common parameters. "
 "`See more <intro.html#parameters>`_."
 msgstr ""
+"Das ist die für den Vorgang ``GetRecords`` spezifische Liste der "
+"unterstützten Parameter. Sie sollten auch die allgemeinen Parameter "
+"berücksichtigen. `Weitere Details siehe <intro.html#parameters>`_."
 
 #: ../../source/using_api/csw/get_records.rst:11
 msgid ""
 "The existing parameters in the CSW standard which are not listed in this "
 "table are currently not supported."
 msgstr ""
+"Im CSW-Standard bestehende, aber in dieser Tabelle nicht aufgelistete "
+"Parameter werden gegenwärtig nicht unterstützt."
 
-#: ../../source/using_api/csw/get_records.rst:0
+#: ../../source/using_api/csw/get_records.rst:13
 msgid "Supported parameters for the GetRecords operation"
-msgstr ""
+msgstr "Unterstützte Parameter für den Vorgang GetRecords"
 
 #: ../../source/using_api/csw/get_records.rst:16
 msgid "Parameter"
-msgstr ""
+msgstr "Parameter"
 
 #: ../../source/using_api/csw/get_records.rst:17
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: ../../source/using_api/csw/get_records.rst:18
 msgid "Optionality and use"
-msgstr ""
+msgstr "Optionalität und Verwendung"
 
 #: ../../source/using_api/csw/get_records.rst:19
 msgid "``resultType``"
-msgstr ""
+msgstr "``resultType``"
 
 #: ../../source/using_api/csw/get_records.rst:20
 msgid ""
 "Determines whether the catalogue returns just a summary of the result set, "
 "or includes one or more records from the result set."
 msgstr ""
+"Legt fest, ob der Katalog nur eine Zusammenfassung des Ergebnissatzes "
+"zurückgibt oder einen oder mehr Einträge des Ergebnissatzes einschließt."
 
 #: ../../source/using_api/csw/get_records.rst:22
 msgid ""
 "Optional. Values can be ``hits`` or ``results``. Default value is ``hits``."
 msgstr ""
+"Optional. Mögliche Werte sind ``Treffer`` oder ``Ergebnisse``. Der "
+"Standardwert ist ``Treffer``."
 
 #: ../../source/using_api/csw/get_records.rst:23
 msgid "``outputSchema``"
-msgstr ""
+msgstr "``outputSchema``"
 
 #: ../../source/using_api/csw/get_records.rst:24
 msgid ""
 "Used to indicate the schema of the output that is generated in response to a"
 " ``GetRecords`` request."
 msgstr ""
+"Dient zur Angabe des Schemas der Ausgabe, die als Antwort auf eine "
+"``GetRecords``-Anforderung generiert wird."
 
 #: ../../source/using_api/csw/get_records.rst:25
 msgid ""
@@ -92,39 +107,47 @@ msgid ""
 "``http://www.isotc211.org/2005/gmd``. Default value is "
 "``http://www.opengis.net/cat/csw/2.0.2``."
 msgstr ""
+"Optional. Mögliche Werte sind ``http://www.opengis.net/cat/csw/2.0.2`` oder "
+"``http://www.isotc211.org/2005/gmd``. Der Standardwert ist "
+"``http://www.opengis.net/cat/csw/2.0.2``."
 
 #: ../../source/using_api/csw/get_records.rst:27
 msgid "``startPosition``"
-msgstr ""
+msgstr "``startPosition``"
 
 #: ../../source/using_api/csw/get_records.rst:28
 msgid ""
 "Used to indicate at which record position the catalogue should start "
 "generating output."
 msgstr ""
+"Dient zur Angabe, bei welcher Eintragsposition der Katalog mit der "
+"Ausgabengenerierung beginnen sollte."
 
 #: ../../source/using_api/csw/get_records.rst:29
 msgid ""
 "Optional. Value must be a non-zero positive integer. Default value is 1."
 msgstr ""
+"Optional. Wert muss eine Ganzzahl ungleich Null sein. Standardwert ist 1."
 
 #: ../../source/using_api/csw/get_records.rst:30
 msgid "``maxRecords``"
-msgstr ""
+msgstr "``maxRecords``"
 
 #: ../../source/using_api/csw/get_records.rst:31
 msgid ""
 "Used to define the maximum number of records that should be returned from "
 "the result set of a query."
 msgstr ""
+"Dient zur Festlegung der maximalen Anzahl von Einträgen, die vom "
+"Ergebnissatz einer Anfrage zurückgegeben werden sollte."
 
 #: ../../source/using_api/csw/get_records.rst:32
 msgid "Optional. Value must be a positive integer. Default value is 10."
-msgstr ""
+msgstr "Optional. Wert muss eine positive Ganzzahl sein. Standardwert ist 10."
 
 #: ../../source/using_api/csw/get_records.rst:33
 msgid "``ElementSetName``"
-msgstr ""
+msgstr "``ElementSetName``"
 
 #: ../../source/using_api/csw/get_records.rst:34
 #: ../../source/using_api/csw/get_records.rst:38
@@ -132,24 +155,29 @@ msgid ""
 "Used to indicate which named set the service shall present to the client. It"
 " usually defines the level of details present in the result set."
 msgstr ""
+"Dient zur Angabe, welchen benannten Satz der Dienst dem Kunden präsentieren "
+"soll. Definiert normalerweise die Detailstufe im Ergebnissatz."
 
 #: ../../source/using_api/csw/get_records.rst:36
 msgid ""
 "Optional. Values can be ``full``, ``summary`` or ``brief``. Default value is"
 " ``summary``."
 msgstr ""
+"Optional. Mögliche Werte sind ``voll``, ``Übersicht`` oder ``kurz``. Der "
+"Standardwert ist ``Übersicht``."
 
 #: ../../source/using_api/csw/get_records.rst:37
 msgid "``typeNames``"
-msgstr ""
+msgstr "``typeNames``"
 
 #: ../../source/using_api/csw/get_records.rst:40
 msgid "Mandatory. Values can be ``csw:Record`` or ``gmd:MD_Metadata``."
 msgstr ""
+"Erforderlich. Mögliche Werte sind ``csw:Record`` oder ``gmd:MD_Metadata``."
 
 #: ../../source/using_api/csw/get_records.rst:43
 msgid "Examples"
-msgstr ""
+msgstr "Beispiele"
 
 #: ../../source/using_api/csw/get_records.rst:44
 msgid ""
@@ -157,11 +185,15 @@ msgid ""
 "``resultType``, ``outputSchema`` and ``ElementSetName`` parameters, using a "
 "``GET`` HTTP method :"
 msgstr ""
+"Hier ist ein Beispiel eines ``GetRecords``-Vorgangs mit optionalen "
+"``resultType``-, ``outputSchema``- und ``ElementSetName``-Parametern unter "
+"Verwendung einer ``GET`` HTTP-Methode:"
 
 #: ../../source/using_api/csw/get_records.rst:51
 msgid "And the same request using a ``POST`` HTTP method :"
 msgstr ""
+"Und die gleiche Anforderung unter Verwendung einer ``POST`` HTTP-Methode:"
 
 #: ../../source/using_api/csw/get_records.rst:57
 msgid "The request body :"
-msgstr ""
+msgstr "Der Anforderungskörper:"

@@ -1,17 +1,93 @@
 FTP with meta CSV harvester
 ===========================
 
-Harvester for FTP folders with one **metadata CSV file** (semicolon separated) for several **resources**.
+This harvester allows users to create datasets from an FTP folder. The FTP folder must contain:
 
-- The CSV file must have a ``name`` column with the id of the dataset.
-- One of the CSV columns (resource_location_column) contains the resource location as a filename on the same FTP folder, or an http/https/ftp URL. If this column is empty, the dataset will only contain metadata.
-- The other columns are for dataset metadata, the column name being standard metadata field names.
+- one **metadata CSV file** (separated with semicolons)
+- several **resources**
+- (optional) several **CSV schema files**
 
-For each resource, the FTP folder can contain a **schema CSV file**, whose filename must then be written in the resource schema column. This file has the following specifications:
+.. ifconfig:: language == 'en'
 
-- a ``name`` column holds each field name (e.g. on a CSV resource, this would be the column names),
-- a ``label`` column (optional) holds the label of the corresponding field,
-- a ``description`` column (optional) holds the description of the corresponding field.
+    .. figure:: img/ftp_folder--en.png
+        :alt: FTP folder layout
+        :align: center
+
+.. ifconfig:: language == 'fr'
+
+    .. figure:: img/ftp_folder--en.png
+        :alt: Organisation du dossier FTP
+        :align: center
+
+Metadata CSV file
+-----------------
+
+The **metadata CSV file** (named ``index.csv`` by default) is a semicolon separated file which contains:
+
+- one header row
+- several other rows, each one dedicated to a dataset to harvest
+
+**Example:**
+
+.. code-block:: text
+  :linenos:
+
+  name;title;description;theme;keyword;source_dataset;schema_file
+  chocolate-bars;Chocolate bars database;"A database of chocolate bars";Health;Chocolate;chocolate.csv;schema_chocolate.csv
+  random-id;Venture Capital Investments;Venture capital industry statistics.;Economy, Business;"Venture capital;Investments;IPO;Acquisitions";investments.json;
+
++----------------+-----------------------------+--------------------------------------+-------------------+----------------------------------------------+------------------+----------------------+
+| name           | title                       | description                          | theme             | keyword                                      | source_dataset   | schema_file          |
++----------------+-----------------------------+--------------------------------------+-------------------+----------------------------------------------+------------------+----------------------+
+| chocolate-bars | Chocolate bars database     | A database of chocolate bars         | Health            | Chocolate                                    | chocolate.csv    | schema_chocolate.csv |
++----------------+-----------------------------+--------------------------------------+-------------------+----------------------------------------------+------------------+----------------------+
+| random-id      | Venture Capital Investments | Venture capital industry statistics. | Economy, Business | Venture capital;Investments;IPO;Acquisitions | investments.json |                      |
++----------------+-----------------------------+--------------------------------------+-------------------+----------------------------------------------+------------------+----------------------+
+
+- The ``name`` column contains an identifier for each row. These identifiers can be anything as long as they only contain letters and numbers, are unique across the file, and don't change over time.
+- The **CSV resource column** (``source_dataset`` by default) contains the resource for each row.
+- The optional **CSV shema column** (here, ``schema_file``) contains the schema file for each row.
+- Every other column is a metadata (e.g: ``title``, ``description``, ``theme``, ``keyword``, ``license``, ``language``, but there are other ones you can add). Note: use double quotes at the beginning and end of lists like ``keywords``, where you have to use semicolons to separate words.
+
+Resources
+---------
+
+Resources can either be:
+
+- files on the FTP server, in the same folder as the ``index.csv`` file, or under a subdirectory by specifying the relative path to the file in the column (e.g "resources/chocolate.csv")
+- any URL pointing towards a supported format
+
+If the column is empty, the dataset will only contain metadata.
+
+Resources in any format supported by the platform can be harvested. However, as the harvester heavily relies on automatic parameters detection for the connector's configuration, files must be simple enough to be correctly extracted.
+
+Schema CSV file
+---------------
+
+For each resource, the FTP folder can contain a **CSV schema file** that defines labels and descriptions for each field of the dataset.
+
+The filename of each schema file must be written in the **CSV schema column**. This file has the following specifications:
+
+- a ``name`` column holds each field name in lowercase (e.g. on a CSV resource, this would be the column names in lowercase)
+- a ``label`` column (optional) holds the label of the corresponding field
+- a ``description`` column (optional) holds the description of the corresponding field
+
+.. code-block:: text
+  :linenos:
+
+  name;label;description
+  company;Company;The company that makes the bar
+  ref;Reference;The product id of the chocolate bar
+
++---------+-----------+-------------------------------------+
+| name    | label     | description                         |
++---------+-----------+-------------------------------------+
+| company | Company   | The company that makes the bar      |
++---------+-----------+-------------------------------------+
+| ref     | Reference | The product id of the chocolate bar |
++---------+-----------+-------------------------------------+
+
+The schema files do not need to contain a row for each field, and it is not required to provide a schema file for each dataset in the ``index.csv``. In the latter case, keep the corresponding cell empty.
 
 Parameters
 ----------

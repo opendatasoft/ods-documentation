@@ -37,13 +37,13 @@ Examples
 --------
 Here is an example of a ``GetFeature`` operation with the optional ``PropertyName`` parameter, using a ``GET`` HTTP method :
 
-.. code-block:: http
+.. code-block:: text
 
     GET http://public.opendatasoft.com/api/wfs?service=WFS&request=GetFeature&typename=ods:arrondissement_od&propertyname=ods:arrondissement_od/geo_shape
 
 And the same request using a ``POST`` HTTP method :
 
-.. code-block:: http
+.. code-block:: text
 
     POST http://public.opendatasoft.com/api/wfs
 

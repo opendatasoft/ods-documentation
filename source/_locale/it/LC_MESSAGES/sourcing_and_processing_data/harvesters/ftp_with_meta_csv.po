@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 16:11+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Datawords_trad_1 <datawords.translator.it1@gmail.com>, 2017\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,143 +20,388 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:2
 msgid "FTP with meta CSV harvester"
-msgstr ""
+msgstr "FTP con harvester CSV di metadati"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:4
 msgid ""
-"Harvester for FTP folders with one **metadata CSV file** (semicolon "
-"separated) for several **resources**."
+"This harvester allows users to create datasets from an FTP folder. The FTP "
+"folder must contain:"
 msgstr ""
+"Questo harvester permette agli utenti di creare dataset a partire da una "
+"cartella FTP. La cartella deve contenere:"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:6
-msgid "The CSV file must have a ``name`` column with the id of the dataset."
-msgstr ""
+msgid "one **metadata CSV file** (separated with semicolons)"
+msgstr "un **file CSV di metadati** (separati da punti e virgola);"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:7
-msgid ""
-"One of the CSV columns (resource_location_column) contains the resource "
-"location as a filename on the same FTP folder, or an http/https/ftp URL. If "
-"this column is empty, the dataset will only contain metadata."
-msgstr ""
+msgid "several **resources**"
+msgstr "varie **risorse**;"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:8
-msgid ""
-"The other columns are for dataset metadata, the column name being standard "
-"metadata field names."
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:10
-msgid ""
-"For each resource, the FTP folder can contain a **schema CSV file**, whose "
-"filename must then be written in the resource schema column. This file has "
-"the following specifications:"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:12
-msgid ""
-"a ``name`` column holds each field name (e.g. on a CSV resource, this would "
-"be the column names),"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:13
-msgid ""
-"a ``label`` column (optional) holds the label of the corresponding field,"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:14
-msgid ""
-"a ``description`` column (optional) holds the description of the "
-"corresponding field."
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:17
-msgid "Parameters"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:22
-msgid "Name"
-msgstr ""
+msgid "(optional) several **CSV schema files**"
+msgstr "(facoltativo) vari **file di schema CSV**."
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:23
-msgid "Description"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:24
-msgid "Example"
-msgstr ""
+msgid "Metadata CSV file"
+msgstr "File CSV di metadati"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:25
-msgid "**Host** (host)"
+msgid ""
+"The **metadata CSV file** (named ``index.csv`` by default) is a semicolon "
+"separated file which contains:"
 msgstr ""
-
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:26
-msgid "URL of the FTP server"
-msgstr ""
+"Il **file CSV di metadati** (denominato ``index.csv`` per impostazione "
+"predefinita) è un file con valori separati da punti e virgola contenente:"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:27
-msgid "ftp.opendatasoft.com"
-msgstr ""
+msgid "one header row"
+msgstr "una riga di intestazione;"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:28
+msgid "several other rows, each one dedicated to a dataset to harvest"
+msgstr ""
+"diverse altre righe, ognuna di esse dedicata a un dataset da raccogliere."
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:30
+msgid "**Example:**"
+msgstr "**Esempio:**"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:40
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:83
+msgid "name"
+msgstr "name"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:40
+msgid "title"
+msgstr "title"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:40
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:83
+msgid "description"
+msgstr "description"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:40
+msgid "theme"
+msgstr "theme"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:40
+msgid "keyword"
+msgstr "keyword"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:40
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:118
+msgid "source_dataset"
+msgstr "source_dataset"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:40
+msgid "schema_file"
+msgstr "schema_file"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:42
+msgid "chocolate-bars"
+msgstr "chocolate-bars"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:42
+msgid "Chocolate bars database"
+msgstr "Database dei cioccolatini"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:42
+msgid "A database of chocolate bars"
+msgstr "Un database di cioccolatini."
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:42
+msgid "Health"
+msgstr "Salute"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:42
+msgid "Chocolate"
+msgstr "Cioccolato"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:42
+msgid "chocolate.csv"
+msgstr "chocolate.csv"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:42
+msgid "schema_chocolate.csv"
+msgstr "schema_chocolate.csv"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:44
+msgid "random-id"
+msgstr "random-id"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:44
+msgid "Venture Capital Investments"
+msgstr "Venture Capital Investments"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:44
+msgid "Venture capital industry statistics."
+msgstr "Statistiche del settore degli investimenti speculativi."
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:44
+msgid "Economy, Business"
+msgstr "Economia, Finanza"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:44
+msgid "Venture capital;Investments;IPO;Acquisitions"
+msgstr "Venture capital;Investments;IPO;Acquisitions"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:44
+msgid "investments.json"
+msgstr "investments.json"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:47
+msgid ""
+"The ``name`` column contains an identifier for each row. These identifiers "
+"can be anything as long as they only contain letters and numbers, are unique"
+" across the file, and don't change over time."
+msgstr ""
+"La colonna ``name`` contiene un identificatore per ogni riga. Questi "
+"identificatori possono presentare qualsiasi lunghezza, a patto che "
+"contengano solo lettere e numeri, che siano unici all’interno del file e che"
+" non cambino nel corso del tempo."
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:48
+msgid ""
+"The **CSV resource column** (``source_dataset`` by default) contains the "
+"resource for each row."
+msgstr ""
+"La **colonna risorse CSV** (``source_dataset`` per impostazione predefinita)"
+" contiene la risorsa di ogni riga."
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:49
+msgid ""
+"The optional **CSV shema column** (here, ``schema_file``) contains the "
+"schema file for each row."
+msgstr ""
+"La **colonna schema CSV** facoltativa (``schema_file`` in questo esempio) "
+"contiene il file di schema di ogni riga."
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:50
+msgid ""
+"Every other column is a metadata (e.g: ``title``, ``description``, "
+"``theme``, ``keyword``, ``license``, ``language``, but there are other ones "
+"you can add). Note: use double quotes at the beginning and end of lists like"
+" ``keywords``, where you have to use semicolons to separate words."
+msgstr ""
+"Ogni altra colonna è costituita da metadati (ad es.: ``title``, "
+"``description``, ``theme``, ``keyword``, ``license``, ``language``, ma è "
+"possibile aggiungerne altri). Nota bene: all'inizio e alla fine di elenchi "
+"come le ``keywords`` inserisci le virgolette doppie, mentre per separare le "
+"parole al loro interno utilizza i punti e virgola."
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:53
+msgid "Resources"
+msgstr "Risorse"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:55
+msgid "Resources can either be:"
+msgstr "Le risorse possono essere:"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:57
+msgid ""
+"files on the FTP server, in the same folder as the ``index.csv`` file, or "
+"under a subdirectory by specifying the relative path to the file in the "
+"column (e.g \"resources/chocolate.csv\")"
+msgstr ""
+"file sul server FTP, nella stessa cartella del file ``index.csv`` o in una "
+"sottodirectory (specificare il percorso nella colonna: ad es. "
+"\"resources/chocolate.csv\");"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:58
+msgid "any URL pointing towards a supported format"
+msgstr "un URL che punti a un formato supportato."
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:60
+msgid "If the column is empty, the dataset will only contain metadata."
+msgstr "Se la colonna è vuota, il dataset conterrà solo metadati."
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:62
+msgid ""
+"Resources in any format supported by the platform can be harvested. However,"
+" as the harvester heavily relies on automatic parameters detection for the "
+"connector's configuration, files must be simple enough to be correctly "
+"extracted."
+msgstr ""
+"L'harvesting può essere eseguito sulle risorse in qualsiasi formato "
+"supportato dalla piattaforma. Poiché l'harvester si basa ampiamente sulla "
+"rilevazione automatica dei parametri per configurare il connettore, i file "
+"devono essere sufficientemente semplici da poter essere estratti "
+"correttamente."
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:65
+msgid "Schema CSV file"
+msgstr "File CSV dello schema"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:67
+msgid ""
+"For each resource, the FTP folder can contain a **CSV schema file** that "
+"defines labels and descriptions for each field of the dataset."
+msgstr ""
+"Per ogni risorsa, la cartella FTP può contenere un **file di schema CSV** "
+"che definisce le etichette e le descrizioni di ogni campo del dataset."
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:69
+msgid ""
+"The filename of each schema file must be written in the **CSV schema "
+"column**. This file has the following specifications:"
+msgstr ""
+"Il nome di ogni file di schema deve essere riportato nella **colonna dello "
+"schema CSV**. Il file in questione presenta le seguenti specifiche:"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:71
+msgid ""
+"a ``name`` column holds each field name in lowercase (e.g. on a CSV "
+"resource, this would be the column names in lowercase)"
+msgstr ""
+"una colonna ``name`` contenente il nome di ogni campo in lettere minuscole "
+"(nel caso di una risorsa CSV, conterrà i nomi delle colonne in lettere "
+"minuscole);"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:72
+msgid ""
+"a ``label`` column (optional) holds the label of the corresponding field"
+msgstr ""
+"una colonna ``label`` (facoltativa) con l'etichetta del campo "
+"corrispondente;"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:73
+msgid ""
+"a ``description`` column (optional) holds the description of the "
+"corresponding field"
+msgstr ""
+"una colonna ``description`` (facoltativa) con la descrizione del campo "
+"corrispondente."
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:83
+msgid "label"
+msgstr "label"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:85
+msgid "company"
+msgstr "company"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:85
+msgid "Company"
+msgstr "Company"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:85
+msgid "The company that makes the bar"
+msgstr "La società che produce i cioccolatini."
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:87
+msgid "ref"
+msgstr "ref"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:87
+msgid "Reference"
+msgstr "Reference"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:87
+msgid "The product id of the chocolate bar"
+msgstr "Il codice prodotto dei cioccolatini."
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:90
+msgid ""
+"The schema files do not need to contain a row for each field, and it is not "
+"required to provide a schema file for each dataset in the ``index.csv``. In "
+"the latter case, keep the corresponding cell empty."
+msgstr ""
+"I file dello schema non devono necessariamente contenere una riga per ogni "
+"campo e non è necessario creare un file di schema per ogni dataset del file "
+"``index.csv``. In quest'ultimo caso, la cella corrispondente resta vuota."
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:93
+msgid "Parameters"
+msgstr "Parametri"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:98
+msgid "Name"
+msgstr "Nome"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:99
+msgid "Description"
+msgstr "Descrizione"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:100
+msgid "Example"
+msgstr "Esempio"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:101
+msgid "**Host** (host)"
+msgstr "**Host** (host)"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:102
+msgid "URL of the FTP server"
+msgstr "URL del server FTP"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:103
+msgid "ftp.opendatasoft.com"
+msgstr "ftp.opendatasoft.com"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:104
 msgid "**User** (user)"
-msgstr ""
+msgstr "**User** (user)"
 
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:29
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:105
 msgid "Your username"
-msgstr ""
+msgstr "Il tuo nome utente"
 
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:31
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:107
 msgid "**Password** (password)"
-msgstr ""
+msgstr "**Password** (password)"
 
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:32
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:108
 msgid "Your password"
-msgstr ""
+msgstr "La tua password"
 
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:34
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:110
 msgid "Subdirectory (subdir)"
-msgstr ""
+msgstr "Subdirectory (subdir)"
 
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:35
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:111
 msgid "The directory containing the data you want to harvest."
 msgstr ""
+"La directory contenente i dati su cui desideri effettuare l'harvesting."
 
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:36
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:112
 msgid "pub/documents"
-msgstr ""
+msgstr "pub/documents"
 
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:37
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:113
 msgid "**Metadata CSV filename** (metadata_file)"
-msgstr ""
+msgstr "**Metadata CSV filename** (metadata_file)"
 
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:38
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:114
 msgid ""
 "The file holding the metadata and filenames (see above for more precise "
 "specifications)."
 msgstr ""
+"Il file che contiene i metadati e i nomi dei file. Per informazioni più "
+"specifiche, vedi sopra."
 
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:39
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:115
 msgid "index.csv"
-msgstr ""
+msgstr "index.csv"
 
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:40
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:116
 msgid "**Metadata CSV resource column** (resource_location_column)"
-msgstr ""
+msgstr "**Metadata CSV resource column** (resource_location_column)"
 
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:41
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:117
 msgid "This column holds a filename or an URL with the dataset resource."
 msgstr ""
+"Questa colonna contiene il nome di un file o un URL con la risorsa del "
+"dataset."
 
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:42
-msgid "source_dataset"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:43
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:119
 msgid "Metadata CSV schema column (resource_schema_column)"
-msgstr ""
+msgstr "Metadata CSV schema column (resource_schema_column)"
 
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:44
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:120
 msgid ""
 "This column holds a filename with the resource schema (column labels and "
 "descriptions)."
 msgstr ""
+"Questa colonna contiene il nome di un file con lo schema della risorsa "
+"(descrizioni ed etichette delle colonne)."

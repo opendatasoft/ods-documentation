@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 16:11+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Trad_FR2 <datawords.translator.fr2@gmail.com>, 2017\n"
+"Last-Translator: Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2017\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,7 +48,7 @@ msgid ""
 " the rest of this article are relative to the service root."
 msgstr ""
 "Dans le présent article, nous parlerons de \"root\", \"racine\" ou \"adresse"
-" du service\" pour désigner l'adresse de base du service OData. Celle ci, "
+" du service\" pour désigner l'adresse de base du service OData. Celle-ci, "
 "pour la plateforme OpenDataSoft, peut se localiser en ajoutant à l'URL d'un "
 "domaine de la plateforme la chaîne de caractères ``/api/odata``."
 
@@ -244,11 +244,11 @@ msgstr ""
 msgid "GET |url4|_"
 msgstr "GET |url4|_"
 
-#: ../../source/using_api/odata/odata_basics.rst:196
+#: ../../source/using_api/odata/odata_basics.rst:197
 msgid "Datasets"
 msgstr "Jeux de données"
 
-#: ../../source/using_api/odata/odata_basics.rst:198
+#: ../../source/using_api/odata/odata_basics.rst:199
 msgid ""
 "The records of a dataset can be browsed on the ``/<DATASET ID>`` page. It is"
 " easy to navigate from the service root document to a dataset by following "
@@ -257,15 +257,15 @@ msgstr ""
 "Pour accéder aux enregistrements d'un jeu de données, il suffit de se rendre"
 " sur ``/<IDENTIFIANT DU JEU DE DONNÉES>``."
 
-#: ../../source/using_api/odata/odata_basics.rst:201
+#: ../../source/using_api/odata/odata_basics.rst:202
 msgid "GET |url5|_"
 msgstr "GET |url5|_"
 
-#: ../../source/using_api/odata/odata_basics.rst:239
+#: ../../source/using_api/odata/odata_basics.rst:241
 msgid "Paging"
 msgstr "Pagination"
 
-#: ../../source/using_api/odata/odata_basics.rst:241
+#: ../../source/using_api/odata/odata_basics.rst:243
 msgid ""
 "Client-driven paging can be requested with the ``$top`` REST parameter to "
 "limit the size of the response, and the ``$skip`` REST parameter to define "
@@ -279,33 +279,33 @@ msgstr ""
 "les résultats sont paginés, et que le résultat partiel n'est pas le dernier,"
 " la réponse contient un lien vers les résultats suivants."
 
-#: ../../source/using_api/odata/odata_basics.rst:245
+#: ../../source/using_api/odata/odata_basics.rst:247
 msgid "GET |url6|_"
 msgstr "GET |url6|_"
 
-#: ../../source/using_api/odata/odata_basics.rst:275
+#: ../../source/using_api/odata/odata_basics.rst:277
 msgid "GET |url7|_"
 msgstr "GET |url7|_"
 
-#: ../../source/using_api/odata/odata_basics.rst:306
-msgid "Recherche"
-msgstr "Recherche"
-
 #: ../../source/using_api/odata/odata_basics.rst:308
+msgid "Search"
+msgstr "Rechercher"
+
+#: ../../source/using_api/odata/odata_basics.rst:310
 msgid "The ``$search`` parameter can be used to search data."
 msgstr ""
 "Pour faire une recherche dans les données, on peut spécifier le paramètre "
 "``$search``."
 
-#: ../../source/using_api/odata/odata_basics.rst:310
+#: ../../source/using_api/odata/odata_basics.rst:312
 msgid "GET |url8|_"
 msgstr "GET |url8|_"
 
-#: ../../source/using_api/odata/odata_basics.rst:357
+#: ../../source/using_api/odata/odata_basics.rst:359
 msgid "Restriction"
 msgstr "Selection"
 
-#: ../../source/using_api/odata/odata_basics.rst:359
+#: ../../source/using_api/odata/odata_basics.rst:361
 msgid ""
 "The ``$filter`` parameter can be used to apply a restriction on results. "
 "Supported restriction operators are ``eq`` and ``ne`` for equality and "
@@ -325,19 +325,19 @@ msgstr ""
 "sémantiques respectives habituelles. Une expression ainsi formée peut être "
 "niée en utilisant l'opérateur logique unaire ``not``."
 
-#: ../../source/using_api/odata/odata_basics.rst:364
+#: ../../source/using_api/odata/odata_basics.rst:366
 msgid "GET |url9|_"
 msgstr "GET |url9|_"
 
-#: ../../source/using_api/odata/odata_basics.rst:385
+#: ../../source/using_api/odata/odata_basics.rst:387
 msgid "GET |url10|_"
 msgstr "GET |url10|_"
 
-#: ../../source/using_api/odata/odata_basics.rst:415
+#: ../../source/using_api/odata/odata_basics.rst:417
 msgid "Count"
 msgstr "Compte"
 
-#: ../../source/using_api/odata/odata_basics.rst:417
+#: ../../source/using_api/odata/odata_basics.rst:419
 msgid ""
 "There are two ways of obtaining the number of records in a dataset. The "
 "first way is to use the ``$count`` REST parameter (``$inlinecount`` for "
@@ -359,23 +359,23 @@ msgstr ""
 "prenant en compte les filtres et recherches demandées. La seconde méthode ne"
 " permet pas d'ajouter des paramètres ni d'obtenir d'autres résultats."
 
-#: ../../source/using_api/odata/odata_basics.rst:425
+#: ../../source/using_api/odata/odata_basics.rst:427
 msgid "GET |url11|_"
 msgstr "GET |url11|_"
 
-#: ../../source/using_api/odata/odata_basics.rst:448
+#: ../../source/using_api/odata/odata_basics.rst:450
 msgid "GET |url12|_"
 msgstr "GET |url12|_"
 
-#: ../../source/using_api/odata/odata_basics.rst:453
+#: ../../source/using_api/odata/odata_basics.rst:455
 msgid "2841"
 msgstr "2841"
 
-#: ../../source/using_api/odata/odata_basics.rst:456
+#: ../../source/using_api/odata/odata_basics.rst:458
 msgid "Sort"
 msgstr "Tri"
 
-#: ../../source/using_api/odata/odata_basics.rst:458
+#: ../../source/using_api/odata/odata_basics.rst:460
 msgid ""
 "Results returned by the service can be sorted by a field using the "
 "``$orderby`` parameter. The field name can be followed by the ``asc`` and "
@@ -386,19 +386,19 @@ msgstr ""
 "tri les mots clé ``asc`` et ``desc`` pour que le tri se fasse dans l'ordre "
 "croissant (resp. décroissant)."
 
-#: ../../source/using_api/odata/odata_basics.rst:462
+#: ../../source/using_api/odata/odata_basics.rst:464
 msgid "GET |url13|_"
 msgstr "GET |url13|_"
 
-#: ../../source/using_api/odata/odata_basics.rst:507
+#: ../../source/using_api/odata/odata_basics.rst:509
 msgid "GET |url14|_"
 msgstr "GET |url14|_"
 
-#: ../../source/using_api/odata/odata_basics.rst:553
+#: ../../source/using_api/odata/odata_basics.rst:555
 msgid "Specific record"
 msgstr "Enregistrements"
 
-#: ../../source/using_api/odata/odata_basics.rst:555
+#: ../../source/using_api/odata/odata_basics.rst:557
 msgid ""
 "To access a specific record, its record id surrounded by parenthesis, can be"
 " appended to the dataset address."
@@ -407,15 +407,15 @@ msgstr ""
 "l'adresse du jeu de données auquel il appartient et d'ajouter à l'adresse "
 "son recordid entre parenthèses."
 
-#: ../../source/using_api/odata/odata_basics.rst:557
+#: ../../source/using_api/odata/odata_basics.rst:559
 msgid "GET |url15|_"
 msgstr "GET |url15|_"
 
-#: ../../source/using_api/odata/odata_basics.rst:575
+#: ../../source/using_api/odata/odata_basics.rst:577
 msgid "Projection"
 msgstr "Projection"
 
-#: ../../source/using_api/odata/odata_basics.rst:577
+#: ../../source/using_api/odata/odata_basics.rst:579
 msgid ""
 "Results can be projected over specific fields using the `$select` parameter."
 " For multiple fields to be subject of the projection, their names must be "
@@ -428,10 +428,10 @@ msgstr ""
 "Ce paramètre est valide aussi bien pour les jeux de données que pour les "
 "enregistrements."
 
-#: ../../source/using_api/odata/odata_basics.rst:581
+#: ../../source/using_api/odata/odata_basics.rst:583
 msgid "GET |url16|_"
 msgstr "GET |url16|_"
 
-#: ../../source/using_api/odata/odata_basics.rst:610
+#: ../../source/using_api/odata/odata_basics.rst:612
 msgid "GET |url17|_"
 msgstr "GET |url17|_"

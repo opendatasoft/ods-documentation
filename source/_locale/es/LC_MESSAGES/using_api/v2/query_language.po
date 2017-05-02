@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 16:11+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
@@ -28,6 +28,10 @@ msgid ""
 " the previously listed APIs can take as a parameter filters for constraining"
 " the list of returned datasets or records."
 msgstr ""
+"Las funciones de filtro se compilan en el núcleo del motor de la API de "
+"OpenDataSoft. Muchas de las API indicadas anteriormente pueden tomar filtros"
+" como parámetro a fin de limitar la lista de los conjuntos de resultados o "
+"registros devueltos."
 
 #: ../../source/using_api/v2/query_language.rst:7
 msgid ""
@@ -37,26 +41,36 @@ msgid ""
 "using full text search, facets and geo filtering, and then allowing them to "
 "download these records with the same filtering context."
 msgstr ""
+"Observe que se puede simplemente copiar un contexto de filtro de una API en "
+"otra. Por ejemplo, puede compilar fácilmente una interfaz de usuario que "
+"primero permita al usuario seleccionar visualmente los registros que le "
+"interesen, mediante la búsqueda de texto completo, las facetas y los filtros"
+" geográficos, y después le permita descargar esos registros con el mismo "
+"contexto de filtro."
 
 #: ../../source/using_api/v2/query_language.rst:11
 msgid ""
 "The OpenDataSoft query language makes it possible to express complex boolean"
 " conditions as a filtering context."
 msgstr ""
+"El lenguaje de consulta de OpenDataSoft permite expresar condiciones "
+"booleanas complejas a modo de contexto de filtro."
 
 #: ../../source/using_api/v2/query_language.rst:13
 msgid ""
 "The user query can most of the time be expressed through the ``q`` HTTP "
 "parameter."
 msgstr ""
+"La consulta del usuario se puede expresar casi siempre a través del "
+"parámetro HTTP ``q``."
 
 #: ../../source/using_api/v2/query_language.rst:16
 msgid "Full-text search"
-msgstr ""
+msgstr "Búsqueda de texto completo"
 
 #: ../../source/using_api/v2/query_language.rst:18
 msgid "The query language accepts full text queries."
-msgstr ""
+msgstr "El lenguaje de consulta acepta consultas de texto completo."
 
 #: ../../source/using_api/v2/query_language.rst:20
 msgid ""
@@ -85,47 +99,51 @@ msgstr ""
 
 #: ../../source/using_api/v2/query_language.rst:31
 msgid "Boolean expressions"
-msgstr ""
+msgstr "Expresiones booleanas"
 
 #: ../../source/using_api/v2/query_language.rst:33
 msgid ""
 "The query language supports the following boolean operators ``AND``, ``OR`` "
 "and ``NOT``."
 msgstr ""
+"El lenguaje de consulta admite los operadores booleanos ``AND``, ``OR`` y "
+"``NOT``."
 
 #: ../../source/using_api/v2/query_language.rst:35
 msgid ""
 "Parenthesis can be used to group together expressions and alter the default "
 "priority model:"
 msgstr ""
+"Se pueden usar paréntesis para agrupar expresiones y alterar el modelo de "
+"prioridad predeterminado:"
 
 #: ../../source/using_api/v2/query_language.rst:37
 msgid "``NOT``"
-msgstr ""
+msgstr "``NOT``"
 
 #: ../../source/using_api/v2/query_language.rst:38
 msgid "``AND``"
-msgstr ""
+msgstr "``AND``"
 
 #: ../../source/using_api/v2/query_language.rst:39
 msgid "``OR``"
-msgstr ""
+msgstr "``OR``"
 
 #: ../../source/using_api/v2/query_language.rst:41
 msgid "Samples"
-msgstr ""
+msgstr "Ejemplos"
 
 #: ../../source/using_api/v2/query_language.rst:43
 msgid "``film OR trees``"
-msgstr ""
+msgstr "``film OR trees``"
 
 #: ../../source/using_api/v2/query_language.rst:44
 msgid "``(film OR trees) AND paris``"
-msgstr ""
+msgstr "``(film OR trees) AND paris``"
 
 #: ../../source/using_api/v2/query_language.rst:47
 msgid "Field queries"
-msgstr ""
+msgstr "Consultas de campos"
 
 #: ../../source/using_api/v2/query_language.rst:49
 msgid ""
@@ -133,16 +151,23 @@ msgid ""
 "filtering. You can use field names as a prefix to your queries to filter the"
 " results based on a specific field's value."
 msgstr ""
+"Una de las funciones primordiales del lenguaje de consulta es permitir los "
+"filtros por campos. Puede usar los nombres de campo como prefijo de las "
+"consultas para filtrar los resultados en función del valor de un campo "
+"específico."
 
 #: ../../source/using_api/v2/query_language.rst:52
 msgid ""
 "**For the dataset search API**, the list of available fields corresponds "
 "exactly to available metadata. By default:"
 msgstr ""
+"**En el caso de la API de búsqueda de conjuntos de datos**, la lista de "
+"campos disponibles se corresponde exactamente con los metadatos disponibles."
+" De forma predeterminada:"
 
 #: ../../source/using_api/v2/query_language.rst:57
 msgid "Field Name"
-msgstr ""
+msgstr "Nombre de campo"
 
 #: ../../source/using_api/v2/query_language.rst:58
 #: ../../source/using_api/v2/query_language.rst:102
@@ -155,81 +180,83 @@ msgstr "Descripción"
 
 #: ../../source/using_api/v2/query_language.rst:59
 msgid "publisher"
-msgstr ""
+msgstr "publisher"
 
 #: ../../source/using_api/v2/query_language.rst:60
 msgid "The dataset publisher"
-msgstr ""
+msgstr "Publicador del conjunto de datos"
 
 #: ../../source/using_api/v2/query_language.rst:61
 msgid "title"
-msgstr ""
+msgstr "title"
 
 #: ../../source/using_api/v2/query_language.rst:62
 msgid "The dataset title"
-msgstr ""
+msgstr "Título del conjunto de datos"
 
 #: ../../source/using_api/v2/query_language.rst:63
 msgid "description"
-msgstr ""
+msgstr "description"
 
 #: ../../source/using_api/v2/query_language.rst:64
 msgid "The dataset description"
-msgstr ""
+msgstr "Descripción del conjunto de datos"
 
 #: ../../source/using_api/v2/query_language.rst:65
 msgid "license"
-msgstr ""
+msgstr "licencia"
 
 #: ../../source/using_api/v2/query_language.rst:66
 msgid "The dataset license"
-msgstr ""
+msgstr "Licencia del conjunto de datos"
 
 #: ../../source/using_api/v2/query_language.rst:67
 msgid "records_count"
-msgstr ""
+msgstr "records_count"
 
 #: ../../source/using_api/v2/query_language.rst:68
 msgid "The number of records in the dataset"
-msgstr ""
+msgstr "Número de registros del conjunto de datos"
 
 #: ../../source/using_api/v2/query_language.rst:69
 msgid "modified"
-msgstr ""
+msgstr "modified"
 
 #: ../../source/using_api/v2/query_language.rst:70
 msgid "The last modification date of the dataset"
-msgstr ""
+msgstr "Fecha de la última modificación del conjunto de datos"
 
 #: ../../source/using_api/v2/query_language.rst:71
 msgid "language"
-msgstr ""
+msgstr "language"
 
 #: ../../source/using_api/v2/query_language.rst:72
 msgid "The language of the dataset (iso code)"
-msgstr ""
+msgstr "Idioma del conjunto de datos (código ISO)"
 
 #: ../../source/using_api/v2/query_language.rst:73
 msgid "theme"
-msgstr ""
+msgstr "theme"
 
 #: ../../source/using_api/v2/query_language.rst:74
 msgid "The theme of the dataset"
-msgstr ""
+msgstr "Tema del conjunto de datos"
 
 #: ../../source/using_api/v2/query_language.rst:75
 msgid "references"
-msgstr ""
+msgstr "references"
 
 #: ../../source/using_api/v2/query_language.rst:76
 msgid "The references for the dataset"
-msgstr ""
+msgstr "Referencias del conjunto de datos"
 
 #: ../../source/using_api/v2/query_language.rst:78
 msgid ""
 "The domain administrator might define a richer metadata template, thus "
 "giving acces to a richer set of filtering fields."
 msgstr ""
+"El administrador del dominio puede definir una plantilla de metadatos más "
+"rica y así dar acceso a un conjunto de campos de filtro más rico."
 
 #: ../../source/using_api/v2/query_language.rst:80
 msgid ""
@@ -237,6 +264,9 @@ msgid ""
 "``Paris`` in their title or description and which contain at least 50 000 "
 "records:"
 msgstr ""
+"Por ejemplo, se puede llevar a cabo una búsqueda en los conjuntos de datos "
+"de public.opendatasoft.com que tengan ``Paris`` en el título o la "
+"descripción y que contengan como mínimo 50.000 registros:"
 
 #: ../../source/using_api/v2/query_language.rst:83
 msgid ""
@@ -250,6 +280,10 @@ msgid ""
 "schema of the dataset. To fetch the list of available fields for a given "
 "dataset, you may use the search dataset or lookup dataset APIs."
 msgstr ""
+"**En el caso de las API de búsqueda de registros**, la lista de campos "
+"disponibles depende del esquema del conjunto de datos. Para capturar la "
+"lista de campos disponibles para un conjunto de datos determinado, puede "
+"usar las API de consulta o búsqueda de conjunto de datos."
 
 #: ../../source/using_api/v2/query_language.rst:89
 msgid ""
@@ -272,7 +306,7 @@ msgstr ""
 #: ../../source/using_api/v2/query_language.rst:117
 #: ../../source/using_api/v2/query_language.rst:134
 msgid "Operators"
-msgstr ""
+msgstr "Operadores"
 
 #: ../../source/using_api/v2/query_language.rst:103
 msgid "``:``"
@@ -363,44 +397,48 @@ msgid ""
 "Date formats can be specified in different formats: simple (YYYY[[/mm]/dd]) "
 "or ISO 8601 (YYYY-mm-DDTHH:MM:SS)"
 msgstr ""
+"Las fechas se pueden especificar en diversos formatos: simple "
+"(AAAA[[/mm]/dd]) o ISO 8601 (AAAA-mm-DDTHH:MM:SS)."
 
 #: ../../source/using_api/v2/query_language.rst:148
 msgid "Examples:"
-msgstr ""
+msgstr "Ejemplos:"
 
 #: ../../source/using_api/v2/query_language.rst:150
 msgid "``film_date >= 2002``"
-msgstr ""
+msgstr "``film_date >= 2002``"
 
 #: ../../source/using_api/v2/query_language.rst:151
 msgid "``film_date >= 2013/02/11``"
-msgstr ""
+msgstr "``film_date >= 2013/02/11``"
 
 #: ../../source/using_api/v2/query_language.rst:152
 msgid "``film_date: [1950 TO 2000]``"
-msgstr ""
+msgstr "``film_date: [1950 TO 2000]``"
 
 #: ../../source/using_api/v2/query_language.rst:153
 msgid "``film_box_office > 10000 AND film_date < 1965``"
-msgstr ""
+msgstr "``film_box_office > 10000 AND film_date < 1965``"
 
 #: ../../source/using_api/v2/query_language.rst:157
 msgid "Query language functions"
-msgstr ""
+msgstr "Funciones del lenguaje de consulta"
 
 #: ../../source/using_api/v2/query_language.rst:159
 msgid ""
 "Advanced functions can be used in the query language. Function names need to"
 " be prefixed with a sharp (``#``) sign."
 msgstr ""
+"Se pueden usar funciones avanzadas en el lenguaje de consulta. Debe "
+"anteponerse como prefijo a los nombres de función un signo ``#``."
 
 #: ../../source/using_api/v2/query_language.rst:164
 msgid "Function name"
-msgstr ""
+msgstr "Nombre de función"
 
 #: ../../source/using_api/v2/query_language.rst:166
 msgid "now"
-msgstr ""
+msgstr "now"
 
 #: ../../source/using_api/v2/query_language.rst:167
 msgid ""
@@ -410,10 +448,16 @@ msgid ""
 "date greater or equal to the current datetime. This function can also accept"
 " parameters, see below for the ``#now`` function available parameters."
 msgstr ""
+"Devuelve la fecha actual. Se puede invocar esta función como un valor de "
+"consulta para un campo. Si se invoca sin argumentos, se evaluará como la "
+"fecha y hora actual: ``birthdate >= #now()`` devuelve todos los registros "
+"que contienen una fecha de nacimiento superior o igual a la fecha y hora "
+"actual. Esta función también puede aceptar parámetros; consulte más adelante"
+" los parámetros de la función ``#now`` disponibles."
 
 #: ../../source/using_api/v2/query_language.rst:171
 msgid "null"
-msgstr ""
+msgstr "null"
 
 #: ../../source/using_api/v2/query_language.rst:172
 msgid ""
@@ -421,34 +465,45 @@ msgid ""
 "returns the hits for which no value is defined for the specified field. For "
 "example ``#null(birthdate)``"
 msgstr ""
+"Se puede invocar esta función especificando un nombre de campo como "
+"parámetro. Devuelve las coincidencias para las cuales no se ha definido "
+"ningún valor para el campo especificado. Por ejemplo ``#null(birthdate)``."
 
 #: ../../source/using_api/v2/query_language.rst:175
 msgid "**Available parameters for the ``#now`` function**:Ò"
-msgstr ""
+msgstr "**Parámetros disponibles para la función ``#now``**:"
 
 #: ../../source/using_api/v2/query_language.rst:177
 msgid ""
 "years, months, weeks, days, hours, minutes, seconds, microseconds: These "
 "parameters add time to the current date."
 msgstr ""
+"years, months, weeks, days, hours, minutes, seconds, microseconds: Estos "
+"parámetros añaden tiempo a la fecha actual."
 
 #: ../../source/using_api/v2/query_language.rst:179
 msgid ""
 "For example: ``#now(years=-1, hours=-1)`` returns the current date minus a "
 "year and an hour"
 msgstr ""
+"Por ejemplo: ``#now(years=-1, hours=-1)`` devuelve la fecha actual menos un "
+"año y una hora."
 
 #: ../../source/using_api/v2/query_language.rst:181
 msgid ""
 "year, month, day, hour, minute, second, microsecond: can also be used to "
 "specify an absolute date."
 msgstr ""
+"year, month, day, hour, minute, second, microsecond: También se pueden "
+"utilizar para especificar una fecha absoluta."
 
 #: ../../source/using_api/v2/query_language.rst:183
 msgid ""
 "For example: ``#now(year=2001)`` returns the current time, day and month for"
 " year 2001"
 msgstr ""
+"Por ejemplo: ``#now(year=2001)`` devuelve la hora, el día y el mes actuales "
+"para el año 2001."
 
 #: ../../source/using_api/v2/query_language.rst:185
 msgid ""
@@ -457,32 +512,39 @@ msgid ""
 " letters of the day (in English) followed by the cardinal of the first week "
 "on which to start the query."
 msgstr ""
+"weekday: Especifica un día de la semana. Este parámetro acepta o bien un "
+"entero entre 0 y 6 (donde 0 es lunes y 6 es domingo), o bien las 2 primeras "
+"letras del día (en inglés) seguidas del cardinal de la primera semana en que"
+" se debe iniciar la consulta."
 
 #: ../../source/using_api/v2/query_language.rst:189
 msgid "``#now(weeks=-2, weekday=1)`` returns the Tuesday before last."
-msgstr ""
+msgstr "``#now(weeks=-2, weekday=1)`` devuelve el martes anterior al último."
 
 #: ../../source/using_api/v2/query_language.rst:191
 msgid "``#now(weekday=MO(2))`` returns Monday after next."
-msgstr ""
+msgstr "``#now(weekday=MO(2))`` devuelve el lunes posterior al siguiente."
 
 #: ../../source/using_api/v2/query_language.rst:194
 msgid "Geo Filtering"
-msgstr ""
+msgstr "Filtros geográficos"
 
 #: ../../source/using_api/v2/query_language.rst:196
 msgid ""
 "Records search APIs accept geofilter parameters to filter in records which "
 "are located in a specific geographical area."
 msgstr ""
+"Las API de búsqueda de registros aceptan parámetros de filtros geográficos "
+"para filtrar los registros que se encuentran en un área geográfica "
+"determinada."
 
 #: ../../source/using_api/v2/query_language.rst:198
 msgid "The following parameters may be used."
-msgstr ""
+msgstr "Se pueden emplear los parámetros siguientes."
 
 #: ../../source/using_api/v2/query_language.rst:203
 msgid "Parameter Name"
-msgstr ""
+msgstr "Nombre de parámetro"
 
 #: ../../source/using_api/v2/query_language.rst:205
 msgid "distance"

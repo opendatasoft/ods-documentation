@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 16:11+0100\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2017\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,13 +20,15 @@ msgstr ""
 
 #: ../../source/using_api/introduction.rst:2
 msgid "Introduction"
-msgstr ""
+msgstr "Einführung"
 
 #: ../../source/using_api/introduction.rst:4
 msgid ""
 "In this section we'll explore what the OpenDataSoft API does, why it has two"
 " versions and how to retrieve data from it."
 msgstr ""
+"In diesem Abschnitt lernen wir, was die OpenDataSoft-API kann, warum sie in "
+"zwei Versionen vorhanden ist und wie Sie daraus Daten abrufen können."
 
 #: ../../source/using_api/introduction.rst:7
 msgid ""
@@ -33,6 +36,9 @@ msgid ""
 "short, illustrated guide to APIs that you probably should go through before "
 "reading this part of the documentation."
 msgstr ""
+"Sie wissen nicht genau, was eine API ist und wozu sie dient? Wir haben einen"
+" kurzen, illustrierten Leitfaden zu APIs veröffentlicht, den Sie am besten "
+"durchlesen, bevor Sie diesen Teil der Dokumentation lesen."
 
 #: ../../source/using_api/introduction.rst:10
 msgid ""
@@ -40,6 +46,9 @@ msgid ""
 "APIs <http://hello.opendatasoft.com/free-api-guide-ten-critical-insights-to-"
 "leverage-the-value-of-your-data-with-apis/>`_"
 msgstr ""
+"Lesen Sie `10 wichtige Erkenntnisse, um Ihre Daten mit APIs effizient zu "
+"nutzen <http://hello.opendatasoft.com/free-api-guide-ten-critical-insights-"
+"to-leverage-the-value-of-your-data-with-apis/>`_"
 
 #: ../../source/using_api/introduction.rst:13
 msgid ""
@@ -49,6 +58,12 @@ msgid ""
 "regardless of their source or format, while still enforcing security rules "
 "defined by the data owner."
 msgstr ""
+"Eine Progammierschnittstelle, *Application Programming Interface*, kurz API,"
+" ist eine Schnittstelle für den Datenaustausch von Programmen. Die "
+"OpenDataSoft-API bietet eine vereinheitlichte Methode, um auf alle "
+"beliebigen Daten zuzugreifen, die auf die Plattform gepusht wurden, "
+"unabhängig von Ihrer Quelle oder ihrem Format. Dabei werden die vom "
+"Datenbesitzer festgelegten Sicherheitsregeln berücksichtigt."
 
 #: ../../source/using_api/introduction.rst:17
 msgid ""
@@ -57,16 +72,25 @@ msgid ""
 "<http://opendatasoft.github.io/ods-widgets/docs/#/api>`_ which are only a "
 "presentation layer for the data provided by the APIs."
 msgstr ""
+"Die gesamte OpenDataSoft-Plattform beruht ausschließlich auf diesen "
+"bestimmten APIs für den Datenzugriff. Sie werden von unserer Widget-"
+"Bibliothek <http://opendatasoft.github.io/ods-widgets/docs/#/api>`_ "
+"umfassend genutzt. Dabei handelt es sich lediglich um eine "
+"Präsentationsschicht für die Daten, die von den APIs zur Verfügung gestellt "
+"werden."
 
 #: ../../source/using_api/introduction.rst:21
 msgid ""
 "These APIs allow you to search for datasets, search for data, compute "
 "analysis, perform geographic aggregation and much more."
 msgstr ""
+"Diese APIs ermöglichen Ihnen die Suche nach Datensätzen und Daten sowie die "
+"Erstellung von Analysen, die Durchführung von geografischen Aggregationen "
+"uvm."
 
 #: ../../source/using_api/introduction.rst:25
 msgid "Key concepts"
-msgstr ""
+msgstr "Schlüsselkonzepte"
 
 #: ../../source/using_api/introduction.rst:27
 msgid ""
@@ -74,20 +98,30 @@ msgid ""
 "It is very important to be familiar with the nature of this data before "
 "diving the full specification of each API."
 msgstr ""
+"Sämtliche APIs bieten Ihnen Zugang zu den selben Daten, jedoch auf "
+"verschiedene Weise. Es ist sehr wichtig, mit den Eigenschaften dieser Daten "
+"vertraut zu sein, bevor Sie die gesamte Spezifikation jeder API näher "
+"betrachten."
 
 #: ../../source/using_api/introduction.rst:30
 msgid ""
 "Everything within the platform is related through a tree structure. Which "
 "means that you can think of OpenDataSoft as such:"
 msgstr ""
+"Alle Plattformelemente sind in einer Baumstruktur miteinander verbunden. Sie"
+" können OpenDataSoft also folgendermaßen verstehen:"
 
 #: ../../source/using_api/introduction.rst:33
 msgid "The **OpenDataSoft platform** is a network of OpenDataSoft portals."
 msgstr ""
+"Die **OpenDataSoft-Plattform** ist ein Netzwerk aus mehreren OpenDataSoft-"
+"Portalen."
 
 #: ../../source/using_api/introduction.rst:34
 msgid "A **portal** provides a **catalog** of all of its **datasets**."
 msgstr ""
+"Ein **Portal** bietet einen **Katalog** bestehend aus all seinen "
+"**Datensätzen**."
 
 #: ../../source/using_api/introduction.rst:35
 msgid ""
@@ -95,26 +129,33 @@ msgid ""
 "schema** (specifying fields names and types) and a collection of "
 "**records**."
 msgstr ""
+"Jeder **Datensatz** wird durch ein **Metadaten**-Wörterbuch, ein "
+"**Datenschema** (das Feldnamen und -typen angibt) und eine Sammlung an "
+"**Einträgen** definiert."
 
 #: ../../source/using_api/introduction.rst:37
 msgid "Each **record** provides values for each of the dataset's fields."
-msgstr ""
+msgstr "Jeder **Eintrag** bietet Werte für jedes einzelne Datensatzfeld."
 
 #: ../../source/using_api/introduction.rst:39
 msgid ""
 "There are of course many more types of data within the platform, but they "
 "are only relevant in very specific contexts."
 msgstr ""
+"Natürlich enthält die Plattform noch weit mehr Datentypen, doch diese sind "
+"nur in spezifischem Kontext relevant."
 
 #: ../../source/using_api/introduction.rst:41
 msgid ""
 "The OpenDataSoft platform provides its own API (ODS API v1 and v2) and some "
 "standard API's implementations such as ODATA , WFS or CSW."
 msgstr ""
+"Die OpenDataSoft-Plattform bietet ihre eigene API (ODS API v1 und v2) sowie "
+"einige Standard-API-Implementierungen wie ODATA , WFS oder CSW."
 
 #: ../../source/using_api/introduction.rst:45
 msgid "ODS API"
-msgstr ""
+msgstr "ODS-API"
 
 #: ../../source/using_api/introduction.rst:47
 msgid ""
@@ -122,32 +163,45 @@ msgid ""
 "widgets. If you want to develop your own application, this is also the best "
 "way to go."
 msgstr ""
+"Die OpenDataSoft-Plattform und die Widgets nutzen intern diese Plattform. "
+"Wenn Sie Ihre eigene Anwendung entwickeln möchten, können Sie dies natürlich"
+" auch tun."
 
 #: ../../source/using_api/introduction.rst:51
 msgid "Differences between ODS APIv1 and APIv2"
-msgstr ""
+msgstr "Unterschiede zwischen ODS APIv1 und APIv2"
 
 #: ../../source/using_api/introduction.rst:53
 msgid ""
 "This API is currently under development and will be officially available "
 "soon, but don't hesitate to give it a try : :doc:`V2 </using_api/v2/index>`."
 msgstr ""
+"Diese API ist momentan in der Entwicklungsphase und wird bald offiziell zur "
+"Verfügung stehen, Sie können sie jedoch bereits jetzt testen: :doc:`V2 "
+"</using_api/v2/index>`."
 
 #: ../../source/using_api/introduction.rst:56
 msgid "Here is the main differences and key changes between APIv1 and APIv2."
 msgstr ""
+"Dies sind die wichtigsten Unterschiede und Änderungen von APIv1 im Vergleich"
+" zu APIv2."
 
 #: ../../source/using_api/introduction.rst:58
 msgid ""
 "APIv2 introduces a better implementation of REST principles. Each API entry-"
 "point provides links to easily navigate between linked resources (HATEOAS)."
 msgstr ""
+"APIv2 bietet eine bessere Implementierung für REST-Prinzipien. Jeder API-"
+"Einstiegspunkt bietet Links zum einfachen Navigieren zwischen verlinkten "
+"Ressourcen (HATEOAS)."
 
 #: ../../source/using_api/introduction.rst:60
 msgid ""
 "This API proposes a more complete query language with new functions and "
 "arithmetic expressions."
 msgstr ""
+"Diese API bietet eine umfassendere Anfragesprache mit neuen Funktionen und "
+"arithmetischen Ausdrücken."
 
 #: ../../source/using_api/introduction.rst:61
 msgid ""
@@ -155,28 +209,38 @@ msgid ""
 " instead. For instance ``geofilter.distance='42,1,100'`` is replaced by "
 "``q=distance(geo_field,geom'Point(42 1)',100)``"
 msgstr ""
+"Stattdessen werden spezielle Filter (Geofilter oder Facet-Filter) in die "
+"Anfragesprache verschoben. Beispielsweise wird "
+"``geofilter.distance='42,1,100'`` durch ``q=distance(geo_field,geom'Point(42"
+" 1)',100)`` ersetzt"
 
 #: ../../source/using_api/introduction.rst:63
 msgid ""
 "Aggregation API (former analyze API) comes with a new ``SQL`` like language "
 "and is available on catalog in addition to dataset records."
 msgstr ""
+"Die Aggregations-API (früher Analyse-API) besitzt eine neue \"SQL\"-ähnliche"
+" Sprache und ist im Katalog zusätzlich zu den Datensatzeinträgen erhältlich."
 
 #: ../../source/using_api/introduction.rst:65
 msgid ""
 "Exporters have their own entry-point under ``/api/catalog/exports`` and "
 "``/api/catalog/datasets/<dataset_id>/exports``"
 msgstr ""
+"Die Exporter haben ihren eigenen Einstiegspunkt unter "
+"`/api/catalog/exports`` und ``/api/catalog/datasets/<dataset_id>/exports``"
 
 #: ../../source/using_api/introduction.rst:66
 msgid ""
 "Navigation search (former facet search) and standard search are completely "
 "splitted."
 msgstr ""
+"Die Navigationssuche (früher Facet-Suche) und die Standardsuche sind "
+"vollständig getrennt."
 
 #: ../../source/using_api/introduction.rst:70
 msgid "Common aspects"
-msgstr ""
+msgstr "Gemeinsamkeiten"
 
 #: ../../source/using_api/introduction.rst:72
 msgid ""
@@ -184,10 +248,13 @@ msgid ""
 ":doc:`authentification method </using_api/authentication>` which enables you"
 " to use the same credentials for both versions."
 msgstr ""
+"Beide API-Versionen haben einen wichtigen Mechanismus gemeinsam: die "
+":doc:`authentification method </using_api/authentication>`, mit der Sie "
+"dieselben Anmeldeinformationen für beide Versionen nutzen können."
 
 #: ../../source/using_api/introduction.rst:76
 msgid "What about ODATA, WFS and CSW?"
-msgstr ""
+msgstr "Was ist mit OData, WFS und CSW?"
 
 #: ../../source/using_api/introduction.rst:78
 msgid ""
@@ -195,10 +262,14 @@ msgid ""
 "you are not familiar with these standards, then you should stick with the "
 "ODS API since it provides the most comprehensive access to the data."
 msgstr ""
+"Diese 3 Akronyme beziehen sich auf weitere Standards, die die Plattform "
+"implementiert. Falls Sie mit diesen Standards nicht vertraut sind, sollten "
+"Sie bei der ODS-API bleiben, da Sie den umfassendsten Zugang zu den Daten "
+"bietet."
 
 #: ../../source/using_api/introduction.rst:82
 msgid "ODATA"
-msgstr ""
+msgstr "OData"
 
 #: ../../source/using_api/introduction.rst:84
 msgid ""
@@ -206,6 +277,10 @@ msgid ""
 "across APIs to perform requests. The trade-off for this norm's generic "
 "approach is its higher complexity compared to traditional custom REST APIs."
 msgstr ""
+"OData ist ein Standard für REST-APIs, die eine gemeinsame, API-übergreifende"
+" Sprache zur Durchführung von Anfragen bieten. Der Vorteil des generischen "
+"Ansatzes dieser Norm ist seine höhere Komplexität im Vergleich zu "
+"herkömmlichen REST-APIs."
 
 #: ../../source/using_api/introduction.rst:87
 msgid ""
@@ -214,10 +289,14 @@ msgid ""
 "aggregations, geographic computations...) are only available through our V1 "
 "and V2 APIs."
 msgstr ""
+"OpenDataSoft implementiert diese Norm für einfache Vorgänge (Suche nach "
+"Datensätzen und Einträgen), komplexere Vorgänge (wie Analysen, "
+"Aggregationen, geografische Berechnungen...) sind nur mit V1- und V2-APIs "
+"verfügbar."
 
 #: ../../source/using_api/introduction.rst:91
 msgid "WFS and CSW"
-msgstr ""
+msgstr "WFS und CSW"
 
 #: ../../source/using_api/introduction.rst:93
 msgid ""
@@ -225,3 +304,6 @@ msgid ""
 "especially relevant if you're looking to interface the platform with other "
 "GIS software."
 msgstr ""
+"Beide sind Standards, die sich auf geografische Daten konzentrieren. Sie "
+"sind daher besonders wichtig, falls Sie die Plattform mit weiterer GIS-"
+"Software koppeln möchten."
