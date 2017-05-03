@@ -23,6 +23,128 @@ These clauses are used as parameters in the Search API v2 for searching, aggrega
 
 The whole query language is case insensitive but we will use upper case in the documentation for language keywords for clarity. Spaces are optional.
 
+Language elements
+-----------------
+
+Literals
+~~~~~~~~
+
+Literals are used in comparison, assigments or functions. Literal types are **fields**, **strings**, **numbers**, **date**, **boolean** and **geometry**.
+
+Here the format for each literal:
+
+Field
+^^^^^
+
+Field literals are literals that are not enclosed in quotes. They contain only alphanumeric characters or underscore.
+
+**WARNING**: If a field name contains only digits or is a keyword, it must be enclosed in back-quotes
+
+.. code::
+
+   my_field > 10
+   `12` > 10      # without back-quotes 12 is considered as a numeric literal
+   `and`: "value" # AND is a keyword 
+
+String
+^^^^^^
+
+String literals are enclosed in either single or double quotes.
+
+.. code::
+
+   "Word"
+   "Multiple words"
+   'Using single quotes'
+
+
+Number
+^^^^^^
+
+.. code::
+
+   100
+   5.8
+   my_field > 108.7
+
+Date
+^^^^
+
+Date literals are defined with a ``date`` keyword followed by a valid date format enclosed in single quotes.
+
+.. code::
+
+   date'2017-04-03T08:02'
+   date'2018/04/01'
+
+
+Boolean
+^^^^^^^
+
+Boolean literals should be used in boolean filters and can be either TRUE or FALSE keywords (non case sensitive)
+
+.. code::
+
+   my_boolean_field is TRUE
+   my_boolean_field: FALSE
+
+
+Geometry
+^^^^^^^^
+
+Geometry literals are defined with a ``geom`` keyword followed by a valid geomtry expression enclosed in single quotes.
+Supported geometry expression are : 
+- WKT/WKB : https://en.wikipedia.org/wiki/Well-known_text
+- GEOJSON
+
+.. code::
+
+   distance(my_geo_field, geom'POINT(1 1)', 10km)
+   geometry(my_geo_field, geom'{"type": "Polygon","coordinates":[[[100.0, 0.0],[101.0, 0.0],[101.0, 1.0],[100.0, 1.0],[100.0,0.0]]]}')
+
+
+Reserved words
+~~~~~~~~~~~~~~
+
+All these words must be back-quoted if used as field name.
+
+.. code::
+
+   and
+   as
+   asc
+   avg
+   by
+   count
+   date_format
+   day
+   dayofweek
+   desc
+   equi
+   false
+   group
+   hour
+   or
+   limit
+   lower
+   max
+   millisecond
+   min
+   minute
+   month
+   not
+   null
+   quarter
+   range
+   second
+   select
+   sum
+   top
+   true
+   upper
+   where
+   year
+   
 
 Select clause
 -------------
@@ -142,12 +264,12 @@ Text field
 
    * * Operators
      * Description
-   * * ``:``
-     * Perform a normalized query on provided token. Example: ``film_name:star`` will match ``star wars`` and ``Star Trek``
-       To match multi tokens, it is possible to use quotes. ``film_name:"star wars"`` will match fields containing ``star`` and ``wars``
-   * * ``=``
+   * * ``like``
+     * Perform a normalized query on provided token. Example: ``film_name like "star"`` will match ``star wars`` and ``Star Trek``
+       To match multi tokens, it is possible to use quotes. ``film_name like "star wars"`` will match fields containing ``star`` and ``wars``
+   * * ``:`` , ``=``
      * Perform an exact query (not tokenized and not normalized) on the specified field.
-       Example: ``film_name=Star`` will not match ``Star Wars``. To match ``Star Wars`` it is possible to use quotes.
+       Example: ``film_name="Star"`` will not match ``Star Wars``. To match ``Star Wars`` it is necessary to query the exact string.
        ``film_name="Star Wars"``
 
 Numeric field
@@ -158,7 +280,7 @@ Numeric field
 
    * * Operators
      * Description
-   * * ``:``, ``=``
+   * * ``:`` , ``=``
      * Match a numeric value. For instance: ``age:18`` will filter rows with field ``age`` is equal to ``18``
    * * ``>``, ``<``, ``>=``, ``<=``
      * Return results whose field values are larger, smaller, larger or equal, smaller or equal to the given value.
@@ -258,7 +380,7 @@ which contain at least 50 000 records:
 
 .. code::
 
-  (title:paris OR decription:paris) AND records_count >= 50 000
+  (title:"paris" OR decription:"paris") AND records_count >= 50 000
   http://public.opendatasoft.com/api/v2/catalog/datasets?where=(title:paris%20OR%20description:paris)%20AND%20records_count%20>=%2050000
 
 **For the record search APIs**, the list of available fields depends on the schema of the dataset. To fetch the list of
@@ -310,7 +432,7 @@ This statement will create two buckets: ``1-2`` and ``2-3``.
 Equi range
 ~~~~~~~~~~
 
-The static range function takes four parameters: a field name, a step value, a lower bound and an higher bound.
+The equi range function takes four parameters: a field name, a step value, a lower bound and an higher bound.
 
 .. code::
 
