@@ -3,8 +3,7 @@ Introduction
 
 .. important::
 
-   This API is currently in BETA. Important changes can be made until the final release.
-   Don't hesitate to report any problem you encounter when using it.
+   A new version of APIv2 will be available before the end of May. Major breaking changes will occur, which means that action will be needed on your side if you use it. Please contact us if you need additional information.
 
 
 .. note::
