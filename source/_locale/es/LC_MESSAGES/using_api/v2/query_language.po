@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-12 18:30+0200\n"
+"POT-Creation-Date: 2017-05-03 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
@@ -23,140 +23,471 @@ msgid "Query Language"
 msgstr ""
 
 #: ../../source/using_api/v2/query_language.rst:4
-msgid ""
-"Filtering features are built in the core of OpenDataSoft API engine. Many of"
-" the previously listed APIs can take as a parameter filters for constraining"
-" the list of returned datasets or records."
+msgid "Filtering features are built in the core of OpenDataSoft API engine."
 msgstr ""
-"Las funciones de filtro se compilan en el núcleo del motor de la API de "
-"OpenDataSoft. Muchas de las API indicadas anteriormente pueden tomar filtros"
-" como parámetro a fin de limitar la lista de los conjuntos de resultados o "
-"registros devueltos."
 
-#: ../../source/using_api/v2/query_language.rst:7
+#: ../../source/using_api/v2/query_language.rst:6
+msgid ""
+"The OpenDataSoft Query Language (ODSQL) makes it possible to express complex"
+" queries as a filtering context for datasets or records, but also to build "
+"aggregations or computed fields."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:8
 msgid ""
 "Note that a given filtering context can simply be copied from one API to "
 "another. For example, you can easily build a user interface which first "
-"allows the user to visually select the records their are interested in, "
-"using full text search, facets and geo filtering, and then allowing them to "
-"download these records with the same filtering context."
+"allows the user to visually select the records they are are interested in, "
+"using full text search, facets and geo filtering ; and then allowing them to"
+" download these records with the same filtering context."
 msgstr ""
-"Observe que se puede simplemente copiar un contexto de filtro de una API en "
-"otra. Por ejemplo, puede compilar fácilmente una interfaz de usuario que "
-"primero permita al usuario seleccionar visualmente los registros que le "
-"interesen, mediante la búsqueda de texto completo, las facetas y los filtros"
-" geográficos, y después le permita descargar esos registros con el mismo "
-"contexto de filtro."
-
-#: ../../source/using_api/v2/query_language.rst:11
-msgid ""
-"The OpenDataSoft query language makes it possible to express complex boolean"
-" conditions as a filtering context."
-msgstr ""
-"El lenguaje de consulta de OpenDataSoft permite expresar condiciones "
-"booleanas complejas a modo de contexto de filtro."
 
 #: ../../source/using_api/v2/query_language.rst:13
-msgid ""
-"The user query can most of the time be expressed through the ``q`` HTTP "
-"parameter."
-msgstr ""
-"La consulta del usuario se puede expresar casi siempre a través del "
-"parámetro HTTP ``q``."
+msgid "Introduction"
+msgstr "Introducción"
 
-#: ../../source/using_api/v2/query_language.rst:16
-msgid "Full-text search"
-msgstr "Búsqueda de texto completo"
+#: ../../source/using_api/v2/query_language.rst:15
+msgid "The ODSQL is split into five different kinds of clauses:"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:17
+msgid ""
+"the **select** clause allows you to choose the returned fields, give them an"
+" alias, or manipulate them with functions like count, sum, min, max, etc."
+msgstr ""
 
 #: ../../source/using_api/v2/query_language.rst:18
-msgid "The query language accepts full text queries."
-msgstr "El lenguaje de consulta acepta consultas de texto completo."
+msgid ""
+"the **where** clause acts as a filter for the returned datasets or records, "
+"thanks to boolean operations, filter functions, arithmetic expressions, and "
+"more."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:19
+msgid ""
+"the **group by** clause lets you aggregate rows together based on fields, "
+"numeric ranges, or dates,"
+msgstr ""
 
 #: ../../source/using_api/v2/query_language.rst:20
 msgid ""
-"This query returns all results that contain all words passed in the query. "
-"If a given word or compounds is surrounded with double quotes, it performs "
-"an ``AND`` query on each tokenized word."
+"the **order by** and **limit** clauses let you choose the order and quantity"
+" of rows you will receive as a response."
 msgstr ""
 
-#: ../../source/using_api/v2/query_language.rst:23
-msgid "``q=film`` returns results that contain film"
+#: ../../source/using_api/v2/query_language.rst:22
+msgid ""
+"These clauses are used as parameters in the Search API v2 for searching, "
+"aggregating and exporting datasets and records. Depending on the endpoint "
+"you use, some features of the query language will be available or not in the"
+" request."
 msgstr ""
 
 #: ../../source/using_api/v2/query_language.rst:24
-msgid "``q=\"action movies\"`` returns results that contain action and movies."
+msgid ""
+"The whole query language is case insensitive but we will use upper case in "
+"the documentation for language keywords for clarity. Spaces are optional."
 msgstr ""
 
-#: ../../source/using_api/v2/query_language.rst:26
+#: ../../source/using_api/v2/query_language.rst:27
+msgid "Language elements"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:30
+msgid "Literals"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:32
+msgid ""
+"Literals are used in comparison, assignments or functions. Literal types are"
+" **fields**, **strings**, **numbers**, **date**, **boolean** and "
+"**geometry**."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:34
+msgid "Here the format for each literal:"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:37
+msgid "Field"
+msgstr "Campo"
+
+#: ../../source/using_api/v2/query_language.rst:39
+msgid ""
+"Field literals are literals that are not enclosed in quotes. They contain "
+"only alphanumeric characters or underscore."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:41
+msgid ""
+"**WARNING**: If a field name contains only digits or is a keyword, it must "
+"be enclosed in back-quotes"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:50
+msgid "String"
+msgstr "Cadena"
+
+#: ../../source/using_api/v2/query_language.rst:52
+msgid "String literals are enclosed in either single or double quotes."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:62
+msgid "Number"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:71
+msgid "Date"
+msgstr "Fecha"
+
+#: ../../source/using_api/v2/query_language.rst:73
+msgid ""
+"Date literals are defined with a ``date`` keyword followed by a valid date "
+"format enclosed in single quotes."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:82
+msgid "Boolean"
+msgstr "Booleano"
+
+#: ../../source/using_api/v2/query_language.rst:84
+msgid ""
+"Boolean literals should be used in boolean filters and can be either TRUE or"
+" FALSE keywords (non case sensitive)"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:93
+msgid "Geometry"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:95
+msgid ""
+"Geometry literals are defined with a ``geom`` keyword followed by a valid "
+"geometry expression enclosed in single quotes. Supported geometry expression"
+" are :"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:98
+msgid "WKT/WKB : https://en.wikipedia.org/wiki/Well-known_text"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:99
+msgid "GEOJSON"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:108
+msgid "Reserved words"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:110
+msgid "All these words must be back-quoted if used as field name."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:151
+msgid "Select clause"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:153
+msgid ""
+"The **select** clause can be used in the whole search API as the parameter "
+"``select``. Its goal is to allow you to choose the fields that will be "
+"returned for each row, transform them using arithmetic, rename them, add "
+"computed virtual fields, include or exclude fields based on a pattern."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:155
+msgid "A **select** clause can be:"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:157
+#: ../../source/using_api/v2/query_language.rst:188
+#: ../../source/using_api/v2/query_language.rst:407
+msgid "a single expression"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:158
+msgid "a list of comma-separated expressions"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:161
+msgid "Select expression"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:170
+msgid ""
+"These expressions are classic expressions showing multiple selection, field "
+"renaming and arithmetic select. The '*' (wildcard) means all the fields (if "
+"not in an arithmetic select where it is treated as the multiply sign). It is"
+" the default behavior when no select is specified in the search endpoint. In"
+" the aggregates endpoint, the default is to only display fields used for the"
+" aggregation."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:173
+msgid "Include and exclude"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:182
+msgid "Where clause"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:184
+msgid ""
+"The **where** clause can be used in the whole search API as the parameter "
+"``where``. Its goal is to filter rows with a combination of boolean "
+"expressions, functions, expressions or search queries."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:186
+msgid "A **where** clause can be:"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:189
+msgid ""
+"a list of comma-separated expressions that must all be satisfied at the same"
+" time"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:190
+msgid "empty"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:193
+msgid "Filter functions"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:195
+msgid ""
+"Filter functions are built-in functions that can be used as a where "
+"expression:"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:197
+msgid ""
+"The **type** function returns rows where the field named *field_name* has "
+"some type in ``INT``, ``DOUBLE``, ``TEXT``, ``FILE``, ``DATE``, "
+"``DATETIME``, ``IMAGE``."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:203
+msgid ""
+"The **distance** function limits the result set to a geographical area "
+"defined by a circle defined by its center and a distance. The coordinates of"
+" the center of the circle are expressed in the `WKT format "
+"<https://en.wikipedia.org/wiki/Well-known_text>`_). The distance is numeric "
+"and can have a unit in ``mi``, ``yd``, ``ft``, ``m``, ``cm``, ``km``, "
+"``mm``."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:211
+msgid ""
+"The **geometry** function limits the result set to a geographical area "
+"defined by a polygon with coordinates expressed in the WKT format, and a "
+"mode in ``INTERSECT``, ``DISJOINT``, ``WITHIN``."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:220
+msgid ""
+"The **bbox** function limits the result set to a rectangular box defined by "
+"its top left and its bottom right coordinates expressed in the WKT format."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:228
+msgid "Filter expressions"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:230
+msgid ""
+"Filter expressions allow you to use arithmetic and comparisons to limit the "
+"result set to matching rows."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:240
+msgid ""
+"Filter expressions also work with dates and ranges of dates, as the "
+"following examples show."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:249
+msgid ""
+"As you can see in these examples, the syntax is flexible and you can combine"
+" several statements thanks to boolean expressions (``AND``, ``OR``, "
+"``NOT``)."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:251
+msgid ""
+"For text searches, the matched string must be single or double quoted. The "
+"keyword \"LIKE\" is used to perform approximate searches, or prefixed "
+"searches."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:261
+msgid "Text field"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:266
+#: ../../source/using_api/v2/query_language.rst:282
+#: ../../source/using_api/v2/query_language.rst:299
+msgid "Operators"
+msgstr "Operadores"
+
+#: ../../source/using_api/v2/query_language.rst:267
+#: ../../source/using_api/v2/query_language.rst:283
+#: ../../source/using_api/v2/query_language.rst:300
+#: ../../source/using_api/v2/query_language.rst:357
+#: ../../source/using_api/v2/query_language.rst:476
+msgid "Description"
+msgstr "Descripción"
+
+#: ../../source/using_api/v2/query_language.rst:268
+msgid "``like``"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:269
+msgid ""
+"Perform a normalized query on provided token. Example: ``film_name like "
+"\"star\"`` will match ``star wars`` and ``Star Trek`` To match multi tokens,"
+" it is possible to use quotes. ``film_name like \"star wars\"`` will match "
+"fields containing ``star`` and ``wars``"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:271
+#: ../../source/using_api/v2/query_language.rst:284
+msgid "``:`` , ``=``"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:272
+msgid ""
+"Perform an exact query (not tokenized and not normalized) on the specified "
+"field. Example: ``film_name=\"Star\"`` will not match ``Star Wars``. To "
+"match ``Star Wars`` it is necessary to query the exact string. "
+"``film_name=\"Star Wars\"``"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:277
+msgid "Numeric field"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:285
+msgid ""
+"Match a numeric value. For instance: ``age:18`` will filter rows with field "
+"``age`` is equal to ``18``"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:286
+#: ../../source/using_api/v2/query_language.rst:303
+msgid "``>``, ``<``, ``>=``, ``<=``"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:287
+#: ../../source/using_api/v2/query_language.rst:304
+msgid ""
+"Return results whose field values are larger, smaller, larger or equal, "
+"smaller or equal to the given value."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:288
+msgid "``[lower_numeric (TO|..) higher_numeric]``"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:289
+msgid ""
+"Queries Records whose numeric value is between ``lower_numeric`` and "
+"``higher_numeric``. An inclusive or exclusive bound can be used. Example: "
+"``]lower_numeric (TO|..) higher_numeric[`` will exclude ``lower_numeric`` "
+"and ``higher_numeric``."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:294
+msgid "Date field"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:301
+msgid "``:``, ``=``"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:302
+msgid ""
+"Match a date value. For instance: ``film_date:1977`` will return films "
+"released in 1977."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:305
+msgid "``[lower_date (TO|..) higher_date]``"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:306
+msgid ""
+"Queries Records whose numeric value is between ``lower_date`` and "
+"``higher_date``. An inclusive or exclusive bound can be used. Example: "
+"``]lower_date (TO|..) higher_date[`` will exclude ``lower_date`` and "
+"``higher_date``."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:309
+msgid ""
+"Date formats can be specified in different formats: simple (YYYY[[/mm]/dd]) "
+"or ISO 8601 (YYYY-mm-DDTHH:MM:SS)"
+msgstr ""
+"Las fechas se pueden especificar en diversos formatos: simple "
+"(AAAA[[/mm]/dd]) o ISO 8601 (AAAA-mm-DDTHH:MM:SS)."
+
+#: ../../source/using_api/v2/query_language.rst:311
+msgid "**Examples:**"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:313
+msgid "``film_date >= 2002``"
+msgstr "``film_date >= 2002``"
+
+#: ../../source/using_api/v2/query_language.rst:314
+msgid "``film_date >= 2013/02/11``"
+msgstr "``film_date >= 2013/02/11``"
+
+#: ../../source/using_api/v2/query_language.rst:315
+msgid "``film_date: [1950 TO 2000]``"
+msgstr "``film_date: [1950 TO 2000]``"
+
+#: ../../source/using_api/v2/query_language.rst:316
+msgid "``film_box_office > 10000 AND film_date < 1965``"
+msgstr "``film_box_office > 10000 AND film_date < 1965``"
+
+#: ../../source/using_api/v2/query_language.rst:319
+msgid "Filter search query"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:321
+msgid ""
+"Filter search queries are queries that don't refer to fields, only "
+"containing quoted strings and boolean operators. They perform full-text "
+"searches on all visible fields of each record and return matching rows."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:331
+msgid ""
+"If the string contains more than one word, the query will be an ``AND`` "
+"query on each tokenized word."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:338
 msgid ""
 "It is possible to perform a greedy query by adding a wildcard `*` at the end"
 " of a word."
 msgstr ""
 
-#: ../../source/using_api/v2/query_language.rst:28
-msgid "``q=film*`` returns results that contain film, films, filmography..."
-msgstr ""
-
-#: ../../source/using_api/v2/query_language.rst:31
-msgid "Boolean expressions"
-msgstr "Expresiones booleanas"
-
-#: ../../source/using_api/v2/query_language.rst:33
-msgid ""
-"The query language supports the following boolean operators ``AND``, ``OR`` "
-"and ``NOT``."
-msgstr ""
-"El lenguaje de consulta admite los operadores booleanos ``AND``, ``OR`` y "
-"``NOT``."
-
-#: ../../source/using_api/v2/query_language.rst:35
-msgid ""
-"Parenthesis can be used to group together expressions and alter the default "
-"priority model:"
-msgstr ""
-"Se pueden usar paréntesis para agrupar expresiones y alterar el modelo de "
-"prioridad predeterminado:"
-
-#: ../../source/using_api/v2/query_language.rst:37
-msgid "``NOT``"
-msgstr "``NOT``"
-
-#: ../../source/using_api/v2/query_language.rst:38
-msgid "``AND``"
-msgstr "``AND``"
-
-#: ../../source/using_api/v2/query_language.rst:39
-msgid "``OR``"
-msgstr "``OR``"
-
-#: ../../source/using_api/v2/query_language.rst:41
-msgid "Samples"
-msgstr "Ejemplos"
-
-#: ../../source/using_api/v2/query_language.rst:43
-msgid "``film OR trees``"
-msgstr "``film OR trees``"
-
-#: ../../source/using_api/v2/query_language.rst:44
-msgid "``(film OR trees) AND paris``"
-msgstr "``(film OR trees) AND paris``"
-
-#: ../../source/using_api/v2/query_language.rst:47
+#: ../../source/using_api/v2/query_language.rst:346
 msgid "Field queries"
 msgstr "Consultas de campos"
 
-#: ../../source/using_api/v2/query_language.rst:49
+#: ../../source/using_api/v2/query_language.rst:348
 msgid ""
-"One of the major feature of the query language is to allow per field "
+"One of the major features of the query language is to allow per field "
 "filtering. You can use field names as a prefix to your queries to filter the"
 " results based on a specific field's value."
 msgstr ""
-"Una de las funciones primordiales del lenguaje de consulta es permitir los "
-"filtros por campos. Puede usar los nombres de campo como prefijo de las "
-"consultas para filtrar los resultados en función del valor de un campo "
-"específico."
 
-#: ../../source/using_api/v2/query_language.rst:52
+#: ../../source/using_api/v2/query_language.rst:351
 msgid ""
 "**For the dataset search API**, the list of available fields corresponds "
 "exactly to available metadata. By default:"
@@ -165,100 +496,89 @@ msgstr ""
 "campos disponibles se corresponde exactamente con los metadatos disponibles."
 " De forma predeterminada:"
 
-#: ../../source/using_api/v2/query_language.rst:57
+#: ../../source/using_api/v2/query_language.rst:356
 msgid "Field Name"
 msgstr "Nombre de campo"
 
-#: ../../source/using_api/v2/query_language.rst:58
-#: ../../source/using_api/v2/query_language.rst:102
-#: ../../source/using_api/v2/query_language.rst:118
-#: ../../source/using_api/v2/query_language.rst:135
-#: ../../source/using_api/v2/query_language.rst:165
-#: ../../source/using_api/v2/query_language.rst:204
-msgid "Description"
-msgstr "Descripción"
-
-#: ../../source/using_api/v2/query_language.rst:59
+#: ../../source/using_api/v2/query_language.rst:358
 msgid "publisher"
 msgstr "publisher"
 
-#: ../../source/using_api/v2/query_language.rst:60
+#: ../../source/using_api/v2/query_language.rst:359
 msgid "The dataset publisher"
 msgstr "Publicador del conjunto de datos"
 
-#: ../../source/using_api/v2/query_language.rst:61
+#: ../../source/using_api/v2/query_language.rst:360
 msgid "title"
 msgstr "title"
 
-#: ../../source/using_api/v2/query_language.rst:62
+#: ../../source/using_api/v2/query_language.rst:361
 msgid "The dataset title"
 msgstr "Título del conjunto de datos"
 
-#: ../../source/using_api/v2/query_language.rst:63
+#: ../../source/using_api/v2/query_language.rst:362
 msgid "description"
 msgstr "description"
 
-#: ../../source/using_api/v2/query_language.rst:64
+#: ../../source/using_api/v2/query_language.rst:363
 msgid "The dataset description"
 msgstr "Descripción del conjunto de datos"
 
-#: ../../source/using_api/v2/query_language.rst:65
+#: ../../source/using_api/v2/query_language.rst:364
 msgid "license"
 msgstr "licencia"
 
-#: ../../source/using_api/v2/query_language.rst:66
+#: ../../source/using_api/v2/query_language.rst:365
 msgid "The dataset license"
 msgstr "Licencia del conjunto de datos"
 
-#: ../../source/using_api/v2/query_language.rst:67
+#: ../../source/using_api/v2/query_language.rst:366
 msgid "records_count"
 msgstr "records_count"
 
-#: ../../source/using_api/v2/query_language.rst:68
+#: ../../source/using_api/v2/query_language.rst:367
 msgid "The number of records in the dataset"
 msgstr "Número de registros del conjunto de datos"
 
-#: ../../source/using_api/v2/query_language.rst:69
+#: ../../source/using_api/v2/query_language.rst:368
 msgid "modified"
 msgstr "modified"
 
-#: ../../source/using_api/v2/query_language.rst:70
+#: ../../source/using_api/v2/query_language.rst:369
 msgid "The last modification date of the dataset"
 msgstr "Fecha de la última modificación del conjunto de datos"
 
-#: ../../source/using_api/v2/query_language.rst:71
+#: ../../source/using_api/v2/query_language.rst:370
 msgid "language"
 msgstr "language"
 
-#: ../../source/using_api/v2/query_language.rst:72
+#: ../../source/using_api/v2/query_language.rst:371
 msgid "The language of the dataset (iso code)"
 msgstr "Idioma del conjunto de datos (código ISO)"
 
-#: ../../source/using_api/v2/query_language.rst:73
+#: ../../source/using_api/v2/query_language.rst:372
 msgid "theme"
 msgstr "theme"
 
-#: ../../source/using_api/v2/query_language.rst:74
+#: ../../source/using_api/v2/query_language.rst:373
 msgid "The theme of the dataset"
 msgstr "Tema del conjunto de datos"
 
-#: ../../source/using_api/v2/query_language.rst:75
+#: ../../source/using_api/v2/query_language.rst:374
 msgid "references"
 msgstr "references"
 
-#: ../../source/using_api/v2/query_language.rst:76
+#: ../../source/using_api/v2/query_language.rst:375
 msgid "The references for the dataset"
 msgstr "Referencias del conjunto de datos"
 
-#: ../../source/using_api/v2/query_language.rst:78
+#: ../../source/using_api/v2/query_language.rst:377
 msgid ""
 "The domain administrator might define a richer metadata template, thus "
-"giving acces to a richer set of filtering fields."
+"giving access to a richer set of filtering fields."
 msgstr ""
-"El administrador del dominio puede definir una plantilla de metadatos más "
-"rica y así dar acceso a un conjunto de campos de filtro más rico."
 
-#: ../../source/using_api/v2/query_language.rst:80
+#: ../../source/using_api/v2/query_language.rst:379
 msgid ""
 "For example, one can search on public.opendatasoft.com datasets which have "
 "``Paris`` in their title or description and which contain at least 50 000 "
@@ -268,212 +588,170 @@ msgstr ""
 "de public.opendatasoft.com que tengan ``Paris`` en el título o la "
 "descripción y que contengan como mínimo 50.000 registros:"
 
-#: ../../source/using_api/v2/query_language.rst:83
+#: ../../source/using_api/v2/query_language.rst:387
 msgid ""
-"``(title:paris OR decription:paris) AND records_count >= 50 000`` "
-"http://public.opendatasoft.com/api/v2/catalog/datasets?q=(title:paris%20OR%20decription:paris)%20AND%20records_count%20\\>=%2050000"
-msgstr ""
-
-#: ../../source/using_api/v2/query_language.rst:86
-msgid ""
-"**For the record search APIs**, the list of available fields depend on the "
+"**For the record search APIs**, the list of available fields depends on the "
 "schema of the dataset. To fetch the list of available fields for a given "
 "dataset, you may use the search dataset or lookup dataset APIs."
 msgstr ""
-"**En el caso de las API de búsqueda de registros**, la lista de campos "
-"disponibles depende del esquema del conjunto de datos. Para capturar la "
-"lista de campos disponibles para un conjunto de datos determinado, puede "
-"usar las API de consulta o búsqueda de conjunto de datos."
 
-#: ../../source/using_api/v2/query_language.rst:89
+#: ../../source/using_api/v2/query_language.rst:390
 msgid ""
-"For example one can search in the dataset containing the movies shooting "
-"spots in Paris in the last decade any film directed by Woody Allen: "
-"`<http://public.opendatasoft.com/api/v2/catalog/datasets/tournagesdefilmsparis2011/records?q=realisateur%3A%22woody+allen%22>`_."
+"For example one can search in the dataset containing the history of the "
+"SuperBowl, the ones that happened in a stadium called \"Bowl\"."
 msgstr ""
 
-#: ../../source/using_api/v2/query_language.rst:93
+#: ../../source/using_api/v2/query_language.rst:397
 msgid ""
 "Multiple operator fields can be used between the field name and the query "
-"depending of the type"
+"depending of the type."
 msgstr ""
 
-#: ../../source/using_api/v2/query_language.rst:96
-msgid "Text field"
+#: ../../source/using_api/v2/query_language.rst:401
+msgid "Group by clause"
 msgstr ""
 
-#: ../../source/using_api/v2/query_language.rst:101
-#: ../../source/using_api/v2/query_language.rst:117
-#: ../../source/using_api/v2/query_language.rst:134
-msgid "Operators"
-msgstr "Operadores"
-
-#: ../../source/using_api/v2/query_language.rst:103
-msgid "``:``"
-msgstr ""
-
-#: ../../source/using_api/v2/query_language.rst:104
+#: ../../source/using_api/v2/query_language.rst:403
 msgid ""
-"Perform a normalized query on provided token. Example: ``film_name:star`` "
-"will match ``star wars`` and ``Star Trek`` To match multi tokens, it is "
-"possible to use quotes. ``film_name:\"star wars\"`` will match fields "
-"containing ``star`` and ``wars``"
+"The **group by** clause can be used in the whole search API as the parameter"
+" ``group_by``. It enables you to group a set of rows together by field "
+"value, or by numeric or date range."
 msgstr ""
 
-#: ../../source/using_api/v2/query_language.rst:106
-msgid "``=``"
+#: ../../source/using_api/v2/query_language.rst:405
+msgid "A **group by** clause can be:"
 msgstr ""
 
-#: ../../source/using_api/v2/query_language.rst:107
+#: ../../source/using_api/v2/query_language.rst:408
 msgid ""
-"Perform an exact query (not tokenized and not normalized) on the specified "
-"field. Example: ``film_name=Star`` will not match ``Star Wars``. To match "
-"``Star Wars`` it is possible to use quotes. ``film_name=\"Star Wars``"
+"a list of comma-separated expressions. Like selects, group by expressions "
+"can have an ``AS`` statement to give them a label"
 msgstr ""
 
-#: ../../source/using_api/v2/query_language.rst:112
-msgid "Numeric field"
+#: ../../source/using_api/v2/query_language.rst:411
+msgid "Static range"
 msgstr ""
 
-#: ../../source/using_api/v2/query_language.rst:119
-#: ../../source/using_api/v2/query_language.rst:136
-msgid "``:``, ``=``"
-msgstr ""
-
-#: ../../source/using_api/v2/query_language.rst:120
+#: ../../source/using_api/v2/query_language.rst:413
 msgid ""
-"Match a numeric value. For instance: ``age:18`` will filter rows with field "
-"``age`` is equals to ``18``"
+"The static range function takes two parameters: a field name and an array of"
+" steps inside brackets. The side of brackets determines if values lower than"
+" the lower bound and higher than the higher bound should be grouped together"
+" or ignored."
 msgstr ""
 
-#: ../../source/using_api/v2/query_language.rst:121
-#: ../../source/using_api/v2/query_language.rst:138
-msgid "``>``, ``<``, ``>=``, ``<=``"
-msgstr ""
-
-#: ../../source/using_api/v2/query_language.rst:122
-#: ../../source/using_api/v2/query_language.rst:139
+#: ../../source/using_api/v2/query_language.rst:419
 msgid ""
-"Return results whose field values are larger, smaller, larger or equal, "
-"smaller or equal to the given value."
+"This statement will create 4 buckets: ``*-10``, ``10-50``, ``50-100`` and "
+"``100-*``."
 msgstr ""
 
-#: ../../source/using_api/v2/query_language.rst:123
-msgid "``[lower_numeric (TO|..) higher_numeric]``"
+#: ../../source/using_api/v2/query_language.rst:425
+msgid "This statement will create one bucket: ``20.5-*``."
 msgstr ""
 
-#: ../../source/using_api/v2/query_language.rst:124
+#: ../../source/using_api/v2/query_language.rst:431
+msgid "This statement will create two buckets: ``1-2`` and ``2-3``."
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:434
+msgid "Equi range"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:436
 msgid ""
-"Queries Records whose numeric value is between ``lower_numeric`` and "
-"``higher_numeric``. An inclusive or exclusive bound can be used. Example: "
-"``]lower_numeric (TO|..) higher_numeric[`` will exclude ``lower_numeric`` "
-"and ``higher_numeric``."
+"The equi range function takes four parameters: a field name, a step value, a"
+" lower bound and an higher bound."
 msgstr ""
 
-#: ../../source/using_api/v2/query_language.rst:129
-msgid "Date field"
+#: ../../source/using_api/v2/query_language.rst:442
+msgid "This statement will create the following buckets:"
 msgstr ""
 
-#: ../../source/using_api/v2/query_language.rst:137
+#: ../../source/using_api/v2/query_language.rst:444
+msgid "``*-10``"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:445
+msgid "``10-15``"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:446
+msgid "``15-20``"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:447
+msgid "``20-25``"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:448
+msgid "``25-30``"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:449
+msgid "``30-*``"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:452
+msgid "Order by clause"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:454
 msgid ""
-"Match a date value. For instance: ``film_date:1977`` will return films "
-"released in 1977."
+"The order by (``order_by`` parameter) lets you choose how the results of "
+"your query will be sorted. It takes a list of field names, each of which "
+"have an optional ``ASC`` or ``DESC`` option to choose between ascending and "
+"descending order (default is ascending)."
 msgstr ""
 
-#: ../../source/using_api/v2/query_language.rst:140
-msgid "``[lower_date (TO|..) higher_date]``"
-msgstr ""
-
-#: ../../source/using_api/v2/query_language.rst:141
+#: ../../source/using_api/v2/query_language.rst:460
 msgid ""
-"Queries Records whose numeric value is between ``lower_date`` and "
-"``higher_date``. An inclusive or exclusive bound can be used. Example: "
-"``]lower_numeric (TO|..) higher_numeric[`` will exclude ``lower_date`` and "
-"``higher_date``."
+"This statement will order the results by population (ascending), and results"
+" with the same population by descending GDP."
 msgstr ""
 
-#: ../../source/using_api/v2/query_language.rst:146
+#: ../../source/using_api/v2/query_language.rst:463
+msgid "Limit clause"
+msgstr ""
+
+#: ../../source/using_api/v2/query_language.rst:465
 msgid ""
-"Date formats can be specified in different formats: simple (YYYY[[/mm]/dd]) "
-"or ISO 8601 (YYYY-mm-DDTHH:MM:SS)"
+"The limit clause (``limit`` parameter) is very straightforward. It is "
+"maximum number of rows you want to receive in the result of your query. The "
+"default limit is 10 records, and most of the requests except exports have a "
+"maximum limit of 10 000 records."
 msgstr ""
-"Las fechas se pueden especificar en diversos formatos: simple "
-"(AAAA[[/mm]/dd]) o ISO 8601 (AAAA-mm-DDTHH:MM:SS)."
 
-#: ../../source/using_api/v2/query_language.rst:148
-msgid "Examples:"
-msgstr "Ejemplos:"
-
-#: ../../source/using_api/v2/query_language.rst:150
-msgid "``film_date >= 2002``"
-msgstr "``film_date >= 2002``"
-
-#: ../../source/using_api/v2/query_language.rst:151
-msgid "``film_date >= 2013/02/11``"
-msgstr "``film_date >= 2013/02/11``"
-
-#: ../../source/using_api/v2/query_language.rst:152
-msgid "``film_date: [1950 TO 2000]``"
-msgstr "``film_date: [1950 TO 2000]``"
-
-#: ../../source/using_api/v2/query_language.rst:153
-msgid "``film_box_office > 10000 AND film_date < 1965``"
-msgstr "``film_box_office > 10000 AND film_date < 1965``"
-
-#: ../../source/using_api/v2/query_language.rst:157
+#: ../../source/using_api/v2/query_language.rst:468
 msgid "Query language functions"
 msgstr "Funciones del lenguaje de consulta"
 
-#: ../../source/using_api/v2/query_language.rst:159
-msgid ""
-"Advanced functions can be used in the query language. Function names need to"
-" be prefixed with a sharp (``#``) sign."
+#: ../../source/using_api/v2/query_language.rst:470
+msgid "Advanced functions can be used in the query language."
 msgstr ""
-"Se pueden usar funciones avanzadas en el lenguaje de consulta. Debe "
-"anteponerse como prefijo a los nombres de función un signo ``#``."
 
-#: ../../source/using_api/v2/query_language.rst:164
+#: ../../source/using_api/v2/query_language.rst:475
 msgid "Function name"
 msgstr "Nombre de función"
 
-#: ../../source/using_api/v2/query_language.rst:166
+#: ../../source/using_api/v2/query_language.rst:477
 msgid "now"
 msgstr "now"
 
-#: ../../source/using_api/v2/query_language.rst:167
+#: ../../source/using_api/v2/query_language.rst:478
 msgid ""
 "Returns the current date. This function may be called as a query value for a"
 " field. When called without an argument, it will evaluate to the current "
-"datetime: ``birthdate >= #now()`` returns all Records containing a birth "
-"date greater or equal to the current datetime. This function can also accept"
-" parameters, see below for the ``#now`` function available parameters."
+"datetime: ``birthdate >= NOW()`` returns all Records containing a birth date"
+" greater or equal to the current datetime. This function can also accept "
+"parameters, see below for the ``NOW()`` function available parameters."
 msgstr ""
-"Devuelve la fecha actual. Se puede invocar esta función como un valor de "
-"consulta para un campo. Si se invoca sin argumentos, se evaluará como la "
-"fecha y hora actual: ``birthdate >= #now()`` devuelve todos los registros "
-"que contienen una fecha de nacimiento superior o igual a la fecha y hora "
-"actual. Esta función también puede aceptar parámetros; consulte más adelante"
-" los parámetros de la función ``#now`` disponibles."
 
-#: ../../source/using_api/v2/query_language.rst:171
-msgid "null"
-msgstr "null"
-
-#: ../../source/using_api/v2/query_language.rst:172
-msgid ""
-"This function may be called specifying a field name as a parameter. It "
-"returns the hits for which no value is defined for the specified field. For "
-"example ``#null(birthdate)``"
+#: ../../source/using_api/v2/query_language.rst:483
+msgid "Available parameters for the ``NOW()`` function:"
 msgstr ""
-"Se puede invocar esta función especificando un nombre de campo como "
-"parámetro. Devuelve las coincidencias para las cuales no se ha definido "
-"ningún valor para el campo especificado. Por ejemplo ``#null(birthdate)``."
 
-#: ../../source/using_api/v2/query_language.rst:175
-msgid "**Available parameters for the ``#now`` function**:Ò"
-msgstr "**Parámetros disponibles para la función ``#now``**:"
-
-#: ../../source/using_api/v2/query_language.rst:177
+#: ../../source/using_api/v2/query_language.rst:485
 msgid ""
 "years, months, weeks, days, hours, minutes, seconds, microseconds: These "
 "parameters add time to the current date."
@@ -481,15 +759,13 @@ msgstr ""
 "years, months, weeks, days, hours, minutes, seconds, microseconds: Estos "
 "parámetros añaden tiempo a la fecha actual."
 
-#: ../../source/using_api/v2/query_language.rst:179
+#: ../../source/using_api/v2/query_language.rst:487
 msgid ""
-"For example: ``#now(years=-1, hours=-1)`` returns the current date minus a "
+"For example: ``NOW(years=-1, hours=-1)`` returns the current date minus a "
 "year and an hour"
 msgstr ""
-"Por ejemplo: ``#now(years=-1, hours=-1)`` devuelve la fecha actual menos un "
-"año y una hora."
 
-#: ../../source/using_api/v2/query_language.rst:181
+#: ../../source/using_api/v2/query_language.rst:489
 msgid ""
 "year, month, day, hour, minute, second, microsecond: can also be used to "
 "specify an absolute date."
@@ -497,15 +773,13 @@ msgstr ""
 "year, month, day, hour, minute, second, microsecond: También se pueden "
 "utilizar para especificar una fecha absoluta."
 
-#: ../../source/using_api/v2/query_language.rst:183
+#: ../../source/using_api/v2/query_language.rst:491
 msgid ""
-"For example: ``#now(year=2001)`` returns the current time, day and month for"
-" year 2001"
+"For example: ``NOW(year=2001)`` returns the current time, day and month for "
+"year 2001"
 msgstr ""
-"Por ejemplo: ``#now(year=2001)`` devuelve la hora, el día y el mes actuales "
-"para el año 2001."
 
-#: ../../source/using_api/v2/query_language.rst:185
+#: ../../source/using_api/v2/query_language.rst:493
 msgid ""
 "weekday: Specifies a day of the week. This parameter accepts either an "
 "integer between 0 and 6 (where 0 is Monday and 6 is Sunday) or the first two"
@@ -517,55 +791,10 @@ msgstr ""
 "letras del día (en inglés) seguidas del cardinal de la primera semana en que"
 " se debe iniciar la consulta."
 
-#: ../../source/using_api/v2/query_language.rst:189
-msgid "``#now(weeks=-2, weekday=1)`` returns the Tuesday before last."
-msgstr "``#now(weeks=-2, weekday=1)`` devuelve el martes anterior al último."
-
-#: ../../source/using_api/v2/query_language.rst:191
-msgid "``#now(weekday=MO(2))`` returns Monday after next."
-msgstr "``#now(weekday=MO(2))`` devuelve el lunes posterior al siguiente."
-
-#: ../../source/using_api/v2/query_language.rst:194
-msgid "Geo Filtering"
-msgstr "Filtros geográficos"
-
-#: ../../source/using_api/v2/query_language.rst:196
-msgid ""
-"Records search APIs accept geofilter parameters to filter in records which "
-"are located in a specific geographical area."
-msgstr ""
-"Las API de búsqueda de registros aceptan parámetros de filtros geográficos "
-"para filtrar los registros que se encuentran en un área geográfica "
-"determinada."
-
-#: ../../source/using_api/v2/query_language.rst:198
-msgid "The following parameters may be used."
-msgstr "Se pueden emplear los parámetros siguientes."
-
-#: ../../source/using_api/v2/query_language.rst:203
-msgid "Parameter Name"
-msgstr "Nombre de parámetro"
-
-#: ../../source/using_api/v2/query_language.rst:205
-msgid "distance"
+#: ../../source/using_api/v2/query_language.rst:497
+msgid "``NOW(weeks=-2, weekday=1)`` returns the Tuesday before last."
 msgstr ""
 
-#: ../../source/using_api/v2/query_language.rst:206
-msgid ""
-"Limits the result set to a geographical area defined by a circle "
-"(coordinates of the center of the circle expressed in WGS84 and distance "
-"expressed in meters): latitude,longitude,distance: ``#distance(geo_field, "
-"\"48.8520930694,2.34738897685,1000\")``"
-msgstr ""
-
-#: ../../source/using_api/v2/query_language.rst:209
-msgid "polygon"
-msgstr ""
-
-#: ../../source/using_api/v2/query_language.rst:210
-msgid ""
-"Limits the result set to a geographical area defined by a polygon "
-"(coordinates of the points expressed in WGS84 as in "
-"((lat1,lon1),(lat2,lon2),(lat3,lon3)): ``#polygon(geo_field, "
-"\"(48.883086,2.379072),(48.879022,2.379930),(48.883651,2.386968)\")``"
+#: ../../source/using_api/v2/query_language.rst:499
+msgid "``NOW(weekday=MO(2))`` returns Monday after next."
 msgstr ""
