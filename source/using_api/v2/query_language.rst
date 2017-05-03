@@ -29,7 +29,7 @@ Language elements
 Literals
 ~~~~~~~~
 
-Literals are used in comparison, assigments or functions. Literal types are **fields**, **strings**, **numbers**, **date**, **boolean** and **geometry**.
+Literals are used in comparison, assignments or functions. Literal types are **fields**, **strings**, **numbers**, **date**, **boolean** and **geometry**.
 
 Here the format for each literal:
 
@@ -44,7 +44,7 @@ Field literals are literals that are not enclosed in quotes. They contain only a
 
    my_field > 10
    `12` > 10      # without back-quotes 12 is considered as a numeric literal
-   `and`: "value" # AND is a keyword 
+   `and`: "value" # AND is a keyword
 
 String
 ^^^^^^
@@ -92,8 +92,9 @@ Boolean literals should be used in boolean filters and can be either TRUE or FAL
 Geometry
 ^^^^^^^^
 
-Geometry literals are defined with a ``geom`` keyword followed by a valid geomtry expression enclosed in single quotes.
-Supported geometry expression are : 
+Geometry literals are defined with a ``geom`` keyword followed by a valid geometry expression enclosed in single quotes.
+Supported geometry expression are :
+
 - WKT/WKB : https://en.wikipedia.org/wiki/Well-known_text
 - GEOJSON
 
@@ -144,7 +145,7 @@ All these words must be back-quoted if used as field name.
    upper
    where
    year
-   
+
 
 Select clause
 -------------
