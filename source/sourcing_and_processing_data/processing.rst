@@ -1419,7 +1419,7 @@ This processor allows you to geocode full text addresses by using the ArcGIS geo
 Geocode with PDOK
 ~~~~~~~~~~~~~~~~~~~
 
-This processor allows you to geocode addresses in Netherlands by using the PDOK service.
+This processor allows you to geocode addresses in the Netherlands by using the PDOK service.
 
 It takes the following parameters:
 
