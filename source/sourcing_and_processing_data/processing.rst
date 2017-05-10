@@ -1463,12 +1463,12 @@ zcta                  `US ZCTA 2010 <https://public.opendatasoft.com/explore/dat
 county                `US County Boundaries <https://public-us.opendatasoft.com/explore/dataset/us-county-boundaries>`_
 ====================  ==========================================================================================================
 
-Nederland
+Netherands
 
 ====================  ==========================================================================================================
 Repository            Source
 ====================  ==========================================================================================================
-postcode              `Nederland Postcodes <https://public.opendatasoft.com/explore/dataset/openpostcodevlakkenpc4>`_
+postcode              `Netherands Postcodes <https://public.opendatasoft.com/explore/dataset/openpostcodevlakkenpc4>`_
 ====================  ==========================================================================================================
 
 Germany
