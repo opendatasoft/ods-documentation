@@ -6,4 +6,3 @@ ODS API V2 (beta)
 
    introduction
    query_language
-   aggregations

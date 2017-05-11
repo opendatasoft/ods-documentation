@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-12 18:30+0200\n"
+"POT-Creation-Date: 2017-05-03 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: rocio aguero <raguero@datawords.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
@@ -27,10 +27,12 @@ msgid ""
 "This harvester allows users to create datasets from an FTP folder. The FTP "
 "folder must contain:"
 msgstr ""
+"Este recolector permite a los usuarios crear conjuntos de datos a partir de "
+"una carpeta FTP que contiene: "
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:6
 msgid "one **metadata CSV file** (separated with semicolons)"
-msgstr ""
+msgstr "un **archivo CSV de metadatos** (separado por puntos y coma)"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:7
 msgid "several **resources**"
@@ -49,18 +51,20 @@ msgid ""
 "The **metadata CSV file** (named ``index.csv`` by default) is a semicolon "
 "separated file which contains:"
 msgstr ""
+"El **archivo CSV de metadatos** (denominado ``index.csv`` de forma "
+"predeterminada) es un archivo separado por puntos y coma que contiene:"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:27
 msgid "one header row"
-msgstr ""
+msgstr "una fila de encabezado"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:28
 msgid "several other rows, each one dedicated to a dataset to harvest"
-msgstr ""
+msgstr "varias filas adicionales, una por conjunto de datos por recopilar"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:30
 msgid "**Example:**"
-msgstr ""
+msgstr "**Ejemplo:**"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:40
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:83
@@ -151,6 +155,10 @@ msgid ""
 "can be anything as long as they only contain letters and numbers, are unique"
 " across the file, and don't change over time."
 msgstr ""
+"La columna ``name`` contiene un identificador para cada fila. Estos "
+"identificadores pueden ser cualquier cadena de caracteres siempre que esta "
+"contenga únicamente letras y números, sea exclusiva en el archivo y no "
+"cambie con el tiempo."
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:48
 msgid ""
@@ -165,6 +173,8 @@ msgid ""
 "The optional **CSV shema column** (here, ``schema_file``) contains the "
 "schema file for each row."
 msgstr ""
+"La **columna de esquema CSV** opcional (aquí, ``schema_file``) contiene el "
+"archivo de esquema para cada fila."
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:50
 msgid ""
@@ -173,6 +183,10 @@ msgid ""
 "you can add). Note: use double quotes at the beginning and end of lists like"
 " ``keywords``, where you have to use semicolons to separate words."
 msgstr ""
+"Las demás columnas son metadatos (p. ej. ``title``, ``description``, "
+"``theme``, ``keyword``, ``license``, ``language``, pero puede añadir otras)."
+" Nota: Utilice comillas dobles al principio y al final de listas como las de"
+" ``keywords``, donde tiene que usar puntos y coma para separar las palabras."
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:53
 msgid "Resources"
@@ -180,7 +194,7 @@ msgstr "Recursos"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:55
 msgid "Resources can either be:"
-msgstr ""
+msgstr "Los recursos pueden ser:"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:57
 msgid ""
@@ -188,14 +202,18 @@ msgid ""
 "under a subdirectory by specifying the relative path to the file in the "
 "column (e.g \"resources/chocolate.csv\")"
 msgstr ""
+"archivos del servidor FTP, en la misma carpeta que el archivo ``index.csv`` "
+"o en un subdirectorio si se específica la ruta relativa al archivo en la "
+"columna (p. ej., \\\"resources/chocolate.csv\\\")"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:58
 msgid "any URL pointing towards a supported format"
-msgstr ""
+msgstr "cualquier URL que apunte a un formato permitido"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:60
 msgid "If the column is empty, the dataset will only contain metadata."
 msgstr ""
+"Si la columna está vacía, el conjunto de datos solo contendrá metadatos."
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:62
 msgid ""
@@ -235,17 +253,22 @@ msgid ""
 "a ``name`` column holds each field name in lowercase (e.g. on a CSV "
 "resource, this would be the column names in lowercase)"
 msgstr ""
+"Una columna ``name`` contiene todos los nombres de campo en minúsculas (p. "
+"ej. en un recurso CSV serían los nombres de columna en minúsculas)."
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:72
 msgid ""
 "a ``label`` column (optional) holds the label of the corresponding field"
 msgstr ""
+"Una columna ``label`` (opcional) contiene la etiqueta del campo "
+"correspondiente."
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:73
 msgid ""
 "a ``description`` column (optional) holds the description of the "
 "corresponding field"
 msgstr ""
+"Una columna ``description`` (opcional) contiene la descripción del campo."
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:83
 msgid "label"
