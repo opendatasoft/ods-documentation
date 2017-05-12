@@ -1435,6 +1435,50 @@ NL   Country                                                 Postcodes
 US   Country  States                               Counties  ZCTA
 ===  =======  =====================  ============  ========  ==============  ================  ====
 
+GeoJoin
+~~~~~~~
+
+This processor collection retrieves administrative divisions **Geo Shapes** from a key (postcode, county code, etc.). Each country has a dedicated processor and specific referentials.
+These referentials, which are referenced in the tables below, can be found in datasets available on https://public.opendatasoft.com.
+
+France
+
+====================  ==========================================================================================================
+Repository            Source
+====================  ==========================================================================================================
+postcode              `Carte des Codes Postaux <https://public.opendatasoft.com/explore/dataset/contour-des-codes-postaux>`_
+iris                  `Contours Iris - 2014 <https://public.opendatasoft.com/explore/dataset/contours-iris-2014>`_
+insee                 `Geofla® - Communes 2015 <https://public.opendatasoft.com/explore/dataset/geoflar-communes-2015>`_
+departements          `Contours simplifiés des départements Français 2015 <https://public.opendatasoft.com/explore/dataset/contours-simplifies-des-departements-francais-2015>`_
+regions               `Contours géographiques des nouvelles régions (métropole) <https://public.opendatasoft.com/explore/dataset/contours-geographiques-des-nouvelles-regions-metropole>`_
+regions 1970          `Contours des régions françaises sur OpenStreetMap <https://public.opendatasoft.com/explore/dataset/contours-des-regions-francaises-sur-openstreetmap>`_
+====================  ==========================================================================================================
+
+USA
+
+====================  ==========================================================================================================
+Repository            Source
+====================  ==========================================================================================================
+zcta                  `US ZCTA 2010 <https://public.opendatasoft.com/explore/dataset/us-zcta-2010>`_
+county                `US County Boundaries <https://public-us.opendatasoft.com/explore/dataset/us-county-boundaries>`_
+====================  ==========================================================================================================
+
+Netherands
+
+====================  ==========================================================================================================
+Repository            Source
+====================  ==========================================================================================================
+postcode              `Netherands Postcodes <https://public.opendatasoft.com/explore/dataset/openpostcodevlakkenpc4>`_
+====================  ==========================================================================================================
+
+Germany
+
+====================  ==========================================================================================================
+Repository            Source
+====================  ==========================================================================================================
+postcode              `Postleitzahlen Deutschland <https://public.opendatasoft.com/explore/dataset/postleitzahlen-deutschland>`_
+====================  ==========================================================================================================
+
 
 Text processors
 ---------------
