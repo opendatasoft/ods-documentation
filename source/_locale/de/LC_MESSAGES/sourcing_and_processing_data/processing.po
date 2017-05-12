@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-12 18:30+0200\n"
+"POT-Creation-Date: 2017-05-03 16:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2017\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
@@ -624,8 +624,8 @@ msgid ""
 "With this representation, it becomes easy to build subsets of the dataset "
 "using facets based filtering mechanism."
 msgstr ""
-"Mit dieser Darstellung wird es einfach, Teilmengen des Datensatzes mithilfe "
-"eines Filtermechanismus auf Grundlage von Facets zu erstellen."
+"Diese Darstellung vereinfacht es, Teilmengen des Datensatzes mithilfe eines "
+"Filtermechanismus auf Grundlage von Facets zu erstellen."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:188
 msgid "Fixed fields"
@@ -1647,6 +1647,10 @@ msgid ""
 "processor, file type columns do not yield the actual resource through the "
 "processor but instead yield the name of the underlying resource."
 msgstr ""
+"Während die meisten Spaltentypen mit dem Prozessor zur Datensatzverbindung "
+"abgerufen werden können, geben Dateitypspalten nicht die tatsächliche "
+"Ressource über den Prozessor an, sondern stattdessen den Namen der "
+"hinterlegten Ressource."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:684
 msgid ""
@@ -1886,13 +1890,15 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:817
 msgid "JSON array to multivalued"
-msgstr ""
+msgstr "JSON-Array zu mehrwertigem Feld"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:819
 msgid ""
 "This processor extracts multiple values from a field containing a JSON array"
 " and concatenates them into a multivalued field."
 msgstr ""
+"Dieser Prozessor extrahiert mehrere Werte aus einem Feld mit einem JSON-"
+"Array und verknüpft sie in einem mehrwertigen Feld."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:821
 msgid ""
@@ -1900,22 +1906,25 @@ msgid ""
 "field, so don't forget to enable it on the field's parameters, along with "
 "the same separator as in the processor."
 msgstr ""
+"Hinweis: die Eigenschaft \"Mehrwertig\" wird nicht automatisch im Feld "
+"gesetzt,  weshalb Sie sie in den Feldparametern aktivieren müssen, gemeinsam"
+" mit dem gleichen Trennzeichen wie im Prozessor."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:824
 msgid "Original value"
-msgstr ""
+msgstr "Ursprünglicher Wert"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:824
 msgid "After processor"
-msgstr ""
+msgstr "Nach dem Prozessor"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:826
 msgid "``{\"a\":[\"b\",\"c\",\"d\"]}``"
-msgstr ""
+msgstr "``{\"a\":[\"b\",\"c\",\"d\"]}``"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:826
 msgid "``b,c,d``"
-msgstr ""
+msgstr "``b,c,d``"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:829
 msgid ""
@@ -1923,6 +1932,9 @@ msgid ""
 "from JSON\" processor and should contain the array to concatenate "
 "(represented with the iJSON rule ``.item``)."
 msgstr ""
+"Der Parameter \"iJSON-Regel zu Array\" funktioniert genau wie der Prozessor "
+"\"Extrahieren von JSON\" und sollte das zu verknüpfende Array beinhalten "
+"(dargestellt mit der iJSON-Regel \".item\")."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:847
 msgid ""
@@ -1931,38 +1943,44 @@ msgid ""
 "separated with a dot. The position of the array is indicated with the "
 "``item`` keyword."
 msgstr ""
+"iJSON-Regel, um im oben genannten JSON-Array zu iterieren. Eine iJSON-Regel "
+"wird mit den Namen des gesamten Feldes aus dem JSON-Root für die zu "
+"extrahierenden Daten aufgebaut (getrennt mit einem Punkt). Die Position des "
+"Arrays wird mit dem Keyword \"item\" angegeben."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:849
 msgid "item.metaB"
-msgstr ""
+msgstr "item.metaB"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:851
 msgid "Character or string used to separate the different values found"
 msgstr ""
+"Zeichen oder Zeichenfolge, mit dem/der die verschiedenen gefundenen Werte "
+"getrennt werden"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:853
 msgid ","
-msgstr ""
+msgstr ","
 
 #: ../../source/sourcing_and_processing_data/processing.rst:876
 msgid "``item.metaB``: ``value1,value2``"
-msgstr ""
+msgstr "``item.metaB``: ``value1,value2``"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:877
 msgid "``item.int``: ``5,6``"
-msgstr ""
+msgstr "``item.int``: ``5,6``"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:878
 msgid "``item.boolean``: ``false,true``"
-msgstr ""
+msgstr "``item.boolean``: ``false,true``"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:899
 msgid "``bloc.item.metaB``: ``value1,value2``"
-msgstr ""
+msgstr "``bloc.item.metaB``: ``value1,value2``"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:900
 msgid "``bloc.item.sub.sub_sub``: ``sub_value,other_sub_value``"
-msgstr ""
+msgstr "``bloc.item.sub.sub_sub``: ``sub_value,other_sub_value``"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:903
 msgid "Extract bit range"

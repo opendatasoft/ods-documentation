@@ -5,6 +5,9 @@ The daily report contains a recap of the portal's active issues:
 
 - Open processing alerts for realtime datasets, i.e. no data received for a period of time
 - Datasets currently in error due to a processing (scheduled or trigger)
+- Datasets created yesterday
+- Datasets with pending user feedbacks
+
 
 They are sent every day at 9AM (CET).
 
