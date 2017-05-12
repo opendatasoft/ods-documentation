@@ -1416,6 +1416,37 @@ Geocode with ArcGIS
 
 This processor allows you to geocode full text addresses by using the ArcGIS geocoding API. You need to possess an ArcGIS API key to do so.
 
+Geocode with PDOK
+~~~~~~~~~~~~~~~~~~~
+
+This processor allows you to geocode addresses in the Netherlands by using the PDOK service.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Address
+    * Field containing NL address
+    * Field
+    * yes
+  * * Postal code
+    * Field containing NL postal code
+    * Field
+    * No
+  * * City
+    * Field containing NL city
+    * Field
+    * No
+  * * Output field
+    * Field that will contain the produced WSG84 coordinates
+    * Field
+    * yes
+
 Retrieve Administrative Divisions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
