@@ -1510,6 +1510,28 @@ Repository            Source
 postcode              `Postleitzahlen Deutschland <https://public.opendatasoft.com/explore/dataset/postleitzahlen-deutschland>`_
 ====================  ==========================================================================================================
 
+Well-known text and binary to GeoJson
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This processor can be used to convert vector geometry object represented in **Well-known text** (**WKT**) or **Well-known binary** (**WKB**) into **GeoJson** object.
+
+For **Well-known binary** an hexadecimal input is expected.
+
+Examples of **Well-known binary** format:
+
+.. code-block:: text
+
+    000000000140000000000000004010000000000000
+    0102000000030000000000000000003e4000000000000024400000000000002440000000...
+
+Examples of **Well-known text** format:
+
+.. code-block:: text
+
+    POINT (30 10)
+    POLYGON ((35 10, 45 45, 15 40, 10 20, 35 10),(20 30, 35 35, 30 20, 20 30))
+
+This processor is not activated by default. Please contact the OpenDataSoft support team if you plan to use it.
 
 Text processors
 ---------------
