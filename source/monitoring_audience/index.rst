@@ -1,4 +1,4 @@
-Monitoring a Domain
+Monitoring a domain
 ===================
 
 There are three main views to analyze your domain, trying to answer three different questions:
@@ -23,6 +23,6 @@ Please note that the dataset includes usage data for **at least** the **3 last m
    analyzing_dataset_usage
    analyzing_actions_usage
    analyzing_source_data
-   google_analytics
+   third_party_analytics
    quotas
    analyzing_domain_activity

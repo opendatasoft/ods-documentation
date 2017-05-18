@@ -1,0 +1,490 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-16 14:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2017\n"
+"Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:2
+msgid "Loading data"
+msgstr "Charger les données"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:4
+msgid ""
+"OpenDataSoft provides different ways to add data to a dataset. Each method "
+"solves a specific use case: you may want to upload a static referential, "
+"stay synchronized with a remote service, extract data from a geographical "
+"information system, from an API..."
+msgstr ""
+"OpenDataSoft offre différentes méthodes pour ajouter des données à un jeu de"
+" données. Chaque méthode est adaptée à une situation particulière : que vous"
+" souhaitiez télécharger un référentiel statique, rester synchronisé avec un "
+"service distant, extraire des données depuis un système d'informations "
+"géographiques, depuis une API..."
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:9
+msgid "Methods"
+msgstr "Méthodes"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:23
+msgid "Static file"
+msgstr "Fichier statique"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:25
+msgid ""
+"You can attach a static file to your dataset by uploading a file from your "
+"computer via the *Upload a file* button."
+msgstr ""
+"Vous pouvez ajouter un fichier statique à votre jeu de données en "
+"téléchargeant un fichier depuis votre ordinateur à l'aide du bouton *Ajouter"
+" un fichier*."
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:28
+msgid ""
+"The size limit for a file is 240Mo. If your file is too big you can compress"
+" it before uploading it on the platform."
+msgstr ""
+"La taille des fichiers est limitée à 240 Mo. Si votre fichier est trop "
+"volumineux, vous pouvez le compresser avant de le télécharger sur la "
+"plateforme."
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:31
+msgid "Pasted data"
+msgstr "Données collées"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:33
+msgid ""
+"The *Paste data* box can be used to directly paste data (in a CSV format). "
+"It is useful for quick tests."
+msgstr ""
+"Le champ *Coller les données* peut être utilisé pour coller directement les "
+"données (au format CSV). Cette fonction est pratique pour réaliser "
+"rapidement des tests."
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:36
+msgid "Remote file (http, https, ftp and ftps)"
+msgstr "Fichier distant (http, https, ftp et ftps)"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:38
+msgid ""
+"By writing an url in the *Enter an URL* box, you can import files stored on "
+"a remote server, we support the following protocols:"
+msgstr ""
+"En saisissant une URL dans le champ *Saisir une URL*, vous pouvez importer "
+"des fichiers stockés sur un serveur distant. Les protocoles suivants sont "
+"pris en charge :"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:40
+msgid "http"
+msgstr "http"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:41
+msgid "ftp"
+msgstr "ftp"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:43
+msgid "And their secured versions:"
+msgstr "Ainsi que leurs versions sécurisées :"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:45
+msgid "https"
+msgstr "https"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:46
+msgid "ftps"
+msgstr "ftps"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:48
+msgid ""
+"*http* links to a single file, for example http://example.org/mydata.csv"
+msgstr ""
+"Le protocole *http* permet d'accéder à un fichier simple, par exemple "
+"http://example.org/mydata.csv"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:50
+msgid ""
+"*ftp* links to a single file or to a directory. For example "
+"ftp://example.org/my_dir/mydata.csv for a single file or "
+"ftp://example.org/my_dir/ for a directory."
+msgstr ""
+"Le protocole *ftp* permet d'accéder à un fichier simple ou à un répertoire. "
+"Par exemple, ftp://example.org/my_dir/mydata.csv pour un fichier simple ou "
+"ftp://example.org/my_dir/ pour un répertoire."
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:52
+msgid ""
+"Using a directory is often the prefered solution to automate incremental "
+"updates between a customer's information system and the OpenDataSoft "
+"platform. All the files in the directory need to have the same format and "
+"schema (for instance, CSV files with the same column titles). Whenever the "
+"dataset is published, new and updated files are fetched from the remote "
+"location and processed. Thanks to OpenDataSoft's native deduplication "
+"strategy, similar records are not processed twice (see :doc:`Special fields "
+"documentation</sourcing_and_processing_data/dataset_schema>`)."
+msgstr ""
+"L'utilisation d'un répertoire est souvent la solution privilégiée quand il "
+"s'agit d'automatiser les mises à jour incrémentielles entre le système "
+"d'information d'un client et la plateforme OpenDataSoft. Tous les fichiers "
+"contenus dans le répertoire doivent être au même format et avoir le même "
+"schéma (par exemple, des fichiers CSV dont les titres de colonne sont "
+"identiques). Lors de la publication du jeu de données, les nouveaux fichiers"
+" et les fichiers mis à jour sont récupérés depuis l'emplacement distant et "
+"sont traités. Grâce à la stratégie de dédoublonnement native d'OpenDataSoft,"
+" les enregistrements identiques ne sont pas traités deux fois (reportez-vous"
+" à la  :doc:`documentation relative aux champs "
+"spéciaux</sourcing_and_processing_data/dataset_schema>`)."
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:55
+msgid ""
+"When synchronizing from a remote FTP location, OpenDataSoft keeps a "
+"persistent cache and does not automatically prune files missing from the "
+"remote directory. Please contact OpenDataSoft's support if you need some "
+"cleanup to be performed."
+msgstr ""
+"Lors de la synchronisation depuis un emplacement FTP distant, OpenDataSoft "
+"conserve un cache persistant et ne nettoie pas automatiquement les fichiers "
+"absents du répertoire distant. Veuillez contacter l'assistance OpenDataSoft "
+"pour tout besoin de nettoyage."
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:58
+msgid ""
+"We do not support the sftp protocol which is completely different from the "
+"ftps protocol."
+msgstr ""
+"Nous ne prenons pas en charge le protocole sftp, qui est complètement "
+"différent du protocole ftps."
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:61
+msgid "API - Specific connector"
+msgstr "Connecteur spécifique à une API"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:63
+msgid ""
+"Sometime, it might be proven convenient to *connect* a dataset to a remote "
+"data source exposing data records over an HTTP API."
+msgstr ""
+"Dans certains cas il est utile de *connecter* un jeu de données à une source"
+" de données externe qui expose ses données sur une API HTTP."
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:66
+msgid ""
+"OpenDataSoft natively supports the following APIs (contact your local "
+"support team to get these activated on your domain):"
+msgstr ""
+"La plateforme OpenDataSoft supporte nativement les APIs suivants (contactez "
+"l'équipe de support pour les activer sur votre domaine):"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:78
+msgid ""
+"OpenDataSoft can also develop and integrate customer specific Web APIs. "
+"OpenDataSoft connectivity toolkit makes it possible to develop performant "
+"and secured connectors supporting incremental data processing."
+msgstr ""
+"OpenDataSoft peut également développer et intégrer des APIs web spécifiques."
+" Notre toolkit dédié permet de développer des connecteurs performants et "
+"sécurisés supportant le traitement incremental des fichiers."
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:88
+msgid "Available options when configuring a connector"
+msgstr "Options disponibles lors de la configuration d'un connecteur"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:100
+msgid "Supported formats"
+msgstr "Formats pris en charge"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:116
+msgid ""
+"The following table lists the supported format and describes configuration "
+"options for each format."
+msgstr ""
+"La table suivante reprend les formats supportés et décrit les options de "
+"configuration pour chacun de ceux-ci."
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:121
+msgid "Format"
+msgstr "Format"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:122
+msgid "Extensions"
+msgstr "Extensions"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:123
+msgid "Description"
+msgstr "Description"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:124
+msgid "Options"
+msgstr "Options"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:125
+msgid "CSV"
+msgstr "CSV"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:126
+msgid ".csv, .tsv, .txt, .dat"
+msgstr ".csv, .tsv, .txt, .dat"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:127
+msgid "The classic Coma Separated Value file."
+msgstr "Fichier de valeurs séparées par des virgules classique."
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:129
+msgid ":doc:`connectors/csv`"
+msgstr ":doc:`connectors/csv`"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:130
+msgid "Microsoft Excel"
+msgstr "Microsoft Excel"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:131
+msgid ".xls, .xlsx"
+msgstr ".xls, .xlsx"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:134
+#: ../../source/sourcing_and_processing_data/loading_data.rst:139
+msgid ":doc:`connectors/spreadsheet`"
+msgstr ":doc:`connectors/spreadsheet`"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:135
+msgid "OpenDocument SpreadSheet"
+msgstr "Feuilles de calcul OpenDocument"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:136
+msgid ".ods"
+msgstr ".ods"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:140
+msgid "JSON"
+msgstr "JSON"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:141
+msgid ".json"
+msgstr ".json"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:142
+msgid ""
+"Simple JSON documents are supported. The platform lets you choose the root "
+"path (path to the table of elements to be considered as rows) and the "
+"properties path (path to the dictionary holding the list of fields for an "
+"element)."
+msgstr ""
+"Les documents JSON simples sont supportés. La plateforme vous permet de "
+"spécifier le chemin vers la racine (contenant une liste d'objets à "
+"considérer comme des lignes distinctes) et le chemin des propriétés (vers "
+"l'objet qui détient l'ensemble des champ pour chaque ligne)."
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:146
+msgid ":doc:`connectors/json`"
+msgstr ":doc:`connectors/json`"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:147
+msgid "GeoJSON"
+msgstr "GeoJSON"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:148
+msgid ".json, .geojson"
+msgstr ".json, .geojson"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:151
+msgid ":doc:`connectors/geojson`"
+msgstr ":doc:`connectors/geojson`"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:152
+msgid "KML/KMZ"
+msgstr "KML/KMZ"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:153
+msgid ".kml, .kmz"
+msgstr ".kml, .kmz"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:156
+msgid ":doc:`connectors/kml`"
+msgstr ":doc:`connectors/kml`"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:157
+msgid "Shapefile"
+msgstr "Shapefile"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:158
+#: ../../source/sourcing_and_processing_data/loading_data.rst:163
+msgid ".zip"
+msgstr ".zip"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:159
+msgid ""
+"A zip archive containing at least the following files: <NAME>.shp, "
+"<NAME>.dbf, <NAME>.prj"
+msgstr ""
+"Une archive zip contenant au moins les fichiers suivants: <NOM>.shp, "
+"<NOM>.dbf, <NOM>.prj"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:161
+msgid ":doc:`connectors/shapefile`"
+msgstr ":doc:`connectors/shapefile`"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:162
+msgid "MapInfo"
+msgstr "MapInfo"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:164
+msgid ""
+"A zip archive containing either <NAME>.mid and <NAME>.mif files or "
+"<NAME>.map, <NAME>.tab, <NAME>.id and <NAME>.dat"
+msgstr ""
+"Une archive zip contenant soit les fichiers <NOM>.mid et <NOM>.mif, soit les"
+" fichiers <NOM>.map, <NOM>.tab, <NOM>.id et <NOM>.dat"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:167
+msgid ":doc:`connectors/mapinfo`"
+msgstr ":doc:`connectors/mapinfo`"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:168
+msgid "OpenStreetMap"
+msgstr "OpenStreetMap"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:169
+msgid ".osm"
+msgstr ".osm"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:172
+msgid ":doc:`connectors/osm`"
+msgstr ":doc:`connectors/osm`"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:173
+msgid "XML"
+msgstr "XML"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:174
+msgid ".xml"
+msgstr ".xml"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:177
+msgid ":doc:`connectors/xml`"
+msgstr ":doc:`connectors/xml`"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:179
+msgid ""
+"File formats support can be extended to match specific requirements (for "
+"instance, to support a complex XML DTD or a non standard flat file format). "
+"Contact your local support team if you need more information on file formats"
+" support extension."
+msgstr ""
+"La prise en charge des formats de fichiers peut être étendue pour répondre à"
+" des besoins spécifiques (par exemple pour prendre en charge des DTD XML "
+"complexes ou des formats de données à plat non standard). N'hésitez pas à "
+"contacter votre équipe d'assistance locale pour obtenir plus d'informations "
+"sur l'extension de la prise en charge des formats."
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:183
+msgid ""
+"OpenDataSoft supports compressed files (zip, bz2, tar, gz, gzip, tar.gr, "
+"tgz, tar.bz2)."
+msgstr ""
+"La plateforme OpenDataSoft prend en charge les fichiers compressés (zip, "
+"bz2, tar, gz, gzip, tar.gr, tgz, tar.bz2)."
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:186
+msgid "Files (images) with metadata"
+msgstr "Fichiers (images) contenant des métadonnées"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:188
+msgid ""
+"To upload files (and images) on the platform, you have to build first a ZIP "
+"archive. This archive shall contain the following files:"
+msgstr ""
+"Pour télécharger des fichiers (et des images) sur la plateforme, vous devez "
+"tout d'abord créer une archive ZIP. Cette archive devra contenir les "
+"fichiers suivants :"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:190
+msgid "a CSV file which lists the files (images) and metadata"
+msgstr ""
+"Un fichier CSV qui répertorie les fichiers (images) et les métadonnées"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:191
+msgid "the files (images) at the same level (no subdirectory)"
+msgstr "Les fichiers (images), au même niveau (pas de sous-répertoire)"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:193
+msgid ""
+"The CSV file must contains a column with file (image) names, others columns "
+"will be considered as additional fields. For instance:"
+msgstr ""
+"Le fichier CSV doit avoir une colonne contenant les noms des fichiers "
+"(images), les autres colonnes seront considérées comme des champs "
+"supplémentaires. Par exemple :"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:198
+msgid "Scale"
+msgstr "Échelle"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:199
+msgid "Title"
+msgstr "Titre"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:200
+msgid "File"
+msgstr "Fichier"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:201
+#: ../../source/sourcing_and_processing_data/loading_data.rst:207
+msgid "1:10"
+msgstr "1:10"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:202
+#: ../../source/sourcing_and_processing_data/loading_data.rst:205
+msgid "Image 1"
+msgstr "Image 1"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:203
+msgid "1-10.png"
+msgstr "1-10.png"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:204
+#: ../../source/sourcing_and_processing_data/loading_data.rst:210
+msgid "1:20"
+msgstr "1:20"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:206
+msgid "1-20.png"
+msgstr "1-20.png"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:208
+#: ../../source/sourcing_and_processing_data/loading_data.rst:211
+msgid "Image 2"
+msgstr "Image 2"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:209
+msgid "2-10.png"
+msgstr "2-10.png"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:212
+msgid "2-20.png"
+msgstr "2-20.png"
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:214
+msgid ""
+"The CSV files and the images must be located at the root of the archive."
+msgstr ""
+"Les fichiers CSV et les images doivent être placés à la racine de l'archive."
+
+#: ../../source/sourcing_and_processing_data/loading_data.rst:218
+msgid ""
+"You can find a example of dataset images on `discovery "
+"<https://discovery.opendatasoft.com>`_. The source can be downloaded."
+msgstr ""
+"Vous trouverez un exemple d'images de jeu de données sur `discovery "
+"<https://discovery.opendatasoft.com>`_. La source peut être téléchargée."

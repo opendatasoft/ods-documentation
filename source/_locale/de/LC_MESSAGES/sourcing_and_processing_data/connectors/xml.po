@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-16 14:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2017\n"
+"Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:2
+msgid "XML connector"
+msgstr "XML-Konnektor"
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:4
+msgid "This connector can create a dataset from an XML document."
+msgstr ""
+"Dieser Konnektor kann einen Datensatz aus einem XML-Dokument erstellen."
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:6
+msgid ""
+"The provided document can have tags with arbitrary names but there are some "
+"constraints on the structure :"
+msgstr ""
+"Das bereitgestellte Dokument kann Tags mit beliebigen Namen haben, aber "
+"hinsichtlich der Struktur gibt es einige Einschränkungen: "
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:8
+msgid ""
+"it must contain an array of objects, each object being used to create a "
+"record in the dataset,"
+msgstr ""
+"Es muss ein Array von Objekten enthalten, wobei jedes Objekt zum Erstellen "
+"eines Eintrags im Datensatz verwendet wird."
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:9
+msgid "the array can be anywhere in the XML document and can have any name,"
+msgstr ""
+"Das Array kann sich an einer beliebigen Stelle im XML-Dokument befinden und "
+"einen beliebigen Namen haben."
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:10
+msgid ""
+"the objects must be flat, which means all their attributes must be at the "
+"root of the object,"
+msgstr ""
+"Die Objekte müssen flach sein, d. h. all ihre Attribute müssen sich am Stamm"
+" des Objekts befinden."
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:11
+msgid ""
+"the first few objects must have all the attributes present in the file so "
+"the dataset's columns are correctly discovered."
+msgstr ""
+"Die ersten Objekte müssen alle Attribute in der Datei enthalten, damit die "
+"Spalten des Datensatzes richtig erkannt werden."
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:14
+msgid "Configuration"
+msgstr "Konfiguration"
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:19
+msgid "Name"
+msgstr "Name"
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:20
+msgid "Description"
+msgstr "Beschreibung"
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:21
+msgid "Values"
+msgstr "Werte"
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:22
+msgid "Object path"
+msgstr "Objektpfad"
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:23
+msgid "Path to the first object in the XML document"
+msgstr "Pfad zum ersten Objekt im XML-Dokument"
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:24
+msgid "e.g. /{namespace}arrayTag/objectTag"
+msgstr "z. B. /{namespace}arrayTag/objectTag"
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:27
+msgid "Example file"
+msgstr "Beispieldatei"
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:54
+msgid "In this example:"
+msgstr "In diesem Beispiel:"
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:56
+msgid ""
+"the root tag of the records is \"shoppingList\" (line 2), and the list of "
+"objects is in \"basket\" (line 5),"
+msgstr "ist der Stammtag der Einträge \"shoppingList\" (Zeile 2)"
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:57
+msgid "the tag of the objects is \"item\","
+msgstr "ist der Tag des Objekts \"item\""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:58
+msgid "each object has a \"name\" and a \"quantity\" attribute."
+msgstr "hat jedes Objekt ein Attribut \"Name\" und \"Menge\""
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:60
+msgid "The object path is \"/shoppingList/basket/item\"."
+msgstr "Der Objektpfad ist \"/shoppingList/basket/item\"."
+
+#: ../../source/sourcing_and_processing_data/connectors/xml.rst:62
+msgid ""
+"Please note that tags **id**, **description**, **itemCount** and "
+"**totalQuantity** (tag names are arbitrary) will be ignored because they are"
+" not in any object."
+msgstr ""
+"Bitte beachten Sie, dass die Tags **id**, **description**, **itemCount** und"
+" **totalQuantity** (Tagnamen sind beliebig) ignoriert werden, da sie in "
+"keinem Objekt enthalten sind."

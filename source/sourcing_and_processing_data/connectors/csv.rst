@@ -16,25 +16,25 @@ Configuration
    * * Name
      * Description
      * Values
-   * * encoding
+   * * Encoding
      * The file encoding
-     * OpenDataSoft uses an heuristic to guess the encoding and something the try is incorrect.
+     * OpenDataSoft uses an heuristic to guess the encoding and sometimes the try is incorrect.
 
        The encoding can be manually set, we provide a list of common value (csv generated on common software on different OS).
 
        Any alias from `Python <https://docs.python.org/2/library/codecs.html#standard-encodings>`_ can be used.
-   * * separator
+   * * Separator
      * The fixed separator. Must be one character.
      * Correct values are usually ``';'``, ``','``, ``' '``, ``'\t'``.
-   * * escapechar
+   * * Escape character
      * If a separator is found right after an escape character, it will not be considered a separator.
      * ``#`` or ``\``
-   * * doublequote
+   * * Double quote
      * Fields values are enclosed in double quotes.
      * ``true`` or ``false``
-   * * headers_first_row
-     * The first row contains the headers and will be used as field name
+   * * Headers
+     * Column titles will be used as field names.
      * ``true`` or ``false``
-   * * first_row_no
-     * Skip a fix number of rows at the beginning of the file
-     * ``true`` or ``false``
+   * * First line number
+     * Skip a fix number of lines at the beginning of the file
+     * number

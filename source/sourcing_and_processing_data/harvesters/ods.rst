@@ -21,3 +21,7 @@ Parameters
    * * Api key (api_key)
      * The Api key used to access the other portal
      *
+
+.. note::
+
+    If you want to harvest a single OpenDataSoft dataset, you can use the :doc:`federation </sourcing_and_processing_data/federation>`

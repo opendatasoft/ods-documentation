@@ -228,6 +228,7 @@ It works similarly as formulas in a spreadsheet software, except instead of refe
 
   .. figure:: processing__expression-sum-en.png
     :alt: Expression Processor basic sum
+    :align: center
 
     Example of a basic sum with the Expression processor. The "Result" column contains the result of the sum (this column was not in the data source).
 
@@ -235,6 +236,7 @@ It works similarly as formulas in a spreadsheet software, except instead of refe
 
   .. figure:: processing__expression-sum-fr.png
     :alt: Expression Processor basic sum
+    :align: center
 
     Example of a basic sum with the Expression processor. The "Result" column contains the result of the sum (this column was not in the data source).
 
@@ -244,6 +246,8 @@ Be careful to use the **technical name** instead of the column label in the expr
 
   .. figure:: processing__expression-technicalname-en.png
     :alt: Expression Processor technical name
+    :width: 400px
+    :align: center
 
     Technical name of a column
 
@@ -251,6 +255,7 @@ Be careful to use the **technical name** instead of the column label in the expr
 
   .. figure:: processing__expression-technicalname-fr.png
     :alt: Expression Processor technical name
+    :align: center
 
     Technical name of a column
 
@@ -263,6 +268,7 @@ Here are some common use cases :
 
   .. figure:: processing__expression-function-en.png
     :alt: Expression Processor function
+    :align: center
 
     Example of a mathematical function using the Expression processor
 
@@ -270,6 +276,7 @@ Here are some common use cases :
 
   .. figure:: processing__expression-function-fr.png
     :alt: Expression Processor function
+    :align: center
 
     Example of a mathematical function using the Expression processor
 
@@ -279,6 +286,7 @@ Here are some common use cases :
 
   .. figure:: processing__expression-condition-en.png
     :alt: Expression Processor conditional expression
+    :align: center
 
     Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression if true : value if false``
 
@@ -286,6 +294,7 @@ Here are some common use cases :
 
   .. figure:: processing__expression-condition-fr.png
     :alt: Expression Processor conditional expression
+    :align: center
 
     Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression if true : value if false``
 
@@ -451,6 +460,452 @@ It takes the following parameters:
     * Field
     * yes
 
+Join datasets
+~~~~~~~~~~~~~
+
+This processor allows to you to join two datasets together the same way a classical database join would.
+
+Let's take an example. You have two datasets:
+
+**First dataset**: The list of taxi stations in Paris.
+
+.. list-table::
+   :header-rows: 1
+
+   * * station_id
+     * station_name
+     * station_address
+   * * 1
+     * Tour Eiffel
+     * 69 quai Branly, 75007 Paris
+   * * 2
+     * Rennes - Montparnasse
+     * 1 place du dix huit Juin 1940, 75006 Paris
+
+The name of this dataset is **paris_taxis_stations**.
+
+**Second dataset**: The number of taxis waiting per station in Paris.
+
+.. list-table::
+   :header-rows: 1
+
+   * * station_id
+     * number
+   * * 1
+     * 10
+   * * 2
+     * 15
+
+The Join processor allows you to enrich the second dataset with colums coming from the first dataset.
+
+**Resulting dataset after a Join**
+
+.. list-table::
+   :header-rows: 1
+
+   * * station_id
+     * number
+     * station_name
+     * station_address
+   * * 1
+     * 10
+     * Tour Eiffel
+     * 69 quai Branly, 75007 Paris
+   * * 2
+     * 15
+     * Rennes - Montparnasse
+     * 1 place du dix huit Juin 1940, 75006 Paris
+
+It takes the following parameters:
+
+* **Dataset**
+
+   The dataset used for the join; you can select it from your own datasets,
+   or from OpenDataSoft's network of datasets.
+
+* **Local Key**
+
+   The local field that will be used to identify the corresponding records in the remote dataset. More than one key can
+   be specified.
+
+* **Remote Key**
+
+   The remote field corresponding to the local key. This can be a list.
+
+* **Output Fields**
+
+   The list of fields to retrieve.
+
+* **Retrieve All Fields**
+
+   Set to retrieve all the fields of the remote dataset.
+
+* **Case Sensitive**
+
+* **One line**
+
+   In some specific cases, the remote dataset may contain more than one row matching the local key. In which case, you
+   may want to either collapse duplicates (that is, generate a single row which will contain multi-valued fields) or
+   not. If this parameter is set, you can specify the character to use to separate values in the generated field in
+   the **Separator** parameter.
+
+Let's take an example and assume that the first dataset contains two rows for the first station:
+
+.. list-table::
+   :header-rows: 1
+
+   * * station_id
+     * station_name
+     * station_address
+   * * 1
+     * Tour Eiffel
+     * 69 quai Branly, 75007 Paris
+   * * 1
+     * Quai Branly
+     * 69 quai Branly, 75007 Paris
+   * * 2
+     * Rennes - Montparnasse
+     * 1 place du dix huit Juin 1940, 75006 Paris
+
+If **One line** is set (with **Separator** set to ``|``), the Join will result in:
+
+.. list-table::
+   :header-rows: 1
+
+   * * station_id
+     * number
+     * station_name
+     * station_address
+   * * 1
+     * 10
+     * Tour Eiffel|Quai Branly
+     * 69 quai Branly, 75007 Paris|69 quai Branly, 75007 Paris
+   * * 2
+     * 15
+     * Rennes - Montparnasse
+     * 1 place du dix huit Juin 1940, 75006 Paris
+
+If **One line** is not set, the Join will result in:
+
+.. list-table::
+   :header-rows: 1
+
+   * * station_id
+     * number
+     * station_name
+     * station_address
+   * * 1
+     * 10
+     * Tour Eiffel
+     * 69 quai Branly, 75007 Paris
+   * * 1
+     * 10
+     * Quai Branly
+     * 69 quai Branly, 75007 Paris
+   * * 2
+     * 15
+     * Rennes - Montparnasse
+     * 1 place du dix huit Juin 1940, 75006 Paris
+
+Integers, decimals and text field containing numerical values can be joined together. For example the following dataset:
+
+.. list-table::
+   :header-rows: 1
+
+   * * insee_code (text)
+     * bloom_competition_result (decimal)
+   * * 01262
+     * 2.0
+   * * 90010
+     * 4.0
+   * * 57355
+     * 2.0
+
+can be used in a join dataset processor in the following dataset:
+
+.. list-table::
+   :header-rows: 1
+
+   * * bloom_ranks (integer)
+   * * 2
+
+to obtain the following result:
+
+.. list-table::
+   :header-rows: 1
+
+   * * insee_code (text)
+     * bloom_competition_result (decimal)
+   * * 01262
+     * 2
+   * * 57355
+     * 2
+
+The matching between values ``2`` and ``2.0`` was successful despite the type difference. We can go further and apply to it a second join dataset processor, in order to obtain values from the following dataset:
+
+.. list-table::
+   :header-rows: 1
+
+   * * city (text)
+     * insee_code (integer)
+     * postal_code (text)
+   * * Montluel
+     * 1262
+     * 01120
+   * * Belfort
+     * 90010
+     * 90000
+   * * Kalhausen
+     * 57355
+     * 57412
+
+to obtain this result:
+
+.. list-table::
+   :header-rows: 1
+
+   * * insee_code (text)
+     * bloom_competition_result (decimal)
+     * city (text)
+     * postal_code (text)
+   * * 01262
+     * 2
+     * Montluel
+     * 01120
+   * * 57355
+     * 2
+     * Kalhausen
+     * 57412
+
+Note that even though the insee_code was not in the same type, the matching happened. The matching worked even for the value ``1262`` in the first dataset (note the absence of leading 0, due to it being an integer value), that matched against the value ``01262`` in the second dataset.
+
+By default, this processor can only be used with remote datasets that have fewer than 100000 records.
+
+Extract from JSON
+~~~~~~~~~~~~~~~~~
+
+This processor extracts values from a field containing a JSON object following a list of iJSON rules.
+
+It creates target columns for the extracted data that are automatically named like the iJSON rules but replacing dots with underscores. For each iJSON rule, a column is created with the extracted value.
+
+The processor doesn't support iJSON rules that lead to an array (containing a ``.item`` in the rule).
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Example
+  * * Field
+    * Name of the field that holds the JSON object
+    * Field
+    * data
+  * * iJSON rules
+    * iJSON rules to apply to extract data from the JSON object above. An iJSON rule is built with the names of all the field from the JSON root to the data to extract, separated with a dot.
+    * List
+    * block.metaB
+
+For example, let's assume that you have this JSON object into a text field :
+
+.. code-block:: JSON
+
+    { "metaA": "Joe",
+      "bloc" : {
+            "metaB" : "valueB",
+            "int": 5,
+            "boolean": false
+          },
+      "sub" : { "sub_sub" : "sub_value"}
+    }
+
+* you will be able to extract the value ``Joe`` with this rule : ``metaA``
+* you will be able to extract the value ``valueB`` with this rule : ``bloc.metaB``
+* you will be able to extract the value ``5`` with this rule : ``bloc.int``
+* you will be able to extract the value ``sub_value`` with this rule : ``sub.sub_sub``
+* The rule ``bloc`` will extract the JSON object :
+
+    .. code-block:: JSON
+
+        {
+            "metaB" : "valueB",
+            "int": 5,
+            "boolean": false
+        }
+
+This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will
+activate it for you.
+
+Expand JSON array
+~~~~~~~~~~~~~~~~~
+
+This processor transposes rows containing a JSON array into several rows with a new column containing each value of the array.
+
+The parameter "iJSON rule to array" works exactly like in the "Extract from JSON" processor and should contain the array to transpose (represented with the iJSON rule ``.item``).
+
+- If the field contains the JSON array directly, just put ``item`` as an iJSON rule.
+- If the final element is an array, the iJSON rule must end with ``.item``, meaning that the reached object should be treated as an array of items in the iJSON syntax.
+- If you want to keep going into the items inside the array, you can keep adding key names after the ``.item``, but be careful to check that this path is valid for every object in the array.
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Example
+  * * JSON array field
+    * Name of the field that holds the JSON array
+    * Field
+    * data
+  * * iJSON rule to array
+    * iJSON rule to iterate in the JSON array above. An iJSON rule is built with the names of all the field from the JSON root to the data to extract, separated with a dot.
+    * List
+    * block.metaB
+  * * Output field
+    * Name of the field that will contain the extracted element
+    * Field
+    *
+
+Example of iJSON rules to extract from the following JSON array field:
+
+.. code-block:: JSON
+
+    [
+        {
+          "metaB" : "value1",
+          "int": 5,
+          "boolean": false
+        },
+        {
+          "metaB" : "value2",
+          "int": 6,
+          "boolean": true
+        },
+    ]
+
+- ``item`` will transpose the record into two, one with each object of the array in the "Output field" column
+
+.. code-block:: JSON
+
+    { "metaA": "Joe",
+      "bloc" : [
+            {
+              "metaB" : "value1",
+              "int": 5,
+              "boolean": false,
+              "sub" : { "sub_sub" : "sub_value"}
+            },
+            {
+              "metaB" : "value2",
+              "int": 6,
+              "boolean": true,
+              "sub" : { "sub_sub" : "other_sub_value"}
+            },
+          ]
+    }
+
+- ``bloc.item`` will transpose the record into two, one with each object of the array in the "Output field" column
+- ``bloc.item.sub`` will transpose the record into two, one with each object inside the "sub" tag of each object of the array.
+
+
+This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will activate it for you.
+
+
+Extract bit range
+~~~~~~~~~~~~~~~~~
+
+This processor allows you to extract an arbitrary bit range from an hexadecimal content and to convert it into one of the following data types: integer, unsigned integer and float.
+
+This might be useful, for example, when processing data coming from a network of sensors as sensors often encode their payloads as hexadecimal content.
+
+This processor can either create a new field or update an existing field.
+
+The processor works with masks, it expects
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Example
+  * * Start bit offset
+    * The starting offset corresponding of the position of the first bit
+    * Integer
+    * 0, 8, 16 ...
+  * * Stop bit offset
+    * The ending offset corresponding of the position of the last bit
+    * Integer
+    * 7, 15, 31 ...
+  * * Convert to
+    * The wanted format to output and convert the data
+    * List
+    * int, uint, float
+
+
+For example, let's assume  you have a temperature sensor that sends and hexadecimal value.
+
+  .. code-block:: text
+
+    hex value : 2C09
+
+This hexadecimal value contains:
+- a decimal value encoded on 2 bytes
+- the sensor status on a bit.
+
+  .. code-block:: text
+
+    hex value : 2C09          <- information sent by the sensor in hexadecimal
+    bin value : 00010110 00000100 1   <- same information in binary
+
+The first byte '00010110' is the integer part of the temperature,
+the second byte '00000100' is the floating part of the temperature,
+the last bit '1' is the boolean status, working or not.
+
+You will need to concatenante the integer and the floating part (after the comma) in order to get the temperature value.
+
+Therefore, the processing pipeline will contains 3 **Extract bit mask** processors, and 1 **Expression** processor to concatenate:
+
+* one **Extract bit mask** from 0 to 7 to convert into integer -> int_temperature
+* one **Extract bit mask** from 8 to 15 to convert into integer -> decimal_temperature
+* one **Extract bit mask** from 15 to 16 to convert into boolean -> status
+* one **Expression** to concatenate first from 8 to 16 to convert into integer
+
+**Extract bit mask 1**
+
+  .. code-block:: text
+
+    00010110 -> 22
+
+**Extract bit mask 2**
+
+  .. code-block:: text
+
+    00000100 -> 4
+
+**Extract bit mask 3**
+
+  .. code-block:: text
+
+      1 -> OK
+
+**Expression**
+
+  .. code-block:: text
+
+    Expression : integer_temp & "." & decimal_temp
+
+**Temperature**
+
+  .. code-block:: text
+
+    Temperature : 22,4 °C
+    Sensor : OK
+
+This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will activate it for you.
+
+
 Date processors
 ---------------
 
@@ -467,11 +922,13 @@ The Date Normalization processor can then be used to correct this problem, by si
 
   .. figure:: processing__date_norm-1--en.png
     :alt: Date normalization processor 1/2
+    :align: center
 
     By default, 12/04/2016 and 03/10/2016 are interpreted respectively as December 4 2016 and March 10 2016
 
   .. figure:: processing__date_norm-2--en.png
     :alt: Date normalization processor 2/2
+    :align: center
 
     With the Date normalization processor and the pattern %d/%m/%Y (DD/MM/YYYY), the dates are interpreted as April 12 2016 and October 3 2016
 
@@ -479,11 +936,13 @@ The Date Normalization processor can then be used to correct this problem, by si
 
   .. figure:: processing__date_norm-1--fr.png
     :alt: Date normalization processor 1/2
+    :align: center
 
     By default, 12/04/2016 and 03/10/2016 are interpreted respectively as December 4 2016 and March 10 2016
 
   .. figure:: processing__date_norm-2--fr.png
     :alt: Date normalization processor 2/2
+    :align: center
 
     With the Date normalization processor and the pattern %d/%m/%Y (DD/MM/YYYY), the dates are interpreted as April 12 2016 and October 3 2016
 
@@ -820,6 +1279,16 @@ It takes the following parameters:
     * Double
     * yes
 
+Tolerance indicates the value below which intermediate points will be suppressed.
+
+Depending on the shape complexity, different tolerances can be tested.
+
+You could start with a tolerance value of 0.0001.
+To simplify more, use a power of ten e.g. 0.001, then 0.01.
+
+If you use a tolerance too high, your shapes will be overly simplified and unrecognizable.
+Use the preview to find out which tolerance works best for you.
+
 Normalize Projection Reference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -887,6 +1356,22 @@ Concatenate Text
 ~~~~~~~~~~~~~~~~
 
 This processor can be used to concatenate two fields using a separator. You'll need to define the left and right hand sides of the concatenation, as well as the separator and the resulting field.
+
+One common use case is to concatenate a X and Y coordinates columns in a new column with both separated by a comma, which can then be used as a ``geo point``.
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__concatenate-en.png
+    :alt: Concatenate Text
+
+    In this example, we concatenate the column X and Y in a new column Coordinates, which can then be used as a ``geo point``
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__concatenate-fr.png
+    :alt: Concatenate Text
+
+    In this example, we concatenate the column X and Y in a new column Coordinates, which can then be used as a ``geo point``
 
 It takes the following parameters:
 
@@ -980,8 +1465,26 @@ It takes the following parameters:
 Replace via Regexp
 ~~~~~~~~~~~~~~~~~~
 
-This processor can be used to replace a random regular expression pattern by new content. See
-`<http://en.wikipedia.org/wiki/Regular_expression>`_ for more details on how to write a regular expressions.
+This processor can be used to replace or remove any part of a text or a number or a combination of both.
+
+One use case is keeping only a part of a number, for example from a french Zip code to keep only the area code, e.g from 44100 (Nantes city) keep only 44 (Loire-Atlantique area).
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__replace-regexp-en.png
+    :alt: Replace Regexp
+
+    In this example, the regular expression processor is configured with the pattern ``[0-9]{3}$``, and a replacement by nothing. The pattern means "select 3 digits from the end", with ``[0-9]`` meaning any digit, ``{3}`` meaning exactly 3 occurences, and ``$`` meaning the end of the text. These 3 digits from the end are then replaced by nothing, so only the first 2 digits will stay.
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__replace-regexp-fr.png
+    :alt: Replace Regexp
+
+    In this example, the regular expression processor is configured with the pattern ``[0-9]{3}$``, and a replacement by nothing. The pattern means "select 3 digits from the end", with ``[0-9]`` meaning any digit, ``{3}`` meaning exactly 3 occurences, and ``$`` meaning the end of the text. These 3 digits from the end are then replaced by nothing, so only the first 2 digits will stay.
+
+
+See `<http://en.wikipedia.org/wiki/Regular_expression>`_ for more details on how to write a regular expressions.
 You can test your regexp expressions with an online debugger tool like `Regex101 <https://regex101.com/>`_.
 
 It takes the following parameters:
@@ -1027,6 +1530,18 @@ Split Text
 
 This processor can be used to split a field's value and to extract the Nth element to a new field.
 
+The number of the part extracted is specified in the ``index`` parameter. Note that the numbering starts at 0.
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__split-text-en.png
+    :alt: Split Text
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__split-text-fr.png
+    :alt: Split Text
+
 It takes the following parameters:
 
 .. list-table::
@@ -1056,7 +1571,27 @@ It takes the following parameters:
 Extract text
 ~~~~~~~~~~~~
 
-This processor can be used to extract an arbitrary pattern expressed as a regular expression out of a string using sub matching.
+This processor can be used to extract any part of a text or a number or a combination of both into a new column. It's similar to the Replace Regexp processor, except instead of replacing the content in place the same column, a new column is created with the selected text.
+
+The idea is to put the part we want to extract in parenthesis. This part will then be extracted in a new column.
+
+Using the same example as for the Replace Regexp processor (from a french zip code like 44100, keep only the area code 44), the Extract Text processor can be used to create another column with the area code selected, instead of replacing the content like with the Replace Regexp processor.
+
+.. ifconfig:: language == 'en'
+
+  .. figure:: processing__extract-text-en.png
+    :alt: Replace Regexp
+
+    In this example, we use the pattern ``(?P<area>[0-9]{2})[0-9]{3}``. ``[0-9]`` means any digit, and ``{2}`` or ``{3}`` means the number of digits we are looking for. In this case we want to extract the first two digits, so we put them in parenthesis, then after the parenthesis we put the rest of the sequence that we don't want to extract, here the remaining 3 digits. The special expression ``?P<area>`` is just for specifiying the new column name
+
+.. ifconfig:: language == 'fr'
+
+  .. figure:: processing__extract-text-fr.png
+    :alt: Replace Regexp
+
+    In this example, we use the pattern ``(?P<area>[0-9]{2})[0-9]{3}``. ``[0-9]`` means any digit, and ``{2}`` or ``{3}`` means the number of digits we are looking for. In this case we want to extract the first two digits, so we put them in parenthesis, then after the parenthesis we put the rest of the sequence that we don't want to extract, here the remaining 3 digits. The special expression ``?P<area>`` is just for specifiying the new column name
+
+From a more technical point of view, this processor can be used to extract an arbitrary pattern expressed as a regular expression out of a string using sub matching.
 
 The syntax of the sub-matching expression to specify is the following: ``(?P<NAME>REGEXP)``. Where:
 
@@ -1153,6 +1688,7 @@ It takes the following parameters:
     * yes
     *
 
+
 Normalize Unicode values
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1175,283 +1711,3 @@ It takes the following parameters:
     * Checked: all the record's fields will be normalized
     * Boolean
     * no
-
-Extract from JSON
-~~~~~~~~~~~~~~~~~
-
-This processor extracts values from a field containing a JSON object following a list of ijson rules.
-
-It creates target columns for the extracted data that are automatically named like the ijson rules but replacing dots with underscores. For each ijson rule, a column is created with the extracted value.
-
-The processor doesn't support ijson rules that lead to an array (containing a ``.item`` in the rule).
-
-.. list-table::
-  :header-rows: 1
-
-  * * Label
-    * Description
-    * Type
-    * Example
-  * * Field
-    * Name of the field that holds the JSON object
-    * Field
-    * data
-  * * ijson rules
-    * ijson rules to apply to extract data from the JSON object above. An ijson rule is built with the names of all the field from the JSON root to the data to extract, separated with a dot.
-    * List
-    * block.metaB
-
-For example, let's assume that you have this json object into a text field :
-
-.. code-block:: json
-
-    { "metaA": "Joe",
-      "bloc" : {
-            "metaB" : "valueB",
-            "int": 5,
-            "boolean": false
-          },
-      "sub" : { "sub_sub" : "sub_value"}
-    }
-
-* you will be able to extract the value ``Joe`` with this rule : ``metaA``
-* you will be able to extract the value ``valueB`` with this rule : ``bloc.metaB``
-* you will be able to extract the value ``5`` with this rule : ``bloc.int``
-* you will be able to extract the value ``sub_value`` with this rule : ``sub.sub_sub``
-* The rule ``bloc`` will extract the json object :
-
-    .. code-block:: json
-
-        {
-            "metaB" : "valueB",
-            "int": 5,
-            "boolean": false
-        }
-
-This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will
-activate it for you.
-
-Expand JSON array
-~~~~~~~~~~~~~~~~~
-
-This processor transposes rows containing a JSON array into several rows with a new column containing each value of the array.
-
-The parameter "ijson rule to array" works exactly like in the "Extract from JSON" processor and should contain the array to transpose (represented with the ijson rule ``.item``).
-
-- If the field contains the JSON array directly, just put ``item`` as an ijson rule.
-- If the final element is an array, the ijson rule must end with ``.item``, meaning that the reached object should be treated as an array of items in the ijson syntax.
-- If you want to keep going into the items inside the array, you can keep adding key names after the ``.item``, but be careful to check that this path is valid for every object in the array.
-
-.. list-table::
-  :header-rows: 1
-
-  * * Label
-    * Description
-    * Type
-    * Example
-  * * json array field
-    * Name of the field that holds the JSON array
-    * Field
-    * data
-  * * ijson rule to array
-    * ijson rule to iterate in the JSON array above. An ijson rule is built with the names of all the field from the JSON root to the data to extract, separated with a dot.
-    * List
-    * block.metaB
-  * * Output field
-    * Name of the field that will contain the extracted element
-    * Field
-    *
-
-Example of ijson rules to extract from the following JSON array field:
-
-.. code-block:: json
-
-    [
-        {
-          "metaB" : "value1",
-          "int": 5,
-          "boolean": false
-        },
-        {
-          "metaB" : "value2",
-          "int": 6,
-          "boolean": true
-        },
-    ]
-
-- ``item`` will transpose the record into two, one with each object of the array in the "Output field" column
-
-.. code-block:: json
-
-    { "metaA": "Joe",
-      "bloc" : [
-            {
-              "metaB" : "value1",
-              "int": 5,
-              "boolean": false,
-              "sub" : { "sub_sub" : "sub_value"}
-            },
-            {
-              "metaB" : "value2",
-              "int": 6,
-              "boolean": true,
-              "sub" : { "sub_sub" : "other_sub_value"}
-            },
-          ]
-    }
-
-- ``bloc.item`` will transpose the record into two, one with each object of the array in the "Output field" column
-- ``bloc.item.sub`` will transpose the record into two, one with each object inside the "sub" tag of each object of the array.
-
-
-This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will activate it for you.
-
-Joining different datasets
---------------------------
-
-This processor allows to you to join two datasets together the same way a classical database join would.
-
-Let's take an example. You have two datasets:
-
-**First dataset**: The list of taxi stations in Paris.
-
-.. list-table::
-   :header-rows: 1
-
-   * * station_id
-     * station_name
-     * station_address
-   * * 1
-     * Tour Eiffel
-     * 69 quai Branly, 75007 Paris
-   * * 2
-     * Rennes - Montparnasse
-     * 1 place du dix huit Juin 1940, 75006 Paris
-
-The name of this dataset is **paris_taxis_stations**.
-
-**Second dataset**: The number of taxis waiting per station in Paris.
-
-.. list-table::
-   :header-rows: 1
-
-   * * station_id
-     * number
-   * * 1
-     * 10
-   * * 2
-     * 15
-
-The Join processor allows you to enrich the second dataset with colums coming from the first dataset.
-
-**Resulting dataset after a Join**
-
-.. list-table::
-   :header-rows: 1
-
-   * * station_id
-     * number
-     * station_name
-     * station_address
-   * * 1
-     * 10
-     * Tour Eiffel
-     * 69 quai Branly, 75007 Paris
-   * * 2
-     * 15
-     * Rennes - Montparnasse
-     * 1 place du dix huit Juin 1940, 75006 Paris
-
-It takes the following parameters:
-
-* **Dataset**
-
-   The dataset used for the join; you can select it from your own datasets,
-   or from OpenDataSoft's network of datasets.
-
-* **Local Key**
-
-   The local field that will be used to identify the corresponding records in the remote dataset. More than one key can
-   be specified.
-
-* **Remote Key**
-
-   The remote field corresponding to the local key. This can be a list.
-
-* **Output Fields**
-
-   The list of fields to retrieve.
-
-* **Retrieve All Fields**
-
-   Set to retrieve all the fields of the remote dataset.
-
-* **Case Sensitive**
-
-* **One line**
-
-   In some specific cases, the remote dataset may contain more than one row matching the local key. In which case, you
-   may want to either collapse duplicates (that is, generate a single row which will contain multi-valued fields) or
-   not. If this parameter is set, you can specify the character to use to separate values in the generated field in
-   the **Separator** parameter.
-
-Let's take an example and assume that the first dataset contains two rows for the first station:
-
-.. list-table::
-   :header-rows: 1
-
-   * * station_id
-     * station_name
-     * station_address
-   * * 1
-     * Tour Eiffel
-     * 69 quai Branly, 75007 Paris
-   * * 1
-     * Quai Branly
-     * 69 quai Branly, 75007 Paris
-   * * 2
-     * Rennes - Montparnasse
-     * 1 place du dix huit Juin 1940, 75006 Paris
-
-If **One line** is set (with **Separator** set to `|`), the Join will result in:
-
-.. list-table::
-   :header-rows: 1
-
-   * * station_id
-     * number
-     * station_name
-     * station_address
-   * * 1
-     * 10
-     * Tour Eiffel&#124;Quai Branly
-     * 69 quai Branly, 75007 Paris&#124;69 quai Branly, 75007 Paris
-   * * 2
-     * 15
-     * Rennes - Montparnasse
-     * 1 place du dix huit Juin 1940, 75006 Paris
-
-If **One line** is not set, the Join will result in:
-
-.. list-table::
-   :header-rows: 1
-
-   * * station_id
-     * number
-     * station_name
-     * station_address
-   * * 1
-     * 10
-     * Tour Eiffel
-     * 69 quai Branly, 75007 Paris
-   * * 1
-     * 10
-     * Quai Branly
-     * 69 quai Branly, 75007 Paris
-   * * 2
-     * 15
-     * Rennes - Montparnasse
-     * 1 place du dix huit Juin 1940, 75006 Paris
-
-This processor is not yet available by default. Please contact OpenDataSoft support team if you plan to use it, we will
-activate it for you.

@@ -32,13 +32,13 @@ Examples
 --------
 Here is an example of a ``GetRecordById`` operation with the optional ``outputSchema`` parameter, using a ``GET`` HTTP method :
 
-.. code-block:: http
+.. code-block:: text
 
     GET http://public.opendatasoft.com/api/csw?service=CSW&request=GetRecordById&outputschema=http://www.isotc211.org/2005/gmd&id=arrondissement_od
 
 And the same request using a ``POST`` HTTP method :
 
-.. code-block:: http
+.. code-block:: text
 
     POST http://public.opendatasoft.com/api/csw
 

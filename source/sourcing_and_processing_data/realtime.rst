@@ -1,7 +1,11 @@
 Keeping data up to date
 =======================
 
-Some data is not subject to a lot of change, and only needs to be shared once, but in many cases, this is not enough. Some data quickly become obsolete, and need to be updated regularly to accurately represent reality. In order to address these ephemeral, always-evolving data, the OpenDataSoft platform offers two separate mechanisms. The first one is called scheduling and consists of having a dataset being automatically republished at fixed intervals. This mode is most useful for datasets with a remote resource which is regularly updated. The second mechanism for publishing real time data is using a realtime dataset, that is fed by an API. This mode is most useful when the data can be sent directly by the system that produces the data points, such as a computer program sending event metrics or a set of sensors sending their readings.
+The OpenDataSoft platform makes it possible, in the very same data catalog, to handle completely static datasets (which need to be published only once) and live datasets (which need to be regularly updated). Two different mechanisms are made available to handle datasets refresh.
+
+The first one is called **scheduling** and consists in having a dataset being automatically republished at fixed intervals. This mode is most useful for datasets with a remote resource which is regularly updated.
+
+The second one consists in pushing data on the OpenDataSoft platform using a dedicated API end point. This mode is most useful when the data can be sent directly by the system that produces the data points, such as a computer program sending event metrics or a set of sensors sending their readings.
 
 Using scheduling to keep a dataset up to date
 ---------------------------------------------
@@ -28,7 +32,10 @@ Once a dataset is saved with a remote resource, the scheduling tab is activated.
 Pushing real time data
 ----------------------
 
-For some types of data, it can be useful to push data instead of the more traditional model of having the data being pulled from a resource by the platform. To address this need, the OpenDataSoft platform offers a realtime push API. It is not to be confused with the ability to schedule a dataset processing. When scheduling, the dataset will periodically pull the resource and process the data that is inside of it, whereas with the push API, the dataset is fed by an application through a push API and records are processed one by one as soon as they are received. As this feature is still in beta, it is not activated by default. Please contact OpenDataSoft's support to try it out.
+For some types of data, it can be useful to push data instead of the more traditional model of having the data being pulled from a resource by the platform. To address this need, the OpenDataSoft platform offers a realtime push API. It is not to be confused with the ability to schedule a dataset processing. When scheduling, the dataset will periodically pull the resource and process the data that is inside of it, whereas with the push API, the dataset is fed by an application through a push API and records are processed one by one as soon as they are received.
+
+.. note::
+   As this feature is still in beta, it is not activated by default. Please contact OpenDataSoft's support to try it out.
 
 Configuring the dataset schema
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -55,17 +62,17 @@ Once your dataset is saved with the correct realtime resource settings, a URL pa
 .. image:: realtime__record--en.png
     :alt: table view with a single record with value "Hello World!" in the "message" field
 
-A mimimal example of the api usage for a dataset with a single field named "message", using curl, would be 
+A mimimal example of the api usage for a dataset with a single field named "message", using curl, would be
 
 .. code-block:: bash
 
-    curl -XPOST <DOMAIN_URL>/api/push/1.0/realtime-dataset/<DATASET>/push/?pushkey=<PUSH_API_KEY> -d'{"message":"Hello World!"}'
+    curl -XPOST <DOMAIN_URL>/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/push/?pushkey=<PUSH_API_KEY> -d'{"message":"Hello World!"}'
 
-A minimal example with the same dataset, using the array form to send multiple records at once would be 
+A minimal example with the same dataset, using the array form to send multiple records at once would be
 
 .. code-block:: bash
 
-    curl -XPOST <DOMAIN_URL>/api/push/1.0/realtime-dataset/<DATASET>/push/?pushkey=<PUSH_API_KEY> -d'[{"message":"¡Hola Mundo!"},{"message":"Hallo Welt!"}]`
+    curl -XPOST <DOMAIN_URL>/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/push/?pushkey=<PUSH_API_KEY> -d'[{"message":"¡Hola Mundo!"},{"message":"Hallo Welt!"}]'
 
 If the records have been received correctly, the server will respond the following message.
 
@@ -75,7 +82,7 @@ If the records have been received correctly, the server will respond the followi
         "status": "OK"
     }
 
-If an error happened while trying to push a record, the response will specify the error. 
+If an error happened while trying to push a record, the response will specify the error.
 
 Pushing a field of type file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -103,7 +110,7 @@ Sometimes it is useful to update the existing records instead of just pushing ne
 .. image:: realtime__unique_id--en.png
     :alt: unique ID option in the field dropdown
 
-In order to set up such a system with the OpenDataSoft platform, the fields that will be used as a unique key must be marked as so. In our example, the unique key would be isbn, because the rest of the data is linked to individual books, and these books are identified by the ISBN. This can be done in the processing view, in the menu that pops when the cog button is pressed. It is possible to set multiple fields as unique keys. Then, after saving and publishing, if a new record whose key value is equal to an existing record is pushed, the new record will overwrite the old record. In our library case, if your dataset has ``isbn`` as the unique key, and contains these two records.
+In order to set up such a system with the OpenDataSoft platform, the fields that will be used as a unique key must be marked as so. In our example, the unique key would be isbn, because the rest of the data is linked to individual books, and these books are identified by the ISBN. This can be done in the processing view, in the menu that pops when the configuration button is pressed. It is possible to set multiple fields as unique keys. Then, after saving and publishing, if a new record whose key value is equal to an existing record is pushed, the new record will overwrite the old record. In our library case, if your dataset has ``isbn`` as the unique key, and contains these two records.
 
 .. code-block:: json
 
@@ -117,7 +124,7 @@ In order to set up such a system with the OpenDataSoft platform, the fields that
         }
     ]
 
-If somebody burrows a copy of Zen and the Art of Motorcycle Maintenance, and you push the following record, you will still have two records, the first one being updated with the new value.
+If somebody borrows a copy of Zen and the Art of Motorcycle Maintenance, and you push the following record, you will still have two records, the first one being updated with the new value.
 
 .. code-block:: json
 
@@ -138,11 +145,11 @@ There are two entrypoints that allow for deleting a pushed records. One that use
 Using the record values
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-To delete a record knowing the record fields values, POST the record as if you were adding it for the first time, but replace ``/push/`` with ``/delete/`` in the push URL. If your push URL path is ``/api/push/1.0/realtime-dataset/<DATASET>/push/?pushkey=<PUSH_API_KEY>``, then use instead ``/api/push/1.0/realtime-dataset/<DATASET>/push/delete/?pushkey=<PUSH_API_KEY>``. A minimal example to delete the record we pushed earlier follows.
+To delete a record knowing the record fields values, POST the record as if you were adding it for the first time, but replace ``/push/`` with ``/delete/`` in the push URL. If your push URL path is ``/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/push/?pushkey=<PUSH_API_KEY>``, then use instead ``/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/delete/?pushkey=<PUSH_API_KEY>``. A minimal example to delete the record we pushed earlier follows.
 
 .. code-block:: bash
 
-    curl -XPOST <DOMAIN_URL>/api/push/1.0/realtime-dataset/<DATASET>/delete/?pushkey=<PUSH_API_KEY> -d'{"message":"Hello World!"}'
+    curl -XPOST <DOMAIN_URL>/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/delete/?pushkey=<PUSH_API_KEY> -d'{"message":"Hello World!"}'
 
 Using the record values
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -151,7 +158,7 @@ If you know the record ID of the record you want to delete, simply make a GET re
 
 .. code-block:: bash
 
-    curl -XGET <DOMAIN_URL>/api/push/1.0/realtime-dataset/<DATASET>/<RECORD_ID>/delete/?pushkey=<PUSH_API_KEY>
+    curl -XGET <DOMAIN_URL>/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/<RECORD_ID>/delete/?pushkey=<PUSH_API_KEY>
 
 Get notified in case of inactivity
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -159,7 +166,7 @@ Get notified in case of inactivity
 .. image:: realtime__alerting--en.png
     :alt: inactivity alerting settings in RT resource view
 
-If you expect a system to push data to the platform often, you may want to be notified if no record has been received by the platform in a while. In order to get notified, you can enable the "Alerting" option in the source configuration, and setup a time threshold in minutes. If a time span greater than the threshold has occured during which no record has been received, you will receive an email. 
+If you expect a system to push data to the platform often, you may want to be notified if no record has been received by the platform in a while. In order to get notified, you can enable the "Alerting" option in the source configuration, and setup a time threshold in minutes. If a time span greater than the threshold has occured during which no record has been received, you will receive an email.
 
 Unpublishing and disabling the api
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

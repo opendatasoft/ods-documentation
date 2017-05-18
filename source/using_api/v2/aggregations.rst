@@ -32,7 +32,7 @@ to a criteria:
 
 All of the following would be summed up in the following request.
 
-.. code-block:: json
+.. code-block:: js
 
     {
         "virtual_fields": {
@@ -47,7 +47,7 @@ All of the following would be summed up in the following request.
                     "total_sales_count": "SUM(sales_count)",
                     "total_sales_amount": "SUM(sales_amount)",
                     "overall_average_sale_price": "AVG(daily_avg_sale_price)",
-                    "real_average_sale_price": "SUM(sales_amount) / SUM(sales_count)""
+                    "real_average_sale_price": "SUM(sales_amount) / SUM(sales_count)"
                 }
             }
         }
@@ -55,7 +55,7 @@ All of the following would be summed up in the following request.
 
 Which would then generate the following response
 
-.. code-block:: json
+.. code-block:: js
 
     {
         "links": [ // HATEOAS navigation links
@@ -99,7 +99,7 @@ These functions accept as argument a field name or a virtual field and perform a
 Example: still using the dataset described at the beginning, let's assume we want to 'cook the books' and report a
 little less sales each day and pocket the difference at the end of the year.
 
-.. code-block:: json
+.. code-block:: js
 
     {
         "virtual_fields": {
@@ -112,7 +112,7 @@ little less sales each day and pocket the difference at the end of the year.
                 ],
                 "aggregates": {
                     "total_sales_amount": "SUM(sales_amount)",
-                    "reported_total_sales_amount": "SUM(reported_sales_amount)""
+                    "reported_total_sales_amount": "SUM(reported_sales_amount)"
                 }
             }
         }
@@ -195,30 +195,32 @@ Used to split ``aggregates`` results by field values.
 The result will be sorted, depending of group_by field values.
 For instance ``group_by[store_country, store_name]`` will return :
 
-.. code-block:: json
+.. code-block:: js
 
-    ...
-    {
-        "store_country": "France",
-        "store_name": "Celio",
-        ...
-    },
-    {
-        "store_country": "France",
-        "store_name": "Naf-Naf",
-        ...
-    },
-    {
-        "store_country": "USA",
-        "store_name": "Nike",
-        ...
-    },
-    {
-        "store_country": "USA",
-        "store_name": "Reebok",
-        ...
-    }
-    ...
+    [
+        // ...
+        {
+            "store_country": "France",
+            "store_name": "Celio",
+            // ...
+        },
+        {
+            "store_country": "France",
+            "store_name": "Naf-Naf",
+            // ...
+        },
+        {
+            "store_country": "USA",
+            "store_name": "Nike",
+            // ...
+        },
+        {
+            "store_country": "USA",
+            "store_name": "Reebok",
+            // ...
+        },
+        // ...
+    ]
 
 A group_by name needs to be set for complex group_by expression (date or range).
 A valid name is composed of lower chars [a-z] and digit [0-9] and ``_``.
@@ -226,12 +228,14 @@ The group_by expression becomes a dict containing aggregation name and aggregati
 
 Example:
 
-.. code-block:: json
+.. code-block:: js
 
-    "group_by" = [{
-        "name": "year",
-        "expr": "format_date(my_date_field, 'YYYY')"
-    }]
+    {
+        "group_by" = [{
+            "name": "year",
+            "expr": "format_date(my_date_field, 'YYYY')"
+        }]
+    }
 
 Simple field
 ~~~~~~~~~~~~
@@ -339,7 +343,7 @@ Date functions
 
 A full example:
 
-.. code-block:: json
+.. code-block:: js
 
     {
         "aggregations": {

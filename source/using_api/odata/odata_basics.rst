@@ -9,8 +9,8 @@ General points
 Service address
 ~~~~~~~~~~~~~~~
 
-In this article, we will use the words "service root" or "service document" to refer to the base address of the OData 
-service. For the OpenDataSoft platform, this URL can be found on the ``/api/odata`` path, relative to the platform 
+In this article, we will use the words "service root" or "service document" to refer to the base address of the OData
+service. For the OpenDataSoft platform, this URL can be found on the ``/api/odata`` path, relative to the platform
 hostname. Unless stated otherwise, all addresses in the rest of this article are relative to the service root.
 
 HTTP Method
@@ -21,8 +21,8 @@ The OpenDataSoft OData service currently is read only, hence the only allowed me
 Versions
 --------
 
-The OpenDataSoft platform supports versions 3.0 and 4.0 of the OData protocol. Versions requirements can be 
-communicated to the service via the following six headers: 
+The OpenDataSoft platform supports versions 3.0 and 4.0 of the OData protocol. Versions requirements can be
+communicated to the service via the following six headers:
 
 * OData-Version
 
@@ -48,14 +48,14 @@ communicated to the service via the following six headers:
 
     * This header specifies the maximum version the service should use.
 
-From the next paragraph on, in order to keep things simple and relevant, all examples will illustrate protocol version 
-4.0. Keep in mind however that all described features work in both supported version. If version 3.0 use a specific 
-syntax or needs special attention, it shall be described. 
+From the next paragraph on, in order to keep things simple and relevant, all examples will illustrate protocol version
+4.0. Keep in mind however that all described features work in both supported version. If version 3.0 use a specific
+syntax or needs special attention, it shall be described.
 
 Metadata
 --------
 
-The metadata document is located on ``/$metadata``. This documents determines the complex types used by the service, then 
+The metadata document is located on ``/$metadata``. This documents determines the complex types used by the service, then
 the entity types found on the platform, the entity sets offered, and finally a set of annotation about the entity sets.
 
 
@@ -122,15 +122,15 @@ GET |url1|_
 Formats
 -------
 
-The service supports ATOM and JSON formats. For the JSON formats, the "minimal" and "full" metadata levels are 
-supported. Any request for a metadata level of "none" will be responded to with the "minimal" metadata level, as per 
+The service supports ATOM and JSON formats. For the JSON formats, the "minimal" and "full" metadata levels are
+supported. Any request for a metadata level of "none" will be responded to with the "minimal" metadata level, as per
 the standard.
 
 There are two main ways of requesting a specific format: in the ``Accept`` header and in the ``$format`` REST parameter.
 
 The format parameter, be it in the headers or in the query string, can be either the abbreviations JSON, XML or ATOM, or
-the exact MIME type requested. For the JSON format, different metadata levels can be requested by using the full MIME 
-type followed by ``;odata.metadata=<LEVEL>`` for protocol version 4.0 and ``;odata=<LEVEL>metadata`` for protocol 
+the exact MIME type requested. For the JSON format, different metadata levels can be requested by using the full MIME
+type followed by ``;odata.metadata=<LEVEL>`` for protocol version 4.0 and ``;odata=<LEVEL>metadata`` for protocol
 version 3.0.
 
 GET |url2|_
@@ -159,7 +159,7 @@ GET |url3|_
         <m:message>Resource not found for the segment 'error'</m:message>
     </m:error>
 
-To keep things simple, the rest of this article will feature examples with the JSON format, which is the default, but 
+To keep things simple, the rest of this article will feature examples with the JSON format, which is the default, but
 keep in mind that everything will work the same in the ATOM format.
 
 Catalog
@@ -172,7 +172,7 @@ GET |url4|_
 .. |url4| replace:: ``/?$format=json``
 .. _url4: http://public.opendatasoft.com/api/odata/?$format=json
 
-.. code-block:: json
+.. code-block:: js
 
     {
         "@odata.context": "https://public.opendatasoft.com/api/odata/$metadata",
@@ -188,14 +188,15 @@ GET |url4|_
             {
                 "name": "nyc-parking-spots",
                 "url": "nyc-parking-spots"
-            }, ...
+            },
+            /* ... */
         ]
     }
 
 Datasets
 --------
 
-The records of a dataset can be browsed on the ``/<DATASET ID>`` page. It is easy to navigate from the service root 
+The records of a dataset can be browsed on the ``/<DATASET ID>`` page. It is easy to navigate from the service root
 document to a dataset by following the URL attribute of the catalog items.
 
 GET |url5|_
@@ -203,7 +204,7 @@ GET |url5|_
 .. |url5| replace:: ``/baby_names_nc_2013``
 .. _url5: http://public.opendatasoft.com/api/odata/baby_names_nc_2013
 
-.. code-block:: json
+.. code-block:: js
 
     {
         "@odata.context": "https://public.opendatasoft.com/api/odata/$metadata#baby_names_nc_2013",
@@ -231,15 +232,16 @@ GET |url5|_
                 "number": 263,
                 "name": "Natalie",
                 "year": "2013"
-            }, ...
+            },
+            /* ... */
         ]
     }
 
 Paging
 ------
 
-Client-driven paging can be requested with the ``$top`` REST parameter to limit the size of the response, and the 
-``$skip`` REST parameter to define the first result to display. The server will ignore `$skip` results and then return 
+Client-driven paging can be requested with the ``$top`` REST parameter to limit the size of the response, and the
+``$skip`` REST parameter to define the first result to display. The server will ignore `$skip` results and then return
 the first ``$top`` items. When paging is applied, a link to the next results will be added at the end of the payload.
 
 GET |url6|_
@@ -248,7 +250,7 @@ GET |url6|_
 .. _url6: http://public.opendatasoft.com/api/odata/baby_names_nc_2013?$top=2
 
 .. code-block:: json
-        
+
     {
         "@odata.context": "https://public.opendatasoft.com/api/odata/$metadata#baby_names_nc_2013",
         "value": [
@@ -302,8 +304,8 @@ GET |url7|_
         "@odata.nextLink": "https://public.opendatasoft.com/api/odata/baby_names_nc_2013?$skiptoken=3"
     }
 
-Recherche
----------
+Search
+------
 
 The ``$search`` parameter can be used to search data.
 
@@ -356,9 +358,9 @@ GET |url8|_
 Restriction
 -----------
 
-The ``$filter`` parameter can be used to apply a restriction on results. Supported restriction operators are ``eq`` and 
-``ne`` for equality and inequality, ``lt`` and ``gt`` for strict inequalities and ``le`` and ``ge`` for non strict 
-inequalities. Multiple restriction expessions can be combined into bigger expressions with the logical operators 
+The ``$filter`` parameter can be used to apply a restriction on results. Supported restriction operators are ``eq`` and
+``ne`` for equality and inequality, ``lt`` and ``gt`` for strict inequalities and ``le`` and ``ge`` for non strict
+inequalities. Multiple restriction expessions can be combined into bigger expressions with the logical operators
 ``and`` and ``or``. Expression can be negated with the ``not`` operator.
 
 GET |url9|_
@@ -414,11 +416,11 @@ GET |url10|_
 Count
 -----
 
-There are two ways of obtaining the number of records in a dataset. The first way is to use the ``$count`` REST 
-parameter (``$inlinecount`` for protocol version 3.0). The other way is to navigate to the count document for a 
-resource. This is achieved by querying ``/<DATASET ID>/$count``. These two methods have slightly different semantics: 
-the first one returns the count relative to the payload, taking all operations into account, except for paging and is 
-returned along with the payload, while the second one returns the absolute resource count, irrespective of anything 
+There are two ways of obtaining the number of records in a dataset. The first way is to use the ``$count`` REST
+parameter (``$inlinecount`` for protocol version 3.0). The other way is to navigate to the count document for a
+resource. This is achieved by querying ``/<DATASET ID>/$count``. These two methods have slightly different semantics:
+the first one returns the count relative to the payload, taking all operations into account, except for paging and is
+returned along with the payload, while the second one returns the absolute resource count, irrespective of anything
 other than the number of records present on the server and only returns the number, without any other information.
 
 
@@ -455,7 +457,7 @@ GET |url12|_
 Sort
 ----
 
-Results returned by the service can be sorted by a field using the ``$orderby`` parameter. The field name can be 
+Results returned by the service can be sorted by a field using the ``$orderby`` parameter. The field name can be
 followed by the ``asc`` and ``desc`` keywords to specify the sort order (default is ascendant).
 
 
@@ -574,8 +576,8 @@ GET |url15|_
 Projection
 ----------
 
-Results can be projected over specific fields using the `$select` parameter. For multiple fields to be subject of the 
-projection, their names must be separated by a comma and an optional space. This parameter can be used with datasets 
+Results can be projected over specific fields using the `$select` parameter. For multiple fields to be subject of the
+projection, their names must be separated by a comma and an optional space. This parameter can be used with datasets
 and specific records.
 
 GET |url16|_

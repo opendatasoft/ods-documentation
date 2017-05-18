@@ -15,7 +15,7 @@ anonymous users cannot spam the administrators.
      :alt: Formulaire de contact
 
 .. list-table::
-     :header-rows: 1
+   :header-rows: 1
 
    * * Parameter
      * Type
