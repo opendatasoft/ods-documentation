@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-03 16:17+0200\n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Datawords_trad_1 <datawords.translator.it1@gmail.com>, 2017\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
@@ -24,11 +24,19 @@ msgstr "Introduzione"
 
 #: ../../source/using_api/v2/introduction.rst:6
 msgid ""
-"This API is currently in BETA. Important changes can be made until the final"
-" release. Don't hesitate to report any problem you encounter when using it."
+"This API is currently in BETA and important changes can be made until finale"
+" release."
 msgstr ""
+"Attualmente, questa API è disponibile in versione BETA ed è possibile che "
+"prima della versione finale vengano apportate modifiche rilevanti."
 
-#: ../../source/using_api/v2/introduction.rst:12
+#: ../../source/using_api/v2/introduction.rst:8
+msgid "Don't hesitate to report any problem you encounter when using it."
+msgstr ""
+"Nel caso riscontrassi qualsiasi problema durante il suo utilizzo, ti "
+"preghiamo di segnalarcelo."
+
+#: ../../source/using_api/v2/introduction.rst:13
 msgid ""
 "If you are already familiar with the structure of the data within the "
 "platform and are a seasoned developer or data scientist, you may want to "
@@ -42,7 +50,7 @@ msgstr ""
 "e/o la `definizione Swagger API "
 "<https://data.opendatasoft.com/api/v2/swagger.json>`_."
 
-#: ../../source/using_api/v2/introduction.rst:16
+#: ../../source/using_api/v2/introduction.rst:17
 msgid ""
 "Both these links point to OpenDataSoft's central repository of open data but"
 " if you have a portal, you can access the same page at "
@@ -52,7 +60,7 @@ msgstr ""
 "OpenDataSoft, ma se disponi di un portale puoi accedere alla stessa pagina "
 "all'indirizzo ``http://<iltuoportaleopendatasoft>/api/``."
 
-#: ../../source/using_api/v2/introduction.rst:19
+#: ../../source/using_api/v2/introduction.rst:20
 msgid ""
 "In the following section, we'll assume that you know what HTTP verbs "
 "(``GET``, ``POST``, ``PUT``...) are and that you are familiar with HTTP-"
@@ -69,7 +77,7 @@ msgstr ""
 "conosci, ti preghiamo di consultare il :doc:`glossario "
 "</platform_glossary>`."
 
-#: ../../source/using_api/v2/introduction.rst:24
+#: ../../source/using_api/v2/introduction.rst:25
 msgid ""
 "OpenDataSoft's API V2 is a full-REST, HATEOAS-enabled, JSON-first API "
 "designed to provide access in a coherent, hierarchical way to all the data "
@@ -79,55 +87,34 @@ msgstr ""
 "accedere in modo coerente e gerarchico a tutti i dati disponibili sulla "
 "piattaforma."
 
-#: ../../source/using_api/v2/introduction.rst:27
-msgid "This means that:"
-msgstr ""
-
-#: ../../source/using_api/v2/introduction.rst:29
-msgid "all API endpoints will return JSON data unless required otherwise,"
-msgstr ""
-
-#: ../../source/using_api/v2/introduction.rst:30
+#: ../../source/using_api/v2/introduction.rst:28
 msgid ""
-"endpoints are organized in a hierarchical way describing the relative "
-"relationship between objects,"
+"This means that all API endpoints will return JSON data unless required "
+"otherwise, that endpoints are organized in a hierarchical way describing the"
+" relative relationship between objects and that all responses will contain a"
+" list of links allowing for easy and relevant navigation through the API "
+"endpoints."
 msgstr ""
+"Tutti gli endpoint dell'API restituiscono infatti dati JSON (a meno che non "
+"venga richiesto diversamente) e la loro struttura gerarchica rispecchia le "
+"relazioni tra gli oggetti. Inoltre, ogni risposta contiene un elenco di "
+"link, che consentono di navigare facilmente e in modo pertinente tra gli "
+"endpoint API."
 
-#: ../../source/using_api/v2/introduction.rst:31
+#: ../../source/using_api/v2/introduction.rst:32
 msgid ""
-"all responses will contain a list of links allowing easy and relevant "
-"navigation through the API endpoints."
+"For example, a ``GET /api/v2/catalog/datasets`` will return a collection of "
+"datasets as such (the ``...`` stand for ellipsis):"
 msgstr ""
+"Ad esempio, ``GET /api/v2/catalog/datasets`` restituirà una raccolta di "
+"dataset di questo tipo (``...`` valgono come puntini di sospensione):"
 
-#: ../../source/using_api/v2/introduction.rst:33
-msgid "**Example 1:**"
-msgstr ""
-
-#: ../../source/using_api/v2/introduction.rst:35
-#: ../../source/using_api/v2/introduction.rst:83
-msgid "Request:"
-msgstr ""
-
-#: ../../source/using_api/v2/introduction.rst:37
-msgid "``GET /api/v2/catalog/datasets``"
-msgstr ""
-
-#: ../../source/using_api/v2/introduction.rst:39
-#: ../../source/using_api/v2/introduction.rst:88
-msgid "Response:"
-msgstr ""
-
-#: ../../source/using_api/v2/introduction.rst:41
-msgid "A collection of datasets (below, the ``...`` stand for ellipsis)."
-msgstr ""
-
-#: ../../source/using_api/v2/introduction.rst:81
-msgid "**Example 2:**"
-msgstr ""
-
-#: ../../source/using_api/v2/introduction.rst:85
+#: ../../source/using_api/v2/introduction.rst:73
 msgid ""
-"``GET /api/v2/catalog/datasets/las-vegas-crime-data@codeforvegas`` (the link"
-" provided as \"self\" in the first dataset returned in the collection of the"
-" previous call)"
+"While a ``GET /api/v2/catalog/datasets/las-vegas-crime-data@codeforvegas`` "
+"(the link provided as \"self\" in the first dataset returned in the "
+"collection of the previous call) will return:"
 msgstr ""
+"Invece ``GET /api/v2/catalog/datasets/las-vegas-crime-data@codeforvegas`` "
+"(il link fornito come \"self\" nel primo dataset restituito dalla chiamata "
+"precedente) darà il seguente risultato:"

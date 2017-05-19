@@ -1,0 +1,735 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-12 18:30+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: traducteur_DE2 <datawords.translator.de2@gmail.com>, 2017\n"
+"Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/using_api/v2/aggregations.rst:2
+msgid "Aggregations"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:4
+msgid ""
+"To illustrate the general concept of the aggregation API, we'll consider a "
+"dataset describing daily sales for a number of stores worldwide, that is "
+"with the following fields:"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:7
+msgid "store_name (string)"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:8
+msgid "store_address (string)"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:9
+msgid "store_country (string)"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:10
+msgid "store_coordinates (geo coordinates)"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:11
+msgid "sales_date (date)"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:12
+msgid "sales_count (integer)"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:13
+msgid "sales_amount (decimal)"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:15
+msgid ""
+"The aggregate API allows the creation of virtual fields, limited to the "
+"request and that can be used in aggregates."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:17
+msgid "> Example: The daily average sale price for each store."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:19
+msgid ""
+"The main function of the API is to group dataset records by a finite number "
+"of fields and to return aggregated values for other fields."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:22
+msgid ""
+"> Example: the total sales count per country, the total sales amount and the"
+" average of daily average sale price."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:24
+msgid "It also allows for more complex aggregations."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:26
+msgid ""
+"> Example: the average price sale per country during the year: total sales "
+"amount / total sales count."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:28
+msgid ""
+"You can also join to each group a finite list of fetched values, that is "
+"values extracted from the group rows according to a criteria:"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:31
+msgid ""
+"> Example: the best performing month (ie month with the most sales_amount) "
+"for each country."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:33
+msgid "All of the following would be summed up in the following request."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:56
+msgid "Which would then generate the following response"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:92
+msgid "See the API console for the full reference on the request's syntax."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:95
+msgid "Aggregate functions"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:97
+msgid ""
+"These functions accept as argument a field name or a virtual field and "
+"perform an aggregation function on its values. l"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:99
+msgid ""
+"Example: still using the dataset described at the beginning, let's assume we"
+" want to 'cook the books' and report a little less sales each day and pocket"
+" the difference at the end of the year."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:122
+msgid "``MAX(field)``"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:124
+#: ../../source/using_api/v2/aggregations.rst:130
+#: ../../source/using_api/v2/aggregations.rst:136
+#: ../../source/using_api/v2/aggregations.rst:142
+#: ../../source/using_api/v2/aggregations.rst:150
+#: ../../source/using_api/v2/aggregations.rst:156
+msgid "Arguments :"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:126
+#: ../../source/using_api/v2/aggregations.rst:132
+#: ../../source/using_api/v2/aggregations.rst:138
+#: ../../source/using_api/v2/aggregations.rst:144
+#: ../../source/using_api/v2/aggregations.rst:152
+#: ../../source/using_api/v2/aggregations.rst:164
+msgid "``field`` a decimal/integer field"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:128
+msgid "``MIN(field)``"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:134
+msgid "``SUM(field)``"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:140
+msgid "``AVG(field)``"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:146
+msgid "``COUNT()``"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:148
+msgid "``STDDEV(field)`` standard deviation"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:154
+msgid "``SUMSQUARES(field)`` sum of the squares"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:158
+msgid "```field`` a decimal/integer field"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:160
+msgid ""
+"``PERCENTILES(field, percents)`` a map of the  percentiles values (indexed "
+"by percent) within the current group."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:162
+#: ../../source/using_api/v2/aggregations.rst:295
+#: ../../source/using_api/v2/aggregations.rst:382
+#: ../../source/using_api/v2/aggregations.rst:435
+msgid "Arguments:"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:165
+msgid ""
+"``percents`` a list of percentages for which we want a percentile value. Can"
+" accept both integer and decimal percentages (ie both 99 and 99.9)"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:167
+msgid "Examples:"
+msgstr "Beispiele:"
+
+#: ../../source/using_api/v2/aggregations.rst:169
+msgid ""
+"``PERCENTILES(my_decimal_field)`` -> ``{0: XX, 1: XY, ..., 99: YZ, 100: "
+"ZZ}``"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:170
+msgid ""
+"``PERCENTILES(my_decimal_field, [0, 50, 90, 99, 99.9])`` -> ``{0: XX, 50: "
+"XY, 90: YY, 99: YZ, 99.9: ZZ}``"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:173
+msgid "Incremental functions for aggregates"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:176
+msgid ""
+"All of the above functions are also available in an ``INCREMENTAL`` version."
+" That is the result of the computation for the current group is added to the"
+" result of the previous group and returned. ` In mathematical terms:"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:181
+msgid "f_n is the result of the aggregation function for group i"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:182
+msgid "g_n is the result of the incremental aggregation function for group i"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:183
+msgid "g_n = sum of f_i for all values of i between 0 and n"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:185
+msgid "Incremental function is:"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:187
+msgid "``INCREMENTAL``. For example: ``INCREMENTAL(SUM(fiel))``"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:191
+msgid "Group by functions"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:193
+msgid ""
+"Used to split ``aggregates`` results by field values. ``group_by`` attribute"
+" takes a list of group_by expressions. The result will be sorted, depending "
+"of group_by field values. For instance ``group_by[store_country, "
+"store_name]`` will return :"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:225
+msgid ""
+"A group_by name needs to be set for complex group_by expression (date or "
+"range). A valid name is composed of lower chars [a-z] and digit [0-9] and "
+"``_``. The group_by expression becomes a dict containing aggregation name "
+"and aggregation expression:"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:229
+#: ../../source/using_api/v2/aggregations.rst:300
+msgid "Example:"
+msgstr "Beispiel:"
+
+#: ../../source/using_api/v2/aggregations.rst:241
+msgid "Simple field"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:243
+msgid ""
+"Group by all field values. For instance ``group_by:[field_name]`` group by "
+"``aggregates`` functions by every values of ``field_name`` field."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:291
+msgid "Date functions"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:293
+msgid "``date(myfield, format)`` Format a date object"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:297
+msgid "``myfield`` a date/datetime field"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:298
+msgid "``format`` a string (see below for accepted values)"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:302
+msgid "format_date(myfield, 'yyyy-MM-dd HH:mm:ss')"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:304
+msgid "Format options:"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:306
+msgid ""
+"The ``date`` method is a wrapper for http://joda-"
+"time.sourceforge.net/apidocs/org/joda/time/format/DateTimeFormat.html and "
+"therefore accepts the same inputs."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:308
+msgid "*G* era (text) example: AD"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:309
+msgid "*C* century of era (>=0) (number) example: 20"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:310
+msgid "*Y* year of era (>=0) (year) example: 1996"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:311
+msgid "*x* weekyear (year) example: 1996"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:312
+msgid "*w* week of weekyear (number) example: 27"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:313
+msgid "*e* day of week (number) example: 2"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:314
+msgid "*E* day of week (text) example: Tuesday; Tue"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:315
+msgid "*y* year (year) example: 1996"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:316
+msgid "*D* day of year (number) example: 189"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:317
+msgid "*M* month of year (month) example: July; Jul; 07"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:318
+msgid "*d* day of month (number) example: 10"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:319
+msgid "*a* halfday of day (text) example: PM"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:320
+msgid "*K* hour of halfday (0~11) (number) example: 0"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:321
+msgid "*h* clockhour of halfday (1~12) (number) example: 12"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:322
+msgid "*H* hour of day (0~23) (number) example: 0"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:323
+msgid "*k* clockhour of day (1~24) (number) example: 24"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:324
+msgid "*m* minute of hour (number) example: 30"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:325
+msgid "*s* second of minute (number) example: 55"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:326
+msgid "*S* fraction of second (number) example: 978"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:327
+msgid "*z* time zone (text) example: Pacific Standard Time; PST"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:328
+msgid ""
+"*Z* time zone offset/id (zone) example: -0800; -08:00; America/Los_Angeles"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:329
+msgid "*'* escape for text (delimiter)"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:330
+msgid "*''* single quote (literal) example: '"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:332
+msgid "The count of pattern letters determine the format."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:334
+msgid ""
+"*Text* If the number of pattern letters is 4 or more, the full form is used;"
+" otherwise a short or abbreviated form is used if available."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:335
+msgid ""
+"*Number* The minimum number of digits. Shorter numbers are zero-padded to "
+"this amount."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:336
+msgid ""
+"*Year* Numeric presentation for year and weekyear fields are handled "
+"specially. For example, if the count of 'y' is 2, the year will be displayed"
+" as the zero-based year of the century, which is two digits."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:337
+msgid "*Month* 3 or over, use text, otherwise use number."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:338
+msgid ""
+"*Zone* 'Z' outputs offset without a colon, 'ZZ' outputs the offset with a "
+"colon, 'ZZZ' or more outputs the zone id."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:339
+msgid "*Zone names* Time zone names ('z') cannot be parsed."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:341
+msgid ""
+"Any characters in the pattern that are not in the ranges of ['a'..'z'] and "
+"['A'..'Z'] will be treated as quoted text. For instance, characters like "
+"':', '.', ' ', '#' and '?' will appear in the resulting time text even they "
+"are not embraced within single quotes."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:344
+msgid "A full example:"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:365
+msgid "Range functions"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:367
+msgid ""
+"The following functions all perform discretization functions on the "
+"dataset's values."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:369
+msgid "In all of them, ``myfield`` is an integer or decimal field."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:371
+msgid ""
+"``range(myfield, equi(num_ranges, lowest_boundary, highest_boundary))``"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:373
+msgid ""
+"Divides the [lowest_boundary, highest_boundary] global value interval in "
+"num_ranges equally wide sub ranges."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:375
+msgid ""
+"If lowest_boundary (resp. highest_boundary) is not set, then the "
+"lowest_boundary (resp. highest_boundary) of the global interval  will be the"
+"  minimum (resp. maximum) value of the dataset."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:378
+msgid ""
+"If lowest_boundary (resp. highest_boundary) is higher (resp. lower) than the"
+" mininum (resp. maximum) value of the dataset, an additional sub range "
+"[min_value; lowest_boundary[ (resp. [highest_boundary; max_value]) will be "
+"added to the num_ranges sub-ranges."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:384
+#: ../../source/using_api/v2/aggregations.rst:437
+msgid "``myfield`` **required** a decimal field"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:385
+msgid "``num_ranges`` **required** number of ranges to create from the values"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:386
+msgid ""
+"``lowest_boundary`` **optional** lowest boundary of the num_ranges ranges"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:387
+msgid ""
+"``highest_boundary`` **optional** highest boundary of the num_ranges ranges"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:389
+#: ../../source/using_api/v2/aggregations.rst:440
+msgid "Example: myfield values are [ -5, -2, -1, 0, 3, 4, 5, 120]"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:392
+msgid "``range(myfield, equi(5))`` will create the subranges"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:394
+msgid "[-5; 20[``"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:395
+msgid "[20; 45["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:396
+msgid "[45; 70["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:397
+msgid "[70; 95["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:398
+msgid "[95; 120]"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:400
+msgid ""
+"``range(myfield, equi(5, lowest_boundary=0))`` will create the subranges"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:402
+#: ../../source/using_api/v2/aggregations.rst:420
+msgid "[-5; 0["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:403
+msgid "[0; 24["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:404
+msgid "[24; 48["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:405
+msgid "[48; 72["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:406
+msgid "[72; 96["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:407
+msgid "[96; 120]"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:409
+msgid ""
+"``range(myfield, equi(5, highest_boundary=10))`` will create the subranges"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:411
+msgid "[-5; -2["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:412
+msgid "[-2; 1["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:413
+msgid "[1; 4["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:414
+msgid "[4; 7["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:415
+msgid "[7; 10["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:416
+#: ../../source/using_api/v2/aggregations.rst:426
+msgid "[10; 120]"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:418
+msgid ""
+"``range(myfield, equi(5, lowest_boundary=0, highest_boundary=10))`` will "
+"create the subranges"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:421
+msgid "[0; 2["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:422
+msgid "[2; 4["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:423
+msgid "[4; 6["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:424
+msgid "[6; 8["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:425
+msgid "[8; 10["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:428
+msgid "``range(myfield, static(divisions))``"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:430
+msgid ""
+"Divides the full range of myfield values in sub ranges delimited by the "
+"values set in divisions."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:432
+msgid ""
+"If the minimum (resp. maximum) existing value of myfield in lower (resp. "
+"higher) than the lowest (resp. highest) division value, an additional range "
+"will be added so that all of myfield values are accounted for."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:438
+msgid "``division`` **required** an ordered (ASC) list of decimal values"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:443
+msgid ""
+"``range(myfield, static([-1000, -10, -1, 0, 1, 10, 1000]))`` will create the"
+" sub ranges"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:445
+msgid "[-1000; -10["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:446
+msgid "[-10; -1["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:447
+msgid "[-1; 0["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:448
+msgid "[0; 1["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:449
+msgid "[1; 10["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:450
+msgid "[10; 1000]"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:452
+msgid "``range(myfield, static([-10, 0, 10]))`` will create the sub ranges"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:454
+#: ../../source/using_api/v2/aggregations.rst:460
+msgid "[-10; 0["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:455
+#: ../../source/using_api/v2/aggregations.rst:461
+msgid "[0; 10["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:456
+msgid "[10; 120["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:458
+msgid ""
+"``range(myfield, static([0, 10, 100, 1000]))`` will create the sub ranges"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:462
+msgid "[10; 100["
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:463
+msgid "[100; 1000]"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:465
+msgid ""
+"``range(myfield, percentile())`` Return the number of the percentile within "
+"which myfield's value lies. (default: [1, 5, 25, 50, 75, 95, 99])"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:466
+msgid ""
+"``range(myfield, median())`` Return the number of the median within which "
+"myfield's value lies."
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:467
+msgid ""
+"``range(myfield, decile())`` Return the number of the decile within which "
+"myfield's value lies. (1 to 10)"
+msgstr ""
+
+#: ../../source/using_api/v2/aggregations.rst:468
+msgid ""
+"``range(myfield, quartile())`` Return the number of the quartile within "
+"which myfield's value lies. (1 to 4)"
+msgstr ""
