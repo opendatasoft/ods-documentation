@@ -228,7 +228,7 @@ The Choropleth visualization mode displays data as markers (dots or icons) or as
 
        - **Palette**: define on which field and operation your choropleth layer will be based on, and the color of your markers, shapes and/or lines.
 
-         a. Choose whether you want to base your the color of your shape on the **Value of a field** or on the **Aggregation on a field**.
+         a. Choose whether you want to base the color of your shape on the **Value of a field** or on the **Aggregation on a field**.
          b. Depending on the choice you just made for your shape’s color, choose the field which value you want to use, or decide which aggregation operation you want to apply on your chosen field.
          c. Define the **Values range**.
          d. Define the number of **Tiers**, meaning in how many categories your values range will be divided.
