@@ -261,7 +261,7 @@ The Choropleth visualization mode displays data as markers (dots or icons) or as
 Color by category
 """""""""""""""""
 
-The Choropleth visualization mode displays data as markers (dots or icons) or as shapes. It also enhances the visualization with colors. The markers and/or shapes are colored according to a color scheme, defined by a values range based on a chosen variable. The Choropleth mode allows the creation of a thematic layer.
+The Color by category visualization mode displays data as markers (dots or icons) or as shapes. It also enhances the visualization with colors. The markers and/or shapes are colored according to a color scheme based on defined categories - which can be numerical or not, just defined by a certain word. The Color by category mode allows the creation of a categorized layer.
 
 .. list-table::
    :header-rows: 1
