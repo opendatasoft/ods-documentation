@@ -54,7 +54,7 @@ section, under ``Reuses``.
 .. image:: img/reuse__configuration-en.png
 
 Enabling the reuse feature on your portal will display a new Reuses section at
-the bottom of the information tab on each dataset page. Additionaly, this section will provide a form through which users can submit their reuses and will list all approved reuses.
+the bottom of the information tab on each dataset page. Additionally, this section will provide a form through which users can submit their reuses and will list all approved reuses.
 
 .. image:: img/reuse__form-en.png
 

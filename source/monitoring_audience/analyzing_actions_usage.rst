@@ -5,7 +5,7 @@ Go to the *Analytics > Actions* page.
 
 There are eight indicators :
 
-1. **Actions**: Frequency and distribution of actions (analyze, geo, search) taken by users based on API calls. Gives you precious information about what your users do and how to better serve them. Also remember that like with every charts on OpenDataSoft you can filter the variables displayed (Analyze, Geo or Search) by clicking on the legend labels.
+1. **Actions**: Frequency and distribution of actions (analyze, geo, search) taken by users based on API calls. Gives you precious information about what your users do and how to better serve them. Also remember that like with every chart on OpenDataSoft you can filter the variables displayed (Analyze, Geo or Search) by clicking on the legend labels.
 
 .. ifconfig:: language == 'en'
 
@@ -17,7 +17,7 @@ There are eight indicators :
     .. image:: usage__actions-usage-1-fr.jpg
         :alt: Usage Actions Indicateur Activité par type
 
-2. **Total searches**: Number of times somebody searched for a dataset from the catalog, or search into a dataset.
+2. **Total searches**: Number of times somebody searched for a dataset from the catalog, or searched in a dataset.
 
 .. ifconfig:: language == 'en'
 
@@ -53,7 +53,7 @@ There are eight indicators :
     .. image:: usage__actions-usage-4-fr.jpg
         :alt: Usage Actions Indicateur Actions par page
 
-5. **Text searches with no result**: Basically thoses may be the data users expect to find on your portal.
+5. **Text searches with no result**: Basically those may be the data users expect to find on your portal.
 
 .. ifconfig:: language == 'en'
 

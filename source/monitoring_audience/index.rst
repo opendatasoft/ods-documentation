@@ -11,7 +11,7 @@ There are three main views to analyze your domain, trying to answer three differ
 
 In the Users and Actions view, you can select a period (default is the last week).
 
-If the default KPIs and analyzis are not enough for your needs, you can click on the "See source data" link at the bottom of the page. It allows you to get the whole dataset and do your own analyzis. There is a :doc:`documentation page </monitoring_audience/analyzing_source_data>` describing the data.
+If the default KPIs and analysis are not enough for your needs, you can click on the "See source data" link at the bottom of the page. It allows you to get the whole dataset and do your own analyzis. There is a :doc:`documentation page </monitoring_audience/analyzing_source_data>` describing the data.
 
 Please note that the dataset includes usage data for **at least** the **3 last months**. Older data are archived within the limits indicated by the law and our terms of use.
 

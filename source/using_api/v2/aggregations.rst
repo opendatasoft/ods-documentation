@@ -94,7 +94,7 @@ See the API console for the full reference on the request's syntax.
 Aggregate functions
 -------------------
 
-These functions accept as argument a field name or a virtual field and perform an aggregation function on its values. l
+These functions accept as argument a field name or a virtual field and perform an aggregation function on its values.
 
 Example: still using the dataset described at the beginning, let's assume we want to 'cook the books' and report a
 little less sales each day and pocket the difference at the end of the year.
