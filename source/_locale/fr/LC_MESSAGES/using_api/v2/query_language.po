@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-12 18:30+0200\n"
+"POT-Creation-Date: 2017-05-24 12:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Trad_FR2 <datawords.translator.fr2@gmail.com>, 2017\n"
+"Last-Translator: Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2017\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../source/using_api/v2/query_language.rst:2
 msgid "Query Language"
-msgstr ""
+msgstr "Language de requête"
 
 #: ../../source/using_api/v2/query_language.rst:4
 msgid ""
@@ -41,8 +41,8 @@ msgid ""
 "using full text search, facets and geo filtering, and then allowing them to "
 "download these records with the same filtering context."
 msgstr ""
-"Notez qu'un contexte de filtrage donné peut être tout simplement copié  "
-"d'une API à une autre. Vous pouvez par exemple facilement développer une "
+"Notez qu'un contexte de filtrage donné peut être tout simplement copié d'une"
+" API à une autre. Vous pouvez par exemple facilement développer une "
 "interface utilisateur qui permet aux utilisateurs de commencer par "
 "sélectionner visuellement les enregistrements qui les intéressent, à l'aide "
 "de la recherche en texte intégral, des facettes et du filtrage géographique,"
@@ -61,7 +61,7 @@ msgid ""
 "The user query can most of the time be expressed through the ``q`` HTTP "
 "parameter."
 msgstr ""
-"La requête de l'utilisateur peut dans la plupart des cas être exprimée à "
+"La requête de l'utilisateur peut, dans la plupart des cas, être exprimée à "
 "l'aide du paramètre HTTP ``q``."
 
 #: ../../source/using_api/v2/query_language.rst:16
@@ -92,6 +92,8 @@ msgid ""
 "It is possible to perform a greedy query by adding a wildcard `*` at the end"
 " of a word."
 msgstr ""
+"Il est possible d'effectuer une recherche gloutonne en ajoutant le méta-"
+"caractère `*` à la fin d'un mot."
 
 #: ../../source/using_api/v2/query_language.rst:28
 msgid "``q=film*`` returns results that contain film, films, filmography..."
@@ -106,8 +108,8 @@ msgid ""
 "The query language supports the following boolean operators ``AND``, ``OR`` "
 "and ``NOT``."
 msgstr ""
-"Le language de requêtes supporte les opérateurs booléens suivants : `AND``, "
-"``OR`` et ``NOT``."
+"Le langage de requêtes prend en charge les opérateurs booléens suivants : "
+"``AND``, ``OR`` et ``NOT``."
 
 #: ../../source/using_api/v2/query_language.rst:35
 msgid ""
@@ -135,11 +137,11 @@ msgstr "Exemples"
 
 #: ../../source/using_api/v2/query_language.rst:43
 msgid "``film OR trees``"
-msgstr "``film OR arbres``"
+msgstr "``film OR trees``"
 
 #: ../../source/using_api/v2/query_language.rst:44
 msgid "``(film OR trees) AND paris``"
-msgstr "``(film OR arbres) AND paris``"
+msgstr "``(film OR trees) AND paris``"
 
 #: ../../source/using_api/v2/query_language.rst:47
 msgid "Field queries"
@@ -179,7 +181,7 @@ msgstr "Description"
 
 #: ../../source/using_api/v2/query_language.rst:59
 msgid "publisher"
-msgstr "Producteur"
+msgstr "publisher"
 
 #: ../../source/using_api/v2/query_language.rst:60
 msgid "The dataset publisher"
@@ -187,11 +189,11 @@ msgstr "L'éditeur du jeu de données"
 
 #: ../../source/using_api/v2/query_language.rst:61
 msgid "title"
-msgstr "titre"
+msgstr "title"
 
 #: ../../source/using_api/v2/query_language.rst:62
 msgid "The dataset title"
-msgstr "Le titre du "
+msgstr "Le titre du jeu de données"
 
 #: ../../source/using_api/v2/query_language.rst:63
 msgid "description"
@@ -203,7 +205,7 @@ msgstr "Description du jeu de données"
 
 #: ../../source/using_api/v2/query_language.rst:65
 msgid "license"
-msgstr "licence"
+msgstr "license"
 
 #: ../../source/using_api/v2/query_language.rst:66
 msgid "The dataset license"
@@ -211,7 +213,7 @@ msgstr "Licence du jeu de données"
 
 #: ../../source/using_api/v2/query_language.rst:67
 msgid "records_count"
-msgstr "nombre_enregistrements"
+msgstr "records_count"
 
 #: ../../source/using_api/v2/query_language.rst:68
 msgid "The number of records in the dataset"
@@ -219,7 +221,7 @@ msgstr "Nombre d'enregistrements dans le jeu de données"
 
 #: ../../source/using_api/v2/query_language.rst:69
 msgid "modified"
-msgstr "modifié"
+msgstr "modified"
 
 #: ../../source/using_api/v2/query_language.rst:70
 msgid "The last modification date of the dataset"
@@ -227,7 +229,7 @@ msgstr "Date de la dernière modification du jeu de données"
 
 #: ../../source/using_api/v2/query_language.rst:71
 msgid "language"
-msgstr "langue"
+msgstr "language"
 
 #: ../../source/using_api/v2/query_language.rst:72
 msgid "The language of the dataset (iso code)"
@@ -235,7 +237,7 @@ msgstr "Langue du jeu de données (code ISO)"
 
 #: ../../source/using_api/v2/query_language.rst:73
 msgid "theme"
-msgstr "thème"
+msgstr "theme"
 
 #: ../../source/using_api/v2/query_language.rst:74
 msgid "The theme of the dataset"
@@ -243,7 +245,7 @@ msgstr "Thème du jeu de données"
 
 #: ../../source/using_api/v2/query_language.rst:75
 msgid "references"
-msgstr "références"
+msgstr "references"
 
 #: ../../source/using_api/v2/query_language.rst:76
 msgid "The references for the dataset"
@@ -282,8 +284,8 @@ msgid ""
 msgstr ""
 "**Pour les API de recherche d'enregistrements**, la liste des champs "
 "disponibles dépend du schéma du jeu de données. Pour récupérer la liste des "
-"champs disponibles d'un jeu de données, vous pouvez les API de recherche de "
-"jeux de données ou de récupération de jeux de données."
+"champs disponibles d'un jeu de données, vous pouvez utiliser les API de "
+"recherche de jeux de données ou de récupération de jeux de données."
 
 #: ../../source/using_api/v2/query_language.rst:89
 msgid ""
@@ -300,7 +302,7 @@ msgstr ""
 
 #: ../../source/using_api/v2/query_language.rst:96
 msgid "Text field"
-msgstr ""
+msgstr "Champ texte"
 
 #: ../../source/using_api/v2/query_language.rst:101
 #: ../../source/using_api/v2/query_language.rst:117
@@ -310,7 +312,7 @@ msgstr "Opérateurs"
 
 #: ../../source/using_api/v2/query_language.rst:103
 msgid "``:``"
-msgstr ""
+msgstr "``:``"
 
 #: ../../source/using_api/v2/query_language.rst:104
 msgid ""
@@ -319,10 +321,15 @@ msgid ""
 "possible to use quotes. ``film_name:\"star wars\"`` will match fields "
 "containing ``star`` and ``wars``"
 msgstr ""
+"Effectuer une recherche normalisée sur le lexème fourni. Exemple : "
+"``film_name:star`` correspond à ``star wars`` et ``Star Trek``. Pour fournir"
+" plusieurs lexèmes, il est possible d'utiliser des guillemets. "
+"``film_name:\"star wars\"`` correspondent à des champs contenant ``star`` et"
+" ``wars``."
 
 #: ../../source/using_api/v2/query_language.rst:106
 msgid "``=``"
-msgstr ""
+msgstr "``=``"
 
 #: ../../source/using_api/v2/query_language.rst:107
 msgid ""
@@ -333,12 +340,12 @@ msgstr ""
 
 #: ../../source/using_api/v2/query_language.rst:112
 msgid "Numeric field"
-msgstr ""
+msgstr "Champ numérique"
 
 #: ../../source/using_api/v2/query_language.rst:119
 #: ../../source/using_api/v2/query_language.rst:136
 msgid "``:``, ``=``"
-msgstr ""
+msgstr "``:``, ``=``"
 
 #: ../../source/using_api/v2/query_language.rst:120
 msgid ""
@@ -349,7 +356,7 @@ msgstr ""
 #: ../../source/using_api/v2/query_language.rst:121
 #: ../../source/using_api/v2/query_language.rst:138
 msgid "``>``, ``<``, ``>=``, ``<=``"
-msgstr ""
+msgstr "``>``, ``<``, ``>=``, ``<=``"
 
 #: ../../source/using_api/v2/query_language.rst:122
 #: ../../source/using_api/v2/query_language.rst:139
@@ -357,10 +364,12 @@ msgid ""
 "Return results whose field values are larger, smaller, larger or equal, "
 "smaller or equal to the given value."
 msgstr ""
+"Retourne les résultats pour lesquels la valeur du champ est supérieure, "
+"inférieure, supérieure ou égale, inférieure ou égale à la valeur donnée."
 
 #: ../../source/using_api/v2/query_language.rst:123
 msgid "``[lower_numeric (TO|..) higher_numeric]``"
-msgstr ""
+msgstr "``[lower_numeric (TO|..) higher_numeric]``"
 
 #: ../../source/using_api/v2/query_language.rst:124
 msgid ""
@@ -369,20 +378,26 @@ msgid ""
 "``]lower_numeric (TO|..) higher_numeric[`` will exclude ``lower_numeric`` "
 "and ``higher_numeric``."
 msgstr ""
+"Recherche les enregistrements dont la valeur numérique est comprise entre "
+"``lower_numeric`` et ``higher_numeric``. Les bornes inférieure et supérieure"
+" peuvent être inclusives ou exclusives. Exemple: `]lower_numeric (TO|..) "
+"higher_numeric[`` exclut ``lower_numeric`` et ``higher_numeric``."
 
 #: ../../source/using_api/v2/query_language.rst:129
 msgid "Date field"
-msgstr ""
+msgstr "Champ date"
 
 #: ../../source/using_api/v2/query_language.rst:137
 msgid ""
 "Match a date value. For instance: ``film_date:1977`` will return films "
 "released in 1977."
 msgstr ""
+"Recherche par date. Par exemple : ``film_date:1977`` correspond aux films "
+"sortis en 1977."
 
 #: ../../source/using_api/v2/query_language.rst:140
 msgid "``[lower_date (TO|..) higher_date]``"
-msgstr ""
+msgstr "``[lower_date (TO|..) higher_date]``"
 
 #: ../../source/using_api/v2/query_language.rst:141
 msgid ""
@@ -429,9 +444,8 @@ msgid ""
 "Advanced functions can be used in the query language. Function names need to"
 " be prefixed with a sharp (``#``) sign."
 msgstr ""
-"Il est possible d'utiliser des fonctions avancées dans le langage de "
-"requêtes. Les noms des fonctions doivent être précédés d'un croisillon "
-"(``#``)."
+"Il est possible d'intégrer des fonctions avancées au langage de requêtes. "
+"Les noms des fonctions doivent être précédés d'un croisillon (``#``)."
 
 #: ../../source/using_api/v2/query_language.rst:164
 msgid "Function name"
@@ -521,7 +535,7 @@ msgstr ""
 
 #: ../../source/using_api/v2/query_language.rst:189
 msgid "``#now(weeks=-2, weekday=1)`` returns the Tuesday before last."
-msgstr "``#now(weeks=-2, weekday=1)`` renvoie l'avant dernier lundi."
+msgstr "``#now(weeks=-2, weekday=1)`` renvoie le mardi précédant le dernier."
 
 #: ../../source/using_api/v2/query_language.rst:191
 msgid "``#now(weekday=MO(2))`` returns Monday after next."

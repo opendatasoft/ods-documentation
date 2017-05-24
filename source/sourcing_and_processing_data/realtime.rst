@@ -94,7 +94,7 @@ In order to push a field of type image, a json object containing the base64-enco
     {
         "image_field": {
             "content": "BASE64 data",
-            "content_type": "image/jpg"
+            "content-type": "image/jpg"
         }
     }
 
