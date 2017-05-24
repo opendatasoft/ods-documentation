@@ -4,9 +4,8 @@ Rename and save a map
 Rename a map
 ------------
 
-.. ifconfig:: language == 'en'
-
-   .. image:: map2-images/rename-map.png
+.. localizedimage:: map2-images/rename-map.png
+    :alt: Zoom on the Map Builder menu where a map can be renamed
 
 1. In the middle of the first row of the Map Builder menu, enter the name of your map in the provided area.
 2. Click on the **Save** button.
@@ -16,9 +15,8 @@ Rename a map
 Save a map
 ----------
 
-.. ifconfig:: language == 'en'
-
-   .. image:: map2-images/save-map.png
+.. localizedimage:: map2-images/save-map.png
+    :alt: Zoom on the Map Builder menu where a map can be saved
 
 .. note:: Map Builder automatically saves the map you are working on as a draft. It avoids the loss of everything you have been working on for instance if the tab in your browser unfortunately closes or if anything else happens. All your drafts are listed in the **My Maps** interface (accessible from the Map Builder menu), in the **Drafts** tab.
 

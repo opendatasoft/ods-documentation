@@ -6,9 +6,8 @@ Overview of the maps management interface: My Maps
 
 All maps management actions (except saving and renaming, see :doc:`Rename and save a map <rename-and-save-a-map>`) are made from the **My Maps** interface. This interface is accessible from the Map Builder menu displayed at the very top of the map.
 
-.. ifconfig:: language == 'en'
-
-   .. image:: map2-images/my-maps.png
+.. localizedimage:: map2-images/my-maps.png
+    :alt: Overview of the My Maps interface
 
 The interface of **My Maps** is composed of:
 
@@ -32,13 +31,11 @@ The **Saved maps** and **Drafts** submenus display information the same way. In 
    :header-rows: 0
 
    * *
-       .. ifconfig:: language == 'en'
-
-          .. image:: map2-images/saved-maps.png
+       .. localizedimage:: map2-images/saved-maps.png
+           :alt: Screenshot of Saved maps in My Maps interface
      *
-       .. ifconfig:: language == 'en'
-
-          .. image:: map2-images/drafts.png
+       .. localizedimage:: map2-images/drafts.png
+           :alt: Screenshot of Drafts in My Maps interface
 
 Duplicate a map
 ---------------

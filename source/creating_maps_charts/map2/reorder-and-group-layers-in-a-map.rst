@@ -11,9 +11,8 @@ You can reorder your layers and group some of them together.
 
 Order and groups management actions are made from the **Order and groups** interface. This interface is accessible from the Map Builder menu displayed at the very top of the map.
 
-.. ifconfig:: language == 'en'
-
-   .. image:: map2-images/order-and-groups.png
+.. localizedimage:: map2-images/order-and-groups.png
+    :alt: Zoom on the Map Builder menu where the link to Orders and Groups is
 
 The interface of **Order and Groups** is composed of:
 
@@ -26,16 +25,14 @@ The interface of **Order and Groups** is composed of:
   * |icon-hide| to make a layer visible or not
   * |icon-move| to move a layer when reordering
 
-  .. ifconfig:: language == 'en'
-
-     .. image:: map2-images/order-and-groups-interface.png
+.. localizedimage:: map2-images/order-and-groups-interface.png
+    :alt: Overview of the Order and groups interface
 
 Group layers
 ------------
 
-.. ifconfig:: language == 'en'
-
-   .. image:: map2-images/group-layers.png
+.. localizedimage:: map2-images/group-layers.png
+    :alt: Screenshot of the Order and groups interface, when layers are selected to be grouped
 
 1. Tick the boxes of the layers you want to group together.
 2. Click on the **Group** button.
@@ -44,9 +41,8 @@ Group layers
 Split groups of layers
 ----------------------
 
-.. ifconfig:: language == 'en'
-
-   .. image:: map2-images/split-layers.png
+.. localizedimage:: map2-images/split-layers.png
+    :alt: Screenshot of the Order and groups interface, when grouped layers are selected to be split
 
 1. Tick the box of the group you want to split.
 2. Click on the **Split** button.
