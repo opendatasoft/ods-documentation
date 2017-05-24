@@ -88,12 +88,6 @@ Main documentation resources:
 * http://sphinx-doc.org/intl.html
 * http://docs.transifex.com/client/
 
-
-### Translating images
-
-* https://wiki.typo3.org/Localization_(reST):
-* https://groups.google.com/forum/#!topic/sphinx-users/CursdollSZo
-
 ### Build .pot files, push them to transifex and retrieve .po files
 
 Shortcut: `make translations`
@@ -194,14 +188,23 @@ In an array, add an empty line:
 
 All images should be named following this norm:
 
-> <doc_page_name>__<image-name>--<language>.<ext>
+> doc_page_name__image-name--language.ext
 
 Where:
 
-* `<doc_page_name>` is the name of the `.rst` file the image is originally referenced from (using `_` as tokens separator)
-* `<image-name>` is the name of the image itself, it should describe its content (using `-` as tokens separator)
-* `<language>` is either `fr` or `en` (we do not support other languages in the documentation
+* `doc_page_name` is the name of the `.rst` file the image is originally referenced from (using `_` as tokens separator)
+* `image-name` is the name of the image itself, it should describe its content (using `-` as tokens separator)
+* `language` is either `en`, `fr`, `de`, `es`, etc.
 
+If you abide by this convention, you can include images using the `localizedimage` and `localizedfigure` directives
+as such:
+
+> .. localizedimage:: doc_page_name__image-name.ext
+
+> .. localizedfigure:: doc_page_name__image-name.ext
+
+This will include the image postfixed with the current build language, and if the image doesn't exists, il will
+fallback to the english version of the image.
 
 If you need to annotate images (add circles, arrows, basic text), you can download Skitch
 (https://evernote.com/skitch/). It is free and very handy for these basic edits.
