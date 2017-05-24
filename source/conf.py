@@ -303,6 +303,7 @@ intersphinx_mapping = {'https://docs.python.org/': None}
 # i18n
 locale_dirs = ['_locale/']
 gettext_compact = False
+gettext_additional_targets = ['image']
 
 html_context = {
     'languages': ['en', 'fr', 'es', 'de', 'nl'],
