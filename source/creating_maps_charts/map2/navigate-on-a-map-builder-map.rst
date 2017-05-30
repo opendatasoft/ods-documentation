@@ -4,9 +4,8 @@ Navigate on a Map Builder map
 Overview of the interactive map of Map Builder
 ----------------------------------------------
 
-.. ifconfig:: language == 'en'
-
-   .. image:: map2-images/navigate-on-map.png
+.. localizedimage:: map2-images/navigate-on-map.png
+    :alt: Screenshot of Map Builder in preview mode
 
 The interactive map contains the same buttons as in any OpenDataSoft map:
 
@@ -27,9 +26,8 @@ However, any interactive map created with Map Builder also contains specific fea
 Display or hide layers
 ----------------------
 
-.. ifconfig:: language == 'en'
-
-   .. image:: map2-images/layer-hidden.png
+.. localizedimage:: map2-images/layer-hidden.png
+    :alt: Screenshot of Map Builder in preview mode, when a layer is hidden
 
 By default, all your map layers are displayed on your map. The list of all the layers that compose your Map Builder map is displayed on the top right-hand corner of the map.
 
@@ -40,9 +38,8 @@ You can hide layers in case you only want to focus on specific layers or even on
 Understand the map: captions
 ----------------------------
 
-.. ifconfig:: language == 'en'
-
-   .. image:: map2-images/caption-map.png
+.. localizedimage:: map2-images/caption-map.png
+    :alt: Screenshot of Map Builder with an enlarged caption
 
 For a better understanding of the map, each layer can have a related caption you can refer to. All available captions are displayed on the bottom right-hand corner of the map, under the list of layers. To go from one caption to another, simply click the |icon-left| and |icon-right| buttons.
 
@@ -53,15 +50,13 @@ Use the search bar
 
 You can use the search bar to make research on your map. To do so, simply enter a keyword in the search bar at the top left-hand corner of the map. By default, the search bar will return location results. If you click on a location result, the map will automatically move to that selected location.
 
-.. ifconfig:: language == 'en'
-
-   .. image:: map2-images/search-bar.png
+.. localizedimage:: map2-images/search-bar.png
+    :alt: Zoom on the results of a research in Map Builder
 
 However, the search bar will also suggest searching the keyword in the displayed data, meaning into the datasets that compose the layers of your Map Builder map.
 
-.. ifconfig:: language == 'en'
-
-   .. image:: map2-images/search-interface.png
+.. localizedimage:: map2-images/search-interface.png
+    :alt: Screenshot of Map Builder when using the search bar
 
 
 

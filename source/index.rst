@@ -16,28 +16,24 @@ OpenDataSoft includes a unique set of integrated features:
 .. note::
     Access our `data network <https://data.opendatasoft.com>`_ if you are looking for reusable public datasets.
 
-.. ifconfig:: language == 'en'
+.. localizedfigure:: index__opendatasoft-data-network.jpg
+    :alt: OpenDataSoft's network of data
+    :width: 400px
+    :align: center
 
-    .. figure:: index__opendatasoft-data-network--en.jpg
-        :alt: OpenDataSoft's network of data
-        :width: 400px
-        :align: center
-
-        OpenDataSoft's network of data
+    OpenDataSoft's network of data
 
 This documentation is OpenDataSoft's reference documentation. It complements inline documentation directly accessible in OpenDataSoft's back-office screens.
 
 .. important::
     You will find some of the resources used in this documentation online on our `discovery portal <https://discovery.opendatasoft.com/>`_.
 
-.. ifconfig:: language == 'en'
+.. localizedfigure:: index__opendatasoft-discovery.jpg
+    :alt: OpenDataSoft's discovery portal
+    :width: 400px
+    :align: center
 
-    .. figure:: index__opendatasoft-discovery--en.jpg
-        :alt: OpenDataSoft's discovery portal
-        :width: 400px
-        :align: center
-
-        OpenDataSoft's discovery portal
+    OpenDataSoft's discovery portal
 
 .. note::
    OpenDataSoft staff is always available to help. You can give us feedbacks or send us questions by contacting OpenDataSoft support, either by hitting the **Support** link in the back-office menu or by sending an email to `support@opendatasoft.com <mailto:support@opendatasoft.com>`_.
