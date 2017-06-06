@@ -109,7 +109,7 @@ Reserved words
 
 All these words must be back-quoted if used as field name.
 
-.. code::
+.. code-block:: text
 
    and
    as
@@ -193,12 +193,6 @@ Filter functions
 ~~~~~~~~~~~~~~~~
 
 Filter functions are built-in functions that can be used as a where expression:
-
-The **type** function returns rows where the field named *field_name* has some type in ``INT``, ``DOUBLE``, ``TEXT``, ``FILE``, ``DATE``, ``DATETIME``, ``IMAGE``.
-
-.. code::
-
-   TYPE(INT, field_name)
 
 The **distance** function limits the result set to a geographical area defined by a circle defined by its center and a distance. The coordinates of the center of the circle are expressed in the `WKT format <https://en.wikipedia.org/wiki/Well-known_text>`_). The distance is numeric and can have a unit in ``mi``, ``yd``, ``ft``, ``m``, ``cm``, ``km``, ``mm``.
 
