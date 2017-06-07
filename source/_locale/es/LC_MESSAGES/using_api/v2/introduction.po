@@ -2,7 +2,7 @@
 # Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -22,17 +22,7 @@ msgstr ""
 msgid "Introduction"
 msgstr "Introducción"
 
-#: ../../source/using_api/v2/introduction.rst:6
-msgid ""
-"This API is currently in BETA and important changes can be made until finale"
-" release."
-msgstr ""
-
-#: ../../source/using_api/v2/introduction.rst:8
-msgid "Don't hesitate to report any problem you encounter when using it."
-msgstr ""
-
-#: ../../source/using_api/v2/introduction.rst:13
+#: ../../source/using_api/v2/introduction.rst:12
 msgid ""
 "If you are already familiar with the structure of the data within the "
 "platform and are a seasoned developer or data scientist, you may want to "
@@ -41,14 +31,14 @@ msgid ""
 "definition <https://data.opendatasoft.com/api/v2/swagger.json>`_."
 msgstr ""
 
-#: ../../source/using_api/v2/introduction.rst:17
+#: ../../source/using_api/v2/introduction.rst:16
 msgid ""
 "Both these links point to OpenDataSoft's central repository of open data but"
 " if you have a portal, you can access the same page at "
 "``http://<youropendatasoftportal>/api/``."
 msgstr ""
 
-#: ../../source/using_api/v2/introduction.rst:20
+#: ../../source/using_api/v2/introduction.rst:19
 msgid ""
 "In the following section, we'll assume that you know what HTTP verbs "
 "(``GET``, ``POST``, ``PUT``...) are and that you are familiar with HTTP-"
@@ -58,31 +48,95 @@ msgid ""
 "understand."
 msgstr ""
 
-#: ../../source/using_api/v2/introduction.rst:25
+#: ../../source/using_api/v2/introduction.rst:24
 msgid ""
 "OpenDataSoft's API V2 is a full-REST, HATEOAS-enabled, JSON-first API "
 "designed to provide access in a coherent, hierarchical way to all the data "
 "available through the platform."
 msgstr ""
 
-#: ../../source/using_api/v2/introduction.rst:28
+#: ../../source/using_api/v2/introduction.rst:6
 msgid ""
-"This means that all API endpoints will return JSON data unless required "
-"otherwise, that endpoints are organized in a hierarchical way describing the"
-" relative relationship between objects and that all responses will contain a"
-" list of links allowing for easy and relevant navigation through the API "
-"endpoints."
+"This API is currently in BETA. Important changes can be made until the final"
+" release. Don't hesitate to report any problem you encounter when using it."
 msgstr ""
 
-#: ../../source/using_api/v2/introduction.rst:32
-msgid ""
-"For example, a ``GET /api/v2/catalog/datasets`` will return a collection of "
-"datasets as such (the ``...`` stand for ellipsis):"
+#: ../../source/using_api/v2/introduction.rst:27
+msgid "This means that:"
 msgstr ""
 
-#: ../../source/using_api/v2/introduction.rst:73
-msgid ""
-"While a ``GET /api/v2/catalog/datasets/las-vegas-crime-data@codeforvegas`` "
-"(the link provided as \"self\" in the first dataset returned in the "
-"collection of the previous call) will return:"
+#: ../../source/using_api/v2/introduction.rst:29
+msgid "all API endpoints will return JSON data unless required otherwise,"
 msgstr ""
+
+#: ../../source/using_api/v2/introduction.rst:30
+msgid ""
+"endpoints are organized in a hierarchical way describing the relative "
+"relationship between objects,"
+msgstr ""
+
+#: ../../source/using_api/v2/introduction.rst:31
+msgid ""
+"all responses will contain a list of links allowing easy and relevant "
+"navigation through the API endpoints."
+msgstr ""
+
+#: ../../source/using_api/v2/introduction.rst:33
+msgid "**Example 1:**"
+msgstr ""
+
+#: ../../source/using_api/v2/introduction.rst:35
+#: ../../source/using_api/v2/introduction.rst:83
+msgid "Request:"
+msgstr ""
+
+#: ../../source/using_api/v2/introduction.rst:37
+msgid "``GET /api/v2/catalog/datasets``"
+msgstr ""
+
+#: ../../source/using_api/v2/introduction.rst:39
+#: ../../source/using_api/v2/introduction.rst:88
+msgid "Response:"
+msgstr ""
+
+#: ../../source/using_api/v2/introduction.rst:41
+msgid "A collection of datasets (below, the ``...`` stand for ellipsis)."
+msgstr ""
+
+#: ../../source/using_api/v2/introduction.rst:81
+msgid "**Example 2:**"
+msgstr ""
+
+#: ../../source/using_api/v2/introduction.rst:85
+msgid ""
+"``GET /api/v2/catalog/datasets/las-vegas-crime-data@codeforvegas`` (the link"
+" provided as \"self\" in the first dataset returned in the collection of the"
+" previous call)"
+msgstr ""
+
+#~ msgid ""
+#~ "This API is currently in BETA and important changes can be made until finale"
+#~ " release."
+#~ msgstr ""
+
+#~ msgid "Don't hesitate to report any problem you encounter when using it."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This means that all API endpoints will return JSON data unless required "
+#~ "otherwise, that endpoints are organized in a hierarchical way describing the"
+#~ " relative relationship between objects and that all responses will contain a"
+#~ " list of links allowing for easy and relevant navigation through the API "
+#~ "endpoints."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For example, a ``GET /api/v2/catalog/datasets`` will return a collection of "
+#~ "datasets as such (the ``...`` stand for ellipsis):"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "While a ``GET /api/v2/catalog/datasets/las-vegas-crime-data@codeforvegas`` "
+#~ "(the link provided as \"self\" in the first dataset returned in the "
+#~ "collection of the previous call) will return:"
+#~ msgstr ""
