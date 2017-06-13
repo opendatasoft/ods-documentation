@@ -19,7 +19,7 @@ If a user tweets a link to a dataset on your portal, a summary can be displayed 
 
 .. image:: img/links__twittercard-fr.png
 
-This is a feature provided by Twitter itself. It should works by default without additional configuration, except if your domain is not **whitelisted for summary card** by twitter.
+This is a feature provided by Twitter itself. It should work by default without additional configuration, except if your domain is not **whitelisted for summary card** by twitter.
 
 You can check this by previewing a summary on the `Twitter Card page <https://cards-dev.twitter.com/validator>`_. Simply put the URL of one of your public dataset in the Card URL field on this page. 
 

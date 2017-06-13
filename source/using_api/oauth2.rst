@@ -75,8 +75,8 @@ Example (line breaks added for legibility):
         state=ilovedata&
         scope=all HTTP/1.1
 
-Please note that while the state parameter is not mandatory, we encourage you to provide one and check that it was given
-back you you when you receive your authorization grant, for security reasons.
+Please note that while the state parameter is not mandatory, we encourage you to provide one for security reasons and check that it was given
+back to you when you receive your authorization grant.
 
 Your authorization grant will have these values:
 

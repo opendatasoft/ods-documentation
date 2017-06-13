@@ -62,7 +62,7 @@ Let's elaborate another data visualization, this time with multiple layers.
 
 We will start the same way as before, click on ``Add a dataset to this layer`` then search for "Oil Prices" to add the `Oil Prices <https://public-us.opendatasoft.com/explore/dataset/oil-prices>`_ dataset.
 
-No need to filter it, just note that the data start from year 1987. We will use 1987 as the starting point for the other layers.
+No need to filter it, just note that the data starts from the year 1987. We will use 1987 as the starting point for the other layers.
 
 When you first import a dataset in Advanced Charts, the default visualization of this dataset is imported: in this case you can see two lines: `WTI Spot Price` and `Brent Spot Price`.
 

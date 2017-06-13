@@ -151,8 +151,8 @@ To delete a record knowing the record fields values, POST the record as if you w
 
     curl -XPOST <DOMAIN_URL>/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/delete/?pushkey=<PUSH_API_KEY> -d'{"message":"Hello World!"}'
 
-Using the record values
-^^^^^^^^^^^^^^^^^^^^^^^
+Using the record ID
+^^^^^^^^^^^^^^^^^^^
 
 If you know the record ID of the record you want to delete, simply make a GET request to the URL you get by replacing ``/push/`` with ``/<RECORD_ID>/delete/`` in the push URL. A minimal example of this follows.
 

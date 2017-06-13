@@ -231,7 +231,7 @@ applications, business applications...).
 API endpoints are associated with quotas. OpenDataSoft customers can configure their own quotas policy. Contact your
 OpenDataSoft domain owner for more details.
 
-24. **Does every dataset has its own APIs?**
+24. **Does every dataset have its own APIs?**
 
 Yes.
 
