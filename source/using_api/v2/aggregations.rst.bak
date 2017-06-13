@@ -14,23 +14,23 @@ of stores worldwide, that is with the following fields:
 
 The aggregate API allows the creation of virtual fields, limited to the request and that can be used in aggregates.
 
-> Example: The daily average sale price for each store.
+**Example:** The daily average sale price for each store.
 
 The main function of the API is to group dataset records by a finite number of fields and to return aggregated values
 for other fields.
 
-> Example: the total sales count per country, the total sales amount and the average of daily average sale price.
+**Example:** the total sales count per country, the total sales amount and the average of daily average sale price.
 
 It also allows for more complex aggregations.
 
-> Example: the average price sale per country during the year: total sales amount / total sales count.
+**Example:** the average price sale per country during the year: total sales amount / total sales count.
 
 You can also join to each group a finite list of fetched values, that is values extracted from the group rows according
 to a criteria:
 
-> Example: the best performing month (ie month with the most sales_amount) for each country.
+**Example:** the best performing month (ie: month with the most sales_amount) for each country.
 
-All of the following would be summed up in the following request.
+Request:
 
 .. code-block:: js
 
@@ -53,7 +53,7 @@ All of the following would be summed up in the following request.
         }
     }
 
-Which would then generate the following response
+Response:
 
 .. code-block:: js
 
@@ -96,8 +96,12 @@ Aggregate functions
 
 These functions accept as argument a field name or a virtual field and perform an aggregation function on its values.
 
-Example: still using the dataset described at the beginning, let's assume we want to 'cook the books' and report a
+**Example:**
+
+Still using the dataset described at the beginning, let's assume we want to 'cook the books' and report a
 little less sales each day and pocket the difference at the end of the year.
+
+Request:
 
 .. code-block:: js
 
@@ -171,7 +175,6 @@ little less sales each day and pocket the difference at the end of the year.
 
 
 Incremental functions for aggregates
-
 
 All of the above functions are also available in an ``INCREMENTAL`` version. That is the result of the computation for the
 current group is added to the result of the previous group and returned.
@@ -341,7 +344,7 @@ Date functions
     Any characters in the pattern that are not in the ranges of ['a'..'z'] and ['A'..'Z'] will be treated as quoted text. For instance, characters like ':', '.', ' ', '#' and '?' will appear in the resulting time text even they are not embraced within single quotes.
 
 
-A full example:
+**Example:**
 
 .. code-block:: js
 

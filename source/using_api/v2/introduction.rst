@@ -3,7 +3,8 @@ Introduction
 
 .. important::
 
-   A new version of APIv2 will be available before the end of May. Major breaking changes will occur, which means that action will be needed on your side if you use it. Please contact us if you need additional information.
+   This API is currently in BETA. Important changes can be made until the final release.
+   Don't hesitate to report any problem you encounter when using it.
 
 
 .. note::
@@ -23,12 +24,21 @@ If you are not then please refer to the :doc:`glossary </platform_glossary>` whe
 OpenDataSoft's API V2 is a full-REST, HATEOAS-enabled, JSON-first API designed to provide access in a coherent,
 hierarchical way to all the data available through the platform.
 
-This means that all API endpoints will return JSON data unless required otherwise, that endpoints are organized in a
-hierarchical way describing the relative relationship between objects and that all responses will contain a list of
-links allowing for easy and relevant navigation through the API endpoints.
+This means that:
 
-For example, a ``GET /api/v2/catalog/datasets`` will return a collection of datasets as such (the ``...`` stand for
-ellipsis):
+- all API endpoints will return JSON data unless required otherwise,
+- endpoints are organized in a hierarchical way describing the relative relationship between objects,
+- all responses will contain a list of links allowing easy and relevant navigation through the API endpoints.
+
+**Example 1:**
+
+Request:
+
+``GET /api/v2/catalog/datasets``
+
+Response:
+
+A collection of datasets (below, the ``...`` stand for ellipsis).
 
 .. code-block:: javascript
    :linenos:
@@ -68,8 +78,14 @@ ellipsis):
        ]
    }
 
-While a ``GET /api/v2/catalog/datasets/las-vegas-crime-data@codeforvegas`` (the link provided as "self" in the first
-dataset returned in the collection of the previous call) will return:
+**Example 2:**
+
+Request:
+
+``GET /api/v2/catalog/datasets/las-vegas-crime-data@codeforvegas`` (the link provided as "self" in the first
+dataset returned in the collection of the previous call)
+
+Response:
 
 .. code-block:: javascript
    :linenos:
