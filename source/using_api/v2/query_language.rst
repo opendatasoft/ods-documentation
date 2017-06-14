@@ -375,8 +375,8 @@ which contain at least 50 000 records:
 
 .. code::
 
-  (title:"paris" OR decription:"paris") AND records_count >= 50 000
-  http://public.opendatasoft.com/api/v2/catalog/datasets?where=(title:paris%20OR%20description:paris)%20AND%20records_count%20>=%2050000
+  (title like "paris" OR decription like "paris") AND records_count >= 50 000
+  http://public.opendatasoft.com/api/v2/catalog/datasets?where=(title like "paris" OR description like "paris") AND records_count >= 50000
 
 **For the record search APIs**, the list of available fields depends on the schema of the dataset. To fetch the list of
 available fields for a given dataset, you may use the search dataset or lookup dataset APIs.
@@ -385,8 +385,8 @@ For example one can search in the dataset containing the history of the SuperBow
 
 .. code::
 
-  stadium: "bowl"
-  http://public.opendatasoft.com/api/v2/catalog/datasets/super-bowl/records?where=stadium:"bowl"
+  stadium like "bowl"
+  http://public.opendatasoft.com/api/v2/catalog/datasets/super-bowl/records?where=stadium like "bowl"
 
 Multiple operator fields can be used between the field name and the query depending of the type.
 
