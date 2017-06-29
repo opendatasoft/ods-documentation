@@ -1536,7 +1536,7 @@ This processor is not activated by default. Please contact the OpenDataSoft supp
 Create Geopoint
 ~~~~~~~~~~~~~~~~
 
-This processor is used to create a geopoint column from a latitude column and a longitude column.
+This processor is used to create a geopoint field from a latitude field and a longitude field.
 
 It takes the following parameters:
 
@@ -1556,9 +1556,13 @@ It takes the following parameters:
     * yes
     *
   * * Source EPSG Code
-    * String
+    * String representing the `EPSG <http://spatialreference.org/ref/epsg/>`_ (spacial reference) code of the geographical data
     * yes
     * 4326
+  * * Output Field
+    * Field
+    * yes
+    *
 
 
 Text processors
