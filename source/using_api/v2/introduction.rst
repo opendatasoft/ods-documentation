@@ -6,6 +6,9 @@ Introduction
    This API is currently in BETA. Important changes can be made until the final release.
    Don't hesitate to report any problem you encounter when using it.
 
+.. important::
+   Max rows returned by a search result will progressively be limited to 100 on customers environments. 
+   If you want to bulk download, use the download api.
 
 .. note::
 
