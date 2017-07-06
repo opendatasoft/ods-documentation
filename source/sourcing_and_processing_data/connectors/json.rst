@@ -71,3 +71,114 @@ Configuration
    * * Headers
      * Indicates first row contains field labels.
      * Yes
+
+JSON Dict
+---------
+
+This connector extracts a valid JSON document (array or object) into one dataset of several records.
+
+It expects a JSON object where each key contains a record, and create records with one column to hold the key, and one column for each attribute of the corresponding object (or a single column named "value" if the value is a string instead of an object).
+
+Supported field types
+~~~~~~~~~~~~~~~~~~~~~
+
+- regular fields like decimal, bool, string
+- JSON object: will be used as-is
+- array:
+    - if the array contains JSON objects, it will be used as-is
+    - if it contains strings, a multivalued field will be created with all the strings separated by a semicolon (";")
+
+Configuration
+~~~~~~~~~~~~~
+
+.. list-table::
+   :header-rows: 1
+
+   * * Name
+     * Description
+     * Values
+   * * JSON root
+     * ijson path to the object that contains the records
+     * start from the root if empty, ijson path like "result.datasets", or "item" to iterate in an array
+   * * Key field name
+     * Label of the column that holds the key value
+     *
+
+Example 1
+~~~~~~~~~
+
+.. code-block:: json
+
+  {
+    "2016": {
+      "type1": {
+        "price": 10,
+        "color": "blue",
+        "available": true
+      },
+      "type2": {
+        "price": 9,
+        "color": "red",
+        "available": true
+      }
+    },
+    "2015": {
+      "type1": {
+        "price": 10.5,
+        "color": "teal",
+        "available": true
+      },
+      "type2": {
+        "price": 9.1,
+        "color": "crimson",
+        "available": true
+      }
+    }
+  }
+
+
+With an empty JSON root, results in:
+
++------+-----------------------------------------------------+-------------------------------------------------------+
+| key  | type1                                               | type2                                                 |
++------+-----------------------------------------------------+-------------------------------------------------------+
+| 2016 | {"color": "blue", "available": true, "price": 10}   | {"color": "red", "available": true, "price": 9}       |
++------+-----------------------------------------------------+-------------------------------------------------------+
+| 2015 | {"color": "teal", "available": true, "price": 10.5} | {"color": "crimson", "available": true, "price": 9.1} |
++------+-----------------------------------------------------+-------------------------------------------------------+
+
+Example 2
+~~~~~~~~~
+
+.. code-block:: json
+
+  {
+    "results": {
+      "datasets": [{
+          "abc": {
+            "title": "A B C",
+            "description": "A description about ABC"
+          }
+        },
+        {
+          "xyz": {
+            "title": "D E F",
+            "description": "Another description"
+          }
+        }
+      ]
+    }
+  }
+
+For this complex JSON file, the correct JSON root is ``results.datasets.item``.
+
+- ``results.datasets`` makes us move inside the JSON file to the array
+- ``item`` means to iterate inside the array and get each object
+
++-----+-------------------------+-------+
+| key | description             | title |
++-----+-------------------------+-------+
+| abc | A description about ABC | A B C |
++-----+-------------------------+-------+
+| xyz | Another description     | D E F |
++-----+-------------------------+-------+

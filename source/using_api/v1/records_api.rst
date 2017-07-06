@@ -31,7 +31,7 @@ easy to parse format which can used as an input of modern charting libraries suc
    * * ``format``
      * Format of the response output. One of JSON (default), CSV and GeoJSONP.
    * * ``callback``
-     * JSONP callback. Example: ``format=jsonp&callback=myFunction`` 
+     * JSONP callback. Example: ``format=jsonp&callback=myFunction``
    * * ``x``
      * The name of the field on which the data aggregation will be based. This is a mandatory parameter. It allows for analyzing a subset of data according to the different values of the fields. The behavior may vary according to the field type. For **Date** and **DateTime** fields, the slices are built from the dates using the level of aggregation defined through the ``precision``  and ``periodic``  parameters. For other field types, the actual field values are used as x values.
    * * ``y.<SERIE>.func``
@@ -62,7 +62,7 @@ Example: ``x=espece_arbre&y.series1.func=Min&y.series1.expr=sin(height)*2``
 Records Download API
 --------------------
 
-This API provides a performant way to download a large set of records out of one or serveral datasets at once. The HTTP
+This API provides a performant way to download a large set of records out of a dataset. The HTTP
 answer is streamed which makes it possible to optimize the memory consumption client side.
 
 **API endpoint**: ``/api/records/1.0/download``
@@ -75,8 +75,7 @@ answer is streamed which makes it possible to optimize the memory consumption cl
    * * Parameter Name
      * Description
    * * ``datasetid``
-     * Identifier of the dataset. Datasets that are hosted in the same domain may be queried simultaneously. Simply
-       repeat the dataset parameter for each dataset you need to query. This field is mandatory.
+     * Identifier of the dataset. This field is mandatory.
    * * ``q``
      * The full-text query. This parameter can be left empty, in which case no full-text filtering on the result set
        occurs.

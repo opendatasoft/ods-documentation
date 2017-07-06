@@ -89,6 +89,8 @@ Portals
    harvesters/ckan
    harvesters/junar
    harvesters/socrata
+   harvesters/datajson
+   harvesters/quandl
 
 Services
 ~~~~~~~~
