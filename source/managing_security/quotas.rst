@@ -22,8 +22,8 @@ Your license defines 4 global limits on your portal: the first one puts an upper
    API calls are therefore made by visitors on your portal, but also by developers using the API to retrieve the data
    you published and dashboards hosted outside of your portal.
 
-* **Data size quota** limits the total size of the data in the domain
-* **Datasets quota** constraints the total number of local and federated datasets currently within the portal (published or not)
+* **Data size quota** limits the total size of the data in datasets in the domain
+* **Datasets quota** constraints the total number of currently published datasets, for local datasets on the one hand and for federated datasets on the other hand
 * **Records quota** limits the total number of records within published datasets and also limits the maximum number of records per dataset
 
 You can see these quotas and check any information related to your license, under the **License** section of the back office.
