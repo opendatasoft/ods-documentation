@@ -1755,7 +1755,7 @@ Split Text
 
 This processor can be used to split a field's value and to extract the Nth element to a new field.
 
-The number of the part extracted is specified in the ``index`` parameter. Note that the numbering starts at 0.
+The number of the part extracted is specified in the ``index`` parameter. Note that the numbering starts at 1.
 
 .. ifconfig:: language == 'en'
 
