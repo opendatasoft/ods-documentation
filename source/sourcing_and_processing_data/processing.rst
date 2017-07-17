@@ -1151,12 +1151,12 @@ It takes the following parameters:
 Geographical processors
 -----------------------
 
-Geographical processors are divided into several categories according to what you are trying to achieve:
+Geographical processors are divided into 4 categories according to what you are trying to achieve:
 
-- **Geocoders** are used to convert a human readable address into a geo point
-- **GeoJoin** processors are used to retrieve geoshapes from normalized codes for country specific administrative division. They is one GeoJoin processor per supported country, each of which features several indexing codes like postcode, state or region identifier, etc.
-- **Retrieve Administrative Divisions** uses a geo point to retrieve the name, code and geoshape of country specific administrative divisions.
-- **Converters and functions** allow to simplify, convert or normalize geographical data, as well as running computations based on them
+- **Geocoders**: convert a human readable address into a geo point
+- **GeoJoin processors**: retrieve geoshapes from normalized codes for country specific administrative divisions. There is one GeoJoin processor per supported country, each of which features several indexing codes like postcode, state or region identifier, etc
+- **Retrieve Administrative Divisions processors**: retrieve the name, code and geoshape of country specific administrative divisions enclosing a geopoint
+- **Converters and functions**: simplify, convert or normalize geographical data, or run computations based on them
 
 .. contents:: :local:
 
@@ -1331,7 +1331,7 @@ GeoJoin
 ~~~~~~~
 
 This processor collection retrieves administrative divisions **Geo Shapes** from a key (postcode, county code, etc.). Each country has a dedicated processor and specific referentials.
-These referentials, which are referenced in the tables below, can be found in datasets available on https://public.opendatasoft.com.
+These referentials, which are referenced in the tables below, can be found in datasets available on `public.opendatasoft.com <https://public.opendatasoft.com>`_.
 
 France
 ^^^^^^
@@ -1513,7 +1513,7 @@ This processor is not activated by default. Please contact the OpenDataSoft supp
 Simplify Geo Shape
 ^^^^^^^^^^^^^^^^^^
 
-Simplify a geo shape to reduce processing time and dataset size.
+This processor simplifies a geo shape to reduce processing time and dataset size.
 
 It takes the following parameters:
 
@@ -1540,7 +1540,7 @@ Use the preview to find out which tolerance works best for you.
 Geomasking
 ^^^^^^^^^^
 
-Provides privacy protection by approximating a geographical location within a specific radius.
+This processor provides privacy protection by approximating a geographical location within a specific radius.
 
 It takes the following parameters:
 
@@ -1567,7 +1567,7 @@ It takes the following parameters:
 Compute Geo distance
 ^^^^^^^^^^^^^^^^^^^^
 
-This processor computes the distance between two coordinates.
+This processor computes the distance between 2 coordinates.
 
 It takes the following parameters:
 
