@@ -1336,44 +1336,201 @@ These referentials, which are referenced in the tables below, can be found in da
 France
 ^^^^^^
 
-====================  ==========================================================================================================
-Repository            Source
-====================  ==========================================================================================================
-postcode              `Carte des Codes Postaux <https://public.opendatasoft.com/explore/dataset/contour-des-codes-postaux>`_
-iris                  `Contours Iris - 2014 <https://public.opendatasoft.com/explore/dataset/contours-iris-2014>`_
-insee                 `Geofla® - Communes 2015 <https://public.opendatasoft.com/explore/dataset/geoflar-communes-2015>`_
-departements          `Contours simplifiés des départements Français 2015 <https://public.opendatasoft.com/explore/dataset/contours-simplifies-des-departements-francais-2015>`_
-regions               `Contours géographiques des nouvelles régions (métropole) <https://public.opendatasoft.com/explore/dataset/contours-geographiques-des-nouvelles-regions-metropole>`_
-regions 1970          `Contours des régions françaises sur OpenStreetMap <https://public.opendatasoft.com/explore/dataset/contours-des-regions-francaises-sur-openstreetmap>`_
-====================  ==========================================================================================================
+.. list-table::
+  :header-rows: 1
 
-USA
-^^^
+  * * Repository
+    * Source
+  * * region1970
+    * `Contours des régions françaises sur OpenStreetMap <https://public.opendatasoft.com/explore/dataset/contours-des-regions-francaises-sur-openstreetmap>`_
+  * * region2016
+    * `Contours géographiques des nouvelles régions (métropole) <https://public.opendatasoft.com/explore/dataset/contours-geographiques-des-nouvelles-regions-metropole>`_
+  * * departements-simplifies2015
+    * `Contours simplifiés des départements Français 2015 <https://public.opendatasoft.com/explore/dataset/contours-simplifies-des-departements-francais-2015>`_
+  * * departements2015
+    * `Geofla® - Départements 2015 <https://public.opendatasoft.com/explore/dataset/geoflar-departements-2015>`_
+  * * cantons2015
+    * `Cantons <https://public.opendatasoft.com/explore/dataset/decoupage-des-cantons-pour-les-elections-departementales-de-mars-2015>`_
+  * * zipcode2013
+    * `Carte des Codes Postaux <https://public.opendatasoft.com/explore/dataset/contour-des-codes-postaux>`_
+  * * communes2013
+    * `Geofla® Commune 2015 <https://public.opendatasoft.com/explore/dataset/geoflar-communes>`_
+  * * communes2015
+    * `Geofla® - Communes 2015 <https://public.opendatasoft.com/explore/dataset/geoflar-communes-2015>`_
+  * * communes2016
+    * `Geofla® Commune 2016 <https://public.opendatasoft.com/explore/dataset/geoflar-communes-2016>`_
+  * * iris2014
+    * `Contours IRIS 2014 <https://public.opendatasoft.com/explore/dataset/contours-iris-2014>`_
+  * * iris2015
+    * `Contours IRIS 2015 <https://public.opendatasoft.com/explore/dataset/contours-iris-2015>`_
 
-====================  ==========================================================================================================
-Repository            Source
-====================  ==========================================================================================================
-zcta                  `US ZCTA 2010 <https://public.opendatasoft.com/explore/dataset/us-zcta-2010>`_
-county                `US County Boundaries <https://public-us.opendatasoft.com/explore/dataset/us-county-boundaries>`_
-====================  ==========================================================================================================
+Switzerland
+^^^^^^^^^^^
+
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * bezirke2017
+    * `swissBOUNDARIES3D - TLM BEZIRKSGEBIET <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm_bezirksgebiet>`_
+  * * postleitzahl2017
+    * `Amtliches Ortschaftenverzeichnis mit Postleitzahl und Perimeter <https://public.opendatasoft.com/explore/dataset/amtliches-ortschaftenverzeichnis-mit-postleitzahl-und-perimeter>`_
+  * * gemeinde2017
+    * `swissBOUNDARIES3D - TLM HOHEITSGEBIET <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm_hoheitsgebiet>`_
+  * * kantone2017
+    * `swissBOUNDARIES3D - TLM_KANTONSGEBIET <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm_kantonsgebiet>`_
 
 Netherlands
 ^^^^^^^^^^^
 
-====================  ==========================================================================================================
-Repository            Source
-====================  ==========================================================================================================
-postcode              `Netherlands Postcodes <https://public.opendatasoft.com/explore/dataset/openpostcodevlakkenpc4>`_
-====================  ==========================================================================================================
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * postcode2015
+    * `Nederland Postcodes <https://public.opendatasoft.com/explore/dataset/openpostcodevlakkenpc4>`_
+
+Canada
+^^^^^^
+
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * province2003
+    * `Canada Provinces <https://public.opendatasoft.com/explore/dataset/canada-provinces>`_
+  * * census-subdivisions2011
+    * `Canadian Census Subdivisions <https://public.opendatasoft.com/explore/dataset/canadian-census-subdivisions0>`_
+  * * census-divisions2011
+    * `Canadian Census Divisions <https://public.opendatasoft.com/explore/dataset/canadian-census-subdivisions>`_
+  * * county2011
+    * `Intercensal Canada <https://public.opendatasoft.com/explore/dataset/intercensal-canada>`_
 
 Germany
 ^^^^^^^
 
-====================  ==========================================================================================================
-Repository            Source
-====================  ==========================================================================================================
-postcode              `Postleitzahlen Deutschland <https://public.opendatasoft.com/explore/dataset/postleitzahlen-deutschland>`_
-====================  ==========================================================================================================
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * lander2016
+    * `Deutschland Länder <https://public.opendatasoft.com/explore/dataset/deutschland-lander>`_
+  * * postleitzahlen2016
+    * `Postleitzahlen Deutschland <https://public.opendatasoft.com/explore/dataset/postleitzahlen-deutschland>`_
+
+The USA
+^^^^^^^
+
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * county2017
+    * `US County Boundaries <https://public.opendatasoft.com/explore/dataset/us-county-boundaries>`_
+  * * state2017
+    * `US State Boundaries <https://public.opendatasoft.com/explore/dataset/us-state-boundaries>`_
+  * * zcta2016
+    * `ZCTA <https://public.opendatasoft.com/explore/dataset/us-zcta-2010>`_
+
+Mexico
+^^^^^^
+
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * estados2017
+    * `Estados de México <https://public.opendatasoft.com/explore/dataset/estados-de-mexico>`_
+
+Scotland (GB)
+^^^^^^^^^^^^^
+
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * ward2014
+    * `Wards in Scotland 2014 <https://public.opendatasoft.com/explore/dataset/wards-in-scotland-december-2014>`_
+  * * ward2015
+    * `Wards in Scotland 2015 <https://public.opendatasoft.com/explore/dataset/wards-in-scotland-december-2015>`_
+  * * ward2016
+    * `Wards in Scotland 2016 <https://public.opendatasoft.com/explore/dataset/wards-in-scotland-december-2016>`_
+
+Wales (GB)
+^^^^^^^^^^
+
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * county2016
+    * `Counties and Unitary Authorities in Wales <https://public.opendatasoft.com/explore/dataset/counties-and-unitary-authorities-december-2016-generalised-clipped-boundaries-i0>`_
+  * * ward2014
+    * `Wards in Wales 2014 <https://public.opendatasoft.com/explore/dataset/wards-in-wales-december-2014>`_
+  * * ward2015
+    * `Wards in Wales 2015 <https://public.opendatasoft.com/explore/dataset/wards-in-wales-december-2015>`_
+  * * wards2016
+    * `Wards in Wales 2016 <https://public.opendatasoft.com/explore/dataset/wards-in-wales-december-2016>`_
+  * * parish2014
+    * `Parishes in Wales 2015 <https://public.opendatasoft.com/explore/dataset/parishes-in-wales-december-2014>`_
+  * * parish2016
+    * `Parishes in Wales 2016 <https://public.opendatasoft.com/explore/dataset/parishes-in-wales-december-2016>`_
+
+England (GB)
+^^^^^^^^^^^^
+
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * county2016
+    * `Counties and Unitary Authorities in England <https://public.opendatasoft.com/explore/dataset/counties-and-unitary-authorities-december-2016-generalised-clipped-boundaries-in>`_
+  * * region2016
+    * `Regions in England <https://public.opendatasoft.com/explore/dataset/regions-in-england-december-2016>`_
+  * * ward2014
+    * `Wards in England 2014 <https://public.opendatasoft.com/explore/dataset/wards-in-england-december-2014>`_
+  * * ward2015
+    * `Wards in England 2015 <https://public.opendatasoft.com/explore/dataset/wards-in-england-december-2015>`_
+  * * ward2016
+    * `Wards in England 2016 <https://public.opendatasoft.com/explore/dataset/wards-in-england-december-2016>`_
+  * * parish2014
+    * `Parishes in England 2014 <https://public.opendatasoft.com/explore/dataset/parishes-in-england-december-2014>`_
+  * * parish2016
+    * `Parishes in England 2016 <https://public.opendatasoft.com/explore/dataset/parishes-in-england-december-2016>`_
+
+Spain
+^^^^^
+
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * comunidades-autonomas2012
+    * `Comunidades Autónomas españolas <https://public.opendatasoft.com/explore/dataset/comunidades-autonomas-espanolas>`_
+  * * provincias2012
+    * `Provincias españolas <https://public.opendatasoft.com/explore/dataset/provincias-espanolas>`_
+
+World
+^^^^^
+
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * countries2016
+    * `Natural Earth Countries <https://public.opendatasoft.com/explore/dataset/natural-earth-countries-1_110m>`_
+
 
 Retrieve Administrative Divisions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1382,25 +1539,105 @@ This processor uses a **Geo Point 2D** to retrieve information (name, code and *
 
 This processor is not activated by default. Please contact the OpenDataSoft support team if you plan to use it.
 
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| .   | 1       | 2                     | 3            | 4        | 5              | 6                        | 7    |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| CA  | Country | Provinces             |              | Counties |                |                          |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| CH  | Country | Kantone               |              | Bezirke  | Postleitzahlen | Gemeinde (BFS)           |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| DE  | Country | Länder                |              |          | Postleitzahlen |                          |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| ES  | Country | Comunidades Autónomas | Provincias   |          |                | Municipios               |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| FR  | Country | Nouvelles régions     | Départements |          | Codes Postaux  | Communes (INSEE) de 2016 | IRIS |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| MX  | Country | Estados               |              |          |                |                          |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| NL  | Country |                       |              |          | Postcodes      |                          |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| US  | Country | States                |              | Counties | ZCTA           |                          |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
+.. list-table::
+  :header-rows: 1
+
+  * *
+    * 1
+    * 2
+    * 3
+    * 4
+    * 5
+    * 6
+    * 7
+  * * FR
+    * Country
+    * Nouvelles régions
+    * Départements
+    * Cantons
+    * Codes Postaux
+    * Commune
+    * Contours IRIS
+  * * CH
+    * Country
+    * Kantons
+    *
+    * Bezirks
+    * Postleitzahlen
+    * Hoheits
+    *
+  * * NL
+    * Country
+    *
+    *
+    *
+    * Postcodes
+    *
+    *
+  * * CA
+    * Country
+    * Provinces
+    *
+    * Census Divisions
+    *
+    * Census Subdivisions
+    *
+  * * DE
+    * Country
+    * Länder
+    *
+    *
+    * Postleitzahlen
+    *
+    *
+  * * US
+    * Country
+    * State Boundaries
+    *
+    * County Boundaries
+    * ZCTA
+    *
+    *
+  * * MX
+    * Country
+    * Estados
+    *
+    *
+    *
+    *
+    *
+  * * GB-SCT
+    * Country
+    *
+    *
+    *
+    * Wards
+    *
+    *
+  * * GB-WLS
+    * Country
+    *
+    *
+    * Counties and Unitary Authorities
+    * Wards
+    * Parishes
+    *
+  * * GB-ENG
+    * Country
+    * Regions
+    *
+    * Counties and Unitary Authorities
+    * Wards
+    * Parishes
+    *
+  * * ES
+    * Country
+    * Comunidades Autónomas
+    * Provincias
+    *
+    *
+    * Municipios
+    *
 
 Converters and functions
 ~~~~~~~~~~~~~~~~~~~~~~~~
