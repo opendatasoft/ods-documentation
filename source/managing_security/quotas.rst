@@ -28,18 +28,9 @@ Your license defines 4 global limits on your portal: the first one puts an upper
 
 You can see these quotas and check any information related to your license, under the **License** section of the back office.
 
-.. ifconfig:: language == 'en'
-
-    .. image:: quotas__license_1--en.png
+.. localizedimage:: quotas__license_1.png
         :alt: Current status of your license quotas
-    .. image:: quotas__license_2--en.png
-        :alt: Current status of your license quotas
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: quotas__license_1--fr.png
-        :alt: Current status of your license quotas
-    .. image:: quotas__license_2--fr.png
+.. localizedimage:: quotas__license_2.png
         :alt: Current status of your license quotas
 
 Setting defaults limitations on users
