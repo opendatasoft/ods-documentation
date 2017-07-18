@@ -59,10 +59,10 @@ OpenDataSoft glossary
      * Definition
    * * Assets
 
-     * Assets are the graphical elements upoloaded to the plateform. Assets can be images or fonts, they can be used on custom pages. 
+     * Assets are the graphical elements uploaded to the platform. Assets can be images or fonts, they can be used on custom pages.
    * * Catalog
 
-     * The catalog is a register of all the dataset you have on your platform. The collection of datasets is organised and can be browsed by a full text search and filtered using the datasets' characteristics 
+     * The catalog is a register of all the dataset you have on your platform. The collection of datasets is organized and can be browsed by a full text search and filtered using the datasets' characteristics
    * * Chart
 
        |link_12|
@@ -70,7 +70,7 @@ OpenDataSoft glossary
      * A chart, also called a graph, is a graphical representation of data, in which "the data is represented by symbols, such as bars in a bar chart, lines in a line chart, or slices in a pie chart". A chart can represent tabular numeric data, functions or some kinds of qualitative structure and provides different info.
    * * Chart builder
 
-     * Chart builder is the chart building solution of OpenDatasoft. With Chart Builder, you can choose a vizualisation type, choose data to display and customize X and Y axes and colors
+     * Chart builder is the chart building solution of OpenDatasoft. With Chart Builder, you can choose a visualisation type, choose data to display and customize X and Y axes and colors
    * * Choropleth map
 
        |link_14|
@@ -108,7 +108,7 @@ OpenDataSoft glossary
      * Keywords help understand the data content of the dataset. They are used to filter, search and browse datasets by content. Keywords are non constrained and can be typed freely.
    * * License (dataset)
 
-     * The License refers to the permissions attached to a dataset regarding conditions of use, reproductability and monetary use
+     * The License refers to the permissions attached to a dataset regarding conditions of use, reproducibility and monetary use
    * * Map builder
 
      * Map builder is the map building solution of OpenDatasoft. With Map Builder, you can quickly add datasets to a geographical view and customize the colors, data clustering methods and tooltips.
@@ -127,7 +127,7 @@ OpenDataSoft glossary
      * A record (also called struct or compound data) is a basic data structure. A record is a collection of fields, possibly of different data types, typically in fixed number and sequence 
    * * Reuse
 
-     * A reuse is a volontary declaration of dataset use in another context (a map, an application, a website) by  anyone
+     * A reuse is a voluntary declaration of dataset use in another context (a map, an application, a website) by  anyone
    * * Subdomain
 
      * A subdomain is a child domain of a parent domain. A parent domain can distribute or collect content to these child domains. 
@@ -177,7 +177,7 @@ Technical glossary
 
        |link_38|
 
-     * Catalog Service for the Web (CSW), sometimes seen as Catalog Service - Web, is a standard for exposing a catalogue of geospatial records in XML on the Internet (over HTTP). The catalogue is made up of records that describe geospatial data (e.g. KML), geospatial services (e.g. WMS), and related resources.
+     * Catalog Service for the Web (CSW), sometimes seen as Catalog Service - Web, is a standard for exposing a catalog of geospatial records in XML on the Internet (over HTTP). The catalog is made up of records that describe geospatial data (e.g. KML), geospatial services (e.g. WMS), and related resources.
    * * Database
 
        |link_39|
@@ -217,7 +217,7 @@ Technical glossary
 
        |link_46|
 
-     * HyperText Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS), and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web. Web browsers receive HTML documents from a webserver or from local storage and render them into multimedia web pages.
+     * HyperText Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS), and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages.
    * * HTTP (HyperText Transfer Protocol)
 
        |link_47|
@@ -323,7 +323,7 @@ Technical glossary
 
        |link_68|
 
-     * Tiles are individually requested image files over the internetthat are seemlessly joined to create a map 
+     * Tiles are individually requested image files over the internet that are seemlessly joined to create a map
    * * Token
 
        |link_69|
