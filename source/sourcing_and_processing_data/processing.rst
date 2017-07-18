@@ -1592,7 +1592,7 @@ It takes the following parameters:
     * yes
 
 Create Geopoint
-~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^
 
 This processor is used to create a geopoint field from a latitude field and a longitude field.
 
