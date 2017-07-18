@@ -1151,8 +1151,92 @@ It takes the following parameters:
 Geographical processors
 -----------------------
 
+Geographical processors are divided into 4 categories according to what you are trying to achieve:
+
+- **Geocoders**: convert a human readable address into a geo point
+- **GeoJoin processors**: retrieve geoshapes from normalized codes for country specific administrative divisions. There is one GeoJoin processor per supported country, each of which features several indexing codes like postcode, state or region identifier, etc
+- **Retrieve Administrative Divisions processors**: retrieve the name, code and geoshape of country specific administrative divisions enclosing a geopoint
+- **Converters and functions**: simplify, convert or normalize geographical data, or run computations based on them
+
+.. contents:: :local:
+
+Geocoders
+~~~~~~~~~
+
+Geocode with BAN
+^^^^^^^^^^^^^^^^
+
+This processor allows you to geocode addresses in France by using the Base d'Adresses Nationale (BAN) service.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Address
+    * Field containing French address
+    * Field
+    * yes
+  * * Postal code
+    * Field containing French postal code
+    * Field
+    * No
+  * * City
+    * Field containing French city
+    * Field
+    * No
+  * * Output field
+    * Field that will contain the produced WSG84 coordinates
+    * Field
+    * yes
+
+Geocode with Google
+^^^^^^^^^^^^^^^^^^^
+
+This processor allows you to geocode full text addresses by using the Google geocoding API. You need to possess a Google API key to do so.
+
+Geocode with ArcGIS
+^^^^^^^^^^^^^^^^^^^
+
+This processor allows you to geocode full text addresses by using the ArcGIS geocoding API. You need to possess an ArcGIS API key to do so.
+
+Geocode with PDOK
+^^^^^^^^^^^^^^^^^
+
+This processor allows you to geocode addresses in the Netherlands by using the PDOK service.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Address
+    * Field containing NL address
+    * Field
+    * yes
+  * * Postal code
+    * Field containing NL postal code
+    * Field
+    * No
+  * * City
+    * Field containing NL city
+    * Field
+    * No
+  * * Output field
+    * Field that will contain the produced WSG84 coordinates
+    * Field
+    * yes
+
 Country Code to Geo Coordinates
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This processor uses a country ISO code to produce a geo coordinate.
 
@@ -1174,8 +1258,155 @@ It takes the following parameters:
     * Field
     * yes
 
+INSEE Code to Geo Coordinates
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This processor uses a French INSEE code to produce a geo coordinate.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Insee code
+    * Field that contains an INSEE code
+    * Field
+    * yes
+  * * Output field
+    * Field that will contain the produced WSG84 coordinates
+    * Field
+    * yes
+
+IP Address to Geo Coordinates
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This processor allows you to geocode an IP address. It uses the `GeoIP <http://geolite.maxmind.com>`_ database.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * IP address
+    * Field that contains the IP address
+    * Field
+    * yes
+  * * Output field
+    * Field that will contain the produced WSG84 coordinates
+    * Field
+    * yes
+
+Zip Code to Geo Coordinates
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This processor uses a French postal code to produce a geo coordinate.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Postal code
+    * Field that contains a French postal code
+    * Field
+    * yes
+  * * output_field
+    * Field that will contain the produces WSG84 coordinates
+    * Field
+    * yes
+
+GeoJoin
+~~~~~~~
+
+This processor collection retrieves administrative divisions **Geo Shapes** from a key (postcode, county code, etc.). Each country has a dedicated processor and specific referentials.
+These referentials, which are referenced in the tables below, can be found in datasets available on `public.opendatasoft.com <https://public.opendatasoft.com>`_.
+
+France
+^^^^^^
+
+====================  ==========================================================================================================
+Repository            Source
+====================  ==========================================================================================================
+postcode              `Carte des Codes Postaux <https://public.opendatasoft.com/explore/dataset/contour-des-codes-postaux>`_
+iris                  `Contours Iris - 2014 <https://public.opendatasoft.com/explore/dataset/contours-iris-2014>`_
+insee                 `Geofla® - Communes 2015 <https://public.opendatasoft.com/explore/dataset/geoflar-communes-2015>`_
+departements          `Contours simplifiés des départements Français 2015 <https://public.opendatasoft.com/explore/dataset/contours-simplifies-des-departements-francais-2015>`_
+regions               `Contours géographiques des nouvelles régions (métropole) <https://public.opendatasoft.com/explore/dataset/contours-geographiques-des-nouvelles-regions-metropole>`_
+regions 1970          `Contours des régions françaises sur OpenStreetMap <https://public.opendatasoft.com/explore/dataset/contours-des-regions-francaises-sur-openstreetmap>`_
+====================  ==========================================================================================================
+
+USA
+^^^
+
+====================  ==========================================================================================================
+Repository            Source
+====================  ==========================================================================================================
+zcta                  `US ZCTA 2010 <https://public.opendatasoft.com/explore/dataset/us-zcta-2010>`_
+county                `US County Boundaries <https://public-us.opendatasoft.com/explore/dataset/us-county-boundaries>`_
+====================  ==========================================================================================================
+
+Netherlands
+^^^^^^^^^^^
+
+====================  ==========================================================================================================
+Repository            Source
+====================  ==========================================================================================================
+postcode              `Netherlands Postcodes <https://public.opendatasoft.com/explore/dataset/openpostcodevlakkenpc4>`_
+====================  ==========================================================================================================
+
+Germany
+^^^^^^^
+
+====================  ==========================================================================================================
+Repository            Source
+====================  ==========================================================================================================
+postcode              `Postleitzahlen Deutschland <https://public.opendatasoft.com/explore/dataset/postleitzahlen-deutschland>`_
+====================  ==========================================================================================================
+
+Retrieve Administrative Divisions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This processor uses a **Geo Point 2D** to retrieve information (name, code and **Geo Shapes**) of administrative divisions. You need to choose an administrative level between 1 and 7. The available administrative divisions are referenced in the table below.
+
+This processor is not activated by default. Please contact the OpenDataSoft support team if you plan to use it.
+
++-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
+| .   | 1       | 2                     | 3            | 4        | 5              | 6                        | 7    |
++-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
+| CA  | Country | Provinces             |              | Counties |                |                          |      |
++-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
+| CH  | Country | Kantone               |              | Bezirke  | Postleitzahlen | Gemeinde (BFS)           |      |
++-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
+| DE  | Country | Länder                |              |          | Postleitzahlen |                          |      |
++-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
+| ES  | Country | Comunidades Autónomas | Provincias   |          |                | Municipios               |      |
++-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
+| FR  | Country | Nouvelles régions     | Départements |          | Codes Postaux  | Communes (INSEE) de 2016 | IRIS |
++-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
+| MX  | Country | Estados               |              |          |                |                          |      |
++-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
+| NL  | Country |                       |              |          | Postcodes      |                          |      |
++-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
+| US  | Country | States                |              | Counties | ZCTA           |                          |      |
++-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
+
+Converters and functions
+~~~~~~~~~~~~~~~~~~~~~~~~
+
 Coordinates system conversion
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This processor converts a degrees, minutes, seconds geo coordinate to a standard geo coordinate.
 
@@ -1226,158 +1457,8 @@ It takes the following parameters:
     * Field
     * yes
 
-Compute Geo distance
-~~~~~~~~~~~~~~~~~~~~
-
-This processor computes the distance between two coordinates.
-
-It takes the following parameters:
-
-.. list-table::
-  :header-rows: 1
-
-  * * Label
-    * Description
-    * Type
-    * Mandatory
-  * * Coordinates A
-    *
-    * Field
-    * yes
-  * * Coordinates B
-    *
-    * Field
-    * yes
-  * * Output field
-    * Field that will contain the computed distance
-    * Field
-    * yes
-
-Geomasking
-~~~~~~~~~~
-
-Provides privacy protection by approximating a geographical location within a specific radius.
-
-It takes the following parameters:
-
-.. list-table::
-  :header-rows: 1
-
-  * * Label
-    * Description
-    * Type
-    * Mandatory
-  * * Field
-    * Field containing the coordinates you want to approximate
-    * Field
-    * yes
-  * * Minimum distance (in meters)
-    *
-    * Double
-    * no
-  * * Maximum distance (in meters)
-    *
-    * Double
-    * no
-
-INSEE Code to Geo Coordinates
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This processor uses a French INSEE code to produce a geo coordinate.
-
-It takes the following parameters:
-
-.. list-table::
-  :header-rows: 1
-
-  * * Label
-    * Description
-    * Type
-    * Mandatory
-  * * Insee code
-    * Field that contains an INSEE code
-    * Field
-    * yes
-  * * Output field
-    * Field that will contain the produced WSG84 coordinates
-    * Field
-    * yes
-
-IP Address to Geo Coordinates
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This processor allows you to geocode an IP address. It uses the `GeoIP <http://geolite.maxmind.com>`_ database.
-
-It takes the following parameters:
-
-.. list-table::
-  :header-rows: 1
-
-  * * Label
-    * Description
-    * Type
-    * Mandatory
-  * * IP address
-    * Field that contains the IP address
-    * Field
-    * yes
-  * * Output field
-    * Field that will contain the produced WSG84 coordinates
-    * Field
-    * yes
-
-Zip Code to Geo Coordinates
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This processor uses a French postal code to produce a geo coordinate.
-
-It takes the following parameters:
-
-.. list-table::
-  :header-rows: 1
-
-  * * Label
-    * Description
-    * Type
-    * Mandatory
-  * * Postal code
-    * Field that contains a French postal code
-    * Field
-    * yes
-  * * output_field
-    * Field that will contain the produces WSG84 coordinates
-    * Field
-    * yes
-
-Simplify Geo Shape
-~~~~~~~~~~~~~~~~~~
-
-Simplify a geo shape to reduce processing time and dataset size.
-
-It takes the following parameters:
-
-.. list-table::
-  :header-rows: 1
-
-  * * Label
-    * Type
-    * Mandatory
-  * * Tolerance (simplification level)
-    * Double
-    * yes
-
-Tolerance indicates the value below which intermediate points will be suppressed.
-
-Depending on the shape complexity, different tolerances can be tested.
-
-You could start with a tolerance value of 0.0001.
-To simplify more, use a power of ten e.g. 0.001, then 0.01.
-
-If you use a tolerance too high, your shapes will be overly simplified and unrecognizable.
-Use the preview to find out which tolerance works best for you.
-
 Normalize Projection Reference
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This processor can be used to handle a **Geo Point 2D** with a projection system different from `WGS84 <http://en.wikipedia.org/wiki/WGS_84>`_ field. It takes as a parameter the name of the field as well as the `EPSG <http://spatialreference.org/ref/epsg/>`_ code of the source coordinates system. The field's value is replaced with its WGS84 representation.
 
@@ -1406,121 +1487,8 @@ It takes the following parameters:
     * yes
     * 4326
 
-Geocode with Google
-~~~~~~~~~~~~~~~~~~~
-
-This processor allows you to geocode full text addresses by using the Google geocoding API. You need to possess a Google API key to do so.
-
-Geocode with ArcGIS
-~~~~~~~~~~~~~~~~~~~
-
-This processor allows you to geocode full text addresses by using the ArcGIS geocoding API. You need to possess an ArcGIS API key to do so.
-
-Geocode with PDOK
-~~~~~~~~~~~~~~~~~~~
-
-This processor allows you to geocode addresses in the Netherlands by using the PDOK service.
-
-It takes the following parameters:
-
-.. list-table::
-  :header-rows: 1
-
-  * * Label
-    * Description
-    * Type
-    * Mandatory
-  * * Address
-    * Field containing NL address
-    * Field
-    * yes
-  * * Postal code
-    * Field containing NL postal code
-    * Field
-    * No
-  * * City
-    * Field containing NL city
-    * Field
-    * No
-  * * Output field
-    * Field that will contain the produced WSG84 coordinates
-    * Field
-    * yes
-
-Retrieve Administrative Divisions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This processor uses a **Geo Point 2D** to retrieve information (name, code and **Geo Shapes**) of administrative divisions. You need to choose an administrative level between 1 and 7. The available administrative divisions are referenced in the table below.
-
-This processor is not activated by default. Please contact the OpenDataSoft support team if you plan to use it.
-
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| .   | 1       | 2                     | 3            | 4        | 5              | 6                        | 7    |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| CA  | Country | Provinces             |              | Counties |                |                          |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| CH  | Country | Kantone               |              | Bezirke  | Postleitzahlen | Gemeinde (BFS)           |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| DE  | Country | Länder                |              |          | Postleitzahlen |                          |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| ES  | Country | Comunidades Autónomas | Provincias   |          |                | Municipios               |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| FR  | Country | Nouvelles régions     | Départements |          | Codes Postaux  | Communes (INSEE) de 2016 | IRIS |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| MX  | Country | Estados               |              |          |                |                          |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| NL  | Country |                       |              |          | Postcodes      |                          |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| US  | Country | States                |              | Counties | ZCTA           |                          |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-
-
-GeoJoin
-~~~~~~~
-
-This processor collection retrieves administrative divisions **Geo Shapes** from a key (postcode, county code, etc.). Each country has a dedicated processor and specific referentials.
-These referentials, which are referenced in the tables below, can be found in datasets available on https://public.opendatasoft.com.
-
-France
-
-====================  ==========================================================================================================
-Repository            Source
-====================  ==========================================================================================================
-postcode              `Carte des Codes Postaux <https://public.opendatasoft.com/explore/dataset/contour-des-codes-postaux>`_
-iris                  `Contours Iris - 2014 <https://public.opendatasoft.com/explore/dataset/contours-iris-2014>`_
-insee                 `Geofla® - Communes 2015 <https://public.opendatasoft.com/explore/dataset/geoflar-communes-2015>`_
-departements          `Contours simplifiés des départements Français 2015 <https://public.opendatasoft.com/explore/dataset/contours-simplifies-des-departements-francais-2015>`_
-regions               `Contours géographiques des nouvelles régions (métropole) <https://public.opendatasoft.com/explore/dataset/contours-geographiques-des-nouvelles-regions-metropole>`_
-regions 1970          `Contours des régions françaises sur OpenStreetMap <https://public.opendatasoft.com/explore/dataset/contours-des-regions-francaises-sur-openstreetmap>`_
-====================  ==========================================================================================================
-
-USA
-
-====================  ==========================================================================================================
-Repository            Source
-====================  ==========================================================================================================
-zcta                  `US ZCTA 2010 <https://public.opendatasoft.com/explore/dataset/us-zcta-2010>`_
-county                `US County Boundaries <https://public-us.opendatasoft.com/explore/dataset/us-county-boundaries>`_
-====================  ==========================================================================================================
-
-Netherlands
-
-====================  ==========================================================================================================
-Repository            Source
-====================  ==========================================================================================================
-postcode              `Netherlands Postcodes <https://public.opendatasoft.com/explore/dataset/openpostcodevlakkenpc4>`_
-====================  ==========================================================================================================
-
-Germany
-
-====================  ==========================================================================================================
-Repository            Source
-====================  ==========================================================================================================
-postcode              `Postleitzahlen Deutschland <https://public.opendatasoft.com/explore/dataset/postleitzahlen-deutschland>`_
-====================  ==========================================================================================================
-
 Well-known text and binary to GeoJson
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This processor can be used to convert vector geometry object represented in **Well-known text** (**WKT**) or **Well-known binary** (**WKB**) into **GeoJson** object.
 
@@ -1541,6 +1509,119 @@ Examples of **Well-known text** format:
     POLYGON ((35 10, 45 45, 15 40, 10 20, 35 10),(20 30, 35 35, 30 20, 20 30))
 
 This processor is not activated by default. Please contact the OpenDataSoft support team if you plan to use it.
+
+Simplify Geo Shape
+^^^^^^^^^^^^^^^^^^
+
+This processor simplifies a geo shape to reduce processing time and dataset size.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Type
+    * Mandatory
+  * * Tolerance (simplification level)
+    * Double
+    * yes
+
+Tolerance indicates the value below which intermediate points will be suppressed.
+
+Depending on the shape complexity, different tolerances can be tested.
+
+You could start with a tolerance value of 0.0001.
+To simplify more, use a power of ten e.g. 0.001, then 0.01.
+
+If you use a tolerance too high, your shapes will be overly simplified and unrecognizable.
+Use the preview to find out which tolerance works best for you.
+
+Geomasking
+^^^^^^^^^^
+
+This processor provides privacy protection by approximating a geographical location within a specific radius.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Field
+    * Field containing the coordinates you want to approximate
+    * Field
+    * yes
+  * * Minimum distance (in meters)
+    *
+    * Double
+    * no
+  * * Maximum distance (in meters)
+    *
+    * Double
+    * no
+
+Compute Geo distance
+^^^^^^^^^^^^^^^^^^^^
+
+This processor computes the distance between 2 coordinates.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Coordinates A
+    *
+    * Field
+    * yes
+  * * Coordinates B
+    *
+    * Field
+    * yes
+  * * Output field
+    * Field that will contain the computed distance
+    * Field
+    * yes
+
+Create Geopoint
+~~~~~~~~~~~~~~~~
+
+This processor is used to create a geopoint field from a latitude field and a longitude field.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Type
+    * Mandatory
+    * Default Value
+  * * Latitude
+    * Field
+    * yes
+    *
+  * * Longitude
+    * Field
+    * yes
+    *
+  * * Source EPSG Code
+    * String representing the `EPSG <http://spatialreference.org/ref/epsg/>`_ (spacial reference) code of the geographical data
+    * yes
+    * 4326
+  * * Output Field
+    * Field
+    * yes
+    *
+
 
 Text processors
 ---------------
@@ -1723,7 +1804,7 @@ Split Text
 
 This processor can be used to split a field's value and to extract the Nth element to a new field.
 
-The number of the part extracted is specified in the ``index`` parameter. Note that the numbering starts at 0.
+The number of the part extracted is specified in the ``index`` parameter. Note that the numbering starts at 1.
 
 .. ifconfig:: language == 'en'
 

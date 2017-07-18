@@ -4,18 +4,13 @@ Managing quotas
 Your portal license
 -------------------
 
-Before diving into what quotas exist on OpenDataSoft portals, it is important to know that for each portal there is a
-license that applies. A license is a contract between OpenDataSoft and the portal owners defining how much data can be
-injected into the portal and the consumption of this data.
+Before diving into which quotas exist on OpenDataSoft portals, it is important to introduce the license topic. A license applies to each and every OpenDataSoft portal. It is a contract between OpenDataSoft and the portal owners, defining how much data can be injected into the portal and the consumption of this data.
 
 For example, freemium portals can have up to 5 datasets, each having at most 20000 records.
 
-Your license defines 3 global limits on your portal, the two first ones regulate the amount of data you can inject into
-the portal while the last one puts an upper limit on the consumption of this data.
+Your license defines 4 global limits on your portal: the first one puts an upper limit on the consumption of the data and the others regulate the amount of data you can inject into the portal.
 
-* The **number of datasets** quota constraints the total number of datasets currently within the portal (published or not),
-* the **number of records** quota limits to total number of records within published datasets, regardless of the actual content of these records.
-* lastly, the **number of API calls** quota limits the number of requests made to the data within a given timeframe (usually within a month).
+* **API calls quota** limits the number of requests made to the data within a given timeframe (usually within a month)
 
 .. important::
 
@@ -27,17 +22,16 @@ the portal while the last one puts an upper limit on the consumption of this dat
    API calls are therefore made by visitors on your portal, but also by developers using the API to retrieve the data
    you published and dashboards hosted outside of your portal.
 
-You can see your license quotas and their current usage in your backoffice, under the **Analytics/Quotas** section.
+* **Data size quota** limits the total size of the data in datasets in the domain
+* **Datasets quota** constraints the total number of currently published datasets, for local datasets on the one hand and for federated datasets on the other hand
+* **Records quota** limits the total number of records within published datasets and also limits the maximum number of records per dataset
 
-.. ifconfig:: language == 'en'
+You can see these quotas and check any information related to your license, under the **License** section of the back office.
 
-    .. image:: quotas__license--en.png
-        :alt: Current status of your licence quotas
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: quotas__license--fr.png
-        :alt: Current status of your licence quotas
+.. localizedimage:: quotas__license_1.png
+        :alt: Current status of your license quotas
+.. localizedimage:: quotas__license_2.png
+        :alt: Current status of your license quotas
 
 Setting defaults limitations on users
 -------------------------------------
