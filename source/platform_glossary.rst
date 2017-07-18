@@ -70,7 +70,7 @@ OpenDataSoft glossary
      * A chart, also called a graph, is a graphical representation of data, in which "the data is represented by symbols, such as bars in a bar chart, lines in a line chart, or slices in a pie chart". A chart can represent tabular numeric data, functions or some kinds of qualitative structure and provides different info.
    * * Chart builder
 
-     * Chart builder is the chart building solution of OpenDatasoft. With Chart Builder, you can choose a visualisation type, choose data to display and customize X and Y axes and colors
+     * Chart builder is the chart building solution of OpenDatasoft. With Chart Builder, you can choose a visualization type, choose data to display and customize X and Y axes and colors
    * * Choropleth map
 
        |link_14|
