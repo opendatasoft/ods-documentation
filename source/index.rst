@@ -52,7 +52,7 @@ This documentation is OpenDataSoft's reference documentation. It complements inl
    customizing_look_and_feel/index
    monitoring_audience/index
    managing_subdomains/index
-   using_api/index
+   using_api
 
    faq
    platform_glossary

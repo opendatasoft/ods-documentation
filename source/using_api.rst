@@ -1,5 +1,5 @@
-Introduction
-============
+Using the API
+=============
 
 In this section we'll explore what the OpenDataSoft API does, why it has two versions and how to retrieve data from it.
 
@@ -51,7 +51,7 @@ Differences between ODS APIv1 and APIv2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This API is currently under development and will be officially available soon, but don't hesitate to give it a try :
-:doc:`V2 </using_api/v2/index>`.
+`V2 <https://docs.opendatasoft.com/api/explore/v2>`.
 
 Here is the main differences and key changes between APIv1 and APIv2.
 
@@ -65,12 +65,6 @@ Here is the main differences and key changes between APIv1 and APIv2.
 * Exporters have their own entry-point under ``/api/catalog/exports`` and ``/api/catalog/datasets/<dataset_id>/exports``
 * Navigation search (former facet search) and standard search are completely splitted.
 
-
-Common aspects
-^^^^^^^^^^^^^^
-
-Both version of the API share one essential mechanism: the :doc:`authentification method </using_api/authentication>`
-which enables you to use the same credentials for both versions.
 
 What about ODATA, WFS and CSW?
 ------------------------------
@@ -92,3 +86,12 @@ WFS and CSW
 
 These are both standards focusing on geographic data and as such are especially relevant if you're looking to interface
 the platform with other GIS software.
+
+Links to the APIs specific documentations
+-----------------------------------------
+
+* `ODS API V1 <https://docs.opendatasoft.com/explore/v1>`_
+* `ODS API V2 <https://docs.opendatasoft.com/explore/v2>`_
+* `OData <https://docs.opendatasoft.com/explore/odata>`_
+* `CSW <https://docs.opendatasoft.com/explore/csw>`_
+* `WFS <https://docs.opendatasoft.com/explore/wfs>`_
