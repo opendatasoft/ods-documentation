@@ -91,6 +91,7 @@ Portals
    harvesters/socrata
    harvesters/datajson
    harvesters/quandl
+   harvesters/enigma
 
 Services
 ~~~~~~~~

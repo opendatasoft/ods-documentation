@@ -57,7 +57,7 @@ available as HTML elements, allowing you to natively integrate data visualizatio
 pages by combining widgets together.
 
 The ODS-Widgets library is an open source, AngularJS-based framework developed and maintained by OpenDataSoft on
-`GitHub <https://github.com/opendatasoft/ods-widgets>`_. It comes with a complete and comprehenseive
+`GitHub <https://github.com/opendatasoft/ods-widgets>`_. It comes with a complete and comprehensive
 `online documentation <https://opendatasoft.github.io/ods-widgets/docs/>`_.
 
 It can be used directly in your domain's content pages, or in third party Web sites as a standalone toolkit.
