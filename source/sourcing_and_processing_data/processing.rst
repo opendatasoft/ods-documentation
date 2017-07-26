@@ -1341,28 +1341,29 @@ France
 
   * * Repository
     * Source
-  * * region1970
-    * `Contours des régions françaises sur OpenStreetMap <https://public.opendatasoft.com/explore/dataset/contours-des-regions-francaises-sur-openstreetmap>`_
-  * * region2016
-    * `Contours géographiques des nouvelles régions (métropole) <https://public.opendatasoft.com/explore/dataset/contours-geographiques-des-nouvelles-regions-metropole>`_
-  * * departements-simplifies2015
-    * `Contours simplifiés des départements Français 2015 <https://public.opendatasoft.com/explore/dataset/contours-simplifies-des-departements-francais-2015>`_
-  * * departements2015
-    * `Geofla® - Départements 2015 <https://public.opendatasoft.com/explore/dataset/geoflar-departements-2015>`_
   * * cantons2015
     * `Cantons <https://public.opendatasoft.com/explore/dataset/decoupage-des-cantons-pour-les-elections-departementales-de-mars-2015>`_
-  * * zipcode2013
-    * `Carte des Codes Postaux <https://public.opendatasoft.com/explore/dataset/contour-des-codes-postaux>`_
   * * communes2013
-    * `Geofla® Commune 2015 <https://public.opendatasoft.com/explore/dataset/geoflar-communes>`_
+    * `Geofla® - Communes 2013 <https://public.opendatasoft.com/explore/dataset/geoflar-communes>`_
   * * communes2015
     * `Geofla® - Communes 2015 <https://public.opendatasoft.com/explore/dataset/geoflar-communes-2015>`_
   * * communes2016
     * `Geofla® Commune 2016 <https://public.opendatasoft.com/explore/dataset/geoflar-communes-2016>`_
+  * * departements-simplifies2015
+    * `Contours simplifiés des départements Français 2015 <https://public.opendatasoft.com/explore/dataset/contours-simplifies-des-departements-francais-2015>`_
+  * * departements2015
+    * `Geofla® - Départements 2015 <https://public.opendatasoft.com/explore/dataset/geoflar-departements-2015>`_
   * * iris2014
     * `Contours IRIS 2014 <https://public.opendatasoft.com/explore/dataset/contours-iris-2014>`_
   * * iris2015
     * `Contours IRIS 2015 <https://public.opendatasoft.com/explore/dataset/contours-iris-2015>`_
+  * * postcode2013
+    * `Carte des Codes Postaux <https://public.opendatasoft.com/explore/dataset/contour-des-codes-postaux>`_
+  * * regions1970
+    * `Contours des régions françaises sur OpenStreetMap <https://public.opendatasoft.com/explore/dataset/contours-des-regions-francaises-sur-openstreetmap>`_
+  * * regions2016
+    * `Contours géographiques des nouvelles régions (métropole) <https://public.opendatasoft.com/explore/dataset/contours-geographiques-des-nouvelles-regions-metropole>`_
+
 
 Switzerland
 ^^^^^^^^^^^
@@ -1556,7 +1557,7 @@ This processor is not activated by default. Please contact the OpenDataSoft supp
     * Départements
     * Cantons
     * Codes Postaux
-    * Commune
+    * Communes INSEE
     * Contours IRIS
   * * CH
     * Country
