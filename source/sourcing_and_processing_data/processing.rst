@@ -1154,7 +1154,7 @@ Geographical processors
 Geographical processors are divided into 4 categories according to what you are trying to achieve:
 
 - **Geocoders**: convert a human readable address into a geo point
-- **GeoJoin processors**: retrieve geoshapes from normalized codes for country specific administrative divisions. There is one GeoJoin processor per supported country, each of which features several indexing codes like postcode, state or region identifier, etc
+- **GeoJoin processor**: retrieve geoshapes from normalized codes for country specific administrative divisions. The GeoJoin processor supports several countries, each of which features several indexing codes like postcode, state or region identifier, etc
 - **Retrieve Administrative Divisions processors**: retrieve the name, code and geoshape of country specific administrative divisions enclosing a geopoint
 - **Converters and functions**: simplify, convert or normalize geographical data, or run computations based on them
 
@@ -1330,7 +1330,7 @@ It takes the following parameters:
 GeoJoin
 ~~~~~~~
 
-This processor collection retrieves administrative divisions **Geo Shapes** from a key (postcode, county code, etc.). Each country has a dedicated processor and specific referentials.
+This processor retrieves administrative divisions **Geo Shapes** for a specified country and referential (postcode, county code, etc.). Each country has specific referentials.
 These referentials, which are referenced in the tables below, can be found in datasets available on `public.opendatasoft.com <https://public.opendatasoft.com>`_.
 
 France
