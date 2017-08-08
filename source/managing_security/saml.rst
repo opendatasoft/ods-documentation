@@ -69,3 +69,176 @@ provider metadata document to enable a identity federation.
 
 You can download the metadata document for your OpenDataSoft domain on
 ``https://<YOUR DOMAIN>.opendatasoft.com/saml2/metadata.xml``
+
+
+Using user attributes to filter data
+------------------------------------
+
+Through the #attr function, it is possible to filter a dataset records in such a way that the only records returned are the ones that match a value set in the user attributes sent by the IdP. For the following examples, we assume that we have the 3 users, with respective usernames and SAML attributes ``user-country`` and ``user-language`` given by the following table.
+
+.. list-table::
+   :header-rows: 1
+
+   * * User
+     * user-country
+     * user-language
+   * * User1
+     * France
+     * French
+   * * User2
+     * Canada
+     * French
+   * * User3
+     * United States
+     * English
+
+
+And a dataset with records given by the following table.
+
+.. list-table::
+   :header-rows: 1
+
+   * * country
+     * language
+     * message
+   * * Worldwide
+     * English
+     * Hello world
+   * * France
+     * French
+     * Bonjour à tous les Français
+   * * Canada
+     * French
+     * Bonjour à tous les Canadiens
+   * * Canada
+     * English
+     * Hello to all Canadians
+   * * United States
+     * English
+     * Hello to all Americans
+
+We can restrict these users so that they see only messages that apply to their respective countries, with the query ``#attr(country, user-country)``.
+
+User1 sees
+
+.. list-table::
+   :header-rows: 1
+
+   * * country
+     * language
+     * message
+   * * France
+     * French
+     * Bonjour à tous les Français
+
+User2 sees
+
+.. list-table::
+   :header-rows: 1
+
+   * * country
+     * language
+     * message
+   * * Canada
+     * French
+     * Bonjour à tous les Canadiens
+   * * Canada
+     * English
+     * Hello to all Canadians
+
+User3 sees
+
+.. list-table::
+   :header-rows: 1
+
+   * * country
+     * language
+     * message
+   * * United States
+     * English
+     * Hello to all Americans
+
+We can also restrict these users so that they only see messages that are in their respective language, with the query ``#attr(language, user-language)``.
+
+User1 sees
+
+.. list-table::
+   :header-rows: 1
+
+   * * country
+     * language
+     * message
+   * * France
+     * French
+     * Bonjour à tous les Français
+   * * Canada
+     * French
+     * Bonjour à tous les Canadiens
+
+User2 sees
+
+.. list-table::
+   :header-rows: 1
+
+   * * country
+     * language
+     * message
+   * * France
+     * French
+     * Bonjour à tous les Français
+   * * Canada
+     * French
+     * Bonjour à tous les Canadiens
+
+User3 sees
+
+.. list-table::
+   :header-rows: 1
+
+   * * country
+     * language
+     * message
+   * * Worldwide
+     * English
+     * Hello world
+   * * United States
+     * English
+     * Hello to all Americans
+
+Since it is a function of the query language, it can also be grouped with the usual operators, for instance, we can restrict users to only seeing messages that fit their country and languages with the query ``#attr(language, user-language) AND #attr(country, user-country)``.
+
+User1 sees
+
+.. list-table::
+   :header-rows: 1
+
+   * * country
+     * language
+     * message
+   * * France
+     * French
+     * Bonjour à tous les Français
+
+User2 sees
+
+.. list-table::
+   :header-rows: 1
+
+   * * country
+     * language
+     * message
+   * * Canada
+     * French
+     * Bonjour à tous les Canadiens
+
+User3 sees
+
+.. list-table::
+   :header-rows: 1
+
+   * * country
+     * language
+     * message
+   * * United States
+     * English
+     * Hello to all Americans
