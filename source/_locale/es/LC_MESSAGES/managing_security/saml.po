@@ -2,13 +2,13 @@
 # Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-13 18:46+0200\n"
+"POT-Creation-Date: 2017-07-18 15:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
@@ -277,3 +277,216 @@ msgid ""
 msgstr ""
 "Puede descargar el documento de metadatos del dominio OpenDataSoft en "
 "``https://<SU_DOMINIO>.opendatasoft.com/saml2/metadata.xml``."
+
+#: ../../source/managing_security/saml.rst:75
+msgid "Using user attributes to filter data"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:77
+msgid ""
+"Through the #attr function, it is possible to filter a dataset records in "
+"such a way that the only records returned are the ones that match a value "
+"set in the user attributes sent by the IdP. For the following examples, we "
+"assume that we have the 3 users, with respective usernames and SAML "
+"attributes ``user-country`` and ``user-language`` given by the following "
+"table."
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:82
+msgid "User"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:83
+msgid "user-country"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:84
+msgid "user-language"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:85
+msgid "User1"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:86
+#: ../../source/managing_security/saml.rst:107
+#: ../../source/managing_security/saml.rst:130
+#: ../../source/managing_security/saml.rst:171
+#: ../../source/managing_security/saml.rst:186
+#: ../../source/managing_security/saml.rst:218
+msgid "France"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:87
+#: ../../source/managing_security/saml.rst:90
+#: ../../source/managing_security/saml.rst:108
+#: ../../source/managing_security/saml.rst:111
+#: ../../source/managing_security/saml.rst:131
+#: ../../source/managing_security/saml.rst:143
+#: ../../source/managing_security/saml.rst:172
+#: ../../source/managing_security/saml.rst:175
+#: ../../source/managing_security/saml.rst:187
+#: ../../source/managing_security/saml.rst:190
+#: ../../source/managing_security/saml.rst:219
+#: ../../source/managing_security/saml.rst:231
+msgid "French"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:88
+msgid "User2"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:89
+#: ../../source/managing_security/saml.rst:110
+#: ../../source/managing_security/saml.rst:113
+#: ../../source/managing_security/saml.rst:142
+#: ../../source/managing_security/saml.rst:145
+#: ../../source/managing_security/saml.rst:174
+#: ../../source/managing_security/saml.rst:189
+#: ../../source/managing_security/saml.rst:230
+msgid "Canada"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:91
+msgid "User3"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:92
+#: ../../source/managing_security/saml.rst:116
+#: ../../source/managing_security/saml.rst:157
+#: ../../source/managing_security/saml.rst:204
+#: ../../source/managing_security/saml.rst:242
+msgid "United States"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:93
+#: ../../source/managing_security/saml.rst:105
+#: ../../source/managing_security/saml.rst:114
+#: ../../source/managing_security/saml.rst:117
+#: ../../source/managing_security/saml.rst:146
+#: ../../source/managing_security/saml.rst:158
+#: ../../source/managing_security/saml.rst:202
+#: ../../source/managing_security/saml.rst:205
+#: ../../source/managing_security/saml.rst:243
+msgid "English"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:96
+msgid "And a dataset with records given by the following table."
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:101
+#: ../../source/managing_security/saml.rst:127
+#: ../../source/managing_security/saml.rst:139
+#: ../../source/managing_security/saml.rst:154
+#: ../../source/managing_security/saml.rst:168
+#: ../../source/managing_security/saml.rst:183
+#: ../../source/managing_security/saml.rst:198
+#: ../../source/managing_security/saml.rst:215
+#: ../../source/managing_security/saml.rst:227
+#: ../../source/managing_security/saml.rst:239
+msgid "country"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:102
+#: ../../source/managing_security/saml.rst:128
+#: ../../source/managing_security/saml.rst:140
+#: ../../source/managing_security/saml.rst:155
+#: ../../source/managing_security/saml.rst:169
+#: ../../source/managing_security/saml.rst:184
+#: ../../source/managing_security/saml.rst:199
+#: ../../source/managing_security/saml.rst:216
+#: ../../source/managing_security/saml.rst:228
+#: ../../source/managing_security/saml.rst:240
+msgid "language"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:103
+#: ../../source/managing_security/saml.rst:129
+#: ../../source/managing_security/saml.rst:141
+#: ../../source/managing_security/saml.rst:156
+#: ../../source/managing_security/saml.rst:170
+#: ../../source/managing_security/saml.rst:185
+#: ../../source/managing_security/saml.rst:200
+#: ../../source/managing_security/saml.rst:217
+#: ../../source/managing_security/saml.rst:229
+#: ../../source/managing_security/saml.rst:241
+msgid "message"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:104
+#: ../../source/managing_security/saml.rst:201
+msgid "Worldwide"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:106
+#: ../../source/managing_security/saml.rst:203
+msgid "Hello world"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:109
+#: ../../source/managing_security/saml.rst:132
+#: ../../source/managing_security/saml.rst:173
+#: ../../source/managing_security/saml.rst:188
+#: ../../source/managing_security/saml.rst:220
+msgid "Bonjour à tous les Français"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:112
+#: ../../source/managing_security/saml.rst:144
+#: ../../source/managing_security/saml.rst:176
+#: ../../source/managing_security/saml.rst:191
+#: ../../source/managing_security/saml.rst:232
+msgid "Bonjour à tous les Canadiens"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:115
+#: ../../source/managing_security/saml.rst:147
+msgid "Hello to all Canadians"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:118
+#: ../../source/managing_security/saml.rst:159
+#: ../../source/managing_security/saml.rst:206
+#: ../../source/managing_security/saml.rst:244
+msgid "Hello to all Americans"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:120
+msgid ""
+"We can restrict these users so that they see only messages that apply to "
+"their respective countries, with the query ``#attr(country, user-country)``."
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:122
+#: ../../source/managing_security/saml.rst:163
+#: ../../source/managing_security/saml.rst:210
+msgid "User1 sees"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:134
+#: ../../source/managing_security/saml.rst:178
+#: ../../source/managing_security/saml.rst:222
+msgid "User2 sees"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:149
+#: ../../source/managing_security/saml.rst:193
+#: ../../source/managing_security/saml.rst:234
+msgid "User3 sees"
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:161
+msgid ""
+"We can also restrict these users so that they only see messages that are in "
+"their respective language, with the query ``#attr(language, user-"
+"language)``."
+msgstr ""
+
+#: ../../source/managing_security/saml.rst:208
+msgid ""
+"Since it is a function of the query language, it can also be grouped with "
+"the usual operators, for instance, we can restrict users to only seeing "
+"messages that fit their country and languages with the query "
+"``#attr(language, user-language) AND #attr(country, user-country)``."
+msgstr ""

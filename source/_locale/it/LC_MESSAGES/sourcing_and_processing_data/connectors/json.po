@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-13 18:46+0200\n"
+"POT-Creation-Date: 2017-07-18 15:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Datawords_trad_1 <datawords.translator.it1@gmail.com>, 2017\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
@@ -50,6 +50,7 @@ msgid "JSON File"
 msgstr "File JSON"
 
 #: ../../source/sourcing_and_processing_data/connectors/json.rst:11
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:78
 msgid ""
 "This connector extracts a valid JSON document (array or object) into one "
 "dataset of several records."
@@ -85,27 +86,33 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/connectors/json.rst:19
 #: ../../source/sourcing_and_processing_data/connectors/json.rst:53
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:83
 msgid "Supported field types"
 msgstr "Tipi di file supportati"
 
 #: ../../source/sourcing_and_processing_data/connectors/json.rst:21
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:85
 msgid "regular fields like decimal, bool, string"
 msgstr "Campi normali, come decimal, bool, string."
 
 #: ../../source/sourcing_and_processing_data/connectors/json.rst:22
 #: ../../source/sourcing_and_processing_data/connectors/json.rst:57
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:86
 msgid "JSON object: will be used as-is"
 msgstr "Oggetto JSON, che viene utilizzato così com'è."
 
 #: ../../source/sourcing_and_processing_data/connectors/json.rst:25
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:89
 msgid "array:"
 msgstr "Array:"
 
 #: ../../source/sourcing_and_processing_data/connectors/json.rst:24
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:88
 msgid "if the array contains JSON objects, it will be used as-is"
 msgstr "se l'array contiene oggetti JSON, viene utilizzato così com'è;"
 
 #: ../../source/sourcing_and_processing_data/connectors/json.rst:25
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:89
 msgid ""
 "if it contains strings, a multivalued field will be created with all the "
 "strings separated by a semicolon (\";\")"
@@ -115,25 +122,30 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/connectors/json.rst:28
 #: ../../source/sourcing_and_processing_data/connectors/json.rst:60
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:92
 msgid "Configuration"
 msgstr "Configurazione"
 
 #: ../../source/sourcing_and_processing_data/connectors/json.rst:33
 #: ../../source/sourcing_and_processing_data/connectors/json.rst:65
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:97
 msgid "Name"
 msgstr "Nome"
 
 #: ../../source/sourcing_and_processing_data/connectors/json.rst:34
 #: ../../source/sourcing_and_processing_data/connectors/json.rst:66
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:98
 msgid "Description"
 msgstr "Descrizione"
 
 #: ../../source/sourcing_and_processing_data/connectors/json.rst:35
 #: ../../source/sourcing_and_processing_data/connectors/json.rst:67
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:99
 msgid "Values"
 msgstr "Valori"
 
 #: ../../source/sourcing_and_processing_data/connectors/json.rst:36
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:100
 msgid "JSON root"
 msgstr "Radice JSON"
 
@@ -215,3 +227,140 @@ msgstr "Indica che la prima riga contiene le etichette dei campi."
 #: ../../source/sourcing_and_processing_data/connectors/json.rst:73
 msgid "Yes"
 msgstr "Sì"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:76
+msgid "JSON Dict"
+msgstr "JSON Dict"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:80
+msgid ""
+"It expects a JSON object where each key contains a record, and create "
+"records with one column to hold the key, and one column for each attribute "
+"of the corresponding object (or a single column named \"value\" if the value"
+" is a string instead of an object)."
+msgstr ""
+"Questo connettore prevede un oggetto JSON con un record per ogni chiave. Il "
+"connettore crea record con una colonna dedicata alla chiave e una colonna "
+"per ogni attributo dell'oggetto corrispondente (oppure, se il valore "
+"corrisponde a una stringa e non a un oggetto, un'unica colonna denominata "
+"\"value\")."
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:101
+msgid "ijson path to the object that contains the records"
+msgstr "percorso ijson verso l'oggetto che contiene i record"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:102
+msgid ""
+"start from the root if empty, ijson path like \"result.datasets\", or "
+"\"item\" to iterate in an array"
+msgstr ""
+"inizia dalla radice se vuota, percorso ijson come \"result.datasets\", "
+"oppure \"item\" per iterare in un array"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:103
+msgid "Key field name"
+msgstr "Nome del campo della chiave"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:104
+msgid "Label of the column that holds the key value"
+msgstr "Etichetta della colonna che contiene il valore della chiave"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:108
+msgid "Example 1"
+msgstr "Esempio 1"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:140
+msgid "With an empty JSON root, results in:"
+msgstr "Nel caso in cui la radice JSON sia vuota:"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:143
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:179
+msgid "key"
+msgstr "key"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:143
+msgid "type1"
+msgstr "type1"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:143
+msgid "type2"
+msgstr "type2"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:145
+msgid "2016"
+msgstr "2016"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:145
+msgid "{\"color\": \"blue\", \"available\": true, \"price\": 10}"
+msgstr "{\"color\": \"blue\", \"available\": true, \"price\": 10}"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:145
+msgid "{\"color\": \"red\", \"available\": true, \"price\": 9}"
+msgstr "{\"color\": \"red\", \"available\": true, \"price\": 9}"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:147
+msgid "2015"
+msgstr "2015"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:147
+msgid "{\"color\": \"teal\", \"available\": true, \"price\": 10.5}"
+msgstr "{\"color\": \"teal\", \"available\": true, \"price\": 10.5}"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:147
+msgid "{\"color\": \"crimson\", \"available\": true, \"price\": 9.1}"
+msgstr "{\"color\": \"crimson\", \"available\": true, \"price\": 9.1}"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:151
+msgid "Example 2"
+msgstr "Esempio 2"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:173
+msgid ""
+"For this complex JSON file, the correct JSON root is "
+"``results.datasets.item``."
+msgstr ""
+"Per questo file JSON complesso, la radice JSON corretta è "
+"``results.datasets.item``."
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:175
+msgid "``results.datasets`` makes us move inside the JSON file to the array"
+msgstr ""
+"``results.datasets`` ci consente di muoverci all'interno del file JSON fino "
+"all'array"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:176
+msgid "``item`` means to iterate inside the array and get each object"
+msgstr ""
+"``item`` significa che vogliamo iterare nell'array e recuperare ogni oggetto"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:179
+msgid "description"
+msgstr "description"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:179
+msgid "title"
+msgstr "title"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:181
+msgid "abc"
+msgstr "abc"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:181
+msgid "A description about ABC"
+msgstr "A description about ABC"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:181
+msgid "A B C"
+msgstr "A B C"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:183
+msgid "xyz"
+msgstr "xyz"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:183
+msgid "Another description"
+msgstr "Another description"
+
+#: ../../source/sourcing_and_processing_data/connectors/json.rst:183
+msgid "D E F"
+msgstr "D E F"

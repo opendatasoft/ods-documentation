@@ -2,13 +2,13 @@
 # Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-13 18:46+0200\n"
+"POT-Creation-Date: 2017-07-18 15:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2017\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
@@ -168,7 +168,7 @@ msgstr "Veldnaam"
 
 #: ../../source/using_api/v1/query_language_and_geo_filtering.rst:57
 #: ../../source/using_api/v1/query_language_and_geo_filtering.rst:114
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:157
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:161
 msgid "Description"
 msgstr "Omschrijving"
 
@@ -394,10 +394,6 @@ msgstr ""
 "parameter. Ze geeft de hits waarvoor geen waarde is gedefinieerd voor het "
 "gespecificeerde veld. Bijvoorbeeld \"#null(birthdate)\""
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:123
-msgid "exact`"
-msgstr "exact`"
-
 #: ../../source/using_api/v1/query_language_and_geo_filtering.rst:124
 msgid ""
 "This function makes it possible to search for records with a field exactly "
@@ -410,11 +406,7 @@ msgstr ""
 "``#exact(firstname, \"Marie\")`` zal records opleveren met een veld "
 "\"firstname\" dat exact \"Marie\" bevat en niets anders."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:128
-msgid "**Available parameters for the ``#now`` function**:Ò"
-msgstr "**Beschikbare parameters voor de ``#now`` functie**:Ò"
-
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:130
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:134
 msgid ""
 "years, months, weeks, days, hours, minutes, seconds, microseconds: These "
 "parameters add time to the current date."
@@ -422,7 +414,7 @@ msgstr ""
 "jaren, maanden, weken, dagen, uren, minuten, seconden, microseconden: Deze "
 "parameters voegen tijd toe aan de huidige datum."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:132
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:136
 msgid ""
 "For example: ``#now(years=-1, hours=-1)`` returns the current date minus a "
 "year and an hour"
@@ -430,7 +422,7 @@ msgstr ""
 "Bijvoorbeeld: ``#now(years=-1, hours=-1)`` levert de huidige datum op min "
 "een jaar en een uur"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:134
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:138
 msgid ""
 "year, month, day, hour, minute, second, microsecond: can also be used to "
 "specify an absolute date."
@@ -438,7 +430,7 @@ msgstr ""
 "jaar, maand, dag, uur, minuut, seconde, microseconde: kan ook gebruikt "
 "worden om een absolute datum te specificeren."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:136
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:140
 msgid ""
 "For example: ``#now(year=2001)`` returns the current time, day and month for"
 " year 2001"
@@ -446,7 +438,7 @@ msgstr ""
 "Bijvoorbeeld: ``#now(year=2001)`` levert de huidige tijd, dag en maand op "
 "voor het jaar 2001"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:138
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:142
 msgid ""
 "weekday: Specifies a day of the week. This parameter accepts either an "
 "integer between 0 and 6 (where 0 is Monday and 6 is Sunday) or the first two"
@@ -459,22 +451,22 @@ msgstr ""
 "kardinaalteken van de eerste week waarop de zoekopdracht moet worden "
 "gestart."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:142
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:146
 msgid "``#now(weeks=-2, weekday=1)`` returns the Tuesday before last."
 msgstr ""
 "``#now(weeks=-2, weekday=1)`` levert de donderdag vóór de laatste donderdag "
 "op."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:144
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:148
 msgid "``#now(weekday=MO(2))`` returns Monday after next."
 msgstr ""
 "``#now(weekday=MO(2))`` levert de maandag volgend op de volgende maandag op."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:147
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:151
 msgid "Geo Filtering"
 msgstr "Geo Filtering"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:149
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:153
 msgid ""
 "Records search APIs accept geofilter parameters to filter in records which "
 "are located in a specific geographical area."
@@ -482,19 +474,19 @@ msgstr ""
 "Zoek-API's voor records aanvaarden geofilterparameters om te filteren in "
 "records die gelegen zijn in een specifiek geografisch gebied."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:151
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:155
 msgid "The following parameters may be used."
 msgstr "De volgende parameters kunnen gebruikt worden."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:156
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:160
 msgid "Parameter Name"
 msgstr "Naam van de parameter"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:158
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:162
 msgid "geofilter.distance"
 msgstr "geofilter.distance"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:159
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:163
 msgid ""
 "Limits the result set to a geographical area defined by a circle "
 "(coordinates of the center of the circle expressed in WGS84 and distance "
@@ -506,11 +498,11 @@ msgstr ""
 " afstand uitgedrukt in meter): latitude,longitude,distance: "
 "``geofilter.distance=48.8520930694,2.34738897685,1000``"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:162
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:166
 msgid "geofilter.polygon"
 msgstr "geofilter.polygon"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:163
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:167
 msgid ""
 "Limits the result set to a geographical area defined by a polygon "
 "(coordinates of the points expressed in WGS84 as in "
@@ -521,3 +513,32 @@ msgstr ""
 " door een veelhoek (coördinaten van de punten uitgedrukt in WGS84 zoals in "
 "((lat1,lon1),(lat2,lon2),(lat3,lon3)): "
 "``geofilter.polygon=(48.883086,2.379072),(48.879022,2.379930),(48.883651,2.386968)``"
+
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:123
+#, fuzzy
+msgid "exact"
+msgstr "exact`"
+
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:127
+msgid "attr"
+msgstr ""
+
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:128
+msgid ""
+"This function makes it possible to search for records with a field matching "
+"a value in the querying user's SAML attributes. For example, "
+"``#attr(firstname, user_first_name)``, performed by a user who has a SAML "
+"attribute ``user_first_name`` with a value of \"Marie\", will return records"
+" with a field ``firstname`` containing \"Marie\"."
+msgstr ""
+
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:132
+#, fuzzy
+msgid "**Available parameters for the ``#now`` function**:"
+msgstr "**Beschikbare parameters voor de ``#now`` functie**:Ò"
+
+#~ msgid "exact`"
+#~ msgstr "exact`"
+
+#~ msgid "**Available parameters for the ``#now`` function**:Ò"
+#~ msgstr "**Beschikbare parameters voor de ``#now`` functie**:Ò"
