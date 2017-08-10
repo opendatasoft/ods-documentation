@@ -2,13 +2,13 @@
 # Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-18 15:36+0200\n"
+"POT-Creation-Date: 2017-08-10 12:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2017\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
@@ -393,6 +393,10 @@ msgstr ""
 "anzugeben. Sie gibt die Ergebnisse zurück, für die kein Wert für das "
 "angegebene Feld definiert wurde. Zum Beispiel ``#null(birthdate)``"
 
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:123
+msgid "exact"
+msgstr ""
+
 #: ../../source/using_api/v1/query_language_and_geo_filtering.rst:124
 msgid ""
 "This function makes it possible to search for records with a field exactly "
@@ -404,6 +408,23 @@ msgstr ""
 "das genau dem vorgegebenen Wert entspricht. Beispielsweise gibt "
 "``#exact(firstname, \"Marie\")`` nur diejenigen Einträge zurück, deren Feld "
 "\"firstname\" genau den Namen \"Marie\" und nichts anderes enthält."
+
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:127
+msgid "attr"
+msgstr ""
+
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:128
+msgid ""
+"This function makes it possible to search for records with a field matching "
+"a value in the querying user's SAML attributes. For example, "
+"``#attr(firstname, user_first_name)``, performed by a user who has a SAML "
+"attribute ``user_first_name`` with a value of \"Marie\", will return records"
+" with a field ``firstname`` containing \"Marie\"."
+msgstr ""
+
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:132
+msgid "**Available parameters for the ``#now`` function**:"
+msgstr ""
 
 #: ../../source/using_api/v1/query_language_and_geo_filtering.rst:134
 msgid ""
@@ -508,32 +529,3 @@ msgstr ""
 " Vieleck definiert ist (Koordinaten der Ecken in WGS84 angegeben:  "
 "(lat1,lon1),(lat2,lon2),(lat3,lon3)): "
 "``geofilter.polygon=(48.883086,2.379072),(48.879022,2.379930),(48.883651,2.386968)``"
-
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:123
-#, fuzzy
-msgid "exact"
-msgstr "exact`"
-
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:127
-msgid "attr"
-msgstr ""
-
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:128
-msgid ""
-"This function makes it possible to search for records with a field matching "
-"a value in the querying user's SAML attributes. For example, "
-"``#attr(firstname, user_first_name)``, performed by a user who has a SAML "
-"attribute ``user_first_name`` with a value of \"Marie\", will return records"
-" with a field ``firstname`` containing \"Marie\"."
-msgstr ""
-
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:132
-#, fuzzy
-msgid "**Available parameters for the ``#now`` function**:"
-msgstr "**Verfügbare Parameter für die ``#now`` Funktion**:Ò"
-
-#~ msgid "exact`"
-#~ msgstr "exact`"
-
-#~ msgid "**Available parameters for the ``#now`` function**:Ò"
-#~ msgstr "**Verfügbare Parameter für die ``#now`` Funktion**:Ò"
