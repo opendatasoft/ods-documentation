@@ -262,7 +262,7 @@ Be careful to use the **technical name** instead of the column label in the expr
 Here are some common use cases :
 
 - Numerical operations (like the sum example above)
-- Mathematical or text function (round, log, cosinus, change text to upper case, ...)
+- Mathematical or text function (round, log, cosine, change text to upper case, ...)
 
 .. ifconfig:: language == 'en'
 
@@ -496,7 +496,7 @@ The name of this dataset is **paris_taxis_stations**.
    * * 2
      * 15
 
-The Join processor allows you to enrich the second dataset with colums coming from the first dataset.
+The Join processor allows you to enrich the second dataset with columns coming from the first dataset.
 
 **Resulting dataset after a Join**
 
@@ -950,7 +950,7 @@ The first byte '00010110' is the integer part of the temperature,
 the second byte '00000100' is the floating part of the temperature,
 the last bit '1' is the boolean status, working or not.
 
-You will need to concatenante the integer and the floating part (after the comma) in order to get the temperature value.
+You will need to concatenate the integer and the floating part (after the comma) in order to get the temperature value.
 
 Therefore, the processing pipeline will contains 3 **Extract bit mask** processors, and 1 **Expression** processor to concatenate:
 
@@ -1154,7 +1154,7 @@ Geographical processors
 Geographical processors are divided into 4 categories according to what you are trying to achieve:
 
 - **Geocoders**: convert a human readable address into a geo point
-- **GeoJoin processors**: retrieve geoshapes from normalized codes for country specific administrative divisions. There is one GeoJoin processor per supported country, each of which features several indexing codes like postcode, state or region identifier, etc
+- **GeoJoin processor**: retrieve geoshapes from normalized codes for country specific administrative divisions. The GeoJoin processor supports several countries, each of which features several indexing codes like postcode, state or region identifier, etc
 - **Retrieve Administrative Divisions processors**: retrieve the name, code and geoshape of country specific administrative divisions enclosing a geopoint
 - **Converters and functions**: simplify, convert or normalize geographical data, or run computations based on them
 
@@ -1330,50 +1330,208 @@ It takes the following parameters:
 GeoJoin
 ~~~~~~~
 
-This processor collection retrieves administrative divisions **Geo Shapes** from a key (postcode, county code, etc.). Each country has a dedicated processor and specific referentials.
+This processor retrieves administrative divisions **Geo Shapes** for a specified country and referential (postcode, county code, etc.). Each country has specific referentials.
 These referentials, which are referenced in the tables below, can be found in datasets available on `public.opendatasoft.com <https://public.opendatasoft.com>`_.
 
 France
 ^^^^^^
 
-====================  ==========================================================================================================
-Repository            Source
-====================  ==========================================================================================================
-postcode              `Carte des Codes Postaux <https://public.opendatasoft.com/explore/dataset/contour-des-codes-postaux>`_
-iris                  `Contours Iris - 2014 <https://public.opendatasoft.com/explore/dataset/contours-iris-2014>`_
-insee                 `Geofla® - Communes 2015 <https://public.opendatasoft.com/explore/dataset/geoflar-communes-2015>`_
-departements          `Contours simplifiés des départements Français 2015 <https://public.opendatasoft.com/explore/dataset/contours-simplifies-des-departements-francais-2015>`_
-regions               `Contours géographiques des nouvelles régions (métropole) <https://public.opendatasoft.com/explore/dataset/contours-geographiques-des-nouvelles-regions-metropole>`_
-regions 1970          `Contours des régions françaises sur OpenStreetMap <https://public.opendatasoft.com/explore/dataset/contours-des-regions-francaises-sur-openstreetmap>`_
-====================  ==========================================================================================================
+.. list-table::
+  :header-rows: 1
 
-USA
-^^^
+  * * Repository
+    * Source
+  * * cantons2015
+    * `Cantons <https://public.opendatasoft.com/explore/dataset/decoupage-des-cantons-pour-les-elections-departementales-de-mars-2015>`_
+  * * communes2013
+    * `Geofla® - Communes 2013 <https://public.opendatasoft.com/explore/dataset/geoflar-communes>`_
+  * * communes2015
+    * `Geofla® - Communes 2015 <https://public.opendatasoft.com/explore/dataset/geoflar-communes-2015>`_
+  * * communes2016
+    * `Geofla® Commune 2016 <https://public.opendatasoft.com/explore/dataset/geoflar-communes-2016>`_
+  * * departements-simplifies2015
+    * `Contours simplifiés des départements Français 2015 <https://public.opendatasoft.com/explore/dataset/contours-simplifies-des-departements-francais-2015>`_
+  * * departements2015
+    * `Geofla® - Départements 2015 <https://public.opendatasoft.com/explore/dataset/geoflar-departements-2015>`_
+  * * iris2014
+    * `Contours IRIS 2014 <https://public.opendatasoft.com/explore/dataset/contours-iris-2014>`_
+  * * iris2015
+    * `Contours IRIS 2015 <https://public.opendatasoft.com/explore/dataset/contours-iris-2015>`_
+  * * postcode2013
+    * `Carte des Codes Postaux <https://public.opendatasoft.com/explore/dataset/contour-des-codes-postaux>`_
+  * * regions1970
+    * `Contours des régions françaises sur OpenStreetMap <https://public.opendatasoft.com/explore/dataset/contours-des-regions-francaises-sur-openstreetmap>`_
+  * * regions2016
+    * `Contours géographiques des nouvelles régions (métropole) <https://public.opendatasoft.com/explore/dataset/contours-geographiques-des-nouvelles-regions-metropole>`_
 
-====================  ==========================================================================================================
-Repository            Source
-====================  ==========================================================================================================
-zcta                  `US ZCTA 2010 <https://public.opendatasoft.com/explore/dataset/us-zcta-2010>`_
-county                `US County Boundaries <https://public-us.opendatasoft.com/explore/dataset/us-county-boundaries>`_
-====================  ==========================================================================================================
+
+Switzerland
+^^^^^^^^^^^
+
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * bezirke2017
+    * `swissBOUNDARIES3D - TLM BEZIRKSGEBIET <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm_bezirksgebiet>`_
+  * * postleitzahl2017
+    * `Amtliches Ortschaftenverzeichnis mit Postleitzahl und Perimeter <https://public.opendatasoft.com/explore/dataset/amtliches-ortschaftenverzeichnis-mit-postleitzahl-und-perimeter>`_
+  * * gemeinde2017
+    * `swissBOUNDARIES3D - TLM HOHEITSGEBIET <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm_hoheitsgebiet>`_
+  * * kantone2017
+    * `swissBOUNDARIES3D - TLM_KANTONSGEBIET <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm_kantonsgebiet>`_
 
 Netherlands
 ^^^^^^^^^^^
 
-====================  ==========================================================================================================
-Repository            Source
-====================  ==========================================================================================================
-postcode              `Netherlands Postcodes <https://public.opendatasoft.com/explore/dataset/openpostcodevlakkenpc4>`_
-====================  ==========================================================================================================
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * postcode2015
+    * `Nederland Postcodes <https://public.opendatasoft.com/explore/dataset/openpostcodevlakkenpc4>`_
+
+Canada
+^^^^^^
+
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * province2003
+    * `Canada Provinces <https://public.opendatasoft.com/explore/dataset/canada-provinces>`_
+  * * census-subdivisions2011
+    * `Canadian Census Subdivisions <https://public.opendatasoft.com/explore/dataset/canadian-census-subdivisions0>`_
+  * * census-divisions2011
+    * `Canadian Census Divisions <https://public.opendatasoft.com/explore/dataset/canadian-census-subdivisions>`_
+  * * county2011
+    * `Intercensal Canada <https://public.opendatasoft.com/explore/dataset/intercensal-canada>`_
 
 Germany
 ^^^^^^^
 
-====================  ==========================================================================================================
-Repository            Source
-====================  ==========================================================================================================
-postcode              `Postleitzahlen Deutschland <https://public.opendatasoft.com/explore/dataset/postleitzahlen-deutschland>`_
-====================  ==========================================================================================================
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * lander2016
+    * `Deutschland Länder <https://public.opendatasoft.com/explore/dataset/deutschland-lander>`_
+  * * postleitzahlen2016
+    * `Postleitzahlen Deutschland <https://public.opendatasoft.com/explore/dataset/postleitzahlen-deutschland>`_
+
+The USA
+^^^^^^^
+
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * county2017
+    * `US County Boundaries <https://public.opendatasoft.com/explore/dataset/us-county-boundaries>`_
+  * * state2017
+    * `US State Boundaries <https://public.opendatasoft.com/explore/dataset/us-state-boundaries>`_
+  * * zcta2016
+    * `ZCTA <https://public.opendatasoft.com/explore/dataset/us-zcta-2010>`_
+
+Mexico
+^^^^^^
+
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * estados2017
+    * `Estados de México <https://public.opendatasoft.com/explore/dataset/estados-de-mexico>`_
+
+Scotland (GB)
+^^^^^^^^^^^^^
+
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * ward2014
+    * `Wards in Scotland 2014 <https://public.opendatasoft.com/explore/dataset/wards-in-scotland-december-2014>`_
+  * * ward2015
+    * `Wards in Scotland 2015 <https://public.opendatasoft.com/explore/dataset/wards-in-scotland-december-2015>`_
+  * * ward2016
+    * `Wards in Scotland 2016 <https://public.opendatasoft.com/explore/dataset/wards-in-scotland-december-2016>`_
+
+Wales (GB)
+^^^^^^^^^^
+
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * county2016
+    * `Counties and Unitary Authorities in Wales <https://public.opendatasoft.com/explore/dataset/counties-and-unitary-authorities-december-2016-generalised-clipped-boundaries-i0>`_
+  * * ward2014
+    * `Wards in Wales 2014 <https://public.opendatasoft.com/explore/dataset/wards-in-wales-december-2014>`_
+  * * ward2015
+    * `Wards in Wales 2015 <https://public.opendatasoft.com/explore/dataset/wards-in-wales-december-2015>`_
+  * * wards2016
+    * `Wards in Wales 2016 <https://public.opendatasoft.com/explore/dataset/wards-in-wales-december-2016>`_
+  * * parish2014
+    * `Parishes in Wales 2015 <https://public.opendatasoft.com/explore/dataset/parishes-in-wales-december-2014>`_
+  * * parish2016
+    * `Parishes in Wales 2016 <https://public.opendatasoft.com/explore/dataset/parishes-in-wales-december-2016>`_
+
+England (GB)
+^^^^^^^^^^^^
+
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * county2016
+    * `Counties and Unitary Authorities in England <https://public.opendatasoft.com/explore/dataset/counties-and-unitary-authorities-december-2016-generalised-clipped-boundaries-in>`_
+  * * region2016
+    * `Regions in England <https://public.opendatasoft.com/explore/dataset/regions-in-england-december-2016>`_
+  * * ward2014
+    * `Wards in England 2014 <https://public.opendatasoft.com/explore/dataset/wards-in-england-december-2014>`_
+  * * ward2015
+    * `Wards in England 2015 <https://public.opendatasoft.com/explore/dataset/wards-in-england-december-2015>`_
+  * * ward2016
+    * `Wards in England 2016 <https://public.opendatasoft.com/explore/dataset/wards-in-england-december-2016>`_
+  * * parish2014
+    * `Parishes in England 2014 <https://public.opendatasoft.com/explore/dataset/parishes-in-england-december-2014>`_
+  * * parish2016
+    * `Parishes in England 2016 <https://public.opendatasoft.com/explore/dataset/parishes-in-england-december-2016>`_
+
+Spain
+^^^^^
+
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * comunidades-autonomas2012
+    * `Comunidades Autónomas españolas <https://public.opendatasoft.com/explore/dataset/comunidades-autonomas-espanolas>`_
+  * * provincias2012
+    * `Provincias españolas <https://public.opendatasoft.com/explore/dataset/provincias-espanolas>`_
+
+World
+^^^^^
+
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * countries2016
+    * `Natural Earth Countries <https://public.opendatasoft.com/explore/dataset/natural-earth-countries-1_110m>`_
+
 
 Retrieve Administrative Divisions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1382,25 +1540,105 @@ This processor uses a **Geo Point 2D** to retrieve information (name, code and *
 
 This processor is not activated by default. Please contact the OpenDataSoft support team if you plan to use it.
 
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| .   | 1       | 2                     | 3            | 4        | 5              | 6                        | 7    |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| CA  | Country | Provinces             |              | Counties |                |                          |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| CH  | Country | Kantone               |              | Bezirke  | Postleitzahlen | Gemeinde (BFS)           |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| DE  | Country | Länder                |              |          | Postleitzahlen |                          |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| ES  | Country | Comunidades Autónomas | Provincias   |          |                | Municipios               |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| FR  | Country | Nouvelles régions     | Départements |          | Codes Postaux  | Communes (INSEE) de 2016 | IRIS |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| MX  | Country | Estados               |              |          |                |                          |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| NL  | Country |                       |              |          | Postcodes      |                          |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
-| US  | Country | States                |              | Counties | ZCTA           |                          |      |
-+-----+---------+-----------------------+--------------+----------+----------------+--------------------------+------+
+.. list-table::
+  :header-rows: 1
+
+  * *
+    * 1
+    * 2
+    * 3
+    * 4
+    * 5
+    * 6
+    * 7
+  * * FR
+    * Country
+    * Nouvelles régions
+    * Départements
+    * Cantons
+    * Codes Postaux
+    * Communes INSEE
+    * Contours IRIS
+  * * CH
+    * Country
+    * Kantons
+    *
+    * Bezirks
+    * Postleitzahlen
+    * Hoheits
+    *
+  * * NL
+    * Country
+    *
+    *
+    *
+    * Postcodes
+    *
+    *
+  * * CA
+    * Country
+    * Provinces
+    *
+    * Census Divisions
+    *
+    * Census Subdivisions
+    *
+  * * DE
+    * Country
+    * Länder
+    *
+    *
+    * Postleitzahlen
+    *
+    *
+  * * US
+    * Country
+    * State Boundaries
+    *
+    * County Boundaries
+    * ZCTA
+    *
+    *
+  * * MX
+    * Country
+    * Estados
+    *
+    *
+    *
+    *
+    *
+  * * GB-SCT
+    * Country
+    *
+    *
+    *
+    * Wards
+    *
+    *
+  * * GB-WLS
+    * Country
+    *
+    *
+    * Counties and Unitary Authorities
+    * Wards
+    * Parishes
+    *
+  * * GB-ENG
+    * Country
+    * Regions
+    *
+    * Counties and Unitary Authorities
+    * Wards
+    * Parishes
+    *
+  * * ES
+    * Country
+    * Comunidades Autónomas
+    * Provincias
+    *
+    *
+    * Municipios
+    *
 
 Converters and functions
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1741,7 +1979,7 @@ Replace via Regexp
 
 This processor can be used to replace or remove any part of a text or a number or a combination of both.
 
-One use case is keeping only a part of a number, for example from a french Zip code to keep only the area code, e.g from 44100 (Nantes city) keep only 44 (Loire-Atlantique area).
+One use case is keeping only a part of a number, for example from a French zip code to keep only the area code, e.g from 44100 (Nantes city) keep only 44 (Loire-Atlantique area).
 
 .. ifconfig:: language == 'en'
 
@@ -1755,7 +1993,7 @@ One use case is keeping only a part of a number, for example from a french Zip c
   .. figure:: processing__replace-regexp-fr.png
     :alt: Replace Regexp
 
-    In this example, the regular expression processor is configured with the pattern ``[0-9]{3}$``, and a replacement by nothing. The pattern means "select 3 digits from the end", with ``[0-9]`` meaning any digit, ``{3}`` meaning exactly 3 occurences, and ``$`` meaning the end of the text. These 3 digits from the end are then replaced by nothing, so only the first 2 digits will stay.
+    In this example, the regular expression processor is configured with the pattern ``[0-9]{3}$``, and a replacement by nothing. The pattern means "select 3 digits from the end", with ``[0-9]`` meaning any digit, ``{3}`` meaning exactly 3 occurrences, and ``$`` meaning the end of the text. These 3 digits from the end are then replaced by nothing, so only the first 2 digits will stay.
 
 
 See `<http://en.wikipedia.org/wiki/Regular_expression>`_ for more details on how to write a regular expressions.
@@ -1849,21 +2087,21 @@ This processor can be used to extract any part of a text or a number or a combin
 
 The idea is to put the part we want to extract in parenthesis. This part will then be extracted in a new column.
 
-Using the same example as for the Replace Regexp processor (from a french zip code like 44100, keep only the area code 44), the Extract Text processor can be used to create another column with the area code selected, instead of replacing the content like with the Replace Regexp processor.
+Using the same example as for the Replace Regexp processor (from a French zip code like 44100, keep only the area code 44), the Extract Text processor can be used to create another column with the area code selected, instead of replacing the content like with the Replace Regexp processor.
 
 .. ifconfig:: language == 'en'
 
   .. figure:: processing__extract-text-en.png
     :alt: Replace Regexp
 
-    In this example, we use the pattern ``(?P<area>[0-9]{2})[0-9]{3}``. ``[0-9]`` means any digit, and ``{2}`` or ``{3}`` means the number of digits we are looking for. In this case we want to extract the first two digits, so we put them in parenthesis, then after the parenthesis we put the rest of the sequence that we don't want to extract, here the remaining 3 digits. The special expression ``?P<area>`` is just for specifiying the new column name
+    In this example, we use the pattern ``(?P<area>[0-9]{2})[0-9]{3}``. ``[0-9]`` means any digit, and ``{2}`` or ``{3}`` means the number of digits we are looking for. In this case we want to extract the first two digits, so we put them in parenthesis, then after the parenthesis we put the rest of the sequence that we don't want to extract, here the remaining 3 digits. The special expression ``?P<area>`` is just for specifying the new column name
 
 .. ifconfig:: language == 'fr'
 
   .. figure:: processing__extract-text-fr.png
     :alt: Replace Regexp
 
-    In this example, we use the pattern ``(?P<area>[0-9]{2})[0-9]{3}``. ``[0-9]`` means any digit, and ``{2}`` or ``{3}`` means the number of digits we are looking for. In this case we want to extract the first two digits, so we put them in parenthesis, then after the parenthesis we put the rest of the sequence that we don't want to extract, here the remaining 3 digits. The special expression ``?P<area>`` is just for specifiying the new column name
+    In this example, we use the pattern ``(?P<area>[0-9]{2})[0-9]{3}``. ``[0-9]`` means any digit, and ``{2}`` or ``{3}`` means the number of digits we are looking for. In this case we want to extract the first two digits, so we put them in parenthesis, then after the parenthesis we put the rest of the sequence that we don't want to extract, here the remaining 3 digits. The special expression ``?P<area>`` is just for specifying the new column name
 
 From a more technical point of view, this processor can be used to extract an arbitrary pattern expressed as a regular expression out of a string using sub matching.
 

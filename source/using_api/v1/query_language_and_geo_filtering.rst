@@ -120,12 +120,16 @@ Advanced functions can be used in the query language. Function names need to be 
    * * null
      * This function may be called specifying a field name as a parameter. It returns the hits for which no value is 
        defined for the specified field. For example ``#null(birthdate)``
-   * * exact`
+   * * exact
      * This function makes it possible to search for records with a field exactly matching a given value. For example, 
        ``#exact(firstname, "Marie")`` will return records with a field ``firstname`` containing exactly "Marie" and 
        nothing else.
+   * * attr
+     * This function makes it possible to search for records with a field matching a value in the querying user's SAML
+       attributes. For example, ``#attr(firstname, user_first_name)``, performed by a user who has a SAML attribute
+       ``user_first_name`` with a value of "Marie", will return records with a field ``firstname`` containing "Marie".
 
-**Available parameters for the ``#now`` function**:Ò
+**Available parameters for the ``#now`` function**:
 
 * years, months, weeks, days, hours, minutes, seconds, microseconds: These parameters add time to the current date.
 

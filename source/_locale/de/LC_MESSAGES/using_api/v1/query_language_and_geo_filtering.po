@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-13 18:46+0200\n"
+"POT-Creation-Date: 2017-08-10 12:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2017\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
@@ -166,7 +166,7 @@ msgstr "Feldname"
 
 #: ../../source/using_api/v1/query_language_and_geo_filtering.rst:57
 #: ../../source/using_api/v1/query_language_and_geo_filtering.rst:114
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:157
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:161
 msgid "Description"
 msgstr "Beschreibung"
 
@@ -394,8 +394,8 @@ msgstr ""
 "angegebene Feld definiert wurde. Zum Beispiel ``#null(birthdate)``"
 
 #: ../../source/using_api/v1/query_language_and_geo_filtering.rst:123
-msgid "exact`"
-msgstr "exact`"
+msgid "exact"
+msgstr ""
 
 #: ../../source/using_api/v1/query_language_and_geo_filtering.rst:124
 msgid ""
@@ -409,11 +409,24 @@ msgstr ""
 "``#exact(firstname, \"Marie\")`` nur diejenigen Einträge zurück, deren Feld "
 "\"firstname\" genau den Namen \"Marie\" und nichts anderes enthält."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:128
-msgid "**Available parameters for the ``#now`` function**:Ò"
-msgstr "**Verfügbare Parameter für die ``#now`` Funktion**:Ò"
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:127
+msgid "attr"
+msgstr ""
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:130
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:128
+msgid ""
+"This function makes it possible to search for records with a field matching "
+"a value in the querying user's SAML attributes. For example, "
+"``#attr(firstname, user_first_name)``, performed by a user who has a SAML "
+"attribute ``user_first_name`` with a value of \"Marie\", will return records"
+" with a field ``firstname`` containing \"Marie\"."
+msgstr ""
+
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:132
+msgid "**Available parameters for the ``#now`` function**:"
+msgstr ""
+
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:134
 msgid ""
 "years, months, weeks, days, hours, minutes, seconds, microseconds: These "
 "parameters add time to the current date."
@@ -421,7 +434,7 @@ msgstr ""
 "Jahre, Monate, Wochen, Tage, Stunden, Minuten, Sekunden, Mikrosekunden: "
 "Diese Parameter ergänzen das aktuelle Datum um die Uhrzeit."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:132
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:136
 msgid ""
 "For example: ``#now(years=-1, hours=-1)`` returns the current date minus a "
 "year and an hour"
@@ -429,7 +442,7 @@ msgstr ""
 "Beispiel: ``#now(years=-1, hours=-1)`` gibt das aktuelle Datum minus 1 Jahr "
 "und 1 Stunde zurück"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:134
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:138
 msgid ""
 "year, month, day, hour, minute, second, microsecond: can also be used to "
 "specify an absolute date."
@@ -437,7 +450,7 @@ msgstr ""
 "Jahr, Monat, Tag, Stunde, Minute, Sekunde, Mikrosekunde: Diese Parameter "
 "können auch zur Angabe eines absoluten Datums verwendet werden."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:136
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:140
 msgid ""
 "For example: ``#now(year=2001)`` returns the current time, day and month for"
 " year 2001"
@@ -445,7 +458,7 @@ msgstr ""
 "Beispiel:  ``#now(year=2001)`` gibt die aktuelle Uhrzeit, den Tag und den "
 "Monat für das Jahr 2001 zurück"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:138
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:142
 msgid ""
 "weekday: Specifies a day of the week. This parameter accepts either an "
 "integer between 0 and 6 (where 0 is Monday and 6 is Sunday) or the first two"
@@ -457,19 +470,19 @@ msgstr ""
 " zwei Buchstaben des entsprechenden Tages (auf Englisch), gefolgt von der "
 "Kardinalzahl der ersten Woche, an der die Suche beginnen soll."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:142
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:146
 msgid "``#now(weeks=-2, weekday=1)`` returns the Tuesday before last."
 msgstr "``#now(weeks=-2, weekday=1)`` gibt den Dienstag vor dem letzten an."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:144
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:148
 msgid "``#now(weekday=MO(2))`` returns Monday after next."
 msgstr "``#now(weekday=MO(2))`` gibt den Montag nach dem folgenden an."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:147
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:151
 msgid "Geo Filtering"
 msgstr "Geofilterung"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:149
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:153
 msgid ""
 "Records search APIs accept geofilter parameters to filter in records which "
 "are located in a specific geographical area."
@@ -477,19 +490,19 @@ msgstr ""
 "Eintragsuch-APIs akzeptieren Geofilter-Parameter zum Filtern von Einträgen, "
 "die sich in einem bestimmten geografischen Gebiet befinden."
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:151
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:155
 msgid "The following parameters may be used."
 msgstr "Folgende Parameter können verwendet werden:"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:156
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:160
 msgid "Parameter Name"
 msgstr "Parametername"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:158
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:162
 msgid "geofilter.distance"
 msgstr "geofilter.distance"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:159
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:163
 msgid ""
 "Limits the result set to a geographical area defined by a circle "
 "(coordinates of the center of the circle expressed in WGS84 and distance "
@@ -501,11 +514,11 @@ msgstr ""
 "Entfernung in Metern): ``Breitengrad, Längengrad, Entfernung``: "
 "``geofilter.distance=48.8520930694,2.34738897685,1000``"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:162
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:166
 msgid "geofilter.polygon"
 msgstr "geofilter.polygon"
 
-#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:163
+#: ../../source/using_api/v1/query_language_and_geo_filtering.rst:167
 msgid ""
 "Limits the result set to a geographical area defined by a polygon "
 "(coordinates of the points expressed in WGS84 as in "
