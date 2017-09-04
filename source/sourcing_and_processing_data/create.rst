@@ -16,9 +16,9 @@ Creating new datasets
    :maxdepth: 2
 
    supported_formats
-   uploading_data
-   uploading_images
-   uploading_multiple_files
+   sourcing_data
+   creating_dataset_with_images
+   creating_dataset_with_multiple_files
    harvesters
    realtime
    federation

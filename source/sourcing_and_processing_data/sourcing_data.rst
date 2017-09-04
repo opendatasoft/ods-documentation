@@ -1,5 +1,5 @@
-Uploading data
-==============
+Sourcing data
+=============
 
 There are 3 different methods to add data to a dataset:
 
@@ -10,7 +10,7 @@ There are 3 different methods to add data to a dataset:
 .. admonition:: Supported file formats
    :class: important
 
-   Before uploading data and particularly files into the platform, you might want to check the formats supported by the OpenDataSoft platform (see :doc:`Supported formats</sourcing_and_processing_data/supported_formats>`).
+   Before sourcing data and particularly files into the platform, you might want to check the formats supported by the OpenDataSoft platform (see :doc:`Supported formats</sourcing_and_processing_data/supported_formats>`).
 
 
 Uploading a file
@@ -22,22 +22,21 @@ This method consists in directly uploading a file into the platform, in order to
 2. Click on the **Add a source** button.
 3. Click on the **Upload a file** button.
 4. Choose the file to upload into the platform.
+5. Click on the **Open** button of the file selection window.
 
 .. admonition:: File size limit
    :class: caution
 
-   The size limit for a file is 240Mo. If your file is too big you can compress it before uploading it on the platform.
-
-5. Click on the **Open** button of the file selection window.
+   The size limit for a file is 240Mo. If your file is too big you can compress it before uploading it in the platform (see :ref:`Supported compressed file formats<supportedcompressedformats>`).
 
 .. note::
    It is possible to simply drag and drop the file after steps 1 and 2, instead of following the whole file selection procedure.
 
 
-.. _uploadremotedata:
+.. _sourceremotedata:
 
-Uploading remote data via a URL
--------------------------------
+Sourcing remote data via a URL
+------------------------------
 
 This method consists in connecting the platform to:
 
