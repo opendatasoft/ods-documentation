@@ -2,7 +2,7 @@ Supported formats
 =================
 
 .. note::
-    File formats support can be extended to match specific requirements (for instance, to support a complex XML DTD or a non standard flat file format). Contact your local support team if you need more information on file formats support extension.
+    File formats support can be extended to match specific requirements (for instance, to support a complex XML or a non standard flat file format). Contact your local support team if you need more information on file formats support extension.
 
 Supported file formats
 ----------------------

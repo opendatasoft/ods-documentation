@@ -3,11 +3,6 @@ Creating a dataset with multiple files
 
 It is possible to add multiple files to a dataset, as well as to have multiple sources into one dataset.
 
-.. admonition:: Reminder: file VS source
-   :class: important
-
-   Each sourced file automatically creates a source of data in the platform. When there is only one file added per dataset, only one source is created. However, when there are multiple files per dataset, there can be only one source or several, depending on the chosen method to add these files.
-
 There are 3 methods to add multiple files into a dataset: by adding them one by one, or by adding multiple files at the same time either through an archive file or via an FTP server.
 
 Sourcing files one by one

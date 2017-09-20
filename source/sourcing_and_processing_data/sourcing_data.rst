@@ -4,8 +4,8 @@ Sourcing data
 There are 3 different methods to add data to a dataset:
 
 * by uploading a static, local file into the platform
-* by connecting the platform to a remote service (e.g. an API, a geographical information system, an FTP, etc.): it enables the platform to retrieve the files that the remote service contains while staying synchronized with it
-* by pasting or directly writing data and uploading it into the platform
+* by connecting the platform to a remote service (e.g. an API, a geographical information system, an FTP, etc.): it enables the platform to retrieve what that the remote service contains while staying synchronized with it
+* by pasting data and uploading it into the platform
 
 .. admonition:: Supported file formats
    :class: important
@@ -41,7 +41,7 @@ Sourcing remote data via a URL
 This method consists in connecting the platform to:
 
 * either a remote server via its URL, to import files stored on this remote server
-* or, a remote data source exposing data records over an HTTP API
+* or, a remote data source exposing data records over an API
 
 .. admonition:: Scheduling updates and pushing real-time data
    :class: note
@@ -118,7 +118,7 @@ OpenDataSoft natively supports the following APIs:
 Pasting data
 ------------
 
-This method consists in directly writing or pasting data in a CSV format. This method is most useful for quick tests.
+This method consists in pasting data in a CSV format. This method is most useful for quick tests.
 
 1. In Catalog > Datasets, click on the **New dataset** button.
 2. Click on the **Add a source** button.

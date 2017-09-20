@@ -1,7 +1,7 @@
 Creating a dataset with images
 ==============================
 
-It is possible to source images, as well as other similar types of files, into the platform.
+It is possible to source images, as well as other media types of files, into the platform.
 
 All formats considered as images by the platform (.gif, .png, .jpeg, .jpg, .tiff, .bmp, .svg) will be imported as such. It means that a thumbnail will be generated for these formats, activating the Images visualization. Other types of files (such as PDF) can also be added into a dataset, however no thumbnail will be generated and the Images visualization will not be available. Users will only be able to download these files.
 
@@ -91,7 +91,7 @@ Displaying images
 Once the images are imported into the platform, they can be displayed in 2 different ways:
 
 * through the default Images visualization tab: an image gallery displaying all the images and their metadata
-* through a slideshow, which is an OpenDataSoft widget that can be added in any code area of the platform (e.g. in the Custom view of the dataset or in a content page): in that case, images are displayed one by one
+* through a slideshow, which is `an OpenDataSoft widget <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsSlideshow>`_ that can be added in any code area of the platform (e.g. in the Custom view of the dataset or in a content page): in that case, images are displayed one by one
 
 
 Exporting and downloading images
