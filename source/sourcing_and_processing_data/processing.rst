@@ -1327,6 +1327,56 @@ It takes the following parameters:
     * Field
     * yes
 
+what3words
+^^^^^^^^^^
+
+Get 3 word address from coordinates. Requires a what3words API key to be configured by a domain administrator.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Language
+    * Field containing the language in which the 3 word address. Default is English
+    * Field
+    * No
+  * * Coordinates
+    * Field containing the geographical coordinates
+    * Field
+    * yes
+  * * Output field
+    * Field that will contain the produced 3 word address
+    * Field
+    * yes
+
+Get coordinates from a 3 word address
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Convert a 3 word address into coordinates. Requires a what3words API key to be configured by a domain administrator.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * 3 word adress
+    * Field containing the 3 word address
+    * Field
+    * yes
+  * * Output field
+    * Field that will contain the produced coordinates
+    * Field
+    * yes
+
 GeoJoin
 ~~~~~~~
 
