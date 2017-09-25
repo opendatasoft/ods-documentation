@@ -1342,15 +1342,15 @@ It takes the following parameters:
     * Type
     * Mandatory
   * * Language
-    * Field containing the language in which the 3 word address. Default is English
-    * Field
+    * String containing the desired language for the 3 word address. Default is English
+    * String
     * No
   * * Coordinates
-    * Field containing the geographical coordinates
+    * Field containing the geographical coordinates to geocode
     * Field
     * yes
   * * Output field
-    * Field that will contain the produced 3 word address
+    * Field that will contain the resulting 3 word address
     * Field
     * yes
 
@@ -1373,7 +1373,7 @@ It takes the following parameters:
     * Field
     * yes
   * * Output field
-    * Field that will contain the produced coordinates
+    * Field that will contain the resulting coordinates
     * Field
     * yes
 
