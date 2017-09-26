@@ -71,10 +71,10 @@ Here is an minimal (incomplete) example to illustrate the different concepts. Le
 +-------------------+-------------+--------------+-----------------+----------------+-------------+--------------+-------------+----------------------------------+----------------------------+
 | title             | author      | contributors | original_format | digital_format | simple_type | precise_type | type_precis | thumb                            | link                       |
 +===================+=============+==============+=================+================+=============+==============+=============+==================================+============================+
-| The Milky Way     | H.R. Botha  | - C\. West   | A3 paper        | image/png      | image       | - drawing    | - dessin    | http://example.com/tmw-16x16.png | http://example.com/tmw.png |
-|                   |             | - N\. Moore  |                 |                |             | - diagram    | - diagramme |                                  |                            |
+| The Milky Way     | H.R. Botha  | - C\. West   | A3 paper        | image/png      | image       | - drawing    | - dessin    | http://example.com/tmw-16x16.png | http://example.com/tmw.png |
+|                   |             | - N\. Moore  |                 |                |             | - diagram    | - diagramme |                                  |                            |
 +-------------------+-------------+--------------+-----------------+----------------+-------------+--------------+-------------+----------------------------------+----------------------------+
-| Celestial objects | C\. West    |              | A4 paper        | image/png      | image       | - drawing    | - dessin    | http://example.com/co-16x16.png  | http://example.com/co.png  |
+| Celestial objects | C\. West    |              | A4 paper        | image/png      | image       | - drawing    | - dessin    | http://example.com/co-16x16.png  | http://example.com/co.png  |
 |                   |             |              |                 |                |             | - diagram    | - diagramme |                                  |                            |
 +-------------------+-------------+--------------+-----------------+----------------+-------------+--------------+-------------+----------------------------------+----------------------------+
 
