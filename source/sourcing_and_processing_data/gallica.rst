@@ -20,7 +20,7 @@ Mapping a term means assigning either a constant value or the value of a field f
 Field mapping format
 ^^^^^^^^^^^^^^^^^^^^
 
-To map a term to a field, the field name must be entered in the text input corresponding to the term mapping. To map a term to a constant value, the value must be entered, surrounded by backticks (`).
+To map a term to a field, the field name must be entered in the text input corresponding to the term mapping. To map a term to a constant value, the value must be entered, surrounded by backticks: `````.
 
 Standard terms
 ^^^^^^^^^^^^^^
