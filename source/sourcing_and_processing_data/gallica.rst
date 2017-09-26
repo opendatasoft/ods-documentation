@@ -13,7 +13,7 @@ In order to get started with the Gallica exporter, the ``Admin email`` must be e
 Fields mapping
 --------------
 
-Gallica expects up to 15 attributes, or terms, incuding 8 mandatory ones to be defined for each record in the dataset. Each of these terms are `Dublin Core Metadata Terms <http://dublincore.org/documents/dcmi-terms/>`_., specified by the `DCMI <http://dublincore.org/about/>`_. In addition some of these terms are given extra meaning by Gallica, and are expected to follow a specific format. Dublin Core specifies that all terms may be repeated any number of time.
+Gallica expects up to 15 attributes, or terms, incuding 8 mandatory ones to be defined for each record in the dataset. Each of these terms are `Dublin Core Metadata Terms <http://dublincore.org/documents/dcmi-terms/>`_, specified by the `DCMI <http://dublincore.org/about/>`_. In addition some of these terms are given extra meaning by Gallica, and are expected to follow a specific format. Dublin Core specifies that all terms may be repeated any number of time.
 
 Mapping a term means assigning either a constant value or the value of a field for each record. Any terms can have as many mapping as needed, of either type. The terms will simply be repeated to satisfy all the mappings. In addition, if the term is mapped to a multivalued field, the term will be repeated with every value of that field.
 
