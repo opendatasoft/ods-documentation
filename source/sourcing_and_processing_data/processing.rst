@@ -1330,7 +1330,7 @@ It takes the following parameters:
 what3words
 ^^^^^^^^^^
 
-Get 3 word address from coordinates. Requires a what3words API key to be configured by a domain administrator.
+This processor uses geographical coordinates to produce a 3 word address. A what3words API key is required for this processor.
 
 It takes the following parameters:
 
@@ -1344,7 +1344,7 @@ It takes the following parameters:
   * * Language
     * String containing the desired language for the 3 word address. Default is English
     * String
-    * No
+    * no
   * * Coordinates
     * Field containing the geographical coordinates to geocode
     * Field
@@ -1357,7 +1357,7 @@ It takes the following parameters:
 Get coordinates from a 3 word address
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Convert a 3 word address into coordinates. Requires a what3words API key to be configured by a domain administrator.
+This processor converts a 3 word address into geographical coordinates. A what3words API key is required for this processor.
 
 It takes the following parameters:
 
@@ -1373,7 +1373,7 @@ It takes the following parameters:
     * Field
     * yes
   * * Output field
-    * Field that will contain the resulting coordinates
+    * Field that will contain the resulting geographical coordinates
     * Field
     * yes
 
