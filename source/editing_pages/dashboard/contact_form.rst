@@ -39,9 +39,9 @@ anonymous users cannot spam the administrators.
 
        Each field must contain the following properties
 
-       * ``id``: unique lowercase string with no special chars
+       * ``id``: unique lowercase string without special characters
        * ``label``: unique string
-       * ``name``: unique lowercase string with no special chars
+       * ``name``: unique lowercase string without special characters
        * ``type``: one of 'text' or 'choice'
        * ``choices``: to be set if type is 'choice' only. Array of unique strings.
        * ``required``: boolean
