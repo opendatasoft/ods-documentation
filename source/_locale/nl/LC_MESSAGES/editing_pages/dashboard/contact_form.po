@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-10 12:20+0200\n"
+"POT-Creation-Date: 2017-09-29 10:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2017\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
@@ -33,27 +33,27 @@ msgstr ""
 "reCaptcha om ervoor te zorgen dat anonieme gebruikers geen spam kunnen "
 "sturen naar de beheerders."
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:20
+#: ../../source/editing_pages/dashboard/contact_form.rst:13
 msgid "Parameter"
 msgstr "Parameter"
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:21
+#: ../../source/editing_pages/dashboard/contact_form.rst:14
 msgid "Type"
 msgstr "Type"
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:22
+#: ../../source/editing_pages/dashboard/contact_form.rst:15
 msgid "Description"
 msgstr "Omschrijving"
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:23
+#: ../../source/editing_pages/dashboard/contact_form.rst:16
 msgid "``page-id`` **required**"
 msgstr "``page-id`` **vereist**"
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:24
+#: ../../source/editing_pages/dashboard/contact_form.rst:17
 msgid "string"
 msgstr "string"
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:25
+#: ../../source/editing_pages/dashboard/contact_form.rst:18
 msgid ""
 "The slug of the current page so that administrators know where the request "
 "came from."
@@ -61,15 +61,15 @@ msgstr ""
 "De slug van de huidige pagina zodat de beheerders weten waar de aanvraag "
 "vandaan kwam."
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:26
+#: ../../source/editing_pages/dashboard/contact_form.rst:19
 msgid "``form-disabled``"
 msgstr "``form-disabled``"
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:27
+#: ../../source/editing_pages/dashboard/contact_form.rst:20
 msgid "boolean (default: false)"
 msgstr "booleaans (standaard: onwaar)"
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:28
+#: ../../source/editing_pages/dashboard/contact_form.rst:21
 msgid ""
 "Specify whether to disable (that is prevent data input and submission) the "
 "contact form or not."
@@ -77,15 +77,15 @@ msgstr ""
 "Specificeer of het contactformulier al dan niet moet worden gedeactiveerd "
 "(m.a.w. dat de input en het doorsturen van data wordt voorkomen)."
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:29
+#: ../../source/editing_pages/dashboard/contact_form.rst:22
 msgid "``logged-in``"
 msgstr "``logged-in``"
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:30
+#: ../../source/editing_pages/dashboard/contact_form.rst:23
 msgid "boolean (default: autodetected)"
 msgstr "booleaans (standaard: automatisch opgespoord)"
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:31
+#: ../../source/editing_pages/dashboard/contact_form.rst:24
 msgid ""
 "Specify whether the current user is logged in or not. If true, the recaptcha"
 " is not displayed."
@@ -93,38 +93,93 @@ msgstr ""
 "Specificeer of de huidige gebruiker al dan niet is ingelogd. Indien dit zo "
 "is, wordt de recaptcha niet weergegeven."
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:32
+#: ../../source/editing_pages/dashboard/contact_form.rst:25
 msgid "``name-label``"
 msgstr "``name-label``"
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:33
+#: ../../source/editing_pages/dashboard/contact_form.rst:26
 msgid "string (default: `Your name`)"
 msgstr "string (standaard: `Uw naam`)"
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:34
+#: ../../source/editing_pages/dashboard/contact_form.rst:27
 msgid "Specify the label displayed in front of the name field."
 msgstr "Specificeer het label dat vóór het naamveld wordt weergegeven."
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:35
+#: ../../source/editing_pages/dashboard/contact_form.rst:28
 msgid "``email-label``"
 msgstr "``email-label``"
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:36
+#: ../../source/editing_pages/dashboard/contact_form.rst:29
 msgid "string (default: `Email`)"
 msgstr "string (standaard: `E-mail`)"
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:37
+#: ../../source/editing_pages/dashboard/contact_form.rst:30
 msgid "Specify the label displayed in front of the email field."
 msgstr "Specificeer het label dat vóór het e-mailveld wordt weergegeven."
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:38
+#: ../../source/editing_pages/dashboard/contact_form.rst:31
 msgid "``message-label``"
 msgstr "``message-label``"
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:39
+#: ../../source/editing_pages/dashboard/contact_form.rst:32
 msgid "string (default: `Message`)"
 msgstr "string (standaard: `Bericht`)"
 
-#: ../../source/editing_pages/dashboard/contact_form.rst:40
+#: ../../source/editing_pages/dashboard/contact_form.rst:33
 msgid "Specify the label displayed in front of the message field."
 msgstr "Specificeer het label dat vóór het berichtveld wordt weergegeven."
+
+#: ../../source/editing_pages/dashboard/contact_form.rst:34
+msgid "``additional-fields``"
+msgstr "``extra velden``"
+
+#: ../../source/editing_pages/dashboard/contact_form.rst:35
+msgid "Array of field objects"
+msgstr "Waaier van veldvoorwerpen"
+
+#: ../../source/editing_pages/dashboard/contact_form.rst:37
+msgid "(default: `[]`)"
+msgstr "(standaard: `[]`)"
+
+#: ../../source/editing_pages/dashboard/contact_form.rst:38
+msgid ""
+"Specify a list of fields to be inserted between the `email` and the "
+"`message` inputs."
+msgstr ""
+"Specificeer een lijst met velden die ingevoegd moeten worden tussen de "
+"inputs `e-mail` en `bericht` ."
+
+#: ../../source/editing_pages/dashboard/contact_form.rst:40
+msgid "Each field must contain the following properties"
+msgstr "Elk veld moet de volgende eigenschappen hebben"
+
+#: ../../source/editing_pages/dashboard/contact_form.rst:42
+msgid "``id``: unique lowercase string without special characters"
+msgstr "``id``: unieke string in kleine letters zonder speciale karakters"
+
+#: ../../source/editing_pages/dashboard/contact_form.rst:43
+msgid "``label``: unique string"
+msgstr "``label``: unieke string"
+
+#: ../../source/editing_pages/dashboard/contact_form.rst:44
+msgid "``name``: unique lowercase string without special characters"
+msgstr "``name``: unieke string in kleine letters zonder speciale karakters"
+
+#: ../../source/editing_pages/dashboard/contact_form.rst:45
+msgid "``type``: one of 'text' or 'choice'"
+msgstr "``type``: één van 'tekst' of 'keuze'"
+
+#: ../../source/editing_pages/dashboard/contact_form.rst:46
+msgid ""
+"``choices``: to be set if type is 'choice' only. Array of unique strings."
+msgstr ""
+"``choices``: moet ingesteld worden enkel wanneer het type 'keuze' is. Waaier"
+" van unieke strings."
+
+#: ../../source/editing_pages/dashboard/contact_form.rst:47
+msgid "``required``: boolean"
+msgstr "``required``: boolean"
+
+#: ../../source/editing_pages/dashboard/contact_form.rst:50
+msgid "Full example"
+msgstr "Volledig voorbeeld"

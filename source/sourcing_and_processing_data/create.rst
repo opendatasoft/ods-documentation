@@ -15,7 +15,10 @@ Creating new datasets
 .. toctree::
    :maxdepth: 2
 
-   loading_data
+   supported_formats
+   sourcing_data
+   creating_dataset_with_images
+   creating_dataset_with_multiple_files
    harvesters
    realtime
    federation
