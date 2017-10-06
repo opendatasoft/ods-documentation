@@ -2,13 +2,13 @@
 # Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-10 12:20+0200\n"
+"POT-Creation-Date: 2017-09-29 10:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Datawords_trad_1 <datawords.translator.it1@gmail.com>, 2017\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
@@ -811,6 +811,8 @@ msgid ""
 "Mathematical or text function (round, log, cosine, change text to upper "
 "case, ...)"
 msgstr ""
+"Funzioni matematiche o di testo (arrotondamento, logaritmo, coseno, cambia "
+"testo in lettere maiuscole e così via)."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:273
 msgid "Example of a mathematical function using the Expression processor"
@@ -1447,6 +1449,8 @@ msgid ""
 "The Join processor allows you to enrich the second dataset with columns "
 "coming from the first dataset."
 msgstr ""
+"Il processore Unisci permette di arricchire il secondo dataset con le "
+"colonne tratte dal primo dataset."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:501
 msgid "**Resulting dataset after a Join**"
@@ -2140,6 +2144,8 @@ msgid ""
 "You will need to concatenate the integer and the floating part (after the "
 "comma) in order to get the temperature value."
 msgstr ""
+"Per ottenere il valore della temperatura, è necessario concatenare la parte "
+"intera e la parte a virgola mobile, dopo la virgola."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:955
 msgid ""
@@ -2571,10 +2577,13 @@ msgid ""
 "Geographical processors are divided into 4 categories according to what you "
 "are trying to achieve:"
 msgstr ""
+"I processori geografici sono suddivisi in 4 categorie, a seconda di ciò che "
+"si desidera ottenere:"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1156
 msgid "**Geocoders**: convert a human readable address into a geo point"
 msgstr ""
+"**Geocodificatori**: convertono un indirizzo comprensibile in un geopoint."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1157
 msgid ""
@@ -2583,6 +2592,11 @@ msgid ""
 "countries, each of which features several indexing codes like postcode, "
 "state or region identifier, etc"
 msgstr ""
+"**Processore GeoJoin**: recupera le forme geografiche da codici normalizzati"
+" per divisioni amministrative specificamente riferite a un paese. Il "
+"processore GeoJoin supporta vari paesi, ciascuno dei quali con vari codici "
+"di indicizzazione, come codici di avviamento postale, identificativi di "
+"stato o di regione e così via."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1158
 msgid ""
@@ -2590,26 +2604,34 @@ msgid ""
 "and geoshape of country specific administrative divisions enclosing a "
 "geopoint"
 msgstr ""
+"**Processore Recupera divisioni amministrative**: recupera nome, codice e "
+"forma geografica delle divisioni amministrative specifiche di un paese che "
+"racchiudono un geopoint."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1159
 msgid ""
 "**Converters and functions**: simplify, convert or normalize geographical "
 "data, or run computations based on them"
 msgstr ""
+"**Convertitori e funzioni**: semplificano, convertono o normalizzano dati "
+"geografici o eseguono calcoli basati su di essi."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1164
 msgid "Geocoders"
-msgstr ""
+msgstr "Geocodificatori"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1167
 msgid "Geocode with BAN"
-msgstr ""
+msgstr "Geocodifica con BAN"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1169
 msgid ""
 "This processor allows you to geocode addresses in France by using the Base "
 "d'Adresses Nationale (BAN) service."
 msgstr ""
+"Questo processore permette di eseguire la geocodifica degli indirizzi "
+"francesi tramite il servizio BAN (Base d'Adresses Nationale, Database degli "
+"indirizzi nazionali)."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1180
 #: ../../source/sourcing_and_processing_data/processing.rst:1221
@@ -2618,7 +2640,7 @@ msgstr "Indirizzo"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1181
 msgid "Field containing French address"
-msgstr ""
+msgstr "Campo contenente un indirizzo francese"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1184
 #: ../../source/sourcing_and_processing_data/processing.rst:1225
@@ -2628,7 +2650,7 @@ msgstr "Codice postale"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1185
 msgid "Field containing French postal code"
-msgstr ""
+msgstr "Campo contenente un codice postale francese"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1187
 #: ../../source/sourcing_and_processing_data/processing.rst:1191
@@ -2644,7 +2666,7 @@ msgstr "Città"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1189
 msgid "Field containing French city"
-msgstr ""
+msgstr "Campo contenente una città francese"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1193
 #: ../../source/sourcing_and_processing_data/processing.rst:1234
@@ -2785,6 +2807,68 @@ msgstr "output_field"
 msgid "Field that will contain the produces WSG84 coordinates"
 msgstr "Campo contenente le coordinate WSG84 ottenute."
 
+#: ../../source/sourcing_and_processing_data/processing.rst:1331
+msgid "what3words"
+msgstr "what3words"
+
+#: ../../source/sourcing_and_processing_data/processing.rst:1333
+msgid ""
+"This processor uses geographical coordinates to produce a 3 word address. A "
+"what3words API key is required for this processor."
+msgstr ""
+"Questo processore utilizza le coordinate geografiche per ottenere un "
+"indirizzo composto da 3 parole. Per questo processore è necessaria una "
+"chiave API what3words."
+
+#: ../../source/sourcing_and_processing_data/processing.rst:1344
+msgid "Language"
+msgstr "Lingua"
+
+#: ../../source/sourcing_and_processing_data/processing.rst:1345
+msgid ""
+"String containing the desired language for the 3 word address. Default is "
+"English"
+msgstr ""
+"Stringa contenente la lingua desiderata per l'indirizzo di 3 parole. Il "
+"valore predefinito è Inglese."
+
+#: ../../source/sourcing_and_processing_data/processing.rst:1348
+#: ../../source/sourcing_and_processing_data/processing.rst:1739
+msgid "Coordinates"
+msgstr "Coordinate"
+
+#: ../../source/sourcing_and_processing_data/processing.rst:1349
+msgid "Field containing the geographical coordinates to geocode"
+msgstr "Campo contenente le coordinate geografiche per la geocodifica"
+
+#: ../../source/sourcing_and_processing_data/processing.rst:1353
+msgid "Field that will contain the resulting 3 word address"
+msgstr "Campo che conterrà l'indirizzo di 3 parole ottenuto"
+
+#: ../../source/sourcing_and_processing_data/processing.rst:1358
+msgid "Get coordinates from a 3 word address"
+msgstr "Ottieni le coordinate da un indirizzo composto da 3 parole"
+
+#: ../../source/sourcing_and_processing_data/processing.rst:1360
+msgid ""
+"This processor converts a 3 word address into geographical coordinates. A "
+"what3words API key is required for this processor."
+msgstr ""
+"Questo processore converte un indirizzo composto da 3 parole in coordinate "
+"geografiche. Per questo processore è necessaria una chiave API what3words."
+
+#: ../../source/sourcing_and_processing_data/processing.rst:1371
+msgid "3 word adress"
+msgstr "Indirizzo di 3 parole"
+
+#: ../../source/sourcing_and_processing_data/processing.rst:1372
+msgid "Field containing the 3 word address"
+msgstr "Campo contenente l'indirizzo di 3 parole"
+
+#: ../../source/sourcing_and_processing_data/processing.rst:1376
+msgid "Field that will contain the resulting geographical coordinates"
+msgstr "Campo che conterrà le coordinate geografiche ottenute"
+
 #: ../../source/sourcing_and_processing_data/processing.rst:1381
 msgid "GeoJoin"
 msgstr "GeoJoin"
@@ -2797,6 +2881,11 @@ msgid ""
 "in the tables below, can be found in datasets available on "
 "`public.opendatasoft.com <https://public.opendatasoft.com>`_."
 msgstr ""
+"Questo processore richiama le **Geo Shape** delle divisioni amministrative "
+"per un paese specificato e i relativi riferimenti (codice postale, sigla "
+"della provincia e così via). Ciascun paese ha riferimenti specifici. Tali "
+"riferimenti, riportati nelle tabelle sottostanti, si trovano nei dataset "
+"disponibili su `public.opendatasoft.com <https://public.opendatasoft.com>`_."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1392
 #: ../../source/sourcing_and_processing_data/processing.rst:1424
@@ -2830,27 +2919,31 @@ msgstr "Origine"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1394
 msgid "cantons2015"
-msgstr ""
+msgstr "cantons2015"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1395
 msgid ""
 "`Cantons <https://public.opendatasoft.com/explore/dataset/decoupage-des-"
 "cantons-pour-les-elections-departementales-de-mars-2015>`_"
 msgstr ""
+"`Cantoni <https://public.opendatasoft.com/explore/dataset/decoupage-des-"
+"cantons-pour-les-elections-departementales-de-mars-2015>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1396
 msgid "communes2013"
-msgstr ""
+msgstr "communes2013"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1397
 msgid ""
 "`Geofla® - Communes 2013 <https://public.opendatasoft.com/explore/dataset"
 "/geoflar-communes>`_"
 msgstr ""
+"`Geofla® - Comuni 2013 <https://public.opendatasoft.com/explore/dataset"
+"/geoflar-communes>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1398
 msgid "communes2015"
-msgstr ""
+msgstr "communes2015"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1399
 msgid ""
@@ -2862,17 +2955,19 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1400
 msgid "communes2016"
-msgstr ""
+msgstr "communes2016"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1401
 msgid ""
 "`Geofla® Commune 2016 <https://public.opendatasoft.com/explore/dataset"
 "/geoflar-communes-2016>`_"
 msgstr ""
+"`Geofla® Comuni 2016 <https://public.opendatasoft.com/explore/dataset"
+"/geoflar-communes-2016>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1402
 msgid "departements-simplifies2015"
-msgstr ""
+msgstr "departements-simplifies2015"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1403
 msgid ""
@@ -2886,7 +2981,7 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1404
 msgid "departements2015"
-msgstr ""
+msgstr "departements2015"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1405
 msgid ""
@@ -2894,30 +2989,37 @@ msgid ""
 "<https://public.opendatasoft.com/explore/dataset/geoflar-"
 "departements-2015>`_"
 msgstr ""
+"`Geofla® - Dipartimenti 2015 "
+"<https://public.opendatasoft.com/explore/dataset/geoflar-"
+"departements-2015>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1406
 msgid "iris2014"
-msgstr ""
+msgstr "iris2014"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1407
 msgid ""
 "`Contours IRIS 2014 <https://public.opendatasoft.com/explore/dataset"
 "/contours-iris-2014>`_"
 msgstr ""
+"`Confini IRIS 2014 <https://public.opendatasoft.com/explore/dataset"
+"/contours-iris-2014>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1408
 msgid "iris2015"
-msgstr ""
+msgstr "iris2015"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1409
 msgid ""
 "`Contours IRIS 2015 <https://public.opendatasoft.com/explore/dataset"
 "/contours-iris-2015>`_"
 msgstr ""
+"`Confini IRIS 2015 <https://public.opendatasoft.com/explore/dataset"
+"/contours-iris-2015>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1410
 msgid "postcode2013"
-msgstr ""
+msgstr "postcode2013"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1411
 msgid ""
@@ -2929,7 +3031,7 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1412
 msgid "regions1970"
-msgstr ""
+msgstr "regions1970"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1413
 msgid ""
@@ -2943,7 +3045,7 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1414
 msgid "regions2016"
-msgstr ""
+msgstr "regions2016"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1415
 msgid ""
@@ -2957,11 +3059,11 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1419
 msgid "Switzerland"
-msgstr ""
+msgstr "Svizzera"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1426
 msgid "bezirke2017"
-msgstr ""
+msgstr "bezirke2017"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1427
 msgid ""
@@ -2969,10 +3071,13 @@ msgid ""
 "<https://public.opendatasoft.com/explore/dataset/swissboundaries3d-"
 "tlm_bezirksgebiet>`_"
 msgstr ""
+"`swissBOUNDARIES3D - TLM BEZIRKSGEBIET "
+"<https://public.opendatasoft.com/explore/dataset/swissboundaries3d-"
+"tlm_bezirksgebiet>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1428
 msgid "postleitzahl2017"
-msgstr ""
+msgstr "postleitzahl2017"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1429
 msgid ""
@@ -2980,10 +3085,14 @@ msgid ""
 "<https://public.opendatasoft.com/explore/dataset/amtliches-"
 "ortschaftenverzeichnis-mit-postleitzahl-und-perimeter>`_"
 msgstr ""
+"`Elenco ufficiale con codici postali e perimetriAmtliches "
+"Ortschaftenverzeichnis mit Postleitzahl und Perimeter "
+"<https://public.opendatasoft.com/explore/dataset/amtliches-"
+"ortschaftenverzeichnis-mit-postleitzahl-und-perimeter>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1430
 msgid "gemeinde2017"
-msgstr ""
+msgstr "gemeinde2017"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1431
 msgid ""
@@ -2991,10 +3100,13 @@ msgid ""
 "<https://public.opendatasoft.com/explore/dataset/swissboundaries3d-"
 "tlm_hoheitsgebiet>`_"
 msgstr ""
+"`swissBOUNDARIES3D - TLM HOHEITSGEBIET "
+"<https://public.opendatasoft.com/explore/dataset/swissboundaries3d-"
+"tlm_hoheitsgebiet>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1432
 msgid "kantone2017"
-msgstr ""
+msgstr "kantone2017"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1433
 msgid ""
@@ -3002,6 +3114,9 @@ msgid ""
 "<https://public.opendatasoft.com/explore/dataset/swissboundaries3d-"
 "tlm_kantonsgebiet>`_"
 msgstr ""
+"`swissBOUNDARIES3D - TLM_KANTONSGEBIET "
+"<https://public.opendatasoft.com/explore/dataset/swissboundaries3d-"
+"tlm_kantonsgebiet>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1436
 msgid "Netherlands"
@@ -3009,31 +3124,35 @@ msgstr "Paesi Bassi"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1443
 msgid "postcode2015"
-msgstr ""
+msgstr "postcode2015"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1444
 msgid ""
 "`Nederland Postcodes "
 "<https://public.opendatasoft.com/explore/dataset/openpostcodevlakkenpc4>`_"
 msgstr ""
+"`Codici postali dei Paesi Bassi "
+"<https://public.opendatasoft.com/explore/dataset/openpostcodevlakkenpc4>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1447
 msgid "Canada"
-msgstr ""
+msgstr "Canada"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1454
 msgid "province2003"
-msgstr ""
+msgstr "province2003"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1455
 msgid ""
 "`Canada Provinces <https://public.opendatasoft.com/explore/dataset/canada-"
 "provinces>`_"
 msgstr ""
+"`Province del Canada <https://public.opendatasoft.com/explore/dataset"
+"/canada-provinces>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1456
 msgid "census-subdivisions2011"
-msgstr ""
+msgstr "census-subdivisions2011"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1457
 msgid ""
@@ -3041,26 +3160,34 @@ msgid ""
 "<https://public.opendatasoft.com/explore/dataset/canadian-census-"
 "subdivisions0>`_"
 msgstr ""
+"`Suddivisioni del censimento canadese "
+"<https://public.opendatasoft.com/explore/dataset/canadian-census-"
+"subdivisions0>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1458
 msgid "census-divisions2011"
-msgstr ""
+msgstr "census-divisions2011"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1459
 msgid ""
 "`Canadian Census Divisions <https://public.opendatasoft.com/explore/dataset"
 "/canadian-census-subdivisions>`_"
 msgstr ""
+"`Divisioni del censimento canadese "
+"<https://public.opendatasoft.com/explore/dataset/canadian-census-"
+"subdivisions>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1460
 msgid "county2011"
-msgstr ""
+msgstr "county2011"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1461
 msgid ""
 "`Intercensal Canada <https://public.opendatasoft.com/explore/dataset"
 "/intercensal-canada>`_"
 msgstr ""
+"`Intercensal Canada <https://public.opendatasoft.com/explore/dataset"
+"/intercensal-canada>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1464
 msgid "Germany"
@@ -3068,17 +3195,19 @@ msgstr "Germania"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1471
 msgid "lander2016"
-msgstr ""
+msgstr "lander2016"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1472
 msgid ""
 "`Deutschland Länder <https://public.opendatasoft.com/explore/dataset"
 "/deutschland-lander>`_"
 msgstr ""
+"`Länder tedeschi <https://public.opendatasoft.com/explore/dataset"
+"/deutschland-lander>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1473
 msgid "postleitzahlen2016"
-msgstr ""
+msgstr "postleitzahlen2016"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1474
 msgid ""
@@ -3090,97 +3219,113 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1477
 msgid "The USA"
-msgstr ""
+msgstr "Stati Uniti"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1484
 msgid "county2017"
-msgstr ""
+msgstr "county2017"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1485
 msgid ""
 "`US County Boundaries <https://public.opendatasoft.com/explore/dataset/us-"
 "county-boundaries>`_"
 msgstr ""
+"`Confini delle contee degli Stati Uniti "
+"<https://public.opendatasoft.com/explore/dataset/us-county-boundaries>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1486
 msgid "state2017"
-msgstr ""
+msgstr "state2017"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1487
 msgid ""
 "`US State Boundaries <https://public.opendatasoft.com/explore/dataset/us-"
 "state-boundaries>`_"
 msgstr ""
+"`Confini degli stati degli Stati Uniti "
+"<https://public.opendatasoft.com/explore/dataset/us-state-boundaries>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1488
 msgid "zcta2016"
-msgstr ""
+msgstr "zcta2016"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1489
 msgid "`ZCTA <https://public.opendatasoft.com/explore/dataset/us-zcta-2010>`_"
 msgstr ""
+"`ZCTA <https://public.opendatasoft.com/explore/dataset/us-zcta-2010>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1492
 msgid "Mexico"
-msgstr ""
+msgstr "Messico"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1499
 msgid "estados2017"
-msgstr ""
+msgstr "estados2017"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1500
 msgid ""
 "`Estados de México <https://public.opendatasoft.com/explore/dataset/estados-"
 "de-mexico>`_"
 msgstr ""
+"`Stati del Messico <https://public.opendatasoft.com/explore/dataset/estados-"
+"de-mexico>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1503
 msgid "Scotland (GB)"
-msgstr ""
+msgstr "Scozia (GB)"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1510
 #: ../../source/sourcing_and_processing_data/processing.rst:1527
 #: ../../source/sourcing_and_processing_data/processing.rst:1550
 msgid "ward2014"
-msgstr ""
+msgstr "ward2014"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1511
 msgid ""
 "`Wards in Scotland 2014 <https://public.opendatasoft.com/explore/dataset"
 "/wards-in-scotland-december-2014>`_"
 msgstr ""
+"`Circoscrizioni della Scozia 2014 "
+"<https://public.opendatasoft.com/explore/dataset/wards-in-scotland-"
+"december-2014>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1512
 #: ../../source/sourcing_and_processing_data/processing.rst:1529
 #: ../../source/sourcing_and_processing_data/processing.rst:1552
 msgid "ward2015"
-msgstr ""
+msgstr "ward2015"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1513
 msgid ""
 "`Wards in Scotland 2015 <https://public.opendatasoft.com/explore/dataset"
 "/wards-in-scotland-december-2015>`_"
 msgstr ""
+"`Circoscrizioni della Scozia 2015 "
+"<https://public.opendatasoft.com/explore/dataset/wards-in-scotland-"
+"december-2015>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1514
 #: ../../source/sourcing_and_processing_data/processing.rst:1554
 msgid "ward2016"
-msgstr ""
+msgstr "ward2016"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1515
 msgid ""
 "`Wards in Scotland 2016 <https://public.opendatasoft.com/explore/dataset"
 "/wards-in-scotland-december-2016>`_"
 msgstr ""
+"`Circoscrizioni della Scozia 2016 "
+"<https://public.opendatasoft.com/explore/dataset/wards-in-scotland-"
+"december-2016>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1518
 msgid "Wales (GB)"
-msgstr ""
+msgstr "Galles (GB)"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1525
 #: ../../source/sourcing_and_processing_data/processing.rst:1546
 msgid "county2016"
-msgstr ""
+msgstr "county2016"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1526
 msgid ""
@@ -3188,54 +3333,72 @@ msgid ""
 "<https://public.opendatasoft.com/explore/dataset/counties-and-unitary-"
 "authorities-december-2016-generalised-clipped-boundaries-i0>`_"
 msgstr ""
+"`Contee e autorità unitarie del Galles "
+"<https://public.opendatasoft.com/explore/dataset/counties-and-unitary-"
+"authorities-december-2016-generalised-clipped-boundaries-i0>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1528
 msgid ""
 "`Wards in Wales 2014 <https://public.opendatasoft.com/explore/dataset/wards-"
 "in-wales-december-2014>`_"
 msgstr ""
+"`Circoscrizioni del Galles 2014 "
+"<https://public.opendatasoft.com/explore/dataset/wards-in-wales-"
+"december-2014>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1530
 msgid ""
 "`Wards in Wales 2015 <https://public.opendatasoft.com/explore/dataset/wards-"
 "in-wales-december-2015>`_"
 msgstr ""
+"`Circoscrizioni del Galles 2015 "
+"<https://public.opendatasoft.com/explore/dataset/wards-in-wales-"
+"december-2015>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1531
 msgid "wards2016"
-msgstr ""
+msgstr "wards2016"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1532
 msgid ""
 "`Wards in Wales 2016 <https://public.opendatasoft.com/explore/dataset/wards-"
 "in-wales-december-2016>`_"
 msgstr ""
+"`Circoscrizioni del Galles 2016 "
+"<https://public.opendatasoft.com/explore/dataset/wards-in-wales-"
+"december-2016>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1533
 #: ../../source/sourcing_and_processing_data/processing.rst:1556
 msgid "parish2014"
-msgstr ""
+msgstr "parish2014"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1534
 msgid ""
 "`Parishes in Wales 2015 <https://public.opendatasoft.com/explore/dataset"
 "/parishes-in-wales-december-2014>`_"
 msgstr ""
+"`Municipalità del Galles 2015 "
+"<https://public.opendatasoft.com/explore/dataset/parishes-in-wales-"
+"december-2014>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1535
 #: ../../source/sourcing_and_processing_data/processing.rst:1558
 msgid "parish2016"
-msgstr ""
+msgstr "parish2016"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1536
 msgid ""
 "`Parishes in Wales 2016 <https://public.opendatasoft.com/explore/dataset"
 "/parishes-in-wales-december-2016>`_"
 msgstr ""
+"`Municipalità del Galles 2016 "
+"<https://public.opendatasoft.com/explore/dataset/parishes-in-wales-"
+"december-2016>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1539
 msgid "England (GB)"
-msgstr ""
+msgstr "Inghilterra (GB)"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1547
 msgid ""
@@ -3243,54 +3406,74 @@ msgid ""
 "<https://public.opendatasoft.com/explore/dataset/counties-and-unitary-"
 "authorities-december-2016-generalised-clipped-boundaries-in>`_"
 msgstr ""
+"`Contee e autorità unitarie dell'Inghilterra "
+"<https://public.opendatasoft.com/explore/dataset/counties-and-unitary-"
+"authorities-december-2016-generalised-clipped-boundaries-in>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1548
 msgid "region2016"
-msgstr ""
+msgstr "region2016"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1549
 msgid ""
 "`Regions in England <https://public.opendatasoft.com/explore/dataset"
 "/regions-in-england-december-2016>`_"
 msgstr ""
+"`Regioni dell'Inghilterra <https://public.opendatasoft.com/explore/dataset"
+"/regions-in-england-december-2016>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1551
 msgid ""
 "`Wards in England 2014 <https://public.opendatasoft.com/explore/dataset"
 "/wards-in-england-december-2014>`_"
 msgstr ""
+"`Circoscrizioni dell'Inghilterra 2014 "
+"<https://public.opendatasoft.com/explore/dataset/wards-in-england-"
+"december-2014>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1553
 msgid ""
 "`Wards in England 2015 <https://public.opendatasoft.com/explore/dataset"
 "/wards-in-england-december-2015>`_"
 msgstr ""
+"`Circoscrizioni dell'Inghilterra 2015 "
+"<https://public.opendatasoft.com/explore/dataset/wards-in-england-"
+"december-2015>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1555
 msgid ""
 "`Wards in England 2016 <https://public.opendatasoft.com/explore/dataset"
 "/wards-in-england-december-2016>`_"
 msgstr ""
+"`Circoscrizioni dell'Inghilterra 2016 "
+"<https://public.opendatasoft.com/explore/dataset/wards-in-england-"
+"december-2016>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1557
 msgid ""
 "`Parishes in England 2014 <https://public.opendatasoft.com/explore/dataset"
 "/parishes-in-england-december-2014>`_"
 msgstr ""
+"`Municipalità dell'Inghilterra 2014 "
+"<https://public.opendatasoft.com/explore/dataset/parishes-in-england-"
+"december-2014>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1559
 msgid ""
 "`Parishes in England 2016 <https://public.opendatasoft.com/explore/dataset"
 "/parishes-in-england-december-2016>`_"
 msgstr ""
+"`Municipalità dell'Inghilterra 2016 "
+"<https://public.opendatasoft.com/explore/dataset/parishes-in-england-"
+"december-2016>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1562
 msgid "Spain"
-msgstr ""
+msgstr "Spagna"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1569
 msgid "comunidades-autonomas2012"
-msgstr ""
+msgstr "comunidades-autonomas2012"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1570
 msgid ""
@@ -3298,30 +3481,36 @@ msgid ""
 "<https://public.opendatasoft.com/explore/dataset/comunidades-autonomas-"
 "espanolas>`_"
 msgstr ""
+"`Comunità autonome spagnole <https://public.opendatasoft.com/explore/dataset"
+"/comunidades-autonomas-espanolas>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1571
 msgid "provincias2012"
-msgstr ""
+msgstr "provincias2012"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1572
 msgid ""
 "`Provincias españolas <https://public.opendatasoft.com/explore/dataset"
 "/provincias-espanolas>`_"
 msgstr ""
+"`Province spagnole <https://public.opendatasoft.com/explore/dataset"
+"/provincias-espanolas>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1575
 msgid "World"
-msgstr ""
+msgstr "Mondo"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1582
 msgid "countries2016"
-msgstr ""
+msgstr "countries2016"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1583
 msgid ""
 "`Natural Earth Countries <https://public.opendatasoft.com/explore/dataset"
 "/natural-earth-countries-1_110m>`_"
 msgstr ""
+"`Natural Earth Countries <https://public.opendatasoft.com/explore/dataset"
+"/natural-earth-countries-1_110m>`_"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1587
 msgid "Retrieve Administrative Divisions"
@@ -3388,7 +3577,7 @@ msgstr "Départements"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1608
 msgid "Cantons"
-msgstr ""
+msgstr "Cantoni"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1609
 msgid "Codes Postaux"
@@ -3396,23 +3585,23 @@ msgstr "Codes Postaux"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1610
 msgid "Communes INSEE"
-msgstr ""
+msgstr "Comuni codice INSEE"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1611
 msgid "Contours IRIS"
-msgstr ""
+msgstr "Confini IRIS"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1612
 msgid "CH"
-msgstr ""
+msgstr "CH"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1614
 msgid "Kantons"
-msgstr ""
+msgstr "Cantoni"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1616
 msgid "Bezirks"
-msgstr ""
+msgstr "Bezirks"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1617
 #: ../../source/sourcing_and_processing_data/processing.rst:1641
@@ -3421,7 +3610,7 @@ msgstr "Postleitzahlen"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1618
 msgid "Hoheits"
-msgstr ""
+msgstr "Hoheits"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1620
 msgid "NL"
@@ -3441,11 +3630,11 @@ msgstr "Provinces"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1632
 msgid "Census Divisions"
-msgstr ""
+msgstr "Divisioni del censimento"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1634
 msgid "Census Subdivisions"
-msgstr ""
+msgstr "Suddivisioni del censimento"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1636
 msgid "DE"
@@ -3461,11 +3650,11 @@ msgstr "US"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1646
 msgid "State Boundaries"
-msgstr ""
+msgstr "Confini degli stati"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1648
 msgid "County Boundaries"
-msgstr ""
+msgstr "Confini delle contee"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1649
 msgid "ZCTA"
@@ -3481,35 +3670,35 @@ msgstr "Estados"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1660
 msgid "GB-SCT"
-msgstr ""
+msgstr "GB-SCT"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1665
 #: ../../source/sourcing_and_processing_data/processing.rst:1673
 #: ../../source/sourcing_and_processing_data/processing.rst:1681
 msgid "Wards"
-msgstr ""
+msgstr "Circoscrizioni"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1668
 msgid "GB-WLS"
-msgstr ""
+msgstr "GB-WLS"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1672
 #: ../../source/sourcing_and_processing_data/processing.rst:1680
 msgid "Counties and Unitary Authorities"
-msgstr ""
+msgstr "Contee e autorità unitarie"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1674
 #: ../../source/sourcing_and_processing_data/processing.rst:1682
 msgid "Parishes"
-msgstr ""
+msgstr "Municipalità"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1676
 msgid "GB-ENG"
-msgstr ""
+msgstr "GB-ENG"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1678
 msgid "Regions"
-msgstr ""
+msgstr "Regioni"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1684
 msgid "ES"
@@ -3529,7 +3718,7 @@ msgstr "Municipios"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1694
 msgid "Converters and functions"
-msgstr ""
+msgstr "Convertitori e funzioni"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1697
 msgid "Coordinates system conversion"
@@ -3627,11 +3816,6 @@ msgstr "Simbolo dei secondi"
 msgid "'\"', '″'"
 msgstr "'\"', '″'"
 
-#: ../../source/sourcing_and_processing_data/processing.rst:1348
-#: ../../source/sourcing_and_processing_data/processing.rst:1739
-msgid "Coordinates"
-msgstr "Coordinate"
-
 #: ../../source/sourcing_and_processing_data/processing.rst:1740
 msgid "Field that contains the coordinates"
 msgstr "Campo contenente le coordinate."
@@ -3727,6 +3911,8 @@ msgid ""
 "This processor simplifies a geo shape to reduce processing time and dataset "
 "size."
 msgstr ""
+"Questo processore semplifica una forma geografica per ridurre il tempo di "
+"elaborazione e le dimensioni del dataset."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1814
 msgid "Tolerance (simplification level)"
@@ -3779,6 +3965,8 @@ msgid ""
 "This processor provides privacy protection by approximating a geographical "
 "location within a specific radius."
 msgstr ""
+"Questo processore garantisce la privacy, approssimando un'ubicazione "
+"geografica all'interno di un raggio specifico."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1843
 msgid "Field containing the coordinates you want to approximate"
@@ -3798,7 +3986,7 @@ msgstr "Calcolo della distanza geografica"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1858
 msgid "This processor computes the distance between 2 coordinates."
-msgstr ""
+msgstr "Questo processore calcola la distanza tra 2 coordinate."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1869
 msgid "Coordinates A"
@@ -3814,39 +4002,44 @@ msgstr "Campo che contiene la distanza calcolata."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1883
 msgid "Create Geopoint"
-msgstr ""
+msgstr "Crea geopoint"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1885
 msgid ""
 "This processor is used to create a geopoint field from a latitude field and "
 "a longitude field."
 msgstr ""
+"Questo processore permette di creare un campo geopoint da un campo "
+"latitudine e un campo longitudine."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1895
 msgid "Default Value"
-msgstr ""
+msgstr "Valore predefinito"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1896
 msgid "Latitude"
-msgstr ""
+msgstr "Latitudine"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1900
 msgid "Longitude"
-msgstr ""
+msgstr "Longitudine"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1904
 msgid "Source EPSG Code"
-msgstr ""
+msgstr "Codice EPSG sorgente"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1905
 msgid ""
 "String representing the `EPSG <http://spatialreference.org/ref/epsg/>`_ "
 "(spacial reference) code of the geographical data"
 msgstr ""
+"Stringa che rappresenta il codice `EPSG "
+"<http://spatialreference.org/ref/epsg/>`_ (riferimento spaziale) dei dati "
+"geografici"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1908
 msgid "Output Field"
-msgstr ""
+msgstr "Campo di uscita"
 
 #: ../../source/sourcing_and_processing_data/processing.rst:1915
 msgid "Text processors"
@@ -3963,6 +4156,10 @@ msgid ""
 "zip code to keep only the area code, e.g from 44100 (Nantes city) keep only "
 "44 (Loire-Atlantique area)."
 msgstr ""
+"Un esempio potrebbe riguardare la necessità di mantenere solo una parte di "
+"un numero, come il codice d'area contenuto in un CAP francese. In questo "
+"caso, dal codice 44100 (città di Nantes) verrà conservato solo 44 (area "
+"Loira-Atlantico)."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:2039
 msgid ""
@@ -4030,6 +4227,8 @@ msgid ""
 "The number of the part extracted is specified in the ``index`` parameter. "
 "Note that the numbering starts at 1."
 msgstr ""
+"Il numero della parte estratta è specificato nel parametro ``index``. La "
+"numerazione parte da 1."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:2117
 msgid "Field that contains the text to split"
@@ -4082,6 +4281,11 @@ msgid ""
 " can be used to create another column with the area code selected, instead "
 "of replacing the content like with the Replace Regexp processor."
 msgstr ""
+"Utilizzando lo stesso esempio impiegato per il processore Sostituisci "
+"tramite Regexp (del codice CAP francese 44100, si desidera mantenere solo il"
+" codice di area 44), il processore Estrai testo permette di creare un'altra "
+"colonna con il codice di area selezionato, anziché sostituire il contenuto "
+"come nel caso del processore Sostituisci con Regexp."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:2147
 msgid ""
@@ -4093,6 +4297,13 @@ msgid ""
 "The special expression ``?P<area>`` is just for specifying the new column "
 "name"
 msgstr ""
+"In questo esempio, utilizziamo il pattern ``(?P<area>[0-9]{2})[0-9]{3}``. "
+"``[0-9]`` significa qualsiasi cifra e ``{2}`` o ``{3}`` indica il numero di "
+"cifre desiderate. In questo caso, intendiamo estrarre le prime due cifre, "
+"quindi è necessario racchiuderle tra parentesi; dopo la parentesi riportiamo"
+" il resto della sequenza che non deve essere estratta, in questo caso le 3 "
+"cifre restanti. L'espressione speciale ``?P<area>`` serve solo per "
+"specificare il nome della nuova colonna."
 
 #: ../../source/sourcing_and_processing_data/processing.rst:2156
 msgid ""
@@ -4209,53 +4420,3 @@ msgstr "Campi"
 #: ../../source/sourcing_and_processing_data/processing.rst:2273
 msgid "Checked: all the record's fields will be normalized"
 msgstr "Selezionato: tutti i campi del record saranno normalizzati."
-
-#: ../../source/sourcing_and_processing_data/processing.rst:1331
-msgid "what3words"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:1333
-msgid ""
-"This processor uses geographical coordinates to produce a 3 word address. A "
-"what3words API key is required for this processor."
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:1344
-msgid "Language"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:1345
-msgid ""
-"String containing the desired language for the 3 word address. Default is "
-"English"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:1349
-msgid "Field containing the geographical coordinates to geocode"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:1353
-msgid "Field that will contain the resulting 3 word address"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:1358
-msgid "Get coordinates from a 3 word address"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:1360
-msgid ""
-"This processor converts a 3 word address into geographical coordinates. A "
-"what3words API key is required for this processor."
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:1371
-msgid "3 word adress"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:1372
-msgid "Field containing the 3 word address"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processing.rst:1376
-msgid "Field that will contain the resulting geographical coordinates"
-msgstr ""
