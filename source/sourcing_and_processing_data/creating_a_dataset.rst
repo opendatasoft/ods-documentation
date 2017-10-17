@@ -1,5 +1,5 @@
-Creating new datasets
-=====================
+Creating a dataset
+==================
 
 .. ifconfig:: language == 'en'
 
@@ -19,6 +19,4 @@ Creating new datasets
    sourcing_data
    creating_dataset_with_images
    creating_dataset_with_multiple_files
-   harvesters
-   realtime
-   federation
+   federating_data
