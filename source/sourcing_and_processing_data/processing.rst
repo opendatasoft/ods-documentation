@@ -288,7 +288,7 @@ Here are some common use cases :
     :alt: Expression Processor conditional expression
     :align: center
 
-    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression if true : value if false``
+    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression if true : value if false``. Please note that ``value if false`` is optional, so you can write ``=expression ? value if the expression if true``.
 
 .. ifconfig:: language == 'fr'
 
@@ -296,7 +296,7 @@ Here are some common use cases :
     :alt: Expression Processor conditional expression
     :align: center
 
-    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression if true : value if false``
+    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression if true : value if false``. Please note that ``value if false`` is optional, so you can write ``=expression ? value if the expression if true``.
 
 The expression processor can work with both textual content and numerical content.
 
@@ -318,10 +318,10 @@ The following unary, binary and ternary operators are available:
    * * Unary operators
      * +, -, not, ! (not) , ! (factorial), ^ (power)
    * * Binary operators
-     * +, -, ``*``, /, % (euclidean division), and, &&, or, ||, >, <, >=, <=, == (evaluates to ``True`` or ``False``), &
+     * +, -, ``*``, /, % (euclidean division), and, &&, or, ||, >, <, >=, <=, ==, != (evaluates to ``True`` or ``False``), &
        (concatenation of strings, evaluates to a string)
    * * Ternary operators
-     * op1 ? op2 : op3 (conditional statement)
+     * op1 ? op2 : op3 (conditional statement). Please note that op3 is optional, so you can write op1 ? op2.
 
 Examples:
 
@@ -332,8 +332,8 @@ Examples:
      * Result
    * * 1 + 1
      * 2
-   * * -3 + 1
-     * -2
+   * * -3 + .1
+     * -2.9
    * * 3!
      * 6
    * * 2^3
@@ -1324,6 +1324,56 @@ It takes the following parameters:
     * yes
   * * output_field
     * Field that will contain the produces WSG84 coordinates
+    * Field
+    * yes
+
+what3words
+^^^^^^^^^^
+
+This processor uses geographical coordinates to produce a 3 word address. A what3words API key is required for this processor.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Language
+    * String containing the desired language for the 3 word address. Default is English
+    * String
+    * no
+  * * Coordinates
+    * Field containing the geographical coordinates to geocode
+    * Field
+    * yes
+  * * Output field
+    * Field that will contain the resulting 3 word address
+    * Field
+    * yes
+
+Get coordinates from a 3 word address
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This processor converts a 3 word address into geographical coordinates. A what3words API key is required for this processor.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * 3 word adress
+    * Field containing the 3 word address
+    * Field
+    * yes
+  * * Output field
+    * Field that will contain the resulting geographical coordinates
     * Field
     * yes
 
