@@ -1,3 +1,4 @@
+from __future__ import print_function
 import os
 import sys
 import requests
@@ -7,7 +8,7 @@ import markdown
 import codecs
 
 if len(sys.argv) < 2:
-    print "Please pass an API key as argument"
+    print("Please pass an API key as argument")
     exit()
 
 API_KEY = sys.argv[1]
@@ -15,7 +16,7 @@ BASE_URL = 'https://docsapi.helpscout.net/v1'
 
 SITES = {
     'en': {
-        'site_id': '546f7647e4b0f6394183b2a4' # This is taken for example from the URL in the management console
+        'site_id': '546f7647e4b0f6394183b2a4'  # This is taken for example from the URL in the management console
     },
     'fr': {
         'site_id': '546f7619e4b07e8a335a1480'
@@ -43,23 +44,26 @@ CONTENT_TYPES = {
     '.png': 'image/png'
 }
 
+
 def handle_request_error(method):
     def wrapper(*args, **kwargs):
         try:
             res = method(*args, **kwargs)
             return res
         except requests.exceptions.HTTPError as e:
-            print e
-            print e.response.content
+            print(e)
+            print(e.response.content)
             exit(0)
 
     return wrapper
+
 
 @handle_request_error
 def api_get(entrypoint, params=None):
     res = session.get('%s/%s' % (BASE_URL, entrypoint), params=params, auth=HTTP_AUTH)
     res.raise_for_status()
     return res.json()
+
 
 @handle_request_error
 def api_post_json(entrypoint, payload, params=None):
@@ -68,6 +72,7 @@ def api_post_json(entrypoint, payload, params=None):
     res.raise_for_status()
     return res
 
+
 @handle_request_error
 def api_put_json(entrypoint, payload, params=None):
     json_payload = json.dumps(payload)
@@ -75,17 +80,20 @@ def api_put_json(entrypoint, payload, params=None):
     res.raise_for_status()
     return res
 
+
 @handle_request_error
 def api_post_file(entrypoint, file, payload, params=None):
     res = session.post('%s/%s' % (BASE_URL, entrypoint), files=file, data=payload, params=params, auth=HTTP_AUTH)
     res.raise_for_status()
     return res
 
+
 @handle_request_error
 def api_delete(entrypoint):
     res = session.delete('%s/%s' % (BASE_URL, entrypoint), auth=HTTP_AUTH)
     res.raise_for_status()
     return res
+
 
 def load_metadata(path, lang=None):
     """
@@ -109,6 +117,7 @@ def load_metadata(path, lang=None):
     else:
         return {}
 
+
 def update_or_create(entrypoint, item_type, data, id=None):
     if id:
         # PUT
@@ -117,15 +126,17 @@ def update_or_create(entrypoint, item_type, data, id=None):
         # POST
         return api_post_json(entrypoint, data, params={'reload': 'true'}).json()[item_type]['id']
 
+
 def retrieve_existing_items(entrypoint, params=None):
     return {item['name'].lower(): item['id'] for item in api_get(entrypoint, params=params)[entrypoint.split('/')[-1]]['items']}
+
 
 def purge_obsolete(entrypoint, item_type, existing_remote_items, local_names):
     # Item names need to be compared case-insensitively, because HelpScout considers them unique
     local_names = [name.lower() for name in local_names]
     for remote_item_name, remote_item_id in existing_remote_items.items():
         if not remote_item_name.lower() in local_names:
-            print 'Deleting %s %s' % (item_type, remote_item_name)
+            print('Deleting %s %s' % (item_type, remote_item_name))
             api_delete('%s/%s' % (entrypoint, remote_item_id))
 
 
@@ -146,9 +157,9 @@ def push_documentation(lang):
             local_collections.append(collection_title)
             existing_id = existing_collections.get(collection_title.lower())
             if existing_id:
-                print 'Updating collection %s' % collection_title
+                print('Updating collection %s' % collection_title)
             else:
-                print 'Creating collection %s' % collection_title
+                print('Creating collection %s' % collection_title)
             collection_id = update_or_create('collections', 'collection', {
                 'siteId': site_id,
                 'name': collection_title,
@@ -167,9 +178,9 @@ def push_documentation(lang):
                     local_categories.append(category_title)
                     existing_id = existing_categories.get(category_title.lower())
                     if existing_id:
-                        print '\tUpdating category %s' % category_title
+                        print('\tUpdating category %s' % category_title)
                     else:
-                        print '\tCreating category %s' % category_title
+                        print('\tCreating category %s' % category_title)
                     category_id = update_or_create('categories', 'category', {
                         'collectionId': collection_id,
                         'name': category_title,
@@ -191,9 +202,9 @@ def push_documentation(lang):
                             local_articles.append(article_title)
                             existing_id = existing_articles.get(article_title.lower())
                             if existing_id:
-                                print '\t\tUpdating article %s' % article_title
+                                print('\t\tUpdating article %s' % article_title)
                             else:
-                                print '\t\tCreating article %s' % article_title
+                                print('\t\tCreating article %s' % article_title)
                             with codecs.open(os.path.join(article_path, 'article.md'), "r", "utf-8") as article_file:
                                 article_content = article_file.read()
 
@@ -232,7 +243,8 @@ def push_documentation(lang):
             purge_obsolete('categories', 'category', existing_categories, local_categories)
     purge_obsolete('collections', 'collection', existing_collections, local_collections)
 
+
 if __name__ == '__main__':
     for lang in SITES.keys():
-        print '* Publishing documentation - language %s' % lang.upper()
+        print('* Publishing documentation - language %s' % lang.upper())
         push_documentation(lang)
