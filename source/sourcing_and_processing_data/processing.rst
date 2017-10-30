@@ -1327,6 +1327,56 @@ It takes the following parameters:
     * Field
     * yes
 
+what3words
+^^^^^^^^^^
+
+This processor uses geographical coordinates to produce a 3 word address. A what3words API key is required for this processor.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * Language
+    * String containing the desired language for the 3 word address. Default is English
+    * String
+    * no
+  * * Coordinates
+    * Field containing the geographical coordinates to geocode
+    * Field
+    * yes
+  * * Output field
+    * Field that will contain the resulting 3 word address
+    * Field
+    * yes
+
+Get coordinates from a 3 word address
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This processor converts a 3 word address into geographical coordinates. A what3words API key is required for this processor.
+
+It takes the following parameters:
+
+.. list-table::
+  :header-rows: 1
+
+  * * Label
+    * Description
+    * Type
+    * Mandatory
+  * * 3 word adress
+    * Field containing the 3 word address
+    * Field
+    * yes
+  * * Output field
+    * Field that will contain the resulting geographical coordinates
+    * Field
+    * yes
+
 GeoJoin
 ~~~~~~~
 

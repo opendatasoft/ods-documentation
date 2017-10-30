@@ -1,7 +1,11 @@
 FTP with meta CSV harvester
 ===========================
 
-This harvester allows users to create datasets from an FTP folder. The FTP folder must contain:
+This harvester allows users to create datasets from an FTP folder.
+
+It connects via FTPS (explicit mode on port 21) if available, or FTP if requested in the provided URL.
+
+The FTP folder must contain:
 
 - one **metadata CSV file** (separated with semicolons)
 - several **resources**
@@ -100,7 +104,7 @@ Parameters
      * Example
    * * **Host** (host)
      * URL of the FTP server
-     * ftp.opendatasoft.com
+     * eu.ftp.opendatasoft.com, ftps://eu.ftp.opendatasoft.com, ftp://eu.ftp.opendatasoft.com
    * * **User** (user)
      * Your username
      *
