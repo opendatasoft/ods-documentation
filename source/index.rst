@@ -53,6 +53,7 @@ This documentation is OpenDataSoft's reference documentation. It complements inl
    monitoring_audience/index
    managing_subdomains/index
    using_api/index
+   icons_cheatsheet/iconscheatsheet.rst
 
    faq
    platform_glossary
