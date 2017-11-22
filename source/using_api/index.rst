@@ -46,13 +46,13 @@ ODS API
 This API is the one used internally by the OpenDataSoft platform and widgets.
 If you want to develop your own application, this is also the best way to go.
 
-Differences between ODS APIv1 and APIv2
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Differences between the Search APIs v1 and v2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This API is currently under development and will be officially available soon, but don't hesitate to give it a try :
-:doc:`V2 </using_api/v2/index>`.
+.. note::
+    This API is currently under development and will be officially available soon.
 
-Here is the main differences and key changes between APIv1 and APIv2.
+Here is the main differences and key changes between API v1 and API v2.
 
 * APIv2 introduces a better implementation of REST principles. Each API entry-point provides links to easily navigate
   between linked resources (HATEOAS).
@@ -64,12 +64,6 @@ Here is the main differences and key changes between APIv1 and APIv2.
 * Exporters have their own entry-point under ``/api/catalog/exports`` and ``/api/catalog/datasets/<dataset_id>/exports``
 * Navigation search (former facet search) and standard search are completely splitted.
 
-
-Common aspects
-^^^^^^^^^^^^^^
-
-Both version of the API share one essential mechanism: the :doc:`authentification method </using_api/authentication>`
-which enables you to use the same credentials for both versions.
 
 What about ODATA, WFS and CSW?
 ------------------------------
