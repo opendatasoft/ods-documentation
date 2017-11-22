@@ -10,17 +10,19 @@ parser.add_argument('path')
 
 args = parser.parse_args()
 
+# Build path 
 picto_folder = args.path + "/platform/ods/core/static/pictos/img/set-v3/pictos/"
 reference_file = args.path + "/platform/ods/localepictos/reference.json"
 rst_file = os.path.join(os.getcwd(),"icons_cheatsheet/icons_cheatsheet.rst")
 
 # Debug
 #print(picto_folder)
-print(reference_file)
-print(rst_file)
+#print(reference_file)
+#print(rst_file)
 #print(os.path.isdir(picto_folder))
 #print(os.path.isfile(reference_file))
 
+# Build zip file with all the files in target folder (remove full path to unzip correctly)
 myzip = zipfile.ZipFile(os.path.join(os.getcwd(),"ODS-icons.zip"), 'w')
 src_files = os.listdir(picto_folder)
 for i,file_name in enumerate(src_files):
@@ -31,6 +33,8 @@ for i,file_name in enumerate(src_files):
         myzip.write(full_file_name,os.path.basename(full_file_name))
 
 myzip.close()
+
+# Write Feedback 
 sys.stdout.write('-')
 sys.stdout.write(str(len(src_files)))
 sys.stdout.write(' icons copied\n')
@@ -72,7 +76,7 @@ for category in input_json.get('categories', []):
         # Add an icon-plus-captions class for CSS layout
         out_file.write("    .. container:: ods-icon-plus-caption tooltip\n\n")
 
-        # Try to inline SVG but triggers too many errors - saving
+        # Try to inline SVG but triggers too many errors - backup
         #out_file.write("      .. raw:: html\n\n")
         #out_file.write("         <object data=\"../_images/{}.svg\" type=\"image/svg+xml\"></object>\n\n".format(icon.get('filename')))
 
@@ -92,7 +96,7 @@ for category in input_json.get('categories', []):
         out_file.write("        .. container:: ods-icon-caption-filename\n\n")
         out_file.write("           ods-{}\n\n".format(icon.get('filename')))
 
-        # Tooltip to display keywords if someone asks 
+        # Tooltip to display keywords if someone asks - backup
         #out_file.write("      .. container:: tooltiptext\n\n")
         #out_file.write("        .. container:: ods-tooltip-filename\n\n")
         #out_file.write("            ods-{}\n\n".format(icon.get('filename')))
@@ -102,4 +106,5 @@ for category in input_json.get('categories', []):
 
         out_file.write("\n")
 
+# Write Feedback 
 sys.stdout.write('Page created\n')
