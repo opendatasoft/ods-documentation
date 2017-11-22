@@ -1,11 +1,11 @@
 Icons cheatsheet
 ================
 
-These icons are distributed under the `Creative Commons Licence CC0 <https://creativecommons.org/publicdomain/zero/1.0/>`_ 
+These icons are distributed under the `Creative Commons Licence CC0 <https://creativecommons.org/publicdomain/zero/1.0/>`_ .
 
-You can also :download:`download all the icons in zip </ODS-icons.zip>` (SVG, minified) 1.1Mb
+You can also :download:`download all the icons in zip </ODS-icons.zip>` (SVG, minified, 1.1Mb).
 
-These icons can be selected as a marker or caption in maps or pasted directly in widget code
+These icons can be selected as a marker or caption in maps or pasted directly in widget code.
 
 Accommodations
 --------------

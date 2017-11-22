@@ -44,9 +44,9 @@ out_file = open(rst_file,"w")
 # Write page title
 out_file.write('Icons cheatsheet\n================\n\n')
 
-out_file.write('These icons are distributed under the `Creative Commons Licence CC0 <https://creativecommons.org/publicdomain/zero/1.0/>`_ \n\n')
-out_file.write('You can also :download:`download all the icons in zip </ODS-icons.zip>` (SVG, minified) 1.1Mb\n\n')
-out_file.write('These icons can be selected as a marker or caption in maps or pasted directly in widget code\n\n')
+out_file.write('These icons are distributed under the `Creative Commons Licence CC0 <https://creativecommons.org/publicdomain/zero/1.0/>`_ .\n\n')
+out_file.write('You can also :download:`download all the icons in zip </ODS-icons.zip>` (SVG, minified, 1.1Mb).\n\n')
+out_file.write('These icons can be selected as a marker or caption in maps or pasted directly in widget code.\n\n')
 
 
 for category in input_json.get('categories', []):
