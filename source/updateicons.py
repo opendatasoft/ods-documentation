@@ -15,13 +15,6 @@ picto_folder = args.path + "/platform/ods/core/static/pictos/img/set-v3/pictos/"
 reference_file = args.path + "/platform/ods/localepictos/reference.json"
 rst_file = os.path.join(os.getcwd(),"icons_cheatsheet/icons_cheatsheet.rst")
 
-# Debug
-#print(picto_folder)
-#print(reference_file)
-#print(rst_file)
-#print(os.path.isdir(picto_folder))
-#print(os.path.isfile(reference_file))
-
 # Build zip file with all the files in target folder (remove full path to unzip correctly)
 myzip = zipfile.ZipFile(os.path.join(os.getcwd(),"ODS-icons.zip"), 'w')
 src_files = os.listdir(picto_folder)
@@ -65,9 +58,7 @@ for category in input_json.get('categories', []):
     # For each title write title
     out_file.write('-' * len(category.get('title')))
     out_file.write("\n\n")
-    # Write category keywords
-    #out_file.write("Keywords: {}\n\n".format(' '.join(category.get('keywords_cat', []))))
-
+ 
     # Add an icon-block class for CSS layout
     out_file.write("  .. container:: ods-icon-block\n\n")
 
@@ -75,10 +66,6 @@ for category in input_json.get('categories', []):
 
         # Add an icon-plus-captions class for CSS layout
         out_file.write("    .. container:: ods-icon-plus-caption tooltip\n\n")
-
-        # Try to inline SVG but triggers too many errors - backup
-        #out_file.write("      .. raw:: html\n\n")
-        #out_file.write("         <object data=\"../_images/{}.svg\" type=\"image/svg+xml\"></object>\n\n".format(icon.get('filename')))
 
         # For each icon write the icon
         out_file.write("      .. image:: icons/{}.svg\n".format(icon.get('filename')))
@@ -95,14 +82,6 @@ for category in input_json.get('categories', []):
         out_file.write("           {}\n".format(icon.get('name')))
         out_file.write("        .. container:: ods-icon-caption-filename\n\n")
         out_file.write("           ods-{}\n\n".format(icon.get('filename')))
-
-        # Tooltip to display keywords if someone asks - backup
-        #out_file.write("      .. container:: tooltiptext\n\n")
-        #out_file.write("        .. container:: ods-tooltip-filename\n\n")
-        #out_file.write("            ods-{}\n\n".format(icon.get('filename')))
-        #out_file.write("        .. container:: ods-tooltip-keywords\n\n")
-        #out_file.write("            Keywords: {}\n\n".format(' '.join(icon.get('keywords', []))))
-
 
         out_file.write("\n")
 
