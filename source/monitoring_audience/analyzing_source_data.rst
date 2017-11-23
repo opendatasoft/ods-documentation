@@ -98,7 +98,6 @@ You'll find below the list of fields available in the API monitoring dataset.
 API names for OpenDataSoft APIv1
 --------------------------------
 
-
 The **api** field for OpenDataSoft APIv1 (ods_v1) contains one of the following values.
 
 .. list-table::
@@ -107,49 +106,70 @@ The **api** field for OpenDataSoft APIv1 (ods_v1) contains one of the following 
    * * API name
      * Description
      * URL template
+
    * * ``search_datasets``
      * Search catalog query
      * api/datasets/1.0/search
    * * ``lookup_dataset``
      * Lookup dataset query
      * api/datasets/1.0/<dataset_id>
+   * * ``download_dataset``
+     * Download dataset records from the export tab
+     * explore/dataset/<dataset_id>/download/
+   * * ``download_dataset_alternative_export``
+     * Download dataset in an alternative export format
+     * api/datasets/1.0/<dataset_id>/alternative_exports/<export_id>/
+   * * ``download_dataset_attachment``
+     * Download dataset attachment from the information tab
+     * api/datasets/1.0/<dataset_id>/attachments/<attachment_id>/
    * * ``dataset_list_snapshots``
-     * List dataset snapshots query
+     * List dataset snapshots
      * api/datasets/1.0/<dataset_id>/snapshots/
+   * * ``dataset_download_snapshot``
+     * Download a dataset snapshot
+     * api/datasets/1.0/<dataset_id>/snapshots/<snapshot_id>/
    * * ``search_dataset_records``
      * Search query on dataset records
      * api/datasets/1.0/<dataset_id>/records/
    * * ``lookup_record``
      * Lookup record query
      * api/datasets/1.0/<dataset_id>/records/<record_id>
-   * * ``download_dataset``
-     * Download dataset records from explore tab in explore
-     * explore/dataset/<dataset_id>/download/
    * * ``download_dataset_records``
      * Download dataset records from API (total dataset download count = dowload_dataset + download_dataset_records)
      * api/datasets/1.0/<dataset_id>/records/download/
-   * * ``download_dataset_attachment``
-     * Download dataset attachment
-     * api/datasets/1.0/<dataset_id>/attachments/<attachment_id>/
-   * * ``get_bbox_clusters``
-     * Bounding box query.
-     * api/datasets/1.0/<dataset_id>/records/boundingbox/
    * * ``analyze_records``
      * Analyze records query. Called by analyze tab in explore
      * api/datasets/1.0/<dataset_id>/records/analyze/
+   * * ``get_bbox_clusters``
+     * Bounding box query.
+     * api/datasets/1.0/<dataset_id>/records/boundingbox/
    * * ``get_geo_clusters``
      * Geo cluster query. Called by map tab in explore for geo_point
      * api/datasets/1.0/<dataset_id>/records/geocluster/
    * * ``get_geo_clusters_polygon``
      * Geo clusters polygon query. Called by map tab in explore for shapes
      * api/datasets/1.0/<dataset_id>/records/geopolygon/
+   * * ``get_geoshapes_preview``
+     * Preview a geoshape
+     * api/datasets/1.0/<dataset_id>/records/geopreview/
    * * ``download_image``
      * Download image. Called by image tab in explore
      * explore/dataset/<dataset_id>/images/<image_id>/download/
-
+   * * ``images``
+     * Access images through the API
+     * api/datasets/1.0/<dataset_id>/images/<image_id>/, api/datasets/1.0/<dataset_id>/images/<image_id>/<thumbnail_size>
+   * * ``files``
+     * Access files through the API
+     * api/datasets/1.0/<dataset_id>/files/<file_id>/, api/datasets/1.0/<dataset_id>/files/<file_id>/<thumbnail_size>
+   * * ``list_dataset_entry_points``
+     * List available entry points for an API Proxy
+     * api/datasets/1.0/<dataset_id>/services/
+   * * ``metadata_templates``
+     * List metadata templates via the API
+     * api/metadata/1.0/<template_type>/, api/metadata/1.0/<template_type>/<template_name>/
 
 API names for ODATA API
-^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------
 
 The **api** field for ODATA API contains one of the following values.
 

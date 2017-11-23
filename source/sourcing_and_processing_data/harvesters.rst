@@ -102,6 +102,11 @@ Services
    harvesters/csw
    harvesters/ftp_with_meta_csv
 
+.. note::
+    Unless otherwise specified, all harvesters use HTTPS by default, but support HTTP if specified in the provided URL.
+
+    The FTP harvester uses FTPS (explicit mode on port 21) by default, but supports FTP if specified in the provided URL or if FTPS is not supported by the remote server.
+
 Scheduling
 ----------
 
