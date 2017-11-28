@@ -1,7 +1,7 @@
-ArcGIS OpenData harvester
-=========================
+ArcGIS Hub Portals harvester
+============================
 
-Retrieve datasets from an ArcGIS OpenData portal.
+Retrieve datasets from portals listed on ArcGIS Hub.
 
 Parameters
 ----------
