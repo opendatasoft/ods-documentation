@@ -1,38 +1,39 @@
 Defining a dataset schema
 =========================
 
-.. screenshot > Processing tab : zoom sur dataset preview > numérotation 1 à 7 ..
-
 Each dataset follows a schema. Fully defining and configuring a dataset schema means:
 
-* :ref:`Renaming dataset fields<renamingfield>` (1)
-* :ref:`Adding a description<addingdescription>` to the dataset fields (2)
+* :ref:`Changing a dataset field label<changinglabel>` (1)
+* :ref:`Adding a description<addingdescription>` to a dataset field (2)
 * :ref:`Choosing a type<choosingtype>` for each field (3)
 * :ref:`Setting up relevant fields as facets<settingfacets>` to define filters for the dataset (4)
 * :ref:`Configuring options<configuringoptions>` for each field, depending on their type and whether they are set up as facets or not (5)
 * :ref:`Ordering the fields<orderingfields>` in the dataset (6)
 * :ref:`Discarding fields<discardingfields>` from the dataset (7)
 
-.. _renamingfield:
+.. localizedimage:: processing_preview.png
+    :alt: Processing tab when publishing a new dataset
 
-Renaming a field
+.. _changinglabel:
+
+Changing a label
 ~~~~~~~~~~~~~~~~
 
-The OpenDataSoft platform retrieves the default field names found in the source dataset. It is however possible to rename each dataset field.
+The OpenDataSoft platform retrieves the default field labels found in the source dataset. It is however possible to change each dataset field label.
 
 .. note::
-    We highly recommend to choose well-written, explicit field names. Also keep in mind that since these field names will be displayed in the front office for all portal users, it might then be preferable to choose simple names instead of business-specific terms, to make sure that the data can be understood by a wider audience.
+    We highly recommend to choose well-written, explicit labels. Also keep in mind that since these labels will be displayed in the front office for all portal users, it might be preferable to choose simple labels instead of business-specific terms, to make sure that the data can be understood by a wider audience.
 
-To rename a field:
+To change a label:
 
-1. In the preview area of the Processing tab, select the current name of the field of your choice.
-2. Type a new field name. It can contain special characters.
-3. Click outside the field name area or press Enter for the changes to be taken into account.
+1. In the preview area of the Processing tab, select the current label of the field of your choice.
+2. Type a new label. It can contain special characters.
+3. Click outside the label area or press Enter for the changes to be taken into account.
 
-.. admonition:: Field name VS Field technical identifier
+.. admonition:: Field label VS technical identifier
    :class: caution
 
-   Changing the name of the field does not modify in any way the technical identifier of the field, which can be found in the Configuration menu of the dataset.
+   Changing the label of a field does not modify in any way the technical identifier of that field, which can be found in the Configuration menu of the dataset.
 
 .. _addingdescription:
 
@@ -72,36 +73,35 @@ There are 8 different types: date, datetime, decimal, integer, geopoint, geoshap
    * * Type
      * Description
    * * Date
-     * Records are dates.
-       The ideal format is the ISO 8601 format, which is ``YYYY-mm-dd``. Other formats are also understood by the platform, such as: ``YYYY/mm/dd``, ``dd/mm/YYYY`` or ``mm-dd-YYYY``.
+     * Field values are dates.
+       The ideal format is the ISO 8601 format, which is ``YYYY-mm-dd``. Other formats are also understood by the platform, such as: ``YYYY/mm/dd`` or ``dd/mm/YYYY``.
 
        .. note::
-           The platform will try to guess as accurately as possible the input date format. However, in case of bad detection or ambiguity, use the :ref:`Normalize Date processor<normalizedateprocessor>` to define the parsing format of the date field.
+           The platform will try to guess as accurately as possible the input date format. However, in case of bad detection or ambiguity, use the :doc:`Normalize Date processor<processors/normalize_date>` to define the parsing format of the date field.
 
    * * DateTime
-     * Records are a combination of a date and a time.
+     * Field values are a combination of a date and a time.
        The ideal format is the ISO 8601 format, which is ``YYYY-mm-ddTHH:MM:ss+00:00``, ``YYYY-mm-ddTHH:MM:ssZ`` or ``YYYYmmddTHHMMssZ``. Other formats are also understood by the platform, such as: ``YYYY-mm-dd-HH:MM:ss`` or or ``YYYY-mm-dd HH:MM:ss``.
 
        .. note::
-           The platform will try to guess as accurately as possible the input datetime format. However, in case of bad detection or ambiguity, use the :ref:`Normalize Date processor<normalizedateprocessor>` to define the parsing format of the datetime field.
+           The platform will try to guess as accurately as possible the input datetime format. However, in case of bad detection or ambiguity, use the :doc:`Normalize Date processor<processors/normalize_date>` to define the parsing format of the datetime field.
 
        .. note::
-           By default, time records are in UTC timezone. To change the timezone, use the :ref:`Set Timezone processor<settimezoneprocessor>`.
+           By default, time records are in UTC timezone. To change the timezone, use the :doc:`Set Timezone processor<processors/set_timezone>`.
 
    * * Decimal
-     * Records are decimal numbers.
+     * Field values are decimal numbers.
        Valid separators for the decimal part are ``.`` or ``,``.
-       For thousands, use the space character but not the ``,``, because it will be considered by the platform as a decimal separator.
 
    * * Geo point
-     * Records are a single geographical location expressed in the format ``<LAT>,<LON>``, for instance
+     * Field values are a single geographical location expressed in the format ``<LAT>,<LON>``, for instance
        ``45.8,2.5``.
 
        .. note::
-           If your dataset contains two fields, latitude and longitude, use the :ref:`Create GeoPoint processor<creategeopointprocessor>` to create a valid geo point field.
+           If your dataset contains two fields, latitude and longitude, use the :doc:`Create GeoPoint processor<processors/create_geopoint>` to create a valid geo point field.
 
    * * Geo shape
-     * Records are geographical shapes expressed in `GeoJSON <http://geojson.org/geojson-spec.html>`_. For example :
+     * Field values are geographical shapes expressed in `GeoJSON <http://geojson.org/geojson-spec.html>`_. For example :
 
        .. code-block:: json
 
@@ -112,14 +112,14 @@ There are 8 different types: date, datetime, decimal, integer, geopoint, geoshap
            Feature collections are not supported.
 
    * * Integer
-     * Records are integer numbers.
+     * Field values are integer numbers.
        If a floating point value is found, it is automatically cast to its integer part.
 
    * * Text
-     * Records are textual data.
+     * Field values are textual data.
 
    * * File
-     * Records are files sourced with one of the available methods to :doc:`create a dataset with images<creating_dataset_with_images>` (with the File processor, through an archive file or with a specific extractor), creating a field which default type is file. This field type is only available in that case.
+     * Field values are files sourced with one of the available methods to :doc:`create a dataset with images<creating_dataset_with_images>` (with the File processor, through an archive file or with a specific extractor), creating a field which default type is file. This field type is only available in that case.
 
 .. _settingfacets:
 
@@ -134,14 +134,14 @@ Facets define the filters of a dataset, which are displayed on the left of the d
 To set up a field as a facet:
 
 1. In the preview area of the Processing tab, choose the field you want to set up as a facet. Choose a field relevant enough to become a filter.
-2. Click the facet button.
+2. Click the |icon-facet| button.
 
 .. _configuringoptions:
 
 Configuring field options
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. In the preview area of the Processing tab, click the Configuration button of the field of your choice.
+1. In the preview area of the Processing tab, click the |icon-configuration| button of the field of your choice.
 2. Configuration options change depending on the type of the field and on whether the field is set up as a facet or not. Follow the right instructions depending on the chosen configuration option.
 
 Configuration options available for every field
@@ -153,7 +153,7 @@ Configuration options available for every field
    * * Configuration option
      * Description
    * * Name
-     * Technical identifier of the field. In contrary to the field name, the technical identifier does not have aesthetic purposes and thus cannot contain special characters, including spaces. Technical identifiers can be used for instance when creating a custom tooltip with HTML.
+     * Technical identifier of the field. In contrary to the label, the technical identifier does not have aesthetic purposes and thus cannot contain special characters, including spaces. Technical identifiers can be used for instance when creating a custom tooltip with HTML.
 
        .. admonition:: Consequences of modifying a technical identifier
           :class: danger
@@ -240,7 +240,7 @@ Configuration options for text fields
        Tick the "Sortable" box.
 
    * * Multivalued
-     * This option is for multi-valued records separated by one same separator. Example: *France;UK;USA* When set up as a facet, each of the field's records values appears as a separate entry in the filters section. When clicking on one of the entry, all the other entries which are not related (meaning the entries which never appear in the same record as part of a multi-values combination) automatically disappear -only the related entries remain as available filter entries.
+     * This option is for multi-valued records separated by one same separator. Example: *France,UK,USA* When set up as a facet, each of the field's records values appears as a separate entry in the filters section. When clicking on one of the entry, all the other entries which are not related (meaning the entries which never appear in the same record as part of a multi-values combination) automatically disappear -only the related entries remain as available filter entries.
 
        To activate the multivalued option:
 
@@ -249,7 +249,7 @@ Configuration options for text fields
        3. Click outside the text box or press Enter for the change to be taken into account.
 
    * * Hierarchical
-     * This option is for multi-valued records, separated by one same separator and which have a hierarchical relation. Example: *France;Ile-de-France;Paris* When set up as a facet, each first value of each record's multi-values combination appears as a separate entry in the filters section. When clicking on one entry, all second-level values related to that entry appear, and so on. Example: After clicking on the filter entry *France*, the related second-level entry *Ile-de-France* appears. After clicking on *Ile-de-France*, the related third-level entry *Paris* appears.
+     * This option is for multi-valued records, separated by one same separator and which have a hierarchical relation. Example: *France/Ile-de-France/Paris* When set up as a facet, each first value of each record's multi-values combination appears as a separate entry in the filters section. When clicking on one entry, all second-level values related to that entry appear, and so on. Example: After clicking on the filter entry *France*, the related second-level entry *Ile-de-France* appears. After clicking on *Ile-de-France*, the related third-level entry *Paris* appears.
 
        To activate the hierachical option:
 
@@ -295,7 +295,7 @@ Dataset fields can be reordered in their dataset. It can have 2 kinds of impact:
 
 To reorder a field in a dataset:
 
-1. In the preview area of the Processing tab, click on the Reorder button of the field you want to reorder in the dataset.
+1. In the preview area of the Processing tab, click on the |icon-order| button of the field you want to reorder in the dataset.
 2. While maintaining the click on the Reorder button, drag the field to its new position in the dataset.
 3. Once the field in its new position in the dataset, stop maintaining the click.
 
@@ -307,7 +307,7 @@ Discarding fields from datasets
 Dataset fields can be discarded from the dataset. It does not mean that the field is completely removed from the dataset but only deleted from the output. This is why, once the dataset is published, the discarded field will not be displayed in any visualization and if the dataset is exported, the discarded field will not be in the export.
 
 To discard a field from a dataset:
-Click on the Discard button of the field you want to discard from the dataset.
+Click on the |icon-delete| button of the field you want to discard from the dataset.
 
 Since discarded fields are not completely removed from the dataset, they can be restored at any time.
 
@@ -315,4 +315,27 @@ To restore a discarded field from a dataset:
 
 1. In the preview area of the Processing tab, swipe to the right to go to the last fields of the datasets.
 2. The discarded fields of the dataset appear at the very end of the dataset, they look like blank, grey columns named by their technical identifiers. Find those you want to restore.
-3. Click on the + button.
+3. Click on the |icon-retrieve_discarded| button.
+
+
+
+
+.. |icon-facet| image:: icons/facet.png
+    :width: 18px
+    :height: 18px
+
+.. |icon-configuration| image:: icons/configuration.png
+    :width: 20px
+    :height: 18px
+
+.. |icon-order| image:: icons/order.png
+    :width: 14px
+    :height: 14px
+
+.. |icon-delete| image:: icons/delete.png
+    :width: 20px
+    :height: 18px
+
+.. |icon-retrieve_discarded| image:: icons/retrieve_discarded.png
+    :width: 17px
+    :height: 18px
