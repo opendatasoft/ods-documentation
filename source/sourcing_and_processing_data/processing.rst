@@ -288,7 +288,7 @@ Here are some common use cases :
     :alt: Expression Processor conditional expression
     :align: center
 
-    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression if true : value if false``
+    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression if true : value if false``. Please note that ``value if false`` is optional, so you can write ``=expression ? value if the expression if true``.
 
 .. ifconfig:: language == 'fr'
 
@@ -296,7 +296,7 @@ Here are some common use cases :
     :alt: Expression Processor conditional expression
     :align: center
 
-    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression if true : value if false``
+    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression if true : value if false``. Please note that ``value if false`` is optional, so you can write ``=expression ? value if the expression if true``.
 
 The expression processor can work with both textual content and numerical content.
 
@@ -318,10 +318,10 @@ The following unary, binary and ternary operators are available:
    * * Unary operators
      * +, -, not, ! (not) , ! (factorial), ^ (power)
    * * Binary operators
-     * +, -, ``*``, /, % (euclidean division), and, &&, or, ||, >, <, >=, <=, == (evaluates to ``True`` or ``False``), &
+     * +, -, ``*``, /, % (euclidean division), and, &&, or, ||, >, <, >=, <=, ==, != (evaluates to ``True`` or ``False``), &
        (concatenation of strings, evaluates to a string)
    * * Ternary operators
-     * op1 ? op2 : op3 (conditional statement)
+     * op1 ? op2 : op3 (conditional statement). Please note that op3 is optional, so you can write op1 ? op2.
 
 Examples:
 
@@ -332,8 +332,8 @@ Examples:
      * Result
    * * 1 + 1
      * 2
-   * * -3 + 1
-     * -2
+   * * -3 + .1
+     * -2.9
    * * 3!
      * 6
    * * 2^3
