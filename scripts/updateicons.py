@@ -4,7 +4,7 @@ import os
 import shutil
 import zipfile
 
-src_path = "source/icons_cheatsheet"
+src_path = "source/pictograms_reference"
 zip_path = os.path.join(src_path, "ODS-icons.zip")
 
 parser = argparse.ArgumentParser(description="Your platform/ full path")
@@ -14,7 +14,7 @@ args = parser.parse_args()
 
 platform_pictos_path = os.path.join(args.path, "ods/core/static/pictos/img/set-v3/pictos/")
 platform_reference_path = os.path.join(args.path, "ods/localepictos/reference.json")
-rst_path = os.path.join(os.getcwd(), src_path, "icons_cheatsheet.rst")
+rst_path = os.path.join(os.getcwd(), src_path, "pictograms_reference.rst")
 
 # Build zip file with all pictos and retrieve them in src_path
 
@@ -43,18 +43,19 @@ results = []
 out_file = open(rst_path, "w")
 
 # Write page title
-out_file.write("""Icons cheatsheet
-================
+out_file.write("""Pictograms reference
+====================
 
-OpenDataSoft's geographical icons are minified scalable vector icons that can be used freely anywhere. 
+OpenDataSoft's geographical pictograms are minified scalable vector icons that can be used freely anywhere.
 
-These icons can be selected as a marker or as a map caption inside OpenDataSoft's icon picker or used directly in widget code.
-To use the icons in a widget code simply paste the name starting with ods e.g. ``ods-hotel``. 
+These pictograms can be selected as a marker or as a map caption inside OpenDataSoft's icon picker or used directly in widget code.
+To use the pictograms in a widget code simply paste the name starting with ods (e.g. ``ods-hotel``).
 
 These icons are distributed under the `Creative Commons Licence CC0 <https://creativecommons.org/publicdomain/zero/1.0/>`_ .
 
 You can also :download:`download all the icons in zip <ODS-icons.zip>` (SVG, minified, 1.1Mb).
-You will need to use a vector image editing software or an svg inliner to change their color.  
+You will need to use a vector image editing software or an svg inliner to change their color.
+
 """)
 
 for category in input_json.get('categories', []):
