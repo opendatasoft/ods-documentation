@@ -49,7 +49,7 @@ out_file.write("""Icons cheatsheet
 OpenDataSoft's geographical icons are minified scalable vector icons that can be used freely anywhere. 
 
 These icons can be selected as a marker or as a map caption inside OpenDataSoft's icon picker or used directly in widget code.
-To use the icons in a widget code simply paste the name starting with ods e.g. ``ods-hotelwill``. 
+To use the icons in a widget code simply paste the name starting with ods e.g. ``ods-hotel``. 
 
 These icons are distributed under the `Creative Commons Licence CC0 <https://creativecommons.org/publicdomain/zero/1.0/>`_ .
 
