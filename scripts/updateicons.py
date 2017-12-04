@@ -1,53 +1,58 @@
-import json
 import argparse
+import json
 import os
 import shutil
-import sys
 import zipfile
 
-parser = argparse.ArgumentParser(description="The path of your src/")
+src_path = "source/icons_cheatsheet"
+zip_path = os.path.join(src_path, "ODS-icons.zip")
+
+parser = argparse.ArgumentParser(description="Your platform/ full path")
 parser.add_argument('path')
 
 args = parser.parse_args()
 
-# Build path 
-picto_folder = args.path + "/platform/ods/core/static/pictos/img/set-v3/pictos/"
-reference_file = args.path + "/platform/ods/localepictos/reference.json"
-rst_file = os.path.join(os.getcwd(),"icons_cheatsheet/icons_cheatsheet.rst")
+platform_pictos_path = os.path.join(args.path, "ods/core/static/pictos/img/set-v3/pictos/")
+platform_reference_path = os.path.join(args.path, "ods/localepictos/reference.json")
+rst_path = os.path.join(os.getcwd(), src_path, "icons_cheatsheet.rst")
 
-# Build zip file with all the files in target folder (remove full path to unzip correctly)
-myzip = zipfile.ZipFile(os.path.join(os.getcwd(),"ODS-icons.zip"), 'w')
-src_files = os.listdir(picto_folder)
-for i,file_name in enumerate(src_files):
-    full_file_name = os.path.join(picto_folder, file_name)
-    if (os.path.isfile(full_file_name)):
-        sys.stdout.write("#")
-        shutil.copy(full_file_name,os.path.join(os.getcwd(),"icons_cheatsheet/icons/"))
-        myzip.write(full_file_name,os.path.basename(full_file_name))
+# Build zip file with all pictos and retrieve them in src_path
 
-myzip.close()
+icons_zip = zipfile.ZipFile(zip_path, 'w')
 
-# Write Feedback 
-sys.stdout.write('-')
-sys.stdout.write(str(len(src_files)))
-sys.stdout.write(' icons copied\n')
-sys.stdout.write('Zip created\n')
+platform_pictos_files = os.listdir(platform_pictos_path)
+counter = 0
 
+for filename in platform_pictos_files:
+    file_uri = os.path.join(platform_pictos_path, filename)
+    if os.path.isfile(file_uri):
+        counter += 1
+        shutil.copy(file_uri, os.path.join(os.getcwd(), src_path, "icons"))
+        icons_zip.write(file_uri, os.path.basename(file_uri))
 
-# Parse reference JSON 
-jsonfile = open(reference_file)
-input_json = json.load(jsonfile)
-jsonfile.close()
+icons_zip.close()
+
+# Write Feedback
+print("{} icons copied and zip created".format(counter))
+
+# Parse reference JSON
+with open(platform_reference_path) as f:
+    input_json = json.load(f)
+
 results = []
-out_file = open(rst_file,"w") 
+out_file = open(rst_path, "w")
 
 # Write page title
-out_file.write('Icons cheatsheet\n================\n\n')
+out_file.write("""Icons cheatsheet
+================
 
-out_file.write('These icons are distributed under the `Creative Commons Licence CC0 <https://creativecommons.org/publicdomain/zero/1.0/>`_ .\n\n')
-out_file.write('You can also :download:`download all the icons in zip </ODS-icons.zip>` (SVG, minified, 1.1Mb).\n\n')
-out_file.write('These icons can be selected as a marker or caption in maps or pasted directly in widget code.\n\n')
+These icons are distributed under the `Creative Commons Licence CC0 <https://creativecommons.org/publicdomain/zero/1.0/>`_ .
 
+You can also :download:`download all the icons in zip <ODS-icons.zip>` (SVG, minified, 1.1Mb).
+
+These icons can be selected as a marker or caption in maps or pasted directly in widget code.
+
+""")
 
 for category in input_json.get('categories', []):
     col_num = 0
@@ -58,14 +63,13 @@ for category in input_json.get('categories', []):
     # For each title write title
     out_file.write('-' * len(category.get('title')))
     out_file.write("\n\n")
- 
+
     # Add an icon-block class for CSS layout
     out_file.write("  .. container:: ods-icon-block\n\n")
 
     for icon in category.get('icons', []):
-
         # Add an icon-plus-captions class for CSS layout
-        out_file.write("    .. container:: ods-icon-plus-caption tooltip\n\n")
+        out_file.write("    .. container:: ods-icon-plus-caption\n\n")
 
         # For each icon write the icon
         out_file.write("      .. image:: icons/{}.svg\n".format(icon.get('filename')))
@@ -73,7 +77,7 @@ for category in input_json.get('categories', []):
         out_file.write("         :height: 30pt\n")
         out_file.write("         :class: ods-icon\n")
         out_file.write("         :alt: {}\n\n".format(icon.get('name')))
-        
+
         # Add an icon-caption class for CSS layout
         out_file.write("      .. container:: ods-icon-caption\n\n")
 
@@ -85,5 +89,7 @@ for category in input_json.get('categories', []):
 
         out_file.write("\n")
 
-# Write Feedback 
-sys.stdout.write('Page created\n')
+out_file.close()
+
+# Write Feedback
+print("Page created")

@@ -3,7 +3,7 @@ Icons cheatsheet
 
 These icons are distributed under the `Creative Commons Licence CC0 <https://creativecommons.org/publicdomain/zero/1.0/>`_ .
 
-You can also :download:`download all the icons in zip </ODS-icons.zip>` (SVG, minified, 1.1Mb).
+You can also :download:`download all the icons in zip <ODS-icons.zip>` (SVG, minified, 1.1Mb).
 
 These icons can be selected as a marker or caption in maps or pasted directly in widget code.
 
@@ -12,7 +12,7 @@ Accommodations
 
   .. container:: ods-icon-block
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/bed_and_breakfast.svg
          :width: 30pt
@@ -30,7 +30,7 @@ Accommodations
            ods-bed_and_breakfast
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/hostel.svg
          :width: 30pt
@@ -48,7 +48,7 @@ Accommodations
            ods-hostel
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/hotel.svg
          :width: 30pt
@@ -66,7 +66,7 @@ Accommodations
            ods-hotel
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/mountain_shelter.svg
          :width: 30pt
@@ -84,7 +84,7 @@ Accommodations
            ods-mountain_shelter
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/shelter.svg
          :width: 30pt
@@ -102,7 +102,7 @@ Accommodations
            ods-shelter
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/camping.svg
          :width: 30pt
@@ -120,7 +120,7 @@ Accommodations
            ods-camping
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/trailer.svg
          :width: 30pt
@@ -138,7 +138,7 @@ Accommodations
            ods-trailer
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/accommodation.svg
          :width: 30pt
@@ -161,7 +161,7 @@ Agriculture
 
   .. container:: ods-icon-block
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/chicken.svg
          :width: 30pt
@@ -179,7 +179,7 @@ Agriculture
            ods-chicken
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/corn.svg
          :width: 30pt
@@ -197,7 +197,7 @@ Agriculture
            ods-corn
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/cow.svg
          :width: 30pt
@@ -215,7 +215,7 @@ Agriculture
            ods-cow
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/crops.svg
          :width: 30pt
@@ -233,7 +233,7 @@ Agriculture
            ods-crops
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/harvester.svg
          :width: 30pt
@@ -251,7 +251,7 @@ Agriculture
            ods-harvester
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/horse.svg
          :width: 30pt
@@ -269,7 +269,7 @@ Agriculture
            ods-horse
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/leaf.svg
          :width: 30pt
@@ -287,7 +287,7 @@ Agriculture
            ods-leaf
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/pig.svg
          :width: 30pt
@@ -305,7 +305,7 @@ Agriculture
            ods-pig
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/rabbit.svg
          :width: 30pt
@@ -323,7 +323,7 @@ Agriculture
            ods-rabbit
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/seeds.svg
          :width: 30pt
@@ -341,7 +341,7 @@ Agriculture
            ods-seeds
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/sheep.svg
          :width: 30pt
@@ -359,7 +359,7 @@ Agriculture
            ods-sheep
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/silo.svg
          :width: 30pt
@@ -377,7 +377,7 @@ Agriculture
            ods-silo
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/soy.svg
          :width: 30pt
@@ -395,7 +395,7 @@ Agriculture
            ods-soy
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/tractor.svg
          :width: 30pt
@@ -413,7 +413,7 @@ Agriculture
            ods-tractor
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/vegetables.svg
          :width: 30pt
@@ -431,7 +431,7 @@ Agriculture
            ods-vegetables
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/wheat.svg
          :width: 30pt
@@ -454,7 +454,7 @@ Amenities
 
   .. container:: ods-icon-block
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/bench.svg
          :width: 30pt
@@ -472,7 +472,7 @@ Amenities
            ods-bench
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/city_hall.svg
          :width: 30pt
@@ -490,7 +490,7 @@ Amenities
            ods-city_hall
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/college.svg
          :width: 30pt
@@ -508,7 +508,7 @@ Amenities
            ods-college
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/college_vocational.svg
          :width: 30pt
@@ -526,7 +526,7 @@ Amenities
            ods-college_vocational
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/coniferous.svg
          :width: 30pt
@@ -544,7 +544,7 @@ Amenities
            ods-coniferous
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/court.svg
          :width: 30pt
@@ -562,7 +562,7 @@ Amenities
            ods-court
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/deciduous.svg
          :width: 30pt
@@ -580,7 +580,7 @@ Amenities
            ods-deciduous
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/disabled.svg
          :width: 30pt
@@ -598,7 +598,7 @@ Amenities
            ods-disabled
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/entrance.svg
          :width: 30pt
@@ -616,7 +616,7 @@ Amenities
            ods-entrance
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/exit.svg
          :width: 30pt
@@ -634,7 +634,7 @@ Amenities
            ods-exit
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/firestation.svg
          :width: 30pt
@@ -652,7 +652,7 @@ Amenities
            ods-firestation
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/library.svg
          :width: 30pt
@@ -670,7 +670,7 @@ Amenities
            ods-library
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/lift_gate.svg
          :width: 30pt
@@ -688,7 +688,7 @@ Amenities
            ods-lift_gate
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/nursery.svg
          :width: 30pt
@@ -706,7 +706,7 @@ Amenities
            ods-nursery
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/playground.svg
          :width: 30pt
@@ -724,7 +724,7 @@ Amenities
            ods-playground
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/police.svg
          :width: 30pt
@@ -742,7 +742,7 @@ Amenities
            ods-police
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/post_box.svg
          :width: 30pt
@@ -760,7 +760,7 @@ Amenities
            ods-post_box
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/prison.svg
          :width: 30pt
@@ -778,7 +778,7 @@ Amenities
            ods-prison
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/public_building.svg
          :width: 30pt
@@ -796,7 +796,7 @@ Amenities
            ods-public_building
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/recycling.svg
          :width: 30pt
@@ -814,7 +814,7 @@ Amenities
            ods-recycling
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/school.svg
          :width: 30pt
@@ -832,7 +832,7 @@ Amenities
            ods-school
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/school_primary.svg
          :width: 30pt
@@ -850,7 +850,7 @@ Amenities
            ods-school_primary
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/school_secondary.svg
          :width: 30pt
@@ -868,7 +868,7 @@ Amenities
            ods-school_secondary
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/survey_point.svg
          :width: 30pt
@@ -886,7 +886,7 @@ Amenities
            ods-survey_point
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/telephone.svg
          :width: 30pt
@@ -904,7 +904,7 @@ Amenities
            ods-telephone
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/toilets.svg
          :width: 30pt
@@ -922,7 +922,7 @@ Amenities
            ods-toilets
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/toilets_disabled.svg
          :width: 30pt
@@ -940,7 +940,7 @@ Amenities
            ods-toilets_disabled
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/toilets_men.svg
          :width: 30pt
@@ -958,7 +958,7 @@ Amenities
            ods-toilets_men
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/toilets_women.svg
          :width: 30pt
@@ -976,7 +976,7 @@ Amenities
            ods-toilets_women
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/toll_booth.svg
          :width: 30pt
@@ -994,7 +994,7 @@ Amenities
            ods-toll_booth
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/trees.svg
          :width: 30pt
@@ -1012,7 +1012,7 @@ Amenities
            ods-trees
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/university.svg
          :width: 30pt
@@ -1030,7 +1030,7 @@ Amenities
            ods-university
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/waste_bin.svg
          :width: 30pt
@@ -1048,7 +1048,7 @@ Amenities
            ods-waste_bin
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/administration.svg
          :width: 30pt
@@ -1066,7 +1066,7 @@ Amenities
            ods-administration
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/townplanning.svg
          :width: 30pt
@@ -1089,7 +1089,7 @@ Arrows
 
   .. container:: ods-icon-block
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/bottom.svg
          :width: 30pt
@@ -1107,7 +1107,7 @@ Arrows
            ods-bottom
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/bottom_left.svg
          :width: 30pt
@@ -1125,7 +1125,7 @@ Arrows
            ods-bottom_left
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/bottom_right.svg
          :width: 30pt
@@ -1143,7 +1143,7 @@ Arrows
            ods-bottom_right
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/direction_bottom.svg
          :width: 30pt
@@ -1161,7 +1161,7 @@ Arrows
            ods-direction_bottom
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/direction_bottom_left.svg
          :width: 30pt
@@ -1179,7 +1179,7 @@ Arrows
            ods-direction_bottom_left
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/direction_bottom_right.svg
          :width: 30pt
@@ -1197,7 +1197,7 @@ Arrows
            ods-direction_bottom_right
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/direction_left.svg
          :width: 30pt
@@ -1215,7 +1215,7 @@ Arrows
            ods-direction_left
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/direction_right.svg
          :width: 30pt
@@ -1233,7 +1233,7 @@ Arrows
            ods-direction_right
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/direction_top.svg
          :width: 30pt
@@ -1251,7 +1251,7 @@ Arrows
            ods-direction_top
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/direction_top_left.svg
          :width: 30pt
@@ -1269,7 +1269,7 @@ Arrows
            ods-direction_top_left
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/direction_top_right.svg
          :width: 30pt
@@ -1287,7 +1287,7 @@ Arrows
            ods-direction_top_right
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/left.svg
          :width: 30pt
@@ -1305,7 +1305,7 @@ Arrows
            ods-left
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/right.svg
          :width: 30pt
@@ -1323,7 +1323,7 @@ Arrows
            ods-right
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/top.svg
          :width: 30pt
@@ -1341,7 +1341,7 @@ Arrows
            ods-top
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/top_left.svg
          :width: 30pt
@@ -1359,7 +1359,7 @@ Arrows
            ods-top_left
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/top_right.svg
          :width: 30pt
@@ -1382,7 +1382,7 @@ Food and drinks
 
   .. container:: ods-icon-block
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/bar.svg
          :width: 30pt
@@ -1400,7 +1400,7 @@ Food and drinks
            ods-bar
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/cafe.svg
          :width: 30pt
@@ -1418,7 +1418,7 @@ Food and drinks
            ods-cafe
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/fastfood.svg
          :width: 30pt
@@ -1436,7 +1436,7 @@ Food and drinks
            ods-fastfood
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/ice_cream.svg
          :width: 30pt
@@ -1454,7 +1454,7 @@ Food and drinks
            ods-ice_cream
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/pizza.svg
          :width: 30pt
@@ -1472,7 +1472,7 @@ Food and drinks
            ods-pizza
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/pub.svg
          :width: 30pt
@@ -1490,7 +1490,7 @@ Food and drinks
            ods-pub
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/restaurant.svg
          :width: 30pt
@@ -1508,7 +1508,7 @@ Food and drinks
            ods-restaurant
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/drinkingtap.svg
          :width: 30pt
@@ -1531,7 +1531,7 @@ Health
 
   .. container:: ods-icon-block
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/dentist.svg
          :width: 30pt
@@ -1549,7 +1549,7 @@ Health
            ods-dentist
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/doctors.svg
          :width: 30pt
@@ -1567,7 +1567,7 @@ Health
            ods-doctors
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/hospital.svg
          :width: 30pt
@@ -1585,7 +1585,7 @@ Health
            ods-hospital
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/opticians.svg
          :width: 30pt
@@ -1603,7 +1603,7 @@ Health
            ods-opticians
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/pharmacy.svg
          :width: 30pt
@@ -1621,7 +1621,7 @@ Health
            ods-pharmacy
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/veterinary.svg
          :width: 30pt
@@ -1644,7 +1644,7 @@ Internet of things
 
   .. container:: ods-icon-block
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/antenna.svg
          :width: 30pt
@@ -1662,7 +1662,7 @@ Internet of things
            ods-antenna
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/bluetooth.svg
          :width: 30pt
@@ -1680,7 +1680,7 @@ Internet of things
            ods-bluetooth
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_blender.svg
          :width: 30pt
@@ -1698,7 +1698,7 @@ Internet of things
            ods-connected_blender
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_camera.svg
          :width: 30pt
@@ -1716,7 +1716,7 @@ Internet of things
            ods-connected_camera
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_car.svg
          :width: 30pt
@@ -1734,7 +1734,7 @@ Internet of things
            ods-connected_car
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_cart.svg
          :width: 30pt
@@ -1752,7 +1752,7 @@ Internet of things
            ods-connected_cart
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_cctv.svg
          :width: 30pt
@@ -1770,7 +1770,7 @@ Internet of things
            ods-connected_cctv
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_coffee.svg
          :width: 30pt
@@ -1788,7 +1788,7 @@ Internet of things
            ods-connected_coffee
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_console.svg
          :width: 30pt
@@ -1806,7 +1806,7 @@ Internet of things
            ods-connected_console
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_counter.svg
          :width: 30pt
@@ -1824,7 +1824,7 @@ Internet of things
            ods-connected_counter
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_fridge.svg
          :width: 30pt
@@ -1842,7 +1842,7 @@ Internet of things
            ods-connected_fridge
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_house.svg
          :width: 30pt
@@ -1860,7 +1860,7 @@ Internet of things
            ods-connected_house
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_latptop.svg
          :width: 30pt
@@ -1878,7 +1878,7 @@ Internet of things
            ods-connected_latptop
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_light.svg
          :width: 30pt
@@ -1896,7 +1896,7 @@ Internet of things
            ods-connected_light
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_NAS.svg
          :width: 30pt
@@ -1914,7 +1914,7 @@ Internet of things
            ods-connected_NAS
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_person.svg
          :width: 30pt
@@ -1932,7 +1932,7 @@ Internet of things
            ods-connected_person
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_plane.svg
          :width: 30pt
@@ -1950,7 +1950,7 @@ Internet of things
            ods-connected_plane
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_robot.svg
          :width: 30pt
@@ -1968,7 +1968,7 @@ Internet of things
            ods-connected_robot
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_screen.svg
          :width: 30pt
@@ -1986,7 +1986,7 @@ Internet of things
            ods-connected_screen
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_smartphone.svg
          :width: 30pt
@@ -2004,7 +2004,7 @@ Internet of things
            ods-connected_smartphone
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_temp.svg
          :width: 30pt
@@ -2022,7 +2022,7 @@ Internet of things
            ods-connected_temp
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_truck.svg
          :width: 30pt
@@ -2040,7 +2040,7 @@ Internet of things
            ods-connected_truck
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_tv.svg
          :width: 30pt
@@ -2058,7 +2058,7 @@ Internet of things
            ods-connected_tv
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_vr.svg
          :width: 30pt
@@ -2076,7 +2076,7 @@ Internet of things
            ods-connected_vr
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_washing_machine.svg
          :width: 30pt
@@ -2094,7 +2094,7 @@ Internet of things
            ods-connected_washing_machine
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_watch.svg
          :width: 30pt
@@ -2112,7 +2112,7 @@ Internet of things
            ods-connected_watch
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/connected_tap.svg
          :width: 30pt
@@ -2130,7 +2130,7 @@ Internet of things
            ods-connected_tap
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/lora.svg
          :width: 30pt
@@ -2148,7 +2148,7 @@ Internet of things
            ods-lora
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/nowifi.svg
          :width: 30pt
@@ -2166,7 +2166,7 @@ Internet of things
            ods-nowifi
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/router.svg
          :width: 30pt
@@ -2184,7 +2184,7 @@ Internet of things
            ods-router
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/sigfox.svg
          :width: 30pt
@@ -2202,7 +2202,7 @@ Internet of things
            ods-sigfox
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/wifi.svg
          :width: 30pt
@@ -2225,7 +2225,7 @@ Money
 
   .. container:: ods-icon-block
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/atm.svg
          :width: 30pt
@@ -2243,7 +2243,7 @@ Money
            ods-atm
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/bank.svg
          :width: 30pt
@@ -2261,7 +2261,7 @@ Money
            ods-bank
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/bills.svg
          :width: 30pt
@@ -2279,7 +2279,7 @@ Money
            ods-bills
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/card.svg
          :width: 30pt
@@ -2297,7 +2297,7 @@ Money
            ods-card
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/coins.svg
          :width: 30pt
@@ -2315,7 +2315,7 @@ Money
            ods-coins
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/currency_exchange.svg
          :width: 30pt
@@ -2333,7 +2333,7 @@ Money
            ods-currency_exchange
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/economy.svg
          :width: 30pt
@@ -2356,7 +2356,7 @@ People
 
   .. container:: ods-icon-block
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/female.svg
          :width: 30pt
@@ -2374,7 +2374,7 @@ People
            ods-female
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/male.svg
          :width: 30pt
@@ -2392,7 +2392,7 @@ People
            ods-male
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/female_business.svg
          :width: 30pt
@@ -2410,7 +2410,7 @@ People
            ods-female_business
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/male_business.svg
          :width: 30pt
@@ -2428,7 +2428,7 @@ People
            ods-male_business
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/outline.svg
          :width: 30pt
@@ -2446,7 +2446,7 @@ People
            ods-outline
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/outline_group.svg
          :width: 30pt
@@ -2464,7 +2464,7 @@ People
            ods-outline_group
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/woman.svg
          :width: 30pt
@@ -2482,7 +2482,7 @@ People
            ods-woman
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/man.svg
          :width: 30pt
@@ -2500,7 +2500,7 @@ People
            ods-man
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/female_teen.svg
          :width: 30pt
@@ -2518,7 +2518,7 @@ People
            ods-female_teen
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/male_teen.svg
          :width: 30pt
@@ -2536,7 +2536,7 @@ People
            ods-male_teen
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/social.svg
          :width: 30pt
@@ -2559,7 +2559,7 @@ Points of interest
 
   .. container:: ods-icon-block
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/bunker.svg
          :width: 30pt
@@ -2577,7 +2577,7 @@ Points of interest
            ods-bunker
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/cave.svg
          :width: 30pt
@@ -2595,7 +2595,7 @@ Points of interest
            ods-cave
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/tower_communications.svg
          :width: 30pt
@@ -2613,7 +2613,7 @@ Points of interest
            ods-tower_communications
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/crane.svg
          :width: 30pt
@@ -2631,7 +2631,7 @@ Points of interest
            ods-crane
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/embassy.svg
          :width: 30pt
@@ -2649,7 +2649,7 @@ Points of interest
            ods-embassy
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/tower_lookout.svg
          :width: 30pt
@@ -2667,7 +2667,7 @@ Points of interest
            ods-tower_lookout
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/mine.svg
          :width: 30pt
@@ -2685,7 +2685,7 @@ Points of interest
            ods-mine
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/mountain_pass.svg
          :width: 30pt
@@ -2703,7 +2703,7 @@ Points of interest
            ods-mountain_pass
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/peak.svg
          :width: 30pt
@@ -2721,7 +2721,7 @@ Points of interest
            ods-peak
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/point_of_interest.svg
          :width: 30pt
@@ -2739,7 +2739,7 @@ Points of interest
            ods-point_of_interest
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/tower_power.svg
          :width: 30pt
@@ -2757,7 +2757,7 @@ Points of interest
            ods-tower_power
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/place_town.svg
          :width: 30pt
@@ -2775,7 +2775,7 @@ Points of interest
            ods-place_town
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/place_village.svg
          :width: 30pt
@@ -2793,7 +2793,7 @@ Points of interest
            ods-place_village
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/tower_water.svg
          :width: 30pt
@@ -2816,7 +2816,7 @@ Ratings
 
   .. container:: ods-icon-block
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/angry.svg
          :width: 30pt
@@ -2834,7 +2834,7 @@ Ratings
            ods-angry
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/angry_invert.svg
          :width: 30pt
@@ -2852,7 +2852,7 @@ Ratings
            ods-angry_invert
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/check.svg
          :width: 30pt
@@ -2870,7 +2870,7 @@ Ratings
            ods-check
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/cross.svg
          :width: 30pt
@@ -2888,7 +2888,7 @@ Ratings
            ods-cross
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/happy.svg
          :width: 30pt
@@ -2906,7 +2906,7 @@ Ratings
            ods-happy
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/happy_invert.svg
          :width: 30pt
@@ -2924,7 +2924,7 @@ Ratings
            ods-happy_invert
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/neutral.svg
          :width: 30pt
@@ -2942,7 +2942,7 @@ Ratings
            ods-neutral
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/neutral_invert.svg
          :width: 30pt
@@ -2960,7 +2960,7 @@ Ratings
            ods-neutral_invert
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/sad.svg
          :width: 30pt
@@ -2978,7 +2978,7 @@ Ratings
            ods-sad
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/sad_invert.svg
          :width: 30pt
@@ -2996,7 +2996,7 @@ Ratings
            ods-sad_invert
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/thumb_down.svg
          :width: 30pt
@@ -3014,7 +3014,7 @@ Ratings
            ods-thumb_down
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/thumb_up.svg
          :width: 30pt
@@ -3037,7 +3037,7 @@ Resources and ecology
 
   .. container:: ods-icon-block
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/car_plug.svg
          :width: 30pt
@@ -3055,7 +3055,7 @@ Resources and ecology
            ods-car_plug
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/plant_coal.svg
          :width: 30pt
@@ -3073,7 +3073,7 @@ Resources and ecology
            ods-plant_coal
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/dam.svg
          :width: 30pt
@@ -3091,7 +3091,7 @@ Resources and ecology
            ods-dam
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/derrick.svg
          :width: 30pt
@@ -3109,7 +3109,7 @@ Resources and ecology
            ods-derrick
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/eco_lightbulb.svg
          :width: 30pt
@@ -3127,7 +3127,7 @@ Resources and ecology
            ods-eco_lightbulb
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/plant_gas.svg
          :width: 30pt
@@ -3145,7 +3145,7 @@ Resources and ecology
            ods-plant_gas
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/tower_high.svg
          :width: 30pt
@@ -3163,7 +3163,7 @@ Resources and ecology
            ods-tower_high
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/tower_high2.svg
          :width: 30pt
@@ -3181,7 +3181,7 @@ Resources and ecology
            ods-tower_high2
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/leak.svg
          :width: 30pt
@@ -3199,7 +3199,7 @@ Resources and ecology
            ods-leak
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/tower_low.svg
          :width: 30pt
@@ -3217,7 +3217,7 @@ Resources and ecology
            ods-tower_low
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/no_bin.svg
          :width: 30pt
@@ -3235,7 +3235,7 @@ Resources and ecology
            ods-no_bin
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/plant_nuclear.svg
          :width: 30pt
@@ -3253,7 +3253,7 @@ Resources and ecology
            ods-plant_nuclear
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/oil.svg
          :width: 30pt
@@ -3271,7 +3271,7 @@ Resources and ecology
            ods-oil
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/oil_drill.svg
          :width: 30pt
@@ -3289,7 +3289,7 @@ Resources and ecology
            ods-oil_drill
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/oil_rig.svg
          :width: 30pt
@@ -3307,7 +3307,7 @@ Resources and ecology
            ods-oil_rig
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/oil_spill.svg
          :width: 30pt
@@ -3325,7 +3325,7 @@ Resources and ecology
            ods-oil_spill
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/pipeline.svg
          :width: 30pt
@@ -3343,7 +3343,7 @@ Resources and ecology
            ods-pipeline
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/purification.svg
          :width: 30pt
@@ -3361,7 +3361,7 @@ Resources and ecology
            ods-purification
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/recycle.svg
          :width: 30pt
@@ -3379,7 +3379,7 @@ Resources and ecology
            ods-recycle
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/recycle_bin.svg
          :width: 30pt
@@ -3397,7 +3397,7 @@ Resources and ecology
            ods-recycle_bin
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/plant_solar.svg
          :width: 30pt
@@ -3415,7 +3415,7 @@ Resources and ecology
            ods-plant_solar
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/substation.svg
          :width: 30pt
@@ -3433,7 +3433,7 @@ Resources and ecology
            ods-substation
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/plant_tidal.svg
          :width: 30pt
@@ -3451,7 +3451,7 @@ Resources and ecology
            ods-plant_tidal
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/valve.svg
          :width: 30pt
@@ -3469,7 +3469,7 @@ Resources and ecology
            ods-valve
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/plant_water.svg
          :width: 30pt
@@ -3487,7 +3487,7 @@ Resources and ecology
            ods-plant_water
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/plant_wind.svg
          :width: 30pt
@@ -3510,7 +3510,7 @@ Shopping
 
   .. container:: ods-icon-block
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/bakery.svg
          :width: 30pt
@@ -3528,7 +3528,7 @@ Shopping
            ods-bakery
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/bicycle.svg
          :width: 30pt
@@ -3546,7 +3546,7 @@ Shopping
            ods-bicycle
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/book.svg
          :width: 30pt
@@ -3564,7 +3564,7 @@ Shopping
            ods-book
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/butcher.svg
          :width: 30pt
@@ -3582,7 +3582,7 @@ Shopping
            ods-butcher
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/car.svg
          :width: 30pt
@@ -3600,7 +3600,7 @@ Shopping
            ods-car
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/car_repair.svg
          :width: 30pt
@@ -3618,7 +3618,7 @@ Shopping
            ods-car_repair
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/catering.svg
          :width: 30pt
@@ -3636,7 +3636,7 @@ Shopping
            ods-catering
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/cat.svg
          :width: 30pt
@@ -3654,7 +3654,7 @@ Shopping
            ods-cat
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/cheese.svg
          :width: 30pt
@@ -3672,7 +3672,7 @@ Shopping
            ods-cheese
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/chocolate.svg
          :width: 30pt
@@ -3690,7 +3690,7 @@ Shopping
            ods-chocolate
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/clothes.svg
          :width: 30pt
@@ -3708,7 +3708,7 @@ Shopping
            ods-clothes
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/computer.svg
          :width: 30pt
@@ -3726,7 +3726,7 @@ Shopping
            ods-computer
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/confectionery.svg
          :width: 30pt
@@ -3744,7 +3744,7 @@ Shopping
            ods-confectionery
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/convenience.svg
          :width: 30pt
@@ -3762,7 +3762,7 @@ Shopping
            ods-convenience
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/copyshop.svg
          :width: 30pt
@@ -3780,7 +3780,7 @@ Shopping
            ods-copyshop
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/department_store.svg
          :width: 30pt
@@ -3798,7 +3798,7 @@ Shopping
            ods-department_store
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/diy.svg
          :width: 30pt
@@ -3816,7 +3816,7 @@ Shopping
            ods-diy
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/dog.svg
          :width: 30pt
@@ -3834,7 +3834,7 @@ Shopping
            ods-dog
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/estate_agent.svg
          :width: 30pt
@@ -3852,7 +3852,7 @@ Shopping
            ods-estate_agent
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/fish.svg
          :width: 30pt
@@ -3870,7 +3870,7 @@ Shopping
            ods-fish
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/florist.svg
          :width: 30pt
@@ -3888,7 +3888,7 @@ Shopping
            ods-florist
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/garden_centre.svg
          :width: 30pt
@@ -3906,7 +3906,7 @@ Shopping
            ods-garden_centre
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/gift.svg
          :width: 30pt
@@ -3924,7 +3924,7 @@ Shopping
            ods-gift
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/greengrocer.svg
          :width: 30pt
@@ -3942,7 +3942,7 @@ Shopping
            ods-greengrocer
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/hairdresser.svg
          :width: 30pt
@@ -3960,7 +3960,7 @@ Shopping
            ods-hairdresser
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/hearing_aids.svg
          :width: 30pt
@@ -3978,7 +3978,7 @@ Shopping
            ods-hearing_aids
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/hifi.svg
          :width: 30pt
@@ -3996,7 +3996,7 @@ Shopping
            ods-hifi
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/jewelry.svg
          :width: 30pt
@@ -4014,7 +4014,7 @@ Shopping
            ods-jewelry
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/kiosk.svg
          :width: 30pt
@@ -4032,7 +4032,7 @@ Shopping
            ods-kiosk
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/laundrette.svg
          :width: 30pt
@@ -4050,7 +4050,7 @@ Shopping
            ods-laundrette
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/liquor.svg
          :width: 30pt
@@ -4068,7 +4068,7 @@ Shopping
            ods-liquor
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/marketplace.svg
          :width: 30pt
@@ -4086,7 +4086,7 @@ Shopping
            ods-marketplace
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/motorcycle.svg
          :width: 30pt
@@ -4104,7 +4104,7 @@ Shopping
            ods-motorcycle
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/music.svg
          :width: 30pt
@@ -4122,7 +4122,7 @@ Shopping
            ods-music
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/newspaper.svg
          :width: 30pt
@@ -4140,7 +4140,7 @@ Shopping
            ods-newspaper
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/pet.svg
          :width: 30pt
@@ -4158,7 +4158,7 @@ Shopping
            ods-pet
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/mobile_phone.svg
          :width: 30pt
@@ -4176,7 +4176,7 @@ Shopping
            ods-mobile_phone
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/photo.svg
          :width: 30pt
@@ -4194,7 +4194,7 @@ Shopping
            ods-photo
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/soup.svg
          :width: 30pt
@@ -4212,7 +4212,7 @@ Shopping
            ods-soup
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/supermarket.svg
          :width: 30pt
@@ -4230,7 +4230,7 @@ Shopping
            ods-supermarket
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/tackle.svg
          :width: 30pt
@@ -4248,7 +4248,7 @@ Shopping
            ods-tackle
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/tobacco.svg
          :width: 30pt
@@ -4266,7 +4266,7 @@ Shopping
            ods-tobacco
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/toys.svg
          :width: 30pt
@@ -4284,7 +4284,7 @@ Shopping
            ods-toys
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/vending_machine.svg
          :width: 30pt
@@ -4307,7 +4307,7 @@ Sports
 
   .. container:: ods-icon-block
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/archery.svg
          :width: 30pt
@@ -4325,7 +4325,7 @@ Sports
            ods-archery
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/ball.svg
          :width: 30pt
@@ -4343,7 +4343,7 @@ Sports
            ods-ball
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/ball_game.svg
          :width: 30pt
@@ -4361,7 +4361,7 @@ Sports
            ods-ball_game
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/baseball.svg
          :width: 30pt
@@ -4379,7 +4379,7 @@ Sports
            ods-baseball
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/baseball_field.svg
          :width: 30pt
@@ -4397,7 +4397,7 @@ Sports
            ods-baseball_field
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/canoe.svg
          :width: 30pt
@@ -4415,7 +4415,7 @@ Sports
            ods-canoe
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/cricket.svg
          :width: 30pt
@@ -4433,7 +4433,7 @@ Sports
            ods-cricket
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/diving.svg
          :width: 30pt
@@ -4451,7 +4451,7 @@ Sports
            ods-diving
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/fitness.svg
          :width: 30pt
@@ -4469,7 +4469,7 @@ Sports
            ods-fitness
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/football_field.svg
          :width: 30pt
@@ -4487,7 +4487,7 @@ Sports
            ods-football_field
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/golf.svg
          :width: 30pt
@@ -4505,7 +4505,7 @@ Sports
            ods-golf
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/golf_course.svg
          :width: 30pt
@@ -4523,7 +4523,7 @@ Sports
            ods-golf_course
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/gym.svg
          :width: 30pt
@@ -4541,7 +4541,7 @@ Sports
            ods-gym
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/gymnasium2.svg
          :width: 30pt
@@ -4559,7 +4559,7 @@ Sports
            ods-gymnasium2
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/horse_racing.svg
          :width: 30pt
@@ -4577,7 +4577,7 @@ Sports
            ods-horse_racing
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/iceskating.svg
          :width: 30pt
@@ -4595,7 +4595,7 @@ Sports
            ods-iceskating
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/swimming_indoor.svg
          :width: 30pt
@@ -4613,7 +4613,7 @@ Sports
            ods-swimming_indoor
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/jetski.svg
          :width: 30pt
@@ -4631,7 +4631,7 @@ Sports
            ods-jetski
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/leisure_centre.svg
          :width: 30pt
@@ -4649,7 +4649,7 @@ Sports
            ods-leisure_centre
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/miniature_golf.svg
          :width: 30pt
@@ -4667,7 +4667,7 @@ Sports
            ods-miniature_golf
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/motorracing.svg
          :width: 30pt
@@ -4685,7 +4685,7 @@ Sports
            ods-motorracing
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/swimming_outdoor.svg
          :width: 30pt
@@ -4703,7 +4703,7 @@ Sports
            ods-swimming_outdoor
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/racetrack.svg
          :width: 30pt
@@ -4721,7 +4721,7 @@ Sports
            ods-racetrack
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/racket_game.svg
          :width: 30pt
@@ -4739,7 +4739,7 @@ Sports
            ods-racket_game
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/rugby.svg
          :width: 30pt
@@ -4757,7 +4757,7 @@ Sports
            ods-rugby
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/running.svg
          :width: 30pt
@@ -4775,7 +4775,7 @@ Sports
            ods-running
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/running_track.svg
          :width: 30pt
@@ -4793,7 +4793,7 @@ Sports
            ods-running_track
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/sailing.svg
          :width: 30pt
@@ -4811,7 +4811,7 @@ Sports
            ods-sailing
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/shooting.svg
          :width: 30pt
@@ -4829,7 +4829,7 @@ Sports
            ods-shooting
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/skatepark.svg
          :width: 30pt
@@ -4847,7 +4847,7 @@ Sports
            ods-skatepark
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/skiing_crosscountry.svg
          :width: 30pt
@@ -4865,7 +4865,7 @@ Sports
            ods-skiing_crosscountry
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/skiing_downhill.svg
          :width: 30pt
@@ -4883,7 +4883,7 @@ Sports
            ods-skiing_downhill
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/snooker.svg
          :width: 30pt
@@ -4901,7 +4901,7 @@ Sports
            ods-snooker
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/soccer.svg
          :width: 30pt
@@ -4919,7 +4919,7 @@ Sports
            ods-soccer
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/soccer_field.svg
          :width: 30pt
@@ -4937,7 +4937,7 @@ Sports
            ods-soccer_field
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/stadium.svg
          :width: 30pt
@@ -4955,7 +4955,7 @@ Sports
            ods-stadium
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/swimming_pool.svg
          :width: 30pt
@@ -4973,7 +4973,7 @@ Sports
            ods-swimming_pool
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/swing.svg
          :width: 30pt
@@ -4991,7 +4991,7 @@ Sports
            ods-swing
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/tennis.svg
          :width: 30pt
@@ -5009,7 +5009,7 @@ Sports
            ods-tennis
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/tennis_court.svg
          :width: 30pt
@@ -5027,7 +5027,7 @@ Sports
            ods-tennis_court
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/hillclimbing.svg
          :width: 30pt
@@ -5045,7 +5045,7 @@ Sports
            ods-hillclimbing
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/windsurfing.svg
          :width: 30pt
@@ -5068,7 +5068,7 @@ Symbols
 
   .. container:: ods-icon-block
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/accident.svg
          :width: 30pt
@@ -5086,7 +5086,7 @@ Symbols
            ods-accident
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/accident_panel.svg
          :width: 30pt
@@ -5104,7 +5104,7 @@ Symbols
            ods-accident_panel
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/acid.svg
          :width: 30pt
@@ -5122,7 +5122,7 @@ Symbols
            ods-acid
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/acid_panel.svg
          :width: 30pt
@@ -5140,7 +5140,7 @@ Symbols
            ods-acid_panel
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/biological.svg
          :width: 30pt
@@ -5158,7 +5158,7 @@ Symbols
            ods-biological
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/biological_panel.svg
          :width: 30pt
@@ -5176,7 +5176,7 @@ Symbols
            ods-biological_panel
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/calendar.svg
          :width: 30pt
@@ -5194,7 +5194,7 @@ Symbols
            ods-calendar
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/database.svg
          :width: 30pt
@@ -5212,7 +5212,7 @@ Symbols
            ods-database
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/electricity.svg
          :width: 30pt
@@ -5230,7 +5230,7 @@ Symbols
            ods-electricity
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/electricity_panel.svg
          :width: 30pt
@@ -5248,7 +5248,7 @@ Symbols
            ods-electricity_panel
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/explosion.svg
          :width: 30pt
@@ -5266,7 +5266,7 @@ Symbols
            ods-explosion
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/explosion_panel.svg
          :width: 30pt
@@ -5284,7 +5284,7 @@ Symbols
            ods-explosion_panel
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/fire.svg
          :width: 30pt
@@ -5302,7 +5302,7 @@ Symbols
            ods-fire
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/fire_panel.svg
          :width: 30pt
@@ -5320,7 +5320,7 @@ Symbols
            ods-fire_panel
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/heart.svg
          :width: 30pt
@@ -5338,7 +5338,7 @@ Symbols
            ods-heart
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/information.svg
          :width: 30pt
@@ -5356,7 +5356,7 @@ Symbols
            ods-information
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/lightbulb.svg
          :width: 30pt
@@ -5374,7 +5374,7 @@ Symbols
            ods-lightbulb
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/minus.svg
          :width: 30pt
@@ -5392,7 +5392,7 @@ Symbols
            ods-minus
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/plus.svg
          :width: 30pt
@@ -5410,7 +5410,7 @@ Symbols
            ods-plus
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/poison.svg
          :width: 30pt
@@ -5428,7 +5428,7 @@ Symbols
            ods-poison
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/poison_panel.svg
          :width: 30pt
@@ -5446,7 +5446,7 @@ Symbols
            ods-poison_panel
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/question.svg
          :width: 30pt
@@ -5464,7 +5464,7 @@ Symbols
            ods-question
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/radioactive.svg
          :width: 30pt
@@ -5482,7 +5482,7 @@ Symbols
            ods-radioactive
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/radioactive_panel.svg
          :width: 30pt
@@ -5500,7 +5500,7 @@ Symbols
            ods-radioactive_panel
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/star.svg
          :width: 30pt
@@ -5518,7 +5518,7 @@ Symbols
            ods-star
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/trophy.svg
          :width: 30pt
@@ -5536,7 +5536,7 @@ Symbols
            ods-trophy
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/circle.svg
          :width: 30pt
@@ -5554,7 +5554,7 @@ Symbols
            ods-circle
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/roadworks.svg
          :width: 30pt
@@ -5572,7 +5572,7 @@ Symbols
            ods-roadworks
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/roadworks_panel.svg
          :width: 30pt
@@ -5590,7 +5590,7 @@ Symbols
            ods-roadworks_panel
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/square.svg
          :width: 30pt
@@ -5608,7 +5608,7 @@ Symbols
            ods-square
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/triangle.svg
          :width: 30pt
@@ -5626,7 +5626,7 @@ Symbols
            ods-triangle
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/diamond.svg
          :width: 30pt
@@ -5644,7 +5644,7 @@ Symbols
            ods-diamond
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/handshake.svg
          :width: 30pt
@@ -5662,7 +5662,7 @@ Symbols
            ods-handshake
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/barchart.svg
          :width: 30pt
@@ -5680,7 +5680,7 @@ Symbols
            ods-barchart
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/linechart.svg
          :width: 30pt
@@ -5698,7 +5698,7 @@ Symbols
            ods-linechart
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/piechart.svg
          :width: 30pt
@@ -5721,7 +5721,7 @@ Tourism
 
   .. container:: ods-icon-block
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/archaeological.svg
          :width: 30pt
@@ -5739,7 +5739,7 @@ Tourism
            ods-archaeological
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/art_gallery.svg
          :width: 30pt
@@ -5757,7 +5757,7 @@ Tourism
            ods-art_gallery
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/attraction.svg
          :width: 30pt
@@ -5775,7 +5775,7 @@ Tourism
            ods-attraction
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/battlefield.svg
          :width: 30pt
@@ -5793,7 +5793,7 @@ Tourism
            ods-battlefield
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/beach.svg
          :width: 30pt
@@ -5811,7 +5811,7 @@ Tourism
            ods-beach
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/casino.svg
          :width: 30pt
@@ -5829,7 +5829,7 @@ Tourism
            ods-casino
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/castle.svg
          :width: 30pt
@@ -5847,7 +5847,7 @@ Tourism
            ods-castle
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/cinema.svg
          :width: 30pt
@@ -5865,7 +5865,7 @@ Tourism
            ods-cinema
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/clock.svg
          :width: 30pt
@@ -5883,7 +5883,7 @@ Tourism
            ods-clock
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/fountain.svg
          :width: 30pt
@@ -5901,7 +5901,7 @@ Tourism
            ods-fountain
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/guidepost.svg
          :width: 30pt
@@ -5919,7 +5919,7 @@ Tourism
            ods-guidepost
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/map.svg
          :width: 30pt
@@ -5937,7 +5937,7 @@ Tourism
            ods-map
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/memorial.svg
          :width: 30pt
@@ -5955,7 +5955,7 @@ Tourism
            ods-memorial
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/monument.svg
          :width: 30pt
@@ -5973,7 +5973,7 @@ Tourism
            ods-monument
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/museum.svg
          :width: 30pt
@@ -5991,7 +5991,7 @@ Tourism
            ods-museum
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/picnic.svg
          :width: 30pt
@@ -6009,7 +6009,7 @@ Tourism
            ods-picnic
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/wayside_cross.svg
          :width: 30pt
@@ -6027,7 +6027,7 @@ Tourism
            ods-wayside_cross
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/wayside_shrine.svg
          :width: 30pt
@@ -6045,7 +6045,7 @@ Tourism
            ods-wayside_shrine
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/ruin.svg
          :width: 30pt
@@ -6063,7 +6063,7 @@ Tourism
            ods-ruin
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/theatre.svg
          :width: 30pt
@@ -6081,7 +6081,7 @@ Tourism
            ods-theatre
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/theme_park.svg
          :width: 30pt
@@ -6099,7 +6099,7 @@ Tourism
            ods-theme_park
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/viewpoint.svg
          :width: 30pt
@@ -6117,7 +6117,7 @@ Tourism
            ods-viewpoint
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/waterwheel.svg
          :width: 30pt
@@ -6135,7 +6135,7 @@ Tourism
            ods-waterwheel
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/windmill.svg
          :width: 30pt
@@ -6153,7 +6153,7 @@ Tourism
            ods-windmill
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/wreck.svg
          :width: 30pt
@@ -6171,7 +6171,7 @@ Tourism
            ods-wreck
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/zoo.svg
          :width: 30pt
@@ -6189,7 +6189,7 @@ Tourism
            ods-zoo
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/culture.svg
          :width: 30pt
@@ -6212,7 +6212,7 @@ Transportation
 
   .. container:: ods-icon-block
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/airport.svg
          :width: 30pt
@@ -6230,7 +6230,7 @@ Transportation
            ods-airport
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/airport_gate.svg
          :width: 30pt
@@ -6248,7 +6248,7 @@ Transportation
            ods-airport_gate
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/parking_bicycle.svg
          :width: 30pt
@@ -6266,7 +6266,7 @@ Transportation
            ods-parking_bicycle
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/rental_bicycle.svg
          :width: 30pt
@@ -6284,7 +6284,7 @@ Transportation
            ods-rental_bicycle
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/bike.svg
          :width: 30pt
@@ -6302,7 +6302,7 @@ Transportation
            ods-bike
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/bus.svg
          :width: 30pt
@@ -6320,7 +6320,7 @@ Transportation
            ods-bus
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/bus_stop.svg
          :width: 30pt
@@ -6338,7 +6338,7 @@ Transportation
            ods-bus_stop
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/parking_car.svg
          :width: 30pt
@@ -6356,7 +6356,7 @@ Transportation
            ods-parking_car
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/rental_car.svg
          :width: 30pt
@@ -6374,7 +6374,7 @@ Transportation
            ods-rental_car
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/car_share.svg
          :width: 30pt
@@ -6392,7 +6392,7 @@ Transportation
            ods-car_share
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/parking_disabled.svg
          :width: 30pt
@@ -6410,7 +6410,7 @@ Transportation
            ods-parking_disabled
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/emergency_phone.svg
          :width: 30pt
@@ -6428,7 +6428,7 @@ Transportation
            ods-emergency_phone
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/fuel.svg
          :width: 30pt
@@ -6446,7 +6446,7 @@ Transportation
            ods-fuel
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/fuel_lpg.svg
          :width: 30pt
@@ -6464,7 +6464,7 @@ Transportation
            ods-fuel_lpg
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/heavy_plane.svg
          :width: 30pt
@@ -6482,7 +6482,7 @@ Transportation
            ods-heavy_plane
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/helicopter.svg
          :width: 30pt
@@ -6500,7 +6500,7 @@ Transportation
            ods-helicopter
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/helicopter_pad.svg
          :width: 30pt
@@ -6518,7 +6518,7 @@ Transportation
            ods-helicopter_pad
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/light_plane.svg
          :width: 30pt
@@ -6536,7 +6536,7 @@ Transportation
            ods-light_plane
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/lighthouse.svg
          :width: 30pt
@@ -6554,7 +6554,7 @@ Transportation
            ods-lighthouse
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/marina.svg
          :width: 30pt
@@ -6572,7 +6572,7 @@ Transportation
            ods-marina
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/parking_moto.svg
          :width: 30pt
@@ -6590,7 +6590,7 @@ Transportation
            ods-parking_moto
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/parking_car_paid.svg
          :width: 30pt
@@ -6608,7 +6608,7 @@ Transportation
            ods-parking_car_paid
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/parking.svg
          :width: 30pt
@@ -6626,7 +6626,7 @@ Transportation
            ods-parking
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/walking.svg
          :width: 30pt
@@ -6644,7 +6644,7 @@ Transportation
            ods-walking
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/port.svg
          :width: 30pt
@@ -6662,7 +6662,7 @@ Transportation
            ods-port
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/rent_a_bike.svg
          :width: 30pt
@@ -6680,7 +6680,7 @@ Transportation
            ods-rent_a_bike
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/rent_a_car.svg
          :width: 30pt
@@ -6698,7 +6698,7 @@ Transportation
            ods-rent_a_car
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/roundabout_acw.svg
          :width: 30pt
@@ -6716,7 +6716,7 @@ Transportation
            ods-roundabout_acw
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/roundabout_cw.svg
          :width: 30pt
@@ -6734,7 +6734,7 @@ Transportation
            ods-roundabout_cw
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/slipway.svg
          :width: 30pt
@@ -6752,7 +6752,7 @@ Transportation
            ods-slipway
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/speedbump.svg
          :width: 30pt
@@ -6770,7 +6770,7 @@ Transportation
            ods-speedbump
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/subway.svg
          :width: 30pt
@@ -6788,7 +6788,7 @@ Transportation
            ods-subway
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/taxi_rank.svg
          :width: 30pt
@@ -6806,7 +6806,7 @@ Transportation
            ods-taxi_rank
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/traffic_lights.svg
          :width: 30pt
@@ -6824,7 +6824,7 @@ Transportation
            ods-traffic_lights
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/train_station.svg
          :width: 30pt
@@ -6842,7 +6842,7 @@ Transportation
            ods-train_station
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/tram.svg
          :width: 30pt
@@ -6860,7 +6860,7 @@ Transportation
            ods-tram
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/truck.svg
          :width: 30pt
@@ -6878,7 +6878,7 @@ Transportation
            ods-truck
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/zebra_crossing.svg
          :width: 30pt
@@ -6896,7 +6896,7 @@ Transportation
            ods-zebra_crossing
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/rocket.svg
          :width: 30pt
@@ -6919,7 +6919,7 @@ Worship
 
   .. container:: ods-icon-block
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/bahai.svg
          :width: 30pt
@@ -6937,7 +6937,7 @@ Worship
            ods-bahai
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/buddhist.svg
          :width: 30pt
@@ -6955,7 +6955,7 @@ Worship
            ods-buddhist
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/christian.svg
          :width: 30pt
@@ -6973,7 +6973,7 @@ Worship
            ods-christian
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/hindu.svg
          :width: 30pt
@@ -6991,7 +6991,7 @@ Worship
            ods-hindu
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/islamic.svg
          :width: 30pt
@@ -7009,7 +7009,7 @@ Worship
            ods-islamic
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/jain.svg
          :width: 30pt
@@ -7027,7 +7027,7 @@ Worship
            ods-jain
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/jewish.svg
          :width: 30pt
@@ -7045,7 +7045,7 @@ Worship
            ods-jewish
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/shinto.svg
          :width: 30pt
@@ -7063,7 +7063,7 @@ Worship
            ods-shinto
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/sikh.svg
          :width: 30pt
@@ -7081,7 +7081,7 @@ Worship
            ods-sikh
 
 
-    .. container:: ods-icon-plus-caption tooltip
+    .. container:: ods-icon-plus-caption
 
       .. image:: icons/unknown.svg
          :width: 30pt
