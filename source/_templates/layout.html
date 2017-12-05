@@ -30,6 +30,60 @@
         margin-left: 0.15em;
         margin-right: 0.2em;
     }
+
+    /* Styles for the icons cheatsheet */
+    .ods-icon-block {
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    .ods-icon-plus-caption:hover .ods-icon-caption-filename {
+        color: #fff;
+    }
+
+    .ods-icon-plus-caption {
+        display:flex;
+        flex:0 0 31%;
+        margin-bottom: 1.5rem;
+        margin-right:2%;
+        padding-left:15px;
+    }
+
+    .ods-icon-plus-caption:hover {
+        background-color: #31a0ea;
+        color: #fff;
+        border-radius: 6px;
+    }
+
+    .ods-icon-plus-caption:hover .ods-icon {
+        transform: scale(1.2);
+    }
+
+    .ods-icon-plus-caption:hover .svg {
+        fill:white;
+        stroke:white;
+    }
+
+    .ods-icon {
+        width:20px;
+        transition: all 0.3s;
+        align-self: center;
+    }
+
+    .ods-icon-caption-name {
+        font-size:0.8rem;
+        margin-left: 0.5rem;
+    }
+    
+      .ods-icon-caption-filename {
+        font-size:0.8rem;
+        margin-left: 0.5rem;
+        color:#999;
+        margin-top:-5px;
+        max-width: 140px;
+        text-overflow: ellipsis;
+    }
+
 </style>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
 <link rel="stylesheet" href="https://public.opendatasoft.com/static/pictos/odsui/odsui.css" />
