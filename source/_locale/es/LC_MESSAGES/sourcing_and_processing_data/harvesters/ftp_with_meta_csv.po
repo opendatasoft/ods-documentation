@@ -2,15 +2,15 @@
 # Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-29 10:45+0200\n"
+"POT-Creation-Date: 2017-12-11 15:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: rocio aguero <raguero@datawords.com>, 2017\n"
+"Last-Translator: Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,25 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:2
 msgid "FTP with meta CSV harvester"
-msgstr "Recopilador de FTP con CSV de metadatos"
+msgstr "Recolector de FTP con CSV de metadatos"
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:4
+msgid "This harvester allows users to create datasets from an FTP folder."
+msgstr ""
+"Este recolector permite a los usuarios crear conjuntos de datos a partir de "
+"una carpeta FTP."
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:6
+msgid ""
+"It connects via FTPS (explicit mode on port 21) if available, or FTP if "
+"requested in the provided URL."
+msgstr ""
+"Se conecta a través de FTPS (modo explícito en el puerto 21) si está "
+"disponible, o FTP si así se solicita en la dirección de URL."
+
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:8
+msgid "The FTP folder must contain:"
+msgstr "La carpeta FTP debe contener:"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:10
 msgid "one **metadata CSV file** (separated with semicolons)"
@@ -52,7 +70,7 @@ msgstr "una fila de encabezado"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:32
 msgid "several other rows, each one dedicated to a dataset to harvest"
-msgstr "varias filas adicionales, una por conjunto de datos por recopilar"
+msgstr "varias filas adicionales, una por conjunto de datos por recolectar"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:34
 msgid "**Example:**"
@@ -214,10 +232,10 @@ msgid ""
 "connector's configuration, files must be simple enough to be correctly "
 "extracted."
 msgstr ""
-"Pueden recopilarse recursos en cualquier formato que la plataforma permita. "
-"Sin embargo, puesto que el recolector depende en gran medida de la detección"
-" de parámetros automáticos para la configuración del conector, los archivos "
-"deben ser lo suficientemente simples para extraerse correctamente."
+"Pueden recolectarse recursos en cualquier formato que la plataforma permita."
+" Sin embargo, puesto que el recolector depende en gran medida de la "
+"detección de parámetros automáticos para la configuración del conector, los "
+"archivos deben ser lo suficientemente simples para extraerse correctamente."
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:69
 msgid "Schema CSV file"
@@ -325,6 +343,14 @@ msgstr "**Host** (host)"
 msgid "URL of the FTP server"
 msgstr "Dirección URL del servidor FTP."
 
+#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:107
+msgid ""
+"eu.ftp.opendatasoft.com, ftps://eu.ftp.opendatasoft.com, "
+"ftp://eu.ftp.opendatasoft.com"
+msgstr ""
+"eu.ftp.opendatasoft.com, ftps://eu.ftp.opendatasoft.com, "
+"ftp://eu.ftp.opendatasoft.com"
+
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:108
 msgid "**User** (user)"
 msgstr "**Usuario** (user)"
@@ -347,7 +373,7 @@ msgstr "Subdirectorio (subdir)"
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:115
 msgid "The directory containing the data you want to harvest."
-msgstr "El directorio que contiene los datos que desea recopilar."
+msgstr "El directorio que contiene los datos que desea recolectar."
 
 #: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:116
 msgid "pub/documents"
@@ -390,33 +416,3 @@ msgid ""
 msgstr ""
 "Esta columna contiene un nombre de archivo con el esquema de recurso "
 "(etiquetas de columna y descripciones)."
-
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:4
-msgid "This harvester allows users to create datasets from an FTP folder."
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:6
-msgid ""
-"It connects via FTPS (explicit mode on port 21) if available, or FTP if "
-"requested in the provided URL."
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:8
-msgid "The FTP folder must contain:"
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/harvesters/ftp_with_meta_csv.rst:107
-msgid ""
-"eu.ftp.opendatasoft.com, ftps://eu.ftp.opendatasoft.com, "
-"ftp://eu.ftp.opendatasoft.com"
-msgstr ""
-
-#~ msgid ""
-#~ "This harvester allows users to create datasets from an FTP folder. The FTP "
-#~ "folder must contain:"
-#~ msgstr ""
-#~ "Este recolector permite a los usuarios crear conjuntos de datos a partir de "
-#~ "una carpeta FTP que contiene: "
-
-#~ msgid "ftp.opendatasoft.com"
-#~ msgstr "ftp.opendatasoft.com"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-29 10:45+0200\n"
+"POT-Creation-Date: 2017-12-11 15:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
@@ -280,7 +280,7 @@ msgstr ""
 
 #: ../../source/managing_security/saml.rst:75
 msgid "Using user attributes to filter data"
-msgstr ""
+msgstr "Utilizar atributos de usuario para filtrar datos"
 
 #: ../../source/managing_security/saml.rst:77
 msgid ""
@@ -291,22 +291,28 @@ msgid ""
 "attributes ``user-country`` and ``user-language`` given by the following "
 "table."
 msgstr ""
+"Mediante la función #attr, se pueden filtrar los registros de un conjunto de"
+" datos de modo que solo se devuelvan los registros que coincidan con un "
+"valor establecido en los atributos de usuario enviados por el IdP. En los "
+"ejemplos siguientes, suponemos que tenemos los 3 usuarios con los nombres de"
+" usuario y atributos SAML ``user-country`` y ``user-language`` respectivos "
+"que figuran en la tabla siguiente."
 
 #: ../../source/managing_security/saml.rst:82
 msgid "User"
-msgstr ""
+msgstr "Usuario"
 
 #: ../../source/managing_security/saml.rst:83
 msgid "user-country"
-msgstr ""
+msgstr "user-country"
 
 #: ../../source/managing_security/saml.rst:84
 msgid "user-language"
-msgstr ""
+msgstr "user-language"
 
 #: ../../source/managing_security/saml.rst:85
 msgid "User1"
-msgstr ""
+msgstr "User1"
 
 #: ../../source/managing_security/saml.rst:86
 #: ../../source/managing_security/saml.rst:107
@@ -330,11 +336,11 @@ msgstr "Francia"
 #: ../../source/managing_security/saml.rst:219
 #: ../../source/managing_security/saml.rst:231
 msgid "French"
-msgstr ""
+msgstr "Francés"
 
 #: ../../source/managing_security/saml.rst:88
 msgid "User2"
-msgstr ""
+msgstr "User2"
 
 #: ../../source/managing_security/saml.rst:89
 #: ../../source/managing_security/saml.rst:110
@@ -349,7 +355,7 @@ msgstr "Canadá"
 
 #: ../../source/managing_security/saml.rst:91
 msgid "User3"
-msgstr ""
+msgstr "User3"
 
 #: ../../source/managing_security/saml.rst:92
 #: ../../source/managing_security/saml.rst:116
@@ -357,7 +363,7 @@ msgstr ""
 #: ../../source/managing_security/saml.rst:204
 #: ../../source/managing_security/saml.rst:242
 msgid "United States"
-msgstr ""
+msgstr "Estados Unidos"
 
 #: ../../source/managing_security/saml.rst:93
 #: ../../source/managing_security/saml.rst:105
@@ -369,11 +375,12 @@ msgstr ""
 #: ../../source/managing_security/saml.rst:205
 #: ../../source/managing_security/saml.rst:243
 msgid "English"
-msgstr ""
+msgstr "Inglés"
 
 #: ../../source/managing_security/saml.rst:96
 msgid "And a dataset with records given by the following table."
 msgstr ""
+"Y un conjunto de datos con los registros indicados en la tabla siguiente."
 
 #: ../../source/managing_security/saml.rst:101
 #: ../../source/managing_security/saml.rst:127
@@ -386,7 +393,7 @@ msgstr ""
 #: ../../source/managing_security/saml.rst:227
 #: ../../source/managing_security/saml.rst:239
 msgid "country"
-msgstr ""
+msgstr "country"
 
 #: ../../source/managing_security/saml.rst:102
 #: ../../source/managing_security/saml.rst:128
@@ -412,17 +419,17 @@ msgstr "Idioma"
 #: ../../source/managing_security/saml.rst:229
 #: ../../source/managing_security/saml.rst:241
 msgid "message"
-msgstr ""
+msgstr "message"
 
 #: ../../source/managing_security/saml.rst:104
 #: ../../source/managing_security/saml.rst:201
 msgid "Worldwide"
-msgstr ""
+msgstr "Worldwide"
 
 #: ../../source/managing_security/saml.rst:106
 #: ../../source/managing_security/saml.rst:203
 msgid "Hello world"
-msgstr ""
+msgstr "Hello world"
 
 #: ../../source/managing_security/saml.rst:109
 #: ../../source/managing_security/saml.rst:132
@@ -430,7 +437,7 @@ msgstr ""
 #: ../../source/managing_security/saml.rst:188
 #: ../../source/managing_security/saml.rst:220
 msgid "Bonjour à tous les Français"
-msgstr ""
+msgstr "Bonjour à tous les Français"
 
 #: ../../source/managing_security/saml.rst:112
 #: ../../source/managing_security/saml.rst:144
@@ -438,43 +445,46 @@ msgstr ""
 #: ../../source/managing_security/saml.rst:191
 #: ../../source/managing_security/saml.rst:232
 msgid "Bonjour à tous les Canadiens"
-msgstr ""
+msgstr "Bonjour à tous les Canadiens"
 
 #: ../../source/managing_security/saml.rst:115
 #: ../../source/managing_security/saml.rst:147
 msgid "Hello to all Canadians"
-msgstr ""
+msgstr "Hello to all Canadians"
 
 #: ../../source/managing_security/saml.rst:118
 #: ../../source/managing_security/saml.rst:159
 #: ../../source/managing_security/saml.rst:206
 #: ../../source/managing_security/saml.rst:244
 msgid "Hello to all Americans"
-msgstr ""
+msgstr "Hello to all Americans"
 
 #: ../../source/managing_security/saml.rst:120
 msgid ""
 "We can restrict these users so that they see only messages that apply to "
 "their respective countries, with the query ``#attr(country, user-country)``."
 msgstr ""
+"Podemos restringir estos usuarios de modo que solo vean los mensajes que son"
+" válidos para sus países respectivos, con la consulta ``#attr(country, user-"
+"country)``."
 
 #: ../../source/managing_security/saml.rst:122
 #: ../../source/managing_security/saml.rst:163
 #: ../../source/managing_security/saml.rst:210
 msgid "User1 sees"
-msgstr ""
+msgstr "User1 ve"
 
 #: ../../source/managing_security/saml.rst:134
 #: ../../source/managing_security/saml.rst:178
 #: ../../source/managing_security/saml.rst:222
 msgid "User2 sees"
-msgstr ""
+msgstr "User2 ve"
 
 #: ../../source/managing_security/saml.rst:149
 #: ../../source/managing_security/saml.rst:193
 #: ../../source/managing_security/saml.rst:234
 msgid "User3 sees"
-msgstr ""
+msgstr "User3 ve"
 
 #: ../../source/managing_security/saml.rst:161
 msgid ""
@@ -482,6 +492,9 @@ msgid ""
 "their respective language, with the query ``#attr(language, user-"
 "language)``."
 msgstr ""
+"También podemos restringir estos usuarios a fin de que solo vean los "
+"mensajes que están en su idioma respectivo, con la consulta "
+"``#attr(language, user-language)``."
 
 #: ../../source/managing_security/saml.rst:208
 msgid ""
@@ -490,3 +503,7 @@ msgid ""
 "messages that fit their country and languages with the query "
 "``#attr(language, user-language) AND #attr(country, user-country)``."
 msgstr ""
+"Al ser una función del lenguaje de consulta, también se puede agrupar con "
+"los operadores habituales; por ejemplo, podemos restringir los usuarios para"
+" que solo vean los mensajes adecuados para su país e idioma con la consulta "
+"``#attr(language, user-language) AND #attr(country, user-country)``."
