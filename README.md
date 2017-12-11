@@ -223,3 +223,16 @@ To a raw html including the Font Awesome <i> link
 ```
 Note that the external link decorator is added automatically.
 
+### Updating the cheatsheet on the documentation
+
+How to:
+
+- Change directory to your documentation root (e.g: `src/ods-documentation/`)
+- Run the script `updateicons.py` with your platform root as a parameter (e.g: `python script/updateicons.py ~/src/platform`)
+
+This script will:
+
+- Copy all icons from the codebase to the documentation
+- Zip all these icons for download
+- Generate the cheatsheet .rst file
+- You still have to generate the documentation using a `make html`

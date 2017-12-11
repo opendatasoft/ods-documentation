@@ -4,6 +4,7 @@ env:
     - secure: "K7ftkaKYCmLWOln+GHnQOu1Z1VafSyn+0O5fGt+GunjaDcwbK4A/Z3CjO1bzVgeraonB3e5zB6K9e9J1UQDs16J1rl2XOD3wpvrIICZw3riZLH/94/wWZsAFmIzqLwsj7qnp8wzasIEgBdlFyE7mJC/y+p25diUBPhx7xtG4e/g="
     - secure: "jTDcWJVqvkncOJGyqSdMQ4tmHtp4lQcAGMbfHOZXtUzr8TCCF+h/z6X0KNcgwgXsRN0af2vY8Cm44jnrADQ4lKYKrIfyqvQrdJ2X2sHCv3RwMxyC9mCvDU5X7JQ7/1zCra0bXqOusSpGGU302O5Aj3V4T0b6F0IEU3Sm+wfzIAU="
     - DEPLOY_PATH=/var/www/doc/
+    - DEPLOY_BETA_PATH=/var/www/betadoc/
 python:
   - 2.7
 install:
@@ -21,6 +22,7 @@ after_success:
   - eval "$(ssh-agent -s)"
   - ssh-add .travis.deploy
   - 'test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && rsync -e "ssh -o StrictHostKeyChecking=no" -az --force --delete build/ "$DEPLOY_USER"@"$DEPLOY_IP":"$DEPLOY_PATH" 2>/dev/null'
+  - 'test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "develop" && rsync -e "ssh -o StrictHostKeyChecking=no" -az --force --delete build/ "$DEPLOY_USER"@"$DEPLOY_IP":"$DEPLOY_BETA_PATH" 2>/dev/null'
 sudo: false
 notifications:
   slack:
