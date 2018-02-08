@@ -16,9 +16,12 @@ To set the parameters of the File processor, follow the indications from the tab
   * * Label
     * Description
     * Mandatory
+    * Default value
   * * Field
     * Field containing the URL of the dataset's images
     * yes
+    *
   * * Extract metadata
-    * If checked: the images' metadata are extracted and added to the dataset
+    * If checked: the images' EXIF metadata are extracted and added to the dataset
     * no
+    * false

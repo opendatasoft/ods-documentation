@@ -1,7 +1,7 @@
 Adding processors to a dataset
 ==============================
 
-Processors are tools that can be added to a dataset in order to modify, improve or enrich its data. In the OpenDataSoft platform, processors are classified in 4 different categories:
+Processors are tools that can be used in order to modify, improve or enrich the data of a dataset. In the OpenDataSoft platform, processors are classified in 4 different categories:
 
 * Processors for geographical mapping
 * Processors for dates handling
@@ -10,7 +10,7 @@ Processors are tools that can be added to a dataset in order to modify, improve 
 
 To add a processor to a dataset:
 
-1. Click on the **Add a processor** button.
+1. In the Processing tab, click on the **Add a processor** button.
 2. Choose the processor to add to the dataset.
 3. Using the documentation of the chosen processor, fill in the right parameters to set the processor.
 
@@ -283,7 +283,7 @@ Generic processors
   * * :doc:`File<processors/file>`
     * Retrieve images from URLs
     * Default
-  * * :doc:`Join datasets<processors/join_dataset>`
+  * * :doc:`Join dataset<processors/join_dataset>`
     * Join 2 datasets together to retrieve a specified field in a dataset
     * Default
   * * :doc:`JSON array to multivalued<processors/json_array_to_multivalued>`

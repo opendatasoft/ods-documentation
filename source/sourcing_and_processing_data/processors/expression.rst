@@ -39,7 +39,7 @@ Example of a mathematical function:
 
     Example of a mathematical function using the Expression processor
 
-Example of a conditionnal expression: the idea is to create a new column (e.g for filtering) which values depend on condition on values of another column of the dataset. Here, a new column named "Anomaly Detected ?" containing YES/NO, depends on the values of another column being in a certain range.
+Example of a conditional expression: the idea is to create a new column (e.g for filtering) which values depend on condition on values of another column of the dataset. Here, a new column named "Anomaly Detected ?" containing YES/NO, depends on the values of another column being in a certain range.
 
 .. ifconfig:: language == 'en'
 

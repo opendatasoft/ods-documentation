@@ -1,7 +1,7 @@
 Extract Text processor
 ======================
 
-This processor allows to extract any part of a text, a number or a combination of both into a new column. It's similar to the Replace via Regexp processor, except that instead of replacing the content in the same original column, a new column is created with the extracted text. The idea is indeed to put the part to extract in parenthesis. This part will then be extracted in a new column.
+This processor allows to extract any part of a text, a number or a combination of both into a new column. It's similar to the Replace via Regexp processor, except that instead of replacing the content in the same original column, a new column is created with the extracted text. The idea is indeed to put the part to extract in parentheses. This part will then be extracted in a new column.
 
 Setting the processor
 ---------------------

@@ -3,6 +3,9 @@ Simplify Geo Shape processor
 
 This processor simplifies a geo shape to reduce both the processing time and the dataset size.
 
+.. note::
+    The process of simplification will not respect the topology of the geo shapes.
+
 Setting the processor
 ---------------------
 

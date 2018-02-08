@@ -1,7 +1,7 @@
 Geocode with BAN (France) processor
 ====================================
 
-This processor allows you to geocode addresses in France by using the Base d'Adresses Nationale (BAN) service.
+This processor allows you to geocode addresses in France by using the `Base d'Adresses Nationale (BAN) <https://adresse.data.gouv.fr/>`_ service.
 
 Setting the processor
 ---------------------

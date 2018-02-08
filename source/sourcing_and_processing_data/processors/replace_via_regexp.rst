@@ -14,27 +14,35 @@ To set the parameters of the Replace via Regexp processor, follow the indication
   * * Label
     * Description
     * Mandatory
+    * Default value
   * * Field
     * Field which contains the values to replace or remove.
-    * no
+    * yes
+    *
   * * All fields
     * If checked: all fields from the dataset are processed with the Replace via Regexp processor
     * no
+    *
   * * Regular expression
     * Regular expression to determine which part of the values will be replaced or removed. See `<http://en.wikipedia.org/wiki/Regular_expression>`_ for more details on how to write a regular expressions. It is also possible to test regular expressions with an online debugger tool like `Regex101 <https://regex101.com/>`_.
     * yes
+    *
   * * New value
     * If the field value determined with the regular expression is replaced, write the new value that must replace the old one. If the field value determined with the regular expression is removed, let this parameter empty.
     * no
+    *
   * * Case insensitive regular expression
     * If checked: the regular expressions are case insensitive
     * no
+    * false
   * * Multiline regular expression
     * If checked: each newline marks the beginning of an other line. More information about `the multiline option in the Python documentation <https://docs.python.org/2/library/re.html#re.MULTILINE>`_.
     * no
+    * false
   * * '.' character match newlines
     * If checked: '.' character also encompasses newlines. More information about `the '.' character in the Python documentation <https://docs.python.org/2/library/re.html#re.DOTALL>`_.
     * no
+    * false
 
 Example
 -------

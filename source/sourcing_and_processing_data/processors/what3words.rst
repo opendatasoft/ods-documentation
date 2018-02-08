@@ -8,7 +8,7 @@ what3words processor
 
 This processor uses geographical coordinates to produce a 3 word address.
 
-This processor requires a what3words API key.
+This processor requires a `what3words <https://what3words.com/>`_ API key.
 
 Setting the API key
 -------------------

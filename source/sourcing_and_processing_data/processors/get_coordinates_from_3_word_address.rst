@@ -8,7 +8,7 @@ Get coordinates from a 3 word address processor
 
 This processor converts a 3 word address into geographical coordinates.
 
-This processor requires a what3words API key.
+This processor requires a `what3words <https://what3words.com/>`_ API key.
 
 Setting the API key
 -------------------

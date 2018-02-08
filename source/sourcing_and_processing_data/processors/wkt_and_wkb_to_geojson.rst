@@ -6,7 +6,7 @@ WKT and WKB to GeoJson processor
 
    Please contact OpenDataSoft support team if you want this processor to be activated in your domain.
 
-This processor convert vector geometry object represented in Well-known text (WKT) or Well-known binary (WKB) into a GeoJson object.
+This processor converts vector geometry object represented in Well-known text (WKT) or Well-known binary (WKB) into a GeoJSON object.
 
 .. note::
     For Well-known binary, an hexadecimal input is expected.

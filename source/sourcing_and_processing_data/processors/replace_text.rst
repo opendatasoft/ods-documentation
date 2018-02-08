@@ -14,15 +14,20 @@ To set the parameters of the Replace Text processor, follow the indications from
   * * Label
     * Description
     * Mandatory
+    * Default value
   * * Field
     * Field which contains the text to replace
-    * no
+    * yes
+    *
   * * All fields
     * If checked: all fields from the dataset are processed with the Replace Text processor
     * no
+    * false
   * * Old value
     * Value to be replaced
     * no
+    *
   * * New value
     * New value to replace the old one
     * no
+    *

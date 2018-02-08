@@ -16,7 +16,7 @@ To set the parameters of the Normalize Unicode values processor, follow the indi
     * Mandatory
   * * Fields
     * Fields which contain the unicode values to normalize
-    * no
+    * yes
   * * All fields
     * If checked: all fields from the dataset are processed with the Normalize Unicode values processor
     * no

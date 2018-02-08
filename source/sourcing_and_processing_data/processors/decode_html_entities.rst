@@ -17,7 +17,7 @@ To set the parameters of the Decode HTML entities processor, follow the indicati
     * Default value
   * * Field
     * Field which contains the HTML entities
-    * no
+    * yes
     *
   * * All fields
     * If checked: all fields from the dataset are processed with the Decode HTML entities processor

@@ -1,7 +1,7 @@
 Convert Degrees processor
 =========================
 
-This processor converts a degrees, minutes, seconds geo coordinate to a standard geo coordinate.
+This processor converts a degrees, minutes, seconds geo coordinate to a standard geo coordinate in a "latitude, longitude" format.
 
 The following formats can be converted:
 
