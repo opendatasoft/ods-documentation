@@ -46,7 +46,7 @@ This method consists in connecting the platform to:
 .. admonition:: Scheduling updates and pushing real-time data
    :class: note
 
-   These connections with the platform allow the automation of data update, by scheduling or pushing real-time data (see :doc:`Keeping data up to date</sourcing_and_processing_data/realtime>`).
+   These connections with the platform allow the automation of data update, by scheduling or pushing real-time data (see :doc:`Keeping data up to date</sourcing_and_processing_data/scheduling_updates>`).
 
 Connecting to a remote server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -58,7 +58,7 @@ Connecting to a remote server
 OpenDataSoft supports the following protocols:
 
 * http and https, which link to a single file (e.g. http://example.org/mydata.csv)
-* ftp and  ftps, which link to a single file (e.g. ftp://example.org/my_dir/mydata.csv) or to a directory (e.g. ftp://example.org/my_dir/). Using a directory is often the prefered solution to automate incremental updates between a customer's information system and the platform. All the files in the directory need to have the same format and schema (e.g. CSV files with the same column titles). In case of automation, whenever the dataset is published, new and updated files are fetched from the remote location and processed and thanks to OpenDataSoft's native deduplication strategy, similar records are not processed twice (see :doc:`Special fields documentation</sourcing_and_processing_data/dataset_schema>`).
+* ftp and  ftps, which link to a single file (e.g. ftp://example.org/my_dir/mydata.csv) or to a directory (e.g. ftp://example.org/my_dir/). Using a directory is often the prefered solution to automate incremental updates between a customer's information system and the platform. All the files in the directory need to have the same format and schema (e.g. CSV files with the same column titles). In case of automation, whenever the dataset is published, new and updated files are fetched from the remote location and processed and thanks to OpenDataSoft's native deduplication strategy, similar records are not processed twice (see :doc:`Special fields documentation</sourcing_and_processing_data/defining_a_dataset_schema>`).
 
 .. admonition:: Deleted files in FTP server
    :class: important
