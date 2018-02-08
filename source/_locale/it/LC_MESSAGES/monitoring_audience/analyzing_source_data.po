@@ -2,13 +2,13 @@
 # Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-29 10:45+0200\n"
+"POT-Creation-Date: 2017-12-11 15:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2017\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
@@ -355,13 +355,65 @@ msgstr "Query di ricerca di un dataset"
 msgid "api/datasets/1.0/<dataset_id>"
 msgstr "api/datasets/1.0/<dataset_id>"
 
+#: ../../source/monitoring_audience/analyzing_source_data.rst:116
+msgid "``download_dataset``"
+msgstr "``download_dataset``"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:117
+msgid "Download dataset records from the export tab"
+msgstr "Download dei record del dataset dalla scheda Esporta"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:118
+msgid "explore/dataset/<dataset_id>/download/"
+msgstr "explore/dataset/<dataset_id>/download/"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:119
+msgid "``download_dataset_alternative_export``"
+msgstr "``download_dataset_alternative_export``"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:120
+msgid "Download dataset in an alternative export format"
+msgstr "Download del dataset in un formato di esportazione alternativo"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:121
+msgid "api/datasets/1.0/<dataset_id>/alternative_exports/<export_id>/"
+msgstr "api/datasets/1.0/<dataset_id>/alternative_exports/<export_id>/"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:122
+msgid "``download_dataset_attachment``"
+msgstr "``download_dataset_attachment``"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:123
+msgid "Download dataset attachment from the information tab"
+msgstr "Download dell'allegato del dataset dalla scheda Informazioni"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:124
+msgid "api/datasets/1.0/<dataset_id>/attachments/<attachment_id>/"
+msgstr "api/datasets/1.0/<dataset_id>/attachments/<attachment_id>/"
+
 #: ../../source/monitoring_audience/analyzing_source_data.rst:125
 msgid "``dataset_list_snapshots``"
 msgstr "``dataset_list_snapshots``"
 
+#: ../../source/monitoring_audience/analyzing_source_data.rst:126
+msgid "List dataset snapshots"
+msgstr "Elenco degli snapshot dei dataset "
+
 #: ../../source/monitoring_audience/analyzing_source_data.rst:127
 msgid "api/datasets/1.0/<dataset_id>/snapshots/"
 msgstr "api/datasets/1.0/<dataset_id>/snapshots/"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:128
+msgid "``dataset_download_snapshot``"
+msgstr "``dataset_download_snapshot``"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:129
+msgid "Download a dataset snapshot"
+msgstr "Download dello snapshot di un dataset"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:130
+msgid "api/datasets/1.0/<dataset_id>/snapshots/<snapshot_id>/"
+msgstr "api/datasets/1.0/<dataset_id>/snapshots/<snapshot_id>/"
 
 #: ../../source/monitoring_audience/analyzing_source_data.rst:131
 msgid "``search_dataset_records``"
@@ -387,14 +439,6 @@ msgstr "Query di ricerca di un record"
 msgid "api/datasets/1.0/<dataset_id>/records/<record_id>"
 msgstr "api/datasets/1.0/<dataset_id>/records/<record_id>"
 
-#: ../../source/monitoring_audience/analyzing_source_data.rst:116
-msgid "``download_dataset``"
-msgstr "``download_dataset``"
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:118
-msgid "explore/dataset/<dataset_id>/download/"
-msgstr "explore/dataset/<dataset_id>/download/"
-
 #: ../../source/monitoring_audience/analyzing_source_data.rst:137
 msgid "``download_dataset_records``"
 msgstr "``download_dataset_records``"
@@ -411,26 +455,6 @@ msgstr ""
 msgid "api/datasets/1.0/<dataset_id>/records/download/"
 msgstr "api/datasets/1.0/<dataset_id>/records/download/"
 
-#: ../../source/monitoring_audience/analyzing_source_data.rst:122
-msgid "``download_dataset_attachment``"
-msgstr "``download_dataset_attachment``"
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:124
-msgid "api/datasets/1.0/<dataset_id>/attachments/<attachment_id>/"
-msgstr "api/datasets/1.0/<dataset_id>/attachments/<attachment_id>/"
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:143
-msgid "``get_bbox_clusters``"
-msgstr "``get_bbox_clusters``"
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:144
-msgid "Bounding box query."
-msgstr "Query del riquadro delimitatore"
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:145
-msgid "api/datasets/1.0/<dataset_id>/records/boundingbox/"
-msgstr "api/datasets/1.0/<dataset_id>/records/boundingbox/"
-
 #: ../../source/monitoring_audience/analyzing_source_data.rst:140
 msgid "``analyze_records``"
 msgstr "``analyze_records``"
@@ -443,6 +467,18 @@ msgstr ""
 #: ../../source/monitoring_audience/analyzing_source_data.rst:142
 msgid "api/datasets/1.0/<dataset_id>/records/analyze/"
 msgstr "api/datasets/1.0/<dataset_id>/records/analyze/"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:143
+msgid "``get_bbox_clusters``"
+msgstr "``get_bbox_clusters``"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:144
+msgid "Bounding box query."
+msgstr "Query del riquadro delimitatore"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:145
+msgid "api/datasets/1.0/<dataset_id>/records/boundingbox/"
+msgstr "api/datasets/1.0/<dataset_id>/records/boundingbox/"
 
 #: ../../source/monitoring_audience/analyzing_source_data.rst:146
 msgid "``get_geo_clusters``"
@@ -472,6 +508,18 @@ msgstr ""
 msgid "api/datasets/1.0/<dataset_id>/records/geopolygon/"
 msgstr "api/datasets/1.0/<dataset_id>/records/geopolygon/"
 
+#: ../../source/monitoring_audience/analyzing_source_data.rst:152
+msgid "``get_geoshapes_preview``"
+msgstr "``get_geoshapes_preview``"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:153
+msgid "Preview a geoshape"
+msgstr "Anteprima di una forma geografica"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:154
+msgid "api/datasets/1.0/<dataset_id>/records/geopreview/"
+msgstr "api/datasets/1.0/<dataset_id>/records/geopreview/"
+
 #: ../../source/monitoring_audience/analyzing_source_data.rst:155
 msgid "``download_image``"
 msgstr "``download_image``"
@@ -483,6 +531,66 @@ msgstr "Download dell'immagine. Chiamata dalla scheda Immagine in Esplora"
 #: ../../source/monitoring_audience/analyzing_source_data.rst:157
 msgid "explore/dataset/<dataset_id>/images/<image_id>/download/"
 msgstr "explore/dataset/<dataset_id>/images/<image_id>/download/"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:158
+msgid "``images``"
+msgstr "``images``"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:159
+msgid "Access images through the API"
+msgstr "Accesso alle immagini tramite l'API"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:160
+msgid ""
+"api/datasets/1.0/<dataset_id>/images/<image_id>/, "
+"api/datasets/1.0/<dataset_id>/images/<image_id>/<thumbnail_size>"
+msgstr ""
+"api/datasets/1.0/<dataset_id>/images/<image_id>/, "
+"api/datasets/1.0/<dataset_id>/images/<image_id>/<thumbnail_size>"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:161
+msgid "``files``"
+msgstr "``files``"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:162
+msgid "Access files through the API"
+msgstr "Accesso ai file tramite l'API"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:163
+msgid ""
+"api/datasets/1.0/<dataset_id>/files/<file_id>/, "
+"api/datasets/1.0/<dataset_id>/files/<file_id>/<thumbnail_size>"
+msgstr ""
+"api/datasets/1.0/<dataset_id>/files/<file_id>/, "
+"api/datasets/1.0/<dataset_id>/files/<file_id>/<thumbnail_size>"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:164
+msgid "``list_dataset_entry_points``"
+msgstr "``list_dataset_entry_points``"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:165
+msgid "List available entry points for an API Proxy"
+msgstr "Elenco dei punti di ingresso disponibili per il proxy dell'API"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:166
+msgid "api/datasets/1.0/<dataset_id>/services/"
+msgstr "api/datasets/1.0/<dataset_id>/services/"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:167
+msgid "``metadata_templates``"
+msgstr "``metadata_templates``"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:168
+msgid "List metadata templates via the API"
+msgstr "Elenco dei modelli di metadati tramite l'API"
+
+#: ../../source/monitoring_audience/analyzing_source_data.rst:169
+msgid ""
+"api/metadata/1.0/<template_type>/, "
+"api/metadata/1.0/<template_type>/<template_name>/"
+msgstr ""
+"api/metadata/1.0/<template_type>/, "
+"api/metadata/1.0/<template_type>/<template_name>/"
 
 #: ../../source/monitoring_audience/analyzing_source_data.rst:172
 msgid "API names for ODATA API"
@@ -824,115 +932,3 @@ msgstr "``explore-images``"
 #: ../../source/monitoring_audience/analyzing_source_data.rst:277
 msgid "Images tab embed"
 msgstr "Embed della scheda Immagini"
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:117
-msgid "Download dataset records from the export tab"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:119
-msgid "``download_dataset_alternative_export``"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:120
-msgid "Download dataset in an alternative export format"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:121
-msgid "api/datasets/1.0/<dataset_id>/alternative_exports/<export_id>/"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:123
-msgid "Download dataset attachment from the information tab"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:126
-#, fuzzy
-msgid "List dataset snapshots"
-msgstr "Query per elencare gli snapshot dei dataset"
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:128
-msgid "``dataset_download_snapshot``"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:129
-msgid "Download a dataset snapshot"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:130
-msgid "api/datasets/1.0/<dataset_id>/snapshots/<snapshot_id>/"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:152
-msgid "``get_geoshapes_preview``"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:153
-msgid "Preview a geoshape"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:154
-msgid "api/datasets/1.0/<dataset_id>/records/geopreview/"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:158
-msgid "``images``"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:159
-msgid "Access images through the API"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:160
-msgid ""
-"api/datasets/1.0/<dataset_id>/images/<image_id>/, "
-"api/datasets/1.0/<dataset_id>/images/<image_id>/<thumbnail_size>"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:161
-msgid "``files``"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:162
-msgid "Access files through the API"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:163
-msgid ""
-"api/datasets/1.0/<dataset_id>/files/<file_id>/, "
-"api/datasets/1.0/<dataset_id>/files/<file_id>/<thumbnail_size>"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:164
-msgid "``list_dataset_entry_points``"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:165
-msgid "List available entry points for an API Proxy"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:166
-msgid "api/datasets/1.0/<dataset_id>/services/"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:167
-msgid "``metadata_templates``"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:168
-msgid "List metadata templates via the API"
-msgstr ""
-
-#: ../../source/monitoring_audience/analyzing_source_data.rst:169
-msgid ""
-"api/metadata/1.0/<template_type>/, "
-"api/metadata/1.0/<template_type>/<template_name>/"
-msgstr ""
-
-#~ msgid "List dataset snapshots query"
-#~ msgstr "Query per elencare gli snapshot dei dataset"
-
-#~ msgid "Download dataset records from explore tab in explore"
-#~ msgstr "Download dei record di un dataset dalla scheda Esplora"
-
-#~ msgid "Download dataset attachment"
-#~ msgstr "Download degli attachment dei dataset"
