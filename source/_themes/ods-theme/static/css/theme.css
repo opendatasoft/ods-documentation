@@ -4806,8 +4806,8 @@ code.code-large, .rst-content tt.code-large {
   padding: 0.4045em 2.427em;
 }
 .wy-menu-vertical li.current a:hover {
-  background: #126E92;
-  color: white;
+  background: #126E92 !important;
+  color: white !important;
 }
 .wy-menu-vertical li code, .wy-menu-vertical li .rst-content tt, .rst-content .wy-menu-vertical li tt {
   border: none;
@@ -4863,6 +4863,7 @@ code.code-large, .rst-content tt.code-large {
 }
 .wy-menu-vertical li.toctree-l2.current li.toctree-l3 > a {
   display: block;
+  color: #7B7B7B;
   background: #CFE6EC;
   padding: 0.4045em 4.045em;
 }
@@ -4881,14 +4882,17 @@ code.code-large, .rst-content tt.code-large {
   padding: 0.4045em 4.045em;
   border-bottom: solid 1px #c9c9c9;
   border-top: solid 1px #c9c9c9;
+  color: white !important;
 }
 .wy-menu-vertical li.toctree-l3.current li.toctree-l4 > a {
   display: block;
+  color: #7B7B7B;
   background: #CFE6EC;
   padding: 0.4045em 5.663em;
 }
 .wy-menu-vertical li.toctree-l3 a:hover span.toctree-expand {
   color: white;
+  background: #126E92;
 }
 .wy-menu-vertical li.toctree-l3 span.toctree-expand {
   color: #7B7B7B;
@@ -4896,8 +4900,19 @@ code.code-large, .rst-content tt.code-large {
 .wy-menu-vertical li.toctree-l4 {
   font-size: 0.9em;
 }
-.wy-menu-vertical li.toctree-l4 a:hover {
+.wy-menu-vertical li.toctree-l4.current > a {
+  background: #126E92 !important;
+  padding: 0.4045em 4.045em;
+  border-bottom: solid 1px #c9c9c9;
+  border-top: solid 1px #c9c9c9;
+  color: white !important;
+}
+.wy-menu-vertical li.toctree-l4.current a:hover span.toctree-expand {
+  color: white;
   background: #126E92;
+}
+.wy-menu-vertical li.toctree-l4.current span.toctree-expand {
+  color: white;
 }
 .wy-menu-vertical li.current ul {
   display: block;
@@ -4944,23 +4959,23 @@ code.code-large, .rst-content tt.code-large {
   display: block;
   width: 300px;
   padding: 0.809em;
-  margin-bottom: 0.809em;
   z-index: 200;
-  background-color: #2980B9;
+  background-color: white;
   text-align: center;
   padding: 0.809em;
   display: block;
-  color: #fcfcfc;
-  margin-bottom: 0.809em;
+  color: #7B7B7B;
+  margin-bottom: 0;
+  margin-top: 5px;
 }
 .wy-side-nav-search input[type=text] {
   width: 100%;
   border-radius: 50px;
   padding: 6px 12px;
-  border-color: #2472a4;
+  border-color: rgba(160, 172, 185, 0.4);
 }
 .wy-side-nav-search img {
-  display: block;
+  display: none;
   margin: auto auto 0.809em auto;
   height: 45px;
   width: 45px;
@@ -4972,7 +4987,7 @@ code.code-large, .rst-content tt.code-large {
   color: #fcfcfc;
   font-size: 100%;
   font-weight: bold;
-  display: inline-block;
+  display: none;
   padding: 4px 6px;
   margin-bottom: 0.809em;
 }
@@ -4996,6 +5011,7 @@ code.code-large, .rst-content tt.code-large {
   margin-bottom: 0.809em;
   font-weight: normal;
   color: rgba(255, 255, 255, 0.3);
+  display: none;
 }
 
 .wy-nav .wy-menu-vertical header {
@@ -5042,12 +5058,12 @@ code.code-large, .rst-content tt.code-large {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 80px;
+  top: 100px;
 }
 
 .wy-nav-side {
   position: fixed;
-  top: 80px;
+  top: 100px;
   bottom: 0;
   left: 0;
   padding-bottom: 2em;
@@ -5108,6 +5124,8 @@ code.code-large, .rst-content tt.code-large {
   margin-left: 300px;
   background: #fcfcfc;
   min-height: 100%;
+  left: 0;
+  border-left: 1px solid rgba(160, 172, 185, 0.4);
 }
 
 .wy-nav-content {
@@ -5199,6 +5217,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   }
 
   .wy-nav-side {
+    transition: 0.5s;
     left: -300px;
   }
   .wy-nav-side.shift {
@@ -5220,6 +5239,8 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 
   .wy-nav-content-wrap {
     margin-left: 0;
+    transition: 0.5s;
+    left: 0;
   }
   .wy-nav-content-wrap .wy-nav-content {
     padding: 1.618em;
@@ -5242,6 +5263,11 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
     margin: 0;
     background: #fcfcfc;
   }
+
+  .wy-side-nav-search {
+    margin-bottom: 0.809em;
+    margin-top: 10px;
+  }
 }
 @media print {
   .rst-versions, footer, .wy-nav-side {
@@ -5257,14 +5283,14 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   bottom: 0;
   left: 0;
   width: 300px;
-  color: #fcfcfc;
-  background: #1f1d1d;
-  border-top: solid 10px #343131;
+  color: white;
+  background: #126E92;
+  border-top: 1px solid #fff;
   font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
   z-index: 400;
 }
 .rst-versions a {
-  color: #2980B9;
+  color: white;
   text-decoration: none;
 }
 .rst-versions .rst-badge-small {
@@ -5272,12 +5298,12 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 }
 .rst-versions .rst-current-version {
   padding: 12px;
-  background-color: #272525;
+  background-color: #126E92;
   display: block;
   text-align: right;
   font-size: 90%;
   cursor: pointer;
-  color: #5DD285;
+  color: white;
   *zoom: 1;
 }
 .rst-versions .rst-current-version:before, .rst-versions .rst-current-version:after {
@@ -5288,7 +5314,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   clear: both;
 }
 .rst-versions .rst-current-version .fa, .rst-versions .rst-current-version .wy-menu-vertical li span.toctree-expand, .wy-menu-vertical li .rst-versions .rst-current-version span.toctree-expand, .rst-versions .rst-current-version .rst-content .admonition-title, .rst-content .rst-versions .rst-current-version .admonition-title, .rst-versions .rst-current-version .rst-content h1 .headerlink, .rst-content h1 .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content h2 .headerlink, .rst-content h2 .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content h3 .headerlink, .rst-content h3 .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content h4 .headerlink, .rst-content h4 .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content h5 .headerlink, .rst-content h5 .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content h6 .headerlink, .rst-content h6 .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content dl dt .headerlink, .rst-content dl dt .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content p.caption .headerlink, .rst-content p.caption .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content table > caption .headerlink, .rst-content table > caption .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content tt.download span:first-child, .rst-content tt.download .rst-versions .rst-current-version span:first-child, .rst-versions .rst-current-version .rst-content code.download span:first-child, .rst-content code.download .rst-versions .rst-current-version span:first-child, .rst-versions .rst-current-version .icon {
-  color: #fcfcfc;
+  color: white;
 }
 .rst-versions .rst-current-version .fa-book, .rst-versions .rst-current-version .icon-book {
   float: left;
@@ -5298,11 +5324,11 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 }
 .rst-versions .rst-current-version.rst-out-of-date {
   background-color: #E74C3C;
-  color: #fff;
+  color: white;
 }
 .rst-versions .rst-current-version.rst-active-old-version {
   background-color: #F1C40F;
-  color: #000;
+  color: white;
 }
 .rst-versions.shift-up .rst-other-versions {
   display: block;
@@ -5310,7 +5336,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 .rst-versions .rst-other-versions {
   font-size: 90%;
   padding: 12px;
-  color: gray;
+  color: white;
   display: none;
 }
 .rst-versions .rst-other-versions hr {
@@ -5319,7 +5345,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   border: 0;
   margin: 20px 0;
   padding: 0;
-  border-top: solid 1px #413d3d;
+  border-top: solid 1px white;
 }
 .rst-versions .rst-other-versions dd {
   display: inline-block;
@@ -5366,6 +5392,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   .rst-versions {
     width: 85%;
     display: none;
+    transition: 0.5s;
   }
   .rst-versions.shift {
     display: block;
@@ -5781,6 +5808,148 @@ span[id*='MathJax-Span'] {
   font-style: normal;
   font-weight: 700;
   src: local("Roboto Slab Bold"), local("RobotoSlab-Bold"), url(../fonts/RobotoSlab-Bold.ttf) format("truetype");
+}
+.ods__documentation-header {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: #126E92;
+}
+
+.ods__documentation-header-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 99px;
+  width: 100%;
+}
+.ods__documentation-header-logo button {
+  border: none;
+  margin: auto 0;
+  background-color: white;
+  color: #126E92;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.ods__documentation-header-logo button.open {
+  background-color: #166482;
+  color: white;
+}
+.ods__documentation-header-logo button.ods__documentation-help-hub-btn-active {
+  background-color: #166482;
+  color: white;
+}
+.ods__documentation-header-logo button:focus {
+  outline: none;
+}
+.ods__documentation-header-logo a {
+  padding-top: 12px;
+}
+.ods__documentation-header-logo a img {
+  height: 70px;
+  margin: auto 0;
+}
+
+.ods__documentation-header-nav {
+  display: none;
+}
+
+.ods__documentation-help-hub-sidebar {
+  position: fixed;
+  top: 100px;
+  right: -250px;
+  height: 100%;
+  width: 250px;
+  padding-top: 40px;
+  background-color: #126E92;
+  border-top: 1px solid rgba(123, 123, 123, 0.4);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.ods__documentation-help-hub-sidebar-item {
+  text-align: center;
+  margin: 30px 0;
+}
+.ods__documentation-help-hub-sidebar-item a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.ods__documentation-help-hub-sidebar-active {
+  right: 0;
+}
+
+.ods__documentation-header-nav-item-active > a {
+  border-bottom: 2px solid white;
+}
+
+@media (min-width: 930px) {
+  .ods__documentation-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .ods__documentation-header-logo {
+    height: 99px;
+    width: auto;
+    padding-left: 10px;
+  }
+  .ods__documentation-header-logo img {
+    height: 80px;
+  }
+  .ods__documentation-header-logo button {
+    display: none;
+  }
+
+  .ods__documentation-help-hub-sidebar {
+    display: none;
+  }
+
+  .ods__documentation-header-nav {
+    display: flex;
+    margin-left: 30px;
+  }
+
+  .ods__documentation-header-nav-item {
+    margin: auto 20px;
+  }
+
+  .ods__documentation-header-nav-item:first-child {
+    margin-left: 0px;
+  }
+
+  .ods__documentation-header-nav-item:last-child {
+    margin-right: 0px;
+  }
+
+  .ods__documentation-header-nav-item > a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+  }
+
+  .ods__documentation-header-nav-item > a:hover {
+    border-bottom: 2px solid white;
+  }
+
+  .ods__documentation-header-nav-item-active > a {
+    border-bottom: 2px solid white;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */

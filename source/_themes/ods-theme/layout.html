@@ -86,6 +86,8 @@
     
     {% block extrabody %} {% endblock %}
 
+    {% include "header.html" %}
+
     <div class="wy-grid-for-nav">
     
         {# SIDE NAV, TOGGLES ON MOBILE #}
@@ -93,6 +95,7 @@
             <div class="wy-side-scroll">
                 <div class="wy-side-nav-search">
                     {% block sidebartitle %}
+
                         {% if logo and theme_logo_only %}
                             <a href="{{ pathto(master_doc) }}">
                         {% else %}
@@ -104,19 +107,7 @@
                         {% endif %}
                         </a>
     
-                        {% if theme_display_version %} 
-                            {%- set nav_version = version %} 
-                            {% if READTHEDOCS and current_version %} 
-                                {%- set nav_version = current_version %} 
-                            {% endif %} 
-                            {% if nav_version %}
-                                <div class="version">
-                                    {{ nav_version }}
-                                </div>
-                            {% endif %} 
-                        {% endif %} 
-
-                        {% include "searchbox.html" %}
+                        {% include "searchbox.html" %}  
                         
                     {% endblock %}
                 </div>
@@ -142,16 +133,7 @@
             </div>
         </nav>
     
-        <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-    
-            {# MOBILE NAV, TRIGGLES SIDE NAV ON TOGGLE #}
-            <nav class="wy-nav-top" aria-label="top navigation">
-                {% block mobile_nav %}
-                    <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-                    <a href="{{ pathto(master_doc) }}">{{ project }}</a>
-                {% endblock %}
-            </nav>
-    
+        <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">    
     
             {# PAGE CONTENT #}
             <div class="wy-nav-content">

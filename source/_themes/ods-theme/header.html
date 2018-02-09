@@ -1,0 +1,56 @@
+{% block header %}
+    <div class="ods__documentation-header">
+
+        <div class="ods__documentation-header-logo">
+            <button type="button" id="nav-button" data-toggle="wy-nav-top"> Menu </button>
+            <a href="{{ pathto(master_doc) }}">
+                <img src="{{ pathto('_static/' + logo, 1) }}" alt="ods-documentation-logo">
+            </a>
+            <button type="button" id="help-hub-button"> Help Hub </button>
+        </div>
+
+        <div class="ods__documentation-header-nav">
+            <div class="ods__documentation-header-nav-item ods__documentation-header-nav-item-active">
+                <a href="{{ pathto(master_doc) }}">Plateform</a>
+            </div>
+            <div class="ods__documentation-header-nav-item">
+                <a href="">Discovery</a>
+            </div>
+            <div class="ods__documentation-header-nav-item">
+                <a href="">FAQ</a>
+            </div>
+            <div class="ods__documentation-header-nav-item">
+                <a href="">Widget</a>
+            </div>
+            <div class="ods__documentation-header-nav-item">
+                <a href="">Tutorial</a>
+            </div>
+            <div class="ods__documentation-header-nav-item">
+                <a href="">API</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ods__documentation-help-hub-sidebar">
+        <div class="ods__documentation-help-hub-sidebar-item ods__documentation-header-nav-item-active">
+            <a href="{{ pathto(master_doc) }}">Plateform</a>
+        </div>
+        <div class="ods__documentation-help-hub-sidebar-item">
+            <a href="">Discovery</a>
+        </div>
+        <div class="ods__documentation-help-hub-sidebar-item">
+            <a href="">FAQ</a>
+        </div>
+        <div class="ods__documentation-help-hub-sidebar-item">
+            <a href="">Widget</a>
+        </div>
+        <div class="ods__documentation-help-hub-sidebar-item">
+            <a href="">Tutorial</a>
+        </div>
+        <div class="ods__documentation-help-hub-sidebar-item">
+            <a href="">API</a>
+        </div>
+    </div>
+
+{% endblock %}

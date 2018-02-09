@@ -52,8 +52,8 @@
         border-right: solid 1px darken($menu-vertical-background-color, 20%)
         padding: $gutter / 4 $gutter * 1.5
         &:hover
-          background: $blue-light
-          color: white
+          background: $blue-light!important
+          color: white!important
     code
       border: none
       background: inherit
@@ -112,6 +112,7 @@
         border-top: solid 1px #c9c9c9
       li.toctree-l3 > a
         display: block
+        color: $grey-dark
         background: $blue-ultra-light
         padding: $gutter / 4 $gutter * 2.5
     a:hover span.toctree-expand
@@ -127,18 +128,31 @@
         padding: $gutter / 4 $gutter * 2.5
         border-bottom: solid 1px #c9c9c9
         border-top: solid 1px #c9c9c9
+        color: white!important
       li.toctree-l4 > a
         display: block
+        color: $grey-dark
         background: $blue-ultra-light
         padding: $gutter / 4 $gutter * 3.5
     a:hover span.toctree-expand
       color: white
+      background: $blue-light
     span.toctree-expand
       color: $grey-dark
   li.toctree-l4
     font-size: .9em
-    a:hover
-      background: $blue-light
+    &.current
+      > a
+        background: $blue-light!important
+        padding: $gutter / 4 $gutter * 2.5
+        border-bottom: solid 1px #c9c9c9
+        border-top: solid 1px #c9c9c9
+        color: white!important
+      a:hover span.toctree-expand
+        color: white
+        background: $blue-light
+      span.toctree-expand
+        color: white 
 
   li.current ul
     display: block
@@ -177,21 +191,21 @@
   display: block
   width: $nav-desktop-width
   padding: $gutter / 2
-  margin-bottom: $gutter / 2
   z-index: $z-index-popover
-  background-color: $nav-search-background-color
+  background-color: white
   text-align: center
   padding: $gutter / 2
   display: block
-  color: $nav-search-color
-  margin-bottom: $gutter / 2
+  color: $grey-dark
+  margin-bottom: 0
+  margin-top: 5px
   input[type=text]
     width: 100%
     border-radius: 50px
     padding: 6px 12px
-    border-color: darken($link-color, 5%)
+    border-color: transparentize($grey-medium, 0.6)
   img
-    display: block
+    display: none
     margin: auto auto $gutter / 2 auto
     height: 45px
     width: 45px
@@ -202,7 +216,7 @@
     color: $nav-search-color
     font-size: 100%
     font-weight: bold
-    display: inline-block
+    display: none
     padding: $base-line-height / 6 $base-line-height / 4
     margin-bottom: $gutter / 2
     +font-smooth
@@ -224,6 +238,7 @@
     margin-bottom: $gutter / 2
     font-weight: normal
     color: rgba(255,255,255,.3)
+    display: none
 
 
 .wy-nav .wy-menu-vertical
@@ -262,11 +277,11 @@
   position: absolute
   width: 100%
   height: 100%
-  top: 80px
+  top: 100px
 
 .wy-nav-side
   position: fixed
-  top: 80px
+  top: 100px
   bottom: 0
   left: 0
   padding-bottom: 2em
@@ -315,6 +330,8 @@
   margin-left: $nav-desktop-width
   background: $section-background-color
   min-height: 100%
+  left: 0
+  border-left: 1px solid transparentize($grey-medium, 0.6)
 
 .wy-nav-content
   padding: $gutter $gutter * 2
@@ -368,13 +385,13 @@ footer
     color: $text-medium
     font-size: 90%
 
-
 +media($tablet)
   .wy-body-for-nav
     background: $section-background-color
   .wy-nav-top
     display: block
   .wy-nav-side
+    transition: 0.5s
     @if $nav-desktop-position == left
       left: -$nav-desktop-width
     @else
@@ -390,6 +407,8 @@ footer
     width: auto
   .wy-nav-content-wrap
     margin-left: 0
+    transition: 0.5s
+    left: 0
     .wy-nav-content
       padding: $gutter
     &.shift
@@ -406,6 +425,9 @@ footer
   .wy-nav-content
     margin: 0
     background: $section-background-color
+  .wy-side-nav-search
+    margin-bottom: $gutter / 2
+    margin-top: 10px
 
 @media print
   .rst-versions, footer, .wy-nav-side

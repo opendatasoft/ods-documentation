@@ -1,5 +1,14 @@
 var jQuery = (typeof (window) != 'undefined') ? window.jQuery : require('jquery');
 
+function setMenu() {
+    $("[data-toggle='wy-nav-shift']").toggleClass("shift");
+    $("[data-toggle='rst-versions']").toggleClass("shift");
+}
+
+function setHub() {
+    $('.ods__documentation-help-hub-sidebar').toggleClass('ods__documentation-help-hub-sidebar-active');
+}
+
 // Sphinx theme nav state
 function ThemeNav() {
 
@@ -70,8 +79,12 @@ function ThemeNav() {
         $(document)
             // Shift nav in mobile when clicking the menu.
             .on('click', "[data-toggle='wy-nav-top']", function () {
-                $("[data-toggle='wy-nav-shift']").toggleClass("shift");
-                $("[data-toggle='rst-versions']").toggleClass("shift");
+                if ($(".ods__documentation-help-hub-sidebar").hasClass("ods__documentation-help-hub-sidebar-active")) {
+                    setHub();
+                    setMenu();
+                } else {
+                    setMenu();
+                }
             })
 
             // Nav menu link click operations
@@ -159,7 +172,7 @@ function ThemeNav() {
         if (newWinPosition < 0 || winBottom > this.docHeight) {
             return;
         }
-        this.navBar.scrollTop(newNavPosition);
+        this.navBar.scrollTop(newNavPosition + 200);
         this.winPosition = newWinPosition;
     };
 
@@ -193,6 +206,31 @@ if (typeof (window) != 'undefined') {
     window.OdsTheme = { Navigation: module.exports.ThemeNav };
 }
 
+// ODS Theme Header
+$('#help-hub-button').click(function() {
+    if ($("[data-toggle='wy-nav-shift']").hasClass("shift")) {
+        setMenu();
+        setHub();
+    } else {
+        setHub();
+    }
+});
+
+// scroll content below ods_header 
+$('.internal').on('click', function (event) {
+    // if ($(window).width() >= 930) {
+        var target = $(this)[0].attributes.href.nodeValue;
+        if (target.indexOf('#') !== -1) {
+            event.preventDefault();
+            res_target = $('#' + target.split('#')[1]).offset().top;
+            setTimeout(function() {
+                $('html').animate({ scrollTop: res_target - 109 }, 0);
+            }, 0);
+        } else {
+            return null;
+        }
+    // } else return null;
+});
 
 // requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
 // https://gist.github.com/paulirish/1579671
