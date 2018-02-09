@@ -47,7 +47,7 @@ Example of a conditional expression: the idea is to create a new column (e.g for
     :alt: Expression Processor conditional expression
     :align: center
 
-    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression if true : value if false``. Please note that ``value if false`` is optional, so you can write ``=expression ? value if the expression if true``.
+    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression is true : value if false``. Please note that ``value if false`` is optional, so you can write ``=expression ? value if the expression is true``.
 
 .. ifconfig:: language == 'fr'
 
@@ -55,7 +55,7 @@ Example of a conditional expression: the idea is to create a new column (e.g for
     :alt: Expression Processor conditional expression
     :align: center
 
-    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression if true : value if false``. Please note that ``value if false`` is optional, so you can write ``=expression ? value if the expression if true``.
+    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression is true : value if false``. Please note that ``value if false`` is optional, so you can write ``=expression ? value if the expression is true``.
 
 
 Setting the processor
