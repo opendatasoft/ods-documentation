@@ -240,7 +240,6 @@
     color: rgba(255,255,255,.3)
     display: none
 
-
 .wy-nav .wy-menu-vertical
   header
     color: $link-color
@@ -268,7 +267,6 @@
     right: -100%
     left: auto
     opacity: 0
-
 
 .wy-body-for-nav
   background: $section-background-color
@@ -406,17 +404,16 @@ footer
   .wy-menu.wy-menu-vertical
     width: auto
   .wy-nav-content-wrap
-    margin-left: 0
     transition: 0.5s
-    left: 0
+    // left: 0
+    // top: 0
+    margin-left: 0
+    width: 100%
     .wy-nav-content
       padding: $gutter
     &.shift
-      position: fixed
-      min-width: 100%
-      left: 85%
-      top: 0
-      height: 100%
+      // position: fixed
+      // height: 100%
       overflow: hidden
 
 @media screen and (min-width: $nav-media-query)

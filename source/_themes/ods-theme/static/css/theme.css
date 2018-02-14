@@ -4820,7 +4820,7 @@ code.code-large, .rst-content tt.code-large {
   display: block;
   float: left;
   margin-left: -1.2em;
-  font-size: 0.8em;
+  font-size: .8em;
   line-height: 1.6em;
   color: #4d4d4d;
 }
@@ -4841,7 +4841,7 @@ code.code-large, .rst-content tt.code-large {
 }
 .wy-menu-vertical li.on a span.toctree-expand, .wy-menu-vertical li.current > a span.toctree-expand {
   display: block;
-  font-size: 0.8em;
+  font-size: .8em;
   line-height: 1.6em;
   color: white;
 }
@@ -4875,7 +4875,7 @@ code.code-large, .rst-content tt.code-large {
   color: #7B7B7B;
 }
 .wy-menu-vertical li.toctree-l3 {
-  font-size: 0.9em;
+  font-size: .9em;
 }
 .wy-menu-vertical li.toctree-l3.current > a {
   background: #126E92 !important;
@@ -4898,7 +4898,7 @@ code.code-large, .rst-content tt.code-large {
   color: #7B7B7B;
 }
 .wy-menu-vertical li.toctree-l4 {
-  font-size: 0.9em;
+  font-size: .9em;
 }
 .wy-menu-vertical li.toctree-l4.current > a {
   background: #126E92 !important;
@@ -5004,7 +5004,7 @@ code.code-large, .rst-content tt.code-large {
   background: rgba(0, 0, 0, 0);
 }
 .wy-side-nav-search > a.icon img.logo, .wy-side-nav-search .wy-dropdown > a.icon img.logo {
-  margin-top: 0.85em;
+  margin-top: .85em;
 }
 .wy-side-nav-search > div.version {
   margin-top: -0.4045em;
@@ -5026,9 +5026,9 @@ code.code-large, .rst-content tt.code-large {
 }
 
 [data-menu-wrap] {
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  transition: all .2s ease-in;
   position: absolute;
   opacity: 1;
   width: 100%;
@@ -5217,7 +5217,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   }
 
   .wy-nav-side {
-    transition: 0.5s;
+    transition: .5s;
     left: -300px;
   }
   .wy-nav-side.shift {
@@ -5238,19 +5238,14 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   }
 
   .wy-nav-content-wrap {
+    transition: .5s;
     margin-left: 0;
-    transition: 0.5s;
-    left: 0;
+    width: 100%;
   }
   .wy-nav-content-wrap .wy-nav-content {
     padding: 1.618em;
   }
   .wy-nav-content-wrap.shift {
-    position: fixed;
-    min-width: 100%;
-    left: 85%;
-    top: 0;
-    height: 100%;
     overflow: hidden;
   }
 }
@@ -5391,11 +5386,11 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 @media screen and (max-width: 768px) {
   .rst-versions {
     width: 85%;
-    display: none;
     transition: 0.5s;
+    margin-left: -85%;
   }
   .rst-versions.shift {
-    display: block;
+    margin-left: 0;
   }
 }
 .rst-content img {
@@ -5840,7 +5835,7 @@ span[id*='MathJax-Span'] {
   background-color: #166482;
   color: white;
 }
-.ods__documentation-header-logo button.ods__documentation-help-hub-btn-active {
+.ods__documentation-header-logo button.ods__documentation-header-btn-active {
   background-color: #166482;
   color: white;
 }

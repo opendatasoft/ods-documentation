@@ -4,10 +4,15 @@ var jQuery = (typeof (window) != 'undefined') ? window.jQuery : require('jquery'
 function setMenu() {
     $("[data-toggle='wy-nav-shift']").toggleClass("shift");
     $("[data-toggle='rst-versions']").toggleClass("shift");
+    $("#nav-button")
+        .toggleClass("ods__documentation-header-btn-active");
 }
 
 function setHub() {
-    $('.ods__documentation-help-hub-sidebar').toggleClass('ods__documentation-help-hub-sidebar-active');
+    $('.ods__documentation-help-hub-sidebar')
+        .toggleClass('ods__documentation-help-hub-sidebar-active');
+    $("#help-hub-button")
+        .toggleClass("ods__documentation-header-btn-active");
 }
 
 // Sphinx theme nav state
@@ -46,7 +51,9 @@ function ThemeNav() {
                     if (!self.linkScroll) {
                         if (!self.winScroll) {
                             self.winScroll = true;
-                            requestAnimationFrame(function () { self.onScroll(); });
+                            requestAnimationFrame(function () { 
+                                self.onScroll(); 
+                            });
                         }
                     }
                 });
@@ -80,7 +87,8 @@ function ThemeNav() {
         $(document)
             // Shift nav in mobile when clicking the menu.
             .on('click', "[data-toggle='wy-nav-top']", function () {
-                if ($(".ods__documentation-help-hub-sidebar").hasClass("ods__documentation-help-hub-sidebar-active")) {
+                if ($(".ods__documentation-help-hub-sidebar")
+                    .hasClass("ods__documentation-help-hub-sidebar-active")) {
                     setHub();
                     setMenu();
                 } else {
@@ -92,8 +100,7 @@ function ThemeNav() {
             .on('click', ".wy-menu-vertical .current ul li a", function () {
                 var target = $(this);
                 // Close menu when you click a link.
-                $("[data-toggle='wy-nav-shift']").removeClass("shift");
-                $("[data-toggle='rst-versions']").toggleClass("shift");
+                setMenu();
                 // Handle dynamic display of l3 and l4 nav lists
                 self.toggleCurrent(target);
                 self.hashChange();
@@ -219,18 +226,16 @@ $('#help-hub-button').click(function() {
 
 // scroll content below ods_header 
 $('.internal').on('click', function (event) {
-    // if ($(window).width() >= 930) {
-        var target = $(this)[0].attributes.href.nodeValue;
-        if (target.indexOf('#') !== -1) {
-            event.preventDefault();
-            res_target = $('#' + target.split('#')[1]).offset().top;
-            setTimeout(function() {
-                $('html').animate({ scrollTop: res_target - 109 }, 0);
-            }, 0);
-        } else {
-            return null;
-        }
-    // } else return null;
+    var target = $(this)[0].attributes.href.nodeValue;
+    if (target.indexOf('#') !== -1) {
+        event.preventDefault();
+        res_target = $('#' + target.split('#')[1]).offset().top;
+        setTimeout(function() {
+            $('html').animate({ scrollTop: res_target - 110 }, 0);
+        }, 0);
+    } else {
+        return null;
+    }
 });
 
 // requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
