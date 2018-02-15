@@ -46,7 +46,6 @@
     &.divide-bottom
       border-bottom: solid 1px hsl(0, 0%, 25%)
     &.current
-      background: $blue-ultra-light
       a
         color: $grey-dark
         border-right: solid 1px darken($menu-vertical-background-color, 20%)
@@ -73,11 +72,9 @@
 
   // On state for the first level
   li.on a, li.current > a
-    color: white
     padding: $gutter / 4 $gutter
     font-weight: bold
     position: relative
-    background: $blue-light
     border: none
     padding-left: $gutter -4px
     +font-smooth
@@ -91,11 +88,11 @@
       display: block
       font-size: .8em
       line-height: 1.6em
-      color: white
+      color: $grey-dark
 
-  li.toctree-l1.current > a
-    border-bottom: solid 1px darken($menu-vertical-background-color, 20%)
-    border-top: solid 1px darken($menu-vertical-background-color, 20%)
+  // li.toctree-l1.current > a
+  //   // border-bottom: solid 1px darken($menu-vertical-background-color, 20%)
+  //   // border-top: solid 1px darken($menu-vertical-background-color, 20%)
 
   // This is the on state for pages beyond second level
   li.toctree-l1.current li.toctree-l2, li.toctree-l2.current li.toctree-l3
@@ -106,14 +103,10 @@
   li.toctree-l2
     &.current
       > a
-        background: $blue-light
         padding: $gutter / 4 $gutter * 1.5
-        border-bottom: solid 1px #c9c9c9
-        border-top: solid 1px #c9c9c9
       li.toctree-l3 > a
         display: block
         color: $grey-dark
-        background: $blue-ultra-light
         padding: $gutter / 4 $gutter * 2.5
     a:hover span.toctree-expand
       color: white
@@ -124,15 +117,10 @@
     font-size: .9em
     &.current
       > a
-        background: $blue-light!important
         padding: $gutter / 4 $gutter * 2.5
-        border-bottom: solid 1px #c9c9c9
-        border-top: solid 1px #c9c9c9
-        color: white!important
       li.toctree-l4 > a
         display: block
         color: $grey-dark
-        background: $blue-ultra-light
         padding: $gutter / 4 $gutter * 3.5
     a:hover span.toctree-expand
       color: white
@@ -143,16 +131,12 @@
     font-size: .9em
     &.current
       > a
-        background: $blue-light!important
         padding: $gutter / 4 $gutter * 2.5
-        border-bottom: solid 1px #c9c9c9
-        border-top: solid 1px #c9c9c9
-        color: white!important
       a:hover span.toctree-expand
         color: white
         background: $blue-light
       span.toctree-expand
-        color: white 
+        color: $grey-dark
 
   li.current ul
     display: block
@@ -181,11 +165,19 @@
       span.toctree-expand
         color: white
     &:active
-      background-color: $blue-light
       cursor: pointer
-      color: white
       span.toctree-expand
-        color: white
+        color: $grey-dark
+
+.current-active
+  background-color: $blue-ultra-light!important
+  & > a
+    background-color: $blue-light!important
+    color: white!important
+    span.toctree-expand
+        color: white!important
+  & > ul
+    background-color: $blue-ultra-light!important
 
 .wy-side-nav-search
   display: block
@@ -405,15 +397,11 @@ footer
     width: auto
   .wy-nav-content-wrap
     transition: 0.5s
-    // left: 0
-    // top: 0
     margin-left: 0
     width: 100%
     .wy-nav-content
       padding: $gutter
     &.shift
-      // position: fixed
-      // height: 100%
       overflow: hidden
 
 @media screen and (min-width: $nav-media-query)

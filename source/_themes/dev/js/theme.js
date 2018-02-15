@@ -155,8 +155,9 @@ function ThemeNav() {
             // otherwise retain the existing match
             if (link.length > 0) {
                 $('.wy-menu-vertical .current').removeClass('current');
-                link.addClass('current');
-                link.closest('li.toctree-l1').addClass('current');
+
+                link.parent().addClass('current current-active');
+                link.closest('li.toctree-l1').addClass('current current');
                 link.closest('li.toctree-l1').parent().addClass('current');
                 link.closest('li.toctree-l1').addClass('current');
                 link.closest('li.toctree-l2').addClass('current');
@@ -197,12 +198,32 @@ function ThemeNav() {
     };
 
     nav.toggleCurrent = function (elem) {
+        
         var parent_li = elem.closest('li');
-        // console
-        parent_li.siblings('li.current').removeClass('current');
-        parent_li.siblings().find('li.current').removeClass('current');
-        parent_li.find('> ul li.current').removeClass('current');
-        parent_li.toggleClass('current');
+        
+        if (parent_li[0].className !== 'toctree-l3 current current-active') {
+            
+            parent_li.parent().parent().removeClass('current-active');
+            parent_li.siblings('li.current').removeClass('current current-active');
+            parent_li.siblings().find('li.current').removeClass('current current-active');
+            parent_li.find('> ul li.current').removeClass('current current-active');
+
+            if (parent_li[0].className !== 'toctree-l3 current') {
+                parent_li.addClass('current current-active');
+            } else {
+                parent_li.removeClass('current');
+            }
+
+        } else {
+            
+            parent_li.parent().parent().removeClass('current-active');
+            parent_li.siblings('li.current').removeClass('current current-active');
+            parent_li.siblings().find('li.current').removeClass('current current-active');
+            parent_li.find('> ul li.current').removeClass('current current-active');
+            parent_li.toggleClass('current current-active');
+
+        }
+
     }
 
     return nav;
