@@ -200,29 +200,12 @@ function ThemeNav() {
     nav.toggleCurrent = function (elem) {
         
         var parent_li = elem.closest('li');
-        
-        if (parent_li[0].className !== 'toctree-l3 current current-active') {
             
-            parent_li.parent().parent().removeClass('current-active');
-            parent_li.siblings('li.current').removeClass('current current-active');
-            parent_li.siblings().find('li.current').removeClass('current current-active');
-            parent_li.find('> ul li.current').removeClass('current current-active');
-
-            if (parent_li[0].className !== 'toctree-l3 current') {
-                parent_li.addClass('current current-active');
-            } else {
-                parent_li.removeClass('current');
-            }
-
-        } else {
-            
-            parent_li.parent().parent().removeClass('current-active');
-            parent_li.siblings('li.current').removeClass('current current-active');
-            parent_li.siblings().find('li.current').removeClass('current current-active');
-            parent_li.find('> ul li.current').removeClass('current current-active');
-            parent_li.toggleClass('current current-active');
-
-        }
+        parent_li.parent().parent().removeClass('current-active');
+        parent_li.siblings('li.current').removeClass('current current-active');
+        parent_li.siblings().find('li.current').removeClass('current current-active');
+        parent_li.find('> ul li.current').removeClass('current current-active');
+        parent_li.toggleClass('current current-active');
 
     }
 
@@ -248,12 +231,22 @@ $('#help-hub-button').click(function() {
 // scroll content below ods_header 
 $('.internal').on('click', function (event) {
     var target = $(this)[0].attributes.href.nodeValue;
+
     if (target.indexOf('#') !== -1) {
         event.preventDefault();
-        res_target = $('#' + target.split('#')[1]).offset().top;
-        setTimeout(function() {
-            $('html').animate({ scrollTop: res_target - 110 }, 0);
-        }, 0);
+
+        if (target == '#') {
+            window.location.hash = "";
+        } else {
+            hash_url = target.split('#');
+            window.location.hash = '#' + hash_url[1];
+
+            res_target = $('#' + target.split('#')[1]).offset().top;
+            setTimeout(function () {
+                $('html').animate({ scrollTop: res_target - 110 }, 0);
+            }, 0);
+        }
+
     } else {
         return null;
     }
