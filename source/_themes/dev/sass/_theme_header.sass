@@ -12,6 +12,11 @@
   left: 0
   z-index: 50
   background-color: $blue-light
+@media (min-width: $tablet-width) 
+  .ods__documentation-header 
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
 
 .ods__documentation-header-logo 
   display: flex
@@ -31,29 +36,41 @@
     &.open 
       background-color: $blue-hover
       color: white
-    
     &.ods__documentation-header-btn-active 
       background-color: $blue-hover
       color: white
-    
   button:focus 
     outline: none
-  
   a
     padding-top: 12px
     img 
         height: 70px
         margin: auto 0
+@media (min-width: $tablet-width)
+  .ods__documentation-header-logo 
+    height: 99px
+    width: auto
+    padding-left: 40px
+    a
+      padding-top: 8px
+      img 
+        height: 80px
+    button 
+      display: none
   
 .ods__documentation-header-nav 
   display: none
+@media (min-width: $tablet-width)
+  .ods__documentation-header-nav 
+    display: flex
+    margin-left: 103px
 
 .ods__documentation-help-hub-sidebar 
   position: fixed
   top: 100px
-  right: -250px
+  right: -300px
   height: 100%
-  width: 250px
+  width: 300px
   padding-top: 40px
   background-color: $blue-light
   border-top: 1px solid transparentize($grey-dark, 0.6)
@@ -61,6 +78,9 @@
   display: flex
   flex-direction: column
   transition: 0.5s
+@media (min-width: $tablet-width) 
+  .ods__documentation-help-hub-sidebar 
+    display: none
 
 .ods__documentation-help-hub-sidebar-item 
   text-align: center
@@ -77,32 +97,13 @@
 
 .ods__documentation-header-nav-item-active > a
   border-bottom: 2px solid white
+@media (min-width: $tablet-width)
+  .ods__documentation-header-nav-item-active > a
+    border-bottom: 2px solid white
 
 
 //- Desktop
 @media (min-width: $tablet-width) 
-  .ods__documentation-header 
-    display: flex
-    flex-direction: row
-    justify-content: flex-start
-  
-  .ods__documentation-header-logo 
-    height: 99px
-    width: auto
-    padding-left: 10px
-    img 
-      height: 80px
-    
-    button 
-      display: none
-    
-  .ods__documentation-help-hub-sidebar 
-    display: none
-  
-  .ods__documentation-header-nav 
-    display: flex
-    margin-left: 30px
-  
   .ods__documentation-header-nav-item 
     margin: auto 20px
   
@@ -117,7 +118,7 @@
     font-size: 18px
     font-weight: 500
     text-decoration: none
-    padding: 5px
+    padding: 5px 0
     border-bottom: 2px solid transparent
   
   .ods__documentation-header-nav-item > a:hover 

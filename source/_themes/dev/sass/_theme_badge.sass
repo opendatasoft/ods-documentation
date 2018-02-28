@@ -80,10 +80,10 @@
       display: block
       text-align: center
 
-+media($tablet)
+@media screen and (max-width: $tablet-width)
   .rst-versions
-    width: 85%
+    width: 300px
     transition: 0.5s
-    margin-left: -85%
+    margin-left: -300px
     &.shift
       margin-left: 0

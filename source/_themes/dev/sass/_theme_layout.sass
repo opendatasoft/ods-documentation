@@ -194,8 +194,8 @@
   input[type=text]
     width: 100%
     border-radius: 50px
-    padding: 6px 12px
-    border-color: transparentize($grey-medium, 0.6)
+    padding: 6px 20px
+    border-color: transparentize($grey-dark, 0.6)
   img
     display: none
     margin: auto auto $gutter / 2 auto
@@ -326,8 +326,12 @@
 .wy-nav-content
   padding: $gutter $gutter * 2
   height: 100%
-  max-width: $nav-content-width
+  max-width: 60%
   margin: auto
+@media screen and (min-width: 930px) and (max-width: 1099px)
+  .wy-nav-content
+    padding: 1.618em 0
+    max-width: 80%
 
 .wy-body-mask
   position: fixed
@@ -375,7 +379,7 @@ footer
     color: $text-medium
     font-size: 90%
 
-+media($tablet)
+@media screen and (max-width: $tablet-width)
   .wy-body-for-nav
     background: $section-background-color
   .wy-nav-top
@@ -387,7 +391,7 @@ footer
     @else
       right: -$nav-desktop-width
     &.shift
-      width: 85%
+      width: 300px
       left: 0
   .wy-side-scroll
     width: auto
@@ -400,7 +404,8 @@ footer
     margin-left: 0
     width: 100%
     .wy-nav-content
-      padding: $gutter
+      max-width: 80%
+      padding: 1.618em 0
     &.shift
       overflow: hidden
 
