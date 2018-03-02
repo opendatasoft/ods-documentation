@@ -1,3 +1,6 @@
+body, h1, h2, p, a
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif!important
+  
 .wy-affix
   position: fixed
   top: $gutter
@@ -61,7 +64,7 @@
       padding-right: 0
     // Expand links
     span.toctree-expand
-      display: block
+      display: none!important
       float: left
       margin-left: -1.2em
       @extend .fa
@@ -89,10 +92,6 @@
       font-size: .8em
       line-height: 1.6em
       color: $grey-dark
-
-  // li.toctree-l1.current > a
-  //   // border-bottom: solid 1px darken($menu-vertical-background-color, 20%)
-  //   // border-top: solid 1px darken($menu-vertical-background-color, 20%)
 
   // This is the on state for pages beyond second level
   li.toctree-l1.current li.toctree-l2, li.toctree-l2.current li.toctree-l3
@@ -348,7 +347,6 @@ footer
     margin-bottom: $base-line-height / 2
   span.commit code
     padding: 0px
-    font-family: $code-font-family
     font-size: 1em
     background: none
     border: none
@@ -410,8 +408,6 @@ footer
       overflow: hidden
 
 @media screen and (min-width: $nav-media-query)
-  .wy-nav-content-wrap
-    background: rgba(0,0,0,.05)
   .wy-nav-content
     margin: 0
     background: $section-background-color
