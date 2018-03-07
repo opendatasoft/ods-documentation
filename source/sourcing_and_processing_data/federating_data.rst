@@ -1,5 +1,5 @@
-Federation
-==========
+Federating data
+===============
 
 Federation is a core feature of the data network we are building. Using it is a good way to enrich your own data and it also gives a new way for others to discover and reuse them.
 
@@ -18,7 +18,7 @@ Federation allows to redistribute, in full or in part, an open dataset from your
 Source
 ------
 
-To federate a dataset, simply go to the *Catalog > Dataset* page and hit **New dataset**. Then, hit the little arrow on the right side of the **Add a source** button. 
+To federate a dataset, simply go to the *Catalog > Dataset* page and hit **New dataset**. Then, hit the little arrow on the right side of the **Add a source** button.
 
 .. ifconfig:: language == 'en'
 

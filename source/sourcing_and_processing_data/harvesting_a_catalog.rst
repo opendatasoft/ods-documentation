@@ -1,5 +1,5 @@
-Harvesters
-==========
+Harvesting a catalog
+====================
 
 Harvesters provide a way for administrators to easily create and update an important number of datasets by importing them from an external source such as a CSW catalog or an ArcGIS service, among many others.
 
