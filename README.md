@@ -88,15 +88,27 @@ Main documentation resources:
 * http://sphinx-doc.org/intl.html
 * http://docs.transifex.com/client/
 
-### Build .pot files, push them to transifex and retrieve .po files
+### Push new documentation to Transifex
 
-Shortcut: `make translations`
+```
+make push-translations
+git add source
+git commit -m "Rebuilt translations sources"
+```
 
-``` bash
-make gettext
-sphinx-intl update -p build/locale -l fr
-tx push -s
-tx pull -f fr
+
+### Retrieve translations from Transifex
+
+```
+make pull-translations
+make localizedhtml
+```
+You need to fix all warnings that are produced during html file generation in .po files and Transifex (they are blocking during release).
+
+If you know that only one language was impacted, you can use `make pull-translations-fr` and `make localizedhtml-fr` to only fetch and build the French version for example.
+```
+git add source
+git commit -m "Update translations"
 ```
 
 ### Build translated documentation
