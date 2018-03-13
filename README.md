@@ -92,7 +92,7 @@ Main documentation resources:
 
 ```
 make push-translations
-git add source
+git add source .tx/config
 git commit -m "Rebuilt translations sources"
 ```
 
