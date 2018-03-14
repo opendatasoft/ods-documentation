@@ -2,13 +2,13 @@
 # Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:09+0100\n"
+"POT-Creation-Date: 2018-03-13 16:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Datawords_trad_1 <datawords.translator.it1@gmail.com>, 2018\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
@@ -66,6 +66,16 @@ msgstr ""
 "nuova colonna denominata \"Anomaly Detected?\", contenente i valori YES/NO, "
 "dipende dal fatto che i valori di un'altra colonna si trovino o meno in un "
 "determinato intervallo."
+
+#: ../../source/sourcing_and_processing_data/processors/expression.rst:50
+msgid ""
+"Example of a conditional expression using the Expression processor, with the"
+" creation of the \"Anomaly Detected ?\" (which was not initially present in "
+"the original data source). The syntax is ``=expression ? value if the "
+"expression is true : value if false``. Please note that ``value if false`` "
+"is optional, so you can write ``=expression ? value if the expression is "
+"true``."
+msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processors/expression.rst:62
 msgid "Setting the processor"
@@ -182,9 +192,22 @@ msgstr "+, -, not, ! (not) , ! (fattoriale), ^ (potenza)"
 msgid "Binary operators"
 msgstr "Operatori binari"
 
+#: ../../source/sourcing_and_processing_data/processors/expression.rst:103
+msgid ""
+"+, -, ``*``, /, % (euclidean division), and, &&, or, ||, >, <, >=, <=, ==, "
+"!= (evaluates to ``True`` or ``False``), & (concatenation of strings, "
+"evaluates to a string)"
+msgstr ""
+
 #: ../../source/sourcing_and_processing_data/processors/expression.rst:105
 msgid "Ternary operators"
 msgstr "Operatori ternari"
+
+#: ../../source/sourcing_and_processing_data/processors/expression.rst:106
+msgid ""
+"op1 ? op2 : op3 (conditional statement). Please note that op3 is optional, "
+"so you can write op1 ? op2."
+msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processors/expression.rst:108
 msgid "In the table below are listed the available functions:"
@@ -290,6 +313,14 @@ msgstr "2"
 #: ../../source/sourcing_and_processing_data/processors/expression.rst:140
 msgid "Addition with a negative number"
 msgstr "Addizione con un numero negativo"
+
+#: ../../source/sourcing_and_processing_data/processors/expression.rst:141
+msgid "-3 + .1"
+msgstr ""
+
+#: ../../source/sourcing_and_processing_data/processors/expression.rst:142
+msgid "-2.9"
+msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processors/expression.rst:143
 msgid "Product with a field"
@@ -737,73 +768,3 @@ msgstr "empty(\"\")"
 #: ../../source/sourcing_and_processing_data/processors/expression.rst:270
 msgid "empty(\"hello\")"
 msgstr "empty(\"hello\")"
-
-#: ../../source/sourcing_and_processing_data/processors/expression.rst:50
-#, fuzzy
-msgid ""
-"Example of a conditional expression using the Expression processor, with the"
-" creation of the \"Anomaly Detected ?\" (which was not initially present in "
-"the original data source). The syntax is ``=expression ? value if the "
-"expression is true : value if false``. Please note that ``value if false`` "
-"is optional, so you can write ``=expression ? value if the expression is "
-"true``."
-msgstr ""
-"Esempio di espressione condizionale tramite il processore Espressione, con "
-"la creazione della colonna \"Anomaly Detected ?\", non presente in origine "
-"nel dataset. La sintassi è ``=expression ? value if the expression if true :"
-" value if false``"
-
-#: ../../source/sourcing_and_processing_data/processors/expression.rst:103
-#, fuzzy
-msgid ""
-"+, -, ``*``, /, % (euclidean division), and, &&, or, ||, >, <, >=, <=, ==, "
-"!= (evaluates to ``True`` or ``False``), & (concatenation of strings, "
-"evaluates to a string)"
-msgstr ""
-"+, -, ``*``, /, % (divisione euclidea), and, &&, or, ||, >, <, >=, <=, == "
-"(valuta ``True`` o ``False``), & (concatenazione di stringhe, valuta una "
-"stringa)"
-
-#: ../../source/sourcing_and_processing_data/processors/expression.rst:106
-msgid ""
-"op1 ? op2 : op3 (conditional statement). Please note that op3 is optional, "
-"so you can write op1 ? op2."
-msgstr ""
-
-#: ../../source/sourcing_and_processing_data/processors/expression.rst:141
-#, fuzzy
-msgid "-3 + .1"
-msgstr "-3 + 1"
-
-#: ../../source/sourcing_and_processing_data/processors/expression.rst:142
-msgid "-2.9"
-msgstr ""
-
-#~ msgid ""
-#~ "Example of a conditional expression using the Expression processor, with the"
-#~ " creation of the \"Anomaly Detected ?\" (which was not initially present in "
-#~ "the original data source). The syntax is ``=expression ? value if the "
-#~ "expression if true : value if false``"
-#~ msgstr ""
-#~ "Esempio di espressione condizionale tramite il processore Espressione, con "
-#~ "la creazione della colonna \"Anomaly Detected ?\", non presente in origine "
-#~ "nel dataset. La sintassi è ``=expression ? value if the expression if true :"
-#~ " value if false``"
-
-#~ msgid ""
-#~ "+, -, ``*``, /, % (euclidean division), and, &&, or, ||, >, <, >=, <=, == "
-#~ "(evaluates to ``True`` or ``False``), & (concatenation of strings, evaluates"
-#~ " to a string)"
-#~ msgstr ""
-#~ "+, -, ``*``, /, % (divisione euclidea), and, &&, or, ||, >, <, >=, <=, == "
-#~ "(valuta ``True`` o ``False``), & (concatenazione di stringhe, valuta una "
-#~ "stringa)"
-
-#~ msgid "op1 ? op2 : op3 (conditional statement)"
-#~ msgstr "op1 ? op2 : op3 (istruzione condizionale)"
-
-#~ msgid "-3 + 1"
-#~ msgstr "-3 + 1"
-
-#~ msgid "-2"
-#~ msgstr "-2"
