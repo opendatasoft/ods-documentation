@@ -92,6 +92,7 @@ Portals
    harvesters/datajson
    harvesters/quandl
    harvesters/enigma
+   harvesters/dbnomics
 
 Services
 ~~~~~~~~
