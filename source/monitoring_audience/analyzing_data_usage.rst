@@ -1,90 +1,123 @@
 Analyzing data usage
 ====================
 
-Go to the *Analytics > Data* page.
+The Data dashboard displays statistics to analyze the data published on the portal. It is available in the Analytics > Data section of the back office.
 
-There are seven indicators :
+This dashboard is separated into 5 sections:
 
-1. **Dataset activity**: Download and API calls of most used datasets. Please note that there are two different scales for the downloads count and the number of API calls on each side of the chart.
+- Totals: figures about the datasets published in the portal and their usage through that portal
+- Popularity: statistics and charts to compute and analyze the popularity of the datasets published in the portal
+- Top 5: list of most downloaded, used and reused published datasets
+- Most used themes: tree chart to analyze most and least used themes
+- Tag cloud: cloud of used tags
 
-.. ifconfig:: language == 'en'
+.. admonition:: Unpublished datasets ignored by the Data dashboard
+   :class: note
 
-    .. image:: usage__data-usage-1-en.jpg
-        :alt: Data Usages Popularity Indicator
+   In this dashboard, only published datasets are taken into account. Unpublished datasets are ignored from all figures, charts and other computed analytics displayed.
 
-.. ifconfig:: language == 'fr'
+Totals
+------
 
-    .. image:: usage__data-usage-1-fr.jpg
-        :alt: Usage Data Indicateur Popularité
+.. list-table::
+  :header-rows: 1
 
-2. **Total datasets**: Total number of datasets in the catalog.
+  * * Label
+    * Type
+    * Description
+  * * Datasets
+    * Figure
+    * Total number of published datasets in the portal
+  * * Records
+    * Figure
+    * Total number of records in all published datasets combined
+  * * Downloads
+    * Figure
+    * Total number of downloads in all published datasets combined
+  * * API calls
+    * Total number of API calls for all published datasets combined
+  * * Reuses
+    * Figure
+    * Total number of reuses in all published datasets combined
 
-.. ifconfig:: language == 'en'
+.. screenshot
 
-    .. image:: usage__data-usage-2-en.jpg
-        :alt: Data Usages Total Datasets Indicator
+Popularity
+----------
 
-.. ifconfig:: language == 'fr'
+The Popularity section of the Data dashboard is based upon a computation that quantifies dataset consumption through a metric. This metric is based on 3 criterias: number of downloads, number of API calls and number of reuses. These 3 criterias combined into a formula (popularity = 3.22 -2 √[API calls] + 5.38 -2 √[Downloads] + [Reuses]) indicate whether a dataset published into an OpenDataSoft portal can be considered popular or not, compared to the other datasets of that portal.
 
-    .. image:: usage__data-usage-2-fr.jpg
-        :alt: Usage Data Indicateur Total Jeux de données
+.. list-table::
+  :header-rows: 1
 
-3. **Total records**: Total number of records in the catalog.
+  * * Label
+    * Type
+    * Description
+  * * Most popular datasets
+    * Bar chart
+    * Top 5 most popular published datasets, along with their popularity scores displayed
+  * * Least popular datasets
+    * Bar chart
+    * Top 5 least popular published datasets, along with their popularity scores displayed
+  * * Median Popularity
+    * Figure
+    * Median popularity score computed from all popularity scores of all published datasets taken into account to compute the median (datasets with extreme popularity scores - unordinarily popular or unpopular datasets - are ignored)
+  * * Average Popularity
+    * Figure
+    * Average popularity score computed from all popularity scores of all published datasets. In contrary to the median, to compute the average, all datasets are taken into account, without any exception.
+  * * Popularity Sum
+    * Figure
+    * Sum of all popularity scores of all published datasets
 
-.. ifconfig:: language == 'en'
+.. screenshot
 
-    .. image:: usage__data-usage-3-en.jpg
-        :alt: Data Usages Total Records Indicator
+Top 5
+-----
 
-.. ifconfig:: language == 'fr'
+.. list-table::
+  :header-rows: 1
 
-    .. image:: usage__data-usage-3-fr.jpg
-        :alt: Usage Data Indicateur Total Enregistrements
+  * * Label
+    * Type
+    * Description
+  * * Downloads
+    * List
+    * Top 5 most downloaded published datasets, along with the current amount of downloads for each dataset
+  * * API Calls
+    * List
+    * Top 5 datasets with the most API calls, along with the current amount of API calls for each dataset
+  * * Reuses
+    * List
+    * Top 5 datasets with the most reuses, along with the current amount of reuses for each dataset
 
-4. **Top datasets**: The 3 datasets with most API calls. Those are the datasets that drive the usage on your portal.
+.. screenshot
 
-.. ifconfig:: language == 'en'
+Most used themes
+----------------
 
-    .. image:: usage__data-usage-4-en.jpg
-        :alt: Data Usages Top Datasets Indicator
+.. list-table::
+  :header-rows: 1
 
-.. ifconfig:: language == 'fr'
+  * * Label
+    * Type
+    * Description
+  * * Most used themes
+    * Tree chart
+    * Dataset themes represented with a tree chart to analyze which themes are the most and the least used
 
-    .. image:: usage__data-usage-4-fr.jpg
-        :alt: Usage Data Indicateur Top Jeux de données
+.. screenshot
 
-5. **Least used datasets**: The 3 datasets with least API calls. Those datasets may have not met their audience yet.
+Tag cloud
+---------
 
-.. ifconfig:: language == 'en'
+.. list-table::
+  :header-rows: 1
 
-    .. image:: usage__data-usage-5-en.jpg
-        :alt: Data Usages Down Datasets Indicator
+  * * Label
+    * Type
+    * Description
+  * * Tag cloud
+    * Tag cloud
+    * Most used dataset keywords. The bigger the keywords, the most used they are. Each keyword is clickable: it then acts as a filter for the whole dashboard. To go back to the complete list of keywords, click again on the filter you just used.
 
-.. ifconfig:: language == 'fr'
-
-    .. image:: usage__data-usage-5-fr.jpg
-        :alt: Usage Data Indicateur Down Jeux de données
-
-6. **Theme popularity**: Distribution of popularity among themes. Allows you to understand what data your users look for.
-
-.. ifconfig:: language == 'en'
-
-    .. image:: usage__data-usage-6-en.jpg
-        :alt: Data Usages Themes Indicator
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: usage__data-usage-6-fr.jpg
-        :alt: Usage Data Indicateur Themes
-
-7. **Tag cloud**: Distribution of popularity among tags. Allows you to understand what data your users look for.
-
-.. ifconfig:: language == 'en'
-
-    .. image:: usage__data-usage-7-en.jpg
-        :alt: Data Usages Tags Indicator
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: usage__data-usage-7-fr.jpg
-        :alt: Usage Data Indicateur Tags
+.. screenshot
