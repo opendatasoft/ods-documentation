@@ -47,7 +47,7 @@ Example of a conditional expression: the idea is to create a new column (e.g for
     :alt: Expression Processor conditional expression
     :align: center
 
-    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression if true : value if false``
+    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression is true : value if false``. Please note that ``value if false`` is optional, so you can write ``=expression ? value if the expression is true``.
 
 .. ifconfig:: language == 'fr'
 
@@ -55,7 +55,7 @@ Example of a conditional expression: the idea is to create a new column (e.g for
     :alt: Expression Processor conditional expression
     :align: center
 
-    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression if true : value if false``
+    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression is true : value if false``. Please note that ``value if false`` is optional, so you can write ``=expression ? value if the expression is true``.
 
 
 Setting the processor
@@ -100,10 +100,10 @@ In the table below are listed the available unary, binary and ternary operators:
    * * Unary operators
      * +, -, not, ! (not) , ! (factorial), ^ (power)
    * * Binary operators
-     * +, -, ``*``, /, % (euclidean division), and, &&, or, ||, >, <, >=, <=, == (evaluates to ``True`` or ``False``), &
+     * +, -, ``*``, /, % (euclidean division), and, &&, or, ||, >, <, >=, <=, ==, != (evaluates to ``True`` or ``False``), &
        (concatenation of strings, evaluates to a string)
    * * Ternary operators
-     * op1 ? op2 : op3 (conditional statement)
+     * op1 ? op2 : op3 (conditional statement). Please note that op3 is optional, so you can write op1 ? op2.
 
 In the table below are listed the available functions:
 
@@ -138,8 +138,8 @@ Examples
      * 1 + 1
      * 2
    * * Addition with a negative number
-     * -3 + 1
-     * -2
+     * -3 + .1
+     * -2.9
    * * Product with a field
      * price * 2
      * 24 (if price is a field valued to 12)

@@ -5,6 +5,7 @@ This processor retrieves administrative divisions geo shapes for a specified cou
 
 Each country has specific referentials, all referenced in the section below. The GeoJoin processors is available for the following countries:
 
+- Belgium
 - Canada
 - England
 - France
@@ -51,6 +52,25 @@ To set the **Repository**, follow the indications from the table of the chosen c
 .. note::
     The referentials below can also be found in datasets available on `public.opendatasoft.com <https://public.opendatasoft.com>`_.
 
+Belgium
+^^^^^^^
+
+.. list-table::
+  :header-rows: 1
+
+  * * Repository
+    * Source
+  * * arrondissements2008
+    * `Arrondissements Belges <https://public.opendatasoft.com/explore/dataset/arrondissements-belges>`_
+  * * cantons2008
+    * `Cantons Belges <https://public.opendatasoft.com/explore/dataset/cantons-belges>`_
+  * * communes2008
+    * `Communes Belges <https://public.opendatasoft.com/explore/dataset/communes-belges>`_
+  * * provinces2008
+    * `Provinces Belges <https://public.opendatasoft.com/explore/dataset/provinces-belges>`_
+  * * regions2008
+    * `Régions Belges <https://public.opendatasoft.com/explore/dataset/regions-belges>`_
+
 Canada
 ~~~~~~
 
@@ -59,14 +79,14 @@ Canada
 
   * * Repository
     * Source
-  * * province2003
-    * `Canada Provinces <https://public.opendatasoft.com/explore/dataset/canada-provinces>`_
-  * * census-subdivisions2011
-    * `Canadian Census Subdivisions <https://public.opendatasoft.com/explore/dataset/canadian-census-subdivisions0>`_
   * * census-divisions2011
     * `Canadian Census Divisions <https://public.opendatasoft.com/explore/dataset/canadian-census-subdivisions>`_
+  * * census-subdivisions2011
+    * `Canadian Census Subdivisions <https://public.opendatasoft.com/explore/dataset/canadian-census-subdivisions0>`_
   * * county2011
     * `Intercensal Canada <https://public.opendatasoft.com/explore/dataset/intercensal-canada>`_
+  * * province2003
+    * `Canada Provinces <https://public.opendatasoft.com/explore/dataset/canada-provinces>`_
 
 England (GB)
 ~~~~~~~~~~~~
@@ -111,12 +131,20 @@ France
     * `Contours simplifiés des départements Français 2015 <https://public.opendatasoft.com/explore/dataset/contours-simplifies-des-departements-francais-2015>`_
   * * departements2015
     * `Geofla® - Départements 2015 <https://public.opendatasoft.com/explore/dataset/geoflar-departements-2015>`_
+  * * epci2016
+    * `Etablissements Publics de Coopération Intercommunale (EPCI) <https://public.opendatasoft.com/explore/dataset/contours-epci>`_
+  * * iris-epci2016
+    * `Contours IRIS 2016 avec EPCI <https://public.opendatasoft.com/explore/dataset/contours-iris-2016-epci>`_
   * * iris2014
     * `Contours IRIS 2014 <https://public.opendatasoft.com/explore/dataset/contours-iris-2014>`_
   * * iris2015
     * `Contours IRIS 2015 <https://public.opendatasoft.com/explore/dataset/contours-iris-2015>`_
+  * * iris2016
+    * `Contours IRIS 2016 <https://public.opendatasoft.com/explore/dataset/contours-iris-2016>`_
   * * postcode2013
     * `Carte des Codes Postaux <https://public.opendatasoft.com/explore/dataset/contour-des-codes-postaux>`_
+  * * regions-simplifiees2016
+    * `Contours géographiques simplifiés des nouvelles régions (métropole) <https://public.opendatasoft.com/explore/dataset/france-regions-2016-contours-simplifies>`_
   * * regions1970
     * `Contours des régions françaises sur OpenStreetMap <https://public.opendatasoft.com/explore/dataset/contours-des-regions-francaises-sur-openstreetmap>`_
   * * regions2016
