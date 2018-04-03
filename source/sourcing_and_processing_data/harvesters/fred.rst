@@ -22,7 +22,7 @@ Parameters
      * abcdefghijklmnopqrstuvwxyz123456
    * * Query
      * Can be either a dataset ID or a query to match series against
-     * employment
+     * PAYEMS, employment
    * * Number of datasets
      * The number of datasets that will be harvested. If no value is set, all datasets will be harvested (up to 1000).
      * 10
