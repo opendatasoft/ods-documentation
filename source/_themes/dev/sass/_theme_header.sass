@@ -12,7 +12,7 @@
   left: 0
   z-index: 50
   background-color: $blue-light
-@media (min-width: $tablet-width) 
+@media only screen and (min-width: $tablet-width) 
   .ods__documentation-header 
     display: flex
     flex-direction: row
@@ -45,8 +45,8 @@
     padding-top: 12px
     img 
         height: 70px
-        margin: auto 0
-@media (min-width: $tablet-width)
+        margin: auto 0       
+@media only screen and (min-width: $tablet-width)
   .ods__documentation-header-logo 
     height: 99px
     width: auto
@@ -57,13 +57,27 @@
         height: 80px
     button 
       display: none
-  
+//- IE 10 / 11
+@media only screen and (-ms-high-contrast: active), (-ms-high-contrast:none) 
+    .ods__documentation-header-logo
+      padding-left: 50px
+      a
+        padding-top: 0
+        img 
+          height: 90px
+          margin: -10px 0 0 0
+        
 .ods__documentation-header-nav 
   display: none
-@media (min-width: $tablet-width)
+@media only screen and (min-width: $tablet-width)
   .ods__documentation-header-nav 
     display: flex
-    margin-left: 103px
+    margin-left: 100px
+//- IE 10 / 11
+@media only screen and (-ms-high-contrast: active), (-ms-high-contrast:none)
+  .ods__documentation-header-nav
+    display: flex
+    margin-left: 120px
 
 .ods__documentation-help-hub-sidebar 
   position: fixed
@@ -78,7 +92,7 @@
   display: flex
   flex-direction: column
   transition: 0.5s
-@media (min-width: $tablet-width) 
+@media only screen and (min-width: $tablet-width) 
   .ods__documentation-help-hub-sidebar 
     display: none
 
@@ -97,15 +111,19 @@
 
 .ods__documentation-header-nav-item-active > a
   border-bottom: 2px solid white
-@media (min-width: $tablet-width)
+@media only screen and (min-width: $tablet-width)
   .ods__documentation-header-nav-item-active > a
     border-bottom: 2px solid white
 
 
 //- Desktop
-@media (min-width: $tablet-width) 
+@media only screen and (min-width: $tablet-width) 
   .ods__documentation-header-nav-item 
     margin: auto 20px
+  //- IE 10 / 11
+  @media only screen and (-ms-high-contrast: active), (-ms-high-contrast:none)
+    .ods__documentation-header-nav-item
+      margin: 35px 20px 0 20px
   
   .ods__documentation-header-nav-item:first-child 
     margin-left: 0px

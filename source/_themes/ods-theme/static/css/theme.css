@@ -5762,7 +5762,7 @@ span[id*='MathJax-Span'] {
   background-color: #126E92;
 }
 
-@media (min-width: 930px) {
+@media only screen and (min-width: 930px) {
   .ods__documentation-header {
     display: flex;
     flex-direction: row;
@@ -5805,7 +5805,7 @@ span[id*='MathJax-Span'] {
   margin: auto 0;
 }
 
-@media (min-width: 930px) {
+@media only screen and (min-width: 930px) {
   .ods__documentation-header-logo {
     height: 99px;
     width: auto;
@@ -5821,14 +5821,32 @@ span[id*='MathJax-Span'] {
     display: none;
   }
 }
+@media only screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .ods__documentation-header-logo {
+    padding-left: 50px;
+  }
+  .ods__documentation-header-logo a {
+    padding-top: 0;
+  }
+  .ods__documentation-header-logo a img {
+    height: 90px;
+    margin: -10px 0 0 0;
+  }
+}
 .ods__documentation-header-nav {
   display: none;
 }
 
-@media (min-width: 930px) {
+@media only screen and (min-width: 930px) {
   .ods__documentation-header-nav {
     display: flex;
-    margin-left: 103px;
+    margin-left: 100px;
+  }
+}
+@media only screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .ods__documentation-header-nav {
+    display: flex;
+    margin-left: 120px;
   }
 }
 .ods__documentation-help-hub-sidebar {
@@ -5846,7 +5864,7 @@ span[id*='MathJax-Span'] {
   transition: 0.5s;
 }
 
-@media (min-width: 930px) {
+@media only screen and (min-width: 930px) {
   .ods__documentation-help-hub-sidebar {
     display: none;
   }
@@ -5871,16 +5889,22 @@ span[id*='MathJax-Span'] {
   border-bottom: 2px solid white;
 }
 
-@media (min-width: 930px) {
+@media only screen and (min-width: 930px) {
   .ods__documentation-header-nav-item-active > a {
     border-bottom: 2px solid white;
   }
 }
-@media (min-width: 930px) {
+@media only screen and (min-width: 930px) {
   .ods__documentation-header-nav-item {
     margin: auto 20px;
   }
-
+}
+@media only screen and (min-width: 930px) and (-ms-high-contrast: active), only screen and (min-width: 930px) and (-ms-high-contrast: none) {
+  .ods__documentation-header-nav-item {
+    margin: 35px 20px 0 20px;
+  }
+}
+@media only screen and (min-width: 930px) {
   .ods__documentation-header-nav-item:first-child {
     margin-left: 0px;
   }
