@@ -5857,7 +5857,7 @@ span[id*='MathJax-Span'] {
   width: 300px;
   padding-top: 40px;
   background-color: #126E92;
-  border-top: 1px solid rgba(123, 123, 123, 0.4);
+  border-top: 1px solid white;
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -5871,14 +5871,18 @@ span[id*='MathJax-Span'] {
 }
 .ods__documentation-help-hub-sidebar-item {
   text-align: center;
-  margin: 30px 0;
+  margin: 15px 0;
+  line-height: 25px;
 }
 .ods__documentation-help-hub-sidebar-item a {
   color: white;
   font-size: 16px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
   padding: 5px;
+}
+.ods__documentation-help-hub-sidebar-item:last-child {
+  margin-top: 30px;
 }
 
 .ods__documentation-help-hub-sidebar-active {
@@ -5894,6 +5898,19 @@ span[id*='MathJax-Span'] {
     border-bottom: 2px solid white;
   }
 }
+.ods-header__redirect-helphub {
+  border: 1px solid transparent;
+  padding: 10px 30px !important;
+  background-color: white;
+  color: #126E92 !important;
+  border-radius: 4px;
+}
+.ods-header__redirect-helphub:hover {
+  background-color: #166482;
+  color: white !important;
+  border: none !important;
+}
+
 @media only screen and (min-width: 930px) {
   .ods__documentation-header-nav-item {
     margin: auto 20px;

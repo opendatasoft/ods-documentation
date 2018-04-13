@@ -87,7 +87,7 @@
   width: 300px
   padding-top: 40px
   background-color: $blue-light
-  border-top: 1px solid transparentize($grey-dark, 0.6)
+  border-top: 1px solid white
   z-index: 1000
   display: flex
   flex-direction: column
@@ -98,13 +98,16 @@
 
 .ods__documentation-help-hub-sidebar-item 
   text-align: center
-  margin: 30px 0
+  margin: 15px 0
+  line-height: 25px
   a 
     color: white
     font-size: 16px
     text-decoration: none
-    font-weight: 500
+    font-weight: 400
     padding: 5px
+  &:last-child
+    margin-top: 30px
   
 .ods__documentation-help-hub-sidebar-active 
   right: 0
@@ -115,6 +118,16 @@
   .ods__documentation-header-nav-item-active > a
     border-bottom: 2px solid white
 
+.ods-header__redirect-helphub
+    border: 1px solid transparent
+    padding: 10px 30px!important
+    background-color: white
+    color: $blue-light!important
+    border-radius: 4px
+    &:hover
+        background-color: $blue-hover
+        color: white!important
+        border: none!important
 
 //- Desktop
 @media only screen and (min-width: $tablet-width) 
