@@ -8,7 +8,7 @@ There are 3 methods to add multiple files into a dataset: by adding them one by 
 Sourcing files one by one
 -------------------------
 
-This method consists in adding several files one by one into the platform, creating as many sources as the number of added files. In that case, because a new source is created for each added file, those can have different formats (see :doc:`Supported formats</sourcing_and_processing_data/supported_formats>`)
+This method consists in adding several files one by one into the platform, creating as many sources as the number of added files. In that case, because a new source is created for each added file, those can have different formats (see :doc:`Supported formats</publishing_data/01_creating_a_dataset/supported_formats>`)
 
 1. In Catalog > Datasets, click on the **New dataset** button.
 2. Click on the **Add a source** button.
@@ -26,7 +26,7 @@ This method consists in adding several files one by one into the platform, creat
 Sourcing multiple files within an archive
 -----------------------------------------
 
-This method consists in adding several files at the same time via an archive file, creating one same source for all the added files. In that case, because only one source is created for all the files, those have to have the same format (see :doc:`Supported formats</sourcing_and_processing_data/supported_formats>`).
+This method consists in adding several files at the same time via an archive file, creating one same source for all the added files. In that case, because only one source is created for all the files, those have to have the same format (see :doc:`Supported formats</publishing_data/01_creating_a_dataset/supported_formats>`).
 
 .. admonition:: Data schema when adding multiple files at once
    :class: important
@@ -36,7 +36,7 @@ This method consists in adding several files at the same time via an archive fil
 1. Create an archive file (see :ref:`Supported compressed file formats<supportedcompressedformats>`) with the files to add in the same dataset.
 2. In Catalog > Datasets, click on the **New dataset** button.
 3. Click on the **Add a source** button.
-4. Source the archive file using one of the 3 available methods (see :doc:`Sourcing data</sourcing_and_processing_data/sourcing_data>`).
+4. Source the archive file using one of the 3 available methods (see :doc:`Sourcing data</publishing_data/01_creating_a_dataset/sourcing_data>`).
 
 .. admonition:: Sourcing a shapefile
    :class: important

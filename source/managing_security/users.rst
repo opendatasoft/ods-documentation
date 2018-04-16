@@ -62,7 +62,7 @@ Dataset permissions
      * The user can publish or republish the datasets he/she can edit.
 
 These are general permissions that apply to a user with regard to the portal, but user can also get
-:doc:`permissions for individual datasets </sourcing_and_processing_data/security>`.
+:doc:`permissions for individual datasets </publishing_data/09_managing_dataset_security/security>`.
 
 
 Other permissions
@@ -131,7 +131,3 @@ group values and dynamically computes the effective quota depending on the speci
 
     .. image:: users__quotas--fr.png
         :alt: The override form for a quota
-
-
-
-

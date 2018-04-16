@@ -125,7 +125,7 @@ In the calendar view, a click on a event will bring forward a tooltip containing
 .. image:: calendar__tooltip--en.jpg
         :alt: Calendar tooltip
 
-You can :doc:`configure the tooltip</sourcing_and_processing_data/configuring_visualizations/tooltip>` in exactly the same way than for the map or the images. 
+You can :doc:`configure the tooltip</publishing_data/07_configuring_visualizations/tooltip>` in exactly the same way than for the map or the images. 
 
 Sharing
 -------
@@ -177,4 +177,3 @@ offered below the calendar itself.
     .. figure:: calendar__widget--fr.png
 
        Copy this code to one your dashboard on the platform
-

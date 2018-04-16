@@ -12,7 +12,7 @@ The harvester will create datasets, update their metadata and resources, keep th
 
 .. ifconfig:: language == 'en'
 
-    .. figure:: harvesters_schema--en.png
+    .. figure:: images/harvesters_schema--en.png
         :alt: Harvesters schema
         :align: center
 
@@ -20,7 +20,7 @@ The harvester will create datasets, update their metadata and resources, keep th
 
 .. ifconfig:: language == 'fr'
 
-    .. figure:: harvesters_schema--fr.png
+    .. figure:: images/harvesters_schema--fr.png
         :alt: Schéma des moissoneurs
         :align: center
 
@@ -34,12 +34,12 @@ To get started with harvesters, click on the **harvesters** menu in your backoff
 
 .. ifconfig:: language == 'en'
 
-    .. image:: harvesters_page--en.png
+    .. image:: images/harvesters_page--en.png
         :alt: Harvesters screen
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: harvesters_page--fr.png
+    .. image:: images/harvesters_page--fr.png
         :alt: Ecran des moissonneurs
 
 When you are done, click on **Create harvester** and you will be redirected to the configuration form of the harvester. As it depends on the harvester type, please refer to each harvester page below for detailed instructions.
@@ -119,10 +119,10 @@ At the end of a scheduled run, all the harvester's already published datasets wi
 
 .. ifconfig:: language == 'en'
 
-    .. figure:: harvesters_scheduling--en.png
+    .. figure:: images/harvesters_scheduling--en.png
         :alt: Harvester scheduling
 
 .. ifconfig:: language == 'fr'
 
-    .. figure:: harvesters_scheduling--fr.png
+    .. figure:: images/harvesters_scheduling--fr.png
         :alt: Planification d'un moissoneur

@@ -13,7 +13,7 @@ to be able to access the portal or if you'll require people to signup before the
    to limit what the general public can see through the use of sensible default security parameters for your datasets
    and explicit parameters on each single dataset.
 
-   See the :doc:`dedicated section </sourcing_and_processing_data/security>` for more information about dataset
+   See the :doc:`dedicated section </publishing_data/09_managing_dataset_security/security>` for more information about dataset
    security.
 
 This setting can be found in the **security** subsection of the **configuration** section of your portal's backoffice.

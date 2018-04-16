@@ -10,7 +10,7 @@ There are 3 different methods to add data to a dataset:
 .. admonition:: Supported file formats
    :class: important
 
-   Before sourcing data and particularly files into the platform, you might want to check the formats supported by the OpenDataSoft platform (see :doc:`Supported formats</sourcing_and_processing_data/supported_formats>`).
+   Before sourcing data and particularly files into the platform, you might want to check the formats supported by the OpenDataSoft platform (see :doc:`Supported formats</publishing_data/01_creating_a_dataset/supported_formats>`).
 
 
 Uploading a file
@@ -46,7 +46,7 @@ This method consists in connecting the platform to:
 .. admonition:: Scheduling updates and pushing real-time data
    :class: note
 
-   These connections with the platform allow the automation of data update, by scheduling or pushing real-time data (see :doc:`Keeping data up to date</sourcing_and_processing_data/scheduling_updates>`).
+   These connections with the platform allow the automation of data update, by scheduling or pushing real-time data (see :doc:`Keeping data up to date</publishing_data/03_scheduling_updates/scheduling_updates>`).
 
 Connecting to a remote server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -58,7 +58,7 @@ Connecting to a remote server
 OpenDataSoft supports the following protocols:
 
 * http and https, which link to a single file (e.g. http://example.org/mydata.csv)
-* ftp and  ftps, which link to a single file (e.g. ftp://example.org/my_dir/mydata.csv) or to a directory (e.g. ftp://example.org/my_dir/). Using a directory is often the prefered solution to automate incremental updates between a customer's information system and the platform. All the files in the directory need to have the same format and schema (e.g. CSV files with the same column titles). In case of automation, whenever the dataset is published, new and updated files are fetched from the remote location and processed and thanks to OpenDataSoft's native deduplication strategy, similar records are not processed twice (see :doc:`Special fields documentation</sourcing_and_processing_data/defining_a_dataset_schema>`).
+* ftp and  ftps, which link to a single file (e.g. ftp://example.org/my_dir/mydata.csv) or to a directory (e.g. ftp://example.org/my_dir/). Using a directory is often the prefered solution to automate incremental updates between a customer's information system and the platform. All the files in the directory need to have the same format and schema (e.g. CSV files with the same column titles). In case of automation, whenever the dataset is published, new and updated files are fetched from the remote location and processed and thanks to OpenDataSoft's native deduplication strategy, similar records are not processed twice (see :doc:`Special fields documentation</publishing_data/05_processing_data/defining_a_dataset_schema>`).
 
 .. admonition:: Deleted files in FTP server
    :class: important
@@ -98,7 +98,7 @@ OpenDataSoft natively supports the following APIs:
 
 .. ifconfig:: language == 'en'
 
-    .. figure:: loading_data__options--en.png
+    .. figure:: images/loading_data__options--en.png
         :alt: Connector options
         :width: 600px
         :align: center
@@ -107,7 +107,7 @@ OpenDataSoft natively supports the following APIs:
 
 .. ifconfig:: language == 'fr'
 
-    .. figure:: loading_data__options--en.png
+    .. figure:: images/loading_data__options--en.png
         :alt: Options du connecteur
         :width: 600px
         :align: center

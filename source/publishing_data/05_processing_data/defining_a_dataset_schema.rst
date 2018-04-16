@@ -11,7 +11,7 @@ Each dataset follows a schema. Fully defining and configuring a dataset schema m
 * :ref:`Ordering the fields<orderingfields>` in the dataset (6)
 * :ref:`Discarding fields<discardingfields>` from the dataset (7)
 
-.. localizedimage:: processing_preview.png
+.. localizedimage:: images/processing_preview.png
     :alt: Processing tab when publishing a new dataset
 
 .. _changinglabel:
@@ -119,7 +119,7 @@ There are 8 different types: date, datetime, decimal, integer, geopoint, geoshap
      * Field values are textual data.
 
    * * File
-     * Field values are files sourced with one of the available methods to :doc:`create a dataset with images<creating_dataset_with_images>` (with the File processor, through an archive file or with a specific extractor), creating a field which default type is file. This field type is only available in that case.
+     * Field values are files sourced with one of the available methods to :doc:`create a dataset with images<../01_creating_a_dataset/creating_dataset_with_images>` (with the File processor, through an archive file or with a specific extractor), creating a field which default type is file. This field type is only available in that case.
 
 .. _settingfacets:
 

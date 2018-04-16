@@ -3,12 +3,12 @@ Creating a dataset
 
 .. ifconfig:: language == 'en'
 
-    .. image:: create_processing--en.png
+    .. image:: images/create_processing--en.png
         :alt: Processing schema
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: create_processing--fr.png
+    .. image:: images/create_processing--fr.png
         :alt: Schema
 
 

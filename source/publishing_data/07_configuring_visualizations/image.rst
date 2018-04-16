@@ -16,4 +16,4 @@ In the image gallery view, a click on a image will bring forward a tooltip conta
 .. image:: image__tooltip--en.jpg
         :alt: Image Tooltip
 
-You can :doc:`configure the tooltip</sourcing_and_processing_data/configuring_visualizations/tooltip>` in exactly the same way than for the map or the calendar.
+You can :doc:`configure the tooltip</publishing_data/07_configuring_visualizations/tooltip>` in exactly the same way than for the map or the calendar.

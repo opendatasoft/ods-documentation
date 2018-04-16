@@ -36,4 +36,4 @@ On a map, a click on a point will bring forward a tooltip containing more inform
 .. image:: map__tooltip--en.jpg
         :alt: Map Tooltip
 
-You can :doc:`configure the tooltip</sourcing_and_processing_data/configuring_visualizations/tooltip>` in exactly the same way than for the image gallery or the calendar.
+You can :doc:`configure the tooltip</publishing_data/07_configuring_visualizations/tooltip>` in exactly the same way than for the image gallery or the calendar.

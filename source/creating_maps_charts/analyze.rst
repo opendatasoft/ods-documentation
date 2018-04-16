@@ -1,7 +1,7 @@
 Analyzing with the Chart Builder
 ================================
 
-.. note:: Read how to :doc:`configure visualizations </sourcing_and_processing_data/configuring_visualizations/analyze>` for a dataset beforehand.
+.. note:: Read how to :doc:`configure visualizations </publishing_data/07_configuring_visualizations/analyze>` for a dataset beforehand.
 
 With the Chart Builder tool, you can visualize multiple datasets on a single customized chart. You can save your chart and easily share it, embed it, or use it as a widget.
 
@@ -127,4 +127,3 @@ Other charts examples
 **Polar Chart**
 
 .. image:: polar-chart-example.png
-

@@ -6,12 +6,12 @@ Of course the first condition for a user to able to access a dataset is to have 
 
 .. ifconfig:: language == 'en'
 
-    .. image:: security__dataset--en.png
+    .. image:: images/security__dataset--en.png
         :alt: Access list
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: security__dataset--fr.png
+    .. image:: images/security__dataset--fr.png
         :alt: Liste d'accès
 
 
@@ -26,14 +26,14 @@ If you want anyone with access to your domain to be able to explore the dataset,
 
 .. ifconfig:: language == 'en'
 
-    .. image:: security__access-restricted--en.png
+    .. image:: images/security__access-restricted--en.png
         :alt: Access restricted to allowed users and groups option
         :width: 50%
         :align: center
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: security__access-restricted--fr.png
+    .. image:: images/security__access-restricted--fr.png
         :alt: Option Accès limité aux utilisateurs et groupes autorisés
         :width: 50%
         :align: center
@@ -50,12 +50,12 @@ For each category of person (anyone, listed user, user in a listed group) that c
 
 .. ifconfig:: language == 'en'
 
-    .. image:: security__filters--en.png
+    .. image:: images/security__filters--en.png
         :alt: Available data filter options
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: security__filters--en.png
+    .. image:: images/security__filters--en.png
         :alt: Options disponible pour le filtrage des données
 
 You have three different options available that you can combine.
@@ -64,14 +64,14 @@ If you restrict the visibility of the data, you should explain to your user how 
 
 .. ifconfig:: language == 'en'
 
-    .. image:: security__data-visibility-option--en.png
+    .. image:: images/security__data-visibility-option--en.png
         :alt: Option for data visibility
         :width: 30%
         :align: center
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: security__data-visibility-option--fr.png
+    .. image:: images/security__data-visibility-option--fr.png
         :alt: Option pour la visibilité des données
         :width: 30%
         :align: center
@@ -82,14 +82,14 @@ With the list of fields, you can keep columns private to some users, for example
 
 .. ifconfig:: language == 'en'
 
-    .. image:: security__column-visibility-option--en.png
+    .. image:: images/security__column-visibility-option--en.png
         :alt: Option for column visibility
         :width: 50%
         :align: center
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: security__column-visibility-option--fr.png
+    .. image:: images/security__column-visibility-option--fr.png
         :alt: Option pour la visibilité des colonnes
         :width: 50%
         :align: center
@@ -98,14 +98,14 @@ The query filter permits you to restrict the rows visible for users. It uses the
 
 .. ifconfig:: language == 'en'
 
-    .. image:: security__query-filter--en.png
+    .. image:: images/security__query-filter--en.png
         :alt: Query filters
         :width: 70%
         :align: center
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: security__query-filter--fr.png
+    .. image:: images/security__query-filter--fr.png
         :alt: Requête de filtrage
         :width: 70%
         :align: center
@@ -119,14 +119,14 @@ Domain administrators also have the rights to edit all datasets.
 
 .. ifconfig:: language == 'en'
 
-    .. image:: security__management-rights--en.png
+    .. image:: images/security__management-rights--en.png
         :alt: Management rights for users
         :width: 50%
         :align: center
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: security__management-rights--fr.png
+    .. image:: images/security__management-rights--fr.png
         :alt: Droits de gestion
         :width: 50%
         :align: center

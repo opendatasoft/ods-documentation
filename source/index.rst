@@ -42,7 +42,7 @@ This documentation is OpenDataSoft's reference documentation. It complements inl
    :maxdepth: 3
 
    setup.rst
-   sourcing_and_processing_data/index
+   publishing_data/index
    exploring_catalog_and_datasets/index
    editing_pages/index
    creating_maps_charts/index

@@ -9,12 +9,12 @@ At any time you can remove a dataset from the by the *unpublish* action,
 
 .. ifconfig:: language == 'en'
 
-    .. image:: publish__actions--en.png
+    .. image:: images/publish__actions--en.png
         :alt: Actions
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: publish__actions--en.png
+    .. image:: images/publish__actions--en.png
         :alt: Actions
 
 Actions
@@ -35,8 +35,3 @@ Different status are reachable by a dataset during the processing task.
 * Unpublishing: Dataset is removed from the API.
 * Aborting processing: The *abort* order has been sent to the platform. The dataset processing will stop within the next minute.
 * Limit reached: The user who launched the processing job reached its allowed quota. He overtakes one of the limit (from the domain, the group of the user).
-
-
-
-
-

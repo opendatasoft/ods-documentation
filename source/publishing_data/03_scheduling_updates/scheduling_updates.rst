@@ -15,7 +15,7 @@ This solution is the easiest to implement, it does not require any development, 
 Specifying a resource
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: scheduling__resource--en.png
+.. image:: images/scheduling__resource--en.png
     :alt: resource interface
 
 To be able to schedule a dataset, its underlying resource must be a remote one, specified as a URL (http or ftp work well) and not an uploaded file. To add such a resource, simply paste a URL in the URL input.
@@ -24,7 +24,7 @@ Specifying scheduling interval
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-.. image:: scheduling__scheduling--en.png
+.. image:: images/scheduling__scheduling--en.png
     :alt: scheduling tab
 
 Once a dataset is saved with a remote resource, the scheduling tab is activated. The minimum interval is the minute, but it is not activated by default. Please contact OpenDataSoft's support if you need minute level scheduling on your domain. You can add as many schedule as you want. For instance, if it fits your needs, you could decide to schedule a dataset to be reprocessed every Monday morning and every Wednesday afternoon.
@@ -40,12 +40,12 @@ For some types of data, it can be useful to push data instead of the more tradit
 Configuring the dataset schema
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: realtime__dropdown--en.png
+.. image:: images/realtime__dropdown--en.png
     :alt: source dropdown
 
 To create a realtime dataset, start by navigating to the dataset creation interface. Here, select "add a realtime source".
 
-.. image:: realtime__resource--en.png
+.. image:: images/realtime__resource--en.png
     :alt: realtime resource pane
 
 You will be prompted to enter some bootstrap data and to optionnally fill in additional options. The bootstrap data should have all the fields that will be sent through the API. Please note that the bootstrap data is not used in the dataset: its sole purpose is to allow setting up the dataset.
@@ -53,13 +53,13 @@ You will be prompted to enter some bootstrap data and to optionnally fill in add
 Using the push url
 ~~~~~~~~~~~~~~~~~~
 
-.. image:: realtime__pushurl--en.png
+.. image:: images/realtime__pushurl--en.png
     :scale: 100%
     :alt: push url in the realtime resource
 
 Once your dataset is saved with the correct realtime resource settings, a URL path containing a push api key will appear. This path, appended to your domain base URL is where the platform will expect data to be sent after publication. As is the case with the bootstrap data, the data is expected to be sent in the JSON format, either as a single JSON object for a single record, or an array of JSON objects to push multiple records at once.
 
-.. image:: realtime__record--en.png
+.. image:: images/realtime__record--en.png
     :alt: table view with a single record with value "Hello World!" in the "message" field
 
 A mimimal example of the api usage for a dataset with a single field named "message", using curl, would be
@@ -101,13 +101,13 @@ In order to push a field of type image, a json object containing the base64-enco
 Update data by defining a unique key
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: realtime__library_before--en.png
+.. image:: images/realtime__library_before--en.png
     :scale: 100%
     :alt: table view with 2 records containing respectively 978-0060589462 and 978-2862744506 as isbn and 3 and 5 as number_of_copies
 
 Sometimes it is useful to update the existing records instead of just pushing new ones. An example for this would be a dataset that tracks the number of copies available for each books in a public library. Suppose that we have such a dataset with two fields: ``isbn``, representing the `ISBN <https://en.wikipedia.org/wiki/International_Standard_Book_Number>`_ number of the book, and ``number_of_copies`` tracking the current number of copies available in the library. It would not make a lot of sense to add one record for each new value of ``number_of_copies``, instead, it would be better to set the new ``number_of_copies`` value to the record corresponding to the book ``isbn``.
 
-.. image:: realtime__unique_id--en.png
+.. image:: images/realtime__unique_id--en.png
     :alt: unique ID option in the field dropdown
 
 In order to set up such a system with the OpenDataSoft platform, the fields that will be used as a unique key must be marked as so. In our example, the unique key would be isbn, because the rest of the data is linked to individual books, and these books are identified by the ISBN. This can be done in the processing view, in the menu that pops when the configuration button is pressed. It is possible to set multiple fields as unique keys. Then, after saving and publishing, if a new record whose key value is equal to an existing record is pushed, the new record will overwrite the old record. In our library case, if your dataset has ``isbn`` as the unique key, and contains these two records.
@@ -133,7 +133,7 @@ If somebody borrows a copy of Zen and the Art of Motorcycle Maintenance, and you
         "number_of_copies": 2
     }
 
-.. image:: realtime__library_after--en.png
+.. image:: images/realtime__library_after--en.png
     :scale: 100%
     :alt: table view with 2 records containing respectively 978-0060589462 and 978-2862744506 as isbn and 2 and 5 as number_of_copies
 
@@ -163,7 +163,7 @@ If you know the record ID of the record you want to delete, simply make a GET re
 Get notified in case of inactivity
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: realtime__alerting--en.png
+.. image:: images/realtime__alerting--en.png
     :alt: inactivity alerting settings in RT resource view
 
 If you expect a system to push data to the platform often, you may want to be notified if no record has been received by the platform in a while. In order to get notified, you can enable the "Alerting" option in the source configuration, and setup a time threshold in minutes. If a time span greater than the threshold has occured during which no record has been received, you will receive an email.
@@ -171,7 +171,7 @@ If you expect a system to push data to the platform often, you may want to be no
 Unpublishing and disabling the api
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: realtime__disable--en.png
+.. image:: images/realtime__disable--en.png
     :alt: "disable push" button in RT resource view
 
 Beware of unpublishing your dataset, as this will not keep existing records for the next time the dataset is published. If you desire to avoid getting new data, you should instead click the "disable push" button in the resource setting. This will prevent the usage of the push API but will have no effect on existing data. If data is pushed while push is disabled on the resource, no data will be added and an error will be sent.
@@ -179,12 +179,12 @@ Beware of unpublishing your dataset, as this will not keep existing records for 
 Recovery
 ~~~~~~~~
 
-.. image:: realtime__recovery_option--en.png
+.. image:: images/realtime__recovery_option--en.png
     :alt: recovery option in realtime resource view
 
 In the event of data loss, for instance when the dataset has been unpublished or when a processor has been misconfigured, there is a possibility of recovering the lost records. To do so, the recovery option must have been activated prior to the records being pushed to the platform.
 
-.. image:: realtime__recovery_button--en.png
+.. image:: images/realtime__recovery_button--en.png
     :alt: recover data button in realtime resource view
 
 When the recovery is activated every subsequent record received will be backed up, and will be elligible for recovery. In order to recover eligible records, the "recover data" button on the source configuration page can be used.

@@ -13,13 +13,13 @@ The FTP folder must contain:
 
 .. ifconfig:: language == 'en'
 
-    .. figure:: img/ftp_folder--en.png
+    .. figure:: ../images/ftp_folder--en.png
         :alt: FTP folder layout
         :align: center
 
 .. ifconfig:: language == 'fr'
 
-    .. figure:: img/ftp_folder--en.png
+    .. figure:: ../images/ftp_folder--en.png
         :alt: Organisation du dossier FTP
         :align: center
 

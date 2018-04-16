@@ -37,14 +37,14 @@ Filling metadata
 When creating or editing a dataset from the back-office, you can fill the metadata
 from the "Information" tab.
 
-.. image:: metadata__form--en.png
+.. image:: images/metadata__form--en.png
 
 You are presented with a form representing all the available metadata to fill
 for the dataset. The first part of the form represents all the basic metadata.
 The second part of the form represent the groups of interoperability metadata
 available on the portal.
 
-.. image:: metadata__interop--en.png
+.. image:: images/metadata__interop--en.png
 
 Standard metadata
 ~~~~~~~~~~~~~~~~~
