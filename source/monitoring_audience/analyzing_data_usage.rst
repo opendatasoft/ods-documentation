@@ -35,17 +35,18 @@ Totals
     * Figure
     * Total number of downloads in all published datasets combined
   * * API calls
+    * Figure
     * Total number of API calls for all published datasets combined
   * * Reuses
     * Figure
-    * Total number of reuses in all published datasets combined
+    * Total number of reuses for all published datasets combined
 
 .. screenshot
 
 Popularity
 ----------
 
-The Popularity section of the Data dashboard is based upon a computation that quantifies dataset consumption through a metric. This metric is based on 3 criterias: number of downloads, number of API calls and number of reuses. These 3 criterias combined into a formula (popularity = 3.22 -2 √[API calls] + 5.38 -2 √[Downloads] + [Reuses]) indicate whether a dataset published into an OpenDataSoft portal can be considered popular or not, compared to the other datasets of that portal.
+The Popularity section of the Data dashboard is based upon a computation aiming at quantifying dataset consumption in order to establish popularity scores for datasets. This computation is based on 3 criterias: number of downloads, number of API calls and number of reuses. These 3 criterias combined into a formula (popularity = 3.22 -2 √[API calls] + 5.38 -2 √[Downloads] + [Reuses]) indicate whether a dataset published into an OpenDataSoft portal can be considered popular or not, compared to the other datasets of that portal.
 
 .. list-table::
   :header-rows: 1
