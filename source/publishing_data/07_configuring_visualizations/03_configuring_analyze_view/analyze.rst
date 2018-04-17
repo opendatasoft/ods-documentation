@@ -7,13 +7,13 @@ Configuring the default chart
 
 .. ifconfig:: language == 'en'
 
-   .. figure:: analyze__analyze--en.jpg
+   .. figure:: images/analyze__analyze--en.jpg
 
       The analyze options
 
 .. ifconfig:: language == 'fr'
 
-   .. figure:: analyze__analyze--fr.jpg
+   .. figure:: images/analyze__analyze--fr.jpg
 
       The analyze options
 

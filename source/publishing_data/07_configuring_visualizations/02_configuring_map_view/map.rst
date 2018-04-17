@@ -17,13 +17,13 @@ You can configure the appearance of the map itself:
 
 .. ifconfig:: language == 'en'
 
-   .. figure:: map__options--en.jpg
+   .. figure:: images/map__options--en.jpg
 
       The map view options
 
 .. ifconfig:: language == 'fr'
 
-   .. figure:: map__options--fr.jpg
+   .. figure:: images/map__options--fr.jpg
 
       The map view options
 
@@ -33,7 +33,7 @@ Setting up the tooltip
 
 On a map, a click on a point will bring forward a tooltip containing more information
 
-.. image:: map__tooltip--en.jpg
+.. image:: images/map__tooltip--en.jpg
         :alt: Map Tooltip
 
-You can :doc:`configure the tooltip</publishing_data/07_configuring_visualizations/tooltip>` in exactly the same way than for the image gallery or the calendar.
+You can :doc:`configure the tooltip</publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip>` in exactly the same way than for the image gallery or the calendar.

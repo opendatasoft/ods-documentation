@@ -12,13 +12,13 @@ want (for more information about writing beautiful dashboard, see the
 
 .. ifconfig:: language == 'en'
 
-   .. figure:: custom__view--en.png
+   .. figure:: images/custom__view--en.png
 
       The custom view editor
 
 .. ifconfig:: language == 'fr'
 
-   .. figure:: custom__view--fr.png
+   .. figure:: images/custom__view--fr.png
 
       The custom view editor
 
@@ -47,7 +47,7 @@ To illustrate the relative importance of the various sources of energy within th
 treemap with the analyse tab and set this visualization in the custom tab.
 
 
-.. figure:: custom__treemap.png
+.. figure:: images/custom__treemap.png
 
     The treemap we want to see.
 
@@ -76,7 +76,7 @@ will be independant from the rest of the dataset's page, and especially independ
 This means that we can't take advantage of the existing *producer* filter to refine the treemap and see what technology
 such and such company is more investing in.
 
-.. figure:: custom__static-treemap.png
+.. figure:: images/custom__static-treemap.png
 
     The treemap in the custom view is not affected by the active filter
 
@@ -100,7 +100,7 @@ such.
 
 This time, the treemap will be actualized depending on the current filters, which allows for more in-depth exploring.
 
-.. figure:: custom__dynamic-treemap.png
+.. figure:: images/custom__dynamic-treemap.png
 
     The treemap in the custom view is now taking into account active filters
 

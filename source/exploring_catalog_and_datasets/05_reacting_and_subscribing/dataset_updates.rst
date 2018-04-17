@@ -7,24 +7,24 @@ Every user that is logged on your domain is able to follow any dataset they can 
 
 .. ifconfig:: language == 'en'
 
-   .. image:: img/dataset_subscriptions__subscribe-button--en.png
+   .. image:: images/dataset_subscriptions__subscribe-button--en.png
       :alt: Follow button
 
 .. ifconfig:: language == 'fr'
 
-   .. image:: img/dataset_subscriptions__subscribe-button--fr.png
+   .. image:: images/dataset_subscriptions__subscribe-button--fr.png
       :alt: Bouton suivre les mises à jour
 
 When there is at least one subscriber on a dataset, then a new **Subscribers** tab is available to its publishers in the dataset's publish console. This tab provides the list of users that are currently subscribed, and a form to directly send them a notification by email.
 
 .. ifconfig:: language == 'en'
 
-   .. image:: img/dataset_subscriptions__publisher-tab--en.png
+   .. image:: images/dataset_subscriptions__publisher-tab--en.png
       :alt: Publisher tab
 
 .. ifconfig:: language == 'fr'
 
-   .. image:: img/dataset_subscriptions__publisher-tab--fr.png
+   .. image:: images/dataset_subscriptions__publisher-tab--fr.png
       :alt: Onglet pour producteur
 
 It is recommended to send a notification when the structure of the dataset changes (e.g. a field disappears or changes its name), or when the data changes in a significant way.

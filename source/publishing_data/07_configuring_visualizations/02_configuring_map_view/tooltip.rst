@@ -5,37 +5,37 @@ In order to display information on a map, on a image or in a calendar, you can c
 
 .. ifconfig:: language == 'en'
 
-    .. figure:: tooltip__select-type--en.jpg
+    .. figure:: images/tooltip__select-type--en.jpg
 
        Setting up the tooltip
 
 .. ifconfig:: language == 'fr'
 
-    .. figure:: tooltip__select-type--fr.jpg
+    .. figure:: images/tooltip__select-type--fr.jpg
 
        Setting up the tooltip
 
 Standard tooltip
----------------- 
+----------------
 
 You can of course configure which fields will appear in the tooltip and their relative order. A live preview is available
 on the right side.
 
 .. ifconfig:: language == 'en'
 
-    .. figure:: tooltip__settings--en.png
+    .. figure:: images/tooltip__settings--en.png
 
        Setting up the tooltip
 
 .. ifconfig:: language == 'fr'
 
-    .. figure:: tooltip__settings--fr.png
+    .. figure:: images/tooltip__settings--fr.png
 
        Setting up the tooltip
 
 For each of the tooltip's fields, the 3 following actions are available :
 
-.. figure:: tooltip__actions.png
+.. figure:: images/tooltip__actions.png
 
    Tooltip's fields' actions
 
@@ -45,13 +45,13 @@ For each of the tooltip's fields, the 3 following actions are available :
 
 .. ifconfig:: language == 'en'
 
-    .. figure:: tooltip__preview--en.png
+    .. figure:: images/tooltip__preview--en.png
 
        The associated live preview
 
 .. ifconfig:: language == 'fr'
 
-    .. figure:: tooltip__preview--fr.png
+    .. figure:: images/tooltip__preview--fr.png
 
        The associated live preview
 
@@ -62,13 +62,13 @@ When you select `Custom HTML tooltip` an HTML editor appears. This is very simil
 
 .. ifconfig:: language == 'en'
 
-   .. figure:: tooltip__custom-tooltip--en.jpg
+   .. figure:: images/tooltip__custom-tooltip--en.jpg
 
       An example of a custom tooltip.
 
 .. ifconfig:: language == 'fr'
 
-   .. figure:: tooltip__custom-tooltip--fr.jpg
+   .. figure:: images/tooltip__custom-tooltip--fr.jpg
 
       An example of a custom tooltip.
 
@@ -104,8 +104,8 @@ Here is the code from the example above:
         <li ng-if="record.fields.has_issue == 'TRUE'" style="color:#ec643c;"><i class="fa fa-exclamation-triangle"></i> An issue has been reported on this  portal</li>
         <li>
             <ul style="list-style-type: none; color: #2c3f56;padding:0 0 15px;margin-top:0px;">
-                <li style="display: inline;float:left;"><strong style="font-size:13px;"><a ng-href="https://docs.google.com/forms/  d/1-9m30rCw492oGCB7Pg3aOsZ-q03KBeJsw_GZFLqIvNE/   viewform?entry.1740897944={{record.fields.name}}&amp;entry.1624486384={{record.fields.url}}&amp;entry.462034829&amp;entry.848235220"   style="color:#ccc;" target="_blank">Report an issue </a></strong><i class="fa fa-external-link" style="color:#ccc;"></i></li> 
-                <li style="display: inline;float:right;"><strong style="font-size:13px;"><a ng-href="{{record.fields.url}}" style="color:#ec643c;"  target="_blank">Open this portal </a></strong><i class="fa fa-external-link" style="color:#ec643c;"></i></li> 
+                <li style="display: inline;float:left;"><strong style="font-size:13px;"><a ng-href="https://docs.google.com/forms/  d/1-9m30rCw492oGCB7Pg3aOsZ-q03KBeJsw_GZFLqIvNE/   viewform?entry.1740897944={{record.fields.name}}&amp;entry.1624486384={{record.fields.url}}&amp;entry.462034829&amp;entry.848235220"   style="color:#ccc;" target="_blank">Report an issue </a></strong><i class="fa fa-external-link" style="color:#ccc;"></i></li>
+                <li style="display: inline;float:right;"><strong style="font-size:13px;"><a ng-href="{{record.fields.url}}" style="color:#ec643c;"  target="_blank">Open this portal </a></strong><i class="fa fa-external-link" style="color:#ec643c;"></i></li>
             </ul>
         </li>
     </ul>

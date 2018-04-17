@@ -5,13 +5,13 @@ The OpenDataSoft platform lets you easily create calendar views from your publis
 
 .. ifconfig:: language == 'en'
 
-    .. figure:: calendar__result--en.png
+    .. figure:: images/calendar__result--en.png
 
        A calendar built from a dataset containing all events from OpenAgenda
 
 .. ifconfig:: language == 'fr'
 
-    .. figure:: calendar__result--fr.png
+    .. figure:: images/calendar__result--fr.png
 
        A calendar built from a dataset containing all events from OpenAgenda
 
@@ -24,13 +24,13 @@ available.
 
 .. ifconfig:: language == 'en'
 
-    .. figure:: calendar__processing-settings--en.png
+    .. figure:: images/calendar__processing-settings--en.png
 
        2 fields set as datetime
 
 .. ifconfig:: language == 'fr'
 
-    .. figure:: calendar__processing-settings--fr.png
+    .. figure:: images/calendar__processing-settings--fr.png
 
        2 fields set as datetime
 
@@ -54,21 +54,21 @@ tab become available.
 
 .. ifconfig:: language == 'en'
 
-    .. figure:: calendar__tab-unavailable--en.png
+    .. figure:: images/calendar__tab-unavailable--en.png
 
        Calendar tab unavailable
 
-    .. figure:: calendar__tab-available--en.png
+    .. figure:: images/calendar__tab-available--en.png
 
        Calendar tab available
 
 .. ifconfig:: language == 'fr'
 
-    .. figure:: calendar__tab-unavailable--fr.png
+    .. figure:: images/calendar__tab-unavailable--fr.png
 
        Calendar tab unavailable
 
-    .. figure:: calendar__tab-available--fr.png
+    .. figure:: images/calendar__tab-available--fr.png
 
        Calendar tab available
 
@@ -77,13 +77,13 @@ have to manually enable it.
 
 .. ifconfig:: language == 'en'
 
-    .. figure:: calendar__checkbox--en.png
+    .. figure:: images/calendar__checkbox--en.png
 
        This checkbox will enable the calendar view
 
 .. ifconfig:: language == 'fr'
 
-    .. figure:: calendar__checkbox--fr.png
+    .. figure:: images/calendar__checkbox--fr.png
 
        This checkbox will enable the calendar view
 
@@ -99,21 +99,21 @@ This is also where you'll be able to select the events' color.
 
 .. ifconfig:: language == 'en'
 
-    .. figure:: calendar__event-default-settings--en.png
+    .. figure:: images/calendar__event-default-settings--en.png
 
        Default configuration for my calendar. The event's fields are pre-selected but not correct.
 
-    .. figure:: calendar__event-settings--en.png
+    .. figure:: images/calendar__event-settings--en.png
 
        Corrected settings
 
 .. ifconfig:: language == 'fr'
 
-    .. figure:: calendar__event-default-settings--fr.png
+    .. figure:: images/calendar__event-default-settings--fr.png
 
        Default configuration for my calendar. The event's fields are pre-selected but not correct.
 
-    .. figure:: calendar__event-settings--fr.png
+    .. figure:: images/calendar__event-settings--fr.png
 
        Corrected settings
 
@@ -122,10 +122,10 @@ Setting up the tooltip
 
 In the calendar view, a click on a event will bring forward a tooltip containing more information about the events.
 
-.. image:: calendar__tooltip--en.jpg
+.. image:: images/calendar__tooltip--en.jpg
         :alt: Calendar tooltip
 
-You can :doc:`configure the tooltip</publishing_data/07_configuring_visualizations/tooltip>` in exactly the same way than for the map or the images. 
+You can :doc:`configure the tooltip</publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip>` in exactly the same way than for the map or the images.
 
 Sharing
 -------
@@ -140,13 +140,13 @@ offered below the calendar itself.
 
 .. ifconfig:: language == 'en'
 
-    .. figure:: calendar__share--en.png
+    .. figure:: images/calendar__share--en.png
 
        The 3 sharing options, with first and foremost the url
 
 .. ifconfig:: language == 'fr'
 
-    .. figure:: calendar__share--fr.png
+    .. figure:: images/calendar__share--fr.png
 
        The 3 sharing options, with first and foremost the url
 
@@ -154,13 +154,13 @@ offered below the calendar itself.
 
 .. ifconfig:: language == 'en'
 
-    .. figure:: calendar__embed--en.png
+    .. figure:: images/calendar__embed--en.png
 
        Embed this code into any other page to display your calendar there
 
 .. ifconfig:: language == 'fr'
 
-    .. figure:: calendar__embed--fr.png
+    .. figure:: images/calendar__embed--fr.png
 
        Embed this code into any other page to display your calendar there
 
@@ -168,12 +168,12 @@ offered below the calendar itself.
 
 .. ifconfig:: language == 'en'
 
-    .. figure:: calendar__widget--en.png
+    .. figure:: images/calendar__widget--en.png
 
        Copy this code to one your dashboard on the platform
 
 .. ifconfig:: language == 'fr'
 
-    .. figure:: calendar__widget--fr.png
+    .. figure:: images/calendar__widget--fr.png
 
        Copy this code to one your dashboard on the platform

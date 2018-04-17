@@ -5,5 +5,5 @@ OpenDataSoft lets you download datasets in various formats. CSV, JSON and Excel 
 
 To export a dataset, go to the **Export** tab and choose the file format you want to download. If you selected filtering options, another option to download only the selected records will appear.
 
-.. image:: img/export.png
+.. image:: images/export.png
    :alt: Export a dataset

@@ -13,7 +13,7 @@ Setting up the tooltip
 
 In the image gallery view, a click on a image will bring forward a tooltip containing more information about the image.
 
-.. image:: image__tooltip--en.jpg
+.. image:: images/image__tooltip--en.jpg
         :alt: Image Tooltip
 
-You can :doc:`configure the tooltip</publishing_data/07_configuring_visualizations/tooltip>` in exactly the same way than for the map or the calendar.
+You can :doc:`configure the tooltip</publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip>` in exactly the same way than for the map or the calendar.

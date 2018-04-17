@@ -12,10 +12,10 @@ visualizations and if you export the dataset.
 
 .. ifconfig:: language == 'en'
 
-    .. image:: table__table--en.jpg
+    .. image:: images/table__table--en.jpg
         :alt: Table view
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: table__table--fr.jpg
+    .. image:: images/table__table--fr.jpg
         :alt: Vue Table

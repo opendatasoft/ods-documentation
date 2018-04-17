@@ -16,12 +16,12 @@ This can be achieved by switching to the **Map** tab in the dataset explore page
 
 .. ifconfig:: language == 'en'
 
-    .. image:: img/explore__map--en.png
+    .. image:: images/explore__map--en.png
        :alt: Explore Map
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: img/explore__map--fr.png
+    .. image:: images/explore__map--fr.png
        :alt: Explorer la carte
 
 Displaying data on a chart
@@ -31,12 +31,12 @@ This can be achieved by switching to the **Analyze** tab in the dataset explore 
 
 .. ifconfig:: language == 'en'
 
-    .. image:: img/explore__chart--en.png
+    .. image:: images/explore__chart--en.png
        :alt: Explore Chart
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: img/explore__chart--fr.png
+    .. image:: images/explore__chart--fr.png
        :alt: Explorer le graphique
 
 Reusing a visualization
@@ -44,7 +44,7 @@ Reusing a visualization
 
 Any visualization built with OpenDataSoft can easily be reused as is.
 
-.. image:: img/explore_embed.jpg
+.. image:: images/explore_embed.jpg
    :alt: Embed
 
 At the bottom of the *Map* and *Chart* tabs, there is a widget that allows you to share a visualization you made:
@@ -58,7 +58,7 @@ At the bottom of the *Map* and *Chart* tabs, there is a widget that allows you t
 You can list reuses on the dataset page, to help promote both the reuse itself and your data. The reuses will be listed at the bottom of the information tab on each dataset page.
 You can learn more about this feature in the section :doc:`Encouraging reuses </configuring_portal/engaging>`.
 
-.. image:: img/explore__reuse--fr.png
+.. image:: images/explore__reuse--fr.png
 
 Filtering the records
 ---------------------
