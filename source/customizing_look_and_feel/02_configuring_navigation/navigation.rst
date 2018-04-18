@@ -6,10 +6,10 @@ be done by editing the menu components in the *Domain > Portal > General setting
 
 .. ifconfig:: language == 'en'
 
-  .. image:: navigation__domain-menu--en.png
+  .. image:: images/navigation__domain-menu--en.png
     :alt: Domain menu
 
 .. ifconfig:: language == 'fr'
 
-  .. image:: navigation__domain-menu--fr.png
+  .. image:: images/navigation__domain-menu--fr.png
     :alt: Domain menu

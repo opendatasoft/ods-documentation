@@ -16,23 +16,23 @@ A responsive portal header
     of HTML and CSS code to be written and explained. You'll need working knowledge of both these technologies to
     understand the content of this page.
 
-    For basic customization needs, check out :doc:`customizing your portal's theme <theme>`.
+    For basic customization needs, check out :doc:`customizing your portal's theme </customizing_look_and_feel/06_customizing_theme/theme>`.
 
 
 One very common pattern in graphic design is to have the header menu hidden on small screens and replaced by a single
 toggle button, which usually features the famous *hamburger icon* |hamburger|.
 
-.. |hamburger| image:: responsive-menus__hamburger.png
+.. |hamburger| image:: images/responsive-menus__hamburger.png
 
 Clicking this button opens or closes a drawer containing all menu items. This behaviour can be seen on
 `OpenDataSoft's central data repository <https://data.opendatasoft.com/page/home/>`_ and on all new portals.
 
-.. figure:: responsive-menus__data-collapsed.png
+.. figure:: images/responsive-menus__data-collapsed.png
     :align: left
 
     Closed drawer
 
-.. figure:: responsive-menus__data-expanded.png
+.. figure:: images/responsive-menus__data-expanded.png
     :align: right
 
     Open drawer
@@ -77,12 +77,12 @@ Writing styles for the collapsed header content
 Going from an horizontal layout to a vertical layouts entails quite a few graphical changes, as demonstrated by the
 platform's default header.
 
-.. figure:: responsive-menus__header-desktop.png
+.. figure:: images/responsive-menus__header-desktop.png
     :align: center
 
     Desktop header.
 
-.. figure:: responsive-menus__header-mobile.png
+.. figure:: images/responsive-menus__header-mobile.png
     :align: center
 
     Mobile header.
@@ -188,7 +188,7 @@ Translated into html code:
 
 Will render as (colors and labels added via CSS specifically for these examples):
 
-.. image:: grid-layouts__concept.png
+.. image:: images/grid-layouts__concept.png
 
 You can of course specify cells covering less than 12 columns, in which case there will be remaining white space at the
 end. In the case they cover more than 12 columns, the cells would wrap and create a new line within the row.
@@ -212,7 +212,7 @@ Hence, this:
 
 Will render as this:
 
-.. image:: grid-layouts__overflow.png
+.. image:: images/grid-layouts__overflow.png
 
 Responsive grid layouts
 -----------------------

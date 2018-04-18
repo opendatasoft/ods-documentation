@@ -8,7 +8,7 @@ Mapbox integration
 provide a dozen different map styles that you can directly use. If you have a Mapbox account, you can configure it into
 OpenDataSoft so that your users can display your data over these map styles.
 
-.. image:: basemaps__mapbox-newyork.png
+.. image:: images/basemaps__mapbox-newyork.png
    :alt: Data over Mapbox
 
 If you don't have a Mapbox account, you can create one for free, although it is going to have a small number of allowed
@@ -24,12 +24,12 @@ enter your Mapbox public access token. A message will confirm whether your acces
 
 .. ifconfig:: language == 'en'
 
-    .. image:: basemaps__mapbox-integration--en.png
+    .. image:: images/basemaps__mapbox-integration--en.png
        :alt: Mapbox integration configuration
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: basemaps__mapbox-integration--fr.png
+    .. image:: images/basemaps__mapbox-integration--fr.png
        :alt: Configuration de l'intégration Mapbox
 
 Below the Mapbox integration token, you will be able to select one of Mapbox's
@@ -37,11 +37,10 @@ default styles, or choose "Custom" to enter the MapID of a map you created on Ma
 
 .. ifconfig:: language == 'en'
 
-    .. image:: basemaps__mapbox-custom-tiles--en.png
+    .. image:: images/basemaps__mapbox-custom-tiles--en.png
        :alt: Custom tiles configuration
 
 .. ifconfig:: language == 'fr'
 
-    .. image:: basemaps__mapbox-custom-tiles--fr.png
+    .. image:: images/basemaps__mapbox-custom-tiles--fr.png
        :alt: Configuration des tuiles personnalisées
-

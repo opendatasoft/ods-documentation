@@ -16,11 +16,11 @@ click the ``Look & feel`` section in the navigation bar and then on the ``theme`
 
 .. ifconfig:: language == 'en'
 
-   .. image:: theme__interface--en.png
+   .. image:: images/theme__interface--en.png
 
 .. ifconfig:: language == 'fr'
 
-   .. image:: theme__interface--fr.png
+   .. image:: images/theme__interface--fr.png
 
 Using the various forms available in this page, you'll be able to customize every aspect of your portal, from basic
 colors to making major changes in its layout.
@@ -48,11 +48,11 @@ new window containing your portal with the current version of the theme applied 
 
 .. ifconfig:: language == 'en'
 
-   .. image:: theme__versioning--en.png
+   .. image:: images/theme__versioning--en.png
 
 .. ifconfig:: language == 'fr'
 
-   .. image:: theme__versioning--fr.png
+   .. image:: images/theme__versioning--fr.png
 
 The version selector will tell you explicitly if you're working on the latest version or rather viewing a previous one,
 as well as which version is live.
@@ -71,11 +71,11 @@ its CSS. This tab allows you to set the value of some of these variables.
 
 .. ifconfig:: language == 'en'
 
-   .. image:: theme__layout-options--en.png
+   .. image:: images/theme__layout-options--en.png
 
 .. ifconfig:: language == 'fr'
 
-   .. image:: theme__layout-options--fr.png
+   .. image:: images/theme__layout-options--fr.png
 
 The variables that can currently be overridden are the *gutter width* and the *responsive breakpoints*.
 
@@ -101,11 +101,11 @@ your portal to your colors.
 
 .. ifconfig:: language == 'en'
 
-   .. image:: theme__colors--en.png
+   .. image:: images/theme__colors--en.png
 
 .. ifconfig:: language == 'fr'
 
-   .. image:: theme__colors--fr.png
+   .. image:: images/theme__colors--fr.png
 
 .. note::
     These variables will override the default theme's colors. The custom style rules you can write in the stylesheet tab
@@ -123,14 +123,14 @@ precedence over them.
 
 .. ifconfig:: language == 'en'
 
-   .. image:: theme__stylesheet--en.png
+   .. image:: images/theme__stylesheet--en.png
 
 .. ifconfig:: language == 'fr'
 
-   .. image:: theme__stylesheet--fr.png
+   .. image:: images/theme__stylesheet--fr.png
 
 If your customization uses specific images and fonts, you can upload them to the platform using the
-:doc:`assets management page <assets>`. You'll then be able to copy the assets URLs and paste them in your CSS code.
+:doc:`assets management page </customizing_look_and_feel/03_adding_assets/assets>`. You'll then be able to copy the assets URLs and paste them in your CSS code.
 
 .. important::
     To change the style of an element, you only have to find the element's class and change the desired CSS property.
@@ -154,16 +154,16 @@ organizations usually want to further customize the layout and content of these 
 
 .. ifconfig:: language == 'en'
 
-   .. image:: theme__header--en.png
+   .. image:: images/theme__header--en.png
 
 .. ifconfig:: language == 'fr'
 
-   .. image:: theme__header--fr.png
+   .. image:: images/theme__header--fr.png
 
 Both header and footer are wrapped within independent AngularJS applications, which means you can use `ng-if`,
 `ng-class`, `ng-show`, `ng-hide` and all of Angular's standard directives to make the areas more dynamic. One common
 request is to collapse the header into a *click-to-expand* side menu below a certain viewport width. For this purpose we
-provide the `ods-responsive-menu` directive. See :doc:`this dedicated page <responsive>` for more information.
+provide the `ods-responsive-menu` directive. See :doc:`this dedicated page </customizing_look_and_feel/07_designing_responsive_portal/responsive>` for more information.
 
 We also provide placeholders that will be replaced with the content specified in the domain customization options such
 as menu items, language selectors and logos. The full list is displayed right above the code area.
@@ -181,20 +181,20 @@ behaviours.
 
 Here are a few examples of catalog cards:
 
-.. image:: theme__catalog-card-example-central.png
-.. image:: theme__catalog-card-example-datacorsica.png
-.. image:: theme__catalog-card-example-toulouse.png
+.. image:: images/theme__catalog-card-example-central.png
+.. image:: images/theme__catalog-card-example-datacorsica.png
+.. image:: images/theme__catalog-card-example-toulouse.png
 
 We provide handy directives to easily retrieve and include any information relative to a dataset. These directives also
 come with a standard style that you can override using the *Stylesheet* tab.
 
 .. ifconfig:: language == 'en'
 
-   .. image:: theme__catalog-card--en.png
+   .. image:: images/theme__catalog-card--en.png
 
 .. ifconfig:: language == 'fr'
 
-   .. image:: theme__catalog-card--fr.png
+   .. image:: images/theme__catalog-card--fr.png
 
 The directives are:
 
@@ -241,7 +241,7 @@ The directives are:
      * For federated datasets only, the original identifier of the dataset on its source domain
    * * explore.download_count
      * Number of data downloads for this dataset
-       
+
 
 
 
@@ -271,14 +271,13 @@ section and copy the key.
 
 .. ifconfig:: language == 'en'
 
-   .. image:: theme__offline-dev--en.png
+   .. image:: images/theme__offline-dev--en.png
 
 .. ifconfig:: language == 'fr'
 
-   .. image:: theme__offline-dev--fr.png
+   .. image:: images/theme__offline-dev--fr.png
 
 .. warning::
     By generating a new key, you'll also be revoking previous ones. As a result, developers using an old key won't be
     able to push their work to the platform. Just remember to forward the new key to each developer working on your
     portal's theme to ensure that development goes uninterrupted.
-

@@ -405,7 +405,7 @@ This dashboard starts to be nice but every widgets are in the same column, one a
 .. note::
 
 	At this point you need to be aware of the platform possibilities about CSS and HTML Style.
-	Please read carrefully the :doc:`responsive grid layout management </customizing_look_and_feel/responsive>` documentation.
+	Please read carrefully the :doc:`responsive grid layout management </customizing_look_and_feel/07_designing_responsive_portal/responsive>` documentation.
 
 
 We will split the screen into two main areas : on the left a navigation bar, on the right the main content.
