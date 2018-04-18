@@ -17,7 +17,7 @@ description.
 
   Result
 
-  .. image:: integrate_content__ods-page-enumerator--en.png
+  .. image:: images/integrate_content__ods-page-enumerator--en.png
      :alt: The list generated with the above use of odsPageEnumerator
 
 * ``odsPagesList``
@@ -30,5 +30,5 @@ description.
 
   Result
 
-  .. image:: integrate_content__ods-pages-list--en.png
+  .. image:: images/integrate_content__ods-pages-list--en.png
      :alt: The list generated with the above use of odsPagesList

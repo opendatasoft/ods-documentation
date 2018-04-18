@@ -1,5 +1,5 @@
-Editing pages
-=============
+Creating content
+================
 
 The OpenDataSoft platform allows you to publish and explore datasets, but you can also use it to build
 fully customized content pages, mixing editorial content as well as data visualizations built from your own
@@ -15,6 +15,6 @@ Content pages can be used to:
 .. toctree::
    :maxdepth: 2
 
-   create
-   style
-   integrate_content
+   01_creating_content_page/create
+   01_creating_content_page/style
+   02_integrating_content/integrate_content

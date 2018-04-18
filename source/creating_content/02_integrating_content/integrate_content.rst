@@ -12,11 +12,11 @@ By doing so, you will embed the visualization inside your page.
 
 .. ifconfig:: language == 'en'
 
-  .. image:: integrate_map--en.png
+  .. image:: images/integrate_map--en.png
 
 .. ifconfig:: language == 'fr'
 
-  .. image:: integrate_map--fr.png
+  .. image:: images/integrate_map--fr.png
 
 
 Embedding a Twitter timeline
@@ -406,7 +406,7 @@ A step by step tutorial to create a simple dashboard with data visualization, fi
  .. toctree::
 	:maxdepth: 2
 
-   	dashboard/dashboard
+   	../tutorials/dashboard/dashboard
 
 
 Going further with advanced widgets
@@ -415,6 +415,6 @@ Going further with advanced widgets
 .. toctree::
     :maxdepth: 2
 
-    dashboard/advanced_dashboard
-    dashboard/contact_form
-    dashboard/pages_list
+    ../tutorials/advanced_dashboard/advanced_dashboard
+    ../tutorials/contact_form/contact_form
+    ../tutorials/pages_list/pages_list

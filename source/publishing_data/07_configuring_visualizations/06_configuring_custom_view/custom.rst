@@ -8,7 +8,7 @@ bit of context, it is limited to pure text.
 The custom view is an additional tab that lives alongside the other tabs on the dataset's page. It is an empty space
 that you can use as you wish. An HTML and CSS editor enables you to write a dashboard as simple or as complex as you may
 want (for more information about writing beautiful dashboard, see the
-:doc:`dedicated documentation </editing_pages/index>`) and you can even customize the title and icon of this additional tab.
+:doc:`dedicated documentation </creating_content/index>`) and you can even customize the title and icon of this additional tab.
 
 .. ifconfig:: language == 'en'
 

@@ -1,5 +1,5 @@
 Metrics/KPI and Data tables
-================================
+===========================
 
 Charts, Maps, tables, calendar are default views. Lot of additionnal parameters are waiting for you in the documentation.
 In the mean time, a lot of other widgets are as insterested as the main ones.
@@ -128,7 +128,7 @@ Before going further with CSS and specially repsonsive code, let's add 2 more me
 
 Result :
 
- .. image:: advanced__kpi-1.png
+ .. image:: images/advanced__kpi-1.png
 
 It works but all metrics are independant. We can add filters to make them become dynamic depending on user filters etc... but we can't compute any thing from it.
 It would be interesting to have the pourcentage of canceled or delayed train out of the total.
@@ -279,7 +279,7 @@ And replace the CSS :
 
 Save, refresh, see :
 
- .. image:: advanced__kpi-2.png
+ .. image:: images/advanced__kpi-2.png
 
 
 
@@ -361,8 +361,8 @@ To clearly see the dynamic behavior, let's add some filters on the left of the t
 
 Save, refresh, and see how it behave when filters are selected, In 2013, Paris EST Station had less than 0,20% of canceled train. Have it a look.
 
- .. image:: advanced__kpi-ngclass-1.png
- .. image:: advanced__kpi-ngclass-2.png
+ .. image:: images/advanced__kpi-ngclass-1.png
+ .. image:: images/advanced__kpi-ngclass-2.png
 
  .. note::
 
@@ -577,7 +577,7 @@ Finally, let's colorize % delayed and % canceled metrics, if the filtered result
 
 Save, refresh, and test with year 2015 :
 
- .. image:: advanced__kpi-ngclass-3.png
+ .. image:: images/advanced__kpi-ngclass-3.png
 
 
 Create a data table
@@ -599,7 +599,7 @@ To do so :
 - sort by regularity serie
 - Number of point : 10 max
 
- .. image:: advanced__data-table-1.png
+ .. image:: images/advanced__data-table-1.png
 
 The aim is to reproduce this exact analysis with ``odsAnalysis``. As a reminder, please visit the documentation `here <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsAnalysis>`_
 
@@ -745,5 +745,4 @@ Some CSS to render the HTML table nicely :
 
 Save, refresh, play with filters :
 
- .. image:: advanced__data-table-2.png
-
+ .. image:: images/advanced__data-table-2.png

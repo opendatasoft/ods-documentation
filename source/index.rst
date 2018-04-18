@@ -44,7 +44,7 @@ This documentation is OpenDataSoft's reference documentation. It complements inl
    setup.rst
    publishing_data/index
    exploring_catalog_and_datasets/index
-   editing_pages/index
+   creating_content/index
    creating_maps_charts/index
    configuring_portal/index
    managing_security/index

@@ -105,7 +105,7 @@ We advise you to open your page in a new tab of your browser for a faster loadin
 
 It should looks like this (the map basemap should be different depending on your domain settings) :
 
- .. image:: dashboard__add-a-map-view.png
+ .. image:: images/dashboard__add-a-map-view.png
 
 
 Add a table view
@@ -140,7 +140,7 @@ Now, still on the dataset explore screen, go to the table view (**Table** tab), 
 
 Save, refresh, and see that the dashboard now have two data-vizualisation :
 
- .. image:: dashboard__add-a-table-view.png
+ .. image:: images/dashboard__add-a-table-view.png
 
 Add a chart
 ~~~~~~~~~~~
@@ -152,7 +152,7 @@ An exemple of interesting chart for this documentation is to display the number 
 X axis : ``Région`` (administrative area)
 Y axis : ``count``
 
- .. image:: dashboard__add-a-chart-setup.png
+ .. image:: images/dashboard__add-a-chart-setup.png
 
 Save, refresh, it should looks like this :
 
@@ -193,7 +193,7 @@ Save, refresh, it should looks like this :
 	    </div>
 	</div>
 
- .. image:: dashboard__add-a-chart.png
+ .. image:: images/dashboard__add-a-chart.png
 
 Link them all together !
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -267,7 +267,7 @@ A simple thing to do then is to keep only one, and move our widgets below this *
 
 Now, any circle, rectangle or polygon drawn on the map will apply the a filter on the **context**, **shared** by all widgets, we then expect that the table and chart **dynamically reload** their display with the filtered results.
 
- .. image:: dashboard__link-them-all.png
+ .. image:: images/dashboard__link-them-all.png
 
 
 Add a text search form
@@ -328,7 +328,7 @@ Save, refresh, search !
 
 	For exemple, search for 'sport club' in the south of France :
 
- .. image:: dashboard__add-search-bar.png
+ .. image:: images/dashboard__add-search-bar.png
 
 
 Add some filters
@@ -394,7 +394,7 @@ Add this code near the search bar :
 
 It's now much simpler to search for sport club in Paris !
 
- .. image:: dashboard__add-filters.png
+ .. image:: images/dashboard__add-filters.png
 
 
 Discover CSS classes for easy responsive development
@@ -413,7 +413,7 @@ The navigation bar will carry the search bar and filters, the content will carry
 
 It will looks like this :
 
- .. image:: dashboard__css-responsive-layout-1.png
+ .. image:: images/dashboard__css-responsive-layout-1.png
 
 Bootsrap (the grid layout managment tool) split the page into 12 columns.
 We will alloy 3 columns for the navigation bar and 9 for the content.
@@ -424,7 +424,7 @@ Concerning the table and chart widget, we will split the area in two equal size,
 One last detail: to use ``col-xx-yy`` CSS classes, they always need to be inside a ``row`` element !
 So first, you define rows, then you split the rows !
 
- .. image:: dashboard__css-responsive-layout-2.png
+ .. image:: images/dashboard__css-responsive-layout-2.png
 
 
 The HTML block should then looks like this :
@@ -544,7 +544,7 @@ The full HTML code is now :
 	</div>
 
 
- .. image:: dashboard__css-responsive-layout-3.png
+ .. image:: images/dashboard__css-responsive-layout-3.png
 
 
 Have a deeper look to the "context"
@@ -694,7 +694,7 @@ Encapsulated in a big header (h1 HTML tag), it looks like this :
 	                <!-- NAVIGATION BAR -->
 
 
- .. image:: dashboard__context-1.png
+ .. image:: images/dashboard__context-1.png
 
 
 Now that we saw what the context is, we must have a look to it's creation.
@@ -745,7 +745,7 @@ We still have a sort parameter, even if we deleted it from the context creation 
 
 Last test : apply a filter on any facet and observe how the ``context.parameters`` object is updated.
 
- .. image:: dashboard__context-2.png
+ .. image:: images/dashboard__context-2.png
 
  .. note::
 
@@ -825,7 +825,7 @@ Records and nhits on the top of the navigation bar, processing date at the botto
 
 Save, refresh, and see :
 
- .. image:: dashboard__add-counters.png
+ .. image:: images/dashboard__add-counters.png
 
 It's nice but, the numerical and date format is a bit harsh.
 To fix that, we will introduce a pure **AngularJS** concept called **filters**. `Full documentation of AngularJS Filters here <https://docs.angularjs.org/api/ng/filter>`_
@@ -861,7 +861,7 @@ In our case, we will use the ``number`` filter to pretty print numerical values 
 
 Save, refresh, see :
 
- .. image:: dashboard__add-counters-ng-filter.png
+ .. image:: images/dashboard__add-counters-ng-filter.png
 
 
 Add a download link
@@ -881,7 +881,7 @@ In our case, we will add a button (a link with a CSS class that gives any elemen
 
 Save, refresh, test to apply some filters, then download the CSV export :
 
- .. image:: dashboard__add-download-link.png
+ .. image:: images/dashboard__add-download-link.png
 
 
 Going further - AngularJS
@@ -1116,7 +1116,7 @@ The final HTML looks like this :
 
 Save, refresh, and try to switch tabs !
 
- .. image:: dashboard__tab-view.png
+ .. image:: images/dashboard__tab-view.png
 
 Then we can include it in our dashboard to add extra dataviz without having a too heavy dashboard (too heavy to load or to read).
 To give some space to the table and the chart that are too small we will include them in a tab, we will also add a third chart, based on another axis (the date for exemple).
@@ -1206,4 +1206,4 @@ to center tab buttons, edit the CSS code with :
 
 And finally, save, refresh :
 
- .. image:: dashboard__with-tab.png
+ .. image:: images/dashboard__with-tab.png

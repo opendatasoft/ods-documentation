@@ -4,7 +4,7 @@ Contact form
 This widget inserts a form that users can use to contact the domain's administrators. It uses reCaptcha to make sure
 anonymous users cannot spam the administrators.
 
-.. localizedimage:: integrate_content__contact-form.png
+.. localizedimage:: images/integrate_content__contact-form.png
      :alt: Contact form
 
 .. list-table::
