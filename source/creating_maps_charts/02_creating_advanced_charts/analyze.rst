@@ -36,7 +36,7 @@ You can add multiple thresholds with different colors.
 
 Here is what this layer looks like with these settings and two thresholds:
 
-.. image:: chart-onelayer.png
+.. image:: images/chart-onelayer.png
 
 
 Adding a serie
@@ -78,13 +78,13 @@ You should see your query filter just under the dataset name: "`query: date>1987
 
 .. note:: You can click on the pencil icon |edit-pencil| of a layer to change the selected dataset or refine the query.
 
-.. |edit-pencil| image:: edit.png
+.. |edit-pencil| image:: images/edit.png
 
 Under Configuration > Label, set "`Commodity Average Price`" as the alternate serie title (more accurate than the default title)
 
 This should look like this (you may have different colors): |second-layer|
 
-.. |second-layer| image:: second-layer.png
+.. |second-layer| image:: images/second-layer.png
 
 **Third Layer**
 
@@ -111,19 +111,19 @@ Let's finish with a few last details to polish the Chart appearance
 
 Here are the resulting parameters:
 
-.. image:: layers-params.png
+.. image:: images/layers-params.png
 
 And the final result of the chart:
 
-.. image:: layers-final.png
+.. image:: images/layers-final.png
 
 Other charts examples
 ---------------------
 
 **Column Chart**
 
-.. image:: column-chart.png
+.. image:: images/column-chart.png
 
 **Polar Chart**
 
-.. image:: polar-chart-example.png
+.. image:: images/polar-chart-example.png

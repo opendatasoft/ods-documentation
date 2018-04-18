@@ -8,9 +8,9 @@ Add a dataset to your map
 2. Choose the dataset you want to display on your map. You can select a dataset with geographical information either from your own catalog of datasets published on your domain, or from the **All available data** catalog.
 3. Click on **Select** if you want to add all data, or **Filter data** if you just want to add part of the data.
 
-.. localizedimage:: map2-images/add-dataset-map.png
+.. localizedimage:: images/add-dataset-map.png
     :alt: Screenshot of the dataset adding interface in Map Builder
-.. localizedimage:: map2-images/filter-data-map.png
+.. localizedimage:: images/filter-data-map.png
     :alt: Screenshot of filtering in the dataset adding interface in Map Builder
 
 .. note:: You can change dataset or change which part is filtered at any time. To do so, simply click on **Change filter** next to the layer’s title.
@@ -19,7 +19,7 @@ You can add as many datasets as you want on your map, and all of the data they c
 
 .. note:: Keep in mind that the more datasets you add to your map, the heavier it will be, and the longer it will take to load.
 
-.. localizedimage:: map2-images/dataset-added-map.png
+.. localizedimage:: images/dataset-added-map.png
     :alt: Screenshot of Map Builder once a dataset has been added: data appears on the map and configuration options are available
 
 Edit a layer
@@ -34,10 +34,10 @@ The edition of a layer (meaning, a dataset displayed on a map created with Map B
    :header-rows: 0
 
    * *
-       .. localizedimage:: map2-images/display.png
+       .. localizedimage:: images/display.png
            :alt: Screenshot of the Display interface to configure a layer
      *
-       .. localizedimage:: map2-images/information.png
+       .. localizedimage:: images/information.png
            :alt: Screenshot of the Information interface to configure a layer
 
 Edit style
@@ -48,7 +48,7 @@ Edit style
 
 The style configurations entirely depend on the visualization mode you choose to apply to your layer. There are 5 different modes:
 
-.. localizedimage:: map2-images/viz-modes.png
+.. localizedimage:: images/viz-modes.png
     :alt: Visualization modes interface
 
 .. note:: The style configurations displayed for each visualization mode also depend on your dataset. Depending on the dataset you added to your Map Builder map, you may not see all the configurations explained in this documentation.
@@ -372,7 +372,7 @@ Add and edit information
 Title and description
 """""""""""""""""""""
 
-.. localizedimage:: map2-images/edit-information.png
+.. localizedimage:: images/edit-information.png
     :alt: Zoom on the area to edit a layer's information, from the Information interface
 
 2. Rename your layer in the **Title** area, to make it clearer for the map viewers.
@@ -383,7 +383,7 @@ Title and description
 Icon
 """"
 
-.. localizedimage:: map2-images/add-icon-information.png
+.. localizedimage:: images/add-icon-information.png
     :alt: Zoom on the area to add an icon to a layer, from the Information interface
 
 You can add an icon to your layer, which will be displayed next to the layer’s title.
@@ -394,7 +394,7 @@ You can add an icon to your layer, which will be displayed next to the layer’s
 Add and edit a caption
 ^^^^^^^^^^^^^^^^^^^^^^
 
-.. localizedimage:: map2-images/edit-caption.png
+.. localizedimage:: images/edit-caption.png
     :alt: Zoom on the area to edit a layer's caption, from the Information interface
 
 Captions are not mandatory however they are recommended because they add more information to your dataset, which means more clarity to the reading of your map.
@@ -409,13 +409,13 @@ Captions are not mandatory however they are recommended because they add more in
 Delete a layer
 ^^^^^^^^^^^^^^
 
-.. localizedimage:: map2-images/delete-layer.png
+.. localizedimage:: images/delete-layer.png
     :alt: Delete a layer interface
 
 1. Click on the |icon-trash| icon.
 2. Click on the red **Remove dataset from the map** button.
 
 
-.. |icon-trash| image:: map2-images/icon-trash-edit.png
+.. |icon-trash| image:: images/icon-trash-edit.png
     :width: 14px
     :height: 15px

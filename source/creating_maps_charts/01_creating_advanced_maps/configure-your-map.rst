@@ -6,7 +6,7 @@ Overview of the Configuration interface
 
 From the **Configuration** interface, you can configure your map as seen in view or preview mode. This interface is accessible from the Map Builder menu displayed at the very top of the map.
 
-.. localizedimage:: map2-images/configuration.png
+.. localizedimage:: images/configuration.png
     :alt: Screenshot of the interface of Configuration in Map Builder
 
 The interface of **Configuration** contains:
@@ -20,10 +20,10 @@ The interface of **Configuration** contains:
 
 
 
-.. |icon-fullscreen| image:: map2-images/icon-fullscreen.png
+.. |icon-fullscreen| image:: images/icon-fullscreen.png
     :width: 20px
     :height: 20px
 
-.. |icon-localize| image:: map2-images/icon-localize.png
+.. |icon-localize| image:: images/icon-localize.png
     :width: 16px
     :height: 16px

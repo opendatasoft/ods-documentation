@@ -11,14 +11,14 @@ Create advanced maps with Map Builder
 .. toctree::
    :maxdepth: 2
 
-   map2/overview-of-map-builder
-   map2/create-a-multiple-layers-map
-   map2/rename-and-save-a-map
-   map2/manage-your-maps
-   map2/reorder-and-group-layers-in-a-map
-   map2/configure-your-map
-   map2/share-your-map
-   map2/navigate-on-a-map-builder-map
+   01_creating_advanced_maps/overview-of-map-builder
+   01_creating_advanced_maps/create-a-multiple-layers-map
+   01_creating_advanced_maps/rename-and-save-a-map
+   01_creating_advanced_maps/manage-your-maps
+   01_creating_advanced_maps/reorder-and-group-layers-in-a-map
+   01_creating_advanced_maps/configure-your-map
+   01_creating_advanced_maps/share-your-map
+   01_creating_advanced_maps/navigate-on-a-map-builder-map
 
 Create advanced charts
 ----------------------
@@ -26,4 +26,4 @@ Create advanced charts
    .. toctree::
       :maxdepth: 2
 
-      analyze
+      02_creating_advanced_charts/analyze

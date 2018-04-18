@@ -4,7 +4,7 @@ Navigate on a Map Builder map
 Overview of the interactive map of Map Builder
 ----------------------------------------------
 
-.. localizedimage:: map2-images/navigate-on-map.png
+.. localizedimage:: images/navigate-on-map.png
     :alt: Screenshot of Map Builder in preview mode
 
 The interactive map contains the same buttons as in any OpenDataSoft map:
@@ -26,7 +26,7 @@ However, any interactive map created with Map Builder also contains specific fea
 Display or hide layers
 ----------------------
 
-.. localizedimage:: map2-images/layer-hidden.png
+.. localizedimage:: images/layer-hidden.png
     :alt: Screenshot of Map Builder in preview mode, when a layer is hidden
 
 By default, all your map layers are displayed on your map. The list of all the layers that compose your Map Builder map is displayed on the top right-hand corner of the map.
@@ -38,7 +38,7 @@ You can hide layers in case you only want to focus on specific layers or even on
 Understand the map: captions
 ----------------------------
 
-.. localizedimage:: map2-images/caption-map.png
+.. localizedimage:: images/caption-map.png
     :alt: Screenshot of Map Builder with an enlarged caption
 
 For a better understanding of the map, each layer can have a related caption you can refer to. All available captions are displayed on the bottom right-hand corner of the map, under the list of layers. To go from one caption to another, simply click the |icon-left| and |icon-right| buttons.
@@ -50,60 +50,60 @@ Use the search bar
 
 You can use the search bar to make research on your map. To do so, simply enter a keyword in the search bar at the top left-hand corner of the map. By default, the search bar will return location results. If you click on a location result, the map will automatically move to that selected location.
 
-.. localizedimage:: map2-images/search-bar.png
+.. localizedimage:: images/search-bar.png
     :alt: Zoom on the results of a research in Map Builder
 
 However, the search bar will also suggest searching the keyword in the displayed data, meaning into the datasets that compose the layers of your Map Builder map.
 
-.. localizedimage:: map2-images/search-interface.png
+.. localizedimage:: images/search-interface.png
     :alt: Screenshot of Map Builder when using the search bar
 
 
 
-.. |icon-polygon| image:: map2-images/icon-polygon.png
+.. |icon-polygon| image:: images/icon-polygon.png
     :width: 16px
     :height: 16px
 
-.. |icon-circle| image:: map2-images/icon-circle.png
+.. |icon-circle| image:: images/icon-circle.png
     :width: 14px
     :height: 14px
 
-.. |icon-square| image:: map2-images/icon-square.png
+.. |icon-square| image:: images/icon-square.png
     :width: 14px
     :height: 14px
 
-.. |icon-edit| image:: map2-images/icon-edit.png
+.. |icon-edit| image:: images/icon-edit.png
     :width: 16px
     :height: 16px
 
-.. |icon-trash-map| image:: map2-images/icon-trash-map.png
+.. |icon-trash-map| image:: images/icon-trash-map.png
     :width: 15px
     :height: 17px
 
-.. |icon-fullscreen| image:: map2-images/icon-fullscreen.png
+.. |icon-fullscreen| image:: images/icon-fullscreen.png
     :width: 20px
     :height: 20px
 
-.. |icon-zoom-in| image:: map2-images/icon-zoom-in.png
+.. |icon-zoom-in| image:: images/icon-zoom-in.png
     :width: 14px
     :height: 14px
 
-.. |icon-zoom-out| image:: map2-images/icon-zoom-out.png
+.. |icon-zoom-out| image:: images/icon-zoom-out.png
     :width: 13px
     :height: 12px
 
-.. |icon-localize| image:: map2-images/icon-localize.png
+.. |icon-localize| image:: images/icon-localize.png
     :width: 16px
     :height: 16px
 
-.. |icon-right| image:: map2-images/icon-right.png
+.. |icon-right| image:: images/icon-right.png
     :width: 12px
     :height: 14px
 
-.. |icon-left| image:: map2-images/icon-left.png
+.. |icon-left| image:: images/icon-left.png
     :width: 11px
     :height: 13px
 
-.. |icon-up| image:: map2-images/icon-up.png
+.. |icon-up| image:: images/icon-up.png
     :width: 20px
     :height: 17px

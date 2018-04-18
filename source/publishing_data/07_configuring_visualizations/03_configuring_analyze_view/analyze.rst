@@ -21,4 +21,4 @@ You can configure which chart will be displayed by default, using the same
 interface and options as the visualization itself. This allows you to directly
 decide which chart would be the most relevant to your users.
 
-:doc:`Learn more about the charts interface</creating_maps_charts/analyze>`.
+:doc:`Learn more about the charts interface</creating_maps_charts/02_creating_advanced_charts/analyze>`.
