@@ -56,7 +56,7 @@ At the bottom of the *Map* and *Chart* tabs, there is a widget that allows you t
 **Listing reuses**
 
 You can list reuses on the dataset page, to help promote both the reuse itself and your data. The reuses will be listed at the bottom of the information tab on each dataset page.
-You can learn more about this feature in the section :doc:`Encouraging reuses </configuring_portal/engaging>`.
+You can learn more about this feature in the section :doc:`Encouraging reuses </configuring_domain/04_sharing_reusing_communicating/engaging>`.
 
 .. image:: images/explore__reuse--fr.png
 
@@ -69,4 +69,4 @@ On the left hand side of the dataset page, there is a filtering toolbar very sim
 Default tab
 -----------
 
-You can choose between the **table tab** and the **information tab** as the default tab on which a dataset is opened. See :doc:`Configure catalog & dataset pages </configuring_portal/tabs>` for more informations.
+You can choose between the **table tab** and the **information tab** as the default tab on which a dataset is opened. See :doc:`Configure catalog & dataset pages </configuring_domain/05_configuring_domain/tabs>` for more informations.

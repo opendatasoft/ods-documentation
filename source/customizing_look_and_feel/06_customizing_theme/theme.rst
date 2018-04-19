@@ -12,7 +12,7 @@ click the ``Look & feel`` section in the navigation bar and then on the ``theme`
 
 .. note::
     In order to access the theme page, you'll need to be able to edit domain properties.
-    See :doc:`Managing the Security of your Domain </managing_security/index>` for more details.
+    See :doc:`Managing the Security of your Domain </managing_domain/01_managing_users_and_groups/users>` for more details about permissions.
 
 .. ifconfig:: language == 'en'
 

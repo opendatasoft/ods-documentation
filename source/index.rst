@@ -46,12 +46,11 @@ This documentation is OpenDataSoft's reference documentation. It complements inl
    exploring_catalog_and_datasets/index
    creating_content/index
    creating_maps_charts/index
-   configuring_portal/index
-   managing_security/index
-   notifications/index
    customizing_look_and_feel/index
-   monitoring_audience/index
-   managing_subdomains/index
+   managing_domain/index
+   configuring_domain/index
+   managing_profile/index
+
    using_api/index
 
    faq
