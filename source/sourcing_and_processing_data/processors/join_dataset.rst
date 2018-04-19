@@ -8,7 +8,7 @@ Example: a dataset A could be enriched with more data, which are in a dataset B.
 .. admonition:: Limitation
    :class: important
 
-   By default, the Join dataset processor can only be used with remote datasets that have fewer than 100,000 records.
+   By default, the Join dataset processor can only be used with remote datasets that have fewer than 100,000 records. In addition to that, when applying a join dataset processor to a scheduled dataset, the join is only reapplied when the resource has changed. That means that the join dataset processor will not be re-applied even if the joined dataset has changed if there was no change in the joining dataset resources.
 
 Setting the processor
 ---------------------
