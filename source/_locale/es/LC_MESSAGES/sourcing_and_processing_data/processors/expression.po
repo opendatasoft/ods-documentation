@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:09+0100\n"
+"POT-Creation-Date: 2018-03-13 16:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
@@ -70,12 +70,10 @@ msgid ""
 "Example of a conditional expression using the Expression processor, with the"
 " creation of the \"Anomaly Detected ?\" (which was not initially present in "
 "the original data source). The syntax is ``=expression ? value if the "
-"expression if true : value if false``"
+"expression is true : value if false``. Please note that ``value if false`` "
+"is optional, so you can write ``=expression ? value if the expression is "
+"true``."
 msgstr ""
-"Ejemplo de una expresión condicional con el procesador Expresión, con la "
-"creación de \"Anomaly Detected ?\" (que no figuraba en el origen de datos "
-"original). La sintaxis es ``= expresión ? valor si la expresión es verdadera"
-" : valor si es falsa``"
 
 #: ../../source/sourcing_and_processing_data/processors/expression.rst:62
 msgid "Setting the processor"
@@ -194,21 +192,20 @@ msgstr "Operadores binarios"
 
 #: ../../source/sourcing_and_processing_data/processors/expression.rst:103
 msgid ""
-"+, -, ``*``, /, % (euclidean division), and, &&, or, ||, >, <, >=, <=, == "
-"(evaluates to ``True`` or ``False``), & (concatenation of strings, evaluates"
-" to a string)"
+"+, -, ``*``, /, % (euclidean division), and, &&, or, ||, >, <, >=, <=, ==, "
+"!= (evaluates to ``True`` or ``False``), & (concatenation of strings, "
+"evaluates to a string)"
 msgstr ""
-"+, -, ``*``, /, % (división euclidiana), and, &&, or, ||, >, <, >=, <=, == "
-"(se evalúa como ``True`` o ``False``), & (concatenación de cadenas, se "
-"evalúa como una cadena)"
 
 #: ../../source/sourcing_and_processing_data/processors/expression.rst:105
 msgid "Ternary operators"
 msgstr "Operadores ternarios"
 
 #: ../../source/sourcing_and_processing_data/processors/expression.rst:106
-msgid "op1 ? op2 : op3 (conditional statement)"
-msgstr "op1 ? op2 : op3 (instrucción condicional)"
+msgid ""
+"op1 ? op2 : op3 (conditional statement). Please note that op3 is optional, "
+"so you can write op1 ? op2."
+msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processors/expression.rst:108
 msgid "In the table below are listed the available functions:"
@@ -316,12 +313,12 @@ msgid "Addition with a negative number"
 msgstr "Adición con un número negativo"
 
 #: ../../source/sourcing_and_processing_data/processors/expression.rst:141
-msgid "-3 + 1"
-msgstr "-3 + 1"
+msgid "-3 + .1"
+msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processors/expression.rst:142
-msgid "-2"
-msgstr "-2"
+msgid "-2.9"
+msgstr ""
 
 #: ../../source/sourcing_and_processing_data/processors/expression.rst:143
 msgid "Product with a field"
