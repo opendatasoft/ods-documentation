@@ -2,27 +2,60 @@ Customizing your domain URL
 ===========================
 
 
-When a domain is created it has one URL, in the form ``<domain>.opendatasoft.com``. As the domain URL is a very important tool for discoverability, branding and ease of access, there will often be a need to customize this URL. As such, the OpenDataSoft platform allows for adding URLs to a domain. These customization options are currently not exposed in the back office, and must be requested by using the support form in the back office. The customization options are detailed below.
+A new OpenDataSoft domain has one URL, in the form ``<domain>.opendatasoft.com``.
 
-OpenDataSoft URLs
------------------
+As the domain URL is a very important tool for discoverability, branding and ease of access, there will often be a need to customize this URL. As such, the OpenDataSoft platform allows for adding additional names to a domain. These customization options are currently not exposed in the back office, and must be requested by using the support form in the back office. The customization options are detailed below.
 
-It is possible to add an additional opendatasoft URL that will be used to access the domain. It is in the form ``<alias>.opendatasoft.com``, where ``alias`` is a word composed of lowercase alphanumeric characters and hyphens.
+In the following, the domain *name* will represent the first, base name of an OpenDataSoft domain, and we will call any additional names *aliases*. The names are actually the host part of the URLs used to access the domain.
 
-Own subdomain
--------------
+OpenDataSoft aliases
+--------------------
 
-It is also possible to link your OpenDataSoft domain to a custom subdomain whose authoritative DNS server you control. For instance a company called "Example" might want to set up their domain in order to have ``data.example.com`` directing to it. This can be done in two steps: first create a DNS record of the ``CNAME`` type for your subdomain with the default URL as a value. ``A`` or ``AAAA`` types records are not supported by the platform as the IP address of your domain is susceptible to change. Then, the URL corresponding to the subdomain must be registered as an alias. To do so, please contact the OpenDataSoft support by using the support form in the back office.
+It is possible to add additional OpenDataSoft domain aliases that will be used to access the domain. It is in the form ``<alias>.opendatasoft.com``, where ``alias`` is a word composed of lowercase alphanumeric characters and hyphens. Some names are reserved and not available as domain names or aliases. Ambiguous names should be avoided in order to prevent possible confusion with other OpenDataSoft domains.
 
-HTTPS
------
+Customer-provided DNS aliases
+-----------------------------
+
+It is also possible to change the base URL of your OpenDataSoft domain to a custom domain name whose authoritative DNS server you control. For instance a company called "Example" has an OpenDataSoft domain named ``example``. Its main URL is ``example.opendatasoft.com``, but this customer might want to set up their domain in order to use the alias ``data.example.com``.
+
+This can be done in two steps:
+
+- First, create a DNS record of the ``CNAME`` type for the desired name with the default name of your OpenDataSoft domain as a value.
+
+.. attention::
+    A trailing dot after after a DNS name means an absolute name, instead of a relative one. In DNS configuration, names are usually relative by default, so ``data.example.com`` would actually mean ``data.example.com.example.com.``, which is generally not wanted.
+
+    The DNS record for the above example would look like this: ``data.example.com. IN CNAME example.opendatasoft.com.``
+
+    If your DNS provider uses relative names, it can look like this: ``data IN CNAME example.opendatasoft.com.``
+
+.. tip::
+    Your DNS provider will usually have documentation explaining how to setup custom entries using their interface.
+
+- Then, the new name must be registered as an alias of the main domain on our platform. To do so, please contact the OpenDataSoft support by using the support form in the back office.
+
+Any number of distinct DNS names can be added to an OpenDataSoft domain. Though all domain names and aliases can be used to access the domain simultaneously, the first alias will be used by default for URLs generated to access the site from outside (in a notification email for example). User login sessions are also specific to a domain name, so it is possible for a user to be authenticated when accessing a domain via one alias and unauthenticated (anonymous) on another alias or the main name.
+
+.. warning::
+    Some DNS providers offer web redirections as a means to change a site's URL. However, a web redirection is not the same as a DNS CNAME, and cannot be used to customize an OpenDataSoft domain's URL.
+
+.. important::
+    ``A`` or ``AAAA`` types records are not supported by the OpenDataSoft platform as the IP address of your domain is susceptible to change.
+
+HTTPS and TLS (SSL) certificates
+--------------------------------
 
 .. image:: img/custom_urls__green-lock--en.png
     :alt: Connections to OpenDataSoft are private.
 
-HTTPS is a widely used protocol which aims at insuring privacy and integrity of the exchanges between a website and its users by providing HTTP over a secure communication layer. For these safety and integrity reasons, the OpenDataSoft platform enforces the use of HTTPS throughout its services, and as such, requests made to OpenDataSoft URLs and custom subdomains are HTTPS enabled. If you opted to add an OpenDataSoft URL, the SSL configuration is the same as with the default URL. However, if you chose to use a custom subdomain, the SSL will be handled through `Let's Encrypt <https://letsencrypt.org/>`_.
+HTTPS is a widely used protocol which aims at ensuring privacy and integrity of the exchanges between a website and its users by providing HTTP over a secure communication layer. For these safety and integrity reasons, the OpenDataSoft platform enforces the use of HTTPS throughout its services, and as such, requests made to OpenDataSoft domains and all their aliases are HTTPS enabled. TLS is the actual protocol used to secure HTTPS today, which replaced the original, deprecated, SSL protocol.
+
+If you opted to add an OpenDataSoft alias to your domain (``<alias>.opendatasoft.com``), the TLS configuration is the same as for the main name. However, if you chose to use a custom domain name (``data.example.com``), the TLS certificate will be generated by OpenDataSoft on your behalf using `Let's Encrypt <https://letsencrypt.org/>`_'s services. Certificate generation and renewal is handled by OpenDataSoft transparently, and the renewal process is completely automated, as long as the DNS entry is setup and stays valid. Let's Encrypt certificates provide the same level of security as any other Domain-Validated TLS certificates, and their short lifecycle (3 months) ensures a constantly updated security level. Let's Encrypt certificates are free of charge for OpenDataSoft customers.
+
+.. note::
+    If the configuration of your own DNS includes a CAA entry (Certificate Authority Authorization), it will be necessary to add Let's Encrypt to the list of authorized CAs. The required identifier is ``letsencrypt.org``.
 
 Language handling
 -----------------
 
-If you have multiple languages on your domain and use language-specific subdomains, you can request that the subdomains force languages for users that access the domain through them. For instance, if you have two subdomains ``data.example.co.uk`` and ``daten.example.de``, you can request that users accessing the domain through the former be served english content, and those accessing it through the latter be served german content.
+If you have multiple languages on your domain and use language-specific domain aliases, you can request each alias to be linked to a specific language. For instance, if you have two aliases ``data.example.co.uk`` and ``daten.example.de``, you can request that users accessing the domain through the former be served english content, and those accessing it through the latter be served german content by default. Users can then switch language as usual.
