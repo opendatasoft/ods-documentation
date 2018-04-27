@@ -11,15 +11,9 @@ A dataset ID follows the following format *ProviderName-DatasetId*.
 .. admonition:: Retrieving the dataset ID
    :class: important
 
-   Retrieve the dataset ID using the `explorer <https://db.nomics.world/views/explorer>`_.
-   Select a provider, the dataset to retrieve and click on API Link > JSON.
-   A link following this format will appear :
-   https://api.db.nomics.world/api/v1/json/datasets/bea-fa2004-section1-101-a/values
+   Retrieve the dataset ID using the `explorer <https://db.nomics.world/views/explorer>`_. Select a provider, the dataset to retrieve and click on API Link > JSON. A link following this format will appear : https://api.db.nomics.world/api/v1/json/datasets/bea-fa2004-section1-101-a/values
 
    In this example, the dataset ID is : **bea-fa2004-section1-101-a**
-
-
-
 
 Parameters
 ----------
@@ -31,7 +25,7 @@ Parameters
      * Description
      * Example
    * * Dataset
-     * The comma separated list of dataset IDs you want to harvest.
+     * The comma separated list of dataset IDs to harvest.
      * eurostat-earn-ses06-01, ameco-adggi, ...
    * * Aggregate series in a single dataset
      * Aggregate SDMX series into a single SDMX dataset.
