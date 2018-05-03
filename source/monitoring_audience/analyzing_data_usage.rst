@@ -3,18 +3,19 @@ Analyzing data usage
 
 The Data dashboard displays statistics to analyze the data published on the portal. It is available in the Analytics > Data section of the back office.
 
-This dashboard is separated into 5 sections:
+This dashboard is separated into 4 sections:
 
 - Totals: figures about the datasets published in the portal and their usage through that portal
 - Popularity: statistics and charts to compute and analyze the popularity of the datasets published in the portal
-- Top 5: list of most downloaded, used and reused published datasets
-- Most used themes: tree chart to analyze most and least used themes
-- Tag cloud: cloud of used tags
+- Top 5: lists of most downloaded, used and reused published datasets
+- Theme Distribution: tree chart to analyze most and least used themes
 
-.. admonition:: Unpublished datasets ignored by the Data dashboard
+.. admonition:: Datasets taken into account for the Data dashboard
    :class: note
 
    In this dashboard, only published datasets are taken into account. Unpublished datasets are ignored from all figures, charts and other computed analytics displayed.
+
+   It is however possible, by ticking the boxes at the top of the dashboard, to choose to build the dashboard only with the private datasets (those in restricted access, no matter the restriction) or only with the public ones (those accessible by everyone).
 
 Totals
 ------
@@ -23,22 +24,16 @@ Totals
   :header-rows: 1
 
   * * Label
-    * Type
     * Description
   * * Datasets
-    * Figure
     * Total number of published datasets in the portal
   * * Records
-    * Figure
     * Total number of records in all published datasets combined
   * * Downloads
-    * Figure
     * Total number of downloads in all published datasets combined
   * * API calls
-    * Figure
     * Total number of API calls for all published datasets combined
   * * Reuses
-    * Figure
     * Total number of reuses for all published datasets combined
 
 .. screenshot
@@ -46,29 +41,31 @@ Totals
 Popularity
 ----------
 
-The Popularity section of the Data dashboard is based upon a computation aiming at quantifying dataset consumption in order to establish popularity scores for datasets. This computation is based on 3 criterias: number of downloads, number of API calls and number of reuses. These 3 criterias combined into a formula (popularity = 3.22 -2 √[API calls] + 5.38 -2 √[Downloads] + [Reuses]) indicate whether a dataset published into an OpenDataSoft portal can be considered popular or not, compared to the other datasets of that portal.
+The Popularity section of the Data dashboard is based upon a computation aiming at quantifying dataset consumption in order to establish popularity scores for datasets. This computation is based on 3 metrics: number of downloads, number of API calls and number of reuses. These 3 metrics indicate whether a dataset published into an OpenDataSoft portal can be considered popular or not, compared to the other datasets of that portal.
 
-.. list-table::
-  :header-rows: 1
+The Popularity section is divided into 2 parts:
 
-  * * Label
-    * Type
-    * Description
-  * * Most popular datasets
-    * Bar chart
-    * Top 5 most popular published datasets, along with their popularity scores displayed
-  * * Least popular datasets
-    * Bar chart
-    * Top 5 least popular published datasets, along with their popularity scores displayed
-  * * Median Popularity
-    * Figure
-    * Median popularity score computed from all popularity scores of all published datasets taken into account to compute the median (datasets with extreme popularity scores - unordinarily popular or unpopular datasets - are ignored)
-  * * Average Popularity
-    * Figure
-    * Average popularity score computed from all popularity scores of all published datasets. In contrary to the median, to compute the average, all datasets are taken into account, without any exception.
-  * * Popularity Sum
-    * Figure
-    * Sum of all popularity scores of all published datasets
+- on the left, 2 bar charts:
+
+  - the top 5 most popular datasets
+  - below, the top 5 least popular datasets
+
+- on the right, information about the popularity score of the selected dataset:
+
+  - Label of the selected dataset
+  - Dataset ID: technical identifier of the selected dataset
+  - Metrics: number of downloads, API calls and reuses (if any) for the selected dataset
+  - Popularity Score: popularity score of the selected dataset, computed with the metrics displayed above
+
+To display the popularity score information of a dataset:
+
+1. In any of the click a bar (representing a dataset) in either one of the bar charts.
+2. Check the right part of the Popularity section: the information of the selected dataset are automatically displayed.
+
+.. admonition:: Popularity score distribution over all published datasets
+   :class: note
+
+   Click the "See more" button at the bottom the Popularity section to see a column chart that displays the popularity score distribution over all published datasets. Clicking the button opens another page: the Analyze view of the source dataset used to create the Data dashboard.
 
 .. screenshot
 
@@ -79,46 +76,25 @@ Top 5
   :header-rows: 1
 
   * * Label
-    * Type
     * Description
   * * Downloads
-    * List
     * Top 5 most downloaded published datasets, along with the current amount of downloads for each dataset
   * * API Calls
-    * List
     * Top 5 datasets with the most API calls, along with the current amount of API calls for each dataset
   * * Reuses
-    * List
     * Top 5 datasets with the most reuses, along with the current amount of reuses for each dataset
 
 .. screenshot
 
-Most used themes
-----------------
+Theme Distribution
+------------------
 
 .. list-table::
   :header-rows: 1
 
   * * Label
-    * Type
     * Description
   * * Most used themes
-    * Tree chart
     * Dataset themes represented with a tree chart to analyze which themes are the most and the least used
-
-.. screenshot
-
-Tag cloud
----------
-
-.. list-table::
-  :header-rows: 1
-
-  * * Label
-    * Type
-    * Description
-  * * Tag cloud
-    * Tag cloud
-    * Most used dataset keywords. The bigger the keywords, the most used they are. Each keyword is clickable: it then acts as a filter for the whole dashboard. To go back to the complete list of keywords, click again on the filter you just used.
 
 .. screenshot
