@@ -59,13 +59,13 @@ The Popularity section is divided into 2 parts:
 
 To display the popularity score information of a dataset:
 
-1. In any of the click a bar (representing a dataset) in either one of the bar charts.
+1. In any of the charts, click a bar (representing a dataset).
 2. Check the right part of the Popularity section: the information of the selected dataset are automatically displayed.
 
 .. admonition:: Popularity score distribution over all published datasets
    :class: note
 
-   Click the "See more" button at the bottom the Popularity section to see a column chart that displays the popularity score distribution over all published datasets. Clicking the button opens another page: the Analyze view of the source dataset used to create the Data dashboard.
+   Click the "See more" button at the bottom the Popularity section to see a column chart that displays the popularity score distribution over all published datasets.
 
 .. screenshot
 
