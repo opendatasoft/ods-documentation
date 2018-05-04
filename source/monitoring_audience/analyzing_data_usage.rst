@@ -10,12 +10,18 @@ This dashboard is separated into 4 sections:
 - Top 5: lists of most downloaded, used and reused published datasets
 - Theme Distribution: tree chart to analyze most and least used themes
 
-.. admonition:: Datasets taken into account for the Data dashboard
-   :class: note
+.. admonition:: Datasets used to build the Data dashboard
+   :class: important
 
    In this dashboard, only published datasets are taken into account. Unpublished datasets are ignored from all figures, charts and other computed analytics displayed.
 
-   It is however possible, by ticking the boxes at the top of the dashboard, to choose to build the dashboard only with the private datasets (those in restricted access, no matter the restriction) or only with the public ones (those accessible by everyone).
+   It is however possible, by clicking the buttons at the top of the dashboard, to choose to build the dashboard:
+
+   - with all existing published datasets (checked by default)
+   - only with the private datasets, meaning those in restricted access, no matter the restriction
+   - or, only with the public datasets, meaning those accessible by everyone.
+
+   Depending on which datasets are used to build the Data dashboard, the displayed figures, charts and analytics will vary.
 
 Totals
 ------
@@ -95,6 +101,11 @@ Theme Distribution
   * * Label
     * Description
   * * Most used themes
-    * Dataset themes represented with a tree chart to analyze which themes are the most and the least used
+    * Tree chart representing all currently used dataset themes. This chart helps analyzing which themes are the most or the least used.
+
+.. admonition:: Average popularity score per theme
+   :class: note
+
+   Hover a theme in the tree chart to display the average popularity score of the datasets which belong to that theme.
 
 .. screenshot
