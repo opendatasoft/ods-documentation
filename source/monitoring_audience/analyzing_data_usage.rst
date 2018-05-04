@@ -26,6 +26,9 @@ This dashboard is separated into 4 sections:
 Totals
 ------
 
+.. localizedimage:: data_dashboard_totals.png
+    :alt: Screenshot of the Totals section of the Data dashboard
+
 .. list-table::
   :header-rows: 1
 
@@ -42,12 +45,13 @@ Totals
   * * Reuses
     * Total number of reuses for all published datasets combined
 
-.. screenshot
-
 Popularity
 ----------
 
 The Popularity section of the Data dashboard is based upon a computation aiming at quantifying dataset consumption in order to establish popularity scores for datasets. This computation is based on 3 metrics: number of downloads, number of API calls and number of reuses. These 3 metrics indicate whether a dataset published into an OpenDataSoft portal can be considered popular or not, compared to the other datasets of that portal.
+
+.. localizedimage:: data_dashboard_popularity.png
+    :alt: Screenshot of the Popularity section of the Data dashboard
 
 The Popularity section is divided into 2 parts:
 
@@ -73,10 +77,11 @@ To display the popularity score information of a dataset:
 
    Click the "See more" button at the bottom the Popularity section to see a column chart that displays the popularity score distribution over all published datasets.
 
-.. screenshot
-
 Top 5
 -----
+
+.. localizedimage:: data_dashboard_top5.png
+    :alt: Screenshot of the Top 5 section of the Data dashboard
 
 .. list-table::
   :header-rows: 1
@@ -90,22 +95,15 @@ Top 5
   * * Reuses
     * Top 5 datasets with the most reuses, along with the current amount of reuses for each dataset
 
-.. screenshot
-
 Theme Distribution
 ------------------
 
-.. list-table::
-  :header-rows: 1
+.. localizedimage:: data_dashboard_theme_distribution.png
+    :alt: Screenshot of the Theme Distribution section of the Data dashboard
 
-  * * Label
-    * Description
-  * * Most used themes
-    * Tree chart representing all currently used dataset themes. This chart helps analyzing which themes are the most or the least used.
+The Theme Distribution section of the Data dashboard displays a tree chart representing all currently used dataset themes. This chart helps analyzing which themes are the most or the least used.
 
 .. admonition:: Average popularity score per theme
    :class: note
 
    Hover a theme in the tree chart to display the average popularity score of the datasets which belong to that theme.
-
-.. screenshot
