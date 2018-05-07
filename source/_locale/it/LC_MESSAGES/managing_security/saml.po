@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 17:09+0200\n"
+"POT-Creation-Date: 2018-04-20 11:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Datawords Rel2 <datawords.rel.2@gmail.com>, 2017\n"
 "Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
@@ -95,6 +95,10 @@ msgid ""
 "authentication mode\" checkbox in the SAML configuration. If transient mode "
 "is disabled, only linked users will be able to connect through SAML."
 msgstr ""
+"Anche la modalità transitoria può essere disabilitata, selezionando la "
+"casella di controllo \"Disabilita la modalità di autenticazione "
+"transitoria\" nella configurazione SAML. Se si disabilita la modalità "
+"transitoria, solo gli utenti collegati potranno connettersi mediante SAML."
 
 #: ../../source/managing_security/saml.rst:14
 msgid "Linked mode"
@@ -146,7 +150,7 @@ msgstr ""
 
 #: ../../source/managing_security/saml.rst:27
 msgid "Automatic Single Sign On"
-msgstr ""
+msgstr "Accesso singolo automatico"
 
 #: ../../source/managing_security/saml.rst:29
 msgid ""
@@ -160,10 +164,20 @@ msgid ""
 "the option to do so by manually visiting the domain login page at ``https"
 "://<platform-url>/login/``"
 msgstr ""
+"La piattaforma OpenDataSoft offre un meccanismo che permette agli utenti di "
+"accedere automaticamente quando visitano il dominio per la prima volta. Esso"
+" avvia il flusso di autenticazione SAML per gli utenti anonimi, come se "
+"l'utente in questione avesse fatto clic su \"Accedi con SAML\", non appena "
+"apre (quasi) qualsiasi pagina del dominio. Questa funzionalità è appropriata"
+" solo per i domini privati, poiché impedisce l'accesso anonimo al dominio. "
+"Quando si attiva l'opzione Accesso singolo automatico, gli utenti che "
+"desiderano connettersi alla piattaforma utilizzando le credenziali "
+"OpenDataSoft possono farlo manualmente, visitando la pagina di accesso al "
+"dominio all'indirizzo ``https://<platform-url>/login/``"
 
 #: ../../source/managing_security/saml.rst:33
 msgid "Single Log Out"
-msgstr ""
+msgstr "Disconnessione singola"
 
 #: ../../source/managing_security/saml.rst:35
 msgid ""
@@ -173,6 +187,12 @@ msgid ""
 "log out requests from the IdP will trigger a log out of the user on the "
 "platform."
 msgstr ""
+"La piattaforma OpenDataSoft supporta lo standard del flusso SAML Single Log "
+"Out tramite binding di reindirizzamento HTTP. Ciò significa che, se l'IdP lo"
+" supporta, la disconnessione da parte di un utente connesso mediante SAML "
+"attiva anche la disconnessione dall'IdP e le richieste di disconnessione "
+"dall'IdP attivano a loro volta la disconnessione dell'utente dalla "
+"piattaforma."
 
 #: ../../source/managing_security/saml.rst:39
 msgid "Register and configure an identity provider"
@@ -210,6 +230,9 @@ msgid ""
 "linked users can connect to the platform through SAML, check the related "
 "checkbox."
 msgstr ""
+"Per disabilitare la modalità di connessione transitoria, e fare in modo che "
+"solo gli utenti collegati possano connettersi alla piattaforma tramite SAML,"
+" seleziona la relativa casella di controllo."
 
 #: ../../source/managing_security/saml.rst:57
 msgid ""
@@ -304,13 +327,16 @@ msgstr ""
 
 #: ../../source/managing_security/saml.rst:80
 msgid "Optionally configure automatic single sign on"
-msgstr ""
+msgstr "Se desiderato è possibile configurare l'accesso singolo automatico"
 
 #: ../../source/managing_security/saml.rst:82
 msgid ""
 "The automatic single sign on configuration can be found by navigating to the"
 " security page in the domain configuration interface."
 msgstr ""
+"Puoi trovare l'accesso singolo automatico alla configurazione nella pagina "
+"delle impostazioni di sicurezza dell'interfaccia di configurazione del "
+"dominio."
 
 #: ../../source/managing_security/saml.rst:88
 msgid "Configure your identity provider"

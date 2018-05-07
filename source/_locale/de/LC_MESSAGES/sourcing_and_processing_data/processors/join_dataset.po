@@ -2,7 +2,7 @@
 # Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -46,14 +46,6 @@ msgstr ""
 #: ../../source/sourcing_and_processing_data/processors/join_dataset.rst:8
 msgid "Limitation"
 msgstr "Einschränkung"
-
-#: ../../source/sourcing_and_processing_data/processors/join_dataset.rst:11
-msgid ""
-"By default, the Join dataset processor can only be used with remote datasets"
-" that have fewer than 100,000 records."
-msgstr ""
-"Standardmäßig kann dieser Prozessor nur für Remote-Datensätze mit weniger "
-"als 100.000 Einträgen verwendet werden."
 
 #: ../../source/sourcing_and_processing_data/processors/join_dataset.rst:14
 msgid "Setting the processor"
@@ -504,3 +496,21 @@ msgstr ""
 "verbinden\" abgerufen werden können, geben Dateitypspalten nicht die "
 "tatsächliche Ressource über den Prozessor an, sondern stattdessen den Namen "
 "der hinterlegten Ressource."
+
+#: ../../source/sourcing_and_processing_data/processors/join_dataset.rst:11
+msgid ""
+"By default, the Join dataset processor can only be used with remote datasets"
+" that have fewer than 100,000 records. In addition to that, when applying a "
+"join dataset processor to a scheduled dataset, the join is only reapplied "
+"when the resource has changed. This means that given a scheduled dataset A, "
+"that has a join dataset processor that pulls values from dataset B, if there"
+" are new values in dataset B but the resources of dataset A haven't changed,"
+" the scheduled processing will not pull the new values from B."
+msgstr ""
+
+#~ msgid ""
+#~ "By default, the Join dataset processor can only be used with remote datasets"
+#~ " that have fewer than 100,000 records."
+#~ msgstr ""
+#~ "Standardmäßig kann dieser Prozessor nur für Remote-Datensätze mit weniger "
+#~ "als 100.000 Einträgen verwendet werden."

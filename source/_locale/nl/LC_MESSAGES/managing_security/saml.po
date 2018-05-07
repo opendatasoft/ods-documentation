@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 17:09+0200\n"
+"POT-Creation-Date: 2018-04-20 11:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2017\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
@@ -96,6 +96,10 @@ msgid ""
 "authentication mode\" checkbox in the SAML configuration. If transient mode "
 "is disabled, only linked users will be able to connect through SAML."
 msgstr ""
+"De tijdelijke modus kan helemaal worden uitgeschakeld door gebruik te maken "
+"van het aanvinkvakje \"Tijdelijke identificatiemodus uitschakelen\" in de "
+"SAML-configuratie. Wanneer de tijdelijke modus uitgeschakeld is, kunnen "
+"enkel gekoppelde gebruikers verbinding maken via SAML."
 
 #: ../../source/managing_security/saml.rst:14
 msgid "Linked mode"
@@ -148,7 +152,7 @@ msgstr ""
 
 #: ../../source/managing_security/saml.rst:27
 msgid "Automatic Single Sign On"
-msgstr ""
+msgstr "Automatische enkelvoudige aanmelding"
 
 #: ../../source/managing_security/saml.rst:29
 msgid ""
@@ -162,10 +166,20 @@ msgid ""
 "the option to do so by manually visiting the domain login page at ``https"
 "://<platform-url>/login/``"
 msgstr ""
+"Het OpenDataSoft-platform biedt een mechanisme om gebruikers automatisch in "
+"te loggen wanneer ze voor de eerste keer het domein bezoeken. Het werkt door"
+" de SAML-identificatiestroom te starten voor anonieme gebruikers alsof ze "
+"hadden geklikt op \"inloggen met SAML\" zodra ze (bijna) enige pagina in het"
+" domein tegenkomen. Deze functie heeft enkel zin voor private domeinen "
+"aangezien het voorkomt dat anonieme gebruikers toegang hebben tot het "
+"domein. Wanneer Automatisch Eenmalig Aanmelden geactiveerd is, hebben "
+"gebruikers, die met hun eigen OpenDataSoft-gegevens willen inloggen, de "
+"mogelijkheid om dit te doen door manueel de inlogpagina van het domein te "
+"bezoeken op  ``https://<platform-url>/login/``"
 
 #: ../../source/managing_security/saml.rst:33
 msgid "Single Log Out"
-msgstr ""
+msgstr "Eenmalig Uitloggen"
 
 #: ../../source/managing_security/saml.rst:35
 msgid ""
@@ -175,6 +189,12 @@ msgid ""
 "log out requests from the IdP will trigger a log out of the user on the "
 "platform."
 msgstr ""
+"Het OpenDataSoft-platform ondersteunt de standaard SAML Eenmalig Uitloggen-"
+"stroom door gebruik te maken van de HTTP-Redirect binding. Dit betekent dat,"
+" wanneer de IdP het ondersteunt, een log out uit een SAML-verbonden "
+"gebruiker aanleiding zal geven tot een log out uit de IdP en log out-"
+"verzoeken vanuit de IdP zullen aanleiding geven tot een log out van de "
+"gebruiker op het platform."
 
 #: ../../source/managing_security/saml.rst:39
 msgid "Register and configure an identity provider"
@@ -210,6 +230,9 @@ msgid ""
 "linked users can connect to the platform through SAML, check the related "
 "checkbox."
 msgstr ""
+"Wanneer u de tijdelijke inlogmodus wil uitschakelen, waarbij u ervoor zorgt "
+"dat enkel gekoppelde gebruikers via SAML kunnen inloggen op het platform, "
+"controleer dan het aanverwante aanvinkvakje."
 
 #: ../../source/managing_security/saml.rst:57
 msgid ""
@@ -306,13 +329,16 @@ msgstr ""
 
 #: ../../source/managing_security/saml.rst:80
 msgid "Optionally configure automatic single sign on"
-msgstr ""
+msgstr "Automatisch eenmalig aanmelden optioneel configureren"
 
 #: ../../source/managing_security/saml.rst:82
 msgid ""
 "The automatic single sign on configuration can be found by navigating to the"
 " security page in the domain configuration interface."
 msgstr ""
+"De automatische eenmalige aanmeld-configuratie kan worden teruggevonden door"
+" te surfen naar de veiligheidspagina in de configuratie-interface van het "
+"domein."
 
 #: ../../source/managing_security/saml.rst:88
 msgid "Configure your identity provider"

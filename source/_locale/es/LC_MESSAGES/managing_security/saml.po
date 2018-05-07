@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 17:09+0200\n"
+"POT-Creation-Date: 2018-04-20 11:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
@@ -95,6 +95,10 @@ msgid ""
 "authentication mode\" checkbox in the SAML configuration. If transient mode "
 "is disabled, only linked users will be able to connect through SAML."
 msgstr ""
+"El modo transitorio se puede desactivar directamente mediante la casilla "
+"\"Desactivar el modo de autenticación transitorio\" en la configuración de "
+"SAML. Si el modo transitorio está desactivado, solo podrán conectarse por "
+"SAML los usuarios vinculados."
 
 #: ../../source/managing_security/saml.rst:14
 msgid "Linked mode"
@@ -146,7 +150,7 @@ msgstr ""
 
 #: ../../source/managing_security/saml.rst:27
 msgid "Automatic Single Sign On"
-msgstr ""
+msgstr "SSO (Single Sign-On) automático"
 
 #: ../../source/managing_security/saml.rst:29
 msgid ""
@@ -160,10 +164,21 @@ msgid ""
 "the option to do so by manually visiting the domain login page at ``https"
 "://<platform-url>/login/``"
 msgstr ""
+"La plataforma OpenDataSoft ofrece un mecanismo para iniciar la sesión de los"
+" usuarios automáticamente cuando visitan por primera vez el dominio. El "
+"mecanismo consiste en iniciar el flujo de autenticación SAML para los "
+"usuarios anónimos, como si hubieran hecho clic para \"iniciar sesión con "
+"SAML\", en cuanto acceden a (prácticamente) cualquier página del dominio. "
+"Esta función solo tiene sentido en los dominios privados ya que impide el "
+"acceso anónimo al dominio. Una vez activado el SSO (Single Sign-On) "
+"automático, los usuarios que deseen conectarse a la plataforma con sus "
+"credenciales de OpenDataSoft, tendrán la opción de hacerlo manualmente "
+"visitando la página de inicio de sesión del dominio en ``https://<platform-"
+"url>/login/``."
 
 #: ../../source/managing_security/saml.rst:33
 msgid "Single Log Out"
-msgstr ""
+msgstr "SLO (Single Log-Out)"
 
 #: ../../source/managing_security/saml.rst:35
 msgid ""
@@ -173,6 +188,12 @@ msgid ""
 "log out requests from the IdP will trigger a log out of the user on the "
 "platform."
 msgstr ""
+"La plataforma OpenDataSoft admite el flujo SLO (Single Log-Out) SAML "
+"estándar por medio de las vinculaciones HTTP-Redirect. Esto significa que si"
+" el IdP lo permite, un cierre de sesión de un usuario conectado por SAML "
+"desencadenará un cierre de sesión del IdP, y las solicitudes de cierre de "
+"sesión del IdP desencadenarán un cierre de sesión del usuario en la "
+"plataforma."
 
 #: ../../source/managing_security/saml.rst:39
 msgid "Register and configure an identity provider"
@@ -209,6 +230,9 @@ msgid ""
 "linked users can connect to the platform through SAML, check the related "
 "checkbox."
 msgstr ""
+"Si desea desactivar el modo de conexión transitorio, y asegurarse así de que"
+" únicamente los usuarios vinculados puedan conectarse a la plataforma con "
+"SAML, marque la casilla correspondiente."
 
 #: ../../source/managing_security/saml.rst:57
 msgid ""
@@ -303,12 +327,16 @@ msgstr ""
 #: ../../source/managing_security/saml.rst:80
 msgid "Optionally configure automatic single sign on"
 msgstr ""
+"Configurar opcionalmente el inicio de sesión SSO (Single Sign-On) automático"
 
 #: ../../source/managing_security/saml.rst:82
 msgid ""
 "The automatic single sign on configuration can be found by navigating to the"
 " security page in the domain configuration interface."
 msgstr ""
+"La configuración del inicio de sesión SSO (Single Sign-On) automático se "
+"encuentra en la página de seguridad de la interfaz de configuración del "
+"dominio."
 
 #: ../../source/managing_security/saml.rst:88
 msgid "Configure your identity provider"
