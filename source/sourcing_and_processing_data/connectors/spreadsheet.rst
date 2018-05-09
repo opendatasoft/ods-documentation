@@ -24,4 +24,4 @@ Configuration
      * ``true`` or ``false``
    * * Sheet number
      * The number of the sheet to work on. Can be a range with the ``[1-3]`` notation or a list of sheets separated by a ``,``. Leave the field empty to select all the sheets.
-     * ```` or ``1`` or ``[1-3]`` or ``1,2,3``
+     * ``1`` or ``[1-3]`` or ``1,2,3``
