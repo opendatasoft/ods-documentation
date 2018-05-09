@@ -13,7 +13,9 @@ OpenDataSoft provides access to 6 APIs, that can be put into 3 categories:
 - `Triple Pattern Fragments API <https://docs.opendatasoft.com/api/explore/tpf.html>`_: ODS API for triple pattern querying over datasets from OpenDataSoft portals
 - `OData <https://docs.opendatasoft.com/api/explore/odata.html>`_, `WFS <https://docs.opendatasoft.com/api/explore/wfs.html>`_ and `CSW <https://docs.opendatasoft.com/api/explore/csw.html>`_, 3 standard protocols supported and provided by OpenDataSoft
 
-All these APIs provide access to any data pushed to the platform, no matter their source or format, as long as the security rules defined by the data owner allow that access. These APIs can be used, for example, to search for datasets and data, to compute analysis or to perform geographic aggregation. Still developer-oriented, but for more concrete examples of what can be done with APIs: applications as data reuses. Some of OpenDataSoft customers have indeed seen their datasets being reused through their API, to create applications (i.e. `Qui dit miam ! <http://quiditmiam.fr/>`_ and `Y'A D Frites! <https://www.opendatasoft.fr/2016/10/17/y-a-d-frites-application-avec-de-lopen-data-dedans/>`_ 2 applications that display the school canteen menu of French cities, Toulouse, Rennes and Saint-Malo).
+All these APIs provide access to any data pushed to the platform, no matter their source or format, as long as the security rules defined by the data owner allow that access.
+
+These APIs can be used, for example, to search for datasets and data, to compute analysis or to perform geographic aggregations. Still developer-oriented, but for more concrete examples of what can be done with APIs: applications as data reuses. Some of OpenDataSoft customers have indeed seen their datasets being reused through their API, to create applications (i.e. `Qui dit miam ! <http://quiditmiam.fr/>`_ and `Y'A D Frites! <https://www.opendatasoft.fr/2016/10/17/y-a-d-frites-application-avec-de-lopen-data-dedans/>`_ 2 applications that display the school canteen menu of French cities, Toulouse, Rennes and Saint-Malo).
 
 
 .. admonition:: Reminder before diving into any API specification
