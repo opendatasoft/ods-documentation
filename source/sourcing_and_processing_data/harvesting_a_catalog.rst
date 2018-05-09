@@ -93,6 +93,7 @@ Portals
    harvesters/quandl
    harvesters/enigma
    harvesters/fred
+   harvesters/dbnomics
 
 Services
 ~~~~~~~~
