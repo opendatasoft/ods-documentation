@@ -8,6 +8,8 @@ Transient mode
 
 In the transient mode, every user that has a user account on the IdP trusted by a domain, and doesn't have a OpenDataSoft user account can connect through SAML. A transient user will be created for the user, based on SAML settings for the domain. These settings are the account mapper (the set of IdP-sent parameters that uniquely identify a user) and the the attribute mapper (the parameters that correspond to the user first name, last name and email address). These transient users have the permission to explore the public datasets of the domain. Extra permissions can be given to these users by using the generic ``SAML users`` group. Transient users may not be assigned any special permissions on individual datasets or added to groups (other than the ``SAML users`` group, of which they are automatic members).
 
+The transient mode can be disabled altogether using the "Disable transient authentication mode" checkbox in the SAML configuration. If transient mode is disabled, only linked users will be able to connect through SAML.
+
 Linked mode
 -----------
 
@@ -20,6 +22,18 @@ The other method is to create the link during the user account creation process,
 
 .. image:: images/saml__validation-link--en.png
     :alt: Account registration in SAML enabled domains
+
+Automatic Single Sign On
+------------------------
+
+The OpenDataSoft platform offers a mechanism to automatically log in users when they first visit the domain. It works by starting the SAML authentication flow for anonymous users, as if they had clicked "log in with SAML", as soon as they encounter (almost) any page in the domain. This feature only makes sense for private domains as it prevents anonymous access to the domain. When Automatic Single Sign On is activated, users who wish to connect to the platform using their OpenDataSoft credentials have the option to do so by manually visiting the domain login page at ``https://<platform-url>/login/``
+
+
+Single Log Out
+--------------
+
+The OpenDataSoft platform supports the standard SAML Single Log Out flow using the HTTP-Redirect binding. That means that if the IdP supports it, a log out from a SAML-connected user will trigger a log out from the IdP, and log out requests from the IdP will trigger a log out of the user on the platform.
+
 
 Register and configure an identity provider
 -------------------------------------------
@@ -38,13 +52,15 @@ Register and configure an identity provider
 
 4. If you are using Microsoft Azure Active Directory as an IDP, check the related checkbox.
 
-5. Input the set of attributes sent by the IDP that uniquely define a user.
+5. If you wish to disable transient connexion mode, thereby making sure only linked users can connect to the platform through SAML, check the related checkbox.
+
+6. Input the set of attributes sent by the IDP that uniquely define a user.
 
    If the users are defined by their NameID and the NameID format used by your IdP is not transient, there is no need to fill anything.
 
    For instance, if your users are defined by the attribute "FirstName" and "LastName" transmitted by your IdP, first input "FirstName" in the box and press enter, then "LastName" and press enter again.
 
-6. Input the attributes mappings for the username, last name, first name and email address.
+7. Input the attributes mappings for the username, last name, first name and email address.
 
    Here, you need to declare the fields names as they are sent by the identity provider.
 
@@ -54,12 +70,19 @@ Register and configure an identity provider
    If for any reason your identity provider doesn't send all of these elements, let the corresponding fields blank. The
    platform will automatically generate them based on other available attributes.
 
-7. Optionally input an access condition.
+8. Optionally input an access condition.
 
    The first box is the name of the attribute to check for, and the second one the value of that attribute.
    If you just want to check for the presence of an attribute, without value restriction, just leave the second box blank.
 
    For instance, if your identity provider sends a list of "Roles" for the users and you want to make sure that only users that have a role can get access, input "Roles" in the first box under "Conditionnal access". If you only want users with the role "DataAccess" to be able to connect to the domain, input "DataAccess" in the second box.
+
+9. Optionally configure automatic single sign on
+
+   The automatic single sign on configuration can be found by navigating to the security page in the domain configuration interface.
+
+.. image:: saml__auto_sso--en.png
+    :alt: SAML auto-sso configuration interface in the anonymous access section of the security configuration page
 
 Configure your identity provider
 --------------------------------
