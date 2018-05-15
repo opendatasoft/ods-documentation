@@ -1,6 +1,8 @@
 Publishing data
 ===============
 
+In this section are listed and documented all features related to the upload, configuration, processing and publishing of a dataset. These features are available in the Catalog section of the back office of an OpenDataSoft domain.
+
 .. toctree::
    :maxdepth: 2
 

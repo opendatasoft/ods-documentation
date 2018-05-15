@@ -75,7 +75,7 @@ Custom connectivity capabilities can be added upon request.
 7. **What metadata standards does OpenDataSoft support?**
 
 OpenDataSoft natively uses a subset of `DCAT <http://www.w3.org/TR/vocab-dcat/>`_ to describe datasets. The following
-metadata are available by default: 
+metadata are available by default:
 
 * ``title``
 * ``description``
@@ -144,7 +144,7 @@ which has been given specific filtering and aggregation capabilities.
 In the example above, the fields **country** and **year** have been defined as facets (notice the filter button next to
 the type select).
 
-Facets can be seen as dimensions of a dataset. Facets can be defined on the following field types: 
+Facets can be seen as dimensions of a dataset. Facets can be defined on the following field types:
 
 * ``date``
 * ``datetime``
@@ -219,7 +219,7 @@ OpenDataSoft platform.
 
 21. **What does API mean?**
 
-API is an acronym for Applications Programming Interface. An API is a set of methods for computer programs to exchange information in an autonomous way. OpenDataSoft APIs allow for remote access to datasets using the HTTP protocol. 
+API is an acronym for Applications Programming Interface. An API is a set of methods for computer programs to exchange information in an autonomous way. OpenDataSoft APIs allow for remote access to datasets using the HTTP protocol.
 
 22. **What are APIs made for?**
 
@@ -235,7 +235,7 @@ OpenDataSoft domain owner for more details.
 
 Yes.
 
-Whenever you publish a dataset, a dedicated API is created. See :doc:`APIs documentation</using_api/index>` for more information.
+Whenever you publish a dataset, a dedicated API is created. See :doc:`APIs documentation<exploring_catalog_and_datasets/04_sharing_and_reusing_data/using_api>` for more information.
 
 25. **What are the compatible browsers for OpenDataSoft's platform?**
 
@@ -266,8 +266,8 @@ Whenever you publish a dataset, a dedicated API is created. See :doc:`APIs docum
 |         |    |firefox|       | Latest version   | Latest version   |
 +---------+--------------------+------------------+------------------+
 
-.. |iexplore| image:: browser-logos-master/src/edge/edge_32x32.png  
-    :alt: Internet Explorer 
+.. |iexplore| image:: browser-logos-master/src/edge/edge_32x32.png
+    :alt: Internet Explorer
 
 .. |chrome| image:: browser-logos-master/src/chrome/chrome_32x32.png
     :alt: Chrome

@@ -51,8 +51,6 @@ This documentation is OpenDataSoft's reference documentation. It complements inl
    configuring_domain/index
    managing_profile/index
 
-   using_api/index
-
    faq
    platform_glossary
    pictograms_reference/pictograms_reference

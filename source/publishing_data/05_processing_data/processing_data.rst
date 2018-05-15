@@ -15,7 +15,6 @@ On the right side (2) is the dataset preview. Directly in this preview is displa
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
-   defining_a_dataset_schema
    adding_processors_to_a_dataset
+   defining_a_dataset_schema

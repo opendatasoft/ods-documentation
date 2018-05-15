@@ -59,10 +59,10 @@ Searching in the data
        returns every record located at 1 km from the center of Paris
 
 Query Language and Geo Filtering
-================================
+--------------------------------
 
 Query language
---------------
+^^^^^^^^^^^^^^
 
 The OpenDataSoft query language makes it possible to express complex boolean conditions as a filtering context.
 
@@ -193,7 +193,7 @@ Advanced functions can be used in the query language. Function names need to be 
   ``#now(weekday=MO(2))`` returns Monday after next.
 
 Geo Filtering
--------------
+^^^^^^^^^^^^^
 
 Records search accept geofilter parameters to filter in records which are located in a specific geographical area.
 

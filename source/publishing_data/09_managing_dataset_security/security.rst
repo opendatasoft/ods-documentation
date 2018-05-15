@@ -1,4 +1,4 @@
-Managing Security
+Managing security
 =================
 
 You can manage access, visibility on data and edition permissions on a per dataset basis, on each dataset publishing interface.

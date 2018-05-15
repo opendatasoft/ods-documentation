@@ -1,6 +1,14 @@
 Creating a content page
 =======================
 
+The OpenDataSoft platform allows to publish and explore datasets, but also to use it to build fully customized content pages, mixing editorial content as well as data visualizations built from the datasets published in the domain.
+
+Content pages can be used to:
+
+* Complement and organize the portal by configuring a home page and by creating pages on specific topics (the project, the data license...)
+* Write editorial content directly on the platform and share it, as a direct link or through an embed
+* Build advanced dashboards with dynamic visualizations on the portal, and share them
+
 Writing the page
 ----------------
 

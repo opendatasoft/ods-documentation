@@ -1,9 +1,7 @@
 Creating maps & charts
 ======================
 
-As seen in the section :doc:`Exploring the catalog and datasets </exploring_catalog_and_datasets/index>`, any user (provided they have the right to), can easily visualize your dataset content on maps or charts in the dataset catalog.
-
-OpenDataSoft provides additional tools allowing users to create advanced maps and charts that they can share afterwards directly from the front-office. With a richer set of features, these tools let users build advanced visualizations that can mix different datasets (or different flavors of the same dataset).
+In this section are listed and documented all features related to creation of advanced maps or charts, with either the Map Builder or the Chart Builder. Both are available in the front office of an OpenDataSoft domain.
 
 Create advanced maps with Map Builder
 -------------------------------------
@@ -23,7 +21,7 @@ Create advanced maps with Map Builder
 Create advanced charts
 ----------------------
 
-   .. toctree::
-      :maxdepth: 2
+.. toctree::
+   :maxdepth: 2
 
-      02_creating_advanced_charts/analyze
+   02_creating_advanced_charts/analyze

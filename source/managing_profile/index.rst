@@ -1,7 +1,7 @@
 Managing profile
 ================
 
-In this section are listed and documented all features available in the profile of an OpenDataSoft domain user: account settings, API key generation, account quota verification, OAuth2 applications registration, saved visualizations and notifications management.
+In this section are listed and documented all features related to the configuration of the profile of an OpenDataSoft domain user. An OpenDataSoft user profile is only available by that user, and it is accessible by clicking the user name written at the top right corner of both the front office and the back office of an OpenDataSoft domain.
 
 .. toctree::
    :maxdepth: 2

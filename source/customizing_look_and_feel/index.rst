@@ -1,6 +1,8 @@
 Customizing the look & feel
 ===========================
 
+In this section are listed and documented all features related to the customization of an OpenDataSoft domain. These features are available in the Look and feel section of the back office of an OpenDataSoft domain.
+
 .. toctree::
    :maxdepth: 2
 

@@ -1,6 +1,8 @@
 Managing the domain
 ===================
 
+In this section are listed and documented all features related to the management of an OpenDataSoft domain. These features are available in the Users & Groups, Subdomains and License sections of the back office of an OpenDataSoft domain.
+
 Managing users and groups
 -------------------------
 
