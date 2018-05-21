@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-11 15:37+0100\n"
+"POT-Creation-Date: 2018-05-09 18:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2017\n"
+"Last-Translator: Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2017\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,114 +22,173 @@ msgstr ""
 msgid "Customizing your domain URL"
 msgstr "Anpassen Ihrer Domain-URL"
 
-#: ../../source/configuring_portal/custom_urls.rst:5
+#: ../../source/configuring_portal/custom_urls.rst:4
 msgid ""
-"When a domain is created it has one URL, in the form "
-"``<domain>.opendatasoft.com``. As the domain URL is a very important tool "
-"for discoverability, branding and ease of access, there will often be a need"
-" to customize this URL. As such, the OpenDataSoft platform allows for adding"
-" URLs to a domain. These customization options are currently not exposed in "
-"the back office, and must be requested by using the support form in the back"
-" office. The customization options are detailed below."
+"A new OpenDataSoft domain has one URL, in the form "
+"``<domain>.opendatasoft.com``."
 msgstr ""
-"Beim Erstellen einer Domain verfügt diese über eine URL in der Form von "
-"``<domain>.opendatasoft.com``. Da eine Domain-URL ein äußerst wichtiges "
-"Mittel für die Auffindbarkeit, Markenbildung und leichte Zugänglichkeit ist,"
-" muss diese URL oft angepasst werden. Die OpenDataSoft-Plattform ermöglicht "
-"es, URLs zu einer Domain hinzuzufügen. Diese Anpassungsoptionen werden "
-"gegenwärtig nicht im Back-Office bereitgestellt und müssen über das Support-"
-"Formular im Back-Office angefordert werden. Im Folgenden werden die "
-"Anpassungsoptionen beschrieben."
+
+#: ../../source/configuring_portal/custom_urls.rst:6
+msgid ""
+"As the domain URL is a very important tool for discoverability, branding and"
+" ease of access, there will often be a need to customize this URL. As such, "
+"the OpenDataSoft platform allows for adding additional names to a domain. "
+"These customization options are currently not exposed in the back office, "
+"and must be requested by using the support form in the back office. The "
+"customization options are detailed below."
+msgstr ""
 
 #: ../../source/configuring_portal/custom_urls.rst:8
-msgid "OpenDataSoft URLs"
-msgstr "OpenDataSoft-URLs"
-
-#: ../../source/configuring_portal/custom_urls.rst:10
 msgid ""
-"It is possible to add an additional opendatasoft URL that will be used to "
-"access the domain. It is in the form ``<alias>.opendatasoft.com``, where "
-"``alias`` is a word composed of lowercase alphanumeric characters and "
-"hyphens."
+"In the following, the domain *name* will represent the first, base name of "
+"an OpenDataSoft domain, and we will call any additional names *aliases*. The"
+" names are actually the host part of the URLs used to access the domain."
 msgstr ""
-"Sie können eine zusätzliche opendatasoft-URL hinzufügen, die dem Zugriff auf"
-" die Domain dient. Sie hat die Form ``<alias>.opendatasoft.com``, wobei "
-"``alias`` für ein aus kleingeschriebenen alphanumerischen Zeichen und "
-"Bindestrichen bestehendes Wort steht."
+
+#: ../../source/configuring_portal/custom_urls.rst:11
+msgid "OpenDataSoft aliases"
+msgstr ""
 
 #: ../../source/configuring_portal/custom_urls.rst:13
-msgid "Own subdomain"
-msgstr "Eigene Subdomain"
-
-#: ../../source/configuring_portal/custom_urls.rst:15
 msgid ""
-"It is also possible to link your OpenDataSoft domain to a custom subdomain "
-"whose authoritative DNS server you control. For instance a company called "
-"\"Example\" might want to set up their domain in order to have "
-"``data.example.com`` directing to it. This can be done in two steps: first "
-"create a DNS record of the ``CNAME`` type for your subdomain with the "
-"default URL as a value. ``A`` or ``AAAA`` types records are not supported by"
-" the platform as the IP address of your domain is susceptible to change. "
-"Then, the URL corresponding to the subdomain must be registered as an alias."
-" To do so, please contact the OpenDataSoft support by using the support form"
-" in the back office."
+"It is possible to add additional OpenDataSoft domain aliases that will be "
+"used to access the domain. It is in the form ``<alias>.opendatasoft.com``, "
+"where ``alias`` is a word composed of lowercase alphanumeric characters and "
+"hyphens. Some names are reserved and not available as domain names or "
+"aliases. Ambiguous names should be avoided in order to prevent possible "
+"confusion with other OpenDataSoft domains."
 msgstr ""
-"Sie können Ihre OpenDataSoft-Domain auch mit einer benutzerdefinierten "
-"Subdomain verknüpfen, deren autorativen DNS-Server Sie steuern. So könnte "
-"etwa eine Firma namens \"Muster\" ihre Domain so einrichten wollen, dass "
-"``data.muster.com`` zu ihr führt. Dies ist in zwei Schritten machbar: "
-"Erstellen Sie zunächst einen DNS-Eintrag vom Typ ``CNAME`` für Ihre "
-"Subdomain mit der Standard-URL als Wert. Einträge vom Typ ``A`` oder "
-"``AAAA`` werden von der Plattform nicht unterstützt, da sich die IP-Adresse "
-"Ihre Domain ändern kann. Dann muss die der Subdomain entsprechende URL als "
-"Alias registriert werden. Kontaktieren Sie dazu den Support von OpenDataSoft"
-" unter Verwendung des Support-Formulars im Back-Office."
+
+#: ../../source/configuring_portal/custom_urls.rst:16
+msgid "Customer-provided DNS aliases"
+msgstr ""
 
 #: ../../source/configuring_portal/custom_urls.rst:18
-msgid "HTTPS"
-msgstr "HTTPS"
-
-#: ../../source/configuring_portal/custom_urls.rst:23
 msgid ""
-"HTTPS is a widely used protocol which aims at insuring privacy and integrity"
+"It is also possible to change the base URL of an OpenDataSoft domain to a "
+"custom domain name whose authoritative DNS server one controls. For "
+"instance, a company called \"Example\" has an OpenDataSoft domain named "
+"``example``. Its main URL is ``example.opendatasoft.com``, but this customer"
+" might want to set up their domain in order to use the alias "
+"``data.example.com``."
+msgstr ""
+
+#: ../../source/configuring_portal/custom_urls.rst:20
+msgid "This can be done in 2 steps:"
+msgstr ""
+
+#: ../../source/configuring_portal/custom_urls.rst:22
+msgid ""
+"Create a DNS record of the ``CNAME`` type for the desired name with the "
+"default name of one's OpenDataSoft domain as a value."
+msgstr ""
+
+#: ../../source/configuring_portal/custom_urls.rst:25
+msgid ""
+"A trailing dot after after a DNS name means an absolute name, instead of a "
+"relative one. In DNS configuration, names are usually relative by default, "
+"so ``data.example.com`` would actually mean "
+"``data.example.com.example.com.``, which is generally not wanted."
+msgstr ""
+
+#: ../../source/configuring_portal/custom_urls.rst:27
+msgid ""
+"The DNS record for the above example would look like this: "
+"``data.example.com. IN CNAME example.opendatasoft.com.``"
+msgstr ""
+
+#: ../../source/configuring_portal/custom_urls.rst:29
+msgid ""
+"If one's DNS provider uses relative names, it can look like this: ``data IN "
+"CNAME example.opendatasoft.com.``"
+msgstr ""
+
+#: ../../source/configuring_portal/custom_urls.rst:32
+msgid ""
+"One's DNS provider will usually have documentation explaining how to setup "
+"custom entries using their interface."
+msgstr ""
+
+#: ../../source/configuring_portal/custom_urls.rst:34
+msgid ""
+"The new name must be registered as an alias of the main domain on the "
+"OpenDataSoft platform. To do so, please contact the OpenDataSoft support by "
+"using the support form in the back office."
+msgstr ""
+
+#: ../../source/configuring_portal/custom_urls.rst:36
+msgid ""
+"Any number of distinct DNS names can be added to an OpenDataSoft domain. "
+"Though all domain names and aliases can be used to access the domain "
+"simultaneously, the first alias will be used by default for URLs generated "
+"to access the site from outside (in a notification email for example). User "
+"login sessions are also specific to a domain name, so it is possible for a "
+"user to be authenticated when accessing a domain via one alias and "
+"unauthenticated (anonymous) on another alias or the main name."
+msgstr ""
+
+#: ../../source/configuring_portal/custom_urls.rst:39
+msgid ""
+"Some DNS providers offer web redirections as a means to change a site's URL."
+" However, a web redirection is not the same as a DNS CNAME, and cannot be "
+"used to customize an OpenDataSoft domain's URL."
+msgstr ""
+
+#: ../../source/configuring_portal/custom_urls.rst:42
+msgid ""
+"``A`` or ``AAAA`` types records are not supported by the OpenDataSoft "
+"platform as the IP address of one's domain is susceptible to change."
+msgstr ""
+
+#: ../../source/configuring_portal/custom_urls.rst:45
+msgid "HTTPS and TLS (SSL) certificates"
+msgstr ""
+
+#: ../../source/configuring_portal/custom_urls.rst:50
+msgid ""
+"HTTPS is a widely used protocol which aims at ensuring privacy and integrity"
 " of the exchanges between a website and its users by providing HTTP over a "
 "secure communication layer. For these safety and integrity reasons, the "
 "OpenDataSoft platform enforces the use of HTTPS throughout its services, and"
-" as such, requests made to OpenDataSoft URLs and custom subdomains are HTTPS"
-" enabled. If you opted to add an OpenDataSoft URL, the SSL configuration is "
-"the same as with the default URL. However, if you chose to use a custom "
-"subdomain, the SSL will be handled through `Let's Encrypt "
-"<https://letsencrypt.org/>`_."
+" as such, requests made to OpenDataSoft domains and all their aliases are "
+"HTTPS enabled. TLS is the actual protocol used to secure HTTPS today, which "
+"replaced the original, deprecated, SSL protocol."
 msgstr ""
-"HTTPS ist ein gängiges Protokoll, das durch die Bereitstellung von HTTP über"
-" eine sichere Kommunikationsschicht auf die Gewährleistung des Datenschutzes"
-" und der Integrität des Austauschs zwischen einer Website und ihren "
-"Benutzern abzielt. Aus diesen Sicherheits- und Integritätsgründen erzwingt "
-"die OpenDataSoft-Plattform die Verwendung von HTTPS über ihre Dienste, "
-"sodass Anforderungen an OpenDataSoft-URLs sowie benutzerdefinierte "
-"Subdomains HTTPS-fähig sind. Falls Sie eine OpenDataSoft-URL hinzugefügt "
-"haben, ist die SSL-Konfiguration die gleiche wie bei der Standard-URL. Haben"
-" Sie sich jedoch für die Verwendung einer benutzerdefinierten Subdomain "
-"entschieden, erfolgt die SSL-Verarbeitung über `Let's Encrypt "
-"<https://letsencrypt.org/>`_."
 
-#: ../../source/configuring_portal/custom_urls.rst:26
+#: ../../source/configuring_portal/custom_urls.rst:52
+msgid ""
+"If one chose to add an OpenDataSoft alias to the domain "
+"(``<alias>.opendatasoft.com``), the TLS configuration is the same as for the"
+" main name. However, if one chose to use a custom domain name "
+"(``data.example.com``), the TLS certificate will be generated by "
+"OpenDataSoft on one's behalf using `Let's Encrypt "
+"<https://letsencrypt.org/>`_'s services. Certificate generation and renewal "
+"is handled by OpenDataSoft transparently, and the renewal process is "
+"completely automated, as long as the DNS entry is setup and stays valid. "
+"Let's Encrypt certificates provide the same level of security as any other "
+"Domain-Validated TLS certificates, and their short lifecycle (3 months) "
+"ensures a constantly updated security level. Let's Encrypt certificates are "
+"free of charge for OpenDataSoft customers."
+msgstr ""
+
+#: ../../source/configuring_portal/custom_urls.rst:56
+msgid ""
+"If the configuration of one's own DNS includes a CAA entry (Certificate "
+"Authority Authorization), it will be necessary to add Let's Encrypt to the "
+"list of authorized CAs. The required identifier is ``letsencrypt.org``."
+msgstr ""
+
+#: ../../source/configuring_portal/custom_urls.rst:59
 msgid "Language handling"
 msgstr "Sprachenhandling"
 
-#: ../../source/configuring_portal/custom_urls.rst:28
+#: ../../source/configuring_portal/custom_urls.rst:61
 msgid ""
-"If you have multiple languages on your domain and use language-specific "
-"subdomains, you can request that the subdomains force languages for users "
-"that access the domain through them. For instance, if you have two "
-"subdomains ``data.example.co.uk`` and ``daten.example.de``, you can request "
-"that users accessing the domain through the former be served english "
-"content, and those accessing it through the latter be served german content."
+"If one has multiple languages on the OpenDataSoft domain and uses language-"
+"specific domain aliases, one can request each alias to be linked to a "
+"specific language. For instance, if there are 2 aliases "
+"``data.example.co.uk`` and ``daten.example.de``, if can be requested that "
+"users accessing the domain through the first alias be served english content"
+" ; and those accessing it through the second alias be served german content "
+"by default. Users can then switch language as usual."
 msgstr ""
-"Falls Sie mehrere Sprachen auf Ihrer Domain haben und Ihre Domain "
-"sprachspezifische Subdomains verwendet, können Sie festlegen, dass die "
-"Subdomains Sprachen für Benutzer erzwingen, welche über eine Subdomain auf "
-"die Domain zugreifen. Wenn Sie zum Beispiel die beiden Subdomains "
-"``data.example.co.uk`` und ``daten.muster.de`` haben, können Sie bestimmen, "
-"dass Benutzer, die über erstere auf die Domain zugreifen, englische Inhalte "
-"angezeigt bekommen und über letztere zugreifende Benutzer deutsche Inhalte."

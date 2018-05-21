@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-11 15:37+0100\n"
+"POT-Creation-Date: 2018-04-20 11:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: traducteur_DE1 <datawords.translator.de1@gmail.com>, 2017\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
@@ -90,11 +90,22 @@ msgstr ""
 "hinzugefügt werden (außer der \"SAML Users\"-Gruppe, bei der sie automatisch"
 " Mitglied sind)."
 
-#: ../../source/managing_security/saml.rst:12
+#: ../../source/managing_security/saml.rst:11
+msgid ""
+"The transient mode can be disabled altogether using the \"Disable transient "
+"authentication mode\" checkbox in the SAML configuration. If transient mode "
+"is disabled, only linked users will be able to connect through SAML."
+msgstr ""
+"Der Transient-Modus kann in der SAML-Konfiguration über das Kontrollkästchen"
+" \"Transiente Authentifizierung deaktivieren\" vollständig deaktiviert "
+"werden. Ist der Transient-Modus deaktiviert, können nur verknüpfte Benutzer "
+"eine Verbindung über SAML herstellen."
+
+#: ../../source/managing_security/saml.rst:14
 msgid "Linked mode"
 msgstr "Verknüpfter Modus"
 
-#: ../../source/managing_security/saml.rst:14
+#: ../../source/managing_security/saml.rst:16
 msgid ""
 "In the linked mode, users that have an OpenDataSoft user account can link "
 "this account to particular values of the set of parameters defined in the "
@@ -126,7 +137,7 @@ msgstr ""
 "SAML-Konto auf dieser Domain verknüpfen\" in der Registerkarte Identität der"
 " Benutzerkonto-Einstellungen klicken."
 
-#: ../../source/managing_security/saml.rst:19
+#: ../../source/managing_security/saml.rst:21
 msgid ""
 "The other method is to create the link during the user account creation "
 "process, by clicking the link to complete the registration through SAML. "
@@ -138,20 +149,65 @@ msgstr ""
 "Registrierung über SAML. Dies beschleunigt den Kontoerstellungsprozess und "
 "die Kontoverknüpfung."
 
-#: ../../source/managing_security/saml.rst:25
+#: ../../source/managing_security/saml.rst:27
+msgid "Automatic Single Sign On"
+msgstr "Automatisches Single Sign-on"
+
+#: ../../source/managing_security/saml.rst:29
+msgid ""
+"The OpenDataSoft platform offers a mechanism to automatically log in users "
+"when they first visit the domain. It works by starting the SAML "
+"authentication flow for anonymous users, as if they had clicked \"log in "
+"with SAML\", as soon as they encounter (almost) any page in the domain. This"
+" feature only makes sense for private domains as it prevents anonymous "
+"access to the domain. When Automatic Single Sign On is activated, users who "
+"wish to connect to the platform using their OpenDataSoft credentials have "
+"the option to do so by manually visiting the domain login page at ``https"
+"://<platform-url>/login/``"
+msgstr ""
+"Die OpenDataSoft-Plattform bietet die Möglichkeit zur automatischen "
+"Anmeldung der Benutzer, wenn diese die Domain zum ersten Mal besuchen. Dabei"
+" wird der SAML-Authentifizierungsprozess für anonyme Benutzer gestartet, so "
+"als ob sie auf \"Mit SAML anmelden\" geklickt hätten, sobald sie eine Seite "
+"der Domain (dies gilt für fast alle Seiten) aufrufen. Diese Funktion ist nur"
+" für private Domains sinnvoll, da sie den anonymen Zugriff auf die Domain "
+"verhindert. Ist das automatische Single Sign-on aktiviert, können Benutzer, "
+"die sich mit ihren OpenDataSoft-Anmeldeinformationen bei der Plattform "
+"anmelden möchten, dies tun, indem sie die Login-Seite der Domain unter "
+"\"https://<platform-url>/login/\" aufrufen."
+
+#: ../../source/managing_security/saml.rst:33
+msgid "Single Log Out"
+msgstr "Single Log-out"
+
+#: ../../source/managing_security/saml.rst:35
+msgid ""
+"The OpenDataSoft platform supports the standard SAML Single Log Out flow "
+"using the HTTP-Redirect binding. That means that if the IdP supports it, a "
+"log out from a SAML-connected user will trigger a log out from the IdP, and "
+"log out requests from the IdP will trigger a log out of the user on the "
+"platform."
+msgstr ""
+"Die OpenDataSoft-Plattform unterstützt das standardmäßigen SAML Single Log-"
+"out-Verfahren unter Einsatz der  HTTP-Redirect-Bindung. Wird dies vom IDP "
+"unterstützt, hat die Abmeldung eines über SAML verbundenen Benutzers eine "
+"Abmeldung beim IDP zur Folge und die Abmeldeanfrage des IDP führt zur "
+"Abmeldung des Benutzers auf der Plattform."
+
+#: ../../source/managing_security/saml.rst:39
 msgid "Register and configure an identity provider"
 msgstr "Registrieren und Konfigurieren eines Identity Providers"
 
-#: ../../source/managing_security/saml.rst:27
+#: ../../source/managing_security/saml.rst:41
 msgid "Navigate to the signup page in the domain configuration interface."
 msgstr ""
 "Navigieren Sie zur Anmeldeseite in der Domain-Konfigurationsschnittstelle."
 
-#: ../../source/managing_security/saml.rst:32
+#: ../../source/managing_security/saml.rst:46
 msgid "Check \"Allow access for SAML users\""
 msgstr "Klicken Sie auf \"Zugriff für SAML-Benutzer erlauben\""
 
-#: ../../source/managing_security/saml.rst:37
+#: ../../source/managing_security/saml.rst:51
 msgid ""
 "Paste your identity provider metadata document in the \"IDP metadata "
 "document\" field."
@@ -159,7 +215,7 @@ msgstr ""
 "Kopieren Sie Ihr Identity Provider Metadatendokument in das Feld \"IDP "
 "Metadatendokument\"."
 
-#: ../../source/managing_security/saml.rst:39
+#: ../../source/managing_security/saml.rst:53
 msgid ""
 "If you are using Microsoft Azure Active Directory as an IDP, check the "
 "related checkbox."
@@ -167,14 +223,24 @@ msgstr ""
 "Falls Sie Microsoft Azure Active Directory als IDP verwenden, klicken Sie "
 "das entsprechende Kontrollkästchen an."
 
-#: ../../source/managing_security/saml.rst:41
+#: ../../source/managing_security/saml.rst:55
+msgid ""
+"If you wish to disable transient connexion mode, thereby making sure only "
+"linked users can connect to the platform through SAML, check the related "
+"checkbox."
+msgstr ""
+"Wenn Sie den Transient-Modus deaktivieren und damit sicherstellen möchten, "
+"dass nur verknüpfte Benutzer über SAML eine Verbindung zur Plattform "
+"herstellen können, so markieren Sie das entsprechende Kontrollkästchen."
+
+#: ../../source/managing_security/saml.rst:57
 msgid ""
 "Input the set of attributes sent by the IDP that uniquely define a user."
 msgstr ""
 "Geben Sie den vom IDP gesandten Attributsatz ein, der nur den Benutzer "
 "definiert."
 
-#: ../../source/managing_security/saml.rst:43
+#: ../../source/managing_security/saml.rst:59
 msgid ""
 "If the users are defined by their NameID and the NameID format used by your "
 "IdP is not transient, there is no need to fill anything."
@@ -182,7 +248,7 @@ msgstr ""
 "Falls die Benutzer durch ihre NameID definiert werden und das NameID-Format "
 "nicht transient ist, muss nichts ausgefüllt werden."
 
-#: ../../source/managing_security/saml.rst:45
+#: ../../source/managing_security/saml.rst:61
 msgid ""
 "For instance, if your users are defined by the attribute \"FirstName\" and "
 "\"LastName\" transmitted by your IdP, first input \"FirstName\" in the box "
@@ -193,7 +259,7 @@ msgstr ""
 "\"FirstName\" in die Box ein, drücken Sie auf Enter, geben Sie danach "
 "\"LastName\" ein und drücken Sie erneut auf Enter."
 
-#: ../../source/managing_security/saml.rst:47
+#: ../../source/managing_security/saml.rst:63
 msgid ""
 "Input the attributes mappings for the username, last name, first name and "
 "email address."
@@ -201,7 +267,7 @@ msgstr ""
 "Geben Sie die Attribut-Mappings für den Benutzernamen ein: Nachname, Vorname"
 " und E-Mail-Adresse."
 
-#: ../../source/managing_security/saml.rst:49
+#: ../../source/managing_security/saml.rst:65
 msgid ""
 "Here, you need to declare the fields names as they are sent by the identity "
 "provider."
@@ -209,7 +275,7 @@ msgstr ""
 "Hier müssen Sie die Feldnamen angeben, wie sie vom Identity Provider gesandt"
 " wurden."
 
-#: ../../source/managing_security/saml.rst:51
+#: ../../source/managing_security/saml.rst:67
 msgid ""
 "For instance, if your identity provider transmits the connected user's first"
 " name in an attribute called \"GivenName\", this is what you will need to "
@@ -219,7 +285,7 @@ msgstr ""
 "Benutzers in einem Attribut namens \"GivenName\" übermittelt, ist es dieser "
 "Name, den Sie in das Feld \"FirstName\" eingeben müssen."
 
-#: ../../source/managing_security/saml.rst:54
+#: ../../source/managing_security/saml.rst:70
 msgid ""
 "If for any reason your identity provider doesn't send all of these elements,"
 " let the corresponding fields blank. The platform will automatically "
@@ -230,11 +296,11 @@ msgstr ""
 "Plattform generiert sie automatisch auf Grundlage anderer verfügbarer "
 "Attribute."
 
-#: ../../source/managing_security/saml.rst:57
+#: ../../source/managing_security/saml.rst:73
 msgid "Optionally input an access condition."
 msgstr "Optionale Eingabe einer Zugangsbedingung."
 
-#: ../../source/managing_security/saml.rst:59
+#: ../../source/managing_security/saml.rst:75
 msgid ""
 "The first box is the name of the attribute to check for, and the second one "
 "the value of that attribute. If you just want to check for the presence of "
@@ -245,7 +311,7 @@ msgstr ""
 "Attributs prüfen möchten, ohne Wertbegrenzung, können Sie die zweite Box "
 "einfach leer lassen."
 
-#: ../../source/managing_security/saml.rst:62
+#: ../../source/managing_security/saml.rst:78
 msgid ""
 "For instance, if your identity provider sends a list of \"Roles\" for the "
 "users and you want to make sure that only users that have a role can get "
@@ -260,11 +326,23 @@ msgstr ""
 "der Rolle \"DataAccess\" eine Verbindung zur Domain erlauben wollen, geben "
 "Sie bitte \"DataAccess\" in die zweite Box ein."
 
-#: ../../source/managing_security/saml.rst:65
+#: ../../source/managing_security/saml.rst:80
+msgid "Optionally configure automatic single sign on"
+msgstr "Optionale Konfiguration des automatischen Single Sign-on"
+
+#: ../../source/managing_security/saml.rst:82
+msgid ""
+"The automatic single sign on configuration can be found by navigating to the"
+" security page in the domain configuration interface."
+msgstr ""
+"Die Konfiguration des automatischen Single Sign-on ist auf der "
+"Sicherheitsseite der Domain-Konfiguration zu finden."
+
+#: ../../source/managing_security/saml.rst:88
 msgid "Configure your identity provider"
 msgstr "Konfigurieren Ihres Identity Providers"
 
-#: ../../source/managing_security/saml.rst:67
+#: ../../source/managing_security/saml.rst:90
 msgid ""
 "The configuration of the identity provider is implementation-dependant, but "
 "it always consist of importing the service provider metadata document to "
@@ -274,7 +352,7 @@ msgstr ""
 "Sie umfasst jedoch in jedem Fall den Import des Metadatendokuments des "
 "Service Providers, um einen Identitätsverbund zu ermöglichen."
 
-#: ../../source/managing_security/saml.rst:70
+#: ../../source/managing_security/saml.rst:93
 msgid ""
 "You can download the metadata document for your OpenDataSoft domain on "
 "``https://<YOUR DOMAIN>.opendatasoft.com/saml2/metadata.xml``"
@@ -282,11 +360,11 @@ msgstr ""
 "Sie können das Metadatendokument für Ihre OpenDataSoft -Domain auf "
 "``https://<YOUR DOMAIN>.opendatasoft.com/saml2/metadata.xml`` herunterladen."
 
-#: ../../source/managing_security/saml.rst:75
+#: ../../source/managing_security/saml.rst:98
 msgid "Using user attributes to filter data"
 msgstr "Benutzerattribute zum Filtern von Daten vewenden"
 
-#: ../../source/managing_security/saml.rst:77
+#: ../../source/managing_security/saml.rst:100
 msgid ""
 "Through the #attr function, it is possible to filter a dataset records in "
 "such a way that the only records returned are the ones that match a value "
@@ -302,167 +380,167 @@ msgstr ""
 "Benutzernamen und SAML-Attributen ``user-country`` (Benutzerland) und "
 "``user-language`` (Benutzersprache) laut folgender Tabelle haben."
 
-#: ../../source/managing_security/saml.rst:82
+#: ../../source/managing_security/saml.rst:105
 msgid "User"
 msgstr "Benutzer"
 
-#: ../../source/managing_security/saml.rst:83
+#: ../../source/managing_security/saml.rst:106
 msgid "user-country"
 msgstr "Benutzerland"
 
-#: ../../source/managing_security/saml.rst:84
+#: ../../source/managing_security/saml.rst:107
 msgid "user-language"
 msgstr "Benutzersprache"
 
-#: ../../source/managing_security/saml.rst:85
+#: ../../source/managing_security/saml.rst:108
 msgid "User1"
 msgstr "Benutzer1"
 
-#: ../../source/managing_security/saml.rst:86
-#: ../../source/managing_security/saml.rst:107
+#: ../../source/managing_security/saml.rst:109
 #: ../../source/managing_security/saml.rst:130
-#: ../../source/managing_security/saml.rst:171
-#: ../../source/managing_security/saml.rst:186
-#: ../../source/managing_security/saml.rst:218
+#: ../../source/managing_security/saml.rst:153
+#: ../../source/managing_security/saml.rst:194
+#: ../../source/managing_security/saml.rst:209
+#: ../../source/managing_security/saml.rst:241
 msgid "France"
 msgstr "Frankreich"
 
-#: ../../source/managing_security/saml.rst:87
-#: ../../source/managing_security/saml.rst:90
-#: ../../source/managing_security/saml.rst:108
-#: ../../source/managing_security/saml.rst:111
+#: ../../source/managing_security/saml.rst:110
+#: ../../source/managing_security/saml.rst:113
 #: ../../source/managing_security/saml.rst:131
-#: ../../source/managing_security/saml.rst:143
-#: ../../source/managing_security/saml.rst:172
-#: ../../source/managing_security/saml.rst:175
-#: ../../source/managing_security/saml.rst:187
-#: ../../source/managing_security/saml.rst:190
-#: ../../source/managing_security/saml.rst:219
-#: ../../source/managing_security/saml.rst:231
+#: ../../source/managing_security/saml.rst:134
+#: ../../source/managing_security/saml.rst:154
+#: ../../source/managing_security/saml.rst:166
+#: ../../source/managing_security/saml.rst:195
+#: ../../source/managing_security/saml.rst:198
+#: ../../source/managing_security/saml.rst:210
+#: ../../source/managing_security/saml.rst:213
+#: ../../source/managing_security/saml.rst:242
+#: ../../source/managing_security/saml.rst:254
 msgid "French"
 msgstr "Französisch"
 
-#: ../../source/managing_security/saml.rst:88
+#: ../../source/managing_security/saml.rst:111
 msgid "User2"
 msgstr "Benutzer2"
 
-#: ../../source/managing_security/saml.rst:89
-#: ../../source/managing_security/saml.rst:110
-#: ../../source/managing_security/saml.rst:113
-#: ../../source/managing_security/saml.rst:142
-#: ../../source/managing_security/saml.rst:145
-#: ../../source/managing_security/saml.rst:174
-#: ../../source/managing_security/saml.rst:189
-#: ../../source/managing_security/saml.rst:230
+#: ../../source/managing_security/saml.rst:112
+#: ../../source/managing_security/saml.rst:133
+#: ../../source/managing_security/saml.rst:136
+#: ../../source/managing_security/saml.rst:165
+#: ../../source/managing_security/saml.rst:168
+#: ../../source/managing_security/saml.rst:197
+#: ../../source/managing_security/saml.rst:212
+#: ../../source/managing_security/saml.rst:253
 msgid "Canada"
 msgstr "Kanada"
 
-#: ../../source/managing_security/saml.rst:91
+#: ../../source/managing_security/saml.rst:114
 msgid "User3"
 msgstr "Benutzer3"
 
-#: ../../source/managing_security/saml.rst:92
-#: ../../source/managing_security/saml.rst:116
-#: ../../source/managing_security/saml.rst:157
-#: ../../source/managing_security/saml.rst:204
-#: ../../source/managing_security/saml.rst:242
+#: ../../source/managing_security/saml.rst:115
+#: ../../source/managing_security/saml.rst:139
+#: ../../source/managing_security/saml.rst:180
+#: ../../source/managing_security/saml.rst:227
+#: ../../source/managing_security/saml.rst:265
 msgid "United States"
 msgstr "Vereinigte Staaten"
 
-#: ../../source/managing_security/saml.rst:93
-#: ../../source/managing_security/saml.rst:105
-#: ../../source/managing_security/saml.rst:114
-#: ../../source/managing_security/saml.rst:117
-#: ../../source/managing_security/saml.rst:146
-#: ../../source/managing_security/saml.rst:158
-#: ../../source/managing_security/saml.rst:202
-#: ../../source/managing_security/saml.rst:205
-#: ../../source/managing_security/saml.rst:243
+#: ../../source/managing_security/saml.rst:116
+#: ../../source/managing_security/saml.rst:128
+#: ../../source/managing_security/saml.rst:137
+#: ../../source/managing_security/saml.rst:140
+#: ../../source/managing_security/saml.rst:169
+#: ../../source/managing_security/saml.rst:181
+#: ../../source/managing_security/saml.rst:225
+#: ../../source/managing_security/saml.rst:228
+#: ../../source/managing_security/saml.rst:266
 msgid "English"
 msgstr "Englisch"
 
-#: ../../source/managing_security/saml.rst:96
+#: ../../source/managing_security/saml.rst:119
 msgid "And a dataset with records given by the following table."
 msgstr "Und einen Datensatz mit Einträgen laut folgender Tabelle."
 
-#: ../../source/managing_security/saml.rst:101
-#: ../../source/managing_security/saml.rst:127
-#: ../../source/managing_security/saml.rst:139
-#: ../../source/managing_security/saml.rst:154
-#: ../../source/managing_security/saml.rst:168
-#: ../../source/managing_security/saml.rst:183
-#: ../../source/managing_security/saml.rst:198
-#: ../../source/managing_security/saml.rst:215
-#: ../../source/managing_security/saml.rst:227
-#: ../../source/managing_security/saml.rst:239
+#: ../../source/managing_security/saml.rst:124
+#: ../../source/managing_security/saml.rst:150
+#: ../../source/managing_security/saml.rst:162
+#: ../../source/managing_security/saml.rst:177
+#: ../../source/managing_security/saml.rst:191
+#: ../../source/managing_security/saml.rst:206
+#: ../../source/managing_security/saml.rst:221
+#: ../../source/managing_security/saml.rst:238
+#: ../../source/managing_security/saml.rst:250
+#: ../../source/managing_security/saml.rst:262
 msgid "country"
 msgstr "Land"
 
-#: ../../source/managing_security/saml.rst:102
-#: ../../source/managing_security/saml.rst:128
-#: ../../source/managing_security/saml.rst:140
-#: ../../source/managing_security/saml.rst:155
-#: ../../source/managing_security/saml.rst:169
-#: ../../source/managing_security/saml.rst:184
-#: ../../source/managing_security/saml.rst:199
-#: ../../source/managing_security/saml.rst:216
-#: ../../source/managing_security/saml.rst:228
-#: ../../source/managing_security/saml.rst:240
+#: ../../source/managing_security/saml.rst:125
+#: ../../source/managing_security/saml.rst:151
+#: ../../source/managing_security/saml.rst:163
+#: ../../source/managing_security/saml.rst:178
+#: ../../source/managing_security/saml.rst:192
+#: ../../source/managing_security/saml.rst:207
+#: ../../source/managing_security/saml.rst:222
+#: ../../source/managing_security/saml.rst:239
+#: ../../source/managing_security/saml.rst:251
+#: ../../source/managing_security/saml.rst:263
 msgid "language"
 msgstr "Sprache"
 
-#: ../../source/managing_security/saml.rst:103
-#: ../../source/managing_security/saml.rst:129
-#: ../../source/managing_security/saml.rst:141
-#: ../../source/managing_security/saml.rst:156
-#: ../../source/managing_security/saml.rst:170
-#: ../../source/managing_security/saml.rst:185
-#: ../../source/managing_security/saml.rst:200
-#: ../../source/managing_security/saml.rst:217
-#: ../../source/managing_security/saml.rst:229
-#: ../../source/managing_security/saml.rst:241
+#: ../../source/managing_security/saml.rst:126
+#: ../../source/managing_security/saml.rst:152
+#: ../../source/managing_security/saml.rst:164
+#: ../../source/managing_security/saml.rst:179
+#: ../../source/managing_security/saml.rst:193
+#: ../../source/managing_security/saml.rst:208
+#: ../../source/managing_security/saml.rst:223
+#: ../../source/managing_security/saml.rst:240
+#: ../../source/managing_security/saml.rst:252
+#: ../../source/managing_security/saml.rst:264
 msgid "message"
 msgstr "Nachricht"
 
-#: ../../source/managing_security/saml.rst:104
-#: ../../source/managing_security/saml.rst:201
+#: ../../source/managing_security/saml.rst:127
+#: ../../source/managing_security/saml.rst:224
 msgid "Worldwide"
 msgstr "Weltweit"
 
-#: ../../source/managing_security/saml.rst:106
-#: ../../source/managing_security/saml.rst:203
+#: ../../source/managing_security/saml.rst:129
+#: ../../source/managing_security/saml.rst:226
 msgid "Hello world"
 msgstr "Hallo allerseits"
 
-#: ../../source/managing_security/saml.rst:109
 #: ../../source/managing_security/saml.rst:132
-#: ../../source/managing_security/saml.rst:173
-#: ../../source/managing_security/saml.rst:188
-#: ../../source/managing_security/saml.rst:220
+#: ../../source/managing_security/saml.rst:155
+#: ../../source/managing_security/saml.rst:196
+#: ../../source/managing_security/saml.rst:211
+#: ../../source/managing_security/saml.rst:243
 msgid "Bonjour à tous les Français"
 msgstr "Bonjour à tous les Français"
 
-#: ../../source/managing_security/saml.rst:112
-#: ../../source/managing_security/saml.rst:144
-#: ../../source/managing_security/saml.rst:176
-#: ../../source/managing_security/saml.rst:191
-#: ../../source/managing_security/saml.rst:232
+#: ../../source/managing_security/saml.rst:135
+#: ../../source/managing_security/saml.rst:167
+#: ../../source/managing_security/saml.rst:199
+#: ../../source/managing_security/saml.rst:214
+#: ../../source/managing_security/saml.rst:255
 msgid "Bonjour à tous les Canadiens"
 msgstr "Bonjour à tous les Canadiens"
 
-#: ../../source/managing_security/saml.rst:115
-#: ../../source/managing_security/saml.rst:147
+#: ../../source/managing_security/saml.rst:138
+#: ../../source/managing_security/saml.rst:170
 msgid "Hello to all Canadians"
 msgstr "Hello to all Canadians"
 
-#: ../../source/managing_security/saml.rst:118
-#: ../../source/managing_security/saml.rst:159
-#: ../../source/managing_security/saml.rst:206
-#: ../../source/managing_security/saml.rst:244
+#: ../../source/managing_security/saml.rst:141
+#: ../../source/managing_security/saml.rst:182
+#: ../../source/managing_security/saml.rst:229
+#: ../../source/managing_security/saml.rst:267
 msgid "Hello to all Americans"
 msgstr "Hello to all Americans"
 
-#: ../../source/managing_security/saml.rst:120
+#: ../../source/managing_security/saml.rst:143
 msgid ""
 "We can restrict these users so that they see only messages that apply to "
 "their respective countries, with the query ``#attr(country, user-country)``."
@@ -471,25 +549,25 @@ msgstr ""
 "für diese Benutzer festlegen, damit sie nur für ihr jeweiliges Land geltende"
 " Nachrichten sehen."
 
-#: ../../source/managing_security/saml.rst:122
-#: ../../source/managing_security/saml.rst:163
-#: ../../source/managing_security/saml.rst:210
+#: ../../source/managing_security/saml.rst:145
+#: ../../source/managing_security/saml.rst:186
+#: ../../source/managing_security/saml.rst:233
 msgid "User1 sees"
 msgstr "Benutzer1 sieht"
 
-#: ../../source/managing_security/saml.rst:134
-#: ../../source/managing_security/saml.rst:178
-#: ../../source/managing_security/saml.rst:222
+#: ../../source/managing_security/saml.rst:157
+#: ../../source/managing_security/saml.rst:201
+#: ../../source/managing_security/saml.rst:245
 msgid "User2 sees"
 msgstr "Benutzer2 sieht"
 
-#: ../../source/managing_security/saml.rst:149
-#: ../../source/managing_security/saml.rst:193
-#: ../../source/managing_security/saml.rst:234
+#: ../../source/managing_security/saml.rst:172
+#: ../../source/managing_security/saml.rst:216
+#: ../../source/managing_security/saml.rst:257
 msgid "User3 sees"
 msgstr "Benutzer3 sieht"
 
-#: ../../source/managing_security/saml.rst:161
+#: ../../source/managing_security/saml.rst:184
 msgid ""
 "We can also restrict these users so that they only see messages that are in "
 "their respective language, with the query ``#attr(language, user-"
@@ -499,7 +577,7 @@ msgstr ""
 "Beschränkungen für diese Benutzer festlegen, damit sie nur Nachrichten in "
 "ihrer jeweiligen Sprache sehen."
 
-#: ../../source/managing_security/saml.rst:208
+#: ../../source/managing_security/saml.rst:231
 msgid ""
 "Since it is a function of the query language, it can also be grouped with "
 "the usual operators, for instance, we can restrict users to only seeing "

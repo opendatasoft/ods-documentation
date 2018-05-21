@@ -106,3 +106,12 @@ provider and your OpenDataSoft portal. This will give general access to your por
 your organisation's members.
 
 You'll find more information about setting up such a bridge on the :doc:`SAML configuration documentation page <saml>`.
+
+Configuring the users' authenticated sessions timeout
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+By default, all authenticated users are automatically logged out after a 2-week inactivity period. This duration can
+be changed in the **Configuration/Security** section of the backoffice.
+
+Note that every user request to the portal resets the timeout, so sessions can actually last longer than the
+timeout duration.
