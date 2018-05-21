@@ -67,6 +67,8 @@ To generate the PDF version of the manual, you will need to do several things:
 - Generate the PDF
 - Remove the ugly default cover
 - Stitch the generated cover to the generated PDF manual (you can use Apple Preview)
+- Because the SVG fails, it's preferable to remove the final sections (by deleting the pages - note that you can only do this at the end of the document or you will mess the page counts. 
+- If page break shows unwanted sections headers, you can use a white rectangle to hide some elements. 
 
 ## Troubleshooting
 
