@@ -3,8 +3,8 @@ env:
   global:
     - secure: "LDw4BJFn6Pz5Dgh516SZjQFLoLisAwIVYSKBvO0HjT5spioJ7RF+XL/4eiUty9ykg67gBcCO0IuH3gpxgehpehCj+hpKPdVdHcQ+iUb7+ZA0rfVcuN3IND9TzYUcMXfeVkEHrOwCC0oWCo6UflP2oPl9qun7x1egwbVwXzSmLbo="
     - secure: "KnwCBCFBJsCvJUnTkMo3poy2Lrl5br6sJzM8LKt4XnKliv5gpn7IEcMZx3q+IcAHV+PtNS8QXm+XHxt8gMlDR/643TEMOmMWIvBVmuonQ19H/X2TaMGFm2Rx8TQJfV9NovIgEa71ioMTQZb6PzPiQtmxmQEt26vUr8rSJ5sTx3c="
-    - DEPLOY_PATH=/var/www/doc/
-    - DEPLOY_BETA_PATH=/var/www/betadoc/
+    - DEPLOY_PROD_PATH=/var/www/help/platform/
+    - DEPLOY_BETA_PATH=/var/www/betahelp/platform/
 python:
   - 2.7
 install:
@@ -19,10 +19,9 @@ script:
 after_success:
   - openssl aes-256-cbc -K $encrypted_83dcc4e2814b_key -iv $encrypted_83dcc4e2814b_iv -in .travis.deploy.enc -out .travis.deploy -d
   - chmod 600 .travis.deploy
-  - eval "$(ssh-agent -s)"
-  - ssh-add .travis.deploy
-  - 'test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && rsync -e "ssh -o StrictHostKeyChecking=no" -az --force --delete build/ "$DEPLOY_USER"@"$DEPLOY_IP":"$DEPLOY_PATH" 2>/dev/null'
-  - 'test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "develop" && rsync -e "ssh -o StrictHostKeyChecking=no" -az --force --delete build/ "$DEPLOY_USER"@"$DEPLOY_IP":"$DEPLOY_BETA_PATH" 2>/dev/null'
+  # Modificate branch by develop
+  - 'test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "epic/documentation_template" && rsync -avz -e "ssh -i .travis.deploy -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --delete -P build/ "$DEPLOY_USER"@"$DEPLOY_IP":"$DEPLOY_BETA_PATH"'
+  - 'test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && rsync -avz -e "ssh -i .travis.deploy -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --delete -P build/ "$DEPLOY_USER"@"$DEPLOY_IP":"$DEPLOY_PROD_PATH"'
 sudo: false
 notifications:
   slack:
