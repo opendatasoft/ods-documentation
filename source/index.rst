@@ -49,7 +49,7 @@ This documentation is OpenDataSoft's reference documentation. It complements inl
 
    exploring_catalog_and_datasets/index
    creating_maps_charts/index
-   managing_profile/index
+   managing_account/index
 
 .. toctree::
    :caption: Back Office
