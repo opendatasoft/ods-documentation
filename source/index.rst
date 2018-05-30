@@ -42,17 +42,28 @@ This documentation is OpenDataSoft's reference documentation. It complements inl
    :maxdepth: 3
 
    setup.rst
-   sourcing_and_processing_data/index
+
+.. toctree::
+   :caption: Front Office
+   :maxdepth: 3
+
    exploring_catalog_and_datasets/index
-   editing_pages/index
    creating_maps_charts/index
-   configuring_portal/index
-   managing_security/index
-   notifications/index
+   managing_account/index
+
+.. toctree::
+   :caption: Back Office
+   :maxdepth: 3
+
+   publishing_data/index
+   creating_content/index
    customizing_look_and_feel/index
-   monitoring_audience/index
-   managing_subdomains/index
-   using_api/index
+   managing_domain/index
+   configuring_domain/index
+
+.. toctree::
+   :caption: Other links
+   :maxdepth: 1
 
    faq
    platform_glossary
