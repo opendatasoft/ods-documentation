@@ -53,7 +53,37 @@ These permissions have different impacts depending on the chosen access policy.
 Adding users or groups of users to a page security
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To manage :
+To add users to a page security:
 
 1. Go to Security > User permissions.
 2. Click the "Add user permissions" button.
+3. Select one or more users from the list. A search bar is also available to search a user by name.
+4. (optional) If all added users are going to be granted the "Edit page" permission as well as the default "Browse page" permission, it is possible to grand that permission now. Otherwise permissions can be granted afterward. To already grant the "Edit page" permission, at the top of the "Add user permissions" window, under "Grant these permissions":
+
+  4.a. Click the Add permission button.
+  4.b. Click the Edit page permission button.
+
+5. Click the "Add user permissions" button at the bottom of the "Add user permissions" window.
+
+To add groups of users to a page security: follow the "add users to a page security" procedure but go to Security > Group permissions instead.
+
+Managing permissions for users and groups of users added to a page security
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Managing permissions can mean 2 things:
+
+- granting a user or a group of users a new permission,
+- or, deleting a user's or a groups of users permission.
+
+.. admonition:: Permissions can be granted beforehand, when adding the users and groups of users.
+   :class: note
+
+   See "Adding users or groups of users to a page security" for more information.
+
+To grand a new permission:
+
+...
+
+To delete a permission:
+
+...
