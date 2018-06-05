@@ -6,7 +6,7 @@ To manage a content page security, go to the Pages section of the back office, i
 .. admonition:: General permissions at domain level have priority over permissions at page level
    :class: caution
 
-   For example, if users have the permission "Browse all pages", they can access any page, even the private ones in which they are not listed with the allowed users for that page.
+   For example, if users have the permission *Browse all pages*, they can access any page, even the private ones in which they are not listed with the allowed users for that page.
 
 Choosing an access policy
 -------------------------
@@ -18,8 +18,8 @@ To choose the access policy of a content page:
 1. Go to Security > Access policy.
 2. Click
 
-   a. either, the "Public access" button, to let any user access the page, as long as they have access to the portal,
-   b. or, the "Private access" button, to restrict the access to the page to specically defined users and/or groups of users.
+  - either, the **Public access** button, to let any user access the page, as long as they have access to the portal,
+  - or, the **Private access** button, to restrict the access to the page to specically defined users and/or groups of users.
 
 .. admonition:: Information security in public pages
    :class: important
@@ -38,37 +38,43 @@ Once the access policy of a content page is set, it is possible to manage users 
 
 There are 2 permissions available in the security management of a content page:
 
-- Browse page: it allows the user/the group of users to access the page and its content. This permission is set by default for all users added to the security management section of the page.
-- Edit page: it allows the user/the group of users to access the back office to edit the content of the page.
+- *Browse page*: it allows the user/group of users to access the page and its content. This permission is set by default for all users added to the security management section of the page.
+- *Edit page*: it allows the user/group of users to access the back office to edit the content of the page.
 
 These permissions have different impacts depending on the chosen access policy.
 
-- "Browse page" permission:
+- *Browse page* permission:
 
-  - For a private page, the "Browse page" permission gives access to that page, hence the importance of adding users to the security management section, otherwise nobody (except users with the general domain-level "Browse all pages") can access the page and its content.
-  - For a public page, the "Browse page" permission doesn't change much to the access security of that page because it is already accessible by anybody who has access to the domain.
+  - For a private page, the *Browse page* permission gives access to that page, hence the importance of adding users to the security management section, otherwise nobody (except users with the general domain-level *Browse all pages*) can access the page and its content.
+  - For a public page, the *Browse page* permission doesn't change much to the access security of that page because it is already accessible by anybody who has access to the domain.
 
-- "Edit page" permission: this permission is relevant for both private and public pages and give edition rights on the page to any user/group of users added to the security management section of the page and granted with this "Edit page" permission.
+- *Edit page* permission: this permission is relevant for both private and public pages and give edition rights on the page to any user/group of users added to the security management section of the page and granted with this *Edit page* permission.
 
-Adding users or groups of users to a page security
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Adding and deleting users or groups of users from a page
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To add users to a page security:
+Adding users or groups to a page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Go to Security > User permissions.
-2. Click the "Add user permissions" button.
-3. Select one or more users from the list. A search bar is also available to search a user by name.
-4. (optional) If all added users are going to be granted the "Edit page" permission as well as the default "Browse page" permission, it is possible to grand that permission now. Otherwise permissions can be granted afterward. To already grant the "Edit page" permission, at the top of the "Add user permissions" window, under "Grant these permissions":
+1. Go to Security > User permissions or Security > Group permissions depending on whether a user or a group will be added.
+2. Click the **Add user/group permissions** button at the bottom of the table.
+3. Select one or more users/groups of users from the list. A search bar is also available to search a user/group by name.
+4. (optional) If all added users/groups are going to be granted the *Edit page* permission as well as the default *Browse page* permission, it is possible to grant that permission now. Otherwise permissions can be granted afterward. To already grant the *Edit page* permission, at the top of the Add user/group permissions window, in the Grant these permissions section:
 
-  4.a. Click the Add permission button.
-  4.b. Click the Edit page permission button.
+  a. Click the **Add permission** button.
+  b. Click the *Edit page* permission button.
 
-5. Click the "Add user permissions" button at the bottom of the "Add user permissions" window.
+5. Click the **Add user/group permissions** button at the bottom of the Add user/group permissions window.
 
-To add groups of users to a page security: follow the "add users to a page security" procedure but go to Security > Group permissions instead.
+Deleting users or groups from a page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Managing permissions for users and groups of users added to a page security
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1. Go to Security > User permissions or Security > Group permissions depending on whether a user or a group will be deleted.
+2. In the table, the first column indicates the name of the user or the group of users. The second column indicates the corresponding permission(s). The third column displays a trash button. Click this button to delete a chosen user/group of users.
+3. Click the **Save** button in the top right corner.
+
+Managing page security permissions for users and groups of users
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Managing permissions can mean 2 things:
 
@@ -80,10 +86,25 @@ Managing permissions can mean 2 things:
 
    See "Adding users or groups of users to a page security" for more information.
 
-To grand a new permission:
+Granting page security permissions for users or groups
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-...
+1. Go to Security > User permissions or Security > Group permissions depending on whether the new permission must be granted to a user or a group of users.
+2. In the table, the first column indicates the name of the user or the group of users. The second column indicates the corresponding permission(s). In this second column, click the **Add permission** button to add a new permission to a chosen user or group of users.
+3. Click on the permission to grant.
 
-To delete a permission:
+..  note::
+  Since there are only 2 permissions for page security, including 1 that is by default, the only permission left to be granted is *Edit page*.
 
-...
+4. Click the **Save** button in the top right corner.
+
+Deleting page security permissions from users or groups
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Go to Security > User permissions or Security > Group permissions depending on whether the new permission must be deleted for a user or a group of users.
+2. In the table, the first column indicates the name of the user or the group of users. The second column indicates the corresponding permission(s). Click on a chosen permission to delete it.
+
+..  note::
+  It isn't possible to delete the *Browse page* permission, the only permission that can be deleted is *Edit page*. To prevent a user from accessing a page, the page must be private (see Choosing an access policy) and the user must be deleted from the page security.
+
+3. Click the **Save** button in the top right corner.
