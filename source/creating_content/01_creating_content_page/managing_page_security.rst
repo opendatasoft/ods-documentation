@@ -3,10 +3,10 @@ Managing the security of a page
 
 To manage a content page security, go to the Pages section of the back office, in the Security tab of the chosen content page.
 
-.. admonition:: General permissions at domain level have priority over permissions at page level
-   :class: caution
+.. admonition:: Important
+   :class: important
 
-   For example, if users have the permission *Browse all pages*, they can access any page, even the private ones in which they are not listed with the allowed users for that page.
+   General permissions at domain level have priority over permissions at page level. For example, if a user has the *Browse all pages* permission, they can access any page, even the private ones. They don't need to be added in the page and granted security permissions for that private page.
 
 Choosing an access policy
 -------------------------
@@ -21,20 +21,18 @@ To choose the access policy of a content page:
   - either, the **Public access** button, to let any user access the page, as long as they have access to the portal,
   - or, the **Private access** button, to restrict the access to the page to specically defined users and/or groups of users.
 
-.. admonition:: Information security in public pages
-   :class: important
+.. admonition:: Caution
+   :class: caution
 
    If a user has access to a content page but which was created with datasets that user isn't allowed to access, all related visualizations will not load. However, the user will be able to read all other information displayed on the content page, such as text.
 
 Managing page permissions for users and groups
 ----------------------------------------------
 
-Once the access policy of a content page is set, it is possible to manage users and groups permissions on that page.
-
-.. admonition:: Users and groups must be added in the Users & Groups section beforehand, otherwise they can't be found in a page security management
+.. admonition:: Important
    :class: important
 
-   No matter the access policy or the permission, the latter can be given to users invididually or through groups of users, but both users and groups must already be listed in the Users & Groups section of the back office, where users are invited to the portal and where groups are created.
+   Users and groups must be added in the Users & Groups section beforehand, otherwise they can't be found in a page security management. No matter the access policy or the permission, permissions can indeed be given to users invididually or through groups of users, but both users and groups must already be listed in the Users & Groups section of the back office (where users are invited to the portal and where groups are created).
 
 There are 2 permissions available in the security management of a content page:
 
@@ -81,10 +79,10 @@ Managing page security permissions can mean 2 things:
 - granting a user or a group of users a new page permission,
 - or, deleting a page permission for a user or a group of users.
 
-.. admonition:: Permissions can be granted beforehand, when adding the users and groups of users to the page.
+.. admonition:: Note
    :class: note
 
-   See "Adding users or groups of users to a page" for more information.
+   Permissions can be granted beforehand, when adding the users and groups of users to the page (see `Adding users or groups to a page`_ for more information).
 
 Granting page security permissions for users or groups
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -93,8 +91,10 @@ Granting page security permissions for users or groups
 2. In the table, the first column indicates the name of the user or the group of users. The second column indicates the corresponding permission(s). In this second column, click the **Add permission** button to add a new permission to a chosen user or group of users.
 3. Click on the permission to grant.
 
-..  note::
-  Since there are only 2 page security permissions, including 1 default permission (*Browse page*), the only permission left to be granted is *Edit page*.
+.. admonition:: Note
+   :class: note
+
+   Since there are only 2 page security permissions, including 1 default permission (*Browse page*), the only permission left to be granted is *Edit page*.
 
 4. Click the **Save** button in the top right corner.
 
@@ -104,10 +104,13 @@ Deleting page security permissions for users or groups
 1. Go to Security > User permissions or Security > Group permissions, depending on whether the new permission must be deleted for a user or a group of users.
 2. In the table, the first column indicates the name of the user or the group of users. The second column indicates the corresponding permission(s). In this second column, click on a chosen permission to delete it.
 
-..  note::
-  It isn't possible to delete the *Browse page* permission, the only page permission that can be deleted is *Edit page*. To prevent a user from accessing a page, the page must be private (see Choosing an access policy) and the user must be deleted from the page security (see Deleting users or groups from a page).
+.. admonition:: Note
+   :class: note
+
+   It isn't possible to delete the *Browse page* permission, the only page permission that can be deleted is *Edit page*. To prevent a user from accessing a page, the page must be private (see `Choosing an access policy`_) and the user must be deleted from the page security (see `Deleting users or groups from a page`_).
 
 3. Click the **Save** button in the top right corner.
+
 
 
 .. |trash-button| image:: images/page_security_trash-button.png
