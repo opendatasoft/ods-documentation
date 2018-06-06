@@ -2,15 +2,15 @@
 # Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-13 16:51+0100\n"
+"POT-Creation-Date: 2018-05-09 18:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2017\n"
+"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2017\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,6 +27,8 @@ msgid ""
 "An API (Application Programming Interface) is an interface for programs to "
 "communicate and exchange data."
 msgstr ""
+"Een API (Application Programming Interface) is een interface voor "
+"programma's om data te communiceren en uit te wisselen."
 
 #: ../../source/using_api/index.rst:8
 msgid ""
@@ -35,11 +37,18 @@ msgid ""
 "<https://kitchen.opendatasoft.com/you-dont-need-analogies-to-understand-"
 "apis-14da4513f970>`_\" written by one of our OpenDataSoft developers."
 msgstr ""
+"Om meer te weten te komen over wat API's zijn en waarom en hoe ze worden "
+"gebruikt, kunt u het artikel \"`You don’t need analogies to understand APIs "
+"<https://kitchen.opendatasoft.com/you-dont-need-analogies-to-understand-"
+"apis-14da4513f970>`_\" lezen dat geschreven is door een van onze "
+"OpenDataSoft-ontwikkelaars."
 
 #: ../../source/using_api/index.rst:10
 msgid ""
 "OpenDataSoft provides access to 6 APIs, that can be put into 3 categories:"
 msgstr ""
+"OpenDataSoft verschaft toegang tot 6 API's, die in 3 categorieën kunnen "
+"worden ondergebracht:"
 
 #: ../../source/using_api/index.rst:12
 msgid ""
@@ -48,6 +57,10 @@ msgid ""
 "OpenDataSoft's own APIs, used internally by the platform and the `ODS "
 "widgets <http://opendatasoft.github.io/ods-widgets/docs/#/api>`_"
 msgstr ""
+"`ODS Search API v1 <https://docs.opendatasoft.com/api/explore/v1.html>`_ en "
+"`ODS Search API v2 <https://docs.opendatasoft.com/api/explore/v2.html>`_: de"
+" eigen API's van OpenDataSoft die intern door het platform worden gebruikt, "
+"en de `ODS widgets <http://opendatasoft.github.io/ods-widgets/docs/#/api>`_"
 
 #: ../../source/using_api/index.rst:13
 msgid ""
@@ -55,6 +68,9 @@ msgid ""
 "<https://docs.opendatasoft.com/api/explore/tpf.html>`_: ODS API for triple "
 "pattern querying over datasets from OpenDataSoft portals"
 msgstr ""
+"`Triple Pattern Fragments API "
+"<https://docs.opendatasoft.com/api/explore/tpf.html>`_: ODS API voor "
+"drievoudige patronen die zoeken naar datasets uit OpenDataSoft-portalen"
 
 #: ../../source/using_api/index.rst:14
 msgid ""
@@ -63,6 +79,10 @@ msgid ""
 "<https://docs.opendatasoft.com/api/explore/csw.html>`_, 3 standard protocols"
 " supported and provided by OpenDataSoft"
 msgstr ""
+"`OData <https://docs.opendatasoft.com/api/explore/odata.html>`_, `WFS "
+"<https://docs.opendatasoft.com/api/explore/wfs.html>`_ en`CSW "
+"<https://docs.opendatasoft.com/api/explore/csw.html>`_, 3 standaard "
+"protocollen die ondersteund en verschaft worden door OpenDataSoft"
 
 #: ../../source/using_api/index.rst:16
 msgid ""
@@ -70,6 +90,9 @@ msgid ""
 "their source or format, as long as the security rules defined by the data "
 "owner allow that access."
 msgstr ""
+"Al deze API's bieden toegang tot data die naar het platform wordt geduwd, "
+"ongeacht de bron of het formaat, zolang de veiligheidsregels, zoals die door"
+" de eigenaar van de data zijn gedefinieerd, die toegang mogelijk maken."
 
 #: ../../source/using_api/index.rst:18
 msgid ""
@@ -83,10 +106,19 @@ msgid ""
 "lopen-data-dedans/>`_ 2 applications that display the school canteen menu of"
 " French cities, Toulouse, Rennes and Saint-Malo)."
 msgstr ""
+"Deze API's kunnen bijvoorbeeld gebruikt worden om te zoeken naar datasets en"
+" data om analyses te berekenen of om geografische optellingen uit te voeren."
+" Deze zijn nog altijd ontwikkelaargericht, maar voor meer concrete "
+"voorbeelden van wat gedaan worden met API's: applicaties als hergebruiken "
+"van data. Sommige van de klanten van OpenDataSoft hebben inderdaad gezien "
+"dat hun datasets via hun API worden hergebruikt om applicaties aan te maken "
+"(bijv.  `Qui dit miam ! <http://quiditmiam.fr/>`_ 2 applicaties die het menu"
+" in de schoolkantine van Franse steden, Toulouse, Rennes en Saint-Malo "
+"weergeven)."
 
 #: ../../source/using_api/index.rst:21
 msgid "Reminder before diving into any API specification"
-msgstr ""
+msgstr "Herinnering alvorens in enige API-specificatie te duiken"
 
 #: ../../source/using_api/index.rst:24
 msgid ""
@@ -96,43 +128,45 @@ msgid ""
 " the platform, but they are only relevant in very specific contexts). "
 "OpenDataSoft can thus be seen as such:"
 msgstr ""
+"Alvorens een van de beschikbare API's te gebruiken, is het belangrijk om "
+"vertrouwd te zijn met de aard van deze data. Alles binnen het platform is "
+"opgebouwd volgens een boomstructuur (er zijn natuurlijke meerdere soorten "
+"data binnen het platform, maar deze zijn enkel relevant in zeer specifieke "
+"contexten). Bijgevolg kan OpenDataSoft gezien worden als volgt:"
 
 #: ../../source/using_api/index.rst:26
-#, fuzzy
 msgid "The OpenDataSoft platform is a network of OpenDataSoft portals."
-msgstr ""
-"Het **OpenDataSoft-platform** is een netwerk van OpenDataSoft-portalen."
+msgstr "Het OpenDataSoft-platform is een netwerk van OpenDataSoft-portalen."
 
 #: ../../source/using_api/index.rst:27
-#, fuzzy
 msgid "A portal provides a catalog of all of its datasets."
-msgstr "Een **portaal** biedt een **catalogus** aan van al zijn **datasets**."
+msgstr "Een portaal biedt een catalogus van al zijn datasets."
 
 #: ../../source/using_api/index.rst:28
-#, fuzzy
 msgid ""
 "Each dataset is defined by a dictionary of metadata, a data schema "
 "(specifying fields names and types) and a collection of records."
 msgstr ""
-"Elke **dataset** wordt gedefinieerd door een woordenboek van **metadata**, "
-"een **dataschema** (waarin namen en soorten van velden worden "
-"gespecificeerd) en een verzameling van **records**."
+"Elke dataset wordt gedefinieerd door een woordenboek van metadata, een "
+"dataschema (waarin veldnamen en -types worden gespecificeerd) en een "
+"verzameling van records."
 
 #: ../../source/using_api/index.rst:29
-#, fuzzy
 msgid "Each record provides values for each of the dataset's fields."
-msgstr ""
-"Elk **record** verschaft waarden voor elk van de velden van de dataset."
+msgstr "Elk record biedt waarden voor elk van de velden van de dataset."
 
 #: ../../source/using_api/index.rst:33
 msgid "ODS Search"
-msgstr ""
+msgstr "ODS Search"
 
 #: ../../source/using_api/index.rst:35
 msgid ""
 "This ODS Search API is used internally by the OpenDataSoft platform and "
 "widgets. To develop an application, we recommand using this API."
 msgstr ""
+"Deze ODS Search-API wordt intern gebruikt door het OpenDataSoft-platform en "
+"widgets. Om een applicatie te ontwikkelen, raden we aan om deze API te "
+"gebruiken."
 
 #: ../../source/using_api/index.rst:37
 msgid ""
@@ -141,39 +175,45 @@ msgid ""
 "<https://docs.opendatasoft.com/api/explore/v2.html>`_ which is still under "
 "development. Listed below, the main differences between the 2 versions."
 msgstr ""
+"Er bestaan momenteel 2 versies van de ODS Search API: de `v1 "
+"<https://docs.opendatasoft.com/api/explore/v1.html>`_ en de `v2 "
+"<https://docs.opendatasoft.com/api/explore/v2.html>`_ die nog steeds in "
+"ontwikkeling is. Hieronder vindt u een overzicht van de belangrijkste "
+"verschillen tussen de 2 versies."
 
 #: ../../source/using_api/index.rst:39
-#, fuzzy
 msgid ""
 "The ODS Search API v2 introduces a better implementation of REST principles."
 " Each API entry-point provides links to easily navigate between linked "
 "resources (HATEOAS)."
 msgstr ""
-"APIv2 introduceert een betere implementatie van REST-principes. Elke API "
-"entrypoint verschaft koppelingen om gemakkelijk te navigeren tussen "
-"gekoppelde bronnen (HATEOAS)."
+"De ODS Search API v2 introduceert een betere implementatie van REST-"
+"principes. Elk API-instappunt biedt koppelingen om gemakkelijk te kunnen "
+"navigeren tussen gekoppelde bronnen (HATEOAS)."
 
 #: ../../source/using_api/index.rst:40
 msgid "Key changes in the v2:"
-msgstr ""
+msgstr "Belangrijkste wijzigingen in de v2:"
 
 #: ../../source/using_api/index.rst:42
 msgid ""
 "a more complete query language (ODSQL) is available, with new functions and "
 "arithmetic expressions"
 msgstr ""
+"er is een meer volledige zoektaal (ODSQL) beschikbaar met nieuwe functies en"
+" wiskundige uitdrukkingen"
 
 #: ../../source/using_api/index.rst:43
-#, fuzzy
 msgid ""
 "special filters (such as geofilter and facet filters) are now directly "
 "integrated to ODSQL, in the ``where`` parameter (i.e "
 "``geofilter.distance='42,1,100'`` is replaced by "
 "``where=distance(geo_field,geom'Point(42 1)',100)``)"
 msgstr ""
-"Speciale filters (geofilter of facetfilters) worden in plaats daarvan "
-"verplaatst naar de zoektaal. Bijvoorbeeld ``geofilter.distance='42,1,100'`` "
-"wordt vervangen door ``q=distance(geo_field,geom'Point(42 1)',100)``"
+"speciale filters (zoals een geofilter en facet filters) zijn nu rechtstreeks"
+" geïntegreerd in ODSQL. In de parameter \"waar\" (d.i.  "
+"``geofilter.distance='42,1,100'`` wordt vervangen door "
+"``where=distance(geo_field,geom'Point(42 1)',100)``)"
 
 #: ../../source/using_api/index.rst:44
 msgid ""
@@ -181,28 +221,29 @@ msgid ""
 "ODSQL language as the Search API, and is available on both the catalog (to "
 "aggregate datasets) and the dataset (to aggregate records) APIs"
 msgstr ""
+"de samenvoeg-API (vroeger analyseer-API) deelt nu dezelfde structuur en "
+"ODSQL-taal als de Search API en is voor beide catalogi beschikbaar (om "
+"datasets samen te voegen) en de dataset-API's (om records samen te voegen)"
 
 #: ../../source/using_api/index.rst:45
-#, fuzzy
 msgid ""
 "exporters have their own entry-point under ``/api/catalog/exports`` and "
 "``/api/catalog/datasets/<dataset_id>/exports``"
 msgstr ""
-"Exporteurs hebben hun eigen entrypoint onder ``/api/catalog/exports`` en "
+"exporteurs hebben hun eigen instappunt onder  ``/api/catalog/exports`` en "
 "``/api/catalog/datasets/<dataset_id>/exports``"
 
 #: ../../source/using_api/index.rst:46
-#, fuzzy
 msgid ""
 "navigation search (former facet search) and standard search are completely "
 "splitted"
 msgstr ""
-"Navigatiezoekopdrachten (vroeger facetzoekopdrachten) en standaard "
-"zoekopdrachten zijn volledig opgesplitst."
+"Navigation Search (vroeger Facet Search) en Standaard Search zijn volledig "
+"van elkaar gesplitst"
 
 #: ../../source/using_api/index.rst:50
 msgid "Triple Pattern Fragments"
-msgstr ""
+msgstr "Triple Pattern Fragments"
 
 #: ../../source/using_api/index.rst:52
 msgid ""
@@ -212,10 +253,16 @@ msgid ""
 "in progress and is part of a PhD that aims to improve OpenDataSoft datasets "
 "quality using semantic web technologies."
 msgstr ""
+"De `Triple Pattern Fragments (TPF) API "
+"<https://docs.opendatasoft.com/api/explore/tpf.html>`_ biedt de mogelijkheid"
+" om datasets te zoeken in Resource Description Framework (RDF) formaat. Dit "
+"werk is nog steeds bezig en is onderdeel van een Phd die erop gericht is om "
+"de kwaliteit van OpenDataSet-datasets te verbeteren door gebruik te maken "
+"van semantische internettechnologieën."
 
 #: ../../source/using_api/index.rst:56
 msgid "OData, WFS and CSW"
-msgstr ""
+msgstr "OData, WFS en CSW"
 
 #: ../../source/using_api/index.rst:58
 msgid ""
@@ -223,6 +270,10 @@ msgid ""
 "recommand to users who are not familiar with these 3 APIs to stick to the "
 "ODS Search API since it provides the most comprehensive access to the data."
 msgstr ""
+"OData, WFS en CSW verwijzen naar andere normen die gehanteerd worden door "
+"het platform. We raden gebruikers, die niet met deze 3 API's vertrouwd zijn,"
+" om de ODS Search API te blijven gebruiken aangezien deze de meest volledige"
+" toegang tot de data biedt."
 
 #: ../../source/using_api/index.rst:60
 msgid ""
@@ -234,6 +285,14 @@ msgid ""
 " records) ; for the more complex ones (analysis, aggregations, geographic "
 "computations etc.) our ODS Search APIs (v1 and v2) must be used."
 msgstr ""
+"`OData <https://docs.opendatasoft.com/api/explore/odata.html>`_: standaard "
+"voor REST API's die een gemeenschappelijke taal bieden die in alle API's "
+"gebruikt kan worden om zoekopdrachten uit te voeren. De trade-off voor de "
+"generische aanpak van deze norm is zijn grotere complexiteit in vergelijking"
+" met traditionele gewone REST API's. OpenDataSoft heeft deze norm gehanteerd"
+" voor de eenvoudige operaties (zoeken naar datasets en records); voor de "
+"meer complexe operaties (analyse, samenvoegingen, geografische berekeningen,"
+" enz.) moet onze ODS Search APIs (v1 en v2) worden gebruikt."
 
 #: ../../source/using_api/index.rst:61
 msgid ""
@@ -242,231 +301,7 @@ msgid ""
 "on geographic data. They are especially relevant for example to interface "
 "the platform with other GIS software."
 msgstr ""
-
-#~ msgid ""
-#~ "An *Application Programming Interface*, or API for short, is an interface "
-#~ "designed to let programs exchange data. OpenDataSoft's API provide an "
-#~ "unified way of accessing any data that were pushed to the platform, "
-#~ "regardless of their source or format, while still enforcing security rules "
-#~ "defined by the data owner."
-#~ msgstr ""
-#~ "Een \"Application Programming Interface\" of afgekort API, is een interface "
-#~ "die ontworpen werd om programma's toe te laten gegevens uit te wisselen. De "
-#~ "API van OpenDataSoft biedt een uniforme manier om toegang te krijgen tot "
-#~ "gegevens die naar het platform werden gepusht, ongeacht hun bron of formaat,"
-#~ " terwijl nog steeds de veiligheidsregels worden gehanteerd die gedefinieerd "
-#~ "werden door de eigenaar van de data."
-
-#~ msgid ""
-#~ "The whole OpenDataSoft platform relies exclusively on these very APIs to "
-#~ "access the data. They are heavily used by our `widgets library "
-#~ "<http://opendatasoft.github.io/ods-widgets/docs/#/api>`_ which are only a "
-#~ "presentation layer for the data provided by the APIs."
-#~ msgstr ""
-#~ "Het volledige OpenDataSoft-platform vertrouwt exclusief op deze API's om "
-#~ "toegang te krijgen tot de data. Ze worden veel gebruikt door onze "
-#~ "`widgetsbibliotheek <http://opendatasoft.github.io/ods-widgets/docs/#/api>`_"
-#~ " die enkel een presentatielaag zijn voor de data die verschaft worden door "
-#~ "de API's."
-
-#~ msgid ""
-#~ "These APIs allow you to search for datasets, search for data, compute "
-#~ "analysis, perform geographic aggregation and much more."
-#~ msgstr ""
-#~ "Deze API's laten u toe te zoeken naar datasets, te zoeken naar data, "
-#~ "analyses te maken, geografische aggregaties uit te voeren en nog veel meer."
-
-#~ msgid "To access the developer API documentations, click the following links:"
-#~ msgstr ""
-#~ "Om toegang te krijgen tot de ontwikkelaar van API-documentatie, klik op de "
-#~ "volgende links:"
-
-#~ msgid "`Search API v1 <https://docs.opendatasoft.com/api/explore/v1.html>`_"
-#~ msgstr "`Search API v1 <https://docs.opendatasoft.com/api/explore/v1.html>`_"
-
-#~ msgid "`Search API v2 <https://docs.opendatasoft.com/api/explore/v2.html>`_"
-#~ msgstr "`Search API v2 <https://docs.opendatasoft.com/api/explore/v2.html>`_"
-
-#~ msgid "`OData API <https://docs.opendatasoft.com/api/explore/odata.html>`_"
-#~ msgstr "`OData API <https://docs.opendatasoft.com/api/explore/odata.html>`_"
-
-#~ msgid "`CSW API <https://docs.opendatasoft.com/api/explore/csw.html>`_"
-#~ msgstr "`CSW API <https://docs.opendatasoft.com/api/explore/csw.html>`_"
-
-#~ msgid "`WFS API <https://docs.opendatasoft.com/api/explore/wfs.html>`_"
-#~ msgstr "`WFS API <https://docs.opendatasoft.com/api/explore/wfs.html>`_"
-
-#~ msgid "Key concepts"
-#~ msgstr "Belangrijkste concepten"
-
-#~ msgid ""
-#~ "All APIs will provide you access to the same data, only in different ways. "
-#~ "It is very important to be familiar with the nature of this data before "
-#~ "diving the full specification of each API."
-#~ msgstr ""
-#~ "Alle API's verschaffen u toegang tot dezelfde data, alleen op verschillende "
-#~ "manieren. Het is zeer belangrijk om vertrouwd te zijn met de aard van deze "
-#~ "data alvorens in de volledige specificatie van elke API te duiken."
-
-#~ msgid ""
-#~ "Everything within the platform is related through a tree structure. Which "
-#~ "means that you can think of OpenDataSoft as such:"
-#~ msgstr ""
-#~ "Alles binnen het platform is met elkaar verbonden via een boomstructuur. Dit"
-#~ " betekent dat u als dusdanig over OpenDataSoft kan denken:"
-
-#~ msgid "The **OpenDataSoft platform** is a network of OpenDataSoft portals."
-#~ msgstr ""
-#~ "Het **OpenDataSoft-platform** is een netwerk van OpenDataSoft-portalen."
-
-#~ msgid "A **portal** provides a **catalog** of all of its **datasets**."
-#~ msgstr "Een **portaal** biedt een **catalogus** aan van al zijn **datasets**."
-
-#~ msgid ""
-#~ "Each **dataset** is defined by a dictionary of **metadata**, a **data "
-#~ "schema** (specifying fields names and types) and a collection of "
-#~ "**records**."
-#~ msgstr ""
-#~ "Elke **dataset** wordt gedefinieerd door een woordenboek van **metadata**, "
-#~ "een **dataschema** (waarin namen en soorten van velden worden "
-#~ "gespecificeerd) en een verzameling van **records**."
-
-#~ msgid "Each **record** provides values for each of the dataset's fields."
-#~ msgstr ""
-#~ "Elk **record** verschaft waarden voor elk van de velden van de dataset."
-
-#~ msgid ""
-#~ "There are of course many more types of data within the platform, but they "
-#~ "are only relevant in very specific contexts."
-#~ msgstr ""
-#~ "Er zijn natuurlijk veel meer types data binnen het platform, maar deze zijn "
-#~ "enkel relevant in zeer specifieke contexten."
-
-#~ msgid ""
-#~ "The OpenDataSoft platform provides its own API (ODS API v1 and v2) and some "
-#~ "standard API's implementations such as ODATA , WFS or CSW."
-#~ msgstr ""
-#~ "Het OpenDataSoft-platform heeft zijn eigen API (ODS API v1 en v2) een "
-#~ "bepaalde standaard implementaties van API's, zoals ODATA , WFS of CSW."
-
-#~ msgid "ODS API"
-#~ msgstr "ODS API"
-
-#~ msgid ""
-#~ "This API is the one used internally by the OpenDataSoft platform and "
-#~ "widgets. If you want to develop your own application, this is also the best "
-#~ "way to go."
-#~ msgstr ""
-#~ "Deze API wordt intern gebruikt door het OpenDataSoft-platform en widgets. "
-#~ "Indien u uw eigen applicatie wil ontwikkelen, is dit ook de beste manier om "
-#~ "tewerk te gaan."
-
-#~ msgid "Differences between the Search APIs v1 and v2"
-#~ msgstr "Verschillen tussen ODS API v1 en API v2"
-
-#~ msgid ""
-#~ "This API is currently under development and will be officially available "
-#~ "soon."
-#~ msgstr ""
-#~ "Deze API is momenteel in ontwikkeling en zal binnenkort officieel "
-#~ "beschikbaar worden gesteld."
-
-#~ msgid ""
-#~ "Here is the main differences and key changes between API v1 and API v2."
-#~ msgstr ""
-#~ "Dit zijn de belangrijkste verschillen en wijzigingen tussen API v1 en API "
-#~ "v2."
-
-#~ msgid ""
-#~ "APIv2 introduces a better implementation of REST principles. Each API entry-"
-#~ "point provides links to easily navigate between linked resources (HATEOAS)."
-#~ msgstr ""
-#~ "APIv2 introduceert een betere implementatie van REST-principes. Elke API "
-#~ "entrypoint verschaft koppelingen om gemakkelijk te navigeren tussen "
-#~ "gekoppelde bronnen (HATEOAS)."
-
-#~ msgid ""
-#~ "This API proposes a more complete query language with new functions and "
-#~ "arithmetic expressions."
-#~ msgstr ""
-#~ "Deze API biedt een volledigere zoektaal met nieuwe functies en wiskundige "
-#~ "uitdrukkingen."
-
-#~ msgid ""
-#~ "Special filters (geofilter or facet filters) are moved to the query language"
-#~ " instead. For instance ``geofilter.distance='42,1,100'`` is replaced by "
-#~ "``q=distance(geo_field,geom'Point(42 1)',100)``"
-#~ msgstr ""
-#~ "Speciale filters (geofilter of facetfilters) worden in plaats daarvan "
-#~ "verplaatst naar de zoektaal. Bijvoorbeeld ``geofilter.distance='42,1,100'`` "
-#~ "wordt vervangen door ``q=distance(geo_field,geom'Point(42 1)',100)``"
-
-#~ msgid ""
-#~ "Aggregation API (former analyze API) comes with a new ``SQL`` like language "
-#~ "and is available on catalog in addition to dataset records."
-#~ msgstr ""
-#~ "Aggregatie API (vroeger analyse-API) gaat gepaard met een nieuwe ``SQL`` als"
-#~ " taal en is beschikbaar op catalogus naast datasetrecords."
-
-#~ msgid ""
-#~ "Exporters have their own entry-point under ``/api/catalog/exports`` and "
-#~ "``/api/catalog/datasets/<dataset_id>/exports``"
-#~ msgstr ""
-#~ "Exporteurs hebben hun eigen entrypoint onder ``/api/catalog/exports`` en "
-#~ "``/api/catalog/datasets/<dataset_id>/exports``"
-
-#~ msgid ""
-#~ "Navigation search (former facet search) and standard search are completely "
-#~ "splitted."
-#~ msgstr ""
-#~ "Navigatiezoekopdrachten (vroeger facetzoekopdrachten) en standaard "
-#~ "zoekopdrachten zijn volledig opgesplitst."
-
-#~ msgid "What about ODATA, WFS and CSW?"
-#~ msgstr "Wat met ODATA, WFS en CSW?"
-
-#~ msgid ""
-#~ "These 3 acronyms refer to other standards that the platform implements. If "
-#~ "you are not familiar with these standards, then you should stick with the "
-#~ "ODS API since it provides the most comprehensive access to the data."
-#~ msgstr ""
-#~ "Deze 3 acroniemen verwijzen naar de andere standaarden die het platform "
-#~ "implementeert. Wanneer u niet vertrouwd bent met deze standaarden, dient u "
-#~ "bij de ODS API te blijven aangezien deze de meest allesomvattende toegang "
-#~ "tot de data biedt."
-
-#~ msgid "ODATA"
-#~ msgstr "ODATA"
-
-#~ msgid ""
-#~ "ODATA is a standard for REST APIs that provide a common language to be used "
-#~ "across APIs to perform requests. The trade-off for this norm's generic "
-#~ "approach is its higher complexity compared to traditional custom REST APIs."
-#~ msgstr ""
-#~ "ODATA is een standaard voor REST API's die een gewone taal aanbieden die "
-#~ "gebruikt kan worden in API's om aanvragen uit te voeren. De trade-off voor "
-#~ "deze generische benadering van deze norm is de hogere complexiteit ervan in "
-#~ "vergelijk met traditionele aanpasbare REST API's."
-
-#~ msgid ""
-#~ "OpenDataSoft implements this norm for the simple operations (searching for "
-#~ "datasets and records) but the more complex ones (such as analysis, "
-#~ "aggregations, geographic computations...) are only available through our V1 "
-#~ "and V2 APIs."
-#~ msgstr ""
-#~ "OpenDataSoft implementeert deze norm voor de gewone operaties (zoeken naar "
-#~ "datasets en records) maar de meer complexe (zoals analyse, aggregaties, "
-#~ "geografische berekeningen, ...) zijn enkel beschikbaar via onze V1 en V2 "
-#~ "API's."
-
-#~ msgid "WFS and CSW"
-#~ msgstr "WFS en CSW"
-
-#~ msgid ""
-#~ "These are both standards focusing on geographic data and as such are "
-#~ "especially relevant if you're looking to interface the platform with other "
-#~ "GIS software."
-#~ msgstr ""
-#~ "Dit zijn beide standaarden die zich focussen op geografische data en als "
-#~ "dusdanig vooral relevant zijn wanneer u op zoek bent om het platform te "
-#~ "interfacen met andere GIS software."
+"`WFS <https://docs.opendatasoft.com/api/explore/wfs.html>`_ en`CSW "
+"<https://docs.opendatasoft.com/api/explore/csw.html>`_: normen die gefocust "
+"zijn op geografische data. Deze zijn vooral relevant voor bijvoorbeeld de "
+"interface met het platform met andere GIS-software."
