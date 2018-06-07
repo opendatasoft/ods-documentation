@@ -8,7 +8,7 @@ The aggregated dataset will have an additional "Concept" column with the origin 
 
 A dataset ID follows the following format *ProviderName-DatasetId*.
 
-.. admonition:: Retrieving the dataset ID
+.. admonition:: Important
    :class: important
 
    Retrieve the dataset ID using the `explorer <https://db.nomics.world/views/explorer>`_. Select a provider, the dataset to retrieve and click on API Link > JSON. A link following this format will appear : https://api.db.nomics.world/api/v1/json/datasets/bea-fa2004-section1-101-a/values

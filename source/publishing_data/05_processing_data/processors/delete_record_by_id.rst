@@ -5,8 +5,10 @@ This processor sends a delete order to remove an existing record of a dataset, b
 
 Example: if a dataset contains a list of companies (with information such as status, number of employees, sector of activity etc.), it is regularly updated to make sure that all information about these companies are still valid. With the Delete record by ID processor, it is possible to delete records concerning companies that are now closed. It will not only delete the record from the most recent source from the last update, but also the records (concerning the closed company) from all previous sources of the dataset.
 
-.. note::
-    The changes applied to the dataset with this processor are not visible in the dataset preview of the Processing tab. Save, publish and explore the dataset in the front office to see the changes.
+.. admonition:: Note
+   :class: note
+
+   The changes applied to the dataset with this processor are not visible in the dataset preview of the Processing tab. Save, publish and explore the dataset in the front office to see the changes.
 
 Setting the processor
 ---------------------

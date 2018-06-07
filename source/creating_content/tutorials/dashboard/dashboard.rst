@@ -355,11 +355,10 @@ The simplest way is to display all facets :
 	    <ods-facet name="mysecondfield"></ods-facet>
 	</ods-facets>
 
- .. note::
+.. admonition:: Note
+   :class: note
 
- 	To get the field id you need to be aware of the dataset schema. It's available in the information tab of the dataset.
- 	The dataset schema shows every information on each field : name, description, id, type, and a value exemple.
- 	It's often convenient to know the type and the id of each field when using advanced widget parameters.
+   To get the field id you need to be aware of the dataset schema. It's available in the information tab of the dataset. The dataset schema shows every information on each field : name, description, id, type, and a value exemple. It's often convenient to know the type and the id of each field when using advanced widget parameters.
 
 In this dashboard exemple, we will use 2 filters : the company activity sector, and the city !
 Add this code near the search bar :
@@ -402,10 +401,10 @@ Discover CSS classes for easy responsive development
 
 This dashboard starts to be nice but every widgets are in the same column, one after another without any style tuning.
 
-.. note::
+.. admonition:: Note
+   :class: note
 
-	At this point you need to be aware of the platform possibilities about CSS and HTML Style.
-	Please read carrefully the :doc:`responsive grid layout management </customizing_look_and_feel/07_designing_responsive_portal/responsive>` documentation.
+   At this point you need to be aware of the platform possibilities about CSS and HTML Style. Please read carrefully the :doc:`responsive grid layout management </customizing_look_and_feel/07_designing_responsive_portal/responsive>` documentation.
 
 
 We will split the screen into two main areas : on the left a navigation bar, on the right the main content.
@@ -557,12 +556,13 @@ Some widgets do both : the odsFacets get filters, display them, and allow to app
 
 To go further it's now interresting to see how widget modify the context and what kind of information we can get from it.
 
- .. note::
+.. admonition:: Note
+   :class: note
 
-	- As OpenDataSoft widgets library rely on **AngularJS** we will use it's syntax to read the **context**.
-	- The **context** is an **AngularJS variable**.
-	- The **context** can be seen like a simple **JSON object**, with brackets, key values lists etc...
-	- To evaluate an expression in AngularJS we use this syntax : ``{{ action1 or variable1 }}``
+   - As OpenDataSoft widgets library rely on **AngularJS** we will use it's syntax to read the **context**.
+	 - The **context** is an **AngularJS variable**.
+	 - The **context** can be seen like a simple **JSON object**, with brackets, key values lists etc...
+	 - To evaluate an expression in AngularJS we use this syntax : ``{{ action1 or variable1 }}``
 
 To conclude this note, to read the context, simply add this bunch of code in an empty space :
 
@@ -712,9 +712,10 @@ As the documentation say, 2 parameters are mandatory : the context name, and the
 In our case, 1 additionnal parameter has been copied. ``mycontext-parameters`` is used to defined specific filters or query to the context.
 Here, several disjunctive mode are set to true for 5 fields, and the last parameter is a sort on date_d_immatriculation.
 
- .. note::
+.. admonition:: Note
+   :class: note
 
- 	Disjunctive mode set to ``true`` on a facet field activate the multiple choise filter mode. It allows the user to apply a filter, and still be able to see and/or select  other values
+   Disjunctive mode set to ``true`` on a facet field activate the multiple choise filter mode. It allows the user to apply a filter, and still be able to see and/or select  other values
 
  We will remove this optional attribute and observe changes.
 
@@ -747,9 +748,10 @@ Last test : apply a filter on any facet and observe how the ``context.parameters
 
  .. image:: images/dashboard__context-2.png
 
- .. note::
+.. admonition:: Note
+   :class: note
 
- 	Also observe the 'standard' behavior of facets : when a value is selected, all others are hidden.
+   Also observe the 'standard' behavior of facets : when a value is selected, all others are hidden.
 
 
 Add a record counter and last processing date
@@ -853,11 +855,12 @@ In our case, we will use the ``number`` filter to pretty print numerical values 
 	    </i>
 	</h5>
 
- .. note::
+.. admonition:: Note
+   :class: note
 
- 	To "call" a filter, use pipe '|' at the end of the expression.
- 	Some filters accept specific parameters, date filter accept a date format or pattern.
- 	Ex: ``expr. | date : 'M/d/yy'`` ``expr. | date : 'medium'``
+   To "call" a filter, use pipe '|' at the end of the expression.
+   Some filters accept specific parameters, date filter accept a date format or pattern.
+   Example: ``expr. | date : 'M/d/yy'`` ``expr. | date : 'medium'``
 
 Save, refresh, see :
 
@@ -948,11 +951,12 @@ Applied to our dataset it's looks like this :
         </div>
     </div>
 
- .. note::
+.. admonition:: Note
+   :class: note
 
- 	- The region chart ng-if condition can be translated to `Show the chart if there is a refine on the **ville** facet`
-	- ``!`` character is to get the opposite, the condition can be translated to `Show the chart if their is NO refine on the **ville** facet`
-	- To easily understand how it works, do not hesitate to display the ``context.parameters`` value in your dashboard each time you use it !
+   - The region chart ng-if condition can be translated to `Show the chart if there is a refine on the **ville** facet`
+	 - ``!`` character is to get the opposite, the condition can be translated to `Show the chart if their is NO refine on the **ville** facet`
+	 - To easily understand how it works, do not hesitate to display the ``context.parameters`` value in your dashboard each time you use it !
 
 
 ng-if : display the download link only if the dashboard is filtered

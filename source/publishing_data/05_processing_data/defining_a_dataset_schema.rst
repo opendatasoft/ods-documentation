@@ -21,8 +21,10 @@ Changing a label
 
 The OpenDataSoft platform retrieves the default field labels found in the source dataset. It is however possible to change each dataset field label.
 
-.. note::
-    We highly recommend to choose well-written, explicit labels. Also keep in mind that since these labels will be displayed in the front office for all portal users, it might be preferable to choose simple labels instead of business-specific terms, to make sure that the data can be understood by a wider audience.
+.. admonition:: Note
+   :class: note
+
+   We highly recommend to choose well-written, explicit labels. Also keep in mind that since these labels will be displayed in the front office for all portal users, it might be preferable to choose simple labels instead of business-specific terms, to make sure that the data can be understood by a wider audience.
 
 To change a label:
 
@@ -30,7 +32,7 @@ To change a label:
 2. Type a new label. It can contain special characters.
 3. Click outside the label area or press Enter for the changes to be taken into account.
 
-.. admonition:: Field label VS technical identifier
+.. admonition:: Caution
    :class: caution
 
    Changing the label of a field does not modify in any way the technical identifier of that field, which can be found in the Configuration menu of the dataset.
@@ -76,18 +78,24 @@ There are 8 different types: date, datetime, decimal, integer, geopoint, geoshap
      * Field values are dates.
        The ideal format is the ISO 8601 format, which is ``YYYY-mm-dd``. Other formats are also understood by the platform, such as: ``YYYY/mm/dd`` or ``dd/mm/YYYY``.
 
-       .. note::
-           The platform will try to guess as accurately as possible the input date format. However, in case of bad detection or ambiguity, use the :doc:`Normalize Date processor<processors/normalize_date>` to define the parsing format of the date field.
+       .. admonition:: Note
+          :class: note
+
+          The platform will try to guess as accurately as possible the input date format. However, in case of bad detection or ambiguity, use the :doc:`Normalize Date processor<processors/normalize_date>` to define the parsing format of the date field.
 
    * * DateTime
      * Field values are a combination of a date and a time.
        The ideal format is the ISO 8601 format, which is ``YYYY-mm-ddTHH:MM:ss+00:00``, ``YYYY-mm-ddTHH:MM:ssZ`` or ``YYYYmmddTHHMMssZ``. Other formats are also understood by the platform, such as: ``YYYY-mm-dd-HH:MM:ss`` or or ``YYYY-mm-dd HH:MM:ss``.
 
-       .. note::
-           The platform will try to guess as accurately as possible the input datetime format. However, in case of bad detection or ambiguity, use the :doc:`Normalize Date processor<processors/normalize_date>` to define the parsing format of the datetime field.
+       .. admonition:: Note
+          :class: note
 
-       .. note::
-           By default, time records are in UTC timezone. To change the timezone, use the :doc:`Set Timezone processor<processors/set_timezone>`.
+          The platform will try to guess as accurately as possible the input datetime format. However, in case of bad detection or ambiguity, use the :doc:`Normalize Date processor<processors/normalize_date>` to define the parsing format of the datetime field.
+
+       .. admonition:: Note
+          :class: note
+
+          By default, time records are in UTC timezone. To change the timezone, use the :doc:`Set Timezone processor<processors/set_timezone>`.
 
    * * Decimal
      * Field values are decimal numbers.
@@ -97,8 +105,10 @@ There are 8 different types: date, datetime, decimal, integer, geopoint, geoshap
      * Field values are a single geographical location expressed in the format ``<LAT>,<LON>``, for instance
        ``45.8,2.5``.
 
-       .. note::
-           If your dataset contains two fields, latitude and longitude, use the :doc:`Create GeoPoint processor<processors/create_geopoint>` to create a valid geo point field.
+       .. admonition:: Note
+          :class: note
+
+          If your dataset contains two fields, latitude and longitude, use the :doc:`Create GeoPoint processor<processors/create_geopoint>` to create a valid geo point field.
 
    * * Geo shape
      * Field values are geographical shapes expressed in `GeoJSON <http://geojson.org/geojson-spec.html>`_. For example :
@@ -108,8 +118,10 @@ There are 8 different types: date, datetime, decimal, integer, geopoint, geoshap
           {"type": "LineString",
            "coordinates": [ [100.0, 0.0], [101.0, 1.0] ]}
 
-       .. note::
-           Feature collections are not supported.
+       .. admonition:: Note
+          :class: note
+
+          Feature collections are not supported.
 
    * * Integer
      * Field values are integer numbers.
@@ -128,8 +140,10 @@ Setting up fields as facets
 
 Facets define the filters of a dataset, which are displayed on the left of the dataset's visualization, in the front office. These filters have several purposes: they allow the users to find specific, precise records into a dataset, but they also allow the creation of charts afterward (if a field's records are other than numbers, they will be usable in the Chart Builder and in the Analyze view only if they are set up as facets).
 
-.. note::
-    Fields which type is either geo shape or geo point cannot be set up as facets.
+.. admonition:: Note
+   :class: note
+
+   Fields which type is either geo shape or geo point cannot be set up as facets.
 
 To set up a field as a facet:
 
@@ -155,7 +169,7 @@ Configuration options available for every field
    * * Name
      * Technical identifier of the field. In contrary to the label, the technical identifier does not have aesthetic purposes and thus cannot contain special characters, including spaces. Technical identifiers can be used for instance when creating a custom tooltip with HTML.
 
-       .. admonition:: Consequences of modifying a technical identifier
+       .. admonition:: Warning
           :class: danger
 
           Changing the technical identifier of a field could break reuses of the related dataset (custom tooltip, custom tab or pages). It could also be a problem if the source of the dataset is (regularly) updated: when replacing a source with a newer one, the platform checks the technical identifier of the fields of both sources in order to find a match between the two -then replacing the old data with the new ones. If technical identifiers are not the same anymore, the dataset cannot be updated.

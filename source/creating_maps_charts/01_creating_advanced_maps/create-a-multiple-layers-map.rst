@@ -13,11 +13,17 @@ Add a dataset to your map
 .. localizedimage:: images/filter-data-map.png
     :alt: Screenshot of filtering in the dataset adding interface in Map Builder
 
-.. note:: You can change dataset or change which part is filtered at any time. To do so, simply click on **Change filter** next to the layer’s title.
+.. admonition:: Note
+   :class: note
+
+   You can change dataset or change which part is filtered at any time. To do so, simply click on **Change filter** next to the layer’s title.
 
 You can add as many datasets as you want on your map, and all of the data they contain can be displayed on that same map, at the same time. This is when the whole concept of layers comes in play. In Map Builder, because you overlay several datasets, each dataset is called a layer. This is why Map Builder allows you to configure your layers to make sure that you can represent many different data on the same map and still make the reading of this map easy and clear.
 
-.. note:: Keep in mind that the more datasets you add to your map, the heavier it will be, and the longer it will take to load.
+.. admonition:: Note
+   :class: note
+
+   Keep in mind that the more datasets you add to your map, the heavier it will be, and the longer it will take to load.
 
 .. localizedimage:: images/dataset-added-map.png
     :alt: Screenshot of Map Builder once a dataset has been added: data appears on the map and configuration options are available
@@ -51,7 +57,10 @@ The style configurations entirely depend on the visualization mode you choose to
 .. localizedimage:: images/viz-modes.png
     :alt: Visualization modes interface
 
-.. note:: The style configurations displayed for each visualization mode also depend on your dataset. Depending on the dataset you added to your Map Builder map, you may not see all the configurations explained in this documentation.
+.. admonition:: Note
+   :class: note
+
+   The style configurations displayed for each visualization mode also depend on your dataset. Depending on the dataset you added to your Map Builder map, you may not see all the configurations explained in this documentation.
 
 Dots and shapes
 """""""""""""""
@@ -101,7 +110,10 @@ The Dots and shapes visualization mode simply displays your data as markers (dot
    * * **Shapes border**
 
        *Customize the border of your markers and shapes*
-     * .. note:: Borders are only available for shapes, dots, icons and map markers do not have borders.
+     * .. admonition:: Note
+          :class: note
+
+          Borders are only available for shapes, dots, icons and map markers do not have borders.
 
        - **Pattern**: choose the pattern of the border, whether you want it to be a simple line, or a dashed or dotted line.
 
@@ -235,7 +247,10 @@ The Choropleth visualization mode displays data as markers (dots or icons) or as
    * * **Shapes border**
 
        *Customize the border of your shapes*
-     * .. note:: Borders are only available for dots and shapes, icons and map markers do not have borders.
+     * .. admonition:: Note
+          :class: note
+
+          Borders are only available for dots and shapes, icons and map markers do not have borders.
 
        - **Pattern**: choose the pattern of the border, whether you want it to be a simple line, or a dashed or dotted line.
 
@@ -308,7 +323,10 @@ The Color by category visualization mode displays data as markers (dots or icons
    * * **Shapes border**
 
        *Customize the border of your markers and shapes*
-     * .. note:: Borders are only available for dots and shapes, icons and map markers do not have borders.
+     * .. admonition:: Note
+          :class: note
+
+          Borders are only available for dots and shapes, icons and map markers do not have borders.
 
        - **Pattern**: choose the pattern of the border, whether you want it to be a simple line, or a dashed or dotted line.
 
@@ -378,7 +396,10 @@ Title and description
 2. Rename your layer in the **Title** area, to make it clearer for the map viewers.
 3. Add a **Description** in the provided area.
 
-.. note:: If you do not add your own description, it is the default one that will be displayed.
+.. admonition:: Note
+   :class: note
+
+   If you do not add your own description, it is the default one that will be displayed.
 
 Icon
 """"
@@ -402,7 +423,10 @@ Captions are not mandatory however they are recommended because they add more in
 1. Click on the **Caption** tab.
 2. If it’s not already the case, tick the **Display caption for this dataset** option.
 
-.. note:: Captions are activated by default. If you do not want to display a caption for your dataset, simply untick the **Display caption for this dataset** option.
+.. admonition:: Note
+   :class: note
+
+   Captions are activated by default. If you do not want to display a caption for your dataset, simply untick the **Display caption for this dataset** option.
 
 3. In the provided area, write a **Title** for your layer’s caption.
 

@@ -5,8 +5,10 @@ This processor handles a geopoint or a geoshape with a projection system differe
 
 For example, if the EPSG code is set to ``27572``, the processor will consider that the original geo field contains coordinates expressed in `Lambert Zone II <http://spatialreference.org/ref/epsg/ntf-paris-lambert-zone-ii/>`_.
 
-.. note::
-    The input must be expressed with the same logic as a WGS84 geo coordinate: ``Y,X``.
+.. admonition:: Note
+   :class: note
+
+   The input must be expressed with the same logic as a WGS84 geo coordinate: ``Y,X``.
 
 Setting the processor
 ---------------------

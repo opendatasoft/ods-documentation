@@ -55,8 +55,10 @@ A GeoJSON file as defined by the ``RFC 7946``, one simple GeoJSON is:
     }
 
 
-.. note::
-    You can find  more examples on `GeoJSON.org <http://geojson.org/geojson-spec.html#feature-collection-objects>`_
+.. admonition:: Note
+   :class: note
+
+   You can find more examples on `GeoJSON.org <http://geojson.org/geojson-spec.html#feature-collection-objects>`_
 
 
 File extensions

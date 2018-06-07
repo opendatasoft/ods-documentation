@@ -12,7 +12,10 @@ The interactive map contains the same buttons as in any OpenDataSoft map:
 * polygon |icon-polygon|, circle |icon-circle| and square |icon-square| buttons to draw on the map and filter on certain areas, along with the edit shape |icon-edit| and delete shape |icon-trash-map| buttons to go with them
 * |icon-fullscreen| to view your map in fullscreen mode
 
-.. note:: the fullscreen mode button won’t appear if your map is embedded within an iframe, due to technical limitations.
+.. admonition:: Note
+   :class: note
+
+   The fullscreen mode button won’t appear if your map is embedded within an iframe, due to technical limitations.
 
 * zoom in |icon-zoom-in| and zoom out |icon-zoom-out| buttons
 * localize |icon-localize| button to focus the map on your current location
@@ -33,7 +36,10 @@ By default, all your map layers are displayed on your map. The list of all the l
 
 You can hide layers in case you only want to focus on specific layers or even on just one very layer. To hide a layer, simply click on it. You will see that the layer disappears from the map, and that its title and description in the list turn light gray and are detached from the active, displayed layers.
 
-.. note:: if the map was configured on a monolayer mode, you will only be able to display one layer at a time. It means that if you display one specific layer, all the other layers will automatically be hidden.
+.. admonition:: Note
+   :class: note
+
+   If the map was configured on a monolayer mode, you will only be able to display one layer at a time. It means that if you display one specific layer, all the other layers will automatically be hidden.
 
 Understand the map: captions
 ----------------------------

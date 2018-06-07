@@ -5,9 +5,10 @@ Whenever an important event occurs on your portal, notification emails are sent.
 
 Notifications are sent by email to your portal's users depending on their permissions. They are always sent by the support@opendatasoft.com address.
 
-.. note::
-    If you'd like notifications to be sent from a different sender address, for example an address
-    of your own organization, please contact the support team.
+.. admonition:: Note
+   :class: note
+
+   If you'd like notifications to be sent from a different sender address, for example an address of your own organization, please contact the support team.
 
 Each user can manage their subscription to the different notification types on their account page.
 

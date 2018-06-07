@@ -13,9 +13,7 @@ or
 * ``.id`` Stores information linking graphic data to the database information
 * ``.dat`` Stores the attribute data
 
-.. note::
+.. admonition:: Note
+   :class: note
 
-    The ZIP archive must be flat, all files must be at the root path (not sub directory).
-
-
-
+   The ZIP archive must be flat, all files must be at the root path (not sub directory).

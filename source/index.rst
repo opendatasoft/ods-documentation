@@ -10,11 +10,15 @@ OpenDataSoft includes a unique set of integrated features:
 * to publish these datasets as RESTFul APIs.
 * to explore the datasets catalog, to visualize individual datasets or build multi-datasets mashups.
 
-.. note::
-    Give a try to OpenDataSoft by subscribing to a `free trial account <https://www.opendatasoft.com/discover-opendatasoft-demo/>`_.
+.. admonition:: Note
+   :class: note
 
-.. note::
-    Access our `data network <https://data.opendatasoft.com>`_ if you are looking for reusable public datasets.
+   Give a try to OpenDataSoft by subscribing to a `free trial account <https://www.opendatasoft.com/discover-opendatasoft-demo/>`_.
+
+.. admonition:: Note
+   :class: note
+
+   Access our `data network <https://data.opendatasoft.com>`_ if you are looking for reusable public datasets.
 
 .. localizedfigure:: index__opendatasoft-data-network.jpg
     :alt: OpenDataSoft's network of data
@@ -35,7 +39,9 @@ This documentation is OpenDataSoft's reference documentation. It complements inl
 
     OpenDataSoft's discovery portal
 
-.. note::
+.. admonition:: Note
+   :class: note
+
    OpenDataSoft staff is always available to help. You can give us feedbacks or send us questions by contacting OpenDataSoft support, either by hitting the **Support** link in the back-office menu or by sending an email to `support@opendatasoft.com <mailto:support@opendatasoft.com>`_.
 
 .. toctree::
@@ -62,7 +68,7 @@ This documentation is OpenDataSoft's reference documentation. It complements inl
    configuring_domain/index
 
 .. toctree::
-   :caption: Other links
+   :caption: Other resources
    :maxdepth: 1
 
    faq

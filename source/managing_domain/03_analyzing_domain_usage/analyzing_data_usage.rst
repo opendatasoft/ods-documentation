@@ -10,7 +10,7 @@ This dashboard is divided into 4 sections:
 - Top 5: lists of most downloaded, used and reused published datasets
 - Theme Distribution: tree chart to analyze most and least used themes
 
-.. admonition:: Datasets used to build the Data dashboard
+.. admonition:: Important
    :class: important
 
    In this dashboard, only published datasets are taken into account. Unpublished datasets are ignored from all figures, charts and other computed analytics displayed.
@@ -50,10 +50,10 @@ Popularity
 
 The Popularity section of the Data dashboard is based upon a computation aiming at quantifying dataset consumption in order to establish popularity scores for datasets. This computation is based on 3 metrics: number of downloads, number of API calls and number of reuses. These 3 metrics indicate whether a dataset published into an OpenDataSoft portal can be considered popular or not, compared to the other datasets of both that portal and the OpenDataSoft data network.
 
-.. admonition:: The scoring formula may change in the future
+.. admonition:: Important
    :class: important
 
-   OpenDataSoft will notify all users if the computation to establish the popularity changes.
+   The scoring formula may change in the future. OpenDataSoft will notify all users if the computation to establish the popularity changes.
 
 .. localizedimage:: data_dashboard_popularity.png
     :alt: Screenshot of the Popularity section of the Data dashboard
@@ -77,7 +77,7 @@ To display the popularity score information of a dataset:
 1. In any of the charts, click a bar (representing a dataset).
 2. Check the right part of the Popularity section: the information of the selected dataset are automatically displayed.
 
-.. admonition:: Popularity score distribution over all published datasets
+.. admonition:: Note
    :class: note
 
    Click the "See more" button at the bottom of the Popularity section to see a column chart that displays the popularity score distribution over all published datasets on the domain.
@@ -108,7 +108,7 @@ Theme Distribution
 
 The Theme Distribution section of the Data dashboard displays a tree chart representing all currently used dataset themes. This chart helps analyzing which themes are the most or the least used.
 
-.. admonition:: Average popularity score per theme
+.. admonition:: Note
    :class: note
 
    Hover over a theme in the tree chart to display the average popularity score of the datasets which belong to that theme.

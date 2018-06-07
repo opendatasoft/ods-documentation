@@ -3,8 +3,10 @@ Set Timezone processor
 
 This processor allows to force the timezone of a datetime field.
 
-.. note::
-    By default, datetime records are in UTC timezone.
+.. admonition:: Note
+   :class: note
+
+   By default, datetime records are in UTC timezone.
 
 Example: if a dataset contains a datetime field with an absent ("2016-12-08T08:51:53") or incorrect ("2016-12-08T08:51:53Z") timezone, the processor can force the timezone ("2016-12-08T08:51:53+00:00" if timezone set to UTC for example).
 

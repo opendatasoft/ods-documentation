@@ -20,7 +20,7 @@ The archive file should contain:
 * the files (images)
 * a CSV file listing the files (images) and their metadata
 
-.. admonition:: CSV file
+.. admonition:: Caution
    :class: caution
 
    There must be only one CSV file, and it must only be in a CSV format.
@@ -48,7 +48,7 @@ Example:
      * Image 2
      * 2-20.png
 
-.. admonition:: Subdirectories in archive file
+.. admonition:: Caution
    :class: caution
 
    We recommend to keep all images at the same level into the archive file. However, if images are into subdirectories, keep in mind to write the whole path in the CSV file.
@@ -64,8 +64,10 @@ Once the archive file is created, it can be imported into the platform.
 4. Choose the archive file you created, with your images inside.
 5. Click on the **Open** button of the file selection window.
 
-.. note::
-    It is possible to simply drag and drop the file after steps 1 and 2, instead of following the whole file selection procedure.
+.. admonition:: Note
+   :class: note
+
+   It is possible to simply drag and drop the file after steps 1 and 2, instead of following the whole file selection procedure.
 
 
 Sourcing images via a URL

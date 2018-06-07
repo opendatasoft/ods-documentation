@@ -66,10 +66,10 @@ selecting a year will let you to choose the month.
 In the case of keywords, you can also click on them directly on a dataset card to
 filter the catalog on that keyword.
 
-.. note::
-    The catalog filters of a portal can be customized, including which filters
-    are proposed, the order of the filters, and how to order the suggested values.
-    Please contact us for more information.
+.. admonition:: Note
+   :class: note
+
+   The catalog filters of a portal can be customized, including which filters are proposed, the order of the filters, and how to order the suggested values. Please contact us for more information.
 
 Exploring a dataset
 -------------------

@@ -42,9 +42,10 @@ For now the page isn't really created yet; you need to save it first. Before doi
 the page **slug** (*page1* in the example above), which is both the page's unique identifier, and the last part of the page's URL
 (address in the browser).
 
-.. note::
-    If the domain is configured for multiple user interface languages, you need to configure the page's
-    content (title, description and page text itself) for all the configured languages.
+.. admonition:: Note
+   :class: note
+
+   If the domain is configured for multiple user interface languages, you need to configure the page's content (title, description and page text itself) for all the configured languages.
 
 The template selector shows predefined templates that you can directly use. These templates range from very simple layout, with text zones that you can
 edit directly, to portal homepages presenting the content of the catalog.

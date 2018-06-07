@@ -9,9 +9,10 @@ The Shapefile connector extracts data from a ZIP archive containing the followin
 * ``.shx`` shape index format
 
 
-.. note::
+.. admonition:: Note
+   :class: note
 
-    The ZIP archive must be flat, all files must be at the root path (not sub directory).
+   The ZIP archive must be flat, all files must be at the root path (not sub directory).
 
 Configuration
 -------------
@@ -24,4 +25,3 @@ Configuration
      * The encoding can be manually set, we provide a list of common value.
 
        Any alias from `Python <https://docs.python.org/2/library/codecs.html#standard-encodings>`_ can be used.
-

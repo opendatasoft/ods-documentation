@@ -80,7 +80,7 @@ This will bring up a list of all of your portal's users. Select the ones you're 
 
         The *add members* popup window
 
-.. note::
+.. admonition:: Note
+   :class: note
 
-    Adding members to a group from the group's page is a direct action that doesn't require a save. When the modal
-    window closes, the selected users will have become group members.
+   Adding members to a group from the group's page is a direct action that doesn't require a save. When the modal window closes, the selected users will have become group members.

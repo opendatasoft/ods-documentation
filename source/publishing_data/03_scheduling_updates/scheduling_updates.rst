@@ -34,7 +34,9 @@ Pushing real time data
 
 For some types of data, it can be useful to push data instead of the more traditional model of having the data being pulled from a resource by the platform. To address this need, the OpenDataSoft platform offers a realtime push API. It is not to be confused with the ability to schedule a dataset processing. When scheduling, the dataset will periodically pull the resource and process the data that is inside of it, whereas with the push API, the dataset is fed by an application through a push API and records are processed one by one as soon as they are received.
 
-.. note::
+.. admonition:: Note
+   :class: note
+
    As this feature is still in beta, it is not activated by default. Please contact OpenDataSoft's support to try it out.
 
 Configuring the dataset schema
