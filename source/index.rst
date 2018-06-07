@@ -65,7 +65,5 @@ This documentation is OpenDataSoft's reference documentation. It complements inl
    :caption: Other links
    :maxdepth: 1
 
-   faq
-   platform_glossary
    pictograms_reference/pictograms_reference
    accessibility
