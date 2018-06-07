@@ -4734,7 +4734,7 @@ code.code-large, .rst-content tt.code-large {
     display: none;
   }
 }
-body, h1, h2, .rst-content .toctree-wrapper p.caption, p, a {
+body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, a {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
 }
 
@@ -4778,18 +4778,19 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, p, a {
 
 .wy-menu-vertical {
   width: 300px;
+  padding-bottom: 80px;
 }
 .wy-menu-vertical header, .wy-menu-vertical p.caption {
   height: 32px;
   display: inline-block;
   line-height: 32px;
-  padding: 0 1.618em;
-  margin-bottom: 0;
+  padding: 0 24px;
+  margin: 10px 0;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 80%;
-  color: #6f6f6f;
+  font-size: 16px;
+  color: #b3b3b3;
   white-space: nowrap;
 }
 .wy-menu-vertical ul {
@@ -5060,11 +5061,9 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, p, a {
   top: 100px;
   bottom: 0;
   left: 0;
-  padding-bottom: 2em;
   width: 300px;
   overflow-x: hidden;
   overflow-y: hidden;
-  min-height: 100%;
   background: white;
   z-index: 200;
 }
@@ -5898,20 +5897,6 @@ span[id*='MathJax-Span'] {
     border-bottom: 2px solid white;
   }
 }
-.ods-header__redirect-helphub {
-  border: 1px solid transparent;
-  padding: 10px 30px !important;
-  background-color: white;
-  color: #126E92 !important;
-  border-radius: 4px;
-  white-space: nowrap;
-}
-.ods-header__redirect-helphub:hover {
-  background-color: #166482;
-  color: white !important;
-  border: none !important;
-}
-
 @media only screen and (min-width: 930px) {
   .ods__documentation-header-nav-item {
     margin: auto 20px;

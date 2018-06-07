@@ -1,4 +1,4 @@
-body, h1, h2, p, a
+body, h1, h2, h3, p, a
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif!important
   
 .wy-affix
@@ -28,17 +28,18 @@ body, h1, h2, p, a
 
 .wy-menu-vertical
   width: $nav-desktop-width
+  padding-bottom: 80px
   header, p.caption
     height: $base-font-size * 2
     display: inline-block
     line-height: $base-font-size * 2
-    padding: 0 $gutter
-    margin-bottom: 0
+    padding: 0 24px
+    margin: 10px 0
     display: block
     font-weight: bold
     text-transform: uppercase
-    font-size: 80%
-    color: $menu-dark
+    font-size: 16px
+    color: #b3b3b3
     white-space: nowrap
 
   ul
@@ -273,11 +274,9 @@ body, h1, h2, p, a
   top: 100px
   bottom: 0
   left: 0
-  padding-bottom: 2em
   width: $nav-desktop-width
   overflow-x: hidden
   overflow-y: hidden
-  min-height: 100%
   background: white
   z-index: $z-index-popover
 
