@@ -138,7 +138,7 @@ Remember that you dataset must contain at least a field of type **Geo Point** or
 Facets are the backbone of most of the features made available by the OpenDataSoft platform. A facet is simply a field
 which has been given specific filtering and aggregation capabilities.
 
-.. image:: faq__facet-configuration--en.jpg
+.. image:: images/faq__facet-configuration--en.jpg
     :alt: Facet configuration
 
 In the example above, the fields **country** and **year** have been defined as facets (notice the filter button next to
@@ -160,12 +160,12 @@ Facets are then used in a couple of places.
 
 You can first use them to filter dataset records in the explore console.
 
-.. image:: faq__facet-explore--en.png
+.. image:: images/faq__facet-explore--en.png
     :alt: Refine on facets
 
 As dimensions, facets support aggregations. You can thus use them to build advanced charts, as in the example below.
 
-.. image:: faq__facet-chart--en.png
+.. image:: images/faq__facet-chart--en.png
     :alt: Build charts with facets
 
 
@@ -235,7 +235,7 @@ OpenDataSoft domain owner for more details.
 
 Yes.
 
-Whenever you publish a dataset, a dedicated API is created. See :doc:`APIs documentation<exploring_catalog_and_datasets/04_sharing_and_reusing_data/using_api>` for more information.
+Whenever you publish a dataset, a dedicated API is created. See :doc:`APIs documentation</exploring_catalog_and_datasets/04_sharing_and_reusing_data/using_api>` for more information.
 
 25. **What are the compatible browsers for OpenDataSoft's platform?**
 
