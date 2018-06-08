@@ -19,7 +19,7 @@ To choose the access policy of a content page:
 2. Click
 
   - either, the **Public access** button, to let any user access the page, as long as they have access to the portal,
-  - or, the **Private access** button, to restrict the access to the page to specically defined users and/or groups of users.
+  - or, the **Private access** button, to restrict the access to the page to specifically defined users and/or groups of users.
 
 .. admonition:: Caution
    :class: caution
@@ -44,7 +44,7 @@ These permissions have different impacts depending on the chosen access policy.
 - *Browse page* permission:
 
   - For a private page, the *Browse page* permission gives access to that page, hence the importance of adding users to the security management section, otherwise nobody (except users with the general domain-level *Browse all pages*) can access the page and its content.
-  - For a public page, the *Browse page* permission doesn't change much to the access security of that page because it is already accessible by anybody who has access to the domain.
+  - For a public page, the *Browse page* permission doesn't change anything to the access security of that page because it is already accessible by anybody who has access to the domain.
 
 - *Edit page* permission: this permission is relevant for both private and public pages and gives edition rights on the page to any user/group of users added to the security management section of the page and granted with this *Edit page* permission.
 
@@ -57,7 +57,7 @@ Adding users or groups to a page
 1. Go to Security > User permissions or Security > Group permissions, depending on whether a user or a group will be added.
 2. Click the **Add user/group permissions** button at the bottom of the table.
 3. Select one or more users/groups of users from the list. A search bar is also available to search a user/group by name.
-4. (optional) If all added users/groups are going to be granted the *Edit page* permission as well as the default *Browse page* permission, it is possible to grant that permission now. Otherwise permissions can be granted afterward. To already grant the *Edit page* permission, at the top of the "Add user/group permissions" window, in the "Grant these permissions" section:
+4. (optional) If all added users/groups are going to be granted the *Edit page* permission as well as the default *Browse page* permission, it is possible to grant that permission now. Otherwise permissions can be granted afterward. To grant the *Edit page* permission, at the top of the "Add user/group permissions" window, in the "Grant these permissions" section:
 
   a. Click the **Add permission** button.
   b. Click the *Edit page* permission button.
@@ -79,11 +79,6 @@ Managing page security permissions can mean 2 things:
 
 - granting a user or a group of users a new page permission,
 - or, deleting a page permission for a user or a group of users.
-
-.. admonition:: Note
-   :class: note
-
-   Permissions can be granted beforehand, when adding the users and groups of users to the page (see `Adding users or groups to a page`_ for more information).
 
 Granting page security permissions for users or groups
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
