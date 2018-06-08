@@ -76,3 +76,6 @@ Full example
                                                  required: true,
                                                }
                                             ]"></ods-page-contact-form>
+
+.. localizedimage:: contact_form_full-example.png
+     :alt: Full example of customized contact form
