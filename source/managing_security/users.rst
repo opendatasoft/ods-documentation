@@ -45,21 +45,20 @@ Dataset permissions
    * * Permission
      * Description
    * * Browse all datasets
-     * The user may access all data on all published datasets, regardless of any security parameters even specific
-       rules set just for this user.
+     * The user may access all data on all published datasets, regardless of any security parameters set for this user or the datasets (for example, the user can access all restricted datasets).
+       This permission on its own doesn't grant access to the back office.
    * * Create new datasets
-     * The user may create new datasets (but not publish them), within the limits defined by the quotas.
-
-       **Grants access to the catalog section of the backoffice**
+     * The user may create new datasets (but not publish them, to do so the Publish own datasets permission is required), within the limits defined by the quotas.
+       **This permission grants access to the Catalog section of the back office.**
    * * Edit all datasets
      * The user may edit all existing datasets.
-
-       **Grants access to the catalog section of the backoffice**
+       **This permission grants access to the Catalog section of the back office.**
    * * Manage own datasets' security
-     * The user gets access to the security section of the dataset edition page and is able to set rules defining who
-       can access which records within the datasets he/she can edit.
+     * The user may manage security options and parameters (users able to access the datasets, records visible and/or editable etc.) for the datasets they have to permission to edit.
+       This permission on its own doesn't grant access to the back office.
    * * Publish own datasets
-     * The user can publish or republish the datasets he/she can edit.
+     * The user can publish or republish the datasets they have the permission to edit.
+       This permission on its own doesn't grant access to the back office.
 
 These are general permissions that apply to a user with regard to the portal, but user can also get
 :doc:`permissions for individual datasets </sourcing_and_processing_data/security>`.
@@ -73,21 +72,18 @@ Page permissions
    * * Permission
      * Description
    * * Create new pages
-     * The user may create pages. This permission also allows to manage assets.
-
-       **Grants access to the Pages section of the backoffice**
+     * The user may create new pages.
+       **This permission grants access to the Pages section of the back office.** It also allows to manage assets.
    * * Edit all pages
-     * The user may edit and delete all created pages. This permission also allows to manage assets.
-
-       **Grants access to the Pages section of the backoffice**
+     * The user may edit and delete all existing pages.
+       **This permission grants access to the Pages section of the back office.** It also allows to manage assets.
    * * Browse all pages
-     * The user may access all pages, even the private ones. This permission also allows to manage assets.
-
-       **Grants access to the Pages section of the backoffice**
+     * The user may access all pages, regardless of any security parameters set for this user or the pages (for example, the user can access all private pages).
+       This permission on its own doesn't grant access to the back office.
    * * Manage own page's security
-     * The user may manage the security (access policy, page-level permissions on defined users and groups) for the page they have the right to edit. This permission also allows to manage assets.
+     * The user may manage security options and parameters (:doc:`access policy, page-level permissions on defined users and groups</creating_content/01_creating_content_page/managing_page_security>`) for the pages they have the permission to edit.
+       This permission on its own doesn't grant access to the back office.
 
-       **Grants access to the Pages section of the backoffice**
 
 Other permissions
 ~~~~~~~~~~~~~~~~~
@@ -98,24 +94,20 @@ Other permissions
    * * Permission
      * Description
    * * Edit domain properties
-     * The user may edit all properties in the **Look & feel**, **Users & groups** and **Configuration** sections of
-       the backoffice. They also get access to the **Analytics** and **Assets** sections.
-
-       **Grants access to the catalog section of the backoffice**
+     * The user may configure all options and parameters in the Assets, Look & feel, Users & groups and Configuration sections of the back office.
+       **This permission grants access to the Assets, Look & feel, Users & groups, Configuration and License sections of the back office.**
+   * * Manage the domain theme
+     * The user may configure all options and parameters in the Theme and Dataset themes subsections of the Look & feel section of the back office. To access the other subsections (Branding, Data visualizations and Navigation), the Edit domain properties permission is required.
+       **This permission grants access to the Look & feel (Theme and Dataset themes) section of the back office.** It also allows to manage assets.
+   * * Browse analytics
+     * The user may access all analytics dashboards, both at the `domain level </monitoring_audience>`_ and at the dataset level.
+       **This permission grants access to the Analytics section of the back office.**
    * * Manage all reuses
      * The user may see, approve, reject and delete all reuse submissions on the portal.
-
-       **Grants access to the catalog section of the backoffice**
+       **This permission grants access to the Reuses section of the back office.**
    * * Manage all subdomains
-     * :doc:`If subdomains are enabled on the portal </managing_subdomains/index>`, then the user may edit, create and
-       delete all subdomains.
-
-       **Grants access to the catalog section of the backoffice**
-   * * Browse analytics
-     * The user may access all analytics dashboards, both at the `domain level </monitoring_audience>`_ and at the
-       dataset level.
-
-       **Grants access to the analytics section of the backoffice**
+     * The user may edit, create and delete all subdomains (:doc:`if subdomains are enabled on the portal </managing_subdomains/index>`).
+       **This permission grants access to the Subdomain section of the back office.**
 
 Quotas
 ------
