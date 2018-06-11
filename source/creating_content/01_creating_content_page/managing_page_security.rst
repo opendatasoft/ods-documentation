@@ -72,16 +72,16 @@ Deleting users or groups from a page
 2. In the table, the first column indicates the name of the user or the group of users. The second column indicates the corresponding permission(s). The third column displays the |trash-button| button. Click that |trash-button| button to delete a chosen user/group of users.
 3. Click the **Save** button in the top right corner.
 
-Managing page security permissions for users and groups of users
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Managing page permissions for users and groups of users
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Managing page security permissions can mean 2 things:
 
 - granting a user or a group of users a new page permission,
 - or, deleting a page permission for a user or a group of users.
 
-Granting page security permissions for users or groups
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Granting page permissions for users or groups
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Go to Security > User permissions or Security > Group permissions, depending on whether the new permission must be granted to a user or a group of users.
 2. In the table, the first column indicates the name of the user or the group of users. The second column indicates the corresponding permission(s). In this second column, click the **Add permission** button to add a new permission to a chosen user or group of users.
@@ -91,10 +91,10 @@ Granting page security permissions for users or groups
 .. admonition:: Note
    :class: note
 
-   Since there are only 2 page security permissions, including 1 default permission (*Browse page*), the only permission left to be granted is *Edit page*.
+   Since there are only 2 page permissions, including 1 default permission (*Browse page*), the only permission left to be granted is *Edit page*.
 
-Deleting page security permissions for users or groups
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Deleting page permissions for users or groups
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Go to Security > User permissions or Security > Group permissions, depending on whether the new permission must be deleted for a user or a group of users.
 2. In the table, the first column indicates the name of the user or the group of users. The second column indicates the corresponding permission(s). In this second column, click on a chosen permission to delete it.
