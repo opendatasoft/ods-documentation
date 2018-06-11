@@ -64,6 +64,30 @@ Dataset permissions
 These are general permissions that apply to a user with regard to the portal, but user can also get
 :doc:`permissions for individual datasets </sourcing_and_processing_data/security>`.
 
+Page permissions
+~~~~~~~~~~~~~~~~
+
+.. list-table::
+   :header-rows: 1
+
+   * * Permission
+     * Description
+   * * Create new pages
+     * The user may create pages. This permission also allows to manage assets.
+
+       **Grants access to the Pages section of the backoffice**
+   * * Edit all pages
+     * The user may edit and delete all created pages. This permission also allows to manage assets.
+
+       **Grants access to the Pages section of the backoffice**
+   * * Browse all pages
+     * The user may access all pages, even the private ones. This permission also allows to manage assets.
+
+       **Grants access to the Pages section of the backoffice**
+   * * Manage own page's security
+     * The user may manage the security (access policy, page-level permissions on defined users and groups) for the page they have the right to edit. This permission also allows to manage assets.
+
+       **Grants access to the Pages section of the backoffice**
 
 Other permissions
 ~~~~~~~~~~~~~~~~~
@@ -75,11 +99,7 @@ Other permissions
      * Description
    * * Edit domain properties
      * The user may edit all properties in the **Look & feel**, **Users & groups** and **Configuration** sections of
-       the backoffice. He/she also gets access to the **Analytics** and **Assets** sections.
-
-       **Grants access to the catalog section of the backoffice**
-   * * Edit all pages
-     * The user may create, edit and delete all pages. He/she can also manage assets.
+       the backoffice. They also get access to the **Analytics** and **Assets** sections.
 
        **Grants access to the catalog section of the backoffice**
    * * Manage all reuses
@@ -131,7 +151,3 @@ group values and dynamically computes the effective quota depending on the speci
 
     .. image:: users__quotas--fr.png
         :alt: The override form for a quota
-
-
-
-
