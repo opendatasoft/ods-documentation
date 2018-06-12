@@ -54,7 +54,7 @@ Dataset permissions
      * The user may edit all existing datasets.
        **This permission grants access to the Catalog section of the back office.**
    * * Manage own datasets' security
-     * The user may manage security options and parameters (users able to access the datasets, records visible and/or editable etc.) for the datasets they have to permission to edit.
+     * The user may manage security options and parameters (users able to access the datasets, visible records etc.) for the datasets they have to permission to edit.
        This permission on its own doesn't grant access to the back office.
    * * Publish own datasets
      * The user can publish or republish the datasets they have the permission to edit.
@@ -73,9 +73,11 @@ Page permissions
      * Description
    * * Create new pages
      * The user may create new pages.
+
        **This permission grants access to the Pages section of the back office.** It also allows to manage assets.
    * * Edit all pages
      * The user may edit and delete all existing pages.
+
        **This permission grants access to the Pages section of the back office.** It also allows to manage assets.
    * * Browse all pages
      * The user may access all pages, regardless of any security parameters set for this user or the pages (for example, the user can access all private pages).
@@ -94,19 +96,24 @@ Other permissions
    * * Permission
      * Description
    * * Edit domain properties
-     * The user may configure all options and parameters in the Assets, Look & feel, Users & groups and Configuration sections of the back office.
-       **This permission grants access to the Assets, Look & feel, Users & groups, Configuration and License sections of the back office.**
+     * The user may configure all options and parameters in the Assets, Look & feel (except for the Theme subsection), Users & groups and Configuration sections of the back office.
+
+       **This permission grants access to the Assets, Look & feel (Branding, Data visualizations, Navigation and Dataset themes), Users & groups, Configuration and License sections of the back office.**
    * * Manage the domain theme
      * The user may configure all options and parameters in the Theme and Dataset themes subsections of the Look & feel section of the back office. To access the other subsections (Branding, Data visualizations and Navigation), the Edit domain properties permission is required.
+
        **This permission grants access to the Look & feel (Theme and Dataset themes) section of the back office.** It also allows to manage assets.
    * * Browse analytics
      * The user may access all analytics dashboards, both at the `domain level </monitoring_audience>`_ and at the dataset level.
+
        **This permission grants access to the Analytics section of the back office.**
    * * Manage all reuses
      * The user may see, approve, reject and delete all reuse submissions on the portal.
+
        **This permission grants access to the Reuses section of the back office.**
    * * Manage all subdomains
      * The user may edit, create and delete all subdomains (:doc:`if subdomains are enabled on the portal </managing_subdomains/index>`).
+
        **This permission grants access to the Subdomain section of the back office.**
 
 Quotas
