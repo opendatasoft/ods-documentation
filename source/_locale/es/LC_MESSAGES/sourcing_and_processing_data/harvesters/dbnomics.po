@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-09 18:10+0200\n"
+"POT-Creation-Date: 2018-05-21 14:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
@@ -20,12 +20,14 @@ msgstr ""
 
 #: ../../source/sourcing_and_processing_data/harvesters/dbnomics.rst:2
 msgid "DB.nomics harvester"
-msgstr ""
+msgstr "Recolector de DB.nomics"
 
 #: ../../source/sourcing_and_processing_data/harvesters/dbnomics.rst:4
 msgid ""
 "Retrieve one or more datasets from `DB.nomics <https://db.nomics.world/>`_."
 msgstr ""
+"Recuperar uno o varios conjuntos de datos de `DB.nomics "
+"<https://db.nomics.world/>`_."
 
 #: ../../source/sourcing_and_processing_data/harvesters/dbnomics.rst:6
 msgid ""
@@ -34,14 +36,20 @@ msgid ""
 "The aggregated dataset will have an additional \"Concept\" column with the "
 "origin of each row."
 msgstr ""
+"Se puede o bien capturar cada una de estas series temporales como conjuntos "
+"de datos de OpenDataSoft individuales o bien agregarlos en un solo conjunto "
+"de datos de OpenDataSoft. El conjunto de datos agregado tendrá una columna "
+"\"Concept\" adicional con el origen de cada una de las filas."
 
 #: ../../source/sourcing_and_processing_data/harvesters/dbnomics.rst:9
 msgid "A dataset ID follows the following format *ProviderName-DatasetId*."
 msgstr ""
+"Un ID de conjunto de datos sigue el formato *NombreProveedor-"
+"IdConjuntoDatos*."
 
 #: ../../source/sourcing_and_processing_data/harvesters/dbnomics.rst:11
 msgid "Retrieving the dataset ID"
-msgstr ""
+msgstr "Recuperar el ID de conjunto de datos"
 
 #: ../../source/sourcing_and_processing_data/harvesters/dbnomics.rst:14
 msgid ""
@@ -51,10 +59,18 @@ msgid ""
 "appear : https://api.db.nomics.world/api/v1/json/datasets/bea-"
 "fa2004-section1-101-a/values"
 msgstr ""
+"Recupere el ID de conjunto de datos con el `Explorador "
+"<https://db.nomics.world/views/explorer>`_. Seleccione un proveedor y el "
+"conjunto de datos para recuperar, y haga clic en API Link > JSON. Aparecerá "
+"un vínculo con este formato: "
+"https://api.db.nomics.world/api/v1/json/datasets/bea-"
+"fa2004-section1-101-a/values"
 
 #: ../../source/sourcing_and_processing_data/harvesters/dbnomics.rst:16
 msgid "In this example, the dataset ID is : **bea-fa2004-section1-101-a**"
 msgstr ""
+"En este ejemplo, el ID de conjunto de datos es: **bea-"
+"fa2004-section1-101-a**"
 
 #: ../../source/sourcing_and_processing_data/harvesters/dbnomics.rst:19
 msgid "Parameters"
@@ -78,16 +94,16 @@ msgstr "Conjunto de datos"
 
 #: ../../source/sourcing_and_processing_data/harvesters/dbnomics.rst:28
 msgid "The comma separated list of dataset IDs to harvest."
-msgstr ""
+msgstr "La lista separada por comas de los ID para recolectar."
 
 #: ../../source/sourcing_and_processing_data/harvesters/dbnomics.rst:29
 msgid "eurostat-earn-ses06-01, ameco-adggi, ..."
-msgstr ""
+msgstr "eurostat-earn-ses06-01, ameco-adggi..."
 
 #: ../../source/sourcing_and_processing_data/harvesters/dbnomics.rst:30
 msgid "Aggregate series in a single dataset"
-msgstr ""
+msgstr "Agregar una serie en un solo conjunto de datos"
 
 #: ../../source/sourcing_and_processing_data/harvesters/dbnomics.rst:31
 msgid "Aggregate SDMX series into a single SDMX dataset."
-msgstr ""
+msgstr "Agregue una serie SDMX en un solo conjunto de datos SDMX."
