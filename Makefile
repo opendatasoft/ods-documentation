@@ -61,9 +61,7 @@ clean:
 	rm -rf $(BUILDDIR)/*
 
 html:
-	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
-	@echo
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+	make -e html/en
 
 html/%:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/$@
@@ -226,10 +224,12 @@ push-translations: clean html
 ifeq ($(shell git symbolic-ref HEAD --short), develop)
 	@echo "Building translation files"
 	@make gettext
+	@cp .tx/configmini .tx/config
 	@sphinx-intl update -p $(BUILDDIR)/locale -l $(TRANSLATED_LANGUAGES)
 	@sphinx-intl update-txconfig-resources --pot-dir $(BUILDDIR)/locale --transifex-project-name documentation-5
 	@echo "Uploading translation files to Transifex"
 	tx push -s
+	@python scripts/clean_remote_resources.py
 	@echo "Build finished. Translation templates (.pot) uploaded to transifex."
 else
 	@echo "You have to be on the develop branch to build translations"
