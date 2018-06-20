@@ -9,7 +9,7 @@ organization_slug = 'opendatasoft'
 
 prj = Project(find_dot_tx())
 
-api_auth = prj.getset_host_credentials('https://api.transifex.com', only_token=True, no_interactive=True)
+api_auth = prj.getset_host_credentials('https://api.transifex.com')
 
 offset = 0
 remote_resources = []
