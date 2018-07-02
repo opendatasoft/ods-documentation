@@ -2,7 +2,7 @@ Getting started with OpenDataSoft
 =================================
 
 1. Using any web browser, go to the OpenDataSoft domain of your choice.
-2. Submit your credentials to log in to the chosen OpenDataSoft domain.
+2. Submit your credentials (email and password you chose when creating your account) to log in to the chosen OpenDataSoft domain.
 3. When logging in for the first time: accept OpenDataSoft's terms of use.
 
 .. admonition:: Note
