@@ -717,14 +717,14 @@ Here, several disjunctive mode are set to true for 5 fields, and the last parame
 
    Disjunctive mode set to ``true`` on a facet field activate the multiple choise filter mode. It allows the user to apply a filter, and still be able to see and/or select  other values
 
- We will remove this optional attribute and observe changes.
+We will remove this optional attribute and observe changes.
 
- .. code-block:: html
+.. code-block:: html
 
-    <ods-dataset-context
+   <ods-dataset-context
         context="entreprisesimmatriculeesen2016"
         entreprisesimmatriculeesen2016-dataset="entreprises-immatriculees-en-2016">
-    </ods-dataset-context>
+   </ods-dataset-context>
 
 First the context, if we display it, the json parameters block is now much smaller :
 
