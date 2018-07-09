@@ -52,7 +52,7 @@ Register and configure an identity provider
 
 4. If you are using Microsoft Azure Active Directory as an IDP, check the related checkbox.
 
-5. If you wish to disable transient connexion mode, thereby making sure only linked users can connect to the platform through SAML, check the related checkbox.
+5. If you wish to disable transient connection mode, thereby making sure only linked users can connect to the platform through SAML, check the related checkbox.
 
 6. Input the set of attributes sent by the IDP that uniquely define a user.
 
