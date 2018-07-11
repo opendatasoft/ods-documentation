@@ -20,8 +20,8 @@ Configuration
      * Column titles will be used as field names.
      * ``true`` or ``false``
    * * First line number
-     * Skip a fix number of rows at the beginning of the file.
-     * ``true`` or ``false``
+     * All the rows from the beginning of the file to this line number will be skipped.
+     * number
    * * Sheet number
-     * The number of the sheet to work on. Can be a range with the ``[0-2]`` notation or a list of sheets separated by a ``,``.
-     * ``0`` or ``[0-2]`` or ``0,1,2``
+     * The number of the sheet to work on. Can be a range with the ``[1-3]`` notation, a list of sheets separated by a ``,``, or a ``*`` (all sheets).
+     * ``1`` or ``[1-3]`` or ``1,2,3`` or ``*``
