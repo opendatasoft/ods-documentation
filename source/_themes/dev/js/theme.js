@@ -102,7 +102,7 @@ function ThemeNav() {
                 setMenu();
                 // Handle dynamic display of l3 and l4 nav lists
                 self.toggleCurrent(target);
-                self.hashChange();
+                self.hashChange(target);
             })
             .on('click', "[data-toggle='rst-current-version']", function () {
                 $("[data-toggle='rst-versions']").toggleClass("shift-up");
@@ -190,17 +190,27 @@ function ThemeNav() {
         this.docHeight = $(document).height();
     };
 
-    nav.hashChange = function () {
+    nav.hashChange = function (element) {
         this.linkScroll = true;
         this.win.one('hashchange', function () {
             this.linkScroll = false;
         });
+
+        var target = element[0].attributes.href.nodeValue;
+
+        if (target === '#') return null;
+        else {
+            res_target = $('#' + target.split('#')[1]).offset().top;
+            setTimeout(function () {
+                $('html').animate({ scrollTop: res_target - 110 }, 0);
+            }, 0);
+        }
     };
 
     nav.toggleCurrent = function (elem) {
-        
+
         var parent_li = elem.closest('li');
-            
+
         parent_li.parent().parent().removeClass('current-active');
         parent_li.siblings('li.current').removeClass('current current-active');
         parent_li.siblings().find('li.current').removeClass('current current-active');
@@ -225,30 +235,6 @@ $('#help-hub-button').click(function() {
         setHub();
     } else {
         setHub();
-    }
-});
-
-// scroll content below ods_header 
-$('.internal').on('click', function (event) {
-    var target = $(this)[0].attributes.href.nodeValue;
-
-    if (target.indexOf('#') !== -1) {
-        event.preventDefault();
-
-        if (target == '#') {
-            window.location.hash = "";
-        } else {
-            hash_url = target.split('#');
-            window.location.hash = '#' + hash_url[1];
-
-            res_target = $('#' + target.split('#')[1]).offset().top;
-            setTimeout(function () {
-                $('html').animate({ scrollTop: res_target - 110 }, 0);
-            }, 0);
-        }
-
-    } else {
-        return null;
     }
 });
 
