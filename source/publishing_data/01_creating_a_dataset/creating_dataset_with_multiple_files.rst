@@ -41,7 +41,7 @@ This method consists in adding several files at the same time via an archive fil
 .. admonition:: Important
    :class: important
 
-   To source a shapefile (containing file formats such as .shp, .dbf and .prj), create an archive file with all the needed files inside and follow the procedure above.
+   To source a shapefile (containing the following file formats: .shp, .shx, .dbf and .prj), create an archive file with all the needed files inside and follow the procedure above.
 
 
 Sourcing multiple files stored on an FTP server

@@ -66,7 +66,7 @@ The following table lists the supported format and describes configuration optio
        :doc:`connectors/kml`
    * * Shapefile
      *  .zip
-     * A zip archive containing at least the following files: <NAME>.shp, <NAME>.dbf, <NAME>.prj
+     * A zip archive containing the following files: <NAME>.shp, <NAME>.shx, <NAME>.dbf and <NAME>.prj
      *
        :doc:`connectors/shapefile`
    * * MapInfo
