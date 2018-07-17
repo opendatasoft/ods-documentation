@@ -13,13 +13,3 @@ Each user can manage their subscription to the different notification types on t
 
 .. image:: images/user-account-notifications--en.png
    :alt: Daily report
-
-
-We currently provide the following notification types:
-
-.. toctree::
-   :maxdepth: 1
-
-   quota
-   processing_alert
-   daily_report
