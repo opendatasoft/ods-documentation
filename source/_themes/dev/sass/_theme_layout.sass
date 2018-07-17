@@ -314,12 +314,20 @@ body, h1, h2, h3, p, a
     cursor: pointer
     padding-top: inherit
 
+code,
+.rst-content tt,
+.rst-content code
+  white-space: pre-wrap
+  word-break: break-all
+
 .wy-nav-content-wrap
   margin-left: $nav-desktop-width
   background: $section-background-color
   min-height: 100%
   left: 0
   border-left: 1px solid transparentize($grey-medium, 0.6)
+  a
+    word-break: break-all
 
 .wy-nav-content
   padding: $gutter $gutter * 2
