@@ -15,7 +15,9 @@
 @media only screen and (min-width: $tablet-width) 
   .ods__documentation-header 
     display: flex
+    display: -ms-flexbox
     flex-direction: row
+    -ms-flex-direction: row
     justify-content: flex-start
 
 .ods__documentation-header-logo 
@@ -59,19 +61,20 @@
       padding-left: 50px
       img 
         height: 90px
-        margin: -10px 0 0 0
+        margin: 5px 0 0 0
         
 .ods__documentation-header-nav 
   display: none
 @media only screen and (min-width: $tablet-width)
   .ods__documentation-header-nav 
     display: flex
+    display: -ms-flexbox
     margin-left: 100px
+    width: auto
 //- IE 10 / 11
 @media only screen and (-ms-high-contrast: active), (-ms-high-contrast:none)
   .ods__documentation-header-nav
-    display: flex
-    margin-left: 120px
+    margin-left: 65px
 
 .ods__documentation-help-hub-sidebar 
   position: fixed
