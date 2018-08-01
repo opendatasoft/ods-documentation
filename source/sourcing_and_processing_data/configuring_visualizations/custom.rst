@@ -28,10 +28,10 @@ Tab icon and title
 The custom title and icon will show up within your catalog page on the related dataset's card, and you'll be able to
 search for datasets having a custom view set up with the *View* filter (select the *Custom view* option).
 
-Icons are taken from the `Font awesome 4.7 icon set <http://fontawesome.io/icons/>`_ and must be specified through
-their name (omitting the ``fa-`` prefix). For example, to use the `bar chart <http://fontawesome.io/icon/bar-chart/>`_
+Icons are taken from the `Font awesome 4.7 icon set <https://fontawesome.com/v4.7.0/icons/>`_ and must be specified through
+their name (omitting the ``fa-`` prefix). For example, to use the `bar chart <https://fontawesome.com/v4.7.0/icon/bar-chart>`_
 icon, whose name is ``fa-bar-chart``, you should input ``bar-chart`` in the icon field. You can also leave this field
-empty, in which case it will default to the `tachometer icon <http://fontawesome.io/icon/tachometer/>`_.
+empty, in which case it will default to the `tachometer icon <https://fontawesome.com/v4.7.0/icon/tachometer>`_.
 
 Tab content
 -----------
