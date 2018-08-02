@@ -16,5 +16,6 @@ Content pages can be used to:
    :maxdepth: 2
 
    create
+   /creating_content/01_creating_content_page/managing_page_security
    style
    integrate_content
