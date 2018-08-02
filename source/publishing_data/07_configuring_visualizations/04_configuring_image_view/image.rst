@@ -1,11 +1,10 @@
 Configuring the image gallery
 =============================
 
-.. note::
+.. admonition:: Note
+   :class: note
 
-   The images view is only available when there is at least a *file* field, and
-   if at least one file contained in this field is an image, or a document that
-   can generate a thumbnail.
+   The images view is only available when there is at least a *file* field, and if at least one file contained in this field is an image, or a document that can generate a thumbnail.
 
 
 Setting up the tooltip

@@ -14,11 +14,15 @@ To add a processor to a dataset:
 2. Choose the processor to add to the dataset.
 3. Using the documentation of the chosen processor, fill in the right parameters to set the processor.
 
-.. note::
-    You may need to click outside the processor box once the parameters are configured, to make sure the processor and the changes it triggers are taken into account and applied to the dataset.
+.. admonition:: Note
+   :class: note
 
-.. note::
-    No matter the processor, always use the technical identifiers of the fields to process, never the labels.
+   You may need to click outside the processor box once the parameters are configured, to make sure the processor and the changes it triggers are taken into account and applied to the dataset.
+
+.. admonition:: Note
+   :class: note
+
+   No matter the processor, always use the technical identifiers of the fields to process, never the labels.
 
 
 Geographical processors

@@ -1,10 +1,10 @@
 Get coordinates from a 3 word address processor
 ===============================================
 
-.. admonition:: This processor is not available by default.
+.. admonition:: Important
    :class: important
 
-   Please contact OpenDataSoft support team if you want this processor to be activated in your domain.
+   This processor is not available by default. Please contact OpenDataSoft support team if you want this processor to be activated in your domain.
 
 This processor converts a 3 word address into geographical coordinates.
 

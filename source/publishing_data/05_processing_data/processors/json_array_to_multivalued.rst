@@ -3,8 +3,10 @@ JSON array to multivalued
 
 This processor extracts multiple values from a field containing a JSON array and concatenates them into a multivalued field.
 
-.. note::
-     The ``multivalued`` property will not be set automatically in the field, so don't forget to enable it on the field's parameters, along with the same separator as in the processor.
+.. admonition:: Note
+   :class: note
+
+   The ``multivalued`` property will not be set automatically in the field, so don't forget to enable it on the field's parameters, along with the same separator as in the processor.
 
 +-------------------------+------------------+
 | Original value          | After processor  |

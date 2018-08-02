@@ -84,7 +84,7 @@ Expressions work similarly as formulas in a spreadsheet software, except instead
 
 Expressions also work with both textual (``"your text here"`` or ``text``) and numerical (``2``) content.
 
-.. admonition:: Prerequisites for expressions
+.. admonition:: Prerequisite
    :class: important
 
    Expressions must always start with ``=`` otherwise the processor will not work.
@@ -125,8 +125,10 @@ In the table below are listed the available functions:
 Examples
 --------
 
-.. note::
-    Keep in mind that for each expression, the examples are presented with actual numbers, but they can be replaced with the processed dataset's fields technical identifiers.
+.. admonition:: Note
+   :class: note
+
+   Keep in mind that for each expression, the examples are presented with actual numbers, but they can be replaced with the processed dataset's fields technical identifiers.
 
 .. list-table::
    :header-rows: 1

@@ -38,9 +38,10 @@ Once the dataset is selected, it appears in the distributed dataset list.
 
 As soon as you save, the dataset will be distributed and available on the subdomain's catalog.
 
-.. note::
-    From the subdomain, a distributed dataset acts just like a federated dataset: you can't edit its data (e.g. you can't re-order fields, or add processors), but you
-    can override metadata, manage the security settings, set the dataset as restricted, filter the data for specific users or groups. The dataset may also be deleted from the subdomain.
+.. admonition:: Note
+   :class: note
+
+   From the subdomain, a distributed dataset acts just like a federated dataset: you can't edit its data (e.g. you can't re-order fields, or add processors), but you can override metadata, manage the security settings, set the dataset as restricted, filter the data for specific users or groups. The dataset may also be deleted from the subdomain.
 
 At any time, you can cancel the distribution using the little icon on the right in the distributed datasets list. This will remove the dataset from the subdomain's catalog,
 but it won't delete the dataset from the parent domain.
@@ -84,10 +85,10 @@ Once the selection is done, your pages will appear in the list.
 
 You just need to click on the *Save* button now, and the page will appear in the subdomain.
 
-.. note::
-    From the subdomain, a distributed page can not be edited, because the page's content is entirely managed by the parent domain: if the content changes in the parent domain,
-    it is immediately also changed in the subdomains. However, the subdomain can delete the page; it can also copy the page's content into a new page, which will be entirely editable
-    like any normal page, but therefore won't automatically receive updates from the parent domain.
+.. admonition:: Note
+   :class: note
+
+   From the subdomain, a distributed page can not be edited, because the page's content is entirely managed by the parent domain: if the content changes in the parent domain, it is immediately also changed in the subdomains. However, the subdomain can delete the page; it can also copy the page's content into a new page, which will be entirely editable like any normal page, but therefore won't automatically receive updates from the parent domain.
 
 At any time, you can remove a distributed page using the little icon on the right of the page in the list. This will cancel the distribution to the subdomain, but will not delete the
 page on the parent domain.

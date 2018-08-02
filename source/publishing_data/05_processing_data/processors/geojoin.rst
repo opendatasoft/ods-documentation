@@ -49,8 +49,10 @@ Referentials
 
 To set the **Repository**, follow the indications from the table of the chosen country.
 
-.. note::
-    The referentials below can also be found in datasets available on `public.opendatasoft.com <https://public.opendatasoft.com>`_.
+.. admonition:: Note
+   :class: note
+
+   The referentials below can also be found in datasets available on `public.opendatasoft.com <https://public.opendatasoft.com>`_.
 
 Belgium
 ^^^^^^^

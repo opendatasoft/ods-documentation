@@ -31,9 +31,10 @@ OpenDataSoft's Google Analytics integration tracks all the pages in your portal 
 XiTi
 ----
 
-.. note::
-    OpenDataSoft support the XiTi Analytics solution, which is edited by ATinternet. However, ATinternet also edits SmartTag, which is another
-    analytics solution that is not supported by OpenDataSoft yet.
+.. admonition:: Note
+   :class: note
+
+   OpenDataSoft support the XiTi Analytics solution, which is edited by ATinternet. However, ATinternet also edits SmartTag, which is another analytics solution that is not supported by OpenDataSoft yet.
 
 The activation of XiTi on a domain is handled by the OpenDataSoft team. It requires sending us the ``xtcore.js`` file (which should have been provided by XiTi), and
 the identifiers that you have been provided with by XiTi.

@@ -1,10 +1,10 @@
 what3words processor
 ====================
 
-.. admonition:: This processor is not available by default.
+.. admonition:: Important
    :class: important
 
-   Please contact OpenDataSoft support team if you want this processor to be activated in your domain.
+   This processor is not available by default. Please contact OpenDataSoft support team if you want this processor to be activated in your domain.
 
 This processor uses geographical coordinates to produce a 3 word address.
 

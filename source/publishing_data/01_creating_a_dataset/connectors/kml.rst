@@ -8,9 +8,7 @@ File extensions
 
 The following extensions are recognized: .kml and kmz.
 
-.. note::
+.. admonition:: Note
+   :class: note
 
-    To open a KML file outside the platform, you can use Google Earth
-
-
-
+   To open a KML file outside the platform, you can use Google Earth

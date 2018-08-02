@@ -1,10 +1,10 @@
 Extract bit range processor
 ===========================
 
-.. admonition:: This processor is not available by default.
+.. admonition:: Important
    :class: important
 
-   Please contact OpenDataSoft support team if you want this processor to be activated in your domain.
+   This processor is not available by default. Please contact OpenDataSoft support team if you want this processor to be activated in your domain.
 
 This processor extracts an arbitrary bit range from an hexadecimal content and converts it into one of the following data types: integer, unsigned integer and float.
 

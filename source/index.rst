@@ -1,5 +1,5 @@
-Welcome to OpenDataSoft documentation!
-======================================
+Welcome to the user manual of the OpenDataSoft platform!
+========================================================
 
 `OpenDataSoft <https://www.opendatasoft.com/>`_ is a turnkey solution, designed for non-technical users to share, publish and reuse data. It is available as a commercial-off-the-shelf, cloud hosted product.
 
@@ -10,32 +10,11 @@ OpenDataSoft includes a unique set of integrated features:
 * to publish these datasets as RESTFul APIs.
 * to explore the datasets catalog, to visualize individual datasets or build multi-datasets mashups.
 
-.. note::
-    Give a try to OpenDataSoft by subscribing to a `free trial account <https://www.opendatasoft.com/discover-opendatasoft-demo/>`_.
+This documentation is OpenDataSoft's reference user manual.
 
-.. note::
-    Access our `data network <https://data.opendatasoft.com>`_ if you are looking for reusable public datasets.
+.. admonition:: Note
+   :class: note
 
-.. localizedfigure:: index__opendatasoft-data-network.jpg
-    :alt: OpenDataSoft's network of data
-    :width: 400px
-    :align: center
-
-    OpenDataSoft's network of data
-
-This documentation is OpenDataSoft's reference documentation. It complements inline documentation directly accessible in OpenDataSoft's back-office screens.
-
-.. important::
-    You will find some of the resources used in this documentation online on our `discovery portal <https://discovery.opendatasoft.com/>`_.
-
-.. localizedfigure:: index__opendatasoft-discovery.jpg
-    :alt: OpenDataSoft's discovery portal
-    :width: 400px
-    :align: center
-
-    OpenDataSoft's discovery portal
-
-.. note::
    OpenDataSoft staff is always available to help. You can give us feedbacks or send us questions by contacting OpenDataSoft support, either by hitting the **Support** link in the back-office menu or by sending an email to `support@opendatasoft.com <mailto:support@opendatasoft.com>`_.
 
 .. toctree::
@@ -62,7 +41,7 @@ This documentation is OpenDataSoft's reference documentation. It complements inl
    configuring_domain/index
 
 .. toctree::
-   :caption: Other links
+   :caption: Other resources
    :maxdepth: 1
 
    pictograms_reference/pictograms_reference

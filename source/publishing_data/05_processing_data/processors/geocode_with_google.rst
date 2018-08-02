@@ -1,10 +1,10 @@
 Geocode with Google processor
 =============================
 
-.. admonition:: This processor is not available by default.
+.. admonition:: Important
    :class: important
 
-   Please contact OpenDataSoft support team if you want this processor to be activated in your domain.
+   This processor is not available by default. Please contact OpenDataSoft support team if you want this processor to be activated in your domain.
 
 This processor allows you to geocode full text addresses by using the Google geocoding API.
 

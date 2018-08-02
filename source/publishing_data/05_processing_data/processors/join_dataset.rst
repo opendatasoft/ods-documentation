@@ -5,7 +5,7 @@ This processor allows to join 2 datasets together. However, these 2 datasets mus
 
 Example: a dataset A could be enriched with more data, which are in a dataset B. If datasets A and B have one field in common, it is possible to join these datasets together, in order to retrieve a field from dataset B et add it to dataset A.
 
-.. admonition:: Limitation
+.. admonition:: Important
    :class: important
 
    By default, the Join dataset processor can only be used with remote datasets that have fewer than 100,000 records. In addition to that, when applying a join dataset processor to a scheduled dataset, the join is only reapplied when the resource has changed. This means that given a scheduled dataset A, that has a join dataset processor that pulls values from dataset B, if there are new values in dataset B but the resources of dataset A haven't changed, the scheduled processing will not pull the new values from B.
@@ -101,8 +101,10 @@ Dataset A after being enriched with a field from dataset B, using the Join datas
 Join with "One line" parameter set
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. note::
-    The example datasets used in the following example are the same as in the previous one.
+.. admonition:: Note
+   :class: note
+
+   The example datasets used in the following example are the same as in the previous one.
 
 Dataset A contains two rows for the first station:
 

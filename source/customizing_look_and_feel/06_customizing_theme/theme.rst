@@ -10,9 +10,10 @@ Customizing theme and portal icon
 OpenDataSoft's theme management interface can be found in the domain back-office. In order to access it, you'll have to
 click the ``Look & feel`` section in the navigation bar and then on the ``theme`` link.
 
-.. note::
-    In order to access the theme page, you'll need to be able to edit domain properties.
-    See :doc:`Managing the Security of your Domain </managing_domain/01_managing_users_and_groups/users>` for more details about permissions.
+.. admonition:: Note
+   :class: note
+
+   In order to access the theme page, you'll need to be able to edit domain properties. See :doc:`Managing the Security of your Domain </managing_domain/01_managing_users_and_groups/users>` for more details about permissions.
 
 .. ifconfig:: language == 'en'
 
@@ -38,13 +39,15 @@ created and would become your new working draft. Only the latest version can be 
 While working on the latest version, you can preview your changes by clicking the ``Preview`` button. This will open a
 new window containing your portal with the current version of the theme applied to it.
 
-.. note::
-    Only users able to edit the domain properties can preview the latest theme version. If you were to share the URL of
-    the preview with other users, they won't see any difference in the live version.
+.. admonition:: Note
+   :class: note
 
-.. note::
-    You can preview the latest version of the theme at any moment and on any given page on the portal's
-    front-office by adding the ``stage_theme=true`` parameter to the URL.
+   Only users able to edit the domain properties can preview the latest theme version. If you were to share the URL of the preview with other users, they won't see any difference in the live version.
+
+   .. admonition:: Note
+      :class: note
+
+      You can preview the latest version of the theme at any moment and on any given page on the portal's front-office by adding the ``stage_theme=true`` parameter to the URL.
 
 .. ifconfig:: language == 'en'
 
@@ -86,9 +89,10 @@ available space. There are 4 modes available: extra-small , small , medium and l
 breakpoints: extra-small to small, small to medium and medium to large. The modes are also commonly referred to as
 *mobile*, *tablet*, *desktop* and *large desktop*.
 
-.. note::
-    Bear in mind though that *mobile mode* doesn't mean that the user is actually using a mobile device, but rather that
-    the browser on the device only offers a small display area.
+.. admonition:: Note
+   :class: note
+
+   Bear in mind though that *mobile mode* doesn't mean that the user is actually using a mobile device, but rather that the browser on the device only offers a small display area.
 
 In order to reset any of the variable to its default value, just click on the clear button next to it.
 
@@ -107,10 +111,10 @@ your portal to your colors.
 
    .. image:: images/theme__colors--fr.png
 
-.. note::
-    These variables will override the default theme's colors. The custom style rules you can write in the stylesheet tab
-    will however have precedence over these colors. Which means that your color choices may not be visible if you wrote
-    more specific CSS rules.
+.. admonition:: Note
+   :class: note
+
+   These variables will override the default theme's colors. The custom style rules you can write in the stylesheet tab will however have precedence over these colors. Which means that your color choices may not be visible if you wrote more specific CSS rules.
 
 .. _theme__stylesheet:
 
@@ -168,9 +172,10 @@ provide the `ods-responsive-menu` directive. See :doc:`this dedicated page </cus
 We also provide placeholders that will be replaced with the content specified in the domain customization options such
 as menu items, language selectors and logos. The full list is displayed right above the code area.
 
-.. note::
-    While you can take advantage of Angular within the header and footer, standard JS is still forbidden for security
-    reasons.
+.. admonition:: Note
+   :class: note
+
+   While you can take advantage of Angular within the header and footer, standard JS is still forbidden for security reasons.
 
 Catalog card
 ~~~~~~~~~~~~

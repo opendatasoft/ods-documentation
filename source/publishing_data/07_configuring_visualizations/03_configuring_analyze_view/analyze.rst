@@ -1,7 +1,8 @@
 Configuring the default chart
 =============================
 
-.. note::
+.. admonition:: Note
+   :class: note
 
    The analyze view is available on all datasets having at least a date/datetime field or a facet.
 

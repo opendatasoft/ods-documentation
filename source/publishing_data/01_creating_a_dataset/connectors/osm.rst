@@ -3,9 +3,10 @@ OSM connector
 
 The OpenStreetMap connector extracts data from OSM archives. The export can be compressed.
 
-.. note::
+.. admonition:: Note
+   :class: note
 
-    A reliable server to download extract is `Geofabrik <http://download.geofabrik.de>`_. It provides export for different parts of the world.
+   A reliable server to download extract is `Geofabrik <http://download.geofabrik.de>`_. It provides export for different parts of the world.
 
 File extensions
 ~~~~~~~~~~~~~~~
@@ -25,9 +26,3 @@ Configuration
      * The tags to extract from the node or way
    * * Relation tags
      * The tags to extract from the attached relation
-
-
-
-
-
-

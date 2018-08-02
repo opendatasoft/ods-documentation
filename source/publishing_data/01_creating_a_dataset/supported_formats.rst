@@ -1,8 +1,10 @@
 Supported formats
 =================
 
-.. note::
-    File formats support can be extended to match specific requirements (for instance, to support a complex XML or a non standard flat file format). Contact your local support team if you need more information on file formats support extension.
+.. admonition:: Note
+   :class: note
+
+   File formats support can be extended to match specific requirements (for instance, to support a complex XML or a non standard flat file format). Contact your local support team if you need more information on file formats support extension.
 
 Supported file formats
 ----------------------
@@ -64,7 +66,7 @@ The following table lists the supported format and describes configuration optio
        :doc:`connectors/kml`
    * * Shapefile
      *  .zip
-     * A zip archive containing at least the following files: <NAME>.shp, <NAME>.dbf, <NAME>.prj
+     * A zip archive containing the following files: <NAME>.shp, <NAME>.shx, <NAME>.dbf and <NAME>.prj
      *
        :doc:`connectors/shapefile`
    * * MapInfo

@@ -169,9 +169,10 @@ Then, it's now possible, with AngularJS expression, to compute pourcentages betw
     <span class="kpi">% Canceled : {{ canceled / total * 100 | number : 2 }}%</span>
     <span class="kpi">% Delayed : {{ delayed / total * 100 | number : 2 }}%</span>
 
-  .. note::
+.. admonition:: Note
+   :class: note
 
-	``| number : 2`` is the AngularJS filter to pretty print numerical values. The optional parameter ``2`` is to limit to only 2 decimals
+   ``| number : 2`` is the AngularJS filter to pretty print numerical values. The optional parameter ``2`` is to limit to only 2 decimals
 
 Before going further let's clean up the HTML code to be able to apply CSS for responsive display, different font size between the title and the value etc... :
 
@@ -364,9 +365,10 @@ Save, refresh, and see how it behave when filters are selected, In 2013, Paris E
  .. image:: images/advanced__kpi-ngclass-1.png
  .. image:: images/advanced__kpi-ngclass-2.png
 
- .. note::
+.. admonition:: Note
+   :class: note
 
-	``ng-class`` syntax is, surround by brackets, the CSS class in quotes followed by ``:`` then the AngularJS expression :
+   ``ng-class`` syntax is, surround by brackets, the CSS class in quotes followed by ``:`` then the AngularJS expression :
 		``{ 'CSS class' : AngularJS expression, ... }``
 
 	Several classes and expression can be specified, all the expressions will be tested, from left to right.

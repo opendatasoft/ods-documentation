@@ -82,10 +82,10 @@ they opt-in to receive notifications that the dataset publisher can decide to
 send at any time, for example an information about a future schema change, or
 to indicate that the data has been updated recently.
 
-.. note::
-    The button is only available to users who are logged on the portal using
-    an account. If you want to use this feature on an open data portal for
-    example, you may want to allow users to sign up on your portal.
+.. admonition:: Note
+   :class: note
+
+   The button is only available to users who are logged on the portal using an account. If you want to use this feature on an open data portal for example, you may want to allow users to sign up on your portal.
 
 .. localizedimage:: images/subscription__button.png
 
@@ -103,9 +103,11 @@ the data itself, if it is not updated very frequently.
 
 User feedback on datasets
 -------------------------
-.. note::
-    This feature is currently in beta, and is not available by default. Please contact
-    us if you would like to try this feature on your own portal.
+
+.. admonition:: Note
+   :class: note
+
+   This feature is currently in beta, and is not available by default. Please contact us if you would like to try this feature on your own portal.
 
 If you wish to gather feedback on the content of a specific dataset, you can activate
 "User feedback" from its back-office configuration page.
@@ -133,7 +135,7 @@ the suggested values, and you can archive it once you consider it handled.
 
 .. localizedimage:: images/feedback__list.png
 
-.. note::
-    This is not a crowdsourcing feature; the suggestions are not automatically
-    applied or added to the dataset. It is up to the dataset's publisher to make
-    sure the relevant feedback is applied to the source.
+.. admonition:: Note
+   :class: note
+
+   This is not a crowdsourcing feature; the suggestions are not automatically applied or added to the dataset. It is up to the dataset's publisher to make sure the relevant feedback is applied to the source.

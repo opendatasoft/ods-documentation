@@ -3,9 +3,10 @@ Using the API
 
 An API (Application Programming Interface) is an interface for programs to communicate and exchange data.
 
-.. note::
+.. admonition:: Note
+   :class: note
 
-  To know more about what APIs are and why and how they are used, you can read the article "`You don’t need analogies to understand APIs <https://kitchen.opendatasoft.com/you-dont-need-analogies-to-understand-apis-14da4513f970>`_" written by one of our OpenDataSoft developers.
+   To know more about what APIs are and why and how they are used, you can read the article "`You don’t need analogies to understand APIs <https://kitchen.opendatasoft.com/you-dont-need-analogies-to-understand-apis-14da4513f970>`_" written by one of our OpenDataSoft developers.
 
 OpenDataSoft provides access to 6 APIs, that can be put into 3 categories:
 
@@ -18,7 +19,7 @@ All these APIs provide access to any data pushed to the platform, no matter thei
 These APIs can be used, for example, to search for datasets and data, to compute analysis or to perform geographic aggregations. Still developer-oriented, but for more concrete examples of what can be done with APIs: applications as data reuses. Some of OpenDataSoft customers have indeed seen their datasets being reused through their API, to create applications (i.e. `Qui dit miam ! <http://quiditmiam.fr/>`_ and `Y'A D Frites! <https://www.opendatasoft.fr/2016/10/17/y-a-d-frites-application-avec-de-lopen-data-dedans/>`_ 2 applications that display the school canteen menu of French cities, Toulouse, Rennes and Saint-Malo).
 
 
-.. admonition:: Reminder before diving into any API specification
+.. admonition:: Important
    :class: important
 
    Before using any of the available APIs, it is very important to be familiar with the nature of this data. Everything within the platform is built according to a tree structure (there are of course more types of data within the platform, but they are only relevant in very specific contexts). OpenDataSoft can thus be seen as such:

@@ -1,13 +1,19 @@
 Analyzing with the Chart Builder
 ================================
 
-.. note:: Read how to :doc:`configure visualizations </publishing_data/07_configuring_visualizations/03_configuring_analyze_view/analyze>` for a dataset beforehand.
+.. admonition:: Prerequisite
+   :class: important
+
+   Read how to :doc:`configure visualizations </publishing_data/07_configuring_visualizations/03_configuring_analyze_view/analyze>` for a dataset beforehand.
 
 With the Chart Builder tool, you can visualize multiple datasets on a single customized chart. You can save your chart and easily share it, embed it, or use it as a widget.
 
 It is usually made available by the domain administrator in the top menu link under the codename `Charts`. The Map Builder can also be accessed using its URL: ``http://<DOMAIN ADDRESS>/chart``.
 
-.. note:: You can also build charts with `Analyze` tab on a dataset page, but these are limited to the current dataset. With the Chart Builder you have much more possibilities, combining different sources from your domain and from the OpenDataSoft network.
+.. admonition:: Note
+   :class: note
+
+   You can also build charts with `Analyze` tab on a dataset page, but these are limited to the current dataset. With the Chart Builder you have much more possibilities, combining different sources from your domain and from the OpenDataSoft network.
 
 
 First layer
@@ -76,7 +82,10 @@ The default visualization is a line with the average commodity price.
 
 You should see your query filter just under the dataset name: "`query: date>1987`".
 
-.. note:: You can click on the pencil icon |edit-pencil| of a layer to change the selected dataset or refine the query.
+.. admonition:: Note
+   :class: note
+
+   You can click on the pencil icon |edit-pencil| of a layer to change the selected dataset or refine the query.
 
 .. |edit-pencil| image:: images/edit.png
 

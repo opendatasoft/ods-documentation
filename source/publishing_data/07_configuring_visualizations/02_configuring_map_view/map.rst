@@ -1,7 +1,8 @@
 Configuring the map view
 ========================
 
-.. note::
+.. admonition:: Note
+   :class: note
 
    The map view is only available to datasets containing at least one geo field (geo point or geo shape).
 

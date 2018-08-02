@@ -4,9 +4,10 @@ Managing access requests
 Access requests are generated each time somebody registers on your portal and you've requested manual approval of each
 signup.
 
-.. note::
+.. admonition:: Note
+   :class: note
 
-    Unsure about what this means? Check the :doc:`portal security policy section </configuring_domain/01_managing_security/portal>`!
+   Unsure about what this means? Check the :doc:`portal security policy section </configuring_domain/01_managing_security/portal>`!
 
 You'll find access requests in your portal's backoffice, within the **Users & groups** section. If you have pending
 access requests, their number will show up in a notification right within the menu.

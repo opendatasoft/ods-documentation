@@ -7,10 +7,10 @@ There are 3 different methods to add data to a dataset:
 * by connecting the platform to a remote service (e.g. an API, a geographical information system, an FTP, etc.): it enables the platform to retrieve what that the remote service contains while staying synchronized with it
 * by pasting data and uploading it into the platform
 
-.. admonition:: Supported file formats
+.. admonition:: Important
    :class: important
 
-   Before sourcing data and particularly files into the platform, you might want to check the formats supported by the OpenDataSoft platform (see :doc:`Supported formats</publishing_data/01_creating_a_dataset/supported_formats>`).
+   Before sourcing data and particularly files into the platform, check the formats supported by the OpenDataSoft platform (see :doc:`Supported formats</publishing_data/01_creating_a_dataset/supported_formats>`).
 
 
 Uploading a file
@@ -24,12 +24,14 @@ This method consists in directly uploading a file into the platform, in order to
 4. Choose the file to upload into the platform.
 5. Click on the **Open** button of the file selection window.
 
-.. admonition:: File size limit
+.. admonition:: Caution
    :class: caution
 
    The size limit for a file is 240Mo. If your file is too big you can compress it before uploading it in the platform (see :ref:`Supported compressed file formats<supportedcompressedformats>`).
 
-.. note::
+.. admonition:: Note
+   :class: note
+
    It is possible to simply drag and drop the file after steps 1 and 2, instead of following the whole file selection procedure.
 
 
@@ -43,7 +45,7 @@ This method consists in connecting the platform to:
 * either a remote server via its URL, to import files stored on this remote server
 * or, a remote data source exposing data records over an API
 
-.. admonition:: Scheduling updates and pushing real-time data
+.. admonition:: Note
    :class: note
 
    These connections with the platform allow the automation of data update, by scheduling or pushing real-time data (see :doc:`Keeping data up to date</publishing_data/03_scheduling_updates/scheduling_updates>`).
@@ -60,12 +62,12 @@ OpenDataSoft supports the following protocols:
 * http and https, which link to a single file (e.g. http://example.org/mydata.csv)
 * ftp and  ftps, which link to a single file (e.g. ftp://example.org/my_dir/mydata.csv) or to a directory (e.g. ftp://example.org/my_dir/). Using a directory is often the prefered solution to automate incremental updates between a customer's information system and the platform. All the files in the directory need to have the same format and schema (e.g. CSV files with the same column titles). In case of automation, whenever the dataset is published, new and updated files are fetched from the remote location and processed and thanks to OpenDataSoft's native deduplication strategy, similar records are not processed twice (see :doc:`Special fields documentation</publishing_data/05_processing_data/defining_a_dataset_schema>`).
 
-.. admonition:: Deleted files in FTP server
+.. admonition:: Important
    :class: important
 
    When synchronizing from a remote FTP location, OpenDataSoft keeps a persistent cache and does not automatically prune files missing from the remote directory. Please contact OpenDataSoft's support if you need some cleanup to be performed.
 
-.. admonition:: SFTP protocol
+.. admonition:: Caution
    :class: caution
 
    We do not support the sftp protocol, which is completely different from the ftps protocol.
@@ -88,13 +90,15 @@ OpenDataSoft natively supports the following APIs:
    connectors/salesforce
    connectors/wfs
 
-.. admonition:: Connectors activation
+.. admonition:: Important
    :class: important
 
    Contact your local support team to get these connectors activated on your domain.
 
-.. note::
-    OpenDataSoft can also develop and integrate customer specific Web APIs. OpenDataSoft connectivity toolkit makes it possible to develop performant and secured connectors supporting incremental data processing.
+.. admonition:: Note
+   :class: note
+
+   OpenDataSoft can also develop and integrate customer specific Web APIs. OpenDataSoft connectivity toolkit makes it possible to develop performant and secured connectors supporting incremental data processing.
 
 .. ifconfig:: language == 'en'
 

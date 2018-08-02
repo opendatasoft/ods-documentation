@@ -1,7 +1,8 @@
 Configuring the table view
 ==========================
 
-.. note::
+.. admonition:: Note
+   :class: note
 
    The table view is always available on all non-empty datasets.
 

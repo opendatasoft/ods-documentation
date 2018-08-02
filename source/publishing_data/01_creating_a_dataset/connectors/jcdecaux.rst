@@ -27,6 +27,7 @@ Creation
 Enter *jcdecaux://bicycles/data* in the URL box.
 
 
-.. note::
-    The JCDecaux Bike Stations datasets is available on our `data portal <https://data.opendatasoft.com/explore/dataset/jcdecaux_bike_data@public/>`_.
-    You can easily federate it to use the data.
+.. admonition:: Note
+   :class: note
+
+   The JCDecaux Bike Stations datasets is available on our `data portal <https://data.opendatasoft.com/explore/dataset/jcdecaux_bike_data@public/>`_. You can easily federate it to use the data.
