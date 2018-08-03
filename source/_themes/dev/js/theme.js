@@ -191,18 +191,18 @@ function ThemeNav() {
     };
 
     nav.hashChange = function (element) {
-        this.linkScroll = true;
-        this.win.one('hashchange', function () {
-            this.linkScroll = false;
-        });
+        // this.linkScroll = true;
+        // this.win.one('hashchange', function () {
+        //     this.linkScroll = false;
+        // });
 
         var target = element[0].attributes.href.nodeValue;
 
-        if (target === '#') return null;
+        if (target === '#' || target.indexOf('.html') > -1) return null;
         else {
-            res_target = $('#' + target.split('#')[1]).offset().top;
+            var res_target = $(target).offset().top;
             setTimeout(function () {
-                $('html').animate({ scrollTop: res_target - 110 }, 0);
+                $('html, body').animate({ scrollTop: res_target - 110 }, 0);
             }, 0);
         }
     };
@@ -220,6 +220,7 @@ function ThemeNav() {
     }
 
     return nav;
+
 };
 
 module.exports.ThemeNav = ThemeNav();
