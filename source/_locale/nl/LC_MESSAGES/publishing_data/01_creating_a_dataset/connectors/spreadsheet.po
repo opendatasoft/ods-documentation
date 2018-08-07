@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 13:46+0200\n"
+"POT-Creation-Date: 2018-07-12 15:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2018\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
@@ -63,7 +63,6 @@ msgid "Column titles will be used as field names."
 msgstr "Titels van kolommen zullen worden gebruikt als veldnamen."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/spreadsheet.rst:21
-#: ../../source/publishing_data/01_creating_a_dataset/connectors/spreadsheet.rst:24
 msgid "``true`` or ``false``"
 msgstr "\"waar\" of \"onwaar\""
 
@@ -72,8 +71,16 @@ msgid "First line number"
 msgstr "Nummer van de eerste lijn"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/spreadsheet.rst:23
-msgid "Skip a fix number of rows at the beginning of the file."
-msgstr "Sla een vast aantal rijen aan het begin van het bestand over."
+msgid ""
+"All the rows from the beginning of the file to this line number will be "
+"skipped."
+msgstr ""
+"Alle rijen vanaf het begin van het bestand tot dit lijnnummer zullen worden "
+"overgeslagen."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/spreadsheet.rst:24
+msgid "number"
+msgstr "aantal"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/spreadsheet.rst:25
 msgid "Sheet number"
@@ -81,12 +88,13 @@ msgstr "Bladnummer"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/spreadsheet.rst:26
 msgid ""
-"The number of the sheet to work on. Can be a range with the ``[0-2]`` "
-"notation or a list of sheets separated by a ``,``."
+"The number of the sheet to work on. Can be a range with the ``[1-3]`` "
+"notation, a list of sheets separated by a ``,``, or a ``*`` (all sheets)."
 msgstr ""
-"De nummer van het blad waarop moet worden gewerkt. Kan een bereik zijn "
-"tussen `[0-2]` of een lijst bladen gescheiden door een ``,``."
+"Het nummer van het blad om op te werken. Kan een bereik zijn met de "
+"aantekening ``[1-3]``, een lijst met bladen die gescheiden worden door een "
+"``,``, of een ``*`` (alle bladen)."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/spreadsheet.rst:27
-msgid "``0`` or ``[0-2]`` or ``0,1,2``"
-msgstr "``0`` of ``[0-2]`` of ``0,1,2``"
+msgid "``1`` or ``[1-3]`` or ``1,2,3`` or ``*``"
+msgstr "``1`` of ``[1-3]`` of ``1,2,3`` of ``*``"

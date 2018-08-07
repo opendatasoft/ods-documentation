@@ -44,7 +44,5 @@ This documentation is OpenDataSoft's reference user manual.
    :caption: Other resources
    :maxdepth: 1
 
-   other_resources/faq/faq
-   other_resources/glossary/platform_glossary
    other_resources/pictograms_reference/pictograms_reference
    other_resources/accessibility/accessibility

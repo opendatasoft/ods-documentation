@@ -1,0 +1,54 @@
+{% block header %}
+    <div class="ods__documentation-header">
+
+        <div class="ods__documentation-header-logo">
+            <button type="button" id="nav-button" data-toggle="wy-nav-top"> Menu </button>
+            <img src="{{ pathto('_static/' + logo, 1) }}" alt="OpenDataSoft Documentation Logo">
+            <button type="button" id="help-hub-button"> Help Hub </button>
+        </div>
+
+        <div class="ods__documentation-header-nav">
+            <div class="ods__documentation-header-nav-item">
+                <a href="/">Help Hub</a>
+            </div>
+            <div class="ods__documentation-header-nav-item ods__documentation-header-nav-item-active">
+                <a href="{{ pathto(master_doc) }}">Platform</a>
+            </div>
+            <div class="ods__documentation-header-nav-item">
+                <a href="https://discovery.opendatasoft.com/">Discovery</a>
+            </div>
+            <div class="ods__documentation-header-nav-item">
+                <a href="/faq-glossary/en/">FAQ</a>
+            </div>
+            <div class="ods__documentation-header-nav-item">
+                <a href="/widgets/">Widgets</a>
+            </div>
+            <div class="ods__documentation-header-nav-item">
+                <a href="/en/apis/">APIs</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ods__documentation-help-hub-sidebar">
+        <div class="ods__documentation-help-hub-sidebar-item">
+            <a href="/">Help Hub</a>
+        </div>
+        <div class="ods__documentation-help-hub-sidebar-item ods__documentation-header-nav-item-active">
+            <a href="{{ pathto(master_doc) }}">Platform</a>
+        </div>
+        <div class="ods__documentation-help-hub-sidebar-item">
+            <a href="https://discovery.opendatasoft.com/">Discovery</a>
+        </div>
+        <div class="ods__documentation-help-hub-sidebar-item">
+            <a href="/faq-glossary/en/">FAQ</a>
+        </div>
+        <div class="ods__documentation-help-hub-sidebar-item">
+            <a href="/widgets/">Widgets</a>
+        </div>
+        <div class="ods__documentation-help-hub-sidebar-item">
+            <a href="/en/apis/">APIs</a>
+        </div>
+    </div>
+
+{% endblock %}

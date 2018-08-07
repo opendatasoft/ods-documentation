@@ -1,0 +1,429 @@
+body, h1, h2, h3, p, a
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif!important
+  
+.wy-affix
+  position: fixed
+  top: $gutter
+
+.wy-menu
+  a:hover
+    text-decoration: none
+
+.wy-menu-horiz
+  +clearfix
+  ul, li
+    display: inline-block
+  li:hover
+    background: rgba(255,255,255,.1)
+  li
+    &.divide-left
+      border-left: solid 1px hsl(0, 0%, 25%)
+    &.divide-right
+      border-right: solid 1px hsl(0, 0%, 25%)
+  a
+    height: $base-font-size * 2
+    display: inline-block
+    line-height: $base-font-size * 2
+    padding: 0 $base-font-size
+
+.wy-menu-vertical
+  width: $nav-desktop-width
+  padding-bottom: 80px
+  header, p.caption
+    height: $base-font-size * 2
+    display: inline-block
+    line-height: $base-font-size * 2
+    padding: 0 24px
+    margin: 10px 0
+    display: block
+    font-weight: bold
+    text-transform: uppercase
+    font-size: 16px
+    color: #b3b3b3
+    white-space: nowrap
+
+  ul
+    margin-bottom: 0
+  li
+    &.divide-top
+      border-top: solid 1px hsl(0, 0%, 25%)
+    &.divide-bottom
+      border-bottom: solid 1px hsl(0, 0%, 25%)
+    &.current
+      a
+        color: $grey-dark
+        border-right: solid 1px darken($menu-vertical-background-color, 20%)
+        padding: $gutter / 4 $gutter * 1.5
+        &:hover
+          background: $blue-light!important
+          color: white!important
+    code
+      border: none
+      background: inherit
+      color: inherit
+      padding-left: 0
+      padding-right: 0
+    // Expand links
+    span.toctree-expand
+      display: none!important
+      float: left
+      margin-left: -1.2em
+      @extend .fa
+      @extend .fa-plus-square-o
+      font-size: .8em
+      line-height: 1.6em
+      color: darken($menu-link-medium, 20%)
+
+  // On state for the first level
+  li.on a, li.current > a
+    padding: $gutter / 4 $gutter
+    font-weight: bold
+    position: relative
+    border: none
+    padding-left: $gutter -4px
+    +font-smooth
+    &:hover
+      background: $blue-light
+      span.toctree-expand
+        color: white
+    span.toctree-expand
+      @extend .fa
+      @extend .fa-minus-square-o
+      display: block
+      font-size: .8em
+      line-height: 1.6em
+      color: $grey-dark
+
+  // This is the on state for pages beyond second level
+  li.toctree-l1.current li.toctree-l2, li.toctree-l2.current li.toctree-l3
+    > ul
+      display: none
+    &.current > ul
+      display: block
+  li.toctree-l2
+    &.current
+      > a
+        padding: $gutter / 4 $gutter * 1.5
+      li.toctree-l3 > a
+        display: block
+        color: $grey-dark
+        padding: $gutter / 4 $gutter * 2.5
+    a:hover span.toctree-expand
+      color: white
+      background: $blue-light
+    span.toctree-expand
+      color: $grey-dark
+  li.toctree-l3
+    font-size: .9em
+    &.current
+      > a
+        padding: $gutter / 4 $gutter * 2.5
+      li.toctree-l4 > a
+        display: block
+        color: $grey-dark
+        padding: $gutter / 4 $gutter * 3.5
+    a:hover span.toctree-expand
+      color: white
+      background: $blue-light
+    span.toctree-expand
+      color: $grey-dark
+  li.toctree-l4
+    font-size: .9em
+    &.current
+      > a
+        padding: $gutter / 4 $gutter * 2.5
+      a:hover span.toctree-expand
+        color: white
+        background: $blue-light
+      span.toctree-expand
+        color: $grey-dark
+
+  li.current ul
+    display: block
+  li ul
+    margin-bottom: 0
+    display: none
+  .local-toc
+    li ul
+      display: block
+  li ul li a
+    margin-bottom: 0
+    color: $menu-link-light
+    font-weight: normal
+  a
+    display: inline-block
+    line-height: 18px
+    padding: $gutter / 4 $gutter
+    display: block
+    position: relative
+    font-size: 90%
+    color: $grey-dark
+    &:hover
+      background-color: $blue-light
+      cursor: pointer
+      color: white
+      span.toctree-expand
+        color: white
+    &:active
+      cursor: pointer
+      span.toctree-expand
+        color: $grey-dark
+
+.current-active
+  background-color: $blue-ultra-light!important
+  & > a
+    background-color: $blue-light!important
+    color: white!important
+    span.toctree-expand
+        color: white!important
+  & > ul
+    background-color: $blue-ultra-light!important
+
+.wy-side-nav-search
+  display: block
+  width: $nav-desktop-width
+  padding: $gutter / 2
+  z-index: $z-index-popover
+  background-color: white
+  text-align: center
+  padding: $gutter / 2
+  display: block
+  color: $grey-dark
+  margin-bottom: 0
+  margin-top: 5px
+  input[type=text]
+    width: 100%
+    border-radius: 50px
+    padding: 6px 20px
+    border-color: transparentize($grey-dark, 0.6)
+  img
+    display: none
+    margin: auto auto $gutter / 2 auto
+    height: 45px
+    width: 45px
+    background-color: $menu-logo-color
+    padding: 5px
+    border-radius: 100%
+  > a, .wy-dropdown > a
+    color: $nav-search-color
+    font-size: 100%
+    font-weight: bold
+    display: none
+    padding: $base-line-height / 6 $base-line-height / 4
+    margin-bottom: $gutter / 2
+    +font-smooth
+    &:hover
+      background: rgba(255,255,255,.1)
+    img.logo
+      display: block  // display on its own line all the time
+      margin: 0 auto
+      height: auto  // undo badge styling above
+      width: auto
+      border-radius: 0
+      max-width: 100%  // shrink on mobile, if appropriate
+      background: rgba(0,0,0,0)  // make hover background of parent show up properly
+    &.icon
+      img.logo
+        margin-top: 0.85em  // space it away from the title text
+  > div.version
+    margin-top: -1 * ($gutter / 4)
+    margin-bottom: $gutter / 2
+    font-weight: normal
+    color: rgba(255,255,255,.3)
+    display: none
+
+.wy-nav .wy-menu-vertical
+  header
+    color: $link-color
+  a
+    color: $text-light
+    &:hover
+      background-color: $link-color
+      color: $white
+
+[data-menu-wrap]
+  +transition(all .2s ease-in)
+  position: absolute
+  opacity: 1
+  width: 100%
+  opacity: 0
+  &.move-center
+    left: 0
+    right: auto
+    opacity: 1
+  &.move-left
+    right: auto
+    left: -100%
+    opacity: 0
+  &.move-right
+    right: -100%
+    left: auto
+    opacity: 0
+
+.wy-body-for-nav
+  background: $section-background-color
+
+.wy-grid-for-nav
+  position: absolute
+  width: 100%
+  top: 100px
+
+.wy-nav-side
+  position: fixed
+  top: 100px
+  bottom: 0
+  left: 0
+  width: $nav-desktop-width
+  overflow-x: hidden
+  overflow-y: hidden
+  background: white
+  z-index: $z-index-popover
+
+.wy-side-scroll
+  width: $nav-desktop-width + 20px
+  position: relative
+  overflow-x: hidden
+  overflow-y: scroll
+  height: 100%
+  -webkit-overflow-scrolling: touch
+
+.wy-nav-top
+  display: none
+  background: $link-color
+  color: $white
+  padding: $gutter / 4 $gutter / 2
+  position: relative
+  line-height: 50px
+  text-align: center
+  font-size: 100%
+  +clearfix
+  a
+    color: $white
+    font-weight: bold
+    +font-smooth
+  img
+    margin-right: $base-line-height / 2
+    height: 45px
+    width: 45px
+    background-color: $menu-logo-color
+    padding: 5px
+    border-radius: 100%
+  i
+    font-size: 30px
+    float: left
+    cursor: pointer
+    padding-top: inherit
+
+code,
+.rst-content tt,
+.rst-content code
+  white-space: pre-wrap
+  word-break: break-all
+
+.wy-nav-content-wrap
+  margin-left: $nav-desktop-width
+  background: $section-background-color
+  min-height: 100%
+  left: 0
+  border-left: 1px solid transparentize($grey-medium, 0.6)
+  a
+    word-break: break-all
+
+.wy-nav-content
+  padding: $gutter $gutter * 2
+  height: 100%
+  max-width: 60%
+  margin: auto
+@media screen and (min-width: 930px) and (max-width: 1099px)
+  .wy-nav-content
+    padding: 1.618em 0
+    max-width: 80%
+
+.wy-body-mask
+  position: fixed
+  width: 100%
+  height: 100%
+  background: rgba(0,0,0,.2)
+  display: none
+  z-index: $z-index-modal - 1
+  &.on
+    display: block
+footer
+  color: $footer-color
+  p
+    margin-bottom: $base-line-height / 2
+  span.commit code
+    padding: 0px
+    font-size: 1em
+    background: none
+    border: none
+    color: $footer-color
+
+.rst-footer-buttons
+  &:before, &:after
+    width: 100%
+  +clearfix
+
+.rst-breadcrumbs-buttons
+  margin-top: 12px
+  +clearfix
+
+#search-results
+  .search li
+    margin-bottom: $base-line-height
+    border-bottom: solid 1px $table_border_color
+    padding-bottom: $base-line-height
+  .search li:first-child
+    border-top: solid 1px $table_border_color
+    padding-top: $base-line-height
+  .search li a
+    font-size: 120%
+    margin-bottom: $base-line-height / 2
+    display: inline-block
+  .context
+    color: $text-medium
+    font-size: 90%
+
+@media screen and (max-width: $tablet-width)
+  .wy-body-for-nav
+    background: $section-background-color
+  .wy-nav-top
+    display: block
+  .wy-nav-side
+    transition: 0.5s
+    @if $nav-desktop-position == left
+      left: -$nav-desktop-width
+    @else
+      right: -$nav-desktop-width
+    &.shift
+      width: 300px
+      left: 0
+  .wy-side-scroll
+    width: auto
+  .wy-side-nav-search
+    width: auto
+  .wy-menu.wy-menu-vertical
+    width: auto
+  .wy-nav-content-wrap
+    transition: 0.5s
+    margin-left: 0
+    width: 100%
+    .wy-nav-content
+      max-width: 80%
+      padding: 1.618em 0
+    &.shift
+      overflow: hidden
+
+@media screen and (min-width: $nav-media-query)
+  .wy-nav-content
+    margin: 0
+    background: $section-background-color
+  .wy-side-nav-search
+    margin-bottom: $gutter / 2
+    margin-top: 10px
+
+@media print
+  .rst-versions, footer, .wy-nav-side
+    display: none
+  .wy-nav-content-wrap
+    margin-left: 0
