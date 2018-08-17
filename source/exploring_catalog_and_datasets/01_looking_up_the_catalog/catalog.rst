@@ -50,6 +50,8 @@ B. 1. Click the |icon-seemore| button to display all available sorting methods.
 
 Once the new sorting method is chosen, the catalog automatically updates.
 
+.. _filtering-catalog:
+
 Filtering the catalog
 ---------------------
 
