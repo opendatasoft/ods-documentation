@@ -1,7 +1,7 @@
 Navigating the catalog
 ======================
 
-The dataset catalog of an OpenDataSoft portal is accessible from the front office for all users allowed on the portal (e.g. for open portals it could be anyone wheareas for private portals it should be only authenticated users).
+The dataset catalog of an OpenDataSoft portal is accessible from the front office for all users allowed on the portal (i.e. for open portals it could be anyone wheareas for private portals it should be only authenticated users).
 
 The catalog, depending on the portal, can be the default landing page of that portal. However, if that portal has another page as default landing page (e.g. a homepage), a link to the catalog should be in the navigation bar at the very top of the front office. Since this navigation bar is fully customizable, the label of the link to access the catalog can be different from one portal to another (very often, "Data", "Catalog", "Explore" or "Datasets" used as labels).
 
@@ -14,15 +14,15 @@ On the left side (1), are displayed:
 
 - the number of datasets currently displayed,
 - a catalog sort option to change the order of the datasets,
-- a variety of filters for the catalog to find specific datasets,
+- a variety of catalog filters to find specific datasets,
 - different possibilities to download the catalog.
 
-On the right side (2), are displayed the datasets. Each dataset is represented as a rectangle called a "catalog card". On each card, the dataset's main metadata are displayed, along with quick links to visualize the data.
+On the right side (2), are displayed the datasets. Each dataset is represented by a rectangle called a "catalog card". On each card, the dataset's main metadata are displayed, along with quick links to visualize the data.
 
 Sorting the catalog
 -------------------
 
-By default, a dataset catalog is sorted by last modification date: in other words, the most recently modified datasets are displayed in first position, at the top of the catalog.
+By default, a dataset catalog is sorted by last modification date (i.e. the most recently modified datasets are displayed in first position, at the top of the catalog).
 
 It is possible to change in which order the catalog cards are displayed with the catalog sorting option below the number of datasets, on the left side of the interface.
 
@@ -32,7 +32,7 @@ It is possible to change in which order the catalog cards are displayed with the
 The catalog can be sorted by 10 different methods:
 
 - *Alphabetically* (one of the 3 most popular methods "A-Z"): the datasets are sorted by their titles, in an alphabetical order.
-- *Unalphabetically*: the datasets are sorted by their titles, in an unalphabetical order.
+- *Unalphabetically*: the datasets are sorted by their titles, in a reverse alphabetical order.
 - *Recently modified first* (one of the 3 most popular methods "Modified"): the datasets are sorted from the most recently modified to the least recently modified.
 - *Least mostly modified first*: the datasets are sorted from the least recently modified to the most recently modified.
 - *Most records first*: the datasets are sorted from the one with the biggest amount of records to the one with the least records.
