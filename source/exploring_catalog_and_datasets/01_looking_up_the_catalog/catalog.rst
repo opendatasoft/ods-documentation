@@ -3,16 +3,16 @@ Navigating the catalog
 
 The dataset catalog of an OpenDataSoft portal is accessible from the front office for all users allowed on the portal (i.e. for open portals it could be anyone wheareas for private portals it should be only authenticated users).
 
-The catalog, depending on the portal, can be the default landing page of that portal. However, if that portal has another page as default landing page (e.g. a homepage), a link to the catalog should be in the navigation bar at the very top of the front office. Since this navigation bar is fully customizable, the label of the link to access the catalog can be different from one portal to another (very often, "Data", "Catalog", "Explore" or "Datasets" used as labels).
+On most portals, the catalog is the landing page. However, if the default landing page has been changed to a custom page, the link to the catalog can often be found in the navigation bar at the very top of the front office. Since this navigation bar is fully customizable, the label of the link to access the catalog can be different from one portal to another (very often, "Data", "Catalog", "Explore" or "Datasets" are used as labels).
 
-The structure of a dataset catalog however remains the same no matter the portal.
+The structure of a dataset catalog remains the same no matter the portal.
 
 .. image:: images/catalog_fullinterface.png
    :alt: Full interface of the catalog, with both sides
 
 On the left side (1), are displayed:
 
-- the number of datasets currently displayed,
+- the number of available datasets,
 - a catalog sort option to change the order of the datasets,
 - a variety of catalog filters to find specific datasets,
 - different possibilities to download the catalog.
@@ -29,24 +29,21 @@ It is possible to change in which order the catalog cards are displayed with the
 .. image:: images/catalog_sort.png
    :alt: Catalog sorting option
 
-The catalog can be sorted by 10 different methods:
+The catalog can be sorted by a total of 10 methods. These methods are based on 5 sorting criterias, each being available in both increasing and decreasing order.
 
-- *Alphabetically* (one of the 3 most popular methods "A-Z"): the datasets are sorted by their titles, in an alphabetical order.
-- *Unalphabetically*: the datasets are sorted by their titles, in a reverse alphabetical order.
-- *Recently modified first* (one of the 3 most popular methods "Modified"): the datasets are sorted from the most recently modified to the least recently modified.
-- *Least mostly modified first*: the datasets are sorted from the least recently modified to the most recently modified.
-- *Most records first*: the datasets are sorted from the one with the biggest amount of records to the one with the least records.
-- *Least records first*: the datasets are sorted from the one with the least records to the one with the biggest amount of records.
-- *Most downloads first*: the datasets are sorted from the most downloaded one to the least downloaded.
-- *Least downloads first*: the datasets are sorted from the least downloaded one to the most downloaded.
-- *Most popular first* (one of the 3 most popular methods "Popular"): the datasets are sorted from the most popular one to the least popular.
-- *Least popular first*: the datasets are sorted from the least popular one to the least popular.
+- Dataset title: to sort the datasets in alphabetical order or reverse alphabetical order
+- Modification date: to sort the datasets by most recent or oldest modification date
+- Number of records: to sort the datasets by biggest or fewest number of records
+- Number of downloads: to sort the datasets by biggest or fewest number of downloads
+- Popularity: to sort the datasets from the most or least popular
 
 To modify the sorting method, 2 possibilities:
 
 A. Click one of the 3 most popular methods: "Modified", "Popular", "A-Z".
-B. 1. Click the |icon-seemore| button to display all available sorting methods.
-   2. Click the chosen sorting method in the list.
+B. Use one of the other methods:
+
+  #. Click the |icon-seemore| button to display all available sorting methods.
+  #. Click the chosen sorting method in the list.
 
 Once the new sorting method is chosen, the catalog automatically updates.
 
@@ -85,6 +82,11 @@ To make a textual search:
 1. Click on the search bar area.
 2. Type the word to search in the datasets.
 3. Press enter for the search to be taken into account, and the catalog filtered according to the typed word.
+
+.. admonition:: Note
+   :class: note
+
+   It is possible to make more advanced searches with the search bar, using Query language (more info in the :doc:`Searching the data documentation </exploring_catalog_and_datasets/03_searching_the_data/search>`).
 
 Using the mini map
 ^^^^^^^^^^^^^^^^^^
@@ -140,10 +142,15 @@ It is possible to download the catalog in the following formats:
 - RDF (XML)
 - RSS feed
 
+.. admonition:: Note
+   :class: note
+
+   Using the `OpenDataSoft API <https://help.opendatasoft.com/en/apis/>`_, it is possible to download the catalog in JSON and data.json.
+
 Exploring a dataset from the catalog
 ------------------------------------
 
-Once the right dataset of the catalog has been found, through the searching and filtering options or by scrolling down, it should be time to explore this dataset to see the data and their visualizations.
+Once the right dataset has been found in the catalog, through the searching and filtering options or by scrolling down, it should be time to explore this dataset to see the data and their visualizations.
 
 .. image:: images/catalog_card.png
    :alt: Catalog card of a dataset from a catalog
@@ -163,7 +170,9 @@ From the catalog interface, only the catalog card of the dataset is displayed. T
    :class: note
 
    Less information can be displayed: it depends on which metadata have been set before the dataset was published.
-   For the links, more or less links can also be available: it depends on which visualizations and tabs are available for the dataset.
+   For the links to the visualizations and tabs of the dataset, more or less can be available: it depends on which visualizations and tabs are available for the dataset.
+
+   Note also that the catalog cards can be completely customized by the portal administrators.
 
 To see more of the dataset, either click the catalog card or any of the links to directly access a precise visualization or tab. From the interface dedicated to the dataset, it is possible to:
 
