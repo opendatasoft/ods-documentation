@@ -17,7 +17,6 @@ Supported file formats
    connectors/json
    connectors/kml
    connectors/mapinfo
-   connectors/netatmo
    connectors/osm
    connectors/shapefile
    connectors/spreadsheet
