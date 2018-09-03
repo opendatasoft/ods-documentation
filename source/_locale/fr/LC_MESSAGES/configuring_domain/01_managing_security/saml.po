@@ -1,0 +1,598 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-12 15:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2018\n"
+"Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:2
+msgid "Federate identity with SAML"
+msgstr "Fédérer les identités avec SAML"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:4
+msgid ""
+"Some organizations already have a user directory service that manages their "
+"users authentication and permission, and see little value in using the built"
+" in OpenDataSoft user management features. In order to address this use "
+"case, the OpenDataSoft platform supports external Identity Providers (IdP) "
+"through the SAMLv2 standard. This allows for setting up an identity "
+"federation between your domain, which will act as a service provider, and "
+"this IdP. This federation allows users of your domain to connect to the "
+"platform using the identity provider, and if they have one, reuse their "
+"active security context to create a SSO mechanism. Such a federation permits"
+" user access through 2 different modes: the transient mode, where users are "
+"created on the fly when validated by the IdP, and the linked mode, where an "
+"OpenDataSoft user account is linked to a SAML identity through a set of "
+"properties known by the IdP. Those two modes can coexist on a domain, but a "
+"single user can only connect through one mode."
+msgstr ""
+"Certaines organisations disposent déjà d'un service de répertoire "
+"d'utilisateurs qui gère l'authentification et les permissions de leurs "
+"utilisateurs. Elles ne voient pas les avantages que peuvent apporter les "
+"fonctionnalités de gestion des utilisateurs intégrées à OpenDataSoft. Afin "
+"de répondre à ce cas d'utilisation, la plateforme OpenDataSoft prend en "
+"charge les fournisseurs d'identité (IdP) externes à l'aide de la norme "
+"SAMLv2. Il est ainsi possible de mettre en œuvre une fédération des "
+"identités entre votre domaine, qui fera office de fournisseur de services, "
+"et cet IdP. Cette fédération permettra aux utilisateurs de votre domaine de "
+"se connecter à la plateforme via le fournisseur d'identité, et, le cas "
+"échéant de réutiliser leur connexion active auprès de celui-ci afin de créer"
+" une authentification unique (SSO). Ce type de fédération permettra un accès"
+" des utilisateurs selon 2 modes différents : le mode transient, avec lequel "
+"les utilisateurs sont créés à la volée une fois qu'ils sont validés par "
+"l'IdP, et le mode lié, avec lequel un compte utilisateur OpenDataSoft est "
+"lié à une identité SAML via un ensemble de propriétés connues par l'IdP. Ces"
+" deux modes peuvent coexister au sein d'un domaine, cependant un utilisateur"
+" peut se connecter par l'un ou l'autre de ces deux modes uniquement."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:7
+msgid "Transient mode"
+msgstr "Mode transient"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:9
+msgid ""
+"In the transient mode, every user that has a user account on the IdP trusted"
+" by a domain, and doesn't have a OpenDataSoft user account can connect "
+"through SAML. A transient user will be created for the user, based on SAML "
+"settings for the domain. These settings are the account mapper (the set of "
+"IdP-sent parameters that uniquely identify a user) and the the attribute "
+"mapper (the parameters that correspond to the user first name, last name and"
+" email address). These transient users have the permission to explore the "
+"public datasets of the domain. Extra permissions can be given to these users"
+" by using the generic ``SAML users`` group. Transient users may not be "
+"assigned any special permissions on individual datasets or added to groups "
+"(other than the ``SAML users`` group, of which they are automatic members)."
+msgstr ""
+"En mode transient, chaque utilisateur disposant d'un compte utilisateur "
+"auprès de l'IdP approuvé par un domaine, mais ne disposant pas d'un compte "
+"utilisateur OpenDataSoft, peut se connecter via le protocole SAML. Un "
+"utilisateur transient sera créé pour l'utilisateur, en se basant sur les "
+"paramètres SAML du domaine. Ces paramètres sont le mappeur de comptes "
+"(l'ensemble des paramètres envoyés par l'IdP permettant d'identifier un "
+"utilisateur unique) et le mappeur d'attributs (les paramètres correspondant "
+"au prénom, au nom de famille et à l'adresse e-mail de l'utilisateur). Ces "
+"utilisateurs transients disposent des permissions pour explorer les jeux de "
+"données publics du domaine. Des permissions supplémentaires peuvent être "
+"octroyées à ces utilisateurs en utilisant le groupe générique ``Utilisateurs"
+" SAML``. Les utilisateurs transients ne peuvent pas disposer de permissions "
+"relatives à des jeux de données individuels ni être ajoutés à des groupes "
+"(autres que le groupe ``Utilisateurs SAML``, auquel ils sont automatiquement"
+" ajoutés)."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:11
+msgid ""
+"The transient mode can be disabled altogether using the \"Disable transient "
+"authentication mode\" checkbox in the SAML configuration. If transient mode "
+"is disabled, only linked users will be able to connect through SAML."
+msgstr ""
+"Le mode transient peut être complètement désactivé grâce à l'option "
+"\"Désactiver l'authentification en mode transient\" dans la configuration "
+"SAML. Si le mode transient est désactivé, seuls les utilisateurs liés "
+"pourront se connecter via SAML."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:14
+msgid "Linked mode"
+msgstr "Mode lié"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:16
+msgid ""
+"In the linked mode, users that have an OpenDataSoft user account can link "
+"this account to particular values of the set of parameters defined in the "
+"account mapper setting. After the link has been established, users who log "
+"in through SAML will be logged to their OpenDataSoft user account. Linked "
+"users may be assigned the same permissions and added to groups just like "
+"normal users (as they are normal users). They are also automatic members of "
+"the ``SAML users`` group. This mode allows a more fine-grained permission "
+"control, while retaining most of the advantages of the transient mode. The "
+"only drawback is the necessity for users to create an account on the domain "
+"before linking it to their SAML identity. There are two method for linking "
+"an OpenDataSoft user account. The first one is to click on ``Link your "
+"account to a SAML account on this domain`` in the identity tab of the user "
+"account settings."
+msgstr ""
+"En mode lié, les utilisateurs disposant d'un compte utilisateur OpenDataSoft"
+" peuvent lier ce dernier à des valeurs spécifiques de l'ensemble de "
+"paramètres définis dans la configuration du mappeur de comptes. Une fois la "
+"liaison établie, les utilisateurs qui s'identifient via le protocole SAML "
+"seront identifiés avec leur compte utilisateur OpenDataSoft. Les "
+"utilisateurs liés peuvent se voir octroyer les mêmes permissions et être "
+"ajoutés aux mêmes groupes que les utilisateurs normaux (car ils sont des "
+"utilisateurs normaux). En outre, ils sont automatiquement ajoutés au groupe "
+"``Utilisateurs SAML``. Ce mode permet un contrôle plus précis des "
+"permissions, tout en conservant la plupart des avantages que propose le mode"
+" transient. Le seul inconvénient est qu'il est nécessaire pour les "
+"utilisateurs de créer un compte sur le domaine avant de le lier à leur "
+"identité SAML. Il existe deux méthodes pour lier un compte utilisateur "
+"OpenDataSoft. La première consiste à cliquer sur ``Lier votre compte à un "
+"compte SAML sur ce domaine`` dans l'onglet Identité des paramètres de compte"
+" utilisateur."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:21
+msgid ""
+"The other method is to create the link during the user account creation "
+"process, by clicking the link to complete the registration through SAML. "
+"This actually speeds up the user account creation process and allows for a "
+"quick account linking."
+msgstr ""
+"L'autre méthode consiste à établir la liaison lors du processus de création "
+"du compte utilisateur, en cliquant sur le lien permettant de terminer la "
+"création du compte via le protocole SAML. Cette méthode permet d'accélérer "
+"le processus de création du compte utilisateur et de lier rapidement ce "
+"dernier."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:27
+msgid "Automatic Single Sign On"
+msgstr "Authentification unique automatique"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:29
+msgid ""
+"The OpenDataSoft platform offers a mechanism to automatically log in users "
+"when they first visit the domain. It works by starting the SAML "
+"authentication flow for anonymous users, as if they had clicked \"log in "
+"with SAML\", as soon as they encounter (almost) any page in the domain. This"
+" feature only makes sense for private domains as it prevents anonymous "
+"access to the domain. When Automatic Single Sign On is activated, users who "
+"wish to connect to the platform using their OpenDataSoft credentials have "
+"the option to do so by manually visiting the domain login page at ``https"
+"://<platform-url>/login/``"
+msgstr ""
+"La plateforme OpenDataSoft offre un mécanisme d'authentification automatique"
+" des utilisateurs lorsqu'ils visitent le domaine pour la première fois. Le "
+"processus d'authentification SAML sera alors automatiquement démarré pour "
+"les utilisateurs anonymes comme si ils avaient cliqué sur \"Se connecter "
+"avec SAML\", dès lors qu'ils arrivent sur la plupart des pages du domaine. "
+"Cette fonctionnalité n'a de sens que pour les domaines privés car cela "
+"bloque l'accès anonyme au domaine. Lorsque l'authentification unique est "
+"active, les utilisateurs qui souhaitent se connecter à la plateforme avec "
+"leurs identifiants OpenDataSoft auront la possibilité de le faire en se "
+"rendant sur la page de connection ``https:///login/``"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:33
+msgid "Single Log Out"
+msgstr "Déconnexion unique"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:35
+msgid ""
+"The OpenDataSoft platform supports the standard SAML Single Log Out flow "
+"using the HTTP-Redirect binding. That means that if the IdP supports it, a "
+"log out from a SAML-connected user will trigger a log out from the IdP, and "
+"log out requests from the IdP will trigger a log out of the user on the "
+"platform."
+msgstr ""
+"La plateforme OpenDataSoft supporte le processus standard de déconnexion "
+"unique SAML via le binding HTTP-Redirect. Cela signifie que si le "
+"fournisseur d'identité le permet, la déconnexion d'un utilisateur connecté "
+"via SAML déclenche une déconnexion du fournisseur d'identité, et une "
+"déconnexion depuis le fournisseur d'identité déclenche une déconnexion de "
+"l'utilisateur sur la plateforme."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:39
+msgid "Register and configure an identity provider"
+msgstr "Configurer son domaine avec un fournisseur d'identité"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:41
+msgid "Navigate to the signup page in the domain configuration interface."
+msgstr "Rendez vous sur la page de configuration des intégrations du domaine."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:46
+msgid "Check \"Allow access for SAML users\""
+msgstr "Activez l'option \"Autoriser l'accès aux utilisateurs SAML\"."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:51
+msgid ""
+"Paste your identity provider metadata document in the \"IDP metadata "
+"document\" field."
+msgstr ""
+"Collez le document de metadata de votre fournisseur d'identité dans le champ"
+" \"Document de metadata de l'IDP\"."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:53
+msgid ""
+"If you are using Microsoft Azure Active Directory as an IDP, check the "
+"related checkbox."
+msgstr ""
+"Si vous utilisez Microsoft Azure Active Directory comme Identity Provider, "
+"cochez la case."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:55
+msgid ""
+"If you wish to disable transient connection mode, thereby making sure only "
+"linked users can connect to the platform through SAML, check the related "
+"checkbox."
+msgstr ""
+"Si vous souhaitez désactiver le mode de connexion transient, et vous assurer"
+" que seuls des utilisateurs liés peuvent se connecter à la plateforme via "
+"SAML, cochez cette case."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:57
+msgid ""
+"Input the set of attributes sent by the IDP that uniquely define a user."
+msgstr ""
+"Renseignez l'ensemble des attributs renvoyés par l'IDP qui définissent de "
+"façon unique un utilisateur."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:59
+msgid ""
+"If the users are defined by their NameID and the NameID format used by your "
+"IdP is not transient, there is no need to fill anything."
+msgstr ""
+"Si les utilisateurs sont définis de façon unique par leur NameID saml, et "
+"que le format du NameID n'est pas transient, il n'est pas nécessaire de "
+"remplir cette option."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:61
+msgid ""
+"For instance, if your users are defined by the attribute \"FirstName\" and "
+"\"LastName\" transmitted by your IdP, first input \"FirstName\" in the box "
+"and press enter, then \"LastName\" and press enter again."
+msgstr ""
+"Par exemple, si vos utilisateurs sont définis par l'attribut \"FirstName\" "
+"et \"LastName\", entrez \"FirstName\" dans la zone de texte, puis validez "
+"avec enter. Entrez ensuite \"LastName\" et validez avec enter."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:63
+msgid ""
+"Input the attributes mappings for the username, last name, first name and "
+"email address."
+msgstr ""
+"Renseignez les mappings d'attributs pour le nom d'utilisateur, le nom de "
+"famille, le prénom et l'adresse email."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:65
+msgid ""
+"Here, you need to declare the fields names as they are sent by the identity "
+"provider."
+msgstr ""
+"Il s'agit ici de remplir les champs correspondant avec le nom de l'attribut "
+"tel qu'envoyé par le fournisseur d'identité."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:67
+msgid ""
+"For instance, if your identity provider transmits the connected user's first"
+" name in an attribute called \"GivenName\", this is what you will need to "
+"type in the \"First name\" field."
+msgstr ""
+"Par exemple, si votre fournisseur d'identité renseigne le prénom de "
+"l'utilisateur qui se connecte en appellant cet attribut \"FirstName\", c'est"
+" ce qu'il faudra écrire dans le champ \"prénom\"."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:70
+msgid ""
+"If for any reason your identity provider doesn't send all of these elements,"
+" let the corresponding fields blank. The platform will automatically "
+"generate them based on other available attributes."
+msgstr ""
+"Si certaines de ces informations ne sont pas fournies par votre fournisseur "
+"d'identité, laissez les champs vides. La plateforme les générera "
+"automatiquement sur base des autres attributs définis."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:73
+msgid "Optionally input an access condition."
+msgstr "Définissez des conditions d'accès éventuelles."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:75
+msgid ""
+"The first box is the name of the attribute to check for, and the second one "
+"the value of that attribute. If you just want to check for the presence of "
+"an attribute, without value restriction, just leave the second box blank."
+msgstr ""
+"La première zone de texte est le nom de l'attribut à vérifier, et la seconde"
+" est la valeur que cet attribut doit prendre. Si vous désirez uniquement "
+"vérifier la présence de l'attribut, vous pouvez ne pas renseigner la seconde"
+" zone de texte."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:78
+msgid ""
+"For instance, if your identity provider sends a list of \"Roles\" for the "
+"users and you want to make sure that only users that have a role can get "
+"access, input \"Roles\" in the first box under \"Conditionnal access\". If "
+"you only want users with the role \"DataAccess\" to be able to connect to "
+"the domain, input \"DataAccess\" in the second box."
+msgstr ""
+"Par exemple, si votre IdP renvoie une liste de \"Roles\" pour les "
+"utilisateurs, et que vous voulez que seuls les utilisateurs qui ont un rôle "
+"puissent se connecter, renseignez \"Roles\" dans la première zone de texte. "
+"Si vous voulez vous assurer que seuls les utilisateurs qui ont le rôle "
+"\"DataAccess\" aient accès au domaine, entrez \"DataAccess\" dans la seconde"
+" zone de texte. "
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:80
+msgid "Optionally configure automatic single sign on"
+msgstr "En option, configurer l'authentification unique"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:82
+msgid ""
+"The automatic single sign on configuration can be found by navigating to the"
+" security page in the domain configuration interface."
+msgstr ""
+"La configuration de connexion unique automatique peut être trouvée en "
+"naviguant dans l'interface de configuration du domaine à la page sécurité."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:88
+msgid "Configure your identity provider"
+msgstr "Configurer le fournisseur d'identité"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:90
+msgid ""
+"The configuration of the identity provider is implementation-dependant, but "
+"it always consist of importing the service provider metadata document to "
+"enable a identity federation."
+msgstr ""
+"La configuration du fournisseur d'identité dépend de l'implémentation de "
+"celui-ci, mais elle consiste toujours en l'import du document de metadata du"
+" fournisseur de service."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:93
+msgid ""
+"You can download the metadata document for your OpenDataSoft domain on "
+"``https://<YOUR DOMAIN>.opendatasoft.com/saml2/metadata.xml``"
+msgstr ""
+"Vous pouvez télécharger le document de metadata du fournisseur de services "
+"OpenDataSoft en vous rendant sur ``https://<VOTRE "
+"DOMAINE>.opendatasoft.com/saml2/metadata.xml``"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:98
+msgid "Using user attributes to filter data"
+msgstr "Utilisation des attributs utilisateur pour filtrer des données"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:100
+msgid ""
+"Through the #attr function, it is possible to filter a dataset records in "
+"such a way that the only records returned are the ones that match a value "
+"set in the user attributes sent by the IdP. For the following examples, we "
+"assume that we have the 3 users, with respective usernames and SAML "
+"attributes ``user-country`` and ``user-language`` given by the following "
+"table."
+msgstr ""
+"La fonction #attr vous permet de filtrer les enregistrements d'un jeu de "
+"données de façon que seuls les enregistrements renvoyés soient ceux qui "
+"correspondent à une valeur définie dans les attributs utilisateur envoyés "
+"par l'IDP. Dans les exemples suivants, nous partons du principe que nous "
+"avons 3 utilisateurs avec des noms d'utilisateur et attributs SAML "
+"respectifs \"user-country\" et \"user-language\" indiqués dans le tableau "
+"suivant."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:105
+msgid "User"
+msgstr "Utilisateur"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:106
+msgid "user-country"
+msgstr "user-country"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:107
+msgid "user-language"
+msgstr "user-language"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:108
+msgid "User1"
+msgstr "Utilisateur1"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:109
+#: ../../source/configuring_domain/01_managing_security/saml.rst:130
+#: ../../source/configuring_domain/01_managing_security/saml.rst:153
+#: ../../source/configuring_domain/01_managing_security/saml.rst:194
+#: ../../source/configuring_domain/01_managing_security/saml.rst:209
+#: ../../source/configuring_domain/01_managing_security/saml.rst:241
+msgid "France"
+msgstr "France"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:110
+#: ../../source/configuring_domain/01_managing_security/saml.rst:113
+#: ../../source/configuring_domain/01_managing_security/saml.rst:131
+#: ../../source/configuring_domain/01_managing_security/saml.rst:134
+#: ../../source/configuring_domain/01_managing_security/saml.rst:154
+#: ../../source/configuring_domain/01_managing_security/saml.rst:166
+#: ../../source/configuring_domain/01_managing_security/saml.rst:195
+#: ../../source/configuring_domain/01_managing_security/saml.rst:198
+#: ../../source/configuring_domain/01_managing_security/saml.rst:210
+#: ../../source/configuring_domain/01_managing_security/saml.rst:213
+#: ../../source/configuring_domain/01_managing_security/saml.rst:242
+#: ../../source/configuring_domain/01_managing_security/saml.rst:254
+msgid "French"
+msgstr "Français"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:111
+msgid "User2"
+msgstr "Utilisateur2"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:112
+#: ../../source/configuring_domain/01_managing_security/saml.rst:133
+#: ../../source/configuring_domain/01_managing_security/saml.rst:136
+#: ../../source/configuring_domain/01_managing_security/saml.rst:165
+#: ../../source/configuring_domain/01_managing_security/saml.rst:168
+#: ../../source/configuring_domain/01_managing_security/saml.rst:197
+#: ../../source/configuring_domain/01_managing_security/saml.rst:212
+#: ../../source/configuring_domain/01_managing_security/saml.rst:253
+msgid "Canada"
+msgstr "Canada"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:114
+msgid "User3"
+msgstr "Utilisateur3"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:115
+#: ../../source/configuring_domain/01_managing_security/saml.rst:139
+#: ../../source/configuring_domain/01_managing_security/saml.rst:180
+#: ../../source/configuring_domain/01_managing_security/saml.rst:227
+#: ../../source/configuring_domain/01_managing_security/saml.rst:265
+msgid "United States"
+msgstr "États-Unis"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:116
+#: ../../source/configuring_domain/01_managing_security/saml.rst:128
+#: ../../source/configuring_domain/01_managing_security/saml.rst:137
+#: ../../source/configuring_domain/01_managing_security/saml.rst:140
+#: ../../source/configuring_domain/01_managing_security/saml.rst:169
+#: ../../source/configuring_domain/01_managing_security/saml.rst:181
+#: ../../source/configuring_domain/01_managing_security/saml.rst:225
+#: ../../source/configuring_domain/01_managing_security/saml.rst:228
+#: ../../source/configuring_domain/01_managing_security/saml.rst:266
+msgid "English"
+msgstr "Anglais"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:119
+msgid "And a dataset with records given by the following table."
+msgstr ""
+"Et un jeu de données avec des enregistrements indiqués par le tableau "
+"suivant."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:124
+#: ../../source/configuring_domain/01_managing_security/saml.rst:150
+#: ../../source/configuring_domain/01_managing_security/saml.rst:162
+#: ../../source/configuring_domain/01_managing_security/saml.rst:177
+#: ../../source/configuring_domain/01_managing_security/saml.rst:191
+#: ../../source/configuring_domain/01_managing_security/saml.rst:206
+#: ../../source/configuring_domain/01_managing_security/saml.rst:221
+#: ../../source/configuring_domain/01_managing_security/saml.rst:238
+#: ../../source/configuring_domain/01_managing_security/saml.rst:250
+#: ../../source/configuring_domain/01_managing_security/saml.rst:262
+msgid "country"
+msgstr "pays"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:125
+#: ../../source/configuring_domain/01_managing_security/saml.rst:151
+#: ../../source/configuring_domain/01_managing_security/saml.rst:163
+#: ../../source/configuring_domain/01_managing_security/saml.rst:178
+#: ../../source/configuring_domain/01_managing_security/saml.rst:192
+#: ../../source/configuring_domain/01_managing_security/saml.rst:207
+#: ../../source/configuring_domain/01_managing_security/saml.rst:222
+#: ../../source/configuring_domain/01_managing_security/saml.rst:239
+#: ../../source/configuring_domain/01_managing_security/saml.rst:251
+#: ../../source/configuring_domain/01_managing_security/saml.rst:263
+msgid "language"
+msgstr "language"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:126
+#: ../../source/configuring_domain/01_managing_security/saml.rst:152
+#: ../../source/configuring_domain/01_managing_security/saml.rst:164
+#: ../../source/configuring_domain/01_managing_security/saml.rst:179
+#: ../../source/configuring_domain/01_managing_security/saml.rst:193
+#: ../../source/configuring_domain/01_managing_security/saml.rst:208
+#: ../../source/configuring_domain/01_managing_security/saml.rst:223
+#: ../../source/configuring_domain/01_managing_security/saml.rst:240
+#: ../../source/configuring_domain/01_managing_security/saml.rst:252
+#: ../../source/configuring_domain/01_managing_security/saml.rst:264
+msgid "message"
+msgstr "message"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:127
+#: ../../source/configuring_domain/01_managing_security/saml.rst:224
+msgid "Worldwide"
+msgstr "Monde"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:129
+#: ../../source/configuring_domain/01_managing_security/saml.rst:226
+msgid "Hello world"
+msgstr "Hello world"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:132
+#: ../../source/configuring_domain/01_managing_security/saml.rst:155
+#: ../../source/configuring_domain/01_managing_security/saml.rst:196
+#: ../../source/configuring_domain/01_managing_security/saml.rst:211
+#: ../../source/configuring_domain/01_managing_security/saml.rst:243
+msgid "Bonjour à tous les Français"
+msgstr "Bonjour à tous les Français"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:135
+#: ../../source/configuring_domain/01_managing_security/saml.rst:167
+#: ../../source/configuring_domain/01_managing_security/saml.rst:199
+#: ../../source/configuring_domain/01_managing_security/saml.rst:214
+#: ../../source/configuring_domain/01_managing_security/saml.rst:255
+msgid "Bonjour à tous les Canadiens"
+msgstr "Bonjour à tous les Canadiens"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:138
+#: ../../source/configuring_domain/01_managing_security/saml.rst:170
+msgid "Hello to all Canadians"
+msgstr "Hello to all Canadians"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:141
+#: ../../source/configuring_domain/01_managing_security/saml.rst:182
+#: ../../source/configuring_domain/01_managing_security/saml.rst:229
+#: ../../source/configuring_domain/01_managing_security/saml.rst:267
+msgid "Hello to all Americans"
+msgstr "Hello to all Americans"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:143
+msgid ""
+"We can restrict these users so that they see only messages that apply to "
+"their respective countries, with the query ``#attr(country, user-country)``."
+msgstr ""
+"Nous pouvons limiter ces utilisateurs de façon qu'ils voient uniquement les "
+"messages concernant leur pays respectif en utilisant la requête "
+"\"#attr(country, user-country)\"."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:145
+#: ../../source/configuring_domain/01_managing_security/saml.rst:186
+#: ../../source/configuring_domain/01_managing_security/saml.rst:233
+msgid "User1 sees"
+msgstr "Utilisateur1 voit"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:157
+#: ../../source/configuring_domain/01_managing_security/saml.rst:201
+#: ../../source/configuring_domain/01_managing_security/saml.rst:245
+msgid "User2 sees"
+msgstr "Utilisateur2 voit"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:172
+#: ../../source/configuring_domain/01_managing_security/saml.rst:216
+#: ../../source/configuring_domain/01_managing_security/saml.rst:257
+msgid "User3 sees"
+msgstr "Utilisateur3 voit"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:184
+msgid ""
+"We can also restrict these users so that they only see messages that are in "
+"their respective language, with the query ``#attr(language, user-"
+"language)``."
+msgstr ""
+"Nous pouvons également limiter ces utilisateurs de façon qu'ils voient "
+"uniquement les messages dans leur langue respective en utilisant la requête "
+"\"#attr(language, user-language)\"."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:231
+msgid ""
+"Since it is a function of the query language, it can also be grouped with "
+"the usual operators, for instance, we can restrict users to only seeing "
+"messages that fit their country and languages with the query "
+"``#attr(language, user-language) AND #attr(country, user-country)``."
+msgstr ""
+"Cette fonction étant propre au langage de requête, elle peut également être "
+"combinée aux opérateurs habituels. Nous pouvons, par exemple, limiter les "
+"utilisateurs de façon qu'ils voient uniquement les messages adaptés à leur "
+"pays et à leur langue en utilisant la requête \"#attr(language, user-"
+"language) AND #attr(country, user-country)\"."

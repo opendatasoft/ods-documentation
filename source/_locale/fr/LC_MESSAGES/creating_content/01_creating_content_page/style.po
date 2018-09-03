@@ -1,0 +1,226 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-12 15:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2018\n"
+"Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:2
+msgid "Customize a content page with HTML and CSS"
+msgstr "Personnaliser une page de contenu grâce au HTML et à la CSS"
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:4
+msgid ""
+"Once you have created a simple page using one of the predefined templates, "
+"you may want to go further. Maybe you want to add a new block below, or add "
+"a large centered header at the top?"
+msgstr ""
+"Une fois que vous avez créé une page simple à l'aide des modèles prédéfinis,"
+" vous pouvez aller plus loin. Vous pouvez, par exemple, ajouter un nouveau "
+"bloc en dessous ou un grand en-tête centré en haut de la page."
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:7
+msgid ""
+"Switching to the **expert mode** lets you edit directly the underlying "
+"language behind the page, which is the HTML and CSS code."
+msgstr ""
+"Le **mode expert** vous permet d'éditer directement le langage sous-jacent "
+"de la page, donc les codes HTML et CSS."
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:9
+msgid ""
+"HTML and CSS are the languages behind every web page; you can do very "
+"advanced things with it, but at their core, they are designed to be "
+"expressive and easy to learn. After playing with it a bit, you usually can "
+"do simple things like changing the layout of your page, changing the size of"
+" your text..."
+msgstr ""
+"Le HTML et la CSS sont la base de toutes les pages Web : il est possible de "
+"faire des choses très complexes avec mais, au départ, ils sont conçus pour "
+"être explicites et faciles à utiliser. Après avoir pris vos marques, vous "
+"serez en mesure de faire des choses simples comme changer la disposition de "
+"votre page ou encore la taille de la police de votre texte."
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:13
+msgid ""
+"In this article, we'll walk you through a few basic changes to a standard "
+"page template. We do not aim to teach HTML and CSS, as other resources will "
+"do this much better than us; however, these are examples that you can start "
+"from and expand upon."
+msgstr ""
+"Dans cet article, nous allons vous expliquer comment faire quelques "
+"changements de base sur un modèle de page. Nous n'avons pas pour objectif de"
+" vous enseigner tout ce qu'il y a à savoir sur le HTML et la CSS, car "
+"d'autres le font bien mieux que nous, mais nous vous proposons quelques "
+"exemples à partir desquels vous pourrez développer vos connaissances."
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:16
+msgid ""
+"First, let's create a new page based on the \"Main block + right column\" "
+"template, as seen in the :doc:`Creating a simple content page <create>` "
+"article. Then, switch to **expert mode** using the link in the top right of "
+"the interface. You now have two \"CSS\" and \"HTML\" tabs, containing the "
+"code behing the page."
+msgstr ""
+"Commençons par créer une page sur la base du modèle \"Main block + right "
+"column\" (Bloc principal + colonne de droite), comme vu dans l'article "
+":doc:`Créer une page de contenu simple <create>`. Passons ensuite en **mode "
+"expert** grâce au lien dans le coin supérieur droit de l'interface. Vous "
+"voyez désormais deux onglets, \"CSS\" et \"HTML\", qui contiennent le code "
+"de la page."
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:19
+msgid ""
+"The CSS tab is empty for now, as there is no specific CSS code. However, the"
+" HTML of the page is here:"
+msgstr ""
+"L'onglet CSS est vide pour le moment, car il n'y a pas de code CSS "
+"spécifique. En revanche le code HTML de la page est bien là :"
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:31
+msgid "Adding a new row"
+msgstr "Ajouter une ligne"
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:33
+msgid ""
+"Each ``<div>`` tag represents a block in the page; the class attached to "
+"each block defines its appearance, like its width."
+msgstr ""
+"Chaque tag ``<div>`` représente un bloc de la page ; la classe liée à chaque"
+" bloc définit son apparence, sa largeur par exemple."
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:44
+msgid "More precisely:"
+msgstr "Plus précisément :"
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:36
+msgid ""
+"``<div class=\"container-fluid\">`` is the block around the entire page, "
+"making sure it takes all the available width in the browser"
+msgstr ""
+"``<div class=\"container-fluid\">`` est un bloc entourant toute la page pour"
+" faire en sorte qu'elle occupe toute la largeur d'affichage disponible."
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:37
+msgid ""
+"``<div class=\"row\">`` represents a row, which in turns contains other "
+"blocks. By reasoning using \"rows\", we make sure our blocks don't mix up if"
+" one is larger than the others."
+msgstr ""
+"``<div class=\"row\">`` représente une ligne qui contient d'autres blocs. En"
+" raisonnant en termes de \"lignes\", nous nous assurons que les blocs ne se "
+"superposent pas si il y en a un plus grand que les autres."
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:39
+msgid ""
+"``<div class=\"col-md-8\">`` and ``<div class=\"col-md-4\">`` are two blocks"
+" containing the \"real\" content (text for example). The idea with the "
+"classes ``col-md-8`` and ``col-md-4`` is to think of the available space in "
+"each row as a grid of 12 \"cells\"; your blocks inside this row can take a "
+"total amount of 12 cells, and each blocks uses ``col-md-X`` where X is the "
+"amount of cells it will take. So, here we wanted one blocks taking two "
+"thirds of the space, and another block taking one third, so we used 8 and 4 "
+"to divide the available 12 cells. All this logic (named \"grid\" logic) is "
+"detailed in the :doc:`Designing a responsive portal "
+"</customizing_look_and_feel/07_designing_responsive_portal/responsive>` "
+"article."
+msgstr ""
+"``<div class=\"col-md-8\">`` et ``<div class=\"col-md-4\">`` sont deux blocs"
+" qui contiennent le contenu \"réel\" (le texte par exemple). Le principe "
+"avec les classes ``col-md-8`` et ``col-md-4`` est de considérer chaque ligne"
+" comme une grille à 12 \"cellules\" ; les blocs de cette ligne ne peuvent "
+"pas dépasser un total de 12 cellules et chaque bloc utilise ``col-md-X``, où"
+" X correspond au nombre de cellules que le bloc occupera. Ici, nous voulions"
+" qu'un bloc occupe les deux tiers de l'espace et qu'un autre bloc occupe le "
+"tiers restant. Nous avons donc divisé les 12 cellules disponibles en 8 et 4."
+" L'intégralité de cette logique (nommée \"logique des grilles\") est "
+"détaillée dans l'article :doc:`Concevoir un portail responsive "
+"</customizing_look_and_feel/07_designing_responsive_portal/responsive>`."
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:44
+msgid ""
+"``<div class=\"ods-box\">`` just creates a visual block with a border and a "
+"background, more suitable to contain text."
+msgstr ""
+"``<div class=\"ods-box\">`` crée simplement un bloc visuel avec des bordures"
+" et un fond, plus adapté à contenir du texte."
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:46
+msgid ""
+"Now we want to add a new line of three blocks, each taking a third of the "
+"space. Following our previous logic, we add a new row, and three blocks "
+"taking each 4 cells."
+msgstr ""
+"Ajoutons désormais une nouvelle ligne avec trois blocs, qui occupent chacun "
+"un tiers de l'espace. En suivant la même logique que précédemment, nous "
+"ajoutons une nouvelle ligne puis trois blocs occupant 4 cellules chacun."
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:63
+msgid "Our preview now looks like this:"
+msgstr "Voici un aperçu du résultat :"
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:74
+msgid "Setting a basic style"
+msgstr "Configurer un style simple"
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:76
+msgid ""
+"CSS code can be used to change the way your content is displayed: you can "
+"change the size of the text, add a colored background, borders, change the "
+"color..."
+msgstr ""
+"Le code CSS peut être utilisé pour modifier le mode d'affichage de votre "
+"contenu : vous pouvez changer la taille de la police, ajouter des fonds "
+"colorés ou des bordures ou encore changer les couleurs."
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:79
+msgid ""
+"There are multiple ways to apply CSS \"rules\" to an element of your page, "
+"but a good practice to keep in mind is to always use \"classes\": by adding "
+"`class=\"myclass\"` to an element in your page, you attach a \"class\" to "
+"your element, and then you can write rules for that class in your CSS style."
+" This way, you can apply the same class to various elements, and if you "
+"change your page, the rules will still apply to your element."
+msgstr ""
+"Il y a plusieurs manières d'appliquer des \"règles\" CSS aux éléments de "
+"votre page, mais il est conseillé de toujours utiliser des \"classes\" : en "
+"ajoutant `class=\"myclass\"` à un élément de votre page, vous y attachez une"
+" \"classe\". Cela vous permettra par la suite d'écrire des règles pour cette"
+" classe dans votre style CSS. Vous pouvez ainsi appliquer la même classe à "
+"plusieurs éléments, et même si vous modifiez votre page les règles "
+"continueront de s'appliquer aux éléments."
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:84
+msgid ""
+"Let's assume we want to make some text larger than usual. First, you need to"
+" add a class to the element containing the text, here, \"Hello world!\":"
+msgstr ""
+"Imaginons que nous voulons faire ressortir un texte en augmentant la taille "
+"de sa police. Vous devez d'abord ajouter une classe à l'élément qui contient"
+" le texte. Dans notre cas, il s'agit de \"Hello world!\" :"
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:102
+msgid ""
+"Then, we just need to add a rules in the CSS code, stating that the class "
+"\"larger-text\" should have a bigger text size:"
+msgstr ""
+"Il nous suffit désormais d'ajouter une règle dans le code CSS, indiquant que"
+" la classe \"larger-text\" doit avoir une taille de police supérieure :"
+
+#: ../../source/creating_content/01_creating_content_page/style.rst:110
+msgid "There are many CSS rules you can add, to any of your elements."
+msgstr ""
+"Il existe de nombreuses règles CSS que vous pouvez ajouter à vos éléments."

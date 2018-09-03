@@ -1,0 +1,579 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-12 15:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2018\n"
+"Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:2
+msgid "Metrics/KPI and Data tables"
+msgstr "Métriques/KPI et tableaux de données"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:4
+msgid ""
+"Charts, Maps, tables, calendar are default views. Lot of additionnal "
+"parameters are waiting for you in the documentation. In the mean time, a lot"
+" of other widgets are as insterested as the main ones."
+msgstr ""
+"Les graphes, les cartes, les tableaux et les calendriers sont les vues par "
+"défaut. Vous découvrirez de nombreux autres paramètres dans cette "
+"documentation. Vous verrez également des widgets moins connus mais tout "
+"aussi intéressants que ceux généralement utilisés."
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:7
+msgid ""
+"Please have a look to the `widget list "
+"</editing_pages/integrate_content.html#widgets-list>`_ for more information."
+msgstr ""
+"Reportez-vous à la `liste des widgets </editing_pages/integrate_content.html"
+"#widgets-list>`_ pour plus d'informations."
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:11
+msgid "Pick up a dataset"
+msgstr "Choisir un jeu de données"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:13
+msgid ""
+"To illustrate metrics, KPI, advanced map tooltips and more, we will use a "
+"dataset that contains all regularity reports from the French Railway Society"
+" since 2011. This dataset contains, for each TGV (High speed train) line "
+"(100 lines), the number of scheduled train per month, the number of trains "
+"that didn't leave the station, and the number of trains in late."
+msgstr ""
+"Pour décrire les métriques, les KPI, les infobulles de cartes avancées, "
+"ainsi que d'autres fonctions, nous utiliserons un jeu de données contenant "
+"tous les rapports de régularité de la SNCF depuis 2011. Ce jeu de données "
+"contient, pour chaque ligne de TGV (100 lignes), le nombre de trains "
+"programmés chaque mois, le nombre de trains annulés et le nombre de trains "
+"en retard à l'arrivée."
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:16
+msgid ""
+"Dataset id : regularite-mensuelle-tgv You can search for it on "
+"`<data.opendatasoft.com>`_ Then add this dataset to your domain (New "
+"dataset, Add a source from OpenDataSoft network, pick the dataset, save, "
+"publish)"
+msgstr ""
+"ID du jeu de données : regularite-mensuelle-tgv Vous pouvez le rechercher "
+"sur `<data.opendatasoft.com>`_ Ajoutez ensuite ce jeu de données sur votre "
+"domaine (Nouveau jeu de données, Ajouter une source depuis le réseau "
+"OpenDataSoft, choisir le jeu de données, enregistrer, publier)"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:22
+msgid "Create some KPIs"
+msgstr "Créer des KPI"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:24
+msgid ""
+"To create metrics / KPI, we use **odsAggregation**, to compute the sum, "
+"average, min, max of a data field. Based on the context, the metric will "
+"update dynamically all along the user navigation (queries, filters)."
+msgstr ""
+"Pour créer des métriques/KPI, nous utilisons la fonction **odsAggregation**,"
+" afin de calculer la somme, la moyenne, la valeur minimale et la valeur "
+"maximale d'un champ de données. En fonction du contexte, la métrique se met "
+"à jour de manière dynamique à mesure que l'utilisateur poursuit sa "
+"navigation (requêtes, filtres)."
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:27
+msgid ""
+"Starting from a new page, let's start by getting a context from this "
+"dataset. The simplest way is to go to the explore/catalog page, go to the "
+"dataset, then in the table view, copy and paste de widget code from the "
+"share links below :"
+msgstr ""
+"Depuis une nouvelle page, commençons par obtenir un contexte à partir de ce "
+"jeu de données. La méthode la plus simple consiste à accéder à la page "
+"d'exploration/du catalogue, puis d'accéder au jeu de données. Ensuite, dans "
+"la vue tableau, copiez et collez le code de widget depuis l'encadré ci-"
+"dessous :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:40
+msgid ""
+"On top of the table view, we will add a counter based on the "
+"``nombre_de_trains_programmes`` field (number of scheduled train). Let's get"
+" the number of trains scheduled since 2011 in France."
+msgstr ""
+"Au-dessus de la vue tableau, nous allons ajouter un compteur basé sur le "
+"champ ``nombre_de_trains_programmes``. Cela nous permettra d'obtenir le "
+"nombre de trains programmés depuis 2011 en France."
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:47
+msgid "With odsAggregation, the parameters are :"
+msgstr "Avec la fonction odsAggregation, les paramètres sont les suivants :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:44
+msgid "the name of the variable that will store aggregation result"
+msgstr "le nom de la variable qui stockera le résultat de l'agrégation"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:45
+msgid "the context to work on"
+msgstr "le contexte sur lequel travailler"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:46
+msgid "the function"
+msgstr "la fonction"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:47
+msgid "the expression (the name of the field)"
+msgstr "l'expression (le nom du champ)"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:49
+msgid ""
+"With a ``number`` filter to display it correctly in an HTML ``span`` you "
+"should have something similar to this :"
+msgstr ""
+"Avec un filtre ``number`` pour un affichage correct dans un tag HTML "
+"``span``, vous devriez obtenir le résultat suivant :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:76
+msgid ""
+"It displays a number (approx. 1.7 millions) at the beginning of the page "
+"that already need some CSS to be highlighted. Metric are often rounded in a "
+"box, with an important font size and weight."
+msgstr ""
+"Un nombre (environ 1,7 million) s'affiche en haut de la page, il nécessite "
+"du code CSS pour le mettre en valeur. Les métriques sont souvent affichées "
+"dans un cadre, avec une grande taille de police et mises en gras."
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:79
+msgid "Add this CSS code to your page :"
+msgstr "Ajoutez ce code CSS à votre page :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:92
+msgid "And add ``kpi`` class to your ``span`` tag."
+msgstr "Ajoutez également la classe ``KPI`` à votre tag ``span``."
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:94
+msgid "Save, refresh, and see that it's a bit better."
+msgstr "Enregistrez, actualisez la page et admirez le résultat."
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:96
+msgid ""
+"Before going further with CSS and specially repsonsive code, let's add 2 "
+"more metrics : number of cancelled train (``nombre_de_trains_annules``) and "
+"number of delayed train (``nombre_de_trains_en_retard_a_l_arrivee``)"
+msgstr ""
+"Avant de poursuivre avec CSS et en particulier avec le code responsive, "
+"ajoutons 2 métriques supplémentaires : ``nombre_de_trains_annules`` et "
+"``nombre_de_trains_en_retard_a_l_arrivee``"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:129
+msgid "Result :"
+msgstr "Résultat :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:133
+msgid ""
+"It works but all metrics are independant. We can add filters to make them "
+"become dynamic depending on user filters etc... but we can't compute any "
+"thing from it. It would be interesting to have the pourcentage of canceled "
+"or delayed train out of the total."
+msgstr ""
+"Cela fonctionne, mais toutes les métriques sont indépendantes. Nous pouvons "
+"ajouter des filtres pour les rendre dynamiques en fonction des filtres des "
+"utilisateurs, etc. mais elles ne peuvent pas être utilisées pour calculer "
+"quoi que ce soit. Il serait intéressant d'obtenir le pourcentage de trains "
+"annulés ou en retard."
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:136
+msgid ""
+"To do this, you must chain ods-aggregation with different variable names."
+msgstr ""
+"Pour cela, vous devez chaîner la fonction ods-aggregation à différents noms "
+"de variables."
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:138
+msgid "It must looks like that :"
+msgstr "Votre code doit ressembler à ceci :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:162
+msgid ""
+"Then, it's now possible, with AngularJS expression, to compute pourcentages "
+"between each values :"
+msgstr ""
+"Il est désormais possible, avec une expression AngularJS, de calculer des "
+"pourcentages parmi les valeurs :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:172
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:368
+msgid "Note"
+msgstr "Remarque"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:175
+msgid ""
+"``| number : 2`` is the AngularJS filter to pretty print numerical values. "
+"The optional parameter ``2`` is to limit to only 2 decimals"
+msgstr ""
+"``| number : 2`` correspond au filtre AngularJS pour imprimer "
+"automatiquement des valeurs numériques. Le paramètre optionnel ``2`` permet "
+"de limiter la valeur à 2 décimales"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:177
+msgid ""
+"Before going further let's clean up the HTML code to be able to apply CSS "
+"for responsive display, different font size between the title and the value "
+"etc... :"
+msgstr ""
+"Avant de poursuivre, nettoyons le code HTML afin de pouvoir appliquer une "
+"CSS pour obtenir un affichage responsive, utiliser des tailles de polices "
+"différentes pour les titres et les valeurs, etc. :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:246
+msgid "And replace the CSS :"
+msgstr "Et remplacez la CSS :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:281
+msgid "Save, refresh, see :"
+msgstr "Enregistrez, actualisez la page et observez le résultat :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:288
+msgid "Colorize your KPI - ng-class"
+msgstr "intégrer un code couleur à la directive ng-class de vos KPI"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:290
+msgid ""
+"``ng-class`` directive is very conveniant when an HTML element must be "
+"styled depending on a value, the context, an expression or all other dynamic"
+" things that can be used in AngularJS expression."
+msgstr ""
+"La directive ``ng-class`` se révèle être très pratique lorsqu'un style doit "
+"être appliqué à un élément HTML en fonction d'une valeur, d'un contexte, "
+"d'une expression ou de tout autre élément dynamique pouvant être utilisé "
+"dans une expression AngularJS."
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:292
+msgid ""
+"For exemple, to define a threshold on our metrics, green if the pourcentage "
+"of canceled trains is below 0,20% and red is it's bigger, add this to your "
+"element :"
+msgstr ""
+"Par exemple, pour définir des couleurs en fonction d'un seuil sur nos "
+"métriques, vert si le pourcentage de trains annulés est inférieur à 0,20 % "
+"et rouge s'il est supérieur, ajoutez ceci à votre élément :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:308
+msgid "And this CSS :"
+msgstr "Et cette CSS :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:328
+msgid ""
+"Save, refresh, and see that our metrics is now red (the `bad` CSS class is "
+"used)"
+msgstr ""
+"Enregistrez, actualisez la page et vous verrez que nos métriques sont "
+"désormais affichées en rouge (la classe `bad` de la CSS est utilisée)"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:361
+msgid ""
+"To clearly see the dynamic behavior, let's add some filters on the left of "
+"the table (on the second line). To do so :"
+msgstr ""
+"Pour observer le comportement dynamique, ajoutons quelques filtres à gauche "
+"du tableau (sur la deuxième ligne). Pour cela :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:331
+msgid "add a ``div`` with the ``row`` class to surround the table"
+msgstr "ajoutez un tag ``div``avec la classe ``row`` autour du tableau"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:332
+msgid "add a ``div`` with ``col-md-9`` around the table"
+msgstr "ajoutez un tag ``div`` avec la classe ``col-md-9`` autour du tableau"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:333
+msgid ""
+"add a ``ods-facets`` widgets with 2 ``ods-facet`` for filters ``date`` and "
+"``depart``"
+msgstr ""
+"ajoutez un widget ``ods-facets`` contenant 2 facettes ``ods-facet`` pour les"
+" filtres ``date`` et ``depart``"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:334
+msgid "surround ``ods-facets`` with a ``div`` styled with ``col-md-3``"
+msgstr ""
+"entourez les ``ods-facets`` d'un tag ``div`` avec le style ``col-md-3``"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:335
+msgid ""
+"optionnaly add some ``ods-box`` styled ``div`` to surround blocks with a "
+"white background"
+msgstr ""
+"si vous le souhaitez, ajoutez des tags ``div`` avec le style ``ods-box`` "
+"pour entourer les blocs avec un fond blanc"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:337
+msgid "It should looks like this :"
+msgstr "Votre code devrait ressembler à ceci :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:363
+msgid ""
+"Save, refresh, and see how it behave when filters are selected, In 2013, "
+"Paris EST Station had less than 0,20% of canceled train. Have it a look."
+msgstr ""
+"Enregistrez, actualisez la page et observez comment les métriques se "
+"comportent lorsque des filtres sont sélectionnés. En 2013, moins de 0,20 % "
+"des trains au départ de la gare Paris EST ont été annulés. Prenez le temps "
+"d'observer les effets des filtres sur les métriques."
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:373
+msgid ""
+"``ng-class`` syntax is, surround by brackets, the CSS class in quotes "
+"followed by ``:`` then the AngularJS expression :"
+msgstr ""
+"La syntaxe de la directive ``ng-class`` est, entre accolades, la classe CSS "
+"entre guillemets simples suivie de deux points ``:``, puis l'expression "
+"AngularJS :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:372
+msgid "``{ 'CSS class' : AngularJS expression, ... }``"
+msgstr "``{ 'classe CSS' : expression AngularJS, ... }``"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:374
+msgid ""
+"Several classes and expression can be specified, all the expressions will be"
+" tested, from left to right."
+msgstr ""
+"Plusieurs classes et expressions peuvent être spécifiées, toutes les "
+"expressions seront testées, de gauche à droite."
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:378
+msgid "Compare with filters : highlight differences with colors"
+msgstr ""
+"Faire des comparaisons à l'aide de filtres : mettre en valeur les "
+"différences avec des couleurs"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:380
+msgid ""
+"It's interresting to compare the full dataset, and a filtered view by the "
+"user and see if the metrics (specially pourcentages) are differents, bigger "
+"or smaller."
+msgstr ""
+"Il est intéressant de comparer l'ensemble du jeu de données avec une vue sur"
+" laquelle sont appliqués les filtres de l'utilisateur, afin de voir si les "
+"métriques (en particulier les pourcentages) varient à la hausse ou à la "
+"baisse."
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:382
+msgid ""
+"The plan is to have 2 contexts, one that will represent the full dataset, "
+"and one that can be filtered by the user. Once a filter is applied, if the "
+"metric is bigger or smaller that the full dataset metric, it will be "
+"highlighted by a color."
+msgstr ""
+"L'idée consiste à avoir 2 contextes, le premier représentant le jeu de "
+"données dans son intégralité, et le second pouvant être filtré par "
+"l'utilisateur. Lorsqu'un filtre est appliqué, si la métrique est supérieure "
+"ou inférieure à la métrique du jeu de données complet, elle sera affichée "
+"dans une couleur différente."
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:390
+msgid "To do so, you will need :"
+msgstr "Pour cela, vous devez :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:386
+msgid "a secondary context"
+msgstr "disposer d'un contexte secondaire"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:387
+msgid "plug ``ods-facets`` and ``ods-table`` on this secondary context"
+msgstr "injecter ``ods-facets`` et ``ods-table`` sur ce contexte secondaire"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:388
+msgid "compute the same metrics for both contexts"
+msgstr "calculer les mêmes métriques sur les deux contextes"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:389
+msgid "add the secondary metric IF and ONLY IF a filter is selected"
+msgstr ""
+"ajouter la métrique du contexte secondaire SI et SEULEMENT SI un filtre a "
+"été sélectionné"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:390
+msgid "configure the ``ng-class`` to compare full and filtered metric"
+msgstr ""
+"configurer la directive ``ng-class`` pour comparer le jeu de données complet"
+" et les métriques sur lesquelles sont appliqués des filtres"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:392
+msgid "Let's go."
+msgstr "C'est parti !"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:394
+msgid "Two contexts, one dataset :"
+msgstr "Deux contextes, un jeu de données :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:403
+msgid "Metrics full blocks should looks like this now :"
+msgstr "Les blocs entiers des métriques doivent désormais ressembler à ceci :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:522
+msgid "Adapt CSS by updating or adding these classes :"
+msgstr ""
+"Adaptez la CSS en mettant à jour ou en ajoutant les classes suivantes :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:542
+msgid ""
+"Finally, let's colorize % delayed and % canceled metrics, if the filtered "
+"result is bigger than the total average, show it in red, else, if it's "
+"smaller (better) show it in green."
+msgstr ""
+"Enfin, appliquez un code couleur sur les métriques % en retard et % annulés."
+" Si le résultat des données filtrées est supérieur à la moyenne totale, "
+"affichez-le en rouge, s'il est inférieur (meilleur), affichez-le en vert."
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:580
+msgid "Save, refresh, and test with year 2015 :"
+msgstr "Enregistrez, actualisez la page et faites un essai sur l'année 2015 :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:586
+msgid "Create a data table"
+msgstr "Créer un tableau de données"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:588
+msgid ""
+"``odsAnalysis`` get the analysis of one or several aggregation for each "
+"values if a field. It can be seen exactly like a chart, but instead of "
+"displaying curves, columns or pies, odsAnalysis returns each values, and you"
+" are free to display them in a table or other expression."
+msgstr ""
+"``odsAnalysis`` permet d'obtenir l'analyse d'une ou de plusieurs agrégations"
+" pour chaque valeur d'un champ. Cette fonction peut être apparentée à un "
+"graphe, à la différence qu'elle n'affiche pas des courbes, des colonnes ou "
+"des secteurs, mais renvoie chaque valeur, et vous avez la possibilité "
+"d'afficher ces dernières dans un tableau ou à l'aide d'une autre expression."
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:591
+msgid ""
+"First, we will test the result by seting up the correct analysis in the "
+"analysis tab of the dataset. What could be interresting is to display the "
+"table of the top 10 regularity stations. To do so :"
+msgstr ""
+"Tout d'abord, nous allons tester le résultat en configurant l'analyse "
+"correcte dans l'onglet Analyse du jeu de données. Il peut être intéressant "
+"d'afficher dans un tableau les 10 gares présentant la régularité la plus "
+"élevée. Pour cela, suivez la procédure ci-après :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:599
+msgid "X axis"
+msgstr "Axe X"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:598
+msgid "\"départ\" (origin station)"
+msgstr "\"départ\" (station d'origine)"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:596
+msgid ""
+"4 series : - AVG Regularity (`Régularité`) - AVG Number of shceduled train "
+"(`nombre_de_trains_programmes`) - AVG Number of canceled train "
+"(`nombre_de_trains_annules`) - AVG Number of delayed train "
+"(`nombre_de_trains_en_retard_a_l_arrivee`)"
+msgstr ""
+"4 séries : - AVG régularité (`Régularité`) - AVG nombre de trains programmés"
+" (`nombre_de_trains_programmes`) - AVG nombre de trains annulés "
+"(`nombre_de_trains_annules`) - AVG nombre de trains en retard à l'arrivée "
+"(`nombre_de_trains_en_retard_a_l_arrivee`)"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:601
+msgid "sort by regularity serie"
+msgstr "triez la série par régularité"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:602
+msgid "Number of point : 10 max"
+msgstr "Nombre de points : 10 max."
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:606
+msgid ""
+"The aim is to reproduce this exact analysis with ``odsAnalysis``. As a "
+"reminder, please visit the documentation `here "
+"<http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-"
+"widgets.directive:odsAnalysis>`_"
+msgstr ""
+"L'objectif est de reproduire exactement cette analyse avec ``odsAnalysis``. "
+"Pour rappel, veuillez consulter la documentation `ici "
+"<http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-"
+"widgets.directive:odsAnalysis>`_"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:616
+msgid "``odsAnalysis`` parameters :"
+msgstr "Paramètres ``odsAnalysis`` :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:609
+msgid "ods-analysis : the name of the variable"
+msgstr "ods-analysis : le nom de la variable"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:610
+msgid "ods-analysis-context : the context to work on"
+msgstr "ods-analysis-context : le contexte sur lequel travailler"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:611
+msgid "ods-analysis-max : 10 elements max"
+msgstr "ods-analysis-max : 10 éléments max."
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:612
+msgid ""
+"ods-analysis-x : the field to work on (all aggregation will be computed for "
+"each values of this field)"
+msgstr ""
+"ods-analysis-x : le champ sur lequel travailler (toutes les agrégations "
+"seront calculées pour chaque valeur de ce champ)"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:613
+msgid ""
+"ods-analysis-serie-xxx : define a serie called xxx based on an expression "
+"(the field) and a function (AVG, MAX, MIN, SUM etc...)"
+msgstr ""
+"ods-analysis-serie-xxx : définit une série appelée xxx basée sur une "
+"expression (le champ) et sur une fonction (AVG, MAX, MIN, SUM, etc.)"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:614
+msgid ""
+"ods-analysis-sort : sort on a serie by providing the name or -name to invert"
+" the sorting"
+msgstr ""
+"ods-analysis-sort : permet de trier une série en spécifiant l'argument name,"
+" ou -name pour inverser l'ordre du tri"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:618
+msgid ""
+"Before jumping into the code (HTML) have a look to the result stored into "
+"the variable :"
+msgstr ""
+"Avant de vous plonger dans le code (HTML), observez les résultats stockés "
+"dans la variable :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:637
+msgid "Pretty print the json block :"
+msgstr "Impression automatique du bloc JSON :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:667
+msgid ""
+"We have a results json list, each block has an x value, the origin station, "
+"and 4 aggregations/values that correspond to our series. AngularJS directive"
+" ``ng-repeat`` allow to iterate over the ``results`` list. For each element,"
+" we print a new line in the table."
+msgstr ""
+"Nous avons une liste de résultats au format JSON, chaque bloc présente une "
+"valeur de x, la gare de départ, et 4 agrégations/valeurs correspondant à nos"
+" séries. La directive AngularJS ``ng-repeat`` permet de réaliser une "
+"itération sur la liste ``results``. Pour chaque élément, nous imprimons une "
+"nouvelle ligne dans le tableau."
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:720
+msgid "Some CSS to render the HTML table nicely :"
+msgstr "Un peu de CSS pour un beau rendu du tableau en HTML :"
+
+#: ../../source/creating_content/tutorials/advanced_dashboard/advanced_dashboard.rst:748
+msgid "Save, refresh, play with filters :"
+msgstr "Enregistrez, actualisez la page et jouez avec les filtres :"

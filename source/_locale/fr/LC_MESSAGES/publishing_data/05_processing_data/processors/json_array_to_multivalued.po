@@ -1,0 +1,203 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-12 15:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2018\n"
+"Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:2
+msgid "JSON array to multivalued"
+msgstr "Tableau JSON vers multivalué"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:4
+msgid ""
+"This processor extracts multiple values from a field containing a JSON array"
+" and concatenates them into a multivalued field."
+msgstr ""
+"Ce processeur extrait les différentes valeurs d'un champ contenant un "
+"tableau JSON et les concatène dans un champ à valeurs multiples."
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:6
+msgid "Note"
+msgstr "Remarque"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:9
+msgid ""
+"The ``multivalued`` property will not be set automatically in the field, so "
+"don't forget to enable it on the field's parameters, along with the same "
+"separator as in the processor."
+msgstr ""
+"La propriété ``multivalued`` ne sera pas définie automatiquement dans le "
+"champ. Par conséquent, n'oubliez pas de l'activer dans les paramètres du "
+"champ et d'utiliser les mêmes séparateurs que dans le processeur."
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:12
+msgid "Original value"
+msgstr "Valeur d'origine"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:12
+msgid "After processor"
+msgstr "Après le processeur"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:14
+msgid "``{\"a\":[\"b\",\"c\",\"d\"]}``"
+msgstr "``{\"a\":[\"b\",\"c\",\"d\"]}``"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:14
+msgid "``b,c,d``"
+msgstr "``b,c,d``"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:18
+msgid "Setting the processor"
+msgstr "Configurer le processeur"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:20
+msgid ""
+"The parameter \"iJSON rule to array\" works exactly like in the \"Extract "
+"from JSON\" processor and should contain the array to concatenate "
+"(represented with the iJSON rule ``.item``)."
+msgstr ""
+"Le paramètre \"Règle iJSON vers tableau\" fonctionne exactement de la même "
+"manière que dans le processeur \"Extraire depuis un objet JSON\" et doit "
+"contenir le tableau à concaténer (représenté par la règle iJSON ``.item``)."
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:22
+msgid ""
+"If the field contains the JSON array directly, just put ``item`` as an iJSON"
+" rule."
+msgstr ""
+"Si le champ contient directement le tableau JSON, ajoutez simplement "
+"``.item`` en tant que règle iJSON."
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:23
+msgid ""
+"If the final element is an array, the iJSON rule must end with ``.item``, "
+"meaning that the reached object should be treated as an array of items in "
+"the iJSON syntax."
+msgstr ""
+"Si l'élément final est un tableau, la règle iJSON doit se terminer par "
+"``.item``, ce qui signifie que l'objet atteint doit toujours être traité "
+"comme un tableau d'éléments dans la syntaxe iJSON."
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:24
+msgid ""
+"If you want to keep going into the items inside the array, you can keep "
+"adding key names after the ``.item``, but be careful to check that this path"
+" is valid for every object in the array."
+msgstr ""
+"Si vous souhaitez continuer à énumérer les articles dans le tableau, vous "
+"pouvez continuer à ajouter des noms de clé après ``.item``. Veillez "
+"toutefois à vous assurer que ce chemin d'accès est valide pour chaque objet "
+"dans le tableau."
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:26
+msgid ""
+"To set the parameters of the JSON array to multivalued processor, follow the"
+" indications from the table below."
+msgstr ""
+"Pour définir les paramètres du processeur Tableau JSON vers multivalué, "
+"suivez les indications du tableau ci-dessous."
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:31
+msgid "Label"
+msgstr "Label"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:32
+msgid "Description"
+msgstr "Description"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:33
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:48
+msgid "Example"
+msgstr "Exemple"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:34
+msgid "Field"
+msgstr "Champ"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:35
+msgid "Name of the field that holds the JSON array"
+msgstr "Nom du champ contenant le tableau JSON"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:36
+msgid "data"
+msgstr "data"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:37
+msgid "iJSON rule to array"
+msgstr "Règle iJSON vers tableau"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:38
+msgid ""
+"iJSON rule to iterate in the JSON array above. An iJSON rule is built with "
+"the names of all the field from the JSON root to the data to extract, "
+"separated with a dot. The position of the array is indicated with the "
+"``item`` keyword."
+msgstr ""
+"Règle iJSON à itérer dans le tableau JSON ci-dessus. Une règle iJSON se "
+"construit avec les noms de tous les champs de la racine JSON des données à "
+"extraire, séparés par des points. La position du tableau est indiquée par le"
+" mot-clé ``item``."
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:39
+msgid "item.metaB"
+msgstr "item.metaB"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:40
+msgid "Separator"
+msgstr "Séparateur"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:41
+msgid "Character or string used to separate the different values found"
+msgstr ""
+"Caractère ou chaîne de caractères utilisé pour séparer les différentes "
+"valeurs trouvées"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:42
+msgid ","
+msgstr ","
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:43
+msgid "Output field"
+msgstr "Champ de sortie"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:44
+msgid "Name of the field that will contain the extracted element"
+msgstr "Nom du champ qui contiendra l'élément extrait"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:50
+msgid "iJSON rules to extract from the following JSON array field:"
+msgstr "Règles iJSON à extraire du champ du tableau JSON suivant :"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:67
+msgid "``item.metaB``: ``value1,value2``"
+msgstr "``item.metaB``: ``value1,value2``"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:68
+msgid "``item.int``: ``5,6``"
+msgstr "``item.int``: ``5,6``"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:69
+msgid "``item.boolean``: ``false,true``"
+msgstr "``item.boolean``: ``false,true``"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:90
+msgid "``bloc.item.metaB``: ``value1,value2``"
+msgstr "``bloc.item.metaB``: ``value1,value2``"
+
+#: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:91
+msgid "``bloc.item.sub.sub_sub``: ``sub_value,other_sub_value``"
+msgstr "``bloc.item.sub.sub_sub``: ``sub_value,other_sub_value``"

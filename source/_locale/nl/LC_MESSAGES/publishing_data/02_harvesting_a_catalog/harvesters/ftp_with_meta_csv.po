@@ -1,0 +1,415 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-12 15:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2018\n"
+"Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:2
+msgid "FTP with meta CSV harvester"
+msgstr "FTP met meta CSV harvester"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:4
+msgid "This harvester allows users to create datasets from an FTP folder."
+msgstr ""
+"Deze harvester laat gebruikers toe om datasets aan te maken vanuit een FTP-"
+"map."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:6
+msgid ""
+"It connects via FTPS (explicit mode on port 21) if available, or FTP if "
+"requested in the provided URL."
+msgstr ""
+"Deze maakt verbinding via FTPS (expliciete modus op poort 21) wanneer dit "
+"beschikbaar is of FTP wanneer dit gevraagd wordt in de meegeleverde URL."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:8
+msgid "The FTP folder must contain:"
+msgstr "De FTP-map moet het volgende bevatten:"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:10
+msgid "one **metadata CSV file** (separated with semicolons)"
+msgstr "één **metadata CSV-bestand** (gescheiden door een punt komma)"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:11
+msgid "several **resources**"
+msgstr "verschillende **bronnen**"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:12
+msgid "(optional) several **CSV schema files**"
+msgstr "(optioneel) verschillende **CSV-schemabestanden**"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:27
+msgid "Metadata CSV file"
+msgstr "Metadata CSV-bestand"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:29
+msgid ""
+"The **metadata CSV file** (named ``index.csv`` by default) is a semicolon "
+"separated file which contains:"
+msgstr ""
+"Het **metadata CSV-bestand** (standaard ``index.csv`` genoemd) is een door "
+"punt komma's gescheden bestand dat het volgende bevat:"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:31
+msgid "one header row"
+msgstr "rij met één header"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:32
+msgid "several other rows, each one dedicated to a dataset to harvest"
+msgstr ""
+"verschillende andere rijen, waarvan elk gewijd is aan een dataset die moet "
+"worden geharvest"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:34
+msgid "**Example:**"
+msgstr "**Voorbeeld:**"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:44
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:87
+msgid "name"
+msgstr "naam"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:44
+msgid "title"
+msgstr "titel"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:44
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:87
+msgid "description"
+msgstr "omschrijving"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:44
+msgid "theme"
+msgstr "thema"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:44
+msgid "keyword"
+msgstr "kernwoord"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:44
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:122
+msgid "source_dataset"
+msgstr "source_dataset"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:44
+msgid "schema_file"
+msgstr "schema_file"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:46
+msgid "chocolate-bars"
+msgstr "chocoladerepen"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:46
+msgid "Chocolate bars database"
+msgstr "Dataset met chocoladerepen"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:46
+msgid "A database of chocolate bars"
+msgstr "Een dataset met chocoladerepen"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:46
+msgid "Health"
+msgstr "Health"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:46
+msgid "Chocolate"
+msgstr "Chocolate"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:46
+msgid "chocolate.csv"
+msgstr "chocolate.csv"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:46
+msgid "schema_chocolate.csv"
+msgstr "schema_chocolate.csv"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:48
+msgid "random-id"
+msgstr "random-id"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:48
+msgid "Venture Capital Investments"
+msgstr "Venture Capital Investments"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:48
+msgid "Venture capital industry statistics."
+msgstr "Statistieken van de durfkapitaalindustrie."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:48
+msgid "Economy, Business"
+msgstr "Economie, zaken"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:48
+msgid "Venture capital;Investments;IPO;Acquisitions"
+msgstr "Venture capital;Investments;IPO;Acquisitions"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:48
+msgid "investments.json"
+msgstr "investments.json"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:51
+msgid ""
+"The ``name`` column contains an identifier for each row. These identifiers "
+"can be anything as long as they only contain letters and numbers, are unique"
+" across the file, and don't change over time."
+msgstr ""
+"De kolom ``name`` bevat een identifier voor elke rij. Deze identifiers "
+"kunnen alles zijn zolang ze enkel letters en cijfers bevatten, uniek zijn in"
+" het hele bestand en na verloop van tijd niet wijzigen."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:52
+msgid ""
+"The **CSV resource column** (``source_dataset`` by default) contains the "
+"resource for each row."
+msgstr ""
+"De **CSV bronkolom** (standaard ``source_dataset``) bevat de bron voor elke "
+"rij."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:53
+msgid ""
+"The optional **CSV shema column** (here, ``schema_file``) contains the "
+"schema file for each row."
+msgstr ""
+"Het optionele  **CSV-schema kolom** (hier ``schema_file``) bevat het "
+"schemabestand voor elke rij."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:54
+msgid ""
+"Every other column is a metadata (e.g: ``title``, ``description``, "
+"``theme``, ``keyword``, ``license``, ``language``, but there are other ones "
+"you can add). Note: use double quotes at the beginning and end of lists like"
+" ``keywords``, where you have to use semicolons to separate words."
+msgstr ""
+"Elke andere kolom is een metadata (bijv. ``title``, ``description``, "
+"``theme``, ``keyword``, ``license``, ``language``, maar er zijn andere die u"
+" kan toevoegen). Opmerking: gebruik dubbele aanhalingstekens bij het begin "
+"en op het einde van lijsten zoals ``keywords``, waarbij u punt komma's moet "
+"gebruiken om woorden van elkaar te scheiden."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:57
+msgid "Resources"
+msgstr "Bronnen"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:59
+msgid "Resources can either be:"
+msgstr "Bronnen kunnen de volgende zijn:"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:61
+msgid ""
+"files on the FTP server, in the same folder as the ``index.csv`` file, or "
+"under a subdirectory by specifying the relative path to the file in the "
+"column (e.g \"resources/chocolate.csv\")"
+msgstr ""
+"bestanden op de FTP-server, in dezelfde map als het ``index.csv``-bestand of"
+" een subdirectory door het relatieve pad te specificeren naar het bestand in"
+" een kolom (bijv. \"resources/chocolate.csv\")"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:62
+msgid "any URL pointing towards a supported format"
+msgstr "elke URL die wijst naar een ondersteund formaat"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:64
+msgid "If the column is empty, the dataset will only contain metadata."
+msgstr "Wanneer de kolom leeg is, zal de dataset enkel metadata bevatten."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:66
+msgid ""
+"Resources in any format supported by the platform can be harvested. However,"
+" as the harvester heavily relies on automatic parameters detection for the "
+"connector's configuration, files must be simple enough to be correctly "
+"extracted."
+msgstr ""
+"Bronnen in elk formaat dat ondersteund wordt door het platform kunnen worden"
+" geharvest. Aangezien de harvester sterk vertrouwt op het detecteren van "
+"automatische parameters voor de configuratie van de connector, moeten "
+"bestanden echter eenvoudig genoeg zijn om correct te worden geëxtraheerd."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:69
+msgid "Schema CSV file"
+msgstr "Schema CSV-bestand"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:71
+msgid ""
+"For each resource, the FTP folder can contain a **CSV schema file** that "
+"defines labels and descriptions for each field of the dataset."
+msgstr ""
+"Voor elke bron kan de FTP-map een **CSV schemabestand** bevatten dat de "
+"labels en omschrijvingen definieert voor elk veld van de dataset."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:73
+msgid ""
+"The filename of each schema file must be written in the **CSV schema "
+"column**. This file has the following specifications:"
+msgstr ""
+"De bestandsnaam van elk schemabestand moet geschreven zijn in de **CSV "
+"schemakolom**. Dit bestand heeft de volgende specificaties:"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:75
+msgid ""
+"a ``name`` column holds each field name in lowercase (e.g. on a CSV "
+"resource, this would be the column names in lowercase)"
+msgstr ""
+"een kolom ``name`` bevat de naam van elk veld in kleine letters (bijv. voor "
+"een CSV-bron zouden dit de kolomnamen zijn in kleine letters)"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:76
+msgid ""
+"a ``label`` column (optional) holds the label of the corresponding field"
+msgstr ""
+"een kolom ``label`` (optioneel) bevat het label van het overeenkomstige veld"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:77
+msgid ""
+"a ``description`` column (optional) holds the description of the "
+"corresponding field"
+msgstr ""
+"een kolom ``description`` (optioneel) bevat de omschrijving van het "
+"overeenkomstige veld"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:87
+msgid "label"
+msgstr "label"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:89
+msgid "company"
+msgstr "onderneming"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:89
+msgid "Company"
+msgstr "Onderneming"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:89
+msgid "The company that makes the bar"
+msgstr "De onderneming die de repen vervaardigt"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:91
+msgid "ref"
+msgstr "ref"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:91
+msgid "Reference"
+msgstr "Referentie"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:91
+msgid "The product id of the chocolate bar"
+msgstr "Het product-ID van de chocoladereep"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:94
+msgid ""
+"The schema files do not need to contain a row for each field, and it is not "
+"required to provide a schema file for each dataset in the ``index.csv``. In "
+"the latter case, keep the corresponding cell empty."
+msgstr ""
+"De schemabestanden moeten geen rij voor elk veld bevatten en het is niet "
+"verplicht om een schemabestand op te geven voor elke dataset in de  "
+"``index.csv``. In het laatste geval, laat de overeenkomstige cel leeg."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:97
+msgid "Parameters"
+msgstr "Parameters"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:102
+msgid "Name"
+msgstr "Naam"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:103
+msgid "Description"
+msgstr "Omschrijving"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:104
+msgid "Example"
+msgstr "Voorbeeld"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:105
+msgid "**Host** (host)"
+msgstr "**Host** (host)"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:106
+msgid "URL of the FTP server"
+msgstr "URL van de FTP-server"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:107
+msgid ""
+"eu.ftp.opendatasoft.com, ftps://eu.ftp.opendatasoft.com, "
+"ftp://eu.ftp.opendatasoft.com"
+msgstr ""
+"eu.ftp.opendatasoft.com, ftps://eu.ftp.opendatasoft.com, "
+"ftp://eu.ftp.opendatasoft.com"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:108
+msgid "**User** (user)"
+msgstr "**Gebruiker** (gebruiker)"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:109
+msgid "Your username"
+msgstr "Uw gebruikersnaam"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:111
+msgid "**Password** (password)"
+msgstr "**Wachtwoord** (wachtwoord)"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:112
+msgid "Your password"
+msgstr "Uw wachtwoord"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:114
+msgid "Subdirectory (subdir)"
+msgstr "Submap (subdir)"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:115
+msgid "The directory containing the data you want to harvest."
+msgstr "De map die de data bevat die u wil harvesten."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:116
+msgid "pub/documents"
+msgstr "pub/documenten"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:117
+msgid "**Metadata CSV filename** (metadata_file)"
+msgstr "**Metadata CSV-bestandsnaam** (metadata_file)"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:118
+msgid ""
+"The file holding the metadata and filenames (see above for more precise "
+"specifications)."
+msgstr ""
+"Het bestand dat de metadata en bestandsnamen bevat (zie hierboven voor meer "
+"precieze specificaties)."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:119
+msgid "index.csv"
+msgstr "index.csv"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:120
+msgid "**Metadata CSV resource column** (resource_location_column)"
+msgstr "**Metadata CSV bronkolom** (resource_location_column)"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:121
+msgid "This column holds a filename or an URL with the dataset resource."
+msgstr "Deze kolom bevat een bestandsnaam of een URL met de datasetbron."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:123
+msgid "Metadata CSV schema column (resource_schema_column)"
+msgstr "Metadata CSV schemakolom (resource_schema_column)"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:124
+msgid ""
+"This column holds a filename with the resource schema (column labels and "
+"descriptions)."
+msgstr ""
+"In deze kolom staat een bestandsnaam met het bronschema (labels en "
+"omschrijvingen van de kolommen)."

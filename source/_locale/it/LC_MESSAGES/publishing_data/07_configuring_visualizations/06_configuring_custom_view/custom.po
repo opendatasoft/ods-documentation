@@ -1,0 +1,207 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-12 15:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Datawords Rel2 <datawords.rel.2@gmail.com>, 2018\n"
+"Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/publishing_data/07_configuring_visualizations/06_configuring_custom_view/custom.rst:2
+msgid "Configuring the custom view"
+msgstr "Configurazione della visualizzazione personalizzata"
+
+#: ../../source/publishing_data/07_configuring_visualizations/06_configuring_custom_view/custom.rst:4
+msgid ""
+"Standard views allow your users to dive further into your datasets, but they"
+" are tools. They do not provide additional context and do not highlight what"
+" you think are the key facts to take away. And while the *description* "
+"metadata adds a bit of context, it is limited to pure text."
+msgstr ""
+"Le visualizzazioni standard permettono all'utente di esaminare nel dettaglio"
+" i dataset, ma restano dei semplici strumenti. Non forniscono ulteriore "
+"contesto e non evidenziano quelli che tu consideri gli elementi chiave. Se, "
+"d'altro canto, i metadati della *descrizione* aggiungono un certo contesto, "
+"questi si limitano però al solo testo."
+
+#: ../../source/publishing_data/07_configuring_visualizations/06_configuring_custom_view/custom.rst:8
+msgid ""
+"The custom view is an additional tab that lives alongside the other tabs on "
+"the dataset's page. It is an empty space that you can use as you wish. An "
+"HTML and CSS editor enables you to write a dashboard as simple or as complex"
+" as you may want (for more information about writing beautiful dashboard, "
+"see the :doc:`dedicated documentation </creating_content/index>`) and you "
+"can even customize the title and icon of this additional tab."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/06_configuring_custom_view/custom.rst:17
+msgid "The custom view editor"
+msgstr "Editor della visualizzazione personalizzata"
+
+#: ../../source/publishing_data/07_configuring_visualizations/06_configuring_custom_view/custom.rst:26
+msgid "Tab icon and title"
+msgstr "Icona e titolo della scheda"
+
+#: ../../source/publishing_data/07_configuring_visualizations/06_configuring_custom_view/custom.rst:28
+msgid ""
+"The custom title and icon will show up within your catalog page on the "
+"related dataset's card, and you'll be able to search for datasets having a "
+"custom view set up with the *View* filter (select the *Custom view* option)."
+msgstr ""
+"Una volta personalizzati, il titolo e l'icona compariranno nella scheda "
+"informativa del dataset, disponibile sulla pagina del catalogo. In questo "
+"modo, facendo clic su *Visualizzazione personalizzata* nel filtro "
+"*Visualizza*, potrai ottenere l’elenco dei dataset che possiedono una "
+"visualizzazione personalizzata."
+
+#: ../../source/publishing_data/07_configuring_visualizations/06_configuring_custom_view/custom.rst:31
+msgid ""
+"Icons are taken from the `Font awesome 4.7 icon set "
+"<http://fontawesome.io/icons/>`_ and must be specified through their name "
+"(omitting the ``fa-`` prefix). For example, to use the `bar chart "
+"<http://fontawesome.io/icon/bar-chart/>`_ icon, whose name is ``fa-bar-"
+"chart``, you should input ``bar-chart`` in the icon field. You can also "
+"leave this field empty, in which case it will default to the `tachometer "
+"icon <http://fontawesome.io/icon/tachometer/>`_."
+msgstr ""
+"Le icone sono tratte dal `set di icone Font awesome 4.7 "
+"<http://fontawesome.io/icons/>`_ e devono essere specificate inserendo il "
+"relativo nome, senza il prefisso ``fa-``. Ad esempio, per utilizzare l'icona"
+" `grafico a barre <http://fontawesome.io/icon/bar-chart/>`_, il cui nome è "
+"``fa-bar-chart``, dovrai inserire ``bar-chart`` nel campo dell'icona. È "
+"anche possibile lasciare vuoto questo campo: in tal caso verrà impostata "
+"come predefinita `l’icona del tachimetro "
+"<http://fontawesome.io/icon/tachometer/>`_."
+
+#: ../../source/publishing_data/07_configuring_visualizations/06_configuring_custom_view/custom.rst:37
+msgid "Tab content"
+msgstr "Contenuto della scheda"
+
+#: ../../source/publishing_data/07_configuring_visualizations/06_configuring_custom_view/custom.rst:39
+msgid ""
+"The HTML and CSS code you'll be writing for the tab content isn't isolated "
+"from the rest of the page. It is integrated within an already rich interface"
+" and can take advantage of the existing dataset context to interact with the"
+" filters."
+msgstr ""
+"Il codice HTML e CSS da scrivere per il contenuto della scheda non è isolato"
+" dal resto della pagina, ma è integrato nella già ricca interfaccia e può "
+"sfruttare il contesto dei dataset esistenti per interagire con i filtri."
+
+#: ../../source/publishing_data/07_configuring_visualizations/06_configuring_custom_view/custom.rst:42
+msgid ""
+"In order to illustrate the different possibilities, we'll use a dataset "
+"listing all `new power plant installations in 2015 in france "
+"<https://rte.opendatasoft.com/explore/dataset/registre_parc_prod_rpt/>`_ "
+"alongside their respective power capacity, breaking them down by nature "
+"(nuclear, wind, solar...) and region."
+msgstr ""
+"Per illustrare le diverse possibilità, utilizzeremo un dataset contenente "
+"l’elenco di tutte le `centrali elettriche installate nel 2015 in Francia "
+"<https://rte.opendatasoft.com/explore/dataset/registre_parc_prod_rpt/>`_, "
+"classificate per capacità energetica, tipologia (nucleare, eolica, "
+"solare...) e regione."
+
+#: ../../source/publishing_data/07_configuring_visualizations/06_configuring_custom_view/custom.rst:46
+msgid ""
+"To illustrate the relative importance of the various sources of energy "
+"within these new installations, we'll build a treemap with the analyse tab "
+"and set this visualization in the custom tab."
+msgstr ""
+"Per delineare il peso di ciascuna fonte di energia nel complesso di queste "
+"installazioni, creeremo un treemap nella scheda Analizza e lo "
+"rappresenteremo nella scheda di visualizzazione personalizzata."
+
+#: ../../source/publishing_data/07_configuring_visualizations/06_configuring_custom_view/custom.rst:52
+msgid "The treemap we want to see."
+msgstr "Treemap da visualizzare"
+
+#: ../../source/publishing_data/07_configuring_visualizations/06_configuring_custom_view/custom.rst:54
+msgid ""
+"The share panel at the bottom of the analyze tab gives us the following "
+"widget code for this treemap."
+msgstr ""
+"Il codice widget di questo treemap è disponibile in fondo alla scheda "
+"Analizza, nel pannello Condividi:"
+
+#: ../../source/publishing_data/07_configuring_visualizations/06_configuring_custom_view/custom.rst:72
+msgid ""
+"We can of course copy/paste this code into the custom view's HTML code "
+"editor and it will give us the requested treemap. However, since we're "
+"creating an independant dataset context (named `registreparcprodrpt` in this"
+" case), this treemap will be independant from the rest of the dataset's "
+"page, and especially independant from the active filters."
+msgstr ""
+"Naturalmente, è possibile copiare e incollare il codice nell'editor HTML "
+"della scheda di visualizzazione personalizzata e ottenere così il treemap "
+"desiderato. Tuttavia, in questo modo creeremo un contesto indipendente "
+"all’interno del dataset (qui denominato `registreparcprodrpt`), rendendo il "
+"treemap un elemento autonomo della pagina, indifferente ai filtri che vi "
+"sono attivi."
+
+#: ../../source/publishing_data/07_configuring_visualizations/06_configuring_custom_view/custom.rst:76
+msgid ""
+"This means that we can't take advantage of the existing *producer* filter to"
+" refine the treemap and see what technology such and such company is more "
+"investing in."
+msgstr ""
+"Ciò significa che non sarà possibile utilizzare il filtro *Produttore* per "
+"affinare il treemap e visualizzare quindi le tecnologie su cui stanno "
+"investendo le diverse aziende."
+
+#: ../../source/publishing_data/07_configuring_visualizations/06_configuring_custom_view/custom.rst:81
+msgid "The treemap in the custom view is not affected by the active filter"
+msgstr ""
+"Il treemap nella visualizzazione personalizzata non è influenzato dal filtro"
+" attivo"
+
+#: ../../source/publishing_data/07_configuring_visualizations/06_configuring_custom_view/custom.rst:83
+msgid ""
+"In order to work with the existing dataset context, we just have to plug the"
+" ``ods-chart`` widget not on a custom context defined within the custom view"
+" but directly on the global context set for the page, which is named "
+"``ctx``, as such."
+msgstr ""
+"Per lavorare in sinergia con il contesto di dati del dataset, il widget "
+"``ods-chart`` non deve essere collegato a un contesto specifico della "
+"visualizzazione personalizzata, ma direttamente a quello globale definito "
+"per la pagina, in questo caso denominato ``ctx``."
+
+#: ../../source/publishing_data/07_configuring_visualizations/06_configuring_custom_view/custom.rst:101
+msgid ""
+"This time, the treemap will be actualized depending on the current filters, "
+"which allows for more in-depth exploring."
+msgstr ""
+"Questa volta, il treemap verrà aggiornato in base ai filtri correnti e "
+"permetterà un esame più approfondito."
+
+#: ../../source/publishing_data/07_configuring_visualizations/06_configuring_custom_view/custom.rst:105
+msgid ""
+"The treemap in the custom view is now taking into account active filters"
+msgstr ""
+"Il treemap nella visualizzazione personalizzata tiene ora in considerazione "
+"i filtri attivi"
+
+#: ../../source/publishing_data/07_configuring_visualizations/06_configuring_custom_view/custom.rst:107
+msgid ""
+"Depending on your analysis, you may want to have both static and dynamic "
+"visualizations within your custom view, and nothing prevents you from doing "
+"so. You'll just have to plug the dynamic ones onto the ``ctx`` context and "
+"define new ``ods-dataset-context`` for static ones."
+msgstr ""
+"In base al tipo di analisi, nella scheda personalizzata potresti aver "
+"bisogno di far coesistere delle visualizzazioni statiche con altre "
+"dinamiche. Per far ciò è necessario collegare le visualizzazioni dinamiche "
+"al contesto ``ctx`` e definire un nuovo ``ods-dataset-context`` per quelle "
+"statiche."

@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-12 15:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2018\n"
+"Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:2
+msgid "Publishing datasets"
+msgstr "Publier des jeux de données"
+
+#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:4
+msgid ""
+"A dataset has a dedicated life cycle: It's start in the backoffice (not "
+"published), you configured the sources, the processors, the security and "
+"then you publish it. The dataset appears in the frontoffice (according to "
+"the security rules). When you make modifications on the dataset, they are "
+"pushed to the publish version when you click on the *publish* button. At any"
+" time you can remove a dataset from the by the *unpublish* action,"
+msgstr ""
+"Un jeu de données présente un cycle de vie spécifique : il est créé dans le "
+"back office (non publié), vous configurez les sources, les processeurs et la"
+" sécurité, puis vous le publiez. Le jeu de données apparaît sur la "
+"plateforme (en fonction des règles de sécurité). Quand vous apportez des "
+"modifications au jeu de données, elles sont chargées dans la version publiée"
+" lorsque vous cliquez sur le bouton *Publier*. Vous pouvez à tout moment "
+"supprimer un jeu de données à l'aide de l'action *dépublier*."
+
+#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:21
+msgid "Actions"
+msgstr "Actions"
+
+#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:23
+msgid ""
+"Publish: Make the dataset's modifications live. This action duration can be "
+"various, it depends if only metadata have changed or if the dataset schema "
+"changed."
+msgstr ""
+"Publier : met en ligne les modifications du jeu de données. La durée de "
+"cette action peut varier, par exemple si seules les métadonnées ont été "
+"modifiées ou si des modifications ont été apportées au schéma du jeu de "
+"données."
+
+#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:24
+msgid ""
+"Unpublish: It removes the dataset from the calalog and all records are "
+"deleted. In some case data can be lost (realtime without recovery, specific "
+"connectors)."
+msgstr ""
+"Dépublier : supprime le jeu de données du catalogue et tous les "
+"enregistrements sont effacés. Dans certains cas, des données peuvent être "
+"perdues (temps réel sans récupération, connecteurs spécifiques)."
+
+#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:25
+msgid ""
+"Abort: It sends the *abort* order to the processing process. It will leave "
+"the dataset in a clean but incomplete state (not all records have been "
+"processed)."
+msgstr ""
+"Interrompre : envoie la commande *Interrompre* au processus de traitement. "
+"Il laissera le jeu de données dans un état propre mais incomplet (tous les "
+"enregistrements n'ont pas été traités)."
+
+#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:28
+msgid "Statuses"
+msgstr "États"
+
+#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:30
+msgid ""
+"Dataset processing is perform asynchronously to ensure the best performance "
+"and no interference with others processing tasks. Different status are "
+"reachable by a dataset during the processing task."
+msgstr ""
+"Le traitement des jeux de données est réalisé de manière asynchrone afin de "
+"garantir les meilleures performances possibles et d'éviter toute "
+"interférence avec d'autres tâches de traitement. Un jeu de données peut "
+"atteindre différents états pendant la tâche de traitement."
+
+#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:33
+msgid "Queued: The processing task is waiting to be pick up."
+msgstr ""
+"Mise en file d'attente : la tâche de traitement est en attente de la "
+"reprise."
+
+#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:34
+msgid ""
+"Processing: Records are extracted from the connector, processors are applied"
+" and the result is made available through the OpenDataSoft API. Records "
+"number increased during this step."
+msgstr ""
+"Traitement : les enregistrements sont extraits depuis le connecteur, les "
+"processeurs sont appliqués, et le résultat est rendu disponible via l'API "
+"OpenDataSoft. Le nombre d'enregistrement augmente pendant cette étape."
+
+#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:35
+msgid "Unpublishing: Dataset is removed from the API."
+msgstr "Dépublication : le jeu de données est supprimé de l'API."
+
+#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:36
+msgid ""
+"Aborting processing: The *abort* order has been sent to the platform. The "
+"dataset processing will stop within the next minute."
+msgstr ""
+"Interruption du traitement : la commande *Interrompre* a été envoyée à la "
+"plateforme. Le traitement du jeu de données s'arrêtera sous une minute."
+
+#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:37
+msgid ""
+"Limit reached: The user who launched the processing job reached its allowed "
+"quota. He overtakes one of the limit (from the domain, the group of the "
+"user)."
+msgstr ""
+"Limite atteinte : l'utilisateur qui a lancé la tâche de traitement a atteint"
+" son quota autorisé. Il dépasse l'une des limites (du domaine, du groupe ou "
+"de l'utilisateur)."

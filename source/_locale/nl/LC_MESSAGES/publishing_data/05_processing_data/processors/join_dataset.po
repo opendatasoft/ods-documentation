@@ -1,0 +1,521 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-12 15:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2018\n"
+"Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:2
+msgid "Join dataset processor"
+msgstr "Join dataset processor"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:4
+msgid ""
+"This processor allows to join 2 datasets together. However, these 2 datasets"
+" must have a common field to be joined."
+msgstr ""
+"Deze processor laat u toe om 2 datasets samen te voegen. Deze 2 datasets "
+"moeten wel gemeenschappelijke velden hebben die moeten worden samengevoegd."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:6
+msgid ""
+"Example: a dataset A could be enriched with more data, which are in a "
+"dataset B. If datasets A and B have one field in common, it is possible to "
+"join these datasets together, in order to retrieve a field from dataset B et"
+" add it to dataset A."
+msgstr ""
+"Voorbeeld: er kunnen meer data, die in een dataset B staan, in een dataset A"
+" worden geplaatst. Wanneer datasets A en B één gemeenschappelijk veld hebben"
+" is het mogelijk om deze datasets samen te voegen om zo een veld op te halen"
+" uit dataset B en het toe te voegen aan dataset A."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:8
+msgid "Important"
+msgstr "Belangrijk"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:11
+msgid ""
+"By default, the Join dataset processor can only be used with remote datasets"
+" that have fewer than 100,000 records. In addition to that, when applying a "
+"join dataset processor to a scheduled dataset, the join is only reapplied "
+"when the resource has changed. This means that given a scheduled dataset A, "
+"that has a join dataset processor that pulls values from dataset B, if there"
+" are new values in dataset B but the resources of dataset A haven't changed,"
+" the scheduled processing will not pull the new values from B."
+msgstr ""
+"Standaard kan de Join Dataset-processor enkel worden gebruikt met datasets "
+"op afstand die minder dan 100.000 records hebben. Daarnaast, wanneer een "
+"Join Dataset-processor wordt toegepast op een geplande dataset, wordt de "
+"join enkel opnieuw toegepast wanneer de bron is gewijzigd. Dit betekent dat,"
+" gelet op een geplande dataset A die een Join Dataset-processor heeft die "
+"waarden haalt uit dataset B, wanneer er nieuwe waarden zijn in dataset B "
+"maar de bronnen van dataset A zijn niet gewijzigd, de geplande verwerking de"
+" nieuwe waarden uit B niet zal ophalen."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:14
+msgid "Setting the processor"
+msgstr "De processor instellen"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:16
+msgid ""
+"To set the parameters of the Join dataset processor, follow the indications "
+"from the table below."
+msgstr ""
+"Om de parameters van de Join dataset processor in te stellen, dient u de "
+"aanwijzingen in onderstaande tabel te volgen."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:21
+msgid "Label"
+msgstr "Label"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:22
+msgid "Description"
+msgstr "Omschrijving"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:23
+msgid "Mandatory"
+msgstr "Verplicht"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:24
+msgid "Dataset"
+msgstr "Dataset"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:25
+msgid ""
+"Dataset used for the join. It can be selected from the portal's datasets or "
+"from OpenDataSoft's network."
+msgstr ""
+"Dataset die gebruikt wordt voor de toevoeging. Deze kan worden geselecteerd "
+"uit de datasets van het portaal of uit het netwerk van OpenDataSoft."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:26
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:29
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:32
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:35
+msgid "yes"
+msgstr "ja"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:27
+msgid "Local Key"
+msgstr "Local Key"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:28
+msgid ""
+"Local field that will be used to identify the corresponding records in the "
+"remote dataset. More than one key can be specified."
+msgstr ""
+"Lokaal veld dat gebruikt wordt om de overeenstemmende records in de dataset "
+"op afstand te identificeren. Er kan meer dan één sleutel worden "
+"gespecificeerd."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:30
+msgid "Remote Key"
+msgstr "Remote Key"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:31
+msgid "Remote field corresponding to the local key. It can be a list."
+msgstr ""
+"Veld op afstand dat overeenstemt met de plaatselijke sleutel. Dit kan een "
+"lijst zijn."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:33
+msgid "Output Fields"
+msgstr "Output Fields"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:34
+msgid "List of fields to retrieve from the remote dataset"
+msgstr ""
+"Lijst met velden die opgehaald moeten worden uit de dataset op afstand"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:36
+msgid "Retrieve All Fields"
+msgstr "Retrieve All Fields"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:37
+msgid "Set to retrieve all the fields from the remote dataset"
+msgstr "Ingesteld om alle velden op te halen uit de dataset op afstand"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:38
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:41
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:44
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:47
+msgid "no"
+msgstr "nee"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:39
+msgid "Case Sensitive"
+msgstr "Case Sensitive"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:40
+msgid ""
+"Set to retrieve the field name without accents and in lower case format"
+msgstr ""
+"Ingesteld om de veldnaam op te halen zonder accenten en in klein "
+"letterformaat"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:42
+msgid "One line"
+msgstr "Eén lijn"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:43
+msgid ""
+"In some specific cases, the remote dataset may contain more than one row "
+"matching the local key. In which case, you may want to either collapse "
+"duplicates (that is, generate a single row which will contain multi-valued "
+"fields) or not."
+msgstr ""
+"In bepaalde specifieke gevallen kan de dataset op afstand meer dan één rij "
+"bevatten die overeenstemt met de plaatselijke sleutel. In dit geval kunt u "
+"ofwel duplicaten samenvoegen (m.a.w. één enkele rij aanmaken die velden met "
+"meerdere waarden bevat) of niet."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:45
+msgid "Separator"
+msgstr "Scheidingsteken"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:46
+msgid ""
+"To fill if One line is set. Specifies the character to use to separate "
+"values in the generated field."
+msgstr ""
+"Te vullen wanneer One Line is ingesteld. Specificeert het karakter om de "
+"afzonderlijke waarden in het aangemaakte veld te gebruiken."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:51
+msgid "Examples"
+msgstr "Voorbeelden"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:54
+msgid "Simple join"
+msgstr "Gewoon samenvoegen"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:56
+msgid ""
+"Dataset A: list of taxi stations in Paris (dataset name: "
+"paris_taxis_stations)."
+msgstr ""
+"Dataset A: lijst met taxistations in Parijs (naam van de dataset: "
+"paris_taxis_stations)."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:61
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:76
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:88
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:114
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:132
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:150
+msgid "station_id"
+msgstr "station_id"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:62
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:90
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:115
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:134
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:152
+msgid "station_name"
+msgstr "station_name"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:63
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:91
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:116
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:135
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:153
+msgid "station_address"
+msgstr "station_address"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:64
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:78
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:92
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:117
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:120
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:136
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:154
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:158
+msgid "1"
+msgstr "1"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:65
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:94
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:118
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:156
+msgid "Tour Eiffel"
+msgstr "Eiffeltoren"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:66
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:95
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:119
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:122
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:157
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:161
+msgid "69 quai Branly, 75007 Paris"
+msgstr "69 quai Branly, 75007 Paris"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:67
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:80
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:96
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:123
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:140
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:162
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:192
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:202
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:204
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:234
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:238
+msgid "2"
+msgstr "2"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:68
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:98
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:124
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:142
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:164
+msgid "Rennes - Montparnasse"
+msgstr "Rennes - Montparnasse"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:69
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:99
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:125
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:143
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:165
+msgid "1 place du dix huit Juin 1940, 75006 Paris"
+msgstr "1 place du dix huit Juin 1940, 75006 Paris"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:71
+msgid "Dataset B: number of taxis waiting per station in Paris."
+msgstr "Dataset B: aantal wachtende taxi's per station in Parijs."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:77
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:89
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:133
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:151
+msgid "number"
+msgstr "aantal"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:79
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:93
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:137
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:155
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:159
+msgid "10"
+msgstr "10"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:81
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:97
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:141
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:163
+msgid "15"
+msgstr "15"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:83
+msgid ""
+"Dataset A after being enriched with a field from dataset B, using the Join "
+"dataset processor:"
+msgstr ""
+"Dataset A nadat deze is verrijkt met een veld uit dataset B, met behulp van "
+"de Join dataset processor:"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:102
+msgid "Join with \"One line\" parameter set"
+msgstr "Samenvoegen met de parameter ingesteld op \"One Line\""
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:104
+msgid "Note"
+msgstr "Opmerking"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:107
+msgid ""
+"The example datasets used in the following example are the same as in the "
+"previous one."
+msgstr ""
+"De voorbeelddatasets die gebruikt worden in het volgende voorbeeld zijn "
+"dezelfde als in het vorige voorbeeld."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:109
+msgid "Dataset A contains two rows for the first station:"
+msgstr "Dataset A bevat twee rijen voor het eerste station:"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:121
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:160
+msgid "Quai Branly"
+msgstr "Quai Branly"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:127
+msgid ""
+"If One line is set (with ``|`` set as separator), the Join will result in:"
+msgstr ""
+"Wanneer One Line is ingesteld (met ``|`` ingesteld als scheidingsteken), zal"
+" de Join resulteren in:"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:138
+msgid "Tour Eiffel|Quai Branly"
+msgstr "Tour Eiffel|Quai Branly"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:139
+msgid "69 quai Branly, 75007 Paris|69 quai Branly, 75007 Paris"
+msgstr "69 quai Branly, 75007 Paris|69 quai Branly, 75007 Paris"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:145
+msgid "However, if One line is not set, the Join will result in:"
+msgstr "Wanneer One Line echter niet is ingesteld, zal de Join resulteren in:"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:168
+msgid "Join with different field types"
+msgstr "Samenvoegen met verschillende soorten velden"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:170
+msgid ""
+"Integers, decimals and text field containing numerical values can be joined "
+"together."
+msgstr ""
+"Gehele getallen, decimalen en tekstvelden die numerieke waarden bevatten, "
+"kunnen worden samengevoegd."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:172
+msgid ""
+"Dataset A: with decimal fields and text fields containing numerical values."
+msgstr ""
+"Dataset A: met decimale velden en tekstvelden die numerieke waarden "
+"bevatten."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:177
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:199
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:229
+msgid "insee_code (text)"
+msgstr "insee_code (tekst)"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:178
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:200
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:230
+msgid "bloom_competition_result (decimal)"
+msgstr "bloom_competition_result (decimaal)"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:179
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:201
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:233
+msgid "01262"
+msgstr "01262"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:180
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:184
+msgid "2.0"
+msgstr "2.0"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:181
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:218
+msgid "90010"
+msgstr "90010"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:182
+msgid "4.0"
+msgstr "4.0"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:183
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:203
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:221
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:237
+msgid "57355"
+msgstr "57355"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:186
+msgid "Dataset B: with integer fields."
+msgstr "Dataset B: met velden met gehele getallen."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:191
+msgid "bloom_ranks (integer)"
+msgstr "bloom_ranks (geheel getal)"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:194
+msgid ""
+"Dataset A after using Join dataset: the matching between values ``2`` and "
+"``2.0`` is successful despite the type difference."
+msgstr ""
+"Dataset A na Join dataset te hebben gebruikt: matching tussen waarden  ``2``"
+" en ``2.0`` is succesvol uitgevoerd ondanks de verschillende types."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:206
+msgid ""
+"It is possible to a second Join dataset processor, such as this dataset C:"
+msgstr ""
+"Het is mogelijk om een tweede Join dataset processor uit te voeren, zoals "
+"deze dataset C:"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:211
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:231
+msgid "city (text)"
+msgstr "city (tekst)"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:212
+msgid "insee_code (integer)"
+msgstr "insee_code (geheel getal)"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:213
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:232
+msgid "postal_code (text)"
+msgstr "postal_code (tekst)"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:214
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:235
+msgid "Montluel"
+msgstr "Montluel"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:215
+msgid "1262"
+msgstr "1262"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:216
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:236
+msgid "01120"
+msgstr "01120"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:217
+msgid "Belfort"
+msgstr "Belfort"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:219
+msgid "90000"
+msgstr "90000"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:220
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:239
+msgid "Kalhausen"
+msgstr "Kalhausen"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:222
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:240
+msgid "57412"
+msgstr "57412"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:224
+msgid "Dataset A after being joined with datasets B and C:"
+msgstr "Dataset A nadat deze werd samengevoegd met datasets B en C:"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:242
+msgid ""
+"Even though the insee_code was not in the same type, the matching happened. "
+"The matching worked even for the value ``1262`` in the first dataset (note "
+"the absence of leading 0, due to it being an integer value), that matched "
+"against the value ``01262`` in the second dataset. While most column types "
+"can be retrieved by using the Join dataset processor, file type columns do "
+"not yield the actual resource through the processor but instead yield the "
+"name of the underlying resource."
+msgstr ""
+"Hoewel de INSEE-code niet van hetzelfde type was, gebeurde de matching toch."
+" De matching werkte zelfs voor de waarde \"1262\" in de eerste dataset (merk"
+" de afwezigheid op van de 0 die vooraan staat, gelet op het feit dat het een"
+" geheel getal is), die matchte met de waarde \"01262\" in de tweede dataset."
+" Hoewel de meeste kolomtypes teruggevonden kunnen worden met behulp van de "
+"Join dataset processor, leveren kolommen van het bestandstype niet de "
+"daadwerkelijke bron op via de processor maar wel de naam van de "
+"onderliggende bron."

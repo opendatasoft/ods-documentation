@@ -15,6 +15,7 @@
 import sys
 import os
 import shlex
+import datetime
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -56,8 +57,11 @@ source_suffix = ['.rst']
 master_doc = 'index'
 
 # General information about the project.
+now = datetime.datetime.now()
+now = str(now.year)
+
 project = u'OpenDataSoft Documentation'
-copyright = u'2016, OpenDataSoft'
+copyright = now + u', OpenDataSoft'
 author = u'OpenDataSoft'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -102,7 +106,7 @@ exclude_patterns = ['old/*']
 #show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = 'default'
 
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
@@ -118,17 +122,15 @@ todo_include_todos = True
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'ods-theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_theme_options = {
-    'display_version': False
-}
+# html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
-#html_theme_path = []
+html_theme_path = ["./_themes"]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -139,7 +141,7 @@ html_theme_options = {
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = 'ods-logo.png'
+html_logo = 'ods-logo.svg'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32

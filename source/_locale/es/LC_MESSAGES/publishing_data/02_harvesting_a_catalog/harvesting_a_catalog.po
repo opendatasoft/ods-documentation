@@ -1,0 +1,311 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-12 15:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018\n"
+"Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:2
+msgid "Harvesting a catalog"
+msgstr "Recolectar un catálogo"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:4
+msgid ""
+"Harvesters provide a way for administrators to easily create and update an "
+"important number of datasets by importing them from an external source such "
+"as a CSW catalog or an ArcGIS service, among many others."
+msgstr ""
+"Los recolectores permiten a los administradores crear y actualizar "
+"fácilmente un número importante de conjuntos de datos importándolos de un "
+"origen externo como un catálogo CSW o un servicio ArcGIS, entre muchos "
+"otros."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:6
+msgid "The two main usages of harvesters are:"
+msgstr "Los 2 usos principales de los recolectores son:"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:8
+msgid "Bootstrap your portal with datasets from an existing portal"
+msgstr ""
+"Efectuar un arranque del portal con conjuntos de datos de un portal ya "
+"existente"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:9
+msgid "Keep your datasets synchronised with an external service"
+msgstr "Mantener los conjuntos de datos sincronizados con un servicio externo"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:11
+msgid ""
+"The harvester will create datasets, update their metadata and resources, "
+"keep them synchronized, and publish them."
+msgstr ""
+"El recolector creará los conjuntos de datos, actualizará sus metadatos y "
+"recursos, los mantendrá sincronizados y los publicará."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:19
+msgid "Global overview"
+msgstr "Visión general"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:31
+msgid "Creating a harvester"
+msgstr "Crear un recolector"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:33
+msgid ""
+"To get started with harvesters, click on the **harvesters** menu in your "
+"backoffice, and then on **Add harvester**. You will be asked to choose the "
+"type of the portal you want to harvest, and a name for your harvester."
+msgstr ""
+"Para empezar a trabajar con los recolectores, haga clic en el menú "
+"**Recolectores** del back office y, acto seguido, en **Añadir recolector**. "
+"Se le pedirá que elija el tipo de portal que desea recolectar y un nombre "
+"para el recolector."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:45
+msgid ""
+"When you are done, click on **Create harvester** and you will be redirected "
+"to the configuration form of the harvester. As it depends on the harvester "
+"type, please refer to each harvester page below for detailed instructions."
+msgstr ""
+"Cuando haya terminado, haga clic en **Crear recolector** y se le redirigirá "
+"al formulario de configuración del recolector. Como varía según el tipo de "
+"recolector, consulte las instrucciones detalladas en la página de cada uno "
+"de los recolectores."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:47
+msgid "Some options are available for every harvester type such as:"
+msgstr ""
+"Algunas opciones están disponibles para todos los tipos de recolectores, "
+"como las siguientes:"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:49
+msgid ""
+"**Update on deletion**: if the source datasets are deleted on the harvested "
+"portal, delete them on this OpenDataSoft portal too. Otherwise, you may have"
+" datasets that are not available on the external service anymore (e.g: if "
+"they are deleted from the external service)."
+msgstr ""
+"**Actualizar al suprimir**: Si los conjuntos de datos de origen se suprimen "
+"en el portal recolectado, suprimirlos también en este portal OpenDataSoft. "
+"De lo contrario, usted puede tener conjuntos de datos que ya no estén "
+"disponibles en el servicio externo (p. ej. al suprimirse del servicio "
+"externo)."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:50
+msgid ""
+"**Download resources**: download resources instead of attaching them via "
+"URL. This options allows you to detach your datasets from the remote portal "
+"by permanently copying all required data on the OpenDataSoft platform. "
+"Otherwise, your datasets will be linked to the external service and will "
+"access remote datasets via their URL for every publishing."
+msgstr ""
+"**Descargar recursos**: Descargar los recursos en lugar de asociarlos "
+"mediante la dirección URL. Esta opción permite desasociar los conjuntos de "
+"datos del portal remoto copiando de forma permanente todos los datos "
+"necesarios en la plataforma OpenDataSoft. De lo contrario, los conjuntos de "
+"datos estarán vinculados al servicio externo y se accederá a los conjuntos "
+"de datos remotos a través de la dirección URL en cada una de las "
+"publicaciones."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:51
+msgid ""
+"**Restrict visibility**: make the visibility of harvested datasets "
+"restricted. Otherwise, they will have the default visibility of your portal."
+msgstr ""
+"**Restringir visibilidad**: Establecer la visibilidad de los conjuntos de "
+"datos recolectados como restringida. De lo contrario, tendrán la visibilidad"
+" predeterminada del portal."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:52
+msgid ""
+"**Default metadata**, **inspire metadata**, **DCAT metadata**: allow you to "
+"override some metadata in every harvested dataset. Useful if you want to "
+"force the theme or publisher instead of using the one used on the external "
+"service."
+msgstr ""
+"**Metadatos predeterminados**, **Metadatos Inspire**, **Metadatos DCAT**: "
+"Permiten sobrescribir algunos metadatos en todos los conjuntos de datos "
+"recolectados. Esta opción resulta de utilidad si se desea forzar el tema o "
+"publicador en lugar de utilizar el del servicio externo."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:54
+msgid ""
+"Once you are done configuring the harvester, you can click on the "
+"**Preview** button to test run it on a few datasets. If you see some titles "
+"and descriptions and they look correct, you are all set. Otherwise, please "
+"double check your configuration."
+msgstr ""
+"Cuando haya terminado de configurar el recolector, puede hacer clic en el "
+"botón **Vista previa** para llevar a cabo una ejecución de prueba en algunos"
+" conjuntos de datos. Si observa títulos y descripciones con una apariencia "
+"correcta, ya ha completado la tarea. De lo contrario, revise la "
+"configuración."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:57
+msgid "Running a harvester"
+msgstr "Ejecutar un recolector"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:59
+msgid ""
+"The harvesting process can be quite long on external services with many "
+"datasets or with big ones, so it is split in two phases."
+msgstr ""
+"El proceso de recolección puede ser bastante largo en servicios externos con"
+" conjuntos de datos numerosos o voluminosos, por lo que se ha dividido en 2 "
+"fases."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:61
+msgid ""
+"First, the harvester will connect to the remote service and discover all the"
+" datasets it contains. It will then create an unpublished dataset for each "
+"remote dataset it finds. These datasets will contain all available metadata "
+"and resources (as URLs or as files depending on the *download resources* "
+"option). This happens when you click on the **Start harvester** button."
+msgstr ""
+"En primer lugar, el recolector conectará con el servicio remoto y descubrirá"
+" todos los conjuntos de datos que contiene. A continuación, creará un "
+"conjunto de datos con publicación cancelada para cada uno de los conjuntos "
+"de datos remotos que encuentre. Estos conjuntos de datos contendrán todos "
+"los metadatos y recursos disponibles (como direcciones URL o archivos, según"
+" la opción *Descargar recursos*). Esto sucede al hacer clic en el botón "
+"**Iniciar recolector**."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:62
+msgid ""
+"Next, it will process and publish all the harvested datasets. This step can "
+"take a while. This happens when you click on the **Publish** button."
+msgstr ""
+"Después procesará y publicará todos los conjuntos de datos recolectados. "
+"Este paso puede tardar bastante tiempo. Esto sucede al hacer clic en el "
+"botón **Publicar**."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:65
+msgid "Editing harvested datasets"
+msgstr "Editar conjuntos de datos recolectados"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:67
+msgid ""
+"Before publishing them, you can change the metadata of the harvested "
+"datasets. On the dataset page (information tab), you can manually override "
+"metadata by clicking on **Override** and adding your own value. This "
+"override will be kept even if you restart your harvester."
+msgstr ""
+"Antes de publicarlos, puede cambiar los metadatos de los conjuntos de datos "
+"recolectados. En la página de conjunto de datos (ficha de información), "
+"puede sobrescribir manualmente los metadatos haciendo clic en "
+"**Sobrescribir** y añadiendo su propio valor. El valor sobrescrito se "
+"mantiene incluso si se reinicia el recolector."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:70
+msgid "Deleting a harvester"
+msgstr "Suprimir un recolector"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:72
+msgid ""
+"When you delete a harvester by clicking the **Delete harvester** button, you"
+" can choose between keeping the harvested datasets (they will be kept as "
+"regular datasets in your catalog), or by deleting them with the harvester."
+msgstr ""
+"Al suprimir un recolector haciendo clic en el botón **Suprimir recolector**,"
+" puede elegir entre conservar los conjuntos de datos recolectados (se "
+"conservarán como conjuntos de datos normales del catálogo) o suprimirlos con"
+" el recolector."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:74
+msgid ""
+"If you choose to keep them, please keep in mind that you will have to handle"
+" them one by one to unpublish or delete them afterwards, and that they will "
+"be duplicated if you recreate another harvester on the same external "
+"service."
+msgstr ""
+"Si decide conservarlos, tenga en cuenta que deberá manejarlos de forma "
+"individual si más tarde desea cancelar su publicación o suprimirlos, y que "
+"se duplicarán si vuelve a crear otro recolector en el mismo servicio "
+"externo."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:77
+msgid "Harvester types"
+msgstr "Tipos de recolector"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:80
+msgid "Portals"
+msgstr "Portales"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:99
+msgid "Services"
+msgstr "Servicios"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:107
+msgid "Note"
+msgstr "Nota"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:110
+msgid ""
+"Unless otherwise specified, all harvesters use HTTPS by default, but support"
+" HTTP if specified in the provided URL."
+msgstr ""
+"A menos que se estipule lo contrario, todos los recolectores utilizan HTTPS "
+"de forma predeterminada, pero admiten HTTP si así se especifica en la "
+"dirección URL."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:112
+msgid ""
+"The FTP harvester uses FTPS (explicit mode on port 21) by default, but "
+"supports FTP if specified in the provided URL or if FTPS is not supported by"
+" the remote server."
+msgstr ""
+"El recolector de FTP utiliza FTPS (modo explícito en el puerto 201) de forma"
+" predeterminada pero admite FTP si así se especifica en la dirección de URL "
+"o si el servidor remoto no admite FTPS."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:115
+msgid "Scheduling"
+msgstr "Planificación"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:117
+msgid ""
+"From the configuration page of a harvester, it is possible to make it run "
+"periodically. To do this, scroll to the bottom of the page and click on "
+"\"Set recurring runs\". You can run the harvester every day, or choose the "
+"days of week or the days of month it will run on. However, you always have "
+"to choose the time of day when it will run because it can not run more than "
+"once a day."
+msgstr ""
+"En la página de configuración de un recolector, se puede establecer que este"
+" se ejecute periódicamente. Para ello, desplácese a la parte inferior de la "
+"página y haga clic en \"Establecer ejecuciones recurrentes\". Puede ejecutar"
+" el recolector todos los días o elegir qué días de la semana o mes se "
+"ejecutará. Sin embargo, siempre debe elegir la hora del día en que se "
+"ejecutará porque solo se admite una ejecución al día."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:119
+msgid ""
+"The periodic run will only trigger if the harvester has been run at least "
+"once."
+msgstr ""
+"La ejecución periódica tan solo se desencadenará si el recolector se ha "
+"ejecutado como mínimo una vez."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesting_a_catalog.rst:121
+msgid ""
+"At the end of a scheduled run, all the harvester's already published "
+"datasets will be republished, but unpublished datasets or new datasets will "
+"not be automatically published."
+msgstr ""
+"Al final de una ejecución planificada, se habrán vuelto a publicar los "
+"conjuntos de datos ya publicados de todos los recolectores, aunque no se "
+"habrán publicado automáticamente los conjuntos de datos con la publicación "
+"cancelada o los conjuntos de datos nuevos."

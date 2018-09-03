@@ -1,0 +1,405 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-12 15:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2018\n"
+"Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:2
+msgid "Designing a responsive portal"
+msgstr "Concevoir un portail responsive"
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:5
+msgid "A responsive portal header"
+msgstr "Un en-tête responsive"
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:8
+msgid ""
+"The theme customization is not available on freemium domains (created "
+"through the `Try it for free <https://www.opendatasoft.com/discover-"
+"opendatasoft-demo/>`_ page on `OpenDataSoft's website "
+"<https://www.opendatasoft.com>`_). If your domain is a freemium domain and "
+"would like to get this theme feature, `email us! <sales@opendatasoft.com>`_"
+msgstr ""
+"La personnalisation du thème du portail n'est pas disponible sur les "
+"domaines freemium (domaines créés via la page `Essayez ODS "
+"<https://www.opendatasoft.com/fr/decouvrez-opendatasoft-demo/>`_ du `site "
+"d'OpenDataSoft <https://www.opendatasoft.com/fr/>`_). Si votre domaine est "
+"un domaine freemium mais que vous voudriez tout de même avoir la "
+"fonctionnalité de personnalisation de thème activée, `écrivez nous ! "
+"<sales@opendatasoft.com>`_"
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:15
+msgid ""
+"This page explores in length the customization of the platform responsive "
+"menu directive. This entails a fair amount of HTML and CSS code to be "
+"written and explained. You'll need working knowledge of both these "
+"technologies to understand the content of this page."
+msgstr ""
+"Cette page explore en détail la customisation des menus de la plateforme. "
+"Ceci implique d'écrire et d'expliquer une certaine quantité de code HTML et "
+"CSS. Vous aurez besoin de connaissances des ces deux langages pour "
+"comprendre le contenu de cette page. "
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:19
+msgid ""
+"For basic customization needs, check out :doc:`customizing your portal's "
+"theme </customizing_look_and_feel/06_customizing_theme/theme>`."
+msgstr ""
+"Pour les besoins de personnalisation basique, vous pouvez consulter "
+":doc:`Personnaliser le thème de votre portail "
+"</customizing_look_and_feel/06_customizing_theme/theme>`."
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:22
+msgid ""
+"One very common pattern in graphic design is to have the header menu hidden "
+"on small screens and replaced by a single toggle button, which usually "
+"features the famous *hamburger icon* |hamburger|."
+msgstr ""
+"Un motif très utilisé en design graphique est d'avoir le menu d'entête caché"
+" sur les petits écrans et remplacé par un seul bouton qui contient "
+"généralement la fameuse icône *hamburger* |hamburger|."
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:27
+msgid ""
+"Clicking this button opens or closes a drawer containing all menu items. "
+"This behaviour can be seen on `OpenDataSoft's central data repository "
+"<https://data.opendatasoft.com/page/home/>`_ and on all new portals."
+msgstr ""
+"Un clic sur cette icône ouvre et ferme un tiroir contenant tous les éléments"
+" du menu. Ce comportement est visible sur `le portail central de données "
+"OpenDataSoft <https://data.opendatasoft.com/page/home/>`_ et sur tous les "
+"nouveaux portails."
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:33
+msgid "Closed drawer"
+msgstr "Tiroir fermé"
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:38
+msgid "Open drawer"
+msgstr "Tiroir ouvert"
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:41
+msgid "Implementation"
+msgstr "Implémentation"
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:43
+msgid ""
+"Implementing this behaviour usually means resorting heavily to *media "
+"queries*, that is CSS rules applied only for a given screen width. To "
+"facilitate this work, OpenDataSoft's provides a handy directive called "
+"``ods-responsive-menu`` that you should use within the header as follow."
+msgstr ""
+"Implémenter ce comportement implique d'implémenter les *media queries*, ce "
+"sont des règles CSS appliquées uniquement pour une largeur d'écran donnée. "
+"Pour faciliter ce travail, OpenDataSoft fournit une directive nommée ``ods-"
+"responsive-menu`` qu'il faut utiliser dans l'entête comme ceci. "
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:59
+msgid "This directive is actually an ensemble of 3 directives:"
+msgstr "Cette directive est en fait un ensemble de 3 directives : "
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:61
+msgid ""
+"``ods-responsive-menu`` (attribute directive, used as an attribute of "
+"another html tag)"
+msgstr ""
+"``ods-responsive-menu`` (attribute de directive, utilisé comme attribut d'un"
+" autre tag html)"
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:63
+msgid ""
+"Used to specify (through the ``breakpoint`` attribute) the screen width (in "
+"px) under which the drawer should appear and over which things should be "
+"displayed normally."
+msgstr ""
+"Utilisé pour spécifier (à l'aide de l'attribut ``breakpoint``) la largeur "
+"d'écran (en px) sous laquelle le tiroir doit apparaître et au dessus de "
+"laquelle les éléments doivent être affichés normalement. "
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:66
+msgid ""
+"``ods-responsive-menu-placeholder`` (element directive used as an html tag)"
+msgstr ""
+"``ods-responsive-menu-placeholder`` (directive d'élément utilisée comme un "
+"tag html)"
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:68
+msgid ""
+"Wraps the content that will be invisible unless we are below the breakpoint."
+msgstr ""
+"Renvoie à la ligne le contenu qui sera invisible sauf si on est en dessous "
+"du ``breakpoint``."
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:70
+msgid "``ods-responsive-menu-collapsible`` (element directive)"
+msgstr "``ods-responsive-menu-collapsible`` (directive d'élément)"
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:72
+msgid ""
+"Wraps the content that will be displayed normally over the breakpoint but "
+"collapsed within the drawer below."
+msgstr ""
+"Entoure le contenu qui sera affiché normalement au delà du ``breakpoint`` "
+"mais caché à l'intérieur du tiroir en deçà."
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:75
+msgid "Writing styles for the collapsed header content"
+msgstr "Styles d'écriture du contenu replié de l'entête "
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:77
+msgid ""
+"Going from an horizontal layout to a vertical layouts entails quite a few "
+"graphical changes, as demonstrated by the platform's default header."
+msgstr ""
+"Passer d'une disposition horizontale à une disposition verticale nécessite "
+"quelques changements graphiques, comme démontré par l'entête par défaut de "
+"la plateforme. "
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:83
+msgid "Desktop header."
+msgstr "Entête bureautique"
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:88
+msgid "Mobile header."
+msgstr "Entête mobile"
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:90
+msgid ""
+"In order for you to change the style accordingly, the ``ods-responsive-menu-"
+"collapsible`` element will wrap its content with the ``.ods-responsive-menu-"
+"collapsible--collapsed`` when (and only when) the screen is smaller than the"
+" breakpoint. This enables you to clearly separate the style for the two "
+"layout-styles (horizontal and vertical)."
+msgstr ""
+"Afin de pouvoir changer le style en conséquence, l'élément ``ods-responsive-"
+"menu-collapsible`` renvoie à la ligne son contenu avec  ``.ods-responsive-"
+"menu-collapsible--collapsed`` quand (et seulement quand) l'écran est plut "
+"petit que le ``breakpint``. Ceci vous permet de séparer précisement le style"
+" pour les deux styles de disposition (horizontal et vertical). "
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:105
+msgid "Writing styles for the drawer"
+msgstr "Styles d'écriture pour le tiroir"
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:107
+msgid ""
+"If you'd like to customize the overall look of the drawer, you will need to "
+"know the name of the classes applied to elements created by the 3 "
+"directives. The code sample we saw earlier will render as:"
+msgstr ""
+"Si vous voulez personnaliser le style du tiroir, vous allez avoir besoin de "
+"connaître le nom des classes appliquées sur les éléments créé par les 3 "
+"directives. L'échantillon de code vu précédemment sera affiché comme ceci : "
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:132
+msgid ""
+"On top of that, the ``.ods-responsive-menu-collapsible`` element will get "
+"the class ``.ods-responsive-menu-collapsible--collapsed`` as soon as the "
+"screen width falls below the breakpoint and the class ``.ods-responsive-"
+"menu-collapsible--expanded`` to mark whenever the user wants the menu to be "
+"displayed."
+msgstr ""
+"De plus, l'élément ``.ods-responsive-menu-collapsible`` obtiendra la classe "
+"``.ods-responsive-menu-collapsible--collapsed`` dès que la largeur de "
+"l'écran passe en dessous du ``breakpoint`` et la classe ``.ods-responsive-"
+"menu-collapsible--expanded`` pour indiquer lorsque l'utilisateur veut "
+"afficher le menu. "
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:137
+msgid "Responsive page layouts"
+msgstr "Disposition responsive de la page"
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:139
+msgid ""
+"Like many websites, OpenDataSoft's portal uses a grid layout to position "
+"elements. A grid is the intersection of rows and columns of pre-defined "
+"width, which will be used to position elements within a layout. This very "
+"common design tool as been adapted to webdesign first using tables and soon "
+"thereafter using standard ``div`` elements."
+msgstr ""
+"Le portail OpenDataSoft utilise une disposition en grille pour positionner "
+"les éléments. Une grille est une intersection de lignes et colonnes aux "
+"dimensions prédéfinies qui seront utilisées pour positionner les éléments "
+"dans la grille. Cet outil de design a été adapté au design Web en utilisant "
+"en premier lieu des tableaux et ensuite en utilisant des éléments \"div\". "
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:143
+msgid ""
+"If you are already familiar with the whole concept of grid layouts, suffice-"
+"it to say that OpenDataSoft's grid system is largely based on `Bootstrap CSS"
+" framework <http://getbootstrap.com/css/#grid>`_. You can see the list of "
+"`Available classes`_ below."
+msgstr ""
+"Si vous êtes familier avec le concept des dispositions en grille, il suffit "
+"de savoir que le systeme de grille OpenDataSoft est basé sur le `framework "
+"Bootstrap CSS <http://getbootstrap.com/css/#grid>`_. Vous pouvez voir la "
+"liste des `Classes disponibles`_ ci-dessous. "
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:148
+msgid "Concepts and terminology"
+msgstr "Concepts et terminologie"
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:150
+msgid ""
+"OpenDataSoft grid layout is a 12-column layout, which means that grid cells "
+"can span 1 to 12 columns at once."
+msgstr ""
+"La disposition en grille OpenDataSoft est une grille de 12 colonnes, ce qui "
+"signifie que les cellules de la grille peuvent s'étendre de 1 à 12 colonnes "
+"à la fois. "
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:152
+msgid ""
+"A grid layout relies on 3 types of elements: containers, rows and columns. "
+"Containers define the overall width of the layout, rows group together cells"
+" and columns are one-twelfth of the container's width. As a result, cells "
+"are defined by the number of columns they span and are nested within rows, "
+"which themselves are nested within containers."
+msgstr ""
+"Une disposition en grille contient 3 types d'éléments : des conteneurs, des "
+"lignes et des colonnes. Les conteneurs définissent la largeur totale de la "
+"grille, les lignes regroupent les cellules et les colonnes font 1/12e de la "
+"largeur d'un conteneur. Ainsi, les cellules sont définies par le nombre de "
+"colonnes sur lesquelles elles s'étendent, sont contenues dans des lignes, "
+"qui sont elles-mêmes contenues dans des conteneurs. "
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:156
+msgid "Translated into html code:"
+msgstr "Soit en code html : "
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:189
+msgid ""
+"Will render as (colors and labels added via CSS specifically for these "
+"examples):"
+msgstr ""
+"Sera affiché comme (les couleurs et les labels sont ajoutés spécifiquement "
+"par CSS pour ces exemples) :  "
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:193
+msgid ""
+"You can of course specify cells covering less than 12 columns, in which case"
+" there will be remaining white space at the end. In the case they cover more"
+" than 12 columns, the cells would wrap and create a new line within the row."
+msgstr ""
+"Vous pouvez bien sur spécifier des cellules qui couvrent moins de 12 "
+"colonnes. Dans ce cas, il y aura un espace blanc à la fin. Si les cellules "
+"couvrent plus de 12 colonnes, elle seront alors renvoyées à la ligne et "
+"crééront une nouvelle ligne. "
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:196
+msgid "Hence, this:"
+msgstr "Ainsi, ceci :"
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:213
+msgid "Will render as this:"
+msgstr "Sera affiché comme cela : "
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:218
+msgid "Responsive grid layouts"
+msgstr "Les dispositions en grille responsive."
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:220
+msgid ""
+"In webdesign, *responsive layout* means that the layout will adapt to the "
+"width of the screen it is displayed on. To be even more precise, it responds"
+" to the width of the viewport of the device, that is the space available for"
+" rendering, that is the width of the browser's window."
+msgstr ""
+"En design Web, une disposition responsive signifie que la disposition de la "
+"page s'adaptera à la largeur de l'écran. Plus précisément, elle s'adaptera à"
+" la largeur du `viewport`, c'est à dire, l'espace disponible pour "
+"l'affichage qui est la largeur de la fenêtre du navigateur. "
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:224
+msgid ""
+"Responsive layouts work by defining *breakpoints*, widths in pixels marking "
+"levels at which the layout will change. Within the OpenDataSoft's platform, "
+"3 breakpoints (defining 4 modes) are defined and can be :ref:`customized "
+"through the theme <theme__layout-options>`. These modes are *extra-small*, "
+"*small*, *medium* and *large* (also refered to as *mobile*, *tablet*, "
+"*desktop* and *large desktop*)."
+msgstr ""
+"Les dispositions en grilles fonctionnent grâce à la définition de points de "
+"rupture, ce sont des largeurs en pixels qui définissent à quel moment la "
+"disposition va changer. Sur la plateforme OpenDataSoft, 3 points de rupture "
+"(soit 4 modes) sont utilisés et peuvent être :ref:`modifiés sur la page "
+"Theme <theme__layout-options>`. Ces mides sont *extra-small*, *small*, "
+"*medium* et *large* (on utilise parfois *mobile*, *tablet*, *desktop* et "
+"*large desktop*)."
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:229
+msgid ""
+"A grid layout is designed for a given window width but can quite quickly "
+"become unsuited for other screen formats. For example, a very detailed 12 "
+"columns layout will render terribly on a tiny screen, all content being "
+"crammed into tiny cells each taking one-twelfth of the little space "
+"available. We'd like instead to have the layout reorganize itself when it "
+"changes mode."
+msgstr ""
+"Une disposition en grille est conçue pour une largeur de fenêtre déterminée "
+"mais peut être inadaptée pour d'autres formats d'écran. Par exemple, une "
+"disposition 12-colonnes va s'afficher très mal sur un petit écran. Tout le "
+"contenu sera inséré dans des petites cellules faisant 1/12e du petit espace "
+"disponible. On préfère ainsi avoir une disposition qui se réorganise au "
+"changement de mode."
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:234
+msgid ""
+"You may have noticed in the code snippets above that the class names for the"
+" cells ``<div class=\"col-xs-6\">col-6</div>`` include a little ``xs`` right"
+" before the number of columns the cell should span. This tells the browser "
+"that in *extra-small* mode, the cell should span 6 of the 12 super-tiny "
+"columns. We can however add classes specifying how we'd like the layout to "
+"behave in other modes. For example:"
+msgstr ""
+"Vous avez peut-être remarqué que les extraits de code au dessus des noms de "
+"classes pour les cellules ``<div class=\"col-xs-6\">col-6</div>`` "
+"contiennent un petit ``xs`` juste avant le nombre de colonnes sur lequel la "
+"cellule doit s'étendre. Cela indique aux navigateurs que dans le mode "
+"*extra-small*, cette cellule doit s'étendre sur 6 des 12 minuscules "
+"colonnes. Pour autant, on peut ajouter des classes spécifiques pour les "
+"autres modes. Par exemple : "
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:243
+msgid ""
+"This way the cell will span 6 columns in extra-small mode, 4 in small mode, "
+"2 in medium mode and only 1 in large mode."
+msgstr ""
+"Ainsi, une cellule s'étendra sur 6 colonnes dans mode *extra-small*, sur 4 "
+"en mode *small*, sur 2 en mode *medium* et seulement sur 1 en mode *large*."
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:245
+msgid ""
+"You don't have to specify all 4 levels though. The classes default to a "
+"standard 12-columns span below there own display mode and keep their "
+"specified column-span for larger display modes. ``<div class=\"col-"
+"md-4\"></div>`` is therefore equivalent to ``<div class=\"col-xs-12 col-"
+"sm-12 col-md-4 col-lg-4\"></div>`` and ``<div class=\"col-sm-6 col-"
+"lg-3\"></div>`` is equivalent to ``<div class=\"col-xs-12 col-sm-6 col-md-6 "
+"col-lg-3\"></div>``."
+msgstr ""
+"Vous n'avez pas besoin de spécifier les 4 modes. Les classes utilisent une "
+"largeur de 12 colonnes par défaut en dessous de leur mode d'affichage et "
+"gardent leur largeur spécifiée pour des modes d'affichage plus grand. ``<div"
+" class=\"col-md-4\"></div>`` est équivalent à  ``<div class=\"col-xs-12 col-"
+"sm-12 col-md-4 col-lg-4\"></div>`` et ``<div class=\"col-sm-6 col-"
+"lg-3\"></div>`` est équivalent à ``<div class=\"col-xs-12 col-sm-6 col-md-6 "
+"col-lg-3\"></div>``."
+
+#: ../../source/customizing_look_and_feel/07_designing_responsive_portal/responsive.rst:252
+msgid "Available classes"
+msgstr "Classes disponibles"

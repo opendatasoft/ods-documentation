@@ -1,0 +1,522 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-12 15:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2018\n"
+"Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:2
+msgid "Join dataset processor"
+msgstr "Prozessor \"Datensätze verbinden\""
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:4
+msgid ""
+"This processor allows to join 2 datasets together. However, these 2 datasets"
+" must have a common field to be joined."
+msgstr ""
+"Dieser Prozessor ermöglicht es, zwei Datensätze zu verbinden. Beide "
+"Datensätze müssen jedoch ein gemeinsames Feld haben, damit sie verbunden "
+"werden können."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:6
+msgid ""
+"Example: a dataset A could be enriched with more data, which are in a "
+"dataset B. If datasets A and B have one field in common, it is possible to "
+"join these datasets together, in order to retrieve a field from dataset B et"
+" add it to dataset A."
+msgstr ""
+"Beispiel: ein Datensatz A kann mit Daten angereichert werden, die sich in "
+"einem Datensatz B befinden. Wenn die Datensätze A und B ein gemeinsames Feld"
+" haben, können diese Datensätze zusammengefügt werden, um ein Feld von "
+"Datensatz B in Datensatz A zu übertragen."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:8
+msgid "Important"
+msgstr "Wichtig"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:11
+msgid ""
+"By default, the Join dataset processor can only be used with remote datasets"
+" that have fewer than 100,000 records. In addition to that, when applying a "
+"join dataset processor to a scheduled dataset, the join is only reapplied "
+"when the resource has changed. This means that given a scheduled dataset A, "
+"that has a join dataset processor that pulls values from dataset B, if there"
+" are new values in dataset B but the resources of dataset A haven't changed,"
+" the scheduled processing will not pull the new values from B."
+msgstr ""
+"Der Prozessor \"Datensätze verbinden\" kann standardmäßig nur mit Remote-"
+"Datensätzen mit weniger als 100.000 Einträgen verwendet werden. Wenn ein "
+"Prozessor \"Datensätze verbinden\" zusätzlich für einen geplanten Datensatz "
+"eingesetzt wird, so wird die Verbindung erst dann angewendet, wenn sich die "
+"Ressource geändert hat. Nehmen wir das Beispiel, dass ein Prozessor "
+"\"Datensätze verbinden\" für einen geplanten Datensatz A Werte aus einem "
+"Datensatz B abruft. Befinden sich jetzt neue Werte im Datensatz B und haben "
+"sich die Ressourcen von Datensatz A nicht geändert, ruft die geplante "
+"Verarbeitung keine neuen Werte aus Datensatz B ab."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:14
+msgid "Setting the processor"
+msgstr "Den Prozessor einrichten"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:16
+msgid ""
+"To set the parameters of the Join dataset processor, follow the indications "
+"from the table below."
+msgstr ""
+"Befolgen Sie die Anweisungen der unteren Tabelle, um die Parameter des "
+"Prozessors \"Datensätze verbinden\" einzurichten."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:21
+msgid "Label"
+msgstr "Beschriftung"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:22
+msgid "Description"
+msgstr "Beschreibung"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:23
+msgid "Mandatory"
+msgstr "Obligatorisch"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:24
+msgid "Dataset"
+msgstr "Datensatz"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:25
+msgid ""
+"Dataset used for the join. It can be selected from the portal's datasets or "
+"from OpenDataSoft's network."
+msgstr ""
+"Datensatz, der für die Verbindung verwendet wird; dieser kann aus den "
+"Datensätzen des Portals oder dem Netzwerk von OpenDataSoft ausgewählt "
+"werden."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:26
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:29
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:32
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:35
+msgid "yes"
+msgstr "ja"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:27
+msgid "Local Key"
+msgstr "Lokaler Schlüssel"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:28
+msgid ""
+"Local field that will be used to identify the corresponding records in the "
+"remote dataset. More than one key can be specified."
+msgstr ""
+"Lokales Feld, mit dem die entsprechenden Einträge im Remote-Datensatz "
+"identifiziert werden sollen. Es kann mehr als ein Schlüssel angegeben "
+"werden."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:30
+msgid "Remote Key"
+msgstr "Remote-Schlüssel"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:31
+msgid "Remote field corresponding to the local key. It can be a list."
+msgstr ""
+"Remote-Feld mit dem lokalen Schlüssel. Hierbei kann es sich um eine Liste "
+"handeln."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:33
+msgid "Output Fields"
+msgstr "Ausgabefelder"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:34
+msgid "List of fields to retrieve from the remote dataset"
+msgstr "Die Liste der abzurufenden Felder des Remote-Datensatzes."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:36
+msgid "Retrieve All Fields"
+msgstr "Alle Felder abrufen"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:37
+msgid "Set to retrieve all the fields from the remote dataset"
+msgstr "Um alle Felder des Remote-Datensatzes abzurufen."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:38
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:41
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:44
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:47
+msgid "no"
+msgstr "nein"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:39
+msgid "Case Sensitive"
+msgstr "Groß- und Kleinschreibung beachten"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:40
+msgid ""
+"Set to retrieve the field name without accents and in lower case format"
+msgstr "Um den Feldnamen ohne Akzente und in Kleinbuchstabenformat abzurufen"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:42
+msgid "One line"
+msgstr "Eine Zeile"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:43
+msgid ""
+"In some specific cases, the remote dataset may contain more than one row "
+"matching the local key. In which case, you may want to either collapse "
+"duplicates (that is, generate a single row which will contain multi-valued "
+"fields) or not."
+msgstr ""
+"In bestimmten Fällen kann der Remote-Datensatz mehr als eine Zeile "
+"enthalten, die mit dem lokalen Schlüssel übereinstimmen. In diesem Fall "
+"können Sie die Duplikate minimieren (d. h. eine einzige Zeile erzeugen, die "
+"mehrwertige Felder enthält) oder auch nicht. "
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:45
+msgid "Separator"
+msgstr "Trennzeichen"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:46
+msgid ""
+"To fill if One line is set. Specifies the character to use to separate "
+"values in the generated field."
+msgstr ""
+"Auszufüllen, wenn \"Eine Zeile\" eingestellt ist. Bestimmt das Zeichen, das "
+"verwendet werden soll, um Werte im generierten Feld zu trennen."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:51
+msgid "Examples"
+msgstr "Beispiele"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:54
+msgid "Simple join"
+msgstr "Einfache Verbindung"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:56
+msgid ""
+"Dataset A: list of taxi stations in Paris (dataset name: "
+"paris_taxis_stations)."
+msgstr ""
+"Datensatz A: Liste der Taxistationen in Paris (Der Name dieses Datensatzes "
+"lautet: paris_taxis_stations)."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:61
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:76
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:88
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:114
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:132
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:150
+msgid "station_id"
+msgstr "station_id"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:62
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:90
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:115
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:134
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:152
+msgid "station_name"
+msgstr "station_name"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:63
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:91
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:116
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:135
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:153
+msgid "station_address"
+msgstr "station_adresse"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:64
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:78
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:92
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:117
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:120
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:136
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:154
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:158
+msgid "1"
+msgstr "1"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:65
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:94
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:118
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:156
+msgid "Tour Eiffel"
+msgstr "Eiffelturm"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:66
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:95
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:119
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:122
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:157
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:161
+msgid "69 quai Branly, 75007 Paris"
+msgstr "69 quai Branly, 75007 Paris"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:67
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:80
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:96
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:123
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:140
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:162
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:192
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:202
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:204
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:234
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:238
+msgid "2"
+msgstr "2"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:68
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:98
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:124
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:142
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:164
+msgid "Rennes - Montparnasse"
+msgstr "Rennes - Montparnasse"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:69
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:99
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:125
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:143
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:165
+msgid "1 place du dix huit Juin 1940, 75006 Paris"
+msgstr "1 place du dix huit Juin 1940, 75006 Paris"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:71
+msgid "Dataset B: number of taxis waiting per station in Paris."
+msgstr "Datensatz B: Die Anzahl der Taxis, die pro Station in Paris warten."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:77
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:89
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:133
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:151
+msgid "number"
+msgstr "Anzahl"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:79
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:93
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:137
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:155
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:159
+msgid "10"
+msgstr "10"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:81
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:97
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:141
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:163
+msgid "15"
+msgstr "15"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:83
+msgid ""
+"Dataset A after being enriched with a field from dataset B, using the Join "
+"dataset processor:"
+msgstr ""
+"Datensatz A, nachdem er unter Einsatz des Prozessors \"Datensätze "
+"verbinden\" mit einem Feld aus Datensatz B angereichert wurde:"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:102
+msgid "Join with \"One line\" parameter set"
+msgstr "Wenn der Parameter \"Eine Zeile\" eingestellt ist"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:104
+msgid "Note"
+msgstr "Hinweis"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:107
+msgid ""
+"The example datasets used in the following example are the same as in the "
+"previous one."
+msgstr ""
+"Die Beispieldatensätze, die im folgenden Beispiel verwendet werden, sind "
+"dieselben wie im vorherigen Beispiel."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:109
+msgid "Dataset A contains two rows for the first station:"
+msgstr "Datensatz A enthält zwei Zeilen für die erste Station:"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:121
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:160
+msgid "Quai Branly"
+msgstr "Quai Branly"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:127
+msgid ""
+"If One line is set (with ``|`` set as separator), the Join will result in:"
+msgstr ""
+"Wenn \"Eine Zeile\" eingestellt ist (mit dem Trennzeichen \"|\"), erhält man"
+" folgendes Ergebnis:"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:138
+msgid "Tour Eiffel|Quai Branly"
+msgstr "Eiffelturm|Quai Branly"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:139
+msgid "69 quai Branly, 75007 Paris|69 quai Branly, 75007 Paris"
+msgstr "69 quai Branly, 75007 Paris|69 quai Branly, 75007 Paris"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:145
+msgid "However, if One line is not set, the Join will result in:"
+msgstr "Wenn \"Eine Zeile\" nicht eingestellt ist, erhält man folgendes Ergebnis:"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:168
+msgid "Join with different field types"
+msgstr "Verbindung mit verschiedenen Feldtypen"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:170
+msgid ""
+"Integers, decimals and text field containing numerical values can be joined "
+"together."
+msgstr ""
+"Ganze und Dezimalzahlen sowie Textfelder mit numerischen Werten können "
+"zusammengefügt werden."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:172
+msgid ""
+"Dataset A: with decimal fields and text fields containing numerical values."
+msgstr ""
+"Datensatz A: mit Dezimalfeldern und Textfeldern mit numerischen Werten."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:177
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:199
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:229
+msgid "insee_code (text)"
+msgstr "insee_code (Text)"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:178
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:200
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:230
+msgid "bloom_competition_result (decimal)"
+msgstr "bloom_competition_result (Dezimalzahl)"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:179
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:201
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:233
+msgid "01262"
+msgstr "01262"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:180
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:184
+msgid "2.0"
+msgstr "2.0"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:181
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:218
+msgid "90010"
+msgstr "90010"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:182
+msgid "4.0"
+msgstr "4.0"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:183
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:203
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:221
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:237
+msgid "57355"
+msgstr "57355"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:186
+msgid "Dataset B: with integer fields."
+msgstr "Datensatz B: mit Ganzzahlfeldern"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:191
+msgid "bloom_ranks (integer)"
+msgstr "bloom_ranks (Ganzzahl)"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:194
+msgid ""
+"Dataset A after using Join dataset: the matching between values ``2`` and "
+"``2.0`` is successful despite the type difference."
+msgstr ""
+"Datensatz A nach der Verwendung des Prozessors \"Datensätze verbinden\": Die"
+" Übereinstimmung zwischen den Werten \"2\" und \"2.0\" ist trotz des "
+"unterschiedlichen Typs erfolgreich."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:206
+msgid ""
+"It is possible to a second Join dataset processor, such as this dataset C:"
+msgstr ""
+"Es ist möglich, einen zweiten Prozessor zur Datensatzverbindung, z. B. für "
+"diesen Datensatz C, zu verwenden:"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:211
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:231
+msgid "city (text)"
+msgstr "city (Text)"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:212
+msgid "insee_code (integer)"
+msgstr "insee_code (Ganzzahl)"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:213
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:232
+msgid "postal_code (text)"
+msgstr "postal_code (Text)"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:214
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:235
+msgid "Montluel"
+msgstr "Montluel"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:215
+msgid "1262"
+msgstr "1262"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:216
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:236
+msgid "01120"
+msgstr "01120"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:217
+msgid "Belfort"
+msgstr "Belfort"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:219
+msgid "90000"
+msgstr "90000"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:220
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:239
+msgid "Kalhausen"
+msgstr "Kalhausen"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:222
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:240
+msgid "57412"
+msgstr "57412"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:224
+msgid "Dataset A after being joined with datasets B and C:"
+msgstr ""
+"Datensatz A, nachdem er mit Datensatz B und Datensatz C verbunden wurde:"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:242
+msgid ""
+"Even though the insee_code was not in the same type, the matching happened. "
+"The matching worked even for the value ``1262`` in the first dataset (note "
+"the absence of leading 0, due to it being an integer value), that matched "
+"against the value ``01262`` in the second dataset. While most column types "
+"can be retrieved by using the Join dataset processor, file type columns do "
+"not yield the actual resource through the processor but instead yield the "
+"name of the underlying resource."
+msgstr ""
+"Trotz des unterschiedlichen Formats beim insee_code war der Abgleich "
+"erfolgreich. Der Abgleich funktionierte sogar für den Wert \"1262\" im "
+"ersten Datensatz (beachten Sie das Fehlen der führenden 0, da es ein "
+"Ganzzahlwert ist), der dem Wert \"01262\" im zweiten Datensatz zugeordnet "
+"wurde. Während die meisten Spaltentypen mit dem Prozessor \"Datensätze "
+"verbinden\" abgerufen werden können, geben Dateitypspalten nicht die "
+"tatsächliche Ressource über den Prozessor an, sondern stattdessen den Namen "
+"der hinterlegten Ressource."

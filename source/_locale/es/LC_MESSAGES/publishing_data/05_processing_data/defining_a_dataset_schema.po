@@ -1,0 +1,995 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-12 15:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018\n"
+"Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:2
+msgid "Defining a dataset schema"
+msgstr "Definir un esquema de conjunto de datos"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:4
+msgid ""
+"Each dataset follows a schema. Fully defining and configuring a dataset "
+"schema means:"
+msgstr ""
+"Cada uno de los conjuntos de datos sigue un esquema. Definir y configurar "
+"por completo un esquema de conjunto de datos significa:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:6
+msgid ":ref:`Changing a dataset field label<changinglabel>` (1)"
+msgstr ""
+":ref:`Cambiar una etiqueta de campo de conjunto de datos<changinglabel>` (1)"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:7
+msgid ":ref:`Adding a description<addingdescription>` to a dataset field (2)"
+msgstr ""
+":ref:`Añadir una descripción<addingdescription>` a un campo de conjunto de "
+"datos (2)"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:8
+msgid ":ref:`Choosing a type<choosingtype>` for each field (3)"
+msgstr ":ref:`Elegir un tipo<choosingtype>` para cada campo (3)"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:9
+msgid ""
+":ref:`Setting up relevant fields as facets<settingfacets>` to define filters"
+" for the dataset (4)"
+msgstr ""
+":ref:`Configurar los campos pertinentes como facetas<settingfacets>` para "
+"definir los filtros del conjunto de datos (4)"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:10
+msgid ""
+":ref:`Configuring options<configuringoptions>` for each field, depending on "
+"their type and whether they are set up as facets or not (5)"
+msgstr ""
+":ref:`Configurar las opciones<configuringoptions>` para cada uno de los "
+"campos, en función de su tipo y de si están configurados como facetas o no "
+"(5)"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:11
+msgid ":ref:`Ordering the fields<orderingfields>` in the dataset (6)"
+msgstr ":ref:`Ordenar los campos<orderingfields>` del conjunto de datos (6)"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:12
+msgid ":ref:`Discarding fields<discardingfields>` from the dataset (7)"
+msgstr ":ref:`Descartar campos<discardingfields>` del conjunto de datos (7)"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:20
+msgid "Changing a label"
+msgstr "Cambiar una etiqueta"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:22
+msgid ""
+"The OpenDataSoft platform retrieves the default field labels found in the "
+"source dataset. It is however possible to change each dataset field label."
+msgstr ""
+"La plataforma OpenDataSoft recupera las etiquetas de campo predeterminadas "
+"que se encuentran en el conjunto de datos de origen. Sin embargo, todas las "
+"etiquetas de campo del conjunto de datos se pueden cambiar."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:24
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:81
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:90
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:95
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:108
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:121
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:143
+msgid "Note"
+msgstr "Nota"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:27
+msgid ""
+"We highly recommend to choose well-written, explicit labels. Also keep in "
+"mind that since these labels will be displayed in the front office for all "
+"portal users, it might be preferable to choose simple labels instead of "
+"business-specific terms, to make sure that the data can be understood by a "
+"wider audience."
+msgstr ""
+"Recomendamos vivamente elegir etiquetas explícitas y descriptivas. Además, "
+"puesto que se visualizarán en el front office de todos los usuarios del "
+"portal, es preferible elegir etiquetas sencillas antes que términos de "
+"negocio específicos a fin de que los datos sean comprensibles para un "
+"público más amplio."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:29
+msgid "To change a label:"
+msgstr "Para cambiar una etiqueta:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:31
+msgid ""
+"In the preview area of the Processing tab, select the current label of the "
+"field of your choice."
+msgstr ""
+"En el área de vista previa de la ficha Procesadores, seleccione la etiqueta "
+"actual del campo que desee."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:32
+msgid "Type a new label. It can contain special characters."
+msgstr "Escriba una etiqueta nueva. Puede contener caracteres especiales."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:33
+msgid ""
+"Click outside the label area or press Enter for the changes to be taken into"
+" account."
+msgstr ""
+"Haga clic fuera del área de la etiqueta o pulse Entrar para que se tengan en"
+" cuenta los cambios."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:35
+msgid "Caution"
+msgstr "Precaución"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:38
+msgid ""
+"Changing the label of a field does not modify in any way the technical "
+"identifier of that field, which can be found in the Configuration menu of "
+"the dataset."
+msgstr ""
+"Al cambiar la etiqueta de un campo no se modifica en modo alguno el "
+"identificador técnico de ese campo, que se puede encontrar en el menú "
+"Configuración del conjunto de datos."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:43
+msgid "Adding a description to a field"
+msgstr "Añadir una descripción a un campo"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:45
+msgid ""
+"Descriptions can be added to dataset fields for more context or precision."
+msgstr ""
+"Se pueden añadir descripciones a los campos del conjunto de datos para "
+"proporcionar más contexto o precisión."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:47
+msgid "To add a description to a field:"
+msgstr "Para añadir una descripción a un campo:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:49
+msgid ""
+"In the preview area of the Processing tab, click in the Description text box"
+" of the field of your choice."
+msgstr ""
+"En el área de vista previa de la ficha Procesadores, haga clic en el cuadro "
+"de texto Descripción del campo que desee."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:50
+msgid "Type the related description."
+msgstr "Escriba la descripción correspondiente."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:51
+msgid ""
+"Click outside the Description text box for the description to be taken into "
+"account."
+msgstr ""
+"Haga clic fuera del cuadro de texto Descripción para que se tenga en cuenta "
+"la descripción."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:53
+msgid "Field descriptions will then be displayed in the front office:"
+msgstr "Las descripciones de los campos se visualizarán en el front office:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:55
+msgid "in the Data schema section of the Information tab of the dataset"
+msgstr ""
+"En la sección Esquema de datos de la ficha Información del conjunto de datos"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:56
+msgid "in the tooltip of their related fields, in the Table tab"
+msgstr ""
+"En la ayuda de herramienta de los campos correspondientes, dentro de la "
+"ficha de tabla"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:61
+msgid "Choosing a field type"
+msgstr "Elegir un tipo de campo"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:63
+msgid ""
+"Fields are characterized by types. Depending on the chosen field type, the "
+"platform will process and display records in a specific way."
+msgstr ""
+"Los campos se caracterizan por tipos. Según el tipo de campo elegido, la "
+"plataforma procesará y visualizará los registros de un modo concreto."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:65
+msgid "To choose a type for a field:"
+msgstr "Para elegir un tipo para un campo:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:67
+msgid ""
+"In the preview area of the Processing tab, click on the field type list box "
+"of the field of your choice."
+msgstr ""
+"En el área de vista previa de la ficha Procesadores, haga clic en el cuadro "
+"de lista de tipos de campo del campo que desee."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:68
+msgid "Choose the right type for this field."
+msgstr "Elija el tipo apropiado para este campo."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:70
+msgid ""
+"There are 8 different types: date, datetime, decimal, integer, geopoint, "
+"geoshape, text and file."
+msgstr ""
+"Hay 8 tipos: Fecha, Fecha y hora, Decimal, Entero, Punto geográfico, Forma "
+"geográfica, Texto y Archivo."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:75
+msgid "Type"
+msgstr "Tipo"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:76
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:168
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:196
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:225
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:249
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:281
+msgid "Description"
+msgstr "Descripción"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:77
+msgid "Date"
+msgstr "Fecha"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:78
+msgid ""
+"Field values are dates. The ideal format is the ISO 8601 format, which is "
+"``YYYY-mm-dd``. Other formats are also understood by the platform, such as: "
+"``YYYY/mm/dd`` or ``dd/mm/YYYY``."
+msgstr ""
+"Los valores de campo son fechas. El formato ideal es ISO 8601, que es "
+"``AAAA-mm-dd``. La plataforma también entiende otros formatos, como: "
+"``AAAA/mm/dd`` o ``dd/mm/AAAA``."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:84
+msgid ""
+"The platform will try to guess as accurately as possible the input date "
+"format. However, in case of bad detection or ambiguity, use the "
+":doc:`Normalize Date processor<processors/normalize_date>` to define the "
+"parsing format of the date field."
+msgstr ""
+"La plataforma intentará averiguar con la mayor exactitud posible el formato "
+"de la fecha de entrada. Sin embargo, en caso de detección incorrecta o "
+"ambigüedad, utilice el :doc:`procesador Normalizar "
+"fecha<processors/normalize_date>` para definir el formato de análisis del "
+"campo de fecha."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:86
+msgid "DateTime"
+msgstr "Fecha y hora"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:87
+msgid ""
+"Field values are a combination of a date and a time. The ideal format is the"
+" ISO 8601 format, which is ``YYYY-mm-ddTHH:MM:ss+00:00``, ``YYYY-mm-"
+"ddTHH:MM:ssZ`` or ``YYYYmmddTHHMMssZ``. Other formats are also understood by"
+" the platform, such as: ``YYYY-mm-dd-HH:MM:ss`` or or ``YYYY-mm-dd "
+"HH:MM:ss``."
+msgstr ""
+"Los valores de campo son una combinación de fecha y hora. El formato ideal "
+"es ISO 8601, que es ``AAAA-mm-ddTHH:MM:ss+00:00``, ``AAAA-mm-ddTHH:MM:ssZ`` "
+"o ``AAAAmmddTHHMMssZ``. La plataforma también entiende otros formatos, como:"
+" ``AAAA-mm-dd-HH:MM:ss`` o ``AAAA-mm-dd HH:MM:ss``."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:93
+msgid ""
+"The platform will try to guess as accurately as possible the input datetime "
+"format. However, in case of bad detection or ambiguity, use the "
+":doc:`Normalize Date processor<processors/normalize_date>` to define the "
+"parsing format of the datetime field."
+msgstr ""
+"La plataforma intentará averiguar con la mayor exactitud posible el formato "
+"de la fecha y hora de entrada. Sin embargo, en caso de detección incorrecta "
+"o ambigüedad, utilice el :doc:`procesador Normalizar "
+"fecha<processors/normalize_date>` para definir el formato de análisis del "
+"campo de fecha y hora."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:98
+msgid ""
+"By default, time records are in UTC timezone. To change the timezone, use "
+"the :doc:`Set Timezone processor<processors/set_timezone>`."
+msgstr ""
+"De forma predeterminada, los registros de hora están en la zona horaria UTC."
+" Para cambiar la zona horaria, utilice el :doc:`procesador Establecer zona "
+"horaria<processors/set_timezone>`."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:100
+msgid "Decimal"
+msgstr "Decimal"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:101
+msgid ""
+"Field values are decimal numbers. Valid separators for the decimal part are "
+"``.`` or ``,``."
+msgstr ""
+"Los valores de campo son números decimales. Los separadores válidos de la "
+"parte decimal son ``.`` y``,``."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:104
+msgid "Geo point"
+msgstr "Punto geográfico"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:105
+msgid ""
+"Field values are a single geographical location expressed in the format "
+"``<LAT>,<LON>``, for instance ``45.8,2.5``."
+msgstr ""
+"Los valores de campo son una ubicación geográfica única expresada con el "
+"formato ``<LAT>,<LON>``, por ejemplo ``45.8,2.5``."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:111
+msgid ""
+"If your dataset contains two fields, latitude and longitude, use the "
+":doc:`Create GeoPoint processor<processors/create_geopoint>` to create a "
+"valid geo point field."
+msgstr ""
+"Si el conjunto de datos contiene 2 campos, latitud y longitud, utilice el "
+":doc:`procesador Crear punto geográfico<processors/create_geopoint>` para "
+"crear un campo de punto geográfico válido."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:113
+msgid "Geo shape"
+msgstr "Forma geográfica"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:114
+msgid ""
+"Field values are geographical shapes expressed in `GeoJSON "
+"<http://geojson.org/geojson-spec.html>`_. For example :"
+msgstr ""
+"Los valores de campo son formas geográficas expresadas en `GeoJSON "
+"<http://geojson.org/geojson-spec.html>`_. Por ejemplo:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:124
+msgid "Feature collections are not supported."
+msgstr "No se permiten las colecciones de funciones."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:126
+msgid "Integer"
+msgstr "Entero"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:127
+msgid ""
+"Field values are integer numbers. If a floating point value is found, it is "
+"automatically cast to its integer part."
+msgstr ""
+"Los valores de campo son números enteros. Si se encuentra un valor de punto "
+"flotante, automáticamente se convierte a su parte entera."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:130
+msgid "Text"
+msgstr "Texto"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:131
+msgid "Field values are textual data."
+msgstr "Los valores de campo son datos de texto."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:133
+msgid "File"
+msgstr "Archivo"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:134
+msgid ""
+"Field values are files sourced with one of the available methods to "
+":doc:`create a dataset with "
+"images<../01_creating_a_dataset/creating_dataset_with_images>` (with the "
+"File processor, through an archive file or with a specific extractor), "
+"creating a field which default type is file. This field type is only "
+"available in that case."
+msgstr ""
+"Los valores de campo son archivos obtenidos por medio de uno de los métodos "
+"disponibles para :doc:`crear un conjunto de datos con "
+"imágenes<../01_creating_a_dataset/creating_dataset_with_images>` (con el "
+"procesador Archivo, un archivo archivador o un extractor específico); de "
+"forma predeterminada, el campo creado es de tipo archivo. Este tipo de campo"
+" solo está disponible en ese caso."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:139
+msgid "Setting up fields as facets"
+msgstr "Configurar campos como facetas"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:141
+msgid ""
+"Facets define the filters of a dataset, which are displayed on the left of "
+"the dataset's visualization, in the front office. These filters have several"
+" purposes: they allow the users to find specific, precise records into a "
+"dataset, but they also allow the creation of charts afterward (if a field's "
+"records are other than numbers, they will be usable in the Chart Builder and"
+" in the Analyze view only if they are set up as facets)."
+msgstr ""
+"Las facetas definen los filtros de un conjunto de datos, que se muestran a "
+"la izquierda de la visualización del conjunto de datos, en el front office. "
+"Estos filtros tienen varios fines: permiten a los usuarios encontrar con "
+"precisión registros específicos dentro de un conjunto de datos, así como "
+"crear gráficos posteriormente (si los registros de un campo son diferentes "
+"de números, se podrán utilizar en el compilador de gráficos y en la vista de"
+" análisis solo si están configurados como facetas)."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:146
+msgid ""
+"Fields which type is either geo shape or geo point cannot be set up as "
+"facets."
+msgstr ""
+"Los campos de tipo forma geográfica o punto geográfico no se pueden "
+"configurar como facetas."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:148
+msgid "To set up a field as a facet:"
+msgstr "Para configurar un campo como faceta:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:150
+msgid ""
+"In the preview area of the Processing tab, choose the field you want to set "
+"up as a facet. Choose a field relevant enough to become a filter."
+msgstr ""
+"En el área de vista previa de la ficha Procesadores, elija el campo que "
+"desea configurar como faceta. Elija un campo lo suficientemente relevante "
+"para ser un filtro."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:151
+msgid "Click the |icon-facet| button."
+msgstr "Haga clic en el botón |icon-facet|."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:156
+msgid "Configuring field options"
+msgstr "Configurar opciones de campos"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:158
+msgid ""
+"In the preview area of the Processing tab, click the |icon-configuration| "
+"button of the field of your choice."
+msgstr ""
+"En el área de vista previa de la ficha Procesadores, haga clic en el botón "
+"|icon-configuration| del campo que desee."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:159
+msgid ""
+"Configuration options change depending on the type of the field and on "
+"whether the field is set up as a facet or not. Follow the right instructions"
+" depending on the chosen configuration option."
+msgstr ""
+"Las opciones de configuración varían según el tipo del campo y si el campo "
+"está configurado como faceta o no. Siga las instrucciones apropiadas en "
+"función de la opción de configuración elegida."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:162
+msgid "Configuration options available for every field"
+msgstr "Opciones de configuración disponibles para todos los campos"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:167
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:195
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:224
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:248
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:280
+msgid "Configuration option"
+msgstr "Opción de configuración"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:169
+msgid "Name"
+msgstr "Nombre"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:170
+msgid ""
+"Technical identifier of the field. In contrary to the label, the technical "
+"identifier does not have aesthetic purposes and thus cannot contain special "
+"characters, including spaces. Technical identifiers can be used for instance"
+" when creating a custom tooltip with HTML."
+msgstr ""
+"Identificador técnico del campo. A diferencia de la etiqueta, el "
+"identificador técnico no tiene una finalidad estética, de modo que no puede "
+"contener caracteres especiales (como espacios). Los identificadores técnicos"
+" se pueden emplear, por ejemplo, al crear una ayuda de herramienta "
+"personalizada con HTML."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:172
+msgid "Warning"
+msgstr "Aviso"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:175
+msgid ""
+"Changing the technical identifier of a field could break reuses of the "
+"related dataset (custom tooltip, custom tab or pages). It could also be a "
+"problem if the source of the dataset is (regularly) updated: when replacing "
+"a source with a newer one, the platform checks the technical identifier of "
+"the fields of both sources in order to find a match between the two -then "
+"replacing the old data with the new ones. If technical identifiers are not "
+"the same anymore, the dataset cannot be updated."
+msgstr ""
+"La modificación del identificador técnico de un campo puede romper las "
+"reutilizaciones del conjunto de datos relacionado (ayuda de herramienta, "
+"ficha o páginas personalizadas). También puede plantear un problema si se "
+"actualiza (periódicamente) el origen del conjunto de datos: al sustituir un "
+"origen por otro nuevo, la plataforma comprobará el identificador técnico de "
+"los campos de ambos orígenes en busca de una coincidencia entre ambos y "
+"sustituirá los datos antiguos por los nuevos. Si los identificadores "
+"técnicos ya no son los mismos, no podrá actualizar el conjunto de datos."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:177
+msgid "To change the technical identifier of a field:"
+msgstr "Para cambiar el identificador técnico de un campo:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:179
+msgid ""
+"Select the current technical identifier of the field, written in the text "
+"box under \"Name\"."
+msgstr ""
+"Seleccione el identificador técnico actual del campo, que figura en el "
+"cuadro de texto bajo \"Nombre\"."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:180
+msgid "Type a new technical identifier. It musn't contain special characters."
+msgstr ""
+"Escriba un identificador técnico nuevo. No puede contener caracteres "
+"especiales."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:181
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:263
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:272
+msgid ""
+"Click outside the text box or press Enter for the change to be taken into "
+"account."
+msgstr ""
+"Haga clic fuera del cuadro de texto o pulse Entrar para que se tenga en "
+"cuenta el cambio."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:183
+msgid "Unique ID"
+msgstr "ID exclusivo"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:184
+msgid ""
+"Each record is uniquely identified by its identifier, which is by default "
+"computed as the fingerprint of all the record fields values. If the Unique "
+"ID option is activated for a field, records with the same identifier (or "
+"value) are deleted for only the last/oldest one to stay in the dataset. It "
+"is most useful for real-time datasets, to make sure that instead of adding "
+"new records every time the dataset is updated, new values replace the old "
+"ones."
+msgstr ""
+"Cada uno de los registros se identifica mediante un identificador exclusivo,"
+" que de forma predeterminada se calcula como la huella digital de todos los "
+"valores de campos de registros. Si la opción de ID exclusivo está activada "
+"para un campo, se suprimen los registros con el mismo identificador (o "
+"valor) de tal modo que solo permanezca en el conjunto de datos el registro "
+"último/más antiguo. Esto resulta especialmente útil en el caso de los "
+"conjuntos de datos en tiempo real para asegurarse de que, en lugar de añadir"
+" nuevos registros cada vez que se actualiza el conjunto de datos, los "
+"valores nuevos sustituyen a los anteriores."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:186
+msgid "To activate the Unique ID option of a field: Tick the Unique ID box."
+msgstr ""
+"Para activar la opción de ID exclusivo de un campo: Marque la casilla ID "
+"exclusivo."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:190
+msgid "Configuration options for date & datetime fields"
+msgstr "Opciones de configuración para los campos de fecha o fecha y hora"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:197
+msgid "Precision"
+msgstr "Precisión"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:198
+msgid "Degree of precision of the date or datetime field."
+msgstr "Grado de precisión del campo de fecha o fecha y hora."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:200
+msgid "To define a degree of precision:"
+msgstr "Para definir un grado de precisión:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:202
+msgid "Click on the Precision list box of the field of your choice."
+msgstr "Haga clic en el cuadro de lista Precisión del campo que desee."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:203
+msgid "Choose a degree of precision:"
+msgstr "Elija un grado de precisión:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:205
+msgid "For date fields:"
+msgstr "Para los campos de fecha:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:207
+msgid "year: only the year of the date is displayed in the dataset"
+msgstr "año: solo se visualiza el año de la fecha en el conjunto de datos"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:208
+msgid ""
+"month: only the month and year of the date are displayed in the dataset"
+msgstr ""
+"mes: solo se visualiza el mes y el año de la fecha en el conjunto de datos"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:209
+msgid "day: the full date (day, month and year) is displayed in the dataset"
+msgstr ""
+"día: se visualiza la fecha completa (día, mes y año) en el conjunto de datos"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:211
+msgid "For datetime fields:"
+msgstr "Para los campos de fecha y hora:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:213
+msgid "hour"
+msgstr "hora"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:214
+msgid "minute"
+msgstr "minuto"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:216
+msgid ""
+"As for the datetime precisions, the full datetime (hour and minutes) is "
+"displayed in the dataset. The difference is in the Analyze view and in the "
+"Chart Builder where the degree of precision is available to configure the "
+"chart."
+msgstr ""
+"Al igual que para las precisiones de fecha y hora, se visualiza la fecha y "
+"hora completa (hora y minutos) en el conjunto de datos. La diferencia está "
+"en la vista de análisis y el compilador de gráficos, donde el grado de "
+"precisión está disponible para configurar el gráfico."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:219
+msgid "Configuration options for decimals & integer fields"
+msgstr "Opciones de configuración para los campos de decimales y enteros"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:226
+msgid "Unit"
+msgstr "Unidad"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:227
+msgid "Unit of the field, to display along with the decimal or integer value."
+msgstr ""
+"Unidad del campo, que se visualizará junto con el valor decimal o entero."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:229
+msgid "To define a unit for a field:"
+msgstr "Para definir una unidad para un campo:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:231
+msgid "Click on the Unit list box of the field of your choice."
+msgstr "Haga clic en el cuadro de lista Unidad del campo que desee."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:232
+msgid "Choose the right unit among the list."
+msgstr "Elija la unidad apropiada de la lista."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:234
+msgid "Enforce the number of decimals to display"
+msgstr "Aplicar el número de decimales al visualizar"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:235
+msgid "Chosen number of decimals for all values of the field."
+msgstr "Número de decimales seleccionado para todos los valores del campo."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:237
+msgid "To define a number of decimals for a field:"
+msgstr "Para definir un número de decimales para un campo:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:239
+msgid "Tick the \"Enforce the number of decimals to display\" box."
+msgstr "Marque la casilla \"Aplicar el número de decimales al visualizar\"."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:240
+msgid ""
+"In the text area below, type the number of decimals of your choice, or use "
+"the arrows to do so."
+msgstr ""
+"En el área de texto que figura a continuación, escriba el número de "
+"decimales que desee o utilice las flechas para seleccionarlo."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:243
+msgid "Configuration options for text fields"
+msgstr "Opciones de configuración para los campos de texto"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:250
+msgid "Sortable"
+msgstr "Ordenable"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:251
+msgid ""
+"By default, only numerical fields (decimals and integers) are sortable. This"
+" option activates sorting on textual fields. It is then possible, when in "
+"the Table view of the dataset in the front office, to sort text fields in an"
+" alphabetical order."
+msgstr ""
+"De forma predeterminada, solo se pueden ordenar los campos numéricos "
+"(decimales y enteros). Esta opción activa la ordenación en los campos de "
+"texto. De este modo, los campos de texto se pueden ordenar alfabéticamente "
+"en la vista de tabla del conjunto de datos en el front office."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:253
+msgid "To make a field sortable: Tick the \"Sortable\" box."
+msgstr "Para establecer un campo como ordenable: Marque la casilla \"Ordenable\"."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:256
+msgid "Multivalued"
+msgstr "Multivalor"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:257
+msgid ""
+"This option is for multi-valued records separated by one same separator. "
+"Example: *France,UK,USA* When set up as a facet, each of the field's records"
+" values appears as a separate entry in the filters section. When clicking on"
+" one of the entry, all the other entries which are not related (meaning the "
+"entries which never appear in the same record as part of a multi-values "
+"combination) automatically disappear -only the related entries remain as "
+"available filter entries."
+msgstr ""
+"Esta opción es para los registros multivalor separados por un mismo "
+"separador. Ejemplo: *France,UK,USA*. Con la configuración como faceta, cada "
+"uno de los valores de los registros del campo aparece como una entrada "
+"independiente en la sección de filtros. Al hacer clic en una entrada, todas "
+"las demás entradas que no están relacionadas (es decir, las entradas que "
+"nunca aparecerán en el mismo registro como parte de una combinación "
+"multivalor) desaparecen automáticamente y solo se mantienen como entradas de"
+" filtros disponibles las entradas relacionadas."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:259
+msgid "To activate the multivalued option:"
+msgstr "Para activar la opción multivalor:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:261
+msgid "Tick the \"Multivalued\" box."
+msgstr "Marque la casilla \"Multivalor\"."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:262
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:271
+msgid ""
+"In the text box below, type the separator between the values of the records."
+msgstr ""
+"En el cuadro de texto que figura a continuación, escriba el separador de los"
+" valores de los registros."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:265
+msgid "Hierarchical"
+msgstr "Jerárquico"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:266
+msgid ""
+"This option is for multi-valued records, separated by one same separator and"
+" which have a hierarchical relation. Example: *France/Ile-de-France/Paris* "
+"When set up as a facet, each first value of each record's multi-values "
+"combination appears as a separate entry in the filters section. When "
+"clicking on one entry, all second-level values related to that entry appear,"
+" and so on. Example: After clicking on the filter entry *France*, the "
+"related second-level entry *Ile-de-France* appears. After clicking on *Ile-"
+"de-France*, the related third-level entry *Paris* appears."
+msgstr ""
+"Esta opción es para los registros multivalor separados por un mismo "
+"separador que tienen una relación jerárquica. Ejemplo: *France/Ile-de-"
+"France/Paris*. Con la configuración como faceta, cada uno de los primeros "
+"valores de una combinación multivalor de cada uno de los registros aparece "
+"como una entrada independiente en la sección de filtros. Al hacer clic en "
+"una entrada, aparecerán todos los valores de segundo nivel relacionados con "
+"esa entrada, y así sucesivamente. Ejemplo: Al hacer clic en la entrada de "
+"filtro *France*, aparece la entrada de segundo nivel relacionada *Ile-de-"
+"France*. Al hacer clic en *Ile-de-France*, aparece la entrada de tercer "
+"nivel relacionada *Paris*."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:268
+msgid "To activate the hierachical option:"
+msgstr "Para activar la opción jerárquica:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:270
+msgid "Tick the \"Hierarchical\" box."
+msgstr "Marque la casilla \"Jerárquico\"."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:275
+msgid "Configuration options for facets"
+msgstr "Opciones de configuración para las facetas"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:282
+msgid "Sort facet by"
+msgstr "Ordenar faceta por"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:283
+msgid ""
+"Chosen sorting of the field's entries in the filters section of the front "
+"office."
+msgstr ""
+"Ordenación seleccionada de las entradas del campo en la sección de filtros "
+"del front office."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:285
+msgid "To chose a sorting order for a facetted field:"
+msgstr "Para seleccionar un criterio de ordenación para un campo de facetas:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:287
+msgid "Click on the \"Sort facet by\" list box of the field of your choice."
+msgstr ""
+"Haga clic en el cuadro de lista \"Ordenar faceta por\" del campo que desee."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:288
+msgid "Choose a sorting order:"
+msgstr "Elija un criterio de ordenación:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:290
+msgid ""
+"Item counting (descending): entries are ordered from the one with the less "
+"records to the one with the most"
+msgstr ""
+"Número de elementos (descendente): Entradas ordenadas de aquella con menos "
+"registros a aquella con más"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:291
+msgid ""
+"Item counting (ascending): entries are ordered from the one with the most "
+"records to the one with the less"
+msgstr ""
+"Número de elementos (ascendente): Entradas ordenadas de aquella con más "
+"registros a aquella con menos"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:292
+msgid "Name (descending): entries are ordered in an alphabetical order"
+msgstr "Nombre (descendente): Entradas ordenadas alfabéticamente"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:293
+msgid "Name (ascending): entries are ordered in a reverse alphabetical order"
+msgstr ""
+"Nombre (ascendente): Entradas ordenadas alfabéticamente en sentido inverso"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:295
+msgid "Allow multiple selection in filters"
+msgstr "Permitir selección múltiple en filtros"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:296
+msgid ""
+"By default, after clicking on a filter entry, the others disappear. With the"
+" multiple selection option, it is possible to select several filter entries."
+msgstr ""
+"De forma predeterminada, al hacer clic en una entrada de filtro, las demás "
+"desaparecen. Con la opción de selección múltiple, se pueden seleccionar "
+"varias entradas de filtros."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:298
+msgid ""
+"To allow multiple selection in filters: Tick the \"Allow multiple selection "
+"in filters\" box."
+msgstr ""
+"Para permitir la selección múltiple en filtros: Marque la casilla \"Permitir"
+" selección múltiple en filtros\"."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:303
+msgid "Ordering fields in datasets"
+msgstr "Ordenar los campos de los conjuntos de datos"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:305
+msgid ""
+"Dataset fields can be reordered in their dataset. It can have 2 kinds of "
+"impact:"
+msgstr ""
+"Los campos de un conjunto de datos se pueden reordenar dentro del conjunto "
+"de datos. Esto puede tener 2 tipos de efectos:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:307
+msgid ""
+"In the filters section of the dataset, in the front office. Changing the "
+"order of the fields in the dataset also changes the order of the filters. "
+"The first facetted field of the dataset becomes the first displayed filter, "
+"and so on."
+msgstr ""
+"En la sección de filtros del conjunto de datos, en el front office. Al "
+"cambiar el orden de los campos del conjunto de datos también se cambia el "
+"orden de los filtros. El primer campo de facetas del conjunto de datos pasa "
+"a ser el primer filtro visualizado, etc."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:308
+msgid ""
+"In case the dataset contains geo shape fields. The Map view cannot display "
+"more than one layer of geo shapes, the geo shapes layer displayed by default"
+" must thus be defined. To do so, the field containing the geo shapes to be "
+"displayed by default on the map must the ordered before all other geo shapes"
+" fields."
+msgstr ""
+"En el caso de que el conjunto de datos contenga campos de forma geográfica. "
+"La vista de mapa no puede visualizar más de una capa de formas geográficas, "
+"por lo que debe definirse la capa de formas geográficas visualizada de forma"
+" predeterminada. Para ello, el campo que contiene las formas geográficas que"
+" se visualizarán de forma predeterminada en el mapa debe estar ordenado "
+"antes que todos los demás campos de formas geográficas."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:310
+msgid "To reorder a field in a dataset:"
+msgstr "Para reordenar un campo en un conjunto de datos:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:312
+msgid ""
+"In the preview area of the Processing tab, click on the |icon-order| button "
+"of the field you want to reorder in the dataset."
+msgstr ""
+"En el área de vista previa de la ficha Procesadores, haga clic en el botón "
+"|icon-order| del campo que desea reordenar en el conjunto de datos."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:313
+msgid ""
+"While maintaining the click on the Reorder button, drag the field to its new"
+" position in the dataset."
+msgstr ""
+"A la vez que hace clic en el botón Reordenar, arrastre el campo a su "
+"posición nueva en el conjunto de datos."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:314
+msgid ""
+"Once the field in its new position in the dataset, stop maintaining the "
+"click."
+msgstr ""
+"Una vez que el campo esté en su posición nueva en el conjunto de datos, "
+"suelte la presión del ratón."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:319
+msgid "Discarding fields from datasets"
+msgstr "Descartar campos del conjuntos de datos"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:321
+msgid ""
+"Dataset fields can be discarded from the dataset. It does not mean that the "
+"field is completely removed from the dataset but only deleted from the "
+"output. This is why, once the dataset is published, the discarded field will"
+" not be displayed in any visualization and if the dataset is exported, the "
+"discarded field will not be in the export."
+msgstr ""
+"Los campos de un conjunto de datos se pueden descartar del conjunto de "
+"datos. Esto no significa que el campo se elimine por completo del conjunto "
+"de datos sino que se suprime de la salida. De este modo, una vez publicado "
+"el conjunto de datos, el campo descartado no aparecerá en ninguna "
+"visualización y, si se exporta el conjunto de datos, el campo descartado no "
+"se incluirá en la exportación."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:323
+msgid ""
+"To discard a field from a dataset: Click on the |icon-delete| button of the "
+"field you want to discard from the dataset."
+msgstr ""
+"Para descartar un campo de un conjunto de datos: Haga clic en el botón "
+"|icon-delete| del campo que desea descartar del conjunto de datos."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:326
+msgid ""
+"Since discarded fields are not completely removed from the dataset, they can"
+" be restored at any time."
+msgstr ""
+"Puesto que los campos descartados no se eliminan por completo del conjunto "
+"de datos, se pueden restaurar en cualquier momento."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:328
+msgid "To restore a discarded field from a dataset:"
+msgstr "Para restaurar un campo descartado de un conjunto de datos:"
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:330
+msgid ""
+"In the preview area of the Processing tab, swipe to the right to go to the "
+"last fields of the datasets."
+msgstr ""
+"En el área de vista previa de la ficha Procesadores, pase a la derecha para "
+"ir a los últimos campos de los conjuntos de datos."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:331
+msgid ""
+"The discarded fields of the dataset appear at the very end of the dataset, "
+"they look like blank, grey columns named by their technical identifiers. "
+"Find those you want to restore."
+msgstr ""
+"Los campos descartados del conjunto de datos aparecen al final del conjunto "
+"de datos en forma de columnas en blanco, de color gris y con sus "
+"identificadores técnicos como nombres. Localice los que desee restaurar."
+
+#: ../../source/publishing_data/05_processing_data/defining_a_dataset_schema.rst:332
+msgid "Click on the |icon-retrieve_discarded| button."
+msgstr "Haga clic en el botón |icon-retrieve_discarded|."

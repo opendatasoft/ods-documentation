@@ -1,0 +1,932 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-12 15:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Datawords Rel2 <datawords.rel.2@gmail.com>, 2018\n"
+"Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:2
+msgid "GeoJoin processor"
+msgstr "Processore GeoJoin"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:4
+msgid ""
+"This processor retrieves administrative divisions geo shapes for a specified"
+" country and referential (postcode, county code, etc.)."
+msgstr ""
+"Questo processore recupera le forme geografiche delle divisioni "
+"amministrative di un determinato paese e i relativi riferimenti (codice "
+"postale, codice della contea e così via)."
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:6
+msgid ""
+"Each country has specific referentials, all referenced in the section below."
+" The GeoJoin processors is available for the following countries:"
+msgstr ""
+"Ogni paese dispone di riferimenti specifici, tutti riportati nella sezione "
+"seguente. Il processore GeoJoin è disponibile per i seguenti paesi:"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:8
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:58
+msgid "Belgium"
+msgstr "Belgio"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:9
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:77
+msgid "Canada"
+msgstr "Canada"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:10
+msgid "England"
+msgstr "Inghilterra"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:11
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:117
+msgid "France"
+msgstr "Francia"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:12
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:156
+msgid "Germany"
+msgstr "Germania"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:13
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:169
+msgid "Mexico"
+msgstr "Messico"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:14
+msgid "the Netherlands"
+msgstr "Paesi Bassi"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:15
+msgid "Scotland"
+msgstr "Scozia"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:16
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:206
+msgid "Spain"
+msgstr "Spagna"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:17
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:219
+msgid "Switzerland"
+msgstr "Svizzera"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:18
+msgid "the USA"
+msgstr "Stati Uniti"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:19
+msgid "Wales"
+msgstr "Galles"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:21
+msgid ""
+"It is also available for the world, which means that is is possible to "
+"retrieve the geo shape of any other country than those listed above. "
+"However, only the geo shape of the country will be retrieved, the processor "
+"will not be able to retrieve geo shapes from administrative divisions at a "
+"smaller scale."
+msgstr ""
+"È disponibile anche per il mondo, nel senso che è possibile recuperare la "
+"forma geografica di tutti gli altri paesi non elencati. In tal caso, "
+"tuttavia, verrà recuperata solo la forma geografica del paese, poiché il "
+"processore non è in grado di ottenerla su scala minore dalle divisioni "
+"amministrative."
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:24
+msgid "Setting the processor"
+msgstr "Configurazione del processore"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:26
+msgid ""
+"To set the parameters of the GeoJoin processor, follow the indications from "
+"the table below, for the general parameters. Depending on the chosen "
+"country, see the referentials in the **Referentials** section."
+msgstr ""
+"Per configurare i parametri del processore GeoJoin, procedi come indicato "
+"nella tabella seguente per i parametri generali. Per i riferimenti, vedi la "
+"sezione **Riferimenti** corrispondente al paese scelto."
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:31
+msgid "Label"
+msgstr "Etichetta"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:32
+msgid "Description"
+msgstr "Descrizione"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:33
+msgid "Mandatory"
+msgstr "Obbligatorio"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:34
+msgid "Country"
+msgstr "Paese"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:35
+msgid "Country from which to retrieve administrative divisions geo shapes"
+msgstr ""
+"Paese dal quale recuperare le forme geografiche delle divisioni "
+"amministrative"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:36
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:39
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:42
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:45
+msgid "yes"
+msgstr "sì"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:37
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:63
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:82
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:99
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:122
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:161
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:174
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:185
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:196
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:211
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:224
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:241
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:256
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:277
+msgid "Repository"
+msgstr "Repository"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:38
+msgid ""
+"Referential used by the processor to retrieve the geo shapes (see the "
+"**Referentials** section below to know which administrative divisions are "
+"available depending on the chosen country)"
+msgstr ""
+"Riferimento utilizzato dal processore per recuperare le forme geografiche. "
+"Per conoscere quali divisioni amministrative sono disponibili a seconda del "
+"paese scelto, vedere la successiva sezione **Riferimenti**."
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:40
+msgid "Local key"
+msgstr "Chiave locale"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:41
+msgid ""
+"Field of the dataset which contains the matching administrative division "
+"referential to the chosen one in the Repository parameter"
+msgstr ""
+"Campo del dataset che contiene il riferimento della divisione amministrativa"
+" corrispondente a quello scelto nel parametro Repository"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:43
+msgid "Output field"
+msgstr "Campo di output"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:44
+msgid ""
+"Field where the geo shapes will be displayed. It can be an existing field "
+"chosen from the list, or a new field created for that purpose (in that case,"
+" choose **Input text** from the list and write the name of the new field in "
+"the text area below)."
+msgstr ""
+"Campo in cui verranno visualizzate le forme geografiche. Può essere un campo"
+" esistente all'interno dell'elenco o un nuovo campo creato appositamente "
+"allo scopo. In tal caso, seleziona **Inserisci testo** nell'elenco e digita "
+"il nome del nuovo campo nell'area di testo sottostante."
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:48
+msgid "Referentials"
+msgstr "Riferimenti"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:50
+msgid ""
+"To set the **Repository**, follow the indications from the table of the "
+"chosen country."
+msgstr ""
+"Per configurare il **Repository**, procedi come descritto nella tabella del "
+"paese scelto."
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:52
+msgid "Note"
+msgstr ""
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:55
+msgid ""
+"The referentials below can also be found in datasets available on "
+"`public.opendatasoft.com <https://public.opendatasoft.com>`_."
+msgstr ""
+"I riferimenti riportati di seguito sono presenti anche nei dataset "
+"disponibili su `public.opendatasoft.com <https://public.opendatasoft.com>`_."
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:64
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:83
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:100
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:123
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:162
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:175
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:186
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:197
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:212
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:225
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:242
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:257
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:278
+msgid "Source"
+msgstr "Origine"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:65
+msgid "arrondissements2008"
+msgstr "arrondissements2008"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:66
+msgid ""
+"`Arrondissements Belges <https://public.opendatasoft.com/explore/dataset"
+"/arrondissements-belges>`_"
+msgstr ""
+"`Arrondissement del Belgio <https://public.opendatasoft.com/explore/dataset"
+"/arrondissements-belges>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:67
+msgid "cantons2008"
+msgstr "cantons2008"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:68
+msgid ""
+"`Cantons Belges <https://public.opendatasoft.com/explore/dataset/cantons-"
+"belges>`_"
+msgstr ""
+"`Cantoni del Belgio <https://public.opendatasoft.com/explore/dataset"
+"/cantons-belges>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:69
+msgid "communes2008"
+msgstr "communes2008"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:70
+msgid ""
+"`Communes Belges <https://public.opendatasoft.com/explore/dataset/communes-"
+"belges>`_"
+msgstr ""
+"`Comuni del Belgio <https://public.opendatasoft.com/explore/dataset"
+"/communes-belges>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:71
+msgid "provinces2008"
+msgstr "provinces2008"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:72
+msgid ""
+"`Provinces Belges <https://public.opendatasoft.com/explore/dataset"
+"/provinces-belges>`_"
+msgstr ""
+"`Province del Belgio <https://public.opendatasoft.com/explore/dataset"
+"/provinces-belges>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:73
+msgid "regions2008"
+msgstr "regions2008"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:74
+msgid ""
+"`Régions Belges <https://public.opendatasoft.com/explore/dataset/regions-"
+"belges>`_"
+msgstr ""
+"`Regioni del Belgio <https://public.opendatasoft.com/explore/dataset"
+"/regions-belges>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:84
+msgid "census-divisions2011"
+msgstr "census-divisions2011"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:85
+msgid ""
+"`Canadian Census Divisions <https://public.opendatasoft.com/explore/dataset"
+"/canadian-census-subdivisions>`_"
+msgstr ""
+"`Divisioni del censimento canadese "
+"<https://public.opendatasoft.com/explore/dataset/canadian-census-"
+"subdivisions>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:86
+msgid "census-subdivisions2011"
+msgstr "census-subdivisions2011"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:87
+msgid ""
+"`Canadian Census Subdivisions "
+"<https://public.opendatasoft.com/explore/dataset/canadian-census-"
+"subdivisions0>`_"
+msgstr ""
+"`Suddivisioni del censimento canadese "
+"<https://public.opendatasoft.com/explore/dataset/canadian-census-"
+"subdivisions0>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:88
+msgid "county2011"
+msgstr "county2011"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:89
+msgid ""
+"`Intercensal Canada <https://public.opendatasoft.com/explore/dataset"
+"/intercensal-canada>`_"
+msgstr ""
+"`Intercensal Canada <https://public.opendatasoft.com/explore/dataset"
+"/intercensal-canada>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:90
+msgid "province2003"
+msgstr "province2003"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:91
+msgid ""
+"`Canada Provinces <https://public.opendatasoft.com/explore/dataset/canada-"
+"provinces>`_"
+msgstr ""
+"`Province del Canada <https://public.opendatasoft.com/explore/dataset"
+"/canada-provinces>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:94
+msgid "England (GB)"
+msgstr "Inghilterra (GB)"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:101
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:258
+msgid "county2016"
+msgstr "county2016"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:102
+msgid ""
+"`Counties and Unitary Authorities in England "
+"<https://public.opendatasoft.com/explore/dataset/counties-and-unitary-"
+"authorities-december-2016-generalised-clipped-boundaries-in>`_"
+msgstr ""
+"`Contee e autorità unitarie dell'Inghilterra "
+"<https://public.opendatasoft.com/explore/dataset/counties-and-unitary-"
+"authorities-december-2016-generalised-clipped-boundaries-in>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:103
+msgid "region2016"
+msgstr "region2016"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:104
+msgid ""
+"`Regions in England <https://public.opendatasoft.com/explore/dataset"
+"/regions-in-england-december-2016>`_"
+msgstr ""
+"`Regioni dell'Inghilterra <https://public.opendatasoft.com/explore/dataset"
+"/regions-in-england-december-2016>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:105
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:198
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:260
+msgid "ward2014"
+msgstr "ward2014"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:106
+msgid ""
+"`Wards in England 2014 <https://public.opendatasoft.com/explore/dataset"
+"/wards-in-england-december-2014>`_"
+msgstr ""
+"`Circoscrizioni dell'Inghilterra 2014 "
+"<https://public.opendatasoft.com/explore/dataset/wards-in-england-"
+"december-2014>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:107
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:200
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:262
+msgid "ward2015"
+msgstr "ward2015"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:108
+msgid ""
+"`Wards in England 2015 <https://public.opendatasoft.com/explore/dataset"
+"/wards-in-england-december-2015>`_"
+msgstr ""
+"`Circoscrizioni dell'Inghilterra 2015 "
+"<https://public.opendatasoft.com/explore/dataset/wards-in-england-"
+"december-2015>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:109
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:202
+msgid "ward2016"
+msgstr "ward2016"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:110
+msgid ""
+"`Wards in England 2016 <https://public.opendatasoft.com/explore/dataset"
+"/wards-in-england-december-2016>`_"
+msgstr ""
+"`Circoscrizioni dell'Inghilterra 2016 "
+"<https://public.opendatasoft.com/explore/dataset/wards-in-england-"
+"december-2016>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:111
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:266
+msgid "parish2014"
+msgstr "parish2014"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:112
+msgid ""
+"`Parishes in England 2014 <https://public.opendatasoft.com/explore/dataset"
+"/parishes-in-england-december-2014>`_"
+msgstr ""
+"`Municipalità dell'Inghilterra 2014 "
+"<https://public.opendatasoft.com/explore/dataset/parishes-in-england-"
+"december-2014>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:113
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:268
+msgid "parish2016"
+msgstr "parish2016"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:114
+msgid ""
+"`Parishes in England 2016 <https://public.opendatasoft.com/explore/dataset"
+"/parishes-in-england-december-2016>`_"
+msgstr ""
+"`Municipalità dell'Inghilterra 2016 "
+"<https://public.opendatasoft.com/explore/dataset/parishes-in-england-"
+"december-2016>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:124
+msgid "cantons2015"
+msgstr "cantons2015"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:125
+msgid ""
+"`Cantons <https://public.opendatasoft.com/explore/dataset/decoupage-des-"
+"cantons-pour-les-elections-departementales-de-mars-2015>`_"
+msgstr ""
+"`Cantoni <https://public.opendatasoft.com/explore/dataset/decoupage-des-"
+"cantons-pour-les-elections-departementales-de-mars-2015>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:126
+msgid "communes2013"
+msgstr "communes2013"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:127
+msgid ""
+"`Geofla® - Communes 2013 <https://public.opendatasoft.com/explore/dataset"
+"/geoflar-communes>`_"
+msgstr ""
+"`Geofla® - Comuni 2013 <https://public.opendatasoft.com/explore/dataset"
+"/geoflar-communes>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:128
+msgid "communes2015"
+msgstr "communes2015"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:129
+msgid ""
+"`Geofla® - Communes 2015 <https://public.opendatasoft.com/explore/dataset"
+"/geoflar-communes-2015>`_"
+msgstr ""
+"`Geofla® - Comuni 2015 <https://public.opendatasoft.com/explore/dataset"
+"/geoflar-communes-2015>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:130
+msgid "communes2016"
+msgstr "communes2016"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:131
+msgid ""
+"`Geofla® Commune 2016 <https://public.opendatasoft.com/explore/dataset"
+"/geoflar-communes-2016>`_"
+msgstr ""
+"`Geofla® Comuni 2016 <https://public.opendatasoft.com/explore/dataset"
+"/geoflar-communes-2016>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:132
+msgid "departements-simplifies2015"
+msgstr "departements-simplifies2015"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:133
+msgid ""
+"`Contours simplifiés des départements Français 2015 "
+"<https://public.opendatasoft.com/explore/dataset/contours-simplifies-des-"
+"departements-francais-2015>`_"
+msgstr ""
+"`Confini semplificati dei dipartimenti francesi 2015 "
+"<https://public.opendatasoft.com/explore/dataset/contours-simplifies-des-"
+"departements-francais-2015>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:134
+msgid "departements2015"
+msgstr "departements2015"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:135
+msgid ""
+"`Geofla® - Départements 2015 "
+"<https://public.opendatasoft.com/explore/dataset/geoflar-"
+"departements-2015>`_"
+msgstr ""
+"`Geofla® - Dipartimenti 2015 "
+"<https://public.opendatasoft.com/explore/dataset/geoflar-"
+"departements-2015>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:136
+msgid "epci2016"
+msgstr "epci2016"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:137
+msgid ""
+"`Etablissements Publics de Coopération Intercommunale (EPCI) "
+"<https://public.opendatasoft.com/explore/dataset/contours-epci>`_"
+msgstr ""
+"`Etablissements Publics de Coopération Intercommunale (EPCI) "
+"<https://public.opendatasoft.com/explore/dataset/contours-epci>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:138
+msgid "iris-epci2016"
+msgstr "iris-epci2016"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:139
+msgid ""
+"`Contours IRIS 2016 avec EPCI "
+"<https://public.opendatasoft.com/explore/dataset/contours-iris-2016-epci>`_"
+msgstr ""
+"`Confini IRIS 2016 con EPCI <https://public.opendatasoft.com/explore/dataset"
+"/contours-iris-2016-epci>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:140
+msgid "iris2014"
+msgstr "iris2014"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:141
+msgid ""
+"`Contours IRIS 2014 <https://public.opendatasoft.com/explore/dataset"
+"/contours-iris-2014>`_"
+msgstr ""
+"`Confini IRIS 2014 <https://public.opendatasoft.com/explore/dataset"
+"/contours-iris-2014>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:142
+msgid "iris2015"
+msgstr "iris2015"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:143
+msgid ""
+"`Contours IRIS 2015 <https://public.opendatasoft.com/explore/dataset"
+"/contours-iris-2015>`_"
+msgstr ""
+"`Confini IRIS 2015 <https://public.opendatasoft.com/explore/dataset"
+"/contours-iris-2015>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:144
+msgid "iris2016"
+msgstr "iris2016"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:145
+msgid ""
+"`Contours IRIS 2016 <https://public.opendatasoft.com/explore/dataset"
+"/contours-iris-2016>`_"
+msgstr ""
+"`Confini IRIS 2016 <https://public.opendatasoft.com/explore/dataset"
+"/contours-iris-2016>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:146
+msgid "postcode2013"
+msgstr "postcode2013"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:147
+msgid ""
+"`Carte des Codes Postaux <https://public.opendatasoft.com/explore/dataset"
+"/contour-des-codes-postaux>`_"
+msgstr ""
+"`Mappa dei codici postali <https://public.opendatasoft.com/explore/dataset"
+"/contour-des-codes-postaux>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:148
+msgid "regions-simplifiees2016"
+msgstr "regions-simplifiees2016"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:149
+msgid ""
+"`Contours géographiques simplifiés des nouvelles régions (métropole) "
+"<https://public.opendatasoft.com/explore/dataset/france-regions-2016"
+"-contours-simplifies>`_"
+msgstr ""
+"`Confini geografici semplificati delle nuove regioni (Francia metropolitana)"
+" <https://public.opendatasoft.com/explore/dataset/france-regions-2016"
+"-contours-simplifies>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:150
+msgid "regions1970"
+msgstr "regions1970"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:151
+msgid ""
+"`Contours des régions françaises sur OpenStreetMap "
+"<https://public.opendatasoft.com/explore/dataset/contours-des-regions-"
+"francaises-sur-openstreetmap>`_"
+msgstr ""
+"`Confini delle regioni francesi su OpenStreetMap "
+"<https://public.opendatasoft.com/explore/dataset/contours-des-regions-"
+"francaises-sur-openstreetmap>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:152
+msgid "regions2016"
+msgstr "regions2016"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:153
+msgid ""
+"`Contours géographiques des nouvelles régions (métropole) "
+"<https://public.opendatasoft.com/explore/dataset/contours-geographiques-des-"
+"nouvelles-regions-metropole>`_"
+msgstr ""
+"`Confini geografici delle nuove regioni (Francia metropolitana) "
+"<https://public.opendatasoft.com/explore/dataset/contours-geographiques-des-"
+"nouvelles-regions-metropole>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:163
+msgid "lander2016"
+msgstr "lander2016"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:164
+msgid ""
+"`Deutschland Länder <https://public.opendatasoft.com/explore/dataset"
+"/deutschland-lander>`_"
+msgstr ""
+"`Länder tedeschi <https://public.opendatasoft.com/explore/dataset"
+"/deutschland-lander>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:165
+msgid "postleitzahlen2016"
+msgstr "postleitzahlen2016"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:166
+msgid ""
+"`Postleitzahlen Deutschland <https://public.opendatasoft.com/explore/dataset"
+"/postleitzahlen-deutschland>`_"
+msgstr ""
+"`Postleitzahlen Deutschland <https://public.opendatasoft.com/explore/dataset"
+"/postleitzahlen-deutschland>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:176
+msgid "estados2017"
+msgstr "estados2017"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:177
+msgid ""
+"`Estados de México <https://public.opendatasoft.com/explore/dataset/estados-"
+"de-mexico>`_"
+msgstr ""
+"`Stati del Messico <https://public.opendatasoft.com/explore/dataset/estados-"
+"de-mexico>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:180
+msgid "The Netherlands"
+msgstr "Paesi Bassi"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:187
+msgid "postcode2015"
+msgstr "postcode2015"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:188
+msgid ""
+"`Nederland Postcodes "
+"<https://public.opendatasoft.com/explore/dataset/openpostcodevlakkenpc4>`_"
+msgstr ""
+"`Codici postali dei Paesi Bassi "
+"<https://public.opendatasoft.com/explore/dataset/openpostcodevlakkenpc4>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:191
+msgid "Scotland (GB)"
+msgstr "Scozia (GB)"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:199
+msgid ""
+"`Wards in Scotland 2014 <https://public.opendatasoft.com/explore/dataset"
+"/wards-in-scotland-december-2014>`_"
+msgstr ""
+"`Circoscrizioni della Scozia 2014 "
+"<https://public.opendatasoft.com/explore/dataset/wards-in-scotland-"
+"december-2014>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:201
+msgid ""
+"`Wards in Scotland 2015 <https://public.opendatasoft.com/explore/dataset"
+"/wards-in-scotland-december-2015>`_"
+msgstr ""
+"`Circoscrizioni della Scozia 2015 "
+"<https://public.opendatasoft.com/explore/dataset/wards-in-scotland-"
+"december-2015>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:203
+msgid ""
+"`Wards in Scotland 2016 <https://public.opendatasoft.com/explore/dataset"
+"/wards-in-scotland-december-2016>`_"
+msgstr ""
+"`Circoscrizioni della Scozia 2016 "
+"<https://public.opendatasoft.com/explore/dataset/wards-in-scotland-"
+"december-2016>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:213
+msgid "comunidades-autonomas2012"
+msgstr "comunidades-autonomas2012"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:214
+msgid ""
+"`Comunidades Autónomas españolas "
+"<https://public.opendatasoft.com/explore/dataset/comunidades-autonomas-"
+"espanolas>`_"
+msgstr ""
+"`Comunità autonome spagnole <https://public.opendatasoft.com/explore/dataset"
+"/comunidades-autonomas-espanolas>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:215
+msgid "provincias2012"
+msgstr "provincias2012"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:216
+msgid ""
+"`Provincias españolas <https://public.opendatasoft.com/explore/dataset"
+"/provincias-espanolas>`_"
+msgstr ""
+"`Province spagnole <https://public.opendatasoft.com/explore/dataset"
+"/provincias-espanolas>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:226
+msgid "bezirke2017"
+msgstr "bezirke2017"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:227
+msgid ""
+"`swissBOUNDARIES3D - TLM BEZIRKSGEBIET "
+"<https://public.opendatasoft.com/explore/dataset/swissboundaries3d-"
+"tlm_bezirksgebiet>`_"
+msgstr ""
+"`swissBOUNDARIES3D - TLM BEZIRKSGEBIET "
+"<https://public.opendatasoft.com/explore/dataset/swissboundaries3d-"
+"tlm_bezirksgebiet>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:228
+msgid "postleitzahl2017"
+msgstr "postleitzahl2017"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:229
+msgid ""
+"`Amtliches Ortschaftenverzeichnis mit Postleitzahl und Perimeter "
+"<https://public.opendatasoft.com/explore/dataset/amtliches-"
+"ortschaftenverzeichnis-mit-postleitzahl-und-perimeter>`_"
+msgstr ""
+"`Elenco ufficiale con codici postali e perimetriAmtliches "
+"Ortschaftenverzeichnis mit Postleitzahl und Perimeter "
+"<https://public.opendatasoft.com/explore/dataset/amtliches-"
+"ortschaftenverzeichnis-mit-postleitzahl-und-perimeter>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:230
+msgid "gemeinde2017"
+msgstr "gemeinde2017"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:231
+msgid ""
+"`swissBOUNDARIES3D - TLM HOHEITSGEBIET "
+"<https://public.opendatasoft.com/explore/dataset/swissboundaries3d-"
+"tlm_hoheitsgebiet>`_"
+msgstr ""
+"`swissBOUNDARIES3D - TLM HOHEITSGEBIET "
+"<https://public.opendatasoft.com/explore/dataset/swissboundaries3d-"
+"tlm_hoheitsgebiet>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:232
+msgid "kantone2017"
+msgstr "kantone2017"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:233
+msgid ""
+"`swissBOUNDARIES3D - TLM_KANTONSGEBIET "
+"<https://public.opendatasoft.com/explore/dataset/swissboundaries3d-"
+"tlm_kantonsgebiet>`_"
+msgstr ""
+"`swissBOUNDARIES3D - TLM_KANTONSGEBIET "
+"<https://public.opendatasoft.com/explore/dataset/swissboundaries3d-"
+"tlm_kantonsgebiet>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:236
+msgid "The USA"
+msgstr "Stati Uniti"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:243
+msgid "county2017"
+msgstr "county2017"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:244
+msgid ""
+"`US County Boundaries <https://public.opendatasoft.com/explore/dataset/us-"
+"county-boundaries>`_"
+msgstr ""
+"`Confini delle contee degli Stati Uniti "
+"<https://public.opendatasoft.com/explore/dataset/us-county-boundaries>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:245
+msgid "state2017"
+msgstr "state2017"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:246
+msgid ""
+"`US State Boundaries <https://public.opendatasoft.com/explore/dataset/us-"
+"state-boundaries>`_"
+msgstr ""
+"`Confini degli stati degli Stati Uniti "
+"<https://public.opendatasoft.com/explore/dataset/us-state-boundaries>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:247
+msgid "zcta2016"
+msgstr "zcta2016"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:248
+msgid "`ZCTA <https://public.opendatasoft.com/explore/dataset/us-zcta-2010>`_"
+msgstr ""
+"`ZCTA <https://public.opendatasoft.com/explore/dataset/us-zcta-2010>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:251
+msgid "Wales (GB)"
+msgstr "Galles (GB)"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:259
+msgid ""
+"`Counties and Unitary Authorities in Wales "
+"<https://public.opendatasoft.com/explore/dataset/counties-and-unitary-"
+"authorities-december-2016-generalised-clipped-boundaries-i0>`_"
+msgstr ""
+"`Contee e autorità unitarie del Galles "
+"<https://public.opendatasoft.com/explore/dataset/counties-and-unitary-"
+"authorities-december-2016-generalised-clipped-boundaries-i0>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:261
+msgid ""
+"`Wards in Wales 2014 <https://public.opendatasoft.com/explore/dataset/wards-"
+"in-wales-december-2014>`_"
+msgstr ""
+"`Circoscrizioni del Galles 2014 "
+"<https://public.opendatasoft.com/explore/dataset/wards-in-wales-"
+"december-2014>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:263
+msgid ""
+"`Wards in Wales 2015 <https://public.opendatasoft.com/explore/dataset/wards-"
+"in-wales-december-2015>`_"
+msgstr ""
+"`Circoscrizioni del Galles 2015 "
+"<https://public.opendatasoft.com/explore/dataset/wards-in-wales-"
+"december-2015>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:264
+msgid "wards2016"
+msgstr "wards2016"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:265
+msgid ""
+"`Wards in Wales 2016 <https://public.opendatasoft.com/explore/dataset/wards-"
+"in-wales-december-2016>`_"
+msgstr ""
+"`Circoscrizioni del Galles 2016 "
+"<https://public.opendatasoft.com/explore/dataset/wards-in-wales-"
+"december-2016>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:267
+msgid ""
+"`Parishes in Wales 2015 <https://public.opendatasoft.com/explore/dataset"
+"/parishes-in-wales-december-2014>`_"
+msgstr ""
+"`Municipalità del Galles 2015 "
+"<https://public.opendatasoft.com/explore/dataset/parishes-in-wales-"
+"december-2014>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:269
+msgid ""
+"`Parishes in Wales 2016 <https://public.opendatasoft.com/explore/dataset"
+"/parishes-in-wales-december-2016>`_"
+msgstr ""
+"`Municipalità del Galles 2016 "
+"<https://public.opendatasoft.com/explore/dataset/parishes-in-wales-"
+"december-2016>`_"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:272
+msgid "World"
+msgstr "Mondo"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:279
+msgid "countries2016"
+msgstr "countries2016"
+
+#: ../../source/publishing_data/05_processing_data/processors/geojoin.rst:280
+msgid ""
+"`Natural Earth Countries <https://public.opendatasoft.com/explore/dataset"
+"/natural-earth-countries-1_110m>`_"
+msgstr ""
+"`Natural Earth Countries <https://public.opendatasoft.com/explore/dataset"
+"/natural-earth-countries-1_110m>`_"

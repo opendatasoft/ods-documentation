@@ -1,0 +1,366 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-12 15:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Datawords Rel2 <datawords.rel.2@gmail.com>, 2018\n"
+"Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:2
+msgid "JSON connectors"
+msgstr "Connettori JSON"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:4
+msgid ""
+"JSON is an open-standard format that uses human-readable text to transmit "
+"data objects consisting of key–value pairs. It is the most common data "
+"format to build web APIs."
+msgstr ""
+"JSON è un formato a standard aperto che utilizza testo comprensibile per "
+"trasmettere oggetti di dati composti da coppie chiave-valore. È il formato "
+"di dati più diffuso per la creazione delle API Web."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:6
+msgid ""
+"As JSON documents can have a lot of different forms, there are two JSON "
+"connectors you can choose to extract your data. If the connector did not "
+"manage to fully extract a document with a complex structure, you can use one"
+" of the platform's JSON processors to complete the extraction."
+msgstr ""
+"Poiché i documenti JSON possono presentarsi in forme diverse, sono "
+"disponibili due connettori JSON, che permettono di scegliere come estrarre i"
+" dati desiderati. Se il connettore utilizzato non riesce a terminare "
+"l'estrazione di un documento dalla struttura complessa, è possibile "
+"completare l'operazione mediante uno dei processori JSON della piattaforma."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:9
+msgid "JSON File"
+msgstr "File JSON"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:11
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:78
+msgid ""
+"This connector extracts a valid JSON document (array or object) into one "
+"dataset of several records."
+msgstr ""
+"Questo connettore estrae un documento JSON (array o oggetto) in un dataset "
+"composto da vari record."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:13
+msgid ""
+"If the document is a JSON array, a record will be created for each object "
+"inside the array (the keys will be used as column names)."
+msgstr ""
+"Se il documento è un array JSON, il sistema crea un record per ogni oggetto "
+"che vi è contenuto e le chiavi vengono utilizzate come nomi delle colonne."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:14
+msgid ""
+"If the document is a JSON object, the parameter \"JSON root\" should contain"
+" a dot-separated path to the array inside your object. If not provided, the "
+"connector tries ``items``."
+msgstr ""
+"Se il documento è un oggetto JSON, il parametro \"JSON root\" deve includere"
+" un percorso con punti separatori che porta all'array contenuto. Se questo "
+"non viene fornito, il connettore prova con il parametro ``items``."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:16
+msgid ""
+"For each item inside the array, the connector can follow another path before"
+" extracting the records thanks to the parameter \"JSON object\"."
+msgstr ""
+"Per ogni elemento all'interno dell'array, il connettore può seguire un altro"
+" percorso prima di estrarre i record, grazie al parametro \"Oggetto JSON\"."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:19
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:53
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:83
+msgid "Supported field types"
+msgstr "Tipi di file supportati"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:21
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:85
+msgid "regular fields like decimal, bool, string"
+msgstr "Campi normali, come decimal, bool, string."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:22
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:57
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:86
+msgid "JSON object: will be used as-is"
+msgstr "Oggetto JSON, che viene utilizzato così com'è."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:25
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:89
+msgid "array:"
+msgstr "Array:"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:24
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:88
+msgid "if the array contains JSON objects, it will be used as-is"
+msgstr "se l'array contiene oggetti JSON, viene utilizzato così com'è;"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:25
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:89
+msgid ""
+"if it contains strings, a multivalued field will be created with all the "
+"strings separated by a semicolon (\";\")"
+msgstr ""
+"se contiene stringhe, queste vengono inserite in nuovo campo multivalore "
+"separate da punti e virgola (\";\")."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:28
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:60
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:92
+msgid "Configuration"
+msgstr "Configurazione"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:33
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:65
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:97
+msgid "Name"
+msgstr "Nome"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:34
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:66
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:98
+msgid "Description"
+msgstr "Descrizione"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:35
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:67
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:99
+msgid "Values"
+msgstr "Valori"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:36
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:100
+msgid "JSON root"
+msgstr "Radice JSON"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:37
+msgid ""
+"Path to the json array on which the connector will iterate to get the "
+"records"
+msgstr ""
+"Percorso che porta all'array JSON, sul quale il connettore eseguirà "
+"l'iterazione per ottenere i record."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:38
+msgid "None if JSON array, \"items\" if JSON object"
+msgstr ""
+"Nessuno se si tratta di un array JSON, \"items\" se si tratta di un oggetto "
+"JSON"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:39
+msgid "JSON object"
+msgstr "Oggetto JSON"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:40
+msgid "Relative path of the json object you want to extract (from JSON root)"
+msgstr "Percorso relativo dell'oggetto JSON da estrarre dalla radice JSON"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:44
+msgid "JSON Line"
+msgstr "Riga JSON"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:46
+msgid ""
+"This connector expects a file in which each line is a one-line JSON "
+"documents. The whole file is not a valid JSON document but each line is."
+msgstr ""
+"Questo connettore deve ricevere un file in cui ogni riga è costituita da "
+"documenti JSON di una sola riga. L'intero file non è un documento JSON "
+"valido, mentre ogni riga è valida."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:50
+msgid "The connector supports two modes:"
+msgstr "Il connettore supporta due modalità:"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:49
+msgid "One JSON array on each line (or one array altogether)"
+msgstr "un array JSON per ogni riga (o un array in tutto);"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:50
+msgid "One JSON object on each line"
+msgstr "un oggetto JSON su ogni riga."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:55
+msgid "regular fields like decimal, string"
+msgstr "Campi normali, come decimal e string."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:56
+msgid "array: will be used as-is"
+msgstr "Array: viene utilizzato così com'è."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:68
+msgid "First line number"
+msgstr "Numero della prima riga"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:69
+msgid "The connector will start processing the sheet at this line"
+msgstr "Il connettore inizia l'elaborazione del foglio da questa riga."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:70
+msgid "0"
+msgstr "0"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:71
+msgid "Headers"
+msgstr "Header"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:72
+msgid "Indicates first row contains field labels."
+msgstr "Indica che la prima riga contiene le etichette dei campi."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:73
+msgid "Yes"
+msgstr "Sì"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:76
+msgid "JSON Dict"
+msgstr "JSON Dict"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:80
+msgid ""
+"It expects a JSON object where each key contains a record, and create "
+"records with one column to hold the key, and one column for each attribute "
+"of the corresponding object (or a single column named \"value\" if the value"
+" is a string instead of an object)."
+msgstr ""
+"Questo connettore prevede un oggetto JSON con un record per ogni chiave. Il "
+"connettore crea record con una colonna dedicata alla chiave e una colonna "
+"per ogni attributo dell'oggetto corrispondente (oppure, se il valore "
+"corrisponde a una stringa e non a un oggetto, un'unica colonna denominata "
+"\"value\")."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:101
+msgid "ijson path to the object that contains the records"
+msgstr "percorso ijson verso l'oggetto che contiene i record"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:102
+msgid ""
+"start from the root if empty, ijson path like \"result.datasets\", or "
+"\"item\" to iterate in an array"
+msgstr ""
+"inizia dalla radice se vuota, percorso ijson come \"result.datasets\", "
+"oppure \"item\" per iterare in un array"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:103
+msgid "Key field name"
+msgstr "Nome del campo della chiave"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:104
+msgid "Label of the column that holds the key value"
+msgstr "Etichetta della colonna che contiene il valore della chiave"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:108
+msgid "Example 1"
+msgstr "Esempio 1"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:140
+msgid "With an empty JSON root, results in:"
+msgstr "Nel caso in cui la radice JSON sia vuota:"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:143
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:179
+msgid "key"
+msgstr "key"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:143
+msgid "type1"
+msgstr "type1"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:143
+msgid "type2"
+msgstr "type2"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:145
+msgid "2016"
+msgstr "2016"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:145
+msgid "{\"color\": \"blue\", \"available\": true, \"price\": 10}"
+msgstr "{\"color\": \"blue\", \"available\": true, \"price\": 10}"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:145
+msgid "{\"color\": \"red\", \"available\": true, \"price\": 9}"
+msgstr "{\"color\": \"red\", \"available\": true, \"price\": 9}"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:147
+msgid "2015"
+msgstr "2015"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:147
+msgid "{\"color\": \"teal\", \"available\": true, \"price\": 10.5}"
+msgstr "{\"color\": \"teal\", \"available\": true, \"price\": 10.5}"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:147
+msgid "{\"color\": \"crimson\", \"available\": true, \"price\": 9.1}"
+msgstr "{\"color\": \"crimson\", \"available\": true, \"price\": 9.1}"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:151
+msgid "Example 2"
+msgstr "Esempio 2"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:173
+msgid ""
+"For this complex JSON file, the correct JSON root is "
+"``results.datasets.item``."
+msgstr ""
+"Per questo file JSON complesso, la radice JSON corretta è "
+"``results.datasets.item``."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:175
+msgid "``results.datasets`` makes us move inside the JSON file to the array"
+msgstr ""
+"``results.datasets`` ci consente di muoverci all'interno del file JSON fino "
+"all'array"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:176
+msgid "``item`` means to iterate inside the array and get each object"
+msgstr ""
+"``item`` significa che vogliamo iterare nell'array e recuperare ogni oggetto"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:179
+msgid "description"
+msgstr "description"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:179
+msgid "title"
+msgstr "title"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:181
+msgid "abc"
+msgstr "abc"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:181
+msgid "A description about ABC"
+msgstr "A description about ABC"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:181
+msgid "A B C"
+msgstr "A B C"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:183
+msgid "xyz"
+msgstr "xyz"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:183
+msgid "Another description"
+msgstr "Another description"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:183
+msgid "D E F"
+msgstr "D E F"

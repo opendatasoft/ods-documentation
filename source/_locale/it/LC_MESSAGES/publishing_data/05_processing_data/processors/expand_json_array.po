@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-12 15:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Datawords Rel2 <datawords.rel.2@gmail.com>, 2018\n"
+"Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:2
+msgid "Expand JSON array processor"
+msgstr "Processore Espandi l'array JSON"
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:4
+msgid ""
+"This processor transposes rows containing a JSON array into several rows "
+"with a new column containing each value of the array."
+msgstr ""
+"Questo processore traspone le righe contenenti un array JSON in più righe, "
+"con una nuova colonna contenente ciascun valore dell'array."
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:7
+msgid "Setting the processor"
+msgstr "Configurazione del processore"
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:9
+msgid ""
+"The parameter \"iJSON rule to array\" works exactly like in the \"Extract "
+"from JSON\" processor and should contain the array to transpose (represented"
+" with the iJSON rule ``.item``)."
+msgstr ""
+"Il parametro \"regola iJSON per l'array\" funziona esattamente come il "
+"processore \"Estrai da JSON\" e deve contenere l'array da trasporre "
+"(rappresentato con la regola iJSON ``.item``)."
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:11
+msgid ""
+"If the field contains the JSON array directly, just put ``item`` as an iJSON"
+" rule."
+msgstr ""
+"Se il campo contiene direttamente l'array JSON, inserisci solo ``item`` come"
+" regola iJSON."
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:12
+msgid ""
+"If the final element is an array, the iJSON rule must end with ``.item``, "
+"meaning that the reached object should be treated as an array of items in "
+"the iJSON syntax."
+msgstr ""
+"Se l'elemento finale è un array, la regola iJSON deve terminare con "
+"``.item``, che significa che l'oggetto raggiunto deve essere trattato come "
+"un array di elementi della sintassi iJSON."
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:13
+msgid ""
+"If you want to keep going into the items inside the array, you can keep "
+"adding key names after the ``.item``, but be careful to check that this path"
+" is valid for every object in the array."
+msgstr ""
+"Se desideri proseguire con gli elementi all'interno dell'array, puoi "
+"continuare ad aggiungere nomi chiave dopo ``.item``, ma verifica che questo "
+"percorso sia valido per ciascuno degli oggetti dell'array."
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:15
+msgid ""
+"To set the parameters of the Expand JSON array processor, follow the "
+"indications from the table below."
+msgstr ""
+"Per configurare i parametri del processore Espandi l'array JSON, procedi "
+"come descritto nella tabella sottostante."
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:20
+msgid "Label"
+msgstr "Etichetta"
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:21
+msgid "Description"
+msgstr "Descrizione"
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:22
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:34
+msgid "Example"
+msgstr "Esempio"
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:23
+msgid "JSON array field"
+msgstr "Campo array JSON"
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:24
+msgid "Name of the field that holds the JSON array"
+msgstr "Nome del campo che contiene l'array JSON."
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:25
+msgid "data"
+msgstr "data"
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:26
+msgid "iJSON rule to array"
+msgstr "Regola iJSON per l'array"
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:27
+msgid ""
+"iJSON rule to iterate in the JSON array above. An iJSON rule is built with "
+"the names of all the field from the JSON root to the data to extract, "
+"separated with a dot."
+msgstr ""
+"Regola iJSON da iterare nel precedente array JSON. La regola iJSON viene "
+"creata con i nomi di tutti i campi dalla radice JSON fino ai dati da "
+"estrarre, separati da un punto."
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:28
+msgid "block.metaB"
+msgstr "block.metaB"
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:29
+msgid "Output field"
+msgstr "Campo di output"
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:30
+msgid "Name of the field that will contain the extracted element"
+msgstr "Nome del campo che conterrà l'elemento estratto."
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:36
+msgid "iJSON rules to extract from the following JSON array field:"
+msgstr "Regole iJSON per l'estrazione dal seguente campo dell'array JSON:"
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:53
+msgid ""
+"``item`` will transpose the record into 2, one with each object of the array"
+" in the \"Output field\" column"
+msgstr ""
+"\"item\" traspone il record in 2, uno con ogni oggetto dell'array nella "
+"colonna \"Campo di output\""
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:74
+msgid ""
+"``bloc.item`` will transpose the record into 2, one with each object of the "
+"array in the \"Output field\" column"
+msgstr ""
+"\"bloc.item\" traspone il record in 2, uno con ogni oggetto dell'array nella"
+" colonna \"Campo di output\""
+
+#: ../../source/publishing_data/05_processing_data/processors/expand_json_array.rst:75
+msgid ""
+"``bloc.item.sub`` will transpose the record into 2, one with each object "
+"inside the \"sub\" tag of each object of the array."
+msgstr ""
+"\"bloc.item.sub\" traspone il record in 2, uno con ogni oggetto all'interno "
+"del tag \"sub\" di ogni oggetto dell'array."

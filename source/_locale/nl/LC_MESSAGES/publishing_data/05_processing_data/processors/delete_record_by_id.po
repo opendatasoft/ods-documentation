@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-12 15:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2018\n"
+"Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:2
+msgid "Delete record by ID processor"
+msgstr "Delete record by ID processor"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:4
+msgid ""
+"This processor sends a delete order to remove an existing record of a "
+"dataset, based on the unique ID. It implies that the existing record will be"
+" deleted in both the current version of the dataset and its history. This "
+"processors indeed aims regularly updated datasets."
+msgstr ""
+"Deze processor stuur een verwijderbevel om een bestaand record van een "
+"dataset op basis van het unieke ID te verwijderen. Dit houdt in dat het "
+"bestaande record zowel in de huidige versie van de dataset als in zijn "
+"historiek zal worden verwijderd. Deze processoren streven naar regelmatig "
+"geüpdatete datasets."
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:6
+msgid ""
+"Example: if a dataset contains a list of companies (with information such as"
+" status, number of employees, sector of activity etc.), it is regularly "
+"updated to make sure that all information about these companies are still "
+"valid. With the Delete record by ID processor, it is possible to delete "
+"records concerning companies that are now closed. It will not only delete "
+"the record from the most recent source from the last update, but also the "
+"records (concerning the closed company) from all previous sources of the "
+"dataset."
+msgstr ""
+"Voorbeeld: wanneer een dataset een lijst met bedrijven bevat (met informatie"
+" zoals status, aantal werknemers, activiteitssector, enz.) wordt deze "
+"regelmatig geüpdatet om ervoor te zorgen dat alle informatie over deze "
+"bedrijven nog steeds geldig is. Met de Delete record by ID processor is het "
+"mogelijk om records te verwijderen betreffende bedrijven die nu gesloten "
+"zijn. Enkel het record uit de meest recente bron uit de laatste update zal "
+"worden verwijderd, maar ook de records (betreffende de gesloten bedrijven) "
+"uit alle vorige bronnen van de dataset."
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:8
+msgid "Note"
+msgstr "Opmerking"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:11
+msgid ""
+"The changes applied to the dataset with this processor are not visible in "
+"the dataset preview of the Processing tab. Save, publish and explore the "
+"dataset in the front office to see the changes."
+msgstr ""
+"De wijzigingen die aan de dataset worden aangebracht met deze processor zijn"
+" niet zichtbaar in de voorbeeldweergave van de dataset van het tabblad "
+"Verwerken. Bewaar, publiceer en onderzoek de dataset in de front office om "
+"de wijzigingen te zien."
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:14
+msgid "Setting the processor"
+msgstr "De processor instellen"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:16
+msgid ""
+"To set the parameters of the Delete record by ID processor, follow the "
+"indications from the table below."
+msgstr ""
+"Om de parameters van de Delete record by ID processor in te stellen, dient u"
+" de aanwijzingen in onderstaande tabel te volgen."
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:21
+msgid "Label"
+msgstr "Label"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:22
+msgid "Description"
+msgstr "Omschrijving"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:23
+msgid "Mandatory"
+msgstr "Verplicht"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:24
+msgid "Field"
+msgstr "Veld"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:25
+msgid "Field containing the record value to delete"
+msgstr "Veld dat de recordwaarde bevat die moet worden verwijderd"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:26
+msgid "yes"
+msgstr "ja"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:27
+msgid "Value to skip"
+msgstr "Waarde om over te slaan"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:28
+msgid "Value to delete from the field's records"
+msgstr "Waarde die moet worden verwijderd uit de records van het veld"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:29
+#: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:32
+msgid "no"
+msgstr "nee"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:30
+msgid "Exact match"
+msgstr "Exacte match"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:31
+msgid ""
+"If checked: the field must contain the exact value written in the **Value to"
+" skip** parameter. If unchecked: the field must at least contain what was "
+"written in the **Value to skip** parameter."
+msgstr ""
+"Indien aangevinkt: het veld moet de precieze waarde bevatten die vermeld "
+"staat in de parameter **Waarde om over te slaan**. Indien uitgevinkt: het "
+"veld moet minstens datgene bevatten wat vermeld staat in de parameter "
+"**Waarde om over te slaan**."

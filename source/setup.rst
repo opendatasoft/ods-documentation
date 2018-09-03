@@ -1,37 +1,32 @@
-Setting up OpenDataSoft
-=======================
+Getting started with OpenDataSoft
+=================================
 
-To start, you may want to freely browse datasets on public existing OpenDataSoft's portal (see for instance the Open Data portal of the `City of Paris (France) <https://opendata.paris.fr/>`_ and a comprehensive list of OpenDataSoft's `customers <https://www.opendatasoft.com/company/customers/>`_).
+1. Using any web browser, go to the OpenDataSoft domain of your choice.
+2. Submit your credentials (email and password you chose when creating your account) to log in to the chosen OpenDataSoft domain.
+3. When logging in for the first time: accept OpenDataSoft's terms of use.
 
-But you can also get an access to your own OpenDataSoft's instance (called **domain** throughout the rest of this documentation).
+.. admonition:: Note
+   :class: note
 
-* You can get access to a `free trial domain <https://www.opendatasoft.com/discover-opendatasoft-demo/>`_.
+   The address of an OpenDataSoft domain generally looks like one of the following examples:
 
-.. ifconfig:: language == 'en'
+   - https://mydomain.opendatasoft.com
+   - https://mydomain.my.opendatasoft.com, for personals
+   - https://mydomain.trial.opendatasoft.com, for free trials
 
-    .. figure:: setup__freemium-signup--en.jpg
-        :alt: OpenDataSoft's free trial account subscription
-        :width: 400px
-        :align: center
+   However, it could also not contain any mention of OpenDataSoft if an alias was created for the domain.
 
-        Free trial account creation
+Using OpenDataSoft as an authenticated user
+-------------------------------------------
 
-Free trial domains are limited in terms of capabilities (number of datasets, volume of data and number of API calls).
+Once logged in as an OpenDataSoft user, you can navigate the front office of the domain (end-user interface) to :doc:`explore the catalog and datasets </exploring_catalog_and_datasets/index>` and even go further by  :doc:`creating maps and charts </creating_maps_charts/index>`. If you were also granted the right permissions, you can access the back office (administration interface) where it is possible to :doc:`publish data </publishing_data/index>`, :doc:`create content </creating_content/index>`, and :doc:`manage </managing_domain/index>` and :doc:`configure the domain </configuring_domain/index>`.
 
-* To get access to a premium OpenDataSoft domain, contact your OpenDataSoft's sales representative or send an email to `OpenDataSoft <mailto:contact@opendatasoft.com>`_.
+Depending on the domain, there are 2 ways to have an OpenDataSoft account:
 
+- it may be possible to create a new account by clicking the "Signup" button that should be displayed in the top right corner (however, not all OpenDataSoft domains allow users to signup),
+- or, one can be invited to an OpenDataSoft domain by an administrator of that domain ; the new user then receives an email with a link to create a new account.
 
-To access your OpenDataSoft domain, simply use your favorite web browser. The address to use looks like **https://mydomain.opendatasoft.com** or **https://mydomain.my.opendatasoft.com** for free trial domains.
+Discovering a domain without having an OpenDataSoft account
+-----------------------------------------------------------
 
-When first connecting to your domain, after having submitted your credentials, you'll have to accept OpenDataSoft's terms of use.
-
-You shall then be redirected to OpenDataSoft's back-office main screen.
-
-.. ifconfig:: language == 'en'
-
-    .. figure:: setup__backoffice-empty--en.jpg
-        :alt: OpenDataSoft's free trial account subscription
-        :width: 400px
-        :align: center
-
-        Back-office after first connection
+If you do not have an OpenDataSoft account, and that the OpenDataSoft domain you want to access is open to unauthenticated users, you are not required to create an account. As a user without an account (also called an anonymous user), it is possible to navigate the front office. However, you will not have access to the back office.

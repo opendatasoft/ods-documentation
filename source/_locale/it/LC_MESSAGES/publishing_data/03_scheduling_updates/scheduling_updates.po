@@ -1,0 +1,423 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-12 15:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Datawords Rel2 <datawords.rel.2@gmail.com>, 2018\n"
+"Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:2
+msgid "Keeping data up to date"
+msgstr "Come mantenere aggiornati i tuoi dati"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:4
+msgid ""
+"The OpenDataSoft platform makes it possible, in the very same data catalog, "
+"to handle completely static datasets (which need to be published only once) "
+"and live datasets (which need to be regularly updated). Two different "
+"mechanisms are made available to handle datasets refresh."
+msgstr ""
+"La piattaforma OpenDataSoft permette di gestire, nello stesso catalogo, "
+"dataset completamente statici (che richiedono una sola pubblicazione) e "
+"dataset dinamici (che devono essere aggiornati periodicamente). Per "
+"l'aggiornamento dei dataset sono disponibili due diversi meccanismi."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:6
+msgid ""
+"The first one is called **scheduling** and consists in having a dataset "
+"being automatically republished at fixed intervals. This mode is most useful"
+" for datasets with a remote resource which is regularly updated."
+msgstr ""
+"Il primo è chiamato **pianificazione** e consiste nel ripubblicare "
+"automaticamente un dataset a intervalli stabiliti. Questa modalità è molto "
+"utile per i dataset collegati a una risorsa remota periodicamente "
+"aggiornata."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:8
+msgid ""
+"The second one consists in pushing data on the OpenDataSoft platform using a"
+" dedicated API end point. This mode is most useful when the data can be sent"
+" directly by the system that produces the data points, such as a computer "
+"program sending event metrics or a set of sensors sending their readings."
+msgstr ""
+"Il secondo consiste nell'invio dei dati in modalità push sulla piattaforma "
+"OpenDataSoft tramite un endpoint API dedicato. Questa opzione si rivela "
+"molto utile quando i dati vengono inviati direttamente dal sistema che "
+"genera i punti dati, come ad esempio un programma che invia le metriche "
+"degli eventi o una serie di sensori che inviano le proprie letture."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:11
+msgid "Using scheduling to keep a dataset up to date"
+msgstr "Uso della pianificazione per l'aggiornamento dei dati"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:13
+msgid ""
+"This solution is the easiest to implement, it does not require any "
+"development, only a remote source and some settings in the dataset "
+"configuration."
+msgstr ""
+"Si tratta della soluzione più semplice da adottare, poiché non richiede "
+"alcuna attività di sviluppo, ma solo una fonte remota e la configurazione "
+"appropriata dei dataset."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:16
+msgid "Specifying a resource"
+msgstr "Come specificare una risorsa"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:21
+msgid ""
+"To be able to schedule a dataset, its underlying resource must be a remote "
+"one, specified as a URL (http or ftp work well) and not an uploaded file. To"
+" add such a resource, simply paste a URL in the URL input."
+msgstr ""
+"Per pianificare la rielaborazione di un dataset, la risorsa sottostante deve"
+" essere remota, specificata con un URL (http o ftp) e non un file caricato. "
+"Per aggiungere questa risorsa, è sufficiente incollare l'URL nella relativa "
+"casella."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:24
+msgid "Specifying scheduling interval"
+msgstr "Impostazione dell'intervallo di pianificazione"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:30
+msgid ""
+"Once a dataset is saved with a remote resource, the scheduling tab is "
+"activated. The minimum interval is the minute, but it is not activated by "
+"default. Please contact OpenDataSoft's support if you need minute level "
+"scheduling on your domain. You can add as many schedule as you want. For "
+"instance, if it fits your needs, you could decide to schedule a dataset to "
+"be reprocessed every Monday morning and every Wednesday afternoon."
+msgstr ""
+"Dopo il salvataggio di un dataset con risorsa remota, la scheda "
+"Pianificazione diventa attiva. L'intervallo minimo è il minuto, anche se non"
+" è impostato di default. Se desideri pianificare con un livello di "
+"precisione al minuto, ti preghiamo di contattare l'assistenza OpenDataSoft. "
+"Non c’è limite al numero di pianificazioni che puoi aggiungere: ad esempio, "
+"puoi pianificare la rielaborazione di un dataset ogni lunedì mattina e ogni "
+"mercoledì pomeriggio."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:33
+msgid "Pushing real time data"
+msgstr "Push dei dati in tempo reale"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:35
+msgid ""
+"For some types of data, it can be useful to push data instead of the more "
+"traditional model of having the data being pulled from a resource by the "
+"platform. To address this need, the OpenDataSoft platform offers a realtime "
+"push API. It is not to be confused with the ability to schedule a dataset "
+"processing. When scheduling, the dataset will periodically pull the resource"
+" and process the data that is inside of it, whereas with the push API, the "
+"dataset is fed by an application through a push API and records are "
+"processed one by one as soon as they are received."
+msgstr ""
+"A seconda della loro tipologia, può essere utile eseguire il push dei dati, "
+"anziché estrarli in modo tradizionale da una risorsa. Per rispondere a "
+"questa esigenza, la piattaforma OpenDataSoft offre una soluzione alternativa"
+" a quella della pianificazione: un'API push in tempo reale. Con "
+"l’aggiornamento pianificato, il dataset recupera ed elabora periodicamente i"
+" dati dalla risorsa, mentre tramite l'API push questo viene aggiornato da "
+"un'applicazione e i record sono elaborati uno ad uno al momento della "
+"ricezione."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:37
+msgid "Note"
+msgstr ""
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:40
+msgid ""
+"As this feature is still in beta, it is not activated by default. Please "
+"contact OpenDataSoft's support to try it out."
+msgstr ""
+"Poiché questa funzionalità è ancora in fase beta, non è attivata in modo "
+"predefinito. Se desideri utilizzarla, ti preghiamo di contattare "
+"l'assistenza OpenDataSoft."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:43
+msgid "Configuring the dataset schema"
+msgstr "Configurazione dello schema del dataset"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:48
+msgid ""
+"To create a realtime dataset, start by navigating to the dataset creation "
+"interface. Here, select \"add a realtime source\"."
+msgstr ""
+"Per creare un dataset in tempo reale, apri prima di tutto l'interfaccia di "
+"creazione e seleziona \"Aggiungi un'origine in tempo reale\"."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:53
+msgid ""
+"You will be prompted to enter some bootstrap data and to optionnally fill in"
+" additional options. The bootstrap data should have all the fields that will"
+" be sent through the API. Please note that the bootstrap data is not used in"
+" the dataset: its sole purpose is to allow setting up the dataset."
+msgstr ""
+"A questo punto dovrai inserire alcuni dati bootstrap e, in maniera "
+"facoltativa, altre opzioni aggiuntive. I dati bootstrap devono includere "
+"tutti i campi che saranno inviati mediante l'API. Ricorda che tali dati non "
+"vengono utilizzati nel dataset, ma servono solo per la sua configurazione."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:56
+msgid "Using the push url"
+msgstr "Utilizzo dell'URL push"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:62
+msgid ""
+"Once your dataset is saved with the correct realtime resource settings, a "
+"URL path containing a push api key will appear. This path, appended to your "
+"domain base URL is where the platform will expect data to be sent after "
+"publication. As is the case with the bootstrap data, the data is expected to"
+" be sent in the JSON format, either as a single JSON object for a single "
+"record, or an array of JSON objects to push multiple records at once."
+msgstr ""
+"Una volta salvato il dataset con le corrette impostazioni della risorsa in "
+"tempo reale, verrà visualizzato un percorso URL contenente la chiave "
+"dell'API push. Questo percorso, aggiunto all'URL di base del tuo dominio, è "
+"il punto a cui la piattaforma si aspetta che vengano inviati i dati dopo la "
+"pubblicazione. Come per i dati bootstrap, anche questi dati dovranno essere "
+"inviati in formato JSON, sotto forma di un oggetto JSON nel caso di un "
+"record singolo o come un array di oggetti JSON per invii simultanei di più "
+"record."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:67
+msgid ""
+"A mimimal example of the api usage for a dataset with a single field named "
+"\"message\", using curl, would be"
+msgstr ""
+"Servendoci del comando curl, ecco un esempio minimo di utilizzo dell'API per"
+" un dataset che possiede un unico campo denominato \"message\":"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:73
+msgid ""
+"A minimal example with the same dataset, using the array form to send "
+"multiple records at once would be"
+msgstr ""
+"E, sempre sullo stesso dataset, ecco un esempio minimo con un formato array "
+"per l’invio simultaneo di più record:"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:79
+msgid ""
+"If the records have been received correctly, the server will respond the "
+"following message."
+msgstr ""
+"Se i record sono stati ricevuti correttamente, il server risponderà con il "
+"seguente messaggio:"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:87
+msgid ""
+"If an error happened while trying to push a record, the response will "
+"specify the error."
+msgstr ""
+"Se durante il push di un record si è verificato un errore, la risposta "
+"specificherà di che cosa si tratta."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:90
+msgid "Pushing a field of type file"
+msgstr "Push di un campo di tipo immagine"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:92
+msgid ""
+"In order to push a field of type image, a json object containing the "
+"base64-encoded content and the mimetype of the file needs to be sent, as "
+"such."
+msgstr ""
+"Per eseguire il push di un campo di tipo immagine, è necessario inviare un "
+"oggetto JSON che includa il contenuto codificato in base 64 e il tipo MIME "
+"del file."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:104
+msgid "Update data by defining a unique key"
+msgstr "Aggiornamento dei dati tramite la definizione di una chiave univoca"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:110
+msgid ""
+"Sometimes it is useful to update the existing records instead of just "
+"pushing new ones. An example for this would be a dataset that tracks the "
+"number of copies available for each books in a public library. Suppose that "
+"we have such a dataset with two fields: ``isbn``, representing the `ISBN "
+"<https://en.wikipedia.org/wiki/International_Standard_Book_Number>`_ number "
+"of the book, and ``number_of_copies`` tracking the current number of copies "
+"available in the library. It would not make a lot of sense to add one record"
+" for each new value of ``number_of_copies``, instead, it would be better to "
+"set the new ``number_of_copies`` value to the record corresponding to the "
+"book ``isbn``."
+msgstr ""
+"Talvolta, è utile aggiornare i record esistenti anziché eseguire il push di "
+"quelli nuovi. È il caso, ad esempio, di un dataset che registri il numero di"
+" copie disponibili per ogni libro in una biblioteca pubblica. Supponiamo che"
+" tale dataset includa due campi: ``isbn``, contenente il codice `ISBN "
+"<https://en.wikipedia.org/wiki/International_Standard_Book_Number>`_ del "
+"libro, e ``number_of_copies``, che registra il numero di copie disponibili "
+"in quel momento nella biblioteca. Aggiungere un record per ogni nuovo valore"
+" di ``number_of_copies`` non avrebbe senso; al contrario, è meglio impostare"
+" il nuovo valore ``number_of_copies`` nel record corrispondente al codice "
+"``isbn`` del libro."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:115
+msgid ""
+"In order to set up such a system with the OpenDataSoft platform, the fields "
+"that will be used as a unique key must be marked as so. In our example, the "
+"unique key would be isbn, because the rest of the data is linked to "
+"individual books, and these books are identified by the ISBN. This can be "
+"done in the processing view, in the menu that pops when the configuration "
+"button is pressed. It is possible to set multiple fields as unique keys. "
+"Then, after saving and publishing, if a new record whose key value is equal "
+"to an existing record is pushed, the new record will overwrite the old "
+"record. In our library case, if your dataset has ``isbn`` as the unique key,"
+" and contains these two records."
+msgstr ""
+"Per configurare questo sistema nella piattaforma OpenDataSoft, i campi da "
+"utilizzare come chiave univoca devono essere impostati come tali. Nel nostro"
+" esempio, la chiave univoca è il codice ISBN, poiché il resto dei dati è "
+"collegato ai singoli libri ed essi sono identificati dall'ISBN. Questa "
+"impostazione può essere eseguita nella visualizzazione Elaborazione, nel "
+"menu che compare premendo il pulsante Configurazione. È possibile impostare "
+"più campi come chiavi univoche. Dopo il salvataggio e la pubblicazione, se "
+"si esegue il push di un nuovo record il cui valore chiave è uguale a quello "
+"di un record esistente, il nuovo record sovrascriverà quello precedente. Nel"
+" caso della nostra biblioteca, il dataset ha ``isbn`` come chiave univoca e "
+"contiene questi due record."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:129
+msgid ""
+"If somebody borrows a copy of Zen and the Art of Motorcycle Maintenance, and"
+" you push the following record, you will still have two records, the first "
+"one being updated with the new value."
+msgstr ""
+"Se qualcuno prende in prestito una copia de \"Lo zen e l'arte della "
+"manutenzione della motocicletta\" e in seguito viene eseguito il push del "
+"record seguente, continueranno ad essere presenti due record, ma il primo "
+"sarà aggiornato con il nuovo valore."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:143
+msgid "Delete data"
+msgstr "Eliminazione dei dati"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:145
+msgid ""
+"There are two entrypoints that allow for deleting a pushed records. One that"
+" uses the records values and one that uses the record ID."
+msgstr ""
+"Vi sono due entrypoint che permettono di eliminare i record inviati in "
+"modalità push. Uno utilizza i valori dei record e l'altro l'ID del record."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:148
+msgid "Using the record values"
+msgstr "Utilizzo dei valori dei record"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:150
+msgid ""
+"To delete a record knowing the record fields values, POST the record as if "
+"you were adding it for the first time, but replace ``/push/`` with "
+"``/delete/`` in the push URL. If your push URL path is "
+"``/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/push/?pushkey=<PUSH_API_KEY>``, "
+"then use instead "
+"``/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/delete/?pushkey=<PUSH_API_KEY>``."
+" A minimal example to delete the record we pushed earlier follows."
+msgstr ""
+"Per eliminare un record conoscendo i valori dei relativi campi, esegui il "
+"POST del record come se stessi aggiungendolo per la prima volta, ma "
+"sostituisci ``/push/`` con ``/delete/`` nell'URL push. Se il percorso "
+"dell'URL push è "
+"``/api/push/1.0/<ID_DATASET>/<ID_RISORSA>/push/?pushkey=<CHIAVE_API_PUSH>``,"
+" utilizza invece "
+"``/api/push/1.0/<ID_DATASET>/<ID_RISORSA>/delete/?pushkey=<CHIAVE_API_PUSH>``."
+" Ecco un esempio minimo di eliminazione del record di cui abbiamo "
+"precedentemente eseguito il push:"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:157
+msgid "Using the record ID"
+msgstr "Utilizzo dell'ID dei record"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:159
+msgid ""
+"If you know the record ID of the record you want to delete, simply make a "
+"GET request to the URL you get by replacing ``/push/`` with "
+"``/<RECORD_ID>/delete/`` in the push URL. A minimal example of this follows."
+msgstr ""
+"Se conosci l'ID del record da eliminare, invia una richiesta GET all'URL "
+"ottenuto sostituendo ``/push/`` con ``/<ID_RECORD>/delete/`` nell'URL push. "
+"Ecco un esempio minimo:"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:166
+msgid "Get notified in case of inactivity"
+msgstr "Impostazione della notifica in caso di inattività"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:171
+msgid ""
+"If you expect a system to push data to the platform often, you may want to "
+"be notified if no record has been received by the platform in a while. In "
+"order to get notified, you can enable the \"Alerting\" option in the source "
+"configuration, and setup a time threshold in minutes. If a time span greater"
+" than the threshold has occured during which no record has been received, "
+"you will receive an email."
+msgstr ""
+"Se prevedi che il sistema esegua spesso il push dei dati alla piattaforma, "
+"puoi impostare l'invio di una notifica nel caso in cui la piattaforma non "
+"abbia ricevuto dati per un certo periodo. Per ricevere la notifica, attiva "
+"l'opzione \"Avvisi\" nella configurazione dell'origine e imposta una soglia "
+"temporale in minuti. Superato questo intervallo di tempo, se la piattaforma "
+"non avrà ricevuto nessun record, riceverai un'e-mail."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:174
+msgid "Unpublishing and disabling the api"
+msgstr "Annullamento della pubblicazione e disabilitazione dell'API"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:179
+msgid ""
+"Beware of unpublishing your dataset, as this will not keep existing records "
+"for the next time the dataset is published. If you desire to avoid getting "
+"new data, you should instead click the \"disable push\" button in the "
+"resource setting. This will prevent the usage of the push API but will have "
+"no effect on existing data. If data is pushed while push is disabled on the "
+"resource, no data will be added and an error will be sent."
+msgstr ""
+"Occorre prestare molta attenzione prima di annullare la pubblicazione di un "
+"dataset, perché i record in esso presenti non verranno più inclusi in "
+"un’eventuale ripubblicazione. Per evitare di ottenere nuovi dati, clicca "
+"invece sul pulsante \"Disattiva notifiche push\" nelle impostazioni della "
+"risorsa. In tal modo, avrai disattivato l'utilizzo dell'API push senza però "
+"influire sui dati esistenti. Se vi sono dati in push quando l'API viene "
+"disabilitata sulla risorsa, verrà generato un errore e non sarà aggiunto "
+"alcun dato."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:182
+msgid "Recovery"
+msgstr "Recupera"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:187
+msgid ""
+"In the event of data loss, for instance when the dataset has been "
+"unpublished or when a processor has been misconfigured, there is a "
+"possibility of recovering the lost records. To do so, the recovery option "
+"must have been activated prior to the records being pushed to the platform."
+msgstr ""
+"In caso di perdita di dati, ad esempio quando la pubblicazione del dataset è"
+" stata annullata o quando un processore è stato configurato in modo errato, "
+"è possibile recuperare i record perduti. A tal fine, è necessario aver "
+"attivato la modalità di recupero prima che il push dei record venisse "
+"eseguito."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:192
+msgid ""
+"When the recovery is activated every subsequent record received will be "
+"backed up, and will be elligible for recovery. In order to recover eligible "
+"records, the \"recover data\" button on the source configuration page can be"
+" used."
+msgstr ""
+"Con l'attivazione di questa opzione, verrà eseguito il backup di ogni record"
+" ricevuto, rendendone così possibile il recupero. Per recuperarli, dovrai "
+"poi cliccare sul pulsante \"Recupera i dati\", nella pagina di "
+"configurazione dell'origine."

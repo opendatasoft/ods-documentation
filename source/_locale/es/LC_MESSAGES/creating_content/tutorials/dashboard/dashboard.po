@@ -1,0 +1,1251 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-12 15:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018\n"
+"Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:2
+msgid "Building a dynamic dashboard - step by step !"
+msgstr "Crear un panel dinámico paso a paso"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:4
+msgid ""
+"The aim of this tutorial is to create very easily a dashboard by using "
+"widgets, AngularJS and CSS tools provided by OpenDataSoft platform."
+msgstr ""
+"Este tutorial tiene como finalidad crear un panel muy fácilmente utilizando "
+"widgets, herramientas CSS y AngularJS facilitadas por la plataforma "
+"OpenDataSoft."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:19
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:29
+msgid "Basics"
+msgstr "Conceptos básicos"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:7
+msgid "pick up a dataset"
+msgstr "Seleccionar un juego de datos"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:8
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:43
+msgid "Create a page"
+msgstr "Crear una página"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:9
+msgid "add a map view"
+msgstr "Añadir una vista de mapa"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:10
+msgid "add a table view"
+msgstr "Añadir una vista de tabla"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:11
+msgid "add a chart"
+msgstr "Añadir un gráfico"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:12
+msgid "link them all together !"
+msgstr "Vincularlo todo"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:13
+msgid "add a text search form"
+msgstr "Añadir un formulario de búsqueda de texto"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:14
+msgid "add some filters"
+msgstr "Añadir filtros"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:15
+msgid "discover CSS classes for easy responsive development"
+msgstr ""
+"Descubrir las clases CSS para desarrollar fácilmente un diseño con capacidad"
+" de respuesta"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:16
+msgid "have a deeper look to the \"context\""
+msgstr "Examinar con más detalle el \"contexto\""
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:17
+msgid "add a record counter"
+msgstr "Añadir un contador de registros"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:18
+msgid "add a download link"
+msgstr "Añadir un vínculo de descarga"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:19
+msgid "create some KPIs"
+msgstr "Crear indicadores KPI"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:26
+msgid "Going further"
+msgstr "Ir más lejos"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:25
+msgid "AngularJS and advanced used of Widgets"
+msgstr "AngularJS y uso avanzado de los widgets"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:22
+msgid "discover angular JS directives"
+msgstr "Descubrir las directivas AngularJS"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:23
+msgid "Play with them by creating dynamic view - ng-if"
+msgstr "Jugar con ellos creando una vista dinámica - ng-if"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:24
+msgid "Colorize your KPI - ng-class"
+msgstr "Colorear el KPI - ng-class"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:25
+msgid "Refine-on-click widgets"
+msgstr "Refinar los widgets al hacer clic"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:32
+msgid "Pick up a datasets"
+msgstr "Seleccionar un juego de datos"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:34
+msgid ""
+"This tutorial is based on the company registrations dataset in France (year "
+"2016)."
+msgstr ""
+"Este tutorial se basa en el juego de datos de registros de compañías de "
+"Francia (año 2016)."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:36
+msgid "First you need to add this dataset on your domain:"
+msgstr "Primero tiene que añadir este juego de datos en el dominio:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:38
+msgid "entreprises-immatriculees-en-2016"
+msgstr "entreprises-immatriculees-en-2016"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:40
+msgid ""
+"You can simply use the `Add a dataset from the OpenDataSoft network` button "
+"when you add a new source of data in your dataset."
+msgstr ""
+"Puede usar simplemente el botón `Añadir un juego de datos de la red "
+"OpenDataSoft` cuando añada un juego de datos nuevo en el juego de datos."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:45
+msgid "Go to **Backoffice -> Pages -> New page**"
+msgstr "Vaya a **Back office -> Páginas -> Página nueva**."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:46
+msgid ""
+"Enter a **page url** suffix, optionnaly a **Title** and **description**, "
+"then **Save**"
+msgstr ""
+"Especifique un sufijo de **dirección URL de la página** (y, de forma "
+"opcional, un valor de **Título** y **Descripción**) y haga clic en "
+"**Guardar**."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:47
+msgid ""
+"Click on ``Edit in expert mode`` to directly have access to CSS/HTML code of"
+" the page."
+msgstr ""
+"Haga clic en ``Editar en modo experto`` para acceder directamente al código "
+"CSS/HTML de la página."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:50
+msgid "You should now view this HTML code in your page :"
+msgstr "Ahora debería ver este código HTML en la página:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:59
+msgid ""
+"From now, all the code will be added in the ``ods-box div``, like this :"
+msgstr ""
+"A partir de ahora, todo el código se añadirá en ``ods-box div``, de este "
+"modo:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:71
+msgid "Save and open your page."
+msgstr "Guarde los cambios y abra la página."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:73
+msgid ""
+"If you don't see the **Open page** button in the top right part of the "
+"screen, refresh your page."
+msgstr ""
+"Si no ve el botón **Abrir página** en la parte superior derecha de la "
+"pantalla, actualice la página."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:75
+msgid ""
+"You can also go back to the **Pages** menu in the navigation bar, to see the"
+" list of pages and click on the eye to go directly to it."
+msgstr ""
+"También puede volver al menú **Páginas** de la barra de navegación para ver "
+"la lista de páginas y hacer clic en el ojo para acceder a ella directamente."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:79
+msgid "Add a map view"
+msgstr "Añadir una vista de mapa"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:81
+msgid ""
+"The simplest way to begin is to use share links and code bellow each data "
+"visualisation."
+msgstr ""
+"La manera más fácil de empezar es utilizar vínculos de compartir y el código"
+" bajo cada una de las visualizaciones de datos."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:83
+msgid ""
+"Go to your dataset, go to the map tab, then, below your map, click on "
+"``widget`` and simply copy and paste the code in the custom page."
+msgstr ""
+"Vaya al juego de datos, acceda a la ficha de mapa y, a continuación, bajo el"
+" mapa, haga clic en ``widget`` y simplemente copie y pegue el código en la "
+"página personalizada."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:102
+msgid ""
+"Each block will be explained later, for the moment, just preview your page "
+"by clicking on the **Preview** button on the center right part of your "
+"browser."
+msgstr ""
+"Cada uno de los bloques se describe más adelante; por ahora, simplemente "
+"obtenga una vista previa de la página haciendo clic en el botón **Vista "
+"previa** de la parte central derecha del explorador."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:104
+msgid ""
+"We advise you to open your page in a new tab of your browser for a faster "
+"loading (and refresh this tab any time you want to check see your new "
+"version)."
+msgstr ""
+"Le recomendamos que abra la página en una ficha nueva del explorador para "
+"que la carga sea más rápida (actualice esta ficha siempre que desee observar"
+" la versión nueva)."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:106
+msgid ""
+"It should looks like this (the map basemap should be different depending on "
+"your domain settings) :"
+msgstr ""
+"Debería tener este aspecto (el mapa de base del mapa variará según la "
+"configuración del dominio):"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:112
+msgid "Add a table view"
+msgstr "Añadir una vista de tabla"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:114
+msgid ""
+"Now, still on the dataset explore screen, go to the table view (**Table** "
+"tab), ``widget`` share link, and simply copy and paste the code below the "
+"map."
+msgstr ""
+"Ahora, siguiendo en la pantalla de exploración del juego de datos, vaya a la"
+" vista de tabla (ficha **Tabla**) y, en el vínculo de compartir de "
+"``widget``, simplemente copie y pegue el código bajo el mapa."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:141
+msgid ""
+"Save, refresh, and see that the dashboard now have two data-vizualisation :"
+msgstr ""
+"Guarde los cambios, actualice y observe que el panel ahora tiene 2 data-"
+"vizualisation:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:146
+msgid "Add a chart"
+msgstr "Añadir un gráfico"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:148
+msgid ""
+"In the dataset again, go to the chart view, select an X axis and Y axis, get"
+" the widget code, copy and paste."
+msgstr ""
+"Nuevamente en el juego de datos, vaya a la vista de gráfico, seleccione un "
+"eje X y un eje Y, obtenga el código del widget, y realice una tarea de "
+"copiar y pegar."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:150
+msgid ""
+"An exemple of interesting chart for this documentation is to display the "
+"number of company by region."
+msgstr ""
+"Un ejemplo de gráfico interesante para esta documentación consiste en "
+"visualizar el número de empresas por región."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:152
+msgid "X axis : ``Région`` (administrative area) Y axis : ``count``"
+msgstr "Eje X: ``Région`` (área administrativa) Eje Y: ``count`` (recuento)"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:157
+msgid "Save, refresh, it should looks like this :"
+msgstr ""
+"Guarde los cambios, actualice y observe cómo debería tener este aspecto:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:199
+msgid "Link them all together !"
+msgstr "Vincularlo todo"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:201
+msgid ""
+"If we draw a circle, or polygon on the map, we can filter the list of "
+"displayed items, we unfortunatly see that only the map reacts and the table "
+"or chart just **ignores** our filter !"
+msgstr ""
+"Si dibujamos un círculo o polígono en el mapa, podemos filtrar la lista de "
+"elementos visualizados; no obstante, vemos que solo reacciona el mapa, ¡y "
+"tanto la tabla como el gráfico se limitan a **omitir** el filtro!"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:203
+msgid ""
+"Most of the time, we want all widgets to be connected each others. To do "
+"this, the secret is to use the same **context**. The **context** is the "
+"pivot between each elements of your pages, all the widgets that should "
+"interact together must use the same **context**."
+msgstr ""
+"Normalmente queremos que todos los widgets estén conectados entre sí. Para "
+"ello, el secreto reside en usar el mismo **contexto**. Dado que el "
+"**contexto** es el pivote clave que existe entre cada uno de los elementos "
+"de las páginas, todos los widgets que requieran una interacción mutua "
+"deberán usar el mismo **contexto**."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:206
+msgid ""
+"On the other hand, it's also the link between your widgets and the "
+"**dataset**, it's the way to define on witch dataset your widgets should "
+"work (queries, filters and display records)"
+msgstr ""
+"Además, también es el vínculo que existe entre los widgets y el **juego de "
+"datos**; es la manera de definir en qué juego de datos deben trabajar los "
+"widgets (consultas, filtros y registros de visualización)."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:208
+msgid ""
+"Let's have a look to our code, each time we copied and pasted a bloc, we got"
+" too main elements, an ``ods-dataset-context`` first, and a widget : ``ods-"
+"map``, ``ods-table`` and ``ods-chart``."
+msgstr ""
+"Veamos el código. Cada vez que hemos copiado y pegado un bloque, también "
+"hemos obtenido elementos principales, un ``ods-dataset-context`` primero y "
+"un widget: ``ods-map``, ``ods-table`` y ``ods-chart``."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:233
+msgid ""
+"This cleaned version of code highlight that the 3 widgets have, each time, "
+"their own context ! 3 contexts, for 3 widgets."
+msgstr ""
+"¡Esta versión limpia del código hace patente que los 3 widgets tienen, cada "
+"vez, su propio contexto! 3 contextos para 3 widgets."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:235
+msgid ""
+"A simple thing to do then is to keep only one, and move our widgets below "
+"this **unique** context !"
+msgstr ""
+"¡Se puede hacer algo tan sencillo como mantener uno solo, y mover los "
+"widgets bajo este contexto **único**!"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:237
+msgid "Here is the result :"
+msgstr "Este es el resultado:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:268
+msgid ""
+"Now, any circle, rectangle or polygon drawn on the map will apply the a "
+"filter on the **context**, **shared** by all widgets, we then expect that "
+"the table and chart **dynamically reload** their display with the filtered "
+"results."
+msgstr ""
+"Ahora, cualquier círculo, rectángulo o polígono que se dibuje en el mapa "
+"aplicará un filtro en el **contexto**, **compartido** por todos los widgets,"
+" y tanto la tabla como el gráfico deberán **cargar dinámicamente** su "
+"visualización con los resultados filtrados."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:274
+msgid "Add a text search form"
+msgstr "Añadir un formulario de búsqueda de texto"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:276
+msgid ""
+"Now that we have an unique context to work on, and all our widgets are "
+"linked together, we can add other advanced widget. Let's start with a search"
+" bar !"
+msgstr ""
+"Ahora que tenemos un contexto único para trabajar y todos los widgets están "
+"vinculados entre sí, podemos añadir otro widget avanzado. ¡Empecemos con una"
+" barra de búsqueda!"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:279
+msgid ""
+"Open a new tab with the full `widget documentation "
+"<http://opendatasoft.github.io/ods-widgets/docs/#/api>`_ to see the list of "
+"available widgets."
+msgstr ""
+"Abra una ficha nueva con la `documentación de widgets "
+"<http://opendatasoft.github.io/ods-widgets/docs/#/api>`_ completa para ver "
+"la lista de widgets disponibles."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:281
+msgid ""
+"The search bar is called `odsTextSearch <http://opendatasoft.github.io/ods-"
+"widgets/docs/#/api/ods-widgets.directive:odsTextSearch>`_. It has several "
+"optionnal parameters and only one mandatory : the context !"
+msgstr ""
+"La barra de búsqueda se denomina `odsTextSearch "
+"<http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-"
+"widgets.directive:odsTextSearch>`_. Tiene varios parámetros opcionales y "
+"solo uno obligatorio: ¡el contexto!"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:284
+msgid "Let's keep it simple for the moment and use it like this :"
+msgstr "Para empezar iremos a lo sencillo y utilizaremos esta sintaxis:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:292
+msgid "where"
+msgstr "donde"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:291
+msgid "``mycontext`` is the name of my context in my custom page."
+msgstr "``mycontext`` es el nombre de mi contexto en mi página personalizada."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:294
+msgid "Now, add a search bar at the top of the dashboard :"
+msgstr "Ahora, añada una barra de búsqueda en la parte superior del panel:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:327
+msgid "Save, refresh, search !"
+msgstr "¡Guarde los cambios, actualice y haga una búsqueda!"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:329
+msgid "For exemple, search for 'sport club' in the south of France :"
+msgstr "Por ejemplo, busque 'sport club' en el sur de Francia:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:335
+msgid "Add some filters"
+msgstr "Añadir filtros"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:337
+msgid ""
+"Like in the explore view, it's very interresting to have dataset filters to "
+"narrow your search. Ods filters widget is called `ods-facets "
+"<http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-"
+"widgets.directive:odsFacets>`_"
+msgstr ""
+"Como en la vista Explorar, es muy interesante tener filtros de juegos de "
+"datos para acotar la búsqueda. El widget de filtros de ODS se denomina `ods-"
+"facets <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-"
+"widgets.directive:odsFacets>`_."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:340
+msgid "The simplest way is to display all facets :"
+msgstr "La manera más sencilla es visualizar todas las facetas:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:346
+msgid ""
+"A smarter way is to pick only needed facets by specifying the field id (not "
+"the name !) :"
+msgstr ""
+"Una forma más avanzada consiste en seleccionar únicamente las facetas "
+"necesarias especificando el ID de campo (no el nombre):"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:358
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:404
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:559
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:715
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:751
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:858
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:954
+msgid "Note"
+msgstr "Nota"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:361
+msgid ""
+"To get the field id you need to be aware of the dataset schema. It's "
+"available in the information tab of the dataset. The dataset schema shows "
+"every information on each field : name, description, id, type, and a value "
+"exemple. It's often convenient to know the type and the id of each field "
+"when using advanced widget parameters."
+msgstr ""
+"Para obtener el ID de campo, tiene que conocer el esquema del juego de "
+"datos. Está disponible en la ficha de información del juego de datos. El "
+"esquema del juego de datos muestra toda la información de cada uno de los "
+"campos: nombre, descripción, ID, tipo y un ejemplo de valor. Suele ser útil "
+"conocer el tipo y el ID de cada uno de los campos al usar parámetros de "
+"widgets avanzados."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:363
+msgid ""
+"In this dashboard exemple, we will use 2 filters : the company activity "
+"sector, and the city ! Add this code near the search bar :"
+msgstr ""
+"En este ejemplo de panel, utilizaremos 2 filtros: el sector de actividad de "
+"la empresa y la ciudad. Añada este código cerca de la barra de búsqueda:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:394
+msgid "It's now much simpler to search for sport club in Paris !"
+msgstr "¡Ahora es mucho más sencillo buscar un club deportivo en París!"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:400
+msgid "Discover CSS classes for easy responsive development"
+msgstr ""
+"Descubrir las clases CSS para desarrollar fácilmente un diseño con capacidad"
+" de respuesta"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:402
+msgid ""
+"This dashboard starts to be nice but every widgets are in the same column, "
+"one after another without any style tuning."
+msgstr ""
+"Este panel empieza a tener un buen aspecto, pero los widgets están en la "
+"misma columna, todos seguidos y sin un estilo personalizado."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:407
+msgid ""
+"At this point you need to be aware of the platform possibilities about CSS "
+"and HTML Style. Please read carrefully the :doc:`responsive grid layout "
+"management "
+"</customizing_look_and_feel/07_designing_responsive_portal/responsive>` "
+"documentation."
+msgstr ""
+"En este punto, debe conocer las posibilidades de estilo de la plataforma en "
+"relación con CSS y HTML. Lea atentamente la documentación acerca de la "
+":doc:`gestión del diseño de cuadrícula con capacidad de respuesta "
+"</customizing_look_and_feel/07_designing_responsive_portal/responsive>`."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:410
+msgid ""
+"We will split the screen into two main areas : on the left a navigation bar,"
+" on the right the main content. The navigation bar will carry the search bar"
+" and filters, the content will carry the table, map and chart."
+msgstr ""
+"Dividiremos la pantalla en 2 áreas principales: a la izquierda, una barra de"
+" navegación; a la derecha, el contenido principal. La barra de navegación "
+"alojará la barra de búsqueda y los filtros; el contenido incluirá la tabla, "
+"el mapa o el gráfico."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:413
+msgid "It will looks like this :"
+msgstr "Tendrá el aspecto siguiente:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:417
+msgid ""
+"Bootsrap (the grid layout managment tool) split the page into 12 columns. We"
+" will alloy 3 columns for the navigation bar and 9 for the content. We will "
+"split the screen for devices starting from medium size. The CSS class is "
+"``col-md-3`` and ``col-md-9``"
+msgstr ""
+"Bootsrap (la herramienta de gestión de diseño de cuadrícula) divide la "
+"página en 12 columnas. Destinaremos 3 columnas a la barra de navegación y 9 "
+"al contenido. Dividiremos la pantalla para los dispositivos a partir de un "
+"tamaño medio. Las clases CSS son ``col-md-3`` y ``col-md-9``."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:421
+msgid ""
+"Concerning the table and chart widget, we will split the area in two equal "
+"size, ie. 6 columns each. The CSS class is ``col-md-6``"
+msgstr ""
+"En cuanto al widget de tabla y gráfico, dividiremos el área en 2 del mismo "
+"tamaño, es decir, de 6 columnas cada una. La clase CSS es ``col-md-6``."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:423
+msgid ""
+"One last detail: to use ``col-xx-yy`` CSS classes, they always need to be "
+"inside a ``row`` element ! So first, you define rows, then you split the "
+"rows !"
+msgstr ""
+"Un último detalle: para  usar las clases CSS ``col-xx-yy``, siempre deben "
+"estar dentro de un elemento ``row``. ¡Así que primero defina las filas y "
+"después divida las filas!"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:429
+msgid "The HTML block should then looks like this :"
+msgstr "El bloque HTML debería tener el aspecto siguiente:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:475
+msgid ""
+"We now have a real dashboard, last detail will be to give some air of every "
+"element, they are still all sticked together. It's a pure CSS aspect, and "
+"using ``margin`` and ``padding`` rules will easilly do the job."
+msgstr ""
+"Ahora tenemos un panel real, y un último detalle será mejorar la nitidez de "
+"los elementos, ya que siguen estando todos juntos. Es un aspecto de CSS "
+"puro, y el uso de las reglas ``margin`` y ``padding`` cumplirá fácilmente "
+"este objetivo."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:478
+msgid ""
+"But the platform also provide a CSS class called ``ods-box``. It encapsulate"
+" any element into a box with a thin rounded border. We will use it to "
+"encapsulate the navigation bar, the map, the table and the chart."
+msgstr ""
+"Pero la plataforma también suministra una clase CSS denominada ``ods-box``. "
+"Encapsula cualquier elemento en un cuadro con un borde redondeado fino. La "
+"usaremos para encapsular la barra de navegación, el mapa, la tabla y el "
+"gráfico."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:482
+msgid "The full HTML code is now :"
+msgstr "El código HTML completo ahora es:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:550
+msgid "Have a deeper look to the \"context\""
+msgstr "Examinar con más detalle el \"contexto\""
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:552
+msgid ""
+"We now know that the context is the key between all widgets and the link "
+"between them and the data. Some widgets consume/read it : the odsTable "
+"widget will use it to get records and display them. Some widgets act/modify "
+"it : the odsTextSearch will query it by applying a search query or filter. "
+"Some widgets do both : the odsFacets get filters, display them, and allow to"
+" apply a filter on the context."
+msgstr ""
+"Ahora sabemos que el contexto es el pivote clave que existe entre todos los "
+"widgets, así como el vínculo entre estos y los datos. Algunos widgets lo "
+"consumen o leen: el widget odsTable lo emplea para obtener registros y "
+"visualizarlos. Otros widgets lo modifican o actúan en él: odsTextSearch lo "
+"consulta aplicando una consulta de búsqueda o un filtro. Hay widgets que "
+"hacen ambas tareas: odsFacets obtiene filtros, los visualiza y permite "
+"aplicar un filtro en el contexto."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:557
+msgid ""
+"To go further it's now interresting to see how widget modify the context and"
+" what kind of information we can get from it."
+msgstr ""
+"Para continuar adelante, resulta interesante ver ahora cómo el widget "
+"modifica el contexto y qué tipo de información podemos obtener de él."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:564
+msgid ""
+"As OpenDataSoft widgets library rely on **AngularJS** we will use it's "
+"syntax to read the **context**."
+msgstr ""
+"Como la biblioteca de widgets de OpenDataSoft se basa en **AngularJS** "
+"utilizaremos su sintaxis para leer el **contexto**."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:563
+msgid "The **context** is an **AngularJS variable**."
+msgstr "El **contexto** es una **variable AngularJS**."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:564
+msgid ""
+"The **context** can be seen like a simple **JSON object**, with brackets, "
+"key values lists etc..."
+msgstr ""
+"El **contexto** puede entenderse como un **objeto JSON** simple, con "
+"corchetes, listas de valores claves, etc."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:565
+msgid ""
+"To evaluate an expression in AngularJS we use this syntax : ``{{ action1 or "
+"variable1 }}``"
+msgstr ""
+"Para evaluar una expresión en AngularJS utilizamos esta sintaxis: ``{{ "
+"acción1 o variable1 }}``"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:567
+msgid ""
+"To conclude this note, to read the context, simply add this bunch of code in"
+" an empty space :"
+msgstr ""
+"Por último, para leer el contexto, basta con añadir este código en un "
+"espacio vacío:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:586
+msgid ""
+"Save, refresh : you should see an ugly json at the top of your page, by "
+"pretty printing it in your favorite dev. environment (or with an online json"
+" pretty printer like the one from `CuriousConcept "
+"<https://jsonformatter.curiousconcept.com/>`_ ) you should see something "
+"like this :"
+msgstr ""
+"Guarde los cambios y actualice. Observará un bloque json sin formato bonito "
+"en la parte superior de la página; con una impresión en formato bonito en su"
+" entorno de desarrollo preferido (o con una bonita impresora json en línea "
+"como la de `CuriousConcept <https://jsonformatter.curiousconcept.com/>`_ ), "
+"debería ver algo parecido a esto:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:675
+msgid ""
+"As it's a json, we can with AngularJS expression navigate into it's "
+"structure go get the value of any key. For exemple, to get the dataset "
+"title, we go from the context, to the ``dataset`` list, then to the "
+"``metas`` list, then we can reach the title value. Encapsulated in a big "
+"header (h1 HTML tag), it looks like this :"
+msgstr ""
+"Como es json, con la expresión AngularJS podemos navegar en su estructura "
+"para obtener el valor de cualquier clave. Por ejemplo, para obtener el "
+"título de juego de datos, vamos del contexto a la lista ``dataset`` y "
+"después a la lista ``metas``, y ya podemos conseguir el valor de título. "
+"Encapsulado en un gran encabezado (etiqueta HTML h1), tiene este aspecto:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:700
+msgid ""
+"Now that we saw what the context is, we must have a look to it's creation. "
+"The `odsDatasetContext <http://opendatasoft.github.io/ods-widgets/docs/#/api"
+"/ods-widgets.directive:odsDatasetContext>`_ is used to create a context, "
+"based on a datasetid and, optionnaly other parameters."
+msgstr ""
+"Ahora que hemos visto qué es el contexto, debemos examinar su creación. Se "
+"utiliza `odsDatasetContext <http://opendatasoft.github.io/ods-"
+"widgets/docs/#/api/ods-widgets.directive:odsDatasetContext>`_ para crear un "
+"contexto, a partir de un ID de juego de datos y opcionalmente otros "
+"parámetros."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:711
+msgid ""
+"As the documentation say, 2 parameters are mandatory : the context name, and"
+" the datasetid. In our case, 1 additionnal parameter has been copied. "
+"``mycontext-parameters`` is used to defined specific filters or query to the"
+" context. Here, several disjunctive mode are set to true for 5 fields, and "
+"the last parameter is a sort on date_d_immatriculation."
+msgstr ""
+"Como señala la documentación, hay 2 parámetros obligatorios: el nombre de "
+"contexto y el ID de juego de datos. En este caso, se ha copiado 1 parámetro "
+"adicional. ``mycontext-parameters`` permite definir filtros específicos o "
+"una consulta al contexto. Aquí, se ha establecido el modo disyuntivo en true"
+" para 5 campos, y el último parámetro establece una ordenación para "
+"date_d_immatriculation."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:718
+msgid ""
+"Disjunctive mode set to ``true`` on a facet field activate the multiple "
+"choise filter mode. It allows the user to apply a filter, and still be able "
+"to see and/or select  other values"
+msgstr ""
+"El modo disyuntivo establecido como ``true`` en un campo de faceta activa el"
+" modo de filtro de opción múltiple. Permite al usuario aplicar un filtro, y "
+"aún así poder ver y/o seleccionar otros valores."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:720
+msgid "We will remove this optional attribute and observe changes."
+msgstr "Eliminaremos este atributo opcional y observaremos los cambios."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:729
+msgid ""
+"First the context, if we display it, the json parameters block is now much "
+"smaller :"
+msgstr ""
+"Primero el contexto; si lo visualizamos, el bloque de parámetros json ahora "
+"es mucho más pequeño:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:731
+msgid "In your code add :"
+msgstr "En el código, añada:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:737
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:828
+msgid "Save, refresh, and see :"
+msgstr "Guarde los cambios, actualice y observe:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:745
+msgid ""
+"We still have a sort parameter, even if we deleted it from the context "
+"creation widget (odsDatasetContext), it's due to the dataset sort setting in"
+" the table view."
+msgstr ""
+"Todavía tenemos un parámetro de ordenación, aunque lo hayamos suprimido del "
+"widget de creación de contexto (odsDatasetContext), debido a la "
+"configuración del orden del juego de datos en la vista de tabla."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:747
+msgid ""
+"Last test : apply a filter on any facet and observe how the "
+"``context.parameters`` object is updated."
+msgstr ""
+"Última prueba: aplique un filtro en cualquier faceta y observe cómo se "
+"actualiza el objeto ``context.parameters``."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:754
+msgid ""
+"Also observe the 'standard' behavior of facets : when a value is selected, "
+"all others are hidden."
+msgstr ""
+"Observe también el comportamiento 'estándar' de las facetas: cuando se "
+"selecciona un valor, todos los demás se ocultan."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:758
+msgid "Add a record counter and last processing date"
+msgstr "Añadir un contador de registros y la última fecha de procesamiento"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:760
+msgid ""
+"It's time to get more interresting pieces of information from this context :"
+msgstr "Es el momento de obtener más datos interesantes de este contexto:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:762
+msgid "the total amount of records"
+msgstr "La cantidad total de registros"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:763
+msgid "the total number of hits matching the user query and/or filters"
+msgstr ""
+"El número total de coincidencias para la consulta del usuario y/o los "
+"filtros"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:764
+msgid "the last processing date of the dataset"
+msgstr "La última fecha de procesamiento del juego de datos"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:786
+msgid "Then :"
+msgstr "A continuación:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:788
+msgid ""
+"the total amount of records will be accessible by : ``{{  "
+"entreprisesimmatriculeesen2016.dataset.metas.records_count }}``"
+msgstr ""
+"El acceso a la cantidad total de registros se realizará mediante: ``{{  "
+"entreprisesimmatriculeesen2016.dataset.metas.records_count }}``"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:789
+msgid ""
+"the total number of hits : ``{{  entreprisesimmatriculeesen2016.nhits }}``"
+msgstr ""
+"El número total de coincidencias: ``{{  entreprisesimmatriculeesen2016.nhits"
+" }}``"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:790
+msgid ""
+"the last processing date : ``{{  "
+"entreprisesimmatriculeesen2016.dataset.metas.data_processed }}``"
+msgstr ""
+"La última fecha de procesamiento: ``{{  "
+"entreprisesimmatriculeesen2016.dataset.metas.data_processed }}``"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:792
+msgid ""
+"To finish, we include these blocs into our HTML code, surrounded by HTML and"
+" CSS code to have a nice rendering."
+msgstr ""
+"Para terminar incluimos estos bloques en el código HTML, delimitados por "
+"código HTML y CSS para una bonita presentación."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:794
+msgid ""
+"Records and nhits on the top of the navigation bar, processing date at the "
+"bottom :"
+msgstr ""
+"Los registros y las coincidencias (nhits) figuran en la parte superior de la"
+" barra de navegación; y la fecha de procesamiento, en la parte inferior:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:832
+msgid ""
+"It's nice but, the numerical and date format is a bit harsh. To fix that, we"
+" will introduce a pure **AngularJS** concept called **filters**. `Full "
+"documentation of AngularJS Filters here "
+"<https://docs.angularjs.org/api/ng/filter>`_"
+msgstr ""
+"Está bien, pero el formato numérico y de fecha es algo adusto. Para "
+"corregirlo, introduciremos un concepto **AngularJS** puro denominado "
+"**filtros**. `La documentación completa de los filtros AngularJS se "
+"encuentra aquí <https://docs.angularjs.org/api/ng/filter>`_."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:835
+msgid ""
+"A filter is a function or operation that can be applied on a variable or "
+"value in an AngularJS expression."
+msgstr ""
+"Un filtro es una función u operación que se puede aplicar a una variable o "
+"valor de una expresión AngularJS."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:837
+msgid ""
+"In our case, we will use the ``number`` filter to pretty print numerical "
+"values (add a space or a comma every 3 digits depending on the country), and"
+" a ``date`` to transform the ISO technical format into an human readable "
+"format."
+msgstr ""
+"En este caso, utilizaremos el filtro ``number`` para imprimir en un formato "
+"bonito los valores numéricos (cada 3 dígitos añada un espacio o una coma, "
+"según el país) y el filtro ``date`` para transformar el formato técnico ISO "
+"en un formato natural."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:861
+msgid ""
+"To \"call\" a filter, use pipe '|' at the end of the expression. Some "
+"filters accept specific parameters, date filter accept a date format or "
+"pattern. Example: ``expr. | date : 'M/d/yy'`` ``expr. | date : 'medium'``"
+msgstr ""
+"Para \"invocar\" un filtro, escriba la barra vertical '|' al final de la "
+"expresión. Algunos filtros aceptan parámetros específicos; el filtro de "
+"fecha admite un patrón o formato de fecha. Ejemplo: ``expr. | date : "
+"'M/d/yy'`` ``expr. | date : 'medium'``."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:865
+msgid "Save, refresh, see :"
+msgstr "Guarde los cambios, actualice y observe:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:871
+msgid "Add a download link"
+msgstr "Añadir un vínculo de descarga"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:873
+msgid ""
+"As the export tab of each datasets in OpenDataSoft platform, we can export "
+"only filtered records, it's interresting to have a link or button to do the "
+"same (for offline use of the data for exemple)."
+msgstr ""
+"En la ficha de exportación de cada uno de los juegos de datos de la "
+"plataforma OpenDataSoft podemos exportar únicamente los registros filtrados,"
+" y es interesante tener un vínculo o botón para hacer lo mismo (por ejemplo,"
+" para usar los datos sin conexión en línea)."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:875
+msgid ""
+"The `odsDatasetContext <http://opendatasoft.github.io/ods-widgets/docs/#/api"
+"/ods-widgets.directive:odsDatasetContext>`_ documentation describes some "
+"function that can be directly called on the context. ``getdownloadURL`` "
+"accepts 2 parameters, the first one is the format extension, the second one "
+"the list of specific fields. In our case, we will add a button (a link with "
+"a CSS class that gives any element a nice button style) to export records in"
+" CSV format."
+msgstr ""
+"En la documentación de `odsDatasetContext <http://opendatasoft.github.io"
+"/ods-widgets/docs/#/api/ods-widgets.directive:odsDatasetContext>`_ se "
+"describen algunas funciones que se pueden invocar directamente en el "
+"contexto. ``getdownloadURL`` admite 2 parámetros: el primero es la extensión"
+" de formato y el segundo es la lista de campos específicos. En este caso, "
+"añadiremos un botón (un vínculo con una clase CSS que da a cualquier "
+"elemento un bonito estilo de botón) para exportar los registros en formato "
+"CSV."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:885
+msgid ""
+"Save, refresh, test to apply some filters, then download the CSV export :"
+msgstr ""
+"Guarde los cambios, actualice y pruebe para aplicar algunos filtros, y "
+"después descargue la exportación CSV:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:891
+msgid "Going further - AngularJS"
+msgstr "Conceptos avanzados: AngularJS"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:894
+msgid "Discover angular JS directives"
+msgstr "Descubrir las directivas AngularJS"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:896
+msgid ""
+"And `AngularJS directive <https://docs.angularjs.org/guide/directive>`_ can "
+"be seen as an HTML attribute that can be added to any HTML elements. Lot's "
+"of them are available in the platform and can be used to add dynamic "
+"behavior to dashboards."
+msgstr ""
+"Una `directiva AngularJS <https://docs.angularjs.org/guide/directive>`_ "
+"puede entenderse como un atributo HTML que se puede añadir a cualquier "
+"elemento HTML. Muchas están disponibles en la plataforma y se pueden emplear"
+" para añadir un comportamiento dinámico a los paneles."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:899
+msgid "Here is a subset of most used directives :"
+msgstr ""
+"A continuación se muestra un subconjunto de las directivas más utilizadas:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:901
+msgid "``ng-init`` : initialise a variable"
+msgstr "``ng-init``: inicializar una variable"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:902
+msgid ""
+"``ng-click`` : evalute an expression when the user click on the element"
+msgstr ""
+"``ng-click``: evaluar una expresión cuando el usuario haga clic en el "
+"elemento"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:903
+msgid "``ng-class`` : apply a CSS class depending on a variable or condition"
+msgstr ""
+"``ng-class``: aplicar una clase CSS en función de una variable o condición"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:904
+msgid "``ng-if`` : show or hide an element depending on a condition"
+msgstr "``ng-if``: mostrar u ocultar un elemento en función de una condición"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:905
+msgid ""
+"``ng-repeat`` : iterate over a list or an array, repeat the HTML element for"
+" each iteration"
+msgstr ""
+"``ng-repeat``: iterar en una lista o matriz y repetir el elemento HTML para "
+"cada una de las iteraciones"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:906
+msgid ""
+"``ng-change`` : evalute an expression when the user change the value in an "
+"HTML Select element"
+msgstr ""
+"``ng-change``: evaluar una expresión cuando el usuario cambie el valor de un"
+" elemento HTML Select"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:910
+msgid "ng-if : Show or Hide a widget depending on the user filter choice"
+msgstr ""
+"ng-if: mostrar u ocultar un widget en función de la selección de filtro del "
+"usuario"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:912
+msgid ""
+"In our dashboard we have the region line chart, and also the city filter ! "
+"When the user select a city to filter on it, the chart become useless as it "
+"only have one value to display."
+msgstr ""
+"¡En el panel tenemos el gráfico de líneas de región, y también el filtro de "
+"ciudad! Cuando el usuario seleccione una ciudad como filtro, el gráfico no "
+"tendrá ninguna utilidad ya que solo tiene un valor para visualizar."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:915
+msgid ""
+"What could be interesting is to hide the region widget when an activity is "
+"selected, and show another chart instead !"
+msgstr ""
+"Podría ser interesante ocultar el widget de región cuando se seleccione una "
+"actividad, y mostrar otro gráfico en su lugar."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:917
+msgid ""
+"Let's go back to the explore dataset view, go to the analyse tab, and set-up"
+" a new chart, for exemple :"
+msgstr ""
+"Volvamos a la vista Explorar del juego de datos; vaya a la ficha de análisis"
+" y configure un gráfico nuevo, por ejemplo:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:921
+msgid ""
+"A pie chart with the number of recorded companies for each month of the "
+"year, sorted."
+msgstr ""
+"Un gráfico circular con el número de empresas registradas para cada uno de "
+"los meses del año, en orden."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:920
+msgid "X axis : immatriculation date, month level"
+msgstr "Eje X: fecha de registro, por mes"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:921
+msgid "Y : pie chart, Y axis : count"
+msgstr "Y: gráfico circular, eje Y: recuento"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:923
+msgid "Copy and paste the widget code below the chart."
+msgstr "Copie y pegue el código del widget bajo el gráfico."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:924
+msgid "Remove the pasted context declaration"
+msgstr "Elimine la declaración de contexto pegada."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:925
+msgid "Change the context name used in this new chart (if needed)."
+msgstr ""
+"Cambie el nombre de contexto empleado en este gráfico nuevo (si es "
+"necesario)."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:927
+msgid ""
+"We can now use the ``ng-if`` directive on each widget to display one or the "
+"other."
+msgstr ""
+"Ahora podemos utilizar la directiva ``ng-if`` en cada uno de los widgets "
+"para visualizar uno u otro."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:929
+msgid ""
+"The condition will be, `if a refine is applied on the context`, show or "
+"hide. We saw that the refine list is available in ``context.parameters``. As"
+" parameters is a key value dictionnary, to get the ``myfield`` refine "
+"parameter, we try to access : ``mycontext.parameters['refine.myfield']``"
+msgstr ""
+"La condición será: `si se aplica o no un refinamiento en el contexto`, "
+"mostrar u ocultar. Hemos visto que la lista de refinamientos está disponible"
+" en ``context.parameters``. Como los parámetros son un diccionario de "
+"valores clave, para obtener el parámetro de refinamiento ``myfield``, "
+"intentamos acceder a: ``mycontext.parameters['refine.myfield']``."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:932
+msgid "Applied to our dataset it's looks like this :"
+msgstr "Una vez aplicado al juego de datos, tiene este aspecto:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:958
+msgid ""
+"The region chart ng-if condition can be translated to `Show the chart if "
+"there is a refine on the **ville** facet`"
+msgstr ""
+"La condición ng-if del gráfico de región se puede traducir como `Mostrar el "
+"gráfico si hay un refinamiento en la faceta de ciudad **ville**`."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:958
+msgid ""
+"``!`` character is to get the opposite, the condition can be translated to "
+"`Show the chart if their is NO refine on the **ville** facet`"
+msgstr ""
+"El carácter ``!`` permite obtener lo contrario, y la condición se puede "
+"traducir como `Mostrar el gráfico si NO hay ningún refinamiento en la faceta"
+" de ciudad **ville**`"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:959
+msgid ""
+"To easily understand how it works, do not hesitate to display the "
+"``context.parameters`` value in your dashboard each time you use it !"
+msgstr ""
+"Para entender fácilmente su funcionamiento, no dude en visualizar el valor "
+"``context.parameters`` en el panel cada vez que lo utilice."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:963
+msgid "ng-if : display the download link only if the dashboard is filtered"
+msgstr ""
+"ng-if: visualizar el vínculo de descarga solo si el panel está filtrado"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:965
+msgid ""
+"Same technique, if ``context.q`` or "
+"``context.parameters['refine.myfilter']`` exists, show the download link."
+msgstr ""
+"Siguiendo la misma técnica, si existe ``context.q`` o "
+"``context.parameters['refine.myfilter']``, mostrar el vínculo de descarga."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:978
+msgid "ng-init / ng-click / ng-if /ng-class : Create tabs to switch views"
+msgstr ""
+"ng-init / ng-click / ng-if /ng-class: crear fichas para cambiar entre vistas"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:980
+msgid "This exemple will use 4 differents directives."
+msgstr "En este ejemplo se utilizan 4 directivas."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:982
+msgid "ng-init to declare a variable to keep track of witch tab to display !"
+msgstr ""
+"ng-init para declarar una variable para el seguimiento de la ficha que se "
+"visualiza"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:983
+msgid ""
+"ng-if to display only one tab at a time, depending on the value of the "
+"variable"
+msgstr ""
+"ng-if para visualizar una sola ficha cada vez, según el valor de la variable"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:984
+msgid ""
+"ng-click to change de value of the variable to switch from a tab to another"
+msgstr ""
+"ng-click para cambiar el valor de la variable a fin de cambiar de una ficha "
+"a otra"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:985
+msgid "ng-class to change the color of the tab to show witch tab is selected"
+msgstr ""
+"ng-class para cambiar color de la ficha con objeto de mostrar qué ficha está"
+" seleccionada"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:987
+msgid "So first, the HTML structure :"
+msgstr "Así que, en primer lugar, la estructura HTML:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:1017
+msgid "Initialise a variable called ``tab`` with ``ng-init`` :"
+msgstr "Inicialice una variable denominada ``tab`` con ``ng-init``:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:1023
+msgid "On each tab button, add a ``ng-click`` to set the ``tab`` value :"
+msgstr ""
+"En cada uno de los botones de la ficha, añada un ``ng-click`` para "
+"configurar el valor de ``tab``:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:1037
+msgid "Then, on each content block, add a ``ng-if`` condition to display it :"
+msgstr ""
+"A continuación, en cada uno de los bloques de contenido, añada una condición"
+" ``ng-if`` para su visualización:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:1053
+msgid ""
+"Save, refresh, and test, you should now see that, by clicking on the tab "
+"button, the content is changing !"
+msgstr ""
+"Guarde los cambios, actualice y pruebe; observará que, si hace clic en el "
+"botón de ficha, ¡el contenido cambia!"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:1055
+msgid ""
+"Now, it needs some CSS to have a real button style, we already used it : "
+"``ods-button ods-button--primary``. Let's also add a ``items`` and ``item`` "
+"class."
+msgstr ""
+"Ahora necesita algo de código CSS para tener un estilo de botón real, como "
+"ya hemos visto: ``ods-button ods-button--primary``. Vamos a añadir también "
+"una clase ``items`` e ``item``."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:1057
+msgid "This looks like :"
+msgstr "Tiene este aspecto:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:1073
+msgid "Add in the CSS block this :"
+msgstr "Añada esto en el bloque CSS:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:1086
+msgid ""
+"Last thing, still with CSS, we want to highlight with a different color "
+"witch tab is selected. We will use a predefined button also : ``ods-button--"
+"danger`` (in red) This CSS class must be set only for a specific condition "
+"with ``ng-class``. The pattern is : ``ng-class=\"{'css-class': variable == "
+"value}\"``"
+msgstr ""
+"Por último, todavía con CSS, queremos resaltar con otro color la ficha que "
+"está seleccionada. Utilizaremos también un botón predefinido: ``ods-button--"
+"danger`` (en rojo) Esta clase CSS solo debe establecerse para una condición "
+"específica con ``ng-class``. El patrón es: ``ng-class=\"{'clase-css': "
+"variable == valor}\"``."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:1090
+msgid "The final HTML looks like this :"
+msgstr "El código HTML final tiene este aspecto:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:1121
+msgid "Save, refresh, and try to switch tabs !"
+msgstr "¡Guarde los cambios, actualice y pruebe a cambiar entre fichas!"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:1125
+msgid ""
+"Then we can include it in our dashboard to add extra dataviz without having "
+"a too heavy dashboard (too heavy to load or to read). To give some space to "
+"the table and the chart that are too small we will include them in a tab, we"
+" will also add a third chart, based on another axis (the date for exemple). "
+"The second row will become the tabulated row, and each widget (table, "
+"charts) will be the content of each tab."
+msgstr ""
+"A continuación, podemos incluir esto en el panel para añadir visualizaciones"
+" adicionales sin tener un panel demasiado pesado (de cargar o leer). Para "
+"dar espacio a la tabla y el gráfico, demasiado pequeños, los incluiremos en "
+"una ficha; también añadiremos un tercer gráfico, a partir de otro eje (la "
+"fecha, por ejemplo). La segunda fila pasará a ser la fila tabulada, y cada "
+"uno de los widgets (tabla y gráficos) será el contenido de cada una de las "
+"fichas."
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:1129
+msgid "The main content looks like this :"
+msgstr "El contenido principal tiene este aspecto:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:1198
+msgid "to center tab buttons, edit the CSS code with :"
+msgstr "Para centrar los botones de ficha, edite el código CSS con:"
+
+#: ../../source/creating_content/tutorials/dashboard/dashboard.rst:1211
+msgid "And finally, save, refresh :"
+msgstr "Y por último, guarde los cambios y actualice:"
