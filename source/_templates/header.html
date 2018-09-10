@@ -3,7 +3,7 @@
     <div class="ods__documentation-header">
 
         <div class="ods__documentation-header-logo">
-            <button type="button" id="nav-button" data-toggle="wy-nav-top"> Menu </button>
+            <button type="button" id="nav-button" data-toggle="wy-nav-top">{{ gettext('Menu') }}</button>
             <img src="{{ pathto('_static/' + logo, 1) }}" alt="OpenDataSoft Documentation Logo">
             <button type="button" id="help-hub-button"> Help Hub </button>
         </div>
@@ -13,7 +13,7 @@
                 <a href="/">Help Hub</a>
             </div>
             <div class="ods__documentation-header-nav-item ods__documentation-header-nav-item-active">
-                <a href="{{ pathto(master_doc) }}">User guide</a>
+                <a href="{{ pathto(master_doc) }}">{{ gettext('User guide') }}</a>
             </div>
             <div class="ods__documentation-header-nav-item">
                 <a href="https://discovery.opendatasoft.com/">Discovery</a>
@@ -28,7 +28,7 @@
                 <a href="/en/apis/">APIs</a>
             </div>
             <div class="ods__documentation-header-nav-item">
-                <a href="/tutorials/en/">Tutorials</a>
+                <a href="/tutorials/en/">{{ gettext('Tutorials') }}</a>
             </div>
         </div>
 
@@ -39,7 +39,7 @@
             <a href="/">Help Hub</a>
         </div>
         <div class="ods__documentation-help-hub-sidebar-item ods__documentation-header-nav-item-active">
-            <a href="{{ pathto(master_doc) }}">User guide</a>
+            <a href="{{ pathto(master_doc) }}">{{ gettext('User guide') }}</a>
         </div>
         <div class="ods__documentation-help-hub-sidebar-item">
             <a href="https://discovery.opendatasoft.com/">Discovery</a>
@@ -54,7 +54,7 @@
             <a href="/en/apis/">APIs</a>
         </div>
         <div class="ods__documentation-help-hub-sidebar-item">
-            <a href="/tutorials/en/">Tutorials</a>
+            <a href="/tutorials/en/">{{ gettext('Tutorials') }}</a>
         </div>
     </div>
 
