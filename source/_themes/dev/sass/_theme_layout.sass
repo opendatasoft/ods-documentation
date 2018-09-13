@@ -321,23 +321,27 @@ code,
   word-break: break-all
 
 .wy-nav-content-wrap
-  margin-left: $nav-desktop-width
   background: $section-background-color
-  min-height: 100%
-  left: 0
+  height: 100%
+  left: 300px
+  position: fixed
+  width: auto
   border-left: 1px solid transparentize($grey-medium, 0.6)
   a
     word-break: break-all
+  
+@media screen and (max-width: $tablet-width)
+  .wy-nav-content-wrap
+    left: 0
+    position: relative
 
 .wy-nav-content
-  padding: $gutter $gutter * 2
+  padding: 0 40% 130px $gutter * 2
   height: 100%
-  max-width: 60%
-  margin: auto
+  overflow-y: scroll
 @media screen and (min-width: 930px) and (max-width: 1099px)
   .wy-nav-content
-    padding: 1.618em 0
-    max-width: 80%
+    padding: $gutter $gutter * 2
 
 .wy-body-mask
   position: fixed
@@ -409,14 +413,14 @@ footer
     margin-left: 0
     width: 100%
     .wy-nav-content
-      max-width: 80%
-      padding: 1.618em 0
+      overflow-y: hidden
+      padding: $gutter $gutter * 2
     &.shift
       overflow: hidden
 
 @media screen and (min-width: $nav-media-query)
   .wy-nav-content
-    margin: 0
+    margin: 20px 0 0 0
     background: $section-background-color
   .wy-side-nav-search
     margin-bottom: $gutter / 2
