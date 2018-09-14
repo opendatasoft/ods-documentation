@@ -145,7 +145,7 @@ It is possible to download the catalog in the following formats:
 .. admonition:: Note
    :class: note
 
-   Using the `OpenDataSoft API <https://help.opendatasoft.com/en/apis/>`_, it is possible to download the catalog in JSON and data.json.
+   Using the `OpenDataSoft Search API <https://help.opendatasoft.com/apis/ods-search-v2/#exporting-datasets>`_, it is possible to download the catalog in other formats, such as JSON, data.json but also DCAT-AP (for Germany and Switzerland).
 
 Exploring a dataset from the catalog
 ------------------------------------
