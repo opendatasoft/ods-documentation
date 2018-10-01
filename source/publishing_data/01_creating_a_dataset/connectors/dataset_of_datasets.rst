@@ -3,6 +3,12 @@ Dataset of datasets connector
 
 The Dataset of datasets (domain) connector allows to create an index of the datasets of an OpenDataSoft domain, optionally with all their related metadata and analytics, in the form of a dataset.
 
+Creation
+--------
+
+1. Enter ``domaindatasets://`` in the Enter a URL area, when creating a new dataset.
+2. Press Enter, or click the + button.
+
 Configuration
 -------------
 
@@ -30,6 +36,6 @@ Configuration
    * * Private datasets
      * If checked, private datasets are added to the dataset. Also adds a "Visibility" field which indicates whether the datasets are public ("domain") or private ("restricted").
    * * Staged datasets
-     * If checked, staged datasets are added to the dataset. Also adds a "Published" field which indicates whether the datasets are published ("true") or not ("false").
+     * If checked, staged datasets (meaning datasets that are created but not published) are added to the dataset. Also adds a "Published" field which indicates whether the datasets are published ("true") or not ("false").
    * * Admin metadata
      * If checked, admin metadata are retrieved and added to the dataset.
