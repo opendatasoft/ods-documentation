@@ -3,7 +3,7 @@ Processing data
 
 The content of a dataset can be seen as a flat database table. No matter their original data source format, datasets are composed of fields (columns) and records (rows). The values contained in both fields and records can be processed in the platform before being published.
 
-In the OpenDataSoft platform, all processing operations are done in the Processing tab.
+In the OpenDataSoft platform, all processing operations are done in the Processing tab of the edition interface of each dataset.
 
 .. localizedimage:: images/processing_parts.png
     :alt: Processing tab when publishing a new dataset

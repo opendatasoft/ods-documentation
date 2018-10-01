@@ -1,7 +1,7 @@
 GeoJSON connector
 =================
 
-A GeoJSON file as defined by the ``RFC 7946``, one simple GeoJSON is:
+The GeoJSON connector is used for dataset which source is a GeoJSON file (.geojson). As defined by the RFC 7946 GeoJSON specification, a GeoJSON should have the following structure:
 
 .. code-block:: json
 
@@ -58,13 +58,13 @@ A GeoJSON file as defined by the ``RFC 7946``, one simple GeoJSON is:
 .. admonition:: Note
    :class: note
 
-   You can find more examples on `GeoJSON.org <http://geojson.org/geojson-spec.html#feature-collection-objects>`_
+   For more GeoJSON examples, go to `GeoJSON.org <http://geojson.org/geojson-spec.html#feature-collection-objects>`_.
 
 
-File extensions
-~~~~~~~~~~~~~~~
+Creation
+--------
 
-The following extensions are recognized: .geojson and .json.
+See :doc:`how to source a file by uploading a file<publishing_data/01_creating_a_dataset/sourcing_data>`.
 
 Configuration
 -------------
@@ -73,7 +73,10 @@ Configuration
 
    * * Name
      * Description
-     * Values
+     * Usage
+   * * Extract filename
+     * Creates a new column at the end of the dataset with the name of the source file.
+     * By default, the box is not checked. Check the box to extract filename in an added column.
    * * Spatial reference (EPSG code)
-     * The EPSG code of the geographical data
-     * One EPSG code
+     * Indicates the `EPSG <http://spatialreference.org/ref/epsg/>`_ code of the geographical data of the dataset.
+     * By default, the text area is empty and the platform considers the geographical data to be in WGS84 (EPSG code: 4326). If the default EPSG code is not right, write the right one in the Spacial reference text area.
