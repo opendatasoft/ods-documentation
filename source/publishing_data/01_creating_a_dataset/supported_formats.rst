@@ -22,6 +22,7 @@ Supported file formats
    connectors/shapefile
    connectors/spreadsheet
    connectors/xml
+   connectors/dataset_of_datasets
 
 The following table lists the supported format and describes configuration options for each format:
 
