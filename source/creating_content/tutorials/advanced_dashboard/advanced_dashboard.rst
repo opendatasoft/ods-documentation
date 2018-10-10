@@ -13,8 +13,8 @@ Pick up a dataset
 To illustrate metrics, KPI, advanced map tooltips and more, we will use a dataset that contains all regularity reports from the French Railway Society since 2011.
 This dataset contains, for each TGV (High speed train) line (100 lines), the number of scheduled train per month, the number of trains that didn't leave the station, and the number of trains in late.
 
-Dataset id : regularite-mensuelle-tgv
-You can search for it on `<data.opendatasoft.com>`_
+Dataset id : ``regularite-mensuelle-tgv``
+You can search for it on `data.opendatasoft.com <https://data.opendatasoft.com>`_
 Then add this dataset to your domain (New dataset, Add a source from OpenDataSoft network, pick the dataset, save, publish)
 
 
