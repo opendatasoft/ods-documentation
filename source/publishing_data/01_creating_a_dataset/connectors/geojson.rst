@@ -1,7 +1,7 @@
 GeoJSON connector
 =================
 
-The GeoJSON connector is used for dataset which source is a GeoJSON file (.geojson). As defined by the RFC 7946 GeoJSON specification, a GeoJSON should have the following structure:
+The GeoJSON File connector is used for dataset which source is a GeoJSON file (.geojson). As defined by the RFC 7946 GeoJSON specification, a GeoJSON should have the following structure:
 
 .. code-block:: json
 
@@ -62,12 +62,13 @@ The GeoJSON connector is used for dataset which source is a GeoJSON file (.geojs
 
 
 Creation
---------
+~~~~~~~~
 
 See :doc:`how to source a file by uploading a file<publishing_data/01_creating_a_dataset/sourcing_data>`.
 
 Configuration
--------------
+~~~~~~~~~~~~~
+
 .. list-table::
    :header-rows: 1
 

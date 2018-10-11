@@ -1,33 +1,47 @@
 Salesforce connector
 ====================
 
-The Salesforce connector extracts data from the Force.com REST API. You need to create and configure an application on your Salesforce instance. See the `documentation <https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_username_password_oauth_flow.htm>`_ for more information.
+The Salesforce connector is used to extract data from the force.com REST API.
 
-Configuration
--------------
-.. list-table::
-   :header-rows: 1
+.. admonition:: Prerequisite
+   :class: important
 
-   * * Name
-     * Description
-   * * Client Id
-     * The Consumer Key from the connected app definition.
-   * * Client Secret
-     * The Consumer Secret from the connected app definition.
-   * * Username
-     * End-user’s username.
-   * * Password
-     * End-user’s password.
-   * * Security Token
-     * End-user’s security token.
-   * * Filtered Fields
-     * The fields to retrieve from the object. Relationship can be followed with this notation: GC_OBO_Referential__r.Name
+   An application on the Salesforce instance must be created and configured. Please refer to the `Salesforce documentation <https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_username_password_oauth_flow.htm>`_ for more information.
 
 
 Creation
 ~~~~~~~~
 
-Enter the ``force://`` followed by the object name in the URL box, for example: ``force://GC_MY_Object__c``
+1. Enter ``force://``, followed by the object name (e.g. ``force://GC_MY_Object__c``) in the Enter a URL area, when creating a new dataset.
+2. Press Enter, or click the + button.
 
+Configuration
+~~~~~~~~~~~~~
 
+.. list-table::
+   :header-rows: 1
 
+   * * Name
+     * Description
+     * Usage
+   * * Client Id
+     * Consumer key from the connected application definition.
+     * Indicate the client ID in the related area.
+   * * Client Secret
+     * Consumer Secret from the connected application definition.
+     * Indicate the client secret in the related area.
+   * * Username
+     * End-user’s username.
+     * Indicate the username in the related area.
+   * * Password
+     * End-user’s password.
+     * Indicate the password in the related area.
+   * * Security Token
+     * End-user’s security token.
+     * Indicate the security token in the related area.
+   * * Use Sandbox
+     * To use the Salesforce sandbox for tests.
+     * By default, the box is not checked. Check the box to use the sandbox.
+   * * Filtered Fields
+     * Fields to retrieve from the object.
+     * Indicate the name of the field in the related area. Relationships can be followed with the following notation: ``GC_OBO_Referential__r.Name`.

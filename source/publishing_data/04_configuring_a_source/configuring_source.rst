@@ -12,19 +12,24 @@ The configuration options of a source entirely depend on the source type, and bo
   :header-rows: 1
 
   * * Name
-    * Description
+    * Description & Supported formats
+    * Availability
   * * :doc:`ArcGIS<connectors/arcgis>`
     * Used for data extracted from an ArcGIS server.
+    * Default
   * * :doc:`CSV<connectors/geojoin>`
-    * ...
+    * Used for CSV (.csv), TSV (.tsv), Text (.txt) and DAT (.dat) files.
+    * Default
   * * :doc:`GeoJSON<connectors/geojoin>`
-    * ...
+    * Used for GeoJSON (.geojson) files.
   * * :doc:`JCDecaux<connectors/geojoin>`
-    * ...
+    * Used to retrieve the state of JCDecaux bike stations.
+    * On demand
   * * :doc:`JSON<connectors/geojoin>`
     * ...
   * * :doc:`kml<connectors/geojoin>`
-    * ...
+    * Used for KML (.kml) and KMZ (.kmz) files.
+    * Default
   * * :doc:`mapinfo<connectors/geojoin>`
     * ...
   * * :doc:`netatmo<connectors/geojoin>`

@@ -1,28 +1,35 @@
 OSM connector
 =============
 
-The OpenStreetMap connector extracts data from OSM archives. The export can be compressed.
+The OSM File connector (OSM standing for OpenStreetMap) is used to extract data from OpenStreetMap archives (.osm).
 
 .. admonition:: Note
    :class: note
 
-   A reliable server to download extract is `Geofabrik <http://download.geofabrik.de>`_. It provides export for different parts of the world.
+   A reliable server to download extracts from the OpenStreetMap project is `Geofabrik <http://download.geofabrik.de>`_. It provides exports for different regions of the world.
 
-File extensions
-~~~~~~~~~~~~~~~
+The OSM connector can also read XML (.xml) files.
 
-The following extensions are recognized: .osm and .xml.
+Creation
+~~~~~~~~
+
+See :doc:`how to source a file by uploading a file<publishing_data/01_creating_a_dataset/sourcing_data>`.
 
 Configuration
--------------
+~~~~~~~~~~~~~
+
 .. list-table::
    :header-rows: 1
 
    * * Name
      * Description
+     * Usage
    * * Keep only amenities
-     * Filter the export to only keep node and way with the tag ``amenity``
+     * Filters the export to only keep nodes and ways with the "amenity" tag.
+     * By default, the box is checked. To exclude all amenities, uncheck the box.
    * * Tags
-     * The tags to extract from the node or way
+     * Tags to extract from the nodes and ways.
+     * Write the tags to extract in the Tags text area. Tags should be separated with a comma.
    * * Relation tags
-     * The tags to extract from the attached relation
+     * Tags to extract from attached relations.
+     * Write the tags to extract in the Relation tags text area. Tags should be separated with a comma.

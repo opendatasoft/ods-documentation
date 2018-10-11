@@ -3,26 +3,42 @@ JSON connectors
 
 JSON is an open-standard format that uses human-readable text to transmit data objects consisting of key–value pairs. It is the most common data format to build web APIs.
 
-As JSON documents can have a lot of different forms, there are two JSON connectors you can choose to extract your data. If the connector did not manage to fully extract a document with a complex structure, you can use one of the platform's JSON processors to complete the extraction.
+As JSON documents can have a lot of different forms, there are 3 JSON connectors to extract data from a JSON file:
+
+- the JSON File connector,
+- the JSON Line connector,
+- the JSON Dict connector.
+
+
+.. admonition:: Note
+   :class: note
+
+   If the connector does not manage to fully extract a document with a complex structure, use one of the JSON processors to complete the extraction.
+
 
 JSON File
 ---------
 
 This connector extracts a valid JSON document (array or object) into one dataset of several records.
 
-- If the document is a JSON array, a record will be created for each object inside the array (the keys will be used as column names).
-- If the document is a JSON object, the parameter "JSON root" should contain a dot-separated path to the array inside your object. If not provided, the connector tries ``items``.
+* If the document is a JSON array, a record will be created for each object inside the array (the keys will be used as column names).
+* If the document is a JSON object, the parameter "JSON root" should contain a dot-separated path to the array inside your object. If not provided, the connector tries ``items``.
 
 For each item inside the array, the connector can follow another path before extracting the records thanks to the parameter "JSON object".
 
 Supported field types
 ~~~~~~~~~~~~~~~~~~~~~
 
-- regular fields like decimal, bool, string
-- JSON object: will be used as-is
-- array:
-    - if the array contains JSON objects, it will be used as-is
-    - if it contains strings, a multivalued field will be created with all the strings separated by a semicolon (";")
+* Regular fields (decimal, bool, string)
+* JSON object: will be used as-is
+* Array:
+    * if the array contains JSON objects, it will be used as-is
+    * if it contains strings, a multivalued field will be created with all the strings separated by a semicolon (";")
+
+Creation
+~~~~~~~~
+
+See :doc:`how to source a file by uploading a file<publishing_data/01_creating_a_dataset/sourcing_data>`.
 
 Configuration
 ~~~~~~~~~~~~~
@@ -32,29 +48,40 @@ Configuration
 
    * * Name
      * Description
-     * Values
-   * * JSON root
-     * Path to the json array on which the connector will iterate to get the records
-     * None if JSON array, "items" if JSON object
+     * Usage
+   * * Extract filename
+     * Creates a new column at the end of the dataset with the name of the source file.
+     * By default, the box is not checked. Check the box to extract filename in an added column.
    * * JSON object
-     * Relative path of the json object you want to extract (from JSON root)
+     * Relative path of the JSON object to extract (from JSON root).
      *
+   * * JSON root
+     * Path to the JSON array on which the connector will iterate to get the records.
+     * None if JSON array, “items” if JSON object
+
+
 
 JSON Line
 ---------
 
 This connector expects a file in which each line is a one-line JSON documents. The whole file is not a valid JSON document but each line is.
 
-The connector supports two modes:
-    - One JSON array on each line (or one array altogether)
-    - One JSON object on each line
+The connector supports 2 modes:
+
+    * one JSON array on each line (or one array altogether)
+    * one JSON object on each line
 
 Supported field types
 ~~~~~~~~~~~~~~~~~~~~~
 
-- regular fields like decimal, string
-- array: will be used as-is
-- JSON object: will be used as-is
+* Regular fields (decimal, string)
+* Array: will be used as-is
+* JSON object: will be used as-is
+
+Creation
+~~~~~~~~
+
+See :doc:`how to source a file by uploading a file<publishing_data/01_creating_a_dataset/sourcing_data>`.
 
 Configuration
 ~~~~~~~~~~~~~
@@ -64,13 +91,18 @@ Configuration
 
    * * Name
      * Description
-     * Values
+     * Usage
+   * * Extract filename
+     * Creates a new column at the end of the dataset with the name of the source file.
+     * By default, the box is not checked. Check the box to extract filename in an added column.
    * * First line number
-     * The connector will start processing the sheet at this line
-     * 0
+     * For files which do not start at the very first line, it is possible to decide which line is to be considered the first one. The lines above will be skipped from the dataset.
+     * By default, the dataset starts at line 1. Indicate the number of the line that should be considered the beginning of the dataset.
    * * Headers
-     * Indicates first row contains field labels.
-     * Yes
+     * For files which first line contains column titles.
+     * By default, the box is checked. It makes the values of the first line field labels. Uncheck the box if the first line doesn't contain titles but data: the field labels will then be empty by default.
+
+
 
 JSON Dict
 ---------
@@ -82,11 +114,16 @@ It expects a JSON object where each key contains a record, and create records wi
 Supported field types
 ~~~~~~~~~~~~~~~~~~~~~
 
-- regular fields like decimal, bool, string
-- JSON object: will be used as-is
-- array:
-    - if the array contains JSON objects, it will be used as-is
-    - if it contains strings, a multivalued field will be created with all the strings separated by a semicolon (";")
+* Regular fields (decimal, bool, string)
+* JSON object: will be used as-is
+* Array:
+    * if the array contains JSON objects, it will be used as-is
+    * if it contains strings, a multivalued field will be created with all the strings separated by a semicolon (";")
+
+Creation
+~~~~~~~~
+
+See :doc:`how to source a file by uploading a file<publishing_data/01_creating_a_dataset/sourcing_data>`.
 
 Configuration
 ~~~~~~~~~~~~~
@@ -96,7 +133,10 @@ Configuration
 
    * * Name
      * Description
-     * Values
+     * Usage
+   * * Extract filename
+     * Creates a new column at the end of the dataset with the name of the source file.
+     * By default, the box is not checked. Check the box to extract filename in an added column.
    * * JSON root
      * ijson path to the object that contains the records
      * start from the root if empty, ijson path like "result.datasets", or "item" to iterate in an array
@@ -104,8 +144,10 @@ Configuration
      * Label of the column that holds the key value
      *
 
-Example 1
+Examples
 ~~~~~~~~~
+
+Example 1:
 
 .. code-block:: json
 
@@ -147,8 +189,7 @@ With an empty JSON root, results in:
 | 2015 | {"color": "teal", "available": true, "price": 10.5} | {"color": "crimson", "available": true, "price": 9.1} |
 +------+-----------------------------------------------------+-------------------------------------------------------+
 
-Example 2
-~~~~~~~~~
+Example 2:
 
 .. code-block:: json
 

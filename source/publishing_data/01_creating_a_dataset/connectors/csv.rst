@@ -1,21 +1,21 @@
 CSV connector
 =============
 
-The CSV connector is used for datasets which source is a CSV file (.csv). It is a file which contains a list of fields separated either by a ',' (usually for English files) or a ';' (usually for French files).
+The CSV File connector is used for datasets which source is a CSV file (.csv). It is a file which contains a list of fields separated either by a ',' (usually for English files) or a ';' (usually for French files).
 
-The CSV connector can also read other similar files:
+The CSV File connector can also read other similar files:
 
 - TSV files (.tsv),
 - Text files (.txt),
 - DAT files (.dat).
 
 Creation
---------
+~~~~~~~~
 
 See :doc:`how to source a file by uploading a file<publishing_data/01_creating_a_dataset/sourcing_data>`.
 
 Configuration
--------------
+~~~~~~~~~~~~~
 
 .. list-table::
    :header-rows: 1
@@ -34,7 +34,7 @@ Configuration
 
           Character encoding is the way characters are represented in a saved file. Unicode (or utf-8) is the universal standard but some files might be encoded in a legacy format (e.g. old versions of Excel), which would require setting the encoding manually. On modern software, this is usually unnecessary.
 
-     * By default, the platform uses a heuristic to guess the encoding. If the guessed encoding is not right, choose the right one among the list, or write it in the Encoding text. Any alias from `Python <https://docs.python.org/2/library/codecs.html#standard-encodings>`_ can be used.
+     * By default, the platform uses a heuristic to guess the encoding. If the guessed encoding is not right, choose the right one among the list, or write it in the Encoding text area. Any alias from `Python <https://docs.python.org/2/library/codecs.html#standard-encodings>`_ can be used.
    * * Escape character
      * If an escape character is found right before a separator, the latter will not be considered a separator anymore. The Escape character configuration option avoids this situation.
      * By default, the text area is empty. In case the file contains an escape character ( e.g. ``#`` or ``\``), write it in the text area.

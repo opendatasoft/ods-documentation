@@ -1,27 +1,40 @@
 Spreadsheet connector
 =====================
 
-A spreadsheet is a tabular file generated from common software, like Excel, OpenOffice, LibreOffice.
+The Spreadsheet (XLS, XLSX, ODS) connector is used for spreadsheet files: tabular files generated from software such as Excel, OpenOffice and LibreOffice.
 
-File extensions
-~~~~~~~~~~~~~~~
+The spreadsheet connector can read the following files:
 
-The following extensions are recognized: .xls, .xlsx, .ods.
+- Microsoft Excel files (.xls and .xlsx),
+- OpenOffice files (.ods).
+
+Creation
+~~~~~~~~
+
+See :doc:`how to source a file by uploading a file<publishing_data/01_creating_a_dataset/sourcing_data>`.
 
 Configuration
--------------
+~~~~~~~~~~~~~
+
 .. list-table::
    :header-rows: 1
 
    * * Name
      * Description
-     * Values
-   * * Headers
-     * Column titles will be used as field names.
-     * ``true`` or ``false``
+     * Usage
+   * * Extract filename
+     * Creates a new column at the end of the dataset with the name of the source file.
+     * By default, the box is not checked. Check the box to extract filename in an added column.
    * * First line number
-     * All the rows from the beginning of the file to this line number will be skipped.
-     * number
+     * For files which do not start at the very first line, it is possible to decide which line is to be considered the first one. The lines above will be skipped from the dataset.
+     * By default, the dataset starts at line 1. Indicate the number of the line that should be considered the beginning of the dataset.
+   * * Headers
+     * For files which first line contains column titles.
+     * By default, the box is checked. It makes the values of the first line field labels. Uncheck the box if the first line doesn't contain titles but data: the field labels will then be empty by default.
    * * Sheet number
-     * The number of the sheet to work on. Can be a range with the ``[1-3]`` notation, a list of sheets separated by a ``,``, or a ``*`` (all sheets).
-     * ``1`` or ``[1-3]`` or ``1,2,3`` or ``*``
+     * Number of the sheet(s) to use for the dataset.
+     * Indicate which sheets to add to the dataset. Depending on the number of sheets to add, use the related notation:
+
+       * for a range of sheets: ``[1-3]``
+       * for a list of sheets ``1,2,3`` (separated with a comma)
+       * for all the sheets from the spreadsheet: ``*``
