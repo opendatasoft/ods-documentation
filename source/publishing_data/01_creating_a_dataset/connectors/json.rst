@@ -52,9 +52,6 @@ Configuration
    * * Extract filename
      * Creates a new column at the end of the dataset with the name of the source file.
      * By default, the box is not checked. Check the box to extract filename in an added column.
-   * * JSON object
-     * Relative path to the JSON object to extract.
-     * Once the JSON root has be set (or left empty), if the preview shows irrelevant columns, and that the JSON object has been extracted as the value of one column, write the name of that column inside the JSON object textbox.
    * * JSON root
      * Path to the JSON array that contains the objects that will become the dataset records.
      * If the JSON array is directly at the root, leave the textbox empty. If the JSON file is a JSON object, write the ijson path to the array in the textbox.
@@ -63,7 +60,10 @@ Configuration
           :class: note
 
           ijson is a syntax to navigate inside JSON objects. It consists in separating the attribute names with dots (e.g. `content.trains`). More features are available for advanced users.
-
+          
+   * * JSON object
+     * Relative path to the JSON object to extract.
+     * Once the JSON root has be set (or left empty), if the preview shows irrelevant columns, and that the JSON object has been extracted as the value of one column, write the name of that column inside the JSON object textbox.
 
 Examples
 ~~~~~~~~
