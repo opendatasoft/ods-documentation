@@ -53,12 +53,99 @@ Configuration
      * Creates a new column at the end of the dataset with the name of the source file.
      * By default, the box is not checked. Check the box to extract filename in an added column.
    * * JSON object
-     * Relative path of the JSON object to extract (from JSON root).
-     *
+     * Relative path to the JSON object to extract.
+     * Once the JSON root has be set (or left empty), if the preview shows irrelevant columns, and that the JSON object has been extracted as the value of one column, write the name of that column inside the JSON object textbox.
    * * JSON root
-     * Path to the JSON array on which the connector will iterate to get the records.
-     * None if JSON array, “items” if JSON object
+     * Path to the JSON array that contains the objects that will become the dataset records.
+     * If the JSON array is directly at the root, leave the textbox empty. If the JSON file is a JSON object, write the ijson path to the array in the textbox.
 
+       .. admonition:: Note
+          :class: note
+
+          ijson is a syntax to navigate inside JSON objects. It consists in separating the attribute names with dots (e.g. `content.trains`). More features are available for advanced users.
+
+
+Examples
+~~~~~~~~
+
+Example 1:
+
+.. code-block:: json
+
+  [
+   {
+       "name": "Agra Express",
+       "origin": "Agra Cantt",
+       "destination": "New Delhi"
+   },
+   {
+       "name": "Gour Express",
+       "origin": "Balurghat",
+       "destination": "Sealdah"
+   }
+  ]
+
+In this JSON file, the JSON array is directly at the root. There is no need to fill up the JSON root configuration.
+
+The resulting dataset will be (columns order may vary):
+
++--------------+------------+-------------+
+| name         | origin     | destination |
++--------------+------------+-------------+
+| Agra Express | Agra Cantt | New Delhi   |
++--------------+------------+-------------+
+| Gour Express | Balurghat  | Sealdah     |
++--------------+------------+-------------+
+
+Example 2:
+
+.. code-block:: json
+
+  {
+   "filename": "trains.json",
+   "content": {
+       "trains": [
+           {
+               "id": 123,
+               "info": {
+                   "name": "Agra Express",
+                   "origin": "Agra Cantt",
+                   "destination": "New Delhi"
+               }
+           },
+           {
+               "id": 555,
+               "info": {
+                   "name": "Gour Express",
+                   "origin": "Balurghat",
+                   "destination": "Sealdah"
+               }
+           }
+       ]
+   }
+  }
+
+For this complex JSON file, the correct JSON root is ``content.trains``.
+If ``content.trains`` is set as JSON root, the resulting dataset will be:
+
++-----+------------------------------------------------------------------------------+
+| id  | info                                                                         |
++-----+------------------------------------------------------------------------------+
+| 123 | {"origin": "Agra Cantt", "destination": "New Delhi", "name": "Agra Express"} |
++-----+------------------------------------------------------------------------------+
+| 555 | {"origin": "Balurghat", "destination": "Sealdah", "name": "Gour Express"}    |
++-----+------------------------------------------------------------------------------+
+
+To only extract the ``info`` JSON objects, and skip the ``id`` number, the correct JSON object is ``info``.
+If ``info`` is set as JSON object, the resulting dataset will be:
+
++--------------+------------+-------------+
+| name         | origin     | destination |
++--------------+------------+-------------+
+| Agra Express | Agra Cantt | New Delhi   |
++--------------+------------+-------------+
+| Gour Express | Balurghat  | Sealdah     |
++--------------+------------+-------------+
 
 
 JSON Line
@@ -138,14 +225,19 @@ Configuration
      * Creates a new column at the end of the dataset with the name of the source file.
      * By default, the box is not checked. Check the box to extract filename in an added column.
    * * JSON root
-     * ijson path to the object that contains the records
-     * start from the root if empty, ijson path like "result.datasets", or "item" to iterate in an array
+     * Path to the JSON object that contains the records.
+     * If the JSON object is directly at the root, leave the textbox empty. Otherwise, write the ijson path to the object in the textbox.
+
+       .. admonition:: Note
+          :class: note
+
+          ijson is a syntax to navigate inside JSON objects. It consists in separating the attribute names with dots (e.g. `content.trains`). More features are available for advanced users.
    * * Key field name
-     * Label of the column that holds the key value
-     *
+     * Label of the "key" column.
+     * By default, "key". Write the new label of the "key" column in the textbox. It will modify both the label and the technical identifier of the column.
 
 Examples
-~~~~~~~~~
+~~~~~~~~
 
 Example 1:
 
@@ -179,7 +271,7 @@ Example 1:
   }
 
 
-With an empty JSON root, results in:
+If the JSON root is left empty, the resulting dataset will be:
 
 +------+-----------------------------------------------------+-------------------------------------------------------+
 | key  | type1                                               | type2                                                 |
@@ -213,8 +305,8 @@ Example 2:
 
 For this complex JSON file, the correct JSON root is ``results.datasets.item``.
 
-- ``results.datasets`` makes us move inside the JSON file to the array
-- ``item`` means to iterate inside the array and get each object
+- ``results.datasets`` leads to the array
+- ``item`` iterates inside the array and get each object
 
 +-----+-------------------------+-------+
 | key | description             | title |

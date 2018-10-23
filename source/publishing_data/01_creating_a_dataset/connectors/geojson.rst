@@ -80,4 +80,4 @@ Configuration
      * By default, the box is not checked. Check the box to extract filename in an added column.
    * * Spatial reference (EPSG code)
      * Indicates the `EPSG <http://spatialreference.org/ref/epsg/>`_ code of the geographical data of the dataset.
-     * By default, the text area is empty and the platform considers the geographical data to be in WGS84 (EPSG code: 4326). If the default EPSG code is not right, write the right one in the Spacial reference text area.
+     * By default, the textbox is empty and the platform considers the geographical data to be in WGS84 (EPSG code: 4326). If the default EPSG code is not right, write the right one in the textbox.

@@ -29,7 +29,7 @@ Configuration
      * By default, the box is checked. To exclude all amenities, uncheck the box.
    * * Tags
      * Tags to extract from the nodes and ways.
-     * Write the tags to extract in the Tags text area. Tags should be separated with a comma.
+     * Write the tags to extract in the textbox. Tags should be separated with a comma.
    * * Relation tags
      * Tags to extract from attached relations.
-     * Write the tags to extract in the Relation tags text area. Tags should be separated with a comma.
+     * Write the tags to extract in the textbox. Tags should be separated with a comma.

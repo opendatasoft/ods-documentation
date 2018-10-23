@@ -26,22 +26,22 @@ Configuration
      * Usage
    * * Client Id
      * Consumer key from the connected application definition.
-     * Indicate the client ID in the related area.
+     * Indicate the client ID in the textbox.
    * * Client Secret
      * Consumer Secret from the connected application definition.
-     * Indicate the client secret in the related area.
+     * Indicate the client secret in the textbox.
    * * Username
      * End-user’s username.
-     * Indicate the username in the related area.
+     * Indicate the username in the textbox.
    * * Password
      * End-user’s password.
-     * Indicate the password in the related area.
+     * Indicate the password in the textbox.
    * * Security Token
      * End-user’s security token.
-     * Indicate the security token in the related area.
+     * Indicate the security token in the textbox.
    * * Use Sandbox
      * To use the Salesforce sandbox for tests.
      * By default, the box is not checked. Check the box to use the sandbox.
    * * Filtered Fields
      * Fields to retrieve from the object.
-     * Indicate the name of the field in the related area. Relationships can be followed with the following notation: ``GC_OBO_Referential__r.Name`.
+     * Indicate the name of the field in the textbox. Relationships can be followed with the following notation: ``GC_OBO_Referential__r.Name`.

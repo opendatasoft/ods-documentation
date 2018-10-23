@@ -26,7 +26,7 @@ Configuration
      * Usage
    * * API key
      * API key of the user's account on the JCDecaux API.
-     * By default, the text area is empty. It must be filled otherwise the dataset will remain empty. Retrieve the API key on the JCDecaux API and paste it in the API key text area.
+     * By default, the textbox is empty. It must be filled otherwise the dataset will remain empty. Retrieve the API key on the JCDecaux API and paste it in the textbox.
    * * City
      * To filter the data by city.
-     * By default, the text area is empty. Check the "contract_name" field in the dataset preview to find the name of the existing cities. Add one or more city names to filter the data.
+     * By default, the textbox is empty. Check the "contract_name" field in the dataset preview to find the name of the existing cities. Add one or more city names to filter the data.

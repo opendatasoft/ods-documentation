@@ -34,10 +34,10 @@ Configuration
 
           Character encoding is the way characters are represented in a saved file. Unicode (or utf-8) is the universal standard but some files might be encoded in a legacy format (e.g. old versions of Excel), which would require setting the encoding manually. On modern software, this is usually unnecessary.
 
-     * By default, the platform uses a heuristic to guess the encoding. If the guessed encoding is not right, choose the right one among the list, or write it in the Encoding text area. Any alias from `Python <https://docs.python.org/2/library/codecs.html#standard-encodings>`_ can be used.
+     * By default, the platform uses a heuristic to guess the encoding. If the guessed encoding is not right, choose the right one among the list, or write it in the textbox. Any alias from `Python <https://docs.python.org/2/library/codecs.html#standard-encodings>`_ can be used.
    * * Escape character
      * If an escape character is found right before a separator, the latter will not be considered a separator anymore. The Escape character configuration option avoids this situation.
-     * By default, the text area is empty. In case the file contains an escape character ( e.g. ``#`` or ``\``), write it in the text area.
+     * By default, the textbox is empty. In case the file contains an escape character ( e.g. ``#`` or ``\``), write it in the textbox.
    * * Extract filename
      * Creates a new column at the end of the dataset with the name of the source file.
      * By default, the box is not checked. Check the box to extract filename in an added column.
@@ -49,4 +49,4 @@ Configuration
      * By default, the box is checked. It makes the values of the first line field labels. Uncheck the box if the first line doesn't contain titles but data: the field labels will then be empty by default.
    * * Separator
      * The fixed separator between the fields of the file.
-     * There must only be one character. The default one depends on the format of the file. Correct values are usually ``';'``, ``','``, ``' '`` and ``'\t'``.
+     * Write the separator in the textbox. There must only be one character. The default one depends on the format of the file. Correct values are usually ``';'``, ``','``, ``' '`` and ``'\t'``.

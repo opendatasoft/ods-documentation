@@ -37,7 +37,7 @@ Configuration
 
           Character encoding is the way characters are represented in a saved file. Unicode (or utf-8) is the universal standard but some files might be encoded in a legacy format (e.g. old versions of Excel), which would require setting the encoding manually. On modern software, this is usually unnecessary.
 
-     * By default, the platform uses a heuristic to guess the encoding. If the guessed encoding is not right, choose the right one among the list, or write it in the Encoding text area. Any alias from `Python <https://docs.python.org/2/library/codecs.html#standard-encodings>`_ can be used.
+     * By default, the platform uses a heuristic to guess the encoding. If the guessed encoding is not right, choose the right one among the list, or write it in the textbox. Any alias from `Python <https://docs.python.org/2/library/codecs.html#standard-encodings>`_ can be used.
    * * Extract filename
      * Creates a new column at the end of the dataset with the name of the source file.
      * By default, the box is not checked. Check the box to extract filename in an added column.
