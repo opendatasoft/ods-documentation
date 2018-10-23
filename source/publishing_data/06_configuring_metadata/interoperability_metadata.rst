@@ -1,5 +1,5 @@
-Configuring interoperability metadata
-=====================================
+Interoperability metadata
+=========================
 
 Interoperability metadata are activated on demand. They should be configured in the Information tab of the edition interface of a dataset, in specific tabs displayed under the standard metadata. Once the dataset is published, all interoperability metadata will be displayed in the Information tab of the dataset (front office).
 
@@ -22,7 +22,7 @@ DCAT metadata aim at facilitating interoperability between data catalogs publish
 For more information about the DCAT metadata, please refer to the `W3C Data Catalog Vocabulary (DCAT) documentation <https://www.w3.org/TR/vocab-dcat/>`_. To know how to configure the metadata on the OpenDataSoft platform, refer to the table below.
 
 .. list-table::
-   :header-rows: 1
+  :header-rows: 1
 
   * * Name
     * Usage
@@ -61,7 +61,7 @@ DCAT-AP for Switzerland are DCAT-AP metadata specifically created for Swiss port
 For more information about the DCAT-AP for Switzerland metadata, please refer to the `related Open Data Handbook <https://handbook.opendata.swiss/en/library/ch-dcat-ap>`_. To know how to configure the metadata on the OpenDataSoft plateform, refer to the table below.
 
 .. list-table::
-   :header-rows: 1
+  :header-rows: 1
 
   * * Name
     * Usage
@@ -78,7 +78,7 @@ INSPIRE metadata are defined by the European Commission. They should ensure that
 For more information about the INSPIRE metadata, please refer to the `INSPIRE knowledge base <https://inspire.ec.europa.eu/metadata/6541>`_. To know how to configure the metadata on the OpenDataSoft platform, refer to the table below.
 
 .. list-table::
-   :header-rows: 1
+  :header-rows: 1
 
   * * Name
     * Usage

@@ -1,12 +1,12 @@
-Configuring standard metadata
-=============================
+Standard metadata
+=================
 
 Standard metadata are common to all OpenDataSoft portal. They are the default metadata of any dataset. They should be configured in the Information tab of the edition interface of a dataset. Once the dataset is published, the standard metadata will be displayed in the Information tab of the dataset (front office).
 
 Refer to the table below to know more about the available metadata and how to configure them.
 
 .. list-table::
-   :header-rows: 1
+  :header-rows: 1
 
   * * Name
     * Description
@@ -30,7 +30,8 @@ Refer to the table below to know more about the available metadata and how to co
     * The date can either be set manually or automatically.
 
       * To set the date manually, click the "Set to now" button. Click on this button each time the last modification date needs to be updated.
-      * To set the date automatically, depending on which action should lead to the modification of the last modification date of the dataset, tick:
+      * To set the date automatically, depending on which action should lead to the modification of the date, tick:
+
         * the "Update automatically when metadata has changed" box,
         * or, the "Update automatically when data has changed" box.
   * * Language
@@ -38,16 +39,16 @@ Refer to the table below to know more about the available metadata and how to co
     * 1. Click on the drop down menu.
       2. Choose a language amongst the Domain languages or other languages available.
   * * Geographic area
-    * Geographic area of the data contained in the dataset. This metadata is directly linked to :doc:`the mini map displayed in the front office of the portal </exploring_catalog_and_datasets/01_looking_up_the_catalog/catalog.html#using-the-mini-map>`_: if the geographic area metadata is set for a dataset, an end-user will be allowed to find it through a geographic search of the catalog.
+    * Geographic area of the data contained in the dataset. This metadata is directly linked to :ref:`the mini map displayed in the front office of the portal <using-the-minimap>` : if the geographic area metadata is set for a dataset, an end-user will be able to find it through a geographic search of the catalog.
     * Tick the box of the chosen option amongst the following:
 
-      * None: the geographic area won't be set for the dataset, which won't be searchable through the mini map. Ticked by default.
+      * None *(default)*: the geographic area won't be set for the dataset, which won't be searchable through the mini map.
       * Computed from data: the geographic area will be defined as the smallest envelope containing all of the records' locations. Note that all data will be taken into account for this computation regardless of security parameters. The option is only available if the dataset contains geopoints.
       * Manually drawn on a map: a map appears under this option when it is ticked. Draw a shape on the right geographic area corresponding to the data of the dataset.
       * Pasted GeoJSON shape: a textbox appears under this option when it is ticked. Paste the GeoJSON shape of the right geographic area corresponding to the data of the dataset.
   * * Description
     * Description of the dataset.
-    * Write a dataset description in the textbox. HTML is accepted. A set of formatting options are available in the gray bar at the top of the textbox: hover the buttons for more information and click on the chosen buttons to use any formatting option.
+    * Write a dataset description in the textbox. HTML is accepted. A set of formatting options are available in the grey bar at the top of the textbox: hover the buttons for more information and click on the chosen buttons to use any formatting option.
   * * Themes
     * Theme(s) the dataset belongs to. Dataset themes are one of the catalog filters available in the front office of an OpenDataSoft portal.
     * 1. Click on the textbox. A drop down selection of the themes defined for the domain automatically appears.
