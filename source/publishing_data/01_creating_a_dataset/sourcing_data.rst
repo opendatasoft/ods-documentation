@@ -82,13 +82,10 @@ Connecting to an API
 
 OpenDataSoft natively supports the following APIs:
 
-.. toctree::
-   :titlesonly:
-
-   connectors/arcgis
-   connectors/jcdecaux
-   connectors/salesforce
-   connectors/wfs
+* :doc:`ArcGIS</publishing_data/04_configuring_a_source/connectors/arcgis>`
+* :doc:`JCDecaux</publishing_data/04_configuring_a_source/connectors/jcdecaux>`
+* :doc:`Salesforce</publishing_data/04_configuring_a_source/connectors/salesforce>`
+* :doc:`WFS</publishing_data/04_configuring_a_source/connectors/wfs>`
 
 .. admonition:: Important
    :class: important

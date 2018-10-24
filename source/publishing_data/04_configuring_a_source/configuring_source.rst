@@ -8,6 +8,25 @@ In the OpenDataSoft platform, the configuration of a dataset source is done in t
 The configuration options of a source entirely depend on the source type, and both the way the source has been added to the dataset and the format of that source matter to determine that type. In the table below is the complete list of all existing and available connectors associated with their matching source types. Check both information then click the link on the connector name to find out about all related configuration options.
 
 
+.. toctree::
+   :hidden:
+
+   connectors/arcgis
+   connectors/csv
+   connectors/geojson
+   connectors/jcdecaux
+   connectors/json
+   connectors/kml
+   connectors/mapinfo
+   connectors/netatmo
+   connectors/osm
+   connectors/salesforce
+   connectors/shapefile
+   connectors/spreadsheet
+   connectors/wfs
+   connectors/xml
+
+
 .. list-table::
   :header-rows: 1
 

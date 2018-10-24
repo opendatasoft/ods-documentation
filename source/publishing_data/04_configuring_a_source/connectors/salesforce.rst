@@ -49,4 +49,4 @@ Configuration
      * By default, the box is not checked. Check the box to use the sandbox.
    * * Filtered Fields
      * Fields to retrieve from the object.
-     * Indicate the name of the field in the textbox. Relationships can be followed with the following notation: ``GC_OBO_Referential__r.Name`.
+     * Indicate the name of the field in the textbox. Relationships can be followed with the following notation: ``GC_OBO_Referential__r.Name``.
