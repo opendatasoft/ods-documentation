@@ -60,7 +60,7 @@ Configuration
           :class: note
 
           ijson is a syntax to navigate inside JSON objects. It consists in separating the attribute names with dots (e.g. `content.trains`). More features are available for advanced users.
-          
+
    * * JSON object
      * Relative path to the JSON object to extract.
      * Once the JSON root has be set (or left empty), if the preview shows irrelevant columns, and that the JSON object has been extracted as the value of one column, write the name of that column inside the JSON object textbox.
@@ -193,6 +193,11 @@ Configuration
 
 JSON Dict
 ---------
+
+.. admonition:: Important
+   :class: important
+
+   This connector is not available by default. Please contact OpenDataSoft support team if you want this connector to be activated in your domain.
 
 This connector extracts a valid JSON document (array or object) into one dataset of several records.
 

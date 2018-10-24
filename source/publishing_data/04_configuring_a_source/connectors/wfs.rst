@@ -1,6 +1,11 @@
 WFS connector
 =============
 
+.. admonition:: Important
+   :class: important
+
+   This connector is not available by default. Please contact OpenDataSoft support team if you want this connector to be activated in your domain.
+
 The WFS connector is used to extract data from a WFS service.
 
 Creation
