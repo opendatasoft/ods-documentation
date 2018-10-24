@@ -7,7 +7,8 @@ Metadata can be seen as the data describing the dataset itself. They are indeed 
 In the OpenDataSoft platform, all metadata configurations are done in the Information tab.
 
 
-.. add screenshot
+.. localizedimage:: images/metadata_configuration_interface.png
+    :alt: Information tab when publishing a new dataset, to configure the metadata of the dataset
 
 
 There are 4 kinds of metadata in the OpenDataSoft platform:
