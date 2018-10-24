@@ -6,8 +6,8 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = build
-TRANSLATED_LANGUAGES = fr,es,de,it,nl
-LANGUAGES     = fr es de it nl en
+TRANSLATED_LANGUAGES = fr,es,de,nl
+LANGUAGES     = fr es de nl en
 
 # User-friendly check for sphinx-build
 ifeq ($(shell which $(SPHINXBUILD) >/dev/null 2>&1; echo $$?), 1)

@@ -13,6 +13,7 @@ The configuration options of a source entirely depend on the source type, and bo
 
    connectors/arcgis
    connectors/csv
+   connectors/dataset_of_datasets
    connectors/geojson
    connectors/jcdecaux
    connectors/json
@@ -39,6 +40,9 @@ The configuration options of a source entirely depend on the source type, and bo
   * * :doc:`CSV<connectors/csv>`
     * Used for CSV (.csv), TSV (.tsv), Text (.txt) and DAT (.dat) files
     * Default
+  * * :doc:`Dataset of datasets<connectors/dataset_of_datasets>`
+    * Used to create a dataset from the catalog of an OpenDataSoft domain
+    * On demand
   * * :doc:`GeoJSON<connectors/geojson>`
     * Used for GeoJSON (.geojson) files
     * Default
