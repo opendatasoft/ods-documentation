@@ -17,7 +17,7 @@ The Shapefile connector is used to extract data from a shapefile. It is a ZIP ar
 Creation
 ~~~~~~~~
 
-See :doc:`how to source a file by uploading a file</publishing_data/01_creating_a_dataset/sourcing_data>`.
+See :doc:`how to source a file</publishing_data/01_creating_a_dataset/sourcing_data>`.
 
 
 Configuration

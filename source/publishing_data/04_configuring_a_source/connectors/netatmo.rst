@@ -4,7 +4,7 @@ Netatmo extractor
 .. admonition:: Important
    :class: important
 
-   This connector is not available by default. Please contact OpenDataSoft support team if you want this connector to be activated in your domain.
+   This connector is not available by default. Please contact OpenDataSoft for the activation of this connector on a given OpenDataSoft domain.
 
 The Netatmo connector is used to extract data from the Netatmo API.
 

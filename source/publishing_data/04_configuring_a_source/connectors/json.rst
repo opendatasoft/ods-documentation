@@ -38,7 +38,7 @@ Supported field types
 Creation
 ~~~~~~~~
 
-See :doc:`how to source a file by uploading a file</publishing_data/01_creating_a_dataset/sourcing_data>`.
+See :doc:`how to source a file</publishing_data/01_creating_a_dataset/sourcing_data>`.
 
 Configuration
 ~~~~~~~~~~~~~
@@ -168,7 +168,7 @@ Supported field types
 Creation
 ~~~~~~~~
 
-See :doc:`how to source a file by uploading a file</publishing_data/01_creating_a_dataset/sourcing_data>`.
+See :doc:`how to source a file</publishing_data/01_creating_a_dataset/sourcing_data>`.
 
 Configuration
 ~~~~~~~~~~~~~
@@ -197,7 +197,7 @@ JSON Dict
 .. admonition:: Important
    :class: important
 
-   This connector is not available by default. Please contact OpenDataSoft support team if you want this connector to be activated in your domain.
+   This connector is not available by default. Please contact OpenDataSoft for the activation of this connector on a given OpenDataSoft domain.
 
 This connector extracts a valid JSON document (array or object) into one dataset of several records.
 
@@ -215,7 +215,7 @@ Supported field types
 Creation
 ~~~~~~~~
 
-See :doc:`how to source a file by uploading a file</publishing_data/01_creating_a_dataset/sourcing_data>`.
+See :doc:`how to source a file</publishing_data/01_creating_a_dataset/sourcing_data>`.
 
 Configuration
 ~~~~~~~~~~~~~
@@ -244,7 +244,7 @@ Configuration
 Examples
 ~~~~~~~~
 
-Example 1:
+**Example 1:**
 
 .. code-block:: json
 
@@ -286,7 +286,7 @@ If the JSON root is left empty, the resulting dataset will be:
 | 2015 | {"color": "teal", "available": true, "price": 10.5} | {"color": "crimson", "available": true, "price": 9.1} |
 +------+-----------------------------------------------------+-------------------------------------------------------+
 
-Example 2:
+**Example 2:**
 
 .. code-block:: json
 
