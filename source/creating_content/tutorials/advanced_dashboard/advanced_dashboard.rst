@@ -4,7 +4,7 @@ Metrics/KPI and Data tables
 Charts, Maps, tables, calendar are default views. Lot of additionnal parameters are waiting for you in the documentation.
 In the mean time, a lot of other widgets are as insterested as the main ones.
 
-Please have a look to the `widget list </editing_pages/integrate_content.html#widgets-list>`_ for more information.
+Please have a look to the :ref:`widget list <widgets-list>` for more information.
 
 
 Pick up a dataset

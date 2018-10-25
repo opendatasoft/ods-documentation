@@ -71,6 +71,7 @@ On top of all the widgets offered by the `ods-widgets <http://opendatasoft.githu
 a few additional directives are available for use within the content pages on the platform. Contrary to the widgets,
 these cannot be used on third-party websites for they are tightly coupled with the platform.
 
+.. _widgets-list:
 
 Widgets list
 ~~~~~~~~~~~~
