@@ -208,6 +208,12 @@ The following parameters may be used.
      * Limits the result set to a geographical area defined by a circle (coordinates of the center of the circle
        expressed in WGS84 and distance expressed in meters): latitude,longitude,distance:
        ``geofilter.distance=48.8520930694,2.34738897685,1000``
+
+       .. admonition:: Note
+          :class: note
+
+          This query parameter is equivalent to the ``#distance`` function described at the beginning of this documentation.
+
    * * geofilter.polygon
      * Limits the result set to a geographical area defined by a polygon (coordinates of the points expressed in WGS84
        as in (lat1,lon1),(lat2,lon2),(lat3,lon3):
