@@ -54,7 +54,7 @@ Searching in the data
        returns every record with a timestamp equal to current day minus 7 days
    * * containing a geo field located in a specific area
      * #distance("latitude,longitude",distance)
-     * ``#distance(48.866667,2.333333,1000)``
+     * ``#distance("48.866667,2.333333",1000)``
 
        returns every record located at 1 km from the center of Paris
 
@@ -210,5 +210,5 @@ The following parameters may be used.
        ``geofilter.distance=48.8520930694,2.34738897685,1000``
    * * geofilter.polygon
      * Limits the result set to a geographical area defined by a polygon (coordinates of the points expressed in WGS84
-       as in ((lat1,lon1),(lat2,lon2),(lat3,lon3)):
+       as in (lat1,lon1),(lat2,lon2),(lat3,lon3):
        ``geofilter.polygon=(48.883086,2.379072),(48.879022,2.379930),(48.883651,2.386968)``
