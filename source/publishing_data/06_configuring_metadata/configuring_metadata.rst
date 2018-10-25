@@ -16,7 +16,7 @@ There are 4 kinds of metadata in the OpenDataSoft platform:
 - **Standard metadata** *(default)*: basic metadata displayed in the front office for the users.
 - **Interoperability metadata** *(on demand)*: intended for automatic usage by other systems for interoperability purposes, or for regulatory compliance.
 - **Admin metadata** *(on demand)*: intended for administrators usage only, therefore never displayed anywhere in the front office.
-- **Extra metadata** *(on demand)*: intended for specific applications, and not expected to be used by users directly (e.g. when configuring a default visualizations on the OpenDataSoft portal, this information is stored as an extra metadata). In most cases, the users will never have to access or edit them by themselves. The extra metadata will not be documented in this documentation, please contact OpenDataSoft for more information about these metadata.
+- **Extra metadata** *(on demand)*: intended for specific applications, and not expected to be used by users directly. In most cases, the users will never have to access or edit them by themselves. They can be visible from the front office but also through the OpenDataSoft Search API. The extra metadata will not be documented in this documentation, please contact OpenDataSoft for more information about these metadata.
 
 
 .. toctree::

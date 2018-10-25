@@ -66,7 +66,7 @@ For more information about the DCAT-AP for Switzerland metadata, please refer to
   * * Name
     * Usage
   * * Domain
-    * Indicate the domain in the textbox.
+    * Indicate the domain (as expected by opendata.swiss) in the textbox.
   * * Rights
     * Indicate the rights in the textbox.
 

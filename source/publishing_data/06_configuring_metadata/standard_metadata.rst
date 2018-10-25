@@ -24,16 +24,17 @@ Refer to the table below to know more about the available metadata and how to co
          :class: danger
 
          Changing the technical identifier of a dataset could break third-party applications using it. Embedded visualizations from the dataset also won't work anymore.
+         Note also that once the dataset is published, the technical identifier cannot be modified anymore.
 
   * * Last modification date
     * Date indicating when the dataset was last modified.
     * The date can either be set manually or automatically.
 
       * To set the date manually, click the "Set to now" button. Click on this button each time the last modification date needs to be updated.
-      * To set the date automatically, depending on which action should lead to the modification of the date, tick:
+      * To set the date automatically, depending on which action should lead to the modification of the date, tick either or both:
 
         * the "Update automatically when metadata has changed" box,
-        * or, the "Update automatically when data has changed" box.
+        * the "Update automatically when data has changed" box.
   * * Language
     * Language of the data in the dataset.
     * 1. Click on the drop down menu.
