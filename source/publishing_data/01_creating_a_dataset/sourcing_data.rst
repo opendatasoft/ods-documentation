@@ -127,5 +127,5 @@ This method consists in pasting data in a CSV format. This method is most useful
 4. Click on the **Send data** button.
 
 
-Once a new dataset is created, the platform automatically displays an edition interface for that dataset. It is accessible for any user with the right permissions.
-This edition interface allows process the data, configure the datasets and its visualizations, as well as manage the publishing of the dataset. However, the first thing that should be done after creating a new dataset is to configure its source, to make sure the data is perfectly read and understood by the platform.
+Once a new dataset is created, the platform automatically displays an edition interface for that dataset. It is accessible for any user with the right permissions (either "Create dataset" or "Edit dataset").
+This edition interface allows to process the data, configure the datasets and its visualizations, as well as manage the publishing of the dataset. However, the first thing that should be done after creating a new dataset is to configure its source, to make sure the data is perfectly read and understood by the platform.
