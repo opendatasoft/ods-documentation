@@ -37,7 +37,7 @@ Configuration
 
      * By default, the platform uses a heuristic to guess the encoding. If the guessed encoding is not right, choose the right one among the list, or write it in the textbox. Any alias from `Python <https://docs.python.org/2/library/codecs.html#standard-encodings>`_ can be used.
    * * Extract filename
-     * Creates a new column at the end of the dataset with the name of the source file.
+     * Creates a new column with the name of the source file.
      * By default, the box is not checked. Check the box to extract filename in an added column.
    * * Inverse coordinates
      * Sometimes the connector cannot guess the correct coordinate representation. The Inverse coordinates configuration option avoids this situation by inversing the coordinates.

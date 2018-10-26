@@ -76,7 +76,7 @@ Configuration
      * Description
      * Usage
    * * Extract filename
-     * Creates a new column at the end of the dataset with the name of the source file.
+     * Creates a new column with the name of the source file.
      * By default, the box is not checked. Check the box to extract filename in an added column.
    * * Spatial reference (EPSG code)
      * Indicates the `EPSG <http://spatialreference.org/ref/epsg/>`_ code of the geographical data of the dataset.

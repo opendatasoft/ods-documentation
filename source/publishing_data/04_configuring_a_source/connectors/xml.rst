@@ -5,6 +5,8 @@ The XML connector is used for XML (.xml) files.
 
 This connector creates records from an arbitrary XML structure by converting all elements at a specific depth (optionnally filtered by tag) to a set of records. For each element converted to a record, both attributes, enclosed tags and content are converted to fields. Complex data inside fields is converted to a JSON representation containing both attributes and content.
 
+The XML connector can also read RDF (.rdf) files.
+
 Creation
 ~~~~~~~~
 
@@ -23,7 +25,7 @@ Configuration
      * Depth of the tags that must be converted to records.
      * Indicate the depth of the repeated tag in the textbox (e.g. ``3``).
    * * Extract filename
-     * Creates a new column at the end of the dataset with the name of the source file.
+     * Creates a new column with the name of the source file.
      * By default, the box is not checked. Check the box to extract filename in an added column.
    * * Number of parents to get attributes from
      * If the enclosing tags contain relevant attributes, use this option to add them in the records.

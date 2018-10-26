@@ -50,7 +50,7 @@ Configuration
      * Description
      * Usage
    * * Extract filename
-     * Creates a new column at the end of the dataset with the name of the source file.
+     * Creates a new column with the name of the source file.
      * By default, the box is not checked. Check the box to extract filename in an added column.
    * * JSON root
      * Path to the JSON array that contains the objects that will become the dataset records.
@@ -151,7 +151,7 @@ If ``info`` is set as JSON object, the resulting dataset will be:
 JSON Line
 ---------
 
-This connector expects a file in which each line is a one-line JSON documents. The whole file is not a valid JSON document but each line is.
+This connector expects a file in which each line is a one-line JSON document. The whole file is not a valid JSON document but each line is.
 
 The connector supports 2 modes:
 
@@ -180,7 +180,7 @@ Configuration
      * Description
      * Usage
    * * Extract filename
-     * Creates a new column at the end of the dataset with the name of the source file.
+     * Creates a new column with the name of the source file.
      * By default, the box is not checked. Check the box to extract filename in an added column.
    * * First line number
      * For files which do not start at the very first line, it is possible to decide which line is to be considered the first one. The lines above will be skipped from the dataset.
@@ -193,11 +193,6 @@ Configuration
 
 JSON Dict
 ---------
-
-.. admonition:: Important
-   :class: important
-
-   This connector is not available by default. Please contact OpenDataSoft for the activation of this connector on a given OpenDataSoft domain.
 
 This connector extracts a valid JSON document (array or object) into one dataset of several records.
 
@@ -227,7 +222,7 @@ Configuration
      * Description
      * Usage
    * * Extract filename
-     * Creates a new column at the end of the dataset with the name of the source file.
+     * Creates a new column with the name of the source file.
      * By default, the box is not checked. Check the box to extract filename in an added column.
    * * JSON root
      * Path to the JSON object that contains the records.

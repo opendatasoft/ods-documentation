@@ -23,7 +23,7 @@ Configuration
      * Description
      * Usage
    * * Extract filename
-     * Creates a new column at the end of the dataset with the name of the source file.
+     * Creates a new column with the name of the source file.
      * By default, the box is not checked. Check the box to extract filename in an added column.
    * * First line number
      * For files which do not start at the very first line, it is possible to decide which line is to be considered the first one. The lines above will be skipped from the dataset.

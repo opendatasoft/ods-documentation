@@ -5,7 +5,7 @@ The CSV File connector is used for datasets which source is a CSV file (.csv). I
 
 The CSV File connector can also read other similar files:
 
-- TSV files (.tsv),
+- TSV files (.tsv), which separator is a tab instead of a comma or semicolon,
 - Text files (.txt),
 - DAT files (.dat).
 
@@ -24,7 +24,7 @@ Configuration
      * Description
      * Usage
    * * Double quote
-     * For fields which fields values are enclosed in double quotes.
+     * For fields which values are enclosed in double quotes.
      * By default, the box is not checked. Check the box if the field values are enclosed in double quotes.
    * * Encoding
      * Encoding of the file.
@@ -39,7 +39,7 @@ Configuration
      * If an escape character is found right before a separator, the latter will not be considered a separator anymore. The Escape character configuration option avoids this situation.
      * By default, the textbox is empty. In case the file contains an escape character ( e.g. ``#`` or ``\``), write it in the textbox.
    * * Extract filename
-     * Creates a new column at the end of the dataset with the name of the source file.
+     * Creates a new column with the name of the source file.
      * By default, the box is not checked. Check the box to extract filename in an added column.
    * * First line number
      * For files which do not start at the very first line, it is possible to decide which line is to be considered the first one. The lines above will be skipped from the dataset.

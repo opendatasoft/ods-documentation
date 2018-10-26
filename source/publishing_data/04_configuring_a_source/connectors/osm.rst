@@ -1,7 +1,7 @@
 OSM connector
 =============
 
-The OSM File connector (OSM standing for OpenStreetMap) is used to extract data from OpenStreetMap archives (.osm).
+The OSM File connector (OSM standing for OpenStreetMap) is used to extract data from OpenStreetMap files (.osm).
 
 .. admonition:: Note
    :class: note
