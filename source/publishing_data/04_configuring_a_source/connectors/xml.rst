@@ -1,30 +1,44 @@
 XML connector
 =============
 
-This connector can create a dataset from an XML document.
+The XML connector is used for XML (.xml) files.
 
-- It creates records from an arbitrary XML structure by converting all elements at a specific depth (optionnally filtered by tag) to a set of records.
-- For each element converted to a record, both attributes, enclosed tags and content are converted to fields.
-- Complex data inside fields is converted to a JSON representation containing both attributes and content.
+This connector creates records from an arbitrary XML structure by converting all elements at a specific depth (optionnally filtered by tag) to a set of records. For each element converted to a record, both attributes, enclosed tags and content are converted to fields. Complex data inside fields is converted to a JSON representation containing both attributes and content.
+
+The XML connector can also read RDF (.rdf) files.
+
+Creation
+~~~~~~~~
+
+See :doc:`how to source a file</publishing_data/01_creating_a_dataset/sourcing_data>`.
 
 Configuration
--------------
+~~~~~~~~~~~~~
 
 .. list-table::
    :header-rows: 1
 
    * * Name
      * Description
-     * Values
+     * Usage
    * * Depth of extracted elements
-     * Depth of the tags that must be converted to records
-     * e.g. 3
-   * * Tag of extracted elements (optional)
-     * If irrelevant tags are at the same depth as extracted elements, use this option to only filter relevant tags
-     * e.g. item
+     * Depth of the tags that must be converted to records.
+     * Indicate the depth of the repeated tag in the textbox (e.g. ``3``).
+   * * Extract filename
+     * Creates a new column with the name of the source file.
+     * By default, the box is not checked. Check the box to extract filename in an added column.
+   * * Number of parents to get attributes from
+     * If the enclosing tags contain relevant attributes, use this option to add them in the records.
+     * Indicate the number of parent tags to get attributes from (e.g. ``2``).
+   * * Tag of extracted elements
+     * If irrelevant tags are at the same depth as the extracted elements, use this option to only filter relevant tags.
+     * Indicate the tag to extract (e.g. ``item``). If left empty, all tags at the specified depth will be converted into records.
+
+Technical specifications
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Field creation
---------------
+^^^^^^^^^^^^^^
 
 The policy for creating fields from an item is defined as in the example below.
 
@@ -49,7 +63,7 @@ The policy for creating fields from an item is defined as in the example below.
 +-----------------+-----------------------+----------------+---------------+-------------+---------------+
 
 JSON representation
--------------------
+^^^^^^^^^^^^^^^^^^^
 
 Complex data inside fields is converted to JSON as per the example below.
 
@@ -85,8 +99,10 @@ Complex data inside fields is converted to JSON as per the example below.
         }
     }
 
-Example 1
----------
+Examples
+~~~~~~~~
+
+**Example 1:**
 
 .. code-block:: xml
     :linenos:
@@ -116,12 +132,12 @@ Example 1
       </wb:data>
     </wb:rows>
 
-In this examples:
+In this example:
 
 - depth=2 because ``wb:data`` is the 2nd tag in its path (``wb:rows/wb:data``)
 - tag filtering is not necessary because all elements at this depth are records
 
-**Resulting dataset:**
+Resulting dataset:
 
 +------------------------------------------------------------+-----------------------------------------+---------+------------------+------------+
 | wb:indicator                                               | wb:country                              | wb:date | wb:value         | wb:decimal |
@@ -133,8 +149,7 @@ In this examples:
 | {"#text": "GDP per capita (2005 USD)", "@id": "6.0.GDPpc"} | {"#text": "Bolivia", "@id": "BO"}       | 2006    | 4715.9892578125  | 0          |
 +------------------------------------------------------------+-----------------------------------------+---------+------------------+------------+
 
-Example 2
----------
+**Example 2:**
 
 .. code-block:: xml
     :linenos:
@@ -168,7 +183,7 @@ In this example:
 - depth=3 because ``item`` is the 3rd tag in its path (``shoppingList/basket/item``)
 - tag filtering on ``item`` is necessary because ``itemCount`` and ``totalQuantity`` are also at depth=3 but not relevant
 
-**Resulting dataset:**
+Resulting dataset:
 
 +--------+----------+
 | name   | quantity |

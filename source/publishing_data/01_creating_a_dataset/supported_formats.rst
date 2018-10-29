@@ -9,22 +9,7 @@ Supported formats
 Supported file formats
 ----------------------
 
-.. toctree::
-   :hidden:
-
-   connectors/csv
-   connectors/geojson
-   connectors/json
-   connectors/kml
-   connectors/mapinfo
-   connectors/netatmo
-   connectors/osm
-   connectors/shapefile
-   connectors/spreadsheet
-   connectors/xml
-   connectors/dataset_of_datasets
-
-The following table lists the supported format and describes configuration options for each format:
+The following table lists the supported formats. Click the link on each connector name to know more about their available configuration options.
 
 .. list-table::
    :header-rows: 1
@@ -37,55 +22,55 @@ The following table lists the supported format and describes configuration optio
      * .csv, .tsv, .txt, .dat
      * The classic Coma Separated Value file.
      *
-        :doc:`connectors/csv`
+        :doc:`/publishing_data/04_configuring_a_source/connectors/csv`
    * * Microsoft Excel
      * .xls, .xlsx
      *
      *
-       :doc:`connectors/spreadsheet`
+       :doc:`/publishing_data/04_configuring_a_source/connectors/spreadsheet`
    * * OpenDocument SpreadSheet
      * .ods
      *
      *
-       :doc:`connectors/spreadsheet`
+       :doc:`/publishing_data/04_configuring_a_source/connectors/spreadsheet`
    * * JSON
      * .json
      * Simple JSON documents are supported. The platform lets you choose the root path (path to the table of elements
        to be considered as rows) and the properties path (path to the dictionary holding the list of fields for an
        element).
      *
-       :doc:`connectors/json`
+       :doc:`/publishing_data/04_configuring_a_source/connectors/json`
    * * GeoJSON
      * .json, .geojson
      *
      *
-       :doc:`connectors/geojson`
+       :doc:`/publishing_data/04_configuring_a_source/connectors/geojson`
    * * KML/KMZ
      * .kml, .kmz
      *
      *
-       :doc:`connectors/kml`
+       :doc:`/publishing_data/04_configuring_a_source/connectors/kml`
    * * Shapefile
      *  .zip
      * A zip archive containing the following files: <NAME>.shp, <NAME>.shx, <NAME>.dbf and <NAME>.prj
      *
-       :doc:`connectors/shapefile`
+       :doc:`/publishing_data/04_configuring_a_source/connectors/shapefile`
    * * MapInfo
      * .zip
      * A zip archive containing either <NAME>.mid and <NAME>.mif files or <NAME>.map, <NAME>.tab, <NAME>.id and
        <NAME>.dat
      *
-       :doc:`connectors/mapinfo`
+       :doc:`/publishing_data/04_configuring_a_source/connectors/mapinfo`
    * * OpenStreetMap
      * .osm
      *
      *
-       :doc:`connectors/osm`
+       :doc:`/publishing_data/04_configuring_a_source/connectors/osm`
    * * XML
      * .xml
      *
      *
-       :doc:`connectors/xml`
+       :doc:`/publishing_data/04_configuring_a_source/connectors/xml`
 
 .. _supportedcompressedformats:
 

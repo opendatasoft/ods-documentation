@@ -9,6 +9,7 @@ In this section are listed and documented all features related to the upload, co
    01_creating_a_dataset/creating_a_dataset
    02_harvesting_a_catalog/harvesting_a_catalog
    03_scheduling_updates/scheduling_updates
+   04_configuring_a_source/configuring_source
    05_processing_data/processing_data
    06_configuring_metadata/configuring_metadata
    07_configuring_visualizations/index
