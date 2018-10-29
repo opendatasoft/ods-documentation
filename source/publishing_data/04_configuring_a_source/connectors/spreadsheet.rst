@@ -8,6 +8,11 @@ The spreadsheet connector can read the following files:
 - Microsoft Excel files (.xls and .xlsx),
 - OpenOffice files (.ods).
 
+.. admonition:: Important
+   :class: important
+
+   Formulas in Excel and OpenOffice files are understood by the platform. All recognized formulas will automatically be transformed into their result in the files fields.
+
 Creation
 ~~~~~~~~
 
