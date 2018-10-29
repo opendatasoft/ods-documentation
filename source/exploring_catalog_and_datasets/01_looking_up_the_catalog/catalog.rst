@@ -88,6 +88,8 @@ To make a textual search:
 
    It is possible to make more advanced searches with the search bar, using Query language (more info in the :doc:`Searching the data documentation </exploring_catalog_and_datasets/03_searching_the_data/search>`).
 
+.. _using-the-minimap:
+
 Using the mini map
 ^^^^^^^^^^^^^^^^^^
 
