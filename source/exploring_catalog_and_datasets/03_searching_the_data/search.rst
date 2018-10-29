@@ -53,11 +53,11 @@ Searching in the data
 
        returns every record with a timestamp equal to current day minus 7 days
    * * containing a geo field located in a specific area
-     * when located into a circle:
+     * for a circular area:
 
        #distance("latitude,longitude",distance)
 
-       when located into a polygon or a square:
+       for a polygon or square area:
 
        #polygon(geo_field,"(lat1,lon1),(lat2,lon2),(lat3,lon3)")
      * ``#distance("48.866667,2.333333",1000)``
