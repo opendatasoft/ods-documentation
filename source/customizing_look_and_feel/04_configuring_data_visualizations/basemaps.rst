@@ -1,54 +1,145 @@
 Basemaps
 ========
 
-Basemaps are the canvas used for any map displayed on OpenDataSoft, whether it is that of the visualization map of a dataset or that of the Map Builder. It is on these canvas that the data will be represented.
+Basemaps are the canvas on which geographic data are represented. They are used for any map displayed on OpenDataSoft, whether it is that of the visualization map of a dataset or of the Map Builder.
 
-A basic neutral basemap is used by default for all maps of an OpenDataSoft. It is however possible to add other basemaps to an OpenDataSoft portal, to be able to change the basemap at any time on a map, and even to change the default basemap of a specific map.
+A basic neutral basemap is used by default for all maps of an OpenDataSoft. It is however possible to change the default basemap, as well as to make other basemaps available in an OpenDataSoft portal. It will allow users to change the basemap at any time on a map, and even to change the default basemap of a specific map.
 
 .. admonition:: Note
    :class: note
 
-   To know more about basemaps and how to use them, you can read our blog post "What is a basemap & how to choose the best one for your data".
+   To know more about basemaps and how to use them, you can read our blog post "`What is a basemap & how to choose the best one for your data <https://www.opendatasoft.com/2015/09/03/what-is-a-basemap-and-how-to-choose-the-best-one-for-your-data/>`_".
+
+To manage basemaps, go to Look & feel > Data visualizations. In this subsection of the back office menu, look for the "Basemaps" area.
+
+.. ifconfig:: language == 'en'
+
+    .. image:: images/basemaps_overview--en.png
+       :alt: Overview of the Basemaps area in the Look and feel > Data visualizations section.
+
+Basemaps should be managed from the table of the "Basemaps" area. This table displays the currently available basemaps that can be used on the domain. It comprises 5 columns:
+
+- |icon-reorder| to change the order of the basemaps. The first one is the default one on the whole domain.
+- Label: to name the basemaps. Each basemap should have one label per language available on the domain.
+- Basemap: to choose the basemap.
+- Preview: to see what the basemaps look like.
+- |icon-trash| to delete a basemap.
 
 
-Adding basemaps
----------------
+Adding default basemaps
+-----------------------
 
-To choose which basemaps will be available on an OpenDataSoft portal, go to Look & feel > Data visualizations. In this subsection of the back office menu, look for the "Basemaps" area.
+By default, OpenDataSoft provides several basemaps. They are the default basemaps displayed in the drop-down menu of the Basemap table column (described in the introduction of this documentation). All these default basemaps can be made available on the platform, using the table. Even though the basemaps appear in the list of the default basemaps, they will only be usable once added to the table.
 
-Basemaps should be added and configured in the table of the "Basemaps" area. This table displays the currently available basemaps that can be used on the domain. It comprises 5 columns:
-
-- [icon] to change the order of the basemaps (the first being the default one on the whole domain)
-- Label: to name the available basemaps, each having one label per language available on the domain
-- Basemap: to choose the basemap
-- Preview: to see what the basemap looks like
-- [icon] to delete a basemap
-
-
-
-To add a basemap to the table:
+To add default basemaps to the table and make them available on the domain:
 
 1. Click on the + Add basemap button under the table.
-2. In the Basemap column, click on the drop-down box. By default, it should display "Streets" (default basemap for all OpenDataSoft domains).
+2. In the Basemap column, click on the drop-down menu. By default, it should display "Streets" (default basemap for all OpenDataSoft domains).
 3. The drop-down menu indicates all basemaps available in the domain, ordered by basemap providers. Click on the basemap to add to the domain.
 4. In the Label column, indicate a label for the newly added basemap. There must be one label per language (if the domain supports more than one), otherwise the configurations cannot be saved.
 5. Click on the Save button in the top right corner of the page.
 
 
+Adding custom basemaps
+----------------------
+
+Among the default basemaps are 2 options that allow the addition of custom basemaps:
+
+- "Custom", to add TMS and other OpenStreeMap compatible basemaps
+- "Custom (WMS)", to add WMS basemaps
+
+.. admonition:: Note
+   :class: note
+
+   WMTS basemaps are not supported by the OpenDataSoft plateform.
+
+To add a custom basemap to the domain:
+
+1. Click on the "Add basemap" button.
+2. In the Basemap column of the newly added row of the table, click on the drop-down menu.
+3. In the drop-down menu, select either "Custom" or "Custom (WMS)".
+4. Fill up the basemap configurations.
+
+* If adding a "Custom" basemap, please refer to the table below:
+
+  .. list-table::
+    :header-rows: 1
+
+    * * Name
+      * Description
+      * Example
+    * * Tiles URL (required)
+      * URL of the basemap.
+      *
+    * * Subdomains
+      * Subdomain of the basemap (provided by the basemap provider).
+      *
+    * * Zoom min
+      * Minimum zoom available (the farther we can be from the map).
+      *
+    * * Zoom max
+      * Maximum zoom available (the closer we can be into the map).
+      *
+    * * Attribution
+      * Name of the basemap provider. Will be displayed at the bottom of the basemap everywhere it is used.
+      *
+    * * TMS service
+      * Should only be checked in case the basemap is a strict TMS basemap, with inverted coordinates.
+      *
+
+* If adding a "Custom (WMS)" basemap, please refer to the table below:
+
+  .. list-table::
+    :header-rows: 1
+
+    * * Name
+      * Description
+      * Example
+    * * WMS URL (required)
+      * URL of the basemap.
+      *
+    * * Attribution
+      * Name of the basemap provider. Will be displayed at the bottom of the basemap everywhere it is used.
+      *
+    * * Layers (required)
+      * Layer(s) of the basemap (provided by the basemap provider).
+      *
+    * * Tiles images format
+      * Format of the tiles: either .png or .jpeg (provided by the basemap provider).
+      *
+    * * Styles
+      * Styles of the basemap (provided by the basemap provider).
+      *
+    * * Zoom min
+      * Minimum zoom available (the farther we can be from the map).
+      *
+    * * Zoom max
+      * Maximum zoom available (the closer we can be into the map).
+      *
+
+5. In the Label column, indicate a label for the newly added basemap. There must be one label per language (if the domain supports more than one).
+6. Click on the Save button in the top right corner of the page.
 
 
-Integrating new basemaps
+Adding external basemaps
 ------------------------
 
-By default, a fair amount of basemaps are available on each OpenDataSoft domain. It is however possible to integrate other basemaps to the list, and later add them to the table of currently available basemaps that can be used on the domain.
+OpenDataSoft allows the addition of external basemaps through specific integrations.
 
-There are 4 possible ways to integrate new basemaps:
+Currently, the only available integration is with Mapbox.
 
-- through a Mapbox integration to add new Mapbox basemaps,
-- through a Thunderforest integration to fully use the 2 already available Thunderforest basemaps,
-- by adding custom TMS basemaps,
-- or by adding custom WMS basemaps.
+.. admonition:: Note
+   :class: note
 
+   Although `Thunderforest <https://www.thunderforest.com/>`_ is presented in the interface as an available integration like Mapbox, it does not allow the integration of other Thunderforest basemaps. It only allows to have more quotas on the 2 Thunderforest basemaps available in the default basemaps list ("OpenCycleMap" and "OSM Transport").
+
+   To fully use the default Thunderforest basemaps instead of within the default, limited quotas:
+
+   1. Go to the Thunderforest website, logged in.
+   2. In the `Thunderforest console page <https://manage.thunderforest.com/dashboard>`_, copy the API Key.
+   3. Go back to the Look & feel > Data Visualizations subsection of the OpenDataSoft's domain back office.
+   4. In the "Basemaps" area, click on "Thunderforest integration" to expand the related configurations.
+   5. Paste the API Key in the textbox.
 
 Mapbox integration
 ~~~~~~~~~~~~~~~~~~
@@ -83,32 +174,13 @@ Using the basemaps table, it is now possible to select one of Mapbox's default s
        :alt: Configuration des tuiles personnalisées
 
 
-Thunderforest integration
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-`Thunderforest <https://www.thunderforest.com/>`_ is a basemaps provider for websites and applications. By default, 2 Thunderforest basemaps are available on any OpenDataSoft domain: "OpenCycleMap" and "OSM Transport". Although these 2 basemaps are available, they can only be used within the default, limited quotas. In the case of having a Thunderforest account, it could be a good idea to configure the Thunderforest integration and fully use the basemaps.
-
-.. admonition:: Important
-   :class: important
-
-   The Thunderforest integration does not allow the integration of other Thunderforest basemaps.
-
-To fully use the default Thunderforest basemaps:
-
-1. Go to the Thunderforest website, logged in.
-2. In the `Thunderforest console page <https://manage.thunderforest.com/dashboard>`_, copy the API Key.
-3. Go back to the Look & feel > Data Visualizations subsection of the OpenDataSoft's domain back office.
-4. In the "Basemaps" area, click on "Thunderforest integration" to expand the related configurations.
-5. Paste the API Key in the textbox.
 
 
-Custom TFS basemap addition
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-...
+.. |icon-reorder| image:: images/icon_reorder_basemaps.png
+    :width: 18px
+    :height: 18px
 
-
-Custom WMS basemap addition
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-...
+.. |icon-trash| image:: images/icon_delete_basemaps.png
+    :width: 18px
+    :height: 17px
