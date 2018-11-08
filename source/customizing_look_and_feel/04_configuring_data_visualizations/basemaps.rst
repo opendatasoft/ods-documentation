@@ -1,9 +1,9 @@
-Basemaps
-========
+Adding basemaps
+===============
 
 Basemaps are the canvas on which geographic data are represented. They are used for any map displayed on OpenDataSoft, whether it is that of the visualization map of a dataset or of the Map Builder.
 
-A basic neutral basemap is used by default for all maps of an OpenDataSoft. It is however possible to change the default basemap, as well as to make other basemaps available in an OpenDataSoft portal. It will allow users to change the basemap at any time on a map, and even to change the default basemap of a specific map.
+A basic basemap is used by default for all maps of all OpenDataSoft domains. It is however possible to change that default basemap, as well as to make other basemaps available in an OpenDataSoft portal. It will allow users to change the basemap at any time on a map, and even to change the default basemap of a specific dataset.
 
 .. admonition:: Note
    :class: note
@@ -33,17 +33,17 @@ By default, OpenDataSoft provides several basemaps. They are the default basemap
 
 To add default basemaps to the table and make them available on the domain:
 
-1. Click on the + Add basemap button under the table.
+1. Click on the "Add basemap" button under the table.
 2. In the Basemap column, click on the drop-down menu. By default, it should display "Streets" (default basemap for all OpenDataSoft domains).
 3. The drop-down menu indicates all basemaps available in the domain, ordered by basemap providers. Click on the basemap to add to the domain.
 4. In the Label column, indicate a label for the newly added basemap. There must be one label per language (if the domain supports more than one), otherwise the configurations cannot be saved.
-5. Click on the Save button in the top right corner of the page.
+5. Click on the "Save" button in the top right corner of the page.
 
 
 Adding custom basemaps
 ----------------------
 
-Among the default basemaps are 2 options that allow the addition of custom basemaps:
+Among the default basemaps, displayed in the drop-down menu of the Basemap table column (described in the introduction of this documentation), are 2 options that allow the addition of custom basemaps:
 
 - "Custom", to add TMS and other OpenStreeMap compatible basemaps
 - "Custom (WMS)", to add WMS basemaps
@@ -70,19 +70,19 @@ To add a custom basemap to the domain:
       * Example
     * * Tiles URL (required)
       * URL of the basemap.
-      *
+      * ``http://tile.basemapprovider.io/{z}/{x}/{y}.png``
     * * Subdomains
-      * Subdomain of the basemap (provided by the basemap provider).
-      *
+      * Subdomains of the basemap (provided by the basemap provider).
+      * abcd
     * * Zoom min
-      * Minimum zoom available (the farther we can be from the map).
-      *
+      * Minimum zoom available (the most global view we can have of the map).
+      * 1
     * * Zoom max
       * Maximum zoom available (the closer we can be into the map).
-      *
+      * 21
     * * Attribution
-      * Name of the basemap provider. Will be displayed at the bottom of the basemap everywhere it is used.
-      *
+      * Source of the basemap data. Will be displayed at the bottom of the basemap everywhere it is used.
+      * Basemap data from OpenStreetMap
     * * TMS service
       * Should only be checked in case the basemap is a strict TMS basemap, with inverted coordinates.
       *
@@ -97,28 +97,28 @@ To add a custom basemap to the domain:
       * Example
     * * WMS URL (required)
       * URL of the basemap.
-      *
+      * ``https://www.basemapprovider.com/wms``
     * * Attribution
-      * Name of the basemap provider. Will be displayed at the bottom of the basemap everywhere it is used.
-      *
+      * Source of the basemap data. Will be displayed at the bottom of the basemap everywhere it is used.
+      * Basemap data from OpenStreetMap
     * * Layers (required)
       * Layer(s) of the basemap (provided by the basemap provider).
-      *
+      * LayerName
     * * Tiles images format
       * Format of the tiles: either .png or .jpeg (provided by the basemap provider).
       *
     * * Styles
       * Styles of the basemap (provided by the basemap provider).
-      *
+      * DefaultStyle
     * * Zoom min
-      * Minimum zoom available (the farther we can be from the map).
-      *
+      * Minimum zoom available (the most global view we can have of the map).
+      * 1
     * * Zoom max
       * Maximum zoom available (the closer we can be into the map).
-      *
+      * 21
 
 5. In the Label column, indicate a label for the newly added basemap. There must be one label per language (if the domain supports more than one).
-6. Click on the Save button in the top right corner of the page.
+6. Click on the "Save" button in the top right corner of the page.
 
 
 Adding external basemaps
@@ -151,7 +151,6 @@ provide a dozen different map styles that can be directly used. OpenDataSoft all
    :class: important
 
    A Mapbox account is required. It is possible to create a Mapbox account for free, although it is going to have a small number of allowed "map views". See `Mapbox plans <https://www.mapbox.com/plans/>`_ for more information.
-
 
 To integrate Mapbox basemaps:
 
