@@ -72,6 +72,16 @@ Refer to the table below to know more about the available metadata and how to co
     * License attached to the dataset.
     * 1. Click on the arrow on the right of the textbox. A drop down selection of the main open data licenses appears.
       2. Click on the chosen license. If the right license is not in the selection, write it in that same textbox.
+  * * Timezone
+    * Forces the dataset visualizations to use the defined timezone for the date and datetime fields. It avoids the dataset visualizations to depend on the timezone on which the user's computer is set.
+    * 1. Click on the arrow on the right of the textbox. A drop down selection of timezones appears.
+      2. Click on the chosen timezone.
+
+      .. admonition:: Note
+         :class: note
+
+         It is also possible to write in the textbox. Matching results will appear: click on a result to select it.
+
   * * Publisher
     * Name of the person or organization who published the dataset.
     * Write the name of the publisher in the textbox. A list of already used publisher names appears, matching the letters just written. It is possible to click on one of these names to reuse them.
