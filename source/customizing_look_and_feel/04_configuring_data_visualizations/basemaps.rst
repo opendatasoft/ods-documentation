@@ -1,7 +1,7 @@
 Adding basemaps
 ===============
 
-Basemaps are the canvas on which geographic data are represented. They are used for any map displayed on OpenDataSoft, whether it is that of the visualization map of a dataset or of the Map Builder.
+Basemaps are the canvas on which geographic data are represented. They are used for any map displayed on OpenDataSoft, whether it is the visualization map of a dataset or the Map Builder.
 
 A basic basemap is used by default for all maps of all OpenDataSoft domains. It is however possible to change that default basemap, as well as to make other basemaps available in an OpenDataSoft portal. It will allow users to change the basemap at any time on a map, and even to change the default basemap of a specific dataset.
 
@@ -29,7 +29,7 @@ Basemaps should be managed from the table of the "Basemaps" area. This table dis
 Adding default basemaps
 -----------------------
 
-By default, OpenDataSoft provides several basemaps. They are the default basemaps displayed in the drop-down menu of the Basemap table column (described in the introduction of this documentation). All these default basemaps can be made available on the platform, using the table. Even though the basemaps appear in the list of the default basemaps, they will only be usable once added to the table.
+By default, OpenDataSoft provides several basemaps. They are the default basemaps displayed in the drop-down menu of the Basemap table column (described in the introduction of this documentation). All these default basemaps can be made available on the platform, using the table. Even though the basemaps appear in the list of default basemaps, they will only be usable once added to the table.
 
 To add default basemaps to the table and make them available on the domain:
 
@@ -45,13 +45,13 @@ Adding custom basemaps
 
 Among the default basemaps, displayed in the drop-down menu of the Basemap table column (described in the introduction of this documentation), are 2 options that allow the addition of custom basemaps:
 
-- "Custom", to add TMS and other OpenStreeMap compatible basemaps
+- "Custom", to add TMS and other OpenStreetMap compatible basemaps
 - "Custom (WMS)", to add WMS basemaps
 
 .. admonition:: Note
    :class: note
 
-   WMTS basemaps are not supported by the OpenDataSoft plateform.
+   WMTS basemaps are not supported by the OpenDataSoft platform.
 
 To add a custom basemap to the domain:
 
@@ -72,8 +72,8 @@ To add a custom basemap to the domain:
       * URL of the basemap.
       * ``http://tile.basemapprovider.io/{z}/{x}/{y}.png``
     * * Subdomains
-      * Subdomains of the basemap (provided by the basemap provider).
-      * abcd
+      * Subdomains of the basemap (provided by the basemap provider). Subdomains must be separated with a comma.
+      * a,b,c,d
     * * Zoom min
       * Minimum zoom available (the most global view we can have of the map).
       * 1
