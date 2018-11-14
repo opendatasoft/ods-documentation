@@ -1,29 +1,41 @@
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Translator_NL1 <datawords.translator.nl1@gmail.com>, 2018
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-29 17:52+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2018-11-09 11:35+0100\n"
+"PO-Revision-Date: 2018-06-27 09:13+0000\n"
+"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2018\n"
+"Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:2
 msgid "JSON array to multivalued"
-msgstr ""
+msgstr "JSON array naar meerdere waarden"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:4
 msgid ""
 "This processor extracts multiple values from a field containing a JSON array"
 " and concatenates them into a multivalued field."
 msgstr ""
+"Deze processor extraheert meerdere waarden uit een veld dat een JSON array "
+"bevat en voegt deze samen in een veld met meerdere waarden."
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:6
 msgid "Note"
-msgstr ""
+msgstr "Opmerking"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:9
 msgid ""
@@ -31,26 +43,29 @@ msgid ""
 "don't forget to enable it on the field's parameters, along with the same "
 "separator as in the processor."
 msgstr ""
+"De eigenschap ``multivalued`` zal niet automatisch worden ingesteld in het "
+"veld, dus vergeet niet om deze te activeren op de parameters van het veld, "
+"samen met hetzelfde scheidingsteken als in de processor."
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:12
 msgid "Original value"
-msgstr ""
+msgstr "Oorspronkelijke waarde"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:12
 msgid "After processor"
-msgstr ""
+msgstr "Na processor"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:14
 msgid "``{\"a\":[\"b\",\"c\",\"d\"]}``"
-msgstr ""
+msgstr "``{\"a\":[\"b\",\"c\",\"d\"]}``"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:14
 msgid "``b,c,d``"
-msgstr ""
+msgstr "``b,c,d``"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:18
 msgid "Setting the processor"
-msgstr ""
+msgstr "De processor instellen"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:20
 msgid ""
@@ -58,12 +73,17 @@ msgid ""
 "from JSON\" processor and should contain the array to concatenate "
 "(represented with the iJSON rule ``.item``)."
 msgstr ""
+"De parameter \"iJSON-regel naar array\" werkt precies zoals in de processor "
+"\"Extraheer uit JSON\" en zou de array die samengevoegd moet worden, moeten "
+"bevatten (weergegeven door de iJSON-regel ``.item``)."
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:22
 msgid ""
 "If the field contains the JSON array directly, just put ``item`` as an iJSON"
 " rule."
 msgstr ""
+"Wanneer het veld rechtstreeks de JSON-array bevat, plaats dan enkel ``item``"
+" als een iJSON-regel."
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:23
 msgid ""
@@ -71,6 +91,9 @@ msgid ""
 "meaning that the reached object should be treated as an array of items in "
 "the iJSON syntax."
 msgstr ""
+"Wanneer het laatste element een array is, moet de iJSON-regel eindigen met "
+"``.item``. Dit betekent dat het bereikte voorwerp behandeld zou moeten "
+"worden als een array van items in de iJSON-syntax."
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:24
 msgid ""
@@ -78,41 +101,46 @@ msgid ""
 "adding key names after the ``.item``, but be careful to check that this path"
 " is valid for every object in the array."
 msgstr ""
+"Wanneer u wil blijven verdergaan in de items in de array, kan u kernnamen "
+"blijven toevoegen na het ``.item``. Zorg er wel voor dat u controleert of "
+"dit pad geldig is voor elk voorwerp in de array."
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:26
 msgid ""
 "To set the parameters of the JSON array to multivalued processor, follow the"
 " indications from the table below."
 msgstr ""
+"Om de parameters van de JSON array to multivalued processor in te stellen, "
+"dient u de aanwijzingen in onderstaande tabel te volgen."
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:31
 msgid "Label"
-msgstr ""
+msgstr "Label"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:32
 msgid "Description"
-msgstr ""
+msgstr "Omschrijving"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:33
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:48
 msgid "Example"
-msgstr ""
+msgstr "Voorbeeld"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:34
 msgid "Field"
-msgstr ""
+msgstr "Veld"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:35
 msgid "Name of the field that holds the JSON array"
-msgstr ""
+msgstr "Naam van het veld waarin de JSON array staat"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:36
 msgid "data"
-msgstr ""
+msgstr "data"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:37
 msgid "iJSON rule to array"
-msgstr ""
+msgstr "iJSON regel naar array"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:38
 msgid ""
@@ -121,51 +149,57 @@ msgid ""
 "separated with a dot. The position of the array is indicated with the "
 "``item`` keyword."
 msgstr ""
+"iJSON regel die herhaald moet worden in de bovenstaande JSON array. Een "
+"iJSON-regel is opgebouwd met de namen van alle velden uit de JSON root naar "
+"de data die geëxtraheerd moeten worden, gescheiden door een puntje. De "
+"positie van de array staat aangegeven door het trefwoord \"item\"."
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:39
 msgid "item.metaB"
-msgstr ""
+msgstr "item.metaB"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:40
 msgid "Separator"
-msgstr ""
+msgstr "Scheidingsteken"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:41
 msgid "Character or string used to separate the different values found"
 msgstr ""
+"Karakter of string die gebruikt wordt om de verschillende teruggevonden "
+"waarden te scheiden"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:42
 msgid ","
-msgstr ""
+msgstr ","
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:43
 msgid "Output field"
-msgstr ""
+msgstr "Outputveld"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:44
 msgid "Name of the field that will contain the extracted element"
-msgstr ""
+msgstr "Naam van het veld dat het geëxtraheerde element zal bevatten"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:50
 msgid "iJSON rules to extract from the following JSON array field:"
-msgstr ""
+msgstr "iJSON-regels om te extraheren uit het volgende JSON array-veld:"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:67
 msgid "``item.metaB``: ``value1,value2``"
-msgstr ""
+msgstr "``item.metaB``: ``value1,value2``"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:68
 msgid "``item.int``: ``5,6``"
-msgstr ""
+msgstr "``item.int``: ``5,6``"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:69
 msgid "``item.boolean``: ``false,true``"
-msgstr ""
+msgstr "``item.boolean``: ``false,true``"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:90
 msgid "``bloc.item.metaB``: ``value1,value2``"
-msgstr ""
+msgstr "``bloc.item.metaB``: ``value1,value2``"
 
 #: ../../source/publishing_data/05_processing_data/processors/json_array_to_multivalued.rst:91
 msgid "``bloc.item.sub.sub_sub``: ``sub_value,other_sub_value``"
-msgstr ""
+msgstr "``bloc.item.sub.sub_sub``: ``sub_value,other_sub_value``"

@@ -1,37 +1,52 @@
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-29 17:52+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2018-11-09 11:35+0100\n"
+"PO-Revision-Date: 2018-10-29 17:30+0000\n"
+"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018\n"
+"Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:2
 msgid "Shapefile connector"
-msgstr ""
+msgstr "Conector de ShapeFile"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:4
 msgid ""
 "The Shapefile connector is used to extract data from a shapefile. It is a "
 "ZIP archive that should contain the following files:"
 msgstr ""
+"El conector de ShapeFile se utiliza para extraer datos de un objeto "
+"ShapeFile. Este es un archivo ZIP que debería contener los archivos "
+"siguientes:"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:6
 msgid "``.shp`` shape format; the feature geometry itself"
-msgstr ""
+msgstr "``.shp`` Formato de forma; la geometría de la función misma."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:7
 msgid "``.shx`` shape index format"
-msgstr ""
+msgstr "``.shx`` Formato de índice de forma."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:8
 msgid "``.dbf`` attribute format; columnar attributes for each shape"
 msgstr ""
+"``.dbf`` Formato de atributo; los atributos de columna de cada una de las "
+"formas."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:9
 msgid ""
@@ -39,51 +54,58 @@ msgid ""
 "information, a plain text file describing the projection using well-known "
 "text format"
 msgstr ""
+"``.prj`` Formato de proyección; sistema de coordenadas e información de "
+"proyección, un archivo de texto plano que describe la proyección con un "
+"formato de texto conocido."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:11
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:35
 msgid "Note"
-msgstr ""
+msgstr "Nota"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:14
 msgid ""
 "The ZIP archive must be flat. All files must be at the root path (not in "
 "subdirectories)."
 msgstr ""
+"El archivo ZIP debe ser plano. Todos los archivos deben estar en la ruta "
+"raíz (no en subdirectorios)."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:18
 msgid "Creation"
-msgstr ""
+msgstr "Creación"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:20
 msgid ""
 "See :doc:`how to source a "
 "file</publishing_data/01_creating_a_dataset/sourcing_data>`."
 msgstr ""
+"Consulte :doc:`cómo añadir un "
+"archivo</publishing_data/01_creating_a_dataset/sourcing_data>`."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:24
 msgid "Configuration"
-msgstr ""
+msgstr "Configuración"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:29
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:30
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:31
 msgid "Usage"
-msgstr ""
+msgstr "Uso"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:32
 msgid "Encoding"
-msgstr ""
+msgstr "Codificación"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:33
 msgid "Encoding of the file."
-msgstr ""
+msgstr "Codificación del archivo."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:38
 msgid ""
@@ -93,6 +115,12 @@ msgid ""
 "setting the encoding manually. On modern software, this is usually "
 "unnecessary."
 msgstr ""
+"La codificación de caracteres es la forma en que los caracteres están "
+"representados en un archivo guardado. Unicode (o UTF-8) es el estándar "
+"universal, pero algunos archivos pueden estar codificados en un formato "
+"heredado (p. ej. versiones de Excel anteriores), lo que requeriría "
+"establecer la codificación manualmente. En el software moderno, esto suele "
+"ser innecesario."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:40
 msgid ""
@@ -102,17 +130,24 @@ msgid ""
 "<https://docs.python.org/2/library/codecs.html#standard-encodings>`_ can be "
 "used."
 msgstr ""
+"De forma predeterminada, la plataforma utiliza una técnica heurística para "
+"averiguar la codificación. Si el resultado no es correcto, elija la "
+"codificación adecuada en la lista o escríbala en el cuadro de texto. Se "
+"puede utilizar cualquier alias de `Python "
+"<https://docs.python.org/2/library/codecs.html#standard-encodings>`_."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:41
 msgid "Extract filename"
-msgstr ""
+msgstr "Extraer nombre de archivo"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:42
 msgid "Creates a new column with the name of the source file."
-msgstr ""
+msgstr "Crea una columna nueva con el nombre del archivo de origen."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/shapefile.rst:43
 msgid ""
 "By default, the box is not checked. Check the box to extract filename in an "
 "added column."
 msgstr ""
+"De forma predeterminada, la casilla no está marcada. Marque la casilla para "
+"extraer el nombre de archivo en una columna añadida."

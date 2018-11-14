@@ -1,19 +1,33 @@
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Admin OpenDataSoft <admin@opendatasoft.com>, 2018
+# traducteur_DE2 <datawords.translator.de2@gmail.com>, 2018
+# Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2018
+# Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2018
+# traducteur_DE1 <datawords.translator.de1@gmail.com>, 2018
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-29 17:52+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2018-11-09 11:35+0100\n"
+"PO-Revision-Date: 2018-10-29 17:29+0000\n"
+"Last-Translator: traducteur_DE1 <datawords.translator.de1@gmail.com>, 2018\n"
+"Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:2
 msgid "JSON connectors"
-msgstr ""
+msgstr "JSON-Konnektoren"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:4
 msgid ""
@@ -21,40 +35,48 @@ msgid ""
 "data objects consisting of key–value pairs. It is the most common data "
 "format to build web APIs."
 msgstr ""
+"JSON ist ein offenes Standardformat, das zur Übermittlung von Datenobjekten,"
+" die aus Schlüssel-Wert-Paaren bestehen, visuell lesbaren Text verwendet. "
+"Dies ist das gängigste Format zur Erstellung von APIs."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:6
 msgid ""
 "As JSON documents can have a lot of different forms, there are 3 JSON "
 "connectors to extract data from a JSON file:"
 msgstr ""
+"Da JSON-Dokumente viele verschiedene Formen haben können, gibt es 3 JSON-"
+"Konnektoren, um Daten aus einer JSON-Datei zu extrahieren:"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:8
 msgid "the JSON File connector,"
-msgstr ""
+msgstr "JSON Datei-Konnektor,"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:9
 msgid "the JSON Line connector,"
-msgstr ""
+msgstr "JSON Zeilen-Konnektor,"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:10
 msgid "the JSON Dict connector."
-msgstr ""
+msgstr "JSON Dict-Konnektor."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:13
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:59
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:231
 msgid "Note"
-msgstr ""
+msgstr "Hinweis"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:16
 msgid ""
 "If the connector does not manage to fully extract a document with a complex "
 "structure, use one of the JSON processors to complete the extraction."
 msgstr ""
+"Sollte ein Konnektor die Extraktion eines Dokumentes mit komplexer Struktur "
+"nicht vollständig bewältigen, können Sie einen der JSON-Prozessoren "
+"verwenden, um die Extraktion abzuschließen."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:20
 msgid "JSON File"
-msgstr ""
+msgstr "JSON-Datei"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:22
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:197
@@ -62,12 +84,16 @@ msgid ""
 "This connector extracts a valid JSON document (array or object) into one "
 "dataset of several records."
 msgstr ""
+"Dieser Konnektor extrahiert ein gültiges JSON-Dokument (Array oder Objekt) "
+"in einen Datensatz mehrerer Einträge."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:24
 msgid ""
 "If the document is a JSON array, a record will be created for each object "
 "inside the array (the keys will be used as column names)."
 msgstr ""
+"Ist das Dokument ein JSON-Array, wird für jedes Objekt innerhalb des Arrays "
+"ein Eintrag erstellt (die Schlüssel dienen als Spaltennamen)."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:25
 msgid ""
@@ -75,39 +101,45 @@ msgid ""
 " a dot-separated path to the array inside your object. If not provided, the "
 "connector tries ``items``."
 msgstr ""
+"Ist das Dokument ein JSON-Objekt, sollte der Parameter \"JSON-Stamm\" einen "
+"durch einen Punkt getrennten Pfad zum Array in Ihrem Objekt enthalten. Bei "
+"fehlender Angabe probiert der Konnektor ``Elemente``."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:27
 msgid ""
 "For each item inside the array, the connector can follow another path before"
 " extracting the records thanks to the parameter \"JSON object\"."
 msgstr ""
+"Dank des Parameters \"JSON-Objekt\" kann der Konnektor vor dem Extrahieren "
+"der Einträge einen anderen Pfad für jedes Element innerhalb des Arrays "
+"verfolgen."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:30
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:162
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:202
 msgid "Supported field types"
-msgstr ""
+msgstr "Unterstützte Feldtypen"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:32
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:204
 msgid "Regular fields (decimal, bool, string)"
-msgstr ""
+msgstr "Reguläre Felder (dezimal, boolesch, Zeichenfolge)"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:33
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:166
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:205
 msgid "JSON object: will be used as-is"
-msgstr ""
+msgstr "JSON-Objekte werden verwendet wie sie sind"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:36
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:208
 msgid "Array:"
-msgstr ""
+msgstr "Array:"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:35
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:207
 msgid "if the array contains JSON objects, it will be used as-is"
-msgstr ""
+msgstr "enthält das Array JSON-Objekte, wird es verwendet, wie es ist"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:36
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:208
@@ -115,12 +147,14 @@ msgid ""
 "if it contains strings, a multivalued field will be created with all the "
 "strings separated by a semicolon (\";\")"
 msgstr ""
+"enthält es Zeichenfolgen, wird ein mehrwertiges Feld mit allen durch ein "
+"Semikolon (\";\") getrennten Zeichenfolgen erstellt"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:39
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:169
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:211
 msgid "Creation"
-msgstr ""
+msgstr "Erstellung"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:41
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:171
@@ -129,42 +163,44 @@ msgid ""
 "See :doc:`how to source a "
 "file</publishing_data/01_creating_a_dataset/sourcing_data>`."
 msgstr ""
+"Siehe :doc:`eine Datei als Quelle "
+"auswählen</publishing_data/01_creating_a_dataset/sourcing_data>`."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:44
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:174
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:216
 msgid "Configuration"
-msgstr ""
+msgstr "Konfiguration"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:49
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:179
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:221
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:50
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:180
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:222
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:51
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:181
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:223
 msgid "Usage"
-msgstr ""
+msgstr "Verwendung"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:52
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:182
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:224
 msgid "Extract filename"
-msgstr ""
+msgstr "Dateinamen extrahieren"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:53
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:183
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:225
 msgid "Creates a new column with the name of the source file."
-msgstr ""
+msgstr "Es wird eine neue Spalte mit dem Namen der Quelldatei erstellt."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:54
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:184
@@ -173,17 +209,22 @@ msgid ""
 "By default, the box is not checked. Check the box to extract filename in an "
 "added column."
 msgstr ""
+"Standardmäßig ist das Kontrollkästchen nicht markiert. Markieren Sie das "
+"Kontrollkästchen, um den Dateinamen in einer hinzugefügten Spalte zu "
+"extrahieren."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:55
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:227
 msgid "JSON root"
-msgstr ""
+msgstr "JSON-Stamm"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:56
 msgid ""
 "Path to the JSON array that contains the objects that will become the "
 "dataset records."
 msgstr ""
+"Pfad zum JSON-Array, das die Objekte enthält, die zu den Datensatzeinträgen "
+"werden sollen."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:57
 msgid ""
@@ -191,6 +232,9 @@ msgid ""
 "JSON file is a JSON object, write the ijson path to the array in the "
 "textbox."
 msgstr ""
+"Wenn sich das JSON-Array direkt am Stamm befindet, lassen Sie das Textfeld "
+"leer. Wenn die JSON-Datei ein JSON-Objekt ist, geben Sie den ijson-Pfad zum "
+"Array in das Textfeld ein."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:62
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:234
@@ -199,14 +243,17 @@ msgid ""
 " the attribute names with dots (e.g. `content.trains`). More features are "
 "available for advanced users."
 msgstr ""
+"ijson ist eine Syntax zur Navigation innerhalb von JSON-Objekten. Dabei "
+"werden die Attributnamen durch Punkte getrennt (z.B. \"content.trains\"). "
+"Für fortgeschrittene Benutzer stehen weitere Funktionen zur Verfügung."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:64
 msgid "JSON object"
-msgstr ""
+msgstr "JSON-Objekt"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:65
 msgid "Relative path to the JSON object to extract."
-msgstr ""
+msgstr "Relativer Pfad des zu extrahierenden JSON-Objekts."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:66
 msgid ""
@@ -215,104 +262,115 @@ msgid ""
 " of one column, write the name of that column inside the JSON object "
 "textbox."
 msgstr ""
+"Wenn der JSON-Stamm festgelegt (oder leer gelassen) wurde und die Vorschau "
+"irrelevante Spalten anzeigt und das JSON-Objekt als Wert einer Spalte "
+"extrahiert wurde, schreiben Sie den Namen dieser Spalte in das Textfeld des "
+"JSON-Objekts. "
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:69
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:240
 msgid "Examples"
-msgstr ""
+msgstr "Beispiele"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:71
 msgid "Example 1:"
-msgstr ""
+msgstr "1. Beispiel:"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:88
 msgid ""
 "In this JSON file, the JSON array is directly at the root. There is no need "
 "to fill up the JSON root configuration."
 msgstr ""
+"In dieser JSON-Datei befindet sich das JSON-Array direkt am Stamm. Es ist "
+"nicht erforderlich, die JSON-Stamm-Konfiguration auszufüllen."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:90
 msgid "The resulting dataset will be (columns order may vary):"
 msgstr ""
+"Der resultierende Datensatz ist (die Reihenfolge der Spalten kann "
+"unterschiedlich sein):"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:93
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:143
 msgid "name"
-msgstr ""
+msgstr "Name"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:93
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:143
 msgid "origin"
-msgstr ""
+msgstr "Herkunft"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:93
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:143
 msgid "destination"
-msgstr ""
+msgstr "Ziel"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:95
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:145
 msgid "Agra Express"
-msgstr ""
+msgstr "Agra Express"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:95
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:145
 msgid "Agra Cantt"
-msgstr ""
+msgstr "Agra Cantt"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:95
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:145
 msgid "New Delhi"
-msgstr ""
+msgstr "New Delhi"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:97
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:147
 msgid "Gour Express"
-msgstr ""
+msgstr "Gour Express"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:97
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:147
 msgid "Balurghat"
-msgstr ""
+msgstr "Balurghat"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:97
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:147
 msgid "Sealdah"
-msgstr ""
+msgstr "Sealdah"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:100
 msgid "Example 2:"
-msgstr ""
+msgstr "2. Beispiel:"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:128
 msgid ""
 "For this complex JSON file, the correct JSON root is ``content.trains``. If "
 "``content.trains`` is set as JSON root, the resulting dataset will be:"
 msgstr ""
+"Für diese komplexe JSON-Datei lautet der korrekte JSON-Stamm "
+"``content.trains``. Wenn ``content.trains`` als JSON-Stamm festgelegt ist, "
+"dann resultiert folgender Datensatz daraus:"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:132
 msgid "id"
-msgstr ""
+msgstr "id"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:132
 msgid "info"
-msgstr ""
+msgstr "info"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:134
 msgid "123"
-msgstr ""
+msgstr "123"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:134
 msgid "{\"origin\": \"Agra Cantt\", \"destination\": \"New Delhi\", \"name\": \"Agra Express\"}"
-msgstr ""
+msgstr "{\"Herkunft\": \"Agra Cantt\", \"Ziel\": \"New Delhi\", \"Name\": \"Agra Express\"}"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:136
 msgid "555"
-msgstr ""
+msgstr "555"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:136
 msgid "{\"origin\": \"Balurghat\", \"destination\": \"Sealdah\", \"name\": \"Gour Express\"}"
-msgstr ""
+msgstr "{\"Herkunft\": \"Balurghat\", \"Ziel\": \"Sealdah\", \"Name\": \"Gour Express\"}"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:139
 msgid ""
@@ -320,40 +378,46 @@ msgid ""
 "correct JSON object is ``info``. If ``info`` is set as JSON object, the "
 "resulting dataset will be:"
 msgstr ""
+"Um nur die JSON-Objekte ``info`` zu extrahieren und die ``id`` Nummer zu "
+"überspringen, ist das richtige JSON-Objekt ``info``. Wenn ``info`` als JSON-"
+"Objekt festgelegt ist, dann resultiert folgender Datensatz daraus:"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:152
 msgid "JSON Line"
-msgstr ""
+msgstr "JSON-Zeile"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:154
 msgid ""
 "This connector expects a file in which each line is a one-line JSON "
 "document. The whole file is not a valid JSON document but each line is."
 msgstr ""
+"Dieser Konnektor erwartet eine Datei, in der jede Zeile ein einzeiliges "
+"JSON-Dokument ist. Im Gegensatz zu jeder einzelnen Zeile ist die gesamte "
+"Datei kein gültiges JSON-Dokument."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:156
 msgid "The connector supports 2 modes:"
-msgstr ""
+msgstr "Der Konnektor unterstützt zwei Modi:"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:158
 msgid "one JSON array on each line (or one array altogether)"
-msgstr ""
+msgstr "ein JSON-Array in jeder Zeile (oder ein Array insgesamt)"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:159
 msgid "one JSON object on each line"
-msgstr ""
+msgstr "ein JSON-Objekt in jeder Zeile"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:164
 msgid "Regular fields (decimal, string)"
-msgstr ""
+msgstr "Reguläre Felder (dezimal, Zeichenfolge)"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:165
 msgid "Array: will be used as-is"
-msgstr ""
+msgstr "Array: wird verwendet, so wie es ist"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:185
 msgid "First line number"
-msgstr ""
+msgstr "Nummer der ersten Zeile"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:186
 msgid ""
@@ -361,20 +425,25 @@ msgid ""
 "decide which line is to be considered the first one. The lines above will be"
 " skipped from the dataset."
 msgstr ""
+"Bei Dateien, die nicht in der ersten Zeile beginnen, kann bestimmt werden, "
+"welche Zeile als die erste angesehen werden soll. Die Zeilen darüber werden "
+"vom Datensatz übersprungen."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:187
 msgid ""
 "By default, the dataset starts at line 1. Indicate the number of the line "
 "that should be considered the beginning of the dataset."
 msgstr ""
+"Standardmäßig beginnt der Datensatz in Zeile 1. Geben Sie die Nummer der "
+"Zeile an, die als Anfang des Datensatzes berücksichtigt werden soll."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:188
 msgid "Headers"
-msgstr ""
+msgstr "Überschriften"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:189
 msgid "For files which first line contains column titles."
-msgstr ""
+msgstr "Für Dateien, deren erste Zeile Spaltentitel enthält."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:190
 msgid ""
@@ -382,10 +451,14 @@ msgid ""
 "labels. Uncheck the box if the first line doesn't contain titles but data: "
 "the field labels will then be empty by default."
 msgstr ""
+"Standardmäßig ist das Kontrollkästchen markiert. Es bezieht sich auf die "
+"Werte der Feldbeschriftungen der ersten Zeile. Entfernen Sie die Markierung "
+"des Kontrollkästchens, wenn die erste Zeile keine Titel, sondern Daten "
+"enthält: in diesem Fall sind die Feldbezeichnungen standardmäßig leer."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:195
 msgid "JSON Dict"
-msgstr ""
+msgstr "JSON Dict"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:199
 msgid ""
@@ -394,24 +467,31 @@ msgid ""
 "of the corresponding object (or a single column named \"value\" if the value"
 " is a string instead of an object)."
 msgstr ""
+"Es wird ein JSON-Objekt erwartet, in dem jeder Schlüssel einen Eintrag "
+"enthält, und es werden Einträge erstellt, mit einer Spalte, die den "
+"Schlüssel enthält, und einer Spalte für jedes Attribut des entsprechenden "
+"Objekts (oder einer einzelnen Spalte mit dem Namen \"Wert\", wenn der Wert "
+"eine Zeichenfolge ist)."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:228
 msgid "Path to the JSON object that contains the records."
-msgstr ""
+msgstr "Pfad zum JSON-Objekt, das die Einträge enthält."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:229
 msgid ""
 "If the JSON object is directly at the root, leave the textbox empty. "
 "Otherwise, write the ijson path to the object in the textbox."
 msgstr ""
+"Wenn sich das JSON-Objekt direkt am Stamm befindet, lassen Sie das Textfeld "
+"leer. Geben Sie sondt den ijson-Pfad zum Objekt in das Textfeld ein."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:235
 msgid "Key field name"
-msgstr ""
+msgstr "Schlüssel-Feldname"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:236
 msgid "Label of the \"key\" column."
-msgstr ""
+msgstr "Beschriftung der Spalte \"Schlüssel\""
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:237
 msgid ""
@@ -419,98 +499,105 @@ msgid ""
 "textbox. It will modify both the label and the technical identifier of the "
 "column."
 msgstr ""
+"Standardmäßig \"Schlüssel\". Schreiben Sie die neue Bezeichnung der Spalte "
+"\"Schlüssel\" in das Textfeld. Es wird sowohl die Bezeichnung als auch die "
+"technische Kennung der Spalte geändert."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:242
 msgid "**Example 1:**"
-msgstr ""
+msgstr "**1. Beispiel:**"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:274
 msgid "If the JSON root is left empty, the resulting dataset will be:"
 msgstr ""
+"Wenn der JSON-Stamm leer gelassen wird, dann resultiert folgender Datensatz "
+"daraus:"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:277
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:312
 msgid "key"
-msgstr ""
+msgstr "Schlüssel"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:277
 msgid "type1"
-msgstr ""
+msgstr "Typ1"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:277
 msgid "type2"
-msgstr ""
+msgstr "Typ2"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:279
 msgid "2016"
-msgstr ""
+msgstr "2016"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:279
 msgid "{\"color\": \"blue\", \"available\": true, \"price\": 10}"
-msgstr ""
+msgstr "{\"color\": \"blue\", \"available\": true, \"price\": 10}"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:279
 msgid "{\"color\": \"red\", \"available\": true, \"price\": 9}"
-msgstr ""
+msgstr "{\"color\": \"red\", \"available\": true, \"price\": 9}"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:281
 msgid "2015"
-msgstr ""
+msgstr "2015"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:281
 msgid "{\"color\": \"teal\", \"available\": true, \"price\": 10.5}"
-msgstr ""
+msgstr "{\"color\": \"teal\", \"available\": true, \"price\": 10.5}"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:281
 msgid "{\"color\": \"crimson\", \"available\": true, \"price\": 9.1}"
-msgstr ""
+msgstr "{\"color\": \"crimson\", \"available\": true, \"price\": 9.1}"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:284
 msgid "**Example 2:**"
-msgstr ""
+msgstr "**2. Besipiel:**"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:306
 msgid ""
 "For this complex JSON file, the correct JSON root is "
 "``results.datasets.item``."
 msgstr ""
+"Für diese komplexe JSON-Datei lautet der korrekte JSON-Stamm "
+"``results.datasets.item``."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:308
 msgid "``results.datasets`` leads to the array"
-msgstr ""
+msgstr "``results.datasets`` führt zum Array"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:309
 msgid "``item`` iterates inside the array and get each object"
-msgstr ""
+msgstr "``item`` iteriert innerhalb des Arrays und ruft jedes Objekt ab"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:312
 msgid "description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:312
 msgid "title"
-msgstr ""
+msgstr "Titel"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:314
 msgid "abc"
-msgstr ""
+msgstr "abc"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:314
 msgid "A description about ABC"
-msgstr ""
+msgstr "Eine Beschreibung von ABC"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:314
 msgid "A B C"
-msgstr ""
+msgstr "A B C"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:316
 msgid "xyz"
-msgstr ""
+msgstr "xyz"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:316
 msgid "Another description"
-msgstr ""
+msgstr "Eine andere Beschreibung"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/json.rst:316
 msgid "D E F"
-msgstr ""
+msgstr "D E F"

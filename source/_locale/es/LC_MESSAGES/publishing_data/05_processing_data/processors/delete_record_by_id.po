@@ -1,19 +1,29 @@
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-29 17:52+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2018-11-09 11:35+0100\n"
+"PO-Revision-Date: 2018-06-27 09:12+0000\n"
+"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018\n"
+"Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:2
 msgid "Delete record by ID processor"
-msgstr ""
+msgstr "Procesador Suprimir registro por ID"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:4
 msgid ""
@@ -22,6 +32,11 @@ msgid ""
 " deleted in both the current version of the dataset and its history. This "
 "processors indeed aims regularly updated datasets."
 msgstr ""
+"Este procesador envía una orden de supresión para eliminar un registro "
+"existente de un conjunto de datos, en función del ID exclusivo. Esto supone "
+"que el registro existente se suprimirá tanto en la versión actual del "
+"conjunto de datos como en su historial. Este procesador está pensado para "
+"los conjuntos de datos que se actualizan periódicamente."
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:6
 msgid ""
@@ -34,10 +49,18 @@ msgid ""
 "records (concerning the closed company) from all previous sources of the "
 "dataset."
 msgstr ""
+"Ejemplo: Si un conjunto de datos contiene una lista de empresas (con "
+"información como estatus, número de empleados, sector de actividad, etc.), "
+"se actualiza periódicamente para asegurarse de que toda la información de "
+"estas empresas siga siendo válida. Con el procesador Suprimir registro por "
+"ID, se pueden suprimir registros sobre empresas que ya estén cerradas. No "
+"solo se suprimirá el registro del origen más reciente de la última "
+"actualización, sino también los registros (sobre la empresa cerrada) de "
+"todos los orígenes anteriores del conjunto de datos."
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:8
 msgid "Note"
-msgstr ""
+msgstr "Nota"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:11
 msgid ""
@@ -45,57 +68,63 @@ msgid ""
 "the dataset preview of the Processing tab. Save, publish and explore the "
 "dataset in the front office to see the changes."
 msgstr ""
+"Los cambios aplicados en el conjunto de datos con este procesador no son "
+"visibles en la vista previa del conjunto de datos de la ficha Procesadores. "
+"Guarde, publique y explore el conjunto de datos en el front office para ver "
+"los cambios."
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:14
 msgid "Setting the processor"
-msgstr ""
+msgstr "Establecer el procesador"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:16
 msgid ""
 "To set the parameters of the Delete record by ID processor, follow the "
 "indications from the table below."
 msgstr ""
+"Para establecer los parámetros del procesador Suprimir registro por ID, siga"
+" las indicaciones de esta tabla."
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:21
 msgid "Label"
-msgstr ""
+msgstr "Etiqueta"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:22
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:23
 msgid "Mandatory"
-msgstr ""
+msgstr "Obligatorio"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:24
 msgid "Field"
-msgstr ""
+msgstr "Campo"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:25
 msgid "Field containing the record value to delete"
-msgstr ""
+msgstr "Campo que contiene el valor de registro que se suprimirá."
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:26
 msgid "yes"
-msgstr ""
+msgstr "Sí"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:27
 msgid "Value to skip"
-msgstr ""
+msgstr "Valor para omitir"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:28
 msgid "Value to delete from the field's records"
-msgstr ""
+msgstr "Valor para suprimir de los registros del campo."
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:29
 #: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:32
 msgid "no"
-msgstr ""
+msgstr "No"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:30
 msgid "Exact match"
-msgstr ""
+msgstr "Coincidencia exacta"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record_by_id.rst:31
 msgid ""
@@ -103,3 +132,6 @@ msgid ""
 " skip** parameter. If unchecked: the field must at least contain what was "
 "written in the **Value to skip** parameter."
 msgstr ""
+"Marcado: El campo debe contener el valor exacto escrito en el parámetro "
+"**Valor para omitir**. Desmarcado: El campo debe contener como mínimo lo que"
+" está escrito en el parámetro **Valor para omitir**."

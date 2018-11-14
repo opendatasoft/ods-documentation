@@ -1,19 +1,31 @@
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# traducteur_DE1 <datawords.translator.de1@gmail.com>, 2018
+# Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2018
+# Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2018
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-29 17:52+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2018-11-09 11:35+0100\n"
+"PO-Revision-Date: 2018-06-27 09:13+0000\n"
+"Last-Translator: Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2018\n"
+"Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:2
 msgid "Extract Text processor"
-msgstr ""
+msgstr "Prozessor \"Text extrahieren\""
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:4
 msgid ""
@@ -24,45 +36,54 @@ msgid ""
 "is indeed to put the part to extract in parentheses. This part will then be "
 "extracted in a new column."
 msgstr ""
+"Dieser Prozessor kann verwendet werden, um einen Teil eines Textes, einer "
+"Zahl oder einer Kombination von beiden in eine neue Spalte zu extrahieren. "
+"Er funktioniert ähnlich wie der Prozessor \"Ersetzen mittels RegExp\", doch "
+"anstatt den Inhalt in der gleichen Spalte zu ersetzen, wird eine neue Spalte"
+" mit dem extrahierten Text erstellt. Dahinter steckt die Idee, den zu "
+"extrahierenden Teil in Klammern zu setzen. Dieser Teil wird dann in eine "
+"neue Spalte extrahiert."
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:7
 msgid "Setting the processor"
-msgstr ""
+msgstr "Den Prozessor einrichten"
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:9
 msgid ""
 "To set the parameters of the Extract Text processor, follow the indications "
 "from the table below."
 msgstr ""
+"Befolgen Sie die Anweisungen der unteren Tabelle, um die Parameter des "
+"Prozessors \"Text extrahieren\" einzurichten."
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:14
 msgid "Label"
-msgstr ""
+msgstr "Beschriftung"
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:15
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:16
 msgid "Mandatory"
-msgstr ""
+msgstr "Obligatorisch"
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:17
 msgid "Field"
-msgstr ""
+msgstr "Feld"
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:18
 msgid "Field which contains the value(s) to extract"
-msgstr ""
+msgstr "Feld, das den/die zu extrahierende(n) Wert(e) enthält"
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:19
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:22
 msgid "yes"
-msgstr ""
+msgstr "ja"
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:20
 msgid "Regular expression"
-msgstr ""
+msgstr "Regulärer Ausdruck"
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:21
 msgid ""
@@ -72,10 +93,15 @@ msgid ""
 "expressions with an online debugger tool like `Regex101 "
 "<https://regex101.com/>`_."
 msgstr ""
+"Regulärer Ausdruck, um zu bestimmen, welcher Teil der Werte extrahiert wird."
+" Weitere Informationen darüber, wie man reguläre Ausdrücke schreibt, finden "
+"Sie hier: `<http://en.wikipedia.org/wiki/Regular_expression>`_. Reguläre "
+"Ausdrücke können mit einem Online-Debugger-Tool wie `Regex101 "
+"<https://regex101.com/>`_ getestet werden."
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:25
 msgid "Example"
-msgstr ""
+msgstr "Beispiel"
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:27
 msgid ""
@@ -84,6 +110,12 @@ msgid ""
 "processor can be used to create another column with the area code selected, "
 "instead of replacing the content like with the Replace via Regexp processor."
 msgstr ""
+"Verwenden wir das gleiche Beispiel wie beim RegExp-Prozessor (aus der "
+"französischen Postleitzahl 44100 soll nur die Ordnungszahl des Départements "
+"44 beibehalten werden): Der Prozessor zum Extrahieren des Textes kann "
+"verwendet werden, um eine weitere Spalte mit der ausgewählten Ordnungszahl "
+"zu erstellen, anstatt den Inhalt zu ersetzen, wie es der RegExp-Prozessor "
+"tut."
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:34
 msgid ""
@@ -95,6 +127,13 @@ msgid ""
 "The special expression ``?P<area>`` is just for specifying the new column "
 "name"
 msgstr ""
+"In diesem Beispiel verwenden wir das Muster \"(?P<area>[0-9]{2})[0-9]{3}\". "
+"\"[0-9]\" bezieht sich auf irgendeine Ziffer und \"{2}\" oder \"{3}\" "
+"bezieht sich auf die Anzahl der von uns gewünschten Ziffern. In diesem Fall "
+"wollen wir die ersten beiden Ziffern extrahieren, deshalb setzen wir sie in "
+"Klammern. Nach der Klammer setzen wir den Rest der Sequenz ein, die wir "
+"nicht extrahieren möchten, in diesem Fall die restlichen 3 Ziffern. Der "
+"Sonderausdruck \"?P<area>\" dient nur zur Angabe des neuen Spaltennamens."
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:43
 msgid ""
@@ -102,12 +141,17 @@ msgid ""
 "an arbitrary pattern expressed as a regular expression out of a string using"
 " sub matching."
 msgstr ""
+"Aus technischer Sicht kann dieser Prozessor verwendet werden, um ein "
+"beliebiges Muster zu extrahieren, das als regulärer Ausdruck aus einer "
+"Zeichenkette unter Verwendung von Sub-Matching ausgedrückt wird."
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:45
 msgid ""
 "The syntax of the sub-matching expression to specify is the following: "
 "``(?P<NAME>REGEXP)``. Where:"
 msgstr ""
+"Die Syntax des anzugebenen Sub-Matching-Ausdrucks lautet: \"(?P<NAME>REGEXP)\".\n"
+"Wobei:"
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:47
 msgid ""
@@ -116,29 +160,39 @@ msgid ""
 "underscores (special characters like accentuated letters or commas are not "
 "allowed)."
 msgstr ""
+"\"NAME\" steht für den Namen des neuen Feldes, das das extrahierte Ergebnis "
+"enthalten wird. Dieser Feldname darf nur Buchstaben, Zahlen und Unterstriche"
+" enthalten (Sonderzeichen wie akzentuierte Buchstaben oder Kommas sind nicht"
+" erlaubt)."
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:48
 msgid "``REXGEXP`` is the submatch expression"
-msgstr ""
+msgstr "\"REXGEXP\" ist der Submatch-Ausdruck"
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:50
 msgid ""
 "For example, let's assume that you want to extract a street name out of an "
 "address. That is, for the address"
 msgstr ""
+"Nehmen wir zum Beispiel an, dass Sie einen Straßennamen aus einer Adresse "
+"extrahieren möchten. Das heißt, aus der Adresse"
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:56
 msgid ""
 "you might want to extract the value ``Pennsylvania Ave NW`` in a field  "
 "``street_name``."
 msgstr ""
+"möchten Sie den Wert \"Pennsylvania Ave NW\" in ein Feld \"street_name\" "
+"extrahieren."
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:58
 msgid "You would have to write the following expression:"
-msgstr ""
+msgstr "Sie müssten den folgenden Ausdruck schreiben:"
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_text.rst:64
 msgid ""
 "And if you want to extract the street number in a field ``street_number``, "
 "simply extend the previous expression:"
 msgstr ""
+"Und wenn Sie die Straßennummer in ein Feld \"street_number\" extrahieren "
+"möchten, können Sie den vorherigen Ausdruck einfach verlängern:"
