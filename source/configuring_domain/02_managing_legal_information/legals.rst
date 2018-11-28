@@ -25,10 +25,14 @@ To specify the Terms and Conditions and the Privacy Policy of a portal, go to Co
 
 .. image:: images/cgu_1.png
 
+.. image:: images/cgu_2.png
+
+.. image:: images/cgu_3.png
+
 1. Choose one way of adding both the Terms & Conditions and the Privacy Policy on the domain. Click either:
 
-- "*Use links to pages hosted on a different website*", if both Terms & Conditions and Privacy Policy are already hosted on another website,
-- or, "*Write custom Terms and Conditions and Privacy Policy*", to directly write or paste the conditions of use on the OpenDataSoft platform.
+- "*Use links to pages hosted on a different website*", if both Terms & Conditions and Privacy Policy are already hosted on another website (if this option is chosen, follow the section **A** of step 3),
+- or, "*Write custom Terms and Conditions and Privacy Policy*", to directly write or paste the conditions of use on the OpenDataSoft platform (if this option is chosen, follow the section **B** of step 3).
 
 2. If the domain is available in more than one language: choose whether to display the conditions of use in only one language or to make them available in several languages.
 
@@ -40,19 +44,19 @@ To specify the Terms and Conditions and the Privacy Policy of a portal, go to Co
 
    If the "*Use the same texts for all languages*" option is left unticked, step 3 will have to be repeated until each language has both its Terms & Conditions and Privacy Policy specified. There must not be any |icon-attention| left.
 
-.. image:: images/cgu_2.png
 
-3.A. To link already hosted Terms & Conditions and Privacy Policy to the platform:
+3. Depending on the option chosen in step 1, follow the procedure of section A or B.
 
-a. In the first textbox, paste the link leading to the Terms & Conditions.
-b. In the second textbox, paste the link leading to the Privacy Policy.
+**A**. To link already hosted Terms & Conditions and Privacy Policy to the platform:
 
-.. image:: images/cgu_3.png
+   a. In the first textbox, paste the link leading to the Terms & Conditions.
+   b. In the second textbox, paste the link leading to the Privacy Policy.
 
-3.B. To write or paste the Terms & Conditions and Privacy Policy directly on the platform:
 
-a. In the textbox of the Terms and Conditions tab, write or paste the Terms and Conditions.
-b. In the textbox of the Privacy Policy tab, write or paste the Privacy Policy.
+**B**. To write or paste the Terms & Conditions and Privacy Policy directly on the platform:
+
+   a. In the textbox of the Terms and Conditions tab, write or paste the Terms and Conditions.
+   b. In the textbox of the Privacy Policy tab, write or paste the Privacy Policy.
 
 .. admonition:: Note
    :class: note
