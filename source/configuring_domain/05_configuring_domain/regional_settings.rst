@@ -6,7 +6,7 @@ Domain timezone
 
 .. image:: images/regional_settings.png
 
-Notification emails (reports and alerts) are sent according to the timezone of the domain. By default, the timezone of all OpenDataSoft domains is UTC.
+The time of the events reported in notification emails (reports and alerts) is based on the domain timezone. By default, the timezone of all OpenDataSoft domains is UTC.
 
 To change the timezone of a domain, go to Configuration > Regional settings. In this subsection of the back office is displayed the Domain timezone configuration.
 
