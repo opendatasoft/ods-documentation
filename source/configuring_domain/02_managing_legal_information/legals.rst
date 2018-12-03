@@ -36,7 +36,7 @@ To specify the Terms and Conditions and the Privacy Policy of a portal, go to Co
 
 2. If the domain is available in more than one language: choose whether to display the conditions of use in only one language or to make them available in several languages.
 
-- Tick the "*Use the same texts for all languages*" box to use the same documents for all available languages (e.g. if the Terms & Conditions and Privacy Policy are in English, no matter the language selected by the user on the portal, the conditions of use will be displayed in English).
+- Tick the "*Use the same texts for all languages*" box to use the same documents for all available languages (i.e. if the Terms & Conditions and Privacy Policy are only written and available in the language of the portal country, e.g. English, no matter the language selected by the user on the portal, the conditions of use will be displayed in English).
 - Untick the "*Use the same texts for all languages*" box to specify different documents depending on the language. In that case, all available languages are displayed in the form of clickable grey boxes containing the code of each available language. The language codes are preceded by |icon-attention| if all documents have not been specified.
 
 .. admonition:: Important
