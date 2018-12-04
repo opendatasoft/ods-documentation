@@ -2,22 +2,22 @@
 # Copyright (C) 2018, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
-# traducteur_DE1 <datawords.translator.de1@gmail.com>, 2018
 # traducteur_DE2 <datawords.translator.de2@gmail.com>, 2018
 # Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2018
 # Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2018
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2018
-#
+# traducteur_DE1 <datawords.translator.de1@gmail.com>, 2018
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-09 11:35+0100\n"
+"POT-Creation-Date: 2018-11-23 17:25+0100\n"
 "PO-Revision-Date: 2018-06-27 09:11+0000\n"
-"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2018\n"
+"Last-Translator: traducteur_DE1 <datawords.translator.de1@gmail.com>, 2018\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -193,6 +193,117 @@ msgid ""
 msgstr ""
 "Die optionale **Spalte CSV-Schema** (hier: ``schema_file``) enthält die "
 "Schema-Datei für jede Zeile."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:54
+msgid ""
+"Every other column is a metadata (see table below for the complete list of "
+"accepted column names). Note: use double quotes at the beginning and end of "
+"lists like ``keywords``, where you have to use semicolons to separate words "
+"(e.g ``\"keyword1;keyword2\"``)."
+msgstr ""
+"Alle anderen Spalten sind für Metadaten (siehe untere Tabelle für eine "
+"komplette Liste akzeptierter Spaltennamen). Hinweis: verwenden Sie "
+"Anführungszeichen zu Beginn und am Ende der Listen wie etwa "
+"``Schlüsselwörter``, die durch Semikolons getrennt werden müssen `(z. B. "
+"`\"Schlüsselwort1;Schlüsselwort2\"``)."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:57
+msgid "Accepted metadata columns"
+msgstr "Akzeptierte Metadatenspalten"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:62
+msgid "Template"
+msgstr "Vorlage"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:63
+msgid "Column name"
+msgstr "Spaltenname"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:64
+msgid "Standard"
+msgstr "Standard"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:65
+msgid ""
+"``title``, ``description``, ``theme``, ``keyword``, ``license``, "
+"``language``, ``timezone``, ``modified``, ``geographic_area_mode``, "
+"``geographic_area``, ``publisher``, ``references``, ``attributions``, "
+"``oauth_scope``"
+msgstr ""
+"``Titel``, ``Beschreibung``, ``Thema``, ``Schlüsselwort``, `Lizenz``, "
+"``Sprache``, ``Zeitzone``, ``geändert``, ``Modus_geographischer_Bereich``, "
+"``geographischer_Bereich``, ``Veröffentlicher``, `Referenzen``, "
+"``Zuordnungen``, ``oauth_Bereich``"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:66
+msgid "Custom"
+msgstr "Benutzerdefiniert"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:67
+msgid "``custom.<metadata_name>``"
+msgstr "``benutzerdefiniert.<metadata_name>``"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:68
+msgid "DCAT (if activated)"
+msgstr "DCAT (falls aktiviert)"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:69
+msgid ""
+"``dcat.created``, ``dcat.issued``, ``dcat.creator``, ``dcat.contributor``, "
+"``dcat.contact_name``, ``dcat.contact_email``, ``dcat.accrualperiodicity``, "
+"``dcat.spatial``, ``dcat.temporal``, ``dcat.granularity``, "
+"``dcat.dataquality``"
+msgstr ""
+"``dcat.created``, ``dcat.issued``, ``dcat.creator``, ``dcat.contributor``, "
+"``dcat.contact_name``, ``dcat.contact_email``, ``dcat.accrualperiodicity``, "
+"``dcat.spatial``, ``dcat.temporal``, ``dcat.granularity``, "
+"``dcat.dataquality``"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:70
+msgid "DCAT-AP for CH (if activated)"
+msgstr "DCAT-AP für CH (falls aktiviert)"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:71
+msgid "``dcat_ap_ch.domain``, ``dcat_ap_ch.rights``"
+msgstr "``dcat_ap_ch.domain``, ``dcat_ap_ch.rights``"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:72
+msgid "Inspire (if activated)"
+msgstr "Inspire (falls aktiviert)"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:73
+msgid ""
+"``inspire.theme``, ``inspire.type``, ``inspire.file_identifier``, "
+"``inspire.hierarchy_level``, ``inspire.hierarchy_level_name``, "
+"``inspire.spatial_resolution``, ``inspire.topologic_consistency``, "
+"``inspire.contact_individual_name``, ``inspire.contact_position``, "
+"``inspire.contact_address``, ``inspire.contact_email``, "
+"``inspire.identification_purpose``, ``inspire.extend_description``, "
+"``inspire.extend_bounding_box_westbound_longitude``, "
+"``inspire.extend_bounding_box_eastbound_longitude``, "
+"``inspire.extend_bounding_box_southbound_latitude``, "
+"``inspire.extend_bounding_box_northbound_latitude``"
+msgstr ""
+"``inspire.theme``, ``inspire.type``, ``inspire.file_identifier``, "
+"``inspire.hierarchy_level``, ``inspire.hierarchy_level_name``, "
+"``inspire.spatial_resolution``, ``inspire.topologic_consistency``, "
+"``inspire.contact_individual_name``, ``inspire.contact_position``, "
+"``inspire.contact_address``, ``inspire.contact_email``, "
+"``inspire.identification_purpose``, ``inspire.extend_description``, "
+"``inspire.extend_bounding_box_westbound_longitude``, "
+"``inspire.extend_bounding_box_eastbound_longitude``, "
+"``inspire.extend_bounding_box_southbound_latitude``, "
+"``inspire.extend_bounding_box_northbound_latitude``"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:74
+msgid "Semantic (if activated)"
+msgstr "Semantic (falls aktiviert)"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:75
+msgid ""
+"``semantic.rml_mapping``, ``semantic.classes``, ``semantic.properties``"
+msgstr ""
+"``semantic.rml_mapping``, ``semantic.classes``, ``semantic.properties``"
 
 #: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:79
 msgid "Resources"
@@ -412,102 +523,3 @@ msgid ""
 msgstr ""
 "Diese Spalte enthält einen Dateinamen mit dem Ressourcenschema "
 "(Spaltenbeschriftungen und -beschreibungen)."
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:54
-msgid ""
-"Every other column is a metadata (see table below for the complete list of "
-"accepted column names). Note: use double quotes at the beginning and end of "
-"lists like ``keywords``, where you have to use semicolons to separate words "
-"(e.g ``\"keyword1;keyword2\"``)."
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:57
-msgid "Accepted metadata columns"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:62
-msgid "Template"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:63
-msgid "Column name"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:64
-msgid "Standard"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:65
-msgid ""
-"``title``, ``description``, ``theme``, ``keyword``, ``license``, "
-"``language``, ``timezone``, ``modified``, ``geographic_area_mode``, "
-"``geographic_area``, ``publisher``, ``references``, ``attributions``, "
-"``oauth_scope``"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:66
-msgid "Custom"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:67
-msgid "``custom.<metadata_name>``"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:68
-msgid "DCAT (if activated)"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:69
-msgid ""
-"``dcat.created``, ``dcat.issued``, ``dcat.creator``, ``dcat.contributor``, "
-"``dcat.contact_name``, ``dcat.contact_email``, ``dcat.accrualperiodicity``, "
-"``dcat.spatial``, ``dcat.temporal``, ``dcat.granularity``, "
-"``dcat.dataquality``"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:70
-msgid "DCAT-AP for CH (if activated)"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:71
-msgid "``dcat_ap_ch.domain``, ``dcat_ap_ch.rights``"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:72
-msgid "Inspire (if activated)"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:73
-msgid ""
-"``inspire.theme``, ``inspire.type``, ``inspire.file_identifier``, "
-"``inspire.hierarchy_level``, ``inspire.hierarchy_level_name``, "
-"``inspire.spatial_resolution``, ``inspire.topologic_consistency``, "
-"``inspire.contact_individual_name``, ``inspire.contact_position``, "
-"``inspire.contact_address``, ``inspire.contact_email``, "
-"``inspire.identification_purpose``, ``inspire.extend_description``, "
-"``inspire.extend_bounding_box_westbound_longitude``, "
-"``inspire.extend_bounding_box_eastbound_longitude``, "
-"``inspire.extend_bounding_box_southbound_latitude``, "
-"``inspire.extend_bounding_box_northbound_latitude``"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:74
-msgid "Semantic (if activated)"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:75
-msgid ""
-"``semantic.rml_mapping``, ``semantic.classes``, ``semantic.properties``"
-msgstr ""
-
-#~ msgid ""
-#~ "Every other column is a metadata (e.g: ``title``, ``description``, "
-#~ "``theme``, ``keyword``, ``license``, ``language``, but there are other ones "
-#~ "you can add). Note: use double quotes at the beginning and end of lists like"
-#~ " ``keywords``, where you have to use semicolons to separate words."
-#~ msgstr ""
-#~ "Alle anderen Spalten sind für Metadaten (z. B: ``Titel``, ``Beschreibung``, "
-#~ "``Thema``, ``Stichwort``, ``Lizenz``, ``Sprache``, Sie können aber auch "
-#~ "andere hinzufügen). Hinweis: verwenden Sie Anführungszeichen zu Beginn und "
-#~ "am Ende der Listen wie etwa ``Stichworte``, die durch Semikolons getrennt "
-#~ "werden müssen."
