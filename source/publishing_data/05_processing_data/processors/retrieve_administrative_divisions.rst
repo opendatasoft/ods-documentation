@@ -31,8 +31,11 @@ To set the parameters of the Retrieve Administrative Divisions processor, follow
   * * Geo Point
     * Field which contains the geo point the processor will use to retrieve the administrative divisions
     * yes
+  * * Country
+    * The country on which we want to look for administrative divisions. Please note that the default 'World' country is a special choice: the processor will try to get back the divisions for the given level (next parameter) without being limited to any country, but that it is an hazardous operation since administrative divisions are not homogenized accross countries.
+    * yes
   * * Administrative Level
-    * Choose an administrative level, between 1 (largest scale) and 7 (smallest scale). See the **Referentials** section to know which administrative levels are available depending on the country where the geo point is ; and to know what the levels actually correspond to.
+    * Choose an administrative level, for the choosen country. If you chose the 'World' country, it is a choice between 1 (largest scale) and 7 (smallest scale). See the **Referentials** section to know which administrative levels are available depending on the country where the geo point is ; and to know what the levels actually correspond to.
     * yes
   * * Output Division Name
     * Field where the name of the chosen administrative division will be displayed. It can be an existing field chosen from the list, or a new field created for that purpose (in that case, choose **Input text** from the list and write the name of the new field in the text area below).
