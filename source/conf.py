@@ -310,3 +310,8 @@ html_context = {
     'languages': ['en', 'fr', 'es', 'de', 'nl'],
     'extra_css_styles': ['style.css'],
 }
+
+
+# smartquotes
+smartquotes = False # will be used if we switch to Sphinx 1.6
+html_use_smartypants = False # used for Sphinx 1.5
