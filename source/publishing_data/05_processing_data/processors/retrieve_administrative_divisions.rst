@@ -32,7 +32,7 @@ To set the parameters of the Retrieve Administrative Divisions processor, follow
     * Field which contains the geo point the processor will use to retrieve the administrative divisions
     * yes
   * * Country
-    * The country on which we want to look for administrative divisions. Please note that the default 'World' country is a special choice: the processor will try to get back the divisions for the given level (next parameter) without being limited to any country, which can be irrelevant in some cases since administrative divisions are not homogenized across countries.
+    * The country where the points are located. If the points are not confined to a single country, use the 'World' country.
     * yes
   * * Administrative Level
     * Choose an administrative level, for the chosen country. If you chose the 'World' country, it is a choice between 1 (largest scale) and 7 (smallest scale). See the **Referentials** section to know which administrative levels are available depending on the country where the geo point is ; and to know what the levels actually correspond to.
@@ -50,7 +50,9 @@ To set the parameters of the Retrieve Administrative Divisions processor, follow
 Referentials
 ------------
 
-When using the Retrieve Administrative Divisions processor, an administrative level (between 1 and 7) must be chosen. The available administrative levels are referenced in the table below depending on the country where the geo point is.
+When using the 'World' level, the administrative level choice (between 1 and 7) must be chosen. The administrative levels for each country currently available in the processor are listed below. Note that when a real country is chosen, the administrative level choice is an explicit label.
+
+Please also note that the default 'World' country is a special choice: the processor will try to get back the divisions for the given level (between 1 and 7) without being limited to any country, which can be irrelevant in some cases since administrative divisions are not homogenized across countries. Typically, the french "cantons" will be at level 4 whereas swiss "kantons" will be at level 2.
 
 .. list-table::
   :header-rows: 1
