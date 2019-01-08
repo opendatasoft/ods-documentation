@@ -64,6 +64,29 @@ To specify the Terms and Conditions and the Privacy Policy of a portal, go to Co
    Fill-in Terms & Conditions and Privacy Policy templates are available, based on the French law (in French and English languages) and the US law (in English language) only. Click the Use a template button under the textbox to use a template. The generated conditions of use can be edited in the textbox afterward.
 
 
+Licenses
+--------
+
+When configuring the metadata of a dataset in the Information tab, the license attached to that dataset must be defined, using a drop-down selection of predefined licenses. To define the licenses listed in the drop-down selection, go to Configuration > Legals. In this subsection of the back office menu, look for the "Licenses" area.
+
+1. Click the Add license button.
+2. In the Name column, write the name of the license. This name will be displayed in the drop-down selection.
+3. In the Labels column, write the label of the license. This is the label that will be displayed in the front office, in the Information tab of the published dataset. There must be one label per language available on the domain.
+4. In the URLs column, indicate the official website of the defined license, in order to find more information about that license. There must be one URL per language available on the domain.
+5. Click the Save button in the top right corner of the page.
+
+.. admonition:: Caution
+   :class: caution
+
+   If a license is modified or even deleted, these changes will not be automatically applied on the already published datasets. To update the license of these published datasets:
+
+   1. Go to the edition interface of the dataset.
+   2. Modify any information, metadata or configuration in order to be able to Save the dataset.
+   3. Refresh the page.
+   4. Go back to the license metadata configuration. Choose the new or updated license to attach to the dataset.
+   5. If needed, don't forget to correct what was modified in step 2.
+   6. Save & publish the dataset.
+
 
 
 
