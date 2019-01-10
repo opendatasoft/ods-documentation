@@ -75,18 +75,6 @@ When configuring the metadata of a dataset in the Information tab, the license a
 4. In the URLs column, indicate the official website of the defined license, in order to find more information about that license. There must be one URL per language available on the domain.
 5. Click the Save button in the top right corner of the page.
 
-.. admonition:: Caution
-   :class: caution
-
-   If a license is modified or even deleted, these changes will not be automatically applied on the already published datasets. To update the license of these published datasets:
-
-   1. Go to the edition interface of the dataset.
-   2. Modify any information, metadata or configuration in order to be able to Save the dataset.
-   3. Refresh the page.
-   4. Go back to the license metadata configuration. Choose the new or updated license to attach to the dataset.
-   5. If needed, don't forget to correct what was modified in step 2.
-   6. Save & publish the dataset.
-
 
 
 
