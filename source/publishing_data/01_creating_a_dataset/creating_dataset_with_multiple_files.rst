@@ -47,7 +47,7 @@ This method consists in adding several files at the same time via an archive fil
 Sourcing multiple files stored on an FTP server
 -----------------------------------------------
 
-This method consists in connecting the platform to the directory of an FTP server (e.g. ftp://example.org/my_dir/) to retrieve all the files contained in this directory.
+This method consists in connecting the platform to the directory of an FTP server to retrieve all the files contained in this directory.
 
 .. admonition:: Caution
    :class: caution
@@ -56,7 +56,12 @@ This method consists in connecting the platform to the directory of an FTP serve
 
 1. In Catalog > Datasets, click on the **New dataset** button.
 2. Click on the **Add a source** button.
-3. In the **Enter a URL** box, write the URL of the FTP server where the files are stored.
+3. In the **Enter a URL** box, write the URL of the FTP server where the files are stored. The URL should contain both the login and password to the FTP (e.g. ftp://login:password@example.org/my_directory/my_dataset).
+
+.. admonition:: Note
+   :class: note
+
+   FTPS servers are also supported for this method (e.g. ftps://login:password@example.org/my_directory/my_dataset).
 
 .. admonition:: Important
    :class: important
