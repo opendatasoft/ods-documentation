@@ -1,31 +1,45 @@
 Visualizing data
 ================
 
-OpenDataSoft features an in-depth visualization experience for you to explore a dataset in a rich and interactive manner.
+One of OpenDataSoft greatest strong points is the possibility of exploring a dataset through a variety of visualizations.
 
-The dataset information page displays the dataset metadata like its title, description, source, keywords, license, etc.
+Up to 6 different visualizations are available, which completely depend on what kind of data the dataset contains. Among these 6 visualizations, there are 5 standard visualizations:
 
-Depending on your dataset's columns, you will be able to explore it as a classic table, to project it on a map, or to display it thanks to various charts and widgets. You will also find all the images present in the dataset.
+- the Table view, to visualize data in a table
+- the Map view, to visualize data on a map
+- the Analyze view, to visualize and analyze data through a chart
+- the Images view, to visualize data through images
+- the Calendar view, to visualize data in a calendar
 
-Finally, you will be able to export it in several file formats (depending on the nature of your data) and to consume it through an API.
+The 6th visualization is called the "Custom view". It is completely optionnal and entirely custom. It means that even the label of the tab is chosen by the portal administrators, and they can differ from one dataset to another, even if they are on the same portal.
 
-Displaying data on a map
-------------------------
 
-This can be achieved by switching to the **Map** tab in the dataset explore page. For that tab to be available, your dataset must contain a geopoint or a geoshape field.
+Visualizing data in a table
+---------------------------
 
-.. ifconfig:: language == 'en'
+The Table view is accessible from the Table tab.
 
-    .. image:: images/explore__map--en.png
-       :alt: Explore Map
+It displays a table containing all available fields from the dataset.
 
-.. ifconfig:: language == 'fr'
+- In the header, the bold labels are the labels of the fields.
+- In the table, each row represents a record. Each record contains several values.
 
-    .. image:: images/explore__map--fr.png
-       :alt: Explorer la carte
+.. admonition:: Note
+   :class: note
 
-Displaying data on a chart
---------------------------
+   Hover the field labels to display the description of the field.
+
+The Table view can be available for any dataset, no matter what can of data it contains.
+
+Visualizing data on a map
+-------------------------
+
+The Map view is accessible from the Map tab.
+
+It displays a map, on which there are map markers indicating the geographical location of a record from the dataset.
+
+Visualizing data through a chart
+--------------------------------
 
 This can be achieved by switching to the **Analyze** tab in the dataset explore page. For that tab to be available, your dataset must contain facets or date/time fields.
 
@@ -38,6 +52,19 @@ This can be achieved by switching to the **Analyze** tab in the dataset explore 
 
     .. image:: images/explore__chart--fr.png
        :alt: Explorer le graphique
+
+Visualizing data through images
+-------------------------------
+
+
+
+Visualizing data in a calendar
+------------------------------
+
+
+
+
+
 
 Reusing a visualization
 -----------------------
