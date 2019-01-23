@@ -152,8 +152,6 @@ It is possible to download the catalog in the following formats:
 Exploring a dataset from the catalog
 ------------------------------------
 
-Once the right dataset has been found in the catalog, through the searching and filtering options or by scrolling down, it should be time to explore this dataset to see the data and their visualizations.
-
 .. image:: images/catalog_card.png
    :alt: Catalog card of a dataset from a catalog
 
@@ -176,12 +174,7 @@ From the catalog interface, only the catalog card of the dataset is displayed. T
 
    Note also that the catalog cards can be completely customized by the portal administrators.
 
-To see more of the dataset, either click the catalog card or any of the links to directly access a precise visualization or tab. From the interface dedicated to the dataset, it is possible to:
-
-- visualize the data,
-- search the data,
-- share and reuse the data,
-- react and subscribe to the dataset.
+To see more of the dataset, either click the catalog card or any of the quick links (see :doc:`Looking up a dataset <source/02_looking_up_a_dataset/looking_up_dataset>` for more information about dataset information & visualizations).
 
 
 

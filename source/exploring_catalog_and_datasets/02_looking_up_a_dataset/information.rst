@@ -1,7 +1,7 @@
 Checking dataset information
 ============================
 
-For every dataset published on an OpenDataSoft portal, when looked up from the front office, there is an Information tab. This tab is often the default tab on which to land after clicking on a dataset card from the catalog. It also precedes all other visualization, export & API tabs.
+The Information tab gives access to all kind of information about the dataset. This tab is often the default tab on which to land after clicking on a dataset card from the catalog. It also precedes all other visualization, export & API tabs.
 
 The Information tab contains:
 

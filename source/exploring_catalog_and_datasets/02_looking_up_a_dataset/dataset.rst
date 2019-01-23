@@ -160,38 +160,38 @@ You can choose between the **table tab** and the **information tab** as the defa
 
 
 
-.. |icon-polygon| image:: source/creating_maps_charts/01_creating_avanced_maps/images/icon-polygon.png
+.. |icon-polygon| image:: /source/creating_maps_charts/01_creating_advanced_maps/images/icon-polygon.png
     :width: 16px
     :height: 16px
 
-.. |icon-circle| image:: source/creating_maps_charts/01_creating_avanced_maps/images/icon-circle.png
+.. |icon-circle| image:: /source/creating_maps_charts/01_creating_avanced_maps/images/icon-circle.png
     :width: 14px
     :height: 14px
 
-.. |icon-square| image:: source/creating_maps_charts/01_creating_avanced_maps/images/icon-square.png
+.. |icon-square| image:: /source/creating_maps_charts/01_creating_avanced_maps/images/icon-square.png
     :width: 14px
     :height: 14px
 
-.. |icon-edit| image:: source/creating_maps_charts/01_creating_avanced_maps/images/icon-edit.png
+.. |icon-edit| image:: /source/creating_maps_charts/01_creating_avanced_maps/images/icon-edit.png
     :width: 16px
     :height: 16px
 
-.. |icon-trash-map| image:: source/creating_maps_charts/01_creating_avanced_maps/images/icon-trash-map.png
+.. |icon-trash-map| image:: /source/creating_maps_charts/01_creating_avanced_maps/images/icon-trash-map.png
     :width: 15px
     :height: 17px
 
-.. |icon-fullscreen| image:: source/creating_maps_charts/01_creating_avanced_maps/images/icon-fullscreen.png
+.. |icon-fullscreen| image:: /source/creating_maps_charts/01_creating_avanced_maps/images/icon-fullscreen.png
     :width: 20px
     :height: 20px
 
-.. |icon-zoom-in| image:: source/creating_maps_charts/01_creating_avanced_maps/images/icon-zoom-in.png
+.. |icon-zoom-in| image:: /source/creating_maps_charts/01_creating_avanced_maps/images/icon-zoom-in.png
     :width: 14px
     :height: 14px
 
-.. |icon-zoom-out| image:: source/creating_maps_charts/01_creating_avanced_maps/images/icon-zoom-out.png
+.. |icon-zoom-out| image:: /source/creating_maps_charts/01_creating_avanced_maps/images/icon-zoom-out.png
     :width: 13px
     :height: 12px
 
-.. |icon-localize| image:: source/creating_maps_charts/01_creating_avanced_maps/images/icon-localize.png
+.. |icon-localize| image:: /source/creating_maps_charts/01_creating_avanced_maps/images/icon-localize.png
     :width: 16px
     :height: 16px
