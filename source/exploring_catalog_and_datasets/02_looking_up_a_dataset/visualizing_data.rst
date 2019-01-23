@@ -58,7 +58,7 @@ The map contains the a variety of buttons that allow to navigate and interact wi
 .. admonition:: Caution
    :class: caution
 
-   Maps displayed in a Map view cannot be customized, except from choosing another basemap when possible. To be able to customize a map, or cross data from different datasets, as well as to save a created map, use the :doc:`Map Builder </source/creating_maps_charts/01_creating_advanced_maps/overview-of-map-builder>`.
+   Maps displayed in a Map view cannot be customized, except from choosing another basemap when possible. To be able to customize a map, or cross data from different datasets, as well as to save a created map, use the :doc:`Map Builder <../../creating_maps_charts/01_creating_advanced_maps/overview-of-map-builder>`.
 
 Visualizing data through a chart
 --------------------------------
@@ -91,7 +91,7 @@ Above the chart are dislayed a variety of buttons and options to configure the c
 .. admonition:: Caution
    :class: caution
 
-   Charts displayed in an analyze view can be modified. However, these modifications cannot be saved. To be able to save a created chart, as well as to cross data from different datasets, use the :doc:`Chart Builder </source/creating_maps_charts/02_creating_advanced_charts/analyze>`.
+   Charts displayed in an analyze view can be modified. However, these modifications cannot be saved. To be able to save a created chart, as well as to cross data from different datasets, use the :doc:`Chart Builder <../../creating_maps_charts/02_creating_advanced_charts/analyze>`.
 
 Visualizing data through images
 -------------------------------
@@ -160,38 +160,38 @@ You can choose between the **table tab** and the **information tab** as the defa
 
 
 
-.. |icon-polygon| image:: /source/creating_maps_charts/01_creating_advanced_maps/images/icon-polygon.png
+.. |icon-polygon| image:: /creating_maps_charts/01_creating_advanced_maps/images/icon-polygon.png
     :width: 16px
     :height: 16px
 
-.. |icon-circle| image:: /source/creating_maps_charts/01_creating_avanced_maps/images/icon-circle.png
+.. |icon-circle| image:: /creating_maps_charts/01_creating_advanced_maps/images/icon-circle.png
     :width: 14px
     :height: 14px
 
-.. |icon-square| image:: /source/creating_maps_charts/01_creating_avanced_maps/images/icon-square.png
+.. |icon-square| image:: /creating_maps_charts/01_creating_advanced_maps/images/icon-square.png
     :width: 14px
     :height: 14px
 
-.. |icon-edit| image:: /source/creating_maps_charts/01_creating_avanced_maps/images/icon-edit.png
+.. |icon-edit| image:: /creating_maps_charts/01_creating_advanced_maps/images/icon-edit.png
     :width: 16px
     :height: 16px
 
-.. |icon-trash-map| image:: /source/creating_maps_charts/01_creating_avanced_maps/images/icon-trash-map.png
+.. |icon-trash-map| image:: /creating_maps_charts/01_creating_advanced_maps/images/icon-trash-map.png
     :width: 15px
     :height: 17px
 
-.. |icon-fullscreen| image:: /source/creating_maps_charts/01_creating_avanced_maps/images/icon-fullscreen.png
+.. |icon-fullscreen| image:: /creating_maps_charts/01_creating_advanced_maps/images/icon-fullscreen.png
     :width: 20px
     :height: 20px
 
-.. |icon-zoom-in| image:: /source/creating_maps_charts/01_creating_avanced_maps/images/icon-zoom-in.png
+.. |icon-zoom-in| image:: /creating_maps_charts/01_creating_advanced_maps/images/icon-zoom-in.png
     :width: 14px
     :height: 14px
 
-.. |icon-zoom-out| image:: /source/creating_maps_charts/01_creating_avanced_maps/images/icon-zoom-out.png
+.. |icon-zoom-out| image:: /creating_maps_charts/01_creating_advanced_maps/images/icon-zoom-out.png
     :width: 13px
     :height: 12px
 
-.. |icon-localize| image:: /source/creating_maps_charts/01_creating_avanced_maps/images/icon-localize.png
+.. |icon-localize| image:: /creating_maps_charts/01_creating_advanced_maps/images/icon-localize.png
     :width: 16px
     :height: 16px

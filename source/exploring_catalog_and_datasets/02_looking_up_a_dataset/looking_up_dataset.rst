@@ -6,5 +6,5 @@ Once the right dataset has been found in the catalog, through the searching and 
 .. toctree::
    :maxdepth: 1
 
-   information
-   dataset
+   checking_dataset_information
+   visualizing_data

@@ -174,7 +174,7 @@ From the catalog interface, only the catalog card of the dataset is displayed. T
 
    Note also that the catalog cards can be completely customized by the portal administrators.
 
-To see more of the dataset, either click the catalog card or any of the quick links (see :doc:`Looking up a dataset <source/02_looking_up_a_dataset/looking_up_dataset>` for more information about dataset information & visualizations).
+To see more of the dataset, either click the catalog card or any of the quick links (see :doc:`Looking up a dataset <../02_looking_up_a_dataset/looking_up_dataset>` for more information about dataset information & visualizations).
 
 
 
