@@ -2,21 +2,21 @@
 # Copyright (C) 2018, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
-# traducteur_DE1 <datawords.translator.de1@gmail.com>, 2018
 # traducteur_DE2 <datawords.translator.de2@gmail.com>, 2018
 # Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2018
 # Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2018
-#
+# traducteur_DE1 <datawords.translator.de1@gmail.com>, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 12:23+0100\n"
+"POT-Creation-Date: 2018-12-20 14:33+0100\n"
 "PO-Revision-Date: 2018-06-27 09:12+0000\n"
-"Last-Translator: Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2018\n"
+"Last-Translator: traducteur_DE1 <datawords.translator.de1@gmail.com>, 2019\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -133,9 +133,48 @@ msgstr ""
 msgid "yes"
 msgstr "ja"
 
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:34
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:72
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:80
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:88
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:96
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:104
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:112
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:120
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:128
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:136
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:144
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:152
+msgid "Country"
+msgstr "Land"
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:35
+msgid ""
+"Choose the country where the geo points are located. If the geo points are "
+"not confined into a single country, use the 'World' country."
+msgstr ""
+"Wählen Sie das Land, in dem sich die Geopunkte befinden. Wenn die Geopunkte "
+"nicht auf ein einziges Land beschränkt sind, verwenden Sie die Option "
+"\"Welt\"."
+
 #: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:37
 msgid "Administrative Level"
 msgstr "Verwaltungsebene"
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:38
+msgid ""
+"Choose an administrative level of the chosen country. If you chose the "
+"'World' country, it is a choice between 1 (largest scale) and 7 (smallest "
+"scale). See the **Referentials** section to know which administrative levels"
+" are available depending on the country where the geo point is ; and to know"
+" what the levels actually correspond to."
+msgstr ""
+"Wählen Sie eine Verwaltungsebene des ausgewählten Landes. Wenn Sie die "
+"Option \"Welt\" ausgewählt haben, haben Sie die Wahl zwischen 1 (größter "
+"Maßstab) und 7 (kleinster Maßstab). Im Bereich **Bezugssystem** erfahren "
+"Sie, welche Verwaltungsebenen in dem Land verfügbar sind, in dem sich der "
+"Geopunkt befindet. Außerdem erfahren Sie hier die tatsächliche Entsprechung "
+"dieser Ebenen."
 
 #: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:40
 msgid "Output Division Name"
@@ -192,6 +231,39 @@ msgstr ""
 msgid "Referentials"
 msgstr "Bezugssysteme"
 
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:53
+msgid ""
+"When a real country is chosen, the administrative levels corresponding to "
+"that country are explicitely written. However, when using the 'World' "
+"country, an administrative level between 1 and 7 must be chosen. Please "
+"refer to the table below to have an idea of what the administrative levels "
+"are for each country currently available in the processor."
+msgstr ""
+"Wird ein echtes Land ausgewählt, werden die Verwaltungsebenen, die diesem "
+"Land entsprechen, ausdrücklich festgelegt. Wenn Sie die Option \"Welt\" "
+"ausgewählt haben, muss eine Verwaltungsebene zwischen 1 und 7 ausgewählt "
+"werden. Die verfügbaren Verwaltungsebenen des Prozessors sind in der unteren"
+" Tabelle aufgelistet."
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:55
+msgid "Note"
+msgstr "Hinweis"
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:58
+msgid ""
+"When using the 'World' country, the processor will try to retrieve the "
+"divisions corresponding to the chosen level (between 1 and 7). The results "
+"can however be irrelevant in some cases since administrative divisions are "
+"not homogenized across countries (e.g. the french \"cantons\" will be at "
+"level 4 whereas swiss \"kantons\" will be at level 2)."
+msgstr ""
+"Wenn Sie die Option \"Welt\" auswählen, versucht der Prozessor, die "
+"Verwaltungseinheiten entsprechend der ausgewählten Ebene (zwischen 1 und 7) "
+"abzurufen. Die Ergebnisse können jedoch in einigen Fällen irrelevant sein, "
+"da die Verwaltungseinheiten nicht länderübergreifend einheitlich sind (z.B. "
+"befinden sich die französischen \"Kantone\" auf Stufe 4 und die "
+"schweizerischen \"Kantone\" auf Stufe 2)."
+
 #: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:64
 msgid "1"
 msgstr "1"
@@ -223,21 +295,6 @@ msgstr "7"
 #: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:71
 msgid "FR"
 msgstr "FR"
-
-#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:34
-#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:72
-#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:80
-#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:88
-#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:96
-#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:104
-#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:112
-#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:120
-#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:128
-#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:136
-#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:144
-#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:152
-msgid "Country"
-msgstr "Land"
 
 #: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:73
 msgid "Nouvelles régions"
@@ -387,69 +444,3 @@ msgstr "Provincias"
 #: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:157
 msgid "Municipios"
 msgstr "Municipios"
-
-#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:35
-msgid ""
-"Choose the country where the geo points are located. If the geo points are "
-"not confined into a single country, use the 'World' country."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:38
-#, fuzzy
-msgid ""
-"Choose an administrative level of the chosen country. If you chose the "
-"'World' country, it is a choice between 1 (largest scale) and 7 (smallest "
-"scale). See the **Referentials** section to know which administrative levels"
-" are available depending on the country where the geo point is ; and to know"
-" what the levels actually correspond to."
-msgstr ""
-"Wählen Sie eine Verwaltungsebene zwischen 1 (größter Maßstab) und 7 "
-"(kleinster Maßstab). Im Bereich **Bezugssystem** erfahren Sie, welche "
-"Verwaltungsebenen in dem Land verfügbar sind, in dem sich der Geopunkt "
-"befindet. Außerdem erfahren Sie hier die tatsächliche Entsprechung dieser "
-"Ebenen."
-
-#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:53
-msgid ""
-"When a real country is chosen, the administrative levels corresponding to "
-"that country are explicitely written. However, when using the 'World' "
-"country, an administrative level between 1 and 7 must be chosen. Please "
-"refer to the table below to have an idea of what the administrative levels "
-"are for each country currently available in the processor."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:55
-msgid "Note"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:58
-msgid ""
-"When using the 'World' country, the processor will try to retrieve the "
-"divisions corresponding to the chosen level (between 1 and 7). The results "
-"can however be irrelevant in some cases since administrative divisions are "
-"not homogenized across countries (e.g. the french \"cantons\" will be at "
-"level 4 whereas swiss \"kantons\" will be at level 2)."
-msgstr ""
-
-#~ msgid ""
-#~ "Choose an administrative level, between 1 (largest scale) and 7 (smallest "
-#~ "scale). See the **Referentials** section to know which administrative levels"
-#~ " are available depending on the country where the geo point is ; and to know"
-#~ " what the levels actually correspond to."
-#~ msgstr ""
-#~ "Wählen Sie eine Verwaltungsebene zwischen 1 (größter Maßstab) und 7 "
-#~ "(kleinster Maßstab). Im Bereich **Bezugssystem** erfahren Sie, welche "
-#~ "Verwaltungsebenen in dem Land verfügbar sind, in dem sich der Geopunkt "
-#~ "befindet. Außerdem erfahren Sie hier die tatsächliche Entsprechung dieser "
-#~ "Ebenen."
-
-#~ msgid ""
-#~ "When using the Retrieve Administrative Divisions processor, an "
-#~ "administrative level (between 1 and 7) must be chosen. The available "
-#~ "administrative levels are referenced in the table below depending on the "
-#~ "country where the geo point is."
-#~ msgstr ""
-#~ "Bei der Nutzung des Prozessors zum Abrufen von Verwaltungseinheiten muss "
-#~ "eine Verwaltungsebene zwischen 1 und 7 ausgewählt werden. Die verfügbaren "
-#~ "Verwaltungsebenen sind in der unteren Tabelle aufgelistet (je nachdem, in "
-#~ "welchem Land sich der Geopunkt befindet)."
