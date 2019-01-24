@@ -1,0 +1,62 @@
+Discovering & submitting data reuses
+====================================
+
+.. admonition:: Important
+   :class: important
+
+   Since reuses are an optional feature, they are not activated on every OpenDataSoft portal. The activation of reuses entirely depends on the portal administrators.
+
+intro intro intro
+
+
+
+
+Discovering existing reuses
+---------------------------
+
+[screenshot]
+
+Existing reuses of a dataset, that have been approved by the portal administators, are listed in the Reuses area of the Information tab. In the list of reuses, each reuse is displayed in a rectangle containing several information about that reuse:
+
+- Image preview of the reuse,
+- Title of the reuse,
+- Description of the reuse,
+- Name of the author,
+- Date when the reuse was added.
+
+To discover a chosen dataset reuse, click on its rectangle.
+
+
+Submitting own reuses
+---------------------
+
+[screenshot]
+
+For the data reuses to be displayed in the Reuses area of the Information tab of a dataset, the users who make these reuses must submit them to the portal administrators.
+
+.. admonition:: Important
+   :class: important
+
+   On some OpenDataSoft portals, anonymous users are allowed to submit their reuses, but on other portals, only authenticated users are allowed to do so. This entirely depends on the portal administrators and how they choose to manage the reuse feature.
+
+To submit a reuse, follow the procedure below:
+
+1. In the Reuses area of the Information tab of the dataset used for the reuse, click on "Submit a reuse".
+2. Fill in the form:
+
+- Last name *(only for anonymous users)*
+- First name *(only for anonymous users)*
+- Email *(only for anonymous users)*
+- Reuse title: give a title to the reuse
+- Description: describe what kind of reuse it is, what is is about etc.
+- URL: indicate the URL where to find the reuse
+- Thumbnail: upload a image preview of the reuse
+
+3. Click on the Submit button.
+
+Once submitted, the reuse is sent to the portal administrators, who will discover it and should approve it. Once approved, the displayed is added to the reuses list of the Information tab.
+
+.. admonition:: Note
+   :class: note
+
+   The portal administrators have the possibility to modify the title, description, URL and thumbnail of the reuse. They cannot, however, modify either the last name or the first name. 
