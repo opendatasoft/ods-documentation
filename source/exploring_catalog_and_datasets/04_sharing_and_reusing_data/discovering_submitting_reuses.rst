@@ -6,9 +6,7 @@ Discovering & submitting data reuses
 
    Since reuses are an optional feature, they are not activated on every OpenDataSoft portal. The activation of reuses entirely depends on the portal administrators.
 
-intro intro intro
-
-
+Data reuses are creations based on data from datasets published on an open data portal. They can take many forms: from the map created with the Map Builder (or a chart with the Chart Builder), and the website, to the smartphone application, there are many possibilities of data reuses. As a user of an OpenDataSoft portal, it is possible to either discover the reuses that others have made, or to submit one's very own reuse for it to be displayed on the related portal.
 
 
 Discovering existing reuses
@@ -59,4 +57,4 @@ Once submitted, the reuse is sent to the portal administrators, who will discove
 .. admonition:: Note
    :class: note
 
-   The portal administrators have the possibility to modify the title, description, URL and thumbnail of the reuse. They cannot, however, modify either the last name or the first name. 
+   The portal administrators have the possibility to modify the title, description, URL and thumbnail of the reuse. They cannot, however, modify either the last name or the first name.
