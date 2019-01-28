@@ -123,43 +123,6 @@ Above the calendar are displayed a variety of buttons to navigate the calendar:
 
 
 
-
-Reusing a visualization
------------------------
-
-Any visualization built with OpenDataSoft can easily be reused as is.
-
-.. image:: images/explore_embed.jpg
-   :alt: Embed
-
-At the bottom of the *Map* and *Chart* tabs, there is a widget that allows you to share a visualization you made:
-
-* as a **Share** link, to share a direct access to the visualization,
-* as an **Embed** code, to embed the visualization in an iframe on a remote web site,
-* as a **Widget** code, to integrate the visualization as a widget in a content page using the OpenDataSoft ods-widgets framework.
-
-**Listing reuses**
-
-You can list reuses on the dataset page, to help promote both the reuse itself and your data. The reuses will be listed at the bottom of the information tab on each dataset page.
-You can learn more about this feature in the section :doc:`Encouraging reuses </configuring_domain/04_sharing_reusing_communicating/engaging>`.
-
-.. image:: images/explore__reuse--fr.png
-
-Filtering the records
----------------------
-
-On the left hand side of the dataset page, there is a filtering toolbar very similar to what is described in the paragraph :ref:`filtering-catalog`.
-
-
-Default tab
------------
-
-You can choose between the **table tab** and the **information tab** as the default tab on which a dataset is opened. See :doc:`Configure catalog & dataset pages </configuring_domain/05_configuring_domain/tabs>` for more informations.
-
-
-
-
-
 .. |icon-polygon| image:: /creating_maps_charts/01_creating_advanced_maps/images/icon-polygon.png
     :width: 16px
     :height: 16px
