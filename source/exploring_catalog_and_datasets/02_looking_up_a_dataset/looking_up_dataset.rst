@@ -8,3 +8,4 @@ Once the right dataset has been found in the catalog, through the searching and 
 
    checking_dataset_information
    visualizing_data
+   filtering_dataset
