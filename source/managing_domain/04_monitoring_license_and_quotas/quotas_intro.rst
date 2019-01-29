@@ -1,7 +1,7 @@
 Quotas
 ======
 
-Go to the *Analytics > Quotas* page.
+Go to the *License > Quota usage* page.
 
 This is the page where you can monitor your quota usage for the on going period.
 
