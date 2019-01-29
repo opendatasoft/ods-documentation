@@ -101,7 +101,9 @@ England (GB)
   * * county2016
     * `Counties and Unitary Authorities in England <https://public.opendatasoft.com/explore/dataset/counties-and-unitary-authorities-december-2016-generalised-clipped-boundaries-in>`_
   * * region2016
-    * `Regions in England <https://public.opendatasoft.com/explore/dataset/regions-in-england-december-2016>`_
+    * `Regions in England 2016 <https://public.opendatasoft.com/explore/dataset/regions-in-england-december-2016>`_
+  * * region2017
+    * `Regions in England 2017 <https://public.opendatasoft.com/explore/dataset/regions-in-england-december-2017>`_
   * * ward2014
     * `Wards in England 2014 <https://public.opendatasoft.com/explore/dataset/wards-in-england-december-2014>`_
   * * ward2015
@@ -129,12 +131,20 @@ France
     * `Geofla® - Communes 2015 <https://public.opendatasoft.com/explore/dataset/geoflar-communes-2015>`_
   * * communes2016
     * `Geofla® Commune 2016 <https://public.opendatasoft.com/explore/dataset/geoflar-communes-2016>`_
+  * * communes2017
+    * `DB CARTO® Commune 2017 <https://public.opendatasoft.com/explore/dataset/admin-express-communes-2017>`_
+  * * communes2018
+    * `DB CARTO® Commune 2018 <https://public.opendatasoft.com/explore/dataset/admin-express-communes-2018>`_
   * * departements-simplifies2015
     * `Contours simplifiés des départements Français 2015 <https://public.opendatasoft.com/explore/dataset/contours-simplifies-des-departements-francais-2015>`_
   * * departements2015
     * `Geofla® - Départements 2015 <https://public.opendatasoft.com/explore/dataset/geoflar-departements-2015>`_
   * * epci2016
-    * `Etablissements Publics de Coopération Intercommunale (EPCI) <https://public.opendatasoft.com/explore/dataset/contours-epci>`_
+    * `Etablissements Publics de Coopération Intercommunale (EPCI) 2016 <https://public.opendatasoft.com/explore/dataset/contours-epci>`_
+  * * epci2017
+    * `Etablissements Publics de Coopération Intercommunale (EPCI) 2017 <https://public.opendatasoft.com/explore/dataset/admin-express-epci-2017>`_
+  * * epci2018
+    * `Etablissements Publics de Coopération Intercommunale (EPCI) 2018 <https://public.opendatasoft.com/explore/dataset/admin-express-epci-2018>`_
   * * iris-epci2016
     * `Contours IRIS 2016 avec EPCI <https://public.opendatasoft.com/explore/dataset/contours-iris-2016-epci>`_
   * * iris2014
@@ -224,13 +234,19 @@ Switzerland
   * * Repository
     * Source
   * * bezirke2017
-    * `swissBOUNDARIES3D - TLM BEZIRKSGEBIET <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm_bezirksgebiet>`_
+    * `swissBOUNDARIES3D - TLM BEZIRKSGEBIET 2017 <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm_bezirksgebiet>`_
+  * * bezirke2018
+    * `swissBOUNDARIES3D - TLM BEZIRKSGEBIET 2018 <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm-bezirksgebiet-2018>`_
   * * postleitzahl2017
     * `Amtliches Ortschaftenverzeichnis mit Postleitzahl und Perimeter <https://public.opendatasoft.com/explore/dataset/amtliches-ortschaftenverzeichnis-mit-postleitzahl-und-perimeter>`_
   * * gemeinde2017
-    * `swissBOUNDARIES3D - TLM HOHEITSGEBIET <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm_hoheitsgebiet>`_
+    * `swissBOUNDARIES3D - TLM HOHEITSGEBIET 2017 <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm_hoheitsgebiet>`_
+  * * gemeinde2018
+    * `swissBOUNDARIES3D - TLM HOHEITSGEBIET 2018 <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm-hoheitsgebiet-2018>`_
   * * kantone2017
-    * `swissBOUNDARIES3D - TLM_KANTONSGEBIET <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm_kantonsgebiet>`_
+    * `swissBOUNDARIES3D - TLM_KANTONSGEBIET 2017 <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm_kantonsgebiet>`_
+  * * kantone2018
+    * `swissBOUNDARIES3D - TLM_KANTONSGEBIET 2018 <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm_kantonsgebiet-2018>`_
 
 The USA
 ~~~~~~~
