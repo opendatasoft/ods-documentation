@@ -231,6 +231,18 @@ fallback to the english version of the image.
 If you need to annotate images (add circles, arrows, basic text), you can download Skitch
 (https://evernote.com/skitch/). It is free and very handy for these basic edits.
 
+### ODS elements
+
+```
+:ods-keycap:`Button`
+
+:ods-help-text:`Help text`
+
+:ods-page-title:`Section > Subsection`
+
+:ods-tab:`Custom`
+```
+
 ### Icons from FontAwesome
 To use an icon from FontAwesome, add a substitution between | (spaces are important)
 ```
