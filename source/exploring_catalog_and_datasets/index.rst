@@ -9,4 +9,4 @@ In this section are listed and documented all features related to the navigation
    01_navigating_the_catalog/catalog
    02_looking_up_a_dataset/looking_up_dataset
    03_searching_the_data/search
-   04_sharing_and_reusing_data/getting_involved
+   04_getting_involved/getting_involved

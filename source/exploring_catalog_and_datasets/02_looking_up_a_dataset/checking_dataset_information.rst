@@ -3,6 +3,9 @@ Checking dataset information
 
 The Information tab gives access to all kind of information about the dataset. This tab is often the default tab on which to land after clicking on a dataset card from the catalog. It also precedes all other visualization, export & API tabs.
 
+.. image:: images/information_tab.png
+   :alt: Information tab of a dataset
+
 The Information tab contains:
 
 - the metadata of the dataset, that have been filled up by the portal administrators

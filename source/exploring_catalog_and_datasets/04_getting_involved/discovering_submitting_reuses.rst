@@ -12,9 +12,12 @@ Data reuses are creations based on data from datasets published on an open data 
 Discovering existing reuses
 ---------------------------
 
-[screenshot]
+Existing reuses of a dataset, that have been approved by the portal administators, are listed in the Reuses area of the Information tab.
 
-Existing reuses of a dataset, that have been approved by the portal administators, are listed in the Reuses area of the Information tab. In the list of reuses, each reuse is displayed in a rectangle containing several information about that reuse:
+.. image:: images/reuse_list.png
+   :alt: Reuse list in the Information tab
+
+In the list of reuses, each reuse is displayed in a rectangle containing several information about that reuse:
 
 - Image preview of the reuse,
 - Title of the reuse,
@@ -28,14 +31,15 @@ To discover a chosen dataset reuse, click on its rectangle.
 Submitting own reuses
 ---------------------
 
-[screenshot]
-
 For the data reuses to be displayed in the Reuses area of the Information tab of a dataset, the users who make these reuses must submit them to the portal administrators.
 
 .. admonition:: Important
    :class: important
 
    On some OpenDataSoft portals, anonymous users are allowed to submit their reuses, but on other portals, only authenticated users are allowed to do so. This entirely depends on the portal administrators and how they choose to manage the reuse feature.
+
+.. image:: images/reuse_submit_form2.png
+   :alt: Reuse submit form
 
 To submit a reuse, follow the procedure below:
 

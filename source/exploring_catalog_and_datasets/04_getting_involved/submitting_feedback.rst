@@ -8,6 +8,9 @@ Submitting feedback
 
 Feedbacks are suggestions of improvement that users can send to portal administrators, throuh the Table visualization tab of a published dataset. The feedbacks can either be on an existing record, or to request the addition of a new record in the dataset.
 
+.. image:: images/feedbacks.png
+   :alt: Feedbacks feature activated and available from the Table tab
+
 To suggest improvements on an existing record:
 
 1. Go to the Table tab of the chosen dataset.

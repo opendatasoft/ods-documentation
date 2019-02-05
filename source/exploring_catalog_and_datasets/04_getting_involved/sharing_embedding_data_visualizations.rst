@@ -14,6 +14,9 @@ Sharing a data visualization
 
 The Share tab below a visualization contains a URL to share a direct access to the visualization.
 
+.. image:: images/share.png
+   :alt: Share tab
+
 Click |icon-copypaste| to copy the URL.
 
 
@@ -30,16 +33,22 @@ Embedding an iframe
 
 The Embed tab below a visualization contains the iframe code of that visualization.
 
+.. image:: images/iframe.png
+   :alt: Embed tab
+
 1. Choose the size of the iframe, from the drop-down list.
 2. Choose whether or not to display the dataset information card above the iframe.
-3. Choose whether or not to lock the map's zoom and position.
-4. Choose whether or not to enable zooming in and out with the mouse wheel.
+3. Choose whether or not to lock the map's zoom and position (*for map visualizations only*).
+4. Choose whether or not to enable zooming in and out with the mouse wheel (*for map visualizations only*).
 5. Click |icon-copypaste| to copy the iframe code.
 
 Embedding a widget
 ^^^^^^^^^^^^^^^^^^
 
 The Widget tab below a visualization contains the widget code of that visualization.
+
+.. image:: images/widget.png
+   :alt: Widget tab
 
 Click |icon-copypaste| to copy the widget code.
 

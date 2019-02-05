@@ -8,6 +8,9 @@ Commenting via Disqus
 
 Disqus is a service that can be integrated into an OpenDataSoft portal. It allows users to post comments in order to share ideas and opinions about a dataset. It is also possible to answer another user's comment.
 
+.. image:: images/disqus.png
+   :alt: Comments tab
+
 To comment on a dataset, or reply to someone's comment:
 
 1. Go to the Comments tab of the chosen dataset.
@@ -23,4 +26,4 @@ To comment on a dataset, or reply to someone's comment:
 .. admonition:: Caution
    :class: caution
 
-   Disqus comments are moderated by the portal administrators, that can be recognized from the "MOD" inscription next to their Disqus username. They have the right and possibility to delete comments, as well as to ban users. 
+   Disqus comments are moderated by the portal administrators, that can be recognized from the "MOD" inscription next to their Disqus username. They have the right and possibility to delete comments, as well as to ban users.
