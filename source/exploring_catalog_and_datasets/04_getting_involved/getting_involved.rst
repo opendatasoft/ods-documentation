@@ -17,6 +17,7 @@ This section of the documentation will focus on each available option to share, 
 
 .. toctree::
    :maxdepth: 1
+   :hidden:
 
    discovering_submitting_reuses
    sharing_embedding_data_visualizations
