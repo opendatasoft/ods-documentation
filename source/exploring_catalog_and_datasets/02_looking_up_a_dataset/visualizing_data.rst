@@ -76,17 +76,26 @@ It displays a default chart, set by the portal administrators. It is however pos
 
 Above the chart are dislayed a variety of buttons and options to configure the chart:
 
+.. image:: images/chart1.png
+   :alt: First line of chart configuration
+
 - The first line is to configure the base of the chart.
 
   - X axis: to choose which field to use as X axis (horizontal line)
   - Max. number of points: to choose how many point should be represented on the chart
   - Default ordering: for points to be displayed in a decreasing order in the chart
 
+.. image:: images/chart2.png
+   :alt: Second line of chart configuration
+
 - The second line is to define how the different series are represented.
 
   - Break down series: to separate the series into several groups
   - Stack: for series to be stacked one on top of the other
   - Add a serie: to display another serie on the chart
+
+.. image:: images/chart3.png
+   :alt: Third line of chart configuration
 
 - The third and last line is to configure each serie separately.
 

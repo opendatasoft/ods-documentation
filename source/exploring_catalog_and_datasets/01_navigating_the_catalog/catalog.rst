@@ -53,7 +53,7 @@ Filtering the catalog
 ---------------------
 
 When navigating a catalog with only a few datasets, it is easy to scroll down and check all the datasets available. But when navigating catalogs with dozens, even hundreds of datasets, scrolling down isn't an option.
-As an end-user on an open data portal, the reason for visiting that portal may not be just curiosity. The reason for being on the portal may be for a precise purpose ; to find specific data or to search for data from a specific topic, time period or even geographic area.
+As a user on an open data portal, the reason for visiting that portal may not be just curiosity. The reason for being on the portal may be for a precise purpose ; to find specific data or to search for data from a specific topic, time period or even geographic area.
 
 For these reasons and more, a variety of filtering options are available, below the number of datasets and the catalog sorting option, on the left side of the interface.
 
