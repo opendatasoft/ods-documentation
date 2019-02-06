@@ -28,3 +28,24 @@ In the Export tab of a dataset, the following formats can be available:
    :class: important
 
    If the dataset is filtered, it is possible to only download the filtered data. To do so, click on "Only the selected records" instead of "Whole dataset".
+
+
+Exporting and downloading images
+--------------------------------
+
+Images imported into the platform can only be downloaded or exported one by one. There is no way to download all the images of a dataset at the same time.
+
+Downloading an image
+~~~~~~~~~~~~~~~~~~~~
+
+1. In the front office, go to the Images visualization tab of the dataset containing the image(s) to download.
+2. Click on the image to download.
+3. At the end on the image's metadata, click on the Download image button.
+
+Exporting dataset to retrieve image URL
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. In the front office, go the Export tab of the dataset containing the image(s) to export.
+2. Export the whole dataset, or part of it if it's filtered.
+3. Open the exported dataset in the spreadsheet software of your choice.
+4. Find the field containing the URLs of the image and retrieve them.
