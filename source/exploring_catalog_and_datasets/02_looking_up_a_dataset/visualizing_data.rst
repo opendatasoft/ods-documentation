@@ -9,7 +9,7 @@ Published datasets on an OpenDataSoft portal can be represented by up to 6 diffe
 - the Images visualization, to visualize data through images
 - the Calendar visualization, to visualize data in a calendar
 
-The 6th visualization is called the "Custom view". It is completely optionnal and entirely custom. It means that even the label of the tab is chosen by the portal administrators, and they can differ from one dataset to another, even if they are on the same portal.
+The 6th visualization is called the "Custom view". It is completely optional and entirely custom. It means that even the label of the tab is chosen by the portal administrators, and they can differ from one dataset to another, even if they are on the same portal.
 
 
 Visualizing data in a table
@@ -22,13 +22,13 @@ The Table visualization is accessible from the Table tab.
 
 It displays a table containing all available fields from the dataset.
 
-- In the header, the bold labels are the labels of the fields.
+- In the header, the bold labels are the field names.
 - In the table, each row represents a record. Each record contains several values.
 
 .. admonition:: Note
    :class: note
 
-   Hover the field labels to display the description of the field.
+   Hover the field names to display the description of the field.
 
 The Table visualization can be available for any dataset, no matter what can of data it contains.
 
@@ -50,7 +50,7 @@ It displays a map, on which there are map markers indicating the geographical lo
 .. admonition:: Note
    :class: note
 
-   Sometimes, the map markers can be replaced by circles containing a number. Those are called "clusters": they appear on a map when there are too many map markers in the same spot for them all to be displayed individually. The number of the cluster indicates how many map markers are "hidden" behind. Zoom in to see the map markers.
+   Sometimes, the map markers can be replaced by circles containing a number. Those are called "clusters": they appear on a map when there are too many map markers in the same spot for them all to be displayed individually. The number indicated on the cluster indicates how many map markers are "hidden" behind. Zoom in to see the map markers.
 
 The map contains the a variety of buttons that allow to navigate and interact with the map:
 

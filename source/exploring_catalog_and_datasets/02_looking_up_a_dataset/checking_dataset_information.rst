@@ -9,7 +9,7 @@ The Information tab gives access to all kind of information about the dataset. T
 The Information tab contains:
 
 - the metadata of the dataset, that have been filled up by the portal administrators
-- a Follow button to subscribe to the dataset (see Following dataset updates for more information)
+- a Follow button to subscribe to the dataset (see :doc:`Following dataset updates <../04_getting_involved/following_dataset_updates>` for more information)
 - the dates of last processing for metadata and data
 - the dataset schema, which indicates for each field of the dataset:
 
@@ -19,7 +19,7 @@ The Information tab contains:
   - the field type,
   - an example of value from this field.
 
-- the reuses listing and reuse submit form (see Discovering and submitting data reuses for more information)
+- the reuses listing and reuse submit form (see :doc:`Discovering and submitting data reuses <../04_getting_involved/discovering_submitting_reuses>` for more information)
 
 .. admonition:: Note
    :class: note
