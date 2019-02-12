@@ -16,19 +16,34 @@ When a SAML identity provider is configured on a domain, a user can belong in th
 Local user
 ----------
 
-Every user that has a user account on the IdP trusted by a domain, and doesn't have an OpenDataSoft user account can connect through SAML. A local user will be created for the user, based on SAML settings for the domain. These settings are the account mapper (the set of IdP-sent parameters that uniquely identify a user) and the attribute mapper (the parameters that correspond to the user first name, last name and email address). These local users have the permission to explore the public datasets of the domain by default. Extra permissions can be given to these users at the domain level, on individual datasets or via groups (other than the ``SAML users`` group, of which they are automatic members).
+Every user that has a user account on the IdP trusted by a domain and doesn't have an OpenDataSoft user account can connect through SAML. On first connection, a local user will be created for the user based on the domain's SAML settings.
+
+These settings are:
+
+- the **account mapper**: a set of IdP-sent parameters that uniquely identify a user,
+- the **attribute mapper**: the parameters that correspond to the user first name, last name and email address.
+
+These local users have the permission to explore the public datasets of the domain by default. Extra permissions can be given to these users at the domain level, on individual datasets or via groups (other than the ``SAML users`` group, of which they are automatic members).
 
 The creation of new local users via an IdP authentication can be disabled using the "Disable local user provisioning" checkbox in the SAML configuration. Disabling local user provisioning will not prevent existing local users from signing in using SAML.
 
 Linked user
 -----------
 
-Users that have an OpenDataSoft user account can link this account to particular values of the set of parameters defined in the account mapper setting. After the link has been established, users who log in through SAML will be logged to their OpenDataSoft user account. Linked users may be assigned the same permissions and added to groups just like normal users (as they are normal users). They are also automatic members of the ``SAML users`` group. This mode allows a more fine-grained permission control, while retaining most of the advantages of the transient mode. The only drawback is the necessity for users to create an account on the domain before linking it to their SAML identity. There are two method for linking an OpenDataSoft user account. The first one is to click on ``Link your account to a SAML account on this domain`` in the identity tab of the user account settings.
+Users that have an OpenDataSoft user account can link this account to particular values of the set of parameters defined in the account mapper setting.
+
+After the link has been established, users who log in through SAML will be logged in to their OpenDataSoft user account. Linked users may be assigned the any permissions and added to groups just like any users and are considered as OpenDataSoft users. They are also automatic members of the ``SAML users`` group.
+
+This mode allows any user to have an OpenDataSoft account, but still connect through SAML on a specific domain.
+
+There are two method for linking an OpenDataSoft user account:
+
+- the first one is to click on ``Link your account to a SAML account on this domain`` in the identity tab of the user account settings:
 
 .. image:: images/saml__link--en.png
     :alt: "Link your account to a SAML account on this domain" link in the identity tab of the user account settings
 
-The other method is to create the link during the user account creation process, by clicking the link to complete the registration through SAML. This actually speeds up the user account creation process and allows for a quick account linking.
+- the other method is to create the link during the user account creation process by clicking the link to complete the registration through SAML. This actually speeds up the user account creation process and allows for a quick account linking:
 
 .. image:: images/saml__validation-link--en.png
     :alt: Account registration in SAML enabled domains
@@ -36,7 +51,9 @@ The other method is to create the link during the user account creation process,
 Automatic Single Sign On
 ------------------------
 
-The OpenDataSoft platform offers a mechanism to automatically log in users when they first visit the domain. It works by starting the SAML authentication flow for anonymous users, as if they had clicked "log in with SAML", as soon as they encounter (almost) any page in the domain. This feature only makes sense for private domains as it prevents anonymous access to the domain. When Automatic Single Sign On is activated, users who wish to connect to the platform using their OpenDataSoft credentials have the option to do so by manually visiting the domain login page at ``https://<platform-url>/login/``
+The OpenDataSoft platform offers a mechanism to automatically log in users when they first visit the domain.
+
+It works by starting the SAML authentication flow for anonymous users, as if they had clicked "log in with SAML", as soon as they encounter (almost) any page in the domain. This feature only makes sense for private domains as it prevents anonymous access to the domain. When Automatic Single Sign On is activated, users who wish to connect to the platform using their OpenDataSoft credentials have the option to do so by manually visiting the domain login page at ``https://<platform-url>/login/``
 
 
 Single Log Out
