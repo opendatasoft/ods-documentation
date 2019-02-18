@@ -1,7 +1,7 @@
 Getting involved: sharing, reusing & reacting
 =============================================
 
-As a user of open data, multiple options are available to get more involved into the open data environment. Whether you come accross some datasets that you are particularly interested in, and want to share them with the world. Or whether you have specific skills you believe could be put to use to create something with those published data.
+As a data consumer, multiple options are available to get more involved into the open data environment. Whether you come accross some datasets that you are particularly interested in, and want to share them with the world. Or whether you have specific skills you believe could be put to use to create something with those published data.
 
 This section of the documentation will focus on all available options to share, reuse & react from an OpenDataSoft portal:
 

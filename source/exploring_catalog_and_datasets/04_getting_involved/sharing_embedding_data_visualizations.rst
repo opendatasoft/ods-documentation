@@ -1,7 +1,7 @@
 Sharing & embedding data visualizations
 =======================================
 
-Below each visualization are displayed 3 tabs: Share, Embed and Widget. These tabs contain links or pieces of code that allow to share or embed the visualization either elsewhere on the portal or in another website.
+Below each visualization are displayed 3 tabs: Share, Embed and Widget. These tabs contain links or pieces of code that allow to share or embed the visualization either elsewhere on the portal or on another website.
 
 .. admonition:: Important
    :class: important
@@ -26,7 +26,7 @@ Embedding a data visualization
 Data visualizations can either be embedded via an iframe or as a widget. Both are pieces of code that allow anyone to integrate an element directly on a webpage.
 
 An iframe is a way to easily and safely integrate OpenDataSoft content in an isolated frame, independent from the rest of the page. For integrating OpenDataSoft content outside the OpenDataSoft environment, iframes are the best way to go. In terms of interaction and customization, some work would probably be needed.
-Widgets could also be integrated into a page outside the OpenDataSoft environment, but heavy work would be required. They are however ideal for integrating content inside the OpenDataSoft environment. Widgets can also interact with other widgets, which for instance allow the creation of dynamic dashboards using OpenDataSoft.
+`Widgets <https://help.opendatasoft.com/widgets/#/api/>`_ could also be integrated into a page outside the OpenDataSoft environment, but heavy work would be required. They are however ideal for integrating content inside the OpenDataSoft environment. Widgets can also interact with other widgets, which for instance allow the creation of dynamic dashboards using OpenDataSoft.
 
 Embedding an iframe
 ^^^^^^^^^^^^^^^^^^^

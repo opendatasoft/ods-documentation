@@ -30,7 +30,7 @@ It displays a table containing all available fields from the dataset.
 
    Hover the field names to display the description of the field.
 
-The Table visualization can be available for any dataset, no matter what can of data it contains.
+The Table visualization can be available for any dataset, no matter what kind of data it contains.
 
 Visualizing data on a map
 -------------------------
@@ -74,7 +74,7 @@ The chart visualization is accessible from the Analyze tab.
 
 It displays a default chart, set by the portal administrators. It is however possible, and encouraged, to configure other charts to make other analysis than the default one.
 
-Above the chart are dislayed a variety of buttons and options to configure the chart:
+Above the chart are displayed a variety of buttons and options to configure the chart:
 
 .. image:: images/chart1.png
    :alt: First line of chart configuration
@@ -82,7 +82,7 @@ Above the chart are dislayed a variety of buttons and options to configure the c
 - The first line is to configure the base of the chart.
 
   - X axis: to choose which field to use as X axis (horizontal line)
-  - Max. number of points: to choose how many point should be represented on the chart
+  - Max. number of points: to choose how many points should be represented on the chart
   - Default ordering: for points to be displayed in a decreasing order in the chart
 
 .. image:: images/chart2.png
@@ -92,17 +92,17 @@ Above the chart are dislayed a variety of buttons and options to configure the c
 
   - Break down series: to separate the series into several groups
   - Stack: for series to be stacked one on top of the other
-  - Add a serie: to display another serie on the chart
+  - Add a serie: to display other series on the chart
 
 .. image:: images/chart3.png
    :alt: Third line of chart configuration
 
-- The third and last line is to configure each serie separately.
+- The third and last line is to configure series separately.
 
-  - a scroll-down menu: to choose a chart type for the serie
-  - a color or color palette: to choose the color of the serie
+  - a scroll-down menu: to choose a chart type for the series
+  - a color or color palette: to choose the color of the series
   - Y axis: to choose which field to use as Y axis (vertical line)
-  - Use for ordering: for points to be displayed in a decreasing order in the chart, based on the chosen serie
+  - Use for ordering: for points to be displayed in a decreasing order in the chart, based on the chosen series
 
 .. admonition:: Caution
    :class: caution
