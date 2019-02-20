@@ -17,7 +17,7 @@ The Share tab below a visualization contains a URL to share a direct access to t
 .. image:: images/share.png
    :alt: Share tab
 
-Click |icon-copypaste| to copy the URL.
+Click on the copy button |icon-copypaste| to copy the URL.
 
 
 Embedding a data visualization

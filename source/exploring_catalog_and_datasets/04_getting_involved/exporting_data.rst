@@ -40,7 +40,7 @@ Downloading an image
 
 1. In the front office, go to the Images visualization tab of the dataset containing the image(s) to download.
 2. Click on the image to download.
-3. At the end on the image's metadata, click on the Download image button.
+3. At the bottom of the image's metadata, click on the Download image button.
 
 Exporting dataset to retrieve image URL
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

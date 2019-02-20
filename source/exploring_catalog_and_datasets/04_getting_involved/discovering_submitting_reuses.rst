@@ -4,7 +4,7 @@ Discovering & submitting data reuses
 .. admonition:: Important
    :class: important
 
-   Since reuses are an optional feature, they are not activated on every OpenDataSoft portal. The activation of reuses entirely depends on the portal administrators.
+   Since reuses are an optional feature, they are not activated on every OpenDataSoft portal. The activation of reuses depends entirely on the portal administrators.
 
 Data reuses are creations based on data from datasets published on an open data portal. They can take many forms: from the map created with the Map Builder (or a chart with the Chart Builder), to the smartphone application, there are many possibilities of data reuses. As a user of an OpenDataSoft portal, it is possible to either discover the reuses that others have made, or to submit your very own reuse for it to be displayed on the related portal.
 
@@ -17,7 +17,7 @@ Existing reuses of a dataset, that have been approved by the portal administator
 .. image:: images/reuse_list.png
    :alt: Reuse list in the Information tab
 
-In the list of reuses, each reuse is displayed in a rectangle containing several information about that reuse:
+In the list of reuses, each reuse is displayed in a rectangle containing information about that reuse:
 
 - Image preview of the reuse,
 - Title of the reuse,
@@ -36,7 +36,7 @@ For the data reuses to be displayed in the Reuses area of the Information tab of
 .. admonition:: Important
    :class: important
 
-   On some OpenDataSoft portals, anonymous users are allowed to submit their reuses, but on other portals, only authenticated users are allowed to do so. This entirely depends on the portal administrators and how they choose to manage the reuse feature.
+   On some OpenDataSoft portals, anonymous users are allowed to submit their reuses, but on other portals, only authenticated users are allowed to do so. This depends entirely on the portal administrators and how they choose to manage the reuse feature.
 
 .. image:: images/reuse_submit_form.png
    :alt: Reuse submit form
@@ -50,15 +50,15 @@ To submit a reuse, follow the procedure below:
 - First name *(only for anonymous users)*
 - Email *(only for anonymous users)*
 - Reuse title: give a title to the reuse
-- Description: describe what kind of reuse it is, what is is about etc.
-- URL: indicate the URL where to find the reuse
+- Description: describe what kind of reuse it is, what it is about etc.
+- URL: indicate the URL where the reuse is located
 - Thumbnail: upload a image preview of the reuse
 
 3. Click on the Submit button.
 
-Once submitted, the reuse is sent to the portal administrators, who will discover it and should approve it. Once approved, the reuse is added to the reuses list of the Information tab.
+Once submitted, the reuse is sent to the portal administrators, who will be notified about it and can approve it. Once approved, the reuse is added to the reuses list of the Information tab.
 
 .. admonition:: Note
    :class: note
 
-   The portal administrators have the possibility to modify the title, description, URL and thumbnail of the reuse. They cannot, however, modify either the last name or the first name.
+   The portal administrators have the possibility to modify the title, description, URL and thumbnail of the reuse. They cannot, however, modify the submitted last name or first name

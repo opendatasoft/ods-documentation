@@ -28,7 +28,7 @@ It displays a table containing all available fields from the dataset.
 .. admonition:: Note
    :class: note
 
-   Hover the field names to display the description of the field.
+   Hover over the field names to display the description of the field.
 
 The Table visualization can be available for any dataset, no matter what kind of data it contains.
 
@@ -127,7 +127,7 @@ The calendar visualization is accessible from the Calendar tab.
 .. image:: images/calendar_tab.png
    :alt: Calendar visualization
 
-It displays a calendar on which are displayed events of the dataset. When clicking on an event, its related tooltip is displayed. It contains more information about the event.
+It displays a calendar on which events of the dataset are displayed. When clicking on an event, its related tooltip is displayed. It contains more information about the event.
 
 .. admonition:: Note
    :class: note

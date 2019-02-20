@@ -25,7 +25,7 @@ To make a textual search:
 .. admonition:: Note
    :class: note
 
-   It is possible to make more advanced searches with the search bar, using Query language (more info in the :doc:`Searching the data documentation </exploring_catalog_and_datasets/03_searching_the_data/search>`).
+   It is possible to make more advanced searches with the search bar, using the Query language (more info in the :doc:`Searching the data documentation </exploring_catalog_and_datasets/03_searching_the_data/search>`).
 
 Using the selectable filters
 ----------------------------
