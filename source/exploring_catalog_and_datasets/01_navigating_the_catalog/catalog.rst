@@ -53,7 +53,7 @@ Filtering the catalog
 ---------------------
 
 When navigating a catalog with only a few datasets, it is easy to scroll down and check all the datasets available. But when navigating catalogs with dozens, even hundreds of datasets, scrolling down isn't an option.
-As an end-user on an open data portal, the reason for visiting that portal may not be just curiosity. The reason for being on the portal may be for a precise purpose ; to find specific data or to search for data from a specific topic, time period or even geographic area.
+As a user on an open data portal, the reason for visiting that portal may not be just curiosity. The reason for being on the portal may be for a precise purpose ; to find specific data or to search for data from a specific topic, time period or even geographic area.
 
 For these reasons and more, a variety of filtering options are available, below the number of datasets and the catalog sorting option, on the left side of the interface.
 
@@ -152,8 +152,6 @@ It is possible to download the catalog in the following formats:
 Exploring a dataset from the catalog
 ------------------------------------
 
-Once the right dataset has been found in the catalog, through the searching and filtering options or by scrolling down, it should be time to explore this dataset to see the data and their visualizations.
-
 .. image:: images/catalog_card.png
    :alt: Catalog card of a dataset from a catalog
 
@@ -176,12 +174,7 @@ From the catalog interface, only the catalog card of the dataset is displayed. T
 
    Note also that the catalog cards can be completely customized by the portal administrators.
 
-To see more of the dataset, either click the catalog card or any of the links to directly access a precise visualization or tab. From the interface dedicated to the dataset, it is possible to:
-
-- visualize the data,
-- search the data,
-- share and reuse the data,
-- react and subscribe to the dataset.
+To see more of the dataset, either click the catalog card or any of the quick links (see :doc:`Looking up a dataset <../02_looking_up_a_dataset/looking_up_dataset>` for more information about dataset information & visualizations).
 
 
 
