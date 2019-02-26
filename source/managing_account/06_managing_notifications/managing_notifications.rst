@@ -20,9 +20,9 @@ Alerts and reports notifications are sent whenever an important event occurs on 
 
 3 types of domain-related notifications can be sent:
 
-- Daily reports: portal alerts and news sent daily at 9AM. They notify users about processing alerts, newly created datasets on the portal, pending user feedbacks on a dataset.
-- Processing alerts: sent whenever there is a processing alert on a newly created dataset. They notify about processors in error, errors of realtime dataset update.
-- Quota alerts: sent when a quota has reached 80% or is expired.
+- Daily reports: portal alerts and news sent daily at 9AM. They notify users about processing alerts, newly created datasets on the portal, pending user feedbacks on a dataset (:doc:`more info here <daily_report>`).
+- Processing alerts: sent whenever there is a processing alert on a newly created dataset. They notify about processors in error, errors of realtime dataset update (:doc:`more info here <processing_alert>`).
+- Quota alerts: sent when a quota has reached 80% or is expired (:doc:`more info here <quota>`).
 
 Tick the box corresponding to any of the Notifications to subscribe. Untick any of the boxes to stop receiving the corresponding notification.
 
