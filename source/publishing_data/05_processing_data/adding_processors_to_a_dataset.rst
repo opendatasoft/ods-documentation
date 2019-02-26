@@ -279,7 +279,7 @@ Generic processors
     * Write complex expression patterns using field values
     * Default
   * * :doc:`Extract bit range<processors/extract_bit_range>`
-    * Extract an arbitrary bit range from an hexadecimal content
+    * Extract an arbitrary bit range from an hexadecimal or binary content
     * On demand
   * * :doc:`Extract from JSON<processors/extract_from_json>`
     * Extract values from a field containing a JSON object
