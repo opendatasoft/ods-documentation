@@ -69,15 +69,21 @@ Licenses
 
 When configuring the metadata of a dataset in the Information tab, the license attached to that dataset must be defined, using a drop-down selection of predefined licenses. To define the licenses listed in the drop-down selection, go to Configuration > Legals. In this subsection of the back office menu, look for the "Licenses" area.
 
-1. Click the Add license button.
-2. In the Name column, write the name of the license. This name will be displayed in the drop-down selection.
-3. In the Labels column, write the label of the license. This is the label that will be displayed in the front office, in the Information tab of the published dataset. There must be one label per language available on the domain.
-4. In the URLs column, indicate the official website of the defined license, in order to find more information about that license. There must be one URL per language available on the domain.
-5. Click the Save button in the top right corner of the page.
+.. image:: images/license_configuration.png
 
+1. Click the Add license button.
+2. In the Labels column, write the label of the license. The label will be displayed both in the drop-down selection in the back office, and in the Information tab of the published dataset in the front office. There must be one label per language available on the domain.
+3. (optional) In the URLs column, indicate the official website of the defined license, in order to find more information about that license. There can be one URL per language available on the domain.
+4. Click the Save button in the top right corner of the page.
+
+To delete a license, click on the |icon-trash| button.
 
 
 
 .. |icon-attention| image:: images/icon_attention.png
     :width: 20px
     :height: 22px
+
+.. |icon-trash| image:: images/icon_trash.png
+    :width: 45px
+    :height: 34px
