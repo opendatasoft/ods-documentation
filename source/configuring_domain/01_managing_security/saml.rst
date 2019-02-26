@@ -5,13 +5,13 @@ Some organizations already have a user directory service that manages their user
 
 In order to address this use case, the OpenDataSoft platform supports external Identity Providers (IdP) through the SAMLv2 standard. This allows for setting up an identity federation between a domain, which will act as a service provider, and this IdP. This federation allows users of a domain to connect to the platform using the identity provider, and if they have one, reuse their active security context to create a SSO mechanism.
 
-When a SAML identity provider is configured on a domain, a user can belong in three categories.
+When a SAML identity provider is configured on a domain, a user can belong in 3 categories.
 
-- A standard **OpenDataSoft user** that was invited by e-mail or signed-up on a domain: this user logs in on the domain using the standard sign-in interface with their usual OpenDataSoft username and password, and the account is accessible on the whole OpenDataSoft network.
+- A standard **OpenDataSoft user** that was invited by e-mail or signed-up on a domain: this user logs in on the domain using the standard sign-in interface with their usual OpenDataSoft username and password, and the account is accessible on the whole OpenDataSoft network. OpenDataSoft users are represented throughout the platform with the |icon-world| pictogram.
 
-- A **local user** that authenticates through the organization's IdP: this user logs in on the domain exclusively via the organization's IdP, and as it is only available on a specific domain, it can be limited in the use of features relying on the OpenDataSoft network.
+- A **local user** that authenticates through the organization's IdP: this user logs in on the domain exclusively via the organization's IdP, and as it is only available on a specific domain, it can be limited in the use of features relying on the OpenDataSoft network. Local users are represented throughout the platform with the |icon-id-card| pictogram.
 
-- A **linked user** that previously had a standard OpenDataSoft account but associated it with an identity from the organization's IdP: this user is a standard OpenDataSoft user that can both authenticate through the OpenDataSoft sign-in interface and the organization's IdP.
+- A **linked user** that previously had a standard OpenDataSoft account but associated it with an identity from the organization's IdP: this user is a standard OpenDataSoft user that can both authenticate through the OpenDataSoft sign-in interface and the organization's IdP. Since linked users are OpenDataSoft users with SAML authentication abilities, they are represented throughout the platform with both the |icon-world| and the |icon-id-card| pictograms.
 
 Local user
 ----------
@@ -292,3 +292,11 @@ User3 sees
    * * United States
      * English
      * Hello to all Americans
+
+.. |icon-world| image:: images/icon_world.png
+    :width: 16px
+    :height: 16px
+
+.. |icon-id-card| image:: images/icon_id_card.png
+    :width: 16px
+    :height: 16px
