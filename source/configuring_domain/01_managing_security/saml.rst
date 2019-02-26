@@ -36,7 +36,7 @@ After the link has been established, users who log in through SAML will be logge
 
 This mode allows any user to have an OpenDataSoft account, but still connect through SAML on a specific domain.
 
-There are two method for linking an OpenDataSoft user account:
+There are 2 methods for linking an OpenDataSoft user account:
 
 - the first one is to click on ``Link your account to a SAML account on this domain`` in the identity tab of the user account settings:
 
