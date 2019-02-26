@@ -67,7 +67,7 @@ To specify the Terms and Conditions and the Privacy Policy of a portal, go to Co
 Licenses
 --------
 
-When configuring the metadata of a dataset in the Information tab, the license attached to that dataset must be defined, using a drop-down selection of predefined licenses. To define the licenses listed in the drop-down selection, go to Configuration > Legals. In this subsection of the back office menu, look for the "Licenses" area.
+When configuring the metadata of a dataset in the Information tab, the license attached to that dataset should be defined, using a drop-down selection of predefined licenses. To define the licenses listed in the drop-down selection, go to Configuration > Legals. In this subsection of the back office menu, look for the "Licenses" area.
 
 .. image:: images/license_configuration.png
 
