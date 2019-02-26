@@ -60,15 +60,15 @@ make pdf-fr
 **N.B.** The pdf generator fails when it encounters untranslated texts.
 You may have to comment not fully translated sections out of the root `index.rst` so that the build passes.
 
-To generate the PDF version of the manual, you will need to do several things: 
+To generate the PDF version of the manual, you will need to do several things:
 - Open the illustrator files in an image editing software (you can use Affinity Designer, Sketch or Adobe Illustrator)
-- Update the date of the front cover for the language you're working on 
+- Update the date of the front cover for the language you're working on
 - Export the cover as a PDF
 - Generate the PDF
 - Remove the ugly default cover
 - Stitch the generated cover to the generated PDF manual (you can use Apple Preview)
-- Because the SVG fails, it's preferable to remove the final sections (by deleting the pages - note that you can only do this at the end of the document or you will mess the page counts. 
-- If page break shows unwanted sections headers, you can use a white rectangle to hide some elements. 
+- Because the SVG fails, it's preferable to remove the final sections (by deleting the pages - note that you can only do this at the end of the document or you will mess the page counts.
+- If page break shows unwanted sections headers, you can use a white rectangle to hide some elements.
 
 ## Troubleshooting
 
@@ -234,14 +234,24 @@ If you need to annotate images (add circles, arrows, basic text), you can downlo
 ### ODS elements
 
 ```
-:ods-keycap:`Button`
+:ods-keycap:`Keycap`
+
+:ods-button-grey:`Button Grey`
+
+:ods-button-blue:`Button Blue`
+
+:ods-button-orange:`Button Orange`
 
 :ods-help-text:`Help text`
 
-:ods-page-title:`Section > Subsection`
+:ods-checkbox:`Checkbox`
 
-:ods-tab:`Custom`
+:ods-page-title:`Element > Page title`
+
+:ods-tab:`Tab`
 ```
+
+<img src="source/elements.png?raw=true" alt="ODS elements preview" width="200"/>
 
 ### Icons from FontAwesome
 To use an icon from FontAwesome, add a substitution between | (spaces are important)

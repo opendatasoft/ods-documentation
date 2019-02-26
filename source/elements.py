@@ -18,7 +18,15 @@ def add_em_class(name, rawtext, text, lineno, inliner, options={}, content=[]):
     return [node], []
 
 def setup(app):
-    app.add_role('ods-keycap', add_em_class)
-    app.add_role('ods-help-text', add_em_class)
-    app.add_role('ods-page-title', add_em_class)
-    app.add_role('ods-tab', add_em_class)
+    roles = [
+        'ods-keycap',
+        'ods-button-grey',
+        'ods-button-blue',
+        'ods-button-orange',
+        'ods-help-text',
+        'ods-checkbox',
+        'ods-page-title',
+        'ods-tab'
+    ]
+    for role in roles:
+        app.add_role(role, add_em_class)
