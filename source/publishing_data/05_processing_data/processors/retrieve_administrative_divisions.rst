@@ -78,46 +78,6 @@ When a real country is chosen, the administrative levels corresponding to that c
     * Cantons Belges
     * Communes Belges
     * 
-  * * FR
-    * Country
-    * Contours géographiques des régions
-    * Contours géographiques des départements
-    * Cantons
-    * Codes postaux croisés aux communes
-    * Contours géographiques des communes
-    * Contours Iris
-  * * CH
-    * Country
-    * swissBOUNDARIES3D - TLM_KANTONSGEBIET
-    * 
-    * swissBOUNDARIES3D - TLM BEZIRKSGEBIET
-    * Amtliches Ortschaftenverzeichnis mit Postleitzahl und Perimeter
-    * swissBOUNDARIES3D - TLM HOHEITSGEBIET
-    * 
-  * * NL
-    * Country
-    * 
-    * 
-    * 
-    * Nederland Postcodes
-    * 
-    * 
-  * * PT
-    * Country
-    * Portugal Regions (NUTS 2 classification)
-    * Portugal Subregions (NUTS 3 classification)
-    * Portugal Districts
-    * Portugal Municipalities
-    * Portugal Civil Parishes
-    * 
-  * * GBENG
-    * Country
-    * Regions in England
-    * Counties and Unitary Authorities in England
-    * 
-    * Wards in England
-    * Parishes in England
-    * 
   * * CA
     * Country
     * Canada Provinces
@@ -125,6 +85,14 @@ When a real country is chosen, the administrative levels corresponding to that c
     * Intercensal Canada
     * 
     * Canadian Census Subdivisions
+    * 
+  * * CH
+    * Country
+    * swissBOUNDARIES3D - TLM_KANTONSGEBIET
+    * 
+    * swissBOUNDARIES3D - TLM BEZIRKSGEBIET
+    * Amtliches Ortschaftenverzeichnis mit Postleitzahl und Perimeter
+    * swissBOUNDARIES3D - TLM HOHEITSGEBIET
     * 
   * * DE
     * Country
@@ -134,13 +102,29 @@ When a real country is chosen, the administrative levels corresponding to that c
     * Postleitzahlen Deutschland
     * Deutschland Stadt
     * 
-  * * US
+  * * ES
     * Country
-    * US State Boundaries
+    * Comunidades Autónomas españolas
+    * Provincias españolas
     * 
-    * US County Boundaries
-    * ZCTA
     * 
+    * España - Municipios
+    * 
+  * * FR
+    * Country
+    * Contours géographiques des régions
+    * Contours géographiques des départements
+    * Cantons
+    * Codes postaux croisés aux communes
+    * Contours géographiques des communes
+    * Contours Iris
+  * * GBENG
+    * Country
+    * Regions in England
+    * Counties and Unitary Authorities in England
+    * 
+    * Wards in England
+    * Parishes in England
     * 
   * * GBSCT
     * Country
@@ -148,14 +132,6 @@ When a real country is chosen, the administrative levels corresponding to that c
     * 
     * 
     * Wards in Scotland
-    * 
-    * 
-  * * UK
-    * Country
-    * United Kingdom - Constituent Countries
-    * Counties and Unitary Authorities
-    * Local Authority Districts
-    * Wards 
     * 
     * 
   * * GBWLS
@@ -174,11 +150,35 @@ When a real country is chosen, the administrative levels corresponding to that c
     * 
     * 
     * 
-  * * ES
+  * * NL
     * Country
-    * Comunidades Autónomas españolas
-    * Provincias españolas
     * 
     * 
-    * España - Municipios
+    * 
+    * Nederland Postcodes
+    * 
+    * 
+  * * PT
+    * Country
+    * Portugal Regions (NUTS 2 classification)
+    * Portugal Subregions (NUTS 3 classification)
+    * Portugal Districts
+    * Portugal Municipalities
+    * Portugal Civil Parishes
+    * 
+  * * UK
+    * Country
+    * United Kingdom - Constituent Countries
+    * Counties and Unitary Authorities
+    * Local Authority Districts
+    * Wards 
+    * 
+    * 
+  * * US
+    * Country
+    * US State Boundaries
+    * 
+    * US County Boundaries
+    * ZCTA
+    * 
     * 
