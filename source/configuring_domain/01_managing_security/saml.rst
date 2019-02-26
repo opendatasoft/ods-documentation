@@ -11,7 +11,7 @@ When a SAML identity provider is configured on a domain, a user can belong in 3 
 
 - A **local user** that authenticates through the organization's IdP: this user logs in on the domain exclusively via the organization's IdP, and as it is only available on a specific domain, it can be limited in the use of features relying on the OpenDataSoft network. Local users are represented throughout the platform with the |icon-id-card| pictogram.
 
-- A **linked user** that previously had a standard OpenDataSoft account but associated it with an identity from the organization's IdP: this user is a standard OpenDataSoft user that can both authenticate through the OpenDataSoft sign-in interface and the organization's IdP. Since linked users are OpenDataSoft users with SAML authentication abilities, they are represented throughout the platform with both the |icon-world| and the |icon-id-card| pictograms.
+- A **linked user** that has a standard OpenDataSoft account, but associated on this specific domain with an identity from the organization's IdP. This user is a standard OpenDataSoft user that can both authenticate through the OpenDataSoft sign-in interface and the organization's IdP. Since linked users are OpenDataSoft users with SAML authentication abilities, they are represented throughout the platform with both the |icon-world| and the |icon-id-card| pictograms.
 
 Local user
 ----------
