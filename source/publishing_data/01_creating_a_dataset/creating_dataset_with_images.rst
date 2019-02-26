@@ -152,24 +152,3 @@ Once the images are imported into the platform, they can be displayed in 2 diffe
 
 * through the default Images visualization tab: an image gallery displaying all the images and their metadata
 * through a slideshow, which is `an OpenDataSoft widget <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsSlideshow>`_ that can be added in any code area of the platform (e.g. in the Custom view of the dataset or in a content page): in that case, images are displayed one by one
-
-
-Exporting and downloading images
---------------------------------
-
-Images imported into the platform can only be downloaded or exported one by one. There is no way to download all the images of a dataset at the same time.
-
-Downloading an image
-~~~~~~~~~~~~~~~~~~~~
-
-1. In the front office, go to the **Images** visualization tab of the dataset containing the image(s) to download.
-2. Click on the image to download.
-3. At the end on the image's metadata, click on the **Download image** button.
-
-Exporting dataset to retrieve image URL
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-1. In the front office, go the **Export** tab of the dataset containing the image(s) to export.
-2. Export the whole dataset, or part of it if it's filtered.
-3. Open the exported dataset in the spreadsheet software of your choice.
-4. Find the field containing the URLs of the image and retrieve them.

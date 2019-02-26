@@ -11,6 +11,11 @@ This processor converts vector geometry object represented in Well-known text (W
 .. admonition:: Note
    :class: note
 
+   Extended well-known binary (EWKB) is also supported for this processor.
+
+.. admonition:: Note
+   :class: note
+
    For Well-known binary, an hexadecimal input is expected.
 
 Setting the processor
