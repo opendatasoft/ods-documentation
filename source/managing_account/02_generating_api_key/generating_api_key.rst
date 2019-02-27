@@ -3,7 +3,7 @@ Generating an API key
 
 From the API keys tab of their account, authenticated and logged in users have the possibility to generate API keys, as well as to manage them.
 
-These API keys allow to use the following consultation APIs: ODS Search API v1 and v2, OData, WFS and CSW (more info in the `Using APIs </exploring_catalog_and_datasets/04_sharing_and_reusing_data/using_api>` documentation).
+These API keys allow to use the following consultation APIs: ODS Search API v1 and v2, OData, WFS and CSW (more info in the :doc:`Using APIs </exploring_catalog_and_datasets/04_sharing_and_reusing_data/using_api>` documentation).
 
 Click |icon-copypaste| to copy an API key.
 
@@ -23,6 +23,6 @@ Revoking an existing API key
 
 
 
-.. |icon-copypaste| image:: images/icon-copypaste.png
+.. |icon-copypaste| image:: images/icon_copypaste.png
     :width: 35px
     :height: 31px
