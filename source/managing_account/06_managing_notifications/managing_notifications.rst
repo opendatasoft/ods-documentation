@@ -26,6 +26,13 @@ Alerts and reports notifications are sent whenever an important event occurs on 
 
 Tick the box corresponding to any of the Notifications to subscribe. Untick any of the boxes to stop receiving the corresponding notification.
 
+.. toctree::
+   :hidden:
+
+   daily_report
+   processing_alert
+   quota
+
 Subscribing to OpenDataSoft newsletters
 ---------------------------------------
 
