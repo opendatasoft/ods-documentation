@@ -6,7 +6,9 @@ In this section are listed and documented all features related to the configurat
 .. toctree::
    :maxdepth: 2
 
-   06_managing_notifications/subscribing_to_notifications
-   06_managing_notifications/quota
-   06_managing_notifications/processing_alert
-   06_managing_notifications/daily_report
+   01_configuring_account_settings/configuring_account_settings
+   02_generating_api_key/generating_api_key
+   03_checking_account_quota/checking_account_quota
+   04_registering_applications/registering_applications
+   05_managing_saved_visualizations/managing_saved_visualizations
+   06_managing_notifications/managing_notifications
