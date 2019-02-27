@@ -3,6 +3,8 @@ Registering applications
 
 From the Applications tab, authenticated and logged in users have the possibility to see the list of registered applications as well as to register new OAuth2 applications.
 
+.. image:: images/account_applications.png
+
 To register a new application:
 
 1. Click on your user name displayed at the top right corner, to access your account.

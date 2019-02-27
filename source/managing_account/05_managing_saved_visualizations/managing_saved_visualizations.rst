@@ -3,6 +3,8 @@ Managing saved visualizations
 
 From the Visualizations tab, authenticated and logged in users have the possibility to see the list of visualizations created with either the Map Builder or the Chart Builder and that they have saved.
 
+.. image:: images/account_visualizations.png
+
 All saved visualizations are listed in a table which contains 3 columns.
 
 - The Visualization column contains the name of the visualization. The name is preceded by an icon that indicates whether the visualization is a map () or a chart ().

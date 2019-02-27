@@ -5,6 +5,8 @@ From the API keys tab of their account, authenticated and logged in users have t
 
 These API keys allow to use the following consultation APIs: ODS Search API v1 and v2, OData, WFS and CSW (more info in the :doc:`Using APIs </exploring_catalog_and_datasets/04_sharing_and_reusing_data/using_api>` documentation).
 
+.. image:: images/account_apikey.png
+
 Click |icon-copypaste| to copy an API key.
 
 Generating an API key

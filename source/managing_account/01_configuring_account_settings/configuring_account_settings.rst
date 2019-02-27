@@ -3,6 +3,8 @@ Configuring account settings
 
 From the Settings tab of their account, authenticated and logged in users have the possibility to modify their name, email address and password.
 
+.. image:: images/account_settings.png
+
 
 Modifying first and last name
 -----------------------------

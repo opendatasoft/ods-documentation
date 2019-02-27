@@ -13,6 +13,8 @@ From the Notifications tab, authenticated and logged in users have the possibili
 
    Notifications are always sent by support@opendatasoft.com. For notifications to be sent from a different sender address, for example the email address of an organization, please contact the support team.
 
+.. image:: images/account_notifications.png
+
 Subscribing to alerts and reports
 ---------------------------------
 
