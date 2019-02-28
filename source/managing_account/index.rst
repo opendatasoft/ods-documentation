@@ -12,3 +12,4 @@ In this section are listed and documented all features related to the configurat
    04_registering_applications/registering_applications
    05_managing_saved_visualizations/managing_saved_visualizations
    06_managing_notifications/managing_notifications
+   07_managing_identities/managing_identities
