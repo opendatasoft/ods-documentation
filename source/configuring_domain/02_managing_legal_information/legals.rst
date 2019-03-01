@@ -76,6 +76,11 @@ When configuring the metadata of a dataset in the Information tab, the license a
 3. (optional) In the URLs column, indicate the official website of the defined license, in order to find more information about that license. There can be one URL per language available on the domain.
 4. Click the Save button in the top right corner of the page.
 
+.. admonition:: Note
+   :class: note
+
+   If there is no URL indicated for one of the languages, the platform will consider that there is indeed no URL attached to the license label for one language. The license label displayed in the front office will not be clickable at all when the portal is set on that language.
+
 To delete a license, click on the |icon-trash| button.
 
 
