@@ -6,7 +6,7 @@ Managing identities
 
    The Identities tab is only available if SAML is activated on the portal.
 
-From the Identities tab, authenticated and logged in users have the possibility to manage their SAML identities as well as to link their OpenDataSoft account to a SAML identity.
+From the Identities tab, authenticated users have the possibility to manage their SAML identities or to link their OpenDataSoft account to a SAML identity.
 
 The content of the Identities tab depends on the type of the user. There are 3 types of users in OpenDataSoft: OpenDataSoft users, local users and linked users (more information in :doc:`the SAML documentation </configuring_domain/01_managing_security/saml>`).
 
@@ -15,7 +15,9 @@ Identities tab for OpenDataSoft users
 
 .. image:: images/account_identities2.png
 
-For OpenDataSoft users, the Identities tab only contains a "Link your account to a SAML account on this domain" link. It allows OpenDataSoft users to link their OpenDataSoft account to a SAML identity. It makes them become linked users, which changes the content of the Identity tab.
+For OpenDataSoft users, the Identities tab only contains a link that allows OpenDataSoft users to link their OpenDataSoft account to a SAML identity. It makes them become linked users, which changes the content of the Identity tab.
+
+To link the account to a SAML account, click the "Link your account to a SAML account on this domain" link.
 
 Identities tab for local and linked users
 -----------------------------------------
