@@ -73,8 +73,8 @@ This hexadecimal value (2 bytes) contains:
 
 Therefore, the processing pipeline will contains 3 Extract bit range processors
 
-* one Extract bit range from 0 to 7 to convert into signed integer (int) -> int_temperature
-* one Extract bit range from 8 to 11 to convert into unsigned integer (uint) -> sensor_identifier
+* one Extract bit range from 0 to 8 to convert into signed integer (int) -> int_temperature
+* one Extract bit range from 8 to 12 to convert into unsigned integer (uint) -> sensor_identifier
 * one Extract bit range from 12 to 13 to convert into unsigned integer, 0 meaning "Not OK" and 1 meaning "OK" (uint) -> status
 
 Extract bit range 1
