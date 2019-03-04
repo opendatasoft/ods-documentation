@@ -36,6 +36,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'rst2pdf.pdfbuilder',
     'localizedimage',
+    'elements'
 ]
 
 pdf_documents = [
