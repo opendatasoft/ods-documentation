@@ -16,6 +16,8 @@ The Retrieve Administrative Divisions processor is available for the following c
 - Switzerland
 - the USA
 - Wales
+- Portugal
+- United Kingdom
 
 Setting the processor
 ---------------------
@@ -68,91 +70,115 @@ When a real country is chosen, the administrative levels corresponding to that c
     * 5
     * 6
     * 7
-  * * FR
+  * * BE
     * Country
-    * Nouvelles régions
-    * Départements
-    * Cantons
-    * Codes Postaux
-    * Communes INSEE
-    * Contours IRIS
-  * * CH
-    * Country
-    * Kantons
-    *
-    * Bezirks
-    * Postleitzahlen
-    * Hoheits
-    *
-  * * NL
-    * Country
-    *
-    *
-    *
-    * Postcodes
-    *
-    *
+    * Régions Belges
+    * Provinces Belges
+    * Arrondissements Belges
+    * Cantons Belges
+    * Communes Belges
+    * 
   * * CA
     * Country
-    * Provinces
-    *
-    * Census Divisions
-    *
-    * Census Subdivisions
-    *
+    * Canada Provinces
+    * 
+    * Intercensal Canada
+    * 
+    * Canadian Census Subdivisions
+    * 
+  * * CH
+    * Country
+    * swissBOUNDARIES3D - TLM_KANTONSGEBIET
+    * 
+    * swissBOUNDARIES3D - TLM BEZIRKSGEBIET
+    * Amtliches Ortschaftenverzeichnis mit Postleitzahl und Perimeter
+    * swissBOUNDARIES3D - TLM HOHEITSGEBIET
+    * 
   * * DE
     * Country
-    * Länder
-    *
-    *
-    * Postleitzahlen
-    *
-    *
-  * * US
-    * Country
-    * State Boundaries
-    *
-    * County Boundaries
-    * ZCTA
-    *
-    *
-  * * MX
-    * Country
-    * Estados
-    *
-    *
-    *
-    *
-    *
-  * * GB-SCT
-    * Country
-    *
-    *
-    *
-    * Wards
-    *
-    *
-  * * GB-WLS
-    * Country
-    *
-    *
-    * Counties and Unitary Authorities
-    * Wards
-    * Parishes
-    *
-  * * GB-ENG
-    * Country
-    * Regions
-    *
-    * Counties and Unitary Authorities
-    * Wards
-    * Parishes
-    *
+    * Deutschland Länder
+    * 
+    * Landkreise
+    * Postleitzahlen Deutschland
+    * Deutschland Stadt
+    * 
   * * ES
     * Country
-    * Comunidades Autónomas
-    * Provincias
-    *
-    *
-    * Municipios
-    *
+    * Comunidades Autónomas españolas
+    * Provincias españolas
+    * 
+    * 
+    * España - Municipios
+    * 
+  * * FR
+    * Country
+    * Contours géographiques des régions
+    * Contours géographiques des départements
+    * Cantons
+    * Codes postaux croisés aux communes
+    * Contours géographiques des communes
+    * Contours Iris
+  * * GBENG
+    * Country
+    * Regions in England
+    * Counties and Unitary Authorities in England
+    * 
+    * Wards in England
+    * Parishes in England
+    * 
+  * * GBSCT
+    * Country
+    * 
+    * 
+    * 
+    * Wards in Scotland
+    * 
+    * 
+  * * GBWLS
+    * Country
+    * 
+    * Counties and Unitary Authorities in Wales
+    * 
+    * Wards in Wales
+    * Parishes in Wales
+    * 
+  * * MX
+    * Country
+    * Estados de México
+    * 
+    * 
+    * 
+    * 
+    * 
+  * * NL
+    * Country
+    * 
+    * 
+    * 
+    * Nederland Postcodes
+    * 
+    * 
+  * * PT
+    * Country
+    * Portugal Regions (NUTS 2 classification)
+    * Portugal Subregions (NUTS 3 classification)
+    * Portugal Districts
+    * Portugal Municipalities
+    * Portugal Civil Parishes
+    * 
+  * * UK
+    * Country
+    * United Kingdom - Constituent Countries
+    * Counties and Unitary Authorities
+    * Local Authority Districts
+    * Wards 
+    * 
+    * 
+  * * US
+    * Country
+    * US State Boundaries
+    * 
+    * US County Boundaries
+    * ZCTA
+    * 
+    * 
