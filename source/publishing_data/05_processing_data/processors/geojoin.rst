@@ -17,7 +17,6 @@ Each country has specific referentials, all referenced in the section below. The
 - Switzerland
 - the USA
 - Wales
-- Portugal
 - United Kingdom
 
 It is also available for the world, which means that is is possible to retrieve the geo shape of any other country than those listed above. However, only the geo shape of the country will be retrieved, the processor will not be able to retrieve geo shapes from administrative divisions at a smaller scale.
@@ -213,24 +212,6 @@ Netherlands
   * * postcodes2015
     * `Nederland Postcodes (2015) <https://public.opendatasoft.com/explore/dataset/openpostcodevlakkenpc4>`_
 
-Portugal
-~~~~~~~~
-
-.. list-table::
-  :header-rows: 1
-
-  * * Repository
-    * Source
-  * * parishes2018
-    * `Portugal Civil Parishes (2018) <https://public.opendatasoft.com/explore/dataset/portugal-civil-parishes>`_
-  * * subregions2018
-    * `Portugal Subregions (NUTS 3 classification) (2018) <https://public.opendatasoft.com/explore/dataset/30-records-no-active-filters-filters-subregion-name-1-alentejo-central-1-alentej>`_
-  * * regions2018
-    * `Portugal Regions (NUTS 2 classification) (2018) <https://public.opendatasoft.com/explore/dataset/osm-export-admin-level-4-pl-region>`_
-  * * municipalities2018
-    * `Portugal Municipalities (2018) <https://public.opendatasoft.com/explore/dataset/portugal-municipalities>`_
-  * * districts2018
-    * `Portugal Districts (2018) <https://public.opendatasoft.com/explore/dataset/osm-export-admin-level-6-pl-district>`_
 
 Scotland (GB)
 ~~~~~~~~~~~~~

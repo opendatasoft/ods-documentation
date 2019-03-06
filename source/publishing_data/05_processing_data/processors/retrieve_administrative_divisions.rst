@@ -16,7 +16,6 @@ The Retrieve Administrative Divisions processor is available for the following c
 - Switzerland
 - the USA
 - Wales
-- Portugal
 - United Kingdom
 
 Setting the processor
@@ -157,14 +156,6 @@ When a real country is chosen, the administrative levels corresponding to that c
     * 
     * Nederland Postcodes
     * 
-    * 
-  * * PT
-    * Country
-    * Portugal Regions (NUTS 2 classification)
-    * Portugal Subregions (NUTS 3 classification)
-    * Portugal Districts
-    * Portugal Municipalities
-    * Portugal Civil Parishes
     * 
   * * UK
     * Country
