@@ -12,3 +12,12 @@ By default, the records of a dataset download are ordered randomly. It is possib
    :class: important
 
    Only fields that can be sorted by default, or fields that have been set as sortable, can be selected for this feature.
+
+1. Click on the Default sort list box.
+2. Choose a field from the dataset, on which to base the sorting. Another list box appears.
+3. Choose a sort type from the newly appeared list box.
+
+.. admonition:: Important
+   :class: important
+
+   The download sort does not apply on additional export formats.
