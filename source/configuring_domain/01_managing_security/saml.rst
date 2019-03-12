@@ -72,7 +72,7 @@ Register and configure an identity provider
 
 2. Check "Allow access for SAML users"
 
-.. image:: images/saml__config--en.png
+.. image:: images/saml_config.png
     :alt: SAML IDP configuration interface
 
 3. Paste your identity provider metadata document in the "IDP metadata document" field.
