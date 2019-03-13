@@ -206,30 +206,164 @@ The last part of the ternary operator is optional, so the following expression i
 Functions
 ~~~~~~~~~
 
-In the table below are listed the available functions:
+Functions are used to perform more advanced operations in an expression. They can take 0 or more parameters, and apply transformations on them like:
+
+- mathematical functions,
+- text processing,
+- date and time handling.
+
+Text processing
+^^^^^^^^^^^^^^^
+
+**Boolean functions**
 
 .. list-table::
    :header-rows: 1
 
-   * * Function type
-     * Functions
-   * * Without operand
-     * now
-   * * Single operand
-     * abs, acos, acosh, asin, asinh, atan, atanh, capitalize, capitalize_all, ceil, cos, day, dayofweek, degrees, empty, exp, factorial, floor, fromtimestamp, gamma, hour, isalnum, isalpha, isdecimal, isdigit, islower, isnumeric, isupper, length, log, log10, lower, minute, month, normalize, quarter, quartertodaterange, radians, random, round, second, sigmoid, sin, sqrt, tan, tolowercase, touppercase, trunc, upper, week, year
-   * * Two operands
-     * add_days, add_hours, add_minutes, add_months, add_seconds, add_years, contains, day, dayofweek, distance, div, endswith, gcd, geopoint2d_towgs84, geoshape_towgs84, hour, match, max, microsecond, min, minute, mod, month, pow, quarter, quartertodaterange, random, round, second, startswith, substring, week, year
-   * * Three operands
-     * center, datediff, ljust, replace, rjust, substring
+   * * Function
+     * Description
+     * Example
+   * * ``isalpha([text])``
+     * True if text only contains letters
+     *
+   * * ``isnumeric([text])``
+     * True if text only contains numbers
+     *
+   * * ``isalnum([text])``
+     * True if text only contains letters or numbers
+     *
+   * * ``isdecimal([text])``
+     * True if text is a valid decimal number
+     *
+   * * ``isdigit([text])``
+     * True if text is a single digit
+     *
+   * * ``islower([text])``
+     * True if text is lowercase
+     *
+   * * ``isupper([text])``
+     * True if text is uppercase
+     *
+   * * ``empty([text])``
+     * True if text is empty
+     *
+   * * ``contains([text],[text])``, ``startswith([text],[text])``, ``endswith([text],[text])``
+     * True if text (1st argument) contains, starts with or ends with text (2nd argument)
+     * * ``contains("hello", "l")`` returns ``True``
+       * ``startswith("hello', 'he')`` returns ``True``
+       * ``endswith("hello', 'he')`` returns ``False``
 
 
-Examples
---------
+**Processing functions**
+
+.. list-table::
+   :header-rows: 1
+
+   * * Function
+     * Description
+     * Example
+   * * ``length([text])``
+     * Returns the length of the text
+     * ``length('hello')`` returns ``5``
+   * * ``lower([text])``, ``upper([text])``
+     * Convert text to lowercase, to uppercase
+     *
+   * * ``capitalize([text])``, ``capitalize_all([text])``
+     * Capitalize the first letter of the text, the first letter of each word
+     *
+   * * * ``ljust([text],[numeric],[text])``
+       * ``rjust([text],[numeric],[text])``
+       * ``center([text],[numeric],[text])``
+     * Left, right and center justify a text (1st argument), until it reaches [numeric] characters with another text (3rd argument)
+     * * ``ljust("4400", 5, "0")`` returns ``"44000"``
+       * ``rjust("4400", 5, "0")`` returns ``"04400"``
+       * ``center("4400", 6,"0")`` returns ``"044000"``
+   * * ``normalize([text])``
+     * Convert a text to its ascii representation
+     * ``normalize("你好")`` returns ``"ni hao"``
+   * * ``substring([text],[numeric],[numeric])``
+     * Extract a substring of text, starting at index indicated by 2nd argument and of a length indicated by 2nd argument.
+     * ``substring('hello', 1, 3)`` returns ``"ell"``
+
+Mathematical functions
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :header-rows: 1
+
+   * * Function
+     * Description
+     * Example
+   * * ``abs([numeric])``
+     * Absolute value
+     * ``abs(-4)`` returns ``4``
+   * * ``sqrt([numeric])``
+     * Square root
+     *
+   * * ``floor([numeric])``, ``ceil([numeric])``
+     * Floor and ceiling functions
+     * * ``floor(4.6)`` returns ``4``
+       * ``ceil(3.3)`` returns ``4``
+   * * ``max([numeric],[numeric])``, ``min([numeric],[numeric])``
+     * Max and min functions
+     *
+   * * ``round([numeric])``
+     * Returns the nearest integer
+     * * ``round(4.6)`` returns ``5``
+       * ``round(3.3)`` returns ``4``
+   * * ``random([numeric])``
+     * Random number generator (between 0 and [numeric])
+     * ``random(10)`` returns for example ``7.27846540481``
+   * * ``pow([numeric], [numeric])``
+     * Power function
+     * ``pow(2, 3)`` returns ``8``
+   * * ``exp([numeric])``, ``log([numeric])``, ``log10([numeric])``
+     * Exponential, logarithm and base 10 logarithm functions
+     * ``exp(1)`` returns ``E``
+   * * ``radians([numeric])``
+     * Converts an angle from degrees to radians
+     * ``radians(180)`` returns ``PI``
+   * * ``degrees([numeric])``
+     * Converts an angle from radians to degrees
+     * ``degrees(PI)`` returns ``180``
+   * * ``cos([numeric])``, ``cosh([numeric])``, ``sin([numeric])``, ``sinh([numeric])``, ``tan([numeric])``, ``tanh([numeric])``
+     * Cosine, hyperbolic cosine, sine, hyperbolic sine, tangent, hyperbolic tangent (in radians)
+     * ``sin(PI)`` returns ``0``
+   * * ``acos([numeric])``, ``acosh([numeric])``, ``asin([numeric])``, ``asinh([numeric])``, ``atan([numeric])``, ``atanh([numeric])``
+     * Inverse cosine, inverse cosine hyberbolical, inverse sine, inverse sine hyperbolical, inverse tangent, inverse tangent hyperbolical (in radians)
+     * ``acos(0)`` returns ``PI/2``
+
+Date and time handling
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :header-rows: 1
+
+   * * Function
+     * Description
+     * Example
+   * * ``year([datetime])``, ``quarter([datetime])``, ``month([datetime])``, ``day([datetime])``, ``dayofweek([datetime])``, ``hour([datetime])``, ``minute([datetime])``, ``second([datetime])``
+     * Extract the year, quarter, month, day, day of week, hours, minutes, seconds from a datetime
+     * * ``year("2014-06-07")`` returns ``2014``
+       * ``hour("2014-06-07 17:00")`` returns ``17``
+       * ``hour("2014-06-07 17:00", "Europe/Paris")`` returns ``19``
+   * * ``add_years([datetime],[numeric])``, ``add_months([datetime],[numeric])``, ``add_days([datetime],[numeric])``, ``add_hours([datetime],[numeric])``, ``add_minutes([datetime],[numeric])``, ``add_seconds([datetime],[numeric])``
+     * Add years, months, days, hours, minutes, seconds to a datetime
+     * ``add_months("2014-11-14", "3")`` returns ``2015-02-14``
+   * * ``fromtimestamp([numeric])``
+     * Convert a timestamp to a datetime
+     *
+   * * ``quartertodaterange([numeric])``
+     * Convert a quarter (e.g: "2014Q2", "2019q1") to a date range
+     * ``quartertodaterange("2014Q2")`` returns ``"2014-04-01 / 2014-06-30"``
+
+More examples
+-------------
 
 .. admonition:: Note
    :class: note
 
-   Keep in mind that for each expression, the examples are presented with actual numbers, but they can be replaced with the processed dataset's fields technical identifiers.
+   Keep in mind that for each expression, the examples are presented with actual numbers, but they can be replaced with the processed dataset's field names.
 
 .. list-table::
    :header-rows: 1
@@ -315,15 +449,6 @@ Examples
    * * Left and right padding
      * center("4400", 6,"0")
      * 044000
-   * * Extract year from date
-     * year("2014-06-07")
-     * 2014
-   * * Extract hour from datetime
-     * hour("2014-06-07 17:00")
-     * 17
-   * * Extract hour from datetime with timezone
-     * hour("2014-06-07 17:00", "Europe/Paris")
-     * 19
    * * Replace text in string
      * replace("abcd", "b", "e")
      * aecd
@@ -345,30 +470,3 @@ Examples
    * * Count seconds between 2 datetimes
      * datediff("2014-02-28T20:00:00Z", "2014-02-28T21:00:00Z", "second")
      * 3600
-   * * Prefix matching: true or false
-     * startswith("hello', 'he')
-     * True
-   * * Prefix matching: true or false
-     * startswith("hello', 'lo')
-     * False
-   * * Suffix matching: true or false
-     * endswith("hello', 'he')
-     * False
-   * * Suffix matching: true or false
-     * endswith("hello', 'lo')
-     * True
-   * * Add months
-     * add_months("2014-11-14", "3")
-     * 2015-02-14
-   * * Substring matching: true or false
-     * contains("hello", "l")
-     * True
-   * * Substring matching: true or false
-     * contains("hello", "A")
-     * False
-   * * Empty: true or false
-     * empty("")
-     * True
-   * * Empty: true or false
-     * empty("hello")
-     * False
