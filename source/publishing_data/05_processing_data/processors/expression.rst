@@ -13,6 +13,14 @@ The expression can be composed of:
 - keywords (e.g: a mathematical constant like ``pi`` and ``e``),
 - functions (e.g: ``now()``, ``sin(number)``, ``startswith("hello', 'he')``).
 
+.. admonition:: Prerequisite
+   :class: important
+
+   The expression processor makes more sense in evaluation mode (which means "compute and return the result of the expression"), activated by starting the expression with an equal sign (``=``). Otherwise, the processor will not evaluate the expression, and simply put it as is in the output field.
+
+   The starting equal sign (``=``) will be omitted through all the following examples.
+
+
 Getting started
 ---------------
 
@@ -63,19 +71,55 @@ An expression is an instruction for the processor to perform an operation and to
 
 These expression look like what we call formulas in a spreadsheet software, the main difference being that instead of referencing cells (e.g: ``A1 + B2``), the processor can perform operation with the values of given columns (e.g: ``column_1 + column_2``).
 
-Like in a formula, expressions can also contain various elements like:
+Like in a formula, expressions can be any combination of various elements like:
 
 - numbers (e.g: ``2`` or ``3.6``),
 - textual literals (e.g ``"hello"`` or ``'world'``),
 - booleans (e.g: ``true`` or ``false``),
-- operators (e.g: ``+``, ``OR``, ``not``, ``<=``),
 - keywords (e.g: a mathematical constant like ``pi`` and ``e``),
+- operators (e.g: ``+``, ``OR``, ``not``, ``<=``),
 - functions (e.g: ``now()``, ``sin(number)``, ``startswith("hello', 'he')``).
 
-.. admonition:: Prerequisite
-   :class: important
+Identifiers
+~~~~~~~~~~~
 
-   The expression processor makes more sense in evaluation mode (which means "compute and return the result of the expression"), activated by starting the expression with an equal sign (``=``). Otherwise, the processor will not evaluate the expression, and simply put it as is in the output field.
+The main feature of the expression processor is the ability to perform operations on a record's columns. The technical identifier (or field name) of a column can be used in any expression to access the value of this field for the current record. This identifier can be found by clicking on the gear icon of a column header and using the ``Name`` of this field.
+
+**Examples**
+
+- ``column_1`` to access a field named ``column_1`` (and maybe labeled "Column 1")
+- ``name_en`` to access a field named ``name_en`` (and maybe labeled "Name (EN)")
+
+In some cases, the field name can be ambiguous, for example if it is a number, if it starts with a number or if it is a reserved keyword like "pi" (the mathematical constant PI) or "e" (the mathematical constant Euler's number).
+
+To force the expression processor to evaluate an identifier as a field name, it is possible to prefix any identifier with the dollar sign (``$``). The dollar sign can be used for any field name, but it is only mandatory for ambiguous field names.
+
+**Examples**
+
+- ``$column_1`` to access a field named ``column_1`` (and maybe labeled "Column 1")
+- ``$name_en`` to access a field named ``name_en`` (and maybe labeled "Name (EN)")
+- ``$20_to_25_yo`` to access a field named ``20_to_25_yo`` (and maybe labeled "20 to 25 years old")
+- ``$33`` to access a field named ``33``
+- ``$pi`` to access a field named ``pi``
+
+In all the following examples, any number or textual literal can be replaced by a field name holding values of the same type. The expression processor will extract the value for the specified column and perform the required operation with it.
+
+Several fields (or even the same field several times) can be used at the same time in an expression.
+
+Literals
+^^^^^^^^
+
+Literals like **numbers**, **textual literals** (single or double quoted), **booleans** and **keywords** can be used in any expression.
+
+**Examples**
+
+- ``3``
+- ``2.5``
+- ``"Hello"`` or ``'Hello'``
+- ``'A bigger sentence'``
+- ``true`` or ``false``
+- ``pi``, ``PI`` or ``Pi``
+- ``e`` or ``E``
 
 Operators
 ~~~~~~~~~
@@ -88,18 +132,79 @@ The expression processor supports 3 kinds of operators, depending of the number 
 - **binary operators** can be arithmetic operators to perform a calculus between 2 expression, or boolean operators to compare the result of 2 expressions,
 - the **ternary operator**, to convert an conditional expression to either 1 of 2 possible results.
 
+Unary operators
+^^^^^^^^^^^^^^^
+
 .. list-table::
    :header-rows: 1
 
-   * * Operator type
-     * Operators
-   * * Unary operators
-     * +, -, not, ! (not) , ! (factorial), ^ (power)
-   * * Binary operators
-     * +, -, ``*``, /, % (euclidean division), and, &&, or, ||, >, <, >=, <=, ==, != (evaluates to ``True`` or ``False``), &
-       (concatenation of strings, evaluates to a string)
-   * * Ternary operators
-     * op1 ? op2 : op3 (conditional statement). Please note that op3 is optional, so you can write op1 ? op2.
+   * * Operator
+     * Description
+     * Example
+   * * ``-``
+     * Prefix that negate the following value
+     * ``- 4``, ``- [expression]``
+   * * ``not``, ``!`` (not)
+     * Boolean operator that inverts the following condition
+     * * ``not true`` or  ``!true`` (equals ``false``)
+       * ``not 4 > 5`` (equals ``true``)
+       * ``!(5 <= 10)`` (equals ``false``)
+   * * ``!`` (factorial)
+     * Suffix that computes the factorial of an expression
+     * ``3!`` (equals ``1*2*3``)
+
+Binary operators
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :header-rows: 1
+
+   * * Operator
+     * Description
+     * Example
+   * * ``+``, ``-``, ``*``, ``/``, ``%``, ``//``, ``^``
+     * Arithmetic operators: add, subtract, multiply, divide, modulo, euclidian division, power
+     * * ``2 + 3`` (returns ``5``)
+       * ``5 - 8`` (returns ``-3``)
+       * ``9 * 3`` (returns ``27``)
+       * ``15 / 6`` (returns ``2.5``)
+       * ``15 % 6`` (returns ``3``)
+       * ``15 // 6`` (returns ``2``)
+       * ``2 ^ 3`` (returns ``8``)
+       * ``column_1 + column2``
+   * * ``and``, ``&&``, ``or``, ``||`` (return a boolean)
+     * Boolean operators: and, and, or, or
+     * * ``true and true`` (returns ``true``)
+       * ``true && false`` (returns ``false``)
+       * ``true or false`` (returns ``true``)
+       * ``false || false`` (returns ``false``)
+   * * ``>``, ``<``, ``>=``, ``<=``, ``==``, ``!=``
+     * Comparison operators: greater than, lower than, greater or equal to, lower or equal to, equal to, different than (return a boolean)
+     * * ``3 < 4`` (returns ``true``)
+       * ``5 >= 10`` (returns ``false``)
+   * * ``&``
+     * String concatenation operator
+     * ``'Hello' & ' world'`` (returns ``'Hello world'``)
+
+Ternary operator
+^^^^^^^^^^^^^^^^
+
+The expression ``[condition] ? [result if true] : [result if false]`` is called the ternary operator, and allows to return different results depending on a condition.
+
+Examples:
+
+- ``true ? 'hello' : 'goodbye'`` returns ``'hello'``
+- ``false ? 'hello' : 'goodbye'`` returns ``'good bye'``
+- ``4 > 3 ? '4 is bigger' : '3 is bigger'`` returns ``'4 is bigger'``
+- ``10 <= 9 ? '9 is bigger' : '10 is bigger'`` returns ``'10 is bigger'``
+
+The last part of the ternary operator is optional, so the following expression is valid:
+
+- ``true ? 'hello'`` returns ``'hello'``
+- ``false ? 'hello'`` returns an empty result
+
+Functions
+~~~~~~~~~
 
 In the table below are listed the available functions:
 
