@@ -5,13 +5,13 @@ The expression processor is a versatile processor that takes an expression as an
 
 The expression can be composed of:
 
-- identifiers (e.g: a field name like ``column_1`` or a forced field name like ``$column_1``),
-- numbers (e.g: ``2`` or ``3.6``),
-- textual literals (e.g ``"hello"`` or ``'world'``),
-- booleans (e.g: ``true`` or ``false``),
-- operators (e.g: ``+``, ``OR``, ``not``, ``<=``),
-- keywords (e.g: a mathematical constant like ``pi`` and ``e``),
-- functions (e.g: ``now()``, ``sin(number)``, ``startswith("hello', 'he')``).
+- **identifiers** (e.g: a field name like ``column_1`` or a forced field name like ``$column_1``),
+- **numbers** (e.g: ``2`` or ``3.6``),
+- **textual literals** (e.g ``"hello"`` or ``'world'``),
+- **booleans** (e.g: ``true`` or ``false``),
+- **operators** (e.g: ``+``, ``OR``, ``not``, ``<=``),
+- **keywords** (e.g: a mathematical constant like ``pi`` and ``e``),
+- **functions** (e.g: ``now()``, ``sin(number)``, ``startswith("hello', 'he')``).
 
 .. admonition:: Prerequisite
    :class: important
@@ -73,6 +73,7 @@ These expression look like what we call formulas in a spreadsheet software, the 
 
 Like in a formula, expressions can be any combination of various elements like:
 
+- identifiers (e.g: a field name like ``column_1`` or a forced field name like ``$column_1``),
 - numbers (e.g: ``2`` or ``3.6``),
 - textual literals (e.g ``"hello"`` or ``'world'``),
 - booleans (e.g: ``true`` or ``false``),
@@ -130,7 +131,7 @@ The expression processor supports 3 kinds of operators, depending of the number 
 
 - **unary operators** can be used as prefixes or suffixes to alter the value of 1 expression,
 - **binary operators** can be arithmetic operators to perform a calculus between 2 expression, or boolean operators to compare the result of 2 expressions,
-- the **ternary operator**, to convert an conditional expression to either 1 of 2 possible results.
+- the **ternary operator**, to convert a conditional expression to either 1 of 2 possible results.
 
 Unary operators
 ^^^^^^^^^^^^^^^
@@ -142,16 +143,16 @@ Unary operators
      * Description
      * Example
    * * ``-``
-     * Prefix that negate the following value
+     * Prefix that negates the following value
      * ``- 4``, ``- [expression]``
    * * ``not``, ``!`` (not)
      * Boolean operator that inverts the following condition
-     * * ``not true`` or  ``!true`` (equals ``false``)
-       * ``not 4 > 5`` (equals ``true``)
-       * ``!(5 <= 10)`` (equals ``false``)
+     * * ``not true`` or  ``!true`` returns ``false``
+       * ``not 4 > 5`` returns ``true``
+       * ``!(5 <= 10)`` returns ``false``
    * * ``!`` (factorial)
      * Suffix that computes the factorial of an expression
-     * ``3!`` (equals ``1*2*3``)
+     * ``3!`` returns ``1*2*3``
 
 Binary operators
 ^^^^^^^^^^^^^^^^
@@ -164,27 +165,27 @@ Binary operators
      * Example
    * * ``+``, ``-``, ``*``, ``/``, ``%``, ``//``, ``^``
      * Arithmetic operators: add, subtract, multiply, divide, modulo, euclidian division, power
-     * * ``2 + 3`` (returns ``5``)
-       * ``5 - 8`` (returns ``-3``)
-       * ``9 * 3`` (returns ``27``)
-       * ``15 / 6`` (returns ``2.5``)
-       * ``15 % 6`` (returns ``3``)
-       * ``15 // 6`` (returns ``2``)
-       * ``2 ^ 3`` (returns ``8``)
+     * * ``2 + 3`` returns ``5``
+       * ``5 - 8`` returns ``-3``
+       * ``9 * 3`` returns ``27``
+       * ``15 / 6`` returns ``2.5``
+       * ``15 % 6`` returns ``3``
+       * ``15 // 6`` returns ``2``
+       * ``2 ^ 3`` returns ``8``
        * ``column_1 + column2``
    * * ``and``, ``&&``, ``or``, ``||`` (return a boolean)
      * Boolean operators: and, and, or, or
-     * * ``true and true`` (returns ``true``)
-       * ``true && false`` (returns ``false``)
-       * ``true or false`` (returns ``true``)
-       * ``false || false`` (returns ``false``)
+     * * ``true and true`` returns ``true``
+       * ``true && false`` returns ``false``
+       * ``true or false`` returns ``true``
+       * ``false || false`` returns ``false``
    * * ``>``, ``<``, ``>=``, ``<=``, ``==``, ``!=``
-     * Comparison operators: greater than, lower than, greater or equal to, lower or equal to, equal to, different than (return a boolean)
-     * * ``3 < 4`` (returns ``true``)
-       * ``5 >= 10`` (returns ``false``)
+     * Comparison operators: greater than, lower than, greater or equal to, lower or equal to, equal to, different than return a boolean
+     * * ``3 < 4`` returns ``true``
+       * ``5 >= 10`` returns ``false``
    * * ``&``
      * String concatenation operator
-     * ``'Hello' & ' world'`` (returns ``'Hello world'``)
+     * ``'Hello' & ' world'`` returns ``'Hello world'``
 
 Ternary operator
 ^^^^^^^^^^^^^^^^
@@ -263,7 +264,7 @@ Text processing
      * Description
      * Example
    * * ``length([text])``
-     * Returns the length of the text
+     * Return the length of the text
      * ``length('hello')`` returns ``5``
    * * ``lower([text])``, ``upper([text])``
      * Convert text to lowercase, to uppercase
@@ -282,7 +283,7 @@ Text processing
      * Convert a text to its ascii representation
      * ``normalize("你好")`` returns ``"ni hao"``
    * * ``substring([text],[numeric],[numeric])``
-     * Extract a substring of text, starting at index indicated by 2nd argument and of a length indicated by 2nd argument.
+     * Extract a substring of text, starting at index indicated by 2nd argument and of a length indicated by 3rd argument (optional).
      * ``substring('hello', 1, 3)`` returns ``"ell"``
 
 Mathematical functions
@@ -308,7 +309,7 @@ Mathematical functions
      * Max and min functions
      *
    * * ``round([numeric])``
-     * Returns the nearest integer
+     * Return the nearest integer
      * * ``round(4.6)`` returns ``5``
        * ``round(3.3)`` returns ``4``
    * * ``random([numeric])``
@@ -321,10 +322,10 @@ Mathematical functions
      * Exponential, logarithm and base 10 logarithm functions
      * ``exp(1)`` returns ``E``
    * * ``radians([numeric])``
-     * Converts an angle from degrees to radians
+     * Convert an angle from degrees to radians
      * ``radians(180)`` returns ``PI``
    * * ``degrees([numeric])``
-     * Converts an angle from radians to degrees
+     * Convert an angle from radians to degrees
      * ``degrees(PI)`` returns ``180``
    * * ``cos([numeric])``, ``cosh([numeric])``, ``sin([numeric])``, ``sinh([numeric])``, ``tan([numeric])``, ``tanh([numeric])``
      * Cosine, hyperbolic cosine, sine, hyperbolic sine, tangent, hyperbolic tangent (in radians)
