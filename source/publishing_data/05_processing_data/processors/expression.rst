@@ -1,62 +1,41 @@
 Expression processor
 ====================
 
-This processor makes it possible to write complex expression patterns using field values.
+The expression processor is a versatile processor that takes an expression as an argument and outputs its result in a field.
 
-Example of a simple addition:
+The expression can be composed of:
 
-.. ifconfig:: language == 'en'
+- identifiers (e.g: a field name like ``column_1`` or a forced field name like ``$column_1``),
+- numbers (e.g: ``2`` or ``3.6``),
+- textual literals (e.g ``"hello"`` or ``'world'``),
+- booleans (e.g: ``true`` or ``false``),
+- operators (e.g: ``+``, ``OR``, ``not``, ``<=``),
+- keywords (e.g: a mathematical constant like ``pi`` and ``e``),
+- functions (e.g: ``now()``, ``sin(number)``, ``startswith("hello', 'he')``).
 
-  .. figure:: screenshots/processing__expression-sum-en.png
+Getting started
+---------------
+
+**Example of a simple addition**
+
+.. localizedimage:: screenshots/processing__expression-sum.png
     :alt: Expression Processor basic sum
-    :align: center
 
-    Example of a basic addition with the Expression processor. The "Result" column contains the result of the addition (this column was not in the data source).
+The "Result" column, which is a new column created by the processor, contains the result of the sum.
 
-.. ifconfig:: language == 'fr'
+**Example of a mathematical function**
 
-  .. figure:: screenshots/processing__expression-sum-fr.png
-    :alt: Expression Processor basic sum
-    :align: center
-
-    Example of a basic addition with the Expression processor. The "Result" column contains the result of the addition (this column was not in the data source).
-
-Example of a mathematical function:
-
-.. ifconfig:: language == 'en'
-
-  .. figure:: screenshots/processing__expression-function-en.png
+.. localizedimage:: screenshots/processing__expression-function.png
     :alt: Expression Processor function
-    :align: center
 
-    Example of a mathematical function using the Expression processor
+**Example of a conditional expression**
 
-.. ifconfig:: language == 'fr'
+The idea is to create a new column which values are computed from the values of another column in the dataset. In this case, a new column named "Anomaly Detected ?" is created and filled with "YES" or "NO", depending on whether the value in ``column_1`` is greater than ``5`` or not.
 
-  .. figure:: screenshots/processing__expression-function-fr.png
-    :alt: Expression Processor function
-    :align: center
+This kind of expression is called a **ternary operator** (``condition ? value if true : value if false``) and will be detailed below.
 
-    Example of a mathematical function using the Expression processor
-
-Example of a conditional expression: the idea is to create a new column (e.g for filtering) which values depend on condition on values of another column of the dataset. Here, a new column named "Anomaly Detected ?" containing YES/NO, depends on the values of another column being in a certain range.
-
-.. ifconfig:: language == 'en'
-
-  .. figure:: screenshots/processing__expression-condition-en.png
+.. localizedimage:: screenshots/processing__expression-condition.png
     :alt: Expression Processor conditional expression
-    :align: center
-
-    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression is true : value if false``. Please note that ``value if false`` is optional, so you can write ``=expression ? value if the expression is true``.
-
-.. ifconfig:: language == 'fr'
-
-  .. figure:: screenshots/processing__expression-condition-fr.png
-    :alt: Expression Processor conditional expression
-    :align: center
-
-    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression is true : value if false``. Please note that ``value if false`` is optional, so you can write ``=expression ? value if the expression is true``.
-
 
 Setting the processor
 ---------------------
@@ -77,20 +56,37 @@ To set the parameters of the Expression processor, follow the indications from t
     * yes
 
 
-Expression pattern
-------------------
+Building an expression
+----------------------
 
-Expressions work similarly as formulas in a spreadsheet software, except instead of referencing cells (i.e. A1 + B2), it is the technical identifiers of the fields that must be referenced (i.e. column_1 + column_2).
+An expression is an instruction for the processor to perform an operation and to return the value in a new or existing column of the dataset.
 
-Expressions also work with both textual (``"your text here"`` or ``text``) and numerical (``2``) content.
+These expression look like what we call formulas in a spreadsheet software, the main difference being that instead of referencing cells (e.g: ``A1 + B2``), the processor can perform operation with the values of given columns (e.g: ``column_1 + column_2``).
+
+Like in a formula, expressions can also contain various elements like:
+
+- numbers (e.g: ``2`` or ``3.6``),
+- textual literals (e.g ``"hello"`` or ``'world'``),
+- booleans (e.g: ``true`` or ``false``),
+- operators (e.g: ``+``, ``OR``, ``not``, ``<=``),
+- keywords (e.g: a mathematical constant like ``pi`` and ``e``),
+- functions (e.g: ``now()``, ``sin(number)``, ``startswith("hello', 'he')``).
 
 .. admonition:: Prerequisite
    :class: important
 
-   Expressions must always start with ``=`` otherwise the processor will not work.
-   Note also that strings must always be double quoted (``"foo"``).
+   The expression processor makes more sense in evaluation mode (which means "compute and return the result of the expression"), activated by starting the expression with an equal sign (``=``). Otherwise, the processor will not evaluate the expression, and simply put it as is in the output field.
 
-In the table below are listed the available unary, binary and ternary operators:
+Operators
+~~~~~~~~~
+
+Operators are symbols that behave generally like functions but are used with a more natural syntax.
+
+The expression processor supports 3 kinds of operators, depending of the number of parameters around them:
+
+- **unary operators** can be used as prefixes or suffixes to alter the value of 1 expression,
+- **binary operators** can be arithmetic operators to perform a calculus between 2 expression, or boolean operators to compare the result of 2 expressions,
+- the **ternary operator**, to convert an conditional expression to either 1 of 2 possible results.
 
 .. list-table::
    :header-rows: 1
