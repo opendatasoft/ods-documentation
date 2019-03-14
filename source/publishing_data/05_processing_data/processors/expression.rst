@@ -11,7 +11,7 @@ The expression can be composed of:
 - **booleans** (e.g: ``true`` or ``false``),
 - **operators** (e.g: ``+``, ``OR``, ``not``, ``<=``),
 - **keywords** (e.g: a mathematical constant like ``pi`` and ``e``),
-- **functions** (e.g: ``now()``, ``sin(number)``, ``startswith("hello', 'he')``).
+- **functions** (e.g: ``now()``, ``sin(number)``, ``startswith('hello', 'he')``).
 
 .. admonition:: Prerequisite
    :class: important
