@@ -27,7 +27,7 @@ Editing a saved visualization
 Deleting a saved visualization
 ------------------------------
 
-1. In the last column of the saved visualizations table, click on the |icon-delete| button of the visualization to delete. A pop-up window appears.
+1. In the last column of the saved visualizations table, click on the |icon-delete| button of the visualization to delete. A confirmation window appears.
 2. Click on "Yes, delete chart/map!" to confirm the deletion.
 
 

@@ -1,7 +1,7 @@
 Registering applications
 ========================
 
-From the Applications tab, authenticated users have the possibility to see the list of registered applications as well as to register new OAuth2 applications.
+From the Applications tab, authenticated users have the possibility to see the list of registered applications as well as to register new OAuth2 applications (more information on OAuth2 in the `Search API documentation <https://help.opendatasoft.com/apis/ods-search-v2/#using-oauth2-authorization>`_)
 
 .. image:: images/account_applications.png
 
