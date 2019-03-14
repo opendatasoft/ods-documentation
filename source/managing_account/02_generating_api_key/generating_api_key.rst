@@ -8,7 +8,7 @@ From the API keys tab of their account, authenticated users have the possibility
 
    API keys are bound to a specific domain. They only work on the domain on which they were created.
 
-These API keys allow to use the following APIs: ODS Search API v1 and v2, OData, WFS and CSW (more info in the :doc:`Using APIs </exploring_catalog_and_datasets/0404_getting_involved/using_api>` documentation).
+These API keys allow to use the following APIs: ODS Search API v1 and v2, OData, WFS and CSW (more info in the :doc:`Using APIs </exploring_catalog_and_datasets/04_getting_involved/using_api>` documentation).
 
 .. image:: images/account_apikey.png
 
