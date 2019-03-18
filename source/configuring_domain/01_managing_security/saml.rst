@@ -72,14 +72,14 @@ Register and configure an identity provider
 
 2. Check "Allow access for SAML users"
 
-.. image:: images/saml__config--en.png
+.. image:: images/saml_config.png
     :alt: SAML IDP configuration interface
 
 3. Paste your identity provider metadata document in the "IDP metadata document" field.
 
 4. If you are using Microsoft Azure Active Directory as an IDP, check the related checkbox.
 
-5. If you wish to disable transient connection mode, thereby making sure only linked users can connect to the platform through SAML, check the related checkbox.
+5. If you wish to disable local user creation, making sure only existing users can connect to the platform through SAML, check the "Disable local user provisioning" checkbox.
 
 6. Input the set of attributes sent by the IDP that uniquely define a user.
 
