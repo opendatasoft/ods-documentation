@@ -4,18 +4,18 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Translator_NL1 <datawords.translator.nl1@gmail.com>, 2018
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2018
 # Admin OpenDataSoft <admin@opendatasoft.com>, 2018
+# Translator_NL1 <datawords.translator.nl1@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-05 16:02+0100\n"
+"POT-Creation-Date: 2019-03-06 14:41+0100\n"
 "PO-Revision-Date: 2018-06-27 09:08+0000\n"
-"Last-Translator: Admin OpenDataSoft <admin@opendatasoft.com>, 2018\n"
+"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2019\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,6 +33,10 @@ msgid ""
 "users authentication and permission, and see little value in using the built"
 " in OpenDataSoft user management features."
 msgstr ""
+"Sommige organisaties hebben reeds een user directory service die de "
+"authentificatie en toelating van hun gebruikers beheert en zien weinig "
+"waarde in het gebruik van de ingebouwde gebruikersbeheerfuncties van "
+"OpenDataSoft."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:6
 msgid ""
@@ -43,12 +47,21 @@ msgid ""
 "connect to the platform using the identity provider, and if they have one, "
 "reuse their active security context to create a SSO mechanism."
 msgstr ""
+"Om deze gebruikerscase aan te pakken, ondersteunt het OpenDataSoft-portaal "
+"externe Identity Providers (IdP) via de SAMLv2-norm. Zo kan een "
+"identiteitssamenvoeging worden opgezet tussen een domein, dat zal optreden "
+"als service provider, en deze IdP. Deze samenvoeging laat gebruikers van een"
+" domein toe in te loggen op het platform met de identity provider en wanneer"
+" ze er een hebben, kunnen ze hun actieve veiligheidscontext hergebruiken om "
+"een SSO-mechanisme aan te maken."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:8
 msgid ""
 "When a SAML identity provider is configured on a domain, a user can belong "
 "in 3 categories."
 msgstr ""
+"Wanneer een SAML identity provider is geconfigureerd op een domein, kan een "
+"gebruiker tot 3 categorieën behoren."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:10
 msgid ""
@@ -58,6 +71,12 @@ msgid ""
 "account is accessible on the whole OpenDataSoft network. OpenDataSoft users "
 "are represented throughout the platform with the |icon-world| pictogram."
 msgstr ""
+"Een standaard **OpenDataSoft user** die via e-mail werd uitgenodigd of zich "
+"heeft geabonneerd op een domein: deze gebruiker logt in op het domein met "
+"behulp van de standaard sign-in interface met zijn gebruikelijke "
+"gebruikersnaam en wachtwoord van OpenDataSoft en dit account is toegankelijk"
+" op het volledige OpenDataSoft-netwerk. OpenDataSoft-gebruikers worden op "
+"het volledige platform vertegenwoordigd met het |icon-world| pictogram."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:12
 msgid ""
@@ -67,6 +86,12 @@ msgid ""
 "features relying on the OpenDataSoft network. Local users are represented "
 "throughout the platform with the |icon-id-card| pictogram."
 msgstr ""
+"Een **local user** die wordt geauthentificeerd via de IdP van de "
+"organisatie: deze gebruiker logt uitsluitend via de IdP van de organisatie "
+"in op het domein en aangezien dit enkel beschikbaar is op een specifiek "
+"domein, kan het worden beperkt in het gebruik van de functies die vertrouwen"
+" op het OpenDataSoft-netwerk. Plaatselijke gebruikers worden op het "
+"volledige platform vertegenwoordigd met het |icon-id-card| pictogram."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:14
 msgid ""
@@ -78,10 +103,18 @@ msgid ""
 "represented throughout the platform with both the |icon-world| and the "
 "|icon-id-card| pictograms."
 msgstr ""
+"Een **linked user** die een standaard OpenDataSoft-account heeft maar "
+"gekoppeld is aan dit specifieke domein met een identiteit van de IdP van de "
+"organisatie. Deze gebruiker is een standaard OpenDataSoft-gebruiker die zich"
+" kan authentificeren met behulp van zowel de sign-in interface van "
+"OpenDataSoft en de IdP van de organisatie. Aangezien linked users gebruikers"
+" van OpenDataSoft met SAML authentificatiemogelijkheden zijn, worden ze op "
+"het volledige platform vertegenwoordigd met zowel het |icon-world| als het "
+"|icon-id-card| pictogram."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:17
 msgid "Local user"
-msgstr ""
+msgstr "Plaatselijke gebruiker"
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:19
 msgid ""
@@ -90,22 +123,31 @@ msgid ""
 " connection, a local user will be created for the user based on the domain's"
 " SAML settings."
 msgstr ""
+"Elke gebruiker die een gebruikersaccount op de IdP heeft die toevertrouwd is"
+" door een domein en geen gebruikersaccount van OpenDataSoft heeft, kan "
+"inloggen via SAML. Wanneer voor het eerst wordt ingelogd, zal een "
+"plaatselijke gebruiker worden aangemaakt voor de gebruiker op basis van de "
+"SAML-instelling van het domein."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:21
 msgid "These settings are:"
-msgstr ""
+msgstr "Deze instellingen zijn:"
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:23
 msgid ""
 "the **account mapper**: a set of IdP-sent parameters that uniquely identify "
 "a user,"
 msgstr ""
+"de **account mapper**: een reeks door IdP gestuurde parameters die een "
+"gebruiker op een unieke manier identificeren,"
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:24
 msgid ""
 "the **attribute mapper**: the parameters that correspond to the user first "
 "name, last name and email address."
 msgstr ""
+"de **attribute mapper**: de parameters die overeenstemmen met de voornaam, "
+"familienaam en e-mailadres van de gebruiker."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:26
 msgid ""
@@ -114,6 +156,11 @@ msgid ""
 "domain level, on individual datasets or via groups (other than the ``SAML "
 "users`` group, of which they are automatic members)."
 msgstr ""
+"Deze plaatselijke gebruikers hebben de toelating om de publieke datasets van"
+" het standaard domein te exploreren. Er kunnen extra toelatingen worden "
+"gegeven aan deze gebruikers op domeinniveau, op individuele datasets of via "
+"groepen (andere dan de \"SAML users\" groep, waarvan ze automatisch lid "
+"zijn)."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:28
 msgid ""
@@ -122,10 +169,15 @@ msgid ""
 "configuration. Disabling local user provisioning will not prevent existing "
 "local users from signing in using SAML."
 msgstr ""
+"Het aanmaken van nieuwe plaatselijke gebruikers via een IdP authentificatie "
+"kan worden gedeactiveerd met behulp van het \"Disable local user "
+"provisioning\" aanvinkvakje in de SAML configuratie. Het deactiveren van het"
+" aanmaken van plaatselijke gebruikers zal niet verhinderen dat bestaande "
+"plaatselijke gebruikers intekenen met behulp van SAML."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:31
 msgid "Linked user"
-msgstr ""
+msgstr "Gekoppelde gebruikers"
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:33
 msgid ""
@@ -133,6 +185,9 @@ msgid ""
 "particular values of the set of parameters defined in the account mapper "
 "setting."
 msgstr ""
+"Gebruikers die een OpenDataSoft gebruikersaccount hebben kunnen dit account "
+"koppelen aan specifieke waarden van de reeks parameters die gedefinieerd "
+"staan in de account mapper setting."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:35
 msgid ""
@@ -142,22 +197,33 @@ msgid ""
 "considered as OpenDataSoft users. They are also automatic members of the "
 "``SAML users`` group."
 msgstr ""
+"Nadat de link werd aangemaakt, zullen gebruikers die inloggen via SAML, "
+"ingelogd worden op hun OpenDataSoft-gebruikersaccount. Aan gekoppelde "
+"gebruikers kunnen toelatingen worden toegekend en ze kunnen worden "
+"toegevoegd aan groepen, net zoals alle gebruikers en worden beschouwd als "
+"OpenDataSoft-gebruikers. Ze zijn ook automatisch lid van de \"SAML users\" "
+"groep."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:37
 msgid ""
 "This mode allows any user to have an OpenDataSoft account, but still connect"
 " through SAML on a specific domain."
 msgstr ""
+"Met deze modus kunnen gebruikers een OpenDataSoft-account hebben maar nog "
+"steeds via SAML inloggen op een specifiek domein."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:39
 msgid "There are 2 methods for linking an OpenDataSoft user account:"
 msgstr ""
+"Er zijn twee manieren om een OpenDataSoft-gebruikersaccount te koppelen:"
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:41
 msgid ""
 "the first one is to click on ``Link your account to a SAML account on this "
 "domain`` in the identity tab of the user account settings:"
 msgstr ""
+"de eerste is om te klikken op \"Link your account to a SAML account on this "
+"domein\" in de identiteitstab van de instellingen van het gebruikersaccount:"
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:46
 msgid ""
@@ -166,6 +232,11 @@ msgid ""
 " actually speeds up the user account creation process and allows for a quick"
 " account linking:"
 msgstr ""
+"de andere methode is om de koppeling aan te maken tijdens het aanmaakproces "
+"van het gebruikersaccount door te klikken op de koppeling om de registratie "
+"via SAML te voltooien. Hierdoor wordt het aanmaakproces van het "
+"gebruikersaccount versneld en wordt een snelle koppeling van het account "
+"mogelijk gemaakt:"
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:52
 msgid "Automatic Single Sign On"
@@ -176,6 +247,8 @@ msgid ""
 "The OpenDataSoft platform offers a mechanism to automatically log in users "
 "when they first visit the domain."
 msgstr ""
+"Het OpenDataSoft-platform biedt een mechanisme om automatisch gebruikers in "
+"te loggen wanneer ze het domein voor de eerste keer bezoeken."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:56
 msgid ""
@@ -187,6 +260,15 @@ msgid ""
 "OpenDataSoft credentials have the option to do so by manually visiting the "
 "domain login page at ``https://<platform-url>/login/``"
 msgstr ""
+"Het werkt door het opstarten van de SAML authentificatiestroom voor anonieme"
+" gebruikers alsof ze hadden geklikt op \"log in with SAML\", zodra ze "
+"(vrijwel) elke pagina in het domein vinden. Deze functie is enkel zinvol "
+"voor private domeinen omdat ze verhindert dat anonieme gebruikers toegang "
+"hebben tot het domein. Wanneer Automatic Single Sign On geactiveerd is, "
+"hebben gebruikers die op het platform willen inloggen met behulp van hun "
+"OpenDataSoft identificatiegegevens, de mogelijkheid om dit te doen door "
+"manueel de inlogpagina van het domein te bezoeken op ``https://<platform-"
+"url>/login/``"
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:60
 msgid "Single Log Out"
