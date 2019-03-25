@@ -8,7 +8,7 @@ In the OpenDataSoft platform, the configuration of the available exports is done
 Specifying a sort for exports
 -----------------------------
 
-By default, the records of a dataset export are ordered randomly. It is possible to configure the sorting of the records, by choosing a sort type for a chosen field.
+By default, the records of a dataset export are not ordered. It is possible to configure the sorting of the records, by choosing a sort type for a chosen field.
 
 .. admonition:: Prerequisite
    :class: important
