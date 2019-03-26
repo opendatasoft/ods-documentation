@@ -210,7 +210,7 @@ translations: pull-translations push-translations
 
 pull-translations:
 	@echo "Fetching translation files from transifex"
-	tx pull --mode=developer -l $(TRANSLATED_LANGUAGES)
+	tx pull -f --mode=developer -l $(TRANSLATED_LANGUAGES)
 	find . -name '*.po'| xargs sed -i '.bak' $$'s/\xC2\xA0/ /g' && find . -name '*.po.bak' -delete
 	@echo "Translations (.po) retrieved from transifex."
 
