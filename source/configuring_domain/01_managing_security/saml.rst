@@ -49,7 +49,7 @@ There are 2 methods for linking an OpenDataSoft user account:
     :alt: Account registration in SAML enabled domains
 
 Default login page selection
-------------------------
+----------------------------
 
 The OpenDataSoft platform allows to choose the login page that will be displayed to users when they click on a login link
 or try to access a restricted page.
