@@ -6,7 +6,7 @@ This processor is a versatile processor that takes an expression as an argument 
 The expression can be composed of:
 
 - **identifiers**,
-- **literals** (like numbers, textual literals, booleans and keywords),
+- **literals** (numbers, textual literals, booleans and keywords),
 - **operators**,
 - **functions**.
 
@@ -44,7 +44,7 @@ An expression is an instruction for the processor to perform an operation and to
 
 These expressions look like what we call "formulas" in a spreadsheet software. The main difference is that instead of referencing cells (e.g: ``A1 + B2``), the processor can perform operations with the values of given columns (e.g: ``column_1 + column_2``).
 
-Like in a formula, expressions can be any combination of various elements like:
+Like in a formula, expressions can be any combination of various elements. The Expression processor supports the following elements:
 
 - identifiers (e.g: a field name like ``column_1`` or a forced field name like ``$column_1``),
 - literals:
