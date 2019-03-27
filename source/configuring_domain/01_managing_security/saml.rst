@@ -54,8 +54,7 @@ Default login page selection
 The OpenDataSoft platform allows to choose the login page that will be displayed to users when they click on a login link
 or try to access a restricted page.
 
-If the IdP login page is selected as default, the SAML authentication flow will be initiated automatically if an anonymous
-user clicks on the login link or try to access a restricted page like the backoffice. When the IdP login page is selected, users who wish to connect to the platform using their OpenDataSoft credentials have the option to do so by manually visiting the domain login page at ``https://<platform-url>/login/``.
+If the IdP login page is selected as default, the SAML authentication flow will be initiated automatically if an anonymous user clicks on the login link or try to access a restricted page like the backoffice. When the IdP login page is selected, users who wish to connect to the platform using their OpenDataSoft credentials have the option to do so by manually visiting the domain login page at ``https://<platform-url>/login/``.
 
 
 Single Log Out
