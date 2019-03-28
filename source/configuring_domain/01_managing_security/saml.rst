@@ -48,12 +48,13 @@ There are 2 methods for linking an OpenDataSoft user account:
 .. image:: images/saml__validation-link--en.png
     :alt: Account registration in SAML enabled domains
 
-Automatic Single Sign On
-------------------------
+Default login page selection
+----------------------------
 
-The OpenDataSoft platform offers a mechanism to automatically log in users when they first visit the domain.
+The OpenDataSoft platform allows to choose the login page that will be displayed to users when they click on a login link
+or try to access a restricted page.
 
-It works by starting the SAML authentication flow for anonymous users, as if they had clicked "log in with SAML", as soon as they encounter (almost) any page in the domain. This feature only makes sense for private domains as it prevents anonymous access to the domain. When Automatic Single Sign On is activated, users who wish to connect to the platform using their OpenDataSoft credentials have the option to do so by manually visiting the domain login page at ``https://<platform-url>/login/``
+If the IdP login page is selected as default, the SAML authentication flow will be initiated automatically if an anonymous user clicks on the login link or try to access a restricted page like the backoffice. When the IdP login page is selected, users who wish to connect to the platform using their OpenDataSoft credentials have the option to do so by manually visiting the domain login page at ``https://<platform-url>/login/``.
 
 
 Single Log Out
@@ -104,12 +105,12 @@ Register and configure an identity provider
 
    For instance, if your identity provider sends a list of "Roles" for the users and you want to make sure that only users that have a role can get access, input "Roles" in the first box under "Conditionnal access". If you only want users with the role "DataAccess" to be able to connect to the domain, input "DataAccess" in the second box.
 
-9. Optionally configure automatic single sign on
+9. Optionally configure the default login page
 
-   The automatic single sign on configuration can be found by navigating to the security page in the domain configuration interface.
+   The default login page configuration can be found by navigating to the security page in the domain configuration interface.
 
-.. image:: saml__auto_sso--en.png
-    :alt: SAML auto-sso configuration interface in the anonymous access section of the security configuration page
+.. image:: saml__default_login_page_selection--en.png
+    :alt: Default login page selection interface in the security configuration page
 
 Configure your identity provider
 --------------------------------
