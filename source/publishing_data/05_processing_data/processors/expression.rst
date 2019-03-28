@@ -112,6 +112,11 @@ The Expression processor supports 3 kinds of operators, depending on the number 
 - **binary operators** can be arithmetic operators to perform a calculus between 2 expressions, or boolean operators to compare the result of 2 expressions,
 - the **ternary operator**, to convert a conditional expression to either 1 of 2 possible results.
 
+.. admonition:: Note
+   :class: note
+
+   Operator precedence works in the following order: factorial, exponential, sign, euclidian division, function evaluation, multiplication/division, addition/substraction, concatenation, not, comparison, and, or, ternary operator, ternary operator without else.
+
 Unary operators
 ^^^^^^^^^^^^^^^
 
@@ -153,7 +158,7 @@ Binary operators
        * ``2 ^ 3`` returns ``8``
        * ``column_1 + column2``
    * * ``and``, ``&&``, ``or``, ``||`` (return a boolean)
-     * Boolean operators: and, and, or, or
+     * Boolean operators: and, or
      * * ``true and true`` returns ``true``
        * ``true && false`` returns ``false``
        * ``true or false`` returns ``true``
