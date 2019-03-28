@@ -1,61 +1,21 @@
 Expression processor
 ====================
 
-This processor makes it possible to write complex expression patterns using field values.
+This processor is a versatile processor that takes an expression as an argument and outputs its result in a field.
 
-Example of a simple addition:
+The expression can be composed of:
 
-.. ifconfig:: language == 'en'
+- **identifiers**,
+- **literals** (numbers, textual literals, booleans and keywords),
+- **operators**,
+- **functions**.
 
-  .. figure:: screenshots/processing__expression-sum-en.png
-    :alt: Expression Processor basic sum
-    :align: center
+.. admonition:: Prerequisite
+   :class: important
 
-    Example of a basic addition with the Expression processor. The "Result" column contains the result of the addition (this column was not in the data source).
+   The Expression processor makes more sense in evaluation mode (which means "compute and return the result of the expression"), activated by starting the expression with an equal sign (``=``). Otherwise, the processor will not evaluate the expression, and simply put it as is in the output field.
 
-.. ifconfig:: language == 'fr'
-
-  .. figure:: screenshots/processing__expression-sum-fr.png
-    :alt: Expression Processor basic sum
-    :align: center
-
-    Example of a basic addition with the Expression processor. The "Result" column contains the result of the addition (this column was not in the data source).
-
-Example of a mathematical function:
-
-.. ifconfig:: language == 'en'
-
-  .. figure:: screenshots/processing__expression-function-en.png
-    :alt: Expression Processor function
-    :align: center
-
-    Example of a mathematical function using the Expression processor
-
-.. ifconfig:: language == 'fr'
-
-  .. figure:: screenshots/processing__expression-function-fr.png
-    :alt: Expression Processor function
-    :align: center
-
-    Example of a mathematical function using the Expression processor
-
-Example of a conditional expression: the idea is to create a new column (e.g for filtering) which values depend on condition on values of another column of the dataset. Here, a new column named "Anomaly Detected ?" containing YES/NO, depends on the values of another column being in a certain range.
-
-.. ifconfig:: language == 'en'
-
-  .. figure:: screenshots/processing__expression-condition-en.png
-    :alt: Expression Processor conditional expression
-    :align: center
-
-    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression is true : value if false``. Please note that ``value if false`` is optional, so you can write ``=expression ? value if the expression is true``.
-
-.. ifconfig:: language == 'fr'
-
-  .. figure:: screenshots/processing__expression-condition-fr.png
-    :alt: Expression Processor conditional expression
-    :align: center
-
-    Example of a conditional expression using the Expression processor, with the creation of the "Anomaly Detected ?" (which was not initially present in the original data source). The syntax is ``=expression ? value if the expression is true : value if false``. Please note that ``value if false`` is optional, so you can write ``=expression ? value if the expression is true``.
+   The starting equal sign (``=``) will be omitted through all the following examples.
 
 
 Setting the processor
@@ -77,197 +37,316 @@ To set the parameters of the Expression processor, follow the indications from t
     * yes
 
 
-Expression pattern
-------------------
+Building an expression
+----------------------
 
-Expressions work similarly as formulas in a spreadsheet software, except instead of referencing cells (i.e. A1 + B2), it is the technical identifiers of the fields that must be referenced (i.e. column_1 + column_2).
+An expression is an instruction for the processor to perform an operation and to return the value in a new or existing column of the dataset.
 
-Expressions also work with both textual (``"your text here"`` or ``text``) and numerical (``2``) content.
+These expressions look like what we call "formulas" in a spreadsheet software. The main difference is that instead of referencing cells (e.g: ``A1 + B2``), the processor can perform operations with the values of given columns (e.g: ``column_1 + column_2``).
 
-.. admonition:: Prerequisite
+Like in a formula, expressions can be any combination of various elements. The Expression processor supports the following elements:
+
+- identifiers (e.g: a field name like ``column_1`` or a forced field name like ``$column_1``),
+- literals:
+
+    - numbers (e.g: ``2`` or ``3.6``),
+    - textual literals (e.g ``"hello"`` or ``'world'``),
+    - booleans (e.g: ``true`` or ``false``),
+    - keywords (e.g: a mathematical constant like ``pi`` and ``e``),
+
+- operators (e.g: ``+``, ``OR``, ``not``, ``<=``),
+- functions (e.g: ``now()``, ``sin(number)``, ``startswith("hello', 'he')``).
+
+Identifiers
+~~~~~~~~~~~
+
+The main feature of the Expression processor is the ability to perform operations on a record's columns. The technical identifier (or field name) of a column can be used in any expression to access the value of this field for the current record. This technical identifier can be found in the :ref:`field options<configuringoptions>`, as the ``Name`` of this field.
+
+Examples:
+
+- ``column_1`` to access a field named ``column_1`` (and maybe labeled "Column 1")
+- ``name_en`` to access a field named ``name_en`` (and maybe labeled "Name (EN)")
+
+.. admonition:: Important
    :class: important
 
-   Expressions must always start with ``=`` otherwise the processor will not work.
-   Note also that strings must always be double quoted (``"foo"``).
+   In some cases, the field name can be ambiguous, for example if it is a number, if it starts with a number or if it is a reserved keyword like "pi" (the mathematical constant PI) or "e" (the mathematical constant Euler's number).
 
-In the table below are listed the available unary, binary and ternary operators:
+   To force the Expression processor to evaluate an identifier as a field name, it is possible to prefix any identifier with the dollar sign (``$``). The dollar sign can be used for any field name, but it is only mandatory for ambiguous field names.
 
-.. list-table::
-   :header-rows: 1
+Examples:
 
-   * * Operator type
-     * Operators
-   * * Unary operators
-     * +, -, not, ! (not) , ! (factorial), ^ (power)
-   * * Binary operators
-     * +, -, ``*``, /, % (euclidean division), and, &&, or, ||, >, <, >=, <=, ==, != (evaluates to ``True`` or ``False``), &
-       (concatenation of strings, evaluates to a string)
-   * * Ternary operators
-     * op1 ? op2 : op3 (conditional statement). Please note that op3 is optional, so you can write op1 ? op2.
+- ``$column_1`` to access a field named ``column_1`` (and maybe labeled "Column 1")
+- ``$name_en`` to access a field named ``name_en`` (and maybe labeled "Name (EN)")
+- ``$20_to_25_yo`` to access a field named ``20_to_25_yo`` (and maybe labeled "20 to 25 years old")
+- ``$33`` to access a field named ``33``
+- ``$pi`` to access a field named ``pi``
 
-In the table below are listed the available functions:
+In all the following examples, any number or textual literal can be replaced by a field name holding values of the same type. The Expression processor will extract the value for the specified column and perform the required operation with it.
 
-.. list-table::
-   :header-rows: 1
+Several fields (or even the same field several times) can be used at the same time in an expression.
 
-   * * Function type
-     * Functions
-   * * Without operand
-     * now
-   * * Single operand
-     * abs, acos, acosh, asin, asinh, atan, atanh, capitalize, capitalize_all, ceil, cos, day, dayofweek, degrees, empty, exp, factorial, floor, fromtimestamp, gamma, hour, isalnum, isalpha, isdecimal, isdigit, islower, isnumeric, isupper, length, log, log10, lower, minute, month, normalize, quarter, quartertodaterange, radians, random, round, second, sigmoid, sin, sqrt, tan, tolowercase, touppercase, trunc, upper, week, year
-   * * Two operands
-     * add_days, add_hours, add_minutes, add_months, add_seconds, add_years, contains, day, dayofweek, distance, div, endswith, gcd, geopoint2d_towgs84, geoshape_towgs84, hour, match, max, microsecond, min, minute, mod, month, pow, quarter, quartertodaterange, random, round, second, startswith, substring, week, year
-   * * Three operands
-     * center, datediff, ljust, replace, rjust, substring
+Literals
+^^^^^^^^
 
+Literals like **numbers**, **textual literals** (single or double quoted), **booleans** and **keywords** can be used in any expression.
 
-Examples
---------
+Examples:
+
+- ``3``
+- ``2.5``
+- ``"Hello"`` or ``'Hello'``
+- ``'A bigger sentence'``
+- ``true`` or ``false``
+- ``pi``, ``PI`` or ``Pi``
+- ``e`` or ``E``
+
+Operators
+~~~~~~~~~
+
+Operators are symbols that behave generally like functions but are used with a more natural syntax.
+
+The Expression processor supports 3 kinds of operators, depending on the number of parameters around them:
+
+- **unary operators** can be used as prefixes or suffixes to alter the value of 1 expression,
+- **binary operators** can be arithmetic operators to perform a calculus between 2 expressions, or boolean operators to compare the result of 2 expressions,
+- the **ternary operator**, to convert a conditional expression to either 1 of 2 possible results.
 
 .. admonition:: Note
    :class: note
 
-   Keep in mind that for each expression, the examples are presented with actual numbers, but they can be replaced with the processed dataset's fields technical identifiers.
+   Operator precedence works in the following order: factorial, exponential, sign, euclidian division, function evaluation, multiplication/division, addition/substraction, concatenation, not, comparison, and, or, ternary operator, ternary operator without else.
+
+Unary operators
+^^^^^^^^^^^^^^^
 
 .. list-table::
    :header-rows: 1
 
-   * * Description
+   * * Operator
+     * Description
      * Example
-     * Result
-   * * Simple addition
-     * 1 + 1
-     * 2
-   * * Addition with a negative number
-     * -3 + .1
-     * -2.9
-   * * Product with a field
-     * price * 2
-     * 24 (if price is a field valued to 12)
-   * * Factorial
-     * 3!
-     * 6
-   * * Power
-     * 2^3
-     * 8
-   * * Greater than: true or false
-     * 1 > 2
-     * False
-   * * Greater or equal: true or false
-     * 1 >= 1
-     * True
-   * * Ternary operation
-     * 1 >= 1 ? 2 : 3
-     * 2
-   * * String concatenation
-     * "foo" & "," & "bar"
-     * foo,bar
-   * * Cosinus
-     * cos(2 * pi)
-     * 1
-   * * Logarithm
-     * log(e)
-     * 1
-   * * Exponential
-     * exp(4)
-     * 54,598
-   * * Rounding
-     * round(2.3)
-     * 2
-   * * Rounding
-     * round(2.7)
-     * 3
-   * * Ceiling
-     * ceil(2.3)
-     * 3
-   * * Flooring
-     * floor(2.3)
-     * 2
-   * * Case checking: true or false
-     * islower("aBc")
-     * False
-   * * Lowcasing
-     * lower("aBc")
-     * abc
-   * * Alphanumeric: true or false
-     * isalnum("123")
-     * True
-   * * Capitalize
-     * capitalize("foo bar")
-     * Foo bar
-   * * Capitalize all words
-     * capitalize_all("foo bar")
-     * Foo Bar
-   * * Random number generator
-     * random(10)
-     * 1.80536931404
-   * * Random number generator, in intervals
-     * random(10, 11)
-     * 10.7280438796
-   * * Right padding
-     * ljust("4400", 5, "0")
-     * 44000
-   * * Left padding
-     * rjust("4400", 5, "0")
-     * 04400
-   * * Left and right padding
-     * center("4400", 6,"0")
-     * 044000
-   * * Extract year from date
-     * year("2014-06-07")
-     * 2014
-   * * Extract hour from datetime
-     * hour("2014-06-07 17:00")
-     * 17
-   * * Extract hour from datetime with timezone
-     * hour("2014-06-07 17:00", "Europe/Paris")
-     * 19
-   * * Replace text in string
-     * replace("abcd", "b", "e")
-     * aecd
-   * * Count years between 2 dates
-     * datediff("2014-02-28", "2015-02-28", "year")
-     * 1
-   * * Count months between 2 dates
-     * datediff("2014-02-28", "2015-02-28", "month")
-     * 12
-   * * Count days between 2 dates
-     * datediff("2014-02-28", "2015-02-28", "day")
-     * 365
-   * * Count hours between 2 datetimes
-     * datediff("2014-02-28T20:00:00Z", "2014-02-28T21:00:00Z", "hour")
-     * 1
-   * * Count minutes between 2 datetimes
-     * datediff("2014-02-28T20:00:00Z", "2014-02-28T21:00:00Z", "minute")
-     * 60
-   * * Count seconds between 2 datetimes
-     * datediff("2014-02-28T20:00:00Z", "2014-02-28T21:00:00Z", "second")
-     * 3600
-   * * Prefix matching: true or false
-     * startswith("hello', 'he')
-     * True
-   * * Prefix matching: true or false
-     * startswith("hello', 'lo')
-     * False
-   * * Suffix matching: true or false
-     * endswith("hello', 'he')
-     * False
-   * * Suffix matching: true or false
-     * endswith("hello', 'lo')
-     * True
-   * * Add months
-     * add_months("2014-11-14", "3")
-     * 2015-02-14
-   * * Substring matching: true or false
-     * contains("hello", "l")
-     * True
-   * * Substring matching: true or false
-     * contains("hello", "A")
-     * False
-   * * Empty: true or false
-     * empty("")
-     * True
-   * * Empty: true or false
-     * empty("hello")
-     * False
+   * * ``-``
+     * Prefix that negates the following value
+     * ``- 4``, ``- [expression]``
+   * * ``not``, ``!`` (not)
+     * Boolean operator that inverts the following condition
+     * * ``not true`` or  ``!true`` returns ``false``
+       * ``not 4 > 5`` returns ``true``
+       * ``!(5 <= 10)`` returns ``false``
+   * * ``!`` (factorial)
+     * Suffix that computes the factorial of an expression
+     * ``3!`` returns ``1*2*3``
+
+Binary operators
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :header-rows: 1
+
+   * * Operator
+     * Description
+     * Example
+   * * ``+``, ``-``, ``*``, ``/``, ``%``, ``//``, ``^``
+     * Arithmetic operators: add, subtract, multiply, divide, modulo, euclidian division, power
+     * * ``2 + 3`` returns ``5``
+       * ``5 - 8`` returns ``-3``
+       * ``9 * 3`` returns ``27``
+       * ``15 / 6`` returns ``2.5``
+       * ``15 % 6`` returns ``3``
+       * ``15 // 6`` returns ``2``
+       * ``2 ^ 3`` returns ``8``
+       * ``column_1 + column2``
+   * * ``and``, ``&&``, ``or``, ``||`` (return a boolean)
+     * Boolean operators: and, or
+     * * ``true and true`` returns ``true``
+       * ``true && false`` returns ``false``
+       * ``true or false`` returns ``true``
+       * ``false || false`` returns ``false``
+   * * ``>``, ``<``, ``>=``, ``<=``, ``==``, ``!=``
+     * Comparison operators: greater than, lower than, greater or equal to, lower or equal to, equal to, different than return a boolean
+     * * ``3 < 4`` returns ``true``
+       * ``5 >= 10`` returns ``false``
+   * * ``&``
+     * String concatenation operator
+     * ``'Hello' & ' world'`` returns ``'Hello world'``
+
+Ternary operator
+^^^^^^^^^^^^^^^^
+
+The expression ``[condition] ? [result if true] : [result if false]`` is called the ternary operator, and allows to return different results depending on a condition.
+
+.. admonition:: Note
+   :class: note
+
+   A ternary expression can be read as "if [condition] then [result if true] else [result if false]".
+
+Examples:
+
+- ``true ? 'hello' : 'goodbye'`` returns ``'hello'``
+- ``false ? 'hello' : 'goodbye'`` returns ``'good bye'``
+- ``4 > 3 ? '4 is bigger' : '3 is bigger'`` returns ``'4 is bigger'``
+- ``10 <= 9 ? '9 is bigger' : '10 is bigger'`` returns ``'10 is bigger'``
+
+The last part of the ternary operator is optional, which means that the following expressions are valid:
+
+- ``true ? 'hello'`` returns ``'hello'``
+- ``false ? 'hello'`` returns an empty result
+
+Functions
+~~~~~~~~~
+
+Functions are used to perform more advanced operations in an expression. They can take 0 or more parameters, and apply transformations on them such as:
+
+- text handling,
+- mathematical functions,
+- date and time handling.
+
+Text handling
+^^^^^^^^^^^^^
+
+**Boolean functions**
+
+.. list-table::
+   :header-rows: 1
+
+   * * Function
+     * Description
+     * Example
+   * * ``isalpha([text])``
+     * True if text only contains letters
+     *
+   * * ``isnumeric([text])``
+     * True if text only contains numbers
+     *
+   * * ``isalnum([text])``
+     * True if text only contains letters or numbers
+     *
+   * * ``isdecimal([text])``
+     * True if text is a valid decimal number
+     *
+   * * ``isdigit([text])``
+     * True if text is a single digit
+     *
+   * * ``islower([text])``
+     * True if text is lowercase
+     *
+   * * ``isupper([text])``
+     * True if text is uppercase
+     *
+   * * ``empty([text])``
+     * True if text is empty
+     *
+   * * ``contains([text],[text])``, ``startswith([text],[text])``, ``endswith([text],[text])``
+     * True if text (1st argument) contains, starts with or ends with text (2nd argument)
+     * * ``contains("hello", "l")`` returns ``True``
+       * ``startswith("hello', 'he')`` returns ``True``
+       * ``endswith("hello', 'he')`` returns ``False``
+
+
+**Processing functions**
+
+.. list-table::
+   :header-rows: 1
+
+   * * Function
+     * Description
+     * Example
+   * * ``length([text])``
+     * Return the length of the text
+     * ``length('hello')`` returns ``5``
+   * * ``lower([text])``, ``upper([text])``
+     * Convert text to lowercase, to uppercase
+     *
+   * * ``capitalize([text])``, ``capitalize_all([text])``
+     * Capitalize the first letter of the text, the first letter of each word
+     *
+   * * * ``ljust([text],[numeric],[text])``
+       * ``rjust([text],[numeric],[text])``
+       * ``center([text],[numeric],[text])``
+     * Left, right and center justify a text (1st argument), until it reaches [numeric] characters with another text (3rd argument)
+     * * ``ljust("4400", 5, "0")`` returns ``"44000"``
+       * ``rjust("4400", 5, "0")`` returns ``"04400"``
+       * ``center("4400", 6,"0")`` returns ``"044000"``
+   * * ``normalize([text])``
+     * Convert a text to its ascii representation
+     * ``normalize("你好")`` returns ``"ni hao"``
+   * * ``substring([text],[numeric],[numeric])``
+     * Extract a substring of text, starting at index indicated by 2nd argument and of a length indicated by 3rd argument (optional).
+     * ``substring('hello', 1, 3)`` returns ``"ell"``
+
+Mathematical functions
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :header-rows: 1
+
+   * * Function
+     * Description
+     * Example
+   * * ``abs([numeric])``
+     * Absolute value
+     * ``abs(-4)`` returns ``4``
+   * * ``sqrt([numeric])``
+     * Square root
+     *
+   * * ``floor([numeric])``, ``ceil([numeric])``
+     * Floor and ceiling functions
+     * * ``floor(4.6)`` returns ``4``
+       * ``ceil(3.3)`` returns ``4``
+   * * ``max([numeric],[numeric])``, ``min([numeric],[numeric])``
+     * Max and min functions
+     *
+   * * ``round([numeric])``
+     * Return the nearest integer
+     * * ``round(4.6)`` returns ``5``
+       * ``round(3.3)`` returns ``4``
+   * * ``random([numeric])``
+     * Random number generator (between 0 and [numeric])
+     * ``random(10)`` returns for example ``7.27846540481``
+   * * ``pow([numeric], [numeric])``
+     * Power function
+     * ``pow(2, 3)`` returns ``8``
+   * * ``exp([numeric])``, ``log([numeric])``, ``log10([numeric])``
+     * Exponential, logarithm and base 10 logarithm functions
+     * ``exp(1)`` returns ``E``
+   * * ``radians([numeric])``
+     * Convert an angle from degrees to radians
+     * ``radians(180)`` returns ``PI``
+   * * ``degrees([numeric])``
+     * Convert an angle from radians to degrees
+     * ``degrees(PI)`` returns ``180``
+   * * ``cos([numeric])``, ``cosh([numeric])``, ``sin([numeric])``, ``sinh([numeric])``, ``tan([numeric])``, ``tanh([numeric])``
+     * Cosine, hyperbolic cosine, sine, hyperbolic sine, tangent, hyperbolic tangent (in radians)
+     * ``sin(PI)`` returns ``0``
+   * * ``acos([numeric])``, ``acosh([numeric])``, ``asin([numeric])``, ``asinh([numeric])``, ``atan([numeric])``, ``atanh([numeric])``
+     * Inverse cosine, inverse cosine hyberbolical, inverse sine, inverse sine hyperbolical, inverse tangent, inverse tangent hyperbolical (in radians)
+     * ``acos(0)`` returns ``PI/2``
+
+Date and time handling
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :header-rows: 1
+
+   * * Function
+     * Description
+     * Example
+   * * ``year([datetime])``, ``quarter([datetime])``, ``month([datetime])``, ``day([datetime])``, ``dayofweek([datetime])``, ``hour([datetime])``, ``minute([datetime])``, ``second([datetime])``
+     * Extract the year, quarter, month, day, day of week, hours, minutes, seconds from a datetime
+     * * ``year("2014-06-07")`` returns ``2014``
+       * ``hour("2014-06-07 17:00")`` returns ``17``
+       * ``hour("2014-06-07 17:00", "Europe/Paris")`` returns ``19``
+   * * ``add_years([datetime],[numeric])``, ``add_months([datetime],[numeric])``, ``add_days([datetime],[numeric])``, ``add_hours([datetime],[numeric])``, ``add_minutes([datetime],[numeric])``, ``add_seconds([datetime],[numeric])``
+     * Add years, months, days, hours, minutes, seconds to a datetime
+     * ``add_months("2014-11-14", "3")`` returns ``2015-02-14``
+   * * ``fromtimestamp([numeric])``
+     * Convert a timestamp to a datetime
+     *
+   * * ``quartertodaterange([numeric])``
+     * Convert a quarter (e.g: "2014Q2", "2019q1") to a date range
+     * ``quartertodaterange("2014Q2")`` returns ``"2014-04-01 / 2014-06-30"``
+   * * ``datediff([datetime], [datetime], [unit])``
+     * Count the number of units between the two datetimes. ``[unit]`` can be "year", "month", "day", "hour", "minute", "second".
+     * * ``datediff("2014-02-28", "2015-02-28", "month")`` returns ``12``
+       * ``datediff("2014-02-28T20:00:00Z", "2014-02-28T21:00:00Z", "minute")`` returns ``60``
