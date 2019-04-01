@@ -51,7 +51,7 @@ Like in a formula, expressions can be any combination of various elements. The E
 
     - numbers (e.g: ``2`` or ``3.6``),
     - textual literals (e.g ``"hello"`` or ``'world'``),
-    - booleans (e.g: ``true`` or ``false``),
+    - booleans (e.g: ``'true'`` or ``'false'``),
     - keywords (e.g: a mathematical constant like ``pi`` and ``e``),
 
 - operators (e.g: ``+``, ``OR``, ``not``, ``<=``),
@@ -97,7 +97,7 @@ Examples:
 - ``2.5``
 - ``"Hello"`` or ``'Hello'``
 - ``'A bigger sentence'``
-- ``true`` or ``false``
+- ``'true'`` or ``'false'``
 - ``pi``, ``PI`` or ``Pi``
 - ``e`` or ``E``
 
@@ -131,9 +131,9 @@ Unary operators
      * ``- 4``, ``- [expression]``
    * * ``not``, ``!`` (not)
      * Boolean operator that inverts the following condition
-     * * ``not true`` or  ``!true`` returns ``false``
-       * ``not 4 > 5`` returns ``true``
-       * ``!(5 <= 10)`` returns ``false``
+     * * ``not('true')`` or  ``!('true')`` is ``false``
+       * ``not(4 > 5)`` is ``true``
+       * ``!(5 <= 10)`` is ``false``
    * * ``!`` (factorial)
      * Suffix that computes the factorial of an expression
      * ``3!`` returns ``1*2*3``
@@ -159,14 +159,14 @@ Binary operators
        * ``column_1 + column2``
    * * ``and``, ``&&``, ``or``, ``||`` (return a boolean)
      * Boolean operators: and, or
-     * * ``true and true`` returns ``true``
-       * ``true && false`` returns ``false``
-       * ``true or false`` returns ``true``
-       * ``false || false`` returns ``false``
+     * * ``'true' and 'true'`` is ``true``
+       * ``'true' && 'false'`` is ``false``
+       * ``'true' or 'false'`` is ``true``
+       * ``'false' || 'false'`` is ``false``
    * * ``>``, ``<``, ``>=``, ``<=``, ``==``, ``!=``
      * Comparison operators: greater than, lower than, greater or equal to, lower or equal to, equal to, different than return a boolean
-     * * ``3 < 4`` returns ``true``
-       * ``5 >= 10`` returns ``false``
+     * * ``3 < 4`` is ``true``
+       * ``5 >= 10`` is ``false``
    * * ``&``
      * String concatenation operator
      * ``'Hello' & ' world'`` returns ``'Hello world'``
@@ -183,15 +183,15 @@ The expression ``[condition] ? [result if true] : [result if false]`` is called 
 
 Examples:
 
-- ``true ? 'hello' : 'goodbye'`` returns ``'hello'``
-- ``false ? 'hello' : 'goodbye'`` returns ``'good bye'``
+- ``'true' ? 'hello' : 'goodbye'`` returns ``'hello'``
+- ``'false' ? 'hello' : 'goodbye'`` returns ``'good bye'``
 - ``4 > 3 ? '4 is bigger' : '3 is bigger'`` returns ``'4 is bigger'``
 - ``10 <= 9 ? '9 is bigger' : '10 is bigger'`` returns ``'10 is bigger'``
 
 The last part of the ternary operator is optional, which means that the following expressions are valid:
 
-- ``true ? 'hello'`` returns ``'hello'``
-- ``false ? 'hello'`` returns an empty result
+- ``'true' ? 'hello'`` returns ``'hello'``
+- ``'false' ? 'hello'`` returns an empty result
 
 Functions
 ~~~~~~~~~
