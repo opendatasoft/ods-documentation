@@ -184,7 +184,7 @@ The expression ``[condition] ? [result if true] : [result if false]`` is called 
 Examples:
 
 - ``'true' ? 'hello' : 'goodbye'`` returns ``'hello'``
-- ``'false' ? 'hello' : 'goodbye'`` returns ``'good bye'``
+- ``'false' ? 'hello' : 'goodbye'`` returns ``'goodbye'``
 - ``4 > 3 ? '4 is bigger' : '3 is bigger'`` returns ``'4 is bigger'``
 - ``10 <= 9 ? '9 is bigger' : '10 is bigger'`` returns ``'10 is bigger'``
 
