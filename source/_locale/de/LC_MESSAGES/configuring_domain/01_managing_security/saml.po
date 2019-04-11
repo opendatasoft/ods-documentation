@@ -2,26 +2,26 @@
 # Copyright (C) 2019, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # traducteur_DE2 <datawords.translator.de2@gmail.com>, 2018
 # Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2018
 # Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2018
 # traducteur_DE1 <datawords.translator.de1@gmail.com>, 2019
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-19 17:58+0100\n"
+"POT-Creation-Date: 2019-03-28 15:57+0100\n"
 "PO-Revision-Date: 2018-06-27 09:08+0000\n"
 "Last-Translator: traducteur_DE1 <datawords.translator.de1@gmail.com>, 2019\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:2
@@ -239,6 +239,37 @@ msgstr ""
 "Registrierung über SAML. Dies beschleunigt den Kontoerstellungsprozess und "
 "die Kontoverknüpfung."
 
+#: ../../source/configuring_domain/01_managing_security/saml.rst:52
+msgid "Default login page selection"
+msgstr "Auswahl der standardmäßigen Anmeldeseite"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:54
+msgid ""
+"The OpenDataSoft platform allows to choose the login page that will be "
+"displayed to users when they click on a login link or try to access a "
+"restricted page."
+msgstr ""
+"Die OpenDataSoft-Plattform ermöglicht die Auswahl der Anmeldeseite, die den "
+"Benutzern angezeigt wird, wenn sie auf einen Anmelde-Link klicken oder "
+"versuchen, auf eine eingeschränkte Seite zuzugreifen."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:57
+msgid ""
+"If the IdP login page is selected as default, the SAML authentication flow "
+"will be initiated automatically if an anonymous user clicks on the login "
+"link or try to access a restricted page like the backoffice. When the IdP "
+"login page is selected, users who wish to connect to the platform using "
+"their OpenDataSoft credentials have the option to do so by manually visiting"
+" the domain login page at ``https://<platform-url>/login/``."
+msgstr ""
+"Wird die IdP-Anmeldeseite als Standard ausgewählt, wird der SAML-"
+"Authentifizierungsprozess automatisch eingeleitet, wenn ein anonymer Nutzer "
+"auf den Anmelde-Link klickt oder versucht, auf eine eingeschränkte Seite wie"
+" das Backoffice zuzugreifen. Wird die IdP-Anmeldeseite ausgewählt, können "
+"Benutzer, die sich mit ihren OpenDataSoft-Anmeldeinformationen bei der "
+"Plattform anmelden möchten, dies tun, indem sie die Login-Seite der Domain "
+"unter ``https://<platform-url>/login/`` aufrufen."
+
 #: ../../source/configuring_domain/01_managing_security/saml.rst:61
 msgid "Single Log Out"
 msgstr "Single Log-out"
@@ -389,6 +420,18 @@ msgstr ""
 "in die erste Box unter \"Bedingter Zugang\" ein. Wenn Sie nur Benutzern mit "
 "der Rolle \"DataAccess\" eine Verbindung zur Domain erlauben wollen, geben "
 "Sie bitte \"DataAccess\" in die zweite Box ein."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:108
+msgid "Optionally configure the default login page"
+msgstr "Optionale Konfiguration der Standard-Anmeldeseite"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:110
+msgid ""
+"The default login page configuration can be found by navigating to the "
+"security page in the domain configuration interface."
+msgstr ""
+"Die Konfiguration der standardmäßigen Anmeldeseite ist auf der "
+"Sicherheitsseite der Domain-Konfiguration zu finden."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:116
 msgid "Configure your identity provider"
@@ -641,75 +684,3 @@ msgstr ""
 "Anfrage ``#attr(language, user-language) AND #attr(country, user-country)`` "
 "Beschränkungen für Benutzer festlegen, damit sie nur Nachrichten sehen, die "
 "ihrem Land und ihrer Sprache entsprechen."
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:52
-msgid "Default login page selection"
-msgstr ""
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:54
-msgid ""
-"The OpenDataSoft platform allows to choose the login page that will be "
-"displayed to users when they click on a login link or try to access a "
-"restricted page."
-msgstr ""
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:57
-msgid ""
-"If the IdP login page is selected as default, the SAML authentication flow "
-"will be initiated automatically if an anonymous user clicks on the login "
-"link or try to access a restricted page like the backoffice. When the IdP "
-"login page is selected, users who wish to connect to the platform using "
-"their OpenDataSoft credentials have the option to do so by manually visiting"
-" the domain login page at ``https://<platform-url>/login/``."
-msgstr ""
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:108
-msgid "Optionally configure the default login page"
-msgstr ""
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:110
-#, fuzzy
-msgid ""
-"The default login page configuration can be found by navigating to the "
-"security page in the domain configuration interface."
-msgstr ""
-"Die Konfiguration des automatischen Single Sign-on ist auf der "
-"Sicherheitsseite der Domain-Konfiguration zu finden."
-
-#~ msgid "Automatic Single Sign On"
-#~ msgstr "Automatisches Single Sign-on"
-
-#~ msgid ""
-#~ "The OpenDataSoft platform offers a mechanism to automatically log in users "
-#~ "when they first visit the domain."
-#~ msgstr ""
-#~ "Die OpenDataSoft-Plattform bietet die Möglichkeit zur automatischen "
-#~ "Anmeldung der Benutzer, wenn diese die Domain zum ersten Mal besuchen. "
-
-#~ msgid ""
-#~ "It works by starting the SAML authentication flow for anonymous users, as if"
-#~ " they had clicked \"log in with SAML\", as soon as they encounter (almost) "
-#~ "any page in the domain. This feature only makes sense for private domains as"
-#~ " it prevents anonymous access to the domain. When Automatic Single Sign On "
-#~ "is activated, users who wish to connect to the platform using their "
-#~ "OpenDataSoft credentials have the option to do so by manually visiting the "
-#~ "domain login page at ``https://<platform-url>/login/``"
-#~ msgstr ""
-#~ "Dabei wird der SAML-Authentifizierungsprozess für anonyme Benutzer "
-#~ "gestartet, so als ob sie auf \"Mit SAML anmelden\" geklickt hätten, sobald "
-#~ "sie eine Seite der Domain (dies gilt für fast alle Seiten) aufrufen. Diese "
-#~ "Funktion ist nur für private Domains sinnvoll, da sie den anonymen Zugriff "
-#~ "auf die Domain verhindert. Ist das automatische Single Sign-on aktiviert, "
-#~ "können Benutzer, die sich mit ihren OpenDataSoft-Anmeldeinformationen bei "
-#~ "der Plattform anmelden möchten, dies tun, indem sie die Login-Seite der "
-#~ "Domain unter ``https://<platform-url>login/`` aufrufen."
-
-#~ msgid "Optionally configure automatic single sign on"
-#~ msgstr "Optionale Konfiguration des automatischen Single Sign-on"
-
-#~ msgid ""
-#~ "The automatic single sign on configuration can be found by navigating to the"
-#~ " security page in the domain configuration interface."
-#~ msgstr ""
-#~ "Die Konfiguration des automatischen Single Sign-on ist auf der "
-#~ "Sicherheitsseite der Domain-Konfiguration zu finden."

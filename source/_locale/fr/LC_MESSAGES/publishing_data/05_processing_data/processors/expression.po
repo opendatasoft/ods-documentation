@@ -2,34 +2,88 @@
 # Copyright (C) 2019, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # benrict <benoit.richter@opendatasoft.com>, 2018
 # Hugo Bost <hugo.bost@opendatasoft.com>, 2018
-# Romain Beaudon <romain.beaudon@opendatasoft.com>, 2018
-# Trad_FR2 <datawords.translator.fr2@gmail.com>, 2018
 # Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2018
-# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2018
-# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2018
-#
+# Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2019
+# Trad_FR2 <datawords.translator.fr2@gmail.com>, 2019
+# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
+# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-19 17:58+0100\n"
+"POT-Creation-Date: 2019-03-28 15:57+0100\n"
 "PO-Revision-Date: 2018-06-27 09:13+0000\n"
-"Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2018\n"
+"Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2019\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
-"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:2
 msgid "Expression processor"
 msgstr "Processeur Expression"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:4
+msgid ""
+"This processor is a versatile processor that takes an expression as an "
+"argument and outputs its result in a field."
+msgstr ""
+"Le processeur est versatile. Il peut comprendre une expression comme étant "
+"un argument et afficher le résultat dans un champ."
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:6
+msgid "The expression can be composed of:"
+msgstr "L'expression peut être composée des éléments suivants :"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:8
+msgid "**identifiers**,"
+msgstr "des **identifiants** ;"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:9
+msgid "**literals** (numbers, textual literals, booleans and keywords),"
+msgstr ""
+"des **littéraux** (nombres, littéraux textuels, booléens et mots-clés) ;"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:10
+msgid "**operators**,"
+msgstr "des **opérateurs** ;"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:11
+msgid "**functions**."
+msgstr "des **fonctions**."
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:13
+msgid "Prerequisite"
+msgstr "Prérequis"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:16
+msgid ""
+"The Expression processor makes more sense in evaluation mode (which means "
+"\"compute and return the result of the expression\"), activated by starting "
+"the expression with an equal sign (``=``). Otherwise, the processor will not"
+" evaluate the expression, and simply put it as is in the output field."
+msgstr ""
+"Le processeur Expression se montre le plus utile en mode évaluation "
+"(c'est-à-dire qu'il \"calcule et retourne le résultat de l'expression\"). Ce"
+" mode est activé en commençant l'expression par un signe égal (``=``). En "
+"l'absence de ce signe, le processeur n'évaluera pas l'expression et la "
+"reproduira simplement dans le champ de résultat."
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:18
+msgid ""
+"The starting equal sign (``=``) will be omitted through all the following "
+"examples."
+msgstr ""
+"Le signe (``=``) devant être placé au début des expressions sera omis de "
+"l'ensemble des exemples ci-dessous."
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:22
 msgid "Setting the processor"
@@ -90,30 +144,315 @@ msgstr ""
 "choisissez **Saisir du texte** dans la liste et écrivez le nom du nouveau "
 "champ dans la zone de texte en dessous)."
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:13
-msgid "Prerequisite"
-msgstr "Prérequis"
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:41
+msgid "Building an expression"
+msgstr "Formuler une expression"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:43
+msgid ""
+"An expression is an instruction for the processor to perform an operation "
+"and to return the value in a new or existing column of the dataset."
+msgstr ""
+"Une expression est une instruction à destination du processeur pour qu'il "
+"réalise une opération et retourne la valeur dans une colonne, nouvelle ou "
+"existante, du jeu de données."
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:45
+msgid ""
+"These expressions look like what we call \"formulas\" in a spreadsheet "
+"software. The main difference is that instead of referencing cells (e.g: "
+"``A1 + B2``), the processor can perform operations with the values of given "
+"columns (e.g: ``column_1 + column_2``)."
+msgstr ""
+"Ces expressions ressemblent à ce qu'on appelle des \"formules\" dans un "
+"tableur type Excel. La principale différence est qu'au lieu de référencer "
+"des cellules (par ex. ``A1 + B2``), le processeur peut réaliser des "
+"opérations à partir des valeurs situées dans des colonnes données (par ex. "
+"``column_1 + column_2``)."
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:47
+msgid ""
+"Like in a formula, expressions can be any combination of various elements. "
+"The Expression processor supports the following elements:"
+msgstr ""
+"Comme les formules, les expressions peuvent combiner divers éléments. Le "
+"processeur Expression prend en charge les éléments suivants :"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:49
+msgid ""
+"identifiers (e.g: a field name like ``column_1`` or a forced field name like"
+" ``$column_1``),"
+msgstr ""
+"les identifiants (par ex. un nom de champ comme ``column_1`` ou un nom de "
+"champ verrouillé comme ``$column_1``) ;"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:50
+msgid "literals:"
+msgstr "les littéraux :"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:52
+msgid "numbers (e.g: ``2`` or ``3.6``),"
+msgstr "les nombres (par ex. ``2`` ou ``3.6``) ;"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:53
+msgid "textual literals (e.g ``\"hello\"`` or ``'world'``),"
+msgstr "les littéraux textuels (par ex. ``\"hello\"`` ou ``'world'``) ;"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:54
+msgid "booleans (e.g: ``true`` or ``false``),"
+msgstr "les booléens (par ex. ``true`` ou ``false``) ;"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:55
+msgid "keywords (e.g: a mathematical constant like ``pi`` and ``e``),"
+msgstr ""
+"les mots-clés (par ex. une constante mathématique comme ``pi`` ou ``e``) ;"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:57
+msgid "operators (e.g: ``+``, ``OR``, ``not``, ``<=``),"
+msgstr "les opérateurs (par ex. ``+``, ``OR``, ``not``, ``<=``) ;"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:58
+msgid ""
+"functions (e.g: ``now()``, ``sin(number)``, ``startswith(\"hello', 'he')``)."
+msgstr ""
+"les fonctions (par ex. ``now()``, ``sin(nombre)``, ``startswith(\"hello', "
+"'he')``)."
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:61
+msgid "Identifiers"
+msgstr "Les identifiants"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:63
+msgid ""
+"The main feature of the Expression processor is the ability to perform "
+"operations on a record's columns. The technical identifier (or field name) "
+"of a column can be used in any expression to access the value of this field "
+"for the current record. This technical identifier can be found in the "
+":ref:`field options<configuringoptions>`, as the ``Name`` of this field."
+msgstr ""
+"La principale fonctionnalité du processeur Expression est sa capacité à "
+"réaliser des opérations dans les colonnes d'un enregistrement. L'identifiant"
+" technique (ou nom de champ) d'une colonne peut être utilisé dans une "
+"expression afin d'accéder aux valeurs contenues dans ce champ pour "
+"l'enregistrement actuel. Cet identifiant technique peut être trouvé dans les"
+" :re:`options de champ<configuringoptions>`, sous le ``Nom`` du champ "
+"concerné."
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:65
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:77
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:94
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:184
+msgid "Examples:"
+msgstr "Exemples :"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:67
+msgid ""
+"``column_1`` to access a field named ``column_1`` (and maybe labeled "
+"\"Column 1\")"
+msgstr ""
+"``column_1`` pour accéder à un champ nommé ``column_1`` (et peut-être "
+"intitulé \"Column 1\")"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:68
+msgid ""
+"``name_en`` to access a field named ``name_en`` (and maybe labeled \"Name "
+"(EN)\")"
+msgstr ""
+"``name_en`` pour accéder à un champ nommé ``name_en`` (et peut-être intitulé"
+" \"Name (EN)\")"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:70
+msgid "Important"
+msgstr "Important"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:73
+msgid ""
+"In some cases, the field name can be ambiguous, for example if it is a "
+"number, if it starts with a number or if it is a reserved keyword like "
+"\"pi\" (the mathematical constant PI) or \"e\" (the mathematical constant "
+"Euler's number)."
+msgstr ""
+"Dans certains cas, le nom du champ peut être ambigu, par exemple, s'il "
+"s'agit d'un nombre ou d'un mot-clé réservé (comme \"pi\", la constante "
+"mathématique, ou \"e\", le nombre d'Euler), ou encore s'il commence par un "
+"nombre."
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:75
+msgid ""
+"To force the Expression processor to evaluate an identifier as a field name,"
+" it is possible to prefix any identifier with the dollar sign (``$``). The "
+"dollar sign can be used for any field name, but it is only mandatory for "
+"ambiguous field names."
+msgstr ""
+"Pour forcer le processeur Expression à évaluer un identifiant comme un nom "
+"de champ, il est possible d'ajouter le signe dollar (``$``) devant un "
+"identifiant. Le signe dollar peut être utilisé avec n'importe quel nom de "
+"champ, mais il n'est obligatoire que pour les noms de champ ambigus."
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:79
+msgid ""
+"``$column_1`` to access a field named ``column_1`` (and maybe labeled "
+"\"Column 1\")"
+msgstr ""
+"``$column_1`` pour accéder à un champ nommé ``column_1`` (et peut-être "
+"intitulé \"Column 1\")"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:80
+msgid ""
+"``$name_en`` to access a field named ``name_en`` (and maybe labeled \"Name "
+"(EN)\")"
+msgstr ""
+"``$name_en`` pour accéder à un champ nommé ``name_en`` (et peut-être "
+"intitulé \"Name (EN)\")"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:81
+msgid ""
+"``$20_to_25_yo`` to access a field named ``20_to_25_yo`` (and maybe labeled "
+"\"20 to 25 years old\")"
+msgstr ""
+"``$20_to_25_yo`` pour accéder à un champ nommé ``20_to_25_yo`` (et peut-être"
+" intitulé \"20 to 25 years old\")"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:82
+msgid "``$33`` to access a field named ``33``"
+msgstr "``$33`` pour accéder à un champ intitulé ``33``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:83
+msgid "``$pi`` to access a field named ``pi``"
+msgstr "``$pi`` pour accéder à un champ intitulé ``pi``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:85
+msgid ""
+"In all the following examples, any number or textual literal can be replaced"
+" by a field name holding values of the same type. The Expression processor "
+"will extract the value for the specified column and perform the required "
+"operation with it."
+msgstr ""
+"Tout nombre ou littéral textuel peut être remplacé dans les exemples "
+"suivants par un nom de champ contenant des données du même type. Le "
+"processeur Expression extraira la valeur de la colonne spécifiée et s'en "
+"servira pour exécuter l'opération requise."
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:87
+msgid ""
+"Several fields (or even the same field several times) can be used at the "
+"same time in an expression."
+msgstr ""
+"Une même expression peut contenir plusieurs champs (ou le même champ "
+"réutilisé plusieurs fois)."
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:90
+msgid "Literals"
+msgstr "Expressions littérales"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:92
+msgid ""
+"Literals like **numbers**, **textual literals** (single or double quoted), "
+"**booleans** and **keywords** can be used in any expression."
+msgstr ""
+"Les littéraux tels que les **nombres**, les **littéraux textuels** (entre "
+"guillemets simples ou doubles), les **booléens** et les **mots-clés** "
+"peuvent être utilisés dans n'importe quelle expression."
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:96
+msgid "``3``"
+msgstr "``3``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:97
+msgid "``2.5``"
+msgstr "``2.5``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:98
+msgid "``\"Hello\"`` or ``'Hello'``"
+msgstr "``\"Hello\"`` ou ``'Hello'``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:99
+msgid "``'A bigger sentence'``"
+msgstr "``'A bigger sentence'``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:100
+msgid "``true`` or ``false``"
+msgstr "``true`` ou ``false``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:101
+msgid "``pi``, ``PI`` or ``Pi``"
+msgstr "``pi``, ``PI`` ou ``Pi``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:102
+msgid "``e`` or ``E``"
+msgstr "``e`` ou ``E``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:105
 msgid "Operators"
 msgstr "Opérateurs"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:121
-msgid "Unary operators"
-msgstr "Opérateurs unaires"
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:107
+msgid ""
+"Operators are symbols that behave generally like functions but are used with"
+" a more natural syntax."
+msgstr ""
+"Les opérateurs sont des symboles qui se comportent généralement comme des "
+"fonctions, mais sont utilisés avec une syntaxe plus naturelle."
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:142
-msgid "Binary operators"
-msgstr "Opérateurs binaires"
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:109
+msgid ""
+"The Expression processor supports 3 kinds of operators, depending on the "
+"number of parameters around them:"
+msgstr ""
+"Le processeur Expression prend en  charge trois types d'opérateurs, en "
+"fonction du nombre de paramètres qui les entourent :"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:197
-msgid "Functions"
-msgstr "Fonctions"
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:111
+msgid ""
+"**unary operators** can be used as prefixes or suffixes to alter the value "
+"of 1 expression,"
+msgstr ""
+"les **opérateurs unaires** peuvent être utilisés comme préfixes ou suffixes "
+"pour modifier la valeur d'1 expression ;"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:112
+msgid ""
+"**binary operators** can be arithmetic operators to perform a calculus "
+"between 2 expressions, or boolean operators to compare the result of 2 "
+"expressions,"
+msgstr ""
+"les **opérateurs binaires** peuvent être des opérateurs arithmétiques pour "
+"réaliser un calcul avec 2 expressions, ou des opérateurs booléens pour "
+"comparer le résultat de 2 expressions ;"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:113
+msgid ""
+"the **ternary operator**, to convert a conditional expression to either 1 of"
+" 2 possible results."
+msgstr ""
+"l'**opérateur ternaire** pour convertir une expression conditionnelle en 1 "
+"ou 2 résultats possibles."
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:115
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:179
 msgid "Note"
 msgstr "Remarque"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:118
+msgid ""
+"Operator precedence works in the following order: factorial, exponential, "
+"sign, euclidian division, function evaluation, multiplication/division, "
+"addition/substraction, concatenation, not, comparison, and, or, ternary "
+"operator, ternary operator without else."
+msgstr ""
+"Les opérateurs devraient être placés dans l'ordre suivant : factorielle, "
+"exponentielle, signe, division euclidienne, évaluation de fonction, "
+"multiplication/division, addition/soustraction, concaténation, not, "
+"comparaison, and, or, opérateur ternaire, opérateur ternaire sans else."
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:121
+msgid "Unary operators"
+msgstr "Opérateurs unaires"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:126
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:147
+msgid "Operator"
+msgstr "Opérateur"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:128
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:149
@@ -124,425 +463,157 @@ msgstr "Remarque"
 msgid "Example"
 msgstr "Exemple"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:4
-msgid ""
-"This processor is a versatile processor that takes an expression as an "
-"argument and outputs its result in a field."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:6
-msgid "The expression can be composed of:"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:8
-msgid "**identifiers**,"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:9
-msgid "**literals** (numbers, textual literals, booleans and keywords),"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:10
-msgid "**operators**,"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:11
-msgid "**functions**."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:16
-msgid ""
-"The Expression processor makes more sense in evaluation mode (which means "
-"\"compute and return the result of the expression\"), activated by starting "
-"the expression with an equal sign (``=``). Otherwise, the processor will not"
-" evaluate the expression, and simply put it as is in the output field."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:18
-msgid ""
-"The starting equal sign (``=``) will be omitted through all the following "
-"examples."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:41
-msgid "Building an expression"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:43
-msgid ""
-"An expression is an instruction for the processor to perform an operation "
-"and to return the value in a new or existing column of the dataset."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:45
-msgid ""
-"These expressions look like what we call \"formulas\" in a spreadsheet "
-"software. The main difference is that instead of referencing cells (e.g: "
-"``A1 + B2``), the processor can perform operations with the values of given "
-"columns (e.g: ``column_1 + column_2``)."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:47
-msgid ""
-"Like in a formula, expressions can be any combination of various elements. "
-"The Expression processor supports the following elements:"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:49
-msgid ""
-"identifiers (e.g: a field name like ``column_1`` or a forced field name like"
-" ``$column_1``),"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:50
-msgid "literals:"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:52
-msgid "numbers (e.g: ``2`` or ``3.6``),"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:53
-msgid "textual literals (e.g ``\"hello\"`` or ``'world'``),"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:54
-msgid "booleans (e.g: ``true`` or ``false``),"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:55
-msgid "keywords (e.g: a mathematical constant like ``pi`` and ``e``),"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:57
-msgid "operators (e.g: ``+``, ``OR``, ``not``, ``<=``),"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:58
-msgid ""
-"functions (e.g: ``now()``, ``sin(number)``, ``startswith(\"hello', 'he')``)."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:61
-msgid "Identifiers"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:63
-msgid ""
-"The main feature of the Expression processor is the ability to perform "
-"operations on a record's columns. The technical identifier (or field name) "
-"of a column can be used in any expression to access the value of this field "
-"for the current record. This technical identifier can be found in the "
-":ref:`field options<configuringoptions>`, as the ``Name`` of this field."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:65
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:77
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:94
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:184
-#, fuzzy
-msgid "Examples:"
-msgstr "Exemples"
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:67
-msgid ""
-"``column_1`` to access a field named ``column_1`` (and maybe labeled "
-"\"Column 1\")"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:68
-msgid ""
-"``name_en`` to access a field named ``name_en`` (and maybe labeled \"Name "
-"(EN)\")"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:70
-msgid "Important"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:73
-msgid ""
-"In some cases, the field name can be ambiguous, for example if it is a "
-"number, if it starts with a number or if it is a reserved keyword like "
-"\"pi\" (the mathematical constant PI) or \"e\" (the mathematical constant "
-"Euler's number)."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:75
-msgid ""
-"To force the Expression processor to evaluate an identifier as a field name,"
-" it is possible to prefix any identifier with the dollar sign (``$``). The "
-"dollar sign can be used for any field name, but it is only mandatory for "
-"ambiguous field names."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:79
-msgid ""
-"``$column_1`` to access a field named ``column_1`` (and maybe labeled "
-"\"Column 1\")"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:80
-msgid ""
-"``$name_en`` to access a field named ``name_en`` (and maybe labeled \"Name "
-"(EN)\")"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:81
-msgid ""
-"``$20_to_25_yo`` to access a field named ``20_to_25_yo`` (and maybe labeled "
-"\"20 to 25 years old\")"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:82
-msgid "``$33`` to access a field named ``33``"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:83
-msgid "``$pi`` to access a field named ``pi``"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:85
-msgid ""
-"In all the following examples, any number or textual literal can be replaced"
-" by a field name holding values of the same type. The Expression processor "
-"will extract the value for the specified column and perform the required "
-"operation with it."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:87
-msgid ""
-"Several fields (or even the same field several times) can be used at the "
-"same time in an expression."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:90
-msgid "Literals"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:92
-msgid ""
-"Literals like **numbers**, **textual literals** (single or double quoted), "
-"**booleans** and **keywords** can be used in any expression."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:96
-msgid "``3``"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:97
-msgid "``2.5``"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:98
-msgid "``\"Hello\"`` or ``'Hello'``"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:99
-msgid "``'A bigger sentence'``"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:100
-msgid "``true`` or ``false``"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:101
-msgid "``pi``, ``PI`` or ``Pi``"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:102
-msgid "``e`` or ``E``"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:107
-msgid ""
-"Operators are symbols that behave generally like functions but are used with"
-" a more natural syntax."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:109
-msgid ""
-"The Expression processor supports 3 kinds of operators, depending on the "
-"number of parameters around them:"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:111
-msgid ""
-"**unary operators** can be used as prefixes or suffixes to alter the value "
-"of 1 expression,"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:112
-msgid ""
-"**binary operators** can be arithmetic operators to perform a calculus "
-"between 2 expressions, or boolean operators to compare the result of 2 "
-"expressions,"
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:113
-msgid ""
-"the **ternary operator**, to convert a conditional expression to either 1 of"
-" 2 possible results."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:118
-msgid ""
-"Operator precedence works in the following order: factorial, exponential, "
-"sign, euclidian division, function evaluation, multiplication/division, "
-"addition/substraction, concatenation, not, comparison, and, or, ternary "
-"operator, ternary operator without else."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:126
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:147
-msgid "Operator"
-msgstr ""
-
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:129
 msgid "``-``"
-msgstr ""
+msgstr "``-``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:130
 msgid "Prefix that negates the following value"
-msgstr ""
+msgstr "Préfixe rendant la valeur suivante négative"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:131
 msgid "``- 4``, ``- [expression]``"
-msgstr ""
+msgstr "``- 4``, ``- [expression]``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:132
 msgid "``not``, ``!`` (not)"
-msgstr ""
+msgstr "``not``, ``!`` (not)"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:133
 msgid "Boolean operator that inverts the following condition"
-msgstr ""
+msgstr "Opérateur booléen qui inverse la condition suivante"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:134
 msgid "``not true`` or  ``!true`` returns ``false``"
-msgstr ""
+msgstr "``not true`` ou  ``!true`` retourne ``false``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:135
 msgid "``not 4 > 5`` returns ``true``"
-msgstr ""
+msgstr "``not 4 > 5`` retourne ``true``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:136
 msgid "``!(5 <= 10)`` returns ``false``"
-msgstr ""
+msgstr "``!(5 <= 10)`` retourne ``false``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:137
 msgid "``!`` (factorial)"
-msgstr ""
+msgstr "``!`` (factorielle)"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:138
 msgid "Suffix that computes the factorial of an expression"
-msgstr ""
+msgstr "Suffixe qui calcule la factorielle d'une expression"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:139
 msgid "``3!`` returns ``1*2*3``"
-msgstr ""
+msgstr "``3!`` retourne ``1*2*3``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:142
+msgid "Binary operators"
+msgstr "Opérateurs binaires"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:150
 msgid "``+``, ``-``, ``*``, ``/``, ``%``, ``//``, ``^``"
-msgstr ""
+msgstr "``+``, ``-``, ``*``, ``/``, ``%``, ``//``, ``^``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:151
 msgid ""
 "Arithmetic operators: add, subtract, multiply, divide, modulo, euclidian "
 "division, power"
 msgstr ""
+"Opérateurs arithmétiques : ajouter, soustraire, multiplier, diviser, modulo,"
+" division euclidienne, puissance"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:152
 msgid "``2 + 3`` returns ``5``"
-msgstr ""
+msgstr "``2 + 3`` retourne ``5``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:153
 msgid "``5 - 8`` returns ``-3``"
-msgstr ""
+msgstr "``5 - 8`` retourne ``-3``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:154
 msgid "``9 * 3`` returns ``27``"
-msgstr ""
+msgstr "``9 * 3`` retourne ``27``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:155
 msgid "``15 / 6`` returns ``2.5``"
-msgstr ""
+msgstr "``15 / 6`` retourne ``2.5``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:156
 msgid "``15 % 6`` returns ``3``"
-msgstr ""
+msgstr "``15 % 6`` retourne ``3``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:157
 msgid "``15 // 6`` returns ``2``"
-msgstr ""
+msgstr "``15 // 6`` retourne ``2``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:158
 msgid "``2 ^ 3`` returns ``8``"
-msgstr ""
+msgstr "``2 ^ 3`` retourne ``8``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:159
 msgid "``column_1 + column2``"
-msgstr ""
+msgstr "``column_1 + column2``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:160
 msgid "``and``, ``&&``, ``or``, ``||`` (return a boolean)"
-msgstr ""
+msgstr "``and``, ``&&``, ``or``, ``||`` (retournent un booléen)"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:161
 msgid "Boolean operators: and, or"
-msgstr ""
+msgstr "Opérateurs boléens : and, or"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:162
 msgid "``true and true`` returns ``true``"
-msgstr ""
+msgstr "``true and true`` retourne ``true``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:163
 msgid "``true && false`` returns ``false``"
-msgstr ""
+msgstr "``true && false`` retourne ``false``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:164
 msgid "``true or false`` returns ``true``"
-msgstr ""
+msgstr "``true or false`` retourne ``true``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:165
 msgid "``false || false`` returns ``false``"
-msgstr ""
+msgstr "``false || false`` retourne ``false``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:166
 msgid "``>``, ``<``, ``>=``, ``<=``, ``==``, ``!=``"
-msgstr ""
+msgstr "``>``, ``<``, ``>=``, ``<=``, ``==``, ``!=``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:167
 msgid ""
 "Comparison operators: greater than, lower than, greater or equal to, lower "
 "or equal to, equal to, different than return a boolean"
 msgstr ""
+"Opérateurs de comparaison : supérieur à, inférieur à, supérieur ou égal à, "
+"inférieur ou égal à, égal à et différent de retournent un booléen"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:168
 msgid "``3 < 4`` returns ``true``"
-msgstr ""
+msgstr "``3 < 4`` retourne ``true``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:169
 msgid "``5 >= 10`` returns ``false``"
-msgstr ""
+msgstr "``5 >= 10`` retourne ``false``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:170
 msgid "``&``"
-msgstr ""
+msgstr "``&``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:171
-#, fuzzy
 msgid "String concatenation operator"
-msgstr "Concaténation de chaînes de caractères"
+msgstr "Opérateur de concaténation des chaînes de caractères"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:172
 msgid "``'Hello' & ' world'`` returns ``'Hello world'``"
-msgstr ""
+msgstr "``'Hello' & ' world'`` retourne ``'Hello world'``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:175
-#, fuzzy
 msgid "Ternary operator"
-msgstr "Opérateurs ternaires"
+msgstr "Opérateur ternaire"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:177
 msgid ""
@@ -550,43 +621,55 @@ msgid ""
 "called the ternary operator, and allows to return different results "
 "depending on a condition."
 msgstr ""
+"L'expression ``[condition] ? [résultat si vrai] : [résultat si faux]`` "
+"s'appelle l'opérateur ternaire et permet de retourner différents résultats "
+"en fonction d'une condition."
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:182
 msgid ""
 "A ternary expression can be read as \"if [condition] then [result if true] "
 "else [result if false]\"."
 msgstr ""
+"Une expression ternaire peut être lue comme \"si [condition] alors [résultat"
+" si vrai] sinon [résultat si faux]\"."
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:186
 msgid "``true ? 'hello' : 'goodbye'`` returns ``'hello'``"
-msgstr ""
+msgstr "``true ? 'hello' : 'goodbye'`` retourne ``'hello'``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:187
 msgid "``false ? 'hello' : 'goodbye'`` returns ``'good bye'``"
-msgstr ""
+msgstr "``false ? 'hello' : 'goodbye'`` retourne ``'good bye'``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:188
 msgid "``4 > 3 ? '4 is bigger' : '3 is bigger'`` returns ``'4 is bigger'``"
-msgstr ""
+msgstr "``4 > 3 ? '4 is bigger' : '3 is bigger'`` retourne ``'4 is bigger'``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:189
 msgid ""
 "``10 <= 9 ? '9 is bigger' : '10 is bigger'`` returns ``'10 is bigger'``"
 msgstr ""
+"``10 <= 9 ? '9 is bigger' : '10 is bigger'`` retourne ``'10 is bigger'``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:191
 msgid ""
 "The last part of the ternary operator is optional, which means that the "
 "following expressions are valid:"
 msgstr ""
+"La dernière partie de l'opérateur ternaire est optionnelle, ce qui veut dire"
+" que les expressions suivantes sont aussi valides :"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:193
 msgid "``true ? 'hello'`` returns ``'hello'``"
-msgstr ""
+msgstr "``true ? 'hello'`` retourne ``'hello'``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:194
 msgid "``false ? 'hello'`` returns an empty result"
-msgstr ""
+msgstr "``false ? 'hello'`` retourne un résultat vide"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:197
+msgid "Functions"
+msgstr "Fonctions"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:199
 msgid ""
@@ -594,369 +677,391 @@ msgid ""
 "They can take 0 or more parameters, and apply transformations on them such "
 "as:"
 msgstr ""
+"Les fonctions sont utilisées pour réaliser des opérations plus avancées dans"
+" une expression. Elles acceptent 0 ou plus paramètres et leur appliquent des"
+" transformations telles que :"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:201
 msgid "text handling,"
-msgstr ""
+msgstr "gestion du texte ;"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:202
 msgid "mathematical functions,"
-msgstr ""
+msgstr "fonctions mathématiques ;"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:203
 msgid "date and time handling."
-msgstr ""
+msgstr "gestion de la date et de l'heure."
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:206
 msgid "Text handling"
-msgstr ""
+msgstr "Gestion du texte"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:208
 msgid "**Boolean functions**"
-msgstr ""
+msgstr "**Fonctions booléennes**"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:213
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:252
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:284
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:332
 msgid "Function"
-msgstr ""
+msgstr "Fonction"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:216
 msgid "``isalpha([text])``"
-msgstr ""
+msgstr "``isalpha([texte])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:217
 msgid "True if text only contains letters"
-msgstr ""
+msgstr "Vrai si le texte ne contient que des lettres"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:219
 msgid "``isnumeric([text])``"
-msgstr ""
+msgstr "``isnumeric([texte])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:220
 msgid "True if text only contains numbers"
-msgstr ""
+msgstr "Vrai si le texte ne contient que des chiffres"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:222
 msgid "``isalnum([text])``"
-msgstr ""
+msgstr "``isalnum([texte])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:223
 msgid "True if text only contains letters or numbers"
-msgstr ""
+msgstr "Vrai si le texte contient des lettres ou des chiffres"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:225
 msgid "``isdecimal([text])``"
-msgstr ""
+msgstr "``isdecimal([texte])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:226
 msgid "True if text is a valid decimal number"
-msgstr ""
+msgstr "Vrai si le texte est un nombre décimal valide"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:228
 msgid "``isdigit([text])``"
-msgstr ""
+msgstr "``isdigit([texte])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:229
 msgid "True if text is a single digit"
-msgstr ""
+msgstr "Vrai si le texte est un chiffre seul"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:231
 msgid "``islower([text])``"
-msgstr ""
+msgstr "``islower([texte])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:232
 msgid "True if text is lowercase"
-msgstr ""
+msgstr "Vrai si le texte est en minuscules"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:234
 msgid "``isupper([text])``"
-msgstr ""
+msgstr "``isupper([texte])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:235
 msgid "True if text is uppercase"
-msgstr ""
+msgstr "Vrai si le texte est en majuscules"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:237
 msgid "``empty([text])``"
-msgstr ""
+msgstr "``empty([texte])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:238
 msgid "True if text is empty"
-msgstr ""
+msgstr "Vrai si le texte est vide"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:240
 msgid ""
 "``contains([text],[text])``, ``startswith([text],[text])``, "
 "``endswith([text],[text])``"
 msgstr ""
+"``contains([texte],[texte])``, ``startswith([texte],[texte])``, "
+"``endswith([texte],[texte])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:241
 msgid ""
 "True if text (1st argument) contains, starts with or ends with text (2nd "
 "argument)"
 msgstr ""
+"Vrai si le texte (1er argument) contient, commence ou finit par le texte (2e"
+" argument)"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:242
 msgid "``contains(\"hello\", \"l\")`` returns ``True``"
-msgstr ""
+msgstr "``contains(\"hello\", \"l\")`` retourne ``True``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:243
 msgid "``startswith(\"hello', 'he')`` returns ``True``"
-msgstr ""
+msgstr "``startswith(\"hello', 'he')`` retourne ``True``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:244
 msgid "``endswith(\"hello', 'he')`` returns ``False``"
-msgstr ""
+msgstr "``endswith(\"hello', 'he')`` retourne ``False``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:247
 msgid "**Processing functions**"
-msgstr ""
+msgstr "**Fonctions de traitement**"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:255
 msgid "``length([text])``"
-msgstr ""
+msgstr "``length([texte])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:256
 msgid "Return the length of the text"
-msgstr ""
+msgstr "Retourne la longueur du texte"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:257
 msgid "``length('hello')`` returns ``5``"
-msgstr ""
+msgstr "``length('bonjour')`` retourne ``7``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:258
 msgid "``lower([text])``, ``upper([text])``"
-msgstr ""
+msgstr "``lower([texte])``, ``upper([texte])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:259
 msgid "Convert text to lowercase, to uppercase"
-msgstr ""
+msgstr "Convertit le texte en minuscules ou en majuscules"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:261
 msgid "``capitalize([text])``, ``capitalize_all([text])``"
-msgstr ""
+msgstr "``capitalize([texte])``, ``capitalize_all([texte])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:262
 msgid "Capitalize the first letter of the text, the first letter of each word"
 msgstr ""
+"Met la première lettre du texte en majuscule ou la première lettre de chaque"
+" mot"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:264
 msgid "``ljust([text],[numeric],[text])``"
-msgstr ""
+msgstr "``ljust([texte],[nombre],[texte])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:265
 msgid "``rjust([text],[numeric],[text])``"
-msgstr ""
+msgstr "``rjust([texte],[nombre],[texte])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:266
 msgid "``center([text],[numeric],[text])``"
-msgstr ""
+msgstr "``center([texte],[nombre],[texte])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:267
 msgid ""
 "Left, right and center justify a text (1st argument), until it reaches "
 "[numeric] characters with another text (3rd argument)"
 msgstr ""
+"Justifie à gauche, à droite et au centre un texte (1er argument), jusqu'à "
+"atteindre le [nombre] de caractères à l'aide d'un autre texte (3e argument)"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:268
 msgid "``ljust(\"4400\", 5, \"0\")`` returns ``\"44000\"``"
-msgstr ""
+msgstr "``ljust(\"4400\", 5, \"0\")`` retourne ``\"44000\"``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:269
 msgid "``rjust(\"4400\", 5, \"0\")`` returns ``\"04400\"``"
-msgstr ""
+msgstr "``rjust(\"4400\", 5, \"0\")`` retourne ``\"04400\"``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:270
 msgid "``center(\"4400\", 6,\"0\")`` returns ``\"044000\"``"
-msgstr ""
+msgstr "``center(\"4400\", 6,\"0\")`` retourne ``\"044000\"``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:271
 msgid "``normalize([text])``"
-msgstr ""
+msgstr "``normalize([texte])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:272
 msgid "Convert a text to its ascii representation"
-msgstr ""
+msgstr "Remplace un texte par sa représentation ASCII"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:273
 msgid "``normalize(\"你好\")`` returns ``\"ni hao\"``"
-msgstr ""
+msgstr "``normalize(\"你好\")`` retourne ``\"ni hao\"``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:274
 msgid "``substring([text],[numeric],[numeric])``"
-msgstr ""
+msgstr "``substring([texte],[nombre],[nombre])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:275
 msgid ""
 "Extract a substring of text, starting at index indicated by 2nd argument and"
 " of a length indicated by 3rd argument (optional)."
 msgstr ""
+"Extrait une sous-chaîne de texte, en commençant à l'index indiqué par le 2nd"
+" argument et d'une longueur indiquée par le 3e argument (optionnel)."
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:276
 msgid "``substring('hello', 1, 3)`` returns ``\"ell\"``"
-msgstr ""
+msgstr "``substring('hello', 1, 3)`` retourne ``\"ell\"``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:279
 msgid "Mathematical functions"
-msgstr ""
+msgstr "Fonctions mathématiques"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:287
 msgid "``abs([numeric])``"
-msgstr ""
+msgstr "``abs([nombre])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:288
 msgid "Absolute value"
-msgstr ""
+msgstr "Valeur absolue"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:289
 msgid "``abs(-4)`` returns ``4``"
-msgstr ""
+msgstr "``abs(-4)`` retourne ``4``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:290
 msgid "``sqrt([numeric])``"
-msgstr ""
+msgstr "``sqrt([nombre])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:291
 msgid "Square root"
-msgstr ""
+msgstr "Racine carrée"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:293
 msgid "``floor([numeric])``, ``ceil([numeric])``"
-msgstr ""
+msgstr "``floor([nombre])``, ``ceil([nombre])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:294
 msgid "Floor and ceiling functions"
-msgstr ""
+msgstr "Fonctions arrondi à l'entier inférieur et supérieur"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:295
 msgid "``floor(4.6)`` returns ``4``"
-msgstr ""
+msgstr "``floor(4.6)`` retourne ``4``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:296
 msgid "``ceil(3.3)`` returns ``4``"
-msgstr ""
+msgstr "``ceil(3.3)`` retourne ``4``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:297
 msgid "``max([numeric],[numeric])``, ``min([numeric],[numeric])``"
-msgstr ""
+msgstr "``max([nombre],[nombre])``, ``min([nombre],[nombre])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:298
 msgid "Max and min functions"
-msgstr ""
+msgstr "Fonctions minimales et maximales"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:300
 msgid "``round([numeric])``"
-msgstr ""
+msgstr "``round([nombre])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:301
 msgid "Return the nearest integer"
-msgstr ""
+msgstr "Arrondit à l'entier le plus proche"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:302
 msgid "``round(4.6)`` returns ``5``"
-msgstr ""
+msgstr "``round(4.6)`` retourne ``5``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:303
 msgid "``round(3.3)`` returns ``4``"
-msgstr ""
+msgstr "``round(3.3)`` retourne ``4``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:304
 msgid "``random([numeric])``"
-msgstr ""
+msgstr "``random([nombre])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:305
 msgid "Random number generator (between 0 and [numeric])"
-msgstr ""
+msgstr "Génère un nombre aléatoire (entre 0 et [nombre])"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:306
 msgid "``random(10)`` returns for example ``7.27846540481``"
-msgstr ""
+msgstr "``random(10)`` retourne par exemple ``7.27846540481``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:307
 msgid "``pow([numeric], [numeric])``"
-msgstr ""
+msgstr "``pow([nombre], [nombre])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:308
 msgid "Power function"
-msgstr ""
+msgstr "Fonction puissance"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:309
 msgid "``pow(2, 3)`` returns ``8``"
-msgstr ""
+msgstr "``pow(2, 3)`` retourne ``8``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:310
 msgid "``exp([numeric])``, ``log([numeric])``, ``log10([numeric])``"
-msgstr ""
+msgstr "``exp([nombre])``, ``log([nombre])``, ``log10([nombre])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:311
 msgid "Exponential, logarithm and base 10 logarithm functions"
-msgstr ""
+msgstr "Fonctions exponentielles, logarithmiques et du logarithme en base 10"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:312
 msgid "``exp(1)`` returns ``E``"
-msgstr ""
+msgstr "``exp(1)`` retourne ``E``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:313
 msgid "``radians([numeric])``"
-msgstr ""
+msgstr "``radians([nombre])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:314
 msgid "Convert an angle from degrees to radians"
-msgstr ""
+msgstr "Convertit un angle de degrés en radians"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:315
 msgid "``radians(180)`` returns ``PI``"
-msgstr ""
+msgstr "``radians(180)`` retourne ``PI``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:316
 msgid "``degrees([numeric])``"
-msgstr ""
+msgstr "``degrees([nombre])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:317
 msgid "Convert an angle from radians to degrees"
-msgstr ""
+msgstr "Convertit un angle de radians en degrés"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:318
 msgid "``degrees(PI)`` returns ``180``"
-msgstr ""
+msgstr "``degrees(PI)`` retourne ``180``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:319
 msgid ""
 "``cos([numeric])``, ``cosh([numeric])``, ``sin([numeric])``, "
 "``sinh([numeric])``, ``tan([numeric])``, ``tanh([numeric])``"
 msgstr ""
+"``cos([nombre])``, ``cosh([nombre])``, ``sin([nombre])``, "
+"``sinh([nombre])``, ``tan([nombre])``, ``tanh([nombre])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:320
 msgid ""
 "Cosine, hyperbolic cosine, sine, hyperbolic sine, tangent, hyperbolic "
 "tangent (in radians)"
 msgstr ""
+"Cosinus, cosinus hyperbolique, sinus, sinus hyperbolique, tangente, tangente"
+" hyperbolique (en radians)"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:321
 msgid "``sin(PI)`` returns ``0``"
-msgstr ""
+msgstr "``sin(PI)`` retourne ``0``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:322
 msgid ""
 "``acos([numeric])``, ``acosh([numeric])``, ``asin([numeric])``, "
 "``asinh([numeric])``, ``atan([numeric])``, ``atanh([numeric])``"
 msgstr ""
+"``acos([nombre])``, ``acosh([nombre])``, ``asin([nombre])``, "
+"``asinh([nombre])``, ``atan([nombre])``, ``atanh([nombre])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:323
 msgid ""
 "Inverse cosine, inverse cosine hyberbolical, inverse sine, inverse sine "
 "hyperbolical, inverse tangent, inverse tangent hyperbolical (in radians)"
 msgstr ""
+"Cosinus inverse, cosinus inverse hyperbolique, sinus inverse, cosinus "
+"inverse hyperbolique, tangente inverse, tangente inverse hyperbolique (en "
+"radians)"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:324
 msgid "``acos(0)`` returns ``PI/2``"
-msgstr ""
+msgstr "``acos(0)`` retourne ``PI/2``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:327
 msgid "Date and time handling"
-msgstr ""
+msgstr "Gestion de la date et de l'heure"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:335
 msgid ""
@@ -964,25 +1069,29 @@ msgid ""
 "``day([datetime])``, ``dayofweek([datetime])``, ``hour([datetime])``, "
 "``minute([datetime])``, ``second([datetime])``"
 msgstr ""
+"``year([datetime])``, ``quarter([datetime])``, ``month([datetime])``, "
+"``day([datetime])``, ``dayofweek([datetime])``, ``hour([datetime])``, "
+"``minute([datetime])``, ``second([datetime])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:336
 msgid ""
 "Extract the year, quarter, month, day, day of week, hours, minutes, seconds "
 "from a datetime"
 msgstr ""
+"Extrait l'année, le trimestre, le mois, la date, le jour de la semaine, les "
+"heures, les minutes et les secondes d'un datetime"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:337
 msgid "``year(\"2014-06-07\")`` returns ``2014``"
-msgstr ""
+msgstr "``year(\"2014-06-07\")`` retourne ``2014``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:338
 msgid "``hour(\"2014-06-07 17:00\")`` returns ``17``"
-msgstr ""
+msgstr "``hour(\"2014-06-07 17:00\")`` retourne ``17``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:339
-#, fuzzy
 msgid "``hour(\"2014-06-07 17:00\", \"Europe/Paris\")`` returns ``19``"
-msgstr "hour(\"2014-06-07 17:00\", \"Europe/Paris\")"
+msgstr "``hour(\"2014-06-07 17:00\", \"Europe/Paris\")`` retourne ``19``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:340
 msgid ""
@@ -990,568 +1099,60 @@ msgid ""
 "``add_days([datetime],[numeric])``, ``add_hours([datetime],[numeric])``, "
 "``add_minutes([datetime],[numeric])``, ``add_seconds([datetime],[numeric])``"
 msgstr ""
+"``add_years([datetime],[nombre])``, ``add_months([datetime],[nombre])``, "
+"``add_days([datetime],[nombre])``, ``add_hours([datetime],[nombre])``, "
+"``add_minutes([datetime],[nombre])``, ``add_seconds([datetime],[nombre])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:341
 msgid "Add years, months, days, hours, minutes, seconds to a datetime"
 msgstr ""
+"Ajoute des années, des mois, des jours, des heures, des minutes ou des "
+"secondes à un datetime"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:342
 msgid "``add_months(\"2014-11-14\", \"3\")`` returns ``2015-02-14``"
-msgstr ""
+msgstr "``add_months(\"2014-11-14\", \"3\")`` retourne ``2015-02-14``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:343
 msgid "``fromtimestamp([numeric])``"
-msgstr ""
+msgstr "``fromtimestamp([nombre])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:344
 msgid "Convert a timestamp to a datetime"
-msgstr ""
+msgstr "Convertit un indicateur temporel en datetime"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:346
 msgid "``quartertodaterange([numeric])``"
-msgstr ""
+msgstr "``quartertodaterange([nombre])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:347
 msgid "Convert a quarter (e.g: \"2014Q2\", \"2019q1\") to a date range"
-msgstr ""
+msgstr "Convertit un trimestre en intervalle de dates"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:348
 msgid "``quartertodaterange(\"2014Q2\")`` returns ``\"2014-04-01 / 2014-06-30\"``"
-msgstr ""
+msgstr "``quartertodaterange(\"2014Q2\")`` retourne ``\"2014-04-01 / 2014-06-30\"``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:349
 msgid "``datediff([datetime], [datetime], [unit])``"
-msgstr ""
+msgstr "``datediff([datetime], [datetime], [unité])``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:350
 msgid ""
 "Count the number of units between the two datetimes. ``[unit]`` can be "
 "\"year\", \"month\", \"day\", \"hour\", \"minute\", \"second\"."
 msgstr ""
+"Compte le nombre d'unités entre deux datetimes. ``[unité]`` peut être être "
+"\"année\", \"mois\", \"jour\", \"heure\", \"minute\" ou \"seconde\""
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:351
-#, fuzzy
 msgid "``datediff(\"2014-02-28\", \"2015-02-28\", \"month\")`` returns ``12``"
-msgstr "datediff(\"2014-02-28\", \"2015-02-28\", \"month\")"
+msgstr "``datediff(\"2014-02-28\", \"2015-02-28\", \"month\")`` retourne ``12``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:352
-#, fuzzy
 msgid ""
 "``datediff(\"2014-02-28T20:00:00Z\", \"2014-02-28T21:00:00Z\", \"minute\")``"
 " returns ``60``"
-msgstr "datediff(\"2014-02-28T20:00:00Z\", \"2014-02-28T21:00:00Z\", \"hour\")"
-
-#~ msgid ""
-#~ "This processor makes it possible to write complex expression patterns using "
-#~ "field values."
-#~ msgstr ""
-#~ "Ce processeur permet d'écrire des expressions complexes utilisant des "
-#~ "valeurs de champs."
-
-#~ msgid "Example of a simple addition:"
-#~ msgstr "Exemple d'une addition simple :"
-
-#~ msgid ""
-#~ "Example of a basic addition with the Expression processor. The \"Result\" "
-#~ "column contains the result of the addition (this column was not in the data "
-#~ "source)."
-#~ msgstr ""
-#~ "Exemple d'une addition de base avec le processeur Expression. La colonne "
-#~ "\"Résultat\" contient le résultat du calcul (elle est créée par le "
-#~ "processeur, elle n'est pas présente initialement dans le jeu de données)."
-
-#~ msgid "Example of a mathematical function:"
-#~ msgstr "Exemple d'une fonction mathématique :"
-
-#~ msgid "Example of a mathematical function using the Expression processor"
-#~ msgstr "Exemple de fonction mathématique avec le processeur Expression"
-
-#~ msgid ""
-#~ "Example of a conditional expression: the idea is to create a new column (e.g"
-#~ " for filtering) which values depend on condition on values of another column"
-#~ " of the dataset. Here, a new column named \"Anomaly Detected ?\" containing "
-#~ "YES/NO, depends on the values of another column being in a certain range."
-#~ msgstr ""
-#~ "Exemple d'une expression conditionnelle : l'idée est de créer une colonne "
-#~ "(par exemple pour filtrer) dont le contenu dépend de la valeur d'une autre "
-#~ "colonne du jeu de données. Ici, une nouvelle colonne \"Anomalie détectée ?\""
-#~ " contenant OUI/NON , qui dépend des valeurs d'une autre colonne se trouvant "
-#~ "dans une plage spécifique."
-
-#~ msgid ""
-#~ "Example of a conditional expression using the Expression processor, with the"
-#~ " creation of the \"Anomaly Detected ?\" (which was not initially present in "
-#~ "the original data source). The syntax is ``=expression ? value if the "
-#~ "expression is true : value if false``. Please note that ``value if false`` "
-#~ "is optional, so you can write ``=expression ? value if the expression is "
-#~ "true``."
-#~ msgstr ""
-#~ "Exemple d'expression conditionnelle avec le processeur Expression, avec la "
-#~ "création de la colonne \"Anomalie détectée ?\" (qui n'est pas présente "
-#~ "initialement dans le jeu de données source). La syntaxe est ``=expression ? "
-#~ "valeur si l'expression est vraie : valeur si l'expression est fausse``. "
-#~ "Veuillez noter que ``valeur si l'expression est fausse`` est optionnel, vous"
-#~ " pouvez donc écrire ``=expression ? valeur si l'expression est vraie``."
-
-#~ msgid ""
-#~ "Expressions work similarly as formulas in a spreadsheet software, except "
-#~ "instead of referencing cells (i.e. A1 + B2), it is the technical identifiers"
-#~ " of the fields that must be referenced (i.e. column_1 + column_2)."
-#~ msgstr ""
-#~ "Le comportement des expressions est similaire à celui des formules dans un "
-#~ "tableau type Excel, sauf qu'au lieu de référencer des cellules (par ex. "
-#~ "A1+B2), ce sont les identifiants techniques des champs qui doivent être "
-#~ "référencés (par ex. column_1 + column_2)."
-
-#~ msgid ""
-#~ "Expressions also work with both textual (``\"your text here\"`` or ``text``)"
-#~ " and numerical (``2``) content."
-#~ msgstr ""
-#~ "Les expressions sont également compatibles avec les contenus textuels "
-#~ "(``\"your text here\"`` ou ``text``) et numériques (``2``)."
-
-#~ msgid ""
-#~ "Expressions must always start with ``=`` otherwise the processor will not "
-#~ "work. Note also that strings must always be double quoted (``\"foo\"``)."
-#~ msgstr ""
-#~ "Les expressions doivent toujours commencer par ``=`` pour que le processeur "
-#~ "puisse fonctionner. Notez également que les chaînes doivent toujours être "
-#~ "placées entre deux paires de guillemets (``\"foo\"``)."
-
-#~ msgid ""
-#~ "In the table below are listed the available unary, binary and ternary "
-#~ "operators:"
-#~ msgstr ""
-#~ "Le tableau ci-dessous répertorie les opérateurs unaires, binaires et "
-#~ "ternaires :"
-
-#~ msgid "Operator type"
-#~ msgstr "Type d'opérateur"
-
-#~ msgid "+, -, not, ! (not) , ! (factorial), ^ (power)"
-#~ msgstr "+, -, not, ! (not) , ! (factoriel), ^ (puissance)"
-
-#~ msgid ""
-#~ "+, -, ``*``, /, % (euclidean division), and, &&, or, ||, >, <, >=, <=, ==, "
-#~ "!= (evaluates to ``True`` or ``False``), & (concatenation of strings, "
-#~ "evaluates to a string)"
-#~ msgstr ""
-#~ "+, -, ``*``, /, % (division euclidienne), and, &&, or, ||, >, <, >=, <=, ==,"
-#~ " != (donne la valeur ``True`` ou ``False``), & (concaténation de chaînes de "
-#~ "caractères, donne une chaîne de caractères)"
-
-#~ msgid "Ternary operators"
-#~ msgstr "Opérateurs ternaires"
-
-#~ msgid ""
-#~ "op1 ? op2 : op3 (conditional statement). Please note that op3 is optional, "
-#~ "so you can write op1 ? op2."
-#~ msgstr ""
-#~ "op1 ? op2 : op3 (expression conditionnelle). Veuillez noter qu'op3 est "
-#~ "optionnel, vous pouvez donc écrire op1 ? op2."
-
-#~ msgid "In the table below are listed the available functions:"
-#~ msgstr "Le tableau ci-dessous répertorie les fonctions disponibles :"
-
-#~ msgid "Function type"
-#~ msgstr "Type de fonction"
-
-#~ msgid "Without operand"
-#~ msgstr "Sans opérande"
-
-#~ msgid "now"
-#~ msgstr "now"
-
-#~ msgid "Single operand"
-#~ msgstr "Simple opérande"
-
-#~ msgid ""
-#~ "abs, acos, acosh, asin, asinh, atan, atanh, capitalize, capitalize_all, "
-#~ "ceil, cos, day, dayofweek, degrees, empty, exp, factorial, floor, "
-#~ "fromtimestamp, gamma, hour, isalnum, isalpha, isdecimal, isdigit, islower, "
-#~ "isnumeric, isupper, length, log, log10, lower, minute, month, normalize, "
-#~ "quarter, quartertodaterange, radians, random, round, second, sigmoid, sin, "
-#~ "sqrt, tan, tolowercase, touppercase, trunc, upper, week, year"
-#~ msgstr ""
-#~ "abs, acos, acosh, asin, asinh, atan, atanh, capitalize, capitalize_all, "
-#~ "ceil, cos, day, dayofweek, degrees, empty, exp, factorial, floor, "
-#~ "fromtimestamp, gamma, hour, isalnum, isalpha, isdecimal, isdigit, islower, "
-#~ "isnumeric, isupper, length, log, log10, lower, minute, month, normalize, "
-#~ "quarter, quartertodaterange, radians, random, round, second, sigmoid, sin, "
-#~ "sqrt, tan, tolowercase, touppercase, trunc, upper, week, year"
-
-#~ msgid "Two operands"
-#~ msgstr "Deux opérandes"
-
-#~ msgid ""
-#~ "add_days, add_hours, add_minutes, add_months, add_seconds, add_years, "
-#~ "contains, day, dayofweek, distance, div, endswith, gcd, geopoint2d_towgs84, "
-#~ "geoshape_towgs84, hour, match, max, microsecond, min, minute, mod, month, "
-#~ "pow, quarter, quartertodaterange, random, round, second, startswith, "
-#~ "substring, week, year"
-#~ msgstr ""
-#~ "add_days, add_hours, add_minutes, add_months, add_seconds, add_years, "
-#~ "contains, day, dayofweek, distance, div, endswith, gcd, geopoint2d_towgs84, "
-#~ "geoshape_towgs84, hour, match, max, microsecond, min, minute, mod, month, "
-#~ "pow, quarter, quartertodaterange, random, round, second, startswith, "
-#~ "substring, week, year"
-
-#~ msgid "Three operands"
-#~ msgstr "Trois opérandes"
-
-#~ msgid "center, datediff, ljust, replace, rjust, substring"
-#~ msgstr "center, datediff, ljust, replace, rjust, substring"
-
-#~ msgid "Examples"
-#~ msgstr "Exemples"
-
-#~ msgid ""
-#~ "Keep in mind that for each expression, the examples are presented with "
-#~ "actual numbers, but they can be replaced with the processed dataset's fields"
-#~ " technical identifiers."
-#~ msgstr ""
-#~ "Gardez à l'esprit que pour chaque expression, les exemples sont présentés "
-#~ "avec des nombres réels, mais ceux-ci peuvent être remplacés par les "
-#~ "identifiants techniques des champs du jeu de données traité."
-
-#~ msgid "Result"
-#~ msgstr "Résultat"
-
-#~ msgid "Simple addition"
-#~ msgstr "Addition simple"
-
-#~ msgid "1 + 1"
-#~ msgstr "1 + 1"
-
-#~ msgid "2"
-#~ msgstr "2"
-
-#~ msgid "Addition with a negative number"
-#~ msgstr "Addition avec un nombre négatif"
-
-#~ msgid "-3 + .1"
-#~ msgstr "-3 + .1"
-
-#~ msgid "-2.9"
-#~ msgstr "-2.9"
-
-#~ msgid "Product with a field"
-#~ msgstr "Produit avec un champ"
-
-#~ msgid "price * 2"
-#~ msgstr "price * 2"
-
-#~ msgid "24 (if price is a field valued to 12)"
-#~ msgstr "24 (si price est un champ de valeur 12)"
-
-#~ msgid "Factorial"
-#~ msgstr "Factorielle"
-
-#~ msgid "3!"
-#~ msgstr "3!"
-
-#~ msgid "6"
-#~ msgstr "6"
-
-#~ msgid "Power"
-#~ msgstr "Puissance"
-
-#~ msgid "2^3"
-#~ msgstr "2^3"
-
-#~ msgid "8"
-#~ msgstr "8"
-
-#~ msgid "Greater than: true or false"
-#~ msgstr "Supérieur à : true ou false"
-
-#~ msgid "1 > 2"
-#~ msgstr "1 > 2"
-
-#~ msgid "False"
-#~ msgstr "False"
-
-#~ msgid "Greater or equal: true or false"
-#~ msgstr "Supérieur ou égal à : true ou false"
-
-#~ msgid "1 >= 1"
-#~ msgstr "1 >= 1"
-
-#~ msgid "True"
-#~ msgstr "True"
-
-#~ msgid "Ternary operation"
-#~ msgstr "Opération ternaire"
-
-#~ msgid "1 >= 1 ? 2 : 3"
-#~ msgstr "1 >= 1 ? 2 : 3"
-
-#~ msgid "String concatenation"
-#~ msgstr "Concaténation de chaînes de caractères"
-
-#~ msgid "\"foo\" & \",\" & \"bar\""
-#~ msgstr "\"foo\" & \",\" & \"bar\""
-
-#~ msgid "foo,bar"
-#~ msgstr "foo,bar"
-
-#~ msgid "Cosinus"
-#~ msgstr "Cosinus"
-
-#~ msgid "cos(2 * pi)"
-#~ msgstr "cos(2 * pi)"
-
-#~ msgid "1"
-#~ msgstr "1"
-
-#~ msgid "Logarithm"
-#~ msgstr "Logarithme"
-
-#~ msgid "log(e)"
-#~ msgstr "log(e)"
-
-#~ msgid "Exponential"
-#~ msgstr "Exponentielle"
-
-#~ msgid "exp(4)"
-#~ msgstr "exp(4)"
-
-#~ msgid "54,598"
-#~ msgstr "54,598"
-
-#~ msgid "Rounding"
-#~ msgstr "Arrondi"
-
-#~ msgid "round(2.3)"
-#~ msgstr "round(2.3)"
-
-#~ msgid "round(2.7)"
-#~ msgstr "round(2.7)"
-
-#~ msgid "3"
-#~ msgstr "3"
-
-#~ msgid "Ceiling"
-#~ msgstr "Plafond"
-
-#~ msgid "ceil(2.3)"
-#~ msgstr "ceil(2.3)"
-
-#~ msgid "Flooring"
-#~ msgstr "Plancher"
-
-#~ msgid "floor(2.3)"
-#~ msgstr "floor(2.3)"
-
-#~ msgid "Case checking: true or false"
-#~ msgstr "Vérification de la casse : true ou false"
-
-#~ msgid "islower(\"aBc\")"
-#~ msgstr "islower(\"aBc\")"
-
-#~ msgid "Lowcasing"
-#~ msgstr "Minuscules"
-
-#~ msgid "lower(\"aBc\")"
-#~ msgstr "lower(\"aBc\")"
-
-#~ msgid "abc"
-#~ msgstr "abc"
-
-#~ msgid "Alphanumeric: true or false"
-#~ msgstr "Alphanumérique : true ou false"
-
-#~ msgid "isalnum(\"123\")"
-#~ msgstr "isalnum(\"123\")"
-
-#~ msgid "Capitalize"
-#~ msgstr "Mettre en majuscules"
-
-#~ msgid "capitalize(\"foo bar\")"
-#~ msgstr "capitalize(\"foo bar\")"
-
-#~ msgid "Foo bar"
-#~ msgstr "Foo bar"
-
-#~ msgid "Capitalize all words"
-#~ msgstr "Mettre tous les mots en majuscules"
-
-#~ msgid "capitalize_all(\"foo bar\")"
-#~ msgstr "capitalize_all(\"foo bar\")"
-
-#~ msgid "Foo Bar"
-#~ msgstr "Foo Bar"
-
-#~ msgid "Random number generator"
-#~ msgstr "Générateur de nombres aléatoires"
-
-#~ msgid "random(10)"
-#~ msgstr "random(10)"
-
-#~ msgid "1.80536931404"
-#~ msgstr "1.80536931404"
-
-#~ msgid "Random number generator, in intervals"
-#~ msgstr "Générateur de nombres aléatoires, dans des intervalles"
-
-#~ msgid "random(10, 11)"
-#~ msgstr "random(10, 11)"
-
-#~ msgid "10.7280438796"
-#~ msgstr "10.7280438796"
-
-#~ msgid "Right padding"
-#~ msgstr "Remplissage à droite"
-
-#~ msgid "ljust(\"4400\", 5, \"0\")"
-#~ msgstr "ljust(\"4400\", 5, \"0\")"
-
-#~ msgid "44000"
-#~ msgstr "44000"
-
-#~ msgid "Left padding"
-#~ msgstr "Remplissage à gauche"
-
-#~ msgid "rjust(\"4400\", 5, \"0\")"
-#~ msgstr "rjust(\"4400\", 5, \"0\")"
-
-#~ msgid "04400"
-#~ msgstr "04400"
-
-#~ msgid "Left and right padding"
-#~ msgstr "Remplissage à gauche et à droite"
-
-#~ msgid "center(\"4400\", 6,\"0\")"
-#~ msgstr "center(\"4400\", 6,\"0\")"
-
-#~ msgid "044000"
-#~ msgstr "044000"
-
-#~ msgid "Extract year from date"
-#~ msgstr "Extraire l'année de la date"
-
-#~ msgid "year(\"2014-06-07\")"
-#~ msgstr "year(\"2014-06-07\")"
-
-#~ msgid "2014"
-#~ msgstr "2014"
-
-#~ msgid "Extract hour from datetime"
-#~ msgstr "Extraire l'heure de datetime"
-
-#~ msgid "hour(\"2014-06-07 17:00\")"
-#~ msgstr "hour(\"2014-06-07 17:00\")"
-
-#~ msgid "17"
-#~ msgstr "17"
-
-#~ msgid "Extract hour from datetime with timezone"
-#~ msgstr "Extraire l'heure de datetime avec le fuseau horaire"
-
-#~ msgid "hour(\"2014-06-07 17:00\", \"Europe/Paris\")"
-#~ msgstr "hour(\"2014-06-07 17:00\", \"Europe/Paris\")"
-
-#~ msgid "19"
-#~ msgstr "19"
-
-#~ msgid "Replace text in string"
-#~ msgstr "Remplacer du texte dans la chaîne de caractères"
-
-#~ msgid "replace(\"abcd\", \"b\", \"e\")"
-#~ msgstr "replace(\"abcd\", \"b\", \"e\")"
-
-#~ msgid "aecd"
-#~ msgstr "aecd"
-
-#~ msgid "Count years between 2 dates"
-#~ msgstr "Compter les années entre 2 dates"
-
-#~ msgid "datediff(\"2014-02-28\", \"2015-02-28\", \"year\")"
-#~ msgstr "datediff(\"2014-02-28\", \"2015-02-28\", \"year\")"
-
-#~ msgid "Count months between 2 dates"
-#~ msgstr "Compter les mois entre 2 dates"
-
-#~ msgid "datediff(\"2014-02-28\", \"2015-02-28\", \"month\")"
-#~ msgstr "datediff(\"2014-02-28\", \"2015-02-28\", \"month\")"
-
-#~ msgid "12"
-#~ msgstr "12"
-
-#~ msgid "Count days between 2 dates"
-#~ msgstr "Compter les jours entre 2 dates"
-
-#~ msgid "datediff(\"2014-02-28\", \"2015-02-28\", \"day\")"
-#~ msgstr "datediff(\"2014-02-28\", \"2015-02-28\", \"day\")"
-
-#~ msgid "365"
-#~ msgstr "365"
-
-#~ msgid "Count hours between 2 datetimes"
-#~ msgstr "Compter les heures entre 2 datetimes"
-
-#~ msgid "datediff(\"2014-02-28T20:00:00Z\", \"2014-02-28T21:00:00Z\", \"hour\")"
-#~ msgstr "datediff(\"2014-02-28T20:00:00Z\", \"2014-02-28T21:00:00Z\", \"hour\")"
-
-#~ msgid "Count minutes between 2 datetimes"
-#~ msgstr "Compter les minutes entre 2 datetimes"
-
-#~ msgid "datediff(\"2014-02-28T20:00:00Z\", \"2014-02-28T21:00:00Z\", \"minute\")"
-#~ msgstr "datediff(\"2014-02-28T20:00:00Z\", \"2014-02-28T21:00:00Z\", \"minute\")"
-
-#~ msgid "60"
-#~ msgstr "60"
-
-#~ msgid "Count seconds between 2 datetimes"
-#~ msgstr "Compter les secondes entre 2 datetimes"
-
-#~ msgid "datediff(\"2014-02-28T20:00:00Z\", \"2014-02-28T21:00:00Z\", \"second\")"
-#~ msgstr "datediff(\"2014-02-28T20:00:00Z\", \"2014-02-28T21:00:00Z\", \"second\")"
-
-#~ msgid "3600"
-#~ msgstr "3600"
-
-#~ msgid "Prefix matching: true or false"
-#~ msgstr "Mise en correspondance de préfixes : true ou false"
-
-#~ msgid "startswith(\"hello', 'he')"
-#~ msgstr "startswith(\"hello', 'he')"
-
-#~ msgid "startswith(\"hello', 'lo')"
-#~ msgstr "startswith(\"hello', 'lo')"
-
-#~ msgid "Suffix matching: true or false"
-#~ msgstr "Mise en correspondance de suffixes : true ou false"
-
-#~ msgid "endswith(\"hello', 'he')"
-#~ msgstr "endswith(\"hello', 'he')"
-
-#~ msgid "endswith(\"hello', 'lo')"
-#~ msgstr "endswith(\"hello', 'lo')"
-
-#~ msgid "Add months"
-#~ msgstr "Ajouter des mois"
-
-#~ msgid "add_months(\"2014-11-14\", \"3\")"
-#~ msgstr "add_months(\"2014-11-14\", \"3\")"
-
-#~ msgid "2015-02-14"
-#~ msgstr "2015-02-14"
-
-#~ msgid "Substring matching: true or false"
-#~ msgstr "Mise en correspondance de sous-chaînes : true ou false "
-
-#~ msgid "contains(\"hello\", \"l\")"
-#~ msgstr "contains(\"hello\", \"l\")"
-
-#~ msgid "contains(\"hello\", \"A\")"
-#~ msgstr "contains(\"hello\", \"A\")"
-
-#~ msgid "Empty: true or false"
-#~ msgstr "Vide : true ou false"
-
-#~ msgid "empty(\"\")"
-#~ msgstr "empty(\"\")"
-
-#~ msgid "empty(\"hello\")"
-#~ msgstr "empty(\"hello\")"
+msgstr ""
+"``datediff(\"2014-02-28T20:00:00Z\", \"2014-02-28T21:00:00Z\", \"minute\")``"
+" retourne ``60``"
