@@ -33,8 +33,8 @@ The "Tooltip customization" section contains a variety of options to customize t
       - Standard tooltip (default): allows the choice of a title and of the fields displayed in the tooltip.
       - Custom HTML tooltip: allows a further customization of the tooltip, using HTML.
       - No tooltip: disables the tooltips for the Map visualization of the dataset.
-    * 1. Click on the "Default sort" list box.
-      2. Choose a field from the dataset, on which the sorting will be based.
+    * 1. Click on the "Tooltip type" list box.
+      2. Choose a tooltip type.
 
 Standard tooltip options
 ^^^^^^^^^^^^^^^^^^^^^^^^
