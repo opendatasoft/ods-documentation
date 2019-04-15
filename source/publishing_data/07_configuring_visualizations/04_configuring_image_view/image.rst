@@ -8,7 +8,7 @@ Configuring the Images visualization
    For the Images visualization to be available, the dataset must contain at least one file field, containing at least one image or any other media type file that can generate a thumbnail.
 
 
-In the edition interface of a dataset, the Visualizations > Images tab allows to configure the Images visualization displayed in the front office, once the dataset is published on the portal.
+In the edition interface of a dataset, the Visualizations > Images tab allows to configure the image gallery of the Images visualization displayed in the front office, once the dataset is published on the portal.
 
 The Images visualization, when available, is optional. It can be enabled or disabled using the tick box displayed right under the visualizations tabs.
 
