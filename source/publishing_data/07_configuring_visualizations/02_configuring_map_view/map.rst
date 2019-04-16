@@ -11,6 +11,8 @@ In the edition interface of a dataset, the Visualizations > Map tab allows to co
 
 The Map visualization, when available, is optional. It can be enabled or disabled using the tick box displayed right under the visualizations tabs.
 
+.. screenshot
+
 Customizing the tooltip
 -----------------------
 
@@ -20,6 +22,8 @@ The "Tooltip customization" section contains a variety of options to customize t
    :class: important
 
    For more information about tooltips and how to configure both Standard and Custom HTML tooltips, see :doc:`Configure the tooltip</publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip>` documentation.
+
+To customize the tooltips of the Map visualization, follow the instructions from the tables below.
 
 .. list-table::
   :header-rows: 1
@@ -94,6 +98,8 @@ Customizing the map
 -------------------
 
 The "Map customization" section contains a variety of options to customize the both the map itself (the basemap) and the elements that represent the data (map markers, geographical shapes).
+
+To configure the map of the Map visualization, follow the instructions from the table below.
 
 .. list-table::
   :header-rows: 1

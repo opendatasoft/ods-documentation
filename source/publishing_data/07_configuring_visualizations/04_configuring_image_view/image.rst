@@ -12,8 +12,12 @@ In the edition interface of a dataset, the Visualizations > Images tab allows to
 
 The Images visualization, when available, is optional. It can be enabled or disabled using the tick box displayed right under the visualizations tabs.
 
+.. screenshot
+
 Customizing the information panel
 ---------------------------------
+
+To configure the information panel of the Images visualization, follow the indications from the tables below.
 
 .. list-table::
   :header-rows: 1
@@ -44,7 +48,6 @@ Customizing the information panel
       - Custom HTML tooltip: allows a further customization of the tooltip, using HTML.
     * 1. Click on the "Tooltip types" list box.
       2. Choose a tooltip type.
-
 
 **Standard tooltip options**
 

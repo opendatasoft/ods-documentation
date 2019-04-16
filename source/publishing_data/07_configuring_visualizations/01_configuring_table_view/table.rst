@@ -11,6 +11,9 @@ In the edition interface of a dataset, the Visualizations > Table tab allows to 
 
 The Table visualization, when available for a dataset, cannot be disabled.
 
+.. screenshot
+
+To configure the Table visualization, follow the indications from the table below.
 
 .. list-table::
   :header-rows: 1

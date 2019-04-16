@@ -12,6 +12,9 @@ In the edition interface of a dataset, the Visualizations > Calendar tab allows 
 
 The Calendar visualization, when available, is optional. It can be enabled or disabled using the tick box displayed right under the visualizations tabs.
 
+.. screenshot
+
+To configure the Calendar visualization, follow the indications from the tables below.
 
 .. list-table::
   :header-rows: 1
@@ -54,7 +57,6 @@ The Calendar visualization, when available, is optional. It can be enabled or di
       - Custom HTML tooltip: allows a further customization of the tooltip, using HTML.
     * 1. Click on the "Tooltip types" list box.
       2. Choose a tooltip type.
-
 
 **Standard tooltip options**
 
