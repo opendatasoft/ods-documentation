@@ -17,3 +17,8 @@ In the OpenDataSoft platform, all visualizations configurations are done in the 
    04_configuring_image_view/image
    05_configuring_calendar_view/calendar
    06_configuring_custom_view/custom
+
+.. toctree::
+  :hidden:
+
+  02_configuring_map_view/tooltip
