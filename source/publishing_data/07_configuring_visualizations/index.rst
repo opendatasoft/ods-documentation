@@ -13,7 +13,6 @@ In the OpenDataSoft platform, all visualizations configurations are done in the 
 
    01_configuring_table_view/table
    02_configuring_map_view/map
-   02_configuring_map_view/tooltip
    03_configuring_analyze_view/analyze
    04_configuring_image_view/image
    05_configuring_calendar_view/calendar

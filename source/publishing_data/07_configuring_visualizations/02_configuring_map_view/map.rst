@@ -36,8 +36,7 @@ The "Tooltip customization" section contains a variety of options to customize t
     * 1. Click on the "Tooltip type" list box.
       2. Choose a tooltip type.
 
-Standard tooltip options
-^^^^^^^^^^^^^^^^^^^^^^^^
+**Standard tooltip options**
 
 .. list-table::
   :header-rows: 1
@@ -72,8 +71,7 @@ Standard tooltip options
       3. Click on the second list box, displayed below the first one.
       4. Choose a sort type.
 
-Custom HTML tooltip options
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Custom HTML tooltip options**
 
 .. list-table::
   :header-rows: 1
@@ -104,7 +102,7 @@ The "Map customization" section contains a variety of options to customize the b
     * Description
     * Usage
   * * Basemap
-    * Basemap that will be used by default for the Map visualization. To appear in the list, the basemaps should be configured in the Look & feel > Data visualizations section of the back office (see :doc:`Adding basemaps documentation <source/customizing_look_and_feel/04_configuring_data_visualizations/basemaps>`_).
+    * Basemap that will be used by default for the Map visualization. To appear in the list, the basemaps should be configured in the Look & feel > Data visualizations section of the back office (see :doc:`Adding basemaps</customizing_look_and_feel/04_configuring_data_visualizations/basemaps>` documentation).
     * 1. Click on the "Basemap" list box.
       2. Choose a basemap from the list.
   * * Marker & shape color

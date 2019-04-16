@@ -56,8 +56,7 @@ The Calendar visualization, when available, is optional. It can be enabled or di
       2. Choose a tooltip type.
 
 
-Standard tooltip options
-^^^^^^^^^^^^^^^^^^^^^^^^
+**Standard tooltip options**
 
 .. list-table::
   :header-rows: 1
@@ -82,8 +81,7 @@ Standard tooltip options
       1. Click on a field among the list.
       2. Drag and drop the field above or below another one.
 
-Custom HTML tooltip options
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Custom HTML tooltip options**
 
 .. list-table::
   :header-rows: 1

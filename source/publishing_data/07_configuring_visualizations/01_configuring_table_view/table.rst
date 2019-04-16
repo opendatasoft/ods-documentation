@@ -41,14 +41,3 @@ The Table visualization, when available for a dataset, cannot be disabled.
 
       1. Find the field among the list.
       2. Click on the X icon at the right of the field.
-
-
-.. ifconfig:: language == 'en'
-
-    .. image:: images/table__table--en.jpg
-        :alt: Table view
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/table__table--fr.jpg
-        :alt: Vue Table
