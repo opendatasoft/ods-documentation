@@ -5,7 +5,7 @@ Configuring the Calendar visualization
 .. admonition:: Prerequisite
    :class: important
 
-   For the Calendar visualization to be available, the dataset must contain at least one date or datetime field, and a text field containing the title of the calendar event.
+   For the Calendar visualization to be available, the dataset must contain at least one :ref:`date or datetime field<choosingtype>`, and a text field containing the title of the calendar event.
 
 
 In the edition interface of a dataset, the Visualizations > Calendar tab allows to configure the Calendar visualization displayed in the front office, once the dataset is published on the portal.
@@ -19,7 +19,7 @@ To configure the Calendar visualization, follow the indications from the tables 
 .. list-table::
   :header-rows: 1
 
-  * * Customization name
+  * * Option name
     * Description
     * Usage
   * * Event title

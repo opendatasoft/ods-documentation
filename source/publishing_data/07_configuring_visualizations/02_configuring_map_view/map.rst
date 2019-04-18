@@ -4,7 +4,7 @@ Configuring the Map visualization
 .. admonition:: Prerequisite
    :class: important
 
-   For the Map visualization to be available, the dataset must contain at least one geographical field (GeoPoint or GeoShape).
+   For the Map visualization to be available, the dataset must contain at least one geographical field (:ref:`Geo point or Geo shape<choosingtype>`).
 
 
 In the edition interface of a dataset, the Visualizations > Map tab allows to configure the Map visualization displayed in the front office, once the dataset is published on the portal.
@@ -97,7 +97,7 @@ To customize the tooltips of the Map visualization, follow the instructions from
 Customizing the map
 -------------------
 
-The "Map customization" section contains a variety of options to customize the both the map itself (the basemap) and the elements that represent the data (map markers, geographical shapes).
+The "Map customization" section contains a variety of options to customize both the map itself (the basemap) and the elements that represent the data (map markers, geographical shapes).
 
 To configure the map of the Map visualization, follow the instructions from the table below.
 

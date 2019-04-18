@@ -5,7 +5,7 @@ Configuring the Analyze visualization
 .. admonition:: Prerequisite
    :class: important
 
-   For the Analyze visualization to be available, the dataset must contain at least one date or datetime field, or a field set as a facet.
+   For the Analyze visualization to be available, the dataset must contain at least one :ref:`date or datetime field<choosingtype>`, or a :ref:`field set as a facet<settingfacets>`.
 
 
 In the edition interface of a dataset, the Visualizations > Analyze tab allows to configure the default chart of the Analyze visualization displayed in the front office, once the dataset is published on the portal.
