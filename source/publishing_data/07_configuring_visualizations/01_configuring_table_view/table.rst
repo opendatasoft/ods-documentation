@@ -22,7 +22,7 @@ To configure the Table visualization, follow the indications from the table belo
     * Description
     * Usage
   * * Default sort
-    * By default, the Table visualization keeps the order of the records as it is after they been processed. It is possible to define another default sort, by choosing a field and a sort type.
+    * By default, the Table visualization keeps the order of the records as it is after they have been processed. It is possible to define another default sort, by choosing a field and a sort type.
     * 1. Click on the "Default sort" list box.
       2. Choose a field from the dataset, on which the sorting will be based.
       3. Click on the second list box, displayed below the first one.

@@ -6,7 +6,7 @@ In the OpenDataSoft platform, all visualizations configurations are done in the 
 .. admonition:: Important
    :class: important
 
-   Although all visualization tabs are always displayed, they may not all be available for all datasets. In that case, the name of the tab is grayed out.
+   Although all visualization tabs are always displayed, they may not all be available for all datasets. In that case, the name of the tab is greyed out.
 
 .. toctree::
    :maxdepth: 2
