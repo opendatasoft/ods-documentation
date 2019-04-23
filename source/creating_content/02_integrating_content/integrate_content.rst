@@ -397,18 +397,6 @@ In addition to AngularJS filters, OpenDataSoft widgets library includes some add
 	capitalize, fieldsFilter, firstValue, imageify, imageUrl, isAfter, isBefore, isDefined, isEmpty, join, keys, moment, momentadd, momentdiff, nofollow, normalize, numKeys, shortSummary, slugify, split, stringify, themeColor, themeSlug, thumbnailUrl, timesince, toObject, truncate, values, videoify
 
 
-
-Creating dashboards
--------------------
-
-A step by step tutorial to create a simple dashboard with data visualization, filters, and counters.
-
- .. toctree::
-	:maxdepth: 2
-
-   	../tutorials/dashboard/dashboard
-
-
 Going further with advanced widgets
 -----------------------------------
 
