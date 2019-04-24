@@ -10,6 +10,11 @@ The second one consists in pushing data on the OpenDataSoft platform using a ded
 Using scheduling to keep a dataset up to date
 ---------------------------------------------
 
+.. admonition:: Caution
+   :class: caution
+
+   The availability of this feature depends on the license of the OpenDataSoft domain.
+
 This solution is the easiest to implement, it does not require any development, only a remote source and some settings in the dataset configuration.
 
 Specifying a resource
@@ -32,12 +37,12 @@ Once a dataset is saved with a remote resource, the scheduling tab is activated.
 Pushing real time data
 ----------------------
 
+.. admonition:: Caution
+   :class: caution
+
+   The availability of this feature depends on the license of the OpenDataSoft domain.
+
 For some types of data, it can be useful to push data instead of the more traditional model of having the data being pulled from a resource by the platform. To address this need, the OpenDataSoft platform offers a realtime push API. It is not to be confused with the ability to schedule a dataset processing. When scheduling, the dataset will periodically pull the resource and process the data that is inside of it, whereas with the push API, the dataset is fed by an application through a push API and records are processed one by one as soon as they are received.
-
-.. admonition:: Note
-   :class: note
-
-   As this feature is still in beta, it is not activated by default. Please contact OpenDataSoft's support to try it out.
 
 Configuring the dataset schema
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
