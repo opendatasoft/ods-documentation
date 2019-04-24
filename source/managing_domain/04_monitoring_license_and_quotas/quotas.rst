@@ -4,7 +4,7 @@ Managing quotas
 Your portal license
 -------------------
 
-Before diving into which quotas exist on OpenDataSoft portals, it is important to introduce the license topic. A license applies to each and every OpenDataSoft portal. It is a contract between OpenDataSoft and the portal owners, defining how much data can be injected into the portal and the consumption of this data.
+Before diving into which quotas exist on Opendatasoft portals, it is important to introduce the license topic. A license applies to each and every Opendatasoft portal. It is a contract between Opendatasoft and the portal owners, defining how much data can be injected into the portal and the consumption of this data.
 
 For example, freemium portals can have up to 5 datasets, each having at most 20000 records.
 

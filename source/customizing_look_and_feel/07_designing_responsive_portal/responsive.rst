@@ -7,7 +7,7 @@ A responsive portal header
 .. important::
    The theme customization is not available on freemium domains (created through the
    `Try it for free <https://www.opendatasoft.com/discover-opendatasoft-demo/>`_ page on
-   `OpenDataSoft's website <https://www.opendatasoft.com>`_).
+   `Opendatasoft's website <https://www.opendatasoft.com>`_).
    If your domain is a freemium domain and would like to get this theme feature, `email us! <sales@opendatasoft.com>`_
 
 .. warning::
@@ -25,7 +25,7 @@ toggle button, which usually features the famous *hamburger icon* |hamburger|.
 .. |hamburger| image:: images/responsive-menus__hamburger.png
 
 Clicking this button opens or closes a drawer containing all menu items. This behaviour can be seen on
-`OpenDataSoft's central data repository <https://data.opendatasoft.com/page/home/>`_ and on all new portals.
+`Opendatasoft's central data repository <https://data.opendatasoft.com/page/home/>`_ and on all new portals.
 
 .. figure:: images/responsive-menus__data-collapsed.png
     :align: left
@@ -41,7 +41,7 @@ Implementation
 ~~~~~~~~~~~~~~
 
 Implementing this behaviour usually means resorting heavily to *media queries*, that is CSS rules applied only for a
-given screen width. To facilitate this work, OpenDataSoft's provides a handy directive called ``ods-responsive-menu``
+given screen width. To facilitate this work, Opendatasoft's provides a handy directive called ``ods-responsive-menu``
 that you should use within the header as follow.
 
 .. code-block:: html
@@ -136,18 +136,18 @@ On top of that, the ``.ods-responsive-menu-collapsible`` element will get the cl
 Responsive page layouts
 -----------------------
 
-Like many websites, OpenDataSoft's portal uses a grid layout to position elements. A grid is the intersection of rows
+Like many websites, Opendatasoft's portal uses a grid layout to position elements. A grid is the intersection of rows
 and columns of pre-defined width, which will be used to position elements within a layout. This very common design tool
 as been adapted to webdesign first using tables and soon thereafter using standard ``div`` elements.
 
-If you are already familiar with the whole concept of grid layouts, suffice-it to say that OpenDataSoft's grid system
+If you are already familiar with the whole concept of grid layouts, suffice-it to say that Opendatasoft's grid system
 is largely based on `Bootstrap CSS framework <http://getbootstrap.com/css/#grid>`_. You can see the list of
 `Available classes`_ below.
 
 Concepts and terminology
 ------------------------
 
-OpenDataSoft grid layout is a 12-column layout, which means that grid cells can span 1 to 12 columns at once.
+Opendatasoft grid layout is a 12-column layout, which means that grid cells can span 1 to 12 columns at once.
 
 A grid layout relies on 3 types of elements: containers, rows and columns. Containers define the overall width of the
 layout, rows group together cells and columns are one-twelfth of the container's width. As a result, cells are defined
@@ -222,7 +222,7 @@ even more precise, it responds to the width of the viewport of the device, that 
 that is the width of the browser's window.
 
 Responsive layouts work by defining *breakpoints*, widths in pixels marking levels at which the layout will change.
-Within the OpenDataSoft's platform, 3 breakpoints (defining 4 modes) are defined and can be
+Within the Opendatasoft's platform, 3 breakpoints (defining 4 modes) are defined and can be
 :ref:`customized through the theme <theme__layout-options>`. These modes are *extra-small*, *small*, *medium* and
 *large* (also refered to as *mobile*, *tablet*, *desktop* and *large desktop*).
 

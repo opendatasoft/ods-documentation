@@ -6,7 +6,7 @@ Dataset of datasets (domain) connector
 
    This connector should be use with much caution because it can give visibility to private data.
 
-The Dataset of datasets connector allows to create an index of the datasets of an OpenDataSoft domain, optionally with all their related metadata and analytics, in the form of a dataset.
+The Dataset of datasets connector allows to create an index of the datasets of an Opendatasoft domain, optionally with all their related metadata and analytics, in the form of a dataset.
 
 Creation
 --------

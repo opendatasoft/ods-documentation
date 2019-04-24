@@ -19,7 +19,7 @@ Each dataset follows a schema. Fully defining and configuring a dataset schema m
 Changing a label
 ~~~~~~~~~~~~~~~~
 
-The OpenDataSoft platform retrieves the default field labels found in the source dataset. It is however possible to change each dataset field label.
+The Opendatasoft platform retrieves the default field labels found in the source dataset. It is however possible to change each dataset field label.
 
 .. admonition:: Note
    :class: note

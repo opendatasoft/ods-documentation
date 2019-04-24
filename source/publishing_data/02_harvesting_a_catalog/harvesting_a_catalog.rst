@@ -46,8 +46,8 @@ When you are done, click on **Create harvester** and you will be redirected to t
 
 Some options are available for every harvester type such as:
 
-- **Update on deletion**: if the source datasets are deleted on the harvested portal, delete them on this OpenDataSoft portal too. Otherwise, you may have datasets that are not available on the external service anymore (e.g: if they are deleted from the external service).
-- **Download resources**: download resources instead of attaching them via URL. This options allows you to detach your datasets from the remote portal by permanently copying all required data on the OpenDataSoft platform. Otherwise, your datasets will be linked to the external service and will access remote datasets via their URL for every publishing.
+- **Update on deletion**: if the source datasets are deleted on the harvested portal, delete them on this Opendatasoft portal too. Otherwise, you may have datasets that are not available on the external service anymore (e.g: if they are deleted from the external service).
+- **Download resources**: download resources instead of attaching them via URL. This options allows you to detach your datasets from the remote portal by permanently copying all required data on the Opendatasoft platform. Otherwise, your datasets will be linked to the external service and will access remote datasets via their URL for every publishing.
 - **Restrict visibility**: make the visibility of harvested datasets restricted. Otherwise, they will have the default visibility of your portal.
 - **Default metadata**, **inspire metadata**, **DCAT metadata**: allow you to override some metadata in every harvested dataset. Useful if you want to force the theme or publisher instead of using the one used on the external service.
 

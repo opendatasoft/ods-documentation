@@ -1,7 +1,7 @@
 Creating a content page
 =======================
 
-The OpenDataSoft platform allows to publish and explore datasets, but also to use it to build fully customized content pages, mixing editorial content as well as data visualizations built from the datasets published in the domain.
+The Opendatasoft platform allows to publish and explore datasets, but also to use it to build fully customized content pages, mixing editorial content as well as data visualizations built from the datasets published in the domain.
 
 Content pages can be used to:
 
@@ -51,7 +51,7 @@ The template selector shows predefined templates that you can directly use. Thes
 edit directly, to portal homepages presenting the content of the catalog.
 
 You can also choose to edit the page in **expert mode**,
-which gives you a direct access to the page's HTML and CSS, allowing you to :doc:`further customize the style of your page <style>`, or to `build very advanced pages using our OpenDataSoft widgets <https://help.opendatasoft.com/tutorials/en/tutorials.html>`_.
+which gives you a direct access to the page's HTML and CSS, allowing you to :doc:`further customize the style of your page <style>`, or to `build very advanced pages using our Opendatasoft widgets <https://help.opendatasoft.com/tutorials/en/tutorials.html>`_.
 You can switch to expert mode from any template, meaning you can use these templates as starting points for dashboards or advanced pages.
 But once you've switched to expert mode, you cannot go back.
 

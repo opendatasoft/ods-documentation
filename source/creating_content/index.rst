@@ -1,7 +1,7 @@
 Creating content
 ================
 
-In this section are listed and documented all features related to creation of a page. These features are available in the Pages section of the back office of an OpenDataSoft domain.
+In this section are listed and documented all features related to creation of a page. These features are available in the Pages section of the back office of an Opendatasoft domain.
 
 .. toctree::
    :maxdepth: 2

@@ -4,10 +4,10 @@ Customizing theme and portal icon
 .. important::
    The theme customization is not available on freemium domains (created through the
    `Try it for free <https://www.opendatasoft.com/discover-opendatasoft-demo/>`_ page on
-   `OpenDataSoft's website <https://www.opendatasoft.com>`_).
+   `Opendatasoft's website <https://www.opendatasoft.com>`_).
    If your domain is a freemium domain and would like to get this theme feature, `email us! <sales@opendatasoft.com>`_
 
-OpenDataSoft's theme management interface can be found in the domain back-office. In order to access it, you'll have to
+Opendatasoft's theme management interface can be found in the domain back-office. In order to access it, you'll have to
 click the ``Look & feel`` section in the navigation bar and then on the ``theme`` link.
 
 .. admonition:: Note
@@ -99,7 +99,7 @@ In order to reset any of the variable to its default value, just click on the cl
 Colors
 ~~~~~~
 
-As with layout options, the OpenDataSoft platform relies on a handful of color variables for the style of the portal
+As with layout options, the Opendatasoft platform relies on a handful of color variables for the style of the portal
 elements. You can use the color inputs on this tab to set some of theme. This way with just a few clicks you can brand
 your portal to your colors.
 
@@ -122,7 +122,7 @@ Stylesheet
 ~~~~~~~~~~
 
 If changing colors is not enough and you'd like make deeper changes, you'll have to write your own CSS. Luckily this tab
-enables you to input your own style rules. These will be applied on top of OpenDataSoft's default rules and have
+enables you to input your own style rules. These will be applied on top of Opendatasoft's default rules and have
 precedence over them.
 
 .. ifconfig:: language == 'en'
@@ -141,7 +141,7 @@ If your customization uses specific images and fonts, you can upload them to the
     It won't have any side-effects (limited to this single class name) and is guaranteed to work (since the hierarchy
     tree is mostly flat).
 
-    This is possible because all of OpenDataSoft's CSS code is written following the
+    This is possible because all of Opendatasoft's CSS code is written following the
     `BEM methodology <http://getbem.com/introduction/>`_ and prefixed with `ods-` so that they won't conflict with your
     own styles and can easily be overridden. You'll find a great introduction to this methodology on the ever-useful
     `CSS Tricks website <https://css-tricks.com/bem-101/>`_.
@@ -263,7 +263,7 @@ nesting.
 For all these reasons, we've created an API enabling users with the theme API key to locally write their style rules
 using all the tools they want, and to just push the resulting CSS code to the platform. We've packaged a client to this
 API along with common tools (less preprocessor and autoprefixer) in the
-`OpenDataSoft Portal Development Kit <https://github.com/opendatasoft/ods-portal-devkit>`_.
+`Opendatasoft Portal Development Kit <https://github.com/opendatasoft/ods-portal-devkit>`_.
 
 This ODS Portal DevKit is an open source project distributed for free on Github, feel free to download it and taylor it
 to your development workflow.

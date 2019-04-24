@@ -102,7 +102,7 @@ Granting access for all of your organisation's members
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If your organisation already has its own credentials management system, you can set up a bridge between your identity
-provider and your OpenDataSoft portal. This will give general access to your portal (no specific rights) to each of
+provider and your Opendatasoft portal. This will give general access to your portal (no specific rights) to each of
 your organisation's members.
 
 You'll find more information about setting up such a bridge on the :doc:`SAML configuration documentation page </configuring_domain/01_managing_security/saml>`.

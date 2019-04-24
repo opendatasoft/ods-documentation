@@ -4,9 +4,9 @@ Integrating content
 When editing your page in **expert mode**, you are able to integrate other content directly in your page.
 
 
-Embedding an OpenDataSoft visualization
+Embedding an Opendatasoft visualization
 ---------------------------------------
-When you are browsing a visualization on an OpenDataSoft portal (including your own), you can see below a few options
+When you are browsing a visualization on an Opendatasoft portal (including your own), you can see below a few options
 to share the content, including "Embed", which will provide you with a little HTML code that you can paste in your page.
 By doing so, you will embed the visualization inside your page.
 
@@ -23,8 +23,8 @@ Embedding a Twitter timeline
 ----------------------------
 If you have an account on Twitter, you can create Twitter "widgets" from your Twitter account page, which are designed to be
 integrated in other websites (like a blog). When you create a widget, Twitter provides you with a little "code" to paste in your
-HTML code. Due to security concerns, JavaScript is blocked in OpenDataSoft pages editor, so you can't directly use the code provided
-by Twitter. However, we provide an OpenDataSoft widget to achieve this instead.
+HTML code. Due to security concerns, JavaScript is blocked in Opendatasoft pages editor, so you can't directly use the code provided
+by Twitter. However, we provide an Opendatasoft widget to achieve this instead.
 
 First, you need to capture the "Widget ID", which is present in the first line of the code, in the ``data-widget-id`` attribute:
 
@@ -56,7 +56,7 @@ When editing your page content in expert mode, you may want to use the ODS-Widge
 available as HTML elements, allowing you to natively integrate data visualizations in your page code, and building interactive
 pages by combining widgets together.
 
-The ODS-Widgets library is an open source, AngularJS-based framework developed and maintained by OpenDataSoft on
+The ODS-Widgets library is an open source, AngularJS-based framework developed and maintained by Opendatasoft on
 `GitHub <https://github.com/opendatasoft/ods-widgets>`_. It comes with a complete and comprehensive
 `online documentation <https://opendatasoft.github.io/ods-widgets/docs/>`_.
 
@@ -65,7 +65,7 @@ It can be used directly in your domain's content pages, or in third party Web si
 .. admonition:: Note
    :class: note
 
-   Despite being based on AngularJS, the ODS-Widgets is designed to be used as a set of HTML elements, and are therefore entirely used in HTML code, with no JavaScript to write. It is therefore usable by anyone with a few notions of HTML, and doesn't require development skills. Moreover, many visualizations from OpenDataSoft provide the equivalent widgets code in real time when you use them from the portal, so you can learn by starting from the result of a visualization and iterate from there.
+   Despite being based on AngularJS, the ODS-Widgets is designed to be used as a set of HTML elements, and are therefore entirely used in HTML code, with no JavaScript to write. It is therefore usable by anyone with a few notions of HTML, and doesn't require development skills. Moreover, many visualizations from Opendatasoft provide the equivalent widgets code in real time when you use them from the portal, so you can learn by starting from the result of a visualization and iterate from there.
 
 On top of all the widgets offered by the `ods-widgets <http://opendatasoft.github.io/ods-widgets/docs/#/api>`_ library,
 a few additional directives are available for use within the content pages on the platform. Contrary to the widgets,
@@ -111,7 +111,7 @@ odsCatalogContext
 odsChart
 """"""""
 
- - This widget is the base widget allowing to display charts from OpenDataSoft datasets. A Chart is defined by one or more series that get there data from form one or more dataset represented by an Dataset Context, a type of chart and multiple parameters to fine tune the appearance of chart.
+ - This widget is the base widget allowing to display charts from Opendatasoft datasets. A Chart is defined by one or more series that get there data from form one or more dataset represented by an Dataset Context, a type of chart and multiple parameters to fine tune the appearance of chart.
  - `Full documentation <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsChart>`__
  - Linked to `odsChartQuery <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsChartQuery>`_ and `odsChartSerie <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsChartSerie>`_
 
@@ -323,7 +323,7 @@ odsSocialButtons
 odsSpinner
 """"""""""
 
- - This widget displays the custom OpenDataSoft spinner. Its size and color match the current font's.
+ - This widget displays the custom Opendatasoft spinner. Its size and color match the current font's.
  - `Full documentation <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsSpinner>`__
 
 
@@ -393,7 +393,7 @@ odsTwitterTimeline
 Filters
 """""""
 
-In addition to AngularJS filters, OpenDataSoft widgets library includes some additional that can be used in custom pages :
+In addition to AngularJS filters, Opendatasoft widgets library includes some additional that can be used in custom pages :
 	capitalize, fieldsFilter, firstValue, imageify, imageUrl, isAfter, isBefore, isDefined, isEmpty, join, keys, moment, momentadd, momentdiff, nofollow, normalize, numKeys, shortSummary, slugify, split, stringify, themeColor, themeSlug, thumbnailUrl, timesince, toObject, truncate, values, videoify
 
 

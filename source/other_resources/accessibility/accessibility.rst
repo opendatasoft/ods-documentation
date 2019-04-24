@@ -4,7 +4,7 @@ Accessibility
 Referentials 
 ~~~~~~~~~~~~
 
-OpenDataSoft uses two referentials' guidelines at **AA** levels for Accessibility: 
+Opendatasoft uses two referentials' guidelines at **AA** levels for Accessibility: 
 
 *  |WCAG2|
 *  |RGAA|
@@ -16,14 +16,14 @@ We also follow |ADA| Standards for Accessible Design in order to improve access 
 
 Since the |IAADA| and doesn't define the regulations, organizations are encouraged to use the **WCAG 2.0 level AA guidelines**. 
 
-Therefore, the OpenDataSoft public facing content is **ADA compliant because it follows WCAG 2.0 - AA**. 
+Therefore, the Opendatasoft public facing content is **ADA compliant because it follows WCAG 2.0 - AA**. 
 
 We also have a |VPAT| accessible on demand. 
 
-What does OpenDataSoft do for accessibility?
+What does Opendatasoft do for accessibility?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Here are a few examples of what the OpenDataSoft platform implements to improve accessibility: 
+Here are a few examples of what the Opendatasoft platform implements to improve accessibility: 
 
 * The decorative elements have WAI-ARIA attributes to avoid text-to-speech triggering
 * The images are tagged with alt attributes and meaningful titles

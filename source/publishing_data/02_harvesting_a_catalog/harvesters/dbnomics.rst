@@ -3,7 +3,7 @@ DB.nomics harvester
 
 Retrieve one or more datasets from `DB.nomics <https://db.nomics.world/>`_.
 
-It is possible to either fetch each of these time series as individual OpenDataSoft datasets or aggregate them as a single OpenDataSoft dataset.
+It is possible to either fetch each of these time series as individual Opendatasoft datasets or aggregate them as a single Opendatasoft dataset.
 The aggregated dataset will have an additional "Concept" column with the origin of each row.
 
 A dataset ID follows the following format *ProviderName-DatasetId*.

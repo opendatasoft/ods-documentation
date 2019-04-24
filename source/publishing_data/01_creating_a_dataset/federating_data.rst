@@ -13,7 +13,7 @@ Federation is a core feature of the data network we are building. Using it is a 
     .. image:: images/federation__introduction--fr.png
         :alt: Schema fédération simple
 
-Federation allows to redistribute, in full or in part, an open dataset from your domain (OpenDataSoft instance) or from another domain. It is a way to collect external sources of data on its own domain.
+Federation allows to redistribute, in full or in part, an open dataset from your domain (Opendatasoft instance) or from another domain. It is a way to collect external sources of data on its own domain.
 
 Source
 ------
@@ -30,7 +30,7 @@ To federate a dataset, simply go to the *Catalog > Dataset* page and hit **New d
     .. image:: images/federation__source--fr.jpg
         :alt: Fédération source
 
-There is then a link **Add a dataset from the OpenDataSoft network**, it leads to a console from where it is possible to configure a new federated source.
+There is then a link **Add a dataset from the Opendatasoft network**, it leads to a console from where it is possible to configure a new federated source.
 
 .. ifconfig:: language == 'en'
 
@@ -57,7 +57,7 @@ Click on **Select a source dataset**.
 Different sources are available :
 
 - The same domain
-- All open datasets from every OpenDataSoft domains
+- All open datasets from every Opendatasoft domains
 - Domain's subdomains (optionnal)
 
 From there the next step is to either select a whole dataset or to select a part of it. The filters are the same as in the dataset explore console, there are pre-defined filters, a query box and, if available, the geofilter.

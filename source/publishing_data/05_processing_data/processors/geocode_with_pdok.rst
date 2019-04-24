@@ -4,7 +4,7 @@ Geocode with PDOK processor
 .. admonition:: Important
    :class: important
 
-   This processor is not available by default. Please contact OpenDataSoft support team if you want this processor to be activated in your domain.
+   This processor is not available by default. Please contact Opendatasoft support team if you want this processor to be activated in your domain.
 
 This processor allows to geocode addresses in the Netherlands by using the PDOK service.
 

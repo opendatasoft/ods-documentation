@@ -1,9 +1,9 @@
 Adding basemaps
 ===============
 
-Basemaps are the canvas on which geographic data are represented. They are used for any map displayed on OpenDataSoft, whether it is the visualization map of a dataset or the Map Builder.
+Basemaps are the canvas on which geographic data are represented. They are used for any map displayed on Opendatasoft, whether it is the visualization map of a dataset or the Map Builder.
 
-A basic basemap is used by default for all maps of all OpenDataSoft domains. It is however possible to change that default basemap, as well as to make other basemaps available in an OpenDataSoft portal. It will allow users to change the basemap at any time on a map, and even to change the default basemap of a specific dataset.
+A basic basemap is used by default for all maps of all Opendatasoft domains. It is however possible to change that default basemap, as well as to make other basemaps available in an Opendatasoft portal. It will allow users to change the basemap at any time on a map, and even to change the default basemap of a specific dataset.
 
 .. admonition:: Note
    :class: note
@@ -29,12 +29,12 @@ Basemaps should be managed from the table of the "Basemaps" area. This table dis
 Adding default basemaps
 -----------------------
 
-By default, OpenDataSoft provides several basemaps. They are the default basemaps displayed in the drop-down menu of the Basemap table column (described in the introduction of this documentation). All these default basemaps can be made available on the platform, using the table. Even though the basemaps appear in the list of default basemaps, they will only be usable once added to the table.
+By default, Opendatasoft provides several basemaps. They are the default basemaps displayed in the drop-down menu of the Basemap table column (described in the introduction of this documentation). All these default basemaps can be made available on the platform, using the table. Even though the basemaps appear in the list of default basemaps, they will only be usable once added to the table.
 
 To add default basemaps to the table and make them available on the domain:
 
 1. Click on the "Add basemap" button under the table.
-2. In the Basemap column, click on the drop-down menu. By default, it should display "Streets" (default basemap for all OpenDataSoft domains).
+2. In the Basemap column, click on the drop-down menu. By default, it should display "Streets" (default basemap for all Opendatasoft domains).
 3. The drop-down menu indicates all basemaps available in the domain, ordered by basemap providers. Click on the basemap to add to the domain.
 4. In the Label column, indicate a label for the newly added basemap. There must be one label per language (if the domain supports more than one), otherwise the configurations cannot be saved.
 5. Click on the "Save" button in the top right corner of the page.
@@ -51,7 +51,7 @@ Among the default basemaps, displayed in the drop-down menu of the Basemap table
 .. admonition:: Note
    :class: note
 
-   WMTS basemaps are not supported by the OpenDataSoft platform.
+   WMTS basemaps are not supported by the Opendatasoft platform.
 
 To add a custom basemap to the domain:
 
@@ -124,7 +124,7 @@ To add a custom basemap to the domain:
 Adding external basemaps
 ------------------------
 
-OpenDataSoft allows the addition of external basemaps through specific integrations.
+Opendatasoft allows the addition of external basemaps through specific integrations.
 
 Currently, the only available integration is with Mapbox.
 
@@ -137,7 +137,7 @@ Currently, the only available integration is with Mapbox.
 
    1. Go to the Thunderforest website, logged in.
    2. In the `Thunderforest console page <https://manage.thunderforest.com/dashboard>`_, copy the API Key.
-   3. Go back to the Look & feel > Data Visualizations subsection of the OpenDataSoft's domain back office.
+   3. Go back to the Look & feel > Data Visualizations subsection of the Opendatasoft's domain back office.
    4. In the "Basemaps" area, click on "Thunderforest integration" to expand the related configurations.
    5. Paste the API Key in the textbox.
 
@@ -145,7 +145,7 @@ Mapbox integration
 ~~~~~~~~~~~~~~~~~~
 
 `Mapbox <https://www.mapbox.com/>`_ is a mapping platform that allows to build and design custom maps. They also
-provide a dozen different map styles that can be directly used. OpenDataSoft allows to integrate these Mapbox basemaps into an OpenDataSoft domain, to make them usage throughout the portal.
+provide a dozen different map styles that can be directly used. Opendatasoft allows to integrate these Mapbox basemaps into an Opendatasoft domain, to make them usage throughout the portal.
 
 .. admonition:: Prerequisite
    :class: important
@@ -155,8 +155,8 @@ provide a dozen different map styles that can be directly used. OpenDataSoft all
 To integrate Mapbox basemaps:
 
 1. Go to the Mapbox website, logged in.
-2. In the `Mapbox account page <https://www.mapbox.com/account/apps/>`_, either copy the Default Public Token, or create a new Public Token and copy it. This will be used by OpenDataSoft to display maps on the behalf of the user's own Mapbox account.
-3. Go back to the Look & feel > Data Visualizations subsection of the OpenDataSoft's domain back office.
+2. In the `Mapbox account page <https://www.mapbox.com/account/apps/>`_, either copy the Default Public Token, or create a new Public Token and copy it. This will be used by Opendatasoft to display maps on the behalf of the user's own Mapbox account.
+3. Go back to the Look & feel > Data Visualizations subsection of the Opendatasoft's domain back office.
 4. In the "Basemaps" area, click on "Mapbox integration" to expand the related configurations.
 5. Paste the Public Token in the textbox. A message will confirm whether the access token is valid or not.
 

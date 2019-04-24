@@ -18,7 +18,7 @@ On the right side are displayed:
   - the Information tab, to know more about the metadata,
   - the Table, Map, Analyze, Images and Calendar tabs, to visualize the data in different ways,
   - the :doc:`Export tab, to download the dataset <../04_getting_involved/exporting_data>`,
-  - the API tab, to use the dataset with the OpenDataSoft API (see :doc:`Using the API <../04_getting_involved/using_api>`),
+  - the API tab, to use the dataset with the Opendatasoft API (see :doc:`Using the API <../04_getting_involved/using_api>`),
   - the :doc:`Comments tab, to discuss the dataset with other users <../04_getting_involved/commenting_via_disqus>`.
 
 - and the content of each tab (4).
@@ -28,7 +28,7 @@ This section of the documentation will focus on the exploration of a chosen data
 .. admonition:: Caution
    :class: caution
 
-   The Edit button next to the dataset title, as well as the Back office button in the navigation bar, are only displayed for authenticated users who have the permission to administrate the OpenDataSoft domain.
+   The Edit button next to the dataset title, as well as the Back office button in the navigation bar, are only displayed for authenticated users who have the permission to administrate the Opendatasoft domain.
 
 .. toctree::
    :maxdepth: 1

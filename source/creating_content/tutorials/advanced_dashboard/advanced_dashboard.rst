@@ -15,7 +15,7 @@ This dataset contains, for each TGV (High speed train) line (100 lines), the num
 
 Dataset id : ``regularite-mensuelle-tgv``
 You can search for it on `data.opendatasoft.com <https://data.opendatasoft.com>`_
-Then add this dataset to your domain (New dataset, Add a source from OpenDataSoft network, pick the dataset, save, publish)
+Then add this dataset to your domain (New dataset, Add a source from Opendatasoft network, pick the dataset, save, publish)
 
 
 Create some KPIs

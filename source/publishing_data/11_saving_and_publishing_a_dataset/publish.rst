@@ -31,7 +31,7 @@ Dataset processing is perform asynchronously to ensure the best performance and 
 Different status are reachable by a dataset during the processing task.
 
 * Queued: The processing task is waiting to be pick up.
-* Processing: Records are extracted from the connector, processors are applied and the result is made available through the OpenDataSoft API. Records number increased during this step.
+* Processing: Records are extracted from the connector, processors are applied and the result is made available through the Opendatasoft API. Records number increased during this step.
 * Unpublishing: Dataset is removed from the API.
 * Aborting processing: The *abort* order has been sent to the platform. The dataset processing will stop within the next minute.
 * Limit reached: The user who launched the processing job reached its allowed quota. He overtakes one of the limit (from the domain, the group of the user).

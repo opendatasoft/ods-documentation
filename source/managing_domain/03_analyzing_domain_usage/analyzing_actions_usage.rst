@@ -5,7 +5,7 @@ Go to the *Analytics > Actions* page.
 
 There are eight indicators :
 
-1. **Actions**: Frequency and distribution of actions (analyze, geo, search) taken by users based on API calls. Gives you precious information about what your users do and how to better serve them. Also remember that like with every chart on OpenDataSoft you can filter the variables displayed (Analyze, Geo or Search) by clicking on the legend labels.
+1. **Actions**: Frequency and distribution of actions (analyze, geo, search) taken by users based on API calls. Gives you precious information about what your users do and how to better serve them. Also remember that like with every chart on Opendatasoft you can filter the variables displayed (Analyze, Geo or Search) by clicking on the legend labels.
 
 .. ifconfig:: language == 'en'
 

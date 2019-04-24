@@ -3,7 +3,7 @@ Configuring dataset export
 
 Users can download any published dataset in a variety of formats, from the Export tab of the front office (see :doc:`Exporting data </exploring_catalog_and_datasets/04_getting_involved/exporting_data>`).
 
-In the OpenDataSoft platform, the configuration of the available exports is done in the Export tab of the edition interface of each dataset.
+In the Opendatasoft platform, the configuration of the available exports is done in the Export tab of the edition interface of each dataset.
 
 Specifying a sort for exports
 -----------------------------

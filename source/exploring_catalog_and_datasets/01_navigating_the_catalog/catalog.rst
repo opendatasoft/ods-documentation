@@ -1,7 +1,7 @@
 Navigating the catalog
 ======================
 
-The dataset catalog of an OpenDataSoft portal is accessible from the front office for all users allowed on the portal (i.e. for open portals it could be anyone wheareas for private portals it should be only authenticated users).
+The dataset catalog of an Opendatasoft portal is accessible from the front office for all users allowed on the portal (i.e. for open portals it could be anyone wheareas for private portals it should be only authenticated users).
 
 On most portals, the catalog is the landing page. However, if the default landing page has been changed to a custom page, the link to the catalog can often be found in the navigation bar at the very top of the front office. Since this navigation bar is fully customizable, the label of the link to access the catalog can be different from one portal to another (very often, "Data", "Catalog", "Explore" or "Datasets" are used as labels).
 
@@ -75,7 +75,7 @@ The search bar should be used to make textual searches in the catalog. When doin
    :class: note
 
    If there is no match after the textual search, the information "Your search didn't match any dataset." will be displayed instead of the catalog cards.
-   Each textual search being recorded, the administrators of an OpenDataSoft portal know about each search without a match. That way, knowing the interests and needs of their end-users, they might publish new datasets in the future to answer these interests and needs.
+   Each textual search being recorded, the administrators of an Opendatasoft portal know about each search without a match. That way, knowing the interests and needs of their end-users, they might publish new datasets in the future to answer these interests and needs.
 
 To make a textual search:
 
@@ -147,7 +147,7 @@ It is possible to download the catalog in the following formats:
 .. admonition:: Note
    :class: note
 
-   Using the `OpenDataSoft Search API <https://help.opendatasoft.com/apis/ods-search-v2/#exporting-datasets>`_, it is possible to download the catalog in other formats, such as JSON, data.json but also DCAT-AP (for Germany and Switzerland).
+   Using the `Opendatasoft Search API <https://help.opendatasoft.com/apis/ods-search-v2/#exporting-datasets>`_, it is possible to download the catalog in other formats, such as JSON, data.json but also DCAT-AP (for Germany and Switzerland).
 
 Exploring a dataset from the catalog
 ------------------------------------
