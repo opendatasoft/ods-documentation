@@ -1,5 +1,6 @@
 Third-party Analytics
 =====================
+
 The monitoring tools included in OpenDataSoft are centered about API calls and usages; this is useful to gather extremely precise information about how
 your data is consumed, but can be limiting if you try to measure the audience of your portal in a more broad manner, such as your referral sources,
 your visitor's geographical origin, or the time spent on your portal.

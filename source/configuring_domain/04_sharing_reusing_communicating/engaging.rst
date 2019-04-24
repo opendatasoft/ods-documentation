@@ -8,8 +8,6 @@ Comments
 The users can be allowed to comment on datasets. When activated, an additional
 tab "Comments" will be displayed in the dataset page.
 
-.. localizedimage:: images/disqus.png
-
 To activate this feature, you need to configure a Disqus account to associate
 with the portal. Disqus is an external comment management system. You will need
 to set your account shortname and public key in the ``Configure`` menu, in
@@ -28,8 +26,6 @@ One of the main goals of Open Data is to have your data reused, thus producing
 new analyses or new services. Listing these reuses on the related datasets'
 pages will help promote both the reuse itself and your data.
 
-.. localizedimage:: images/reuse.png
-
 You can access the configuration for reuses in the ``Configuration`` menu
 section, under ``Reuses``.
 
@@ -37,8 +33,6 @@ section, under ``Reuses``.
 
 Enabling the reuse feature on your portal will display a new Reuses section at
 the bottom of the information tab on each dataset page. Additionally, this section will provide a form through which users can submit their reuses and will list all approved reuses.
-
-.. localizedimage:: images/reuse__form.png
 
 In order to be displayed on a dataset's page, new reuses must be reviewed and
 approved by an administrator.
@@ -77,6 +71,7 @@ messages in the ``Social networks & sharing`` section, in the ``Configure`` menu
 
 Dataset subscriptions
 ---------------------
+
 Users on your portal can subscribe to any dataset they can access; by doing so,
 they opt-in to receive notifications that the dataset publisher can decide to
 send at any time, for example an information about a future schema change, or
@@ -121,12 +116,8 @@ Once the option is active and the dataset is published again, your users will
 be able to send feedback on your dataset, either for a specific record, or to
 suggest a new record, by clicking on the little chat bubble in the table view.
 
-.. localizedimage:: images/feedback__table.png
-
 Doing so will open a form where the user can write a message, and optionally
 suggest new values.
-
-.. localizedimage:: images/feedback__form.png
 
 As the publisher of the dataset, you can access the list of all the feedback sent
 by your users. This is available in the "Feedback" tab of the back-office dataset

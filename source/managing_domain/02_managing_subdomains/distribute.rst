@@ -11,6 +11,7 @@ As a "parent" domain, you can choose to distribute specific pages and datasets t
 
 Distributing datasets to a subdomain
 ------------------------------------
+
 From the subdomain's management page in the backoffice, you can find the *Distribute datasets* interface.
 By default, nothing is distributed, so the list is empty.
 
@@ -24,15 +25,6 @@ By default, nothing is distributed, so the list is empty.
         Distribution interface
 
 Clicking on *Add a dataset* opens your domain's catalog, which allows you to find and select a dataset to distribute.
-
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/subdomains__dataset-selection--en.png
-        :alt: Dataset selection
-        :width: 400px
-        :align: center
-
-        Dataset selection
 
 Once the dataset is selected, it appears in the distributed dataset list.
 
@@ -49,6 +41,7 @@ but it won't delete the dataset from the parent domain.
 
 Distributing pages to a subdomain
 ---------------------------------
+
 From the subdomain's management page in the backoffice, you can find the *Distribute pages* interface.
 By default, nothing is distributed, so the list is empty.
 
@@ -96,6 +89,7 @@ page on the parent domain.
 
 Distributing content to multiple subdomains
 -------------------------------------------
+
 From the subdomains list, you can select two or more subdomains, and click on the *Distribute* button; this will bring you
 to a dedicated content distribution page for these subdomains.
 
@@ -122,27 +116,10 @@ the one for individual subdomains.
 
 Organize your distribution using parameters
 -------------------------------------------
+
 If you have several subdomains, you may want to distribute pages and datasets slightly different for each: for example, maybe you want
 to distribute a homepage containing "Welcome on [something]", or maybe you have a country-wide dataset but you want to distribute
 parts of it to regional subdomains.
-
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/subdomains__distribution-schema--en.png
-        :alt: Distributing data based on a subdomain parameter
-        :width: 400px
-        :align: center
-
-        Distributing data based on a subdomain parameter
-
-.. ifconfig:: language == 'fr'
-
-    .. figure:: images/subdomains__distribution-schema--fr.png
-        :alt: Distributing data based on a subdomain parameter
-        :width: 400px
-        :align: center
-
-        Distributing data based on a subdomain parameter
 
 As an administrator managing your subdomains, you can define "distribution parameters"; and then you can fill these parameters for each
 subdomain. These parameters will then be available to change the distributed content depending on the subdomain.

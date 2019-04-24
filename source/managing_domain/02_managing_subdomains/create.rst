@@ -3,25 +3,7 @@ Creating a new subdomain
 
 Subdomains management is granted to users which have the *Manage all subdomains* permission. This permission can be given to any user by the portal administrators (those users having the *Edit domain properties* permission).
 
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/subdomains__permissions--en.jpg
-        :alt: Subdomains management permission
-        :width: 400px
-        :align: center
-
-        Subdomains management permission
-
 Users with this permission will see a *Subdomains* menu in the left control pane. Simply click this menu item to access the subdomains management section.
-
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/subdomains__menu--en.png
-        :alt: Subdomains menu
-        :width: 200px
-        :align: center
-
-        Access subdomains configuration screen
 
 The maximum number of subdomains you can create is limited and depends on your OpenDataSoft's contract.
 
