@@ -11,6 +11,8 @@ To manage a content page security, go to the Pages section of the back office, i
 Choosing an access policy
 -------------------------
 
+.. image:: images/page_security.png
+
 Content pages created with the Opendatasoft platform can either be accessible by anyone allowed on the portal, or restricted to specifically defined users.
 
 To choose the access policy of a content page:
@@ -28,6 +30,8 @@ To choose the access policy of a content page:
 
 Managing page permissions for users and groups
 ----------------------------------------------
+
+.. image:: images/page_security-users.png
 
 .. admonition:: Important
    :class: important

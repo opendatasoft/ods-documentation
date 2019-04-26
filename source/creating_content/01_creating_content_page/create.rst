@@ -16,27 +16,11 @@ We want to create a very simple page, containing information about our portal, a
 
 Let's start by going into the Back office, and clicking on the *Page > New page* link in the menu.
 
-.. ifconfig:: language == 'en'
-
-  .. image:: images/create__list--en.png
-    :alt: Create a content page
-
-.. ifconfig:: language == 'fr'
-
-  .. image:: images/create__list--en.png
-    :alt: Create a content page
+.. image:: images/page_list.png
 
 This brings you into the interface to edit your new blank page.
 
-.. ifconfig:: language == 'en'
-
-  .. image:: images/create__edit--en.png
-    :alt: Edit a content page
-
-.. ifconfig:: language == 'fr'
-
-  .. image:: images/create__edit--fr.png
-    :alt: Edit a content page
+.. image:: images/page_edit.png
 
 For now the page isn't really created yet; you need to save it first. Before doing this you need to configure
 the page **slug** (*page1* in the example above), which is both the page's unique identifier, and the last part of the page's URL
@@ -55,15 +39,7 @@ which gives you a direct access to the page's HTML and CSS, allowing you to :doc
 You can switch to expert mode from any template, meaning you can use these templates as starting points for dashboards or advanced pages.
 But once you've switched to expert mode, you cannot go back.
 
-.. ifconfig:: language == 'en'
-
-  .. image:: images/create__expert--en.png
-    :alt: Content page expert mode
-
-.. ifconfig:: language == 'fr'
-
-  .. image:: images/create__expert--fr.png
-    :alt: Content page expert mode
+.. image:: images/page_edit-expert.png
 
 Since the stated goal is to create a simple content page with a side bar, the "Main block + right column" template seems like a perfect fit.
 
