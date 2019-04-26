@@ -15,8 +15,7 @@ This solution is the easiest to implement, it does not require any development, 
 Specifying a resource
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: images/scheduling__resource--en.png
-    :alt: resource interface
+.. image:: images/scheduling_source-url.png
 
 To be able to schedule a dataset, its underlying resource must be a remote one, specified as a URL (http or ftp work well) and not an uploaded file. To add such a resource, simply paste a URL in the URL input.
 
@@ -24,8 +23,7 @@ Specifying scheduling interval
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-.. image:: images/scheduling__scheduling--en.png
-    :alt: scheduling tab
+.. image:: images/scheduling_tab.png
 
 Once a dataset is saved with a remote resource, the scheduling tab is activated. The minimum interval is the minute, but it is not activated by default. Please contact Opendatasoft's support if you need minute level scheduling on your domain. You can add as many schedule as you want. For instance, if it fits your needs, you could decide to schedule a dataset to be reprocessed every Monday morning and every Wednesday afternoon.
 
@@ -42,12 +40,11 @@ For some types of data, it can be useful to push data instead of the more tradit
 Configuring the dataset schema
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: images/realtime__dropdown--en.png
-    :alt: source dropdown
+.. image:: images/realtime_source.png
 
 To create a realtime dataset, start by navigating to the dataset creation interface. Here, select "add a realtime source".
 
-.. image:: images/realtime__resource--en.png
+.. image:: images/realtime_source2.png
     :alt: realtime resource pane
 
 You will be prompted to enter some bootstrap data and to optionnally fill in additional options. The bootstrap data should have all the fields that will be sent through the API. Please note that the bootstrap data is not used in the dataset: its sole purpose is to allow setting up the dataset.
@@ -55,9 +52,7 @@ You will be prompted to enter some bootstrap data and to optionnally fill in add
 Using the push url
 ~~~~~~~~~~~~~~~~~~
 
-.. image:: images/realtime__pushurl--en.png
-    :scale: 100%
-    :alt: push url in the realtime resource
+.. image:: images/realtime_pushurl.png
 
 Once your dataset is saved with the correct realtime resource settings, a URL path containing a push api key will appear. This path, appended to your domain base URL is where the platform will expect data to be sent after publication. As is the case with the bootstrap data, the data is expected to be sent in the JSON format, either as a single JSON object for a single record, or an array of JSON objects to push multiple records at once.
 
@@ -165,28 +160,26 @@ If you know the record ID of the record you want to delete, simply make a GET re
 Get notified in case of inactivity
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: images/realtime__alerting--en.png
-    :alt: inactivity alerting settings in RT resource view
+.. image:: images/realtime_alerting.png
 
 If you expect a system to push data to the platform often, you may want to be notified if no record has been received by the platform in a while. In order to get notified, you can enable the "Alerting" option in the source configuration, and setup a time threshold in minutes. If a time span greater than the threshold has occured during which no record has been received, you will receive an email.
 
 Unpublishing and disabling the api
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: images/realtime__disable--en.png
-    :alt: "disable push" button in RT resource view
+.. image:: images/realtime_disable-button.png
 
 Beware of unpublishing your dataset, as this will not keep existing records for the next time the dataset is published. If you desire to avoid getting new data, you should instead click the "disable push" button in the resource setting. This will prevent the usage of the push API but will have no effect on existing data. If data is pushed while push is disabled on the resource, no data will be added and an error will be sent.
 
 Recovery
 ~~~~~~~~
 
-.. image:: images/realtime__recovery_option--en.png
+.. image:: images/realtime_recovery.png
     :alt: recovery option in realtime resource view
 
 In the event of data loss, for instance when the dataset has been unpublished or when a processor has been misconfigured, there is a possibility of recovering the lost records. To do so, the recovery option must have been activated prior to the records being pushed to the platform.
 
-.. image:: images/realtime__recovery_button--en.png
+.. image:: images/realtime_recovery-button.png
     :alt: recover data button in realtime resource view
 
 When the recovery is activated every subsequent record received will be backed up, and will be elligible for recovery. In order to recover eligible records, the "recover data" button on the source configuration page can be used.
