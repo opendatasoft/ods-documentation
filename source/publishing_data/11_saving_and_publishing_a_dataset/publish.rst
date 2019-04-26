@@ -6,16 +6,7 @@ The dataset appears in the frontoffice (according to the security rules).
 When you make modifications on the dataset, they are pushed to the publish version when you click on the *publish* button.
 At any time you can remove a dataset from the by the *unpublish* action,
 
-
-.. ifconfig:: language == 'en'
-
-    .. image:: images/publish__actions--en.png
-        :alt: Actions
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/publish__actions--en.png
-        :alt: Actions
+.. image:: images/publish_actions.png
 
 Actions
 ~~~~~~~
