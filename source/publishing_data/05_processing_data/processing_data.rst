@@ -5,7 +5,7 @@ The content of a dataset can be seen as a flat database table. No matter their o
 
 In the Opendatasoft platform, all processing operations are done in the Processing tab of the edition interface of each dataset.
 
-.. localizedimage:: images/processing_parts.png
+.. image:: images/processing_parts.png
     :alt: Processing tab when publishing a new dataset
 
 On the left side (1), next to the dataset preview, is displayed the "Add a processor" button. It leads to the processors interface. Processors are tools that can be used to modify, improve and enrich the data (see :doc:`Adding processors to a dataset<adding_processors_to_a_dataset>`).
