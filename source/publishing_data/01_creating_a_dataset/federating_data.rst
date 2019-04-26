@@ -20,39 +20,15 @@ Source
 
 To federate a dataset, simply go to the *Catalog > Dataset* page and hit **New dataset**. Then, hit the little arrow on the right side of the **Add a source** button.
 
-.. ifconfig:: language == 'en'
-
-    .. image:: images/federation__source--en.jpg
-        :alt: Federation source
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/federation__source--fr.jpg
-        :alt: Fédération source
+.. image:: images/federation_source.png
 
 There is then a link **Add a dataset from the Opendatasoft network**, it leads to a console from where it is possible to configure a new federated source.
 
-.. ifconfig:: language == 'en'
-
-    .. image:: images/federation__config-source--en.jpg
-        :alt: Federation source config
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/federation__config-source--fr.jpg
-        :alt: Fédération configuration source
+.. image:: images/federation_source2.png
 
 Click on **Select a source dataset**.
 
-.. ifconfig:: language == 'en'
-
-    .. image:: images/federation__sources--en.jpg
-        :alt: Federation sources
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/federation__sources--fr.jpg
-        :alt: Fédération sources
+.. image:: images/federation_sources.png
 
 Different sources are available :
 
@@ -62,55 +38,19 @@ Different sources are available :
 
 From there the next step is to either select a whole dataset or to select a part of it. The filters are the same as in the dataset explore console, there are pre-defined filters, a query box and, if available, the geofilter.
 
-.. ifconfig:: language == 'en'
-
-    .. image:: images/federation__filter-source--en.jpg
-        :alt: Federation filter source
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/federation__filter-source--fr.jpg
-        :alt: Fédération filtrer source
+.. image:: images/federation_sources-filter.png
 
 Once the data is selected the dataset appears in the backoffice like a normal one, except that there is no *Processing* tab. Indeed, the data is not duplicated and it is not possible to transform it. Only the metadata and visualization configuration can be overriden.
 
-.. ifconfig:: language == 'en'
-
-    .. image:: images/federation__federated-source--en.jpg
-        :alt: Federation federated source
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/federation__federated-source--fr.jpg
-        :alt: Fédération source fédérée
+.. image:: images/federation_federated-source.png
 
 Overriding metadata and visualizations
 --------------------------------------
 
 Both metadata and visualization can be overriden. Simply hit **Override** and fill the value you want.
-
-.. ifconfig:: language == 'en'
-
-    .. image:: images/federation__override-meta-1--en.jpg
-        :alt: Federation override meta
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/federation__override-meta-1--fr.jpg
-        :alt: Fédération surcharger métadonnées
-
 It is possible to come back to the original value by hitting **Return to original value**.
 
-
-.. ifconfig:: language == 'en'
-
-    .. image:: images/federation__override-meta-2--en.jpg
-        :alt: Federation override meta
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/federation__override-meta-2--fr.jpg
-        :alt: Fédération surcharger métadonnées
+.. image:: images/federation_override.png
 
 Limitations
 -----------
