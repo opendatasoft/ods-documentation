@@ -104,8 +104,7 @@ Update data by defining a unique key
 
 Sometimes it is useful to update the existing records instead of just pushing new ones. An example for this would be a dataset that tracks the number of copies available for each books in a public library. Suppose that we have such a dataset with two fields: ``isbn``, representing the `ISBN <https://en.wikipedia.org/wiki/International_Standard_Book_Number>`_ number of the book, and ``number_of_copies`` tracking the current number of copies available in the library. It would not make a lot of sense to add one record for each new value of ``number_of_copies``, instead, it would be better to set the new ``number_of_copies`` value to the record corresponding to the book ``isbn``.
 
-.. image:: images/realtime__unique_id--en.png
-    :alt: unique ID option in the field dropdown
+.. image:: images/realtime_unique-id.png
 
 In order to set up such a system with the Opendatasoft platform, the fields that will be used as a unique key must be marked as so. In our example, the unique key would be isbn, because the rest of the data is linked to individual books, and these books are identified by the ISBN. This can be done in the processing view, in the menu that pops when the configuration button is pressed. It is possible to set multiple fields as unique keys. Then, after saving and publishing, if a new record whose key value is equal to an existing record is pushed, the new record will overwrite the old record. In our library case, if your dataset has ``isbn`` as the unique key, and contains these two records.
 
@@ -175,11 +174,9 @@ Recovery
 ~~~~~~~~
 
 .. image:: images/realtime_recovery.png
-    :alt: recovery option in realtime resource view
 
 In the event of data loss, for instance when the dataset has been unpublished or when a processor has been misconfigured, there is a possibility of recovering the lost records. To do so, the recovery option must have been activated prior to the records being pushed to the platform.
 
 .. image:: images/realtime_recovery-button.png
-    :alt: recover data button in realtime resource view
 
 When the recovery is activated every subsequent record received will be backed up, and will be elligible for recovery. In order to recover eligible records, the "recover data" button on the source configuration page can be used.
