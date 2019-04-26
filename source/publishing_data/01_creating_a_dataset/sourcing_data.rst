@@ -97,24 +97,6 @@ Opendatasoft natively supports the following APIs:
 
    Opendatasoft can also develop and integrate customer specific Web APIs. Opendatasoft connectivity toolkit makes it possible to develop performant and secured connectors supporting incremental data processing.
 
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/loading_data__options--en.png
-        :alt: Connector options
-        :width: 600px
-        :align: center
-
-        Available options when configuring a connector
-
-.. ifconfig:: language == 'fr'
-
-    .. figure:: images/loading_data__options--en.png
-        :alt: Options du connecteur
-        :width: 600px
-        :align: center
-
-        Options disponibles pour la configuration d'un connecteur
-
 
 Pasting data
 ------------
