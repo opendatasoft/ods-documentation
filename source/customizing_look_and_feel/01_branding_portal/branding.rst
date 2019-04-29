@@ -5,7 +5,4 @@ Opendatasoft gives you the ability to deeply customize the look and feel of your
 
 The "Branding" page guides you through the selection of your portal name, the page title and favicon displayed by web browsers, and the brand and logo displayed on the portal and the login menu.
 
-.. figure:: images/branding.png
-    :align: left
-
-    Branding page
+.. image:: images/branding.png
