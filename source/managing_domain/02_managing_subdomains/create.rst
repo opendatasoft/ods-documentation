@@ -5,18 +5,11 @@ Subdomains management is granted to users which have the *Manage all subdomains*
 
 Users with this permission will see a *Subdomains* menu in the left control pane. Simply click this menu item to access the subdomains management section.
 
+.. image:: images/subdomains_interface.png
+
 The maximum number of subdomains you can create is limited and depends on your Opendatasoft's contract.
 
 To create a new subdomain, click the *Add subdomain* link in the menu, or click the *Create subdomain* button on the Subdomain's list page.
-
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/subdomains__new-button--en.png
-        :alt: Button to create a subdomain
-        :width: 400px
-        :align: center
-
-        Button to create a subdomain
 
 You will be prompted a form to create your new subdomain, with the following fields:
 
@@ -38,12 +31,3 @@ You will also be able to pre-configure :doc:`distribution parameters, distribute
 and :doc:`usage limits </managing_domain/02_managing_subdomains/quotas>`, as described in their respective documentation.
 
 Once created, the subdomain appears in the subdomains list, along with some information related to its current quotas.
-
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/subdomains__created--en.png
-        :alt: Subdomains created
-        :width: 600px
-        :align: center
-
-        The subdomain has been created
