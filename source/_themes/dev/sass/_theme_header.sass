@@ -5,7 +5,7 @@
 
 //- By default mobile
 .ods__documentation-header 
-  height: 100px
+  height: $header-height
   width: 100%
   position: fixed
   top: 0
@@ -24,7 +24,7 @@
   display: flex
   flex-direction: row
   justify-content: space-around
-  height: 99px
+  height: $header-height - 1px
   width: 100%
   button 
     border: none
@@ -32,7 +32,7 @@
     background-color: white
     color: $blue-light
     border-radius: 4px
-    padding: 5px 10px
+    padding: $spacing-50 $spacing-100
     font-size: 16px
     font-weight: 500
     &.open 
@@ -44,23 +44,23 @@
   button:focus 
     outline: none
   img 
-      height: 70px
+      height: $header-height - 10px
       margin: auto 0     
 @media only screen and (min-width: $tablet-width)
   .ods__documentation-header-logo 
-    height: 99px
+    height: $header-height - 1px
     width: auto
     padding-left: 40px
     img 
-      height: 80px
+      height: $header-height - 20px
     button 
       display: none
 //- IE 10 / 11
-@media only screen and (-ms-high-contrast: active), (-ms-high-contrast:none) 
+@media only screen and (-ms-high-contrast: active), (-ms-high-contrast:none)
     .ods__documentation-header-logo
       padding-left: 50px
-      img 
-        height: 90px
+      img
+        height: 70px
         margin: 5px 0 0 0
 
 .ods__documentation-header-logo-link
@@ -81,7 +81,7 @@
 
 .ods__documentation-help-hub-sidebar 
   position: fixed
-  top: 100px
+  top: $header-height
   right: -300px
   height: 100%
   width: 300px
@@ -112,37 +112,36 @@
 .ods__documentation-help-hub-sidebar-active 
   right: 0
 
-.ods__documentation-header-nav-item-active > a
-  border-bottom: 2px solid white
-@media only screen and (min-width: $tablet-width)
-  .ods__documentation-header-nav-item-active > a
-    border-bottom: 2px solid white
+.ods__documentation-header-nav-item
+    @extend %text-100
 
 //- Desktop
-@media only screen and (min-width: $tablet-width) 
-  .ods__documentation-header-nav-item 
-    margin: 39px 20px
+@media only screen and (min-width: $tablet-width)
+  .ods__documentation-header-nav-item
+    margin: auto $spacing-50
+    letter-spacing: 0.8px
+
   //- IE 10 / 11
   @media only screen and (-ms-high-contrast: active), (-ms-high-contrast:none)
     .ods__documentation-header-nav-item
-      margin: 35px 20px 0 20px
-  
-  .ods__documentation-header-nav-item:first-child 
+      margin: 35px 20px 4px 20px
+
+  .ods__documentation-header-nav-item:first-child
     margin-left: 0px
-  
-  .ods__documentation-header-nav-item:last-child 
+
+  .ods__documentation-header-nav-item:last-child
     margin-right: 0px
-  
-  .ods__documentation-header-nav-item > a 
-    color: white
-    font-size: 18px
+
+  .ods__documentation-header-nav-item > a
     text-decoration: none
-    padding: 5px 0
-    border-bottom: 2px solid transparent
-  
-  .ods__documentation-header-nav-item > a:hover 
-    border-bottom: 2px solid white
+    color: white
+    padding: 8px
+    border: 1px solid transparent
+    border-radius: $default-border-radius
+    text-transform: uppercase
+
+  .ods__documentation-header-nav-item > a:hover
+    background: $deep-blue
 
   .ods__documentation-header-nav-item-active > a
-    border-bottom: 2px solid white
-      
+    background: $deep-blue

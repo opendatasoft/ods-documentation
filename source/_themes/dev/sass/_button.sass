@@ -1,0 +1,206 @@
+// Buttons
+//
+// Located in `wyrm_core/_button.sass`. You can also add font icons to any
+// button as shown in the third example. Wyrm by default uses the FontAwesome
+// library, but any icon set can be substituted.
+//
+// Markup:
+// <a href="#" class="btn {$modifiers}"> Link</a>
+// <button class="btn {$modifiers}"> Button</button>
+// <input type="submit" class="btn {$modifiers}">
+// <button class="btn fa fa-check-circle {$modifiers}"> With icon</button>
+//
+// :hover               - Highlight the button when hovered.
+// :visited             - Visited link
+// :disabled            - For disabled buttons.
+// .btn-disabled        - Class version of disabled.
+// :active              - Press the button down.
+// :focus               - Focus
+// .btn-neutral         - Neutral looking button.
+// .btn-info            - For imformative, or alternate actions.
+// .btn-success         - For positive actions.
+// .btn-danger          - Usually used for delete actions.
+// .btn-warning         - Beware, you might not want to click me.
+// .btn-invert          - Dark button to contrast the background.
+// .btn-link            - Unstyled, link looking button. Useful for secondary actions next to another button.
+// .btn-small           - Smaller button.
+//
+// Styleguide 1
+
+button
+  font-size: 100%
+  margin: 0
+  vertical-align: baseline
+  *vertical-align: middle
+  cursor: pointer
+  line-height: normal
+  -webkit-appearance: button
+  *overflow: visible
+button::-moz-focus-inner, input::-moz-focus-inner
+  border: 0
+  padding: 0
+button[disabled]
+  cursor: default
+
+.btn
+  /* Structure
+  display: inline-block
+  box-shadow: none
+  border-radius: $default-border-radius
+  line-height: $base-line-height
+  white-space: nowrap
+  text-align: center
+  cursor: pointer
+  font-size: 100%
+  padding: $spacing-50 $spacing-100
+  color: $white
+  border: 1px solid rgba(0,0,0,0.1)
+  background-color: transparent !important
+  text-decoration: none
+  font-weight: normal
+  font-family: $base-font-family
+  outline-none: false
+  vertical-align: middle
+  *display: inline
+  zoom: 1
+  -webkit-user-drag: none
+  +user-select(none)
+  +font-smooth
+  &:active
+    padding: $spacing-50 $spacing-100
+
+.btn
+  box-shadow: none
+  &:hover
+  &:focus
+    outline: 0
+    background: transparent !important
+  &:visited
+    color: $text-color
+  &:disabled
+    background-image: none
+    cursor: not-allowed
+    opacity: 0.4
+
+.btn-disabled
+  background-image: none
+  opacity: 0.4
+  cursor: not-allowed
+  box-shadow: none
+  &:hover, &:focus, &:active
+    background-image: none
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false)
+    filter: alpha(opacity = 40)
+    opacity: 0.40
+    cursor: not-allowed
+    box-shadow: none
+
+// Firefox: Get rid of the inner focus border
+.btn::-moz-focus-inner
+  padding: 0
+  border: 0
+
+.btn-small
+  font-size: 80%
+
+.btn-info
+  border-color: $blue-light !important
+  color: $blue-light !important
+
+  &:hover
+    border-color: mix(#fff, $blue-light, 25%) !important
+    background: transparent !important
+  &:visited
+    color: $blue-light !important
+  &:active
+    background-color: $blue-light !important
+    color: #fff !important
+  &:focus
+    border-color: mix(#000, $blue-light, 25%) !important
+
+.btn-neutral
+  border-color: $deep-blue !important
+  color: $deep-blue !important
+  &:hover
+    border-color: mix(#fff, $deep-blue, 25%) !important
+    background: transparent !important
+  &:visited
+    color: $deep-blue !important
+  &:active
+    background-color: $deep-blue !important
+    color: #fff !important
+  &:focus
+    border-color: mix(#000, $deep-blue, 25%) !important
+
+.btn-success
+  border-color: $green !important
+  color: $green !important
+  &:hover
+    border-color: mix(#fff, $green, 25%) !important
+    background: transparent !important
+  &:visited
+    color: $green !important
+  &:active
+    background-color: $green !important
+    color: #fff !important
+  &:focus
+    border-color: mix(#000, $green, 25%) !important
+
+.btn-danger
+  border-color: $red !important
+  color: $red !important
+  &:hover
+    border-color: mix(#fff, $red, 25%) !important
+    background: transparent !important
+  &:visited
+    color: $green !important
+  &:active
+    background-color: $red !important
+    color: #fff !important
+  &:focus
+    border-color: mix(#000, $red, 25%) !important
+
+.btn-warning
+  border-color: $orange !important
+  color: $orange !important
+  background: transparent !important
+  &:hover
+    border-color: mix(#fff, $orange, 25%) !important
+    background: transparent !important
+  &:visited
+    color: $orange !important
+  &:focus
+    border-color: mix(#000, $orange, 25%) !important
+  &:active
+    background-color: $orange !important
+    color: #fff !important
+
+.btn-invert
+  border-color: $gray-darker !important
+  color: $gray-darker !important
+  background: transparent !important
+  &:hover
+    border-color: mix(#fff, $gray-darker, 25%) !important
+
+.btn-link
+  background-color: transparent !important
+  color: $link-color
+  box-shadow: none
+  border-color: transparent !important
+  &:hover
+    background-color: transparent !important
+    color: lighten($link-color, 10%) !important
+    box-shadow: none
+  &:active
+    background-color: transparent !important
+    color: lighten($link-color, 10%) !important
+    box-shadow: none
+  &:visited
+    color: $link-color-visited
+
+.wy-btn-group .btn, .wy-control .btn
+  vertical-align: middle
+
+.wy-btn-group
+  margin-bottom: $base-line-height
+  +clearfix

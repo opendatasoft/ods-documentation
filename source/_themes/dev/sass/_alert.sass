@@ -1,0 +1,135 @@
+// Alerts
+//
+// Located in `wyrm_core/_alert.sass`. Alerts can exist as in page notices and as fixed drops.
+//
+// Markup:
+// <div class="wy-alert {$modifiers}">
+//  <div class="wy-alert-title">Title goes here</div>
+//  <p>Alert instructions go here.</p>
+// </div>
+//
+// .wy-alert-neutral        - Generic alert, extra instruction.
+// .wy-alert-success        - Hooray, something good happened.
+// .wy-alert-warning        - Watch out, you might make a mistake.
+// .wy-alert-danger         - Yep, you made a mistake.
+//
+// Styleguide 2
+
+.wy-alert
+  padding: $base-line-height / 2
+  margin-bottom: $base-line-height
+  background: lighten($blue, 50%)
+  border-radius: 4px
+  +font-smooth
+.wy-alert-title
+  @extend %text-100
+  line-height: 0.833rem
+  color: $white
+  font-weight: normal
+  text-transform: uppercase
+  display: block
+  background: lighten($blue-light,20%)
+  margin: -$base-line-height / 2
+  padding: $base-line-height / 4 $base-line-height / 2
+  margin-bottom: $base-line-height / 2
+  border: 1px solid $blue-light
+  border-radius: $spacing-50 0
+
+.wy-alert.wy-alert-danger
+  background: lighten($red, 40%)
+  .wy-alert-title
+    background: lighten($red,20%)
+.wy-alert.wy-alert-warning
+  border: 1px solid rgba($orange, 0.4)
+  background: rgba($orange, 0.1)
+
+  .wy-alert-title
+    background: $orange
+    border-color: rgba($orange, 0.4)
+
+.wy-alert.wy-alert-info
+  border: 1px solid rgba($blue-light, 0.4)
+  background: rgba($blue-light, 0.1)
+
+  .wy-alert-title
+    background: $blue-light
+    border-color: rgba($blue-light, 0.4)
+
+.wy-alert.wy-alert-success
+  border: 1px solid rgba($green, 0.4)
+  background: rgba($green, 0.1)
+
+  .wy-alert-title
+    background: $green
+    border-color: rgba($green, 0.4)
+
+.wy-alert.wy-alert-neutral
+  background: $table-stripe-color
+  .wy-alert-title
+    color: $text-color
+    background: $table-border-color
+  a
+    color: $link-color
+
+.wy-alert p:last-child
+  margin-bottom: 0
+
+// System alerts
+//
+// These alerts should trigger when a form error or something happens.
+// Because these docs are auto-generated know that these alerts
+// **will not output** below because they are set to
+// display: none by default.
+//
+// Markup:
+// <ul class="wy-tray-container">
+//  <li class="{$modifiers}">Alert instructions go here.</li>
+// </ul>
+//
+// .wy-tray-item-info       - Generic alert, extra instruction.
+// .wy-tray-item-success    - Hooray, something good happened.
+// .wy-tray-item-warning    - Watch out, you might make a mistake.
+// .wy-tray-item-danger     - Yep, you made a mistake.
+//
+// Styleguide 2.1
+
+
+.wy-tray-container
+  position: fixed
+  bottom: 0px
+  left: 0
+  z-index: $z-index-alert
+  li
+    display: block
+    width: $nav-desktop-width
+    background: transparent
+    color: $white
+    text-align: center
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.1)
+    padding: 0 $base-line-height
+    min-width: 20%
+    opacity: 0
+    height: 0
+    line-height: 56px
+    overflow: hidden
+    +transition(all .3s ease-in)
+    &.wy-tray-item-success
+      background: $green
+    &.wy-tray-item-info
+      background: $blue
+    &.wy-tray-item-warning
+      background: $orange
+    &.wy-tray-item-danger
+      background: $red
+    &.on
+      opacity: 1
+      height: 56px
+
++media($tablet)
+  .wy-tray-container
+    bottom: auto
+    top: 0
+    width: 100%
+    li
+      width: 100%
+
