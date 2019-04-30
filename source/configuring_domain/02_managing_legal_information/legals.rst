@@ -8,7 +8,7 @@ If you are located in the EU, you are required by law to you display a message i
 
 You can choose to display this message in the ``Configuration`` menu, in the ``Legals`` section :
 
-.. image:: images/legals__cookies-en.png
+.. image:: images/configuration_legals-cookies.png
 
 You can access the full EU guidelines through `this link <http://ec.europa.eu/ipg/basics/legal/cookies/index_en.htm>`_.
 

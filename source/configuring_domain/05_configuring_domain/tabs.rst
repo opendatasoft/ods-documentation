@@ -13,7 +13,7 @@ See :doc:`Navigating the catalog </exploring_catalog_and_datasets/01_navigating_
 
 This feature can be enabled or disabled in the ``Configuration`` section in the menu bar, then on the ``Catalog page & dataset pages`` link
 
-.. image:: images/tabs__geofilter-config--en.png
+.. image:: images/configuration_geo-filter.png
 
 
 Dataset page
@@ -26,4 +26,4 @@ See :doc:`Visualizing data </exploring_catalog_and_datasets/02_looking_up_a_data
 
 By default the dataset is opened on the **table view**, but you can choose to display the **information tab** instead. The table view by default is useful to give users with a direct access to the data, whereas the information tab by default is interesting to provide users with context and description first.
 
-.. image:: images/tabs__default-tab--en.png
+.. image:: images/configuration_default-tab.png

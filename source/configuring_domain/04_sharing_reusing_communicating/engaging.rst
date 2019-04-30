@@ -13,7 +13,7 @@ with the portal. Disqus is an external comment management system. You will need
 to set your account shortname and public key in the ``Configure`` menu, in
 the ``Social networks & sharing`` section.
 
-.. localizedimage:: images/disqus__configuration.png
+.. image:: images/configuration_disqus.png
 
 If you're unsure about how to get your Disqus credentials, you can follow the
 detailed steps detailed in the page.
@@ -29,7 +29,7 @@ pages will help promote both the reuse itself and your data.
 You can access the configuration for reuses in the ``Configuration`` menu
 section, under ``Reuses``.
 
-.. localizedimage:: images/reuse__configuration.png
+.. image:: images/configuration_enable-reuses.png
 
 Enabling the reuse feature on your portal will display a new Reuses section at
 the bottom of the information tab on each dataset page. Additionally, this section will provide a form through which users can submit their reuses and will list all approved reuses.
@@ -37,26 +37,26 @@ the bottom of the information tab on each dataset page. Additionally, this secti
 In order to be displayed on a dataset's page, new reuses must be reviewed and
 approved by an administrator.
 
-.. localizedimage:: images/reuse__admin.png
+.. image:: images/reuses_list.png
 
 When the reuse feature is enabled, you can additionally allow anonymous users
 (users without an account) to submit reuses. This is recommended on Open Data
 portals or portals which do not allow external users to create an account.
 
-.. localizedimage:: images/reuse__anonymous.png
+.. image:: images/reuses_anonymous.png
 
 **Notifications**
 
 By default the portal will send a notification to the administrators for every reuse submission.
 You can add additional recipients email adresses in the form "New reuses notifications recipients".
 
-.. localizedimage:: images/reuse__notifications.png
+.. image:: images/reuses_notification.png
 
 If you want to send these notifications only to one specific address, specify
 it in the form and check "Send notifications exclusively to these addresses".
 For example if you want to send these notifications only to opendata@yourdomain.com :
 
-.. localizedimage:: images/reuse__notifications_exclusive.png
+.. image:: images/reuses_notification-exclusive.png
 
 
 Contact form recipients
@@ -66,7 +66,7 @@ Within the pages you create you can include a contact form that allows users to
 send a message to domain administrators. You can add recipients to these
 messages in the ``Social networks & sharing`` section, in the ``Configure`` menu.
 
-.. localizedimage:: images/engaging__contact-form.png
+.. image:: images/configuration_contact-form.png
 
 
 Dataset subscriptions

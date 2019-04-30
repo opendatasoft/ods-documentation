@@ -40,7 +40,7 @@ There are 2 methods for linking an Opendatasoft user account:
 
 - the first one is to click on ``Link your account to a SAML account on this domain`` in the identity tab of the user account settings:
 
-.. image:: images/saml__link--en.png
+.. image:: /managing_account/07_managing_identities/images/account_identities.png
     :alt: "Link your account to a SAML account on this domain" link in the identity tab of the user account settings
 
 - the other method is to create the link during the user account creation process by clicking the link to complete the registration through SAML. This actually speeds up the user account creation process and allows for a quick account linking:
@@ -68,12 +68,9 @@ Register and configure an identity provider
 
 1. Navigate to the signup page in the domain configuration interface.
 
-.. image:: images/saml__signup--en.png
-    :alt: Signup configuration page
-
 2. Check "Allow access for SAML users"
 
-.. image:: images/saml_config.png
+.. image:: images/configuration_SAML.png
     :alt: SAML IDP configuration interface
 
 3. Paste your identity provider metadata document in the "IDP metadata document" field.
@@ -109,7 +106,7 @@ Register and configure an identity provider
 
    The default login page configuration can be found by navigating to the security page in the domain configuration interface.
 
-.. image:: saml__default_login_page_selection--en.png
+.. image:: images/configuration_SAML-default-login-page.png
     :alt: Default login page selection interface in the security configuration page
 
 Configure your identity provider

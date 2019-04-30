@@ -16,15 +16,7 @@ Google Analytics
 
 Simply go to the *Domain > Configuration > Tracking* page and fill in your Google Analytics ID.
 
-.. ifconfig:: language == 'en'
-
-    .. image:: images/usage__google-analytics-integration--en.jpg
-        :alt: Google Analytics ID configuration
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/usage__google-analytics-integration--fr.jpg
-        :alt: Configuration de l'ID Google Analytics
+.. image:: images/configuration_tracking-google-analytics.png
 
 Opendatasoft's Google Analytics integration tracks all the pages in your portal (including the back-office).
 
