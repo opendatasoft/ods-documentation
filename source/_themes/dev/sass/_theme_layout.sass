@@ -37,7 +37,7 @@ body, h1, h2, h3, h4, h5, h6, p, a
   header, p.caption
     @extend %text-200
     padding: 0 $gutter
-    margin: $gutter + $gutter / 2 0 $gutter / 2 0
+    margin: $spacing-300 0 $spacing-200 0
     text-transform: uppercase
     color: $gray-medium
     white-space: nowrap
@@ -79,6 +79,8 @@ body, h1, h2, h3, h4, h5, h6, p, a
       color: $link-color !important
 
 
+  li.toctree-l1
+    margin-top: $spacing-200
   li.toctree-l1 a
     margin-left: $gutter
     color: $light-700
