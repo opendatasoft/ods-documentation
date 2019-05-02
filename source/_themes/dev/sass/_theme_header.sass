@@ -24,8 +24,6 @@
   display: flex
   flex-direction: row
   justify-content: space-around
-  height: $header-height - 1px
-  width: 100%
   button 
     border: none
     margin: auto 0
@@ -43,28 +41,15 @@
       color: white
   button:focus 
     outline: none
-  img 
-      height: $header-height - 10px
-      margin: auto 0     
 @media only screen and (min-width: $tablet-width)
-  .ods__documentation-header-logo 
-    height: $header-height - 1px
-    width: auto
-    padding-left: 40px
-    img 
-      height: $header-height - 20px
+  .ods__documentation-header-logo
+    padding-left: $spacing-300
     button 
       display: none
-//- IE 10 / 11
-@media only screen and (-ms-high-contrast: active), (-ms-high-contrast:none)
-    .ods__documentation-header-logo
-      padding-left: 50px
-      img
-        height: 70px
-        margin: 5px 0 0 0
 
 .ods__documentation-header-logo-link
-  margin: auto 0
+  display: block
+  margin: $spacing-200 0
   
 .ods__documentation-header-nav 
   display: none
@@ -72,7 +57,7 @@
   .ods__documentation-header-nav 
     display: flex
     display: -ms-flexbox
-    margin-left: 100px
+    margin-left: $spacing-400
     width: auto
 //- IE 10 / 11
 @media only screen and (-ms-high-contrast: active), (-ms-high-contrast:none)
