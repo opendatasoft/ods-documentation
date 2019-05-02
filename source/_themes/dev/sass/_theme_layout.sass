@@ -38,7 +38,6 @@ body, h1, h2, h3, h4, h5, h6, p, a
     @extend %text-200
     padding: 0 $gutter
     margin: $spacing-300 0 $spacing-200 0
-    text-transform: uppercase
     color: $gray-medium
     white-space: nowrap
 
@@ -65,6 +64,7 @@ body, h1, h2, h3, h4, h5, h6, p, a
     // Expand links
 
     span.toctree-expand
+      font-size: 0.6rem !important
       color: $light-500
       position: absolute
       right: 0
@@ -134,19 +134,17 @@ body, h1, h2, h3, h4, h5, h6, p, a
 .wy-side-nav-search
   display: block
   width: $nav-desktop-width
-  padding: $gutter / 2
+  padding: $spacing-200 $spacing-200 0 $spacing-200
   z-index: $z-index-popover
   text-align: center
-  padding: $gutter / 2
+  //padding: $gutter / 2
   display: block
-  margin-bottom: 0
-  margin-top: 5px
   input[type=text]
     border: 1px solid #CBD2DB
     border-radius: 2px
     box-shadow: none
     line-height: $base-line-height
-    height: $base-line-height + 0.5rem
+    height: $spacing-300
     padding: 0.25rem 0.5rem
     width: 100%
     &:hover
@@ -281,7 +279,7 @@ code,
   right: 0
   position: fixed
   width: auto
-  border-left: 1px solid transparentize($gray-medium, 0.6)
+  border-left: 1px solid $light-300
   a
     word-break: break-word
 
@@ -291,7 +289,7 @@ code,
     position: relative
 
 .wy-nav-content
-  padding: 0 30% 130px $gutter * 2
+  padding: 0 30% 130px $spacing-200
   height: 100%
   overflow-y: scroll
 @media screen and (min-width: 930px) and (max-width: 1099px)
@@ -350,6 +348,7 @@ footer
   .wy-nav-top
     display: block
   .wy-nav-side
+    border-right: 1px solid $light-300
     transition: 0.5s
     @if $nav-desktop-position == left
       left: -$nav-desktop-width
@@ -362,7 +361,6 @@ footer
     width: auto
   .wy-side-nav-search
     width: auto
-    padding: $spacing-200
 
   .wy-menu.wy-menu-vertical
     width: auto
@@ -379,12 +377,12 @@ footer
 @media screen and (min-width: $nav-media-query)
   .wy-nav-content
     margin: 0
-    padding-top: $spacing-100
+    padding-top: $spacing-200
     padding-left: 65px
     background: $section-background-color
   .wy-side-nav-search
-    margin-bottom: $gutter / 2
-    margin-top: 10px
+    //margin-bottom: $gutter / 2
+    //margin-top: 10px
 
 @media print
   .rst-versions, footer, .wy-nav-side

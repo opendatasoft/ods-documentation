@@ -1654,7 +1654,7 @@ big, small {
   content: "";
 }
 
-.fa-exclamation:before {
+.fa-exclamation:before, .rst-content .important .admonition-title:before {
   content: "";
 }
 
@@ -4775,6 +4775,10 @@ a.wy-text-neutral:hover {
   color: #707070 !important;
 }
 
+html {
+  font-size: 15px;
+}
+
 h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
   margin-top: 0;
   font-weight: 700;
@@ -5362,7 +5366,6 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, p, a {
 .wy-menu-vertical header, .wy-menu-vertical p.caption {
   padding: 0 1.7rem;
   margin: 39px 0 26px 0;
-  text-transform: uppercase;
   color: #898D92;
   white-space: nowrap;
 }
@@ -5390,6 +5393,7 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, p, a {
   padding-right: 0;
 }
 .wy-menu-vertical li span.toctree-expand {
+  font-size: 0.6rem !important;
   color: #898D92;
   position: absolute;
   right: 0;
@@ -5460,20 +5464,17 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, p, a {
 .wy-side-nav-search {
   display: block;
   width: 300px;
-  padding: 0.85rem;
+  padding: 26px 26px 0 26px;
   z-index: 200;
   text-align: center;
-  padding: 0.85rem;
   display: block;
-  margin-bottom: 0;
-  margin-top: 5px;
 }
 .wy-side-nav-search input[type=text] {
   border: 1px solid #CBD2DB;
   border-radius: 2px;
   box-shadow: none;
   line-height: 1.4rem;
-  height: 1.9rem;
+  height: 39px;
   padding: 0.25rem 0.5rem;
   width: 100%;
 }
@@ -5636,7 +5637,7 @@ code, .rst-content tt, .rst-content code,
   right: 0;
   position: fixed;
   width: auto;
-  border-left: 1px solid rgba(137, 141, 146, 0.4);
+  border-left: 1px solid #DEE5EF;
 }
 .wy-nav-content-wrap a {
   word-break: break-word;
@@ -5649,7 +5650,7 @@ code, .rst-content tt, .rst-content code,
   }
 }
 .wy-nav-content {
-  padding: 0 30% 130px 3.4rem;
+  padding: 0 30% 130px 26px;
   height: 100%;
   overflow-y: scroll;
 }
@@ -5741,6 +5742,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   }
 
   .wy-nav-side {
+    border-right: 1px solid #DEE5EF;
     transition: 0.5s;
     left: -300px;
   }
@@ -5755,7 +5757,6 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 
   .wy-side-nav-search {
     width: auto;
-    padding: 26px;
   }
 
   .wy-menu.wy-menu-vertical {
@@ -5778,14 +5779,9 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 @media screen and (min-width: 1100px) {
   .wy-nav-content {
     margin: 0;
-    padding-top: 13px;
+    padding-top: 26px;
     padding-left: 65px;
     background: #FFFFFF;
-  }
-
-  .wy-side-nav-search {
-    margin-bottom: 0.85rem;
-    margin-top: 10px;
   }
 }
 @media print {
