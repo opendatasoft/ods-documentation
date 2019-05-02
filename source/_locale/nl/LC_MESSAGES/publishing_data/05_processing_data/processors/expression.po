@@ -2,23 +2,23 @@
 # Copyright (C) 2019, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Translator_NL1 <datawords.translator.nl1@gmail.com>, 2019
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 15:57+0100\n"
+"POT-Creation-Date: 2019-04-24 14:21+0200\n"
 "PO-Revision-Date: 2018-06-27 09:13+0000\n"
 "Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2019\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
-"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:2
@@ -192,6 +192,10 @@ msgstr "cijfers (bijv.: ``2`` of ``3.6``),"
 msgid "textual literals (e.g ``\"hello\"`` or ``'world'``),"
 msgstr "tekstuele literals (bijv. ``\"hallo\"`` of ``'wereld'``),"
 
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:54
+msgid "booleans (e.g: ``'true'`` or ``'false'``),"
+msgstr "booleans (bijv.: ``'waar'`` of ``'onwaar'``),"
+
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:55
 msgid "keywords (e.g: a mathematical constant like ``pi`` and ``e``),"
 msgstr "trefwoorden (bijv.: een wiskundige constante, zoals ``pi`` en ``e``),"
@@ -358,6 +362,10 @@ msgstr "``\"Hello\"`` of ``'Hello'``"
 msgid "``'A bigger sentence'``"
 msgstr "``'Een langere zin'``"
 
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:100
+msgid "``'true'`` or ``'false'``"
+msgstr "``'waar'`` of ``'onwaar'``"
+
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:101
 msgid "``pi``, ``PI`` or ``Pi``"
 msgstr "``pi``, ``PI`` of ``Pi``"
@@ -468,6 +476,18 @@ msgstr "``niet``, ``!`` (niet)"
 msgid "Boolean operator that inverts the following condition"
 msgstr "Boolean operator die de volgende voorwaarde omkeert"
 
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:134
+msgid "``not('true')`` or  ``!('true')`` is ``false``"
+msgstr "``niet('waar')`` of  ``!('waar')`` is ``onwaar``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:135
+msgid "``not(4 > 5)`` is ``true``"
+msgstr "``niet(4 > 5)`` is ``waar``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:136
+msgid "``!(5 <= 10)`` is ``false``"
+msgstr "``!(5 <= 10)`` is ``onwaar``"
+
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:137
 msgid "``!`` (factorial)"
 msgstr "``!`` (factorieel)"
@@ -536,6 +556,22 @@ msgstr "``en``, ``&&``, ``of``, ``||`` (geeft een boolean)"
 msgid "Boolean operators: and, or"
 msgstr "Boolean operatoren: en, of"
 
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:162
+msgid "``'true' and 'true'`` is ``true``"
+msgstr "``'waar' en 'waar'`` is ``waar``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:163
+msgid "``'true' && 'false'`` is ``false``"
+msgstr "``'waar' && 'onwaar'`` is ``onwaar``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:164
+msgid "``'true' or 'false'`` is ``true``"
+msgstr "``'waar' of 'onwaar'`` is ``waar``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:165
+msgid "``'false' || 'false'`` is ``false``"
+msgstr "``'onwaar' || 'onwaar'`` is ``onwaar``"
+
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:166
 msgid "``>``, ``<``, ``>=``, ``<=``, ``==``, ``!=``"
 msgstr "``>``, ``<``, ``>=``, ``<=``, ``==``, ``!=``"
@@ -547,6 +583,14 @@ msgid ""
 msgstr ""
 "Vergelijkingsoperatoren: groter dan, kleiner dan, groter dan of gelijk aan, "
 "kleiner dan of gelijk aan, gelijk aan, verschillend van geeft een boolean"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:168
+msgid "``3 < 4`` is ``true``"
+msgstr "``3 < 4`` is ``waar``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:169
+msgid "``5 >= 10`` is ``false``"
+msgstr "``5 >= 10`` is ``onwaar``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:170
 msgid "``&``"
@@ -582,6 +626,14 @@ msgstr ""
 "Een ternaire operator kan gelezen worden als \"wanneer [voorwaarde] dan "
 "[resultaat indien waar] anders [resultaat indien onwaar]\"."
 
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:186
+msgid "``'true' ? 'hello' : 'goodbye'`` returns ``'hello'``"
+msgstr "``'waar' ? 'hallo' : 'vaarwel'`` geeft ``'hallo'`` "
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:187
+msgid "``'false' ? 'hello' : 'goodbye'`` returns ``'goodbye'``"
+msgstr "``'onwaar' ? 'hallo' : 'vaarwel'`` geeft ``'vaarwel``"
+
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:188
 msgid "``4 > 3 ? '4 is bigger' : '3 is bigger'`` returns ``'4 is bigger'``"
 msgstr "``4 > 3 ? '4 is groter' : '3 is groter'`` geeft ``'4 is groter'``"
@@ -598,6 +650,14 @@ msgid ""
 msgstr ""
 "Het laatste deel van de ternaire operator is optioneel, wat betekent dat de "
 "volgende uitdrukkingen geldig zijn:"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:193
+msgid "``'true' ? 'hello'`` returns ``'hello'``"
+msgstr "``'waar' ? 'hallo'`` geeft ``'hallo'``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:194
+msgid "``'false' ? 'hello'`` returns an empty result"
+msgstr "``'onwaar' ? 'hallo'`` geeft een leeg resultaat"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:197
 msgid "Functions"
@@ -1087,123 +1147,3 @@ msgid ""
 msgstr ""
 "``datediff(\"2014-02-28T20:00:00Z\", \"2014-02-28T21:00:00Z\", \"minuut\")``"
 " geeft ``60``"
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:54
-#, fuzzy
-msgid "booleans (e.g: ``'true'`` or ``'false'``),"
-msgstr "booleans (bijv.: ``waar`` of ``onwaar``),"
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:100
-#, fuzzy
-msgid "``'true'`` or ``'false'``"
-msgstr "\"waar\" of \"onwaar\""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:134
-#, fuzzy
-msgid "``not('true')`` or  ``!('true')`` is ``false``"
-msgstr "``niet waar`` of  ``!waar`` geeft ``onwaar``"
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:135
-#, fuzzy
-msgid "``not(4 > 5)`` is ``true``"
-msgstr "``niet 4 > 5`` geeft ``waar``"
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:136
-#, fuzzy
-msgid "``!(5 <= 10)`` is ``false``"
-msgstr "``!(5 <= 10)`` geeft ``onwaar``"
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:162
-#, fuzzy
-msgid "``'true' and 'true'`` is ``true``"
-msgstr "``waar en waar`` geeft ``waar``"
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:163
-#, fuzzy
-msgid "``'true' && 'false'`` is ``false``"
-msgstr "``waar && onwaar`` geeft ``onwaar``"
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:164
-#, fuzzy
-msgid "``'true' or 'false'`` is ``true``"
-msgstr "``waar of onwaar`` geeft ``waar``"
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:165
-#, fuzzy
-msgid "``'false' || 'false'`` is ``false``"
-msgstr "``onwaar || onwaar`` geeft ``onwaar``"
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:168
-#, fuzzy
-msgid "``3 < 4`` is ``true``"
-msgstr "``3 < 4`` geeft ``onwaar``"
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:169
-#, fuzzy
-msgid "``5 >= 10`` is ``false``"
-msgstr "``5 >= 10`` geeft ``onwaar``"
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:186
-#, fuzzy
-msgid "``'true' ? 'hello' : 'goodbye'`` returns ``'hello'``"
-msgstr "``waar ? 'hallo' : 'vaarwel'`` geeft ``'hallo'``"
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:187
-#, fuzzy
-msgid "``'false' ? 'hello' : 'goodbye'`` returns ``'goodbye'``"
-msgstr "``waar ? 'hallo' : 'vaarwel'`` geeft ``'hallo'``"
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:193
-#, fuzzy
-msgid "``'true' ? 'hello'`` returns ``'hello'``"
-msgstr "``waar ? 'hallo'`` geeft ``'hallo'``"
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:194
-#, fuzzy
-msgid "``'false' ? 'hello'`` returns an empty result"
-msgstr "``onwaar ? 'hallo'`` geeft een leeg resultaat"
-
-#~ msgid "booleans (e.g: ``true`` or ``false``),"
-#~ msgstr "booleans (bijv.: ``waar`` of ``onwaar``),"
-
-#~ msgid "``true`` or ``false``"
-#~ msgstr "\"waar\" of \"onwaar\""
-
-#~ msgid "``not true`` or  ``!true`` returns ``false``"
-#~ msgstr "``niet waar`` of  ``!waar`` geeft ``onwaar``"
-
-#~ msgid "``not 4 > 5`` returns ``true``"
-#~ msgstr "``niet 4 > 5`` geeft ``waar``"
-
-#~ msgid "``!(5 <= 10)`` returns ``false``"
-#~ msgstr "``!(5 <= 10)`` geeft ``onwaar``"
-
-#~ msgid "``true and true`` returns ``true``"
-#~ msgstr "``waar en waar`` geeft ``waar``"
-
-#~ msgid "``true && false`` returns ``false``"
-#~ msgstr "``waar && onwaar`` geeft ``onwaar``"
-
-#~ msgid "``true or false`` returns ``true``"
-#~ msgstr "``waar of onwaar`` geeft ``waar``"
-
-#~ msgid "``false || false`` returns ``false``"
-#~ msgstr "``onwaar || onwaar`` geeft ``onwaar``"
-
-#~ msgid "``3 < 4`` returns ``true``"
-#~ msgstr "``3 < 4`` geeft ``onwaar``"
-
-#~ msgid "``5 >= 10`` returns ``false``"
-#~ msgstr "``5 >= 10`` geeft ``onwaar``"
-
-#~ msgid "``true ? 'hello' : 'goodbye'`` returns ``'hello'``"
-#~ msgstr "``waar ? 'hallo' : 'vaarwel'`` geeft ``'hallo'``"
-
-#~ msgid "``false ? 'hello' : 'goodbye'`` returns ``'good bye'``"
-#~ msgstr "``onwaar ? 'hallo' : 'vaarwel'`` geeft ``'vaarwel'``"
-
-#~ msgid "``true ? 'hello'`` returns ``'hello'``"
-#~ msgstr "``waar ? 'hallo'`` geeft ``'hallo'``"
-
-#~ msgid "``false ? 'hello'`` returns an empty result"
-#~ msgstr "``onwaar ? 'hallo'`` geeft een leeg resultaat"
