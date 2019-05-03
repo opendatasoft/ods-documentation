@@ -91,6 +91,11 @@ If the records have been received correctly, the server will respond the followi
 
 If an error happened while trying to push a record, the response will specify the error.
 
+.. admonition:: Note
+   :class: note
+
+   Real time push requests are limited to a 5MB payload. A larger payload will trigger an error, and should be split into several smaller requests instead.
+
 Pushing a field of type file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
