@@ -112,5 +112,5 @@ Deleting page permissions for users or groups
 
 
 .. |trash-button| image:: images/page_security_trash-button.png
-    :width: 43px
-    :height: 31px
+    :width: 16px
+    :height: 17px

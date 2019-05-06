@@ -59,15 +59,4 @@ Making the page accessible to your users
 Once the page is created and saved, it is accessible using its page URL; you can share the URL to anyone you want, but you may want
 to make the page accessible through your portal's menu, or even make it your new portal homepage. This is all done through
 the *Look & feel > Navigation* page.
-
-.. ifconfig:: language == 'en'
-
-  .. image:: images/navigation--en.png
-    :alt: Navigation page
-
-.. ifconfig:: language == 'fr'
-
-  .. image:: images/navigation--fr.png
-    :alt: Navigation page
-
 From here, you can add your page in the header menu, or set it as the homepage.
