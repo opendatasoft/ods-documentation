@@ -1,6 +1,11 @@
 Federate identity with SAML
 ===========================
 
+.. admonition:: Caution
+   :class: caution
+
+   The availability of this feature depends on the license of the Opendatasoft domain.
+
 Some organizations already have a user directory service that manages their users authentication and permission, and see little value in using the built in Opendatasoft user management features.
 
 In order to address this use case, the Opendatasoft platform supports external Identity Providers (IdP) through the SAMLv2 standard. This allows for setting up an identity federation between a domain, which will act as a service provider, and this IdP. This federation allows users of a domain to connect to the platform using the identity provider, and if they have one, reuse their active security context to create a SSO mechanism.
