@@ -12,9 +12,7 @@ A basic basemap is used by default for all maps of all Opendatasoft domains. It 
 
 To manage basemaps, go to Look & feel > Data visualizations. In this subsection of the back office menu, look for the "Basemaps" area.
 
-.. ifconfig:: language == 'en'
-
-    .. image:: images/basemaps_overview--en.png
+.. image:: images/basemaps_overview.png
        :alt: Overview of the Basemaps area in the Look and feel > Data visualizations section.
 
 Basemaps should be managed from the table of the "Basemaps" area. This table displays the currently available basemaps that can be used on the domain. It comprises 5 columns:
@@ -162,24 +160,16 @@ To integrate Mapbox basemaps:
 
 Using the basemaps table, it is now possible to select one of Mapbox's default styles, or choose "Custom" to enter the MapID of a custom created map.
 
-.. ifconfig:: language == 'en'
-
-    .. image:: images/basemaps__mapbox-custom-tiles--en.png
-       :alt: Custom tiles configuration
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/basemaps__mapbox-custom-tiles--fr.png
-       :alt: Configuration des tuiles personnalisées
+.. image:: images/basemaps_mapbox-custom-tiles.png
 
 
 
 
 
 .. |icon-reorder| image:: images/icon_reorder_basemaps.png
-    :width: 18px
-    :height: 18px
+    :width: 20px
+    :height: 19px
 
 .. |icon-trash| image:: images/icon_delete_basemaps.png
-    :width: 18px
+    :width: 17px
     :height: 17px
