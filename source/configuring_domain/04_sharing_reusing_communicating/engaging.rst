@@ -108,7 +108,7 @@ If you wish to gather feedback on the content of a specific dataset, you can act
 "User feedback" from its back-office configuration page.
 
 
-.. localizedimage:: images/feedback__configuration.png
+.. image:: images/feedback_enable.png
    :alt: Feedback configuration
 
 
@@ -124,7 +124,7 @@ by your users. This is available in the "Feedback" tab of the back-office datase
 page. From there, for each feedback sent, you can see the message,
 the suggested values, and you can archive it once you consider it handled.
 
-.. localizedimage:: images/feedback__list.png
+.. image:: images/feedback_submission.png
 
 .. admonition:: Note
    :class: note
