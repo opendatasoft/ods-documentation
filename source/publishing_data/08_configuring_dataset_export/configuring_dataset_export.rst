@@ -5,6 +5,8 @@ Users can download any published dataset in a variety of formats, from the Expor
 
 In the Opendatasoft platform, the configuration of the available exports is done in the Export tab of the edition interface of each dataset.
 
+.. image:: images/publish-data_export-tab.png
+
 Specifying a sort for exports
 -----------------------------
 
