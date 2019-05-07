@@ -12,7 +12,7 @@ In the edition interface of a dataset, the Visualizations > Analyze tab allows t
 
 The Analyze visualization, when available, is optional. It can be enabled or disabled using the tick box displayed right under the visualizations tabs.
 
-.. screenshot
+.. image:: images/analyze_view_configuration.png
 
 Above the chart preview are displayed a variety of buttons and options to configure the default chart of the Analyze visualization:
 

@@ -5,7 +5,7 @@ In the edition interface of a dataset, the Visualizations > Custom view tab allo
 
 The Custom view is available for every dataset, but is optional. It can be enabled or disabled using the tick box displayed right under the visualizations tabs.
 
-.. screenshot
+.. image:: images/custom_view_configuration.png
 
 To set the parameters of the Custom view, follow the indications from the table below.
 

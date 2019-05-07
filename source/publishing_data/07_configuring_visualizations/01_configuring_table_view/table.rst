@@ -11,7 +11,7 @@ In the edition interface of a dataset, the Visualizations > Table tab allows to 
 
 The Table visualization, when available, cannot be disabled.
 
-.. screenshot
+.. image:: images/table_view_configuration.png
 
 To configure the Table visualization, follow the indications from the table below.
 

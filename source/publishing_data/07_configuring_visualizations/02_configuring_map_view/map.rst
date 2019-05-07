@@ -11,7 +11,7 @@ In the edition interface of a dataset, the Visualizations > Map tab allows to co
 
 The Map visualization, when available, is optional. It can be enabled or disabled using the tick box displayed right under the visualizations tabs.
 
-.. screenshot
+.. image:: images/map_view_configuration.png
 
 Customizing the tooltip
 -----------------------

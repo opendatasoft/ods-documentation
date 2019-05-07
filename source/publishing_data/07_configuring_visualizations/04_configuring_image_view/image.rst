@@ -12,7 +12,7 @@ In the edition interface of a dataset, the Visualizations > Images tab allows to
 
 The Images visualization, when available, is optional. It can be enabled or disabled using the tick box displayed right under the visualizations tabs.
 
-.. screenshot
+.. image:: images/image_view_configuration.png
 
 Customizing the information panel
 ---------------------------------
