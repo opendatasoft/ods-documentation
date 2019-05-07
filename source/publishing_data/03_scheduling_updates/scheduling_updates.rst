@@ -13,7 +13,7 @@ Using scheduling to keep a dataset up to date
 .. admonition:: Caution
    :class: caution
 
-   The availability of this feature depends on the license of the OpenDataSoft domain.
+   The availability of this feature depends on the license of the Opendatasoft domain.
 
 This solution is the easiest to implement, it does not require any development, only a remote source and some settings in the dataset configuration.
 
