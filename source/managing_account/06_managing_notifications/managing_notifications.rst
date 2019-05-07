@@ -1,7 +1,7 @@
 Managing notifications
 ======================
 
-From the Notifications tab, authenticated users have the possibility to manage which domain-related notifications and OpenDataSoft-related newsletters they wish to receive by email.
+From the Notifications tab, authenticated users have the possibility to manage which domain-related notifications and Opendatasoft-related newsletters they wish to receive by email.
 
 .. admonition:: Prerequisite
    :class: important
@@ -35,12 +35,12 @@ Tick the box corresponding to any of the Notifications to subscribe. Untick any 
    processing_alert
    quota
 
-Subscribing to OpenDataSoft newsletters
+Subscribing to Opendatasoft newsletters
 ---------------------------------------
 
 2 types of newsletters can be sent:
 
-- Product News: informs about new features, shares tips and tricks about the OpenDataSoft platform.
+- Product News: informs about new features, shares tips and tricks about the Opendatasoft platform.
 - Data Ecosystem News: informs about the data world (articles, events, featured datasets etc.).
 
 Tick the box corresponding to any of the newsletters to subscribe. Untick any of the boxes to stop receiving the corresponding newsletter.
@@ -48,4 +48,4 @@ Tick the box corresponding to any of the newsletters to subscribe. Untick any of
 .. admonition:: Note
    :class: note
 
-   OpenDataSoft newsletters are only available in English and French.
+   Opendatasoft newsletters are only available in English and French.

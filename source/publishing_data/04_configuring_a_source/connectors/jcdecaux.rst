@@ -4,7 +4,7 @@ JCDecaux connector
 .. admonition:: Important
    :class: important
 
-   This connector is not available by default. Please contact OpenDataSoft for the activation of this connector on a given OpenDataSoft domain.
+   This connector is not available by default. Please contact Opendatasoft for the activation of this connector on a given Opendatasoft domain.
 
 The JCDecaux Bicycles Stations Data connector is used to retrieve the state of JCDecaux bike stations. It creates a dataset with records for one or more contracts, containing the name of the station, the capabilities, the number of available bikes, and the number of available slots.
 

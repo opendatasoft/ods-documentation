@@ -12,14 +12,14 @@ There are 3 kinds of interoperability metadata available:
 .. admonition:: Important
    :class: important
 
-   Custom interoperability metadata can be created and activated on demand. Please contact OpenDataSoft to know more about custom interoperability metadata.
+   Custom interoperability metadata can be created and activated on demand. Please contact Opendatasoft to know more about custom interoperability metadata.
 
 DCAT metadata
 -------------
 
 DCAT metadata aim at facilitating interoperability between data catalogs published on the Web.
 
-For more information about the DCAT metadata, please refer to the `W3C Data Catalog Vocabulary (DCAT) documentation <https://www.w3.org/TR/vocab-dcat/>`_. To know how to configure the metadata on the OpenDataSoft platform, refer to the table below.
+For more information about the DCAT metadata, please refer to the `W3C Data Catalog Vocabulary (DCAT) documentation <https://www.w3.org/TR/vocab-dcat/>`_. To know how to configure the metadata on the Opendatasoft platform, refer to the table below.
 
 .. list-table::
   :header-rows: 1
@@ -58,7 +58,7 @@ DCAT-AP for Switzerland
 
 DCAT-AP for Switzerland are DCAT-AP metadata specifically created for Swiss portals and datasets.
 
-For more information about the DCAT-AP for Switzerland metadata, please refer to the `related Open Data Handbook <https://handbook.opendata.swiss/en/library/ch-dcat-ap>`_. To know how to configure the metadata on the OpenDataSoft plateform, refer to the table below.
+For more information about the DCAT-AP for Switzerland metadata, please refer to the `related Open Data Handbook <https://handbook.opendata.swiss/en/library/ch-dcat-ap>`_. To know how to configure the metadata on the Opendatasoft plateform, refer to the table below.
 
 .. list-table::
   :header-rows: 1
@@ -75,7 +75,7 @@ INSPIRE
 
 INSPIRE metadata are defined by the European Commission. They should ensure that metadata are created for specific spatial data sets and services and that those metadata are kept up to date. These metadata particularly focus on datasets with geographic coordinates.
 
-For more information about the INSPIRE metadata, please refer to the `INSPIRE knowledge base <https://inspire.ec.europa.eu/metadata/6541>`_. To know how to configure the metadata on the OpenDataSoft platform, refer to the table below.
+For more information about the INSPIRE metadata, please refer to the `INSPIRE knowledge base <https://inspire.ec.europa.eu/metadata/6541>`_. To know how to configure the metadata on the Opendatasoft platform, refer to the table below.
 
 .. list-table::
   :header-rows: 1

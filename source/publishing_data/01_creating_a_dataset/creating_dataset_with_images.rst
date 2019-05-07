@@ -97,7 +97,7 @@ This method consists in sourcing any :doc:`supported format <supported_formats>`
 .. admonition:: Note
    :class: note
 
-   For this method, OpenDataSoft supports the following protocols: http, and its secured version https. Both should link to a single file.
+   For this method, Opendatasoft supports the following protocols: http, and its secured version https. Both should link to a single file.
 
 1. In Catalog > Datasets, click on the **New dataset** button.
 2. Click on the **Add a source** button.
@@ -151,4 +151,4 @@ Displaying images
 Once the images are imported into the platform, they can be displayed in 2 different ways:
 
 * through the default Images visualization tab: an image gallery displaying all the images and their metadata
-* through a slideshow, which is `an OpenDataSoft widget <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsSlideshow>`_ that can be added in any code area of the platform (e.g. in the Custom view of the dataset or in a content page): in that case, images are displayed one by one
+* through a slideshow, which is `an Opendatasoft widget <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsSlideshow>`_ that can be added in any code area of the platform (e.g. in the Custom view of the dataset or in a content page): in that case, images are displayed one by one

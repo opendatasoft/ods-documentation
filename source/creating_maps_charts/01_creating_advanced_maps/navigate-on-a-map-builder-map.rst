@@ -7,7 +7,7 @@ Overview of the interactive map of Map Builder
 .. localizedimage:: images/navigate-on-map.png
     :alt: Screenshot of Map Builder in preview mode
 
-The interactive map contains the same buttons as in any OpenDataSoft map:
+The interactive map contains the same buttons as in any Opendatasoft map:
 
 * polygon |icon-polygon|, circle |icon-circle| and square |icon-square| buttons to draw on the map and filter on certain areas, along with the edit shape |icon-edit| and delete shape |icon-trash-map| buttons to go with them
 * |icon-fullscreen| to view your map in fullscreen mode

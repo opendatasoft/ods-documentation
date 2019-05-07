@@ -13,7 +13,7 @@ Parameters
      * Description
      * Example
    * * Portal url 
-     * The URL of the portal you want to harvest. Azavea, Ckan, Dkan, ESRI, Junar, OpenDataSoft, OpenGov, Socrata portals implements the data.json norm.
+     * The URL of the portal you want to harvest. Azavea, Ckan, Dkan, ESRI, Junar, Opendatasoft, OpenGov, Socrata portals implements the data.json norm.
      * https://data.townofcary.org/
    * * Number of datasets
      * If set, only retrieve a certain amount of datasets.

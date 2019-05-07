@@ -22,7 +22,7 @@ To set the parameters of the Join dataset processor, follow the indications from
     * Description
     * Mandatory
   * * Dataset
-    * Dataset used for the join. It can be selected from the portal's datasets or from OpenDataSoft's network.
+    * Dataset used for the join. It can be selected from the portal's datasets or from Opendatasoft's network.
     * yes
   * * Local Key
     * Local field that will be used to identify the corresponding records in the remote dataset. More than one key can be specified.

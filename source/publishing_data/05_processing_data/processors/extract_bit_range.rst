@@ -4,7 +4,7 @@ Extract bit range processor
 .. admonition:: Important
    :class: important
 
-   This processor is not available by default. Please contact OpenDataSoft support team if you want this processor to be activated in your domain.
+   This processor is not available by default. Please contact Opendatasoft support team if you want this processor to be activated in your domain.
 
 This processor extracts an arbitrary bit range from an hexadecimal or binary content, and converts it into one of the following data types: integer, unsigned integer and float.
 

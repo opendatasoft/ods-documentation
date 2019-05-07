@@ -78,8 +78,8 @@ The Dots and shapes visualization mode simply displays your data as markers (dot
        *What your data will look like on the map*
      *
        - **Dot**: simple plain circle. Dots are recommended for high density datasets.
-       - **Icon**: themed icon (available in the OpenDataSoft library).
-       - **Map marker (with an optional icon)**: standard drop-shaped map marker, with an optional themed icon (available in the OpenDataSoft library) inside.
+       - **Icon**: themed icon (available in the Opendatasoft library).
+       - **Map marker (with an optional icon)**: standard drop-shaped map marker, with an optional themed icon (available in the Opendatasoft library) inside.
 
        If you choose the **Icon** or the **Map marker (with an optional icon)** mode:
 
@@ -213,8 +213,8 @@ The Choropleth visualization mode displays data as markers (dots or icons) or as
        *What your data will look like on the map*
      *
        - **Dot**: simple plain circle. Dots are recommended for high density datasets.
-       - **Icon**: themed icon (available in the OpenDataSoft library).
-       - **Map marker (with an optional icon)**: standard drop-shaped map marker, with an optional themed icon (available in the OpenDataSoft library) inside.
+       - **Icon**: themed icon (available in the Opendatasoft library).
+       - **Map marker (with an optional icon)**: standard drop-shaped map marker, with an optional themed icon (available in the Opendatasoft library) inside.
 
        If you choose the **Icon** or the **Map marker (with an optional icon)** mode:
 
@@ -285,8 +285,8 @@ The Color by category visualization mode displays data as markers (dots or icons
        *What your data will look like on the map*
      *
        - **Dot**: simple plain circle. Dots are recommended for high density datasets.
-       - **Icon**: themed icon (available in the OpenDataSoft library).
-       - **Map marker (with an optional icon)**: standard drop-shaped map marker, with an optional themed icon (available in the OpenDataSoft library) inside.
+       - **Icon**: themed icon (available in the Opendatasoft library).
+       - **Map marker (with an optional icon)**: standard drop-shaped map marker, with an optional themed icon (available in the Opendatasoft library) inside.
 
        If you choose the **Icon** or the **Map marker (with an optional icon)** mode:
 

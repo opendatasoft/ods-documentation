@@ -11,28 +11,13 @@ As a "parent" domain, you can choose to distribute specific pages and datasets t
 
 Distributing datasets to a subdomain
 ------------------------------------
+
 From the subdomain's management page in the backoffice, you can find the *Distribute datasets* interface.
 By default, nothing is distributed, so the list is empty.
 
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/subdomains__distribution-datasets--en.png
-        :alt: Distribution interface
-        :width: 400px
-        :align: center
-
-        Distribution interface
+.. image:: images/subdomains_distribute-datasets.png
 
 Clicking on *Add a dataset* opens your domain's catalog, which allows you to find and select a dataset to distribute.
-
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/subdomains__dataset-selection--en.png
-        :alt: Dataset selection
-        :width: 400px
-        :align: center
-
-        Dataset selection
 
 Once the dataset is selected, it appears in the distributed dataset list.
 
@@ -49,39 +34,15 @@ but it won't delete the dataset from the parent domain.
 
 Distributing pages to a subdomain
 ---------------------------------
+
 From the subdomain's management page in the backoffice, you can find the *Distribute pages* interface.
 By default, nothing is distributed, so the list is empty.
 
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/subdomains__distribution-pages--en.png
-        :alt: Distribution interface
-        :width: 400px
-        :align: center
-
-        Distribution interface
+.. image:: images/subdomains_distribute-pages.png
 
 Clicking on *Add a page* opens a list of your domain's pages, which allows you to select one or more pages to distribute.
 
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/subdomains__pages-list--en.png
-        :alt: Pages list
-        :width: 400px
-        :align: center
-
-        Pages list
-
 Once the selection is done, your pages will appear in the list.
-
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/subdomains__distribution-pages-filled--en.png
-        :alt: Distribution interface with distributed pages
-        :width: 400px
-        :align: center
-
-        Distribution interface with distributed pages
 
 You just need to click on the *Save* button now, and the page will appear in the subdomain.
 
@@ -96,53 +57,23 @@ page on the parent domain.
 
 Distributing content to multiple subdomains
 -------------------------------------------
+
 From the subdomains list, you can select two or more subdomains, and click on the *Distribute* button; this will bring you
 to a dedicated content distribution page for these subdomains.
 
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/subdomains__bulk-selection--en.png
-        :alt: Selecting subdomains for distribution
-        :width: 400px
-        :align: center
-
-        Selecting subdomains for distribution
+.. image:: images/subdomains_multiple-selection.png
 
 This new page will remind you of the impacted subdomains, and will let you select pages and datasets in a interface similar to
 the one for individual subdomains.
 
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/subdomains__bulk-content--en.png
-        :alt: Selecting content
-        :width: 400px
-        :align: center
-
-        Selecting content
+.. image:: images/subdomains_multiple-selection-distribute.png
 
 Organize your distribution using parameters
 -------------------------------------------
+
 If you have several subdomains, you may want to distribute pages and datasets slightly different for each: for example, maybe you want
 to distribute a homepage containing "Welcome on [something]", or maybe you have a country-wide dataset but you want to distribute
 parts of it to regional subdomains.
-
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/subdomains__distribution-schema--en.png
-        :alt: Distributing data based on a subdomain parameter
-        :width: 400px
-        :align: center
-
-        Distributing data based on a subdomain parameter
-
-.. ifconfig:: language == 'fr'
-
-    .. figure:: images/subdomains__distribution-schema--fr.png
-        :alt: Distributing data based on a subdomain parameter
-        :width: 400px
-        :align: center
-
-        Distributing data based on a subdomain parameter
 
 As an administrator managing your subdomains, you can define "distribution parameters"; and then you can fill these parameters for each
 subdomain. These parameters will then be available to change the distributed content depending on the subdomain.
@@ -152,34 +83,13 @@ name, and the dataset to be filtered on the ZIP Code.
 
 First, we'll add two parameters for all our subdomains. This is managed from the subdomains' *Settings* page.
 
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/subdomains__settings--en.png
-        :alt: Subdomains' settings
-        :width: 400px
-        :align: center
-
-        Subdomains' settings
+.. image:: images/subdomains_interface-settings.png
 
 By clicking *Add a parameter*, we'll add two parameters, "zipcode" and "cityname".
 
-.. ifconfig:: language == 'en'
+.. image:: images/subdomains_add-parameter1.png
 
-    .. figure:: images/subdomains__add-parameter--en.png
-        :alt: Add a distribution parameter
-        :width: 400px
-        :align: center
-
-        Add a distribution parameter
-
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/subdomains__parameters-list--en.png
-        :alt: Distribution parameters
-        :width: 400px
-        :align: center
-
-        Distribution parameters
+.. image:: images/subdomains_add-parameter2.png
 
 Now, we can fill these parameters for each of my subdomains, by clicking on the subdomain's name in the subdomains list to get to the
 subdomain configuration page.
@@ -195,25 +105,11 @@ To distribute the dataset, we add it to the list, and then click *Match paramete
 data depending on one of the distribution parameters. In our case, our dataset has a :code:`zipcode` field, and we match it with
 the :code:`zipcode` parameter of our subdomains.
 
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/subdomains__match-parameters--en.png
-        :alt: Matching parameters for a dataset
-        :width: 400px
-        :align: center
-
-        Matching parameters for a dataset
+.. image:: images/subdomains_add-parameter3.png
 
 Our content distribution is ready.
 
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/subdomains__parametrized-distribution--en.png
-        :alt: Content distribution with parameters
-        :width: 400px
-        :align: center
-
-        Content distribution with parameters
+.. image:: images/subdomains_add-parameter4.png
 
 Now, we just have to *Save* it. Each of our subdomains now have a dedicated homepage that they can use, and the part of the dataset
 that matches their city!

@@ -1,7 +1,7 @@
 Creating maps & charts
 ======================
 
-In this section are listed and documented all features related to creation of advanced maps or charts, with either the Map Builder or the Chart Builder. Both are available in the front office of an OpenDataSoft domain.
+In this section are listed and documented all features related to creation of advanced maps or charts, with either the Map Builder or the Chart Builder. Both are available in the front office of an Opendatasoft domain.
 
 .. admonition:: Caution
    :class: caution

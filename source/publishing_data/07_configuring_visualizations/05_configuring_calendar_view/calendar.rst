@@ -1,7 +1,7 @@
 Configuring the calendar
 ========================
 
-The OpenDataSoft platform lets you easily create calendar views from your published datasets.
+The Opendatasoft platform lets you easily create calendar views from your published datasets.
 
 .. ifconfig:: language == 'en'
 
