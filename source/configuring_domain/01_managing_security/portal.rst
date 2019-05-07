@@ -21,15 +21,7 @@ This setting can be found in the **security** subsection of the **configuration*
 Note that if you decide not to allow anonymous users to access your portal, they will be redirected to the login page
 unless you'd rather they land on a specific page you've written.
 
-.. ifconfig:: language == 'en'
-
-    .. image:: images/portal__anonymous--en.png
-        :alt: Allow anonymous access to your portal
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/portal__anonymous--fr.png
-        :alt: Allow anonymous access to your portal
+.. image:: images/configuration_anonymous-access.png
 
 Signup policy
 -------------
@@ -37,15 +29,7 @@ Signup policy
 No matter your choice of public or private, you can then decide on who will be able to become a registered member of
 your portal. In order to do this, go to the **Configuration/Signup** subsection of your portal's backoffice.
 
-.. ifconfig:: language == 'en'
-
-    .. image:: images/portal__enable-signup--en.png
-        :alt: Enable people to register
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/portal__enable-signup--fr.png
-        :alt: Enable people to register
+.. image:: images/configuration_enable-signup.png
 
 Closed signup policy
 ~~~~~~~~~~~~~~~~~~~~
@@ -60,49 +44,25 @@ If on the other hand you allow people to register, you'll then have to decide wh
 access request to your portal or not. Note that whatever your decision, each member of the portal able to manage users
 will receive a notification for each new access request.
 
-.. ifconfig:: language == 'en'
-
-    .. image:: images/portal__signup-approval--en.png
-        :alt: Request manual approval of each access request
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/portal__signup-approval--fr.png
-        :alt: Request manual approval of each access request
+.. image:: images/configuration_signup-approval.png
 
 Do not forget to add the signup button to your header's menu or people won't see a signup form until they try to access
 a restricted area of your portal.
 
-.. ifconfig:: language == 'en'
-
-    .. image:: images/portal__signup-link--en.png
-        :alt: Add signup link to your header's menu
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/portal__signup-link--fr.png
-        :alt: Add signup link to your header's menu
+.. image:: images/configuration_signup-link.png
 
 The signup process is usually very straightforward: an email, a password and that's it. You can however decide to
 customize the experience by setting up a custom text as disclaimer, request users to accept your terms and conditions
 and even require that they leave a message for the portal's administrator (useful when you want to manually approve
 access requests).
 
-.. ifconfig:: language == 'en'
-
-    .. image:: images/portal__signup-form--en.png
-        :alt: Customize the signup form
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/portal__signup-form--fr.png
-        :alt: Customize the signup form
+.. image:: images/configuration_signup-form.png
 
 Granting access for all of your organisation's members
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If your organisation already has its own credentials management system, you can set up a bridge between your identity
-provider and your OpenDataSoft portal. This will give general access to your portal (no specific rights) to each of
+provider and your Opendatasoft portal. This will give general access to your portal (no specific rights) to each of
 your organisation's members.
 
 You'll find more information about setting up such a bridge on the :doc:`SAML configuration documentation page </configuring_domain/01_managing_security/saml>`.

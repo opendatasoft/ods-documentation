@@ -10,7 +10,7 @@ You can choose to display share buttons that will provide users with quick acces
 
 You can enable these share buttons in the ``Social networks & sharing`` section, in the ``Configuration`` menu
 
-.. image:: images/links__share-buttons-configuration-en.png
+.. image:: images/configuration_share-buttons.png
 
 
 **Twitter cards**
@@ -25,7 +25,7 @@ You can check this by previewing a summary on the `Twitter Card page <https://ca
 
 If after clicking on *Preview*, your domain does not appear as **whitelisted for summary card**, you have to request approvals, by clicking on the *Request Approval* button. You also have to input your ``Twitter handle`` to associate your portal with these approved Twitter Cards, in the ``Social networks & sharing`` in the ``Configuration`` menu.
 
-.. image:: images/links__twittercards-configuration-en.png
+.. image:: images/configuration_twitter-cards.png
 
 
 
@@ -36,6 +36,6 @@ When embedding visualizations, users have the option to display an additional in
 
 In the ``Embeds`` section in the ``Configuration`` menu, you can configure the position of this information card (top or bottom).
 
-.. image:: images/links__dataset-info-cards-en.png
+.. image:: images/configuration_dataset-info-cards.png
 
 You can also force the display of the information card on every embed using the checkbox *Force embeds to have a dataset information card displayed at all times*

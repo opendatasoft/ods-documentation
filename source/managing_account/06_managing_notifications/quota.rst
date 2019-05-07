@@ -3,7 +3,7 @@ API calls quota notifications
 
 The following API calls quotas are considered:
 
-- the number of API calls allowed in your OpenDataSoft license; this is a quota shared by all users (both authenticated and anonymous).
+- the number of API calls allowed in your Opendatasoft license; this is a quota shared by all users (both authenticated and anonymous).
 - the quota allowed to a specific user; this can be configured in the back-office.
 - the quota allowed to all anonymous users; this is a quota shared by all anonymous users, and it can be configured in the back-office.
 

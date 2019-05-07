@@ -4,7 +4,7 @@ Managing quotas
 Your portal license
 -------------------
 
-Before diving into which quotas exist on OpenDataSoft portals, it is important to introduce the license topic. A license applies to each and every OpenDataSoft portal. It is a contract between OpenDataSoft and the portal owners, defining how much data can be injected into the portal and the consumption of this data.
+Before diving into which quotas exist on Opendatasoft portals, it is important to introduce the license topic. A license applies to each and every Opendatasoft portal. It is a contract between Opendatasoft and the portal owners, defining how much data can be injected into the portal and the consumption of this data.
 
 For example, freemium portals can have up to 5 datasets, each having at most 20000 records.
 
@@ -28,11 +28,6 @@ Your license defines 4 global limits on your portal: the first one puts an upper
 
 You can see these quotas and check any information related to your license, under the **License** section of the back office.
 
-.. localizedimage:: images/quotas__license_1.png
-        :alt: Current status of your license quotas
-.. localizedimage:: images/quotas__license_2.png
-        :alt: Current status of your license quotas
-
 Setting defaults limitations on users
 -------------------------------------
 
@@ -48,25 +43,9 @@ When a user makes a request (be it an API call, a dataset creation of the public
 he/she isn't running into the default limit set for him/her and isn't going over the global portal limit. Were it the
 case, a message would pop-up telling him/her so.
 
-.. ifconfig:: language == 'en'
+.. image:: images/quotas_api-calls.png
 
-    .. image:: images/quotas__default-api-calls--en.png
-        :alt: General API calls limit
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/quotas__default-api-calls--fr.png
-        :alt: General API calls limit
-
-.. ifconfig:: language == 'en'
-
-    .. image:: images/quotas__default-data-volume--en.png
-        :alt: General data volume limits
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/quotas__default-data-volume--fr.png
-        :alt: General data volume limits
+.. image:: images/quotas_data-volume.png
 
 Setting specific limitations for individual users and group of users
 --------------------------------------------------------------------

@@ -13,7 +13,7 @@ It is usually made available by the domain administrator in the top menu link un
 .. admonition:: Note
    :class: note
 
-   You can also build charts with `Analyze` tab on a dataset page, but these are limited to the current dataset. With the Chart Builder you have much more possibilities, combining different sources from your domain and from the OpenDataSoft network.
+   You can also build charts with `Analyze` tab on a dataset page, but these are limited to the current dataset. With the Chart Builder you have much more possibilities, combining different sources from your domain and from the Opendatasoft network.
 
 
 First layer
@@ -74,7 +74,7 @@ When you first import a dataset in Advanced Charts, the default visualization of
 
 **Second Layer**
 
-Let's add another dataset! Look for "Commodity Prices" to find `Commodity Prices since 1980 <https://public.opendatasoft.com/explore/dataset/commodity-prices-since-1980>`_ dataset from the OpenDataSoft public collection.
+Let's add another dataset! Look for "Commodity Prices" to find `Commodity Prices since 1980 <https://public.opendatasoft.com/explore/dataset/commodity-prices-since-1980>`_ dataset from the Opendatasoft public collection.
 
 This time, add the filter "`date>1987`" so that the X-axis will match with the first layer. Then import the ~20 000 records.
 

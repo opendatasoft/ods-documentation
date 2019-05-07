@@ -6,7 +6,7 @@ Admin metadata are activated on demand, because they are entirely custom. They s
 .. admonition:: Important
    :class: important
 
-   Please contact OpenDataSoft for the creation and activation of admin metadata. We will need the following information to create these metadata:
+   Please contact Opendatasoft for the creation and activation of admin metadata. We will need the following information to create these metadata:
 
    * Name of the group of admin metadata (which will be the label of the related tab in the Information tab)
    * Name of each metadata and its type (e.g. text, date, etc.)

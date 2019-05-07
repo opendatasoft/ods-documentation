@@ -4,15 +4,7 @@ Managing security
 You can manage access, visibility on data and edition permissions on a per dataset basis, on each dataset publishing interface.
 Of course the first condition for a user to able to access a dataset is to have access to the domain as a whole.
 
-.. ifconfig:: language == 'en'
-
-    .. image:: images/security__dataset--en.png
-        :alt: Access list
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/security__dataset--fr.png
-        :alt: Liste d'accès
+.. image:: images/publish-data_security-tab.png
 
 
 Dataset exploration permissions
@@ -24,19 +16,7 @@ Dataset access rights
 
 If you want anyone with access to your domain to be able to explore the dataset, you must uncheck the `Access restricted to allowed users and groups` option.
 
-.. ifconfig:: language == 'en'
-
-    .. image:: images/security__access-restricted--en.png
-        :alt: Access restricted to allowed users and groups option
-        :width: 50%
-        :align: center
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/security__access-restricted--fr.png
-        :alt: Option Accès limité aux utilisateurs et groupes autorisés
-        :width: 50%
-        :align: center
+.. image:: images/security_access-restricted.png
 
 In this case, you can apply general filters for all people that access your dataset (see below for filter configuration). That filters will apply to all people that do not fall into the users and groups explicitly listed for this dataset. If a user is matched in the specific list of users, the general filters **will not apply**.
 

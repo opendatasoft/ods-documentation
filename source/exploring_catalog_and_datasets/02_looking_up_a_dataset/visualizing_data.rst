@@ -1,7 +1,7 @@
 Visualizing data
 ================
 
-Published datasets on an OpenDataSoft portal can be represented by up to 6 different visualizations. The number of available visualizations for a dataset completely depends on what kind of data the dataset contains. Among these 6 visualizations, there are 5 standard visualizations:
+Published datasets on an Opendatasoft portal can be represented by up to 6 different visualizations. The number of available visualizations for a dataset completely depends on what kind of data the dataset contains. Among these 6 visualizations, there are 5 standard visualizations:
 
 - the Table visualization, to visualize data in a table
 - the Map visualization, to visualize data on a map

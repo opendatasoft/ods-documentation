@@ -4,9 +4,9 @@ Commenting via Disqus
 .. admonition:: Important
    :class: important
 
-   Since Disqus is an optional feature, it is not activated on every OpenDataSoft portal. The activation of Disqus depends entirely on the portal administrators.
+   Since Disqus is an optional feature, it is not activated on every Opendatasoft portal. The activation of Disqus depends entirely on the portal administrators.
 
-Disqus is a service that can be integrated into an OpenDataSoft portal. It allows users to post comments in order to share ideas, opinions or to ask questions about a dataset. It is also possible to answer another user's comment.
+Disqus is a service that can be integrated into an Opendatasoft portal. It allows users to post comments in order to share ideas, opinions or to ask questions about a dataset. It is also possible to answer another user's comment.
 
 .. image:: images/disqus.png
    :alt: Comments tab

@@ -3,7 +3,7 @@ Configuring a source
 
 Most of the time, datasets are based on at least one source, which contains data. When this source (no matter if it is a file, an API or any other supported source type) is uploaded, the platform will automatically use a connector to be able to read and understand that source. When creating a new dataset, it is important to make sure that the preview is completely readable: it means that the source of the dataset has been well understood and configured.
 
-In the OpenDataSoft platform, the configuration of a dataset source is done in the Source tab of the edition interface of each dataset.
+In the Opendatasoft platform, the configuration of a dataset source is done in the Source tab of the edition interface of each dataset.
 
 The configuration options of a source entirely depend on the source type, and both the way the source has been added to the dataset and the format of that source matter to determine that type. In the table below are listed the existing and available connectors, associated with their matching source types. Check both columns, then click the link on the connector name to find out about all related configuration options.
 
@@ -41,7 +41,7 @@ The configuration options of a source entirely depend on the source type, and bo
     * Used for CSV (.csv), TSV (.tsv), Text (.txt) and DAT (.dat) files
     * Default
   * * :doc:`Dataset of datasets<connectors/dataset_of_datasets>`
-    * Used to create a dataset from the catalog of an OpenDataSoft domain
+    * Used to create a dataset from the catalog of an Opendatasoft domain
     * Default
   * * :doc:`GeoJSON<connectors/geojson>`
     * Used for GeoJSON (.geojson) files

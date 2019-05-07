@@ -1,7 +1,7 @@
 Adding processors to a dataset
 ==============================
 
-Processors are tools that can be used in order to modify, improve or enrich the data of a dataset. In the OpenDataSoft platform, processors are classified in 4 different categories:
+Processors are tools that can be used in order to modify, improve or enrich the data of a dataset. In the Opendatasoft platform, processors are classified in 4 different categories:
 
 * Processors for geographical mapping
 * Processors for dates handling
