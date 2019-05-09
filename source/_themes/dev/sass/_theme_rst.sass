@@ -190,9 +190,6 @@
     padding: $base-line-height
     background: $sidebar-background-color
     border: solid 1px $sidebar-border-color
-    // Sidebar content is usually less relevant, so adjust the margins and sizes.
-    p, ul, dl
-      font-size: 90%
     .last
       margin-bottom: 0
     .sidebar-title
@@ -303,7 +300,6 @@
     dt
       display: table
       margin: $base-line-height / 4 0
-      font-size: 90%
       line-height: normal
       background: lighten($class-color, 50%)
       color: $class-color
@@ -386,7 +382,15 @@
     font-style: italic
 
 .rst_title
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif!important
+  font-family: $base-font-family
+
+.wy-table td, .rst-content table.docutils td,
+.rst-content table.field-list td, .wy-table th,
+.rst-content table.docutils th,
+.rst-content table.field-list th,
+.wy-table td p, .rst-content table.docutils td p, .rst-content table.field-list td p
+  &:not(.admonition-title)
+    @extend %text-300
 
 // Mobile specific
 +media($mobile)

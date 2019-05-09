@@ -36,9 +36,13 @@
   border-radius: $spacing-50 0
 
 .wy-alert.wy-alert-danger
-  background: lighten($red, 40%)
+  border: 1px solid rgba($red, 0.4)
+  background: rgba($red, 0.1)
+
   .wy-alert-title
-    background: lighten($red,20%)
+    background: $red
+    border-color: rgba($red, 0.4)
+
 .wy-alert.wy-alert-warning
   border: 1px solid rgba($orange, 0.4)
   background: rgba($orange, 0.1)
