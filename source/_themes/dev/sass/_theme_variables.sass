@@ -5,8 +5,24 @@
 $font-awesome-dir:                    "../fonts/"
 $static-img:                          "../img/"
 
+$base-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif
+
 $nav-content-width:                   800px
 $nav-media-query:                     (($nav-desktop-width) + ($nav-content-width))
+$base-line-height:                    1.4rem
+$base-font-size:                      1rem
+$text-color:                          hsl(0,0%,34%)
+
+$spacing-50:                          4px
+$spacing-100:                         13px
+$spacing-200:                         26px
+$spacing-300:                         39px
+$spacing-400:                         65px
+$spacing-500:                         105px
+
+$header-height:                       80px
+
+$default-border-radius:               4px
 
 $mathjax-color:                       $text-color
 
@@ -64,16 +80,30 @@ $highlight-color:                     $yellow
 $tablet-width: 992px
 
 // Colors ODS Theme
-$body-background:                     #F3F3F3
-$grey-very-light:                     #F8F8F8
-$grey-light:                          #DAE2EA
-$grey-medium:                         #A0ACB9
-$grey-dark:                           #7B7B7B
+$light-100:                           #FFFFFF
+$light-200:                           #F6F8FB
+$light-300:                           #DEE5EF
+$light-400:                           #CBD2DB
+$light-500:                           #898D92
+$light-600:                           #565656
+$light-700:                           #000000
+
+$body-background:                     #FFFFFF
+$section-background:                  $body-background
+$section-background-color:            $body-background
+$gray-light:                          $light-400
+$gray-medium:                         $light-500
+$gray-dark:                           $light-600
 $blue-ultra-light:                    #CFE6EC
-$blue-light:                          #126E92
+$blue-light:                          #0086D6
 $blue-medium:                         #004F88
-$blue-hover:                          #166482
-$deep-blue:                           #003C63
-$green:                               #5DD285
-$orange:                              #FF9700
+$blue-hover:                          mix(#fff, $blue-light, 25%)
+$deep-blue:                           #142E7B
+$green:                               #00C7B1
+$orange:                              #EFB71B
 $warning-red:                         #c60000
+
+$link-color:                          $blue-light
+$link-color-hover:                    mix(#fff, $blue-light, 25%)
+$text-color:                          $light-600
+
