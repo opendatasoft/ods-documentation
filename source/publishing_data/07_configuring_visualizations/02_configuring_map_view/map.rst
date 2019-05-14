@@ -69,7 +69,7 @@ To customize the tooltips of the Map visualization, follow the instructions from
       1. Click on a field among the list.
       2. Drag and drop the field above or below another one.
   * * Sort in tooltips
-    * When more than one tooltip is related to one same element on the map, it is possible to define a sort to order these tooltips.
+    * When there is more than one element at a single place on the map, clicking it will display a single tooltip, but where it is possible to browse information about all these elements. It is possible to define a sort to order that information.
     * 1. Click on the "Sort in tooltips" list box.
       2. Choose a field from the dataset, on which the sorting will be based.
       3. Click on the second list box, displayed below the first one.

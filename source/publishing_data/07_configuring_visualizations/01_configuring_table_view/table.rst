@@ -4,12 +4,12 @@ Configuring the Table visualization
 .. admonition:: Prerequisite
    :class: important
 
-   For the Table visualization to be available, the dataset must not be empty.
+   For the Table visualization to be available, the dataset must contain at least 1 source.
 
 
 In the edition interface of a dataset, the Visualizations > Table tab allows to configure the Table visualization displayed in the front office, once the dataset is published on the portal.
 
-The Table visualization, when available, cannot be disabled.
+The Table visualization cannot be disabled.
 
 .. image:: images/table_view_configuration.png
 

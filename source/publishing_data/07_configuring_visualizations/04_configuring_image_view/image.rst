@@ -5,7 +5,7 @@ Configuring the Images visualization
 .. admonition:: Prerequisite
    :class: important
 
-   For the Images visualization to be available, the dataset must contain at least one :ref:`file field<choosingtype>`, containing at least one image or any other media type file that can generate a thumbnail.
+   For the Images visualization to be available, the dataset must contain at least one :ref:`file field<choosingtype>`, containing at least one image or any other media type file that can generate a thumbnail: .gif, .png, .jpeg, .jpg, .tif, .tiff and .bmp.
 
 
 In the edition interface of a dataset, the Visualizations > Images tab allows to configure the image gallery of the Images visualization displayed in the front office, once the dataset is published on the portal.
