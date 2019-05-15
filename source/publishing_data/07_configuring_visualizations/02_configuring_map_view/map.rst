@@ -57,12 +57,12 @@ To customize the tooltips of the Map visualization, follow the instructions from
     * To add a field in the tooltip:
 
       1. Find the field among the list.
-      2. Click on the + icon at the right of the field.
+      2. Click on the |icon-plus| icon at the right of the field.
 
       To hide a field from the tooltip:
 
       1. Find the field among the list.
-      2. Click on the X icon at the right of the field.
+      2. Click on the |icon-cross| icon at the right of the field.
 
       To reorder the fields:
 
@@ -129,3 +129,15 @@ To configure the map of the Map visualization, follow the instructions from the 
       1. Click on the Icon menu.
       2. Choose an icon.
       3. Click on the Select icon button.
+
+
+
+
+
+.. |icon-cross| image:: images/icon_cross.png
+    :width: 13px
+    :height: 13px
+
+.. |icon-plus| image:: images/icon_plus.png
+    :width: 15px
+    :height: 14px

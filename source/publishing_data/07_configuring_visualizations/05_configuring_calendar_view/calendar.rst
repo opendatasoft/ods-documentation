@@ -70,12 +70,12 @@ To configure the Calendar visualization, follow the indications from the tables 
     * To add a field in the tooltip:
 
       1. Find the field among the list.
-      2. Click on the + icon at the right of the field.
+      2. Click on the |icon-plus| icon at the right of the field.
 
       To hide a field from the tooltip:
 
       1. Find the field among the list.
-      2. Click on the X icon at the right of the field.
+      2. Click on the |icon-cross| icon at the right of the field.
 
       To reorder the fields:
 
@@ -93,3 +93,14 @@ To configure the Calendar visualization, follow the indications from the tables 
   * * Custom HTML tooltip
     * HTML area to write the content of the tooltip. 3 buttons above the text area allow to reindent a selection, reindent the whole HTML text and/or to wrap the lines.
     * Write the content of the tooltip in HTML.
+
+
+
+
+.. |icon-cross| image:: ../02_configuring_map_view/images/icon_cross.png
+    :width: 13px
+    :height: 13px
+
+.. |icon-plus| image:: ../02_configuring_map_view/images/icon_plus.png
+    :width: 15px
+    :height: 14px

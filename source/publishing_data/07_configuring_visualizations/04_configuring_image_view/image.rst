@@ -30,12 +30,12 @@ To configure the information panel of the Images visualization, follow the indic
     * To add an image field in the Images visualization:
 
       1. Find the field among the list.
-      2. Click on the + icon at the right of the field.
+      2. Click on the |icon-plus| icon at the right of the field.
 
       To hide an image field from the Images visualization:
 
       1. Find the field among the list.
-      2. Click on the X icon at the right of the field.
+      2. Click on the |icon-cross| icon at the right of the field.
 
       To reorder the image fields:
 
@@ -66,12 +66,12 @@ To configure the information panel of the Images visualization, follow the indic
     * To add a field in the tooltip:
 
       1. Find the field among the list.
-      2. Click on the + icon at the right of the field.
+      2. Click on the |icon-plus| icon at the right of the field.
 
       To hide a field from the tooltip:
 
       1. Find the field among the list.
-      2. Click on the X icon at the right of the field.
+      2. Click on the |icon-cross| icon at the right of the field.
 
       To reorder the fields:
 
@@ -94,3 +94,15 @@ To configure the information panel of the Images visualization, follow the indic
    :class: important
 
    For more information about tooltips and how to configure both Standard and Custom HTML tooltips, see :doc:`Configure the tooltip</publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip>` documentation.
+
+
+
+
+
+.. |icon-cross| image:: ../02_configuring_map_view/images/icon_cross.png
+    :width: 13px
+    :height: 13px
+
+.. |icon-plus| image:: ../02_configuring_map_view/images/icon_plus.png
+    :width: 15px
+    :height: 14px
