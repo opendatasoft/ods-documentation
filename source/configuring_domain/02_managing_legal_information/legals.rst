@@ -90,5 +90,5 @@ To delete a license, click on the |icon-trash| button.
     :height: 22px
 
 .. |icon-trash| image:: images/icon_trash.png
-    :width: 45px
-    :height: 34px
+    :width: 33px
+    :height: 32px
