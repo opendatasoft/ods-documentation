@@ -4,9 +4,9 @@ Extract bit range processor
 .. admonition:: Important
    :class: important
 
-   This processor is not available by default. Please contact OpenDataSoft support team if you want this processor to be activated in your domain.
+   This processor is not available by default. Please contact Opendatasoft support team if you want this processor to be activated in your domain.
 
-This processor extracts an arbitrary bit range from an hexadecimal content and converts it into one of the following data types: integer, unsigned integer and float.
+This processor extracts an arbitrary bit range from an hexadecimal or binary content, and converts it into one of the following data types: integer, unsigned integer and float.
 
 Example of use: when processing data coming from a network of sensors as sensors often encode their payloads as hexadecimal content.
 
@@ -23,9 +23,13 @@ To set the parameters of the Extract bit range processor, follow the indications
     * Mandatory
     * Example
   * * Field
-    * Field containing the hexadecimal content
+    * Field containing the hexadecimal or binary content
     * yes
     * ``column_a``
+  * * Input type
+    * Type of the content: hexadecimal or binary. If this parameter is not set, the content is considered hexadecimal by default.
+    * no
+    * Either hexadecimal or binary
   * * Start bit offset
     * Starting offset corresponding to the position of the first bit. It starts at 0.
     * yes
@@ -69,8 +73,8 @@ This hexadecimal value (2 bytes) contains:
 
 Therefore, the processing pipeline will contains 3 Extract bit range processors
 
-* one Extract bit range from 0 to 7 to convert into signed integer (int) -> int_temperature
-* one Extract bit range from 8 to 11 to convert into unsigned integer (uint) -> sensor_identifier
+* one Extract bit range from 0 to 8 to convert into signed integer (int) -> int_temperature
+* one Extract bit range from 8 to 12 to convert into unsigned integer (uint) -> sensor_identifier
 * one Extract bit range from 12 to 13 to convert into unsigned integer, 0 meaning "Not OK" and 1 meaning "OK" (uint) -> status
 
 Extract bit range 1

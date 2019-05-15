@@ -74,7 +74,7 @@ Query Language and Geo Filtering
 Query language
 ^^^^^^^^^^^^^^
 
-The OpenDataSoft query language makes it possible to express complex boolean conditions as a filtering context.
+The Opendatasoft query language makes it possible to express complex boolean conditions as a filtering context.
 
 Full-text search
 ~~~~~~~~~~~~~~~~

@@ -1,23 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, OpenDataSoft
+# Copyright (C) 2019, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2018
-# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2018
 # Trad_FR2 <datawords.translator.fr2@gmail.com>, 2018
 # Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2018
-# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2018
+# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2019
+# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 12:23+0100\n"
+"POT-Creation-Date: 2019-05-07 13:20+0200\n"
 "PO-Revision-Date: 2018-06-27 09:10+0000\n"
-"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2018\n"
+"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,12 +30,12 @@ msgstr "Maintenir les données à jour"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:4
 msgid ""
-"The OpenDataSoft platform makes it possible, in the very same data catalog, "
+"The Opendatasoft platform makes it possible, in the very same data catalog, "
 "to handle completely static datasets (which need to be published only once) "
 "and live datasets (which need to be regularly updated). Two different "
 "mechanisms are made available to handle datasets refresh."
 msgstr ""
-"La plateforme OpenDataSoft permet, au sein d'un même catalogue de données, "
+"La plateforme Opendatasoft permet, au sein d'un même catalogue de données, "
 "de gérer des jeux de données entièrement statiques (qui n'ont besoin d'être "
 "publiés qu'une seule fois) et des jeux de données en temps réel (qui doivent"
 " être régulièrement mis à jour). Vous disposez de deux mécanismes pour gérer"
@@ -55,12 +54,12 @@ msgstr ""
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:8
 msgid ""
-"The second one consists in pushing data on the OpenDataSoft platform using a"
+"The second one consists in pushing data on the Opendatasoft platform using a"
 " dedicated API end point. This mode is most useful when the data can be sent"
 " directly by the system that produces the data points, such as a computer "
 "program sending event metrics or a set of sensors sending their readings."
 msgstr ""
-"Le second consiste à pousser les données sur la plateforme OpenDataSoft par "
+"Le second consiste à pousser les données sur la plateforme Opendatasoft par "
 "l'intermédiaire du point d'entrée d'une API dédiée. Ce mode se révèle "
 "particulièrement utile lorsque les données peuvent être directement envoyées"
 " par le système produisant les points de données, par exemple un logiciel "
@@ -72,6 +71,19 @@ msgid "Using scheduling to keep a dataset up to date"
 msgstr "Utiliser la planification pour maintenir un jeu de données à jour"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:13
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:38
+msgid "Caution"
+msgstr "Avertissement"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:16
+msgid ""
+"The availability of this feature depends on the license of the OpenDataSoft "
+"domain."
+msgstr ""
+"La disponibilité de cette fonctionnalité dépend de la licence du domaine "
+"OpenDataSoft. "
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:18
 msgid ""
 "This solution is the easiest to implement, it does not require any "
 "development, only a remote source and some settings in the dataset "
@@ -81,11 +93,11 @@ msgstr ""
 " développement, seulement une source distante et quelques paramètres dans la"
 " configuration du jeu de données."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:16
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:21
 msgid "Specifying a resource"
 msgstr "Spécifier une ressource"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:21
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:25
 msgid ""
 "To be able to schedule a dataset, its underlying resource must be a remote "
 "one, specified as a URL (http or ftp work well) and not an uploaded file. To"
@@ -97,15 +109,15 @@ msgstr ""
 "Pour ajouter une ressource distante, collez simplement une URL dans le champ"
 " URL."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:24
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:28
 msgid "Specifying scheduling interval"
 msgstr "Spécifier un intervalle de planification"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:30
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:33
 msgid ""
 "Once a dataset is saved with a remote resource, the scheduling tab is "
 "activated. The minimum interval is the minute, but it is not activated by "
-"default. Please contact OpenDataSoft's support if you need minute level "
+"default. Please contact Opendatasoft's support if you need minute level "
 "scheduling on your domain. You can add as many schedule as you want. For "
 "instance, if it fits your needs, you could decide to schedule a dataset to "
 "be reprocessed every Monday morning and every Wednesday afternoon."
@@ -113,21 +125,29 @@ msgstr ""
 "Une fois qu'un jeu de données est enregistré et qu'il dispose d'une "
 "ressource distante, l'onglet planification est activé. L'intervalle minimum "
 "est d'une minute, mais il n'est pas activé par défaut. Veuillez contacter "
-"l'assistance OpenDataSoft si vous avez besoin d'une planification à des "
+"l'assistance Opendatasoft si vous avez besoin d'une planification à des "
 "intervalles précis à la minute sur votre domaine. Vous pouvez ajouter autant"
 " de planifications que vous le souhaitez. Par exemple, si nécessaire, vous "
 "pouvez décider de planifier le retraitement d'un jeu de données chaque lundi"
 " matin et chaque mercredi après-midi."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:33
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:36
 msgid "Pushing real time data"
 msgstr "Pousser des données en temps réel"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:35
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:41
+msgid ""
+"The availability of this feature depends on the license of the Opendatasoft "
+"domain."
+msgstr ""
+"La disponibilité de cette fonctionnalité dépend de la licence du domaine "
+"Opendatasoft. "
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:43
 msgid ""
 "For some types of data, it can be useful to push data instead of the more "
 "traditional model of having the data being pulled from a resource by the "
-"platform. To address this need, the OpenDataSoft platform offers a realtime "
+"platform. To address this need, the Opendatasoft platform offers a realtime "
 "push API. It is not to be confused with the ability to schedule a dataset "
 "processing. When scheduling, the dataset will periodically pull the resource"
 " and process the data that is inside of it, whereas with the push API, the "
@@ -137,31 +157,18 @@ msgstr ""
 "Pour certains types de données, il peut être utile de pousser les données au"
 " lieu de les extraire, comme c'est le cas traditionnellement, depuis une "
 "ressource via la plateforme. Pour répondre à ce besoin, la plateforme "
-"OpenDataSoft propose une API Push (pousser) en temps réel. Elle ne doit pas "
+"Opendatasoft propose une API Push (pousser) en temps réel. Elle ne doit pas "
 "être confondue avec la capacité à planifier le traitement d'un jeu de "
 "données. Avec la planification, le jeu de données extrait périodiquement la "
 "ressource et traite les données qu'elle contient, tandis qu'avec l'API Push,"
 " le jeu de données est alimenté par une application via une API Push, et les"
 " enregistrements sont traités un par un dès leur réception."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:37
-msgid "Note"
-msgstr "Remarque"
-
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:40
-msgid ""
-"As this feature is still in beta, it is not activated by default. Please "
-"contact OpenDataSoft's support to try it out."
-msgstr ""
-"Cette fonctionnalité étant actuellement en version bêta, elle n'est pas "
-"activée par défaut. Veuillez contacter l'assistance OpenDataSoft si vous "
-"souhaitez l'essayer."
-
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:43
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:46
 msgid "Configuring the dataset schema"
 msgstr "Configurer le schéma du jeu de données"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:48
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:50
 msgid ""
 "To create a realtime dataset, start by navigating to the dataset creation "
 "interface. Here, select \"add a realtime source\"."
@@ -170,7 +177,7 @@ msgstr ""
 "l'interface de création de jeux de données. De là, sélectionnez \"Ajouter "
 "une source en temps réel\"."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:53
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:55
 msgid ""
 "You will be prompted to enter some bootstrap data and to optionnally fill in"
 " additional options. The bootstrap data should have all the fields that will"
@@ -183,7 +190,7 @@ msgstr ""
 "les données d'amorçage ne sont pas utilisées dans le jeu de données : elles "
 "ont pour seule fonction de permettre la configuration du jeu de données."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:56
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:58
 msgid "Using the push url"
 msgstr "Utiliser l'URL Push"
 
@@ -281,9 +288,9 @@ msgstr ""
 "valeur ``number_of_copies`` sur l'enregistrement correspondant au numéro "
 "``isbn`` du livre."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:115
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:114
 msgid ""
-"In order to set up such a system with the OpenDataSoft platform, the fields "
+"In order to set up such a system with the Opendatasoft platform, the fields "
 "that will be used as a unique key must be marked as so. In our example, the "
 "unique key would be isbn, because the rest of the data is linked to "
 "individual books, and these books are identified by the ISBN. This can be "
@@ -294,7 +301,7 @@ msgid ""
 "record. In our library case, if your dataset has ``isbn`` as the unique key,"
 " and contains these two records."
 msgstr ""
-"Afin de configurer un système de ce type avec la plateforme OpenDataSoft, "
+"Afin de configurer un système de ce type avec la plateforme Opendatasoft, "
 "les champs qui seront utilisés en tant que clés uniques doivent être "
 "identifiés. Dans notre exemple, la clé unique serait le numéro ISBN, car le "
 "reste des données est lié à chaque livre et chaque livre est identifié par "
@@ -308,7 +315,7 @@ msgstr ""
 "``isbn`` en tant que clé unique et s'il contient deux de ces enregistrements"
 " dans le cas de notre bibliothèque."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:129
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:128
 msgid ""
 "If somebody borrows a copy of Zen and the Art of Motorcycle Maintenance, and"
 " you push the following record, you will still have two records, the first "
@@ -319,11 +326,11 @@ msgstr ""
 " toujours de deux enregistrements, le premier étant mis à jour avec la "
 "nouvelle valeur."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:143
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:142
 msgid "Delete data"
 msgstr "Supprimer des données"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:145
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:144
 msgid ""
 "There are two entrypoints that allow for deleting a pushed records. One that"
 " uses the records values and one that uses the record ID."
@@ -332,11 +339,11 @@ msgstr ""
 "poussés. Le premier utilise les valeurs des enregistrements, tandis que le "
 "second utilise l'ID des enregistrements."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:148
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:147
 msgid "Using the record values"
 msgstr "Utiliser les valeurs des enregistrements"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:150
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:149
 msgid ""
 "To delete a record knowing the record fields values, POST the record as if "
 "you were adding it for the first time, but replace ``/push/`` with "
@@ -356,11 +363,11 @@ msgstr ""
 " Vous trouverez ci-dessous un exemple rapide illustrant la suppression de "
 "l'enregistrement que nous avions précédemment poussé."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:157
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:156
 msgid "Using the record ID"
 msgstr "Utiliser l'ID de l'enregistrement"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:159
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:158
 msgid ""
 "If you know the record ID of the record you want to delete, simply make a "
 "GET request to the URL you get by replacing ``/push/`` with "
@@ -371,11 +378,11 @@ msgstr ""
 "``/push/`` par ``/<RECORD_ID>/delete/`` dans l'URL Push. Vous trouverez ci-"
 "dessous un exemple rapide."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:166
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:165
 msgid "Get notified in case of inactivity"
 msgstr "Être notifié en cas d'inactivité"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:171
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:169
 msgid ""
 "If you expect a system to push data to the platform often, you may want to "
 "be notified if no record has been received by the platform in a while. In "
@@ -392,11 +399,11 @@ msgstr ""
 "enregistrement n'a été reçu pendant une période supérieure au délai défini, "
 "vous recevrez un e-mail."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:174
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:172
 msgid "Unpublishing and disabling the api"
 msgstr "Dépublier et désactiver l'API"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:179
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:176
 msgid ""
 "Beware of unpublishing your dataset, as this will not keep existing records "
 "for the next time the dataset is published. If you desire to avoid getting "
@@ -414,11 +421,11 @@ msgstr ""
 "poussées alors que le Push est désactivé sur la ressource, aucune donnée ne "
 "sera ajoutée et une erreur sera signalée."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:182
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:179
 msgid "Recovery"
 msgstr "Récupération"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:187
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:183
 msgid ""
 "In the event of data loss, for instance when the dataset has been "
 "unpublished or when a processor has been misconfigured, there is a "
@@ -431,7 +438,7 @@ msgstr ""
 " récupération doit avoir été activée avant que les enregistrements n'aient "
 "été poussés vers la plateforme."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:192
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:187
 msgid ""
 "When the recovery is activated every subsequent record received will be "
 "backed up, and will be elligible for recovery. In order to recover eligible "

@@ -4,7 +4,7 @@ Salesforce connector
 .. admonition:: Important
    :class: important
 
-   This connector is not available by default. Please contact OpenDataSoft for the activation of this connector on a given OpenDataSoft domain.
+   This connector is not available by default. Please contact Opendatasoft for the activation of this connector on a given Opendatasoft domain.
 
 The Salesforce connector is used to extract data from the force.com REST API.
 

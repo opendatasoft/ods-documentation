@@ -5,7 +5,7 @@ FTP CSV harvester (deprecated)
 
 Synchronize files and metadata stored on an FTP server.
 
-This harvester is not available by default. If you need to use it, please contact OpenDataSoft support team.
+This harvester is not available by default. If you need to use it, please contact Opendatasoft support team.
 
 Parameters
 ----------

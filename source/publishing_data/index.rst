@@ -1,7 +1,7 @@
 Publishing data
 ===============
 
-In this section are listed and documented all features related to the upload, configuration, processing and publishing of a dataset. These features are available in the Catalog section of the back office of an OpenDataSoft domain.
+In this section are listed and documented all features related to the upload, configuration, processing and publishing of a dataset. These features are available in the Catalog section of the back office of an Opendatasoft domain.
 
 .. toctree::
    :maxdepth: 2
@@ -13,5 +13,6 @@ In this section are listed and documented all features related to the upload, co
    05_processing_data/processing_data
    06_configuring_metadata/configuring_metadata
    07_configuring_visualizations/index
+   08_configuring_dataset_export/configuring_dataset_export
    09_managing_dataset_security/security
    11_saving_and_publishing_a_dataset/publish

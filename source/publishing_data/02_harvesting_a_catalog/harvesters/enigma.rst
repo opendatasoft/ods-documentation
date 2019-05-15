@@ -3,7 +3,7 @@ Enigma harvester
 
 Retrieve datasets from `Enigma <https://public.enigma.com/>`_
 
-This harvester is not available by default. If you need to use it, please contact the OpenDataSoft support team.
+This harvester is not available by default. If you need to use it, please contact the Opendatasoft support team.
 
 Parameters
 ----------

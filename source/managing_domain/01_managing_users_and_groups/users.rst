@@ -5,6 +5,8 @@ Now that you've set up your :doc:`portal's security policy </configuring_domain/
 users. Unless your portal is closed to anonymous users, this new status is not changing anything for them. They can
 still see the same data and a subject to the same quotas as before.
 
+.. image:: images/users_interface.png
+
 Permissions
 -----------
 
@@ -12,28 +14,10 @@ What is changing is that you can now give them permissions extending what they c
 users' index page or directly on the single user management page, both accessible through the
 **Users & groups / Users** section in your backoffice.
 
-.. ifconfig:: language == 'en'
-
-    .. image:: images/users__index--en.png
-        :alt: The list of your portal's users
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/users__index--fr.png
-        :alt: The list of your portal's users
-
 Permissions each affect an independent part of your portal so that by looking at a user's permissions list you know
 exactly what he/she can do. Each permission has its own category, symbolized by an icon and a tag color.
 
-
-.. ifconfig:: language == 'en'
-
-    .. image:: images/users__permissions--en.png
-        :alt: All available permissions, each with a category icon and color
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/users__permissions--fr.png
+.. image:: images/users_permissions.png
         :alt: All available permissions, each with a category icon and color
 
 Dataset permissions
@@ -141,12 +125,4 @@ The applied values is then of course capped at the license value.
 Since this is a bit difficult to remember, the interface includes a calculator showing you the license, default and
 group values and dynamically computes the effective quota depending on the specific value you're setting up.
 
-.. ifconfig:: language == 'en'
-
-    .. image:: images/users__quotas--en.png
-        :alt: The override form for a quota
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/users__quotas--fr.png
-        :alt: The override form for a quota
+.. image:: images/users_quotas.png

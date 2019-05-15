@@ -10,7 +10,7 @@ There are 3 different methods to add data to a dataset:
 .. admonition:: Important
    :class: important
 
-   Before sourcing data and particularly files into the platform, check the formats supported by the OpenDataSoft platform (see :doc:`Supported formats</publishing_data/01_creating_a_dataset/supported_formats>`).
+   Before sourcing data and particularly files into the platform, check the formats supported by the Opendatasoft platform (see :doc:`Supported formats</publishing_data/01_creating_a_dataset/supported_formats>`).
 
 
 Uploading a file
@@ -57,20 +57,20 @@ Connecting to a remote server
 2. Click on the **Add a source** button.
 3. In the **Enter a URL** box, write the URL of the remote server where the files are stored.
 
-OpenDataSoft supports the following protocols:
+Opendatasoft supports the following protocols:
 
-* http and https, which link to a single file (e.g. http://example.org/mydata.csv)
-* ftp and  ftps, which link to a single file (e.g. ftp://example.org/my_dir/mydata.csv) or to a directory (e.g. ftp://example.org/my_dir/). Using a directory is often the prefered solution to automate incremental updates between a customer's information system and the platform. All the files in the directory need to have the same format and schema (e.g. CSV files with the same column titles). In case of automation, whenever the dataset is published, new and updated files are fetched from the remote location and processed and thanks to OpenDataSoft's native deduplication strategy, similar records are not processed twice (see :doc:`Special fields documentation</publishing_data/05_processing_data/defining_a_dataset_schema>`).
+* HTTP and HTTPS, which link to a single file (e.g. http://example.org/mydata.csv)
+* FTP and  FTPS, which link to a single file (e.g. ftp://example.org/my_dir/mydata.csv for FTP, ftps://example.org/my_dir/mydata.csv for FTPS) or to a directory (e.g. ftp://example.org/my_dir/ for FTP, ftps://example.org/my_dir/ for FTPS). Using a directory is often the prefered solution to automate incremental updates between a customer's information system and the platform. All the files in the directory need to have the same format and schema (e.g. CSV files with the same column titles). In case of automation, whenever the dataset is published, new and updated files are fetched from the remote location and processed and thanks to Opendatasoft's native deduplication strategy, similar records are not processed twice (see :doc:`Special fields documentation</publishing_data/05_processing_data/defining_a_dataset_schema>`).
 
 .. admonition:: Important
    :class: important
 
-   When synchronizing from a remote FTP location, OpenDataSoft keeps a persistent cache and does not automatically prune files missing from the remote directory. Please contact OpenDataSoft's support if you need some cleanup to be performed.
+   When synchronizing from a remote FTP location, Opendatasoft keeps a persistent cache and does not automatically prune files missing from the remote directory. Please contact Opendatasoft's support if you need some cleanup to be performed.
 
 .. admonition:: Caution
    :class: caution
 
-   We do not support the sftp protocol, which is completely different from the ftps protocol.
+   We do not support the SFTP protocol, which is completely different from the FTPS protocol.
 
 
 Connecting to an API
@@ -80,7 +80,7 @@ Connecting to an API
 2. Click on the **Add a source** button.
 3. In the **Enter a URL** box, write the URL of the API.
 
-OpenDataSoft natively supports the following APIs:
+Opendatasoft natively supports the following APIs:
 
 * :doc:`ArcGIS</publishing_data/04_configuring_a_source/connectors/arcgis>`
 * :doc:`JCDecaux</publishing_data/04_configuring_a_source/connectors/jcdecaux>`
@@ -95,25 +95,7 @@ OpenDataSoft natively supports the following APIs:
 .. admonition:: Note
    :class: note
 
-   OpenDataSoft can also develop and integrate customer specific Web APIs. OpenDataSoft connectivity toolkit makes it possible to develop performant and secured connectors supporting incremental data processing.
-
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/loading_data__options--en.png
-        :alt: Connector options
-        :width: 600px
-        :align: center
-
-        Available options when configuring a connector
-
-.. ifconfig:: language == 'fr'
-
-    .. figure:: images/loading_data__options--en.png
-        :alt: Options du connecteur
-        :width: 600px
-        :align: center
-
-        Options disponibles pour la configuration d'un connecteur
+   Opendatasoft can also develop and integrate customer specific Web APIs. Opendatasoft connectivity toolkit makes it possible to develop performant and secured connectors supporting incremental data processing.
 
 
 Pasting data

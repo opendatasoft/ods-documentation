@@ -4,10 +4,10 @@ Customizing theme and portal icon
 .. important::
    The theme customization is not available on freemium domains (created through the
    `Try it for free <https://www.opendatasoft.com/discover-opendatasoft-demo/>`_ page on
-   `OpenDataSoft's website <https://www.opendatasoft.com>`_).
+   `Opendatasoft's website <https://www.opendatasoft.com>`_).
    If your domain is a freemium domain and would like to get this theme feature, `email us! <sales@opendatasoft.com>`_
 
-OpenDataSoft's theme management interface can be found in the domain back-office. In order to access it, you'll have to
+Opendatasoft's theme management interface can be found in the domain back-office. In order to access it, you'll have to
 click the ``Look & feel`` section in the navigation bar and then on the ``theme`` link.
 
 .. admonition:: Note
@@ -15,13 +15,7 @@ click the ``Look & feel`` section in the navigation bar and then on the ``theme`
 
    In order to access the theme page, you'll need to be able to edit domain properties. See :doc:`Managing the Security of your Domain </managing_domain/01_managing_users_and_groups/users>` for more details about permissions.
 
-.. ifconfig:: language == 'en'
-
-   .. image:: images/theme__interface--en.png
-
-.. ifconfig:: language == 'fr'
-
-   .. image:: images/theme__interface--fr.png
+.. image:: images/theme_interface.png
 
 Using the various forms available in this page, you'll be able to customize every aspect of your portal, from basic
 colors to making major changes in its layout.
@@ -49,13 +43,7 @@ new window containing your portal with the current version of the theme applied 
 
       You can preview the latest version of the theme at any moment and on any given page on the portal's front-office by adding the ``stage_theme=true`` parameter to the URL.
 
-.. ifconfig:: language == 'en'
-
-   .. image:: images/theme__versioning--en.png
-
-.. ifconfig:: language == 'fr'
-
-   .. image:: images/theme__versioning--fr.png
+.. image:: images/theme_versioning.png
 
 The version selector will tell you explicitly if you're working on the latest version or rather viewing a previous one,
 as well as which version is live.
@@ -72,13 +60,7 @@ The portal layout relies on a 12-column grid system largely inherited from the
 `Bootstrap CSS framework <http://getbootstrap.com/css/#grid>`_ and as such has a few internal variables used throughout
 its CSS. This tab allows you to set the value of some of these variables.
 
-.. ifconfig:: language == 'en'
-
-   .. image:: images/theme__layout-options--en.png
-
-.. ifconfig:: language == 'fr'
-
-   .. image:: images/theme__layout-options--fr.png
+.. image:: images/theme_layout-options.png
 
 The variables that can currently be overridden are the *gutter width* and the *responsive breakpoints*.
 
@@ -99,17 +81,11 @@ In order to reset any of the variable to its default value, just click on the cl
 Colors
 ~~~~~~
 
-As with layout options, the OpenDataSoft platform relies on a handful of color variables for the style of the portal
+As with layout options, the Opendatasoft platform relies on a handful of color variables for the style of the portal
 elements. You can use the color inputs on this tab to set some of theme. This way with just a few clicks you can brand
 your portal to your colors.
 
-.. ifconfig:: language == 'en'
-
-   .. image:: images/theme__colors--en.png
-
-.. ifconfig:: language == 'fr'
-
-   .. image:: images/theme__colors--fr.png
+.. image:: images/theme_colors.png
 
 .. admonition:: Note
    :class: note
@@ -122,16 +98,10 @@ Stylesheet
 ~~~~~~~~~~
 
 If changing colors is not enough and you'd like make deeper changes, you'll have to write your own CSS. Luckily this tab
-enables you to input your own style rules. These will be applied on top of OpenDataSoft's default rules and have
+enables you to input your own style rules. These will be applied on top of Opendatasoft's default rules and have
 precedence over them.
 
-.. ifconfig:: language == 'en'
-
-   .. image:: images/theme__stylesheet--en.png
-
-.. ifconfig:: language == 'fr'
-
-   .. image:: images/theme__stylesheet--fr.png
+.. image:: images/theme_stylesheet.png
 
 If your customization uses specific images and fonts, you can upload them to the platform using the
 :doc:`assets management page </customizing_look_and_feel/03_adding_assets/assets>`. You'll then be able to copy the assets URLs and paste them in your CSS code.
@@ -141,7 +111,7 @@ If your customization uses specific images and fonts, you can upload them to the
     It won't have any side-effects (limited to this single class name) and is guaranteed to work (since the hierarchy
     tree is mostly flat).
 
-    This is possible because all of OpenDataSoft's CSS code is written following the
+    This is possible because all of Opendatasoft's CSS code is written following the
     `BEM methodology <http://getbem.com/introduction/>`_ and prefixed with `ods-` so that they won't conflict with your
     own styles and can easily be overridden. You'll find a great introduction to this methodology on the ever-useful
     `CSS Tricks website <https://css-tricks.com/bem-101/>`_.
@@ -156,13 +126,7 @@ Header and footer
 While both header and footer can already be branded using the domain's customization section and color selection panel,
 organizations usually want to further customize the layout and content of these areas.
 
-.. ifconfig:: language == 'en'
-
-   .. image:: images/theme__header--en.png
-
-.. ifconfig:: language == 'fr'
-
-   .. image:: images/theme__header--fr.png
+.. image:: images/theme_header.png
 
 Both header and footer are wrapped within independent AngularJS applications, which means you can use `ng-if`,
 `ng-class`, `ng-show`, `ng-hide` and all of Angular's standard directives to make the areas more dynamic. One common
@@ -193,13 +157,7 @@ Here are a few examples of catalog cards:
 We provide handy directives to easily retrieve and include any information relative to a dataset. These directives also
 come with a standard style that you can override using the *Stylesheet* tab.
 
-.. ifconfig:: language == 'en'
-
-   .. image:: images/theme__catalog-card--en.png
-
-.. ifconfig:: language == 'fr'
-
-   .. image:: images/theme__catalog-card--fr.png
+.. image:: images/theme_catalog-card.png
 
 The directives are:
 
@@ -263,7 +221,7 @@ nesting.
 For all these reasons, we've created an API enabling users with the theme API key to locally write their style rules
 using all the tools they want, and to just push the resulting CSS code to the platform. We've packaged a client to this
 API along with common tools (less preprocessor and autoprefixer) in the
-`OpenDataSoft Portal Development Kit <https://github.com/opendatasoft/ods-portal-devkit>`_.
+`Opendatasoft Portal Development Kit <https://github.com/opendatasoft/ods-portal-devkit>`_.
 
 This ODS Portal DevKit is an open source project distributed for free on Github, feel free to download it and taylor it
 to your development workflow.
@@ -274,13 +232,7 @@ Theme API key
 You can find the theme API key on the portal theme customization page. Just expand the *API key for offline development*
 section and copy the key.
 
-.. ifconfig:: language == 'en'
-
-   .. image:: images/theme__offline-dev--en.png
-
-.. ifconfig:: language == 'fr'
-
-   .. image:: images/theme__offline-dev--fr.png
+.. image:: images/theme_offline-dev.png
 
 .. warning::
     By generating a new key, you'll also be revoking previous ones. As a result, developers using an old key won't be

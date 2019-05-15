@@ -1,23 +1,24 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, OpenDataSoft
+# Copyright (C) 2019, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# benrict <benoit.richter@opendatasoft.com>, 2018
 # Hugo Bost <hugo.bost@opendatasoft.com>, 2018
 # Trad_FR2 <datawords.translator.fr2@gmail.com>, 2018
 # Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2018
-# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2018
+# benrict <benoit.richter@opendatasoft.com>, 2019
+# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2019
+# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 12:23+0100\n"
+"POT-Creation-Date: 2019-05-07 13:20+0200\n"
 "PO-Revision-Date: 2018-06-27 09:13+0000\n"
-"Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2018\n"
+"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,21 +36,21 @@ msgstr "Important"
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:7
 msgid ""
-"This processor is not available by default. Please contact OpenDataSoft "
+"This processor is not available by default. Please contact Opendatasoft "
 "support team if you want this processor to be activated in your domain."
 msgstr ""
 "Ce processeur n'est pas disponible par défaut. Veuillez contacter l'équipe "
-"support OpenDataSoft si vous souhaitez l'activer dans votre domaine."
+"support Opendatasoft si vous souhaitez l'activer dans votre domaine."
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:9
 msgid ""
-"This processor extracts an arbitrary bit range from an hexadecimal content "
-"and converts it into one of the following data types: integer, unsigned "
-"integer and float."
+"This processor extracts an arbitrary bit range from an hexadecimal or binary"
+" content, and converts it into one of the following data types: integer, "
+"unsigned integer and float."
 msgstr ""
 "Ce processeur extrait une plage de bits arbitraire depuis un contenu "
-"hexadécimal et la convertit dans l'un des types de données suivants : "
-"entier, entier non signé et non entier."
+"hexadécimal ou binaire et la convertit dans l'un des types de données "
+"suivants : entier, entier non signé et non entier."
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:11
 msgid ""
@@ -85,7 +86,7 @@ msgid "Mandatory"
 msgstr "Obligatoire"
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:24
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:48
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:52
 msgid "Example"
 msgstr "Exemple"
 
@@ -94,14 +95,14 @@ msgid "Field"
 msgstr "Champ"
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:26
-msgid "Field containing the hexadecimal content"
-msgstr "Champ contenant le contenu hexadécimal"
+msgid "Field containing the hexadecimal or binary content"
+msgstr "Champ avec le contenu hexadécimal ou binaire"
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:27
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:31
 #: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:35
 #: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:39
 #: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:43
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:47
 msgid "yes"
 msgstr "oui"
 
@@ -110,10 +111,30 @@ msgid "``column_a``"
 msgstr "``column_a``"
 
 #: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:29
+msgid "Input type"
+msgstr "Type d'entrée"
+
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:30
+msgid ""
+"Type of the content: hexadecimal or binary. If this parameter is not set, "
+"the content is considered hexadecimal by default."
+msgstr ""
+"Type du contenu : hexadécimal ou binaire. Si ce paramètre n'est pas défini, "
+"le contenu est considéré comme hexadécimal par défaut."
+
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:31
+msgid "no"
+msgstr "non"
+
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:32
+msgid "Either hexadecimal or binary"
+msgstr "Hexadécimal ou binaire"
+
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:33
 msgid "Start bit offset"
 msgstr "Décalage du bit de départ"
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:30
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:34
 msgid ""
 "Starting offset corresponding to the position of the first bit. It starts at"
 " 0."
@@ -121,15 +142,15 @@ msgstr ""
 "Décalage de départ correspondant à la position du premier bit. Il commence à"
 " 0."
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:32
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:36
 msgid "0, 8, 16, ..."
 msgstr "0, 8, 16, ..."
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:33
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:37
 msgid "Stop bit offset"
 msgstr "Décalage du bit d'arrêt"
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:34
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:38
 msgid ""
 "Ending offset corresponding to the position of the last bit. Must be greater"
 " than the starting offset."
@@ -137,27 +158,27 @@ msgstr ""
 "Décalage d'arrêt correspondant à la position du dernier bit. Il doit être "
 "supérieur au décalage de départ."
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:36
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:40
 msgid "7, 15, 31, ..."
 msgstr "7, 15, 31, ..."
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:37
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:41
 msgid "Convert to"
 msgstr "Convertir en"
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:38
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:42
 msgid "Wanted format to output and convert the data"
 msgstr "Format dans lequel les données doivent être renvoyées et converties"
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:40
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:44
 msgid "Either int (integer), uint (unsigned integer) or float"
 msgstr "Soit int (entier), unint (entier non signé) ou non entier (float)"
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:41
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:45
 msgid "Output field"
 msgstr "Champ de sortie"
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:42
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:46
 msgid ""
 "Field where the extracted bit range will be displayed. It can be an existing"
 " field chosen from the list, or a new field created for that purpose (in "
@@ -169,15 +190,15 @@ msgstr ""
 "(dans ce cas, choisissez **Saisir du texte** dans la liste et écrivez le nom"
 " du nouveau champ dans la zone de texte en dessous)."
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:44
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:48
 msgid "``result``"
 msgstr "``result``"
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:50
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:54
 msgid "A temperature sensor sends an hexadecimal value."
 msgstr "Une sonde de température envoie une valeur hexadécimale."
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:56
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:60
 msgid ""
 "This hexadecimal value (2 bytes) contains: - a decimal value encoded on the "
 "1st byte - the sensor identifier encoded on the first 4 bits of the 2nd byte"
@@ -189,15 +210,15 @@ msgstr ""
 "premiers bits du 2e octet - un ensemble d'indicateurs représentant la "
 "configuration de la sonde, encodés sur les 4 bits restants"
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:66
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:70
 msgid "the first byte '00010110' is the temperature in degrees"
 msgstr "le premier octet '00010110' correspond à la température en degrés"
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:67
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:71
 msgid "the next 4 bits '0100' is the sensor identifier"
 msgstr "les 4 bits suivants '0100' correspondent à l'identifiant de la sonde"
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:68
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:72
 msgid ""
 "the next 4 bits '1001' is the sensor configuration, but we only want the "
 "first bit"
@@ -205,7 +226,7 @@ msgstr ""
 "les 4 bits suivants '1001' correspondent à la configuration de la sonde, "
 "mais nous souhaitons uniquement le premier bit"
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:70
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:74
 msgid ""
 "Therefore, the processing pipeline will contains 3 Extract bit range "
 "processors"
@@ -213,23 +234,23 @@ msgstr ""
 "Par conséquent, le pipeline de traitement comprendra 3 processeurs Extraire "
 "la plage de bits"
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:72
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:76
 msgid ""
-"one Extract bit range from 0 to 7 to convert into signed integer (int) -> "
+"one Extract bit range from 0 to 8 to convert into signed integer (int) -> "
 "int_temperature"
 msgstr ""
-"un processeur Extraire la plage de bits de 0 à 7 pour convertir en entier "
+"un processeur Extraire la plage de bits de 0 à 8 pour convertir en entier "
 "signé (int) -> int_temperature"
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:73
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:77
 msgid ""
-"one Extract bit range from 8 to 11 to convert into unsigned integer (uint) "
+"one Extract bit range from 8 to 12 to convert into unsigned integer (uint) "
 "-> sensor_identifier"
 msgstr ""
-"un processeur Extraire la plage de bits de 8 à 11 pour convertir en entier "
+"un processeur Extraire la plage de bits de 8 à 12 pour convertir en entier "
 "non signé (unint) -> sensor_identifier"
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:74
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:78
 msgid ""
 "one Extract bit range from 12 to 13 to convert into unsigned integer, 0 "
 "meaning \"Not OK\" and 1 meaning \"OK\" (uint) -> status"
@@ -238,18 +259,18 @@ msgstr ""
 "non signé (unint) -> status avec 0 correspondant à \"Not OK\" et 1 "
 "correspondant à \"OK\""
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:76
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:80
 msgid "Extract bit range 1"
 msgstr "Extraire la plage de bits 1"
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:82
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:86
 msgid "Extract bit range 2"
 msgstr "Extraire la plage de bits 2"
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:88
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:92
 msgid "Extract bit range 3"
 msgstr "Extraire la plage de bits 3"
 
-#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:94
+#: ../../source/publishing_data/05_processing_data/processors/extract_bit_range.rst:98
 msgid "Final result:"
 msgstr "Résultat final :"

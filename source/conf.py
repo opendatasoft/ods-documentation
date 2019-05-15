@@ -36,6 +36,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'rst2pdf.pdfbuilder',
     'localizedimage',
+    'elements'
 ]
 
 pdf_documents = [
@@ -61,8 +62,8 @@ now = datetime.datetime.now()
 now = str(now.year)
 
 project = u'OpenDataSoft Documentation'
-copyright = now + u', OpenDataSoft'
-author = u'OpenDataSoft'
+copyright = now + u', Opendatasoft'
+author = u'Opendatasoft'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

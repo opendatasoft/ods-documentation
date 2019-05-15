@@ -32,22 +32,14 @@ Creating a harvester
 
 To get started with harvesters, click on the **harvesters** menu in your backoffice, and then on **Add harvester**. You will be asked to choose the type of the portal you want to harvest, and a name for your harvester.
 
-.. ifconfig:: language == 'en'
-
-    .. image:: images/harvesters_page--en.png
-        :alt: Harvesters screen
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/harvesters_page--fr.png
-        :alt: Ecran des moissonneurs
+.. image:: images/harvesters_interface.png
 
 When you are done, click on **Create harvester** and you will be redirected to the configuration form of the harvester. As it depends on the harvester type, please refer to each harvester page below for detailed instructions.
 
 Some options are available for every harvester type such as:
 
-- **Update on deletion**: if the source datasets are deleted on the harvested portal, delete them on this OpenDataSoft portal too. Otherwise, you may have datasets that are not available on the external service anymore (e.g: if they are deleted from the external service).
-- **Download resources**: download resources instead of attaching them via URL. This options allows you to detach your datasets from the remote portal by permanently copying all required data on the OpenDataSoft platform. Otherwise, your datasets will be linked to the external service and will access remote datasets via their URL for every publishing.
+- **Update on deletion**: if the source datasets are deleted on the harvested portal, delete them on this Opendatasoft portal too. Otherwise, you may have datasets that are not available on the external service anymore (e.g: if they are deleted from the external service).
+- **Download resources**: download resources instead of attaching them via URL. This options allows you to detach your datasets from the remote portal by permanently copying all required data on the Opendatasoft platform. Otherwise, your datasets will be linked to the external service and will access remote datasets via their URL for every publishing.
 - **Restrict visibility**: make the visibility of harvested datasets restricted. Otherwise, they will have the default visibility of your portal.
 - **Default metadata**, **inspire metadata**, **DCAT metadata**: allow you to override some metadata in every harvested dataset. Useful if you want to force the theme or publisher instead of using the one used on the external service.
 
@@ -120,12 +112,4 @@ The periodic run will only trigger if the harvester has been run at least once.
 
 At the end of a scheduled run, all the harvester's already published datasets will be republished, but unpublished datasets or new datasets will not be automatically published.
 
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/harvesters_scheduling--en.png
-        :alt: Harvester scheduling
-
-.. ifconfig:: language == 'fr'
-
-    .. figure:: images/harvesters_scheduling--fr.png
-        :alt: Planification d'un moissoneur
+.. image:: images/harvesters_scheduling.png

@@ -13,9 +13,6 @@ anonymous users cannot spam the administrators.
    * * Parameter
      * Type
      * Description
-   * * ``page-id`` **required**
-     * string
-     * The slug of the current page so that administrators know where the request came from.
    * * ``form-disabled``
      * boolean (default: false)
      * Specify whether to disable (that is prevent data input and submission) the contact form or not.
@@ -51,8 +48,7 @@ Full example
 
 .. code-block:: html
 
-   <ods-page-contact-form page-id="'my-contact-page'"
-                          name-label="Your name"
+   <ods-page-contact-form name-label="Your name"
                           email-label="Email address"
                           message-label="Your message"
                           additional-fields="[

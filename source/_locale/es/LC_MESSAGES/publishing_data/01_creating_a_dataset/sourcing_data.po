@@ -1,19 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, OpenDataSoft
+# Copyright (C) 2019, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018
+# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2019
+# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 12:23+0100\n"
+"POT-Creation-Date: 2019-05-07 13:20+0200\n"
 "PO-Revision-Date: 2018-06-27 09:13+0000\n"
-"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018\n"
+"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -57,11 +58,11 @@ msgstr "Importante"
 #: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:13
 msgid ""
 "Before sourcing data and particularly files into the platform, check the "
-"formats supported by the OpenDataSoft platform (see :doc:`Supported "
+"formats supported by the Opendatasoft platform (see :doc:`Supported "
 "formats</publishing_data/01_creating_a_dataset/supported_formats>`)."
 msgstr ""
 "Antes de añadir datos y, en concreto, archivos a la plataforma, compruebe "
-"los formatos admitidos por la plataforma OpenDataSoft (consulte "
+"los formatos admitidos por la plataforma Opendatasoft (consulte "
 ":doc:`Formatos "
 "permitidos</publishing_data/01_creating_a_dataset/supported_formats>`)."
 
@@ -80,7 +81,7 @@ msgstr ""
 #: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:21
 #: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:56
 #: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:79
-#: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:124
+#: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:106
 msgid "In Catalog > Datasets, click on the **New dataset** button."
 msgstr ""
 "En Catálogo > Conjuntos de datos, haga clic en el botón **Conjunto de datos "
@@ -89,7 +90,7 @@ msgstr ""
 #: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:22
 #: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:57
 #: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:80
-#: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:125
+#: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:107
 msgid "Click on the **Add a source** button."
 msgstr "Haga clic en el botón **Añadir un origen**."
 
@@ -182,62 +183,65 @@ msgstr ""
 " servidor remoto donde están almacenados los archivos."
 
 #: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:60
-msgid "OpenDataSoft supports the following protocols:"
-msgstr "OpenDataSoft admite los protocolos siguientes:"
+msgid "Opendatasoft supports the following protocols:"
+msgstr "Opendatasoft admite los protocolos siguientes:"
 
 #: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:62
 msgid ""
-"http and https, which link to a single file (e.g. "
+"HTTP and HTTPS, which link to a single file (e.g. "
 "http://example.org/mydata.csv)"
 msgstr ""
-"http y https, que establecen un vínculo con un archivo individual (p. ej. "
+"HTTP y HTTPS, que establecen un vínculo con un archivo individual (p. ej. "
 "http://example.org/mydata.csv);"
 
 #: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:63
 msgid ""
-"ftp and  ftps, which link to a single file (e.g. "
-"ftp://example.org/my_dir/mydata.csv) or to a directory (e.g. "
-"ftp://example.org/my_dir/). Using a directory is often the prefered solution"
-" to automate incremental updates between a customer's information system and"
-" the platform. All the files in the directory need to have the same format "
-"and schema (e.g. CSV files with the same column titles). In case of "
-"automation, whenever the dataset is published, new and updated files are "
-"fetched from the remote location and processed and thanks to OpenDataSoft's "
-"native deduplication strategy, similar records are not processed twice (see "
-":doc:`Special fields "
+"FTP and  FTPS, which link to a single file (e.g. "
+"ftp://example.org/my_dir/mydata.csv for FTP, "
+"ftps://example.org/my_dir/mydata.csv for FTPS) or to a directory (e.g. "
+"ftp://example.org/my_dir/ for FTP, ftps://example.org/my_dir/ for FTPS). "
+"Using a directory is often the prefered solution to automate incremental "
+"updates between a customer's information system and the platform. All the "
+"files in the directory need to have the same format and schema (e.g. CSV "
+"files with the same column titles). In case of automation, whenever the "
+"dataset is published, new and updated files are fetched from the remote "
+"location and processed and thanks to Opendatasoft's native deduplication "
+"strategy, similar records are not processed twice (see :doc:`Special fields "
 "documentation</publishing_data/05_processing_data/defining_a_dataset_schema>`)."
 msgstr ""
-"ftp y ftps, que establecen un vínculo con un archivo individual (p. ej. "
-"ftp://example.org/my_dir/mydata.csv) o un directorio (p. ej. "
-"ftp://example.org/my_dir/). Utilizar un directorio a menudo es la solución "
-"preferida para automatizar las actualizaciones incrementales entre el "
-"sistema de información de un usuario y la plataforma. Todos los archivos del"
-" directorio deben tener el mismo formato y esquema (p. ej., archivos CSV con"
-" los mismos títulos de columna). En caso de automatización, cada vez que se "
-"publica el conjunto de datos, se capturan y se procesan los archivos nuevos "
-"y actualizados de la ubicación remota y, gracias a la estrategia de "
-"desduplicación nativa de OpenDataSoft, los registros semejantes no se "
-"duplican 2 veces (consulte la :doc:`documentación acerca de los campos "
+"FTP y FTPS, que establecen un vínculo con un archivo individual (p. ej. "
+"ftp://example.org/my_dir/mydata.csv para FTP, "
+"ftps://example.org/my_dir/mydata.csv para FTPS) o un directorio (p. ej. "
+"ftp://example.org/my_dir/ para FTP, ftps://example.org/my_dir/ para FTPS). "
+"Utilizar un directorio a menudo es la solución preferida para automatizar "
+"las actualizaciones incrementales entre el sistema de información de un "
+"usuario y la plataforma. Todos los archivos del directorio deben tener el "
+"mismo formato y esquema (p. ej., archivos CSV con los mismos títulos de "
+"columna). En caso de automatización, cada vez que se publica el conjunto de "
+"datos, se capturan y se procesan los archivos nuevos y actualizados de la "
+"ubicación remota y, gracias a la estrategia de desduplicación nativa de "
+"Opendatasoft, los registros semejantes no se procesan 2 veces (consulte la "
+":doc:`documentación acerca de los campos "
 "especiales</publishing_data/05_processing_data/defining_a_dataset_schema>`)."
 
 #: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:68
 msgid ""
-"When synchronizing from a remote FTP location, OpenDataSoft keeps a "
+"When synchronizing from a remote FTP location, Opendatasoft keeps a "
 "persistent cache and does not automatically prune files missing from the "
-"remote directory. Please contact OpenDataSoft's support if you need some "
+"remote directory. Please contact Opendatasoft's support if you need some "
 "cleanup to be performed."
 msgstr ""
 "Al llevar a cabo la sincronización desde una ubicación FTP remota, "
-"OpenDataSoft conserva una caché persistente y no elimina automáticamente los"
+"Opendatasoft conserva una caché persistente y no elimina automáticamente los"
 " archivos que faltan en el directorio remoto. Póngase en contacto con el "
-"equipo de soporte de OpenDataSoft si necesita realizar alguna limpieza."
+"equipo de soporte de Opendatasoft si necesita realizar alguna limpieza."
 
 #: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:73
 msgid ""
-"We do not support the sftp protocol, which is completely different from the "
-"ftps protocol."
+"We do not support the SFTP protocol, which is completely different from the "
+"FTPS protocol."
 msgstr ""
-"No se admite el protocolo sftp, totalmente distinto del protocolo ftps."
+"No se admite el protocolo SFTP, totalmente distinto del protocolo FTPS."
 
 #: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:77
 msgid "Connecting to an API"
@@ -250,8 +254,8 @@ msgstr ""
 "la API."
 
 #: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:83
-msgid "OpenDataSoft natively supports the following APIs:"
-msgstr "OpenDataSoft proporciona soporte nativo para las API siguientes:"
+msgid "Opendatasoft natively supports the following APIs:"
+msgstr "Opendatasoft proporciona soporte nativo para las API siguientes:"
 
 #: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:85
 msgid ""
@@ -285,24 +289,20 @@ msgstr ""
 
 #: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:98
 msgid ""
-"OpenDataSoft can also develop and integrate customer specific Web APIs. "
-"OpenDataSoft connectivity toolkit makes it possible to develop performant "
+"Opendatasoft can also develop and integrate customer specific Web APIs. "
+"Opendatasoft connectivity toolkit makes it possible to develop performant "
 "and secured connectors supporting incremental data processing."
 msgstr ""
-"OpenDataSoft también puede desarrollar e integrar interfaces API Web "
-"específicas. El kit de herramientas de conectividad de OpenDataSoft permite "
+"Opendatasoft también puede desarrollar e integrar interfaces API Web "
+"específicas. El kit de herramientas de conectividad de Opendatasoft permite "
 "desarrollar conectores eficaces y seguros que admiten procesamientos de "
 "datos incrementales."
 
-#: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:107
-msgid "Available options when configuring a connector"
-msgstr "Opciones disponibles al configurar un conector"
-
-#: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:120
+#: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:102
 msgid "Pasting data"
 msgstr "Pegar datos"
 
-#: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:122
+#: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:104
 msgid ""
 "This method consists in pasting data in a CSV format. This method is most "
 "useful for quick tests."
@@ -310,15 +310,15 @@ msgstr ""
 "Este método consiste en pegar datos en formato CSV. Este método resulta "
 "especialmente útil para las pruebas rápidas."
 
-#: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:126
+#: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:108
 msgid "In the **Paste data** area, write or paste data in a CSV format."
 msgstr "En el área **Pegar datos**, escriba o pegue datos en formato CSV."
 
-#: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:127
+#: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:109
 msgid "Click on the **Send data** button."
 msgstr "Haga clic en el botón **Enviar datos**."
 
-#: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:130
+#: ../../source/publishing_data/01_creating_a_dataset/sourcing_data.rst:112
 msgid ""
 "Once a new dataset is created, the platform automatically displays an "
 "edition interface for that dataset. It is accessible for any user with the "

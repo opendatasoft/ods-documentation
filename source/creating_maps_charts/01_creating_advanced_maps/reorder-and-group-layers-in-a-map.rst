@@ -18,7 +18,7 @@ The interface of **Order and Groups** is composed of:
 
 * **Group** button, to group layers
 * **Split** button, to split groups
-* a switch button, whether you want to be able to see several layers on your map (**Multilayer**) or just one at a time (**Monolayer**)
+* a switch button, to see your map in **Multilayer** mode (several layers can be displayed at the same time) or in **Monolayer** mode (only one layer can be displayed on the map: choosing a layer automatically excludes the others)
 * the complete list of the layers of your map, with the following action buttons:
 
   * a checkbox to select a layer, useful to group layers or split groups

@@ -1,7 +1,7 @@
 Adding processors to a dataset
 ==============================
 
-Processors are tools that can be used in order to modify, improve or enrich the data of a dataset. In the OpenDataSoft platform, processors are classified in 4 different categories:
+Processors are tools that can be used in order to modify, improve or enrich the data of a dataset. In the Opendatasoft platform, processors are classified in 4 different categories:
 
 * Processors for geographical mapping
 * Processors for dates handling
@@ -279,7 +279,7 @@ Generic processors
     * Write complex expression patterns using field values
     * Default
   * * :doc:`Extract bit range<processors/extract_bit_range>`
-    * Extract an arbitrary bit range from an hexadecimal content
+    * Extract an arbitrary bit range from an hexadecimal or binary content
     * On demand
   * * :doc:`Extract from JSON<processors/extract_from_json>`
     * Extract values from a field containing a JSON object

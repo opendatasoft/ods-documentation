@@ -12,29 +12,12 @@ signup.
 You'll find access requests in your portal's backoffice, within the **Users & groups** section. If you have pending
 access requests, their number will show up in a notification right within the menu.
 
-
-.. ifconfig:: language == 'en'
-
-    .. image:: images/access_requests__menu--en.png
-        :alt: The notification shows up in the backoffice menu
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/access_requests__menu--fr.png
-        :alt: The notification shows up in the backoffice menu
+.. image:: images/access_requests_notif.png
 
 For each pending access request, you'll find the user's details (username, first name and last name) alongside their
 request message (if any) and the two *approve* and *reject* buttons.
 
-.. ifconfig:: language == 'en'
-
-    .. image:: images/access_requests__index--en.png
-        :alt: The access requests list
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/access_requests__index--fr.png
-        :alt: The access requests list
+.. image:: images/access_requests_interface.png
 
 Rejecting an access request will send an email to its author saying so. Approving it on the other hand will send a
 notification to the user and add him/her to the list of your portal's members. He/she will automatically get the default

@@ -1,0 +1,166 @@
+.wy-nav-content-wrap
+  position: static
+  padding-bottom: $spacing-500
+  display: none
+
+.wy-nav-content
+  padding: 0
+  padding-top: $header-height
+  height: 100%
+  max-width: 100%
+  overflow: visible
+
+.section
+  margin-top: $spacing-400 !important
+
+.section h1
+  text-align: left !important
+  margin: 0 !important
+
+footer
+  margin-top: 0
+
+
+.wrapper-expand-collapse
+  display: flex
+  display: -ms-flexbox
+  justify-content: space-between
+  -ms-flex-pack: justify
+  align-items: center
+  -ms-flex-align: center
+  margin-bottom: $spacing-400
+.expand-collapse-items
+  margin: 0
+  display: none
+  cursor: pointer
+.wrapper-expand-collapse p.expand-all-faq,
+.wrapper-expand-collapse p.expand-all-glossary
+  color: $blue-light
+  @extend %text-200
+.wrapper-expand-collapse p.collapse-all-faq,
+.wrapper-expand-collapse p.collapse-all-glossary
+  color: $blue-light
+  @extend %text-200
+.expand-all-faq::after,
+.expand-all-glossary::after,
+.collapse-all-faq::after,
+.collapse-all-glossary::after
+  font-family: FontAwesome
+  color: $blue-light
+  margin-left: $spacing-50
+.expand-all-faq::after,
+.expand-all-glossary::after
+  content: "\f107"
+.collapse-all-faq::after,
+.collapse-all-glossary::after
+  content: "\f106"
+.wrapper-expand-collapse-items-active
+  display: block
+.section
+  width: 800px
+  margin: 0 auto
+  p, li, table
+    font-size: 18px
+  h1, h2
+    text-align: center
+  h1
+    margin: 0 0 30px 0
+  h2
+    margin: 70px 0 40px 0
+@media screen and (max-width: $tablet-width)
+  .section
+    width: auto !important
+//- Content visible (Question FAQ / Category Glossary)
+.content-visible
+  border-radius: 4px
+  cursor: pointer
+  margin: $spacing-300 0 $spacing-100 0 !important
+  padding: 0
+  @extend %heading-100
+  color: $light-700
+  font-weight: normal !important
+
+  strong
+    font-weight: normal
+
+  &:hover
+    color: $blue-light !important
+  li
+    margin: 0!important
+    list-style: none!important
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    p
+      color: transparentize($blue-light, 0.4)
+
+//- IE 10 / 11
+@media all and (-ms-high-contrast: active), (-ms-high-contrast:none)
+    .content-visible /* IE10 */
+      li
+        display: block
+#glossary
+  .content-visible
+    font-weight: normal
+.content-visible-active
+  color: $blue-light
+  li
+    p
+      color: $blue-light!important
+
+
+//- Content hidden (Response FAQ / Tables Glossary)
+.content-hidden,
+.content-hidden li
+  font-size: 1rem !important
+  line-height: 1.4 !important
+.content-hidden
+  margin-bottom: 0!important
+  padding-left: $spacing-100 + 6px
+  display: none
+//- FAQ
+#frequently-asked-questions-faq
+  .carret-up, .carret-down
+    li::before
+      font-family: FontAwesome
+      @extend %text-200
+      color: $light-500
+      margin-right: $spacing-100
+  .carret-up
+    li::before
+      content: "\f106"
+  .carret-down
+    li::before
+      content: "\f107"
+//- Glossary
+#glossary
+  .carret-up::before, .carret-down::before
+    font-family: FontAwesome
+    @extend %text-200
+    color: $light-500
+    margin-right: $spacing-100
+  .carret-up::before
+    content: "\f106"
+  .carret-down::before
+    content: "\f107"
+.ods-tooltip
+  position: absolute
+  height: auto
+  width: auto
+  border-radius: 4px
+  background-color: $blue-light
+  opacity: 0
+  p
+    margin: auto 10px
+    color: white
+    font-size: 14px
+    font-weight: normal
+  p::after
+      font-family: FontAwesome
+      content: "\f0ea"
+      margin-left: 10px
+.ods-tooltip-active
+  opacity: 1
+
+.js-focus-visible :focus:not(.focus-visible)
+  outline: 0
