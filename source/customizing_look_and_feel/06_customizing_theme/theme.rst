@@ -38,10 +38,10 @@ new window containing your portal with the current version of the theme applied 
 
    Only users able to edit the domain properties can preview the latest theme version. If you were to share the URL of the preview with other users, they won't see any difference in the live version.
 
-   .. admonition:: Note
-      :class: note
+.. admonition:: Note
+   :class: note
 
-      You can preview the latest version of the theme at any moment and on any given page on the portal's front-office by adding the ``stage_theme=true`` parameter to the URL.
+   You can preview the latest version of the theme at any moment and on any given page on the portal's front-office by adding the ``stage_theme=true`` parameter to the URL.
 
 .. image:: images/theme_versioning.png
 
@@ -91,6 +91,19 @@ your portal to your colors.
    :class: note
 
    These variables will override the default theme's colors. The custom style rules you can write in the stylesheet tab will however have precedence over these colors. Which means that your color choices may not be visible if you wrote more specific CSS rules.
+
+.. admonition:: Note
+   :class: note
+
+   Theme colors can be used in the domain stylesheet, as CSS variables:
+
+   .. code-block:: css
+
+      var(--variable-name)
+
+   The available variables are: `text`, `links`, `titles`, `page-background`, `highlight`, `boxes-background`, `boxes-border`, `section-titles`, `section-titles-background`, `header-background`, `header-links`, `footer-background` and `footer-links`.
+
+   These CSS variables are compatible with all browsers, because the Opendatasoft platform automatically replaces all variables with their real theme color values.
 
 .. _theme__stylesheet:
 
