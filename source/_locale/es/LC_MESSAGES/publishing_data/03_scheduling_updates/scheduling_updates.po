@@ -1,19 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, OpenDataSoft
+# Copyright (C) 2019, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018
+# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2019
+# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-20 16:01+0100\n"
+"POT-Creation-Date: 2019-05-07 13:20+0200\n"
 "PO-Revision-Date: 2018-06-27 09:10+0000\n"
-"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018\n"
+"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,12 +28,12 @@ msgstr "Mantener los datos actualizados"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:4
 msgid ""
-"The OpenDataSoft platform makes it possible, in the very same data catalog, "
+"The Opendatasoft platform makes it possible, in the very same data catalog, "
 "to handle completely static datasets (which need to be published only once) "
 "and live datasets (which need to be regularly updated). Two different "
 "mechanisms are made available to handle datasets refresh."
 msgstr ""
-"La plataforma OpenDataSoft permite, dentro del mismo catálogo de datos, "
+"La plataforma Opendatasoft permite, dentro del mismo catálogo de datos, "
 "manejar conjuntos de datos totalmente estáticos (que necesitan publicarse "
 "una sola vez) y conjuntos de datos dinámicos (que precisan actualizaciones "
 "periódicas). Para llevar a cabo la renovación de los conjuntos se datos, "
@@ -51,12 +52,12 @@ msgstr ""
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:8
 msgid ""
-"The second one consists in pushing data on the OpenDataSoft platform using a"
+"The second one consists in pushing data on the Opendatasoft platform using a"
 " dedicated API end point. This mode is most useful when the data can be sent"
 " directly by the system that produces the data points, such as a computer "
 "program sending event metrics or a set of sensors sending their readings."
 msgstr ""
-"El segundo consiste en insertar datos en la plataforma OpenDataSoft mediante"
+"El segundo consiste en insertar datos en la plataforma Opendatasoft mediante"
 " un extremo de API específico. Este método resulta de especial utilidad "
 "cuando los datos pueden ser enviados directamente por el sistema que produce"
 " los puntos de datos (como un programa informático que envía métricas de "
@@ -68,6 +69,19 @@ msgstr ""
 "Utilizar la planificación para mantener actualizado un conjunto de datos"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:13
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:38
+msgid "Caution"
+msgstr "Precaución"
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:16
+msgid ""
+"The availability of this feature depends on the license of the OpenDataSoft "
+"domain."
+msgstr ""
+"La disponibilidad de esta función depende de la licencia del dominio "
+"OpenDataSoft."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:18
 msgid ""
 "This solution is the easiest to implement, it does not require any "
 "development, only a remote source and some settings in the dataset "
@@ -77,11 +91,11 @@ msgstr ""
 " únicamente un origen remoto y una serie de valores en la configuración del "
 "conjunto de datos."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:16
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:21
 msgid "Specifying a resource"
 msgstr "Especificar un recurso"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:21
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:25
 msgid ""
 "To be able to schedule a dataset, its underlying resource must be a remote "
 "one, specified as a URL (http or ftp work well) and not an uploaded file. To"
@@ -92,15 +106,15 @@ msgstr ""
 "funcionan bien), y no un archivo cargado. Para añadir un recurso de este "
 "tipo, simplemente pegue una dirección URL en la entrada de dirección URL."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:24
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:28
 msgid "Specifying scheduling interval"
 msgstr "Especificar el intervalo de planificación"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:30
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:33
 msgid ""
 "Once a dataset is saved with a remote resource, the scheduling tab is "
 "activated. The minimum interval is the minute, but it is not activated by "
-"default. Please contact OpenDataSoft's support if you need minute level "
+"default. Please contact Opendatasoft's support if you need minute level "
 "scheduling on your domain. You can add as many schedule as you want. For "
 "instance, if it fits your needs, you could decide to schedule a dataset to "
 "be reprocessed every Monday morning and every Wednesday afternoon."
@@ -108,20 +122,28 @@ msgstr ""
 "Una vez que un conjunto de datos se guarda con un recurso remoto, se activa "
 "la ficha Planificación. El intervalo mínimo es el minuto, pero no se activa "
 "de forma predeterminada. Póngase en contacto con el equipo de soporte de "
-"OpenDataSoft si necesita una planificación a nivel de minutos en el dominio."
+"Opendatasoft si necesita una planificación a nivel de minutos en el dominio."
 " Puede añadir tantas planificaciones como desee. Por ejemplo, según sus "
 "necesidades, puede decidir planificar que se vuelva a procesar un conjunto "
 "de datos todos los lunes por la mañana y miércoles por la tarde."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:33
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:36
 msgid "Pushing real time data"
 msgstr "Insertar datos en tiempo real"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:35
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:41
+msgid ""
+"The availability of this feature depends on the license of the Opendatasoft "
+"domain."
+msgstr ""
+"La disponibilidad de esta función depende de la licencia del dominio "
+"Opendatasoft."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:43
 msgid ""
 "For some types of data, it can be useful to push data instead of the more "
 "traditional model of having the data being pulled from a resource by the "
-"platform. To address this need, the OpenDataSoft platform offers a realtime "
+"platform. To address this need, the Opendatasoft platform offers a realtime "
 "push API. It is not to be confused with the ability to schedule a dataset "
 "processing. When scheduling, the dataset will periodically pull the resource"
 " and process the data that is inside of it, whereas with the push API, the "
@@ -130,7 +152,7 @@ msgid ""
 msgstr ""
 "En el caso de algunos tipos de datos, puede ser útil insertar los datos en "
 "lugar de seguir el método tradicional por el cual la plataforma extrae los "
-"datos de un recurso. Para atender esta necesidad, la plataforma OpenDataSoft"
+"datos de un recurso. Para atender esta necesidad, la plataforma Opendatasoft"
 " ofrece una API de inserción en tiempo real. No debe confundirse con la "
 "posibilidad de planificar el procesamiento de un conjunto de datos. Con la "
 "planificación, el conjunto de datos periódicamente extrae el recurso y "
@@ -138,24 +160,11 @@ msgstr ""
 "aplicación alimenta el conjunto de datos a través de la API de inserción y "
 "los registros se procesan uno a uno a medida que se reciben."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:37
-msgid "Note"
-msgstr "Nota"
-
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:40
-msgid ""
-"As this feature is still in beta, it is not activated by default. Please "
-"contact OpenDataSoft's support to try it out."
-msgstr ""
-"Al ser una función todavía en fase beta, no está activada de forma "
-"predeterminada. Póngase en contacto con el equipo de soporte de OpenDataSoft"
-" para probarla."
-
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:43
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:46
 msgid "Configuring the dataset schema"
 msgstr "Configurar el esquema de conjunto de datos"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:48
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:50
 msgid ""
 "To create a realtime dataset, start by navigating to the dataset creation "
 "interface. Here, select \"add a realtime source\"."
@@ -164,7 +173,7 @@ msgstr ""
 "interfaz de creación del conjunto de datos y seleccione \"Añadir un origen "
 "en tiempo real\"."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:53
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:55
 msgid ""
 "You will be prompted to enter some bootstrap data and to optionnally fill in"
 " additional options. The bootstrap data should have all the fields that will"
@@ -177,7 +186,7 @@ msgstr ""
 " se utilizan en el conjunto de datos: su única finalidad es hacer posible la"
 " configuración del conjunto de datos."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:56
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:58
 msgid "Using the push url"
 msgstr "Utilizar la dirección URL de inserción"
 
@@ -274,9 +283,9 @@ msgstr ""
 "mucho mejor establecer el valor ``number_of_copies`` nuevo como el registro "
 "correspondiente al valor ``isbn`` del libro."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:115
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:114
 msgid ""
-"In order to set up such a system with the OpenDataSoft platform, the fields "
+"In order to set up such a system with the Opendatasoft platform, the fields "
 "that will be used as a unique key must be marked as so. In our example, the "
 "unique key would be isbn, because the rest of the data is linked to "
 "individual books, and these books are identified by the ISBN. This can be "
@@ -287,7 +296,7 @@ msgid ""
 "record. In our library case, if your dataset has ``isbn`` as the unique key,"
 " and contains these two records."
 msgstr ""
-"Para configurar un sistema de este tipo con la plataforma OpenDataSoft, los "
+"Para configurar un sistema de este tipo con la plataforma Opendatasoft, los "
 "campos que se usarán a modo de clave exclusiva deben marcarse como tal. En "
 "nuestro ejemplo, la clave exclusiva sería isbn, dado que los demás datos "
 "están vinculados con los libros individuales y estos se identifican por el "
@@ -299,7 +308,7 @@ msgstr ""
 "ejemplo de biblioteca, si el conjunto de datos tiene ``isbn`` como clave "
 "exclusiva y contiene estos 2 registros."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:129
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:128
 msgid ""
 "If somebody borrows a copy of Zen and the Art of Motorcycle Maintenance, and"
 " you push the following record, you will still have two records, the first "
@@ -309,11 +318,11 @@ msgstr ""
 "Maintenance* y se inserta el registro siguiente, seguirá habiendo 2 "
 "registros, el primero actualizado con el valor nuevo."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:143
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:142
 msgid "Delete data"
 msgstr "Suprimir datos"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:145
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:144
 msgid ""
 "There are two entrypoints that allow for deleting a pushed records. One that"
 " uses the records values and one that uses the record ID."
@@ -321,11 +330,11 @@ msgstr ""
 "Hay 2 puntos de entrada que permiten suprimir los registros insertados: uno "
 "utiliza los valores de registro; y otro, el ID de registro."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:148
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:147
 msgid "Using the record values"
 msgstr "Usar los valores de registro"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:150
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:149
 msgid ""
 "To delete a record knowing the record fields values, POST the record as if "
 "you were adding it for the first time, but replace ``/push/`` with "
@@ -345,11 +354,11 @@ msgstr ""
 "continuación se muestra un ejemplo mínimo de supresión del registro "
 "insertado anteriormente."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:157
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:156
 msgid "Using the record ID"
 msgstr "Usar el ID de registro"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:159
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:158
 msgid ""
 "If you know the record ID of the record you want to delete, simply make a "
 "GET request to the URL you get by replacing ``/push/`` with "
@@ -360,11 +369,11 @@ msgstr ""
 " ``/push/`` por ``/<ID_REGISTRO>/delete/`` en la dirección URL de inserción."
 " A continuación se muestra un ejemplo mínimo de esta operación."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:166
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:165
 msgid "Get notified in case of inactivity"
 msgstr "Recibir una notificación en caso de inactividad"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:171
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:169
 msgid ""
 "If you expect a system to push data to the platform often, you may want to "
 "be notified if no record has been received by the platform in a while. In "
@@ -380,11 +389,11 @@ msgstr ""
 "tiempo en minutos. Si no recibe ningún registro durante un intervalo de "
 "tiempo superior al umbral, se le enviará un correo electrónico."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:174
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:172
 msgid "Unpublishing and disabling the api"
 msgstr "Cancelar la publicación y desactivar la API"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:179
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:176
 msgid ""
 "Beware of unpublishing your dataset, as this will not keep existing records "
 "for the next time the dataset is published. If you desire to avoid getting "
@@ -401,11 +410,11 @@ msgstr ""
 "los datos actuales. Si se insertan datos mientras la inserción está "
 "desactivada en el recurso, no se añadirán datos y se enviará un error."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:182
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:179
 msgid "Recovery"
 msgstr "Recuperación"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:187
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:183
 msgid ""
 "In the event of data loss, for instance when the dataset has been "
 "unpublished or when a processor has been misconfigured, there is a "
@@ -418,7 +427,7 @@ msgstr ""
 " activado la opción de recuperación antes de insertar los registros en la "
 "plataforma."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:192
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:187
 msgid ""
 "When the recovery is activated every subsequent record received will be "
 "backed up, and will be elligible for recovery. In order to recover eligible "

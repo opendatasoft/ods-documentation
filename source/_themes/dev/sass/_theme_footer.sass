@@ -1,0 +1,35 @@
+$footer-height: 50px
+
+.footer-container
+    display: flex
+    display: -ms-flexbox
+    justify-content: space-between
+    -ms-flex-pack: justify
+    align-items: center
+    -ms-flex-align: center
+    background-color: $light-100
+    border-top: 1px solid $light-300
+    height: $footer-height
+    width: 100%
+
+.footer-container__logo
+    margin: $spacing-100 0 $spacing-100 $spacing-300
+
+.footer-container__langs
+    margin: 0 $spacing-300
+
+.footer-container__langs-items
+    @extend %text-100
+    color: $light-700
+    text-transform: uppercase
+    margin-right: $spacing-50
+
+    &:visited
+        color: $light-700
+
+    &:hover,
+    &.lang-active
+        color: $link-color
+
+#currentLang
+    display: none

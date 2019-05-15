@@ -1,7 +1,6 @@
 Configuring the Calendar visualization
 ======================================
 
-
 .. admonition:: Prerequisite
    :class: important
 

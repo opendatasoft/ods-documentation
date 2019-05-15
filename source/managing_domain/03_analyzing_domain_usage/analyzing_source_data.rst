@@ -95,10 +95,10 @@ You'll find below the list of fields available in the API monitoring dataset.
      * yes
 
 
-API names for OpenDataSoft APIv1
+API names for Opendatasoft APIv1
 --------------------------------
 
-The **api** field for OpenDataSoft APIv1 (ods_v1) contains one of the following values.
+The **api** field for Opendatasoft APIv1 (ods_v1) contains one of the following values.
 
 .. list-table::
    :header-rows: 1
@@ -201,10 +201,10 @@ The **api** field for ODATA API contains one of the following values.
      * number of records in a dataset
      * api/odata/<dataset_id>/$count/
 
-API names for OpenDataSoft APIv2
+API names for Opendatasoft APIv2
 --------------------------------
 
-The **api** field for OpenDataSoft APIv2 (ods_v2) contains one of the following values.
+The **api** field for Opendatasoft APIv2 (ods_v2) contains one of the following values.
 
 .. list-table::
   :header-rows: 1

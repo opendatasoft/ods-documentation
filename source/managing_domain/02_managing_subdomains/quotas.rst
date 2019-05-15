@@ -16,11 +16,4 @@ Quotas of subdomains are managed at the parent domain level. Administrators can 
 * The maximum total number of records in a subdomain
 * The maximum number of records of a dataset in a subdomain
 
-.. ifconfig:: language == 'en'
-
-    .. figure:: images/subdomains__quotas--en.png
-        :alt: Subdomains quotas
-        :width: 600px
-        :align: center
-
-        Manage your subdomain quotas
+.. image:: images/subdomains_quotas.png

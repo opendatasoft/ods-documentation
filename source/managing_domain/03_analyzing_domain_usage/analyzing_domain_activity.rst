@@ -10,7 +10,7 @@ The Backoffice analytics allows the domain administrator to monitor domain confi
 
 There are seven indicators :
 
-1. **Actions**: Frequency and distribution of administrative actions (edit and publish datasets or pages, add users to the domain etc). Gives you precious information about what your users do and how they spend their time on the platform. Also remember that like with every charts on OpenDataSoft you can filter the variables displayed by clicking on the legend labels.
+1. **Actions**: Frequency and distribution of administrative actions (edit and publish datasets or pages, add users to the domain etc). Gives you precious information about what your users do and how they spend their time on the platform. Also remember that like with every charts on Opendatasoft you can filter the variables displayed by clicking on the legend labels.
 
 .. ifconfig:: language == 'en'
 

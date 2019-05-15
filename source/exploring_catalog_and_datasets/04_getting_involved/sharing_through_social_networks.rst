@@ -4,7 +4,7 @@ Sharing through social networks
 .. admonition:: Important
    :class: important
 
-   Since shortcuts to social networks are an optional feature, they are not activated on every OpenDataSoft portal. The activation of shortcuts to social networks depends entirely on the portal administrators.
+   Since shortcuts to social networks are an optional feature, they are not activated on every Opendatasoft portal. The activation of shortcuts to social networks depends entirely on the portal administrators.
 
 Shortcuts to social networks are displayed above datasets, as well as a shortcut to the creation of an email, to be able to quickly share a dataset and more specifically the visualization currently displayed on the webpage.
 

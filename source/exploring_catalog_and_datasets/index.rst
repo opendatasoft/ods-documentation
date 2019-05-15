@@ -1,7 +1,7 @@
 Exploring the catalog and datasets
 ==================================
 
-In this section are listed and documented all features related to the navigation in the front office of an OpenDataSoft domain.
+In this section are listed and documented all features related to the navigation in the front office of an Opendatasoft domain.
 
 .. toctree::
    :maxdepth: 2

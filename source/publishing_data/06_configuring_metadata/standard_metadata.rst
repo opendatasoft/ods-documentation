@@ -1,7 +1,7 @@
 Standard metadata
 =================
 
-Standard metadata are common to all OpenDataSoft portal. They are the default metadata of any dataset. They should be configured in the Information tab of the edition interface of a dataset. Once the dataset is published, the standard metadata will be displayed in the Information tab of the dataset (front office).
+Standard metadata are common to all Opendatasoft portal. They are the default metadata of any dataset. They should be configured in the Information tab of the edition interface of a dataset. Once the dataset is published, the standard metadata will be displayed in the Information tab of the dataset (front office).
 
 Refer to the table below to know more about the available metadata and how to configure them.
 
@@ -51,7 +51,7 @@ Refer to the table below to know more about the available metadata and how to co
     * Description of the dataset.
     * Write a dataset description in the textbox. HTML is accepted. A set of formatting options are available in the grey bar at the top of the textbox: hover the buttons for more information and click on the chosen buttons to use any formatting option.
   * * Themes
-    * Theme(s) the dataset belongs to. Dataset themes are one of the catalog filters available in the front office of an OpenDataSoft portal.
+    * Theme(s) the dataset belongs to. Dataset themes are one of the catalog filters available in the front office of an Opendatasoft portal.
     * 1. Click on the textbox. A drop down selection of the themes defined for the domain automatically appears.
       2. Click on the chosen theme.
       3. (optional) To add another theme to the dataset, click on the + button on the right of the textbox.
@@ -63,7 +63,7 @@ Refer to the table below to know more about the available metadata and how to co
          It is also possible to add themes that are not in the drop down selection. To do so, write a new theme label in the textbox and press Enter.
 
   * * Keywords
-    * Keyword(s) to define the dataset and better find it through searches. Keywords are one of the catalog filters available in the front office of an OpenDataSoft portal.
+    * Keyword(s) to define the dataset and better find it through searches. Keywords are one of the catalog filters available in the front office of an Opendatasoft portal.
     * 1. Write a keyword in the textbox. It can contain special characters and be comprised of one or more words.
       2. (optional) A list of already used keywords appears, matching the letters just written in the textbox. It is possible to click on one of these keywords to reuse them.
       3. Once the keyword is selected or written, press Enter.
@@ -95,4 +95,4 @@ Refer to the table below to know more about the available metadata and how to co
 .. admonition:: Important
    :class: important
 
-   Custom standard metadata can be created and activated on demand. Please contact OpenDataSoft to know more about custom standard metadata.
+   Custom standard metadata can be created and activated on demand. Please contact Opendatasoft to know more about custom standard metadata.

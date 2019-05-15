@@ -5,7 +5,7 @@ Go to the *Catalog > Datasets* page. Then for each dataset there is a *Monitorin
 
 There are seven indicators :
 
-1. **Actions**: Frequency and distribution of actions (analyze, geo, search) taken by users based on API calls. Gives you precious information about what your users do and how to better serve them. Also remember that like with every charts on OpenDataSoft you can filter the variables displayed (Analyze, Geo or Search) by clicking on the legend labels.
+1. **Actions**: Frequency and distribution of actions (analyze, geo, search) taken by users based on API calls. Gives you precious information about what your users do and how to better serve them. Also remember that like with every charts on Opendatasoft you can filter the variables displayed (Analyze, Geo or Search) by clicking on the legend labels.
 
 .. ifconfig:: language == 'en'
 

@@ -4,9 +4,9 @@ Discovering & submitting data reuses
 .. admonition:: Important
    :class: important
 
-   Since reuses are an optional feature, they are not activated on every OpenDataSoft portal. The activation of reuses depends entirely on the portal administrators.
+   Since reuses are an optional feature, they are not activated on every Opendatasoft portal. The activation of reuses depends entirely on the portal administrators.
 
-Data reuses are creations based on data from datasets published on an open data portal. They can take many forms: from the map created with the Map Builder (or a chart with the Chart Builder), to the smartphone application, there are many possibilities of data reuses. As a user of an OpenDataSoft portal, it is possible to either discover the reuses that others have made, or to submit your very own reuse for it to be displayed on the related portal.
+Data reuses are creations based on data from datasets published on an open data portal. They can take many forms: from the map created with the Map Builder (or a chart with the Chart Builder), to the smartphone application, there are many possibilities of data reuses. As a user of an Opendatasoft portal, it is possible to either discover the reuses that others have made, or to submit your very own reuse for it to be displayed on the related portal.
 
 
 Discovering existing reuses
@@ -36,7 +36,7 @@ For the data reuses to be displayed in the Reuses area of the Information tab of
 .. admonition:: Important
    :class: important
 
-   On some OpenDataSoft portals, anonymous users are allowed to submit their reuses, but on other portals, only authenticated users are allowed to do so. This depends entirely on the portal administrators and how they choose to manage the reuse feature.
+   On some Opendatasoft portals, anonymous users are allowed to submit their reuses, but on other portals, only authenticated users are allowed to do so. This depends entirely on the portal administrators and how they choose to manage the reuse feature.
 
 .. image:: images/reuse_submit_form.png
    :alt: Reuse submit form

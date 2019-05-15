@@ -14,6 +14,9 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 .rst-content
+  font-size: $base-font-size
+  line-height: 1.4
+
   // Sphinx by default applies HxW style attributes to images. This fixes that oversite.
   img
     max-width: 100%
@@ -85,6 +88,10 @@
 
   // These are the various note pullouts that sphinx applies
   .note, .attention, .caution, .danger, .error, .hint, .important, .tip, .warning, .seealso, .admonition-todo, .admonition
+    margin: 39px 0
+    padding: 26px
+    position: relative
+
     @extend .wy-alert
     .last
       margin-bottom: 0
@@ -94,6 +101,19 @@
     @extend .fa-exclamation-circle
     &:before
       margin-right: 4px
+    display: inline
+    position: absolute
+    top: -1px
+    left: -1px
+    padding: 4px
+    margin: 0
+
+  .note .admonition-title
+    @extend .fa-info-circle
+  .important .admonition-title
+    @extend .fa-exclamation
+  .caution .admonition-title
+    @extend .fa-exclamation-triangle
   .note, .seealso
     @extend .wy-alert.wy-alert-info
   .hint, .tip, .important
@@ -170,9 +190,6 @@
     padding: $base-line-height
     background: $sidebar-background-color
     border: solid 1px $sidebar-border-color
-    // Sidebar content is usually less relevant, so adjust the margins and sizes.
-    p, ul, dl
-      font-size: 90%
     .last
       margin-bottom: 0
     .sidebar-title
@@ -283,7 +300,6 @@
     dt
       display: table
       margin: $base-line-height / 4 0
-      font-size: 90%
       line-height: normal
       background: lighten($class-color, 50%)
       color: $class-color
@@ -366,10 +382,19 @@
     font-style: italic
 
 .rst_title
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif!important
+  font-family: $base-font-family
+
+.wy-table td, .rst-content table.docutils td,
+.rst-content table.field-list td, .wy-table th,
+.rst-content table.docutils th,
+.rst-content table.field-list th,
+.wy-table td p, .rst-content table.docutils td p, .rst-content table.field-list td p
+  &:not(.admonition-title)
+    @extend %text-300
 
 // Mobile specific
 +media($mobile)
   .rst-content
     .sidebar
       width: 100%
+

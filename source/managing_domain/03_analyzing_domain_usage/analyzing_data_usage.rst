@@ -48,12 +48,12 @@ Totals
 Popularity
 ----------
 
-The Popularity section of the Data dashboard is based upon a computation aiming at quantifying dataset consumption in order to establish popularity scores for datasets. This computation is based on 3 metrics: number of downloads, number of API calls and number of reuses. These 3 metrics indicate whether a dataset published into an OpenDataSoft portal can be considered popular or not, compared to the other datasets of both that portal and the OpenDataSoft data network.
+The Popularity section of the Data dashboard is based upon a computation aiming at quantifying dataset consumption in order to establish popularity scores for datasets. This computation is based on 3 metrics: number of downloads, number of API calls and number of reuses. These 3 metrics indicate whether a dataset published into an Opendatasoft portal can be considered popular or not, compared to the other datasets of both that portal and the Opendatasoft data network.
 
 .. admonition:: Important
    :class: important
 
-   The scoring formula may change in the future. OpenDataSoft will notify all users if the computation to establish the popularity changes.
+   The scoring formula may change in the future. Opendatasoft will notify all users if the computation to establish the popularity changes.
 
 .. localizedimage:: data_dashboard_popularity.png
     :alt: Screenshot of the Popularity section of the Data dashboard

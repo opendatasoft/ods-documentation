@@ -1,6 +1,6 @@
-# OpenDataSoft's documentation
+# Opendatasoft's documentation
 
-This repository contains documentation resources for OpenDataSoft platform, APIs and tools.
+This repository contains documentation resources for Opendatasoft platform, APIs and tools.
 
 All content in written in english, translations are managed with transifex at https://www.transifex.com/opendatasoft/documentation-5/
 Please ask to join the group to contribute to the translation effort.
@@ -145,7 +145,7 @@ You should strive to constrain the topic of each page to a single topic. Related
 a blog post or a newsletter for example
 - Use present tense
 - When describing steps, use imperative. e.g. "Click on this button, then type in the title..."
-- When talking about OpenDataSoft as a company, use "us" or "OpenDataSoft"
+- When talking about Opendatasoft as a company, use "us" or "Opendatasoft"
 
 ### Titles
 
