@@ -2,11 +2,11 @@
 # Copyright (C) 2019, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2019
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -16,10 +16,10 @@ msgstr ""
 "PO-Revision-Date: 2018-06-27 09:10+0000\n"
 "Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:2
@@ -73,14 +73,6 @@ msgstr ""
 msgid "Caution"
 msgstr "Precaución"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:16
-msgid ""
-"The availability of this feature depends on the license of the OpenDataSoft "
-"domain."
-msgstr ""
-"La disponibilidad de esta función depende de la licencia del dominio "
-"OpenDataSoft."
-
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:18
 msgid ""
 "This solution is the easiest to implement, it does not require any "
@@ -131,6 +123,7 @@ msgstr ""
 msgid "Pushing real time data"
 msgstr "Insertar datos en tiempo real"
 
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:16
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:41
 msgid ""
 "The availability of this feature depends on the license of the Opendatasoft "
@@ -240,11 +233,11 @@ msgstr ""
 "Si se ha producido un error al intentar insertar un registro, la respuesta "
 "especificará el error."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:90
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:95
 msgid "Pushing a field of type file"
 msgstr "Insertar un campo de tipo archivo"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:92
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:97
 msgid ""
 "In order to push a field of type image, a json object containing the "
 "base64-encoded content and the mimetype of the file needs to be sent, as "
@@ -254,11 +247,11 @@ msgstr ""
 "el contenido con codificación Base 64 y el tipo MIME del archivo, de este "
 "modo:"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:104
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:109
 msgid "Update data by defining a unique key"
 msgstr "Actualizar los datos definiendo una clave exclusiva"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:110
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:115
 msgid ""
 "Sometimes it is useful to update the existing records instead of just "
 "pushing new ones. An example for this would be a dataset that tracks the "
@@ -283,7 +276,7 @@ msgstr ""
 "mucho mejor establecer el valor ``number_of_copies`` nuevo como el registro "
 "correspondiente al valor ``isbn`` del libro."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:114
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:119
 msgid ""
 "In order to set up such a system with the Opendatasoft platform, the fields "
 "that will be used as a unique key must be marked as so. In our example, the "
@@ -308,7 +301,7 @@ msgstr ""
 "ejemplo de biblioteca, si el conjunto de datos tiene ``isbn`` como clave "
 "exclusiva y contiene estos 2 registros."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:128
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:133
 msgid ""
 "If somebody borrows a copy of Zen and the Art of Motorcycle Maintenance, and"
 " you push the following record, you will still have two records, the first "
@@ -318,11 +311,11 @@ msgstr ""
 "Maintenance* y se inserta el registro siguiente, seguirá habiendo 2 "
 "registros, el primero actualizado con el valor nuevo."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:142
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:147
 msgid "Delete data"
 msgstr "Suprimir datos"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:144
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:149
 msgid ""
 "There are two entrypoints that allow for deleting a pushed records. One that"
 " uses the records values and one that uses the record ID."
@@ -330,11 +323,11 @@ msgstr ""
 "Hay 2 puntos de entrada que permiten suprimir los registros insertados: uno "
 "utiliza los valores de registro; y otro, el ID de registro."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:147
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:152
 msgid "Using the record values"
 msgstr "Usar los valores de registro"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:149
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:154
 msgid ""
 "To delete a record knowing the record fields values, POST the record as if "
 "you were adding it for the first time, but replace ``/push/`` with "
@@ -354,11 +347,11 @@ msgstr ""
 "continuación se muestra un ejemplo mínimo de supresión del registro "
 "insertado anteriormente."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:156
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:161
 msgid "Using the record ID"
 msgstr "Usar el ID de registro"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:158
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:163
 msgid ""
 "If you know the record ID of the record you want to delete, simply make a "
 "GET request to the URL you get by replacing ``/push/`` with "
@@ -369,11 +362,11 @@ msgstr ""
 " ``/push/`` por ``/<ID_REGISTRO>/delete/`` en la dirección URL de inserción."
 " A continuación se muestra un ejemplo mínimo de esta operación."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:165
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:170
 msgid "Get notified in case of inactivity"
 msgstr "Recibir una notificación en caso de inactividad"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:169
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:174
 msgid ""
 "If you expect a system to push data to the platform often, you may want to "
 "be notified if no record has been received by the platform in a while. In "
@@ -389,11 +382,11 @@ msgstr ""
 "tiempo en minutos. Si no recibe ningún registro durante un intervalo de "
 "tiempo superior al umbral, se le enviará un correo electrónico."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:172
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:177
 msgid "Unpublishing and disabling the api"
 msgstr "Cancelar la publicación y desactivar la API"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:176
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:181
 msgid ""
 "Beware of unpublishing your dataset, as this will not keep existing records "
 "for the next time the dataset is published. If you desire to avoid getting "
@@ -410,11 +403,11 @@ msgstr ""
 "los datos actuales. Si se insertan datos mientras la inserción está "
 "desactivada en el recurso, no se añadirán datos y se enviará un error."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:179
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:184
 msgid "Recovery"
 msgstr "Recuperación"
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:183
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:188
 msgid ""
 "In the event of data loss, for instance when the dataset has been "
 "unpublished or when a processor has been misconfigured, there is a "
@@ -427,7 +420,7 @@ msgstr ""
 " activado la opción de recuperación antes de insertar los registros en la "
 "plataforma."
 
-#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:187
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:192
 msgid ""
 "When the recovery is activated every subsequent record received will be "
 "backed up, and will be elligible for recovery. In order to recover eligible "
@@ -438,3 +431,20 @@ msgstr ""
 "todos los registros posteriores que se reciban, de modo que serán válidos "
 "para recuperarse. Para recuperar los registros válidos, se puede emplear el "
 "botón \"Recuperar datos\" de la página Configuración de origen."
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:89
+msgid "Note"
+msgstr ""
+
+#: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:92
+msgid ""
+"Real time push requests are limited to a 5MB payload. A larger payload will "
+"trigger an error, and should be split into several smaller requests instead."
+msgstr ""
+
+#~ msgid ""
+#~ "The availability of this feature depends on the license of the OpenDataSoft "
+#~ "domain."
+#~ msgstr ""
+#~ "La disponibilidad de esta función depende de la licencia del dominio "
+#~ "OpenDataSoft."

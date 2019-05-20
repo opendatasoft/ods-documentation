@@ -2,14 +2,14 @@
 # Copyright (C) 2019, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Ann-Kristin Vogt <avogt@datawords.com>, 2018
 # traducteur_DE2 <datawords.translator.de2@gmail.com>, 2018
 # Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2018
 # Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2018
 # traducteur_DE1 <datawords.translator.de1@gmail.com>, 2018
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -19,48 +19,253 @@ msgstr ""
 "PO-Revision-Date: 2018-06-27 09:10+0000\n"
 "Last-Translator: traducteur_DE1 <datawords.translator.de1@gmail.com>, 2018\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:2
-msgid "Configuring the image gallery"
-msgstr "Bildergalerie konfigurieren"
-
-#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:4
-msgid "Note"
-msgstr "Hinweis"
-
-#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:7
-msgid ""
-"The images view is only available when there is at least a *file* field, and"
-" if at least one file contained in this field is an image, or a document "
-"that can generate a thumbnail."
+msgid "Configuring the Images visualization"
 msgstr ""
-"Die Bilderanzeige steht nur zur Verfügung, wenn es zumindest ein "
-"*Datei*-Feld gibt, und zumindest eine der enthaltenen Dateien ein Bild oder "
-"eine Datei ist, die ein thumbnail erzeugen kann."
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:5
+msgid "Prerequisite"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:8
+msgid ""
+"For the Images visualization to be available, the dataset must contain at "
+"least one :ref:`file field<choosingtype>`, containing at least one image or "
+"any other media type file that can generate a thumbnail: .gif, .png, .jpeg, "
+".jpg, .tif, .tiff and .bmp."
+msgstr ""
 
 #: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:11
-msgid "Setting up the tooltip"
-msgstr "Einrichten der QuickInfo"
+msgid ""
+"In the edition interface of a dataset, the Visualizations > Images tab "
+"allows to configure the image gallery of the Images visualization displayed "
+"in the front office, once the dataset is published on the portal."
+msgstr ""
 
 #: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:13
 msgid ""
-"In the image gallery view, a click on a image will bring forward a tooltip "
-"containing more information about the image."
+"The Images visualization, when available, is optional. It can be enabled or "
+"disabled using the tick box displayed right under the visualizations tabs."
 msgstr ""
-"Ein Klick auf ein Bild in der Bildergalerie-Ansicht öffnet ein Tooltip mit "
-"weiteren Informationen über das Bild."
 
 #: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:18
-msgid ""
-"You can :doc:`configure the "
-"tooltip</publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip>`"
-" in exactly the same way than for the map or the calendar."
+msgid "Customizing the information panel"
 msgstr ""
-"Sie können :doc:`die "
-"QuickInfo</publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip>`"
-" auf genau die gleiche Weise wie die Karte oder den Kalender konfigurieren."
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:20
+msgid ""
+"To configure the information panel of the Images visualization, follow the "
+"indications from the tables below."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:25
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:57
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:86
+msgid "Option name"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:26
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:58
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:87
+msgid "Description"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:27
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:59
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:88
+msgid "Usage"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:28
+msgid "Displayed image fields"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:29
+msgid ""
+"Fields which contain images and that will be displayed in the Images "
+"visualization. In the list, the fields with a grey background are those that"
+" will be displayed, whereas those without a colored background will be "
+"hidden. Only the file type fields are available in this option."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:30
+msgid "To add an image field in the Images visualization:"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:32
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:37
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:68
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:73
+msgid "Find the field among the list."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:33
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:69
+msgid "Click on the |icon-plus| icon at the right of the field."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:35
+msgid "To hide an image field from the Images visualization:"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:38
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:74
+msgid "Click on the |icon-cross| icon at the right of the field."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:40
+msgid "To reorder the image fields:"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:42
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:78
+msgid "Click on a field among the list."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:43
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:79
+msgid "Drag and drop the field above or below another one."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:44
+msgid "Tooltip types"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:45
+msgid "2 tooltip types:"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:47
+msgid ""
+"Standard tooltip (default): allows the choice of a title and of the fields "
+"displayed in the tooltip."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:48
+msgid ""
+"Custom HTML tooltip: allows a further customization of the tooltip, using "
+"HTML."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:49
+msgid "Click on the \"Tooltip types\" list box."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:50
+msgid "Choose a tooltip type."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:52
+msgid "**Standard tooltip options**"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:60
+msgid "Image title"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:61
+msgid "Title of the image, used as a tooltip title."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:62
+msgid "Click on the \"Tooltip title\" list box."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:63
+msgid "Choose a field from the dataset, which contains the images titles."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:64
+msgid "Displayed fields"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:65
+msgid ""
+"Fields from the dataset which values will be displayed in the tooltip. In "
+"the list, the fields with a grey background are those that will be displayed"
+" in the tooltip, whereas those without a colored background will be hidden "
+"from the tooltip."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:66
+msgid "To add a field in the tooltip:"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:71
+msgid "To hide a field from the tooltip:"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:76
+msgid "To reorder the fields:"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:81
+msgid "**Custom HTML tooltip options**"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:89
+msgid "Custom HTML tooltip"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:90
+msgid ""
+"HTML area to write the content of the tooltip. 3 buttons above the text area"
+" allow to reindent a selection, reindent the whole HTML text and/or to wrap "
+"the lines."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:91
+msgid "Write the content of the tooltip in HTML."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:93
+msgid "Important"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/04_configuring_image_view/image.rst:96
+msgid ""
+"For more information about tooltips and how to configure both Standard and "
+"Custom HTML tooltips, see :doc:`Configure the "
+"tooltip</publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip>`"
+" documentation."
+msgstr ""
+
+#~ msgid "Configuring the image gallery"
+#~ msgstr "Bildergalerie konfigurieren"
+
+#~ msgid "Note"
+#~ msgstr "Hinweis"
+
+#~ msgid ""
+#~ "The images view is only available when there is at least a *file* field, and"
+#~ " if at least one file contained in this field is an image, or a document "
+#~ "that can generate a thumbnail."
+#~ msgstr ""
+#~ "Die Bilderanzeige steht nur zur Verfügung, wenn es zumindest ein "
+#~ "*Datei*-Feld gibt, und zumindest eine der enthaltenen Dateien ein Bild oder "
+#~ "eine Datei ist, die ein thumbnail erzeugen kann."
+
+#~ msgid "Setting up the tooltip"
+#~ msgstr "Einrichten der QuickInfo"
+
+#~ msgid ""
+#~ "In the image gallery view, a click on a image will bring forward a tooltip "
+#~ "containing more information about the image."
+#~ msgstr ""
+#~ "Ein Klick auf ein Bild in der Bildergalerie-Ansicht öffnet ein Tooltip mit "
+#~ "weiteren Informationen über das Bild."
+
+#~ msgid ""
+#~ "You can :doc:`configure the "
+#~ "tooltip</publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip>`"
+#~ " in exactly the same way than for the map or the calendar."
+#~ msgstr ""
+#~ "Sie können :doc:`die "
+#~ "QuickInfo</publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip>`"
+#~ " auf genau die gleiche Weise wie die Karte oder den Kalender konfigurieren."

@@ -2,13 +2,13 @@
 # Copyright (C) 2019, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2018
 # Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2018
 # traducteur_DE1 <datawords.translator.de1@gmail.com>, 2018
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,219 +18,447 @@ msgstr ""
 "PO-Revision-Date: 2018-06-27 09:10+0000\n"
 "Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:2
-msgid "Configuring the calendar"
-msgstr "Konfigurieren des Kalenders"
+msgid "Configuring the Calendar visualization"
+msgstr ""
 
 #: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:4
-msgid ""
-"The Opendatasoft platform lets you easily create calendar views from your "
-"published datasets."
+msgid "Prerequisite"
 msgstr ""
-"Die Opendatasoft-Plattform ermöglicht die einfache Erstellung von "
-"Kalenderansichten Ihrer veröffentlichten Datensätze."
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:7
+msgid ""
+"For the Calendar visualization to be available, the dataset must contain at "
+"least one :ref:`date or datetime field<choosingtype>`, and a text field "
+"containing the title of the calendar event."
+msgstr ""
 
 #: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:10
-msgid "A calendar built from a dataset containing all events from OpenAgenda"
+msgid ""
+"In the edition interface of a dataset, the Visualizations > Calendar tab "
+"allows to configure the Calendar visualization displayed in the front "
+"office, once the dataset is published on the portal."
 msgstr ""
-"Ein von einem Datensatz erstellter Kalender mit allen Ereignissen von "
-"OpenAgenda"
 
-#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:19
-msgid "Datasets requirements"
-msgstr "Datensatzanforderungen"
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:12
+msgid ""
+"The Calendar visualization, when available, is optional. It can be enabled "
+"or disabled using the tick box displayed right under the visualizations "
+"tabs."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:16
+msgid ""
+"To configure the Calendar visualization, follow the indications from the "
+"tables below."
+msgstr ""
 
 #: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:21
-msgid ""
-"For the calendar view, each record of your dataset is a different event. "
-"These events must contain a start time, an end time and a title. Which means"
-" your dataset must have two datetime fields and a text field for the "
-"calendar view to be available."
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:65
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:90
+msgid "Option name"
 msgstr ""
-"Für die Kalenderansicht ist jeder Eintrag Ihres Datensatzes ein anderes "
-"Ereignis. Diese Ereignisse müssen eine Start- und eine Endzeit sowie einen "
-"Titel beinhalten. Das heißt, Ihr Datensatz muss zwei datetime-Felder und ein"
-" Textfeld haben, damit die Kalenderansicht verfügbar ist."
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:22
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:66
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:91
+msgid "Description"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:23
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:67
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:92
+msgid "Usage"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:24
+msgid "Event title"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:25
+msgid "Title of the event, used as a tooltip title."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:26
+msgid "Click on the \"Event title\" list box."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:27
+msgid "Choose a field from the dataset, which contains the events titles."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:28
+msgid "Event start"
+msgstr ""
 
 #: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:29
-msgid "2 fields set as datetime"
-msgstr "2 als datetime eingerichtete Felder"
+msgid "Start date of the event."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:30
+msgid "Click on the \"Event start\" list box."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:31
+msgid ""
+"Choose a field from the dataset, which contains the start dates of the "
+"events."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:32
+msgid "Event end"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:33
+msgid "End date of the event."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:34
+msgid "Click on the \"Event end\" list box."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:35
+msgid ""
+"Choose a field from the dataset, which contains the end dates of the events."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:36
+msgid "Event color"
+msgstr ""
 
 #: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:37
-msgid ""
-"Records without titles will be displayed on the calendar as titleless "
-"events, but missing either the start or end time will cause the view to "
-"simply ignore the record."
+msgid "Color of the event on the Calendar visualization."
 msgstr ""
-"Einträge ohne Titel werden im Kalender als titellose Ereignisse angezeigt. "
-"Eine fehlende Start- oder Endzeit führt jedoch dazu, dass die Ansicht den "
-"Eintrag einfach ignoriert."
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:38
+msgid "Click on the color menu."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:39
+msgid "Choose a color from the Nice colors or with the Color picker."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:40
+msgid "Click on the Select color button."
+msgstr ""
 
 #: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:41
-msgid "Full day events"
-msgstr "Ganztagsereignisse"
-
-#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:43
-msgid ""
-"Though very simple, the \"two datetime fields and a text field\" requirement"
-" forces you to setup full day events as events ~ starting at 12AM on the "
-"given day and finishing a second before midnight on the same day (00:00:00 "
-"to 23:59:59)."
+msgid "Available views"
 msgstr ""
-"Obwohl äußerst simpel, zwingt Sie die Anforderung \"zwei datetime-Felder und"
-" ein Textfeld\" dazu, Ganztagsereignisse als Ereignisse einzurichten, ~ die "
-"am gegebenen Tag um 12 Uhr morgens starten und eine Sekunde vor Mitternacht "
-"des gleichen Tags enden (00:00:00 bis 23:59:59)."
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:42
+msgid "3 possible views on which to display events of the Calendar view:"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:44
+msgid "Month, to display a monthly calendar"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:45
+msgid "Week, to display a weekly calendar"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:46
+msgid "Day, to display a daily calendar"
+msgstr ""
 
 #: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:47
-msgid "Configuration"
-msgstr "Konfiguration"
+msgid ""
+"Tick a box to display a chosen view. Untick a box to hide a chosen view."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:48
+msgid "Default view"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:49
+msgid "Default view when landing on the Calendar visualization tab."
+msgstr ""
 
 #: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:50
-msgid "Enabling the calendar view"
-msgstr "Aktivieren der Kalenderansicht"
+msgid "Click on the \"Default view\" list box."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:51
+msgid "Choose a default view."
+msgstr ""
 
 #: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:52
-msgid ""
-"Once you have configured two of your dataset's fields as datetimes and "
-"another field as text, you'll see the calendar tab become available."
+msgid "Tooltip types"
 msgstr ""
-"Nach der Konfiguration zweier Ihrer Datensatzfelder als datetime und eines "
-"weiteren Feldes als Text wird das Kalenderregister verfügbar."
 
-#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:59
-msgid "Calendar tab unavailable"
-msgstr "Kalenderregister nicht verfügbar"
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:53
+msgid "2 tooltip types:"
+msgstr ""
 
-#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:63
-msgid "Calendar tab available"
-msgstr "Kalenderregister verfügbar"
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:55
+msgid ""
+"Standard tooltip (default): allows the choice of a title and of the fields "
+"displayed in the tooltip."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:56
+msgid ""
+"Custom HTML tooltip: allows a further customization of the tooltip, using "
+"HTML."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:57
+msgid "Click on the \"Tooltip types\" list box."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:58
+msgid "Choose a tooltip type."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:60
+msgid "**Standard tooltip options**"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:68
+msgid "Displayed fields"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:69
+msgid ""
+"Fields from the dataset which values will be displayed in the tooltip. In "
+"the list, the fields with a grey background are those that will be displayed"
+" in the tooltip, whereas those without a colored background will be hidden "
+"from the tooltip."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:70
+msgid "To add a field in the tooltip:"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:72
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:77
+msgid "Find the field among the list."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:73
+msgid "Click on the |icon-plus| icon at the right of the field."
+msgstr ""
 
 #: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:75
-msgid ""
-"It doesn't mean that your dataset is fully configured though. The view is "
-"available but not enabled by default. You'll have to manually enable it."
+msgid "To hide a field from the tooltip:"
 msgstr ""
-"Das heißt jedoch nicht, dass Ihr Datensatz vollständig konfiguriert ist. Die"
-" Ansicht ist verfügbar, aber nicht standardmäßig aktiviert. Daher müssen Sie"
-" sie manuell aktivieren."
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:78
+msgid "Click on the |icon-cross| icon at the right of the field."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:80
+msgid "To reorder the fields:"
+msgstr ""
 
 #: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:82
-msgid "This checkbox will enable the calendar view"
+msgid "Click on a field among the list."
 msgstr ""
-"Die Kalenderansicht können Sie über dieses Kontrollkästchen aktivieren."
 
-#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:91
-msgid "Setting up events' fields"
-msgstr "Einrichten von Ereignisfeldern"
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:83
+msgid "Drag and drop the field above or below another one."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:85
+msgid "**Custom HTML tooltip options**"
+msgstr ""
 
 #: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:93
+msgid "Custom HTML tooltip"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:94
 msgid ""
-"Once the calendar is enabled, you'll need to make sure the events' fields "
-"are well configured. You'll see that the first text field has been selected "
-"for the title, the first datetime for the start time and the second datetime"
-" for the end time. You may have multiple other text/datetime fields in your "
-"dataset, select here which one determine the events' properties."
+"HTML area to write the content of the tooltip. 3 buttons above the text area"
+" allow to reindent a selection, reindent the whole HTML text and/or to wrap "
+"the lines."
 msgstr ""
-"Nach der Aktivierung des Kalenders müssen Sie sicherstellen, dass die "
-"Ereignisfelder richtig konfiguriert sind. Sie werden feststellen, dass das "
-"erste Feld für den Titel, das erste datetime für die Startzeit und das "
-"zweite datetime für die Endzeit ausgewählt wurden. Unter Umständen haben Sie"
-" diverse andere Text-/datetime-Felder in Ihrem Datensatz. Wählen Sie hier "
-"aus, welche die Ereigniseigenschaften bestimmen."
 
-#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:98
-msgid "This is also where you'll be able to select the events' color."
-msgstr "Hier können Sie auch die Ereignisfarbe auswählen."
-
-#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:104
-msgid ""
-"Default configuration for my calendar. The event's fields are pre-selected "
-"but not correct."
+#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:95
+msgid "Write the content of the tooltip in HTML."
 msgstr ""
-"Standardkonfiguration für meinen Kalender. Die Ereignisfelder sind "
-"vorgewählt, stimmen aber nicht."
 
-#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:108
-msgid "Corrected settings"
-msgstr "Korrigierte Einstellungen"
+#~ msgid "Configuring the calendar"
+#~ msgstr "Konfigurieren des Kalenders"
 
-#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:121
-msgid "Setting up the tooltip"
-msgstr "Einrichten der QuickInfo"
+#~ msgid ""
+#~ "The Opendatasoft platform lets you easily create calendar views from your "
+#~ "published datasets."
+#~ msgstr ""
+#~ "Die Opendatasoft-Plattform ermöglicht die einfache Erstellung von "
+#~ "Kalenderansichten Ihrer veröffentlichten Datensätze."
 
-#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:123
-msgid ""
-"In the calendar view, a click on a event will bring forward a tooltip "
-"containing more information about the events."
-msgstr ""
-"In der Kalenderansicht wird durch das Klicken auf ein Ereignis eine "
-"QuickInfo mit weiteren Informationen über das Ereignis eingeblendet."
+#~ msgid "A calendar built from a dataset containing all events from OpenAgenda"
+#~ msgstr ""
+#~ "Ein von einem Datensatz erstellter Kalender mit allen Ereignissen von "
+#~ "OpenAgenda"
 
-#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:128
-msgid ""
-"You can :doc:`configure the "
-"tooltip</publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip>`"
-" in exactly the same way than for the map or the images."
-msgstr ""
-"Sie können :doc:`die "
-"QuickInfo</publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip>`"
-" auf genau die gleiche Weise wie die Karte oder die Bilder konfigurieren."
+#~ msgid "Datasets requirements"
+#~ msgstr "Datensatzanforderungen"
 
-#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:131
-msgid "Sharing"
-msgstr "Teilen"
+#~ msgid ""
+#~ "For the calendar view, each record of your dataset is a different event. "
+#~ "These events must contain a start time, an end time and a title. Which means"
+#~ " your dataset must have two datetime fields and a text field for the "
+#~ "calendar view to be available."
+#~ msgstr ""
+#~ "Für die Kalenderansicht ist jeder Eintrag Ihres Datensatzes ein anderes "
+#~ "Ereignis. Diese Ereignisse müssen eine Start- und eine Endzeit sowie einen "
+#~ "Titel beinhalten. Das heißt, Ihr Datensatz muss zwei datetime-Felder und ein"
+#~ " Textfeld haben, damit die Kalenderansicht verfügbar ist."
 
-#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:133
-msgid ""
-"Once your dataset is correctly setup and published, you can of course share "
-"this calendar with anyone having the rights to view the calendar."
-msgstr ""
-"Nachdem Sie Ihren Datensatz richtig eingerichtet und veröffentlicht haben, "
-"können Sie diesen Kalender natürlich mit jedem teilen, der über die Rechte "
-"zum Anzeigen des Kalenders verfügt."
+#~ msgid "2 fields set as datetime"
+#~ msgstr "2 als datetime eingerichtete Felder"
 
-#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:136
-msgid ""
-"To do so, you can always copy/paste the url from your browser's address bar,"
-" but you can also use any of the 3 options offered below the calendar "
-"itself."
-msgstr ""
-"Dazu können Sie entweder die URL aus der Adressleiste Ihres Browsers "
-"kopieren/einfügen oder eine der 3 unter dem Kalender angebotenen Optionen "
-"verwenden."
+#~ msgid ""
+#~ "Records without titles will be displayed on the calendar as titleless "
+#~ "events, but missing either the start or end time will cause the view to "
+#~ "simply ignore the record."
+#~ msgstr ""
+#~ "Einträge ohne Titel werden im Kalender als titellose Ereignisse angezeigt. "
+#~ "Eine fehlende Start- oder Endzeit führt jedoch dazu, dass die Ansicht den "
+#~ "Eintrag einfach ignoriert."
 
-#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:139
-msgid "Share the url"
-msgstr "Die URL teilen"
+#~ msgid "Full day events"
+#~ msgstr "Ganztagsereignisse"
 
-#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:145
-msgid "The 3 sharing options, with first and foremost the url"
-msgstr "Die 3 Optionen zum Teilen, mit zuallererst der URL"
+#~ msgid ""
+#~ "Though very simple, the \"two datetime fields and a text field\" requirement"
+#~ " forces you to setup full day events as events ~ starting at 12AM on the "
+#~ "given day and finishing a second before midnight on the same day (00:00:00 "
+#~ "to 23:59:59)."
+#~ msgstr ""
+#~ "Obwohl äußerst simpel, zwingt Sie die Anforderung \"zwei datetime-Felder und"
+#~ " ein Textfeld\" dazu, Ganztagsereignisse als Ereignisse einzurichten, ~ die "
+#~ "am gegebenen Tag um 12 Uhr morgens starten und eine Sekunde vor Mitternacht "
+#~ "des gleichen Tags enden (00:00:00 bis 23:59:59)."
 
-#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:153
-msgid "Code snippet to embed the view inside any other website"
-msgstr "Codeschnipsel zum Einbetten der Ansicht in einer anderen Website"
+#~ msgid "Configuration"
+#~ msgstr "Konfiguration"
 
-#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:159
-msgid "Embed this code into any other page to display your calendar there"
-msgstr ""
-"Zum Anzeigen Ihres Kalenders auf einer beliebigen Seite diesen Code dort "
-"einbetten"
+#~ msgid "Enabling the calendar view"
+#~ msgstr "Aktivieren der Kalenderansicht"
 
-#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:167
-msgid ""
-"Code snippet to include in any of your dashboard or page on the platform."
-msgstr ""
-"In ein/e beliebige/s Dashboard oder Seite auf der Plattform einzufügender "
-"Codeschnipsel."
+#~ msgid ""
+#~ "Once you have configured two of your dataset's fields as datetimes and "
+#~ "another field as text, you'll see the calendar tab become available."
+#~ msgstr ""
+#~ "Nach der Konfiguration zweier Ihrer Datensatzfelder als datetime und eines "
+#~ "weiteren Feldes als Text wird das Kalenderregister verfügbar."
 
-#: ../../source/publishing_data/07_configuring_visualizations/05_configuring_calendar_view/calendar.rst:173
-msgid "Copy this code to one your dashboard on the platform"
-msgstr "Diesen Code in eins Ihrer Dashboards auf der Plattform kopieren"
+#~ msgid "Calendar tab unavailable"
+#~ msgstr "Kalenderregister nicht verfügbar"
+
+#~ msgid "Calendar tab available"
+#~ msgstr "Kalenderregister verfügbar"
+
+#~ msgid ""
+#~ "It doesn't mean that your dataset is fully configured though. The view is "
+#~ "available but not enabled by default. You'll have to manually enable it."
+#~ msgstr ""
+#~ "Das heißt jedoch nicht, dass Ihr Datensatz vollständig konfiguriert ist. Die"
+#~ " Ansicht ist verfügbar, aber nicht standardmäßig aktiviert. Daher müssen Sie"
+#~ " sie manuell aktivieren."
+
+#~ msgid "This checkbox will enable the calendar view"
+#~ msgstr ""
+#~ "Die Kalenderansicht können Sie über dieses Kontrollkästchen aktivieren."
+
+#~ msgid "Setting up events' fields"
+#~ msgstr "Einrichten von Ereignisfeldern"
+
+#~ msgid ""
+#~ "Once the calendar is enabled, you'll need to make sure the events' fields "
+#~ "are well configured. You'll see that the first text field has been selected "
+#~ "for the title, the first datetime for the start time and the second datetime"
+#~ " for the end time. You may have multiple other text/datetime fields in your "
+#~ "dataset, select here which one determine the events' properties."
+#~ msgstr ""
+#~ "Nach der Aktivierung des Kalenders müssen Sie sicherstellen, dass die "
+#~ "Ereignisfelder richtig konfiguriert sind. Sie werden feststellen, dass das "
+#~ "erste Feld für den Titel, das erste datetime für die Startzeit und das "
+#~ "zweite datetime für die Endzeit ausgewählt wurden. Unter Umständen haben Sie"
+#~ " diverse andere Text-/datetime-Felder in Ihrem Datensatz. Wählen Sie hier "
+#~ "aus, welche die Ereigniseigenschaften bestimmen."
+
+#~ msgid "This is also where you'll be able to select the events' color."
+#~ msgstr "Hier können Sie auch die Ereignisfarbe auswählen."
+
+#~ msgid ""
+#~ "Default configuration for my calendar. The event's fields are pre-selected "
+#~ "but not correct."
+#~ msgstr ""
+#~ "Standardkonfiguration für meinen Kalender. Die Ereignisfelder sind "
+#~ "vorgewählt, stimmen aber nicht."
+
+#~ msgid "Corrected settings"
+#~ msgstr "Korrigierte Einstellungen"
+
+#~ msgid "Setting up the tooltip"
+#~ msgstr "Einrichten der QuickInfo"
+
+#~ msgid ""
+#~ "In the calendar view, a click on a event will bring forward a tooltip "
+#~ "containing more information about the events."
+#~ msgstr ""
+#~ "In der Kalenderansicht wird durch das Klicken auf ein Ereignis eine "
+#~ "QuickInfo mit weiteren Informationen über das Ereignis eingeblendet."
+
+#~ msgid ""
+#~ "You can :doc:`configure the "
+#~ "tooltip</publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip>`"
+#~ " in exactly the same way than for the map or the images."
+#~ msgstr ""
+#~ "Sie können :doc:`die "
+#~ "QuickInfo</publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip>`"
+#~ " auf genau die gleiche Weise wie die Karte oder die Bilder konfigurieren."
+
+#~ msgid "Sharing"
+#~ msgstr "Teilen"
+
+#~ msgid ""
+#~ "Once your dataset is correctly setup and published, you can of course share "
+#~ "this calendar with anyone having the rights to view the calendar."
+#~ msgstr ""
+#~ "Nachdem Sie Ihren Datensatz richtig eingerichtet und veröffentlicht haben, "
+#~ "können Sie diesen Kalender natürlich mit jedem teilen, der über die Rechte "
+#~ "zum Anzeigen des Kalenders verfügt."
+
+#~ msgid ""
+#~ "To do so, you can always copy/paste the url from your browser's address bar,"
+#~ " but you can also use any of the 3 options offered below the calendar "
+#~ "itself."
+#~ msgstr ""
+#~ "Dazu können Sie entweder die URL aus der Adressleiste Ihres Browsers "
+#~ "kopieren/einfügen oder eine der 3 unter dem Kalender angebotenen Optionen "
+#~ "verwenden."
+
+#~ msgid "Share the url"
+#~ msgstr "Die URL teilen"
+
+#~ msgid "The 3 sharing options, with first and foremost the url"
+#~ msgstr "Die 3 Optionen zum Teilen, mit zuallererst der URL"
+
+#~ msgid "Code snippet to embed the view inside any other website"
+#~ msgstr "Codeschnipsel zum Einbetten der Ansicht in einer anderen Website"
+
+#~ msgid "Embed this code into any other page to display your calendar there"
+#~ msgstr ""
+#~ "Zum Anzeigen Ihres Kalenders auf einer beliebigen Seite diesen Code dort "
+#~ "einbetten"
+
+#~ msgid ""
+#~ "Code snippet to include in any of your dashboard or page on the platform."
+#~ msgstr ""
+#~ "In ein/e beliebige/s Dashboard oder Seite auf der Plattform einzufügender "
+#~ "Codeschnipsel."
+
+#~ msgid "Copy this code to one your dashboard on the platform"
+#~ msgstr "Diesen Code in eins Ihrer Dashboards auf der Plattform kopieren"

@@ -2,10 +2,10 @@
 # Copyright (C) 2019, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Translator_NL1 <datawords.translator.nl1@gmail.com>, 2018
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -15,86 +15,409 @@ msgstr ""
 "PO-Revision-Date: 2018-06-27 09:10+0000\n"
 "Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2018\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:2
-msgid "Configuring the map view"
-msgstr "De kaartweergave configureren"
+msgid "Configuring the Map visualization"
+msgstr ""
 
 #: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:4
-msgid "Note"
-msgstr "Opmerking"
+msgid "Prerequisite"
+msgstr ""
 
 #: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:7
 msgid ""
-"The map view is only available to datasets containing at least one geo field"
-" (geo point or geo shape)."
+"For the Map visualization to be available, the dataset must contain at least"
+" one geographical field (:ref:`Geo point or Geo shape<choosingtype>`)."
 msgstr ""
-"De kaartweergave is enkel beschikbaar voor datasets die minstens één geo-"
-"veld (geo point of geo shape) bevatten"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:9
-msgid "You can configure the appearance of the map itself:"
-msgstr "U kan de manier waarop de kaart zelf wordt weergegeven configureren:"
-
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:11
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:10
 msgid ""
-"If a tooltip displays more than one item (when multiple records have the "
-"same location for example), you can set their relative order"
+"In the edition interface of a dataset, the Visualizations > Map tab allows "
+"to configure the Map visualization displayed in the front office, once the "
+"dataset is published on the portal."
 msgstr ""
-"Wanneer een tooltip meer dan één item weergeeft (bijvoorbeeld wanneer "
-"meerdere records dezelfde locatie hebben), kan u de relatieve volgorde ervan"
-" instellen"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:13
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:12
 msgid ""
-"If you have more than one basemap on your domain, you can set which one is "
-"selected by default for this dataset (otherwise it is the first one in the "
-"list)"
+"The Map visualization, when available, is optional. It can be enabled or "
+"disabled using the tick box displayed right under the visualizations tabs."
 msgstr ""
-"Wanneer u meer dan één basiskaart hebt op uw domein, kan u instellen welke "
-"standaard voor deze dataset worden geselecteerd (anders is het de eerste in "
-"de lijst)"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:15
-msgid "The color of the shapes and points displayed on the map"
-msgstr "De kleur van de vormen en punten die weergegeven worden op de kaart"
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:17
+msgid "Customizing the tooltip"
+msgstr ""
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:16
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:19
 msgid ""
-"If the data is represented as points, you can configure how it is displayed:"
-" a simple icon, little dots, or a familiar marker"
+"The \"Tooltip customization\" section contains a variety of options to "
+"customize the tooltips that can be displayed on the Map visualization of a "
+"dataset. A tooltip is a box that appears when clicking on an element of the "
+"map that represents data (e.g. a map marker, a geographical shape). The "
+"tooltip displays information about its related data."
 msgstr ""
-"Wanneer de data worden weergegeven als punten, kan u configureren hoe deze "
-"worden weergegeven: een gewoon pictogram, kleine puntjes of een vertrouwd "
-"merkteken"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:23
-msgid "The map view options"
-msgstr "De weergaveopties van de kaart"
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:21
+msgid "Important"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:24
+msgid ""
+"For more information about tooltips and how to configure both Standard and "
+"Custom HTML tooltips, see :doc:`Configure the "
+"tooltip</publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip>`"
+" documentation."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:26
+msgid ""
+"To customize the tooltips of the Map visualization, follow the instructions "
+"from the tables below."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:31
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:48
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:83
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:107
+msgid "Option name"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:32
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:49
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:84
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:108
+msgid "Description"
+msgstr ""
 
 #: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:33
-msgid "Setting up the tooltip"
-msgstr "De tooltip instellen"
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:50
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:85
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:109
+msgid "Usage"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:34
+msgid "Tooltip type"
+msgstr ""
 
 #: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:35
-msgid ""
-"On a map, a click on a point will bring forward a tooltip containing more "
-"information"
+msgid "3 tooltip types:"
 msgstr ""
-"Wanneer u op een kaart op een punt klikt, verschijnt een tooltip die meer "
-"informatie verschaft"
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:37
+msgid ""
+"Standard tooltip (default): allows the choice of a title and of the fields "
+"displayed in the tooltip."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:38
+msgid ""
+"Custom HTML tooltip: allows a further customization of the tooltip, using "
+"HTML."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:39
+msgid ""
+"No tooltip: disables the tooltips for the Map visualization of the dataset."
+msgstr ""
 
 #: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:40
-msgid ""
-"You can :doc:`configure the "
-"tooltip</publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip>`"
-" in exactly the same way than for the image gallery or the calendar."
+msgid "Click on the \"Tooltip type\" list box."
 msgstr ""
-"U kunt :doc:`de tooltip "
-"configureren</publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip>`"
-" op precies dezelfde manier als voor de afbeeldingengalerij of de kalender."
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:41
+msgid "Choose a tooltip type."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:43
+msgid "**Standard tooltip options**"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:51
+msgid "Tooltip title"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:52
+msgid "Title of the tooltip based on a chosen field from the dataset."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:53
+msgid "Click on the \"Tooltip title\" list box."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:54
+msgid "Choose a field from the dataset, on which the title will be based."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:55
+msgid "Displayed fields"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:56
+msgid ""
+"Fields from the dataset which values will be displayed in the tooltip. In "
+"the list, the fields with a grey background are those that will be displayed"
+" in the tooltip, whereas those without a colored background will be hidden "
+"from the tooltip."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:57
+msgid "To add a field in the tooltip:"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:59
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:64
+msgid "Find the field among the list."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:60
+msgid "Click on the |icon-plus| icon at the right of the field."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:62
+msgid "To hide a field from the tooltip:"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:65
+msgid "Click on the |icon-cross| icon at the right of the field."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:67
+msgid "To reorder the fields:"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:69
+msgid "Click on a field among the list."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:70
+msgid "Drag and drop the field above or below another one."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:71
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:89
+msgid "Sort in tooltips"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:72
+msgid ""
+"When there is more than one element at a single place on the map, clicking "
+"it will display a single tooltip, but where it is possible to browse "
+"information about all these elements. It is possible to define a sort to "
+"order that information."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:73
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:91
+msgid "Click on the \"Sort in tooltips\" list box."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:74
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:92
+msgid "Choose a field from the dataset, on which the sorting will be based."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:75
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:93
+msgid "Click on the second list box, displayed below the first one."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:76
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:94
+msgid "Choose a sort type."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:78
+msgid "**Custom HTML tooltip options**"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:86
+msgid "Custom HTML tooltip"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:87
+msgid ""
+"HTML area to write the content of the tooltip. 3 buttons above the text area"
+" allow to reindent a selection, reindent the whole HTML text and/or to wrap "
+"the lines."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:88
+msgid "Write the content of the tooltip in HTML."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:90
+msgid ""
+"When more than one tooltip is related to one same element on the map, it is "
+"possible to define a sort to order these tooltips."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:98
+msgid "Customizing the map"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:100
+msgid ""
+"The \"Map customization\" section contains a variety of options to customize"
+" both the map itself (the basemap) and the elements that represent the data "
+"(map markers, geographical shapes)."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:102
+msgid ""
+"To configure the map of the Map visualization, follow the instructions from "
+"the table below."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:110
+msgid "Basemap"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:111
+msgid ""
+"Basemap that will be used by default for the Map visualization. To appear in"
+" the list, the basemaps should be configured in the Look & feel > Data "
+"visualizations section of the back office (see :doc:`Adding "
+"basemaps</customizing_look_and_feel/04_configuring_data_visualizations/basemaps>`"
+" documentation)."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:112
+msgid "Click on the \"Basemap\" list box."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:113
+msgid "Choose a basemap from the list."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:114
+msgid "Marker & shape color"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:115
+msgid "Color of the marker or shape on the Map visualization."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:116
+msgid "Click on the color menu."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:117
+msgid "Choose a color from the Nice colors or with the Color picker."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:118
+msgid "Click on the Select color button."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:119
+msgid "Marker display"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:120
+msgid "3 possible ways to display markers:"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:122
+msgid "as Dots,"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:123
+msgid ""
+"as map Markers (by default, with a simple dot inside, but there can be any "
+"icon instead),"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:124
+msgid "as an Icon."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:125
+msgid "To choose a marker display, tick the box related to the chosen one."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:127
+msgid "To choose an Icon (either for the map Markers or the Icons displays):"
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:129
+msgid "Click on the Icon menu."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:130
+msgid "Choose an icon."
+msgstr ""
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/map.rst:131
+msgid "Click on the Select icon button."
+msgstr ""
+
+#~ msgid "Configuring the map view"
+#~ msgstr "De kaartweergave configureren"
+
+#~ msgid "Note"
+#~ msgstr "Opmerking"
+
+#~ msgid ""
+#~ "The map view is only available to datasets containing at least one geo field"
+#~ " (geo point or geo shape)."
+#~ msgstr ""
+#~ "De kaartweergave is enkel beschikbaar voor datasets die minstens één geo-"
+#~ "veld (geo point of geo shape) bevatten"
+
+#~ msgid "You can configure the appearance of the map itself:"
+#~ msgstr "U kan de manier waarop de kaart zelf wordt weergegeven configureren:"
+
+#~ msgid ""
+#~ "If a tooltip displays more than one item (when multiple records have the "
+#~ "same location for example), you can set their relative order"
+#~ msgstr ""
+#~ "Wanneer een tooltip meer dan één item weergeeft (bijvoorbeeld wanneer "
+#~ "meerdere records dezelfde locatie hebben), kan u de relatieve volgorde ervan"
+#~ " instellen"
+
+#~ msgid ""
+#~ "If you have more than one basemap on your domain, you can set which one is "
+#~ "selected by default for this dataset (otherwise it is the first one in the "
+#~ "list)"
+#~ msgstr ""
+#~ "Wanneer u meer dan één basiskaart hebt op uw domein, kan u instellen welke "
+#~ "standaard voor deze dataset worden geselecteerd (anders is het de eerste in "
+#~ "de lijst)"
+
+#~ msgid "The color of the shapes and points displayed on the map"
+#~ msgstr "De kleur van de vormen en punten die weergegeven worden op de kaart"
+
+#~ msgid ""
+#~ "If the data is represented as points, you can configure how it is displayed:"
+#~ " a simple icon, little dots, or a familiar marker"
+#~ msgstr ""
+#~ "Wanneer de data worden weergegeven als punten, kan u configureren hoe deze "
+#~ "worden weergegeven: een gewoon pictogram, kleine puntjes of een vertrouwd "
+#~ "merkteken"
+
+#~ msgid "The map view options"
+#~ msgstr "De weergaveopties van de kaart"
+
+#~ msgid "Setting up the tooltip"
+#~ msgstr "De tooltip instellen"
+
+#~ msgid ""
+#~ "On a map, a click on a point will bring forward a tooltip containing more "
+#~ "information"
+#~ msgstr ""
+#~ "Wanneer u op een kaart op een punt klikt, verschijnt een tooltip die meer "
+#~ "informatie verschaft"
+
+#~ msgid ""
+#~ "You can :doc:`configure the "
+#~ "tooltip</publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip>`"
+#~ " in exactly the same way than for the image gallery or the calendar."
+#~ msgstr ""
+#~ "U kunt :doc:`de tooltip "
+#~ "configureren</publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip>`"
+#~ " op precies dezelfde manier als voor de afbeeldingengalerij of de kalender."
