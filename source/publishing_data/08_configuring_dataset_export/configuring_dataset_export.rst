@@ -26,3 +26,32 @@ By default, the records of a dataset export are not ordered. It is possible to c
    :class: important
 
    The sort does not apply on additional export formats.
+
+Adding other geographical projections
+-------------------------------------
+
+The geographical coordinates of a published dataset are by default expressed in WGS84, no matter what was their original projection when creating the dataset. It is possible to configure additional geographical projections to enable users to export the dataset in their preferred geographical projection.
+
+1. In the Additional geographical projections area, click on the Additional projections textbox.
+2. Write the EPSG code of the chosen geographical projection. Or, choose one from the suggestions list.
+
+Adding more export formats
+--------------------------
+
+More specific formats can be available for export:
+
+- GPX (default): this format can directly be configured by the administrators of the domain to be available as additional export format.
+- CIFS (on demand): for datasets pushing data to Waze. Once activated on the domain, this format can be configured by the administrators of that domain.
+- DCAT-AP for Sweden, Spain, Germany and Switzerland (on demand): these formats must be configured by Opendatasoft. They are never displayed in the Export tab of the edition interface of the dataset.
+
+.. admonition:: Important
+   :class: important
+
+   Please contact Opendatasoft support team to know more about and/or to ask for the activation of additional export formats.
+
+Uploading alternative exports
+-----------------------------
+
+The Alternative exports area of the Export tab allows to upload any file of any format.
+
+To upload an alternative export file, either click the Upload a file button, or drag and drop the file in the area.
