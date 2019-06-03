@@ -20,7 +20,7 @@ Actions
     * Makes the dataset's modifications go live on the portal. The duration of the publishing varies depending on the dataset, and the nature of the modifications.
   * * Abort
     * .. image:: images/button_abort.png
-    * Replaces the Publish button after clicking on it, and only lasts until the end of the publishing. Stops the publishing and leaves the dataset in a clean state, but incomplete since not all records have been processed.
+    * Replaces the **Publish** button after clicking on it, and only lasts until the end of the publishing. Stops the publishing and leaves the dataset in a clean state, but incomplete since not all records have been processed.
   * * Unpublish
     * .. image:: images/button_more-actions.png
       .. image:: images/button_unpublish.png
