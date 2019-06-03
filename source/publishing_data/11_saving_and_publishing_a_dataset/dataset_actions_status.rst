@@ -28,7 +28,7 @@ Actions
   * * Delete dataset
     * .. image:: images/button_more-actions.png
       .. image:: images/button_delete.png
-    * Removes the dataset from both front office and back office catalog. Entirely deleted the dataset, its records and everything else related to the dataset.
+    * Removes the dataset from both front office and back office catalogs. Entirely deletes the dataset, its records and everything else related to the dataset.
 
 **Actions related to the configuring/processing of a dataset**
 
@@ -45,7 +45,7 @@ Actions
   * * Redo
     * .. image:: images/button_more-actions.png
       .. image:: images/button_redo.png
-    * Reoperate the action last reversed on the dataset.
+    * Reoperates the action last reversed on the dataset.
   * * Duplicate dataset
     * .. image:: images/button_more-actions.png
       .. image:: images/button_duplicate.png
@@ -53,9 +53,6 @@ Actions
 
 Statuses
 ~~~~~~~~
-
-Dataset processing is perform asynchronously to ensure the best performance and no interference with others processing tasks.
-Different status are reachable by a dataset during the processing task.
 
 .. list-table::
   :header-rows: 1
