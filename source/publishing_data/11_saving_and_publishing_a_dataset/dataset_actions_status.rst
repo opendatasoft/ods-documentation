@@ -26,20 +26,20 @@ Actions
       .. image:: images/button_unpublish.png
     * Removes the dataset from the front office catalog, deleting all the records during the process.
 
-    .. admonition:: Warning
-       :class: danger
+      .. admonition:: Warning
+         :class: danger
 
-       In some cases, the unpublishing of a dataset can erase data (i.e. realtime without recovery, specific connectors, dataset schema change etc.).
+         In some cases, the unpublishing of a dataset can erase data (i.e. realtime without recovery, specific connectors, dataset schema change etc.).
 
   * * Delete dataset
     * .. image:: images/button_more-actions.png
       .. image:: images/button_delete.png
     * Removes the dataset from both front office and back office catalogs. Entirely deletes the dataset, its records and everything else related to the dataset.
 
-    .. admonition:: Warning
-       :class: danger
+      .. admonition:: Warning
+         :class: danger
 
-       Once a dataset has been deleted, it is not possible to get it back. This operation cannot be cancelled or reversed.
+         Once a dataset has been deleted, it is not possible to get it back. This operation cannot be cancelled or reversed.
 
 **Actions related to the configuring/processing of a dataset**
 
