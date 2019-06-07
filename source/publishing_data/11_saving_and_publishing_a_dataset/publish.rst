@@ -1,7 +1,7 @@
 Publishing a dataset
 ====================
 
-Once the dataset is ready, after it was fully configured and processed, it should be published in order to appear in the front office of the portal, where users can discover the published data.
+Once the dataset is ready, after it was fully configured, it should be published in order to appear in the front office of the portal, where users can discover the published data.
 
 .. admonition:: Warning
    :class: warning

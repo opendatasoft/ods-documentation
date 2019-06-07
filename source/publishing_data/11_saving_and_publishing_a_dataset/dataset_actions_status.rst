@@ -14,7 +14,7 @@ Actions
     * Description
   * * Save
     * .. image:: images/button_save.png
-    * Saves all new modifications, processings and configurations operated on the dataset.
+    * Saves all new configurations and modifications operated on the dataset.
   * * Publish
     * .. image:: images/button_publish.png
     * Makes the dataset's modifications go live on the portal. The duration of the publishing varies depending on the dataset, and the nature of the modifications.
@@ -24,11 +24,22 @@ Actions
   * * Unpublish
     * .. image:: images/button_more-actions.png
       .. image:: images/button_unpublish.png
-    * Removes the dataset from the front office catalog, deleting all the records during the process. In some cases, data can be lost because of an unpublishing (i.e. realtime without recovery, specific connectors etc.)
+    * Removes the dataset from the front office catalog, deleting all the records during the process.
+
+    .. admonition:: Warning
+       :class: danger
+
+       In some cases, the unpublishing of a dataset can erase data (i.e. realtime without recovery, specific connectors, dataset schema change etc.).
+
   * * Delete dataset
     * .. image:: images/button_more-actions.png
       .. image:: images/button_delete.png
     * Removes the dataset from both front office and back office catalogs. Entirely deletes the dataset, its records and everything else related to the dataset.
+
+    .. admonition:: Warning
+       :class: danger
+
+       Once a dataset has been deleted, it is not possible to get it back. This operation cannot be cancelled or reversed.
 
 **Actions related to the configuring/processing of a dataset**
 
@@ -45,7 +56,7 @@ Actions
   * * Redo
     * .. image:: images/button_more-actions.png
       .. image:: images/button_redo.png
-    * Reoperates the action last reversed on the dataset.
+    * Reoperates the last reversed action on the dataset.
   * * Duplicate dataset
     * .. image:: images/button_more-actions.png
       .. image:: images/button_duplicate.png
