@@ -40,8 +40,8 @@ Adding more export formats
 
 More specific formats can be available for export:
 
-- GPX (default): this format can directly be configured by the administrators of the domain to be available as additional export format.
-- CIFS (on demand): for datasets pushing data to Waze. Once activated on the domain, this format can be configured by the administrators of that domain.
+- GPX (default): this format can directly be configured from the Export tab to be available as additional export format. Note that the GPX format requires the dataset to contain geographical coordinates to be available.
+- CIFS (on demand): for datasets pushing data to Waze. Once activated on the domain, this format can be configured from the Export tab.
 - DCAT-AP for Sweden, Spain, Germany and Switzerland (on demand): these formats must be configured by Opendatasoft. They are never displayed in the Export tab of the edition interface of the dataset.
 
 .. admonition:: Important
