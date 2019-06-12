@@ -15,4 +15,5 @@ In this section are listed and documented all features related to the upload, co
    07_configuring_visualizations/index
    08_configuring_dataset_export/configuring_dataset_export
    09_managing_dataset_security/security
+   10_checking_dataset_history/checking_dataset_history
    11_saving_and_publishing_a_dataset/publish
