@@ -7,6 +7,12 @@ Metadata can be seen as the data describing the dataset itself. They are indeed 
 In the Opendatasoft platform, all metadata configurations are done in the Information tab.
 
 
+.. admonition:: Note
+   :class: note
+
+   The Information tab also contains an Attachments tab, that allows the upload files related to the dataset (e.g. information documents to explain in details the fields and data, methodology documents on how to export the data, etc.).
+
+
 .. localizedimage:: images/metadata_configuration_interface.png
     :alt: Information tab when publishing a new dataset, to configure the metadata of the dataset
 
