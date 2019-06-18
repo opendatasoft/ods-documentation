@@ -1,7 +1,7 @@
 Interoperability metadata
 =========================
 
-Interoperability metadata are activated on demand. They should be configured in the Information tab of the edition interface of a dataset, in specific tabs displayed under the standard metadata. Once the dataset is published, all interoperability metadata will be displayed in the Information tab of the dataset (front office).
+Interoperability metadata are activated on demand. They should be configured in the Information tab of the edition interface of a dataset, each type of metadata having their own specific tab. Once the dataset is published, all interoperability metadata will be displayed in the Information tab of the dataset (front office).
 
 There are 3 kinds of interoperability metadata available:
 
