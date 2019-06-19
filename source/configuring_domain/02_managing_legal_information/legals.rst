@@ -63,6 +63,7 @@ To specify the Terms and Conditions and the Privacy Policy of a portal, go to Co
 
    Fill-in Terms & Conditions and Privacy Policy templates are available, based on the French law (in French and English languages) and the US law (in English language) only. Click the Use a template button under the textbox to use a template. The generated conditions of use can be edited in the textbox afterward.
 
+.. _licenses-config:
 
 Licenses
 --------
