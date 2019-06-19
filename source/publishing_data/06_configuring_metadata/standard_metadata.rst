@@ -57,11 +57,11 @@ Refer to the table below to know more about the available metadata and how to co
     * Date indicating when the dataset was last modified.
     * The date can either be set manually or automatically.
 
-      * To set the date manually, click the "Update manually" button. Using the date picker displayed below the button, choose a date and time.
+      * To set the date manually, click the "Update manually" switch button. Using the date picker displayed below the button, choose a date and time.
       * To set the date automatically, depending on which action should lead to the modification of the date, click either or both:
 
-        * the "Update automatically when metadata has changed" button,
-        * the "Update automatically when data has changed" button.
+        * the "Update automatically when metadata has changed" switch button,
+        * the "Update automatically when data has changed" switch button.
 
       .. admonition:: Note
          :class: note
@@ -69,7 +69,7 @@ Refer to the table below to know more about the available metadata and how to co
          Depending on the dataset, some options can be unavailable.
 
          * If the dataset is federated, the last modification date can only be set manually.
-         * If the sources are invalid, the last modification date can only be set manually, or when the metadata have changed.
+         * If there is no data source, the last modification date can only be set manually, or when the metadata have changed.
 
 **Regional information**
 
