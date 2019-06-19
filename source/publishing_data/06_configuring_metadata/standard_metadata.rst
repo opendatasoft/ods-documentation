@@ -66,10 +66,7 @@ Refer to the table below to know more about the available metadata and how to co
       .. admonition:: Note
          :class: note
 
-         Depending on the dataset, some options can be unavailable.
-
-         * If the dataset is federated, the last modification date can only be set manually.
-         * If there is no data source, the last modification date can only be set manually, or when the metadata have changed.
+         Depending on the dataset, some options can be unavailable. If the dataset is federated, or if there is no data source, the last modification date can only be set manually, or when metadata have changed.
 
 **Regional information**
 
