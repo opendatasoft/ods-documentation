@@ -25,8 +25,8 @@ To translate chosen elements from the dataset:
 
 .. screenshot translation window
 
-.. admonition:: Note
-   :class: note
+.. admonition:: Important
+   :class: important
 
    The translation window only enables the translation of the metadata that have already been configured in the original language.
 
