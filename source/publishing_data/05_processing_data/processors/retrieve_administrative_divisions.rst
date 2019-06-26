@@ -72,16 +72,16 @@ When a real country is chosen, the administrative levels corresponding to that c
   * * BE
     * Country
     * Régions Belges
-    * Provinces Belges
+    * Provinces belges
     * Arrondissements Belges
     * Cantons Belges
     * Communes Belges
-    * 
+    * Sections municipales
   * * CA
     * Country
     * Canada Provinces
     * 
-    * Intercensal Canada
+    * Canadian Census Divisions
     * 
     * Canadian Census Subdivisions
     * 
