@@ -1,26 +1,29 @@
 Translating a dataset
 =====================
 
-For domains with more than one language activated in the front office, OpenDataSoft allows the translation of specific elements of the datasets, as well as their metadata, to help users understand a dataset as best as they can even though the data itself is not in their preferred language.
+For domains with more than one language activated in the front office, Opendatasoft allows the translation of specific elements of the datasets, as well as their metadata. It should help users understand a dataset as best as possible, even though the data itself is not in their preferred language.
 
 In the Opendatasoft platform, these translations are done in the Translations tab of the edition interface of each dataset.
 
 .. screenshot Translations interface
 
-The Translations tab lists all available languages to which various elements from the dataset can be translated. For each of the languages are displayed the name of the 2 tabs which contain elements that can be translated:
+Choosing elements for translation
+---------------------------------
 
-- Information, to translate 4 dataset metadata: Title, Description, Keywords and Publisher.
-- Processing, to translate fields names and descriptions.
+For each available language displayed in the Translations tab, it is possible to translate various elements that have been originally configured in 2 other configuration tabs of the dataset:
+
+- Information, which 4 following metadata can be translated: Title, Description, Keywords and Publisher.
+- Processing, which fields names and descriptions can be translated.
 
 .. admonition:: Note
    :class: note
 
-   For each language, and for both Information and Processing tabs names, a progress bar is displayed to indicate how much of the elements have already been translated.
+   For each language, for both Information and Processing, a progress bar is displayed to indicate how much of the elements have already been translated.
 
-To translate chosen elements from the dataset:
+To start translating chosen elements from the dataset:
 
 1. Choose an available language.
-2. For the chosen language, choose whether to translate elements from the Information or Processing tabs.
+2. For the chosen language, choose whether to translate elements from the Information or the Processing tab.
 3. For the chosen tab, click on the related Edit link. A translation window opens.
 
 .. screenshot translation window
@@ -30,18 +33,21 @@ To translate chosen elements from the dataset:
 
    The translation window only enables the translation of the metadata that have already been configured in the original language.
 
-The left side of the Information translation window (1) displays the elements that can be translated, along with their value in the original language.
+The left side of the translation window- displays the elements that can be translated, along with their value in the original language.
 
 - Untranslated elements are preceded by a grey X icon.
 - Translated elements are preceded by a green X icon.
 
-The right side (2) is the translation area. It displays the textboxes where the translations should be written. The translations can either be:
+The right side is the translation area. It displays the textboxes where the translations should be written. The translations can either be:
 
 - suggestions proposed by the platform,
 - or, new translations.
 
+Managing translations in the translation window
+-----------------------------------------------
+
 Approving or rejecting translation suggestions
-----------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If a value has already been translated, the platform will automatically suggest that translation for the same value. In that case, the suggested translation is automatically proposed in the translation textbox.
 
@@ -54,7 +60,7 @@ If a value has already been translated, the platform will automatically suggest 
    To validate all translations suggestions, click the Validate all suggestions button in the top right hand corner of the translation window.
 
 Adding new translations
------------------------
+^^^^^^^^^^^^^^^^^^^^^^^
 
 If a value has never been translated, or if the translation suggestion was rejected, a new translation should be added.
 
