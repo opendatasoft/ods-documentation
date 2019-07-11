@@ -5,7 +5,7 @@ For domains with more than one language activated in the front office, Opendatas
 
 In the Opendatasoft platform, these translations are done in the Translations tab of the edition interface of each dataset.
 
-.. screenshot Translations interface
+.. image:: images/translation_tab_interface.png
 
 Choosing elements for translation
 ---------------------------------
@@ -26,7 +26,7 @@ To start translating chosen elements from the dataset:
 2. For the chosen language, choose whether to translate elements from the Information or the Processing tab.
 3. For the chosen tab, click on the related Edit link. A translation window opens.
 
-.. screenshot translation window
+.. image:: images/translation_window.png
 
 .. admonition:: Important
    :class: important
@@ -35,8 +35,8 @@ To start translating chosen elements from the dataset:
 
 The left side of the translation window- displays the elements that can be translated, along with their value in the original language.
 
-- Untranslated elements are preceded by a grey X icon.
-- Translated elements are preceded by a green X icon.
+- Untranslated elements are preceded by a grey |icon-cross| icon.
+- Translated elements are preceded by a green |icon-check| icon.
 
 The right side is the translation area. It displays the textboxes where the translations should be written. The translations can either be:
 
@@ -66,3 +66,15 @@ If a value has never been translated, or if the translation suggestion was rejec
 
 1. Add new translations in the right textboxes.
 2. Click the Submit button to save the translations.
+
+
+
+
+
+.. |icon-cross| image:: images/icon_cross.png
+    :width: 10px
+    :height: 9px
+
+.. |icon-check| image:: images/icon_check.png
+    :width: 12px
+    :height: 9px
