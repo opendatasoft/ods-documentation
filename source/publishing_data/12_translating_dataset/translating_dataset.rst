@@ -31,9 +31,9 @@ To start translating chosen elements from the dataset:
 .. admonition:: Important
    :class: important
 
-   The translation window only enables the translation of the metadata that have already been configured in the original language.
+   The translation window only enables the translation of elements that have already been configured in the original language. For example, if the Publisher metadata has not been configured in the Information tab, it will not be possible to translate it.
 
-The left side of the translation window- displays the elements that can be translated, along with their value in the original language.
+The left side of the translation window displays the elements that can be translated, along with their value in the original language.
 
 - Untranslated elements are preceded by a grey |icon-cross| icon.
 - Translated elements are preceded by a green |icon-check| icon.
@@ -51,7 +51,7 @@ Approving or rejecting translation suggestions
 
 If a value has already been translated, the platform will automatically suggest that translation for the same value. In that case, the suggested translation is automatically proposed in the translation textbox.
 
-1. Click X to validate the suggestion, or, click X to reject the suggestion.
+1. Click |icon-validate| to validate the suggestion, or, click |icon-reject| to reject the suggestion.
 2. Click the Submit button to save the translations.
 
 .. admonition:: Note
@@ -78,3 +78,11 @@ If a value has never been translated, or if the translation suggestion was rejec
 .. |icon-check| image:: images/icon_check.png
     :width: 12px
     :height: 9px
+
+.. |icon-validate| image:: images/icon_validate.png
+    :width: 20px
+    :height: 19px
+
+.. |icon-reject| image:: images/icon_reject.png
+    :width: 19px
+    :height: 19px
