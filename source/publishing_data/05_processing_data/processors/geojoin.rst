@@ -63,16 +63,26 @@ Belgium
 
   * * Repository
     * Source
-  * * arrondissements2008
-    * `Arrondissements Belges (2008) <https://public.opendatasoft.com/explore/dataset/arrondissements-belges>`_
-  * * provinces2008
-    * `Provinces Belges (2008) <https://public.opendatasoft.com/explore/dataset/provinces-belges>`_
-  * * communes2008
-    * `Communes Belges (2008) <https://public.opendatasoft.com/explore/dataset/communes-belges>`_
+  * * regions2019
+    * `Régions Belges (2019) <https://public.opendatasoft.com/explore/dataset/regions-belges-2019>`_
   * * regions2008
     * `Régions Belges (2008) <https://public.opendatasoft.com/explore/dataset/regions-belges>`_
+  * * provinces2008
+    * `Provinces Belges (2008) <https://public.opendatasoft.com/explore/dataset/provinces-belges>`_
+  * * provinces2019
+    * `Provinces belges (2019) <https://public.opendatasoft.com/explore/dataset/provinces-belges-2019>`_
+  * * arrondissements2008
+    * `Arrondissements Belges (2008) <https://public.opendatasoft.com/explore/dataset/arrondissements-belges>`_
+  * * arrondissements2019
+    * `Arrondissements Belges (2019) <https://public.opendatasoft.com/explore/dataset/arrondissements-belges-2019>`_
   * * cantons2008
     * `Cantons Belges (2008) <https://public.opendatasoft.com/explore/dataset/cantons-belges>`_
+  * * communes2019
+    * `Communes Belges (2019) <https://public.opendatasoft.com/explore/dataset/communes-belges-2019>`_
+  * * communes2008
+    * `Communes Belges (2008) <https://public.opendatasoft.com/explore/dataset/communes-belges>`_
+  * * sectionsmunicipales2019
+    * `Sections municipales (2019) <https://public.opendatasoft.com/explore/dataset/codes-postaux-belgique-limites-geographiques>`_
 
 Canada
 ~~~~~~
@@ -84,12 +94,12 @@ Canada
     * Source
   * * provinces2003
     * `Canada Provinces (2003) <https://public.opendatasoft.com/explore/dataset/canada-provinces>`_
-  * * counties2011
-    * `Intercensal Canada (2011) <https://public.opendatasoft.com/explore/dataset/intercensal-canada>`_
   * * census-divisions2011
     * `Canadian Census Divisions (2011) <https://public.opendatasoft.com/explore/dataset/canadian-census-subdivisions>`_
   * * census-subdivisions2011
     * `Canadian Census Subdivisions (2011) <https://public.opendatasoft.com/explore/dataset/canadian-census-subdivisions0>`_
+  * * counties2011
+    * `Intercensal Canada (2011) <https://public.opendatasoft.com/explore/dataset/intercensal-canada>`_
 
 England (GB)
 ~~~~~~~~~~~~
@@ -101,18 +111,18 @@ England (GB)
     * Source
   * * regions2017
     * `Regions in England (2017) <https://public.opendatasoft.com/explore/dataset/regions-in-england-december-2017>`_
-  * * wards2015
-    * `Wards in England (2015) <https://public.opendatasoft.com/explore/dataset/wards-in-england-december-2015>`_
   * * regions2016
     * `Regions in England (2016) <https://public.opendatasoft.com/explore/dataset/regions-in-england-december-2016>`_
-  * * wards2014
-    * `Wards in England (2014) <https://public.opendatasoft.com/explore/dataset/wards-in-england-december-2014>`_
-  * * parishes2016
-    * `Parishes in England (2016) <https://public.opendatasoft.com/explore/dataset/parishes-in-england-december-2016>`_
   * * counties2016
     * `Counties and Unitary Authorities in England (2016) <https://public.opendatasoft.com/explore/dataset/counties-and-unitary-authorities-december-2016-generalised-clipped-boundaries-in>`_
   * * wards2016
     * `Wards in England (2016) <https://public.opendatasoft.com/explore/dataset/wards-in-england-december-2016>`_
+  * * wards2015
+    * `Wards in England (2015) <https://public.opendatasoft.com/explore/dataset/wards-in-england-december-2015>`_
+  * * wards2014
+    * `Wards in England (2014) <https://public.opendatasoft.com/explore/dataset/wards-in-england-december-2014>`_
+  * * parishes2016
+    * `Parishes in England (2016) <https://public.opendatasoft.com/explore/dataset/parishes-in-england-december-2016>`_
   * * parishes2014
     * `Parishes in England (2014) <https://public.opendatasoft.com/explore/dataset/parishes-in-england-december-2014>`_
 
@@ -124,54 +134,54 @@ France
 
   * * Repository
     * Source
-  * * regions1970
-    * `Contours des régions françaises sur OpenStreetMap (1970) <https://public.opendatasoft.com/explore/dataset/contours-des-regions-francaises-sur-openstreetmap>`_
   * * regions2016
     * `Contours géographiques des nouvelles régions (métropole) (2016) <https://public.opendatasoft.com/explore/dataset/contours-geographiques-des-nouvelles-regions-metropole>`_
-  * * iris2014
-    * `Contours IRIS 2014 (2014) <https://public.opendatasoft.com/explore/dataset/contours-iris-2014>`_
-  * * epci2018
-    * `Contours géographiques des EPCI (2018) <https://public.opendatasoft.com/explore/dataset/admin-express-epci-2018>`_
-  * * epci2016
-    * `Contours géographiques des EPCI (2016) <https://public.opendatasoft.com/explore/dataset/contours-des-etablissements-publics-de-cooperation-intercommunale-epci-2016>`_
-  * * iris2017
-    * `Contours Iris (2017) <https://public.opendatasoft.com/explore/dataset/contours-iris>`_
-  * * departements-simplifies2015
-    * `Contours simplifiés des départements Français 2015 (2015) <https://public.opendatasoft.com/explore/dataset/contours-simplifies-des-departements-francais-2015>`_
-  * * cantons2015
-    * `Cantons (2015) <https://public.opendatasoft.com/explore/dataset/decoupage-des-cantons-pour-les-elections-departementales-de-mars-2015>`_
-  * * departements2019
-    * `Contours géographiques des départements (2019) <https://public.opendatasoft.com/explore/dataset/contours-geographiques-des-departements-2019>`_
-  * * regions-simplifiees2016
-    * `Contours géographiques simplifiés des nouvelles régions (métropole) (2016) <https://public.opendatasoft.com/explore/dataset/france-regions-2016-contours-simplifies>`_
-  * * iris2015
-    * `Contours IRIS 2015 (2015) <https://public.opendatasoft.com/explore/dataset/contours-iris-2015>`_
-  * * communes2015
-    * `Geofla® - Communes 2015 (2015) <https://public.opendatasoft.com/explore/dataset/geoflar-communes-2015>`_
-  * * communes2018
-    * `Contours géographiques des communes (2018) <https://public.opendatasoft.com/explore/dataset/admin-express-communes-2018>`_
-  * * epci2017
-    * `Contours géographiques des EPCI (2017) <https://public.opendatasoft.com/explore/dataset/admin-express-epci-2017>`_
-  * * epci2019
-    * `Contours géographiques des EPCI (2019) <https://public.opendatasoft.com/explore/dataset/contours-geographiques-des-epci-2019>`_
-  * * departements2015
-    * `Geofla® - Départements 2015 (2015) <https://public.opendatasoft.com/explore/dataset/geoflar-departements-2015>`_
-  * * communes2013
-    * `Geofla® - Communes 2013 (2013) <https://public.opendatasoft.com/explore/dataset/geoflar-communes>`_
-  * * communes2017
-    * `Contours géographiques des communes (2017) <https://public.opendatasoft.com/explore/dataset/admin-express-communes-2017>`_
-  * * iris-epci2016
-    * `Contours IRIS 2016 avec EPCI (2016) <https://public.opendatasoft.com/explore/dataset/contours-iris-2016-epci>`_
-  * * iris2016
-    * `Contours IRIS 2016 (2016) <https://public.opendatasoft.com/explore/dataset/contours-iris-2016>`_
-  * * communes2016
-    * `Geofla® Commune 2016 (2016) <https://public.opendatasoft.com/explore/dataset/geoflar-communes-2016>`_
   * * regions2019
     * `Contours géographiques des régions (2019) <https://public.opendatasoft.com/explore/dataset/contours-geographiques-des-regions-2019>`_
+  * * regions-simplifiees2016
+    * `Contours géographiques simplifiés des nouvelles régions (métropole) (2016) <https://public.opendatasoft.com/explore/dataset/france-regions-2016-contours-simplifies>`_
+  * * regions1970
+    * `Contours des régions françaises sur OpenStreetMap (1970) <https://public.opendatasoft.com/explore/dataset/contours-des-regions-francaises-sur-openstreetmap>`_
+  * * departements2015
+    * `Geofla® - Départements 2015 (2015) <https://public.opendatasoft.com/explore/dataset/geoflar-departements-2015>`_
+  * * departements2019
+    * `Contours géographiques des départements (2019) <https://public.opendatasoft.com/explore/dataset/contours-geographiques-des-departements-2019>`_
+  * * departements-simplifies2015
+    * `Contours simplifiés des départements Français 2015 (2015) <https://public.opendatasoft.com/explore/dataset/contours-simplifies-des-departements-francais-2015>`_
+  * * epci2019
+    * `Contours géographiques des EPCI (2019) <https://public.opendatasoft.com/explore/dataset/contours-geographiques-des-epci-2019>`_
+  * * epci2018
+    * `Contours géographiques des EPCI (2018) <https://public.opendatasoft.com/explore/dataset/admin-express-epci-2018>`_
+  * * epci2017
+    * `Contours géographiques des EPCI (2017) <https://public.opendatasoft.com/explore/dataset/admin-express-epci-2017>`_
+  * * cantons2015
+    * `Cantons (2015) <https://public.opendatasoft.com/explore/dataset/decoupage-des-cantons-pour-les-elections-departementales-de-mars-2015>`_
+  * * epci2016
+    * `Contours géographiques des EPCI (2016) <https://public.opendatasoft.com/explore/dataset/contours-des-etablissements-publics-de-cooperation-intercommunale-epci-2016>`_
   * * communes2019
     * `Contours géographiques des communes (2019) <https://public.opendatasoft.com/explore/dataset/contours-geographiques-des-communes-2019>`_
-  * * postcodes2013
-    * `Carte des Codes Postaux (2013) <https://public.opendatasoft.com/explore/dataset/contour-des-codes-postaux>`_
+  * * communes2018
+    * `Contours géographiques des communes (2018) <https://public.opendatasoft.com/explore/dataset/admin-express-communes-2018>`_
+  * * communes2017
+    * `Contours géographiques des communes (2017) <https://public.opendatasoft.com/explore/dataset/admin-express-communes-2017>`_
+  * * communes2016
+    * `Geofla® Commune 2016 (2016) <https://public.opendatasoft.com/explore/dataset/geoflar-communes-2016>`_
+  * * communes2013
+    * `Geofla® - Communes 2013 (2013) <https://public.opendatasoft.com/explore/dataset/geoflar-communes>`_
+  * * communes2015
+    * `Geofla® - Communes 2015 (2015) <https://public.opendatasoft.com/explore/dataset/geoflar-communes-2015>`_
+  * * postcode2013
+    * `Codes postaux croisés aux communes (2013) <https://public.opendatasoft.com/explore/dataset/code-insee-postaux-geoflar>`_
+  * * iris2017
+    * `Contours Iris (2017) <https://public.opendatasoft.com/explore/dataset/contours-iris>`_
+  * * iris2016
+    * `Contours IRIS 2016 (2016) <https://public.opendatasoft.com/explore/dataset/contours-iris-2016>`_
+  * * iris-epci2016
+    * `Contours IRIS 2016 avec EPCI (2016) <https://public.opendatasoft.com/explore/dataset/contours-iris-2016-epci>`_
+  * * iris2015
+    * `Contours IRIS 2015 (2015) <https://public.opendatasoft.com/explore/dataset/contours-iris-2015>`_
+  * * iris2014
+    * `Contours IRIS 2014 (2014) <https://public.opendatasoft.com/explore/dataset/contours-iris-2014>`_
 
 Germany
 ~~~~~~~
@@ -181,14 +191,14 @@ Germany
 
   * * Repository
     * Source
-  * * stadten2017
-    * `Deutschland Stadt (2017) <https://public.opendatasoft.com/explore/dataset/deutschland-stadte-und-gemeinden>`_
   * * landern2016
     * `Deutschland Länder (2016) <https://public.opendatasoft.com/explore/dataset/deutschland-lander>`_
-  * * postleitzahlen2016
-    * `Postleitzahlen Deutschland (2016) <https://public.opendatasoft.com/explore/dataset/postleitzahlen-deutschland>`_
   * * landkreise2017
     * `Landkreise (2017) <https://public.opendatasoft.com/explore/dataset/landkreise-in-germany>`_
+  * * postleitzahlen2016
+    * `Postleitzahlen Deutschland (2016) <https://public.opendatasoft.com/explore/dataset/postleitzahlen-deutschland>`_
+  * * stadten2017
+    * `Deutschland Stadt (2017) <https://public.opendatasoft.com/explore/dataset/deutschland-stadte-und-gemeinden>`_
 
 Mexico
 ~~~~~~
@@ -212,7 +222,6 @@ Netherlands
   * * postcodes2015
     * `Nederland Postcodes (2015) <https://public.opendatasoft.com/explore/dataset/openpostcodevlakkenpc4>`_
 
-
 Scotland (GB)
 ~~~~~~~~~~~~~
 
@@ -221,10 +230,10 @@ Scotland (GB)
 
   * * Repository
     * Source
-  * * wards2014
-    * `Wards in Scotland (2014) <https://public.opendatasoft.com/explore/dataset/wards-in-scotland-december-2014>`_
   * * wards2015
     * `Wards in Scotland (2015) <https://public.opendatasoft.com/explore/dataset/wards-in-scotland-december-2015>`_
+  * * wards2014
+    * `Wards in Scotland (2014) <https://public.opendatasoft.com/explore/dataset/wards-in-scotland-december-2014>`_
   * * wards2016
     * `Wards in Scotland (2016) <https://public.opendatasoft.com/explore/dataset/wards-in-scotland-december-2016>`_
 
@@ -236,10 +245,10 @@ Spain
 
   * * Repository
     * Source
-  * * provincias2012
-    * `Provincias españolas (2012) <https://public.opendatasoft.com/explore/dataset/provincias-espanolas>`_
   * * comunidades-autonomas2012
     * `Comunidades Autónomas españolas (2012) <https://public.opendatasoft.com/explore/dataset/comunidades-autonomas-espanolas>`_
+  * * provincias2012
+    * `Provincias españolas (2012) <https://public.opendatasoft.com/explore/dataset/provincias-espanolas>`_
 
 Switzerland
 ~~~~~~~~~~~
@@ -249,18 +258,18 @@ Switzerland
 
   * * Repository
     * Source
-  * * gemeinde2018
-    * `swissBOUNDARIES3D - TLM HOHEITSGEBIET (2018) <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm-hoheitsgebiet-2018>`_
-  * * bezirke2018
-    * `swissBOUNDARIES3D - TLM BEZIRKSGEBIET (2018) <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm-bezirksgebiet-2018>`_
   * * kantone2017
     * `swissBOUNDARIES3D - TLM_KANTONSGEBIET (2017) <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm_kantonsgebiet>`_
-  * * gemeinde2017
-    * `swissBOUNDARIES3D - TLM HOHEITSGEBIET (2017) <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm_hoheitsgebiet>`_
-  * * bezirke2017
-    * `swissBOUNDARIES3D - TLM BEZIRKSGEBIET (2017) <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm_bezirksgebiet>`_
   * * kantone2018
     * `swissBOUNDARIES3D - TLM_KANTONSGEBIET (2018) <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm_kantonsgebiet-2018>`_
+  * * bezirke2018
+    * `swissBOUNDARIES3D - TLM BEZIRKSGEBIET (2018) <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm-bezirksgebiet-2018>`_
+  * * bezirke2017
+    * `swissBOUNDARIES3D - TLM BEZIRKSGEBIET (2017) <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm_bezirksgebiet>`_
+  * * gemeinde2018
+    * `swissBOUNDARIES3D - TLM HOHEITSGEBIET (2018) <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm-hoheitsgebiet-2018>`_
+  * * gemeinde2017
+    * `swissBOUNDARIES3D - TLM HOHEITSGEBIET (2017) <https://public.opendatasoft.com/explore/dataset/swissboundaries3d-tlm_hoheitsgebiet>`_
   * * postleitzahlen2017
     * `Amtliches Ortschaftenverzeichnis mit Postleitzahl und Perimeter (2017) <https://public.opendatasoft.com/explore/dataset/amtliches-ortschaftenverzeichnis-mit-postleitzahl-und-perimeter>`_
 
@@ -272,12 +281,12 @@ USA
 
   * * Repository
     * Source
+  * * states2017
+    * `US State Boundaries (2017) <https://public.opendatasoft.com/explore/dataset/us-state-boundaries>`_
   * * counties2017
     * `US County Boundaries (2017) <https://public.opendatasoft.com/explore/dataset/us-county-boundaries>`_
   * * zcta2016
     * `ZCTA (2016) <https://public.opendatasoft.com/explore/dataset/us-zcta-2010>`_
-  * * states2017
-    * `US State Boundaries (2017) <https://public.opendatasoft.com/explore/dataset/us-state-boundaries>`_
 
 United Kingdom
 ~~~~~~~~~~~~~~
@@ -287,14 +296,14 @@ United Kingdom
 
   * * Repository
     * Source
-  * * wards2017
-    * `Wards  (2017) <https://public.opendatasoft.com/explore/dataset/united-kingdom-wards-december-2017>`_
-  * * districts2018
-    * `Local Authority Districts (2018) <https://public.opendatasoft.com/explore/dataset/united-kingdom-local-authority-districts-december-2018>`_
-  * * counties2017
-    * `Counties and Unitary Authorities (2017) <https://public.opendatasoft.com/explore/dataset/united-kingdom-counties-and-unitary-authorities-december-2017>`_
   * * countries2017
     * `United Kingdom - Constituent Countries (2017) <https://public.opendatasoft.com/explore/dataset/uk_div1>`_
+  * * counties2017
+    * `Counties and Unitary Authorities (2017) <https://public.opendatasoft.com/explore/dataset/united-kingdom-counties-and-unitary-authorities-december-2017>`_
+  * * districts2018
+    * `Local Authority Districts (2018) <https://public.opendatasoft.com/explore/dataset/united-kingdom-local-authority-districts-december-2018>`_
+  * * wards2017
+    * `Wards  (2017) <https://public.opendatasoft.com/explore/dataset/united-kingdom-wards-december-2017>`_
 
 Wales (GB)
 ~~~~~~~~~~
@@ -304,18 +313,18 @@ Wales (GB)
 
   * * Repository
     * Source
-  * * parishes2016
-    * `Parishes in Wales (2016) <https://public.opendatasoft.com/explore/dataset/parishes-in-wales-december-2016>`_
-  * * wards2014
-    * `Wards in Wales (2014) <https://public.opendatasoft.com/explore/dataset/wards-in-wales-december-2014>`_
-  * * parishes2014
-    * `Parishes in Wales (2014) <https://public.opendatasoft.com/explore/dataset/parishes-in-wales-december-2014>`_
-  * * wards2016
-    * `Wards in Wales (2016) <https://public.opendatasoft.com/explore/dataset/wards-in-wales-december-2016>`_
   * * counties2016
     * `Counties and Unitary Authorities in Wales (2016) <https://public.opendatasoft.com/explore/dataset/counties-and-unitary-authorities-december-2016-generalised-clipped-boundaries-i0>`_
+  * * wards2016
+    * `Wards in Wales (2016) <https://public.opendatasoft.com/explore/dataset/wards-in-wales-december-2016>`_
   * * wards2015
     * `Wards in Wales (2015) <https://public.opendatasoft.com/explore/dataset/wards-in-wales-december-2015>`_
+  * * wards2014
+    * `Wards in Wales (2014) <https://public.opendatasoft.com/explore/dataset/wards-in-wales-december-2014>`_
+  * * parishes2016
+    * `Parishes in Wales (2016) <https://public.opendatasoft.com/explore/dataset/parishes-in-wales-december-2016>`_
+  * * parishes2014
+    * `Parishes in Wales (2014) <https://public.opendatasoft.com/explore/dataset/parishes-in-wales-december-2014>`_
 
 World
 ~~~~~
