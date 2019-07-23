@@ -108,3 +108,10 @@ Then, we just need to add a rules in the CSS code, stating that the class "large
     }
 
 There are many CSS rules you can add, to any of your elements.
+
+.. admonition:: Note
+   :class: note
+
+   Theme colors, defined in the Look & feel section of the back office, can be used in the page stylesheet, as CSS variables (more information in the :ref:`Customizing theme and portal icon documentation<theme_colors_variables>`).
+
+   Note that the final result will not be displayed in the page preview when using Internet Explorer.
