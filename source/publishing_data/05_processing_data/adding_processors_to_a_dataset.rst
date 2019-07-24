@@ -36,7 +36,6 @@ Geographical processors
   processors/geocode_with_arcgis
   processors/geocode_with_pdok
   processors/ip_address_to_geo_coordinates
-  processors/zip_code_to_geo_coordinates
   processors/what3words
   processors/get_coordinates_from_3_word_address
   processors/geojoin
