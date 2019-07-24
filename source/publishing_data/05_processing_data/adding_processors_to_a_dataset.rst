@@ -35,7 +35,6 @@ Geographical processors
   processors/geocode_with_google
   processors/geocode_with_arcgis
   processors/geocode_with_pdok
-  processors/insee_code_to_geo_coordinates
   processors/ip_address_to_geo_coordinates
   processors/zip_code_to_geo_coordinates
   processors/what3words
@@ -78,9 +77,6 @@ Geocoders
   * * :doc:`Geocode with PDOK<processors/geocode_with_pdok>`
     * Geocode addresses in the Netherlands by using the PDOK service
     * On demand
-  * * :doc:`INSEE code to geo coordinates<processors/insee_code_to_geo_coordinates>`
-    * Produce a geo coordinate with a French INSEE code
-    * Default
   * * :doc:`IP address to geo coordinates<processors/ip_address_to_geo_coordinates>`
     * Geocode an IP address
     * Default
