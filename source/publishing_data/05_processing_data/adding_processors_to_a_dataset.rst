@@ -80,9 +80,6 @@ Geocoders
   * * :doc:`IP address to geo coordinates<processors/ip_address_to_geo_coordinates>`
     * Geocode an IP address
     * Default
-  * * :doc:`Zip code to geo coordinates<processors/zip_code_to_geo_coordinates>`
-    * Produce a geo coordinate with a French postal code
-    * Default
   * * :doc:`what3words<processors/what3words>`
     * Produce a 3 word address with geographical coordinates
     * On demand
