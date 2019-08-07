@@ -92,6 +92,8 @@ your portal to your colors.
 
    These variables will override the default theme's colors. The custom style rules you can write in the stylesheet tab will however have precedence over these colors. Which means that your color choices may not be visible if you wrote more specific CSS rules.
 
+.. _theme_colors_variables:
+
 .. admonition:: Note
    :class: note
 
