@@ -20,6 +20,14 @@ In the Export tab of a dataset, the following formats can be available:
 
    Using the `Opendatasoft Search API <https://help.opendatasoft.com/apis/ods-search-v2/#exporting-records>`_, it is possible to download the dataset in other formats.
 
+.. admonition:: Note
+   :class: note
+
+   There are 2 limitations in Shapefile exports.
+
+   - The export cannot contain more than 50,000 records.
+   - The export cannot contain more than one geographical shape type (e.g. point, polygon, linestring etc.). Only the first type of the first non-empty record will be kept in the export.
+
 1. Go to the Export tab of the dataset.
 2. Choose the file format to download.
 3. Click on "Whole dataset" next to the chosen format.
