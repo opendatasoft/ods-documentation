@@ -247,6 +247,7 @@ Generic processors
   processors/copy_field
   processors/delete_record_by_id
   processors/expand_json_array
+  processors/expand_multivalued_field
   processors/expression
   processors/extract_bit_range
   processors/extract_from_json
@@ -256,6 +257,7 @@ Generic processors
   processors/skip_records
   processors/transform_boolean_columns_to_multivalued_field
   processors/transpose_fields
+
 
 .. list-table::
   :header-rows: 1
@@ -274,6 +276,9 @@ Generic processors
     * Default
   * * :doc:`Expand from JSON array<processors/expand_json_array>`
     * Transpose rows containing a JSON array into several rows
+    * Default
+  * * :doc:`Expand multivalued field<processors/expand_multivalued_field>`
+    * Transform the values contained in a multivalued field into several records
     * Default
   * * :doc:`Expression<processors/expression>`
     * Write complex expression patterns using field values
