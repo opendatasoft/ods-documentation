@@ -45,6 +45,15 @@ To set the parameters of the Join dataset processor, follow the indications from
   * * Separator
     * To fill if One line is set. Specifies the character to use to separate values in the generated field.
     * no
+  * * Republish all records upon update
+    * Activates scheduling on the dataset, if it is not already activated (see :doc:`Keeping data up to date</publishing_data/03_scheduling_updates/scheduling_updates>`). Once scheduling is configured, this option allows the automatic update of the data retrieved from the remote dataset.
+
+      .. admonition:: Note
+         :class: note
+
+         This option is most useful when the remote dataset is scheduled.
+
+    * no
 
 
 Examples
