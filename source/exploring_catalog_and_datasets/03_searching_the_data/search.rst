@@ -142,7 +142,7 @@ available fields for a given dataset, you may use the search dataset or lookup d
 
 Multiple operator fields can be used between the field name and the query:
 
-* ``:``, ``-``, ``==``: Return results whose field exactly matches the given value (granted the fields are of text or numeric
+* ``:``, ``=``, ``==``: Return results whose field exactly matches the given value (granted the fields are of text or numeric
   type)
 * ``>``, ``<``, ``>=``, ``<=``: Return results whose field values are larger, smaller, larger or equal, smaller or equal to the given value (granted the field is of date or numeric type).
 * ``[start_date TO end_date]``: Queries Records whose date is between ``start_date`` and ``end_date``.
