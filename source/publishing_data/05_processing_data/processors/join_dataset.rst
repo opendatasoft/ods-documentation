@@ -239,4 +239,4 @@ Dataset A after being joined with datasets B and C:
      * Kalhausen
      * 57412
 
-Even though the insee_code was not in the same type, the matching happened. The matching worked even for the value ``1262`` in the first dataset (note the absence of leading 0, due to it being an integer value), that matched against the value ``01262`` in the second dataset. While most column types can be retrieved by using the Join dataset processor, file type columns do not yield the actual resource through the processor but instead yield the name of the underlying resource.
+Even though the insee_code was not in the same type, the matching happened. The matching worked even for the value ``1262`` in the first dataset (note the absence of leading 0, due to it being an integer value), that matched against the value ``01262`` in the second dataset. While most column types can be retrieved by using the Join dataset processor, file type columns do not yield the actual resource through the processor but instead yield the identifier of the underlying resource.
