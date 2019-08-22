@@ -1,7 +1,7 @@
 Geo distance processor
 ======================
 
-This processor computes the distance between 2 coordinates. The computed distance is in meters.
+This processor computes the distance between 2 coordinates. The computed distance is in kilometers.
 
 Setting the processor
 ---------------------

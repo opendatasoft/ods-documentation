@@ -1,10 +1,10 @@
 Displaying legals
 =================
 
-Cookies and trackers informations
----------------------------------
+Cookies and trackers information
+--------------------------------
 
-If you are located in the EU, you are required by law to you display a message informing your users that the sites uses cookies, and for what purpose.
+If you are located in the EU, you are required by law to display a message informing your users that the sites uses cookies, and for what purpose.
 
 You can choose to display this message in the ``Configuration`` menu, in the ``Legals`` section :
 
