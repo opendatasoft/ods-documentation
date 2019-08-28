@@ -7,6 +7,7 @@ This processor requires an ArcGIS API key.
 
 .. admonition:: Note
    :class: note
+
    This processor can be connected with a custom ArcGIS geocoder. Please contact Opendatasoft support team if you want this configuration to be activated in your domain.
 
 Setting the API key
