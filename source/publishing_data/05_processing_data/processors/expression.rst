@@ -282,7 +282,7 @@ Text handling
        * ``mid([text],[numeric])``
      * Extract a part of text (1st argument), from the left, right or the middle; the size of the extract is given by the 2nd argument for ``left`` and ``right``, by the 2nd and 3rd arguments for ``mid``
      * * ``left("hello", 2)`` returns ``"he"``
-       * ``right("hello", 3)`` returns ``"lo"``
+       * ``right("hello", 3)`` returns ``"llo"``
        * ``mid("hello", 2, 3)`` returns ``"ell"``
 
 Mathematical functions
