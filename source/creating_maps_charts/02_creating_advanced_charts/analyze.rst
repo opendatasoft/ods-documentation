@@ -45,10 +45,10 @@ Here is what this layer looks like with these settings and two thresholds:
 .. image:: images/chart-onelayer.png
 
 
-Adding a serie
---------------
+Adding a series
+---------------
 
-You can add a data representation on the same dataset by clicking on ``Add a serie``.
+You can add a data representation on the same dataset by clicking on ``Add a series``.
 
 The `X-Axis` parameters will be the same, but you can customize the type of curve and tweak the appearance parameters on the new serie.
 

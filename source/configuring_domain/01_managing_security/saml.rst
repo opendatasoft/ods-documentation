@@ -100,14 +100,21 @@ Register and configure an identity provider
    If for any reason your identity provider doesn't send all of these elements, let the corresponding fields blank. The
    platform will automatically generate them based on other available attributes.
 
-8. Optionally input an access condition.
+8. Input an access condition.
 
    The first box is the name of the attribute to check for, and the second one the value of that attribute.
    If you just want to check for the presence of an attribute, without value restriction, just leave the second box blank.
+   If both fields are left blank no condition is set and any successful login on the IdP side will trigger a login on your Opendatasoft domain.
 
    For instance, if your identity provider sends a list of "Roles" for the users and you want to make sure that only users that have a role can get access, input "Roles" in the first box under "Conditionnal access". If you only want users with the role "DataAccess" to be able to connect to the domain, input "DataAccess" in the second box.
 
-9. Optionally configure the default login page
+9. Input the URL on which the user can check their user profile on the IdP. When set, a link to this URL will be shown to the user in their user account page. If left blank, no URL will be shown to the user in their account page.
+
+10. Input a custom EntityID for the Service Provider. If left blank the URL of the Service Provider metadata document will be used as the EntityID. If your IdP doesn't support EntityIDs in URL format, you can set any EntityID here.
+
+11. Customize the SAML login link text. If left blank, a localized default message will be displayed.
+
+12. Optionally configure the default login page
 
    The default login page configuration can be found by navigating to the security page in the domain configuration interface.
 

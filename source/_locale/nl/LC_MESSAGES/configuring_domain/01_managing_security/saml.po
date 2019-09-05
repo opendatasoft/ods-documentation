@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Translator_NL1 <datawords.translator.nl1@gmail.com>, 2019
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
+# Translator_NL1 <datawords.translator.nl1@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-07 17:56+0200\n"
+"POT-Creation-Date: 2019-09-05 14:56+0200\n"
 "PO-Revision-Date: 2018-06-27 09:08+0000\n"
-"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019\n"
+"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2019\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -402,21 +402,25 @@ msgstr ""
 " deze automatisch genereren op basis van andere beschikbare attributen."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:103
-msgid "Optionally input an access condition."
-msgstr "Voer optioneel een toegangsvoorwaarde in."
+msgid "Input an access condition."
+msgstr "Een toegangsvoorwaarde invoeren."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:105
 msgid ""
 "The first box is the name of the attribute to check for, and the second one "
 "the value of that attribute. If you just want to check for the presence of "
-"an attribute, without value restriction, just leave the second box blank."
+"an attribute, without value restriction, just leave the second box blank. If"
+" both fields are left blank no condition is set and any successful login on "
+"the IdP side will trigger a login on your Opendatasoft domain."
 msgstr ""
-"Het eerste vakje is de naam van het attribuut dat moet worden gecontroleerd "
-"en het tweede de waarde van dat attribuut. Indien u enkel de aanwezigheid "
-"van een attribuut wil controleren, zonder waardebeperking, dient u het "
-"tweede vakje gewoon leeg te laten."
+"Het eerste vakje is de naam van het attribuut dat gecontroleerd moet worden "
+"en het tweede is de waarde van dat attribuut. Indien je enkel de "
+"aanwezigheid van een attribuut wilt controleren zonder waardebeperking, kunt"
+" u het tweede vakje gewoon blanco laten. Wanneer beide velden blanco worden "
+"gelaten, wordt er geen voorwaarde ingesteld en zal elke succesvolle login op"
+" de IdP-zijde aanleiding geven tot een login op uw Opendatasoft-domein."
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:108
+#: ../../source/configuring_domain/01_managing_security/saml.rst:109
 msgid ""
 "For instance, if your identity provider sends a list of \"Roles\" for the "
 "users and you want to make sure that only users that have a role can get "
@@ -431,11 +435,44 @@ msgstr ""
 "met de rol \"DataAccess\" kunnen inloggen op het domein, voer dan "
 "\"DataAccess\" in het tweede vakje in."
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:110
+#: ../../source/configuring_domain/01_managing_security/saml.rst:111
+msgid ""
+"Input the URL on which the user can check their user profile on the IdP. "
+"When set, a link to this URL will be shown to the user in their user account"
+" page. If left blank, no URL will be shown to the user in their account "
+"page."
+msgstr ""
+"Voer de URL in op basis waarvan de gebruiker zijn gebruikersprofiel kan "
+"controleren op de IdP. Bij het instellen zal er een link naar deze URL aan "
+"de gebruiker worden getoond in zijn gebruikersaccountpagina. Wanneer deze "
+"blanco wordt gelaten, zal geen URL aan de gebruiker worden getoond in zijn "
+"gebruikersaccountpagina."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:113
+msgid ""
+"Input a custom EntityID for the Service Provider. If left blank the URL of "
+"the Service Provider metadata document will be used as the EntityID. If your"
+" IdP doesn't support EntityIDs in URL format, you can set any EntityID here."
+msgstr ""
+"Een gepersonaliseerd EntityID voor de Service Provider invoeren.  Wanneer "
+"deze blanco wordt gelaten, zal de URL van het metadatadocument van de "
+"Service Provider gebruikt worden als het EntityID. Wanneer uw IdP EntityID's"
+" in URL-formaat niet ondersteunt, kunt u hier om het even welk EntityID "
+"instellen."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:115
+msgid ""
+"Customize the SAML login link text. If left blank, a localized default "
+"message will be displayed."
+msgstr ""
+"De SAML login link tekst personaliseren. Wanneer deze blanco wordt gelaten, "
+"zal een gelokaliseerd standaardbericht worden weergegeven."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:117
 msgid "Optionally configure the default login page"
 msgstr "De standaard inlogpagina optioneel configureren"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:112
+#: ../../source/configuring_domain/01_managing_security/saml.rst:119
 msgid ""
 "The default login page configuration can be found by navigating to the "
 "security page in the domain configuration interface."
@@ -443,11 +480,11 @@ msgstr ""
 "De standaard inlogpaginaconfiguratie kan worden teruggevonden door te surfen"
 " naar de veiligheidspagina in de configuratie-interface van het domein."
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:118
+#: ../../source/configuring_domain/01_managing_security/saml.rst:125
 msgid "Configure your identity provider"
 msgstr "Configureer uw identiteitsprovicder"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:120
+#: ../../source/configuring_domain/01_managing_security/saml.rst:127
 msgid ""
 "The configuration of the identity provider is implementation-dependant, but "
 "it always consist of importing the service provider metadata document to "
@@ -457,7 +494,7 @@ msgstr ""
 "maar bestaat altijd uit het importeren van het metadatadocument van de "
 "dienstverlener om een identiteitsfederatie mogelijk te maken."
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:123
+#: ../../source/configuring_domain/01_managing_security/saml.rst:130
 msgid ""
 "You can download the metadata document for your Opendatasoft domain on "
 "``https://<YOUR DOMAIN>.opendatasoft.com/saml2/metadata.xml``"
@@ -465,11 +502,11 @@ msgstr ""
 "U kan het metadatadocument voor uw Opendatasoft-domein downloaden op "
 "``https://<YOUR DOMAIN>.opendatasoft.com/saml2/metadata.xml``"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:128
+#: ../../source/configuring_domain/01_managing_security/saml.rst:135
 msgid "Using user attributes to filter data"
 msgstr "Gebruikersattributen gebruiken om data te filteren"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:130
+#: ../../source/configuring_domain/01_managing_security/saml.rst:137
 msgid ""
 "Through the #attr function, it is possible to filter a dataset records in "
 "such a way that the only records returned are the ones that match a value "
@@ -486,168 +523,168 @@ msgstr ""
 "SAML-attributen ``gebruiker-land`` en ``gebruiker-taal`` zoals die vermeld "
 "staan in de volgende tabel."
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:135
+#: ../../source/configuring_domain/01_managing_security/saml.rst:142
 msgid "User"
 msgstr "Gebruiker"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:136
+#: ../../source/configuring_domain/01_managing_security/saml.rst:143
 msgid "user-country"
 msgstr "gebruiker-land"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:137
+#: ../../source/configuring_domain/01_managing_security/saml.rst:144
 msgid "user-language"
 msgstr "gebruiker-taal"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:138
+#: ../../source/configuring_domain/01_managing_security/saml.rst:145
 msgid "User1"
 msgstr "Gebruiker1"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:139
-#: ../../source/configuring_domain/01_managing_security/saml.rst:160
-#: ../../source/configuring_domain/01_managing_security/saml.rst:183
-#: ../../source/configuring_domain/01_managing_security/saml.rst:224
-#: ../../source/configuring_domain/01_managing_security/saml.rst:239
-#: ../../source/configuring_domain/01_managing_security/saml.rst:271
+#: ../../source/configuring_domain/01_managing_security/saml.rst:146
+#: ../../source/configuring_domain/01_managing_security/saml.rst:167
+#: ../../source/configuring_domain/01_managing_security/saml.rst:190
+#: ../../source/configuring_domain/01_managing_security/saml.rst:231
+#: ../../source/configuring_domain/01_managing_security/saml.rst:246
+#: ../../source/configuring_domain/01_managing_security/saml.rst:278
 msgid "France"
 msgstr "Frankrijk"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:140
-#: ../../source/configuring_domain/01_managing_security/saml.rst:143
-#: ../../source/configuring_domain/01_managing_security/saml.rst:161
-#: ../../source/configuring_domain/01_managing_security/saml.rst:164
-#: ../../source/configuring_domain/01_managing_security/saml.rst:184
-#: ../../source/configuring_domain/01_managing_security/saml.rst:196
-#: ../../source/configuring_domain/01_managing_security/saml.rst:225
-#: ../../source/configuring_domain/01_managing_security/saml.rst:228
-#: ../../source/configuring_domain/01_managing_security/saml.rst:240
-#: ../../source/configuring_domain/01_managing_security/saml.rst:243
-#: ../../source/configuring_domain/01_managing_security/saml.rst:272
-#: ../../source/configuring_domain/01_managing_security/saml.rst:284
+#: ../../source/configuring_domain/01_managing_security/saml.rst:147
+#: ../../source/configuring_domain/01_managing_security/saml.rst:150
+#: ../../source/configuring_domain/01_managing_security/saml.rst:168
+#: ../../source/configuring_domain/01_managing_security/saml.rst:171
+#: ../../source/configuring_domain/01_managing_security/saml.rst:191
+#: ../../source/configuring_domain/01_managing_security/saml.rst:203
+#: ../../source/configuring_domain/01_managing_security/saml.rst:232
+#: ../../source/configuring_domain/01_managing_security/saml.rst:235
+#: ../../source/configuring_domain/01_managing_security/saml.rst:247
+#: ../../source/configuring_domain/01_managing_security/saml.rst:250
+#: ../../source/configuring_domain/01_managing_security/saml.rst:279
+#: ../../source/configuring_domain/01_managing_security/saml.rst:291
 msgid "French"
 msgstr "Frans"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:141
+#: ../../source/configuring_domain/01_managing_security/saml.rst:148
 msgid "User2"
 msgstr "Gebruiker2"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:142
-#: ../../source/configuring_domain/01_managing_security/saml.rst:163
-#: ../../source/configuring_domain/01_managing_security/saml.rst:166
-#: ../../source/configuring_domain/01_managing_security/saml.rst:195
-#: ../../source/configuring_domain/01_managing_security/saml.rst:198
-#: ../../source/configuring_domain/01_managing_security/saml.rst:227
-#: ../../source/configuring_domain/01_managing_security/saml.rst:242
-#: ../../source/configuring_domain/01_managing_security/saml.rst:283
+#: ../../source/configuring_domain/01_managing_security/saml.rst:149
+#: ../../source/configuring_domain/01_managing_security/saml.rst:170
+#: ../../source/configuring_domain/01_managing_security/saml.rst:173
+#: ../../source/configuring_domain/01_managing_security/saml.rst:202
+#: ../../source/configuring_domain/01_managing_security/saml.rst:205
+#: ../../source/configuring_domain/01_managing_security/saml.rst:234
+#: ../../source/configuring_domain/01_managing_security/saml.rst:249
+#: ../../source/configuring_domain/01_managing_security/saml.rst:290
 msgid "Canada"
 msgstr "Canada"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:144
+#: ../../source/configuring_domain/01_managing_security/saml.rst:151
 msgid "User3"
 msgstr "Gebruiker3"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:145
-#: ../../source/configuring_domain/01_managing_security/saml.rst:169
-#: ../../source/configuring_domain/01_managing_security/saml.rst:210
-#: ../../source/configuring_domain/01_managing_security/saml.rst:257
-#: ../../source/configuring_domain/01_managing_security/saml.rst:295
+#: ../../source/configuring_domain/01_managing_security/saml.rst:152
+#: ../../source/configuring_domain/01_managing_security/saml.rst:176
+#: ../../source/configuring_domain/01_managing_security/saml.rst:217
+#: ../../source/configuring_domain/01_managing_security/saml.rst:264
+#: ../../source/configuring_domain/01_managing_security/saml.rst:302
 msgid "United States"
 msgstr "Verenigde Staten"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:146
-#: ../../source/configuring_domain/01_managing_security/saml.rst:158
-#: ../../source/configuring_domain/01_managing_security/saml.rst:167
-#: ../../source/configuring_domain/01_managing_security/saml.rst:170
-#: ../../source/configuring_domain/01_managing_security/saml.rst:199
-#: ../../source/configuring_domain/01_managing_security/saml.rst:211
-#: ../../source/configuring_domain/01_managing_security/saml.rst:255
-#: ../../source/configuring_domain/01_managing_security/saml.rst:258
-#: ../../source/configuring_domain/01_managing_security/saml.rst:296
+#: ../../source/configuring_domain/01_managing_security/saml.rst:153
+#: ../../source/configuring_domain/01_managing_security/saml.rst:165
+#: ../../source/configuring_domain/01_managing_security/saml.rst:174
+#: ../../source/configuring_domain/01_managing_security/saml.rst:177
+#: ../../source/configuring_domain/01_managing_security/saml.rst:206
+#: ../../source/configuring_domain/01_managing_security/saml.rst:218
+#: ../../source/configuring_domain/01_managing_security/saml.rst:262
+#: ../../source/configuring_domain/01_managing_security/saml.rst:265
+#: ../../source/configuring_domain/01_managing_security/saml.rst:303
 msgid "English"
 msgstr "Engels"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:149
+#: ../../source/configuring_domain/01_managing_security/saml.rst:156
 msgid "And a dataset with records given by the following table."
 msgstr ""
 "En een dataset met records zoals die vermeld staan in de volgende tabel."
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:154
-#: ../../source/configuring_domain/01_managing_security/saml.rst:180
-#: ../../source/configuring_domain/01_managing_security/saml.rst:192
-#: ../../source/configuring_domain/01_managing_security/saml.rst:207
-#: ../../source/configuring_domain/01_managing_security/saml.rst:221
-#: ../../source/configuring_domain/01_managing_security/saml.rst:236
-#: ../../source/configuring_domain/01_managing_security/saml.rst:251
-#: ../../source/configuring_domain/01_managing_security/saml.rst:268
-#: ../../source/configuring_domain/01_managing_security/saml.rst:280
-#: ../../source/configuring_domain/01_managing_security/saml.rst:292
+#: ../../source/configuring_domain/01_managing_security/saml.rst:161
+#: ../../source/configuring_domain/01_managing_security/saml.rst:187
+#: ../../source/configuring_domain/01_managing_security/saml.rst:199
+#: ../../source/configuring_domain/01_managing_security/saml.rst:214
+#: ../../source/configuring_domain/01_managing_security/saml.rst:228
+#: ../../source/configuring_domain/01_managing_security/saml.rst:243
+#: ../../source/configuring_domain/01_managing_security/saml.rst:258
+#: ../../source/configuring_domain/01_managing_security/saml.rst:275
+#: ../../source/configuring_domain/01_managing_security/saml.rst:287
+#: ../../source/configuring_domain/01_managing_security/saml.rst:299
 msgid "country"
 msgstr "land"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:155
-#: ../../source/configuring_domain/01_managing_security/saml.rst:181
-#: ../../source/configuring_domain/01_managing_security/saml.rst:193
-#: ../../source/configuring_domain/01_managing_security/saml.rst:208
-#: ../../source/configuring_domain/01_managing_security/saml.rst:222
-#: ../../source/configuring_domain/01_managing_security/saml.rst:237
-#: ../../source/configuring_domain/01_managing_security/saml.rst:252
-#: ../../source/configuring_domain/01_managing_security/saml.rst:269
-#: ../../source/configuring_domain/01_managing_security/saml.rst:281
-#: ../../source/configuring_domain/01_managing_security/saml.rst:293
+#: ../../source/configuring_domain/01_managing_security/saml.rst:162
+#: ../../source/configuring_domain/01_managing_security/saml.rst:188
+#: ../../source/configuring_domain/01_managing_security/saml.rst:200
+#: ../../source/configuring_domain/01_managing_security/saml.rst:215
+#: ../../source/configuring_domain/01_managing_security/saml.rst:229
+#: ../../source/configuring_domain/01_managing_security/saml.rst:244
+#: ../../source/configuring_domain/01_managing_security/saml.rst:259
+#: ../../source/configuring_domain/01_managing_security/saml.rst:276
+#: ../../source/configuring_domain/01_managing_security/saml.rst:288
+#: ../../source/configuring_domain/01_managing_security/saml.rst:300
 msgid "language"
 msgstr "taal"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:156
-#: ../../source/configuring_domain/01_managing_security/saml.rst:182
-#: ../../source/configuring_domain/01_managing_security/saml.rst:194
-#: ../../source/configuring_domain/01_managing_security/saml.rst:209
-#: ../../source/configuring_domain/01_managing_security/saml.rst:223
-#: ../../source/configuring_domain/01_managing_security/saml.rst:238
-#: ../../source/configuring_domain/01_managing_security/saml.rst:253
-#: ../../source/configuring_domain/01_managing_security/saml.rst:270
-#: ../../source/configuring_domain/01_managing_security/saml.rst:282
-#: ../../source/configuring_domain/01_managing_security/saml.rst:294
+#: ../../source/configuring_domain/01_managing_security/saml.rst:163
+#: ../../source/configuring_domain/01_managing_security/saml.rst:189
+#: ../../source/configuring_domain/01_managing_security/saml.rst:201
+#: ../../source/configuring_domain/01_managing_security/saml.rst:216
+#: ../../source/configuring_domain/01_managing_security/saml.rst:230
+#: ../../source/configuring_domain/01_managing_security/saml.rst:245
+#: ../../source/configuring_domain/01_managing_security/saml.rst:260
+#: ../../source/configuring_domain/01_managing_security/saml.rst:277
+#: ../../source/configuring_domain/01_managing_security/saml.rst:289
+#: ../../source/configuring_domain/01_managing_security/saml.rst:301
 msgid "message"
 msgstr "bericht"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:157
-#: ../../source/configuring_domain/01_managing_security/saml.rst:254
+#: ../../source/configuring_domain/01_managing_security/saml.rst:164
+#: ../../source/configuring_domain/01_managing_security/saml.rst:261
 msgid "Worldwide"
 msgstr "Wereldwijd"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:159
-#: ../../source/configuring_domain/01_managing_security/saml.rst:256
+#: ../../source/configuring_domain/01_managing_security/saml.rst:166
+#: ../../source/configuring_domain/01_managing_security/saml.rst:263
 msgid "Hello world"
 msgstr "Hallo wereld"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:162
-#: ../../source/configuring_domain/01_managing_security/saml.rst:185
-#: ../../source/configuring_domain/01_managing_security/saml.rst:226
-#: ../../source/configuring_domain/01_managing_security/saml.rst:241
-#: ../../source/configuring_domain/01_managing_security/saml.rst:273
+#: ../../source/configuring_domain/01_managing_security/saml.rst:169
+#: ../../source/configuring_domain/01_managing_security/saml.rst:192
+#: ../../source/configuring_domain/01_managing_security/saml.rst:233
+#: ../../source/configuring_domain/01_managing_security/saml.rst:248
+#: ../../source/configuring_domain/01_managing_security/saml.rst:280
 msgid "Bonjour à tous les Français"
 msgstr "Bonjour à tous les Français"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:165
-#: ../../source/configuring_domain/01_managing_security/saml.rst:197
-#: ../../source/configuring_domain/01_managing_security/saml.rst:229
-#: ../../source/configuring_domain/01_managing_security/saml.rst:244
-#: ../../source/configuring_domain/01_managing_security/saml.rst:285
+#: ../../source/configuring_domain/01_managing_security/saml.rst:172
+#: ../../source/configuring_domain/01_managing_security/saml.rst:204
+#: ../../source/configuring_domain/01_managing_security/saml.rst:236
+#: ../../source/configuring_domain/01_managing_security/saml.rst:251
+#: ../../source/configuring_domain/01_managing_security/saml.rst:292
 msgid "Bonjour à tous les Canadiens"
 msgstr "Bonjour à tous les Canadiens"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:168
-#: ../../source/configuring_domain/01_managing_security/saml.rst:200
+#: ../../source/configuring_domain/01_managing_security/saml.rst:175
+#: ../../source/configuring_domain/01_managing_security/saml.rst:207
 msgid "Hello to all Canadians"
 msgstr "Hallo aan alle Canadezen"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:171
-#: ../../source/configuring_domain/01_managing_security/saml.rst:212
-#: ../../source/configuring_domain/01_managing_security/saml.rst:259
-#: ../../source/configuring_domain/01_managing_security/saml.rst:297
+#: ../../source/configuring_domain/01_managing_security/saml.rst:178
+#: ../../source/configuring_domain/01_managing_security/saml.rst:219
+#: ../../source/configuring_domain/01_managing_security/saml.rst:266
+#: ../../source/configuring_domain/01_managing_security/saml.rst:304
 msgid "Hello to all Americans"
 msgstr "Hallo aan alle Amerikanen"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:173
+#: ../../source/configuring_domain/01_managing_security/saml.rst:180
 msgid ""
 "We can restrict these users so that they see only messages that apply to "
 "their respective countries, with the query ``#attr(country, user-country)``."
@@ -656,25 +693,25 @@ msgstr ""
 "die van toepassing zijn op hun respectieve landen, met de zoekopdracht "
 "``#attr(country, user-country)``."
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:175
-#: ../../source/configuring_domain/01_managing_security/saml.rst:216
-#: ../../source/configuring_domain/01_managing_security/saml.rst:263
+#: ../../source/configuring_domain/01_managing_security/saml.rst:182
+#: ../../source/configuring_domain/01_managing_security/saml.rst:223
+#: ../../source/configuring_domain/01_managing_security/saml.rst:270
 msgid "User1 sees"
 msgstr "Gebruiker1 ziet"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:187
-#: ../../source/configuring_domain/01_managing_security/saml.rst:231
-#: ../../source/configuring_domain/01_managing_security/saml.rst:275
+#: ../../source/configuring_domain/01_managing_security/saml.rst:194
+#: ../../source/configuring_domain/01_managing_security/saml.rst:238
+#: ../../source/configuring_domain/01_managing_security/saml.rst:282
 msgid "User2 sees"
 msgstr "Gebruiker2 ziet"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:202
-#: ../../source/configuring_domain/01_managing_security/saml.rst:246
-#: ../../source/configuring_domain/01_managing_security/saml.rst:287
+#: ../../source/configuring_domain/01_managing_security/saml.rst:209
+#: ../../source/configuring_domain/01_managing_security/saml.rst:253
+#: ../../source/configuring_domain/01_managing_security/saml.rst:294
 msgid "User3 sees"
 msgstr "Gebruiker3 ziet"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:214
+#: ../../source/configuring_domain/01_managing_security/saml.rst:221
 msgid ""
 "We can also restrict these users so that they only see messages that are in "
 "their respective language, with the query ``#attr(language, user-"
@@ -684,7 +721,7 @@ msgstr ""
 "die in hun respectieve taal zijn weergegeven, met de zoekopdracht  "
 "``#attr(language, user-language)``."
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:261
+#: ../../source/configuring_domain/01_managing_security/saml.rst:268
 msgid ""
 "Since it is a function of the query language, it can also be grouped with "
 "the usual operators, for instance, we can restrict users to only seeing "

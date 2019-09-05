@@ -240,8 +240,8 @@ Text handling
    * * ``contains([text],[text])``, ``startswith([text],[text])``, ``endswith([text],[text])``
      * True if text (1st argument) contains, starts with or ends with text (2nd argument)
      * * ``contains("hello", "l")`` returns ``True``
-       * ``startswith("hello', 'he')`` returns ``True``
-       * ``endswith("hello', 'he')`` returns ``False``
+       * ``startswith("hello", 'he')`` returns ``True``
+       * ``endswith("hello", 'he')`` returns ``False``
 
 
 **Processing functions**
@@ -272,8 +272,18 @@ Text handling
      * Convert a text to its ascii representation
      * ``normalize("你好")`` returns ``"ni hao"``
    * * ``substring([text],[numeric],[numeric])``
-     * Extract a substring of text, starting at index indicated by 2nd argument and of a length indicated by 3rd argument (optional).
+     * Extract a substring of text, starting at index indicated by 2nd argument and of a length indicated by 3rd argument (optional)
      * ``substring('hello', 1, 3)`` returns ``"ell"``
+   * * ``count([text], [text])``
+     * Return the number of times the 2nd argument is found in the 1st argument
+     * ``count("Hello world", "l")`` returns ``3``
+   * * * ``left([text],[numeric])``
+       * ``right([text],[numeric])``
+       * ``mid([text],[numeric])``
+     * Extract a part of text (1st argument), from the left, right or the middle; the size of the extract is given by the 2nd argument for ``left`` and ``right``, by the 2nd and 3rd arguments for ``mid``
+     * * ``left("hello", 2)`` returns ``"he"``
+       * ``right("hello", 3)`` returns ``"llo"``
+       * ``mid("hello", 2, 3)`` returns ``"ell"``
 
 Mathematical functions
 ^^^^^^^^^^^^^^^^^^^^^^

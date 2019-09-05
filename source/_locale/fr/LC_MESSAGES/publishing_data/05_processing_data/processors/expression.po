@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-07 17:56+0200\n"
+"POT-Creation-Date: 2019-09-05 14:56+0200\n"
 "PO-Revision-Date: 2018-06-27 09:13+0000\n"
 "Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
@@ -106,8 +106,8 @@ msgstr "Label"
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:148
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:214
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:253
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:285
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:333
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:295
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:343
 msgid "Description"
 msgstr "Description"
 
@@ -458,8 +458,8 @@ msgstr "Opérateur"
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:149
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:215
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:254
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:286
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:334
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:296
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:344
 msgid "Example"
 msgstr "Exemple"
 
@@ -703,8 +703,8 @@ msgstr "**Fonctions booléennes**"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:213
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:252
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:284
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:332
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:294
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:342
 msgid "Function"
 msgstr "Fonction"
 
@@ -793,12 +793,12 @@ msgid "``contains(\"hello\", \"l\")`` returns ``True``"
 msgstr "``contains(\"hello\", \"l\")`` retourne ``True``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:243
-msgid "``startswith(\"hello', 'he')`` returns ``True``"
-msgstr "``startswith(\"hello', 'he')`` retourne ``True``"
+msgid "``startswith(\"hello\", 'he')`` returns ``True``"
+msgstr "``startswith(\"hello\", 'he')`` retourne ``True``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:244
-msgid "``endswith(\"hello', 'he')`` returns ``False``"
-msgstr "``endswith(\"hello', 'he')`` retourne ``False``"
+msgid "``endswith(\"hello\", 'he')`` returns ``False``"
+msgstr "``endswith(\"hello\", 'he')`` retourne ``False``"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:247
 msgid "**Processing functions**"
@@ -885,7 +885,7 @@ msgstr "``substring([texte],[nombre],[nombre])``"
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:275
 msgid ""
 "Extract a substring of text, starting at index indicated by 2nd argument and"
-" of a length indicated by 3rd argument (optional)."
+" of a length indicated by 3rd argument (optional)"
 msgstr ""
 "Extrait une sous-chaîne de texte, en commençant à l'index indiqué par le 2nd"
 " argument et d'une longueur indiquée par le 3e argument (optionnel)."
@@ -894,131 +894,180 @@ msgstr ""
 msgid "``substring('hello', 1, 3)`` returns ``\"ell\"``"
 msgstr "``substring('hello', 1, 3)`` retourne ``\"ell\"``"
 
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:277
+msgid "``count([text], [text])``"
+msgstr "``count([texte], [texte])``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:278
+msgid ""
+"Return the number of times the 2nd argument is found in the 1st argument"
+msgstr ""
+"Retourne le nombre de fois où le 2nd argument apparaît dans le 1er argument"
+
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:279
+msgid "``count(\"Hello world\", \"l\")`` returns ``3``"
+msgstr "``count(\"Hello world\", \"l\")`` retourne ``3``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:280
+msgid "``left([text],[numeric])``"
+msgstr "``left([texte],[nombre])``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:281
+msgid "``right([text],[numeric])``"
+msgstr "``right([texte],[nombre])``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:282
+msgid "``mid([text],[numeric])``"
+msgstr "``mid([texte],[nombre])``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:283
+msgid ""
+"Extract a part of text (1st argument), from the left, right or the middle; "
+"the size of the extract is given by the 2nd argument for ``left`` and "
+"``right``, by the 2nd and 3rd arguments for ``mid``"
+msgstr ""
+"Extrait une partie du texte (1er argument) en partant de la gauche, de la "
+"droite ou du milieu ; la taille de l'extrait est déterminé par le 2nd "
+"argument pour ``gauche`` et ``droite``, par les 2nd et 3e arguments pour "
+"``mid``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:284
+msgid "``left(\"hello\", 2)`` returns ``\"he\"``"
+msgstr "``left(\"hello\", 2)`` retourne ``\"he\"``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:285
+msgid "``right(\"hello\", 3)`` returns ``\"llo\"``"
+msgstr "``right(\"hello\", 3)`` retourne ``\"llo\"``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:286
+msgid "``mid(\"hello\", 2, 3)`` returns ``\"ell\"``"
+msgstr "``mid(\"hello\", 2, 3)`` retourne ``\"ell\"``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:289
 msgid "Mathematical functions"
 msgstr "Fonctions mathématiques"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:287
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:297
 msgid "``abs([numeric])``"
 msgstr "``abs([nombre])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:288
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:298
 msgid "Absolute value"
 msgstr "Valeur absolue"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:289
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:299
 msgid "``abs(-4)`` returns ``4``"
 msgstr "``abs(-4)`` retourne ``4``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:290
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:300
 msgid "``sqrt([numeric])``"
 msgstr "``sqrt([nombre])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:291
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:301
 msgid "Square root"
 msgstr "Racine carrée"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:293
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:303
 msgid "``floor([numeric])``, ``ceil([numeric])``"
 msgstr "``floor([nombre])``, ``ceil([nombre])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:294
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:304
 msgid "Floor and ceiling functions"
 msgstr "Fonctions arrondi à l'entier inférieur et supérieur"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:295
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:305
 msgid "``floor(4.6)`` returns ``4``"
 msgstr "``floor(4.6)`` retourne ``4``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:296
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:306
 msgid "``ceil(3.3)`` returns ``4``"
 msgstr "``ceil(3.3)`` retourne ``4``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:297
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:307
 msgid "``max([numeric],[numeric])``, ``min([numeric],[numeric])``"
 msgstr "``max([nombre],[nombre])``, ``min([nombre],[nombre])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:298
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:308
 msgid "Max and min functions"
 msgstr "Fonctions minimales et maximales"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:300
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:310
 msgid "``round([numeric])``"
 msgstr "``round([nombre])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:301
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:311
 msgid "Return the nearest integer"
 msgstr "Arrondit à l'entier le plus proche"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:302
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:312
 msgid "``round(4.6)`` returns ``5``"
 msgstr "``round(4.6)`` retourne ``5``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:303
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:313
 msgid "``round(3.3)`` returns ``4``"
 msgstr "``round(3.3)`` retourne ``4``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:304
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:314
 msgid "``random([numeric])``"
 msgstr "``random([nombre])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:305
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:315
 msgid "Random number generator (between 0 and [numeric])"
 msgstr "Génère un nombre aléatoire (entre 0 et [nombre])"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:306
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:316
 msgid "``random(10)`` returns for example ``7.27846540481``"
 msgstr "``random(10)`` retourne par exemple ``7.27846540481``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:307
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:317
 msgid "``pow([numeric], [numeric])``"
 msgstr "``pow([nombre], [nombre])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:308
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:318
 msgid "Power function"
 msgstr "Fonction puissance"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:309
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:319
 msgid "``pow(2, 3)`` returns ``8``"
 msgstr "``pow(2, 3)`` retourne ``8``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:310
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:320
 msgid "``exp([numeric])``, ``log([numeric])``, ``log10([numeric])``"
 msgstr "``exp([nombre])``, ``log([nombre])``, ``log10([nombre])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:311
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:321
 msgid "Exponential, logarithm and base 10 logarithm functions"
 msgstr "Fonctions exponentielles, logarithmiques et du logarithme en base 10"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:312
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:322
 msgid "``exp(1)`` returns ``E``"
 msgstr "``exp(1)`` retourne ``E``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:313
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:323
 msgid "``radians([numeric])``"
 msgstr "``radians([nombre])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:314
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:324
 msgid "Convert an angle from degrees to radians"
 msgstr "Convertit un angle de degrés en radians"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:315
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:325
 msgid "``radians(180)`` returns ``PI``"
 msgstr "``radians(180)`` retourne ``PI``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:316
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:326
 msgid "``degrees([numeric])``"
 msgstr "``degrees([nombre])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:317
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:327
 msgid "Convert an angle from radians to degrees"
 msgstr "Convertit un angle de radians en degrés"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:318
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:328
 msgid "``degrees(PI)`` returns ``180``"
 msgstr "``degrees(PI)`` retourne ``180``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:319
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:329
 msgid ""
 "``cos([numeric])``, ``cosh([numeric])``, ``sin([numeric])``, "
 "``sinh([numeric])``, ``tan([numeric])``, ``tanh([numeric])``"
@@ -1026,7 +1075,7 @@ msgstr ""
 "``cos([nombre])``, ``cosh([nombre])``, ``sin([nombre])``, "
 "``sinh([nombre])``, ``tan([nombre])``, ``tanh([nombre])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:320
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:330
 msgid ""
 "Cosine, hyperbolic cosine, sine, hyperbolic sine, tangent, hyperbolic "
 "tangent (in radians)"
@@ -1034,11 +1083,11 @@ msgstr ""
 "Cosinus, cosinus hyperbolique, sinus, sinus hyperbolique, tangente, tangente"
 " hyperbolique (en radians)"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:321
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:331
 msgid "``sin(PI)`` returns ``0``"
 msgstr "``sin(PI)`` retourne ``0``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:322
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:332
 msgid ""
 "``acos([numeric])``, ``acosh([numeric])``, ``asin([numeric])``, "
 "``asinh([numeric])``, ``atan([numeric])``, ``atanh([numeric])``"
@@ -1046,7 +1095,7 @@ msgstr ""
 "``acos([nombre])``, ``acosh([nombre])``, ``asin([nombre])``, "
 "``asinh([nombre])``, ``atan([nombre])``, ``atanh([nombre])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:323
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:333
 msgid ""
 "Inverse cosine, inverse cosine hyberbolical, inverse sine, inverse sine "
 "hyperbolical, inverse tangent, inverse tangent hyperbolical (in radians)"
@@ -1055,15 +1104,15 @@ msgstr ""
 "inverse hyperbolique, tangente inverse, tangente inverse hyperbolique (en "
 "radians)"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:324
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:334
 msgid "``acos(0)`` returns ``PI/2``"
 msgstr "``acos(0)`` retourne ``PI/2``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:327
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:337
 msgid "Date and time handling"
 msgstr "Gestion de la date et de l'heure"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:335
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:345
 msgid ""
 "``year([datetime])``, ``quarter([datetime])``, ``month([datetime])``, "
 "``day([datetime])``, ``dayofweek([datetime])``, ``hour([datetime])``, "
@@ -1073,7 +1122,7 @@ msgstr ""
 "``day([datetime])``, ``dayofweek([datetime])``, ``hour([datetime])``, "
 "``minute([datetime])``, ``second([datetime])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:336
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:346
 msgid ""
 "Extract the year, quarter, month, day, day of week, hours, minutes, seconds "
 "from a datetime"
@@ -1081,19 +1130,19 @@ msgstr ""
 "Extrait l'année, le trimestre, le mois, la date, le jour de la semaine, les "
 "heures, les minutes et les secondes d'un datetime"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:337
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:347
 msgid "``year(\"2014-06-07\")`` returns ``2014``"
 msgstr "``year(\"2014-06-07\")`` retourne ``2014``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:338
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:348
 msgid "``hour(\"2014-06-07 17:00\")`` returns ``17``"
 msgstr "``hour(\"2014-06-07 17:00\")`` retourne ``17``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:339
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:349
 msgid "``hour(\"2014-06-07 17:00\", \"Europe/Paris\")`` returns ``19``"
 msgstr "``hour(\"2014-06-07 17:00\", \"Europe/Paris\")`` retourne ``19``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:340
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:350
 msgid ""
 "``add_years([datetime],[numeric])``, ``add_months([datetime],[numeric])``, "
 "``add_days([datetime],[numeric])``, ``add_hours([datetime],[numeric])``, "
@@ -1103,53 +1152,53 @@ msgstr ""
 "``add_days([datetime],[nombre])``, ``add_hours([datetime],[nombre])``, "
 "``add_minutes([datetime],[nombre])``, ``add_seconds([datetime],[nombre])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:341
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:351
 msgid "Add years, months, days, hours, minutes, seconds to a datetime"
 msgstr ""
 "Ajoute des années, des mois, des jours, des heures, des minutes ou des "
 "secondes à un datetime"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:342
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:352
 msgid "``add_months(\"2014-11-14\", \"3\")`` returns ``2015-02-14``"
 msgstr "``add_months(\"2014-11-14\", \"3\")`` retourne ``2015-02-14``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:343
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:353
 msgid "``fromtimestamp([numeric])``"
 msgstr "``fromtimestamp([nombre])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:344
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:354
 msgid "Convert a timestamp to a datetime"
 msgstr "Convertit un indicateur temporel en datetime"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:346
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:356
 msgid "``quartertodaterange([numeric])``"
 msgstr "``quartertodaterange([nombre])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:347
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:357
 msgid "Convert a quarter (e.g: \"2014Q2\", \"2019q1\") to a date range"
 msgstr "Convertit un trimestre en intervalle de dates"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:348
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:358
 msgid "``quartertodaterange(\"2014Q2\")`` returns ``\"2014-04-01 / 2014-06-30\"``"
 msgstr "``quartertodaterange(\"2014Q2\")`` retourne ``\"2014-04-01 / 2014-06-30\"``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:349
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:359
 msgid "``datediff([datetime], [datetime], [unit])``"
 msgstr "``datediff([datetime], [datetime], [unité])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:350
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:360
 msgid ""
 "Count the number of units between the two datetimes. ``[unit]`` can be "
 "\"year\", \"month\", \"day\", \"hour\", \"minute\", \"second\"."
 msgstr ""
 "Compte le nombre d'unités entre deux datetimes. ``[unité]`` peut être être "
-"\"année\", \"mois\", \"jour\", \"heure\", \"minute\" ou \"seconde\""
+"\"year\", \"month\", \"day\", \"hour\", \"minute\" ou \"second\""
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:351
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:361
 msgid "``datediff(\"2014-02-28\", \"2015-02-28\", \"month\")`` returns ``12``"
 msgstr "``datediff(\"2014-02-28\", \"2015-02-28\", \"month\")`` retourne ``12``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:352
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:362
 msgid ""
 "``datediff(\"2014-02-28T20:00:00Z\", \"2014-02-28T21:00:00Z\", \"minute\")``"
 " returns ``60``"

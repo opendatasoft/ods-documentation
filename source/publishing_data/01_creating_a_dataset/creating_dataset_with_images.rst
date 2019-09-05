@@ -7,7 +7,12 @@ It is possible to source the following media files into the platform:
 - PDF files (.pdf)
 - GTFS files (.gtfs)
 
-All formats considered as images by the platform will be imported as such. It means that a thumbnail will be generated for these formats, activating the Images visualization. The other types of files can also be added into a dataset, however no thumbnail will be generated and the Images visualization will not be available. Users will only be able to download these files.
+.. admonition:: Important
+   :class: important
+
+   All formats considered as images by the platform will be imported as such. It means that a thumbnail will be generated for these formats, activating the Images visualization (see :doc:`Configuring the Images visualization</publishing_data/07_configuring_visualizations/04_configuring_image_view/image>`).
+
+   However, for other formats that are not considered as images such as PDF and GTFS files, no thumbnail will be generated. It means that the Images visualization will not be available. Users will only be able to download these files.
 
 There are 2 different methods to source media files and add them into a dataset: with an archive file or via a URL.
 
