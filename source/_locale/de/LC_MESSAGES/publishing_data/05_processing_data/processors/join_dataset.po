@@ -5,18 +5,18 @@
 # 
 # Translators:
 # traducteur_DE1 <datawords.translator.de1@gmail.com>, 2018
-# Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2018
 # Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2018
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
+# Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-07 17:56+0200\n"
+"POT-Creation-Date: 2019-08-22 17:51+0200\n"
 "PO-Revision-Date: 2018-06-27 09:13+0000\n"
-"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019\n"
+"Last-Translator: Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2019\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -160,6 +160,7 @@ msgstr "Um alle Felder des Remote-Datensatzes abzurufen."
 #: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:41
 #: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:44
 #: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:47
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:56
 msgid "no"
 msgstr "nein"
 
@@ -200,15 +201,44 @@ msgstr ""
 "Auszufüllen, wenn \"Eine Zeile\" eingestellt ist. Bestimmt das Zeichen, das "
 "verwendet werden soll, um Werte im generierten Feld zu trennen."
 
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:48
+msgid "Republish all records upon update"
+msgstr "Alle Einträge nach einem Update erneut publizieren"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:49
+msgid ""
+"Activates scheduling on the dataset, if it is not already activated (see "
+":doc:`Keeping data up to "
+"date</publishing_data/03_scheduling_updates/scheduling_updates>`). Once "
+"scheduling is configured, this option allows an automatic republish when the"
+" remote dataset is updated."
+msgstr ""
+"Aktiviert einen Zeitplan für den Datensatz, falls dieser nicht bereits "
+"aktiviert ist (siehe :doc:`Daten auf dem neuesten Stand "
+"halten</publishing_data/03_scheduling_updates/scheduling_updates>`). Sobald "
+"der Zeitplan konfiguriert ist, sorgt diese Option automatisch für eine "
+"erneute Veröffentlichung, wenn der Remote-Datensatz aktualisiert wurde."
+
 #: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:51
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:113
+msgid "Note"
+msgstr "Hinweis"
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:54
+msgid "This option is most useful when the remote dataset is scheduled."
+msgstr ""
+"Diese Option ist vor allem praktisch, wenn für den Remote-Datensatz ein "
+"Zeitplan vorliegt."
+
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:60
 msgid "Examples"
 msgstr "Beispiele"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:54
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:63
 msgid "Simple join"
 msgstr "Einfache Verbindung"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:56
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:65
 msgid ""
 "Dataset A: list of taxi stations in Paris (dataset name: "
 "paris_taxis_stations)."
@@ -216,115 +246,115 @@ msgstr ""
 "Datensatz A: Liste der Taxistationen in Paris (Der Name dieses Datensatzes "
 "lautet: paris_taxis_stations)."
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:61
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:76
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:88
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:114
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:132
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:150
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:70
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:85
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:97
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:123
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:141
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:159
 msgid "station_id"
 msgstr "station_id"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:62
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:90
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:115
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:134
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:152
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:71
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:99
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:124
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:143
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:161
 msgid "station_name"
 msgstr "station_name"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:63
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:91
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:116
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:135
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:153
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:72
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:100
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:125
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:144
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:162
 msgid "station_address"
 msgstr "station_adresse"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:64
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:78
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:92
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:117
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:120
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:136
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:154
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:158
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:73
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:87
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:101
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:126
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:129
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:145
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:163
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:167
 msgid "1"
 msgstr "1"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:65
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:94
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:118
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:156
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:74
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:103
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:127
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:165
 msgid "Tour Eiffel"
 msgstr "Eiffelturm"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:66
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:95
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:119
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:122
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:157
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:161
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:75
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:104
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:128
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:131
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:166
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:170
 msgid "69 quai Branly, 75007 Paris"
 msgstr "69 quai Branly, 75007 Paris"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:67
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:80
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:96
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:123
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:140
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:162
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:192
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:202
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:204
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:234
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:238
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:76
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:89
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:105
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:132
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:149
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:171
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:201
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:211
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:213
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:243
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:247
 msgid "2"
 msgstr "2"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:68
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:98
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:124
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:142
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:164
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:77
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:107
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:133
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:151
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:173
 msgid "Rennes - Montparnasse"
 msgstr "Rennes - Montparnasse"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:69
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:99
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:125
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:143
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:165
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:78
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:108
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:134
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:152
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:174
 msgid "1 place du dix huit Juin 1940, 75006 Paris"
 msgstr "1 place du dix huit Juin 1940, 75006 Paris"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:71
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:80
 msgid "Dataset B: number of taxis waiting per station in Paris."
 msgstr "Datensatz B: Die Anzahl der Taxis, die pro Station in Paris warten."
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:77
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:89
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:133
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:151
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:86
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:98
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:142
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:160
 msgid "number"
 msgstr "Anzahl"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:79
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:93
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:137
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:155
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:159
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:88
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:102
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:146
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:164
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:168
 msgid "10"
 msgstr "10"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:81
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:97
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:141
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:163
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:90
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:106
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:150
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:172
 msgid "15"
 msgstr "15"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:83
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:92
 msgid ""
 "Dataset A after being enriched with a field from dataset B, using the Join "
 "dataset processor:"
@@ -332,15 +362,11 @@ msgstr ""
 "Datensatz A, nachdem er unter Einsatz des Prozessors \"Datensätze "
 "verbinden\" mit einem Feld aus Datensatz B angereichert wurde:"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:102
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:111
 msgid "Join with \"One line\" parameter set"
 msgstr "Wenn der Parameter \"Eine Zeile\" eingestellt ist"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:104
-msgid "Note"
-msgstr "Hinweis"
-
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:107
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:116
 msgid ""
 "The example datasets used in the following example are the same as in the "
 "previous one."
@@ -348,39 +374,39 @@ msgstr ""
 "Die Beispieldatensätze, die im folgenden Beispiel verwendet werden, sind "
 "dieselben wie im vorherigen Beispiel."
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:109
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:118
 msgid "Dataset A contains two rows for the first station:"
 msgstr "Datensatz A enthält zwei Zeilen für die erste Station:"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:121
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:160
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:130
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:169
 msgid "Quai Branly"
 msgstr "Quai Branly"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:127
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:136
 msgid ""
 "If One line is set (with ``|`` set as separator), the Join will result in:"
 msgstr ""
 "Wenn \"Eine Zeile\" eingestellt ist (mit dem Trennzeichen \"|\"), erhält man"
 " folgendes Ergebnis:"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:138
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:147
 msgid "Tour Eiffel|Quai Branly"
 msgstr "Eiffelturm|Quai Branly"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:139
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:148
 msgid "69 quai Branly, 75007 Paris|69 quai Branly, 75007 Paris"
 msgstr "69 quai Branly, 75007 Paris|69 quai Branly, 75007 Paris"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:145
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:154
 msgid "However, if One line is not set, the Join will result in:"
 msgstr "Wenn \"Eine Zeile\" nicht eingestellt ist, erhält man folgendes Ergebnis:"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:168
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:177
 msgid "Join with different field types"
 msgstr "Verbindung mit verschiedenen Feldtypen"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:170
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:179
 msgid ""
 "Integers, decimals and text field containing numerical values can be joined "
 "together."
@@ -388,60 +414,60 @@ msgstr ""
 "Ganze und Dezimalzahlen sowie Textfelder mit numerischen Werten können "
 "zusammengefügt werden."
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:172
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:181
 msgid ""
 "Dataset A: with decimal fields and text fields containing numerical values."
 msgstr ""
 "Datensatz A: mit Dezimalfeldern und Textfeldern mit numerischen Werten."
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:177
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:199
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:229
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:186
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:208
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:238
 msgid "insee_code (text)"
 msgstr "insee_code (Text)"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:178
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:200
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:230
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:187
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:209
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:239
 msgid "bloom_competition_result (decimal)"
 msgstr "bloom_competition_result (Dezimalzahl)"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:179
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:201
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:233
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:188
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:210
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:242
 msgid "01262"
 msgstr "01262"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:180
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:184
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:189
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:193
 msgid "2.0"
 msgstr "2.0"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:181
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:218
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:190
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:227
 msgid "90010"
 msgstr "90010"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:182
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:191
 msgid "4.0"
 msgstr "4.0"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:183
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:203
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:221
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:237
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:192
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:212
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:230
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:246
 msgid "57355"
 msgstr "57355"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:186
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:195
 msgid "Dataset B: with integer fields."
 msgstr "Datensatz B: mit Ganzzahlfeldern"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:191
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:200
 msgid "bloom_ranks (integer)"
 msgstr "bloom_ranks (Ganzzahl)"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:194
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:203
 msgid ""
 "Dataset A after using Join dataset: the matching between values ``2`` and "
 "``2.0`` is successful despite the type difference."
@@ -450,65 +476,65 @@ msgstr ""
 " Übereinstimmung zwischen den Werten \"2\" und \"2.0\" ist trotz des "
 "unterschiedlichen Typs erfolgreich."
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:206
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:215
 msgid ""
 "It is possible to a second Join dataset processor, such as this dataset C:"
 msgstr ""
 "Es ist möglich, einen zweiten Prozessor zur Datensatzverbindung, z. B. für "
 "diesen Datensatz C, zu verwenden:"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:211
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:231
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:220
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:240
 msgid "city (text)"
 msgstr "city (Text)"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:212
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:221
 msgid "insee_code (integer)"
 msgstr "insee_code (Ganzzahl)"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:213
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:232
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:222
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:241
 msgid "postal_code (text)"
 msgstr "postal_code (Text)"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:214
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:235
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:223
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:244
 msgid "Montluel"
 msgstr "Montluel"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:215
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:224
 msgid "1262"
 msgstr "1262"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:216
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:236
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:225
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:245
 msgid "01120"
 msgstr "01120"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:217
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:226
 msgid "Belfort"
 msgstr "Belfort"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:219
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:228
 msgid "90000"
 msgstr "90000"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:220
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:239
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:229
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:248
 msgid "Kalhausen"
 msgstr "Kalhausen"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:222
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:240
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:231
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:249
 msgid "57412"
 msgstr "57412"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:224
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:233
 msgid "Dataset A after being joined with datasets B and C:"
 msgstr ""
 "Datensatz A, nachdem er mit Datensatz B und Datensatz C verbunden wurde:"
 
-#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:242
+#: ../../source/publishing_data/05_processing_data/processors/join_dataset.rst:251
 msgid ""
 "Even though the insee_code was not in the same type, the matching happened. "
 "The matching worked even for the value ``1262`` in the first dataset (note "
@@ -516,7 +542,7 @@ msgid ""
 "against the value ``01262`` in the second dataset. While most column types "
 "can be retrieved by using the Join dataset processor, file type columns do "
 "not yield the actual resource through the processor but instead yield the "
-"name of the underlying resource."
+"identifier of the underlying resource."
 msgstr ""
 "Trotz des unterschiedlichen Formats beim insee_code war der Abgleich "
 "erfolgreich. Der Abgleich funktionierte sogar für den Wert \"1262\" im "
@@ -524,5 +550,5 @@ msgstr ""
 "Ganzzahlwert ist), der dem Wert \"01262\" im zweiten Datensatz zugeordnet "
 "wurde. Während die meisten Spaltentypen mit dem Prozessor \"Datensätze "
 "verbinden\" abgerufen werden können, geben Dateitypspalten nicht die "
-"tatsächliche Ressource über den Prozessor an, sondern stattdessen den Namen "
-"der hinterlegten Ressource."
+"tatsächliche Ressource über den Prozessor an, sondern stattdessen die "
+"Kennung der hinterlegten Ressource."

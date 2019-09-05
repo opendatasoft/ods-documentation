@@ -6,18 +6,18 @@
 # Translators:
 # Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2018
 # Trad_FR2 <datawords.translator.fr2@gmail.com>, 2018
-# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2019
 # Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2019
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
+# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-07 17:56+0200\n"
+"POT-Creation-Date: 2019-08-22 17:51+0200\n"
 "PO-Revision-Date: 2018-06-27 09:13+0000\n"
-"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019\n"
+"Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2019\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,21 +47,34 @@ msgid "GTFS files (.gtfs)"
 msgstr "fichiers GTFS (.gtfs)."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:10
+msgid "Important"
+msgstr "Important"
+
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:13
 msgid ""
 "All formats considered as images by the platform will be imported as such. "
 "It means that a thumbnail will be generated for these formats, activating "
-"the Images visualization. The other types of files can also be added into a "
-"dataset, however no thumbnail will be generated and the Images visualization"
-" will not be available. Users will only be able to download these files."
+"the Images visualization (see :doc:`Configuring the Images "
+"visualization</publishing_data/07_configuring_visualizations/04_configuring_image_view/image>`)."
 msgstr ""
 "Tous les formats considérés comme étant des images par la plateforme seront "
 "importés comme tels. Cela signifie qu'une vignette sera générée pour ces "
-"formats, ce qui activera la visualisation Images. D'autres types de fichiers"
-" peuvent également être ajoutés à un jeu de données, mais aucune vignette ne"
-" sera générée et la visualisation Images sera indisponible. Les utilisateurs"
-" pourront uniquement télécharger ces fichiers."
+"formats, ce qui activera la visualisation Images (voir la documentation "
+":doc:`Configurer la visualisation Images`)."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:12
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:15
+msgid ""
+"However, for other formats that are not considered as images such as PDF and"
+" GTFS files, no thumbnail will be generated. It means that the Images "
+"visualization will not be available. Users will only be able to download "
+"these files."
+msgstr ""
+"Toutefois, pour les autres formats qui ne sont pas considérés comme des "
+"images (tels que les fichiers PDF et GTFS), aucune vignette ne sera générée "
+"et la visualisation Images sera indisponible. Les utilisateurs pourront "
+"uniquement télécharger ces fichiers."
+
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:17
 msgid ""
 "There are 2 different methods to source media files and add them into a "
 "dataset: with an archive file or via a URL."
@@ -69,11 +82,11 @@ msgstr ""
 "Deux méthodes sont proposées pour collecter des fichiers média et les "
 "ajouter à un jeu de données : avec un fichier d'archive ou via une URL."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:15
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:20
 msgid "Sourcing media files with an archive file"
 msgstr "Collecte de fichiers média avec un fichier d'archive"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:17
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:22
 msgid ""
 "This method consists in building an archive file (see :ref:`Supported "
 "compressed file formats<supportedcompressedformats>`) with the media files, "
@@ -83,24 +96,24 @@ msgstr ""
 "fichiers compressés pris en charge<supportedcompressedformats>`) avec les "
 "fichiers média, puis à l'importer dans la plateforme."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:20
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:25
 msgid "Building the archive file"
 msgstr "Création d'un fichier d'archive"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:22
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:27
 msgid "The archive file must contain:"
 msgstr "Le fichier d'archive doit contenir :"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:24
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:29
 msgid "the media files,"
 msgstr "les fichiers média ;"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:25
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:30
 msgid "and a CSV file listing the media files and their metadata"
 msgstr ""
 "un fichier CSV répertoriant les fichiers média et les métadonnées associées."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:27
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:32
 msgid ""
 "No matter what the format of the media files is, both these media files and "
 "CSV file must be zipped together. For instance, if the media files are "
@@ -112,12 +125,12 @@ msgstr ""
 "déjà des fichiers compressés, ils doivent une fois de plus être compressés "
 "avec le fichier CSV."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:29
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:34
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:39
 msgid "Caution"
 msgstr "Avertissement"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:32
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:37
 msgid ""
 "We recommend to keep all images at the same level into the archive file. "
 "However, if images are into subdirectories, keep in mind to write the whole "
@@ -128,15 +141,15 @@ msgstr ""
 "répertoires, n'oubliez pas de saisir l'ensemble du chemin dans le fichier "
 "CSV."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:37
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:42
 msgid "There must be only one CSV file, and it must only be in a CSV format."
 msgstr "Un seul fichier au format CSV doit être inclus."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:40
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:45
 msgid "Creating the CSV file of the archive file"
 msgstr "Créer le fichier CSV du fichier d'archive"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:42
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:47
 msgid ""
 "The CSV file must at least contain a column with the names of the media "
 "files. It can contain other columns, that will be considered as additional "
@@ -145,143 +158,143 @@ msgstr ""
 "Le fichier CSV doit avoir une colonne contenant les noms des fichiers média "
 "; les autres colonnes sont considérées comme des champs supplémentaires."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:44
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:111
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:49
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:116
 msgid "Example:"
 msgstr "Exemple : "
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:46
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:113
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:51
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:118
 msgid "CSV file to create a dataset with media files:"
 msgstr "Fichier CSV pour créer un jeu de données avec des fichiers média :"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:59
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:126
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:64
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:131
 msgid "Caption"
 msgstr "Légende"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:60
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:127
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:65
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:132
 msgid "Title"
 msgstr "Titre"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:61
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:128
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:66
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:133
 msgid "File"
 msgstr "Fichier"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:62
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:129
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:67
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:134
 msgid "Caption of PNG file"
 msgstr "Légende du fichier PNG"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:63
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:130
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:68
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:135
 msgid "Media 1"
 msgstr "Média 1"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:64
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:69
 msgid "1-10.png"
 msgstr "1-10.png"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:65
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:132
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:70
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:137
 msgid "Caption of PDF file"
 msgstr "Légende du fichier PDF"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:66
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:133
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:71
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:138
 msgid "Media 2"
 msgstr "Média 2"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:67
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:72
 msgid "1-20.pdf"
 msgstr "1-20.pdf"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:68
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:135
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:73
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:140
 msgid "Caption of ZIP file"
 msgstr "Légende du fichier ZIP"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:69
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:136
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:74
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:141
 msgid "Media 3"
 msgstr "Média 3"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:70
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:75
 msgid "2-10.zip"
 msgstr "2-10.zip"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:71
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:138
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:76
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:143
 msgid "Caption of SVG file"
 msgstr "Légende du fichier SVG"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:72
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:139
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:77
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:144
 msgid "Media 4"
 msgstr "Média 4"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:73
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:78
 msgid "2-20.svg"
 msgstr "2-20.svg"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:75
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:142
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:80
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:147
 msgid "In this example:"
 msgstr "Dans cet exemple :"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:77
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:82
 msgid "the column \"File\" indicates the names of the media files"
 msgstr "la colonne \"Fichier\" spécifie le nom des fichiers média ;"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:78
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:145
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:83
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:150
 msgid "the columns \"Title\" and \"Caption\" are additional fields"
 msgstr "les colonnes \"Titre\" et \"Légende\" sont des champs supplémentaires."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:81
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:86
 msgid "Sourcing the archive file"
 msgstr "Collecte du fichier d'archive"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:83
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:88
 msgid ""
 "Once the archive file is created, it can be imported into the platform."
 msgstr ""
 "Une fois le fichier d'archive créé, il peut être importé dans la plateforme."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:85
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:102
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:90
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:107
 msgid "In Catalog > Datasets, click on the **New dataset** button."
 msgstr ""
 "Dans Catalogue > Jeux de données, cliquez sur le bouton **Nouveau jeu de "
 "données**."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:86
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:103
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:91
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:108
 msgid "Click on the **Add a source** button."
 msgstr "Cliquez sur le bouton **Ajouter une source**."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:87
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:92
 msgid "Click on the **Upload a file** button."
 msgstr "Cliquez sur le bouton **Ajouter un fichier**."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:88
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:93
 msgid "Choose the archive file you created, with your media files inside."
 msgstr ""
 "Sélectionnez le fichier d'archive que vous avez créé, contenant vos fichiers"
 " média."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:89
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:94
 msgid "Click on the **Open** button of the file selection window."
 msgstr ""
 "Dans la fenêtre de sélection de fichiers, cliquez sur le bouton **Ouvrir**."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:93
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:98
 msgid "Sourcing media files via a URL"
 msgstr "Collecter des fichiers média via une URL"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:95
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:100
 msgid ""
 "This method consists in sourcing any :doc:`supported format "
 "<supported_formats>` file, containing URLs of media files stored in a remote"
@@ -293,11 +306,11 @@ msgstr ""
 "sur un serveur distant, ainsi qu'à utiliser un processeur pour définir les "
 "fichiers média et extraire les métadonnées associées."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:97
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:102
 msgid "Note"
 msgstr "Remarque"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:100
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:105
 msgid ""
 "For this method, Opendatasoft supports the following protocols: http, and "
 "its secured version https. Both should link to a single file."
@@ -306,7 +319,7 @@ msgstr ""
 "http et sa version sécurisée https, qui permettent d'accéder à un fichier "
 "simple."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:104
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:109
 msgid ""
 "Click on either **Upload a file** or **Enter a URL** to source the file. Any"
 " sourcing method works."
@@ -315,20 +328,20 @@ msgstr ""
 "fichier. Vous pouvez effectuer cette opération avec la méthode de collecte "
 "de votre choix."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:105
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:110
 msgid "Once the dataset is created, click on the **Processing** tab."
 msgstr "Une fois le jeu de données créé, cliquez sur l'onglet **Traitement**."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:106
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:111
 msgid "Click on the **Add a processor** button."
 msgstr "Cliquez sur le bouton **Ajouter un processeur**."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:107
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:112
 msgid "Choose the File processor, in the Generic operations section."
 msgstr ""
 "Choisissez le processeur de fichiers dans la section Opérations génériques."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:108
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:113
 msgid ""
 "In the File processor area, indicate which field contains the URLs of the "
 "media files."
@@ -336,7 +349,7 @@ msgstr ""
 "Dans la section du processeur de fichiers, indiquez quel champ contient les "
 "URL des fichiers média."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:109
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:114
 msgid ""
 "*(optional)* Still in the File processor area, tick the **Extract metadata**"
 " box to import the related metadata of the images."
@@ -344,23 +357,23 @@ msgstr ""
 "*(optionnel)* Toujours dans la section du processeur de fichiers, cochez la "
 "case **Extraire des métadonnées** pour importer les métadonnées des images."
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:131
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:136
 msgid "http://website.com/file_name.png"
 msgstr "http://website.com/file_name.png"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:134
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:139
 msgid "http://website.fr/file_name.pdf"
 msgstr "http://website.fr/file_name.pdf"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:137
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:142
 msgid "http://another-website.com/file_name.zip"
 msgstr "http://another-website.com/file_name.zip"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:140
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:145
 msgid "http://website.com/file_name.svg"
 msgstr "http://website.com/file_name.svg"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:144
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:149
 msgid ""
 "the column \"File\" indicates the URL of the media files (which is also the "
 "column that will be used with the File processor)"
@@ -368,11 +381,11 @@ msgstr ""
 "la colonne \"Fichier\" indique l'URL des fichiers média (qui est également "
 "la colonne qui sera utilisée avec le processeur de fichiers)"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:149
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:154
 msgid "Displaying images"
 msgstr "Affichage des images"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:151
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:156
 msgid ""
 "Once the images are imported into the platform, they can be displayed in 2 "
 "different ways:"
@@ -380,7 +393,7 @@ msgstr ""
 "Une fois les images importées dans la plateforme, elles peuvent être "
 "affichées de deux façons différentes :"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:153
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:158
 msgid ""
 "through the default Images visualization tab: an image gallery displaying "
 "all the images and their metadata"
@@ -388,7 +401,7 @@ msgstr ""
 "via l'onglet de visualisation Images par défaut : une galerie d'images "
 "présentant toutes les images et les métadonnées associées ;"
 
-#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:154
+#: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:159
 msgid ""
 "through a slideshow, which is `an Opendatasoft widget "
 "<http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-"
