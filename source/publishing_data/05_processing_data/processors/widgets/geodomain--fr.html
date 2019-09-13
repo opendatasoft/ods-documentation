@@ -2,12 +2,12 @@
 
 <link rel="stylesheet" href="../../../../../../vendor/ods-widgets-1.0.3/ods-widgets.css">
 
-<div ng-app="ods-widgets" >
-<ods-dataset-context context="geojoin" 
-geojoin-dataset="geo-datasets-v1"
-geojoin-domain="aduval"
-geojoin-apikey="XXX"
-geojoin-parameters="{'disjunctive.french_short':true,
+<div ng-app="ods-widgets" style="margin-bottom: 1rem;">
+<ods-dataset-context context="geodomain" 
+geodomain-dataset="ref-geodomain"
+geodomain-domain="documentation-resources"
+geodomain-apikey="XXX"
+geodomain-parameters="{'disjunctive.french_short':true,
                     'disjunctive.admin_metas_admin_georef_division':true,
                     'disjunctive.admin_metas_admin_georef_year':true}">
 
@@ -16,12 +16,12 @@ geojoin-parameters="{'disjunctive.french_short':true,
 Sélectionner un pays
 </p>
 <div ods-facet-results="items" 
-ods-facet-results-context="geojoin"
+ods-facet-results-context="geodomain"
 ods-facet-results-facet-name="french_short" 
 ods-facet-results-sort="-COUNT">
-<select ng-model="geojoin.parameters['refine.french_short']"
+<select ng-model="geodomain.parameters['refine.french_short']"
     ng-options="item.path as (item.name+' ('+item.count+' referential'+(item.count>1?'s':'')+')') for item in items"
-    ng-selected="geojoin.parameters['refine.french_short'] == item.path">
+    ng-selected="geodomain.parameters['refine.french_short'] == item.path">
 <option value="">-- Tous les pays --</option>
 </select>
 </div>
@@ -29,31 +29,18 @@ ods-facet-results-sort="-COUNT">
 Sélectionner un niveau administratif
 </p>
 <div ods-facet-results="items" 
-ods-facet-results-context="geojoin"
+ods-facet-results-context="geodomain"
 ods-facet-results-facet-name="admin_metas_admin_georef_division" 
 ods-facet-results-sort="-COUNT">
-<select ng-model="geojoin.parameters['refine.admin_metas_admin_georef_division']"
+<select ng-model="geodomain.parameters['refine.admin_metas_admin_georef_division']"
     ng-options="item.path as ('Level ' +item.name+' ('+item.count+' referential'+(item.count>1?'s':'')+')') for item in items"
-    ng-selected="geojoin.parameters['refine.admin_metas_admin_georef_division'] == item.path">
+    ng-selected="geodomain.parameters['refine.admin_metas_admin_georef_division'] == item.path">
 <option value="">-- Tous les niveaux administratifs --</option>
 </select>
-</div>            
-<p style="margin-bottom: 0.4rem; margin-top: 0.4rem">
-Sélectionner une année
-</p>
-<div ods-facet-results="items" 
-ods-facet-results-context="geojoin"
-ods-facet-results-facet-name="admin_metas_admin_georef_year" 
-ods-facet-results-sort="-COUNT">
-<select ng-model="geojoin.parameters['refine.admin_metas_admin_georef_year']"
-    ng-options="item.path as ('Year ' +item.name+' ('+item.count+' referential'+(item.count>1?'s':'')+')') for item in items"
-    ng-selected="geojoin.parameters['refine.admin_metas_admin_georef_year'] == item.path">
-<option value="">-- Toutes les années --</option>
-</select>
-</div>   
+</div>               
 </div>
 <div style="width: 70%;float: left;">
-    <ods-table context="geojoin" displayed-fields="french_short, repository, admin_metas_admin_georef_label, url, field_label, field_description, admin_metas_admin_georef_attribution"></ods-table>                                  
+    <ods-table context="geodomain" displayed-fields="french_short, admin_metas_admin_georef_slug, admin_metas_admin_georef_label, admin_metas_admin_georef_level, url, admin_metas_admin_georef_attribution"></ods-table>                                  
 </div>    
 
 </ods-dataset-context>

@@ -50,19 +50,20 @@ To set the parameters of the GeoJoin processor, follow the indications from the 
 Referentials
 ------------
 
-To set the **Repository**, follow the indications from the table of the chosen country.
+To set the **Repository**, follow the indications from the table of the chosen country. The table below displays the join key used by Geojoin. 
 
 .. admonition:: Note
    :class: note
 
-   The referentials below can also be found in datasets available on `public.opendatasoft.com <https://public.opendatasoft.com>`_.
+   If the referential used has a license with mandatory attribution, using Geojoin processor will transfer the attribution.
 
 .. ifconfig:: language == 'en'
 
   .. raw:: html
-    :file: widgets/filename--en.html
-  
+    :file: widgets/geojoin--en.html
+
 .. ifconfig:: language == 'fr'
 
   .. raw:: html
-    :file: widgets/filename--fr.html
+    :file: widgets/geojoin--fr.html
+
