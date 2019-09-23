@@ -32,3 +32,5 @@ Instead of erasing items from the list, it creates a new item indicating which m
    :class: caution
 
    Use this feature with caution, as it can be risky for the dataset when it comes to more important configurations. We especially would not advise to go back to a configuration that was operated before a source change.
+
+   Note also that in case the dataset was duplicated: it isn't possible to revert to a former version if the dataset source was added by another user.
