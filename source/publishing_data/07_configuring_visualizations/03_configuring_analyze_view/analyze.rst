@@ -43,3 +43,8 @@ Above the chart preview are displayed a variety of buttons and options to config
   - a color or color palette: to choose the color of the series
   - Y axis: to choose which field to use as Y axis (vertical line)
   - Use for ordering: for points to be displayed in a decreasing order in the chart, based on the chosen series
+
+.. admonition:: Caution
+   :class: caution
+
+   Be careful with the default charts of distributed and/or federated datasets: if they were originally configured with custom colors, re-configure the chart with other colors otherwise it will appear blank.
