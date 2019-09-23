@@ -11,6 +11,11 @@ The FTP folder must contain:
 - several **resources**
 - (optional) several **CSV schema files**
 
+.. admonition:: Caution
+   :class: caution
+
+   The FTP with meta CSV harvester only supports UTF-8.
+
 .. ifconfig:: language == 'en'
 
     .. figure:: ../images/ftp_folder--en.png
