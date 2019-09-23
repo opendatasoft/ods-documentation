@@ -21,6 +21,11 @@ This method consists in adding several files one by one into the platform, creat
 
    With this method, it's the first file to be added that determines the data schema. In other words, if the other files contain fields that do not match those in the first added file, they will be ignored by the platform.
 
+.. admonition:: Caution
+   :class: caution
+
+   Be careful when deleting files from a dataset created with multiple files, especially those with different data schemas: if the first file is deleted, the whole dataset will appear as empty.
+
 .. _sourcefilesviaarchive:
 
 Sourcing multiple files within an archive
