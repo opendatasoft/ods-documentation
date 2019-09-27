@@ -1,62 +1,55 @@
 Creating a content page
 =======================
 
-The Opendatasoft platform allows to publish and explore datasets, but also to use it to build fully customized content pages, mixing editorial content as well as data visualizations built from the datasets published in the domain.
+The Opendatasoft platform allows the creation of content pages, entirely build with HTML and CSS. These content pages can be used for various types of usage: portal homepage, dashboards that mix editorial content and data visualizations based on the datasets published on the portal, pages dedicated to specific topics (i.e. explanation on the open data project of the portal, the license etc.).
 
-Content pages can be used to:
+.. image:: images/page_edit.png
 
-* Complement and organize the portal by configuring a home page and by creating pages on specific topics (the project, the data license...)
-* Write editorial content directly on the platform and share it, as a direct link or through an embed
-* Build advanced dashboards with dynamic visualizations on the portal, and share them
+To create a new content page:
+
+1. Go to the Pages section of the back office.
+2. Click on the New Page button.
+3. In the Properties tab, fill in the following properties:
+
+   - Page URL (mandatory): write the page slug, which is both the unique identifier of the page, and the last part of the URL to access the page. This property is mandatory: the page cannot be fully created nor saved if it does not have a defined page slug.
+   - Title: choose a title for the page, which will be displayed as browser tab title, and in the list of content pages. The title can be configured in more than one language, depending on how many languages are available for the portal.
+   - Description: write a description for the page, which will be displayed in the list of content pages, right under the title.
+   - Tags: enter one or more tags related to the page, which will be displayed in the list of content pages, in the "Tags" column.
+
+4. Click on the Save button.
 
 Writing the page
 ----------------
 
-We want to create a very simple page, containing information about our portal, and a side bar to talk a bit about our city.
+.. admonition:: Important
+   :class: important
 
-Let's start by going into the Back office, and clicking on the *Page > New page* link in the menu.
+   In the page header, next the to title of the page, are displayed language buttons to manage the content page in the different languages available for the portal. Click on a language button to adapt and translate the page content in this language. Keepn in mind that if a content page is not configured in one language, users that navigate the portal in that same chosen language will only see a blank page.
 
-.. image:: images/page_list.png
+The content of the page is written and managed from the Content tab.
 
-This brings you into the interface to edit your new blank page.
+.. image:: images/page_edit-expert.png
 
-.. image:: images/page_edit.png
+The Content tab is composed of the drop down template selector, and the HTML and CSS editor right below. By default, the selected template is the Custom one, which allows the creation of a content page from scratch. Other templates are available: they are predefined content pages made for various purposes (homepages, contact pages, etc.), that should be edited only to adapt the portal.
+On the right of the Content tab is also displayed a Preview button. It opens a preview of the page as the users would see it
+on the portal, without having to save the page first.
 
-For now the page isn't really created yet; you need to save it first. Before doing this you need to configure
-the page **slug** (*page1* in the example above), which is both the page's unique identifier, and the last part of the page's URL
-(address in the browser).
+To chose a page template:
+
+1. Click on the Template drop down selector.
+2. Choose a template from the selection.
 
 .. admonition:: Note
    :class: note
 
-   If the domain is configured for multiple user interface languages, you need to configure the page's content (title, description and page text itself) for all the configured languages.
+   When selecting another template while one is already in place and has already been modified, a window appears to confirm the template change.
 
-The template selector shows predefined templates that you can directly use. These templates range from very simple layout, with text zones that you can
-edit directly, to portal homepages presenting the content of the catalog.
+To reset the template (i.e. erase the custom modifications and go back to the original state of the template):
 
-You can also choose to edit the page in **expert mode**,
-which gives you a direct access to the page's HTML and CSS, allowing you to :doc:`further customize the style of your page <style>`, or to `build very advanced pages using our Opendatasoft widgets <https://help.opendatasoft.com/tutorials/en/tutorials.html>`_.
-You can switch to expert mode from any template, meaning you can use these templates as starting points for dashboards or advanced pages.
-But once you've switched to expert mode, you cannot go back.
+1. Click on the Reset template button. A related window appears.
+2. Click on the "Reset the content" button to confirm the resetting of the template, and deletion of all custom modifications.
 
-.. image:: images/page_edit-expert.png
+.. admonition:: Note
+   :class: note
 
-Since the stated goal is to create a simple content page with a side bar, the "Main block + right column" template seems like a perfect fit.
-
-Once the template is chosen, you can see the two blocks of texts, and you can edit and format the text inside them using a text editor.
-For example you can type a few paragraphs about your portal in the center block, including headers and parts in bold using the editor.
-Then a few lines about your city in the right side bar.
-
-On the right part of the interface, you can see a little *Preview* button, which toggle a preview of the page as your users would see it
-on the portal, without having to save the page first.
-
-After editing the page, having a look at the preview, maybe editing and previewing again a few times, you'll reach a point where you are happy
-with your page, and you'll be able to save it.
-
-Making the page accessible to your users
-----------------------------------------
-
-Once the page is created and saved, it is accessible using its page URL; you can share the URL to anyone you want, but you may want
-to make the page accessible through your portal's menu, or even make it your new portal homepage. This is all done through
-the *Look & feel > Navigation* page.
-From here, you can add your page in the header menu, or set it as the homepage.
+   Although content pages can be shared using their URL, they can also be made available to the portal users via the navigation bar, or even set as main landing page (i.e. homepage) of the portal. These configurations are set in the Look & feel > Navigation section of the back office (see :doc:`Configuring the navigation menu </customizing_look_and_feel/02_configuring_navigation/navigation>`).
