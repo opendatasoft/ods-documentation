@@ -28,12 +28,27 @@ To set the parameters of the Retrieve Administrative Divisions processor, follow
 
    If the referential used has a license with mandatory attribution, using Retrieve Administrative Divisions processor will transfer the attribution.
 
+.. ifconfig:: language == 'de'
+
+  .. raw:: html
+    :file: widgets/geodomain--de.html
+
 .. ifconfig:: language == 'en'
 
   .. raw:: html
     :file: widgets/geodomain--en.html
 
+.. ifconfig:: language == 'es'
+
+  .. raw:: html
+    :file: widgets/geodomain--es.html
+
 .. ifconfig:: language == 'fr'
 
   .. raw:: html
     :file: widgets/geodomain--fr.html
+
+.. ifconfig:: language == 'nl'
+
+  .. raw:: html
+    :file: widgets/geodomain--nl.html

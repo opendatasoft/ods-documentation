@@ -57,13 +57,28 @@ To set the **Repository**, follow the indications from the table of the chosen c
 
    If the referential used has a license with mandatory attribution, using Geojoin processor will transfer the attribution.
 
+.. ifconfig:: language == 'de'
+
+  .. raw:: html
+    :file: widgets/geojoin--de.html
+
 .. ifconfig:: language == 'en'
 
   .. raw:: html
     :file: widgets/geojoin--en.html
 
+.. ifconfig:: language == 'es'
+
+  .. raw:: html
+    :file: widgets/geojoin--es.html
+
 .. ifconfig:: language == 'fr'
 
   .. raw:: html
     :file: widgets/geojoin--fr.html
+
+.. ifconfig:: language == 'nl'
+
+  .. raw:: html
+    :file: widgets/geojoin--nl.html
 
