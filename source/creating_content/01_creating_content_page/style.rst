@@ -13,7 +13,7 @@ changing the size of your text...
 In this article, we'll walk you through a few basic changes to a standard page template. We do not aim to teach HTML and CSS, as other resources
 will do this much better than us; however, these are examples that you can start from and expand upon.
 
-First, let's create a new page based on the "Main block + right column" template, as seen in the :doc:`Creating a simple content page <create>` article.
+First, let's create a new page based on the "Main block + right column" template, as seen in the :doc:`Creating a simple content page <creating_page>` article.
 Then, switch to **expert mode** using the link in the top right of the interface. You now have two "CSS" and "HTML" tabs, containing the code behing the page.
 
 The CSS tab is empty for now, as there is no specific CSS code. However, the HTML of the page is here:
