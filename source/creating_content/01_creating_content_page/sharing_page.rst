@@ -8,7 +8,7 @@ The Sharing tab of a content page displays several options to share or embed tha
 
    Sharing and/or embedding a content page however depends on the security configured for both the domain and the page itself.
 
-.. SCREENSHOT
+.. image:: images/sharing_tab.png
 
 Sharing a page via a direct URL
 -------------------------------
