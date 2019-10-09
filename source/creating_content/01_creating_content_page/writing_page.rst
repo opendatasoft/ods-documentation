@@ -4,11 +4,11 @@ Writing a content page
 .. admonition:: Important
    :class: important
 
-   In the page header, next to the title of the page, are displayed language buttons to manage the content page in the different languages available for the portal. Click on a language button to adapt and translate the page content in this language. Keep in mind that if a content page is not configured in one language, users that navigate the portal in that same chosen language will only see a blank page.
+   In the page header, next to the title of the page, are displayed language buttons -one for each language available in the domain. They allow multilingual content management. In case a content page has not been translated for a chosen language, when navigating from the front office, the page will remain blank for that chosen language.
 
 The content of the page is written and managed from the Content tab.
 
-.. image:: images/page_edit-expert.png
+.. SCREENSHOT
 
 The Content tab is composed of the drop-down template selector, and the HTML and CSS editor right below. By default, the selected template is the Custom one, which allows the creation of a content page from scratch. Other templates are available: they are predefined content pages made for various purposes (homepages, contact pages, etc.), that should be edited only to adapt the portal.
 On the right of the Content tab is also displayed a Preview button. It opens a preview of the page as the users would see it
