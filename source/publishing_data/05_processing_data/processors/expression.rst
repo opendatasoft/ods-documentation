@@ -198,7 +198,7 @@ The last part of the ternary operator is optional, which means that the followin
 .. admonition:: Note
    :class: note
 
-   Some operations can fail if they involve a field which type was wrongly guessed by the platform at the creation of the dataset, even if the field type was modified afterward.
+   Some operations can fail if they involve a field which type was wrongly guessed by the platform at the creation of the dataset, even if the field type was modified afterward. In that case, contact Opendatasoft support team.
 
 Functions
 ~~~~~~~~~

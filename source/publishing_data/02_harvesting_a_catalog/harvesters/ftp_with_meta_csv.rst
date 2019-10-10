@@ -14,7 +14,7 @@ The FTP folder must contain:
 .. admonition:: Caution
    :class: caution
 
-   The FTP with meta CSV harvester only supports UTF-8.
+   The FTP with meta CSV harvester only supports UTF-8 encoding.
 
 .. ifconfig:: language == 'en'
 
