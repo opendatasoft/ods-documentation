@@ -81,12 +81,19 @@ Refer to the table below to know more about the available metadata and how to co
     * 1. Click on the drop down menu.
       2. Choose a language amongst the Domain languages or other languages available.
   * * Geographic area
-    * Geographic area of the data contained in the dataset. This metadata is directly linked to :ref:`the mini map displayed in the front office of the portal <using-the-minimap>` : if the geographic area metadata is set for a dataset, an end-user will be able to find it through a geographic search of the catalog.
+    * Geographic area of the data contained in the dataset. This metadata is directly linked to :ref:`the geographic filter displayed in the front office of the portal <using-the-minimap>` : if the geographic area metadata is set for a dataset, users will be able to find it through a geographic search of the catalog.
     * Click the button of the chosen option amongst the following:
 
-      * None *(default)*: the geographic area won't be set for the dataset, which won't be searchable through the mini map.
+      * None *(default)*: the geographic area won't be set for the dataset, which won't be searchable through the geographic filter.
       * Auto: the geographic area will be defined as the smallest envelope containing all of the records' locations. Note that all data will be taken into account for this computation regardless of security parameters. The option is only available if the dataset contains geopoints.
-      * Manual: a map appears under this option when it is chosen. Draw a shape on the right geographic area corresponding to the data of the dataset, or paste a GeoJSON after having clicked on the map.
+      * Manual: a map appears under this option when it is chosen. Write the name of the data location in the textbox: a drop-down selection of matching location names will appear. Click on the right location, which will appear on the map.
+
+
+      .. admonition:: Caution
+         :class: caution
+
+         It is possible to add more than one default location, however they must be at the same administrative level.
+
   * * Timezone
     * Forces the dataset visualizations to use the defined timezone for the date and datetime fields. It avoids the dataset visualizations to depend on the timezone on which the user's computer is set.
     * 1. Click on the arrow on the right of the textbox. A drop down selection of timezones appears.
