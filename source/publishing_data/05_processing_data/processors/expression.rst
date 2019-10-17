@@ -171,6 +171,8 @@ Binary operators
      * String concatenation operator
      * ``'Hello' & ' world'`` returns ``'Hello world'``
 
+
+
 Ternary operator
 ^^^^^^^^^^^^^^^^
 
@@ -192,6 +194,11 @@ The last part of the ternary operator is optional, which means that the followin
 
 - ``'true' ? 'hello'`` returns ``'hello'``
 - ``'false' ? 'hello'`` returns an empty result
+
+.. admonition:: Note
+   :class: note
+
+   Some operations can fail if they involve a field which type was wrongly guessed by the platform at the creation of the dataset, even if the field type was modified afterward. In that case, contact Opendatasoft support team.
 
 Functions
 ~~~~~~~~~
