@@ -5,18 +5,23 @@ This processor uses a geo point to retrieve information (name, code and geo shap
 
 The Retrieve Administrative Divisions processor is available for the following countries:
 
+- Australia
+- Belgium
 - Canada
 - England
 - France
 - Germany
 - Mexico
 - the Netherlands
+- Portugal
 - Scotland
 - Spain
+- Sweden
 - Switzerland
-- the USA
-- Wales
 - United Kingdom
+- United States
+- Wales
+- World
 
 Setting the processor
 ---------------------

@@ -6,6 +6,7 @@ This processor retrieves administrative divisions geo shapes for a specified cou
 
 Each country has specific referentials, all referenced in the section below. The GeoJoin processors is available for the following countries:
 
+- Australia
 - Belgium
 - Canada
 - England
@@ -13,13 +14,15 @@ Each country has specific referentials, all referenced in the section below. The
 - Germany
 - Mexico
 - the Netherlands
+- Portugal
 - Scotland
 - Spain
 - Sweden
 - Switzerland
-- the USA
-- Wales
 - United Kingdom
+- United States
+- Wales
+- World
 
 It is also available for the world, which means that is is possible to retrieve the geo shape of any other country than those listed above. However, only the geo shape of the country will be retrieved, the processor will not be able to retrieve geo shapes from administrative divisions at a smaller scale.
 
@@ -50,7 +53,7 @@ To set the parameters of the GeoJoin processor, follow the indications from the 
 Referentials
 ------------
 
-To set the **Repository**, follow the indications from the table of the chosen country. The table below displays the join key used by Geojoin. 
+To set the **Repository**, follow the indications from the table of the chosen country. The table below displays the join key used by Geojoin.
 
 .. admonition:: Note
    :class: note
@@ -81,4 +84,3 @@ To set the **Repository**, follow the indications from the table of the chosen c
 
   .. raw:: html
     :file: widgets/geojoin--nl.html
-
