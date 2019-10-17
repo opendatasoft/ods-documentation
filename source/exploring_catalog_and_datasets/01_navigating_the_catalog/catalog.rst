@@ -63,7 +63,7 @@ For these reasons and more, a variety of filtering options are available, below 
 It is possible to filter:
 
 - by textual research, using the search bar
-- by geographic area, using the mini map
+- by geographic area, using the geographic filter
 - by metadata, using the available metadata-based filters
 
 Using the search bar
@@ -90,26 +90,20 @@ To make a textual search:
 
 .. _using-the-minimap:
 
-Using the mini map
-^^^^^^^^^^^^^^^^^^
+Using the geographic filter
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Under the search bar is a mini map that should be used to make geographic searches in the catalog. When doing a geographic search, the platform will look for a match between the geographic area drawn on the mini map and the geographic area metadata set for all available datasets. The catalog will be filtered to only display those matching datasets.
+Under the search bar is displayed the geographic filter, that should be used to make geographic searches in the catalog. When doing a geographic search, the platform will look for a match between the geographic area selected with the filter and the geographic area metadata set for all available datasets. The catalog will be filtered to only display those matching datasets.
 
 .. admonition:: Note
    :class: note
 
-   By default, datasets for which the geographic area metadata has not been set cannot be found when doing a geographic search with the mini map.
-   Furthermore, the mini map is only available and displayed on the catalog if at least one of the datasets has this geographic area metadata set.
+   Datasets for which the geographic area metadata has not been set cannot be found when using the geographic filter.
 
 To make a geographic search:
 
-1. Click on the little rectangle button on the top left of the mini map, which is a drawing tool.
-2. Draw a rectangle on the chosen area of the mini map. The catalog directly updates to only display datasets matching the geographic filter applied.
-
-To cancel a selection, and draw on another area:
-
-1. Click on the rectangle button again. The previous shape diseappears.
-2. Draw a rectangle on the newly chosen area of the mini map. The catalog directly updates to only display datasets matching the geographic filter newly applied.
+1. Click on the map or the name of the current geographic filter. By default, the geographic filter is set on a starting point predefined by the administrators of the platform.
+2. Navigate the geographic filter interface to find a chosen administrative level that will be used as filter.
 
 Using the selectable filters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
