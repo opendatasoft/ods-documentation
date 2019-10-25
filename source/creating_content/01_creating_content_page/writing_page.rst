@@ -4,15 +4,29 @@ Writing a content page
 .. admonition:: Important
    :class: important
 
-   In the page header, next to the title of the page, are displayed language buttons -one for each language available in the domain. They allow multilingual content management. In case a content page has not been translated for a chosen language, when navigating from the front office, the page will remain blank for that chosen language.
+   In the page header, next to the title of the page, are displayed language buttons - one for each language available in the domain. They allow multilingual content management. In case a content page has not been translated for a chosen language, when navigating from the front office, the page will remain blank for that chosen language.
 
 The content of the page is written and managed from the Content tab.
 
 .. SCREENSHOT
 
-The Content tab is composed of the drop-down template selector, and the HTML and CSS editor right below. By default, the selected template is the Custom one, which allows the creation of a content page from scratch. Other templates are available: they are predefined content pages made for various purposes (homepages, contact pages, etc.), that should be edited only to adapt the portal.
+The Content tab is composed of 2 main elements.
+
+- The drop-down template selector. By default, the selected template is the Custom one, which allows the creation of a content page from scratch. Other templates are available: they are predefined content pages made for various purposes (homepages, contact pages, etc.), that should be edited only to adapt the portal.
+- The HTML and CSS editor, where should be written the HTML content and CSS code that describes the presentation of that HTML content.
+
+.. admonition:: Note
+   :class: note
+
+   Theme colors, defined in the Look & feel section of the back office, can be used in the page stylesheet, as CSS variables (more information in the :ref:`Customizing theme and portal icon documentation<theme_colors_variables>`).
+
+   Note that the final result will not be displayed in the page preview when using Internet Explorer.
+
 On the right of the Content tab is also displayed a Preview button. It opens a preview of the page as the users would see it
 on the portal, without having to save the page first.
+
+Using page templates
+--------------------
 
 To choose a page template:
 
