@@ -56,7 +56,7 @@ The **metadata CSV file** (named ``index.csv`` by default) is a semicolon separa
 - The ``name`` column contains an identifier for each row. These identifiers can be anything as long as they only contain letters and numbers, are unique across the file, and don't change over time.
 - The **CSV resource column** (``source_dataset`` by default) contains the resource for each row.
 - The optional **CSV shema column** (here, ``schema_file``) contains the schema file for each row.
-- Every other column is a metadata (see table below for the complete list of accepted column names). Note: use double quotes at the beginning and end of lists like ``keywords``, where you have to use semicolons to separate words (e.g ``"keyword1;keyword2"``).
+- Every other column is a metadata (see table below for the complete list of accepted column names). Note: use double quotes at the beginning and end of lists like ``keyword``, where you have to use semicolons to separate words (e.g ``"keyword1;keyword2"``).
 
 Accepted metadata columns
 ~~~~~~~~~~~~~~~~~~~~~~~~~
