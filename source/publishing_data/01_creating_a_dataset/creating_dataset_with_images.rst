@@ -5,7 +5,7 @@ It is possible to source the following media files into the platform:
 
 - Images (.gif, .png, .jpeg, .jpg, .tiff, .bmp, .svg)
 - PDF files (.pdf)
-- GTFS files (.gtfs)
+- GTFS files (.zip)
 
 .. admonition:: Important
    :class: important

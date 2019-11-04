@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/opendatasoft/ods-widgets/dist/ods-widgets.css">
+
+<div ng-app="ods-widgets" style="margin-bottom: 1rem;">
+<ods-dataset-context context="geodomain" 
+geodomain-dataset="ref-geodomain"
+geodomain-domain="documentation-resources"
+geodomain-parameters="{'disjunctive.english_short':true,
+                    'disjunctive.admin_metas_admin_georef_division':true,
+                    'disjunctive.admin_metas_admin_georef_year':true}">
+
+<div style="width: 30%;float: left;">
+<p style="margin-bottom: 0.4rem; margin-top: 0.4rem;">
+Wählen Sie ein Land
+</p>
+<div ods-facet-results="items" 
+ods-facet-results-context="geodomain"
+ods-facet-results-facet-name="english_short" 
+ods-facet-results-sort="-COUNT">
+<select ng-model="geodomain.parameters['refine.english_short']"
+    ng-options="item.path as (item.name+' ('+item.count+' referential'+(item.count>1?'s':'')+')') for item in items"
+    ng-selected="geodomain.parameters['refine.english_short'] == item.path">
+<option value="">-- Alle Länder --</option>
+</select>
+</div>
+<p style="margin-bottom: 0.4rem; margin-top: 0.4rem;">
+Wählen Sie eine Verwaltungsebene
+</p>
+<div ods-facet-results="items" 
+ods-facet-results-context="geodomain"
+ods-facet-results-facet-name="admin_metas_admin_georef_division" 
+ods-facet-results-sort="-COUNT">
+<select ng-model="geodomain.parameters['refine.admin_metas_admin_georef_division']"
+    ng-options="item.path as ('Level ' +item.name+' ('+item.count+' referential'+(item.count>1?'s':'')+')') for item in items"
+    ng-selected="geodomain.parameters['refine.admin_metas_admin_georef_division'] == item.path">
+<option value="">-- Alle Verwaltungsebenen --</option>
+</select>
+</div>  
+</div>
+<div style="width: 70%;float: left;">
+    <ods-table context="geodomain" displayed-fields="english_short, admin_metas_admin_georef_slug, admin_metas_admin_georef_label, admin_metas_admin_georef_level, url, admin_metas_admin_georef_attribution"></ods-table>                                  
+</div>
+
+</ods-dataset-context>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-sanitize.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/opendatasoft/ods-widgets/dist/ods-widgets.js"></script>
+</div>
