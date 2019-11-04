@@ -48,11 +48,6 @@ This method consists in connecting the platform to:
 .. admonition:: Note
    :class: note
 
-   When sourcing data via a URL, an "Add headers" button is available in the Source configuration area: it allows to add HTTP headers (e.g. API keys). Clicking on this button opens a window: indicate a key and a value for each new header.
-
-.. admonition:: Note
-   :class: note
-
    These connections with the platform allow the automation of data update, by scheduling or pushing real-time data (see :doc:`Keeping data up to date</publishing_data/03_scheduling_updates/scheduling_updates>`).
 
 Connecting to a remote server
