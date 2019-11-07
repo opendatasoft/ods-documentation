@@ -15,7 +15,7 @@ Sélectionner un pays
 <div ods-facet-results="items" 
 ods-facet-results-context="geodomain"
 ods-facet-results-facet-name="french_short" 
-ods-facet-results-sort="-COUNT">
+ods-facet-results-sort="alphanum">
 <select ng-model="geodomain.parameters['refine.french_short']"
     ng-options="item.path as (item.name+' ('+item.count+' referential'+(item.count>1?'s':'')+')') for item in items"
     ng-selected="geodomain.parameters['refine.french_short'] == item.path">
@@ -28,7 +28,7 @@ Sélectionner un niveau administratif
 <div ods-facet-results="items" 
 ods-facet-results-context="geodomain"
 ods-facet-results-facet-name="admin_metas_admin_georef_division" 
-ods-facet-results-sort="-COUNT">
+ods-facet-results-sort="num">
 <select ng-model="geodomain.parameters['refine.admin_metas_admin_georef_division']"
     ng-options="item.path as ('Level ' +item.name+' ('+item.count+' referential'+(item.count>1?'s':'')+')') for item in items"
     ng-selected="geodomain.parameters['refine.admin_metas_admin_georef_division'] == item.path">

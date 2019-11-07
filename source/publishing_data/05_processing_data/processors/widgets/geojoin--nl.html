@@ -15,7 +15,7 @@ Selecteer een land
 <div ods-facet-results="items" 
 ods-facet-results-context="geojoin"
 ods-facet-results-facet-name="english_short" 
-ods-facet-results-sort="-COUNT">
+ods-facet-results-sort="alphanum">
 <select ng-model="geojoin.parameters['refine.english_short']"
     ng-options="item.path as (item.name+' ('+item.count+' referential'+(item.count>1?'s':'')+')') for item in items"
     ng-selected="geojoin.parameters['refine.english_short'] == item.path">
@@ -28,7 +28,7 @@ ods-facet-results-sort="-COUNT">
 <div ods-facet-results="items" 
 ods-facet-results-context="geojoin"
 ods-facet-results-facet-name="admin_metas_admin_georef_division" 
-ods-facet-results-sort="-COUNT">
+ods-facet-results-sort="num">
 <select ng-model="geojoin.parameters['refine.admin_metas_admin_georef_division']"
     ng-options="item.path as ('Level ' +item.name+' ('+item.count+' referential'+(item.count>1?'s':'')+')') for item in items"
     ng-selected="geojoin.parameters['refine.admin_metas_admin_georef_division'] == item.path">
@@ -41,7 +41,7 @@ ods-facet-results-sort="-COUNT">
 <div ods-facet-results="items" 
 ods-facet-results-context="geojoin"
 ods-facet-results-facet-name="admin_metas_admin_georef_year" 
-ods-facet-results-sort="-COUNT">
+ods-facet-results-sort="-num">
 <select ng-model="geojoin.parameters['refine.admin_metas_admin_georef_year']"
     ng-options="item.path as ('Year ' +item.name+' ('+item.count+' referential'+(item.count>1?'s':'')+')') for item in items"
     ng-selected="geojoin.parameters['refine.admin_metas_admin_georef_year'] == item.path">
