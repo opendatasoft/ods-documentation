@@ -1,5 +1,5 @@
-Branding your portal
-====================
+Branding the portal
+===================
 
 Opendatasoft portals can be customized according to a chosen corporate branding. Go to Look & feel > Branding to choose a portal name, write a portal description, choose a page title prefix, define the brand name or add a portal favicon or logo.
 
