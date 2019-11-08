@@ -1,7 +1,7 @@
 Content pages: ideas, tips & resources
 ======================================
 
-Opendatasoft pages allow the creation and integration of a variety of content. Although page templates are available for use, which makes the process of creating a new page content not only easier but also faster (see Using page templates), it definitely is a possibility to create a content page from scratch. There are indeed various possible integrations that can be done, and Opendatasoft also offers many resources that can be used as guidelines.
+Opendatasoft pages allow the creation and integration of a variety of content. Although page templates are available for use, which makes the process of creating a new page content not only easier but also faster (see :ref:`Using page templates<using_page_templates>`), it definitely is a possibility to create a content page from scratch. There are indeed various possible integrations that can be done, and Opendatasoft also offers many resources that can be used as guidelines.
 
 This documentation aims at listing ideas and pieces of advice concerning content pages, as well as links to other useful Opendatasoft resources.
 

@@ -25,6 +25,8 @@ The Content tab is composed of 2 main elements.
 On the right of the Content tab is also displayed a Preview button. It opens a preview of the page as the users would see it
 on the portal, without having to save the page first.
 
+.. _using_page_templates:
+
 Using page templates
 --------------------
 
