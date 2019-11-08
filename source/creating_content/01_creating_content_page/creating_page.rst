@@ -1,7 +1,7 @@
 Creating a content page
 =======================
 
-The Opendatasoft platform allows the creation of content pages, entirely built with HTML and CSS. These content pages can be used for various types of usage: portal homepages, dashboards that mix editorial content and data visualizations based on the datasets published on the portal, pages dedicated to specific topics (i.e. explanation on the open data project of the portal, the license etc.).
+The Opendatasoft platform allows the creation of content pages, entirely built with HTML and CSS. These content pages can be used for various types of usage: portal homepages, dashboards that mix editorial content and data visualizations based on the datasets published on the portal, pages dedicated to specific topics (i.e. explanation about the open data project of the portal, the license etc.).
 
 .. image:: images/page_edit.png
 
