@@ -23,6 +23,8 @@ To change the timezone of a domain, go to Configuration > Regional settings. In 
 CSV delimiter
 -------------
 
+.. image:: images/csv_delimiter.png
+
 The preferred delimiter for CSV files, usually depending on geographical location, can either be a comma or a semicolon. The CSV delimiter configuration allows to define what delimiter will be used by default for catalog and dataset exports in CSV format (see :doc:`Exporting data </exploring_catalog_and_datasets/04_getting_involved/exporting_data>`).
 
 .. admonition:: Note
