@@ -32,6 +32,8 @@ The activation of XiTi is managed by the Opendatasoft team. A ``xtcore.js`` file
 SmartTag
 --------
 
+.. image:: images/tracking_smarttag.png
+
 SmartTag is an analytics solution edited by AT Internet. It allows tracking on all the pages of an Opendatasoft domain, back office included.
 
 The activation of SmartTag is managed by the Opendatasoft team. A ``smarttag.js`` file, provided by SmartTag, must be sent to Opendatasoft. After verification, if the file is validated, the configuration of SmartTag will be activable by a domain administrator.
