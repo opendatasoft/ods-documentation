@@ -24,12 +24,14 @@ Opendatasoft's Google Analytics integration tracks all the pages in your portal 
 XiTi
 ----
 
-.. admonition:: Note
-   :class: note
+XiTi is an analytics solution edited by AT Internet. It allows tracking on all the pages of an Opendatasoft domain, back office included.
 
-   Opendatasoft support the XiTi Analytics solution, which is edited by ATinternet. However, ATinternet also edits SmartTag, which is another analytics solution that is not supported by Opendatasoft yet.
+The activation of XiTi is managed by the Opendatasoft team. A ``xtcore.js`` file, provided by XiTi, as well as the XiTi identifiers also provided by XiTi, must be sent to Opendatasoft. After verification, if the file is validated, the configuration of XiTi will be activable by a domain administrator.
 
-The activation of XiTi on a domain is handled by the Opendatasoft team. It requires sending us the ``xtcore.js`` file (which should have been provided by XiTi), and
-the identifiers that you have been provided with by XiTi.
 
-Opendatasoft's XiTi integration tracks all the pages in your portal (including the back-office).
+SmartTag
+--------
+
+SmartTag is an analytics solution edited by AT Internet. It allows tracking on all the pages of an Opendatasoft domain, back office included.
+
+The activation of SmartTag is managed by the Opendatasoft team. A ``smarttag.js`` file, provided by SmartTag, must be sent to Opendatasoft. After verification, if the file is validated, the configuration of SmartTag will be activable by a domain administrator.
