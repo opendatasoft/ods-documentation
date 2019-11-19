@@ -7,7 +7,13 @@ visitors geographical origin, time spent on the portal, etc.).
 
 Third-party services, specialized in measuring audience, an give additionnal information such as those mentioned above. Opendatasoft supports integrations with Google Analytics, and XiTi and SmartTag by AT Internet.
 
-All third-party analytics integrations are activated and configured from Configuration > Tracking in the back office. Note that for most integrations, Opendatasoft must be involved: please refer to the documentations below for more information.
+All third-party analytics integrations are activated and configured from Configuration > Tracking in the back office.
+
+
+.. admonition:: Important
+   :class: important
+
+   For most integrations, Opendatasoft must be involved to allow the activation of a third-party service from the back office. Please read the documentations below carefully.
 
 
 Google Analytics
