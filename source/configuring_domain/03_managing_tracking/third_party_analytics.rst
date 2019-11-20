@@ -33,7 +33,7 @@ To activate and configure Google Analytics:
 XiTi
 ----
 
-.. image:: images/tracking_xiti.png
+.. image:: images/configuration_tracking-xiti.png
 
 XiTi is an analytics solution edited by AT Internet. It allows tracking on all the pages of an Opendatasoft domain, back office included.
 
@@ -43,7 +43,7 @@ The activation of XiTi is managed by the Opendatasoft team. A ``xtcore.js`` file
 SmartTag
 --------
 
-.. image:: images/tracking_smarttag.png
+.. image:: images/configuration_tracking-smarttag.png
 
 SmartTag is an analytics solution edited by AT Internet. It allows tracking on all the pages of an Opendatasoft domain, back office included.
 
