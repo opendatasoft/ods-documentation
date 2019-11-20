@@ -37,7 +37,12 @@ XiTi
 
 XiTi is an analytics solution edited by AT Internet. It allows tracking on all the pages of an Opendatasoft domain, back office included.
 
-The activation of XiTi is managed by the Opendatasoft team. A ``xtcore.js`` file, provided by XiTi, as well as the XiTi identifiers also provided by XiTi, must be sent to Opendatasoft. After verification, if the file is validated, the configuration of XiTi will be activable by a domain administrator.
+The activation of XiTi on an Opendatasoft domain is managed by the Opendatasoft team.
+
+1. Contact support@opendatasoft.com and send: a ``xtcore.js`` file, as well as your XiTi identifiers, both provided by XiTi.
+2. After verification of the JavaScript file by Opendatasoft, if it is approved, XiTi is activated on the Opendatasoft domain.
+3. In the Configuration > Tracking section of the back office, go to the XiTi area.
+4. Click the "Enable XiTi" toggle button to activate XiTi analytics on the domain.
 
 
 SmartTag
@@ -47,4 +52,9 @@ SmartTag
 
 SmartTag is an analytics solution edited by AT Internet. It allows tracking on all the pages of an Opendatasoft domain, back office included.
 
-The activation of SmartTag is managed by the Opendatasoft team. A ``smarttag.js`` file, provided by SmartTag, must be sent to Opendatasoft. After verification, if the file is validated, the configuration of SmartTag will be activable by a domain administrator.
+The activation of SmartTag on an Opendatasoft domain is managed by the Opendatasoft team.
+
+1. Contact support@opendatasoft.com and send a ``smarttag.js`` file, provided by SmartTag.
+2. After verification of the JavaScript file by Opendatasoft, if it is approved, SmartTag is activated on the Opendatasoft domain.
+3. In the Configuration > Tracking section of the back office, go to the SmartTag area.
+4. Click the "Enable SmartTag" toggle button to activate SmartTag analytics on the domain.
