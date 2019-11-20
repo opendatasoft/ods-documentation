@@ -30,8 +30,8 @@ To activate and configure Google Analytics:
 3. Click on the Save button in the top right corner.
 
 
-XiTi
-----
+XiTi Analyzer NX
+----------------
 
 .. image:: images/configuration_tracking-xiti.png
 
@@ -42,7 +42,8 @@ The activation of XiTi on an Opendatasoft domain is managed by the Opendatasoft 
 1. Contact support@opendatasoft.com and send: a ``xtcore.js`` file, as well as your XiTi identifiers, both provided by XiTi.
 2. After verification of the JavaScript file by Opendatasoft, if it is approved, XiTi is activated on the Opendatasoft domain.
 3. In the Configuration > Tracking section of the back office, go to the XiTi area.
-4. Click the "Enable XiTi" toggle button to activate XiTi analytics on the domain.
+4. Fill in the following configurations in their related textboxes: XTSD Code (mandatory), XTSITE Code (mandatory), Level 2 Site ID, and Root used in page names.
+5. Click on the Save button in the top right corner.
 
 
 SmartTag
@@ -58,3 +59,4 @@ The activation of SmartTag on an Opendatasoft domain is managed by the Opendatas
 2. After verification of the JavaScript file by Opendatasoft, if it is approved, SmartTag is activated on the Opendatasoft domain.
 3. In the Configuration > Tracking section of the back office, go to the SmartTag area.
 4. Click the "Enable SmartTag" toggle button to activate SmartTag analytics on the domain.
+5. Click on the Save button in the top right corner.
