@@ -19,11 +19,15 @@ All third-party analytics integrations are activated and configured from Configu
 Google Analytics
 ----------------
 
-Simply go to the *Domain > Configuration > Tracking* page and fill in your Google Analytics ID.
-
 .. image:: images/configuration_tracking-google-analytics.png
 
-Opendatasoft's Google Analytics integration tracks all the pages in your portal (including the back-office).
+Google Analytics is an analytics solution edited by Google. It allows tracking on all pages of an Opendatasoft domain, back office included.
+
+To activate and configure Google Analytics:
+
+1. In the Configuration > Tracking section of the back office, go to the Google Analytics area.
+2. Fill in the Google Analytics ID in the related textbox.
+3. Click on the Save button in the top right corner.
 
 
 XiTi
