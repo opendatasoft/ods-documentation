@@ -29,6 +29,8 @@ Opendatasoft's Google Analytics integration tracks all the pages in your portal 
 XiTi
 ----
 
+.. image:: images/tracking_xiti.png
+
 XiTi is an analytics solution edited by AT Internet. It allows tracking on all the pages of an Opendatasoft domain, back office included.
 
 The activation of XiTi is managed by the Opendatasoft team. A ``xtcore.js`` file, provided by XiTi, as well as the XiTi identifiers also provided by XiTi, must be sent to Opendatasoft. After verification, if the file is validated, the configuration of XiTi will be activable by a domain administrator.
