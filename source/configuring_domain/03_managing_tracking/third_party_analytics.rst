@@ -2,7 +2,7 @@ Third-party analytics
 =====================
 
 The monitoring tools provided by Opendatasoft focus on API calls and usages, which is useful to gather precise information on how
-data is consumed (see :doc:`Analyzing domain usage <managing_domain/03_analyzing_domain_usage/index>`). But it can be limiting when trying to measure more broadly the audience of a portal (i.e. referral sources, visitors geographical origin, time spent on the portal, etc.).
+data is consumed (see :doc:`Analyzing domain usage </managing_domain/03_analyzing_domain_usage/index>`). But it can be limiting when trying to measure more broadly the audience of a portal (i.e. referral sources, visitors geographical origin, time spent on the portal, etc.).
 
 Third-party services, specialized in measuring audience, can give additionnal analytics such as those mentioned above. Opendatasoft supports integrations with Google Analytics, and XiTi and SmartTag by AT Internet.
 
