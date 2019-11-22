@@ -58,7 +58,7 @@ As a user on an open data portal, the reason for visiting that portal may not be
 For these reasons and more, a variety of filtering options are available, below the number of datasets and the catalog sorting option, on the left side of the interface.
 
 .. image:: images/filtering_catalog.png
-   :alt: All options to filter the catalog: search bar, mini map and metadata filters
+   :alt: All options to filter the catalog: search bar, geographic and metadata filters
 
 It is possible to filter:
 
@@ -93,6 +93,14 @@ To make a textual search:
 Using the geographic filter
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. admonition:: Important
+   :class: important
+
+   The geographic filter is configured by the administrators of the domain.
+
+   - It is optional, which means that it may not be available in all Opendatasoft domains.
+   - The available territories that can be selected with the geographic filter may not be the same from one Opendatasoft domain to another. On some domains, the geographic filter may focus on specific groups of territories whereas other domains might allow filtering at world-level.
+
 Under the search bar is displayed the geographic filter, that should be used to make geographic searches in the catalog. When doing a geographic search, the platform will look for a match between the geographic area selected with the filter and the geographic area metadata set for all available datasets. The catalog will be filtered to only display those matching datasets.
 
 .. admonition:: Note
@@ -102,13 +110,19 @@ Under the search bar is displayed the geographic filter, that should be used to 
 
 To make a geographic search:
 
-1. Click on the map or the name of the current geographic filter. By default, the geographic filter is set on a starting point predefined by the administrators of the platform.
-2. Navigate the geographic filter interface to find a chosen administrative level that will be used as filter.
+1. Click on the mini map to activate the geographic filter, which by default is inactive.
+2. Navigate the available territories until a chosen filter has been reached. The territories are ordered hierarchically, by administrative divisions. Some options are available in the geographic filter to help navigating through the administrative divisions:
+
+  - "Back to [administrative division name]" allows to go back one step higher in the hierarchie.
+  - "Go to [administrative division name]" allows to skip an administrative division and directly go one step lower in the hierarchie.
+  - When more than 5 territories are available for selection, a search bar is displayed for textual searches in the current administrative division.
+
+To deactivate the geographic filter, click on the cross [icon] icon right under the mini map.
 
 Using the selectable filters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Under the mini map is a list of selectable filters sorted by categories based on the datasets metadata. These filters should be used to filter the datasets by view (visualizations such as Analyze, Map, Calendar etc.), date, publisher, keyword, theme, language, and any other metadata available as filter category. When searching with the selectable filters, the platform will look for a match between the selected values from the filter categories and the values set in the metadata of the available datasets. The catalog will be filtered to only display those matching datasets.
+Under the geographic filter is a list of selectable filters sorted by categories based on the datasets metadata. These filters should be used to filter the datasets by view (visualizations such as Analyze, Map, Calendar etc.), date, publisher, keyword, theme, language, and any other metadata available as filter category. When searching with the selectable filters, the platform will look for a match between the selected values from the filter categories and the values set in the metadata of the available datasets. The catalog will be filtered to only display those matching datasets.
 
 To use the selectable filters:
 
