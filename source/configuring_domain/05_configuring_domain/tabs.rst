@@ -32,25 +32,23 @@ By default the dataset is opened on the **table view**, but you can choose to di
 Geographic filter
 -----------------
 
-The geographic filter allows to search datasets in the catalog based on the geographical location of their data (see Filtering the catalog using the geographic filter). By default, this filter is not activated. When activated, it can either be configured:
-
-- at an international level, to enable international geographic filtering,
-- or at a national level, to only enable geographic filtering for a chosen country.
-
-To activate the geographic filter at an international level:
-
-1. Click on the International option.
-2. (optional) Click on the "Display countries available levels" button to enable filtering the catalog with the different administrative levels available for each country.
+The geographic filter allows to search datasets in the catalog based on the geographical location of their data (see :ref:`Filtering the catalog using the geographic filter <using-the-minimap>`). By default, this filter is not activated.
 
 .. admonition:: Important
    :class: important
 
-   Not each and every country of the world are available in the geographic filter. See [LINK DATASET] for the list of currently supported countries.
+   The geographic filter can either enable filtering at international level or only on a specific, chosen country.
 
-To activate the geographic filter at a national level:
+   * When the geographic filter is configured for a specific country, very precise refining is available, through multiple administrative levels available.
+   * When the geographic filter is configured at international level, users can filter the catalog with almost every country of the world, but most of the time, precise refining is not possible. For most countries, only the highest administrative levels are available.
 
-1. Click on the National option.
-2. Choose the only country that will be available in the geographic filter, using the Country drop-down list.
-3. For the chosen country, select the highest administrative level available that users will be able to use as filter, using the Highest level drop-down list.
-4. For the same chosen country, select the lowest administrative level available that users will be able to use as filter, using the Lowest level drop-down list. Users will be able to filter with all administrative levels comprised between the highest and lowest chosen administrative levels.
-5. Choose a geographic location as default filter. By default, the chosen location will be the starting point of the geographic filter, and the catalog will be filtered on this location.
+To activate and configure the geographic filter:
+
+1. Click on the "Enable geographic filter" toggle button.
+2. Choose for which country the geographic filter will be available, using the drop-down selection. To configure the geographic filter at international level, choose "All countries" and skip to step 3 of this procedure.
+
+    a. Choose the highest administrative division available in the geographic filter, using the drop-down selection.
+    b. Choose the lowest administrative division available in the geographic filter, using the drop-down selection. Users will be able to refine with administrative divisions comprised between the defined highest and lowest ones.
+
+3. Define the default filter that will be used first when the geographic filter is activated.
+4. Click on the Save button in the top right corner.
