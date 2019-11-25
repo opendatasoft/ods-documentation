@@ -29,8 +29,8 @@ By default the dataset is opened on the **table view**, but you can choose to di
 .. image:: images/configuration_default-tab.png
 
 
-Geographic filter
------------------
+Catalog page — Geographic filter
+--------------------------------
 
 The geographic filter allows to search datasets in the catalog based on the geographical location of their data (see :ref:`Filtering the catalog using the geographic filter <using-the-minimap>`). By default, this filter is not activated.
 
