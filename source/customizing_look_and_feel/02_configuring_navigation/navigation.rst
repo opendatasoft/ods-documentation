@@ -7,6 +7,8 @@ The navigation in an Opendatasoft portal starts with the root page, that welcome
 Choosing a root page
 --------------------
 
+.. image:: images/navigation_root-page.png
+
 The root page is the default page on which a user lands when accessing the portal via its main URL (e.g. domainname.opendatasoft.com/). By default, the root page of the Explore page, which displays the catalog of datasets of the portal. It can be replaced with any other page build within the domain, such as a home page build with HTML & CSS using the Pages section of the back office (see Creating content).
 
 To change the root page:
@@ -18,6 +20,8 @@ To change the root page:
 
 Configuring the navigation header
 ---------------------------------
+
+.. image:: images/navigation_header.png
 
 The navigation header located at the very top of any page of the front office contains items that link to either chosen pages of the portal, or external websites. The default menu items of the navigation header are:
 
