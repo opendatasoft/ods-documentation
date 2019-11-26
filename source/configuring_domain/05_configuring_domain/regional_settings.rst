@@ -23,7 +23,7 @@ To change the timezone of a domain, go to Configuration > Regional settings. In 
 Datasets default location
 -------------------------
 
-The :doc:`Geographic coverage metadata </publishing_data/06_configuring_metadata/standard_metadata>` indicates the location of the data contained in the dataset. Although the metadata can be set individually for each dataset, it is possible to configure the default location(s) that will be automatically set as Geographic area metadata for all datasets created afterward.
+The :ref:`geographic coverage metadata <geographic-coverage-metadata>` indicates the location of the data contained in the dataset. Although the metadata can be set individually for each dataset, it is possible to configure the default location(s) that will be automatically set as geographic coverage metadata for all datasets created afterward.
 
 1. In the Default location textbox, write the name of the chosen location.
 2. A drop-down selection of existing locations matching the name that was previously typed appears. Click on the right location.

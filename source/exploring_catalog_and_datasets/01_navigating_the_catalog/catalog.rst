@@ -63,7 +63,7 @@ For these reasons and more, a variety of filtering options are available, below 
 It is possible to filter:
 
 - by textual research, using the search bar
-- by geographic area, using the geographic filter
+- by territory, using the geographic filter
 - by metadata, using the available metadata-based filters
 
 Using the search bar
@@ -99,22 +99,22 @@ Using the geographic filter
    The geographic filter is configured by the administrators of the domain.
 
    - It is optional, which means that it may not be available in all Opendatasoft domains.
-   - The available territories that can be selected with the geographic filter may not be the same from one Opendatasoft domain to another. On some domains, the geographic filter may focus on specific groups of territories whereas other domains might allow filtering at world-level.
+   - The available territories that can be selected with the geographic filter may not be the same from one Opendatasoft domain to another. On some domains, the geographic filter may focus on specific groups of territories whereas other domains might allow filtering at international level.
 
-Under the search bar is displayed the geographic filter, that should be used to make geographic searches in the catalog. When doing a geographic search, the platform will look for a match between the geographic area selected with the filter and the geographic area metadata set for all available datasets. The catalog will be filtered to only display those matching datasets.
+Under the search bar is displayed the geographic filter, that should be used to make geographic searches in the catalog. When doing a geographic search, the platform will look for a match between the territory selected with the filter and the :ref:`geographic coverage metadata <geographic-coverage-metadata>` set for all available datasets. The catalog will be filtered to only display those matching datasets.
 
 .. admonition:: Note
    :class: note
 
-   Datasets for which the geographic area metadata has not been set cannot be found when using the geographic filter.
+   Datasets for which the geographic coverage metadata has not been set cannot be found when using the geographic filter.
 
 To make a geographic search:
 
-1. Click on the mini map to activate the geographic filter, which by default is inactive.
-2. Navigate the available territories until a chosen filter has been reached. The territories are ordered hierarchically, by administrative divisions. Some options are available in the geographic filter to help navigating through the administrative divisions:
+1. Click on the mini map to activate the geographic filter.
+2. Navigate the available territories until a chosen one has been reached and chosen as filter. The territories are ordered hierarchically, by administrative divisions. Some options are available in the geographic filter to help navigating through the administrative divisions:
 
-  - "Back to [administrative division name]" allows to go back one step higher in the hierarchie.
-  - "Go to [administrative division name]" allows to skip an administrative division and directly go one step lower in the hierarchie.
+  - "Back to..." allows to go back one step higher in the hierarchie.
+  - "Go to..." allows to skip an administrative division and directly go one step lower in the hierarchie.
   - When more than 5 territories are available for selection, a search bar is displayed for textual searches in the current administrative division.
 
 To deactivate the geographic filter, click on the cross [icon] icon right under the mini map.

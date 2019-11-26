@@ -68,6 +68,8 @@ Refer to the table below to know more about the available metadata and how to co
 
          Depending on the dataset, some options can be unavailable. If the dataset is federated, or if there is no data source, the last modification date can only be set manually, or when metadata have changed.
 
+.. _geographic-coverage-metadata:
+
 **Regional information**
 
 .. list-table::
@@ -96,7 +98,7 @@ Refer to the table below to know more about the available metadata and how to co
       .. admonition:: Note
          :class: note
 
-         The :doc:`Datasets default location </configuring_domain/05_configuring_domain/regional_settings>` configuration allows to define the default geographic coverage metadata for the domain. In that case, although the metadata will be pre-filled for all new datasets, it can be modified as indicated in the procedure above.
+         The :doc:`Datasets default location </configuring_domain/05_configuring_domain/regional_settings>` configuration allows to define the default geographic coverage metadata for the domain. In that case, although the metadata will be pre-filled for all new datasets, it can be modified as indicated above.
 
   * * Timezone
     * Forces the dataset visualizations to use the defined timezone for the date and datetime fields. It avoids the dataset visualizations to depend on the timezone on which the user's computer is set.

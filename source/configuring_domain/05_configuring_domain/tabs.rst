@@ -39,8 +39,8 @@ The geographic filter allows to search datasets in the catalog based on the geog
 
    The geographic filter can either enable filtering at international level or only on a specific, chosen country.
 
-   * When the geographic filter is configured for a specific country, very precise refining is available, through multiple administrative levels available.
-   * When the geographic filter is configured at international level, users can filter the catalog with almost every country of the world, but most of the time, precise refining is not possible. For most countries, only the highest administrative levels are available.
+   * When the geographic filter is configured for a specific country, very precise refining is available, through multiple available administrative divisions.
+   * When the geographic filter is configured at international level, users can filter the catalog with almost every country of the world, but most of the time, precise refining is not possible. For most countries, only the highest administrative divisions are available.
 
 To activate and configure the geographic filter:
 
