@@ -7,6 +7,8 @@ Although the visualizations of the created datasets are configured both in terms
 Configuring chart default colors
 --------------------------------
 
+.. image:: images/dataviz_chart-colors.png
+
 Charts are composed of at least one color, but depending on what they represent they can be composed of many more. By default, a set of 8 colors is used, and Opendatasoft users also have the possibility to use other sets of colors that are available by default as well. The Chart colors configuration allows to define a new set of colors, that will replace the original 8-colors set.
 
 To add a new default chart color:
@@ -187,6 +189,8 @@ Using the basemaps table, it is now possible to select one of Mapbox's default s
 
 Defining a default Map Builder location
 ---------------------------------------
+
+.. image:: images/dataviz_map-builder-location.png
 
 The Map Builder is Opendatasoft's tool to create advanced maps using one or more published dataset from one or more Opendatasoft portal. The Default map builder location configuration allows to defined which location the Map Builder will focus on by default when landing on it.
 
