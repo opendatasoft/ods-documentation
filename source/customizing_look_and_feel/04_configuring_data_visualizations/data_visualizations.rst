@@ -7,6 +7,17 @@ Although the visualizations of the created datasets are configured both in terms
 Configuring chart default colors
 --------------------------------
 
+Charts are composed of at least one color, but depending on what they represent they can be composed of many more. By default, a set of 8 colors is used, and Opendatasoft users also have the possibility to use other sets of colors that are available by default as well. The Chart colors configuration allows to define a new set of colors, that will replace the original 8-colors set.
+
+To add a new default chart color:
+
+1. In the Data visualizations configuration interface, go to the Chart color area.
+2. Click on the + Add color button.
+3. Add the hexadecimal code of the new color, or click the color button to choose a new color using either the Nice colors, or the Color wheel.
+4. (optional) Click the reorder |icon-reorder| button to reorganise the new color among the others. The order of the colors matters because they will be used one after the other by the chart.
+5. Click the Save button in the top right corner of the page.
+
+To delete a color, click the trash |icon-trash| button.
 
 
 Adding basemaps
