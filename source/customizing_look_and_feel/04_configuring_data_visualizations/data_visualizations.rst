@@ -21,6 +21,7 @@ To add a new default chart color:
 
 To delete a color, click the trash |icon-trash| button.
 
+.. _basemaps:
 
 Adding basemaps
 ---------------
