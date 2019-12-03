@@ -3,6 +3,8 @@ Managing the dataset themes
 
 All published datasets of an Opendatasoft portal should belong to at least one theme. Dataset themes indeed help categorizing the datasets based on what the data they contain is about. Although each dataset's theme is defined in its edition interface like any other metadata, the list of available dataset themes for the portal is configured from the Look & feel > Dataset themes interface.
 
+.. image:: images/dataset_themes.png
+
 Dataset themes are managed from the table which comprises 2 columns:
 
 - Label, from which the label of the dataset theme is defined ;
