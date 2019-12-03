@@ -1,13 +1,39 @@
 Adding assets
 =============
 
-When customizing your portal, you'll probably need static files (images, font files) to be available throughout the
-platform. This page will enable you to do just that: upload files to your platform so that you can link to them in the
-:ref:`stylesheet <theme__stylesheet>` or within your pages.
+Assets are static files that are uploaded in an Opendatasoft domain, in order to be usable throughout that same domain (e.g. in the domain :ref:`stylesheet <theme__stylesheet>`, in content pages, etc.). Either images or fonts files can be added as assets in the domain.
 
-You can access this page through the link in the back-office navigation bar.
+This feature is available in the Assets section of the back office of an Opendatasoft domain.
 
 .. image:: images/assets_interface.png
 
-You will be able to upload files that do not exceed 500kB. If you need to host larger files, you will have to resort to
-an external file-hosting service.
+
+Adding an image as an asset
+---------------------------
+
+The following image files formats are accepted as assets:
+
+- .png
+- .jpeg
+- [list]
+
+Added files must not exceed 2.0 MB. For larger files, an external file-hosting service should be used.
+
+1. Go to the Assets section of the back office.
+2. Make sure the Images tab (default) is selected.
+3. Either drag and drop the image file in the corresponding area, or click on "browse" to select the image file using a file picker.
+
+Adding a font as an asset
+-------------------------
+
+The following font files formats are accepted as assets:
+
+- .ttf
+- .woff
+- [list]
+
+Added files must not exceed 500.0 KB. For larger files, an external file-hosting service should be used.
+
+1. Go to the Assets section of the back office.
+2. Click on the Fonts tab.
+3. Either drag and drop the font file in the corresponding area, or click on "browse" to select the font file using a file picker.

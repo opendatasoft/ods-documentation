@@ -3,6 +3,13 @@ Customizing the look & feel
 
 In this section are listed and documented all features related to the customization of an Opendatasoft domain. These features are available in the Look and feel section of the back office of an Opendatasoft domain.
 
+
+.. admonition:: Note
+   :class: note
+
+   This section of the documentation also contains all information concerning :doc:`Assets <03_adding_assets/assets>`, although this section of the back office is independent and not comprised in the Look & Feel section.
+
+
 .. toctree::
    :maxdepth: 2
 
