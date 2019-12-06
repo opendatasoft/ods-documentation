@@ -1,5 +1,5 @@
-Customizing theme and portal icon
-=================================
+Managing & customizing portal themes
+====================================
 
 The default theme of all Opendatasoft portals can be entirely customized, not only in terms of layout and colors, but also regarding specific areas such as header, footer and catalog cards. Theme configurations and managed from the Look & feel > Theme interface.
 
