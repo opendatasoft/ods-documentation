@@ -1,28 +1,31 @@
 Customizing theme and portal icon
 =================================
 
-.. important::
-   The theme customization is not available on freemium domains (created through the
-   `Try it for free <https://www.opendatasoft.com/discover-opendatasoft-demo/>`_ page on
-   `Opendatasoft's website <https://www.opendatasoft.com>`_).
-   If your domain is a freemium domain and would like to get this theme feature, `email us! <sales@opendatasoft.com>`_
-
-Opendatasoft's theme management interface can be found in the domain back-office. In order to access it, you'll have to
-click the ``Look & feel`` section in the navigation bar and then on the ``theme`` link.
-
-.. admonition:: Note
-   :class: note
-
-   In order to access the theme page, you'll need to be able to edit domain properties. See :doc:`Managing the Security of your Domain </managing_domain/01_managing_users_and_groups/users>` for more details about permissions.
+The default theme of all Opendatasoft portals can be entirely customized, not only in terms of layout and colors, but also regarding specific areas such as header, footer and catalog cards. Theme configurations and managed from the Look & feel > Theme interface.
 
 .. image:: images/theme_interface.png
 
-Using the various forms available in this page, you'll be able to customize every aspect of your portal, from basic
-colors to making major changes in its layout.
+The Theme interface comprises 3 main blocks.
+
+- The header, which not only displays the title of the interface, but also a "Current action" drop-down menu to manage versioning. 3 important buttons are also displayed in the header:
+
+  - Save, to save the new configurations
+  - Preview, to open in a new tab the Opendatasoft portal with the newly applied configurations
+  - Make live, to define the newly applied configurations as the new, live theme available on the Opendatasoft portal
+
+- The API key for offline development management block, which allows the generation of new API keys.
+- A block of 6 tabs, each one allowing to configure a part of an Opendatasoft portal theme:
+
+  - Layout options, to modify the general layout of the portal
+  - Colors, to change colors of backgrounds, texts, borders, links, etc.
+  - Stylesheet, to add more style to the portal with CSS
+  - Header, to modify the header with HTML code
+  - Footer, to modify the footer with HTML code
+  - Catalog card, to modify the catalog cards with HTML code
 
 
-Versioning
-----------
+Versioning themes
+-----------------
 
 Before diving into the many ways to customize the portal's theme, it is very important to stress that everything you
 will do on this page is versioned. This is to say that your work has a version number assigned to it and you can at any
@@ -48,8 +51,41 @@ new window containing your portal with the current version of the theme applied 
 The version selector will tell you explicitly if you're working on the latest version or rather viewing a previous one,
 as well as which version is live.
 
-Customization options
----------------------
+
+Generating & using API keys for offline development
+---------------------------------------------------
+
+We've seen in the previous section that you can write detailed CSS rules that will override the portal's default theme.
+However, writing it all in the browser can become tedious, especially for seasoned developers used to powerful text
+editors. Since it only accepts pure CSS, you will have to manually ensure that your rules are correctly vendor-prefixed
+and won't be able to use the features frontend developers are accustomed to with pre-processors such as variables and
+nesting.
+
+For all these reasons, we've created an API enabling users with the theme API key to locally write their style rules
+using all the tools they want, and to just push the resulting CSS code to the platform. We've packaged a client to this
+API along with common tools (less preprocessor and autoprefixer) in the
+`Opendatasoft Portal Development Kit <https://github.com/opendatasoft/ods-portal-devkit>`_.
+
+This ODS Portal DevKit is an open source project distributed for free on Github, feel free to download it and taylor it
+to your development workflow.
+
+Theme API key
+~~~~~~~~~~~~~
+
+You can find the theme API key on the portal theme customization page. Just expand the *API key for offline development*
+section and copy the key.
+
+.. image:: images/theme_offline-dev.png
+
+.. warning::
+    By generating a new key, you'll also be revoking previous ones. As a result, developers using an old key won't be
+    able to push their work to the platform. Just remember to forward the new key to each developer working on your
+    portal's theme to ensure that development goes uninterrupted.
+
+
+
+Customizing a portal theme
+--------------------------
 
 .. _theme__layout-options:
 
@@ -219,37 +255,3 @@ The directives are:
      * For federated datasets only, the original identifier of the dataset on its source domain
    * * explore.download_count
      * Number of data downloads for this dataset
-
-
-
-
-
-Offline development
--------------------
-
-We've seen in the previous section that you can write detailed CSS rules that will override the portal's default theme.
-However, writing it all in the browser can become tedious, especially for seasoned developers used to powerful text
-editors. Since it only accepts pure CSS, you will have to manually ensure that your rules are correctly vendor-prefixed
-and won't be able to use the features frontend developers are accustomed to with pre-processors such as variables and
-nesting.
-
-For all these reasons, we've created an API enabling users with the theme API key to locally write their style rules
-using all the tools they want, and to just push the resulting CSS code to the platform. We've packaged a client to this
-API along with common tools (less preprocessor and autoprefixer) in the
-`Opendatasoft Portal Development Kit <https://github.com/opendatasoft/ods-portal-devkit>`_.
-
-This ODS Portal DevKit is an open source project distributed for free on Github, feel free to download it and taylor it
-to your development workflow.
-
-Theme API key
-~~~~~~~~~~~~~
-
-You can find the theme API key on the portal theme customization page. Just expand the *API key for offline development*
-section and copy the key.
-
-.. image:: images/theme_offline-dev.png
-
-.. warning::
-    By generating a new key, you'll also be revoking previous ones. As a result, developers using an old key won't be
-    able to push their work to the platform. Just remember to forward the new key to each developer working on your
-    portal's theme to ensure that development goes uninterrupted.
