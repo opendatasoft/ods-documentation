@@ -11,11 +11,7 @@ This feature is available in the Assets section of the back office of an Opendat
 Adding an image as an asset
 ---------------------------
 
-The following image files formats are accepted as assets:
-
-- .png
-- .jpeg
-- [list]
+All image files formats are accepted as assets: .gif, .png, .jpeg, .jpg, .tiff, .bmp and .svg.
 
 Added files must not exceed 2.0 MB. For larger files, an external file-hosting service should be used.
 
@@ -30,7 +26,7 @@ The following font files formats are accepted as assets:
 
 - .ttf
 - .woff
-- [list]
+- .otf
 
 Added files must not exceed 500.0 KB. For larger files, an external file-hosting service should be used.
 
