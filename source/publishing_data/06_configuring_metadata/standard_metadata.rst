@@ -87,18 +87,13 @@ Refer to the table below to know more about the available metadata and how to co
     * Click the button of the chosen option amongst the following:
 
       * None *(default for datasets without geographical data)*: the geographic coverage won't be set for the dataset, which won't be searchable through the geographic filter.
-      * Auto *(default)*: the geographic coverage will be defined as the smallest envelope containing all of the records' locations. Note that all data will be taken into account for this computation regardless of security parameters. The option is only available if the dataset contains geopoints.
+      * Automatic *(default)*: if the dataset contains geopoints, the geographic coverage will be automatically defined as the smallest envelope containing all of the records' locations. Note that all data will be taken into account for this computation, regardless of security parameters. If the dataset doesn't contain geopoints, but that a :doc:`Datasets default location </configuring_domain/05_configuring_domain/regional_settings>` was set for the domain, this default location will be used.
       * Specific: Enter the name of the data location(s) in the textbox ; a drop-down selection of matching location names will appear. Click on the right location(s), which will appear on the map.
 
       .. admonition:: Caution
          :class: caution
 
          All added locations must be at the same administrative level.
-
-      .. admonition:: Note
-         :class: note
-
-         The :doc:`Datasets default location </configuring_domain/05_configuring_domain/regional_settings>` configuration allows to define the default geographic coverage metadata for the domain. In that case, although the metadata will be pre-filled for all new datasets, it can be modified as indicated above.
 
   * * Timezone
     * Forces the dataset visualizations to use the defined timezone for the date and datetime fields. It avoids the dataset visualizations to depend on the timezone on which the user's computer is set.
