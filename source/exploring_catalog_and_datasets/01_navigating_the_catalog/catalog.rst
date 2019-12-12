@@ -99,7 +99,7 @@ Using the geographic filter
    The geographic filter is configured by the administrators of the domain.
 
    - It is optional, which means that it may not be available in all Opendatasoft domains.
-   - The available territories that can be selected with the geographic filter may not be the same from one Opendatasoft domain to another. On some domains, the geographic filter may focus on specific groups of territories whereas other domains might allow filtering at international level.
+   - The available territories that can be selected with the geographic filter may not be the same from one Opendatasoft domain to another. On some domains, the geographic filter may focus on specific groups of territories whereas other domains might allow filtering across the entire world.
 
 Under the search bar is displayed the geographic filter, that should be used to make geographic searches in the catalog. When doing a geographic search, the platform will look for a match between the territory selected with the filter and the :ref:`geographic coverage metadata <geographic-coverage-metadata>` set for all available datasets. The catalog will be filtered to only display those matching datasets.
 
@@ -117,7 +117,7 @@ To make a geographic search:
   - "Go to..." allows to skip an administrative division and directly go one step lower in the hierarchy.
   - When more than 5 territories are available for selection, a search bar is displayed for textual searches in the current administrative division.
 
-To deactivate the geographic filter, click on the cross [icon] icon right under the mini map.
+To deactivate the geographic filter, click on the cross |icon-cross| button right under the mini map.
 
 Using the selectable filters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -188,4 +188,8 @@ To see more of the dataset, either click the catalog card or any of the quick li
 
 .. |icon-seemore| image:: images/catalog_sort_button.png
     :width: 27px
+    :height: 16px
+
+.. |icon-cross| image:: images/icon_cross.png
+    :width: 16px
     :height: 16px
