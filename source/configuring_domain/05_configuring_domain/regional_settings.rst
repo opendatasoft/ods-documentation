@@ -40,6 +40,8 @@ To define the default delimiter for CSV exports, go to Configuration > Regional 
 Datasets default location
 -------------------------
 
+.. image:: images/configuration_default-location.png
+
 The :ref:`geographic coverage metadata <geographic-coverage-metadata>` indicates the location of the data contained in the dataset. Although the metadata can be set individually for each dataset afterward, it is possible to configure the default location(s) that will be automatically set as geographic coverage metadata for all datasets created afterward.
 
 1. In the Default location textbox, write the name of the chosen location.
