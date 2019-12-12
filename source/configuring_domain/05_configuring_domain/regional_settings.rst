@@ -37,8 +37,8 @@ To define the default delimiter for CSV exports, go to Configuration > Regional 
 2. Choose either "Comma (,)" or "Semicolon (;)".
 3. Click on the Save button in the top right corner of the page.
 
-Datasets default location
--------------------------
+Datasets default geographic coverage
+------------------------------------
 
 .. image:: images/configuration_default-location.png
 
