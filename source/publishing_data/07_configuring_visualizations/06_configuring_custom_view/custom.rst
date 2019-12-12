@@ -1,7 +1,7 @@
 Configuring the Custom view
 ===========================
 
-In the edition interface of a dataset, the Visualizations > Custom view tab allows to configure a custom view displayed in the front office, once the dataset is published on the portal. In contrary to all other visualizations, the Custom view is not a predefined visualization that adapts to a dataset. It is a blank space that can be used for any purpose, as long as it is related to the dataset, and can be filled in with HTML and CSS. It can be seen as a mini page (see :doc:`Creating content</creating_content/01_creating_content_page/create>`).
+In the edition interface of a dataset, the Visualizations > Custom view tab allows to configure a custom view displayed in the front office, once the dataset is published on the portal. In contrary to all other visualizations, the Custom view is not a predefined visualization that adapts to a dataset. It is a blank space that can be used for any purpose, as long as it is related to the dataset, and can be filled in with HTML and CSS. It can be seen as a mini page (see :doc:`Creating content</creating_content/01_creating_content_page/creating_page>`).
 
 The Custom view is available for every dataset, but is optional. It can be enabled or disabled using the tick box displayed right under the visualizations tabs.
 
