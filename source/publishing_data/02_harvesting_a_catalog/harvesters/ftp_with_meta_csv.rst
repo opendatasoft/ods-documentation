@@ -69,7 +69,7 @@ Accepted metadata columns
    * * Standard
      * ``title``, ``description``, ``theme``, ``keyword``, ``license``, ``language``, ``timezone``, ``modified``, ``geographic_area_mode``, ``geographic_area``, ``publisher``, ``references``, ``attributions``, ``oauth_scope``
    * * Custom
-     * ``custom.<metadata_name>``
+     * ``<metadata_name>``
    * * DCAT (if activated)
      * ``dcat.created``, ``dcat.issued``, ``dcat.creator``, ``dcat.contributor``, ``dcat.contact_name``, ``dcat.contact_email``, ``dcat.accrualperiodicity``, ``dcat.spatial``, ``dcat.temporal``, ``dcat.granularity``, ``dcat.dataquality``
    * * DCAT-AP for CH (if activated)
