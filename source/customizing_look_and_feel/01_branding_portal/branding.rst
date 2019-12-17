@@ -1,7 +1,7 @@
 Branding the portal
 ===================
 
-Opendatasoft portals can be customized according to a chosen corporate branding. Go to Look & feel > Branding to choose a portal name, write a portal description, choose a page title prefix, define the brand name or add a portal favicon or logo.
+Opendatasoft portals can be customized according to a chosen corporate branding. Go to **Look & feel > Branding** subsection of the back office to choose a portal name, write a portal description, choose a page title prefix, define the brand name or add a portal favicon or logo.
 
 
 Choosing a portal name
@@ -13,8 +13,8 @@ The portal name is used throughout the platform. By default, the portal name is 
 
 To choose a new portal name:
 
-1. In the Portal name area of the Branding configuration interface, click on the textbox.
-2. Write a new portal name.
+1. In the **Branding** configuration interface, look for the **Portal name** configuration.
+2. In the textbox, write a new portal name.
 3. Click on the Save button in the top right corner.
 
 
@@ -27,8 +27,8 @@ The portal description helps search engines and social networks understand the c
 
 To write a new portal description:
 
-1. In the Portal description area of the Branding configuration interface, click on the expandable textbox.
-2. Write a new portal description.
+1. In the **Branding** configuration interface, look for the **Portal description** configuration.
+2. In the expandable textbox, write a new portal description.
 3. Click on the Save button in the top right corner.
 
 
@@ -41,8 +41,8 @@ The page title prefix is displayed in the browser's tab. It is usually preceded 
 
 To choose a page title prefix:
 
-1. In the Page title prefix area of the Branding configuration interface, click on the textbox.
-2. Write a page title prefix.
+1. In the **Branding** configuration interface, look for the **Page title prefix** configuration.
+2. In the textbox, write a page title prefix.
 3. Click on the Save button in the top right corner.
 
 
@@ -55,8 +55,8 @@ The brand name is used throughout the platform, in every header.
 
 To define the brand name:
 
-1. In the Brand area of the Branding configuration interface, click on the textbox.
-2. Write the brand name.
+1. In the **Branding** configuration interface, look for the **Brand name** configuration.
+2. In the textbox, write the brand name.
 3. Click on the Save button in the top right corner.
 
 
@@ -69,9 +69,10 @@ The favicon is the small image displayed in the browser's tab, next to the page 
 
 To add a new portal favicon:
 
-1. In the Portal favicon area of the Branding configuration interface, click on the Upload an image button.
-2. Choose a favicon using the file finder.
-3. Once the favicon has been selected, click on the Save button in the top right corner.
+1. In the **Branding** configuration interface, look for the **Portal favicon** configuration.
+2. Click on the Upload an image button.
+3. Choose a favicon using the file finder.
+4. Once the favicon has been selected, click on the Save button in the top right corner.
 
 
 Adding a portal logo
@@ -83,10 +84,11 @@ The logo is displayed in every header, throughout the platform. The addition of 
 
 To add a new portal logo:
 
-1. In the Portal logo area of the Branding configuration interface, make sure the Display portal logo toggle button is activated.
-2. Click on the Upload an image button.
-3. Choose a logo using the file finder.
-4. Once the logo has been selected, click on the Save button in the top right corner.
+1. In the **Branding** configuration interface, look for the **Portal logo** configuration.
+2. Make sure the Display portal logo toggle button is activated.
+3. Click on the Upload an image button.
+4. Choose a logo using the file finder.
+5. Once the logo has been selected, click on the Save button in the top right corner.
 
 
 Adding a login page logo
@@ -98,6 +100,7 @@ The login page logo is displayed in the page where users can log in the portal. 
 
 To add a new login page logo:
 
-1. In the Login page logo area of the Branding configuration interface, click on the Upload an image button.
-2. Choose a logo using the file finder.
-3. Once the logo has been selected, click on the Save button in the top right corner.
+1. In the **Branding** configuration interface, look for the **Login page logo** configuration.
+2. Click on the Upload an image button.
+3. Choose a logo using the file finder.
+4. Once the logo has been selected, click on the Save button in the top right corner.

@@ -1,7 +1,7 @@
 Managing the dataset themes
 ===========================
 
-All published datasets of an Opendatasoft portal should belong to at least one theme. Dataset themes indeed help categorizing the datasets based on what the data they contain is about. Although each dataset's theme is defined in its edition interface like any other metadata, the list of available dataset themes for the portal is configured from the Look & feel > Dataset themes interface.
+All published datasets of an Opendatasoft portal should belong to at least one theme. Dataset themes indeed help categorizing the datasets based on what the data they contain is about. Although each dataset's theme is defined in its edition interface like any other metadata, the list of available dataset themes for the portal is configured from the **Look & feel > Dataset themes** subsection of the back office.
 
 .. image:: images/dataset_themes.png
 
@@ -15,9 +15,20 @@ The dataset themes table also contains 2 options:
 - a reorder |icon-reorder| button, displayed on the left of the Label column, to change the order of the dataset theme among the others ;
 - a trash |icon-trash| button, displayed on the right of the Image column, to delete a dataset theme.
 
-By default, X dataset themes are configured on a newly created Opendatasoft domain:
+By default, 12 generic dataset themes are configured on a newly created Opendatasoft domain:
 
-- [list]
+- Health
+- Culture, Heritage
+- Education, Training, Research, Teaching
+- Environment
+- Transport, Movements
+- Spatial planning, Town planning, Buildings, Equipment, Housing
+- Economy, Business, SME, Economic development, Employment
+- Administration, Government, Public finances, Citizenship
+- Justice, Safety, Police, Crime
+- Sports, Leisure
+- Accommodation, Hospitality Industry
+- Services, Social
 
 Defining a new dataset theme
 ----------------------------

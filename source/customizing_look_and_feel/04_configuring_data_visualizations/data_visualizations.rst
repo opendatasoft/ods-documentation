@@ -1,7 +1,7 @@
 Configuring the data visualizations
 ===================================
 
-Although the visualizations of the created datasets are configured both in terms of content and appearance from the edition interface of the datasets themselves, some other global data visualizations configurations such as custom default chart colors, available basemaps, and default map locations, are managed from the Look & feel > Data visualizations interface.
+Although the visualizations of the created datasets are configured both in terms of content and appearance from the edition interface of the datasets themselves, some other global data visualizations configurations such as custom default chart colors, available basemaps, and default map locations, are managed from the **Look & feel > Data visualizations** subsection of the back office.
 
 
 Configuring chart default colors
@@ -13,7 +13,7 @@ Charts are composed of at least one color, but depending on what they represent 
 
 To add a new default chart color:
 
-1. In the Data visualizations configuration interface, go to the Chart color area.
+1. In the **Data visualizations** configuration interface, look for the **Chart color** configuration.
 2. Click on the + Add color button.
 3. Add the hexadecimal code of the new color, or click the color button to choose a new color using either the Nice colors, or the Color wheel.
 4. (optional) Click the reorder |icon-reorder| button to reorganise the new color among the others. The order of the colors matters because they will be used one after the other by the chart.
@@ -35,12 +35,12 @@ A basic basemap is used by default for all maps of all Opendatasoft domains. It 
 
    To know more about basemaps and how to use them, you can read our blog post "`What is a basemap & how to choose the best one for your data <https://www.opendatasoft.com/2015/09/03/what-is-a-basemap-and-how-to-choose-the-best-one-for-your-data/>`_".
 
-To manage basemaps, go to Look & feel > Data visualizations. In this subsection of the back office menu, look for the "Basemaps" area.
+To manage basemaps, look for the **Basemaps** configuration in the **Data visualizations** configuration interface.
 
 .. image:: images/basemaps_overview.png
        :alt: Overview of the Basemaps area in the Look and feel > Data visualizations section.
 
-Basemaps should be managed from the table of the "Basemaps" area. This table displays the currently available basemaps that can be used on the domain. It comprises 5 columns:
+Basemaps should be managed from the table Basemaps configuration. This table displays the currently available basemaps that can be used on the domain. It comprises 5 columns:
 
 - |icon-reorder| to change the order of the basemaps. The first one is the default one on the whole domain.
 - Label: to name the basemaps. Each basemap should have one label per language available on the domain.
@@ -180,7 +180,7 @@ To integrate Mapbox basemaps:
 1. Go to the Mapbox website, logged in.
 2. In the `Mapbox account page <https://www.mapbox.com/account/apps/>`_, either copy the Default Public Token, or create a new Public Token and copy it. This will be used by Opendatasoft to display maps on the behalf of the user's own Mapbox account.
 3. Go back to the Look & feel > Data Visualizations subsection of the Opendatasoft's domain back office.
-4. In the "Basemaps" area, click on "Mapbox integration" to expand the related configurations.
+4. In the "Basemaps" configuration, click on "Mapbox integration" to expand the related configurations.
 5. Paste the Public Token in the textbox. A message will confirm whether the access token is valid or not.
 
 Using the basemaps table, it is now possible to select one of Mapbox's default styles, or choose "Custom" to enter the MapID of a custom created map.
@@ -195,7 +195,7 @@ Defining a default Map Builder location
 
 The Map Builder is Opendatasoft's tool to create advanced maps using one or more published dataset from one or more Opendatasoft portal. The Default map builder location configuration allows to defined which location the Map Builder will focus on by default when landing on it.
 
-1. In the Data visualizations configuration interface, go to the Default map builder location area.
+1. In the **Data visualizations** configuration interface, look for the **Default map builder location** configuration.
 2. Click on the map, and maintain the click while moving the map until the chosen location is is enclosed in the rectangle. Some options are available to help defining the right location:
 
    - |icon-zoom-in| and |icon-zoom-out| zoom in and out,
