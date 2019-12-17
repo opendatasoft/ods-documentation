@@ -198,9 +198,9 @@ The Map Builder is Opendatasoft's tool to create advanced maps using one or more
 1. In the Data visualizations configuration interface, go to the Default map builder location area.
 2. Click on the map, and maintain the click while moving the map until the chosen location is is enclosed in the rectangle. Some options are available to help defining the right location:
 
-   - [+] and [-] zoom in and out,
-   - [>] moves the map to your current location,
-   - [find] allows to make a textual search of a location.
+   - |icon-zoom-in| and |icon-zoom-out| zoom in and out,
+   - |icon-localize| moves the map to your current location,
+   - |icon-search| allows to make a textual search of a location.
 
 3. Click the Save button in the top right corner of the page.
 
@@ -216,3 +216,19 @@ The Map Builder is Opendatasoft's tool to create advanced maps using one or more
 .. |icon-trash| image:: images/icon_delete_basemaps.png
     :width: 17px
     :height: 17px
+
+.. |icon-zoom-in| image:: images/icon_zoom-in.png
+    :width: 24px
+    :height: 23px
+
+.. |icon-zoom-out| image:: images/icon_zoom-out.png
+    :width: 24px
+    :height: 22px
+
+.. |icon-localize| image:: images/icon_localize.png
+    :width: 24px
+    :height: 24px
+
+.. |icon-search| image:: images/icon_search.png
+    :width: 25px
+    :height: 25px

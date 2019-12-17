@@ -12,8 +12,8 @@ Dataset themes are managed from the table which comprises 2 columns:
 
 The dataset themes table also contains 2 options:
 
-- a reorder [reorder] button, displayed on the left of the Label column, to change the order of the dataset theme among the others ;
-- a trash [trash] button, displayed on the right of the Image column, to delete a dataset theme.
+- a reorder |icon-reorder| button, displayed on the left of the Label column, to change the order of the dataset theme among the others ;
+- a trash |icon-trash| button, displayed on the right of the Image column, to delete a dataset theme.
 
 By default, X dataset themes are configured on a newly created Opendatasoft domain:
 
@@ -33,3 +33,15 @@ Defining a new dataset theme
    - "No image" (default) allows to leave the dataset theme without any associated icon.
 
 5. Click the Save button in the top right corner of the page.
+
+
+
+
+
+.. |icon-reorder| image:: images/icon_reorder.png
+    :width: 17px
+    :height: 17px
+
+.. |icon-trash| image:: images/icon_trash.png
+    :width: 14px
+    :height: 15px
