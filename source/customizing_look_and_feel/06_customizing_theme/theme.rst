@@ -7,13 +7,14 @@ The default theme of all Opendatasoft portals can be entirely customized, not on
 
 The Theme interface comprises 3 main blocks.
 
-- The header, which not only displays the title of the interface, but also a "Current action" drop-down menu to manage versioning (see Versioning themes). 3 important buttons are also displayed in the header:
+- The header (1), which not only displays the title of the interface, but also a "Current action" drop-down menu to manage versioning (see Versioning themes). 3 important buttons are also displayed in the header:
 
   - Save, to save the new configurations
   - Preview, to open in a new tab the Opendatasoft portal with the newly applied configurations
   - Make live, to define the newly applied configurations as the new, live theme available on the Opendatasoft portal
 
-- The **API key for offline development** management block, which allows the use and generation of new API keys (see note below for more information).
+
+* The **API key for offline development** management block (2), which allows the use and generation of new API keys (see note right below for more information).
 
 .. admonition:: Note
    :class: note
@@ -24,7 +25,7 @@ The Theme interface comprises 3 main blocks.
 
    It is also possible to generate a new API key by clicking on the "Generate new key" button. However, be careful when generating new API keys: only the current one can be used, which means that generating a new API key revokes all previous ones.
 
-- A block of 6 tabs, each one allowing to configure a part of an Opendatasoft portal theme:
+- A block of 6 tabs (3), each one allowing to configure a part of an Opendatasoft portal theme (see Customizing a portal theme):
 
   - **Layout options**, to modify the general layout of the portal
   - **Colors**, to change colors of backgrounds, texts, borders, links, etc.
@@ -54,7 +55,6 @@ While working on the latest draft version of the portal theme, it is possible to
    :class: note
 
    Only users able to edit the domain properties can preview the latest theme version. If sharing the URL with other users who were not granted the right permissions, they would see the portal with the live theme.
-
 
 
 Customizing a portal theme
