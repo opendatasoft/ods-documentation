@@ -13,7 +13,17 @@ The Theme interface comprises 3 main blocks.
   - Preview, to open in a new tab the Opendatasoft portal with the newly applied configurations
   - Make live, to define the newly applied configurations as the new, live theme available on the Opendatasoft portal
 
-- The API key for offline development management block, which allows the generation of new API keys.
+- The **API key for offline development** management block, which allows the use and generation of new API keys (see note below for more information).
+
+.. admonition:: Note
+   :class: note
+
+   It is possible to create stylesheets outside the platform, with any standard web developping tool, and to push them to the platform using an API key. For an easier and quicker usage, the `Opendatasoft Portal Development Kit <https://github.com/opendatasoft/ods-portal-devkit>`_ is at disposal: it is an open source project created by Opendatasoft, that can be downloaded on Github.
+
+   To find and use a theme API key, click on the **API key for offline development** block to expand it. The current API key is displayed in the block, ready to be copied and used.
+
+   It is also possible to generate a new API key by clicking on the "Generate new key" button. However, be careful when generating new API keys: only the current one can be used, which means that generating a new API key revokes all previous ones.
+
 - A block of 6 tabs, each one allowing to configure a part of an Opendatasoft portal theme:
 
   - **Layout options**, to modify the general layout of the portal
@@ -44,26 +54,6 @@ While working on the latest draft version of the portal theme, it is possible to
    :class: note
 
    Only users able to edit the domain properties can preview the latest theme version. If sharing the URL with other users who were not granted the right permissions, they would see the portal with the live theme.
-
-
-Generating & using API keys for offline development
----------------------------------------------------
-
-We've seen in the previous section that you can write detailed CSS rules that will override the portal's default theme. However, writing it all in the browser can become tedious, especially for seasoned developers used to powerful text editors. Since it only accepts pure CSS, you will have to manually ensure that your rules are correctly vendor-prefixed and won't be able to use the features frontend developers are accustomed to with pre-processors such as variables and nesting.
-
-For all these reasons, we've created an API enabling users with the theme API key to locally write their style rules using all the tools they want, and to just push the resulting CSS code to the platform. We've packaged a client to this API along with common tools (less preprocessor and autoprefixer) in the `Opendatasoft Portal Development Kit <https://github.com/opendatasoft/ods-portal-devkit>`_.
-
-This ODS Portal DevKit is an open source project distributed for free on Github, feel free to download it and taylor it to your development workflow.
-
-Theme API key
-~~~~~~~~~~~~~
-
-You can find the theme API key on the portal theme customization page. Just expand the *API key for offline development section and copy the key*.
-
-.. image:: images/theme_offline-dev.png
-
-.. warning::
-    By generating a new key, you'll also be revoking previous ones. As a result, developers using an old key won't be able to push their work to the platform. Just remember to forward the new key to each developer working on your portal's theme to ensure that development goes uninterrupted.
 
 
 
