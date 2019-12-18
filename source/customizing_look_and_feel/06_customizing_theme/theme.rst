@@ -1,7 +1,7 @@
 Managing & customizing portal themes
 ====================================
 
-The default theme of all Opendatasoft portals can be entirely customized, not only in terms of layout and colors, but also regarding specific areas such as header, footer and catalog cards. Theme configurations and managed from the Look & feel > Theme interface.
+The default theme of all Opendatasoft portals can be entirely customized, not only in terms of layout and colors, but also regarding specific areas such as header, footer and catalog cards. Theme configurations and managed from the **Look & feel > Theme** subsection of the back office.
 
 .. image:: images/theme_interface.png
 
@@ -16,12 +16,12 @@ The Theme interface comprises 3 main blocks.
 - The API key for offline development management block, which allows the generation of new API keys.
 - A block of 6 tabs, each one allowing to configure a part of an Opendatasoft portal theme:
 
-  - Layout options, to modify the general layout of the portal
-  - Colors, to change colors of backgrounds, texts, borders, links, etc.
-  - Stylesheet, to add more style to the portal with CSS
-  - Header, to modify the header with HTML code
-  - Footer, to modify the footer with HTML code
-  - Catalog card, to modify the catalog cards with HTML code
+  - **Layout options**, to modify the general layout of the portal
+  - **Colors**, to change colors of backgrounds, texts, borders, links, etc.
+  - **Stylesheet**, to add more style to the portal with CSS
+  - **Header**, to modify the header with HTML code
+  - **Footer**, to modify the footer with HTML code
+  - **Catalog card**, to modify the catalog cards with HTML code
 
 
 Versioning themes
