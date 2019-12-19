@@ -19,7 +19,6 @@ To change the timezone of a domain, go to Configuration > Regional settings. In 
 
    It is also possible to directly write a city or zone in the textbox. A selection of matching existing timezones will appear.
 
-
 CSV delimiter
 -------------
 
@@ -37,3 +36,20 @@ To define the default delimiter for CSV exports, go to Configuration > Regional 
 1. Click on the Delimiter drop-down menu.
 2. Choose either "Comma (,)" or "Semicolon (;)".
 3. Click on the Save button in the top right corner of the page.
+
+Datasets default geographic coverage
+------------------------------------
+
+.. image:: images/configuration_default-location.png
+
+The :ref:`geographic coverage metadata <geographic-coverage-metadata>` indicates the location of the data contained in the dataset. Although the metadata can be set individually for each dataset afterward, it is possible to configure the default location(s) that will be automatically set as geographic coverage metadata for all datasets created afterward.
+
+1. In the Default geographic coverage textbox, write the name of the chosen location.
+2. A drop-down selection of existing locations matching the name that was previously typed appears. Click on the right location.
+3. (optional) Repeat steps 1 and 2 of this procedure to add other default locations (e.g. if the data of the portal involves more than one administrative division).
+4. Click on the Save button in the top right corner of the page.
+
+.. admonition:: Caution
+   :class: caution
+
+   If more than one default location are added, they must be at the same administrative level (e.g. countries, cities, regions, etc.).

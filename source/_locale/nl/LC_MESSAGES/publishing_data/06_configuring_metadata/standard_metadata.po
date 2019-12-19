@@ -2,24 +2,24 @@
 # Copyright (C) 2019, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
 # Translator_NL1 <datawords.translator.nl1@gmail.com>, 2019
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-29 15:14+0100\n"
+"POT-Creation-Date: 2019-12-12 14:53+0100\n"
 "PO-Revision-Date: 2018-10-29 17:30+0000\n"
 "Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2019\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
-"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:2
@@ -315,9 +315,76 @@ msgid ""
 msgstr ""
 "Kies de taal uit het Domein talen of andere talen die beschikbaar zijn."
 
+#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:85
+msgid "Geographic coverage"
+msgstr "Geografische dekking"
+
+#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:86
+msgid ""
+"Geographic coverage of the data contained in the dataset. This metadata is "
+"directly linked to :ref:`the geographic filter displayed in the front office"
+" of the portal <using-the-minimap>` : if the geographic coverage metadata is"
+" set for a dataset, users will be able to find it through a geographic "
+"search of the catalog."
+msgstr ""
+"Geografische dekking van de data in de dataset. Deze metadata is "
+"rechtstreeks gekoppeld aan :ref:`de geografische filter die wordt "
+"weergegeven in de front office van het portaal <using-the-minimap>` : "
+"wanneer de geografische dekkingsmetadata is ingesteld voor een dataset, "
+"zullen gebruikers deze kunnen terugvinden door middel van een geografische "
+"zoekopdracht van de catalogus."
+
 #: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:87
 msgid "Click the button of the chosen option amongst the following:"
 msgstr "Klik op de knop van de gekozen optie uit de volgende:"
+
+#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:89
+msgid ""
+"None *(default for datasets without geographical data)*: the geographic "
+"coverage won't be set for the dataset, which won't be searchable through the"
+" geographic filter."
+msgstr ""
+"Geen *(standaard voor datasets zonder geografische data)*: de geografische "
+"dekking wordt niet ingesteld voor de dataset, die niet opgezocht kan worden "
+"door middel van de geografische filter."
+
+#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:90
+msgid ""
+"Automatic *(default)*: if the dataset contains geopoints, the geographic "
+"coverage will be automatically defined as the smallest envelope containing "
+"all of the records' locations. Note that all data will be taken into account"
+" for this computation, regardless of security parameters. If the dataset "
+"doesn't contain geopoints, but that a :doc:`Datasets default location "
+"</configuring_domain/05_configuring_domain/regional_settings>` was set for "
+"the domain, this default location will be used."
+msgstr ""
+"Automatisch (*standaard)*: wanneer de dataset geografische punten bevat, zal"
+" de geografische dekking automatisch worden gedefinieerd als de kleinste "
+"omslag die alle locaties van de records bevat. Merk op dat met alle data "
+"rekening zal worden gehouden voor de berekening ervan, ongeacht de "
+"beveiligingsparameters. Wanneer de dataset geen geografische punten bevat, "
+"maar een :doc:`Standaard locatie van de datasets "
+"</configuring_domain/05_configuring_domain/regional_settings>` ingesteld "
+"geweest is voor het domein, zal deze standaard locatie worden gebruikt."
+
+#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:91
+msgid ""
+"Specific: Enter the name of the data location(s) in the textbox ; a drop-"
+"down selection of matching location names will appear. Click on the right "
+"location(s), which will appear on the map."
+msgstr ""
+"Specifiek: Voer de naam van de locatie(s) van de dataset in in het tekstvak;"
+" er verschijnt een keuzelijst van overeenkomstige locatienamen. Klik op de "
+"juiste locatie(s) die op de kaart zullen verschijnen."
+
+#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:93
+msgid "Caution"
+msgstr "Opgelet"
+
+#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:96
+msgid "All added locations must be at the same administrative level."
+msgstr ""
+"Alle toegevoegde locaties moeten hetzelfde administratieve niveau hebben."
 
 #: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:98
 msgid "Timezone"
@@ -440,100 +507,3 @@ msgstr ""
 "Gepersonaliseerde standaard metadata kan op verzoek aangemaakt en "
 "geactiveerd worden. Gelieve contact op te nemen met Opendatasoft voor meer "
 "informatie over gepersonaliseerde standaard metadata."
-
-#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:85
-#, fuzzy
-msgid "Geographic coverage"
-msgstr "Geografisch gebied"
-
-#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:86
-#, fuzzy
-msgid ""
-"Geographic coverage of the data contained in the dataset. This metadata is "
-"directly linked to :ref:`the geographic filter displayed in the front office"
-" of the portal <using-the-minimap>` : if the geographic coverage metadata is"
-" set for a dataset, users will be able to find it through a geographic "
-"search of the catalog."
-msgstr ""
-"Geografisch gebied van de gegevens in de dataset. Deze metadata is "
-"rechtstreeks gelinkt aan :ref:`de minikaart die weergegeven wordt in de "
-"front office van het portaal <using-the-minimap>` : Wanneer de metadata van "
-"het geografische gebied is ingesteld voor een dataset zal een eindgebruiker "
-"deze kunnen terugvinden via een geografische zoekopdracht van de catalogus."
-
-#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:89
-msgid ""
-"None *(default for datasets without geographical data)*: the geographic "
-"coverage won't be set for the dataset, which won't be searchable through the"
-" geographic filter."
-msgstr ""
-
-#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:90
-msgid ""
-"Automatic *(default)*: if the dataset contains geopoints, the geographic "
-"coverage will be automatically defined as the smallest envelope containing "
-"all of the records' locations. Note that all data will be taken into account"
-" for this computation, regardless of security parameters. If the dataset "
-"doesn't contain geopoints, but that a :doc:`Datasets default location "
-"</configuring_domain/05_configuring_domain/regional_settings>` was set for "
-"the domain, this default location will be used."
-msgstr ""
-
-#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:91
-msgid ""
-"Specific: Enter the name of the data location(s) in the textbox ; a drop-"
-"down selection of matching location names will appear. Click on the right "
-"location(s), which will appear on the map."
-msgstr ""
-
-#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:93
-msgid "Caution"
-msgstr ""
-
-#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:96
-msgid "All added locations must be at the same administrative level."
-msgstr ""
-
-#~ msgid "Geographic area"
-#~ msgstr "Geografisch gebied"
-
-#~ msgid ""
-#~ "Geographic area of the data contained in the dataset. This metadata is "
-#~ "directly linked to :ref:`the mini map displayed in the front office of the "
-#~ "portal <using-the-minimap>` : if the geographic area metadata is set for a "
-#~ "dataset, an end-user will be able to find it through a geographic search of "
-#~ "the catalog."
-#~ msgstr ""
-#~ "Geografisch gebied van de gegevens in de dataset. Deze metadata is "
-#~ "rechtstreeks gelinkt aan :ref:`de minikaart die weergegeven wordt in de "
-#~ "front office van het portaal <using-the-minimap>` : Wanneer de metadata van "
-#~ "het geografische gebied is ingesteld voor een dataset zal een eindgebruiker "
-#~ "deze kunnen terugvinden via een geografische zoekopdracht van de catalogus."
-
-#~ msgid ""
-#~ "None *(default)*: the geographic area won't be set for the dataset, which "
-#~ "won't be searchable through the mini map."
-#~ msgstr ""
-#~ "Geen *(standaard)*: het geografisch gebied wordt niet ingesteld voor de "
-#~ "dataset, die daardoor niet kan worden opgezocht met behulp van de minikaart."
-
-#~ msgid ""
-#~ "Auto: the geographic area will be defined as the smallest envelope "
-#~ "containing all of the records' locations. Note that all data will be taken "
-#~ "into account for this computation regardless of security parameters. The "
-#~ "option is only available if the dataset contains geopoints."
-#~ msgstr ""
-#~ "Auto: de geografische regio zal worden gedefinieerd als de kleinste "
-#~ "enveloppe die alle locaties van de records bevat. Merk op dat met alle data "
-#~ "rekening zal worden gehouden voor deze berekening, ongeacht de "
-#~ "veiligheidsparameters. De optie is enkel beschikbaar wanneer de dataset "
-#~ "geopunten bevat."
-
-#~ msgid ""
-#~ "Manual: a map appears under this option when it is chosen. Draw a shape on "
-#~ "the right geographic area corresponding to the data of the dataset, or paste"
-#~ " a GeoJSON after having clicked on the map."
-#~ msgstr ""
-#~ "Manueel: onder deze optie verschijnt een kaart, wanneer deze is gekozen. "
-#~ "Teken een vorm op de geografische regio rechts die overeenstemt met de data "
-#~ "van de dataset of plak een GeoJSON nadat u op de kaart heeft geklikt."

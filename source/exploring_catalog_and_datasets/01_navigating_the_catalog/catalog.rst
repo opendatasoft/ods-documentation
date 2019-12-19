@@ -58,12 +58,12 @@ As a user on an open data portal, the reason for visiting that portal may not be
 For these reasons and more, a variety of filtering options are available, below the number of datasets and the catalog sorting option, on the left side of the interface.
 
 .. image:: images/filtering_catalog.png
-   :alt: All options to filter the catalog: search bar, mini map and metadata filters
+   :alt: All options to filter the catalog: search bar, geographic and metadata filters
 
 It is possible to filter:
 
 - by textual research, using the search bar
-- by geographic area, using the mini map
+- by territory, using the geographic filter
 - by metadata, using the available metadata-based filters
 
 Using the search bar
@@ -90,31 +90,39 @@ To make a textual search:
 
 .. _using-the-minimap:
 
-Using the mini map
-^^^^^^^^^^^^^^^^^^
+Using the geographic filter
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Under the search bar is a mini map that should be used to make geographic searches in the catalog. When doing a geographic search, the platform will look for a match between the geographic area drawn on the mini map and the geographic area metadata set for all available datasets. The catalog will be filtered to only display those matching datasets.
+.. admonition:: Important
+   :class: important
+
+   The geographic filter is configured by the administrators of the domain.
+
+   - It is optional, which means that it may not be available in all Opendatasoft domains.
+   - The available territories that can be selected with the geographic filter may not be the same from one Opendatasoft domain to another. On some domains, the geographic filter may focus on specific groups of territories whereas other domains might allow filtering across the entire world.
+
+Under the search bar is displayed the geographic filter, that should be used to make geographic searches in the catalog. When doing a geographic search, the platform will look for a match between the territory selected with the filter and the :ref:`geographic coverage metadata <geographic-coverage-metadata>` set for all available datasets. The catalog will be filtered to only display those matching datasets.
 
 .. admonition:: Note
    :class: note
 
-   By default, datasets for which the geographic area metadata has not been set cannot be found when doing a geographic search with the mini map.
-   Furthermore, the mini map is only available and displayed on the catalog if at least one of the datasets has this geographic area metadata set.
+   Datasets for which the geographic coverage metadata has not been set cannot be found when using the geographic filter.
 
 To make a geographic search:
 
-1. Click on the little rectangle button on the top left of the mini map, which is a drawing tool.
-2. Draw a rectangle on the chosen area of the mini map. The catalog directly updates to only display datasets matching the geographic filter applied.
+1. Click on the mini map to activate the geographic filter.
+2. Navigate the available territories until a chosen one has been reached and chosen as filter. The territories are ordered hierarchically, by administrative divisions. Some options are available in the geographic filter to help navigating through the administrative divisions:
 
-To cancel a selection, and draw on another area:
+  - "Back to..." allows to go back one step higher in the hierarchy.
+  - "Go to..." allows to skip an administrative division and directly go one step lower in the hierarchy.
+  - When more than 5 territories are available for selection, a search bar is displayed for textual searches in the current administrative division.
 
-1. Click on the rectangle button again. The previous shape diseappears.
-2. Draw a rectangle on the newly chosen area of the mini map. The catalog directly updates to only display datasets matching the geographic filter newly applied.
+To deactivate the geographic filter, click on the cross |icon-cross| button right under the mini map.
 
 Using the selectable filters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Under the mini map is a list of selectable filters sorted by categories based on the datasets metadata. These filters should be used to filter the datasets by view (visualizations such as Analyze, Map, Calendar etc.), date, publisher, keyword, theme, language, and any other metadata available as filter category. When searching with the selectable filters, the platform will look for a match between the selected values from the filter categories and the values set in the metadata of the available datasets. The catalog will be filtered to only display those matching datasets.
+Under the geographic filter is a list of selectable filters sorted by categories based on the datasets metadata. These filters should be used to filter the datasets by view (visualizations such as Analyze, Map, Calendar etc.), date, publisher, keyword, theme, language, and any other metadata available as filter category. When searching with the selectable filters, the platform will look for a match between the selected values from the filter categories and the values set in the metadata of the available datasets. The catalog will be filtered to only display those matching datasets.
 
 To use the selectable filters:
 
@@ -180,4 +188,8 @@ To see more of the dataset, either click the catalog card or any of the quick li
 
 .. |icon-seemore| image:: images/catalog_sort_button.png
     :width: 27px
+    :height: 16px
+
+.. |icon-cross| image:: images/icon_cross.png
+    :width: 16px
     :height: 16px

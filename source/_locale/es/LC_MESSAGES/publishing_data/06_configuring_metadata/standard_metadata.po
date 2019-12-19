@@ -2,25 +2,25 @@
 # Copyright (C) 2019, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # rocio aguero <raguero@datawords.com>, 2018
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
 # Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2019
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-29 15:14+0100\n"
+"POT-Creation-Date: 2019-12-12 14:53+0100\n"
 "PO-Revision-Date: 2018-10-29 17:30+0000\n"
 "Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2019\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
-"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:2
@@ -321,10 +321,79 @@ msgid ""
 msgstr ""
 "Elija un idioma de los idiomas de dominio o demás idiomas disponibles."
 
+#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:85
+msgid "Geographic coverage"
+msgstr "Cobertura geográfica"
+
+#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:86
+msgid ""
+"Geographic coverage of the data contained in the dataset. This metadata is "
+"directly linked to :ref:`the geographic filter displayed in the front office"
+" of the portal <using-the-minimap>` : if the geographic coverage metadata is"
+" set for a dataset, users will be able to find it through a geographic "
+"search of the catalog."
+msgstr ""
+"Cobertura geográfica de los datos que contiene el conjunto de datos. Estos "
+"metadatos están vinculados directamente con :ref:`el filtro geográfico que "
+"se visualiza en el front office del portal <using-the-minimap>`: si se "
+"establecen los metadatos de la cobertura geográfica de un conjunto de datos,"
+" los usuarios podrán encontrarlos por medio de una búsqueda geográfica del "
+"catálogo."
+
 #: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:87
 msgid "Click the button of the chosen option amongst the following:"
 msgstr ""
 "Haga clic en el botón de la opción elegida entre las siguientes disponibles:"
+
+#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:89
+msgid ""
+"None *(default for datasets without geographical data)*: the geographic "
+"coverage won't be set for the dataset, which won't be searchable through the"
+" geographic filter."
+msgstr ""
+"Ninguno *(predeterminado para los conjuntos de datos sin datos "
+"geográficos)*: no se establece la cobertura geográfica para el conjunto de "
+"datos, que no se podrá buscar mediante el filtro geográfico."
+
+#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:90
+msgid ""
+"Automatic *(default)*: if the dataset contains geopoints, the geographic "
+"coverage will be automatically defined as the smallest envelope containing "
+"all of the records' locations. Note that all data will be taken into account"
+" for this computation, regardless of security parameters. If the dataset "
+"doesn't contain geopoints, but that a :doc:`Datasets default location "
+"</configuring_domain/05_configuring_domain/regional_settings>` was set for "
+"the domain, this default location will be used."
+msgstr ""
+"Automático *(predeterminado)*: si el conjunto de datos contiene puntos "
+"geográficos, la cobertura geográfica se definirá automáticamente como el "
+"contenedor más pequeño de las ubicaciones de todos los registros. Tenga "
+"presente que se tendrán en cuenta todos los datos para este cálculo, "
+"independientemente de los parámetros de seguridad. Si el conjunto de datos "
+"no contiene puntos geográficos, pero se ha establecido una :doc:`ubicación "
+"de conjunto de datos predeterminada "
+"</configuring_domain/05_configuring_domain/regional_settings>` para el "
+"dominio, se utilizará esta ubicación predeterminada."
+
+#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:91
+msgid ""
+"Specific: Enter the name of the data location(s) in the textbox ; a drop-"
+"down selection of matching location names will appear. Click on the right "
+"location(s), which will appear on the map."
+msgstr ""
+"Específico: especifique el nombre de la(s) ubicación(es) de los datos en el "
+"cuadro de texto; aparecerá una selección desplegable de nombres de "
+"ubicaciones coincidentes. Haga clic en la(s) ubicación(es) correcta(s), que "
+"aparecerán en el mapa."
+
+#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:93
+msgid "Caution"
+msgstr "Precaución"
+
+#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:96
+msgid "All added locations must be at the same administrative level."
+msgstr ""
+"Todas las ubicaciones añadidas deben estar en el mismo nivel administrativo."
 
 #: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:98
 msgid "Timezone"
@@ -450,102 +519,3 @@ msgstr ""
 "Los metadatos estándar personalizados se pueden crear y activar bajo "
 "demanda. Póngase en contacto con Opendatasoft para obtener más información "
 "acerca de los metadatos estándar personalizados."
-
-#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:85
-#, fuzzy
-msgid "Geographic coverage"
-msgstr "Área geográfica"
-
-#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:86
-#, fuzzy
-msgid ""
-"Geographic coverage of the data contained in the dataset. This metadata is "
-"directly linked to :ref:`the geographic filter displayed in the front office"
-" of the portal <using-the-minimap>` : if the geographic coverage metadata is"
-" set for a dataset, users will be able to find it through a geographic "
-"search of the catalog."
-msgstr ""
-"Área geográfica de los datos que contiene el conjunto de datos. Estos "
-"metadatos están vinculados directamente con :ref:`el minimapa que se "
-"visualiza en el front office del portal <using-the-minimap>`: si se "
-"establecen los metadatos del área geográfica de un conjunto de datos, un "
-"usuario final podrá encontrarlos por medio de una búsqueda geográfica del "
-"catálogo."
-
-#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:89
-msgid ""
-"None *(default for datasets without geographical data)*: the geographic "
-"coverage won't be set for the dataset, which won't be searchable through the"
-" geographic filter."
-msgstr ""
-
-#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:90
-msgid ""
-"Automatic *(default)*: if the dataset contains geopoints, the geographic "
-"coverage will be automatically defined as the smallest envelope containing "
-"all of the records' locations. Note that all data will be taken into account"
-" for this computation, regardless of security parameters. If the dataset "
-"doesn't contain geopoints, but that a :doc:`Datasets default location "
-"</configuring_domain/05_configuring_domain/regional_settings>` was set for "
-"the domain, this default location will be used."
-msgstr ""
-
-#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:91
-msgid ""
-"Specific: Enter the name of the data location(s) in the textbox ; a drop-"
-"down selection of matching location names will appear. Click on the right "
-"location(s), which will appear on the map."
-msgstr ""
-
-#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:93
-msgid "Caution"
-msgstr ""
-
-#: ../../source/publishing_data/06_configuring_metadata/standard_metadata.rst:96
-msgid "All added locations must be at the same administrative level."
-msgstr ""
-
-#~ msgid "Geographic area"
-#~ msgstr "Área geográfica"
-
-#~ msgid ""
-#~ "Geographic area of the data contained in the dataset. This metadata is "
-#~ "directly linked to :ref:`the mini map displayed in the front office of the "
-#~ "portal <using-the-minimap>` : if the geographic area metadata is set for a "
-#~ "dataset, an end-user will be able to find it through a geographic search of "
-#~ "the catalog."
-#~ msgstr ""
-#~ "Área geográfica de los datos que contiene el conjunto de datos. Estos "
-#~ "metadatos están vinculados directamente con :ref:`el minimapa que se "
-#~ "visualiza en el front office del portal <using-the-minimap>`: si se "
-#~ "establecen los metadatos del área geográfica de un conjunto de datos, un "
-#~ "usuario final podrá encontrarlos por medio de una búsqueda geográfica del "
-#~ "catálogo."
-
-#~ msgid ""
-#~ "None *(default)*: the geographic area won't be set for the dataset, which "
-#~ "won't be searchable through the mini map."
-#~ msgstr ""
-#~ "Ninguno *(predeterminado)*: no se establece el área geográfica para el "
-#~ "conjunto de datos, que no se podrá buscar mediante el minimapa."
-
-#~ msgid ""
-#~ "Auto: the geographic area will be defined as the smallest envelope "
-#~ "containing all of the records' locations. Note that all data will be taken "
-#~ "into account for this computation regardless of security parameters. The "
-#~ "option is only available if the dataset contains geopoints."
-#~ msgstr ""
-#~ "Auto: el área geográfica se definirá como el contenedor más pequeño de las "
-#~ "ubicaciones de todos los registros. Tenga en cuenta que se tendrán en cuenta"
-#~ " todos los datos para este cálculo independientemente de los parámetros de "
-#~ "seguridad. La opción solo está disponible si el conjunto de datos contiene "
-#~ "puntos geográficos."
-
-#~ msgid ""
-#~ "Manual: a map appears under this option when it is chosen. Draw a shape on "
-#~ "the right geographic area corresponding to the data of the dataset, or paste"
-#~ " a GeoJSON after having clicked on the map."
-#~ msgstr ""
-#~ "Manual: aparece un mapa bajo esta opción cuando se selecciona. Dibuje una "
-#~ "forma en el área geográfica adecuada correspondiente a los datos del "
-#~ "conjunto de datos o pegue un GeoJSON después de hacer clic en el mapa."
