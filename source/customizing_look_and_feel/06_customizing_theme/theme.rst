@@ -63,7 +63,7 @@ Customizing a portal theme
 .. _theme__layout-options:
 
 Layout options
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 .. image:: images/theme_layout-options.png
 
@@ -91,7 +91,7 @@ To modify a layout option:
 To reset any layout option to its default value, click on the |icon-trash| icon.
 
 Colors
-~~~~~~
+^^^^^^
 
 As with layout options, the Opendatasoft platform relies on a handful of color variables for the style of the portal elements. You can use the color inputs on this tab to set some of theme. This way with just a few clicks you can brand your portal to your colors.
 
@@ -120,7 +120,7 @@ As with layout options, the Opendatasoft platform relies on a handful of color v
 .. _theme__stylesheet:
 
 Stylesheet
-~~~~~~~~~~
+^^^^^^^^^^
 
 If changing colors is not enough and you'd like make deeper changes, you'll have to write your own CSS. Luckily this tab enables you to input your own style rules. These will be applied on top of Opendatasoft's default rules and have precedence over them.
 
@@ -136,7 +136,7 @@ If your customization uses specific images and fonts, you can upload them to the
     In short, class names are written as *block, element, modifier* (hence the BEM) `.ods-block[--blockmodifier][__element][--elementmodifier]`. The hierarchy tree is at most 2 selectors deep. Also, the relevant style is as close to the element as possible.
 
 Header and footer
-~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^
 
 While both header and footer can already be branded using the domain's customization section and color selection panel, organizations usually want to further customize the layout and content of these areas.
 
@@ -152,7 +152,7 @@ We also provide placeholders that will be replaced with the content specified in
    While you can take advantage of Angular within the header and footer, standard JS is still forbidden for security reasons.
 
 Catalog card
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 On the catalog page of your domain, each dataset is represented by a single *catalog card*. These cards feature a few standard elements but you may want to radically change the way it looks, add new links or implement new behaviours.
 
