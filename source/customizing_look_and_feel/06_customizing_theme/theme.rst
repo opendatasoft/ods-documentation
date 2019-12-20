@@ -221,62 +221,71 @@ The following placeholders are available in the **Footer** tab:
 Catalog card
 ^^^^^^^^^^^^
 
-On the catalog page of your domain, each dataset is represented by a single *catalog card*. These cards feature a few standard elements but you may want to radically change the way it looks, add new links or implement new behaviours.
-
-Here are a few examples of catalog cards:
-
-.. image:: images/theme__catalog-card-example-central.png
-.. image:: images/theme__catalog-card-example-datacorsica.png
-.. image:: images/theme__catalog-card-example-toulouse.png
-
-We provide handy directives to easily retrieve and include any information relative to a dataset. These directives also come with a standard style that you can override using the *Stylesheet* tab.
-
 .. image:: images/theme_catalog-card.png
 
-The directives are:
+The **Catalog card** tab displays an editor in which to add pure HTML. It allows to customize the catalog cards displayed in the catalog of the portal, which represent the published datasets of that portal (see Exploring a dataset from the catalog).
 
-* `ods-catalog-card` must wrap the whole catalog card for the other directives to work.
-* `ods-catalog-card-theme-icon` will retrieve the dataset's theme and include the relevant icon.
-* `ods-catalog-card-body` provides useful style and behaviour handling edge cases (datasets without records, API
-  proxy...).
-* `ods-catalog-card-title`, `ods-catalog-card-description` and `ods-catalog-card-keywords` are self-explanatory.
-* `ods-catalog-card-metadata-item` takes an `item-key` and an `item-title` attributes, retrieve a metadata property matching the `item-key` from the dataset and includes in in the page using `item-title` as its label. It should be wrapped by a `.ods-catalog-card__metadata` element for better styling but with no obligation.
+The following directives allow to retrieve information related to a dataset, which could be included in the catalog card.
 
-  .. code-block:: html
+.. admonition:: Note
+   :class: note
 
-     <ods-catalog-card-metadata-item item-title="Data" item-key="records_count"></ods-catalog-card-metadata-item>
+   Directives used in the Catalog card tab come with a standard style, which can be modified in the Stylesheet tab.
 
-
-.. list-table:: Metadata item keys
+.. list-table::
+   :widths: 50 50
    :header-rows: 1
 
-   * * Item key
-     * Item title
-   * * license
-     * License (will be rendered as a link if possible)
-   * * language
-     * Content language
-   * * modified
-     * Date of last modification
-   * * publisher
-     * Publisher's name
-   * * references
-     * Link to the original source of the data
-   * * odi_certificate_url
-     * Link to the ODI certificate
-   * * records_count
-     * Number of records in the dataset (regardless of filters)
-   * * attributions
-     * Names of the data owner
-   * * source_domain
-     * For federated datasets only, the name of the domain the dataset comes from
-   * * source_domain_title
-     * For federated datasets only, the original title of the dataset on its source domain
-   * * source_dataset
-     * For federated datasets only, the original identifier of the dataset on its source domain
-   * * explore.download_count
-     * Number of data downloads for this dataset
+   * * Directive
+     * Information
+   * * ``ods-catalog-card``
+     * **Mandatory**. Wraps the whole catalog card for the other directives to work
+   * * ``ods-catalog-card-theme-icon``
+     * Retrieves the dataset's theme and includes the related icon
+   * * ``ods-catalog-card-body``
+     * Provides useful style and behaviour handling edge cases (e.g. datasets without records)
+   * * ``ods-catalog-card-title``
+     * Retrieves the title of the dataset
+   * * ``ods-catalog-card-description``
+     * Retrieves the description of the dataset
+   * * ``ods-catalog-card-keywords``
+     * Retrieves the keywords defined for the dataset
+   * * ``ods-catalog-card-metadata-item``
+     * Takes an ``item-key`` and an ``item-title`` attributes. It retrieves a metadata property matching the ``item-key`` (see table below) from the dataset and includes it in the page using ``item-title`` as its label. It should be wrapped by a ``.ods-catalog-card__metadata`` element for better styling but with no obligation.
 
+       Example: ``<ods-catalog-card-metadata-item item-title="Data" item-key="records_count"></ods-catalog-card-metadata-item>``
+
+       The table below lists all available metadata item keys:
+
+       .. list-table::
+          :header-rows: 1
+
+          * * Item key
+            * Information
+          * * ``license``
+            * License (will be rendered as a link if possible)
+          * * ``language``
+            * Content language
+          * * ``modified``
+            * Date of last modification
+          * * ``publisher``
+            * Publisher's name
+          * * ``references``
+            * Link to the original source of the data
+          * * ``odi_certificate_url``
+            * Link to the ODI certificate
+          * * ``records_count``
+            * Number of records in the dataset (regardless of filters)
+          * * ``attributions``
+            * Names of the data owner
+          * * ``source_domain``
+            * For federated datasets only, the name of the domain the dataset comes from
+          * * ``source_domain_title``
+            * For federated datasets only, the original title of the dataset on its source domain
+          * * ``source_dataset``
+            * For federated datasets only, the original identifier of the dataset on its source domain
+          * * ``explore.download_count``
+            * Number of data downloads for this dataset
 
 
 
