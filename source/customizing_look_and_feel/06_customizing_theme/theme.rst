@@ -153,18 +153,17 @@ To reset to the color of the currently live portal theme, click on the |icon-res
 Stylesheet
 ^^^^^^^^^^
 
-If changing colors is not enough and you'd like make deeper changes, you'll have to write your own CSS. Luckily this tab enables you to input your own style rules. These will be applied on top of Opendatasoft's default rules and have precedence over them.
-
 .. image:: images/theme_stylesheet.png
 
-If your customization uses specific images and fonts, you can upload them to the platform using the :doc:`assets management page </customizing_look_and_feel/03_adding_assets/assets>`. You'll then be able to copy the assets URLs and paste them in your CSS code.
+The **Stylesheet** tab displays an editor in which to add pure CSS style rules. It allows the push even further the customization of a portal theme. All rules added in this tab will have precedence over the configurations defined in the other theme tabs.
 
-.. important::
-    To change the style of an element, you only have to find the element's class and change the desired CSS property. It won't have any side-effects (limited to this single class name) and is guaranteed to work (since the hierarchy tree is mostly flat).
+To change the style of an element, find the element's class and change the desired CSS property. Class names are written as block, element, modifier: `.ods-block[--blockmodifier][__element][--elementmodifier]`.
 
-    This is possible because all of Opendatasoft's CSS code is written following the `BEM methodology <http://getbem.com/introduction/>`_ and prefixed with `ods-` so that they won't conflict with your own styles and can easily be overridden. You'll find a great introduction to this methodology on the ever-useful `CSS Tricks website <https://css-tricks.com/bem-101/>`_.
+.. admonition:: Note
+   :class: note
 
-    In short, class names are written as *block, element, modifier* (hence the BEM) `.ods-block[--blockmodifier][__element][--elementmodifier]`. The hierarchy tree is at most 2 selectors deep. Also, the relevant style is as close to the element as possible.
+   When using specific images and fonts for the customization of the domain, don't hesitate to upload them as assets in the platform (see :doc:`Adding assets </customizing_look_and_feel/03_adding_assets/assets>`). It allows to easily copy the assets URLs and paste them in the CSS code.
+
 
 Header and footer
 ^^^^^^^^^^^^^^^^^
