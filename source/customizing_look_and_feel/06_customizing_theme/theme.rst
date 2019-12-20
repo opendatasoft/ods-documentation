@@ -65,22 +65,30 @@ Customizing a portal theme
 Layout options
 ~~~~~~~~~~~~~~
 
-The portal layout relies on a 12-column grid system largely inherited from the `Bootstrap CSS framework <http://getbootstrap.com/css/#grid>`_ and as such has a few internal variables used throughout its CSS. This tab allows you to set the value of some of these variables.
-
 .. image:: images/theme_layout-options.png
 
-The variables that can currently be overridden are the *gutter width* and the *responsive breakpoints*.
+The **Layout options** tab allows to customize the portal layout, which by default relies on a 12-columns grid system inherited from the `Bootstrap CSS framework <http://getbootstrap.com/css/#grid>`_.
 
-The *gutter width* is the space between columns, rows and adjacent boxes.
+More specifically, in this tab, it is possible to modify:
 
-The *responsive breakpoints* are the screen widths (in pixels) at which the layout will change to better accommodate the available space. There are 4 modes available: extra-small , small , medium and large, which means that there are 3 breakpoints: extra-small to small, small to medium and medium to large. The modes are also commonly referred to as *mobile*, *tablet*, *desktop* and *large desktop*.
+- the Gutter width, which is the space (in pixels) between the various elements that compose an interface of the portal (columns, rows and boxes)
+- the Responsive breakpoints, which are the various screen widths (in pixels) at which the layout should change to adapt to the available space (e.g. the portal layout should differ depending on whether it is used from a mobile phone or a desktop, because the screen of a mobile phone is much smaller than that of a desktop). A web interface that adapts depending on the screen width is indeed called "responsive". There are 3 configurable breakpoints between 4 standard screen size associated with common devices:
+
+   - Mobile to tablet: to go from an extra-small screen to a small screen
+   - Tablet to desktop: to go from a small screen to a medium screen
+   - Desktop to large desktop: to go from a medium screen to a large screen
 
 .. admonition:: Note
    :class: note
 
-   Bear in mind though that *mobile mode* doesn't mean that the user is actually using a mobile device, but rather that the browser on the device only offers a small display area.
+   Mobile, Tablet, Desktop and Large desktop are used as reference because they are common devices that illustrate quite well the 4 standard screen sizes (extra-small , small , medium and large) that can be encountered. Keep in mind however that Mobile for example doesn't mean that the user is actually using a mobile device, but rather that the browser used by the user only offers an extra-small display area.
 
-In order to reset any of the variable to its default value, just click on the clear button next to it.
+To modify a layout option:
+
+1. Write a new width, in pixels, in the chosen textbox.
+2. Click on the Save button in the top right corner.
+
+To reset any layout option to its default value, click on the |icon-trash| icon.
 
 Colors
 ~~~~~~
@@ -201,3 +209,12 @@ The directives are:
      * For federated datasets only, the original identifier of the dataset on its source domain
    * * explore.download_count
      * Number of data downloads for this dataset
+
+
+
+
+
+
+.. |icon-trash| image:: images/icon_trash.png
+    :width: 29px
+    :height: 28px
