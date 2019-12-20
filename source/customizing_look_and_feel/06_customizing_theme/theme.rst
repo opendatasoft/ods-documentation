@@ -88,19 +88,50 @@ To modify a layout option:
 1. Write a new width, in pixels, in the chosen textbox.
 2. Click on the Save button in the top right corner.
 
-To reset any layout option to its default value, click on the |icon-trash| icon.
+To reset any layout option to its default value, click on the |icon-trash| button.
 
 Colors
 ^^^^^^
 
-As with layout options, the Opendatasoft platform relies on a handful of color variables for the style of the portal elements. You can use the color inputs on this tab to set some of theme. This way with just a few clicks you can brand your portal to your colors.
-
 .. image:: images/theme_colors.png
 
-.. admonition:: Note
-   :class: note
+The **Colors** tab allows to customize the colors used in the texts and links, backgrounds and borders of the portal.
 
-   These variables will override the default theme's colors. The custom style rules you can write in the stylesheet tab will however have precedence over these colors. Which means that your color choices may not be visible if you wrote more specific CSS rules.
+.. admonition:: Important
+   :class: important
+
+   If a custom stylesheet has been created for the portal, the CSS rules that is contains will have precedence over the colors defined in the Colors tab.
+
+The color of following elements of an Opendatasoft portal can be configured in this tab:
+
+.. list-table::
+   :header-rows: 1
+
+   * * Category
+     * Configurable elements
+   * * Text
+     * - Text (main)
+       - Links
+       - Header links
+       - Footer links
+       - Titles
+       - Section titles
+       - Highlight (active element)
+   * * Background
+     * - Page background
+       - Boxes background
+       - Section titles background
+       - Header background
+       - Footer background
+   * * Borders
+     * - Boxes border
+
+To modify a theme color:
+
+1. In the chosen textbox, write the hexadecimal code of the new color, or click the color button to choose a new color using either the Nice colors, or the Color wheel.
+2. Click on the Save button in the top right corner.
+
+To reset to the color of the currently live portal theme, click on the |icon-reset| button.
 
 .. _theme_colors_variables:
 
@@ -218,3 +249,7 @@ The directives are:
 .. |icon-trash| image:: images/icon_trash.png
     :width: 29px
     :height: 28px
+
+.. |icon-reset| image:: images/icon_reset.png
+    :width: 25px
+    :height: 26px
