@@ -144,7 +144,7 @@ To reset to the color of the currently live portal theme, click on the |icon-res
 
       var(--variable-name)
 
-   The available variables are: `text`, `links`, `titles`, `page-background`, `highlight`, `boxes-background`, `boxes-border`, `section-titles`, `section-titles-background`, `header-background`, `header-links`, `footer-background` and `footer-links`.
+   The available variables are: ``text``, ``links``, ``titles``, ``page-background``, ``highlight``, ``boxes-background``, ``boxes-border``, ``section-titles``, ``section-titles-background``, ``header-background``, ``header-links``, ``footer-background`` and ``footer-links``.
 
    These CSS variables are compatible with all browsers, because the Opendatasoft platform automatically replaces all variables with their real theme color values.
 
@@ -157,7 +157,7 @@ Stylesheet
 
 The **Stylesheet** tab displays an editor in which to add pure CSS style rules. It allows the push even further the customization of a portal theme. All rules added in this tab will have precedence over the configurations defined in the other theme tabs.
 
-To change the style of an element, find the element's class and change the desired CSS property. Class names are written as block, element, modifier: `.ods-block[--blockmodifier][__element][--elementmodifier]`.
+To change the style of an element, find the element's class and change the desired CSS property. Class names are written as block, element, modifier: ``.ods-block[--blockmodifier][__element][--elementmodifier]``.
 
 .. admonition:: Note
    :class: note
@@ -172,12 +172,12 @@ Header and Footer
 
 The **Header** and **Footer** tabs each display an editor in which to add pure HTML. Although both the header and the footer can be partially customized via the **Colors** tab, these tabs allow to push even further the customization of these areas of the portal.
 
-Both the header and the footer are wrapped within independent AngularJS applications, which means that standard Angular directives such as `ng-if`, `ng-class`, `ng-show` or `ng-hide` can be used.
+Both the header and the footer are wrapped within independent AngularJS applications, which means that standard Angular directives such as ``ng-if``, ``ng-class``, ``ng-show`` or ``ng-hide`` can be used.
 
 .. admonition:: Note
    :class: note
 
-   To collapse the header into a *click-to-expand* side menu below a certain viewport width, use the `ods-responsive-menu` directive.
+   To collapse the header into a *click-to-expand* side menu below a certain viewport width, use the ``ods-responsive-menu`` directive.
 
 Placeholders can also be used when customizing the header and the footer: they will be replaced with the content specified in the domain customization options such as menu items, language selectors and logos.
 
@@ -188,15 +188,15 @@ The following placeholders are available in the **Header** tab:
 
    * * Placeholder
      * Information
-   * * `##menu##`
+   * * ``##menu##``
      * Main menu, with links to chosen pages
-   * * `##secondary-menu##`
+   * * ``##secondary-menu##``
      * Menu containing links to login page and user account
-   * * `##logo##`
+   * * ``##logo##``
      * Portal logo configured in Branding
-   * * `##brand##`
+   * * ``##brand##``
      * Portal brand configured in Branding
-   * * `##language##`
+   * * ``##language##``
      * Links to change the language of the portal
 
 The following placeholders are available in the **Footer** tab:
@@ -206,11 +206,11 @@ The following placeholders are available in the **Footer** tab:
 
    * * Placeholder
      * Information
-   * * `##legal##`
+   * * ``##legal##``
      * Link to the Terms & Conditions defined for the portal, configured in Legals
-   * * `##language##`
+   * * ``##language##``
      * Language picker for the languages specified for the portal
-   * * `##ods-logo##`
+   * * ``##ods-logo##``
      * Opendatasoft logo
 
 .. admonition:: Important
