@@ -165,21 +165,58 @@ To change the style of an element, find the element's class and change the desir
    When using specific images and fonts for the customization of the domain, don't hesitate to upload them as assets in the platform (see :doc:`Adding assets </customizing_look_and_feel/03_adding_assets/assets>`). It allows to easily copy the assets URLs and paste them in the CSS code.
 
 
-Header and footer
+Header and Footer
 ^^^^^^^^^^^^^^^^^
-
-While both header and footer can already be branded using the domain's customization section and color selection panel, organizations usually want to further customize the layout and content of these areas.
 
 .. image:: images/theme_header.png
 
-Both header and footer are wrapped within independent AngularJS applications, which means you can use `ng-if`, `ng-class`, `ng-show`, `ng-hide` and all of Angular's standard directives to make the areas more dynamic. One common request is to collapse the header into a *click-to-expand* side menu below a certain viewport width. For this purpose we provide the `ods-responsive-menu` directive. See :doc:`this dedicated page </customizing_look_and_feel/07_designing_responsive_portal/responsive>` for more information.
+The **Header** and **Footer** tabs each display an editor in which to add pure HTML. Although both the header and the footer can be partially customized via the **Colors** tab, these tabs allow to push even further the customization of these areas of the portal.
 
-We also provide placeholders that will be replaced with the content specified in the domain customization options such as menu items, language selectors and logos. The full list is displayed right above the code area.
+Both the header and the footer are wrapped within independent AngularJS applications, which means that standard Angular directives such as `ng-if`, `ng-class`, `ng-show` or `ng-hide` can be used.
 
 .. admonition:: Note
    :class: note
 
-   While you can take advantage of Angular within the header and footer, standard JS is still forbidden for security reasons.
+   To collapse the header into a *click-to-expand* side menu below a certain viewport width, use the `ods-responsive-menu` directive.
+
+Placeholders can also be used when customizing the header and the footer: they will be replaced with the content specified in the domain customization options such as menu items, language selectors and logos.
+
+The following placeholders are available in the **Header** tab:
+
+.. list-table::
+   :header-rows: 1
+
+   * * Placeholder
+     * Information
+   * * `##menu##`
+     * Main menu, with links to chosen pages
+   * * `##secondary-menu##`
+     * Menu containing links to login page and user account
+   * * `##logo##`
+     * Portal logo configured in Branding
+   * * `##brand##`
+     * Portal brand configured in Branding
+   * * `##language##`
+     * Links to change the language of the portal
+
+The following placeholders are available in the **Footer** tab:
+
+.. list-table::
+   :header-rows: 1
+
+   * * Placeholder
+     * Information
+   * * `##legal##`
+     * Link to the Terms & Conditions defined for the portal, configured in Legals
+   * * `##language##`
+     * Language picker for the languages specified for the portal
+   * * `##ods-logo##`
+     * Opendatasoft logo
+
+.. admonition:: Important
+   :class: important
+
+   JavaScript is not allowed for security reasons.
 
 Catalog card
 ^^^^^^^^^^^^
