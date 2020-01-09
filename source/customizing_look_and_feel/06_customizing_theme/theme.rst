@@ -1,5 +1,5 @@
-Managing & customizing portal themes
-====================================
+Customizing portal themes
+=========================
 
 The default theme of all Opendatasoft portals can be entirely customized, not only in terms of layout and colors, but also regarding specific areas such as header, footer and catalog cards. Theme configurations and managed from the **Look & feel > Theme** subsection of the back office.
 
@@ -7,7 +7,7 @@ The default theme of all Opendatasoft portals can be entirely customized, not on
 
 The Theme interface comprises 3 main blocks.
 
-- The header (1), which not only displays the title of the interface, but also a "Current action" drop-down menu to manage versioning (see Versioning themes). 3 important buttons are also displayed in the header:
+- The header (1), which not only displays the title of the interface, but also a "Current action" drop-down menu to manage versioning (see :ref:`Versioning themes <theme_versioning>`). 3 important buttons are also displayed in the header:
 
   - Save, to save the new configurations
   - Preview, to open in a new tab the Opendatasoft portal with the newly applied configurations
@@ -25,15 +25,16 @@ The Theme interface comprises 3 main blocks.
 
    It is also possible to generate a new API key by clicking on the "Generate new key" button. However, be careful when generating new API keys: only the current one can be used, which means that generating a new API key revokes all previous ones.
 
-- A block of 6 tabs (3), each one allowing to configure a part of an Opendatasoft portal theme (see Customizing a portal theme):
+- A block of 6 tabs (3), each one allowing to configure a part of an Opendatasoft portal theme (see :ref:`Customizing a portal theme <theme_customization>`):
 
-  - **Layout options**, to modify the general layout of the portal
-  - **Colors**, to change colors of backgrounds, texts, borders, links, etc.
-  - **Stylesheet**, to add more style to the portal with CSS
-  - **Header**, to modify the header with HTML code
-  - **Footer**, to modify the footer with HTML code
-  - **Catalog card**, to modify the catalog cards with HTML code
+  - :ref:`Layout options <layout_options>`, to modify the general layout of the portal
+  - :ref:`Colors <colors>`, to change colors of backgrounds, texts, borders, links, etc.
+  - :ref:`Stylesheet <stylesheet>`, to add more style to the portal with CSS
+  - :ref:`Header <header_footer>`, to modify the header with HTML code
+  - :ref:`Footer <header_footer>`, to modify the footer with HTML code
+  - :ref:`Catalog card <catalog_card>`, to modify the catalog cards with HTML code
 
+.. _theme_versioning:
 
 Versioning themes
 -----------------
@@ -57,10 +58,12 @@ While working on the latest draft version of the portal theme, it is possible to
    Only users able to edit the domain properties can preview the latest theme version. If sharing the URL with other users who were not granted the right permissions, they would see the portal with the live theme.
 
 
+.. _theme_customization:
+
 Customizing a portal theme
 --------------------------
 
-.. _theme__layout-options:
+.. _layout_options:
 
 Layout options
 ^^^^^^^^^^^^^^
@@ -89,6 +92,8 @@ To modify a layout option:
 2. Click on the Save button in the top right corner.
 
 To reset any layout option to its default value, click on the |icon-trash| button.
+
+.. _colors:
 
 Colors
 ^^^^^^
@@ -148,7 +153,7 @@ To reset to the color of the currently live portal theme, click on the |icon-res
 
    These CSS variables are compatible with all browsers, because the Opendatasoft platform automatically replaces all variables with their real theme color values.
 
-.. _theme__stylesheet:
+.. _stylesheet:
 
 Stylesheet
 ^^^^^^^^^^
@@ -164,6 +169,7 @@ To change the style of an element, find the element's class and change the desir
 
    When using specific images and fonts for the customization of the domain, don't hesitate to upload them as assets in the platform (see :doc:`Adding assets </customizing_look_and_feel/03_adding_assets/assets>`). It allows to easily copy the assets URLs and paste them in the CSS code.
 
+.. _header_footer:
 
 Header and Footer
 ^^^^^^^^^^^^^^^^^
@@ -218,19 +224,21 @@ The following placeholders are available in the **Footer** tab:
 
    JavaScript is not allowed for security reasons.
 
+.. _catalog_card:
+
 Catalog card
 ^^^^^^^^^^^^
 
 .. image:: images/theme_catalog-card.png
 
-The **Catalog card** tab displays an editor in which to add pure HTML. It allows to customize the catalog cards displayed in the catalog of the portal, which represent the published datasets of that portal (see Exploring a dataset from the catalog).
+The **Catalog card** tab displays an editor in which to add pure HTML. It allows to customize the catalog cards displayed in the catalog of the portal, which represent the published datasets of that portal (see :ref:`Exploring a dataset from the catalog <exploring_dataset>`).
 
 The following directives allow to retrieve information related to a dataset, which could be included in the catalog card.
 
 .. admonition:: Note
    :class: note
 
-   Directives used in the Catalog card tab come with a standard style, which can be modified in the Stylesheet tab.
+   Directives used in the Catalog card tab come with a standard style, which can be modified in the :ref:`Stylesheet <stylesheet>` tab.
 
 .. list-table::
    :widths: 50 50

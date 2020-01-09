@@ -9,7 +9,7 @@ Choosing a root page
 
 .. image:: images/navigation_root-page.png
 
-The root page is the default page on which a user lands when accessing the portal via its main URL (e.g. domainname.opendatasoft.com/). By default, the root page of the Explore page, which displays the catalog of datasets of the portal. It can be replaced with any other page build within the domain, such as a home page build with HTML & CSS using the Pages section of the back office (see :doc:`Creating content </creating_content/index>`).
+The root page is the default page on which a user lands when accessing the portal via its main URL (e.g. ``domainname.opendatasoft.com/``). By default, the root page of the Explore page, which displays the catalog of datasets of the portal. It can be replaced with any other page build within the domain, such as a home page build with HTML & CSS using the Pages section of the back office (see :doc:`Creating content </creating_content/index>`).
 
 To change the root page:
 

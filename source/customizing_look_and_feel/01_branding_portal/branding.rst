@@ -37,7 +37,7 @@ Choosing a page title prefix
 
 .. image:: images/branding_page-title-prefix.png
 
-The page title prefix is displayed in the browser's tab. It is usually preceded by the name of the page that is currently visited, both being separated with a `—` sign.
+The page title prefix is displayed in the browser's tab. It is usually preceded by the name of the page that is currently visited, both being separated with a ``—`` sign.
 
 To choose a page title prefix:
 

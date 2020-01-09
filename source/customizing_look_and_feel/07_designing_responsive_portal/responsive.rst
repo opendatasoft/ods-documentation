@@ -223,7 +223,7 @@ that is the width of the browser's window.
 
 Responsive layouts work by defining *breakpoints*, widths in pixels marking levels at which the layout will change.
 Within the Opendatasoft's platform, 3 breakpoints (defining 4 modes) are defined and can be
-:ref:`customized through the theme <theme__layout-options>`. These modes are *extra-small*, *small*, *medium* and
+:ref:`customized through the theme <layout_options>`. These modes are *extra-small*, *small*, *medium* and
 *large* (also refered to as *mobile*, *tablet*, *desktop* and *large desktop*).
 
 A grid layout is designed for a given window width but can quite quickly become unsuited for other screen formats. For
