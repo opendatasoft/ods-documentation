@@ -43,7 +43,8 @@ Defining a new dataset theme
    - "Enter an image URL" allows to add ones own image via a URL
    - "No image" (default) allows to leave the dataset theme without any associated icon.
 
-5. Click the Save button in the top right corner of the page.
+5. (optional) If an icon from the Opendatasoft icon library was chosen, its color can be modified by writing the hexadecimal code of the new color, or by clicking the color button to use either the Nice colors or the Color wheel.
+6. Click the Save button in the top right corner of the page.
 
 
 
