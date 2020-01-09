@@ -17,6 +17,5 @@ In this section are listed and documented all features related to the customizat
    04_configuring_data_visualizations/data_visualizations
    02_configuring_navigation/navigation
    06_customizing_theme/theme
-   07_designing_responsive_portal/responsive
    05_defining_dataset_themes/dataset_themes
    03_adding_assets/assets
