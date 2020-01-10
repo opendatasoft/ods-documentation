@@ -7,8 +7,8 @@ All published datasets of an Opendatasoft portal should belong to at least one t
 
 Dataset themes are managed from the table which comprises 2 columns:
 
-- Label, from which the label of the dataset theme is defined ;
-- Image, from which the icon of the dataset theme is configured.
+- **Label**, to define the label of the dataset theme
+- **Image**, to configure the icon of the dataset theme
 
 The dataset themes table also contains 2 options:
 
@@ -33,7 +33,7 @@ By default, 12 generic dataset themes are configured on a newly created Opendata
 Defining a new dataset theme
 ----------------------------
 
-1. Click on the Add custom theme button below the dataset theme table.
+1. Click on the + Add custom theme button below the dataset theme table.
 2. In the Label column, define the label of the new dataset theme. There must be one label per language available on the portal.
 3. In the Image column, click the Select button.
 4. Choose one of the 4 available methods to define the icon of the dataset theme:

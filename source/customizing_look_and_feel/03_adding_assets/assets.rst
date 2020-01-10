@@ -1,7 +1,7 @@
 Adding assets
 =============
 
-Assets are static files that are uploaded in an Opendatasoft domain, in order to be usable throughout that same domain (e.g. in the domain :ref:`stylesheet <stylesheet>`, in content pages, etc.). Either images or fonts files can be added as assets in the domain.
+Assets are static files that are uploaded in an Opendatasoft domain, in order to be usable throughout that same domain (e.g. in the domain :ref:`stylesheet <stylesheet>`, in :doc:`content pages </creating_content/index>`, etc.). Either images or fonts files can be added as assets in the domain.
 
 This feature is available in the **Assets** section of the back office of an Opendatasoft domain.
 

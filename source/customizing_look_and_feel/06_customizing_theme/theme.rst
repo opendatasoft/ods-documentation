@@ -7,7 +7,7 @@ The default theme of all Opendatasoft portals can be entirely customized, not on
 
 The Theme interface comprises 3 main blocks.
 
-- The header (1), which not only displays the title of the interface, but also a "Current action" drop-down menu to manage versioning (see :ref:`Versioning themes <theme_versioning>`). 3 important buttons are also displayed in the header:
+- The header (1), which not only displays the title of the interface, but also a *Current action* drop-down menu to manage versioning (see :ref:`Versioning themes <theme_versioning>`). 3 important buttons are also displayed in the header:
 
   - Save, to save the new configurations
   - Preview, to open in a new tab the Opendatasoft portal with the newly applied configurations
@@ -23,7 +23,7 @@ The Theme interface comprises 3 main blocks.
 
    To find and use a theme API key, click on the **API key for offline development** block to expand it. The current API key is displayed in the block, ready to be copied and used.
 
-   It is also possible to generate a new API key by clicking on the "Generate new key" button. However, be careful when generating new API keys: only the current one can be used, which means that generating a new API key revokes all previous ones.
+   It is also possible to generate a new API key by clicking on the Generate new key button. However, be careful when generating new API keys: only the current one can be used, which means that generating a new API key revokes all previous ones.
 
 - A block of 6 tabs (3), each one allowing to configure a part of an Opendatasoft portal theme (see :ref:`Customizing a portal theme <theme_customization>`):
 
@@ -43,7 +43,7 @@ Versioning themes
 
 Portal themes are versioned, which means that each customized new theme has a version number assigned to it. Once a theme is finished and made live, another version is automatically created: it is the new draft theme on which to work until it is ready to be live.
 
-The "Current action" drop-down menu displayed in the header indicates on which version one is currently working on. It also allows to select previous themes that were already made live.
+The *Current action* drop-down menu displayed in the header indicates on which version one is currently working on. It also allows to select previous themes that were already made live.
 
 .. admonition:: Important
    :class: important
@@ -74,12 +74,12 @@ The **Layout options** tab allows to customize the portal layout, which by defau
 
 More specifically, in this tab, it is possible to modify:
 
-- the Gutter width, which is the space (in pixels) between the various elements that compose an interface of the portal (columns, rows and boxes)
-- the Responsive breakpoints, which are the various screen widths (in pixels) at which the layout should change to adapt to the available space (e.g. the portal layout should differ depending on whether it is used from a mobile phone or a desktop, because the screen of a mobile phone is much smaller than that of a desktop). A web interface that adapts depending on the screen width is indeed called "responsive". There are 3 configurable breakpoints between 4 standard screen size associated with common devices:
+- the *Gutter width*, which is the space (in pixels) between the various elements that compose an interface of the portal (columns, rows and boxes)
+- the **Responsive breakpoints**, which are the various screen widths (in pixels) at which the layout should change to adapt to the available space (e.g. the portal layout should differ depending on whether it is used from a mobile phone or a desktop, because the screen of a mobile phone is much smaller than that of a desktop). A web interface that adapts depending on the screen width is indeed called "responsive". There are 3 configurable breakpoints between 4 standard screen size associated with common devices:
 
-   - Mobile to tablet: to go from an extra-small screen to a small screen
-   - Tablet to desktop: to go from a small screen to a medium screen
-   - Desktop to large desktop: to go from a medium screen to a large screen
+   - *Mobile to tablet*: to go from an extra-small screen to a small screen
+   - *Tablet to desktop*: to go from a small screen to a medium screen
+   - *Desktop to large desktop*: to go from a medium screen to a large screen
 
 .. admonition:: Note
    :class: note
@@ -105,7 +105,7 @@ The **Colors** tab allows to customize the colors used in the texts and links, b
 .. admonition:: Important
    :class: important
 
-   If a custom stylesheet has been created for the portal, the CSS rules that is contains will have precedence over the colors defined in the Colors tab.
+   If a :ref:`custom stylesheet <stylesheet>` has been created for the portal, the CSS rules that is contains will have precedence over the colors defined in the Colors tab.
 
 The color of following elements of an Opendatasoft portal can be configured in this tab:
 
@@ -115,21 +115,21 @@ The color of following elements of an Opendatasoft portal can be configured in t
    * * Category
      * Configurable elements
    * * Text
-     * - Text (main)
-       - Links
-       - Header links
-       - Footer links
-       - Titles
-       - Section titles
-       - Highlight (active element)
+     * - *Text* (main)
+       - *Links*
+       - *Header links*
+       - *Footer links*
+       - *Titles*
+       - *Section titles*
+       - *Highlight* (active element)
    * * Background
-     * - Page background
-       - Boxes background
-       - Section titles background
-       - Header background
-       - Footer background
+     * - *Page background*
+       - *Boxes background*
+       - *Section titles background*
+       - *Header background*
+       - *Footer background*
    * * Borders
-     * - Boxes border
+     * - *Boxes border*
 
 To modify a theme color:
 
@@ -176,14 +176,14 @@ Header and Footer
 
 .. image:: images/theme_header.png
 
-The **Header** and **Footer** tabs each display an editor in which to add pure HTML. Although both the header and the footer can be partially customized via the **Colors** tab, these tabs allow to push even further the customization of these areas of the portal.
+The **Header** and **Footer** tabs each display an editor in which to add pure HTML. Although both the header and the footer can be partially customized via the :ref:`Colors <colors>` tab, these tabs allow to push even further the customization of these areas of the portal.
 
-Both the header and the footer are wrapped within independent AngularJS applications, which means that standard Angular directives such as ``ng-if``, ``ng-class``, ``ng-show`` or ``ng-hide`` can be used.
+Both the header and the footer are wrapped within independent AngularJS applications, which means that standard Angular directives such as ``ng-if``, ``ng-class``, ``ng-show`` and ``ng-hide`` can be used.
 
 .. admonition:: Note
    :class: note
 
-   To collapse the header into a *click-to-expand* side menu below a certain viewport width, use the ``ods-responsive-menu`` directive.
+   To collapse the header into a click-to-expand side menu below a certain viewport width, use the ``ods-responsive-menu`` directive.
 
 Placeholders can also be used when customizing the header and the footer: they will be replaced with the content specified in the domain customization options such as menu items, language selectors and logos.
 

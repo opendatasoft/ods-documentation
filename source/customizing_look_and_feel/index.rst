@@ -7,7 +7,7 @@ In this section are listed and documented all features related to the customizat
 .. admonition:: Note
    :class: note
 
-   This section of the documentation also contains all information concerning :doc:`Assets <03_adding_assets/assets>`, although this section of the back office is independent and not comprised in the Look & Feel section.
+   The **Customizing the look & feel** documentation also contains all information concerning :doc:`Assets <03_adding_assets/assets>`, although this section of the back office is independent and not comprised in the Look & Feel one.
 
 
 .. toctree::

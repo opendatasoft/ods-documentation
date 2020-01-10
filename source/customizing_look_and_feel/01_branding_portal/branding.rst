@@ -1,7 +1,7 @@
 Branding the portal
 ===================
 
-Opendatasoft portals can be customized according to a chosen corporate branding. Go to **Look & feel > Branding** subsection of the back office to choose a portal name, write a portal description, choose a page title prefix, define the brand name or add a portal favicon or logo.
+Opendatasoft portals can be customized according to a chosen corporate branding. Go to the **Look & feel > Branding** subsection of the back office to choose a portal name, write a portal description, choose a page title prefix, define the brand name and add a portal favicon or logo.
 
 
 Choosing a portal name
@@ -37,7 +37,7 @@ Choosing a page title prefix
 
 .. image:: images/branding_page-title-prefix.png
 
-The page title prefix is displayed in the browser's tab. It is usually preceded by the name of the page that is currently visited, both being separated with a ``—`` sign.
+The page title prefix is displayed in the browser's tab. It is usually preceded by the name of the page that is currently visited, both being separated with a dash ``—``.
 
 To choose a page title prefix:
 
@@ -85,7 +85,7 @@ The logo is displayed in every header, throughout the platform. The addition of 
 To add a new portal logo:
 
 1. In the **Branding** configuration interface, look for the **Portal logo** configuration.
-2. Make sure the Display portal logo toggle button is activated.
+2. Make sure the *Display portal logo* toggle button is activated.
 3. Click on the Upload an image button.
 4. Choose a logo using the file finder.
 5. Once the logo has been selected, click on the Save button in the top right corner.

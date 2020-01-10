@@ -41,9 +41,9 @@ To configure the navigation header, look for the **Header** configuration in the
 Adding a new menu item
 ^^^^^^^^^^^^^^^^^^^^^^
 
-1. Click on the Add menu item button.
+1. Click on the + Add menu item button.
 2. In the textbox of the Page URL column, write or paste the link of the new item. External links must start with ``http://`` or ``https://``
-3. (optional) If the link is an external one, click the "Open link in a new tab/window" for it to do so.
+3. (optional) If the link is an external one, tick the *Open link in a new tab/window* option box for it to do so.
 4. In the textbox(es) of the Label column, write the label of the menu item, that will be displayed in the navigation header. There should be one label per language available on the portal.
 5. (optional) Click on the reordering icon |icon-reorder| to place the menu item in a chosen position among the other menu items.
 
