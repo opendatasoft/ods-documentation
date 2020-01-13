@@ -8,7 +8,7 @@ Writing a content page
 
 The content of the page is written and managed from the Content tab.
 
-.. SCREENSHOT
+.. image:: images/page_content.png
 
 The Content tab is composed of 2 main elements.
 
