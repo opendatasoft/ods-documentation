@@ -349,8 +349,8 @@ Date and time handling
    * * Function
      * Description
      * Example
-   * * ``year([datetime])``, ``quarter([datetime])``, ``month([datetime])``, ``day([datetime])``, ``dayofweek([datetime])``, ``hour([datetime])``, ``minute([datetime])``, ``second([datetime])``
-     * Extract the year, quarter, month, day, day of week, hours, minutes, seconds from a datetime
+   * * ``year([datetime])``, ``quarter([datetime])``, ``month([datetime])``, ``week([datetime])``, ``day([datetime])``, ``dayofweek([datetime])``, ``hour([datetime])``, ``minute([datetime])``, ``second([datetime])``
+     * Extract the year, quarter, month, week, day, day of week, hours, minutes, seconds from a datetime
      * * ``year("2014-06-07")`` returns ``2014``
        * ``hour("2014-06-07 17:00")`` returns ``17``
        * ``hour("2014-06-07 17:00", "Europe/Paris")`` returns ``19``
