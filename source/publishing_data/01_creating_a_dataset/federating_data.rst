@@ -71,4 +71,4 @@ The federation does not duplicate the data. Only the metadata and visualizations
         :alt: Schema fédération
 
 .. important::
-   Currently, when there is a modification in the original dataset related to the dataset schema, metadata or visualizations configuration, the federated dataset is not automatically updated. You'll then have to unpublish / republish your federated dataset to reflect the changes.
+   Currently, the metadata of federated datasets are updated everyday. However, other modifications on the original dataset (e.g. visualizations configurations, dataset schema) will not trigger an automatic update: unpublishing and republishing the federated dataset is necessary for the latest modifications to be visible.
