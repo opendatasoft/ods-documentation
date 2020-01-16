@@ -53,6 +53,10 @@ For more information about the DCAT metadata, please refer to the `W3C Data Cata
   * * Data quality
     * Indicate the data quality in the textbox.
 
+.. admonition:: Note
+   :class: note
+
+   DCAT-AP exports specific to a few supported countries are available on demand (see :ref:`Downloading the catalog <download-catalog>`).
 
 INSPIRE
 -------

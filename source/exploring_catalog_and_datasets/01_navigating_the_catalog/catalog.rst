@@ -136,6 +136,8 @@ To use the selectable filters:
 
    For other categories, such as "Modification", the values are sorted in a hierarchical way. It means that the year must be selected first, then the months are displayed. Once the month is selected, the days are displayed in order to be selected as well.
 
+.. _download-catalog:
+
 Downloading the catalog
 -----------------------
 
