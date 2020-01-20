@@ -5,6 +5,7 @@ This processor splits the values in a multivalued field into several records.
 
 Setting the processor
 ---------------------
+
 To set the parameters of the Expand multivalued field processor, follow the indications from the table below.
 
 .. list-table::

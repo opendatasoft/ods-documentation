@@ -1,5 +1,5 @@
-Deduplicate multivalued fields
-==============================
+Deduplicate multivalued fields processor
+========================================
 
 This processor allows to remove duplicates in multivalued fields.
 

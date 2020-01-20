@@ -1,5 +1,5 @@
-Polygon filtering
-=================
+Polygon filtering processor
+===========================
 
 .. admonition:: Important
    :class: important

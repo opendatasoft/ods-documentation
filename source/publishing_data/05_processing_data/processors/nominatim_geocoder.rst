@@ -1,5 +1,5 @@
-Nominatim geocoder
-==================
+Nominatim geocoder processor
+============================
 
 .. admonition:: Important
    :class: important

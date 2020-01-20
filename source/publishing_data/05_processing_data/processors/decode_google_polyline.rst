@@ -1,5 +1,5 @@
-Decode a Google polyline
-========================
+Decode a Google polyline processor
+==================================
 
 .. admonition:: Important
    :class: important

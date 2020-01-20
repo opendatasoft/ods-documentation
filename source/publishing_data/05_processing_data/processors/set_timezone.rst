@@ -1,4 +1,4 @@
-Set Timezone processor
+Set timezone processor
 ======================
 
 This processor allows to force the timezone of a datetime field.
@@ -14,7 +14,7 @@ Example: if a dataset contains a datetime field with an absent ("2016-12-08T08:5
 Setting the processor
 ---------------------
 
-To set the parameters of the Set Timezone processor, follow the indications from the table below.
+To set the parameters of the Set timezone processor, follow the indications from the table below.
 
 .. list-table::
   :header-rows: 1

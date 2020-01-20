@@ -1,4 +1,4 @@
-Concatenate Text processor
+Concatenate text processor
 ==========================
 
 This processor allows to concatenate 2 fields using a separator.
@@ -8,7 +8,7 @@ This processor is usually used after creating a dataset with images, when these 
 Setting the processor
 ---------------------
 
-To set the parameters of the Concatenate Text processor, follow the indications from the table below.
+To set the parameters of the Concatenate text processor, follow the indications from the table below.
 
 .. list-table::
   :header-rows: 1

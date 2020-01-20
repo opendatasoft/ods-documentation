@@ -1,5 +1,5 @@
-GeoHash to GeoJSON
-==================
+GeoHash to GeoJSON processor
+============================
 
 .. admonition:: Important
    :class: important

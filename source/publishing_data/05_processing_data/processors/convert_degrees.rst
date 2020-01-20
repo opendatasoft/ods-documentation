@@ -1,4 +1,4 @@
-Convert Degrees processor
+Convert degrees processor
 =========================
 
 This processor converts a degrees, minutes, seconds geo coordinate to a standard geo coordinate in a "latitude, longitude" format.
@@ -35,7 +35,7 @@ The signs can be:
 Setting the processor
 ---------------------
 
-To set the parameters of the Convert Degrees processor, follow the indications from the table below.
+To set the parameters of the Convert degrees processor, follow the indications from the table below.
 
 .. list-table::
   :header-rows: 1

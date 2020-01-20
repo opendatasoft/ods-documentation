@@ -1,5 +1,5 @@
-Geocode with the Census Bureau (USA)
-====================================
+Geocode with the Census Bureau (USA) processor
+==============================================
 
 .. admonition:: Important
    :class: important

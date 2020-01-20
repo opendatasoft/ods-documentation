@@ -1,5 +1,5 @@
-Transpose fields processor
-==========================
+Transpose columns to rows processor
+===================================
 
 This processor transforms labels into field values.
 
@@ -65,7 +65,7 @@ However, with the representation below, it is possible to set up relevant facets
 Setting the processor
 ---------------------
 
-To set the parameters of the Transpose fields processor, follow the indications from the table below.
+To set the parameters of the Transpose columns to rows processor, follow the indications from the table below.
 
 .. list-table::
   :header-rows: 1
