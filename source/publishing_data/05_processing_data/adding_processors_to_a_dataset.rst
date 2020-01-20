@@ -47,6 +47,11 @@ Geographical processors
   processors/geomasking
   processors/geo_distance
   processors/create_geopoint
+  processors/decode_google_polyline
+  processors/geocode_with_census_bureau
+  processors/geohash_to_geojson
+  processors/nominatim_geocoder
+  processors/polygon_filtering
 
 Geographical processors are divided into 4 categories, according to what is tried to being achieved:
 
@@ -84,6 +89,12 @@ Geocoders
     * On demand
   * * :doc:`Geo coordinates from a 3 word address<processors/get_coordinates_from_3_word_address>`
     * Convert a 3 word address into geographical coordinates
+    * On demand
+  * * :doc:`Geocode with the Census Bureau <processors/geocode_with_census_bureau>`
+    * Geocode addresses in the USA by using the Census Bureau
+    * On demand
+  * * :doc:`Nominatim geocoder <processors/nominatim_geocoder>`
+    * Geocode full-text addresses using OpenStreetMap data
     * On demand
 
 
@@ -145,6 +156,15 @@ Converters & Functions
   * * :doc:`Create geo point<processors/create_geopoint>`
     * Create a geopoint field from a latitude field and a longitude field
     * Default
+  * * :doc:`Decode Google polyline <processors/decode_google_polyline>`
+    * Transform an encoded Google polyline into a GeoJSON LineString
+    * On demand
+  * * :doc:`GeoHash to GeoJSON <processors/geohash_to_geojson>`
+    * Convert GeoHash values to GeoJSON
+    * On demand
+  * * :doc:`Polygon filtering <processors/polygon_filtering>`
+    * Remove points that are not in a polygon
+    * On demand
 
 
 Date processors
@@ -233,6 +253,7 @@ Generic processors
 
   processors/add_field
   processors/copy_field
+  processors/deduplicate_multivalued_fields
   processors/delete_record_by_id
   processors/expand_json_array
   processors/expand_multivalued_field
@@ -242,6 +263,7 @@ Generic processors
   processors/file
   processors/join_dataset
   processors/json_array_to_multivalued
+  processors/meta_expression
   processors/skip_records
   processors/transform_boolean_columns_to_multivalued_field
   processors/transpose_fields
@@ -258,6 +280,9 @@ Generic processors
     * Default
   * * :doc:`Copy a field<processors/copy_field>`
     * Copy a field value from a field to another
+    * Default
+  * * :doc:`Deduplicate multivalued fields <processors/deduplicate_multivalued_fields>`
+    * Remove duplicated values in a multivalued field
     * Default
   * * :doc:`Delete record by ID<processors/delete_record_by_id>`
     * Remove an existing record, based on its unique ID, from a dataset
@@ -286,6 +311,9 @@ Generic processors
   * * :doc:`JSON array to multivalued<processors/json_array_to_multivalued>`
     * Extract multiple values from a JSON array and concatenates them into a multivalued field
     * Default
+  * * :doc:`Meta expression <processors/meta_expression>`
+    * Apply an expression on multiple fields
+    * On demand
   * * :doc:`Skip records<processors/skip_records>`
     * Skip records from a dataset
     * Default
