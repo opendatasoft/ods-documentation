@@ -55,10 +55,10 @@ Geographical processors
 
 Geographical processors are divided into 4 categories, according to what is tried to being achieved:
 
-- **Geocoders**: to convert a human readable address into a geo point. There are 10 geocoders.
+- **Geocoders**: to convert a human readable address into a geo point.
 - **GeoJoin processor**: to retrieve geoshapes from normalized codes for country specific administrative divisions. The GeoJoin processor supports several countries, each of which features several indexing codes like postcode, state or region identifier, etc.
 - **Retrieve Administrative Divisions processor**: to retrieve the name, code and geoshape of country specific administrative divisions enclosing a geopoint.
-- **Converters & Functions**: to simplify, convert or normalize geographical data, or run computations based on them. There are 7 processors in this category.
+- **Converters & Functions**: to simplify, convert or normalize geographical data, or run computations based on them.
 
 Geocoders
 ~~~~~~~~~
