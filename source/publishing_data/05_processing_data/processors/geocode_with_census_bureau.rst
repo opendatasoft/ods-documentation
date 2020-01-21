@@ -6,7 +6,7 @@ Geocode with the Census Bureau (USA) processor
 
    This processor is not available by default. Please contact Opendatasoft support team if you want this processor to be activated in your domain.
 
-This processor allows you to geocode addresses in the USA by using the `Census Bureau <https://www.census.gov/en.html/>`_.
+This processor allows to geocode addresses in the USA using the `Census Bureau <https://geocoding.geo.census.gov/>`_ geocoding service.
 
 Setting the processor
 ---------------------

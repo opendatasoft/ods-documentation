@@ -28,5 +28,5 @@ To set the parameters of the Meta expression processor, follow the indications f
     * Expression pattern. Use ``X`` to represent the field(s).
     * yes
   * * Fields
-    * Fields where the meta expression will be applied. Click on the plus ``+`` sign next to the drop-down menu to add another field on which the meta expression will be applied.
+    * Fields where the meta expression will be applied. Click on the + icon next to the drop-down menu to add another field on which the meta expression will be applied.
     * yes

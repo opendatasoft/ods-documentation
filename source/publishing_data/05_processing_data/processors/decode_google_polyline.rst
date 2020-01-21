@@ -25,7 +25,7 @@ To set the parameters of the Decode a Google polyline processor, follow the indi
     * yes
     *
   * * Reverse Lng/Lat
-    * If checked:
+    * If checked: reverses the geographic coordinates
     * no
     * True
   * * Output field

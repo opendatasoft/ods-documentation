@@ -6,7 +6,7 @@ Polygon filtering processor
 
    This processor is not available by default. Please contact Opendatasoft support team if you want this processor to be activated in your domain.
 
-This processor removes geopoints that are not in a given polygon.
+This processor removes records containing geopoints that are not contained in a chosen polygon.
 
 Setting the processor
 ---------------------
@@ -23,5 +23,5 @@ To set the parameters of the Polygon filtering processor, follow the indications
     * Field which contains the geopoints to filter.
     * yes
   * * Polygon
-    * Polygon which will be used as filter: ?
+    * Polygon which will be used as filter
     * yes
