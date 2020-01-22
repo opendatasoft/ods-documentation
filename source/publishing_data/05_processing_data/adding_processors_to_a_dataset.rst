@@ -13,6 +13,7 @@ To add a processor to a dataset:
 1. In the Processing tab, click on the **Add a processor** button.
 2. Choose the processor to add to the dataset.
 3. Using the documentation of the chosen processor, fill in the right parameters to set the processor.
+4. (optional) Click on the edition icon |icon-edit| to rename the processor. This step can especially be useful when a lot of processors are applied to a dataset, including multiple processors of the same type (e.g. renaming the multiple Expression processors applied to a dataset to know more easily which one contains which expression).
 
 .. admonition:: Note
    :class: note
@@ -324,3 +325,11 @@ Generic processors
   * * :doc:`Transpose columns to rows<processors/transpose_fields>`
     * Transform labels into field values
     * Default
+
+
+
+
+
+.. |icon-edit| image:: icons/edit.png
+    :width: 20px
+    :height: 17px
