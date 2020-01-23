@@ -10,6 +10,10 @@ This processor allows to force the timezone of a datetime field.
 
 Example: if a dataset contains a datetime field with an absent ("2016-12-08T08:51:53") or incorrect ("2016-12-08T08:51:53Z") timezone, the processor can force the timezone ("2016-12-08T08:51:53+00:00" if timezone set to UTC for example).
 
+.. admonition:: Important
+   :class: important
+
+   The Set timezone processor only allows to fix a wrong timezone or define one if it isn't by default. There is another way to manage the timezone in which the data will be displayed: the Timezone metadata (see :doc:`Standard metadata </publishing_data/06_configuring_metadata/standard_metadata>`).
 
 Setting the processor
 ---------------------
