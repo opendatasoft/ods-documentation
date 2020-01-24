@@ -136,6 +136,8 @@ To use the selectable filters:
 
    For other categories, such as "Modification", the values are sorted in a hierarchical way. It means that the year must be selected first, then the months are displayed. Once the month is selected, the days are displayed in order to be selected as well.
 
+.. _download-catalog:
+
 Downloading the catalog
 -----------------------
 
@@ -155,7 +157,7 @@ It is possible to download the catalog in the following formats:
 .. admonition:: Note
    :class: note
 
-   Using the `Opendatasoft Search API <https://help.opendatasoft.com/apis/ods-search-v2/#exporting-datasets>`_, it is possible to download the catalog in other formats, such as JSON, data.json but also DCAT-AP (for Germany and Switzerland).
+   Using the `Opendatasoft Search API <https://help.opendatasoft.com/apis/ods-search-v2/#exporting-datasets>`_, it is possible to download the catalog in other formats, such as JSON, data.json but also DCAT-AP (for Germany, Switzerland, Sweden and Spain).
 
 Exploring a dataset from the catalog
 ------------------------------------
