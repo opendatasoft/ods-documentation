@@ -1,7 +1,7 @@
 Configuring the navigation
 ==========================
 
-The navigation in an Opendatasoft portal starts with the root page, that welcomes users, and is then mainly guided by the navigation header located at the top of any interface in the front office. Both are configurable via the **Look and feel > Navigation** subsection of the back office.
+Users generally start their discovery of an Opendatasoft domain with the root page, and then navigate to other available pages using the header located at the top of any interface in the front office. Both are configurable via the **Look and feel > Navigation** subsection of the back office.
 
 
 Choosing a root page
@@ -9,13 +9,18 @@ Choosing a root page
 
 .. image:: images/navigation_root-page.png
 
-The root page is the default page on which a user lands when accessing the portal via its main URL (e.g. ``domainname.opendatasoft.com/``). By default, the root page of the Explore page, which displays the catalog of datasets of the portal. It can be replaced with any other page build within the domain, such as a home page build with HTML & CSS using the Pages section of the back office (see :doc:`Creating content </creating_content/index>`).
+The root page is the default page on which a user lands when accessing the portal via its main URL (e.g. ``domainname.opendatasoft.com``). By default, the root page is the Explore page, which displays the catalog of datasets of the portal. It can be replaced with any other page available within the domain, such as a home page build with HTML & CSS using the Pages section of the back office (see :doc:`Creating content </creating_content/index>`).
 
 To change the root page:
 
 1. In the **Navigation** configuration interface, look for the **Root page** configuration.
 2. Click on the drop-down menu to choose a page among the list.
 3. Click on the Save button in the top right corner.
+
+.. admonition:: Important
+   :class: important
+
+   All available pages are displayed in the drop-down list, but private pages are grayed out. Only public pages can indeed be chosen as root page.
 
 
 Configuring the navigation header

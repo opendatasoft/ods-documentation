@@ -21,6 +21,11 @@ To add a new default chart color:
 
 To delete a color, click the trash |icon-trash| button.
 
+.. admonition:: Caution
+   :class: caution
+
+   Be careful when deleting chart colors: visualizations configured with these specific custom colors may break.
+
 .. _basemaps:
 
 Adding basemaps
@@ -150,9 +155,7 @@ To add a custom basemap to the domain:
 Adding external basemaps
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Opendatasoft allows the addition of external basemaps through specific integrations.
-
-Currently, the only available integration is with Mapbox.
+Opendatasoft currently only allows the integration of Mapbox basemaps.
 
 .. admonition:: Note
    :class: note

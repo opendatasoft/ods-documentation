@@ -9,7 +9,12 @@ Choosing a portal name
 
 .. image:: images/branding_portal-name.png
 
-The portal name is used throughout the platform. By default, the portal name is the domain identifier (i.e. the name written in the URL of the portal).
+The portal name is used throughout the platform (login page, domain configurations, etc.) as well as in domain-related notifications sent by email. By default, the portal name is the domain identifier (i.e. the name written in the URL of the portal).
+
+.. admonition:: Note
+   :class: note
+
+   Opendatasoft domain URLs can be customized using aliases (see :doc:`Customizing domain URL </configuring_domain/06_customizing_domain_url/custom_urls>` for more information).
 
 To choose a new portal name:
 
@@ -55,7 +60,7 @@ The brand name is used throughout the platform, in every header.
 
 To define the brand name:
 
-1. In the **Branding** configuration interface, look for the **Brand name** configuration.
+1. In the **Branding** configuration interface, look for the **Brand** configuration.
 2. In the textbox, write the brand name.
 3. Click on the Save button in the top right corner.
 
@@ -66,6 +71,11 @@ Adding a portal favicon
 .. image:: images/branding_portal-favicon.png
 
 The favicon is the small image displayed in the browser's tab, next to the page title. The default favicon is Opendatasoft's logo. It should be replaced with images that are either 16x16px or 32x32px.
+
+.. admonition:: Note
+   :class: note
+
+   We recommend to opt for quality and modern formats such as .svg rather than formats like .ico.
 
 To add a new portal favicon:
 
@@ -80,7 +90,7 @@ Adding a portal logo
 
 .. image:: images/branding_portal-logo.png
 
-The logo is displayed in every header, throughout the platform. The addition of a portal logo is optional. If one is added, for a default header, we advise not to upload an image which height is 40px maximum.
+The logo is displayed in every header, throughout the platform. The addition of a portal logo is optional. If one is added, for a default header, we advise to upload an image which height is 40px maximum.
 
 To add a new portal logo:
 
