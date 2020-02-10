@@ -1,4 +1,4 @@
-Extract Text processor
+Extract text processor
 ======================
 
 This processor allows to extract any part of a text, a number or a combination of both into a new column. It's similar to the Replace via Regexp processor, except that instead of replacing the content in the same original column, a new column is created with the extracted text. The idea is indeed to put the part to extract in parentheses. This part will then be extracted in a new column.
@@ -6,7 +6,7 @@ This processor allows to extract any part of a text, a number or a combination o
 Setting the processor
 ---------------------
 
-To set the parameters of the Extract Text processor, follow the indications from the table below.
+To set the parameters of the Extract text processor, follow the indications from the table below.
 
 .. list-table::
   :header-rows: 1
@@ -24,7 +24,7 @@ To set the parameters of the Extract Text processor, follow the indications from
 Example
 -------
 
-Using the same example as for the Replace via Regexp processor (from a French zip code like 44100, keep only the area code 44), the Extract Text processor can be used to create another column with the area code selected, instead of replacing the content like with the Replace via Regexp processor.
+Using the same example as for the Replace via Regexp processor (from a French zip code like 44100, keep only the area code 44), the Extract text processor can be used to create another column with the area code selected, instead of replacing the content like with the Replace via Regexp processor.
 
 .. ifconfig:: language == 'en'
 

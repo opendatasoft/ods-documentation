@@ -1,12 +1,12 @@
-Replace via Regexp processor
-============================
+Replace via regular expression processor
+========================================
 
 This processor allows to replace or remove any part of a text, a number or a combination of both.
 
 Setting the processor
 ---------------------
 
-To set the parameters of the Replace via Regexp processor, follow the indications from the table below.
+To set the parameters of the Replace via regular expression processor, follow the indications from the table below.
 
 .. list-table::
   :header-rows: 1

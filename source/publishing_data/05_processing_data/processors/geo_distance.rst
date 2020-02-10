@@ -1,12 +1,12 @@
-Geo distance processor
-======================
+Compute geo distance processor
+==============================
 
 This processor computes the distance between 2 coordinates. The computed distance is in kilometers.
 
 Setting the processor
 ---------------------
 
-To set the parameters of the Geo distance processor, follow the indications from the table below.
+To set the parameters of the Compute geo distance processor, follow the indications from the table below.
 
 .. list-table::
   :header-rows: 1

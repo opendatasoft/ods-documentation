@@ -1,5 +1,5 @@
-Join dataset processor
-======================
+Join datasets processor
+=======================
 
 This processor allows to join 2 datasets together. However, these 2 datasets must have a common field to be joined.
 
@@ -13,7 +13,7 @@ Example: a dataset A could be enriched with more data, which are in a dataset B.
 Setting the processor
 ---------------------
 
-To set the parameters of the Join dataset processor, follow the indications from the table below.
+To set the parameters of the Join datasets processor, follow the indications from the table below.
 
 .. list-table::
   :header-rows: 1
