@@ -19,9 +19,12 @@ To set the parameters of the Polygon filtering processor, follow the indications
   * * Label
     * Description
     * Mandatory
+    * Example
   * * Point
     * Field which contains the geopoints to filter.
     * yes
+    * Geo Point
   * * Polygon
     * Polygon which will be used as filter
     * yes
+    * ``{"type": "Polygon", "coordinates": [[[ 2.379, 48.824],[ 2.406, 48.879],[ 2.329, 48.864],[ 2.321, 48.826],[ 2.334, 48.827],[ 2.379, 48.824]]]}``
