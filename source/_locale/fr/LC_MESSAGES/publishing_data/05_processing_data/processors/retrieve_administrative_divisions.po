@@ -1,23 +1,24 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, Opendatasoft
+# Copyright (C) 2020, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# benrict <benoit.richter@opendatasoft.com>, 2018
-# Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2018
-# Trad_FR2 <datawords.translator.fr2@gmail.com>, 2019
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
+# benrict <benoit.richter@opendatasoft.com>, 2019
+# Hugo Bost <hugo.bost@opendatasoft.com>, 2019
 # Trad_FR1 <datawords.translator.fr1@gmail.com>, 2019
+# Trad_FR2 <datawords.translator.fr2@gmail.com>, 2019
+# Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-17 11:05+0200\n"
+"POT-Creation-Date: 2020-01-24 16:07+0100\n"
 "PO-Revision-Date: 2018-06-27 09:12+0000\n"
-"Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2019\n"
+"Last-Translator: Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2019\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -125,11 +126,157 @@ msgstr ""
 "Pour définir les paramètres du processeur Récupérer les divisions "
 "administratives, suivez les indications du tableau ci-dessous."
 
-#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:31
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:34
+msgid "Label"
+msgstr "Label"
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:35
+msgid "Description"
+msgstr "Description"
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:36
+msgid "Mandatory"
+msgstr "Obligatoire"
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:37
+msgid "Geo Point"
+msgstr "Point géo"
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:38
+msgid ""
+"Field which contains the geo point the processor will use to retrieve the "
+"administrative divisions"
+msgstr ""
+"Champ qui contient le point géo utilisé par le processeur pour récupérer les"
+" divisions administratives"
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:39
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:42
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:45
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:48
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:51
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:54
+msgid "yes"
+msgstr "oui"
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:40
+msgid "Country"
+msgstr "Pays"
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:41
+msgid ""
+"Choose the country where the geo points are located. If the geo points are "
+"not confined into a single country, use the 'World' country."
+msgstr ""
+"Choisissez le pays dans lequel les points géo se trouvent. Dans le cas où "
+"ils se situeraient dans plusieurs pays, utilisez le pays 'Monde'."
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:43
+msgid "Administrative Level"
+msgstr "Niveau administratif"
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:44
+msgid ""
+"Choose an administrative level of the chosen country. If you chose the "
+"'World' country, it is a choice between 1 (largest scale) and 7 (smallest "
+"scale). See the **Referentials** section to know which administrative levels"
+" are available depending on the country where the geo point is ; and to know"
+" what the levels actually correspond to."
+msgstr ""
+"Choisissez un niveau administratif pour le pays sélectionné. Si le pays "
+"'Monde' a été sélectionné, le niveau administratif est compris entre 1 (le "
+"plus important) et 7 (le moins important). Consultez la section "
+"**Référentiels**  pour connaître les niveaux administratifs disponibles en "
+"fonction du pays dans lequel se trouve le point géo et déterminer ce à quoi "
+"les niveaux correspondent réellement."
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:46
+msgid "Output Division Name"
+msgstr "Sortie nom division"
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:47
+msgid ""
+"Field where the name of the chosen administrative division will be "
+"displayed. It can be an existing field chosen from the list, or a new field "
+"created for that purpose (in that case, choose **Input text** from the list "
+"and write the name of the new field in the text area below)."
+msgstr ""
+"Champ dans lequel le nom de la division administrative choisie sera affiché."
+" Il peut s'agir d'un champ existant choisi dans la liste ou d'un champ créé "
+"à cette fin (dans ce cas, choisissez **Saisir du texte** dans la liste et "
+"écrivez le nom du nouveau champ dans la zone de texte en dessous)."
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:49
+msgid "Output Division Code"
+msgstr "Sortie code division"
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:50
+msgid ""
+"Field where the code of the chosen administrative division will be "
+"displayed. It can be an existing field chosen from the list, or a new field "
+"created for that purpose (in that case, choose **Input text** from the list "
+"and write the name of the new field in the text area below)."
+msgstr ""
+"Champ dans lequel le code de la division administrative choisie sera "
+"affiché. Il peut s'agir d'un champ existant choisi dans la liste ou d'un "
+"champ créé à cette fin (dans ce cas, choisissez **Saisir du texte** dans la "
+"liste et écrivez le nom du nouveau champ dans la zone de texte en dessous)."
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:52
+msgid "Output Division Geo Shape"
+msgstr "Sortie forme géo division"
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:53
+msgid ""
+"Field where the geo shape of the chosen administrative division will be "
+"displayed. It can be an existing field chosen from the list, or a new field "
+"created for that purpose (in that case, choose **Input text** from the list "
+"and write the name of the new field in the text area below)."
+msgstr ""
+"Champ dans lequel la forme géo de la division administrative choisie sera "
+"affichée. Il peut s'agir d'un champ existant choisi dans la liste ou d'un "
+"champ créé à cette fin (dans ce cas, choisissez **Saisir du texte** dans la "
+"liste et écrivez le nom du nouveau champ dans la zone de texte en dessous)."
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:57
+msgid "Referentials"
+msgstr "Référentiels"
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:59
+msgid ""
+"When a real country is chosen, the administrative levels corresponding to "
+"that country are explicitely written. However, when using the 'World' "
+"country, an administrative level between 1 and 7 must be chosen. Please "
+"refer to the table below to have an idea of what the administrative levels "
+"are for each country currently available in the processor."
+msgstr ""
+"Quand un pays réel est sélectionné, les niveaux administratifs correspondant"
+" à ce pays sont écrits de façon explicite. Toutefois, lorsque vous utilisez "
+"le pays 'Monde', un niveau administratif compris entre 1 et 7 doit être "
+"choisi. Reportez-vous au tableau ci-dessous pour savoir quels sont les "
+"niveaux administratifs de chaque pays actuellement dans le processeur."
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:61
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:67
 msgid "Note"
 msgstr "Remarque"
 
-#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:34
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:64
+msgid ""
+"When using the 'World' country, the processor will try to retrieve the "
+"divisions corresponding to the chosen level (between 1 and 7). The results "
+"can however be irrelevant in some cases since administrative divisions are "
+"not homogenized across countries (e.g. the french \"cantons\" will be at "
+"level 4 whereas swiss \"kantons\" will be at level 2)."
+msgstr ""
+"Quand vous utilisez le pays 'Monde', le processeur tente de récupérer les "
+"divisions correspondant au niveau choisi (entre 1 et 7). Néanmoins, les "
+"résultats peuvent ne pas être pertinents dans certains cas, puisque les "
+"divisions administratives ne sont pas homogènes dans tous les pays (par "
+"exemple, les \"cantons\" français correspondent au niveau 4, tandis que les "
+"\"kantons\" suisses correspondent au niveau 2)."
+
+#: ../../source/publishing_data/05_processing_data/processors/retrieve_administrative_divisions.rst:70
 msgid ""
 "If the referential used has a license with mandatory attribution, using "
 "Retrieve Administrative Divisions processor will transfer the attribution."

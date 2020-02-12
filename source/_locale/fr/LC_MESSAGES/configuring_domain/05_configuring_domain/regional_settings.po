@@ -1,21 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, Opendatasoft
+# Copyright (C) 2020, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2018
 # Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2019
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
+# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-17 11:05+0200\n"
+"POT-Creation-Date: 2020-01-24 16:07+0100\n"
 "PO-Revision-Date: 2018-12-04 11:38+0000\n"
-"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019\n"
+"Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2020\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -60,10 +60,13 @@ msgid "Choose the right timezone."
 msgstr "Sélectionnez le bon fuseau horaire."
 
 #: ../../source/configuring_domain/05_configuring_domain/regional_settings.rst:15
+#: ../../source/configuring_domain/05_configuring_domain/regional_settings.rst:38
+#: ../../source/configuring_domain/05_configuring_domain/regional_settings.rst:50
 msgid "Click on the Save button in the top right corner of the page."
 msgstr "Cliquez sur le bouton Enregistrer en haut à droite de la page."
 
 #: ../../source/configuring_domain/05_configuring_domain/regional_settings.rst:17
+#: ../../source/configuring_domain/05_configuring_domain/regional_settings.rst:29
 msgid "Note"
 msgstr "Remarque"
 
@@ -74,3 +77,107 @@ msgid ""
 msgstr ""
 "Vous pouvez également saisir le nom d'une ville ou d'une région dans la zone"
 " de texte. Les résultats existants correspondants s'afficheront."
+
+#: ../../source/configuring_domain/05_configuring_domain/regional_settings.rst:23
+msgid "CSV delimiter"
+msgstr "Séparateur CSV"
+
+#: ../../source/configuring_domain/05_configuring_domain/regional_settings.rst:27
+msgid ""
+"The preferred delimiter for CSV files, usually depending on geographical "
+"location, can either be a comma or a semicolon. The CSV delimiter "
+"configuration allows to define what delimiter will be used by default for "
+"catalog and dataset exports in CSV format (see :doc:`Exporting data "
+"</exploring_catalog_and_datasets/04_getting_involved/exporting_data>`)."
+msgstr ""
+"Le séparateur de fichiers CSV privilégié, qui dépend généralement de "
+"l'emplacement géographique, peut être une virgule ou un point-virgule. La "
+"configuration du séparateur CSV permet de définir celui à utiliser par "
+"défaut pour le catalogue et les exports de jeux de données au format CSV "
+"(voir :doc:`Exporter des données "
+"</exploring_catalog_and_datasets/04_getting_involved/exporting_data>`)."
+
+#: ../../source/configuring_domain/05_configuring_domain/regional_settings.rst:32
+msgid ""
+"This configuration does not apply to the API, which has its own way of "
+"choosing the delimiter for CSV exports (see API Search v1 and `API Search v2"
+" <https://help.opendatasoft.com/apis/ods-search-v2/#exporting-datasets>`_)."
+msgstr ""
+"Cette configuration ne s'applique pas à l'API, qui a sa propre méthode pour "
+"choisir le séparateur des exports CSV (voir  API Search v1 et `API Search v2"
+" <https://help.opendatasoft.com/apis/ods-search-v2/#exporting-datasets>`_)."
+
+#: ../../source/configuring_domain/05_configuring_domain/regional_settings.rst:34
+msgid ""
+"To define the default delimiter for CSV exports, go to Configuration > "
+"Regional settings. In this subsection of the back office is displayed the "
+"CSV delimiter configuration."
+msgstr ""
+"Pour définir le séparateur par défaut des exports CSV, accédez à "
+"Configuration > Paramètres régionaux. Cette sous-section de l'interface "
+"d'administration affiche la configuration du séparateur CSV. "
+
+#: ../../source/configuring_domain/05_configuring_domain/regional_settings.rst:36
+msgid "Click on the Delimiter drop-down menu."
+msgstr "Cliquez sur le menu déroulant Séparateur."
+
+#: ../../source/configuring_domain/05_configuring_domain/regional_settings.rst:37
+msgid "Choose either \"Comma (,)\" or \"Semicolon (;)\"."
+msgstr "Choisissez entre \"Virgule (,)\" ou \"Point-virgule (;)\"."
+
+#: ../../source/configuring_domain/05_configuring_domain/regional_settings.rst:41
+msgid "Datasets default geographic coverage"
+msgstr "Couverture géographique par défaut des jeux de données"
+
+#: ../../source/configuring_domain/05_configuring_domain/regional_settings.rst:45
+msgid ""
+"The :ref:`geographic coverage metadata <geographic-coverage-metadata>` "
+"indicates the location of the data contained in the dataset. Although the "
+"metadata can be set individually for each dataset afterward, it is possible "
+"to configure the default location(s) that will be automatically set as "
+"geographic coverage metadata for all datasets created afterward."
+msgstr ""
+"Les  :ref:`métadonnées de couverture géographique<geographic-coverage-"
+"metadata>` indiquent l'emplacement des données du jeu de données. Même si "
+"les métadonnées peuvent être définies pour chaque jeu de données "
+"ultérieurement, vous pouvez configurer les emplacements par défaut qui "
+"seront automatiquement définis en tant que métadonnées de couverture "
+"géographique pour tous les jeux de données créés plus tard. "
+
+#: ../../source/configuring_domain/05_configuring_domain/regional_settings.rst:47
+msgid ""
+"In the Default geographic coverage textbox, write the name of the chosen "
+"location."
+msgstr ""
+"Dans la zone de texte Couverture géographique par défaut, indiquez le nom de"
+" l'emplacement choisi."
+
+#: ../../source/configuring_domain/05_configuring_domain/regional_settings.rst:48
+msgid ""
+"A drop-down selection of existing locations matching the name that was "
+"previously typed appears. Click on the right location."
+msgstr ""
+"Une liste déroulante des emplacements existants qui correspondent au nom "
+"précédemment saisi s'affiche. Cliquez sur l'emplacement approprié."
+
+#: ../../source/configuring_domain/05_configuring_domain/regional_settings.rst:49
+msgid ""
+"(optional) Repeat steps 1 and 2 of this procedure to add other default "
+"locations (e.g. if the data of the portal involves more than one "
+"administrative division)."
+msgstr ""
+"(optionnel) Répétez les étapes 1 et 2 de cette procédure pour ajouter "
+"d'autres emplacements par défaut (p. ex. dans le cas où le portail inclut "
+"plusieurs divisions administratives)."
+
+#: ../../source/configuring_domain/05_configuring_domain/regional_settings.rst:52
+msgid "Caution"
+msgstr "Avertissement"
+
+#: ../../source/configuring_domain/05_configuring_domain/regional_settings.rst:55
+msgid ""
+"If more than one default location are added, they must be at the same "
+"administrative level (e.g. countries, cities, regions, etc.)."
+msgstr ""
+"Si plusieurs emplacements par défaut sont ajoutés, ils doivent se trouver au"
+"  même niveau administratif (p.ex. pays, villes, régions, etc.)."

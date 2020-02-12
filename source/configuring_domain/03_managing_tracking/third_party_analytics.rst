@@ -1,35 +1,61 @@
-Third-party Analytics
+Third-party analytics
 =====================
 
-The monitoring tools included in Opendatasoft are centered about API calls and usages; this is useful to gather extremely precise information about how
-your data is consumed, but can be limiting if you try to measure the audience of your portal in a more broad manner, such as your referral sources,
-your visitor's geographical origin, or the time spent on your portal.
+The monitoring tools provided by Opendatasoft focus on API calls and usages, which is useful to gather precise information on how
+data is consumed (see :doc:`Analyzing domain usage </managing_domain/03_analyzing_domain_usage/index>`). But it can be limiting when trying to measure more broadly the audience of a portal (i.e. referral sources, visitors geographical origin, time spent on the portal, etc.).
 
-Some third-party services are specialized in measuring audience, and can give this kind of information. Opendatasoft supports integrations with **Google Analytics**
-and **XiTi**.
+Third-party services, specialized in measuring audience, can give additional analytics such as those mentioned above. Opendatasoft supports integration with Google Analytics, and XiTi and SmartTag by AT Internet.
 
-If you need support for another analytics solution that is not mentioned here (such as Piwik or SmartTag), please contact us.
+All third-party analytics integrations are activated and configured from Configuration > Tracking in the back office.
+
+
+.. admonition:: Important
+   :class: important
+
+   For XiTi and SmartTag integration, Opendatasoft must be involved to activate the service before it can be configured in the back office.
 
 
 Google Analytics
 ----------------
 
-Simply go to the *Domain > Configuration > Tracking* page and fill in your Google Analytics ID.
-
 .. image:: images/configuration_tracking-google-analytics.png
 
-Opendatasoft's Google Analytics integration tracks all the pages in your portal (including the back-office).
+Google Analytics is an analytics solution edited by Google. It allows tracking on all pages of an Opendatasoft domain, back office included.
+
+To activate and configure Google Analytics:
+
+1. In the Configuration > Tracking section of the back office, go to the Google Analytics area.
+2. Fill in the Google Analytics ID in the related textbox.
+3. Click on the Save button in the top right corner.
 
 
-XiTi
-----
+XiTi Analyzer NX
+----------------
 
-.. admonition:: Note
-   :class: note
+.. image:: images/configuration_tracking-xiti.png
 
-   Opendatasoft support the XiTi Analytics solution, which is edited by ATinternet. However, ATinternet also edits SmartTag, which is another analytics solution that is not supported by Opendatasoft yet.
+XiTi is an analytics solution edited by AT Internet. It allows tracking on all the pages of an Opendatasoft domain, back office included.
 
-The activation of XiTi on a domain is handled by the Opendatasoft team. It requires sending us the ``xtcore.js`` file (which should have been provided by XiTi), and
-the identifiers that you have been provided with by XiTi.
+The activation of XiTi on an Opendatasoft domain involves the Opendatasoft team.
 
-Opendatasoft's XiTi integration tracks all the pages in your portal (including the back-office).
+1. Contact support@opendatasoft.com and send: a ``xtcore.js`` file, as well as your XiTi identifiers, both provided by XiTi.
+2. After verification of the JavaScript file by Opendatasoft, if it is approved, XiTi is available on the Opendatasoft domain.
+3. In the Configuration > Tracking section of the back office, go to the XiTi area.
+4. Fill in the following configurations in their related textboxes: XTSD Code (mandatory), XTSITE Code (mandatory), Level 2 Site ID, and Root used in page names.
+5. Click on the Save button in the top right corner. XiTi is now activated on the domain.
+
+
+SmartTag
+--------
+
+.. image:: images/configuration_tracking-smarttag.png
+
+SmartTag is an analytics solution edited by AT Internet. It allows tracking on all the pages of an Opendatasoft domain, back office included.
+
+The activation of SmartTag on an Opendatasoft domain involves the Opendatasoft team.
+
+1. Contact support@opendatasoft.com and send a ``smarttag.js`` file, provided by SmartTag.
+2. After verification of the JavaScript file by Opendatasoft, if it is approved, SmartTag is available on the Opendatasoft domain.
+3. In the Configuration > Tracking section of the back office, go to the SmartTag area.
+4. Click the "Enable SmartTag" toggle button.
+5. Click on the Save button in the top right corner. SmartTag is now activated on the domain.

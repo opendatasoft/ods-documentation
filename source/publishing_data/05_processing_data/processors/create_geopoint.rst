@@ -1,4 +1,4 @@
-Create GeoPoint processor
+Create Geopoint processor
 =========================
 
 This processor creates a geopoint field from a latitude field and a longitude field.
@@ -6,7 +6,7 @@ This processor creates a geopoint field from a latitude field and a longitude fi
 Setting the processor
 ---------------------
 
-To set the parameters of the Create GeoPoint processor, follow the indications from the table below.
+To set the parameters of the Create Geopoint processor, follow the indications from the table below.
 
 .. list-table::
   :header-rows: 1

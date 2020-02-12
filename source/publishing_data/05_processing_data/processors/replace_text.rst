@@ -1,4 +1,4 @@
-Replace Text processor
+Replace text processor
 ======================
 
 This processor allows to replace text in a field by a new text.
@@ -6,7 +6,7 @@ This processor allows to replace text in a field by a new text.
 Setting the processor
 ---------------------
 
-To set the parameters of the Replace Text processor, follow the indications from the table below.
+To set the parameters of the Replace text processor, follow the indications from the table below.
 
 .. list-table::
   :header-rows: 1

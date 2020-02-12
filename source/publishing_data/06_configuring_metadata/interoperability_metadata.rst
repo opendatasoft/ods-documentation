@@ -53,22 +53,10 @@ For more information about the DCAT metadata, please refer to the `W3C Data Cata
   * * Data quality
     * Indicate the data quality in the textbox.
 
-DCAT-AP for Switzerland
------------------------
+.. admonition:: Note
+   :class: note
 
-DCAT-AP for Switzerland are DCAT-AP metadata specifically created for Swiss portals and datasets.
-
-For more information about the DCAT-AP for Switzerland metadata, please refer to the `related Open Data Handbook <https://handbook.opendata.swiss/en/library/ch-dcat-ap>`_. To know how to configure the metadata on the Opendatasoft plateform, refer to the table below.
-
-.. list-table::
-  :header-rows: 1
-
-  * * Name
-    * Usage
-  * * Domain
-    * Indicate the domain (as expected by opendata.swiss) in the textbox.
-  * * Rights
-    * Indicate the rights in the textbox.
+   DCAT-AP exports specific to a few supported countries are available on demand (see :ref:`Downloading the catalog <download-catalog>`).
 
 INSPIRE
 -------
