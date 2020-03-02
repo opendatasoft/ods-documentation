@@ -6,7 +6,7 @@ Integrating social medias
 
 **Share on social medias buttons**
 
-You can choose to display share buttons that will provide users with quick access to their favorite social networks (Twitter, Facebook, Google+, LinkedIn and email).
+You can choose to display share buttons that will provide users with quick access to their favorite social networks (Twitter, Facebook, LinkedIn and email).
 
 You can enable these share buttons in the ``Social networks & sharing`` section, in the ``Configuration`` menu
 
