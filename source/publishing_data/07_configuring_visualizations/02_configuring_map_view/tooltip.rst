@@ -58,7 +58,7 @@ For each of the tooltip's fields, the 3 following actions are available :
 Custom HTML tooltip
 -------------------
 
-When you select `Custom HTML tooltip` an HTML editor appears. This is very similar to writing "pages" in your domain; you have access to every `ODS Widget <http://opendatasoft.github.io/ods-widgets/docs/>`_ and you can even integrate other visualizations inside the tooltip. You can even use the  :doc:`grid layout classes</customizing_look_and_feel/07_designing_responsive_portal/responsive>`.
+When you select `Custom HTML tooltip` an HTML editor appears. This is very similar to writing "pages" in your domain; you have access to every `ODS Widget <http://opendatasoft.github.io/ods-widgets/docs/>`_ and you can even integrate other visualizations inside the tooltip.
 
 .. ifconfig:: language == 'en'
 

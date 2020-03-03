@@ -84,6 +84,6 @@ Opendatasoft also supports compressed file formats. These are useful to save spa
 * .tar
 * .gz
 * .gzip
-* .tar.gr
+* .tar.gz
 * .tgz
 * .tar.bz2

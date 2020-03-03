@@ -4,17 +4,18 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
-# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2019
+# Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2020
+# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2020
+# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-24 16:07+0100\n"
+"POT-Creation-Date: 2020-03-02 11:06+0100\n"
 "PO-Revision-Date: 2018-06-27 09:08+0000\n"
-"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2019\n"
+"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,253 +24,481 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:2
-msgid "Customizing theme and portal icon"
-msgstr "Personalizar el tema y el icono del portal"
+msgid "Customizing portal themes"
+msgstr "Personalizar los temas del portal"
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:5
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:4
 msgid ""
-"The theme customization is not available on freemium domains (created "
-"through the `Try it for free <https://www.opendatasoft.com/discover-"
-"opendatasoft-demo/>`_ page on `Opendatasoft's website "
-"<https://www.opendatasoft.com>`_). If your domain is a freemium domain and "
-"would like to get this theme feature, `email us! <sales@opendatasoft.com>`_"
+"The default theme of all Opendatasoft portals can be entirely customized, "
+"not only in terms of layout and colors, but also regarding specific areas "
+"such as header, footer and catalog cards. Theme configurations and managed "
+"from the **Look & feel > Theme** subsection of the back office."
 msgstr ""
-"La personalización de temas no está disponible en dominios freemium (creados"
-" a través de la página `Try it for free <https://www.opendatasoft.com"
-"/discover-opendatasoft-demo/>`_ del `sitio web de Opendatasoft "
-"<https://www.opendatasoft.com>`_). Si su dominio es freemium y desea obtener"
-" esta función de temas, `¡escríbanos un correo electrónico! "
-"<sales@opendatasoft.com>`_"
+"El tema predeterminado de todos los portales de Opendatasoft se puede "
+"personalizar por completo, no solo en cuanto a diseño y colores sino también"
+" en relación con áreas concretas como encabezado, pie de página y tarjetas "
+"de catálogo. Las configuraciones del tema se gestionan en la subsección "
+"**Apariencia > Tema** del back office."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:8
+msgid "The Theme interface comprises 3 main blocks."
+msgstr "La interfaz Tema consta de 3 grandes bloques."
 
 #: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:10
 msgid ""
-"Opendatasoft's theme management interface can be found in the domain back-"
-"office. In order to access it, you'll have to click the ``Look & feel`` "
-"section in the navigation bar and then on the ``theme`` link."
+"The header (1), which not only displays the title of the interface, but also"
+" a *Current action* drop-down menu to manage versioning (see "
+":ref:`Versioning themes <theme_versioning>`). 3 important buttons are also "
+"displayed in the header:"
 msgstr ""
-"La interfaz de administración de temas de Opendatasoft se encuentra en el "
-"back office del dominio. Para acceder a ella, haga clic en la sección "
-"``Apariencia`` de la barra de navegación y, a continuación, en el vínculo "
-"``Tema``."
+"El encabezado (1), que no solo muestra el título de la interfaz sino también"
+" un menú desplegable *Acción actual* para gestionar la asignación de "
+"versiones (consulte :ref:`Versiones de temas <theme_versioning>`). En el "
+"encabezado también aparecen 3 botones importantes:"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:12
+msgid "Save, to save the new configurations"
+msgstr "Guardar, para guardar las nuevas configuraciones"
 
 #: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:13
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:36
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:41
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:74
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:90
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:97
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:154
+msgid ""
+"Preview, to open in a new tab the Opendatasoft portal with the newly applied"
+" configurations"
+msgstr ""
+"Vista previa, para abrir en una nueva ficha el portal de Opendatasoft con "
+"las nuevas configuraciones aplicadas."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:14
+msgid ""
+"Make live, to define the newly applied configurations as the new, live theme"
+" available on the Opendatasoft portal"
+msgstr ""
+"Activar, para definir las nuevas configuraciones aplicadas como el nuevo "
+"tema activo disponible en el portal de Opendatasoft"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:17
+msgid ""
+"The **API key for offline development** management block (2), which allows "
+"the use and generation of new API keys (see note right below for more "
+"information)."
+msgstr ""
+"El bloque de gestión **Clave de API para desarrollo sin conexión en línea** "
+"(2), que permite usar y generar nuevas claves de API (consulte la nota "
+"siguiente para obtener más información)."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:19
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:55
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:84
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:143
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:167
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:183
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:238
 msgid "Note"
 msgstr "Nota"
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:16
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:22
 msgid ""
-"In order to access the theme page, you'll need to be able to edit domain "
-"properties. See :doc:`Managing the Security of your Domain "
-"</managing_domain/01_managing_users_and_groups/users>` for more details "
-"about permissions."
+"It is possible to create stylesheets outside the platform, with any standard"
+" web developping tool, and to push them to the platform using an API key. "
+"For an easier and quicker usage, the `Opendatasoft Portal Development Kit "
+"<https://github.com/opendatasoft/ods-portal-devkit>`_ is at disposal: it is "
+"an open source project created by Opendatasoft, that can be downloaded on "
+"Github."
 msgstr ""
-"Para acceder a la página del tema, deberá poder editar las propiedades del "
-"dominio. Consulte :doc:`Administrar la seguridad del dominio "
-"</managing_domain/01_managing_users_and_groups/users>` para obtener más "
-"detalles sobre los permisos."
+"Se pueden crear hojas de estilo fuera de la plataforma con cualquier "
+"herramienta de desarrollo web estándar e insertarlas en la plataforma por "
+"medio de una clave de API. Para un uso más rápido y sencillo, dispone del "
+"`Opendatasoft Portal Development Kit <https://github.com/opendatasoft/ods-"
+"portal-devkit>`_, un proyecto de código abierto creado por Opendatasoft que "
+"se puede descargar en Github."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:20
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:24
 msgid ""
-"Using the various forms available in this page, you'll be able to customize "
-"every aspect of your portal, from basic colors to making major changes in "
-"its layout."
+"To find and use a theme API key, click on the **API key for offline "
+"development** block to expand it. The current API key is displayed in the "
+"block, ready to be copied and used."
 msgstr ""
-"Con los diversos formularios disponibles en esta página, podrá personalizar "
-"todos los aspectos del portal, desde una opción básica como definir los "
-"colores hasta efectuar cambios relevantes en el diseño."
+"Para encontrar y usar una clave de API del tema, haga clic en el bloque "
+"**Clave de API para desarrollo sin conexión en línea** para expandirlo. La "
+"clave de API actual aparecerá en el bloque, lista para copiar y usar."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:25
-msgid "Versioning"
-msgstr "Control de versiones"
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:27
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:26
 msgid ""
-"Before diving into the many ways to customize the portal's theme, it is very"
-" important to stress that everything you will do on this page is versioned. "
-"This is to say that your work has a version number assigned to it and you "
-"can at any moment create a new version. You'll always be working on the "
-"latest version (think of it as your working draft), but can make any version"
-" live (that is, apply it to your portal). Were you to make the latest "
-"version live, a new one would be created and would become your new working "
-"draft. Only the latest version can be edited; all previous ones are read-"
-"only."
+"It is also possible to generate a new API key by clicking on the Generate "
+"new key button. However, be careful when generating new API keys: only the "
+"current one can be used, which means that generating a new API key revokes "
+"all previous ones."
 msgstr ""
-"Antes de adentrarnos en las muchas maneras de personalizar el tema del "
-"portal, es muy importante recalcar que todo lo que haga en esta página "
-"recibirá una asignación de versión. Es decir, se asignará un número de "
-"versión a su tarea, y en cualquier momento podrá crear una versión nueva. "
-"Siempre estará trabajando con la versión más reciente (entiéndase como un "
-"borrador de trabajo), pero podrá activar cualquier versión (o sea, aplicarla"
-" en el portal). Cuando active la última versión, se creará una nueva que "
-"pasará a ser el nuevo borrador de trabajo. Solo se puede editar la última "
-"versión; todas las anteriores son de solo lectura."
+"También es posible generar una nueva clave de API haciendo clic en el botón "
+"Generar clave nueva. Sin embargo, tenga cuidado al generar nuevas claves de "
+"API: solo se puede usar la actual, lo que significa que al generar una nueva"
+" clave de API se revocan todas las anteriores."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:28
+msgid ""
+"A block of 6 tabs (3), each one allowing to configure a part of an "
+"Opendatasoft portal theme (see :ref:`Customizing a portal theme "
+"<theme_customization>`):"
+msgstr ""
+"Un bloque de 6 fichas (3), cada una de las cuales permite configurar una "
+"parte del tema de portal de Opendatasoft (consulte :ref:`Personalizar un "
+"tema de portal <theme_customization>`):"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:30
+msgid ""
+":ref:`Layout options <layout_options>`, to modify the general layout of the "
+"portal"
+msgstr ""
+":ref:`Opciones de diseño <layout_options>`, para modificar el diseño del "
+"portal"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:31
+msgid ""
+":ref:`Colors <colors>`, to change colors of backgrounds, texts, borders, "
+"links, etc."
+msgstr ""
+":ref:`Colores <colors>`, para cambiar los colores de fondos, textos, bordes,"
+" vínculos, etc."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:32
+msgid ""
+":ref:`Stylesheet <stylesheet>`, to add more style to the portal with CSS"
+msgstr ""
+":ref:`Hoja de estilos <stylesheet>`, para añadir más estilos al portal con "
+"CSS"
 
 #: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:33
-msgid ""
-"While working on the latest version, you can preview your changes by "
-"clicking the ``Preview`` button. This will open a new window containing your"
-" portal with the current version of the theme applied to it."
+msgid ":ref:`Header <header_footer>`, to modify the header with HTML code"
 msgstr ""
-"Al trabajar con la última versión, puede obtener una vista previa de los "
-"cambios haciendo clic en el botón ``Vista previa``. Así se abrirá una "
-"ventana nueva que contiene el portal con la versión actual del tema "
-"aplicada."
+":ref:`Encabezado <header_footer>`, para modificar el encabezado con código "
+"HTML"
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:39
-msgid ""
-"Only users able to edit the domain properties can preview the latest theme "
-"version. If you were to share the URL of the preview with other users, they "
-"won't see any difference in the live version."
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:34
+msgid ":ref:`Footer <header_footer>`, to modify the footer with HTML code"
 msgstr ""
-"Solo los usuarios que puedan editar las propiedades del dominio podrán "
-"obtener una vista previa de la última versión del tema. Si comparte la "
-"dirección URL de la vista previa con otros usuarios, estos no verán ninguna "
-"diferencia en la versión activa."
+":ref:`Pie de página <header_footer>`, para modificar el pie de página con "
+"código HTML"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:35
+msgid ""
+":ref:`Catalog card <catalog_card>`, to modify the catalog cards with HTML "
+"code"
+msgstr ""
+":ref:`Tarjeta de catálogo <catalog_card>`, para modificar las tarjetas de "
+"catálogo con código HTML"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:40
+msgid "Versioning themes"
+msgstr "Asignar versiones a temas"
 
 #: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:44
 msgid ""
-"You can preview the latest version of the theme at any moment and on any "
-"given page on the portal's front-office by adding the ``stage_theme=true`` "
-"parameter to the URL."
+"Portal themes are versioned, which means that each customized new theme has "
+"a version number assigned to it. Once a theme is finished and made live, "
+"another version is automatically created: it is the new draft theme on which"
+" to work until it is ready to be live."
 msgstr ""
-"Puede obtener una vista previa de la última versión del tema en cualquier "
-"momento y en cualquier página del front office del portal añadiendo el "
-"parámetro ``stage_theme=true`` a la dirección URL."
+"A los temas de portal se les asignan versiones, lo que significa que cada "
+"nuevo tema personalizado tiene asignado un número de versión. Una vez "
+"completado y activado, automáticamente se crea otra versión: es el nuevo "
+"tema de borrador en que se trabajará hasta que esté listo para activarse."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:46
+msgid ""
+"The *Current action* drop-down menu displayed in the header indicates on "
+"which version one is currently working on. It also allows to select previous"
+" themes that were already made live."
+msgstr ""
+"El menú desplegable *Acción actual* que se muestra en el encabezado indica "
+"la versión de trabajo actual. Asimismo, permite seleccionar temas anteriores"
+" que ya se han activado."
 
 #: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:48
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:105
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:222
+msgid "Important"
+msgstr "Importante"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:51
 msgid ""
-"The version selector will tell you explicitly if you're working on the "
-"latest version or rather viewing a previous one, as well as which version is"
-" live."
+"Once a theme is live, it is completely locked: it is not possible to make "
+"any other modifications. Only the latest, draft version can be modified."
 msgstr ""
-"El selector de versión le indicará explícitamente si está trabajando con la "
-"última versión o está visualizando una anterior, y qué versión está activa."
+"Una vez activado un tema, está totalmente bloqueado: no se puede introducir "
+"en él ninguna otra modificación. Solo admite modificaciones la última "
+"versión de borrador."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:52
-msgid "Customization options"
-msgstr "Opciones de personalización"
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:53
+msgid ""
+"While working on the latest draft version of the portal theme, it is "
+"possible to preview what the portal will look like with this new theme. A "
+"Preview button is indeed displayed between the Make live and Save buttons, "
+"to open a new tab with the portal configured with the draft theme."
+msgstr ""
+"Mientras se trabaja en la última versión de borrador del tema de portal, se "
+"puede obtener una vista previa de la apariencia del portal con este nuevo "
+"tema. El botón Vista previa situado entre los botones Activar y Guardar "
+"permite abrir una nueva ficha con el portal configurado con el tema de "
+"borrador."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:57
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:58
+msgid ""
+"Only users able to edit the domain properties can preview the latest theme "
+"version. If sharing the URL with other users who were not granted the right "
+"permissions, they would see the portal with the live theme."
+msgstr ""
+"Tan solo los usuarios que pueden editar las propiedades del dominio pueden "
+"obtener una vista previa de la última versión del tema. Si comparte la "
+"dirección URL con otros usuarios sin los permisos adecuados, estos verán el "
+"portal con el tema activo."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:64
+msgid "Customizing a portal theme"
+msgstr "Personalizar un tema de portal"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:69
 msgid "Layout options"
 msgstr "Opciones de diseño"
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:59
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:73
 msgid ""
-"The portal layout relies on a 12-column grid system largely inherited from "
-"the `Bootstrap CSS framework <http://getbootstrap.com/css/#grid>`_ and as "
-"such has a few internal variables used throughout its CSS. This tab allows "
-"you to set the value of some of these variables."
+"The **Layout options** tab allows to customize the portal layout, which by "
+"default relies on a 12-columns grid system inherited from the `Bootstrap CSS"
+" framework <http://getbootstrap.com/css/#grid>`_."
 msgstr ""
-"El diseño del portal utiliza un sistema de cuadrícula de 12 columnas "
-"ampliamente heredado del `marco CSS de Bootstrap "
-"<http://getbootstrap.com/css/#grid>`_ y como tal tiene algunas variables "
-"internas que se utilizan en código CSS. Esta ficha permite establecer el "
-"valor de algunas de estas variables."
+"La ficha **Opciones de diseño** permite personalizar el diseño del portal, "
+"basado de forma predeterminada en un sistema de cuadrícula de 12 columnas "
+"heredado del `marco CSS de Bootstrap <http://getbootstrap.com/css/#grid>`_."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:65
-msgid ""
-"The variables that can currently be overridden are the *gutter width* and "
-"the *responsive breakpoints*."
-msgstr ""
-"Las variables que actualmente se pueden sobrescribir son: *Ancho de margen "
-"interno* y *Puntos de interrupción con respuesta*."
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:67
-msgid ""
-"The *gutter width* is the space between columns, rows and adjacent boxes."
-msgstr ""
-"*Ancho de margen interno* es el espacio entre columnas, filas y cuadros "
-"adyacentes."
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:69
-msgid ""
-"The *responsive breakpoints* are the screen widths (in pixels) at which the "
-"layout will change to better accommodate the available space. There are 4 "
-"modes available: extra-small , small , medium and large, which means that "
-"there are 3 breakpoints: extra-small to small, small to medium and medium to"
-" large. The modes are also commonly referred to as *mobile*, *tablet*, "
-"*desktop* and *large desktop*."
-msgstr ""
-"*Puntos de interrupción con respuesta* indica los anchos de pantalla (en "
-"píxeles) en que el diseño cambiará para organizar mejor el espacio "
-"disponible. Hay 4 modos (muy pequeño, pequeño, mediano y grande), lo que "
-"significa que hay 3 puntos de interrupción: de muy pequeño a pequeño, de "
-"pequeño a mediano, y de mediano a grande. Los modos también se conocen como "
-"*móvil*, *tableta*, *escritorio* y *escritorio grande*."
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:75
+msgid "More specifically, in this tab, it is possible to modify:"
+msgstr "Concretamente, en esta ficha se puede modificar lo siguiente:"
 
 #: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:77
 msgid ""
-"Bear in mind though that *mobile mode* doesn't mean that the user is "
-"actually using a mobile device, but rather that the browser on the device "
-"only offers a small display area."
+"the *Gutter width*, which is the space (in pixels) between the various "
+"elements that compose an interface of the portal (columns, rows and boxes)"
 msgstr ""
-"No obstante, tenga presente que el *modo móvil* no significa que el usuario "
-"realmente utilice un dispositivo móvil, sino que el explorador del "
-"dispositivo ofrece una área de visualización pequeña."
+"*Ancho de margen interno*: es el espacio (en píxeles) entre los diversos "
+"elementos que forman una interfaz del portal (columnas, filas y cuadros)."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:79
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:78
 msgid ""
-"In order to reset any of the variable to its default value, just click on "
-"the clear button next to it."
+"the **Responsive breakpoints**, which are the various screen widths (in "
+"pixels) at which the layout should change to adapt to the available space "
+"(e.g. the portal layout should differ depending on whether it is used from a"
+" mobile phone or a desktop, because the screen of a mobile phone is much "
+"smaller than that of a desktop). A web interface that adapts depending on "
+"the screen width is indeed called \"responsive\". There are 3 configurable "
+"breakpoints between 4 standard screen size associated with common devices:"
 msgstr ""
-"Para restablecer el valor predeterminado de alguna variable, basta con hacer"
-" clic en el botón de borrar que aparece a su lado."
+"**Puntos de interrupción con respuesta**: indica los diversos anchos de "
+"pantalla (en píxeles) a que el diseño debe cambiar para adaptarse al espacio"
+" disponible (p. ej., el diseño del portal debe variar si se usa en un "
+"teléfono móvil o un equipo de escritorio, ya que la pantalla del primero es "
+"muy inferior a la del segundo). Una interfaz web que se adapta al tamaño de "
+"la pantalla es lo que se denomina \"responsive\" (con capacidad de "
+"respuesta). Hay 3 puntos de interrupción configurables entre 4 tamaños de "
+"pantalla estándar asociados a los dispositivos habituales:"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:80
+msgid "*Mobile to tablet*: to go from an extra-small screen to a small screen"
+msgstr ""
+"*De móvil a tableta*: para pasar de una pantalla muy pequeña a otra pequeña"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:81
+msgid "*Tablet to desktop*: to go from a small screen to a medium screen"
+msgstr ""
+"*De tableta a escritorio*: para pasar de una pantalla pequeña a otra mediana"
 
 #: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:82
+msgid ""
+"*Desktop to large desktop*: to go from a medium screen to a large screen"
+msgstr ""
+"*De escritorio a escritorio grande*: para pasar de una pantalla mediana a "
+"otra grande"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:87
+msgid ""
+"Mobile, Tablet, Desktop and Large desktop are used as reference because they"
+" are common devices that illustrate quite well the 4 standard screen sizes "
+"(extra-small , small , medium and large) that can be encountered. Keep in "
+"mind however that Mobile for example doesn't mean that the user is actually "
+"using a mobile device, but rather that the browser used by the user only "
+"offers an extra-small display area."
+msgstr ""
+"Se usan como referencia los términos móvil, tableta y equipo de escritorio "
+"porque estos nombres de los dispositivos más habituales ilustran bastante "
+"bien los 4 tamaños de pantalla estándar existentes (muy pequeña, pequeña, "
+"mediana y grande). No obstante, tenga presente que el término móvil, por "
+"ejemplo, no significa que el usuario esté usando realmente un móvil sino que"
+" el explorador que utiliza ofrece un área de visualización extrapequeña."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:89
+msgid "To modify a layout option:"
+msgstr "Para modificar una opción de diseño:"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:91
+msgid "Write a new width, in pixels, in the chosen textbox."
+msgstr ""
+"Escriba un nuevo ancho, en píxeles, en el cuadro de texto seleccionado."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:92
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:137
+msgid "Click on the Save button in the top right corner."
+msgstr "Haga clic en el botón Guardar en la esquina superior derecha."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:94
+msgid ""
+"To reset any layout option to its default value, click on the |icon-trash| "
+"button."
+msgstr ""
+"Para restablecer el valor predeterminado de cualquier opción de diseño, haga"
+" clic en el botón |icon-trash|."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:99
 msgid "Colors"
 msgstr "Colores"
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:84
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:103
 msgid ""
-"As with layout options, the Opendatasoft platform relies on a handful of "
-"color variables for the style of the portal elements. You can use the color "
-"inputs on this tab to set some of theme. This way with just a few clicks you"
-" can brand your portal to your colors."
+"The **Colors** tab allows to customize the colors used in the texts and "
+"links, backgrounds and borders of the portal."
 msgstr ""
-"Al igual con las opciones de diseño, la plataforma Opendatasoft utiliza "
-"diversas variables de color para el estilo de los elementos del portal. "
-"Puede usar las entradas de color de esta ficha para establecer parte del "
-"tema. De este modo, con unos simples clics, puede personalizar la marca del "
-"portal de acuerdo con sus colores."
+"La ficha **Colores** permite personalizar los colores empleados en los "
+"textos y vínculos, fondos y bordes del portal."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:93
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:108
 msgid ""
-"These variables will override the default theme's colors. The custom style "
-"rules you can write in the stylesheet tab will however have precedence over "
-"these colors. Which means that your color choices may not be visible if you "
-"wrote more specific CSS rules."
+"If a :ref:`custom stylesheet <stylesheet>` has been created for the portal, "
+"the CSS rules that is contains will have precedence over the colors defined "
+"in the Colors tab."
 msgstr ""
-"Estas variables sobrescribirán los colores del tema predeterminado. Sin "
-"embargo, las reglas de estilo personalizadas que usted puede escribir en la "
-"ficha de hoja de estilos tendrán prioridad frente a estos colores. Esto "
-"significa que sus opciones de color tal vez no estén visibles si ha escrito "
-"reglas CSS más específicas."
+"Si se ha creado una :ref:`hoja de estilos personalizada <stylesheet>` para "
+"el portal, las reglas CSS que contiene tendrán prioridad sobre los colores "
+"definidos en la ficha Colores."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:100
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:110
+msgid ""
+"The color of following elements of an Opendatasoft portal can be configured "
+"in this tab:"
+msgstr ""
+"En esta ficha se puede configurar el color de los siguientes elementos de un"
+" portal de Opendatasoft:"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:115
+msgid "Category"
+msgstr "Categoría"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:116
+msgid "Configurable elements"
+msgstr "Elementos configurables"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:117
+msgid "Text"
+msgstr "Texto"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:118
+msgid "*Text* (main)"
+msgstr "*Texto* (principal)"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:119
+msgid "*Links*"
+msgstr "*Vínculos*"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:120
+msgid "*Header links*"
+msgstr "*Vínculos del encabezado*"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:121
+msgid "*Footer links*"
+msgstr "*Vínculos del pie de página*"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:122
+msgid "*Titles*"
+msgstr "*Títulos*"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:123
+msgid "*Section titles*"
+msgstr "*Títulos de sección*"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:124
+msgid "*Highlight* (active element)"
+msgstr "*Resaltar* (elemento activo)"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:125
+msgid "Background"
+msgstr "Fondo"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:126
+msgid "*Page background*"
+msgstr "*Fondo de página*"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:127
+msgid "*Boxes background*"
+msgstr "*Fondo de cuadros*"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:128
+msgid "*Section titles background*"
+msgstr "*Fondo de títulos de sección*"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:129
+msgid "*Header background*"
+msgstr "*Fondo de encabezado*"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:130
+msgid "*Footer background*"
+msgstr "*Fondo de pie de página*"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:131
+msgid "Borders"
+msgstr "Bordes"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:132
+msgid "*Boxes border*"
+msgstr "*Borde de cuadros*"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:134
+msgid "To modify a theme color:"
+msgstr "Para modificar un color de tema:"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:136
+msgid ""
+"In the chosen textbox, write the hexadecimal code of the new color, or click"
+" the color button to choose a new color using either the Nice colors, or the"
+" Color wheel."
+msgstr ""
+"En el cuadro de texto seleccionado, especifique el código hexadecimal del "
+"nuevo color o haga clic en el botón de color para elegirlo en Colores "
+"bonitos o con el Selector de color."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:139
+msgid ""
+"To reset to the color of the currently live portal theme, click on the "
+"|icon-reset| button."
+msgstr ""
+"Para volver al color del tema del portal activo actual, haga clic en el "
+"botón |icon-reset|."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:146
 msgid "Theme colors can be used in the domain stylesheet, as CSS variables:"
 msgstr ""
 "Los colores de temas pueden usarse en la hoja de estilos del dominio, como "
 "variables CSS:"
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:106
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:152
 msgid ""
-"The available variables are: `text`, `links`, `titles`, `page-background`, "
-"`highlight`, `boxes-background`, `boxes-border`, `section-titles`, `section-"
-"titles-background`, `header-background`, `header-links`, `footer-background`"
-" and `footer-links`."
+"The available variables are: ``text``, ``links``, ``titles``, ``page-"
+"background``, ``highlight``, ``boxes-background``, ``boxes-border``, "
+"``section-titles``, ``section-titles-background``, ``header-background``, "
+"``header-links``, ``footer-background`` and ``footer-links``."
 msgstr ""
-"Las variables disponibles son: `text`, `links`, `titles`, `page-background`,"
-" `highlight`, `boxes-background`, `boxes-border`, `section-titles`, "
-"`section-titles-background`, `header-background`, `header-links`, `footer-"
-"background` y `footer-links`."
+"Las variables disponibles son: ``text``, ``links``, ``titles``, ``page-"
+"background``, ``highlight``, ``boxes-background``, ``boxes-border``, "
+"``section-titles``, ``section-titles-background``, ``header-background``, "
+"``header-links``, ``footer-background`` y ``footer-links``."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:108
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:154
 msgid ""
 "These CSS variables are compatible with all browsers, because the "
 "Opendatasoft platform automatically replaces all variables with their real "
@@ -279,304 +508,393 @@ msgstr ""
 "plataforma OpenDataSoft sustituye automáticamente todas las variables por "
 "sus valores reales de colores de temas."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:113
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:159
 msgid "Stylesheet"
 msgstr "Hoja de estilos"
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:115
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:163
 msgid ""
-"If changing colors is not enough and you'd like make deeper changes, you'll "
-"have to write your own CSS. Luckily this tab enables you to input your own "
-"style rules. These will be applied on top of Opendatasoft's default rules "
-"and have precedence over them."
+"The **Stylesheet** tab displays an editor in which to add pure CSS style "
+"rules. It allows the push even further the customization of a portal theme. "
+"All rules added in this tab will have precedence over the configurations "
+"defined in the other theme tabs."
 msgstr ""
-"Si no le basta con cambiar los colores y desea efectuar cambios más "
-"significativos, tendrá que escribir su propio código CSS. Por suerte, esta "
-"ficha le permite especificar sus propias reglas de estilo. Estas se "
-"aplicarán sobre las reglas predeterminadas de Opendatasoft y tendrán "
-"prioridad frente a ellas."
+"La ficha **Hoja de estilos** muestra un editor donde añadir reglas de estilo"
+" CSS puras. Permite personalizar aún más un tema de portal. Todas las reglas"
+" añadidas en esta ficha tendrán prioridad sobre las configuraciones "
+"definidas en las demás fichas de tema."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:121
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:165
 msgid ""
-"If your customization uses specific images and fonts, you can upload them to"
-" the platform using the :doc:`assets management page "
-"</customizing_look_and_feel/03_adding_assets/assets>`. You'll then be able "
-"to copy the assets URLs and paste them in your CSS code."
+"To change the style of an element, find the element's class and change the "
+"desired CSS property. Class names are written as block, element, modifier: "
+"``.ods-block[--blockmodifier][__element][--elementmodifier]``."
 msgstr ""
-"Si la personalización utiliza imágenes y fuentes específicos, puede "
-"cargarlos en la plataforma por medio de la :doc:`página de administración de"
-" activos </customizing_look_and_feel/03_adding_assets/assets>`. Después "
-"podrá copiar las direcciones URL de activos y pegarlas en su código CSS."
+"Para cambiar el estilo de un elemento, localice la clase del elemento y "
+"cambie la propiedad CSS deseada. Los nombres de clases se escriben como "
+"bloque, elemento y modificador: ``.ods-"
+"bloque[--modificadorbloque][__elemento][--modificadorelemento]``."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:125
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:170
 msgid ""
-"To change the style of an element, you only have to find the element's class"
-" and change the desired CSS property. It won't have any side-effects "
-"(limited to this single class name) and is guaranteed to work (since the "
-"hierarchy tree is mostly flat)."
+"When using specific images and fonts for the customization of the domain, "
+"don't hesitate to upload them as assets in the platform (see :doc:`Adding "
+"assets </customizing_look_and_feel/03_adding_assets/assets>`). It allows to "
+"easily copy the assets URLs and paste them in the CSS code."
 msgstr ""
-"Para cambiar el estilo de un elemento, solo tiene que encontrar la clase del"
-" elemento y cambiar la propiedad CSS deseada. No hay efectos colaterales "
-"(salvo este nombre de clase único), y su funcionamiento está garantizado "
-"(dado que el árbol de jerarquía es prácticamente plano)."
+"Si usa imágenes y fuentes específicas para la personalización del dominio, "
+"no dude en cargarlas como activos en la plataforma (consulte :doc:`Añadir "
+"activos </customizing_look_and_feel/03_adding_assets/assets>`). Esto permite"
+" copiar fácilmente las URL de activos y pegarlas en el código CSS."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:129
-msgid ""
-"This is possible because all of Opendatasoft's CSS code is written following"
-" the `BEM methodology <http://getbem.com/introduction/>`_ and prefixed with "
-"`ods-` so that they won't conflict with your own styles and can easily be "
-"overridden. You'll find a great introduction to this methodology on the "
-"ever-useful `CSS Tricks website <https://css-tricks.com/bem-101/>`_."
-msgstr ""
-"Esto es posible dado que todo el código CSS de Opendatasoft está escrito "
-"según la `metodología BEM <http://getbem.com/introduction/>`_ y lleva "
-"antepuesto el prefijo `ods-` para que no entren en conflicto con sus propios"
-" estilos y puedan sobrescribirse fácilmente. Encontrará una excelente "
-"introducción de esta metodología en el siempre útil `sitio web CSS Tricks "
-"<https://css-tricks.com/bem-101/>`_."
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:134
-msgid ""
-"In short, class names are written as *block, element, modifier* (hence the "
-"BEM) `.ods-block[--blockmodifier][__element][--elementmodifier]`. The "
-"hierarchy tree is at most 2 selectors deep. Also, the relevant style is as "
-"close to the element as possible."
-msgstr ""
-"En resumen, los nombres de clases se escriben como *bloque, elemento, "
-"modificador* (de ahí, BEM) `.ods-"
-"bloque[--modificadorbloque][__elemento][--modificadorelemento]`. El árbol de"
-" jerarquía tiene como máximo 2 selectores de profundidad. Además, el estilo "
-"pertinente está lo más cerca posible del elemento."
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:139
-msgid "Header and footer"
-msgstr "Encabezado y pie de página"
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:141
-msgid ""
-"While both header and footer can already be branded using the domain's "
-"customization section and color selection panel, organizations usually want "
-"to further customize the layout and content of these areas."
-msgstr ""
-"Aunque es posible personalizar la marca tanto del encabezado como del pie de"
-" página a través del panel de selección del color y la sección de "
-"personalización del dominio, las organizaciones normalmente desean "
-"personalizar aún más el diseño y el contenido de estas áreas."
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:146
-msgid ""
-"Both header and footer are wrapped within independent AngularJS "
-"applications, which means you can use `ng-if`, `ng-class`, `ng-show`, `ng-"
-"hide` and all of Angular's standard directives to make the areas more "
-"dynamic. One common request is to collapse the header into a *click-to-"
-"expand* side menu below a certain viewport width. For this purpose we "
-"provide the `ods-responsive-menu` directive. See :doc:`this dedicated page "
-"</customizing_look_and_feel/07_designing_responsive_portal/responsive>` for "
-"more information."
-msgstr ""
-"El encabezado y el pie de página están envueltos dentro de aplicaciones "
-"AngularJS independientes, lo que significa que puede usar `ng-if`, `ng-"
-"class`, `ng-show`, `ng-hide` y todas las directivas Angular estándar para "
-"hacer que las áreas sean más dinámicas. Una solicitud frecuente es contraer "
-"el encabezado en un menú lateral de *hacer clic para expandir* por debajo de"
-" un ancho de ventanilla determinado. Con esta finalidad le proporcionamos la"
-" directiva `ods-responsive-menu`. Consulte :doc:`esta página específica "
-"</customizing_look_and_feel/07_designing_responsive_portal/responsive>` para"
-" obtener más información."
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:151
-msgid ""
-"We also provide placeholders that will be replaced with the content "
-"specified in the domain customization options such as menu items, language "
-"selectors and logos. The full list is displayed right above the code area."
-msgstr ""
-"También suministramos marcadores de posición que serán sustituidos por el "
-"contenido especificado en las opciones de personalización del dominio como "
-"elementos de menú, selectores de idioma y logotipos. La lista completa se "
-"visualiza justo encima del área de código."
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:157
-msgid ""
-"While you can take advantage of Angular within the header and footer, "
-"standard JS is still forbidden for security reasons."
-msgstr ""
-"Si bien puede utilizar Angular en el encabezado y el pie de página, el "
-"código JS estándar sigue prohibido por motivos de seguridad."
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:160
-msgid "Catalog card"
-msgstr "Tarjeta de catálogo"
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:162
-msgid ""
-"On the catalog page of your domain, each dataset is represented by a single "
-"*catalog card*. These cards feature a few standard elements but you may want"
-" to radically change the way it looks, add new links or implement new "
-"behaviours."
-msgstr ""
-"En la página de catálogo del dominio, cada uno de los juegos de datos se "
-"representa por medio de una *tarjeta de catálogo*. Estas tarjetas presentan "
-"una serie de elementos estándar, pero puede que desee cambiar completamente "
-"su apariencia, añadir vínculos nuevos o implementar nuevos comportamientos."
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:166
-msgid "Here are a few examples of catalog cards:"
-msgstr "A continuación se muestran algunos ejemplos de tarjetas de catálogo:"
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:172
-msgid ""
-"We provide handy directives to easily retrieve and include any information "
-"relative to a dataset. These directives also come with a standard style that"
-" you can override using the *Stylesheet* tab."
-msgstr ""
-"Proporcionamos prácticas directivas para recuperar e incluir fácilmente "
-"cualquier información acerca de un juego de datos. Estas directivas también "
-"se facilitan con un estilo estándar que podrá sobrescribir en la ficha *Hoja"
-" de estilos*."
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:177
-msgid "The directives are:"
-msgstr "Las directivas son:"
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:175
+msgid "Header and Footer"
+msgstr "Encabezado y Pie de página"
 
 #: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:179
 msgid ""
-"`ods-catalog-card` must wrap the whole catalog card for the other directives"
-" to work."
+"The **Header** and **Footer** tabs each display an editor in which to add "
+"pure HTML. Although both the header and the footer can be partially "
+"customized via the :ref:`Colors <colors>` tab, these tabs allow to push even"
+" further the customization of these areas of the portal."
 msgstr ""
-"`ods-catalog-card` debe envolver la tarjeta de catálogo completa para que "
-"las demás directivas funcionen."
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:180
-msgid ""
-"`ods-catalog-card-theme-icon` will retrieve the dataset's theme and include "
-"the relevant icon."
-msgstr ""
-"`ods-catalog-card-theme-icon` recuperará el tema del juego de datos e "
-"incluirá el icono correspondiente."
+"Cada una de las fichas **Encabezado** y **Pie de página** muestran un editor"
+" donde añadir código HTML puro. Aunque tanto el encabezado como el pie de "
+"página se pueden personalizar parcialmente en la ficha :ref:`Colores "
+"<colors>`, estas fichas permiten personalizar aún más estas áreas del "
+"portal."
 
 #: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:181
 msgid ""
-"`ods-catalog-card-body` provides useful style and behaviour handling edge "
-"cases (datasets without records, API proxy...)."
+"Both the header and the footer are wrapped within independent AngularJS "
+"applications, which means that standard Angular directives such as ``ng-"
+"if``, ``ng-class``, ``ng-show`` and ``ng-hide`` can be used."
 msgstr ""
-"`ods-catalog-card-body` proporciona casos extremos de gran utilidad "
-"relacionados con el estilo y el comportamiento (juegos de datos sin "
-"registros, proxy de API...)."
+"El encabezado y el pie de página están envueltos dentro de aplicaciones "
+"AngularJS independientes, lo que significa que se pueden emplear directivas "
+"Angular estándar como ``ng-if``, ``ng-class``, ``ng-show`` y ``ng-hide``."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:183
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:186
 msgid ""
-"`ods-catalog-card-title`, `ods-catalog-card-description` and `ods-catalog-"
-"card-keywords` are self-explanatory."
+"To collapse the header into a click-to-expand side menu below a certain "
+"viewport width, use the ``ods-responsive-menu`` directive."
 msgstr ""
-"`ods-catalog-card-title`, `ods-catalog-card-description` y `ods-catalog-"
-"card-keywords` son autoexplicativas."
+"Para contraer el encabezado en un menú lateral de hacer clic para expandir "
+"por debajo de un ancho de ventanilla determinado, use la directiva ``ods-"
+"responsive-menu``."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:184
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:188
 msgid ""
-"`ods-catalog-card-metadata-item` takes an `item-key` and an `item-title` "
-"attributes, retrieve a metadata property matching the `item-key` from the "
-"dataset and includes in in the page using `item-title` as its label. It "
-"should be wrapped by a `.ods-catalog-card__metadata` element for better "
-"styling but with no obligation."
+"Placeholders can also be used when customizing the header and the footer: "
+"they will be replaced with the content specified in the domain customization"
+" options such as menu items, language selectors and logos."
 msgstr ""
-"`ods-catalog-card-metadata-item` toma un atributo `item-key` y un atributo "
-"`item-title` para recuperar una propiedad de metadatos coincidente con "
-"`item-key` del juego de datos e incluirla en la página utilizando `item-"
-"title` como etiqueta. Por una cuestión de estilo, se recomienda envolverla "
-"con un elemento `.ods-catalog-card__metadata` aunque no es obligatorio."
+"También se pueden usar marcadores de posición al personalizar el encabezado "
+"y el pie de página: estos se sustituirán por el contenido especificado en "
+"las opciones de personalización del dominio como elementos de menú, "
+"selectores de idiomas y logotipos."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:193
-msgid "Metadata item keys"
-msgstr "Claves de elementos de metadatos"
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:190
+msgid "The following placeholders are available in the **Header** tab:"
+msgstr ""
+"Los marcadores siguientes están disponibles en la ficha **Encabezado**:"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:195
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:213
+msgid "Placeholder"
+msgstr "Marcador de posición"
 
 #: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:196
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:214
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:248
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:272
+msgid "Information"
+msgstr "Information"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:197
+msgid "``##menu##``"
+msgstr "``##menu##``"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:198
+msgid "Main menu, with links to chosen pages"
+msgstr "Menú principal, con vínculos a páginas seleccionadas"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:199
+msgid "``##secondary-menu##``"
+msgstr "``##secondary-menu##``"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:200
+msgid "Menu containing links to login page and user account"
+msgstr "Menú con vínculos a la página de inicio de sesión y cuenta de usuario"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:201
+msgid "``##logo##``"
+msgstr "``##logo##``"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:202
+msgid "Portal logo configured in Branding"
+msgstr "Logotipo de portal configurado en Personalización de marca"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:203
+msgid "``##brand##``"
+msgstr "``##brand##``"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:204
+msgid "Portal brand configured in Branding"
+msgstr "Marca de portal configurada en Personalización de marca"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:205
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:217
+msgid "``##language##``"
+msgstr "``##language##``"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:206
+msgid "Links to change the language of the portal"
+msgstr "Vínculos para cambiar el idioma del portal"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:208
+msgid "The following placeholders are available in the **Footer** tab:"
+msgstr ""
+"Los marcadores siguientes están disponibles en la ficha **Pie de página**:"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:215
+msgid "``##legal##``"
+msgstr "``##legal##``"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:216
+msgid ""
+"Link to the Terms & Conditions defined for the portal, configured in Legals"
+msgstr ""
+"Vínculo a los Términos y condiciones definidos para el portal, configurado "
+"en Legal"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:218
+msgid "Language picker for the languages specified for the portal"
+msgstr "Selector de idiomas para los idiomas especificados del portal"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:219
+msgid "``##ods-logo##``"
+msgstr "``##ods-logo##``"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:220
+msgid "Opendatasoft logo"
+msgstr "el logotipo Opendatasoft"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:225
+msgid "JavaScript is not allowed for security reasons."
+msgstr "JavaScript no está permitido por motivos de seguridad."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:230
+msgid "Catalog card"
+msgstr "Tarjeta de catálogo"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:234
+msgid ""
+"The **Catalog card** tab displays an editor in which to add pure HTML. It "
+"allows to customize the catalog cards displayed in the catalog of the "
+"portal, which represent the published datasets of that portal (see "
+":ref:`Exploring a dataset from the catalog <exploring_dataset>`)."
+msgstr ""
+"La ficha **Tarjeta de catálogo** muestra un editor donde añadir código HTML "
+"puro. Permite personalizar las tarjetas de catálogo visualizadas en el "
+"catálogo del portal, que representan los conjuntos de datos publicados de "
+"ese portal (consulte :ref:`Explorar un conjunto de datos del catálogo "
+"<exploring_dataset>`)."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:236
+msgid ""
+"The following directives allow to retrieve information related to a dataset,"
+" which could be included in the catalog card."
+msgstr ""
+"Las directivas siguientes permiten recuperar información acerca de un "
+"conjunto de datos, que podría incluirse en la tarjeta de catálogo."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:241
+msgid ""
+"Directives used in the Catalog card tab come with a standard style, which "
+"can be modified in the :ref:`Stylesheet <stylesheet>` tab."
+msgstr ""
+"Las directivas empleadas en la ficha Tarjeta de catálogo se presentan con un"
+" estilo estándar, que se puede modificar en la ficha :ref:`Hoja de estilos "
+"<stylesheet>`."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:247
+msgid "Directive"
+msgstr "Directiva"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:249
+msgid "``ods-catalog-card``"
+msgstr "``ods-catalog-card``"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:250
+msgid ""
+"**Mandatory**. Wraps the whole catalog card for the other directives to work"
+msgstr ""
+"**Obligatorio**. Envuelve la tarjeta de catálogo completa para que las demás"
+" directivas funcionen."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:251
+msgid "``ods-catalog-card-theme-icon``"
+msgstr "``ods-catalog-card-theme-icon``"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:252
+msgid "Retrieves the dataset's theme and includes the related icon"
+msgstr ""
+"Recupera el tema del conjunto de datos e incluye el icono relacionado."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:253
+msgid "``ods-catalog-card-body``"
+msgstr "``ods-catalog-card-body``"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:254
+msgid ""
+"Provides useful style and behaviour handling edge cases (e.g. datasets "
+"without records)"
+msgstr ""
+"Proporciona casos extremos de gran utilidad relacionados con el estilo y el "
+"comportamiento (p. ej., conjuntos de datos sin registros)."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:255
+msgid "``ods-catalog-card-title``"
+msgstr "``ods-catalog-card-title``"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:256
+msgid "Retrieves the title of the dataset"
+msgstr "Recupera el título del conjunto de datos."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:257
+msgid "``ods-catalog-card-description``"
+msgstr "``ods-catalog-card-description``"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:258
+msgid "Retrieves the description of the dataset"
+msgstr "Recupera la descripción del conjunto de datos."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:259
+msgid "``ods-catalog-card-keywords``"
+msgstr "``ods-catalog-card-keywords``"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:260
+msgid "Retrieves the keywords defined for the dataset"
+msgstr "Recupera las palabras clave definidas para el conjunto de datos."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:261
+msgid "``ods-catalog-card-metadata-item``"
+msgstr "``ods-catalog-card-metadata-item``"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:262
+msgid ""
+"Takes an ``item-key`` and an ``item-title`` attributes. It retrieves a "
+"metadata property matching the ``item-key`` (see table below) from the "
+"dataset and includes it in the page using ``item-title`` as its label. It "
+"should be wrapped by a ``.ods-catalog-card__metadata`` element for better "
+"styling but with no obligation."
+msgstr ""
+"Toma un atributo ``item-key`` y un atributo ``item-title``. Recupera una "
+"propiedad de metadatos coincidente con ``item-key`` (consulte la tabla "
+"siguiente) del conjunto de datos y la incluye en la página utilizando "
+"``item-title`` como etiqueta. Por una cuestión de estilo, se recomienda "
+"envolverla con un elemento ``.ods-catalog-card__metadata``, aunque no es "
+"obligatorio."
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:264
+msgid ""
+"Example: ``<ods-catalog-card-metadata-item item-title=\"Data\" item-"
+"key=\"records_count\"></ods-catalog-card-metadata-item>``"
+msgstr ""
+"Ejemplo: ``<ods-catalog-card-metadata-item item-title=\"Data\" item-"
+"key=\"records_count\"></ods-catalog-card-metadata-item>``"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:266
+msgid "The table below lists all available metadata item keys:"
+msgstr ""
+"La tabla siguiente indica todas las claves de elementos de metadatos "
+"disponibles:"
+
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:271
 msgid "Item key"
 msgstr "Clave de elemento"
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:197
-msgid "Item title"
-msgstr "Título de elemento"
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:273
+msgid "``license``"
+msgstr "``license``"
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:198
-msgid "license"
-msgstr "Licencia"
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:199
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:274
 msgid "License (will be rendered as a link if possible)"
 msgstr "Licencia (se presentará como vínculo si es posible)."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:200
-msgid "language"
-msgstr "Idioma"
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:275
+msgid "``language``"
+msgstr "``language``"
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:201
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:276
 msgid "Content language"
 msgstr "Idioma del contenido."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:202
-msgid "modified"
-msgstr "modified"
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:277
+msgid "``modified``"
+msgstr "``modified``"
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:203
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:278
 msgid "Date of last modification"
 msgstr "Fecha de la última modificación."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:204
-msgid "publisher"
-msgstr "Publicador"
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:279
+msgid "``publisher``"
+msgstr "``publisher``"
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:205
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:280
 msgid "Publisher's name"
 msgstr "Nombre del publicador."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:206
-msgid "references"
-msgstr "references"
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:281
+msgid "``references``"
+msgstr "``references``"
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:207
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:282
 msgid "Link to the original source of the data"
 msgstr "Vínculo con el origen de los datos original."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:208
-msgid "odi_certificate_url"
-msgstr "odi_certificate_url"
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:283
+msgid "``odi_certificate_url``"
+msgstr "``odi_certificate_url``"
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:209
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:284
 msgid "Link to the ODI certificate"
 msgstr "Vínculo con el certificado ODI."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:210
-msgid "records_count"
-msgstr "records_count"
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:285
+msgid "``records_count``"
+msgstr "``records_count``"
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:211
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:286
 msgid "Number of records in the dataset (regardless of filters)"
 msgstr "Número de registros del juego de datos (al margen de los filtros)."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:212
-msgid "attributions"
-msgstr "attributions"
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:287
+msgid "``attributions``"
+msgstr "``attributions``"
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:213
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:288
 msgid "Names of the data owner"
 msgstr "Nombres del propietario de los datos."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:214
-msgid "source_domain"
-msgstr "source_domain"
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:289
+msgid "``source_domain``"
+msgstr "``source_domain``"
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:215
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:290
 msgid ""
 "For federated datasets only, the name of the domain the dataset comes from"
 msgstr ""
 "Solo para los juegos de datos federados, nombre del dominio del cual procede"
 " el juego de datos."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:216
-msgid "source_domain_title"
-msgstr "source_domain_title"
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:291
+msgid "``source_domain_title``"
+msgstr "``source_domain_title``"
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:217
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:292
 msgid ""
 "For federated datasets only, the original title of the dataset on its source"
 " domain"
@@ -584,11 +902,11 @@ msgstr ""
 "Solo para los juegos de datos federados, título original del juego de datos "
 "en su dominio de origen."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:218
-msgid "source_dataset"
-msgstr "source_dataset"
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:293
+msgid "``source_dataset``"
+msgstr "``source_dataset``"
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:219
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:294
 msgid ""
 "For federated datasets only, the original identifier of the dataset on its "
 "source domain"
@@ -596,85 +914,10 @@ msgstr ""
 "Solo para los juegos de datos federados, identificador original del juego de"
 " datos en su dominio de origen."
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:220
-msgid "explore.download_count"
-msgstr "explore.download_count"
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:295
+msgid "``explore.download_count``"
+msgstr "``explore.download_count``"
 
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:221
+#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:296
 msgid "Number of data downloads for this dataset"
 msgstr "Número de descargas de datos para este juego de datos."
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:228
-msgid "Offline development"
-msgstr "Desarrollo sin conexión en línea"
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:230
-msgid ""
-"We've seen in the previous section that you can write detailed CSS rules "
-"that will override the portal's default theme. However, writing it all in "
-"the browser can become tedious, especially for seasoned developers used to "
-"powerful text editors. Since it only accepts pure CSS, you will have to "
-"manually ensure that your rules are correctly vendor-prefixed and won't be "
-"able to use the features frontend developers are accustomed to with pre-"
-"processors such as variables and nesting."
-msgstr ""
-"En la sección anterior hemos visto que puede escribir reglas CSS detalladas "
-"que sobrescribirán el tema predeterminado del portal. Sin embargo, la tarea "
-"de escribir en el explorador puede resultar tediosa, sobre todo para los "
-"desarrolladores veteranos habituados a potentes editores de texto. Dado que "
-"solo se admite CSS puro, tendrá que verificar manualmente que las reglas "
-"lleven antepuesto un prefijo de proveedor adecuado y no podrá usar las "
-"funciones que los desarrolladores del front end emplean habitualmente con "
-"los preprocesadores, como variables y anidamientos."
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:236
-msgid ""
-"For all these reasons, we've created an API enabling users with the theme "
-"API key to locally write their style rules using all the tools they want, "
-"and to just push the resulting CSS code to the platform. We've packaged a "
-"client to this API along with common tools (less preprocessor and "
-"autoprefixer) in the `Opendatasoft Portal Development Kit "
-"<https://github.com/opendatasoft/ods-portal-devkit>`_."
-msgstr ""
-"Por todo ello, hemos creado una API que permite a los usuarios con la clave "
-"de API del tema escribir localmente sus reglas de estilo utilizando todas "
-"las herramientas que deseen y simplemente insertar el código CSS final en la"
-" plataforma. Hemos empaquetado un cliente para esta API junto con las "
-"herramientas frecuentes (preprocesador y autoprefijador de less) en el "
-"`Opendatasoft Portal Development Kit <https://github.com/opendatasoft/ods-"
-"portal-devkit>`_."
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:241
-msgid ""
-"This ODS Portal DevKit is an open source project distributed for free on "
-"Github, feel free to download it and taylor it to your development workflow."
-msgstr ""
-"El ODS Portal DevKit es un proyecto de código abierto distribuido "
-"gratuitamente en Github; descárgueselo y adáptelo con plena libertad a su "
-"flujo de trabajo de desarrollo."
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:245
-msgid "Theme API key"
-msgstr "Clave de API del tema"
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:247
-msgid ""
-"You can find the theme API key on the portal theme customization page. Just "
-"expand the *API key for offline development* section and copy the key."
-msgstr ""
-"Puede encontrar la clave de API del tema en la página de personalización de "
-"temas del portal. Simplemente expanda la sección *Clave de API para "
-"desarrollo sin conexión en línea* y copie la clave."
-
-#: ../../source/customizing_look_and_feel/06_customizing_theme/theme.rst:253
-msgid ""
-"By generating a new key, you'll also be revoking previous ones. As a result,"
-" developers using an old key won't be able to push their work to the "
-"platform. Just remember to forward the new key to each developer working on "
-"your portal's theme to ensure that development goes uninterrupted."
-msgstr ""
-"Al generar una clave nueva, las anteriores quedan revocadas. Por "
-"consiguiente, los desarrolladores que utilicen una clave antigua no podrán "
-"insertar su trabajo en la plataforma. No olvide reenviar la clave nueva a "
-"cada uno de los desarrolladores que trabajan con el tema del portal para "
-"cerciorarse de que el desarrollo no se vea interrumpido."

@@ -108,7 +108,7 @@ To configure the map of the Map visualization, follow the instructions from the 
     * Description
     * Usage
   * * Basemap
-    * Basemap that will be used by default for the Map visualization. To appear in the list, the basemaps should be configured in the Look & feel > Data visualizations section of the back office (see :doc:`Adding basemaps</customizing_look_and_feel/04_configuring_data_visualizations/basemaps>` documentation).
+    * Basemap that will be used by default for the Map visualization. To appear in the list, the basemaps should be configured in the Look & feel > Data visualizations section of the back office (see :ref:`Adding basemaps<basemaps>` documentation).
     * 1. Click on the "Basemap" list box.
       2. Choose a basemap from the list.
   * * Marker & shape color
