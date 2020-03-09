@@ -45,7 +45,7 @@ To manage basemaps, look for the **Basemaps** configuration in the **Data visual
 .. image:: images/basemaps_overview.png
        :alt: Overview of the Basemaps area in the Look and feel > Data visualizations section.
 
-Basemaps should be managed from the table Basemaps configuration. This table displays the currently available basemaps that can be used on the domain. It comprises 3 columns:
+Basemaps should be managed from the table of the Basemaps configuration. This table displays the currently available basemaps that can be used on the domain. It comprises 3 columns:
 
 - **Label**, to name the basemaps. Each basemap should have one label per language available on the domain.
 - **Basemap**, to choose the basemap
@@ -199,7 +199,7 @@ Defining a default Map Builder location
 
 .. image:: images/dataviz_map-builder-location.png
 
-The Map Builder is Opendatasoft's tool to create advanced maps using one or more published dataset from one or more Opendatasoft portal. The Default map builder location configuration allows to defined which location the Map Builder will focus on by default when landing on it.
+The Map Builder is Opendatasoft's tool to create advanced maps using one or more published dataset from one or more Opendatasoft portal. The Default map builder location configuration allows to define which location the Map Builder will focus on by default when landing on it.
 
 1. In the **Data visualizations** configuration interface, look for the **Default map builder location** configuration.
 2. Click on the map, and maintain the click while moving the map until the chosen location is is enclosed in the rectangle. Some options are available to help defining the right location:

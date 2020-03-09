@@ -117,8 +117,8 @@ The color of following elements of an Opendatasoft portal can be configured in t
    * * Text
      * - *Text* (main)
        - *Links*
-       - *Header links*
-       - *Footer links*
+       - *Links in the header*
+       - *Links in the footer*
        - *Titles*
        - *Section titles*
        - *Highlight* (active element)
