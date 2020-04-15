@@ -17,10 +17,3 @@ and security (users and groups).
 The parent domain is able to "push" content pages and datasets to subdomains :doc:`using the distribution feature </managing_domain/02_managing_subdomains/distribute>`,
 and is also able to easily gather data from the subdomains (provided the parent domain
 has access to the subdomain) :doc:`using the harvesters feature </publishing_data/02_harvesting_a_catalog/harvesters/ods>`.
-
-.. toctree::
-   :maxdepth: 2
-
-   create
-   distribute
-   quotas
