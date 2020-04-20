@@ -93,14 +93,6 @@ If a value has never been translated, or if the translation suggestion was rejec
     :width: 12px
     :height: 9px
 
-.. |icon-validate| image:: images/icon_validate.png
-    :width: 20px
-    :height: 19px
-
-.. |icon-reject| image:: images/icon_reject.png
-    :width: 19px
-    :height: 19px
-
 .. |icon-copy-value| image:: images/icon_copy-value.png
     :width: 22px
     :height: 22px
