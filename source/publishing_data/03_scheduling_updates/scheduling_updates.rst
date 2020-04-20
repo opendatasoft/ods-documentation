@@ -30,7 +30,7 @@ Specifying scheduling interval
 
 .. image:: images/scheduling_tab.png
 
-Once a dataset is saved with a remote resource, the scheduling tab is activated. The minimum interval is the minute, but it is not activated by default. Please contact Opendatasoft's support if you need minute level scheduling on your domain. You can add as many schedule as you want. For instance, if it fits your needs, you could decide to schedule a dataset to be reprocessed every Monday morning and every Wednesday afternoon.
+Once a dataset is saved with a remote resource, the scheduling tab is activated. The minimum interval is the minute, but it is not activated by default. Please contact Opendatasoft's support if you need minute level scheduling on your domain. You can add as many schedules as you want. For instance, if it fits your needs, you could decide to schedule a dataset to be reprocessed every Monday morning and every Wednesday afternoon.
 
 Pushing real time data
 ----------------------

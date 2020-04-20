@@ -1,20 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, Opendatasoft
+# Copyright (C) 2020, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018
-# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
+# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-15 16:30+0200\n"
+"POT-Creation-Date: 2020-03-02 11:06+0100\n"
 "PO-Revision-Date: 2018-06-27 09:10+0000\n"
-"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019\n"
+"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2019\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,110 +22,75 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:2
-msgid "Publishing datasets"
-msgstr "Publicar los juegos de datos"
+msgid "Publishing a dataset"
+msgstr "Publicar un conjuntos de datos"
 
 #: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:4
 msgid ""
-"A dataset has a dedicated life cycle: It's start in the backoffice (not "
-"published), you configured the sources, the processors, the security and "
-"then you publish it. The dataset appears in the frontoffice (according to "
-"the security rules). When you make modifications on the dataset, they are "
-"pushed to the publish version when you click on the *publish* button. At any"
-" time you can remove a dataset from the by the *unpublish* action,"
+"Once the dataset is ready, after it was fully configured, it should be "
+"published in order to appear in the front office of the portal, where users "
+"can discover the published data."
 msgstr ""
-"Un juego de datos tiene un ciclo de vida específico: empieza en el back "
-"office (sin publicar), donde se configuran los orígenes, los procesadores y "
-"la seguridad, y después se publica. El juego de datos aparece en el front "
-"office (conforme a las reglas de seguridad). Cuando se realizan "
-"modificaciones en el juego de datos, estas se insertan en la versión "
-"publicada al hacer clic en el botón *Publicar¨. En cualquier momento se "
-"puede eliminar un juego de datos mediante la acción *Cancelar publicación*."
+"Cuando el conjunto de datos esté listo, después de configurarlo por "
+"completo, debe publicarse para que aparezca en el front office del portal, "
+"donde los usuarios podrán ver los datos publicados."
 
-#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:12
-msgid "Actions"
-msgstr "Acciones"
+#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:6
+msgid "Warning"
+msgstr "Aviso"
 
-#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:14
+#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:9
 msgid ""
-"Publish: Make the dataset's modifications live. This action duration can be "
-"various, it depends if only metadata have changed or if the dataset schema "
-"changed."
+"Make sure to have properly configured the Security tab beforehand, to avoid "
+"the dataset to be accessible by everyone if it actually was supposed to be "
+"only accessible by specific users."
 msgstr ""
-"Publicar: Activa las modificaciones del juego de datos. La duración de esta "
-"acción varía en función de si solo se han cambiado los metadatos o si se ha "
-"cambiado el esquema de juego de datos."
+"Asegúrese de haber configurado correctamente la pestaña Seguridad "
+"previamente para evitar que todo el mundo pueda acceder al conjunto de datos"
+" si en realidad solo desea que puedan acceder a él unos usuarios "
+"determinados."
+
+#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:11
+msgid ""
+"In case the dataset has already been published at least once, but has been "
+"modified, it needs to be republished for these modifications to be seen in "
+"the front office of the portal."
+msgstr ""
+"Si el conjunto de datos ya se ha publicado al menos una vez pero se ha "
+"modificado, debe volver a publicarse para que estas modificaciones aparezcan"
+" en el front office del portal."
 
 #: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:15
-msgid ""
-"Unpublish: It removes the dataset from the calalog and all records are "
-"deleted. In some case data can be lost (realtime without recovery, specific "
-"connectors)."
-msgstr ""
-"Cancelar publicación: Elimina el juego de datos del catálogo y suprime todos"
-" los registros. En algunos casos pueden perderse datos (en tiempo real sin "
-"recuperación, conectores específicos...)."
+msgid "To (re)publish a dataset:"
+msgstr "Para publicar o volver a publicar un conjunto de datos:"
 
-#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:16
-msgid ""
-"Abort: It sends the *abort* order to the processing process. It will leave "
-"the dataset in a clean but incomplete state (not all records have been "
-"processed)."
-msgstr ""
-"Anular: Envía la orden *Anular* al procesamiento en curso. Deja el juego de "
-"datos en estado limpio pero incompleto (no se han procesado todos los "
-"registros)."
+#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:17
+msgid "Click on the Save button."
+msgstr "Haga clic en el botón Guardar."
+
+#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:18
+msgid "Click on the Publish button."
+msgstr "Haga clic en el botón Publicar."
 
 #: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:19
-msgid "Statuses"
-msgstr "Estados"
+msgid ""
+"(optional) Click on the Explore button to directly access the dataset in the"
+" front office, and check the result."
+msgstr ""
+"(Opcional) Haga clic en el botón Explorar para acceder directamente al "
+"conjunto de datos en el front office y comprobar el resultado."
 
 #: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:21
-msgid ""
-"Dataset processing is perform asynchronously to ensure the best performance "
-"and no interference with others processing tasks. Different status are "
-"reachable by a dataset during the processing task."
-msgstr ""
-"El procesamiento del juego de datos se realiza asíncronamente para asegurar "
-"un rendimiento óptimo y no interferir en otras tareas de procesamiento. Un "
-"juego de datos pasa por diferentes estados a lo largo de la tarea de "
-"procesamiento."
+msgid "Note"
+msgstr "Nota"
 
 #: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:24
-msgid "Queued: The processing task is waiting to be pick up."
-msgstr "En cola: La tarea de procesamiento está esperando a ser seleccionada."
-
-#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:25
 msgid ""
-"Processing: Records are extracted from the connector, processors are applied"
-" and the result is made available through the Opendatasoft API. Records "
-"number increased during this step."
+"To know more about the possible actions to operate on a dataset, as well as "
+"the different statuses of the life cycle of a dataset, refer to :doc:`the "
+"Dataset actions and statuses documentation<dataset_actions_status>`."
 msgstr ""
-"Proceso en curso: Se han extraído los registros del conector, se han "
-"aplicado los procesadores y el resultado está disponible a través de la API "
-"de Opendatasoft. El número de registros ha aumentado en este paso."
-
-#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:26
-msgid "Unpublishing: Dataset is removed from the API."
-msgstr ""
-"Cancelación de publicación en curso: El juego de datos se ha eliminado de la"
-" API."
-
-#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:27
-msgid ""
-"Aborting processing: The *abort* order has been sent to the platform. The "
-"dataset processing will stop within the next minute."
-msgstr ""
-"Proceso de anulación en curso: Se ha enviado la orden *Anular* a la "
-"plataforma. El procesamiento del juego de datos se detendrá en el próximo "
-"minuto."
-
-#: ../../source/publishing_data/11_saving_and_publishing_a_dataset/publish.rst:28
-msgid ""
-"Limit reached: The user who launched the processing job reached its allowed "
-"quota. He overtakes one of the limit (from the domain, the group of the "
-"user)."
-msgstr ""
-"Límite alcanzado: El usuario que ha iniciado el trabajo de procesamiento ha "
-"alcanzado su cuota permitida. Supera en uno el límite (del dominio, grupo o "
-"usuario)."
+"Para obtener más información sobre las acciones que se pueden llevar a cabo "
+"con un conjunto de datos, y los estados del ciclo de vida de un conjunto de "
+"datos, consulte :doc:`la documentación Acciones y estados de los conjuntos "
+"de datos<dataset_actions_status>`."

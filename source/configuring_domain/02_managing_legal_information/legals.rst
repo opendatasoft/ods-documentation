@@ -1,10 +1,10 @@
 Displaying legals
 =================
 
-Cookies and trackers informations
----------------------------------
+Cookies and trackers information
+--------------------------------
 
-If you are located in the EU, you are required by law to you display a message informing your users that the sites uses cookies, and for what purpose.
+If you are located in the EU, you are required by law to display a message informing your users that the sites uses cookies, and for what purpose.
 
 You can choose to display this message in the ``Configuration`` menu, in the ``Legals`` section :
 
@@ -63,6 +63,7 @@ To specify the Terms and Conditions and the Privacy Policy of a portal, go to Co
 
    Fill-in Terms & Conditions and Privacy Policy templates are available, based on the French law (in French and English languages) and the US law (in English language) only. Click the Use a template button under the textbox to use a template. The generated conditions of use can be edited in the textbox afterward.
 
+.. _licenses-config:
 
 Licenses
 --------

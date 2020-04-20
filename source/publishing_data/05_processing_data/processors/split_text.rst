@@ -1,4 +1,4 @@
-Split Text processor
+Split text processor
 ====================
 
 This processor allows to split a field value and to extract the Nth element in a new field.
@@ -16,7 +16,7 @@ This processor allows to split a field value and to extract the Nth element in a
 Setting the processor
 ---------------------
 
-To set the parameters of the Split Text processor, follow the indications from the table below.
+To set the parameters of the Split text processor, follow the indications from the table below.
 
 .. list-table::
   :header-rows: 1

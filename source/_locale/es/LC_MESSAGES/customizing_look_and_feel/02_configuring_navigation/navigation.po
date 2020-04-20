@@ -1,19 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, Opendatasoft
+# Copyright (C) 2020, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018
+# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2020
+# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-15 16:30+0200\n"
+"POT-Creation-Date: 2020-03-02 11:06+0100\n"
 "PO-Revision-Date: 2018-06-27 09:08+0000\n"
-"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018\n"
+"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,16 +23,182 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:2
-msgid "Configuring the navigation menu"
-msgstr "Configurar el menú de navegación"
+msgid "Configuring the navigation"
+msgstr "Configurar la navegación"
 
 #: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:4
 msgid ""
-"Once your page content has been fully defined, you might want to *plug* your"
-" page in your domain's menu. This can easily be done by editing the menu "
-"components in the *Domain > Portal > General settings* section."
+"Users generally start their discovery of an Opendatasoft domain with the "
+"root page, and then navigate to other available pages using the header "
+"located at the top of any interface in the front office. Both are "
+"configurable via the **Look and feel > Navigation** subsection of the back "
+"office."
 msgstr ""
-"Una vez definido por completo el contenido de la página, puede interesarle "
-"*conectar* la página en el menú del dominio. Puede hacerlo fácilmente "
-"editando los componentes del menú en la sección *Dominio > Portal > "
-"Configuración general*."
+"Los usuarios suelen iniciar el descubrimiento de un dominio de Opendatasoft "
+"con la página raíz, para después navegar a otras páginas disponibles a "
+"partir del encabezado que se encuentra en la parte superior de cualquier "
+"interfaz del front office. Ambos elementos se pueden configurar en la "
+"subsección **Apariencia > Navegación** del back office."
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:8
+msgid "Choosing a root page"
+msgstr "Elegir una página raíz"
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:12
+msgid ""
+"The root page is the default page on which a user lands when accessing the "
+"portal via its main URL (e.g. ``domainname.opendatasoft.com``). By default, "
+"the root page is the Explore page, which displays the catalog of datasets of"
+" the portal. It can be replaced with any other page available within the "
+"domain, such as a home page build with HTML & CSS using the Pages section of"
+" the back office (see :doc:`Creating content </creating_content/index>`)."
+msgstr ""
+"La página raíz es la página predeterminada a la que accede un usuario al "
+"introducirse en el portal a través de su URL principal (p. ej. "
+"``domainname.opendatasoft.com``). Por defecto, la página raíz es la página "
+"Explorar, que muestra el catálogo de conjuntos de datos del portal. Se puede"
+" sustituir por cualquier otra página disponible en el dominio, como una "
+"página de inicio construida con HTML y CSS en la sección Páginas del back "
+"office (consulte :doc:`Crear una página de contenido "
+"</creating_content/index>`)."
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:14
+msgid "To change the root page:"
+msgstr "Para cambiar la página raíz:"
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:16
+msgid ""
+"In the **Navigation** configuration interface, look for the **Root page** "
+"configuration."
+msgstr ""
+"En la interfaz de configuración **Navegación**, busque la configuración "
+"**Página raíz**."
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:17
+msgid "Click on the drop-down menu to choose a page among the list."
+msgstr "Haga clic en el menú desplegable para elegir una página de la lista."
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:18
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:59
+msgid "Click on the Save button in the top right corner."
+msgstr "Haga clic en el botón Guardar en la esquina superior derecha."
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:20
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:39
+msgid "Important"
+msgstr "Importante"
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:23
+msgid ""
+"All available pages are displayed in the drop-down list, but private pages "
+"are grayed out. Only public pages can indeed be chosen as root page."
+msgstr ""
+"Todas las páginas disponibles aparecen en la lista, pero las páginas "
+"privadas están atenuadas. En realidad, solo es posible elegir como página "
+"raíz una página pública."
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:27
+msgid "Configuring the navigation header"
+msgstr "Configurar el encabezado de navegación"
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:31
+msgid ""
+"The navigation header located at the very top of any page of the front "
+"office contains items that link to either chosen pages of the portal, or "
+"external websites. The default menu items of the navigation header are:"
+msgstr ""
+"El encabezado de navegación de la parte superior de cualquier página del "
+"front office contiene elementos que vinculan o bien a unas páginas "
+"determinadas del portal o bien a sitios web externos. Los elementos de menú "
+"predeterminados del encabezado de navegación son:"
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:33
+msgid "Data, with a link to the Explore page"
+msgstr "Datos, con un vínculo a la página Explorar"
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:34
+msgid "Maps, with a link to the Map Builder"
+msgstr "Mapas, con un vínculo al compilador de mapas"
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:35
+msgid "Charts, with a link to the Chart Builder"
+msgstr "Gráficos, con un vínculo al compilador de gráficos"
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:36
+msgid "API, with a link to the Search API console"
+msgstr "API, con un vínculo a la consola de API de búsqueda"
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:37
+msgid "Documentation, with a link to the Opendatasoft Help Hub"
+msgstr "Documentación, con un vínculo a la central de ayuda de Opendatasoft"
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:42
+msgid ""
+"We highly advise to keep in the navigation header the link to the Explore "
+"page that contains the datasets catalog of the portal."
+msgstr ""
+"Recomendamos vivamente mantener en el encabezado de navegación el vínculo a "
+"la página Explorar que contiene el catálogo de conjuntos de datos del "
+"portal."
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:44
+msgid ""
+"To configure the navigation header, look for the **Header** configuration in"
+" the **Navigation** configuration interface."
+msgstr ""
+"Para configurar el encabezado de navegación, busque la configuración "
+"**Encabezado** en la interfaz de configuración **Navegación**."
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:47
+msgid "Adding a new menu item"
+msgstr "Añadir un nuevo elemento de menú"
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:49
+msgid "Click on the + Add menu item button."
+msgstr "Haga clic en el botón + Añadir elemento de menú."
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:50
+msgid ""
+"In the textbox of the Page URL column, write or paste the link of the new "
+"item. External links must start with ``http://`` or ``https://``"
+msgstr ""
+"En el cuadro de texto de la columna Dirección URL de página, escriba o pegue"
+" el vínculo del nuevo elemento. Los vínculos externos deben empezar por "
+"``http://`` o ``https://``."
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:51
+msgid ""
+"(optional) If the link is an external one, tick the *Open link in a new "
+"tab/window* option box for it to do so."
+msgstr ""
+"(Opcional) Si el vínculo es externo, seleccione el cuadro de opcíon *Abrir "
+"vínculo en una ficha/ventana nueva* para hacerlo."
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:52
+msgid ""
+"In the textbox(es) of the Label column, write the label of the menu item, "
+"that will be displayed in the navigation header. There should be one label "
+"per language available on the portal."
+msgstr ""
+"En los cuadros de texto de la columna Etiqueta, escriba la etiqueta del "
+"elemento de menú que se mostrará en el encabezado de navegación. Debe haber "
+"una etiqueta por idioma disponible en el portal."
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:53
+msgid ""
+"(optional) Click on the reordering icon |icon-reorder| to place the menu "
+"item in a chosen position among the other menu items."
+msgstr ""
+"(Opcional) Haga clic en el icono de reordenar |icon-reorder| para colocar el"
+" elemento de menú en una posición determinada entre los demás elementos de "
+"menú."
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:56
+msgid "Deleting a menu item"
+msgstr "Suprimir un elemento de menú"
+
+#: ../../source/customizing_look_and_feel/02_configuring_navigation/navigation.rst:58
+msgid "Click on the trash icon |icon-trash| to delete a menu item."
+msgstr ""
+"Haga clic en el icono de papelera |icon-trash| para suprimir un elemento de "
+"menú."

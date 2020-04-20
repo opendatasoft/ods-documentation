@@ -1,96 +1,144 @@
-Customizing theme and portal icon
-=================================
+Customizing portal themes
+=========================
 
-.. important::
-   The theme customization is not available on freemium domains (created through the
-   `Try it for free <https://www.opendatasoft.com/discover-opendatasoft-demo/>`_ page on
-   `Opendatasoft's website <https://www.opendatasoft.com>`_).
-   If your domain is a freemium domain and would like to get this theme feature, `email us! <sales@opendatasoft.com>`_
-
-Opendatasoft's theme management interface can be found in the domain back-office. In order to access it, you'll have to
-click the ``Look & feel`` section in the navigation bar and then on the ``theme`` link.
-
-.. admonition:: Note
-   :class: note
-
-   In order to access the theme page, you'll need to be able to edit domain properties. See :doc:`Managing the Security of your Domain </managing_domain/01_managing_users_and_groups/users>` for more details about permissions.
+The default theme of all Opendatasoft portals can be entirely customized, not only in terms of layout and colors, but also regarding specific areas such as header, footer and catalog cards. Theme configurations and managed from the **Look & feel > Theme** subsection of the back office.
 
 .. image:: images/theme_interface.png
 
-Using the various forms available in this page, you'll be able to customize every aspect of your portal, from basic
-colors to making major changes in its layout.
+The Theme interface comprises 3 main blocks.
+
+- The header (1), which not only displays the title of the interface, but also a *Current action* drop-down menu to manage versioning (see :ref:`Versioning themes <theme_versioning>`). 3 important buttons are also displayed in the header:
+
+  - Save, to save the new configurations
+  - Preview, to open in a new tab the Opendatasoft portal with the newly applied configurations
+  - Make live, to define the newly applied configurations as the new, live theme available on the Opendatasoft portal
 
 
-Versioning
-----------
-
-Before diving into the many ways to customize the portal's theme, it is very important to stress that everything you
-will do on this page is versioned. This is to say that your work has a version number assigned to it and you can at any
-moment create a new version. You'll always be working on the latest version (think of it as your working draft), but can
-make any version live (that is, apply it to your portal). Were you to make the latest version live, a new one would be
-created and would become your new working draft. Only the latest version can be edited; all previous ones are read-only.
-
-While working on the latest version, you can preview your changes by clicking the ``Preview`` button. This will open a
-new window containing your portal with the current version of the theme applied to it.
+* The **API key for offline development** management block (2), which allows the use and generation of new API keys (see note right below for more information).
 
 .. admonition:: Note
    :class: note
 
-   Only users able to edit the domain properties can preview the latest theme version. If you were to share the URL of the preview with other users, they won't see any difference in the live version.
+   It is possible to create stylesheets outside the platform, with any standard web developping tool, and to push them to the platform using an API key. For an easier and quicker usage, the `Opendatasoft Portal Development Kit <https://github.com/opendatasoft/ods-portal-devkit>`_ is at disposal: it is an open source project created by Opendatasoft, that can be downloaded on Github.
 
-.. admonition:: Note
-   :class: note
+   To find and use a theme API key, click on the **API key for offline development** block to expand it. The current API key is displayed in the block, ready to be copied and used.
 
-   You can preview the latest version of the theme at any moment and on any given page on the portal's front-office by adding the ``stage_theme=true`` parameter to the URL.
+   It is also possible to generate a new API key by clicking on the Generate new key button. However, be careful when generating new API keys: only the current one can be used, which means that generating a new API key revokes all previous ones.
+
+- A block of 6 tabs (3), each one allowing to configure a part of an Opendatasoft portal theme (see :ref:`Customizing a portal theme <theme_customization>`):
+
+  - :ref:`Layout options <layout_options>`, to modify the general layout of the portal
+  - :ref:`Colors <colors>`, to change colors of backgrounds, texts, borders, links, etc.
+  - :ref:`Stylesheet <stylesheet>`, to add more style to the portal with CSS
+  - :ref:`Header <header_footer>`, to modify the header with HTML code
+  - :ref:`Footer <header_footer>`, to modify the footer with HTML code
+  - :ref:`Catalog card <catalog_card>`, to modify the catalog cards with HTML code
+
+.. _theme_versioning:
+
+Versioning themes
+-----------------
 
 .. image:: images/theme_versioning.png
 
-The version selector will tell you explicitly if you're working on the latest version or rather viewing a previous one,
-as well as which version is live.
+Portal themes are versioned, which means that each customized new theme has a version number assigned to it. Once a theme is finished and made live, another version is automatically created: it is the new draft theme on which to work until it is ready to be live.
 
-Customization options
----------------------
+The *Current action* drop-down menu displayed in the header indicates on which version one is currently working on. It also allows to select previous themes that were already made live.
 
-.. _theme__layout-options:
+.. admonition:: Important
+   :class: important
+
+   Once a theme is live, it is completely locked: it is not possible to make any other modifications. Only the latest, draft version can be modified.
+
+While working on the latest draft version of the portal theme, it is possible to preview what the portal will look like with this new theme. A Preview button is indeed displayed between the Make live and Save buttons, to open a new tab with the portal configured with the draft theme.
+
+.. admonition:: Note
+   :class: note
+
+   Only users able to edit the domain properties can preview the latest theme version. If sharing the URL with other users who were not granted the right permissions, they would see the portal with the live theme.
+
+
+.. _theme_customization:
+
+Customizing a portal theme
+--------------------------
+
+.. _layout_options:
 
 Layout options
-~~~~~~~~~~~~~~
-
-The portal layout relies on a 12-column grid system largely inherited from the
-`Bootstrap CSS framework <http://getbootstrap.com/css/#grid>`_ and as such has a few internal variables used throughout
-its CSS. This tab allows you to set the value of some of these variables.
+^^^^^^^^^^^^^^
 
 .. image:: images/theme_layout-options.png
 
-The variables that can currently be overridden are the *gutter width* and the *responsive breakpoints*.
+The **Layout options** tab allows to customize the portal layout, which by default relies on a 12-columns grid system inherited from the `Bootstrap CSS framework <http://getbootstrap.com/css/#grid>`_.
 
-The *gutter width* is the space between columns, rows and adjacent boxes.
+More specifically, in this tab, it is possible to modify:
 
-The *responsive breakpoints* are the screen widths (in pixels) at which the layout will change to better accommodate the
-available space. There are 4 modes available: extra-small , small , medium and large, which means that there are 3
-breakpoints: extra-small to small, small to medium and medium to large. The modes are also commonly referred to as
-*mobile*, *tablet*, *desktop* and *large desktop*.
+- the *Gutter width*, which is the space (in pixels) between the various elements that compose an interface of the portal (columns, rows and boxes)
+- the **Responsive breakpoints**, which are the various screen widths (in pixels) at which the layout should change to adapt to the available space (e.g. the portal layout should differ depending on whether it is used from a mobile phone or a desktop, because the screen of a mobile phone is much smaller than that of a desktop). A web interface that adapts depending on the screen width is indeed called "responsive". There are 3 configurable breakpoints between 4 standard screen size associated with common devices:
+
+   - *Mobile to tablet*: to go from an extra-small screen to a small screen
+   - *Tablet to desktop*: to go from a small screen to a medium screen
+   - *Desktop to large desktop*: to go from a medium screen to a large screen
 
 .. admonition:: Note
    :class: note
 
-   Bear in mind though that *mobile mode* doesn't mean that the user is actually using a mobile device, but rather that the browser on the device only offers a small display area.
+   Mobile, Tablet, Desktop and Large desktop are used as reference because they are common devices that illustrate quite well the 4 standard screen sizes (extra-small , small , medium and large) that can be encountered. Keep in mind however that Mobile for example doesn't mean that the user is actually using a mobile device, but rather that the browser used by the user only offers an extra-small display area.
 
-In order to reset any of the variable to its default value, just click on the clear button next to it.
+To modify a layout option:
+
+1. Write a new width, in pixels, in the chosen textbox.
+2. Click on the Save button in the top right corner.
+
+To reset any layout option to its default value, click on the |icon-trash| button.
+
+.. _colors:
 
 Colors
-~~~~~~
-
-As with layout options, the Opendatasoft platform relies on a handful of color variables for the style of the portal
-elements. You can use the color inputs on this tab to set some of theme. This way with just a few clicks you can brand
-your portal to your colors.
+^^^^^^
 
 .. image:: images/theme_colors.png
 
-.. admonition:: Note
-   :class: note
+The **Colors** tab allows to customize the colors used in the texts and links, backgrounds and borders of the portal.
 
-   These variables will override the default theme's colors. The custom style rules you can write in the stylesheet tab will however have precedence over these colors. Which means that your color choices may not be visible if you wrote more specific CSS rules.
+.. admonition:: Important
+   :class: important
+
+   If a :ref:`custom stylesheet <stylesheet>` has been created for the portal, the CSS rules that is contains will have precedence over the colors defined in the Colors tab.
+
+The color of following elements of an Opendatasoft portal can be configured in this tab:
+
+.. list-table::
+   :header-rows: 1
+
+   * * Category
+     * Configurable elements
+   * * Text
+     * - *Text* (main)
+       - *Links*
+       - *Links in the header*
+       - *Links in the footer*
+       - *Titles*
+       - *Section titles*
+       - *Highlight* (active element)
+   * * Background
+     * - *Page background*
+       - *Boxes background*
+       - *Section titles background*
+       - *Header background*
+       - *Footer background*
+   * * Borders
+     * - *Boxes border*
+
+To modify a theme color:
+
+1. In the chosen textbox, write the hexadecimal code of the new color, or click the color button to choose a new color using either the Nice colors, or the Color wheel.
+2. Click on the Save button in the top right corner.
+
+To reset to the color of the currently live portal theme, click on the |icon-reset| button.
+
+.. _theme_colors_variables:
 
 .. admonition:: Note
    :class: note
@@ -101,153 +149,160 @@ your portal to your colors.
 
       var(--variable-name)
 
-   The available variables are: `text`, `links`, `titles`, `page-background`, `highlight`, `boxes-background`, `boxes-border`, `section-titles`, `section-titles-background`, `header-background`, `header-links`, `footer-background` and `footer-links`.
+   The available variables are: ``text``, ``links``, ``titles``, ``page-background``, ``highlight``, ``boxes-background``, ``boxes-border``, ``section-titles``, ``section-titles-background``, ``header-background``, ``header-links``, ``footer-background`` and ``footer-links``.
 
    These CSS variables are compatible with all browsers, because the Opendatasoft platform automatically replaces all variables with their real theme color values.
 
-.. _theme__stylesheet:
+.. _stylesheet:
 
 Stylesheet
-~~~~~~~~~~
-
-If changing colors is not enough and you'd like make deeper changes, you'll have to write your own CSS. Luckily this tab
-enables you to input your own style rules. These will be applied on top of Opendatasoft's default rules and have
-precedence over them.
+^^^^^^^^^^
 
 .. image:: images/theme_stylesheet.png
 
-If your customization uses specific images and fonts, you can upload them to the platform using the
-:doc:`assets management page </customizing_look_and_feel/03_adding_assets/assets>`. You'll then be able to copy the assets URLs and paste them in your CSS code.
+The **Stylesheet** tab displays an editor in which to add pure CSS style rules. It allows the push even further the customization of a portal theme. All rules added in this tab will have precedence over the configurations defined in the other theme tabs.
 
-.. important::
-    To change the style of an element, you only have to find the element's class and change the desired CSS property.
-    It won't have any side-effects (limited to this single class name) and is guaranteed to work (since the hierarchy
-    tree is mostly flat).
-
-    This is possible because all of Opendatasoft's CSS code is written following the
-    `BEM methodology <http://getbem.com/introduction/>`_ and prefixed with `ods-` so that they won't conflict with your
-    own styles and can easily be overridden. You'll find a great introduction to this methodology on the ever-useful
-    `CSS Tricks website <https://css-tricks.com/bem-101/>`_.
-
-    In short, class names are written as *block, element, modifier* (hence the BEM)
-    `.ods-block[--blockmodifier][__element][--elementmodifier]`. The hierarchy tree is at most 2 selectors deep. Also,
-    the relevant style is as close to the element as possible.
-
-Header and footer
-~~~~~~~~~~~~~~~~~
-
-While both header and footer can already be branded using the domain's customization section and color selection panel,
-organizations usually want to further customize the layout and content of these areas.
-
-.. image:: images/theme_header.png
-
-Both header and footer are wrapped within independent AngularJS applications, which means you can use `ng-if`,
-`ng-class`, `ng-show`, `ng-hide` and all of Angular's standard directives to make the areas more dynamic. One common
-request is to collapse the header into a *click-to-expand* side menu below a certain viewport width. For this purpose we
-provide the `ods-responsive-menu` directive. See :doc:`this dedicated page </customizing_look_and_feel/07_designing_responsive_portal/responsive>` for more information.
-
-We also provide placeholders that will be replaced with the content specified in the domain customization options such
-as menu items, language selectors and logos. The full list is displayed right above the code area.
+To change the style of an element, find the element's class and change the desired CSS property. Class names are written as block, element, modifier: ``.ods-block[--blockmodifier][__element][--elementmodifier]``.
 
 .. admonition:: Note
    :class: note
 
-   While you can take advantage of Angular within the header and footer, standard JS is still forbidden for security reasons.
+   When using specific images and fonts for the customization of the domain, don't hesitate to upload them as assets in the platform (see :doc:`Adding assets </customizing_look_and_feel/03_adding_assets/assets>`). It allows to easily copy the assets URLs and paste them in the CSS code.
+
+.. _header_footer:
+
+Header and Footer
+^^^^^^^^^^^^^^^^^
+
+.. image:: images/theme_header.png
+
+The **Header** and **Footer** tabs each display an editor in which to add pure HTML. Although both the header and the footer can be partially customized via the :ref:`Colors <colors>` tab, these tabs allow to push even further the customization of these areas of the portal.
+
+Both the header and the footer are wrapped within independent AngularJS applications, which means that standard Angular directives such as ``ng-if``, ``ng-class``, ``ng-show`` and ``ng-hide`` can be used.
+
+.. admonition:: Note
+   :class: note
+
+   To collapse the header into a click-to-expand side menu below a certain viewport width, use the ``ods-responsive-menu`` directive.
+
+Placeholders can also be used when customizing the header and the footer: they will be replaced with the content specified in the domain customization options such as menu items, language selectors and logos.
+
+The following placeholders are available in the **Header** tab:
+
+.. list-table::
+   :header-rows: 1
+
+   * * Placeholder
+     * Information
+   * * ``##menu##``
+     * Main menu, with links to chosen pages
+   * * ``##secondary-menu##``
+     * Menu containing links to login page and user account
+   * * ``##logo##``
+     * Portal logo configured in Branding
+   * * ``##brand##``
+     * Portal brand configured in Branding
+   * * ``##language##``
+     * Links to change the language of the portal
+
+The following placeholders are available in the **Footer** tab:
+
+.. list-table::
+   :header-rows: 1
+
+   * * Placeholder
+     * Information
+   * * ``##legal##``
+     * Link to the Terms & Conditions defined for the portal, configured in Legals
+   * * ``##language##``
+     * Language picker for the languages specified for the portal
+   * * ``##ods-logo##``
+     * Opendatasoft logo
+
+.. admonition:: Important
+   :class: important
+
+   JavaScript is not allowed for security reasons.
+
+.. _catalog_card:
 
 Catalog card
-~~~~~~~~~~~~
-
-On the catalog page of your domain, each dataset is represented by a single *catalog card*. These cards feature
-a few standard elements but you may want to radically change the way it looks, add new links or implement new
-behaviours.
-
-Here are a few examples of catalog cards:
-
-.. image:: images/theme__catalog-card-example-central.png
-.. image:: images/theme__catalog-card-example-datacorsica.png
-.. image:: images/theme__catalog-card-example-toulouse.png
-
-We provide handy directives to easily retrieve and include any information relative to a dataset. These directives also
-come with a standard style that you can override using the *Stylesheet* tab.
+^^^^^^^^^^^^
 
 .. image:: images/theme_catalog-card.png
 
-The directives are:
+The **Catalog card** tab displays an editor in which to add pure HTML. It allows to customize the catalog cards displayed in the catalog of the portal, which represent the published datasets of that portal (see :ref:`Exploring a dataset from the catalog <exploring_dataset>`).
 
-* `ods-catalog-card` must wrap the whole catalog card for the other directives to work.
-* `ods-catalog-card-theme-icon` will retrieve the dataset's theme and include the relevant icon.
-* `ods-catalog-card-body` provides useful style and behaviour handling edge cases (datasets without records, API
-  proxy...).
-* `ods-catalog-card-title`, `ods-catalog-card-description` and `ods-catalog-card-keywords` are self-explanatory.
-* `ods-catalog-card-metadata-item` takes an `item-key` and an `item-title` attributes, retrieve a metadata
-  property matching the `item-key` from the dataset and includes in in the page using `item-title` as its label. It
-  should be wrapped by a `.ods-catalog-card__metadata` element for better styling but with no obligation.
+The following directives allow to retrieve information related to a dataset, which could be included in the catalog card.
 
-  .. code-block:: html
+.. admonition:: Note
+   :class: note
 
-     <ods-catalog-card-metadata-item item-title="Data" item-key="records_count"></ods-catalog-card-metadata-item>
+   Directives used in the Catalog card tab come with a standard style, which can be modified in the :ref:`Stylesheet <stylesheet>` tab.
 
-
-.. list-table:: Metadata item keys
+.. list-table::
+   :widths: 50 50
    :header-rows: 1
 
-   * * Item key
-     * Item title
-   * * license
-     * License (will be rendered as a link if possible)
-   * * language
-     * Content language
-   * * modified
-     * Date of last modification
-   * * publisher
-     * Publisher's name
-   * * references
-     * Link to the original source of the data
-   * * odi_certificate_url
-     * Link to the ODI certificate
-   * * records_count
-     * Number of records in the dataset (regardless of filters)
-   * * attributions
-     * Names of the data owner
-   * * source_domain
-     * For federated datasets only, the name of the domain the dataset comes from
-   * * source_domain_title
-     * For federated datasets only, the original title of the dataset on its source domain
-   * * source_dataset
-     * For federated datasets only, the original identifier of the dataset on its source domain
-   * * explore.download_count
-     * Number of data downloads for this dataset
+   * * Directive
+     * Information
+   * * ``ods-catalog-card``
+     * **Mandatory**. Wraps the whole catalog card for the other directives to work
+   * * ``ods-catalog-card-theme-icon``
+     * Retrieves the dataset's theme and includes the related icon
+   * * ``ods-catalog-card-body``
+     * Provides useful style and behaviour handling edge cases (e.g. datasets without records)
+   * * ``ods-catalog-card-title``
+     * Retrieves the title of the dataset
+   * * ``ods-catalog-card-description``
+     * Retrieves the description of the dataset
+   * * ``ods-catalog-card-keywords``
+     * Retrieves the keywords defined for the dataset
+   * * ``ods-catalog-card-metadata-item``
+     * Takes an ``item-key`` and an ``item-title`` attributes. It retrieves a metadata property matching the ``item-key`` (see table below) from the dataset and includes it in the page using ``item-title`` as its label. It should be wrapped by a ``.ods-catalog-card__metadata`` element for better styling but with no obligation.
+
+       Example: ``<ods-catalog-card-metadata-item item-title="Data" item-key="records_count"></ods-catalog-card-metadata-item>``
+
+       The table below lists all available metadata item keys:
+
+       .. list-table::
+          :header-rows: 1
+
+          * * Item key
+            * Information
+          * * ``license``
+            * License (will be rendered as a link if possible)
+          * * ``language``
+            * Content language
+          * * ``modified``
+            * Date of last modification
+          * * ``publisher``
+            * Publisher's name
+          * * ``references``
+            * Link to the original source of the data
+          * * ``odi_certificate_url``
+            * Link to the ODI certificate
+          * * ``records_count``
+            * Number of records in the dataset (regardless of filters)
+          * * ``attributions``
+            * Names of the data owner
+          * * ``source_domain``
+            * For federated datasets only, the name of the domain the dataset comes from
+          * * ``source_domain_title``
+            * For federated datasets only, the original title of the dataset on its source domain
+          * * ``source_dataset``
+            * For federated datasets only, the original identifier of the dataset on its source domain
+          * * ``explore.download_count``
+            * Number of data downloads for this dataset
 
 
 
 
 
-Offline development
--------------------
+.. |icon-trash| image:: images/icon_trash.png
+    :width: 29px
+    :height: 28px
 
-We've seen in the previous section that you can write detailed CSS rules that will override the portal's default theme.
-However, writing it all in the browser can become tedious, especially for seasoned developers used to powerful text
-editors. Since it only accepts pure CSS, you will have to manually ensure that your rules are correctly vendor-prefixed
-and won't be able to use the features frontend developers are accustomed to with pre-processors such as variables and
-nesting.
-
-For all these reasons, we've created an API enabling users with the theme API key to locally write their style rules
-using all the tools they want, and to just push the resulting CSS code to the platform. We've packaged a client to this
-API along with common tools (less preprocessor and autoprefixer) in the
-`Opendatasoft Portal Development Kit <https://github.com/opendatasoft/ods-portal-devkit>`_.
-
-This ODS Portal DevKit is an open source project distributed for free on Github, feel free to download it and taylor it
-to your development workflow.
-
-Theme API key
-~~~~~~~~~~~~~
-
-You can find the theme API key on the portal theme customization page. Just expand the *API key for offline development*
-section and copy the key.
-
-.. image:: images/theme_offline-dev.png
-
-.. warning::
-    By generating a new key, you'll also be revoking previous ones. As a result, developers using an old key won't be
-    able to push their work to the platform. Just remember to forward the new key to each developer working on your
-    portal's theme to ensure that development goes uninterrupted.
+.. |icon-reset| image:: images/icon_reset.png
+    :width: 25px
+    :height: 26px

@@ -67,7 +67,7 @@ Page permissions
      * The user may access all pages, regardless of any security parameters set for this user or the pages (for example, the user can access all private pages).
        This permission on its own doesn't grant access to the back office.
    * * Manage own page's security
-     * The user may manage security options and parameters (:doc:`access policy, page-level permissions on defined users and groups</creating_content/01_creating_content_page/managing_page_security>`) for the pages they have the permission to edit.
+     * The user may manage security options and parameters (:doc:`access policy, page-level permissions on defined users and groups</creating_content/02_managing_page_security/managing_page_security>`) for the pages they have the permission to edit.
        This permission on its own doesn't grant access to the back office.
 
 

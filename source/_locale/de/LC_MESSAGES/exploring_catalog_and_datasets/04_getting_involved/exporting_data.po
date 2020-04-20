@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, Opendatasoft
+# Copyright (C) 2020, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -8,15 +8,17 @@
 # Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2019
 # traducteur_DE1 <datawords.translator.de1@gmail.com>, 2019
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
+# Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2019
+# François Dupont <fdupont@datawords.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-15 16:30+0200\n"
+"POT-Creation-Date: 2020-03-02 11:06+0100\n"
 "PO-Revision-Date: 2019-02-20 15:13+0000\n"
-"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019\n"
+"Last-Translator: François Dupont <fdupont@datawords.com>, 2019\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -73,6 +75,7 @@ msgid "KML"
 msgstr "KML"
 
 #: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:18
+#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:23
 msgid "Note"
 msgstr "Hinweis"
 
@@ -86,23 +89,41 @@ msgstr ""
 "/ods-search-v2/#exporting-records>`_ ist es möglich, den Datensatz in "
 "anderen Formaten herunterzuladen."
 
-#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:23
+#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:26
+msgid "There are 2 limitations in Shapefile exports."
+msgstr "Es gibt 2 Einschränkungen für Shapefile-Exporte."
+
+#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:28
+msgid "The export cannot contain more than 50,000 records."
+msgstr "Es können maximal 50.000 Einträge exportiert werden."
+
+#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:29
+msgid ""
+"The export cannot contain more than one geographical shape type (e.g. point,"
+" polygon, linestring etc.). Only the first type of the first non-empty "
+"record will be kept in the export."
+msgstr ""
+"Der Export kann nicht mehrere verschiedene geographische Formen (z. B. "
+"point, polygon, linestring etc.) beinhalten. Nur die zuerst verwendete Form "
+"im ersten nicht leeren Eintrag wird beim Export übernommen."
+
+#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:31
 msgid "Go to the Export tab of the dataset."
 msgstr "Öffnen Sie die Registerkarte \"Export\" des Datensatzes."
 
-#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:24
+#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:32
 msgid "Choose the file format to download."
 msgstr "Wählen Sie das Dateiformat für den Download."
 
-#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:25
+#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:33
 msgid "Click on \"Whole dataset\" next to the chosen format."
 msgstr "Klicken Sie auf \"Ganzer Datensatz\" neben dem gewünschten Format."
 
-#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:27
+#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:35
 msgid "Important"
 msgstr "Wichtig"
 
-#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:30
+#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:38
 msgid ""
 "If the dataset is filtered, it is possible to only download the filtered "
 "data. To do so, click on \"Only the selected records\" instead of \"Whole "
@@ -112,11 +133,11 @@ msgstr ""
 "heruntergeladen werden. Klicken Sie dazu statt auf \"Ganzer Datensatz\" auf "
 "\"Nur ausgewählte Einträge\"."
 
-#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:34
+#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:42
 msgid "Exporting and downloading images"
 msgstr "Bilder exportieren und herunterladen"
 
-#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:36
+#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:44
 msgid ""
 "Images imported into the platform can only be downloaded or exported one by "
 "one. There is no way to download all the images of a dataset at the same "
@@ -126,11 +147,11 @@ msgstr ""
 "heruntergeladen oder exportiert werden. Es gibt keine Möglichkeit, alle "
 "Bilder eines Datensatzes gleichzeitig herunterzuladen."
 
-#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:39
+#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:47
 msgid "Downloading an image"
 msgstr "Ein Bild herunterladen"
 
-#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:41
+#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:49
 msgid ""
 "In the front office, go to the Images visualization tab of the dataset "
 "containing the image(s) to download."
@@ -138,22 +159,22 @@ msgstr ""
 "Öffnen Sie im Front Office die Registerkarte zur Visualisierung der Bilder "
 "des Datensatzes, der das/die herunterzuladenden Bild(er) enthält."
 
-#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:42
+#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:50
 msgid "Click on the image to download."
 msgstr "Klicken Sie auf das Bild, das Sie herunterladen möchten."
 
-#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:43
+#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:51
 msgid ""
 "At the bottom of the image's metadata, click on the Download image button."
 msgstr ""
 "Klicken Sie am Ende der Metadaten des Bildes auf den Button \"Bild "
 "herunterladen\"."
 
-#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:46
+#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:54
 msgid "Exporting dataset to retrieve image URL"
 msgstr "Datensatz exportieren, um die Bild-URL abzurufen"
 
-#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:48
+#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:56
 msgid ""
 "In the front office, go the Export tab of the dataset containing the "
 "image(s) to export."
@@ -161,19 +182,19 @@ msgstr ""
 "Öffnen Sie im Front Office die Registerkarte \"Export\" des Datensatzes, der"
 " das/die zu exportierende(n) Bild(er) enthält."
 
-#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:49
+#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:57
 msgid "Export the whole dataset, or part of it if it's filtered."
 msgstr ""
 "Exportieren Sie den gesamten Datensatz oder einen Teil davon  (wenn er "
 "gefiltert ist)."
 
-#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:50
+#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:58
 msgid "Open the exported dataset in the spreadsheet software of your choice."
 msgstr ""
 "Öffnen Sie den exportierten Datensatz in der gewünschten "
 "Tabellenkalkulationssoftware."
 
-#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:51
+#: ../../source/exploring_catalog_and_datasets/04_getting_involved/exporting_data.rst:59
 msgid "Find the field containing the URLs of the image and retrieve them."
 msgstr ""
 "Suchen Sie das Feld, das die URLs des Bildes enthält und erfassen Sie sie."

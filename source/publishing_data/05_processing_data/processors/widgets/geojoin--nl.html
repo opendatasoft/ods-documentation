@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/opendatasoft/ods-widgets/dist/ods-widgets.css">
+
+<div ng-app="ods-widgets" style="margin-bottom: 26px;">
+<ods-dataset-context context="geojoin" 
+geojoin-dataset="ref-geojoin"
+geojoin-domain="documentation-resources"
+geojoin-parameters="{'disjunctive.english_short':true,
+                    'disjunctive.admin_metas_admin_georef_division':true,
+                    'disjunctive.admin_metas_admin_georef_year':true}">
+
+<div style="width: 30%;float: left;">
+<p style="margin-bottom: 0.4rem; margin-top: 0.4rem;">
+Selecteer een land
+</p>
+<div ods-facet-results="items" 
+ods-facet-results-context="geojoin"
+ods-facet-results-facet-name="english_short" 
+ods-facet-results-sort="alphanum">
+<select ng-model="geojoin.parameters['refine.english_short']"
+    ng-options="item.path as (item.name+' ('+item.count+' referential'+(item.count>1?'s':'')+')') for item in items"
+    ng-selected="geojoin.parameters['refine.english_short'] == item.path">
+<option value="">-- Alle landen --</option>
+</select>
+</div>
+<p style="margin-bottom: 0.4rem; margin-top: 0.4rem;">
+    Selecteer een administratief niveau
+</p>
+<div ods-facet-results="items" 
+ods-facet-results-context="geojoin"
+ods-facet-results-facet-name="admin_metas_admin_georef_division" 
+ods-facet-results-sort="num">
+<select ng-model="geojoin.parameters['refine.admin_metas_admin_georef_division']"
+    ng-options="item.path as ('Level ' +item.name+' ('+item.count+' referential'+(item.count>1?'s':'')+')') for item in items"
+    ng-selected="geojoin.parameters['refine.admin_metas_admin_georef_division'] == item.path">
+<option value="">-- Alle administratieve niveaus --</option>
+</select>
+</div>            
+<p style="margin-bottom: 0.4rem; margin-top: 0.4rem;">
+    Selecteer een jaar
+</p>
+<div ods-facet-results="items" 
+ods-facet-results-context="geojoin"
+ods-facet-results-facet-name="admin_metas_admin_georef_year" 
+ods-facet-results-sort="-num">
+<select ng-model="geojoin.parameters['refine.admin_metas_admin_georef_year']"
+    ng-options="item.path as ('Year ' +item.name+' ('+item.count+' referential'+(item.count>1?'s':'')+')') for item in items"
+    ng-selected="geojoin.parameters['refine.admin_metas_admin_georef_year'] == item.path">
+<option value="">-- Alle jaren --</option>
+</select>
+</div>   
+</div>
+<div style="width: 70%;float: left;">
+    <ods-table context="geojoin" displayed-fields="english_short, repository, admin_metas_admin_georef_label, url, field_label, field_description, admin_metas_admin_georef_attribution"></ods-table>                                  
+</div>    
+
+</ods-dataset-context>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-sanitize.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/opendatasoft/ods-widgets/dist/ods-widgets.js"></script>
+
+</div>

@@ -13,6 +13,7 @@ To add a processor to a dataset:
 1. In the Processing tab, click on the **Add a processor** button.
 2. Choose the processor to add to the dataset.
 3. Using the documentation of the chosen processor, fill in the right parameters to set the processor.
+4. (optional) Click on the edition icon |icon-edit| to rename the processor. This step can especially be useful when a lot of processors are applied to a dataset, including multiple processors of the same type (e.g. renaming the multiple Expression processors applied to a dataset to know more easily which one contains which expression).
 
 .. admonition:: Note
    :class: note
@@ -31,32 +32,34 @@ Geographical processors
 .. toctree::
   :hidden:
 
+  processors/geo_distance
+  processors/convert_degrees
+  processors/create_geopoint
+  processors/decode_google_polyline
+  processors/geocode_with_arcgis
   processors/geocode_with_ban
   processors/geocode_with_google
-  processors/geocode_with_arcgis
   processors/geocode_with_pdok
-  processors/country_code_to_geo_coordinates
-  processors/insee_code_to_geo_coordinates
-  processors/ip_address_to_geo_coordinates
-  processors/zip_code_to_geo_coordinates
-  processors/what3words
-  processors/get_coordinates_from_3_word_address
+  processors/geocode_with_census_bureau
+  processors/geohash_to_geojson
   processors/geojoin
-  processors/retrieve_administrative_divisions
-  processors/convert_degrees
-  processors/normalize_projection_reference
-  processors/wkt_and_wkb_to_geojson
-  processors/simplify_geo_shape
   processors/geomasking
-  processors/geo_distance
-  processors/create_geopoint
+  processors/get_coordinates_from_3_word_address
+  processors/ip_address_to_geo_coordinates
+  processors/nominatim_geocoder
+  processors/normalize_projection_reference
+  processors/polygon_filtering
+  processors/retrieve_administrative_divisions
+  processors/simplify_geo_shape
+  processors/what3words
+  processors/wkt_and_wkb_to_geojson
 
 Geographical processors are divided into 4 categories, according to what is tried to being achieved:
 
-- **Geocoders**: to convert a human readable address into a geo point. There are 10 geocoders.
+- **Geocoders**: to convert a human readable address into a geo point.
 - **GeoJoin processor**: to retrieve geoshapes from normalized codes for country specific administrative divisions. The GeoJoin processor supports several countries, each of which features several indexing codes like postcode, state or region identifier, etc.
 - **Retrieve Administrative Divisions processor**: to retrieve the name, code and geoshape of country specific administrative divisions enclosing a geopoint.
-- **Converters & Functions**: to simplify, convert or normalize geographical data, or run computations based on them. There are 7 processors in this category.
+- **Converters & Functions**: to simplify, convert or normalize geographical data, or run computations based on them.
 
 Geocoders
 ~~~~~~~~~
@@ -67,35 +70,32 @@ Geocoders
   * * Name
     * Description
     * Availability
-  * * :doc:`Geocode with BAN<processors/geocode_with_ban>`
+  * * :doc:`Geocode with ArcGIS<processors/geocode_with_arcgis>`
+    * Geocode full text addresses by using the ArcGIS geocoding API
+    * Default
+  * * :doc:`Geocode with BAN (France)<processors/geocode_with_ban>`
     * Geocode addresses in France by using the Base d'Adresses Nationale (BAN) service
     * Default
   * * :doc:`Geocode with Google<processors/geocode_with_google>`
     * Geocode full text addresses by using the Google geocoding API
     * On demand
-  * * :doc:`Geocode with ArcGIS<processors/geocode_with_arcgis>`
-    * Geocode full text addresses by using the ArcGIS geocoding API
-    * Default
   * * :doc:`Geocode with PDOK<processors/geocode_with_pdok>`
     * Geocode addresses in the Netherlands by using the PDOK service
     * On demand
-  * * :doc:`Country code to geo coordinates<processors/country_code_to_geo_coordinates>`
-    * Produce a geo coordinate with a country ISO code
-    * Default
-  * * :doc:`INSEE code to geo coordinates<processors/insee_code_to_geo_coordinates>`
-    * Produce a geo coordinate with a French INSEE code
-    * Default
+  * * :doc:`Geocode with the Census Bureau (USA)<processors/geocode_with_census_bureau>`
+    * Geocode addresses in the USA by using the Census Bureau
+    * On demand
+  * * :doc:`Get coordinates from a 3 word address<processors/get_coordinates_from_3_word_address>`
+    * Convert a 3 word address into geographical coordinates
+    * On demand
   * * :doc:`IP address to geo coordinates<processors/ip_address_to_geo_coordinates>`
     * Geocode an IP address
     * Default
-  * * :doc:`Zip code to geo coordinates<processors/zip_code_to_geo_coordinates>`
-    * Produce a geo coordinate with a French postal code
-    * Default
+  * * :doc:`Nominatim geocoder <processors/nominatim_geocoder>`
+    * Geocode full-text addresses using OpenStreetMap data
+    * On demand
   * * :doc:`what3words<processors/what3words>`
     * Produce a 3 word address with geographical coordinates
-    * On demand
-  * * :doc:`Geo coordinates from a 3 word address<processors/get_coordinates_from_3_word_address>`
-    * Convert a 3 word address into geographical coordinates
     * On demand
 
 
@@ -136,27 +136,37 @@ Converters & Functions
   * * Name
     * Description
     * Availability
+  * * :doc:`Compute geo distance<processors/geo_distance>`
+    * Compute the distance between 2 coordinates
+    * Default
   * * :doc:`Convert degrees<processors/convert_degrees>`
     * Convert a degrees, minutes, seconds geo coordinate to WGS84 coordinates
-    * Default
-  * * :doc:`Normalize projection reference<processors/normalize_projection_reference>`
-    * Replace a geopoint with its its WGS84 representation
-    * Default
-  * * :doc:`WKT and WKB to GeoJSON<processors/wkt_and_wkb_to_geojson>`
-    * Convert vector geometry object represented in WKT or WKB into a GeoJson object
-    * On demand
-  * * :doc:`Simplify geo shape<processors/simplify_geo_shape>`
-    * Simplify a geo shape to reduce processing time and dataset size
-    * Default
-  * * :doc:`Geomasking<processors/geomasking>`
-    * Provides privacy protection by approximating a geographical location within a specific radius
-    * Default
-  * * :doc:`Geo distance<processors/geo_distance>`
-    * Compute the distance between 2 coordinates
     * Default
   * * :doc:`Create geo point<processors/create_geopoint>`
     * Create a geopoint field from a latitude field and a longitude field
     * Default
+  * * :doc:`Decode a Google polyline <processors/decode_google_polyline>`
+    * Transform an encoded Google polyline into a GeoJSON LineString
+    * On demand
+  * * :doc:`GeoHash to GeoJSON <processors/geohash_to_geojson>`
+    * Convert GeoHash values to GeoJSON
+    * On demand
+  * * :doc:`Geomasking<processors/geomasking>`
+    * Provides privacy protection by approximating a geographical location within a specific radius
+    * Default
+  * * :doc:`Normalize projection reference<processors/normalize_projection_reference>`
+    * Replace a geopoint with its its WGS84 representation
+    * Default
+  * * :doc:`Polygon filtering <processors/polygon_filtering>`
+    * Remove points that are not in a polygon
+    * On demand
+  * * :doc:`Simplify geo shape<processors/simplify_geo_shape>`
+    * Simplify a geo shape to reduce processing time and dataset size
+    * Default
+  * * :doc:`WKT and WKB to GeoJSON<processors/wkt_and_wkb_to_geojson>`
+    * Convert vector geometry object represented in WKT or WKB into a GeoJson object
+    * On demand
+
 
 
 Date processors
@@ -229,7 +239,7 @@ Text processors
   * * :doc:`Replace text<processors/replace_text>`
     * Replace a textual field value with a chosen text
     * Default
-  * * :doc:`Replace via Regexp<processors/replace_via_regexp>`
+  * * :doc:`Replace via regular expression<processors/replace_via_regexp>`
     * Replace a remove part of a field value using a regular expression
     * Default
   * * :doc:`Split text<processors/split_text>`
@@ -245,17 +255,21 @@ Generic processors
 
   processors/add_field
   processors/copy_field
+  processors/deduplicate_multivalued_fields
   processors/delete_record_by_id
   processors/expand_json_array
+  processors/expand_multivalued_field
   processors/expression
   processors/extract_bit_range
   processors/extract_from_json
   processors/file
   processors/join_dataset
   processors/json_array_to_multivalued
+  processors/meta_expression
   processors/skip_records
   processors/transform_boolean_columns_to_multivalued_field
   processors/transpose_fields
+
 
 .. list-table::
   :header-rows: 1
@@ -269,11 +283,17 @@ Generic processors
   * * :doc:`Copy a field<processors/copy_field>`
     * Copy a field value from a field to another
     * Default
+  * * :doc:`Deduplicate multivalued fields <processors/deduplicate_multivalued_fields>`
+    * Remove duplicated values in a multivalued field
+    * Default
   * * :doc:`Delete record by ID<processors/delete_record_by_id>`
     * Remove an existing record, based on its unique ID, from a dataset
     * Default
-  * * :doc:`Expand from JSON array<processors/expand_json_array>`
+  * * :doc:`Expand JSON array<processors/expand_json_array>`
     * Transpose rows containing a JSON array into several rows
+    * Default
+  * * :doc:`Expand multivalued field<processors/expand_multivalued_field>`
+    * Transform the values contained in a multivalued field into several records
     * Default
   * * :doc:`Expression<processors/expression>`
     * Write complex expression patterns using field values
@@ -287,18 +307,29 @@ Generic processors
   * * :doc:`File<processors/file>`
     * Retrieve images from URLs
     * Default
-  * * :doc:`Join dataset<processors/join_dataset>`
+  * * :doc:`Join datasets<processors/join_dataset>`
     * Join 2 datasets together to retrieve a specified field in a dataset
     * Default
   * * :doc:`JSON array to multivalued<processors/json_array_to_multivalued>`
     * Extract multiple values from a JSON array and concatenates them into a multivalued field
     * Default
+  * * :doc:`Meta expression <processors/meta_expression>`
+    * Apply an expression on multiple fields
+    * On demand
   * * :doc:`Skip records<processors/skip_records>`
     * Skip records from a dataset
     * Default
-  * * :doc:`Transform boolean columns to multivalues fields<processors/transform_boolean_columns_to_multivalued_field>`
+  * * :doc:`Transform boolean columns to multivalued field<processors/transform_boolean_columns_to_multivalued_field>`
     * Transform true values from boolean fields into a multivalued field
     * Default
-  * * :doc:`Transpose fields<processors/transpose_fields>`
+  * * :doc:`Transpose columns to rows<processors/transpose_fields>`
     * Transform labels into field values
     * Default
+
+
+
+
+
+.. |icon-edit| image:: icons/edit.png
+    :width: 20px
+    :height: 17px

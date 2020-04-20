@@ -171,6 +171,8 @@ Binary operators
      * String concatenation operator
      * ``'Hello' & ' world'`` returns ``'Hello world'``
 
+
+
 Ternary operator
 ^^^^^^^^^^^^^^^^
 
@@ -192,6 +194,11 @@ The last part of the ternary operator is optional, which means that the followin
 
 - ``'true' ? 'hello'`` returns ``'hello'``
 - ``'false' ? 'hello'`` returns an empty result
+
+.. admonition:: Note
+   :class: note
+
+   Some operations can fail if they involve a field which type was wrongly guessed by the platform at the creation of the dataset, even if the field type was modified afterward. In that case, contact Opendatasoft support team.
 
 Functions
 ~~~~~~~~~
@@ -240,8 +247,8 @@ Text handling
    * * ``contains([text],[text])``, ``startswith([text],[text])``, ``endswith([text],[text])``
      * True if text (1st argument) contains, starts with or ends with text (2nd argument)
      * * ``contains("hello", "l")`` returns ``True``
-       * ``startswith("hello', 'he')`` returns ``True``
-       * ``endswith("hello', 'he')`` returns ``False``
+       * ``startswith("hello", 'he')`` returns ``True``
+       * ``endswith("hello", 'he')`` returns ``False``
 
 
 **Processing functions**
@@ -272,8 +279,18 @@ Text handling
      * Convert a text to its ascii representation
      * ``normalize("你好")`` returns ``"ni hao"``
    * * ``substring([text],[numeric],[numeric])``
-     * Extract a substring of text, starting at index indicated by 2nd argument and of a length indicated by 3rd argument (optional).
+     * Extract a substring of text, starting at index indicated by 2nd argument and of a length indicated by 3rd argument (optional)
      * ``substring('hello', 1, 3)`` returns ``"ell"``
+   * * ``count([text], [text])``
+     * Return the number of times the 2nd argument is found in the 1st argument
+     * ``count("Hello world", "l")`` returns ``3``
+   * * * ``left([text],[numeric])``
+       * ``right([text],[numeric])``
+       * ``mid([text],[numeric])``
+     * Extract a part of text (1st argument), from the left, right or the middle; the size of the extract is given by the 2nd argument for ``left`` and ``right``, by the 2nd and 3rd arguments for ``mid``
+     * * ``left("hello", 2)`` returns ``"he"``
+       * ``right("hello", 3)`` returns ``"llo"``
+       * ``mid("hello", 2, 3)`` returns ``"ell"``
 
 Mathematical functions
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -332,8 +349,8 @@ Date and time handling
    * * Function
      * Description
      * Example
-   * * ``year([datetime])``, ``quarter([datetime])``, ``month([datetime])``, ``day([datetime])``, ``dayofweek([datetime])``, ``hour([datetime])``, ``minute([datetime])``, ``second([datetime])``
-     * Extract the year, quarter, month, day, day of week, hours, minutes, seconds from a datetime
+   * * ``year([datetime])``, ``quarter([datetime])``, ``month([datetime])``, ``week([datetime])``, ``day([datetime])``, ``dayofweek([datetime])``, ``hour([datetime])``, ``minute([datetime])``, ``second([datetime])``
+     * Extract the year, quarter, month, week, day, day of week, hours, minutes, seconds from a datetime
      * * ``year("2014-06-07")`` returns ``2014``
        * ``hour("2014-06-07 17:00")`` returns ``17``
        * ``hour("2014-06-07 17:00", "Europe/Paris")`` returns ``19``

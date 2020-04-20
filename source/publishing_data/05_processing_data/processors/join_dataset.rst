@@ -1,5 +1,5 @@
-Join dataset processor
-======================
+Join datasets processor
+=======================
 
 This processor allows to join 2 datasets together. However, these 2 datasets must have a common field to be joined.
 
@@ -13,7 +13,7 @@ Example: a dataset A could be enriched with more data, which are in a dataset B.
 Setting the processor
 ---------------------
 
-To set the parameters of the Join dataset processor, follow the indications from the table below.
+To set the parameters of the Join datasets processor, follow the indications from the table below.
 
 .. list-table::
   :header-rows: 1
@@ -44,6 +44,15 @@ To set the parameters of the Join dataset processor, follow the indications from
     * no
   * * Separator
     * To fill if One line is set. Specifies the character to use to separate values in the generated field.
+    * no
+  * * Republish all records upon update
+    * Activates scheduling on the dataset, if it is not already activated (see :doc:`Keeping data up to date</publishing_data/03_scheduling_updates/scheduling_updates>`). Once scheduling is configured, this option allows an automatic republish when the remote dataset is updated.
+
+      .. admonition:: Note
+         :class: note
+
+         This option is most useful when the remote dataset is scheduled.
+
     * no
 
 
@@ -239,4 +248,4 @@ Dataset A after being joined with datasets B and C:
      * Kalhausen
      * 57412
 
-Even though the insee_code was not in the same type, the matching happened. The matching worked even for the value ``1262`` in the first dataset (note the absence of leading 0, due to it being an integer value), that matched against the value ``01262`` in the second dataset. While most column types can be retrieved by using the Join dataset processor, file type columns do not yield the actual resource through the processor but instead yield the name of the underlying resource.
+Even though the insee_code was not in the same type, the matching happened. The matching worked even for the value ``1262`` in the first dataset (note the absence of leading 0, due to it being an integer value), that matched against the value ``01262`` in the second dataset. While most column types can be retrieved by using the Join dataset processor, file type columns do not yield the actual resource through the processor but instead yield the identifier of the underlying resource.

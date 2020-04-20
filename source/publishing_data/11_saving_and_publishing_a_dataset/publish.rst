@@ -1,28 +1,30 @@
-Publishing datasets
-===================
+Publishing a dataset
+====================
 
-A dataset has a dedicated life cycle: It's start in the backoffice (not published), you configured the sources, the processors, the security and then you publish it.
-The dataset appears in the frontoffice (according to the security rules).
-When you make modifications on the dataset, they are pushed to the publish version when you click on the *publish* button.
-At any time you can remove a dataset from the by the *unpublish* action,
+Once the dataset is ready, after it was fully configured, it should be published in order to appear in the front office of the portal, where users can discover the published data.
+
+.. admonition:: Warning
+   :class: warning
+
+   Make sure to have properly configured the Security tab beforehand, to avoid the dataset to be accessible by everyone if it actually was supposed to be only accessible by specific users.
+
+In case the dataset has already been published at least once, but has been modified, it needs to be republished for these modifications to be seen in the front office of the portal.
 
 .. image:: images/publish_actions.png
 
-Actions
-~~~~~~~
+To (re)publish a dataset:
 
-* Publish: Make the dataset's modifications live. This action duration can be various, it depends if only metadata have changed or if the dataset schema changed.
-* Unpublish: It removes the dataset from the calalog and all records are deleted. In some case data can be lost (realtime without recovery, specific connectors).
-* Abort: It sends the *abort* order to the processing process. It will leave the dataset in a clean but incomplete state (not all records have been processed).
+1. Click on the Save button.
+2. Click on the Publish button.
+3. (optional) Click on the Explore button to directly access the dataset in the front office, and check the result.
 
-Statuses
-~~~~~~~~
+.. admonition:: Note
+   :class: note
 
-Dataset processing is perform asynchronously to ensure the best performance and no interference with others processing tasks.
-Different status are reachable by a dataset during the processing task.
+   To know more about the possible actions to operate on a dataset, as well as the different statuses of the life cycle of a dataset, refer to :doc:`the Dataset actions and statuses documentation<dataset_actions_status>`.
 
-* Queued: The processing task is waiting to be pick up.
-* Processing: Records are extracted from the connector, processors are applied and the result is made available through the Opendatasoft API. Records number increased during this step.
-* Unpublishing: Dataset is removed from the API.
-* Aborting processing: The *abort* order has been sent to the platform. The dataset processing will stop within the next minute.
-* Limit reached: The user who launched the processing job reached its allowed quota. He overtakes one of the limit (from the domain, the group of the user).
+.. toctree::
+   :maxdepth: 0
+   :hidden:
+
+   dataset_actions_status
