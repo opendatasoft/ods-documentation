@@ -24,21 +24,21 @@ To start translating chosen elements from the dataset:
 
 1. Choose an available language.
 2. For the chosen language, choose whether to translate elements from the Information or the Processing tab.
-3. For the chosen tab, click on the related Edit link. A translation window opens.
+3. For the chosen tab, click on the related Edit link. A translation interface appears.
 
-.. image:: images/translation_window.png
+.. image:: images/translation_interface.png
 
 .. admonition:: Important
    :class: important
 
-   The translation window only enables the translation of elements that have already been configured in the original language. For example, if the Publisher metadata has not been configured in the Information tab, it will not be possible to translate it.
+   The translation interface only enables the translation of elements that have already been configured in the original language. For example, if the Publisher metadata has not been configured in the Information tab, it will not be possible to translate it.
 
-The left side of the translation window displays the elements that can be translated, along with their value in the original language.
+The left side of the translation interface displays the elements that can be translated, along with their value in the original language.
 
 - Untranslated elements are preceded by a grey |icon-cross| icon.
 - Translated elements are preceded by a green |icon-check| icon.
 
-The right side is the translation area. It displays the textboxes where the translations should be written. The translations can either be:
+The right side displays the textboxes where the translations should be written. The translations can either be:
 
 - suggestions proposed by the platform,
 - or, new translations.
@@ -48,23 +48,25 @@ The right side is the translation area. It displays the textboxes where the tran
 
    If an element is not translated, it will appear in the portal in its original value, no matter the language selected by the user.
 
-   If an original element is modified after it has been translated, the translation is automatically removed, to avoid any false translation.
+   If an original element is modified after it has been translated, a notification will be displayed in the Translation tab, as well as in the translation interface. In the latter, one can choose to keep the current translation or modify it.
 
-Managing translations in the translation window
------------------------------------------------
+Managing translations in the translation interface
+--------------------------------------------------
 
 Approving or rejecting translation suggestions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If a value has already been translated in any dataset of the domain, the platform will automatically suggest that translation for the same value. In that case, the suggested translation is automatically proposed in the translation textbox.
+If a value has already been translated in any dataset of the domain, the platform will automatically suggest that translation for the same value. In that case, the suggested translation is automatically written in the translation textbox, as a proposition that can either be validated of rejected.
 
-1. Click |icon-validate| to validate the suggestion, or, click |icon-reject| to reject the suggestion.
+.. image:: images/suggested_translation.png
+
+1. Click *Yes* to validate the suggestion, or, click *No* to reject the suggestion.
 2. Click the Submit button to save the translations.
 
 .. admonition:: Note
    :class: note
 
-   To validate all translations suggestions, click the Validate all suggestions button in the top right hand corner of the translation window.
+   To validate all translations suggestions, click the Validate all suggestions button in the top right hand corner of the translation interface.
 
 Adding new translations
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -73,6 +75,11 @@ If a value has never been translated, or if the translation suggestion was rejec
 
 1. Add new translations in the right textboxes.
 2. Click the Submit button to save the translations.
+
+.. admonition:: Note
+   :class: note
+
+   If the original value should be kept as is (e.g. a producer name), click the |icon-copy-value| button to fill up the translation textbox with that same value.
 
 
 
@@ -93,3 +100,7 @@ If a value has never been translated, or if the translation suggestion was rejec
 .. |icon-reject| image:: images/icon_reject.png
     :width: 19px
     :height: 19px
+
+.. |icon-copy-value| image:: images/icon_copy-value.png
+    :width: 22px
+    :height: 22px
