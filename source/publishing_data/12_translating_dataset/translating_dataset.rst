@@ -1,7 +1,7 @@
 Translating a dataset
 =====================
 
-For domains with more than one language activated in the front office, Opendatasoft allows the translation of specific elements of the datasets, as well as their metadata. When translated, these information appear in the language the user selected to navigate the portal. It should help them understand the dataset as best as possible, even though the data itself is not in their preferred language.
+For domains with more than one language activated in the front office, Opendatasoft allows the translation of specific elements of the datasets, as well as their metadata. When translated, this information appear in the language the user selected to navigate the portal. It should help them understand the dataset as best as possible, even though the data itself is not in their preferred language.
 
 In the Opendatasoft platform, these translations are done in the Translations tab of the edition interface of each dataset.
 
@@ -13,7 +13,7 @@ Choosing elements for translation
 For each available language displayed in the Translations tab, it is possible to translate various elements that have been originally configured in 2 other configuration tabs of the dataset.
 
 - The :doc:`Information tab</publishing_data/06_configuring_metadata/configuring_metadata>`, which contains 4 standard metadata that can be translated: Title, Description, Keywords and Publisher.
-- The :doc:`Processing tab</publishing_data/05_processing_data/processing_data>`, which contains the dataset fields names and descriptions, that can also be translated.
+- The :doc:`Processing tab</publishing_data/05_processing_data/processing_data>`, which contains the dataset fields labels and descriptions, that can also be translated.
 
 .. admonition:: Note
    :class: note
@@ -48,7 +48,7 @@ The right side displays the textboxes where the translations should be written. 
 
    If an element is not translated, it will appear in the portal in its original value, no matter the language selected by the user.
 
-   If an original element is modified after it has been translated, a notification will be displayed in the Translation tab, as well as in the translation interface. In the latter, one can choose to keep the current translation or modify it.
+   If an original element is modified after it has been translated, a notification will be displayed in the Translation tab, as well as in the translation interface. In the latter, one can choose to keep the current translation or modify it. Until this has been done, the original non-translated value will be displayed in the published dataset.
 
 Managing translations in the translation interface
 --------------------------------------------------
