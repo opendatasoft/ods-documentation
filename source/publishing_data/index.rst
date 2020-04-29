@@ -12,6 +12,7 @@ In this section are listed and documented all features related to the upload, co
    04_configuring_a_source/configuring_source
    05_processing_data/processing_data
    06_configuring_metadata/configuring_metadata
+   12_translating_dataset/translating_dataset
    07_configuring_visualizations/index
    08_configuring_dataset_export/configuring_dataset_export
    09_managing_dataset_security/security
