@@ -35,4 +35,6 @@ To activate and configure the geographic filter:
     b. Choose the lowest administrative division available in the geographic filter, using the drop-down selection. Users will be able to refine with administrative divisions comprised between the defined highest and lowest ones.
 
 3. Define the default filter that will be used first when the geographic filter is activated.
-4. Click on the Save button in the top right corner.
+4. (optional) Switch the "Apply the default filter when loading the catalog" toggle button for the default filter to be automatically activated and applied on the catalog at loading.
+5. (optional) Switch the "Display by default all datasets that include the selected territory" toggle button for all datasets related to a chosen territory to be dislayed by default.
+6. Click on the Save button in the top right corner.
