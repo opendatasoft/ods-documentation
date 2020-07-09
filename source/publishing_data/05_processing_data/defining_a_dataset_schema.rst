@@ -271,6 +271,14 @@ Configuration options for text fields
        2. In the text box below, type the separator between the values of the records.
        3. Click outside the text box or press Enter for the change to be taken into account.
 
+   * * Display only for specific languages
+     * This option is only available for domains which support more than one language. It allows to choose whether a field should be displayed for any language, or only specific ones. The configuration of this option affects neither the data itself nor the API, it only affects visualisations in the front office of the platform.
+
+       To make a field displayed for specific languages only:
+
+       1. Tick the "Display only for specific language" box.
+       2. Among the list of languages available for the domain, tick those for which the field should be displayed.
+
 Configuration options for facets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
