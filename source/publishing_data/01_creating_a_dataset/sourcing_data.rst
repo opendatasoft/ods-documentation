@@ -87,6 +87,7 @@ Connecting to an API
 
 Opendatasoft natively supports the following APIs:
 
+* :doc:`Airtable</publishing_data/04_configuring_a_source/connectors/airtable>`
 * :doc:`ArcGIS</publishing_data/04_configuring_a_source/connectors/arcgis>`
 * :doc:`JCDecaux</publishing_data/04_configuring_a_source/connectors/jcdecaux>`
 * :doc:`Salesforce</publishing_data/04_configuring_a_source/connectors/salesforce>`

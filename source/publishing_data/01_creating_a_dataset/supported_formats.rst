@@ -71,6 +71,7 @@ The following table lists the supported formats. Click the link on each connecto
      *
      *
        :doc:`/publishing_data/04_configuring_a_source/connectors/xml`
+       
 
 .. _supportedcompressedformats:
 
