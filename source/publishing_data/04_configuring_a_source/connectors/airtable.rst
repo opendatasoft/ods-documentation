@@ -43,4 +43,4 @@ Configuration
 .. admonition:: Note
    :class: note
    
-   The Airtable Rest API is limited to 5 requests per second per base. Try not to scheldule updates of tables from the same base  all at once.
+   The Airtable Rest API is limited to 5 requests per second per base. Try not to schedule updates of tables from the same base  all at once.
