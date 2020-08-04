@@ -37,7 +37,7 @@ The configuration options of a source entirely depend on the source type, and bo
     * Availability
   * * :doc:`Airtable<connectors/airtable>`
     * Used for data extracted from an Airtable base
-    * Default
+    * On demand
   * * :doc:`ArcGIS<connectors/arcgis>`
     * Used for data extracted from an ArcGIS server
     * Default

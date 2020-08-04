@@ -40,5 +40,7 @@ Configuration
      * Airtable account API key
      * By default, the textbox is extracted from the ``api_key`` field of the URL.
 
-
-The Airtable Rest API is limited to 5 requests per second per base. Try not to scheldule updates of tables from the same base  all at once.
+.. admonition:: Note
+   :class: note
+   
+   The Airtable Rest API is limited to 5 requests per second per base. Try not to scheldule updates of tables from the same base  all at once.
