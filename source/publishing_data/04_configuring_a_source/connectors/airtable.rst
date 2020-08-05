@@ -19,7 +19,7 @@ Creation
 .. admonition:: Note
    :class: note
 
-   In the example `https://api.airtable.com/v0/base_id/table_name?api_key=api_key` the ``base_id`` field stands for the ID of your Airtable database. The ``table_name`` field  stands for the name of the table to import from the database in unicode encoding.
+   In the example `https://api.airtable.com/v0/base_id/table_name?api_key=api_key` the ``base_id`` field stands for the ID of your Airtable database. The ``table_name`` field  stands for the name of the table to import from the database in unicode.
 
 Configuration
 -------------
