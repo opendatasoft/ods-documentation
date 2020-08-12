@@ -12,6 +12,7 @@ The configuration options of a source entirely depend on the source type, and bo
    :hidden:
 
    connectors/arcgis
+   connectors/census
    connectors/csv
    connectors/dataset_of_datasets
    connectors/geojson
@@ -37,6 +38,9 @@ The configuration options of a source entirely depend on the source type, and bo
   * * :doc:`ArcGIS<connectors/arcgis>`
     * Used for data extracted from an ArcGIS server
     * Default
+  * * :doc:`Census<connectors/census>`
+    * Used for data extracted from an Census server
+    * On demand
   * * :doc:`CSV<connectors/csv>`
     * Used for CSV (.csv), TSV (.tsv), Text (.txt) and DAT (.dat) files
     * Default
