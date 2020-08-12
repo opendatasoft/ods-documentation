@@ -1,7 +1,7 @@
-Census connector
-=================
+US Census connector
+===================
 
-The Census connector is used for data extracted from an Census server, using their REST API.
+The US Census connector is used for data extracted from the US Census Bureau's REST API.
 
 Creation
 --------
@@ -38,7 +38,7 @@ Configuration
      * 2014/pep/natstprc
      * timeseries/intltrade/exports/enduse
    * * Variables
-     * The list of variables to extract. If the area is left empty and the number of variables in the dataset is less than 14, the connector will extract all the dataset. Else, the area should at least by filled with required fields (see the dataset documentation).
+     * The list of variables to extract. If the area is left empty and the number of variables in the dataset is less than 14, the connector will extract all the dataset. Else, the area should at least be filled with required fields (see the dataset documentation).
      * Can be left empty
      * Can be : ``DISTRICT,DIST_NAME,ALL_VAL_MO,ALL_VAL_YR`` (TIME and YEAR are required but used for predicates in this example)
    * * Predicates

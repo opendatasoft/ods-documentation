@@ -39,7 +39,7 @@ The configuration options of a source entirely depend on the source type, and bo
     * Used for data extracted from an ArcGIS server
     * Default
   * * :doc:`Census<connectors/census>`
-    * Used for data extracted from an Census server
+    * Used for data extracted from the US Census Bureau's API
     * On demand
   * * :doc:`CSV<connectors/csv>`
     * Used for CSV (.csv), TSV (.tsv), Text (.txt) and DAT (.dat) files
