@@ -17,7 +17,7 @@ The Salesforce connector is used to extract data from the force.com REST API.
 Creation
 ~~~~~~~~
 
-1. Enter ``force://``, followed by the object name (e.g. ``force://GC_MY_Object__c``) in the Enter a URL area, when creating a new dataset.
+1. Enter ``force://``, followed by the targeted object name (e.g. ``force://GC_MY_Object__c``) in the Enter a URL area, when creating a new dataset.
 2. Press Enter, or click the + button.
 
 Configuration
@@ -49,4 +49,4 @@ Configuration
      * By default, the box is not checked. Check the box to use the sandbox.
    * * Filtered Fields
      * Fields to retrieve from the object.
-     * Indicate the name of the field in the textbox. Relationships can be followed with the following notation: ``GC_OBO_Referential__r.Name``.
+     * Indicate the name of the field in the textbox. Relationships can be followed with the following notation: ``GC_OBO_Referential__r.Name``. Indicate the name of a objects to extract all its fields. Left the area empty to extract all the fields of the targeted object.
