@@ -28,7 +28,7 @@ The following font files formats are accepted as assets:
 - .woff
 - .otf
 
-Added files must not exceed 500.0 KB. For larger files, an external file-hosting service should be used.
+Added files must not exceed 700.0 KB. For larger files, an external file-hosting service should be used.
 
 1. Go to the **Assets** section of the back office.
 2. Click on the Fonts tab.
