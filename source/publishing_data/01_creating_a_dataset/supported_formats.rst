@@ -79,7 +79,7 @@ Supported compressed file formats
 
 Opendatasoft also supports compressed file formats. These are useful to save space, since files added to a dataset can't be more than 240Mo. Compressed file formats can also be used in the platform to create a dataset with multiple files (see :doc:`Creating a dataset with multiple files<creating_dataset_with_multiple_files>`)
 
-* .zip
+* .zip (UTF-8 encoding for file names is recommended)
 * .bz2
 * .tar
 * .gz
