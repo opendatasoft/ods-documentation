@@ -11,7 +11,9 @@ The configuration options of a source entirely depend on the source type, and bo
 .. toctree::
    :hidden:
 
+   connectors/airtable
    connectors/arcgis
+   connectors/census
    connectors/csv
    connectors/dataset_of_datasets
    connectors/geojson
@@ -34,9 +36,15 @@ The configuration options of a source entirely depend on the source type, and bo
   * * Name
     * Description & Supported formats
     * Availability
+  * * :doc:`Airtable<connectors/airtable>`
+    * Used for data extracted from an Airtable base
+    * Default
   * * :doc:`ArcGIS<connectors/arcgis>`
     * Used for data extracted from an ArcGIS server
     * Default
+  * * :doc:`Census<connectors/census>`
+    * Used for data extracted from the US Census Bureau's API
+    * On demand
   * * :doc:`CSV<connectors/csv>`
     * Used for CSV (.csv), TSV (.tsv), Text (.txt) and DAT (.dat) files
     * Default
