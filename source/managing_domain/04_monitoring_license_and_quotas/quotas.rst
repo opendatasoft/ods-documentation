@@ -56,3 +56,8 @@ Data Office will need to be able to publish as many datasets as the license allo
 
 In order to do so, you'll have to go to the :doc:`user's management page </managing_domain/01_managing_users_and_groups/users>` or his/her
 :doc:`group management page </managing_domain/01_managing_users_and_groups/groups>` to set a more appropriate limit for his/her use case.
+
+.. admonition:: Important
+   :class: important
+
+   When setting a new quota for individuals users or group of users, the quota count starts back at 0 for the period.
