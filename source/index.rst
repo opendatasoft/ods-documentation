@@ -46,3 +46,4 @@ This documentation is Opendatasoft's reference user manual.
 
    other_resources/pictograms_reference/pictograms_reference
    other_resources/accessibility/accessibility
+   other_resources/languages/languages
