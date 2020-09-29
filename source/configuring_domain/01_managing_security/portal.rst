@@ -90,7 +90,7 @@ When a **SAML** or an **OpenID Connect** identity provider is configured on a do
 
 - A **local user** that authenticates through the organization's identity provider: this user logs in on the domain exclusively via the organization's identity provider, and as it is only available on a specific domain, it can be limited in the use of features relying on the Opendatasoft network. Local users are represented throughout the platform with the |icon-id-card| pictogram.
 
-- A **linked user** that has a standard Opendatasoft account, but associated on this specific domain with an identity from the organization's identity provider. This user is a standard Opendatasoft user that can both authenticate through the Opendatasoft sign-in interface and the organization's identity provider. Since linked users are Opendatasoft users with SAML authentication abilities, they are represented throughout the platform with both the |icon-world| and the |icon-id-card| pictograms.
+- A **linked user** that has a standard Opendatasoft account, but associated on this specific domain with an identity from the organization's identity provider. This user is a standard Opendatasoft user that can both authenticate through the Opendatasoft sign-in interface and the organization's identity provider. Since linked users are Opendatasoft users with ``SAML`` or ``OpenID Connect`` authentication abilities, they are represented throughout the platform with both the |icon-world| and the |icon-id-card| pictograms.
 
 **Local user**
 
@@ -98,7 +98,7 @@ Every user that has a user account on the identity provider trusted by a domain 
 
 These local users have the permission to explore the public datasets of the domain by default. Extra permissions can be given to these users at the domain level, on individual datasets or via groups (other than the ``SAML users`` or ``OpenID Connect users`` groups, of which they are automatically members).
 
-The creation of new local users via an identity provider authentication can be disabled using the "Disable local user provisioning" checkbox in the identity provider configuration (SAML or OpenID Connect) configuration. Disabling local user provisioning will however not prevent existing local users from signing.
+The creation of new local users via an identity provider authentication can be disabled using the "Disable local user provisioning" checkbox in the identity provider configuration (SAML or OpenID Connect) configuration. Disabling local user provisioning will however not prevent existing local users from signing in.
 
 **Linked user**
 
@@ -129,7 +129,7 @@ Default login page selection
 The Opendatasoft platform allows to choose the login page that will be displayed to users when they click on a login link
 or try to access a restricted page.
 
-If the identity provider login page is selected as default, the authentication flow (SAML or OpenID Connect) will be initiated automatically if an anonymous user clicks on the login link or try to access a restricted page like the backoffice. When the Iidentity provider login page is selected, users who wish to connect to the platform using their Opendatasoft credentials have the option to do so by manually visiting the domain login page at ``https://<platform-url>/login/``.
+If the identity provider login page is selected as default, the authentication flow (SAML or OpenID Connect) will be initiated automatically if an anonymous user clicks on the login link or try to access a restricted page like the backoffice. When the identity provider login page is selected, users who wish to connect to the platform using their Opendatasoft credentials have the option to do so by manually visiting the domain login page at ``https://<platform-url>/login/``.
 
 .. image:: images/configuration_SAML-default-login-page.png
     :alt: Default login page selection interface in the security configuration page

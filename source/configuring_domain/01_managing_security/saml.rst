@@ -19,7 +19,7 @@ Register your SAML identity provider on your domain
 
 3. Paste your identity provider metadata document in the "Identity provider metadata document" field.
 
-4. If you're identity provider is Microsoft Azure Active Directory, check the related checkbox.
+4. If your identity provider is Microsoft Azure Active Directory, check the related checkbox.
 
 5. If you would like to disable local user creation, making sure only existing users can connect to the platform through SAML, check the "Disable local user provisioning" checkbox.
 
@@ -64,7 +64,7 @@ You can download the metadata document for your Opendatasoft domain on
 ``https://<YOUR DOMAIN>/saml2/metadata.xml``
 
 
-Single Log Out
---------------
+Single logout
+-------------
 
-The Opendatasoft platform supports the standard SAML Single Log Out flow using the HTTP-Redirect binding. That means that if the identity provider supports it, a log out from a SAML-connected user will trigger a log out from the identity provider, and log out requests from the identity provider will trigger a log out of the user on the platform.
+The Opendatasoft platform supports the standard SAML Single Logout flow using the HTTP-Redirect binding. That means that if the identity provider supports it, a log out from a SAML-connected user will trigger a log out from the identity provider, and log out requests from the identity provider will trigger a log out of the user on the platform.
