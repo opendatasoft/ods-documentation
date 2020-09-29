@@ -8,6 +8,11 @@ Discovering & submitting data reuses
 
 Data reuses are creations based on data from datasets published on an open data portal. They can take many forms: from the map created with the Map Builder (or a chart with the Chart Builder), to the smartphone application, there are many possibilities of data reuses. As a user of an Opendatasoft portal, it is possible to either discover the reuses that others have made, or to submit your very own reuse for it to be displayed on the related portal.
 
+.. admonition:: Note
+   :class: note
+
+   Data reuses need to be :doc:`enabled by administrators </configuring_domain/04_sharing_reusing_communicating/engaging>` to be available.
+
 
 Discovering existing reuses
 ---------------------------
