@@ -28,7 +28,7 @@ Register your OpenID Connect provider on your domain
    - ``end_session_endpoint``
    - ``jwks_uri``
 
-4. If you would like to disable local user creation, making sure only existing users can connect to the platform through OpenID Connect, edit the "Disable local user provisioning" checkbox.
+4. If you would like to disable local user creation, making sure only existing users can connect to the platform through OpenID Connect, check the "Disable local user provisioning" checkbox.
 
 5. Input the application credentials associated with your Opendatasoft domain.
 
@@ -39,7 +39,7 @@ Register your OpenID Connect provider on your domain
 
    Simply copy these credentials in the "Client ID" and "Client secret" fields.
 
-6. If you would like to use JWT tokens to impersonate API calls on the Opendatasoft platform, edit the "Enable direct authentication with JWT bearer tokens" checkbox.
+6. If you would like to use JWT tokens to impersonate API calls on the Opendatasoft platform, check the "Enable direct authentication with JWT bearer tokens" checkbox.
 
 7. List optional additional scopes
 
@@ -56,7 +56,7 @@ Register your OpenID Connect provider on your domain
    stores the `sub` claim. It is possible to store additionnal claims in the user profile. These claims can then be used in
    :doc:`datasets security filters </configuring_domain/01_managing_security/portal>`.
 
-9. Input the URL on which the user can check their user profile on the identity provider. When set, a link to this URL will be shown to the user in their user account page. If left blank, no URL will be shown to the user in their account page.
+9. Input the URL on which the user can edit their user profile on the identity provider. When set, a link to this URL will be shown to the user in their user account page. If left blank, no URL will be shown to the user in their account page.
 
 10. Customize the OpenID Connect login link text. If left blank, a localized default message will be displayed.
 
