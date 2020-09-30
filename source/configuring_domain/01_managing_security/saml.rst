@@ -1,94 +1,33 @@
-Federate identity with SAML
-===========================
+Single sign-on with SAML
+========================
 
 .. admonition:: Caution
    :class: caution
 
    The availability of this feature depends on the license of the Opendatasoft domain.
 
-Some organizations already have a user directory service that manages their users authentication and permission, and see little value in using the built in Opendatasoft user management features.
 
-In order to address this use case, the Opendatasoft platform supports external Identity Providers (IdP) through the SAMLv2 standard. This allows for setting up an identity federation between a domain, which will act as a service provider, and this IdP. This federation allows users of a domain to connect to the platform using the identity provider, and if they have one, reuse their active security context to create a SSO mechanism.
-
-When a SAML identity provider is configured on a domain, a user can belong in 3 categories.
-
-- A standard **Opendatasoft user** that was invited by e-mail or signed-up on a domain: this user logs in on the domain using the standard sign-in interface with their usual Opendatasoft username and password, and the account is accessible on the whole Opendatasoft network. Opendatasoft users are represented throughout the platform with the |icon-world| pictogram.
-
-- A **local user** that authenticates through the organization's IdP: this user logs in on the domain exclusively via the organization's IdP, and as it is only available on a specific domain, it can be limited in the use of features relying on the Opendatasoft network. Local users are represented throughout the platform with the |icon-id-card| pictogram.
-
-- A **linked user** that has a standard Opendatasoft account, but associated on this specific domain with an identity from the organization's IdP. This user is a standard Opendatasoft user that can both authenticate through the Opendatasoft sign-in interface and the organization's IdP. Since linked users are Opendatasoft users with SAML authentication abilities, they are represented throughout the platform with both the |icon-world| and the |icon-id-card| pictograms.
-
-Local user
-----------
-
-Every user that has a user account on the IdP trusted by a domain and doesn't have an Opendatasoft user account can connect through SAML. On first connection, a local user will be created for the user based on the domain's SAML settings.
-
-These settings are:
-
-- the **account mapper**: a set of IdP-sent parameters that uniquely identify a user,
-- the **attribute mapper**: the parameters that correspond to the user first name, last name and email address.
-
-These local users have the permission to explore the public datasets of the domain by default. Extra permissions can be given to these users at the domain level, on individual datasets or via groups (other than the ``SAML users`` group, of which they are automatic members).
-
-The creation of new local users via an IdP authentication can be disabled using the "Disable local user provisioning" checkbox in the SAML configuration. Disabling local user provisioning will not prevent existing local users from signing in using SAML.
-
-Linked user
------------
-
-Users that have an Opendatasoft user account can link this account to particular values of the set of parameters defined in the account mapper setting.
-
-After the link has been established, users who log in through SAML will be logged in to their Opendatasoft user account. Linked users may be assigned the any permissions and added to groups just like any users and are considered as Opendatasoft users. They are also automatic members of the ``SAML users`` group.
-
-This mode allows any user to have an Opendatasoft account, but still connect through SAML on a specific domain.
-
-There are 2 methods for linking an Opendatasoft user account:
-
-- the first one is to click on ``Link your account to a SAML account on this domain`` in the identity tab of the user account settings:
-
-.. image:: /managing_account/07_managing_identities/images/account_identities.png
-    :alt: "Link your account to a SAML account on this domain" link in the identity tab of the user account settings
-
-- the other method is to create the link during the user account creation process by clicking the link to complete the registration through SAML. This actually speeds up the user account creation process and allows for a quick account linking:
-
-.. image:: images/saml__validation-link--en.png
-    :alt: Account registration in SAML enabled domains
-
-Default login page selection
-----------------------------
-
-The Opendatasoft platform allows to choose the login page that will be displayed to users when they click on a login link
-or try to access a restricted page.
-
-If the IdP login page is selected as default, the SAML authentication flow will be initiated automatically if an anonymous user clicks on the login link or try to access a restricted page like the backoffice. When the IdP login page is selected, users who wish to connect to the platform using their Opendatasoft credentials have the option to do so by manually visiting the domain login page at ``https://<platform-url>/login/``.
-
-
-Single Log Out
---------------
-
-The Opendatasoft platform supports the standard SAML Single Log Out flow using the HTTP-Redirect binding. That means that if the IdP supports it, a log out from a SAML-connected user will trigger a log out from the IdP, and log out requests from the IdP will trigger a log out of the user on the platform.
-
-
-Register and configure an identity provider
--------------------------------------------
+Register your SAML identity provider on your domain
+---------------------------------------------------
 
 1. Navigate to the signup page in the domain configuration interface.
 
 2. Check "Allow access for SAML users"
 
 .. image:: images/configuration_SAML.png
-    :alt: SAML IDP configuration interface
+    :alt: SAML identity provider configuration interface
 
-3. Paste your identity provider metadata document in the "IDP metadata document" field.
+3. Paste your identity provider metadata document in the "Identity provider metadata document" field.
 
-4. If you are using Microsoft Azure Active Directory as an IDP, check the related checkbox.
+4. If your identity provider is Microsoft Azure Active Directory, check the related checkbox.
 
-5. If you wish to disable local user creation, making sure only existing users can connect to the platform through SAML, check the "Disable local user provisioning" checkbox.
+5. If you would like to disable local user creation, making sure only existing users can connect to the platform through SAML, check the "Disable local user provisioning" checkbox.
 
-6. Input the set of attributes sent by the IDP that uniquely define a user.
+6. Input the set of attributes sent by the identity provider that uniquely define a user.
 
-   If the users are defined by their NameID and the NameID format used by your IdP is not transient, there is no need to fill anything.
+   If the users are defined by their NameID and the NameID format used by your identity provider is not transient, there is no need to fill anything.
 
-   For instance, if your users are defined by the attribute "FirstName" and "LastName" transmitted by your IdP, first input "FirstName" in the box and press enter, then "LastName" and press enter again.
+   For instance, if your users are defined by the attribute "FirstName" and "LastName" transmitted by your identity provider, first input "FirstName" in the box and press enter, then "LastName" and press enter again.
 
 7. Input the attributes mappings for the username, last name, first name and email address.
 
@@ -104,209 +43,28 @@ Register and configure an identity provider
 
    The first box is the name of the attribute to check for, and the second one the value of that attribute.
    If you just want to check for the presence of an attribute, without value restriction, just leave the second box blank.
-   If both fields are left blank no condition is set and any successful login on the IdP side will trigger a login on your Opendatasoft domain.
+   If both fields are left blank no condition is set and any successful login on the identity provider side will trigger a login on your Opendatasoft domain.
 
    For instance, if your identity provider sends a list of "Roles" for the users and you want to make sure that only users that have a role can get access, input "Roles" in the first box under "Conditionnal access". If you only want users with the role "DataAccess" to be able to connect to the domain, input "DataAccess" in the second box.
 
-9. Input the URL on which the user can check their user profile on the IdP. When set, a link to this URL will be shown to the user in their user account page. If left blank, no URL will be shown to the user in their account page.
+9. Input the URL on which the user can check their user profile on the identity provider. When set, a link to this URL will be shown to the user in their user account page. If left blank, no URL will be shown to the user in their account page.
 
-10. Input a custom EntityID for the Service Provider. If left blank the URL of the Service Provider metadata document will be used as the EntityID. If your IdP doesn't support EntityIDs in URL format, you can set any EntityID here.
+10. Input a custom EntityID for the Service Provider. If left blank the URL of the Service Provider metadata document will be used as the EntityID. If your identity provider doesn't support EntityIDs in URL format, you can set any EntityID here.
 
 11. Customize the SAML login link text. If left blank, a localized default message will be displayed.
 
-12. Optionally configure the default login page
 
-   The default login page configuration can be found by navigating to the security page in the domain configuration interface.
-
-.. image:: images/configuration_SAML-default-login-page.png
-    :alt: Default login page selection interface in the security configuration page
-
-Configure your identity provider
---------------------------------
+Register your domain on your identity provider
+----------------------------------------------
 
 The configuration of the identity provider is implementation-dependant, but it always consist of importing the service
 provider metadata document to enable a identity federation.
 
 You can download the metadata document for your Opendatasoft domain on
-``https://<YOUR DOMAIN>.opendatasoft.com/saml2/metadata.xml``
+``https://<YOUR DOMAIN>/saml2/metadata.xml``
 
 
-Using user attributes to filter data
-------------------------------------
+Single logout
+-------------
 
-Through the #attr function, it is possible to filter a dataset records in such a way that the only records returned are the ones that match a value set in the user attributes sent by the IdP. For the following examples, we assume that we have the 3 users, with respective usernames and SAML attributes ``user-country`` and ``user-language`` given by the following table.
-
-.. list-table::
-   :header-rows: 1
-
-   * * User
-     * user-country
-     * user-language
-   * * User1
-     * France
-     * French
-   * * User2
-     * Canada
-     * French
-   * * User3
-     * United States
-     * English
-
-
-And a dataset with records given by the following table.
-
-.. list-table::
-   :header-rows: 1
-
-   * * country
-     * language
-     * message
-   * * Worldwide
-     * English
-     * Hello world
-   * * France
-     * French
-     * Bonjour à tous les Français
-   * * Canada
-     * French
-     * Bonjour à tous les Canadiens
-   * * Canada
-     * English
-     * Hello to all Canadians
-   * * United States
-     * English
-     * Hello to all Americans
-
-We can restrict these users so that they see only messages that apply to their respective countries, with the query ``#attr(country, user-country)``.
-
-User1 sees
-
-.. list-table::
-   :header-rows: 1
-
-   * * country
-     * language
-     * message
-   * * France
-     * French
-     * Bonjour à tous les Français
-
-User2 sees
-
-.. list-table::
-   :header-rows: 1
-
-   * * country
-     * language
-     * message
-   * * Canada
-     * French
-     * Bonjour à tous les Canadiens
-   * * Canada
-     * English
-     * Hello to all Canadians
-
-User3 sees
-
-.. list-table::
-   :header-rows: 1
-
-   * * country
-     * language
-     * message
-   * * United States
-     * English
-     * Hello to all Americans
-
-We can also restrict these users so that they only see messages that are in their respective language, with the query ``#attr(language, user-language)``.
-
-User1 sees
-
-.. list-table::
-   :header-rows: 1
-
-   * * country
-     * language
-     * message
-   * * France
-     * French
-     * Bonjour à tous les Français
-   * * Canada
-     * French
-     * Bonjour à tous les Canadiens
-
-User2 sees
-
-.. list-table::
-   :header-rows: 1
-
-   * * country
-     * language
-     * message
-   * * France
-     * French
-     * Bonjour à tous les Français
-   * * Canada
-     * French
-     * Bonjour à tous les Canadiens
-
-User3 sees
-
-.. list-table::
-   :header-rows: 1
-
-   * * country
-     * language
-     * message
-   * * Worldwide
-     * English
-     * Hello world
-   * * United States
-     * English
-     * Hello to all Americans
-
-Since it is a function of the query language, it can also be grouped with the usual operators, for instance, we can restrict users to only seeing messages that fit their country and languages with the query ``#attr(language, user-language) AND #attr(country, user-country)``.
-
-User1 sees
-
-.. list-table::
-   :header-rows: 1
-
-   * * country
-     * language
-     * message
-   * * France
-     * French
-     * Bonjour à tous les Français
-
-User2 sees
-
-.. list-table::
-   :header-rows: 1
-
-   * * country
-     * language
-     * message
-   * * Canada
-     * French
-     * Bonjour à tous les Canadiens
-
-User3 sees
-
-.. list-table::
-   :header-rows: 1
-
-   * * country
-     * language
-     * message
-   * * United States
-     * English
-     * Hello to all Americans
-
-.. |icon-world| image:: images/icon_world.png
-    :width: 16px
-    :height: 16px
-
-.. |icon-id-card| image:: images/icon_id_card.png
-    :width: 16px
-    :height: 16px
+The Opendatasoft platform supports the standard SAML Single Logout flow using the HTTP-Redirect binding. That means that if the identity provider supports it, a log out from a SAML-connected user will trigger a log out from the identity provider, and log out requests from the identity provider will trigger a log out of the user on the platform.

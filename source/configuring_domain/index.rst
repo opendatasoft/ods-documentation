@@ -11,6 +11,7 @@ Managing security
 
    01_managing_security/portal
    01_managing_security/saml
+   01_managing_security/oidc
 
 Managing legal information
 --------------------------
