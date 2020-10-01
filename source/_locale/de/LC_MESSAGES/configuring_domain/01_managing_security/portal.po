@@ -2,26 +2,27 @@
 # Copyright (C) 2020, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # traducteur_DE2 <datawords.translator.de2@gmail.com>, 2018
 # Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2018
-# traducteur_DE1 <datawords.translator.de1@gmail.com>, 2018
-# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
-# 
+# traducteur_DE1 <datawords.translator.de1@gmail.com>, 2020
+# Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2020
+# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2020
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-16 17:50+0200\n"
+"POT-Creation-Date: 2020-09-30 12:03+0200\n"
 "PO-Revision-Date: 2018-06-27 09:08+0000\n"
-"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019\n"
+"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2020\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/configuring_domain/01_managing_security/portal.rst:2
@@ -161,38 +162,11 @@ msgstr ""
 "Nachricht für den Portal-Administrator hinterlassen (sinnvoll, wenn Sie die "
 "Zugangsanfrage von Hand genehmigen möchten)."
 
-#: ../../source/configuring_domain/01_managing_security/portal.rst:62
-msgid "Granting access for all of your organisation's members"
-msgstr "Zugangsberechtigung für alle Ihre Organisationsmitglieder"
-
-#: ../../source/configuring_domain/01_managing_security/portal.rst:64
-msgid ""
-"If your organisation already has its own credentials management system, you "
-"can set up a bridge between your identity provider and your Opendatasoft "
-"portal. This will give general access to your portal (no specific rights) to"
-" each of your organisation's members."
+#: ../../source/configuring_domain/01_managing_security/portal.rst:63
+msgid "User session timeout"
 msgstr ""
-"Falls Ihre Organsiation bereits ihr eigenes Verwaltungssystem für die "
-"Anmeldeinformationen besitzt, können Sie eine Brücke zwischen Ihrem "
-"Identity-Provider und Ihrem Opendatasoft-Portal einrichten. Dies ermöglicht "
-"jedem Ihrer Organisationsmitglieder allgemeinen Zugang zu Ihrem Portal "
-"(keine spezifischen Rechte)."
 
-#: ../../source/configuring_domain/01_managing_security/portal.rst:68
-msgid ""
-"You'll find more information about setting up such a bridge on the "
-":doc:`SAML configuration documentation page "
-"</configuring_domain/01_managing_security/saml>`."
-msgstr ""
-"Weitere Informationen zum Einrichten einer solchen Brücke finden Sie auf der"
-" :doc:`Dokumentationsseite zur SAML-Konfiguration "
-"</configuring_domain/01_managing_security/saml>`."
-
-#: ../../source/configuring_domain/01_managing_security/portal.rst:71
-msgid "Configuring the users' authenticated sessions timeout"
-msgstr "Die Zeitlimits für authentifizierte Benutzer-Sitzungen konfigurieren"
-
-#: ../../source/configuring_domain/01_managing_security/portal.rst:73
+#: ../../source/configuring_domain/01_managing_security/portal.rst:65
 msgid ""
 "By default, all authenticated users are automatically logged out after a "
 "2-week inactivity period. This duration can be changed in the "
@@ -202,7 +176,7 @@ msgstr ""
 "Inaktivität automatisch abgemeldet. Diese Dauer kann im Backoffice unter "
 "**Konfiguration/Sicherheit** geändert werden."
 
-#: ../../source/configuring_domain/01_managing_security/portal.rst:76
+#: ../../source/configuring_domain/01_managing_security/portal.rst:68
 msgid ""
 "Note that every user request to the portal resets the timeout, so sessions "
 "can actually last longer than the timeout duration."
@@ -210,3 +184,440 @@ msgstr ""
 "Bei jeder Benutzeranforderung an das Portal wird das Zeitlimit "
 "zurückgesetzt. Deshalb kann die Sitzungsdauer über das eingestellte "
 "Zeitlimit hinausgehen."
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:73
+msgid "Single sign-on"
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:75
+msgid ""
+"If your organisation already has its own identity management system, you can"
+" set up a bridge between your identity provider and your Opendatasoft "
+"portal. This will give general access to your portal to each of your "
+"organisation's members."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:79
+msgid "Opendatasoft supports two types of identity providers:"
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:81
+msgid ""
+":doc:`SAML 2.0 ready identity providers "
+"</configuring_domain/01_managing_security/saml>`"
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:82
+msgid ""
+":doc:`OpenID Connect ready identity providers "
+"</configuring_domain/01_managing_security/oidc>`"
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:85
+msgid "About local users and linked users"
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:87
+msgid ""
+"When a **SAML** or an **OpenID Connect** identity provider is configured on "
+"a domain, a user can belong to 3 categories."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:89
+msgid ""
+"A standard **Opendatasoft user** that was invited by e-mail or signed-up on "
+"a domain: this user logs in on the domain using the standard sign-in "
+"interface with their usual Opendatasoft username and password, and the "
+"account is accessible on the whole Opendatasoft network. Opendatasoft users "
+"are represented throughout the platform with the |icon-world| pictogram."
+msgstr ""
+"Ein standardmäßiger **Opendatasoft-Nutzer**, der per E-Mail eingeladen wurde"
+" oder sich auf einer Domain registriert hat: Dieser Benutzer meldet sich "
+"über die Standard-Anmeldeoberfläche mit seinem üblichen Opendatasoft-"
+"Benutzernamen und Passwort an. Das Konto ist im gesamten Opendatasoft-"
+"Netzwerk verfügbar. Opendatasoft-Nutzer sind auf der gesamten Plattform mit "
+"dem Piktogramm |icon-world| gekennzeichnet."
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:91
+msgid ""
+"A **local user** that authenticates through the organization's identity "
+"provider: this user logs in on the domain exclusively via the organization's"
+" identity provider, and as it is only available on a specific domain, it can"
+" be limited in the use of features relying on the Opendatasoft network. "
+"Local users are represented throughout the platform with the |icon-id-card| "
+"pictogram."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:93
+msgid ""
+"A **linked user** that has a standard Opendatasoft account, but associated "
+"on this specific domain with an identity from the organization's identity "
+"provider. This user is a standard Opendatasoft user that can both "
+"authenticate through the Opendatasoft sign-in interface and the "
+"organization's identity provider. Since linked users are Opendatasoft users "
+"with ``SAML`` or ``OpenID Connect`` authentication abilities, they are "
+"represented throughout the platform with both the |icon-world| and the "
+"|icon-id-card| pictograms."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:95
+msgid "**Local user**"
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:97
+msgid ""
+"Every user that has a user account on the identity provider trusted by a "
+"domain and doesn't have an Opendatasoft user account can connect through. "
+"During the first connection, a local user will be created for the user based"
+" on the domain's identity provider settings."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:99
+msgid ""
+"These local users have the permission to explore the public datasets of the "
+"domain by default. Extra permissions can be given to these users at the "
+"domain level, on individual datasets or via groups (other than the ``SAML "
+"users`` or ``OpenID Connect users`` groups, of which they are automatically "
+"members)."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:101
+msgid ""
+"The creation of new local users via an identity provider authentication can "
+"be disabled using the \"Disable local user provisioning\" checkbox in the "
+"identity provider configuration (SAML or OpenID Connect) configuration. "
+"Disabling local user provisioning will however not prevent existing local "
+"users from signing in."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:103
+msgid "**Linked user**"
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:105
+msgid ""
+"Users that have an Opendatasoft user account can link this account to "
+"another account at the identity provider. This procedure is called account "
+"linking."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:107
+msgid ""
+"After the link has been established, linked users who log in through through"
+" their identity provider will be logged in to their Opendatasoft user "
+"account. They'll still be able to lo in with their Opendatasoft password "
+"though."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:109
+msgid "There are 2 methods for linking an Opendatasoft user account:"
+msgstr ""
+"Es gibt zwei Möglichkeiten, um ein Opendatasoft-Benutzerkonto zu verknüpfen:"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:111
+msgid ""
+"The first one is to click on ``Link your account to a SAML account on this "
+"domain`` or ``Link your account to an OpenID connect account on this "
+"domain`` in the identity tab of the user account settings:"
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:116
+msgid ""
+"The other method is to create the link during the user account creation "
+"process by clicking the link to complete the registration through SAML. This"
+" actually speeds up the user account creation process and allows for a quick"
+" account linking:"
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:121
+msgid "Note"
+msgstr "Hinweis"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:124
+msgid "Linking during sign-in is only supported with SAML identity providers."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:127
+msgid "Default login page selection"
+msgstr "Auswahl der standardmäßigen Anmeldeseite"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:129
+msgid ""
+"The Opendatasoft platform allows to choose the login page that will be "
+"displayed to users when they click on a login link or try to access a "
+"restricted page."
+msgstr ""
+"Die Opendatasoft-Plattform ermöglicht die Auswahl der Anmeldeseite, die den "
+"Benutzern angezeigt wird, wenn sie auf einen Anmelde-Link klicken oder "
+"versuchen, auf eine eingeschränkte Seite zuzugreifen."
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:132
+msgid ""
+"If the identity provider login page is selected as default, the "
+"authentication flow (SAML or OpenID Connect) will be initiated automatically"
+" if an anonymous user clicks on the login link or try to access a restricted"
+" page like the backoffice. When the identity provider login page is "
+"selected, users who wish to connect to the platform using their Opendatasoft"
+" credentials have the option to do so by manually visiting the domain login "
+"page at ``https://<platform-url>/login/``."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:139
+msgid "Using user attributes to filter data"
+msgstr "Benutzerattribute zum Filtern von Daten vewenden"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:141
+msgid ""
+"Users which have been logged in through identity federation (SAML 2.0 or "
+"OpenID Connect) may have been set specific profile attributes. These "
+"attributes can be used to filter the content of the datasets these users can"
+" access."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:144
+msgid ""
+"To do so, you can edit the :doc:`security configuration "
+"</publishing_data/09_managing_dataset_security/security>` of a specific "
+"dataset and use the #attr function in the filter query of the **SAML** or "
+"**OpenID Connect** security  group attached to the dataset. This way, users "
+"belonging to these groupes will only be able to see dataset records which "
+"match the filtering query as explained below."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:148
+msgid ""
+"Through the #attr function, it is possible to filter dataset records in such"
+" a way that the only records returned are the ones that match a value set in"
+" the user attributes sent by the identity provider. For the following "
+"examples, we assume that we have the 3 users, with respective usernames and "
+"SAML attributes ``user-country`` and ``user-language`` given by the "
+"following table."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:155
+msgid "User"
+msgstr "Benutzer"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:158
+msgid "User1"
+msgstr "Benutzer1"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:159
+#: ../../source/configuring_domain/01_managing_security/portal.rst:180
+#: ../../source/configuring_domain/01_managing_security/portal.rst:203
+#: ../../source/configuring_domain/01_managing_security/portal.rst:244
+#: ../../source/configuring_domain/01_managing_security/portal.rst:259
+#: ../../source/configuring_domain/01_managing_security/portal.rst:291
+msgid "France"
+msgstr "Frankreich"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:160
+#: ../../source/configuring_domain/01_managing_security/portal.rst:163
+#: ../../source/configuring_domain/01_managing_security/portal.rst:181
+#: ../../source/configuring_domain/01_managing_security/portal.rst:184
+#: ../../source/configuring_domain/01_managing_security/portal.rst:204
+#: ../../source/configuring_domain/01_managing_security/portal.rst:216
+#: ../../source/configuring_domain/01_managing_security/portal.rst:245
+#: ../../source/configuring_domain/01_managing_security/portal.rst:248
+#: ../../source/configuring_domain/01_managing_security/portal.rst:260
+#: ../../source/configuring_domain/01_managing_security/portal.rst:263
+#: ../../source/configuring_domain/01_managing_security/portal.rst:292
+#: ../../source/configuring_domain/01_managing_security/portal.rst:304
+msgid "French"
+msgstr "Französisch"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:161
+msgid "User2"
+msgstr "Benutzer2"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:162
+#: ../../source/configuring_domain/01_managing_security/portal.rst:183
+#: ../../source/configuring_domain/01_managing_security/portal.rst:186
+#: ../../source/configuring_domain/01_managing_security/portal.rst:215
+#: ../../source/configuring_domain/01_managing_security/portal.rst:218
+#: ../../source/configuring_domain/01_managing_security/portal.rst:247
+#: ../../source/configuring_domain/01_managing_security/portal.rst:262
+#: ../../source/configuring_domain/01_managing_security/portal.rst:303
+msgid "Canada"
+msgstr "Kanada"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:164
+msgid "User3"
+msgstr "Benutzer3"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:165
+#: ../../source/configuring_domain/01_managing_security/portal.rst:189
+#: ../../source/configuring_domain/01_managing_security/portal.rst:230
+#: ../../source/configuring_domain/01_managing_security/portal.rst:277
+#: ../../source/configuring_domain/01_managing_security/portal.rst:315
+msgid "United States"
+msgstr "Vereinigte Staaten"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:166
+#: ../../source/configuring_domain/01_managing_security/portal.rst:178
+#: ../../source/configuring_domain/01_managing_security/portal.rst:187
+#: ../../source/configuring_domain/01_managing_security/portal.rst:190
+#: ../../source/configuring_domain/01_managing_security/portal.rst:219
+#: ../../source/configuring_domain/01_managing_security/portal.rst:231
+#: ../../source/configuring_domain/01_managing_security/portal.rst:275
+#: ../../source/configuring_domain/01_managing_security/portal.rst:278
+#: ../../source/configuring_domain/01_managing_security/portal.rst:316
+msgid "English"
+msgstr "Englisch"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:169
+msgid "And a dataset with records given by the following table."
+msgstr "Und einen Datensatz mit Einträgen laut folgender Tabelle."
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:177
+#: ../../source/configuring_domain/01_managing_security/portal.rst:274
+msgid "Worldwide"
+msgstr "Weltweit"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:179
+#: ../../source/configuring_domain/01_managing_security/portal.rst:276
+msgid "Hello world"
+msgstr "Hallo allerseits"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:182
+#: ../../source/configuring_domain/01_managing_security/portal.rst:205
+#: ../../source/configuring_domain/01_managing_security/portal.rst:246
+#: ../../source/configuring_domain/01_managing_security/portal.rst:261
+#: ../../source/configuring_domain/01_managing_security/portal.rst:293
+msgid "Bonjour à tous les Français"
+msgstr "Bonjour à tous les Français"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:185
+#: ../../source/configuring_domain/01_managing_security/portal.rst:217
+#: ../../source/configuring_domain/01_managing_security/portal.rst:249
+#: ../../source/configuring_domain/01_managing_security/portal.rst:264
+#: ../../source/configuring_domain/01_managing_security/portal.rst:305
+msgid "Bonjour à tous les Canadiens"
+msgstr "Bonjour à tous les Canadiens"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:188
+#: ../../source/configuring_domain/01_managing_security/portal.rst:220
+msgid "Hello to all Canadians"
+msgstr "Hello to all Canadians"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:191
+#: ../../source/configuring_domain/01_managing_security/portal.rst:232
+#: ../../source/configuring_domain/01_managing_security/portal.rst:279
+#: ../../source/configuring_domain/01_managing_security/portal.rst:317
+msgid "Hello to all Americans"
+msgstr "Hello to all Americans"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:193
+msgid ""
+"We can restrict these users so that they see only messages that apply to "
+"their respective countries, with the query ``#attr(country, user-country)``."
+msgstr ""
+"Mit der Anfrage ``#attr(country, user-country)`` können wir Beschränkungen "
+"für diese Benutzer festlegen, damit sie nur für ihr jeweiliges Land geltende"
+" Nachrichten sehen."
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:195
+#: ../../source/configuring_domain/01_managing_security/portal.rst:236
+#: ../../source/configuring_domain/01_managing_security/portal.rst:283
+msgid "User1 sees"
+msgstr "Benutzer1 sieht"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:207
+#: ../../source/configuring_domain/01_managing_security/portal.rst:251
+#: ../../source/configuring_domain/01_managing_security/portal.rst:295
+msgid "User2 sees"
+msgstr "Benutzer2 sieht"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:222
+#: ../../source/configuring_domain/01_managing_security/portal.rst:266
+#: ../../source/configuring_domain/01_managing_security/portal.rst:307
+msgid "User3 sees"
+msgstr "Benutzer3 sieht"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:234
+msgid ""
+"We can also restrict these users so that they only see messages that are in "
+"their respective language, with the query ``#attr(language, user-"
+"language)``."
+msgstr ""
+"Mit der Anfrage ``#attr(language, user-language)`` können wir auch "
+"Beschränkungen für diese Benutzer festlegen, damit sie nur Nachrichten in "
+"ihrer jeweiligen Sprache sehen."
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:281
+msgid ""
+"Since it is a function of the query language, it can also be grouped with "
+"the usual operators, for instance, we can restrict users to only seeing "
+"messages that fit their country and languages with the query "
+"``#attr(language, user-language) AND #attr(country, user-country)``."
+msgstr ""
+"Da dies eine Funktion der Anfragensprache ist, kann sie auch mit den "
+"üblichen Operatoren gruppiert werden. Zum Beispiel können wir mit der "
+"Anfrage ``#attr(language, user-language) AND #attr(country, user-country)`` "
+"Beschränkungen für Benutzer festlegen, damit sie nur Nachrichten sehen, die "
+"ihrem Land und ihrer Sprache entsprechen."
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:156
+#, fuzzy
+msgid "``user-country``"
+msgstr "Benutzerland"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:157
+#, fuzzy
+msgid "``user-language``"
+msgstr "Benutzersprache"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:174
+#: ../../source/configuring_domain/01_managing_security/portal.rst:200
+#: ../../source/configuring_domain/01_managing_security/portal.rst:212
+#: ../../source/configuring_domain/01_managing_security/portal.rst:227
+#: ../../source/configuring_domain/01_managing_security/portal.rst:241
+#: ../../source/configuring_domain/01_managing_security/portal.rst:256
+#: ../../source/configuring_domain/01_managing_security/portal.rst:271
+#: ../../source/configuring_domain/01_managing_security/portal.rst:288
+#: ../../source/configuring_domain/01_managing_security/portal.rst:300
+#: ../../source/configuring_domain/01_managing_security/portal.rst:312
+msgid "``country``"
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:175
+#: ../../source/configuring_domain/01_managing_security/portal.rst:201
+#: ../../source/configuring_domain/01_managing_security/portal.rst:213
+#: ../../source/configuring_domain/01_managing_security/portal.rst:228
+#: ../../source/configuring_domain/01_managing_security/portal.rst:242
+#: ../../source/configuring_domain/01_managing_security/portal.rst:257
+#: ../../source/configuring_domain/01_managing_security/portal.rst:272
+#: ../../source/configuring_domain/01_managing_security/portal.rst:289
+#: ../../source/configuring_domain/01_managing_security/portal.rst:301
+#: ../../source/configuring_domain/01_managing_security/portal.rst:313
+#, fuzzy
+msgid "``language``"
+msgstr "Sprache"
+
+#: ../../source/configuring_domain/01_managing_security/portal.rst:176
+#: ../../source/configuring_domain/01_managing_security/portal.rst:202
+#: ../../source/configuring_domain/01_managing_security/portal.rst:214
+#: ../../source/configuring_domain/01_managing_security/portal.rst:229
+#: ../../source/configuring_domain/01_managing_security/portal.rst:243
+#: ../../source/configuring_domain/01_managing_security/portal.rst:258
+#: ../../source/configuring_domain/01_managing_security/portal.rst:273
+#: ../../source/configuring_domain/01_managing_security/portal.rst:290
+#: ../../source/configuring_domain/01_managing_security/portal.rst:302
+#: ../../source/configuring_domain/01_managing_security/portal.rst:314
+msgid "``message``"
+msgstr ""
+
+#~ msgid "user-country"
+#~ msgstr "Benutzerland"
+
+#~ msgid "user-language"
+#~ msgstr "Benutzersprache"
+
+#~ msgid "country"
+#~ msgstr "Land"
+
+#~ msgid "language"
+#~ msgstr "Sprache"
+
+#~ msgid "message"
+#~ msgstr "Nachricht"
