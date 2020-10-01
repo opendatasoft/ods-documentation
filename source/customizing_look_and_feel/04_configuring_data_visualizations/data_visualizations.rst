@@ -174,7 +174,7 @@ Mapbox integration
 ~~~~~~~~~~~~~~~~~~
 
 `Mapbox <https://www.mapbox.com/>`_ is a mapping platform that allows to build and design custom maps. They also
-provide a dozen different map styles that can be directly used. Opendatasoft allows to integrate these Mapbox basemaps into an Opendatasoft domain, to make them usage throughout the portal.
+provide different basic map styles that can be directly used. Opendatasoft allows to integrate these Mapbox basemaps into an Opendatasoft domain, to make them usage throughout the portal.
 
 .. admonition:: Prerequisite
    :class: important
@@ -189,7 +189,11 @@ To integrate Mapbox basemaps:
 4. In the **Basemaps** configuration, click on "Mapbox integration" to expand the related configurations.
 5. Paste the Public Token in the textbox. A message will confirm whether the access token is valid or not.
 
-Using the basemaps table, it is now possible to select one of Mapbox's default styles, or choose "Custom" to enter the MapID of a custom created map.
+Using the basemaps table, it is now possible to select one of Mapbox's default styles, or add one of your own custom Mapbox basemaps:
+
+   - In case of a "Tileset", enter the "Tileset ID" (which is usually under the form `accountname.identifier`)
+   - In case of a map style created using Mapbox Studio, enter the map identifier (usually under the form `accountname/identifier`), which is the last part of the "Style URL" provided by Mapbox 
+     (for example `mapbox://styles/opendatasoft/abcdefg12345678` means the map identifier is `opendatasoft/abcdefg12345678`).
 
 .. image:: images/basemaps_mapbox-custom-tiles.png
 
