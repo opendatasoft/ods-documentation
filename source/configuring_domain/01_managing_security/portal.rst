@@ -153,8 +153,8 @@ usernames and SAML attributes ``user-country`` and ``user-language`` given by th
    :header-rows: 1
 
    * * User
-     * user-country
-     * user-language
+     * ``user-country``
+     * ``user-language``
    * * User1
      * France
      * French
@@ -171,9 +171,9 @@ And a dataset with records given by the following table.
 .. list-table::
    :header-rows: 1
 
-   * * country
-     * language
-     * message
+   * * ``country``
+     * ``language``
+     * ``message``
    * * Worldwide
      * English
      * Hello world
@@ -197,9 +197,9 @@ User1 sees
 .. list-table::
    :header-rows: 1
 
-   * * country
-     * language
-     * message
+   * * ``country``
+     * ``language``
+     * ``message``
    * * France
      * French
      * Bonjour à tous les Français
@@ -209,9 +209,9 @@ User2 sees
 .. list-table::
    :header-rows: 1
 
-   * * country
-     * language
-     * message
+   * * ``country``
+     * ``language``
+     * ``message``
    * * Canada
      * French
      * Bonjour à tous les Canadiens
@@ -224,9 +224,9 @@ User3 sees
 .. list-table::
    :header-rows: 1
 
-   * * country
-     * language
-     * message
+   * * ``country``
+     * ``language``
+     * ``message``
    * * United States
      * English
      * Hello to all Americans
@@ -238,9 +238,9 @@ User1 sees
 .. list-table::
    :header-rows: 1
 
-   * * country
-     * language
-     * message
+   * * ``country``
+     * ``language``
+     * ``message``
    * * France
      * French
      * Bonjour à tous les Français
@@ -253,9 +253,9 @@ User2 sees
 .. list-table::
    :header-rows: 1
 
-   * * country
-     * language
-     * message
+   * * ``country``
+     * ``language``
+     * ``message``
    * * France
      * French
      * Bonjour à tous les Français
@@ -268,9 +268,9 @@ User3 sees
 .. list-table::
    :header-rows: 1
 
-   * * country
-     * language
-     * message
+   * * ``country``
+     * ``language``
+     * ``message``
    * * Worldwide
      * English
      * Hello world
@@ -285,9 +285,9 @@ User1 sees
 .. list-table::
    :header-rows: 1
 
-   * * country
-     * language
-     * message
+   * * ``country``
+     * ``language``
+     * ``message``
    * * France
      * French
      * Bonjour à tous les Français
@@ -297,9 +297,9 @@ User2 sees
 .. list-table::
    :header-rows: 1
 
-   * * country
-     * language
-     * message
+   * * ``country``
+     * ``language``
+     * ``message``
    * * Canada
      * French
      * Bonjour à tous les Canadiens
@@ -309,9 +309,9 @@ User3 sees
 .. list-table::
    :header-rows: 1
 
-   * * country
-     * language
-     * message
+   * * ``country``
+     * ``language``
+     * ``message``
    * * United States
      * English
      * Hello to all Americans
