@@ -174,7 +174,7 @@ Mapbox integration
 ~~~~~~~~~~~~~~~~~~
 
 `Mapbox <https://www.mapbox.com/>`_ is a mapping platform that allows to build and design custom maps. They also
-provide different basic map styles that can be directly used. Opendatasoft allows to integrate these Mapbox basemaps into an Opendatasoft domain, to make them usage throughout the portal.
+provide different basic map styles that can be directly used. Opendatasoft allows to integrate these Mapbox basemaps into an Opendatasoft domain, to make them available throughout the portal.
 
 .. admonition:: Prerequisite
    :class: important
