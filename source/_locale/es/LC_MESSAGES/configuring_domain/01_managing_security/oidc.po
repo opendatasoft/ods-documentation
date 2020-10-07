@@ -1,73 +1,92 @@
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Opendatasoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2020
+# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2020
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-01 14:18+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2020-09-30 10:12+0000\n"
+"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2020\n"
+"Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:2
 msgid "Single sign-on with OpenID Connect"
-msgstr ""
+msgstr "SSO (Single Sign-On) con OpenID Connect"
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:4
 msgid "Caution"
-msgstr ""
+msgstr "Precaución"
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:7
 msgid ""
 "The availability of this feature depends on the license of the Opendatasoft "
 "domain."
 msgstr ""
+"La disponibilidad de esta función depende de la licencia del dominio "
+"Opendatasoft."
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:11
 msgid "Register your OpenID Connect provider on your domain"
-msgstr ""
+msgstr "Registre su proveedor OpenID Connect en el dominio."
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:13
 msgid "Navigate to the signup page in the domain configuration interface."
 msgstr ""
+"Navegue a la página de registro de la interfaz de configuración del dominio."
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:15
 msgid "Check \"Allow access for OpenID Connect users\""
-msgstr ""
+msgstr "Seleccione \"Permitir acceso para usuarios de OpenID Connect\"."
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:20
 msgid ""
 "Copy your provider discovery document in the \"OpenID Connect provider "
 "information field\"."
 msgstr ""
+"Copie el documento de descubrimiento del proveedor en el campo \"Información"
+" del proveedor de OpenID Connect\"."
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:22
 msgid ""
 "This document should be formatted in JSON and can usually be retrieved from "
 "your provider endpoint. It must at least contain the following attributes:"
 msgstr ""
+"Este documento debe tener el formato JSON y normalmente se puede recuperar "
+"del extremo del proveedor. Debe contener como mínimo los atributos "
+"siguientes:"
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:25
 msgid "``issuer``"
-msgstr ""
+msgstr "``issuer``"
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:26
 msgid "``authorization_endpoint``"
-msgstr ""
+msgstr "``authorization_endpoint``"
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:27
 msgid "``userinfo_endpoint``"
-msgstr ""
+msgstr "``userinfo_endpoint``"
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:28
 msgid "``end_session_endpoint``"
-msgstr ""
+msgstr "``end_session_endpoint``"
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:29
 msgid "``jwks_uri``"
-msgstr ""
+msgstr "``jwks_uri``"
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:31
 msgid ""
@@ -75,11 +94,16 @@ msgid ""
 "users can connect to the platform through OpenID Connect, check the "
 "\"Disable local user provisioning\" checkbox."
 msgstr ""
+"Si desea desactivar la creación de usuarios locales, y asegurarse así de que"
+" únicamente los usuarios existentes se conecten a la plataforma con OpenID "
+"Connect, marque la casilla \"Desactivar aprovisionamiento de usuarios "
+"locales\"."
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:33
 msgid ""
 "Input the application credentials associated with your Opendatasoft domain."
 msgstr ""
+"Introduzca las credenciales de aplicación asociadas al dominio Opendatasoft."
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:35
 msgid ""
@@ -87,18 +111,25 @@ msgid ""
 "on your provider, you should get a pair of credentials, namely ``Client ID``"
 " and ``Client secret``."
 msgstr ""
+"Al registrar su dominio Opendatasoft como cliente OpenID Connect en el "
+"proveedor, debe obtener un par de credenciales, denominadas ``ID de "
+"cliente`` y ``Secreto de cliente``."
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:38
 msgid ""
 "These credentials are used to authenticate requests made by the Opendatasoft"
 " plateform on the provider endpoint."
 msgstr ""
+"Estas credenciales permiten autenticar las solicitudes realizadas por la "
+"plataforma Opendatasoft en el extremo del proveedor."
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:40
 msgid ""
 "Simply copy these credentials in the \"Client ID\" and \"Client secret\" "
 "fields."
 msgstr ""
+"Simplemente copie estas credenciales en los campos \"ID de cliente\" y "
+"\"Secreto de cliente\"."
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:42
 msgid ""
@@ -106,10 +137,13 @@ msgid ""
 "Opendatasoft platform, check the \"Enable direct authentication with JWT "
 "bearer tokens\" checkbox."
 msgstr ""
+"Si desea usar tokens JWT para suplantar llamadas de API en la plataforma "
+"Opendatasoft, marque la casilla \"Activar autenticación directa con tokens "
+"de portador JWT\"."
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:44
 msgid "List optional additional scopes"
-msgstr ""
+msgstr "Lista de ámbitos adicionales opcionales"
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:46
 msgid ""
@@ -119,6 +153,11 @@ msgid ""
 "scopes make it possible to authenticate a user and to retrieve their email, "
 "first name and last name."
 msgstr ""
+"Los ámbitos en OpenID Connect permiten definir el conjunto de información "
+"(reclamaciones) que una aplicación desea recibir sobre un usuario conectado."
+" De forma predeterminada, Opendatasoft utiliza los ámbitos siguientes: "
+"openid, perfil y correo electrónico. Estos ámbitos permiten autenticar a un "
+"usuario y recuperar su correo electrónico, nombre y apellido."
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:50
 msgid ""
@@ -126,10 +165,14 @@ msgid ""
 "user's profile and use them in :doc:`datasets security filters "
 "</configuring_domain/01_managing_security/portal>`"
 msgstr ""
+"Puede usar ámbitos adicionales para añadir reclamaciones como atributos "
+"adicionales en el perfil de un usuario y usarlos en los :doc:`filtros de "
+"seguridad de los conjuntos de datos "
+"</configuring_domain/01_managing_security/portal>`."
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:53
 msgid "List optional additional claims"
-msgstr ""
+msgstr "Lista de reclamaciones adicionales opcionales"
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:55
 msgid ""
@@ -139,6 +182,12 @@ msgid ""
 " claims can then be used in :doc:`datasets security filters "
 "</configuring_domain/01_managing_security/portal>`."
 msgstr ""
+"Las reclamaciones son atributos que se recopilan durante el proceso de "
+"autenticación y describen al usuario. De forma predeterminada, Opendatasoft "
+"solo almacena la reclamación `sub`. Se pueden almacenar reclamaciones "
+"adicionales en el perfil de usuario. Estas reclamaciones se podrán usar "
+"después en los :doc:`filtros de seguridad de los conjuntos de datos "
+"</configuring_domain/01_managing_security/portal>`."
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:59
 msgid ""
@@ -147,16 +196,23 @@ msgid ""
 "user account page. If left blank, no URL will be shown to the user in their "
 "account page."
 msgstr ""
+"Especifique la dirección URL en la que el usuario puede editar su perfil de "
+"usuario en el proveedor de identidad. Cuando se haya especificado, el "
+"usuario visualizará un enlace a esta dirección URL en la página de su cuenta"
+" de usuario. Si se deja en blanco, no se mostrará ninguna dirección URL al "
+"usuario en la página de su cuenta."
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:61
 msgid ""
 "Customize the OpenID Connect login link text. If left blank, a localized "
 "default message will be displayed."
 msgstr ""
+"Personalice el texto del vínculo de inicio de sesión de OpenID Connect. Si "
+"se deja en blanco, se visualizará un mensaje predeterminado localizado."
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:65
 msgid "Register your domain on your identity provider"
-msgstr ""
+msgstr "Registre su dominio en el proveedor de identidad."
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:67
 msgid ""
@@ -165,6 +221,10 @@ msgid ""
 "the redirection URI, which should be under the form ``https://<YOUR "
 "DOMAIN>/oidc/authenticate``."
 msgstr ""
+"La configuración del proveedor de identidad depende de la implementación, "
+"pero suele consistir en especificar en el proveedor de identidad el valor "
+"del URI de redirección, que debe tener el formato "
+"``https://<SU_DOMINIO>/oidc/authenticate``."
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:70
 msgid ""
@@ -172,13 +232,19 @@ msgid ""
 "format. This document can be downloaded from the following address: "
 "``https://<YOUR DOMAIN>/oidc/client_info``"
 msgstr ""
+"Algunos proveedores pueden admitir un documento de configuración con "
+"preformato JSON. Este documento se puede descargar de la dirección "
+"siguiente: ``https://<SU_DOMINIO>/oidc/client_info``"
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:75
 msgid "Single logout"
-msgstr ""
+msgstr "SLO (Single Log-Out)"
 
 #: ../../source/configuring_domain/01_managing_security/oidc.rst:77
 msgid ""
 "The Opendatasoft platform supports single logout with OpenID Connect by "
 "means of the draft protocol OpenID Connect Back-Channel Logout."
 msgstr ""
+"La plataforma Opendatasoft ofrece soporte para SLO (Single Log-Out) con "
+"OpenID Connect mediante el protocolo de borrador OpenID Connect Back-Channel"
+" Logout."

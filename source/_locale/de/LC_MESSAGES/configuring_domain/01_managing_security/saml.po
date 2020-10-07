@@ -2,31 +2,31 @@
 # Copyright (C) 2020, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # traducteur_DE2 <datawords.translator.de2@gmail.com>, 2018
-# traducteur_DE1 <datawords.translator.de1@gmail.com>, 2019
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
 # Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2019
-#
+# traducteur_DE1 <datawords.translator.de1@gmail.com>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-30 12:03+0200\n"
+"POT-Creation-Date: 2020-10-01 14:18+0200\n"
 "PO-Revision-Date: 2018-06-27 09:08+0000\n"
-"Last-Translator: Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2019\n"
+"Last-Translator: traducteur_DE1 <datawords.translator.de1@gmail.com>, 2020\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:2
 msgid "Single sign-on with SAML"
-msgstr ""
+msgstr "Single Sign-on mit SAML"
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:4
 msgid "Caution"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:11
 msgid "Register your SAML identity provider on your domain"
-msgstr ""
+msgstr "Registrieren Sie Ihren SAML-Provider auf Ihrer Domain"
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:13
 msgid "Navigate to the signup page in the domain configuration interface."
@@ -58,12 +58,16 @@ msgid ""
 "Paste your identity provider metadata document in the \"Identity provider "
 "metadata document\" field."
 msgstr ""
+"Kopieren Sie Ihr Identity Provider Metadatendokument in das Feld \"Identity "
+"Provider Metadatendokument\"."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:22
 msgid ""
 "If your identity provider is Microsoft Azure Active Directory, check the "
 "related checkbox."
 msgstr ""
+"Falls Sie Microsoft Azure Active Directory als Identity Provider verwenden, "
+"klicken Sie das entsprechende Kontrollkästchen an."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:24
 msgid ""
@@ -71,18 +75,26 @@ msgid ""
 "users can connect to the platform through SAML, check the \"Disable local "
 "user provisioning\" checkbox."
 msgstr ""
+"Wenn Sie die Erstellung lokaler Benutzer deaktivieren und damit "
+"sicherstellen möchten, dass nur bereits vorhandene Benutzer über SAML eine "
+"Verbindung zur Plattform herstellen können, so markieren Sie das "
+"Kontrollkästchen \"Lokale Benutzerbereitstellung deaktivieren\"."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:26
 msgid ""
 "Input the set of attributes sent by the identity provider that uniquely "
 "define a user."
 msgstr ""
+"Geben Sie den vom Identity Provider gesandten Attributsatz ein, der nur "
+"einen Benutzer definiert."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:28
 msgid ""
 "If the users are defined by their NameID and the NameID format used by your "
 "identity provider is not transient, there is no need to fill anything."
 msgstr ""
+"Falls die Benutzer durch ihre NameID definiert werden und das NameID-Format "
+"Ihres Identity Providers nicht transient ist, muss nichts ausgefüllt werden."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:30
 msgid ""
@@ -91,6 +103,10 @@ msgid ""
 "\"FirstName\" in the box and press enter, then \"LastName\" and press enter "
 "again."
 msgstr ""
+"Wenn Ihre Benutzer beispielsweise durch das von Ihrem Identity Provider "
+"übermittelte Attribut \"FirstName\" und \"LastName\" definiert sind, geben "
+"Sie zunächst \"FirstName\" in die Box ein, drücken Sie auf Enter, geben Sie "
+"danach \"LastName\" ein und drücken Sie erneut auf Enter."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:32
 msgid ""
@@ -141,6 +157,12 @@ msgid ""
 " both fields are left blank no condition is set and any successful login on "
 "the identity provider side will trigger a login on your Opendatasoft domain."
 msgstr ""
+"Die erste Box ist der Name des Attributs, das geprüft werden soll, und die "
+"zweite der Wert dieses Attributs. Wenn Sie nur das Vorhandensein eines "
+"Attributs prüfen möchten, ohne Wertbegrenzung, können Sie die zweite Box "
+"einfach leer lassen. Wenn beide Felder leer bleiben, wird keine Bedingung "
+"festgelegt und jeder erfolgreiche Login beim Identity Provider löst einen "
+"Login auf Ihrer Opendatasoft-Domain aus."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:48
 msgid ""
@@ -157,6 +179,18 @@ msgstr ""
 "der Rolle \"DataAccess\" eine Verbindung zur Domain erlauben wollen, geben "
 "Sie bitte \"DataAccess\" in die zweite Box ein."
 
+#: ../../source/configuring_domain/01_managing_security/saml.rst:50
+msgid ""
+"Input the URL on which the user can edit their user profile on the identity "
+"provider. When set, a link to this URL will be shown to the user in their "
+"user account page. If left blank, no URL will be shown to the user in their "
+"account page."
+msgstr ""
+"Geben Sie die URL ein, über die der Benutzer sein Benutzerprofil beim "
+"Identity Provider bearbeiten kann. Wenn sie definiert wurde, wird ein Link "
+"zu dieser URL auf der Seite seines Benutzerkontos angezeigt. Wenn keine "
+"Eingabe erfolgt, wird keine URL auf der Seite der Kontoverwaltung angezeigt."
+
 #: ../../source/configuring_domain/01_managing_security/saml.rst:52
 msgid ""
 "Input a custom EntityID for the Service Provider. If left blank the URL of "
@@ -164,6 +198,11 @@ msgid ""
 " identity provider doesn't support EntityIDs in URL format, you can set any "
 "EntityID here."
 msgstr ""
+"Geben Sie eine benutzerdefinierte EntityID für den Service Provider ein. "
+"Wenn keine Eingabe erfolgt, wird die URL aus dem Metadaten-Dokument des "
+"Service Providers als EntityID verwendet. Wenn Ihr Identity Provider keine "
+"EntityIDs im URL-Format unterstützt, können Sie hier eine beliebige andere "
+"EntityID festlegen."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:54
 msgid ""
@@ -175,7 +214,7 @@ msgstr ""
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:58
 msgid "Register your domain on your identity provider"
-msgstr ""
+msgstr "Registrieren Sie Ihre Domain bei Ihrem Identity Provider"
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:60
 msgid ""
@@ -192,10 +231,12 @@ msgid ""
 "You can download the metadata document for your Opendatasoft domain on "
 "``https://<YOUR DOMAIN>/saml2/metadata.xml``"
 msgstr ""
+"Sie können das Metadatendokument für Ihre Opendatasoft -Domain auf "
+"``https://<YOUR DOMAIN>/saml2/metadata.xml`` herunterladen"
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:68
 msgid "Single logout"
-msgstr ""
+msgstr "Single Log-out"
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:70
 msgid ""
@@ -205,18 +246,9 @@ msgid ""
 "from the identity provider, and log out requests from the identity provider "
 "will trigger a log out of the user on the platform."
 msgstr ""
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:50
-msgid ""
-"Input the URL on which the user can edit their user profile on the identity "
-"provider. When set, a link to this URL will be shown to the user in their "
-"user account page. If left blank, no URL will be shown to the user in their "
-"account page."
-msgstr ""
-
-#~ msgid ""
-#~ "Input the URL on which the user can check their user profile on the identity"
-#~ " provider. When set, a link to this URL will be shown to the user in their "
-#~ "user account page. If left blank, no URL will be shown to the user in their "
-#~ "account page."
-#~ msgstr ""
+"Die Opendatasoft-Plattform unterstützt das standardmäßigen SAML Single Log-"
+"out-Verfahren unter Einsatz der HTTP-Redirect-Bindung. Wird dies vom "
+"Identity Provider unterstützt, hat die Abmeldung eines über SAML verbundenen"
+" Benutzers eine Abmeldung beim Identity Provider zur Folge und die "
+"Abmeldeanfrage des Identity Providers führt zur Abmeldung des Benutzers auf "
+"der Plattform."
