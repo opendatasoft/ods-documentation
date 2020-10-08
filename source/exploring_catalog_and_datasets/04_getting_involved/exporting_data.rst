@@ -37,6 +37,11 @@ In the Export tab of a dataset, the following formats can be available:
 
    If the dataset is filtered, it is possible to only download the filtered data. To do so, click on "Only the selected records" instead of "Whole dataset".
 
+.. admonition:: Note
+   :class: note
+
+   You can use the parameter :code:`use_labels_for_header=true` in the exports links to use the labels instead of the technical identifiers of the fields as a header (not available in API v2).
+
 
 Exporting and downloading images
 --------------------------------

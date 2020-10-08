@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Opendatasoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2020
+# Translator_NL1 <datawords.translator.nl1@gmail.com>, 2020
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-01 14:18+0200\n"
+"PO-Revision-Date: 2020-09-30 10:12+0000\n"
+"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2020\n"
+"Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:2
+msgid "Single sign-on with OpenID Connect"
+msgstr "Eenmalig inloggen met OpenID Connect"
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:4
+msgid "Caution"
+msgstr "Opgelet"
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:7
+msgid ""
+"The availability of this feature depends on the license of the Opendatasoft "
+"domain."
+msgstr ""
+"De beschikbaarheid van deze functionaliteit hangt af van de licentie van het"
+" Opendatasoft-domein."
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:11
+msgid "Register your OpenID Connect provider on your domain"
+msgstr "Registreer uw OpenID Connect provider op uw domein"
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:13
+msgid "Navigate to the signup page in the domain configuration interface."
+msgstr "Ga naar de intekenpagina in de configuratie-interface van het domein."
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:15
+msgid "Check \"Allow access for OpenID Connect users\""
+msgstr "Vink \"Toegang voor gebruikers van OpenID Connect toelaten\" aan"
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:20
+msgid ""
+"Copy your provider discovery document in the \"OpenID Connect provider "
+"information field\"."
+msgstr ""
+"Kopieer uw ontdekkingsdocument van de proiver in het \"OpenID Connect "
+"provider informatieveld\"."
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:22
+msgid ""
+"This document should be formatted in JSON and can usually be retrieved from "
+"your provider endpoint. It must at least contain the following attributes:"
+msgstr ""
+"Dit document zou moeten worden geformatteerd in JSON en kan meestal "
+"opgehaald worden van uw provider eindpunt. Het moet minstens een van de "
+"volgende attributen bevatten:"
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:25
+msgid "``issuer``"
+msgstr "``issuer``"
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:26
+msgid "``authorization_endpoint``"
+msgstr "``authorization_endpoint``"
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:27
+msgid "``userinfo_endpoint``"
+msgstr "``userinfo_endpoint``"
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:28
+msgid "``end_session_endpoint``"
+msgstr "``end_session_endpoint``"
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:29
+msgid "``jwks_uri``"
+msgstr "``jwks_uri``"
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:31
+msgid ""
+"If you would like to disable local user creation, making sure only existing "
+"users can connect to the platform through OpenID Connect, check the "
+"\"Disable local user provisioning\" checkbox."
+msgstr ""
+"Indien u het aanmaken van lokale gebruikers zou willen uitschakelen, door "
+"ervoor te zorgen dat enkel bestaande gebruikers via OpenID Connect kunnen "
+"inloggen op het platform, vink dan \"Het aanmaken van lokale gebruikers "
+"deactiveren\" aan."
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:33
+msgid ""
+"Input the application credentials associated with your Opendatasoft domain."
+msgstr ""
+"Voer de gegevens van de applicatie in die verbonden zijn aan uw "
+"Opendatasoft-domein."
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:35
+msgid ""
+"As you have registered your Opendatasoft domain as an OpenID Connect client "
+"on your provider, you should get a pair of credentials, namely ``Client ID``"
+" and ``Client secret``."
+msgstr ""
+"Aangezien u uw Opendatasoft-domein hebt geregistreerd als een OpenID "
+"Connect-klant op uw provider, zou u een paar gegevens moeten krijgen, "
+"namelijk ``Client ID`` en ``Client secret``."
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:38
+msgid ""
+"These credentials are used to authenticate requests made by the Opendatasoft"
+" plateform on the provider endpoint."
+msgstr ""
+"De gegevens worden gebruikt om verzoeken te identificeren die door het "
+"Opendatasoft-platform worden gedaan op het eindpunt van de provider."
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:40
+msgid ""
+"Simply copy these credentials in the \"Client ID\" and \"Client secret\" "
+"fields."
+msgstr "Kopieer deze gegevens gewoon in de velden \"Client ID\" en \"Client secret\"."
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:42
+msgid ""
+"If you would like to use JWT tokens to impersonate API calls on the "
+"Opendatasoft platform, check the \"Enable direct authentication with JWT "
+"bearer tokens\" checkbox."
+msgstr ""
+"Indien u JWT-tokens zou willen gebruiken om API-oproepen op het "
+"Opendatasoft-platform te imiteren, vink dan het vakje \"Rechtstreekse "
+"identificatie met JWT bearer tokens activeren\" aan."
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:44
+msgid "List optional additional scopes"
+msgstr "Lijst van optionele bijkomende toepassingsgebieden"
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:46
+msgid ""
+"Scopes in OpenID Connect are used to define the set of information (claims) "
+"an application would like to receive about a connected user. By default, "
+"Opendatasoft uses the following scopes: openid, profile and email. These "
+"scopes make it possible to authenticate a user and to retrieve their email, "
+"first name and last name."
+msgstr ""
+"Toepassingsgebieden in OpenID Connect worden gebruikt om de reeks informatie"
+" (claims) te definiëren die een applicatie zou willen ontvangen over een "
+"ingelogde gebruiker. Standaard gebruikt Opendatasoft de volgende "
+"toepassingsgebieden: openid, profile en email. Deze toepassingsgebieden "
+"maken het mogelijk om een gebruiker te identificeren en om hun e-mail, "
+"voornaam en familienaam terug te vinden."
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:50
+msgid ""
+"You can use additional scopes to add claims as additional attributes in a "
+"user's profile and use them in :doc:`datasets security filters "
+"</configuring_domain/01_managing_security/portal>`"
+msgstr ""
+"U kunt bijkomende toepassingsgebieden als bijkomende attributen toevoegen in"
+" het profiel van een gebruiker en ze gebruiken in :doc:`veiligheidsfilters "
+"voor datasets</configuring_domain/01_managing_security/portal>`"
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:53
+msgid "List optional additional claims"
+msgstr "Lijst met optionele bijkomende claims"
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:55
+msgid ""
+"Claims are attributes that are collected during the authentication process "
+"and that describe the user. By default, Opendatasoft only stores the `sub` "
+"claim. It is possible to store additionnal claims in the user profile. These"
+" claims can then be used in :doc:`datasets security filters "
+"</configuring_domain/01_managing_security/portal>`."
+msgstr ""
+"Claims zijn attributen die ingezameld worden tijdens het identificatieproces"
+" en die de gebruiker beschrijven. Standaard slaat Opendatasoft enkel de "
+"claim `sub` op. Het is ook mogelijk om bijkomende claims op te slaan in het "
+"profiel van de gebruiker. Deze claims kunnen dan gebruikt worden in  "
+":doc:`veiligheidsfilters voor datasets "
+"</configuring_domain/01_managing_security/portal>`."
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:59
+msgid ""
+"Input the URL on which the user can edit their user profile on the identity "
+"provider. When set, a link to this URL will be shown to the user in their "
+"user account page. If left blank, no URL will be shown to the user in their "
+"account page."
+msgstr ""
+"Voer de URL in waarop de gebruiker zijn gebruikersprofiel kan bewerken op de"
+" identiteitsprovider. Wanneer deze is ingesteld, zal een link naar deze URL "
+"aan de gebruiker getoond worden in zijn gebruikersaccountpagina. Wanneer "
+"deze blanco wordt gelaten, zal geen URL aan de gebruiker worden getoond in "
+"zijn accountpagina."
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:61
+msgid ""
+"Customize the OpenID Connect login link text. If left blank, a localized "
+"default message will be displayed."
+msgstr ""
+"De tekst van de inloglink voor OpenID Connect personaliseren. Wanneer deze "
+"blanco wordt gelaten, zal een gelokaliseerd standaardbericht worden "
+"weergegeven."
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:65
+msgid "Register your domain on your identity provider"
+msgstr "Registreer uw domein op uw identiteitsprovider"
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:67
+msgid ""
+"The configuration of the identity provider is implementation-dependant, but "
+"it usually consists into specifiying on the identity provider the value of "
+"the redirection URI, which should be under the form ``https://<YOUR "
+"DOMAIN>/oidc/authenticate``."
+msgstr ""
+"De configuratie van de identiteitsprovider is implementatie-afhankelijk, "
+"maar bestaat meestal uit het specificeren van de waarde van de "
+"doorverwijzings-URL op de identiteitsprovider, die onder de vorm  "
+"``https://<YOUR DOMAIN>/oidc/authenticate`` zou moeten zijn."
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:70
+msgid ""
+"Some providers may support a preformated configuration document in JSON "
+"format. This document can be downloaded from the following address: "
+"``https://<YOUR DOMAIN>/oidc/client_info``"
+msgstr ""
+"Sommige providers kunnen een vooraf geformatteerd configuratiedocument in "
+"JSON-formaat ondersteunen. Dit document kan worden gedownload vanaf het "
+"volgende adres: ``https://<YOUR DOMAIN>/oidc/client_info``"
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:75
+msgid "Single logout"
+msgstr "Eenmalig uitloggen"
+
+#: ../../source/configuring_domain/01_managing_security/oidc.rst:77
+msgid ""
+"The Opendatasoft platform supports single logout with OpenID Connect by "
+"means of the draft protocol OpenID Connect Back-Channel Logout."
+msgstr ""
+"Het Opendatasoft-platform ondersteunt eenmalig uitloggen met OpenID Connect "
+"door middel van een ontwerpprotocol OpenID Connect Back-Channel Logout."
