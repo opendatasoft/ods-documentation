@@ -168,6 +168,12 @@ The **api** field for Opendatasoft APIv1 (ods_v1) contains one of the following 
      * List metadata templates via the API
      * api/metadata/1.0/<template_type>/, api/metadata/1.0/<template_type>/<template_name>/
 
+.. admonition:: Note
+   :class: note
+
+   Attachments refers to the attached documents available in the Information tab. File fields refers to the files (for example images) within the records of the dataset. Both are counted separately in the monitoring.
+
+
 API names for ODATA API
 -----------------------
 
