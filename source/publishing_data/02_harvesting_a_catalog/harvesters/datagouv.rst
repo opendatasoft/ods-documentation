@@ -3,6 +3,15 @@ data.gouv.fr harvester
 
 Retrieve datasets from a data.gouv.fr portal.
 
+.. admonition:: Note
+   :class: note
+
+   This page is about harvesting data from data.gouv.fr to an Opendatasoft platform. To learn how to harvest data from Opendatasoft to data.gouv.fr please visit |datagouvdoc|.
+
+.. |datagouvdoc| raw:: html
+
+   <a href="https://doc.data.gouv.fr/moissonnage/ods/" target="_blank">the documentation on data.gouv.fr</a>
+
 Parameters
 ----------
 
