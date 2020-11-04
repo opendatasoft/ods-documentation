@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-01 14:18+0200\n"
+"POT-Creation-Date: 2020-11-04 11:25+0100\n"
 "PO-Revision-Date: 2020-02-13 09:41+0000\n"
 "Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
@@ -98,7 +98,7 @@ msgstr ""
 "importante porque el gráfico los usará uno tras otro."
 
 #: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:20
-#: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:211
+#: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:215
 msgid "Click the Save button in the top right corner of the page."
 msgstr ""
 "Haga clic en el botón Guardar de la esquina superior derecha de la página."
@@ -579,15 +579,16 @@ msgstr "Integración de Mapbox"
 #: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:176
 msgid ""
 "`Mapbox <https://www.mapbox.com/>`_ is a mapping platform that allows to "
-"build and design custom maps. They also provide a dozen different map styles"
-" that can be directly used. Opendatasoft allows to integrate these Mapbox "
-"basemaps into an Opendatasoft domain, to make them usage throughout the "
+"build and design custom maps. They also provide different basic map styles "
+"that can be directly used. Opendatasoft allows to integrate these Mapbox "
+"basemaps into an Opendatasoft domain, to make them available throughout the "
 "portal."
 msgstr ""
-"`Mapbox <https://www.mapbox.com/>`_ es una de mapas que le permite compilar "
-"y diseñar mapas personalizados. También proporciona una docena de estilos de"
-" mapa para usar directamente. Opendatasoft permite integrar estos mapas de "
-"base Mapbox en un dominio Opendatasoft a fin de poder usarlos en el portal."
+"`Mapbox <https://www.mapbox.com/>`_ es una plataforma de mapas que le "
+"permite compilar y diseñar mapas personalizados. También proporciona "
+"diferentes estilos de mapa de base para usar directamente. Opendatasoft "
+"permite integrar estos mapas de base Mapbox en un dominio Opendatasoft para "
+"hacer que estén disponibles en el portal."
 
 #: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:179
 msgid "Prerequisite"
@@ -643,18 +644,40 @@ msgstr ""
 #: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:192
 msgid ""
 "Using the basemaps table, it is now possible to select one of Mapbox's "
-"default styles, or choose \"Custom\" to enter the MapID of a custom created "
-"map."
+"default styles, or add one of your own custom Mapbox basemaps:"
 msgstr ""
-"Mediante la tabla de mapas de base, ahora es posible seleccionar uno de los "
-"estilos predeterminados de Mapbox o elegir \"Personalizado\" para "
-"especificar el ID de mapa de un mapa creado personalizado."
+"Mediante la tabla de mapas de base, ahora puede seleccionar uno de los "
+"estilos predeterminados de Mapbox o añadir uno de sus propios mapas de base "
+"Mapbox personalizados:"
 
-#: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:198
+#: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:194
+msgid ""
+"In case of a \"Tileset\", enter the \"Tileset ID\" (which is usually under "
+"the form `accountname.identifier`)"
+msgstr ""
+"En el caso de un \"Conjunto de teselas\", especifique el \"ID de conjunto de"
+" teselas\" (normalmente con el formato `nombrecuenta.identificador`)."
+
+#: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:195
+msgid ""
+"In case of a map style created using Mapbox Studio, enter the map identifier"
+" (usually under the form `accountname/identifier`), which is the last part "
+"of the \"Style URL\" provided by Mapbox (for example "
+"`mapbox://styles/opendatasoft/abcdefg12345678` means the map identifier is "
+"`opendatasoft/abcdefg12345678`)."
+msgstr ""
+"En el caso de un estilo de mapa creado con Mapbox Studio, especifique el "
+"identificador de mapa (normalmente con el formato "
+"`nombrecuenta/identificador`), que es la última parte de la \"Dirección URL "
+"de estilo\" proporcionada por Mapbox (por ejemplo, "
+"`mapbox://styles/opendatasoft/abcdefg12345678` significa que el "
+"identificador de mapa es `opendatasoft/abcdefg12345678`)."
+
+#: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:202
 msgid "Defining a default Map Builder location"
 msgstr "Definir una ubicación del compilador de mapas predeterminada"
 
-#: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:202
+#: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:206
 msgid ""
 "The Map Builder is Opendatasoft's tool to create advanced maps using one or "
 "more published dataset from one or more Opendatasoft portal. The Default map"
@@ -667,7 +690,7 @@ msgstr ""
 " mapas predeterminada permite definir qué ubicación empleará de forma "
 "predeterminada el compilador de mapas."
 
-#: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:204
+#: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:208
 msgid ""
 "In the **Data visualizations** configuration interface, look for the "
 "**Default map builder location** configuration."
@@ -675,7 +698,7 @@ msgstr ""
 "En la interfaz de configuración **Visualizaciones de datos**, busque la "
 "configuración **Ubicación de constructor de mapas predeterminado**."
 
-#: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:205
+#: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:209
 msgid ""
 "Click on the map, and maintain the click while moving the map until the "
 "chosen location is is enclosed in the rectangle. Some options are available "
@@ -685,14 +708,14 @@ msgstr ""
 "hasta que la ubicación elegida esté delimitada por el rectángulo. Hay varias"
 " opciones disponibles para ayudar a definir la ubicación idónea:"
 
-#: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:207
+#: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:211
 msgid "|icon-zoom-in| and |icon-zoom-out| zoom in and out,"
 msgstr "|icon-zoom-in| y |icon-zoom-out| permiten acercar y alejar."
 
-#: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:208
+#: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:212
 msgid "|icon-localize| moves the map to your current location,"
 msgstr "|icon-localize| ‬mueve el mapa a en la ubicación actual."
 
-#: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:209
+#: ../../source/customizing_look_and_feel/04_configuring_data_visualizations/data_visualizations.rst:213
 msgid "|icon-search| allows to make a textual search of a location."
 msgstr "|icon-search| permite realizar una búsqueda textual de una ubicación."

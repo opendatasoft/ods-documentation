@@ -86,7 +86,7 @@ Other permissions
    * * Manage the domain theme
      * The user may configure all options and parameters in the Theme and Dataset themes subsections of the Look & feel section of the back office. To access the other subsections (Branding, Data visualizations and Navigation), the Edit domain properties permission is required.
 
-       **This permission grants access to the Look & feel (Theme and Dataset themes) section of the back office.** It also allows to manage assets.
+       **This permission grants access to the Look & feel (Theme) section of the back office.** It also allows to manage assets.
    * * Browse analytics
      * The user may access all analytics dashboards, both at the `domain level </monitoring_audience>`_ and at the dataset level.
 
