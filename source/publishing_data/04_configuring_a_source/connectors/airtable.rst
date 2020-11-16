@@ -6,6 +6,11 @@ The Airtable REST API connector is used for data extracted from an Airtable base
 Creation
 --------
 
+.. admonition:: Caution
+   :class: caution
+
+   It is mandatory to be owner of the Airtable table to be able to connect it to Opendatasoft.
+
 1. Find your Airtable API URL from : 
 
 - your workspace : Help > API documentation > [your base] > Authentication
