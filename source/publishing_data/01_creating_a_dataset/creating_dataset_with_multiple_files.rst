@@ -71,4 +71,4 @@ This method consists in connecting the platform to the directory of an FTP serve
 .. admonition:: Important
    :class: important
 
-   When synchronizing from a remote FTP location, Opendatasoft keeps a persistent cache and does not automatically prune files missing from the remote directory. Please contact Opendatasoft's support if you need some cleanup to be performed.
+   When synchronizing from a remote FTP location, Opendatasoft keeps a persistent cache and does not automatically prune files missing from the remote directory. Please use the "Clean cache" button on the ressource if you need some cleanup to be performed.
