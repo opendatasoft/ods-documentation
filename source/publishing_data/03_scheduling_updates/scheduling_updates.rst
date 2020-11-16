@@ -32,6 +32,11 @@ Specifying scheduling interval
 
 Once a dataset is saved with a remote resource, the scheduling tab is activated. The minimum interval is the minute, but it is not activated by default. Please contact Opendatasoft's support if you need minute level scheduling on your domain. You can add as many schedules as you want. For instance, if it fits your needs, you could decide to schedule a dataset to be reprocessed every Monday morning and every Wednesday afternoon.
 
+.. admonition:: Important
+   :class: important
+
+   Schedules are defined to run on the timezone of Paris, France : Central European Time (CET). It means they usually run on GMT+1 and GMT+2 during summer months.
+
 Pushing real time data
 ----------------------
 
