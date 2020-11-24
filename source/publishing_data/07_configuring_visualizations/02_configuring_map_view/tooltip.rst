@@ -15,6 +15,11 @@ In order to display information on a map, on a image or in a calendar, you can c
 
        Setting up the tooltip
 
+No tooltip
+----------
+
+You can choose not to display any tooltip. This can be useful for example when you want to display several layers on a map and to have only one layer with tooltips.
+
 Standard tooltip
 ----------------
 
