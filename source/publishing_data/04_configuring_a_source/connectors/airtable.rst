@@ -9,7 +9,7 @@ Creation
 .. admonition:: Caution
    :class: caution
 
-   It is mandatory to be owner of the Airtable table to be able to connect it to Opendatasoft.
+   It is mandatory to be the owner of the Airtable table to be able to connect it to Opendatasoft.
 
 1. Find your Airtable API URL from : 
 
