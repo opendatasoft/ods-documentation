@@ -35,7 +35,7 @@ Once a dataset is saved with a remote resource, the scheduling tab is activated.
 .. admonition:: Important
    :class: important
 
-   Schedules are defined to run on the timezone of Paris, France : Central European Time (CET). It means they usually run on GMT+1 and GMT+2 during summer months.
+   Schedules are defined to run on the timezone of Paris, France. In standard time, schedules run on GMT+1 (Central European Time). In the summer months, schedules run on GMT+2 (Central European Summer Time).
 
 Pushing real time data
 ----------------------
