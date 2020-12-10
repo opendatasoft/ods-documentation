@@ -6,7 +6,7 @@ OpenAgenda connector
 
    This connector is not available by default. Please contact Opendatasoft for the activation of this connector on a given Opendatasoft domain.
 
-The OpenAgenda connector extracts events from an agenda, using the OpenAgenda REST API. For more information, see refer to the `OpenAgenda documentation <https://openagenda.zendesk.com/hc/fr/categories/115000324454-API>`_.
+The OpenAgenda connector extracts events from an agenda, using the OpenAgenda REST API. For more information, refer to the `OpenAgenda documentation <https://openagenda.zendesk.com/hc/fr/categories/115000324454-API>`_.
 
 
 Creation
