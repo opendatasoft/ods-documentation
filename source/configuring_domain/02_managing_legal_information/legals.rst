@@ -68,7 +68,12 @@ To specify the Terms and Conditions and the Privacy Policy of a portal, go to Co
 Licenses
 --------
 
-When configuring the metadata of a dataset in the Information tab, the license attached to that dataset should be defined, using a drop-down selection of predefined licenses. To define the licenses listed in the drop-down selection, go to Configuration > Legals. In this subsection of the back office menu, look for the "Licenses" area.
+When configuring the metadata for a dataset in the Information tab, the license attached to that dataset should be defined, using a drop-down selection of predefined licenses.
+
+Configure licenses
+~~~~~~~~~~~~~~~~~~
+
+To define the licenses listed in the drop-down selection, go to Configuration > Legals. In this subsection of the back office menu, look for the "Licenses" area.
 
 .. image:: images/license_configuration.png
 
@@ -84,6 +89,45 @@ When configuring the metadata of a dataset in the Information tab, the license a
 
 To delete a license, click on the |icon-trash| button.
 
+Default licenses
+~~~~~~~~~~~~~~~~
+
+By default, the following licenses are available:
+
+.. list-table::
+   :header-rows: 1
+
+   * * Label
+     * URL
+     * Description
+
+   * * Public domain
+     * `<https://en.wikipedia.org/wiki/Public_domain>`_
+     * The material is freely available. You can use it without any permission.
+
+   * * Open Database License
+     * `<https://opendatacommons.org/licenses/odbl/1-0/>`_
+     * The database falls under the Open Data Commons. This license grants you with "a worldwide, royalty-free, non-exclusive, terminable license to Use the Database".
+
+   * * CC0 1.0
+     * `<https://creativecommons.org/publicdomain/zero/1.0/>`_
+     * The material licensed under CC0 1.0 was released to the public domain by its author. You can use it without any permissions.
+
+   * * CC BY 4.0
+     * `<https://creativecommons.org/licenses/by/4.0/>`_
+     * You can copy, redistribute, remix, transform, and build upon the material for any purpose, even commercially, but you must give appropriate credit to the original author.
+
+   * * CC BY-SA 4.0
+     * `<https://creativecommons.org/licenses/by-sa/4.0/>`_
+     * You can copy, redistribute, remix, transform, and build upon the material for any purpose, even commercially, but you must give appropriate credit to the original author. You must also release your contributions under the same license as the original material.
+
+   * * CC BY-NC 4.0
+     * `<https://creativecommons.org/licenses/by-nc/4.0/>`_
+     * You can copy, redistribute, remix, transform, and build upon the material for non-commercial purposes, but you must give appropriate credit to the original author.
+
+   * * CC BY-NC-SA 4.0
+     * `<https://creativecommons.org/licenses/by-nc-sa/4.0/>`_
+     * You can copy, redistribute, remix, transform, and build upon the material for non-commercial purposes, but you must give appropriate credit to the original author. You must also release your contributions under the same license as the original material.
 
 
 .. |icon-attention| image:: images/icon_attention.png
