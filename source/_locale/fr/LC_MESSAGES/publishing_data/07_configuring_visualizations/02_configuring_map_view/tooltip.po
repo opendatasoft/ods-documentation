@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-04 11:25+0100\n"
+"POT-Creation-Date: 2020-12-18 11:50+0100\n"
 "PO-Revision-Date: 2018-06-27 09:10+0000\n"
 "Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2020\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
@@ -50,15 +50,29 @@ msgstr ""
 " dans la liste déroulante type d'infobulle."
 
 #: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:10
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:28
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:33
 msgid "Setting up the tooltip"
 msgstr "Paramétrage de l'infobulle"
 
 #: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:19
+msgid "No tooltip"
+msgstr "Aucune infobulle"
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:21
+msgid ""
+"You can choose not to display any tooltip. This can be useful, for example, "
+"when you want to display several layers on a map and to have only one layer "
+"with tooltips."
+msgstr ""
+"Vous pouvez choisir de ne pas afficher d'infobulle. Cela peut par exemple "
+"être utile lorsque vous souhaitez afficher plusieurs couches sur une carte "
+"et avoir uniquement une couche avec des infobulles."
+
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:24
 msgid "Standard tooltip"
 msgstr "Infobulle standard"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:21
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:26
 msgid ""
 "You can of course configure which fields will appear in the tooltip and "
 "their relative order. A live preview is available on the right side."
@@ -68,38 +82,38 @@ msgstr ""
 " disponible dans la colonne de droite pour voir en simultané le rendu final "
 "de l'infobulle."
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:36
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:41
 msgid ""
 "For each of the tooltip's fields, the 3 following actions are available :"
 msgstr ""
 "Pour chacun des champs, les 3 actions suivantes sont disponibles et "
 "signifient :"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:40
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:45
 msgid "Tooltip's fields' actions"
 msgstr "Actions sur les champs"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:42
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:47
 msgid "Drag and drop to move field within tooltip"
 msgstr "Glisser/déposer pour changer la position de ce champ dans l'infobulle"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:43
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:48
 msgid "Click to remove field from tooltip"
 msgstr "Cliquer pour retirer le champ de l'infobulle"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:44
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:49
 msgid "Click to add field to tooltip"
 msgstr "Cliquer pour ajouter le champ à l'infobulle"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:50
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:55
 msgid "The associated live preview"
 msgstr "L'aperçu"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:59
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:64
 msgid "Custom HTML tooltip"
 msgstr "Infobulle personnalisée en HTML"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:61
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:66
 msgid ""
 "When you select `Custom HTML tooltip` an HTML editor appears. This is very "
 "similar to writing \"pages\" in your domain; you have access to every `ODS "
@@ -112,11 +126,11 @@ msgstr ""
 "<http://opendatasoft.github.io/ods-widgets/docs/>`_ et même intégrer "
 "d'autres visualisations dans l'infobulle. "
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:67
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:72
 msgid "An example of a custom tooltip."
 msgstr "Un exemple d'infobulle personnalisée."
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:75
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:80
 msgid ""
 "When the tooltip is displayed, it can access a specific ``record`` variable "
 "that is \"injected\" in the tooltip. This ``record`` object contains the "
@@ -126,7 +140,7 @@ msgstr ""
 "est disponible pour être utilisée. Cet objet ``record`` contient les "
 "propriétés suivantes :"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:78
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:83
 msgid ""
 "``record.fields``: object containing all the values (e.g. "
 "``record.fields.tree_height``)"
@@ -134,15 +148,15 @@ msgstr ""
 "``record.fields``: objet contenant toutes les valeurs de l'enregistrement "
 "(par ex. ``record.fields.tree_height``)"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:79
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:84
 msgid "``record.recordid``: unique identifier for the record"
 msgstr "``record.recordid``: identifiant unique de cet enregistrement"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:80
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:85
 msgid "``record.datasetid``: identifier of the dataset"
 msgstr "``record.datasetid``: identifiant du jeu de données"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:82
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:87
 msgid ""
 "Using these properties, you can display directly values in the tooltip, or "
 "even use them to display data from other datasets."
@@ -151,7 +165,7 @@ msgstr ""
 "l'infobulle, ou même les utiliser pour afficher des données depuis d'autres "
 "jeux de données."
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:85
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:90
 msgid ""
 "The schema of the dataset is also injected as a ``fields`` variable, which "
 "is an array of field objects (you can use ``ng-repeat`` to loop over the "
@@ -162,7 +176,7 @@ msgstr ""
 "champs (vous pouvez utiliser ``ng-repeat`` pour faire une boucle sur ces "
 "champs). Un objet champ (ici \"field\") contient les propriétés suivantes :"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:89
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:94
 msgid ""
 "``field.name``: the identifier of the field, for example to find a value "
 "within ``record.fields``"
@@ -170,7 +184,7 @@ msgstr ""
 "``field.name`` : l'identifiant du champ, par exemple pour récupérer une "
 "valeur à l'intérieur de ``record.fields``"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:90
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:95
 msgid ""
 "``field.type``: the type of the field (``text``, ``decimal``, ``integer``, "
 "``date``, ``datetime``, ``geo_point_2d``, ``geo_shape``)"
@@ -178,15 +192,15 @@ msgstr ""
 "``field.type`` : le type du champ (``text``, ``decimal``, ``integer``, "
 "``date``, ``datetime``, ``geo_point_2d``, ``geo_shape``)"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:92
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:97
 msgid "``field.label``: a human-friendly label"
 msgstr "``field.label`` : un label destiné à l'affichage"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:94
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:99
 msgid "Here is the code from the example above:"
 msgstr "Voici le code de l'exemple ci-dessus :"
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:113
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:118
 msgid ""
 "If you want to display an image from one of your dataset's ``file`` fields, "
 "you can use the ``ods-record-image`` widget."
@@ -195,7 +209,7 @@ msgstr ""
 " de votre jeu de données, vous pouvez utiliser le widget ``ods-record-"
 "image``."
 
-#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:116
+#: ../../source/publishing_data/07_configuring_visualizations/02_configuring_map_view/tooltip.rst:121
 msgid ""
 "You can use a ``<ods-dataset-context>`` to display a visualization from "
 "another dataset; in the following example, the data is taken from another "

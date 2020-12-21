@@ -22,6 +22,7 @@ The configuration options of a source entirely depend on the source type, and bo
    connectors/kml
    connectors/mapinfo
    connectors/netatmo
+   connectors/openagenda
    connectors/osm
    connectors/salesforce
    connectors/shapefile
@@ -68,6 +69,9 @@ The configuration options of a source entirely depend on the source type, and bo
     * Default
   * * :doc:`Netatmo<connectors/netatmo>`
     * Used to retrieve data from the Netatmo API
+    * On demand
+  * * :doc:`OpenAgenda<connectors/openagenda>`
+    * Used to retrieve events from OpenAgenda agendas
     * On demand
   * * :doc:`OSM<connectors/osm>`
     * Used for OpenStreetMap archives (.osm)

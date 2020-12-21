@@ -8,15 +8,16 @@
 # Hugo Bost <hugo.bost@opendatasoft.com>, 2018
 # Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2018
 # Julien Delbourgo <julien.delbourgo@opendatasoft.com>, 2018
+# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-04 11:25+0100\n"
+"POT-Creation-Date: 2020-12-18 11:50+0100\n"
 "PO-Revision-Date: 2018-06-27 09:11+0000\n"
-"Last-Translator: Julien Delbourgo <julien.delbourgo@opendatasoft.com>, 2018\n"
+"Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2020\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,27 +33,41 @@ msgstr "Moissonneur data.gouv.fr"
 msgid "Retrieve datasets from a data.gouv.fr portal."
 msgstr "Récupérer les jeux de données d'un portail data.gouv.fr."
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:7
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:6
+msgid "Note"
+msgstr "Remarque"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:9
+msgid ""
+"This page is about harvesting data from data.gouv.fr to an Opendatasoft "
+"platform. To learn how to harvest data from Opendatasoft to data.gouv.fr "
+"please visit |datagouvdoc|."
+msgstr ""
+"Cette page concerne la collecte de données depuis data.gouv.fr et vers une "
+"plateforme Opendatasoft. Pour apprendre à collecter des données depuis "
+"Opendatasoft et vers data.gouv.fr, veuillez consulter |datagouvdoc|."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:16
 msgid "Parameters"
 msgstr "Paramètres"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:12
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:21
 msgid "Name"
 msgstr "Nom"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:13
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:22
 msgid "Description"
 msgstr "Description"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:14
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:23
 msgid "Example"
 msgstr "Exemple"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:15
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:24
 msgid "Organization ID (organization_id)"
 msgstr "ID de l'organisation (organization_id)"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:16
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:25
 msgid ""
 "The **id** of the organization you want to harvest (found here: "
 "https://www.data.gouv.fr/api/1/organizations/)"
@@ -60,15 +75,15 @@ msgstr ""
 "L' **id** de l'organisation que vous voulez moissonner (disponible ici : "
 "https://www.data.gouv.fr/api/1/organizations/)"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:17
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:26
 msgid "534fffa5a3a7292c64a7809e"
 msgstr "534fffa5a3a7292c64a7809e"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:18
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:27
 msgid "Attachment (generate attachment)"
 msgstr "Pièces jointes (generate attachment)"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:19
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:28
 msgid ""
 "Check this if you want to attach resources as attachments instead of using "
 "them as sources"
@@ -76,11 +91,11 @@ msgstr ""
 "Si oui, les ressources seront attachées en tant que pièces jointes et non en"
 " tant que sources"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:21
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:30
 msgid "Filter parameter name (filter_name)"
 msgstr "Nom du paramètre filtre (filter_name)"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:22
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:31
 msgid ""
 "Name of the parameter you want to pass to the data.gouv.fr API to filter the"
 " request that will be performed"
@@ -88,10 +103,10 @@ msgstr ""
 "Nom du paramètre à passer à l'API data.gouv.fr pour filtrer la requête "
 "effectuée"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:24
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:33
 msgid "Filter parameter value (filter_value)"
 msgstr "Valeur du paramètre filtre (filter_value)"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:25
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:34
 msgid "Value of the above parameter"
 msgstr "Valeur du paramètre ci-dessus"
