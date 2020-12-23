@@ -38,7 +38,6 @@ Geographical processors
   processors/decode_google_polyline
   processors/geocode_with_arcgis
   processors/geocode_with_ban
-  processors/geocode_with_google
   processors/geocode_with_pdok
   processors/geocode_with_census_bureau
   processors/geohash_to_geojson
@@ -76,9 +75,6 @@ Geocoders
   * * :doc:`Geocode with BAN (France)<processors/geocode_with_ban>`
     * Geocode addresses in France by using the Base d'Adresses Nationale (BAN) service
     * Default
-  * * :doc:`Geocode with Google<processors/geocode_with_google>`
-    * Geocode full text addresses by using the Google geocoding API
-    * On demand
   * * :doc:`Geocode with PDOK<processors/geocode_with_pdok>`
     * Geocode addresses in the Netherlands by using the PDOK service
     * On demand
