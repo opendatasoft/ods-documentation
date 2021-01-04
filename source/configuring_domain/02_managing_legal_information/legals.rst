@@ -105,11 +105,11 @@ By default, the following licenses are available:
 
    * * Public domain
      * `<https://en.wikipedia.org/wiki/Public_domain>`_
-     * The material is freely available. You can use it without any permission.
+     * The material is freely available. It can be used without any permission.
 
    * * Open Database License
      * `<https://opendatacommons.org/licenses/odbl/1-0/>`_
-     * The database falls under the Open Data Commons. This license grants you with "a worldwide, royalty-free, non-exclusive, terminable license to Use the Database".
+     * The database falls under the Open Data Commons. This license grants you with "a worldwide, royalty-free, non-exclusive, terminable license to Use the Database". If you publicly use any adapted version of this database, or works produced from an adapted database, you must also offer that adapted database under the ODbL.
 
    * * CC0 1.0
      * `<https://creativecommons.org/publicdomain/zero/1.0/>`_
