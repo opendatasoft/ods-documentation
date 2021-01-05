@@ -68,7 +68,11 @@ To specify the Terms and Conditions and the Privacy Policy of a portal, go to Co
 Licenses
 --------
 
-When configuring the metadata for a dataset in the Information tab, it is important to define the license that specifies how others can use the data.
+When configuring the metadata for a dataset in the Information tab, it is important to define the license that explicitly specifies how others can use the data.
+
+Reusers - external developers, data analysts, etc. - are more likely to work with properly licensed data than contacting data producers and ask them for more information.
+
+Work with your legal team to find the most appropriate license for your data.
 
 Configure licenses
 ~~~~~~~~~~~~~~~~~~
@@ -80,21 +84,26 @@ In the back office, you can configure the licenses available when adding the met
    
    .. image:: images/license_configuration.png
 
-3. Click the Add license button.
-4. (optional) In the URLs column, add the URL to the official website of the defined license to find more information about that license. You can only add one URL per language available on the domain.
-5. Click the Save button in the top right corner of the page.
+3. In the Labels column, add a license label for each language available on the domain. The label will be displayed in the drop-down selection in the back office and the Information tab of the published dataset in the front office.
+4. Click the Add license button.
+5. In the URLs column, add the URL to the official website of the defined license to find more information about that license. You can only add one URL per language available on the domain.
+  
+  .. admonition:: Note
+     :class: note
+     
+     Adding a URL for a license is optional, but it is good practice to provide an official definition of the license to make the data easily reusable.
+     If you have a custom license, you can add the URL to a page hosted on your corporate website or your Opendatasoft platform.
 
-.. admonition:: Note
-   :class: note
-
-   If you do not add the URL for a language, the license label displayed in the front office will not be clickable when the portal is set on that language.
+6. Click the Save button in the top right corner of the page.
 
 To delete a license, click on the |icon-trash| button.
 
 Default licenses
 ~~~~~~~~~~~~~~~~
 
-By default, the following licenses are available:
+By default, a set of licenses, including country-specific licenses, is available.
+
+The following licenses are available on all portals:
 
 .. list-table::
    :header-rows: 1
