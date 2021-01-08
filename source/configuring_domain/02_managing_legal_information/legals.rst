@@ -68,22 +68,77 @@ To specify the Terms and Conditions and the Privacy Policy of a portal, go to Co
 Licenses
 --------
 
-When configuring the metadata of a dataset in the Information tab, the license attached to that dataset should be defined, using a drop-down selection of predefined licenses. To define the licenses listed in the drop-down selection, go to Configuration > Legals. In this subsection of the back office menu, look for the "Licenses" area.
+When configuring the metadata for a dataset in the Information tab, it is important to define the license that explicitly specifies how others can use the data.
 
-.. image:: images/license_configuration.png
+Reusers - external developers, data analysts, etc. - are more likely to work with properly licensed data than contacting data producers and ask them for more information.
 
-1. Click the Add license button.
-2. In the Labels column, write the label of the license. The label will be displayed both in the drop-down selection in the back office, and in the Information tab of the published dataset in the front office. There must be one label per language available on the domain.
-3. (optional) In the URLs column, indicate the official website of the defined license, in order to find more information about that license. There can be one URL per language available on the domain.
-4. Click the Save button in the top right corner of the page.
+Work with your legal team to find the most appropriate license for your data.
 
-.. admonition:: Note
-   :class: note
+Configure licenses
+~~~~~~~~~~~~~~~~~~
 
-   If there is no URL indicated for one of the languages, the platform will consider that there is indeed no URL attached to the license label for one language. The license label displayed in the front office will not be clickable at all when the portal is set on that language.
+In the back office, you can configure the licenses available when adding the metadata for a dataset.
+
+1. From the left menu under Configuration, select Legals.
+2. Go to the Licenses area.
+   
+   .. image:: images/license_configuration.png
+
+3. In the Labels column, add a license label for each language available on the domain. The label will be displayed in the drop-down selection in the back office and the Information tab of the published dataset in the front office.
+4. Click the Add license button.
+5. In the URLs column, add the URL to the official website of the defined license to find more information about that license. You can only add one URL per language available on the domain.
+  
+  .. admonition:: Note
+     :class: note
+     
+     Adding a URL for a license is optional, but it is good practice to provide an official definition of the license to make the data easily reusable.
+     If you have a custom license, you can add the URL to a page hosted on your corporate website or your Opendatasoft platform.
+
+6. Click the Save button in the top right corner of the page.
 
 To delete a license, click on the |icon-trash| button.
 
+Default licenses
+~~~~~~~~~~~~~~~~
+
+By default, a set of licenses, including country-specific licenses, is available.
+
+The following licenses are available on all portals:
+
+.. list-table::
+   :header-rows: 1
+
+   * * Label
+     * URL
+     * Description
+
+   * * Public domain
+     * `<https://en.wikipedia.org/wiki/Public_domain>`_
+     * The material is freely available. It can be used without any permission.
+
+   * * Open Database License
+     * `<https://opendatacommons.org/licenses/odbl/1-0/>`_
+     * The database falls under the Open Data Commons. This license grants you with "a worldwide, royalty-free, non-exclusive, terminable license to Use the Database". If you publicly use any adapted version of this database, or works produced from an adapted database, you must also offer that adapted database under the ODbL.
+
+   * * CC0 1.0
+     * `<https://creativecommons.org/publicdomain/zero/1.0/>`_
+     * The material licensed under CC0 1.0 was released to the public domain by its author. You can use it without any permissions.
+
+   * * CC BY 4.0
+     * `<https://creativecommons.org/licenses/by/4.0/>`_
+     * You can copy, redistribute, remix, transform, and build upon the material for any purpose, even commercially, but you must give appropriate credit to the original author.
+
+   * * CC BY-SA 4.0
+     * `<https://creativecommons.org/licenses/by-sa/4.0/>`_
+     * You can copy, redistribute, remix, transform, and build upon the material for any purpose, even commercially, but you must give appropriate credit to the original author. You must also release your contributions under the same license as the original material.
+
+   * * CC BY-NC 4.0
+     * `<https://creativecommons.org/licenses/by-nc/4.0/>`_
+     * You can copy, redistribute, remix, transform, and build upon the material for non-commercial purposes, but you must give appropriate credit to the original author.
+
+   * * CC BY-NC-SA 4.0
+     * `<https://creativecommons.org/licenses/by-nc-sa/4.0/>`_
+     * You can copy, redistribute, remix, transform, and build upon the material for non-commercial purposes, but you must give appropriate credit to the original author. You must also release your contributions under the same license as the original material.
 
 
 .. |icon-attention| image:: images/icon_attention.png
