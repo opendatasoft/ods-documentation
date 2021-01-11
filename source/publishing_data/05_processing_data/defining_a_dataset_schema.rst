@@ -111,7 +111,7 @@ There are 8 different types: date, datetime, decimal, integer, geopoint, geoshap
           If your dataset contains two fields, latitude and longitude, use the :doc:`Create GeoPoint processor<processors/create_geopoint>` to create a valid geo point field.
 
    * * Geo shape
-     * Field values are geographical shapes expressed in `GeoJSON <http://geojson.org/geojson-spec.html>`_. For example :
+     * Field values are geographical shapes expressed in `GeoJSON <https://geojson.org/geojson-spec.html>`_. For example :
 
        .. code-block:: json
 

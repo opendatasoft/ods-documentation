@@ -9,7 +9,7 @@ This documentation aims at listing ideas and pieces of advice concerning content
 Content integrations
 --------------------
 
-The main integration to think of when creating a content page is that of widgets. Opendatasoft widgets are components, available as HTML elements, that can be combined together to build interactive content pages. All widgets are documented in the `Opendatasoft Widgets documentation <https://help.opendatasoft.com/widgets/#/api/>`_.
+The main integration to think of when creating a content page is that of widgets. Opendatasoft widgets are components, available as HTML elements, that can be combined together to build interactive content pages. All widgets are documented in the `Opendatasoft Widgets documentation <https://help.opendatasoft.com/widgets/>`_.
 
 Some of the best known widgets, and most useful when creating a content page, are the visualization ones. Each Opendatasoft dataset is indeed available through several visualizations, that can all be embedded in a content page (see :doc:`Sharing & embedding data visualizations </exploring_catalog_and_datasets/04_getting_involved/sharing_embedding_data_visualizations>`).
 

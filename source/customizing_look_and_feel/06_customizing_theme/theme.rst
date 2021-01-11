@@ -70,7 +70,7 @@ Layout options
 
 .. image:: images/theme_layout-options.png
 
-The **Layout options** tab allows to customize the portal layout, which by default relies on a 12-columns grid system inherited from the `Bootstrap CSS framework <http://getbootstrap.com/css/#grid>`_.
+The **Layout options** tab allows to customize the portal layout, which by default relies on a 12-columns grid system inherited from the `Bootstrap CSS framework <https://getbootstrap.com/docs/3.4/css/#grid>`_.
 
 More specifically, in this tab, it is possible to modify:
 

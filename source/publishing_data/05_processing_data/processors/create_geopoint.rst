@@ -24,7 +24,7 @@ To set the parameters of the Create Geopoint processor, follow the indications f
     * yes
     *
   * * Source EPSG Code
-    * Represents the `EPSG <http://spatialreference.org/ref/epsg/>`_ (spacial reference) code of the geographical data
+    * Represents the `EPSG <https://spatialreference.org/ref/epsg/>`_ (spacial reference) code of the geographical data
     * yes
     * 4326
   * * Output Field

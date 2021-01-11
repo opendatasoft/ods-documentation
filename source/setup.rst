@@ -10,9 +10,9 @@ Getting started with Opendatasoft
 
    The address of an Opendatasoft domain generally looks like one of the following examples:
 
-   - https://mydomain.opendatasoft.com
-   - https://mydomain.my.opendatasoft.com, for personals
-   - https://mydomain.trial.opendatasoft.com, for free trials
+   - `https://mydomain.opendatasoft.com`
+   - `https://mydomain.my.opendatasoft.com`, for personals
+   - `https://mydomain.trial.opendatasoft.com`, for free trials
 
    However, it could also not contain any mention of Opendatasoft if an alias was created for the domain.
 

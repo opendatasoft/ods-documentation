@@ -133,16 +133,16 @@ CSV file to create a dataset with media files:
      * File
    * * Caption of PNG file
      * Media 1
-     * http://website.com/file_name.png
+     * `http://website.com/file_name.png`
    * * Caption of PDF file
      * Media 2
-     * http://website.fr/file_name.pdf
+     * `http://website.fr/file_name.pdf`
    * * Caption of ZIP file
      * Media 3
-     * http://another-website.com/file_name.zip
+     * `http://another-website.com/file_name.zip`
    * * Caption of SVG file
      * Media 4
-     * http://website.com/file_name.svg
+     * `http://website.com/file_name.svg`
 
 In this example:
 
@@ -156,4 +156,4 @@ Displaying images
 Once the images are imported into the platform, they can be displayed in 2 different ways:
 
 * through the default Images visualization tab: an image gallery displaying all the images and their metadata
-* through a slideshow, which is `an Opendatasoft widget <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsSlideshow>`_ that can be added in any code area of the platform (e.g. in the Custom view of the dataset or in a content page): in that case, images are displayed one by one
+* through a slideshow, which is `an Opendatasoft widget <https://help.opendatasoft.com/widgets/#/api/ods-widgets.directive:odsSlideshow>`_ that can be added in any code area of the platform (e.g. in the Custom view of the dataset or in a content page): in that case, images are displayed one by one

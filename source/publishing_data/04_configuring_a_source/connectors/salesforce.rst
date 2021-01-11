@@ -11,7 +11,7 @@ The Salesforce connector is used to extract data from the force.com REST API.
 .. admonition:: Prerequisite
    :class: important
 
-   An application on the Salesforce instance must be created and configured. Please refer to the `Salesforce documentation <https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_username_password_oauth_flow.htm>`_ for more information.
+   An application on the Salesforce instance must be created and configured. Please refer to the `Salesforce documentation <https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm>`_ for more information.
 
 
 Creation

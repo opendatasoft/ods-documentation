@@ -1,7 +1,7 @@
 IP Address to Geo Coordinates processor
 =======================================
 
-This processor allows to geocode an IP address. It uses the `GeoIP <http://geolite.maxmind.com>`_ database.
+This processor allows to geocode an IP address. It uses the GeoIP database.
 
 Setting the processor
 ---------------------

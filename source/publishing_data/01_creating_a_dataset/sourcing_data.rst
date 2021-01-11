@@ -4,7 +4,7 @@ Sourcing data
 There are 3 different methods to add data to a dataset:
 
 * by uploading a static, local file into the platform
-* by connecting the platform to a remote service (e.g. an API, a geographical information system, an FTP, etc.): it enables the platform to retrieve what that the remote service contains while staying synchronized with it
+* by connecting the platform to a remote service (for example, an API, a geographical information system, an FTP, etc.): it enables the platform to retrieve what that the remote service contains while staying synchronized with it
 * by pasting data and uploading it into the platform
 
 .. admonition:: Important
@@ -48,7 +48,7 @@ This method consists in connecting the platform to:
 .. admonition:: Note
    :class: note
 
-   When sourcing data via a URL, an "Add headers" button is available in the Source configuration area: it allows to add HTTP headers (e.g. API keys). Clicking on this button opens a window: indicate a key and a value for each new header.
+   When sourcing data via a URL, an "Add headers" button is available in the Source configuration area: it allows to add HTTP headers (for example, API keys). Clicking on this button opens a window: indicate a key and a value for each new header.
 
 .. admonition:: Note
    :class: note
@@ -64,8 +64,8 @@ Connecting to a remote server
 
 Opendatasoft supports the following protocols:
 
-* HTTP and HTTPS, which link to a single file (e.g. http://example.org/mydata.csv)
-* FTP and  FTPS, which link to a single file (e.g. ftp://example.org/my_dir/mydata.csv for FTP, ftps://example.org/my_dir/mydata.csv for FTPS) or to a directory (e.g. ftp://example.org/my_dir/ for FTP, ftps://example.org/my_dir/ for FTPS). Using a directory is often the prefered solution to automate incremental updates between a customer's information system and the platform. All the files in the directory need to have the same format and schema (e.g. CSV files with the same column titles). In case of automation, whenever the dataset is published, new and updated files are fetched from the remote location and processed and thanks to Opendatasoft's native deduplication strategy, similar records are not processed twice (see :doc:`Special fields documentation</publishing_data/05_processing_data/defining_a_dataset_schema>`).
+* HTTP and HTTPS, which link to a single file (for example, `http://example.org/mydata.csv`)
+* FTP and  FTPS, which link to a single file (for example, `ftp://example.org/my_dir/mydata.csv` for FTP, or `ftps://example.org/my_dir/mydata.csv` for FTPS) or to a directory (for example, `ftp://example.org/my_dir/` for FTP, ftps://example.org/my_dir/ for FTPS). Using a directory is often the prefered solution to automate incremental updates between a customer's information system and the platform. All the files in the directory need to have the same format and schema (for example, CSV files with the same column titles). In case of automation, whenever the dataset is published, new and updated files are fetched from the remote location and processed and thanks to Opendatasoft's native deduplication strategy, similar records are not processed twice (see :doc:`Special fields documentation</publishing_data/05_processing_data/defining_a_dataset_schema>`).
 
 .. admonition:: Important
    :class: important
