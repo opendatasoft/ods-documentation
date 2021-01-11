@@ -18,7 +18,7 @@ To set the parameters of the Extract text processor, follow the indications from
     * Field which contains the value(s) to extract
     * yes
   * * Regular expression
-    * Regular expression to determine which part of the values will be extracted. See `<http://en.wikipedia.org/wiki/Regular_expression>`_ for more details on how to write a regular expressions. It is also possible to test regular expressions with an online debugger tool like `Regex101 <https://regex101.com/>`_.
+    * Regular expression to determine which part of the values will be extracted. See `<https://en.wikipedia.org/wiki/Regular_expression>`_ for more details on how to write a regular expressions. It is also possible to test regular expressions with an online debugger tool like `Regex101 <https://regex101.com/>`_.
     * yes
 
 Example

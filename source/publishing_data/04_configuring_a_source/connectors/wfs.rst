@@ -11,7 +11,7 @@ The WFS connector is used to extract data from a WFS service.
 Creation
 ~~~~~~~~
 
-1. Enter the URL to the layer in the Enter a URL area, when creating a new dataset. It must contain the TypeName (e.g. http://example.com?service=WFS&TypeName=mylayer).
+1. Enter the URL to the layer in the Enter a URL area, when creating a new dataset. It must contain the TypeName (for example, `http://example.com?service=WFS&TypeName=mylayer`).
 2. Press Enter, or click the + button.
 
 

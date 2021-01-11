@@ -26,7 +26,7 @@ Embedding a data visualization
 Data visualizations can either be embedded via an iframe or as a widget. Both are pieces of code that allow anyone to integrate an element directly on a webpage.
 
 An iframe is a way to easily and safely integrate Opendatasoft content in an isolated frame, independent from the rest of the page. For integrating Opendatasoft content outside the Opendatasoft environment, iframes are the best way to go. In terms of interaction and customization, some work would probably be needed.
-`Widgets <https://help.opendatasoft.com/widgets/#/api/>`_ could also be integrated into a page outside the Opendatasoft environment, but heavy work would be required. They are however ideal for integrating content inside the Opendatasoft environment. Widgets can also interact with other widgets, which for instance allow the creation of dynamic dashboards using Opendatasoft.
+`Widgets <https://help.opendatasoft.com/widgets/>`_ could also be integrated into a page outside the Opendatasoft environment, but heavy work would be required. They are however ideal for integrating content inside the Opendatasoft environment. Widgets can also interact with other widgets, which for instance allow the creation of dynamic dashboards using Opendatasoft.
 
 Embedding an iframe
 ^^^^^^^^^^^^^^^^^^^

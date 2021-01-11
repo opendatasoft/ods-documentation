@@ -1,7 +1,7 @@
 DB.nomics harvester
 =========================
 
-Retrieve one or more datasets from `DB.nomics <https://db.nomics.world/>`_.
+Retrieve one or more datasets from `DBnomics <https://db.nomics.world/>`_.
 
 It is possible to either fetch each of these time series as individual Opendatasoft datasets or aggregate them as a single Opendatasoft dataset.
 The aggregated dataset will have an additional "Concept" column with the origin of each row.
@@ -11,9 +11,9 @@ A dataset ID follows the following format *ProviderName-DatasetId*.
 .. admonition:: Important
    :class: important
 
-   Retrieve the dataset ID using the `explorer <https://db.nomics.world/views/explorer>`_. Select a provider, the dataset to retrieve and click on API Link > JSON. A link following this format will appear : https://api.db.nomics.world/api/v1/json/datasets/bea-fa2004-section1-101-a/values
+   Retrieve the dataset ID from `DBnomics website <https://db.nomics.world/providers>`_. Select a provider, the dataset to retrieve and click on API Link > JSON. A link following this format will appear: `https://api.db.nomics.world/api/v1/json/datasets/bea-fa2004-section1-101-a/values`
 
-   In this example, the dataset ID is : **bea-fa2004-section1-101-a**
+   In this example, the dataset ID is: **bea-fa2004-section1-101-a**
 
 Parameters
 ----------

@@ -3,7 +3,7 @@ Normalize URL processor
 
 This processor allows to normalize a field value that should contain a valid URL.
 
-It can be used for instance when the field's value contains leading or trailing spaces, or does not have any scheme specification (in which case 'http://' is prepended to the field's value).
+It can be used for instance when the field's value contains leading or trailing spaces, or does not have any scheme specification (in which case `http://` is prepended to the field's value).
 
 Setting the processor
 ---------------------

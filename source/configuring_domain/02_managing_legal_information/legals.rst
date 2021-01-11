@@ -10,7 +10,7 @@ You can choose to display this message in the ``Configuration`` menu, in the ``L
 
 .. image:: images/configuration_legals-cookies.png
 
-You can access the full EU guidelines through `this link <http://ec.europa.eu/ipg/basics/legal/cookies/index_en.htm>`_.
+You can access the full EU guidelines through `this link <https://wikis.ec.europa.eu/display/WEBGUIDE/04.+Cookies>`_.
 
 
 Portal Terms and Conditions and Privacy Policy

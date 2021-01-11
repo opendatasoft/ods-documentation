@@ -16,7 +16,7 @@ Creation
 - your workspace : Help > API documentation > [your base] > Authentication
 - your base : Choose your table then go in Help > API documentation > Authentication
 
-2. Check the ``show API key`` checkbox and copy the ``EXAMPLE USING QUERY PARAMETER`` without the curl, this is your API URL. (e.g. https://api.airtable.com/v0/base_id/table_name?api_key=api_key)
+2. Check the ``show API key`` checkbox and copy the ``EXAMPLE USING QUERY PARAMETER`` without the curl, this is your API URL. (for example, `https://api.airtable.com/v0/base_id/table_name?api_key=api_key`)
 3. Enter the URL to the layer in the Enter a URL area, when creating a new dataset.
 4. Press Enter, or click the + button.
 

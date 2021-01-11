@@ -38,7 +38,7 @@ A basic basemap is used by default for all maps of all Opendatasoft domains. It 
 .. admonition:: Note
    :class: note
 
-   To know more about basemaps and how to use them, you can read our blog post "`What is a basemap & how to choose the best one for your data <https://www.opendatasoft.com/2015/09/03/what-is-a-basemap-and-how-to-choose-the-best-one-for-your-data/>`_".
+   To know more about basemaps and how to use them, you can read our blog post "`What is a basemap & how to choose the best one for your data <https://www.opendatasoft.com/blog/what-is-a-basemap-how-to-choose-the-best-one-for-your-data>`_".
 
 To manage basemaps, look for the **Basemaps** configuration in the **Data visualizations** configuration interface.
 
@@ -164,8 +164,8 @@ Opendatasoft currently only allows the integration of Mapbox basemaps.
 
    To fully use the default Thunderforest basemaps instead of within the default, limited quotas:
 
-   1. Go to the Thunderforest website, logged in.
-   2. In the `Thunderforest console page <https://manage.thunderforest.com/dashboard>`_, copy the API Key.
+   1. Go to the `Thunderforest website <https://manage.thunderforest.com/users/sign_in>`_ and sign in to your account.
+   2. Copy the API Key.
    3. Go back to the **Look & feel > Data Visualizations** subsection of the Opendatasoft's domain back office.
    4. In the **Basemaps** configuration, click on "Thunderforest integration" to expand the related configurations.
    5. Paste the API Key in the textbox.
@@ -184,7 +184,7 @@ provide different basic map styles that can be directly used. Opendatasoft allow
 To integrate Mapbox basemaps:
 
 1. Go to the Mapbox website, logged in.
-2. In the `Mapbox account page <https://www.mapbox.com/account/apps/>`_, either copy the Default Public Token, or create a new Public Token and copy it. This will be used by Opendatasoft to display maps on the behalf of the user's own Mapbox account.
+2. In the `Mapbox account page <https://account.mapbox.com/connected-apps/>`_, either copy the Default Public Token, or create a new Public Token and copy it. This will be used by Opendatasoft to display maps on the behalf of the user's own Mapbox account.
 3. Go back to the **Look & feel > Data Visualizations** subsection of the Opendatasoft's domain back office.
 4. In the **Basemaps** configuration, click on "Mapbox integration" to expand the related configurations.
 5. Paste the Public Token in the textbox. A message will confirm whether the access token is valid or not.

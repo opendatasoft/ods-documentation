@@ -6,7 +6,7 @@ Nominatim geocoder processor
 
    This processor is not available by default. Please contact Opendatasoft support team if you want this processor to be activated in your domain.
 
-This processor allows you to geocode full-text addresses by using the `OpenStreetMap Nominatim <https://nominatim.openstreetmap.org/>`_ service.
+This processor allows you to geocode full-text addresses by using the `OpenStreetMap Nominatim <https://nominatim.openstreetmap.org/ui/search.html>`_ service.
 
 Setting the processor
 ---------------------

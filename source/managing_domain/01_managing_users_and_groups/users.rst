@@ -88,7 +88,7 @@ Other permissions
 
        **This permission grants access to the Look & feel (Theme) section of the back office.** It also allows to manage assets.
    * * Browse analytics
-     * The user may access all analytics dashboards, both at the `domain level </monitoring_audience>`_ and at the dataset level.
+     * The user may access all analytics dashboards, both at the domain level and at the dataset level.
 
        **This permission grants access to the Analytics section of the back office.**
    * * Manage all reuses
