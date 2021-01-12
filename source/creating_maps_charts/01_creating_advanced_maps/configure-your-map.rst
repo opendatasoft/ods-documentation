@@ -15,7 +15,7 @@ The interface of **Configuration** contains:
 * a **Display search box** checkbox, to have the possibility to make research on your map
 * a **Display full screen in view mode** checkbox, to display |icon-fullscreen| on your map and thus have the possibility to display your map in full screen
 * a **Geolocation** checkbox, to display |icon-localize| on your map and thus have the possibility to focus the map on where you’re located
-* an **Auto-geolocation** checkbox, for the map to automatically focus on where you’re located
+* an **Auto-geolocation** checkbox for the map to automatically focus on where you’re located
 * a **Display layers and groups visibility control** checkbox, to have the possibility to play with layers and groups of layers (hide them or display them) on the map
 
 

@@ -1,20 +1,20 @@
 Managing saved visualizations
 =============================
 
-From the Visualizations tab, authenticated users have the possibility to see the list of visualizations created with either the Map Builder or the Chart Builder and that they have saved.
+From the Visualizations tab, authenticated users can see the list of visualizations created with either the Map Builder or the Chart Builder and that they have saved.
 
 .. image:: images/account_visualizations.png
 
-All saved visualizations are listed in a table which contains 3 columns.
+All saved visualizations are listed in a three-column table:
 
 - The Visualization column contains the name of the visualization. The name is preceded by an icon that indicates whether the visualization is a map (|icon-map|) or a chart (|icon-chart|).
-- The Last modification column contains the date of last modification of the visualization.
+- The Last modification column contains the date of the last modification of the visualization.
 - The last column contains a |icon-delete| button to delete a saved visualization.
 
 .. admonition:: Note
    :class: note
 
-   Use the search bar above the table to search a specific visualization instead of scrolling down that table.
+   Use the search bar above the table to search for a specific visualization instead of scrolling down that table.
 
 Editing a saved visualization
 -----------------------------
