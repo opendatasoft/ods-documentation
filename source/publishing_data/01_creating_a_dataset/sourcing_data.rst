@@ -16,23 +16,23 @@ There are 3 different methods to add data to a dataset:
 Uploading a file
 ----------------
 
-This method consists in directly uploading a file into the platform, in order to attach a static file to a new dataset.
+This method consists of directly uploading a file into the platform to attach a static file to a new dataset.
 
 1. In Catalog > Datasets, click on the **New dataset** button.
 2. Click on the **Add a source** button.
 3. Click on the **Upload a file** button.
-4. Choose the file to upload into the platform.
+4. Choose the file to upload to the platform.
 5. Click on the **Open** button of the file selection window.
 
 .. admonition:: Caution
    :class: caution
 
-   The size limit for a file is 240Mo. If your file is too big you can compress it before uploading it in the platform (see :ref:`Supported compressed file formats<supportedcompressedformats>`).
+   The size limit for a file is 240Mo. If your file is too big, you can compress it before uploading it to the platform (see :ref:`Supported compressed file formats<supportedcompressedformats>`).
 
 .. admonition:: Note
    :class: note
 
-   It is possible to simply drag and drop the file after steps 1 and 2, instead of following the whole file selection procedure.
+   It is possible to drag and drop the file after steps 1 and 2 instead of following the whole file selection procedure.
 
 
 .. _sourceremotedata:
@@ -42,8 +42,8 @@ Sourcing remote data via a URL
 
 This method consists in connecting the platform to:
 
-* either a remote server via its URL, to import files stored on this remote server
-* or, a remote data source exposing data records over an API
+* a remote server via its URL, to import files stored on this remote server, or
+* a remote data source exposing data records over an API.
 
 .. admonition:: Note
    :class: note
@@ -53,7 +53,7 @@ This method consists in connecting the platform to:
 .. admonition:: Note
    :class: note
 
-   These connections with the platform allow the automation of data update, by scheduling or pushing real-time data (see :doc:`Keeping data up to date</publishing_data/03_scheduling_updates/scheduling_updates>`).
+   These connections with the platform allow the automation of data update by scheduling or pushing real-time data (see :doc:`Keeping data up to date</publishing_data/03_scheduling_updates/scheduling_updates>`).
 
 Connecting to a remote server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -65,7 +65,7 @@ Connecting to a remote server
 Opendatasoft supports the following protocols:
 
 * HTTP and HTTPS, which link to a single file (for example, `http://example.org/mydata.csv`)
-* FTP and  FTPS, which link to a single file (for example, `ftp://example.org/my_dir/mydata.csv` for FTP, or `ftps://example.org/my_dir/mydata.csv` for FTPS) or to a directory (for example, `ftp://example.org/my_dir/` for FTP, ftps://example.org/my_dir/ for FTPS). Using a directory is often the prefered solution to automate incremental updates between a customer's information system and the platform. All the files in the directory need to have the same format and schema (for example, CSV files with the same column titles). In case of automation, whenever the dataset is published, new and updated files are fetched from the remote location and processed and thanks to Opendatasoft's native deduplication strategy, similar records are not processed twice (see :doc:`Special fields documentation</publishing_data/05_processing_data/defining_a_dataset_schema>`).
+* FTP and  FTPS, which link to a single file (for example, `ftp://example.org/my_dir/mydata.csv` for FTP, or `ftps://example.org/my_dir/mydata.csv` for FTPS) or to a directory (for example, `ftp://example.org/my_dir/` for FTP, ftps://example.org/my_dir/ for FTPS). Using a directory is often the preferred solution to automate incremental updates between a customer's information system and the platform. All the files in the directory need to have the same format and schema (for example, CSV files with the same column titles). In case of automation, new and updated files are fetched from the remote location and processed whenever the dataset is published. Thanks to Opendatasoft's native deduplication strategy, similar records are not processed twice (see :doc:`Special fields documentation</publishing_data/05_processing_data/defining_a_dataset_schema>`).
 
 .. admonition:: Important
    :class: important
@@ -102,13 +102,13 @@ Opendatasoft natively supports the following APIs:
 .. admonition:: Note
    :class: note
 
-   Opendatasoft can also develop and integrate customer specific Web APIs. Opendatasoft connectivity toolkit makes it possible to develop performant and secured connectors supporting incremental data processing.
+   Opendatasoft can also develop and integrate customer-specific Web APIs. Opendatasoft connectivity toolkit makes it possible to develop performant and secured connectors supporting incremental data processing.
 
 
 Pasting data
 ------------
 
-This method consists in pasting data in a CSV format. This method is most useful for quick tests.
+This method consists of pasting data in a CSV format. This method is most useful for quick tests.
 
 1. In Catalog > Datasets, click on the **New dataset** button.
 2. Click on the **Add a source** button.
@@ -117,4 +117,4 @@ This method consists in pasting data in a CSV format. This method is most useful
 
 
 Once a new dataset is created, the platform automatically displays an edition interface for that dataset. It is accessible for any user with the right permissions (either "Create dataset" or "Edit dataset").
-This edition interface allows to process the data, configure the datasets and its visualizations, as well as manage the publishing of the dataset. However, the first thing that should be done after creating a new dataset is to configure its source, to make sure the data is perfectly read and understood by the platform.
+This edition interface allows to process the data, configure the datasets and their visualizations, as well as manage the publishing of the dataset. However, after creating a new dataset, the first thing that should be done is to configure its source to make sure the data is perfectly read and understood by the platform

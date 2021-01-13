@@ -12,14 +12,14 @@ It is possible to source the following media files into the platform:
 
    All formats considered as images by the platform will be imported as such. It means that a thumbnail will be generated for these formats, activating the Images visualization (see :doc:`Configuring the Images visualization</publishing_data/07_configuring_visualizations/04_configuring_image_view/image>`).
 
-   However, for other formats that are not considered as images such as PDF and GTFS files, no thumbnail will be generated. It means that the Images visualization will not be available. Users will only be able to download these files.
+   However, for other formats that are not considered as images, such as PDF and GTFS files, no thumbnail will be generated. It means that the Images visualization will not be available. Users will only be able to download these files.
 
 There are 2 different methods to source media files and add them into a dataset: with an archive file or via a URL.
 
 Sourcing media files with an archive file
 -----------------------------------------
 
-This method consists in building an archive file (see :ref:`Supported compressed file formats<supportedcompressedformats>`) with the media files, and then to import it into the platform.
+This method consists of building an archive file (see :ref:`Supported compressed file formats<supportedcompressedformats>`) with the media files and then importing it into the platform.
 
 Building the archive file
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -29,12 +29,12 @@ The archive file must contain:
 * the media files,
 * and a CSV file listing the media files and their metadata
 
-No matter what the format of the media files is, both these media files and CSV file must be zipped together. For instance, if the media files are already zipped files, they must be zipped again altogether with the CSV file.
+No matter the format of the media files, they must be zipped together with the CSV file. For instance, if the media files are already zipped files, they must be zipped again altogether with the CSV file.
 
 .. admonition:: Caution
    :class: caution
 
-   We recommend to keep all images at the same level into the archive file. However, if images are into subdirectories, keep in mind to write the whole path in the CSV file.
+   We recommend keeping all images at the same level in the archive file. However, if images are into subdirectories, keep in mind to write the whole path in the CSV file.
 
 .. admonition:: Caution
    :class: caution
@@ -44,7 +44,7 @@ No matter what the format of the media files is, both these media files and CSV 
 Creating the CSV file of the archive file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The CSV file must at least contain a column with the names of the media files. It can contain other columns, that will be considered as additional fields.
+The CSV file must at least contain a column with the names of the media files. It can contain other columns that will be considered as additional fields.
 
 Example:
 
@@ -90,28 +90,28 @@ Once the archive file is created, it can be imported into the platform.
 1. In Catalog > Datasets, click on the **New dataset** button.
 2. Click on the **Add a source** button.
 3. Click on the **Upload a file** button.
-4. Choose the archive file you created, with your media files inside.
+4. Choose the archive file you created with your media files inside.
 5. Click on the **Open** button of the file selection window.
 
 
 Sourcing media files via a URL
 ------------------------------
 
-This method consists in sourcing any :doc:`supported format <supported_formats>` file, containing URLs of media files stored in a remote server, and using a processor to define the media files and extract their metadata.
+This method consists of sourcing any :doc:`supported format <supported_formats>` file containing URLs of media files stored in a remote server and using a processor to define the media files and extract their metadata.
 
 .. admonition:: Note
    :class: note
 
-   For this method, Opendatasoft supports the following protocols: http, and its secured version https. Both should link to a single file.
+   For this method, Opendatasoft supports the following protocols: HTTP, and its secured version HTTPS. Both should link to a single file.
 
 1. In Catalog > Datasets, click on the **New dataset** button.
 2. Click on the **Add a source** button.
 3. Click on either **Upload a file** or **Enter a URL** to source the file. Any sourcing method works.
 4. Once the dataset is created, click on the **Processing** tab.
 5. Click on the **Add a processor** button.
-6. Choose the File processor, in the Generic operations section.
+6. Choose the File processor in the Generic operations section.
 7. In the File processor area, indicate which field contains the URLs of the media files.
-8. *(optional)* Still in the File processor area, tick the **Extract metadata** box to import the related metadata of the images.
+8. *(optional)* In the File processor area, select the **Extract metadata** check box to import the related metadata of the images.
 
 Example:
 
@@ -156,4 +156,4 @@ Displaying images
 Once the images are imported into the platform, they can be displayed in 2 different ways:
 
 * through the default Images visualization tab: an image gallery displaying all the images and their metadata
-* through a slideshow, which is `an Opendatasoft widget <https://help.opendatasoft.com/widgets/#/api/ods-widgets.directive:odsSlideshow>`_ that can be added in any code area of the platform (e.g. in the Custom view of the dataset or in a content page): in that case, images are displayed one by one
+* through a slideshow, which is `an Opendatasoft widget <https://help.opendatasoft.com/widgets/#/api/ods-widgets.directive:odsSlideshow>`_ that can be added in any code area of the platform (for example, in the Custom view of the dataset or in a content page): in that case, images are displayed one by one

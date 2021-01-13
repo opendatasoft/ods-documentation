@@ -6,17 +6,17 @@ Comments
 --------
 
 The users can be allowed to comment on datasets. When activated, an additional
-tab "Comments" will be displayed in the dataset page.
+"Comments" tab will be displayed on the dataset page.
 
 To activate this feature, you need to configure a Disqus account to associate
 with the portal. Disqus is an external comment management system. You will need
-to set your account shortname and public key in the ``Configure`` menu, in
+to set your account's short name and public key in the ``Configure`` menu, in
 the ``Social networks & sharing`` section.
 
 .. image:: images/configuration_disqus.png
 
 If you're unsure about how to get your Disqus credentials, you can follow the
-detailed steps detailed in the page.
+detailed steps detailed on the page.
 
 
 Encouraging reuses
@@ -47,14 +47,14 @@ portals or portals which do not allow external users to create an account.
 
 **Notifications**
 
-By default the portal will send a notification to the administrators for every reuse submission.
-You can add additional recipients email adresses in the form "New reuses notifications recipients".
+By default, the portal will send a notification to the administrators for every reuse submission.
+You can add additional recipients email addresses in the form "New reuses notifications recipients".
 
 .. image:: images/reuses_notification.png
 
 If you want to send these notifications only to one specific address, specify
 it in the form and check "Send notifications exclusively to these addresses".
-For example if you want to send these notifications only to opendata@yourdomain.com :
+For example, if you want to send these notifications only to opendata@yourdomain.com :
 
 .. image:: images/reuses_notification-exclusive.png
 
@@ -62,9 +62,9 @@ For example if you want to send these notifications only to opendata@yourdomain.
 Contact form recipients
 -----------------------
 
-Within the pages you create you can include a contact form that allows users to
+Within the pages you create, you can include a contact form that allows users to
 send a message to domain administrators. You can add recipients to these
-messages in the ``Social networks & sharing`` section, in the ``Configure`` menu.
+messages in the ``Social networks & sharing`` section from the ``Configure`` menu.
 
 .. image:: images/configuration_contact-form.png
 
@@ -74,27 +74,27 @@ Dataset subscriptions
 
 Users on your portal can subscribe to any dataset they can access; by doing so,
 they opt-in to receive notifications that the dataset publisher can decide to
-send at any time, for example an information about a future schema change, or
+send at any time, for example, information about a future schema change or
 to indicate that the data has been updated recently.
 
 .. admonition:: Note
    :class: note
 
-   The button is only available to users who are logged on the portal using an account. If you want to use this feature on an open data portal for example, you may want to allow users to sign up on your portal.
+   The button is only available to users who are logged on the portal using an account. If you want to use this feature on an open data portal, for example, you may want to allow users to sign up on your portal.
 
 .. localizedimage:: images/subscription__button.png
 
 As a dataset publisher, you can see the list of users subscribed to your dataset
-from its back-office configuration page, using the "Subscribers" tab which appears
+from its back-office configuration page, using the "Subscribers" tab, which appears
 if you have at least one subscriber on the dataset. From there,
 you can also send a message to all the users who subscribed to this dataset.
 
 .. localizedimage:: images/subscription__backoffice.png
 
-It is advised to warn your subscribers in advance for any change that may impact
+It is advised to warn your subscribers in advance of any change that may impact
 any of their reuse, such as a change in the schema (renaming an existing field,
-removing a field) that may cause issues with existing reuses, or an update of
-the data itself, if it is not updated very frequently.
+removing a field) that may cause issues with existing reuses or an update of
+the data itself if it is not updated very frequently.
 
 User feedback on datasets
 -------------------------
@@ -102,7 +102,7 @@ User feedback on datasets
 .. admonition:: Note
    :class: note
 
-   This feature is currently in beta, and is not available by default. Please contact us if you would like to try this feature on your own portal.
+   This feature is currently in beta and is not available by default. Please contact us if you would like to try this feature on your own portal.
 
 If you wish to gather feedback on the content of a specific dataset, you can activate
 "User feedback" from its back-office configuration page.
@@ -113,10 +113,10 @@ If you wish to gather feedback on the content of a specific dataset, you can act
 
 
 Once the option is active and the dataset is published again, your users will
-be able to send feedback on your dataset, either for a specific record, or to
+be able to send feedback on your dataset, either for a specific record or to
 suggest a new record, by clicking on the little chat bubble in the table view.
 
-Doing so will open a form where the user can write a message, and optionally
+Doing so will open a form where the user can write a message and optionally
 suggest new values.
 
 As the publisher of the dataset, you can access the list of all the feedback sent

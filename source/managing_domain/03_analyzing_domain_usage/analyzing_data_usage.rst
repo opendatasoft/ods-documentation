@@ -7,7 +7,7 @@ This dashboard is divided into 4 sections:
 
 - Totals: figures about the datasets published in the portal and their usage through that portal
 - Popularity: statistics and charts to compute and analyze the popularity of the datasets published in the portal
-- Top 5: lists of most downloaded, used and reused published datasets
+- Top 5: lists of most downloaded, used, and reused published datasets
 - Theme Distribution: tree chart to analyze most and least used themes
 
 .. admonition:: Important
@@ -15,13 +15,13 @@ This dashboard is divided into 4 sections:
 
    In this dashboard, only published datasets are taken into account. Unpublished datasets are ignored from all figures, charts and other computed analytics displayed.
 
-   It is however possible, by clicking the buttons at the top of the dashboard, to choose to build the dashboard:
+   It is possible, by clicking the buttons at the top of the dashboard, to choose to build the dashboard:
 
-   - with all existing published datasets (checked by default)
-   - only with the private datasets, meaning those in restricted access, no matter the restriction
-   - or, only with the public datasets, meaning those accessible by everyone.
+   - with all existing published datasets (checked by default),
+   - only with the private datasets, meaning those in restricted access, no matter the restriction, or
+   - only with the public datasets, meaning those accessible by everyone.
 
-   Depending on which datasets are used to build the Data dashboard, the displayed figures, charts and analytics will vary.
+   Depending on which datasets are used to build the Data dashboard, the displayed figures, charts, and analytics will vary.
 
 Totals
 ------
@@ -48,7 +48,7 @@ Totals
 Popularity
 ----------
 
-The Popularity section of the Data dashboard is based upon a computation aiming at quantifying dataset consumption in order to establish popularity scores for datasets. This computation is based on 3 metrics: number of downloads, number of API calls and number of reuses. These 3 metrics indicate whether a dataset published into an Opendatasoft portal can be considered popular or not, compared to the other datasets of both that portal and the Opendatasoft data network.
+The Popularity section of the Data dashboard is based upon a computation aiming at quantifying dataset consumption in order to establish popularity scores for datasets. This computation is based on 3 metrics: number of downloads, number of API calls, and number of reuses. These 3 metrics indicate whether a dataset published into an Opendatasoft portal can be considered popular or not, compared to the other datasets of both that portal and the Opendatasoft data network.
 
 .. admonition:: Important
    :class: important
@@ -69,13 +69,13 @@ The Popularity section is divided into 2 parts:
 
   - Label of the selected dataset
   - Dataset ID: technical identifier of the selected dataset
-  - Metrics: number of downloads, API calls and reuses (if any) for the selected dataset
+  - Metrics: number of downloads, API calls, and reuses (if any) for the selected dataset
   - Popularity Score: popularity score of the selected dataset, computed with the metrics displayed above
 
 To display the popularity score information of a dataset:
 
 1. In any of the charts, click a bar (representing a dataset).
-2. Check the right part of the Popularity section: the information of the selected dataset are automatically displayed.
+2. Check the right part of the Popularity section: the information of the selected dataset is automatically displayed.
 
 .. admonition:: Note
    :class: note

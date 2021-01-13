@@ -9,14 +9,14 @@ Configuring chart default colors
 
 .. image:: images/dataviz_chart-colors.png
 
-Charts are composed of at least one color, but depending on what they represent they can be composed of many more. By default, a set of 8 colors is used, and Opendatasoft users also have the possibility to use other sets of colors that are available by default as well. The Chart colors configuration allows to define a new set of colors, that will replace the original 8-colors set.
+Charts are composed of at least one color, but depending on what they represent, they can be composed of many more. By default, a set of 8 colors is used, and Opendatasoft users also have the possibility to use other sets of colors that are available by default as well. The Chart colors configuration allows to define a new set of colors that will replace the original 8-color set.
 
 To add a new default chart color:
 
 1. In the **Data visualizations** configuration interface, look for the **Chart color** configuration.
 2. Click on the + Add color button.
-3. Add the hexadecimal code of the new color, or click the color button to choose a new color using either the Nice colors, or the Color wheel.
-4. (optional) Click the reorder |icon-reorder| button to reorganise the new color among the others. The order of the colors matters because they will be used one after the other by the chart.
+3. Add the hexadecimal code of the new color, or click the color button to choose a new color using either the Nice colors or the Color wheel.
+4. (optional) Click the reorder |icon-reorder| button to reorganize the new color among the others. The order of the colors matters because they will be used one after the other by the chart.
 5. Click the Save button in the top right corner of the page.
 
 To delete a color, click the trash |icon-trash| button.
@@ -33,12 +33,12 @@ Adding basemaps
 
 Basemaps are the canvas on which geographic data are represented. They are used for any map displayed on Opendatasoft, whether it is the visualization map of a dataset or the Map Builder.
 
-A basic basemap is used by default for all maps of all Opendatasoft domains. It is however possible to change that default basemap, as well as to make other basemaps available in an Opendatasoft portal. It will allow users to change the basemap at any time on a map, and even to change the default basemap of a specific dataset.
+A basic basemap is used by default for all maps of all Opendatasoft domains. It is possible to change that default basemap, as well as to make other basemaps available in an Opendatasoft portal. It will allow users to change the basemap at any time on a map and even to change the default basemap of a specific dataset.
 
 .. admonition:: Note
    :class: note
 
-   To know more about basemaps and how to use them, you can read our blog post "`What is a basemap & how to choose the best one for your data <https://www.opendatasoft.com/blog/what-is-a-basemap-how-to-choose-the-best-one-for-your-data>`_".
+   To know more about basemaps and how to use them, you can read our blog post: "`What is a basemap & how to choose the best one for your data <https://www.opendatasoft.com/blog/what-is-a-basemap-how-to-choose-the-best-one-for-your-data>`_".
 
 To manage basemaps, look for the **Basemaps** configuration in the **Data visualizations** configuration interface.
 
@@ -60,7 +60,7 @@ The basemaps table also contains 2 options:
 Adding default basemaps
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-By default, Opendatasoft provides several basemaps. They are the default basemaps displayed in the drop-down menu of the Basemap table column. All these default basemaps can be made available on the platform, using the table. Even though the basemaps appear in the list of default basemaps, they will only be usable once added to the table.
+By default, Opendatasoft provides several basemaps. They are the default basemaps displayed in the drop-down menu of the Basemap table column. All these default basemaps can be made available on the platform using the table. Even though the basemaps appear in the list of default basemaps, they will only be usable once added to the table.
 
 To add default basemaps to the table and make them available on the domain:
 
@@ -174,7 +174,7 @@ Mapbox integration
 ~~~~~~~~~~~~~~~~~~
 
 `Mapbox <https://www.mapbox.com/>`_ is a mapping platform that allows to build and design custom maps. They also
-provide different basic map styles that can be directly used. Opendatasoft allows to integrate these Mapbox basemaps into an Opendatasoft domain, to make them available throughout the portal.
+provide different basic map styles that can be directly used. Opendatasoft allows to integrate these Mapbox basemaps into an Opendatasoft domain to make them available throughout the portal.
 
 .. admonition:: Prerequisite
    :class: important
@@ -183,17 +183,17 @@ provide different basic map styles that can be directly used. Opendatasoft allow
 
 To integrate Mapbox basemaps:
 
-1. Go to the Mapbox website, logged in.
-2. In the `Mapbox account page <https://account.mapbox.com/connected-apps/>`_, either copy the Default Public Token, or create a new Public Token and copy it. This will be used by Opendatasoft to display maps on the behalf of the user's own Mapbox account.
+1. Go to the Mapbox website and log in.
+2. In the `Mapbox account page <https://account.mapbox.com/connected-apps/>`_, either copy the Default Public Token or create a new Public Token and copy it. This will be used by Opendatasoft to display maps on behalf of the user's own Mapbox account.
 3. Go back to the **Look & feel > Data Visualizations** subsection of the Opendatasoft's domain back office.
 4. In the **Basemaps** configuration, click on "Mapbox integration" to expand the related configurations.
 5. Paste the Public Token in the textbox. A message will confirm whether the access token is valid or not.
 
-Using the basemaps table, it is now possible to select one of Mapbox's default styles, or add one of your own custom Mapbox basemaps:
+Using the basemaps table, it is now possible to select one of Mapbox's default styles or add one of your own custom Mapbox basemaps:
 
    - In case of a "Tileset", enter the "Tileset ID" (which is usually under the form `accountname.identifier`)
    - In case of a map style created using Mapbox Studio, enter the map identifier (usually under the form `accountname/identifier`), which is the last part of the "Style URL" provided by Mapbox 
-     (for example `mapbox://styles/opendatasoft/abcdefg12345678` means the map identifier is `opendatasoft/abcdefg12345678`).
+     (for example, `mapbox://styles/opendatasoft/abcdefg12345678` means the map identifier is `opendatasoft/abcdefg12345678`).
 
 .. image:: images/basemaps_mapbox-custom-tiles.png
 
@@ -206,11 +206,11 @@ Defining a default Map Builder location
 The Map Builder is Opendatasoft's tool to create advanced maps using one or more published dataset from one or more Opendatasoft portal. The Default map builder location configuration allows to define which location the Map Builder will focus on by default when landing on it.
 
 1. In the **Data visualizations** configuration interface, look for the **Default map builder location** configuration.
-2. Click on the map, and maintain the click while moving the map until the chosen location is is enclosed in the rectangle. Some options are available to help defining the right location:
+2. Click on the map, and maintain the click while moving the map until the chosen location is enclosed in the rectangle. Some options are available to help to define the right location:
 
    - |icon-zoom-in| and |icon-zoom-out| zoom in and out,
    - |icon-localize| moves the map to your current location,
-   - |icon-search| allows to make a textual search of a location.
+   - |icon-search| allows you to make a textual search of a location.
 
 3. Click the Save button in the top right corner of the page.
 

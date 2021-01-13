@@ -16,7 +16,7 @@ We also follow |ADA| Standards for Accessible Design in order to improve access 
 
 Since the |IAADA| and doesn't define the regulations, organizations are encouraged to use the **WCAG 2.0 level AA guidelines**. 
 
-Therefore, the Opendatasoft public facing content is **ADA compliant because it follows WCAG 2.0 - AA**. 
+Therefore, the Opendatasoft public-facing content is **ADA compliant because it follows WCAG 2.0 - AA**. 
 
 We also have a |VPAT| accessible on demand. 
 
@@ -37,7 +37,7 @@ Reporting an issue
 
 Despite our best efforts, if you encounter an accessibility issue on the platform, please let us know by sending a report to accessibility@opendatasoft.com 
 
-When sending a report, please include these information:
+When sending a report, please include this information:
 
 * **Your browser**\* 
 * **Your operating system**\* 
@@ -47,11 +47,11 @@ When sending a report, please include these information:
 
 .. ifconfig:: language == 'en'
 
- \*Please include the version numbers, use |thismachine| or |whatismybrowser| to find out easily
+ \*Please include the version numbers. Use |thismachine| or |whatismybrowser| to find out easily.
 
 .. ifconfig:: language == 'fr'
   
-  \*Merci d'inclure les numéros de version, vous pouvez utiliser |thismachine_fr| ou |whatismybrowser_fr| pour trouver facilement
+  \*Merci d'inclure les numéros de version. Vous pouvez utiliser |thismachine_fr| ou |whatismybrowser_fr| pour trouver facilement.
   
 We will do our best to fix those issues in the forthcoming releases. 
 

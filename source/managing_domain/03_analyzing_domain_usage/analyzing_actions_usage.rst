@@ -5,7 +5,7 @@ Go to the *Analytics > Actions* page.
 
 There are eight indicators :
 
-1. **Actions**: Frequency and distribution of actions (analyze, geo, search) taken by users based on API calls. Gives you precious information about what your users do and how to better serve them. Also remember that like with every chart on Opendatasoft you can filter the variables displayed (Analyze, Geo or Search) by clicking on the legend labels.
+**Actions**: Frequency and distribution of actions (analyze, geo, search) taken by users based on API calls. It gives you precious information about what your users do and how to serve them better. Remember that, like with every chart on Opendatasoft, you can filter the variables displayed (Analyze, Geo, or Search) by clicking on the legend labels.
 
 .. ifconfig:: language == 'en'
 
@@ -17,7 +17,7 @@ There are eight indicators :
     .. image:: images/usage__actions-usage-1-fr.jpg
         :alt: Usage Actions Indicateur Activité par type
 
-2. **Total searches**: Number of times somebody searched for a dataset from the catalog, or searched in a dataset.
+2. **Total searches**: Number of times somebody searched for a dataset from the catalog or searched in a dataset.
 
 .. ifconfig:: language == 'en'
 
@@ -41,7 +41,7 @@ There are eight indicators :
     .. image:: images/usage__actions-usage-3-fr.jpg
         :alt: Usage Actions Indicateur Recherches sans résultat
 
-4. **API call sources**: Distribution of the API call per page based on number of API calls.
+4. **API call sources**: Distribution of the API call per page based on the number of API calls.
 
 .. ifconfig:: language == 'en'
 
@@ -53,7 +53,7 @@ There are eight indicators :
     .. image:: images/usage__actions-usage-4-fr.jpg
         :alt: Usage Actions Indicateur Actions par page
 
-5. **Text searches with no result**: Basically those may be the data users expect to find on your portal.
+5. **Text searches with no result**: Basically, those may be the data users expect to find on your portal.
 
 .. ifconfig:: language == 'en'
 
@@ -105,7 +105,7 @@ There are eight indicators :
 API calls Errors
 ----------------
 
-In most cases you won't be able to do anything. Anyway we want to be transparent on your users' usage.
+In most cases, you won't be able to do anything. Anyway, we want to be transparent on your users' usage.
 
 .. list-table::
    :header-rows: 1
@@ -115,12 +115,12 @@ In most cases you won't be able to do anything. Anyway we want to be transparent
    * * DatastoreError
      * This is a server error, we monitor it real time on our side to avoid it.
    * * InvalidPolygon
-     * The defined polygon filter on a geo-query is malformed. For example it can be a self-crossing polygon like an hourglass.
+     * The defined polygon filter on a geo-query is malformed. For example, it can be a self-crossing polygon like an hourglass.
    * * HTTPError
      * It comes from a federated dataset. It may happen when you change the schema of a dataset when it is already federated on another portal. Always be careful when you update a dataset's schema.
    * * MissingParameters
      * It may happen when you forget the dataset_id in the API console.
    * * UnknownDataset
-     * The dataset_id on the URL doesn't exist or someone has tried to access a dataset without having the right.
+     * The dataset_id on the URL doesn't exist, or someone has tried to access a dataset without having the right.
    * * ResultWindowTooHigh
-     * The search API is paginated with an offset and a response size. You can't access more than ~10k results. If you want more than 10k results you'll probably want to use the download API.
+     * The search API is paginated with an offset and a response size. You can't access more than ~10k results. If you want more than 10k results, you'll probably want to use the download API.

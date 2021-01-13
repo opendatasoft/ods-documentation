@@ -8,16 +8,16 @@ Before diving into which quotas exist on Opendatasoft portals, it is important t
 
 For example, freemium portals can have up to 5 datasets, each having at most 20000 records.
 
-Your license defines 4 global limits on your portal: the first one puts an upper limit on the consumption of the data and the others regulate the amount of data you can inject into the portal.
+Your license defines 4 global limits on your portal: the first one puts an upper limit on data consumption. The others regulate the amount of data you can inject into the portal.
 
 * **API calls quota** limits the number of requests made to the data within a given timeframe (usually within a month)
 
 .. important::
 
-   The number of API calls measure can be a bit difficult to wrap his/her head around since this is a very technical measure
-   of the activity. But it can be summarised as such: everytime somebody accesses your portal, for example the datasets
-   catalog page, the interface will make requests to the portal for the filters values, for the 10 first datasets then
-   the 10 next ones etc. Each of these requests is an API call and counted within the quota.
+   The number of API calls measure can be a bit difficult to wrap their head around since this is a very technical measure.
+   It can be summarised as such: every time somebody accesses your portal, for example, the datasets
+   catalog page, the interface will make requests to the portal for the filters values, for the first ten datasets, then
+   the next ten ones, etc. Each of these requests is an API call and counted within the quota.
 
    API calls are therefore made by visitors on your portal, but also by developers using the API to retrieve the data
    you published and dashboards hosted outside of your portal.
@@ -26,7 +26,7 @@ Your license defines 4 global limits on your portal: the first one puts an upper
 * **Datasets quota** constraints the total number of currently published datasets, for local datasets on the one hand and for federated datasets on the other hand
 * **Records quota** limits the total number of records within published datasets and also limits the maximum number of records per dataset
 
-You can see these quotas and check any information related to your license, under the **License** section of the back office.
+You can see these quotas and check any information related to your license under the **License** section of the back office.
 
 Setting defaults limitations on users
 -------------------------------------
@@ -37,7 +37,7 @@ different limit for them. You can also set a global limit for all anonymous user
 of your usage quota.
 
 You'll be able to set these limits in the **Security** subsection of the **Configuration** section of your portal's
-backoffice.
+back office.
 
 When a user makes a request (be it an API call, a dataset creation of the publication of a dataset), we make sure
 he/she isn't running into the default limit set for him/her and isn't going over the global portal limit. Were it the
@@ -47,10 +47,10 @@ case, a message would pop-up telling him/her so.
 
 .. image:: images/quotas_data-volume.png
 
-Setting specific limitations for individual users and group of users
---------------------------------------------------------------------
+Setting specific limitations for individual users and a group of users
+----------------------------------------------------------------------
 
-Some of your users have specific roles within your organisation that justify their need for quotas larger than the
+Some of your users have specific roles within your organization that justify their need for quotas larger than the
 default ones. For example, you may allow registered users to create only a couple of datasets each, but your Chief
 Data Office will need to be able to publish as many datasets as the license allows.
 
@@ -60,4 +60,4 @@ In order to do so, you'll have to go to the :doc:`user's management page </manag
 .. admonition:: Important
    :class: important
 
-   When setting a new quota for individuals users or group of users, the quota count starts back at 0 for the period.
+   When setting a new quota for individuals users or a group of users, the quota count starts back at 0 for the period.

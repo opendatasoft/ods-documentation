@@ -1,7 +1,7 @@
 Configuring the tooltip
 =======================
 
-In order to display information on a map, on a image or in a calendar, you can configure a tooltip. You can use, and configure, the standard tooltip or customize it more precisely using a custom HTML tooltip. A custom tooltip is slightly more time consuming but it is a good way to leverage your data. To switch from the standard tooltip configuration interface to this custom tooltip view, select Custom HTML template from the tooltip type dropdown menu.
+In order to display information on a map, on an image, or in a calendar, you can configure a tooltip. You can use and configure the standard tooltip or customize it more precisely using a custom HTML tooltip. A custom tooltip is slightly more time consuming, but it is a good way to leverage your data. To switch from the standard tooltip configuration interface to this custom tooltip view, select Custom HTML template from the tooltip type dropdown menu.
 
 .. ifconfig:: language == 'en'
 
@@ -23,7 +23,7 @@ You can choose not to display any tooltip. This can be useful, for example, when
 Standard tooltip
 ----------------
 
-You can of course configure which fields will appear in the tooltip and their relative order. A live preview is available
+You can configure which fields will appear in the tooltip and their relative order. A live preview is available
 on the right side.
 
 .. ifconfig:: language == 'en'
@@ -63,7 +63,7 @@ For each of the tooltip's fields, the 3 following actions are available :
 Custom HTML tooltip
 -------------------
 
-When you select `Custom HTML tooltip` an HTML editor appears. This is very similar to writing "pages" in your domain; you have access to every `ODS Widget <http://opendatasoft.github.io/ods-widgets/docs/>`_ and you can even integrate other visualizations inside the tooltip.
+When you select `Custom HTML tooltip`, an HTML editor appears. This is very similar to writing "pages" in your domain; you have access to every `ODS Widget <http://opendatasoft.github.io/ods-widgets/docs/>`_, and you can even integrate other visualizations inside the tooltip.
 
 .. ifconfig:: language == 'en'
 
@@ -84,14 +84,13 @@ When the tooltip is displayed, it can access a specific ``record`` variable that
 - ``record.recordid``: unique identifier for the record
 - ``record.datasetid``: identifier of the dataset
 
-Using these properties, you can display directly values in the tooltip, or even use
-them to display data from other datasets.
+Using these properties, you can directly display values in the tooltip or even use them to display data from other datasets.
 
 The schema of the dataset is also injected as a ``fields`` variable, which is
 an array of field objects (you can use ``ng-repeat`` to loop over the fields).
 A field object contains the following properties:
 
-- ``field.name``: the identifier of the field, for example to find a value within ``record.fields``
+- ``field.name``: the identifier of the field, for example, to find a value within ``record.fields``
 - ``field.type``: the type of the field (``text``, ``decimal``, ``integer``,
   ``date``, ``datetime``, ``geo_point_2d``, ``geo_shape``)
 - ``field.label``: a human-friendly label
