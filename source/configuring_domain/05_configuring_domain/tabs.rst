@@ -6,7 +6,7 @@ This section explains which features can be configured on the catalog and datase
 Default tab
 -----------
 
-By default the dataset is opened on the **table view**, but you can choose to display the **information tab** instead. The table view by default is useful to give users with a direct access to the data, whereas the information tab by default is interesting to provide users with context and description first.
+By default, the dataset is opened on the **table view**, but you can choose to display the **information tab** instead. The table view by default is useful to give users direct access to the data, whereas the information tab by default is interesting to provide users with context and description first.
 
 .. image:: images/configuration_default-tab.png
 
@@ -21,9 +21,9 @@ The geographic filter allows to search datasets in the catalog based on the terr
 .. admonition:: Important
    :class: important
 
-   The geographic filter can either enable filtering across the entire world, or only on a specific, chosen country.
+   The geographic filter can either enable filtering across the entire world or only on a specific, chosen country.
 
-   * When the geographic filter is configured for a specific country, very precise refining is available, through multiple available administrative divisions.
+   * When the geographic filter is configured for a specific country, very precise refining is available through multiple available administrative divisions.
    * When the geographic filter is configured for the entire world, users can filter the catalog with almost every country of the world, but most of the time, precise refining is not possible. For most countries, only the highest administrative divisions are available.
 
 To activate and configure the geographic filter:
@@ -36,5 +36,5 @@ To activate and configure the geographic filter:
 
 3. Define the default filter that will be used first when the geographic filter is activated.
 4. (optional) Switch the "Apply the default filter when loading the catalog" toggle button for the default filter to be automatically activated and applied on the catalog at loading.
-5. (optional) Switch the "Display by default all datasets that include the selected territory" toggle button for all datasets related to a chosen territory to be dislayed by default.
+5. (optional) Switch the "Display by default all datasets that include the selected territory" toggle button for all datasets related to a chosen territory to be displayed by default.
 6. Click on the Save button in the top right corner.

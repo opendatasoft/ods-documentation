@@ -1,13 +1,13 @@
 Customizing portal themes
 =========================
 
-The default theme of all Opendatasoft portals can be entirely customized, not only in terms of layout and colors, but also regarding specific areas such as header, footer and catalog cards. Theme configurations and managed from the **Look & feel > Theme** subsection of the back office.
+The default theme of all Opendatasoft portals can be entirely customized, not only in terms of layout and colors but also regarding specific areas such as header, footer, and catalog cards. Theme configurations and managed from the **Look & feel > Theme** subsection of the back office.
 
 .. image:: images/theme_interface.png
 
 The Theme interface comprises 3 main blocks.
 
-- The header (1), which not only displays the title of the interface, but also a *Current action* drop-down menu to manage versioning (see :ref:`Versioning themes <theme_versioning>`). 3 important buttons are also displayed in the header:
+- The header (1) which displays not only the title of the interface but also a *Current action* drop-down menu to manage versioning (see :ref:`Versioning themes <theme_versioning>`). 3 important buttons are also displayed in the header:
 
   - Save, to save the new configurations
   - Preview, to open in a new tab the Opendatasoft portal with the newly applied configurations
@@ -19,7 +19,7 @@ The Theme interface comprises 3 main blocks.
 .. admonition:: Note
    :class: note
 
-   It is possible to create stylesheets outside the platform, with any standard web developping tool, and to push them to the platform using an API key. For an easier and quicker usage, the `Opendatasoft Portal Development Kit <https://github.com/opendatasoft/ods-portal-devkit>`_ is at disposal: it is an open source project created by Opendatasoft, that can be downloaded on Github.
+   It is possible to create stylesheets outside the platform, with any standard web developing tool, and to push them to the platform using an API key. For an easier and quicker usage, the `Opendatasoft Portal Development Kit <https://github.com/opendatasoft/ods-portal-devkit>`_ is at disposal: it is an open-source project created by Opendatasoft that can be downloaded on Github.
 
    To find and use a theme API key, click on the **API key for offline development** block to expand it. The current API key is displayed in the block, ready to be copied and used.
 
@@ -43,14 +43,14 @@ Versioning themes
 
 Portal themes are versioned, which means that each customized new theme has a version number assigned to it. Once a theme is finished and made live, another version is automatically created: it is the new draft theme on which to work until it is ready to be live.
 
-The *Current action* drop-down menu displayed in the header indicates on which version one is currently working on. It also allows to select previous themes that were already made live.
+The *Current action* drop-down menu displayed in the header indicates which version one is currently working on. It also allows to select previous themes that were already made live.
 
 .. admonition:: Important
    :class: important
 
-   Once a theme is live, it is completely locked: it is not possible to make any other modifications. Only the latest, draft version can be modified.
+   Once a theme is live, it is completely locked: it is not possible to make any other modifications. Only the latest draft version can be modified.
 
-While working on the latest draft version of the portal theme, it is possible to preview what the portal will look like with this new theme. A Preview button is indeed displayed between the Make live and Save buttons, to open a new tab with the portal configured with the draft theme.
+While working on the latest draft version of the portal theme, it is possible to preview what the portal will look like with this new theme. A Preview button is indeed displayed between the Make live and Save buttons to open a new tab with the portal configured with the draft theme.
 
 .. admonition:: Note
    :class: note
@@ -74,8 +74,8 @@ The **Layout options** tab allows to customize the portal layout, which by defau
 
 More specifically, in this tab, it is possible to modify:
 
-- the *Gutter width*, which is the space (in pixels) between the various elements that compose an interface of the portal (columns, rows and boxes)
-- the **Responsive breakpoints**, which are the various screen widths (in pixels) at which the layout should change to adapt to the available space (e.g. the portal layout should differ depending on whether it is used from a mobile phone or a desktop, because the screen of a mobile phone is much smaller than that of a desktop). A web interface that adapts depending on the screen width is indeed called "responsive". There are 3 configurable breakpoints between 4 standard screen size associated with common devices:
+- the *Gutter width*, which is the space (in pixels) between the various elements that compose an interface of the portal (columns, rows, and boxes), and
+- the **Responsive breakpoints**, which are the various screen widths (in pixels) at which the layout should change to adapt to the available space (for example, the portal layout should differ depending on whether it is used from a mobile phone or a desktop because the screen of a mobile phone is much smaller than that of a desktop). A web interface that adapts depending on the screen width is indeed called "responsive". There are 3 configurable breakpoints between 4 standard screen size associated with common devices:
 
    - *Mobile to tablet*: to go from an extra-small screen to a small screen
    - *Tablet to desktop*: to go from a small screen to a medium screen
@@ -84,7 +84,7 @@ More specifically, in this tab, it is possible to modify:
 .. admonition:: Note
    :class: note
 
-   Mobile, Tablet, Desktop and Large desktop are used as reference because they are common devices that illustrate quite well the 4 standard screen sizes (extra-small , small , medium and large) that can be encountered. Keep in mind however that Mobile for example doesn't mean that the user is actually using a mobile device, but rather that the browser used by the user only offers an extra-small display area.
+   Mobile, Tablet, Desktop, and Large desktop are used as reference because they are common devices that illustrate quite well the 4 standard screen sizes (extra-small, small, medium, and large) that can be encountered. Keep in mind that Mobile, for example, doesn't mean that the user is actually using a mobile device, but rather that the browser used by the user only offers an extra-small display area.
 
 To modify a layout option:
 
@@ -100,14 +100,14 @@ Colors
 
 .. image:: images/theme_colors.png
 
-The **Colors** tab allows to customize the colors used in the texts and links, backgrounds and borders of the portal.
+The **Colors** tab allows to customize the colors used in the texts and links, backgrounds, and borders of the portal.
 
 .. admonition:: Important
    :class: important
 
-   If a :ref:`custom stylesheet <stylesheet>` has been created for the portal, the CSS rules that is contains will have precedence over the colors defined in the Colors tab.
+   If a :ref:`custom stylesheet <stylesheet>` has been created for the portal, the CSS rules that it contains will have precedence over the colors defined in the Colors tab.
 
-The color of following elements of an Opendatasoft portal can be configured in this tab:
+The color of the following elements of an Opendatasoft portal can be configured in this tab:
 
 .. list-table::
    :header-rows: 1
@@ -133,7 +133,7 @@ The color of following elements of an Opendatasoft portal can be configured in t
 
 To modify a theme color:
 
-1. In the chosen textbox, write the hexadecimal code of the new color, or click the color button to choose a new color using either the Nice colors, or the Color wheel.
+1. In the chosen textbox, write the hexadecimal code of the new color, or click the color button to choose a new color using either the Nice colors or the Color wheel.
 2. Click on the Save button in the top right corner.
 
 To reset to the color of the currently live portal theme, click on the |icon-reset| button.
@@ -151,7 +151,7 @@ To reset to the color of the currently live portal theme, click on the |icon-res
 
    The available variables are: ``text``, ``links``, ``titles``, ``page-background``, ``highlight``, ``boxes-background``, ``boxes-border``, ``section-titles``, ``section-titles-background``, ``header-background``, ``header-links``, ``footer-background`` and ``footer-links``.
 
-   These CSS variables are compatible with all browsers, because the Opendatasoft platform automatically replaces all variables with their real theme color values.
+   These CSS variables are compatible with all browsers because the Opendatasoft platform automatically replaces all variables with their real theme color values.
 
 .. _stylesheet:
 
@@ -167,7 +167,7 @@ To change the style of an element, find the element's class and change the desir
 .. admonition:: Note
    :class: note
 
-   When using specific images and fonts for the customization of the domain, don't hesitate to upload them as assets in the platform (see :doc:`Adding assets </customizing_look_and_feel/03_adding_assets/assets>`). It allows to easily copy the assets URLs and paste them in the CSS code.
+   When using specific images and fonts for the customization of the domain, don't hesitate to upload them as assets in the platform (see :doc:`Adding assets </customizing_look_and_feel/03_adding_assets/assets>`). It allows to easily copy the assets URLs and paste them into the CSS code.
 
 .. _header_footer:
 
@@ -178,14 +178,14 @@ Header and Footer
 
 The **Header** and **Footer** tabs each display an editor in which to add pure HTML. Although both the header and the footer can be partially customized via the :ref:`Colors <colors>` tab, these tabs allow to push even further the customization of these areas of the portal.
 
-Both the header and the footer are wrapped within independent AngularJS applications, which means that standard Angular directives such as ``ng-if``, ``ng-class``, ``ng-show`` and ``ng-hide`` can be used.
+Both the header and the footer are wrapped within independent AngularJS applications, which means that standard Angular directives such as ``ng-if``, ``ng-class``, ``ng-show``, and ``ng-hide`` can be used.
 
 .. admonition:: Note
    :class: note
 
    To collapse the header into a click-to-expand side menu below a certain viewport width, use the ``ods-responsive-menu`` directive.
 
-Placeholders can also be used when customizing the header and the footer: they will be replaced with the content specified in the domain customization options such as menu items, language selectors and logos.
+Placeholders can also be used when customizing the header and the footer: they will be replaced with the content specified in the domain customization options such as menu items, language selectors, and logos.
 
 The following placeholders are available in the **Header** tab:
 
@@ -251,7 +251,7 @@ The following directives allow to retrieve information related to a dataset, whi
    * * ``ods-catalog-card-theme-icon``
      * Retrieves the dataset's theme and includes the related icon
    * * ``ods-catalog-card-body``
-     * Provides useful style and behaviour handling edge cases (e.g. datasets without records)
+     * Provides useful style and behavior handling edge cases (for example, datasets without records)
    * * ``ods-catalog-card-title``
      * Retrieves the title of the dataset
    * * ``ods-catalog-card-description``

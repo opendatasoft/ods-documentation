@@ -8,9 +8,9 @@ Following dataset updates
 
    - If you have an Opendatasoft account, log in. Once logged in, the Follow button becomes clickable.
    - If you do not have an Opendatasoft account, and if the portal allows anonymous users to create an Opendatasoft account, sign up to the portal. Once signed up and logged in, the Follow button becomes clickable.
-   - If you do not have an Opendatasoft account, and if the portal doesn't allow anonymous users to sign up, the Follow button will not be displayed in the Information tab of any dataset, and you won't have the possiblity to follow a dataset.
+   - If you do not have an Opendatasoft account, and if the portal doesn't allow anonymous users to sign up, the Follow button will not be displayed in the Information tab of any dataset, and you won't have the possibility to follow a dataset.
 
-Users have the possibility to follow datasets they are particularly interested in, to be informed whenever the dataset is modified. The "follow dataset" feature is especially convenient for those whose creation (mobile application, website, academic paper etc.) relies on the data contained in a dataset.
+Users have the possibility to follow datasets they are particularly interested in, to be informed whenever the dataset is modified. The "follow dataset" feature is especially convenient for those whose creation (mobile application, website, academic paper, etc.) relies on the data contained in a dataset.
 
 To follow a dataset:
 

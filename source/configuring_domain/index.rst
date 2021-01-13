@@ -1,7 +1,7 @@
 Configuring a domain
 ====================
 
-In this section are listed and documented all features related to the configuration of an Opendatasoft domain, and the management of options for that domain. These features are available in the Configuration section of the back office of an Opendatasoft domain.
+In this section are listed and documented all features related to the configuration of an Opendatasoft domain and the management of options for that domain. These features are available in the Configuration section of the back office of an Opendatasoft domain.
 
 Managing security
 -----------------

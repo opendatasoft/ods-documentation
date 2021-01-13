@@ -46,10 +46,10 @@ The :ref:`geographic coverage metadata <geographic-coverage-metadata>` indicates
 
 1. In the Default geographic coverage textbox, write the name of the chosen location.
 2. A drop-down selection of existing locations matching the name that was previously typed appears. Click on the right location.
-3. (optional) Repeat steps 1 and 2 of this procedure to add other default locations (e.g. if the data of the portal involves more than one administrative division).
+3. (optional) Repeat steps 1 and 2 of this procedure to add other default locations (for example, if the data of the portal involves more than one administrative division).
 4. Click on the Save button in the top right corner of the page.
 
 .. admonition:: Caution
    :class: caution
 
-   If more than one default location are added, they must be at the same administrative level (e.g. countries, cities, regions, etc.).
+   If more than one default location is added, they must be at the same administrative level (for example, countries, cities, regions, etc.).

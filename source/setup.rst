@@ -19,12 +19,12 @@ Getting started with Opendatasoft
 Using Opendatasoft as an authenticated user
 -------------------------------------------
 
-Once logged in as an Opendatasoft user, you can navigate the front office of the domain (end-user interface) to :doc:`explore the catalog and datasets </exploring_catalog_and_datasets/index>` and even go further by  :doc:`creating maps and charts </creating_maps_charts/index>`. If you were also granted the right permissions, you can access the back office (administration interface) where it is possible to :doc:`publish data </publishing_data/index>`, :doc:`create content </creating_content/index>`, and :doc:`manage </managing_domain/index>` and :doc:`configure the domain </configuring_domain/index>`.
+Once logged in as an Opendatasoft user, you can navigate the domain's front office (end-user interface) to :doc:`explore the catalog and datasets </exploring_catalog_and_datasets/index>` and even go further by  :doc:`creating maps and charts </creating_maps_charts/index>`. If you are also granted the right permissions, you can access the back office (administration interface), where it is possible to :doc:`publish data </publishing_data/index>`, :doc:`create content </creating_content/index>`, and :doc:`manage </managing_domain/index>` and :doc:`configure the domain </configuring_domain/index>`.
 
 Depending on the domain, there are 2 ways to have an Opendatasoft account:
 
 - it may be possible to create a new account by clicking the "Signup" button that should be displayed in the top right corner (however, not all Opendatasoft domains allow users to signup),
-- or, one can be invited to an Opendatasoft domain by an administrator of that domain ; the new user then receives an email with a link to create a new account.
+- or, one can be invited to an Opendatasoft domain by an administrator of that domain; the new user then receives an email with a link to create a new account.
 
 Discovering a domain without having an Opendatasoft account
 -----------------------------------------------------------

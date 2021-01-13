@@ -5,7 +5,7 @@ Go to the *Analytics > Users* page.
 
 There are seven indicators :
 
-1. **Activity**: API calls per day. It may allow you to understand better who are the people using your data (for example if you mostly have calls during week days). You can also link your activity to some events (a new dataset, a new communication campaign).
+1. **Activity**: API calls per day. It may allow you to understand better who the people using your data are (for example, if you mostly have calls during week days). You can also link your activity to some events (a new dataset, a new communication campaign).
 
 .. ifconfig:: language == 'en'
 
@@ -29,7 +29,7 @@ There are seven indicators :
     .. image:: images/usage__users-usage-2-fr.jpg
         :alt: Usage Actions Indicateur Nombre total d'utilisateurs
 
-3. **API Calls per user**: on average API calls per users.
+3. **API Calls per user**: on average, API calls per user.
 
 .. ifconfig:: language == 'en'
 
@@ -41,7 +41,7 @@ There are seven indicators :
     .. image:: images/usage__users-usage-3-fr.jpg
         :alt: Usage Utilisateur Indicateur Appels API par Utilisateurs
 
-4. **Anonymous users**: Percentage of users without an account. If your domain is open, you may have a lot of anonymous users, that's normal, that's the whole thing about Open Data. Not anonymous people are those who have an Opendatasoft account and who are logged when they use your data.
+4. **Anonymous users**: Percentage of users without an account. If your domain is open, you may have a lot of anonymous users. That's normal. That's the whole thing about Open Data. Not anonymous people are those who have an Opendatasoft account and who are logged when they use your data.
 
 .. ifconfig:: language == 'en'
 
@@ -65,7 +65,7 @@ There are seven indicators :
     .. image:: images/usage__users-usage-5-fr.jpg
         :alt: Usage Utilisateur Indicateur Utilisateurs Mobiles
 
-6. **Top 5 users**: The people who use your API or your data the most. Keep in mind that if somebody downloads a dataset and develops something on his laptop, you won't be able to know it and it won't appear here.
+6. **Top 5 users**: The people who use your API or your data the most. Keep in mind that if somebody downloads a dataset and develops something on his laptop, you won't be able to know it, and it won't appear here.
 
 .. ifconfig:: language == 'en'
 
@@ -77,7 +77,7 @@ There are seven indicators :
     .. image:: images/usage__users-usage-6-fr.jpg
         :alt: Usage Utilisateur Indicateur Top 5 Utilisateurs
 
-7. **Map of API calls**: The map is based on the geolocation of IP addresses. It gives a good idea of the geographical distribution of usage. Yet it can be quite imprecise and may yield false geolocations.
+7. **Map of API calls**: The map is based on the geolocation of IP addresses. It gives a good idea of the geographical distribution of usage. However, it can be quite imprecise and may yield false geolocations.
 
 .. ifconfig:: language == 'en'
 

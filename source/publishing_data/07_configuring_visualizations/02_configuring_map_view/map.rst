@@ -7,7 +7,7 @@ Configuring the Map visualization
    For the Map visualization to be available, the dataset must contain at least one geographical field (:ref:`Geo point or Geo shape<choosingtype>`).
 
 
-In the edition interface of a dataset, the Visualizations > Map tab allows to configure the Map visualization displayed in the front office, once the dataset is published on the portal.
+In the edition interface of a dataset, the Visualizations > Map tab allows to configure the Map visualization displayed in the front office once the dataset is published on the portal.
 
 The Map visualization, when available, is optional. It can be enabled or disabled using the tick box displayed right under the visualizations tabs.
 
@@ -16,7 +16,7 @@ The Map visualization, when available, is optional. It can be enabled or disable
 Customizing the tooltip
 -----------------------
 
-The "Tooltip customization" section contains a variety of options to customize the tooltips that can be displayed on the Map visualization of a dataset. A tooltip is a box that appears when clicking on an element of the map that represents data (e.g. a map marker, a geographical shape). The tooltip displays information about its related data.
+The "Tooltip customization" section contains a variety of options to customize the tooltips that can be displayed on the Map visualization of a dataset. A tooltip is a box that appears when clicking on an element of the map that represents data (for example, a map marker, a geographical shape). The tooltip displays information about its related data.
 
 .. admonition:: Important
    :class: important
@@ -51,7 +51,7 @@ To customize the tooltips of the Map visualization, follow the instructions from
   * * Tooltip title
     * Title of the tooltip based on a chosen field from the dataset.
     * 1. Click on the "Tooltip title" list box.
-      2. Choose a field from the dataset, on which the title will be based.
+      2. Choose a field from the dataset on which the title will be based.
   * * Displayed fields
     * Fields from the dataset which values will be displayed in the tooltip. In the list, the fields with a grey background are those that will be displayed in the tooltip, whereas those without a colored background will be hidden from the tooltip.
     * To add a field in the tooltip:
@@ -71,7 +71,7 @@ To customize the tooltips of the Map visualization, follow the instructions from
   * * Sort in tooltips
     * When there is more than one element at a single place on the map, clicking it will display a single tooltip, but where it is possible to browse information about all these elements. It is possible to define a sort to order that information.
     * 1. Click on the "Sort in tooltips" list box.
-      2. Choose a field from the dataset, on which the sorting will be based.
+      2. Choose a field from the dataset on which the sorting will be based.
       3. Click on the second list box, displayed below the first one.
       4. Choose a sort type.
 
@@ -84,12 +84,12 @@ To customize the tooltips of the Map visualization, follow the instructions from
     * Description
     * Usage
   * * Custom HTML tooltip
-    * HTML area to write the content of the tooltip. 3 buttons above the text area allow to reindent a selection, reindent the whole HTML text and/or to wrap the lines.
+    * HTML area to write the content of the tooltip. 3 buttons above the text area allow to reindent a selection, reindent the whole HTML text, and/or to wrap the lines.
     * Write the content of the tooltip in HTML.
   * * Sort in tooltips
-    * When more than one tooltip is related to one same element on the map, it is possible to define a sort to order these tooltips.
+    * When more than one tooltip is related to the same element on the map, it is possible to define a sort to order these tooltips.
     * 1. Click on the "Sort in tooltips" list box.
-      2. Choose a field from the dataset, on which the sorting will be based.
+      2. Choose a field from the dataset on which the sorting will be based.
       3. Click on the second list box, displayed below the first one.
       4. Choose a sort type.
 
@@ -120,7 +120,7 @@ To configure the map of the Map visualization, follow the instructions from the 
     * 3 possible ways to display markers:
 
       - as Dots,
-      - as map Markers (by default, with a simple dot inside, but there can be any icon instead),
+      - as map Markers (by default, with a simple dot inside, but there can be an icon instead),
       - as an Icon.
     * To choose a marker display, tick the box related to the chosen one.
 

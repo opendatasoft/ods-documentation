@@ -8,7 +8,7 @@ In the Opendatasoft platform, all processing operations are done in the Processi
 .. image:: images/processing_parts.png
     :alt: Processing tab when publishing a new dataset
 
-On the left side (1), next to the dataset preview, is displayed the "Add a processor" button. It leads to the processors interface. Processors are tools that can be used to modify, improve and enrich the data (see :doc:`Adding processors to a dataset<adding_processors_to_a_dataset>`).
+On the left side (1), next to the dataset preview, is displayed the "Add a processor" button. It leads to the processors' interface. Processors are tools that can be used to modify, improve, and enrich the data (see :doc:`Adding processors to a dataset<adding_processors_to_a_dataset>`).
 
 On the right side (2) is the dataset preview. Directly in this preview is displayed a variety of buttons that can be used to define a schema for the dataset (see :doc:`Defining a dataset schema<defining_a_dataset_schema>`).
 

@@ -11,19 +11,19 @@ Creation
 
    It is mandatory to be the owner of the Airtable table to be able to connect it to Opendatasoft.
 
-1. Find your Airtable API URL from : 
+1. Find your Airtable API URL from: 
 
-- your workspace : Help > API documentation > [your base] > Authentication
-- your base : Choose your table then go in Help > API documentation > Authentication
+- your workspace: Help > API documentation > [your base] > Authentication
+- your base: Choose your table, then go to Help > API documentation > Authentication
 
-2. Check the ``show API key`` checkbox and copy the ``EXAMPLE USING QUERY PARAMETER`` without the curl, this is your API URL. (for example, `https://api.airtable.com/v0/base_id/table_name?api_key=api_key`)
-3. Enter the URL to the layer in the Enter a URL area, when creating a new dataset.
-4. Press Enter, or click the + button.
+2. Check the ``show API key`` checkbox and copy the ``EXAMPLE USING QUERY PARAMETER`` without the curl. This is your API URL. (for example, `https://api.airtable.com/v0/base_id/table_name?api_key=api_key`)
+3. Enter the URL to the layer in the Enter a URL area when creating a new dataset.
+4. Press Enter or click the + button.
 
 .. admonition:: Note
    :class: note
 
-   In the example `https://api.airtable.com/v0/base_id/table_name?api_key=api_key` the ``base_id`` field stands for the ID of your Airtable database. The ``table_name`` field  stands for the name of the table to import from the database in unicode.
+   In the example `https://api.airtable.com/v0/base_id/table_name?api_key=api_key`, the ``base_id`` field stands for the ID of your Airtable database. The ``table_name`` field  stands for the name of the table to import from the database in Unicode.
 
 Configuration
 -------------

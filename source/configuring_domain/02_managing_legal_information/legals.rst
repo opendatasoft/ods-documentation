@@ -4,7 +4,7 @@ Displaying legals
 Cookies and trackers information
 --------------------------------
 
-If you are located in the EU, you are required by law to display a message informing your users that the sites uses cookies, and for what purpose.
+If you are located in the EU, you are required by law to display a message informing your users that the site uses cookies, and for what purpose.
 
 You can choose to display this message in the ``Configuration`` menu, in the ``Legals`` section :
 
@@ -29,14 +29,14 @@ To specify the Terms and Conditions and the Privacy Policy of a portal, go to Co
 
 .. image:: images/cgu_3.png
 
-1. Choose one way of adding both the Terms & Conditions and the Privacy Policy on the domain. Click either:
+1. Choose one way of adding both the Terms & Conditions and the Privacy Policy on the domain: 
 
-- "*Use links to pages hosted on a different website*", if both Terms & Conditions and Privacy Policy are already hosted on another website (if this option is chosen, follow the section **A** of step 3),
-- or, "*Write custom Terms and Conditions and Privacy Policy*", to directly write or paste the conditions of use on the Opendatasoft platform (if this option is chosen, follow the section **B** of step 3).
+- click "*Use links to pages hosted on a different website*", if both Terms & Conditions and Privacy Policy are already hosted on another website (if this option is chosen, follow the section **A** of step 3), or
+- click "*Write custom Terms and Conditions and Privacy Policy*", to directly write or paste the conditions of use on the Opendatasoft platform (if this option is chosen, follow the section **B** of step 3).
 
 2. If the domain is available in more than one language: choose whether to display the conditions of use in only one language or to make them available in several languages.
 
-- Tick the "*Use the same texts for all languages*" box to use the same documents for all available languages (i.e. if the Terms & Conditions and Privacy Policy are only written and available in the language of the portal country, e.g. English, no matter the language selected by the user on the portal, the conditions of use will be displayed in English).
+- Tick the "*Use the same texts for all languages*" box to use the same documents for all available languages, that is, if the Terms & Conditions and Privacy Policy are only written and available in the language of the portal country, for example, English, no matter the language selected by the user on the portal, the conditions of use will be displayed in English).
 - Untick the "*Use the same texts for all languages*" box to specify different documents depending on the language. In that case, all available languages are displayed in the form of clickable grey boxes containing the code of each available language. The language codes are preceded by |icon-attention| if all documents have not been specified.
 
 .. admonition:: Important

@@ -4,7 +4,7 @@ Exporting data
 .. image:: images/export.png
    :alt: Export a dataset
 
-Opendatasoft datasets can be downloaded in various formats. Standard formats are always available, for any dataset. Other more specific formats can be available, but they depend on the nature of the data (i.e. if the dataset contains geographical coordinates or not).
+Opendatasoft datasets can be downloaded in various formats. Standard formats are always available for any dataset. Other more specific formats can be available, but they depend on the nature of the data (that is, if the dataset contains geographical coordinates or not).
 
 In the Export tab of a dataset, the following formats can be available:
 
@@ -18,7 +18,7 @@ In the Export tab of a dataset, the following formats can be available:
 .. admonition:: Note
    :class: note
 
-   Using the `Opendatasoft Search API <https://help.opendatasoft.com/apis/ods-search-v2/#exporting-records>`_, it is possible to download the dataset in other formats.
+   It is possible to download the dataset in other formats using the `Opendatasoft Search API <https://help.opendatasoft.com/apis/ods-search-v2/#exporting-records>`_.
 
 .. admonition:: Note
    :class: note
@@ -58,7 +58,7 @@ Downloading an image
 Exporting dataset to retrieve image URL
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. In the front office, go the Export tab of the dataset containing the image(s) to export.
+1. In the front office, go to the Export tab of the dataset containing the image(s) to export.
 2. Export the whole dataset, or part of it if it's filtered.
 3. Open the exported dataset in the spreadsheet software of your choice.
 4. Find the field containing the URLs of the image and retrieve them.

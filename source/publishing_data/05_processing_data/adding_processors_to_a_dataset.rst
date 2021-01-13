@@ -1,7 +1,7 @@
 Adding processors to a dataset
 ==============================
 
-Processors are tools that can be used in order to modify, improve or enrich the data of a dataset. In the Opendatasoft platform, processors are classified in 4 different categories:
+Processors are tools that can be used in order to modify, improve, or enrich the data of a dataset. In the Opendatasoft platform, processors are classified into 4 different categories:
 
 * Processors for geographical mapping
 * Processors for dates handling
@@ -13,12 +13,12 @@ To add a processor to a dataset:
 1. In the Processing tab, click on the **Add a processor** button.
 2. Choose the processor to add to the dataset.
 3. Using the documentation of the chosen processor, fill in the right parameters to set the processor.
-4. (optional) Click on the edition icon |icon-edit| to rename the processor. This step can especially be useful when a lot of processors are applied to a dataset, including multiple processors of the same type (e.g. renaming the multiple Expression processors applied to a dataset to know more easily which one contains which expression).
+4. (optional) Click on the edition icon |icon-edit| to rename the processor. This step can especially be useful when a lot of processors are applied to a dataset, including multiple processors of the same type (for example, renaming the multiple Expression processors applied to a dataset to know more easily which one contains which expression).
 
 .. admonition:: Note
    :class: note
 
-   You may need to click outside the processor box once the parameters are configured, to make sure the processor and the changes it triggers are taken into account and applied to the dataset.
+   You may need to click outside the processor box once the parameters are configured to make sure the processor and the changes it triggers are taken into account and applied to the dataset.
 
 .. admonition:: Note
    :class: note
@@ -55,9 +55,9 @@ Geographical processors
 
 Geographical processors are divided into 4 categories, according to what is tried to being achieved:
 
-- **Geocoders**: to convert a human readable address into a geo point.
-- **GeoJoin processor**: to retrieve geoshapes from normalized codes for country specific administrative divisions. The GeoJoin processor supports several countries, each of which features several indexing codes like postcode, state or region identifier, etc.
-- **Retrieve Administrative Divisions processor**: to retrieve the name, code and geoshape of country specific administrative divisions enclosing a geopoint.
+- **Geocoders**: to convert a human-readable address into a geo point.
+- **GeoJoin processor**: to retrieve geoshapes from normalized codes for country-specific administrative divisions. The GeoJoin processor supports several countries, each of which features several indexing codes like postcode, state or region identifier, etc.
+- **Retrieve Administrative Divisions processor**: to retrieve the name, code, and geoshape of country-specific administrative divisions enclosing a geopoint.
 - **Converters & Functions**: to simplify, convert or normalize geographical data, or run computations based on them.
 
 Geocoders
@@ -70,7 +70,7 @@ Geocoders
     * Description
     * Availability
   * * :doc:`Geocode with ArcGIS<processors/geocode_with_arcgis>`
-    * Geocode full text addresses by using the ArcGIS geocoding API
+    * Geocode full-text addresses by using the ArcGIS geocoding API
     * Default
   * * :doc:`Geocode with BAN (France)<processors/geocode_with_ban>`
     * Geocode addresses in France by using the Base d'Adresses Nationale (BAN) service
@@ -151,7 +151,7 @@ Converters & Functions
     * Provides privacy protection by approximating a geographical location within a specific radius
     * Default
   * * :doc:`Normalize projection reference<processors/normalize_projection_reference>`
-    * Replace a geopoint with its its WGS84 representation
+    * Replace a geopoint with its WGS84 representation
     * Default
   * * :doc:`Polygon filtering <processors/polygon_filtering>`
     * Remove points that are not in a polygon
@@ -226,8 +226,8 @@ Text processors
   * * :doc:`Extract URLs<processors/extract_url>`
     * Extract URLs from HTML or text contents
     * Default
-  * * :doc:`Normalize unicode values<processors/normalize_unicode_values>`
-    * Normalize unicode content using the Normalization Form Canonical Composition (NFC)
+  * * :doc:`Normalize Unicode values<processors/normalize_unicode_values>`
+    * Normalize Unicode content using the Normalization Form Canonical Composition (NFC)
     * Default
   * * :doc:`Normalize URL<processors/normalize_url>`
     * Normalize a field value to obtain a valid URL
@@ -274,7 +274,7 @@ Generic processors
     * Description
     * Availability
   * * :doc:`Add a field<processors/add_field>`
-    * Add a new empy field in a dataset
+    * Add a new empty field in a dataset
     * Default
   * * :doc:`Copy a field<processors/copy_field>`
     * Copy a field value from a field to another

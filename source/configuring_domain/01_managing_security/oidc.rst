@@ -35,17 +35,17 @@ Register your OpenID Connect provider on your domain
    As you have registered your Opendatasoft domain as an OpenID Connect client on your provider, you should get a pair of
    credentials, namely ``Client ID`` and ``Client secret``.
 
-   These credentials are used to authenticate requests made by the Opendatasoft plateform on the provider endpoint.
+   These credentials are used to authenticate requests made by the Opendatasoft platform on the provider endpoint.
 
-   Simply copy these credentials in the "Client ID" and "Client secret" fields.
+   Copy these credentials in the "Client ID" and "Client secret" fields.
 
 6. If you would like to use JWT tokens to impersonate API calls on the Opendatasoft platform, check the "Enable direct authentication with JWT bearer tokens" checkbox.
 
 7. List optional additional scopes
 
    Scopes in OpenID Connect are used to define the set of information (claims) an application would like to receive about a connected user.
-   By default, Opendatasoft uses the following scopes: openid, profile and email. These scopes make it possible to authenticate a user
-   and to retrieve their email, first name and last name.
+   By default, Opendatasoft uses the following scopes: openid, profile, and email. These scopes make it possible to authenticate a user
+   and to retrieve their email, first name, and last name.
 
    You can use additional scopes to add claims as additional attributes in a user's profile and use them in
    :doc:`datasets security filters </configuring_domain/01_managing_security/portal>`
@@ -53,10 +53,10 @@ Register your OpenID Connect provider on your domain
 8. List optional additional claims
 
    Claims are attributes that are collected during the authentication process and that describe the user. By default, Opendatasoft only
-   stores the `sub` claim. It is possible to store additionnal claims in the user profile. These claims can then be used in
+   stores the `sub` claim. It is possible to store additional claims in the user profile. These claims can then be used in
    :doc:`datasets security filters </configuring_domain/01_managing_security/portal>`.
 
-9. Input the URL on which the user can edit their user profile on the identity provider. When set, a link to this URL will be shown to the user in their user account page. If left blank, no URL will be shown to the user in their account page.
+9. Input the URL on which the user can edit their user profile on the identity provider. When set, a link to this URL will be shown to the user on their user account page. If left blank, no URL will be shown to the user on their account page.
 
 10. Customize the OpenID Connect login link text. If left blank, a localized default message will be displayed.
 
@@ -64,10 +64,10 @@ Register your OpenID Connect provider on your domain
 Register your domain on your identity provider
 ----------------------------------------------
 
-The configuration of the identity provider is implementation-dependant, but it usually consists into specifiying on the identity provider
+The configuration of the identity provider is implementation-dependant, but it usually consists of specifying on the identity provider
 the value of the redirection URI, which should be under the form ``https://<YOUR DOMAIN>/oidc/authenticate``.
 
-Some providers may support a preformated configuration document in JSON format. This document can be downloaded from the following
+Some providers may support a preformatted configuration document in JSON format. This document can be downloaded from the following
 address: ``https://<YOUR DOMAIN>/oidc/client_info``
 
 

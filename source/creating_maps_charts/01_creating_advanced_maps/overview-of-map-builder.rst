@@ -38,9 +38,9 @@ Overview of the Map Builder menu
 .. localizedimage:: images/overview-map-builder-menu.png
     :alt: Overview of the Map Builder menu
 
-The Map Builder menu is located at the very top of the map. Through this part of Map Builder, you can :doc:`rename and save a map <rename-and-save-a-map>`, :doc:`manage your maps<manage-your-maps>`, :doc:`reorder and group layers in a map <reorder-and-group-layers-in-a-map>`, :doc:`configure your map <configure-your-map>` and :doc:`share your map <share-your-map>`.
+The Map Builder menu is located at the very top of the map. Through this part of Map Builder, you can :doc:`rename and save a map <rename-and-save-a-map>`, :doc:`manage your maps<manage-your-maps>`, :doc:`reorder and group layers in a map <reorder-and-group-layers-in-a-map>`, :doc:`configure your map <configure-your-map>`, and :doc:`share your map <share-your-map>`.
 
-It displays the following information, action buttons and submenus:
+It displays the following information, action buttons, and submenus:
 
 * **My Maps**, to manage your maps, including your not-yet-saved maps (drafts)
 * the title of your map
@@ -48,7 +48,7 @@ It displays the following information, action buttons and submenus:
 * **Order and groups**, to manage in what order your datasets are displayed and to group your datasets together
 * **Configuration**, to define which features will be activated when your map is in preview or view mode
 * **Save**, to save your map
-* **Share**, to access links to share your map as a link, inside an iframe or as a widget pasted in a page
+* **Share**, to access links to share your map as a link, inside an iframe, or as a widget pasted in a page
 
 Overview of the interactive map of Map Builder
 ----------------------------------------------

@@ -19,12 +19,12 @@ Each dataset follows a schema. Fully defining and configuring a dataset schema m
 Changing a label
 ~~~~~~~~~~~~~~~~
 
-The Opendatasoft platform retrieves the default field labels found in the source dataset. It is however possible to change each dataset field label.
+The Opendatasoft platform retrieves the default field labels found in the source dataset. However, it is possible to change each dataset field label.
 
 .. admonition:: Note
    :class: note
 
-   We highly recommend to choose well-written, explicit labels. Also keep in mind that since these labels will be displayed in the front office for all portal users, it might be preferable to choose simple labels instead of business-specific terms, to make sure that the data can be understood by a wider audience.
+   We highly recommend to choose well-written, explicit labels. We highly recommend to choose well-written, explicit labels. Also, keep in mind that, since these labels will be displayed in the front office for all portal users, it might be preferable to choose simple labels instead of business-specific terms to make sure that a wider audience can understand the data.
 
 To change a label:
 
@@ -67,7 +67,7 @@ To choose a type for a field:
 1. In the preview area of the Processing tab, click on the field type list box of the field of your choice.
 2. Choose the right type for this field.
 
-There are 8 different types: date, datetime, decimal, integer, geopoint, geoshape, text and file.
+There are 8 different types: date, datetime, decimal, integer, geopoint, geoshape, text, and file.
 
 .. list-table::
    :header-rows: 1
@@ -76,7 +76,7 @@ There are 8 different types: date, datetime, decimal, integer, geopoint, geoshap
      * Description
    * * Date
      * Field values are dates.
-       The ideal format is the ISO 8601 format, which is ``YYYY-mm-dd``. Other formats are also understood by the platform, such as: ``YYYY/mm/dd`` or ``dd/mm/YYYY``.
+       The ideal format is the ISO 8601 format, which is ``YYYY-mm-dd``. Other formats are also understood by the platform, such as ``YYYY/mm/dd`` or ``dd/mm/YYYY``.
 
        .. admonition:: Note
           :class: note
@@ -85,7 +85,7 @@ There are 8 different types: date, datetime, decimal, integer, geopoint, geoshap
 
    * * DateTime
      * Field values are a combination of a date and a time.
-       The ideal format is the ISO 8601 format, which is ``YYYY-mm-ddTHH:MM:ss+00:00``, ``YYYY-mm-ddTHH:MM:ssZ`` or ``YYYYmmddTHHMMssZ``. Other formats are also understood by the platform, such as: ``YYYY-mm-dd-HH:MM:ss`` or or ``YYYY-mm-dd HH:MM:ss``.
+       The ideal format is the ISO 8601 format, which is ``YYYY-mm-ddTHH:MM:ss+00:00``, ``YYYY-mm-ddTHH:MM:ssZ`` or ``YYYYmmddTHHMMssZ``. Other formats are also understood by the platform, such as ``YYYY-mm-dd-HH:MM:ss`` or or ``YYYY-mm-dd HH:MM:ss``.
 
        .. admonition:: Note
           :class: note
@@ -95,14 +95,14 @@ There are 8 different types: date, datetime, decimal, integer, geopoint, geoshap
        .. admonition:: Note
           :class: note
 
-          By default, time records are in UTC timezone. To change the timezone, use the :doc:`Set Timezone processor<processors/set_timezone>`.
+          By default, time records are in the UTC timezone. To change the timezone, use the :doc:`Set Timezone processor<processors/set_timezone>`.
 
    * * Decimal
      * Field values are decimal numbers.
        Valid separators for the decimal part are ``.`` or ``,``.
 
    * * Geo point
-     * Field values are a single geographical location expressed in the format ``<LAT>,<LON>``, for instance
+     * Field values are a single geographical location expressed in the format ``<LAT>,<LON>``, for example, 
        ``45.8,2.5``.
 
        .. admonition:: Note
@@ -125,20 +125,20 @@ There are 8 different types: date, datetime, decimal, integer, geopoint, geoshap
 
    * * Integer
      * Field values are integer numbers.
-       If a floating point value is found, it is automatically cast to its integer part.
+       If a floating-point value is found, it is automatically cast to its integer part.
 
    * * Text
      * Field values are textual data.
 
    * * File
-     * Field values are files sourced with one of the available methods to :doc:`create a dataset with media files<../01_creating_a_dataset/creating_dataset_with_images>` (with the File processor, through an archive file or with a specific extractor), creating a field which default type is file. This field type is only available in that case.
+     * Field values are files sourced with one of the available methods to :doc:`create a dataset with media files<../01_creating_a_dataset/creating_dataset_with_images>` (with the File processor, through an archive file, or with a specific extractor), creating a field which default type is file. This field type is only available in that case.
 
 .. _settingfacets:
 
 Setting up fields as facets
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Facets define the filters of a dataset, which are displayed on the left of the dataset's visualization, in the front office. These filters have several purposes: they allow the users to find specific, precise records into a dataset, but they also allow the creation of charts afterward (if a field's records are other than numbers, they will be usable in the Chart Builder and in the Analyze view only if they are set up as facets).
+Facets define the filters of a dataset, which are displayed on the left of the dataset's visualization in the front office. These filters have several purposes: they allow the users to find specific, precise records into a dataset, but they also allow the creation of charts afterward (if a field's records are other than numbers, they will be usable in the Chart Builder and in the Analyze view only if they are set up as facets).
 
 .. admonition:: Note
    :class: note
@@ -167,21 +167,21 @@ Configuration options available for every field
    * * Configuration option
      * Description
    * * Name
-     * Technical identifier of the field. In contrary to the label, the technical identifier does not have aesthetic purposes and thus cannot contain special characters, including spaces. Technical identifiers can be used for instance when creating a custom tooltip with HTML.
+     * Technical identifier of the field. In contrary to the label, the technical identifier does not have aesthetic purposes and thus cannot contain special characters, including spaces. Technical identifiers can be used, for example, when creating a custom tooltip with HTML.
 
        .. admonition:: Warning
           :class: danger
 
-          Changing the technical identifier of a field could break reuses of the related dataset (custom tooltip, custom tab or pages). It could also be a problem if the source of the dataset is (regularly) updated: when replacing a source with a newer one, the platform checks the technical identifier of the fields of both sources in order to find a match between the two -then replacing the old data with the new ones. If technical identifiers are not the same anymore, the dataset cannot be updated.
+          Changing the technical identifier of a field could break reuses of the related dataset (custom tooltip, custom tab, or pages). It could also be a problem if the source of the dataset is (regularly) updated: when replacing a source with a newer one, the platform checks the technical identifier of the fields of both sources in order to find a match between the two -then replacing the old data with the new ones. If technical identifiers are not the same anymore, the dataset cannot be updated.
 
        To change the technical identifier of a field:
 
        1. Select the current technical identifier of the field, written in the text box under "Name".
-       2. Type a new technical identifier. It musn't contain special characters.
+       2. Type a new technical identifier. It mustn't contain special characters.
        3. Click outside the text box or press Enter for the change to be taken into account.
 
    * * Unique ID
-     * Each record is uniquely identified by its identifier, which is by default computed as the fingerprint of all the record fields values. If the Unique ID option is activated for a field, records with the same identifier (or value) are deleted for only the last/oldest one to stay in the dataset. It is most useful for real-time datasets, to make sure that instead of adding new records every time the dataset is updated, new values replace the old ones.
+     * Each record is uniquely identified by its identifier, which is by default computed as the fingerprint of all the record's field values. If the Unique ID option is activated for a field, records with the same identifier (or value) are deleted for only the last/oldest one to stay in the dataset. It is most useful for real-time datasets to make sure that instead of adding new records every time the dataset is updated, new values replace the old ones.
 
        To activate the Unique ID option of a field:
        Tick the Unique ID box.
@@ -206,7 +206,7 @@ Configuration options for date & datetime fields
 
        * year: only the year of the date is displayed in the dataset
        * month: only the month and year of the date are displayed in the dataset
-       * day: the full date (day, month and year) is displayed in the dataset
+       * day: the full date (day, month, and year) is displayed in the dataset
 
        For datetime fields:
 
@@ -229,10 +229,10 @@ Configuration options for decimals & integer fields
        To define a unit for a field:
 
        1. Click on the Unit list box of the field of your choice.
-       2. Choose the right unit among the list.
+       2. Choose the right unit from the list.
 
    * * Enforce the number of decimals to display
-     * Chosen number of decimals for all values of the field.
+     * The chosen number of decimals for all values of the field.
 
        To define a number of decimals for a field:
 
@@ -248,13 +248,14 @@ Configuration options for text fields
    * * Configuration option
      * Description
    * * Sortable
-     * By default, only numerical fields (decimals and integers) are sortable. This option activates sorting on textual fields. It is then possible, when in the Table view of the dataset in the front office, to sort text fields in an alphabetical order.
+     * By default, only numerical fields (decimals and integers) are sortable. This option activates sorting on textual fields. In the Table view of the dataset in the front office, it is then possible to sort text fields alphabetically.
 
        To make a field sortable:
        Tick the "Sortable" box.
 
+
    * * Multivalued
-     * This option is for multi-valued records separated by one same separator. Example: *France,UK,USA* When set up as a facet, each of the field's records values appears as a separate entry in the filters section. When clicking on one of the entry, all the other entries which are not related (meaning the entries which never appear in the same record as part of a multi-values combination) automatically disappear -only the related entries remain as available filter entries.
+     * This option is for multivalued records separated by one same separator. Example: *France,UK,USA* When set up as a facet, each of the field's records values appears as a separate entry in the filters section. When clicking on one of the entry, all the other entries which are not related (meaning the entries which never appear in the same record as part of a multivalues combination) automatically disappear -only the related entries remain as available filter entries.
 
        To activate the multivalued option:
 
@@ -263,21 +264,21 @@ Configuration options for text fields
        3. Click outside the text box or press Enter for the change to be taken into account.
 
    * * Hierarchical
-     * This option is for multi-valued records, separated by one same separator and which have a hierarchical relation. Example: *France/Ile-de-France/Paris* When set up as a facet, each first value of each record's multi-values combination appears as a separate entry in the filters section. When clicking on one entry, all second-level values related to that entry appear, and so on. Example: After clicking on the filter entry *France*, the related second-level entry *Ile-de-France* appears. After clicking on *Ile-de-France*, the related third-level entry *Paris* appears.
+     * This option is for multivalued records, separated by one same separator and which have a hierarchical relation. Example: *France/Ile-de-France/Paris* When set up as a facet, each first value of each record's multivalues combination appears as a separate entry in the filters section. When clicking on one entry, all second-level values related to that entry appear, and so on. Example: After clicking on the filter entry *France*, the related second-level entry *Ile-de-France* appears. After clicking on *Ile-de-France*, the related third-level entry *Paris* appears.
 
-       To activate the hierachical option:
+       To activate the hierarchical option:
 
        1. Tick the "Hierarchical" box.
        2. In the text box below, type the separator between the values of the records.
        3. Click outside the text box or press Enter for the change to be taken into account.
 
    * * Display only for specific languages
-     * This option is only available for domains which support more than one language. It allows to choose whether a field should be displayed for any language, or only specific ones. The configuration of this option affects neither the data itself nor the API, it only affects visualisations in the front office of the platform.
+     * This option is only available for domains that support more than one language. It allows to choose whether a field should be displayed for any language or only specific ones. The configuration of this option affects neither the data itself nor the API. It only affects visualizations in the front office of the platform.
 
        To make a field displayed for specific languages only:
 
        1. Tick the "Display only for specific language" box.
-       2. Among the list of languages available for the domain, tick those for which the field should be displayed.
+       2. From the list of languages available for the domain, tick those for which the field should be displayed.
 
 Configuration options for facets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -295,8 +296,8 @@ Configuration options for facets
        1. Click on the "Sort facet by" list box of the field of your choice.
        2. Choose a sorting order:
 
-       - Item counting (descending): entries are ordered from the one with the less records to the one with the most
-       - Item counting (ascending): entries are ordered from the one with the most records to the one with the less
+       - Item counting (descending): entries are ordered from the one with the fewer records to the one with the most
+       - Item counting (ascending): entries are ordered from the one with the most records to the one with the fewer
        - Name (descending): entries are ordered in an alphabetical order
        - Name (ascending): entries are ordered in a reverse alphabetical order
 
@@ -313,7 +314,7 @@ Ordering fields in datasets
 Dataset fields can be reordered in their dataset. It can have 2 kinds of impact:
 
 - In the filters section of the dataset, in the front office. Changing the order of the fields in the dataset also changes the order of the filters. The first facetted field of the dataset becomes the first displayed filter, and so on.
-- In case the dataset contains geo shape fields. The Map view cannot display more than one layer of geo shapes, the geo shapes layer displayed by default must thus be defined. To do so, the field containing the geo shapes to be displayed by default on the map must the ordered before all other geo shapes fields.
+- In case the dataset contains geo shape fields. The Map view cannot display more than one layer of geo shapes. The geo shapes layer displayed by default must thus be defined. To do so, the field containing the geo shapes to be displayed by default on the map must the ordered before all other geo shapes fields.
 
 To reorder a field in a dataset:
 
@@ -326,7 +327,7 @@ To reorder a field in a dataset:
 Discarding fields from datasets
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Dataset fields can be discarded from the dataset. It does not mean that the field is completely removed from the dataset but only deleted from the output. This is why, once the dataset is published, the discarded field will not be displayed in any visualization and if the dataset is exported, the discarded field will not be in the export.
+Dataset fields can be discarded from the dataset. It does not mean that the field is completely removed from the dataset but only deleted from the output. This is why, once the dataset is published, the discarded field will not be displayed in any visualization, and if the dataset is exported, the discarded field will not be in the export.
 
 To discard a field from a dataset:
 Click on the |icon-delete| button of the field you want to discard from the dataset.
@@ -336,7 +337,7 @@ Since discarded fields are not completely removed from the dataset, they can be 
 To restore a discarded field from a dataset:
 
 1. In the preview area of the Processing tab, swipe to the right to go to the last fields of the datasets.
-2. The discarded fields of the dataset appear at the very end of the dataset, they look like blank, grey columns named by their technical identifiers. Find those you want to restore.
+2. The discarded fields of the dataset appear at the very end of the dataset. They look like blank, grey columns named by their technical identifiers. Find those you want to restore.
 3. Click on the |icon-retrieve_discarded| button.
 
 

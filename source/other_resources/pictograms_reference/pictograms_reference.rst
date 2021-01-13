@@ -4,12 +4,12 @@ Pictograms reference
 Opendatasoft's geographical pictograms are minified scalable vector icons that can be used freely anywhere.
 
 These pictograms can be selected as a marker or as a map caption inside Opendatasoft's icon picker or used directly in widget code.
-To use the pictograms in a widget code simply paste the name starting with ods (e.g. ``ods-hotel``).
+To use the pictograms in a widget code, paste the name starting with ods (for example, ``ods-hotel``).
 
-These icons are distributed under the `Creative Commons Licence CC0 <https://creativecommons.org/publicdomain/zero/1.0/>`_ .
+These icons are distributed under the `Creative Commons Licence CC0 <https://creativecommons.org/publicdomain/zero/1.0/>`_.
 
 You can also :download:`download all the icons in zip <ODS-icons.zip>` (SVG, minified, 1.1Mb).
-You will need to use a vector image editing software or an svg inliner to change their color.
+You will need to use a vector image editing software or an SVG inliner to change their color.
 
 Accommodations
 --------------

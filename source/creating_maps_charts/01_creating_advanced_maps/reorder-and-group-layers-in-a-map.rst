@@ -6,19 +6,19 @@ Overview of the Order and groups interface
 
 You can reorder your layers and group some of them together.
 
-* Reordering layers can be handy, for instance if some of your layers are more important or demanded as others. You can thus move the most important and/or demanded layers at the very beginning of the list of layers, so that they can be found more easily.
-* Grouping layers can also come in handy. For example, you might want to display different layers on your map but that need to be displayed together to be really relevant. If you group these layers, you make them stick together: or they’re all displayed at the same time, or they’re all hidden.
+* Reordering layers can be handy, for example, if some of your layers are more important or requested than others. You can thus move the most important and/or requested layers at the very beginning of the list of layers so that they can be found more easily.
+* Grouping layers can also come in handy. For example, you might want to display different layers on your map, but they need to be displayed together to be really relevant. If you group these layers, you make them stick together: or they’re all displayed at the same time, or they’re all hidden.
 
-Order and groups management actions are made from the **Order and groups** interface. This interface is accessible from the Map Builder menu displayed at the very top of the map.
+Order and group management actions are made from the **Order and groups** interface. This interface is accessible from the Map Builder menu displayed at the very top of the map.
 
 .. localizedimage:: images/order-and-groups.png
     :alt: Zoom on the Map Builder menu where the link to Orders and Groups is
 
 The interface of **Order and Groups** is composed of:
 
-* **Group** button, to group layers
-* **Split** button, to split groups
-* a switch button, to see your map in **Multilayer** mode (several layers can be displayed at the same time) or in **Monolayer** mode (only one layer can be displayed on the map: choosing a layer automatically excludes the others)
+* a **Group** button to group layers
+* a **Split** button to split groups
+* a switch button to see your map in **Multilayer** mode (several layers can be displayed at the same time) or in **Monolayer** mode (only one layer can be displayed on the map: choosing a layer automatically excludes the others)
 * the complete list of the layers of your map, with the following action buttons:
 
   * a checkbox to select a layer, useful to group layers or split groups
