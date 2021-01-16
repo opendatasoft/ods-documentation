@@ -125,7 +125,7 @@ You can click on the pencil icon |edit-pencil| of a layer to change the selected
 
 The chart should look like this (you may have different colors): |second-layer|
 
-.. |second-layer| image:: images/second-layer.png
+.. |second-layer| image:: images/chart-layers-second.png
 
 
 Step 4: Finalize the chart configuration
@@ -137,17 +137,17 @@ Add a title to the chart.
 
 Here is the final configuration:
 
-.. image:: images/layers-params.png
+.. image:: images/chart-layers-params.png
 
 2. Click on the **Save this chart** button to create a short URL that you can embed or share.
 
 Here is the final result of the chart:
 
-.. image:: images/layers-final.png
+.. image:: images/chart-layers-final.png
 
 
 Other examples of charts
----------------------
+------------------------
 
 Column Chart
 ^^^^^^^^^^^^
