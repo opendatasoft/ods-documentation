@@ -5,7 +5,7 @@ The Chart Builder tool allows you to visualize multiple datasets on a single cus
 
 It is usually made available by the domain administrator via a **Charts** link in the header menu. You can also access the Chart Builder through the following URL: ``http://<DOMAIN ADDRESS>/chart``.
 
-The Chart Builder is more flexible than **Analyze** tab. With the Chart Builder, you're not limited to one dataset. You can combine combining different sources from your domain and the Opendatasoft network.
+The Chart Builder is more flexible than **Analyze** tab. With the Chart Builder, you're not limited to one dataset. You can combine different sources from your domain and the Opendatasoft network.
 
 After you create and save a chart, you can share it, embed it, or use it as a widget.
 
@@ -29,7 +29,6 @@ You can click **Filter data** to refine the data, but in our case, select the da
 In the configuration, you can choose the appropriate type of graph. Select **Column chart**.
 
 By default, Y-axis is set to **Count**, and the plot is a **Line**.
-You can choose the type of graph best suited to your data. Try selecting **Column chart** instead of **Line**.
 
 Next to this selection menu, you click on the color box to pick another color for the columns.
 
@@ -74,12 +73,9 @@ This example of chart relies on the following datasets:
 
 This chart compares Brent and WTI prices with gold prices between 1989 and 2019.
 
-To follow this example, add these datasets as sources.
 
 Step 1: Add a first layer
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Add the "Oil Prices" dataset as a first layer on this chart.
 
 1. Access the Chart Builder.
 
@@ -94,7 +90,7 @@ A line has been added to the chart.
 Step 2: Add a series
 ^^^^^^^^^^^^^^^^^^^^
 
-Add another series to show Brent prices.
+Add another series to show Brent prices:
 
 1. Click on the **Add a series** button.
 
@@ -107,7 +103,7 @@ A second line has been added to the chart.
 Step 3: Add another layer
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Add the "Gold Prices" dataset to see whether there is a correlation between oil prices and gold prices.
+Add the "Gold Prices" dataset to see whether there is a correlation between oil prices and gold prices:
 
 1. Click on the **Add a dataset to this layer** button.
 
