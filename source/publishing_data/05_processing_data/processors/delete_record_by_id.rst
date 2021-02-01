@@ -1,32 +1,61 @@
-Delete record by ID processor
+Delete record processor
 =============================
 
-This processor sends a delete order to remove an existing record of a dataset, based on the unique ID. It implies that the existing record will be deleted in both the current version of the dataset and its history. This processors indeed aims regularly updated datasets.
+The **Delete record** processor deletes existing records from a dataset based on field values or a condition. Records are deleted from the dataset's current version and the previous versions in the history. This processor aims at regularly updated datasets.
 
-Example: if a dataset contains a list of companies (with information such as status, number of employees, sector of activity etc.), it is regularly updated to make sure that all information about these companies are still valid. With the Delete record by ID processor, it is possible to delete records concerning companies that are now closed. It will not only delete the record from the most recent source from the last update, but also the records (concerning the closed company) from all previous sources of the dataset.
+For example, suppose a dataset contains a list of companies with information such as the company name, status, number of employees, etc. In that case, this dataset is regularly updated to make sure that all information about these companies is still valid. You can configure the **Delete record** processor to delete records concerning companies that are now closed:
+
+1. Select the field containing the company name in the processor parameters.
+2. Enter the name of the closed company in the **Value to skip** field.
+
+The processor will delete the following records that contain the name of the closed company in the specified field:
+
+- The record from the most recent source from the last update
+- The records from all previous sources of the dataset
 
 .. admonition:: Note
    :class: note
 
-   The changes applied to the dataset with this processor are not visible in the dataset preview of the Processing tab. Save, publish and explore the dataset in the front office to see the changes.
+   You cannot preview the changes made by the processor in the **Processing** tab.
+   
+   To see the changes made by the processor to the dataset, save, publish, and explore the dataset in the front office.
 
-Setting the processor
----------------------
+Delete record processor parameters
+----------------------------------
 
-To set the parameters of the Delete record by ID processor, follow the indications from the table below.
+The following table lists the **Delete record** processor parameters:
 
-.. list-table::
-  :header-rows: 1
-
-  * * Label
-    * Description
-    * Mandatory
-  * * Field
-    * Field containing the record value to delete
-    * yes
-  * * Value to skip
-    * Value to delete from the field's records
-    * no
-  * * Exact match
-    * If checked: the field must contain the exact value written in the **Value to skip** parameter. If unchecked: the field must at least contain what was written in the **Value to skip** parameter.
-    * no
++---------------+-------------------------------------+
+| Label         | Description                         |
++===============+=====================================+
+| Field         | Field containing the value on which |
+|               | record deletion is to be based.     |
+|               |                                     |
+|               | If you enter a boolean expression   |
+|               | as the **Value to skip** parameter, |
+|               | the **Field** parameter is not used.|
++---------------+-------------------------------------+
+| Value to skip | Boolean expression or value on which|
+|               | record deletion is to be based.     |
+|               |                                     |
+|               | If you enter a boolean expression,  |
+|               | only records for which the          |
+|               | expression is true are deleted.     |
++---------------+-------------------------------------+
+| Exact match   | When selected, the processor will   |
+|               | only delete records that contain an |
+|               | exact match for the value to skip in|
+|               | the specified field.                |
+|               |                                     |
+|               | When cleared, the processor will    |
+|               | delete records that contain the     |
+|               | value to skip anywhere within the   |
+|               | selected field. For example, suppose|
+|               | you enter ``Company`` as the value  |
+|               | to skip and select the ``name``     |
+|               | field in the parameters. In that    |
+|               | case, the processor will delete all |
+|               | records that contain values such as |
+|               | `Company` or `My Company` in their  |
+|               | ``name`` field.                     |
++---------------+-------------------------------------+
