@@ -282,8 +282,8 @@ Generic processors
   * * :doc:`Deduplicate multivalued fields <processors/deduplicate_multivalued_fields>`
     * Remove duplicated values in a multivalued field
     * Default
-  * * :doc:`Delete record by ID<processors/delete_record_by_id>`
-    * Remove an existing record, based on its unique ID, from a dataset
+  * * :doc:`Delete record <processors/delete_record_by_id>`
+    * Delete a record based on field values
     * Default
   * * :doc:`Expand JSON array<processors/expand_json_array>`
     * Transpose rows containing a JSON array into several rows
