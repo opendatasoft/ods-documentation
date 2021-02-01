@@ -252,7 +252,7 @@ Generic processors
   processors/add_field
   processors/copy_field
   processors/deduplicate_multivalued_fields
-  processors/delete_record_by_id
+  processors/delete_record
   processors/expand_json_array
   processors/expand_multivalued_field
   processors/expression
@@ -282,7 +282,7 @@ Generic processors
   * * :doc:`Deduplicate multivalued fields <processors/deduplicate_multivalued_fields>`
     * Remove duplicated values in a multivalued field
     * Default
-  * * :doc:`Delete record <processors/delete_record_by_id>`
+  * * :doc:`Delete record <processors/delete_record>`
     * Delete a record based on field values
     * Default
   * * :doc:`Expand JSON array<processors/expand_json_array>`
