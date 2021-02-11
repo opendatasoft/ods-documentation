@@ -4,19 +4,18 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Jérémy Morel, 2018
 # Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2018
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
-# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2020
+# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 11:00+0100\n"
+"POT-Creation-Date: 2021-02-11 14:52+0100\n"
 "PO-Revision-Date: 2018-06-27 09:08+0000\n"
-"Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2020\n"
+"Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2021\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -49,7 +48,7 @@ msgid "Navigate to the signup page in the domain configuration interface."
 msgstr "Rendez vous sur la page de configuration des intégrations du domaine."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:15
-msgid "Check \"Allow access for SAML users\""
+msgid "Check \"Allow access for SAML users\"."
 msgstr "Activez l'option \"Autoriser l'accès aux utilisateurs SAML\"."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:20
@@ -110,19 +109,19 @@ msgstr ""
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:32
 msgid ""
-"Input the attributes mappings for the username, last name, first name and "
+"Input the attributes mappings for the username, last name, first name, and "
 "email address."
 msgstr ""
 "Renseignez les mappings d'attributs pour le nom d'utilisateur, le nom de "
-"famille, le prénom et l'adresse email."
+"famille, le prénom et l'adresse e-mail."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:34
 msgid ""
-"Here, you need to declare the fields names as they are sent by the identity "
+"Here, you need to declare the field names as they are sent by the identity "
 "provider."
 msgstr ""
-"Il s'agit ici de remplir les champs correspondant avec le nom de l'attribut "
-"tel qu'envoyé par le fournisseur d'identité."
+"Il s'agit ici d'indiquer les noms de champ tels qu'envoyés par le "
+"fournisseur d'identité."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:36
 msgid ""
@@ -136,13 +135,13 @@ msgstr ""
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:39
 msgid ""
-"If for any reason your identity provider doesn't send all of these elements,"
-" let the corresponding fields blank. The platform will automatically "
-"generate them based on other available attributes."
+"If, for any reason, your identity provider doesn't send all of these "
+"elements, let the corresponding fields blank. The platform will "
+"automatically generate them based on other available attributes."
 msgstr ""
-"Si certaines de ces informations ne sont pas fournies par votre fournisseur "
-"d'identité, laissez les champs vides. La plateforme les générera "
-"automatiquement sur base des autres attributs définis."
+"Si certaines de ces informations ne sont pas communiquées par votre "
+"fournisseur d'identité, laissez les champs vides. La plateforme les générera"
+" automatiquement sur la base des autres attributs disponibles."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:42
 msgid "Input an access condition."
@@ -151,50 +150,49 @@ msgstr "Saisissez une condition d'accès."
 #: ../../source/configuring_domain/01_managing_security/saml.rst:44
 msgid ""
 "The first box is the name of the attribute to check for, and the second one "
-"the value of that attribute. If you just want to check for the presence of "
-"an attribute, without value restriction, just leave the second box blank. If"
-" both fields are left blank no condition is set and any successful login on "
-"the identity provider side will trigger a login on your Opendatasoft domain."
+"the value of that attribute. If you want to check for the presence of an "
+"attribute without value restriction, leave the second box blank. If both "
+"fields are left blank, no condition is set, and any successful login on the "
+"identity provider side will trigger a login on your Opendatasoft domain."
 msgstr ""
 "La première zone de texte est le nom de l'attribut à vérifier, et la seconde"
-" est la valeur que cet attribut doit prendre. Si vous désirez uniquement "
-"vérifier la présence d'un attribut, sans restriction de valeur, vous pouvez "
-"ne pas renseigner la seconde zone de texte. Si aucune des zones de texte "
-"n'est renseignée, aucune condition n'est fixée et toute connexion réussie du"
-" côté du fournisseur d'identité déclenchera une connexion à votre domaine "
-"Opendatasoft."
+" est la valeur de cet attribut. Si vous désirez vérifier la présence d'un "
+"attribut sans restriction de valeur, laissez la seconde zone de texte vide. "
+"Si aucune des zones de texte n'est renseignée, aucune condition n'est "
+"définie et toute connexion réussie du côté du fournisseur d'identité "
+"déclenchera une connexion à votre domaine Opendatasoft."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:48
 msgid ""
 "For instance, if your identity provider sends a list of \"Roles\" for the "
 "users and you want to make sure that only users that have a role can get "
-"access, input \"Roles\" in the first box under \"Conditionnal access\". If "
+"access, input \"Roles\" in the first box under \"Conditional access\". If "
 "you only want users with the role \"DataAccess\" to be able to connect to "
 "the domain, input \"DataAccess\" in the second box."
 msgstr ""
-"Par exemple, si votre IdP renvoie une liste de \"Roles\" pour les "
-"utilisateurs, et que vous voulez que seuls les utilisateurs qui ont un rôle "
-"puissent se connecter, renseignez \"Roles\" dans la première zone de texte. "
-"Si vous voulez vous assurer que seuls les utilisateurs qui ont le rôle "
-"\"DataAccess\" aient accès au domaine, entrez \"DataAccess\" dans la seconde"
-" zone de texte. "
+"Par exemple, si votre fournisseur d'identité envoie une liste de \"Roles\" "
+"pour les utilisateurs, et que vous voulez que seuls les utilisateurs qui ont"
+" un rôle puissent se connecter, renseignez \"Roles\" dans la première zone "
+"de texte sous \"Conditional access\". Si vous voulez vous assurer que seuls "
+"les utilisateurs qui ont le rôle \"DataAccess\" aient accès au domaine, "
+"entrez \"DataAccess\" dans la seconde zone de texte. "
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:50
 msgid ""
 "Input the URL on which the user can edit their user profile on the identity "
-"provider. When set, a link to this URL will be shown to the user in their "
-"user account page. If left blank, no URL will be shown to the user in their "
+"provider. When set, a link to this URL will be shown to the user on their "
+"user account page. If left blank, no URL will be shown to the user on their "
 "account page."
 msgstr ""
 "Saisissez l'URL vers laquelle l'utilisateur peut modifier son profil "
 "utilisateur sur le fournisseur d'identité. Une fois ce champ défini, un lien"
-" vers cette URL sera affiché pour l'utilisateur sur sa page de compte "
+" vers cette URL sera affiché pour l'utilisateur sur la page de son compte "
 "d'utilisateur. Si ce champ n'est pas renseigné, aucune URL ne s'affichera "
-"pour l'utilisateur sur sa page de compte."
+"pour l'utilisateur sur la page de son compte."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:52
 msgid ""
-"Input a custom EntityID for the Service Provider. If left blank the URL of "
+"Input a custom EntityID for the Service Provider. If left blank, the URL of "
 "the Service Provider metadata document will be used as the EntityID. If your"
 " identity provider doesn't support EntityIDs in URL format, you can set any "
 "EntityID here."
@@ -203,7 +201,7 @@ msgstr ""
 "champ n'est pas renseigné, l'URL du document de metadata pour le fournisseur"
 " de services sera utilisée en tant qu'EntityID. Si votre fournisseur "
 "d'identité ne prend pas en charge les EntityID au format URL, vous pouvez "
-"saisir l'EntityID de votre choix."
+"saisir l'EntityID de votre choix ici."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:54
 msgid ""
@@ -220,12 +218,12 @@ msgstr "Inscrire votre domaine sur votre fournisseur d'identité"
 #: ../../source/configuring_domain/01_managing_security/saml.rst:60
 msgid ""
 "The configuration of the identity provider is implementation-dependant, but "
-"it always consist of importing the service provider metadata document to "
-"enable a identity federation."
+"it always consists of importing the service provider metadata document to "
+"enable an identity federation."
 msgstr ""
 "La configuration du fournisseur d'identité dépend de l'implémentation de "
 "celui-ci, mais elle consiste toujours en l'import du document de metadata du"
-" fournisseur de service."
+" fournisseur de services pour que la fédération d'identité soit possible."
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:63
 msgid ""

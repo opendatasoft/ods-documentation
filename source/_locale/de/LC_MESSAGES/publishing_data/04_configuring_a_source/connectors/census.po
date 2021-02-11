@@ -5,16 +5,16 @@
 # 
 # Translators:
 # Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2020
-# traducteur_DE1 <datawords.translator.de1@gmail.com>, 2020
+# traducteur_DE1 <datawords.translator.de1@gmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 11:00+0100\n"
+"POT-Creation-Date: 2021-01-27 10:02+0100\n"
 "PO-Revision-Date: 2020-09-04 14:29+0000\n"
-"Last-Translator: traducteur_DE1 <datawords.translator.de1@gmail.com>, 2020\n"
+"Last-Translator: traducteur_DE1 <datawords.translator.de1@gmail.com>, 2021\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -57,7 +57,7 @@ msgid "Note"
 msgstr "Hinweis"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/census.rst:15
-msgid "Example 1 :"
+msgid "Example 1:"
 msgstr "1. Beispiel:"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/census.rst:16
@@ -71,7 +71,7 @@ msgstr ""
 "URL``https://api.census.gov/data/2014/pep/natstprc`` ."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/census.rst:17
-msgid "Example 2 :"
+msgid "Example 2:"
 msgstr "2. Beispiel:"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/census.rst:18
@@ -87,15 +87,14 @@ msgstr ""
 " ."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/census.rst:20
-msgid "Enter the URL in the Enter a URL area, when creating a new dataset."
+msgid "Enter the URL in the Enter a URL area when creating a new dataset."
 msgstr ""
 "Geben Sie die URL in den Bereich zur Eingabe der URL ein, wenn Sie einen "
 "neuen Datensatz erstellen."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/census.rst:21
-msgid "Press Enter, or click the + button."
-msgstr ""
-"Drücken Sie die Eingabetaste, oder klicken Sie auf die Schaltfläche +."
+msgid "Press Enter or click the + button."
+msgstr "Drücken Sie die Eingabetaste oder klicken Sie auf die Schaltfläche +."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/census.rst:24
 msgid "Configuration"
@@ -139,10 +138,10 @@ msgstr "Variablen"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/census.rst:38
 msgid ""
-"The list of variables to extract. If the URL contains a query the variables "
-"are extracted from it. If the area is left empty, the number of variables in"
-" the dataset is less than 50 and the required predicates filled, the "
-"connector will extract all the dataset. Else, the area should at least be "
+"The list of variables to extract. If the URL contains a query, the variables"
+" are extracted from it. If the area is left empty, the number of variables "
+"in the dataset is less than 50, and the required predicates filled, the "
+"connector will extract the whole dataset. Else, the area should at least be "
 "filled with required fields (see the dataset documentation)."
 msgstr ""
 "Die Liste der zu extrahierenden Variablen. Wenn die URL eine Anfrage "
@@ -157,7 +156,7 @@ msgid "Can be left empty"
 msgstr "Kann leer gelassen werden"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/census.rst:40
-msgid "Can be : ``ALL_VAL_YR`` is extracted from the URL"
+msgid "Can be: ``ALL_VAL_YR`` is extracted from the URL"
 msgstr "Kann sein: ``ALL_VAL_YR`` wird aus der URL extrahiert"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/census.rst:41
@@ -167,17 +166,18 @@ msgstr "Prädikate"
 #: ../../source/publishing_data/04_configuring_a_source/connectors/census.rst:42
 msgid ""
 "The list of predicates to filter the dataset. If the URL contains a query "
-"the predicates are extracted from it. If the area is left empty and the "
-"number of variables in the dataset is less than 50, the connector will "
-"extract all the dataset. The area should at least be filled with required "
-"predicates (see the dataset documentation)."
+"the predicates are extracted from it.  If the area is left empty, the number"
+" of variables in the dataset is less than 50, and the required predicates "
+"filled, the connector will extract the whole dataset. The area should at "
+"least be filled with required predicates (see the dataset documentation)."
 msgstr ""
 "Die Liste der Prädikate zum Filtern des Datensatzes. Wenn die URL eine "
 "Anfrage enthält, werden die Prädikate daraus extrahiert. Wenn der Bereich "
-"leer gelassen wird und die Anzahl der Variablen im Datensatz weniger als 50 "
-"beträgt, extrahiert der Konnektor den gesamten Datensatz. Der Bereich sollte"
-" zumindest mit den erforderlichen Prädikaten ausgefüllt sein (siehe "
-"Dokumentation des Datensatzes)."
+"leer gelassen wird, die Anzahl der Variablen im Datensatz weniger als 50 "
+"beträgt und die erforderlichen Prädikate gefüllt sind, extrahiert der "
+"Konnektor den gesamten Datensatz. Der Bereich sollte zumindest mit den "
+"erforderlichen Prädikaten ausgefüllt sein (siehe Dokumentation des "
+"Datensatzes)."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/census.rst:43
 msgid "``for=state:*`` (a ``for`` predicates is required)"
@@ -193,8 +193,8 @@ msgstr "API-Schlüssel"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/census.rst:46
 msgid ""
-"Use an API key to overide the Census API limit (500 queries per day). If the"
-" URL contains an API key, the key is extracted from it."
+"Use an API key to override the Census API limit (500 queries per day). If "
+"the URL contains an API key, the key is extracted from it."
 msgstr ""
 "Verwenden Sie einen API-Schlüssel, um das API-Limit von Census (500 Anfragen"
 " pro Tag) zu überschreiten. Wenn die URL einen API-Schlüssel enthält, wird "
