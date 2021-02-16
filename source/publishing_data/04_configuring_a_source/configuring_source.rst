@@ -1,40 +1,77 @@
-Configuring a source
-====================
+Configuring data sources
+========================
 
-Most of the time, datasets are based on at least one source, which contains data. When this source (no matter if it is a file, an API, or any other supported source type) is uploaded, the platform will automatically use a connector to be able to read and understand that source. When creating a new dataset, it is important to make sure that the preview is completely readable: it means that the source of the dataset has been well understood and configured.
+When adding a data source to a dataset, the Opendatasoft platform uses a connector to read and retrieve data.
 
-In the Opendatasoft platform, the configuration of a dataset source is done in the Source tab of the edition interface of each dataset.
+When you create a dataset, you start with configuring a data source and its connection.
 
-The configuration options of a source entirely depend on the source type, and both the way the source has been added to the dataset and the format of that source matter to determine that type. In the table below are listed the existing and available connectors, associated with their matching source types. Check both columns, then click the link on the connector name to find out about all related configuration options.
+After you create a dataset, you can add a new data source, or edit an existing data source and its connection using the **Sources** tab of the desired dataset.
+
+The following tables include the connectors available on the Opendatasoft platform.
+
+.. admonition:: Note
+   :class: note
+
+   Opendatasoft can develop and integrate customer-specific Web APIs. Opendatasoft connectivity toolkit makes it possible to develop performant and secured connectors supporting incremental data processing.
 
 
-.. toctree::
-   :hidden:
-
-   connectors/airtable
-   connectors/arcgis
-   connectors/census
-   connectors/csv
-   connectors/dataset_of_datasets
-   connectors/geojson
-   connectors/jcdecaux
-   connectors/json
-   connectors/kml
-   connectors/mapinfo
-   connectors/netatmo
-   connectors/openagenda
-   connectors/osm
-   connectors/salesforce
-   connectors/shapefile
-   connectors/spreadsheet
-   connectors/wfs
-   connectors/xml
-
+File connectors
+---------------
 
 .. list-table::
   :header-rows: 1
 
-  * * Name
+  * * Connector
+    * Description & Supported formats
+    * Availability
+  * * :doc:`CSV<connectors/csv>`
+    * Used for CSV (.csv), TSV (.tsv), Text (.txt) and DAT (.dat) files
+    * Default
+  * * :doc:`GeoJSON<connectors/geojson>`
+    * Used for GeoJSON (.geojson) files
+    * Default
+  * * :doc:`JSON<connectors/json>`
+    * Used for JSON (.json) files
+    * Default, except for JSON Dict
+  * * :doc:`KML<connectors/kml>`
+    * Used for KML (.kml) and KMZ (.kmz) files
+    * Default
+  * * :doc:`MapInfo<connectors/mapinfo>`
+    * Used for MapInfo ZIP archives
+    * Default
+  * * :doc:`OSM<connectors/osm>`
+    * Used for OpenStreetMap archives (.osm)
+    * Default
+  * * :doc:`Shapefile<connectors/shapefile>`
+    * Used for Shapefiles
+    * Default
+  * * :doc:`Spreadsheet<connectors/spreadsheet>`
+    * Used for spreadsheet files (.xls, .xlsx, .ods)
+    * Default
+  * * :doc:`XML<connectors/xml>`
+    * Used for XML (.xml) files
+    * Default
+
+.. toctree::
+   :hidden:
+
+   connectors/csv
+   connectors/geojson
+   connectors/json
+   connectors/kml
+   connectors/mapinfo
+   connectors/osm
+   connectors/shapefile
+   connectors/spreadsheet
+   connectors/xml
+
+Connectors to remote services
+-----------------------------
+
+.. list-table::
+  :header-rows: 1
+
+  * * Connector
     * Description & Supported formats
     * Availability
   * * :doc:`Airtable<connectors/airtable>`
@@ -46,48 +83,39 @@ The configuration options of a source entirely depend on the source type, and bo
   * * :doc:`Census<connectors/census>`
     * Used for data extracted from the US Census Bureau's API
     * On demand
-  * * :doc:`CSV<connectors/csv>`
-    * Used for CSV (.csv), TSV (.tsv), Text (.txt) and DAT (.dat) files
-    * Default
   * * :doc:`Dataset of datasets<connectors/dataset_of_datasets>`
     * Used to create a dataset from the catalog of an Opendatasoft domain
-    * Default
-  * * :doc:`GeoJSON<connectors/geojson>`
-    * Used for GeoJSON (.geojson) files
     * Default
   * * :doc:`JCDecaux<connectors/jcdecaux>`
     * Used to retrieve the state of JCDecaux bike stations
     * On demand
-  * * :doc:`JSON<connectors/json>`
-    * Used for JSON (.json) files
-    * Default, except for JSON Dict
-  * * :doc:`KML<connectors/kml>`
-    * Used for KML (.kml) and KMZ (.kmz) files
-    * Default
-  * * :doc:`MapInfo<connectors/mapinfo>`
-    * Used for MapInfo ZIP archives
-    * Default
   * * :doc:`Netatmo<connectors/netatmo>`
     * Used to retrieve data from the Netatmo API
     * On demand
   * * :doc:`OpenAgenda<connectors/openagenda>`
     * Used to retrieve events from OpenAgenda agendas
-    * On demand
-  * * :doc:`OSM<connectors/osm>`
-    * Used for OpenStreetMap archives (.osm)
-    * Default
+    * On demand 
   * * :doc:`Salesforce<connectors/salesforce>`
     * Used to retrieve data from the Salesforce API
     * On demand
-  * * :doc:`Shapefile<connectors/shapefile>`
-    * Used for Shapefiles
-    * Default
-  * * :doc:`Spreadsheet<connectors/spreadsheet>`
-    * Used for spreadsheet files (.xls, .xlsx, .ods)
-    * Default
   * * :doc:`WFS<connectors/wfs>`
     * Used to retrieve data from a WFS service
     * On demand
-  * * :doc:`XML<connectors/xml>`
-    * Used for XML (.xml) files
-    * Default
+
+.. admonition:: Important
+   :class: important
+
+   Contact your local support team to get on-demand connectors activated on your domain.
+
+.. toctree::
+   :hidden:
+
+   connectors/airtable
+   connectors/arcgis
+   connectors/census
+   connectors/dataset_of_datasets
+   connectors/jcdecaux
+   connectors/netatmo
+   connectors/openagenda
+   connectors/salesforce
+   connectors/wfs
