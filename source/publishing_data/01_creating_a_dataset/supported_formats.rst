@@ -4,12 +4,12 @@ Supported formats
 .. admonition:: Note
    :class: note
 
-   File formats support can be extended to match specific requirements (for instance, to support a complex XML or a non-standard flat file format). Contact your local support team if you need more information about extending the file formats supported.
+   File formats support can be extended to match specific requirements (for example, to support a complex XML or a non-standard flat file format). For more information, contact your local support team.
 
 Supported file formats
 ----------------------
 
-The following table lists the supported formats. Click the link on each connector name to know more about their available configuration options.
+The following table lists the supported file formats:
 
 .. list-table::
    :header-rows: 1
@@ -77,7 +77,9 @@ The following table lists the supported formats. Click the link on each connecto
 Supported compressed file formats
 ---------------------------------
 
-Opendatasoft also supports compressed file formats. These are useful to save space, since files added to a dataset can't be more than 240Mo. Compressed file formats can also be used in the platform to create a dataset with multiple files (see :doc:`Creating a dataset with multiple files<creating_dataset_with_multiple_files>`)
+Opendatasoft also supports compressed file formats. These are useful to save space, since files added to a dataset can't be more than 240Mo.
+
+You can also use compressed file formats on the platform to :doc:`create a dataset with multiple files<creating_dataset_with_multiple_files>`.
 
 * .zip (UTF-8 encoding for filenames is recommended)
 * .bz2
