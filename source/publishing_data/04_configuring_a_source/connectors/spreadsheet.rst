@@ -29,7 +29,7 @@ It is easier to load data from simple spreadsheets that follow good practices:
 Creation
 ~~~~~~~~
 
-See :doc:`how to source a file</publishing_data/01_creating_a_dataset/sourcing_data>`.
+For more information about adding a file data source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
 
 Configuration
 ~~~~~~~~~~~~~
