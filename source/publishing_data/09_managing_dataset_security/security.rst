@@ -14,9 +14,14 @@ Dataset exploration permissions
 Dataset access rights
 ~~~~~~~~~~~~~~~~~~~~~
 
-If you want anyone with access to your domain to be able to explore the dataset, you must uncheck the `Access restricted to allowed users and groups` option.
+If you want anyone with access to your domain to be able to explore the dataset, you must uncheck the **Access restricted to allowed users and groups** option.
 
 .. image:: images/security_access-restricted.png
+
+.. admonition:: note
+   :class: note
+
+   You can configure the **Access restricted to authorized users and groups** while creating a dataset.
 
 In this case, you can apply general filters for all people that access your dataset (see below for filter configuration). That filters will apply to all people that do not fall into the users and groups explicitly listed for this dataset. If a user is matched in the specific list of users, the general filters **will not apply**.
 
