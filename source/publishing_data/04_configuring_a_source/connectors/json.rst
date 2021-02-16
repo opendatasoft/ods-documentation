@@ -38,7 +38,7 @@ Supported field types
 Creation
 ~~~~~~~~
 
-See :doc:`how to source a file</publishing_data/01_creating_a_dataset/sourcing_data>`.
+For more information about adding a file data source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
 
 Configuration
 ~~~~~~~~~~~~~
@@ -168,7 +168,7 @@ Supported field types
 Creation
 ~~~~~~~~
 
-See :doc:`how to source a file</publishing_data/01_creating_a_dataset/sourcing_data>`.
+For more information about adding a file data source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
 
 Configuration
 ~~~~~~~~~~~~~
@@ -210,7 +210,7 @@ Supported field types
 Creation
 ~~~~~~~~
 
-See :doc:`how to source a file</publishing_data/01_creating_a_dataset/sourcing_data>`.
+For more information about adding a file data source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
 
 Configuration
 ~~~~~~~~~~~~~
