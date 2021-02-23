@@ -1,19 +1,29 @@
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Opendatasoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Translator_NL1 <datawords.translator.nl1@gmail.com>, 2021
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-11 14:52+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2021-02-11 15:49+0100\n"
+"PO-Revision-Date: 2021-02-11 14:58+0000\n"
+"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2021\n"
+"Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:2
 msgid "Delete record processor"
-msgstr ""
+msgstr "Record processor verwijderen"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:4
 msgid ""
@@ -22,6 +32,10 @@ msgid ""
 " current version and the previous versions in the history. This processor "
 "aims at regularly updated datasets."
 msgstr ""
+"De processor **Record verwijderen** verwijdert bestaande records uit een "
+"dataset op basis van veldwaarden of een voorwaarde. Records worden "
+"verwijderd uit de huidige versie van de dataset en de vorige versies in de "
+"historiek. Deze processor streeft naar regelmatig geüpdatete datasets."
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:6
 msgid ""
@@ -31,99 +45,127 @@ msgid ""
 "these companies is still valid. You can configure the **Delete record** "
 "processor to delete records concerning companies that are now closed:"
 msgstr ""
+"Voorbeeld: veronderstel dat een dataset een lijst met ondernemingen bevat "
+"met informatie zoals de firmanaam, de status, het aantal werknemers, enz. In"
+" dat geval wordt de dataset regelmatig geüpdatet om er zeker van te zijn dat"
+" de informatie over deze ondernemingen nog altijd geldig is. U kunt de "
+"processor **Record verwijderen** om records over ondernemingen die nu "
+"gesloten zijn, te verwijderen:"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:8
 msgid ""
 "Select the field containing the company name in the processor parameters."
-msgstr ""
+msgstr "Select het veld met de firmanaam in de parameters van de processor."
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:9
 msgid "Enter the name of the closed company in the **Value to skip** field."
 msgstr ""
+"Voer de naam van de gesloten onderneming in het veld **Waarde om over te "
+"slaan** in."
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:11
 msgid ""
 "The processor will delete the following records that contain the name of the"
 " closed company in the specified field:"
 msgstr ""
+"De processor zal de volgende records verwijderen die de naam van de gesloten"
+" onderneming in het gespecificeerde veld bevat verwijderen."
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:13
 msgid "The record from the most recent source from the last update"
-msgstr ""
+msgstr "Het record uit de meest recente bron uit de laatst geüpdatete"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:14
 msgid "The records from all previous sources of the dataset"
-msgstr ""
+msgstr "De records uit alle vorige bronnen van de dataset"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:16
 msgid "Note"
-msgstr ""
+msgstr "Opmerking"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:19
 msgid ""
 "You cannot preview the changes made by the processor in the **Processing** "
 "tab."
 msgstr ""
+"U kan de wijzigingen die door de processor aangebracht zijn niet vooraf "
+"bekijken in het tabblad **Verwerken**."
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:21
 msgid ""
 "To see the changes made by the processor to the dataset, save, publish, and "
 "explore the dataset in the front office."
 msgstr ""
+"Om de wijzigingen die door de processor aan de dataset aangebracht zijn, te "
+"zien, te bewaren, te publiceren en de dataset in de front office te "
+"onderzoeken."
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:24
 msgid "Delete record processor parameters"
-msgstr ""
+msgstr "De parameters van de record processor verwijderen"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:26
 msgid "The following table lists the **Delete record** processor parameters:"
 msgstr ""
+"In de volgende tabel staan de parameters van de processor **Record "
+"verwijderen** opgelijst:"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:29
 msgid "Label"
-msgstr ""
+msgstr "Label"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:29
 msgid "Description"
-msgstr ""
+msgstr "Omschrijving"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:31
 msgid "Field"
-msgstr ""
+msgstr "Veld"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:31
 msgid "Field containing the value on which record deletion is to be based."
 msgstr ""
+"Veld met de waarde waarop de verwijdering van het record moet worden "
+"gebaseerd."
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:34
 msgid ""
 "If you enter a boolean expression as the **Value to skip** parameter, the "
 "**Field** parameter is not used."
 msgstr ""
+"Wanneer u een booleaanse uitdrukking invoert als de parameter **Waarde om "
+"over te slaan**, wordt de parameter **Veld** niet gebruikt."
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:38
 msgid "Value to skip"
-msgstr ""
+msgstr "Waarde om over te slaan"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:38
 msgid "Boolean expression or value on which record deletion is to be based."
 msgstr ""
+"Booleaanse uitdrukking of waarde waarop de verwijdering van het record moet "
+"worden gebaseerd."
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:41
 msgid ""
 "If you enter a boolean expression, only records for which the expression is "
 "true are deleted."
 msgstr ""
+"Wanneer u een booleaanse uitdrukking invoert, worden enkel records waarvoor "
+"de uitdrukking waar is, verwijderd."
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:45
 msgid "Exact match"
-msgstr ""
+msgstr "Exacte match"
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:45
 msgid ""
 "When selected, the processor will only delete records that contain an exact "
 "match for the value to skip in the specified field."
 msgstr ""
+"Wanneer deze wordt geselecteerd, zal de processor enkel records verwijderen "
+"die een exacte match bevatten voor de waarde die moet worden overgeslagen in"
+" het gespecificeerde veld."
 
 #: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:50
 msgid ""
@@ -133,3 +175,9 @@ msgid ""
 "parameters. In that case, the processor will delete all records that contain"
 " values such as `Company` or `My Company` in their ``name`` field."
 msgstr ""
+"Wanneer deze wordt leeggemaakt, zal de processor records verwijderen die de "
+"waarde om over te slaan bevatten waar ook in het geselecteerde veld. "
+"Bijvoorbeeld, veronderstel dat u ``Onderneming`` invoert als de waarde die "
+"moet worden overgeslagen en het veld ``naam`` selecteert in de parameters. "
+"In dat geval zal de processor alle records verwijderen die waarden bevatten "
+"zoals `Onderneming` of `Mijn onderneming` in hun veld ``naam``."
