@@ -24,7 +24,7 @@ To set the parameters of the Replace via regular expression processor, follow th
     * no
     *
   * * Regular expression
-    * Regular expression to determine which part of the values will be replaced or removed. See `<http://en.wikipedia.org/wiki/Regular_expression>`_ for more details on how to write a regular expressions. It is also possible to test regular expressions with an online debugger tool like `Regex101 <https://regex101.com/>`_.
+    * Regular expression to determine which part of the values will be replaced or removed. See `<https://en.wikipedia.org/wiki/Regular_expression>`_ for more details on how to write a regular expressions. It is also possible to test regular expressions with an online debugger tool like `Regex101 <https://regex101.com/>`_.
     * yes
     *
   * * New value

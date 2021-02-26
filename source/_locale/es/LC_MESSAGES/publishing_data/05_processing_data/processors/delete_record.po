@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Opendatasoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-11 15:49+0100\n"
+"PO-Revision-Date: 2021-02-11 14:58+0000\n"
+"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021\n"
+"Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:2
+msgid "Delete record processor"
+msgstr "Procesador Suprimir registro"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:4
+msgid ""
+"The **Delete record** processor deletes existing records from a dataset "
+"based on field values or a condition. Records are deleted from the dataset's"
+" current version and the previous versions in the history. This processor "
+"aims at regularly updated datasets."
+msgstr ""
+"El procesador **Suprimir registro** suprime los registros existentes de un "
+"conjunto de datos en función de los valores de campo o una condición. Los "
+"registros se suprimen tanto de la versión actual del conjunto de datos como "
+"de las versiones anteriores. Este procesador está pensado para los conjuntos"
+" de datos que se actualizan periódicamente."
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:6
+msgid ""
+"For example, suppose a dataset contains a list of companies with information"
+" such as the company name, status, number of employees, etc. In that case, "
+"this dataset is regularly updated to make sure that all information about "
+"these companies is still valid. You can configure the **Delete record** "
+"processor to delete records concerning companies that are now closed:"
+msgstr ""
+"Por ejemplo, suponga que  un conjunto de datos contiene una lista de "
+"empresas con información como nombre de empresa, estatus, número de "
+"empleados, etc. En este caso, este conjunto de datos se actualiza "
+"periódicamente para asegurarse de que toda la información de estas empresas "
+"siga siendo válida. Puede configurar el procesador **Suprimir registro** "
+"para suprimir registros sobre empresas que ya estén cerradas."
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:8
+msgid ""
+"Select the field containing the company name in the processor parameters."
+msgstr ""
+"Seleccione el campo que contiene el nombre de empresa en los parámetros del "
+"procesador."
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:9
+msgid "Enter the name of the closed company in the **Value to skip** field."
+msgstr ""
+"Introduzca el nombre de la empresa cerrada en el campo **Valor para "
+"omitir**."
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:11
+msgid ""
+"The processor will delete the following records that contain the name of the"
+" closed company in the specified field:"
+msgstr ""
+"El procesador suprimirá los siguientes registros que contengan el nombre de "
+"la empresa cerrada en el campo especificado:"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:13
+msgid "The record from the most recent source from the last update"
+msgstr "El registro del origen más reciente de la última actualización"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:14
+msgid "The records from all previous sources of the dataset"
+msgstr "Los registros de todos los orígenes anteriores del conjunto de datos"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:16
+msgid "Note"
+msgstr "Nota"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:19
+msgid ""
+"You cannot preview the changes made by the processor in the **Processing** "
+"tab."
+msgstr ""
+"No puede obtener una vista previa de los cambios efectuados por el "
+"procesador en la ficha **Procesadores**."
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:21
+msgid ""
+"To see the changes made by the processor to the dataset, save, publish, and "
+"explore the dataset in the front office."
+msgstr ""
+"Para ver los cambios realizados por el procesador en el conjunto de datos, "
+"guarde, publique y explore el conjunto de datos en el front office."
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:24
+msgid "Delete record processor parameters"
+msgstr "Parámetros del procesador Suprimir registro"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:26
+msgid "The following table lists the **Delete record** processor parameters:"
+msgstr ""
+"La siguiente tabla muestra los parámetros del procesador **Suprimir "
+"registro**:"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:29
+msgid "Label"
+msgstr "Etiqueta"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:29
+msgid "Description"
+msgstr "Descripción"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:31
+msgid "Field"
+msgstr "Campo"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:31
+msgid "Field containing the value on which record deletion is to be based."
+msgstr "Campo que contiene el valor en que se basa la supresión de registros."
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:34
+msgid ""
+"If you enter a boolean expression as the **Value to skip** parameter, the "
+"**Field** parameter is not used."
+msgstr ""
+"Si introduce una expresión booleana en el parámetro **Valor para omitir**, "
+"el parámetro **Campo** no se utiliza."
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:38
+msgid "Value to skip"
+msgstr "Valor para omitir"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:38
+msgid "Boolean expression or value on which record deletion is to be based."
+msgstr "Expresión booleana o valor en que se basa la supresión de registros."
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:41
+msgid ""
+"If you enter a boolean expression, only records for which the expression is "
+"true are deleted."
+msgstr ""
+"Si introduce una expresión booleana, solo se suprimen los registros para los"
+" cuales la expresión es verdadera."
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:45
+msgid "Exact match"
+msgstr "Coincidencia exacta"
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:45
+msgid ""
+"When selected, the processor will only delete records that contain an exact "
+"match for the value to skip in the specified field."
+msgstr ""
+"Si se selecciona, el procesador solo suprimirá los registros que contengan "
+"una coincidencia exacta del valor para omitir en el campo especificado."
+
+#: ../../source/publishing_data/05_processing_data/processors/delete_record.rst:50
+msgid ""
+"When cleared, the processor will delete records that contain the value to "
+"skip anywhere within the selected field. For example, suppose you enter "
+"``Company`` as the value to skip and select the ``name`` field in the "
+"parameters. In that case, the processor will delete all records that contain"
+" values such as `Company` or `My Company` in their ``name`` field."
+msgstr ""
+"Si no se selecciona, el procesador suprimirá los registros que contengan el "
+"valor para omitir en cualquier lugar dentro del campo seleccionado. Por "
+"ejemplo, suponga que introduce ``Company`` como valor para omitir y "
+"selecciona el campo ``name`` en los parámetros. En ese caso, el procesador "
+"suprimirá todos los registros que contengan valores como `Company` o `My "
+"Company` en el campo ``name``."

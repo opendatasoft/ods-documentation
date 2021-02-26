@@ -1,11 +1,11 @@
 Analyzing dataset usage
 =======================
 
-Go to the *Catalog > Datasets* page. Then for each dataset there is a *Monitoring* link.
+Go to the *Catalog > Datasets* page. There is a *Monitoring* link for each dataset.
 
-There are seven indicators :
+There are seven indicators:
 
-1. **Actions**: Frequency and distribution of actions (analyze, geo, search) taken by users based on API calls. Gives you precious information about what your users do and how to better serve them. Also remember that like with every charts on Opendatasoft you can filter the variables displayed (Analyze, Geo or Search) by clicking on the legend labels.
+1. **Actions**: Frequency and distribution of actions (analyze, geo, search) taken by users based on API calls. It gives you precious information about what your users do and how to serve them better. Remember that, like with every chart on Opendatasoft, you can filter the variables displayed (Analyze, Geo, or Search) by clicking on the legend labels.
 
 .. ifconfig:: language == 'en'
 
@@ -29,7 +29,7 @@ There are seven indicators :
     .. image:: images/usage__dataset-usage-2-fr.jpg
         :alt: Total utilisateurs
 
-3. **API calls per user**: on average API calls per users.
+3. **API calls per user**: on average, API calls per user.
 
 .. ifconfig:: language == 'en'
 
@@ -56,7 +56,7 @@ There are seven indicators :
 5. **Text searches**
 
 
-6. **API call sources**: Distribution of the API call per page based on number of API calls.
+6. **API call sources**: Distribution of the API call per page based on the number of API calls.
 
 .. ifconfig:: language == 'en'
 
@@ -68,7 +68,7 @@ There are seven indicators :
     .. image:: images/usage__dataset-usage-6-fr.jpg
         :alt: Sources des appels API
 
-7. **Map of API calls**: The map is based on the geolocation of IP addresses. It gives a good idea of the geographical distribution of usage. Yet it can be quite imprecise and may yield false geolocations.
+7. **Map of API calls**: The map is based on the geolocation of IP addresses. It gives a good idea of the geographical distribution of usage. However, it can be quite imprecise and may yield false geolocations.
 
 .. ifconfig:: language == 'en'
 

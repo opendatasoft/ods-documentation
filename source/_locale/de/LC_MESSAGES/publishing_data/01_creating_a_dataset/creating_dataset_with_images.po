@@ -6,18 +6,17 @@
 # Translators:
 # traducteur_DE2 <datawords.translator.de2@gmail.com>, 2018
 # Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2019
-# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
 # Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2019
-# traducteur_DE1 <datawords.translator.de1@gmail.com>, 2019
+# traducteur_DE1 <datawords.translator.de1@gmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 11:00+0100\n"
+"POT-Creation-Date: 2021-02-11 15:49+0100\n"
 "PO-Revision-Date: 2018-06-27 09:13+0000\n"
-"Last-Translator: traducteur_DE1 <datawords.translator.de1@gmail.com>, 2019\n"
+"Last-Translator: traducteur_DE1 <datawords.translator.de1@gmail.com>, 2021\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -65,8 +64,8 @@ msgstr ""
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:15
 msgid ""
-"However, for other formats that are not considered as images such as PDF and"
-" GTFS files, no thumbnail will be generated. It means that the Images "
+"However, for other formats that are not considered as images, such as PDF "
+"and GTFS files, no thumbnail will be generated. It means that the Images "
 "visualization will not be available. Users will only be able to download "
 "these files."
 msgstr ""
@@ -89,9 +88,9 @@ msgstr "Mediendateien mit einem Archiv hinzufügen."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:22
 msgid ""
-"This method consists in building an archive file (see :ref:`Supported "
-"compressed file formats<supportedcompressedformats>`) with the media files, "
-"and then to import it into the platform."
+"This method consists of building an archive file (see :ref:`Supported "
+"compressed file formats<supportedcompressedformats>`) with the media files "
+"and then importing it into the platform."
 msgstr ""
 "Bei dieser Methode erzeugen Sie eine Archivdatei (siehe :ref:`Unterstützte "
 "komprimierte Dateiformate<supportedcompressedformats>`) mit Mediendateien, "
@@ -115,15 +114,14 @@ msgstr "eine CSV-Datei, die die Mediendateien und Metadaten auflistet"
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:32
 msgid ""
-"No matter what the format of the media files is, both these media files and "
-"CSV file must be zipped together. For instance, if the media files are "
-"already zipped files, they must be zipped again altogether with the CSV "
-"file."
+"No matter the format of the media files, they must be zipped together with "
+"the CSV file. For instance, if the media files are already zipped files, "
+"they must be zipped again altogether with the CSV file."
 msgstr ""
-"Unabhängig vom Format der Mediendateien müssen sowohl diese Mediendateien "
-"als auch die CSV-Datei zusammen gezippt werden. Wenn es sich bei den "
-"Mediendateien bereits um gezippte Dateien handelt, müssen sie zusammen mit "
-"der CSV-Datei erneut gezippt werden."
+"Unabhängig vom Format der Mediendateien müssen diese Mediendateien sowie die"
+" CSV-Datei zusammen gezippt werden. Wenn es sich bei den Mediendateien "
+"bereits um gezippte Dateien handelt, müssen sie zusammen mit der CSV-Datei "
+"erneut gezippt werden."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:34
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:39
@@ -132,7 +130,7 @@ msgstr "Vorsicht"
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:37
 msgid ""
-"We recommend to keep all images at the same level into the archive file. "
+"We recommend keeping all images at the same level in the archive file. "
 "However, if images are into subdirectories, keep in mind to write the whole "
 "path in the CSV file."
 msgstr ""
@@ -153,7 +151,7 @@ msgstr "Die CSV-Datei der Archivdatei erstellen"
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:47
 msgid ""
 "The CSV file must at least contain a column with the names of the media "
-"files. It can contain other columns, that will be considered as additional "
+"files. It can contain other columns that will be considered as additional "
 "fields."
 msgstr ""
 "Die CSV-Datei muss mindestens eine Spalte mit den Namen der Mediendateien "
@@ -282,7 +280,7 @@ msgid "Click on the **Upload a file** button."
 msgstr "Klicken Sie auf den Button **Eine Datei hochladen**."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:93
-msgid "Choose the archive file you created, with your media files inside."
+msgid "Choose the archive file you created with your media files inside."
 msgstr ""
 "Wählen Sie die von Ihnen erstellte Archivdatei, die Ihre Mediendateien "
 "enthält."
@@ -297,9 +295,9 @@ msgstr "Mediendateien über eine URL hinzufügen"
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:100
 msgid ""
-"This method consists in sourcing any :doc:`supported format "
-"<supported_formats>` file, containing URLs of media files stored in a remote"
-" server, and using a processor to define the media files and extract their "
+"This method consists of sourcing any :doc:`supported format "
+"<supported_formats>` file containing URLs of media files stored in a remote "
+"server and using a processor to define the media files and extract their "
 "metadata."
 msgstr ""
 "Bei dieser Methode werden Dateien aller :doc:`unterstützten "
@@ -314,11 +312,11 @@ msgstr "Hinweis"
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:105
 msgid ""
-"For this method, Opendatasoft supports the following protocols: http, and "
-"its secured version https. Both should link to a single file."
+"For this method, Opendatasoft supports the following protocols: HTTP, and "
+"its secured version HTTPS. Both should link to a single file."
 msgstr ""
 "Opendatasoft unterstützt die folgenden Protokolle für diese Vorgehensweise: "
-"http und die abgesicherte Version https, beide mit einem Link zu einer "
+"HTTP und die abgesicherte Version HTTPS, beide mit einem Link zu einer "
 "Einzeldatei."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:109
@@ -340,7 +338,7 @@ msgid "Click on the **Add a processor** button."
 msgstr "Klicken Sie auf den Button **Einen Prozessor hinzufügen**."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:112
-msgid "Choose the File processor, in the Generic operations section."
+msgid "Choose the File processor in the Generic operations section."
 msgstr "Wählen Sie den Dateiprozessor im Bereich \"Generische Operationen\"."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:113
@@ -353,28 +351,28 @@ msgstr ""
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:114
 msgid ""
-"*(optional)* Still in the File processor area, tick the **Extract metadata**"
-" box to import the related metadata of the images."
+"*(optional)* In the File processor area, select the **Extract metadata** "
+"check box to import the related metadata of the images."
 msgstr ""
 "*(optional)* Im Bereich des Dateiprozessors können Sie das Feld **Metadaten "
-"extrahieren** ankreuzen, um die zu den Bildern gehörenden Metadaten zu "
+"extrahieren** auswählen, um die zu den Bildern gehörenden Metadaten zu "
 "importieren."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:136
-msgid "http://website.com/file_name.png"
-msgstr "http://website.com/file_name.png"
+msgid "`http://website.com/file_name.png`"
+msgstr "`http://website.com/file_name.png`"
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:139
-msgid "http://website.fr/file_name.pdf"
-msgstr "http://website.fr/file_name.pdf"
+msgid "`http://website.fr/file_name.pdf`"
+msgstr "`http://website.fr/file_name.pdf`"
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:142
-msgid "http://another-website.com/file_name.zip"
-msgstr "http://another-website.com/file_name.zip"
+msgid "`http://another-website.com/file_name.zip`"
+msgstr "`http://another-website.com/file_name.zip`"
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:145
-msgid "http://website.com/file_name.svg"
-msgstr "http://website.com/file_name.svg"
+msgid "`http://website.com/file_name.svg`"
+msgstr "`http://website.com/file_name.svg`"
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:149
 msgid ""
@@ -407,14 +405,14 @@ msgstr ""
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:159
 msgid ""
 "through a slideshow, which is `an Opendatasoft widget "
-"<http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-"
+"<https://help.opendatasoft.com/widgets/#/api/ods-"
 "widgets.directive:odsSlideshow>`_ that can be added in any code area of the "
-"platform (e.g. in the Custom view of the dataset or in a content page): in "
-"that case, images are displayed one by one"
+"platform (for example, in the Custom view of the dataset or in a content "
+"page): in that case, images are displayed one by one"
 msgstr ""
-" mit einer Diashow. Dies ist ein `Opendatasoft-Widget "
-"<http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-"
-"widgets.directive:odsSlideshow>`_ das in jedem Codebereich der Plattform "
-"hinzugefügt werden kann (z. B. in der benutzerdefinierten Ansicht des "
+"mit einer Diashow. Dies ist ein `Opendatasoft-Widget "
+"<https://help.opendatasoft.com/widgets/#/api/ods-"
+"widgets.directive:odsSlideshow>`_, das in jedem Code-Bereich der Plattform "
+"hinzugefügt werden kann (z.B. in der benutzerdefinierten Ansicht des "
 "Datensatzes oder in einer Inhaltsseite): In diesem Fall werden die Bilder "
 "einzeln angezeigt"

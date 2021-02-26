@@ -51,7 +51,7 @@ Searching in the data
      * id_date_field>#now(days=-value)
      * ``timestamp>#now(days=-7)``
 
-       returns every record with a timestamp equal to current day minus 7 days
+       returns every record with a timestamp equal to the current day minus 7 days
    * * containing a geo field located in a specific area
      * for a circular area:
 
@@ -79,9 +79,9 @@ The Opendatasoft query language makes it possible to express complex boolean con
 Full-text search
 ~~~~~~~~~~~~~~~~
 
-The query language accepts full text queries.
+The query language accepts full-text queries.
 
-If a given word or compounds is surrounded with double quotes, only exact matches are returned (modulo an accent and
+If a given word or compound is surrounded with double quotes, only exact matches are returned (modulo an accent and
 case insensitive match).
 
 * ``film`` returns results that contain film, films, filmography...
@@ -90,7 +90,7 @@ case insensitive match).
 Boolean expressions
 ~~~~~~~~~~~~~~~~~~~
 
-The query language supports the following boolean operators ``AND``, ``OR`` and ``NOT``.
+The query language supports the following Boolean operators ``AND``, ``OR``, and ``NOT``.
 
 Parenthesis can be used to group together expressions and alter the default priority model:
 
@@ -106,7 +106,7 @@ Samples
 Field queries
 ~~~~~~~~~~~~~
 
-One of the major feature of the query language is to allow per field filtering. You can use field names as a prefix to
+One of the major features of the query language is to allow per field filtering. You can use field names as a prefix to
 your queries to filter the results based on a specific field's value.
 
 **For dataset search in the catalog**, the list of available fields corresponds exactly to available metadata. By default:
@@ -135,9 +135,9 @@ your queries to filter the results based on a specific field's value.
    * * references
      * The references for the dataset
 
-The domain administrator might define a richer metadata template, thus giving acces to a richer set of filtering fields.
+The domain administrator might define a richer metadata template, thus giving access to a richer set of filtering fields.
 
-**For record search in a dataset**, the list of available fields depend on the schema of the dataset. To fetch the list of
+**For record search in a dataset**, the list of available fields depends on the schema of the dataset. To fetch the list of
 available fields for a given dataset, you may use the search dataset or lookup dataset APIs.
 
 Multiple operator fields can be used between the field name and the query:
@@ -170,7 +170,7 @@ Advanced functions can be used in the query language. Function names need to be 
    * * now
      * Returns the current date. This function may be called as a query value for a field. When called without an
        argument, it will evaluate to the current datetime: ``birthdate >= #now()`` returns all Records
-       containing a birth date greater or equal to the current datetime. This function can also accept parameters, see
+       containing a birth date greater or equal to the current datetime. This function can also accept parameters. See
        below for the ``#now`` function available parameters.
    * * null
      * This function may be called specifying a field name as a parameter. It returns the hits for which no value is
@@ -188,11 +188,11 @@ Advanced functions can be used in the query language. Function names need to be 
 
 * years, months, weeks, days, hours, minutes, seconds, microseconds: These parameters add time to the current date.
 
-  For example: ``#now(years=-1, hours=-1)`` returns the current date minus a year and an hour
+  For example, ``#now(years=-1, hours=-1)`` returns the current date minus a year and an hour.
 
 * year, month, day, hour, minute, second, microsecond: can also be used to specify an absolute date.
 
-  For example: ``#now(year=2001)`` returns the current time, day and month for year 2001
+  For example, ``#now(year=2001)`` returns the current time, day, and month for the year 2001.
 
 * weekday: Specifies a day of the week. This parameter accepts either an integer between 0 and 6 (where 0 is Monday and
   6 is Sunday) or the first two letters of the day (in English) followed by the cardinal of the first week on which to
@@ -205,7 +205,7 @@ Advanced functions can be used in the query language. Function names need to be 
 Geo Filtering
 ^^^^^^^^^^^^^
 
-Records search accept geofilter parameters to filter in records which are located in a specific geographical area.
+Records search accept geofilter parameters to filter in records that are located in a specific geographical area.
 
 The following parameters may be used.
 

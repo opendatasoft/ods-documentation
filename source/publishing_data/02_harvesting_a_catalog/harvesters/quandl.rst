@@ -18,7 +18,7 @@ Parameters
      * The code of the database you want to harvest
      * ECMCI
    * * Quandl API key
-     * Your API key available in `your account settings <https://www.quandl.com/account/api>`_
+     * Your API key available in `your account settings <https://www.quandl.com/account/profile>`_
      * vygBYiRgZzcFdrZxUU3
    * * Number of datasets
      * Only retrieve a certain amount of datasets.

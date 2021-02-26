@@ -601,7 +601,7 @@ To do so :
 
  .. image:: images/advanced__data-table-1.png
 
-The aim is to reproduce this exact analysis with ``odsAnalysis``. As a reminder, please visit the documentation `here <http://opendatasoft.github.io/ods-widgets/docs/#/api/ods-widgets.directive:odsAnalysis>`_
+The aim is to reproduce this exact analysis with ``odsAnalysis``. As a reminder, please visit the documentation `here <https://help.opendatasoft.com/widgets/#/api/ods-widgets.directive:odsAnalysis>`_
 
 ``odsAnalysis`` parameters :
  - ods-analysis : the name of the variable

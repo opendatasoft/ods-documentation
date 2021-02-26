@@ -5,7 +5,7 @@ Opendatasoft's platform has been translated into several languages:
 
 - Front Office (accessible to the public) in 11 languages,
 - Back Office (accessible to data publishers) in 6 languages
-- Opendatasoft’s documentation (accessible to the public) in 5 languages.
+- Opendatasoft's documentation (accessible to the public) in 5 languages.
 
 List of all the languages supported by Opendatasoft :
 

@@ -6,7 +6,7 @@ Retrieve datasets from a Catalog Service for the Web (CSW portal).
 The CSW server must provide the following capabilities:
 
 - CSW version: 2.0.2
-- output_shema: http://www.isotc211.org/2005/gmd
+- output_schema: https://www.isotc211.org/2005/gmd/
 
 This harvester is not available by default. If you need to use it, please contact Opendatasoft support team.
 

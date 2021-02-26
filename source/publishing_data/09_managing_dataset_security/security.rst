@@ -1,8 +1,8 @@
 Managing security
 =================
 
-You can manage access, visibility on data and edition permissions on a per dataset basis, on each dataset publishing interface.
-Of course the first condition for a user to able to access a dataset is to have access to the domain as a whole.
+You can manage access, visibility on data, and edition permissions on a per dataset basis, on each dataset publishing interface. 
+The first condition for a user to access a dataset is to have access to the domain as a whole.
 
 .. image:: images/publish-data_security-tab.png
 
@@ -20,7 +20,7 @@ If you want anyone with access to your domain to be able to explore the dataset,
 
 In this case, you can apply general filters for all people that access your dataset (see below for filter configuration). That filters will apply to all people that do not fall into the users and groups explicitly listed for this dataset. If a user is matched in the specific list of users, the general filters **will not apply**.
 
-You may also want to restrict the availability of the dataset to a defined list of persons, explicitly listed for this dataset. In this case, you want to check the `Access restricted to allowed users and groups` and add the users and groups that can access to the list accessible below in the interface.
+You may also want to restrict the availability of the dataset to a defined list of persons explicitly listed for this dataset. In this case, you want to check the Access restricted to allowed users and groups and add the users and groups that can access the list accessible below in the interface.
 
 
 Data visibility filters
@@ -39,7 +39,7 @@ For each category of person (anyone, listed user, user in a listed group) that c
         :alt: Options disponible pour le filtrage des données
 
 You have three different options available that you can combine.
-First you can decide wether the data is accessible at all, using the option `data is visible`. If you uncheck this input, the user will only be able to access the information (metadata) part of the dataset, including the list of fields.
+First, you can decide whether the data is accessible or not using the Data is visible check box. If you clear this check box, the user will only be able to access the information (metadata) part of the dataset, including the list of fields.
 If you restrict the visibility of the data, you should explain to your user how they can access the data, either by contacting the domain administrators or going to an external billing system or any other case you can think about.
 
 .. ifconfig:: language == 'en'
@@ -94,7 +94,7 @@ The query filter permits you to restrict the rows visible for users. It uses the
 Management rights on the dataset
 --------------------------------
 
-The dataset management (edition and publishing) is only accessible to user that are listed, either explicitly or through groups, in the security configuration of the dataset and that are given the edit or publish rights.
+The dataset management (edition and publishing) is only accessible to the users listed, either explicitly or through groups, in the security configuration of the dataset and that are given the edit or publish rights. Domain administrators also have the right to edit all datasets.
 Domain administrators also have the rights to edit all datasets.
 
 .. ifconfig:: language == 'en'

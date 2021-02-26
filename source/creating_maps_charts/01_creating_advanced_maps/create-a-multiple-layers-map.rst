@@ -5,8 +5,8 @@ Add a dataset to your map
 -------------------------
 
 1. In the layer editing area, click on **Add a dataset to this map**.
-2. Choose the dataset you want to display on your map. You can select a dataset with geographical information either from your own catalog of datasets published on your domain, or from the **All available data** catalog.
-3. Click on **Select** if you want to add all data, or **Filter data** if you just want to add part of the data.
+2. Choose the dataset you want to display on your map. You can select a dataset with geographical information either from your own catalog of datasets published on your domain or from the **All available data** catalog.
+3. Click on **Select** if you want to add all data or **Filter data** if you just want to add part of the data.
 
 .. localizedimage:: images/add-dataset-map.png
     :alt: Screenshot of the dataset adding interface in Map Builder
@@ -18,12 +18,12 @@ Add a dataset to your map
 
    You can change dataset or change which part is filtered at any time. To do so, simply click on **Change filter** next to the layer’s title.
 
-You can add as many datasets as you want on your map, and all of the data they contain can be displayed on that same map, at the same time. This is when the whole concept of layers comes in play. In Map Builder, because you overlay several datasets, each dataset is called a layer. This is why Map Builder allows you to configure your layers to make sure that you can represent many different data on the same map and still make the reading of this map easy and clear.
+You can add as many datasets as you want on your map, and all of the data they contain can be displayed on that same map at the same time. This is when the whole concept of layers comes into play. In Map Builder, because you overlay several datasets, each dataset is called a layer. This is why Map Builder allows you to configure your layers to make sure that you can represent many different data on the same map and still make the reading of this map easy and clear.
 
 .. admonition:: Note
    :class: note
 
-   Keep in mind that the more datasets you add to your map, the heavier it will be, and the longer it will take to load.
+   Keep in mind that the more datasets you add to your map, the heavier it will be and the longer it will take to load.
 
 .. localizedimage:: images/dataset-added-map.png
     :alt: Screenshot of Map Builder once a dataset has been added: data appears on the map and configuration options are available
@@ -77,7 +77,7 @@ The Dots and shapes visualization mode simply displays your data as markers (dot
 
        *What your data will look like on the map*
      *
-       - **Dot**: simple plain circle. Dots are recommended for high density datasets.
+       - **Dot**: simple plain circle. Dots are recommended for high-density datasets.
        - **Icon**: themed icon (available in the Opendatasoft library).
        - **Map marker (with an optional icon)**: standard drop-shaped map marker, with an optional themed icon (available in the Opendatasoft library) inside.
 
@@ -99,7 +99,7 @@ The Dots and shapes visualization mode simply displays your data as markers (dot
 
        For all the options above, simply drag the dot along the slider or directly change the numbers displayed on the right of each slider.
 
-       - **Color**: change the color of your markers, shapes and lines.
+       - **Color**: change the color of your markers, shapes, and lines.
 
        To change the color:
 
@@ -113,9 +113,9 @@ The Dots and shapes visualization mode simply displays your data as markers (dot
      * .. admonition:: Note
           :class: note
 
-          Borders are only available for shapes, dots, icons and map markers do not have borders.
+          Borders are only available for shapes, dots, icons, and map markers do not have borders.
 
-       - **Pattern**: choose the pattern of the border, whether you want it to be a simple line, or a dashed or dotted line.
+       - **Pattern**: choose the pattern of the border, whether you want it to be a simple line or a dashed or dotted line.
 
        For the **Pattern** option, simply click on the provided menu and choose the one you want.
 
@@ -192,10 +192,10 @@ The Cluster visualization mode groups your data into clusters instead of display
 
    * * **Computing**
 
-       *Choose how the clusters size is calculated*
+       *Choose how the size of the clusters is calculated*
      *
-       - **Linear**: for your values ranges to be the same size, evenly spread from the minimum to the maximum (e.g. 1, 2, 3, 4).
-       - **Logarithmic**: for your values to vary in size and spread from a very large spectrum (e.g. 1, 10, 100).
+       - **Linear**: for your values ranges to be the same size, evenly spread from the minimum to the maximum (for example, 1, 2, 3, 4).
+       - **Logarithmic**: for your values to vary in size and spread from a very large spectrum (for example, 1, 10, 100).
 
 Choropleth
 """"""""""
@@ -212,7 +212,7 @@ The Choropleth visualization mode displays data as markers (dots or icons) or as
 
        *What your data will look like on the map*
      *
-       - **Dot**: simple plain circle. Dots are recommended for high density datasets.
+       - **Dot**: simple plain circle. Dots are recommended for high-density datasets.
        - **Icon**: themed icon (available in the Opendatasoft library).
        - **Map marker (with an optional icon)**: standard drop-shaped map marker, with an optional themed icon (available in the Opendatasoft library) inside.
 
@@ -234,7 +234,7 @@ The Choropleth visualization mode displays data as markers (dots or icons) or as
 
        For all the options above, simply drag the dot along the slider or directly change the numbers displayed on the right of each slider.
 
-       - **Palette**: define on which field and operation your choropleth layer will be based on, and the color of your markers, shapes and/or lines.
+       - **Palette**: define on which field and operation your choropleth layer will be based on, and the color of your markers, shapes, and/or lines.
 
          a. Choose whether you want to base the color of your shape on the **Value of a field** or on the **Aggregation on a field**.
          b. Depending on the choice you just made for your shape’s color, choose the field which value you want to use, or decide which aggregation operation you want to apply on your chosen field.
@@ -250,9 +250,9 @@ The Choropleth visualization mode displays data as markers (dots or icons) or as
      * .. admonition:: Note
           :class: note
 
-          Borders are only available for dots and shapes, icons and map markers do not have borders.
+          Borders are only available for dots and shapes. Icons and map markers do not have borders.
 
-       - **Pattern**: choose the pattern of the border, whether you want it to be a simple line, or a dashed or dotted line.
+       - **Pattern**: choose the pattern of the border, whether you want it to be a simple line or a dashed or dotted line.
 
        For the **Pattern** option, simply click on the provided menu and choose the one you want.
 
@@ -284,7 +284,7 @@ The Color by category visualization mode displays data as markers (dots or icons
 
        *What your data will look like on the map*
      *
-       - **Dot**: simple plain circle. Dots are recommended for high density datasets.
+       - **Dot**: simple plain circle. Dots are recommended for high-density datasets.
        - **Icon**: themed icon (available in the Opendatasoft library).
        - **Map marker (with an optional icon)**: standard drop-shaped map marker, with an optional themed icon (available in the Opendatasoft library) inside.
 
@@ -316,9 +316,9 @@ The Color by category visualization mode displays data as markers (dots or icons
          4. Choose a color for each category.
          5. Click the **Apply** button.
 
-         - a palette **Generated with colors contained in a field** (in case your dataset already contains a field which provides color information: an hexadecimal color code for instance).
+         - or a palette **Generated with colors contained in a field** (in case your dataset already contains a field that provides color information: a hexadecimal color code, for example).
 
-       In that case, simply choose the right field and the colors will automatically appear on the corresponding markers and/or dots of your map.
+       In that case, simply choose the right field, and the colors will automatically appear on the corresponding markers and/or dots of your map.
 
    * * **Shapes border**
 
@@ -326,9 +326,9 @@ The Color by category visualization mode displays data as markers (dots or icons
      * .. admonition:: Note
           :class: note
 
-          Borders are only available for dots and shapes, icons and map markers do not have borders.
+          Borders are only available for dots and shapes. Icons and map markers do not have borders.
 
-       - **Pattern**: choose the pattern of the border, whether you want it to be a simple line, or a dashed or dotted line.
+       - **Pattern**: choose the pattern of the border, whether you want it to be a simple line or a dashed or dotted line.
 
        For the **Pattern** option, simply click on the provided menu and choose the one you want.
 
@@ -358,7 +358,7 @@ The Heatmap visualization mode is not about markers or shapes. Instead, this mod
 
    * * **Aggregation operations**
 
-       *Choose on what operation your heatmap is based*
+       *Choose on what operation your heatmap is based.*
      * Choose, out of the available operations depending on your dataset, which one you want your heatmap to be based on.
 
        - **Count**: how many markers are in the area.
@@ -372,8 +372,8 @@ The Heatmap visualization mode is not about markers or shapes. Instead, this mod
 
        *Choose how is calculated the progression of your heatmap*
      *
-       - **Linear**: for your values ranges to be the same size, evenly spread from the minimum to the maximum (e.g. 1, 2, 3, 4).
-       - **Logarithmic**: for your values to vary in size and spread from a very large spectrum (e.g. 1, 10, 100).
+       - **Linear**: for your values ranges to be the same size, evenly spread from the minimum to the maximum (for example, 1, 2, 3, 4).
+       - **Logarithmic**: for your values to vary in size and spread from a very large spectrum (for example, 1, 10, 100).
 
    * * **Colors**
 
@@ -393,7 +393,7 @@ Title and description
 .. localizedimage:: images/edit-information.png
     :alt: Zoom on the area to edit a layer's information, from the Information interface
 
-2. Rename your layer in the **Title** area, to make it clearer for the map viewers.
+2. Rename your layer in the **Title** area to make it clearer for the map viewers.
 3. Add a **Description** in the provided area.
 
 .. admonition:: Note
@@ -418,7 +418,7 @@ Add and edit a caption
 .. localizedimage:: images/edit-caption.png
     :alt: Zoom on the area to edit a layer's caption, from the Information interface
 
-Captions are not mandatory however they are recommended because they add more information to your dataset, which means more clarity to the reading of your map.
+Captions are not mandatory. However, they are recommended because they add more information to your dataset, which means more clarity to the reading of your map.
 
 1. Click on the **Caption** tab.
 2. If it’s not already the case, tick the **Display caption for this dataset** option.

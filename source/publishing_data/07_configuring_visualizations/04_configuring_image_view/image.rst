@@ -5,10 +5,10 @@ Configuring the Images visualization
 .. admonition:: Prerequisite
    :class: important
 
-   For the Images visualization to be available, the dataset must contain at least one :ref:`file field<choosingtype>`, containing at least one image or any other media type file that can generate a thumbnail: .gif, .png, .jpeg, .jpg, .tif, .tiff and .bmp.
+   For the Images visualization to be available, the dataset must contain at least one :ref:`file field<choosingtype>`, containing at least one image or any other media type file that can generate a thumbnail: .gif, .png, .jpeg, .jpg, .tif, .tiff, and .bmp.
 
 
-In the edition interface of a dataset, the Visualizations > Images tab allows to configure the image gallery of the Images visualization displayed in the front office, once the dataset is published on the portal.
+In the edition interface of a dataset, the Visualizations > Images tab allows to configure the image gallery of the Images visualization displayed in the front office once the dataset is published on the portal.
 
 The Images visualization, when available, is optional. It can be enabled or disabled using the tick box displayed right under the visualizations tabs.
 
@@ -26,7 +26,7 @@ To configure the information panel of the Images visualization, follow the indic
     * Description
     * Usage
   * * Displayed image fields
-    * Fields which contain images and that will be displayed in the Images visualization. In the list, the fields with a grey background are those that will be displayed, whereas those without a colored background will be hidden. Only the file type fields are available in this option.
+    * Fields that contain images and that will be displayed in the Images visualization. In the list, the fields with a grey background are those that will be displayed, whereas those without a colored background will be hidden. Only the file type fields are available in this option.
     * To add an image field in the Images visualization:
 
       1. Find the field among the list.
@@ -60,7 +60,7 @@ To configure the information panel of the Images visualization, follow the indic
   * * Image title
     * Title of the image, used as a tooltip title.
     * 1. Click on the "Tooltip title" list box.
-      2. Choose a field from the dataset, which contains the images titles.
+      2. Choose a field from the dataset, which contains the image titles.
   * * Displayed fields
     * Fields from the dataset which values will be displayed in the tooltip. In the list, the fields with a grey background are those that will be displayed in the tooltip, whereas those without a colored background will be hidden from the tooltip.
     * To add a field in the tooltip:
@@ -87,7 +87,7 @@ To configure the information panel of the Images visualization, follow the indic
     * Description
     * Usage
   * * Custom HTML tooltip
-    * HTML area to write the content of the tooltip. 3 buttons above the text area allow to reindent a selection, reindent the whole HTML text and/or to wrap the lines.
+    * HTML area to write the content of the tooltip. 3 buttons above the text area allow to reindent a selection, reindent the whole HTML text, and/or to wrap the lines.
     * Write the content of the tooltip in HTML.
 
 .. admonition:: Important

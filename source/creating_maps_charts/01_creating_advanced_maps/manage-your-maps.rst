@@ -40,13 +40,13 @@ The **Saved maps** and **Drafts** submenus display information the same way. In 
 Duplicate a map
 ---------------
 
-1. Find the map or draft you want to duplicate, in the **Saved maps** or **Drafts** tab.
+1. Find the map or draft you want to duplicate in the **Saved maps** or **Drafts** tab.
 2. Click on the **Duplicate** button.
 
 Delete a map
 ------------
 
-1. Find the map or draft you want to delete, in the **Saved maps** or **Drafts** tab.
+1. Find the map or draft you want to delete in the **Saved maps** or **Drafts** tab.
 2. Click on the |icon-trash| button. A *Delete map?* window appears.
 3. Click on the red **Delete map** button.
 

@@ -16,7 +16,7 @@ Parameters
      * Example
    * * API url (portal_url)
      * The base URL of the portal
-     * http://api.datosabiertos.presidencia.go.cr/api/v2/datastreams/
+     * `http://api.datosabiertos.presidencia.go.cr/api/v2/datastreams/`
    * * API key (auth_key)
      * Your API Key.
      * 0bd55e858409eefabc629b28b2e7916361ef20ff

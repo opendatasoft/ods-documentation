@@ -14,7 +14,7 @@ Parameters
      * Example
    * * CKAN root URL (url)
      * The base url of the portal
-     * https://www.hri.fi/api/3
+     * `https://www.hri.fi/api/3`
    * * Maximum results to harvest (limit)
      * Only retrieve a certain amount of datasets.
      * 5

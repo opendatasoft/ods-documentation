@@ -1,41 +1,39 @@
 Analyzing with the Chart Builder
 ================================
 
+The Chart Builder tool allows you to visualize multiple datasets on a single customized chart.
+
+It is usually made available by the domain administrator via a **Charts** link in the header menu. You can also access the Chart Builder through the following URL: ``http://<DOMAIN ADDRESS>/chart``.
+
+The Chart Builder is more flexible than **Analyze** tab. With the Chart Builder, you're not limited to one dataset. You can combine different sources from your domain and the Opendatasoft network.
+
+After you create and save a chart, you can share it, embed it, or use it as a widget.
+
 .. admonition:: Prerequisite
    :class: important
 
-   Read how to :doc:`configure visualizations </publishing_data/07_configuring_visualizations/03_configuring_analyze_view/analyze>` for a dataset beforehand.
-
-With the Chart Builder tool, you can visualize multiple datasets on a single customized chart. You can save your chart and easily share it, embed it, or use it as a widget.
-
-It is usually made available by the domain administrator in the top menu link under the codename `Charts`. The Map Builder can also be accessed using its URL: ``http://<DOMAIN ADDRESS>/chart``.
-
-.. admonition:: Note
-   :class: note
-
-   You can also build charts with `Analyze` tab on a dataset page, but these are limited to the current dataset. With the Chart Builder you have much more possibilities, combining different sources from your domain and from the Opendatasoft network.
+   Before you begin, see how to :doc:`configure visualizations </publishing_data/07_configuring_visualizations/03_configuring_analyze_view/analyze>` for a dataset.
 
 
 First layer
 -----------
 
-Click on ``Add a dataset to this layer`` to start importing data to your chart.
+Click on **Add a dataset to this layer** to start importing data to your chart.
 
 The list of available datasets is displayed: you can search or browse by category to find your datasets.
-As usual you can preview and filter a dataset before importing it.
+As usual, you can preview and filter a dataset before importing it.
 
 As an example, let's take the public dataset "`Entreprises immatriculées en 2015`" from `Data Infogreffe` domain.
-You can ``Filter data`` to refine the data, but in our case let's just ``✓ Select`` the dataset.
+You can click **Filter data** to refine the data, but in our case, select the dataset.
 
-In the configuration, you can choose the appropriate type of graph. Select ``Column chart``
+In the configuration, you can choose the appropriate type of graph. Select **Column chart**.
 
-By default Y-axis is set to *Count*, and the plot is a *Line*.
-You can choose the type of graph best suited to your data. Try selecting *Column chart* instead of *Line*.
+By default, Y-axis is set to **Count**, and the plot is a **Line**.
 
 Next to this selection menu, you click on the color box to pick another color for the columns.
 
-In the `Configuration` settings, click on `Appearance`, then *display values on chart*. This adds a label with a numerical value on top of each column.
-Under `Y-Axis` you can set the scientific display for the *Y* scale.
+In the **Configuration** settings, click on **Appearance**, then **display values on chart**. This adds a label with a numerical value on top of each column.
+Under **Y-Axis**, you can set the scientific display for the *Y* scale.
 
 Finally, add a threshold color under `Color threshold: type *17000* next *Y >*` and choose another color.
 You can add multiple thresholds with different colors.
@@ -48,91 +46,111 @@ Here is what this layer looks like with these settings and two thresholds:
 Adding a series
 ---------------
 
-You can add a data representation on the same dataset by clicking on ``Add a series``.
+You can add a data representation on the same dataset by clicking on **Add a series**.
 
-The `X-Axis` parameters will be the same, but you can customize the type of curve and tweak the appearance parameters on the new serie.
+The **X-Axis** parameters will be the same, but you can customize the type of curve and tweak the appearance parameters on the new series.
 
-Try changing the type from ``Line`` to ``Spline`` to see a nice curve on top of the initial column chart.
+Try changing the type from **Line** to **Spline** to see a nice curve on top of the initial column chart.
 
-You can reorder the series by clicking and dragging. The series order affects the chart legend and the serie in the top has priority on the `Y-Axis` parameter.
-
-In the next section we will add another dataset to our chart.
+You can reorder the series by clicking and dragging. The series order affects the chart legend, and the series at the top has priority on the **Y-Axis** parameter.
 
 
 Stacking layers
 ---------------
 
-Let's elaborate another data visualization, this time with multiple layers.
+You create data visualizations with multiple layers. Such visualizations can help you find trends in data.
 
-**First Layer**
 
-We will start the same way as before, click on ``Add a dataset to this layer`` then search for "Oil Prices" to add the `Oil Prices <https://public-us.opendatasoft.com/explore/dataset/oil-prices>`_ dataset.
+Creating a chart with multiple layers
+-------------------------------------
 
-No need to filter it, just note that the data starts from the year 1987. We will use 1987 as the starting point for the other layers.
+For example, you can create a data visualization to find whether oil prices are correlated with gold prices.
 
-When you first import a dataset in Advanced Charts, the default visualization of this dataset is imported: in this case you can see two lines: `WTI Spot Price` and `Brent Spot Price`.
+This example of chart relies on the following datasets:
 
-**Second Layer**
+ - `Oil Prices <https://documentation-resources.opendatasoft.com/explore/dataset/oil-prices/>`__ that contains monthly oil prices from 1988 to 2019, and
+ - `Gold Prices <https://documentation-resources.opendatasoft.com/explore/dataset/gold-prices/>`__ that contains monthly gold prices from 1988 to 2019.
 
-Let's add another dataset! Look for "Commodity Prices" to find `Commodity Prices since 1980 <https://public.opendatasoft.com/explore/dataset/commodity-prices-since-1980>`_ dataset from the Opendatasoft public collection.
+This chart compares Brent and WTI prices with gold prices between 1989 and 2019.
 
-This time, add the filter "`date>1987`" so that the X-axis will match with the first layer. Then import the ~20 000 records.
 
-The default visualization is a line with the average commodity price.
+Step 1: Add a first layer
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You should see your query filter just under the dataset name: "`query: date>1987`".
+1. Access the Chart Builder.
 
-.. admonition:: Note
-   :class: note
+2. Click on the **Add a dataset to this layer** button.
 
-   You can click on the pencil icon |edit-pencil| of a layer to change the selected dataset or refine the query.
+3. Search for "Oil Prices" and select the "Oil Prices" dataset.
+
+A line has been added to the chart.
+
+.. image:: images/chart-layers-first.png
+
+Step 2: Add a series
+^^^^^^^^^^^^^^^^^^^^
+
+Add another series to show Brent prices:
+
+1. Click on the **Add a series** button.
+
+2. On the line that appears, change **WTI Price** to **Brent Price** and leave the other parameters unchanged.
+
+A second line has been added to the chart.
+
+.. image:: images/chart-layers-series.png
+
+Step 3: Add another layer
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Add the "Gold Prices" dataset to see whether there is a correlation between oil prices and gold prices:
+
+1. Click on the **Add a dataset to this layer** button.
+
+2. Search for "Gold Prices" and select the "Gold Prices" dataset.
+
+The default visualization is a line with the average gold price.
+
+You can click on the pencil icon |edit-pencil| of a layer to change the selected dataset or refine the query.
 
 .. |edit-pencil| image:: images/edit.png
 
-Under Configuration > Label, set "`Commodity Average Price`" as the alternate serie title (more accurate than the default title)
+3. On the "Gold Price" layer, click **Configuration > Label**.
 
-This should look like this (you may have different colors): |second-layer|
+4. Enter ``Gold Average Price`` in the **Alternate series title** field.
 
-.. |second-layer| image:: images/second-layer.png
+The chart should look like this (you may have different colors): |second-layer|
 
-**Third Layer**
-
-For the final layer, we are going to use `Global Financial Development` from WorldBank to see if there are some correlation between those.
-
-There are more than a million records: for the chart to make sense, we will limit the records to the USA. Like the previous layer, we will also keep only records after year 1987.
-
-These conditions translate to this query: "country_code: USA and year>1987`"
-
-As for the second layer, configure a more explicit label name for the legend: "Global Financial Development"
+.. |second-layer| image:: images/chart-layers-second.png
 
 
-**Last details**
+Step 4: Finalize the chart configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Let's finish with a few last details to polish the Chart appearance
+Add a title to the chart.
 
-- Set ``Global Precision`` to `Year` instead of `Month` so that the legend reflects the data precision.
+1. Enter a name for this chart in the **Chart title** field.
 
-- Delete `WTI Spot Price` serie (click on the X cross) and set the X-axis to a Year precision instead of Month
+Here is the final configuration:
 
-- Choose ``Spline`` instead of ``Line`` in the Global Financi`al Development curve to smoothen the curve a bit.
+.. image:: images/chart-layers-params.png
 
-- Now you can type a name in ``Chart title`` and click ``Save this chart`` to save create a short URL that you can embed or share!
+2. Click on the **Save this chart** button to create a short URL that you can embed or share.
 
-Here are the resulting parameters:
+Here is the final result of the chart:
 
-.. image:: images/layers-params.png
+.. image:: images/chart-layers-final.png
 
-And the final result of the chart:
 
-.. image:: images/layers-final.png
+Other examples of charts
+------------------------
 
-Other charts examples
----------------------
-
-**Column Chart**
+Column Chart
+^^^^^^^^^^^^
 
 .. image:: images/column-chart.png
 
-**Polar Chart**
+Polar Chart
+^^^^^^^^^^^
 
 .. image:: images/polar-chart-example.png

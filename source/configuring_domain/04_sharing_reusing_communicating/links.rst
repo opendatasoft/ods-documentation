@@ -1,14 +1,14 @@
 Improving user sharing
 ======================
 
-Integrating social medias
--------------------------
+Integrating social media
+------------------------
 
-**Share on social medias buttons**
+**Share on social media buttons**
 
-You can choose to display share buttons that will provide users with quick access to their favorite social networks (Twitter, Facebook, LinkedIn and email).
+You can choose to display share buttons that will provide users with quick access to their favorite social networks (Twitter, Facebook, LinkedIn, and email).
 
-You can enable these share buttons in the ``Social networks & sharing`` section, in the ``Configuration`` menu
+You can enable these share buttons in the ``Social networks & sharing`` section from the ``Configuration`` menu.
 
 .. image:: images/configuration_share-buttons.png
 
@@ -19,11 +19,11 @@ If a user tweets a link to a dataset on your portal, a summary can be displayed 
 
 .. image:: images/links__twittercard-fr.png
 
-This is a feature provided by Twitter itself. It should work by default without additional configuration, except if your domain is not **whitelisted for summary card** by twitter.
+This is a feature provided by Twitter itself. It should work by default without additional configuration, except if your domain is not **whitelisted for summary card** by Twitter.
 
-You can check this by previewing a summary on the `Twitter Card page <https://cards-dev.twitter.com/validator>`_. Simply put the URL of one of your public dataset in the Card URL field on this page.
+You can check this by previewing a summary on the `Twitter Card page <https://cards-dev.twitter.com/validator>`_. Put the URL of one of your public datasets in the Card URL field on this page.
 
-If after clicking on *Preview*, your domain does not appear as **whitelisted for summary card**, you have to request approvals, by clicking on the *Request Approval* button. You also have to input your ``Twitter handle`` to associate your portal with these approved Twitter Cards, in the ``Social networks & sharing`` in the ``Configuration`` menu.
+If, after clicking on *Preview*, your domain does not appear as **whitelisted for summary card**, you have to request approvals by clicking on the *Request Approval* button. You also have to input your ``Twitter handle`` to associate your portal with these approved Twitter Cards in the ``Social networks & sharing`` section from the ``Configuration`` menu.
 
 .. image:: images/configuration_twitter-cards.png
 
@@ -38,4 +38,4 @@ In the ``Embeds`` section in the ``Configuration`` menu, you can configure the p
 
 .. image:: images/configuration_dataset-info-cards.png
 
-You can also force the display of the information card on every embed using the checkbox *Force embeds to have a dataset information card displayed at all times*
+You can also force the display of the information card on every embed using the checkbox *Force embeds to have a dataset information card displayed at all times*.

@@ -6,7 +6,7 @@ Discovering & submitting data reuses
 
    Since reuses are an optional feature, they are not activated on every Opendatasoft portal. The activation of reuses depends entirely on the portal administrators.
 
-Data reuses are creations based on data from datasets published on an open data portal. They can take many forms: from the map created with the Map Builder (or a chart with the Chart Builder), to the smartphone application, there are many possibilities of data reuses. As a user of an Opendatasoft portal, it is possible to either discover the reuses that others have made, or to submit your very own reuse for it to be displayed on the related portal.
+Data reuses are creations based on data from datasets published on an open data portal. They can take many forms: from the map created with the Map Builder (or a chart with the Chart Builder) to the smartphone application, there are many possibilities of data reuses. As a user of an Opendatasoft portal, it is possible to either discover the reuses that others have made or to submit your very own reuse for it to be displayed on the related portal.
 
 .. admonition:: Note
    :class: note
@@ -17,7 +17,7 @@ Data reuses are creations based on data from datasets published on an open data 
 Discovering existing reuses
 ---------------------------
 
-Existing reuses of a dataset, that have been approved by the portal administators, are listed in the Reuses area of the Information tab.
+Existing reuses of a dataset that have been approved by the portal administrators are listed in the Reuses area of the Information tab.
 
 .. image:: images/reuse_list.png
    :alt: Reuse list in the Information tab
@@ -57,7 +57,7 @@ To submit a reuse, follow the procedure below:
 - Reuse title: give a title to the reuse
 - Description: describe what kind of reuse it is, what it is about etc.
 - URL: indicate the URL where the reuse is located
-- Thumbnail: upload a image preview of the reuse
+- Thumbnail: upload an image preview of the reuse
 
 3. Click on the Submit button.
 
@@ -66,4 +66,4 @@ Once submitted, the reuse is sent to the portal administrators, who will be noti
 .. admonition:: Note
    :class: note
 
-   The portal administrators have the possibility to modify the title, description, URL and thumbnail of the reuse. They cannot, however, modify the submitted last name or first name
+   The portal administrators have the possibility to modify the title, description, URL, and thumbnail of the reuse. They cannot, however, modify the submitted last name or first name.

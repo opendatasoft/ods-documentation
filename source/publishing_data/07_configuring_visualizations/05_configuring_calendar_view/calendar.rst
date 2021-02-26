@@ -7,7 +7,7 @@ Configuring the Calendar visualization
    For the Calendar visualization to be available, the dataset must contain at least one :ref:`date or datetime field<choosingtype>`, and a text field containing the title of the calendar event.
 
 
-In the edition interface of a dataset, the Visualizations > Calendar tab allows to configure the Calendar visualization displayed in the front office, once the dataset is published on the portal.
+In the edition interface of a dataset, the Visualizations > Calendar tab allows to configure the Calendar visualization displayed in the front office once the dataset is published on the portal.
 
 The Calendar visualization, when available, is optional. It can be enabled or disabled using the tick box displayed right under the visualizations tabs.
 
@@ -91,7 +91,7 @@ To configure the Calendar visualization, follow the indications from the tables 
     * Description
     * Usage
   * * Custom HTML tooltip
-    * HTML area to write the content of the tooltip. 3 buttons above the text area allow to reindent a selection, reindent the whole HTML text and/or to wrap the lines.
+    * HTML area to write the content of the tooltip. 3 buttons above the text area allow to reindent a selection, reindent the whole HTML text, and/or to wrap the lines.
     * Write the content of the tooltip in HTML.
 
 

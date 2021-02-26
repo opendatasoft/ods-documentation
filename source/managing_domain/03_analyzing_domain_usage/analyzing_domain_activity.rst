@@ -10,7 +10,7 @@ The Backoffice analytics allows the domain administrator to monitor domain confi
 
 There are seven indicators :
 
-1. **Actions**: Frequency and distribution of administrative actions (edit and publish datasets or pages, add users to the domain etc). Gives you precious information about what your users do and how they spend their time on the platform. Also remember that like with every charts on Opendatasoft you can filter the variables displayed by clicking on the legend labels.
+1. **Actions**: Frequency and distribution of actions (analyze, geo, search) taken by users based on API calls. It gives you precious information about what your users do and how to serve them better. Remember that, like with every chart on Opendatasoft, you can filter the variables displayed (Analyze, Geo, or Search) by clicking on the legend labels.
 
 .. ifconfig:: language == 'en'
 
@@ -58,7 +58,7 @@ There are seven indicators :
     .. image:: images/usage__backoffice-usage-4-fr.jpg
         :alt: Top 5 utilisateurs
 
-5. **Top 5 modified datasets**: Most modified datasets. Those are the datasets that requested the more work.
+5. **Top 5 modified datasets**: Most modified datasets. Those are the datasets that requested more work.
 
 .. ifconfig:: language == 'en'
 
@@ -70,7 +70,7 @@ There are seven indicators :
     .. image:: images/usage__backoffice-usage-5-fr.jpg
         :alt: Top 5 jeux de données modifiés
 
-6. **Top 5 pages**: Most modified pages. Those are the pages that requested the more work.
+6. **Top 5 pages**: Most modified pages. Those are the pages that requested more work.
 
 .. ifconfig:: language == 'en'
 
@@ -126,7 +126,7 @@ The activity log dataset contains the following fields.
    * * ``page_id``
      * Identifier of the page concerned by the action
    * * ``diff``
-     * Difference introduced by the action (for example a new permission added to a user)
+     * Difference introduced by the action (for example, a new permission added to a user)
    * * ``map_id``
      * Identifier of the map
    * * ``reuse_title``

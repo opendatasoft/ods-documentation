@@ -1,7 +1,7 @@
 Translating a dataset
 =====================
 
-For domains with more than one language activated in the front office, Opendatasoft allows the translation of specific elements of the datasets, as well as their metadata. When translated, this information appear in the language the user selected to navigate the portal. It should help them understand the dataset as best as possible, even though the data itself is not in their preferred language.
+For domains with more than one language activated in the front office, Opendatasoft allows the translation of specific elements of the datasets and their metadata. When translated, this information appears in the language the user selected to navigate the portal. It should help them understand the dataset as best as possible, even though the data itself is not in their preferred language.
 
 In the Opendatasoft platform, these translations are done in the Translations tab of the edition interface of each dataset.
 
@@ -12,8 +12,8 @@ Choosing elements for translation
 
 For each available language displayed in the Translations tab, it is possible to translate various elements that have been originally configured in 2 other configuration tabs of the dataset.
 
-- The :doc:`Information tab</publishing_data/06_configuring_metadata/configuring_metadata>`, which contains 4 standard metadata that can be translated: Title, Description, Keywords and Publisher.
-- The :doc:`Processing tab</publishing_data/05_processing_data/processing_data>`, which contains the dataset fields labels and descriptions, that can also be translated.
+- The :doc:`Information tab</publishing_data/06_configuring_metadata/configuring_metadata>`, which contains 4 standard metadata that can be translated: Title, Description, Keywords, and Publisher.
+- The :doc:`Processing tab</publishing_data/05_processing_data/processing_data>`, which contains the dataset fields labels and descriptions that can also be translated.
 
 .. admonition:: Note
    :class: note
@@ -38,10 +38,10 @@ The left side of the translation interface displays the elements that can be tra
 - Untranslated elements are preceded by a grey |icon-cross| icon.
 - Translated elements are preceded by a green |icon-check| icon.
 
-The right side displays the textboxes where the translations should be written. The translations can either be:
+The right side displays the text boxes where the translations should be written. The translations can be:
 
-- suggestions proposed by the platform,
-- or, new translations.
+- suggestions proposed by the platform, or
+- new translations.
 
 .. admonition:: Important
    :class: important
@@ -56,30 +56,30 @@ Managing translations in the translation interface
 Approving or rejecting translation suggestions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If a value has already been translated in any dataset of the domain, the platform will automatically suggest that translation for the same value. In that case, the suggested translation is automatically written in the translation textbox, as a proposition that can either be validated of rejected.
+If a value has already been translated in any dataset of the domain, the platform will automatically suggest that translation for the same value. In that case, the suggested translation is automatically written in the translation text box as a proposition that can either be validated or rejected.
 
 .. image:: images/suggested_translation.png
 
-1. Click *Yes* to validate the suggestion, or, click *No* to reject the suggestion.
+1. Click *Yes* to validate the suggestion or *No* to reject the suggestion.
 2. Click the Submit button to save the translations.
 
 .. admonition:: Note
    :class: note
 
-   To validate all translations suggestions, click the Validate all suggestions button in the top right hand corner of the translation interface.
+   To validate all translation suggestions, click the Validate all suggestions button in the top-right hand corner of the translation interface.
 
 Adding new translations
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 If a value has never been translated, or if the translation suggestion was rejected, a new translation should be added.
 
-1. Add new translations in the right textboxes.
+1. Add new translations in the right text boxes.
 2. Click the Submit button to save the translations.
 
 .. admonition:: Note
    :class: note
 
-   If the original value should be kept as is (e.g. a producer name), click the |icon-copy-value| button to fill up the translation textbox with that same value.
+   If the original value should be kept as is (for example, a producer name), click the |icon-copy-value| button to fill up the translation text box with that same value.
 
 
 
