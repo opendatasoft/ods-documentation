@@ -8,6 +8,8 @@ Third-party services, specialized in measuring audience, can give additional ana
 
 All third-party analytics integrations are activated and configured from Configuration > Tracking in the back office.
 
+Once configured and running, they allow audience tracking on the front office of a domain.
+
 
 .. admonition:: Important
    :class: important
@@ -20,12 +22,14 @@ Google Analytics
 
 .. image:: images/configuration_tracking-google-analytics.png
 
-Google Analytics is an analytics solution edited by Google. It allows tracking on all pages of an Opendatasoft domain,  including the back office..
+Google Analytics is an analytics solution edited by Google.
+
+Currently, only "Universal Analytics" properties are supported.
 
 To activate and configure Google Analytics:
 
 1. In the Configuration > Tracking section of the back office, go to the Google Analytics area.
-2. Fill in the Google Analytics ID in the related textbox.
+2. Fill in the Google Analytics ID in the related textbox (it should start with ``UA-``).
 3. Click on the Save button in the top right corner.
 
 
@@ -34,7 +38,7 @@ XiTi Analyzer NX
 
 .. image:: images/configuration_tracking-xiti.png
 
-XiTi is an analytics solution edited by AT Internet. It allows tracking on all the pages of an Opendatasoft domain, including the back office..
+XiTi is an analytics solution edited by AT Internet.
 
 The activation of XiTi on an Opendatasoft domain involves the Opendatasoft team.
 
@@ -50,7 +54,7 @@ SmartTag
 
 .. image:: images/configuration_tracking-smarttag.png
 
-SmartTag is an analytics solution edited by AT Internet. It allows tracking on all the pages of an Opendatasoft domain,  including the back office..
+SmartTag is an analytics solution edited by AT Internet.
 
 The activation of SmartTag on an Opendatasoft domain involves the Opendatasoft team.
 
