@@ -43,11 +43,8 @@ Searching in the data
 
        returns every record which has no value in the column named referer
    * * containing a value that starts with the specified string, in the specified field
-     * #startswith(id_field,string)
-
-       .. note::
-          ``#startswith`` queries are case sensitive.
-     * ``#startswith(user_id,anon)``
+     * #startswith(id_field,"string")
+     * ``#startswith(user_id,"anon")``
 
        returns every record containing a value that starts with ``anon`` in the column named ``user_id``
    * * where a date's field is anterior to a value
