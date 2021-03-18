@@ -79,10 +79,51 @@ Accepted metadata columns
    * * Semantic (if activated)
      * ``semantic.rml_mapping``, ``semantic.classes``, ``semantic.properties``
 
-- The ``geographic_reference_auto`` column contains the Boolean value ``true`` if the **Geographic coverage** metadata for the dataset is set to **Automatic**.
-- The ``geographic_reference`` column contains the location if the **Geographic coverage** metadata is set to **Specific**.
-
 For more information about the standard metadata, see :doc:`Standard metadata </publishing_data/06_configuring_metadata/standard_metadata>`.
+
+The geographic_reference_auto metadata
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The ``geographic_reference_auto`` column defines whether the dataset's geographic coverage is automatically computed and accepts a Boolean value:
+
+.. table:: This is my table
+    :widths: 20 80
+
+    +-----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | Value     | Purpose                                                                                                                                                                                                            |
+    +===========+====================================================================================================================================================================================================================+
+    | ``true``  | Sets the **Geographic coverage** metadata for the dataset to **Automatic**. The geographic coverage is automatically computed based on the dataset content or on the domain's dataset default geographic coverage. |
+    +-----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | ``false`` | Sets the **Geographic coverage** metadata for the dataset to the value for ``geographic_reference``.                                                                                                               |
+    +-----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+The geographic_reference metadata
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The ``geographic_reference`` column defines the location used for the dataset geographic coverage, which means the **Geographic coverage** metadata for the dataset is set to **Specific**.
+This ``geographic_reference`` column contains an array of georeference unique identifiers representing locations.
+
+Georeference unique identifiers use the following syntaxes based on the reference:
+
++----------------+----------------------------------------------------------------+---------------------------------------------------------------------------------+
+| Reference      | Description                                                    | Syntax                                                                          |
++================+================================================================+=================================================================================+
+| world          | The dataset contains content about different countries         | ``world``                                                                       |
++----------------+----------------------------------------------------------------+---------------------------------------------------------------------------------+
+| country        | The dataset contains country-level content                     | ``world_{{country code}}``                                                      |
++----------------+----------------------------------------------------------------+---------------------------------------------------------------------------------+
+| lower division | The dataset contains content about a specific country division | ``world_{{country code}}_{{administrative-level}}_{{administrative division}}`` |
++----------------+----------------------------------------------------------------+---------------------------------------------------------------------------------+
+
+- ``{{country code}}`` is a two-letter country code defined in `ISO 3166-1 alpha-2 <https://www.iso.org/obp/ui/#search/code>`_. For example, ``fr`` for France.
+- ``{{administrative-level}}`` is an administrative level for the country. For example, ``40`` is the administrative level for French regions. For more information about the administrative levels available for the desired country, see :ref:`referentials`.
+- ``{{administrative division}}`` is the relative administration division within the country's administrative level. For example, ``11`` is the code for the Île-de-France French region.
+ 
+You can retrieve the desired administrative division code as follows:
+    
+  1. Go to the :ref:`referentials` section of the documentation. 
+  2. From the table at the end of the section, select a country and an administrative level.      
+  3. From the related table row, click the link in the **Dataset URL** column to open the related geographical referential and get the desired administrative division code.
 
 
 Resources
