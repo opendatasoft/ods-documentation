@@ -138,7 +138,7 @@ your queries to filter the results based on a specific field's value.
    * * theme
      * The theme of the dataset
    * * keyword
-     * The keywords describing the dataset
+     * A keyword describing the dataset
    * * references
      * The references for the dataset
 
