@@ -99,11 +99,6 @@ Opendatasoft natively supports the following APIs:
 
    Contact your local support team to get these connectors activated on your domain.
 
-.. admonition:: Note
-   :class: note
-
-   Opendatasoft can also develop and integrate customer-specific Web APIs. Opendatasoft connectivity toolkit makes it possible to develop performant and secured connectors supporting incremental data processing.
-
 
 Pasting data
 ------------
