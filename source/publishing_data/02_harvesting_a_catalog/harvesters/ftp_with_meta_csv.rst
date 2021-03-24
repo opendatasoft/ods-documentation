@@ -105,15 +105,15 @@ This ``geographic_reference`` column contains an array of georeference unique id
 
 Georeference unique identifiers use the following syntaxes based on the reference:
 
-+----------------+----------------------------------------------------------------+---------------------------------------------------------------------------------+
-| Reference      | Description                                                    | Syntax                                                                          |
-+================+================================================================+=================================================================================+
-| world          | The dataset contains content about different countries         | ``world``                                                                       |
-+----------------+----------------------------------------------------------------+---------------------------------------------------------------------------------+
-| country        | The dataset contains country-level content                     | ``world_{{country code}}``                                                      |
-+----------------+----------------------------------------------------------------+---------------------------------------------------------------------------------+
-| lower division | The dataset contains content about a specific country division | ``world_{{country code}}_{{administrative-level}}_{{administrative division}}`` |
-+----------------+----------------------------------------------------------------+---------------------------------------------------------------------------------+
++----------------+----------------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------+
+| Reference      | Description                                                    | Syntax                                                                          | Example value                                     |
++================+================================================================+=================================================================================+===================================================+
+| world          | The dataset contains content about different countries         | ``world``                                                                       | ``world``                                         |
++----------------+----------------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------+
+| country        | The dataset contains country-level content                     | ``world_{{country code}}``                                                      | ``world_fr`` if dataset coverage is France        |
++----------------+----------------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------+
+| lower division | The dataset contains content about a specific country division | ``{{country code}}_{{administrative-level}}_{{administrative division}}``       | ``fr_80_75056`` if dataset coverage is Paris city |
++----------------+----------------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------+
 
 - ``{{country code}}`` is a two-letter country code defined in `ISO 3166-1 alpha-2 <https://www.iso.org/obp/ui/#search/code>`_. For example, ``fr`` for France.
 - ``{{administrative-level}}`` is an administrative level for the country. For example, ``40`` is the administrative level for French regions. For more information about the administrative levels available for the desired country, see :ref:`referentials`.
