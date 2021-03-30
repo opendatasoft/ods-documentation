@@ -33,6 +33,7 @@ Geographical processors
   :hidden:
 
   processors/geo_distance
+  processors/correct_geo_shape
   processors/convert_degrees
   processors/create_geopoint
   processors/decode_google_polyline
@@ -135,6 +136,9 @@ Converters & Functions
   * * :doc:`Compute geo distance<processors/geo_distance>`
     * Compute the distance between 2 coordinates
     * Default
+  * * :doc:`Correct geo shape<processors/correct_geo_shape>`
+    * Fix invalid geo shapes
+    * On demand
   * * :doc:`Convert degrees<processors/convert_degrees>`
     * Convert a degrees, minutes, seconds geo coordinate to WGS84 coordinates
     * Default

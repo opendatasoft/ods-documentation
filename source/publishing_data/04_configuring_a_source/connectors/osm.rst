@@ -25,11 +25,17 @@ Configuration
      * Description
      * Usage
    * * Keep only amenities
-     * Filters the export to only keep nodes and ways with the "amenity" tag.
-     * By default, the box is checked. To exclude all amenities, uncheck the box.
-   * * Tags
+     * Filters the export to only keep nodes and ways with the "amenity" tag. Amenities are important facilities for visitors and residents.
+     * By default, this check box is selected. To include all nodes and ways, clear this check box.
+   * * Load additional OSM versioning metadata
+     * Extracts the version number of each object. Values are stored in a "version" column.
+     * By default, this check box is cleared.
+   * * Use centroid for polygons instead of shapes
+     * Uses the centroid of the polygons.
+     * By default, this check box is cleared, meaning that shapes are used for polygons.
+   * * OSM tags to map
      * Tags to extract from the nodes and ways.
-     * Write the tags to extract in the textbox. Tags should be separated with a comma.
+     * Writes the tags to extract in the textbox. Tags should be separated with a comma.
    * * Relation tags
      * Tags to extract from attached relations.
-     * Write the tags to extract in the textbox. Tags should be separated with a comma.
+     * Writes the tags to extract in the textbox. Tags should be separated with a comma.

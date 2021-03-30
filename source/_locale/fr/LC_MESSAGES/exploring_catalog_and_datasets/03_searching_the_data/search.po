@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-11 15:49+0100\n"
+"POT-Creation-Date: 2021-03-25 11:59+0100\n"
 "PO-Revision-Date: 2018-06-27 09:08+0000\n"
 "Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2021\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
@@ -174,90 +174,114 @@ msgstr ""
 "la colonne nommée referer"
 
 #: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:45
+msgid ""
+"containing a value that starts with the specified string, in the specified "
+"field"
+msgstr ""
+"contenant une valeur commençant par la chaîne de caractères spécifiée dans "
+"le champ indiqué"
+
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:46
+msgid "#startswith(id_field,\"string\")"
+msgstr "#startswith(id_field,\"string\")"
+
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:47
+msgid "``#startswith(user_id,\"anon\")``"
+msgstr "``#startswith(user_id,\"anon\")``"
+
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:49
+msgid ""
+"returns every record containing a value that starts with ``anon`` in the "
+"column named ``user_id``"
+msgstr ""
+"renvoie tous les enregistrements contenant une valeur commençant par "
+"``anon`` dans la colonne nommée ``user_id``"
+
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:50
 msgid "where a date's field is anterior to a value"
 msgstr "où la date du champ est antérieure à une valeur"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:46
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:51
 msgid "id_date_field<=YYYY/MM/DD"
 msgstr "id_date_field<=AAAA/MM/JJ"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:47
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:52
 msgid "``timestamp<=2016/09``"
 msgstr "``timestamp<=2016/09``"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:49
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:54
 msgid ""
 "returns every record with a timestamp prior and equal to September 2016"
 msgstr ""
 "renvoie tous les enregistrements avec un timestamp antérieur et égal à "
 "septembre 2016"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:50
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:55
 msgid "where a date's field is the current date minus a period"
 msgstr "où la date du champ est la date actuelle moins une période"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:51
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:56
 msgid "id_date_field>#now(days=-value)"
 msgstr "id_date_field>#now(days=-value)"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:52
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:57
 msgid "``timestamp>#now(days=-7)``"
 msgstr "``timestamp>#now(days=-7)``"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:54
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:59
 msgid ""
 "returns every record with a timestamp equal to the current day minus 7 days"
 msgstr ""
 "renvoie tous les enregistrements avec un timestamp égal au jour actuel moins"
 " 7 jours"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:55
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:60
 msgid "containing a geo field located in a specific area"
 msgstr "contenant un champ géographique dans une zone spécifique"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:56
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:61
 msgid "for a circular area:"
 msgstr "pour une zone circulaire :"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:58
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:63
 msgid "#distance(\"latitude,longitude\",distance)"
 msgstr "#distance(\"latitude,longitude\",distance)"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:60
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:65
 msgid "for a polygon or square area:"
 msgstr "pour une zone carrée ou polygonale :"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:62
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:67
 msgid "#polygon(geo_field,\"(lat1,lon1),(lat2,lon2),(lat3,lon3)\")"
 msgstr "#polygon(geo_field,\"(lat1,lon1),(lat2,lon2),(lat3,lon3)\")"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:63
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:68
 msgid "``#distance(\"48.866667,2.333333\",1000)``"
 msgstr "``#distance(\"48.866667,2.333333\",1000)``"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:65
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:70
 msgid "returns every record located at 1 km from the center of Paris"
 msgstr "renvoie tous les enregistrements situés à 1 km du centre de Paris"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:67
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:72
 msgid ""
 "``#polygon(coordinates,\"(40.17887331434696,-7.3828125),(52.05249047600099,-7.3828125),(52.05249047600099,16.171875),(40.17887331434696,16.171875),(40.17887331434696,-7.3828125)\")``"
 msgstr ""
 "``#polygon(coordinates,\"(40.17887331434696,-7.3828125),(52.05249047600099,-7.3828125),(52.05249047600099,16.171875),(40.17887331434696,16.171875),(40.17887331434696,-7.3828125)\")``"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:69
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:74
 msgid "returns every record located into the polygon"
 msgstr "renvoie tous les enregistrements se trouvant dans le polygone"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:72
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:77
 msgid "Query Language and Geo Filtering"
 msgstr "Langage de requêtes et filtrage géographique"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:75
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:80
 msgid "Query language"
 msgstr "Langage de requêtes"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:77
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:82
 msgid ""
 "The Opendatasoft query language makes it possible to express complex boolean"
 " conditions as a filtering context."
@@ -265,15 +289,15 @@ msgstr ""
 "Le langage de requêtes Opendatasoft permet d'exprimer des conditions "
 "booléennes complexes en tant que contexte de filtrage."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:80
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:85
 msgid "Full-text search"
 msgstr "Recherche en texte intégral"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:82
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:87
 msgid "The query language accepts full-text queries."
 msgstr "Le langage de requêtes accepte les requêtes en texte intégral."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:84
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:89
 msgid ""
 "If a given word or compound is surrounded with double quotes, only exact "
 "matches are returned (modulo an accent and case insensitive match)."
@@ -283,23 +307,23 @@ msgstr ""
 "peuvent présenter des différences au niveau des caractères accentués et de "
 "la casse)."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:87
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:92
 msgid "``film`` returns results that contain film, films, filmography..."
 msgstr ""
 "``film`` renvoie des résultats contenant la chaîne de caractères film, par "
 "exemple films, filmographie..."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:88
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:93
 msgid "``\"film\"`` only returns the ones containing exactly film."
 msgstr ""
 "``\"film\"`` renvoie uniquement des résultats contenant exactement la chaîne"
 " de caractères film."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:91
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:96
 msgid "Boolean expressions"
 msgstr "Expressions booléennes"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:93
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:98
 msgid ""
 "The query language supports the following Boolean operators ``AND``, ``OR``,"
 " and ``NOT``."
@@ -307,7 +331,7 @@ msgstr ""
 "Le langage de requêtes supporte les opérateurs booléens suivants : `AND``, "
 "``OR`` et ``NOT``."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:95
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:100
 msgid ""
 "Parenthesis can be used to group together expressions and alter the default "
 "priority model:"
@@ -315,35 +339,35 @@ msgstr ""
 "Des parenthèses peuvent être utilisées pour regrouper des expressions et "
 "modifier le modèle de priorité par défaut :"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:97
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:102
 msgid "``NOT``"
 msgstr "``NOT``"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:98
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:103
 msgid "``AND``"
 msgstr "``AND``"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:99
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:104
 msgid "``OR``"
 msgstr "``OR``"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:101
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:106
 msgid "Samples"
 msgstr "Exemples"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:103
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:108
 msgid "``film OR trees``"
 msgstr "``film OR trees``"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:104
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:109
 msgid "``(film OR trees) AND paris``"
 msgstr "``(film OR trees) AND paris``"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:107
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:112
 msgid "Field queries"
 msgstr "Requêtes sur des champs"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:109
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:114
 msgid ""
 "One of the major features of the query language is to allow per field "
 "filtering. You can use field names as a prefix to your queries to filter the"
@@ -354,7 +378,7 @@ msgstr ""
 "préfixe pour vos requêtes afin de filtrer le résultat en fonction de la "
 "valeur d'un champ en particulier."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:112
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:117
 msgid ""
 "**For dataset search in the catalog**, the list of available fields "
 "corresponds exactly to available metadata. By default:"
@@ -362,89 +386,97 @@ msgstr ""
 "**Pour la recherche de jeux de données**, la liste de champs disponibles "
 "correspond exactement aux métadonnées disponibles. Par défaut :"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:117
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:122
 msgid "Field Name"
 msgstr "Nom du champ"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:118
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:169
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:216
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:123
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:176
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:223
 msgid "Description"
 msgstr "Description"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:119
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:124
 msgid "publisher"
 msgstr "publisher"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:120
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:125
 msgid "The dataset publisher"
 msgstr "Producteur du jeu de données"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:121
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:126
 msgid "title"
 msgstr "title"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:122
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:127
 msgid "The dataset title"
 msgstr "Le titre du jeu de données"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:123
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:128
 msgid "description"
 msgstr "description"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:124
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:129
 msgid "The dataset description"
 msgstr "Description du jeu de données"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:125
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:130
 msgid "license"
 msgstr "license"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:126
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:131
 msgid "The dataset license"
 msgstr "Licence du jeu de données"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:127
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:132
 msgid "records_count"
 msgstr "records_count"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:128
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:133
 msgid "The number of records in the dataset"
 msgstr "Nombre d'enregistrements dans le jeu de données"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:129
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:134
 msgid "modified"
 msgstr "modified"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:130
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:135
 msgid "The last modification date of the dataset"
 msgstr "Date de la dernière modification du jeu de données"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:131
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:136
 msgid "language"
 msgstr "language"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:132
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:137
 msgid "The language of the dataset (iso code)"
 msgstr "Langue du jeu de données (code ISO)"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:133
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:138
 msgid "theme"
 msgstr "theme"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:134
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:139
 msgid "The theme of the dataset"
 msgstr "Thème du jeu de données"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:135
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:140
+msgid "keyword"
+msgstr "keyword"
+
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:141
+msgid "A keyword describing the dataset"
+msgstr "Un mot-clé décrivant le jeu de données"
+
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:142
 msgid "references"
 msgstr "references"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:136
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:143
 msgid "The references for the dataset"
 msgstr "Références pour le jeu de données"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:138
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:145
 msgid ""
 "The domain administrator might define a richer metadata template, thus "
 "giving access to a richer set of filtering fields."
@@ -452,7 +484,7 @@ msgstr ""
 "L'administrateur du domaine peut définir un modèle de métadonnées plus "
 "riche, ce qui donne accès à un ensemble de champs à filtrer plus riche."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:140
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:147
 msgid ""
 "**For record search in a dataset**, the list of available fields depends on "
 "the schema of the dataset. To fetch the list of available fields for a given"
@@ -463,14 +495,14 @@ msgstr ""
 "disponibles d'un jeu de données, vous pouvez utiliser les API de recherche "
 "de jeux de données ou de récupération de jeux de données."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:143
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:150
 msgid ""
 "Multiple operator fields can be used between the field name and the query:"
 msgstr ""
 "Plusieurs champs d'opérateurs peuvent être utilisés entre le nom de champ et"
 " la requête :"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:145
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:152
 msgid ""
 "``:``, ``=``, ``==``: Return results whose field exactly matches the given "
 "value (granted the fields are of text or numeric type)"
@@ -479,7 +511,7 @@ msgstr ""
 "exactement à la valeur donnée (sous réserve que les champs soient de type "
 "textuel ou numérique)"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:147
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:154
 msgid ""
 "``>``, ``<``, ``>=``, ``<=``: Return results whose field values are larger, "
 "smaller, larger or equal, smaller or equal to the given value (granted the "
@@ -490,7 +522,7 @@ msgstr ""
 "égales à la valeur donnée (sous réserve que le champ soit de type numérique "
 "ou un champ de date)."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:148
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:155
 msgid ""
 "``[start_date TO end_date]``: Queries Records whose date is between "
 "``start_date`` and ``end_date``."
@@ -498,7 +530,7 @@ msgstr ""
 "``[start_date TO end_date]`` : effectue une requête sur les enregistrements "
 "dont la date est située entre les arguments ``start_date`` et ``end_date``."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:150
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:157
 msgid ""
 "Date formats can be specified in different formats: simple "
 "(``YYYY[[/mm]/dd]``) or ISO 8601 (``YYYY-mm-DDTHH:MM:SS``)"
@@ -506,31 +538,31 @@ msgstr ""
 "Il est possible de spécifier différents formats de date : simple "
 "(``AAAA[[/mm]/jj]``) ou ISO 8601 (``AAAA-mm-JJTHH:MM:SS``)"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:152
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:159
 msgid "Examples:"
 msgstr "Exemples :"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:154
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:161
 msgid "``film_date >= 2002``"
 msgstr "``film_date >= 2002``"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:155
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:162
 msgid "``film_date >= 2013/02/11``"
 msgstr "``film_date >= 2013/02/11``"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:156
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:163
 msgid "``film_date: [1950 TO 2000]``"
 msgstr "``film_date: [1950 TO 2000]``"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:157
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:164
 msgid "``film_box_office > 10000 AND film_date < 1965``"
 msgstr "``film_box_office > 10000 AND film_date < 1965``"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:161
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:168
 msgid "Query language functions"
 msgstr "Fonctions du langage de requêtes"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:163
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:170
 msgid ""
 "Advanced functions can be used in the query language. Function names need to"
 " be prefixed with a sharp (``#``) sign."
@@ -538,15 +570,15 @@ msgstr ""
 "Il est possible d'intégrer des fonctions avancées au langage de requêtes. "
 "Les noms des fonctions doivent être précédés d'un croisillon (``#``)."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:168
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:175
 msgid "Function name"
 msgstr "Nom de la fonction"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:170
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:177
 msgid "now"
 msgstr "now"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:171
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:178
 msgid ""
 "Returns the current date. This function may be called as a query value for a"
 " field. When called without an argument, it will evaluate to the current "
@@ -562,11 +594,11 @@ msgstr ""
 "fonction peut également accepter des paramètres, reportez-vous aux "
 "paramètres disponibles pour la fonction ``#now`` ci-dessous."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:175
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:182
 msgid "null"
 msgstr "null"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:176
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:183
 msgid ""
 "This function may be called specifying a field name as a parameter. It "
 "returns the hits for which no value is defined for the specified field. For "
@@ -576,11 +608,11 @@ msgstr ""
 "paramètre. Elle renvoie les correspondances pour lesquelles aucune valeur "
 "n'est définie dans le champ spécifié. Par exemple ``#null(birthdate)``."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:178
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:185
 msgid "exact"
 msgstr "exact"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:179
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:186
 msgid ""
 "This function makes it possible to search for records with a field exactly "
 "matching a given value. For example, ``#exact(firstname, \"Marie\")`` will "
@@ -592,11 +624,11 @@ msgstr ""
 " \"Marie\")`` renvoie les enregistrements dont le champ ``firstname`` "
 "contient exactement \"Marie\" et rien d'autre."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:182
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:189
 msgid "attr"
 msgstr "attr"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:183
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:190
 msgid ""
 "This function makes it possible to search for records with a field matching "
 "a value in the querying user's SAML attributes. For example, "
@@ -611,11 +643,11 @@ msgstr ""
 "\"Marie\" renverra les enregistrements avec un champ ``firstname`` contenant"
 " \"Marie\""
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:187
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:194
 msgid "**Available parameters for the ``#now`` function**:"
 msgstr "**Paramètres disponibles pour la fonction ``#now``** :"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:189
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:196
 msgid ""
 "years, months, weeks, days, hours, minutes, seconds, microseconds: These "
 "parameters add time to the current date."
@@ -623,7 +655,7 @@ msgstr ""
 "years, months, weeks, days, hours, minutes, seconds, microseconds : ces "
 "paramètres ajoutent ou soustraient du temps à la date actuelle."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:191
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:198
 msgid ""
 "For example, ``#now(years=-1, hours=-1)`` returns the current date minus a "
 "year and an hour."
@@ -631,7 +663,7 @@ msgstr ""
 "Par exemple, ``#now(years=-1, hours=-1)`` renvoie la date actuelle moins une"
 " année et une heure."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:193
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:200
 msgid ""
 "year, month, day, hour, minute, second, microsecond: can also be used to "
 "specify an absolute date."
@@ -639,7 +671,7 @@ msgstr ""
 "year, month, day, hour, minute, second, microsecond : ces paramètres peuvent"
 " également être utilisés pour spécifier une date absolue."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:195
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:202
 msgid ""
 "For example, ``#now(year=2001)`` returns the current time, day, and month "
 "for the year 2001."
@@ -647,7 +679,7 @@ msgstr ""
 "Par exemple, ``#now(year=2001)`` renvoie l'heure, le jour et le mois actuels"
 " pour l'année 2001."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:197
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:204
 msgid ""
 "weekday: Specifies a day of the week. This parameter accepts either an "
 "integer between 0 and 6 (where 0 is Monday and 6 is Sunday) or the first two"
@@ -659,19 +691,19 @@ msgstr ""
 "lettres du jour (en anglais) suivies du cardinal de la première semaine sur "
 "laquelle porte la requête."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:201
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:208
 msgid "``#now(weeks=-2, weekday=1)`` returns the Tuesday before last."
 msgstr "``#now(weeks=-2, weekday=1)`` renvoie le mardi précédant le dernier."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:203
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:210
 msgid "``#now(weekday=MO(2))`` returns Monday after next."
 msgstr "``#now(weekday=MO(2))`` renvoie le lundi suivant le prochain."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:206
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:213
 msgid "Geo Filtering"
 msgstr "Filtrage géographique"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:208
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:215
 msgid ""
 "Records search accept geofilter parameters to filter in records that are "
 "located in a specific geographical area."
@@ -680,19 +712,19 @@ msgstr ""
 "géographique afin de filtrer les enregistrements situés dans une zone "
 "géographique spécifique."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:210
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:217
 msgid "The following parameters may be used."
 msgstr "Les paramètres suivants peuvent être utilisés."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:215
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:222
 msgid "Parameter Name"
 msgstr "Nom du paramètre"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:217
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:224
 msgid "geofilter.distance"
 msgstr "geofilter.distance"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:218
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:225
 msgid ""
 "Limits the result set to a geographical area defined by a circle "
 "(coordinates of the center of the circle expressed in WGS84 and distance "
@@ -704,11 +736,11 @@ msgstr ""
 "distance en mètres) : latitude,longitude,distance: "
 "``geofilter.distance=48.8520930694,2.34738897685,1000``"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:222
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:229
 msgid "Note"
 msgstr "Remarque"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:225
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:232
 msgid ""
 "This query parameter is equivalent to the ``#distance`` function described "
 "at the beginning of this documentation."
@@ -716,11 +748,11 @@ msgstr ""
 "Ce paramètre de requête équivaut à la fonction ``#distance`` décrite au "
 "début de cette documentation."
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:227
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:234
 msgid "geofilter.polygon"
 msgstr "geofilter.polygon"
 
-#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:228
+#: ../../source/exploring_catalog_and_datasets/03_searching_the_data/search.rst:235
 msgid ""
 "Limits the result set to a geographical area defined by a polygon "
 "(coordinates of the points expressed in WGS84 as in "

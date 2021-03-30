@@ -42,6 +42,11 @@ Searching in the data
      * ``#null(referer)``
 
        returns every record which has no value in the column named referer
+   * * containing a value that starts with the specified string, in the specified field
+     * #startswith(id_field,"string")
+     * ``#startswith(user_id,"anon")``
+
+       returns every record containing a value that starts with ``anon`` in the column named ``user_id``
    * * where a date's field is anterior to a value
      * id_date_field<=YYYY/MM/DD
      * ``timestamp<=2016/09``
@@ -132,6 +137,8 @@ your queries to filter the results based on a specific field's value.
      * The language of the dataset (iso code)
    * * theme
      * The theme of the dataset
+   * * keyword
+     * A keyword describing the dataset
    * * references
      * The references for the dataset
 
