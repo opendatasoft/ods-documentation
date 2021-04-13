@@ -18,21 +18,13 @@ Uploading a file
 
 This method consists of directly uploading a file into the platform to attach a static file to a new dataset.
 
+The size limit for a file is 240 Mo. If your file is too big, you can compress it before uploading it to the platform. For more information, see :ref:`Supported compressed file formats<supportedcompressedformats>`.
+
 1. In Catalog > Datasets, click on the **New dataset** button.
 2. Click on the **Add a source** button.
 3. Click on the **Upload a file** button.
 4. Choose the file to upload to the platform.
 5. Click on the **Open** button of the file selection window.
-
-.. admonition:: Caution
-   :class: caution
-
-   The size limit for a file is 240Mo. If your file is too big, you can compress it before uploading it to the platform (see :ref:`Supported compressed file formats<supportedcompressedformats>`).
-
-.. admonition:: Note
-   :class: note
-
-   It is possible to drag and drop the file after steps 1 and 2 instead of following the whole file selection procedure.
 
 
 .. _sourceremotedata:
