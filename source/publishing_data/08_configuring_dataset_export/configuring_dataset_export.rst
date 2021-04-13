@@ -55,3 +55,8 @@ Uploading alternative exports
 The Alternative exports area of the Export tab allows to upload any file of any format.
 
 To upload an alternative export file, either click the Upload a file button or drag and drop the file in the area.
+
+.. warning::
+   Metadata is not stripped from uploaded files. The tags may expose sensitive information, such as geolocation data or device information.
+   
+   Before uploading files, make sure you strip metadata you want to keep private.
