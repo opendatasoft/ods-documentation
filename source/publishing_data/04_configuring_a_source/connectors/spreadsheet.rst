@@ -13,6 +13,19 @@ The spreadsheet connector can read the following files:
 
    Formulas in Excel and OpenOffice files are understood by the platform. All recognized formulas will automatically be transformed into their result in the files fields.
 
+Spreadsheet preparation for easier data loading
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+It is easier to load data from simple spreadsheets that follow good practices:
+
+- Make sure all cells and rows contain data. Avoid blank cells and rows.
+- Do not merge cells. Repeat the values in every cell instead.
+- Avoid calculations (for example, sums).
+- Do not freeze rows or columns.
+- Do not format cells.
+- Do not use one column per year but one timestamp column.
+
+
 Creation
 ~~~~~~~~
 
