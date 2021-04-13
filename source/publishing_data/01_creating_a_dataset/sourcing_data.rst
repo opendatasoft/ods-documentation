@@ -16,9 +16,10 @@ There are 3 different methods to add data to a dataset:
 Uploading a file
 ----------------
 
-This method consists of directly uploading a file into the platform to attach a static file to a new dataset.
+This method consists in uploading a file into the platform to attach a static file to a new dataset.
 
-The size limit for a file is 240 Mo. If your file is too big, you can compress it before uploading it to the platform. For more information, see :ref:`Supported compressed file formats<supportedcompressedformats>`.
+.. note::
+   The size limit for a file is 240 Mo. If your file is too large, you can compress it before uploading it to the platform. For more information, see :ref:`Supported compressed file formats<supportedcompressedformats>`.
 
 1. In Catalog > Datasets, click on the **New dataset** button.
 2. Click on the **Add a source** button.
@@ -26,6 +27,10 @@ The size limit for a file is 240 Mo. If your file is too big, you can compress i
 4. Choose the file to upload to the platform.
 5. Click on the **Open** button of the file selection window.
 
+.. warning::
+   Metadata is not stripped from uploaded files. The tags may expose sensitive information, such as geolocation data or device information.
+   
+   Before uploading files, make sure you strip metadata you want to keep private.
 
 .. _sourceremotedata:
 
