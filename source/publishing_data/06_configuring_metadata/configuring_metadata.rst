@@ -12,6 +12,10 @@ In the Opendatasoft platform, all metadata configurations are done in the Inform
 
    The Information tab also contains an Attachments tab that allows the upload of files related to the dataset (for example, information documents to explain in details the fields and data, methodology documents on how the data was collected, etc.).
 
+   Metadata is not stripped from uploaded files. The tags may expose sensitive information, such as geolocation data or device information.
+   
+   Before uploading files, make sure you strip metadata you want to keep private.
+
 
 .. image:: images/metadata_configuration_interface.png
     :alt: Information tab when publishing a new dataset, to configure the metadata of the dataset

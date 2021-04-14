@@ -7,6 +7,10 @@ This feature is available in the **Assets** section of the back office of an Ope
 
 .. image:: images/assets_interface.png
 
+.. warning::
+   Metadata is not stripped from uploaded files. The tags may expose sensitive information, such as geolocation data or device information.
+   
+   Before uploading files, make sure you strip metadata you want to keep private.
 
 Adding an image as an asset
 ---------------------------
