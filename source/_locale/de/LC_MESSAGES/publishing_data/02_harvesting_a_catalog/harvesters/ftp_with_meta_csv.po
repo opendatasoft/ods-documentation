@@ -2,13 +2,13 @@
 # Copyright (C) 2021, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2018
 # Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2018
 # traducteur_DE1 <datawords.translator.de1@gmail.com>, 2020
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2021
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,10 +18,10 @@ msgstr ""
 "PO-Revision-Date: 2018-06-27 09:11+0000\n"
 "Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2021\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:2
@@ -92,7 +92,7 @@ msgid "**Example:**"
 msgstr "**Beispiel:**"
 
 #: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:49
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:114
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:160
 msgid "name"
 msgstr "name"
 
@@ -101,7 +101,7 @@ msgid "title"
 msgstr "title"
 
 #: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:49
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:114
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:160
 msgid "description"
 msgstr "description"
 
@@ -114,7 +114,7 @@ msgid "keyword"
 msgstr "keyword"
 
 #: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:49
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:149
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:195
 msgid "source_dataset"
 msgstr "source_dataset"
 
@@ -193,14 +193,6 @@ msgstr ""
 "Die **Spalte CSV-Ressource** (standardmäßig ``source_dataset``) enthält die "
 "Ressource für jede Zeile."
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:58
-msgid ""
-"The optional **CSV shema column** (here, ``schema_file``) contains the "
-"schema file for each row."
-msgstr ""
-"Die optionale **Spalte CSV-Schema** (hier: ``schema_file``) enthält die "
-"Schema-Datei für jede Zeile."
-
 #: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:59
 msgid ""
 "Every other column is a metadata (see table below for the complete list of "
@@ -228,18 +220,6 @@ msgstr "Spaltenname"
 #: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:69
 msgid "Standard"
 msgstr "Standard"
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:70
-msgid ""
-"``title``, ``description``, ``theme``, ``keyword``, ``license``, "
-"``language``, ``timezone``, ``modified``, ``geographic_area_mode``, "
-"``geographic_area``, ``publisher``, ``references``, ``attributions``, "
-"``oauth_scope``"
-msgstr ""
-"``title``, ``description``, ``theme``, ``keyword``, ``license``, "
-"``language``, ``timezone``, ``modified``, ``geographic_area_mode``, "
-"``geographic_area``, ``publisher``, ``references``, ``attributions``, "
-"``oauth_scope``"
 
 #: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:71
 msgid "Custom"
@@ -311,15 +291,15 @@ msgid ""
 msgstr ""
 "``semantic.rml_mapping``, ``semantic.classes``, ``semantic.properties``"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:84
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:130
 msgid "Resources"
 msgstr "Ressourcen"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:86
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:132
 msgid "Resources can either be:"
 msgstr "Ressourcen können Folgendes sein:"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:88
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:134
 msgid ""
 "files on the FTP server, in the same folder as the ``index.csv`` file, or "
 "under a subdirectory by specifying the relative path to the file in the "
@@ -329,15 +309,15 @@ msgstr ""
 "oder in einem Unterordner, wobei der relative Dateipfad in der Spalte "
 "angegeben werden muss (z. B. \"resources/chocolate.csv\")"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:89
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:135
 msgid "any URL pointing towards a supported format"
 msgstr "eine beliebige URL, die auf ein unterstütztes Format verweist"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:91
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:137
 msgid "If the column is empty, the dataset will only contain metadata."
 msgstr "Wenn die Zeile leer ist, enthält der Datensatz nur Metadaten."
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:93
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:139
 msgid ""
 "Resources in any format supported by the platform can be harvested. However,"
 " as the harvester heavily relies on automatic parameters detection for the "
@@ -349,11 +329,11 @@ msgstr ""
 "Erkennung der Konfiguration des Konnektors basiert, müssen Dateien einfach "
 "genug sein, um korrekt extrahiert zu werden."
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:96
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:142
 msgid "Schema CSV file"
 msgstr "CSV-Schema-Datei"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:98
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:144
 msgid ""
 "For each resource, the FTP folder can contain a **CSV schema file** that "
 "defines labels and descriptions for each field of the dataset."
@@ -362,7 +342,7 @@ msgstr ""
 "die Beschriftungen und Beschreibungen für jedes Feld des Datensatzes "
 "definiert."
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:100
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:146
 msgid ""
 "The filename of each schema file must be written in the **CSV schema "
 "column**. This file has the following specifications:"
@@ -370,7 +350,7 @@ msgstr ""
 "Der Dateiname jeder Schema-Datei muss in der **Spalte CSV-Schema** stehen. "
 "Für diese Datei gelten folgende Vorgaben:"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:102
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:148
 msgid ""
 "a ``name`` column holds each field name in lowercase (e.g. on a CSV "
 "resource, this would be the column names in lowercase)"
@@ -378,14 +358,14 @@ msgstr ""
 "eine Spalte ``Name`` enthält jeden Feldnamen in Kleinbuchstaben (in einer "
 "CSV-Ressource wäre dies z. B. der Spaltenname in Kleinbuchstaben)"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:103
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:149
 msgid ""
 "a ``label`` column (optional) holds the label of the corresponding field"
 msgstr ""
 "eine Spalte ``Beschriftung`` (optional) enthält die Beschriftung des "
 "entsprechenden Felds"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:104
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:150
 msgid ""
 "a ``description`` column (optional) holds the description of the "
 "corresponding field"
@@ -393,35 +373,36 @@ msgstr ""
 "eine Spalte ``Beschreibung`` (optional) enthält die Beschreibung des "
 "entsprechenden Felds"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:114
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:160
 msgid "label"
 msgstr "Beschriftung"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:116
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:162
 msgid "company"
 msgstr "Unternehmen"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:116
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:162
 msgid "Company"
 msgstr "Unternehmen"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:116
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:162
 msgid "The company that makes the bar"
 msgstr "Das Unternehmen, dass den Riegel herstellt"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:118
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:164
 msgid "ref"
 msgstr "Ref"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:118
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:109
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:164
 msgid "Reference"
 msgstr "Referenz"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:118
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:164
 msgid "The product id of the chocolate bar"
 msgstr "Die Produkt-ID des Schokoriegels"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:121
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:167
 msgid ""
 "The schema files do not need to contain a row for each field, and it is not "
 "required to provide a schema file for each dataset in the ``index.csv``. In "
@@ -432,31 +413,32 @@ msgstr ""
 " zur Verfügung zu stellen. Gegebenenfalls lassen Sie die entsprechende Zelle"
 " leer."
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:124
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:170
 msgid "Parameters"
 msgstr "Parameter"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:129
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:175
 msgid "Name"
 msgstr "Name"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:130
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:109
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:176
 msgid "Description"
 msgstr "Beschreibung"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:131
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:177
 msgid "Example"
 msgstr "Beispiel"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:132
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:178
 msgid "**Host** (host)"
 msgstr "**Host** (host)"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:133
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:179
 msgid "URL of the FTP server"
 msgstr "URL des FTP-Servers"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:134
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:180
 msgid ""
 "eu.ftp.opendatasoft.com, ftps://eu.ftp.opendatasoft.com, "
 "ftp://eu.ftp.opendatasoft.com"
@@ -464,39 +446,39 @@ msgstr ""
 "eu.ftp.opendatasoft.com, ftps://eu.ftp.opendatasoft.com, "
 "ftp://eu.ftp.opendatasoft.com"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:135
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:181
 msgid "**User** (user)"
 msgstr "**Benutzer** (user)"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:136
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:182
 msgid "Your username"
 msgstr "Ihr Benutzername"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:138
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:184
 msgid "**Password** (password)"
 msgstr "**Kennwort** (password)"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:139
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:185
 msgid "Your password"
 msgstr "Ihr Kennwort"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:141
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:187
 msgid "Subdirectory (subdir)"
 msgstr "Unterverzeichnis (subdir)"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:142
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:188
 msgid "The directory containing the data you want to harvest."
 msgstr "Das Verzeichnis mit den Daten, die Sie sammeln möchten."
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:143
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:189
 msgid "pub/documents"
 msgstr "pub/documents"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:144
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:190
 msgid "**Metadata CSV filename** (metadata_file)"
 msgstr "**Metadaten-CSV-Dateiname** (metadata_file)"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:145
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:191
 msgid ""
 "The file holding the metadata and filenames (see above for more precise "
 "specifications)."
@@ -504,28 +486,233 @@ msgstr ""
 "Die Datei mit den Metadaten und Dateinamen (genauere Infos siehe weiter "
 "oben)."
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:146
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:192
 msgid "index.csv"
 msgstr "index.csv"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:147
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:193
 msgid "**Metadata CSV resource column** (resource_location_column)"
 msgstr "**Metadaten-CSV-Ressourcenspalte** (resource_location_column)"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:148
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:194
 msgid "This column holds a filename or an URL with the dataset resource."
 msgstr ""
 "Diese Spalte enthält einen Dateinamen oder eine URL mit der "
 "Datensatzressource."
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:150
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:196
 msgid "Metadata CSV schema column (resource_schema_column)"
 msgstr "Metadaten-CSV-Schemaspalte (resource_schema_column)"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:151
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:197
 msgid ""
 "This column holds a filename with the resource schema (column labels and "
 "descriptions)."
 msgstr ""
 "Diese Spalte enthält einen Dateinamen mit dem Ressourcenschema "
 "(Spaltenbeschriftungen und -beschreibungen)."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:58
+#, fuzzy
+msgid ""
+"The optional **CSV schema column** (here, ``schema_file``) contains the "
+"schema file for each row."
+msgstr ""
+"Die optionale **Spalte CSV-Schema** (hier: ``schema_file``) enthält die "
+"Schema-Datei für jede Zeile."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:70
+#, fuzzy
+msgid ""
+"``title``, ``description``, ``theme``, ``keyword``, ``license``, "
+"``language``, ``timezone``, ``modified``, ``geographic_reference_auto``, "
+"``geographic_reference``, ``publisher``, ``references``, ``attributions``, "
+"``oauth_scope``"
+msgstr ""
+"``title``, ``description``, ``theme``, ``keyword``, ``license``, "
+"``language``, ``timezone``, ``modified``, ``geographic_area_mode``, "
+"``geographic_area``, ``publisher``, ``references``, ``attributions``, "
+"``oauth_scope``"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:82
+msgid ""
+"For more information about the standard metadata, see :doc:`Standard "
+"metadata </publishing_data/06_configuring_metadata/standard_metadata>`."
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:85
+msgid "The geographic_reference_auto metadata"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:87
+msgid ""
+"The ``geographic_reference_auto`` column defines whether the dataset's "
+"geographic coverage is automatically computed and accepts a Boolean value:"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:89
+msgid "This is my table"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:93
+msgid "Value"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:93
+msgid "Purpose"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:95
+msgid "``true``"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:95
+msgid ""
+"Sets the **Geographic coverage** metadata for the dataset to **Automatic**. "
+"The geographic coverage is automatically computed based on the dataset "
+"content or on the domain's dataset default geographic coverage."
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:97
+msgid "``false``"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:97
+msgid ""
+"Sets the **Geographic coverage** metadata for the dataset to the value for "
+"``geographic_reference``."
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:101
+msgid "The geographic_reference metadata"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:103
+msgid ""
+"The ``geographic_reference`` column defines the location used for the "
+"dataset geographic coverage, which means the **Geographic coverage** "
+"metadata for the dataset is set to **Specific**. This "
+"``geographic_reference`` column contains an array of georeference unique "
+"identifiers representing locations."
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:106
+msgid ""
+"Georeference unique identifiers use the following syntaxes based on the "
+"reference:"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:109
+msgid "Syntax"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:109
+msgid "Example value"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:111
+msgid "world"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:111
+msgid "The dataset contains content about different countries"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:111
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:111
+msgid "``world``"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:113
+msgid "country"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:113
+msgid "The dataset contains country-level content"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:113
+msgid "``world_{{country code}}``"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:113
+msgid "``world_fr`` if dataset coverage is France"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:115
+msgid "lower division"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:115
+msgid "The dataset contains content about a specific country division"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:115
+msgid ""
+"``{{country code}}_{{administrative-level}}_{{administrative division}}``"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:115
+msgid "``fr_80_75056`` if dataset coverage is Paris city"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:118
+msgid ""
+"``{{country code}}`` is a two-letter country code defined in `ISO 3166-1 "
+"alpha-2 <https://www.iso.org/obp/ui/#search/code>`_. For example, ``fr`` for"
+" France."
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:119
+msgid ""
+"``{{administrative-level}}`` is an administrative level for the country. For"
+" example, ``40`` is the administrative level for French regions. For more "
+"information about the administrative levels available for the desired "
+"country, see :ref:`referentials`."
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:120
+msgid ""
+"``{{administrative division}}`` is the relative administration division "
+"within the country's administrative level. For example, ``11`` is the code "
+"for the Île-de-France French region."
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:122
+msgid "You can retrieve the desired administrative division code as follows:"
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:124
+msgid "Go to the :ref:`referentials` section of the documentation."
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:125
+msgid ""
+"From the table at the end of the section, select a country and an "
+"administrative level."
+msgstr ""
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:126
+msgid ""
+"From the related table row, click the link in the **Dataset URL** column to "
+"open the related geographical referential and get the desired administrative"
+" division code."
+msgstr ""
+
+#~ msgid ""
+#~ "The optional **CSV shema column** (here, ``schema_file``) contains the "
+#~ "schema file for each row."
+#~ msgstr ""
+#~ "Die optionale **Spalte CSV-Schema** (hier: ``schema_file``) enthält die "
+#~ "Schema-Datei für jede Zeile."
+
+#~ msgid ""
+#~ "``title``, ``description``, ``theme``, ``keyword``, ``license``, "
+#~ "``language``, ``timezone``, ``modified``, ``geographic_area_mode``, "
+#~ "``geographic_area``, ``publisher``, ``references``, ``attributions``, "
+#~ "``oauth_scope``"
+#~ msgstr ""
+#~ "``title``, ``description``, ``theme``, ``keyword``, ``license``, "
+#~ "``language``, ``timezone``, ``modified``, ``geographic_area_mode``, "
+#~ "``geographic_area``, ``publisher``, ``references``, ``attributions``, "
+#~ "``oauth_scope``"
