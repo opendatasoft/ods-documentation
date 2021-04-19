@@ -2,26 +2,26 @@
 # Copyright (C) 2021, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2018
 # rocio aguero <raguero@datawords.com>, 2018
-# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2020
+# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2021
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-25 11:59+0100\n"
+"POT-Creation-Date: 2021-04-14 17:22+0200\n"
 "PO-Revision-Date: 2018-06-27 09:11+0000\n"
 "Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2021\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
-"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:2
@@ -193,6 +193,14 @@ msgstr ""
 "La **columna de recursos CSV** (``source_dataset`` de forma predeterminada) "
 "contiene el recurso de cada fila."
 
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:58
+msgid ""
+"The optional **CSV schema column** (here, ``schema_file``) contains the "
+"schema file for each row."
+msgstr ""
+"La **columna de esquema CSV** opcional (aquí, ``schema_file``) contiene el "
+"archivo de esquema para cada fila."
+
 #: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:59
 msgid ""
 "Every other column is a metadata (see table below for the complete list of "
@@ -221,6 +229,18 @@ msgstr "Nombre de columna"
 #: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:69
 msgid "Standard"
 msgstr "Estándar"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:70
+msgid ""
+"``title``, ``description``, ``theme``, ``keyword``, ``license``, "
+"``language``, ``timezone``, ``modified``, ``geographic_reference_auto``, "
+"``geographic_reference``, ``publisher``, ``references``, ``attributions``, "
+"``oauth_scope``"
+msgstr ""
+"``title``, ``description``, ``theme``, ``keyword``, ``license``, "
+"``language``, ``timezone``, ``modified``, ``geographic_reference_auto``, "
+"``geographic_reference``, ``publisher``, ``references``, ``attributions``, "
+"``oauth_scope``"
 
 #: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:71
 msgid "Custom"
@@ -291,6 +311,220 @@ msgid ""
 "``semantic.rml_mapping``, ``semantic.classes``, ``semantic.properties``"
 msgstr ""
 "``semantic.rml_mapping``, ``semantic.classes``, ``semantic.properties``"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:82
+msgid ""
+"For more information about the standard metadata, see :doc:`Standard "
+"metadata </publishing_data/06_configuring_metadata/standard_metadata>`."
+msgstr ""
+"Para obtener más información acerca de los metadatos estándar, consulte "
+":doc:`Metadatos estándar "
+"</publishing_data/06_configuring_metadata/standard_metadata>`."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:85
+msgid "The geographic_reference_auto metadata"
+msgstr "Metadatos geographic_reference_auto"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:87
+msgid ""
+"The ``geographic_reference_auto`` column defines whether the dataset's "
+"geographic coverage is automatically computed and accepts a Boolean value:"
+msgstr ""
+"La columna ``geographic_reference_auto`` define si la cobertura geográfica "
+"del conjunto de datos se calcula automáticamente y acepta un valor booleano."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:89
+msgid "This is my table"
+msgstr "Esta es  mi tabla"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:93
+msgid "Value"
+msgstr "Valor"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:93
+msgid "Purpose"
+msgstr "Propósito"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:95
+msgid "``true``"
+msgstr "``true``"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:95
+msgid ""
+"Sets the **Geographic coverage** metadata for the dataset to **Automatic**. "
+"The geographic coverage is automatically computed based on the dataset "
+"content or on the domain's dataset default geographic coverage."
+msgstr ""
+"Establece los metadatos **Cobertura geográfica** del conjunto de datos en "
+"**Automático**. La cobertura geográfica se calcula automáticamente a partir "
+"del contenido del conjunto de datos o de la cobertura geográfica "
+"predeterminada del conjunto de datos en el dominio."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:97
+msgid "``false``"
+msgstr "``false``"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:97
+msgid ""
+"Sets the **Geographic coverage** metadata for the dataset to the value for "
+"``geographic_reference``."
+msgstr ""
+"Establece los metadatos **Cobertura geográfica** del conjunto de datos en el"
+" valor de ``geographic_reference``."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:101
+msgid "The geographic_reference metadata"
+msgstr "Metadatos geographic_reference"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:103
+msgid ""
+"The ``geographic_reference`` column defines the location used for the "
+"dataset geographic coverage, which means the **Geographic coverage** "
+"metadata for the dataset is set to **Specific**. This "
+"``geographic_reference`` column contains an array of georeference unique "
+"identifiers representing locations."
+msgstr ""
+"La columna ``geographic_reference`` define la ubicación empleada para la "
+"cobertura geográfica del conjunto de datos, lo que significa que los "
+"metadatos **Cobertura geográfica** del conjunto de datos se establecen en "
+"**Específico**. Esta columna ``geographic_reference`` contiene una matriz de"
+" identificadores únicos de referencias geográficas que representan "
+"ubicaciones."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:106
+msgid ""
+"Georeference unique identifiers use the following syntaxes based on the "
+"reference:"
+msgstr ""
+"Los identificadores únicos de referencias geográficas utilizan las "
+"siguientes sintaxis en función de la referencia:"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:109
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:164
+msgid "Reference"
+msgstr "Referencia"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:109
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:176
+msgid "Description"
+msgstr "Descripción"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:109
+msgid "Syntax"
+msgstr "Sintaxis"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:109
+msgid "Example value"
+msgstr "Valor de ejemplo"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:111
+msgid "world"
+msgstr "world"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:111
+msgid "The dataset contains content about different countries"
+msgstr "El conjunto de datos incluye contenido de varios países"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:111
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:111
+msgid "``world``"
+msgstr "``world``"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:113
+msgid "country"
+msgstr "country"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:113
+msgid "The dataset contains country-level content"
+msgstr "El conjunto de datos incluye contenido a nivel de país"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:113
+msgid "``world_{{country code}}``"
+msgstr "``world_{{código de país}}``"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:113
+msgid "``world_fr`` if dataset coverage is France"
+msgstr "``world_fr`` si la cobertura del conjunto de datos es Francia"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:115
+msgid "lower division"
+msgstr "división inferior"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:115
+msgid "The dataset contains content about a specific country division"
+msgstr ""
+"El conjunto de datos incluye contenido de una división de país específica"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:115
+msgid ""
+"``{{country code}}_{{administrative-level}}_{{administrative division}}``"
+msgstr ""
+"``{{código de país}}_{{nivel-administrativo}}_{{división administrativa}}``"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:115
+msgid "``fr_80_75056`` if dataset coverage is Paris city"
+msgstr ""
+"``fr_80_75056`` si la cobertura del conjunto de datos es la ciudad de París"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:118
+msgid ""
+"``{{country code}}`` is a two-letter country code defined in `ISO 3166-1 "
+"alpha-2 <https://www.iso.org/obp/ui/#search/code>`_. For example, ``fr`` for"
+" France."
+msgstr ""
+"``{{código de país}}`` es un código de país de dos letras definido en `ISO "
+"3166-1 alpha-2 <https://www.iso.org/obp/ui/#search/code>`_. Por ejemplo, "
+"``fr`` para Francia."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:119
+msgid ""
+"``{{administrative-level}}`` is an administrative level for the country. For"
+" example, ``40`` is the administrative level for French regions. For more "
+"information about the administrative levels available for the desired "
+"country, see :ref:`referentials`."
+msgstr ""
+"``{{nivel-administrativo}}`` es un nivel administrativo del país. Por "
+"ejemplo, ``40`` es el nivel administrativo de las regiones francesas. Para "
+"obtener más información acerca de los niveles administrativos disponibles "
+"para el país en cuestión, consulte :ref:`referentials`."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:120
+msgid ""
+"``{{administrative division}}`` is the relative administration division "
+"within the country's administrative level. For example, ``11`` is the code "
+"for the Île-de-France French region."
+msgstr ""
+"``{{división administrativa}}`` es la división administrativa relativa "
+"dentro del nivel administrativo del país. Por ejemplo, ``11`` es el código "
+"de la región francesa Île-de-France."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:122
+msgid "You can retrieve the desired administrative division code as follows:"
+msgstr ""
+"Puede recuperar el código de la división administrativa en cuestión "
+"siguiendo este procedimiento:"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:124
+msgid "Go to the :ref:`referentials` section of the documentation."
+msgstr "Vaya a la sección :ref:`referentials` de la documentación."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:125
+msgid ""
+"From the table at the end of the section, select a country and an "
+"administrative level."
+msgstr ""
+"En la tabla que figura al final de la sección, seleccione un país y un nivel"
+" administrativo."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:126
+msgid ""
+"From the related table row, click the link in the **Dataset URL** column to "
+"open the related geographical referential and get the desired administrative"
+" division code."
+msgstr ""
+"En la fila de la tabla correspondiente, haga clic en el enlace de la columna"
+" **URL de conjunto de datos** para abrir el referente geográfico asociado y "
+"obtener el código de la división administrativa en cuestión."
 
 #: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:130
 msgid "Resources"
@@ -394,11 +628,6 @@ msgstr "La empresa que fabrica la barrita"
 msgid "ref"
 msgstr "ref"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:109
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:164
-msgid "Reference"
-msgstr "Referencia"
-
 #: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:164
 msgid "The product id of the chocolate bar"
 msgstr "El ID de producto de la barrita de chocolate"
@@ -421,11 +650,6 @@ msgstr "Parámetros"
 #: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:175
 msgid "Name"
 msgstr "Nombre"
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:109
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:176
-msgid "Description"
-msgstr "Descripción"
 
 #: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:177
 msgid "Example"
@@ -512,208 +736,3 @@ msgid ""
 msgstr ""
 "Esta columna contiene un nombre de archivo con el esquema de recurso "
 "(etiquetas de columna y descripciones)."
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:58
-#, fuzzy
-msgid ""
-"The optional **CSV schema column** (here, ``schema_file``) contains the "
-"schema file for each row."
-msgstr ""
-"La **columna de esquema CSV** opcional (aquí, ``schema_file``) contiene el "
-"archivo de esquema para cada fila."
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:70
-#, fuzzy
-msgid ""
-"``title``, ``description``, ``theme``, ``keyword``, ``license``, "
-"``language``, ``timezone``, ``modified``, ``geographic_reference_auto``, "
-"``geographic_reference``, ``publisher``, ``references``, ``attributions``, "
-"``oauth_scope``"
-msgstr ""
-"``title``, ``description``, ``theme``, ``keyword``, ``license``, "
-"``language``, ``timezone``, ``modified``, ``geographic_area_mode``, "
-"``geographic_area``, ``publisher``, ``references``, ``attributions``, "
-"``oauth_scope``"
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:82
-msgid ""
-"For more information about the standard metadata, see :doc:`Standard "
-"metadata </publishing_data/06_configuring_metadata/standard_metadata>`."
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:85
-msgid "The geographic_reference_auto metadata"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:87
-msgid ""
-"The ``geographic_reference_auto`` column defines whether the dataset's "
-"geographic coverage is automatically computed and accepts a Boolean value:"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:89
-msgid "This is my table"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:93
-msgid "Value"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:93
-msgid "Purpose"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:95
-msgid "``true``"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:95
-msgid ""
-"Sets the **Geographic coverage** metadata for the dataset to **Automatic**. "
-"The geographic coverage is automatically computed based on the dataset "
-"content or on the domain's dataset default geographic coverage."
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:97
-msgid "``false``"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:97
-msgid ""
-"Sets the **Geographic coverage** metadata for the dataset to the value for "
-"``geographic_reference``."
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:101
-msgid "The geographic_reference metadata"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:103
-msgid ""
-"The ``geographic_reference`` column defines the location used for the "
-"dataset geographic coverage, which means the **Geographic coverage** "
-"metadata for the dataset is set to **Specific**. This "
-"``geographic_reference`` column contains an array of georeference unique "
-"identifiers representing locations."
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:106
-msgid ""
-"Georeference unique identifiers use the following syntaxes based on the "
-"reference:"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:109
-msgid "Syntax"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:109
-msgid "Example value"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:111
-msgid "world"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:111
-msgid "The dataset contains content about different countries"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:111
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:111
-msgid "``world``"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:113
-msgid "country"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:113
-msgid "The dataset contains country-level content"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:113
-msgid "``world_{{country code}}``"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:113
-msgid "``world_fr`` if dataset coverage is France"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:115
-msgid "lower division"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:115
-msgid "The dataset contains content about a specific country division"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:115
-msgid ""
-"``{{country code}}_{{administrative-level}}_{{administrative division}}``"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:115
-msgid "``fr_80_75056`` if dataset coverage is Paris city"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:118
-msgid ""
-"``{{country code}}`` is a two-letter country code defined in `ISO 3166-1 "
-"alpha-2 <https://www.iso.org/obp/ui/#search/code>`_. For example, ``fr`` for"
-" France."
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:119
-msgid ""
-"``{{administrative-level}}`` is an administrative level for the country. For"
-" example, ``40`` is the administrative level for French regions. For more "
-"information about the administrative levels available for the desired "
-"country, see :ref:`referentials`."
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:120
-msgid ""
-"``{{administrative division}}`` is the relative administration division "
-"within the country's administrative level. For example, ``11`` is the code "
-"for the Île-de-France French region."
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:122
-msgid "You can retrieve the desired administrative division code as follows:"
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:124
-msgid "Go to the :ref:`referentials` section of the documentation."
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:125
-msgid ""
-"From the table at the end of the section, select a country and an "
-"administrative level."
-msgstr ""
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/ftp_with_meta_csv.rst:126
-msgid ""
-"From the related table row, click the link in the **Dataset URL** column to "
-"open the related geographical referential and get the desired administrative"
-" division code."
-msgstr ""
-
-#~ msgid ""
-#~ "The optional **CSV shema column** (here, ``schema_file``) contains the "
-#~ "schema file for each row."
-#~ msgstr ""
-#~ "La **columna de esquema CSV** opcional (aquí, ``schema_file``) contiene el "
-#~ "archivo de esquema para cada fila."
-
-#~ msgid ""
-#~ "``title``, ``description``, ``theme``, ``keyword``, ``license``, "
-#~ "``language``, ``timezone``, ``modified``, ``geographic_area_mode``, "
-#~ "``geographic_area``, ``publisher``, ``references``, ``attributions``, "
-#~ "``oauth_scope``"
-#~ msgstr ""
-#~ "``title``, ``description``, ``theme``, ``keyword``, ``license``, "
-#~ "``language``, ``timezone``, ``modified``, ``geographic_area_mode``, "
-#~ "``geographic_area``, ``publisher``, ``references``, ``attributions``, "
-#~ "``oauth_scope``"
