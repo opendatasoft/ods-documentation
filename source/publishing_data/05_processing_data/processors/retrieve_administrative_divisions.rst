@@ -53,6 +53,8 @@ To set the parameters of the Retrieve Administrative Divisions processor, follow
     * Field where the geo shape of the chosen administrative division will be displayed. It can be an existing field chosen from the list, or a new field created for that purpose (in that case, choose **Input text** from the list and write the name of the new field in the text area below).
     * yes
 
+.. _referentials:
+
 Referentials
 ------------
 

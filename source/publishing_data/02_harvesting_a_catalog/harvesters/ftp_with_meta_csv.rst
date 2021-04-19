@@ -55,7 +55,7 @@ The **metadata CSV file** (named ``index.csv`` by default) is a semicolon separa
 
 - The ``name`` column contains an identifier for each row. These identifiers can be anything as long as they only contain letters and numbers, are unique across the file, and don't change over time.
 - The **CSV resource column** (``source_dataset`` by default) contains the resource for each row.
-- The optional **CSV shema column** (here, ``schema_file``) contains the schema file for each row.
+- The optional **CSV schema column** (here, ``schema_file``) contains the schema file for each row.
 - Every other column is a metadata (see table below for the complete list of accepted column names). Note: use double quotes at the beginning and end of lists like ``keyword``, where you have to use semicolons to separate words (e.g ``"keyword1;keyword2"``).
 
 Accepted metadata columns
@@ -67,7 +67,7 @@ Accepted metadata columns
    * * Template
      * Column name
    * * Standard
-     * ``title``, ``description``, ``theme``, ``keyword``, ``license``, ``language``, ``timezone``, ``modified``, ``geographic_area_mode``, ``geographic_area``, ``publisher``, ``references``, ``attributions``, ``oauth_scope``
+     * ``title``, ``description``, ``theme``, ``keyword``, ``license``, ``language``, ``timezone``, ``modified``, ``geographic_reference_auto``, ``geographic_reference``, ``publisher``, ``references``, ``attributions``, ``oauth_scope``
    * * Custom
      * ``<metadata_name>``
    * * DCAT (if activated)
@@ -78,6 +78,52 @@ Accepted metadata columns
      * ``inspire.theme``, ``inspire.type``, ``inspire.file_identifier``, ``inspire.hierarchy_level``, ``inspire.hierarchy_level_name``, ``inspire.spatial_resolution``, ``inspire.topologic_consistency``, ``inspire.contact_individual_name``, ``inspire.contact_position``, ``inspire.contact_address``, ``inspire.contact_email``, ``inspire.identification_purpose``, ``inspire.extend_description``, ``inspire.extend_bounding_box_westbound_longitude``, ``inspire.extend_bounding_box_eastbound_longitude``, ``inspire.extend_bounding_box_southbound_latitude``, ``inspire.extend_bounding_box_northbound_latitude``
    * * Semantic (if activated)
      * ``semantic.rml_mapping``, ``semantic.classes``, ``semantic.properties``
+
+For more information about the standard metadata, see :doc:`Standard metadata </publishing_data/06_configuring_metadata/standard_metadata>`.
+
+The geographic_reference_auto metadata
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The ``geographic_reference_auto`` column defines whether the dataset's geographic coverage is automatically computed and accepts a Boolean value:
+
+.. table:: This is my table
+    :widths: 20 80
+
+    +-----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | Value     | Purpose                                                                                                                                                                                                            |
+    +===========+====================================================================================================================================================================================================================+
+    | ``true``  | Sets the **Geographic coverage** metadata for the dataset to **Automatic**. The geographic coverage is automatically computed based on the dataset content or on the domain's dataset default geographic coverage. |
+    +-----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | ``false`` | Sets the **Geographic coverage** metadata for the dataset to the value for ``geographic_reference``.                                                                                                               |
+    +-----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+The geographic_reference metadata
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The ``geographic_reference`` column defines the location used for the dataset geographic coverage, which means the **Geographic coverage** metadata for the dataset is set to **Specific**.
+This ``geographic_reference`` column contains an array of georeference unique identifiers representing locations.
+
+Georeference unique identifiers use the following syntaxes based on the reference:
+
++----------------+----------------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------+
+| Reference      | Description                                                    | Syntax                                                                          | Example value                                     |
++================+================================================================+=================================================================================+===================================================+
+| world          | The dataset contains content about different countries         | ``world``                                                                       | ``world``                                         |
++----------------+----------------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------+
+| country        | The dataset contains country-level content                     | ``world_{{country code}}``                                                      | ``world_fr`` if dataset coverage is France        |
++----------------+----------------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------+
+| lower division | The dataset contains content about a specific country division | ``{{country code}}_{{administrative-level}}_{{administrative division}}``       | ``fr_80_75056`` if dataset coverage is Paris city |
++----------------+----------------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------+
+
+- ``{{country code}}`` is a two-letter country code defined in `ISO 3166-1 alpha-2 <https://www.iso.org/obp/ui/#search/code>`_. For example, ``fr`` for France.
+- ``{{administrative-level}}`` is an administrative level for the country. For example, ``40`` is the administrative level for French regions. For more information about the administrative levels available for the desired country, see :ref:`referentials`.
+- ``{{administrative division}}`` is the relative administration division within the country's administrative level. For example, ``11`` is the code for the Île-de-France French region.
+ 
+You can retrieve the desired administrative division code as follows:
+    
+  1. Go to the :ref:`referentials` section of the documentation. 
+  2. From the table at the end of the section, select a country and an administrative level.      
+  3. From the related table row, click the link in the **Dataset URL** column to open the related geographical referential and get the desired administrative division code.
 
 
 Resources
