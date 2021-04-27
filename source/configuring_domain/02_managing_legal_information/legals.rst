@@ -18,13 +18,6 @@ Legal compliance
 
 By default, the platform only uses functional cookies to enable core platform functionality and are therefore always enabled. These cookies do not involve obtaining visitors' consent to comply with certain privacy laws such as the EU General Data Protection Regulation (GDPR).
 
-You need a cookie banner if you use one of the following items on your portal:
-
-  - Tracking tools with non-exempted cookies
-  - Disqus comment system, which can be configured from the **Configure** > **Social networks & sharing** section of the back office
-  - External content embedding using an iframe
-  - A HubSpot form
-
 Enabling the cookie banner
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
