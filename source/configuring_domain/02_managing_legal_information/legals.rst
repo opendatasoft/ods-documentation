@@ -1,16 +1,39 @@
 Displaying legals
 =================
 
-Cookies and trackers information
---------------------------------
+.. contents:: On this page
+   :local:
 
-If you are located in the EU, you are required by law to display a message informing your users that the site uses cookies, and for what purpose.
+Cookie banner
+-------------
 
-You can choose to display this message in the ``Configuration`` menu, in the ``Legals`` section :
+A cookie banner is a pop-up that informs first-time visitors that your portal uses cookies. Before visitors start using your portal, the cookie banner also asks for their consent to use certain types of cookies that track visitor data. 
 
-.. image:: images/configuration_legals-cookies.png
+If you toggled on the **Require user consent** in the **Configuration** > **Tracking** section of the back office, the cookie banner is automatically displayed to first-time visitors.
 
-You can access the full EU guidelines through `this link <https://wikis.ec.europa.eu/display/WEBGUIDE/04.+Cookies>`_.
+On Opendatasoft portals, visitors' choices are stored for six months. A link is also displayed in your portal's footer so that visitors can manage their cookie preferences at any time.
+
+Legal compliance
+~~~~~~~~~~~~~~~~
+
+By default, the platform only uses functional cookies to enable core platform functionality and are therefore always enabled. These cookies do not involve obtaining visitors' consent to comply with certain privacy laws such as the EU General Data Protection Regulation (GDPR).
+
+Enabling the cookie banner
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can enable a cookie banner to comply with certain privacy laws such as the EU General Data Protection Regulation (GDPR).
+
+  1. In the back office, go to **Configuration** > **Legals**.
+  2. Toggle on **Allow the cookie banner to be displayed to your users.**
+  3. Click **Save**. 
+  4. In the back office, go to **Look & feel** > **Theme**.
+  5. Select the **Footer** tab.
+  6. Add the ``##manage-cookies##`` placeholder to the footer configuration.
+  7. Click **Save**.
+  8. Click **Make live** to apply the configuration to your portal.
+
+Your portal will display the cookie banner upon visitors' first visit. Visitors will be able to activate some cookies rather than others.
+A link will also be displayed in your portal's footer so that visitors can manage their cookie preferences at any time.
 
 
 Portal Terms and Conditions and Privacy Policy
