@@ -357,8 +357,8 @@ Date and time handling
        * Suppose that the current date is "2021-04-21". In this case, ``month(now())`` returns ``4``.
    * * ``add_years([datetime],[numeric])``, ``add_months([datetime],[numeric])``, ``add_days([datetime],[numeric])``, ``add_hours([datetime],[numeric])``, ``add_minutes([datetime],[numeric])``, ``add_seconds([datetime],[numeric])``
      * * Add years, months, days, hours, minutes, seconds to a datetime
-     * * ``add_months("2014-11-14", "3")`` returns ``2015-02-14``
-       * Suppose that the current date is "2020-04-21". In this case, ``add_months(now(), "3")`` returns ``2021-07-21``.
+     * * ``add_months("2014-11-14", 3)`` returns ``2015-02-14``
+       * Suppose that the current date is "2020-04-21". In this case, ``add_months(now(), 3)`` returns ``2021-07-21``.
    * * ``fromtimestamp([numeric])``
      * Convert a timestamp to a datetime
      *
