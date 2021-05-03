@@ -214,6 +214,8 @@ The following placeholders are available in the **Footer** tab:
      * Information
    * * ``##legal##``
      * Link to the Terms & Conditions defined for the portal, configured in Legals
+   * * ``##manage-cookies##``
+     * Link for users to modify their cookies preferences. This placeholder is mandatory to enable the cookie banner. For more information, see :doc:`../../../configuring_domain/02_managing_legal_information/legals`.
    * * ``##language##``
      * Language picker for the languages specified for the portal
    * * ``##ods-logo##``
