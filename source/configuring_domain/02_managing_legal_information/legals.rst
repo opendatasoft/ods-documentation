@@ -1,9 +1,6 @@
 Displaying legals
 =================
 
-.. contents:: On this page
-   :local:
-
 Cookie banner
 -------------
 
