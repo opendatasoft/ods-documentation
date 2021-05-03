@@ -2,28 +2,38 @@
 # Copyright (C) 2021, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
-# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018
-#
+# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-14 17:22+0200\n"
+"POT-Creation-Date: 2021-04-28 10:03+0200\n"
 "PO-Revision-Date: 2018-10-29 17:30+0000\n"
-"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018\n"
+"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
-"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:2
 msgid "Spreadsheet connector"
 msgstr "Conector de hojas de cálculo"
+
+#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:4
+msgid ""
+"The Spreadsheet (XLS, XLSX, ODS) connector is used for spreadsheet "
+"files–tabular files generated from software such as Excel, OpenOffice and "
+"LibreOffice."
+msgstr ""
+"El conector de hojas de cálculo (XLS, XLSX y ODS) se utiliza para los "
+"archivos de hoja de cálculo, archivos tabulares generados con software como "
+"Excel, OpenOffice y LibreOffice."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:6
 msgid "The spreadsheet connector can read the following files:"
@@ -40,6 +50,56 @@ msgstr "Archivos de OpenOffice (.ods)"
 #: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:11
 msgid "Important"
 msgstr "Importante"
+
+#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:14
+msgid ""
+"The platform understands formulas in Excel and OpenOffice files. All "
+"recognized formulas will automatically be transformed into their result in "
+"the file fields."
+msgstr ""
+"La plataforma entiende las fórmulas de los archivos de Excel y OpenOffice. "
+"Todas las fórmulas reconocidas se transformarán automáticamente en su "
+"resultado en los campos de los archivos."
+
+#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:17
+msgid "Spreadsheet preparation for easier data loading"
+msgstr "Preparación de las hojas de cálculo para facilitar la carga de datos"
+
+#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:19
+msgid ""
+"It is easier to load data from simple spreadsheets that follow good "
+"practices:"
+msgstr ""
+"Es más fácil cargar datos de hojas de cálculo simples que siguen una serie "
+"de buenas prácticas:"
+
+#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:21
+msgid "Make sure all cells and rows contain data. Avoid blank cells and rows."
+msgstr ""
+"Asegúrese de que todas las celdas y filas contienen datos. Evite las celdas "
+"y filas en blanco."
+
+#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:22
+msgid "Do not merge cells. Repeat the values in every cell instead."
+msgstr ""
+"No fusione celdas. En su lugar, repita los valores en cada una de las "
+"celdas."
+
+#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:23
+msgid "Avoid calculations (for example, sums)."
+msgstr "Evite los cálculos (por ejemplo, sumas)."
+
+#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:24
+msgid "Do not freeze rows or columns."
+msgstr "No inmovilice filas o columnas."
+
+#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:25
+msgid "Do not format cells."
+msgstr "No aplique formato a las celdas."
+
+#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:26
+msgid "Do not use one column per year but one timestamp column."
+msgstr "No use una columna por año sino una columna de marca de tiempo."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:30
 msgid "Creation"
@@ -89,6 +149,16 @@ msgstr ""
 msgid "First line number"
 msgstr "Primer número de línea"
 
+#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:47
+msgid ""
+"For files that do not start at the first line, it is possible to decide "
+"which line is considered the first one. The lines above will be skipped from"
+" the dataset."
+msgstr ""
+"Para los archivos que no empiezan en la primera línea, se puede decidir qué "
+"línea se considera la primera. Las líneas por encima de esta se pasarán por "
+"alto en el conjunto de datos."
+
 #: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:48
 msgid ""
 "By default, the dataset starts at line 1. Indicate the number of the line "
@@ -101,6 +171,24 @@ msgstr ""
 #: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:49
 msgid "Headers"
 msgstr "Encabezados"
+
+#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:50
+msgid ""
+"Select this check box if the first line of your file are column headers."
+msgstr ""
+"Seleccione esta casilla si la primera línea del archivo son encabezados de "
+"columna."
+
+#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:51
+msgid ""
+"By default, the check box is selected. It makes the values of the first line"
+" field labels. Clear the check box if the first line doesn't contain titles "
+"but data: the field labels will then be empty by default."
+msgstr ""
+"De forma predeterminada, la casilla está seleccionada. Hace de los valores "
+"de la primera línea las etiquetas de campo Deseleccione la casilla si la "
+"primera línea no contiene títulos sino datos: así, las etiquetas de campo "
+"estarán vacías de forma predeterminada."
 
 #: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:52
 msgid "Sheet number"
@@ -129,124 +217,3 @@ msgstr "para una lista de hojas ``1,2,3`` (separadas por una coma)"
 #: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:58
 msgid "for all the sheets from the spreadsheet: ``*``"
 msgstr "para todas las hojas de la hoja de cálculo: ``*``"
-
-#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:4
-#, fuzzy
-msgid ""
-"The Spreadsheet (XLS, XLSX, ODS) connector is used for spreadsheet "
-"files–tabular files generated from software such as Excel, OpenOffice and "
-"LibreOffice."
-msgstr ""
-"El conector de hojas de cálculo (XLS, XLSX y ODS) se utiliza para los "
-"archivos de hoja de cálculo, archivos tabulares generados con software como "
-"Excel, OpenOffice y LibreOffice."
-
-#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:14
-msgid ""
-"The platform understands formulas in Excel and OpenOffice files. All "
-"recognized formulas will automatically be transformed into their result in "
-"the file fields."
-msgstr ""
-
-#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:17
-msgid "Spreadsheet preparation for easier data loading"
-msgstr ""
-
-#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:19
-msgid ""
-"It is easier to load data from simple spreadsheets that follow good "
-"practices:"
-msgstr ""
-
-#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:21
-msgid "Make sure all cells and rows contain data. Avoid blank cells and rows."
-msgstr ""
-
-#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:22
-msgid "Do not merge cells. Repeat the values in every cell instead."
-msgstr ""
-
-#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:23
-msgid "Avoid calculations (for example, sums)."
-msgstr ""
-
-#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:24
-msgid "Do not freeze rows or columns."
-msgstr ""
-
-#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:25
-msgid "Do not format cells."
-msgstr ""
-
-#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:26
-msgid "Do not use one column per year but one timestamp column."
-msgstr ""
-
-#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:47
-#, fuzzy
-msgid ""
-"For files that do not start at the first line, it is possible to decide "
-"which line is considered the first one. The lines above will be skipped from"
-" the dataset."
-msgstr ""
-"Para los archivos que no empiezan en la primera línea, se puede decidir qué "
-"línea debe considerarse la primera. Las líneas por encima de esta se pasarán"
-" por alto en el conjunto de datos."
-
-#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:50
-msgid ""
-"Select this check box if the first line of your file are column headers."
-msgstr ""
-
-#: ../../source/publishing_data/04_configuring_a_source/connectors/spreadsheet.rst:51
-#, fuzzy
-msgid ""
-"By default, the check box is selected. It makes the values of the first line"
-" field labels. Clear the check box if the first line doesn't contain titles "
-"but data: the field labels will then be empty by default."
-msgstr ""
-"De forma predeterminada, la casilla está marcada. Hace de los valores de la "
-"primera línea las etiquetas de campo Desmarque la casilla si la primera "
-"línea no contiene títulos sino datos: así, las etiquetas de campo estarán "
-"vacías de forma predeterminada."
-
-#~ msgid ""
-#~ "The Spreadsheet (XLS, XLSX, ODS) connector is used for spreadsheet files: "
-#~ "tabular files generated from software such as Excel, OpenOffice and "
-#~ "LibreOffice."
-#~ msgstr ""
-#~ "El conector de hojas de cálculo (XLS, XLSX y ODS) se utiliza para los "
-#~ "archivos de hoja de cálculo, archivos tabulares generados con software como "
-#~ "Excel, OpenOffice y LibreOffice."
-
-#~ msgid ""
-#~ "Formulas in Excel and OpenOffice files are understood by the platform. All "
-#~ "recognized formulas will automatically be transformed into their result in "
-#~ "the files fields."
-#~ msgstr ""
-#~ "La plataforma entiende las fórmulas de los archivos de Excel y OpenOffice. "
-#~ "Todas las fórmulas reconocidas se transformarán automáticamente en su "
-#~ "resultado en los campos de los archivos."
-
-#~ msgid ""
-#~ "For files which do not start at the very first line, it is possible to "
-#~ "decide which line is to be considered the first one. The lines above will be"
-#~ " skipped from the dataset."
-#~ msgstr ""
-#~ "Para los archivos que no empiezan en la primera línea, se puede decidir qué "
-#~ "línea debe considerarse la primera. Las líneas por encima de esta se pasarán"
-#~ " por alto en el conjunto de datos."
-
-#~ msgid "For files which first line contains column titles."
-#~ msgstr ""
-#~ "Para los archivos en que la primera línea contiene títulos de columna."
-
-#~ msgid ""
-#~ "By default, the box is checked. It makes the values of the first line field "
-#~ "labels. Uncheck the box if the first line doesn't contain titles but data: "
-#~ "the field labels will then be empty by default."
-#~ msgstr ""
-#~ "De forma predeterminada, la casilla está marcada. Hace de los valores de la "
-#~ "primera línea las etiquetas de campo Desmarque la casilla si la primera "
-#~ "línea no contiene títulos sino datos: así, las etiquetas de campo estarán "
-#~ "vacías de forma predeterminada."
