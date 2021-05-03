@@ -32,7 +32,7 @@ File connectors
     * Default
   * * :doc:`JSON<connectors/json>`
     * Used for JSON (.json) files
-    * Default, except for JSON Dict
+    * Default
   * * :doc:`KML<connectors/kml>`
     * Used for KML (.kml) and KMZ (.kmz) files
     * Default
