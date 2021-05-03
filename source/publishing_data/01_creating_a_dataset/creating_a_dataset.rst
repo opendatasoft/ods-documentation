@@ -26,7 +26,7 @@ For more information about the sources you can connect to and their configuratio
 
 .. rubric:: Step 4: Configuring the dataset standard metadata and access rights
 
-From the **Dataset information** screen, you can configure the dataset title and technical identifier. You can also set up the dataset access rights.
+From the **Dataset information** screen, you can configure the dataset title and technical identifier to keep or edit the default values. You can also set up the dataset access rights.
 
 .. toctree::
    :titlesonly:
