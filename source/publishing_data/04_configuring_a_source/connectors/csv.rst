@@ -1,7 +1,7 @@
 CSV connector
 =============
 
-The CSV File connector is used for datasets which source is a CSV file (.csv). It is a file which contains a list of fields separated either by a ',' (usually for English files) or a ';' (usually for French files).
+The CSV File connector is used for datasets which source is a CSV file (.csv). It is a file that contains a list of fields separated either by a ``,`` character (usually for English files) or a ``;`` character (usually for French files).
 
 The CSV File connector can also read other similar files:
 
@@ -17,36 +17,54 @@ For more information about adding a file data source, see :doc:`/publishing_data
 Configuration
 ~~~~~~~~~~~~~
 
-.. list-table::
+.. list-table:: Encoding
    :header-rows: 1
 
    * * Name
      * Description
      * Usage
-   * * Double quote
-     * For fields which values are enclosed in double quotes.
-     * By default, the box is not checked. Check the box if the field values are enclosed in double quotes.
-   * * Encoding
-     * Encoding of the file.
+   * * File encoding
+     * Encoding of the file
 
-       .. admonition:: Note
-          :class: note
+       Character encoding is the way characters are represented in a saved file. Unicode (or UTF-8) is the universal standard, but some files might be encoded in a legacy format (for example, old versions of Excel), which would require setting the encoding manually. On modern software, this is usually unnecessary.
 
-          Character encoding is the way characters are represented in a saved file. Unicode (or utf-8) is the universal standard but some files might be encoded in a legacy format (e.g. old versions of Excel), which would require setting the encoding manually. On modern software, this is usually unnecessary.
+     * By default, the platform uses a heuristic to guess the encoding. If the guessed encoding is not right, select the right encoding to apply from the list or enter it in the **Other** text box. You can use any aliases from `Python <https://docs.python.org/2/library/codecs.html#standard-encodings>`_.
 
-     * By default, the platform uses a heuristic to guess the encoding. If the guessed encoding is not right, choose the right one among the list, or write it in the textbox. Any alias from `Python <https://docs.python.org/2/library/codecs.html#standard-encodings>`_ can be used.
+.. list-table:: Row structure
+   :header-rows: 1
+
+   * * Name
+     * Description
+     * Usage
+   * * Field separator
+     * Character used to separate fields
+     * Enter the separator in the text box. The default value depends on the file format. Correct values are usually ``';'``, ``','``, ``' '`` and ``'\t'``.
    * * Escape character
-     * If an escape character is found right before a separator, the latter will not be considered a separator anymore. The Escape character configuration option avoids this situation.
-     * By default, the textbox is empty. In case the file contains an escape character ( e.g. ``#`` or ``\``), write it in the textbox.
+     * If an escape character is found right before a separator, the latter will no longer be considered a separator. The **Escape character** configuration option avoids this situation.
+     * By default, the text box is empty. If the file contains an escape character (for example, ``#`` or ``\``), enter it in the text box.
+   * * Quoted fields
+     * For fields which values are enclosed in double quotes.
+     * By default, this option is toggled on. Toggle off the option if the field values are not enclosed in double quotes.
+
+.. list-table:: Data start point
+   :header-rows: 1
+
+   * * Name
+     * Description
+     * Usage
+   * * First line number
+     * For files that do not start at the first line, it is possible to define which line is considered the first one. The lines above will be skipped from the dataset.
+     * By default, the dataset starts at line 1. Enter the number of the line where the dataset starts.
+   * * Header
+     * For files whose first line contains field names
+     * By default, this option is toggled on. It makes the values of the first line field labels. Toggle off this option if the first line doesn't contain field names but data: the field labels will then be empty by default.
+
+.. list-table:: Extract filename
+   :header-rows: 1
+
+   * * Name
+     * Description
+     * Usage
    * * Extract filename
      * Creates a new column with the name of the source file.
-     * By default, the box is not checked. Check the box to extract filename in an added column.
-   * * First line number
-     * For files which do not start at the very first line, it is possible to decide which line is to be considered the first one. The lines above will be skipped from the dataset.
-     * By default, the dataset starts at line 1. Indicate the number of the line that should be considered the beginning of the dataset.
-   * * Headers
-     * For files which first line contains column titles.
-     * By default, the box is checked. It makes the values of the first line field labels. Uncheck the box if the first line doesn't contain titles but data: the field labels will then be empty by default.
-   * * Separator
-     * The fixed separator between the fields of the file.
-     * Write the separator in the textbox. There must only be one character. The default one depends on the format of the file. Correct values are usually ``';'``, ``','``, ``' '`` and ``'\t'``.
+     * By default, this option is toggled off. Toggle on this option to extract the file name in an additional column.
