@@ -1,7 +1,7 @@
 Spreadsheet connector
 =====================
 
-The Spreadsheet (XLS, XLSX, ODS) connector is used for spreadsheet files–tabular files generated from software such as Excel, OpenOffice and LibreOffice.
+The Spreadsheet connector is used for spreadsheet files–tabular files generated from software such as Excel, OpenOffice, and LibreOffice.
 
 The spreadsheet connector can read the following files:
 
@@ -34,25 +34,18 @@ For more information about adding a file data source, see :doc:`/publishing_data
 Configuration
 ~~~~~~~~~~~~~
 
-.. list-table::
+.. list-table:: Data start point
    :header-rows: 1
+   :name: data-start-point
 
    * * Name
      * Description
      * Usage
-   * * Extract filename
-     * Creates a new column with the name of the source file.
-     * By default, the box is not checked. Check the box to extract filename in an added column.
    * * First line number
-     * For files that do not start at the first line, it is possible to decide which line is considered the first one. The lines above will be skipped from the dataset.
-     * By default, the dataset starts at line 1. Indicate the number of the line that should be considered the beginning of the dataset.
-   * * Headers
-     * Select this check box if the first line of your file are column headers.
-     * By default, the check box is selected. It makes the values of the first line field labels. Clear the check box if the first line doesn't contain titles but data: the field labels will then be empty by default.
-   * * Sheet number
-     * Number of the sheet(s) to use for the dataset.
-     * Indicate which sheets to add to the dataset. Depending on the number of sheets to add, use the related notation:
+     * For files that do not start at the first line, it is possible to define which line is considered the first one. The lines above will be skipped from the dataset.
+     * By default, the dataset starts at line 1. Enter the number of the line where the dataset starts.
+   * * Header
+     * For files whose first line contains field names
+     * By default, this option is toggled on. It makes the values of the first line field labels. Toggle off this option if the first line doesn't contain field names but data: the field labels will then be empty by default.
 
-       * for a range of sheets: ``[1-3]``
-       * for a list of sheets ``1,2,3`` (separated with a comma)
-       * for all the sheets from the spreadsheet: ``*``
+.. include:: ../../../_includes/connectors_extractfilename.rst
