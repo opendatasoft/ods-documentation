@@ -59,12 +59,4 @@ Configuration
      * For files whose first line contains field names
      * By default, this option is toggled on. It makes the values of the first line field labels. Toggle off this option if the first line doesn't contain field names but data: the field labels will then be empty by default.
 
-.. list-table:: Extract filename
-   :header-rows: 1
-
-   * * Name
-     * Description
-     * Usage
-   * * Extract filename
-     * Creates a new column with the name of the source file.
-     * By default, this option is toggled off. Toggle on this option to extract the file name in an additional column.
+.. include:: ../../../_includes/connectors_extractfilename.rst
