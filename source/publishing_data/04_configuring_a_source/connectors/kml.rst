@@ -1,12 +1,9 @@
 KML connector
 =============
 
-The KML File connector is used for KML (.kml) and KMZ (.kmz, compressed KML) files. As defined by `Google <https://developers.google.com/kml/>`_, a KML file is used to represent geographic data.
+The KML File connector is used for KML (.kml) and KMZ (.kmz) files. As defined by `Google <https://developers.google.com/kml/>`_, a KML file represents geographic data, and a KMZ file is a compressed KML file.
 
-.. admonition:: Note
-   :class: note
-
-   To open a KML file outside the platform, you can use Google Earth.
+To open a KML file outside the platform, you can use Google Earth.
 
 Creation
 ~~~~~~~~
@@ -16,12 +13,4 @@ For more information about adding a file data source, see :doc:`/publishing_data
 Configuration
 ~~~~~~~~~~~~~
 
-.. list-table::
-   :header-rows: 1
-
-   * * Name
-     * Description
-     * Usage
-   * * Extract filename
-     * Creates a new column with the name of the source file.
-     * By default, the box is not checked. Check the box to extract filename in an added column.
+.. include:: ../../../_includes/connectors_extractfilename.rst
