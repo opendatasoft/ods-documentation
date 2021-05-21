@@ -1,7 +1,9 @@
 GeoJSON connector
 =================
 
-The GeoJSON File connector is used for dataset which source is a GeoJSON file (.geojson). As defined by the RFC 7946 GeoJSON specification, a GeoJSON should have the following structure:
+The `GeoJSON <https://geojson.org/geojson-spec.html#feature-collection-objects>`_ connector is used for dataset which source is a GeoJSON file (.geojson).
+
+As defined by the RFC 7946 GeoJSON specification, a GeoJSON should have the following structure:
 
 .. code-block:: json
 
@@ -54,13 +56,6 @@ The GeoJSON File connector is used for dataset which source is a GeoJSON file (.
         }]
     }
 
-
-.. admonition:: Note
-   :class: note
-
-   For more GeoJSON examples, go to `GeoJSON.org <https://geojson.org/geojson-spec.html#feature-collection-objects>`_.
-
-
 Creation
 ~~~~~~~~
 
@@ -69,15 +64,15 @@ For more information about adding a file data source, see :doc:`/publishing_data
 Configuration
 ~~~~~~~~~~~~~
 
-.. list-table::
+.. list-table:: Coordinate system
    :header-rows: 1
+   :name: coordinate-system
 
    * * Name
      * Description
      * Usage
-   * * Extract filename
-     * Creates a new column with the name of the source file.
-     * By default, the box is not checked. Check the box to extract filename in an added column.
-   * * Spatial reference (EPSG code)
-     * Indicates the `EPSG <https://spatialreference.org/ref/epsg/>`_ code of the geographical data of the dataset.
-     * By default, the textbox is empty and the platform considers the geographical data to be in WGS84 (EPSG code: 4326). If the default EPSG code is not right, write the right one in the textbox.
+   * * Coordinate system
+     * The `EPSG <https://spatialreference.org/ref/epsg/>`_ code of the dataset's geographical data
+     * The default value is 4326 because the platform considers the GeoJSON uses WGS 84 coordinates. To override the default value, enter the new EPSG code in the **Coordinate system** box.
+
+.. include:: ../../../_includes/connectors_extractfilename.rst
