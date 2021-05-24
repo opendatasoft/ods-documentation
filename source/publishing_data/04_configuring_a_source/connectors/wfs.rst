@@ -1,47 +1,59 @@
 WFS connector
 =============
 
-.. admonition:: Important
-   :class: important
-
-   This connector is not available by default. Please contact Opendatasoft for the activation of this connector on a given Opendatasoft domain.
-
 The WFS connector is used to extract data from a WFS service.
 
-Creation
-~~~~~~~~
+.. admonition:: Important
+  :class: important
 
-1. Enter the URL to the layer in the Enter a URL area, when creating a new dataset. It must contain the TypeName (for example, `http://example.com?service=WFS&TypeName=mylayer`).
-2. Press Enter, or click the + button.
+  This connector is not available by default. Please contact Opendatasoft for the activation of this connector on a given Opendatasoft domain.
+
+Creation
+--------
+
+1. In **Catalog** > **Datasets**, click on the **New dataset** button.
+2. In the wizard that opens, select **ArcGIS** under the **Connect to a remote service** section.
+3. Configure your HTTP connection:
+
+   - Under the **Connection information to the HTTP server** section, enter the URL to the server in the **Server URL** box.
+   - Under the **Path to the file** section, enter the path to the layer. It must contain the ``TypeName`` parameter. (for example, ``/wfs?service=WFS&TypeName=layername``)
+4. From the preview of the first 20 records that appears, configure the data source.
+5. Configure the dataset information or use the pre-filled values:
+   
+   - In the **Dataset name** field, enter the title for this dataset.
+   - In the **Technical identifier** field, enter a meaningful identifier for this dataset.
 
 
 Configuration
-~~~~~~~~~~~~~
+-------------
 
-.. list-table::
+.. list-table:: Encoding
    :header-rows: 1
 
    * * Name
      * Description
      * Usage
-   * * Convert spatial reference to EPSG:4326
-     * To convert the geographical coordinates to EPSG:4326.
-     * By default, the box is not checked. Check the box to convert the geographical coordinates.
-   * * Encoding
-     * Encoding of the file.
+   * * File encoding
+     * Encoding of the file
 
-       .. admonition:: Note
-          :class: note
+       Character encoding is the way characters are represented in a saved file. Unicode (or UTF-8) is the universal standard, but some files might be encoded in a legacy format (for example, old versions of Excel), which would require setting the encoding manually. On modern software, this is usually unnecessary.
 
-          Character encoding is the way characters are represented in a saved file. Unicode (or utf-8) is the universal standard but some files might be encoded in a legacy format (e.g. old versions of Excel), which would require setting the encoding manually. On modern software, this is usually unnecessary.
+     * By default, the platform uses a heuristic to guess the encoding. If the guessed encoding is not right, select the right encoding to apply from the list or enter it in the **Other** text box. You can use any aliases from `Python <https://docs.python.org/2/library/codecs.html#standard-encodings>`_.
 
-     * By default, the platform uses a heuristic to guess the encoding. If the guessed encoding is not right, choose the right one among the list, or write it in the textbox. Any alias from `Python <https://docs.python.org/2/library/codecs.html#standard-encodings>`_ can be used.
-   * * Extract filename
-     * Creates a new column with the name of the source file.
-     * By default, the box is not checked. Check the box to extract filename in an added column.
-   * * Inverse coordinates
-     * Sometimes the connector cannot guess the correct coordinate representation. The Inverse coordinates configuration option avoids this situation by inversing the coordinates.
-     * By default, the box is not checked. Check the box to inverse the coordinates.
-   * * Force wfs origin srs value
-     * To force the srs value if it is missing in the remote WFS service.
-     * Indicate the right EPSG code in the textbox.
+.. list-table:: WFS parameters
+   :header-rows: 1
+
+   * * Name
+     * Description
+     * Usage
+   * * Indicate the EPSG code matching the coordinate system (SRS)
+     * Forces the SRS value if missing from the remote WFS service.
+     * Enter the right EPSG code in the box.
+   * * Force the coordinate system conversion to WSG84
+     * Converts the geographical coordinates to EPSG:4326.
+     * By default, this option is toggled on.
+   * * Invert coordinates
+     * Some WFS services return the coordinates reversed. This option inverts the coordinate order.
+     * By default, option is toggled off.
+
+.. include:: ../../../_includes/connectors_extractfilename.rst
