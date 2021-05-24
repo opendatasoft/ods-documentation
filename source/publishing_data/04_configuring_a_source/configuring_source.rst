@@ -94,7 +94,10 @@ Connectors to remote services
     * On demand
   * * :doc:`OpenAgenda<connectors/openagenda>`
     * Used to retrieve events from OpenAgenda agendas
-    * On demand 
+    * On demand
+  * * :doc:`WFS<connectors/realtime>`
+    * Used to push real-time data
+    * On demand
   * * :doc:`Salesforce<connectors/salesforce>`
     * Used to retrieve data from the Salesforce API
     * On demand
@@ -117,5 +120,6 @@ Connectors to remote services
    connectors/jcdecaux
    connectors/netatmo
    connectors/openagenda
+   connectors/realtime
    connectors/salesforce
    connectors/wfs
