@@ -1,12 +1,12 @@
 Dataset of datasets (domain) connector
 ======================================
 
+The Dataset of datasets connector allows creating an index of the datasets of an Opendatasoft domain, optionally with all their related metadata and analytics, in the form of a dataset.
+
 .. admonition:: Warning
-   :class: danger
+  :class: danger
 
-   This connector should be used with much caution because it can give visibility to private data.
-
-The Dataset of datasets connector allows to create an index of the datasets of an Opendatasoft domain, optionally with all their related metadata and analytics, in the form of a dataset.
+  Use this connector with much caution because it can give visibility to private data.
 
 Creation
 --------
@@ -16,8 +16,13 @@ Creation
 
    The Edit dataset permission is required to use this connector.
 
-1. Enter ``domaindatasets://`` in the Enter a URL area, when creating a new dataset.
-2. Press Enter, or click the + button.
+1. In **Catalog** > **Datasets**, click on the **New dataset** button.
+2. In the wizard that opens, select **Dataset of datasets** under the **Connect to a remote service** section.
+3. From the preview of the first 20 records that appears, configure the data source.
+4. Configure the dataset information or use the pre-filled values:
+   
+   - In the **Dataset name** field, enter the title for this dataset.
+   - In the **Technical identifier** field, enter a meaningful identifier for this dataset.
 
 Configuration
 -------------
@@ -28,11 +33,11 @@ Configuration
    * * Name
      * Description
    * * Interoperability Metadata
-     * If checked, interoperability metadata are retrieved and added to the dataset.
+     * If selected, interoperability metadata are retrieved and added to the dataset.
    * * Custom Metadata
-     * If checked, custom metadata are retrieved and added to the dataset.
+     * If selected, custom metadata are retrieved and added to the dataset.
    * * Statistics
-     * If checked, statistics of the dataset are retrieved and added to the dataset:
+     * If selected, statistics of the dataset are retrieved and added to the dataset:
 
        - number of datasets,
        - size of the records in the dataset (in bytes),
@@ -44,8 +49,8 @@ Configuration
        - popularity score.
 
    * * Private datasets
-     * If checked, private datasets are added to the dataset. Also adds a "Visibility" field which indicates whether the datasets are public ("domain") or private ("restricted").
+     * If selected, private datasets are added to the dataset. It also adds a "Visibility" field to the dataset. This field indicates whether the datasets are public ("domain") or private ("restricted").
    * * Staged datasets
-     * If checked, staged datasets (meaning datasets that are created but not published) are added to the dataset. Also adds a "Published" field which indicates whether the datasets are published ("true") or not ("false").
+     * If selected, staged datasets (meaning datasets that are created but not published) are added to the dataset. It also adds a "Published" field to the dataset. This field indicates whether the datasets are published ("true") or not ("false").
    * * Admin metadata
-     * If checked, admin metadata are retrieved and added to the dataset.
+     * If selected, admin metadata are retrieved and added to the dataset.
