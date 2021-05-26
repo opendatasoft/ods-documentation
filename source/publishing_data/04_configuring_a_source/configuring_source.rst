@@ -86,6 +86,9 @@ Connectors to remote services
   * * :doc:`Dataset of datasets<connectors/dataset_of_datasets>`
     * Used to create a dataset from the catalog of an Opendatasoft domain
     * Default
+  * * :doc:`Eco Counter<connectors/ecocounter>`
+    * Used to retrieve about Eco Counter counters and counting sites
+    * On demand
   * * :doc:`JCDecaux<connectors/jcdecaux>`
     * Used to retrieve the state of JCDecaux bike stations
     * On demand
@@ -117,6 +120,7 @@ Connectors to remote services
    connectors/arcgis
    connectors/census
    connectors/dataset_of_datasets
+   connectors/ecocounter
    connectors/jcdecaux
    connectors/netatmo
    connectors/openagenda
