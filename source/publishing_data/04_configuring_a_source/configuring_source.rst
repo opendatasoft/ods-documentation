@@ -89,6 +89,9 @@ Connectors to remote services
   * * :doc:`Eco Counter<connectors/ecocounter>`
     * Used to retrieve about Eco Counter counters and counting sites
     * On demand
+  * * :doc:`Feed<connectors/feed>`
+    * Used to retrieve Atom and RSS feeds
+    * On demand
   * * :doc:`JCDecaux<connectors/jcdecaux>`
     * Used to retrieve the state of JCDecaux bike stations
     * On demand
@@ -121,6 +124,7 @@ Connectors to remote services
    connectors/census
    connectors/dataset_of_datasets
    connectors/ecocounter
+   connectors/feed
    connectors/jcdecaux
    connectors/netatmo
    connectors/openagenda
