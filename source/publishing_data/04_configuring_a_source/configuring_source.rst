@@ -107,6 +107,9 @@ Connectors to remote services
   * * :doc:`Salesforce<connectors/salesforce>`
     * Used to retrieve data from the Salesforce API
     * On demand
+  * * :doc:`SharePoint<connectors/sharepoint>`
+    * Used to retrieve files located in SharePoint
+    * Default
   * * :doc:`WFS<connectors/wfs>`
     * Used to retrieve data from a WFS service
     * On demand
@@ -130,4 +133,5 @@ Connectors to remote services
    connectors/openagenda
    connectors/realtime
    connectors/salesforce
+   connectors/sharepoint
    connectors/wfs
