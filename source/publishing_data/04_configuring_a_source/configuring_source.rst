@@ -3,7 +3,7 @@ Configuring data sources
 
 When adding a data source to a dataset, the Opendatasoft platform uses a connector to read and retrieve data.
 
-When you create a dataset, you start with configuring a data source and its connection.
+When you create a dataset, you start with configuring a data source and its connection. For FTP, Google Drive, HTTP, and Microsoft SharePoint, you can select a saved connection or configure a new connection.
 
 After you create a dataset, you can add a new data source, or edit an existing data source and its connection using the **Sources** tab of the desired dataset.
 
