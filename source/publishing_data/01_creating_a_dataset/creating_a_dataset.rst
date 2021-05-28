@@ -16,7 +16,7 @@ You can add a source to a dataset in the following ways:
 
 .. rubric:: Step 2. Configuring the connection to the data source
 
-To retrieve data from your source, you must establish the connection between this source and the Opendatasoft platform.
+To retrieve data from your source, you must establish the connection between this source and the Opendatasoft platform. For FTP, Google Drive, HTTP, and Microsoft SharePoint, you can configure and save a new connection or reuse a saved connection.
 
 .. rubric:: Step 3: Configuring the source to make sure your data look good
 
