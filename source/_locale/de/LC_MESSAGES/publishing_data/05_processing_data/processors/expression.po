@@ -2,13 +2,13 @@
 # Copyright (C) 2021, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2018
 # Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2019
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
 # traducteur_DE1 <datawords.translator.de1@gmail.com>, 2020
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -18,10 +18,10 @@ msgstr ""
 "PO-Revision-Date: 2018-06-27 09:13+0000\n"
 "Last-Translator: traducteur_DE1 <datawords.translator.de1@gmail.com>, 2020\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:2
@@ -1154,7 +1154,7 @@ msgstr "``hour(\"2014-06-07 17:00\")`` ergibt ``17``"
 msgid "``hour(\"2014-06-07 17:00\", \"Europe/Paris\")`` returns ``19``"
 msgstr "``hour(\"2014-06-07 17:00\", \"Europe/Paris\")`` ergibt ``19``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:357
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:358
 msgid ""
 "``add_years([datetime],[numeric])``, ``add_months([datetime],[numeric])``, "
 "``add_days([datetime],[numeric])``, ``add_hours([datetime],[numeric])``, "
@@ -1164,56 +1164,87 @@ msgstr ""
 "``add_days([datetime],[numeric])``, ``add_hours([datetime],[numeric])``, "
 "``add_minutes([datetime],[numeric])``, ``add_seconds([datetime],[numeric])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:358
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:359
 msgid "Add years, months, days, hours, minutes, seconds to a datetime"
 msgstr ""
 "Fügt einer DateTime Jahre, Monate, Tage, Stunden, Minuten, Sekunden hinzu"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:359
-msgid "``add_months(\"2014-11-14\", \"3\")`` returns ``2015-02-14``"
-msgstr "``add_months(\"2014-11-14\", \"3\")`` ergibt ``2015-02-14``"
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:360
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:362
 msgid "``fromtimestamp([numeric])``"
 msgstr "``fromtimestamp([numeric])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:361
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:363
 msgid "Convert a timestamp to a datetime"
 msgstr "Konvertiert einen Zeitstempel in eine DateTime"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:363
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:365
 msgid "``quartertodaterange([numeric])``"
 msgstr "``quartertodaterange([numeric])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:364
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:366
 msgid "Convert a quarter (e.g: \"2014Q2\", \"2019q1\") to a date range"
 msgstr "Konvertiert ein Quartal (z.B.: \"2014Q2\", \"2019q1\") in einen Datumsbereich"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:365
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:367
 msgid "``quartertodaterange(\"2014Q2\")`` returns ``\"2014-04-01 / 2014-06-30\"``"
 msgstr "``quartertodaterange(\"2014Q2\")`` ergibt ``\"2014-04-01 / 2014-06-30\"``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:366
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:368
 msgid "``datediff([datetime], [datetime], [unit])``"
 msgstr "``datediff([datetime], [datetime], [unit])``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:367
-msgid ""
-"Count the number of units between the two datetimes. ``[unit]`` can be "
-"\"year\", \"month\", \"day\", \"hour\", \"minute\", \"second\"."
-msgstr ""
-"Zählt die Anzahl der Einheiten zwischen den zwei DateTimes. ``[unit]`` kann "
-"\"year\" (Jahr), \"month\" (Monat), \"day\" (Tag), \"hour\" (Stunde), "
-"\"minute\" (Minute), \"second\" (Sekunde) sein."
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:368
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:370
 msgid "``datediff(\"2014-02-28\", \"2015-02-28\", \"month\")`` returns ``12``"
 msgstr "``datediff(\"2014-02-28\", \"2015-02-28\", \"month\")`` ergibt ``12``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:369
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:371
 msgid ""
 "``datediff(\"2014-02-28T20:00:00Z\", \"2014-02-28T21:00:00Z\", \"minute\")``"
 " returns ``60``"
 msgstr ""
 "``datediff(\"2014-02-28T20:00:00Z\", \"2014-02-28T21:00:00Z\", \"minute\")``"
 " ergibt ``60``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:357
+msgid ""
+"Suppose that the current date is \"2021-04-21\". In this case, "
+"``month(now())`` returns ``4``."
+msgstr ""
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:360
+#, fuzzy
+msgid "``add_months(\"2014-11-14\", 3)`` returns ``2015-02-14``"
+msgstr "``add_months(\"2014-11-14\", \"3\")`` ergibt ``2015-02-14``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:361
+msgid ""
+"Suppose that the current date is \"2020-04-21\". In this case, "
+"``add_months(now(), 3)`` returns ``2021-07-21``."
+msgstr ""
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:369
+#, fuzzy
+msgid ""
+"Count the number of units between the two datetime expressions. ``[unit]`` "
+"can be \"year\", \"month\", \"day\", \"hour\", \"minute\", \"second\"."
+msgstr ""
+"Zählt die Anzahl der Einheiten zwischen den zwei DateTimes. ``[unit]`` kann "
+"\"year\" (Jahr), \"month\" (Monat), \"day\" (Tag), \"hour\" (Stunde), "
+"\"minute\" (Minute), \"second\" (Sekunde) sein."
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:372
+msgid ""
+"Suppose that the current time is \"2021-04-21\". In this case, "
+"``datediff(\"2020-04-01\", now(), \"year\")`` returns ``1``."
+msgstr ""
+
+#~ msgid "``add_months(\"2014-11-14\", \"3\")`` returns ``2015-02-14``"
+#~ msgstr "``add_months(\"2014-11-14\", \"3\")`` ergibt ``2015-02-14``"
+
+#~ msgid ""
+#~ "Count the number of units between the two datetimes. ``[unit]`` can be "
+#~ "\"year\", \"month\", \"day\", \"hour\", \"minute\", \"second\"."
+#~ msgstr ""
+#~ "Zählt die Anzahl der Einheiten zwischen den zwei DateTimes. ``[unit]`` kann "
+#~ "\"year\" (Jahr), \"month\" (Monat), \"day\" (Tag), \"hour\" (Stunde), "
+#~ "\"minute\" (Minute), \"second\" (Sekunde) sein."
