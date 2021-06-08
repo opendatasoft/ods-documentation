@@ -11,7 +11,7 @@ You can add a source to a dataset in the following ways:
 
 - :doc:`Retrieving a file from your computer, a URL, or an FTP server<retrieving_file>`
 - :doc:`Retrieving a dataset published with Opendatasoft<federating_data>`
-- :doc:`Connecting to a remote service<configuring_remote_service>`
+- :doc:`Configuring a remote service<configuring_remote_service>`
 
 
 .. rubric:: Step 2. Configuring the connection to the data source
@@ -37,4 +37,3 @@ From the **Dataset information** screen, you can configure the dataset title and
    configuring_remote_service
    creating_dataset_with_images
    creating_dataset_with_multiple_files
-   supported_formats

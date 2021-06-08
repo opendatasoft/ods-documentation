@@ -17,7 +17,7 @@ You can now reuse the saved connection and connect again to the service using th
 Accessing saved connections
 ---------------------------
 
-Once you saved one or more connections, you can access them from the Connection page in the back office:
+Once saved, you can access your own connections from the Connections page in the back office:
 
 1. From the back office, select **Catalog** > **Connections**.
 2. If you want to filter connections, click **Connection type** at the top of the list, then select the desired connection type.
@@ -35,14 +35,13 @@ After saving a connection, you can update your connection information.
 Deleting a saved connection
 ---------------------------
 
-You can permanently delete saved connections that are not used in any datasets. 
-
-You cannot delete connections used in datasets.
+You can permanently delete saved connections that are not used in any datasets. In other words, you cannot delete connections used in datasets. 
+If you want to delete a connection used in datasets, you'll need to first deleted the related datasets.
 
 1. From the back office, select **Catalog** > **Connections**.
 2. Click |icon-action-menu| on the desired connection.
 3. Click **Delete connection**.
-4. Confirm that you want to delete this connection.
+4. When prompted, confirm that you want to delete this connection.
 
 The connection is permanently deleted and removed from the Connections page.
 

@@ -17,7 +17,7 @@ Creation
    The Edit dataset permission is required to use this connector.
 
 1. In **Catalog** > **Datasets**, click on the **New dataset** button.
-2. In the wizard that opens, select **Dataset of datasets** under the **Connect to a remote service** section.
+2. In the wizard that opens, select **Dataset of datasets** under the **Configure a remote service** section.
 3. From the preview of the first 20 records that appears, configure the data source.
 4. Configure the dataset information or use the pre-filled values:
    

@@ -1,9 +1,9 @@
-XML files
+RDF files
 =========
 
-You can use an XML (.xml) file as a data source.
+You can use a RDF (.rdf) file as a data source.
 
-This platform creates records from an arbitrary XML structure by converting all elements at a specific depth (optionally filtered by tag) to a set of records.
+This platform creates records from an arbitrary RDF structure by converting all elements at a specific depth (optionally filtered by tag) to a set of records.
 For each element converted to a record, attributes, enclosed tags, and content are converted to fields.
 Complex data inside fields is converted to a JSON representation containing both attributes and content.
 

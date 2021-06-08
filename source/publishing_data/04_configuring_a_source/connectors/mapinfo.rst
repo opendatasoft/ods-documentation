@@ -1,7 +1,9 @@
-MapInfo connector
-=================
+MapInfo files
+=============
 
-The MapInfo connector is used for MapInfo ZIP archives. They should contain the following files at the root level:
+You can use a MapInfo ZIP archive as a data source.
+
+MapInfo ZIP archive files should contain the following files at the root level:
 
 * ``.mid``: stores the attribute data
 * ``.mif``: stores the structure and the geometries

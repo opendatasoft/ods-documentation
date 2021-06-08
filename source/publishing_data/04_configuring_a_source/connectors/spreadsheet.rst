@@ -1,12 +1,12 @@
-Spreadsheet connector
-=====================
+Spreadsheet files
+=================
 
-The Spreadsheet connector is used for spreadsheet files–tabular files generated from software such as Excel, OpenOffice, and LibreOffice.
+You can use a spreadsheet file⁠—tabular file generated from software such as Excel, OpenOffice, and LibreOffice⁠—as a data source.
 
-The spreadsheet connector can read the following files:
+The platform can read the following files:
 
-- Microsoft Excel files (.xls and .xlsx),
-- OpenOffice files (.ods).
+- Microsoft Excel files (.xls and .xlsx)
+- OpenOffice files (.ods)
 
 .. admonition:: Important
    :class: important

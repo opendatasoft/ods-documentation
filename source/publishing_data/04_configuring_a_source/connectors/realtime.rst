@@ -11,7 +11,7 @@ Creation
 --------
 
 1. In **Catalog** > **Datasets**, click on the **New dataset** button.
-2. In the wizard that opens, select **Realtime** under the **Connect to a remote service** section.
+2. In the wizard that opens, select **Realtime** under the **Configure a remote service** section.
 3. In the **Real time data schema** box, enter some bootstrap data. The data should have all the fields that will be sent through the API.
 
 .. admonition:: Note

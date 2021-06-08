@@ -20,7 +20,7 @@ Creation
 
 
 1. In **Catalog** > **Datasets**, click on the **New dataset** button.
-2. In the wizard that opens, select **Airtable** under the **Connect to a remote service** section.
+2. In the wizard that opens, select **Airtable** under the **Configure a remote service** section.
 3. Configure your Airtable connection:
    
   - Under the **Retrieve data from Airtable** section, enter your Airtable API URL in the box.

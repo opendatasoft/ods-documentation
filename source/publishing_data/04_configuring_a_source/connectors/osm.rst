@@ -1,7 +1,7 @@
-OSM connector
-=============
+OSM files
+=========
 
-The OSM File connector is used to extract data from OpenStreetMap files (.osm). It can also read XML (.xml) files.
+You can use an OpenStreetMap file (.osm) as a data source.
 
 .. admonition:: Note
    :class: note

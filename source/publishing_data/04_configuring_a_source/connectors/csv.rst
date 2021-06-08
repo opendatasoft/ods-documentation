@@ -1,13 +1,14 @@
-CSV connector
-=============
+CSV files
+=========
 
-The CSV File connector is used for datasets which source is a CSV file (.csv). It is a file that contains a list of fields separated either by a ``,`` character (usually for English files) or a ``;`` character (usually for French files).
+You can use a CSV file (.csv) as a data source.
+A CSV file contains a list of fields separated either by a ``,`` character (usually for English files) or a ``;`` character (usually for French files).
 
-The CSV File connector can also read other similar files:
+You can also use similar file types:
 
-- TSV files (.tsv), which separator is a tab instead of a comma or semicolon,
-- Text files (.txt),
-- DAT files (.dat).
+- Tab-Separated Values (TSV) files (.tsv)
+- Text files (.txt)
+- DAT files (.dat)
 
 Creation
 ~~~~~~~~

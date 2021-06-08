@@ -1,7 +1,7 @@
-GeoJSON connector
-=================
+GeoJSON files
+=============
 
-The `GeoJSON <https://geojson.org/geojson-spec.html#feature-collection-objects>`_ connector is used for dataset which source is a GeoJSON file (.geojson).
+You can use a `GeoJSON <https://geojson.org/geojson-spec.html#feature-collection-objects>`_ file (.geojson) as a data source.
 
 As defined by the RFC 7946 GeoJSON specification, a GeoJSON should have the following structure:
 

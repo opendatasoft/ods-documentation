@@ -12,7 +12,7 @@ Creation
 --------
 
 1. In **Catalog** > **Datasets**, click on the **New dataset** button.
-2. In the wizard that opens, select **ArcGIS** under the **Connect to a remote service** section.
+2. In the wizard that opens, select **ArcGIS** under the **Configure a remote service** section.
 3. Configure your HTTP connection:
 
    - Under the **Connection information to the HTTP server** section, enter the URL to the server in the **Server URL** box.
