@@ -1,9 +1,6 @@
 Creating a dataset with multiple files
 ======================================
 
-.. contents:: On this page
-   :local:
-
 You can add multiple files to a dataset in the following ways:
 
 - adding each file one by one,
@@ -15,7 +12,7 @@ Sourcing files one by one
 
 This method consists of adding files one by one into the platform, creating as many sources as the number of added files. In that case, because a new source is created for each added file, those can have different formats.
 
-For more information, see :doc:`Supported formats</publishing_data/01_creating_a_dataset/supported_formats>`.
+For more information, see :ref:`supportedformats`.
 
 .. admonition:: Important
    :class: important
@@ -40,14 +37,14 @@ Sourcing multiple files within an archive
 
 This method consists of adding several files at the same time via an archive file, creating a single source for all the added files. In that case, because only one source is created for all the files, those have to have the same format.
 
-For more information, see :doc:`Supported formats</publishing_data/01_creating_a_dataset/supported_formats>`.
+For more information, see :ref:`supportedformats`.
 
 .. admonition:: Important
    :class: important
 
    With this method, the platform chooses the file with the oldest modification time to determine the data schema.
 
-1. Create an archive file (see :ref:`Supported compressed file formats<supportedcompressedformats>`) with the files to add to the same dataset.
+1. Create an archive file with the files to add to the same dataset.
 2. In Catalog > Datasets, click on the **New dataset** button.
 3. Add the archive file as a data source, using one of the 3 available methods under the **Retrieve a file** section. For more information, see - :doc:`Retrieving a file from your computer, a URL, or an FTP server<retrieving_file>`.
 4. From the preview of the first 20 records that opens, configure the data source.

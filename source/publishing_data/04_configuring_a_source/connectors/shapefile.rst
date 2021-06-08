@@ -1,7 +1,9 @@
-Shapefile connector
-===================
+Shapefiles
+==========
 
-The Shapefile connector is used to extract data from a shapefile. It is a ZIP archive that should contain the following files at the root level:
+You can use a shapefile as a data source.
+
+A shapefile is a ZIP archive that should contain the following files at the root level:
 
 * ``.shp`` shape format; the feature geometry itself
 * ``.shx`` shape index format

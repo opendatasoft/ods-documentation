@@ -1,7 +1,7 @@
 Configuring a remote service
--------------------------------
+----------------------------
 
-You can connect to a remote service to add a source while creating a dataset.
+You can configure a remote service to add a source while creating a dataset.
 
 For a list of available connectors, see :doc:`/publishing_data/04_configuring_a_source/configuring_source`.
 

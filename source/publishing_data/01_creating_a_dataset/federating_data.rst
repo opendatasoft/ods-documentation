@@ -1,9 +1,6 @@
 Federating data
 ===============
 
-.. contents:: On this page
-   :local:
-
 Federation is a core feature of the data network we are building. Using it is a good way to enrich your own data, and it also gives others a new way to discover and reuse them.
 
 .. ifconfig:: language == 'en'

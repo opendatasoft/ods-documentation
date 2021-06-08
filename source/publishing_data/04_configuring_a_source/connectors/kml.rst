@@ -1,7 +1,7 @@
-KML connector
-=============
+KML files
+=========
 
-The KML File connector is used for KML (.kml) and KMZ (.kmz) files. As defined by `Google <https://developers.google.com/kml/>`_, a KML file represents geographic data, and a KMZ file is a compressed KML file.
+You can use a KML (.kml) or a KMZ (.kmz) file as a data source. As defined by `Google <https://developers.google.com/kml/>`_, a KML file represents geographic data, and a KMZ file is a compressed KML file.
 
 To open a KML file outside the platform, you can use Google Earth.
 

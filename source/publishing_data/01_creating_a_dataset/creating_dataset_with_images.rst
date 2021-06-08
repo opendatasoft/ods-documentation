@@ -1,9 +1,6 @@
 Creating a dataset with media files
 ===================================
 
-.. contents:: On this page
-   :local:
-
 It is possible to source the following media files into the platform:
 
 - Images (.gif, .png, .jpeg, .jpg, .tiff, .bmp, .svg)
@@ -22,7 +19,9 @@ You can create a source with media files and add them to a dataset with an archi
 Sourcing media files with an archive file
 -----------------------------------------
 
-This method consists of building an archive file (see :ref:`Supported compressed file formats<supportedcompressedformats>`) with the media files and then importing it into the platform.
+This method consists of building an archive file with the media files and then importing it into the platform.
+
+For more information about the compressed file formats supported, see :ref:`supportedcompressedformats`.
 
 Step 1: Building the archive file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -93,7 +92,7 @@ You can use the archive file you created as a data source and upload it to the p
 Sourcing media files via URLs
 ------------------------------
 
-This method consists of sourcing any :doc:`supported format <supported_formats>` file containing URLs of media files stored in a remote server and using a processor to define the media files and extract their metadata.
+This method consists of sourcing any :ref:`supportedformats` file containing URLs of media files stored in a remote server and using a processor to define the media files and extract their metadata.
 
 .. admonition:: Note
    :class: note

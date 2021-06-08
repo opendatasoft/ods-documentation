@@ -20,7 +20,7 @@ Creation
 Before you begin, retrieve your Eco Counter API key.
 
 1. In **Catalog** > **Datasets**, click on the **New dataset** button.
-2. In the wizard that opens, select **EcoCounter** under the **Connect to a remote service** section.
+2. In the wizard that opens, select **EcoCounter** under the **Configure a remote service** section.
 3. Under the **Retrieve data from EcoCounter** section, enter your EcoCounter API key in the **API key** box.
 4. From the preview of the first 20 records that appears, do the following:
 

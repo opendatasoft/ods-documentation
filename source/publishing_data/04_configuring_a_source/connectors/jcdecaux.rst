@@ -25,7 +25,7 @@ Creation
 Before you begin, retrieve your API key from JCDecaux's developer website.
 
 1. In **Catalog** > **Datasets**, click on the **New dataset** button.
-2. In the wizard that opens, select **JCDecaux** under the **Connect to a remote service** section.
+2. In the wizard that opens, select **JCDecaux** under the **Configure a remote service** section.
 3. Under the **Retrieve data from JCDecaux** section, enter your JCDecaux API key in the **API key** box.
 4. From the preview of the first 20 records that appears, do the following:
 

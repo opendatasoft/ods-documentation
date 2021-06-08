@@ -1,30 +1,26 @@
-JSON connectors
-===============
+JSON files
+==========
 
 JSON is an open-standard format that uses human-readable text to transmit data objects consisting of key-value pairs. It is the most common data format to build web APIs.
 
-As JSON documents can have a lot of different forms, there are there JSON connectors to extract data from a JSON file:
-
-* the JSON File connector
-* the JSON Line connector
-* the JSON Dict connector
+As JSON documents can have a lot of different forms, the platform can extract data from JSON files, JSON Lines files, and JSON dictionaries.
 
 
 .. admonition:: Note
    :class: note
 
-   If the connector does not fully extract a document with a complex structure, use one of the JSON processors to complete the extraction.
+   If the platform does not fully extract a document with a complex structure, use one of the JSON processors to complete the extraction.
 
 
 JSON File
 ---------
 
-The JSON File connector extracts a valid JSON document (array or object) into one dataset of several records:
+You can use a JSON file as a data source. From this file, the platform extracts a valid JSON document (array or object) into one dataset of several records:
 
 * If the document is a JSON array, a record will be created for each object inside the array (the keys will be used as column names).
-* If the document is a JSON object, the "JSON root" parameter should contain a dot-separated path to the array inside your object. If not provided, the connector tries ``items``.
+* If the document is a JSON object, the "JSON root" parameter should contain a dot-separated path to the array inside your object. If not provided, the platform tries ``items``.
 
-For each item inside the array, the connector can follow another path before extracting the records with the parameter "JSON object".
+For each item inside the array, the platform can follow another path before extracting the records with the parameter "JSON object".
 
 Supported field types
 ~~~~~~~~~~~~~~~~~~~~~
@@ -151,12 +147,12 @@ If ``info`` is set as a JSON object, the resulting dataset will be:
 +--------------+------------+-------------+
 
 
-JSON Line
----------
+JSON Lines
+----------
 
-The JSON Line connector expects a file in which each line is a one-line JSON document. The whole file is not a valid JSON document but each line is.
+You can use a JSON Lines file as a data source. In JSON Lines files, each line is a one-line JSON document. The whole file is not a valid JSON document but each line is.
 
-The connector supports 2 modes:
+Two modes are supported:
 
     * One JSON array on each line (or one array altogether)
     * One JSON object on each line
@@ -196,10 +192,10 @@ Configuration
 JSON Dict
 ---------
 
-The JSON Dict connector extracts a valid JSON document (array or object) into one dataset of several records.
+You can use a JSON dictionary as a data source. The platform extracts a valid JSON document (array or object) into one dataset of several records.
 
-The connector expects a JSON object where each key contains a record.
-The connector then creates records with:
+The platform expects a JSON object where each key contains a record.
+The platform then creates records with:
 
 * one column to hold the key
 * one column for each attribute of the corresponding object (or a single column named "value" if the value is a string instead of an object).

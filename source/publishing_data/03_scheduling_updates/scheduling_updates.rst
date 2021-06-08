@@ -23,7 +23,7 @@ This solution is the easiest to implement. It does not require any development, 
 Adding a remote data source
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To schedule a dataset, you need to add a remote data source, specified as a URL (HTTP or FTP) to a file or connect to a remote service.
+To schedule a dataset, you need to add a remote data source, specified as a URL (HTTP or FTP) to a file or configure a remote service.
 For more information, see :doc:`../01_creating_a_dataset/retrieving_file` and :doc:`../01_creating_a_dataset/configuring_remote_service`.
 
 Specifying scheduling interval
@@ -65,7 +65,7 @@ Configuring the dataset schema
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. In **Catalog** > **Datasets**, click on the **New dataset** button.
-2. In the wizard that opens, select **Realtime** under the **Connect to a remote service** section.
+2. In the wizard that opens, select **Realtime** under the **Configure a remote service** section.
 3. In the **Real time data schema** box, enter some bootstrap data. The data should have all the fields that will be sent through the API.
 
 .. admonition:: Note

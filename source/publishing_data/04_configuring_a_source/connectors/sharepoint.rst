@@ -9,7 +9,7 @@ Creation
 --------
 
 1. In **Catalog** > **Datasets**, click on the **New dataset** button.
-2. In the wizard that opens, select **SharePoint** under the **Connect to a remote service** section.
+2. In the wizard that opens, select **SharePoint** under the **Configure a remote service** section.
 3. Select an existing SharePoint connection or create a new connection.
 4. If you want to create a new connection, perform the following steps:
 
