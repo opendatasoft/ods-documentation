@@ -2,24 +2,24 @@
 # Copyright (C) 2021, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
-# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2020
-#
+# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-03 16:52+0200\n"
+"POT-Creation-Date: 2021-06-02 10:49+0200\n"
 "PO-Revision-Date: 2018-06-27 09:13+0000\n"
-"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2020\n"
+"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
-"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:2
@@ -192,7 +192,7 @@ msgstr "números (p. ej., ``2`` o ``3,6``);"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:53
 msgid "textual literals (e.g ``\"hello\"`` or ``'world'``),"
-msgstr "literales de texto (p. ej., ``\"hola\"`` o ``'mundo'``);"
+msgstr "literales de texto (p. ej., ``\\''hola\\''`` o ``'mundo'``);"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:54
 msgid "booleans (e.g: ``'true'`` or ``'false'``),"
@@ -211,7 +211,7 @@ msgstr "operadores (p. ej., ``+``, ``OR``, ``not``, ``<=``),"
 msgid ""
 "functions (e.g: ``now()``, ``sin(number)``, ``startswith(\"hello', 'he')``)."
 msgstr ""
-"funciones (p. ej., ``now()``, ``sin(número)``, ``startswith(\"hola', "
+"funciones (p. ej., ``now()``, ``sin(número)``, ``startswith(\\''hola', "
 "'ho')``)."
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:61
@@ -246,7 +246,7 @@ msgid ""
 "\"Column 1\")"
 msgstr ""
 "``columna_1`` para acceder a un campo denominado ``columna_1`` (que "
-"posiblemente tiene la etiqueta \"Columna 1\")"
+"posiblemente tiene la etiqueta \\''Columna 1\\'')"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:68
 msgid ""
@@ -254,7 +254,7 @@ msgid ""
 "(EN)\")"
 msgstr ""
 "``nombre_es`` para acceder a un campo denominado ``nombre_es`` (que "
-"posiblemente tiene la etiqueta \"Nombre (ES)\")"
+"posiblemente tiene la etiqueta \\''Nombre (ES)\\'')"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:70
 msgid "Important"
@@ -269,8 +269,8 @@ msgid ""
 msgstr ""
 "En algunos casos, el nombre del campo puede ser ambiguo; por ejemplo, si es "
 "un número, si empieza con un número o si es una palabra clave reservada como"
-" \"pi\" (la constante matemática PI) o \"e\" (la constante matemática de "
-"número de Euler)."
+" \\''pi\\'' (la constante matemática PI) o \\''e\\'' (la constante "
+"matemática de número de Euler)."
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:75
 msgid ""
@@ -291,7 +291,7 @@ msgid ""
 "\"Column 1\")"
 msgstr ""
 "``$column_1`` para acceder a un campo denominado ``columna_1`` (que "
-"posiblemente tiene la etiqueta \"Columna 1\")"
+"posiblemente tiene la etiqueta \\''Columna 1\\'')"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:80
 msgid ""
@@ -1156,6 +1156,14 @@ msgstr "``hour(\\''2014-06-07 17:00\\'')`` devuelve ``17``"
 msgid "``hour(\"2014-06-07 17:00\", \"Europe/Paris\")`` returns ``19``"
 msgstr "``hour(\\''2014-06-07 17:00\\'', \\''Europa/París\\'')`` devuelve ``19``"
 
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:357
+msgid ""
+"Suppose that the current date is \"2021-04-21\". In this case, "
+"``month(now())`` returns ``4``."
+msgstr ""
+"Suponga que la fecha actual es \"2021-04-21\". En este caso, "
+"``month(now())`` devuelve ``4``."
+
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:358
 msgid ""
 "``add_years([datetime],[numeric])``, ``add_months([datetime],[numeric])``, "
@@ -1173,6 +1181,18 @@ msgid "Add years, months, days, hours, minutes, seconds to a datetime"
 msgstr ""
 "Añade años, meses, días, horas, minutos y segundos a una indicación de fecha"
 " y hora."
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:360
+msgid "``add_months(\"2014-11-14\", 3)`` returns ``2015-02-14``"
+msgstr "``add_months(\"2014-11-14\", 3)`` devuelve ``2015-02-14``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:361
+msgid ""
+"Suppose that the current date is \"2020-04-21\". In this case, "
+"``add_months(now(), 3)`` returns ``2021-07-21``."
+msgstr ""
+"Suponga que la fecha actual es \"2020-04-21\". En este caso, "
+"``add_months(now(), 3)`` devuelve ``2021-07-21``."
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:362
 msgid "``fromtimestamp([numeric])``"
@@ -1203,6 +1223,15 @@ msgid "``datediff([datetime], [datetime], [unit])``"
 msgstr ""
 "``datediff([indicación fecha y hora], [indicación fecha y hora], [unidad])``"
 
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:369
+msgid ""
+"Count the number of units between the two datetime expressions. ``[unit]`` "
+"can be \"year\", \"month\", \"day\", \"hour\", \"minute\", \"second\"."
+msgstr ""
+"Cuenta el número de unidades entre las dos expresiones de fecha y hora. "
+"``[unidad]`` puede ser \\''year\\'', \\''month\\'', \\''day\\'', "
+"\\''hour\\'', \\''minute\\'', \\''second\\''."
+
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:370
 msgid "``datediff(\"2014-02-28\", \"2015-02-28\", \"month\")`` returns ``12``"
 msgstr ""
@@ -1217,46 +1246,10 @@ msgstr ""
 "``datediff(\\''2014-02-28T20:00:00Z\\'', \\''2014-02-28T21:00:00Z\\'', "
 "\\''minute\\'')`` devuelve ``60``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:357
-msgid ""
-"Suppose that the current date is \"2021-04-21\". In this case, "
-"``month(now())`` returns ``4``."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:360
-#, fuzzy
-msgid "``add_months(\"2014-11-14\", 3)`` returns ``2015-02-14``"
-msgstr "``add_months(\\''2014-11-14\\'', \\''3\\'')`` devuelve ``2015-02-14``"
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:361
-msgid ""
-"Suppose that the current date is \"2020-04-21\". In this case, "
-"``add_months(now(), 3)`` returns ``2021-07-21``."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:369
-#, fuzzy
-msgid ""
-"Count the number of units between the two datetime expressions. ``[unit]`` "
-"can be \"year\", \"month\", \"day\", \"hour\", \"minute\", \"second\"."
-msgstr ""
-"Cuenta el número de unidades entre las dos indicaciones de fecha y hora. "
-"``[unidad]`` puede ser \\''year\\'', \\''month\\'', \\''day\\'', "
-"\\''hour\\'', \\''minute\\'', \\''second\\''."
-
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:372
 msgid ""
 "Suppose that the current time is \"2021-04-21\". In this case, "
 "``datediff(\"2020-04-01\", now(), \"year\")`` returns ``1``."
 msgstr ""
-
-#~ msgid "``add_months(\"2014-11-14\", \"3\")`` returns ``2015-02-14``"
-#~ msgstr "``add_months(\\''2014-11-14\\'', \\''3\\'')`` devuelve ``2015-02-14``"
-
-#~ msgid ""
-#~ "Count the number of units between the two datetimes. ``[unit]`` can be "
-#~ "\"year\", \"month\", \"day\", \"hour\", \"minute\", \"second\"."
-#~ msgstr ""
-#~ "Cuenta el número de unidades entre las dos indicaciones de fecha y hora. "
-#~ "``[unidad]`` puede ser \\''year\\'', \\''month\\'', \\''day\\'', "
-#~ "\\''hour\\'', \\''minute\\'', \\''second\\''."
+"Suponga que la hora actual es \"2021-04-21\". En este caso, "
+"``datediff(\"2020-04-01\", now(), \"year\")`` devuelve ``1``."

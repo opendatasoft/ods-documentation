@@ -2,24 +2,24 @@
 # Copyright (C) 2021, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
-# Translator_NL1 <datawords.translator.nl1@gmail.com>, 2020
-#
+# Translator_NL1 <datawords.translator.nl1@gmail.com>, 2021
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-03 16:52+0200\n"
+"POT-Creation-Date: 2021-06-02 10:49+0200\n"
 "PO-Revision-Date: 2018-06-27 09:13+0000\n"
-"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2020\n"
+"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2021\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
-"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:2
@@ -1149,6 +1149,14 @@ msgstr "``hour(\"2014-06-07 17:00\")`` geeft ``17``"
 msgid "``hour(\"2014-06-07 17:00\", \"Europe/Paris\")`` returns ``19``"
 msgstr "``hour(\"2014-06-07 17:00\", \"Europa/Parijs\")`` geeft ``19``"
 
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:357
+msgid ""
+"Suppose that the current date is \"2021-04-21\". In this case, "
+"``month(now())`` returns ``4``."
+msgstr ""
+"Veronderstel dat de huidige datum \"2021-04-21\" is. In dit geval geeft "
+"``month(now())`` als resultaat ``4``."
+
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:358
 msgid ""
 "``add_years([datetime],[numeric])``, ``add_months([datetime],[numeric])``, "
@@ -1163,6 +1171,18 @@ msgstr ""
 msgid "Add years, months, days, hours, minutes, seconds to a datetime"
 msgstr ""
 "Voeg jaren, maanden, dagen, uren, minuten, seconden toe aan een datetime"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:360
+msgid "``add_months(\"2014-11-14\", 3)`` returns ``2015-02-14``"
+msgstr "``add_months(\"2014-11-14\", 3)`` geeft als resultaat ``2015-02-14``"
+
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:361
+msgid ""
+"Suppose that the current date is \"2020-04-21\". In this case, "
+"``add_months(now(), 3)`` returns ``2021-07-21``."
+msgstr ""
+"Veronderstel dat de huidige datum \"2020-04-21\" is. In dit geval geeft "
+"``add_months(now(), 3)`` als resultaat ``2021-07-21``."
 
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:362
 msgid "``fromtimestamp([numeric])``"
@@ -1188,6 +1208,14 @@ msgstr "``quartertodaterange(\"2014Q2\")`` geeft ``\"2014-04-01 / 2014-06-30\"``
 msgid "``datediff([datetime], [datetime], [unit])``"
 msgstr "``datediff([datetime], [datetime], [unit])``"
 
+#: ../../source/publishing_data/05_processing_data/processors/expression.rst:369
+msgid ""
+"Count the number of units between the two datetime expressions. ``[unit]`` "
+"can be \"year\", \"month\", \"day\", \"hour\", \"minute\", \"second\"."
+msgstr ""
+"Tel het aantal eenheden tussen de twee datumtijduitdrukkingen. ``[unit]`` "
+"kan \"jaar\", \"maand\", \"dag\", \"uur\", \"minuut\", \"seconde\" zijn."
+
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:370
 msgid "``datediff(\"2014-02-28\", \"2015-02-28\", \"month\")`` returns ``12``"
 msgstr "``datediff(\"2014-02-28\", \"2015-02-28\", \"maand\")`` geeft ``12``"
@@ -1200,44 +1228,10 @@ msgstr ""
 "``datediff(\"2014-02-28T20:00:00Z\", \"2014-02-28T21:00:00Z\", \"minuut\")``"
 " geeft ``60``"
 
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:357
-msgid ""
-"Suppose that the current date is \"2021-04-21\". In this case, "
-"``month(now())`` returns ``4``."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:360
-#, fuzzy
-msgid "``add_months(\"2014-11-14\", 3)`` returns ``2015-02-14``"
-msgstr "``add_months(\"2014-11-14\", \"3\")`` geeft ``2015-02-14``"
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:361
-msgid ""
-"Suppose that the current date is \"2020-04-21\". In this case, "
-"``add_months(now(), 3)`` returns ``2021-07-21``."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/expression.rst:369
-#, fuzzy
-msgid ""
-"Count the number of units between the two datetime expressions. ``[unit]`` "
-"can be \"year\", \"month\", \"day\", \"hour\", \"minute\", \"second\"."
-msgstr ""
-"Tel het aantal eenheden tussen twee datetimes. ``[eenheid]`` kan \"year\", "
-"\"month\", \"day\", \"hour\", \"minute\", \"second\" zijn."
-
 #: ../../source/publishing_data/05_processing_data/processors/expression.rst:372
 msgid ""
 "Suppose that the current time is \"2021-04-21\". In this case, "
 "``datediff(\"2020-04-01\", now(), \"year\")`` returns ``1``."
 msgstr ""
-
-#~ msgid "``add_months(\"2014-11-14\", \"3\")`` returns ``2015-02-14``"
-#~ msgstr "``add_months(\"2014-11-14\", \"3\")`` geeft ``2015-02-14``"
-
-#~ msgid ""
-#~ "Count the number of units between the two datetimes. ``[unit]`` can be "
-#~ "\"year\", \"month\", \"day\", \"hour\", \"minute\", \"second\"."
-#~ msgstr ""
-#~ "Tel het aantal eenheden tussen twee datetimes. ``[eenheid]`` kan \"year\", "
-#~ "\"month\", \"day\", \"hour\", \"minute\", \"second\" zijn."
+"Veronderstel dat het huidige tijdstip \"2021-04-21\" is. In dit geval geeft "
+"``datediff(\"2020-04-01\", now(), \"jaar\")`` als resultaat ``1``."
