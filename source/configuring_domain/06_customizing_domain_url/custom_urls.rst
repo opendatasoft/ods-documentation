@@ -17,7 +17,7 @@ This can be done in 2 steps:
 1. Create a DNS record of the ``CNAME`` type for the desired name with the default name of one's Opendatasoft domain as a value.
 
 .. attention::
-    A trailing dot after after a DNS name means an absolute name, instead of a relative one. In DNS configuration, names are usually relative by default, so ``data.example.com`` would actually mean ``data.example.com.example.com.``, which is generally not wanted.
+    A trailing dot after a DNS name means an absolute name, instead of a relative one. In DNS configuration, names are usually relative by default, so ``data.example.com`` would actually mean ``data.example.com.example.com.``, which is generally not wanted.
 
     The DNS record for the above example would look like this: ``data.example.com. IN CNAME example.opendatasoft.com.``
 
