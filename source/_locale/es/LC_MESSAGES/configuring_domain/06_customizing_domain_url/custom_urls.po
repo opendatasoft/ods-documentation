@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2019
 # Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021
+# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-03 16:52+0200\n"
+"POT-Creation-Date: 2021-06-08 13:45+0200\n"
 "PO-Revision-Date: 2018-06-27 09:08+0000\n"
-"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021\n"
+"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2021\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -62,30 +62,10 @@ msgstr ""
 "utilizadas para acceder al dominio."
 
 #: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:11
-msgid "Opendatasoft aliases"
-msgstr "Alias de Opendatasoft"
-
-#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:13
-msgid ""
-"It is possible to add additional Opendatasoft domain aliases that will be "
-"used to access the domain. It is in the form ``<alias>.opendatasoft.com``, "
-"where ``alias`` is a word composed of lowercase alphanumeric characters and "
-"hyphens. Some names are reserved and not available as domain names or "
-"aliases. Ambiguous names should be avoided in order to prevent possible "
-"confusion with other Opendatasoft domains."
-msgstr ""
-"Se pueden añadir alias de dominios de Opendatasoft que servirán para acceder"
-" al dominio. El formato es ``<alias>.opendatasoft.com``, donde ``alias`` es "
-"una palabra formada por caracteres alfanuméricos en minúsculas y guiones. "
-"Algunos nombres están reservados y no están disponibles como nombres o alias"
-" de dominios. Recomendamos no emplear nombres ambiguos para evitar la "
-"confusión con otros dominios de Opendatasoft."
-
-#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:16
 msgid "Customer-provided DNS aliases"
 msgstr "Alias de DNS facilitados por clientes"
 
-#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:18
+#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:13
 msgid ""
 "It is also possible to change the base URL of an Opendatasoft domain to a "
 "custom domain name whose authoritative DNS server one controls. For "
@@ -101,11 +81,11 @@ msgstr ""
 "``example.opendatasoft.com``, pero ese cliente desea configurar su dominio "
 "para utilizar el alias ``data.example.com``."
 
-#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:20
+#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:15
 msgid "This can be done in 2 steps:"
 msgstr "Puede realizar esta operación en 2 pasos:"
 
-#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:22
+#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:17
 msgid ""
 "Create a DNS record of the ``CNAME`` type for the desired name with the "
 "default name of one's Opendatasoft domain as a value."
@@ -113,9 +93,9 @@ msgstr ""
 "Cree un registro DNS del tipo ``CNAME`` para el nombre deseado con el nombre"
 " predeterminado del dominio de Opendatasoft propio como valor."
 
-#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:25
+#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:20
 msgid ""
-"A trailing dot after after a DNS name means an absolute name, instead of a "
+"A trailing dot after a DNS name means an absolute name, instead of a "
 "relative one. In DNS configuration, names are usually relative by default, "
 "so ``data.example.com`` would actually mean "
 "``data.example.com.example.com.``, which is generally not wanted."
@@ -126,7 +106,7 @@ msgstr ""
 "realidad significaría ``data.example.com.example.com.``, lo que en general "
 "no es deseable."
 
-#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:27
+#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:22
 msgid ""
 "The DNS record for the above example would look like this: "
 "``data.example.com. IN CNAME example.opendatasoft.com.``"
@@ -134,7 +114,7 @@ msgstr ""
 "El registro DNS del ejemplo anterior tendría este aspecto: "
 "``data.example.com. IN CNAME example.opendatasoft.com.``"
 
-#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:29
+#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:24
 msgid ""
 "If one's DNS provider uses relative names, it can look like this: ``data IN "
 "CNAME example.opendatasoft.com.``"
@@ -142,7 +122,7 @@ msgstr ""
 "Si el proveedor DNS propio utiliza nombres relativos, puede tener este "
 "aspecto: ``data IN CNAME example.opendatasoft.com.``"
 
-#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:32
+#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:27
 msgid ""
 "One's DNS provider will usually have documentation explaining how to set up "
 "custom entries using their interface."
@@ -150,7 +130,7 @@ msgstr ""
 "El proveedor DNS propio normalmente tendrá documentación que explique cómo "
 "configurar las entradas personalizadas mediante su interfaz."
 
-#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:34
+#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:29
 msgid ""
 "The new name must be registered as an alias of the main domain on the "
 "Opendatasoft platform. To do so, please contact the Opendatasoft support by "
@@ -160,7 +140,7 @@ msgstr ""
 "plataforma Opendatasoft. Para ello, póngase en contacto con el equipo de "
 "soporte de Opendatasoft a través del formulario de soporte del back office."
 
-#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:36
+#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:31
 msgid ""
 "Any number of distinct DNS names can be added to an Opendatasoft domain. "
 "Though all domain names and aliases can be used to access the domain "
@@ -180,7 +160,7 @@ msgstr ""
 " a un dominio a través de un alias y no sea autenticado (anónimo) con otro "
 "alias o nombre principal."
 
-#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:39
+#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:34
 msgid ""
 "Some DNS providers offer web redirections as a means to change a site's URL."
 " However, a web redirection is not the same as a DNS CNAME and cannot be "
@@ -191,7 +171,7 @@ msgstr ""
 "un registro DNS CNAME, y no se puede emplear para personalizar la dirección "
 "URL de un dominio de Opendatasoft."
 
-#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:42
+#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:37
 msgid ""
 "``A`` or ``AAAA`` types records are not supported by the Opendatasoft "
 "platform as the IP address of one's domain is susceptible to change."
@@ -200,11 +180,11 @@ msgstr ""
 "plataforma Opendatasoft ya que la dirección IP del dominio propio puede "
 "cambiar."
 
-#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:45
+#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:40
 msgid "HTTPS and TLS (SSL) certificates"
 msgstr "HTTPS y certificados TLS (SSL)"
 
-#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:50
+#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:45
 msgid ""
 "HTTPS is a widely used protocol that aims at ensuring the privacy and "
 "integrity of the exchanges between a website and its users by providing HTTP"
@@ -223,26 +203,21 @@ msgstr ""
 "tienen HTTPS activado. TLS es el protocolo utilizado realmente para proteger"
 " HTTPS hoy en día, en sustitución del protocolo SSL original, ya obsoleto."
 
-#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:52
+#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:47
 msgid ""
-"If one chose to add an Opendatasoft alias to the domain "
-"(``<alias>.opendatasoft.com``), the TLS configuration is the same as for the"
-" main name. However, if one chose to use a custom domain name "
-"(``data.example.com``), the TLS certificate will be generated by "
-"Opendatasoft on one's behalf using `Let's Encrypt "
-"<https://letsencrypt.org/>`_'s services. Certificate generation and renewal "
-"are handled by Opendatasoft transparently. The renewal process is completely"
-" automated, as long as the DNS entry is set up and stays valid. Let's "
-"Encrypt certificates provide the same security level as any other Domain-"
-"Validated TLS certificates, and their short lifecycle (3 months) ensures a "
-"constantly updated security level. Let's Encrypt certificates are free of "
-"charge for Opendatasoft customers."
+"However, if one chose to use a custom domain name (``data.example.com``), "
+"the TLS certificate will be generated by Opendatasoft on one's behalf using "
+"`Let's Encrypt <https://letsencrypt.org/>`_'s services. Certificate "
+"generation and renewal are handled by Opendatasoft transparently. The "
+"renewal process is completely automated, as long as the DNS entry is set up "
+"and stays valid. Let's Encrypt certificates provide the same security level "
+"as any other Domain-Validated TLS certificates, and their short lifecycle (3"
+" months) ensures a constantly updated security level. Let's Encrypt "
+"certificates are free of charge for Opendatasoft customers."
 msgstr ""
-"Si decide añadir un alias Opendatasoft al dominio "
-"(``<alias>.opendatasoft.com``), la configuración TLS es la misma que para el"
-" nombre principal. No obstante, si decide utilizar un nombre de dominio "
-"personalizado (``data.example.com``), Opendatasoft generará el certificado "
-"TLS en nombre propio a través de los servicios `Let's Encrypt "
+"No obstante, si decide utilizar un nombre de dominio personalizado "
+"(``data.example.com``), Opendatasoft generará el certificado TLS en nombre "
+"propio a través de los servicios `Let's Encrypt "
 "<https://letsencrypt.org/>`_. Opendatasoft gestiona la generación y la "
 "renovación de certificados de manera transparente. El proceso de renovación "
 "es totalmente automatizado, mientras que la entrada DNS esté configurada y "
@@ -252,11 +227,11 @@ msgstr ""
 "constantemente actualizado. Los certificados Let's Encrypt son gratuitos "
 "para los clientes de Opendatasoft."
 
-#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:55
+#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:49
 msgid "Note"
 msgstr "Nota"
 
-#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:58
+#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:52
 msgid ""
 "If the configuration of one's own DNS includes a CAA entry (Certificate "
 "Authority Authorization), it will be necessary to add Let's Encrypt to the "
@@ -266,11 +241,11 @@ msgstr ""
 "autoridades certificadoras), será necesario añadir Let's Encrypt a la lista "
 "de las CA autorizadas. El identificador necesario es ``letsencrypt.org``."
 
-#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:61
+#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:55
 msgid "Language handling"
 msgstr "Administración de idiomas"
 
-#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:63
+#: ../../source/configuring_domain/06_customizing_domain_url/custom_urls.rst:57
 msgid ""
 "Suppose one has multiple languages on the Opendatasoft domain and uses "
 "language-specific domain aliases. In that case, one can request each alias "

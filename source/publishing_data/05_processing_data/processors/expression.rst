@@ -354,9 +354,11 @@ Date and time handling
      * * ``year("2014-06-07")`` returns ``2014``
        * ``hour("2014-06-07 17:00")`` returns ``17``
        * ``hour("2014-06-07 17:00", "Europe/Paris")`` returns ``19``
+       * Suppose that the current date is "2021-04-21". In this case, ``month(now())`` returns ``4``.
    * * ``add_years([datetime],[numeric])``, ``add_months([datetime],[numeric])``, ``add_days([datetime],[numeric])``, ``add_hours([datetime],[numeric])``, ``add_minutes([datetime],[numeric])``, ``add_seconds([datetime],[numeric])``
-     * Add years, months, days, hours, minutes, seconds to a datetime
-     * ``add_months("2014-11-14", "3")`` returns ``2015-02-14``
+     * * Add years, months, days, hours, minutes, seconds to a datetime
+     * * ``add_months("2014-11-14", 3)`` returns ``2015-02-14``
+       * Suppose that the current date is "2020-04-21". In this case, ``add_months(now(), 3)`` returns ``2021-07-21``.
    * * ``fromtimestamp([numeric])``
      * Convert a timestamp to a datetime
      *
@@ -364,6 +366,7 @@ Date and time handling
      * Convert a quarter (e.g: "2014Q2", "2019q1") to a date range
      * ``quartertodaterange("2014Q2")`` returns ``"2014-04-01 / 2014-06-30"``
    * * ``datediff([datetime], [datetime], [unit])``
-     * Count the number of units between the two datetimes. ``[unit]`` can be "year", "month", "day", "hour", "minute", "second".
+     * Count the number of units between the two datetime expressions. ``[unit]`` can be "year", "month", "day", "hour", "minute", "second".
      * * ``datediff("2014-02-28", "2015-02-28", "month")`` returns ``12``
        * ``datediff("2014-02-28T20:00:00Z", "2014-02-28T21:00:00Z", "minute")`` returns ``60``
+       * Suppose that the current time is "2021-04-21". In this case, ``datediff("2020-04-01", now(), "year")`` returns ``1``.
