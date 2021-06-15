@@ -3,12 +3,17 @@ Geocode with ArcGIS processor
 
 This processor allows to geocode full text addresses by using the ArcGIS geocoding API.
 
-This processor requires an ArcGIS API key.
-
 .. admonition:: Note
    :class: note
 
    This processor can be connected with a custom ArcGIS geocoder. Please contact Opendatasoft support team if you want this configuration to be activated in your domain.
+
+.. admonition:: Prerequisites
+   :class: important
+
+   - Make sure you have an ArcGIS paying account.
+   - Register an application in your ArcGIS developer dashboard.
+   - Retrieve the authorization credentials (``client ID`` and ``client secret``) for the registered application from your ArcGIS account.
 
 Setting the API key
 -------------------
