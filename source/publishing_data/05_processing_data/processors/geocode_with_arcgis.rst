@@ -3,10 +3,7 @@ Geocode with ArcGIS processor
 
 This processor allows to geocode full text addresses by using the ArcGIS geocoding API.
 
-.. admonition:: Note
-   :class: note
-
-   This processor can be connected with a custom ArcGIS geocoder. Please contact Opendatasoft support team if you want this configuration to be activated in your domain.
+This processor can be connected with a custom ArcGIS geocoder. Please contact Opendatasoft support team if you want this configuration to be activated in your domain.
 
 .. admonition:: Prerequisites
    :class: important
@@ -15,15 +12,16 @@ This processor allows to geocode full text addresses by using the ArcGIS geocodi
    - Register an application in your ArcGIS developer dashboard.
    - Retrieve the authorization credentials (``client ID`` and ``client secret``) for the registered application from your ArcGIS account.
 
-Setting the API key
--------------------
+Configuring the Client ID and Client Secret
+-------------------------------------------
 
-To setup an ArcGIS API key in order to use this processor:
+Before using the processor, configure the ArcGIS geocoding API with the Client ID and Client Secret you obtained in your ArcGIS developer dashboard.
 
-1. Leave the Catalog tab and click on the Configuration tab in the backoffice menu.
-2. Click on the **Data processing** tab of the Configuration menu.
-3. In the **ArcGIS geocoding API** section, fill in the following parameters: Client ID, Client secret.
-4. Click on the **Save** button at the top of the page.
+1. In the back office, go to **Configuration** > **Data processing**.
+2. In the **ArcGIS geocoding API** section, enter your Client ID and Client Secret in the corresponding fields.
+3. Click on the **Save** button at the top of the page.
+
+You can now use the Geocode with ArcGIS processor.
 
 Setting the processor
 ---------------------
@@ -54,5 +52,9 @@ To set the parameters of the Geocode with ArcGIS processor, follow the indicatio
     * Field containing the country
     * no
   * * Output field
-    * Field that will contain the produced WSG84 coordinates. It can be an existing field chosen from the list, or a new field created for that purpose (in that case, choose **Input text** from the list and write the name of the new field in the text area below).
+    * Field that will contain the produced WSG84 coordinates.
+    
+      You can select an existing field from the list or create a new field create for that purpose.
+
+      To create a new field, select **Input text** from the list and enter the name of the new field.
     * yes
