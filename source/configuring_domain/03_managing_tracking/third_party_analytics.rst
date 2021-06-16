@@ -58,10 +58,16 @@ The activation of SmartTag on an Opendatasoft domain involves the Opendatasoft t
 Matomo
 ------
 
-Matomo is an open-source analytics platform. Matomo Tag Manager is not supported by Opendatasoft.
+Matomo is an open-source analytics platform.
+Matomo Tag Manager is not supported by Opendatasoft.
 
-The activation of Matomo on an Opendatasoft domain involves the Opendatasoft team.
+.. admonition:: Prerequisite
+    :class: important
+ 
+    Retrieve the site URL and site ID for your domain from Matomo's administration portal.
 
-1. Contact support@opendatasoft.com and send your website ID and tracker URL, both provided by Matomo.
-2. After verification and approval by Opendatasoft, Matomo is available and activated on the Opendatasoft domain.
+1. In the **Configuration** > **Tracking** section of the back office, go to the **Matomo** area.
+2. Enter your site URL and site ID in the corresponding fields.
 3. Depending on your tracker configuration, toggle on **Require user consent** to allow visitors to enable or disable cookies in a cookie banner. In case of doubt, you may contact the relevant people in your organization. For more information, see :doc:`../../../configuring_domain/02_managing_legal_information/legals`. 
+
+Matomo is now activated on the domain.
