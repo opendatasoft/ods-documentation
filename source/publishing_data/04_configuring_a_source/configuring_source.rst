@@ -100,6 +100,9 @@ Connectors to remote services
   * * :doc:`Feed<connectors/feed>`
     * Retrieves data from Atom and RSS feeds
     * Default
+  * * :doc:`Google Drive<connectors/google_drive>`
+    * Retrieves files located in Google Drive
+    * Default
   * * :doc:`JCDecaux<connectors/jcdecaux>`
     * Retrieves the state of JCDecaux bike stations
     * On demand
@@ -131,6 +134,7 @@ Connectors to remote services
    connectors/dataset_of_datasets
    connectors/ecocounter
    connectors/feed
+   connectors/google_drive
    connectors/jcdecaux
    connectors/netatmo
    connectors/openagenda
