@@ -20,6 +20,16 @@ what they can do. Each permission has its own category, symbolized by an icon an
 .. image:: images/users_permissions.png
         :alt: All available permissions, each with a category icon and color
 
+.. admonition:: Important
+   :class: important
+
+   Authenticated users can manage and generate API keys.
+   API keys inherit all permissions granted to the user for which it has been created.
+   That's why administrators should be cautious with the permissions they grant to users.
+
+   Administrators cannot revoke users' API keys.
+   If you observe unauthorized usage of an API key, if an API key gets exposed or is unused, it is recommended to ask users to revoke the API key and create a new one.
+
 Dataset permissions
 ~~~~~~~~~~~~~~~~~~~
 
