@@ -20,11 +20,11 @@ Permissions each affect an independent part of your portal so that by looking at
 .. admonition:: Important
    :class: important
 
-   Authenticated users can manage and generate API keys.
+   Authenticated users can manage and generate their own API keys.
    API keys inherit all permissions granted to the user for which it has been created.
    That's why administrators should be cautious with the permissions they grant to users.
 
-   Administrators cannot revoke users' API keys.
+   Administrators cannot revoke users' API keys at the moment.
    If you observe unauthorized usage of an API key, if an API key gets exposed or is unused, it is recommended to ask users to revoke the API key and create a new one.
 
 Dataset permissions

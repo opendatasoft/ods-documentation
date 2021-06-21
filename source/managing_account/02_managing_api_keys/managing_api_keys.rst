@@ -1,7 +1,7 @@
 Managing API keys
 =================
 
-After authenticating to a portal, you can generate API keys and manage them from the API keys tab of their account.
+After authenticating to a portal, you can generate API keys and manage them from the API keys tab of your account.
 
 API keys are bound to a specific domain. They only work on the domain on which they were created.
 
@@ -11,9 +11,9 @@ These API keys allow you to use the following APIs: ODS Search API v1 and v2, OD
    :class: important
 
    API keys inherit all permissions granted to the user for which it has been created.
-   That's why users should be cautious with how they use API keys.
+   That's why you should be cautious with how they use API keys.
    
-   If you observe unauthorized usage of an API key, if an API key gets exposed or is unused, it is recommended to revoke it and create a new one.
+   If you observe unauthorized usage of an API key or if an API key gets exposed, it is recommended to contact Opendatasoft support to get help identifying and revoking leaked API keys.
 
 Generating an API key
 ---------------------
