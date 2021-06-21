@@ -28,6 +28,8 @@ Currently, only "Universal Analytics" properties are supported.
 
 Google Analytics is now activated on the domain.
 
+Using Google Analytics on your portal involves obtaining visitors' consent to comply with certain privacy laws such as the EU General Data Protection Regulation (GDPR). For more information, see :doc:`../../../configuring_domain/02_managing_legal_information/legals`.
+
 
 Configuring XiTi Analyzer NX
 ----------------------------
