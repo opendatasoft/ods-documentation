@@ -3,12 +3,17 @@ Generating an API key
 
 From the API keys tab of their account, authenticated users have the possibility to generate API keys, as well as to manage them.
 
+API keys are bound to a specific domain. They only work on the domain on which they were created.
+
+These API keys allow you to use the following APIs: ODS Search API v1 and v2, OData, WFS, and CSW (more info in the :doc:`Using APIs </exploring_catalog_and_datasets/04_getting_involved/using_api>` documentation).
+
 .. admonition:: Important
    :class: important
 
-   API keys are bound to a specific domain. They only work on the domain on which they were created.
-
-These API keys allow you to use the following APIs: ODS Search API v1 and v2, OData, WFS, and CSW (more info in the :doc:`Using APIs </exploring_catalog_and_datasets/04_getting_involved/using_api>` documentation).
+   API keys inherit all permissions granted to the user for which it has been created.
+   That's why users should be cautious with how they use API keys.
+   
+   If you observe unauthorized usage of an API key, if an API key gets exposed or is unused, it is recommended to revoke it and create a new one.
 
 .. image:: images/account_apikey.png
 
