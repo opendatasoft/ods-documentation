@@ -10,15 +10,22 @@ still see the same data and a subject to the same quotas as before.
 Permissions
 -----------
 
-What is changing is that you can now give them permissions to extendin what they can do. You can do so either on the
-users' index page or directly on the single user management page, both accessible through the
-**Users & groups / Users** section in your back office.
+You can now give users permissions to extend what they can do. You can do so either on the users' index page or directly on the single user management page, both accessible through the **Users & groups > Users** section in your back office.
 
-Permissions each affect an independent part of your portal so that by looking at a user's permissions list, you know
-what they can do. Each permission has its own category, symbolized by an icon and a tag color.
+Permissions each affect an independent part of your portal so that by looking at a user's permissions list, you know what they can do. Each permission has its own category, symbolized by an icon and a tag color.
 
 .. image:: images/users_permissions.png
         :alt: All available permissions, each with a category icon and color
+
+.. admonition:: Important
+   :class: important
+
+   Authenticated users can manage and generate their own API keys.
+   API keys inherit all permissions granted to the user for which it has been created.
+   That's why administrators should be cautious with the permissions they grant to users.
+
+   Administrators cannot revoke users' API keys at the moment.
+   If you observe unauthorized usage of an API key or if an API key gets exposed, it is recommended to contact Opendatasoft support to get help identifying and revoking the leaked API key.
 
 Dataset permissions
 ~~~~~~~~~~~~~~~~~~~
@@ -41,7 +48,7 @@ Dataset permissions
      * The user may manage security options and parameters (users able to access the datasets, visible records, etc.) for the datasets they have permission to edit.
        This permission on its own doesn't grant access to the back office.
    * * Publish own datasets
-     * The user can publish or republish the datasets they have the permission to edit.
+     * The user can publish or republish the datasets they have permission to edit.
        This permission on its own doesn't grant access to the back office.
 
 These are general permissions that apply to a user with regard to the portal, but a user can also get
@@ -58,11 +65,11 @@ Page permissions
    * * Create new pages
      * The user may create new pages.
 
-       **This permission grants access to the Pages section of the back office.** It also allows to manage assets.
+       **This permission grants access to the Pages section of the back office.** It also allows managing assets.
    * * Edit all pages
      * The user may edit and delete all existing pages.
 
-       **This permission grants access to the Pages section of the back office.** It also allows to manage assets.
+       **This permission grants access to the Pages section of the back office.** It also allows managing assets.
    * * Browse all pages
      * The user may access all pages, regardless of any security parameters set for this user or the pages (for example, the user can access all private pages).
        This permission on its own doesn't grant access to the back office.
@@ -86,7 +93,7 @@ Other permissions
    * * Manage the domain theme
      * The user may configure all options and parameters in the Theme and Dataset themes subsections of the Look & feel section of the back office. To access the other subsections (Branding, Data visualizations, and Navigation), the Edit domain properties permission is required.
 
-       **This permission grants access to the Look & feel (Theme) section of the back office.** It also allows to manage assets.
+       **This permission grants access to the Look & feel (Theme) section of the back office.** It also allows managing assets.
    * * Browse analytics
      * The user may access all analytics dashboards, both at the domain level and at the dataset level.
 
@@ -103,7 +110,7 @@ Other permissions
 Quotas
 ------
 
-In order to avoid having a user use up all of your license usage quotas, you can
+To avoid having a user use up all of your license usage quotas, you can
 :doc:`set up default quotas for users </managing_domain/04_monitoring_license_and_quotas/quotas>`. However, you can override the general quotas given to everybody with
 specific values tailored to a single profile for each of the 3 quota types.
 
@@ -116,8 +123,7 @@ Since quotas can also be defined at the group level, users are inheriting from 3
 The value that applies to the given is calculated as such:
 
 * If there is a specific value for the user, this value applies.
-* If there is no specific value for the user, but the user is a member of at least one group with a specific value, then
-  the maximum of all group values apply.
+* If there is no specific value for the user, but the user is a member of at least one group with a specific value, then the maximum of all group values applies.
 * If there no specific value and no group value, then the default security value for non-anonymous users applies.
 
 The applied values are then capped at the license value.
