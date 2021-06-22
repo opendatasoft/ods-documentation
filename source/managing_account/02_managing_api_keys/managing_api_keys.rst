@@ -13,7 +13,7 @@ These API keys allow you to use the following APIs: ODS Search API v1 and v2, OD
    API keys inherit all permissions granted to the user for which it has been created.
    That's why you should be cautious with how they use API keys.
    
-   If you observe unauthorized usage of an API key or if an API key gets exposed, it is recommended to contact Opendatasoft support to get help identifying and revoking leaked API keys.
+   If you observe unauthorized usage of an API key, if an API key gets exposed or is unused, it is recommended to revoke it and create a new one.
 
 Generating an API key
 ---------------------
