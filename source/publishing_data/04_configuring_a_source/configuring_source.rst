@@ -1,16 +1,20 @@
-Configuring data sources
-========================
+Configuring sources
+===================
 
-When adding a data source to a dataset, the Opendatasoft platform uses a connector to read and retrieve data.
+Apart from retrieving a dataset published with Opendatasoft, you can add a source to a dataset in the following ways:
 
-When you create a dataset, you start with configuring a data source and its connection. For FTP, Google Drive, HTTP, and Microsoft SharePoint, you can select a saved connection or configure a new connection.
+- Retrieving a file from your computer, a URL, or an FTP server
+- Configuring a remote service to read and retrieve data using a connector
 
-After you create a dataset, you can add a new data source, or edit an existing data source and its connection using the **Sources** tab of the desired dataset.
+When you create a dataset, you start with configuring a source and its connection.
+For FTP, Google Drive, HTTP, and SharePoint, you can select a saved connection or configure a new connection.
 
-Opendatasoft supports a variety of file formats and can connect to a variety of remote services.
+After you create a dataset, you can add a new source, or edit an existing source and its connection using the **Sources** tab of the desired dataset.
 
 Files
 -----
+
+Opendatasoft supports a variety of file formats.
 
 .. list-table::
   :header-rows: 1
@@ -69,6 +73,8 @@ Files
 
 Connectors to remote services
 -----------------------------
+
+Opendatasoft can connect to a variety of remote services.
 
 .. admonition:: Important
   :class: important

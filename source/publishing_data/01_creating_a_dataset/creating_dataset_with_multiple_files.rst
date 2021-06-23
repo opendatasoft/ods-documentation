@@ -21,7 +21,7 @@ For more information, see :ref:`supportedformats`.
    
    If the following files contain fields that do not match those in the first file, they will be ignored by the platform.
 
-1. :doc:`Create a dataset</publishing_data/01_creating_a_dataset/creating_a_dataset>` using your first file as a data source.
+1. :doc:`Create a dataset</publishing_data/01_creating_a_dataset/creating_a_dataset>` using your first file as a source.
 2. From **Sources** tab of the dataset, click the **Add a source** button.
 3. Add the next.
 
@@ -46,8 +46,8 @@ For more information, see :ref:`supportedformats`.
 
 1. Create an archive file with the files to add to the same dataset.
 2. In Catalog > Datasets, click on the **New dataset** button.
-3. Add the archive file as a data source, using one of the 3 available methods under the **Retrieve a file** section. For more information, see - :doc:`Retrieving a file from your computer, a URL, or an FTP server<retrieving_file>`.
-4. From the preview of the first 20 records that opens, configure the data source.
+3. Add the archive file as a source, using one of the 3 available methods under the **Retrieve a file** section. For more information, see - :doc:`Retrieving a file from your computer, a URL, or an FTP server<retrieving_file>`.
+4. From the preview of the first 20 records that opens, configure the source.
 5. Configure the dataset information or use the pre-filled values.
 
 
@@ -68,5 +68,5 @@ This method consists of connecting the platform to the directory of an FTP serve
    - FTPS servers are supported for this method (for example, `ftps://login:password@example.org/my_directory/my_dataset`).
    - When synchronizing from a remote FTP location, Opendatasoft keeps a persistent cache and does not automatically prune files missing from the remote directory. If you need some cleanup to be performed, to the right of the resource, click "Clean cache".
 
-4. From the preview of the first 20 records that opens, configure the data source.
+4. From the preview of the first 20 records that opens, configure the source.
 5. Configure the dataset information or use the pre-filled values.

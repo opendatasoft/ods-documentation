@@ -1,12 +1,16 @@
 Retrieving a file
 =================
 
-You can add a file from your computer, a URL, or an FTP server as a source to a dataset. For more information, see :ref:`supportedformats`.
+You can add a file from your computer, a URL, or an FTP server as a source to a dataset.
+
+For more information, see :ref:`supportedformats`.
 
 .. admonition:: Note
    :class: note
    
-   The size limit for a file is 240Mo. If your file is too big, you can compress it before uploading it. For more information, see :ref:`supportedcompressedformats`.
+   The size limit for a file is 240Mo. If your file is too big, you can compress it before uploading it.
+   
+   For more information, see :ref:`supportedcompressedformats`.
 
 
 Retrieving a file from your computer
@@ -17,7 +21,7 @@ This method consists of directly uploading a file into the platform to attach a 
 1. In Catalog > Datasets, click on the **New dataset** button.
 2. In the wizard that opens, select **From my computer** under the **Retrieve a file** section.
 3. Either drop a file or click **Browse** to locate a file in your local filesystem.
-4. From the preview of the first 20 records that appears, configure the data source.
+4. From the preview of the first 20 records that appears, configure the source.
 5. Configure the dataset information or use the pre-filled values:
    
    - In the **Dataset name** field, enter the title for this dataset.
@@ -32,14 +36,14 @@ Retrieving a file from a URL
 You can connect the platform to:
 
 * a remote server via its URL, to import files stored on this remote server, or
-* a remote data source that exposes data records over an API.
+* a remote source that exposes data records over an API.
 
 Opendatasoft supports HTTP and HTTPS URLs to files, for example, `http://example.org/mydata.csv`.
 
 1. In Catalog > Datasets, click on the **New dataset** button.
 2. In the wizard that opens, select **From a URL** under the **Retrieve a file** section.
 3. Configure your HTTP connection.
-4. From the preview of the first 20 records that appears, configure the data source.
+4. From the preview of the first 20 records that appears, configure the source.
 5. Configure the dataset information or use the pre-filled values:
    
    - In the **Dataset name** field, enter the title for this dataset.
@@ -63,7 +67,7 @@ Opendatasoft supports FTP and FTPS URLs:
 1. In Catalog > Datasets, click on the **New dataset** button.
 2. In the wizard that opens, select **From an FTP server** under the **Retrieve a file** section.
 3. Configure your FTP connection.
-4. From the preview of the first 20 records that appears, configure the data source.
+4. From the preview of the first 20 records that appears, configure the source.
 5. Configure the dataset information or use the pre-filled values:
    
    - In the **Dataset name** field, enter the title for this dataset.

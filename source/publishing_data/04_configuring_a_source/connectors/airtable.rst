@@ -19,7 +19,11 @@ Creation
    - Find your Airtable API URL from your workspace (Help > API documentation > [your base] or your base (choose your table, then go to Help > API documentation). Then, from the "Authentication" section, copy the URL from ``EXAMPLE USING BEARER TOKEN (RECOMMENDED)`` without the curl and the header. This is your API URL (for example, ``https://api.airtable.com/v0/base_id/table_name``).
 
 
-1. In **Catalog** > **Datasets**, click on the **New dataset** button.
+1. Choose an option:
+   
+   - If you want to create a dataset, click **Catalog** > **Datasets** and click the **New dataset** button.
+   - If you want to add a source to an existing dataset, click **Catalog** > **Datasets** and select the desired dataset. Then, click **Add a source**.
+
 2. In the wizard that opens, select **Airtable** under the **Configure a remote service** section.
 3. Configure your Airtable connection:
    

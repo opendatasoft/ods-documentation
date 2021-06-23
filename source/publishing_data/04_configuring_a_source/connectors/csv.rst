@@ -1,7 +1,7 @@
 CSV files
 =========
 
-You can use a CSV file (.csv) as a data source.
+You can use a CSV file (.csv) as a source.
 A CSV file contains a list of fields separated either by a ``,`` character (usually for English files) or a ``;`` character (usually for French files).
 
 You can also use similar file types:
@@ -13,7 +13,7 @@ You can also use similar file types:
 Creation
 ~~~~~~~~
 
-For more information about adding a file data source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
+For more information about adding a file source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
 
 Configuration
 ~~~~~~~~~~~~~

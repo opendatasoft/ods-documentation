@@ -36,7 +36,7 @@ Deleting a saved connection
 ---------------------------
 
 You can permanently delete saved connections that are not used in any datasets. In other words, you cannot delete connections used in datasets. 
-If you want to delete a connection used in datasets, you'll need to first deleted the related datasets.
+If you want to delete a connection used in datasets, you'll need to first delete the related datasets.
 
 1. From the back office, select **Catalog** > **Connections**.
 2. Click |icon-action-menu| on the desired connection.

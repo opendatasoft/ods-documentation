@@ -1,7 +1,7 @@
 OSM files
 =========
 
-You can use an OpenStreetMap file (.osm) as a data source.
+You can use an OpenStreetMap file (.osm) as a source.
 
 .. admonition:: Note
    :class: note
@@ -11,7 +11,7 @@ You can use an OpenStreetMap file (.osm) as a data source.
 Creation
 ~~~~~~~~
 
-For more information about adding a file data source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
+For more information about adding a file source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
 
 Configuration
 ~~~~~~~~~~~~~

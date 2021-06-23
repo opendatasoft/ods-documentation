@@ -14,7 +14,7 @@ Creation
 
 2. In the wizard that opens, select **Feed** under the **Configure a remote service** section.
 3. Configure your HTTP connection to import the feed.
-4. From the preview of the first 20 records that appears, configure the data source.
+4. From the preview of the first 20 records that appears, configure the source.
 5. Configure the dataset information or use the pre-filled values:
    
    - In the **Dataset name** field, enter the title for this dataset.

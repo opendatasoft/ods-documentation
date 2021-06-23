@@ -10,7 +10,11 @@ It is not to be confused with the ability to schedule a dataset processing. When
 Creation
 --------
 
-1. In **Catalog** > **Datasets**, click on the **New dataset** button.
+1. Choose an option:
+   
+   - If you want to create a dataset, click **Catalog** > **Datasets** and click the **New dataset** button.
+   - If you want to add a source to an existing dataset, click **Catalog** > **Datasets** and select the desired dataset. Then, click **Add a source**.
+
 2. In the wizard that opens, select **Realtime** under the **Configure a remote service** section.
 3. In the **Real time data schema** box, enter some bootstrap data. The data should have all the fields that will be sent through the API.
 

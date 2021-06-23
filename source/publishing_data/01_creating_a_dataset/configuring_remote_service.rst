@@ -7,12 +7,12 @@ For a list of available connectors, see :doc:`/publishing_data/04_configuring_a_
 
 1. In **Catalog** > **Datasets**, click on the **New dataset** button.
 2. In the wizard that opens, select the desired service under the **Configure a remote service** section.
-3. Configure the connection to your data source.
+3. Configure the connection to your source.
 
 For Google Drive and SharePoint, you can select a saved connection or configure a new connection.
 If you configure a new connection, select the **Save connection information** check box to save your connection.
 
-4. From the preview of the first 20 records that appears, configure the data source.
+4. From the preview of the first 20 records that appears, configure the source.
 5. Configure the dataset information or use the pre-filled values:
    
    - In the **Dataset name** field, enter the title for this dataset.
