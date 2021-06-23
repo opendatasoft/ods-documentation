@@ -18,12 +18,12 @@ Using scheduling to keep a dataset up to date
 
 Datasets can be automatically republished at fixed intervals.
 
-This solution is the easiest to implement. It does not require any development, only a remote data source and some settings in the dataset configuration.
+This solution is the easiest to implement. It does not require any development, only a remote source and some settings in the dataset configuration.
 
-Adding a remote data source
+Adding a remote source
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To schedule a dataset, you need to add a remote data source, specified as a URL (HTTP or FTP) to a file or configure a remote service.
+To schedule a dataset, you need to add a remote source, specified as a URL (HTTP or FTP) to a file or configure a remote service.
 For more information, see :doc:`../01_creating_a_dataset/retrieving_file` and :doc:`../01_creating_a_dataset/configuring_remote_service`.
 
 Specifying scheduling interval

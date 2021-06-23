@@ -16,9 +16,13 @@ Creation
 
    The Edit dataset permission is required to use this connector.
 
-1. In **Catalog** > **Datasets**, click on the **New dataset** button.
+1. Choose an option:
+   
+   - If you want to create a dataset, click **Catalog** > **Datasets** and click the **New dataset** button.
+   - If you want to add a source to an existing dataset, click **Catalog** > **Datasets** and select the desired dataset. Then, click **Add a source**.
+
 2. In the wizard that opens, select **Dataset of datasets** under the **Configure a remote service** section.
-3. From the preview of the first 20 records that appears, configure the data source.
+3. From the preview of the first 20 records that appears, configure the source.
 4. Configure the dataset information or use the pre-filled values:
    
    - In the **Dataset name** field, enter the title for this dataset.

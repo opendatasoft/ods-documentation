@@ -11,13 +11,17 @@ The WFS connector is used to extract data from a WFS service.
 Creation
 --------
 
-1. In **Catalog** > **Datasets**, click on the **New dataset** button.
-2. In the wizard that opens, select **ArcGIS** under the **Configure a remote service** section.
+1. Choose an option:
+   
+   - If you want to create a dataset, click **Catalog** > **Datasets** and click the **New dataset** button.
+   - If you want to add a source to an existing dataset, click **Catalog** > **Datasets** and select the desired dataset. Then, click **Add a source**.
+
+2. In the wizard that opens, select **WFS** under the **Configure a remote service** section.
 3. Configure your HTTP connection:
 
    - Under the **Connection information to the HTTP server** section, enter the URL to the server in the **Server URL** box.
    - Under the **Path to the file** section, enter the path to the layer. It must contain the ``TypeName`` parameter. (for example, ``/wfs?service=WFS&TypeName=layername``)
-4. From the preview of the first 20 records that appears, configure the data source.
+4. From the preview of the first 20 records that appears, configure the source.
 5. Configure the dataset information or use the pre-filled values:
    
    - In the **Dataset name** field, enter the title for this dataset.

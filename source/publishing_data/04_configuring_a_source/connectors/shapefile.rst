@@ -1,7 +1,7 @@
 Shapefiles
 ==========
 
-You can use a shapefile as a data source.
+You can use a shapefile as a source.
 
 A shapefile is a ZIP archive that should contain the following files at the root level:
 
@@ -13,7 +13,7 @@ A shapefile is a ZIP archive that should contain the following files at the root
 Creation
 ~~~~~~~~
 
-For more information about adding a file data source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
+For more information about adding a file source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
 
 Configuration
 ~~~~~~~~~~~~~

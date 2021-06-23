@@ -1,7 +1,7 @@
 RDF files
 =========
 
-You can use a RDF (.rdf) file as a data source.
+You can use a RDF (.rdf) file as a source.
 
 This platform creates records from an arbitrary RDF structure by converting all elements at a specific depth (optionally filtered by tag) to a set of records.
 For each element converted to a record, attributes, enclosed tags, and content are converted to fields.
@@ -10,7 +10,7 @@ Complex data inside fields is converted to a JSON representation containing both
 Creation
 ~~~~~~~~
 
-For more information about adding a file data source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
+For more information about adding a file source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
 
 Configuration
 ~~~~~~~~~~~~~
@@ -179,7 +179,7 @@ Example 2
         </basket>
     </shoppingList>
 
-In this example, the XML tree is complex. As a result, the automatic parameters detection cannot guess the proper depth. You must configure the data source manually:
+In this example, the XML tree is complex. As a result, the automatic parameters detection cannot guess the proper depth. You must configure the source manually:
 
 - **Tag depth** must be set to ``3`` because the ``item`` node is at the third level of the XML tree (``shoppingList/basket/item``).
 - **Name of the tags to be extracted** must be set to ``item`` because ``itemCount`` and ``totalQuantity`` are also at the third level but not relevant.

@@ -80,12 +80,12 @@ In this example:
 Step 3: Sourcing the archive file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can use the archive file you created as a data source and upload it to the platform.
+You can use the archive file you created as a source and upload it to the platform.
 
 1. In Catalog > Datasets, click on the **New dataset** button.
 2. In the wizard that opens, select **From my computer** under the **Retrieve a file** section.
 3. Either drop the archive file or click **Browse** to locate the archive file in your local filesystem.
-4. From the preview of the first 20 records that opens, configure the data source.
+4. From the preview of the first 20 records that opens, configure the source.
 5. Configure the dataset information or use the pre-filled values.
 
 
@@ -104,7 +104,7 @@ Step 1: Create a dataset
 
 1. In Catalog > Datasets, click on the **New dataset** button.
 2. In the wizard that opens, select the desired method under the **Retrieve a file** section.
-3. From the preview of the first 20 records that appears, configure the data source.
+3. From the preview of the first 20 records that appears, configure the source.
 4. Configure the dataset information or use the pre-filled values.
 
 Step 2: Process the URLs

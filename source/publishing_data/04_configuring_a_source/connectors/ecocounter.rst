@@ -19,13 +19,17 @@ Creation
 
 Before you begin, retrieve your Eco Counter API key.
 
-1. In **Catalog** > **Datasets**, click on the **New dataset** button.
+1. Choose an option:
+   
+   - If you want to create a dataset, click **Catalog** > **Datasets** and click the **New dataset** button.
+   - If you want to add a source to an existing dataset, click **Catalog** > **Datasets** and select the desired dataset. Then, click **Add a source**.
+
 2. In the wizard that opens, select **EcoCounter** under the **Configure a remote service** section.
 3. Under the **Retrieve data from EcoCounter** section, enter your EcoCounter API key in the **API key** box.
 4. From the preview of the first 20 records that appears, do the following:
 
    a. From the **Type** list, select whether you want to retrieve **Eco Counter Data** or **Eco Counter Sites**.
-   b. Configure the data source.
+   b. Configure the source.
 
 5. Configure the dataset information or use the pre-filled values:
    

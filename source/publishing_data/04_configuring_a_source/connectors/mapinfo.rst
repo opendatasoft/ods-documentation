@@ -1,7 +1,7 @@
 MapInfo files
 =============
 
-You can use a MapInfo ZIP archive as a data source.
+You can use a MapInfo ZIP archive as a source.
 
 MapInfo ZIP archive files should contain the following files at the root level:
 
@@ -18,7 +18,7 @@ or
 Creation
 ~~~~~~~~
 
-For more information about adding a file data source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
+For more information about adding a file source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
 
 Configuration
 ~~~~~~~~~~~~~

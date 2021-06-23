@@ -15,7 +15,7 @@ As JSON documents can have a lot of different forms, the platform can extract da
 JSON File
 ---------
 
-You can use a JSON file as a data source. From this file, the platform extracts a valid JSON document (array or object) into one dataset of several records:
+You can use a JSON file as a source. From this file, the platform extracts a valid JSON document (array or object) into one dataset of several records:
 
 * If the document is a JSON array, a record will be created for each object inside the array (the keys will be used as column names).
 * If the document is a JSON object, the "JSON root" parameter should contain a dot-separated path to the array inside your object. If not provided, the platform tries ``items``.
@@ -35,7 +35,7 @@ Supported field types
 Creation
 ~~~~~~~~
 
-For more information about adding a file data source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
+For more information about adding a file source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
 
 Configuration
 ~~~~~~~~~~~~~
@@ -150,7 +150,7 @@ If ``info`` is set as a JSON object, the resulting dataset will be:
 JSON Lines
 ----------
 
-You can use a JSON Lines file as a data source. In JSON Lines files, each line is a one-line JSON document. The whole file is not a valid JSON document but each line is.
+You can use a JSON Lines file as a source. In JSON Lines files, each line is a one-line JSON document. The whole file is not a valid JSON document but each line is.
 
 Two modes are supported:
 
@@ -167,7 +167,7 @@ Supported field types
 Creation
 ~~~~~~~~
 
-For more information about adding a file data source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
+For more information about adding a file source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
 
 Configuration
 ~~~~~~~~~~~~~
@@ -192,7 +192,7 @@ Configuration
 JSON Dict
 ---------
 
-You can use a JSON dictionary as a data source. The platform extracts a valid JSON document (array or object) into one dataset of several records.
+You can use a JSON dictionary as a source. The platform extracts a valid JSON document (array or object) into one dataset of several records.
 
 The platform expects a JSON object where each key contains a record.
 The platform then creates records with:
@@ -213,7 +213,7 @@ Supported field types
 Creation
 ~~~~~~~~
 
-For more information about adding a file data source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
+For more information about adding a file source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
 
 Configuration
 ~~~~~~~~~~~~~

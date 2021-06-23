@@ -1,7 +1,7 @@
 Spreadsheet files
 =================
 
-You can use a spreadsheet file⁠—tabular file generated from software such as Excel, OpenOffice, and LibreOffice⁠—as a data source.
+You can use a spreadsheet file⁠—tabular file generated from software such as Excel, OpenOffice, and LibreOffice⁠—as a source.
 
 The platform can read the following files:
 
@@ -29,7 +29,7 @@ It is easier to load data from simple spreadsheets that follow good practices:
 Creation
 ~~~~~~~~
 
-For more information about adding a file data source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
+For more information about adding a file source, see :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`.
 
 Configuration
 ~~~~~~~~~~~~~

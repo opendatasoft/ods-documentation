@@ -3,9 +3,9 @@ Creating a dataset
 
 Creating a dataset involves the following steps:
 
-.. rubric:: Step 1: Adding a data source
+.. rubric:: Step 1: Adding a source
 
-When you create a dataset, you start with adding a source. The Opendatasoft platform uses a connector to read and retrieve data from this source.
+When you create a dataset, you start with adding a source.
 
 You can add a source to a dataset in the following ways:
 
@@ -14,9 +14,9 @@ You can add a source to a dataset in the following ways:
 - :doc:`Configuring a remote service<configuring_remote_service>`
 
 
-.. rubric:: Step 2. Configuring the connection to the data source
+.. rubric:: Step 2. Configuring the connection to the source
 
-To retrieve data from your source, you must establish the connection between this source and the Opendatasoft platform. For FTP, Google Drive, HTTP, and Microsoft SharePoint, you can configure and save a new connection or reuse a saved connection.
+To retrieve data from your source, you must establish the connection between this source and the Opendatasoft platform. For FTP, Google Drive, HTTP, and SharePoint, you can configure and save a new connection or reuse a saved connection.
 
 .. rubric:: Step 3: Configuring the source to make sure your data look good
 
