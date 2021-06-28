@@ -2,28 +2,28 @@
 # Copyright (C) 2021, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Nicolas Terpolilli <nicolas.terpolilli@opendatasoft.com>, 2018
 # Hugo Bost <hugo.bost@opendatasoft.com>, 2018
 # Trad_FR2 <datawords.translator.fr2@gmail.com>, 2018
 # Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2018
-# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2021
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2021
-#
+# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2021
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-08 13:45+0200\n"
+"POT-Creation-Date: 2021-06-28 16:47+0200\n"
 "PO-Revision-Date: 2018-06-27 09:09+0000\n"
-"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2021\n"
+"Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2021\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
-"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../../source/managing_domain/01_managing_users_and_groups/users.rst:2
@@ -49,6 +49,20 @@ msgstr ""
 msgid "Permissions"
 msgstr "Permissions"
 
+#: ../../source/managing_domain/01_managing_users_and_groups/users.rst:13
+msgid ""
+"You can now give users permissions to extend what they can do. You can do so"
+" either on the users' index page or directly on the single user management "
+"page, both accessible through the **Users & groups > Users** section in your"
+" back office."
+msgstr ""
+"Vous pouvez désormais octroyer aux utilisateurs des permissions qui leur "
+"permettent d'effectuer davantage d'actions. Vous pouvez accorder ces "
+"permissions soit depuis la page d'index des utilisateurs, soit directement "
+"depuis la page de gestion d'un utilisateur en particulier. Ces deux pages "
+"sont accessibles depuis la section **Utilisateurs et groupes > "
+"Utilisateurs** de votre interface d'administration."
+
 #: ../../source/managing_domain/01_managing_users_and_groups/users.rst:15
 msgid ""
 "Permissions each affect an independent part of your portal so that by "
@@ -59,6 +73,36 @@ msgstr ""
 "examinant la liste des permissions d'un utilisateur, vous savez ce qu'il est"
 " autorisé à faire. Chaque permission dispose de sa propre catégorie, "
 "représentée par une icône et une couleur de tag."
+
+#: ../../source/managing_domain/01_managing_users_and_groups/users.rst:20
+msgid "Important"
+msgstr "Important"
+
+#: ../../source/managing_domain/01_managing_users_and_groups/users.rst:23
+msgid ""
+"Authenticated users can manage and generate their own API keys. API keys "
+"inherit all permissions granted to the user for which it has been created. "
+"That's why administrators should be cautious with the permissions they grant"
+" to users."
+msgstr ""
+"Les utilisateurs authentifiés peuvent gérer et générer leurs propres clés "
+"d'API. Celles-ci héritent de toutes les permissions accordées à "
+"l'utilisateur pour lequel elles ont été créées. C'est pour cette raison que "
+"les administrateurs doivent être attentifs aux permissions qu'ils octroient "
+"aux utilisateurs."
+
+#: ../../source/managing_domain/01_managing_users_and_groups/users.rst:27
+msgid ""
+"Administrators cannot revoke users' API keys at the moment. If you observe "
+"unauthorized usage of an API key or if an API key gets exposed, it is "
+"recommended to contact Opendatasoft support to get help identifying and "
+"revoking the leaked API key."
+msgstr ""
+"Pour le moment, les administrateurs ne peuvent pas retirer les clés d'API "
+"des utilisateurs. Si vous constatez des utilisations non autorisées d'une "
+"clé d'API ou si une clé d'API est exposée, nous vous recommandons de "
+"contacter l'assistance Opendatasoft pour identifier et retirer la clé "
+"compromise."
 
 #: ../../source/managing_domain/01_managing_users_and_groups/users.rst:31
 msgid "Dataset permissions"
@@ -140,6 +184,15 @@ msgstr ""
 msgid "Publish own datasets"
 msgstr "Publier ses jeux de données"
 
+#: ../../source/managing_domain/01_managing_users_and_groups/users.rst:51
+msgid ""
+"The user can publish or republish the datasets they have permission to edit."
+" This permission on its own doesn't grant access to the back office."
+msgstr ""
+"L'utilisateur peut publier ou republier les jeux de données qu'il peut "
+"modifier. La permission en elle-même n'accorde pas l'accès à l'interface "
+"d'administration."
+
 #: ../../source/managing_domain/01_managing_users_and_groups/users.rst:54
 msgid ""
 "These are general permissions that apply to a user with regard to the "
@@ -162,6 +215,16 @@ msgstr "Créer des pages"
 #: ../../source/managing_domain/01_managing_users_and_groups/users.rst:66
 msgid "The user may create new pages."
 msgstr "L'utilisateur peut créer des pages."
+
+#: ../../source/managing_domain/01_managing_users_and_groups/users.rst:68
+#: ../../source/managing_domain/01_managing_users_and_groups/users.rst:72
+msgid ""
+"**This permission grants access to the Pages section of the back office.** "
+"It also allows managing assets."
+msgstr ""
+"**Cette permission accorde l'accès à la section Pages de l'interface "
+"d'administration.** Elle offre également la possibilité de gérer des "
+"ressources."
 
 #: ../../source/managing_domain/01_managing_users_and_groups/users.rst:69
 msgid "Edit all pages"
@@ -251,6 +314,15 @@ msgstr ""
 "(Personnalisation, Visualisations de données et Navigation), la permission "
 "Éditer les propriétés du domaine est obligatoire."
 
+#: ../../source/managing_domain/01_managing_users_and_groups/users.rst:96
+msgid ""
+"**This permission grants access to the Look & feel (Theme) section of the "
+"back office.** It also allows managing assets."
+msgstr ""
+"**Cette permission accorde l'accès à la section Apparence (Thème) de "
+"l'interface d'administration.** Elle offre également la possibilité de gérer"
+" des ressources."
+
 #: ../../source/managing_domain/01_managing_users_and_groups/users.rst:97
 msgid "Browse analytics"
 msgstr "Parcourir les statistiques"
@@ -315,6 +387,22 @@ msgstr ""
 msgid "Quotas"
 msgstr "Quotas"
 
+#: ../../source/managing_domain/01_managing_users_and_groups/users.rst:113
+msgid ""
+"To avoid having a user use up all of your license usage quotas, you can "
+":doc:`set up default quotas for users "
+"</managing_domain/04_monitoring_license_and_quotas/quotas>`. However, you "
+"can override the general quotas given to everybody with specific values "
+"tailored to a single profile for each of the 3 quota types."
+msgstr ""
+"Afin d'éviter qu'un utilisateur ne consomme la totalité des quotas "
+"d'utilisation de votre licence, vous pouvez :doc:`configurer des quotas par "
+"défaut pour les utilisateurs "
+"</managing_domain/04_monitoring_license_and_quotas/quotas>`. Toutefois, vous"
+" pouvez déroger aux quotas généraux appliqués à tous les utilisateurs en "
+"définissant des valeurs spécifiques adaptées à un profil en particulier pour"
+" chacun des 3 types de quotas."
+
 #: ../../source/managing_domain/01_managing_users_and_groups/users.rst:117
 msgid ""
 "Since quotas can also be defined at the group level, users are inheriting "
@@ -344,6 +432,17 @@ msgid "If there is a specific value for the user, this value applies."
 msgstr ""
 "Si une valeur spécifique est définie pour l'utilisateur, elle est appliquée."
 
+#: ../../source/managing_domain/01_managing_users_and_groups/users.rst:126
+msgid ""
+"If there is no specific value for the user, but the user is a member of at "
+"least one group with a specific value, then the maximum of all group values "
+"applies."
+msgstr ""
+"Si aucune valeur spécifique n'est définie pour l'utilisateur, mais si "
+"l'utilisateur est membre d'au moins un groupe auquel est appliquée une "
+"valeur spécifique, alors la plus haute de toutes les valeurs de groupe est "
+"appliquée."
+
 #: ../../source/managing_domain/01_managing_users_and_groups/users.rst:127
 msgid ""
 "If there no specific value and no group value, then the default security "
@@ -369,157 +468,3 @@ msgstr ""
 "valeur par défaut et la valeur du groupe. Il calcule de manière dynamique le"
 " quota appliqué en fonction de la valeur spécifique que vous êtes en train "
 "de configurer."
-
-#: ../../source/managing_domain/01_managing_users_and_groups/users.rst:13
-#, fuzzy
-msgid ""
-"You can now give users permissions to extend what they can do. You can do so"
-" either on the users' index page or directly on the single user management "
-"page, both accessible through the **Users & groups > Users** section in your"
-" back office."
-msgstr ""
-"Ce qui change pour vous, c'est que vous pouvez désormais octroyer aux "
-"utilisateurs des permissions qui leur permettent d'effectuer davantage "
-"d'actions. Vous pouvez octroyer les permissions soit depuis la page d'index "
-"des utilisateurs, soit directement depuis la page de gestion d'un "
-"utilisateur en particulier. Ces deux pages sont accessibles depuis la "
-"section **Utilisateurs et groupes / Utilisateurs** de votre interface "
-"d'administration."
-
-#: ../../source/managing_domain/01_managing_users_and_groups/users.rst:20
-msgid "Important"
-msgstr ""
-
-#: ../../source/managing_domain/01_managing_users_and_groups/users.rst:23
-msgid ""
-"Authenticated users can manage and generate their own API keys. API keys "
-"inherit all permissions granted to the user for which it has been created. "
-"That's why administrators should be cautious with the permissions they grant"
-" to users."
-msgstr ""
-
-#: ../../source/managing_domain/01_managing_users_and_groups/users.rst:27
-msgid ""
-"Administrators cannot revoke users' API keys at the moment. If you observe "
-"unauthorized usage of an API key or if an API key gets exposed, it is "
-"recommended to contact Opendatasoft support to get help identifying and "
-"revoking the leaked API key."
-msgstr ""
-
-#: ../../source/managing_domain/01_managing_users_and_groups/users.rst:51
-#, fuzzy
-msgid ""
-"The user can publish or republish the datasets they have permission to edit."
-" This permission on its own doesn't grant access to the back office."
-msgstr ""
-"L'utilisateur peut publier ou republier les jeux de données qu'il peut "
-"modifier. La permission en elle-même n'accorde pas l'accès au backoffice."
-
-#: ../../source/managing_domain/01_managing_users_and_groups/users.rst:68
-#: ../../source/managing_domain/01_managing_users_and_groups/users.rst:72
-#, fuzzy
-msgid ""
-"**This permission grants access to the Pages section of the back office.** "
-"It also allows managing assets."
-msgstr ""
-"**Cette permission accorde l'accès à la section Pages du backoffice.** Elle "
-"offre également la possibilité de gérer des ressources."
-
-#: ../../source/managing_domain/01_managing_users_and_groups/users.rst:96
-#, fuzzy
-msgid ""
-"**This permission grants access to the Look & feel (Theme) section of the "
-"back office.** It also allows managing assets."
-msgstr ""
-"**Cette permission accorde l'accès à la section Pages du backoffice.** Elle "
-"offre également la possibilité de gérer des ressources."
-
-#: ../../source/managing_domain/01_managing_users_and_groups/users.rst:113
-#, fuzzy
-msgid ""
-"To avoid having a user use up all of your license usage quotas, you can "
-":doc:`set up default quotas for users "
-"</managing_domain/04_monitoring_license_and_quotas/quotas>`. However, you "
-"can override the general quotas given to everybody with specific values "
-"tailored to a single profile for each of the 3 quota types."
-msgstr ""
-"Afin d'éviter qu'un utilisateur ne consomme la totalité des quotas "
-"d'utilisation de votre licence, vous pouvez :doc:`configurer des quotas par "
-"défaut pour les utilisateurs "
-"</managing_domain/04_monitoring_license_and_quotas/quotas>`. Vous pouvez "
-"toutefois déroger aux quotas généraux appliqués à tous les utilisateurs en "
-"définissant des valeurs spécifiques adaptées à un profil en particulier pour"
-" chacun des 3 types de quotas."
-
-#: ../../source/managing_domain/01_managing_users_and_groups/users.rst:126
-#, fuzzy
-msgid ""
-"If there is no specific value for the user, but the user is a member of at "
-"least one group with a specific value, then the maximum of all group values "
-"applies."
-msgstr ""
-"Si aucune valeur spécifique n'est définie pour l'utilisateur, mais si "
-"l'utilisateur est membre d'au moins un groupe auquel est appliquée une "
-"valeur spécifique, alors la plus haute de toutes les valeurs de groupe est "
-"appliquée."
-
-#~ msgid ""
-#~ "What is changing is that you can now give them permissions to extendin what "
-#~ "they can do. You can do so either on the users' index page or directly on "
-#~ "the single user management page, both accessible through the **Users & "
-#~ "groups / Users** section in your back office."
-#~ msgstr ""
-#~ "Ce qui change pour vous, c'est que vous pouvez désormais octroyer aux "
-#~ "utilisateurs des permissions qui leur permettent d'effectuer davantage "
-#~ "d'actions. Vous pouvez octroyer les permissions soit depuis la page d'index "
-#~ "des utilisateurs, soit directement depuis la page de gestion d'un "
-#~ "utilisateur en particulier. Ces deux pages sont accessibles depuis la "
-#~ "section **Utilisateurs et groupes / Utilisateurs** de votre interface "
-#~ "d'administration."
-
-#~ msgid ""
-#~ "The user can publish or republish the datasets they have the permission to "
-#~ "edit. This permission on its own doesn't grant access to the back office."
-#~ msgstr ""
-#~ "L'utilisateur peut publier ou republier les jeux de données qu'il peut "
-#~ "modifier. La permission en elle-même n'accorde pas l'accès au backoffice."
-
-#~ msgid ""
-#~ "**This permission grants access to the Pages section of the back office.** "
-#~ "It also allows to manage assets."
-#~ msgstr ""
-#~ "**Cette permission accorde l'accès à la section Pages du backoffice.** Elle "
-#~ "offre également la possibilité de gérer des ressources."
-
-#~ msgid ""
-#~ "**This permission grants access to the Look & feel (Theme) section of the "
-#~ "back office.** It also allows to manage assets."
-#~ msgstr ""
-#~ "**Cette permission accorde l'accès à la section Apparence (Thème) de "
-#~ "l'interface d'administration.** Elle offre également la possibilité de gérer"
-#~ " des ressources."
-
-#~ msgid ""
-#~ "In order to avoid having a user use up all of your license usage quotas, you"
-#~ " can :doc:`set up default quotas for users "
-#~ "</managing_domain/04_monitoring_license_and_quotas/quotas>`. However, you "
-#~ "can override the general quotas given to everybody with specific values "
-#~ "tailored to a single profile for each of the 3 quota types."
-#~ msgstr ""
-#~ "Afin d'éviter qu'un utilisateur ne consomme la totalité des quotas "
-#~ "d'utilisation de votre licence, vous pouvez :doc:`configurer des quotas par "
-#~ "défaut pour les utilisateurs "
-#~ "</managing_domain/04_monitoring_license_and_quotas/quotas>`. Vous pouvez "
-#~ "toutefois déroger aux quotas généraux appliqués à tous les utilisateurs en "
-#~ "définissant des valeurs spécifiques adaptées à un profil en particulier pour"
-#~ " chacun des 3 types de quotas."
-
-#~ msgid ""
-#~ "If there is no specific value for the user, but the user is a member of at "
-#~ "least one group with a specific value, then the maximum of all group values "
-#~ "apply."
-#~ msgstr ""
-#~ "Si aucune valeur spécifique n'est définie pour l'utilisateur, mais si "
-#~ "l'utilisateur est membre d'au moins un groupe auquel est appliquée une "
-#~ "valeur spécifique, alors la plus haute de toutes les valeurs de groupe est "
-#~ "appliquée."

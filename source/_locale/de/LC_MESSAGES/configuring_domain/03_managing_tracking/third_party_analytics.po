@@ -2,28 +2,89 @@
 # Copyright (C) 2021, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # traducteur_DE1 <datawords.translator.de1@gmail.com>, 2021
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-08 13:45+0200\n"
+"POT-Creation-Date: 2021-06-28 16:47+0200\n"
 "PO-Revision-Date: 2018-06-27 09:08+0000\n"
 "Last-Translator: traducteur_DE1 <datawords.translator.de1@gmail.com>, 2021\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:2
 msgid "Third-party analytics"
 msgstr "Drittanbieter-Analyse"
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:4
+msgid ""
+"The monitoring tools provided by Opendatasoft focus on API calls and usages."
+" They are useful to gather precise information on :doc:`how data is consumed"
+" </managing_domain/03_analyzing_domain_usage/index>`. But, they can be "
+"limiting when trying to measure more broadly the audience of a portal."
+msgstr ""
+"Die von Opendatasoft bereitgestellten Monitoring-Tools basieren auf API-"
+"Aufrufen und Nutzungen. Sie sind nützlich, um präzise Informationen darüber "
+"zu erhalten, :doc:`wie Daten verwendet "
+"werden</managing_domain/03_analyzing_domain_usage/index>`. Sie sind jedoch "
+"eingeschränkt, wenn Sie die Besucher Ihres Portals allgemeiner analysieren "
+"möchten"
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:8
+msgid ""
+"Third-party services, specialized in measuring audience, can give additional"
+" analytics such as referral sources, visitors' geographical origin, or time "
+"spent on the portal."
+msgstr ""
+"Drittanbieter-Dienste, die auf die Messung der Besucherzahlen spezialisiert "
+"sind, können zusätzliche Analysen liefern, wie etwa Verweisquellen, die "
+"geografische Herkunft der Besucher oder die auf dem Portal verbrachte Zeit."
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:10
+msgid ""
+"Opendatasoft supports integration with Google Analytics, XiTi, SmartTag by "
+"AT Internet, and Matomo. Once configured and running, they allow audience "
+"tracking on the front office of a domain."
+msgstr ""
+"Opendatasoft unterstützt die Integration mit Google Analytics, XiTi, "
+"SmartTag by AT Internet und Matomo. Sobald diese konfiguriert und in Betrieb"
+" sind, ermöglichen sie das Besucher-Tracking im Frontoffice einer Domain."
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:15
+msgid "Configuring Google Analytics"
+msgstr "Google Analytics konfigurieren"
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:17
+msgid ""
+"Google Analytics is an analytics solution edited by Google. Currently, only "
+"\"Universal Analytics\" properties are supported."
+msgstr ""
+"Google Analytics ist eine von Google entwickelte Analyselösung. Derzeit wird"
+" lediglich die Property \"Universal Analytics\" unterstützt."
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:20
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:41
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:63
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:84
+msgid "Prerequisite"
+msgstr "Voraussetzung"
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:23
+msgid ""
+"Retrieve the Google Analytics ID for your domain. It should start with "
+"``UA-``."
+msgstr ""
+"Rufen Sie die Google Analytics-ID für Ihre Domain ab. Diese sollte mit "
+"``UA-`` beginnen."
 
 #: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:25
 msgid ""
@@ -32,6 +93,37 @@ msgid ""
 msgstr ""
 "Rufen Sie die Seite **Konfiguration** > **Tracking** im Back-Office auf und "
 "öffnen Sie anschließend den Bereich Google Analytics."
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:26
+msgid "Enter your Google Analytics ID in the corresponding field."
+msgstr "Geben Sie Ihre Google Analytics ID in das entsprechende Feld ein."
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:27
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:51
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:73
+msgid "Click on the **Save** button in the top right corner."
+msgstr "Klicken Sie oben rechts auf den Button **Speichern**."
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:29
+msgid "Google Analytics is now activated on the domain."
+msgstr "Google Analytics ist nun auf der Domain aktiviert."
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:31
+msgid ""
+"Using Google Analytics on your portal involves obtaining visitors' consent "
+"to comply with certain privacy laws such as the EU General Data Protection "
+"Regulation (GDPR). For more information, see "
+":doc:`../../../configuring_domain/02_managing_legal_information/legals`."
+msgstr ""
+"Die Nutzung von Google Analytics auf Ihrem Portal erfordert die Einholung "
+"der Zustimmung der Besucher, um bestimmte Datenschutzgesetze wie die EU-"
+"Datenschutzgrundverordnung (DSGVO) einzuhalten.  Weitere Informationen "
+"finden Sie unter "
+":doc:`../../../configuring_domain/02_managing_legal_information/legals`."
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:35
+msgid "Configuring XiTi Analyzer NX"
+msgstr "XiTi Analyzer NX konfigurieren"
 
 #: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:37
 msgid "XiTi is an analytics solution edited by AT Internet."
@@ -44,6 +136,39 @@ msgid ""
 msgstr ""
 "Die Aktivierung von XiTi auf einer Opendatasoft-Domain erfolgt durch das "
 "Opendatasoft-Team."
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:44
+msgid ""
+"Contact support@opendatasoft.com and send an ``xtcore.js`` file and your "
+"XiTi identifiers, both provided by XiTi."
+msgstr ""
+"Schreiben Sie an support@opendatasoft.com und senden Sie eine ``xtcore.js`` "
+"Datei sowie Ihre XiTi-Kennungen. Beides wird von XiTi bereitgestellt."
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:46
+msgid ""
+"After verification and approval of the JavaScript file by Opendatasoft, XiTi"
+" is available on the Opendatasoft domain."
+msgstr ""
+"Nach der Überprüfung und Freigabe der JavaScript-Datei durch Opendatasoft, "
+"ist XiTi in der Opendatasoft-Domain verfügbar."
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:48
+msgid ""
+"In the **Configuration** > **Tracking** section of the back office, go to "
+"the **XiTi** area."
+msgstr ""
+"Rufen Sie die Seite **Konfiguration** > **Tracking** im Back-Office auf und "
+"öffnen Sie anschließend den Bereich **XiTi**."
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:49
+msgid ""
+"Enter in the following values in the related fields: XTSD Code (mandatory), "
+"XTSITE Code (mandatory), Level 2 Site ID, and Root used in page names."
+msgstr ""
+"Geben Sie die folgenden Werte in die entsprechenden Felder ein: XTSD Code "
+"(erforderlich), XTSITE Code (erforderlich), Level 2 Site ID und Root, die in"
+" Seitennamen verwendet werden."
 
 #: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:50
 #: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:72
@@ -61,6 +186,14 @@ msgstr ""
 "Zweifelsfall können Sie sich an die zuständigen Personen in Ihrer "
 "Organisation wenden. Für weitere Informationen, siehe "
 ":doc:`../../../configuring_domain/02_managing_legal_information/legals`."
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:53
+msgid "XiTi is now activated on the domain."
+msgstr "XiTi ist jetzt auf der Domain aktiviert."
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:57
+msgid "Activating SmartTag"
+msgstr "SmartTag aktivieren"
 
 #: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:59
 msgid "SmartTag is an analytics solution edited by AT Internet."
@@ -82,9 +215,33 @@ msgstr ""
 "Schreiben Sie an support@opendatasoft.com und senden Sie eine "
 "``smarttag.js`` Datei, die von SmartTag bereitgestellt wird."
 
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:68
+msgid ""
+"After verification and approval of the JavaScript file by Opendatasoft, "
+"SmartTag is available on the Opendatasoft domain."
+msgstr ""
+"Nach der Überprüfung und Freigabe der JavaScript-Datei durch Opendatasoft, "
+"ist SmartTag auf der Opendatasoft-Domain verfügbar."
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:70
+msgid ""
+"In the **Configuration** > **Tracking** section of the back office, go to "
+"the **SmartTag** area."
+msgstr ""
+"Öffnen Sie im Back-Office unter **Konfiguration** > **Tracking** den Bereich"
+" **SmartTag**."
+
 #: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:71
 msgid "Click the **Enable SmartTag** toggle button."
 msgstr "Klicken Sie auf die Schaltfläche **SmartTag aktivieren**."
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:75
+msgid "SmartTag is now activated on the domain."
+msgstr "SmartTag ist nun auf der Domain aktiviert."
+
+#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:79
+msgid "Configuring Matomo"
+msgstr "Matomo konfifurieren"
 
 #: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:81
 msgid ""
@@ -94,319 +251,27 @@ msgstr ""
 "Matomo ist eine Open-Source-Webanalytik-Plattform. Der Matomo Tag Manager "
 "wird von Opendatasoft nicht unterstützt."
 
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:4
-msgid ""
-"The monitoring tools provided by Opendatasoft focus on API calls and usages."
-" They are useful to gather precise information on :doc:`how data is consumed"
-" </managing_domain/03_analyzing_domain_usage/index>`. But, they can be "
-"limiting when trying to measure more broadly the audience of a portal."
-msgstr ""
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:8
-msgid ""
-"Third-party services, specialized in measuring audience, can give additional"
-" analytics such as referral sources, visitors' geographical origin, or time "
-"spent on the portal."
-msgstr ""
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:10
-msgid ""
-"Opendatasoft supports integration with Google Analytics, XiTi, SmartTag by "
-"AT Internet, and Matomo. Once configured and running, they allow audience "
-"tracking on the front office of a domain."
-msgstr ""
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:15
-msgid "Configuring Google Analytics"
-msgstr ""
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:17
-msgid ""
-"Google Analytics is an analytics solution edited by Google. Currently, only "
-"\"Universal Analytics\" properties are supported."
-msgstr ""
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:20
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:41
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:63
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:84
-msgid "Prerequisite"
-msgstr ""
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:23
-msgid ""
-"Retrieve the Google Analytics ID for your domain. It should start with "
-"``UA-``."
-msgstr ""
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:26
-msgid "Enter your Google Analytics ID in the corresponding field."
-msgstr ""
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:27
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:51
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:73
-#, fuzzy
-msgid "Click on the **Save** button in the top right corner."
-msgstr "Klicken Sie oben rechts auf den Button Speichern."
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:29
-msgid "Google Analytics is now activated on the domain."
-msgstr ""
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:31
-msgid ""
-"Using Google Analytics on your portal involves obtaining visitors' consent "
-"to comply with certain privacy laws such as the EU General Data Protection "
-"Regulation (GDPR). For more information, see "
-":doc:`../../../configuring_domain/02_managing_legal_information/legals`."
-msgstr ""
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:35
-msgid "Configuring XiTi Analyzer NX"
-msgstr ""
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:44
-#, fuzzy
-msgid ""
-"Contact support@opendatasoft.com and send an ``xtcore.js`` file and your "
-"XiTi identifiers, both provided by XiTi."
-msgstr ""
-"Schreiben Sie an support@opendatasoft.com und senden Sie eine ``xtcore.js`` "
-"Datei sowie Ihre XiTi-Kennungen. Beides wird von XiTi bereitgestellt."
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:46
-#, fuzzy
-msgid ""
-"After verification and approval of the JavaScript file by Opendatasoft, XiTi"
-" is available on the Opendatasoft domain."
-msgstr ""
-"Nach der Überprüfung und Freigabe der JavaScript-Datei durch Opendatasoft, "
-"ist XiTi in der Opendatasoft-Domain verfügbar."
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:48
-#, fuzzy
-msgid ""
-"In the **Configuration** > **Tracking** section of the back office, go to "
-"the **XiTi** area."
-msgstr ""
-"Rufen Sie die Seite **Konfiguration** > **Tracking** im Back-Office auf und "
-"öffnen Sie anschließend den Bereich XiTi."
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:49
-#, fuzzy
-msgid ""
-"Enter in the following values in the related fields: XTSD Code (mandatory), "
-"XTSITE Code (mandatory), Level 2 Site ID, and Root used in page names."
-msgstr ""
-"Füllen Sie die folgenden Konfigurationen in den entsprechenden Textfeldern "
-"aus: XTSD Code (erforderlich), XTSITE Code (erforderlich), Level 2 Site ID "
-"und Root, die in Seitennamen verwendet werden."
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:53
-msgid "XiTi is now activated on the domain."
-msgstr ""
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:57
-msgid "Activating SmartTag"
-msgstr ""
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:68
-#, fuzzy
-msgid ""
-"After verification and approval of the JavaScript file by Opendatasoft, "
-"SmartTag is available on the Opendatasoft domain."
-msgstr ""
-"Nach der Überprüfung und Freigabe der JavaScript-Datei durch Opendatasoft, "
-"ist XiTi in der Opendatasoft-Domain verfügbar."
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:70
-#, fuzzy
-msgid ""
-"In the **Configuration** > **Tracking** section of the back office, go to "
-"the **SmartTag** area."
-msgstr ""
-"Rufen Sie die Seite **Konfiguration** > **Tracking** im Back-Office auf und "
-"öffnen Sie anschließend den Bereich XiTi."
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:75
-msgid "SmartTag is now activated on the domain."
-msgstr ""
-
-#: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:79
-msgid "Configuring Matomo"
-msgstr ""
-
 #: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:87
 msgid ""
 "Retrieve the site URL and site ID for your domain from Matomo's "
 "administration portal."
 msgstr ""
+"Rufen Sie die Website-URL und Website-ID für Ihre Domain vom Matomo-"
+"Administrationsportal ab."
 
 #: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:89
-#, fuzzy
 msgid ""
 "In the **Configuration** > **Tracking** section of the back office, go to "
 "the **Matomo** area."
 msgstr ""
-"Rufen Sie die Seite **Konfiguration** > **Tracking** im Back-Office auf und "
-"öffnen Sie anschließend den Bereich XiTi."
+"Öffnen Sie im Back-Office unter **Konfiguration** > **Tracking** den Bereich"
+" **Matomo**."
 
 #: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:90
 msgid "Enter your site URL and site ID in the corresponding fields."
 msgstr ""
+"Geben Sie Ihre Website-URL und Website-ID in die entsprechenden Felder ein."
 
 #: ../../source/configuring_domain/03_managing_tracking/third_party_analytics.rst:93
 msgid "Matomo is now activated on the domain."
-msgstr ""
-
-#~ msgid ""
-#~ "The monitoring tools provided by Opendatasoft focus on API calls and usages."
-#~ " They are useful to gather precise information on how data is consumed (see "
-#~ ":doc:`Analyzing domain usage "
-#~ "</managing_domain/03_analyzing_domain_usage/index>`). But it can be limiting"
-#~ " when trying to measure more broadly the audience of a portal: referral "
-#~ "sources, visitors' geographical origin, time spent on the portal, etc."
-#~ msgstr ""
-#~ "Die von Opendatasoft bereitgestellten Monitoring-Tools basieren auf API-"
-#~ "Aufrufen und Nutzungen. Sie sind nützlich, um präzise Informationen darüber "
-#~ "zu erhalten, wie Ihre Daten verwendet werden (siehe :doc:`Analyse der "
-#~ "Domain-Nutzung </managing_domain/03_analyzing_domain_usage/index>`). Es kann"
-#~ " Sie jedoch einschränken, wenn Sie die Besucher Ihres Portals allgemeiner "
-#~ "analysieren möchten: die Verweisquellen, die geographische Herkunft Ihrer "
-#~ "Besucher oder die Zeit, die sie auf Ihrem Portal verbringen usw."
-
-#~ msgid ""
-#~ "Third-party services, specialized in measuring audience, can give additional"
-#~ " analytics such as those mentioned above. Opendatasoft supports integration "
-#~ "with Google Analytics, XiTi, SmartTag by AT Internet, and Matomo."
-#~ msgstr ""
-#~ "Drittanbieter, die sich auf die Analyse von Website-Besuchern spezialisiert "
-#~ "haben, können zusätzliche Analysen wie die oben genannten liefern. "
-#~ "Opendatasoft unterstützt die Integration von Google Analytics, XiTi, "
-#~ "SmartTag von AT Internet und Matomo."
-
-#~ msgid ""
-#~ "All third-party analytics integrations are activated and configured from "
-#~ "**Configuration** > **Tracking** in the back office."
-#~ msgstr ""
-#~ "Alle Integrationen von Drittanbieter-Analysen werden im Back-Office unter "
-#~ "**Konfiguration** > **Tracking** aktiviert und konfiguriert."
-
-#~ msgid ""
-#~ "Once configured and running, they allow audience tracking on the front "
-#~ "office of a domain."
-#~ msgstr ""
-#~ "Sobald sie konfiguriert und aktiviert sind, ermöglichen sie das Besucher-"
-#~ "Tracking im Front-Office einer Domain."
-
-#~ msgid "Google Analytics"
-#~ msgstr "Google Analytics"
-
-#~ msgid "Google Analytics is an analytics solution edited by Google."
-#~ msgstr "Google Analytics ist eine von Google herausgegebene Analyselösung."
-
-#~ msgid "Currently, only \"Universal Analytics\" properties are supported."
-#~ msgstr ""
-#~ "Derzeit werden nur die Eigenschaften von „Universal Analytics“ unterstützt."
-
-#~ msgid "To activate and configure Google Analytics:"
-#~ msgstr "Zur Aktivierung und Konfiguration von Google Analytics:"
-
-#~ msgid ""
-#~ "Fill in the Google Analytics ID in the related text box (it should start "
-#~ "with ``UA-``)."
-#~ msgstr ""
-#~ "Geben Sie die Google Analytics ID in das entsprechende Textfeld ein (sie "
-#~ "sollte mit ``UA-`` beginnen)."
-
-#~ msgid "Click on the Save button in the top right corner."
-#~ msgstr "Klicken Sie oben rechts auf den Button Speichern."
-
-#~ msgid "XiTi Analyzer NX"
-#~ msgstr "XiTi Analyzer NX"
-
-#~ msgid ""
-#~ "Contact support@opendatasoft.com and send a ``xtcore.js`` file, as well as "
-#~ "your XiTi identifiers, both provided by XiTi."
-#~ msgstr ""
-#~ "Schreiben Sie an support@opendatasoft.com und senden Sie eine ``xtcore.js`` "
-#~ "Datei sowie Ihre XiTi-Kennungen. Beides wird von XiTi bereitgestellt."
-
-#~ msgid ""
-#~ "After verification of the JavaScript file by Opendatasoft, if it is "
-#~ "approved, XiTi is available on the Opendatasoft domain."
-#~ msgstr ""
-#~ "Nach der Überprüfung und Freigabe der JavaScript-Datei durch Opendatasoft, "
-#~ "ist XiTi in der Opendatasoft-Domain verfügbar."
-
-#~ msgid ""
-#~ "In the **Configuration** > **Tracking** section of the back office, go to "
-#~ "the XiTi area."
-#~ msgstr ""
-#~ "Rufen Sie die Seite **Konfiguration** > **Tracking** im Back-Office auf und "
-#~ "öffnen Sie anschließend den Bereich XiTi."
-
-#~ msgid ""
-#~ "Fill in the following configurations in their related text boxes: XTSD Code "
-#~ "(mandatory), XTSITE Code (mandatory), Level 2 Site ID, and Root used in page"
-#~ " names."
-#~ msgstr ""
-#~ "Füllen Sie die folgenden Konfigurationen in den entsprechenden Textfeldern "
-#~ "aus: XTSD Code (erforderlich), XTSITE Code (erforderlich), Level 2 Site ID "
-#~ "und Root, die in Seitennamen verwendet werden."
-
-#~ msgid ""
-#~ "Click on the Save button in the top right corner. XiTi is now activated on "
-#~ "the domain."
-#~ msgstr ""
-#~ "Klicken Sie oben rechts auf den Button \"Speichern\". XiTi ist nun in der "
-#~ "Domain aktiviert."
-
-#~ msgid "SmartTag"
-#~ msgstr "SmartTag"
-
-#~ msgid ""
-#~ "After verification of the JavaScript file by Opendatasoft, if it is "
-#~ "approved, SmartTag is available on the Opendatasoft domain."
-#~ msgstr ""
-#~ "Nach der Überprüfung und Freigabe der JavaScript-Datei durch Opendatasoft, "
-#~ "ist SmartTag in der Opendatasoft-Domain verfügbar."
-
-#~ msgid ""
-#~ "In the **Configuration** > **Tracking** section of the back office, go to "
-#~ "the SmartTag area."
-#~ msgstr ""
-#~ "Öffnen Sie im Back-Office unter **Konfiguration** > **Tracking** den Bereich"
-#~ " SmartTag."
-
-#~ msgid ""
-#~ "Click on the Save button in the top right corner. SmartTag is now activated "
-#~ "on the domain."
-#~ msgstr ""
-#~ "Klicken Sie oben rechts auf den Button \"Speichern\". SmartTag ist nun in "
-#~ "der Domain aktiviert."
-
-#~ msgid "Matomo"
-#~ msgstr "Matomo"
-
-#~ msgid ""
-#~ "The activation of Matomo on an Opendatasoft domain involves the Opendatasoft"
-#~ " team."
-#~ msgstr ""
-#~ "Die Aktivierung von Matomo auf einer Opendatasoft-Domain erfolgt durch das "
-#~ "Opendatasoft-Team."
-
-#~ msgid ""
-#~ "Contact support@opendatasoft.com and send your website ID and tracker URL, "
-#~ "both provided by Matomo."
-#~ msgstr ""
-#~ "Schreiben Sie an support@opendatasoft.com und senden Sie Ihre Website-ID und"
-#~ " die Tracker-URL. Beide werden von Matomo bereitgestellt."
-
-#~ msgid ""
-#~ "After verification and approval by Opendatasoft, Matomo is available and "
-#~ "activated on the Opendatasoft domain."
-#~ msgstr ""
-#~ "Nach der Überprüfung und Freigabe durch Opendatasoft ist Matomo in der "
-#~ "Opendatasoft-Domain verfügbar und aktiviert."
+msgstr "Matomo ist nun auf der Domain aktiviert."
