@@ -79,13 +79,9 @@ Portals
    harvesters/arcgis
    harvesters/arcgis_opendata
    harvesters/ckan
-   harvesters/junar
    harvesters/socrata
    harvesters/datajson
    harvesters/quandl
-   harvesters/enigma
-   harvesters/fred
-   harvesters/dbnomics
 
 Services
 ~~~~~~~~

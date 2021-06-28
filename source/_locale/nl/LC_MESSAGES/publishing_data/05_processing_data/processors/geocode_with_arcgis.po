@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Translator_NL1 <datawords.translator.nl1@gmail.com>, 2019
+# Translator_NL1 <datawords.translator.nl1@gmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-08 13:45+0200\n"
+"POT-Creation-Date: 2021-06-28 16:47+0200\n"
 "PO-Revision-Date: 2018-06-27 09:12+0000\n"
-"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2019\n"
+"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2021\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,14 +34,6 @@ msgstr ""
 "volledig uit tekst bestaan door de ArcGIS geocoding API te gebruiken. "
 
 #: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:6
-msgid "This processor requires an ArcGIS API key."
-msgstr "Deze processor vereist een ArcGIS API-sleutel."
-
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:8
-msgid "Note"
-msgstr "Opmerking"
-
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:11
 msgid ""
 "This processor can be connected with a custom ArcGIS geocoder. Please "
 "contact Opendatasoft support team if you want this configuration to be "
@@ -51,45 +43,64 @@ msgstr ""
 "geocoder. Gelieve contact op te nemen met het support team van Opendatasoft "
 "wanneer u wil dat deze configuratie geactiveerd wordt in uw domein."
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:14
-msgid "Setting the API key"
-msgstr "De API-sleutel instellen"
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:8
+msgid "Prerequisites"
+msgstr "Voorvereisten"
+
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:11
+msgid "Make sure you have an ArcGIS paying account."
+msgstr "Zorg ervoor dat u een ArcGIS-betaalrekening hebt."
+
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:12
+msgid "Register an application in your ArcGIS developer dashboard."
+msgstr "Registreer een app in uw ArcGIS ontwikkelaarsdashboard."
+
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:13
+msgid ""
+"Retrieve the authorization credentials (``client ID`` and ``client secret``)"
+" for the registered application from your ArcGIS account."
+msgstr ""
+"Haal de autorisatiegegevens (``client ID`` en ``client secret``) op voor de "
+"geregistreerde app uit uw ArcGIS-account."
 
 #: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:16
-msgid "To setup an ArcGIS API key in order to use this processor:"
-msgstr ""
-"Om een ArcGIS API-sleutel in te stellen om deze processor te kunnen "
-"gebruiken:"
+msgid "Configuring the Client ID and Client Secret"
+msgstr "Het Client ID en Client Secret configureren"
 
 #: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:18
 msgid ""
-"Leave the Catalog tab and click on the Configuration tab in the backoffice "
-"menu."
+"Before using the processor, configure the ArcGIS geocoding API with the "
+"Client ID and Client Secret you obtained in your ArcGIS developer dashboard."
 msgstr ""
-"Verlaat het tabblad Catalogus en klik op het tabblad Configuratie in het "
-"back office-menu."
-
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:19
-msgid "Click on the **Data processing** tab of the Configuration menu."
-msgstr "Klik op het tabblad **Dataverwerking** van het configuratiemenu."
+"Alvorens de processor te gebruiken, configureer de ArcGIS geocoding API met "
+"het Client ID en Client Secret dat u gekregen hebt in uw ArcGIS "
+"ontwikkelaarsdashboard."
 
 #: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:20
-msgid ""
-"In the **ArcGIS geocoding API** section, fill in the following parameters: "
-"Client ID, Client secret."
-msgstr ""
-"Vul in het deel **ArcGIS geocoding API** de volgende parameters in: Client "
-"ID, Client secret."
+msgid "In the back office, go to **Configuration** > **Data processing**."
+msgstr "Ga in de back office naar **Configuratie** > **Gegevensverwerking**."
 
 #: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:21
+msgid ""
+"In the **ArcGIS geocoding API** section, enter your Client ID and Client "
+"Secret in the corresponding fields."
+msgstr ""
+"Voer in de rubriek **ArcGIS geocoding API** uw Client ID en Client Secret in"
+" in de overeenkomstige velden."
+
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:22
 msgid "Click on the **Save** button at the top of the page."
 msgstr "Klik op de knop **Opslaan** bovenaan de pagina."
 
 #: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:24
+msgid "You can now use the Geocode with ArcGIS processor."
+msgstr "U kan nu de Geocode gebruiken met ArcGIS-processor."
+
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:27
 msgid "Setting the processor"
 msgstr "De processor instellen"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:26
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:29
 msgid ""
 "After setting the ArcGIS API key in the platform, the Geocode with ArcGIS "
 "processor is ready to be used."
@@ -97,7 +108,7 @@ msgstr ""
 "Nadat u de ArcGIS API-sleutel in het platform heeft ingesteld, is de Geocode"
 " with ArcGIS processor klaar voor gebruik."
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:28
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:31
 msgid ""
 "To set the parameters of the Geocode with ArcGIS processor, follow the "
 "indications from the table below."
@@ -105,82 +116,90 @@ msgstr ""
 "Om de parameters van de Geocode with ArcGIS processor in te stellen, dient u"
 " de aanwijzingen in onderstaande tabel te volgen."
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:33
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:36
 msgid "Label"
 msgstr "Label"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:34
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:37
 msgid "Description"
 msgstr "Omschrijving"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:35
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:38
 msgid "Mandatory"
 msgstr "Verplicht"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:36
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:39
 msgid "Address"
 msgstr "Adres"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:37
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:40
 msgid "Field containing the address to geocode"
 msgstr "Veld waarin het adres van de geografische code staat"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:38
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:53
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:41
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:60
 msgid "yes"
 msgstr "ja"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:39
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:42
 msgid "Postal code"
 msgstr "Postcode"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:40
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:43
 msgid "Field containing the postal code"
 msgstr "Veld waarin de postcode staat"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:41
 #: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:44
 #: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:47
 #: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:50
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:53
 msgid "no"
 msgstr "nee"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:42
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:45
 msgid "City"
 msgstr "Stad"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:43
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:46
 msgid "Field containing the city"
 msgstr "Veld waarin de naam van de stad staat"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:45
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:48
 msgid "State"
 msgstr "Staat"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:46
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:49
 msgid "Field containing the state"
 msgstr "Veld waarin de naam van de staat staat"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:48
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:51
 msgid "Country"
 msgstr "Country"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:49
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:52
 msgid "Field containing the country"
 msgstr "Veld waarin de naam van het land staat"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:51
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:54
 msgid "Output field"
 msgstr "Outputveld"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:52
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:55
+msgid "Field that will contain the produced WSG84 coordinates."
+msgstr "Veld waarin de geproduceerde WSG84-coördinaten zullen staan."
+
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:57
 msgid ""
-"Field that will contain the produced WSG84 coordinates. It can be an "
-"existing field chosen from the list, or a new field created for that purpose"
-" (in that case, choose **Input text** from the list and write the name of "
-"the new field in the text area below)."
+"You can select an existing field from the list or create a new field create "
+"for that purpose."
 msgstr ""
-"Veld dat de gegenereerde WSG84-coördinaten bevat. Dit kan een bestaand veld "
-"zijn dat gekozen wordt uit de lijst of een nieuw veld dat hiervoor is "
-"aangemaakt (in dat geval, kies **Invoer tekst** uit de lijst en noteer de "
-"naam van het nieuwe veld in de tekstruimte eronder)."
+"U kan een bestaand veld uit de lijst selecteren of hiervoor een nieuw veld "
+"aanmaken."
+
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:59
+msgid ""
+"To create a new field, select **Input text** from the list and enter the "
+"name of the new field."
+msgstr ""
+"Om een nieuw veld aan te maken, selecteer **Input tekst** uit de lijst en "
+"voer de naam van het nieuwe veld in."

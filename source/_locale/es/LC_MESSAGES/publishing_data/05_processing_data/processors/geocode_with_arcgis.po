@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2019
+# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-08 13:45+0200\n"
+"POT-Creation-Date: 2021-06-28 16:47+0200\n"
 "PO-Revision-Date: 2018-06-27 09:12+0000\n"
-"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2019\n"
+"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,14 +34,6 @@ msgstr ""
 "mediante la API de geocodificación de ArcGIS."
 
 #: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:6
-msgid "This processor requires an ArcGIS API key."
-msgstr "Este procesador requiere una clave de API de ArcGIS."
-
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:8
-msgid "Note"
-msgstr "Nota"
-
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:11
 msgid ""
 "This processor can be connected with a custom ArcGIS geocoder. Please "
 "contact Opendatasoft support team if you want this configuration to be "
@@ -51,45 +43,65 @@ msgstr ""
 "geocodificador de ArcGIS personalizado. Póngase en contacto con el equipo de"
 " soporte de Opendatasoft si desea activar esta configuración en su dominio."
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:14
-msgid "Setting the API key"
-msgstr "Definir la clave de API"
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:8
+msgid "Prerequisites"
+msgstr "Requisitos previos"
+
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:11
+msgid "Make sure you have an ArcGIS paying account."
+msgstr "Asegúrese de tener una cuenta de pago ArcGIS."
+
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:12
+msgid "Register an application in your ArcGIS developer dashboard."
+msgstr "Registre una aplicación en su panel de desarrollador ArcGIS."
+
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:13
+msgid ""
+"Retrieve the authorization credentials (``client ID`` and ``client secret``)"
+" for the registered application from your ArcGIS account."
+msgstr ""
+"Recupere las credenciales de autorización (``ID de cliente`` y ``secreto de "
+"cliente``) para la aplicación registrada desde su cuenta ArcGIS."
 
 #: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:16
-msgid "To setup an ArcGIS API key in order to use this processor:"
-msgstr ""
-"Para configurar una clave de API de ArcGIS para utilizar este procesador:"
+msgid "Configuring the Client ID and Client Secret"
+msgstr "Configuración del ID de cliente y el secreto de cliente"
 
 #: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:18
 msgid ""
-"Leave the Catalog tab and click on the Configuration tab in the backoffice "
-"menu."
+"Before using the processor, configure the ArcGIS geocoding API with the "
+"Client ID and Client Secret you obtained in your ArcGIS developer dashboard."
 msgstr ""
-"Salga de la ficha Catálogo y haga clic en la ficha Configuración del menú "
-"del back office."
-
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:19
-msgid "Click on the **Data processing** tab of the Configuration menu."
-msgstr ""
-"Haga clic en la ficha **Procesamiento de datos** del menú Configuración."
+"Antes de usar el procesador, configure la API de geocodificación de ArcGIS "
+"con el ID de cliente y el secreto de cliente que ha obtenido del panel de "
+"desarrollador ArcGIS."
 
 #: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:20
-msgid ""
-"In the **ArcGIS geocoding API** section, fill in the following parameters: "
-"Client ID, Client secret."
+msgid "In the back office, go to **Configuration** > **Data processing**."
 msgstr ""
-"En la sección **API de geocodificación de ArcGIS**, especifique los "
-"parámetros siguientes: ID de cliente y Secreto de cliente."
+"En el back office, vaya a **Configuración** > **Procesamiento de datos**."
 
 #: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:21
+msgid ""
+"In the **ArcGIS geocoding API** section, enter your Client ID and Client "
+"Secret in the corresponding fields."
+msgstr ""
+"En la sección **API de geocodificación de ArcGIS**, especifique el ID de "
+"cliente y el secreto de cliente en los campos correspondientes."
+
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:22
 msgid "Click on the **Save** button at the top of the page."
 msgstr "Haga clic en el botón **Guardar** en la parte superior de la página."
 
 #: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:24
+msgid "You can now use the Geocode with ArcGIS processor."
+msgstr "Ahora puede utilizar el procesador Geocodificar con ArcGIS."
+
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:27
 msgid "Setting the processor"
 msgstr "Establecer el procesador"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:26
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:29
 msgid ""
 "After setting the ArcGIS API key in the platform, the Geocode with ArcGIS "
 "processor is ready to be used."
@@ -97,7 +109,7 @@ msgstr ""
 "Tras definir la clave de API de ArcGIS en la plataforma, el procesador "
 "Geocodificar con ArcGIS está listo para su uso."
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:28
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:31
 msgid ""
 "To set the parameters of the Geocode with ArcGIS processor, follow the "
 "indications from the table below."
@@ -105,82 +117,90 @@ msgstr ""
 "Para establecer los parámetros del procesador Geocodificar con ArcGIS, siga "
 "las indicaciones de esta tabla."
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:33
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:36
 msgid "Label"
 msgstr "Etiqueta"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:34
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:37
 msgid "Description"
 msgstr "Descripción"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:35
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:38
 msgid "Mandatory"
 msgstr "Obligatorio"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:36
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:39
 msgid "Address"
 msgstr "Dirección"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:37
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:40
 msgid "Field containing the address to geocode"
 msgstr "Campo que contiene la dirección para geocodificar."
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:38
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:53
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:41
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:60
 msgid "yes"
 msgstr "Sí"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:39
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:42
 msgid "Postal code"
 msgstr "Código postal"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:40
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:43
 msgid "Field containing the postal code"
 msgstr "Campo que contiene el código postal."
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:41
 #: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:44
 #: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:47
 #: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:50
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:53
 msgid "no"
 msgstr "No"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:42
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:45
 msgid "City"
 msgstr "Ciudad"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:43
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:46
 msgid "Field containing the city"
 msgstr "Campo que contiene la ciudad."
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:45
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:48
 msgid "State"
 msgstr "Estado"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:46
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:49
 msgid "Field containing the state"
 msgstr "Campo que contiene el estado."
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:48
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:51
 msgid "Country"
 msgstr "País"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:49
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:52
 msgid "Field containing the country"
 msgstr "Campo que contiene el país."
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:51
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:54
 msgid "Output field"
 msgstr "Campo de salida"
 
-#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:52
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:55
+msgid "Field that will contain the produced WSG84 coordinates."
+msgstr "Campo que contendrá las coordenadas WGS84 producidas."
+
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:57
 msgid ""
-"Field that will contain the produced WSG84 coordinates. It can be an "
-"existing field chosen from the list, or a new field created for that purpose"
-" (in that case, choose **Input text** from the list and write the name of "
-"the new field in the text area below)."
+"You can select an existing field from the list or create a new field create "
+"for that purpose."
 msgstr ""
-"Campo que contendrá las coordenadas WGS84 producidas. Puede ser un campo "
-"existente seleccionado de la lista, o un campo nuevo creado con ese fin (en "
-"ese caso, elija **Texto de entrada** en la lista y escriba el nombre del "
-"campo nuevo en el área de texto que figura a continuación)."
+"Puede seleccionar un campo existente de la lista o crear uno nuevo con ese "
+"fin."
+
+#: ../../source/publishing_data/05_processing_data/processors/geocode_with_arcgis.rst:59
+msgid ""
+"To create a new field, select **Input text** from the list and enter the "
+"name of the new field."
+msgstr ""
+"Para crear un campo nuevo, seleccione **Texto de entrada** en la lista y "
+"escriba el nombre del campo nuevo."
