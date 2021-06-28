@@ -4,7 +4,7 @@ Managing identities
 .. admonition:: Prerequisite
    :class: important
 
-   The Identities tab is only available if SAML or OpenID Connect (OIDC) is activated on the portal.
+   The Identities tab is only available if SAML or OpenID Connect (OIDC) is enabled on the portal.
 
 From the Identities tab, authenticated users can manage their SAML identities or link their Opendatasoft account to a SAML or an OIDC identity.
 
@@ -34,5 +34,5 @@ For linked users only, a "Revoke" button is also displayed at the top right corn
 
 To revoke a SAML or an OIDC identity:
 
-1. Click on the **Revoke** button. A confirmation pop-up window appears.
-2. Click on the **OK** button to confirm.
+1. Locate the identity you want to revoke, and click **Revoke**. A confirmation pop-up window appears.
+2. Click **OK** to confirm.
