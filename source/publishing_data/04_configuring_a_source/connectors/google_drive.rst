@@ -1,7 +1,7 @@
 Google Drive connector
 ======================
 
-The Google Drive connector retrieves files from Google Drive.
+The Google Drive connector retrieves files from Google Drive with a maximum limit of 10MB per file.
 
 For more information about the supported file formats, see :ref:`supportedformats`.
 
