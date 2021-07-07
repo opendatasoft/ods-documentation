@@ -12,14 +12,14 @@ Register your SAML identity provider on your domain
 
 1. Navigate to the signup page in the domain configuration interface.
 
-2. Check "Allow access for SAML users".
+2. Check "Allow access for SAML users". A list of configuration settings appears.
 
 .. image:: images/configuration_SAML.png
     :alt: SAML identity provider configuration interface
 
 3. Paste your identity provider metadata document in the "Identity provider metadata document" field.
 
-4. If your identity provider is Microsoft Azure Active Directory, check the related checkbox.
+4. If you want to use the ``FriendlyName`` attribute for unidentified attributes, toggle on **Use friendly name for attribute mapping**.
 
 5. If you would like to disable local user creation, making sure only existing users can connect to the platform through SAML, check the "Disable local user provisioning" checkbox.
 
@@ -47,7 +47,7 @@ Register your SAML identity provider on your domain
 
    For instance, if your identity provider sends a list of "Roles" for the users and you want to make sure that only users that have a role can get access, input "Roles" in the first box under "Conditional access". If you only want users with the role "DataAccess" to be able to connect to the domain, input "DataAccess" in the second box.
 
-9. Input the URL on which the user can edit their user profile on the identity provider. When set, a link to this URL will be shown to the user on their user account page. If left blank, no URL will be shown to the user on their account page.
+9.  Input the URL on which the user can edit their user profile on the identity provider. When set, a link to this URL will be shown to the user on their user account page. If left blank, no URL will be shown to the user on their account page.
 
 10. Input a custom EntityID for the Service Provider. If left blank, the URL of the Service Provider metadata document will be used as the EntityID. If your identity provider doesn't support EntityIDs in URL format, you can set any EntityID here.
 
