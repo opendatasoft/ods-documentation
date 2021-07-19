@@ -15,25 +15,19 @@ Parameters
 
 .. list-table::
    :header-rows: 1
+   :widths: 1 2
 
    * * Name
      * Description
-     * Example
-   * * Csw url (cswurl)
-     * The base URL of the CSW geoportal
-     * https://infogeo.grandpoitiers.fr/geoportal/csw
-   * * Theme thesaurus (theme_thesaurus)
+   * * CSW URL
+     * The base URL of the CSW geoportal, for example: https://infogeo.grandpoitiers.fr/geoportal/csw
+   * * User
+     * The username if the CSW service requires authentication
+   * * Password
+     * The password if the CSW service requires authentication
+   * * Theme thesaurus
      * The name of the thesaurus used to fill the themes metadata
-     *
-   * * Constraint language to CQL_TEXT (constraint_language)
-     * Set this option to True if the portal requires to constraint the language to CQL_TEXT
-     * True/False
+   * * Constraint language
+     * Select the check box if the portal requires to constraint the language to CQL_TEXT
    * * Invert coordinates
      * Select the check box to enforce coordinate inversion in generated datasets
-     * 
-   * * User (username)
-     * The username if the CSW service needs authentication
-     *
-   * * Password (password)
-     * The password if the CSW service needs authentication
-     *
