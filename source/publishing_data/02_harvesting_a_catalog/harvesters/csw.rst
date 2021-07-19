@@ -28,6 +28,9 @@ Parameters
    * * Constraint language to CQL_TEXT (constraint_language)
      * Set this option to True if the portal requires to constraint the language to CQL_TEXT
      * True/False
+   * * Invert coordinates
+     * Select the check box to enforce coordinate inversion in generated datasets
+     * 
    * * User (username)
      * The username if the CSW service needs authentication
      *
