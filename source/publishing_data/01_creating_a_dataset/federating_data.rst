@@ -1,29 +1,23 @@
 Federating data
 ===============
 
-Federation is a core feature of the data network we are building. Using it is a good way to enrich your own data, and it also gives others a new way to discover and reuse them.
+Federation is a core feature of the data network we are building.
+It is a good way to enrich your own data.
+It also provides others with a new way to discover and reuse your data.
 
-.. ifconfig:: language == 'en'
-
-    .. image:: images/federation__introduction--en.png
-        :alt: Federation simple schema
-
-.. ifconfig:: language == 'fr'
-
-    .. image:: images/federation__introduction--fr.png
-        :alt: Schema fédération simple
-
-Federation allows to redistribute an open dataset from your domain (Opendatasoft instance) or another domain in full or in part. It is a way to collect external sources of data on its own domain.
-
+Federation allows redistributing an open dataset from your domain (Opendatasoft instance) or another domain in full or in part.
+It is a way to collect external sources of data on your own domain.
 
 Retrieving a dataset published with Opendatasoft
 ------------------------------------------------
 
-1. In Catalog > Datasets, click on the **New dataset** button.
-2. In the wizard that opens, select **Opendatasoft catalog** under the **Retrieve a dataset published with Opendatasoft** section, select the desired option:
+To federate a dataset, you need to retrieve it from your domain or another domain.
 
-- **Opendatasoft catalog** to get a list of all public datasets publish on all Opendatasoft domain
-- **My catalog** to get a list of all datasets published on the current domain and its subdomains
+1. In Catalog > Datasets, click on the **New dataset** button.
+2. In the wizard that opens, select the desired option under the **Retrieve a dataset published with Opendatasoft** section:
+
+   - Select **Opendatasoft catalog** to get a list of all public datasets published on all Opendatasoft domains.
+   - Select **My catalog** to get a list list of all datasets published on the current domain and its subdomains.
 
 3. Select the desired dataset from the list.
 4. From the preview of the first 20 records that opens, you can filter data from the selected source dataset.
@@ -35,20 +29,23 @@ Retrieving a dataset published with Opendatasoft
 
 Once created, the dataset appears in the back office, except that there is no **Processing** tab.
 
-When federating data, the data is not duplicated, this means you can't transform it.
-
 .. image:: images/federation_federated-source.png
+
+.. admonition:: note
+   :class: note
+
+   When federating data, the data is not duplicated. This means you cannot transform it.
 
 Overriding metadata and visualizations
 --------------------------------------
 
 When federating data, you can only override the metadata and visualization configuration.
 
-.. image:: images/federation_federated-source.png
+1. If you want to override the title, click **Override** next to the title and enter the desired title.
+2. If you want to override other metadata, go to the **Information** tab of the edition interface, click **Override** and enter the desired value.
+3. If you want to override visualizations, go to the **Visualizations** tab of the edition interface, click **Override** and edit the desired visualization configuration.
 
-To do so, click **Override** and enter the desired value.
-
-After editing, you can also restore the original value from the source dataset by clicking **Return to original value**.
+After editing, you can restore the original value from the source dataset by clicking **Return to original value**.
 
 Limitations
 -----------
@@ -69,4 +66,4 @@ The federation does not duplicate the data. Only the metadata and visualizations
         :alt: Schema fédération
 
 .. important::
-   Currently, the metadata of federated datasets are updated every day. Other modifications on the original dataset (for example, visualizations configurations, dataset schema) will not trigger an automatic update: unpublishing and republishing the federated dataset is necessary for the latest modifications to be visible.
+   Currently, the metadata of federated datasets are updated every day. Other modifications on the original dataset, such as visualization configurations or the dataset schema, will not trigger an automatic update. You need to unpublish and republish the federated dataset for the latest modifications to be visible.
