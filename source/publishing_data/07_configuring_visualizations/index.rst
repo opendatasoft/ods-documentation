@@ -1,7 +1,7 @@
 Configuring visualizations
 ==========================
 
-In the OpenDataSoft platform, all visualizations configurations are done in the Visualizations tab. It contains one sub-tab for each kind of visualization.
+In the Opendatasoft platform, all visualizations configurations are done in the Visualizations tab. It contains one sub-tab for each kind of visualization.
 
 .. admonition:: Important
    :class: important
