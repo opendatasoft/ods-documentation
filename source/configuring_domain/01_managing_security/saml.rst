@@ -29,21 +29,19 @@ Step 2: Configure SAML settings
 
 1. Paste your identity provider metadata document into the **Identity provider (idp) metadata document** field.
 
-2. If you want to use the ``FriendlyName`` attribute for unidentified attributes, toggle on **Use friendly name for attribute mapping**.
+2. If you want to disable local user creation, making sure only existing users can connect to the platform through SAML, toggle on **Disable local user provisioning**.
 
-3. If you want to disable local user creation, making sure only existing users can connect to the platform through SAML, toggle on **Disable local user provisioning**.
-
-4. Enter the set of attributes sent by the identity provider that uniquely define a user in the corresponding field:
+3. Enter the set of attributes sent by the identity provider that uniquely define a user in the corresponding field:
 
    - For example, if your users are defined by the ``FirstName`` and ``LastName`` attributes transmitted by your identity provider, enter ``FirstName`` in the field and click **+**. Then, enter ``LastName`` in the field that appears and click **+**.
    - If the users are defined by their ``NameID`` and the ``NameID`` format used by your identity provider is not transient, leave the field empty.
 
-5. Enter the attribute mappings for the username, last name, first name, and email address in the corresponding fields. In this step, you need to declare the field names as they are sent by the identity provider:
+4. Enter the attribute mappings for the username, last name, first name, and email address in the corresponding fields. In this step, you need to declare the field names as they are sent by the identity provider:
 
    - For example, if your identity provider transmits the connected user's first name in an attribute called ``GivenName``, enter ``GivenName`` in the **First name** field.
    - If your identity provider doesn't transmit all of these elements, leave the corresponding fields blank. The platform will automatically generate them based on other available attributes.
 
-6. Enter an access condition:
+5. Enter an access condition:
 
    - In the **Attribute to match for the condition** field, enter the name of the attribute to check for.
    - In the **Value that must be present** field, enter the value for this attribute. If you want to check for the presence of an attribute without value restriction, leave this field blank.
@@ -56,17 +54,17 @@ Step 2: Configure SAML settings
       
       If you leave both fields blank, no condition is set. Any successful login on the identity provider side will trigger a login on your Opendatasoft domain.
 
-7. Enter the URL on which the user can edit their user profile on the identity provider in the **URL for SAML user account configuration** field.
+6. Enter the URL on which the user can edit their user profile on the identity provider in the **URL for SAML user account configuration** field.
 
   - When set, a link to this URL will be shown to the user on their user account page.
   - If left blank, no URL will be shown to the user on their account page.
 
-8. Enter a custom EntityID for the Service Provider.
+7. Enter a custom EntityID for the Service Provider.
     
    - If left blank, the URL of the Service Provider metadata document will be used as the EntityID.
    - If your identity provider doesn't support EntityIDs in URL format, you can set any EntityID here.
 
-9. Customize the SAML login link text. If left blank, a localized default message will be displayed.
+8. Customize the SAML login link text. If left blank, a localized default message will be displayed.
 
 
 Registering your domain on your identity provider
