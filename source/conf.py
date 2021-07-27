@@ -316,3 +316,7 @@ html_context = {
 # smartquotes
 smartquotes = False # will be used if we switch to Sphinx 1.6
 html_use_smartypants = False # used for Sphinx 1.5
+
+
+# compact lists
+html_compact_lists = False # Set to False to index list items using Docsearch 
