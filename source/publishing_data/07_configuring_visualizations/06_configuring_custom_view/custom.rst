@@ -34,7 +34,7 @@ To set the parameters of the Custom view, follow the indications from the table 
 .. admonition:: Important
    :class: important
 
-   OpenDataSoft widgets, such as the ones used for the main visualizations, can be added to a Custom view. Depending on what is the purpose of the Custom view, these widgets can either be isolated from the rest of the page or in interaction with the rest of the page, for example, with the dataset filters.
+   Opendatasoft widgets, such as the ones used for the main visualizations, can be added to a Custom view. Depending on what is the purpose of the Custom view, these widgets can either be isolated from the rest of the page or in interaction with the rest of the page, for example, with the dataset filters.
 
    - For widgets to be isolated, define a custom ``ods-dataset-context`` for the Custom view.
    - For widgets to interact with the rest of the page, use ``ctx`` as the ``ods-dataset-context``.
