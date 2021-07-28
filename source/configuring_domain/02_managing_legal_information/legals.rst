@@ -69,6 +69,7 @@ If the Terms and Conditions, Privacy Policy, and Cookies Policy are already host
 
 1. From the **Portal Terms and Conditions, Privacy Policy and Cookies Policy section**, click **Use links to pages hosted on a different website**.
 2. If the domain is available in more than one language, choose whether to display the conditions of use in only one language or to make them available in several languages:
+
      * Toggle on **Use the same texts for all languages** to use the same documents for all available languages. If the Terms and Conditions, Privacy Policy, and Cookies Policy are only written and available in the language of the portal country, for example, English, no matter the language selected by the user on the portal, the conditions of use will be displayed in English.
      * Toggle off **Use the same texts for all languages** to specify different documents depending on the language. In that case, all available languages are displayed in the form of clickable grey boxes containing the code of each available language. The language codes are preceded by |icon-attention| if all documents have not been specified.
 
@@ -91,6 +92,7 @@ You can directly write or paste the Terms and Conditions, Privacy Policy, and Co
 1. From the **Portal Terms and Conditions, Privacy Policy and Cookies Policy section**, click **Write custom Terms and Conditions, Privacy Policy and Cookies Policy**.
 
 2. If the domain is available in more than one language, choose whether to display the conditions of use in only one language or to make them available in several languages:
+
      * Toggle on **Use the same texts for all languages** to use the same documents for all available languages. If the Terms and Conditions, Privacy Policy and Cookies Policy are only written and available in the language of the portal country, for example, English, no matter the language selected by the user on the portal, the conditions of use will be displayed in English.
      * Toggle off **Use the same texts for all languages** to specify different documents depending on the language. In that case, all available languages are displayed in the form of clickable grey boxes containing the code of each available language. The language codes are preceded by |icon-attention| if all documents have not been specified.
 
