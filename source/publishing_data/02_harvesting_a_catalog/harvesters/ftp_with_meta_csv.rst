@@ -69,7 +69,8 @@ Accepted metadata columns
    * * Standard
      * ``title``, ``description``, ``theme``, ``keyword``, ``license``, ``language``, ``timezone``, ``modified``, ``geographic_reference_auto``, ``geographic_reference``, ``publisher``, ``references``, ``attributions``, ``oauth_scope``
    * * Custom
-     * ``<metadata_name>``
+     * | ``<metadata-name>`` (the metadata name)
+       | For example, if the metadata name is "project name", use ``project-name`` .
    * * DCAT (if activated)
      * ``dcat.created``, ``dcat.issued``, ``dcat.creator``, ``dcat.contributor``, ``dcat.contact_name``, ``dcat.contact_email``, ``dcat.accrualperiodicity``, ``dcat.spatial``, ``dcat.temporal``, ``dcat.granularity``, ``dcat.dataquality``
    * * DCAT-AP for CH (if activated)

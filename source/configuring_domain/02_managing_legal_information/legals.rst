@@ -33,55 +33,84 @@ Your portal will display the cookie banner upon visitors' first visit. Visitors 
 A link will also be displayed in your portal's footer so that visitors can manage their cookie preferences at any time.
 
 
-Portal Terms and Conditions and Privacy Policy
-----------------------------------------------
+Portal Terms and Conditions, Privacy Policy, and Cookies Policy
+---------------------------------------------------------------
 
-.. admonition:: Warning
-   :class: danger
+.. attention::
 
-   It is a legal obligation to specify both the Terms and Conditions and the Privacy Policy of an Opendatasoft domain. Since there are none by default, each Opendatasoft domain administrator must specify these conditions of use, especially before opening the portal to all users.
+   It is a legal obligation to specify the Terms and Conditions, the Privacy Policy, and the Cookies Policy of an Opendatasoft domain. Since there are none by default, each Opendatasoft domain administrator must specify these conditions of use, especially before opening the portal to all users.
 
-To specify the Terms and Conditions and the Privacy Policy of a portal, go to Configuration > Legals. In this subsection of the back office menu, look for the "Portal Terms and Conditions and Privacy Policy" area.
+Accessing the Portal Terms and Conditions, Privacy Policy, and Cookies Policy
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: images/cgu_1.png
+1. In the back office, go to **Configuration** > **Legals**.
+2. Go to **Portal Terms and Conditions, Privacy Policy and Cookies Policy** section.
 
-.. image:: images/cgu_2.png
+.. ifconfig:: language == 'en'
 
-.. image:: images/cgu_3.png
+   .. image:: images/legals__cgu-en.png
+      :alt: Portal Terms and Conditions, Privacy Policy and Cookies Policy
 
-1. Choose one way of adding both the Terms & Conditions and the Privacy Policy on the domain: 
+.. ifconfig:: language == 'fr'
 
-- click "*Use links to pages hosted on a different website*", if both Terms & Conditions and Privacy Policy are already hosted on another website (if this option is chosen, follow the section **A** of step 3), or
-- click "*Write custom Terms and Conditions and Privacy Policy*", to directly write or paste the conditions of use on the Opendatasoft platform (if this option is chosen, follow the section **B** of step 3).
+   .. image:: images/legals__cgu-fr.png
+      :alt: Conditions d'utilisation du portail, politique de confidentialité et charte cookies
 
-2. If the domain is available in more than one language: choose whether to display the conditions of use in only one language or to make them available in several languages.
+From this section, you can add the Terms and Conditions, Privacy Policy, and Cookies Policy on the domain, using links to pages hosted on a different website or directly entering custom text in the related boxes.
 
-- Tick the "*Use the same texts for all languages*" box to use the same documents for all available languages, that is, if the Terms & Conditions and Privacy Policy are only written and available in the language of the portal country, for example, English, no matter the language selected by the user on the portal, the conditions of use will be displayed in English).
-- Untick the "*Use the same texts for all languages*" box to specify different documents depending on the language. In that case, all available languages are displayed in the form of clickable grey boxes containing the code of each available language. The language codes are preceded by |icon-attention| if all documents have not been specified.
+For more information, see :ref:`linked-conditions` and :ref:`written-conditions`.
+
+.. _linked-conditions:
+
+Using links to pages hosted on a different website
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If the Terms and Conditions, Privacy Policy, and Cookies Policy are already hosted on another website, you can use links to these pages.
+
+1. From the **Portal Terms and Conditions, Privacy Policy and Cookies Policy section**, click **Use links to pages hosted on a different website**.
+2. If the domain is available in more than one language, choose whether to display the conditions of use in only one language or to make them available in several languages:
+
+     * Toggle on **Use the same texts for all languages** to use the same documents for all available languages. If the Terms and Conditions, Privacy Policy, and Cookies Policy are only written and available in the language of the portal country, for example, English, no matter the language selected by the user on the portal, the conditions of use will be displayed in English.
+     * Toggle off **Use the same texts for all languages** to specify different documents depending on the language. In that case, all available languages are displayed in the form of clickable grey boxes containing the code of each available language. The language codes are preceded by |icon-attention| if all documents have not been specified.
 
 .. admonition:: Important
    :class: important
 
-   If the "*Use the same texts for all languages*" option is left unticked, step 3 will have to be repeated until each language has both its Terms & Conditions and Privacy Policy specified. There must not be any |icon-attention| left.
+   If you toggle off **Use the same texts for all languages**, repeat the following steps for each language. There must not be any |icon-attention| left.
 
+3. In the first text box, paste the link leading to the Terms & Conditions.
+4. In the second text box, paste the link leading to the Privacy Policy.
+5. In the second text box, paste the link leading to the Cookies policy.
 
-3. Depending on the option chosen in step 1, follow the procedure of section A or B.
+.. _written-conditions:
 
-**A**. To link already hosted Terms & Conditions and Privacy Policy to the platform:
+Writing custom Terms and Conditions, Privacy Policy, and Cookies Policy
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   a. In the first textbox, paste the link leading to the Terms & Conditions.
-   b. In the second textbox, paste the link leading to the Privacy Policy.
+You can directly write or paste the Terms and Conditions, Privacy Policy, and Cookies Policy of use on the Opendatasoft platform.
 
+1. From the **Portal Terms and Conditions, Privacy Policy and Cookies Policy section**, click **Write custom Terms and Conditions, Privacy Policy and Cookies Policy**.
 
-**B**. To write or paste the Terms & Conditions and Privacy Policy directly on the platform:
+2. If the domain is available in more than one language, choose whether to display the conditions of use in only one language or to make them available in several languages:
 
-   a. In the textbox of the Terms and Conditions tab, write or paste the Terms and Conditions.
-   b. In the textbox of the Privacy Policy tab, write or paste the Privacy Policy.
+     * Toggle on **Use the same texts for all languages** to use the same documents for all available languages. If the Terms and Conditions, Privacy Policy and Cookies Policy are only written and available in the language of the portal country, for example, English, no matter the language selected by the user on the portal, the conditions of use will be displayed in English.
+     * Toggle off **Use the same texts for all languages** to specify different documents depending on the language. In that case, all available languages are displayed in the form of clickable grey boxes containing the code of each available language. The language codes are preceded by |icon-attention| if all documents have not been specified.
+
+.. admonition:: Important
+   :class: important
+
+   If you toggle off **Use the same texts for all languages**, repeat the following steps for each language. There must not be any |icon-attention| left.
+
+3. From the **Conditions** tab, write or paste the Terms and Conditions.
+4. From the **Privacy Policy** tab, write or paste the Privacy Policy.
+5. From the **Cookies policy** tab, write or paste the Cookies policy.
 
 .. admonition:: Note
    :class: note
 
-   Fill-in Terms & Conditions and Privacy Policy templates are available, based on the French law (in French and English languages) and the US law (in English language) only. Click the Use a template button under the textbox to use a template. The generated conditions of use can be edited in the textbox afterward.
+   Fill-in Terms & Conditions and Privacy Policy templates are available, based on the French law (in French and English) and the US law (in English) only.
+   
+   Click the **Use a template** button under the box to select a template and enter the required information. You will be able to edit the generated conditions if needed.
 
 .. _licenses-config:
 
