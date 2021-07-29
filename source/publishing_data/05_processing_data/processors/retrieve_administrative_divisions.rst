@@ -60,7 +60,7 @@ When a real country is chosen, the administrative levels corresponding to that c
 .. admonition:: Note
    :class: note
 
-   When using the 'World' country, the processor will try to retrieve the divisions corresponding to the chosen level (between 1 and 7). The results can however be irrelevant in some cases since administrative divisions are not homogenized across countries (e.g. the french "cantons" will be at level 4 whereas swiss "kantons" will be at level 2).
+   When using the 'World' country, the processor will try to retrieve the divisions corresponding to the chosen level (between 1 and 7). The results can however be irrelevant in some cases since administrative divisions are not homogenized across countries. For example, the French "cantons" will be at level 4 whereas Swiss "kantons" will be at level 2.
 
 
 .. admonition:: Note
