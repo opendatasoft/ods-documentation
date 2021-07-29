@@ -8,19 +8,16 @@ The Retrieve Administrative Divisions processor is available for the following c
 - Australia
 - Belgium
 - Canada
-- England
 - France
 - Germany
 - Mexico
 - the Netherlands
 - Portugal
-- Scotland
 - Spain
 - Sweden
 - Switzerland
 - United Kingdom
 - United States
-- Wales
 - World
 
 Setting the processor
