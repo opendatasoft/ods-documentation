@@ -55,7 +55,7 @@ To set the parameters of the Retrieve Administrative Divisions processor, follow
 Referentials
 ------------
 
-When a real country is chosen, the administrative levels corresponding to that country are explicitely written. However, when using the 'World' country, an administrative level between 1 and 7 must be chosen. Please refer to the table below to have an idea of what the administrative levels are for each country currently available in the processor.
+When a real country is chosen, the administrative levels corresponding to that country are explicitly written. However, when using the 'World' country, an administrative level between 1 and 7 must be chosen. Please refer to the table below to have an idea of what the administrative levels are for each country currently available in the processor.
 
 .. admonition:: Note
    :class: note
