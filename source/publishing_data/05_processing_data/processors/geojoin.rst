@@ -9,19 +9,16 @@ Each country has specific referentials, all referenced in the section below. The
 - Australia
 - Belgium
 - Canada
-- England
 - France
 - Germany
 - Mexico
 - the Netherlands
 - Portugal
-- Scotland
 - Spain
 - Sweden
 - Switzerland
 - United Kingdom
 - United States
-- Wales
 - World
 
 It is also available for the world, which means that is is possible to retrieve the geo shape of any other country than those listed above. However, only the geo shape of the country will be retrieved, the processor will not be able to retrieve geo shapes from administrative divisions at a smaller scale.
