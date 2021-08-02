@@ -2,12 +2,12 @@
 # Copyright (C) 2021, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Super Traducteur <admin+supertraducteur@opendatasoft.com>, 2019
 # François Dupont <fdupont@datawords.com>, 2019
 # Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -17,19 +17,15 @@ msgstr ""
 "PO-Revision-Date: 2018-06-27 09:08+0000\n"
 "Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:2
 msgid "Single sign-on with SAML"
 msgstr "SSO (Single Sign-On) con SAML"
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:4
-msgid "Caution"
-msgstr "Precaución"
 
 #: ../../source/configuring_domain/01_managing_security/saml.rst:7
 msgid ""
@@ -39,170 +35,7 @@ msgstr ""
 "La disponibilidad de esta función depende de la licencia del dominio "
 "Opendatasoft."
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:11
-msgid "Register your SAML identity provider on your domain"
-msgstr "Registre su proveedor de identidad SAML en el dominio."
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:13
-msgid "Navigate to the signup page in the domain configuration interface."
-msgstr ""
-"Navegue a la página de registro de la interfaz de configuración del dominio."
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:15
-msgid "Check \"Allow access for SAML users\"."
-msgstr "Seleccione \"Permitir acceso para usuarios de SAML\"."
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:20
-msgid ""
-"Paste your identity provider metadata document in the \"Identity provider "
-"metadata document\" field."
-msgstr ""
-"Pegue el documento de metadatos de proveedor de identidad en el campo "
-"\"Documento de metadatos de proveedor de identidad (IdP)\"."
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:22
-msgid ""
-"If your identity provider is Microsoft Azure Active Directory, check the "
-"related checkbox."
-msgstr ""
-"Si su proveedor de identidad es Microsoft Azure Active Directory, marque la "
-"casilla correspondiente."
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:24
-msgid ""
-"If you would like to disable local user creation, making sure only existing "
-"users can connect to the platform through SAML, check the \"Disable local "
-"user provisioning\" checkbox."
-msgstr ""
-"Si desea desactivar la creación de usuarios locales, y asegurarse así de que"
-" únicamente los usuarios existentes se conecten a la plataforma con SAML, "
-"marque la casilla \"Desactivar aprovisionamiento de usuarios locales\"."
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:26
-msgid ""
-"Input the set of attributes sent by the identity provider that uniquely "
-"define a user."
-msgstr ""
-"Introduzca el conjunto de atributos enviados por el proveedor de identidad "
-"que definen un usuario de forma exclusiva."
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:28
-msgid ""
-"If the users are defined by their NameID and the NameID format used by your "
-"identity provider is not transient, there is no need to fill anything."
-msgstr ""
-"Si los usuarios se definen por su ID de nombre y el formato del ID de nombre"
-" utilizado por el proveedor de identidad no es transitorio, no es necesario "
-"especificar nada."
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:30
-msgid ""
-"For instance, if your users are defined by the attribute \"FirstName\" and "
-"\"LastName\" transmitted by your identity provider, first input "
-"\"FirstName\" in the box and press enter, then \"LastName\" and press enter "
-"again."
-msgstr ""
-"Por ejemplo, si los usuarios se definen por los atributos \"FirstName\" y "
-"\"LastName\" transmitidos por el proveedor de identidad, primero especifique"
-" \"FirstName\" en la casilla y pulse Entrar, y después \"LastName\" y vuelva"
-" a pulsar Entrar."
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:32
-msgid ""
-"Input the attributes mappings for the username, last name, first name, and "
-"email address."
-msgstr ""
-"Introduzca las asignaciones de atributos correspondientes al nombre de "
-"usuario, el apellido, el nombre y la dirección de correo electrónico."
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:34
-msgid ""
-"Here, you need to declare the field names as they are sent by the identity "
-"provider."
-msgstr ""
-"Aquí tiene que declarar los nombres de campo tal como los ha enviado el "
-"proveedor de identidad."
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:36
-msgid ""
-"For instance, if your identity provider transmits the connected user's first"
-" name in an attribute called \"GivenName\", this is what you will need to "
-"type in the \"First name\" field."
-msgstr ""
-"Por ejemplo, si el proveedor de identidad transmite el nombre del usuario "
-"conectado en un atributo denominado \"GivenName\", esto es lo que usted "
-"deberá escribir en el campo \"First name\"."
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:39
-msgid ""
-"If, for any reason, your identity provider doesn't send all of these "
-"elements, let the corresponding fields blank. The platform will "
-"automatically generate them based on other available attributes."
-msgstr ""
-"Si, por cualquier motivo, el proveedor de identidad no enviara todos estos "
-"elementos, deje los campos correspondientes en blanco. La plataforma los "
-"generará automáticamente a partir de los demás atributos disponibles."
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:42
-msgid "Input an access condition."
-msgstr "Especifique una condición de acceso."
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:44
-msgid ""
-"The first box is the name of the attribute to check for, and the second one "
-"the value of that attribute. If you want to check for the presence of an "
-"attribute without value restriction, leave the second box blank. If both "
-"fields are left blank, no condition is set, and any successful login on the "
-"identity provider side will trigger a login on your Opendatasoft domain."
-msgstr ""
-"La primera casilla es el nombre del atributo que se examinará y la segunda "
-"es el valor de ese atributo. Si desea comprobar la presencia de un atributo,"
-" sin restricción de valor alguna, deje la segunda casilla en blanco. Si se "
-"dejan ambos campos vacíos, no se establece ninguna condición y cualquier "
-"inicio de sesión satisfactorio en el lado del proveedor de identidad "
-"desencadenará un inicio de sesión en el dominio Opendatasoft."
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:48
-msgid ""
-"For instance, if your identity provider sends a list of \"Roles\" for the "
-"users and you want to make sure that only users that have a role can get "
-"access, input \"Roles\" in the first box under \"Conditional access\". If "
-"you only want users with the role \"DataAccess\" to be able to connect to "
-"the domain, input \"DataAccess\" in the second box."
-msgstr ""
-"Por ejemplo, si el proveedor de identidad envía una lista de \"Roles\" para "
-"los usuarios y desea comprobar que solo puedan acceder los usuarios que "
-"tengan un rol, introduzca \"Roles\" en la primera casilla bajo \"Acceso "
-"condicional\". Si desea que solo puedan conectarse al dominio los usuarios "
-"con el rol \"DataAccess\", introduzca \"DataAccess\" en la segunda casilla."
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:50
-msgid ""
-"Input the URL on which the user can edit their user profile on the identity "
-"provider. When set, a link to this URL will be shown to the user on their "
-"user account page. If left blank, no URL will be shown to the user on their "
-"account page."
-msgstr ""
-"Especifique la dirección URL en la que el usuario puede editar su perfil de "
-"usuario en el proveedor de identidad. Cuando se haya especificado, el "
-"usuario visualizará un enlace a esta dirección URL en la página de su cuenta"
-" de usuario. Si se deja en blanco, no se mostrará ninguna dirección URL al "
-"usuario en la página de su cuenta."
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:52
-msgid ""
-"Input a custom EntityID for the Service Provider. If left blank, the URL of "
-"the Service Provider metadata document will be used as the EntityID. If your"
-" identity provider doesn't support EntityIDs in URL format, you can set any "
-"EntityID here."
-msgstr ""
-"Especifique un ID de entidad personalizado para el proveedor de servicios. "
-"Si se deja en blanco, se utilizará la dirección URL del documento de "
-"metadatos del proveedor de servicios como ID de entidad. Si su proveedor de "
-"identidad no admite ID de entidad en formato URL, puede establecer cualquier"
-" ID de entidad aquí."
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:54
+#: ../../source/configuring_domain/01_managing_security/saml.rst:67
 msgid ""
 "Customize the SAML login link text. If left blank, a localized default "
 "message will be displayed."
@@ -210,11 +43,7 @@ msgstr ""
 "Personalice el texto del vínculo de inicio de sesión de SAML. Si se deja en "
 "blanco, se visualizará un mensaje predeterminado localizado."
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:58
-msgid "Register your domain on your identity provider"
-msgstr "Registre su dominio en el proveedor de identidad."
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:60
+#: ../../source/configuring_domain/01_managing_security/saml.rst:73
 msgid ""
 "The configuration of the identity provider is implementation-dependant, but "
 "it always consists of importing the service provider metadata document to "
@@ -224,29 +53,391 @@ msgstr ""
 "implementación, pero siempre es necesario importar el documento de metadatos"
 " de proveedor de identidad para hacer posible la federación de identidades."
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:63
+#: ../../source/configuring_domain/01_managing_security/saml.rst:80
+msgid "Single logout"
+msgstr "SLO (Single Log-Out)"
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:4
+#: ../../source/configuring_domain/01_managing_security/saml.rst:52
+msgid "Note"
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:11
+#, fuzzy
+msgid "Registering your SAML identity provider on your domain"
+msgstr "Registre su proveedor de identidad SAML en el dominio."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:14
+#, fuzzy
+msgid "Step 1: Allow access for SAML users"
+msgstr "Seleccione \"Permitir acceso para usuarios de SAML\"."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:16
+msgid ""
+"Enable SAML so that authentication for your portal users can be delegated to"
+" your own identity service."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:18
+msgid "From the back office, go to **Configuration > Signup**."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:20
+#, fuzzy
+msgid "Toggle on **Allow access for SAML users**."
+msgstr "Seleccione \"Permitir acceso para usuarios de SAML\"."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:22
+msgid "A list of configuration settings appears:"
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:28
+msgid "Step 2: Configure SAML settings"
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:30
+#, fuzzy
+msgid ""
+"Paste your identity provider metadata document into the **Identity provider "
+"(idp) metadata document** field."
+msgstr ""
+"Pegue el documento de metadatos de proveedor de identidad en el campo "
+"\"Documento de metadatos de proveedor de identidad (IdP)\"."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:32
+#, fuzzy
+msgid ""
+"If you want to disable local user creation, making sure only existing users "
+"can connect to the platform through SAML, toggle on **Disable local user "
+"provisioning**."
+msgstr ""
+"Si desea desactivar la creación de usuarios locales, y asegurarse así de que"
+" únicamente los usuarios existentes se conecten a la plataforma con SAML, "
+"marque la casilla \"Desactivar aprovisionamiento de usuarios locales\"."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:34
+#, fuzzy
+msgid ""
+"Enter the set of attributes sent by the identity provider that uniquely "
+"define a user in the corresponding field:"
+msgstr ""
+"Introduzca el conjunto de atributos enviados por el proveedor de identidad "
+"que definen un usuario de forma exclusiva."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:36
+msgid ""
+"For example, if your users are defined by the ``FirstName`` and ``LastName``"
+" attributes transmitted by your identity provider, enter ``FirstName`` in "
+"the field and click **+**. Then, enter ``LastName`` in the field that "
+"appears and click **+**."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:37
+#, fuzzy
+msgid ""
+"If the users are defined by their ``NameID`` and the ``NameID`` format used "
+"by your identity provider is not transient, leave the field empty."
+msgstr ""
+"Si los usuarios se definen por su ID de nombre y el formato del ID de nombre"
+" utilizado por el proveedor de identidad no es transitorio, no es necesario "
+"especificar nada."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:39
+msgid ""
+"Enter the attribute mappings for the username, last name, first name, and "
+"email address in the corresponding fields. In this step, you need to declare"
+" the field names as they are sent by the identity provider:"
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:41
+#, fuzzy
+msgid ""
+"For example, if your identity provider transmits the connected user's first "
+"name in an attribute called ``GivenName``, enter ``GivenName`` in the "
+"**First name** field."
+msgstr ""
+"Por ejemplo, si el proveedor de identidad transmite el nombre del usuario "
+"conectado en un atributo denominado \"GivenName\", esto es lo que usted "
+"deberá escribir en el campo \"First name\"."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:42
+#, fuzzy
+msgid ""
+"If your identity provider doesn't transmit all of these elements, leave the "
+"corresponding fields blank. The platform will automatically generate them "
+"based on other available attributes."
+msgstr ""
+"Si, por cualquier motivo, el proveedor de identidad no enviara todos estos "
+"elementos, deje los campos correspondientes en blanco. La plataforma los "
+"generará automáticamente a partir de los demás atributos disponibles."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:44
+#, fuzzy
+msgid "Enter an access condition:"
+msgstr "Especifique una condición de acceso."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:46
+msgid ""
+"In the **Attribute to match for the condition** field, enter the name of the"
+" attribute to check for."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:47
+msgid ""
+"In the **Value that must be present** field, enter the value for this "
+"attribute. If you want to check for the presence of an attribute without "
+"value restriction, leave this field blank."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:49
+msgid ""
+"For example, if your identity provider sends a list of ``Roles`` for the "
+"users and you want only users with a role to be able to connect to the "
+"domain, enter ``Roles`` in the **Attribute to match for the condition** "
+"field. If you only want users with the ``DataAccess`` role to be able to "
+"connect to the domain, enter ``DataAccess`` in the **Value that must be "
+"present** field."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:55
+msgid ""
+"If you leave both fields blank, no condition is set. Any successful login on"
+" the identity provider side will trigger a login on your Opendatasoft "
+"domain."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:57
+msgid ""
+"Enter the URL on which the user can edit their user profile on the identity "
+"provider in the **URL for SAML user account configuration** field."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:59
+msgid ""
+"When set, a link to this URL will be shown to the user on their user account"
+" page."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:60
+msgid "If left blank, no URL will be shown to the user on their account page."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:62
+msgid "Enter a custom EntityID for the Service Provider."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:64
+msgid ""
+"If left blank, the URL of the Service Provider metadata document will be "
+"used as the EntityID."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:65
+msgid ""
+"If your identity provider doesn't support EntityIDs in URL format, you can "
+"set any EntityID here."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:71
+#, fuzzy
+msgid "Registering your domain on your identity provider"
+msgstr "Registre su dominio en el proveedor de identidad."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:75
+#, fuzzy
 msgid ""
 "You can download the metadata document for your Opendatasoft domain on "
-"``https://<YOUR DOMAIN>/saml2/metadata.xml``"
+"``https://<YOUR DOMAIN>/saml2/metadata.xml``."
 msgstr ""
 "Puede descargar el documento de metadatos del dominio Opendatasoft en "
 "``https://<SU_DOMINIO>/saml2/metadata.xml``"
 
-#: ../../source/configuring_domain/01_managing_security/saml.rst:68
-msgid "Single logout"
-msgstr "SLO (Single Log-Out)"
-
-#: ../../source/configuring_domain/01_managing_security/saml.rst:70
+#: ../../source/configuring_domain/01_managing_security/saml.rst:82
 msgid ""
 "The Opendatasoft platform supports the standard SAML Single Logout flow "
-"using the HTTP-Redirect binding. That means that if the identity provider "
-"supports it, a log out from a SAML-connected user will trigger a log out "
-"from the identity provider, and log out requests from the identity provider "
-"will trigger a log out of the user on the platform."
+"using the HTTP-Redirect binding:"
 msgstr ""
-"La plataforma Opendatasoft admite el flujo SLO (Single Log-Out) SAML "
-"estándar por medio de las vinculaciones HTTP-Redirect. Esto significa que si"
-" el proveedor de identidad lo permite, un cierre de sesión de un usuario "
-"conectado por SAML desencadenará un cierre de sesión del proveedor de "
-"identidad, y las solicitudes de cierre de sesión del proveedor de identidad "
-"desencadenarán un cierre de sesión del usuario en la plataforma."
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:84
+msgid ""
+"If supported by the identity provider, a log out from a SAML-connected user "
+"will trigger a log out from the identity provider."
+msgstr ""
+
+#: ../../source/configuring_domain/01_managing_security/saml.rst:85
+msgid ""
+"Log out requests from the identity provider will trigger a log out of the "
+"user on the platform."
+msgstr ""
+
+#~ msgid "Caution"
+#~ msgstr "Precaución"
+
+#~ msgid "Register your SAML identity provider on your domain"
+#~ msgstr "Registre su proveedor de identidad SAML en el dominio."
+
+#~ msgid "Navigate to the signup page in the domain configuration interface."
+#~ msgstr ""
+#~ "Navegue a la página de registro de la interfaz de configuración del dominio."
+
+#~ msgid "Check \"Allow access for SAML users\"."
+#~ msgstr "Seleccione \"Permitir acceso para usuarios de SAML\"."
+
+#~ msgid ""
+#~ "Paste your identity provider metadata document in the \"Identity provider "
+#~ "metadata document\" field."
+#~ msgstr ""
+#~ "Pegue el documento de metadatos de proveedor de identidad en el campo "
+#~ "\"Documento de metadatos de proveedor de identidad (IdP)\"."
+
+#~ msgid ""
+#~ "If your identity provider is Microsoft Azure Active Directory, check the "
+#~ "related checkbox."
+#~ msgstr ""
+#~ "Si su proveedor de identidad es Microsoft Azure Active Directory, marque la "
+#~ "casilla correspondiente."
+
+#~ msgid ""
+#~ "If you would like to disable local user creation, making sure only existing "
+#~ "users can connect to the platform through SAML, check the \"Disable local "
+#~ "user provisioning\" checkbox."
+#~ msgstr ""
+#~ "Si desea desactivar la creación de usuarios locales, y asegurarse así de que"
+#~ " únicamente los usuarios existentes se conecten a la plataforma con SAML, "
+#~ "marque la casilla \"Desactivar aprovisionamiento de usuarios locales\"."
+
+#~ msgid ""
+#~ "Input the set of attributes sent by the identity provider that uniquely "
+#~ "define a user."
+#~ msgstr ""
+#~ "Introduzca el conjunto de atributos enviados por el proveedor de identidad "
+#~ "que definen un usuario de forma exclusiva."
+
+#~ msgid ""
+#~ "If the users are defined by their NameID and the NameID format used by your "
+#~ "identity provider is not transient, there is no need to fill anything."
+#~ msgstr ""
+#~ "Si los usuarios se definen por su ID de nombre y el formato del ID de nombre"
+#~ " utilizado por el proveedor de identidad no es transitorio, no es necesario "
+#~ "especificar nada."
+
+#~ msgid ""
+#~ "For instance, if your users are defined by the attribute \"FirstName\" and "
+#~ "\"LastName\" transmitted by your identity provider, first input "
+#~ "\"FirstName\" in the box and press enter, then \"LastName\" and press enter "
+#~ "again."
+#~ msgstr ""
+#~ "Por ejemplo, si los usuarios se definen por los atributos \"FirstName\" y "
+#~ "\"LastName\" transmitidos por el proveedor de identidad, primero especifique"
+#~ " \"FirstName\" en la casilla y pulse Entrar, y después \"LastName\" y vuelva"
+#~ " a pulsar Entrar."
+
+#~ msgid ""
+#~ "Input the attributes mappings for the username, last name, first name, and "
+#~ "email address."
+#~ msgstr ""
+#~ "Introduzca las asignaciones de atributos correspondientes al nombre de "
+#~ "usuario, el apellido, el nombre y la dirección de correo electrónico."
+
+#~ msgid ""
+#~ "Here, you need to declare the field names as they are sent by the identity "
+#~ "provider."
+#~ msgstr ""
+#~ "Aquí tiene que declarar los nombres de campo tal como los ha enviado el "
+#~ "proveedor de identidad."
+
+#~ msgid ""
+#~ "For instance, if your identity provider transmits the connected user's first"
+#~ " name in an attribute called \"GivenName\", this is what you will need to "
+#~ "type in the \"First name\" field."
+#~ msgstr ""
+#~ "Por ejemplo, si el proveedor de identidad transmite el nombre del usuario "
+#~ "conectado en un atributo denominado \"GivenName\", esto es lo que usted "
+#~ "deberá escribir en el campo \"First name\"."
+
+#~ msgid ""
+#~ "If, for any reason, your identity provider doesn't send all of these "
+#~ "elements, let the corresponding fields blank. The platform will "
+#~ "automatically generate them based on other available attributes."
+#~ msgstr ""
+#~ "Si, por cualquier motivo, el proveedor de identidad no enviara todos estos "
+#~ "elementos, deje los campos correspondientes en blanco. La plataforma los "
+#~ "generará automáticamente a partir de los demás atributos disponibles."
+
+#~ msgid "Input an access condition."
+#~ msgstr "Especifique una condición de acceso."
+
+#~ msgid ""
+#~ "The first box is the name of the attribute to check for, and the second one "
+#~ "the value of that attribute. If you want to check for the presence of an "
+#~ "attribute without value restriction, leave the second box blank. If both "
+#~ "fields are left blank, no condition is set, and any successful login on the "
+#~ "identity provider side will trigger a login on your Opendatasoft domain."
+#~ msgstr ""
+#~ "La primera casilla es el nombre del atributo que se examinará y la segunda "
+#~ "es el valor de ese atributo. Si desea comprobar la presencia de un atributo,"
+#~ " sin restricción de valor alguna, deje la segunda casilla en blanco. Si se "
+#~ "dejan ambos campos vacíos, no se establece ninguna condición y cualquier "
+#~ "inicio de sesión satisfactorio en el lado del proveedor de identidad "
+#~ "desencadenará un inicio de sesión en el dominio Opendatasoft."
+
+#~ msgid ""
+#~ "For instance, if your identity provider sends a list of \"Roles\" for the "
+#~ "users and you want to make sure that only users that have a role can get "
+#~ "access, input \"Roles\" in the first box under \"Conditional access\". If "
+#~ "you only want users with the role \"DataAccess\" to be able to connect to "
+#~ "the domain, input \"DataAccess\" in the second box."
+#~ msgstr ""
+#~ "Por ejemplo, si el proveedor de identidad envía una lista de \"Roles\" para "
+#~ "los usuarios y desea comprobar que solo puedan acceder los usuarios que "
+#~ "tengan un rol, introduzca \"Roles\" en la primera casilla bajo \"Acceso "
+#~ "condicional\". Si desea que solo puedan conectarse al dominio los usuarios "
+#~ "con el rol \"DataAccess\", introduzca \"DataAccess\" en la segunda casilla."
+
+#~ msgid ""
+#~ "Input the URL on which the user can edit their user profile on the identity "
+#~ "provider. When set, a link to this URL will be shown to the user on their "
+#~ "user account page. If left blank, no URL will be shown to the user on their "
+#~ "account page."
+#~ msgstr ""
+#~ "Especifique la dirección URL en la que el usuario puede editar su perfil de "
+#~ "usuario en el proveedor de identidad. Cuando se haya especificado, el "
+#~ "usuario visualizará un enlace a esta dirección URL en la página de su cuenta"
+#~ " de usuario. Si se deja en blanco, no se mostrará ninguna dirección URL al "
+#~ "usuario en la página de su cuenta."
+
+#~ msgid ""
+#~ "Input a custom EntityID for the Service Provider. If left blank, the URL of "
+#~ "the Service Provider metadata document will be used as the EntityID. If your"
+#~ " identity provider doesn't support EntityIDs in URL format, you can set any "
+#~ "EntityID here."
+#~ msgstr ""
+#~ "Especifique un ID de entidad personalizado para el proveedor de servicios. "
+#~ "Si se deja en blanco, se utilizará la dirección URL del documento de "
+#~ "metadatos del proveedor de servicios como ID de entidad. Si su proveedor de "
+#~ "identidad no admite ID de entidad en formato URL, puede establecer cualquier"
+#~ " ID de entidad aquí."
+
+#~ msgid "Register your domain on your identity provider"
+#~ msgstr "Registre su dominio en el proveedor de identidad."
+
+#~ msgid ""
+#~ "You can download the metadata document for your Opendatasoft domain on "
+#~ "``https://<YOUR DOMAIN>/saml2/metadata.xml``"
+#~ msgstr ""
+#~ "Puede descargar el documento de metadatos del dominio Opendatasoft en "
+#~ "``https://<SU_DOMINIO>/saml2/metadata.xml``"
+
+#~ msgid ""
+#~ "The Opendatasoft platform supports the standard SAML Single Logout flow "
+#~ "using the HTTP-Redirect binding. That means that if the identity provider "
+#~ "supports it, a log out from a SAML-connected user will trigger a log out "
+#~ "from the identity provider, and log out requests from the identity provider "
+#~ "will trigger a log out of the user on the platform."
+#~ msgstr ""
+#~ "La plataforma Opendatasoft admite el flujo SLO (Single Log-Out) SAML "
+#~ "estándar por medio de las vinculaciones HTTP-Redirect. Esto significa que si"
+#~ " el proveedor de identidad lo permite, un cierre de sesión de un usuario "
+#~ "conectado por SAML desencadenará un cierre de sesión del proveedor de "
+#~ "identidad, y las solicitudes de cierre de sesión del proveedor de identidad "
+#~ "desencadenarán un cierre de sesión del usuario en la plataforma."
