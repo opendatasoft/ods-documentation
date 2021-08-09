@@ -2,8 +2,7 @@ Managing users
 ==============
 
 Now that you've set up your :doc:`portal's security policy </configuring_domain/01_managing_security/portal>`, people are registering and becoming full-fledged
-users. Unless your portal is closed to anonymous users, this new status is not changing anything for them. They can
-still see the same data and a subject to the same quotas as before.
+users. Unless your portal is closed to anonymous users, this new status is not changing anything for them. They can still see the same data and a subject to the same quotas as before.
 
 .. image:: images/users_interface.png
 
