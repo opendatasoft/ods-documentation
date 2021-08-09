@@ -7,6 +7,24 @@ still see the same data and a subject to the same quotas as before.
 
 .. image:: images/users_interface.png
 
+Inviting users to the portal
+----------------------------
+
+You can invite users to your portal using their email addresses.
+
+.. admonition:: Note
+   :class: note
+   
+   Only domain administrators or users with the *Edit domain properties* permission can invite users.
+
+1. From the back office, go to **Users & groups > Users**.
+2. Click **Invite users**.
+3. From tha dialog box that opens, enter the email addresses of the new users in the **Email addresses** text box.
+4. Click **Invite users**.
+
+The users are added to your portal. They will receive an email to create or validate their account.
+You can now give them the desired permissions and add them to groups.
+
 Permissions
 -----------
 
