@@ -6,7 +6,7 @@ OpenAgenda connector
 
    This connector is not available by default. Please contact Opendatasoft for the activation of this connector on a given Opendatasoft domain.
 
-The OpenAgenda connector extracts events from an agenda, using the OpenAgenda REST API. For more information, refer to the `OpenAgenda documentation <https://openagenda.zendesk.com/hc/fr/categories/115000324454-API>`__.
+The OpenAgenda connector extracts events from an agenda, using the OpenAgenda REST API. For more information, refer to the `OpenAgenda documentation <https://developers.openagenda.com/>`__.
 
 
 Creation
@@ -51,7 +51,7 @@ Configuration
    * * Custom fields to extract
      * Custom fields that do not belong to the standard fields in OpenAgenda agendas.
      
-       For more information, refer to the `OpenAgenda documentation <https://openagenda.zendesk.com/hc/fr/articles/203034982-L-export-JSON-d-un-agenda>`__.
+       For more information, refer to the `OpenAgenda documentation <https://developers.openagenda.com/export-json-dun-agenda/>`__.
      * Enter the name of the custom fields to be extracted. Each custom field is extracted as a text field.
    * * Tags to extract
      * Tags represent properties of an event. Tag groups categorize tags. 
