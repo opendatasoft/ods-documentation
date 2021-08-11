@@ -128,14 +128,14 @@ Configure licenses
 
 In the back office, you can configure the licenses available when adding the metadata for a dataset.
 
-1. From the left menu under Configuration, select Legals.
-2. Go to the Licenses area.
+1. From the left menu under **Configuration**, select **Legals**.
+2. Go to the **Licenses** area.
    
    .. image:: images/license_configuration.png
 
-3. In the Labels column, add a license label for each language available on the domain. The label will be displayed in the drop-down selection in the back office and the Information tab of the published dataset in the front office.
-4. Click the Add license button.
-5. In the URLs column, add the URL to the official website of the defined license to find more information about that license. You can only add one URL per language available on the domain.
+3. In the **Labels** column, add a license label for each language available on the domain. The label will be displayed in the drop-down selection in the back office and the Information tab of the published dataset in the front office.
+4. Click the **Add license** button.
+5. In the **URLs** column, add the URL to the official website of the defined license to find more information about that license. You can only add one URL per language available on the domain.
   
   .. admonition:: Note
      :class: note
@@ -143,7 +143,7 @@ In the back office, you can configure the licenses available when adding the met
      Adding a URL for a license is optional, but it is good practice to provide an official definition of the license to make the data easily reusable.
      If you have a custom license, you can add the URL to a page hosted on your corporate website or your Opendatasoft platform.
 
-6. Click the Save button in the top right corner of the page.
+6. Click the **Save** button in the top right corner of the page.
 
 To delete a license, click on the |icon-trash| button.
 
