@@ -31,6 +31,15 @@ There are eight indicators :
 
 3. **Searches with no results**: Number of searches that return no results.
 
+.. admonition:: Note
+    :class: note
+ 
+    A search can return no results for different reasons:
+
+    - There are not any resources that match the user's query.
+    - The user refines their search with facets and filters that lead to no results.
+    - The user does not have the required permissions to see the content.
+
 .. ifconfig:: language == 'en'
 
     .. image:: images/usage__actions-usage-3-en.jpg
