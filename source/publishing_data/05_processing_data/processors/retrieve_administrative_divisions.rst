@@ -8,19 +8,16 @@ The Retrieve Administrative Divisions processor is available for the following c
 - Australia
 - Belgium
 - Canada
-- England
 - France
 - Germany
 - Mexico
 - the Netherlands
 - Portugal
-- Scotland
 - Spain
 - Sweden
 - Switzerland
 - United Kingdom
 - United States
-- Wales
 - World
 
 Setting the processor
@@ -58,12 +55,12 @@ To set the parameters of the Retrieve Administrative Divisions processor, follow
 Referentials
 ------------
 
-When a real country is chosen, the administrative levels corresponding to that country are explicitely written. However, when using the 'World' country, an administrative level between 1 and 7 must be chosen. Please refer to the table below to have an idea of what the administrative levels are for each country currently available in the processor.
+When a real country is chosen, the administrative levels corresponding to that country are explicitly written. However, when using the 'World' country, an administrative level between 1 and 7 must be chosen. Please refer to the table below to have an idea of what the administrative levels are for each country currently available in the processor.
 
 .. admonition:: Note
    :class: note
 
-   When using the 'World' country, the processor will try to retrieve the divisions corresponding to the chosen level (between 1 and 7). The results can however be irrelevant in some cases since administrative divisions are not homogenized across countries (e.g. the french "cantons" will be at level 4 whereas swiss "kantons" will be at level 2).
+   When using the 'World' country, the processor will try to retrieve the divisions corresponding to the chosen level (between 1 and 7). The results can however be irrelevant in some cases since administrative divisions are not homogenized across countries. For example, the French "cantons" will be at level 4 whereas Swiss "kantons" will be at level 2.
 
 
 .. admonition:: Note

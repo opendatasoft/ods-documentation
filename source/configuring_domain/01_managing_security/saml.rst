@@ -1,70 +1,85 @@
 Single sign-on with SAML
 ========================
 
-.. admonition:: Caution
-   :class: caution
+.. admonition:: Note
+   :class: note
 
    The availability of this feature depends on the license of the Opendatasoft domain.
 
 
-Register your SAML identity provider on your domain
----------------------------------------------------
+Registering your SAML identity provider on your domain
+------------------------------------------------------
 
-1. Navigate to the signup page in the domain configuration interface.
+Step 1: Allow access for SAML users
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-2. Check "Allow access for SAML users".
+Enable SAML so that authentication for your portal users can be delegated to your own identity service.
+
+1. From the back office, go to **Configuration > Signup**.
+
+2. Toggle on **Allow access for SAML users**.
+
+A list of configuration settings appears:
 
 .. image:: images/configuration_SAML.png
     :alt: SAML identity provider configuration interface
 
-3. Paste your identity provider metadata document in the "Identity provider metadata document" field.
+Step 2: Configure SAML settings
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-4. If your identity provider is Microsoft Azure Active Directory, check the related checkbox.
+1. Paste your identity provider metadata document into the **Identity provider (idp) metadata document** field.
 
-5. If you would like to disable local user creation, making sure only existing users can connect to the platform through SAML, check the "Disable local user provisioning" checkbox.
+2. If you want to disable local user creation, making sure only existing users can connect to the platform through SAML, toggle on **Disable local user provisioning**.
 
-6. Input the set of attributes sent by the identity provider that uniquely define a user.
+3. Enter the set of attributes sent by the identity provider that uniquely define a user in the corresponding field:
 
-   If the users are defined by their NameID and the NameID format used by your identity provider is not transient, there is no need to fill anything.
+   - For example, if your users are defined by the ``FirstName`` and ``LastName`` attributes transmitted by your identity provider, enter ``FirstName`` in the field and click **+**. Then, enter ``LastName`` in the field that appears and click **+**.
+   - If the users are defined by their ``NameID`` and the ``NameID`` format used by your identity provider is not transient, leave the field empty.
 
-   For instance, if your users are defined by the attribute "FirstName" and "LastName" transmitted by your identity provider, first input "FirstName" in the box and press enter, then "LastName" and press enter again.
+4. Enter the attribute mappings for the username, last name, first name, and email address in the corresponding fields. In this step, you need to declare the field names as they are sent by the identity provider:
 
-7. Input the attributes mappings for the username, last name, first name, and email address.
+   - For example, if your identity provider transmits the connected user's first name in an attribute called ``GivenName``, enter ``GivenName`` in the **First name** field.
+   - If your identity provider doesn't transmit all of these elements, leave the corresponding fields blank. The platform will automatically generate them based on other available attributes.
 
-   Here, you need to declare the field names as they are sent by the identity provider.
+5. Enter an access condition:
 
-   For instance, if your identity provider transmits the connected user's first name in an attribute called "GivenName",
-   this is what you will need to type in the "First name" field.
+   - In the **Attribute to match for the condition** field, enter the name of the attribute to check for.
+   - In the **Value that must be present** field, enter the value for this attribute. If you want to check for the presence of an attribute without value restriction, leave this field blank.
 
-   If, for any reason, your identity provider doesn't send all of these elements, let the corresponding fields blank. The
-   platform will automatically generate them based on other available attributes.
+   For example, if your identity provider sends a list of ``Roles`` for the users and you want only users with a role to be able to connect to the domain, enter ``Roles`` in the **Attribute to match for the condition** field.
+   If you only want users with the ``DataAccess`` role to be able to connect to the domain, enter ``DataAccess`` in the **Value that must be present** field.
 
-8. Input an access condition.
+   .. admonition:: Note
+      :class: note
+      
+      If you leave both fields blank, no condition is set. Any successful login on the identity provider side will trigger a login on your Opendatasoft domain.
 
-   The first box is the name of the attribute to check for, and the second one the value of that attribute.
-   If you want to check for the presence of an attribute without value restriction, leave the second box blank.
-   If both fields are left blank, no condition is set, and any successful login on the identity provider side will trigger a login on your Opendatasoft domain.
+6. Enter the URL on which the user can edit their user profile on the identity provider in the **URL for SAML user account configuration** field.
 
-   For instance, if your identity provider sends a list of "Roles" for the users and you want to make sure that only users that have a role can get access, input "Roles" in the first box under "Conditional access". If you only want users with the role "DataAccess" to be able to connect to the domain, input "DataAccess" in the second box.
+  - When set, a link to this URL will be shown to the user on their user account page.
+  - If left blank, no URL will be shown to the user on their account page.
 
-9. Input the URL on which the user can edit their user profile on the identity provider. When set, a link to this URL will be shown to the user on their user account page. If left blank, no URL will be shown to the user on their account page.
+7. Enter a custom EntityID for the Service Provider.
+    
+   - If left blank, the URL of the Service Provider metadata document will be used as the EntityID.
+   - If your identity provider doesn't support EntityIDs in URL format, you can set any EntityID here.
 
-10. Input a custom EntityID for the Service Provider. If left blank, the URL of the Service Provider metadata document will be used as the EntityID. If your identity provider doesn't support EntityIDs in URL format, you can set any EntityID here.
-
-11. Customize the SAML login link text. If left blank, a localized default message will be displayed.
+8. Customize the SAML login link text. If left blank, a localized default message will be displayed.
 
 
-Register your domain on your identity provider
-----------------------------------------------
+Registering your domain on your identity provider
+-------------------------------------------------
 
-The configuration of the identity provider is implementation-dependant, but it always consists of importing the service
-provider metadata document to enable an identity federation.
+The configuration of the identity provider is implementation-dependant, but it always consists of importing the service provider metadata document to enable an identity federation.
 
 You can download the metadata document for your Opendatasoft domain on
-``https://<YOUR DOMAIN>/saml2/metadata.xml``
+``https://<YOUR DOMAIN>/saml2/metadata.xml``.
 
 
 Single logout
 -------------
 
-The Opendatasoft platform supports the standard SAML Single Logout flow using the HTTP-Redirect binding. That means that if the identity provider supports it, a log out from a SAML-connected user will trigger a log out from the identity provider, and log out requests from the identity provider will trigger a log out of the user on the platform.
+The Opendatasoft platform supports the standard SAML Single Logout flow using the HTTP-Redirect binding: 
+
+1. If supported by the identity provider, a log out from a SAML-connected user will trigger a log out from the identity provider.
+2. Log out requests from the identity provider will trigger a log out of the user on the platform.
