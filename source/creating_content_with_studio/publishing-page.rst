@@ -1,0 +1,56 @@
+.. _publishing-pages:
+
+Publishing a page
+=================
+
+You need to publish a page to make it available on your portal.
+
+.. admonition:: Prerequisites
+   :class: important
+   
+   Before you can publish a page, you need to configure the page information and the page access.
+   
+   For more information, see :ref:`configuring-page-info` and :ref:`managing-page-access`.
+
+Publishing a page from the list of pages
+----------------------------------------
+
+From the list of pages, you can publish a page in draft status.
+
+1. From the list of pages, hover over the desired page.
+2. Click the |eye| icon to publish the page.
+
+Publishing a page from the preview
+----------------------------------
+
+When previewing a page, you can publish it directly from the preview.
+
+1. When editing a page in the Studio, click the |play| icon from the left side pane.
+
+Your page opens as a preview.
+
+<PLACEHOLDER_SCREENSHOT_PREVIEW>
+
+2. Click **Publish** in the top-right corner.
+
+Publishing a page from the Studio
+---------------------------------
+
+From the Studio, you can publish a page in draft status.
+
+1. From the list of pages, click the page to be published.
+
+The Studio opens.
+
+<PLACEHOLDER_SCREENSHOT_STUDIO>
+
+2. Click **Publish**.
+
+
+.. |eye| raw:: html
+
+    <i class="fa fa-eye" aria-hidden-"true"></i>
+
+.. |play| raw:: html
+
+    <i class="fa fa-play" aria-hidden="true"></i>
