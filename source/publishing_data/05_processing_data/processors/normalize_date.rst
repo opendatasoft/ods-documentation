@@ -1,11 +1,11 @@
 Normalize date processor
 ========================
 
-This processor allows to parse a date which format is not automatically understood by the platform.
+This processor allows parsing a date whose format is not automatically understood by the platform.
 
-Example: if a date is in the dd/mm/YYYY format (commonly used format in France ; for instance 09/10/2017 for October 9th 2017), the platform will by default intervert day and month, based on the ISO 8601 ``YYYY-mm-dd`` ideal format (09/10/2017 will then be understood by the platform as September 10th 2017).
+For example, if a date is in the dd/mm/YYYY format (commonly used format in France; for example, "09/10/2017" for "October 9th, 2017"), the platform will by default invert day and month, based on the ISO 8601 YYYY-mm-dd ideal format ("09/10/2017" will then be understood by the platform as "September 10th, 2017").
 
-With this processor, you can normalize a date to the ISO 8601 format ``YYYY-mm-dd`` using the following syntax: ``%Y-%m-%d``.
+With this processor, you can normalize a date to the ISO 8601 format YYYY-mm-dd using the following syntax: ``%Y-%m-%d``.
 
 
 Setting the processor
@@ -23,14 +23,16 @@ To set the parameters of the Normalize date processor, follow the indications fr
     * Field containing the date not understood by the platform
     * yes
   * * Date format
-    * Date format pattern of the misunderstood date (see **Date format pattern** indications below to fill this parameter)
+    * Date format pattern of the misunderstood date. For more information about this parameter, see :ref:`date-format-pattern`.
     * yes
 
+.. _date-format-pattern:
 
 Date format pattern
 -------------------
 
-A pattern is an arbitrary string containing one of the following directives. Use these directives to write, in the Date format parameter, what is the right, current format of the date that the platform did not understand. Thanks to the processor, the platform will follow the indicated pattern to be able to understand the format of the date.
+A pattern is an arbitrary string containing one of the following directives. Use these directives to write the right, current format of the date that the platform did not understand in the Date format parameter.
+Thanks to the processor, the platform will follow the indicated pattern to understand the date format.
 
 .. list-table::
    :header-rows: 1
