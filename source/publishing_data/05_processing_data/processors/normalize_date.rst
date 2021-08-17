@@ -3,12 +3,9 @@ Normalize date processor
 
 This processor allows to parse a date which format is not automatically understood by the platform.
 
-Example: if a date is in the dd/mm/YYYY format (commonly used format in France ; for instance 09/10/2017 for October 9th 2017), the platform will by default intervert day and month, based on the ISO 8601 YYYY-mm-dd ideal format (09/10/2017 will then be understood by the platform as September 10th 2017).
+Example: if a date is in the dd/mm/YYYY format (commonly used format in France ; for instance 09/10/2017 for October 9th 2017), the platform will by default intervert day and month, based on the ISO 8601 ``YYYY-mm-dd`` ideal format (09/10/2017 will then be understood by the platform as September 10th 2017).
 
-.. admonition:: Note
-   :class: note
-
-   Keep in mind that the ideal date format is the ISO 8601 format, which is ``YYYY-mm-dd``.
+With this processor, you can normalize a date to the ISO 8601 format ``YYYY-mm-dd`` using the following syntax: ``%Y-%m-%d``.
 
 
 Setting the processor
