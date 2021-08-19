@@ -6,27 +6,10 @@ Exporting data
 
 Opendatasoft datasets can be downloaded in various formats. Standard formats are always available for any dataset. Other more specific formats can be available, but they depend on the nature of the data (that is, if the dataset contains geographical coordinates or not).
 
-In the Export tab of a dataset, the following formats can be available:
-
-- CSV
-- JSON
-- Excel
-- GeoJSON
-- Shapefile
-- KML
-
 .. admonition:: Note
    :class: note
 
-   It is possible to download the dataset in other formats using the `Opendatasoft Search API <https://help.opendatasoft.com/apis/ods-search-v2/#exporting-records>`_.
-
-.. admonition:: Note
-   :class: note
-
-   There are 2 limitations in Shapefile exports.
-
-   - The export cannot contain more than 50,000 records.
-   - The export cannot contain more than one geographical shape type (e.g. point, polygon, linestring etc.). Only the first type of the first non-empty record will be kept in the export.
+   It is possible to download the dataset in other formats using the `Opendatasoft Search API <https://help.opendatasoft.com/apis/ods-search-v2/#exporting-records>`_.  
 
 1. Go to the Export tab of the dataset.
 2. Choose the file format to download.
@@ -42,6 +25,51 @@ In the Export tab of a dataset, the following formats can be available:
 
    You can use the parameter :code:`use_labels_for_header=true` in the exports links to use the labels instead of the technical identifiers of the fields as a header (not available in API v2).
 
+Available export formats
+------------------------
+
+In the Export tab of a dataset, the following formats can be available:
+
+Flat file formats
+~~~~~~~~~~~~~~~~~
+
+.. list-table::
+   :header-rows: 1
+   :widths: 25 75
+
+   * * Format
+     * Notes
+   * * CSV
+     * CSV uses semicolon (;) as a separator. 
+   * * JSON
+     * 
+   * * Excel
+     * 
+
+Geographic file formats
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. admonition:: Important
+   :class: Important
+
+   The geographical coordinates of a dataset are expressed in WGS84 by default. When available, you can select additional geographical projections from the drop-down displayed above the export formats.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 25 75
+
+   * * Format
+     * Notes
+   * * GeoJSON
+     * 
+   * * Shapefile
+     * There are 2 limitations in Shapefile exports:
+
+        - The export cannot contain more than 50,000 records.
+        - The export cannot contain more than one geographical shape type (point, polygon, linestring etc.). Only the first type of the first non-empty record will be kept in the export.
+
+   * * KML
+     * 
 
 Exporting and downloading images
 --------------------------------
