@@ -2,28 +2,59 @@
 # Copyright (C) 2021, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
-# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018
-#
+# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021
+# Super Traducteur <admin+supertraducteur@opendatasoft.com>, 2021
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-11 15:26+0200\n"
+"POT-Creation-Date: 2021-08-23 11:41+0200\n"
 "PO-Revision-Date: 2018-06-27 09:13+0000\n"
-"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018\n"
+"Last-Translator: Super Traducteur <admin+supertraducteur@opendatasoft.com>, 2021\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
-"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:2
 msgid "Normalize date processor"
 msgstr "Procesador Normalizar fecha"
+
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:4
+msgid ""
+"This processor allows parsing a date whose format is not automatically "
+"understood by the platform."
+msgstr ""
+"Este procesador permite analizar una fecha cuyo formato no entiende "
+"automáticamente la plataforma."
+
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:6
+msgid ""
+"For example, if a date is in the dd/mm/YYYY format (commonly used format in "
+"France; for example, \"09/10/2017\" for \"October 9th, 2017\"), the platform"
+" will by default invert day and month, based on the ISO 8601 YYYY-mm-dd "
+"ideal format (\"09/10/2017\" will then be understood by the platform as "
+"\"September 10th, 2017\")."
+msgstr ""
+"Por ejemplo, si una fecha tiene el formato dd/mm/AAAA (el formato corriente "
+"en Francia, p. ej. \"09/10/2017\" para el \"9 de octubre de 2017\"), de "
+"forma predeterminada la plataforma intercambiará el día y el mes, según el "
+"formato ISO 8601 AAAA-mm-dd ideal (por consiguiente, la plataforma "
+"interpretará \"09/10/2017\" como \"10 de septiembre de 2017\")."
+
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:8
+msgid ""
+"With this processor, you can normalize a date to the ISO 8601 format YYYY-"
+"mm-dd using the following syntax: ``%Y-%m-%d``."
+msgstr ""
+"Con este procesador, puede normalizar una fecha según el formato ISO 8601 "
+"AAAA-mm-dd con esta sintaxis: ``%Y-%m-%d``."
 
 #: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:12
 msgid "Setting the processor"
@@ -66,9 +97,31 @@ msgstr "Sí"
 msgid "Date format"
 msgstr "Formato de fecha"
 
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:26
+msgid ""
+"Date format pattern of the misunderstood date. For more information about "
+"this parameter, see :ref:`date-format-pattern`."
+msgstr ""
+"Patrón del formato de fecha de la fecha equívoca. Para obtener más "
+"información acerca de este parámetro, consulte :ref:`date-format-pattern`."
+
 #: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:32
 msgid "Date format pattern"
 msgstr "Patrón del formato de fecha"
+
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:34
+msgid ""
+"A pattern is an arbitrary string containing one of the following directives."
+" Use these directives to write the right, current format of the date that "
+"the platform did not understand in the Date format parameter. Thanks to the "
+"processor, the platform will follow the indicated pattern to understand the "
+"date format."
+msgstr ""
+"Un patrón es una cadena arbitraria que contiene una de las directivas "
+"siguientes. Estas directivas permiten escribir la fecha actual apropiada que"
+" no ha entendido la plataforma dentro del parámetro Formato de fecha. "
+"Gracias al procesador, la plataforma seguirá el patrón indicado para "
+"entender el formato de la fecha."
 
 #: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:40
 msgid "Directive"
@@ -309,105 +362,3 @@ msgid ""
 msgstr ""
 "En el caso de las directivas %a, %A, %b, %B y %p, solo se admiten las "
 "representaciones de los valores en la configuración regional *en_US*."
-
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:4
-#, fuzzy
-msgid ""
-"This processor allows parsing a date whose format is not automatically "
-"understood by the platform."
-msgstr ""
-"Este procesador permite analizar una fecha cuyo formato no entiende "
-"automáticamente la plataforma."
-
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:6
-#, fuzzy
-msgid ""
-"For example, if a date is in the dd/mm/YYYY format (commonly used format in "
-"France; for example, \"09/10/2017\" for \"October 9th, 2017\"), the platform"
-" will by default invert day and month, based on the ISO 8601 YYYY-mm-dd "
-"ideal format (\"09/10/2017\" will then be understood by the platform as "
-"\"September 10th, 2017\")."
-msgstr ""
-"Ejemplo: Si una fecha tiene el formato dd/mm/AAAA (el formato corriente en "
-"Francia, p. ej. 09/10/2017 para el 9 de octubre de 2017), de forma "
-"predeterminada la plataforma intercambiará el día y el mes, según el formato"
-" ISO 8601 AAAA-mm-dd ideal (por consiguiente, la plataforma interpretará "
-"09/10/2017 como 10 de septiembre de 2017)."
-
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:8
-msgid ""
-"With this processor, you can normalize a date to the ISO 8601 format YYYY-"
-"mm-dd using the following syntax: ``%Y-%m-%d``."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:26
-msgid ""
-"Date format pattern of the misunderstood date. For more information about "
-"this parameter, see :ref:`date-format-pattern`."
-msgstr ""
-
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:34
-#, fuzzy
-msgid ""
-"A pattern is an arbitrary string containing one of the following directives."
-" Use these directives to write the right, current format of the date that "
-"the platform did not understand in the Date format parameter. Thanks to the "
-"processor, the platform will follow the indicated pattern to understand the "
-"date format."
-msgstr ""
-"Un patrón es una cadena arbitraria que contiene una de las directivas "
-"siguientes. Estas directivas permiten escribir, dentro del parámetro Formato"
-" de fecha, la fecha actual apropiada que no ha entendido la plataforma. "
-"Gracias al procesador, la plataforma seguirá el patrón indicado para poder "
-"entender el formato de la fecha."
-
-#~ msgid ""
-#~ "This processor allows to parse a date which format is not automatically "
-#~ "understood by the platform."
-#~ msgstr ""
-#~ "Este procesador permite analizar una fecha cuyo formato no entiende "
-#~ "automáticamente la plataforma."
-
-#~ msgid ""
-#~ "Example: if a date is in the dd/mm/YYYY format (commonly used format in "
-#~ "France ; for instance 09/10/2017 for October 9th 2017), the platform will by"
-#~ " default intervert day and month, based on the ISO 8601 YYYY-mm-dd ideal "
-#~ "format (09/10/2017 will then be understood by the platform as September 10th"
-#~ " 2017)."
-#~ msgstr ""
-#~ "Ejemplo: Si una fecha tiene el formato dd/mm/AAAA (el formato corriente en "
-#~ "Francia, p. ej. 09/10/2017 para el 9 de octubre de 2017), de forma "
-#~ "predeterminada la plataforma intercambiará el día y el mes, según el formato"
-#~ " ISO 8601 AAAA-mm-dd ideal (por consiguiente, la plataforma interpretará "
-#~ "09/10/2017 como 10 de septiembre de 2017)."
-
-#~ msgid "Note"
-#~ msgstr "Nota"
-
-#~ msgid ""
-#~ "Keep in mind that the ideal date format is the ISO 8601 format, which is "
-#~ "``YYYY-mm-dd``."
-#~ msgstr ""
-#~ "Tenga presente que el formato de fecha ideal es ISO 8601, que es ``AAAA-mm-"
-#~ "dd``."
-
-#~ msgid ""
-#~ "Date format pattern of the misunderstood date (see **Date format pattern** "
-#~ "indications below to fill this parameter)"
-#~ msgstr ""
-#~ "Patrón del formato de fecha de la fecha equívoca (consulte las indicaciones "
-#~ "de **Patrón del formato de fecha** siguientes para especificar este "
-#~ "parámetro)."
-
-#~ msgid ""
-#~ "A pattern is an arbitrary string containing one of the following directives."
-#~ " Use these directives to write, in the Date format parameter, what is the "
-#~ "right, current format of the date that the platform did not understand. "
-#~ "Thanks to the processor, the platform will follow the indicated pattern to "
-#~ "be able to understand the format of the date."
-#~ msgstr ""
-#~ "Un patrón es una cadena arbitraria que contiene una de las directivas "
-#~ "siguientes. Estas directivas permiten escribir, dentro del parámetro Formato"
-#~ " de fecha, la fecha actual apropiada que no ha entendido la plataforma. "
-#~ "Gracias al procesador, la plataforma seguirá el patrón indicado para poder "
-#~ "entender el formato de la fecha."
