@@ -6,18 +6,18 @@
 # Translators:
 # benrict <benoit.richter@opendatasoft.com>, 2018
 # Hugo Bost <hugo.bost@opendatasoft.com>, 2018
-# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2018
 # Trad_FR2 <datawords.translator.fr2@gmail.com>, 2018
 # Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2018
+# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-11 12:31+0200\n"
+"POT-Creation-Date: 2021-08-23 11:41+0200\n"
 "PO-Revision-Date: 2018-06-27 09:13+0000\n"
-"Last-Translator: Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2018\n"
+"Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2021\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,43 +31,39 @@ msgstr "Processeur Normaliser une Date"
 
 #: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:4
 msgid ""
-"This processor allows to parse a date which format is not automatically "
+"This processor allows parsing a date whose format is not automatically "
 "understood by the platform."
 msgstr ""
-"Ce processeur permet d'interpréter une date dans un format qui n'est pas "
+"Ce processeur permet d'interpréter une date dont le format n'est pas "
 "automatiquement compris par la plateforme."
 
 #: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:6
 msgid ""
-"Example: if a date is in the dd/mm/YYYY format (commonly used format in "
-"France ; for instance 09/10/2017 for October 9th 2017), the platform will by"
-" default intervert day and month, based on the ISO 8601 YYYY-mm-dd ideal "
-"format (09/10/2017 will then be understood by the platform as September 10th"
-" 2017)."
+"For example, if a date is in the dd/mm/YYYY format (commonly used format in "
+"France; for example, \"09/10/2017\" for \"October 9th, 2017\"), the platform"
+" will by default invert day and month, based on the ISO 8601 YYYY-mm-dd "
+"ideal format (\"09/10/2017\" will then be understood by the platform as "
+"\"September 10th, 2017\")."
 msgstr ""
-"Exemple : si une date est au format jj/mm/AAAA (format couramment utilisé en"
-" France ; par ex. 09/10/2017 pour le 9 octobre 2017), la plateforme "
-"inversera par défaut le jour et le mois en fonction du format idéal AAAA-mm-"
-"jj ISO 8601 (la plateforme comprendra alors que 09/10/2017 correspond au 10 "
-"septembre 2017)."
+"Par exemple, si une date est au format jj/mm/AAAA (format couramment utilisé"
+" en France ; p. ex. « 09/10/2017 » pour le « 9 octobre 2017 »), la "
+"plateforme inversera par défaut le jour et le mois en fonction du format "
+"idéal AAAA-mm-jj ISO 8601 (la plateforme comprendra alors que « 09/10/2017 »"
+" correspond au « 10 septembre 2017 »)."
 
 #: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:8
-msgid "Note"
-msgstr "Remarque"
-
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:11
 msgid ""
-"Keep in mind that the ideal date format is the ISO 8601 format, which is "
-"``YYYY-mm-dd``."
+"With this processor, you can normalize a date to the ISO 8601 format YYYY-"
+"mm-dd using the following syntax: ``%Y-%m-%d``."
 msgstr ""
-"Gardez à l'esprit que le format ISO 8601, c'est-à-dire ``AAAA-mm-jj`` est le"
-" format idéal."
+"Avec ce processeur, vous pouvez normaliser une date pour la convertir au "
+"format YYYY-mm-dd ISO 8601 à l'aide de la syntaxe suivante : ``%Y-%m-%d``."
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:15
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:12
 msgid "Setting the processor"
 msgstr "Configurer le processeur"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:17
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:14
 msgid ""
 "To set the parameters of the Normalize date processor, follow the "
 "indications from the table below."
@@ -75,267 +71,266 @@ msgstr ""
 "Pour définir les paramètres du processeur Normaliser une Date, suivez les "
 "indications du tableau ci-dessous."
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:22
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:19
 msgid "Label"
 msgstr "Label"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:23
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:20
 msgid "Description"
 msgstr "Description"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:24
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:21
 msgid "Mandatory"
 msgstr "Obligatoire"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:25
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:22
 msgid "Field"
 msgstr "Champ"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:26
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:23
 msgid "Field containing the date not understood by the platform"
 msgstr "Champ contenant la date qui n'est pas comprise par la plateforme"
 
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:24
 #: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:27
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:30
 msgid "yes"
 msgstr "oui"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:28
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:25
 msgid "Date format"
 msgstr "Format de date"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:29
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:26
 msgid ""
-"Date format pattern of the misunderstood date (see **Date format pattern** "
-"indications below to fill this parameter)"
+"Date format pattern of the misunderstood date. For more information about "
+"this parameter, see :ref:`date-format-pattern`."
 msgstr ""
-"Modèle de format de date correspondant à la date non comprise (consultez les"
-" indications relatives à **Modèle de format de date** ci-dessous pour "
-"renseigner ce paramètre) "
+"Modèle de format de date de la date qui n'est pas comprise. Pour plus "
+"d'informations sur ce paramètre, consultez :ref:`date-format-pattern`. "
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:34
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:32
 msgid "Date format pattern"
 msgstr "Modèle de format de date"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:36
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:34
 msgid ""
 "A pattern is an arbitrary string containing one of the following directives."
-" Use these directives to write, in the Date format parameter, what is the "
-"right, current format of the date that the platform did not understand. "
-"Thanks to the processor, the platform will follow the indicated pattern to "
-"be able to understand the format of the date."
+" Use these directives to write the right, current format of the date that "
+"the platform did not understand in the Date format parameter. Thanks to the "
+"processor, the platform will follow the indicated pattern to understand the "
+"date format."
 msgstr ""
 "Un modèle est une chaîne de caractères arbitraire comprenant l'une des "
-"directives suivantes. Utilisez ces directives pour indiquer, dans le "
-"paramètre Format de date, quel est le format actuel de la date que la "
-"plateforme ne comprend pas. Ce processeur permet à la plateforme de suivre "
-"le modèle indiqué pour pouvoir comprendre le format de la date."
+"directives suivantes. Utilisez ces directives pour indiquer le format actuel"
+" de la date que la plateforme ne comprend pas dans le paramètre Format de "
+"date. Ce processeur permet à la plateforme de suivre le modèle indiqué pour "
+"comprendre le format de la date."
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:41
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:40
 msgid "Directive"
 msgstr "Directive"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:42
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:41
 msgid "Meaning"
 msgstr "Signification"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:43
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:42
 msgid "Example"
 msgstr "Exemple"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:44
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:43
 msgid "%a"
 msgstr "%a"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:45
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:44
 msgid "Weekday as locale’s abbreviated name"
 msgstr "Jour de la semaine en abrégé et en anglais"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:46
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:45
 msgid "Sun, Mon, ..., Sat"
 msgstr "Sun, Mon, ..., Sat"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:47
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:46
 msgid "%A"
 msgstr "%A"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:48
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:47
 msgid "Weekday as locale’s full name"
 msgstr "Jour de la semaine en entier et en anglais"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:49
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:48
 msgid "Sunday, Monday, ..., Saturday"
 msgstr "Sunday, Monday, ..., Saturday"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:50
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:49
 msgid "%w"
 msgstr "%w"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:51
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:50
 msgid "Weekday as a decimal number, where 0 is Sunday and 6 is Saturday"
 msgstr ""
 "Jour de la semaine sous forme de nombre, sachant que 0 correspond à dimanche"
 " et 6 correspond à samedi"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:52
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:51
 msgid "0, 1, ..., 6"
 msgstr "0, 1, ..., 6"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:53
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:52
 msgid "%d"
 msgstr "%d"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:54
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:53
 msgid "Day of the month as a zero-padded decimal number"
 msgstr "Jour du mois sous forme de nombre à 2 chiffres"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:55
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:54
 msgid "01, 02, ..., 31"
 msgstr "01, 02, ..., 31"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:56
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:55
 msgid "%b"
 msgstr "%b"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:57
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:56
 msgid "Month as locale’s abbreviated name"
 msgstr "Mois en abrégé et en anglais"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:58
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:57
 msgid "Jan, Feb, ..., Dec"
 msgstr "Jan, Feb, ..., Dec"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:59
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:58
 msgid "%B"
 msgstr "%B"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:60
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:59
 msgid "Month as locale’s full name"
 msgstr "Mois en entier et en anglais"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:61
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:60
 msgid "January, February, ..., December"
 msgstr "January, February, ..., December"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:62
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:61
 msgid "%m"
 msgstr "%m"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:63
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:62
 msgid "Month as a zero-padded decimal number"
 msgstr "Mois sous forme de nombre à 2 chiffres"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:64
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:76
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:63
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:75
 msgid "01, 02, ..., 12"
 msgstr "01, 02, ..., 12"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:65
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:64
 msgid "%y"
 msgstr "%y"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:66
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:65
 msgid "Year without century as a zero-padded decimal number"
 msgstr "Année sans le siècle sous forme de nombre à 2 chiffres"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:67
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:66
 msgid "00, 01, ..., 99"
 msgstr "00, 01, ..., 99"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:68
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:67
 msgid "%Y"
 msgstr "%Y"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:69
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:68
 msgid "Year with century as a decimal number"
 msgstr "Année avec le siècle sous forme de nombre"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:70
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:69
 msgid "1970, 1988, 2001, 2013"
 msgstr "1970, 1988, 2001, 2013"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:71
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:70
 msgid "%H"
 msgstr "%H"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:72
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:71
 msgid "Hour (24-hour clock) as a zero-padded decimal number"
 msgstr "Heure (en 24 heures) sous forme de nombre à 2 chiffres"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:73
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:72
 msgid "00, 01, ..., 23"
 msgstr "00, 01, ..., 23"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:74
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:73
 msgid "%I"
 msgstr "%I"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:75
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:74
 msgid "Hour (12-hour clock) as a zero-padded decimal number"
 msgstr "Heure (en 12 heures) sous forme de nombre à 2 chiffres"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:77
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:76
 msgid "%p"
 msgstr "%p"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:78
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:77
 msgid "Locale’s equivalent of either AM or PM"
 msgstr "Indique AM ou PM selon le matin ou l'après-midi"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:79
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:78
 msgid "AM, PM"
 msgstr "AM, PM"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:80
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:79
 msgid "%M"
 msgstr "%M"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:81
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:80
 msgid "Minute as a zero-padded decimal number"
 msgstr "Minute sous forme de nombre à 2 chiffres"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:82
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:85
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:81
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:84
 msgid "00, 01, ..., 59"
 msgstr "00, 01, ..., 59"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:83
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:82
 msgid "%S"
 msgstr "%S"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:84
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:83
 msgid "Second as a zero-padded decimal number"
 msgstr "Secondes sous forme de nombre à 2 chiffres"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:86
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:85
 msgid "%f"
 msgstr "%f"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:87
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:86
 msgid "Microsecond as a decimal number, zero-padded on the left"
 msgstr "Microsecondes sous forme de nombre à 6 chiffres"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:88
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:87
 msgid "000000, 000001, ..., 999999"
 msgstr "000000, 000001, ..., 999999"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:89
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:88
 msgid "%j"
 msgstr "%j"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:90
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:89
 msgid "Day of the year as a zero-padded decimal number"
 msgstr "Jour de l'année sous forme de nombre à 3 chiffres"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:91
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:90
 msgid "001, 002, ..., 366"
 msgstr "001, 002, ..., 366"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:92
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:91
 msgid "%U"
 msgstr "%U"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:93
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:92
 msgid ""
 "Week number of the year (Sunday as the first day of the week) as a zero "
 "padded decimal number. All days in a new year preceding the first Sunday are"
@@ -346,16 +341,16 @@ msgstr ""
 "nouvelle année précédant le premier dimanche sont considérés comme étant "
 "dans la semaine 0"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:94
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:97
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:93
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:96
 msgid "00, 01, ..., 53"
 msgstr "00, 01, ..., 53"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:95
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:94
 msgid "%W"
 msgstr "%W"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:96
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:95
 msgid ""
 "Week number of the year (Monday as the first day of the week) as a decimal "
 "number. All days in a new year preceding the first Monday are considered to "
@@ -366,7 +361,7 @@ msgstr ""
 "année précédant le premier lundi sont considérés comme étant dans la semaine"
 " 0"
 
-#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:99
+#: ../../source/publishing_data/05_processing_data/processors/normalize_date.rst:98
 msgid ""
 "For the directives %a, %A, %b, %B and %p, we only support representations of"
 " their values in the locale *en_US*."
