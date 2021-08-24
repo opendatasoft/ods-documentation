@@ -119,6 +119,8 @@ The images visualization is accessible from the Images tab.
 
 It displays the thumbnails of the images of the dataset. When clicking on a thumbnail, the metadata of the image are displayed. Below the metadata is also displayed a Download image button, to download the selected image.
 
+.. _visualizing-data-calendar:
+
 Visualizing data in a calendar
 ------------------------------
 
