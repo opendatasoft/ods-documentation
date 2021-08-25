@@ -14,6 +14,7 @@ In the Export tab of a dataset, the following formats can be available:
 - GeoJSON
 - Shapefile
 - KML
+- iCalendar (only if the :ref:`calendar visualization <visualizing-data-calendar>` has been enabled for the dataset)
 
 .. admonition:: Note
    :class: note
