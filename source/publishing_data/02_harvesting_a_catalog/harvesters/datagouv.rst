@@ -22,7 +22,14 @@ Parameters
      * Description
      * Example
    * * Organization ID (organization_id)
-     * The **id** of the organization you want to harvest (found here: https://www.data.gouv.fr/api/1/organizations/)
+     * The identifier of the organization you want to harvest. 
+ 
+       You can find the identifier for a specific organization as follows:
+
+       1. Go to https://www.data.gouv.fr/fr/organizations/.
+       2. Search for an organization.
+       3. Click on the desired result to open it.
+       4. On the desired organization page, you'll find the `ID` under the "Informations techniques" section.
      * 534fffa5a3a7292c64a7809e
    * * Attachment (generate attachment)
      * Check this if you want to attach resources as attachments instead of using them as sources
