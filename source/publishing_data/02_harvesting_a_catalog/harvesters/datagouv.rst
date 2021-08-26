@@ -31,12 +31,12 @@ Parameters
        3. Click on the desired result to open it.
        4. On the desired organization page, you'll find the `ID` under the "Informations techniques" section.
      * 534fffa5a3a7292c64a7809e
-   * * Attachment (generate attachment)
-     * Check this if you want to attach resources as attachments instead of using them as sources
-     *
    * * Filter parameter name (filter_name)
      * Name of the parameter you want to pass to the data.gouv.fr API to filter the request that will be performed
      *
    * * Filter parameter value (filter_value)
      * Value of the above parameter
+     *
+   * * Attachment (generate attachment)
+     * Select this checkbox to attach resources as attachments instead of using them as sources.
      *
