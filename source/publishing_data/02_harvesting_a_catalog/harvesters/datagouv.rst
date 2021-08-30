@@ -46,7 +46,7 @@ Parameters
    * * Filter parameter value (filter_value)
      * The value of the filter parameter
 
-       The value for some filter parameters has a very specific syntax. You can perform a search on https://www.data.gouv.fr/fr/datasets/ to get some hints about possible values.
+       The value for some filter parameters has a very specific syntax. When performing a search on `data.gouv.fr <https://www.data.gouv.fr/fr/datasets/>`_, the URL is of the form ``data.gouv.fr/fr/datasets/?[filter_name]=[filter_value]``. You can retrieve the values from the URL to set your harvester.
      * ``2020-01-01-2020-12-31`` is the value for ``temporal-coverage`` if you want to filter datasets covering the period starting from 01 January 2020 to 31 December 2020.
    * * Attachment (attachment)
      * Select this checkbox to attach resources as attachments instead of using them as sources.
