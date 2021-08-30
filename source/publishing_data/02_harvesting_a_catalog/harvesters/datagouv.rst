@@ -17,19 +17,37 @@ Parameters
 
 .. list-table::
    :header-rows: 1
+   :widths: 25 50 25
 
    * * Name
      * Description
-     * Example
+     * Examples
    * * Organization ID (organization_id)
-     * The **id** of the organization you want to harvest (found here: https://www.data.gouv.fr/api/1/organizations/)
-     * 534fffa5a3a7292c64a7809e
-   * * Attachment (generate attachment)
-     * Check this if you want to attach resources as attachments instead of using them as sources
-     *
+     * The identifier of the organization you want to harvest. 
+ 
+       You can find the identifier for a specific organization as follows:
+
+       1. Go to https://www.data.gouv.fr/fr/organizations/.
+       2. Search for an organization.
+       3. Click on the desired result to open it.
+       4. On the desired organization page, you'll find the `ID` under the "Informations techniques" section.
+     * ``534fff75a3a7292c64a77de4`` is the identifier for etalab.
    * * Filter parameter name (filter_name)
-     * Name of the parameter you want to pass to the data.gouv.fr API to filter the request that will be performed
-     *
+     * The name of the parameter you want to pass to the data.gouv.fr API to filter the request that will be performed:
+       
+       - ``tag`` is used to filter datasets associated with a specific keyword.
+       - ``license`` is used to filter datasets published under a specific license.
+       - ``temporal_coverage`` is used to filter datasets with data covering a specific period.
+       - ``geozone`` is used to filter datasets with data covering a specific geographical area.
+       - ``granularity`` is used to filter datasets with a specific territorial coverage granularity.
+       - ``format`` is used to filter datasets published under a specific format.
+
+     * ``temporal-coverage``
    * * Filter parameter value (filter_value)
-     * Value of the above parameter
-     *
+     * The value of the filter parameter
+
+       The value for some filter parameters has a very specific syntax. When performing a search on `data.gouv.fr <https://www.data.gouv.fr/fr/datasets/>`_, the URL is of the form ``data.gouv.fr/fr/datasets/?[filter_name]=[filter_value]``. You can retrieve the values from the URL to set your harvester.
+     * ``2020-01-01-2020-12-31`` is the value for ``temporal-coverage`` if you want to filter datasets covering the period starting from 01 January 2020 to 31 December 2020.
+   * * Attachment (attachment)
+     * Select this checkbox to attach resources as attachments instead of using them as sources.
+     * 
