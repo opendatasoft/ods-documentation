@@ -106,28 +106,42 @@ The following table lists the supported file formats. For more information about
 
    * * File format
      * File extension
-   * * :doc:`CSV </publishing_data/04_configuring_a_source/connectors/csv>`
+   * * :doc:`CSV <connectors/csv>`
      * .csv, .tsv, .txt, .dat
-   * * :doc:`Microsoft Excel </publishing_data/04_configuring_a_source/connectors/spreadsheet>`
+   * * :doc:`Microsoft Excel <connectors/spreadsheet>`
      * .xls, .xlsx
-   * * :doc:`OpenDocument Spreadsheet </publishing_data/04_configuring_a_source/connectors/spreadsheet>`
+   * * :doc:`OpenDocument Spreadsheet <connectors/spreadsheet>`
      * .ods
-   * * :doc:`JSON </publishing_data/04_configuring_a_source/connectors/json>`
+   * * :doc:`JSON <connectors/json>`
      * .json
-   * * :doc:`GeoJSON </publishing_data/04_configuring_a_source/connectors/geojson>`
+   * * :doc:`GeoJSON <connectors/geojson>`
      * .json, .geojson
-   * * :doc:`KML/KMZ </publishing_data/04_configuring_a_source/connectors/kml>`
+   * * :doc:`KML/KMZ <connectors/kml>`
      * .kml, .kmz
-   * * :doc:`Shapefile </publishing_data/04_configuring_a_source/connectors/shapefile>`
+   * * :doc:`Shapefile <connectors/shapefile>`
      *  .zip
-   * * :doc:`MapInfo </publishing_data/04_configuring_a_source/connectors/mapinfo>`
+   * * :doc:`MapInfo <connectors/mapinfo>`
      * .zip
-   * * :doc:`OpenStreetMap </publishing_data/04_configuring_a_source/connectors/osm>`
+   * * :doc:`OpenStreetMap <connectors/osm>`
      * .osm
-   * * :doc:`RDF </publishing_data/04_configuring_a_source/connectors/rdf>`
+   * * :doc:`RDF <connectors/rdf>`
      * .rdf
-   * * :doc:`XML </publishing_data/04_configuring_a_source/connectors/xml>`
-     * .xml      
+   * * :doc:`XML <connectors/xml>`
+     * .xml
+
+.. toctree::
+   :hidden:
+
+   connectors/csv
+   connectors/geojson
+   connectors/json
+   connectors/kml
+   connectors/mapinfo
+   connectors/osm
+   connectors/rdf
+   connectors/shapefile
+   connectors/spreadsheet
+   connectors/xml
 
 .. _supportedcompressedformats:
 
