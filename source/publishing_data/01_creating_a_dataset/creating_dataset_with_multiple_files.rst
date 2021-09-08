@@ -45,7 +45,7 @@ For more information, see :ref:`supportedformats`.
    With this method, the platform chooses the file with the oldest modification time to determine the data schema.
 
 1. Create an archive file with the files to add to the same dataset.
-2. In Catalog > Datasets, click on the **New dataset** button.
+2. In **Catalog** > **Datasets**, click on the **New dataset** button.
 3. Add the archive file as a source, using one of the 3 available methods under the **Retrieve a file** section. For more information, see - :doc:`Retrieving a file from your computer, a URL, or an FTP server<retrieving_file>`.
 4. From the preview of the first 20 records that opens, configure the source.
 5. Configure the dataset information or use the pre-filled values.
@@ -61,7 +61,7 @@ This method consists of connecting the platform to the directory of an FTP serve
 
    All the files in the directory need to have the same format and schema (for example, CSV files with the same column titles). Files must also not be inside subdirectories: if the URL points towards a directory containing a compressed file, the latter will be imported into the platform as such -it will not be unzipped.
 
-1. In Catalog > Datasets, click on the **New dataset** button.
+1. In **Catalog** > **Datasets**, click on the **New dataset** button.
 2. In the wizard that opens, select **From an FTP server** under the **Retrieve a file** section.
 3. Configure your FTP connection.
 

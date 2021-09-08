@@ -34,7 +34,7 @@ Before you begin, retrieve your Eco Counter API key.
 5. Configure the dataset information or use the pre-filled values:
    
    - In the **Dataset name** field, enter the title for this dataset.
-   - In the **Technical identifier** field, enter a meaningful identifier for this dataset.
+   - In the **Dataset technical identifier** field, enter a meaningful identifier for this dataset.
 
 
 Configuration
