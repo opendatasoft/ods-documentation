@@ -40,6 +40,8 @@ You can connect the platform to:
 
 Opendatasoft supports HTTP and HTTPS URLs to files, for example, `http://example.org/mydata.csv`.
 
+Opendatasoft supports the following authenticated connection methods: login/password, API key, and supplying info within an HTTP header.
+
 1. In **Catalog** > **Datasets**, click on the **New dataset** button.
 2. In the wizard that opens, select **From a URL** under the **Retrieve a file** section.
 3. Configure your HTTP connection.
