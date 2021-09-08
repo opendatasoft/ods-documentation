@@ -13,7 +13,7 @@ Selecting the dataset
 
 To retrieve a dataset from your domain or another domain, you need to select it.
 
-1. In **Catalog > Datasets**, click on the **New dataset** button.
+1. In **Catalog** > **Datasets**, click on the **New dataset** button.
 2. In the wizard that opens, select the desired option under the **Retrieve a dataset published with Opendatasoft** section:
 
    - Select **Opendatasoft network** to get a list of all public datasets published on all Opendatasoft domains.
