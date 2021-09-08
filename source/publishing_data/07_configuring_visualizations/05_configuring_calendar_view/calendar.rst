@@ -13,6 +13,8 @@ The Calendar visualization, when available, is optional. It can be enabled or di
 
 .. image:: images/calendar_view_configuration.png
 
+When the Calendar visualization is enabled, the published dataset can be exported in iCalendar format from the Export tab of the front office.
+
 To configure the Calendar visualization, follow the indications from the tables below.
 
 .. list-table::
