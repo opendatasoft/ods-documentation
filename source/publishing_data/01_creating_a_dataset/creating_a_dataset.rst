@@ -10,7 +10,7 @@ When you create a dataset, you start with adding a source.
 You can add a source to a dataset in the following ways:
 
 - :doc:`Retrieving a file from your computer, a URL, or an FTP server<retrieving_file>`
-- :doc:`Retrieving a dataset published with Opendatasoft<federating_data>`
+- :doc:`Retrieving an Opendatasoft dataset<retrieving_dataset>`
 - :doc:`Configuring a remote service<configuring_remote_service>`
 
 
@@ -33,7 +33,7 @@ From the **Dataset information** screen, you can configure the dataset title and
    :hidden:
 
    retrieving_file
-   federating_data
+   retrieving_dataset
    configuring_remote_service
    creating_dataset_with_multiple_files
    creating_dataset_with_images
