@@ -35,5 +35,5 @@ From the **Dataset information** screen, you can configure the dataset title and
    retrieving_file
    federating_data
    configuring_remote_service
-   creating_dataset_with_images
    creating_dataset_with_multiple_files
+   creating_dataset_with_images
