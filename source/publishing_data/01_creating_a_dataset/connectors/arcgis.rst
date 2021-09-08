@@ -22,7 +22,7 @@ Creation
 5. Configure the dataset information or use the pre-filled values:
    
    - In the **Dataset name** field, enter the title for this dataset.
-   - In the **Technical identifier** field, enter a meaningful identifier for this dataset.
+   - In the **Dataset technical identifier** field, enter a meaningful identifier for this dataset.
    - If you want anyone with access to your domain to be able to explore the dataset, toggle off **Access restricted to allowed users and groups**.
 
 Configuration
