@@ -22,11 +22,13 @@ To retrieve data from your source, you must establish the connection between thi
 
 From the preview, you can configure your source.
 
-For more information about the sources you can connect to and their configuration, see :doc:`/publishing_data/04_configuring_a_source/configuring_source/`.
+For more information about the sources you can connect to and their configuration, see :ref:`supportedformats` and :ref:`connectors_remote_services`.
 
 .. rubric:: Step 4: Configuring the dataset standard metadata and access rights
 
 From the **Dataset information** screen, you can configure the dataset title and technical identifier to keep or edit the default values. You can also set up the dataset access rights.
+
+After you create a dataset, you can add a new source, or edit an existing source and its connection using the **Sources** tab of the desired dataset.
 
 .. toctree::
    :titlesonly:
