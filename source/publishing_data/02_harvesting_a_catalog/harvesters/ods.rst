@@ -25,4 +25,4 @@ Parameters
 .. admonition:: Note
    :class: note
 
-   If you want to harvest a single Opendatasoft dataset, you can use the :doc:`federation </publishing_data/01_creating_a_dataset/federating_data>`
+   If you want to harvest a single Opendatasoft dataset, you can :doc:`retrieve an Opendatasoft dataset </publishing_data/01_creating_a_dataset/retrieving_dataset>`.
