@@ -67,6 +67,18 @@ Geographic file formats
    * * KML
      * 
 
+Specialized formats
+~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+   :header-rows: 1
+   :widths: 25 75
+   
+   * * Format
+     * Notes
+   * * iCalendar
+     * The export is available only if the :ref:`calendar visualization <visualizing-data-calendar>` has been enabled for the dataset.
+
 Exporting and downloading images
 --------------------------------
 

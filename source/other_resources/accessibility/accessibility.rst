@@ -79,7 +79,7 @@ We will do our best to fix those issues in the forthcoming releases.
 
 .. |RGAA| raw:: html
 
-   <a href="http://references.modernisation.gouv.fr/rgaa-accessibilite/criteres.html" target="_blank">Référentiel Général d'Accessibilité pour les Administrations (RGAA)</a>
+   <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/" target="_blank">Référentiel Général d'Accessibilité pour les Administrations (RGAA)</a>
 
 .. |ADA| raw:: html
 

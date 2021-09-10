@@ -5,16 +5,16 @@
 # 
 # Translators:
 # Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2018
-# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2020
+# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-11 15:26+0200\n"
+"POT-Creation-Date: 2021-09-08 08:31+0200\n"
 "PO-Revision-Date: 2018-06-27 09:11+0000\n"
-"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2020\n"
+"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,62 +48,156 @@ msgstr ""
 msgid "Parameters"
 msgstr "Parámetros"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:21
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:22
 msgid "Name"
 msgstr "Nombre"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:22
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:23
 msgid "Description"
 msgstr "Descripción"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:23
-msgid "Example"
-msgstr "Ejemplo"
-
 #: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:24
+msgid "Examples"
+msgstr "Ejemplos"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:25
 msgid "Organization ID (organization_id)"
 msgstr "ID de organización (organization_id)"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:25
-msgid ""
-"The **id** of the organization you want to harvest (found here: "
-"https://www.data.gouv.fr/api/1/organizations/)"
-msgstr ""
-"El **ID** de la organización que desea recolectar (se encuentra aquí: "
-"https://www.data.gouv.fr/api/1/organizations/)."
-
 #: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:26
-msgid "534fffa5a3a7292c64a7809e"
-msgstr "534fffa5a3a7292c64a7809e"
-
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:27
-msgid "Attachment (generate attachment)"
-msgstr "Asociación (Generar asociación)"
+msgid "The identifier of the organization you want to harvest."
+msgstr "El identificador de la organización que desea recolectar."
 
 #: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:28
-msgid ""
-"Check this if you want to attach resources as attachments instead of using "
-"them as sources"
+msgid "You can find the identifier for a specific organization as follows:"
 msgstr ""
-"Seleccione esta opción si desea asociar los recursos en lugar de usarlos "
-"como orígenes."
+"Puede encontrar el identificador de una organización específica siguiendo "
+"este procedimiento:"
 
 #: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:30
+msgid "Go to https://www.data.gouv.fr/fr/organizations/."
+msgstr "Vaya a https://www.data.gouv.fr/fr/organizations/."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:31
+msgid "Search for an organization."
+msgstr "Busque una organización."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:32
+msgid "Click on the desired result to open it."
+msgstr "Haga clic en el resultado deseado para abrirlo."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:33
+msgid ""
+"On the desired organization page, you'll find the `ID` under the "
+"\"Informations techniques\" section."
+msgstr ""
+"En la página de la organización en cuestión, encontrará el identificador "
+"(`ID`) bajo la sección \"Informations techniques\"."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:34
+msgid "``534fff75a3a7292c64a77de4`` is the identifier for etalab."
+msgstr "``534fff75a3a7292c64a77de4`` es el identificador de etalab."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:35
 msgid "Filter parameter name (filter_name)"
 msgstr "Nombre de parámetro de filtro (filter_name)"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:31
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:36
 msgid ""
-"Name of the parameter you want to pass to the data.gouv.fr API to filter the"
-" request that will be performed"
+"The name of the parameter you want to pass to the data.gouv.fr API to filter"
+" the request that will be performed:"
 msgstr ""
 "Nombre del parámetro que desea pasar a la API data.gouv.fr para filtrar la "
-"solicitud que se ejecutará."
+"solicitud que se ejecutará:"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:33
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:38
+msgid "``tag`` is used to filter datasets associated with a specific keyword."
+msgstr ""
+"``tag`` permite filtrar los conjuntos de datos asociados a una palabra clave"
+" específica."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:39
+msgid ""
+"``license`` is used to filter datasets published under a specific license."
+msgstr ""
+"``license`` permite filtrar los conjuntos de datos publicados bajo una "
+"licencia específica."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:40
+msgid ""
+"``temporal_coverage`` is used to filter datasets with data covering a "
+"specific period."
+msgstr ""
+"``temporal_coverage`` permite filtrar los conjuntos de datos con datos que "
+"cubren un periodo específico."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:41
+msgid ""
+"``geozone`` is used to filter datasets with data covering a specific "
+"geographical area."
+msgstr ""
+"``geozone`` permite filtrar los conjuntos de datos con datos que cubren una "
+"zona geográfica específica."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:42
+msgid ""
+"``granularity`` is used to filter datasets with a specific territorial "
+"coverage granularity."
+msgstr ""
+"``granularity`` permite filtrar los conjuntos de datos con una granularidad "
+"de cobertura territorial específica."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:43
+msgid ""
+"``format`` is used to filter datasets published under a specific format."
+msgstr ""
+"``format`` permite filtrar los conjuntos de datos publicados con un formato "
+"específico."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:45
+msgid "``temporal-coverage``"
+msgstr "``temporal-coverage``"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:46
 msgid "Filter parameter value (filter_value)"
 msgstr "Valor de parámetro de filtro (filter_value)"
 
-#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:34
-msgid "Value of the above parameter"
-msgstr "Valor del parámetro anterior."
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:47
+msgid "The value of the filter parameter"
+msgstr "Valor del parámetro de filtro"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:49
+msgid ""
+"The value for some filter parameters has a very specific syntax. When "
+"performing a search on `data.gouv.fr "
+"<https://www.data.gouv.fr/fr/datasets/>`_, the URL is of the form "
+"``data.gouv.fr/fr/datasets/?[filter_name]=[filter_value]``. You can retrieve"
+" the values from the URL to set your harvester."
+msgstr ""
+"El valor de algunos parámetros de filtro tiene una sintaxis muy concreta. Al"
+" efectuar una búsqueda en `data.gouv.fr "
+"<https://www.data.gouv.fr/fr/datasets/>`_, la dirección URL tiene el formato"
+" ``data.gouv.fr/fr/datasets/?[filter_name]=[filter_value]``. Puede recuperar"
+" los valores de la dirección URL para definir el recolector."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:50
+msgid ""
+"``2020-01-01-2020-12-31`` is the value for ``temporal-coverage`` if you want"
+" to filter datasets covering the period starting from 01 January 2020 to 31 "
+"December 2020."
+msgstr ""
+"``2020-01-01-2020-12-31`` es el valor de ``temporal-coverage`` si desea "
+"filtrar los conjuntos de datos que cubren el periodo del 1 de enero de 2020 "
+"al 31 de diciembre de 2020."
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:51
+msgid "Attachment (attachment)"
+msgstr "Asociación (attachment)"
+
+#: ../../source/publishing_data/02_harvesting_a_catalog/harvesters/datagouv.rst:52
+msgid ""
+"Select this checkbox to attach resources as attachments instead of using "
+"them as sources."
+msgstr ""
+"Seleccione esta casilla para asociar los recursos en lugar de usarlos como "
+"orígenes."
