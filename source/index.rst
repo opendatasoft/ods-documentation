@@ -1,5 +1,5 @@
-Welcome to the user manual of the Opendatasoft platform!
-========================================================
+Welcome to the user guide of the Opendatasoft platform!
+=======================================================
 
 `Opendatasoft <https://www.opendatasoft.com/>`_ is a turnkey solution designed for non-technical users to share, publish, and reuse data. It is available as a commercial-off-the-shelf, cloud-hosted product.
 
@@ -10,7 +10,7 @@ Opendatasoft includes a unique set of integrated features:
 * to publish these datasets as RESTFul APIs,
 * to explore the datasets catalog, to visualize individual datasets, or build multi-datasets mashups.
 
-This documentation is Opendatasoft's reference user manual.
+This documentation is Opendatasoft's reference user guide.
 
 .. admonition:: Note
    :class: note
