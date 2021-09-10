@@ -48,7 +48,7 @@ Geographic file formats
 .. admonition:: Important
    :class: Important
 
-   The geographical coordinates of a dataset are expressed in WGS84 by default. When available, you can select additional geographical projections from the drop-down displayed above the export formats.
+   The geographical coordinates of a dataset are expressed in WGS84 by default. When made available by the data producer, you can select additional geographical projections from the drop-down displayed above the export formats.
 
 .. list-table::
    :header-rows: 1
@@ -62,7 +62,9 @@ Geographic file formats
      * There are 2 limitations in Shapefile exports:
 
         - The export cannot contain more than 50,000 records.
-        - The export cannot contain more than one geographical shape type (point, polygon, linestring, etc.). Only the first type of the first non-empty record will be kept in the export.
+        - | The export cannot contain more than one geographical shape type (point, polygon, linestring, etc.).
+          | If the dataset contains one ``geoshape`` field with multiple shape types, only the first type of the first non-empty record will be kept in the export.
+          | If the dataset contains multiple geographical fields (``geoshape`` or ``geo_point_2d``), only the first shape type of the first non-empty record will be kept in the export.
 
    * * KML
      * 
