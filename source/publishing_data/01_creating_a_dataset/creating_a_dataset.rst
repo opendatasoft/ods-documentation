@@ -16,6 +16,7 @@ Creating a dataset
    :maxdepth: 2
 
    supported_formats
+   dataset_limits
    sourcing_data
    creating_dataset_with_images
    creating_dataset_with_multiple_files
