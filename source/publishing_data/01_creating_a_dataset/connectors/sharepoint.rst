@@ -25,6 +25,11 @@ Creation
    a. Click **Sign in with Microsoft** and connect to your Microsoft 365 account.
    b. After evaluating the permissions requested, click **Accept** to grant authorization to the SharePoint connector to access your SharePoint folders and files.
 
+   .. admonition:: Important
+      :class: important
+   
+      Your Office administrator approval might be required before you can use the SharePoint connector.
+
 5. Under **Retrieve the file**, click **Browse SharePoint**.
 6. From the dialog box that appears, select the file to be used a source.
 7. From the preview of the first 20 records that appears, configure the source.
