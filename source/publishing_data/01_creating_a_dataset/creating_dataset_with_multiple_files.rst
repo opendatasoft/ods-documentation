@@ -35,7 +35,7 @@ This method consists of adding files one by one into the platform, creating as m
 Sourcing multiple files within an archive
 -----------------------------------------
 
-TThis method consists of adding several files at the same time via an archive file, creating a single source for all the added files. In that case, because only one source is created for all the files, those have to have the same format (see :doc:`Supported formats</publishing_data/01_creating_a_dataset/supported_formats>`).
+This method consists of adding several files at the same time via an archive file, creating a single source for all the added files. In that case, because only one source is created for all the files, those have to have the same format (see :doc:`Supported formats</publishing_data/01_creating_a_dataset/supported_formats>`).
 
 .. admonition:: Important
    :class: important
