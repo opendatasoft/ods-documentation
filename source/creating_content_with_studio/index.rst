@@ -55,6 +55,7 @@ Pages can be in one of the following statuses:
    managing-page-access
    previewing-page
    publishing-page
+   visualizations_reference/index
 
 .. |arrow-icon| raw:: html
 

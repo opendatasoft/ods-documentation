@@ -2,6 +2,7 @@ Adding a chart
 ==============
 
 You can use charts to create a graphic representation of your data.
+For more information about the different chart types available in the Studio, see :ref:`visualizations-reference`.
 
 Step 1: Select the block type
 -----------------------------
