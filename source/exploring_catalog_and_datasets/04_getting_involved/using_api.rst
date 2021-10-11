@@ -3,9 +3,15 @@ Using the API
 
 An API (Application Programming Interface) is an interface for programs to communicate and exchange data.
 
+
+.. admonition:: Note
+   :class: note
+
+   To know more about what APIs are and why and how they are used, you can read the article "`You don\'t need analogies to understand APIs <https://kitchen.opendatasoft.com/you-dont-need-analogies-to-understand-apis-14da4513f970>`_" written by one of our Opendatasoft developers.
+
 Opendatasoft provides access to 6 APIs:
 
-- `ODS Explore API V2 <https://help.opendatasoft.com/apis/ods-explore-v2/>`_: Opendatasoft's own APIs, used by the platform.
+- `ODS Explore API V2 <https://help.opendatasoft.com/apis/ods-explore-v2/>`_: main Opendatasoft explore APIs, used to explore catalogs and datasets with a custom SQL-like query language: ODSQL.
 - `Triple Pattern Fragments API <https://help.opendatasoft.com/apis/tpf/>`_: ODS API for triple pattern querying over datasets from Opendatasoft portals
 - `OData <https://help.opendatasoft.com/apis/odata/>`_, `WFS <https://help.opendatasoft.com/apis/wfs/>`_, and `CSW <https://help.opendatasoft.com/apis/csw/>`_: 3 standard protocols supported and provided by Opendatasoft
 
@@ -28,7 +34,7 @@ These APIs can be used, for example, to search for datasets and data, to compute
 ODS Explore API
 ---------------
 
-The ODS Explore API is used internally by the Opendatasoft platform and widgets. To develop an application, we recommend using this API, in V2.
+The ODS Explore API is used in Opendatasoft widgets. To develop an application, we recommend using this API, in V2.
 
 There are currently 2 versions of the ODS Explore API: the `V2 <https://help.opendatasoft.com/apis/ods-explore-v2/>`_ and the `V1 <https://help.opendatasoft.com/apis/ods-search-v1/>`_, which is now deprecated. Listed below, the main differences between the 2 versions.
 
@@ -36,7 +42,7 @@ There are currently 2 versions of the ODS Explore API: the `V2 <https://help.ope
 
   * A richer query language (ODSQL) is available, with new functions and arithmetic expressions.
   * Special filters (such as geofilter and facet filters) are now directly integrated to ODSQL, in the ``where`` parameter.
-  * Aggregations endpoint and records endpoint now share the same structure and ODSQL language.
+  * We deprecated the analyze API as all operations are now available on all endpoints. If you want to perform analysis (with expressions or functions) you can do so on either on the catalog or dataset endpoint. If you want to perform analysis on groups of records, you just have to group them with a `group_by` REST param.
 
 
 
