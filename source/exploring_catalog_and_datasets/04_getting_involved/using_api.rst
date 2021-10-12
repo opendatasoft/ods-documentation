@@ -42,7 +42,7 @@ There are currently 2 versions of the ODS Explore API: the `V2 <https://help.ope
 
   * A richer query language (ODSQL) is available, with new functions and arithmetic expressions.
   * Special filters (such as geofilter and facet filters) are now directly integrated to ODSQL, in the ``where`` parameter.
-  * We deprecated the analyze API as all operations are now available on all endpoints. If you want to perform analysis (with expressions or functions) you can do so on either on the catalog or dataset endpoint. If you want to perform analysis on groups of records, you just have to group them with a `group_by` REST param.
+  * We deprecated the analyze API as all operations are now available on all endpoints. If you want to perform analysis (with expressions or functions) you can do it either on the catalog or on the dataset endpoint. If you want to perform analysis on groups of records, you just have to group them with a `group_by` REST param.
 
 
 
