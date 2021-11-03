@@ -16,10 +16,10 @@ For more information, see :ref:`publishing-pages`.
 2. Enter the general page information in the corresponding fields:
 
    - **Page title**: the page title appears in the list of pages and is used as the tab title when browsing the page.
-   - **URL**: the default URL is pre-filled according to the page title. As long as the page is not published, you can change the page URL. If you need to change the page URL after publishing, you need to unpublish the page first.
+   - **URL**: the default URL is pre-filled according to the page title. As long as the page is not published, you can change the page URL. If you need to change the page URL after publishing, you need to unpublish the page first. Please note that changing a URL will break all the existing links that pointed to the previous URL.
    - **Description**: the page description is used for accessibility purposes. 
 
-3. Click **Validate** to save the entered information.
+3. Click **Save** to save the entered information.
 
-Once you validate the configuration, the page enters in draft status.
+Once you save the configuration, the page enters in draft status.
  

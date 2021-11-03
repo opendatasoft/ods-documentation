@@ -10,7 +10,7 @@ You need to define the block type before you configure the content you want to a
 
 1. From the preview pane, click the block you want to edit.
 2. From the left side pane, select **Chart** as the block type.
-3. Click **Configure**.
+3. Click **Next**.
 
 If you change your mind, you can change the block type afterward.
 The block configuration will be reset after you change the block type.
@@ -47,8 +47,8 @@ Step 4: Configure the visualization parameters
 
 1. From the left side pane, configure the axes of the chart:
 
-   a. Select the dataset field to be used on the X-axis, also called category or horizontal axis. This axis is generally used to categorize data. When using a date field, select the time scale to be used.
-   b. Select the function to apply and the field to be used on the Y-axis, also called category or horizontal axis. This axis is generally used to measure data.
+   a. Select the dataset field to be used on the X-axis (aka category or horizontal axis). This axis is generally used to categorize data. When using a date field, select the time scale to be used.
+   b. Select the function to apply and the field to be used on the Y-axis (aka values or vertical axis). This axis is generally used to measure data.
 
 2. (optional) You can also refine the data shown on the chart:
 
@@ -70,14 +70,14 @@ The Studio includes several predefined layouts for charts to display the appropr
 These layouts help you control how the chart appears on the page to make it easier to understand.
 
 1. Select a layout.
-2. Enter the chart title, X-axis label, and Y-axis label in the corresponding fields.
+2. Enter the required details in the corresponding fields (chart title, chart subtitle, X-axis label, and Y-axis label). Those details are mandatory because they help the future visitors to read and understand your charts better. They are also used by screenreader softwares for accessibility purposes.
 3. Click **Finish**.
 
 You can see an overview of the block configuration parameters in the side pane.
 
 <PLACEHOLDER_SCREENSHOT_CHART_PARAMS_OVERVIEW>
 
-4. Check the block configuration and click **Validate**.
+4. Check the block configuration and click **Save**.
 
 Your chart appears in the preview pane.
 

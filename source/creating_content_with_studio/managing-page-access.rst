@@ -5,7 +5,7 @@ Managing page access
 
 Pages created with the Studio can be public or private:
 
-- A public page is accessible by anyone allowed on the portal.
+- A public page is accessible by anyone with an access to the portal.
 - A private page is restricted to specifically defined users and groups. By default, a page is private.
 
 You can also manage more than one user or group at a time, for more information see :ref:`bulk_edit_access`.
@@ -32,9 +32,9 @@ The Studio lets you set a page-level access policy.
 Adding users and groups to a page
 ---------------------------------
 
-If you set the access policy to **Public**, the users and groups added to a page are granted editing rights for this page.
+If you set the access policy to **Public**, the users and groups added to a page are granted, by default, editing rights for this page.
 
-If you set the access policy to **Private**, the users and groups added to a page are granted page access only for this page by default.
+If you set the access policy to **Private**, the users and groups added to a page are granted, by default, page access only for this page.
 
 .. admonition:: Prerequisite
    :class: important

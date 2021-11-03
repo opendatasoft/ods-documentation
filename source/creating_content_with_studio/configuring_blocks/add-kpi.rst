@@ -8,7 +8,7 @@ There are two types of KPIs available in the Studio:
   <PLACEHOLDER_SCREENSHOT_SIMPLE_KPI>
 - Comparison KPIs compare two subsets of data or two populations. For example, you create a comparison KPI to show the evolution of bike users over time by comparing the number of bike users from 2020 and 2021.
   <PLACEHOLDER_SCREENSHOT_COMPARISON_KPI>
-
+- Ratio KPIs gives the proportion of a population within a larger one. For example, you can create a ration KPI to know the percentage of women in the total population of your country.
 We recommend that you follow some key principles to build clear KPIs:
 
 * A KPI must convey a single message so that a single indicator is emphasized.
@@ -22,7 +22,7 @@ You need to define the block type before you configure the content you want to a
 
 1. From the preview pane, click the block you want to edit.
 2. From the left side pane, select **KPI** as the block type.
-3. Click **Configure**.
+3. Click **Next**.
 
 If you change your mind, you can change the block type afterward.
 The block configuration will be reset after you change the block type.
@@ -51,7 +51,7 @@ Step 3: Select the KPI type
 
 After selecting a block type and the input dataset, you can now select the type of KPI to be inserted into the block.
 
-1. From the left side pane, select **Simple KPI** or **Comparison KPI**.
+1. From the left side pane, select **Simple KPI**, **Comparison KPI** or **Ratio KPI**.
 
 Step 4: Configure the visualization parameters
 ----------------------------------------------
@@ -69,9 +69,8 @@ Configure the visualization parameters for a simple KPI
 
    For more information, see :ref:`refining-data`.
 
-3. (optional) In the **Prefix** field, you can enter some content to be displayed before the computed value.
-4. (optional) In the **Suffix** field, you can enter some content to be displayed after the computed value.
-5. Click **Next** to continue with the configuration.
+3. (optional) In the **Unit** field, you can enter the unit associated to the indicator. By default, this unit is placed on the right side of the indicator. You can place it on the left by using the swap toggle.
+4. Click **Next** to continue with the configuration.
 
 
 Configure the visualization parameters for a comparison KPI
@@ -92,8 +91,29 @@ When creating a comparison KPI, you create two sets of data so that you can comp
 
    a. From the **Comparison direction** drop-down list, select either **Set 1 compared to Set 2** or **Set 2 compared to Set 1**.
    b. From the **Comparison format** drop-down list, select either **Difference** or **Ratio percentage**.
-   c. (optional) In the **Prefix** field, you can enter some content to be displayed before the computed value.
-   d. (optional) In the **Suffix** field, you can enter some content to be displayed after the computed value.
+   c. (optional) In the **Unit** field, you can enter the unit associated to the indicator. By default, this unit is placed on the right side of the indicator. You can place it on the left by using the swap toggle.
+
+5. Click **Next** to continue with the configuration.
+
+
+Configure the visualization parameters for a ratio KPI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+When creating a ratio KPI, you create two sets of data so that you measure the proportion of one within the other.
+
+1. From the left side pane, select the function to apply and the field to be used in the first set of data.
+2. You can also filter or refine the data :
+
+   a. Under the desired set, click **Add a condition**.
+   b. Select the field from the input dataset.
+   c. Select an operator. Depending on the field type, the available operators may vary.
+   d. Click **Confirm**.
+
+3. Repeat the previous instructions to configure the second set of data.
+4. Choose how to compute the ratio using the parameters from the **KPI content** section:
+
+   a. From the **Ratio direction** drop-down list, select either **Set 1 on Set 2** or **Set 2 on Set 1**.
+   b. (optional) In the **Unit** field, you can enter the unit associated to the indicator. By default, this unit is placed on the right side of the indicator. You can place it on the left by using the swap toggle.
 
 5. Click **Next** to continue with the configuration.
 
@@ -124,7 +144,9 @@ The block background is white and cannot be configured.
 To configure the visualization styles:
 
 1. Select a layout.
-2. Depending on the selected layout, you can add elements to your KPI: a context, a title, or an image that you uploaded to the platform. If you add an image, copy its URL from the back office **Assets** page to the **Backoffice image asset URL** field. 
+2. Depending on the selected layout, you can add elements to your KPI: a context, a title, or an image. You can either add an image previously uploaded into the plaform, or a public image from the Internet. 
+   a. To use an image from your domain, copy its URL from the back office **Assets** page to the **Image asset URL** field.
+   b. To use an image that is not on your domain, paste its URL to the **Image asset URL** field.
 
 3. Click **Finish**.
 
@@ -132,7 +154,7 @@ You can see an overview of the block configuration parameters in the side pane.
 
 <PLACEHOLDER_SCREENSHOT_KPI_PARAMS_OVERVIEW>
 
-4. Check the block configuration and click **Validate**.
+4. Check the block configuration and click **Save**.
 
 Your KPI appears in the preview pane.
 

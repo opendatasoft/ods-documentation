@@ -5,6 +5,7 @@ When you create or edit a page in the Studio, you can open it as a preview.
 The preview function helps you test your page before publishing.
 
 You can see the exact page that a user with the same permissions as you will see on a mobile or a desktop screen.
+You can notice significant changes compare to the editing menu, as the preview applies the style you edited in your Backoffice.
 
 1. When editing a page in the Studio, click the |play| icon from the left side pane.
 

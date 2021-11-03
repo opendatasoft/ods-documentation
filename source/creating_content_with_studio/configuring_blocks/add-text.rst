@@ -10,7 +10,7 @@ You need to define the block type before you configure the content you want to a
 
 1. From the preview pane, click the block you want to edit.
 2. From the left side pane, select **Text** as the block type.
-3. Click **Configure**.
+3. Click **Next**.
 
 If you change your mind, you can change the block type afterward.
 The block configuration will be reset after you change the block type.
@@ -23,7 +23,7 @@ Adding text to a block
 3. Click **Next** to continue with the configuration.
 4. Enter your text in the block.
 5. Format the text using the text editor and the toolbar.
-6. Click **Validate** to save your work. 
+6. Click **Save** to save your work. 
 
 Text editor overview
 --------------------
