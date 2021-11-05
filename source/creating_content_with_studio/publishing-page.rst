@@ -3,7 +3,8 @@
 Publishing a page
 =================
 
-You need to publish a page to make it available on your portal.
+You need to publish a page to make it available on your portal. After publishing, the page will be searchable and accessible to visitors, according to the visibility parameters you applied.
+If the page had already been published, what you publish will replace what was already online.
 
 .. admonition:: Prerequisites
    :class: important
@@ -18,7 +19,7 @@ Publishing a page from the list of pages
 From the list of pages, you can publish a page in draft status.
 
 1. From the list of pages, hover over the desired page.
-2. Click the |eye| icon to publish the page.
+2. Click the |eye| icon on the right side to publish the page.
 
 Publishing a page from the preview
 ----------------------------------
