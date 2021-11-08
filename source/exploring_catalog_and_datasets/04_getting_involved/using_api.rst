@@ -9,9 +9,9 @@ An API (Application Programming Interface) is an interface for programs to commu
 
    To know more about what APIs are and why and how they are used, you can read the article "`You don\'t need analogies to understand APIs <https://kitchen.opendatasoft.com/you-dont-need-analogies-to-understand-apis-14da4513f970>`_" written by one of our Opendatasoft developers.
 
-Opendatasoft provides access to 6 APIs:
+Opendatasoft provides access to 5 APIs:
 
-- `ODS Explore API V2 <https://help.opendatasoft.com/apis/ods-explore-v2/>`_: main Opendatasoft explore APIs, used to explore catalogs and datasets with a custom SQL-like query language: ODSQL.
+- `ODS Explore API V2 <https://help.opendatasoft.com/apis/ods-explore-v2/>`_: main Opendatasoft explore API, used to explore catalogs and datasets with a custom SQL-like query language: ODSQL.
 - `Triple Pattern Fragments API <https://help.opendatasoft.com/apis/tpf/>`_: ODS API for triple pattern querying over datasets from Opendatasoft portals
 - `OData <https://help.opendatasoft.com/apis/odata/>`_, `WFS <https://help.opendatasoft.com/apis/wfs/>`_, and `CSW <https://help.opendatasoft.com/apis/csw/>`_: 3 standard protocols supported and provided by Opendatasoft
 
