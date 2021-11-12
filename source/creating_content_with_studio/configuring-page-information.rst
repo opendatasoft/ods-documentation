@@ -21,6 +21,6 @@ For more information, see :ref:`publishing-pages`.
 
 3. Click **Save** to save the entered information.
 
-Please not that changing the title or the description after publishing the page will trigger the Draft status.
+Please note that changing the title or the description after publishing the page will trigger the Draft status.
 It means that you must publish your page to make the changes visible for the visitors.
  

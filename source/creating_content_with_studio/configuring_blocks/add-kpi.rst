@@ -6,7 +6,7 @@ There are two types of KPIs available in the Studio:
 
 - Simple KPIs highlight a piece of information. For example, you can create a simple KPI to show the sum of inhabitants in the city in 2021.
   <PLACEHOLDER_SCREENSHOT_SIMPLE_KPI>
-- Comparison KPIs compare two subsets of data or two populations. For example, you create a comparison KPI to show the evolution of bike users over time by comparing the number of bike users from 2020 and 2021.
+- Comparison KPIs compare two subsets of data or two populations. For example, you create a comparison KPI to show the evolution of bike users over time by comparing the number of bike users between 2020 and 2021.
   <PLACEHOLDER_SCREENSHOT_COMPARISON_KPI>
 - Ratio KPIs gives the proportion of a population within a larger one. For example, you can create a ration KPI to know the percentage of women in the total population of your country.
 We recommend that you follow some key principles to build clear KPIs:
@@ -18,7 +18,7 @@ We recommend that you follow some key principles to build clear KPIs:
 Step 1: Select the block type
 -----------------------------
 
-You need to define the block type before you configure the content you want to add.
+You need to define the block type before you can configure the content you want to add.
 
 1. From the preview pane, click the block you want to edit.
 2. From the left side pane, select **KPI** as the block type.
@@ -150,7 +150,7 @@ To configure the visualization styles:
 
 3. Click **Finish**.
 
-You can see an overview of the block configuration parameters in the side pane.
+You can see a summary of the block configuration parameters in the side pane.
 
 <PLACEHOLDER_SCREENSHOT_KPI_PARAMS_OVERVIEW>
 
