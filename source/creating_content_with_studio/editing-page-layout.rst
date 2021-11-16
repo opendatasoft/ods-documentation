@@ -47,9 +47,14 @@ Rearranging elements
 --------------------
 
 You can rearrange blocks and sections by dragging them and dropping into the desired spot of the left side pane. Neither sections nor blocks can be moved outside the left side pane.
+
 1. Sections have a dedicated handle on their top left side. Drag the section while clicking on this handle to move the whole section. Release the handle to drop the section.
 2. Blocks do not have handle, you can click anywhere in it do drag them into another spot.
-    a. You can move a block to another section, as long as the target section is not at full capacity (i.e 4 blocks). Moving the last block of a section removes the section from the page.
-    b. You can create a new section by moving a block between two sections, above the first section or on the **Add section** button. The block will be the only one in the newly created section, but you can add other blocks by clicking **+**.
 
-    <i class="fa fa-th-large" aria-hidden="true"></i>    
+   a. You can move a block to another section, as long as the target section is not at full capacity (i.e 4 blocks). Moving the last block of a section removes the section from the page.
+   b. You can create a new section by moving a block between two sections, above the first section or on the **Add section** button. The block will be the only one in the newly created section, but you can add other blocks by clicking **+**.
+
+
+.. |edit-layout-icon| raw:: html
+
+    <i class="fa fa-play" aria-hidden="true"></i>

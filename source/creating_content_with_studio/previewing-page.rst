@@ -15,9 +15,10 @@ Your page opens as a preview.
 
 2. Check that the layout is set up correctly and make sure everything works as expected.
 While reviewing your page, you may want to make sure the links you have are pointing to the right place. Clicking on a link will not open the page it is linked to, as we cannot allow external navigation within the Backoffice.
-However, you can make sure your link works by opening it into a new tab with one of the following command :
-    - On Windows : ctrl+left mouse click
-    - On MacOS : cmd+left mouse click
+However, you can make sure your link works by opening it into a new tab with one of the following command:
+
+- On Windows : ctrl+left mouse click
+- On MacOS : cmd+left mouse click
 
 .. |play| raw:: html
 
