@@ -11,7 +11,8 @@ The structure for each page is defined by its layout, which consists of sections
 - Each section can contain up to 4 blocks.
 - All blocks of a section automatically have an equal width. For example, if a section contains 1 block, it will be 100% wide. If a section contains 2 blocks, each block will be 50% wide, etc.
 
-<PLACEHOLDER_SCREENSHOT_VISUAL_STRUCTURE_WITH_SECTIONS_AND_BLOCKS>
+.. localizedimage:: images/layout-editor_opening.png
+     :alt: Page layout editor
 
 Adding sections
 ---------------
@@ -26,7 +27,9 @@ Using sections, you can define the page structure. Once you added a section, you
 The added section appears at the end of the section list.
 It also appears in the preview pane.
 
-<PLACEHOLDER_SCREENSHOT_ADDED_SECTION>
+.. localizedimage:: images/layout-editor_new-section.png
+     :alt: Creating a new section
+
 
 If you change your mind, you can add or delete blocks from this section afterward. If you delete the last block of a section, both block and section will disappear.
 
@@ -41,7 +44,9 @@ A block allows you to add content to a section.
 
 The added block appears in the desired section, at the far right.
 
-<PLACEHOLDER_SCREENSHOT_ADDED_BLOCK>
+.. localizedimage:: images/layout-editor_new-block.png
+     :alt: Creating a new block
+
 
 Rearranging elements
 --------------------
