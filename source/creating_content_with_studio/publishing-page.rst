@@ -30,7 +30,8 @@ When previewing a page, you can publish it directly from the preview.
 
 Your page opens as a preview.
 
-<PLACEHOLDER_SCREENSHOT_PREVIEW>
+.. localizedimage:: images/preview.png
+     :alt: Page preview
 
 2. Click **Publish** in the top-right corner.
 
@@ -43,7 +44,8 @@ From the Studio, you can publish a page in draft status.
 
 The Studio opens.
 
-<PLACEHOLDER_SCREENSHOT_STUDIO>
+.. localizedimage:: images/studio-home.png
+     :alt: Page preview
 
 2. Click **Publish**.
 
