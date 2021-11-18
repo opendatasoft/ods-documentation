@@ -2,12 +2,10 @@ Adding a key performance indicator (KPI)
 ========================================
 
 You can use a key performance indicator (KPI) to translate one phenomenon that lies within data into a simple message.
-There are two types of KPIs available in the Studio:
+There are three types of KPIs available in the Studio:
 
 - Simple KPIs highlight a piece of information. For example, you can create a simple KPI to show the sum of inhabitants in the city in 2021.
-  <PLACEHOLDER_SCREENSHOT_SIMPLE_KPI>
 - Comparison KPIs compare two subsets of data or two populations. For example, you create a comparison KPI to show the evolution of bike users over time by comparing the number of bike users between 2020 and 2021.
-  <PLACEHOLDER_SCREENSHOT_COMPARISON_KPI>
 - Ratio KPIs gives the proportion of a population within a larger one. For example, you can create a ration KPI to know the percentage of women in the total population of your country.
 
 We recommend that you follow some key principles to build clear KPIs:
@@ -43,7 +41,8 @@ Select the source dataset to create a graphic representation of the data.
 
    A preview of the first 20 records opens in the preview pane.
 
-   <PLACEHOLDER_SCREENSHOT_DATASET_RECORDS_PREVIEW>
+.. localizedimage:: images/block-dataprovider-selection.png
+     :alt: Preview of a dataset's records
 
 2. Click **Next** to continue with the configuration.
 
@@ -153,12 +152,14 @@ To configure the visualization styles:
 
 You can see a summary of the block configuration parameters in the side pane.
 
-<PLACEHOLDER_SCREENSHOT_KPI_PARAMS_OVERVIEW>
+.. localizedimage:: images/block-kpi-summary.png
+     :alt: Summary of the KPI's configuration
 
 4. Check the block configuration and click **Save**.
 
 Your KPI appears in the preview pane.
 
-<PLACEHOLDER_SCREENSHOT_KPI_IN_THE_PREVIEW_PANEL>
+.. localizedimage:: images/block-kpi-preview.png
+     :alt: Preview of the resulting KPI
 
 Once you completed the block configuration, you can click the block again in the preview pane to check and edit the KPI parameters in the side pane.

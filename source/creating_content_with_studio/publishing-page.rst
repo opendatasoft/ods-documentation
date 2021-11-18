@@ -45,7 +45,7 @@ From the Studio, you can publish a page in draft status.
 The Studio opens.
 
 .. localizedimage:: images/studio-home.png
-     :alt: Page preview
+     :alt: Studio
 
 2. Click **Publish**.
 

@@ -30,7 +30,8 @@ Select the source dataset to create a graphic representation of the data.
 
    A preview of the first 20 records opens in the preview pane.
 
-   <PLACEHOLDER_SCREENSHOT_DATASET_RECORDS_PREVIEW>
+.. localizedimage:: images/block-dataprovider-selection.png
+     :alt: Preview of a dataset's records
 
 2. Click **Next** to continue with the configuration.
 
@@ -75,12 +76,14 @@ These layouts help you control how the chart appears on the page to make it easi
 
 You can see the summary of the block configuration parameters in the side pane.
 
-<PLACEHOLDER_SCREENSHOT_CHART_PARAMS_OVERVIEW>
+.. localizedimage:: images/block-chart-summary.png
+     :alt: Summary of the chart's configuration
 
 4. Check the block configuration and click **Save**.
 
 Your chart appears in the preview pane.
 
-<PLACEHOLDER_SCREENSHOT_KPI_IN_THE_PREVIEW_PANEL>
+.. localizedimage:: images/block-chart-preview.png
+     :alt: Preview of the resulting chart
 
 Once you completed the block configuration, you can click the block again in the preview pane to check and edit the chart parameters in the side pane.
