@@ -14,15 +14,23 @@ The structure for each page is defined by its layout, which consists of sections
 .. localizedimage:: images/layout-editor_opening.png
      :alt: Page layout editor
 
+Opening the layout editor
+-------------------------
+The layout editor can be accessed from the main page, in the sidebar on the left.
+
+.. localizedimage:: images/layout-editor_button.png
+     :alt: Page layout editor
+
+If you just created the page and didn't create any block yet, you will be able to directly create your first section from a button.
+
 Adding sections
 ---------------
 
 Using sections, you can define the page structure. Once you added a section, you can add blocks inside this section.
 
-1. From the left side pane, click |edit-layout-icon|.
-2. Click **Add section** at the bottom of the section list.
-3. Select the number of blocks you want to have inside the section.
-4. Click **Save**.
+1. Click **Add section** at the bottom of the section list.
+2. Select the number of blocks you want to have inside the section.
+3. Click **Save**.
 
 The added section appears at the end of the section list.
 It also appears in the preview pane.
