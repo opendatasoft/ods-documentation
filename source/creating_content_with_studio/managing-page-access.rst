@@ -39,7 +39,7 @@ If you set the access policy to **Private**, the users and groups added to a pag
 .. admonition:: Prerequisite
    :class: important
    
-   Users and groups must be added in the back office, within the **Users & Groups** section, where users are invited to the portal and where groups are created.
+   Users and groups must already exist in the back office, within the **Users & Groups** section, where users are invited to the portal and where groups are created.
 
 1. From the left side pane, click **Edit** in the **Page access** section.
 2. Click **+** in the **Users** or the **Group** section.

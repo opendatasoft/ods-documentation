@@ -85,7 +85,7 @@ Toolbar overview
      * Bold
      * Makes the text bold.
    * * 4
-     * Italics
+     * Italic
      * Italicizes the text.
    * * 5
      * Highlight

@@ -6,7 +6,7 @@ There are three types of KPIs available in the Studio:
 
 - Simple KPIs highlight a piece of information. For example, you can create a simple KPI to show the sum of inhabitants in the city in 2021.
 - Comparison KPIs compare two subsets of data or two populations. For example, you create a comparison KPI to show the evolution of bike users over time by comparing the number of bike users between 2020 and 2021.
-- Ratio KPIs gives the proportion of a population within a larger one. For example, you can create a ration KPI to know the percentage of women in the total population of your country.
+- Ratio KPIs gives the proportion of a population within a larger one. For example, you can create a ratio KPI to know the percentage of women in the total population of your country.
 
 We recommend that you follow some key principles to build clear KPIs:
 

@@ -50,7 +50,8 @@ The tag will remain, to remind Paul that the page within the Studio is different
 Two years later, the page has become obsolete. Paul decides to unpublish it. The page now has a Not Published status, and a Draft tag. 
 
 .. warning::
-    There is no page versioning in the Studio. The following actions are irreversible :
+    There is no page versioning in the Studio. The following actions are irreversible:
+
     - After you delete a page, it cannot be recovered.
     - If you publish a page that already has the status Published, the new published version will replace the previous one. 
 
