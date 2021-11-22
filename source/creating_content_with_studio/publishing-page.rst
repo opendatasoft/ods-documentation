@@ -49,10 +49,23 @@ The Studio opens.
 
 2. Click **Publish**.
 
+Unpublishing a page from the list of pages
+------------------------------------------
+From the list of pages, you can unpublish a page that has been prevously published. This will make it unavailable to your users on your portal
+until you publish it again.
+
+1. From the list of pages, hover over the desired page.
+2. Click the |eye-slash| icon on the right side to unpublish the page.
+
+
 
 .. |eye| raw:: html
 
     <i class="fa fa-eye" aria-hidden-"true"></i>
+
+.. |eye-slash| raw:: html
+
+    <i class="fa fa-eye-slash" aria-hidden-"true"></i>
 
 .. |play| raw:: html
 
