@@ -1,7 +1,7 @@
 Managing the domain
 ===================
 
-In this section are listed and documented all features related to the management of an Opendatasoft domain. These features are available in the Users & Groups, Subdomains, and License sections of the back office of an Opendatasoft domain.
+In this section are listed and documented all features related to the management of an Opendatasoft domain. These features are available in the Users & Groups, Subdomains, License, and Pages sections of the back office of an Opendatasoft domain.
 
 Managing users and groups
 -------------------------
@@ -46,3 +46,11 @@ Monitoring the domain's license and quotas
 
    04_monitoring_license_and_quotas/quotas_intro
    04_monitoring_license_and_quotas/quotas
+
+Managing pages
+--------------
+
+.. toctree::
+   :maxdepth: 2
+
+   05_managing_pages/managing_pages_from_list

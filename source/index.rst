@@ -35,6 +35,7 @@ This documentation is Opendatasoft's reference user guide.
    :maxdepth: 3
 
    publishing_data/index
+   creating_content_with_studio/index
    creating_content/index
    customizing_look_and_feel/index
    managing_domain/index
