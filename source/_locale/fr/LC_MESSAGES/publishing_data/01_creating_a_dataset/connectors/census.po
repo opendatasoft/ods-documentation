@@ -1,0 +1,169 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-26 09:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:2
+msgid "US Census connector"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:4
+msgid ""
+"The US Census connector is used for data extracted from the US Census "
+"Bureau's REST API."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:7
+msgid "Creation"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:9
+msgid ""
+"Find the API Base URL of the census dataset "
+"(https://api.census.gov/data.html). If you want to, you can use an API URL "
+"with a valid query (see https://www.census.gov/data/developers/guidance/api-"
+"user-guide.Overview.html for documentation)"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:12
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:51
+msgid "Note"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:15
+msgid "Example 1:"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:16
+msgid ""
+"For the dataset *Vintage 2014 Population Estimates: US, State, and PR Total "
+"Population and Components of Change*, the API Base URL is "
+"``https://api.census.gov/data/2014/pep/natstprc`` ."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:17
+msgid "Example 2:"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:18
+msgid ""
+"For the dataset *International Trade: Monthly U.S. Exports by End-Use Code*,"
+" an API URL is "
+"``https://api.census.gov/data/timeseries/intltrade/exports/enduse?get=ALL_VAL_YR&time=2013-01&E_ENDUSE=00100``"
+" ."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:20
+msgid "Enter the URL in the Enter a URL area when creating a new dataset."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:21
+msgid "Press Enter or click the + button."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:24
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:29
+msgid "Name"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:30
+msgid "Description"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:31
+msgid "Example 1"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:32
+msgid "Example 2"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:33
+msgid "Dataset path"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:34
+msgid "The path is extracted from the URL area"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:35
+msgid "2014/pep/natstprc"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:36
+msgid "timeseries/intltrade/exports/enduse"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:37
+msgid "Variables"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:38
+msgid ""
+"The list of variables to extract. If the URL contains a query, the variables"
+" are extracted from it. If the area is left empty, the number of variables "
+"in the dataset is less than 50, and the required predicates filled, the "
+"connector will extract the whole dataset. Else, the area should at least be "
+"filled with required fields (see the dataset documentation)."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:39
+msgid "Can be left empty"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:40
+msgid "Can be: ``ALL_VAL_YR`` is extracted from the URL"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:41
+msgid "Predicates"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:42
+msgid ""
+"The list of predicates to filter the dataset. If the URL contains a query "
+"the predicates are extracted from it.  If the area is left empty, the number"
+" of variables in the dataset is less than 50, and the required predicates "
+"filled, the connector will extract the whole dataset. The area should at "
+"least be filled with required predicates (see the dataset documentation)."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:43
+msgid "``for=state:*`` (a ``for`` predicates is required)"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:44
+msgid "``time=2013-01`` and ``E_ENDUSE=00100`` are extracted from the URL"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:45
+msgid "API Key"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:46
+msgid ""
+"Use an API key to override the Census API limit (500 queries per day). If "
+"the URL contains an API key, the key is extracted from it."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:48
+msgid "No API key is filled"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/census.rst:54
+msgid ""
+"If too many fields are called during the extraction, it can result in a "
+"connection Timeout to the US Census servers. Reducing the number of "
+"variables or the use of the ``group()`` function should prevent this issue."
+msgstr ""

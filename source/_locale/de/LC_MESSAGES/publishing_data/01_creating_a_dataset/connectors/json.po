@@ -1,0 +1,523 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-26 09:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:2
+msgid "JSON files"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:4
+msgid ""
+"JSON is an open-standard format that uses human-readable text to transmit "
+"data objects consisting of key-value pairs. It is the most common data "
+"format to build web APIs."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:6
+msgid ""
+"As JSON documents can have a lot of different forms, the platform can "
+"extract data from JSON files, JSON Lines files, and JSON dictionaries."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:9
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:94
+msgid "Note"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:12
+msgid ""
+"If the platform does not fully extract a document with a complex structure, "
+"use one of the JSON processors to complete the extraction."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:16
+msgid "JSON File"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:18
+msgid ""
+"You can use a JSON file as a source. From this file, the platform extracts a"
+" valid JSON document (array or object) into one dataset of several records:"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:20
+msgid ""
+"If the document is a JSON array, a record will be created for each object "
+"inside the array (the keys will be used as column names)."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:21
+msgid ""
+"If the document is a JSON object, the \"JSON root\" parameter should contain"
+" a dot-separated path to the array inside your object. If not provided, the "
+"platform tries ``items``."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:23
+msgid ""
+"For each item inside the array, the platform can follow another path before "
+"extracting the records with the parameter \"JSON object\"."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:26
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:161
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:204
+msgid "Supported field types"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:28
+msgid "Regular fields (decimal, boolean, string)"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:29
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:165
+msgid "JSON object: used as-is"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:30
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:208
+msgid "Array:"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:32
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:210
+msgid "If the array contains JSON objects, it is used as-is."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:33
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:211
+msgid ""
+"If the array contains strings, a multivalued field is created with all the "
+"strings separated by a semicolon (``;``)."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:36
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:168
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:214
+msgid "Creation"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:38
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:170
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:216
+msgid ""
+"For more information about adding a file source, see "
+":doc:`/publishing_data/01_creating_a_dataset/retrieving_file`."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:41
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:173
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:175
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:219
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:221
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:43
+msgid "JSON parameters"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:47
+#: ../../source/_includes/connectors_extractfilename.rst:4
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:178
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:224
+msgid "Name"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:48
+#: ../../source/_includes/connectors_extractfilename.rst:5
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:179
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:225
+msgid "Description"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:49
+#: ../../source/_includes/connectors_extractfilename.rst:6
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:180
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:226
+msgid "Usage"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:50
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:230
+msgid "JSON root"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:51
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:231
+msgid ""
+"`ijson <https://pypi.org/project/ijson/>`_ path to the JSON array that "
+"contains the objects to be extracted as dataset records"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:53
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:233
+msgid ""
+"ijson is a syntax to navigate inside JSON objects. It consists of separating"
+" the attribute names with dots (for example, `content.trains`). More "
+"features are available for advanced users."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:55
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:235
+msgid ""
+"If the JSON array is at the root of the document, leave the **JSON root** "
+"box empty. If the JSON file is a JSON object, enter the ijson path to the "
+"array in the **JSON root** box."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:56
+msgid "JSON object"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:57
+msgid "Relative path to the JSON object to extract"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:58
+msgid ""
+"After setting the JSON root, if the preview shows irrelevant columns, and "
+"that the JSON object has been extracted as the value of one column, enter "
+"the name of that column in the **JSON object** box."
+msgstr ""
+
+#: ../../source/_includes/connectors_extractfilename.rst:1
+#: ../../source/_includes/connectors_extractfilename.rst:7
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:181
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:227
+msgid "Extract filename"
+msgstr ""
+
+#: ../../source/_includes/connectors_extractfilename.rst:8
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:182
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:228
+msgid "Creates a new column with the name of the source file."
+msgstr ""
+
+#: ../../source/_includes/connectors_extractfilename.rst:9
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:183
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:229
+msgid ""
+"By default, this option is toggled off. Toggle on this option to extract the"
+" file name in an additional column."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:63
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:241
+msgid "Examples"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:65
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:243
+msgid "Example 1:"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:82
+msgid ""
+"In this JSON file, the JSON array is directly at the root. You can leave the"
+" **JSON root** box empty."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:84
+msgid "The resulting dataset will be:"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:87
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:142
+msgid "name"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:87
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:142
+msgid "origin"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:87
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:142
+msgid "destination"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:89
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:144
+msgid "Agra Express"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:89
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:144
+msgid "Agra Cantt"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:89
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:144
+msgid "New Delhi"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:91
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:146
+msgid "Gour Express"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:91
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:146
+msgid "Balurghat"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:91
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:146
+msgid "Sealdah"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:97
+msgid "The column order may vary."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:99
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:285
+msgid "Example 2:"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:127
+msgid ""
+"For this complex JSON file, the correct JSON root is ``content.trains``. If "
+"``content.trains`` is set as the JSON root, the resulting dataset will be:"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:131
+msgid "id"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:131
+msgid "info"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:133
+msgid "123"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:133
+msgid "{\"origin\": \"Agra Cantt\", \"destination\": \"New Delhi\", \"name\": \"Agra Express\"}"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:135
+msgid "555"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:135
+msgid "{\"origin\": \"Balurghat\", \"destination\": \"Sealdah\", \"name\": \"Gour Express\"}"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:138
+msgid ""
+"To only extract the ``info`` JSON objects, and skip the ``id`` number, the "
+"correct JSON object is ``info``. If ``info`` is set as a JSON object, the "
+"resulting dataset will be:"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:151
+msgid "JSON Lines"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:153
+msgid ""
+"You can use a JSON Lines file as a source. In JSON Lines files, each line is"
+" a one-line JSON document. The whole file is not a valid JSON document but "
+"each line is."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:155
+msgid "Two modes are supported:"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:157
+msgid "One JSON array on each line (or one array altogether)"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:158
+msgid "One JSON object on each line"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:163
+msgid "Regular fields (decimal, string)"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:164
+msgid "Array: used as-is"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:184
+msgid "First line number"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:185
+msgid ""
+"For files that do not start at the first line, it is possible to define "
+"which line is considered the first one. The lines above will be skipped from"
+" the dataset."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:186
+msgid ""
+"By default, the dataset starts at line 1. Enter the number of the line that "
+"should be considered the beginning of the dataset."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:187
+msgid "Headers"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:188
+msgid "For files whose first line contains field names"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:189
+msgid ""
+"By default, this option is toggled on. It makes the values of the first line"
+" field labels. Toggle off this option if the first line doesn't contain "
+"field names but data: the field labels will then be empty by default."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:193
+msgid "JSON Dict"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:195
+msgid ""
+"You can use a JSON dictionary as a source. The platform extracts a valid "
+"JSON document (array or object) into one dataset of several records."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:197
+msgid ""
+"The platform expects a JSON object where each key contains a record. The "
+"platform then creates records with:"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:200
+msgid "one column to hold the key"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:201
+msgid ""
+"one column for each attribute of the corresponding object (or a single "
+"column named \"value\" if the value is a string instead of an object)."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:206
+msgid "Regular fields (decimal, bool, string)"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:207
+msgid "JSON object: will be used as-is"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:236
+msgid "Key field name"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:237
+msgid "Label of the \"key\" column"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:238
+msgid ""
+"The default value is \"key\". Enter the new label of the \"key\" column in "
+"the **Key field name** box. It will modify both the label and the technical "
+"identifier of the column."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:275
+msgid ""
+"If you leave the **JSON root** box empty, the resulting dataset will be:"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:278
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:313
+msgid "key"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:278
+msgid "type1"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:278
+msgid "type2"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:280
+msgid "2016"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:280
+msgid "{\"color\": \"blue\", \"available\": true, \"price\": 10}"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:280
+msgid "{\"color\": \"red\", \"available\": true, \"price\": 9}"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:282
+msgid "2015"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:282
+msgid "{\"color\": \"teal\", \"available\": true, \"price\": 10.5}"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:282
+msgid "{\"color\": \"crimson\", \"available\": true, \"price\": 9.1}"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:307
+msgid ""
+"For this complex JSON file, the correct JSON root is "
+"``results.datasets.item``."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:309
+msgid "``results.datasets`` leads to the array"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:310
+msgid "``item`` iterates inside the array and gets each object"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:313
+msgid "description"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:313
+msgid "title"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:315
+msgid "abc"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:315
+msgid "A description about ABC"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:315
+msgid "A B C"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:317
+msgid "xyz"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:317
+msgid "Another description"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:317
+msgid "D E F"
+msgstr ""
