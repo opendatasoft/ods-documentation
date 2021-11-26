@@ -39,7 +39,7 @@ Opendatasoft can connect to a variety of remote services.
 .. admonition:: Important
   :class: important
 
-  Contact your local support team to get on-demand connectors activated on your domain.
+  Contact your local support team to get on-demand connectors activated on your domain. Some of them are subject to pricing.
 
 .. list-table::
   :header-rows: 1
@@ -68,7 +68,7 @@ Opendatasoft can connect to a variety of remote services.
     * Default
   * * :doc:`Google Drive<connectors/google_drive>`
     * Retrieves files located in Google Drive
-    * Default
+    * On demand
   * * :doc:`JCDecaux<connectors/jcdecaux>`
     * Retrieves the state of JCDecaux bike stations
     * On demand
@@ -86,7 +86,7 @@ Opendatasoft can connect to a variety of remote services.
     * On demand
   * * :doc:`SharePoint<connectors/sharepoint>`
     * Retrieves files located in SharePoint
-    * Default
+    * On demand
   * * :doc:`WFS<connectors/wfs>`
     * Retrieves data from a WFS service
     * On demand
