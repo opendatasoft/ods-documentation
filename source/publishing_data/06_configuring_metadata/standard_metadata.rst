@@ -3,7 +3,12 @@ Standard metadata
 
 Standard metadata are common to all Opendatasoft portal. They are the default metadata of any dataset. They should be configured in the Information > Standard tab of the edition interface of a dataset. Once the dataset is published, the standard metadata will be displayed in the Information tab of the dataset (front office).
 
-Refer to the table below to know more about the available metadata and how to configure them.
+.. admonition:: note
+   :class: note
+
+   The dataset name and technical identifier can be configured while creating the dataset.
+
+The following table includes more information about the available metadata and how to configure them.
 
 .. list-table::
   :header-rows: 1
