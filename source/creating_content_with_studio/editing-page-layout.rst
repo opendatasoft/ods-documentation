@@ -7,7 +7,7 @@ Editing the page layout of your page allows you to configure how your content is
 
 The structure for each page is defined by its layout, which consists of sections and blocks:
 
-- A page can contain up to 10 sections.
+- A page can contain up to 40 sections.
 - Each section can contain up to 4 blocks.
 - All blocks of a section automatically have an equal width. For example, if a section contains 1 block, it will be 100% wide. If a section contains 2 blocks, each block will be 50% wide, etc.
 
