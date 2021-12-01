@@ -1,53 +1,72 @@
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Opendatasoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Trad_FR2 <datawords.translator.fr2@gmail.com>, 2021
+# Super Traducteur <admin+supertraducteur@opendatasoft.com>, 2021
+# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2021
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-26 09:40+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2021-12-01 17:12+0100\n"
+"PO-Revision-Date: 2021-11-26 10:58+0000\n"
+"Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2021\n"
+"Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/airtable.rst:2
 msgid "Airtable connector"
-msgstr ""
+msgstr "Connecteur Airtable"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/airtable.rst:4
 msgid ""
 "The Airtable REST API connector is used for data extracted from an Airtable "
 "base, using their REST API."
 msgstr ""
+"Le connecteur d'API REST Airtable est utilisé pour les données extraites "
+"d'une base Airtable à l'aide de l'API REST."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/airtable.rst:6
 msgid "Note"
-msgstr ""
+msgstr "Remarque"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/airtable.rst:9
 msgid ""
 "The Airtable REST API is limited to 5 requests per second per base. Try not "
 "to schedule updates of tables from the same base all at once."
 msgstr ""
+"L'API REST Airtable est limitée à 5 requêtes par seconde et par base. "
+"Veillez à ne pas planifier de mises à jour de tables issues d'une base "
+"identique au même moment."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/airtable.rst:12
 msgid "Creation"
-msgstr ""
+msgstr "Création"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/airtable.rst:14
 msgid "Prerequisites"
-msgstr ""
+msgstr "Prérequis"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/airtable.rst:17
 msgid ""
 "Make sure you are the owner of the Airtable table. It is mandatory to be "
 "able to connect the table to Opendatasoft."
 msgstr ""
+"Assurez-vous d'être le propriétaire de la table Airtable, faute de quoi vous"
+" ne pourrez pas connecter la table à Opendatasoft."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/airtable.rst:18
 msgid "Find your API key from your Airtable account page."
-msgstr ""
+msgstr "Recherchez votre clé d'API sur la page de votre compte Airtable."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/airtable.rst:19
 msgid ""
@@ -58,59 +77,82 @@ msgid ""
 "header. This is your API URL (for example, "
 "``https://api.airtable.com/v0/base_id/table_name``)."
 msgstr ""
+"Recherchez l'URL de votre API Airtable dans votre espace de travail (Help > "
+"API documentation > [your base]) ou votre base (choisissez votre table, puis"
+" rendez-vous dans Help > API documentation). Puis, dans la section "
+"\"Authentification\", copiez l'URL de ``EXAMPLE USING BEARER TOKEN "
+"(RECOMMENDED`)` sans la commande curl ni l'en-tête. Il s'agit de l'URL de "
+"votre API (par exemple, ``https://api.airtable.com/v0/base_id/table_name``)."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/airtable.rst:22
 msgid "Choose an option:"
-msgstr ""
+msgstr "Choisissez une option :"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/airtable.rst:24
 msgid ""
 "If you want to create a dataset, click **Catalog** > **Datasets** and click "
 "the **New dataset** button."
 msgstr ""
+"Si vous souhaitez créer un jeu de données, cliquez sur **Catlogue** > **Jeux"
+" de données**, puis cliquez sur le bouton **Nouveau jeu de données**."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/airtable.rst:25
 msgid ""
 "If you want to add a source to an existing dataset, click **Catalog** > "
 "**Datasets** and select the desired dataset. Then, click **Add a source**."
 msgstr ""
+"Si vous souhaitez ajouter une source à un jeu de données existant, cliquez "
+"sur **Catalogue** > **Jeux de données**, et sélectionnez le jeu de données "
+"souhaité. Cliquez ensuite sur **Ajouter une source**."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/airtable.rst:27
 msgid ""
 "In the wizard that opens, select **Airtable** under the **Configure a remote"
 " service** section."
 msgstr ""
+"Sélectionnez **Airtable** dans l'assistant qui s'ouvre, sous la section "
+"**Configurer un service distant**."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/airtable.rst:28
 msgid "Configure your Airtable connection:"
-msgstr ""
+msgstr "Configurez votre connexion Airtable :"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/airtable.rst:30
 msgid ""
 "Under the **Retrieve data from Airtable** section, enter your Airtable API "
 "URL in the box."
 msgstr ""
+"Sous la section **Récupérer des données de Airtable**, saisissez l'URL de "
+"votre API Airtable dans le champ."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/airtable.rst:31
 msgid ""
 "Under the **Authentication** section, enter your Airtable API key in the "
 "box."
 msgstr ""
+"Sous la section **Authentification**, saisissez la clé de votre API Airtable"
+" dans le champ."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/airtable.rst:33
 msgid "Check the preview of the first 20 records that appears."
-msgstr ""
+msgstr "Vérifiez l'aperçu des 20 premiers enregistrements qui s'affiche."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/airtable.rst:35
 msgid "Configure the dataset information or use the pre-filled values:"
 msgstr ""
+"Configurez les informations du jeu de données ou utilisez les valeurs "
+"préremplies :"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/airtable.rst:37
 msgid "In the **Dataset name** field, enter the title for this dataset."
 msgstr ""
+"Dans le champ **Nom du jeu de données**, saisissez le titre de ce jeu de "
+"données."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/airtable.rst:38
 msgid ""
 "In the **Dataset technical identifier** field, enter a meaningful identifier"
 " for this dataset."
 msgstr ""
+"Dans le champ **Identifiant technique du jeu de données**, saisissez un "
+"identifiant explicite pour ce jeu de données."
