@@ -1,0 +1,364 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Opendatasoft
+# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# rocio aguero <raguero@datawords.com>, 2018
+# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-01 17:12+0100\n"
+"PO-Revision-Date: 2018-06-27 09:14+0000\n"
+"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021\n"
+"Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:2
+msgid "XML files"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:4
+msgid "You can use an XML (.xml) file as a source."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:6
+msgid ""
+"This platform creates records from an arbitrary XML structure by converting "
+"all elements at a specific depth (optionally filtered by tag) to a set of "
+"records. For each element converted to a record, attributes, enclosed tags, "
+"and content are converted to fields. Complex data inside fields is converted"
+" to a JSON representation containing both attributes and content."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:11
+msgid "Creation"
+msgstr "Creación"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:13
+msgid ""
+"For more information about adding a file source, see "
+":doc:`/publishing_data/01_creating_a_dataset/retrieving_file`."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:16
+msgid "Configuration"
+msgstr "Configuración"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:18
+msgid "XML parameters"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:21
+#: ../../source/_includes/connectors_extractfilename.rst:4
+msgid "Name"
+msgstr "Nombre"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:22
+#: ../../source/_includes/connectors_extractfilename.rst:5
+msgid "Description"
+msgstr "Descripción"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:23
+#: ../../source/_includes/connectors_extractfilename.rst:6
+msgid "Usage"
+msgstr "Uso"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:24
+msgid "Parent tags"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:25
+msgid "Number of parents to get attributes from"
+msgstr "Número de elementos primarios de los cuales obtener atributos"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:27
+msgid ""
+"If the enclosing tags contain relevant attributes, use this option to add "
+"them to the records."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:28
+msgid ""
+"Enter the number of parent tags to get attributes from (for example, ``2``)."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:29
+msgid "Name of the tags to be extracted"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:30
+msgid ""
+"If irrelevant tags are at the same depth as the extracted elements, use this"
+" option to only filter relevant tags."
+msgstr ""
+"Si hay etiquetas irrelevantes en la misma profundidad que los elementos "
+"extraídos, utilice esta opción para filtrar únicamente las etiquetas "
+"relevantes."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:31
+msgid ""
+"Enter the tag to extract (for example, ``item``) in the **Name of the tags "
+"to be extracted** box. If you leave the box empty, all tags at the specified"
+" depth will be converted into records."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:32
+msgid "Tag depth"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:33
+msgid "Depth of the tags that must be converted to records"
+msgstr "Profundidad de las etiquetas que deben convertirse en registros."
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:34
+msgid ""
+"Enter the depth of the repeated tag in the **Tag depth** box (for example, "
+"``3``)."
+msgstr ""
+
+#: ../../source/_includes/connectors_extractfilename.rst:1
+#: ../../source/_includes/connectors_extractfilename.rst:7
+msgid "Extract filename"
+msgstr "Extraer nombre de archivo"
+
+#: ../../source/_includes/connectors_extractfilename.rst:8
+msgid "Creates a new column with the name of the source file."
+msgstr "Crea una columna nueva con el nombre del archivo de origen."
+
+#: ../../source/_includes/connectors_extractfilename.rst:9
+msgid ""
+"By default, this option is toggled off. Toggle on this option to extract the"
+" file name in an additional column."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:39
+msgid "Technical specifications"
+msgstr "Especificaciones técnicas"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:42
+msgid "Field creation"
+msgstr "Creación de campos"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:44
+msgid ""
+"The policy for creating fields from an item is defined as shown in the "
+"following examples."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:59
+msgid "**attribute**"
+msgstr "**attribute**"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:59
+msgid "**other_attribute**"
+msgstr "**other_attribute**"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:59
+msgid "**indicator**"
+msgstr "**indicator**"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:59
+msgid "**country**"
+msgstr "**country**"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:59
+msgid "**decimal**"
+msgstr "**decimal**"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:59
+msgid "**content**"
+msgstr "**content**"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:61
+msgid "attribute value"
+msgstr "attribute value"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:61
+msgid "other attribute value"
+msgstr "other attribute value"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:61
+msgid "GDP per capita"
+msgstr "GDP per capita"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:61
+msgid "Andean Region"
+msgstr "Andean Region"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:61
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:147
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:149
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:151
+msgid "0"
+msgstr "0"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:63
+msgid "2nd data tag"
+msgstr "2nd data tag"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:63
+msgid "Text only"
+msgstr "Text only"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:67
+msgid "JSON representation"
+msgstr "Representación JSON"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:69
+msgid ""
+"Complex data inside fields is converted to JSON as shown in the following "
+"example."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:104
+msgid "Examples"
+msgstr "Ejemplos"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:107
+msgid "Example 1"
+msgstr "Ejemplo 1"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:137
+msgid "In this example:"
+msgstr "En este ejemplo:"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:139
+msgid ""
+"**Tag depth** is set to ``2`` because ``wb:data`` is at the second level of "
+"the XML tree (``wb:rows/wb:data``)."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:140
+msgid ""
+"You do not need to filter tags out because all elements at this depth are "
+"records."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:142
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:187
+msgid "The resulting dataset looks like this:"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:145
+msgid "wb:indicator"
+msgstr "wb:indicator"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:145
+msgid "wb:country"
+msgstr "wb:country"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:145
+msgid "wb:date"
+msgstr "wb:date"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:145
+msgid "wb:value"
+msgstr "wb:value"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:145
+msgid "wb:decimal"
+msgstr "wb:decimal"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:147
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:149
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:151
+msgid "{\"#text\": \"GDP per capita (2005 USD)\", \"@id\": \"6.0.GDPpc\"}"
+msgstr "{\"#text\": \"GDP per capita (2005 USD)\", \"@id\": \"6.0.GDPpc\"}"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:147
+msgid "{\"#text\": \"Andean Region\", \"@id\": \"L5\"}"
+msgstr "{\"#text\": \"Andean Region\", \"@id\": \"L5\"}"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:147
+msgid "2005"
+msgstr "2005"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:147
+msgid "8154.72913271721"
+msgstr "8154,72913271721"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:149
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:151
+msgid "{\"#text\": \"Bolivia\", \"@id\": \"BO\"}"
+msgstr "{\"#text\": \"Bolivia\", \"@id\": \"BO\"}"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:149
+msgid "2009"
+msgstr "2009"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:149
+msgid "5152.46337890625"
+msgstr "5152,46337890625"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:151
+msgid "2006"
+msgstr "2006"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:151
+msgid "4715.9892578125"
+msgstr "4715,9892578125"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:155
+msgid "Example 2"
+msgstr "Ejemplo 2"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:182
+msgid ""
+"In this example, the XML tree is complex. As a result, the automatic "
+"parameters detection cannot guess the proper depth. You must configure the "
+"source manually:"
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:184
+msgid ""
+"**Tag depth** must be set to ``3`` because the ``item`` node is at the third"
+" level of the XML tree (``shoppingList/basket/item``)."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:185
+msgid ""
+"**Name of the tags to be extracted** must be set to ``item`` because "
+"``itemCount`` and ``totalQuantity`` are also at the third level but not "
+"relevant."
+msgstr ""
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:190
+msgid "name"
+msgstr "nombre"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:190
+msgid "quantity"
+msgstr "quantity"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:192
+msgid "potato"
+msgstr "potato"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:192
+msgid "5"
+msgstr "5"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:194
+msgid "banana"
+msgstr "banana"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:194
+msgid "4"
+msgstr "4"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:196
+msgid "tomato"
+msgstr "tomato"
+
+#: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:196
+msgid "10"
+msgstr "10"
