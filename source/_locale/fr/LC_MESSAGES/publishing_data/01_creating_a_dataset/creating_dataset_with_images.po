@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-01 17:12+0100\n"
+"POT-Creation-Date: 2021-12-03 14:22+0100\n"
 "PO-Revision-Date: 2018-06-27 09:13+0000\n"
 "Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2021\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
@@ -49,6 +49,8 @@ msgid ""
 "You can create a source with media files and add them to a dataset with an "
 "archive file or via a URL."
 msgstr ""
+"Vous pouvez créer une source avec des fichiers média et les ajouter à un jeu"
+" de données avec un fichier d'archive ou via une URL."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:12
 msgid "Important"
@@ -62,6 +64,11 @@ msgid ""
 "Images "
 "visualization</publishing_data/07_configuring_visualizations/04_configuring_image_view/image>`."
 msgstr ""
+"Tous les formats considérés comme étant des images par la plateforme seront "
+"importés comme tels. Cela signifie qu'une vignette sera générée pour ces "
+"formats, ce qui activera la visualisation **Images**. Pour plus "
+"d'informations, consultez :doc:`Configurer la visualisation "
+"images</publishing_data/07_configuring_visualizations/04_configuring_image_view/image>`."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:17
 msgid ""
@@ -69,6 +76,9 @@ msgid ""
 "generated, and the **Images** visualization will not be available. Users "
 "will only be able to download these files."
 msgstr ""
+"Pour les autres formats tels que les fichiers PDF et GTFS, aucune vignette "
+"ne sera générée et la visualisation **Images** sera donc indisponible. Les "
+"utilisateurs pourront uniquement télécharger ces fichiers."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:20
 msgid "Sourcing media files with an archive file"
@@ -79,16 +89,20 @@ msgid ""
 "This method consists of building an archive file with the media files and "
 "then importing it into the platform."
 msgstr ""
+"Cette méthode consiste à créer un fichier d'archive avec les fichiers média,"
+" puis à l'importer dans la plateforme."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:24
 msgid ""
 "For more information about the compressed file formats supported, see "
 ":ref:`supportedcompressedformats`."
 msgstr ""
+"Pour plus d'informations sur les formats de fichiers compressés pris en "
+"charge, consultez :ref:`supportedcompressedformats`."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:27
 msgid "Step 1: Building the archive file"
-msgstr ""
+msgstr "Étape 1 : créer le fichier d'archive"
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:29
 msgid "The archive file must contain:"
@@ -96,11 +110,12 @@ msgstr "Le fichier d'archive doit contenir :"
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:31
 msgid "the media files, and"
-msgstr ""
+msgstr "les fichiers média et"
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:32
 msgid "a CSV file listing the media files and their metadata."
 msgstr ""
+"un fichier CSV répertoriant les fichiers média et les métadonnées associées."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:34
 msgid ""
@@ -130,7 +145,7 @@ msgstr ""
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:42
 msgid "Step 2: Creating the CSV file of the archive file"
-msgstr ""
+msgstr "Étape 2 : créer le fichier CSV du fichier d'archive"
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:44
 msgid ""
@@ -144,6 +159,8 @@ msgstr ""
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:46
 msgid "Example of a CSV file to create a dataset with media files:"
 msgstr ""
+"Exemple d'un fichier CSV pour créer un jeu de données avec des fichiers "
+"média :"
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:59
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:132
@@ -232,13 +249,15 @@ msgstr "les colonnes \"Titre\" et \"Légende\" sont des champs supplémentaires.
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:81
 msgid "Step 3: Sourcing the archive file"
-msgstr ""
+msgstr "Étape 3 : collecter le fichier d'archive"
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:83
 msgid ""
 "You can use the archive file you created as a source and upload it to the "
 "platform."
 msgstr ""
+"Vous pouvez utiliser le fichier d'archive créé en tant que source et le "
+"charger dans la plateforme."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:85
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:105
@@ -252,26 +271,34 @@ msgid ""
 "In the wizard that opens, select **From my computer** under the **Retrieve a"
 " file** section."
 msgstr ""
+"Sélectionnez **À partir de mon ordinateur** dans l'assistant qui s'ouvre, "
+"sous la section **Récupérer un fichier**."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:87
 msgid ""
 "Either drop the archive file or click **Browse** to locate the archive file "
 "in your local filesystem."
 msgstr ""
+"Déposez le fichier d'archive ou cliquez sur **Consulter** pour localiser le "
+"fichier d'archive dans votre système de fichiers local."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:88
 msgid ""
 "From the preview of the first 20 records that opens, configure the source."
 msgstr ""
+"Configurez la source dans l'aperçu des 20 premiers enregistrements qui "
+"s'affiche."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:89
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:108
 msgid "Configure the dataset information or use the pre-filled values."
 msgstr ""
+"Configurez les informations du jeu de données ou utilisez les valeurs "
+"préremplies."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:93
 msgid "Sourcing media files via URLs"
-msgstr ""
+msgstr "Collecter des fichiers média via des URL"
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:95
 msgid ""
@@ -279,6 +306,10 @@ msgid ""
 " URLs of media files stored in a remote server and using a processor to "
 "define the media files and extract their metadata."
 msgstr ""
+"Cette méthode consiste à collecter des fichiers :ref:`supportedformats` "
+"contenant des URL de fichiers média stockés sur un serveur distant, ainsi "
+"qu'à utiliser un processeur pour définir les fichiers média et extraire "
+"leurs métadonnées."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:97
 msgid "Note"
@@ -289,16 +320,20 @@ msgid ""
 "For this method, Opendatasoft supports the HTTP protocol and its secured "
 "version HTTPS. Both should link to a single file."
 msgstr ""
+"Pour cette méthode, Opendatasoft prend en charge le protocole HTTP et sa "
+"version sécurisée HTTPS, qui permettent d'accéder à un fichier unique."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:103
 msgid "Step 1: Create a dataset"
-msgstr ""
+msgstr "Étape 1 : créer un jeu de données"
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:106
 msgid ""
 "In the wizard that opens, select the desired method under the **Retrieve a "
 "file** section."
 msgstr ""
+"Sélectionnez la méthode souhaitée dans l'assistant qui s'ouvre, sous la "
+"section **Récupérer un fichier**."
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:107
 msgid ""
@@ -309,7 +344,7 @@ msgstr ""
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:111
 msgid "Step 2: Process the URLs"
-msgstr ""
+msgstr "Étape 2 : traiter les URL"
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:113
 msgid "Once the dataset is created, click on the **Processing** tab."
@@ -345,6 +380,8 @@ msgstr ""
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:119
 msgid "Example of a CSV file used to create a dataset with media files:"
 msgstr ""
+"Exemple d'un fichier CSV utiliser pour créer un jeu de données avec des "
+"fichiers média :"
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:137
 msgid "`http://website.com/file_name.png`"
@@ -387,6 +424,8 @@ msgid ""
 "through the default **Images** visualization tab: an image gallery "
 "displaying all the images and their metadata, or"
 msgstr ""
+"via l'onglet de visualisation **Images** par défaut : une galerie d'images "
+"présentant toutes les images et les métadonnées associées ou"
 
 #: ../../source/publishing_data/01_creating_a_dataset/creating_dataset_with_images.rst:160
 msgid ""
@@ -396,3 +435,9 @@ msgid ""
 "platform. For example, you can add it in the Custom view of the dataset or "
 "in a content page. In that case, images are displayed one by one."
 msgstr ""
+"via un diaporama, `un widget Opendatasoft "
+"<https://help.opendatasoft.com/widgets/#/api/ods-"
+"widgets.directive:odsSlideshow>`_ que vous pouvez ajouter dans n'importe "
+"quelle section de code de la plateforme. Par exemple, vous pouvez l'intégrer"
+" à la vue personnalisée du jeu de données ou à une page de contenu ; dans ce"
+" cas, les images sont affichées une par une."

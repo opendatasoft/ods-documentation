@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-01 17:12+0100\n"
+"POT-Creation-Date: 2021-12-03 14:22+0100\n"
 "PO-Revision-Date: 2021-11-26 10:57+0000\n"
 "Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2021\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
@@ -27,12 +27,14 @@ msgstr ""
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:2
 msgid "Realtime connector"
-msgstr ""
+msgstr "Connecteur Realtime"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:4
 msgid ""
 "The Realtime connector is used to push data to the Opendatasoft platform."
 msgstr ""
+"Le connecteur Realtime est utilisé pour transmettre des données à la "
+"plateforme Opendatasoft."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:6
 msgid ""
@@ -41,6 +43,10 @@ msgid ""
 "platform. To address this need, the Opendatasoft platform offers a realtime "
 "push API."
 msgstr ""
+"Pour certains types de données, il peut être utile de transmettre les "
+"données plutôt que de suivre le modèle classique d'extraction des données "
+"par la plateforme à partir d'une ressource. Pour répondre à ce besoin, la "
+"plateforme Opendatasoft propose une API de transmission en temps réel."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:8
 msgid ""
@@ -50,6 +56,12 @@ msgid ""
 "an application through a push API, and records are processed one by one as "
 "soon as they are received."
 msgstr ""
+"Cela ne doit pas être confondu avec la possibilité de planifier le "
+"traitement des jeux de données. Lors de la planification, le jeu de données "
+"extraira la ressource et traitera les données qu'elle contient de façon "
+"périodique. À l'inverse, avec l'API de transmission, le jeu de données est "
+"alimenté par une application via une API de transmission et les "
+"enregistrement sont traités les uns après les autres dès leur réception.  "
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:11
 msgid "Creation"
@@ -81,12 +93,17 @@ msgid ""
 "In the wizard that opens, select **Realtime** under the **Configure a remote"
 " service** section."
 msgstr ""
+"Sélectionnez **Realtime** dans l'assistant qui s'ouvre, sous la section "
+"**Configurer un service distant**."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:19
 msgid ""
 "In the **Real time data schema** box, enter some bootstrap data. The data "
 "should have all the fields that will be sent through the API."
 msgstr ""
+"Dans le champ **Schéma de données en temps réel**, indiquez des données "
+"d'amorçage. Les données doivent inclure tous les champs qui seront envoyés "
+"via l'API."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:21
 msgid "Note"
@@ -97,14 +114,16 @@ msgid ""
 "The bootstrap data is not used in the dataset: its sole purpose is to allow "
 "setting up the dataset."
 msgstr ""
+"Les données d'amorçage ne sont pas utilisées dans le jeu de données : leur "
+"seul objectif est d'autoriser la configuration du jeu de données. "
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:26
 msgid "Configure **Information** and **Alert Management** options."
-msgstr ""
+msgstr "Configurez les options **Information** et **Gestion des alertes**."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:27
 msgid "Retrieve the Push API URL."
-msgstr ""
+msgstr "Récupérez l'URL de l'API de transmission."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:29
 msgid ""
@@ -112,6 +131,9 @@ msgid ""
 "information, see "
 ":doc:`../../../publishing_data/03_scheduling_updates/scheduling_updates`."
 msgstr ""
+"Vous pouvez désormais utiliser l'API de transmission pour envoyer des "
+"données à la plateforme. Pour plus d'informations, consultez "
+":doc:`../../../publishing_data/03_scheduling_updates/scheduling_updates`."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:32
 msgid "Configuration"
@@ -138,7 +160,7 @@ msgstr "Utilisation"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:40
 msgid "Source label"
-msgstr ""
+msgstr "Label source"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:41
 msgid "Creates a new column with the name of the source file."
@@ -154,44 +176,54 @@ msgstr ""
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:44
 msgid "Alert management"
-msgstr ""
+msgstr "Gestion des alertes"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:50
 msgid "Alerts"
-msgstr ""
+msgstr "Alertes"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:51
 msgid "Enables alerts"
-msgstr ""
+msgstr "Active les alertes"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:53
 msgid ""
 "If you expect a system to push data to the platform often, you may want to "
 "be notified if no record has been received by the platform in a while."
 msgstr ""
+"Si vous vous attendez à ce que des données soient fréquemment transmises à "
+"la plateforme, il peut être utile de recevoir une notification dans le cas "
+"où la plateforme n'aurait reçu aucun enregistrement depuis un certain temps."
+" "
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:54
 msgid ""
 "By default, this option is toggled off. Toggle on this option to enable "
 "alerts."
 msgstr ""
+"Par défaut, cette option est désactivée. Activez-la pour recevoir des "
+"alertes."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:55
 msgid "Inactivity alert"
-msgstr ""
+msgstr "Alerte d'inactivité"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:56
 msgid "Length of time before an alert is generated"
-msgstr ""
+msgstr "Durée avant laquelle une alerte est générée"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:58
 msgid ""
 "If a time span greater than the threshold has occurred during which no "
 "record has been received, you will receive an email."
 msgstr ""
+"Si aucun enregistrement n'a été reçu pendant une période supérieure au délai"
+" défini, vous recevrez un e-mail."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:59
 msgid ""
 "Enter the length of time (in minutes) that should elapse before generating "
 "an alert."
 msgstr ""
+"Indiquez la durée (en minutes) qui doit s'écouler avant la génération d'une "
+"alerte."
