@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-01 17:12+0100\n"
+"POT-Creation-Date: 2021-12-03 14:22+0100\n"
 "PO-Revision-Date: 2018-06-27 09:14+0000\n"
 "Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2021\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
@@ -29,11 +29,11 @@ msgstr ""
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:2
 msgid "XML files"
-msgstr ""
+msgstr "Fichiers XML"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:4
 msgid "You can use an XML (.xml) file as a source."
-msgstr ""
+msgstr "Vous pouvez utiliser un fichier XML (.xml) en tant que source."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:6
 msgid ""
@@ -43,6 +43,13 @@ msgid ""
 "and content are converted to fields. Complex data inside fields is converted"
 " to a JSON representation containing both attributes and content."
 msgstr ""
+"Cette plateforme crée des enregistrements à partir d'une structure XML "
+"arbitraire en convertissant tous les éléments à une profondeur spécifique "
+"(éventuellement filtrés par tag)  en un ensemble d'enregistrements. Pour "
+"chaque élément converti en enregistrement, les attributs, les tags encadrés "
+"et le contenu sont convertis en champs. Les données complexes présentes dans"
+" les champs sont converties en une représentation JSON regroupant les "
+"attributs et le contenu."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:11
 msgid "Creation"
@@ -62,7 +69,7 @@ msgstr "Configuration"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:18
 msgid "XML parameters"
-msgstr ""
+msgstr "Paramètres XML"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:21
 #: ../../source/_includes/connectors_extractfilename.rst:4
@@ -81,7 +88,7 @@ msgstr "Utilisation"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:24
 msgid "Parent tags"
-msgstr ""
+msgstr "Tags parents"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:25
 msgid "Number of parents to get attributes from"
@@ -92,15 +99,19 @@ msgid ""
 "If the enclosing tags contain relevant attributes, use this option to add "
 "them to the records."
 msgstr ""
+"Si les tags encadrants contiennent des attributs pertinents, utilisez cette "
+"option pour les ajouter aux enregistrements."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:28
 msgid ""
 "Enter the number of parent tags to get attributes from (for example, ``2``)."
 msgstr ""
+"Indiquez le nombre de tags parents auprès desquels obtenir des attributs "
+"(par exemple, ``2``)."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:29
 msgid "Name of the tags to be extracted"
-msgstr ""
+msgstr "Noms des tags à extraire"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:30
 msgid ""
@@ -117,10 +128,13 @@ msgid ""
 "to be extracted** box. If you leave the box empty, all tags at the specified"
 " depth will be converted into records."
 msgstr ""
+"Indiquez le tag à extraire (par exemple, ``item``) dans le champ **Noms des "
+"tags à extraire**. Si vous laissez le champ vide, tous les tags à la "
+"profondeur spécifiée seront convertis en enregistrements.."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:32
 msgid "Tag depth"
-msgstr ""
+msgstr "Profondeur de tag"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:33
 msgid "Depth of the tags that must be converted to records"
@@ -131,6 +145,8 @@ msgid ""
 "Enter the depth of the repeated tag in the **Tag depth** box (for example, "
 "``3``)."
 msgstr ""
+"Indiquez la profondeur du tag répété dans le champ **Profondeur de tag** "
+"(par exemple, ``3``)."
 
 #: ../../source/_includes/connectors_extractfilename.rst:1
 #: ../../source/_includes/connectors_extractfilename.rst:7
@@ -162,6 +178,8 @@ msgid ""
 "The policy for creating fields from an item is defined as shown in the "
 "following examples."
 msgstr ""
+"La politique relative à la création de champs à partir d'un élément est "
+"définie dans les exemples suivants."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:59
 msgid "**attribute**"
@@ -227,6 +245,8 @@ msgid ""
 "Complex data inside fields is converted to JSON as shown in the following "
 "example."
 msgstr ""
+"Les données complexes à l'intérieur des champs sont converties en JSON comme"
+" illustré dans l'exemple suivant."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:104
 msgid "Examples"
@@ -245,17 +265,21 @@ msgid ""
 "**Tag depth** is set to ``2`` because ``wb:data`` is at the second level of "
 "the XML tree (``wb:rows/wb:data``)."
 msgstr ""
+"Le champ **Profondeur de tag** est défini sur ``2`` car ``wb:data`` est au "
+"deuxième niveau de l'arborescence XML (``wb:rows/wb:data``)."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:140
 msgid ""
 "You do not need to filter tags out because all elements at this depth are "
 "records."
 msgstr ""
+"Vous n'avez pas besoin de filtrer les tags, car tous les éléments à cette "
+"profondeur sont des enregistrements."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:142
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:187
 msgid "The resulting dataset looks like this:"
-msgstr ""
+msgstr "Le jeu de données résultant ressemble à ce qui suit :"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:145
 msgid "wb:indicator"
@@ -326,12 +350,18 @@ msgid ""
 "parameters detection cannot guess the proper depth. You must configure the "
 "source manually:"
 msgstr ""
+"Dans cet exemple, l'arborescence XML est complexe. Par conséquent, la "
+"détection automatique des paramètres ne peut pas déterminer la profondeur "
+"correcte. Vous devez configurer la source manuellement :"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:184
 msgid ""
 "**Tag depth** must be set to ``3`` because the ``item`` node is at the third"
 " level of the XML tree (``shoppingList/basket/item``)."
 msgstr ""
+"Le champ **Profondeur de tag** doit être défini sur ``3`` car le nœud "
+"``item`` est au troisième niveau de l'arborescence XML "
+"(``shoppingList/basket/item``)."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:185
 msgid ""
@@ -339,6 +369,9 @@ msgid ""
 "``itemCount`` and ``totalQuantity`` are also at the third level but not "
 "relevant."
 msgstr ""
+"Le champ **Noms des tags à extraire** doit être défini sur ``item`` car "
+"``itemCount`` et ``totalQuantity`` sont également au troisième niveau mais "
+"ne sont pas pertinents."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:190
 msgid "name"
