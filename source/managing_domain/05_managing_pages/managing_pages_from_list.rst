@@ -52,7 +52,7 @@ Unpublishing a page
 From the list of pages, you can unpublish a page and hide from the public.
 
 1. From the list of pages, hover over the desired page.
-2. Click the |eye-slash| icon to publish the page.
+2. Click the |eye-slash| icon to unpublish the page.
 
 Editing a page
 ~~~~~~~~~~~~~~
