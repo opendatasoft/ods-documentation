@@ -33,6 +33,9 @@ msgid ""
 "The JCDecaux connector retrieves the state of JCDecaux bicycle stations. It "
 "creates a dataset with records containing bicycle stations data."
 msgstr ""
+"Der JCDecaux-Konnektor ruft den Status der JCDecaux-Fahrradstationen ab. Er "
+"erstellt einen Datensatz mit Einträgen, die Daten zu Fahrradstationen "
+"enthalten."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/jcdecaux.rst:6
 msgid "Note"
@@ -45,10 +48,14 @@ msgid ""
 "<https://data.opendatasoft.com/explore/dataset/jcdecaux_bike_data@public/>`_."
 " You can federate it to use the data."
 msgstr ""
+"Der Datensatz für die JCDecaux-Fahrradstationen ist im `Opendatasoft-"
+"Datennetzwerk "
+"<https://data.opendatasoft.com/explore/dataset/jcdecaux_bike_data@public/>`_"
+" verfügbar. Zur Nutzung der Daten können Sie ihn einfach verbinden."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/jcdecaux.rst:11
 msgid "Using the JCDecaux connector, you can retrieve two types of data:"
-msgstr ""
+msgstr "Mit dem JCDecaux-Konnektor können Sie zwei Arten von Daten abrufen:"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/jcdecaux.rst:13
 msgid ""
@@ -56,12 +63,18 @@ msgid ""
 "historical data), including station state, number of available bikes, number"
 " of free bike stands, etc."
 msgstr ""
+"\"JCDecaux Bicycle Stations Data\" liefert dynamische Echtzeitdaten (keine "
+"historischen Daten), einschließlich Zustand der Stationen, Anzahl der "
+"verfügbaren Fahrräder, Anzahl der freien Fahrradständer usw."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/jcdecaux.rst:14
 msgid ""
 "JCDecaux Bicycle Stations provides static and stable data, including station"
 " position, number of bike stands, payment terminal availability, etc."
 msgstr ""
+"\"JCDecaux Bicycle Stations\" liefert statische und stabile Daten, "
+"einschließlich des Standorts der Stationen, der Anzahl der Fahrradständer, "
+"der Verfügbarkeit von Bezahlterminals usw."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/jcdecaux.rst:16
 msgid "Important"
@@ -84,39 +97,51 @@ msgstr "Erstellung"
 msgid ""
 "Before you begin, retrieve your API key from JCDecaux's developer website."
 msgstr ""
+"Bevor Sie beginnen, müssen Sie Ihren API-Schlüssel von der Entwickler-"
+"Website von JCDecaux abrufen."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/jcdecaux.rst:27
 msgid "Choose an option:"
-msgstr ""
+msgstr "Wählen Sie eine Option:"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/jcdecaux.rst:29
 msgid ""
 "If you want to create a dataset, click **Catalog** > **Datasets** and click "
 "the **New dataset** button."
 msgstr ""
+"Wenn Sie einen Datensatz erstellen möchten, klicken Sie auf **Katalog** > "
+"**Datensätze** und dann auf den Button **Neuer Datensatz**."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/jcdecaux.rst:30
 msgid ""
 "If you want to add a source to an existing dataset, click **Catalog** > "
 "**Datasets** and select the desired dataset. Then, click **Add a source**."
 msgstr ""
+"Wenn Sie eine Quelle zu einem bestehenden Datensatz hinzufügen möchten, "
+"klicken Sie auf **Katalog** > **Datensätze** und wählen Sie den gewünschten "
+"Datensatz aus. Klicken Sie dann auf **Quelle hinzufügen**."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/jcdecaux.rst:32
 msgid ""
 "In the wizard that opens, select **JCDecaux** under the **Configure a remote"
 " service** section."
 msgstr ""
+"Wählen Sie in dem sich öffnenden Assistenten **JCDecaux** unter dem "
+"Abschnitt **Remote-Service konfigurieren**."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/jcdecaux.rst:33
 msgid ""
 "Under the **Retrieve data from JCDecaux** section, enter your JCDecaux API "
 "key in the **API key** box."
 msgstr ""
+"Geben Sie unter dem Abschnitt **Daten von JCDecaux abrufen** Ihren JCDecaux-"
+"API-Schlüssel in das Feld **API-Schlüssel** ein."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/jcdecaux.rst:34
 msgid ""
 "From the preview of the first 20 records that appears, do the following:"
 msgstr ""
+"Gehen Sie in der angezeigten Vorschau der ersten 20 Einträge wie folgt vor:"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/jcdecaux.rst:36
 msgid ""
@@ -124,10 +149,13 @@ msgid ""
 "Bicycle Stations Data** (dynamic real-time data) or **JCDecaux Bicycle "
 "Stations** (static and stable data)."
 msgstr ""
+"Wählen Sie in der Liste **Typ** aus, ob Sie **JCDecaux Bicycle Stations "
+"Data** (dynamische Echtzeitdaten) oder **JCDecaux Bicycle Stations** "
+"(statische und stabile Daten) abrufen möchten."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/jcdecaux.rst:37
 msgid "Configure the source."
-msgstr ""
+msgstr "Konfigurieren Sie die Quelle."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/jcdecaux.rst:39
 msgid "Configure the dataset information or use the pre-filled values:"
@@ -166,26 +194,32 @@ msgstr "Verwendung"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/jcdecaux.rst:54
 msgid "Cities"
-msgstr ""
+msgstr "Städte"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/jcdecaux.rst:55
 msgid "Filter data by city"
-msgstr ""
+msgstr "Daten nach Stadt filtern"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/jcdecaux.rst:57
 msgid ""
 "In the resulting dataset, the ``contract_name`` column contains city names "
 "where JCDecaux bicycle stations are located."
 msgstr ""
+"Im entstehenden Datensatz enthält die Spalte ``contract_name`` die Namen der"
+" Städte, in denen sich die Fahrradstationen von JCDecaux befinden."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/jcdecaux.rst:58
 msgid ""
 "No value is selected by default, meaning that data from bicycle stations in "
 "all cities is retrieved."
 msgstr ""
+"Standardmäßig ist kein Wert ausgewählt. Das bedeutet, dass die Daten von "
+"Fahrradstationen aus allen Städten abgerufen werden."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/jcdecaux.rst:60
 msgid ""
 "From the **Cities** list, you can select one or more city names to only "
 "retrieve data about those cities."
 msgstr ""
+"In der Liste **Städte** können Sie einen oder mehrere Städte auswählen, um "
+"nur die Daten zu diesen Städten abzurufen."

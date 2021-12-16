@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021
 # Super Traducteur <admin+supertraducteur@opendatasoft.com>, 2021
+# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-03 14:22+0100\n"
 "PO-Revision-Date: 2018-06-27 09:14+0000\n"
-"Last-Translator: Super Traducteur <admin+supertraducteur@opendatasoft.com>, 2021\n"
+"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2021\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:2
 msgid "JSON files"
-msgstr ""
+msgstr "Archivos JSON"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:4
 msgid ""
@@ -32,12 +32,19 @@ msgid ""
 "data objects consisting of key-value pairs. It is the most common data "
 "format to build web APIs."
 msgstr ""
+"JSON es un formato de estándar abierto que utiliza texto en lenguaje natural"
+" para transmitir objetos de datos formados por pares clave-valor. Es el "
+"formato de datos más habitual para la compilación de interfaces API de "
+"sitios web."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:6
 msgid ""
 "As JSON documents can have a lot of different forms, the platform can "
 "extract data from JSON files, JSON Lines files, and JSON dictionaries."
 msgstr ""
+"Como los documentos JSON pueden tener muchos formatos diferentes, la "
+"plataforma puede extraer los datos de archivos JSON, archivos de líneas JSON"
+" y diccionarios JSON."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:9
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:94
@@ -49,6 +56,8 @@ msgid ""
 "If the platform does not fully extract a document with a complex structure, "
 "use one of the JSON processors to complete the extraction."
 msgstr ""
+"Si la plataforma no extrae por completo un documento con una estructura "
+"compleja, emplee uno de los procesadores JSON para efectuar la extracción."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:16
 msgid "JSON File"
@@ -59,6 +68,9 @@ msgid ""
 "You can use a JSON file as a source. From this file, the platform extracts a"
 " valid JSON document (array or object) into one dataset of several records:"
 msgstr ""
+"Puede utilizar un archivo JSON como origen. De este archivo, la plataforma "
+"extrae un documento JSON válido (matriz u objeto) en un conjunto de datos de"
+" varios registros:"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:20
 msgid ""
@@ -74,12 +86,17 @@ msgid ""
 " a dot-separated path to the array inside your object. If not provided, the "
 "platform tries ``items``."
 msgstr ""
+"Si el documento es un objeto JSON, el parámetro \"JSON root\" debe contener "
+"una ruta separada por un punto de la matriz dentro del objeto. Si no se "
+"proporciona, la plataforma prueba con ``items``."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:23
 msgid ""
 "For each item inside the array, the platform can follow another path before "
 "extracting the records with the parameter \"JSON object\"."
 msgstr ""
+"Para cada uno de los elementos de la matriz, la plataforma puede seguir otra"
+" ruta antes de extraer los registros con el parámetro \"Objeto JSON\"."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:26
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:161
@@ -89,12 +106,12 @@ msgstr "Tipos de archivo permitidos"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:28
 msgid "Regular fields (decimal, boolean, string)"
-msgstr ""
+msgstr "Campos regulares (decimal, booleano, string)"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:29
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:165
 msgid "JSON object: used as-is"
-msgstr ""
+msgstr "Objeto JSON: se usa tal cual."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:30
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:208
@@ -104,7 +121,7 @@ msgstr "Matriz:"
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:32
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:210
 msgid "If the array contains JSON objects, it is used as-is."
-msgstr ""
+msgstr "Si la matriz contiene objetos JSON, se usa tal cual."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:33
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:211
@@ -112,6 +129,8 @@ msgid ""
 "If the array contains strings, a multivalued field is created with all the "
 "strings separated by a semicolon (``;``)."
 msgstr ""
+"Si la matriz contiene cadenas, se crea un campo multivalor con todas las "
+"cadenas separadas por un punto y coma (``;``)."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:36
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:168
@@ -126,6 +145,8 @@ msgid ""
 "For more information about adding a file source, see "
 ":doc:`/publishing_data/01_creating_a_dataset/retrieving_file`."
 msgstr ""
+"Para obtener más información sobre cómo añadir un origen de archivo, "
+"consulte :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:41
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:173
@@ -137,7 +158,7 @@ msgstr "Configuración"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:43
 msgid "JSON parameters"
-msgstr ""
+msgstr "Parámetros JSON"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:47
 #: ../../source/_includes/connectors_extractfilename.rst:4
@@ -171,6 +192,8 @@ msgid ""
 "`ijson <https://pypi.org/project/ijson/>`_ path to the JSON array that "
 "contains the objects to be extracted as dataset records"
 msgstr ""
+"Ruta `ijson <https://pypi.org/project/ijson/>`_ de la matriz JSON que "
+"contiene los objetos para extraer como registros de conjuntos de datos"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:53
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:233
@@ -179,6 +202,9 @@ msgid ""
 " the attribute names with dots (for example, `content.trains`). More "
 "features are available for advanced users."
 msgstr ""
+"iJSON es una sintaxis para navegar dentro de los objetos JSON. Consiste en "
+"separar los nombres de atributos por puntos (por ejemplo, `content.trains`)."
+" Hay más funciones disponibles para los usuarios avanzados."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:55
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:235
@@ -187,6 +213,9 @@ msgid ""
 "box empty. If the JSON file is a JSON object, enter the ijson path to the "
 "array in the **JSON root** box."
 msgstr ""
+"Si la matriz JSON está en la raíz del documento, deje el cuadro **Raíz "
+"JSON** vacío. Si el archivo JSON es un objeto JSON, especifique la ruta "
+"iJSON de la matriz en el cuadro **Raíz JSON**."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:56
 msgid "JSON object"
@@ -194,7 +223,7 @@ msgstr "Objeto JSON"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:57
 msgid "Relative path to the JSON object to extract"
-msgstr ""
+msgstr "Ruta relativa al objeto JSON que se debe extraer"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:58
 msgid ""
@@ -202,6 +231,9 @@ msgid ""
 "that the JSON object has been extracted as the value of one column, enter "
 "the name of that column in the **JSON object** box."
 msgstr ""
+"Tras establecer la raíz JSON, si la vista previa muestra columnas "
+"irrelevantes, y el objeto JSON se ha extraído como valor de una columna, "
+"especifique el nombre de esa columna en el cuadro **Objeto JSON**."
 
 #: ../../source/_includes/connectors_extractfilename.rst:1
 #: ../../source/_includes/connectors_extractfilename.rst:7
@@ -223,6 +255,8 @@ msgid ""
 "By default, this option is toggled off. Toggle on this option to extract the"
 " file name in an additional column."
 msgstr ""
+"De forma predeterminada, esta opción está desactivada. Active esta opción "
+"para extraer el nombre de archivo en una columna adicional."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:63
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:241
@@ -239,10 +273,12 @@ msgid ""
 "In this JSON file, the JSON array is directly at the root. You can leave the"
 " **JSON root** box empty."
 msgstr ""
+"En este archivo JSON, la matriz JSON está directamente en la raíz. Puede "
+"dejar el cuadro **Raíz JSON** vacío."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:84
 msgid "The resulting dataset will be:"
-msgstr ""
+msgstr "El conjunto de datos resultante será:"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:87
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:142
@@ -291,7 +327,7 @@ msgstr "Sealdah"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:97
 msgid "The column order may vary."
-msgstr ""
+msgstr "El orden de las columnas puede variar."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:99
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:285
@@ -303,6 +339,9 @@ msgid ""
 "For this complex JSON file, the correct JSON root is ``content.trains``. If "
 "``content.trains`` is set as the JSON root, the resulting dataset will be:"
 msgstr ""
+"Para este archivo JSON complejo, la raíz JSON correcta es "
+"``content.trains``. Si ``content.trains`` se ha establecido como raíz JSON, "
+"el conjunto de datos resultante será:"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:131
 msgid "id"
@@ -334,10 +373,13 @@ msgid ""
 "correct JSON object is ``info``. If ``info`` is set as a JSON object, the "
 "resulting dataset will be:"
 msgstr ""
+"Para extraer tan solo los objetos JSON ``info`` y pasar por alto el número "
+"``id``, el objeto JSON correcto es ``info``. Si ``info`` se ha establecido "
+"como objeto JSON, el conjunto de datos resultante será:"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:151
 msgid "JSON Lines"
-msgstr ""
+msgstr "Líneas JSON"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:153
 msgid ""
@@ -345,10 +387,14 @@ msgid ""
 " a one-line JSON document. The whole file is not a valid JSON document but "
 "each line is."
 msgstr ""
+"Puede utilizar un archivo de líneas JSON como origen. En los archivos de "
+"líneas JSON, cada una de las líneas es un documento JSON de una línea. El "
+"archivo entero no es un documento JSON válido, pero sí lo es cada una de las"
+" líneas."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:155
 msgid "Two modes are supported:"
-msgstr ""
+msgstr "Se admiten 2 modos:"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:157
 msgid "One JSON array on each line (or one array altogether)"
@@ -364,7 +410,7 @@ msgstr "Campos regulares (decimal, string)"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:164
 msgid "Array: used as-is"
-msgstr ""
+msgstr "Matriz: se usa tal cual"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:184
 msgid "First line number"
@@ -376,12 +422,18 @@ msgid ""
 "which line is considered the first one. The lines above will be skipped from"
 " the dataset."
 msgstr ""
+"Para los archivos que no empiezan en la primera línea, se puede definir qué "
+"línea se considera la primera. Las líneas por encima de esta se pasarán por "
+"alto en el conjunto de datos."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:186
 msgid ""
 "By default, the dataset starts at line 1. Enter the number of the line that "
 "should be considered the beginning of the dataset."
 msgstr ""
+"De forma predeterminada, el conjunto de datos empieza en la línea 1. "
+"Especifique el número de la línea que debe considerarse el comienzo del "
+"conjunto de datos."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:187
 msgid "Headers"
@@ -389,7 +441,7 @@ msgstr "Encabezados"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:188
 msgid "For files whose first line contains field names"
-msgstr ""
+msgstr "Para los archivos en que la primera línea contiene nombres de campo."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:189
 msgid ""
@@ -397,6 +449,10 @@ msgid ""
 " field labels. Toggle off this option if the first line doesn't contain "
 "field names but data: the field labels will then be empty by default."
 msgstr ""
+"De forma predeterminada, esta opción está activada. Hace de los valores de "
+"la primera línea las etiquetas de campo. Desactive esta opción si la primera"
+" línea no contiene nombres de campo sino datos: así, las etiquetas de campo "
+"estarán vacías de forma predeterminada."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:193
 msgid "JSON Dict"
@@ -407,22 +463,30 @@ msgid ""
 "You can use a JSON dictionary as a source. The platform extracts a valid "
 "JSON document (array or object) into one dataset of several records."
 msgstr ""
+"Puede utilizar un diccionario JSON como origen. La plataforma extrae un "
+"documento JSON válido (matriz u objeto) en un conjunto de datos de varios "
+"registros."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:197
 msgid ""
 "The platform expects a JSON object where each key contains a record. The "
 "platform then creates records with:"
 msgstr ""
+"La plataforma espera un objeto JSON donde cada clave contiene un registro. A"
+" continuación, la plataforma crea registros con:"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:200
 msgid "one column to hold the key"
-msgstr ""
+msgstr "una columna para contener la clave,"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:201
 msgid ""
 "one column for each attribute of the corresponding object (or a single "
 "column named \"value\" if the value is a string instead of an object)."
 msgstr ""
+"una columna para cada atributo del objeto correspondiente (o una sola "
+"columna denominada \"value\" si el valor es una cadena en lugar de un "
+"objeto)."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:206
 msgid "Regular fields (decimal, bool, string)"
@@ -438,7 +502,7 @@ msgstr "Nombre de campo clave"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:237
 msgid "Label of the \"key\" column"
-msgstr ""
+msgstr "Etiqueta de la columna \"key\""
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:238
 msgid ""
@@ -446,11 +510,15 @@ msgid ""
 "the **Key field name** box. It will modify both the label and the technical "
 "identifier of the column."
 msgstr ""
+"El valor predeterminado es \"key\". Especifique la nueva etiqueta de la "
+"columna \"key\" en el cuadro **Nombre de campo clave**. Así se modificará "
+"tanto la etiqueta como el identificador técnico de la columna."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:275
 msgid ""
 "If you leave the **JSON root** box empty, the resulting dataset will be:"
 msgstr ""
+"Si deja el cuadro **Raíz JSON** vacío, el conjunto de datos resultante será:"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:278
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:313
@@ -503,7 +571,7 @@ msgstr "``results.datasets`` lleva a la matriz"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:310
 msgid "``item`` iterates inside the array and gets each object"
-msgstr ""
+msgstr "``item`` itera dentro de la matriz y obtiene cada uno de los objetos"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/json.rst:313
 msgid "description"

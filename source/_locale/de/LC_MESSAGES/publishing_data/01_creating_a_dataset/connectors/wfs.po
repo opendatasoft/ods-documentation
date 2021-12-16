@@ -53,35 +53,44 @@ msgstr "Erstellung"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:14
 msgid "Choose an option:"
-msgstr ""
+msgstr "Wählen Sie eine Option:"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:16
 msgid ""
 "If you want to create a dataset, click **Catalog** > **Datasets** and click "
 "the **New dataset** button."
 msgstr ""
+"Wenn Sie einen Datensatz erstellen möchten, klicken Sie auf **Katalog** > "
+"**Datensätze** und dann auf den Button **Neuer Datensatz**."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:17
 msgid ""
 "If you want to add a source to an existing dataset, click **Catalog** > "
 "**Datasets** and select the desired dataset. Then, click **Add a source**."
 msgstr ""
+"Wenn Sie eine Quelle zu einem bestehenden Datensatz hinzufügen möchten, "
+"klicken Sie auf **Katalog** > **Datensätze** und wählen Sie den gewünschten "
+"Datensatz aus. Klicken Sie dann auf **Quelle hinzufügen**."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:19
 msgid ""
 "In the wizard that opens, select **WFS** under the **Configure a remote "
 "service** section."
 msgstr ""
+"Wählen Sie in dem sich öffnenden Assistenten **WFS** unter dem Abschnitt "
+"**Remote-Service konfigurieren**."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:20
 msgid "Configure your HTTP connection:"
-msgstr ""
+msgstr "Konfigurieren Sie Ihre HTTP-Verbindung:"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:22
 msgid ""
 "Under the **Connection information to the HTTP server** section, enter the "
 "URL to the server in the **Server URL** box."
 msgstr ""
+"Geben Sie im Abschnitt **Verbindungsinformationen zum HTTP-Server** die URL "
+"zum Server in das Feld **Server-URL** ein. "
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:23
 msgid ""
@@ -89,6 +98,9 @@ msgid ""
 " contain the ``TypeName`` parameter. (for example, "
 "``/wfs?service=WFS&TypeName=layername``)"
 msgstr ""
+"Geben Sie unter dem Abschnitt **Pfad zur Datei** den Pfad zur Ebene an. Er "
+"muss den Parameter ``TypeName`` enthalten (zum Beispiel: "
+"``/wfs?service=WFS&TypeName=layername``)."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:24
 msgid ""
@@ -144,11 +156,11 @@ msgstr "Verwendung"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:40
 msgid "File encoding"
-msgstr ""
+msgstr "Dateicodierung"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:41
 msgid "Encoding of the file"
-msgstr ""
+msgstr "Codierung der Datei."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:43
 msgid ""
@@ -158,6 +170,11 @@ msgid ""
 " require setting the encoding manually. On modern software, this is usually "
 "unnecessary."
 msgstr ""
+"Die Zeichen werden in einer gespeicherten Datei mittels Zeichenkodierung "
+"dargestellt. Unicode (oder UTF-8) ist der universelle Standard, aber einige "
+"Dateien können in einem älteren Format kodiert sein (z.B. alte Versionen von"
+" Excel), was eine manuelle Einstellung der Kodierung erforderlich macht. Bei"
+" neuerer Software ist dies in der Regel nicht erforderlich."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:45
 msgid ""
@@ -167,34 +184,41 @@ msgid ""
 "`Python <https://docs.python.org/2/library/codecs.html#standard-"
 "encodings>`_."
 msgstr ""
+"Standardmäßig verwendet die Plattform eine Heuristik, um die Kodierung zu "
+"ermitteln. Wenn die vermutete Kodierung nicht richtig ist, wählen Sie die "
+"Richtige aus der Liste aus oder schreiben Sie sie in das Textfeld **Andere**"
+" ein. Sie können beliebige Aliase aus `Python "
+"<https://docs.python.org/2/library/codecs.html#standard-encodings>`_ "
+"verwenden."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:47
 msgid "WFS parameters"
-msgstr ""
+msgstr "WFS-Parameter"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:53
 msgid "Indicate the EPSG code matching the coordinate system (SRS)"
 msgstr ""
+"Geben Sie den EPSG-Code an, der dem Koordinatensystem entspricht (SRS)"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:54
 msgid "Forces the SRS value if missing from the remote WFS service."
-msgstr ""
+msgstr "Erzwingt den SRS-Wert wenn er im Remote-WFS-Dienst fehlt."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:55
 msgid "Enter the right EPSG code in the box."
-msgstr ""
+msgstr "Geben Sie den richtigen EPSG-Code in das Feld ein."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:56
 msgid "Force the coordinate system conversion to WSG84"
-msgstr ""
+msgstr "Die Umstellung des Koordinatensystems auf WSG84 erzwingen"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:57
 msgid "Converts the geographical coordinates to EPSG:4326."
-msgstr ""
+msgstr "Konvertiert die geographischen Koordinaten in EPSG:4326."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:58
 msgid "By default, this option is toggled on."
-msgstr ""
+msgstr "Standardmäßig ist diese Funktion aktiviert."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:59
 msgid "Invert coordinates"
@@ -205,10 +229,12 @@ msgid ""
 "Some WFS services return the coordinates reversed. This option inverts the "
 "coordinate order."
 msgstr ""
+"Einige WFS-Dienste geben die Koordinaten in umgekehrter Reihenfolge wieder. "
+"Diese Option kehrt die Reihenfolge der Koordinaten um."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/wfs.rst:61
 msgid "By default, option is toggled off."
-msgstr ""
+msgstr "Standardmäßig ist diese Option deaktiviert."
 
 #: ../../source/_includes/connectors_extractfilename.rst:1
 #: ../../source/_includes/connectors_extractfilename.rst:7
@@ -224,3 +250,5 @@ msgid ""
 "By default, this option is toggled off. Toggle on this option to extract the"
 " file name in an additional column."
 msgstr ""
+"Standardmäßig ist diese Option deaktiviert. Aktivieren Sie diese Option, um "
+"den Dateinamen in einer zusätzlichen Spalte zu extrahieren."

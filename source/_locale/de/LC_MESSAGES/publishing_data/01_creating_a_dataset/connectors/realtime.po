@@ -4,10 +4,10 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# traducteur_DE1 <datawords.translator.de1@gmail.com>, 2021
 # traducteur_DE2 <datawords.translator.de2@gmail.com>, 2021
 # Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2021
 # Super Traducteur <admin+supertraducteur@opendatasoft.com>, 2021
+# traducteur_DE1 <datawords.translator.de1@gmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
@@ -16,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-03 14:22+0100\n"
 "PO-Revision-Date: 2021-11-26 10:57+0000\n"
-"Last-Translator: Super Traducteur <admin+supertraducteur@opendatasoft.com>, 2021\n"
+"Last-Translator: traducteur_DE1 <datawords.translator.de1@gmail.com>, 2021\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,12 +26,14 @@ msgstr ""
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:2
 msgid "Realtime connector"
-msgstr ""
+msgstr "Realtime-Konnektor"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:4
 msgid ""
 "The Realtime connector is used to push data to the Opendatasoft platform."
 msgstr ""
+"Der Realtime-Konnektor wird verwendet, um Daten an die Opendatasoft-"
+"Plattform zu übertragen."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:6
 msgid ""
@@ -40,6 +42,10 @@ msgid ""
 "platform. To address this need, the Opendatasoft platform offers a realtime "
 "push API."
 msgstr ""
+"Bei einigen Datentypen kann es hilfreich sein, Daten zu übertragen (Push), "
+"anstatt die Daten auf herkömmliche Weise von der Plattform aus einer "
+"Ressource zu beziehen. Um diesen Bedarf zu decken, bietet die Opendatasoft-"
+"Plattform eine Realtime-Push-API."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:8
 msgid ""
@@ -49,6 +55,12 @@ msgid ""
 "an application through a push API, and records are processed one by one as "
 "soon as they are received."
 msgstr ""
+"Dies ist nicht mit der Möglichkeit zu verwechseln, die Verarbeitung eines "
+"Datensatzes zu planen. Bei der Planung wird der Datensatz in regelmäßigen "
+"Abständen die Ressource abrufen und die darin enthaltenen Daten verarbeiten."
+" Im Gegensatz dazu wird der Datensatz bei der Push-API von einer Anwendung "
+"über eine Push-API versorgt. Die Einträge werden nacheinander verarbeitet, "
+"sobald sie empfangen werden."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:11
 msgid "Creation"
@@ -56,31 +68,40 @@ msgstr "Erstellung"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:13
 msgid "Choose an option:"
-msgstr ""
+msgstr "Wählen Sie eine Option:"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:15
 msgid ""
 "If you want to create a dataset, click **Catalog** > **Datasets** and click "
 "the **New dataset** button."
 msgstr ""
+"Wenn Sie einen Datensatz erstellen möchten, klicken Sie auf **Katalog** > "
+"**Datensätze** und dann auf den Button **Neuer Datensatz**."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:16
 msgid ""
 "If you want to add a source to an existing dataset, click **Catalog** > "
 "**Datasets** and select the desired dataset. Then, click **Add a source**."
 msgstr ""
+"Wenn Sie eine Quelle zu einem bestehenden Datensatz hinzufügen möchten, "
+"klicken Sie auf **Katalog** > **Datensätze** und wählen Sie den gewünschten "
+"Datensatz aus. Klicken Sie dann auf **Quelle hinzufügen**."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:18
 msgid ""
 "In the wizard that opens, select **Realtime** under the **Configure a remote"
 " service** section."
 msgstr ""
+"Wählen Sie in dem sich öffnenden Assistenten **Realtime** unter dem "
+"Abschnitt **Remote-Service konfigurieren**."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:19
 msgid ""
 "In the **Real time data schema** box, enter some bootstrap data. The data "
 "should have all the fields that will be sent through the API."
 msgstr ""
+"Geben Sie in das Feld **Echtzeit-Datenschema** einige Bootstrapdaten ein. "
+"Die Daten sollten alle Felder enthalten, die über die API gesendet werden."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:21
 msgid "Note"
@@ -91,14 +112,17 @@ msgid ""
 "The bootstrap data is not used in the dataset: its sole purpose is to allow "
 "setting up the dataset."
 msgstr ""
+"Die Bootstrapdaten werden nicht im Datensatz verwendet: Sie dienen lediglich"
+" dazu, den Datensatz zu erstellen."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:26
 msgid "Configure **Information** and **Alert Management** options."
 msgstr ""
+"Konfigurieren Sie die Optionen **Informationen** und **Alarmmanagement**."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:27
 msgid "Retrieve the Push API URL."
-msgstr ""
+msgstr "Rufen Sie die URL der Push-API ab."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:29
 msgid ""
@@ -106,6 +130,9 @@ msgid ""
 "information, see "
 ":doc:`../../../publishing_data/03_scheduling_updates/scheduling_updates`."
 msgstr ""
+"Sie können jetzt die Push-API verwenden, um Daten an die Plattform zu "
+"übertragen. Weitere Informationen finden Sie hier: "
+":doc:`../../../publishing_data/03_scheduling_updates/scheduling_updates`."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:32
 msgid "Configuration"
@@ -132,7 +159,7 @@ msgstr "Verwendung"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:40
 msgid "Source label"
-msgstr ""
+msgstr "Bezeichnung der Quelle"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:41
 msgid "Creates a new column with the name of the source file."
@@ -143,47 +170,58 @@ msgid ""
 "By default, this option is toggled off. Toggle on this option to extract the"
 " file name in an additional column."
 msgstr ""
+"Standardmäßig ist diese Option deaktiviert. Aktivieren Sie diese Option, um "
+"den Dateinamen in einer zusätzlichen Spalte zu extrahieren."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:44
 msgid "Alert management"
-msgstr ""
+msgstr "Alarmmanagement"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:50
 msgid "Alerts"
-msgstr ""
+msgstr "Alarme"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:51
 msgid "Enables alerts"
-msgstr ""
+msgstr "Aktiviert Alarme"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:53
 msgid ""
 "If you expect a system to push data to the platform often, you may want to "
 "be notified if no record has been received by the platform in a while."
 msgstr ""
+"Wenn Sie davon ausgehen, dass ein bestimmtes System häufig Daten an die "
+"Plattform sendet, möchten Sie vielleicht benachrichtigt werden, wenn eine "
+"Zeit lang kein Eintrag von der Plattform empfangen wurde."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:54
 msgid ""
 "By default, this option is toggled off. Toggle on this option to enable "
 "alerts."
 msgstr ""
+"Standardmäßig ist diese Option deaktiviert. Aktivieren Sie diese Option, um "
+"die Alarmfunktion zu nutzen."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:55
 msgid "Inactivity alert"
-msgstr ""
+msgstr "Inaktivitätsalarm"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:56
 msgid "Length of time before an alert is generated"
-msgstr ""
+msgstr "Zeitspanne, bevor ein Alarm ausgelöst wird"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:58
 msgid ""
 "If a time span greater than the threshold has occurred during which no "
 "record has been received, you will receive an email."
 msgstr ""
+"Wenn die Zeitspanne den angegebenen Wert überschreitet und kein Eintrag "
+"eingegangen ist, erhalten Sie eine E-Mail."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/realtime.rst:59
 msgid ""
 "Enter the length of time (in minutes) that should elapse before generating "
 "an alert."
 msgstr ""
+"Geben Sie die Zeitspanne (in Minuten) ein, die vergehen soll, bevor ein "
+"Alarm ausgelöst wird."
