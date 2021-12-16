@@ -24,11 +24,11 @@ msgstr ""
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:2
 msgid "XML files"
-msgstr ""
+msgstr "Archivos XML"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:4
 msgid "You can use an XML (.xml) file as a source."
-msgstr ""
+msgstr "Puede utilizar un archivo XML (.xml) como origen."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:6
 msgid ""
@@ -38,6 +38,13 @@ msgid ""
 "and content are converted to fields. Complex data inside fields is converted"
 " to a JSON representation containing both attributes and content."
 msgstr ""
+"Esta plataforma crea registros a partir de cualquier estructura XML "
+"arbitraria convirtiendo todos los elementos de una profundidad específica "
+"(opcionalmente filtrados por etiqueta) en un conjunto de registros. Para "
+"cada uno de los elementos convertidos en un registro, tanto los atributos "
+"como las etiquetas delimitadas y el contenido se convierten en campos. Los "
+"datos complejos del interior de los campos se convierten en una "
+"representación JSON que contiene tanto los atributos como el contenido."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:11
 msgid "Creation"
@@ -48,6 +55,8 @@ msgid ""
 "For more information about adding a file source, see "
 ":doc:`/publishing_data/01_creating_a_dataset/retrieving_file`."
 msgstr ""
+"Para obtener más información sobre cómo añadir un origen de archivo, "
+"consulte :doc:`/publishing_data/01_creating_a_dataset/retrieving_file`."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:16
 msgid "Configuration"
@@ -55,7 +64,7 @@ msgstr "Configuración"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:18
 msgid "XML parameters"
-msgstr ""
+msgstr "Parámetros XML"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:21
 #: ../../source/_includes/connectors_extractfilename.rst:4
@@ -74,7 +83,7 @@ msgstr "Uso"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:24
 msgid "Parent tags"
-msgstr ""
+msgstr "Etiquetas primarias"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:25
 msgid "Number of parents to get attributes from"
@@ -85,15 +94,19 @@ msgid ""
 "If the enclosing tags contain relevant attributes, use this option to add "
 "them to the records."
 msgstr ""
+"Si las etiquetas circundantes contienen atributos relevantes, utilice esta "
+"opción para añadirlos en los registros."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:28
 msgid ""
 "Enter the number of parent tags to get attributes from (for example, ``2``)."
 msgstr ""
+"Especifique el número de etiquetas primarias de las que se obtendrán los "
+"atributos (por ejemplo, ``2``)."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:29
 msgid "Name of the tags to be extracted"
-msgstr ""
+msgstr "Nombre de las etiquetas para extraer"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:30
 msgid ""
@@ -110,10 +123,13 @@ msgid ""
 "to be extracted** box. If you leave the box empty, all tags at the specified"
 " depth will be converted into records."
 msgstr ""
+"Especifique la etiqueta que se extraerá (por ejemplo, ``item``) en el cuadro"
+" **Nombre de las etiquetas para extraer**. Si deja vacío el cuadro, todas "
+"las etiquetas de la profundidad especificada se convertirán en registros."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:32
 msgid "Tag depth"
-msgstr ""
+msgstr "Profundidad de etiqueta"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:33
 msgid "Depth of the tags that must be converted to records"
@@ -124,6 +140,8 @@ msgid ""
 "Enter the depth of the repeated tag in the **Tag depth** box (for example, "
 "``3``)."
 msgstr ""
+"Especifique la profundidad de la etiqueta repetida en el cuadro "
+"**Profundidad de etiqueta** (por ejemplo, ``3``)."
 
 #: ../../source/_includes/connectors_extractfilename.rst:1
 #: ../../source/_includes/connectors_extractfilename.rst:7
@@ -139,6 +157,8 @@ msgid ""
 "By default, this option is toggled off. Toggle on this option to extract the"
 " file name in an additional column."
 msgstr ""
+"De forma predeterminada, esta opción está desactivada. Active esta opción "
+"para extraer el nombre de archivo en una columna adicional."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:39
 msgid "Technical specifications"
@@ -153,6 +173,8 @@ msgid ""
 "The policy for creating fields from an item is defined as shown in the "
 "following examples."
 msgstr ""
+"La directiva para crear campos a partir de un elemento se define tal como se"
+" muestra en los ejemplos siguientes."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:59
 msgid "**attribute**"
@@ -218,6 +240,8 @@ msgid ""
 "Complex data inside fields is converted to JSON as shown in the following "
 "example."
 msgstr ""
+"Los datos complejos del interior de los campos se convierten en formato JSON"
+" según el ejemplo siguiente."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:104
 msgid "Examples"
@@ -236,17 +260,21 @@ msgid ""
 "**Tag depth** is set to ``2`` because ``wb:data`` is at the second level of "
 "the XML tree (``wb:rows/wb:data``)."
 msgstr ""
+"**Profundidad de etiqueta** se establece en ``2`` porque ``wb:data`` está en"
+" el segundo nivel del árbol XML (``wb:rows/wb:data``)."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:140
 msgid ""
 "You do not need to filter tags out because all elements at this depth are "
 "records."
 msgstr ""
+"No es necesario filtrar las etiquetas dado que todos los elementos de esta "
+"profundidad son registros."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:142
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:187
 msgid "The resulting dataset looks like this:"
-msgstr ""
+msgstr "El conjunto de datos resultante tiene el aspecto siguiente:"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:145
 msgid "wb:indicator"
@@ -317,12 +345,18 @@ msgid ""
 "parameters detection cannot guess the proper depth. You must configure the "
 "source manually:"
 msgstr ""
+"En este ejemplo, el árbol XML es complejo. Por lo tanto, la detección de "
+"parámetros automáticos no podrá averiguar la profundidad correcta. Debe "
+"configurar el origen manualmente:"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:184
 msgid ""
 "**Tag depth** must be set to ``3`` because the ``item`` node is at the third"
 " level of the XML tree (``shoppingList/basket/item``)."
 msgstr ""
+"**Profundidad de etiqueta** debe establecerse en ``3`` porque el nodo "
+"``item`` está en el tercer nivel del árbol XML "
+"(``shoppingList/basket/item``)."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:185
 msgid ""
@@ -330,6 +364,9 @@ msgid ""
 "``itemCount`` and ``totalQuantity`` are also at the third level but not "
 "relevant."
 msgstr ""
+"**Nombre de las etiquetas para extraer** debe establecerse en ``item`` "
+"porque ``itemCount`` y ``totalQuantity`` también están en el tercer nivel "
+"pero no son relevantes."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/xml.rst:190
 msgid "name"

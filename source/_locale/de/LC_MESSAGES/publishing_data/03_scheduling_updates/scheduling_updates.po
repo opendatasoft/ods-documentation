@@ -35,11 +35,16 @@ msgid ""
 "to handle completely static datasets (which need to be published only once) "
 "and live datasets (which need to be regularly updated)."
 msgstr ""
+"Mit der Opendatasoft-Plattform ist es möglich, im selben Datenkatalog ganze "
+"statische Datensätze (die nur einmal veröffentlicht werden müssen) sowie "
+"Live-Datensätze (die regelmäßig aktualisiert werden müssen) zu bearbeiten."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:6
 msgid ""
 "Two different mechanisms are made available to handle datasets refresh:"
 msgstr ""
+"Es stehen zwei verschiedene Mechanismen zur Bearbeitung von "
+"Datensatzaktualisierungen zur Verfügung:"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:8
 msgid ""
@@ -47,6 +52,9 @@ msgid ""
 "fixed intervals. This mode is most useful for datasets with a remote "
 "resource that is regularly updated."
 msgstr ""
+"Der Zeitplan: Er ermöglicht eine automatische Wiederveröffentlichung von "
+"Datensätzen in festgelegten Abständen. Dieser Modus ist sehr nützlich bei "
+"Datensätzen aus einer Remote-Quelle, die regelmäßig aktualisiert wird."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:9
 msgid ""
@@ -55,6 +63,11 @@ msgid ""
 " system that produces the data points, such as a computer program sending "
 "event metrics or a set of sensors sending their readings."
 msgstr ""
+"Übertragung von Echtzeit-Daten mit einem speziellen API-Endpunkt auf die "
+"Opendatasoft-Plattform. Dieser Modus ist sehr nützlich, wenn die Daten "
+"direkt vom System gesendet werden können, das die Datenpunkte generiert, wie"
+" etwa ein Computerprogramm, das Ereignismetriken sendet bzw. ein "
+"Sensorensatz, der seine Messwerte sendet."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:12
 msgid "Using scheduling to keep a dataset up to date"
@@ -81,6 +94,8 @@ msgstr ""
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:19
 msgid "Datasets can be automatically republished at fixed intervals."
 msgstr ""
+"Datensätze können automatisch in bestimmten Abständen neu veröffentlicht "
+"werden."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:21
 msgid ""
@@ -94,7 +109,7 @@ msgstr ""
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:24
 msgid "Adding a remote source"
-msgstr ""
+msgstr "Eine Remote-Quelle hinzufügen"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:26
 msgid ""
@@ -103,6 +118,11 @@ msgid ""
 " see :doc:`../01_creating_a_dataset/retrieving_file` and "
 ":doc:`../01_creating_a_dataset/configuring_remote_service`."
 msgstr ""
+"Um einen Datensatz zu planen, müssen Sie eine Remote-Quelle hinzufügen, die "
+"als URL (HTTP oder FTP) zu einer Datei angegeben wird, oder einen Remote-"
+"Dienst konfigurieren. Weitere Informationen finden Sie unter "
+":doc:`../01_creating_a_dataset/retrieving_file` und "
+":doc:`../01_creating_a_dataset/configuring_remote_service`."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:30
 msgid "Specifying scheduling interval"
@@ -113,6 +133,8 @@ msgid ""
 "Once you saved a dataset with a remote source, the **Scheduling** tab is "
 "activated:"
 msgstr ""
+"Sobald Sie einen Datensatz mit einer Remote-Quelle gespeichert haben, wird "
+"die Registerkarte **Zeitplan** aktiviert:"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:36
 msgid ""
@@ -120,12 +142,19 @@ msgid ""
 " fits your needs, you could decide to schedule a dataset to be reprocessed "
 "every Monday morning and every Wednesday afternoon."
 msgstr ""
+"In dieser Registerkarte können Sie so viele Zeitpläne hinzufügen, wie Sie "
+"möchten. Wenn Sie wünschen, können Sie zum Beispiel festlegen, dass ein "
+"Datensatz jeden Montagmorgen und jeden Mittwochnachmittag neu verarbeitet "
+"wird."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:39
 msgid ""
 "By default, the minimum scheduling interval is the day. Please contact "
 "Opendatasoft's support if you need minute-level scheduling on your domain."
 msgstr ""
+"Standardmäßig ist das minimale Zeitplan-Intervall der Tag. Bitte wenden Sie "
+"sich an den Support von Opendatasoft, wenn Sie eine minutengenaue Planung "
+"für Ihre Domain benötigen."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:42
 msgid "Important"
@@ -134,19 +163,25 @@ msgstr "Wichtig"
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:45
 msgid "Schedules are defined to run in the timezone of Paris, France:"
 msgstr ""
+"Die Zeitpläne werden auf Grundlage der Zeitzone von Paris, Frankreich, "
+"festgelegt:"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:47
 msgid "In standard time, schedules run on GMT+1 (Central European Time)."
 msgstr ""
+"In der Standardzeit basieren die Zeitpläne auf GMT+1 (Mitteleuropäische "
+"Zeit)."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:48
 msgid ""
 "In the summer months, schedules run on GMT+2 (Central European Summer Time)."
 msgstr ""
+"In den Sommermonaten richtet sich der Zeitplan nach GMT+2 (Mitteleuropäische"
+" Sommerzeit)."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:51
 msgid "Pushing realtime data"
-msgstr ""
+msgstr "Echtzeitdaten übertragen"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:58
 msgid ""
@@ -155,6 +190,10 @@ msgid ""
 "platform. To address this need, the Opendatasoft platform offers a realtime "
 "push API."
 msgstr ""
+"Bei einigen Datentypen kann es hilfreich sein, Daten zu übertragen (Push), "
+"anstatt die Daten auf herkömmliche Weise von der Plattform aus einer "
+"Ressource zu beziehen. Um diesen Bedarf zu decken, bietet die Opendatasoft-"
+"Plattform eine Realtime-Push-API."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:61
 msgid ""
@@ -164,6 +203,12 @@ msgid ""
 "an application through a push API, and records are processed one by one as "
 "soon as they are received."
 msgstr ""
+"Dies ist nicht mit der Möglichkeit zu verwechseln, die Verarbeitung eines "
+"Datensatzes zu planen. Bei der Planung wird der Datensatz in regelmäßigen "
+"Abständen die Ressource abrufen und die darin enthaltenen Daten verarbeiten."
+" Im Gegensatz dazu wird der Datensatz bei der Push-API von einer Anwendung "
+"über eine Push-API versorgt. Die Einträge werden nacheinander verarbeitet, "
+"sobald sie empfangen werden."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:65
 msgid "Configuring the dataset schema"
@@ -180,26 +225,33 @@ msgid ""
 "In the wizard that opens, select **Realtime** under the **Configure a remote"
 " service** section."
 msgstr ""
+"Wählen Sie in dem sich öffnenden Assistenten **Realtime** unter dem "
+"Abschnitt **Remote-Service konfigurieren**."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:69
 msgid ""
 "In the **Real time data schema** box, enter some bootstrap data. The data "
 "should have all the fields that will be sent through the API."
 msgstr ""
+"Geben Sie in das Feld **Echtzeit-Datenschema** einige Bootstrapdaten ein. "
+"Die Daten sollten alle Felder enthalten, die über die API gesendet werden."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:74
 msgid ""
 "The bootstrap data is not used in the dataset: its sole purpose is to allow "
 "setting up the dataset."
 msgstr ""
+"Die Bootstrapdaten werden nicht im Datensatz verwendet: Sie dienen lediglich"
+" dazu, den Datensatz zu erstellen."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:76
 msgid "Configure **Information** and **Alert Management** options."
 msgstr ""
+"Konfigurieren Sie die Optionen **Informationen** und **Alarmmanagement**."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:77
 msgid "Retrieve the push URL."
-msgstr ""
+msgstr "Push-URL abrufen."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:80
 msgid "Using the push URL"
@@ -211,6 +263,10 @@ msgid ""
 "push API key appears. This path, appended to your domain base URL, is where "
 "the platform will expect data to be sent after publication."
 msgstr ""
+"Nach Konfiguration der Parameter der Echtzeit-Quelle wird ein URL-Pfad mit "
+"einem Push-API-Schlüssel angezeigt. Dieser Pfad, der an die Basis-URL Ihrer "
+"Domain angehängt wird, ist der Ort, an den die Plattform die Daten nach der "
+"Veröffentlichung sendet."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:85
 msgid ""
@@ -218,16 +274,21 @@ msgid ""
 "for a single record - An array of JSON objects to push multiple records at "
 "once"
 msgstr ""
+"Es wird damit gerechnet, dass die Daten im JSON-Format gesendet werden: - "
+"als einzelnes JSON-Objekt für einen einzelnen Datensatz - als Array von "
+"JSON-Objekten, um mehrere Datensätze auf einmal zu übermitteln"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:89
 msgid ""
 "A minimal example of the API usage for a dataset with a single field named "
 "``message``, using curl, would be:"
 msgstr ""
+"Nachfolgend ein Minimalbeispiel einer API-Verwendung für einen Datensatz mit"
+" einem einzigen Feld namens \"Nachricht\", das Curl verwendet:"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:95
 msgid "Here is the resulting dataset:"
-msgstr ""
+msgstr "Daraus ergibt sich der folgende Datensatz:"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:100
 msgid ""
@@ -242,6 +303,8 @@ msgid ""
 "If the records have been received correctly, the server will send the "
 "following response."
 msgstr ""
+"Wenn die Einträge korrekt empfangen wurden, sendet der Server die folgende "
+"Nachricht."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:114
 msgid ""
@@ -256,6 +319,9 @@ msgid ""
 "Realtime push requests are limited to a 5MB payload. A larger payload will "
 "trigger an error and should be split into several smaller requests instead."
 msgstr ""
+"Echtzeit-Push-Anfragen sind auf eine Datenmenge von 5 MB beschränkt. Ein "
+"größere Datenmenge verursacht einen Fehler und sollte daher in mehrere "
+"kleinere Anfragen aufgeteilt werden."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:122
 msgid "Pushing a field of type file"
@@ -266,10 +332,12 @@ msgid ""
 "To push a field of type image, a JSON object containing the base64-encoded "
 "content and the MIME type of the file needs to be sent:"
 msgstr ""
+"Um ein Feld vom Typ Bild zu pushen, muss ein JSON-Objekt mit dem "
+"Base64-kodierten Inhalt und dem MIME-Typ der Datei gesendet werden:"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:136
 msgid "Updating data by defining a unique key"
-msgstr ""
+msgstr "Daten durch Definieren eines eindeutigen Schlüssels aktualisieren"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:138
 msgid ""
@@ -277,14 +345,19 @@ msgid ""
 "new ones. To set up such a system with the Opendatasoft platform, the fields"
 " used as a unique key must be marked as so."
 msgstr ""
+"In manchen Fällen ist es sinnvoll, die bestehenden Einträge zu "
+"aktualisieren, anstatt neue zu pushen. Zum Einrichten eines solchen Systems "
+"mit der Opendatasoft-Plattform müssen die Felder, die als eindeutiger "
+"Schlüssel verwendet werden sollen, als solche gekennzeichnet sein."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:141
 msgid "Procedure"
-msgstr ""
+msgstr "Vorgehensweise"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:143
 msgid "To mark fields as a unique key, do the following:"
 msgstr ""
+"Gehen Sie wie folgt vor, um Felder als eindeutigen Schlüssel zu markieren:"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:145
 msgid ""
@@ -296,17 +369,20 @@ msgstr ""
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:146
 msgid "Select **Unique ID**."
-msgstr ""
+msgstr "Wählen Sie **Eindeutige ID**."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:147
 msgid "Save and publish the dataset."
-msgstr ""
+msgstr "Speichern und veröffentlichen Sie den Datensatz."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:149
 msgid ""
 "If a new record whose key value is equal to an existing record is pushed, "
 "the new record will overwrite the old record."
 msgstr ""
+"Wenn ein neuer Eintrag, dessen Schlüsselwert mit einem bestehenden Eintrag "
+"übereinstimmt, übertragen wird, überschreibt der neue Eintrag den alten "
+"Eintrag."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:152
 msgid "Example"
@@ -317,10 +393,12 @@ msgid ""
 "A dataset tracks the number of copies available for each book in a public "
 "library:"
 msgstr ""
+"In einem Datensatz wird die Anzahl der verfügbaren Exemplare für jedes Buch "
+"in einer öffentlichen Bibliothek erfasst:"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:159
 msgid "Suppose that this dataset contains two fields:"
-msgstr ""
+msgstr "Nehmen wir an, dass dieser Datensatz zwei Felder enthält:"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:161
 msgid ""
@@ -328,12 +406,17 @@ msgid ""
 "<https://en.wikipedia.org/wiki/International_Standard_Book_Number>`_ number "
 "of the book"
 msgstr ""
+"``isbn``, für die `ISBN-Nummer "
+"<https://en.wikipedia.org/wiki/International_Standard_Book_Number>`_ des "
+"Buches"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:162
 msgid ""
 "``number_of_copies`` tracking the current number of copies available in the "
 "library."
 msgstr ""
+"``number_of_copies`` für die aktuelle Anzahl der in der Bibliothek "
+"verfügbaren Exemplare."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:164
 msgid ""
@@ -341,6 +424,10 @@ msgid ""
 " ``number_of_copies``. Instead, it would be better to set the new "
 "``number_of_copies`` value to the record corresponding to the book ``isbn``."
 msgstr ""
+"In diesem Fall macht es keinen Sinn, für jeden neuen Wert von "
+"``number_of_copies`` einen Eintrag hinzuzufügen. Stattdessen wäre es besser,"
+" den neuen ``number_of_copies`` Wert auf den Eintrag zu setzen, der dem Buch"
+" ``isbn`` entspricht."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:166
 msgid ""
@@ -348,38 +435,49 @@ msgid ""
 "data is linked to individual books, and these books are identified by the "
 "ISBN."
 msgstr ""
+"In diesem Beispiel wäre der eindeutige Schlüssel ``isbn``, da der Rest der "
+"Daten mit einzelnen Büchern verknüpft ist und diese Bücher durch die ISBN "
+"identifiziert werden."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:168
 msgid ""
 "If your dataset has ``isbn`` as the unique key and contains these two "
 "records:"
 msgstr ""
+"Wenn Ihr Datensatz den ``isbn`` Wert als eindeutigen Schlüssel hat und diese"
+" beiden Einträge enthält:"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:182
 msgid ""
 "If somebody borrows a copy of Zen and the Art of Motorcycle Maintenance, and"
 " you push the following record:"
 msgstr ""
+"Wenn jemand ein Exemplar von \"Zen und die Kunst ein Motorrad zu warten\" "
+"ausleiht und Sie den folgenden Eintrag übertragen:"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:191
 msgid ""
 "You will still have two records, the first one being updated with the new "
 "value:"
 msgstr ""
+"Dann haben Sie immer noch zwei Einträge, von denen der erste mit dem neuen "
+"Wert aktualisiert wird:"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:197
 msgid "Deleting data"
-msgstr ""
+msgstr "Daten löschen"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:199
 msgid ""
 "Two endpoints allow for deleting a pushed records. One that uses the records"
 " values and one that uses the record ID."
 msgstr ""
+"Zwei Endpunkte ermöglichen das Löschen gepushter Einträge. Der eine "
+"verwendet Eintragswerte und der andere die Eintrags-ID."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:202
 msgid "Deleting data using the record values"
-msgstr ""
+msgstr "Daten mithilfe von Eintragswerten löschen"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:204
 msgid ""
@@ -390,14 +488,24 @@ msgid ""
 "then use instead "
 "``/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/delete/?pushkey=<PUSH_API_KEY>``."
 msgstr ""
+"Zum Löschen eines Eintrags bei bekannten Eintragsfeldwerten POSTEN Sie den "
+"Eintrag, als würden Sie ihn zum ersten Mal hinzufügen, ersetzen Sie dabei "
+"jedoch ``/push/`` durch ``/delete/`` in der Push-URL. Falls Ihr Push-URL-"
+"Pfad "
+"``/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/push/?pushkey=<PUSH_API_KEY>`` "
+"lautet, verwenden Sie stattdessen "
+"``/api/push/1.0/<DATASET_ID>/<RESSOURCE_ID>/delete/?pushkey=<PUSH_API_KEY>``"
+" lautet."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:206
 msgid "Here is a minimal example to delete the record we pushed earlier:"
 msgstr ""
+"Hier ist ein minimales Beispiel für das Löschen des Eintrags, den wir zuvor "
+"übertragen haben:"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:213
 msgid "Deleting data using the record ID"
-msgstr ""
+msgstr "Daten mithilfe der Eintrags-ID löschen"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:215
 msgid ""
@@ -405,6 +513,9 @@ msgid ""
 "request to the push URL by replacing ``/push/`` with "
 "``/<RECORD_ID>/delete/``:"
 msgstr ""
+"Wenn Sie die Eintrags-ID des Eintrags kennen, den Sie löschen möchten, "
+"führen Sie einfach eine GET-Anfrage an die URL aus, indem Sie ``/push/`` "
+"durch ``/<RECORD_ID>/delete/`` ersetzen:"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:222
 msgid "Get notified in case of inactivity"
@@ -415,42 +526,55 @@ msgid ""
 "If you expect a system to push data to the platform often, you may want to "
 "be notified if the platform has received no record in a while."
 msgstr ""
+"Wenn Sie davon ausgehen, dass ein bestimmtes System häufig Daten an die "
+"Plattform sendet, möchten Sie vielleicht benachrichtigt werden, wenn die "
+"Plattform seit einiger Zeit keinen Eintrag mehr erhalten hat."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:226
 msgid "To get notified, perform the following steps:"
-msgstr ""
+msgstr "Gehen Sie wie folgt vor, um benachrichtigt zu werden:"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:228
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:245
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:259
 msgid "In **Catalog** > **Datasets**, click the desired dataset."
 msgstr ""
+"Klicken Sie unter **Katalog** > **Datensätze** auf den gewünschten "
+"Datensatz."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:229
 msgid "On the desired source, select |icon-action-menu| > **View source**."
 msgstr ""
+"Wählen Sie bei der gewünschten Quelle |icon-action-menu| > **Quelle "
+"anzeigen**."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:230
 msgid "Click **Alert management**."
-msgstr ""
+msgstr "Klicken Sie auf **Alarmmanagement**."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:231
 msgid "In the dialog box that opens, configure the alerting parameters:"
 msgstr ""
+"Konfigurieren Sie in dem sich öffnenden Dialogfeld die "
+"Benachrichtigungsparameter:"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:233
 msgid "Select the **Alerting** check box."
-msgstr ""
+msgstr "Aktivieren Sie das Kontrollkästchen **Benachrichtigung**."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:234
 msgid "Enter a threshold in minutes in the **Inactivity alert** check box."
 msgstr ""
+"Geben Sie im Kontrollkästchen **Inaktivitätsalarm** einen Grenzwert in "
+"Minuten ein."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:236
 msgid ""
 "If a time span greater than the threshold has occurred during which no "
 "record has been received, you will receive an email."
 msgstr ""
+"Wenn die Zeitspanne den angegebenen Wert überschreitet und kein Eintrag "
+"eingegangen ist, erhalten Sie eine E-Mail."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:239
 msgid "Unpublishing and disabling the API"
@@ -461,14 +585,19 @@ msgid ""
 "When unpublishing your dataset, existing records are not kept for the next "
 "time the dataset is published."
 msgstr ""
+"Wenn Sie die Veröffentlichung Ihres Datensatzes aufheben, werden die "
+"bestehenden Datensätze nicht für die nächste Veröffentlichung des "
+"Datensatzes beibehalten."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:243
 msgid "To avoid getting new data, perform the following steps:"
-msgstr ""
+msgstr "Gehen Sie wie folgt vor, um keine neuen Daten zu erhalten:"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:246
 msgid "On the desired source, select |icon-action-menu| > **Disable push**."
 msgstr ""
+"Wählen Sie bei der gewünschten Quelle |icon-action-menu| > **Push "
+"deaktivieren**."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:248
 msgid ""
@@ -476,10 +605,14 @@ msgid ""
 "data. If data is pushed while push is disabled, no data will be added, and "
 "an error will be sent."
 msgstr ""
+"Dies verhindert die Verwendung der Push-API, hat aber keine Auswirkungen auf"
+" vorhandene Daten. Wenn Daten gepusht werden, während die Push-Funktion "
+"deaktiviert ist, werden keine Daten hinzugefügt, und es wird ein Fehler "
+"gesendet."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:251
 msgid "Recovering data"
-msgstr ""
+msgstr "Daten wiederherstellen"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:253
 msgid ""
@@ -487,15 +620,21 @@ msgid ""
 "unpublished or when a processor has been misconfigured, there is a "
 "possibility of recovering the lost records."
 msgstr ""
+"Bei Datenverlust, etwa wenn die Veröffentlichung des Datensatzes aufgehoben "
+"oder ein Prozessor falsch konfiguriert wurde, besteht die Möglichkeit, die "
+"verlorenen Einträge wiederherzustellen."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:255
 msgid "Every record received is backed up and eligible for recovery."
 msgstr ""
+"Jeder empfangene Eintrag wird gesichert und kann wiederhergestellt werden."
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:257
 msgid "To recover eligible records, perform the following steps:"
-msgstr ""
+msgstr "Gehen Sie wie folgt vor, um Einträge wiederherzustellen:"
 
 #: ../../source/publishing_data/03_scheduling_updates/scheduling_updates.rst:260
 msgid "On the desired source, select |icon-action-menu| > **Recover data**."
 msgstr ""
+"Wählen Sie bei der gewünschten Quelle |icon-action-menu| > **Daten "
+"wiederherstellen**."

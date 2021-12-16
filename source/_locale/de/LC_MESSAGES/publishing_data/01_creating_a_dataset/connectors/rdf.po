@@ -4,10 +4,10 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# traducteur_DE1 <datawords.translator.de1@gmail.com>, 2021
 # traducteur_DE2 <datawords.translator.de2@gmail.com>, 2021
 # Heiko Schlombach <heiko.schlombach@wanadoo.fr>, 2021
 # Super Traducteur <admin+supertraducteur@opendatasoft.com>, 2021
+# traducteur_DE1 <datawords.translator.de1@gmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
@@ -16,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-03 14:22+0100\n"
 "PO-Revision-Date: 2021-11-26 10:57+0000\n"
-"Last-Translator: Super Traducteur <admin+supertraducteur@opendatasoft.com>, 2021\n"
+"Last-Translator: traducteur_DE1 <datawords.translator.de1@gmail.com>, 2021\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,11 +26,11 @@ msgstr ""
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:2
 msgid "RDF files"
-msgstr ""
+msgstr "RDF-Dateien"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:4
 msgid "You can use a RDF (.rdf) file as a source."
-msgstr ""
+msgstr "Sie können eine RDF-Datei (.rdf) als Quelle verwenden."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:6
 msgid ""
@@ -40,6 +40,13 @@ msgid ""
 "and content are converted to fields. Complex data inside fields is converted"
 " to a JSON representation containing both attributes and content."
 msgstr ""
+"Die Plattform erzeugt Einträge aus einer beliebigen RDF-Struktur, indem sie "
+"alle Elemente bei einer bestimmten Tiefe (optional mit einem Tag gefiltert) "
+"zu einem Satz von Einträgen umwandelt. Für jedes Element, das in einen "
+"Eintrag umgewandelt wird, werden die Attribute, die eingeschlossenen Tags "
+"und der Inhalt, in Felder konvertiert. Komplexe Daten innerhalb der Felder "
+"werden in eine JSON-Darstellung konvertiert, die beide Attribute und den "
+"Inhalt beinhaltet."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:11
 msgid "Creation"
@@ -50,6 +57,8 @@ msgid ""
 "For more information about adding a file source, see "
 ":doc:`/publishing_data/01_creating_a_dataset/retrieving_file`."
 msgstr ""
+"Weitere Informationen zum Hinzufügen einer Dateiquelle finden Sie hier "
+":doc:`/publishing_data/01_creating_a_dataset/retrieving_file`."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:16
 msgid "Configuration"
@@ -57,7 +66,7 @@ msgstr "Konfiguration"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:18
 msgid "XML parameters"
-msgstr ""
+msgstr "XML-Parameter"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:21
 #: ../../source/_includes/connectors_extractfilename.rst:4
@@ -76,7 +85,7 @@ msgstr "Verwendung"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:24
 msgid "Parent tags"
-msgstr ""
+msgstr "Übergeordnete Tags"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:25
 msgid "Number of parents to get attributes from"
@@ -89,15 +98,19 @@ msgid ""
 "If the enclosing tags contain relevant attributes, use this option to add "
 "them to the records."
 msgstr ""
+"Wenn die einschließenden Tags relevante Attribute enthalten, verwenden Sie "
+"diese Option, um sie zu den Einträgen hinzuzufügen."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:28
 msgid ""
 "Enter the number of parent tags to get attributes from (for example, ``2``)."
 msgstr ""
+"Geben Sie die Anzahl der übergeordneten Tags ein, von denen Attribute "
+"abgerufen werden sollen (z.B. ``2``)."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:29
 msgid "Name of the tags to be extracted"
-msgstr ""
+msgstr "Name der zu extrahierenden Tags"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:30
 msgid ""
@@ -113,10 +126,13 @@ msgid ""
 "to be extracted** box. If you leave the box empty, all tags at the specified"
 " depth will be converted into records."
 msgstr ""
+"Geben Sie in das Feld **Name der zu extrahierenden Tags** den zu "
+"extrahierenden Tag ein (z.B. ``Element``). Wenn Sie das Feld leer lassen, "
+"werden alle Tags in der angegebenen Tiefe in Datensätze umgewandelt."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:32
 msgid "Tag depth"
-msgstr ""
+msgstr "Tag-Tiefe"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:33
 msgid "Depth of the tags that must be converted to records"
@@ -127,6 +143,7 @@ msgid ""
 "Enter the depth of the repeated tag in the **Tag depth** box (for example, "
 "``3``)."
 msgstr ""
+"Geben Sie die Tiefe des wiederholten Tags in **Tag-Tiefe** ein (z.B. ``3``)."
 
 #: ../../source/_includes/connectors_extractfilename.rst:1
 #: ../../source/_includes/connectors_extractfilename.rst:7
@@ -142,6 +159,8 @@ msgid ""
 "By default, this option is toggled off. Toggle on this option to extract the"
 " file name in an additional column."
 msgstr ""
+"Standardmäßig ist diese Option deaktiviert. Aktivieren Sie diese Option, um "
+"den Dateinamen in einer zusätzlichen Spalte zu extrahieren."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:39
 msgid "Technical specifications"
@@ -156,6 +175,8 @@ msgid ""
 "The policy for creating fields from an item is defined as shown in the "
 "following examples."
 msgstr ""
+"Die Richtlinie für die Erstellung von Feldern aus einem Element wird wie in "
+"den folgenden Beispielen gezeigt definiert."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:59
 msgid "**attribute**"
@@ -221,6 +242,8 @@ msgid ""
 "Complex data inside fields is converted to JSON as shown in the following "
 "example."
 msgstr ""
+"Komplexe Daten in Feldern werden in JSON konvertiert, wie im folgenden "
+"Beispiel gezeigt."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:104
 msgid "Examples"
@@ -239,17 +262,21 @@ msgid ""
 "**Tag depth** is set to ``2`` because ``wb:data`` is at the second level of "
 "the XML tree (``wb:rows/wb:data``)."
 msgstr ""
+"**Tag-Tiefe** ist auf ``2`` gesetzt, weil sich ``wb:data`` auf der zweiten "
+"Ebene des XML-Baums (``wb:rows/wb:data``) befindet."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:140
 msgid ""
 "You do not need to filter tags out because all elements at this depth are "
 "records."
 msgstr ""
+"Sie brauchen die Tags nicht herauszufiltern, da alle Elemente in dieser "
+"Tiefe Einträge sind."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:142
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:187
 msgid "The resulting dataset looks like this:"
-msgstr ""
+msgstr "Der entstehende Datensatz sieht so aus:"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:145
 msgid "wb:indicator"
@@ -320,12 +347,17 @@ msgid ""
 "parameters detection cannot guess the proper depth. You must configure the "
 "source manually:"
 msgstr ""
+"In diesem Beispiel ist der XML-Baum komplex. Daher kann die automatische "
+"Parametererkennung die richtige Tiefe nicht ermitteln. Sie müssen die Quelle"
+" manuell konfigurieren:"
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:184
 msgid ""
 "**Tag depth** must be set to ``3`` because the ``item`` node is at the third"
 " level of the XML tree (``shoppingList/basket/item``)."
 msgstr ""
+"**Tag-Tiefe** ist auf ``3`` gesetzt, weil sich der Knoten ``Element`` auf "
+"der dritten Ebene des XML-Baums befindet (``shoppingList/basket/item``)."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:185
 msgid ""
@@ -333,6 +365,9 @@ msgid ""
 "``itemCount`` and ``totalQuantity`` are also at the third level but not "
 "relevant."
 msgstr ""
+"Der **Name der zu extrahierenden Tags** muss auf ``Element`` gesetzt werden,"
+" da ``itemCount`` und ``totalQuantity`` ebenfalls auf der dritten Ebene "
+"liegen, jedoch nicht relevant sind."
 
 #: ../../source/publishing_data/01_creating_a_dataset/connectors/rdf.rst:190
 msgid "name"
