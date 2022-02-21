@@ -19,11 +19,11 @@ To set the parameters of the Custom view, follow the indications from the table 
     * Title of the Custom view tab in the front office. If left blank, the tab will be named "Custom view".
     * Write a title in the Tab title textbox.
   * * Tab icon
-    * Icon of the Custom view tab in the front office. If left blank, the icon of the tab will be the `tachometer icon <https://fontawesome.com/v4.7.0/icon/tachometer>`_.
+    * Icon of the Custom view tab in the front office. If left blank, the icon of the tab will be the `tachometer icon <https://fontawesome.com/v4/icon/tachometer>`_.
     * .. admonition:: Caution
          :class: caution
 
-         Only `Font Awesome 4.7 icons <https://fontawesome.com/v4.7.0/icons/>`_ are supported as tab icons. Icons must be specified through their name, omitting the ``fa-`` prefix (for example, to use the `bar chart <https://fontawesome.com/v4.7.0/icon/bar-chart>`_ icon, which name is ``fa-bar-chart``, write ``bar-chart`` in the Tab icon textbox).
+         Only `Font Awesome 4.7 icons <https://fontawesome.com/v4/icons/>`_ are supported as tab icons. Icons must be specified through their name, omitting the ``fa-`` prefix (for example, to use the `bar chart <https://fontawesome.com/v4/icon/bar-chart>`_ icon, which name is ``fa-bar-chart``, write ``bar-chart`` in the Tab icon textbox).
 
       Write the name of the Font Awesome icon in the Tab icon textbox.
   * * Tab URL
