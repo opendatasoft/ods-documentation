@@ -50,7 +50,7 @@ Opendatasoft can connect to a variety of remote services.
     * Availability
   * * :doc:`Airtable<connectors/airtable>`
     * Retrieves data from an Airtable base
-    * Default
+    * On demand
   * * :doc:`ArcGIS<connectors/arcgis>`
     * Retrieves data from an ArcGIS server
     * Default
