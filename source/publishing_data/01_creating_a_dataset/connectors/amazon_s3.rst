@@ -1,7 +1,7 @@
 Amazon S3 connector
 ===================
 
-The Amazon S3 connector retrieves files from an AWS S3 
+The Amazon S3 connector retrieves content from a file stored in an Amazon S3 bucket.
 
 .. admonition:: Prerequisites
   :class: important
@@ -30,8 +30,9 @@ Creation
    - Path
    - Headers (optional)
 
-5. From the preview of the first 20 records that appears, configure the source.
+5. In the preview screen displaying the first 20 records of the file, set the source configuration.
 
 6. Configure the dataset information or use the pre-filled values:
+
   - In the **Dataset name** field, enter the title for this dataset.
   - In the **Dataset technical identifier** field, enter a meaningful identifier for this dataset.
