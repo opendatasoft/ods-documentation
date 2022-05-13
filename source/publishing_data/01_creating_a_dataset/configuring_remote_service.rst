@@ -51,6 +51,9 @@ Opendatasoft can connect to a variety of remote services.
   * * :doc:`Airtable<connectors/airtable>`
     * Retrieves data from an Airtable base
     * On demand
+  * * :doc:`Amazon S3<connectors/amazon_s3>`
+    * Retrieves data from Amazon S3
+    * On demand
   * * :doc:`ArcGIS<connectors/arcgis>`
     * Retrieves data from an ArcGIS server
     * Default
@@ -66,6 +69,9 @@ Opendatasoft can connect to a variety of remote services.
   * * :doc:`Feed<connectors/feed>`
     * Retrieves data from Atom and RSS feeds
     * Default
+  * * :doc:`Google BigQuery<connectors/google_bigquery>`
+    * Retrieves data from Google BigQuery
+    * On demand
   * * :doc:`Google Drive<connectors/google_drive>`
     * Retrieves files located in Google Drive
     * On demand
