@@ -1,12 +1,12 @@
-Azure Blob Storage connector
+Azure Blob storage connector
 ============================
 
-The Azure Blob Storage connector retrieves content from a file stored in an Blob Storage file.
+The Azure Blob storage connector retrieves content from a file stored in Blob storage.
 
 .. admonition:: Prerequisites
   :class: important
 
-   You need an Azure account to use the Blob Storage connector.
+   You need an Azure account to use the Blob storage connector.
 
 Creation
 --------
@@ -17,9 +17,9 @@ Creation
   - If you want to add a source to an existing dataset, click Catalog > Datasets and select the desired dataset. Then, click Add a source.
 
 
-2. Select Azure Blob Storage under the "Configure a remote service section."
+2. Select Azure Blob storage under the "Configure a remote service section."
 
-3. Select an existing Azure Blob Storage connection or create a new one.
+3. Select an existing Azure Blob storage connection or create a new one.
 
 4. If you want to create a new connection, fill the following informations:
 

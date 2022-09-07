@@ -1,12 +1,12 @@
 Managing saved connections
 ==========================
 
-The Opendatasoft platform allows you to save FTP, HTTP, Google Drive, SharePoint, Amazon S3, and Azure Blob Storage connections to easily reconnect to the service using the same connection information.
+The Opendatasoft platform allows you to save FTP, HTTP, Google Drive, SharePoint, Amazon S3, and Azure Blob storage connections to easily reconnect to the service using the same connection information.
 
 Saving a connection
 -------------------
 
-You can save your connection information when creating a dataset or adding an FTP, HTTP, Google Drive, SharePoint, Amazon S3, or Azure Blob Storage source to an existing dataset:
+You can save your connection information when creating a dataset or adding an FTP, HTTP, Google Drive, SharePoint, Amazon S3, or Azure Blob storage source to an existing dataset:
 
 1. Create a dataset or add a source to a dataset.
 2. When configuring the connection, select the **Save connection information** check box.
