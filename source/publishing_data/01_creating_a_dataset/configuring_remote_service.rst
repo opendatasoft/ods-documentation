@@ -57,6 +57,9 @@ Opendatasoft can connect to a variety of remote services.
   * * :doc:`ArcGIS<connectors/arcgis>`
     * Retrieves data from an ArcGIS server
     * Default
+  * * :doc:`Azure Blob Storage<connectors/azure_blob_storage>`
+    * Retrieves data from a file stored in a Blob Storage
+    * On demand
   * * :doc:`Census<connectors/census>`
     * Retrieves data using the US Census Bureau's API
     * On demand
