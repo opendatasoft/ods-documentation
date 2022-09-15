@@ -65,29 +65,18 @@ Remember that whatever your default catalog, you can always access the local and
 What’s different when I’m using the shared catalog feature?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Your portal’s appearance**
+* **Your portal’s appearance**
 
 Using the shared catalog option does not change the appearance of your datasets, nor change what information is visible in them. 
 
-**The order your datasets are displayed**
+* **The order your datasets are displayed**
 
-**Your local public datasets are always displayed first**. This is to ensure that your own datasets are promoted and remain visible. No matter how your portal’s datasets are filtered (alphabetically, by last modified, etc.), your local public datasets are displayed first, before the shared datasets that might otherwise come first.
+* **Your local public datasets are always displayed first**. This is to ensure that your own datasets are promoted and remain visible. No matter how your portal’s datasets are filtered (alphabetically, by last modified, etc.), your local public datasets are displayed first, before the shared datasets that might otherwise come first.
 
-**Metadata**
+* **Metadata**
 
 The metadata ``shared_catalog`` (visible while using the ODS Management APIs) is populated with the value of the unique identifier of the shared catalog.
 
-**API Explore V2**
+* **API Explore V2**
 
 With the `API Explore V2 <https://help.opendatasoft.com/apis/ods-explore-v2/>`_ , ``/api/v2/catalog/dataset`` allows you to see the local catalog, and `/api/v2/shared/datasets` allows you to see the shared catalog.
-
-
-
-
-
-
-
-
-
-
-
