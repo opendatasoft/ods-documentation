@@ -45,6 +45,7 @@ Configuring domain
    :maxdepth: 2
 
    05_configuring_domain/tabs
+   05_configuring_domain/shared_catalog
    05_configuring_domain/regional_settings
 
 Customizing domain URL
