@@ -18,7 +18,7 @@ A Shared Catalog is a combination of the public datasets from two or more differ
 Why use a Shared Catalog?
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A Shared Catalog is a good idea if you want to group all of your data as part of a larger organization or initiative. 
+A Shared Catalog is a good idea if you want to group all of your datasets as part of a larger organization or initiative. 
 
 For example, a region can find it useful to bring together the data from all of its different administrative levels—the region, its states or departments, metropolitan areas, cities and towns, etc. This allows users to find all the relevant data for that region in one easy location.
 
@@ -32,7 +32,7 @@ To enable Shared Catalogs, your portal must be public and must be part of the OD
 
    * To make your portal public, in your back office, go to ``Configuration`` → ``Security``, and toggle the **Portal access** option to **Public portal**. (see :doc:`configuring your portal's general security policy </configuring_domain/01_managing_security/portal>`)
    * Make sure your portal is part of the `ODS Data Hub <https://academy.opendatasoft.com/exploiter-notre-reseau-de-donnees>`_ (check with your CSM if you’re not sure).
-   * Define the **unique identifier for your shared catalog**. To perform this step you will need to contact your CSM. The identifier is the same for all the portals part of your shared catalog, so if a shared catalog was already created you must use the existing identifier.
+   * Define the **unique identifier for your shared catalog**. To perform this step you will need to contact your CSM. The identifier is the same for all the portals part of your shared catalog, so if a shared catalog was already started by another domain you must ask about the existing identifier and use it.
 
 Choosing the default catalog for your domain
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -79,4 +79,4 @@ The metadata ``shared_catalog`` (visible while using the ODS Management APIs) is
 
 * **API Explore V2**
 
-With the `API Explore V2 <https://help.opendatasoft.com/apis/ods-explore-v2/>`_ , ``/api/v2/catalog/dataset`` allows you to see the local catalog, and `/api/v2/shared/datasets` allows you to see the shared catalog.
+With the `API Explore V2 <https://help.opendatasoft.com/apis/ods-explore-v2/>`_ , ``/api/v2/catalog/dataset`` allows you to see the local catalog, and ``/api/v2/shared/datasets`` allows you to see the shared catalog.
