@@ -4,7 +4,7 @@
   left: 0
   width: $nav-desktop-width
   color: white
-  background: $blue-light
+  background: #142E7B
   border-top: 1px solid $white
   z-index: $z-index-tray
   a
@@ -14,8 +14,9 @@
     display: none
   .rst-current-version
     padding: $base-line-height / 2
-    background-color: $blue-light
-    display: block
+    background-color: #142E7B
+    display: flex
+    justify-content: space-between
     text-align: right
     font-size: 90%
     cursor: pointer
@@ -86,3 +87,8 @@
     margin-left: -300px
     &.shift
       margin-left: 0
+
+.rst-current-version::before
+  display: flex
+  content: none
+  justify-content: space-between
