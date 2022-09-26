@@ -43,62 +43,98 @@ Opendatasoft can connect to a variety of remote services.
 
 .. list-table::
   :header-rows: 1
-  :widths: 15 25 10
+  :widths: 15 20 10 10 7
 
   * * Connector
     * Description
     * Availability
+    * Folder
+    * Incremental
   * * :doc:`Airtable<connectors/airtable>`
     * Retrieves data from an Airtable base
     * On demand
+    * N/A
+    * ✅
   * * :doc:`Amazon S3<connectors/amazon_s3>`
     * Retrieves data from a file stored in an Amazon S3 bucket
     * On demand
+    * Files only
+    * ❌
   * * :doc:`ArcGIS<connectors/arcgis>`
     * Retrieves data from an ArcGIS server
     * Default
+    * N/A
+    * ❌
   * * :doc:`Azure Blob storage<connectors/azure_blob_storage>`
     * Retrieves data from a file stored in a Blob storage
     * On demand
+    * N/A
+    * ❌
   * * :doc:`Census<connectors/census>`
     * Retrieves data using the US Census Bureau's API
     * On demand
+    * N/A
+    * ❌
   * * :doc:`Dataset of datasets<connectors/dataset_of_datasets>`
     * Creates a dataset from the catalog of an Opendatasoft domain
     * Default
+    * N/A
+    * ❌
   * * :doc:`Eco Counter<connectors/ecocounter>`
     * Retrieves data about Eco Counter counters and counting sites
     * On demand
+    * N/A
+    * ✅
   * * :doc:`Feed<connectors/feed>`
     * Retrieves data from Atom and RSS feeds
     * Default
+    * N/A
+    * ✅
   * * :doc:`Google BigQuery<connectors/google_bigquery>`
     * Retrieves data from a Google BigQuery table
     * On demand
+    * N/A
+    * ✅
   * * :doc:`Google Drive<connectors/google_drive>`
     * Retrieves files located in Google Drive
     * On demand
+    * Files only
+    * ❌
   * * :doc:`JCDecaux<connectors/jcdecaux>`
     * Retrieves the state of JCDecaux bike stations
     * On demand
+    * N/A
+    * ✅
   * * :doc:`Netatmo<connectors/netatmo>`
     * Retrieves data using the Netatmo API
     * On demand
+    * N/A
+    * ✅
   * * :doc:`OpenAgenda<connectors/openagenda>`
     * Retrieves events from OpenAgenda agendas
     * On demand
+    * N/A
+    * ✅
   * * :doc:`Realtime<connectors/realtime>`
     * Pushes real-time data to the platform
     * On demand
+    * N/A
+    * ✅
   * * :doc:`Salesforce<connectors/salesforce>`
     * Retrieves data using the Salesforce API
     * On demand
+    * N/A
+    * ✅
   * * :doc:`SharePoint<connectors/sharepoint>`
     * Retrieves files located in SharePoint
     * On demand
+    * Files only
+    * ❌
   * * :doc:`WFS<connectors/wfs>`
     * Retrieves data from a WFS service
     * On demand
+    * N/A
+    * ❌
 
 .. toctree::
    :hidden:
