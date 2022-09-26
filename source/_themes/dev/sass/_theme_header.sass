@@ -5,27 +5,30 @@
 
 //- By default mobile
 .ods__documentation-header 
+  display: flex
   height: $header-height
   width: 100%
+  max-width: 100vw
   position: fixed
   top: 0
   left: 0
   z-index: 50
-  background-color: $blue-light
+  justify-content: space-between
+  background-color: white
+  color: black
+  box-shadow: 0.0px 0.0px 13.0px 0px rgba(0, 0, 0, 0.13)
+
 @media only screen and (min-width: $tablet-width) 
   .ods__documentation-header 
     display: flex
     display: -ms-flexbox
     flex-direction: row
     -ms-flex-direction: row
-    justify-content: flex-start
     align-items: center
     -ms-flex-align: center
+    justify-content: flex-start
 
-.ods__documentation-header-logo 
-  display: flex
-  flex-direction: row
-  justify-content: space-around
+.ods__documentation-header-logo
   button 
     border: none
     margin: $spacing-200 0
@@ -49,11 +52,28 @@
       display: none
 
 .ods__documentation-header-logo-link
-  display: block
-  margin: $spacing-200 0
-  
+  display: flex
+  align-items: center
+
+.ods__documentation-header-logo img
+  height: 26px
+  width: 140px
+
+.ods-header__brandname
+  min-width: 130px
+  color: #565656
+  font-size: 18px
+  font-weight: 200
+  line-height: 27px
+  letter-spacing: 0.8px
+  padding-left: 13px
+  border-left: 1px solid
+  margin-left: 13px
+  text-align: left
+
 .ods__documentation-header-nav 
   display: none
+
 @media only screen and (min-width: $tablet-width)
   .ods__documentation-header-nav 
     display: flex
@@ -68,11 +88,14 @@
   height: 100%
   width: 300px
   padding-top: $spacing-300
-  background-color: $blue-light
+  background-color: white
   z-index: 1000
-  display: flex
-  flex-direction: column
   transition: 0.5s
+  overflow-y: scroll
+  -webkit-overflow-scrolling: touch
+  // box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.13)
+  border-left: 1px solid #DEE5EF
+  color: black
 @media only screen and (min-width: $tablet-width) 
   .ods__documentation-help-hub-sidebar 
     display: none
@@ -82,6 +105,9 @@
 
 .ods__documentation-header-nav-item
     @extend %text-100
+
+.ods__documentation-help-hub-sidebar-item
+    margin: 26px auto 0 26px
 
 //- Desktop
 @media only screen and (min-width: $tablet-width)
@@ -97,35 +123,47 @@
 
   .ods__documentation-header-nav-item > a
     text-decoration: none
-    color: white
+    color: #565656
     padding: $spacing-50 * 2
     border-radius: $default-border-radius
     text-transform: uppercase
+    font-size: 14px
+    font-weight: 300
 
   .ods__documentation-header-nav-item > a:hover
-    background: $deep-blue
+    color: black
 
   .ods__documentation-header-nav-item-active > a
-    background: $deep-blue
+    color: black
 
 // Mobile sidebar
+@media only screen and (min-width: $tablet-width)
+  .menu-button
+    display: none
+
 .ods__documentation-help-hub-nav-links,
 .ods__documentation-help-hub-sidebar
   display: flex
   flex-direction: column
-  align-items: center
+  align-items: flex-start
 
   a
-    display: inline-block
-    margin-bottom: $spacing-200
-    color: $light-100
-    text-decoration: none
-    padding: $spacing-50 * 2
-    border-radius: $default-border-radius
+    background-color: transparent
+    color: #565656
+    border: none
+    padding: 8px
+    border-radius: 4px
     text-transform: uppercase
-    @extend %text-100
+    outline: none
+    font-size: 15px
+    font-weight: 200
+    line-height: 27px
+    letter-spacing: .8px
 
   a:hover,
   a.ods__documentation-header-nav-item-active,
   .ods__documentation-header-nav-item-active a
-    background-color: $deep-blue
+    color: black
+    font-weight: 400
+    border-radius: 0
+    border-bottom: 3px solid #082645

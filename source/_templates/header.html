@@ -1,19 +1,22 @@
 {% block header %}
 
     <div class="ods__documentation-header">
+        <button type="button" class="menu-button" id="nav-button" data-toggle="wy-nav-top">
+                <img class="ods-header__menu-toggle__openlogo"
+                    src="{{ pathto('_static/' + 'menu-fill.svg', 1) }}"
+                    alt="Open documentation menu">
+        </button>
 
-        <div class="ods__documentation-header-logo">
-            <button type="button" id="nav-button" data-toggle="wy-nav-top">{{ gettext('Menu') }}</button>
-            <a class="ods__documentation-header-logo-link" href="{{ pathto(master_doc) }}">
-                <img src="{{ pathto('_static/' + logo, 1) }}" alt="Opendatasoft Documentation Logo">
-            </a>
-            <button type="button" id="help-hub-button"> Help Hub </button>
-        </div>
+        <a class="ods__documentation-header-logo ods__documentation-header-logo-link"
+            href="https://help.opendatasoft.com/">
+                <img src="{{ pathto('_static/' + logo, 1) }}"
+                    alt="Opendatasoft logo">
+                <span class="ods-header__brandname">
+                    Help Center
+                </span>
+        </a>
 
         <div class="ods__documentation-header-nav">
-            <div class="ods__documentation-header-nav-item">
-                <a href="/{{ language }}/">Help Hub</a>
-            </div>
             <div class="ods__documentation-header-nav-item ods__documentation-header-nav-item-active">
                 <a href="{{ pathto(master_doc) }}">{{ gettext('User guide') }}</a>
             </div>
@@ -36,13 +39,17 @@
                 <a href="https://documentation-resources.opendatasoft.com/pages/release-notes/?headless=true">{{ gettext('Release notes') }}</a>
             </div>
         </div>
+        
+        <button type="button" class="menu-button" id="help-hub-button">
+            <img
+                    class="ods-header__menu-toggle__openlogo"
+                    src="{{ pathto('_static/' + 'apps-custo.svg', 1) }}"
+                    alt="Open Help Center menu">
+        </button>
 
     </div>
 
     <div class="ods__documentation-help-hub-sidebar">
-        <div class="ods__documentation-help-hub-sidebar-item">
-            <a href="/{{ language }}/">Help Hub</a>
-        </div>
         <div class="ods__documentation-help-hub-sidebar-item ods__documentation-header-nav-item-active">
             <a href="{{ pathto(master_doc) }}">{{ gettext('User guide') }}</a>
         </div>
