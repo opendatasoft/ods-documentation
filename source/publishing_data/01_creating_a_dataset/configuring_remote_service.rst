@@ -64,7 +64,7 @@ Opendatasoft can connect to a variety of remote services.
     * Retrieves data from an ArcGIS server
     * Default
     * N/A
-    * ✅
+    * ❌
   * * :doc:`Azure Blob storage<connectors/azure_blob_storage>`
     * Retrieves data from a file stored in a Blob storage
     * On demand
@@ -79,7 +79,7 @@ Opendatasoft can connect to a variety of remote services.
     * Creates a dataset from the catalog of an Opendatasoft domain
     * Default
     * N/A
-    * ✅
+    * ❌
   * * :doc:`Eco Counter<connectors/ecocounter>`
     * Retrieves data about Eco Counter counters and counting sites
     * On demand
@@ -93,7 +93,7 @@ Opendatasoft can connect to a variety of remote services.
   * * :doc:`Google BigQuery<connectors/google_bigquery>`
     * Retrieves data from a Google BigQuery table
     * On demand
-    * Files only
+    * N/A
     * ✅
   * * :doc:`Google Drive<connectors/google_drive>`
     * Retrieves files located in Google Drive
@@ -129,12 +129,12 @@ Opendatasoft can connect to a variety of remote services.
     * Retrieves files located in SharePoint
     * On demand
     * Files only
-    * ✅
+    * ❌
   * * :doc:`WFS<connectors/wfs>`
     * Retrieves data from a WFS service
     * On demand
-    * ✅
-    * ✅
+    * N/A
+    * ❌
 
 .. toctree::
    :hidden:
