@@ -14,7 +14,7 @@ Parameters
      * Example
    * * Domain ID (domain_id)
      * The ID or base URL of the domain you want to harvest.
-     * discovery, https://discovery.opendatasoft.com, https://www.datastro.eu
+     * ``documentation-resources``, https://documentation-resources.opendatasoft.com
    * * Refines (refines)
      * The refines you want to pass to filter the query (URL encoded)
      * refine.destination=Asia&refine.origin=France
