@@ -96,13 +96,13 @@ any of their reuse, such as a change in the schema (renaming an existing field,
 removing a field) that may cause issues with existing reuses or an update of
 the data itself if it is not updated very frequently.
 
-User feedback on datasets
--------------------------
+User feedback on datasets (deprecated)
+--------------------------------------
 
-.. admonition:: Note
-   :class: note
+.. admonition:: Warning
+   :class: warning
 
-   This feature is currently in beta and is not available by default. Please contact us if you would like to try this feature on your own portal.
+   This feature has been deprecated and it is not possible to activate it anymore. It will be discontinued by **April 28, 2023**. If you rely on it please reach out to your CSM or directly to the support.
 
 If you wish to gather feedback on the content of a specific dataset, you can activate
 "User feedback" from its back-office configuration page.
