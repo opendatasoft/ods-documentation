@@ -1,6 +1,11 @@
 Submitting feedback
 ===================
 
+.. admonition:: Warning
+   :class: warning
+
+   This feature has been deprecated and portal administrators can not activate it anymore. It will be discontinued by **April 28, 2023**.
+
 .. admonition:: Important
    :class: important
 
