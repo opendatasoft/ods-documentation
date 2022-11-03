@@ -135,7 +135,7 @@ The **api** field for Opendatasoft APIv1 (ods_v1) contains one of the following 
      * Lookup record query
      * api/datasets/1.0/<dataset_id>/records/<record_id>
    * * ``download_dataset_records``
-     * Download dataset records from API (total dataset download count = dowload_dataset + download_dataset_records)
+     * Download dataset records from API (total dataset download count = ``dowload_dataset`` + ``download_dataset_records`` + ``download_dataset_alternative_export``)
      * api/datasets/1.0/<dataset_id>/records/download/
    * * ``analyze_records``
      * Analyze records query. Called by analyze tab in explore
