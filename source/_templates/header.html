@@ -18,7 +18,10 @@
 
         <div class="ods__documentation-header-nav">
             <div class="ods__documentation-header-nav-item ods__documentation-header-nav-item-active">
-                <a href="{{ pathto(master_doc) }}">{{ gettext('User guide') }}</a>
+                <a href="https://userguide.opendatasoft.com/">{{ gettext('User guide') }}</a>
+            </div>
+            <div class="ods__documentation-header-nav-item">
+              <a href="https://academy.opendatasoft.com/{{ 'page/homepage/' if (language != 'fr') }}">Academy</a>
             </div>
             <div class="ods__documentation-header-nav-item">
                 <a href="https://codelibrary.opendatasoft.com/">Code library</a>
@@ -28,9 +31,6 @@
             </div>
             <div class="ods__documentation-header-nav-item">
                 <a href="/{{ language }}/apis/">APIs</a>
-            </div>
-            <div class="ods__documentation-header-nav-item">
-              <a href="https://academy.opendatasoft.com/{{ 'page/homepage/' if (language != 'fr') }}">Academy</a>
             </div>
             <div class="ods__documentation-header-nav-item">
                 <a href="https://changes.opendatasoft.com">{{ gettext('Release notes') }}</a>
@@ -48,7 +48,10 @@
 
     <div class="ods__documentation-help-hub-sidebar">
         <div class="ods__documentation-help-hub-sidebar-item ods__documentation-header-nav-item-active">
-            <a href="{{ pathto(master_doc) }}">{{ gettext('User guide') }}</a>
+            <a href="https://userguide.opendatasoft.com/">{{ gettext('User guide') }}</a>
+        </div>
+        <div class="ods__documentation-help-hub-sidebar-item">
+          <a href="https://academy.opendatasoft.com/{{ 'page/homepage/' if (language != 'fr') }}">Academy</a>
         </div>
         <div class="ods__documentation-help-hub-sidebar-item">
             <a href="https://codelibrary.opendatasoft.com/">Code library</a>
@@ -58,9 +61,6 @@
         </div>
         <div class="ods__documentation-help-hub-sidebar-item">
             <a href="/{{ language }}/apis/">APIs</a>
-        </div>
-        <div class="ods__documentation-help-hub-sidebar-item">
-          <a href="https://academy.opendatasoft.com/{{ 'page/homepage/' if (language != 'fr') }}">Academy</a>
         </div>
         <div class="ods__documentation-help-hub-sidebar-item">
             <a href="https://changes.opendatasoft.com">{{ gettext('Release notes') }}</a>

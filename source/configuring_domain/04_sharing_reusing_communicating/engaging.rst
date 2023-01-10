@@ -102,7 +102,7 @@ User feedback on datasets (deprecated)
 .. admonition:: Warning
    :class: warning
 
-   This feature has been deprecated and it is not possible to activate it anymore. It will be discontinued by **April 28, 2023**. If you rely on it please reach out to your CSM or directly to the support.
+   This feature has been deprecated. We are committed to support it but it will no longer benefit from any upgrade.
 
 If you wish to gather feedback on the content of a specific dataset, you can activate
 "User feedback" from its back-office configuration page.
