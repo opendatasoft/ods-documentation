@@ -141,6 +141,8 @@ your queries to filter the results based on a specific field's value.
      * A keyword describing the dataset
    * * references
      * The references for the dataset
+   * * territory
+     * The territory of the dataset
 
 The domain administrator might define a richer metadata template, thus giving access to a richer set of filtering fields.
 
