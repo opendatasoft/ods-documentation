@@ -1,3 +1,5 @@
+**N.B.** This documentation is beeing deprecated and the content should be added/updated on https://userguide.opendatasoft.com/
+
 # Opendatasoft's documentation
 
 This repository contains documentation resources for the Opendatasoft platform, APIs, and tools.
